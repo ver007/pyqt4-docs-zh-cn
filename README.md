@@ -1,1 +1,2 @@
-# pyqt4-zh-cn-dosc\n #### 中文帮助文档
+# pyqt4-zh-cn-dosc
+#### 中文帮助文档
