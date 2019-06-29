@@ -1,0 +1,915 @@
+﻿<html>
+<head>
+<title>QFileDialog Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QFileDialog Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QFileDialog中的类提供了一个对话框，让用户选择文件或目录。<a href="#details">More...</a></p>
+
+<p>继承<a href="qdialog.html" tppabs="http://pyqt4doc.appspot.com/qdialog.html">QDialog</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qfiledialog.html#AcceptMode-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#AcceptMode-enum">AcceptMode</a></b> { AcceptOpen, AcceptSave }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qfiledialog.html#DialogLabel-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#DialogLabel-enum">DialogLabel</a></b> { LookIn, FileName, FileType, Accept, Reject }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qfiledialog.html#FileMode-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#FileMode-enum">FileMode</a></b> { AnyFile, ExistingFile, Directory, ExistingFiles, DirectoryOnly }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qfiledialog.html#Option-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#Option-enum">Option</a></b> { ShowDirsOnly, DontResolveSymlinks, DontConfirmOverwrite, DontUseSheet, ..., HideNameFilterDetails }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qfiledialog-options.html">Options</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qfiledialog.html#ViewMode-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#ViewMode-enum">ViewMode</a></b> { Detail, List }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#QFileDialog" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#QFileDialog">__init__</a></b> (<i>self</i>, QWidget <i>parent</i>, Qt.WindowFlags <i>f</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#QFileDialog-2" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#QFileDialog-2">__init__</a></b> (<i>self</i>, QWidget <i>parent</i> = None, QString <i>caption</i> = QString(), QString <i>directory</i> = QString(), QString <i>filter</i> = QString())</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#accept" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#accept">accept</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>AcceptMode <b><a href="qfiledialog.html#acceptMode" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#acceptMode">acceptMode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#changeEvent" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#changeEvent">changeEvent</a></b> (<i>self</i>, QEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qfiledialog.html#confirmOverwrite" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#confirmOverwrite">confirmOverwrite</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qfiledialog.html#defaultSuffix" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#defaultSuffix">defaultSuffix</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDir <b><a href="qfiledialog.html#directory" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#directory">directory</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#done" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#done">done</a></b> (<i>self</i>, int <i>result</i>)</li>
+<li>
+<div class="fn"></div>FileMode <b><a href="qfiledialog.html#fileMode" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#fileMode">fileMode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDir.Filters <b><a href="qfiledialog.html#filter" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#filter">filter</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qfiledialog.html#filters" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#filters">filters</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qfiledialog.html#history" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#history">history</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QFileIconProvider <b><a href="qfiledialog.html#iconProvider" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#iconProvider">iconProvider</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qfiledialog.html#isNameFilterDetailsVisible" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#isNameFilterDetailsVisible">isNameFilterDetailsVisible</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qfiledialog.html#isReadOnly" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#isReadOnly">isReadOnly</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QAbstractItemDelegate <b><a href="qfiledialog.html#itemDelegate" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#itemDelegate">itemDelegate</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qfiledialog.html#labelText" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#labelText">labelText</a></b> (<i>self</i>, DialogLabel <i>label</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qfiledialog.html#nameFilters" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#nameFilters">nameFilters</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#open" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#open">open</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#open-2" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#open-2">open</a></b> (<i>self</i>, QObject <i>receiver</i>, SLOT()SLOT() <i>member</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#open-3" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#open-3">open</a></b> (<i>self</i>, callable <i>receiver</i>)</li>
+<li>
+<div class="fn"></div>Options <b><a href="qfiledialog.html#options" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#options">options</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QAbstractProxyModel <b><a href="qfiledialog.html#proxyModel" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#proxyModel">proxyModel</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qfiledialog.html#resolveSymlinks" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#resolveSymlinks">resolveSymlinks</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qfiledialog.html#restoreState" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#restoreState">restoreState</a></b> (<i>self</i>, QByteArray <i>state</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qfiledialog.html#saveState" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#saveState">saveState</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qfiledialog.html#selectedFiles" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#selectedFiles">selectedFiles</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qfiledialog.html#selectedFilter" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#selectedFilter">selectedFilter</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qfiledialog.html#selectedNameFilter" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#selectedNameFilter">selectedNameFilter</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#selectFile" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#selectFile">selectFile</a></b> (<i>self</i>, QString <i>filename</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#selectFilter" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#selectFilter">selectFilter</a></b> (<i>self</i>, QString <i>filter</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#selectNameFilter" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#selectNameFilter">selectNameFilter</a></b> (<i>self</i>, QString <i>filter</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#setAcceptMode" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setAcceptMode">setAcceptMode</a></b> (<i>self</i>, AcceptMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#setConfirmOverwrite" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setConfirmOverwrite">setConfirmOverwrite</a></b> (<i>self</i>, bool <i>enabled</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#setDefaultSuffix" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setDefaultSuffix">setDefaultSuffix</a></b> (<i>self</i>, QString <i>suffix</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#setDirectory" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setDirectory">setDirectory</a></b> (<i>self</i>, QString <i>directory</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#setDirectory-2" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setDirectory-2">setDirectory</a></b> (<i>self</i>, QDir <i>adirectory</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#setFileMode" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setFileMode">setFileMode</a></b> (<i>self</i>, FileMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#setFilter" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setFilter">setFilter</a></b> (<i>self</i>, QString <i>filter</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#setFilter-2" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setFilter-2">setFilter</a></b> (<i>self</i>, QDir.Filters <i>filters</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#setFilters" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setFilters">setFilters</a></b> (<i>self</i>, QStringList <i>filters</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#setHistory" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setHistory">setHistory</a></b> (<i>self</i>, QStringList <i>paths</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#setIconProvider" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setIconProvider">setIconProvider</a></b> (<i>self</i>, QFileIconProvider <i>provider</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#setItemDelegate" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setItemDelegate">setItemDelegate</a></b> (<i>self</i>, QAbstractItemDelegate <i>delegate</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#setLabelText" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setLabelText">setLabelText</a></b> (<i>self</i>, DialogLabel <i>label</i>, QString <i>text</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#setNameFilter" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setNameFilter">setNameFilter</a></b> (<i>self</i>, QString <i>filter</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#setNameFilterDetailsVisible" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setNameFilterDetailsVisible">setNameFilterDetailsVisible</a></b> (<i>self</i>, bool <i>enabled</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#setNameFilters" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setNameFilters">setNameFilters</a></b> (<i>self</i>, QStringList <i>filters</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#setOption" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setOption">setOption</a></b> (<i>self</i>, Option <i>option</i>, bool <i>on</i> = True)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#setOptions" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setOptions">setOptions</a></b> (<i>self</i>, Options <i>options</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#setProxyModel" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setProxyModel">setProxyModel</a></b> (<i>self</i>, QAbstractProxyModel <i>model</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#setReadOnly" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setReadOnly">setReadOnly</a></b> (<i>self</i>, bool <i>enabled</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#setResolveSymlinks" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setResolveSymlinks">setResolveSymlinks</a></b> (<i>self</i>, bool <i>enabled</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#setSidebarUrls" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setSidebarUrls">setSidebarUrls</a></b> (<i>self</i>, list-of-QUrl <i>urls</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#setViewMode" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setViewMode">setViewMode</a></b> (<i>self</i>, ViewMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfiledialog.html#setVisible" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setVisible">setVisible</a></b> (<i>self</i>, bool <i>visible</i>)</li>
+<li>
+<div class="fn"></div>list-of-QUrl <b><a href="qfiledialog.html#sidebarUrls" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#sidebarUrls">sidebarUrls</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qfiledialog.html#testOption" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#testOption">testOption</a></b> (<i>self</i>, Option <i>option</i>)</li>
+<li>
+<div class="fn"></div>ViewMode <b><a href="qfiledialog.html#viewMode" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#viewMode">viewMode</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QString <b><a href="qfiledialog.html#getExistingDirectory" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#getExistingDirectory">getExistingDirectory</a></b> (QWidget <i>parent</i> = None, QString <i>caption</i> = QString(), QString <i>directory</i> = QString(), Options <i>options</i> = QFileDialog.ShowDirsOnly)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qfiledialog.html#getOpenFileName" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#getOpenFileName">getOpenFileName</a></b> (QWidget <i>parent</i> = None, QString <i>caption</i> = QString(), QString <i>directory</i> = QString(), QString <i>filter</i> = QString(), Options <i>options</i> = 0)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qfiledialog.html#getOpenFileName-2" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#getOpenFileName-2">getOpenFileName</a></b> (QWidget <i>parent</i> = None, QString <i>caption</i> = QString(), QString <i>directory</i> = QString(), QString <i>filter</i> = QString(), QString <i>selectedFilter</i> = None, Options <i>options</i> = 0)</li>
+<li>
+<div class="fn"></div>(QString, QString) <b><a href="qfiledialog.html#getOpenFileNameAndFilter" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#getOpenFileNameAndFilter">getOpenFileNameAndFilter</a></b> (QWidget <i>parent</i> = None, QString <i>caption</i> = QString(), QString <i>directory</i> = QString(), QString <i>filter</i> = QString(), QString <i>initialFilter</i> = QString(), Options <i>options</i> = 0)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qfiledialog.html#getOpenFileNames" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#getOpenFileNames">getOpenFileNames</a></b> (QWidget <i>parent</i> = None, QString <i>caption</i> = QString(), QString <i>directory</i> = QString(), QString <i>filter</i> = QString(), Options <i>options</i> = 0)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qfiledialog.html#getOpenFileNames-2" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#getOpenFileNames-2">getOpenFileNames</a></b> (QWidget <i>parent</i> = None, QString <i>caption</i> = QString(), QString <i>directory</i> = QString(), QString <i>filter</i> = QString(), QString <i>selectedFilter</i> = None, Options <i>options</i> = 0)</li>
+<li>
+<div class="fn"></div>(QString, QString) <b><a href="qfiledialog.html#getOpenFileNamesAndFilter" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#getOpenFileNamesAndFilter">getOpenFileNamesAndFilter</a></b> (QWidget <i>parent</i> = None, QString <i>caption</i> = QString(), QString <i>directory</i> = QString(), QString <i>filter</i> = QString(), QString <i>initialFilter</i> = QString(), Options <i>options</i> = 0)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qfiledialog.html#getSaveFileName" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#getSaveFileName">getSaveFileName</a></b> (QWidget <i>parent</i> = None, QString <i>caption</i> = QString(), QString <i>directory</i> = QString(), QString <i>filter</i> = QString(), Options <i>options</i> = 0)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qfiledialog.html#getSaveFileName-2" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#getSaveFileName-2">getSaveFileName</a></b> (QWidget <i>parent</i> = None, QString <i>caption</i> = QString(), QString <i>directory</i> = QString(), QString <i>filter</i> = QString(), QString <i>selectedFilter</i> = None, Options <i>options</i> = 0)</li>
+<li>
+<div class="fn"></div>(QString, QString) <b><a href="qfiledialog.html#getSaveFileNameAndFilter" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#getSaveFileNameAndFilter">getSaveFileNameAndFilter</a></b> (QWidget <i>parent</i> = None, QString <i>caption</i> = QString(), QString <i>directory</i> = QString(), QString <i>filter</i> = QString(), QString <i>initialFilter</i> = QString(), Options <i>options</i> = 0)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qfiledialog.html#currentChanged" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#currentChanged">currentChanged</a></b> (const QString&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qfiledialog.html#directoryEntered" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#directoryEntered">directoryEntered</a></b> (const QString&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qfiledialog.html#fileSelected" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#fileSelected">fileSelected</a></b> (const QString&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qfiledialog.html#filesSelected" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#filesSelected">filesSelected</a></b> (const QStringList&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qfiledialog.html#filterSelected" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#filterSelected">filterSelected</a></b> (const QString&amp;)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QFileDialog中的类提供了一个对话框，让用户选择文件或目录。</p>
+<p>在QFileDialog中类使用户可以遍历文件系统，以选择一个或多个文件或目录。</p>
+<p>创建一个QFileDialog中最简单的方法是使用静态函数。在Windows，Mac OS X ， KDE和GNOME ，这些静态函数将调用本地文件对话框时可能的。</p>
+<pre class="cpp">
+ fileName <span class="operator">=</span> <span class="type">QFileDialog</span><span class="operator">.</span><a href="qfiledialog.html#getOpenFileName" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#getOpenFileName">getOpenFileName</a>(<span class="keyword">this</span><span class="operator">,</span>
+     tr(<span class="string">"Open Image"</span>)<span class="operator">,</span> <span class="string">"/home/jana"</span><span class="operator">,</span> tr(<span class="string">"Image Files (*.png *.jpg *.bmp)"</span>));
+</pre>
+<p>在上面的例子中，一个模态QFileDialog中使用静态函数创建。该对话框最初显示“ /首页/贾纳”目录中的内容，并显示文件匹配字符串中给定的模式“图像文件（ * 。 PNG ，JPG等图片。 BMP ） ” 。文件对话框的父被设置为<i>this</i>和窗口标题设置为“打开图像” 。</p>
+<p>如果你想使用多个过滤器，分离与每一个<i>two</i>分号。例如：</p>
+<pre class="cpp">
+ <span class="string">"Images (*.png *.xpm *.jpg);;Text files (*.txt);;XML files (*.xml)"</span>
+</pre>
+<p>你可以创建自己的QFileDialog中不使用静态函数。通过调用<a href="qfiledialog.html#fileMode-prop" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#fileMode-prop">setFileMode</a>（ ） ，您可以指定哪些用户必须在对话框中进行选择：</p>
+<pre class="cpp">
+ <span class="type">QFileDialog</span> dialog(<span class="keyword">this</span>);
+ dialog<span class="operator">.</span><a href="qfiledialog.html#fileMode-prop" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#fileMode-prop">setFileMode</a>(<span class="type">QFileDialog</span><span class="operator">.</span>AnyFile);
+</pre>
+<p>在上面的例子中，文件对话框的模式被设置为<a href="qfiledialog.html#FileMode-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#FileMode-enum">AnyFile</a>的，这意味着用户可以选择任何文件，甚至指定不存在的文件。这种模式是建立一个“另存为”文件对话框是有用的。使用<a href="qfiledialog.html#FileMode-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#FileMode-enum">ExistingFile</a>如果用户必须选择一个现有的文件，或<a href="qfiledialog.html#FileMode-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#FileMode-enum">Directory</a>如果只有一个目录可能被选中。请参阅<a href="qfiledialog.html#FileMode-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#FileMode-enum">QFileDialog.FileMode</a>枚举类型的模式的完整列表。</p>
+<p>该<a href="qfiledialog.html#fileMode-prop" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#fileMode-prop">fileMode</a>属性包含操作对话框的模式，这表示，预计选择什么类型的对象的用户。使用<a href="qfiledialog.html#setNameFilter" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setNameFilter">setNameFilter</a>（ ）来设置对话框的文件过滤器。例如：</p>
+<pre class="cpp">
+ dialog<span class="operator">.</span><a href="qfiledialog.html#setNameFilter" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setNameFilter">setNameFilter</a>(tr(<span class="string">"Images (*.png *.xpm *.jpg)"</span>));
+</pre>
+<p>在上面的例子中，过滤器被设置为<tt>"Images (*.png
+*.xpm *.jpg)"</tt>，这意味着只有与扩展名的文件<tt>png</tt>，<tt>xpm</tt>或<tt>jpg</tt>将被显示在QFileDialog中进行。您可以通过使用应用多种滤镜<a href="qfiledialog.html#setNameFilters" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setNameFilters">setNameFilters</a>（ ） 。使用<a href="qfiledialog.html#selectNameFilter" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#selectNameFilter">selectNameFilter</a>（）来选择你给的文件对话框的缺省过滤器的过滤器之一。</p>
+<p>文件对话框有两种视图模式：<a href="qfiledialog.html#ViewMode-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#ViewMode-enum">List</a>和<a href="qfiledialog.html#ViewMode-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#ViewMode-enum">Detail</a>。<a href="qfiledialog.html#ViewMode-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#ViewMode-enum">List</a>介绍了当前目录中的内容作为文件名和目录名的列表。<a href="qfiledialog.html#ViewMode-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#ViewMode-enum">Detail</a>还显示文件和目录名的列表，但提供了额外的信息，并排的名字，如文件大小和修改日期。与设定的模式<a href="qfiledialog.html#viewMode-prop" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#viewMode-prop">setViewMode</a>（）：</p>
+<pre class="cpp">
+ dialog<span class="operator">.</span><a href="qfiledialog.html#viewMode-prop" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#viewMode-prop">setViewMode</a>(<span class="type">QFileDialog</span><span class="operator">.</span>Detail);
+</pre>
+<p>创建自己的文件对话框时，你将需要使用的最后一个重要的功能是<a href="qfiledialog.html#selectedFiles" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#selectedFiles">selectedFiles</a>（ ） 。</p>
+<pre class="cpp">
+ <span class="type"><a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a></span> fileNames;
+ <span class="keyword">if</span> (dialog<span class="operator">.</span>exec())
+     fileNames <span class="operator">=</span> dialog<span class="operator">.</span><a href="qfiledialog.html#selectedFiles" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#selectedFiles">selectedFiles</a>();
+</pre>
+<p>在上面的示例中，创建并显示一个模式文件对话框。如果用户单击OK（确定） ，他们所选择的文件放在<tt>fileName</tt>。</p>
+<p>对话框的工作目录可以被设置<a href="qfiledialog.html#setDirectory" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setDirectory">setDirectory</a>（ ） 。在当前目录下的每个文件可以使用被选择的<a href="qfiledialog.html#selectFile" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#selectFile">selectFile</a>（）函数。</p>
+<p>该<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/dialogs-standarddialogs.html">Standard Dialogs</a>示例显示了如何使用QFileDialog中以及其他内置Qt对话框。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="AcceptMode-enum"></a>QFileDialog.AcceptMode</h3>
+<table class="valuelist">
+<tr>
+<th class="tblConst">Constant</th>
+<th class="tblVal">Value</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFileDialog.AcceptOpen</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFileDialog.AcceptSave</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="DialogLabel-enum"></a>QFileDialog.DialogLabel</h3>
+<table class="valuelist">
+<tr>
+<th class="tblConst">Constant</th>
+<th class="tblVal">Value</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFileDialog.LookIn</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFileDialog.FileName</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFileDialog.FileType</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFileDialog.Accept</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFileDialog.Reject</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="FileMode-enum"></a>QFileDialog.FileMode</h3>
+<p>此枚举用于指示哪些用户可以在文件对话框中选择，即如果用户单击OK（确定）对话框将返回什么。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFileDialog.AnyFile</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">一个文件的文件名，无论是否存在。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFileDialog.ExistingFile</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">现有的单个文件的名称。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFileDialog.Directory</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">一个目录的名称。这两个文件和目录都显示出来。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFileDialog.ExistingFiles</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">零个或多个现有文件的名称。</td>
+</tr>
+</table>
+<p>这个值是过时的，因为Qt的4.5 ：</p>
+<table class="valuelist">
+<tr class="even" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFileDialog.DirectoryOnly</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">使用<tt>Directory</tt>和的SetOption （<a href="qfiledialog.html#Option-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#Option-enum">ShowDirsOnly</a>，真正的）来代替。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qfiledialog.html#fileMode-prop" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#fileMode-prop">setFileMode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="Option-enum"></a>QFileDialog.Option</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFileDialog.ShowDirsOnly</tt></td>
+<td class="topAlign"><tt>0x00000001</tt></td>
+<td class="topAlign">只显示在文件对话框的目录。默认情况下这两个文件和目录都显示。 （只适用于<a href="qfiledialog.html#FileMode-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#FileMode-enum">Directory</a>文件模式。 ）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFileDialog.DontResolveSymlinks</tt></td>
+<td class="topAlign"><tt>0x00000002</tt></td>
+<td class="topAlign">不解决符号链接的文件对话框。默认情况下符号链接都解决了。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QFileDialog.DontConfirmOverwrite</tt>
+</td>
+<td class="topAlign"><tt>0x00000004</tt></td>
+<td class="topAlign">不要求确认如果选择现有文件。默认情况下请求确认。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFileDialog.DontUseNativeDialog</tt></td>
+<td class="topAlign"><tt>0x00000010</tt></td>
+<td class="topAlign">不要使用本地文件对话框。默认情况下，使用本地文件对话框，除非你用的子类<a href="qfiledialog.html" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html">QFileDialog</a>包含<a href="qobject.html#Q_OBJECT" tppabs="http://pyqt4doc.appspot.com/qobject.html#Q_OBJECT">Q_OBJECT</a>宏。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFileDialog.ReadOnly</tt></td>
+<td class="topAlign"><tt>0x00000020</tt></td>
+<td class="topAlign">表明该模型是只读的。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QFileDialog.HideNameFilterDetails</tt>
+</td>
+<td class="topAlign"><tt>0x00000040</tt></td>
+<td class="topAlign">表示如果文件名过滤器的细节被隐藏与否。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFileDialog.DontUseSheet</tt></td>
+<td class="topAlign"><tt>0x00000008</tt></td>
+<td class="topAlign">在Qt的早期版本中，静态函数会默认创建一个表，如果静态函数被赋予了父母。这不再支持和不执行任何操作在Qt的4.5 ，静态函数将永远是一个应用程序的模态对话框。如果你想使用表，使用<a href="qfiledialog.html#open" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#open">QFileDialog.open</a>（ ）来代替。</td>
+</tr>
+</table>
+<p>该选项类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cOPTION\u003e 。它存储选项值的一个或组合。</p>
+
+
+<h3 class="fn">
+<a name="ViewMode-enum"></a>QFileDialog.ViewMode</h3>
+<p>这个枚举变量描述文件对话框的视图模式，即什么有关每个文件的信息将被显示。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFileDialog.Detail</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">显示一个图标，名称，详细目录中的每个项目。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFileDialog.List</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">只显示目录中的图标，并为每个项目的名称。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qfiledialog.html#viewMode-prop" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#viewMode-prop">setViewMode</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QFileDialog"></a>QFileDialog.__init__ (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-windowflags.html">Qt.WindowFlags</a> <i>f</i>)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个文件对话框给定的<i>parent</i>和widget<i>flags</i>。</p>
+
+
+<h3 class="fn">
+<a name="QFileDialog-2"></a>QFileDialog.__init__ (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None, QString <i>caption</i> = QString(), QString <i>directory</i> = QString(), QString <i>filter</i> = QString())</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个文件对话框给定的<i>parent</i>和<i>caption</i>最初显示指定的内容<i>directory</i>。该目录中的内容被过滤所示的对话框中之前，使用的过滤器通过指定一个分号分隔的列表<i>filter</i>。</p>
+
+
+<h3 class="fn">
+<a name="accept"></a>QFileDialog.accept (<i>self</i>)</h3>
+<p>从重新实现<a href="qdialog.html#accept" tppabs="http://pyqt4doc.appspot.com/qdialog.html#accept">QDialog.accept</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="acceptMode"></a><a href="qfiledialog.html#AcceptMode-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#AcceptMode-enum">AcceptMode</a> QFileDialog.acceptMode (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="changeEvent"></a>QFileDialog.changeEvent (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#changeEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#changeEvent">QWidget.changeEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="confirmOverwrite"></a>bool QFileDialog.confirmOverwrite (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="defaultSuffix"></a>QString QFileDialog.defaultSuffix (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="directory"></a><a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a> QFileDialog.directory (<i>self</i>)</h3>
+<p>返回目录当前显示在对话框中。</p>
+<p><b>See also</b> <a href="qfiledialog.html#setDirectory" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setDirectory">setDirectory</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="done"></a>QFileDialog.done (<i>self</i>, int <i>result</i>)</h3>
+<p>从重新实现<a href="qdialog.html#done" tppabs="http://pyqt4doc.appspot.com/qdialog.html#done">QDialog.done</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fileMode"></a><a href="qfiledialog.html#FileMode-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#FileMode-enum">FileMode</a> QFileDialog.fileMode (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="filter"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdir-filters.html">QDir.Filters</a> QFileDialog.filter (<i>self</i>)</h3>
+<p>返回显示的是文件时所使用的过滤器。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qfiledialog.html#setFilter" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setFilter">setFilter</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="filters"></a>QStringList QFileDialog.filters (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="getExistingDirectory"></a>QString QFileDialog.getExistingDirectory (<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None, QString <i>caption</i> = QString(), QString <i>directory</i> = QString(), <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qfiledialog-options.html">Options</a> <i>options</i> = QFileDialog.ShowDirsOnly)</h3>
+<p>这是一个方便的静态函数将返回由用户选择一个已存在的目录。</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> dir <span class="operator">=</span> <span class="type"><a href="qfiledialog.html" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html">QFileDialog</a></span><span class="operator">.</span>getExistingDirectory(<span class="keyword">this</span><span class="operator">,</span> tr(<span class="string">"Open Directory"</span>)<span class="operator">,</span>
+                                                 <span class="string">"/home"</span><span class="operator">,</span>
+                                                 <span class="type"><a href="qfiledialog.html" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html">QFileDialog</a></span><span class="operator">.</span>ShowDirsOnly
+                                                 <span class="operator">|</span> <span class="type"><a href="qfiledialog.html" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html">QFileDialog</a></span><span class="operator">.</span>DontResolveSymlinks);
+</pre>
+<p>这个函数创建具有给定一个模式文件对话框<i>parent</i>小工具。如果<i>parent</i>不为0时，将显示该对话框居中在父窗口部件。</p>
+<p>对话框的工作目录设置为<i>dir</i>和标题设置为<i>caption</i>。无论这些可能是在这种情况下，当前目录和默认的标题将分别使用一个空字符串。</p>
+<p>该<i>options</i>参数包含有关如何运行对话框中的各种选项，请参阅<a href="qfiledialog.html#Option-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#Option-enum">QFileDialog.Option</a>枚举就可以传递标志的更多信息。为确保本地文件对话框，<a href="qfiledialog.html#Option-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#Option-enum">ShowDirsOnly</a>必须设置。</p>
+<p>在Windows，Mac OS X和Symbian ^ 3系统，这个静态函数将使用本地文件对话框，而不是一个<a href="qfiledialog.html" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html">QFileDialog</a>。在Windows CE上，如果设备没有本地文件对话框中，<a href="qfiledialog.html" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html">QFileDialog</a>将被使用。</p>
+<p>上UNIX/X11 ，文件对话框的正常行为是解决并按照符号链接。例如，如果<tt>/usr/tmp</tt>是一个符号链接<tt>/var/tmp</tt>，文件对话框将变为<tt>/var/tmp</tt>进入后<tt>/usr/tmp</tt>。如果<i>options</i>包括<a href="qfiledialog.html#Option-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#Option-enum">DontResolveSymlinks</a>，文件对话框将把符号连接作为常规目录。</p>
+<p>在Windows的对话框会打滑阻塞模式的事件循环，不会派遣任何QTimers ，如果<i>parent</i>是不是0，那么它将使该对话框下方父的标题栏。</p>
+<p>在Symbian ^ 3<i>options</i>参数仅用于定义如果使用本地文件对话框。</p>
+<p><b>Warning:</b>不要删除<i>parent</i>在该对话框的执行。如果你想这样做，你应该用一个自己创建的对话框<a href="qfiledialog.html" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html">QFileDialog</a>构造函数。</p>
+<p><b>See also</b> <a href="qfiledialog.html#getOpenFileName" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#getOpenFileName">getOpenFileName</a>（ ）<a href="qfiledialog.html#getOpenFileNames" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#getOpenFileNames">getOpenFileNames</a>（）和<a href="qfiledialog.html#getSaveFileName" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#getSaveFileName">getSaveFileName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="getOpenFileName"></a>QString QFileDialog.getOpenFileName (<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None, QString <i>caption</i> = QString(), QString <i>directory</i> = QString(), QString <i>filter</i> = QString(), <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qfiledialog-options.html">Options</a> <i>options</i> = 0)</h3>
+<p>这是一个方便的静态函数，返回由用户选择一个已存在的文件。如果用户按下Cancel ，则返回一个空字符串。</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> fileName <span class="operator">=</span> <span class="type"><a href="qfiledialog.html" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html">QFileDialog</a></span><span class="operator">.</span>getOpenFileName(<span class="keyword">this</span><span class="operator">,</span> tr(<span class="string">"Open File"</span>)<span class="operator">,</span>
+                                                 <span class="string">"/home"</span><span class="operator">,</span>
+                                                 tr(<span class="string">"Images (*.png *.xpm *.jpg)"</span>));
+</pre>
+<p>用给定的函数创建一个样式文件对话框<i>parent</i>小工具。如果<i>parent</i>不为0时，将显示该对话框居中在父窗口部件。</p>
+<p>文件对话框的工作目录将被设置为<i>dir</i>。如果<i>dir</i>包括一个文件名，该文件将被选中。只有匹配给定的文件<i>filter</i>示。选定的过滤器设置为<i>selectedFilter</i>。参数<i>dir</i>，<i>selectedFilter</i>和<i>filter</i>可能是空字符串。如果你想多个过滤器，将它们分开，以'; “; ，例如：</p>
+<pre class="cpp">
+ <span class="string">"Images (*.png *.xpm *.jpg);;Text files (*.txt);;XML files (*.xml)"</span>
+</pre>
+<p>该<i>options</i>参数包含有关如何运行对话框中的各种选项，请参阅<a href="qfiledialog.html#Option-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#Option-enum">QFileDialog.Option</a>枚举就可以传递标志的更多信息。</p>
+<p>该对话框的标题设置为<i>caption</i>。如果<i>caption</i>不指定，那么默认的标题将被使用。</p>
+<p>在Windows，Mac OS X和Symbian ^ 3系统，这个静态函数将使用本地文件对话框，而不是一个<a href="qfiledialog.html" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html">QFileDialog</a>。</p>
+<p>在Windows的对话框会打滑阻塞模式的事件循环，不会派遣任何QTimers ，如果<i>parent</i>是不是0，那么它将使该对话框下方父的标题栏。</p>
+<p>上UNIX/X11 ，文件对话框的正常行为是解决并按照符号链接。例如，如果<tt>/usr/tmp</tt>是一个符号链接<tt>/var/tmp</tt>，文件对话框将变为<tt>/var/tmp</tt>进入后<tt>/usr/tmp</tt>。如果<i>options</i>包括<a href="qfiledialog.html#Option-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#Option-enum">DontResolveSymlinks</a>，文件对话框将把符号连接作为常规目录。</p>
+<p>在Symbian ^ 3的参数<i>selectedFilter</i>已经没有任何意义和<i>options</i>参数仅用于定义如果使用本地文件对话框。</p>
+<p><b>Warning:</b>不要删除<i>parent</i>在该对话框的执行。如果你想这样做，你应该用一个自己创建的对话框<a href="qfiledialog.html" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html">QFileDialog</a>构造函数。</p>
+<p><b>See also</b> <a href="qfiledialog.html#getOpenFileNames" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#getOpenFileNames">getOpenFileNames</a>（ ）<a href="qfiledialog.html#getSaveFileName" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#getSaveFileName">getSaveFileName</a>（）和<a href="qfiledialog.html#getExistingDirectory" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#getExistingDirectory">getExistingDirectory</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="getOpenFileName-2"></a>QString QFileDialog.getOpenFileName (<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None, QString <i>caption</i> = QString(), QString <i>directory</i> = QString(), QString <i>filter</i> = QString(), QString <i>selectedFilter</i> = None, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qfiledialog-options.html">Options</a> <i>options</i> = 0)</h3>
+<h3 class="fn">
+<a name="getOpenFileNameAndFilter"></a>(QString, QString) QFileDialog.getOpenFileNameAndFilter (<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None, QString <i>caption</i> = QString(), QString <i>directory</i> = QString(), QString <i>filter</i> = QString(), QString <i>initialFilter</i> = QString(), <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qfiledialog-options.html">Options</a> <i>options</i> = 0)</h3>
+<h3 class="fn">
+<a name="getOpenFileNames"></a>QStringList QFileDialog.getOpenFileNames (<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None, QString <i>caption</i> = QString(), QString <i>directory</i> = QString(), QString <i>filter</i> = QString(), <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qfiledialog-options.html">Options</a> <i>options</i> = 0)</h3>
+<p>这是一个方便的静态函数，将返回一个或多个由用户选择现有的文件。</p>
+<pre class="cpp">
+ <span class="type"><a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a></span> files <span class="operator">=</span> <span class="type"><a href="qfiledialog.html" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html">QFileDialog</a></span><span class="operator">.</span>getOpenFileNames(
+                         <span class="keyword">this</span><span class="operator">,</span>
+                         <span class="string">"Select one or more files to open"</span><span class="operator">,</span>
+                         <span class="string">"/home"</span><span class="operator">,</span>
+                         <span class="string">"Images (*.png *.xpm *.jpg)"</span>);
+</pre>
+<p>这个函数创建具有给定一个模式文件对话框<i>parent</i>小工具。如果<i>parent</i>不为0时，将显示该对话框居中在父窗口部件。</p>
+<p>文件对话框的工作目录将被设置为<i>dir</i>。如果<i>dir</i>包括一个文件名，该文件将被选中。该过滤器被设置为<i>filter</i>使只显示那些匹配过滤文件。选定的过滤器设置为<i>selectedFilter</i>。参数<i>dir</i>，<i>selectedFilter</i>和<i>filter</i>可能是空字符串。如果你需要多个过滤器，将它们分开，以'; “; ，例如：</p>
+<pre class="cpp">
+ <span class="string">"Images (*.png *.xpm *.jpg);;Text files (*.txt);;XML files (*.xml)"</span>
+</pre>
+<p>该对话框的标题设置为<i>caption</i>。如果<i>caption</i>不指定，那么默认的标题将被使用。</p>
+<p>在Windows，Mac OS X和Symbian ^ 3系统，这个静态函数将使用本地文件对话框，而不是一个<a href="qfiledialog.html" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html">QFileDialog</a>。</p>
+<p>在Windows的对话框会打滑阻塞模式的事件循环，不会派遣任何QTimers ，如果<i>parent</i>是不是0，那么它将使该对话框下方父的标题栏。</p>
+<p>上UNIX/X11 ，文件对话框的正常行为是解决并按照符号链接。例如，如果<tt>/usr/tmp</tt>是一个符号链接<tt>/var/tmp</tt>，文件对话框将变为<tt>/var/tmp</tt>进入后<tt>/usr/tmp</tt>。该<i>options</i>参数包含有关如何运行对话框中的各种选项，请参阅<a href="qfiledialog.html#Option-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#Option-enum">QFileDialog.Option</a>枚举就可以传递标志的更多信息。</p>
+<p><b>Note:</b>如果你想遍历文件的列表，你应该遍历一个副本。例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a></span> list <span class="operator">=</span> files;
+ <span class="type"><a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a></span><span class="operator">.</span>Iterator it <span class="operator">=</span> list<span class="operator">.</span>begin();
+ <span class="keyword">while</span>(it <span class="operator">!</span><span class="operator">=</span> list<span class="operator">.</span>end()) {
+     myProcessing(<span class="operator">*</span>it);
+     <span class="operator">+</span><span class="operator">+</span>it;
+ }
+</pre>
+<p>在Symbian ^ 3的参数<i>selectedFilter</i>已经没有任何意义和<i>options</i>参数仅用于定义如果使用本地文件对话框。在Symbian ^ 3 ，这个函数只能返回一个文件名。</p>
+<p><b>Warning:</b>不要删除<i>parent</i>在该对话框的执行。如果你想这样做，你应该用一个自己创建的对话框<a href="qfiledialog.html" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html">QFileDialog</a>构造函数。</p>
+<p><b>See also</b> <a href="qfiledialog.html#getOpenFileName" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#getOpenFileName">getOpenFileName</a>（ ）<a href="qfiledialog.html#getSaveFileName" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#getSaveFileName">getSaveFileName</a>（）和<a href="qfiledialog.html#getExistingDirectory" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#getExistingDirectory">getExistingDirectory</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="getOpenFileNames-2"></a>QStringList QFileDialog.getOpenFileNames (<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None, QString <i>caption</i> = QString(), QString <i>directory</i> = QString(), QString <i>filter</i> = QString(), QString <i>selectedFilter</i> = None, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qfiledialog-options.html">Options</a> <i>options</i> = 0)</h3>
+<h3 class="fn">
+<a name="getOpenFileNamesAndFilter"></a>(QString, QString) QFileDialog.getOpenFileNamesAndFilter (<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None, QString <i>caption</i> = QString(), QString <i>directory</i> = QString(), QString <i>filter</i> = QString(), QString <i>initialFilter</i> = QString(), <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qfiledialog-options.html">Options</a> <i>options</i> = 0)</h3>
+<h3 class="fn">
+<a name="getSaveFileName"></a>QString QFileDialog.getSaveFileName (<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None, QString <i>caption</i> = QString(), QString <i>directory</i> = QString(), QString <i>filter</i> = QString(), <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qfiledialog-options.html">Options</a> <i>options</i> = 0)</h3>
+<p>这是一个方便的静态函数将返回由用户选择的文件名。该文件没有存在。</p>
+<p>它创建具有给定一个模式文件对话框<i>parent</i>小工具。如果<i>parent</i>不为0时，将显示该对话框居中在父窗口部件。</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> fileName <span class="operator">=</span> <span class="type"><a href="qfiledialog.html" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html">QFileDialog</a></span><span class="operator">.</span>getSaveFileName(<span class="keyword">this</span><span class="operator">,</span> tr(<span class="string">"Save File"</span>)<span class="operator">,</span>
+                            <span class="string">"/home/jana/untitled.png"</span><span class="operator">,</span>
+                            tr(<span class="string">"Images (*.png *.xpm *.jpg)"</span>));
+</pre>
+<p>文件对话框的工作目录将被设置为<i>dir</i>。如果<i>dir</i>包括一个文件名，该文件将被选中。只有文件的匹配<i>filter</i>示。选定的过滤器设置为<i>selectedFilter</i>。参数<i>dir</i>，<i>selectedFilter</i>和<i>filter</i>可能是空字符串。多个过滤器之间用“ ; ”; 。例如：</p>
+<pre class="cpp">
+ <span class="string">"Images (*.png *.xpm *.jpg);;Text files (*.txt);;XML files (*.xml)"</span>
+</pre>
+<p>该<i>options</i>参数包含有关如何运行对话框中的各种选项，请参阅<a href="qfiledialog.html#Option-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#Option-enum">QFileDialog.Option</a>枚举就可以传递标志的更多信息。</p>
+<p>默认的过滤器可以通过设置选择<i>selectedFilter</i>到所需的值。</p>
+<p>该对话框的标题设置为<i>caption</i>。如果<i>caption</i>没有被指定，默认字幕将被使用。</p>
+<p>在Windows，Mac OS X和Symbian ^ 3系统，这个静态函数将使用本地文件对话框，而不是一个<a href="qfiledialog.html" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html">QFileDialog</a>。</p>
+<p>在Windows的对话框会打滑阻塞模式的事件循环，不会派遣任何QTimers ，如果<i>parent</i>是不是0，那么它将使该对话框下方父的标题栏。在Mac OS X ，其本地文件对话框，滤波器参数将被忽略。</p>
+<p>上UNIX/X11 ，文件对话框的正常行为是解决并按照符号链接。例如，如果<tt>/usr/tmp</tt>是一个符号链接<tt>/var/tmp</tt>，文件对话框将变为<tt>/var/tmp</tt>进入后<tt>/usr/tmp</tt>。如果<i>options</i>包括<a href="qfiledialog.html#Option-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#Option-enum">DontResolveSymlinks</a>文件对话框将把符号连接作为常规目录。</p>
+<p>在Symbian ^ 3的参数<i>filter</i>和<i>selectedFilter</i>没有任何意义。该<i>options</i>参数仅用于定义如果使用本地文件对话框。</p>
+<p><b>Warning:</b>不要删除<i>parent</i>在该对话框的执行。如果你想这样做，你应该用一个自己创建的对话框<a href="qfiledialog.html" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html">QFileDialog</a>构造函数。</p>
+<p><b>See also</b> <a href="qfiledialog.html#getOpenFileName" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#getOpenFileName">getOpenFileName</a>（ ）<a href="qfiledialog.html#getOpenFileNames" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#getOpenFileNames">getOpenFileNames</a>（）和<a href="qfiledialog.html#getExistingDirectory" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#getExistingDirectory">getExistingDirectory</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="getSaveFileName-2"></a>QString QFileDialog.getSaveFileName (<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None, QString <i>caption</i> = QString(), QString <i>directory</i> = QString(), QString <i>filter</i> = QString(), QString <i>selectedFilter</i> = None, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qfiledialog-options.html">Options</a> <i>options</i> = 0)</h3>
+<h3 class="fn">
+<a name="getSaveFileNameAndFilter"></a>(QString, QString) QFileDialog.getSaveFileNameAndFilter (<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None, QString <i>caption</i> = QString(), QString <i>directory</i> = QString(), QString <i>filter</i> = QString(), QString <i>initialFilter</i> = QString(), <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qfiledialog-options.html">Options</a> <i>options</i> = 0)</h3>
+<h3 class="fn">
+<a name="history"></a>QStringList QFileDialog.history (<i>self</i>)</h3>
+<p>返回的FileDialog的浏览历史记录作为路径的列表。</p>
+<p><b>See also</b> <a href="qfiledialog.html#setHistory" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setHistory">setHistory</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="iconProvider"></a><a href="qfileiconprovider.html" tppabs="http://pyqt4doc.appspot.com/qfileiconprovider.html">QFileIconProvider</a> QFileDialog.iconProvider (<i>self</i>)</h3>
+<p>返回所使用的文件对话框的图标提供商。</p>
+<p><b>See also</b> <a href="qfiledialog.html#setIconProvider" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setIconProvider">setIconProvider</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isNameFilterDetailsVisible"></a>bool QFileDialog.isNameFilterDetailsVisible (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="isReadOnly"></a>bool QFileDialog.isReadOnly (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="itemDelegate"></a><a href="qabstractitemdelegate.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html">QAbstractItemDelegate</a> QFileDialog.itemDelegate (<i>self</i>)</h3>
+<p>返回用于呈现在文件对话框的意见项目的项目委讬。</p>
+<p><b>See also</b> <a href="qfiledialog.html#setItemDelegate" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setItemDelegate">setItemDelegate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="labelText"></a>QString QFileDialog.labelText (<i>self</i>, <a href="qfiledialog.html#DialogLabel-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#DialogLabel-enum">DialogLabel</a> <i>label</i>)</h3>
+<p>返回在指定的文件对话框上显示的文本<i>label</i>。</p>
+<p><b>See also</b> <a href="qfiledialog.html#setLabelText" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setLabelText">setLabelText</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="nameFilters"></a>QStringList QFileDialog.nameFilters (<i>self</i>)</h3>
+<p>返回文件类型过滤器，在操作这个文件对话框。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qfiledialog.html#setNameFilters" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setNameFilters">setNameFilters</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="open"></a>QFileDialog.open (<i>self</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>此功能连接它的信号之一，由指定的插槽<i>receiver</i>和<i>member</i>。特定信号取决于是<a href="qfiledialog.html#filesSelected" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#filesSelected">filesSelected</a>（）如果<a href="qfiledialog.html#fileMode-prop" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#fileMode-prop">fileMode</a> is <a href="qfiledialog.html#FileMode-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#FileMode-enum">ExistingFiles</a>和<a href="qfiledialog.html#fileSelected" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#fileSelected">fileSelected</a>（）如果<a href="qfiledialog.html#fileMode-prop" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#fileMode-prop">fileMode</a>是其他任何东西。</p>
+<p>该信号会从插槽中断开时，关闭对话框。</p>
+<p>此功能被引入Qt的4.5 。</p>
+
+
+<h3 class="fn">
+<a name="open-2"></a>QFileDialog.open (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>receiver</i>, SLOT()SLOT() <i>member</i>)</h3>
+<h3 class="fn">
+<a name="open-3"></a>QFileDialog.open (<i>self</i>, callable <i>receiver</i>)</h3>
+<h3 class="fn">
+<a name="options"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qfiledialog-options.html">Options</a> QFileDialog.options (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="proxyModel"></a><a href="qabstractproxymodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractproxymodel.html">QAbstractProxyModel</a> QFileDialog.proxyModel (<i>self</i>)</h3>
+<p>返回所使用的文件对话框的代理模型。默认情况下没有代理设置。</p>
+<p><b>See also</b> <a href="qfiledialog.html#setProxyModel" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setProxyModel">setProxyModel</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="resolveSymlinks"></a>bool QFileDialog.resolveSymlinks (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="restoreState"></a>bool QFileDialog.restoreState (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>state</i>)</h3>
+<p>恢复对话框的布局，历史和当前目录到<i>state</i>规定。</p>
+<p>通常，这是配合使用<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>从过去的会话还原大小。</p>
+<p>如果有错误，则返回False</p>
+<p>此功能被引入Qt的4.3 。</p>
+
+
+<h3 class="fn">
+<a name="saveState"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QFileDialog.saveState (<i>self</i>)</h3>
+<p>保存对话框的布局，历史和当前目录的状态。</p>
+<p>通常，这是配合使用<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>要记住的大小为今后的会议。版本号码被存储作为数据的一部分。</p>
+<p>此功能被引入Qt的4.3 。</p>
+
+
+<h3 class="fn">
+<a name="selectedFiles"></a>QStringList QFileDialog.selectedFiles (<i>self</i>)</h3>
+<p>返回包含在对话框中选定的文件的绝对路径的字符串列表。如果没有文件被选中，或模式是不<a href="qfiledialog.html#FileMode-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#FileMode-enum">ExistingFiles</a>
+or <a href="qfiledialog.html#FileMode-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#FileMode-enum">ExistingFile</a>， selectedFiles （）包含在视口中当前路径。</p>
+<p><b>See also</b> <a href="qfiledialog.html#selectedNameFilter" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#selectedNameFilter">selectedNameFilter</a>（）和<a href="qfiledialog.html#selectFile" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#selectFile">selectFile</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="selectedFilter"></a>QString QFileDialog.selectedFilter (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="selectedNameFilter"></a>QString QFileDialog.selectedNameFilter (<i>self</i>)</h3>
+<p>返回用户在文件对话框中选择过滤器。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qfiledialog.html#selectedFiles" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#selectedFiles">selectedFiles</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="selectFile"></a>QFileDialog.selectFile (<i>self</i>, QString <i>filename</i>)</h3>
+<p>选择给定的<i>filename</i>在文件对话框。</p>
+<p><b>See also</b> <a href="qfiledialog.html#selectedFiles" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#selectedFiles">selectedFiles</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="selectFilter"></a>QFileDialog.selectFilter (<i>self</i>, QString <i>filter</i>)</h3>
+<h3 class="fn">
+<a name="selectNameFilter"></a>QFileDialog.selectNameFilter (<i>self</i>, QString <i>filter</i>)</h3>
+<p>设置当前文件类型<i>filter</i>。多个过滤器可以被传递<i>filter</i>用分号或空格分隔。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qfiledialog.html#setNameFilter" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setNameFilter">setNameFilter</a>（ ）<a href="qfiledialog.html#setNameFilters" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setNameFilters">setNameFilters</a>（）和<a href="qfiledialog.html#selectedNameFilter" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#selectedNameFilter">selectedNameFilter</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setAcceptMode"></a>QFileDialog.setAcceptMode (<i>self</i>, <a href="qfiledialog.html#AcceptMode-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#AcceptMode-enum">AcceptMode</a> <i>mode</i>)</h3>
+<h3 class="fn">
+<a name="setConfirmOverwrite"></a>QFileDialog.setConfirmOverwrite (<i>self</i>, bool <i>enabled</i>)</h3>
+<h3 class="fn">
+<a name="setDefaultSuffix"></a>QFileDialog.setDefaultSuffix (<i>self</i>, QString <i>suffix</i>)</h3>
+<h3 class="fn">
+<a name="setDirectory"></a>QFileDialog.setDirectory (<i>self</i>, QString <i>directory</i>)</h3>
+<p>设置文件对话框的电流<i>directory</i>。</p>
+<p><b>See also</b> <a href="qfiledialog.html#directory" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#directory">directory</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setDirectory-2"></a>QFileDialog.setDirectory (<i>self</i>, <a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a> <i>adirectory</i>)</h3>
+<p>这是一个重载函数。</p>
+
+
+<h3 class="fn">
+<a name="setFileMode"></a>QFileDialog.setFileMode (<i>self</i>, <a href="qfiledialog.html#FileMode-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#FileMode-enum">FileMode</a> <i>mode</i>)</h3>
+<h3 class="fn">
+<a name="setFilter"></a>QFileDialog.setFilter (<i>self</i>, QString <i>filter</i>)</h3>
+<p>设置模型使用的过滤器<i>filters</i>。该过滤器是用于指定类型的文件应该被显示。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qfiledialog.html#filter" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#filter">filter</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFilter-2"></a>QFileDialog.setFilter (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdir-filters.html">QDir.Filters</a> <i>filters</i>)</h3>
+<h3 class="fn">
+<a name="setFilters"></a>QFileDialog.setFilters (<i>self</i>, QStringList <i>filters</i>)</h3>
+<h3 class="fn">
+<a name="setHistory"></a>QFileDialog.setHistory (<i>self</i>, QStringList <i>paths</i>)</h3>
+<p>设置文件对话框的浏览历史记录包含给定<i>paths</i>。</p>
+<p><b>See also</b> <a href="qfiledialog.html#history" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#history">history</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setIconProvider"></a>QFileDialog.setIconProvider (<i>self</i>, <a href="qfileiconprovider.html" tppabs="http://pyqt4doc.appspot.com/qfileiconprovider.html">QFileIconProvider</a> <i>provider</i>)</h3>
+<p>设置使用的文件对话框，以指定的图标提供商<i>provider</i>。</p>
+<p><b>See also</b> <a href="qfiledialog.html#iconProvider" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#iconProvider">iconProvider</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setItemDelegate"></a>QFileDialog.setItemDelegate (<i>self</i>, <a href="qabstractitemdelegate.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html">QAbstractItemDelegate</a> <i>delegate</i>)</h3>
+<p>设置用于渲染的意见项目在文件对话框中给定的项目代表<i>delegate</i>。</p>
+<p><b>Warning:</b>你不应该共享视图之间的委讬的同一实例。否则会导致不正确或不直观的编辑行为，因为在一个给定的委讬每个视图可能会收到<a href="qabstractitemdelegate.html#closeEditor" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#closeEditor">closeEditor()</a>信号，并试图访问，修改或关闭一个已经被关闭的编辑器。</p>
+<p>注意，所用的模型是<a href="qfilesystemmodel.html" tppabs="http://pyqt4doc.appspot.com/qfilesystemmodel.html">QFileSystemModel</a>。它具有自定义项目角色的数据，这是由所描述的<a href="qfilesystemmodel.html#Roles-enum" tppabs="http://pyqt4doc.appspot.com/qfilesystemmodel.html#Roles-enum">Roles</a>枚举。您可以使用<a href="qfileiconprovider.html" tppabs="http://pyqt4doc.appspot.com/qfileiconprovider.html">QFileIconProvider</a>如果只想自定义图标。</p>
+<p><b>See also</b> <a href="qfiledialog.html#itemDelegate" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#itemDelegate">itemDelegate</a>（ ）<a href="qfiledialog.html#setIconProvider" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setIconProvider">setIconProvider</a>（）和<a href="qfilesystemmodel.html" tppabs="http://pyqt4doc.appspot.com/qfilesystemmodel.html">QFileSystemModel</a>。</p>
+
+
+<h3 class="fn">
+<a name="setLabelText"></a>QFileDialog.setLabelText (<i>self</i>, <a href="qfiledialog.html#DialogLabel-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#DialogLabel-enum">DialogLabel</a> <i>label</i>, QString <i>text</i>)</h3>
+<p>设置<i>text</i>在所指定的文件对话框显示<i>label</i>。</p>
+<p><b>See also</b> <a href="qfiledialog.html#labelText" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#labelText">labelText</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setNameFilter"></a>QFileDialog.setNameFilter (<i>self</i>, QString <i>filter</i>)</h3>
+<p>设置在文件对话框中使用的过滤器给定<i>filter</i>。</p>
+<p>If <i>filter</i>包含一对含有一个或多个括号中的<b>anything*something</b>，用空格隔开，那么只有包含在括号内的文字被用作过滤器。这意味着，这些电话都是等价的：</p>
+<pre class="cpp">
+ dialog<span class="operator">.</span>setNameFilter(<span class="string">"All C++ files (*.cpp *.cc *.C *.cxx *.c++)"</span>);
+ dialog<span class="operator">.</span>setNameFilter(<span class="string">"*.cpp *.cc *.C *.cxx *.c++"</span>);
+</pre>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qfiledialog.html#setNameFilters" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setNameFilters">setNameFilters</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setNameFilterDetailsVisible"></a>QFileDialog.setNameFilterDetailsVisible (<i>self</i>, bool <i>enabled</i>)</h3>
+<h3 class="fn">
+<a name="setNameFilters"></a>QFileDialog.setNameFilters (<i>self</i>, QStringList <i>filters</i>)</h3>
+<p>设置<i>filters</i>在文件对话框中使用。</p>
+<pre class="cpp">
+ <span class="type"><a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a></span> filters;
+ filters <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"Image files (*.png *.xpm *.jpg)"</span>
+         <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"Text files (*.txt)"</span>
+         <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"Any files (*)"</span>;
+
+ <span class="type"><a href="qfiledialog.html" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html">QFileDialog</a></span> dialog(<span class="keyword">this</span>);
+ dialog<span class="operator">.</span>setNameFilters(filters);
+ dialog<span class="operator">.</span><a href="qdialog.html#exec" tppabs="http://pyqt4doc.appspot.com/qdialog.html#exec">exec_</a>();
+</pre>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qfiledialog.html#nameFilters" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#nameFilters">nameFilters</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setOption"></a>QFileDialog.setOption (<i>self</i>, <a href="qfiledialog.html#Option-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#Option-enum">Option</a> <i>option</i>, bool <i>on</i> = True)</h3>
+<p>设置给定<i>option</i>被启用，如果<i>on</i>是真的，否则，清除给定的<i>option</i>。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qfiledialog.html#options-prop" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#options-prop">options</a>和<a href="qfiledialog.html#testOption" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#testOption">testOption</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setOptions"></a>QFileDialog.setOptions (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qfiledialog-options.html">Options</a> <i>options</i>)</h3>
+<h3 class="fn">
+<a name="setProxyModel"></a>QFileDialog.setProxyModel (<i>self</i>, <a href="qabstractproxymodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractproxymodel.html">QAbstractProxyModel</a> <i>model</i>)</h3>
+<p>该<i>model</i>说法有它的所有权转移给Qt的。</p>
+<p>该模型提出的意见设置为给定<i>proxyModel</i>。如果您要修改的基础模型，这非常有用，例如，添加列，过滤数据或添加驱动器。</p>
+<p>任何现有的代理模型将被删除，但不会被删除。文件对话框将采取的所有权<i>proxyModel</i>。</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qfiledialog.html#proxyModel" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#proxyModel">proxyModel</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setReadOnly"></a>QFileDialog.setReadOnly (<i>self</i>, bool <i>enabled</i>)</h3>
+<h3 class="fn">
+<a name="setResolveSymlinks"></a>QFileDialog.setResolveSymlinks (<i>self</i>, bool <i>enabled</i>)</h3>
+<h3 class="fn">
+<a name="setSidebarUrls"></a>QFileDialog.setSidebarUrls (<i>self</i>, list-of-QUrl <i>urls</i>)</h3>
+<p>设置<i>urls</i>位于侧边栏的。</p>
+<p>例如：</p>
+<pre class="cpp">
+     <span class="type"><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qlist.html">QList</a></span><span class="operator">&lt;</span><span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span><span class="operator">&gt;</span> urls;
+     urls <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span><span class="operator">.</span>fromLocalFile(<span class="string">"/home/gvatteka/dev/qt-45"</span>)
+          <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span><span class="operator">.</span>fromLocalFile(<span class="type"><a href="qdesktopservices.html" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html">QDesktopServices</a></span><span class="operator">.</span>storageLocation(<span class="type"><a href="qdesktopservices.html" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html">QDesktopServices</a></span><span class="operator">.</span>MusicLocation));
+
+     <span class="type"><a href="qfiledialog.html" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html">QFileDialog</a></span> dialog;
+     dialog<span class="operator">.</span>setSidebarUrls(urls);
+     dialog<span class="operator">.</span>setFileMode(<span class="type"><a href="qfiledialog.html" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html">QFileDialog</a></span><span class="operator">.</span>AnyFile);
+     <span class="keyword">if</span>(dialog<span class="operator">.</span>exec()) {
+         <span class="comment">// ...</span>
+     }
+</pre>
+<p>文件对话框就会看起来像这样：</p>
+<p class="centerAlign"><img alt="" src="images/filedialogurls.png"></p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qfiledialog.html#sidebarUrls" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#sidebarUrls">sidebarUrls</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setViewMode"></a>QFileDialog.setViewMode (<i>self</i>, <a href="qfiledialog.html#ViewMode-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#ViewMode-enum">ViewMode</a> <i>mode</i>)</h3>
+<h3 class="fn">
+<a name="setVisible"></a>QFileDialog.setVisible (<i>self</i>, bool <i>visible</i>)</h3>
+<p>从重新实现<a href="qwidget.html#visible-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#visible-prop">QWidget.setVisible</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sidebarUrls"></a>list-of-QUrl QFileDialog.sidebarUrls (<i>self</i>)</h3>
+<p>返回的URL是目前在侧边栏的列表</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qfiledialog.html#setSidebarUrls" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setSidebarUrls">setSidebarUrls</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="testOption"></a>bool QFileDialog.testOption (<i>self</i>, <a href="qfiledialog.html#Option-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#Option-enum">Option</a> <i>option</i>)</h3>
+<p>返回True如果给定的<i>option</i>被启用，否则返回False 。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qfiledialog.html#options-prop" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#options-prop">options</a>和<a href="qfiledialog.html#setOption" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#setOption">setOption</a>（ ） 。</p>
+<h3 class="fn">
+<a name="viewMode"></a><a href="qfiledialog.html#ViewMode-enum" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#ViewMode-enum">ViewMode</a> QFileDialog.viewMode (<i>self</i>)</h3>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="currentChanged"></a>void currentChanged (const QString&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>如果当前文件的变化，这个信号被发射的新的文件名作为<i>path</i>参数。</p>
+<p><b>See also</b> <a href="qfiledialog.html#filesSelected" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#filesSelected">filesSelected</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="directoryEntered"></a>void directoryEntered (const QString&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当用户输入这个信号被发射的<i>directory</i>。</p>
+<p>此功能被引入Qt的4.3 。</p>
+
+
+<h3 class="fn">
+<a name="fileSelected"></a>void fileSelected (const QString&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当选择的变化和对话框被接受，这个信号被发射的（可能为空）选中<i>file</i>。</p>
+<p><b>See also</b> <a href="qfiledialog.html#currentChanged" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#currentChanged">currentChanged</a>（）和<a href="qdialog.html#DialogCode-enum" tppabs="http://pyqt4doc.appspot.com/qdialog.html#DialogCode-enum">QDialog.Accepted</a>。</p>
+
+
+<h3 class="fn">
+<a name="filesSelected"></a>void filesSelected (const QStringList&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当选择的变化和对话框被接受，这个信号被发射用的（可能为空）名单<i>selected</i>文件。</p>
+<p><b>See also</b> <a href="qfiledialog.html#currentChanged" tppabs="http://pyqt4doc.appspot.com/qfiledialog.html#currentChanged">currentChanged</a>（）和<a href="qdialog.html#DialogCode-enum" tppabs="http://pyqt4doc.appspot.com/qdialog.html#DialogCode-enum">QDialog.Accepted</a>。</p>
+
+
+<h3 class="fn">
+<a name="filterSelected"></a>void filterSelected (const QString&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当用户选择这个信号被发射的<i>filter</i>。</p>
+<p>此功能被引入Qt的4.3 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

@@ -1,0 +1,1063 @@
+﻿<html>
+<head>
+<title>QTextFormat Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QTextFormat Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QTextFormat类提供的格式化信息的<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>。<a href="#details">More...</a></p>
+
+<p>通过继承<a href="qtextblockformat.html" tppabs="http://pyqt4doc.appspot.com/qtextblockformat.html">QTextBlockFormat</a>，<a href="qtextcharformat.html" tppabs="http://pyqt4doc.appspot.com/qtextcharformat.html">QTextCharFormat</a>，<a href="qtextframeformat.html" tppabs="http://pyqt4doc.appspot.com/qtextframeformat.html">QTextFrameFormat</a>和<a href="qtextlistformat.html" tppabs="http://pyqt4doc.appspot.com/qtextlistformat.html">QTextListFormat</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qtextformat.html#FormatType-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#FormatType-enum">FormatType</a></b> { InvalidFormat, BlockFormat, CharFormat, ListFormat, ..., UserFormat }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qtextformat.html#ObjectTypes-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#ObjectTypes-enum">ObjectTypes</a></b> { NoObject, ImageObject, TableObject, TableCellObject, UserObject }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qtextformat.html#PageBreakFlag-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#PageBreakFlag-enum">PageBreakFlag</a></b> { PageBreak_Auto, PageBreak_AlwaysBefore, PageBreak_AlwaysAfter }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtextformat-pagebreakflags.html">PageBreakFlags</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qtextformat.html#Property-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#Property-enum">Property</a></b> { ObjectIndex, CssFloat, LayoutDirection, OutlinePen, ..., UserProperty }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qtextformat.html#QTextFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#QTextFormat">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextformat.html#QTextFormat-2" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#QTextFormat-2">__init__</a></b> (<i>self</i>, int <i>type</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextformat.html#QTextFormat-3" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#QTextFormat-3">__init__</a></b> (<i>self</i>, QTextFormat <i>rhs</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextformat.html#QTextFormat-4" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#QTextFormat-4">__init__</a></b> (<i>self</i>, QVariant <i>variant</i>)</li>
+<li>
+<div class="fn"></div>QBrush <b><a href="qtextformat.html#background" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#background">background</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextformat.html#boolProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#boolProperty">boolProperty</a></b> (<i>self</i>, int <i>propertyId</i>)</li>
+<li>
+<div class="fn"></div>QBrush <b><a href="qtextformat.html#brushProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#brushProperty">brushProperty</a></b> (<i>self</i>, int <i>propertyId</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextformat.html#clearBackground" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#clearBackground">clearBackground</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextformat.html#clearForeground" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#clearForeground">clearForeground</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextformat.html#clearProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#clearProperty">clearProperty</a></b> (<i>self</i>, int <i>propertyId</i>)</li>
+<li>
+<div class="fn"></div>QColor <b><a href="qtextformat.html#colorProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#colorProperty">colorProperty</a></b> (<i>self</i>, int <i>propertyId</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtextformat.html#doubleProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#doubleProperty">doubleProperty</a></b> (<i>self</i>, int <i>propertyId</i>)</li>
+<li>
+<div class="fn"></div>QBrush <b><a href="qtextformat.html#foreground" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#foreground">foreground</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextformat.html#hasProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#hasProperty">hasProperty</a></b> (<i>self</i>, int <i>propertyId</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextformat.html#intProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#intProperty">intProperty</a></b> (<i>self</i>, int <i>propertyId</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextformat.html#isBlockFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#isBlockFormat">isBlockFormat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextformat.html#isCharFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#isCharFormat">isCharFormat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextformat.html#isFrameFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#isFrameFormat">isFrameFormat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextformat.html#isImageFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#isImageFormat">isImageFormat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextformat.html#isListFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#isListFormat">isListFormat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextformat.html#isTableCellFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#isTableCellFormat">isTableCellFormat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextformat.html#isTableFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#isTableFormat">isTableFormat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextformat.html#isValid" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#isValid">isValid</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Qt.LayoutDirection <b><a href="qtextformat.html#layoutDirection" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#layoutDirection">layoutDirection</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextLength <b><a href="qtextformat.html#lengthProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#lengthProperty">lengthProperty</a></b> (<i>self</i>, int <i>propertyId</i>)</li>
+<li>
+<div class="fn"></div>list-of-QTextLength <b><a href="qtextformat.html#lengthVectorProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#lengthVectorProperty">lengthVectorProperty</a></b> (<i>self</i>, int <i>propertyId</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextformat.html#merge" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#merge">merge</a></b> (<i>self</i>, QTextFormat <i>other</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextformat.html#objectIndex" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#objectIndex">objectIndex</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextformat.html#objectType" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#objectType">objectType</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QPen <b><a href="qtextformat.html#penProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#penProperty">penProperty</a></b> (<i>self</i>, int <i>propertyId</i>)</li>
+<li>
+<div class="fn"></div>dict-of-int-QVariant <b><a href="qtextformat.html#properties" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#properties">properties</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qtextformat.html#property" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#property">property</a></b> (<i>self</i>, int <i>propertyId</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextformat.html#propertyCount" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#propertyCount">propertyCount</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextformat.html#setBackground" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setBackground">setBackground</a></b> (<i>self</i>, QBrush <i>brush</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextformat.html#setForeground" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setForeground">setForeground</a></b> (<i>self</i>, QBrush <i>brush</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextformat.html#setLayoutDirection" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setLayoutDirection">setLayoutDirection</a></b> (<i>self</i>, Qt.LayoutDirection <i>direction</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextformat.html#setObjectIndex" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setObjectIndex">setObjectIndex</a></b> (<i>self</i>, int <i>object</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextformat.html#setObjectType" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setObjectType">setObjectType</a></b> (<i>self</i>, int <i>atype</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextformat.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setProperty">setProperty</a></b> (<i>self</i>, int <i>propertyId</i>, QVariant <i>value</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextformat.html#setProperty-2" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setProperty-2">setProperty</a></b> (<i>self</i>, int <i>propertyId</i>, list-of-QTextLength <i>lengths</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qtextformat.html#stringProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#stringProperty">stringProperty</a></b> (<i>self</i>, int <i>propertyId</i>)</li>
+<li>
+<div class="fn"></div>QTextBlockFormat <b><a href="qtextformat.html#toBlockFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#toBlockFormat">toBlockFormat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextCharFormat <b><a href="qtextformat.html#toCharFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#toCharFormat">toCharFormat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextFrameFormat <b><a href="qtextformat.html#toFrameFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#toFrameFormat">toFrameFormat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextImageFormat <b><a href="qtextformat.html#toImageFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#toImageFormat">toImageFormat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextListFormat <b><a href="qtextformat.html#toListFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#toListFormat">toListFormat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextTableCellFormat <b><a href="qtextformat.html#toTableCellFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#toTableCellFormat">toTableCellFormat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextTableFormat <b><a href="qtextformat.html#toTableFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#toTableFormat">toTableFormat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextformat.html#type" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#type">type</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>bool <b><a href="qtextformat.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#__eq__">__eq__</a></b> (<i>self</i>, QTextFormat <i>rhs</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextformat.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#__ne__">__ne__</a></b> (<i>self</i>, QTextFormat <i>rhs</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QTextFormat类提供的格式化信息的<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>。</p>
+<p>一个QTextFormat是用于描述一个部分的格式泛型类<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>。派生类<a href="qtextcharformat.html" tppabs="http://pyqt4doc.appspot.com/qtextcharformat.html">QTextCharFormat</a>，<a href="qtextblockformat.html" tppabs="http://pyqt4doc.appspot.com/qtextblockformat.html">QTextBlockFormat</a>，<a href="qtextlistformat.html" tppabs="http://pyqt4doc.appspot.com/qtextlistformat.html">QTextListFormat</a>和<a href="qtexttableformat.html" tppabs="http://pyqt4doc.appspot.com/qtexttableformat.html">QTextTableFormat</a>通常比较有益的，并且描述了应用到文档的特定部分的格式。</p>
+<p>的一种格式有<tt>FormatType</tt>它指定了各种文本项目也可以格式化;如文本块，列表，表格等的一种格式还具有各种属性（一些具体的特定格式类型） ，所描述的属性枚举。每个属性都有相应的属性。</p>
+<p>格式类型由下式给出<a href="qtextformat.html#type" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#type">type</a>（） ，并且格式可以与测试<a href="qtextformat.html#isCharFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#isCharFormat">isCharFormat</a>（ ）<a href="qtextformat.html#isBlockFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#isBlockFormat">isBlockFormat</a>（ ）<a href="qtextformat.html#isListFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#isListFormat">isListFormat</a>（ ）<a href="qtextformat.html#isTableFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#isTableFormat">isTableFormat</a>（ ）<a href="qtextformat.html#isFrameFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#isFrameFormat">isFrameFormat</a>（）和<a href="qtextformat.html#isImageFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#isImageFormat">isImageFormat</a>（ ） 。如果类型是确定的，它可以被检索以<a href="qtextformat.html#toCharFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#toCharFormat">toCharFormat</a>（ ）<a href="qtextformat.html#toBlockFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#toBlockFormat">toBlockFormat</a>（ ）<a href="qtextformat.html#toListFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#toListFormat">toListFormat</a>（ ）<a href="qtextformat.html#toTableFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#toTableFormat">toTableFormat</a>（ ）<a href="qtextformat.html#toFrameFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#toFrameFormat">toFrameFormat</a>（）和<a href="qtextformat.html#toImageFormat" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#toImageFormat">toImageFormat</a>（ ） 。</p>
+<p>的一种格式的属性可以与设置<a href="qtextformat.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setProperty">setProperty</a>（）函数，并检索与<a href="qtextformat.html#boolProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#boolProperty">boolProperty</a>（ ）<a href="qtextformat.html#intProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#intProperty">intProperty</a>（ ）<a href="qtextformat.html#doubleProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#doubleProperty">doubleProperty</a>（）和<a href="qtextformat.html#stringProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#stringProperty">stringProperty</a>（ ） （如适用） 。所有的格式使用的属性ID可以检索到allPropertyIds （ ） 。一种格式可以被合并到另一个使用<a href="qtextformat.html#merge" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#merge">merge</a>（ ） 。</p>
+<p>的一种格式的对象的索引可以被设置<a href="qtextformat.html#setObjectIndex" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setObjectIndex">setObjectIndex</a>（） ，并检索与<a href="qtextformat.html#objectIndex" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#objectIndex">objectIndex</a>（ ） 。这些方法可用于编排格式，相关联<a href="qtextobject.html" tppabs="http://pyqt4doc.appspot.com/qtextobject.html">QTextObject</a>。它是用来表示文档内列出，框架和表格。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="FormatType-enum"></a>QTextFormat.FormatType</h3>
+<p>这个枚举变量描述文本项目的<a href="qtextformat.html" tppabs="http://pyqt4doc.appspot.com/qtextformat.html">QTextFormat</a>对象被格式化。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.InvalidFormat</tt></td>
+<td class="topAlign"><tt>-1</tt></td>
+<td class="topAlign">由默认的构造函数创建一个无效的格式</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.BlockFormat</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">对象格式化文本块</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.CharFormat</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">对象格式的单个字符</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.ListFormat</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">对象格式列表</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.TableFormat</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">对象格式的表</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FrameFormat</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">对象格式的帧</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.UserFormat</tt></td>
+<td class="topAlign"><tt>100</tt></td>
+<td class="topAlign"> </td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qtextcharformat.html" tppabs="http://pyqt4doc.appspot.com/qtextcharformat.html">QTextCharFormat</a>，<a href="qtextblockformat.html" tppabs="http://pyqt4doc.appspot.com/qtextblockformat.html">QTextBlockFormat</a>，<a href="qtextlistformat.html" tppabs="http://pyqt4doc.appspot.com/qtextlistformat.html">QTextListFormat</a>，<a href="qtexttableformat.html" tppabs="http://pyqt4doc.appspot.com/qtexttableformat.html">QTextTableFormat</a>和<a href="qtextformat.html#type" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#type">type</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="ObjectTypes-enum"></a>QTextFormat.ObjectTypes</h3>
+<p>这个枚举说明是什么样的<a href="qtextobject.html" tppabs="http://pyqt4doc.appspot.com/qtextobject.html">QTextObject</a>此格式是与相关联。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.NoObject</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.ImageObject</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.TableObject</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.TableCellObject</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.UserObject</tt></td>
+<td class="topAlign"><tt>0x1000</tt></td>
+<td class="topAlign">第一对象，该对象可以用于特定应用的目的。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qtextobject.html" tppabs="http://pyqt4doc.appspot.com/qtextobject.html">QTextObject</a>，<a href="qtexttable.html" tppabs="http://pyqt4doc.appspot.com/qtexttable.html">QTextTable</a>和<a href="qtextobject.html#format" tppabs="http://pyqt4doc.appspot.com/qtextobject.html#format">QTextObject.format</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="PageBreakFlag-enum"></a>QTextFormat.PageBreakFlag</h3>
+<p>这个枚举变量描述了如何打印网页时断进行。它映射到相应的CSS属性。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.PageBreak_Auto</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">分页符是根据当前页面上的可用空间自动确定</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTextFormat.PageBreak_AlwaysBefore</tt>
+</td>
+<td class="topAlign"><tt>0x001</tt></td>
+<td class="topAlign">该页面段落/表之前被破</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTextFormat.PageBreak_AlwaysAfter</tt>
+</td>
+<td class="topAlign"><tt>0x010</tt></td>
+<td class="topAlign">一个新的页面段落/表后总是启动</td>
+</tr>
+</table>
+<p>这个枚举被引入或修改的Qt 4.2 。</p>
+<p>该PageBreakFlags类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cPageBreakFlag\u003e 。它存储PageBreakFlag值的或组合。</p>
+<p><b>See also</b> <a href="qtextblockformat.html#pageBreakPolicy" tppabs="http://pyqt4doc.appspot.com/qtextblockformat.html#pageBreakPolicy">QTextBlockFormat.pageBreakPolicy</a>（ ）<a href="qtextframeformat.html#pageBreakPolicy" tppabs="http://pyqt4doc.appspot.com/qtextframeformat.html#pageBreakPolicy">QTextFrameFormat.pageBreakPolicy</a>（）和<a href="qtextformat.html#Property-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#Property-enum">PageBreakPolicy</a>。</p>
+
+
+<h3 class="fn">
+<a name="Property-enum"></a>QTextFormat.Property</h3>
+<p>这个枚举变量描述了不同属性的格式可以有。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.ObjectIndex</tt></td>
+<td class="topAlign"><tt>0x0</tt></td>
+<td class="topAlign">格式化的对象的索引。看<a href="qtextformat.html#objectIndex" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#objectIndex">objectIndex</a>（ ） 。</td>
+</tr>
+</table>
+<p>段落和字符属性</p>
+<table class="valuelist">
+<tr class="even" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.CssFloat</tt></td>
+<td class="topAlign"><tt>0x0800</tt></td>
+<td class="topAlign">如何一帧位于相对于周围文本</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.LayoutDirection</tt></td>
+<td class="topAlign"><tt>0x0801</tt></td>
+<td class="topAlign">本文档中的文本的布局方向（<a href="qt.html#LayoutDirection-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#LayoutDirection-enum">Qt.LayoutDirection</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.OutlinePen</tt></td>
+<td class="topAlign"><tt>0x810</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.ForegroundBrush</tt></td>
+<td class="topAlign"><tt>0x821</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.BackgroundBrush</tt></td>
+<td class="topAlign"><tt>0x820</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.BackgroundImageUrl</tt></td>
+<td class="topAlign"><tt>0x823</tt></td>
+<td class="topAlign"> </td>
+</tr>
+</table>
+<p>段落属性</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.BlockAlignment</tt></td>
+<td class="topAlign"><tt>0x1010</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.BlockTopMargin</tt></td>
+<td class="topAlign"><tt>0x1030</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.BlockBottomMargin</tt></td>
+<td class="topAlign"><tt>0x1031</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.BlockLeftMargin</tt></td>
+<td class="topAlign"><tt>0x1032</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.BlockRightMargin</tt></td>
+<td class="topAlign"><tt>0x1033</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.TextIndent</tt></td>
+<td class="topAlign"><tt>0x1034</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.TabPositions</tt></td>
+<td class="topAlign"><tt>0x1035</tt></td>
+<td class="topAlign">指定标籤的位置。该选项卡的位置是结构<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtextoption-tab.html">QTextOption.Tab</a>它们被存储在一个<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qlist.html">QList</a>（在内部，在<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qlist.html">QList</a>\u003c<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>\u003e ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.BlockIndent</tt></td>
+<td class="topAlign"><tt>0x1040</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.LineHeight</tt></td>
+<td class="topAlign"><tt>0x1048</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.LineHeightType</tt></td>
+<td class="topAlign"><tt>0x1049</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTextFormat.BlockNonBreakableLines</tt>
+</td>
+<td class="topAlign"><tt>0x1050</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTextFormat.BlockTrailingHorizontalRulerWidth</tt>
+</td>
+<td class="topAlign"><tt>0x1060</tt></td>
+<td class="topAlign">水平尺元素的宽度。</td>
+</tr>
+</table>
+<p>字符属性</p>
+<table class="valuelist">
+<tr class="even" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FontFamily</tt></td>
+<td class="topAlign"><tt>0x2000</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FontPointSize</tt></td>
+<td class="topAlign"><tt>0x2001</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FontPixelSize</tt></td>
+<td class="topAlign"><tt>0x2009</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FontSizeAdjustment</tt></td>
+<td class="topAlign"><tt>0x2002</tt></td>
+<td class="topAlign">指定给使用FontPointSize或FontPixelSize已经设置字号大小的变化。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FontFixedPitch</tt></td>
+<td class="topAlign"><tt>0x2008</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FontWeight</tt></td>
+<td class="topAlign"><tt>0x2003</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FontItalic</tt></td>
+<td class="topAlign"><tt>0x2004</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FontUnderline</tt></td>
+<td class="topAlign"><tt>0x2005</tt></td>
+<td class="topAlign">
+<i>This property has been deprecated.</i>使用QTextFormat.TextUnderlineStyle代替。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FontOverline</tt></td>
+<td class="topAlign"><tt>0x2006</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FontStrikeOut</tt></td>
+<td class="topAlign"><tt>0x2007</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FontCapitalization</tt></td>
+<td class="topAlign"><tt>FirstFontProperty</tt></td>
+<td class="topAlign">指定大写类型将要被施加到文本。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FontLetterSpacing</tt></td>
+<td class="topAlign"><tt>0x1FE1</tt></td>
+<td class="topAlign">改变字体中的各个字母之间的默认间距。该值指定百分比，100为默认值。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FontWordSpacing</tt></td>
+<td class="topAlign"><tt>0x1FE2</tt></td>
+<td class="topAlign">改变个别单词之间的默认间距。正值增加了字间距由相应的像素;负值减小的间距。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FontStyleHint</tt></td>
+<td class="topAlign"><tt>0x1FE3</tt></td>
+<td class="topAlign">对应于<a href="qfont.html#StyleHint-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#StyleHint-enum">QFont.StyleHint</a>属性</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FontStyleStrategy</tt></td>
+<td class="topAlign"><tt>0x1FE4</tt></td>
+<td class="topAlign">对应于<a href="qfont.html#StyleStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#StyleStrategy-enum">QFont.StyleStrategy</a>属性</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FontKerning</tt></td>
+<td class="topAlign"><tt>0x1FE5</tt></td>
+<td class="topAlign">指定字体是否已经字距调整开启。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTextFormat.FontHintingPreference</tt>
+</td>
+<td class="topAlign"><tt>0x1FE6</tt></td>
+<td class="topAlign">控制根据的值的提示的使用<a href="qfont.html#HintingPreference-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#HintingPreference-enum">QFont.HintingPreference</a>枚举。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.TextUnderlineColor</tt></td>
+<td class="topAlign"><tt>0x2010</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTextFormat.TextVerticalAlignment</tt>
+</td>
+<td class="topAlign"><tt>0x2021</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.TextOutline</tt></td>
+<td class="topAlign"><tt>0x2022</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.TextUnderlineStyle</tt></td>
+<td class="topAlign"><tt>0x2023</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.TextToolTip</tt></td>
+<td class="topAlign"><tt>0x2024</tt></td>
+<td class="topAlign">指定（可选）刀尖要显示的文本片段。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.IsAnchor</tt></td>
+<td class="topAlign"><tt>0x2030</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.AnchorHref</tt></td>
+<td class="topAlign"><tt>0x2031</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.AnchorName</tt></td>
+<td class="topAlign"><tt>0x2032</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.ObjectType</tt></td>
+<td class="topAlign"><tt>0x2f00</tt></td>
+<td class="topAlign"> </td>
+</tr>
+</table>
+<p>列表属性</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.ListStyle</tt></td>
+<td class="topAlign"><tt>0x3000</tt></td>
+<td class="topAlign">指定用于在一个列表中的项目的样式，由值描述<a href="qtextlistformat.html#Style-enum" tppabs="http://pyqt4doc.appspot.com/qtextlistformat.html#Style-enum">QTextListFormat.Style</a>枚举。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.ListIndent</tt></td>
+<td class="topAlign"><tt>0x3001</tt></td>
+<td class="topAlign">指定缩进用于列表的量。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.ListNumberPrefix</tt></td>
+<td class="topAlign"><tt>0x3002</tt></td>
+<td class="topAlign">定义了被前置到项目编号以数字列表的文本。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.ListNumberSuffix</tt></td>
+<td class="topAlign"><tt>0x3003</tt></td>
+<td class="topAlign">定义了附加到项目编号以数字列表的文本。</td>
+</tr>
+</table>
+<p>表和框架属性</p>
+<table class="valuelist">
+<tr class="even" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FrameBorder</tt></td>
+<td class="topAlign"><tt>0x4000</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FrameBorderBrush</tt></td>
+<td class="topAlign"><tt>0x4009</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FrameBorderStyle</tt></td>
+<td class="topAlign"><tt>0x4010</tt></td>
+<td class="topAlign">请参阅<a href="qtextframeformat.html#BorderStyle-enum" tppabs="http://pyqt4doc.appspot.com/qtextframeformat.html#BorderStyle-enum">BorderStyle</a>枚举。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FrameBottomMargin</tt></td>
+<td class="topAlign"><tt>0x4006</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FrameHeight</tt></td>
+<td class="topAlign"><tt>0x4004</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FrameLeftMargin</tt></td>
+<td class="topAlign"><tt>0x4007</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FrameMargin</tt></td>
+<td class="topAlign"><tt>0x4001</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FramePadding</tt></td>
+<td class="topAlign"><tt>0x4002</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FrameRightMargin</tt></td>
+<td class="topAlign"><tt>0x4008</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FrameTopMargin</tt></td>
+<td class="topAlign"><tt>0x4005</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FrameWidth</tt></td>
+<td class="topAlign"><tt>0x4003</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.TableCellSpacing</tt></td>
+<td class="topAlign"><tt>0x4102</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.TableCellPadding</tt></td>
+<td class="topAlign"><tt>0x4103</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.TableColumns</tt></td>
+<td class="topAlign"><tt>0x4100</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTextFormat.TableColumnWidthConstraints</tt>
+</td>
+<td class="topAlign"><tt>0x4101</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.TableHeaderRowCount</tt></td>
+<td class="topAlign"><tt>0x4104</tt></td>
+<td class="topAlign"> </td>
+</tr>
+</table>
+<p>表单元格属性</p>
+<table class="valuelist">
+<tr>
+<th class="tblConst">Constant</th>
+<th class="tblVal">Value</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.TableCellRowSpan</tt></td>
+<td class="topAlign"><tt>0x4810</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.TableCellColumnSpan</tt></td>
+<td class="topAlign"><tt>0x4811</tt></td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTextFormat.TableCellLeftPadding</tt>
+</td>
+<td class="topAlign"><tt>0x4814</tt></td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTextFormat.TableCellRightPadding</tt>
+</td>
+<td class="topAlign"><tt>0x4815</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.TableCellTopPadding</tt></td>
+<td class="topAlign"><tt>0x4812</tt></td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTextFormat.TableCellBottomPadding</tt>
+</td>
+<td class="topAlign"><tt>0x4813</tt></td>
+</tr>
+</table>
+<p>图像性能</p>
+<table class="valuelist">
+<tr>
+<th class="tblConst">Constant</th>
+<th class="tblVal">Value</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.ImageName</tt></td>
+<td class="topAlign"><tt>0x5000</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.ImageWidth</tt></td>
+<td class="topAlign"><tt>0x5010</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.ImageHeight</tt></td>
+<td class="topAlign"><tt>0x5011</tt></td>
+</tr>
+</table>
+<p>选择属性</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.FullWidthSelection</tt></td>
+<td class="topAlign"><tt>0x06000</tt></td>
+<td class="topAlign">当在选择的characterFormat设置，文本的整个宽度上会显示所选的。</td>
+</tr>
+</table>
+<p>分页符的属性</p>
+<table class="valuelist">
+<tr class="even" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.PageBreakPolicy</tt></td>
+<td class="topAlign"><tt>0x7000</tt></td>
+<td class="topAlign">指定如何页面被打破。请参阅<a href="qtextformat.html#PageBreakFlag-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#PageBreakFlag-enum">PageBreakFlag</a>枚举。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextFormat.UserProperty</tt></td>
+<td class="topAlign"><tt>0x100000</tt></td>
+<td class="topAlign"> </td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qtextformat.html#property" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#property">property</a>（）和<a href="qtextformat.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setProperty">setProperty</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QTextFormat"></a>QTextFormat.__init__ (<i>self</i>)</h3>
+<p>创建有一个新的文本格式<tt>InvalidFormat</tt>。</p>
+<p><b>See also</b> <a href="qtextformat.html#FormatType-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#FormatType-enum">FormatType</a>。</p>
+
+
+<h3 class="fn">
+<a name="QTextFormat-2"></a>QTextFormat.__init__ (<i>self</i>, int <i>type</i>)</h3>
+<p>创建给定一个新的文本格式<i>type</i>。</p>
+<p><b>See also</b> <a href="qtextformat.html#FormatType-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#FormatType-enum">FormatType</a>。</p>
+
+
+<h3 class="fn">
+<a name="QTextFormat-3"></a>QTextFormat.__init__ (<i>self</i>, <a href="qtextformat.html" tppabs="http://pyqt4doc.appspot.com/qtextformat.html">QTextFormat</a> <i>rhs</i>)</h3>
+<p>创建一个具有相同属性的新文本格式<i>other</i>文本格式。</p>
+
+
+<h3 class="fn">
+<a name="QTextFormat-4"></a>QTextFormat.__init__ (<i>self</i>, QVariant <i>variant</i>)</h3>
+<h3 class="fn">
+<a name="background"></a><a href="qbrush.html" tppabs="http://pyqt4doc.appspot.com/qbrush.html">QBrush</a> QTextFormat.background (<i>self</i>)</h3>
+<p>返回用于绘制文档的背景的画笔。</p>
+<p><b>See also</b> <a href="qtextformat.html#setBackground" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setBackground">setBackground</a>（ ）<a href="qtextformat.html#clearBackground" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#clearBackground">clearBackground</a>（）和<a href="qtextformat.html#foreground" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#foreground">foreground</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="boolProperty"></a>bool QTextFormat.boolProperty (<i>self</i>, int <i>propertyId</i>)</h3>
+<p>返回由指定的属性值<i>propertyId</i>。如果属性是QTextFormat.Bool类型没有，则返回False来代替。</p>
+<p><b>See also</b> <a href="qtextformat.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setProperty">setProperty</a>（ ）<a href="qtextformat.html#intProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#intProperty">intProperty</a>（ ）<a href="qtextformat.html#doubleProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#doubleProperty">doubleProperty</a>（ ）<a href="qtextformat.html#stringProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#stringProperty">stringProperty</a>（ ）<a href="qtextformat.html#colorProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#colorProperty">colorProperty</a>（ ）<a href="qtextformat.html#lengthProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#lengthProperty">lengthProperty</a>（ ）<a href="qtextformat.html#lengthVectorProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#lengthVectorProperty">lengthVectorProperty</a>（）和<a href="qtextformat.html#Property-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#Property-enum">Property</a>。</p>
+
+
+<h3 class="fn">
+<a name="brushProperty"></a><a href="qbrush.html" tppabs="http://pyqt4doc.appspot.com/qbrush.html">QBrush</a> QTextFormat.brushProperty (<i>self</i>, int <i>propertyId</i>)</h3>
+<p>返回由给定属性的值<i>propertyId</i>;如果属性是不<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">QVariant.Brush</a>型，<a href="qt.html#BrushStyle-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#BrushStyle-enum">Qt.NoBrush</a>返回来代替。</p>
+<p><b>See also</b> <a href="qtextformat.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setProperty">setProperty</a>（ ）<a href="qtextformat.html#boolProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#boolProperty">boolProperty</a>（ ）<a href="qtextformat.html#intProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#intProperty">intProperty</a>（ ）<a href="qtextformat.html#doubleProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#doubleProperty">doubleProperty</a>（ ）<a href="qtextformat.html#stringProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#stringProperty">stringProperty</a>（ ）<a href="qtextformat.html#lengthProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#lengthProperty">lengthProperty</a>（ ）<a href="qtextformat.html#lengthVectorProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#lengthVectorProperty">lengthVectorProperty</a>（）和<a href="qtextformat.html#Property-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#Property-enum">Property</a>。</p>
+
+
+<h3 class="fn">
+<a name="clearBackground"></a>QTextFormat.clearBackground (<i>self</i>)</h3>
+<p>清除用于绘制文档的背景的画笔。默认刷将被使用。</p>
+<p><b>See also</b> <a href="qtextformat.html#background" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#background">background</a>（ ）<a href="qtextformat.html#setBackground" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setBackground">setBackground</a>（）和<a href="qtextformat.html#clearForeground" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#clearForeground">clearForeground</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clearForeground"></a>QTextFormat.clearForeground (<i>self</i>)</h3>
+<p>清除用于绘制文档的前景刷。默认刷将被使用。</p>
+<p><b>See also</b> <a href="qtextformat.html#foreground" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#foreground">foreground</a>（ ）<a href="qtextformat.html#setForeground" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setForeground">setForeground</a>（）和<a href="qtextformat.html#clearBackground" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#clearBackground">clearBackground</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clearProperty"></a>QTextFormat.clearProperty (<i>self</i>, int <i>propertyId</i>)</h3>
+<p>清除由给定属性的值<i>propertyId</i></p>
+<p><b>See also</b> <a href="qtextformat.html#Property-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#Property-enum">Property</a>。</p>
+
+
+<h3 class="fn">
+<a name="colorProperty"></a><a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a> QTextFormat.colorProperty (<i>self</i>, int <i>propertyId</i>)</h3>
+<p>返回由给定属性的值<i>propertyId</i>;如果属性是不<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">QVariant.Color</a>输入时，将返回一个无效的颜色来代替。</p>
+<p><b>See also</b> <a href="qtextformat.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setProperty">setProperty</a>（ ）<a href="qtextformat.html#boolProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#boolProperty">boolProperty</a>（ ）<a href="qtextformat.html#intProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#intProperty">intProperty</a>（ ）<a href="qtextformat.html#doubleProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#doubleProperty">doubleProperty</a>（ ）<a href="qtextformat.html#stringProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#stringProperty">stringProperty</a>（ ）<a href="qtextformat.html#lengthProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#lengthProperty">lengthProperty</a>（ ）<a href="qtextformat.html#lengthVectorProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#lengthVectorProperty">lengthVectorProperty</a>（）和<a href="qtextformat.html#Property-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#Property-enum">Property</a>。</p>
+
+
+<h3 class="fn">
+<a name="doubleProperty"></a>float QTextFormat.doubleProperty (<i>self</i>, int <i>propertyId</i>)</h3>
+<p>返回由指定的属性值<i>propertyId</i>。如果属性是不<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">QVariant.Double</a> or <a href="qmetatype.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#Type-enum">QMetaType.Float</a>类型，则返回0代替。</p>
+<p><b>See also</b> <a href="qtextformat.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setProperty">setProperty</a>（ ）<a href="qtextformat.html#boolProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#boolProperty">boolProperty</a>（ ）<a href="qtextformat.html#intProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#intProperty">intProperty</a>（ ）<a href="qtextformat.html#stringProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#stringProperty">stringProperty</a>（ ）<a href="qtextformat.html#colorProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#colorProperty">colorProperty</a>（ ）<a href="qtextformat.html#lengthProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#lengthProperty">lengthProperty</a>（ ）<a href="qtextformat.html#lengthVectorProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#lengthVectorProperty">lengthVectorProperty</a>（）和<a href="qtextformat.html#Property-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#Property-enum">Property</a>。</p>
+
+
+<h3 class="fn">
+<a name="foreground"></a><a href="qbrush.html" tppabs="http://pyqt4doc.appspot.com/qbrush.html">QBrush</a> QTextFormat.foreground (<i>self</i>)</h3>
+<p>返回用于渲染前景的详细信息，如文字，边框轮廓，和表格边框的画笔。</p>
+<p><b>See also</b> <a href="qtextformat.html#setForeground" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setForeground">setForeground</a>（ ）<a href="qtextformat.html#clearForeground" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#clearForeground">clearForeground</a>（）和<a href="qtextformat.html#background" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#background">background</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasProperty"></a>bool QTextFormat.hasProperty (<i>self</i>, int <i>propertyId</i>)</h3>
+<p>如果文本格式有一个属性与给定的，则返回True<i>propertyId</i>否则返回False 。</p>
+<p><b>See also</b> <a href="qtextformat.html#properties" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#properties">properties</a>（）和<a href="qtextformat.html#Property-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#Property-enum">Property</a>。</p>
+
+
+<h3 class="fn">
+<a name="intProperty"></a>int QTextFormat.intProperty (<i>self</i>, int <i>propertyId</i>)</h3>
+<p>返回由指定的属性值<i>propertyId</i>。如果属性是QTextFormat.Integer类型没有，则返回0代替。</p>
+<p><b>See also</b> <a href="qtextformat.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setProperty">setProperty</a>（ ）<a href="qtextformat.html#boolProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#boolProperty">boolProperty</a>（ ）<a href="qtextformat.html#doubleProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#doubleProperty">doubleProperty</a>（ ）<a href="qtextformat.html#stringProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#stringProperty">stringProperty</a>（ ）<a href="qtextformat.html#colorProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#colorProperty">colorProperty</a>（ ）<a href="qtextformat.html#lengthProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#lengthProperty">lengthProperty</a>（ ）<a href="qtextformat.html#lengthVectorProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#lengthVectorProperty">lengthVectorProperty</a>（）和<a href="qtextformat.html#Property-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#Property-enum">Property</a>。</p>
+
+
+<h3 class="fn">
+<a name="isBlockFormat"></a>bool QTextFormat.isBlockFormat (<i>self</i>)</h3>
+<p>返回True如果文本格式是<tt>BlockFormat</tt>否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isCharFormat"></a>bool QTextFormat.isCharFormat (<i>self</i>)</h3>
+<p>返回True如果文本格式是<tt>CharFormat</tt>否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isFrameFormat"></a>bool QTextFormat.isFrameFormat (<i>self</i>)</h3>
+<p>返回True如果文本格式是<tt>FrameFormat</tt>否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isImageFormat"></a>bool QTextFormat.isImageFormat (<i>self</i>)</h3>
+<p>返回True如果文本格式是一种图像格式，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isListFormat"></a>bool QTextFormat.isListFormat (<i>self</i>)</h3>
+<p>返回True如果文本格式是<tt>ListFormat</tt>否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isTableCellFormat"></a>bool QTextFormat.isTableCellFormat (<i>self</i>)</h3>
+<p>返回True如果文本格式是<tt>TableCellFormat</tt>否则返回False 。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="isTableFormat"></a>bool QTextFormat.isTableFormat (<i>self</i>)</h3>
+<p>返回True如果文本格式是<tt>TableFormat</tt>否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isValid"></a>bool QTextFormat.isValid (<i>self</i>)</h3>
+<p>返回True如果该格式是有效的（即不<a href="qtextformat.html#FormatType-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#FormatType-enum">InvalidFormat</a>），否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="layoutDirection"></a><a href="qt.html#LayoutDirection-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#LayoutDirection-enum">Qt.LayoutDirection</a> QTextFormat.layoutDirection (<i>self</i>)</h3>
+<p>返回文档的布局方向。</p>
+<p><b>See also</b> <a href="qtextformat.html#setLayoutDirection" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setLayoutDirection">setLayoutDirection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="lengthProperty"></a><a href="qtextlength.html" tppabs="http://pyqt4doc.appspot.com/qtextlength.html">QTextLength</a> QTextFormat.lengthProperty (<i>self</i>, int <i>propertyId</i>)</h3>
+<p>返回由给定属性的值<i>propertyId</i>。</p>
+<p><b>See also</b> <a href="qtextformat.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setProperty">setProperty</a>（ ）<a href="qtextformat.html#boolProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#boolProperty">boolProperty</a>（ ）<a href="qtextformat.html#intProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#intProperty">intProperty</a>（ ）<a href="qtextformat.html#doubleProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#doubleProperty">doubleProperty</a>（ ）<a href="qtextformat.html#stringProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#stringProperty">stringProperty</a>（ ）<a href="qtextformat.html#colorProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#colorProperty">colorProperty</a>（ ）<a href="qtextformat.html#lengthVectorProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#lengthVectorProperty">lengthVectorProperty</a>（）和<a href="qtextformat.html#Property-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#Property-enum">Property</a>。</p>
+
+
+<h3 class="fn">
+<a name="lengthVectorProperty"></a>list-of-QTextLength QTextFormat.lengthVectorProperty (<i>self</i>, int <i>propertyId</i>)</h3>
+<p>返回由给定属性的值<i>propertyId</i>。如果属性是QTextFormat.LengthVector类型没有，则返回空长向量来代替。</p>
+<p><b>See also</b> <a href="qtextformat.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setProperty">setProperty</a>（ ）<a href="qtextformat.html#boolProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#boolProperty">boolProperty</a>（ ）<a href="qtextformat.html#intProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#intProperty">intProperty</a>（ ）<a href="qtextformat.html#doubleProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#doubleProperty">doubleProperty</a>（ ）<a href="qtextformat.html#stringProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#stringProperty">stringProperty</a>（ ）<a href="qtextformat.html#colorProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#colorProperty">colorProperty</a>（ ）<a href="qtextformat.html#lengthProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#lengthProperty">lengthProperty</a>（）和<a href="qtextformat.html#Property-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#Property-enum">Property</a>。</p>
+
+
+<h3 class="fn">
+<a name="merge"></a>QTextFormat.merge (<i>self</i>, <a href="qtextformat.html" tppabs="http://pyqt4doc.appspot.com/qtextformat.html">QTextFormat</a> <i>other</i>)</h3>
+<p>合并的<i>other</i>这种格式的格式;那里有冲突<i>other</i>格式为准。</p>
+
+
+<h3 class="fn">
+<a name="objectIndex"></a>int QTextFormat.objectIndex (<i>self</i>)</h3>
+<p>返回格式对象的索引，或者-1，如果格式对象是无效的。</p>
+<p><b>See also</b> <a href="qtextformat.html#setObjectIndex" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setObjectIndex">setObjectIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="objectType"></a>int QTextFormat.objectType (<i>self</i>)</h3>
+<p>返回文本格式的对象类型。</p>
+<p><b>See also</b> <a href="qtextformat.html#ObjectTypes-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#ObjectTypes-enum">ObjectTypes</a>和<a href="qtextformat.html#setObjectType" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setObjectType">setObjectType</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="penProperty"></a><a href="qpen.html" tppabs="http://pyqt4doc.appspot.com/qpen.html">QPen</a> QTextFormat.penProperty (<i>self</i>, int <i>propertyId</i>)</h3>
+<p>返回由给定属性的值<i>propertyId</i>;如果属性是不<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">QVariant.Pen</a>型，<a href="qt.html#PenStyle-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#PenStyle-enum">Qt.NoPen</a>返回来代替。</p>
+<p><b>See also</b> <a href="qtextformat.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setProperty">setProperty</a>（ ）<a href="qtextformat.html#boolProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#boolProperty">boolProperty</a>（ ）<a href="qtextformat.html#intProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#intProperty">intProperty</a>（ ）<a href="qtextformat.html#doubleProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#doubleProperty">doubleProperty</a>（ ）<a href="qtextformat.html#stringProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#stringProperty">stringProperty</a>（ ）<a href="qtextformat.html#lengthProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#lengthProperty">lengthProperty</a>（ ）<a href="qtextformat.html#lengthVectorProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#lengthVectorProperty">lengthVectorProperty</a>（）和<a href="qtextformat.html#Property-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#Property-enum">Property</a>。</p>
+
+
+<h3 class="fn">
+<a name="properties"></a>dict-of-int-QVariant QTextFormat.properties (<i>self</i>)</h3>
+<p>返回与此文本格式的所有属性的映射。</p>
+
+
+<h3 class="fn">
+<a name="property"></a>QVariant QTextFormat.property (<i>self</i>, int <i>propertyId</i>)</h3>
+<p>返回由给定指定的属性<i>propertyId</i>。</p>
+<p><b>See also</b> <a href="qtextformat.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setProperty">setProperty</a>（）和<a href="qtextformat.html#Property-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#Property-enum">Property</a>。</p>
+
+
+<h3 class="fn">
+<a name="propertyCount"></a>int QTextFormat.propertyCount (<i>self</i>)</h3>
+<p>返回存储在格式属性的数量。</p>
+<p>此功能被引入Qt的4.3 。</p>
+
+
+<h3 class="fn">
+<a name="setBackground"></a>QTextFormat.setBackground (<i>self</i>, <a href="qbrush.html" tppabs="http://pyqt4doc.appspot.com/qbrush.html">QBrush</a> <i>brush</i>)</h3>
+<p>设置画笔使用到文档的底色漆的<i>brush</i>规定。</p>
+<p><b>See also</b> <a href="qtextformat.html#background" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#background">background</a>（ ）<a href="qtextformat.html#clearBackground" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#clearBackground">clearBackground</a>（）和<a href="qtextformat.html#setForeground" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setForeground">setForeground</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setForeground"></a>QTextFormat.setForeground (<i>self</i>, <a href="qbrush.html" tppabs="http://pyqt4doc.appspot.com/qbrush.html">QBrush</a> <i>brush</i>)</h3>
+<p>设置前景色刷到指定的<i>brush</i>。前台刷主要是用来渲染文本。</p>
+<p><b>See also</b> <a href="qtextformat.html#foreground" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#foreground">foreground</a>（ ）<a href="qtextformat.html#clearForeground" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#clearForeground">clearForeground</a>（）和<a href="qtextformat.html#setBackground" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setBackground">setBackground</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setLayoutDirection"></a>QTextFormat.setLayoutDirection (<i>self</i>, <a href="qt.html#LayoutDirection-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#LayoutDirection-enum">Qt.LayoutDirection</a> <i>direction</i>)</h3>
+<p>设置文档的布局方向的指定的<i>direction</i>。</p>
+<p><b>See also</b> <a href="qtextformat.html#layoutDirection" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#layoutDirection">layoutDirection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setObjectIndex"></a>QTextFormat.setObjectIndex (<i>self</i>, int <i>object</i>)</h3>
+<p>设置格式的对象的对象<i>index</i>。</p>
+<p><b>See also</b> <a href="qtextformat.html#objectIndex" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#objectIndex">objectIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setObjectType"></a>QTextFormat.setObjectType (<i>self</i>, int <i>atype</i>)</h3>
+<p>设置文本格式的对象类型<i>type</i>。</p>
+<p><b>See also</b> <a href="qtextformat.html#ObjectTypes-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#ObjectTypes-enum">ObjectTypes</a>和<a href="qtextformat.html#objectType" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#objectType">objectType</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setProperty"></a>QTextFormat.setProperty (<i>self</i>, int <i>propertyId</i>, QVariant <i>value</i>)</h3>
+<p>设置由指定的属性<i>propertyId</i>为给定的<i>value</i>。</p>
+<p><b>See also</b> <a href="qtextformat.html#property" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#property">property</a>（）和<a href="qtextformat.html#Property-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#Property-enum">Property</a>。</p>
+
+
+<h3 class="fn">
+<a name="setProperty-2"></a>QTextFormat.setProperty (<i>self</i>, int <i>propertyId</i>, list-of-QTextLength <i>lengths</i>)</h3>
+<p>设置由给定属性的值<i>propertyId</i>至<i>value</i>。</p>
+<p><b>See also</b> <a href="qtextformat.html#lengthVectorProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#lengthVectorProperty">lengthVectorProperty</a>（）和<a href="qtextformat.html#Property-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#Property-enum">Property</a>。</p>
+
+
+<h3 class="fn">
+<a name="stringProperty"></a>QString QTextFormat.stringProperty (<i>self</i>, int <i>propertyId</i>)</h3>
+<p>返回由给定属性的值<i>propertyId</i>;如果属性是不<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">QVariant.String</a>输入时，将返回一个空字符串代替。</p>
+<p><b>See also</b> <a href="qtextformat.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setProperty">setProperty</a>（ ）<a href="qtextformat.html#boolProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#boolProperty">boolProperty</a>（ ）<a href="qtextformat.html#intProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#intProperty">intProperty</a>（ ）<a href="qtextformat.html#doubleProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#doubleProperty">doubleProperty</a>（ ）<a href="qtextformat.html#colorProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#colorProperty">colorProperty</a>（ ）<a href="qtextformat.html#lengthProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#lengthProperty">lengthProperty</a>（ ）<a href="qtextformat.html#lengthVectorProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#lengthVectorProperty">lengthVectorProperty</a>（）和<a href="qtextformat.html#Property-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#Property-enum">Property</a>。</p>
+
+
+<h3 class="fn">
+<a name="toBlockFormat"></a><a href="qtextblockformat.html" tppabs="http://pyqt4doc.appspot.com/qtextblockformat.html">QTextBlockFormat</a> QTextFormat.toBlockFormat (<i>self</i>)</h3>
+<p>返回此格式作为块格式。</p>
+
+
+<h3 class="fn">
+<a name="toCharFormat"></a><a href="qtextcharformat.html" tppabs="http://pyqt4doc.appspot.com/qtextcharformat.html">QTextCharFormat</a> QTextFormat.toCharFormat (<i>self</i>)</h3>
+<p>返回此格式的字符格式。</p>
+
+
+<h3 class="fn">
+<a name="toFrameFormat"></a><a href="qtextframeformat.html" tppabs="http://pyqt4doc.appspot.com/qtextframeformat.html">QTextFrameFormat</a> QTextFormat.toFrameFormat (<i>self</i>)</h3>
+<p>返回此格式的帧格式。</p>
+
+
+<h3 class="fn">
+<a name="toImageFormat"></a><a href="qtextimageformat.html" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html">QTextImageFormat</a> QTextFormat.toImageFormat (<i>self</i>)</h3>
+<p>返回此格式的图像格式。</p>
+
+
+<h3 class="fn">
+<a name="toListFormat"></a><a href="qtextlistformat.html" tppabs="http://pyqt4doc.appspot.com/qtextlistformat.html">QTextListFormat</a> QTextFormat.toListFormat (<i>self</i>)</h3>
+<p>返回此格式列表格式。</p>
+
+
+<h3 class="fn">
+<a name="toTableCellFormat"></a><a href="qtexttablecellformat.html" tppabs="http://pyqt4doc.appspot.com/qtexttablecellformat.html">QTextTableCellFormat</a> QTextFormat.toTableCellFormat (<i>self</i>)</h3>
+<p>返回此格式的表格单元格的格式。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="toTableFormat"></a><a href="qtexttableformat.html" tppabs="http://pyqt4doc.appspot.com/qtexttableformat.html">QTextTableFormat</a> QTextFormat.toTableFormat (<i>self</i>)</h3>
+<p>返回此格式为表格式。</p>
+
+
+<h3 class="fn">
+<a name="type"></a>int QTextFormat.type (<i>self</i>)</h3>
+<p>返回此格式的类型。</p>
+<p><b>See also</b> <a href="qtextformat.html#FormatType-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#FormatType-enum">FormatType</a>。</p>
+
+
+<h3 class="fn">
+<a name="__eq__"></a>bool QTextFormat.__eq__ (<i>self</i>, <a href="qtextformat.html" tppabs="http://pyqt4doc.appspot.com/qtextformat.html">QTextFormat</a> <i>rhs</i>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QTextFormat.__ne__ (<i>self</i>, <a href="qtextformat.html" tppabs="http://pyqt4doc.appspot.com/qtextformat.html">QTextFormat</a> <i>rhs</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

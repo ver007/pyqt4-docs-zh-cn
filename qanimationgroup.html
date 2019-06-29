@@ -1,0 +1,145 @@
+﻿<html>
+<head>
+<title>QAnimationGroup Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QAnimationGroup Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QAnimationGroup类是动画组的抽象基类。<a href="#details">More...</a></p>
+
+<p>继承<a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a>。</p>
+<p>通过继承<a href="qparallelanimationgroup.html" tppabs="http://pyqt4doc.appspot.com/qparallelanimationgroup.html">QParallelAnimationGroup</a>和<a href="qsequentialanimationgroup.html" tppabs="http://pyqt4doc.appspot.com/qsequentialanimationgroup.html">QSequentialAnimationGroup</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qanimationgroup.html#QAnimationGroup" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#QAnimationGroup">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qanimationgroup.html#addAnimation" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#addAnimation">addAnimation</a></b> (<i>self</i>, QAbstractAnimation <i>animation</i>)</li>
+<li>
+<div class="fn"></div>QAbstractAnimation <b><a href="qanimationgroup.html#animationAt" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#animationAt">animationAt</a></b> (<i>self</i>, int <i>index</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qanimationgroup.html#animationCount" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#animationCount">animationCount</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qanimationgroup.html#clear" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#clear">clear</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qanimationgroup.html#event" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#event">event</a></b> (<i>self</i>, QEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qanimationgroup.html#indexOfAnimation" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#indexOfAnimation">indexOfAnimation</a></b> (<i>self</i>, QAbstractAnimation <i>animation</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qanimationgroup.html#insertAnimation" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#insertAnimation">insertAnimation</a></b> (<i>self</i>, int <i>index</i>, QAbstractAnimation <i>animation</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qanimationgroup.html#removeAnimation" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#removeAnimation">removeAnimation</a></b> (<i>self</i>, QAbstractAnimation <i>animation</i>)</li>
+<li>
+<div class="fn"></div>QAbstractAnimation <b><a href="qanimationgroup.html#takeAnimation" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#takeAnimation">takeAnimation</a></b> (<i>self</i>, int <i>index</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QAnimationGroup类是动画组的抽象基类。</p>
+<p>动画组是一个容器的子类的动画（<a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a>） 。一组通常是负责管理<a href="qabstractanimation.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#State-enum">state</a>它的动画，也就是说，它决定何时启动，停止，恢复和暂停它们。目前， Qt提供了两个这样的组：<a href="qparallelanimationgroup.html" tppabs="http://pyqt4doc.appspot.com/qparallelanimationgroup.html">QParallelAnimationGroup</a>和<a href="qsequentialanimationgroup.html" tppabs="http://pyqt4doc.appspot.com/qsequentialanimationgroup.html">QSequentialAnimationGroup</a>。查一查他们的类的描述了解详情。</p>
+<p>由于QAnimationGroup从继承<a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a>，你可以结合组和轻松构建复杂的动画图形。您可以查询<a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a>该组属于（使用<a href="qabstractanimation.html#group" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#group">group()</a>功能）。</p>
+<p>要启动一个顶级的动画组，您只需使用<a href="qabstractanimation.html#start" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#start">start()</a>从功能<a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a>。由顶级的动画组，我们认为本身不包含在另一组一组。直接不支持启动子组，并可能导致意外的行为。</p>
+<p>QAnimationGroup提供用于添加和检索的动画。除此之外，你可以通过调用remove （删除动画） ，并清除动画组通过调用<a href="qanimationgroup.html#clear" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#clear">clear</a>（ ） 。你可以通过听，保持变化组的动画轨迹<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.ChildAdded</a>和<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.ChildRemoved</a>事件。</p>
+<p>QAnimationGroup需要它管理的动画的所有权，并确保当动画组将被删除，他们都将被删除。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QAnimationGroup"></a>QAnimationGroup.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a href="qanimationgroup.html" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html">QAnimationGroup</a>。<i>parent</i>被传递给<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>的构造。</p>
+
+
+<h3 class="fn">
+<a name="addAnimation"></a>QAnimationGroup.addAnimation (<i>self</i>, <a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a> <i>animation</i>)</h3>
+<p>该<i>animation</i>说法有它的所有权转移给Qt的。</p>
+<p>添加<i>animation</i>这一组。这将调用insertAnimation与指数等于<a href="qanimationgroup.html#animationCount" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#animationCount">animationCount</a>（ ） 。</p>
+<p><b>Note:</b>该小组采用了动画的所有权。</p>
+<p><b>See also</b> <a href="qanimationgroup.html#removeAnimation" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#removeAnimation">removeAnimation</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="animationAt"></a><a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a> QAnimationGroup.animationAt (<i>self</i>, int <i>index</i>)</h3>
+<p>返回一个指针，指向在动画<i>index</i>在这一组。当你需要访问一个特定的动画，此功能非常有用。<i>index</i>是介于0和<a href="qanimationgroup.html#animationCount" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#animationCount">animationCount</a>（ ） - 1 。</p>
+<p><b>See also</b> <a href="qanimationgroup.html#animationCount" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#animationCount">animationCount</a>（）和<a href="qanimationgroup.html#indexOfAnimation" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#indexOfAnimation">indexOfAnimation</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="animationCount"></a>int QAnimationGroup.animationCount (<i>self</i>)</h3>
+<p>返回该组管理动画的数量。</p>
+<p><b>See also</b> <a href="qanimationgroup.html#indexOfAnimation" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#indexOfAnimation">indexOfAnimation</a>（ ）<a href="qanimationgroup.html#addAnimation" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#addAnimation">addAnimation</a>（）和<a href="qanimationgroup.html#animationAt" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#animationAt">animationAt</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clear"></a>QAnimationGroup.clear (<i>self</i>)</h3>
+<p>删除，并删除所有的动画在这个动画组，和当前时间重置为0 。</p>
+<p><b>See also</b> <a href="qanimationgroup.html#addAnimation" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#addAnimation">addAnimation</a>（）和<a href="qanimationgroup.html#removeAnimation" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#removeAnimation">removeAnimation</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="event"></a>bool QAnimationGroup.event (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">QObject.event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="indexOfAnimation"></a>int QAnimationGroup.indexOfAnimation (<i>self</i>, <a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a> <i>animation</i>)</h3>
+<p>返回的索引<i>animation</i>。返回的索引可以传递给其他函数接受一个索引作为参数。</p>
+<p><b>See also</b> <a href="qanimationgroup.html#insertAnimation" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#insertAnimation">insertAnimation</a>（ ）<a href="qanimationgroup.html#animationAt" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#animationAt">animationAt</a>（）和<a href="qanimationgroup.html#takeAnimation" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#takeAnimation">takeAnimation</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertAnimation"></a>QAnimationGroup.insertAnimation (<i>self</i>, int <i>index</i>, <a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a> <i>animation</i>)</h3>
+<p>该<i>animation</i>说法有它的所有权转移给Qt的。</p>
+<p>Inserts <i>animation</i>这个动画组<i>index</i>。如果<i>index</i>为0的动画被插在开头。如果<i>index</i> is <a href="qanimationgroup.html#animationCount" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#animationCount">animationCount</a>（） ，该动画被插入在末端。</p>
+<p><b>Note:</b>该小组采用了动画的所有权。</p>
+<p><b>See also</b> <a href="qanimationgroup.html#takeAnimation" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#takeAnimation">takeAnimation</a>（ ）<a href="qanimationgroup.html#addAnimation" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#addAnimation">addAnimation</a>（ ）<a href="qanimationgroup.html#indexOfAnimation" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#indexOfAnimation">indexOfAnimation</a>（）和<a href="qanimationgroup.html#removeAnimation" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#removeAnimation">removeAnimation</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="removeAnimation"></a>QAnimationGroup.removeAnimation (<i>self</i>, <a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a> <i>animation</i>)</h3>
+<p>该<i>animation</i>争论</p>
+<p>移除<i>animation</i>从本组。所有权<i>animation</i>传送到呼叫者。</p>
+<p><b>See also</b> <a href="qanimationgroup.html#takeAnimation" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#takeAnimation">takeAnimation</a>（ ）<a href="qanimationgroup.html#insertAnimation" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#insertAnimation">insertAnimation</a>（）和<a href="qanimationgroup.html#addAnimation" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#addAnimation">addAnimation</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="takeAnimation"></a><a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a> QAnimationGroup.takeAnimation (<i>self</i>, int <i>index</i>)</h3>
+<p>该<i>QAbstractAnimation</i>结果</p>
+<p>返回在动画<i>index</i>从动画组中删除。</p>
+<p><b>Note:</b>动画的所有权转移给调用者。</p>
+<p><b>See also</b> <a href="qanimationgroup.html#removeAnimation" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#removeAnimation">removeAnimation</a>（ ）<a href="qanimationgroup.html#addAnimation" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#addAnimation">addAnimation</a>（ ）<a href="qanimationgroup.html#insertAnimation" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#insertAnimation">insertAnimation</a>（）和<a href="qanimationgroup.html#indexOfAnimation" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#indexOfAnimation">indexOfAnimation</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

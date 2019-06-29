@@ -1,0 +1,846 @@
+﻿<html>
+<head>
+<title>QObject Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QObject Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QObject的类是所有的Qt对象的基类。<a href="#details">More...</a></p>
+
+<p>通过继承<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/phonon-abstractaudiooutput.html">AbstractAudioOutput</a>，<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/phonon-backendcapabilities-notifier.html">Notifier</a>，<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/phonon-effect.html">Effect</a>，<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/phonon-mediacontroller.html">MediaController</a>，<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/phonon-mediaobject.html">MediaObject</a>，<a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a>，<a href="qabstracteventdispatcher.html" tppabs="http://pyqt4doc.appspot.com/qabstracteventdispatcher.html">QAbstractEventDispatcher</a>，<a href="qabstractitemdelegate.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html">QAbstractItemDelegate</a>，<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a>，<a href="qabstractmessagehandler.html" tppabs="http://pyqt4doc.appspot.com/qabstractmessagehandler.html">QAbstractMessageHandler</a>，<a href="qabstractnetworkcache.html" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html">QAbstractNetworkCache</a>，<a href="qabstractstate.html" tppabs="http://pyqt4doc.appspot.com/qabstractstate.html">QAbstractState</a>，<a href="qabstracttextdocumentlayout.html" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html">QAbstractTextDocumentLayout</a>，<a href="qabstracttransition.html" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html">QAbstractTransition</a>，<a href="qabstracturiresolver.html" tppabs="http://pyqt4doc.appspot.com/qabstracturiresolver.html">QAbstractUriResolver</a>，<a href="qabstractvideosurface.html" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html">QAbstractVideoSurface</a>，<a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a>，<a href="qactiongroup.html" tppabs="http://pyqt4doc.appspot.com/qactiongroup.html">QActionGroup</a>，<a href="qassistantclient.html" tppabs="http://pyqt4doc.appspot.com/qassistantclient.html">QAssistantClient</a>，<a href="qaudioinput.html" tppabs="http://pyqt4doc.appspot.com/qaudioinput.html">QAudioInput</a>，<a href="qaudiooutput.html" tppabs="http://pyqt4doc.appspot.com/qaudiooutput.html">QAudioOutput</a>，<a href="qbuttongroup.html" tppabs="http://pyqt4doc.appspot.com/qbuttongroup.html">QButtonGroup</a>，<a href="qclipboard.html" tppabs="http://pyqt4doc.appspot.com/qclipboard.html">QClipboard</a>，<a href="qcompleter.html" tppabs="http://pyqt4doc.appspot.com/qcompleter.html">QCompleter</a>，<a href="qcoreapplication.html" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html">QCoreApplication</a>，<a href="qdatawidgetmapper.html" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html">QDataWidgetMapper</a>，<a href="qdbusabstractadaptor.html" tppabs="http://pyqt4doc.appspot.com/qdbusabstractadaptor.html">QDBusAbstractAdaptor</a>，<a href="qdbusabstractinterface.html" tppabs="http://pyqt4doc.appspot.com/qdbusabstractinterface.html">QDBusAbstractInterface</a>，<a href="qdbuspendingcallwatcher.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingcallwatcher.html">QDBusPendingCallWatcher</a>，<a href="qdbusservicewatcher.html" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html">QDBusServiceWatcher</a>，<a href="qdeclarativecomponent.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativecomponent.html">QDeclarativeComponent</a>，<a href="qdeclarativecontext.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html">QDeclarativeContext</a>，<a href="qdeclarativeengine.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativeengine.html">QDeclarativeEngine</a>，<a href="qdeclarativeexpression.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativeexpression.html">QDeclarativeExpression</a>，<a href="qdeclarativeextensionplugin.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativeextensionplugin.html">QDeclarativeExtensionPlugin</a>，<a href="qdeclarativepropertymap.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativepropertymap.html">QDeclarativePropertyMap</a>，<a href="qdesignerformeditorinterface.html" tppabs="http://pyqt4doc.appspot.com/qdesignerformeditorinterface.html">QDesignerFormEditorInterface</a>，<a href="qdesignerformwindowmanagerinterface.html" tppabs="http://pyqt4doc.appspot.com/qdesignerformwindowmanagerinterface.html">QDesignerFormWindowManagerInterface</a>，<a href="qdrag.html" tppabs="http://pyqt4doc.appspot.com/qdrag.html">QDrag</a>，<a href="qeventloop.html" tppabs="http://pyqt4doc.appspot.com/qeventloop.html">QEventLoop</a>，<a href="qextensionfactory.html" tppabs="http://pyqt4doc.appspot.com/qextensionfactory.html">QExtensionFactory</a>，<a href="qextensionmanager.html" tppabs="http://pyqt4doc.appspot.com/qextensionmanager.html">QExtensionManager</a>，<a href="qfilesystemwatcher.html" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html">QFileSystemWatcher</a>，<a href="qftp.html" tppabs="http://pyqt4doc.appspot.com/qftp.html">QFtp</a>，<a href="qgesture.html" tppabs="http://pyqt4doc.appspot.com/qgesture.html">QGesture</a>，<a href="qglshader.html" tppabs="http://pyqt4doc.appspot.com/qglshader.html">QGLShader</a>，<a href="qglshaderprogram.html" tppabs="http://pyqt4doc.appspot.com/qglshaderprogram.html">QGLShaderProgram</a>，<a href="qgraphicsanchor.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsanchor.html">QGraphicsAnchor</a>，<a href="qgraphicseffect.html" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html">QGraphicsEffect</a>，<a href="qgraphicsitemanimation.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitemanimation.html">QGraphicsItemAnimation</a>，<a href="qgraphicsobject.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsobject.html">QGraphicsObject</a>，<a href="qgraphicsscene.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html">QGraphicsScene</a>，<a href="qgraphicstransform.html" tppabs="http://pyqt4doc.appspot.com/qgraphicstransform.html">QGraphicsTransform</a>，<a href="qhelpenginecore.html" tppabs="http://pyqt4doc.appspot.com/qhelpenginecore.html">QHelpEngineCore</a>，<a href="qhelpsearchengine.html" tppabs="http://pyqt4doc.appspot.com/qhelpsearchengine.html">QHelpSearchEngine</a>，<a href="qhttp.html" tppabs="http://pyqt4doc.appspot.com/qhttp.html">QHttp</a>，<a href="qhttpmultipart.html" tppabs="http://pyqt4doc.appspot.com/qhttpmultipart.html">QHttpMultiPart</a>，<a href="qinputcontext.html" tppabs="http://pyqt4doc.appspot.com/qinputcontext.html">QInputContext</a>，<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>，<a href="qitemselectionmodel.html" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html">QItemSelectionModel</a>，<a href="qlayout.html" tppabs="http://pyqt4doc.appspot.com/qlayout.html">QLayout</a>，<a href="qlibrary.html" tppabs="http://pyqt4doc.appspot.com/qlibrary.html">QLibrary</a>，<a href="qlocalserver.html" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html">QLocalServer</a>，<a href="qmimedata.html" tppabs="http://pyqt4doc.appspot.com/qmimedata.html">QMimeData</a>，<a href="qmovie.html" tppabs="http://pyqt4doc.appspot.com/qmovie.html">QMovie</a>，<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>，<a href="qnetworkconfigurationmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfigurationmanager.html">QNetworkConfigurationManager</a>，<a href="qnetworkcookiejar.html" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html">QNetworkCookieJar</a>，<a href="qnetworksession.html" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html">QNetworkSession</a>，<a href="qobjectcleanuphandler.html" tppabs="http://pyqt4doc.appspot.com/qobjectcleanuphandler.html">QObjectCleanupHandler</a>，<a href="qpluginloader.html" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html">QPluginLoader</a>，<a href="qpydeclarativepropertyvaluesource.html" tppabs="http://pyqt4doc.appspot.com/qpydeclarativepropertyvaluesource.html">QPyDeclarativePropertyValueSource</a>，<a href="qpydesignercontainerextension.html" tppabs="http://pyqt4doc.appspot.com/qpydesignercontainerextension.html">QPyDesignerContainerExtension</a>，<a href="qpydesignercustomwidgetcollectionplugin.html" tppabs="http://pyqt4doc.appspot.com/qpydesignercustomwidgetcollectionplugin.html">QPyDesignerCustomWidgetCollectionPlugin</a>，<a href="qpydesignercustomwidgetplugin.html" tppabs="http://pyqt4doc.appspot.com/qpydesignercustomwidgetplugin.html">QPyDesignerCustomWidgetPlugin</a>，<a href="qpydesignermembersheetextension.html" tppabs="http://pyqt4doc.appspot.com/qpydesignermembersheetextension.html">QPyDesignerMemberSheetExtension</a>，<a href="qpydesignerpropertysheetextension.html" tppabs="http://pyqt4doc.appspot.com/qpydesignerpropertysheetextension.html">QPyDesignerPropertySheetExtension</a>，<a href="qpydesignertaskmenuextension.html" tppabs="http://pyqt4doc.appspot.com/qpydesignertaskmenuextension.html">QPyDesignerTaskMenuExtension</a>，<a href="qpytextobject.html" tppabs="http://pyqt4doc.appspot.com/qpytextobject.html">QPyTextObject</a>，<a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a>，<a href="qscriptenginedebugger.html" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html">QScriptEngineDebugger</a>，<a href="qsessionmanager.html" tppabs="http://pyqt4doc.appspot.com/qsessionmanager.html">QSessionManager</a>，<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>，<a href="qsharedmemory.html" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html">QSharedMemory</a>，<a href="qshortcut.html" tppabs="http://pyqt4doc.appspot.com/qshortcut.html">QShortcut</a>，<a href="qsignalmapper.html" tppabs="http://pyqt4doc.appspot.com/qsignalmapper.html">QSignalMapper</a>，<a href="qsocketnotifier.html" tppabs="http://pyqt4doc.appspot.com/qsocketnotifier.html">QSocketNotifier</a>，<a href="qsound.html" tppabs="http://pyqt4doc.appspot.com/qsound.html">QSound</a>，<a href="qsqldriver.html" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html">QSqlDriver</a>，<a href="qstyle.html" tppabs="http://pyqt4doc.appspot.com/qstyle.html">QStyle</a>，<a href="qsvgrenderer.html" tppabs="http://pyqt4doc.appspot.com/qsvgrenderer.html">QSvgRenderer</a>，<a href="qsyntaxhighlighter.html" tppabs="http://pyqt4doc.appspot.com/qsyntaxhighlighter.html">QSyntaxHighlighter</a>，<a href="qsystemtrayicon.html" tppabs="http://pyqt4doc.appspot.com/qsystemtrayicon.html">QSystemTrayIcon</a>，<a href="qtcpserver.html" tppabs="http://pyqt4doc.appspot.com/qtcpserver.html">QTcpServer</a>，<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>，<a href="qtextobject.html" tppabs="http://pyqt4doc.appspot.com/qtextobject.html">QTextObject</a>，<a href="qthread.html" tppabs="http://pyqt4doc.appspot.com/qthread.html">QThread</a>，<a href="qthreadpool.html" tppabs="http://pyqt4doc.appspot.com/qthreadpool.html">QThreadPool</a>，<a href="qtimeline.html" tppabs="http://pyqt4doc.appspot.com/qtimeline.html">QTimeLine</a>，<a href="qtimer.html" tppabs="http://pyqt4doc.appspot.com/qtimer.html">QTimer</a>，<a href="qtranslator.html" tppabs="http://pyqt4doc.appspot.com/qtranslator.html">QTranslator</a>，<a href="qundogroup.html" tppabs="http://pyqt4doc.appspot.com/qundogroup.html">QUndoGroup</a>，<a href="qundostack.html" tppabs="http://pyqt4doc.appspot.com/qundostack.html">QUndoStack</a>，<a href="qvalidator.html" tppabs="http://pyqt4doc.appspot.com/qvalidator.html">QValidator</a>，<a href="qwebframe.html" tppabs="http://pyqt4doc.appspot.com/qwebframe.html">QWebFrame</a>，<a href="qwebhistoryinterface.html" tppabs="http://pyqt4doc.appspot.com/qwebhistoryinterface.html">QWebHistoryInterface</a>，<a href="qwebpage.html" tppabs="http://pyqt4doc.appspot.com/qwebpage.html">QWebPage</a>，<a href="qwebpluginfactory.html" tppabs="http://pyqt4doc.appspot.com/qwebpluginfactory.html">QWebPluginFactory</a>和<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qobject.html#QObject" tppabs="http://pyqt4doc.appspot.com/qobject.html#QObject">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qobject.html#blockSignals" tppabs="http://pyqt4doc.appspot.com/qobject.html#blockSignals">blockSignals</a></b> (<i>self</i>, bool <i>b</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qobject.html#childEvent" tppabs="http://pyqt4doc.appspot.com/qobject.html#childEvent">childEvent</a></b> (<i>self</i>, QChildEvent)</li>
+<li>
+<div class="fn"></div>list-of-QObject <b><a href="qobject.html#children" tppabs="http://pyqt4doc.appspot.com/qobject.html#children">children</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qobject.html#connect-3" tppabs="http://pyqt4doc.appspot.com/qobject.html#connect-3">connect</a></b> (<i>self</i>, QObject, SIGNAL(), SLOT(), Qt.ConnectionType = Qt.AutoConnection)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qobject.html#connectNotify" tppabs="http://pyqt4doc.appspot.com/qobject.html#connectNotify">connectNotify</a></b> (<i>self</i>, SIGNAL() <i>signal</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qobject.html#customEvent" tppabs="http://pyqt4doc.appspot.com/qobject.html#customEvent">customEvent</a></b> (<i>self</i>, QEvent)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qobject.html#deleteLater" tppabs="http://pyqt4doc.appspot.com/qobject.html#deleteLater">deleteLater</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qobject.html#disconnectNotify" tppabs="http://pyqt4doc.appspot.com/qobject.html#disconnectNotify">disconnectNotify</a></b> (<i>self</i>, SIGNAL() <i>signal</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qobject.html#dumpObjectInfo" tppabs="http://pyqt4doc.appspot.com/qobject.html#dumpObjectInfo">dumpObjectInfo</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qobject.html#dumpObjectTree" tppabs="http://pyqt4doc.appspot.com/qobject.html#dumpObjectTree">dumpObjectTree</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QByteArray <b><a href="qobject.html#dynamicPropertyNames" tppabs="http://pyqt4doc.appspot.com/qobject.html#dynamicPropertyNames">dynamicPropertyNames</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qobject.html#emit" tppabs="http://pyqt4doc.appspot.com/qobject.html#emit">emit</a></b> (<i>self</i>, SIGNAL(), ...)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">event</a></b> (<i>self</i>, QEvent)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qobject.html#eventFilter" tppabs="http://pyqt4doc.appspot.com/qobject.html#eventFilter">eventFilter</a></b> (<i>self</i>, QObject, QEvent)</li>
+<li>
+<div class="fn"></div>QObject <b><a href="qobject.html#findChild" tppabs="http://pyqt4doc.appspot.com/qobject.html#findChild">findChild</a></b> (<i>self</i>, type <i>type</i>, QString <i>name</i> = QString())</li>
+<li>
+<div class="fn"></div>QObject <b><a href="qobject.html#findChild-2" tppabs="http://pyqt4doc.appspot.com/qobject.html#findChild-2">findChild</a></b> (<i>self</i>, tuple <i>types</i>, QString <i>name</i> = QString())</li>
+<li>
+<div class="fn"></div>list-of-QObject <b><a href="qobject.html#findChildren" tppabs="http://pyqt4doc.appspot.com/qobject.html#findChildren">findChildren</a></b> (<i>self</i>, type <i>type</i>, QString <i>name</i> = QString())</li>
+<li>
+<div class="fn"></div>list-of-QObject <b><a href="qobject.html#findChildren-2" tppabs="http://pyqt4doc.appspot.com/qobject.html#findChildren-2">findChildren</a></b> (<i>self</i>, tuple <i>types</i>, QString <i>name</i> = QString())</li>
+<li>
+<div class="fn"></div>list-of-QObject <b><a href="qobject.html#findChildren-3" tppabs="http://pyqt4doc.appspot.com/qobject.html#findChildren-3">findChildren</a></b> (<i>self</i>, type <i>type</i>, QRegExp <i>regExp</i>)</li>
+<li>
+<div class="fn"></div>list-of-QObject <b><a href="qobject.html#findChildren-4" tppabs="http://pyqt4doc.appspot.com/qobject.html#findChildren-4">findChildren</a></b> (<i>self</i>, tuple <i>types</i>, QRegExp <i>regExp</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qobject.html#inherits" tppabs="http://pyqt4doc.appspot.com/qobject.html#inherits">inherits</a></b> (<i>self</i>, str <i>classname</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qobject.html#installEventFilter" tppabs="http://pyqt4doc.appspot.com/qobject.html#installEventFilter">installEventFilter</a></b> (<i>self</i>, QObject)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qobject.html#isWidgetType" tppabs="http://pyqt4doc.appspot.com/qobject.html#isWidgetType">isWidgetType</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qobject.html#killTimer" tppabs="http://pyqt4doc.appspot.com/qobject.html#killTimer">killTimer</a></b> (<i>self</i>, int <i>id</i>)</li>
+<li>
+<div class="fn"></div>QMetaObject <b><a href="qobject.html#metaObject" tppabs="http://pyqt4doc.appspot.com/qobject.html#metaObject">metaObject</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qobject.html#moveToThread" tppabs="http://pyqt4doc.appspot.com/qobject.html#moveToThread">moveToThread</a></b> (<i>self</i>, QThread <i>thread</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qobject.html#objectName" tppabs="http://pyqt4doc.appspot.com/qobject.html#objectName">objectName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QObject <b><a href="qobject.html#parent" tppabs="http://pyqt4doc.appspot.com/qobject.html#parent">parent</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qobject.html#property" tppabs="http://pyqt4doc.appspot.com/qobject.html#property">property</a></b> (<i>self</i>, str <i>name</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qobject.html#pyqtConfigure" tppabs="http://pyqt4doc.appspot.com/qobject.html#pyqtConfigure">pyqtConfigure</a></b> (<i>self</i>, object)</li>
+<li>
+<div class="fn"></div>int <b><a href="qobject.html#receivers" tppabs="http://pyqt4doc.appspot.com/qobject.html#receivers">receivers</a></b> (<i>self</i>, SIGNAL() <i>signal</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qobject.html#removeEventFilter" tppabs="http://pyqt4doc.appspot.com/qobject.html#removeEventFilter">removeEventFilter</a></b> (<i>self</i>, QObject)</li>
+<li>
+<div class="fn"></div>QObject <b><a href="qobject.html#sender" tppabs="http://pyqt4doc.appspot.com/qobject.html#sender">sender</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qobject.html#senderSignalIndex" tppabs="http://pyqt4doc.appspot.com/qobject.html#senderSignalIndex">senderSignalIndex</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qobject.html#setObjectName" tppabs="http://pyqt4doc.appspot.com/qobject.html#setObjectName">setObjectName</a></b> (<i>self</i>, QString <i>name</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qobject.html#setParent" tppabs="http://pyqt4doc.appspot.com/qobject.html#setParent">setParent</a></b> (<i>self</i>, QObject)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qobject.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qobject.html#setProperty">setProperty</a></b> (<i>self</i>, str <i>name</i>, QVariant <i>value</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qobject.html#signalsBlocked" tppabs="http://pyqt4doc.appspot.com/qobject.html#signalsBlocked">signalsBlocked</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qobject.html#startTimer" tppabs="http://pyqt4doc.appspot.com/qobject.html#startTimer">startTimer</a></b> (<i>self</i>, int <i>interval</i>)</li>
+<li>
+<div class="fn"></div>QThread <b><a href="qobject.html#thread" tppabs="http://pyqt4doc.appspot.com/qobject.html#thread">thread</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qobject.html#timerEvent" tppabs="http://pyqt4doc.appspot.com/qobject.html#timerEvent">timerEvent</a></b> (<i>self</i>, QTimerEvent)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qobject.html#tr" tppabs="http://pyqt4doc.appspot.com/qobject.html#tr">tr</a></b> (<i>self</i>, str <i>sourceText</i>, str <i>disambiguation</i> = None, int <i>n</i> = -1)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qobject.html#trUtf8" tppabs="http://pyqt4doc.appspot.com/qobject.html#trUtf8">trUtf8</a></b> (<i>self</i>, str <i>sourceText</i>, str <i>disambiguation</i> = None, int <i>n</i> = -1)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>bool <b><a href="qobject.html#connect" tppabs="http://pyqt4doc.appspot.com/qobject.html#connect">connect</a></b> (QObject, SIGNAL(), QObject, SLOT(), Qt.ConnectionType = Qt.AutoConnection)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qobject.html#connect-2" tppabs="http://pyqt4doc.appspot.com/qobject.html#connect-2">connect</a></b> (QObject, SIGNAL(), callable, Qt.ConnectionType = Qt.AutoConnection)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qobject.html#disconnect" tppabs="http://pyqt4doc.appspot.com/qobject.html#disconnect">disconnect</a></b> (QObject, SIGNAL(), QObject, SLOT())</li>
+<li>
+<div class="fn"></div>bool <b><a href="qobject.html#disconnect-2" tppabs="http://pyqt4doc.appspot.com/qobject.html#disconnect-2">disconnect</a></b> (QObject, SIGNAL(), callable)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul><li>
+<div class="fn"></div>object <b><a href="qobject.html#__getattr__" tppabs="http://pyqt4doc.appspot.com/qobject.html#__getattr__">__getattr__</a></b> (<i>self</i>, str <i>name</i>)</li></ul>
+<h3>Qt Signals</h3>
+<ul><li>
+<div class="fn"></div>void <b><a href="qobject.html#destroyed" tppabs="http://pyqt4doc.appspot.com/qobject.html#destroyed">destroyed</a></b> (QObject * = 0)</li></ul>
+<h3>Static Members</h3>
+<ul><li>
+<div class="fn"></div>QMetaObject <b><a href="qobject.html#staticMetaObject-var" tppabs="http://pyqt4doc.appspot.com/qobject.html#staticMetaObject-var">staticMetaObject</a></b>
+</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QObject的类是所有的Qt对象的基类。</p>
+<p>QObject的是Qt的心脏<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/object.html">Object
+Model</a>。在此模型中的核心特征是一种称为非常强大的机制来无缝对象的通信<a href="index.htm#signals-and-slots" tppabs="http://pyqt4doc.appspot.com/signalsandslots.html#signals-and-slots">signals and slots</a>。你可以用一个信号连接到槽<a href="qobject.html#connect" tppabs="http://pyqt4doc.appspot.com/qobject.html#connect">connect</a>（ ）和destroy与连接<a href="qobject.html#disconnect" tppabs="http://pyqt4doc.appspot.com/qobject.html#disconnect">disconnect</a>（ ） 。为了避免无休止的通知循环可以暂时阻止信号与<a href="qobject.html#blockSignals" tppabs="http://pyqt4doc.appspot.com/qobject.html#blockSignals">blockSignals</a>（ ） 。该保护功能<a href="qobject.html#connectNotify" tppabs="http://pyqt4doc.appspot.com/qobject.html#connectNotify">connectNotify</a>（）和<a href="qobject.html#disconnectNotify" tppabs="http://pyqt4doc.appspot.com/qobject.html#disconnectNotify">disconnectNotify</a>（）使得有可能跟踪的连接。</p>
+<p><a href="index.htm#qobjects" tppabs="http://pyqt4doc.appspot.com/qtwebkit-bridge.html#qobjects">QObjects</a>组织起来的<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/objecttrees.html">object trees</a>。当你创建与另一个对象作为父项的QObject的，该对象将自己自动添加到父的<a href="qobject.html#children" tppabs="http://pyqt4doc.appspot.com/qobject.html#children">children</a>（ ）列表。家长需要的对象的所有权，也就是说，它会自动删除其在其析构函数的孩子。你可以找一个对象的名字和可选输入使用<a href="qobject.html#findChild" tppabs="http://pyqt4doc.appspot.com/qobject.html#findChild">findChild</a>（）或<a href="qobject.html#findChildren" tppabs="http://pyqt4doc.appspot.com/qobject.html#findChildren">findChildren</a>（ ） 。</p>
+<p>每个对象都有一个<a href="qobject.html#objectName-prop" tppabs="http://pyqt4doc.appspot.com/qobject.html#objectName-prop">objectName</a>（ ）和它的类名可以通过相应的发现<a href="qobject.html#metaObject" tppabs="http://pyqt4doc.appspot.com/qobject.html#metaObject">metaObject</a>（ ） （见<a href="qmetaobject.html#className" tppabs="http://pyqt4doc.appspot.com/qmetaobject.html#className">QMetaObject.className</a>（））。你能确定对象的类是否继承另一个类中的QObject继承层次结构使用<a href="qobject.html#inherits" tppabs="http://pyqt4doc.appspot.com/qobject.html#inherits">inherits</a>（）函数。</p>
+<p>当一个对象被删除时，它会发出一个<a href="qobject.html#destroyed" tppabs="http://pyqt4doc.appspot.com/qobject.html#destroyed">destroyed</a>（）信号。你可以捕获这个信号，以避免悬空引用<a href="index.htm#qobjects" tppabs="http://pyqt4doc.appspot.com/qtwebkit-bridge.html#qobjects">QObjects</a>。</p>
+<p><a href="index.htm#qobjects" tppabs="http://pyqt4doc.appspot.com/qtwebkit-bridge.html#qobjects">QObjects</a>可以通过接收事件<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">event</a>（）和过滤器的其他对象的事件。看<a href="qobject.html#installEventFilter" tppabs="http://pyqt4doc.appspot.com/qobject.html#installEventFilter">installEventFilter</a>（）和<a href="qobject.html#eventFilter" tppabs="http://pyqt4doc.appspot.com/qobject.html#eventFilter">eventFilter</a>（ ）了解详情。一个方便的处理程序，<a href="qobject.html#childEvent" tppabs="http://pyqt4doc.appspot.com/qobject.html#childEvent">childEvent</a>（ ） ，可重新实现以赶上孩子的事件。</p>
+<p>事件被交付于该对象被创建的线程，见<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/threads.html">Thread Support in Qt</a>和<a href="qobject.html#thread" tppabs="http://pyqt4doc.appspot.com/qobject.html#thread">thread</a>（ ）了解详情。请注意，事件处理是根本无法完成的<a href="index.htm#qobjects" tppabs="http://pyqt4doc.appspot.com/qtwebkit-bridge.html#qobjects">QObjects</a>没有线程关联（<a href="qobject.html#thread" tppabs="http://pyqt4doc.appspot.com/qobject.html#thread">thread</a>（ ）返回零） 。使用<a href="qobject.html#moveToThread" tppabs="http://pyqt4doc.appspot.com/qobject.html#moveToThread">moveToThread</a>（ ）函数来改变一个对象及其子对象的线程关联（如果它有一个父对象不能移动） 。</p>
+<p>最后但并非最不重要的， QObject中提供了Qt的基本定时器支持;见<a href="qtimer.html" tppabs="http://pyqt4doc.appspot.com/qtimer.html">QTimer</a>为定时器高层的支持。</p>
+<p>请注意，该<a href="qobject.html#Q_OBJECT" tppabs="http://pyqt4doc.appspot.com/qobject.html#Q_OBJECT">Q_OBJECT</a>宏是强制实现信号，槽或属性的对象。您还需要运行<a href="index.htm#moc" tppabs="http://pyqt4doc.appspot.com/moc.html#moc">Meta
+Object Compiler</a>在源文件中。我们强烈建议使用这个宏的QObject的子类，而不管是否与自己实际使用的信号，槽和属性，因为如果不这样做可能会导致某些功能表现出奇怪的行为。</p>
+<p>Qt的所有控件继承QObject的。便利的功能<a href="qobject.html#isWidgetType" tppabs="http://pyqt4doc.appspot.com/qobject.html#isWidgetType">isWidgetType</a>（ ）返回一个对象是否实际上是一个小部件。这是比要快得多<a href="qobject.html#qobject_cast" tppabs="http://pyqt4doc.appspot.com/qobject.html#qobject_cast">qobject_cast</a>\u003c<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>* \u003e （<i>obj</i>）或<i>obj</i> - \u003e<a href="qobject.html#inherits" tppabs="http://pyqt4doc.appspot.com/qobject.html#inherits">inherits</a>（ “<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>“ ） 。</p>
+<p>一些QObject的功能，例如<a href="qobject.html#children" tppabs="http://pyqt4doc.appspot.com/qobject.html#children">children</a>（ ） ，返回一个<a href="qobject.html#QObjectList-typedef" tppabs="http://pyqt4doc.appspot.com/qobject.html#QObjectList-typedef">QObjectList</a>。<a href="qobject.html#QObjectList-typedef" tppabs="http://pyqt4doc.appspot.com/qobject.html#QObjectList-typedef">QObjectList</a>是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qlist.html">QList</a>\u003cQObject *\u003e 。</p>
+<a id="no-copy-constructor" name="no-copy-constructor"></a><a id="no-copy-constructor-or-assignment-operator" name="no-copy-constructor-or-assignment-operator"></a>
+<h3>No copy constructor or assignment operator</h3>
+<p>QObject中既没有拷贝构造函数，也不是一个赋值操作符。这是设计使然。实际上，它们被声明，但在一个<tt>private</tt>与宏段<a href="qobject.html#Q_DISABLE_COPY" tppabs="http://pyqt4doc.appspot.com/qobject.html#Q_DISABLE_COPY">Q_DISABLE_COPY</a>（ ） 。事实上，自QObject （直接或间接）派生的所有Qt类使用这个宏来声明自己的拷贝构造函数和赋值操作符是私有的。其理由是在讨论中找到<a href="index.htm#identity-vs-value" tppabs="http://pyqt4doc.appspot.com/object.html#identity-vs-value">Identity vs Value</a>在Qt的<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/object.html">Object Model</a>页面。</p>
+<p>主要的后果是，你应该使用指针的QObject （或您的QObject的子类） ，你可能被诱惑去使用QObject的子类作为值。例如，如果没有拷贝构造函数，则不能使用的QObject的子类将其存储在容器类中的一个值。你必须存储的指针。</p>
+<a id="auto-connection" name="auto-connection"></a>
+<h3>Auto-Connection</h3>
+<p>Qt的元对象系统提供了一种机制来自动连接QObject的子类与子女之间的信号和槽。只要对象与合适的对象名称来定义的，与插槽遵循一个简单的命名惯例，这种连接可以在运行时被执行<a href="qmetaobject.html#connectSlotsByName" tppabs="http://pyqt4doc.appspot.com/qmetaobject.html#connectSlotsByName">QMetaObject.connectSlotsByName</a>（）函数。</p>
+<p><a href="index.htm#uic" tppabs="http://pyqt4doc.appspot.com/uic.html#uic">uic</a>生成调用这个函数被用在创建窗体小部件之间进行，以启用自动连接代码<i>Qt Designer</i>。有关使用带自动连接的详细信息<i>Qt Designer</i>是由于在<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/designer-using-a-ui-file.html">Using a Designer UI File in
+Your Application</a>的节<i>Qt Designer</i>手册。</p>
+<a id="dynamic-properties" name="dynamic-properties"></a>
+<h3>Dynamic Properties</h3>
+<p>从Qt 4.2中，动态属性可以被添加到和从在运行时QObject的实例中删除。动态属性不需要在编译时被声明，但它们提供了相同的优点的静态属性和使用相同的API等的操作 - 使用<a href="qobject.html#property" tppabs="http://pyqt4doc.appspot.com/qobject.html#property">property</a>（）来读取它们，<a href="qobject.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qobject.html#setProperty">setProperty</a>（ ）来写他们。</p>
+<p>在Qt 4.3 ，动态属性是由支持<a href="index.htm#the-property-editor" tppabs="http://pyqt4doc.appspot.com/designer-widget-mode.html#the-property-editor">Qt Designer</a>，以及标准Qt控件和用户创建的表格可以给出动态属性。</p>
+<a id="internationalization-i18n" name="internationalization-i18n"></a>
+<h3>Internationalization (i18n)</h3>
+<p>所有的QObject子类支持Qt的翻译功能，使其能够翻译应用程序的用户界面为不同的语言。</p>
+<p>为了让用户可见的文本翻译，它必须被包裹在调用<a href="qobject.html#tr" tppabs="http://pyqt4doc.appspot.com/qobject.html#tr">tr</a>（）函数。此进行了详细的解释<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/i18n-source-translation.html">Writing Source Code for
+Translation</a>文档。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QObject"></a>QObject.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个对象的父对象<i>parent</i>。</p>
+<p>一个对象的父对象可以被视为对象的所有者。例如，一个<a href="qdialog.html" tppabs="http://pyqt4doc.appspot.com/qdialog.html">dialog box</a>是父<b>OK</b>和<b>Cancel</b>按钮，它包含的内容。</p>
+<p>父对象的析构函数销毁所有子对象。</p>
+<p>Setting <i>parent</i>0构造一个对象没有父。如果对象是一个小部件，它会成为一个顶级窗口。</p>
+<p><b>See also</b> <a href="qobject.html#parent" tppabs="http://pyqt4doc.appspot.com/qobject.html#parent">parent</a>（ ）<a href="qobject.html#findChild" tppabs="http://pyqt4doc.appspot.com/qobject.html#findChild">findChild</a>（）和<a href="qobject.html#findChildren" tppabs="http://pyqt4doc.appspot.com/qobject.html#findChildren">findChildren</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="blockSignals"></a>bool QObject.blockSignals (<i>self</i>, bool <i>b</i>)</h3>
+<p>If <i>block</i>诚然，此对象发出的信号被阻塞（即，发射的信号不会调用任何连接到它） 。如果<i>block</i>是假的，不会发生这样的阻塞。</p>
+<p>返回值是以前的值<a href="qobject.html#signalsBlocked" tppabs="http://pyqt4doc.appspot.com/qobject.html#signalsBlocked">signalsBlocked</a>（ ） 。</p>
+<p>注意，这个<a href="qobject.html#destroyed" tppabs="http://pyqt4doc.appspot.com/qobject.html#destroyed">destroyed</a>（ ）信号，即使此对象的信号已经被封锁发射。</p>
+<p><b>See also</b> <a href="qobject.html#signalsBlocked" tppabs="http://pyqt4doc.appspot.com/qobject.html#signalsBlocked">signalsBlocked</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="childEvent"></a>QObject.childEvent (<i>self</i>, <a href="qchildevent.html" tppabs="http://pyqt4doc.appspot.com/qchildevent.html">QChildEvent</a>)</h3>
+<p>此事件处理程序可以重新实现在子类中接收子事件。该事件被传递的<i>event</i>参数。</p>
+<p><a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.ChildAdded</a>和<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.ChildRemoved</a>事件被发送到对象时，孩子们被添加或删除。在这两种情况下，你只能依靠孩子作为一个<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>，或者如果<a href="qobject.html#isWidgetType" tppabs="http://pyqt4doc.appspot.com/qobject.html#isWidgetType">isWidgetType</a>（ ）返回True ，一<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>。 （这是因为，在<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">ChildAdded</a>情况下，孩子还没有完全建成，并在<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">ChildRemoved</a>情况下，它可能已被破坏的话） 。</p>
+<p><a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.ChildPolished</a>事件发送到窗口部件时，孩子们都经过抛光处理，或打磨时，孩子们补充说。如果您收到一个孩子抛光事件，孩子的建造通常完成。然而，这并不能完全保证，并且多个抛光事件可能Widget的构造函数的执行过程中被传递。</p>
+<p>对于每个子控件，您收到一个<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">ChildAdded</a>事件，零个或多个<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">ChildPolished</a>事件，和一个<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">ChildRemoved</a>事件。</p>
+<p>该<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">ChildPolished</a>如果一个孩子被立即删除它被添加后，事件被省略。如果一个孩子被构造和析构过程中进行多次打磨，您可能会收到多个孩子抛光事件相同的孩子，每次使用不同的虚表。</p>
+<p><b>See also</b> <a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="children"></a>list-of-QObject QObject.children (<i>self</i>)</h3>
+<p>返回子对象的列表。该<a href="qobject.html#QObjectList-typedef" tppabs="http://pyqt4doc.appspot.com/qobject.html#QObjectList-typedef">QObjectList</a>类中所定义的<tt>&lt;QObject&gt;</tt>头文件如下：</p>
+<pre class="qml">
+ <span class="keyword">typedef</span> <span class="type"><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qlist.html">QList</a></span><span class="operator">&lt;</span><span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span><span class="operator">*</span><span class="operator">&gt;</span> <span class="type"><a href="qobject.html#QObjectList-typedef" tppabs="http://pyqt4doc.appspot.com/qobject.html#QObjectList-typedef">QObjectList</a></span>;
+</pre>
+<p>添加的第一个孩子是<a href="index.htm#first" tppabs="http://pyqt4doc.appspot.com/qlist.html#first">first</a>在添加列表和最后一个子对象是<a href="index.htm#last" tppabs="http://pyqt4doc.appspot.com/qlist.html#last">last</a>列表中的对象，即新的儿童将被附加在最后。</p>
+<p>请注意，该列表中的顺序改变时，<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>孩子们<a href="qwidget.html#raise" tppabs="http://pyqt4doc.appspot.com/qwidget.html#raise">raised</a> or <a href="qwidget.html#lower" tppabs="http://pyqt4doc.appspot.com/qwidget.html#lower">lowered</a>。所提出的一个小部件成为列表中的最后一个对象，并且被降低一个小部件成为列表中的第一个对象。</p>
+<p><b>See also</b> <a href="qobject.html#findChild" tppabs="http://pyqt4doc.appspot.com/qobject.html#findChild">findChild</a>（ ）<a href="qobject.html#findChildren" tppabs="http://pyqt4doc.appspot.com/qobject.html#findChildren">findChildren</a>（ ）<a href="qobject.html#parent" tppabs="http://pyqt4doc.appspot.com/qobject.html#parent">parent</a>（）和<a href="qobject.html#setParent" tppabs="http://pyqt4doc.appspot.com/qobject.html#setParent">setParent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="connect"></a>bool QObject.connect (<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>, SIGNAL(), <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>, SLOT(), <a href="qt.html#ConnectionType-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ConnectionType-enum">Qt.ConnectionType</a> = Qt.AutoConnection)</h3>
+<p>产生的给定的连接<i>type</i>从<i>signal</i>在<i>sender</i>反对<i>method</i>在<i>receiver</i>对象。返回True如果连接成功，否则返回False 。</p>
+<p>您必须使用<tt>SIGNAL()</tt>和<tt>SLOT()</tt>当指定的宏<i>signal</i>和<i>method</i>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qlabel.html" tppabs="http://pyqt4doc.appspot.com/qlabel.html">QLabel</a></span> <span class="operator">*</span>label <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qlabel.html" tppabs="http://pyqt4doc.appspot.com/qlabel.html">QLabel</a></span>;
+ <span class="type"><a href="qscrollbar.html" tppabs="http://pyqt4doc.appspot.com/qscrollbar.html">QScrollBar</a></span> <span class="operator">*</span>scrollBar <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qscrollbar.html" tppabs="http://pyqt4doc.appspot.com/qscrollbar.html">QScrollBar</a></span>;
+ <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span><span class="operator">.</span>connect(scrollBar<span class="operator">,</span> SIGNAL(valueChanged(<span class="type">int</span>))<span class="operator">,</span>
+                  label<span class="operator">,</span>  SLOT(setNum(<span class="type">int</span>)));
+</pre>
+<p>这个例子可以确保标籤始终显示当前滚动条的值。注意，信号和槽的参数必须不包含任何变量名，只有类型。例如以下是行不通的，并返回False ：</p>
+<pre class="cpp">
+ <span class="comment">// WRONG</span>
+ <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span><span class="operator">.</span>connect(scrollBar<span class="operator">,</span> SIGNAL(valueChanged(<span class="type">int</span> value))<span class="operator">,</span>
+                  label<span class="operator">,</span> SLOT(setNum(<span class="type">int</span> value)));
+</pre>
+<p>的信号也可以被连接到另一个信号：</p>
+<pre class="cpp">
+ <span class="keyword">class</span> MyWidget : <span class="keyword">public</span> <span class="type"><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a></span>
+ {
+     Q_OBJECT
+
+ <span class="keyword">public</span>:
+     MyWidget();
+
+ <span class="keyword">signals</span>:
+     <span class="type">void</span> buttonClicked();
+
+ <span class="keyword">private</span>:
+     <span class="type"><a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a></span> <span class="operator">*</span>myButton;
+ };
+
+ MyWidget<span class="operator">.</span>MyWidget()
+ {
+     myButton <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a></span>(<span class="keyword">this</span>);
+     connect(myButton<span class="operator">,</span> SIGNAL(clicked())<span class="operator">,</span>
+             <span class="keyword">this</span><span class="operator">,</span> SIGNAL(buttonClicked()));
+ }
+</pre>
+<p>在该示例中，<tt>MyWidget</tt>构造函数从一个私有成员变量继电器的信号，并使其可下，涉及到一个名称<tt>MyWidget</tt>。</p>
+<p>一个信号可以连接到多个插槽和信号。很多信号可以连接到一个时隙。</p>
+<p>如果一个信号被连接到多个槽，这些槽以相同的顺序被激活作为连接被做，当信号被发射的次序。</p>
+<p>如果它成功地将信号与槽连接的函数返回True。它会返回False ，如果它不能建立连接，例如，如果<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>无法验证或者存在<i>signal</i> or
+<i>method</i>，或者如果他们的签名是不兼容的。</p>
+<p>默认情况下，一个信号被发射为你倾尽连接;两个信号发出重复的连接。你可以打破所有这些连接与单个<a href="qobject.html#disconnect" tppabs="http://pyqt4doc.appspot.com/qobject.html#disconnect">disconnect</a>（ ）调用。如果你通过了<a href="qt.html#ConnectionType-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ConnectionType-enum">Qt.UniqueConnection</a>
+<i>type</i>，连接将仅当它是不重复进行。如果已经有一个重复（完全相同的信号，对相同的对象完全相同的插槽） ，连接将失败，连接将返回False 。</p>
+<p>可选的<i>type</i>参数描述了连接建立的类型。特别是，它确定一个特定的信号是否被传递到紧接在一个时隙或排队等待传递在以后的时间。如果信号排队，该参数必须是已知Qt的元对象系统类型，因为Qt的需要复制到它们存储在幕后事件的参数。如果您尝试使用一个排队的连接，并收到错误消息</p>
+<pre class="cpp">
+ <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span><span class="operator">.</span>connect: Cannot queue arguments of type <span class="char">'MyType'</span>
+ (Make sure <span class="char">'MyType'</span> is registered <span class="keyword">using</span> <a href="qmetatype.html#qRegisterMetaType" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#qRegisterMetaType">qRegisterMetaType</a>()<span class="operator">.</span>)
+</pre>
+<p>通话<a href="qmetatype.html#qRegisterMetaType" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#qRegisterMetaType">qRegisterMetaType</a>（）注册的数据类型你建立连接之前。</p>
+<p><b>Note:</b>这个功能是<a href="index.htm#thread-safe" tppabs="http://pyqt4doc.appspot.com/threads-reentrancy.html#thread-safe">thread-safe</a>。</p>
+<p><b>See also</b> <a href="qobject.html#disconnect" tppabs="http://pyqt4doc.appspot.com/qobject.html#disconnect">disconnect</a>（ ）<a href="qobject.html#sender" tppabs="http://pyqt4doc.appspot.com/qobject.html#sender">sender</a>（ ）<a href="qmetatype.html#qRegisterMetaType" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#qRegisterMetaType">qRegisterMetaType</a>（）和<a href="qmetatype.html#Q_DECLARE_METATYPE" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#Q_DECLARE_METATYPE">Q_DECLARE_METATYPE</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="connect-2"></a>bool QObject.connect (<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>, SIGNAL(), callable, <a href="qt.html#ConnectionType-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ConnectionType-enum">Qt.ConnectionType</a> = Qt.AutoConnection)</h3>
+<p>产生的给定的连接<i>type</i>从<i>signal</i>在<i>sender</i>反对<i>method</i>在<i>receiver</i>对象。返回True如果连接成功，否则返回False 。</p>
+<p>该功能的工作原理相同的方式连接（常量<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>*发件人，为const char *的信号，常量<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>*接收器，为const char *的方法，<a href="qt.html#ConnectionType-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ConnectionType-enum">Qt.ConnectionType</a>型），但它使用了<a href="qmetamethod.html" tppabs="http://pyqt4doc.appspot.com/qmetamethod.html">QMetaMethod</a>指定信号和方法。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b>连接（常量的QObject *寄件人，为const char *的信号，常量的QObject *接收器，为const char *的方法， Qt.ConnectionType型） 。</p>
+
+
+<h3 class="fn">
+<a name="connect-3"></a>bool QObject.connect (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>, SIGNAL(), SLOT(), <a href="qt.html#ConnectionType-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ConnectionType-enum">Qt.ConnectionType</a> = Qt.AutoConnection)</h3>
+<p>这个函数的重载<a href="qobject.html#connect" tppabs="http://pyqt4doc.appspot.com/qobject.html#connect">connect</a>（ ） 。</p>
+<p>连接型<i>signal</i>从<i>sender</i>反对此对象的<i>method</i>。</p>
+<p>相当于连接（<i>sender</i>，<i>signal</i>，<tt>this</tt>，<i>method</i>，<i>type</i>） 。</p>
+<p>你让每个连接发射信号，所以重复的连接发出两个信号。您可以使用破解的连接<a href="qobject.html#disconnect" tppabs="http://pyqt4doc.appspot.com/qobject.html#disconnect">disconnect</a>（ ） 。</p>
+<p><b>Note:</b>这个功能是<a href="index.htm#thread-safe" tppabs="http://pyqt4doc.appspot.com/threads-reentrancy.html#thread-safe">thread-safe</a>。</p>
+<p><b>See also</b> <a href="qobject.html#disconnect" tppabs="http://pyqt4doc.appspot.com/qobject.html#disconnect">disconnect</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="connectNotify"></a>QObject.connectNotify (<i>self</i>, SIGNAL() <i>signal</i>)</h3>
+<p>这个虚函数被调用时，事情已经连接到<i>signal</i>在这个对象。</p>
+<p>如果你想比较<i>signal</i>与一个特定的信号，使用<a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a>和<tt>SIGNAL()</tt>宏如下：</p>
+<pre class="cpp">
+ <span class="keyword">if</span> (QLatin1String(signal) <span class="operator">=</span><span class="operator">=</span> SIGNAL(valueChanged(<span class="type">int</span>))) {
+     <span class="comment">// signal is valueChanged(int)</span>
+ }
+</pre>
+<p>如果信号中包含有空格，调用多个参数或参数<a href="qmetaobject.html#normalizedSignature" tppabs="http://pyqt4doc.appspot.com/qmetaobject.html#normalizedSignature">QMetaObject.normalizedSignature</a>（ ）上的结果<tt>SIGNAL()</tt>宏。</p>
+<p><b>Warning:</b>此功能违反了模块化的面向对象的原则。但是，当您需要执行昂贵的初始化只有当事情被连接到一个信号它可能是有用的。</p>
+<p><b>See also</b> <a href="qobject.html#connect" tppabs="http://pyqt4doc.appspot.com/qobject.html#connect">connect</a>（）和<a href="qobject.html#disconnectNotify" tppabs="http://pyqt4doc.appspot.com/qobject.html#disconnectNotify">disconnectNotify</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="customEvent"></a>QObject.customEvent (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>)</h3>
+<p>此事件处理程序可以重新实现在子类中以接收自定义事件。自定义事件是与类型值至少一样大的用户定义事件<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.User</a>的产品<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.Type</a>枚举，并且是一个典型的<a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>子类。该事件被传递的<i>event</i>参数。</p>
+<p><b>See also</b> <a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">event</a>（）和<a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>。</p>
+
+
+<h3 class="fn">
+<a name="deleteLater"></a>QObject.deleteLater (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void deleteLater()</tt>。</p>
+<p>附表这个对象为删除。</p>
+<p>该对象将被当控制返回到事件循环中删除。如果事件循环不运行时，这个函数被调用（例如deleteLater （ ）被调用某个对象之前<a href="qcoreapplication.html#exec" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#exec">QCoreApplication.exec</a>（）） ，当事件循环被启动的对象都将被删除。如果deleteLater （ ）被调用后，主事件循环已经停止，对象不会被删除。由于Qt的4.8 ，如果deleteLater （ ）被调用的对象生活在一个线程没有正在运行的事件循环时，对象将在线程结束时销毁。</p>
+<p>需要注意的是进入和离开一个新的事件循环（例如，通过打开一个模态对话框）会<i>not</i>执行延期删除，因为要删除的对象时，控件必须返回到事件循环从deleteLater （）被调用。</p>
+<p><b>Note:</b>它是安全的调用这个函数不止一次，当第一递延删除事件被交付，对于对象的任何挂起的事件从事件队列中删除。</p>
+<p><b>See also</b> <a href="qobject.html#destroyed" tppabs="http://pyqt4doc.appspot.com/qobject.html#destroyed">destroyed</a>（）和<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qpointer.html">QPointer</a>。</p>
+
+
+<h3 class="fn">
+<a name="disconnect"></a>bool QObject.disconnect (<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>, SIGNAL(), <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>, SLOT())</h3>
+<p>断开连接<i>signal</i>在对象<i>sender</i>从<i>method</i>在对象<i>receiver</i>。返回True如果连接成功打破，否则返回False 。</p>
+<p>时，无论所涉及的对象被销毁被删除的信号 - 槽连接。</p>
+<p>断开（ ）通常用于三种方式，如下面的示例演示。</p>
+<ol class="1">
+<li>断开所有连接到一个对象的信号：<pre class="cpp">
+ disconnect(myObject<span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">0</span>);
+</pre>
+<p>相当于非静态重载函数</p>
+<pre class="cpp">
+ myObject<span class="operator">-</span><span class="operator">&gt;</span>disconnect();
+</pre>
+</li>
+<li>断开所有连接到特定的信号：<pre class="cpp">
+ disconnect(myObject<span class="operator">,</span> SIGNAL(mySignal())<span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">0</span>);
+</pre>
+<p>相当于非静态重载函数</p>
+<pre class="cpp">
+ myObject<span class="operator">-</span><span class="operator">&gt;</span>disconnect(SIGNAL(mySignal()));
+</pre>
+</li>
+<li>断开一个特定的接收器：<pre class="cpp">
+ disconnect(myObject<span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> myReceiver<span class="operator">,</span> <span class="number">0</span>);
+</pre>
+<p>相当于非静态重载函数</p>
+<pre class="cpp">
+ myObject<span class="operator">-</span><span class="operator">&gt;</span>disconnect(myReceiver);
+</pre>
+</li>
+</ol>
+<p>0可以用作一个通配符，意思是“任何信号” ， “任何接收对象” ，或“接收对象中的任何槽” ，分别。</p>
+<p>该<i>sender</i>可能永远不会为0。 （你不能从一个单一的呼叫多个对象断开信号。 ）</p>
+<p>If <i>signal</i>为0时，断开<i>receiver</i>和<i>method</i>从任何信号。如果不是这样，只有指定的信号断开。</p>
+<p>If <i>receiver</i>为0时，断开任何连接到<i>signal</i>。如果没有，插槽对象以外<i>receiver</i>没有断开。</p>
+<p>If <i>method</i>为0时，它断开连接到任何<i>receiver</i>。如果没有，只是插槽命名<i>method</i>将被断开，而所有其他插槽单独留在家中。该<i>method</i>必须为0 ，如果<i>receiver</i>被冷落，所以你不能断开所有对象具体命名的插槽。</p>
+<p><b>Note:</b>这个功能是<a href="index.htm#thread-safe" tppabs="http://pyqt4doc.appspot.com/threads-reentrancy.html#thread-safe">thread-safe</a>。</p>
+<p><b>See also</b> <a href="qobject.html#connect" tppabs="http://pyqt4doc.appspot.com/qobject.html#connect">connect</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="disconnect-2"></a>bool QObject.disconnect (<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>, SIGNAL(), callable)</h3>
+<p>断开连接<i>signal</i>在对象<i>sender</i>从<i>method</i>在对象<i>receiver</i>。返回True如果连接成功打破，否则返回False 。</p>
+<p>此功能提供了像断开（常量相同的可能性<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>*发件人，为const char *的信号，常量<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>*接收器，为const char *法），但用途<a href="qmetamethod.html" tppabs="http://pyqt4doc.appspot.com/qmetamethod.html">QMetaMethod</a>代表要被断开的信号，并且该方法。</p>
+<p>此外，此功能returnsFalse ，无信号和槽断开，如果：</p>
+<ol class="1">
+<li>
+<i>signal</i>是不是发件人类的成员或其父类之一。</li>
+<li>
+<i>method</i>是不是接收器类的成员或其父类之一。</li>
+<li>
+<i>signal</i>实例表示没有信号。</li>
+</ol>
+<p>QMetaMethod （ ）可以被用作通配符的意思是“任何信号”或“接收对象中的任何槽” 。以同样的方式0可用于<i>receiver</i>中的含义是“任何接收对象” 。在这种情况下，方法也应该QMetaMethod （） 。<i>sender</i>参数应该是永远不为0 。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b>断开（常量的QObject *寄件人，为const char *的信号，常量的QObject *接收器，为const char *的方法） 。</p>
+
+
+<h3 class="fn">
+<a name="disconnectNotify"></a>QObject.disconnectNotify (<i>self</i>, SIGNAL() <i>signal</i>)</h3>
+<p>当事情已经断开从这个虚函数被调用<i>signal</i>在这个对象。</p>
+<p>See <a href="qobject.html#connectNotify" tppabs="http://pyqt4doc.appspot.com/qobject.html#connectNotify">connectNotify</a>（ ）对于如何比较的例子<i>signal</i>与特定的信号。</p>
+<p><b>Warning:</b>此功能违反了模块化的面向对象的原则。但是，它可能是最优化使用昂贵的资源是有用的。</p>
+<p><b>See also</b> <a href="qobject.html#disconnect" tppabs="http://pyqt4doc.appspot.com/qobject.html#disconnect">disconnect</a>（）和<a href="qobject.html#connectNotify" tppabs="http://pyqt4doc.appspot.com/qobject.html#connectNotify">connectNotify</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="dumpObjectInfo"></a>QObject.dumpObjectInfo (<i>self</i>)</h3>
+<p>转储有关信号连接信息等，为这个对象的调试输出。</p>
+<p>此功能对于调试非常有用，但什么都不做，如果该库已经在释放模式编译（即没有调试信息） 。</p>
+<p><b>See also</b> <a href="qobject.html#dumpObjectTree" tppabs="http://pyqt4doc.appspot.com/qobject.html#dumpObjectTree">dumpObjectTree</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="dumpObjectTree"></a>QObject.dumpObjectTree (<i>self</i>)</h3>
+<p>儿童转储到调试输出的一棵树。</p>
+<p>此功能对于调试非常有用，但什么都不做，如果该库已经在释放模式编译（即没有调试信息） 。</p>
+<p><b>See also</b> <a href="qobject.html#dumpObjectInfo" tppabs="http://pyqt4doc.appspot.com/qobject.html#dumpObjectInfo">dumpObjectInfo</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="dynamicPropertyNames"></a>list-of-QByteArray QObject.dynamicPropertyNames (<i>self</i>)</h3>
+<p>返回所有属性，是使用动态添加到该对象的名称<a href="qobject.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qobject.html#setProperty">setProperty</a>（ ） 。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="emit"></a>QObject.emit (<i>self</i>, SIGNAL(), ...)</h3>
+<h3 class="fn">
+<a name="event"></a>bool QObject.event (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>)</h3>
+<p>这个虚函数接收事件的对象，应该返回True，如果事件<i>e</i>确认和处理。</p>
+<p>本次活动（ ）函数可重新实现以自定义对象的行为。</p>
+<p><b>See also</b> <a href="qobject.html#installEventFilter" tppabs="http://pyqt4doc.appspot.com/qobject.html#installEventFilter">installEventFilter</a>（ ）<a href="qobject.html#timerEvent" tppabs="http://pyqt4doc.appspot.com/qobject.html#timerEvent">timerEvent</a>（ ）<a href="qcoreapplication.html#sendEvent" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#sendEvent">QApplication.sendEvent</a>（ ）<a href="qcoreapplication.html#postEvent" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#postEvent">QApplication.postEvent</a>（）和<a href="qwidget.html#event" tppabs="http://pyqt4doc.appspot.com/qwidget.html#event">QWidget.event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="eventFilter"></a>bool QObject.eventFilter (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>)</h3>
+<p>过滤器的事件，如果这个对象已经被安装为一个事件过滤器<i>watched</i>对象。</p>
+<p>在你这个函数的重新实现，如果你要筛选的<i>event</i>出，正在进一步处理即停止，返回True ，否则返回False 。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="keyword">class</span> MainWindow : <span class="keyword">public</span> <span class="type"><a href="qmainwindow.html" tppabs="http://pyqt4doc.appspot.com/qmainwindow.html">QMainWindow</a></span>
+ {
+ <span class="keyword">public</span>:
+     MainWindow();
+
+ <span class="keyword">protected</span>:
+     <span class="type">bool</span> eventFilter(<span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span> <span class="operator">*</span>obj<span class="operator">,</span> <span class="type"><a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a></span> <span class="operator">*</span>ev);
+
+ <span class="keyword">private</span>:
+     <span class="type"><a href="qtextedit.html" tppabs="http://pyqt4doc.appspot.com/qtextedit.html">QTextEdit</a></span> <span class="operator">*</span>textEdit;
+ };
+
+ MainWindow<span class="operator">.</span>MainWindow()
+ {
+     textEdit <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qtextedit.html" tppabs="http://pyqt4doc.appspot.com/qtextedit.html">QTextEdit</a></span>;
+     setCentralWidget(textEdit);
+
+     textEdit<span class="operator">-</span><span class="operator">&gt;</span>installEventFilter(<span class="keyword">this</span>);
+ }
+
+ <span class="type">bool</span> MainWindow<span class="operator">.</span>eventFilter(<span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span> <span class="operator">*</span>obj<span class="operator">,</span> <span class="type"><a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a></span> <span class="operator">*</span>event)
+ {
+     <span class="keyword">if</span> (obj <span class="operator">=</span><span class="operator">=</span> textEdit) {
+         <span class="keyword">if</span> (event<span class="operator">-</span><span class="operator">&gt;</span>type() <span class="operator">=</span><span class="operator">=</span> <span class="type"><a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a></span><span class="operator">.</span>KeyPress) {
+             <span class="type"><a href="qkeyevent.html" tppabs="http://pyqt4doc.appspot.com/qkeyevent.html">QKeyEvent</a></span> <span class="operator">*</span>keyEvent <span class="operator">=</span> <span class="keyword">static_cast</span><span class="operator">&lt;</span><span class="type"><a href="qkeyevent.html" tppabs="http://pyqt4doc.appspot.com/qkeyevent.html">QKeyEvent</a></span><span class="operator">*</span><span class="operator">&gt;</span>(event);
+             <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"Ate key press"</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> keyEvent<span class="operator">-</span><span class="operator">&gt;</span>key();
+             <span class="keyword">return</span> <span class="keyword">true</span>;
+         } <span class="keyword">else</span> {
+             <span class="keyword">return</span> <span class="keyword">false</span>;
+         }
+     } <span class="keyword">else</span> {
+         <span class="comment">// pass the event on to the parent class</span>
+         <span class="keyword">return</span> <span class="type"><a href="qmainwindow.html" tppabs="http://pyqt4doc.appspot.com/qmainwindow.html">QMainWindow</a></span><span class="operator">.</span>eventFilter(obj<span class="operator">,</span> event);
+     }
+ }
+</pre>
+<p>在上面的未处理的事件为例通知传递给基类的eventFilter （ ）函数，因为基类有可能重新实现eventFilter （ ）为自己的内部目的。</p>
+<p><b>Warning:</b>如果您删除的接收器对象在这个函数中，一定要返回True 。否则，将Qt的事件转发到已删除对象，程序可能会崩溃。</p>
+<p><b>See also</b> <a href="qobject.html#installEventFilter" tppabs="http://pyqt4doc.appspot.com/qobject.html#installEventFilter">installEventFilter</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="findChild"></a>QObject QObject.findChild (<i>self</i>, type <i>type</i>, QString <i>name</i> = QString())</h3>
+<p>返回此对象的子对象可以强制转换为类型T和那个叫<i>name</i>或0，如果不存在这样的对象。省略<i>name</i>参数会导致要匹配所有对象名称。搜索被递归执行。</p>
+<p>如果有一个以上的孩子匹配搜索，返回最直接的祖先。如果有多个直系祖先，它是不确定哪一个将被退回。在这种情况下，<a href="qobject.html#findChildren" tppabs="http://pyqt4doc.appspot.com/qobject.html#findChildren">findChildren</a>（ ）应该被使用。</p>
+<p>此示例返回一个孩子<a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a>的<tt>parentWidget</tt> named
+<tt>"button1"</tt>：</p>
+<pre class="cpp">
+ <span class="type"><a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a></span> <span class="operator">*</span>button <span class="operator">=</span> parentWidget<span class="operator">-</span><span class="operator">&gt;</span>findChild<span class="operator">&lt;</span><span class="type"><a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a></span> <span class="operator">*</span><span class="operator">&gt;</span>(<span class="string">"button1"</span>);
+</pre>
+<p>此示例返回一个<a href="qlistwidget.html" tppabs="http://pyqt4doc.appspot.com/qlistwidget.html">QListWidget</a>儿童<tt>parentWidget</tt>：</p>
+<pre class="cpp">
+ <span class="type"><a href="qlistwidget.html" tppabs="http://pyqt4doc.appspot.com/qlistwidget.html">QListWidget</a></span> <span class="operator">*</span>list <span class="operator">=</span> parentWidget<span class="operator">-</span><span class="operator">&gt;</span>findChild<span class="operator">&lt;</span><span class="type"><a href="qlistwidget.html" tppabs="http://pyqt4doc.appspot.com/qlistwidget.html">QListWidget</a></span> <span class="operator">*</span><span class="operator">&gt;</span>();
+</pre>
+<p><b>See also</b> <a href="qobject.html#findChildren" tppabs="http://pyqt4doc.appspot.com/qobject.html#findChildren">findChildren</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="findChild-2"></a>QObject QObject.findChild (<i>self</i>, tuple <i>types</i>, QString <i>name</i> = QString())</h3>
+<h3 class="fn">
+<a name="findChildren"></a>list-of-QObject QObject.findChildren (<i>self</i>, type <i>type</i>, QString <i>name</i> = QString())</h3>
+<p>返回此对象的所有子具有给定<i>name</i>可以强制转换为类型T，或者一个空列表，如果没有这样的对象。省略<i>name</i>参数会导致要匹配所有对象名称。搜索被递归执行。</p>
+<p>下面的示例演示如何找到孩子的名单<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>指定的第<tt>parentWidget</tt>
+named <tt>widgetname</tt>：</p>
+<pre class="cpp">
+ <span class="type"><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qlist.html">QList</a></span><span class="operator">&lt;</span><span class="type"><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a></span> <span class="operator">*</span><span class="operator">&gt;</span> widgets <span class="operator">=</span> parentWidget<span class="operator">.</span>findChildren<span class="operator">&lt;</span><span class="type"><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a></span> <span class="operator">*</span><span class="operator">&gt;</span>(<span class="string">"widgetname"</span>);
+</pre>
+<p>此示例返回所有<tt>QPushButton</tt>s表示是儿童<tt>parentWidget</tt>：</p>
+<pre class="cpp">
+ <span class="type"><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qlist.html">QList</a></span><span class="operator">&lt;</span><span class="type"><a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a></span> <span class="operator">*</span><span class="operator">&gt;</span> allPButtons <span class="operator">=</span> parentWidget<span class="operator">.</span>findChildren<span class="operator">&lt;</span><span class="type"><a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a></span> <span class="operator">*</span><span class="operator">&gt;</span>();
+</pre>
+<p><b>See also</b> <a href="qobject.html#findChild" tppabs="http://pyqt4doc.appspot.com/qobject.html#findChild">findChild</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="findChildren-2"></a>list-of-QObject QObject.findChildren (<i>self</i>, tuple <i>types</i>, QString <i>name</i> = QString())</h3>
+<p>这个函数的重载<a href="qobject.html#findChildren" tppabs="http://pyqt4doc.appspot.com/qobject.html#findChildren">findChildren</a>（ ） 。</p>
+<p>返回此对象的可强制转换为类型T和其名称匹配正则表达式的孩子<i>regExp</i>，或者一个空列表，如果没有这样的对象。搜索被递归执行。</p>
+
+
+<h3 class="fn">
+<a name="findChildren-3"></a>list-of-QObject QObject.findChildren (<i>self</i>, type <i>type</i>, <a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a> <i>regExp</i>)</h3>
+<h3 class="fn">
+<a name="findChildren-4"></a>list-of-QObject QObject.findChildren (<i>self</i>, tuple <i>types</i>, <a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a> <i>regExp</i>)</h3>
+<h3 class="fn">
+<a name="inherits"></a>bool QObject.inherits (<i>self</i>, str <i>classname</i>)</h3>
+<p>返回True如果这个对象是一个类继承的一个实例<i>className</i>或<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>子类继承<i>className</i>否则返回False 。</p>
+<p>一类被认为是继承本身。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qtimer.html" tppabs="http://pyqt4doc.appspot.com/qtimer.html">QTimer</a></span> <span class="operator">*</span>timer <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qtimer.html" tppabs="http://pyqt4doc.appspot.com/qtimer.html">QTimer</a></span>;         <span class="comment">// QTimer inherits QObject</span>
+ timer<span class="operator">-</span><span class="operator">&gt;</span>inherits(<span class="string">"QTimer"</span>);          <span class="comment">// returns true</span>
+ timer<span class="operator">-</span><span class="operator">&gt;</span>inherits(<span class="string">"QObject"</span>);         <span class="comment">// returns true</span>
+ timer<span class="operator">-</span><span class="operator">&gt;</span>inherits(<span class="string">"QAbstractButton"</span>); <span class="comment">// returns false</span>
+
+ <span class="comment">// QVBoxLayout inherits QObject and QLayoutItem</span>
+ <span class="type"><a href="qvboxlayout.html" tppabs="http://pyqt4doc.appspot.com/qvboxlayout.html">QVBoxLayout</a></span> <span class="operator">*</span>layout <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qvboxlayout.html" tppabs="http://pyqt4doc.appspot.com/qvboxlayout.html">QVBoxLayout</a></span>;
+ layout<span class="operator">-</span><span class="operator">&gt;</span>inherits(<span class="string">"QObject"</span>);        <span class="comment">// returns true</span>
+ layout<span class="operator">-</span><span class="operator">&gt;</span>inherits(<span class="string">"QLayoutItem"</span>);    <span class="comment">// returns true (even though QLayoutItem is not a QObject)</span>
+</pre>
+<p>如果您需要确定一个对象是否为铸造它的目的一个特定的类的实例，可以考虑使用qobject_cast \u003cType *\u003e （对象）来代替。</p>
+<p><b>See also</b> <a href="qobject.html#metaObject" tppabs="http://pyqt4doc.appspot.com/qobject.html#metaObject">metaObject</a>（）和<a href="qobject.html#qobject_cast" tppabs="http://pyqt4doc.appspot.com/qobject.html#qobject_cast">qobject_cast</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="installEventFilter"></a>QObject.installEventFilter (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>)</h3>
+<p>安装一个事件过滤器<i>filterObj</i>此对象上。例如：</p>
+<pre class="cpp">
+ monitoredObj<span class="operator">-</span><span class="operator">&gt;</span>installEventFilter(filterObj);
+</pre>
+<p>事件过滤器是接收发送到该对象的所有事件的对象。该过滤器可以阻止事件或将其转发到该对象。事件过滤器<i>filterObj</i>通过接收其事件<a href="qobject.html#eventFilter" tppabs="http://pyqt4doc.appspot.com/qobject.html#eventFilter">eventFilter</a>（）函数。该<a href="qobject.html#eventFilter" tppabs="http://pyqt4doc.appspot.com/qobject.html#eventFilter">eventFilter</a>（ ）函数必须返回True，如果该事件应该被过滤， （即停止） ，否则它必须返回False 。</p>
+<p>如果有多个事件过滤器被安装在一个单独的对象，这是最后安装的过滤器将首先启动。</p>
+<p>这里有一个<tt>KeyPressEater</tt>类，吃它的被监控对象的按键：</p>
+<pre class="cpp">
+ <span class="keyword">class</span> KeyPressEater : <span class="keyword">public</span> <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span>
+ {
+     Q_OBJECT
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+
+ <span class="keyword">protected</span>:
+     <span class="type">bool</span> eventFilter(<span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span> <span class="operator">*</span>obj<span class="operator">,</span> <span class="type"><a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a></span> <span class="operator">*</span>event);
+ };
+
+ <span class="type">bool</span> KeyPressEater<span class="operator">.</span>eventFilter(<span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span> <span class="operator">*</span>obj<span class="operator">,</span> <span class="type"><a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a></span> <span class="operator">*</span>event)
+ {
+     <span class="keyword">if</span> (event<span class="operator">-</span><span class="operator">&gt;</span>type() <span class="operator">=</span><span class="operator">=</span> <span class="type"><a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a></span><span class="operator">.</span>KeyPress) {
+         <span class="type"><a href="qkeyevent.html" tppabs="http://pyqt4doc.appspot.com/qkeyevent.html">QKeyEvent</a></span> <span class="operator">*</span>keyEvent <span class="operator">=</span> <span class="keyword">static_cast</span><span class="operator">&lt;</span><span class="type"><a href="qkeyevent.html" tppabs="http://pyqt4doc.appspot.com/qkeyevent.html">QKeyEvent</a></span> <span class="operator">*</span><span class="operator">&gt;</span>(event);
+         <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>(<span class="string">"Ate key press %d"</span><span class="operator">,</span> keyEvent<span class="operator">-</span><span class="operator">&gt;</span>key());
+         <span class="keyword">return</span> <span class="keyword">true</span>;
+     } <span class="keyword">else</span> {
+         <span class="comment">// standard event processing</span>
+         <span class="keyword">return</span> <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span><span class="operator">.</span>eventFilter(obj<span class="operator">,</span> event);
+     }
+ }
+</pre>
+<p>下面是如何在两个窗口小部件安装它：</p>
+<pre class="cpp">
+ KeyPressEater <span class="operator">*</span>keyPressEater <span class="operator">=</span> <span class="keyword">new</span> KeyPressEater(<span class="keyword">this</span>);
+ <span class="type"><a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a></span> <span class="operator">*</span>pushButton <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a></span>(<span class="keyword">this</span>);
+ <span class="type"><a href="qlistview.html" tppabs="http://pyqt4doc.appspot.com/qlistview.html">QListView</a></span> <span class="operator">*</span>listView <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qlistview.html" tppabs="http://pyqt4doc.appspot.com/qlistview.html">QListView</a></span>(<span class="keyword">this</span>);
+
+ pushButton<span class="operator">-</span><span class="operator">&gt;</span>installEventFilter(keyPressEater);
+ listView<span class="operator">-</span><span class="operator">&gt;</span>installEventFilter(keyPressEater);
+</pre>
+<p>该<a href="qshortcut.html" tppabs="http://pyqt4doc.appspot.com/qshortcut.html">QShortcut</a>类，例如，使用这种技术来截取快捷按键。</p>
+<p><b>Warning:</b>如果您删除的接收器对象中的<a href="qobject.html#eventFilter" tppabs="http://pyqt4doc.appspot.com/qobject.html#eventFilter">eventFilter</a>（ ）函数时，一定要返回True 。如果返回False ， Qt的发送事件到已删除对象，程序会崩溃。</p>
+<p>需要注意的是过滤对象必须在同一个线程中此对象。如果<i>filterObj</i>是在不同的线程，这个函数不执行任何操作。如果任<i>filterObj</i>或对该对象的调用此函数后移动到一个不同的线程，事件过滤器不会被调用，直到两个对象又具有相同的线程关联（这是<i>not</i>删除）。</p>
+<p><b>See also</b> <a href="qobject.html#removeEventFilter" tppabs="http://pyqt4doc.appspot.com/qobject.html#removeEventFilter">removeEventFilter</a>（ ）<a href="qobject.html#eventFilter" tppabs="http://pyqt4doc.appspot.com/qobject.html#eventFilter">eventFilter</a>（）和<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isWidgetType"></a>bool QObject.isWidgetType (<i>self</i>)</h3>
+<p>返回True如果该对象是一个小部件，否则返回False 。</p>
+<p>调用此函数相当于调用继承（ “<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>“ ） ，不同的是它的速度要快得多。</p>
+
+
+<h3 class="fn">
+<a name="killTimer"></a>QObject.killTimer (<i>self</i>, int <i>id</i>)</h3>
+<p>杀死定时器，具有定时器标识符，<i>id</i>。</p>
+<p>定时器标识符由返回<a href="qobject.html#startTimer" tppabs="http://pyqt4doc.appspot.com/qobject.html#startTimer">startTimer</a>（ ）启动一个计时器事件时。</p>
+<p><b>See also</b> <a href="qobject.html#timerEvent" tppabs="http://pyqt4doc.appspot.com/qobject.html#timerEvent">timerEvent</a>（）和<a href="qobject.html#startTimer" tppabs="http://pyqt4doc.appspot.com/qobject.html#startTimer">startTimer</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="metaObject"></a><a href="qmetaobject.html" tppabs="http://pyqt4doc.appspot.com/qmetaobject.html">QMetaObject</a> QObject.metaObject (<i>self</i>)</h3>
+<p>返回一个指向该对象的元对象。</p>
+<p>一个元对象包含有关一个继承信息<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>如类名，父名，属性，信号和槽。一切<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>子类，它包含了<a href="qobject.html#Q_OBJECT" tppabs="http://pyqt4doc.appspot.com/qobject.html#Q_OBJECT">Q_OBJECT</a>宏将有一个元对象。</p>
+<p>元对象信息所必需的信号/插槽连接机制和产权制度。该<a href="qobject.html#inherits" tppabs="http://pyqt4doc.appspot.com/qobject.html#inherits">inherits</a>（ ）函数也使用的元对象。</p>
+<p>如果你没有指向一个实际的对象实例，但仍希望访问类的元对象，你可以使用<a href="qobject.html#staticMetaObject-var" tppabs="http://pyqt4doc.appspot.com/qobject.html#staticMetaObject-var">staticMetaObject</a>。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span> <span class="operator">*</span>obj <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a></span>;
+ obj<span class="operator">-</span><span class="operator">&gt;</span>metaObject()<span class="operator">-</span><span class="operator">&gt;</span><a href="index.htm#className" tppabs="http://pyqt4doc.appspot.com/qobject-qt3.html#className">className</a>();             <span class="comment">// returns "QPushButton"</span>
+
+ <span class="type"><a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a></span><span class="operator">.</span>staticMetaObject<span class="operator">.</span><a href="index.htm#className" tppabs="http://pyqt4doc.appspot.com/qobject-qt3.html#className">className</a>();  <span class="comment">// returns "QPushButton"</span>
+</pre>
+<p><b>See also</b> <a href="qobject.html#staticMetaObject-var" tppabs="http://pyqt4doc.appspot.com/qobject.html#staticMetaObject-var">staticMetaObject</a>。</p>
+
+
+<h3 class="fn">
+<a name="moveToThread"></a>QObject.moveToThread (<i>self</i>, <a href="qthread.html" tppabs="http://pyqt4doc.appspot.com/qthread.html">QThread</a> <i>thread</i>)</h3>
+<p>为改变此对象及其子对象的线程关联。如果它有一个父对象不能被移动。事件处理将继续在<i>targetThread</i>。</p>
+<p>移动对象到主线程，使用<a href="qcoreapplication.html#instance" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#instance">QApplication.instance</a>（ ）来检索一个指向当前的应用程序，然后使用<a href="qobject.html#thread" tppabs="http://pyqt4doc.appspot.com/qobject.html#thread">QApplication.thread</a>（ ）来检索应用程序在其中居住的线程。例如：</p>
+<pre class="cpp">
+ myObject<span class="operator">-</span><span class="operator">&gt;</span>moveToThread(<span class="type"><a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a></span><span class="operator">.</span>instance()<span class="operator">-</span><span class="operator">&gt;</span>thread());
+</pre>
+<p>If <i>targetThread</i>是零，此对象及其子所有的事件处理停止。</p>
+<p>需要注意的是所有活动的定时器对象将被重置。该定时器在当前线程先停止并重新启动（以相同的时间间隔）中的<i>targetThread</i>。因此，不断移动的对象的线程之间可以无限期地推迟计时器事件。</p>
+<p>A <a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.ThreadChange</a>事件被发送到该对象的线程关联被改变之前。您可以处理这个事件来执行任何特殊处理。需要注意的是投递到该对象的任何新的事件将在被处理<i>targetThread</i>。</p>
+<p><b>Warning:</b>这个功能是<i>not</i>线程安全的;当前线程必须是与当前线程关联。换句话说，这个函数可以仅“推”从当前线程到另一个线程一个对象，它不能从任意线程“拉”的对象到当前线程。</p>
+<p><b>See also</b> <a href="qobject.html#thread" tppabs="http://pyqt4doc.appspot.com/qobject.html#thread">thread</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="objectName"></a>QString QObject.objectName (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="parent"></a><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> QObject.parent (<i>self</i>)</h3>
+<p>返回一个指向父对象。</p>
+<p><b>See also</b> <a href="qobject.html#setParent" tppabs="http://pyqt4doc.appspot.com/qobject.html#setParent">setParent</a>（）和<a href="qobject.html#children" tppabs="http://pyqt4doc.appspot.com/qobject.html#children">children</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="property"></a>QVariant QObject.property (<i>self</i>, str <i>name</i>)</h3>
+<p>返回该对象的值<i>name</i>属性。</p>
+<p>如果没有这样的属性存在，则返回的变量是无效的。</p>
+<p>有关所有可用属性的信息是通过提供<a href="qobject.html#metaObject" tppabs="http://pyqt4doc.appspot.com/qobject.html#metaObject">metaObject</a>（）和<a href="qobject.html#dynamicPropertyNames" tppabs="http://pyqt4doc.appspot.com/qobject.html#dynamicPropertyNames">dynamicPropertyNames</a>（ ） 。</p>
+<p><b>See also</b> <a href="qobject.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qobject.html#setProperty">setProperty</a>(), <a href="qvariant.html#isValid" tppabs="http://pyqt4doc.appspot.com/qvariant.html#isValid">QVariant.isValid</a>(), <a href="qobject.html#metaObject" tppabs="http://pyqt4doc.appspot.com/qobject.html#metaObject">metaObject</a>(), and <a href="qobject.html#dynamicPropertyNames" tppabs="http://pyqt4doc.appspot.com/qobject.html#dynamicPropertyNames">dynamicPropertyNames</a>().</p>
+
+
+<h3 class="fn">
+<a name="pyqtConfigure"></a>QObject.pyqtConfigure (<i>self</i>, object)</h3>
+<h3 class="fn">
+<a name="receivers"></a>int QObject.receivers (<i>self</i>, SIGNAL() <i>signal</i>)</h3>
+<p>返回连接到所述接收器的数量<i>signal</i>。</p>
+<p>因为这两个槽和信号可以被用作接收器的信号，并且在同一连接可以被多次提出，接收机的数目是一样的从该信号建立的连接的数量。</p>
+<p>当调用这个函数，你可以使用<tt>SIGNAL()</tt>宏来传递一个特定的信号：</p>
+<pre class="cpp">
+ <span class="keyword">if</span> (receivers(SIGNAL(valueChanged(<span class="type"><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a></span>))) <span class="operator">&gt;</span> <span class="number">0</span>) {
+     <span class="type"><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a></span> data;
+     get_the_value(<span class="operator">&amp;</span>data);       <span class="comment">// expensive operation</span>
+     <span class="keyword">emit</span> valueChanged(data);
+ }
+</pre>
+<p>正如上面的代码片段所示，您可以使用此功能来避免发出一个信号，即没有人听。</p>
+<p><b>Warning:</b>此功能违反了模块化的面向对象的原则。但是，当您需要执行昂贵的初始化只有当事情被连接到一个信号它可能是有用的。</p>
+
+
+<h3 class="fn">
+<a name="removeEventFilter"></a>QObject.removeEventFilter (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>)</h3>
+<p>删除事件过滤器对象<i>obj</i>从该对象。如果这样的事件过滤器尚未安装该请求将被忽略。</p>
+<p>此对象的所有事件过滤器时，这个对象被销毁被自动删除。</p>
+<p>它始终是安全的，从删除事件过滤器，即使在事件过滤器激活（即<a href="qobject.html#eventFilter" tppabs="http://pyqt4doc.appspot.com/qobject.html#eventFilter">eventFilter</a>（）函数） 。</p>
+<p><b>See also</b> <a href="qobject.html#installEventFilter" tppabs="http://pyqt4doc.appspot.com/qobject.html#installEventFilter">installEventFilter</a>（ ）<a href="qobject.html#eventFilter" tppabs="http://pyqt4doc.appspot.com/qobject.html#eventFilter">eventFilter</a>（）和<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sender"></a><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> QObject.sender (<i>self</i>)</h3>
+<p>返回一个指针，指向发送的信号，如果调用了一个信号激活一个插槽中的对象，否则返回0 。仅在从该对象的线程上下文中调用这个函数插槽的执行指针是有效的。</p>
+<p>这个函数返回的指针变为无效，如果发件人被破坏，或者如果插槽是从发件人的信号断开。</p>
+<p><b>Warning:</b>此功能违反了模块化的面向对象的原则。然而，当许多信号被连接到一个单一的时隙获得访问发件人可能是有用的。</p>
+<p><b>Warning:</b>如上所述，该函数的返回值不是有效的，当槽是通过一个称为<a href="qt.html#ConnectionType-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ConnectionType-enum">Qt.DirectConnection</a>从一个线程从该对象的线程不同。不要在这种情形下使用该功能。</p>
+<p><b>See also</b> <a href="qobject.html#senderSignalIndex" tppabs="http://pyqt4doc.appspot.com/qobject.html#senderSignalIndex">senderSignalIndex</a>（）和<a href="qsignalmapper.html" tppabs="http://pyqt4doc.appspot.com/qsignalmapper.html">QSignalMapper</a>。</p>
+
+
+<h3 class="fn">
+<a name="senderSignalIndex"></a>int QObject.senderSignalIndex (<i>self</i>)</h3>
+<p>返回调用当前正在执行的插槽中的信号，这是由返回的类的一个成员的元方法指数<a href="qobject.html#sender" tppabs="http://pyqt4doc.appspot.com/qobject.html#sender">sender</a>（ ） 。如果由一个信号激活的插槽外调用，则返回-1。</p>
+<p>对于使用默认参数信号，该功能将始终返回索引的所有参数，无论哪个与使用<a href="qobject.html#connect" tppabs="http://pyqt4doc.appspot.com/qobject.html#connect">connect</a>（ ） 。例如，信号<tt>destroyed(QObject *obj = 0)</tt>将有两个不同的索引（使用和不使用参数） ，但这个函数将总是用参数返回的索引。使用不同的参数重载信号时，这并不适用。</p>
+<p><b>Warning:</b>此功能违反了模块化的面向对象的原则。然而，当许多信号被连接到一个单一的时隙获得访问信号索引可能是有用的。</p>
+<p><b>Warning:</b>这个函数的返回值不是有效的，当槽通过一个名为<a href="qt.html#ConnectionType-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ConnectionType-enum">Qt.DirectConnection</a>从一个线程从该对象的线程不同。不要在这种情形下使用该功能。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qobject.html#sender" tppabs="http://pyqt4doc.appspot.com/qobject.html#sender">sender</a>（ ）<a href="qmetaobject.html#indexOfSignal" tppabs="http://pyqt4doc.appspot.com/qmetaobject.html#indexOfSignal">QMetaObject.indexOfSignal</a>（）和<a href="qmetaobject.html#method" tppabs="http://pyqt4doc.appspot.com/qmetaobject.html#method">QMetaObject.method</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setObjectName"></a>QObject.setObjectName (<i>self</i>, QString <i>name</i>)</h3>
+<h3 class="fn">
+<a name="setParent"></a>QObject.setParent (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>)</h3>
+<p>该<i>QObject</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>使对象的子<i>parent</i>。</p>
+<p><b>See also</b> <a href="qobject.html#parent" tppabs="http://pyqt4doc.appspot.com/qobject.html#parent">parent</a>（）和<a href="qwidget.html#setParent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#setParent">QWidget.setParent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setProperty"></a>bool QObject.setProperty (<i>self</i>, str <i>name</i>, QVariant <i>value</i>)</h3>
+<p>设置对象的值<i>name</i>属性为<i>value</i>。</p>
+<p>如果该属性在类使用Q_PROPERTY定义，那么真正的成功，否则为False返回。如果属性不使用Q_PROPERTY定义，因此在元对象不在列表中，它被添加为一个动态属性并返回False 。</p>
+<p>有关所有可用属性的信息是通过提供<a href="qobject.html#metaObject" tppabs="http://pyqt4doc.appspot.com/qobject.html#metaObject">metaObject</a>（）和<a href="qobject.html#dynamicPropertyNames" tppabs="http://pyqt4doc.appspot.com/qobject.html#dynamicPropertyNames">dynamicPropertyNames</a>（ ） 。</p>
+<p>动态属性可以再次使用查询<a href="qobject.html#property" tppabs="http://pyqt4doc.appspot.com/qobject.html#property">property</a>（） ，并且可以通过将属性值设置为无效去除<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>。更改动态属性的值将导致<a href="qdynamicpropertychangeevent.html" tppabs="http://pyqt4doc.appspot.com/qdynamicpropertychangeevent.html">QDynamicPropertyChangeEvent</a>要发送到的对象。</p>
+<p><b>Note:</b>以“ _q_ ”动态属性是供内部使用保留的。</p>
+<p><b>See also</b> <a href="qobject.html#property" tppabs="http://pyqt4doc.appspot.com/qobject.html#property">property</a>（ ）<a href="qobject.html#metaObject" tppabs="http://pyqt4doc.appspot.com/qobject.html#metaObject">metaObject</a>（）和<a href="qobject.html#dynamicPropertyNames" tppabs="http://pyqt4doc.appspot.com/qobject.html#dynamicPropertyNames">dynamicPropertyNames</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="signalsBlocked"></a>bool QObject.signalsBlocked (<i>self</i>)</h3>
+<p>如果返回的信号被阻断True，否则返回False 。</p>
+<p>信号不默认情况下阻止。</p>
+<p><b>See also</b> <a href="qobject.html#blockSignals" tppabs="http://pyqt4doc.appspot.com/qobject.html#blockSignals">blockSignals</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="startTimer"></a>int QObject.startTimer (<i>self</i>, int <i>interval</i>)</h3>
+<p>启动一个定时器，并返回一个定时器标识符，或返回零，如果它不能启动一个定时器。</p>
+<p>定时器事件会发生一次<i>interval</i>直到毫秒<a href="qobject.html#killTimer" tppabs="http://pyqt4doc.appspot.com/qobject.html#killTimer">killTimer</a>（）被调用。如果<i>interval</i>是0，那么该定时事件，每次有没有更多的窗口系统事件来处理发生一次。</p>
+<p>虚拟<a href="qobject.html#timerEvent" tppabs="http://pyqt4doc.appspot.com/qobject.html#timerEvent">timerEvent</a>（ ）函数被调用，<a href="qtimerevent.html" tppabs="http://pyqt4doc.appspot.com/qtimerevent.html">QTimerEvent</a>当计时器事件发生的事件参数类。重新实现这个函数来获取计时器事件。</p>
+<p>如果多个定时器在运行，<a href="qtimerevent.html#timerId" tppabs="http://pyqt4doc.appspot.com/qtimerevent.html#timerId">QTimerEvent.timerId</a>（ ）可以用来找出哪些定时器被激活。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="keyword">class</span> MyObject : <span class="keyword">public</span> <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span>
+ {
+     Q_OBJECT
+
+ <span class="keyword">public</span>:
+     MyObject(<span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span> <span class="operator">*</span>parent <span class="operator">=</span> <span class="number">0</span>);
+
+ <span class="keyword">protected</span>:
+     <span class="type">void</span> timerEvent(<span class="type"><a href="qtimerevent.html" tppabs="http://pyqt4doc.appspot.com/qtimerevent.html">QTimerEvent</a></span> <span class="operator">*</span>event);
+ };
+
+ MyObject<span class="operator">.</span>MyObject(<span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span> <span class="operator">*</span>parent)
+     : <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span>(parent)
+ {
+     startTimer(<span class="number">50</span>);     <span class="comment">// 50-millisecond timer</span>
+     startTimer(<span class="number">1000</span>);   <span class="comment">// 1-second timer</span>
+     startTimer(<span class="number">60000</span>);  <span class="comment">// 1-minute timer</span>
+ }
+
+ <span class="type">void</span> MyObject<span class="operator">.</span><a href="qobject.html#timerEvent" tppabs="http://pyqt4doc.appspot.com/qobject.html#timerEvent">timerEvent</a>(<span class="type"><a href="qtimerevent.html" tppabs="http://pyqt4doc.appspot.com/qtimerevent.html">QTimerEvent</a></span> <span class="operator">*</span>event)
+ {
+     <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"Timer ID:"</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> event<span class="operator">-</span><span class="operator">&gt;</span>timerId();
+ }
+</pre>
+<p>需要注意的是<a href="qtimer.html" tppabs="http://pyqt4doc.appspot.com/qtimer.html">QTimer</a>的精度依赖于底层的操作系统和硬件。大多数平台支持20毫秒的精度，有的提供更多。如果Qt是无法提供的定时器事件的请求数量，它会悄悄地丢弃一些。</p>
+<p>该<a href="qtimer.html" tppabs="http://pyqt4doc.appspot.com/qtimer.html">QTimer</a>类提供了一个高层次的编程接口与单次定时器和定时信号，而不是事件。还有一个<a href="qbasictimer.html" tppabs="http://pyqt4doc.appspot.com/qbasictimer.html">QBasicTimer</a>类是比更轻巧<a href="qtimer.html" tppabs="http://pyqt4doc.appspot.com/qtimer.html">QTimer</a>而不是直接使用定时器的ID少笨拙。</p>
+<p><b>See also</b> <a href="qobject.html#timerEvent" tppabs="http://pyqt4doc.appspot.com/qobject.html#timerEvent">timerEvent</a>（ ）<a href="qobject.html#killTimer" tppabs="http://pyqt4doc.appspot.com/qobject.html#killTimer">killTimer</a>（）和<a href="qtimer.html#singleShot" tppabs="http://pyqt4doc.appspot.com/qtimer.html#singleShot">QTimer.singleShot</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="thread"></a><a href="qthread.html" tppabs="http://pyqt4doc.appspot.com/qthread.html">QThread</a> QObject.thread (<i>self</i>)</h3>
+<p>返回该对象所居住的线程。</p>
+<p><b>See also</b> <a href="qobject.html#moveToThread" tppabs="http://pyqt4doc.appspot.com/qobject.html#moveToThread">moveToThread</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="timerEvent"></a>QObject.timerEvent (<i>self</i>, <a href="qtimerevent.html" tppabs="http://pyqt4doc.appspot.com/qtimerevent.html">QTimerEvent</a>)</h3>
+<p>此事件处理程序可以重新实现在子类来接收定时器事件的对象。</p>
+<p><a href="qtimer.html" tppabs="http://pyqt4doc.appspot.com/qtimer.html">QTimer</a>提供了一个更高层次的接口，定时器功能，也关于定时器的更多的一般信息。计时器事件被传递的<i>event</i>参数。</p>
+<p><b>See also</b> <a href="qobject.html#startTimer" tppabs="http://pyqt4doc.appspot.com/qobject.html#startTimer">startTimer</a>（ ）<a href="qobject.html#killTimer" tppabs="http://pyqt4doc.appspot.com/qobject.html#killTimer">killTimer</a>（）和<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="tr"></a>QString QObject.tr (<i>self</i>, str <i>sourceText</i>, str <i>disambiguation</i> = None, int <i>n</i> = -1)</h3>
+<p>返回的翻译版本<i>sourceText</i>任选地基于一个<i>disambiguation</i>字符串和值<i>n</i>包含复数字符串，否则返回<i>sourceText</i>本身如果没有合适的翻译的字符串是可用的。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type">void</span> MainWindow<span class="operator">.</span>createMenus()
+ {
+     fileMenu <span class="operator">=</span> menuBar()<span class="operator">-</span><span class="operator">&gt;</span>addMenu(tr(<span class="string">"&amp;File"</span>));
+     ...
+</pre>
+<p>如果同一<i>sourceText</i>同一范围内采用的是不同的角色，一个额外的标识字符串可以被传递<i>disambiguation</i>（默认为0 ） 。在Qt 4.4和更早的版本，这是通过注释来翻译的首选方式。</p>
+<p>例如：</p>
+<pre class="cpp">
+ MyWindow<span class="operator">.</span>MyWindow()
+ {
+     <span class="type"><a href="qlabel.html" tppabs="http://pyqt4doc.appspot.com/qlabel.html">QLabel</a></span> <span class="operator">*</span>senderLabel <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qlabel.html" tppabs="http://pyqt4doc.appspot.com/qlabel.html">QLabel</a></span>(tr(<span class="string">"Name:"</span>));
+     <span class="type"><a href="qlabel.html" tppabs="http://pyqt4doc.appspot.com/qlabel.html">QLabel</a></span> <span class="operator">*</span>recipientLabel <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qlabel.html" tppabs="http://pyqt4doc.appspot.com/qlabel.html">QLabel</a></span>(tr(<span class="string">"Name:"</span><span class="operator">,</span> <span class="string">"recipient"</span>));
+     ...
+</pre>
+<p>See <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/i18n-source-translation.html">Writing Source Code
+for Translation</a>对于Qt的翻译机制在一般情况下，并详细描述了<a href="index.htm#disambiguation" tppabs="http://pyqt4doc.appspot.com/i18n-source-translation.html#disambiguation">Disambiguation</a>节，以消除歧义的信息。</p>
+<p><b>Warning:</b>这种方法是可重入只有在安装了所有的翻译<i>before</i>调用此方法。但不支持进行翻译安装或删除翻译。这样做可能会造成崩溃或者其他不良行为。</p>
+<p><b>See also</b> <a href="qobject.html#trUtf8" tppabs="http://pyqt4doc.appspot.com/qobject.html#trUtf8">trUtf8</a>（ ）<a href="qcoreapplication.html#translate" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#translate">QApplication.translate</a>（ ）<a href="qtextcodec.html#setCodecForTr" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#setCodecForTr">QTextCodec.setCodecForTr</a>（）和<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/internationalization.html">Internationalization with
+Qt</a>。</p>
+
+
+<h3 class="fn">
+<a name="trUtf8"></a>QString QObject.trUtf8 (<i>self</i>, str <i>sourceText</i>, str <i>disambiguation</i> = None, int <i>n</i> = -1)</h3>
+<p>返回的翻译版本<i>sourceText</i>，或QString.fromUtf8 （<i>sourceText</i>） ，如果没有适当的版本。它在其它方面与TR （<i>sourceText</i>，<i>disambiguation</i>，<i>n</i>） 。</p>
+<p>请注意，使用的翻译功能utf8的变种是不是如果需要的话<tt>CODECFORTR</tt>已被设置为UTF -8在qmake的项目文件和QTextCodec.setCodecForTr （ “UTF - 8” ）被使用。</p>
+<p><b>Warning:</b>这种方法是可重入只有在安装了所有的翻译<i>before</i>调用此方法。但不支持进行翻译安装或删除翻译。这样做可能会造成崩溃或者其他不良行为。</p>
+<p><b>Warning:</b>对于便携性的原因，我们建议您使用转义序列在字符串中指定非ASCII字符trUtf8 （ ） 。例如：</p>
+<pre class="cpp">
+ label<span class="operator">-</span><span class="operator">&gt;</span>setText(<a href="qobject.html#tr" tppabs="http://pyqt4doc.appspot.com/qobject.html#tr">tr</a>(<span class="string">"F\374r \310lise"</span>));
+</pre>
+<p><b>See also</b> <a href="qobject.html#tr" tppabs="http://pyqt4doc.appspot.com/qobject.html#tr">tr</a>（ ）<a href="qcoreapplication.html#translate" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#translate">QApplication.translate</a>（）和<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/internationalization.html">Internationalization with
+Qt</a>。</p>
+<h3 class="fn">
+<a name="__getattr__"></a>object QObject.__getattr__ (<i>self</i>, str <i>name</i>)</h3>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="destroyed"></a>void destroyed (QObject * = 0)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号的对象之前立即发出<i>obj</i>被破坏，并且不能被阻塞。</p>
+<p>所有对象的孩子被立即销毁后，这个信号被发射。</p>
+<p><b>See also</b> <a href="qobject.html#deleteLater" tppabs="http://pyqt4doc.appspot.com/qobject.html#deleteLater">deleteLater</a>（）和<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qpointer.html">QPointer</a>。</p>
+
+
+<hr>
+<h2>Member Documentation</h2>
+<h3 class="fn">
+<a name="staticMetaObject-var"></a><a href="qmetaobject.html" tppabs="http://pyqt4doc.appspot.com/qmetaobject.html">QMetaObject</a> staticMetaObject</h3>
+<p>此构件应被视为常数。</p>
+<p>这个变量存储的元对象的类。</p>
+<p>一个元对象包含有关一个继承信息<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>如类名，父名，属性，信号和槽。包含每个类的<a href="qobject.html#Q_OBJECT" tppabs="http://pyqt4doc.appspot.com/qobject.html#Q_OBJECT">Q_OBJECT</a>宏也将有一个元对象。</p>
+<p>元对象信息所必需的信号/插槽连接机制和产权制度。该<a href="qobject.html#inherits" tppabs="http://pyqt4doc.appspot.com/qobject.html#inherits">inherits</a>（ ）函数也使用的元对象。</p>
+<p>如果你有一个指向对象的指针，你可以使用<a href="qobject.html#metaObject" tppabs="http://pyqt4doc.appspot.com/qobject.html#metaObject">metaObject</a>（）检索与该对象关联的元对象。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a></span><span class="operator">.</span>staticMetaObject<span class="operator">.</span><a href="index.htm#className" tppabs="http://pyqt4doc.appspot.com/qobject-qt3.html#className">className</a>();  <span class="comment">// returns "QPushButton"</span>
+
+ <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span> <span class="operator">*</span>obj <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a></span>;
+ obj<span class="operator">-</span><span class="operator">&gt;</span><a href="qobject.html#metaObject" tppabs="http://pyqt4doc.appspot.com/qobject.html#metaObject">metaObject</a>()<span class="operator">-</span><span class="operator">&gt;</span><a href="index.htm#className" tppabs="http://pyqt4doc.appspot.com/qobject-qt3.html#className">className</a>();             <span class="comment">// returns "QPushButton"</span>
+</pre>
+<p><b>See also</b> <a href="qobject.html#metaObject" tppabs="http://pyqt4doc.appspot.com/qobject.html#metaObject">metaObject</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

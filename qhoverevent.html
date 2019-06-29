@@ -1,0 +1,99 @@
+﻿<html>
+<head>
+<title>QHoverEvent Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QHoverEvent Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QHoverEvent类包含描述一个鼠标事件参数。<a href="#details">More...</a></p>
+
+<p>继承<a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qhoverevent.html#QHoverEvent" tppabs="http://pyqt4doc.appspot.com/qhoverevent.html#QHoverEvent">__init__</a></b> (<i>self</i>, QEvent.Type <i>type</i>, QPoint <i>pos</i>, QPoint <i>oldPos</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhoverevent.html#QHoverEvent-2" tppabs="http://pyqt4doc.appspot.com/qhoverevent.html#QHoverEvent-2">__init__</a></b> (<i>self</i>, QHoverEvent)</li>
+<li>
+<div class="fn"></div>QPoint <b><a href="qhoverevent.html#oldPos" tppabs="http://pyqt4doc.appspot.com/qhoverevent.html#oldPos">oldPos</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QPoint <b><a href="qhoverevent.html#pos" tppabs="http://pyqt4doc.appspot.com/qhoverevent.html#pos">pos</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QHoverEvent类包含描述一个鼠标事件参数。</p>
+<p>当鼠标光标移入，出，或窗口小部件中的鼠标事件发生时，如果部件有<a href="qt.html#WidgetAttribute-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#WidgetAttribute-enum">Qt.WA_Hover</a>属性。</p>
+<p>该功能<a href="qhoverevent.html#pos" tppabs="http://pyqt4doc.appspot.com/qhoverevent.html#pos">pos</a>（ ）给出当前光标位置，而<a href="qhoverevent.html#oldPos" tppabs="http://pyqt4doc.appspot.com/qhoverevent.html#oldPos">oldPos</a>（ ）给出的旧鼠标的位置。</p>
+<p>有事件之间有一些相似之处<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.HoverEnter</a>和<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.HoverLeave</a>和事件<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.Enter</a>和<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.Leave</a>。然而，他们都略有不同，因为我们做一个更新（ ）中的事件处理程序<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">HoverEnter</a>和<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">HoverLeave</a>。</p>
+<p><a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.HoverMove</a>也是从稍微不同的<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.MouseMove</a>。让我们考虑包含这又包含子C（所有带鼠标跟踪启用）儿童B中的顶层窗口答：</p>
+<p class="centerAlign"><img alt="" src="images/hoverevents.png"></p>
+<p>现在，如果你从顶部到A的中间底部移动光标，你将得到下面的<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.MouseMove</a>事件：</p>
+<ol class="1">
+<li>A.MouseMove</li>
+<li>B.MouseMove</li>
+<li>C.MouseMove</li>
+</ol>
+<p>你会得到相同的事件<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.HoverMove</a>，除了事件始终传播到顶层，无论该事件是否被接受与否。它只会停止与传播<a href="qt.html#WidgetAttribute-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#WidgetAttribute-enum">Qt.WA_NoMousePropagation</a>属性。</p>
+<p>在这种情况下，事件将发生在下列方式：</p>
+<ol class="1">
+<li>A.HoverMove</li>
+<li>A.HoverMove ， B.HoverMove</li>
+<li>A.HoverMove ， B.HoverMove ， C.HoverMove</li>
+</ol>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QHoverEvent"></a>QHoverEvent.__init__ (<i>self</i>, <a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.Type</a> <i>type</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>pos</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>oldPos</i>)</h3>
+<p>构造一个悬停事件对象。</p>
+<p>该<i>type</i>参数必须是<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.HoverEnter</a>，<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.HoverLeave</a>或<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.HoverMove</a>。</p>
+<p>该<i>pos</i>是当前鼠标光标的位置相对于接收部件，而<i>oldPos</i>是先前的鼠标光标的位置相对于接收部件。</p>
+
+
+<h3 class="fn">
+<a name="QHoverEvent-2"></a>QHoverEvent.__init__ (<i>self</i>, <a href="qhoverevent.html" tppabs="http://pyqt4doc.appspot.com/qhoverevent.html">QHoverEvent</a>)</h3>
+<h3 class="fn">
+<a name="oldPos"></a><a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> QHoverEvent.oldPos (<i>self</i>)</h3>
+<p>返回鼠标光标的前面的位置，相对于接收到的事件的插件。如果没有之前的位置， oldPos （ ）将返回相同的位置<a href="qhoverevent.html#pos" tppabs="http://pyqt4doc.appspot.com/qhoverevent.html#pos">pos</a>（ ） 。</p>
+<p>On <a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.HoverEnter</a>活动，这一立场永远是<a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a>（-1 ，-1）。</p>
+<p><b>See also</b> <a href="qhoverevent.html#pos" tppabs="http://pyqt4doc.appspot.com/qhoverevent.html#pos">pos</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="pos"></a><a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> QHoverEvent.pos (<i>self</i>)</h3>
+<p>返回鼠标光标的位置，相对于接收到的事件的插件。</p>
+<p>On <a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.HoverLeave</a>活动，这一立场永远是<a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a>（-1 ，-1）。</p>
+<p><b>See also</b> <a href="qhoverevent.html#oldPos" tppabs="http://pyqt4doc.appspot.com/qhoverevent.html#oldPos">oldPos</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

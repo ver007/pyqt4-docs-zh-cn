@@ -1,0 +1,200 @@
+﻿<html>
+<head>
+<title>QAbstractVideoBuffer Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QAbstractVideoBuffer Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtmultimedia.html">QtMultimedia</a> module]</sup></sup>
+</h1>
+<p>该QAbstractVideoBuffer类是视频数据的抽象。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qabstractvideobuffer.html#HandleType-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#HandleType-enum">HandleType</a></b> { NoHandle, GLTextureHandle, XvShmImageHandle, CoreImageHandle, QPixmapHandle, UserHandle }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qabstractvideobuffer.html#MapMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#MapMode-enum">MapMode</a></b> { NotMapped, ReadOnly, WriteOnly, ReadWrite }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractvideobuffer.html#QAbstractVideoBuffer" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#QAbstractVideoBuffer">__init__</a></b> (<i>self</i>, HandleType <i>type</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qabstractvideobuffer.html#handle" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#handle">handle</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>HandleType <b><a href="qabstractvideobuffer.html#handleType" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#handleType">handleType</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>(sip.voidptr, int <i>numBytes</i>, int <i>bytesPerLine</i>) <b><a href="qabstractvideobuffer.html#map" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#map">map</a></b> (<i>self</i>, MapMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>MapMode <b><a href="qabstractvideobuffer.html#mapMode" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#mapMode">mapMode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractvideobuffer.html#unmap" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#unmap">unmap</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QAbstractVideoBuffer类是视频数据的抽象。</p>
+<p>该<a href="qvideoframe.html" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html">QVideoFrame</a>类利用一个QAbstractVideoBuffer的内部参考视频数据的缓冲区。创建QAbstractVideoBuffer的子类可以让你从预分配或静态缓冲构造的视频帧。</p>
+<p>一个缓冲区的内容可以通过使用缓冲映射到存储器进行访问的<a href="qabstractvideobuffer.html#map" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#map">map</a>（）函数返回一个指针，指向包含在视频缓冲器中的内容的记忆。通过返回的内存<a href="qabstractvideobuffer.html#map" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#map">map</a>（ ）被释放通过调用<a href="qabstractvideobuffer.html#unmap" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#unmap">unmap</a>（）函数。</p>
+<p>该<a href="qabstractvideobuffer.html#handle" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#handle">handle</a>的缓冲液（）也可以被用来操纵它的使用类型特定的API含量。的缓冲器的句柄类型是由给定的<a href="qabstractvideobuffer.html#handleType" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#handleType">handleType</a>（）函数。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="HandleType-enum"></a>QAbstractVideoBuffer.HandleType</h3>
+<p>确定了视频缓冲器处理的类型。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractVideoBuffer.NoHandle</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该缓冲液具有无手柄，它的数据只能通过映射缓冲存取。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractVideoBuffer.GLTextureHandle</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">缓冲区的句柄是一个OpenGL纹理的ID 。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractVideoBuffer.XvShmImageHandle</tt>
+</td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">手柄中包含指向共享内存的XVideo形象。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractVideoBuffer.CoreImageHandle</tt>
+</td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">手柄包含指针到Mac OS X CIImage 。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractVideoBuffer.QPixmapHandle</tt>
+</td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">缓冲区的把手是<a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractVideoBuffer.UserHandle</tt></td>
+<td class="topAlign"><tt>1000</tt></td>
+<td class="topAlign">用户定义句柄类型起始值。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qabstractvideobuffer.html#handleType" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#handleType">handleType</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="MapMode-enum"></a>QAbstractVideoBuffer.MapMode</h3>
+<p>列举了视频缓冲器的数据是如何映射到内存。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractVideoBuffer.NotMapped</tt></td>
+<td class="topAlign"><tt>0x00</tt></td>
+<td class="topAlign">视频缓冲区没有映射到内存。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractVideoBuffer.ReadOnly</tt></td>
+<td class="topAlign"><tt>0x01</tt></td>
+<td class="topAlign">映射的内存中填充了从视频缓冲区中的数据映射时，但映射的内存的内容可能会被丢弃时映射。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractVideoBuffer.WriteOnly</tt></td>
+<td class="topAlign"><tt>0x02</tt></td>
+<td class="topAlign">所映射的存储器是未初始化的映射时，内容将被用于映射时填充视频缓冲器。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractVideoBuffer.ReadWrite</tt></td>
+<td class="topAlign"><tt>ReadOnly | WriteOnly</tt></td>
+<td class="topAlign">所映射的存储器中填充了从视频缓冲器中的数据，和视频缓冲器被重新填充与映射的存储器的内容。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qabstractvideobuffer.html#mapMode" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#mapMode">mapMode</a>（）和<a href="qabstractvideobuffer.html#map" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#map">map</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QAbstractVideoBuffer"></a>QAbstractVideoBuffer.__init__ (<i>self</i>, <a href="qabstractvideobuffer.html#HandleType-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#HandleType-enum">HandleType</a> <i>type</i>)</h3>
+<p>构造给定一个抽象的视频缓冲器<i>type</i>。</p>
+
+
+<h3 class="fn">
+<a name="handle"></a>QVariant QAbstractVideoBuffer.handle (<i>self</i>)</h3>
+<p>返回一个类型的具体处理到数据缓冲区。</p>
+<p>手柄的类型由下式给出<a href="qabstractvideobuffer.html#handleType" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#handleType">handleType</a>（）函数。</p>
+<p><b>See also</b> <a href="qabstractvideobuffer.html#handleType" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#handleType">handleType</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="handleType"></a><a href="qabstractvideobuffer.html#HandleType-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#HandleType-enum">HandleType</a> QAbstractVideoBuffer.handleType (<i>self</i>)</h3>
+<p>传回的视频缓冲区的句柄类型。</p>
+<p><b>See also</b> <a href="qabstractvideobuffer.html#handle" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#handle">handle</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="map"></a>(sip.voidptr, int <i>numBytes</i>, int <i>bytesPerLine</i>) QAbstractVideoBuffer.map (<i>self</i>, <a href="qabstractvideobuffer.html#MapMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#MapMode-enum">MapMode</a> <i>mode</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>映射一个视频缓冲器的内容传送到存储器中。</p>
+<p>地图<i>mode</i>指示是否映射存储器中的内容应被读出和/或写入到缓冲区。如果映射模式包括<a href="qabstractvideobuffer.html#MapMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#MapMode-enum">QAbstractVideoBuffer.ReadOnly</a>标志映射的内存将被填入视频缓冲区的内容映射时。如果映射模式包括<a href="qabstractvideobuffer.html#MapMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#MapMode-enum">QAbstractVideoBuffer.WriteOnly</a>映射的内存的标志内容将被保存在缓冲区中，当未映射。</p>
+<p>当访问数据不再需要，一定要调用<a href="qabstractvideobuffer.html#unmap" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#unmap">unmap</a>（ ）函数释放映射内存。</p>
+<p>返回一个指针映射内存区域，或一个空指针，如果映射失败。在映射内存区域的字节大小的返回<i>numBytes</i>和线步幅在<i>bytesPerLine</i>。</p>
+<p>当访问数据不再需要，一定要<a href="qabstractvideobuffer.html#unmap" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#unmap">unmap</a>（）的缓冲液中。</p>
+<p><b>Note:</b>记录到被映射为只读存储器是不确定的，并且可能导致改变的共享数据。</p>
+<p><b>See also</b> <a href="qabstractvideobuffer.html#unmap" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#unmap">unmap</a>（）和<a href="qabstractvideobuffer.html#mapMode" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#mapMode">mapMode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mapMode"></a><a href="qabstractvideobuffer.html#MapMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#MapMode-enum">MapMode</a> QAbstractVideoBuffer.mapMode (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回视频缓冲器被映射英寸的模式</p>
+<p><b>See also</b> <a href="qabstractvideobuffer.html#map" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#map">map</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="unmap"></a>QAbstractVideoBuffer.unmap (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>发布映射的内存<a href="qabstractvideobuffer.html#map" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#map">map</a>（ ）函数</p>
+<p>如果<a href="qabstractvideobuffer.html#MapMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#MapMode-enum">MapMode</a>包括<a href="qabstractvideobuffer.html#MapMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#MapMode-enum">QAbstractVideoBuffer.WriteOnly</a>标志，这将持续映射内存的当前内容到视频帧。</p>
+<p><b>See also</b> <a href="qabstractvideobuffer.html#map" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#map">map</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

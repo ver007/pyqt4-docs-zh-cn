@@ -1,0 +1,973 @@
+﻿<html>
+<head>
+<title>QPainterPath Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QPainterPath Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QPainterPath类提供一个容器，用于绘制操作，从而能够构造和重用的图形形状。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qpainterpath-element.html">Element</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qpainterpath.html#ElementType-enum" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#ElementType-enum">ElementType</a></b> { MoveToElement, LineToElement, CurveToElement, CurveToDataElement }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#QPainterPath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#QPainterPath">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#QPainterPath-2" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#QPainterPath-2">__init__</a></b> (<i>self</i>, QPointF <i>startPoint</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#QPainterPath-3" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#QPainterPath-3">__init__</a></b> (<i>self</i>, QPainterPath <i>other</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#addEllipse" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addEllipse">addEllipse</a></b> (<i>self</i>, QRectF <i>rect</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#addEllipse-2" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addEllipse-2">addEllipse</a></b> (<i>self</i>, float <i>x</i>, float <i>y</i>, float <i>w</i>, float <i>h</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#addEllipse-3" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addEllipse-3">addEllipse</a></b> (<i>self</i>, QPointF <i>center</i>, float <i>rx</i>, float <i>ry</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#addPath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addPath">addPath</a></b> (<i>self</i>, QPainterPath <i>path</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#addPolygon" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addPolygon">addPolygon</a></b> (<i>self</i>, QPolygonF <i>polygon</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#addRect" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addRect">addRect</a></b> (<i>self</i>, QRectF <i>rect</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#addRect-2" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addRect-2">addRect</a></b> (<i>self</i>, float <i>x</i>, float <i>y</i>, float <i>w</i>, float <i>h</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#addRegion" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addRegion">addRegion</a></b> (<i>self</i>, QRegion <i>region</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#addRoundedRect" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addRoundedRect">addRoundedRect</a></b> (<i>self</i>, QRectF <i>rect</i>, float <i>xRadius</i>, float <i>yRadius</i>, Qt.SizeMode <i>mode</i> = Qt.AbsoluteSize)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#addRoundedRect-2" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addRoundedRect-2">addRoundedRect</a></b> (<i>self</i>, float <i>x</i>, float <i>y</i>, float <i>w</i>, float <i>h</i>, float <i>xRadius</i>, float <i>yRadius</i>, Qt.SizeMode <i>mode</i> = Qt.AbsoluteSize)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#addRoundRect" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addRoundRect">addRoundRect</a></b> (<i>self</i>, QRectF <i>rect</i>, int <i>xRnd</i>, int <i>yRnd</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#addRoundRect-2" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addRoundRect-2">addRoundRect</a></b> (<i>self</i>, float <i>x</i>, float <i>y</i>, float <i>w</i>, float <i>h</i>, int <i>xRnd</i>, int <i>yRnd</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#addRoundRect-3" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addRoundRect-3">addRoundRect</a></b> (<i>self</i>, QRectF <i>rect</i>, int <i>roundness</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#addRoundRect-4" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addRoundRect-4">addRoundRect</a></b> (<i>self</i>, float <i>x</i>, float <i>y</i>, float <i>w</i>, float <i>h</i>, int <i>roundness</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#addText" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addText">addText</a></b> (<i>self</i>, QPointF <i>point</i>, QFont <i>f</i>, QString <i>text</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#addText-2" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addText-2">addText</a></b> (<i>self</i>, float <i>x</i>, float <i>y</i>, QFont <i>f</i>, QString <i>text</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qpainterpath.html#angleAtPercent" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#angleAtPercent">angleAtPercent</a></b> (<i>self</i>, float <i>t</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#arcMoveTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#arcMoveTo">arcMoveTo</a></b> (<i>self</i>, QRectF <i>rect</i>, float <i>angle</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#arcMoveTo-2" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#arcMoveTo-2">arcMoveTo</a></b> (<i>self</i>, float <i>x</i>, float <i>y</i>, float <i>w</i>, float <i>h</i>, float <i>angle</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#arcTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#arcTo">arcTo</a></b> (<i>self</i>, QRectF <i>rect</i>, float <i>startAngle</i>, float <i>arcLength</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#arcTo-2" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#arcTo-2">arcTo</a></b> (<i>self</i>, float <i>x</i>, float <i>y</i>, float <i>w</i>, float <i>h</i>, float <i>startAngle</i>, float <i>arcLenght</i>)</li>
+<li>
+<div class="fn"></div>QRectF <b><a href="qpainterpath.html#boundingRect" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#boundingRect">boundingRect</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#closeSubpath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#closeSubpath">closeSubpath</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#connectPath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#connectPath">connectPath</a></b> (<i>self</i>, QPainterPath <i>path</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qpainterpath.html#contains" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#contains">contains</a></b> (<i>self</i>, QPointF <i>pt</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qpainterpath.html#contains-2" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#contains-2">contains</a></b> (<i>self</i>, QRectF <i>rect</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qpainterpath.html#contains-3" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#contains-3">contains</a></b> (<i>self</i>, QPainterPath <i>p</i>)</li>
+<li>
+<div class="fn"></div>QRectF <b><a href="qpainterpath.html#controlPointRect" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#controlPointRect">controlPointRect</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#cubicTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#cubicTo">cubicTo</a></b> (<i>self</i>, QPointF <i>ctrlPt1</i>, QPointF <i>ctrlPt2</i>, QPointF <i>endPt</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#cubicTo-2" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#cubicTo-2">cubicTo</a></b> (<i>self</i>, float <i>ctrlPt1x</i>, float <i>ctrlPt1y</i>, float <i>ctrlPt2x</i>, float <i>ctrlPt2y</i>, float <i>endPtx</i>, float <i>endPty</i>)</li>
+<li>
+<div class="fn"></div>QPointF <b><a href="qpainterpath.html#currentPosition" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#currentPosition">currentPosition</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Element <b><a href="qpainterpath.html#elementAt" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#elementAt">elementAt</a></b> (<i>self</i>, int <i>i</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qpainterpath.html#elementCount" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#elementCount">elementCount</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Qt.FillRule <b><a href="qpainterpath.html#fillRule" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#fillRule">fillRule</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QPainterPath <b><a href="qpainterpath.html#intersected" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#intersected">intersected</a></b> (<i>self</i>, QPainterPath <i>r</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qpainterpath.html#intersects" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#intersects">intersects</a></b> (<i>self</i>, QRectF <i>rect</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qpainterpath.html#intersects-2" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#intersects-2">intersects</a></b> (<i>self</i>, QPainterPath <i>p</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qpainterpath.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#isEmpty">isEmpty</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qpainterpath.html#length" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#length">length</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#lineTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#lineTo">lineTo</a></b> (<i>self</i>, QPointF <i>p</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#lineTo-2" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#lineTo-2">lineTo</a></b> (<i>self</i>, float <i>x</i>, float <i>y</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#moveTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#moveTo">moveTo</a></b> (<i>self</i>, QPointF <i>p</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#moveTo-2" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#moveTo-2">moveTo</a></b> (<i>self</i>, float <i>x</i>, float <i>y</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qpainterpath.html#percentAtLength" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#percentAtLength">percentAtLength</a></b> (<i>self</i>, float <i>t</i>)</li>
+<li>
+<div class="fn"></div>QPointF <b><a href="qpainterpath.html#pointAtPercent" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#pointAtPercent">pointAtPercent</a></b> (<i>self</i>, float <i>t</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#quadTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#quadTo">quadTo</a></b> (<i>self</i>, QPointF <i>ctrlPt</i>, QPointF <i>endPt</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#quadTo-2" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#quadTo-2">quadTo</a></b> (<i>self</i>, float <i>ctrlPtx</i>, float <i>ctrlPty</i>, float <i>endPtx</i>, float <i>endPty</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#setElementPositionAt" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#setElementPositionAt">setElementPositionAt</a></b> (<i>self</i>, int <i>i</i>, float <i>x</i>, float <i>y</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#setFillRule" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#setFillRule">setFillRule</a></b> (<i>self</i>, Qt.FillRule <i>fillRule</i>)</li>
+<li>
+<div class="fn"></div>QPainterPath <b><a href="qpainterpath.html#simplified" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#simplified">simplified</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qpainterpath.html#slopeAtPercent" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#slopeAtPercent">slopeAtPercent</a></b> (<i>self</i>, float <i>t</i>)</li>
+<li>
+<div class="fn"></div>QPainterPath <b><a href="qpainterpath.html#subtracted" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#subtracted">subtracted</a></b> (<i>self</i>, QPainterPath <i>r</i>)</li>
+<li>
+<div class="fn"></div>QPainterPath <b><a href="qpainterpath.html#subtractedInverted" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#subtractedInverted">subtractedInverted</a></b> (<i>self</i>, QPainterPath <i>r</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#swap" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#swap">swap</a></b> (<i>self</i>, QPainterPath <i>other</i>)</li>
+<li>
+<div class="fn"></div>QPolygonF <b><a href="qpainterpath.html#toFillPolygon" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toFillPolygon">toFillPolygon</a></b> (<i>self</i>, QMatrix <i>matrix</i> = QMatrix())</li>
+<li>
+<div class="fn"></div>QPolygonF <b><a href="qpainterpath.html#toFillPolygon-2" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toFillPolygon-2">toFillPolygon</a></b> (<i>self</i>, QTransform <i>matrix</i>)</li>
+<li>
+<div class="fn"></div>list-of-QPolygonF <b><a href="qpainterpath.html#toFillPolygons" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toFillPolygons">toFillPolygons</a></b> (<i>self</i>, QMatrix <i>matrix</i> = QMatrix())</li>
+<li>
+<div class="fn"></div>list-of-QPolygonF <b><a href="qpainterpath.html#toFillPolygons-2" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toFillPolygons-2">toFillPolygons</a></b> (<i>self</i>, QTransform <i>matrix</i>)</li>
+<li>
+<div class="fn"></div>QPainterPath <b><a href="qpainterpath.html#toReversed" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toReversed">toReversed</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QPolygonF <b><a href="qpainterpath.html#toSubpathPolygons" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toSubpathPolygons">toSubpathPolygons</a></b> (<i>self</i>, QMatrix <i>matrix</i> = QMatrix())</li>
+<li>
+<div class="fn"></div>list-of-QPolygonF <b><a href="qpainterpath.html#toSubpathPolygons-2" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toSubpathPolygons-2">toSubpathPolygons</a></b> (<i>self</i>, QTransform <i>matrix</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#translate" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#translate">translate</a></b> (<i>self</i>, float <i>dx</i>, float <i>dy</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpainterpath.html#translate-2" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#translate-2">translate</a></b> (<i>self</i>, QPointF <i>offset</i>)</li>
+<li>
+<div class="fn"></div>QPainterPath <b><a href="qpainterpath.html#translated" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#translated">translated</a></b> (<i>self</i>, float <i>dx</i>, float <i>dy</i>)</li>
+<li>
+<div class="fn"></div>QPainterPath <b><a href="qpainterpath.html#translated-2" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#translated-2">translated</a></b> (<i>self</i>, QPointF <i>offset</i>)</li>
+<li>
+<div class="fn"></div>QPainterPath <b><a href="qpainterpath.html#united" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#united">united</a></b> (<i>self</i>, QPainterPath <i>r</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QPainterPath <b><a href="qpainterpath.html#__add__" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#__add__">__add__</a></b> (<i>self</i>, QPainterPath <i>other</i>)</li>
+<li>
+<div class="fn"></div>QPainterPath <b><a href="qpainterpath.html#__and__" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#__and__">__and__</a></b> (<i>self</i>, QPainterPath <i>other</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qpainterpath.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#__eq__">__eq__</a></b> (<i>self</i>, QPainterPath <i>other</i>)</li>
+<li>
+<div class="fn"></div>QPainterPath <b><a href="qpainterpath.html#__iadd__" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#__iadd__">__iadd__</a></b> (<i>self</i>, QPainterPath <i>other</i>)</li>
+<li>
+<div class="fn"></div>QPainterPath <b><a href="qpainterpath.html#__iand__" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#__iand__">__iand__</a></b> (<i>self</i>, QPainterPath <i>other</i>)</li>
+<li>
+<div class="fn"></div>QPainterPath <b><a href="qpainterpath.html#__ior__" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#__ior__">__ior__</a></b> (<i>self</i>, QPainterPath <i>other</i>)</li>
+<li>
+<div class="fn"></div>QPainterPath <b><a href="qpainterpath.html#__isub__" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#__isub__">__isub__</a></b> (<i>self</i>, QPainterPath <i>other</i>)</li>
+<li>
+<div class="fn"></div>QPainterPath <b><a href="qpainterpath.html#__mul__" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#__mul__">__mul__</a></b> (<i>self</i>, QMatrix <i>m</i>)</li>
+<li>
+<div class="fn"></div>QPainterPath <b><a href="qpainterpath.html#__mul__-2" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#__mul__-2">__mul__</a></b> (<i>self</i>, QTransform <i>m</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qpainterpath.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#__ne__">__ne__</a></b> (<i>self</i>, QPainterPath <i>other</i>)</li>
+<li>
+<div class="fn"></div>QPainterPath <b><a href="qpainterpath.html#__or__" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#__or__">__or__</a></b> (<i>self</i>, QPainterPath <i>other</i>)</li>
+<li>
+<div class="fn"></div>QPainterPath <b><a href="qpainterpath.html#__sub__" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#__sub__">__sub__</a></b> (<i>self</i>, QPainterPath <i>other</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QPainterPath类提供一个容器，用于绘制操作，从而能够构造和重用的图形形状。</p>
+<p>一个画家路径是大量的图形积木，如矩形，椭圆，直线和曲线组成的对象。积木可以在封闭的子路径被接合，例如为矩形或椭圆形。一个封闭的路径已重合的起点和终点。或者，他们可以独立存在的未封闭的子路径，如直线和曲线。</p>
+<p>一个QPainterPath对象可用于填充，概述，和削波。要生成可填写概括为一个给定的画家路径，使用<a href="qpainterpathstroker.html" tppabs="http://pyqt4doc.appspot.com/qpainterpathstroker.html">QPainterPathStroker</a>类。画家路径超过正常的绘图操作的主要优点是，复杂的形状只需要创建一次，然后就可以使用绘制多次调用只对<a href="qpainter.html#drawPath" tppabs="http://pyqt4doc.appspot.com/qpainter.html#drawPath">QPainter.drawPath</a>（）函数。</p>
+<p>QPainterPath提供了可用于获得关于路径和它的元素的信息的功能的集合。此外，可以利用扭转元素的顺序的<a href="qpainterpath.html#toReversed" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toReversed">toReversed</a>（）函数。还有一些功能，这个画家路径对象转换为多边形表示。</p>
+<a id="composing-a-qpainterpath" name="composing-a-qpainterpath"></a>
+<h3>Composing a QPainterPath</h3>
+<p>甲QPainterPath对象可以被构造为一个空的路径，与给定的起始点，或者作为另一个QPainterPath对象的一个副本。一旦创建，直线和曲线可以使用被添加到路径的<a href="qpainterpath.html#lineTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#lineTo">lineTo</a>（ ）<a href="qpainterpath.html#arcTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#arcTo">arcTo</a>（ ）<a href="qpainterpath.html#cubicTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#cubicTo">cubicTo</a>（）和<a href="qpainterpath.html#quadTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#quadTo">quadTo</a>（）函数。在直线和曲线舒展从<a href="qpainterpath.html#currentPosition" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#currentPosition">currentPosition</a>（）来作为参数传递的位置。</p>
+<p>该<a href="qpainterpath.html#currentPosition" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#currentPosition">currentPosition</a>该QPainterPath对象的（ ）始终是添加的最后一个子路径（或初始起点）的结束位置。使用<a href="qpainterpath.html#moveTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#moveTo">moveTo</a>（ ）函数来移动<a href="qpainterpath.html#currentPosition" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#currentPosition">currentPosition</a>（）无添加的成分。该<a href="qpainterpath.html#moveTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#moveTo">moveTo</a>（）函数，隐启动一个新的子路径，并且关闭前一个。开始一个新的子路径的另一种方式是调用<a href="qpainterpath.html#closeSubpath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#closeSubpath">closeSubpath</a>（ ）函数，它通过从添加一行关闭当前路径<a href="qpainterpath.html#currentPosition" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#currentPosition">currentPosition</a>（ ）返回路径的起始位置。请注意，新的路径不会有（0,0 ），作为其初始<a href="qpainterpath.html#currentPosition" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#currentPosition">currentPosition</a>（ ） 。</p>
+<p>QPainterPath类还提供了一些方便的功能来封闭的子路径添加到一个画家路径：<a href="qpainterpath.html#addEllipse" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addEllipse">addEllipse</a>（ ）<a href="qpainterpath.html#addPath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addPath">addPath</a>（ ）<a href="qpainterpath.html#addRect" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addRect">addRect</a>（ ）<a href="qpainterpath.html#addRegion" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addRegion">addRegion</a>（）和<a href="qpainterpath.html#addText" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addText">addText</a>（ ） 。该<a href="qpainterpath.html#addPolygon" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addPolygon">addPolygon</a>（ ）函数添加<i>unclosed</i>子路径。事实上，这些功能是所有集合<a href="qpainterpath.html#moveTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#moveTo">moveTo</a>（ ）<a href="qpainterpath.html#lineTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#lineTo">lineTo</a>（）和<a href="qpainterpath.html#cubicTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#cubicTo">cubicTo</a>（ ）操作。</p>
+<p>此外，一个路径可以使用被添加到当前路径<a href="qpainterpath.html#connectPath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#connectPath">connectPath</a>（）函数。但要注意，这个函数将在当前路径的最后一个元素连接到给定的一个的第一个元素添加一行。</p>
+<p>下面是一个代码片段显示了如何QPainterPath对象可用于：</p>
+<table class="generic" width="100%">
+<tr class="odd" valign="top">
+<td><img alt="" src="images/qpainterpath-construction.png"></td>
+<td>
+<pre class="cpp">
+ <span class="type">QPainterPath</span> path;
+ path<span class="operator">.</span><a href="qpainterpath.html#addRect" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addRect">addRect</a>(<span class="number">20</span><span class="operator">,</span> <span class="number">20</span><span class="operator">,</span> <span class="number">60</span><span class="operator">,</span> <span class="number">60</span>);
+
+ path<span class="operator">.</span><a href="qpainterpath.html#moveTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#moveTo">moveTo</a>(<span class="number">0</span><span class="operator">,</span> <span class="number">0</span>);
+ path<span class="operator">.</span><a href="qpainterpath.html#cubicTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#cubicTo">cubicTo</a>(<span class="number">99</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span>  <span class="number">50</span><span class="operator">,</span> <span class="number">50</span><span class="operator">,</span>  <span class="number">99</span><span class="operator">,</span> <span class="number">99</span>);
+ path<span class="operator">.</span><a href="qpainterpath.html#cubicTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#cubicTo">cubicTo</a>(<span class="number">0</span><span class="operator">,</span> <span class="number">99</span><span class="operator">,</span>  <span class="number">50</span><span class="operator">,</span> <span class="number">50</span><span class="operator">,</span>  <span class="number">0</span><span class="operator">,</span> <span class="number">0</span>);
+
+ <span class="type"><a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a></span> painter(<span class="keyword">this</span>);
+ painter<span class="operator">.</span>fillRect(<span class="number">0</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">100</span><span class="operator">,</span> <span class="number">100</span><span class="operator">,</span> <span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>white);
+ painter<span class="operator">.</span>setPen(<span class="type"><a href="qpen.html" tppabs="http://pyqt4doc.appspot.com/qpen.html">QPen</a></span>(<span class="type"><a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a></span>(<span class="number">79</span><span class="operator">,</span> <span class="number">106</span><span class="operator">,</span> <span class="number">25</span>)<span class="operator">,</span> <span class="number">1</span><span class="operator">,</span> <span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>SolidLine<span class="operator">,</span>
+                     <span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>FlatCap<span class="operator">,</span> <span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>MiterJoin));
+ painter<span class="operator">.</span>setBrush(<span class="type"><a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a></span>(<span class="number">122</span><span class="operator">,</span> <span class="number">163</span><span class="operator">,</span> <span class="number">39</span>));
+
+ painter<span class="operator">.</span>drawPath(path);
+</pre>
+</td>
+</tr>
+</table>
+<p>当构建画家路径最初是空的。我们首先添加一个矩形，这是一个封闭的子路径。然后，我们添加两个贝兹曲线共同构成，即使他们不是单独关闭一个封闭的子路径。最后，我们绘制整个路径。该路径是使用默认的填充规则填充，<a href="qt.html#FillRule-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#FillRule-enum">Qt.OddEvenFill</a>。 Qt提供了两种方法来填充路径：</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th><a href="qt.html#FillRule-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#FillRule-enum">Qt.OddEvenFill</a></th>
+<th><a href="qt.html#FillRule-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#FillRule-enum">Qt.WindingFill</a></th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td><img alt="" src="images/qt-fillrule-oddeven.png"></td>
+<td><img alt="" src="images/qt-fillrule-winding.png"></td>
+</tr>
+</table>
+<p>请参阅<a href="qt.html#FillRule-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#FillRule-enum">Qt.FillRule</a>文档规则的定义。一个画家路径的当前设置填充规则可使用检索到的<a href="qpainterpath.html#fillRule" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#fillRule">fillRule</a>（）函数，并使用改变了<a href="qpainterpath.html#setFillRule" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#setFillRule">setFillRule</a>（）函数。</p>
+<a id="qpainterpath-information" name="qpainterpath-information"></a>
+<h3>QPainterPath Information</h3>
+<p>该QPainterPath类提供的功能的集合，它返回的路径及其元素的信息。</p>
+<p>该<a href="qpainterpath.html#currentPosition" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#currentPosition">currentPosition</a>（ ）函数返回已添加的最后一个子路径（或初始起点）的终点。该<a href="qpainterpath.html#elementAt" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#elementAt">elementAt</a>（）函数可以被用于检索各个子路径元素，则<i>number</i>元素可使用检索到的<a href="qpainterpath.html#elementCount" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#elementCount">elementCount</a>（）函数，并且<a href="qpainterpath.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#isEmpty">isEmpty</a>（ ）函数告诉这个QPainterPath对象是否包含在所有的任何元素。</p>
+<p>该<a href="qpainterpath.html#controlPointRect" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#controlPointRect">controlPointRect</a>（ ）函数返回一个包含此路径的所有点和控制点的矩形。这个功能是显着更快的计算比精确<a href="qpainterpath.html#boundingRect" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#boundingRect">boundingRect</a>（ ）返回这个画家路径的边界矩形与浮点精度。</p>
+<p>最后， QPainterPath提供<a href="qpainterpath.html#contains" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#contains">contains</a>（）函数可以被用来确定一个给定的点或矩形是否是路径内，并且<a href="qpainterpath.html#intersects" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#intersects">intersects</a>（ ）函数，它确定是否任何一个给定的矩形内的点也都是这个路径里。</p>
+<a id="qpainterpath-conversion" name="qpainterpath-conversion"></a>
+<h3>QPainterPath Conversion</h3>
+<p>由于兼容性的原因，它可能需要简化画家路径的表示： QPainterPath提供<a href="qpainterpath.html#toFillPolygon" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toFillPolygon">toFillPolygon</a>（ ）<a href="qpainterpath.html#toFillPolygons" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toFillPolygons">toFillPolygons</a>（）和<a href="qpainterpath.html#toSubpathPolygons" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toSubpathPolygons">toSubpathPolygons</a>（ ）函数的转换画家路径转换为多边形。该<a href="qpainterpath.html#toFillPolygon" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toFillPolygon">toFillPolygon</a>（ ）返回画家路径作为一个单独的多边形，而后面两个函数返回的多边形列表。</p>
+<p>该<a href="qpainterpath.html#toFillPolygons" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toFillPolygons">toFillPolygons</a>（）和<a href="qpainterpath.html#toSubpathPolygons" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toSubpathPolygons">toSubpathPolygons</a>提供（）函数，因为它通常是更快地绘制几个小的多边形，而不是绘制一个大的多边形，即使点绘制的总数是相同的。两者之间的区别是<i>number</i>多边形他们返回：该<a href="qpainterpath.html#toSubpathPolygons" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toSubpathPolygons">toSubpathPolygons</a>（ ）创建一个多边形的每个子路径，无论相交的子路径（即重叠边界矩形） ，而<a href="qpainterpath.html#toFillPolygons" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toFillPolygons">toFillPolygons</a>（ ）函数只创建一个重叠的子路径多边形。</p>
+<p>该<a href="qpainterpath.html#toFillPolygon" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toFillPolygon">toFillPolygon</a>（）和<a href="qpainterpath.html#toFillPolygons" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toFillPolygons">toFillPolygons</a>（ ）函数首先将所有的子路径为多边形，然后使用倒带技术，以确保重叠的子路径可以使用正确的填充规则来填补。注意，倒带插入附加行中的多边形，以便填充多边形的轮廓并不路径的轮廓相匹配。</p>
+<a id="examples" name="examples"></a>
+<h3>Examples</h3>
+<p>Qt提供了<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/painting-painterpaths.html">Painter
+Paths Example</a>和<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/demos-deform.html">Vector
+Deformation Demo</a>分别位于Qt的例子和演示目录分别。</p>
+<p>该<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/painting-painterpaths.html">Painter Paths
+Example</a>显示了画家的路径如何可以用来构建复杂的形状进行渲染，并让用户实验用的填充和描边。该<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/demos-deform.html">Vector Deformation
+Demo</a>展示了如何使用QPainterPath绘制文本。</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/painting-painterpaths.html">Painter Paths
+Example</a></th>
+<th><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/demos-deform.html">Vector Deformation Demo</a></th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td><img alt="" src="images/qpainterpath-example.png"></td>
+<td><img alt="" src="images/qpainterpath-demo.png"></td>
+</tr>
+</table>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="ElementType-enum"></a>QPainterPath.ElementType</h3>
+<p>该枚举描述了用于连接的顶点中的子路径元素的类型。</p>
+<p>需要注意的是元素的加入为封闭的子路径使用<a href="qpainterpath.html#addEllipse" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addEllipse">addEllipse</a>（ ）<a href="qpainterpath.html#addPath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addPath">addPath</a>（ ）<a href="qpainterpath.html#addPolygon" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addPolygon">addPolygon</a>（ ）<a href="qpainterpath.html#addRect" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addRect">addRect</a>（ ）<a href="qpainterpath.html#addRegion" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addRegion">addRegion</a>（）和<a href="qpainterpath.html#addText" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addText">addText</a>（ ）的便利功能，采用实际添加到路径作为单独的元素的集合<a href="qpainterpath.html#moveTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#moveTo">moveTo</a>（ ）<a href="qpainterpath.html#lineTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#lineTo">lineTo</a>（）和<a href="qpainterpath.html#cubicTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#cubicTo">cubicTo</a>（）函数。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPainterPath.MoveToElement</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">一个新的子路径。另请参阅<a href="qpainterpath.html#moveTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#moveTo">moveTo</a>（ ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPainterPath.LineToElement</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">A线。另请参阅<a href="qpainterpath.html#lineTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#lineTo">lineTo</a>（ ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPainterPath.CurveToElement</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">曲线。另请参阅<a href="qpainterpath.html#cubicTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#cubicTo">cubicTo</a>（）和<a href="qpainterpath.html#quadTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#quadTo">quadTo</a>（ ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPainterPath.CurveToDataElement</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">描述曲线在CurveToElement元素所需的额外数据。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qpainterpath.html#elementAt" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#elementAt">elementAt</a>（）和<a href="qpainterpath.html#elementCount" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#elementCount">elementCount</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QPainterPath"></a>QPainterPath.__init__ (<i>self</i>)</h3>
+<p>构造一个空<a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a>对象。</p>
+
+
+<h3 class="fn">
+<a name="QPainterPath-2"></a>QPainterPath.__init__ (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>startPoint</i>)</h3>
+<p>创建<a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a>与给定对象<i>startPoint</i>作为它的当前位置。</p>
+
+
+<h3 class="fn">
+<a name="QPainterPath-3"></a>QPainterPath.__init__ (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> <i>other</i>)</h3>
+<p>创建<a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a>对象，它是给定一个副本<i>path</i>。</p>
+<p><b>See also</b> <a href="qpainterpath.html#operator-eq" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#operator-eq">operator=</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addEllipse"></a>QPainterPath.addEllipse (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>rect</i>)</h3>
+<p>建立内指定的椭圆<i>boundingRectangle</i>并把它添加到画家路径作为一个封闭的子路径。</p>
+<p>椭圆是由顺时针曲线，并开始在零摄氏度整理（ 3点钟位置） 。</p>
+<table class="generic" width="100%">
+<tr class="odd" valign="top">
+<td><img alt="" src="images/qpainterpath-addellipse.png"></td>
+<td>
+<pre class="cpp">
+ <span class="type"><a href="qlineargradient.html" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html">QLinearGradient</a></span> myGradient;
+ <span class="type"><a href="qpen.html" tppabs="http://pyqt4doc.appspot.com/qpen.html">QPen</a></span> myPen;
+ <span class="type"><a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a></span> boundingRectangle;
+
+ <span class="type"><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a></span> myPath;
+ myPath<span class="operator">.</span>addEllipse(boundingRectangle);
+
+ <span class="type"><a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a></span> painter(<span class="keyword">this</span>);
+ painter<span class="operator">.</span>setBrush(myGradient);
+ painter<span class="operator">.</span>setPen(myPen);
+ painter<span class="operator">.</span>drawPath(myPath);
+</pre>
+</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qpainterpath.html#arcTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#arcTo">arcTo</a>（ ）<a href="qpainter.html#drawEllipse" tppabs="http://pyqt4doc.appspot.com/qpainter.html#drawEllipse">QPainter.drawEllipse</a>（）和<a href="qpainterpath.html#composing-a-qpainterpath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#composing-a-qpainterpath">Composing
+a QPainterPath</a>。</p>
+
+
+<h3 class="fn">
+<a name="addEllipse-2"></a>QPainterPath.addEllipse (<i>self</i>, float <i>x</i>, float <i>y</i>, float <i>w</i>, float <i>h</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>建立由它左上角的定义矩形边界内的椭圆形（<i>x</i>，<i>y</i>） ，<i>width</i>和<i>height</i>，并将其添加到画家路径作为一个封闭的子路径。</p>
+
+
+<h3 class="fn">
+<a name="addEllipse-3"></a>QPainterPath.addEllipse (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>center</i>, float <i>rx</i>, float <i>ry</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>创建放置在一个椭圆<i>center</i>与半径<i>rx</i>和<i>ry</i>，并将其添加到画家路径作为一个封闭的子路径。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="addPath"></a>QPainterPath.addPath (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> <i>path</i>)</h3>
+<p>将给定<i>path</i>至<i>this</i>路径作为一个封闭的子路径。</p>
+<p><b>See also</b> <a href="qpainterpath.html#connectPath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#connectPath">connectPath</a>（）和<a href="qpainterpath.html#composing-a-qpainterpath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#composing-a-qpainterpath">Composing a
+QPainterPath</a>。</p>
+
+
+<h3 class="fn">
+<a name="addPolygon"></a>QPainterPath.addPolygon (<i>self</i>, <a href="qpolygonf.html" tppabs="http://pyqt4doc.appspot.com/qpolygonf.html">QPolygonF</a> <i>polygon</i>)</h3>
+<p>将给定<i>polygon</i>该路径作为（未关闭）子路径。</p>
+<p>注意，该多边形后的当前位置已被添加，是在最后一个点<i>polygon</i>。画一条线回到第一点，用<a href="qpainterpath.html#closeSubpath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#closeSubpath">closeSubpath</a>（）函数。</p>
+<table class="generic" width="100%">
+<tr class="odd" valign="top">
+<td><img alt="" src="images/qpainterpath-addpolygon.png"></td>
+<td>
+<pre class="cpp">
+ <span class="type"><a href="qlineargradient.html" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html">QLinearGradient</a></span> myGradient;
+ <span class="type"><a href="qpen.html" tppabs="http://pyqt4doc.appspot.com/qpen.html">QPen</a></span> myPen;
+ <span class="type"><a href="qpolygonf.html" tppabs="http://pyqt4doc.appspot.com/qpolygonf.html">QPolygonF</a></span> myPolygon;
+
+ <span class="type"><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a></span> myPath;
+ myPath<span class="operator">.</span>addPolygon(myPolygon);
+
+ <span class="type"><a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a></span> painter(<span class="keyword">this</span>);
+ painter<span class="operator">.</span>setBrush(myGradient);
+ painter<span class="operator">.</span>setPen(myPen);
+ painter<span class="operator">.</span>drawPath(myPath);
+</pre>
+</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qpainterpath.html#lineTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#lineTo">lineTo</a>（）和<a href="qpainterpath.html#composing-a-qpainterpath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#composing-a-qpainterpath">Composing
+a QPainterPath</a>。</p>
+
+
+<h3 class="fn">
+<a name="addRect"></a>QPainterPath.addRect (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>rect</i>)</h3>
+<p>将给定<i>rectangle</i>这条道路是一个封闭的子路径。</p>
+<p>该<i>rectangle</i>添加为顺时针套系。后画家路径的当前位置<i>rectangle</i>已经被添加为矩形的左上角。</p>
+<table class="generic" width="100%">
+<tr class="odd" valign="top">
+<td><img alt="" src="images/qpainterpath-addrectangle.png"></td>
+<td>
+<pre class="cpp">
+ <span class="type"><a href="qlineargradient.html" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html">QLinearGradient</a></span> myGradient;
+ <span class="type"><a href="qpen.html" tppabs="http://pyqt4doc.appspot.com/qpen.html">QPen</a></span> myPen;
+ <span class="type"><a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a></span> myRectangle;
+
+ <span class="type"><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a></span> myPath;
+ myPath<span class="operator">.</span>addRect(myRectangle);
+
+ <span class="type"><a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a></span> painter(<span class="keyword">this</span>);
+ painter<span class="operator">.</span>setBrush(myGradient);
+ painter<span class="operator">.</span>setPen(myPen);
+ painter<span class="operator">.</span>drawPath(myPath);
+</pre>
+</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qpainterpath.html#addRegion" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addRegion">addRegion</a>（ ）<a href="qpainterpath.html#lineTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#lineTo">lineTo</a>（）和<a href="qpainterpath.html#composing-a-qpainterpath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#composing-a-qpainterpath">Composing a
+QPainterPath</a>。</p>
+
+
+<h3 class="fn">
+<a name="addRect-2"></a>QPainterPath.addRect (<i>self</i>, float <i>x</i>, float <i>y</i>, float <i>w</i>, float <i>h</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>添加一个矩形的位置（<i>x</i>，<i>y</i>） ，使用给定的<i>width</i>和<i>height</i>作为一个封闭的子路径。</p>
+
+
+<h3 class="fn">
+<a name="addRegion"></a>QPainterPath.addRegion (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>region</i>)</h3>
+<p>将给定<i>region</i>通过增加该区域的每个矩形作为一个单独的封闭的子路径的路径。</p>
+<p><b>See also</b> <a href="qpainterpath.html#addRect" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addRect">addRect</a>（）和<a href="qpainterpath.html#composing-a-qpainterpath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#composing-a-qpainterpath">Composing a
+QPainterPath</a>。</p>
+
+
+<h3 class="fn">
+<a name="addRoundedRect"></a>QPainterPath.addRoundedRect (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>rect</i>, float <i>xRadius</i>, float <i>yRadius</i>, <a href="qt.html#SizeMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#SizeMode-enum">Qt.SizeMode</a> <i>mode</i> = Qt.AbsoluteSize)</h3>
+<p>将指定的矩形<i>rect</i>带圆角的路径。</p>
+<p>该<i>xRadius</i>和<i>yRadius</i>参数指定限定的圆角矩形的角部的椭圆形的半径。何时<i>mode</i> is <a href="qt.html#SizeMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#SizeMode-enum">Qt.RelativeSize</a>，<i>xRadius</i>和<i>yRadius</i>在一半的矩形的宽度和高度的比例分别指定，并应在范围0.0至100.0 。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qpainterpath.html#addRect" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addRect">addRect</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addRoundedRect-2"></a>QPainterPath.addRoundedRect (<i>self</i>, float <i>x</i>, float <i>y</i>, float <i>w</i>, float <i>h</i>, float <i>xRadius</i>, float <i>yRadius</i>, <a href="qt.html#SizeMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#SizeMode-enum">Qt.SizeMode</a> <i>mode</i> = Qt.AbsoluteSize)</h3>
+<p>这是一个重载函数。</p>
+<p>将指定的矩形<i>x</i>，<i>y</i>，<i>w</i>，<i>h</i>带圆角的路径。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="addRoundRect"></a>QPainterPath.addRoundRect (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>rect</i>, int <i>xRnd</i>, int <i>yRnd</i>)</h3>
+<h3 class="fn">
+<a name="addRoundRect-2"></a>QPainterPath.addRoundRect (<i>self</i>, float <i>x</i>, float <i>y</i>, float <i>w</i>, float <i>h</i>, int <i>xRnd</i>, int <i>yRnd</i>)</h3>
+<h3 class="fn">
+<a name="addRoundRect-3"></a>QPainterPath.addRoundRect (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>rect</i>, int <i>roundness</i>)</h3>
+<h3 class="fn">
+<a name="addRoundRect-4"></a>QPainterPath.addRoundRect (<i>self</i>, float <i>x</i>, float <i>y</i>, float <i>w</i>, float <i>h</i>, int <i>roundness</i>)</h3>
+<h3 class="fn">
+<a name="addText"></a>QPainterPath.addText (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>point</i>, <a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a> <i>f</i>, QString <i>text</i>)</h3>
+<p>将给定<i>text</i>这个路径作为一组从已建立封闭的子路径<i>font</i>提供。该子路径定位，使文本的基线的左端在于在指定的<i>point</i>。</p>
+<table class="generic" width="100%">
+<tr class="odd" valign="top">
+<td><img alt="" src="images/qpainterpath-addtext.png"></td>
+<td>
+<pre class="cpp">
+ <span class="type"><a href="qlineargradient.html" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html">QLinearGradient</a></span> myGradient;
+ <span class="type"><a href="qpen.html" tppabs="http://pyqt4doc.appspot.com/qpen.html">QPen</a></span> myPen;
+ <span class="type"><a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a></span> myFont;
+ <span class="type"><a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a></span> baseline(x<span class="operator">,</span> y);
+
+ <span class="type"><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a></span> myPath;
+ myPath<span class="operator">.</span>addText(baseline<span class="operator">,</span> myFont<span class="operator">,</span> tr(<span class="string">"Qt"</span>));
+
+ <span class="type"><a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a></span> painter(<span class="keyword">this</span>);
+ painter<span class="operator">.</span>setBrush(myGradient);
+ painter<span class="operator">.</span>setPen(myPen);
+ painter<span class="operator">.</span>drawPath(myPath);
+</pre>
+</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qpainter.html#drawText" tppabs="http://pyqt4doc.appspot.com/qpainter.html#drawText">QPainter.drawText</a>（）和<a href="qpainterpath.html#composing-a-qpainterpath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#composing-a-qpainterpath">Composing a
+QPainterPath</a>。</p>
+
+
+<h3 class="fn">
+<a name="addText-2"></a>QPainterPath.addText (<i>self</i>, float <i>x</i>, float <i>y</i>, <a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a> <i>f</i>, QString <i>text</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>将给定<i>text</i>这个路径作为一组从已建立封闭的子路径<i>font</i>提供。该子路径定位，使文本的基线的左端处在于通过指定的点（<i>x</i>，<i>y</i>） 。</p>
+
+
+<h3 class="fn">
+<a name="angleAtPercent"></a>float QPainterPath.angleAtPercent (<i>self</i>, float <i>t</i>)</h3>
+<p>返回的路径切线角度的百分比<i>t</i>。这个论点<i>t</i>必须是0和1之间。</p>
+<p>用于角度的正值逆时针意思而负值意味着顺时针方向。零度是在3点钟的位置。</p>
+<p>注意，类似于其它百分比的方法，该百分比的测量是不与问候的长度呈线性的曲线，如果是存在于路径。当曲线存在的比例的参数被映射到吨贝塞尔方程的参数。</p>
+
+
+<h3 class="fn">
+<a name="arcMoveTo"></a>QPainterPath.arcMoveTo (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>rect</i>, float <i>angle</i>)</h3>
+<p>创建一个举动是在于佔用给定弧<i>rectangle</i>在<i>angle</i>。</p>
+<p>角度单位是度。顺时针圆弧可以用负角度被指定。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qpainterpath.html#moveTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#moveTo">moveTo</a>（）和<a href="qpainterpath.html#arcTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#arcTo">arcTo</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="arcMoveTo-2"></a>QPainterPath.arcMoveTo (<i>self</i>, float <i>x</i>, float <i>y</i>, float <i>w</i>, float <i>h</i>, float <i>angle</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>创建一个移动到躺在床上，佔据了弧线<a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a>（<i>x</i>，<i>y</i>，<i>width</i>，<i>height</i>）在<i>angle</i>。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="arcTo"></a>QPainterPath.arcTo (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>rect</i>, float <i>startAngle</i>, float <i>arcLength</i>)</h3>
+<p>创建圆弧佔用给定的<i>rectangle</i>，开始于指定的<i>startAngle</i>并延伸<i>sweepLength</i>逆时针旋转度。</p>
+<p>角度单位是度。顺时针圆弧可以用负角度被指定。</p>
+<p>注意，这个函数圆弧的起点连接到当前的位置，如果它们尚未连接。之后电弧已经被添加，当前位置是在电弧的最后一点。画一条线回到第一点，用<a href="qpainterpath.html#closeSubpath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#closeSubpath">closeSubpath</a>（）函数。</p>
+<table class="generic" width="100%">
+<tr class="odd" valign="top">
+<td><img alt="" src="images/qpainterpath-arcto.png"></td>
+<td>
+<pre class="cpp">
+ <span class="type"><a href="qlineargradient.html" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html">QLinearGradient</a></span> myGradient;
+ <span class="type"><a href="qpen.html" tppabs="http://pyqt4doc.appspot.com/qpen.html">QPen</a></span> myPen;
+
+ <span class="type"><a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a></span> center<span class="operator">,</span> startPoint;
+
+ <span class="type"><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a></span> myPath;
+ myPath<span class="operator">.</span><a href="qpainterpath.html#moveTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#moveTo">moveTo</a>(center);
+ myPath<span class="operator">.</span>arcTo(boundingRect<span class="operator">,</span> startAngle<span class="operator">,</span>
+              sweepLength);
+
+ <span class="type"><a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a></span> painter(<span class="keyword">this</span>);
+ painter<span class="operator">.</span>setBrush(myGradient);
+ painter<span class="operator">.</span>setPen(myPen);
+ painter<span class="operator">.</span>drawPath(myPath);
+</pre>
+</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qpainterpath.html#arcMoveTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#arcMoveTo">arcMoveTo</a>（ ）<a href="qpainterpath.html#addEllipse" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addEllipse">addEllipse</a>（ ）<a href="qpainter.html#drawArc" tppabs="http://pyqt4doc.appspot.com/qpainter.html#drawArc">QPainter.drawArc</a>（ ）<a href="qpainter.html#drawPie" tppabs="http://pyqt4doc.appspot.com/qpainter.html#drawPie">QPainter.drawPie</a>（）和<a href="qpainterpath.html#composing-a-qpainterpath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#composing-a-qpainterpath">Composing a
+QPainterPath</a>。</p>
+
+
+<h3 class="fn">
+<a name="arcTo-2"></a>QPainterPath.arcTo (<i>self</i>, float <i>x</i>, float <i>y</i>, float <i>w</i>, float <i>h</i>, float <i>startAngle</i>, float <i>arcLenght</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>创建圆弧佔据的矩形<a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a>（<i>x</i>，<i>y</i>，<i>width</i>，<i>height</i>） ，开始于指定的<i>startAngle</i>并延伸<i>sweepLength</i>逆时针旋转度。</p>
+
+
+<h3 class="fn">
+<a name="boundingRect"></a><a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> QPainterPath.boundingRect (<i>self</i>)</h3>
+<p>返回与浮点精度的矩形这个画家路径的边框。</p>
+<p><b>See also</b> <a href="qpainterpath.html#controlPointRect" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#controlPointRect">controlPointRect</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="closeSubpath"></a>QPainterPath.closeSubpath (<i>self</i>)</h3>
+<p>通过画线的子路径的开始，自动启动一个新的路径关闭当前子路径。新路径的当前点为（ 0,0） 。</p>
+<p>如果子路径不包含任何元素，该函数不起作用。</p>
+<p><b>See also</b> <a href="qpainterpath.html#moveTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#moveTo">moveTo</a>（）和<a href="qpainterpath.html#composing-a-qpainterpath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#composing-a-qpainterpath">Composing
+a QPainterPath</a>。</p>
+
+
+<h3 class="fn">
+<a name="connectPath"></a>QPainterPath.connectPath (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> <i>path</i>)</h3>
+<p>连接指定的<i>path</i>至<i>this</i>通过添加从该路径的最后一个元素的线为给定路径的第一个元素的路径。</p>
+<p><b>See also</b> <a href="qpainterpath.html#addPath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addPath">addPath</a>（）和<a href="qpainterpath.html#composing-a-qpainterpath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#composing-a-qpainterpath">Composing a
+QPainterPath</a>。</p>
+
+
+<h3 class="fn">
+<a name="contains"></a>bool QPainterPath.contains (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>pt</i>)</h3>
+<p>返回True如果给定的<i>point</i>是的路径里面，否则返回False 。</p>
+<p><b>See also</b> <a href="qpainterpath.html#intersects" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#intersects">intersects</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="contains-2"></a>bool QPainterPath.contains (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>rect</i>)</h3>
+<p>返回True如果给定的<i>rectangle</i>是的路径里面，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="contains-3"></a>bool QPainterPath.contains (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> <i>p</i>)</h3>
+<p>返回True如果给定的路径<i>p</i>包含在当前路径内。返回False如果当前路径以及任何边缘<i>p</i>相交。</p>
+<p>设置路径的操作将视路径，领域。非闭合路径将被隐式关闭处理。</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qpainterpath.html#intersects" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#intersects">intersects</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="controlPointRect"></a><a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> QPainterPath.controlPointRect (<i>self</i>)</h3>
+<p>返回包含此路径的所有点和控制点的矩形。</p>
+<p>这个功能是显着更快的计算比精确<a href="qpainterpath.html#boundingRect" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#boundingRect">boundingRect</a>（） ，并返回的矩形总是返回的矩形的一个超<a href="qpainterpath.html#boundingRect" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#boundingRect">boundingRect</a>（ ） 。</p>
+<p><b>See also</b> <a href="qpainterpath.html#boundingRect" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#boundingRect">boundingRect</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="cubicTo"></a>QPainterPath.cubicTo (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>ctrlPt1</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>ctrlPt2</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>endPt</i>)</h3>
+<p>将当前位置与给定之间的三次贝塞尔曲线<i>endPoint</i>通过使用指定的控制点<i>c1</i>和<i>c2</i>。</p>
+<p>该曲线被加入后，当前位置被更新为在该曲线的终点。</p>
+<table class="generic" width="100%">
+<tr class="odd" valign="top">
+<td><img alt="" src="images/qpainterpath-cubicto.png"></td>
+<td>
+<pre class="cpp">
+ <span class="type"><a href="qlineargradient.html" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html">QLinearGradient</a></span> myGradient;
+ <span class="type"><a href="qpen.html" tppabs="http://pyqt4doc.appspot.com/qpen.html">QPen</a></span> myPen;
+
+ <span class="type"><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a></span> myPath;
+ myPath<span class="operator">.</span>cubicTo(c1<span class="operator">,</span> c2<span class="operator">,</span> endPoint);
+
+ <span class="type"><a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a></span> painter(<span class="keyword">this</span>);
+ painter<span class="operator">.</span>setBrush(myGradient);
+ painter<span class="operator">.</span>setPen(myPen);
+ painter<span class="operator">.</span>drawPath(myPath);
+</pre>
+</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qpainterpath.html#quadTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#quadTo">quadTo</a>（）和<a href="qpainterpath.html#composing-a-qpainterpath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#composing-a-qpainterpath">Composing
+a QPainterPath</a>。</p>
+
+
+<h3 class="fn">
+<a name="cubicTo-2"></a>QPainterPath.cubicTo (<i>self</i>, float <i>ctrlPt1x</i>, float <i>ctrlPt1y</i>, float <i>ctrlPt2x</i>, float <i>ctrlPt2y</i>, float <i>endPtx</i>, float <i>endPty</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>将当前位置和结束点之间的三次Bezier曲线（<i>endPointX</i>，<i>endPointY</i>）与管制站（指定<i>c1X</i>，<i>c1Y</i>）和（<i>c2X</i>，<i>c2Y</i>） 。</p>
+
+
+<h3 class="fn">
+<a name="currentPosition"></a><a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> QPainterPath.currentPosition (<i>self</i>)</h3>
+<p>返回路径的当前位置。</p>
+
+
+<h3 class="fn">
+<a name="elementAt"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qpainterpath-element.html">Element</a> QPainterPath.elementAt (<i>self</i>, int <i>i</i>)</h3>
+<p>返回元素在给定的<i>index</i>在画家的路径。</p>
+<p><b>See also</b> <a href="qpainterpath.html#ElementType-enum" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#ElementType-enum">ElementType</a>，<a href="qpainterpath.html#elementCount" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#elementCount">elementCount</a>（）和<a href="qpainterpath.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#isEmpty">isEmpty</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="elementCount"></a>int QPainterPath.elementCount (<i>self</i>)</h3>
+<p>返回在画家路径路径的元素数。</p>
+<p><b>See also</b> <a href="qpainterpath.html#ElementType-enum" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#ElementType-enum">ElementType</a>，<a href="qpainterpath.html#elementAt" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#elementAt">elementAt</a>（）和<a href="qpainterpath.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#isEmpty">isEmpty</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fillRule"></a><a href="qt.html#FillRule-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#FillRule-enum">Qt.FillRule</a> QPainterPath.fillRule (<i>self</i>)</h3>
+<p>返回画家路径的当前设置填充规则。</p>
+<p><b>See also</b> <a href="qpainterpath.html#setFillRule" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#setFillRule">setFillRule</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="intersected"></a><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> QPainterPath.intersected (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> <i>r</i>)</h3>
+<p>返回作为此路径的填充区域的交叉点和路径<i>p</i>的填充区域。贝塞尔曲线可压扁排队，由于做贝塞尔曲线交点的数值不稳定段。</p>
+<p>此功能被引入Qt的4.3 。</p>
+
+
+<h3 class="fn">
+<a name="intersects"></a>bool QPainterPath.intersects (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>rect</i>)</h3>
+<p>返回True如果在给定的任何一点<i>rectangle</i>相交的路径，否则返回False 。</p>
+<p>有一个交叉点，如果任何组成矩形的线条相交的路径的一部分，或者如果任何部分的矩形的带路径包围的任何区域重叠。这个函数尊重当前fillRule以确定被认为是路径之内。</p>
+<p><b>See also</b> <a href="qpainterpath.html#contains" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#contains">contains</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="intersects-2"></a>bool QPainterPath.intersects (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> <i>p</i>)</h3>
+<p>如果当前路径相交在任何点给定的路径，则返回True<i>p</i>。如果当前路径包含或被包含的任何部分也返回True<i>p</i>。</p>
+<p>设置路径的操作将视路径，领域。非闭合路径将被隐式关闭处理。</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qpainterpath.html#contains" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#contains">contains</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isEmpty"></a>bool QPainterPath.isEmpty (<i>self</i>)</h3>
+<p>如果不是有这个路径没有任何元素，则返回True，如果只有元素是<a href="qpainterpath.html#ElementType-enum" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#ElementType-enum">MoveToElement</a>否则返回False 。</p>
+<p><b>See also</b> <a href="qpainterpath.html#elementCount" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#elementCount">elementCount</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="length"></a>float QPainterPath.length (<i>self</i>)</h3>
+<p>返回电流路径的长度。</p>
+
+
+<h3 class="fn">
+<a name="lineTo"></a>QPainterPath.lineTo (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>p</i>)</h3>
+<p>添加一条直线从当前位置到指定<i>endPoint</i>。后绘制的线，当前位置被更新为在该行的终点。</p>
+<p><b>See also</b> <a href="qpainterpath.html#addPolygon" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addPolygon">addPolygon</a>（ ）<a href="qpainterpath.html#addRect" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addRect">addRect</a>（）和<a href="qpainterpath.html#composing-a-qpainterpath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#composing-a-qpainterpath">Composing a
+QPainterPath</a>。</p>
+
+
+<h3 class="fn">
+<a name="lineTo-2"></a>QPainterPath.lineTo (<i>self</i>, float <i>x</i>, float <i>y</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>绘制一条线从当前位置至点（<i>x</i>，<i>y</i>） 。</p>
+
+
+<h3 class="fn">
+<a name="moveTo"></a>QPainterPath.moveTo (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>p</i>)</h3>
+<p>移动当前点到给定<i>point</i>，隐式地开始一个新的子路径和关闭前一个。</p>
+<p><b>See also</b> <a href="qpainterpath.html#closeSubpath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#closeSubpath">closeSubpath</a>（）和<a href="qpainterpath.html#composing-a-qpainterpath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#composing-a-qpainterpath">Composing a
+QPainterPath</a>。</p>
+
+
+<h3 class="fn">
+<a name="moveTo-2"></a>QPainterPath.moveTo (<i>self</i>, float <i>x</i>, float <i>y</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>将当前位置移动到（<i>x</i>，<i>y</i>），并开始一个新的子路径，隐含收盘前一路径。</p>
+
+
+<h3 class="fn">
+<a name="percentAtLength"></a>float QPainterPath.percentAtLength (<i>self</i>, float <i>t</i>)</h3>
+<p>返回整个路径的百分比在规定的长度<i>len</i>。</p>
+<p>注意，类似于其它百分比的方法，该百分比的测量是不与问候的长度呈线性，如果曲线中存在的路径。当曲线存在的比例的参数被映射到吨贝塞尔方程的参数。</p>
+
+
+<h3 class="fn">
+<a name="pointAtPercent"></a><a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> QPainterPath.pointAtPercent (<i>self</i>, float <i>t</i>)</h3>
+<p>返回点的百分比<i>t</i>的电流通路的。这个论点<i>t</i>必须是0和1之间。</p>
+<p>注意，类似于其它百分比的方法，该百分比的测量是不与问候的长度呈线性，如果曲线中存在的路径。当曲线存在的比例的参数被映射到吨贝塞尔方程的参数。</p>
+
+
+<h3 class="fn">
+<a name="quadTo"></a>QPainterPath.quadTo (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>ctrlPt</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>endPt</i>)</h3>
+<p>将当前位置和给定的二次贝塞尔曲线<i>endPoint</i>由指定的控制点<i>c</i>。</p>
+<p>该曲线被加入后，当前点被更新为在该曲线的终点。</p>
+<p><b>See also</b> <a href="qpainterpath.html#cubicTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#cubicTo">cubicTo</a>（）和<a href="qpainterpath.html#composing-a-qpainterpath" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#composing-a-qpainterpath">Composing a
+QPainterPath</a>。</p>
+
+
+<h3 class="fn">
+<a name="quadTo-2"></a>QPainterPath.quadTo (<i>self</i>, float <i>ctrlPtx</i>, float <i>ctrlPty</i>, float <i>endPtx</i>, float <i>endPty</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>将目前的点和终点之间的二次贝塞尔曲线（<i>endPointX</i>，<i>endPointY</i>）与（指定控制点<i>cx</i>，<i>cy</i>） 。</p>
+
+
+<h3 class="fn">
+<a name="setElementPositionAt"></a>QPainterPath.setElementPositionAt (<i>self</i>, int <i>i</i>, float <i>x</i>, float <i>y</i>)</h3>
+<p>元素的索引设置x和y坐标<i>index</i>至<i>x</i>和<i>y</i>。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="setFillRule"></a>QPainterPath.setFillRule (<i>self</i>, <a href="qt.html#FillRule-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#FillRule-enum">Qt.FillRule</a> <i>fillRule</i>)</h3>
+<p>设定画家路径的填充规则给定的<i>fillRule</i>。 Qt提供了两种方法来填充路径：</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>
+<a href="qt.html#FillRule-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#FillRule-enum">Qt.OddEvenFill</a>
+(default)</th>
+<th><a href="qt.html#FillRule-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#FillRule-enum">Qt.WindingFill</a></th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td><img alt="" src="images/qt-fillrule-oddeven.png"></td>
+<td><img alt="" src="images/qt-fillrule-winding.png"></td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qpainterpath.html#fillRule" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#fillRule">fillRule</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="simplified"></a><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> QPainterPath.simplified (<i>self</i>)</h3>
+<p>返回此路径的简化版本。这意味着合并相交的所有子路径，并返回包含任何相交的边缘的路径。连续的平行线也将被合并。简化的路径将始终使用默认的填充规则，<a href="qt.html#FillRule-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#FillRule-enum">Qt.OddEvenFill</a>。贝塞尔曲线可压扁排队，由于做贝塞尔曲线交点的数值不稳定段。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="slopeAtPercent"></a>float QPainterPath.slopeAtPercent (<i>self</i>, float <i>t</i>)</h3>
+<p>返回路径的斜率的百分比<i>t</i>。这个论点<i>t</i>必须是0和1之间。</p>
+<p>注意，类似于其它百分比的方法，该百分比的测量是不与问候的长度呈线性，如果曲线中存在的路径。当曲线存在的比例的参数被映射到吨贝塞尔方程的参数。</p>
+
+
+<h3 class="fn">
+<a name="subtracted"></a><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> QPainterPath.subtracted (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> <i>r</i>)</h3>
+<p>返回这是一个路径<i>p</i>的填充区域由这条路径的填充区域中减去。</p>
+<p>设置路径的操作将视路径，领域。非闭合路径将被隐式关闭处理。贝塞尔曲线可压扁排队，由于做贝塞尔曲线交点的数值不稳定段。</p>
+<p>此功能被引入Qt的4.3 。</p>
+
+
+<h3 class="fn">
+<a name="subtractedInverted"></a><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> QPainterPath.subtractedInverted (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> <i>r</i>)</h3>
+<h3 class="fn">
+<a name="swap"></a>QPainterPath.swap (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> <i>other</i>)</h3>
+<p>掉期的画家路径<i>other</i>这个画家路径。这个操作是非常快的，而且永远不会。</p>
+<p>此功能被引入Qt的4.8 。</p>
+
+
+<h3 class="fn">
+<a name="toFillPolygon"></a><a href="qpolygonf.html" tppabs="http://pyqt4doc.appspot.com/qpolygonf.html">QPolygonF</a> QPainterPath.toFillPolygon (<i>self</i>, <a href="qmatrix.html" tppabs="http://pyqt4doc.appspot.com/qmatrix.html">QMatrix</a> <i>matrix</i> = QMatrix())</h3>
+<p>路径转换成使用多边形<a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> <i>matrix</i>，并返回该多边形。</p>
+<p>多边形是由首先将所有的子路径为多边形，然后使用回卷技术，以确保重叠的子路径可以使用正确的填充规则填充创建。</p>
+<p>注意，倒带插入附加系中的多边形，以便填充多边形的轮廓并不路径的轮廓相匹配。</p>
+<p><b>See also</b> <a href="qpainterpath.html#toSubpathPolygons" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toSubpathPolygons">toSubpathPolygons</a>（ ）<a href="qpainterpath.html#toFillPolygons" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toFillPolygons">toFillPolygons</a>（）和<a href="qpainterpath.html#qpainterpath-conversion" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#qpainterpath-conversion">QPainterPath
+Conversion</a>。</p>
+
+
+<h3 class="fn">
+<a name="toFillPolygon-2"></a><a href="qpolygonf.html" tppabs="http://pyqt4doc.appspot.com/qpolygonf.html">QPolygonF</a> QPainterPath.toFillPolygon (<i>self</i>, <a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> <i>matrix</i>)</h3>
+<p>这是一个重载函数。</p>
+
+
+<h3 class="fn">
+<a name="toFillPolygons"></a>list-of-QPolygonF QPainterPath.toFillPolygons (<i>self</i>, <a href="qmatrix.html" tppabs="http://pyqt4doc.appspot.com/qmatrix.html">QMatrix</a> <i>matrix</i> = QMatrix())</h3>
+<p>路径转换成多边形使用列表中的<a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> <i>matrix</i>，并返回该列表。</p>
+<p>该功能不同于<a href="qpainterpath.html#toFillPolygon" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toFillPolygon">toFillPolygon</a>（ ）函数，它创建几个多边形。它被设置，因为它通常更快速地绘制几个小的多边形，而不是绘制一个大的多边形，即使点绘制的总数是相同的。</p>
+<p>该toFillPolygons （）函数不同于<a href="qpainterpath.html#toSubpathPolygons" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toSubpathPolygons">toSubpathPolygons</a>（ ）函数，它创建具有重叠边界矩形子路径只有多边形。</p>
+<p>像<a href="qpainterpath.html#toFillPolygon" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toFillPolygon">toFillPolygon</a>（ ）函数，该函数使用一个收卷技术，以确保重叠的子路径可以使用正确的填充规则来填补。另外，在多边形复捲插入附加系，以便填充多边形的轮廓并不路径的轮廓相匹配。</p>
+<p><b>See also</b> <a href="qpainterpath.html#toSubpathPolygons" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toSubpathPolygons">toSubpathPolygons</a>（ ）<a href="qpainterpath.html#toFillPolygon" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toFillPolygon">toFillPolygon</a>（）和<a href="qpainterpath.html#qpainterpath-conversion" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#qpainterpath-conversion">QPainterPath
+Conversion</a>。</p>
+
+
+<h3 class="fn">
+<a name="toFillPolygons-2"></a>list-of-QPolygonF QPainterPath.toFillPolygons (<i>self</i>, <a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> <i>matrix</i>)</h3>
+<p>这是一个重载函数。</p>
+
+
+<h3 class="fn">
+<a name="toReversed"></a><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> QPainterPath.toReversed (<i>self</i>)</h3>
+<p>创建并返回路径的逆转副本。</p>
+<p>它是一种颠倒元素的顺序：如果<a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a>通过调用组成的<a href="qpainterpath.html#moveTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#moveTo">moveTo</a>（ ）<a href="qpainterpath.html#lineTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#lineTo">lineTo</a>（）和<a href="qpainterpath.html#cubicTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#cubicTo">cubicTo</a>（ ）按照指定的顺序功能，逆转副本是通过调用组成<a href="qpainterpath.html#cubicTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#cubicTo">cubicTo</a>（ ）<a href="qpainterpath.html#lineTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#lineTo">lineTo</a>（）和<a href="qpainterpath.html#moveTo" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#moveTo">moveTo</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toSubpathPolygons"></a>list-of-QPolygonF QPainterPath.toSubpathPolygons (<i>self</i>, <a href="qmatrix.html" tppabs="http://pyqt4doc.appspot.com/qmatrix.html">QMatrix</a> <i>matrix</i> = QMatrix())</h3>
+<p>路径转换成多边形使用列表中的<a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> <i>matrix</i>，并返回该列表。</p>
+<p>这个函数创建一个多边形的每个子路径，无论相交的子路径（即重叠边界矩形）的。为了确保这种重叠的子路径正确填写，使用<a href="qpainterpath.html#toFillPolygons" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toFillPolygons">toFillPolygons</a>（ ）函数来代替。</p>
+<p><b>See also</b> <a href="qpainterpath.html#toFillPolygons" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toFillPolygons">toFillPolygons</a>（ ）<a href="qpainterpath.html#toFillPolygon" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#toFillPolygon">toFillPolygon</a>（）和<a href="qpainterpath.html#qpainterpath-conversion" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#qpainterpath-conversion">QPainterPath
+Conversion</a>。</p>
+
+
+<h3 class="fn">
+<a name="toSubpathPolygons-2"></a>list-of-QPolygonF QPainterPath.toSubpathPolygons (<i>self</i>, <a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> <i>matrix</i>)</h3>
+<p>这是一个重载函数。</p>
+
+
+<h3 class="fn">
+<a name="translate"></a>QPainterPath.translate (<i>self</i>, float <i>dx</i>, float <i>dy</i>)</h3>
+<p>由（转换路径中的所有元素<i>dx</i>，<i>dy</i>） 。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qpainterpath.html#translated" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#translated">translated</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="translate-2"></a>QPainterPath.translate (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>offset</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>由给定的转化路径中的所有元素<i>offset</i>。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qpainterpath.html#translated" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#translated">translated</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="translated"></a><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> QPainterPath.translated (<i>self</i>, float <i>dx</i>, float <i>dy</i>)</h3>
+<p>返回由（翻译路径的拷贝<i>dx</i>，<i>dy</i>） 。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qpainterpath.html#translate" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#translate">translate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="translated-2"></a><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> QPainterPath.translated (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>offset</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回一个由给定的原版的路径的副本<i>offset</i>。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qpainterpath.html#translate" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#translate">translate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="united"></a><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> QPainterPath.united (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> <i>r</i>)</h3>
+<p>返回作为此路径的填充区域和工会的路径<i>p</i>的填充区域。</p>
+<p>设置路径的操作将视路径，领域。非闭合路径将被隐式关闭处理。贝塞尔曲线可压扁排队，由于做贝塞尔曲线交点的数值不稳定段。</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qpainterpath.html#intersected" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#intersected">intersected</a>（）和<a href="qpainterpath.html#subtracted" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#subtracted">subtracted</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="__add__"></a><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> QPainterPath.__add__ (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> <i>other</i>)</h3>
+<h3 class="fn">
+<a name="__and__"></a><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> QPainterPath.__and__ (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> <i>other</i>)</h3>
+<h3 class="fn">
+<a name="__eq__"></a>bool QPainterPath.__eq__ (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> <i>other</i>)</h3>
+<h3 class="fn">
+<a name="__iadd__"></a><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> QPainterPath.__iadd__ (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> <i>other</i>)</h3>
+<h3 class="fn">
+<a name="__iand__"></a><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> QPainterPath.__iand__ (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> <i>other</i>)</h3>
+<h3 class="fn">
+<a name="__ior__"></a><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> QPainterPath.__ior__ (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> <i>other</i>)</h3>
+<h3 class="fn">
+<a name="__isub__"></a><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> QPainterPath.__isub__ (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> <i>other</i>)</h3>
+<h3 class="fn">
+<a name="__mul__"></a><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> QPainterPath.__mul__ (<i>self</i>, <a href="qmatrix.html" tppabs="http://pyqt4doc.appspot.com/qmatrix.html">QMatrix</a> <i>m</i>)</h3>
+<h3 class="fn">
+<a name="__mul__-2"></a><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> QPainterPath.__mul__ (<i>self</i>, <a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> <i>m</i>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QPainterPath.__ne__ (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> <i>other</i>)</h3>
+<h3 class="fn">
+<a name="__or__"></a><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> QPainterPath.__or__ (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> <i>other</i>)</h3>
+<h3 class="fn">
+<a name="__sub__"></a><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> QPainterPath.__sub__ (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> <i>other</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

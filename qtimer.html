@@ -1,0 +1,203 @@
+﻿<html>
+<head>
+<title>QTimer Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QTimer Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QTimer的类提供了重复和单触发定时器。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qtimer.html#QTimer" tppabs="http://pyqt4doc.appspot.com/qtimer.html#QTimer">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtimer.html#interval" tppabs="http://pyqt4doc.appspot.com/qtimer.html#interval">interval</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtimer.html#isActive" tppabs="http://pyqt4doc.appspot.com/qtimer.html#isActive">isActive</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtimer.html#isSingleShot" tppabs="http://pyqt4doc.appspot.com/qtimer.html#isSingleShot">isSingleShot</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtimer.html#setInterval" tppabs="http://pyqt4doc.appspot.com/qtimer.html#setInterval">setInterval</a></b> (<i>self</i>, int <i>msec</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtimer.html#setSingleShot" tppabs="http://pyqt4doc.appspot.com/qtimer.html#setSingleShot">setSingleShot</a></b> (<i>self</i>, bool <i>asingleShot</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtimer.html#start" tppabs="http://pyqt4doc.appspot.com/qtimer.html#start">start</a></b> (<i>self</i>, int <i>msec</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtimer.html#start-2" tppabs="http://pyqt4doc.appspot.com/qtimer.html#start-2">start</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtimer.html#stop" tppabs="http://pyqt4doc.appspot.com/qtimer.html#stop">stop</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtimer.html#timerEvent" tppabs="http://pyqt4doc.appspot.com/qtimer.html#timerEvent">timerEvent</a></b> (<i>self</i>, QTimerEvent)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtimer.html#timerId" tppabs="http://pyqt4doc.appspot.com/qtimer.html#timerId">timerId</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qtimer.html#singleShot" tppabs="http://pyqt4doc.appspot.com/qtimer.html#singleShot">singleShot</a></b> (int <i>msec</i>, QObject <i>receiver</i>, SLOT()SLOT() <i>member</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtimer.html#singleShot-2" tppabs="http://pyqt4doc.appspot.com/qtimer.html#singleShot-2">singleShot</a></b> (int <i>msec</i>, callable <i>receiver</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul><li>
+<div class="fn"></div>void <b><a href="qtimer.html#timeout" tppabs="http://pyqt4doc.appspot.com/qtimer.html#timeout">timeout</a></b> ()</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QTimer的类提供了重复和单触发定时器。</p>
+<p>该QTimer的类提供了一个高层次的编程接口，用于定时器。要使用它，创建一个QTimer的，其连接<a href="qtimer.html#timeout" tppabs="http://pyqt4doc.appspot.com/qtimer.html#timeout">timeout</a>（ ）信号到相应的插槽，和呼叫<a href="qtimer.html#start" tppabs="http://pyqt4doc.appspot.com/qtimer.html#start">start</a>（ ） 。从那时起，它将发出<a href="qtimer.html#timeout" tppabs="http://pyqt4doc.appspot.com/qtimer.html#timeout">timeout</a>（）信号以恒定的间隔。</p>
+<p>例如对于一个一秒钟（ 1000毫秒）计时器（从<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/widgets-analogclock.html">Analog Clock</a>为例）：</p>
+<pre class="cpp">
+     <span class="type">QTimer</span> <span class="operator">*</span>timer <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QTimer</span>(<span class="keyword">this</span>);
+     connect(timer<span class="operator">,</span> SIGNAL(timeout())<span class="operator">,</span> <span class="keyword">this</span><span class="operator">,</span> SLOT(update()));
+     timer<span class="operator">-</span><span class="operator">&gt;</span>start(<span class="number">1000</span>);
+</pre>
+<p>从这时起，在<tt>update()</tt>槽被调用每一秒。</p>
+<p>你可以通过调用setSingleShot （真）设置一个计时器超时只有一次。您也可以使用静态<a href="qtimer.html#singleShot" tppabs="http://pyqt4doc.appspot.com/qtimer.html#singleShot">QTimer.singleShot</a>（ ）函数在指定的时间间隔后调用一个槽：</p>
+<pre class="cpp">
+     <span class="type">QTimer</span><span class="operator">.</span>singleShot(<span class="number">200</span><span class="operator">,</span> <span class="keyword">this</span><span class="operator">,</span> SLOT(updateCaption()));
+</pre>
+<p>在多线程应用程序中，您可以在具有一个事件循环的任何线程使用QTimer的。要开始从非GUI线程，使用一个事件循环<a href="qthread.html#exec" tppabs="http://pyqt4doc.appspot.com/qthread.html#exec">QThread.exec</a>（ ） 。 Qt使用定时器的<a href="qobject.html#thread" tppabs="http://pyqt4doc.appspot.com/qobject.html#thread">thread affinity</a>以确定哪个线程会放出<a href="qtimer.html#timeout" tppabs="http://pyqt4doc.appspot.com/qtimer.html#timeout">timeout()</a>信号。正因为如此，你必须启动和停止在其线程计时器，它是不可能的，开始从另一个线程的计时器。</p>
+<p>作为一个特例，为0的超时QTimer的将超时只要在窗口系统的事件队列中的所有事件都被处理。这可以用来做繁重的工作，同时提供迅速的用户界面：</p>
+<pre class="cpp">
+     <span class="type">QTimer</span> <span class="operator">*</span>timer <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QTimer</span>(<span class="keyword">this</span>);
+     connect(timer<span class="operator">,</span> SIGNAL(timeout())<span class="operator">,</span> <span class="keyword">this</span><span class="operator">,</span> SLOT(processOneThing()));
+     timer<span class="operator">-</span><span class="operator">&gt;</span>start();
+</pre>
+<p><tt>processOneThing()</tt>将从此被重复调用。它应该写在这样一种方式，它总是很快返回（通常在处理一个数据项之后），这样Qt可以把事件传送给窗口部件，一旦它已经完成了它的一切工作停止计时器。这是实现GUI应用程序中繁重的工作的传统方式，多线程，现在越来越多的平台变得可用，而我们预期的零毫秒QTimers将逐渐被取代<a href="qthread.html" tppabs="http://pyqt4doc.appspot.com/qthread.html">QThread</a>秒。</p>
+<a id="accuracy-and-timer-resolution" name="accuracy-and-timer-resolution"></a>
+<h3>Accuracy and Timer Resolution</h3>
+<p>定时器永不超时早于指定超时值，他们不能保证超时在指定的精确值。在许多情况下，它们可能会超时迟到了一段时间，它取决于该系统定时器的精度。</p>
+<p>定时器的精度取决于底层操作系统和硬件。大多数平台支持1毫秒的分辨率，虽然计时器的精度不会在许多实际情况下等于该决议。</p>
+<p>如果Qt是不能传送定时器触发的请求数量，它会悄悄地丢弃一些。</p>
+<a id="alternatives-to-qtimer" name="alternatives-to-qtimer"></a>
+<h3>Alternatives to QTimer</h3>
+<p>另一种使用QTimer的方法是调用<a href="qobject.html#startTimer" tppabs="http://pyqt4doc.appspot.com/qobject.html#startTimer">QObject.startTimer</a>（ ）为对象，并重新实现<a href="qobject.html#timerEvent" tppabs="http://pyqt4doc.appspot.com/qobject.html#timerEvent">QObject.timerEvent</a>在你的类（）事件处理程序（它必须继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>） 。其缺点是<a href="qtimer.html#timerEvent" tppabs="http://pyqt4doc.appspot.com/qtimer.html#timerEvent">timerEvent</a>（ ）不支持这种高层次的特点单触发定时器或信号。</p>
+<p>另一个替代使用QTimer的方法是使用<a href="qbasictimer.html" tppabs="http://pyqt4doc.appspot.com/qbasictimer.html">QBasicTimer</a>。它通常比使用较不笨重<a href="qobject.html#startTimer" tppabs="http://pyqt4doc.appspot.com/qobject.html#startTimer">QObject.startTimer</a>（ ）直接。看<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/timers.html">Timers</a>对于所有三种方法的概述。</p>
+<p>某些操作系统会限制定时器，可用于数; Qt会试着解决这些限制。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QTimer"></a>QTimer.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个定时器与给定<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="interval"></a>int QTimer.interval (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="isActive"></a>bool QTimer.isActive (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="isSingleShot"></a>bool QTimer.isSingleShot (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="setInterval"></a>QTimer.setInterval (<i>self</i>, int <i>msec</i>)</h3>
+<h3 class="fn">
+<a name="setSingleShot"></a>QTimer.setSingleShot (<i>self</i>, bool <i>asingleShot</i>)</h3>
+<h3 class="fn">
+<a name="singleShot"></a>QTimer.singleShot (int <i>msec</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>receiver</i>, SLOT()SLOT() <i>member</i>)</h3>
+<p>一个给定的时间间隔后这个静态函数调用一个插槽。</p>
+<p>这是非常方便的使用此功能，因为您不需要打扰了<a href="qobject.html#timerEvent" tppabs="http://pyqt4doc.appspot.com/qobject.html#timerEvent">timerEvent</a>或者创建本地<a href="qtimer.html" tppabs="http://pyqt4doc.appspot.com/qtimer.html">QTimer</a>对象。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="preprocessor">#include &lt;QApplication&gt;</span>
+ <span class="preprocessor">#include &lt;QTimer&gt;</span>
+
+ <span class="type">int</span> main(<span class="type">int</span> argc<span class="operator">,</span> <span class="type">char</span> <span class="operator">*</span>argv<span class="operator">[</span><span class="operator">]</span>)
+ {
+     <span class="type"><a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a></span> app(argc<span class="operator">,</span> argv);
+     <span class="type"><a href="qtimer.html" tppabs="http://pyqt4doc.appspot.com/qtimer.html">QTimer</a></span><span class="operator">.</span>singleShot(<span class="number">600000</span><span class="operator">,</span> <span class="operator">&amp;</span>app<span class="operator">,</span> SLOT(quit()));
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+     <span class="keyword">return</span> app<span class="operator">.</span>exec();
+ }
+</pre>
+<p>此示例程序10分钟（ 600,000毫秒）后自动终止。</p>
+<p>该<i>receiver</i>为接收对象和<i>member</i>是槽。的时间间隔是<i>msec</i>毫秒。</p>
+<p><b>Note:</b>这个功能是<a href="index.htm#reentrant" tppabs="http://pyqt4doc.appspot.com/threads-reentrancy.html#reentrant">reentrant</a>。</p>
+<p><b>See also</b> <a href="qtimer.html#singleShot-prop" tppabs="http://pyqt4doc.appspot.com/qtimer.html#singleShot-prop">setSingleShot</a>（）和<a href="qtimer.html#start" tppabs="http://pyqt4doc.appspot.com/qtimer.html#start">start</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="singleShot-2"></a>QTimer.singleShot (int <i>msec</i>, callable <i>receiver</i>)</h3>
+<h3 class="fn">
+<a name="start"></a>QTimer.start (<i>self</i>, int <i>msec</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void start(int)</tt>。</p>
+<p>开始或重新开始的超时间隔定时器<i>msec</i>毫秒。</p>
+<p>如果计时器已经在运行，这将是<a href="qtimer.html#stop" tppabs="http://pyqt4doc.appspot.com/qtimer.html#stop">stopped</a>并重新启动。</p>
+<p>If <a href="qtimer.html#singleShot-prop" tppabs="http://pyqt4doc.appspot.com/qtimer.html#singleShot-prop">singleShot</a>诚然，定时器将只能激活一次。</p>
+
+
+<h3 class="fn">
+<a name="start-2"></a>QTimer.start (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void start()</tt>。</p>
+<p>这个函数的重载<a href="qtimer.html#start" tppabs="http://pyqt4doc.appspot.com/qtimer.html#start">start</a>（ ） 。</p>
+<p>启动或重新启动在指定的超时定时器<a href="qtimer.html#interval-prop" tppabs="http://pyqt4doc.appspot.com/qtimer.html#interval-prop">interval</a>。</p>
+<p>如果计时器已经在运行，这将是<a href="qtimer.html#stop" tppabs="http://pyqt4doc.appspot.com/qtimer.html#stop">stopped</a>并重新启动。</p>
+<p>If <a href="qtimer.html#singleShot-prop" tppabs="http://pyqt4doc.appspot.com/qtimer.html#singleShot-prop">singleShot</a>诚然，定时器将只能激活一次。</p>
+
+
+<h3 class="fn">
+<a name="stop"></a>QTimer.stop (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void stop()</tt>。</p>
+<p>停止计时器。</p>
+<p><b>See also</b> <a href="qtimer.html#start" tppabs="http://pyqt4doc.appspot.com/qtimer.html#start">start</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="timerEvent"></a>QTimer.timerEvent (<i>self</i>, <a href="qtimerevent.html" tppabs="http://pyqt4doc.appspot.com/qtimerevent.html">QTimerEvent</a>)</h3>
+<p>从重新实现<a href="qobject.html#timerEvent" tppabs="http://pyqt4doc.appspot.com/qobject.html#timerEvent">QObject.timerEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="timerId"></a>int QTimer.timerId (<i>self</i>)</h3>
+<p>返回如果计时器正在运行的定时器的ID ，否则返回-1 。</p>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="timeout"></a>void timeout ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时，定时器超时。</p>
+<p><b>See also</b> <a href="qtimer.html#interval-prop" tppabs="http://pyqt4doc.appspot.com/qtimer.html#interval-prop">interval</a>，<a href="qtimer.html#start" tppabs="http://pyqt4doc.appspot.com/qtimer.html#start">start</a>（）和<a href="qtimer.html#stop" tppabs="http://pyqt4doc.appspot.com/qtimer.html#stop">stop</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

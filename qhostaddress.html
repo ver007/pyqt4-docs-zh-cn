@@ -1,0 +1,334 @@
+﻿<html>
+<head>
+<title>QHostAddress Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QHostAddress Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtnetwork.html">QtNetwork</a> module]</sup></sup>
+</h1>
+<p>该QHostAddress类提供一个IP地址。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qhostaddress.html#SpecialAddress-enum" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#SpecialAddress-enum">SpecialAddress</a></b> { Null, Broadcast, LocalHost, LocalHostIPv6, AnyIPv6, Any }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qhostaddress.html#QHostAddress" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#QHostAddress">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhostaddress.html#QHostAddress-2" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#QHostAddress-2">__init__</a></b> (<i>self</i>, SpecialAddress <i>address</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhostaddress.html#QHostAddress-3" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#QHostAddress-3">__init__</a></b> (<i>self</i>, int <i>ip4Addr</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhostaddress.html#QHostAddress-4" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#QHostAddress-4">__init__</a></b> (<i>self</i>, QString <i>address</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhostaddress.html#QHostAddress-5" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#QHostAddress-5">__init__</a></b> (<i>self</i>, 16-tuple-of-int <i>ip6Addr</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhostaddress.html#QHostAddress-6" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#QHostAddress-6">__init__</a></b> (<i>self</i>, QHostAddress <i>copy</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhostaddress.html#clear" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#clear">clear</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qhostaddress.html#isInSubnet" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#isInSubnet">isInSubnet</a></b> (<i>self</i>, QHostAddress <i>subnet</i>, int <i>netmask</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qhostaddress.html#isInSubnet-2" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#isInSubnet-2">isInSubnet</a></b> (<i>self</i>, tuple-of-QHostAddress-int <i>subnet</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qhostaddress.html#isNull" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#isNull">isNull</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QAbstractSocket.NetworkLayerProtocol <b><a href="qhostaddress.html#protocol" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#protocol">protocol</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qhostaddress.html#scopeId" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#scopeId">scopeId</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhostaddress.html#setAddress" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#setAddress">setAddress</a></b> (<i>self</i>, int <i>ip4Addr</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qhostaddress.html#setAddress-2" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#setAddress-2">setAddress</a></b> (<i>self</i>, QString <i>address</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhostaddress.html#setAddress-3" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#setAddress-3">setAddress</a></b> (<i>self</i>, 16-tuple-of-int <i>ip6Addr</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhostaddress.html#setScopeId" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#setScopeId">setScopeId</a></b> (<i>self</i>, QString <i>id</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qhostaddress.html#toIPv4Address" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#toIPv4Address">toIPv4Address</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>16-tuple-of-int <b><a href="qhostaddress.html#toIPv6Address" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#toIPv6Address">toIPv6Address</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qhostaddress.html#toString" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#toString">toString</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul><li>
+<div class="fn"></div>tuple-of-QHostAddress-int <b><a href="qhostaddress.html#parseSubnet" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#parseSubnet">parseSubnet</a></b> (QString <i>subnet</i>)</li></ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>bool <b><a href="qhostaddress.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#__eq__">__eq__</a></b> (<i>self</i>, QHostAddress <i>address</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qhostaddress.html#__eq__-2" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#__eq__-2">__eq__</a></b> (<i>self</i>, SpecialAddress <i>address</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qhostaddress.html#__hash__" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#__hash__">__hash__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qhostaddress.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#__ne__">__ne__</a></b> (<i>self</i>, QHostAddress <i>address</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qhostaddress.html#__ne__-2" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#__ne__-2">__ne__</a></b> (<i>self</i>, SpecialAddress <i>address</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QHostAddress类提供一个IP地址。</p>
+<p>此类包含IPv4或IPv6地址在一个平台和协议无关的方式。</p>
+<p>QHostAddress通常与所使用的<a href="qtcpsocket.html" tppabs="http://pyqt4doc.appspot.com/qtcpsocket.html">QTcpSocket</a>，<a href="qtcpserver.html" tppabs="http://pyqt4doc.appspot.com/qtcpserver.html">QTcpServer</a>和<a href="qudpsocket.html" tppabs="http://pyqt4doc.appspot.com/qudpsocket.html">QUdpSocket</a>连接到主机或设立一个服务器。</p>
+<p>主机地址设置与<a href="qhostaddress.html#setAddress" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#setAddress">setAddress</a>（） ，并检索与<a href="qhostaddress.html#toIPv4Address" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#toIPv4Address">toIPv4Address</a>（ ）<a href="qhostaddress.html#toIPv6Address" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#toIPv6Address">toIPv6Address</a>（） ，或<a href="qhostaddress.html#toString" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#toString">toString</a>（ ） 。您可以检查与类型<a href="qhostaddress.html#protocol" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#protocol">protocol</a>（ ） 。</p>
+<p><b>Note:</b>请注意， QHostAddress没有做DNS查找。<a href="qhostinfo.html" tppabs="http://pyqt4doc.appspot.com/qhostinfo.html">QHostInfo</a>是需要这一点。</p>
+<p>该类还支持常见的预定义的地址：<a href="qhostaddress.html#SpecialAddress-enum" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#SpecialAddress-enum">Null</a>，<a href="qhostaddress.html#SpecialAddress-enum" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#SpecialAddress-enum">LocalHost</a>，<a href="qhostaddress.html#SpecialAddress-enum" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#SpecialAddress-enum">LocalHostIPv6</a>，<a href="qhostaddress.html#SpecialAddress-enum" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#SpecialAddress-enum">Broadcast</a>和<a href="qhostaddress.html#SpecialAddress-enum" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#SpecialAddress-enum">Any</a>。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="SpecialAddress-enum"></a>QHostAddress.SpecialAddress</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHostAddress.Null</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">空地址的对象。相当于<a href="qhostaddress.html#QHostAddress" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#QHostAddress">QHostAddress</a>（ ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHostAddress.LocalHost</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">在本地主机的IPv4地址。相当于<a href="qhostaddress.html" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html">QHostAddress</a>（ “127.0.0.1” ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHostAddress.LocalHostIPv6</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">IPv6的本地主机地址。相当于<a href="qhostaddress.html" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html">QHostAddress</a>（ “.1” ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHostAddress.Broadcast</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">IPv4的广播地址。相当于<a href="qhostaddress.html" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html">QHostAddress</a>（ “255.255.255.255” ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHostAddress.Any</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">IPv4的任何地址。相当于<a href="qhostaddress.html" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html">QHostAddress</a>（ “0.0.0.0” ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHostAddress.AnyIPv6</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">IPv6的任何地址。相当于<a href="qhostaddress.html" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html">QHostAddress</a>（ “<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html">.</a>“ ） 。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QHostAddress"></a>QHostAddress.__init__ (<i>self</i>)</h3>
+<p>构造一个主机地址对象的IP地址为0.0.0.0 。</p>
+<p><b>See also</b> <a href="qhostaddress.html#clear" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#clear">clear</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QHostAddress-2"></a>QHostAddress.__init__ (<i>self</i>, <a href="qhostaddress.html#SpecialAddress-enum" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#SpecialAddress-enum">SpecialAddress</a> <i>address</i>)</h3>
+<p>构造一个主机地址对象的IPv4地址<i>ip4Addr</i>。</p>
+
+
+<h3 class="fn">
+<a name="QHostAddress-3"></a>QHostAddress.__init__ (<i>self</i>, int <i>ip4Addr</i>)</h3>
+<p>构造一个主机地址对象的IPv6地址<i>ip6Addr</i>。</p>
+<p><i>ip6Addr</i>必须是网络字节顺序（大端）一个16字节的数组。</p>
+
+
+<h3 class="fn">
+<a name="QHostAddress-4"></a>QHostAddress.__init__ (<i>self</i>, QString <i>address</i>)</h3>
+<p>构造一个主机地址对象的IPv6地址<i>ip6Addr</i>。</p>
+
+
+<h3 class="fn">
+<a name="QHostAddress-5"></a>QHostAddress.__init__ (<i>self</i>, 16-tuple-of-int <i>ip6Addr</i>)</h3>
+<p>构造使用由天然结构中指定的地址的IPv4或IPv6地址<i>sockaddr</i>。</p>
+<p><b>See also</b> <a href="qhostaddress.html#setAddress" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#setAddress">setAddress</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QHostAddress-6"></a>QHostAddress.__init__ (<i>self</i>, <a href="qhostaddress.html" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html">QHostAddress</a> <i>copy</i>)</h3>
+<p>构建了基于字符串的IPv4或IPv6地址<i>address</i>（例如， “127.0.0.1” ） 。</p>
+<p><b>See also</b> <a href="qhostaddress.html#setAddress" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#setAddress">setAddress</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clear"></a>QHostAddress.clear (<i>self</i>)</h3>
+<p>设置主机地址为0.0.0.0 。</p>
+
+
+<h3 class="fn">
+<a name="isInSubnet"></a>bool QHostAddress.isInSubnet (<i>self</i>, <a href="qhostaddress.html" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html">QHostAddress</a> <i>subnet</i>, int <i>netmask</i>)</h3>
+<p>返回True如果这个IP是由网络前缀描述的子网<i>subnet</i>和网络掩码<i>netmask</i>。</p>
+<p>一个IP被认为是属于一个子网，如果它包含的最低和该子网中的最高地址。在IP版本4的情况下，最低的地址是网络地址，而最高地址是广播地址。</p>
+<p>该<i>subnet</i>参数并不一定是实际的网络地址（子网中的最低地址） 。它可以是属于该子网的任何有效的IP地址。特别是，如果它等于通过这个对象持有的IP地址，这个函数将始终返回True （所提供的网络掩码是一个有效的值） 。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qhostaddress.html#parseSubnet" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#parseSubnet">parseSubnet</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isInSubnet-2"></a>bool QHostAddress.isInSubnet (<i>self</i>, tuple-of-QHostAddress-int <i>subnet</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回True如果这个IP是由描述的子网<i>subnet</i>。该<a href="qhostaddress.html" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html">QHostAddress</a>成员<i>subnet</i>包含网络前缀和整数（二）成员包含子网掩码（前缀长度） 。</p>
+<p>此功能被引入Qt的4.5 。</p>
+
+
+<h3 class="fn">
+<a name="isNull"></a>bool QHostAddress.isNull (<i>self</i>)</h3>
+<p>返回True如果主机地址为空（ INADDR_ANY或IN6ADDR_ANY ） 。默认的构造函数创建一个空的地址，该地址是无效的任何主机或接口。</p>
+
+
+<h3 class="fn">
+<a name="parseSubnet"></a>tuple-of-QHostAddress-int QHostAddress.parseSubnet (QString <i>subnet</i>)</h3>
+<p>解析包含在IP和子网信息<i>subnet</i>并返回网络前缀的网络前缀长度。</p>
+<p>IP地址和网络掩码必须以斜杠（ / ）分隔。</p>
+<p>此功能支持形式参数：</p>
+<ul>
+<li>123.123.123.123/n where n is any value between 0 and 32</li>
+<li>123.123.123.123/255.255.255.255</li>
+<li>&lt;ipv6-address&gt;/n where n is any value between 0 and
+128</li>
+</ul>
+<p>对于IP版本4 ，这个函数接受以及缺少结尾的部分（即，小于4个字节，如“ 192.168.1 ” ），其次或不点。如果子网掩码也在这种情况下丢失，它被设置为实际传递的字节数（在上面的例子中，这将是24 ，为3个八比特组） 。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qhostaddress.html#isInSubnet" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#isInSubnet">isInSubnet</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="protocol"></a><a href="qabstractsocket.html#NetworkLayerProtocol-enum" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#NetworkLayerProtocol-enum">QAbstractSocket.NetworkLayerProtocol</a> QHostAddress.protocol (<i>self</i>)</h3>
+<p>返回主机地址中的网络层协议。</p>
+
+
+<h3 class="fn">
+<a name="scopeId"></a>QString QHostAddress.scopeId (<i>self</i>)</h3>
+<p>返回一个IPv6地址的范围ID 。对于IPv4地址，或者地址不包含范围ID ，一个空<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>返回。</p>
+<p>IPv6的范围ID指定的范围<i>reachability</i>对于非全局IPv6地址，限制在其中的地址可使用的区域。所有的IPv6地址与这样的可达范围有关。范围ID被用来消除那些不能保证是全局唯一的地址。</p>
+<p>的IPv6指定了以下四个层次的可达性：</p>
+<ul>
+<li>Node-local: Addresses that are only used for communicating with
+services on the same interface (e.g., the loopback interface
+".1").</li>
+<li>Link-local: Addresses that are local to the network interface
+(<i>link</i>). There is always one link-local address for each IPv6
+interface on your host. Link-local addresses ("fe80...") are
+generated from the MAC address of the local network adaptor, and
+are not guaranteed to be unique.</li>
+<li>Site-local: Addresses that are local to the site / private
+network (e.g., the company intranet). Site-local addresses
+("fec0...") are usually distributed by the site router, and are not
+guaranteed to be unique outside of the local site.</li>
+<li>Global: For globally routable addresses, such as public servers
+on the Internet.</li>
+</ul>
+<p>当使用链路本地和站点本地地址的IPv6连接，则必须指定范围ID 。一个链路本地地址的范围ID通常是相同的接口名称（例如，“ eth0的” ， “ EN1 ” ）或数字（例如， “ 1 ” ， “2” ） 。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qhostaddress.html#setScopeId" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#setScopeId">setScopeId</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setAddress"></a>QHostAddress.setAddress (<i>self</i>, int <i>ip4Addr</i>)</h3>
+<p>通过设置指定的IPv4地址<i>ip4Addr</i>。</p>
+
+
+<h3 class="fn">
+<a name="setAddress-2"></a>bool QHostAddress.setAddress (<i>self</i>, QString <i>address</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>通过设置指定的IPv6地址<i>ip6Addr</i>。</p>
+<p><i>ip6Addr</i>必须是网络字节顺序（高位字节在前） 16字节的数组。</p>
+
+
+<h3 class="fn">
+<a name="setAddress-3"></a>QHostAddress.setAddress (<i>self</i>, 16-tuple-of-int <i>ip6Addr</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>通过设置指定的IPv6地址<i>ip6Addr</i>。</p>
+
+
+<h3 class="fn">
+<a name="setScopeId"></a>QHostAddress.setScopeId (<i>self</i>, QString <i>id</i>)</h3>
+<p>设置地址的IPv6范围ID来<i>id</i>。如果地址协议是不支持IPv6 ，这个函数不执行任何操作。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qhostaddress.html#scopeId" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#scopeId">scopeId</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toIPv4Address"></a>int QHostAddress.toIPv4Address (<i>self</i>)</h3>
+<p>返回的IPv4地址为一个数字。</p>
+<p>例如，如果地址是127.0.0.1 ，则返回值是2130706433 （即0x7f000001 ） 。</p>
+<p>此值才有效，如果该协议（ ）是<a href="qabstractsocket.html#NetworkLayerProtocol-enum" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#NetworkLayerProtocol-enum">IPv4Protocol</a>。</p>
+<p><b>See also</b> <a href="qhostaddress.html#toString" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#toString">toString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toIPv6Address"></a>16-tuple-of-int QHostAddress.toIPv6Address (<i>self</i>)</h3>
+<p>返回IPv6地址作为Q_IPV6ADDR结构。该结构由16位无符号的字符。</p>
+<pre class="cpp">
+ Q_IPV6ADDR addr <span class="operator">=</span> hostAddr<span class="operator">.</span>toIPv6Address();
+ <span class="comment">// addr contains 16 unsigned characters</span>
+
+ <span class="keyword">for</span> (<span class="type">int</span> i <span class="operator">=</span> <span class="number">0</span>; i <span class="operator">&lt;</span> <span class="number">16</span>; <span class="operator">+</span><span class="operator">+</span>i) {
+     <span class="comment">// process addr[i]</span>
+ }
+</pre>
+<p>此值才有效，如果<a href="qhostaddress.html#protocol" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#protocol">protocol</a>（）是<a href="qabstractsocket.html#NetworkLayerProtocol-enum" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#NetworkLayerProtocol-enum">IPv6Protocol</a>。</p>
+<p><b>See also</b> <a href="qhostaddress.html#toString" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#toString">toString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toString"></a>QString QHostAddress.toString (<i>self</i>)</h3>
+<p>返回该地址为一个字符串。</p>
+<p>例如，如果该地址是IPv4地址127.0.0.1 ，则返回的字符串为“ 127.0.0.1” 。对于IPv6的字符串格式将遵循RFC5952建议。</p>
+<p><b>See also</b> <a href="qhostaddress.html#toIPv4Address" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#toIPv4Address">toIPv4Address</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="__eq__"></a>bool QHostAddress.__eq__ (<i>self</i>, <a href="qhostaddress.html" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html">QHostAddress</a> <i>address</i>)</h3>
+<h3 class="fn">
+<a name="__eq__-2"></a>bool QHostAddress.__eq__ (<i>self</i>, <a href="qhostaddress.html#SpecialAddress-enum" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#SpecialAddress-enum">SpecialAddress</a> <i>address</i>)</h3>
+<h3 class="fn">
+<a name="__hash__"></a>int QHostAddress.__hash__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QHostAddress.__ne__ (<i>self</i>, <a href="qhostaddress.html" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html">QHostAddress</a> <i>address</i>)</h3>
+<h3 class="fn">
+<a name="__ne__-2"></a>bool QHostAddress.__ne__ (<i>self</i>, <a href="qhostaddress.html#SpecialAddress-enum" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#SpecialAddress-enum">SpecialAddress</a> <i>address</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

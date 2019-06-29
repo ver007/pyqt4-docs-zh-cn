@@ -1,0 +1,188 @@
+﻿<html>
+<head>
+<title>QReadWriteLock Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QReadWriteLock Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QReadWriteLock类提供的读写锁。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qreadwritelock.html#RecursionMode-enum" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#RecursionMode-enum">RecursionMode</a></b> { NonRecursive, Recursive }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qreadwritelock.html#QReadWriteLock" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#QReadWriteLock">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qreadwritelock.html#QReadWriteLock-2" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#QReadWriteLock-2">__init__</a></b> (<i>self</i>, RecursionMode <i>recursionMode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qreadwritelock.html#lockForRead" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#lockForRead">lockForRead</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qreadwritelock.html#lockForWrite" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#lockForWrite">lockForWrite</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qreadwritelock.html#tryLockForRead" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#tryLockForRead">tryLockForRead</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qreadwritelock.html#tryLockForRead-2" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#tryLockForRead-2">tryLockForRead</a></b> (<i>self</i>, int <i>timeout</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qreadwritelock.html#tryLockForWrite" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#tryLockForWrite">tryLockForWrite</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qreadwritelock.html#tryLockForWrite-2" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#tryLockForWrite-2">tryLockForWrite</a></b> (<i>self</i>, int <i>timeout</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qreadwritelock.html#unlock" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#unlock">unlock</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QReadWriteLock类提供的读写锁。</p>
+<p>读写锁是一个同步工具，用于保护可用于读取和写入访问的资源。如果你想允许多个线程同时有只读访问这个类型的锁是有用的，但只要有一个线程要写入的资源，所有其它线程必须被阻止，直到写入完成。</p>
+<p>在许多情况下， QReadWriteLock是一个直接竞争者<a href="qmutex.html" tppabs="http://pyqt4doc.appspot.com/qmutex.html">QMutex</a>。 QReadWriteLock是一个不错的选择，如果有许多并发读取和写入发生很少。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type">QReadWriteLock</span> lock;
+
+ <span class="type">void</span> ReaderThread<span class="operator">.</span>run()
+ {
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+     lock<span class="operator">.</span>lockForRead();
+     read_file();
+     lock<span class="operator">.</span>unlock();
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ }
+
+ <span class="type">void</span> WriterThread<span class="operator">.</span>run()
+ {
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+     lock<span class="operator">.</span>lockForWrite();
+     write_file();
+     lock<span class="operator">.</span>unlock();
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ }
+</pre>
+<p>以确保作家不是由读者永远阻塞，读者试图获取锁不会如果有阻塞作家等待访问，即使锁定目前仅由其它读者访问成功。此外，如果该锁由一个作家访问和另一位作家进来，那笔者将优先于该也可能会等待任何读者。</p>
+<p>喜欢<a href="qmutex.html" tppabs="http://pyqt4doc.appspot.com/qmutex.html">QMutex</a>，一个QReadWriteLock可以在构建时被递归锁定由同一个线程<a href="qreadwritelock.html#RecursionMode-enum" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#RecursionMode-enum">QReadWriteLock.RecursionMode</a>。在这种情况下，<a href="qreadwritelock.html#unlock" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#unlock">unlock</a>（ ）必须被调用的次数相同<a href="qreadwritelock.html#lockForWrite" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#lockForWrite">lockForWrite</a>（）或<a href="qreadwritelock.html#lockForRead" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#lockForRead">lockForRead</a>（ ）被调用。需要注意的是试图以递归方式锁定，也就是说，它是不可能的读锁，在已经锁定写（反之亦然）一个线程，当锁定类型不能改变。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="RecursionMode-enum"></a>QReadWriteLock.RecursionMode</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QReadWriteLock.Recursive</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">在这种模式下，一个线程可以锁定同一<a href="qreadwritelock.html" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html">QReadWriteLock</a>多次与互斥不会被解锁，直到相应数量的<a href="qreadwritelock.html#unlock" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#unlock">unlock</a>（ ）的调用而制定的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QReadWriteLock.NonRecursive</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">在这种模式下，一个线程可能仅锁定<a href="qreadwritelock.html" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html">QReadWriteLock</a>一次。</td>
+</tr>
+</table>
+<p>这个枚举被引入或修改的Qt 4.4 。</p>
+<p><b>See also</b> <a href="qreadwritelock.html#QReadWriteLock" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#QReadWriteLock">QReadWriteLock</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QReadWriteLock"></a>QReadWriteLock.__init__ (<i>self</i>)</h3>
+<p>构造一个<a href="qreadwritelock.html" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html">QReadWriteLock</a>在对象<a href="qreadwritelock.html#RecursionMode-enum" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#RecursionMode-enum">NonRecursive</a>模式。</p>
+<p><b>See also</b> <a href="qreadwritelock.html#lockForRead" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#lockForRead">lockForRead</a>（）和<a href="qreadwritelock.html#lockForWrite" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#lockForWrite">lockForWrite</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QReadWriteLock-2"></a>QReadWriteLock.__init__ (<i>self</i>, <a href="qreadwritelock.html#RecursionMode-enum" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#RecursionMode-enum">RecursionMode</a> <i>recursionMode</i>)</h3>
+<p>构造一个<a href="qreadwritelock.html" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html">QReadWriteLock</a>在给定的对象<i>recursionMode</i>。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qreadwritelock.html#lockForRead" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#lockForRead">lockForRead</a>（ ）<a href="qreadwritelock.html#lockForWrite" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#lockForWrite">lockForWrite</a>（）和<a href="qreadwritelock.html#RecursionMode-enum" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#RecursionMode-enum">RecursionMode</a>。</p>
+
+
+<h3 class="fn">
+<a name="lockForRead"></a>QReadWriteLock.lockForRead (<i>self</i>)</h3>
+<p>锁读锁。此函数将阻塞当前线程，如果任何线程（包括当前）已锁定用于写入。</p>
+<p><b>See also</b> <a href="qreadwritelock.html#unlock" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#unlock">unlock</a>（ ）<a href="qreadwritelock.html#lockForWrite" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#lockForWrite">lockForWrite</a>（）和<a href="qreadwritelock.html#tryLockForRead" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#tryLockForRead">tryLockForRead</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="lockForWrite"></a>QReadWriteLock.lockForWrite (<i>self</i>)</h3>
+<p>锁写锁。此函数将阻塞当前线程，如果另一个线程已锁定读取或写入。</p>
+<p><b>See also</b> <a href="qreadwritelock.html#unlock" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#unlock">unlock</a>（ ）<a href="qreadwritelock.html#lockForRead" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#lockForRead">lockForRead</a>（）和<a href="qreadwritelock.html#tryLockForWrite" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#tryLockForWrite">tryLockForWrite</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="tryLockForRead"></a>bool QReadWriteLock.tryLockForRead (<i>self</i>)</h3>
+<p>尝试读锁。如果获得了锁，这个函数返回True ，否则返回，而不是等待该锁虚假变得可用，也就是说，它不会阻塞。</p>
+<p>如果另一个线程已锁定用于写入的锁定尝试将会失败。</p>
+<p>如果获得了锁，该锁必须被解锁<a href="qreadwritelock.html#unlock" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#unlock">unlock</a>（ ）之前，另一个线程可以成功地将其锁定。</p>
+<p><b>See also</b> <a href="qreadwritelock.html#unlock" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#unlock">unlock</a>（）和<a href="qreadwritelock.html#lockForRead" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#lockForRead">lockForRead</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="tryLockForRead-2"></a>bool QReadWriteLock.tryLockForRead (<i>self</i>, int <i>timeout</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>尝试读锁。如果获得了锁这个函数返回True，否则返回False 。如果另一个线程已锁定的文笔，这个函数将等待最多<i>timeout</i>毫秒为锁变得可用。</p>
+<p>注意：传递一个负数作为<i>timeout</i>相当于调用<a href="qreadwritelock.html#lockForRead" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#lockForRead">lockForRead</a>（ ） ，即该函数将一直等待，直到锁可以锁定读数时<i>timeout</i>是负的。</p>
+<p>如果获得了锁，该锁必须被解锁<a href="qreadwritelock.html#unlock" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#unlock">unlock</a>（ ）之前，另一个线程可以成功地将其锁定。</p>
+<p><b>See also</b> <a href="qreadwritelock.html#unlock" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#unlock">unlock</a>（）和<a href="qreadwritelock.html#lockForRead" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#lockForRead">lockForRead</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="tryLockForWrite"></a>bool QReadWriteLock.tryLockForWrite (<i>self</i>)</h3>
+<p>尝试写锁。如果获得了锁，则该函数返回True，否则，它会立即返回False 。</p>
+<p>如果另一个线程已锁定用于读取或写入锁定的尝试将会失败。</p>
+<p>如果获得了锁，该锁必须被解锁<a href="qreadwritelock.html#unlock" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#unlock">unlock</a>（ ）之前，另一个线程可以成功地将其锁定。</p>
+<p><b>See also</b> <a href="qreadwritelock.html#unlock" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#unlock">unlock</a>（）和<a href="qreadwritelock.html#lockForWrite" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#lockForWrite">lockForWrite</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="tryLockForWrite-2"></a>bool QReadWriteLock.tryLockForWrite (<i>self</i>, int <i>timeout</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>尝试写锁。如果获得了锁这个函数返回True，否则返回False 。如果另一个线程已锁定用于读取或写入时，此功能会等待最多<i>timeout</i>毫秒为锁变得可用。</p>
+<p>注意：传递一个负数作为<i>timeout</i>相当于调用<a href="qreadwritelock.html#lockForWrite" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#lockForWrite">lockForWrite</a>（ ） ，即该函数将一直等待，直到锁可以锁定写入时<i>timeout</i>是负的。</p>
+<p>如果获得了锁，该锁必须被解锁<a href="qreadwritelock.html#unlock" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#unlock">unlock</a>（ ）之前，另一个线程可以成功地将其锁定。</p>
+<p><b>See also</b> <a href="qreadwritelock.html#unlock" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#unlock">unlock</a>（）和<a href="qreadwritelock.html#lockForWrite" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#lockForWrite">lockForWrite</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="unlock"></a>QReadWriteLock.unlock (<i>self</i>)</h3>
+<p>解除锁定。</p>
+<p>试图解锁未锁定的锁是一个错误，将导致程序终止。</p>
+<p><b>See also</b> <a href="qreadwritelock.html#lockForRead" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#lockForRead">lockForRead</a>（ ）<a href="qreadwritelock.html#lockForWrite" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#lockForWrite">lockForWrite</a>（ ）<a href="qreadwritelock.html#tryLockForRead" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#tryLockForRead">tryLockForRead</a>（）和<a href="qreadwritelock.html#tryLockForWrite" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#tryLockForWrite">tryLockForWrite</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

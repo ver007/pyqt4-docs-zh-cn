@@ -1,0 +1,126 @@
+﻿<html>
+<head>
+<title>QCryptographicHash Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QCryptographicHash Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QCryptographicHash类提供了一种方法来生成密码散列。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qcryptographichash.html#Algorithm-enum" tppabs="http://pyqt4doc.appspot.com/qcryptographichash.html#Algorithm-enum">Algorithm</a></b> { Md4, Md5, Sha1 }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qcryptographichash.html#QCryptographicHash" tppabs="http://pyqt4doc.appspot.com/qcryptographichash.html#QCryptographicHash">__init__</a></b> (<i>self</i>, Algorithm <i>method</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qcryptographichash.html#addData" tppabs="http://pyqt4doc.appspot.com/qcryptographichash.html#addData">addData</a></b> (<i>self</i>, str <i>data</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qcryptographichash.html#addData-2" tppabs="http://pyqt4doc.appspot.com/qcryptographichash.html#addData-2">addData</a></b> (<i>self</i>, QByteArray <i>data</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qcryptographichash.html#reset" tppabs="http://pyqt4doc.appspot.com/qcryptographichash.html#reset">reset</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qcryptographichash.html#result" tppabs="http://pyqt4doc.appspot.com/qcryptographichash.html#result">result</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul><li>
+<div class="fn"></div>QByteArray <b><a href="qcryptographichash.html#hash" tppabs="http://pyqt4doc.appspot.com/qcryptographichash.html#hash">hash</a></b> (QByteArray <i>data</i>, Algorithm <i>method</i>)</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QCryptographicHash类提供了一种方法来生成密码散列。</p>
+<p>QCryptographicHash可以用来产生二进制或文本数据的加密哈希值。</p>
+<p>目前MD4，MD5和SHA-1被支持。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="Algorithm-enum"></a>QCryptographicHash.Algorithm</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QCryptographicHash.Md4</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">产生一个MD4哈希总和</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QCryptographicHash.Md5</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">生成一个MD5散列总和</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QCryptographicHash.Sha1</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">生成一个SHA1哈希总和</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QCryptographicHash"></a>QCryptographicHash.__init__ (<i>self</i>, <a href="qcryptographichash.html#Algorithm-enum" tppabs="http://pyqt4doc.appspot.com/qcryptographichash.html#Algorithm-enum">Algorithm</a> <i>method</i>)</h3>
+<p>构造一个对象，该对象可以使用用于从数据创建密码散列<i>method</i>。</p>
+
+
+<h3 class="fn">
+<a name="addData"></a>QCryptographicHash.addData (<i>self</i>, str <i>data</i>)</h3>
+<p>将第一<i>length</i>的字符<i>data</i>到的加密哈希值。</p>
+
+
+<h3 class="fn">
+<a name="addData-2"></a>QCryptographicHash.addData (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>data</i>)</h3>
+<p>这个函数的重载<a href="qcryptographichash.html#addData" tppabs="http://pyqt4doc.appspot.com/qcryptographichash.html#addData">addData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hash"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QCryptographicHash.hash (<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>data</i>, <a href="qcryptographichash.html#Algorithm-enum" tppabs="http://pyqt4doc.appspot.com/qcryptographichash.html#Algorithm-enum">Algorithm</a> <i>method</i>)</h3>
+<p>返回的散列<i>data</i> using <i>method</i>。</p>
+
+
+<h3 class="fn">
+<a name="reset"></a>QCryptographicHash.reset (<i>self</i>)</h3>
+<p>重置对象。</p>
+
+
+<h3 class="fn">
+<a name="result"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QCryptographicHash.result (<i>self</i>)</h3>
+<p>返回最终的哈希值。</p>
+<p><b>See also</b> <a href="qbytearray.html#toHex" tppabs="http://pyqt4doc.appspot.com/qbytearray.html#toHex">QByteArray.toHex</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

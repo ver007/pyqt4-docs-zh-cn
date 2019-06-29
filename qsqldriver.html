@@ -1,0 +1,575 @@
+﻿<html>
+<head>
+<title>QSqlDriver Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QSqlDriver Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtsql.html">QtSql</a> module]</sup></sup>
+</h1>
+<p>该QSqlDriver类是用于访问特定的SQL数据库的抽象基类。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qsqldriver.html#DriverFeature-enum" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#DriverFeature-enum">DriverFeature</a></b> { Transactions, QuerySize, BLOB, Unicode, ..., MultipleResultSets }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qsqldriver.html#IdentifierType-enum" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#IdentifierType-enum">IdentifierType</a></b> { FieldName, TableName }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qsqldriver.html#StatementType-enum" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#StatementType-enum">StatementType</a></b> { WhereStatement, SelectStatement, UpdateStatement, InsertStatement, DeleteStatement }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qsqldriver.html#QSqlDriver" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#QSqlDriver">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqldriver.html#beginTransaction" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#beginTransaction">beginTransaction</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqldriver.html#close" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#close">close</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqldriver.html#commitTransaction" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#commitTransaction">commitTransaction</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSqlResult <b><a href="qsqldriver.html#createResult" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#createResult">createResult</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsqldriver.html#escapeIdentifier" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#escapeIdentifier">escapeIdentifier</a></b> (<i>self</i>, QString <i>identifier</i>, IdentifierType <i>type</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsqldriver.html#formatValue" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#formatValue">formatValue</a></b> (<i>self</i>, QSqlField <i>field</i>, bool <i>trimStrings</i> = False)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qsqldriver.html#handle" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#handle">handle</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqldriver.html#hasFeature" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#hasFeature">hasFeature</a></b> (<i>self</i>, DriverFeature <i>f</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqldriver.html#isIdentifierEscaped" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#isIdentifierEscaped">isIdentifierEscaped</a></b> (<i>self</i>, QString <i>identifier</i>, IdentifierType <i>type</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqldriver.html#isIdentifierEscapedImplementation" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#isIdentifierEscapedImplementation">isIdentifierEscapedImplementation</a></b> (<i>self</i>, QString <i>identifier</i>, IdentifierType <i>type</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqldriver.html#isOpen" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#isOpen">isOpen</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqldriver.html#isOpenError" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#isOpenError">isOpenError</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSqlError <b><a href="qsqldriver.html#lastError" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#lastError">lastError</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSql.NumericalPrecisionPolicy <b><a href="qsqldriver.html#numericalPrecisionPolicy" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#numericalPrecisionPolicy">numericalPrecisionPolicy</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqldriver.html#open" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#open">open</a></b> (<i>self</i>, QString <i>db</i>, QString <i>user</i> = QString(), QString <i>password</i> = QString(), QString <i>host</i> = QString(), int <i>port</i> = -1, QString <i>options</i> = QString())</li>
+<li>
+<div class="fn"></div>QSqlIndex <b><a href="qsqldriver.html#primaryIndex" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#primaryIndex">primaryIndex</a></b> (<i>self</i>, QString <i>tableName</i>)</li>
+<li>
+<div class="fn"></div>QSqlRecord <b><a href="qsqldriver.html#record" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#record">record</a></b> (<i>self</i>, QString <i>tableName</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqldriver.html#rollbackTransaction" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#rollbackTransaction">rollbackTransaction</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqldriver.html#setLastError" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#setLastError">setLastError</a></b> (<i>self</i>, QSqlError <i>e</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqldriver.html#setNumericalPrecisionPolicy" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#setNumericalPrecisionPolicy">setNumericalPrecisionPolicy</a></b> (<i>self</i>, QSql.NumericalPrecisionPolicy <i>precisionPolicy</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqldriver.html#setOpen" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#setOpen">setOpen</a></b> (<i>self</i>, bool <i>o</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqldriver.html#setOpenError" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#setOpenError">setOpenError</a></b> (<i>self</i>, bool <i>e</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsqldriver.html#sqlStatement" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#sqlStatement">sqlStatement</a></b> (<i>self</i>, StatementType <i>type</i>, QString <i>tableName</i>, QSqlRecord <i>rec</i>, bool <i>preparedStatement</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsqldriver.html#stripDelimiters" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#stripDelimiters">stripDelimiters</a></b> (<i>self</i>, QString <i>identifier</i>, IdentifierType <i>type</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsqldriver.html#stripDelimitersImplementation" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#stripDelimitersImplementation">stripDelimitersImplementation</a></b> (<i>self</i>, QString <i>identifier</i>, IdentifierType <i>type</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qsqldriver.html#subscribedToNotifications" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#subscribedToNotifications">subscribedToNotifications</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qsqldriver.html#subscribedToNotificationsImplementation" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#subscribedToNotificationsImplementation">subscribedToNotificationsImplementation</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqldriver.html#subscribeToNotification" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#subscribeToNotification">subscribeToNotification</a></b> (<i>self</i>, QString <i>name</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqldriver.html#subscribeToNotificationImplementation" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#subscribeToNotificationImplementation">subscribeToNotificationImplementation</a></b> (<i>self</i>, QString <i>name</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qsqldriver.html#tables" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#tables">tables</a></b> (<i>self</i>, QSql.TableType <i>tableType</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqldriver.html#unsubscribeFromNotification" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#unsubscribeFromNotification">unsubscribeFromNotification</a></b> (<i>self</i>, QString <i>name</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqldriver.html#unsubscribeFromNotificationImplementation" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#unsubscribeFromNotificationImplementation">unsubscribeFromNotificationImplementation</a></b> (<i>self</i>, QString <i>name</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul><li>
+<div class="fn"></div>void <b><a href="qsqldriver.html#notification" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#notification">notification</a></b> (const QString&amp;)</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QSqlDriver类是用于访问特定的SQL数据库的抽象基类。</p>
+<p>这个类不应该直接使用。使用<a href="qsqldatabase.html" tppabs="http://pyqt4doc.appspot.com/qsqldatabase.html">QSqlDatabase</a>代替。</p>
+<p>如果你想创建自己的SQL驱动程序，你可以继承这个类，并重新实现它的纯虚函数，而且你需要那些虚函数。看<a href="index.htm#how-to-write-your-own-database-driver" tppabs="http://pyqt4doc.appspot.com/sql-driver.html#how-to-write-your-own-database-driver">How to
+Write Your Own Database Driver</a>了解更多信息。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="DriverFeature-enum"></a>QSqlDriver.DriverFeature</h3>
+<p>此枚举包含的功能驱动程序可能支持的列表。使用<a href="qsqldriver.html#hasFeature" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#hasFeature">hasFeature</a>（ ）来查询功能是否支持与否。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlDriver.Transactions</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">驱动程序是否支持SQL交易。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlDriver.QuerySize</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">数据库是否能够报告一个查询的大小。请注意，某些数据库不支持返回查询的大小（即返回的行数） ，在这种情况下，<a href="qsqlquery.html#size" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#size">QSqlQuery.size</a>（ ）将返回-1 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlDriver.BLOB</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">驱动程序是否支持二进制大对象字段。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlDriver.Unicode</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">驱动程序是否支持Unicode字符串，如果数据库服务器一样。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlDriver.PreparedQueries</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">驱动程序是否支持准备好的查询执行。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlDriver.NamedPlaceholders</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">驱动程序是否支持使用命名佔位符。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QSqlDriver.PositionalPlaceholders</tt>
+</td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">驱动程序是否支持使用位置佔位符。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlDriver.LastInsertId</tt></td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">驱动程序是否支持返回的最后一行感动的Id 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlDriver.BatchOperations</tt></td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">无论是驱动程序支持批处理操作，请参阅<a href="qsqlquery.html#execBatch" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#execBatch">QSqlQuery.execBatch</a>（ ）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlDriver.SimpleLocking</tt></td>
+<td class="topAlign"><tt>9</tt></td>
+<td class="topAlign">无论是驾驶者不允许在表上写锁，而其他的查询有它的读锁。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlDriver.LowPrecisionNumbers</tt></td>
+<td class="topAlign"><tt>10</tt></td>
+<td class="topAlign">驱动程序是否允许使用低精度取数值。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlDriver.EventNotifications</tt></td>
+<td class="topAlign"><tt>11</tt></td>
+<td class="topAlign">驱动程序是否支持数据库事件通知。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlDriver.FinishQuery</tt></td>
+<td class="topAlign"><tt>12</tt></td>
+<td class="topAlign">该驱动程序是否可以做任何低级别的资源清理时<a href="qsqlquery.html#finish" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#finish">QSqlQuery.finish</a>（）被调用。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlDriver.MultipleResultSets</tt></td>
+<td class="topAlign"><tt>13</tt></td>
+<td class="topAlign">该驱动程序是否可以访问批处理语句或存储过程返回多个结果集。</td>
+</tr>
+</table>
+<p>有关支持的功能的详细信息可以在被发现<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/sql-driver.html">Qt SQL driver</a>文档。</p>
+<p><b>See also</b> <a href="qsqldriver.html#hasFeature" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#hasFeature">hasFeature</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="IdentifierType-enum"></a>QSqlDriver.IdentifierType</h3>
+<p>此枚举包含的SQL标识符类型的列表。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlDriver.FieldName</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">一个SQL字段名</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlDriver.TableName</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">一个SQL表名</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="StatementType-enum"></a>QSqlDriver.StatementType</h3>
+<p>此枚举包含SQL语句（或语句）的列表类型的驱动程序可以创建。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlDriver.WhereStatement</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">一个SQL<tt>WHERE</tt>语句（例如，<tt>WHERE f = 5</tt>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlDriver.SelectStatement</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">一个SQL<tt>SELECT</tt>语句（例如，<tt>SELECT f FROM t</tt>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlDriver.UpdateStatement</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">一个SQL<tt>UPDATE</tt>语句（例如，<tt>UPDATE TABLE t set f = 1</tt>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlDriver.InsertStatement</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">一个SQL<tt>INSERT</tt>语句（例如，<tt>INSERT INTO t (f) values (1)</tt>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlDriver.DeleteStatement</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">一个SQL<tt>DELETE</tt>语句（例如，<tt>DELETE FROM t</tt>） 。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qsqldriver.html#sqlStatement" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#sqlStatement">sqlStatement</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QSqlDriver"></a>QSqlDriver.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个新的驱动程序给定的<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="beginTransaction"></a>bool QSqlDriver.beginTransaction (<i>self</i>)</h3>
+<p>这个函数被调用来开始一个事务。如果成功，则返回True，否则返回False 。默认实现不执行任何操作并返回False 。</p>
+<p><b>See also</b> <a href="qsqldriver.html#commitTransaction" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#commitTransaction">commitTransaction</a>（）和<a href="qsqldriver.html#rollbackTransaction" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#rollbackTransaction">rollbackTransaction</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="close"></a>QSqlDriver.close (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>派生类必须以关闭数据库连接重新实现这个纯虚函数。返回成功，假的真失败。</p>
+<p><b>See also</b> <a href="qsqldriver.html#open" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#open">open</a>（）和<a href="qsqldriver.html#setOpen" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#setOpen">setOpen</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="commitTransaction"></a>bool QSqlDriver.commitTransaction (<i>self</i>)</h3>
+<p>这个函数被调用来提交事务。如果成功，则返回True，否则返回False 。默认实现不执行任何操作并返回False 。</p>
+<p><b>See also</b> <a href="qsqldriver.html#beginTransaction" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#beginTransaction">beginTransaction</a>（）和<a href="qsqldriver.html#rollbackTransaction" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#rollbackTransaction">rollbackTransaction</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="createResult"></a><a href="qsqlresult.html" tppabs="http://pyqt4doc.appspot.com/qsqlresult.html">QSqlResult</a> QSqlDriver.createResult (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>创建数据库在一个空的SQL结果。派生类必须重新实现这个函数，并返回一个<a href="qsqlresult.html" tppabs="http://pyqt4doc.appspot.com/qsqlresult.html">QSqlResult</a>对象适合自己的数据库给调用者。</p>
+
+
+<h3 class="fn">
+<a name="escapeIdentifier"></a>QString QSqlDriver.escapeIdentifier (<i>self</i>, QString <i>identifier</i>, <a href="qsqldriver.html#IdentifierType-enum" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#IdentifierType-enum">IdentifierType</a> <i>type</i>)</h3>
+<p>返回<i>identifier</i>根据数据库的规则逃过一劫。<i>identifier</i>可以是一个表名或字段名，依赖于<i>type</i>。</p>
+<p>默认实现不执行任何操作。</p>
+<p><b>See also</b> <a href="qsqldriver.html#isIdentifierEscaped" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#isIdentifierEscaped">isIdentifierEscaped</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="formatValue"></a>QString QSqlDriver.formatValue (<i>self</i>, <a href="qsqlfield.html" tppabs="http://pyqt4doc.appspot.com/qsqlfield.html">QSqlField</a> <i>field</i>, bool <i>trimStrings</i> = False)</h3>
+<p>返回的字符串表示形式<i>field</i>值的数据库。这被使用，例如，建设INSERT和UPDATE语句时。</p>
+<p>缺省的实现返回格式化为根据以下规则的字符串的值：</p>
+<ul>
+<li>If <i>field</i> is character data, the value is returned
+enclosed in single quotation marks, which is appropriate for many
+SQL databases. Any embedded single-quote characters are escaped
+(replaced with two single-quote characters). If <i>trimStrings</i>
+is true (the default is false), all trailing whitespace is trimmed
+from the field.</li>
+<li>If <i>field</i> is date/time data, the value is formatted in
+ISO format and enclosed in single quotation marks. If the date/time
+data is invalid, "NULL" is returned.</li>
+<li>If <i>field</i> is <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">bytearray</a>
+data, and the driver can edit binary fields, the value is formatted
+as a hexadecimal string.</li>
+<li>For any other field type, toString() is called on its value and
+the result of this is returned.</li>
+</ul>
+<p><b>See also</b> <a href="qvariant.html#toString" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toString">QVariant.toString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="handle"></a>QVariant QSqlDriver.handle (<i>self</i>)</h3>
+<p>返回低水平数据库句柄包裹在一个<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>或无效的变体，如果没有手柄。</p>
+<p><b>Warning:</b>使用这种具有极处的照顾和只有当你知道你在做什么。</p>
+<p><b>Warning:</b>这里返回的句柄可以成为一个过时的指针，如果连接被修改（例如，如果您关闭了连接） 。</p>
+<p><b>Warning:</b>手柄可以是NULL如果连接尚未打开。</p>
+<p>这里返回的句柄是依赖于数据库的，你应该访问它之前，查询变量的类型名称。</p>
+<p>本示例检索句柄到sqlite的连接：</p>
+<pre class="cpp">
+ <span class="type"><a href="qsqldatabase.html" tppabs="http://pyqt4doc.appspot.com/qsqldatabase.html">QSqlDatabase</a></span> db <span class="operator">=</span> <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>;
+ <span class="type"><a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a></span> v <span class="operator">=</span> db<span class="operator">.</span>driver()<span class="operator">-</span><span class="operator">&gt;</span>handle();
+ <span class="keyword">if</span> (v<span class="operator">.</span>isValid() <span class="operator">&amp;</span><span class="operator">&amp;</span> qstrcmp(v<span class="operator">.</span>typeName()<span class="operator">,</span> <span class="string">"sqlite3*"</span>) <span class="operator">=</span><span class="operator">=</span> <span class="number">0</span>) {
+     <span class="comment">// v.data() returns a pointer to the handle</span>
+     sqlite3 <span class="operator">*</span>handle <span class="operator">=</span> <span class="operator">*</span><span class="keyword">static_cast</span><span class="operator">&lt;</span>sqlite3 <span class="operator">*</span><span class="operator">*</span><span class="operator">&gt;</span>(v<span class="operator">.</span>data());
+     <span class="keyword">if</span> (handle <span class="operator">!</span><span class="operator">=</span> <span class="number">0</span>) { <span class="comment">// check that it is not NULL</span>
+         <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+     }
+ }
+</pre>
+<p>这段代码返回的句柄PostgreSQL或MySQL ：</p>
+<pre class="cpp">
+ <span class="keyword">if</span> (qstrcmp(v<span class="operator">.</span>typeName()<span class="operator">,</span> <span class="string">"PGconn*"</span>) <span class="operator">=</span><span class="operator">=</span> <span class="number">0</span>) {
+     PGconn <span class="operator">*</span>handle <span class="operator">=</span> <span class="operator">*</span><span class="keyword">static_cast</span><span class="operator">&lt;</span>PGconn <span class="operator">*</span><span class="operator">*</span><span class="operator">&gt;</span>(v<span class="operator">.</span>data());
+     <span class="keyword">if</span> (handle <span class="operator">!</span><span class="operator">=</span> <span class="number">0</span>) <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ }
+
+ <span class="keyword">if</span> (qstrcmp(v<span class="operator">.</span>typeName()<span class="operator">,</span> <span class="string">"MYSQL*"</span>) <span class="operator">=</span><span class="operator">=</span> <span class="number">0</span>) {
+     MYSQL <span class="operator">*</span>handle <span class="operator">=</span> <span class="operator">*</span><span class="keyword">static_cast</span><span class="operator">&lt;</span>MYSQL <span class="operator">*</span><span class="operator">*</span><span class="operator">&gt;</span>(v<span class="operator">.</span>data());
+     <span class="keyword">if</span> (handle <span class="operator">!</span><span class="operator">=</span> <span class="number">0</span>) <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ }
+</pre>
+<p><b>See also</b> <a href="qsqlresult.html#handle" tppabs="http://pyqt4doc.appspot.com/qsqlresult.html#handle">QSqlResult.handle</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasFeature"></a>bool QSqlDriver.hasFeature (<i>self</i>, <a href="qsqldriver.html#DriverFeature-enum" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#DriverFeature-enum">DriverFeature</a> <i>f</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>如果驱动程序支持功能，则返回True<i>feature</i>否则返回False 。</p>
+<p>请注意，某些数据库需<a href="qsqldriver.html#open" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#open">open</a>（ ）在此之前才能确定。</p>
+<p><b>See also</b> <a href="qsqldriver.html#DriverFeature-enum" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#DriverFeature-enum">DriverFeature</a>。</p>
+
+
+<h3 class="fn">
+<a name="isIdentifierEscaped"></a>bool QSqlDriver.isIdentifierEscaped (<i>self</i>, QString <i>identifier</i>, <a href="qsqldriver.html#IdentifierType-enum" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#IdentifierType-enum">IdentifierType</a> <i>type</i>)</h3>
+<p>返回是否<i>identifier</i>根据该数据库的规则逃脱。<i>identifier</i>可以是一个表名或字段名，依赖于<i>type</i>。</p>
+<p><b>Warning:</b>因为二进制兼容性的限制，这个功能是不是虚拟的。如果你想提供自己的实现在你的<a href="qsqldriver.html" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html">QSqlDriver</a>子类，重新实现<a href="qsqldriver.html#isIdentifierEscapedImplementation" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#isIdentifierEscapedImplementation">isIdentifierEscapedImplementation</a>（）槽在你的子类来代替。该isIdentifierEscapedFunction （ ）会动态侦测插槽，并调用它。</p>
+<p><b>See also</b> <a href="qsqldriver.html#stripDelimiters" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#stripDelimiters">stripDelimiters</a>（）和<a href="qsqldriver.html#escapeIdentifier" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#escapeIdentifier">escapeIdentifier</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isIdentifierEscapedImplementation"></a>bool QSqlDriver.isIdentifierEscapedImplementation (<i>self</i>, QString <i>identifier</i>, <a href="qsqldriver.html#IdentifierType-enum" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#IdentifierType-enum">IdentifierType</a> <i>type</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>bool isIdentifierEscapedImplementation(const QString&amp;,QSqlDriver::IdentifierType) const</tt>。</p>
+<p>此插槽是否返回<i>identifier</i>根据该数据库的规则逃脱。<i>identifier</i>可以是一个表名或字段名，依赖于<i>type</i>。</p>
+<p>因为二进制兼容性的限制，<a href="qsqldriver.html#isIdentifierEscaped" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#isIdentifierEscaped">isIdentifierEscaped</a>（ ）函数（在Qt的4.5中引入）是不是虚拟的。相反，<a href="qsqldriver.html#isIdentifierEscaped" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#isIdentifierEscaped">isIdentifierEscaped</a>（ ）将动态检测并调用<i>this</i>插槽。默认实现假设转义/分隔符是双引号。重新实现这个插槽在自己的<a href="qsqldriver.html" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html">QSqlDriver</a>如果您的数据库引擎使用不同的分隔符。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qsqldriver.html#isIdentifierEscaped" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#isIdentifierEscaped">isIdentifierEscaped</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isOpen"></a>bool QSqlDriver.isOpen (<i>self</i>)</h3>
+<p>返回True如果数据库连接处于打开状态，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isOpenError"></a>bool QSqlDriver.isOpenError (<i>self</i>)</h3>
+<p>返回True如果有一个错误打开数据库连接，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="lastError"></a><a href="qsqlerror.html" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html">QSqlError</a> QSqlDriver.lastError (<i>self</i>)</h3>
+<p>返回<a href="qsqlerror.html" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html">QSqlError</a>对象，该对象包含有关数据库上发生的最后一个错误信息。</p>
+<p><b>See also</b> <a href="qsqldriver.html#setLastError" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#setLastError">setLastError</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="numericalPrecisionPolicy"></a><a href="qsql.html#NumericalPrecisionPolicy-enum" tppabs="http://pyqt4doc.appspot.com/qsql.html#NumericalPrecisionPolicy-enum">QSql.NumericalPrecisionPolicy</a> QSqlDriver.numericalPrecisionPolicy (<i>self</i>)</h3>
+<p>返回数据库连接的当前默认精度的政策。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qsql.html#NumericalPrecisionPolicy-enum" tppabs="http://pyqt4doc.appspot.com/qsql.html#NumericalPrecisionPolicy-enum">QSql.NumericalPrecisionPolicy</a>，<a href="qsqldriver.html#setNumericalPrecisionPolicy" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#setNumericalPrecisionPolicy">setNumericalPrecisionPolicy</a>（ ）<a href="qsqlquery.html#numericalPrecisionPolicy" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#numericalPrecisionPolicy">QSqlQuery.numericalPrecisionPolicy</a>（）和<a href="qsqlquery.html#setNumericalPrecisionPolicy" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#setNumericalPrecisionPolicy">QSqlQuery.setNumericalPrecisionPolicy</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="open"></a>bool QSqlDriver.open (<i>self</i>, QString <i>db</i>, QString <i>user</i> = QString(), QString <i>password</i> = QString(), QString <i>host</i> = QString(), int <i>port</i> = -1, QString <i>options</i> = QString())</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>派生类必须重新实现这个纯虚函数打开的数据库的数据库连接<i>db</i>，使用的用户名<i>user</i>，密码<i>password</i>，主机<i>host</i>，端口<i>port</i>和连接选项<i>options</i>。</p>
+<p>该函数必须返回成功，假的真失败。</p>
+<p><b>See also</b> <a href="qsqldriver.html#setOpen" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#setOpen">setOpen</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="primaryIndex"></a><a href="qsqlindex.html" tppabs="http://pyqt4doc.appspot.com/qsqlindex.html">QSqlIndex</a> QSqlDriver.primaryIndex (<i>self</i>, QString <i>tableName</i>)</h3>
+<p>返回表的主索引<i>tableName</i>。返回一个空<a href="qsqlindex.html" tppabs="http://pyqt4doc.appspot.com/qsqlindex.html">QSqlIndex</a>如果表没有主索引。默认实现返回一个空的索引。</p>
+
+
+<h3 class="fn">
+<a name="record"></a><a href="qsqlrecord.html" tppabs="http://pyqt4doc.appspot.com/qsqlrecord.html">QSqlRecord</a> QSqlDriver.record (<i>self</i>, QString <i>tableName</i>)</h3>
+<p>返回<a href="qsqlrecord.html" tppabs="http://pyqt4doc.appspot.com/qsqlrecord.html">QSqlRecord</a>填充在表中的字段的名称<i>tableName</i>。如果没有这样的表存在，则返回一个空的记录。默认实现返回一个空的记录。</p>
+
+
+<h3 class="fn">
+<a name="rollbackTransaction"></a>bool QSqlDriver.rollbackTransaction (<i>self</i>)</h3>
+<p>这个函数被调用来回滚事务。如果成功，则返回True，否则返回False 。默认实现不执行任何操作并返回False 。</p>
+<p><b>See also</b> <a href="qsqldriver.html#beginTransaction" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#beginTransaction">beginTransaction</a>（）和<a href="qsqldriver.html#commitTransaction" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#commitTransaction">commitTransaction</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setLastError"></a>QSqlDriver.setLastError (<i>self</i>, <a href="qsqlerror.html" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html">QSqlError</a> <i>e</i>)</h3>
+<p>这个函数是用来设置的最后一个错误的值，<i>error</i>，发生在数据库上。</p>
+<p><b>See also</b> <a href="qsqldriver.html#lastError" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#lastError">lastError</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setNumericalPrecisionPolicy"></a>QSqlDriver.setNumericalPrecisionPolicy (<i>self</i>, <a href="qsql.html#NumericalPrecisionPolicy-enum" tppabs="http://pyqt4doc.appspot.com/qsql.html#NumericalPrecisionPolicy-enum">QSql.NumericalPrecisionPolicy</a> <i>precisionPolicy</i>)</h3>
+<p>设置使用此驱动程序来创建查询的默认数值精度的政策<i>precisionPolicy</i>。</p>
+<p>注意：默认精度策略设置来<i>precisionPolicy</i>不影响任何当前活动的查询。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qsql.html#NumericalPrecisionPolicy-enum" tppabs="http://pyqt4doc.appspot.com/qsql.html#NumericalPrecisionPolicy-enum">QSql.NumericalPrecisionPolicy</a>，<a href="qsqldriver.html#numericalPrecisionPolicy" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#numericalPrecisionPolicy">numericalPrecisionPolicy</a>（ ）<a href="qsqlquery.html#setNumericalPrecisionPolicy" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#setNumericalPrecisionPolicy">QSqlQuery.setNumericalPrecisionPolicy</a>（）和<a href="qsqlquery.html#numericalPrecisionPolicy" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#numericalPrecisionPolicy">QSqlQuery.numericalPrecisionPolicy</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setOpen"></a>QSqlDriver.setOpen (<i>self</i>, bool <i>o</i>)</h3>
+<p>这个函数设置数据库的打开状态以<i>open</i>。派生类可以使用此功能来报告的状态<a href="qsqldriver.html#open" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#open">open</a>（ ） 。</p>
+<p><b>See also</b> <a href="qsqldriver.html#open" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#open">open</a>（）和<a href="qsqldriver.html#setOpenError" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#setOpenError">setOpenError</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setOpenError"></a>QSqlDriver.setOpenError (<i>self</i>, bool <i>e</i>)</h3>
+<p>这个函数设置数据库的打开错误状态<i>error</i>。派生类可以使用此功能来报告的状态<a href="qsqldriver.html#open" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#open">open</a>（ ） 。注意，如果<i>error</i>是真正的数据库的打开状态设置为关闭（即，<a href="qsqldriver.html#isOpen" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#isOpen">isOpen</a>（ ）返回False ） 。</p>
+<p><b>See also</b> <a href="qsqldriver.html#isOpenError" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#isOpenError">isOpenError</a>（ ）<a href="qsqldriver.html#open" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#open">open</a>（）和<a href="qsqldriver.html#setOpen" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#setOpen">setOpen</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sqlStatement"></a>QString QSqlDriver.sqlStatement (<i>self</i>, <a href="qsqldriver.html#StatementType-enum" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#StatementType-enum">StatementType</a> <i>type</i>, QString <i>tableName</i>, <a href="qsqlrecord.html" tppabs="http://pyqt4doc.appspot.com/qsqlrecord.html">QSqlRecord</a> <i>rec</i>, bool <i>preparedStatement</i>)</h3>
+<p>返回类型的SQL语句<i>type</i>为表<i>tableName</i>从数值<i>rec</i>。如果<i>preparedStatement</i>为True，则字符串将包含佔位符，而不是价值。</p>
+<p>这种方法可以用来处理表，而不必担心依赖于数据库的SQL方言。对于非预处理语句，该值将被正确地转义。</p>
+
+
+<h3 class="fn">
+<a name="stripDelimiters"></a>QString QSqlDriver.stripDelimiters (<i>self</i>, QString <i>identifier</i>, <a href="qsqldriver.html#IdentifierType-enum" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#IdentifierType-enum">IdentifierType</a> <i>type</i>)</h3>
+<p>返回<i>identifier</i>带的前缘和后分隔符取出，<i>identifier</i>可以是一个表名或字段名，依赖于<i>type</i>。如果<i>identifier</i>没有开头和结尾的分隔符，<i>identifier</i>无需修改被返回。</p>
+<p><b>Warning:</b>因为二进制兼容性的限制，这个功能是不是虚拟的，如果你想提供自己的实现在你的<a href="qsqldriver.html" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html">QSqlDriver</a>子类，重新实现<a href="qsqldriver.html#stripDelimitersImplementation" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#stripDelimitersImplementation">stripDelimitersImplementation</a>（）槽在你的子类来代替。该stripDelimiters （ ）函数将动态检测插槽，并调用它。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qsqldriver.html#isIdentifierEscaped" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#isIdentifierEscaped">isIdentifierEscaped</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="stripDelimitersImplementation"></a>QString QSqlDriver.stripDelimitersImplementation (<i>self</i>, QString <i>identifier</i>, <a href="qsqldriver.html#IdentifierType-enum" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#IdentifierType-enum">IdentifierType</a> <i>type</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>QString stripDelimitersImplementation(const QString&amp;,QSqlDriver::IdentifierType) const</tt>。</p>
+<p>这个插槽回报<i>identifier</i>带的前缘和后分隔符取出，<i>identifier</i>可以是一个表名或字段名，依赖于<i>type</i>。如果<i>identifier</i>没有开头和结尾的分隔符，<i>identifier</i>无需修改被返回。</p>
+<p>因为二进制兼容性的限制，在<a href="qsqldriver.html#stripDelimiters" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#stripDelimiters">stripDelimiters</a>（ ）函数（在Qt的4.5中引入）是不是虚拟的。相反，<a href="qsqldriver.html#stripDelimiters" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#stripDelimiters">stripDelimiters</a>（ ）将动态检测并调用<i>this</i>插槽。它通常不需要重新实现此插槽。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qsqldriver.html#stripDelimiters" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#stripDelimiters">stripDelimiters</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="subscribedToNotifications"></a>QStringList QSqlDriver.subscribedToNotifications (<i>self</i>)</h3>
+<p>返回当前订阅的事件通知的名称列表。</p>
+<p><b>Warning:</b>因为二进制兼容性的限制，这个功能是不是虚拟的。如果您想提供事件通知的支持在自己的<a href="qsqldriver.html" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html">QSqlDriver</a>子类，重新实现<a href="qsqldriver.html#subscribedToNotificationsImplementation" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#subscribedToNotificationsImplementation">subscribedToNotificationsImplementation</a>（）槽在你的子类来代替。该subscribedToNotifications （ ）函数将动态检测插槽，并调用它。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qsqldriver.html#subscribeToNotification" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#subscribeToNotification">subscribeToNotification</a>（）和<a href="qsqldriver.html#unsubscribeFromNotification" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#unsubscribeFromNotification">unsubscribeFromNotification</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="subscribedToNotificationsImplementation"></a>QStringList QSqlDriver.subscribedToNotificationsImplementation (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>QStringList subscribedToNotificationsImplementation() const</tt>。</p>
+<p>返回当前订阅的事件通知的名称列表。</p>
+<p>重新实现这个插槽来提供自己的<a href="qsqldriver.html" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html">QSqlDriver</a>继承与事件通知的支持，因为二进制兼容性的限制，<a href="qsqldriver.html#subscribedToNotifications" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#subscribedToNotifications">subscribedToNotifications</a>（ ）函数（在Qt的4.4中引入）是不是虚拟的。相反，<a href="qsqldriver.html#subscribedToNotifications" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#subscribedToNotifications">subscribedToNotifications</a>（ ）将动态检测并调用<i>this</i>插槽。默认实现返回一个空<a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a>。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qsqldriver.html#subscribedToNotifications" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#subscribedToNotifications">subscribedToNotifications</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="subscribeToNotification"></a>bool QSqlDriver.subscribeToNotification (<i>self</i>, QString <i>name</i>)</h3>
+<p>调用此函数来订阅事件通知从数据库中。<i>name</i>标识事件的通知。</p>
+<p>如果成功，则返回True，否则返回False 。</p>
+<p>该数据库必须处于打开状态时，此函数被调用。当数据库是通过调用关闭<a href="qsqldriver.html#close" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#close">close</a>（ ）所有订阅事件通知将自动取消订阅。请注意，调用<a href="qsqldriver.html#open" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#open">open</a>（ ）在一个已经打开的数据库可能会导致隐<a href="qsqldriver.html#close" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#close">close</a>（ ）被调用，这将导致驱动程序的所有事件通知退订。</p>
+<p>当一个事件通知确定<i>name</i>张贴由数据库的<a href="qsqldriver.html#notification" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#notification">notification</a>（）信号被发射。</p>
+<p><b>Warning:</b>因为二进制兼容性的限制，这个功能是不是虚拟的。如果您想提供事件通知的支持在自己的<a href="qsqldriver.html" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html">QSqlDriver</a>子类，重新实现<a href="qsqldriver.html#subscribeToNotificationImplementation" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#subscribeToNotificationImplementation">subscribeToNotificationImplementation</a>（）槽在你的子类来代替。该subscribeToNotification （ ）函数将动态检测插槽，并调用它。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qsqldriver.html#unsubscribeFromNotification" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#unsubscribeFromNotification">unsubscribeFromNotification</a>（ ）<a href="qsqldriver.html#subscribedToNotifications" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#subscribedToNotifications">subscribedToNotifications</a>（）和<a href="qsqldriver.html#hasFeature" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#hasFeature">QSqlDriver.hasFeature</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="subscribeToNotificationImplementation"></a>bool QSqlDriver.subscribeToNotificationImplementation (<i>self</i>, QString <i>name</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>bool subscribeToNotificationImplementation(const QString&amp;)</tt>。</p>
+<p>这个槽被调用来订阅事件通知从数据库中。<i>name</i>标识事件的通知。</p>
+<p>如果成功，则返回True，否则返回False 。</p>
+<p>该数据库必须在此公开<i>slot</i>被调用。当数据库是通过调用关闭<a href="qsqldriver.html#close" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#close">close</a>（ ）所有订阅事件通知将自动取消订阅。请注意，调用<a href="qsqldriver.html#open" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#open">open</a>（ ）在一个已经打开的数据库可能会导致隐<a href="qsqldriver.html#close" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#close">close</a>（ ）被调用，这将导致驱动程序的所有事件通知退订。</p>
+<p>当一个事件通知确定<i>name</i>张贴由数据库的<a href="qsqldriver.html#notification" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#notification">notification</a>（）信号被发射。</p>
+<p>重新实现这个插槽来提供自己的<a href="qsqldriver.html" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html">QSqlDriver</a>继承与事件通知的支持，因为二进制兼容性的限制，<a href="qsqldriver.html#subscribeToNotification" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#subscribeToNotification">subscribeToNotification</a>（ ）函数（在Qt的4.4中引入）是不是虚拟的。相反，<a href="qsqldriver.html#subscribeToNotification" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#subscribeToNotification">subscribeToNotification</a>（ ）将动态检测并调用<i>this</i>插槽。默认实现不执行任何操作并返回False 。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qsqldriver.html#subscribeToNotification" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#subscribeToNotification">subscribeToNotification</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="tables"></a>QStringList QSqlDriver.tables (<i>self</i>, <a href="qsql.html#TableType-enum" tppabs="http://pyqt4doc.appspot.com/qsql.html#TableType-enum">QSql.TableType</a> <i>tableType</i>)</h3>
+<p>返回该数据库中的表的名称的列表。默认实现返回一个空列表。</p>
+<p>该<i>tableType</i>参数说明什么类型的表应该返回。由于二进制兼容性，该字符串包含枚举QSql.TableTypes作为文本的价值。一个空字符串应被视为<a href="qsql.html#TableType-enum" tppabs="http://pyqt4doc.appspot.com/qsql.html#TableType-enum">QSql.Tables</a>为了向后兼容。</p>
+
+
+<h3 class="fn">
+<a name="unsubscribeFromNotification"></a>bool QSqlDriver.unsubscribeFromNotification (<i>self</i>, QString <i>name</i>)</h3>
+<p>此功能称为从数据库事件通知退订。<i>name</i>标识事件的通知。</p>
+<p>如果成功，则返回True，否则返回False 。</p>
+<p>该数据库必须处于打开状态时，此函数被调用。所有订阅的事件通知是从时自动取消订阅的<a href="qsqldriver.html#close" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#close">close</a>（ ）函数被调用。</p>
+<p>后调用<i>this</i>功能<a href="qsqldriver.html#notification" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#notification">notification</a>（）信号将不再当一个事件通知确定了发射<i>name</i>张贴由数据库。</p>
+<p><b>Warning:</b>因为二进制兼容性的限制，这个功能是不是虚拟的。如果您想提供事件通知的支持在自己的<a href="qsqldriver.html" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html">QSqlDriver</a>子类，重新实现<a href="qsqldriver.html#unsubscribeFromNotificationImplementation" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#unsubscribeFromNotificationImplementation">unsubscribeFromNotificationImplementation</a>（）槽在你的子类来代替。该unsubscribeFromNotification （ ）函数将动态检测插槽，并调用它。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qsqldriver.html#subscribeToNotification" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#subscribeToNotification">subscribeToNotification</a>（）和<a href="qsqldriver.html#subscribedToNotifications" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#subscribedToNotifications">subscribedToNotifications</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="unsubscribeFromNotificationImplementation"></a>bool QSqlDriver.unsubscribeFromNotificationImplementation (<i>self</i>, QString <i>name</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>bool unsubscribeFromNotificationImplementation(const QString&amp;)</tt>。</p>
+<p>这个槽被调用从数据库事件通知退订。<i>name</i>标识事件的通知。</p>
+<p>如果成功，则返回True，否则返回False 。</p>
+<p>该数据库时，必须打开<i>this</i>槽被调用。所有订阅的事件通知是从时自动取消订阅的<a href="qsqldriver.html#close" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#close">close</a>（ ）函数被调用。</p>
+<p>后调用<i>this</i>在插槽<a href="qsqldriver.html#notification" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#notification">notification</a>（）信号将不再当一个事件通知确定了发射<i>name</i>张贴由数据库。</p>
+<p>重新实现这个插槽来提供自己的<a href="qsqldriver.html" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html">QSqlDriver</a>继承与事件通知的支持，因为二进制兼容性的限制，<a href="qsqldriver.html#unsubscribeFromNotification" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#unsubscribeFromNotification">unsubscribeFromNotification</a>（ ）函数（在Qt的4.4中引入）是不是虚拟的。相反，<a href="qsqldriver.html#unsubscribeFromNotification" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#unsubscribeFromNotification">unsubscribeFromNotification</a>（ ）将动态检测并调用<i>this</i>插槽。默认实现不执行任何操作并返回False 。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qsqldriver.html#unsubscribeFromNotification" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#unsubscribeFromNotification">unsubscribeFromNotification</a>（ ） 。</p>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="notification"></a>void notification (const QString&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的数据库职位为驾驶员所预订的事件通知。<i>name</i>标识事件的通知。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qsqldriver.html#subscribeToNotification" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#subscribeToNotification">subscribeToNotification</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

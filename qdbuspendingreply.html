@@ -1,0 +1,197 @@
+﻿<html>
+<head>
+<title>QDBusPendingReply Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDBusPendingReply Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdbus.html">QtDBus</a> module]</sup></sup>
+</h1>
+<p>该QDBusPendingReply类包含的答复异步方法调用<a href="#details">More...</a></p>
+
+<p>继承<a href="qdbuspendingcall.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingcall.html">QDBusPendingCall</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdbuspendingreply.html#QDBusPendingReply" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html#QDBusPendingReply">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbuspendingreply.html#QDBusPendingReply-2" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html#QDBusPendingReply-2">__init__</a></b> (<i>self</i>, QDBusPendingReply <i>other</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbuspendingreply.html#QDBusPendingReply-3" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html#QDBusPendingReply-3">__init__</a></b> (<i>self</i>, QDBusPendingCall <i>call</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbuspendingreply.html#QDBusPendingReply-4" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html#QDBusPendingReply-4">__init__</a></b> (<i>self</i>, QDBusMessage <i>reply</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qdbuspendingreply.html#argumentAt" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html#argumentAt">argumentAt</a></b> (<i>self</i>, int <i>index</i>)</li>
+<li>
+<div class="fn"></div>QDBusError <b><a href="qdbuspendingreply.html#error" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html#error">error</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdbuspendingreply.html#isError" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html#isError">isError</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdbuspendingreply.html#isFinished" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html#isFinished">isFinished</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdbuspendingreply.html#isValid" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html#isValid">isValid</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDBusMessage <b><a href="qdbuspendingreply.html#reply" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html#reply">reply</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>object <b><a href="qdbuspendingreply.html#value" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html#value">value</a></b> (<i>self</i>, object <i>type</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbuspendingreply.html#waitForFinished" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html#waitForFinished">waitForFinished</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDBusPendingReply类包含的答复异步方法调用</p>
+<p>该QDBusPendingReply是一个模板类，多达8个模板参数。这些参数是将被用于提取的答复的数据的内容的类型。</p>
+<p>这个类是类似的功能，<a href="qdbusreply.html" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html">QDBusReply</a>，但有两个重要的区别：</p>
+<ul>
+<li>
+<a href="qdbusreply.html" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html">QDBusReply</a> accepts exactly one
+return type, whereas QDBusPendingReply can have from 1 to 8
+types</li>
+<li>
+<a href="qdbusreply.html" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html">QDBusReply</a> only works on already
+completed replies, whereas QDBusPendingReply allows one to wait for
+replies from pending calls</li>
+</ul>
+<p>用在哪里<a href="qdbusreply.html" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html">QDBusReply</a>你可以这样写：</p>
+<pre class="cpp">
+ <span class="type"><a href="qdbusreply.html" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html">QDBusReply</a></span><span class="operator">&lt;</span><span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span><span class="operator">&gt;</span> reply <span class="operator">=</span> interface<span class="operator">-</span><span class="operator">&gt;</span>call(<span class="string">"RemoteMethod"</span>);
+ <span class="keyword">if</span> (reply<span class="operator">.</span>isValid())
+     <span class="comment">// use the returned value</span>
+     useValue(reply<span class="operator">.</span>value());
+ <span class="keyword">else</span>
+     <span class="comment">// call failed. Show an error condition.</span>
+     showError(reply<span class="operator">.</span>error());
+</pre>
+<p>与QDBusPendingReply ，等效代码（包括您的答复阻塞等待）将是：</p>
+<pre class="cpp">
+     <span class="type">QDBusPendingReply</span><span class="operator">&lt;</span><span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span><span class="operator">&gt;</span> reply <span class="operator">=</span> interface<span class="operator">-</span><span class="operator">&gt;</span>asyncCall(<span class="string">"RemoteMethod"</span>);
+     reply<span class="operator">.</span>waitForFinished();
+     <span class="keyword">if</span> (reply<span class="operator">.</span>isError())
+         <span class="comment">// call failed. Show an error condition.</span>
+         showError(reply<span class="operator">.</span>error());
+     <span class="keyword">else</span>
+         <span class="comment">// use the returned value</span>
+         useValue(reply<span class="operator">.</span>value());
+</pre>
+<p>对于方法调用具有多个输出参数，用<a href="qdbusreply.html" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html">QDBusReply</a>，你可以这样写：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> reply <span class="operator">=</span> interface<span class="operator">-</span><span class="operator">&gt;</span>call(<span class="string">"RemoteMethod"</span>);
+</pre>
+<p>而与QDBusPendingReply ，所有的输出参数应该是模板参数：</p>
+<pre class="cpp">
+     <span class="type">QDBusPendingReply</span><span class="operator">&lt;</span><span class="type">bool</span><span class="operator">,</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span><span class="operator">&gt;</span> reply <span class="operator">=</span> interface<span class="operator">-</span><span class="operator">&gt;</span>asyncCall(<span class="string">"RemoteMethod"</span>);
+     reply<span class="operator">.</span>waitForFinished();
+     <span class="keyword">if</span> (<span class="operator">!</span>reply<span class="operator">.</span>isError()) {
+         <span class="keyword">if</span> (reply<span class="operator">.</span>argumentAt<span class="operator">&lt;</span><span class="number">0</span><span class="operator">&gt;</span>())
+             showSuccess(reply<span class="operator">.</span>argumentAt<span class="operator">&lt;</span><span class="number">1</span><span class="operator">&gt;</span>());
+         <span class="keyword">else</span>
+             showFailure(reply<span class="operator">.</span>argumentAt<span class="operator">&lt;</span><span class="number">1</span><span class="operator">&gt;</span>());
+     }
+</pre>
+<p>QDBusPendingReply对象可以关联<a href="qdbuspendingcallwatcher.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingcallwatcher.html">QDBusPendingCallWatcher</a>对象，它发出的信号，当回复到达。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDBusPendingReply"></a>QDBusPendingReply.__init__ (<i>self</i>)</h3>
+<p>创建一个空的<a href="qdbuspendingreply.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html">QDBusPendingReply</a>对象。而不设定<a href="qdbuspendingcall.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingcall.html">QDBusPendingCall</a>反对此回复，<a href="qdbuspendingreply.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html">QDBusPendingReply</a>什么都做不了。所有的函数都返回自己的失败值。</p>
+
+
+<h3 class="fn">
+<a name="QDBusPendingReply-2"></a>QDBusPendingReply.__init__ (<i>self</i>, <a href="qdbuspendingreply.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html">QDBusPendingReply</a> <i>other</i>)</h3>
+<p>创建的副本<i>other</i> <a href="qdbuspendingreply.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html">QDBusPendingReply</a>对象。一样<a href="qdbuspendingcall.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingcall.html">QDBusPendingCall</a>和<a href="qdbuspendingcallwatcher.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingcallwatcher.html">QDBusPendingCallWatcher</a>，这<a href="qdbuspendingreply.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html">QDBusPendingReply</a>对象将共享同一个悬而未决的呼叫参考。所有副本共享相同的返回值。</p>
+
+
+<h3 class="fn">
+<a name="QDBusPendingReply-3"></a>QDBusPendingReply.__init__ (<i>self</i>, <a href="qdbuspendingcall.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingcall.html">QDBusPendingCall</a> <i>call</i>)</h3>
+<p>创建<a href="qdbuspendingreply.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html">QDBusPendingReply</a>对象，将采取它的内容从<i>call</i>挂起的异步调用。这<a href="qdbuspendingreply.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html">QDBusPendingReply</a>对象将共享相同的未决调用作为参考<i>call</i>。</p>
+
+
+<h3 class="fn">
+<a name="QDBusPendingReply-4"></a>QDBusPendingReply.__init__ (<i>self</i>, <a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a> <i>reply</i>)</h3>
+<p>创建<a href="qdbuspendingreply.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html">QDBusPendingReply</a>对象，将采取它的内容从消息<i>message</i>。在这种情况下，该对象将是已经在其成品状态和回复的内容将是可访问的。</p>
+<p><b>See also</b> <a href="qdbuspendingreply.html#isFinished" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html#isFinished">isFinished</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="argumentAt"></a>QVariant QDBusPendingReply.argumentAt (<i>self</i>, int <i>index</i>)</h3>
+<p>返回参数的位置<i>index</i>在回复的内容。如果答复不具有的许多元素，这个函数的返回值是不确定的（可能会导致一个断言失败） ，所以要确认处理完毕，并答复是否有效是很重要的。</p>
+
+
+<h3 class="fn">
+<a name="error"></a><a href="qdbuserror.html" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html">QDBusError</a> QDBusPendingReply.error (<i>self</i>)</h3>
+<p>检索应答消息的错误内容，如果它已完成处理。如果回复邮件尚未完成处理，或者如果它包含一个正常的回复讯息（非错误） ，这个函数返回一个无效的<a href="qdbuserror.html" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html">QDBusError</a>。</p>
+
+
+<h3 class="fn">
+<a name="isError"></a>bool QDBusPendingReply.isError (<i>self</i>)</h3>
+<p>返回True如果应答包含一个错误信息，如果其包含一个正常的方法答复。</p>
+<p>如果挂起调用还没有完成处理，该函数也返回True 。</p>
+
+
+<h3 class="fn">
+<a name="isFinished"></a>bool QDBusPendingReply.isFinished (<i>self</i>)</h3>
+<p>返回True，如果待处理的呼叫完成处理和回复已经收到。如果这个函数返回True，则<a href="qdbuspendingreply.html#isError" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html#isError">isError</a>（ ）<a href="qdbuspendingreply.html#error" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html#error">error</a>（）和<a href="qdbuspendingreply.html#reply" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html#reply">reply</a>（ ）方法应该返回有效信息。</p>
+<p>注意，这个函数只有改变状态，如果你调用<a href="qdbuspendingreply.html#waitForFinished" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html#waitForFinished">waitForFinished</a>（ ），或者如果外部D-Bus的事件发生，这在一般如果返回到事件循环执行只发生。</p>
+<p><b>See also</b> <a href="qdbuspendingcallwatcher.html#isFinished" tppabs="http://pyqt4doc.appspot.com/qdbuspendingcallwatcher.html#isFinished">QDBusPendingCallWatcher.isFinished</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isValid"></a>bool QDBusPendingReply.isValid (<i>self</i>)</h3>
+<p>返回True如果应答包含一个正常的应答消息，如果其包含别的。</p>
+<p>如果挂起调用还没有完成处理，这个函数返回False 。</p>
+
+
+<h3 class="fn">
+<a name="reply"></a><a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a> QDBusPendingReply.reply (<i>self</i>)</h3>
+<p>检索收到的异步调用的回复消息被发送，如果它已经完成处理。如果挂起调用还没有完成，这个函数返回一个<a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a>类型<a href="qdbusmessage.html#MessageType-enum" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#MessageType-enum">QDBusMessage.InvalidMessage</a>。</p>
+<p>之后，它已经完成处理，消息类型要么是一个错误消息或一个正常的方法回复消息。</p>
+
+
+<h3 class="fn">
+<a name="value"></a>object QDBusPendingReply.value (<i>self</i>, object <i>type</i> = None)</h3>
+<p>返回此答复的第一个参数，强制转换为类型<tt>T1</tt>（这个类的第一个模板参数） 。这等效于调用argumentAt \u003c0\u003e （） 。</p>
+<p>这个功能是为了方便，配套<a href="qdbusreply.html#value" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html#value">QDBusReply.value</a>（）函数。</p>
+<p>需要注意的是，如果回答没有到达，这个函数会导致调用线程阻塞，直到答复处理。</p>
+
+
+<h3 class="fn">
+<a name="waitForFinished"></a>QDBusPendingReply.waitForFinished (<i>self</i>)</h3>
+<p>挂起调用线程，直到收到回复和处理的执行。在此之后函数返回，<a href="qdbuspendingreply.html#isFinished" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html#isFinished">isFinished</a>（ ）应该返回True，表示该回复的内容是准备进行处理。</p>
+<p><b>See also</b> <a href="qdbuspendingcallwatcher.html#waitForFinished" tppabs="http://pyqt4doc.appspot.com/qdbuspendingcallwatcher.html#waitForFinished">QDBusPendingCallWatcher.waitForFinished</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

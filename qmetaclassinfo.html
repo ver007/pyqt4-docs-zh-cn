@@ -1,0 +1,86 @@
+﻿<html>
+<head>
+<title>QMetaClassInfo Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QMetaClassInfo Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QMetaClassInfo类提供有关类的附加信息。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qmetaclassinfo.html#QMetaClassInfo" tppabs="http://pyqt4doc.appspot.com/qmetaclassinfo.html#QMetaClassInfo">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmetaclassinfo.html#QMetaClassInfo-2" tppabs="http://pyqt4doc.appspot.com/qmetaclassinfo.html#QMetaClassInfo-2">__init__</a></b> (<i>self</i>, QMetaClassInfo)</li>
+<li>
+<div class="fn"></div>str <b><a href="qmetaclassinfo.html#name" tppabs="http://pyqt4doc.appspot.com/qmetaclassinfo.html#name">name</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qmetaclassinfo.html#value" tppabs="http://pyqt4doc.appspot.com/qmetaclassinfo.html#value">value</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QMetaClassInfo类提供有关类的附加信息。</p>
+<p>类信息的项目是简单的<i>name</i> - <i>value</i>正在使用指定的对<a href="qobject.html#Q_CLASSINFO" tppabs="http://pyqt4doc.appspot.com/qobject.html#Q_CLASSINFO">Q_CLASSINFO</a>（）中的源代码。该信息可以使用检索<a href="qmetaclassinfo.html#name" tppabs="http://pyqt4doc.appspot.com/qmetaclassinfo.html#name">name</a>（）和<a href="qmetaclassinfo.html#value" tppabs="http://pyqt4doc.appspot.com/qmetaclassinfo.html#value">value</a>（ ） 。例如：</p>
+<pre class="cpp">
+ <span class="keyword">class</span> MyClass
+ {
+     Q_OBJECT
+     Q_CLASSINFO(<span class="string">"author"</span><span class="operator">,</span> <span class="string">"Sabrina Schweinsteiger"</span>)
+     Q_CLASSINFO(<span class="string">"url"</span><span class="operator">,</span> <span class="string">"http://doc.moosesoft.co.uk/1.0/"</span>)
+
+ <span class="keyword">public</span>:
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ };
+</pre>
+<p>这种机制是免费为您在您的Qt应用程序使用。 Qt不使用它的任何类。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QMetaClassInfo"></a>QMetaClassInfo.__init__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="QMetaClassInfo-2"></a>QMetaClassInfo.__init__ (<i>self</i>, <a href="qmetaclassinfo.html" tppabs="http://pyqt4doc.appspot.com/qmetaclassinfo.html">QMetaClassInfo</a>)</h3>
+<h3 class="fn">
+<a name="name"></a>str QMetaClassInfo.name (<i>self</i>)</h3>
+<p>返回此项目的名称。</p>
+<p><b>See also</b> <a href="qmetaclassinfo.html#value" tppabs="http://pyqt4doc.appspot.com/qmetaclassinfo.html#value">value</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="value"></a>str QMetaClassInfo.value (<i>self</i>)</h3>
+<p>返回此项目的值。</p>
+<p><b>See also</b> <a href="qmetaclassinfo.html#name" tppabs="http://pyqt4doc.appspot.com/qmetaclassinfo.html#name">name</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

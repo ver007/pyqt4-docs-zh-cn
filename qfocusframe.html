@@ -1,0 +1,108 @@
+﻿<html>
+<head>
+<title>QFocusFrame Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QFocusFrame Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QFocusFrame小部件提供它可以是一个小部件的正常绘画区域之外的对焦框。<a href="#details">More...</a></p>
+
+<p>继承<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qfocusframe.html#QFocusFrame" tppabs="http://pyqt4doc.appspot.com/qfocusframe.html#QFocusFrame">__init__</a></b> (<i>self</i>, QWidget <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qfocusframe.html#event" tppabs="http://pyqt4doc.appspot.com/qfocusframe.html#event">event</a></b> (<i>self</i>, QEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qfocusframe.html#eventFilter" tppabs="http://pyqt4doc.appspot.com/qfocusframe.html#eventFilter">eventFilter</a></b> (<i>self</i>, QObject, QEvent)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfocusframe.html#initStyleOption" tppabs="http://pyqt4doc.appspot.com/qfocusframe.html#initStyleOption">initStyleOption</a></b> (<i>self</i>, QStyleOption <i>option</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfocusframe.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qfocusframe.html#paintEvent">paintEvent</a></b> (<i>self</i>, QPaintEvent)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfocusframe.html#setWidget" tppabs="http://pyqt4doc.appspot.com/qfocusframe.html#setWidget">setWidget</a></b> (<i>self</i>, QWidget <i>widget</i>)</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qfocusframe.html#widget" tppabs="http://pyqt4doc.appspot.com/qfocusframe.html#widget">widget</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QFocusFrame小部件提供它可以是一个小部件的正常绘画区域之外的对焦框。</p>
+<p>通常，应用程序将不再需要建立自己的QFocusFrame为<a href="qstyle.html" tppabs="http://pyqt4doc.appspot.com/qstyle.html">QStyle</a>将处理这个细节给你的。样式作家可以选择使用QFocusFrame有小部件的可绘制几何图形以外的重点区域。在这样的空间不需要被保留以供小窗口具有焦点，但只设置在一个<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>与QFocusFrame.setWidget 。它是，但是，法律上的自定义窗口小部件创建自己的QFocusFrame并通过QWidget.setGeometry手动设置它的几何形状，但是你不会得到自动放置时，聚焦小部件更改大小或位置。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QFocusFrame"></a>QFocusFrame.__init__ (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a href="qfocusframe.html" tppabs="http://pyqt4doc.appspot.com/qfocusframe.html">QFocusFrame</a>。</p>
+<p>对焦框不会监视<i>parent</i>更新而是可以手动放置或使用QFocusFrame.setWidget 。一<a href="qfocusframe.html" tppabs="http://pyqt4doc.appspot.com/qfocusframe.html">QFocusFrame</a> sets <a href="qt.html#WidgetAttribute-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#WidgetAttribute-enum">Qt.WA_NoChildEventsForParent</a>属性，这样一来的父进程将不会收到<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.ChildInserted</a>事件，这将使得有可能手动设置的几何形状<a href="qfocusframe.html" tppabs="http://pyqt4doc.appspot.com/qfocusframe.html">QFocusFrame</a>内部的<a href="qsplitter.html" tppabs="http://pyqt4doc.appspot.com/qsplitter.html">QSplitter</a>或其他子事件监控部件。</p>
+<p><b>See also</b> <a href="qfocusframe.html#setWidget" tppabs="http://pyqt4doc.appspot.com/qfocusframe.html#setWidget">QFocusFrame.setWidget</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="event"></a>bool QFocusFrame.event (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">QObject.event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="eventFilter"></a>bool QFocusFrame.eventFilter (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>)</h3>
+<p>从重新实现<a href="qobject.html#eventFilter" tppabs="http://pyqt4doc.appspot.com/qobject.html#eventFilter">QObject.eventFilter</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="initStyleOption"></a>QFocusFrame.initStyleOption (<i>self</i>, <a href="qstyleoption.html" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html">QStyleOption</a> <i>option</i>)</h3>
+<p>初始化<i>option</i>与其它的值<a href="qfocusframe.html" tppabs="http://pyqt4doc.appspot.com/qfocusframe.html">QFocusFrame</a>。当他们需要一个这种方法是有用的子类<a href="qstyleoption.html" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html">QStyleOption</a>，但不希望在所有的信息填写自己。</p>
+<p><b>See also</b> <a href="qstyleoption.html#initFrom" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html#initFrom">QStyleOption.initFrom</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="paintEvent"></a>QFocusFrame.paintEvent (<i>self</i>, <a href="qpaintevent.html" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html">QPaintEvent</a>)</h3>
+<p>从重新实现<a href="qwidget.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#paintEvent">QWidget.paintEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setWidget"></a>QFocusFrame.setWidget (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>widget</i>)</h3>
+<p><a href="qfocusframe.html" tppabs="http://pyqt4doc.appspot.com/qfocusframe.html">QFocusFrame</a>将跟踪更改<i>widget</i>并自动调整自身的大小。如果被监控的小部件的父变化，<a href="qfocusframe.html" tppabs="http://pyqt4doc.appspot.com/qfocusframe.html">QFocusFrame</a>将按照窗口小部件并自动将自己周围的部件。如果被监视的部件被删除时，<a href="qfocusframe.html" tppabs="http://pyqt4doc.appspot.com/qfocusframe.html">QFocusFrame</a>将其设置为零。</p>
+<p><b>See also</b> <a href="qfocusframe.html#widget" tppabs="http://pyqt4doc.appspot.com/qfocusframe.html#widget">QFocusFrame.widget</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="widget"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QFocusFrame.widget (<i>self</i>)</h3>
+<p>返回当前监控的部件自动调整和更新。</p>
+<p><b>See also</b> <a href="qfocusframe.html#setWidget" tppabs="http://pyqt4doc.appspot.com/qfocusframe.html#setWidget">QFocusFrame.setWidget</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

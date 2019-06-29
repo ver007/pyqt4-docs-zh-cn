@@ -1,0 +1,91 @@
+﻿<html>
+<head>
+<title>QPaintEvent Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QPaintEvent Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QPaintEvent类包含事件参数的paint事件。<a href="#details">More...</a></p>
+
+<p>继承<a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qpaintevent.html#QPaintEvent" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html#QPaintEvent">__init__</a></b> (<i>self</i>, QRegion <i>paintRegion</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpaintevent.html#QPaintEvent-2" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html#QPaintEvent-2">__init__</a></b> (<i>self</i>, QRect <i>paintRect</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpaintevent.html#QPaintEvent-3" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html#QPaintEvent-3">__init__</a></b> (<i>self</i>, QPaintEvent)</li>
+<li>
+<div class="fn"></div>QRect <b><a href="qpaintevent.html#rect" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html#rect">rect</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qpaintevent.html#region" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html#region">region</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QPaintEvent类包含事件参数的paint事件。</p>
+<p>Paint事件被发送到需要更新自己，例如，当一个部件的一部分露出小部件，因为复盖部件被感动了。</p>
+<p>该事件包含一个<a href="qpaintevent.html#region" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html#region">region</a>（）需要被更新，并且<a href="qpaintevent.html#rect" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html#rect">rect</a>（）是该地区的边界矩形。两者都提供了，因为很多部件无法做出多大用处的<a href="qpaintevent.html#region" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html#region">region</a>（）和<a href="qpaintevent.html#rect" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html#rect">rect</a>（ ）可以比快得多<a href="qpaintevent.html#region" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html#region">region</a>（ ） 。 boundingRect （ ） 。</p>
+<a id="automatic-clipping" name="automatic-clipping"></a>
+<h3>Automatic Clipping</h3>
+<p>画是夹在<a href="qpaintevent.html#region" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html#region">region</a>（ ）油漆事件的处理过程中。这条新闻是由Qt的油漆系统中进行，并独立可应用于任何削波<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>用于绘制油漆设备上。</p>
+<p>其结果，返回的值<a href="qpainter.html#clipRegion" tppabs="http://pyqt4doc.appspot.com/qpainter.html#clipRegion">QPainter.clipRegion</a>（ ）在新落成的<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>将不反映所使用的涂料系统的裁剪区域。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QPaintEvent"></a>QPaintEvent.__init__ (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>paintRegion</i>)</h3>
+<p>构造一个Paint事件对象需要被更新的区域。这个地区被指定<i>paintRegion</i>。</p>
+
+
+<h3 class="fn">
+<a name="QPaintEvent-2"></a>QPaintEvent.__init__ (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>paintRect</i>)</h3>
+<p>构造一个Paint事件对象与需要更新的矩形。这个地区被指定<i>paintRect</i>。</p>
+
+
+<h3 class="fn">
+<a name="QPaintEvent-3"></a>QPaintEvent.__init__ (<i>self</i>, <a href="qpaintevent.html" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html">QPaintEvent</a>)</h3>
+<h3 class="fn">
+<a name="rect"></a><a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> QPaintEvent.rect (<i>self</i>)</h3>
+<p>返回需要被更新的矩形。</p>
+<p><b>See also</b> <a href="qpaintevent.html#region" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html#region">region</a>（）和<a href="qpainter.html#setClipRect" tppabs="http://pyqt4doc.appspot.com/qpainter.html#setClipRect">QPainter.setClipRect</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="region"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QPaintEvent.region (<i>self</i>)</h3>
+<p>返回需要更新的区域。</p>
+<p><b>See also</b> <a href="qpaintevent.html#rect" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html#rect">rect</a>（）和<a href="qpainter.html#setClipRegion" tppabs="http://pyqt4doc.appspot.com/qpainter.html#setClipRegion">QPainter.setClipRegion</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

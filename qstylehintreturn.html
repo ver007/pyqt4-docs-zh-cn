@@ -1,0 +1,157 @@
+﻿<html>
+<head>
+<title>QStyleHintReturn Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QStyleHintReturn Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QStyleHintReturn类提供的样式提示返回多个基本数据类型。<a href="#details">More...</a></p>
+
+<p>通过继承<a href="qstylehintreturnmask.html" tppabs="http://pyqt4doc.appspot.com/qstylehintreturnmask.html">QStyleHintReturnMask</a>和<a href="qstylehintreturnvariant.html" tppabs="http://pyqt4doc.appspot.com/qstylehintreturnvariant.html">QStyleHintReturnVariant</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qstylehintreturn.html#HintReturnType-enum" tppabs="http://pyqt4doc.appspot.com/qstylehintreturn.html#HintReturnType-enum">HintReturnType</a></b> { SH_Default, SH_Mask, SH_Variant }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qstylehintreturn.html#StyleOptionType-enum" tppabs="http://pyqt4doc.appspot.com/qstylehintreturn.html#StyleOptionType-enum">StyleOptionType</a></b> { Type }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qstylehintreturn.html#StyleOptionVersion-enum" tppabs="http://pyqt4doc.appspot.com/qstylehintreturn.html#StyleOptionVersion-enum">StyleOptionVersion</a></b> { Version }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qstylehintreturn.html#QStyleHintReturn" tppabs="http://pyqt4doc.appspot.com/qstylehintreturn.html#QStyleHintReturn">__init__</a></b> (<i>self</i>, int <i>version</i> = QStyleOption.Version, int <i>type</i> = QStyleHintReturn.SH_Default)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstylehintreturn.html#QStyleHintReturn-2" tppabs="http://pyqt4doc.appspot.com/qstylehintreturn.html#QStyleHintReturn-2">__init__</a></b> (<i>self</i>, QStyleHintReturn)</li>
+</ul>
+<h3>Members</h3>
+<ul>
+<li>
+<div class="fn"></div>int <b><a href="qstylehintreturn.html#type-var" tppabs="http://pyqt4doc.appspot.com/qstylehintreturn.html#type-var">type</a></b>
+</li>
+<li>
+<div class="fn"></div>int <b><a href="qstylehintreturn.html#version-var" tppabs="http://pyqt4doc.appspot.com/qstylehintreturn.html#version-var">version</a></b>
+</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QStyleHintReturn类提供的样式提示返回多个基本数据类型。</p>
+<p>QStyleHintReturn及其子类是用来传递从样式信息返回给查询窗口小部件。这是最有用的，当从返回值<a href="qstyle.html#styleHint" tppabs="http://pyqt4doc.appspot.com/qstyle.html#styleHint">QStyle.styleHint</a>（）不提供足够的细节，例如，当一个掩膜将被返回。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="HintReturnType-enum"></a>QStyleHintReturn.HintReturnType</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QStyleHintReturn.SH_Default</tt></td>
+<td class="topAlign"><tt>0xf000</tt></td>
+<td class="topAlign"><a href="qstylehintreturn.html" tppabs="http://pyqt4doc.appspot.com/qstylehintreturn.html">QStyleHintReturn</a></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QStyleHintReturn.SH_Mask</tt></td>
+<td class="topAlign">？</td>
+<td class="topAlign">
+<a href="qstyle.html#StyleHint-enum" tppabs="http://pyqt4doc.appspot.com/qstyle.html#StyleHint-enum">QStyle.SH_RubberBand_Mask</a>
+<a href="qstyle.html#StyleHint-enum" tppabs="http://pyqt4doc.appspot.com/qstyle.html#StyleHint-enum">QStyle.SH_FocusFrame_Mask</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QStyleHintReturn.SH_Variant</tt></td>
+<td class="topAlign">？</td>
+<td class="topAlign"><a href="qstyle.html#StyleHint-enum" tppabs="http://pyqt4doc.appspot.com/qstyle.html#StyleHint-enum">QStyle.SH_TextControl_FocusIndicatorTextCharFormat</a></td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="StyleOptionType-enum"></a>QStyleHintReturn.StyleOptionType</h3>
+<p>此枚举是用来保存有关样式选项的类型信息，并定义每个<a href="qstylehintreturn.html" tppabs="http://pyqt4doc.appspot.com/qstylehintreturn.html">QStyleHintReturn</a>子类。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QStyleHintReturn.Type</tt></td>
+<td class="topAlign"><tt>SH_Default</tt></td>
+<td class="topAlign">风格选择该类型提供（<a href="qstylehintreturn.html#HintReturnType-enum" tppabs="http://pyqt4doc.appspot.com/qstylehintreturn.html#HintReturnType-enum">SH_Default</a>这个类） 。</td>
+</tr>
+</table>
+<p>该类型在内部使用<a href="qstylehintreturn.html" tppabs="http://pyqt4doc.appspot.com/qstylehintreturn.html">QStyleHintReturn</a>，它的子类，并<a href="qstyleoption.html#qstyleoption_cast" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html#qstyleoption_cast">qstyleoption_cast</a>（）来确定的样式选项的类型。一般来说，你不需要担心这个，除非你想创建自己的<a href="qstylehintreturn.html" tppabs="http://pyqt4doc.appspot.com/qstylehintreturn.html">QStyleHintReturn</a>子类和你自己的风格。</p>
+<p><b>See also</b> <a href="qstylehintreturn.html#StyleOptionVersion-enum" tppabs="http://pyqt4doc.appspot.com/qstylehintreturn.html#StyleOptionVersion-enum">StyleOptionVersion</a>。</p>
+
+
+<h3 class="fn">
+<a name="StyleOptionVersion-enum"></a>QStyleHintReturn.StyleOptionVersion</h3>
+<p>此枚举是用来保存有关样式选项的版本信息，并定义每个<a href="qstylehintreturn.html" tppabs="http://pyqt4doc.appspot.com/qstylehintreturn.html">QStyleHintReturn</a>子类。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QStyleHintReturn.Version</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">1</td>
+</tr>
+</table>
+<p>的版本是由<a href="qstylehintreturn.html" tppabs="http://pyqt4doc.appspot.com/qstylehintreturn.html">QStyleHintReturn</a>子类实现不破坏兼容性扩展。如果你使用<a href="qstyleoption.html#qstyleoption_cast" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html#qstyleoption_cast">qstyleoption_cast</a>（ ） ，你通常并不需要检查它。</p>
+<p><b>See also</b> <a href="qstylehintreturn.html#StyleOptionType-enum" tppabs="http://pyqt4doc.appspot.com/qstylehintreturn.html#StyleOptionType-enum">StyleOptionType</a>。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QStyleHintReturn"></a>QStyleHintReturn.__init__ (<i>self</i>, int <i>version</i> = QStyleOption.Version, int <i>type</i> = QStyleHintReturn.SH_Default)</h3>
+<p>构造一个<a href="qstylehintreturn.html" tppabs="http://pyqt4doc.appspot.com/qstylehintreturn.html">QStyleHintReturn</a>与版本<i>version</i>和类型<i>type</i>。</p>
+<p>该版本具有没有特殊含义<a href="qstylehintreturn.html" tppabs="http://pyqt4doc.appspot.com/qstylehintreturn.html">QStyleHintReturn</a>它可以用于由子类不同版本的相同的提示类型之间进行区分。</p>
+<p><b>See also</b> <a href="qstyleoption.html#version-var" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html#version-var">QStyleOption.version</a>和<a href="qstyleoption.html#type-varx" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html#type-varx">QStyleOption.type</a>。</p>
+<h3 class="fn">
+<a name="QStyleHintReturn-2"></a>QStyleHintReturn.__init__ (<i>self</i>, <a href="qstylehintreturn.html" tppabs="http://pyqt4doc.appspot.com/qstylehintreturn.html">QStyleHintReturn</a>)</h3>
+<hr>
+<h2>Member Documentation</h2>
+<h3 class="fn">
+<a name="type-var"></a>int type</h3>
+<h3 class="fn">
+<a name="version-var"></a>int version</h3>
+<p>这个变量保存样式提示返回容器的版本。</p>
+<p>这个值可以由子类用于实现扩展不会破坏兼容性。如果你使用qstyleoption_cast \u003cT\u003e （ ） ，你通常并不需要检查它。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

@@ -1,0 +1,72 @@
+﻿<html>
+<head>
+<title>QDBusInterface Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDBusInterface Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdbus.html">QtDBus</a> module]</sup></sup>
+</h1>
+<p>该QDBusInterface类是对远程对象接口的代理。<a href="#details">More...</a></p>
+
+<p>继承<a href="qdbusabstractinterface.html" tppabs="http://pyqt4doc.appspot.com/qdbusabstractinterface.html">QDBusAbstractInterface</a>。</p>
+<h3>Methods</h3>
+<ul><li>
+<div class="fn"></div>
+<b><a href="qdbusinterface.html#QDBusInterface" tppabs="http://pyqt4doc.appspot.com/qdbusinterface.html#QDBusInterface">__init__</a></b> (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i> = QString(), QDBusConnection <i>connection</i> = QDBusConnection.sessionBus(), QObject <i>parent</i> = None)</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDBusInterface类是对远程对象接口的代理。</p>
+<p>QDBusInterface是用来放置调用远程对象，连接到远程对象导出的信号，并获取/设置远程属性值的通用方法类。这个类是动态访问远程对象很有用：即当你没有一个生成代码，表示该远程接口。</p>
+<p>呼叫通常放置使用<a href="qdbusabstractinterface.html#call" tppabs="http://pyqt4doc.appspot.com/qdbusabstractinterface.html#call">call</a>（ ）函数，它构造消息，发送过来的大巴，等待答复和解码的答复。信号是通过使用正常连接到<a href="qobject.html#connect" tppabs="http://pyqt4doc.appspot.com/qobject.html#connect">QObject.connect</a>（）函数。最后，属性是使用访问<a href="qobject.html#property" tppabs="http://pyqt4doc.appspot.com/qobject.html#property">QObject.property</a>（）和<a href="qobject.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qobject.html#setProperty">QObject.setProperty</a>（）函数。</p>
+<p>下面的代码片断演示了如何执行数学运算<tt>"2 + 2"</tt>在所谓的远程应用程序<tt>com.example.Calculator</tt>通过会话总线，访问。</p>
+<pre class="cpp">
+ <span class="type">QDBusInterface</span> remoteApp( <span class="string">"com.example.Calculator"</span><span class="operator">,</span> <span class="string">"/Calculator/Operations"</span><span class="operator">,</span>
+                           <span class="string">"org.mathematics.RPNCalculator"</span> );
+ remoteApp<span class="operator">.</span><a href="qdbusabstractinterface.html#call" tppabs="http://pyqt4doc.appspot.com/qdbusabstractinterface.html#call">call</a>( <span class="string">"PushOperand"</span><span class="operator">,</span> <span class="number">2</span> );
+ remoteApp<span class="operator">.</span><a href="qdbusabstractinterface.html#call" tppabs="http://pyqt4doc.appspot.com/qdbusabstractinterface.html#call">call</a>( <span class="string">"PushOperand"</span><span class="operator">,</span> <span class="number">2</span> );
+ remoteApp<span class="operator">.</span><a href="qdbusabstractinterface.html#call" tppabs="http://pyqt4doc.appspot.com/qdbusabstractinterface.html#call">call</a>( <span class="string">"ExecuteOperation"</span><span class="operator">,</span> <span class="string">"+"</span> );
+ <span class="type"><a href="qdbusreply.html" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html">QDBusReply</a></span><span class="operator">&lt;</span><span class="type">int</span><span class="operator">&gt;</span> reply <span class="operator">=</span> remoteApp<span class="operator">.</span><a href="qdbusabstractinterface.html#call" tppabs="http://pyqt4doc.appspot.com/qdbusabstractinterface.html#call">call</a>( <span class="string">"PopOperand"</span> );
+
+ <span class="keyword">if</span> ( reply<span class="operator">.</span>isValid() )
+     printf( <span class="string">"%d"</span><span class="operator">,</span> reply<span class="operator">.</span>value() );          <span class="comment">// prints 4</span>
+</pre>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDBusInterface"></a>QDBusInterface.__init__ (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i> = QString(), <a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a> <i>connection</i> = QDBusConnection.sessionBus(), <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>创建一个动态<a href="qdbusinterface.html" tppabs="http://pyqt4doc.appspot.com/qdbusinterface.html">QDBusInterface</a>与接口相关联的对象<i>interface</i>在对路径物件<i>path</i>对服务<i>service</i>，使用给定的<i>connection</i>。如果<i>interface</i>是一个空字符串，创建的对象将引用该对象中找到的所有接口的合并。</p>
+<p><i>parent</i>传递给基类构造函数。</p>
+<p>如果该远程服务<i>service</i>不存在，或者如果发生错误试图获取远程接口的描述<i>interface</i>，创建的对象将是无效的（见<a href="qdbusabstractinterface.html#isValid" tppabs="http://pyqt4doc.appspot.com/qdbusabstractinterface.html#isValid">isValid</a>（））。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

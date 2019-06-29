@@ -1,0 +1,123 @@
+﻿<html>
+<head>
+<title>QTextImageFormat Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QTextImageFormat Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>The QTextImageFormat class provides formatting information for
+images in a <a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>.
+<a href="#details">More...</a></p>
+
+<p>继承<a href="qtextcharformat.html" tppabs="http://pyqt4doc.appspot.com/qtextcharformat.html">QTextCharFormat</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qtextimageformat.html#QTextImageFormat" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html#QTextImageFormat">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextimageformat.html#QTextImageFormat-2" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html#QTextImageFormat-2">__init__</a></b> (<i>self</i>, QTextImageFormat)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtextimageformat.html#height" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html#height">height</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextimageformat.html#isValid" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html#isValid">isValid</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qtextimageformat.html#name" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html#name">name</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextimageformat.html#setHeight" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html#setHeight">setHeight</a></b> (<i>self</i>, float <i>aheight</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextimageformat.html#setName" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html#setName">setName</a></b> (<i>self</i>, QString <i>aname</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextimageformat.html#setWidth" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html#setWidth">setWidth</a></b> (<i>self</i>, float <i>awidth</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtextimageformat.html#width" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html#width">width</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QTextImageFormat类提供的格式设置信息的图像<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>。</p>
+<p>内嵌图像是由一个对象替换字符（ 0xFFFC以Unicode ），其中有一个相关的QTextImageFormat表示。图像格式指定一个名字<a href="qtextimageformat.html#setName" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html#setName">setName</a>（） ，用于定位该图像。使用指定的矩形的大小，图像将被佔用<a href="qtextimageformat.html#setWidth" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html#setWidth">setWidth</a>（）和<a href="qtextimageformat.html#setHeight" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html#setHeight">setHeight</a>（ ） 。</p>
+<p>图像可以在为其Qt的图像读取任何格式提供的，因此SVG图形可以包括一起PNG，TIFF等位图格式。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QTextImageFormat"></a>QTextImageFormat.__init__ (<i>self</i>)</h3>
+<p>创建一个新的图像格式的对象。</p>
+
+
+<h3 class="fn">
+<a name="QTextImageFormat-2"></a>QTextImageFormat.__init__ (<i>self</i>, <a href="qtextimageformat.html" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html">QTextImageFormat</a>)</h3>
+<h3 class="fn">
+<a name="height"></a>float QTextImageFormat.height (<i>self</i>)</h3>
+<p>返回由图像所佔据的矩形的高度。</p>
+<p><b>See also</b> <a href="qtextimageformat.html#width" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html#width">width</a>（）和<a href="qtextimageformat.html#setHeight" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html#setHeight">setHeight</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isValid"></a>bool QTextImageFormat.isValid (<i>self</i>)</h3>
+<p>返回True如果图像格式是有效的，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="name"></a>QString QTextImageFormat.name (<i>self</i>)</h3>
+<p>返回图像的名称。这个名字是指在应用程序的资源文件中的条目。</p>
+<p><b>See also</b> <a href="qtextimageformat.html#setName" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html#setName">setName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setHeight"></a>QTextImageFormat.setHeight (<i>self</i>, float <i>aheight</i>)</h3>
+<p>设置<i>height</i>由图像所佔据的矩形。</p>
+<p><b>See also</b> <a href="qtextimageformat.html#height" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html#height">height</a>（）和<a href="qtextimageformat.html#setWidth" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html#setWidth">setWidth</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setName"></a>QTextImageFormat.setName (<i>self</i>, QString <i>aname</i>)</h3>
+<p>设置<i>name</i>的图像。该<i>name</i>用来定位图像中的应用程序的资源。</p>
+<p><b>See also</b> <a href="qtextimageformat.html#name" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html#name">name</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setWidth"></a>QTextImageFormat.setWidth (<i>self</i>, float <i>awidth</i>)</h3>
+<p>设置<i>width</i>由图像所佔据的矩形。</p>
+<p><b>See also</b> <a href="qtextimageformat.html#width" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html#width">width</a>（）和<a href="qtextimageformat.html#setHeight" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html#setHeight">setHeight</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="width"></a>float QTextImageFormat.width (<i>self</i>)</h3>
+<p>返回由图像所佔据的矩形的宽度。</p>
+<p><b>See also</b> <a href="qtextimageformat.html#height" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html#height">height</a>（）和<a href="qtextimageformat.html#setWidth" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html#setWidth">setWidth</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

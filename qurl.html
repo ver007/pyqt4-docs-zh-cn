@@ -1,0 +1,1059 @@
+﻿<html>
+<head>
+<title>QUrl Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QUrl Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QUrl类提供了一个方便的接口，用于处理URL 。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qurl.html#FormattingOption-enum" tppabs="http://pyqt4doc.appspot.com/qurl.html#FormattingOption-enum">FormattingOption</a></b> { None, RemoveScheme, RemovePassword, RemoveUserInfo, ..., StripTrailingSlash }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qurl-formattingoptions.html">FormattingOptions</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qurl.html#ParsingMode-enum" tppabs="http://pyqt4doc.appspot.com/qurl.html#ParsingMode-enum">ParsingMode</a></b> { TolerantMode, StrictMode }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#QUrl" tppabs="http://pyqt4doc.appspot.com/qurl.html#QUrl">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#QUrl-2" tppabs="http://pyqt4doc.appspot.com/qurl.html#QUrl-2">__init__</a></b> (<i>self</i>, QString <i>url</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#QUrl-3" tppabs="http://pyqt4doc.appspot.com/qurl.html#QUrl-3">__init__</a></b> (<i>self</i>, QString <i>url</i>, ParsingMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#QUrl-4" tppabs="http://pyqt4doc.appspot.com/qurl.html#QUrl-4">__init__</a></b> (<i>self</i>, QUrl <i>copy</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#addEncodedQueryItem" tppabs="http://pyqt4doc.appspot.com/qurl.html#addEncodedQueryItem">addEncodedQueryItem</a></b> (<i>self</i>, QByteArray <i>key</i>, QByteArray <i>value</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#addQueryItem" tppabs="http://pyqt4doc.appspot.com/qurl.html#addQueryItem">addQueryItem</a></b> (<i>self</i>, QString <i>key</i>, QString <i>value</i>)</li>
+<li>
+<div class="fn"></div>list-of-QByteArray <b><a href="qurl.html#allEncodedQueryItemValues" tppabs="http://pyqt4doc.appspot.com/qurl.html#allEncodedQueryItemValues">allEncodedQueryItemValues</a></b> (<i>self</i>, QByteArray <i>key</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qurl.html#allQueryItemValues" tppabs="http://pyqt4doc.appspot.com/qurl.html#allQueryItemValues">allQueryItemValues</a></b> (<i>self</i>, QString <i>key</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qurl.html#authority" tppabs="http://pyqt4doc.appspot.com/qurl.html#authority">authority</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#clear" tppabs="http://pyqt4doc.appspot.com/qurl.html#clear">clear</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#detach" tppabs="http://pyqt4doc.appspot.com/qurl.html#detach">detach</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qurl.html#encodedFragment" tppabs="http://pyqt4doc.appspot.com/qurl.html#encodedFragment">encodedFragment</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qurl.html#encodedHost" tppabs="http://pyqt4doc.appspot.com/qurl.html#encodedHost">encodedHost</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qurl.html#encodedPassword" tppabs="http://pyqt4doc.appspot.com/qurl.html#encodedPassword">encodedPassword</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qurl.html#encodedPath" tppabs="http://pyqt4doc.appspot.com/qurl.html#encodedPath">encodedPath</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qurl.html#encodedQuery" tppabs="http://pyqt4doc.appspot.com/qurl.html#encodedQuery">encodedQuery</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-tuple-of-QByteArray-QByteArray <b><a href="qurl.html#encodedQueryItems" tppabs="http://pyqt4doc.appspot.com/qurl.html#encodedQueryItems">encodedQueryItems</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qurl.html#encodedQueryItemValue" tppabs="http://pyqt4doc.appspot.com/qurl.html#encodedQueryItemValue">encodedQueryItemValue</a></b> (<i>self</i>, QByteArray <i>key</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qurl.html#encodedUserName" tppabs="http://pyqt4doc.appspot.com/qurl.html#encodedUserName">encodedUserName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qurl.html#errorString" tppabs="http://pyqt4doc.appspot.com/qurl.html#errorString">errorString</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qurl.html#fragment" tppabs="http://pyqt4doc.appspot.com/qurl.html#fragment">fragment</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qurl.html#hasEncodedQueryItem" tppabs="http://pyqt4doc.appspot.com/qurl.html#hasEncodedQueryItem">hasEncodedQueryItem</a></b> (<i>self</i>, QByteArray <i>key</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qurl.html#hasFragment" tppabs="http://pyqt4doc.appspot.com/qurl.html#hasFragment">hasFragment</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qurl.html#hasQuery" tppabs="http://pyqt4doc.appspot.com/qurl.html#hasQuery">hasQuery</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qurl.html#hasQueryItem" tppabs="http://pyqt4doc.appspot.com/qurl.html#hasQueryItem">hasQueryItem</a></b> (<i>self</i>, QString <i>key</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qurl.html#host" tppabs="http://pyqt4doc.appspot.com/qurl.html#host">host</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qurl.html#isDetached" tppabs="http://pyqt4doc.appspot.com/qurl.html#isDetached">isDetached</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qurl.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qurl.html#isEmpty">isEmpty</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qurl.html#isLocalFile" tppabs="http://pyqt4doc.appspot.com/qurl.html#isLocalFile">isLocalFile</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qurl.html#isParentOf" tppabs="http://pyqt4doc.appspot.com/qurl.html#isParentOf">isParentOf</a></b> (<i>self</i>, QUrl <i>url</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qurl.html#isRelative" tppabs="http://pyqt4doc.appspot.com/qurl.html#isRelative">isRelative</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qurl.html#isValid" tppabs="http://pyqt4doc.appspot.com/qurl.html#isValid">isValid</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qurl.html#password" tppabs="http://pyqt4doc.appspot.com/qurl.html#password">password</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qurl.html#path" tppabs="http://pyqt4doc.appspot.com/qurl.html#path">path</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qurl.html#port" tppabs="http://pyqt4doc.appspot.com/qurl.html#port">port</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qurl.html#port-2" tppabs="http://pyqt4doc.appspot.com/qurl.html#port-2">port</a></b> (<i>self</i>, int <i>defaultPort</i>)</li>
+<li>
+<div class="fn"></div>list-of-tuple-of-QString-QString <b><a href="qurl.html#queryItems" tppabs="http://pyqt4doc.appspot.com/qurl.html#queryItems">queryItems</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qurl.html#queryItemValue" tppabs="http://pyqt4doc.appspot.com/qurl.html#queryItemValue">queryItemValue</a></b> (<i>self</i>, QString <i>key</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qurl.html#queryPairDelimiter" tppabs="http://pyqt4doc.appspot.com/qurl.html#queryPairDelimiter">queryPairDelimiter</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qurl.html#queryValueDelimiter" tppabs="http://pyqt4doc.appspot.com/qurl.html#queryValueDelimiter">queryValueDelimiter</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#removeAllEncodedQueryItems" tppabs="http://pyqt4doc.appspot.com/qurl.html#removeAllEncodedQueryItems">removeAllEncodedQueryItems</a></b> (<i>self</i>, QByteArray <i>key</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#removeAllQueryItems" tppabs="http://pyqt4doc.appspot.com/qurl.html#removeAllQueryItems">removeAllQueryItems</a></b> (<i>self</i>, QString <i>key</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#removeEncodedQueryItem" tppabs="http://pyqt4doc.appspot.com/qurl.html#removeEncodedQueryItem">removeEncodedQueryItem</a></b> (<i>self</i>, QByteArray <i>key</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#removeQueryItem" tppabs="http://pyqt4doc.appspot.com/qurl.html#removeQueryItem">removeQueryItem</a></b> (<i>self</i>, QString <i>key</i>)</li>
+<li>
+<div class="fn"></div>QUrl <b><a href="qurl.html#resolved" tppabs="http://pyqt4doc.appspot.com/qurl.html#resolved">resolved</a></b> (<i>self</i>, QUrl <i>relative</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qurl.html#scheme" tppabs="http://pyqt4doc.appspot.com/qurl.html#scheme">scheme</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#setAuthority" tppabs="http://pyqt4doc.appspot.com/qurl.html#setAuthority">setAuthority</a></b> (<i>self</i>, QString <i>authority</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#setEncodedFragment" tppabs="http://pyqt4doc.appspot.com/qurl.html#setEncodedFragment">setEncodedFragment</a></b> (<i>self</i>, QByteArray <i>fragment</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#setEncodedHost" tppabs="http://pyqt4doc.appspot.com/qurl.html#setEncodedHost">setEncodedHost</a></b> (<i>self</i>, QByteArray <i>host</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#setEncodedPassword" tppabs="http://pyqt4doc.appspot.com/qurl.html#setEncodedPassword">setEncodedPassword</a></b> (<i>self</i>, QByteArray <i>password</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#setEncodedPath" tppabs="http://pyqt4doc.appspot.com/qurl.html#setEncodedPath">setEncodedPath</a></b> (<i>self</i>, QByteArray <i>path</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#setEncodedQuery" tppabs="http://pyqt4doc.appspot.com/qurl.html#setEncodedQuery">setEncodedQuery</a></b> (<i>self</i>, QByteArray <i>query</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#setEncodedQueryItems" tppabs="http://pyqt4doc.appspot.com/qurl.html#setEncodedQueryItems">setEncodedQueryItems</a></b> (<i>self</i>, list-of-tuple-of-QByteArray-QByteArray <i>query</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#setEncodedUrl" tppabs="http://pyqt4doc.appspot.com/qurl.html#setEncodedUrl">setEncodedUrl</a></b> (<i>self</i>, QByteArray <i>url</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#setEncodedUrl-2" tppabs="http://pyqt4doc.appspot.com/qurl.html#setEncodedUrl-2">setEncodedUrl</a></b> (<i>self</i>, QByteArray <i>url</i>, ParsingMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#setEncodedUserName" tppabs="http://pyqt4doc.appspot.com/qurl.html#setEncodedUserName">setEncodedUserName</a></b> (<i>self</i>, QByteArray <i>userName</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#setFragment" tppabs="http://pyqt4doc.appspot.com/qurl.html#setFragment">setFragment</a></b> (<i>self</i>, QString <i>fragment</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#setHost" tppabs="http://pyqt4doc.appspot.com/qurl.html#setHost">setHost</a></b> (<i>self</i>, QString <i>host</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#setPassword" tppabs="http://pyqt4doc.appspot.com/qurl.html#setPassword">setPassword</a></b> (<i>self</i>, QString <i>password</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#setPath" tppabs="http://pyqt4doc.appspot.com/qurl.html#setPath">setPath</a></b> (<i>self</i>, QString <i>path</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#setPort" tppabs="http://pyqt4doc.appspot.com/qurl.html#setPort">setPort</a></b> (<i>self</i>, int <i>port</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#setQueryDelimiters" tppabs="http://pyqt4doc.appspot.com/qurl.html#setQueryDelimiters">setQueryDelimiters</a></b> (<i>self</i>, str <i>valueDelimiter</i>, str <i>pairDelimiter</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#setQueryItems" tppabs="http://pyqt4doc.appspot.com/qurl.html#setQueryItems">setQueryItems</a></b> (<i>self</i>, list-of-tuple-of-QString-QString <i>query</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#setScheme" tppabs="http://pyqt4doc.appspot.com/qurl.html#setScheme">setScheme</a></b> (<i>self</i>, QString <i>scheme</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#setUrl" tppabs="http://pyqt4doc.appspot.com/qurl.html#setUrl">setUrl</a></b> (<i>self</i>, QString <i>url</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#setUrl-2" tppabs="http://pyqt4doc.appspot.com/qurl.html#setUrl-2">setUrl</a></b> (<i>self</i>, QString <i>url</i>, ParsingMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#setUserInfo" tppabs="http://pyqt4doc.appspot.com/qurl.html#setUserInfo">setUserInfo</a></b> (<i>self</i>, QString <i>userInfo</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#setUserName" tppabs="http://pyqt4doc.appspot.com/qurl.html#setUserName">setUserName</a></b> (<i>self</i>, QString <i>userName</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#swap" tppabs="http://pyqt4doc.appspot.com/qurl.html#swap">swap</a></b> (<i>self</i>, QUrl <i>other</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qurl.html#toEncoded" tppabs="http://pyqt4doc.appspot.com/qurl.html#toEncoded">toEncoded</a></b> (<i>self</i>, FormattingOptions <i>options</i> = QUrl.None)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qurl.html#toLocalFile" tppabs="http://pyqt4doc.appspot.com/qurl.html#toLocalFile">toLocalFile</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qurl.html#topLevelDomain" tppabs="http://pyqt4doc.appspot.com/qurl.html#topLevelDomain">topLevelDomain</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qurl.html#toString" tppabs="http://pyqt4doc.appspot.com/qurl.html#toString">toString</a></b> (<i>self</i>, FormattingOptions <i>options</i> = QUrl.None)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qurl.html#userInfo" tppabs="http://pyqt4doc.appspot.com/qurl.html#userInfo">userInfo</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qurl.html#userName" tppabs="http://pyqt4doc.appspot.com/qurl.html#userName">userName</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QString <b><a href="qurl.html#fromAce" tppabs="http://pyqt4doc.appspot.com/qurl.html#fromAce">fromAce</a></b> (QByteArray)</li>
+<li>
+<div class="fn"></div>QUrl <b><a href="qurl.html#fromEncoded" tppabs="http://pyqt4doc.appspot.com/qurl.html#fromEncoded">fromEncoded</a></b> (QByteArray <i>url</i>)</li>
+<li>
+<div class="fn"></div>QUrl <b><a href="qurl.html#fromEncoded-2" tppabs="http://pyqt4doc.appspot.com/qurl.html#fromEncoded-2">fromEncoded</a></b> (QByteArray <i>url</i>, ParsingMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>QUrl <b><a href="qurl.html#fromLocalFile" tppabs="http://pyqt4doc.appspot.com/qurl.html#fromLocalFile">fromLocalFile</a></b> (QString <i>localfile</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qurl.html#fromPercentEncoding" tppabs="http://pyqt4doc.appspot.com/qurl.html#fromPercentEncoding">fromPercentEncoding</a></b> (QByteArray)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qurl.html#fromPunycode" tppabs="http://pyqt4doc.appspot.com/qurl.html#fromPunycode">fromPunycode</a></b> (QByteArray)</li>
+<li>
+<div class="fn"></div>QUrl <b><a href="qurl.html#fromUserInput" tppabs="http://pyqt4doc.appspot.com/qurl.html#fromUserInput">fromUserInput</a></b> (QString <i>userInput</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qurl.html#idnWhitelist" tppabs="http://pyqt4doc.appspot.com/qurl.html#idnWhitelist">idnWhitelist</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qurl.html#setIdnWhitelist" tppabs="http://pyqt4doc.appspot.com/qurl.html#setIdnWhitelist">setIdnWhitelist</a></b> (QStringList)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qurl.html#toAce" tppabs="http://pyqt4doc.appspot.com/qurl.html#toAce">toAce</a></b> (QString)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qurl.html#toPercentEncoding" tppabs="http://pyqt4doc.appspot.com/qurl.html#toPercentEncoding">toPercentEncoding</a></b> (QString <i>input</i>, QByteArray <i>exclude</i> = QByteArray(), QByteArray <i>include</i> = QByteArray())</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qurl.html#toPunycode" tppabs="http://pyqt4doc.appspot.com/qurl.html#toPunycode">toPunycode</a></b> (QString)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>bool <b><a href="qurl.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qurl.html#__eq__">__eq__</a></b> (<i>self</i>, QUrl <i>url</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qurl.html#__ge__" tppabs="http://pyqt4doc.appspot.com/qurl.html#__ge__">__ge__</a></b> (<i>self</i>, QUrl <i>url</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qurl.html#__hash__" tppabs="http://pyqt4doc.appspot.com/qurl.html#__hash__">__hash__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qurl.html#__lt__" tppabs="http://pyqt4doc.appspot.com/qurl.html#__lt__">__lt__</a></b> (<i>self</i>, QUrl <i>url</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qurl.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qurl.html#__ne__">__ne__</a></b> (<i>self</i>, QUrl <i>url</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qurl.html#__repr__" tppabs="http://pyqt4doc.appspot.com/qurl.html#__repr__">__repr__</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QUrl类提供了一个方便的接口，用于处理URL 。</p>
+<p>它可以解析和构造的URL在这两个编码和非编码形式。 QUrl还拥有国际化域名（IDN ）的支持。</p>
+<p>使用QUrl最常用的方法是通过构造函数传递给它初始化一个<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>。否则，<a href="qurl.html#setUrl" tppabs="http://pyqt4doc.appspot.com/qurl.html#setUrl">setUrl</a>（）和<a href="qurl.html#setEncodedUrl" tppabs="http://pyqt4doc.appspot.com/qurl.html#setEncodedUrl">setEncodedUrl</a>（）也可以使用。</p>
+<p>URL可以有两种形式来表示：编码和非编码。未编码的表示法是适于显示给用户，而是编码表示通常你会发送到Web服务器什么。例如，未编码的URL “ http://bühler.example.com/List applicants.xml的”将被发送到服务器的“ http://xn--bhler-kva.example.com/List ％ 20of ％ 20applicants.xml “ ，这可以通过调用验证<a href="qurl.html#toEncoded" tppabs="http://pyqt4doc.appspot.com/qurl.html#toEncoded">toEncoded</a>（）函数。</p>
+<p>一个URL ，也可以通过调用构造一块一块<a href="qurl.html#setScheme" tppabs="http://pyqt4doc.appspot.com/qurl.html#setScheme">setScheme</a>（ ）<a href="qurl.html#setUserName" tppabs="http://pyqt4doc.appspot.com/qurl.html#setUserName">setUserName</a>（ ）<a href="qurl.html#setPassword" tppabs="http://pyqt4doc.appspot.com/qurl.html#setPassword">setPassword</a>（ ）<a href="qurl.html#setHost" tppabs="http://pyqt4doc.appspot.com/qurl.html#setHost">setHost</a>（ ）<a href="qurl.html#setPort" tppabs="http://pyqt4doc.appspot.com/qurl.html#setPort">setPort</a>（ ）<a href="qurl.html#setPath" tppabs="http://pyqt4doc.appspot.com/qurl.html#setPath">setPath</a>（ ）<a href="qurl.html#setEncodedQuery" tppabs="http://pyqt4doc.appspot.com/qurl.html#setEncodedQuery">setEncodedQuery</a>（）和<a href="qurl.html#setFragment" tppabs="http://pyqt4doc.appspot.com/qurl.html#setFragment">setFragment</a>（ ） 。一些方便的功能也可以：<a href="qurl.html#setAuthority" tppabs="http://pyqt4doc.appspot.com/qurl.html#setAuthority">setAuthority</a>（ ）设置用户名，密码，主机和端口。<a href="qurl.html#setUserInfo" tppabs="http://pyqt4doc.appspot.com/qurl.html#setUserInfo">setUserInfo</a>（）设置用户名和密码一次。</p>
+<p>Call <a href="qurl.html#isValid" tppabs="http://pyqt4doc.appspot.com/qurl.html#isValid">isValid</a>（ ）来检查URL是否有效。这可以在任何一点的URL的构建过程中来完成。</p>
+<p>构造查询是通过使用特别方便<a href="qurl.html#setQueryItems" tppabs="http://pyqt4doc.appspot.com/qurl.html#setQueryItems">setQueryItems</a>（ ）<a href="qurl.html#addQueryItem" tppabs="http://pyqt4doc.appspot.com/qurl.html#addQueryItem">addQueryItem</a>（）和<a href="qurl.html#removeQueryItem" tppabs="http://pyqt4doc.appspot.com/qurl.html#removeQueryItem">removeQueryItem</a>（ ） 。使用<a href="qurl.html#setQueryDelimiters" tppabs="http://pyqt4doc.appspot.com/qurl.html#setQueryDelimiters">setQueryDelimiters</a>（ ）来定制用于生成查询字符串分隔符。</p>
+<p>为了生成编码的URL字符串或查询字符串的方便，有两个静态函数调用<a href="qurl.html#fromPercentEncoding" tppabs="http://pyqt4doc.appspot.com/qurl.html#fromPercentEncoding">fromPercentEncoding</a>（）和<a href="qurl.html#toPercentEncoding" tppabs="http://pyqt4doc.appspot.com/qurl.html#toPercentEncoding">toPercentEncoding</a>（ ）涉及％的编码和将QString解码。</p>
+<p>调用<a href="qurl.html#isRelative" tppabs="http://pyqt4doc.appspot.com/qurl.html#isRelative">isRelative</a>（ ）会告诉的URL是否是相对的。相对URL可以通过将它作为参数传递给解决<a href="qurl.html#resolved" tppabs="http://pyqt4doc.appspot.com/qurl.html#resolved">resolved</a>（ ） ，它返回一个绝对URL 。<a href="qurl.html#isParentOf" tppabs="http://pyqt4doc.appspot.com/qurl.html#isParentOf">isParentOf</a>（ ）是用于确定一个URL是否是另一个的父代。</p>
+<p><a href="qurl.html#fromLocalFile" tppabs="http://pyqt4doc.appspot.com/qurl.html#fromLocalFile">fromLocalFile</a>（ ）通过解析本地文件路径构造一个QUrl 。<a href="qurl.html#toLocalFile" tppabs="http://pyqt4doc.appspot.com/qurl.html#toLocalFile">toLocalFile</a>（ ）转换成一个URL到本地文件路径。</p>
+<p>URL的人类可读的表示是牵强<a href="qurl.html#toString" tppabs="http://pyqt4doc.appspot.com/qurl.html#toString">toString</a>（ ） 。这种表示是适合显示的URL中未编码形式的用户。然而的编码形式，所返回的<a href="qurl.html#toEncoded" tppabs="http://pyqt4doc.appspot.com/qurl.html#toEncoded">toEncoded</a>（ ） ，是供内部使用，传递给Web服务器，邮件客户端等。</p>
+<p>QUrl符合URI规范从<a href="http://www.rfc-editor.org/rfc/rfc3986.txt">RFC 3986</a>（统一资源标识符：通用语法） ，并且包括从计划扩展<a href="http://www.rfc-editor.org/rfc/rfc1738.txt">RFC 1738</a>（统一资源定位器） 。在QUrl情况下折叠规则符合<a href="http://www.rfc-editor.org/rfc/rfc3491.txt">RFC 3491</a>（ NAMEPREP ：一个STRINGPREP简介国际化域名（ IDN ） ） 。</p>
+<a id="character-conversions" name="character-conversions"></a>
+<h4>Character Conversions</h4>
+<p>遵循这些规则，以避免错误的字符转换时用的URL和字符串处理：</p>
+<ul>
+<li>When creating an <a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a> to contain
+a URL from a <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> or a char*,
+always use <a href="qstring.html#fromUtf8" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromUtf8">QString.fromUtf8</a>().</li>
+<li>Favor the use of <a href="qurl.html#fromEncoded" tppabs="http://pyqt4doc.appspot.com/qurl.html#fromEncoded">QUrl.fromEncoded</a>() and <a href="qurl.html#toEncoded" tppabs="http://pyqt4doc.appspot.com/qurl.html#toEncoded">QUrl.toEncoded</a>() instead of QUrl(string)
+and <a href="qurl.html#toString" tppabs="http://pyqt4doc.appspot.com/qurl.html#toString">QUrl.toString</a>() when
+converting a QUrl to or from a string.</li>
+</ul>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="FormattingOption-enum"></a>QUrl.FormattingOption</h3>
+<p>格式选项定义了如何当写出来的文字的URL格式。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QUrl.None</tt></td>
+<td class="topAlign"><tt>0x0</tt></td>
+<td class="topAlign">URL的格式不变。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QUrl.RemoveScheme</tt></td>
+<td class="topAlign"><tt>0x1</tt></td>
+<td class="topAlign">该计划从URL中移除。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QUrl.RemovePassword</tt></td>
+<td class="topAlign"><tt>0x2</tt></td>
+<td class="topAlign">任何密码在URL中移除。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QUrl.RemoveUserInfo</tt></td>
+<td class="topAlign"><tt>RemovePassword | 0x4</tt></td>
+<td class="topAlign">URL中的任何用户信息被删除。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QUrl.RemovePort</tt></td>
+<td class="topAlign"><tt>0x8</tt></td>
+<td class="topAlign">任何指定的端口是从URL中移除。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QUrl.RemoveAuthority</tt></td>
+<td class="topAlign"><tt>RemoveUserInfo | RemovePort |
+0x10</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QUrl.RemovePath</tt></td>
+<td class="topAlign"><tt>0x20</tt></td>
+<td class="topAlign">在URL的路径被删除，只留下了方案，主机地址和端口（如果有的话） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QUrl.RemoveQuery</tt></td>
+<td class="topAlign"><tt>0x40</tt></td>
+<td class="topAlign">网址（以下一个' ？ '字符）的查询部分被删除。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QUrl.RemoveFragment</tt></td>
+<td class="topAlign"><tt>0x80</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QUrl.StripTrailingSlash</tt></td>
+<td class="topAlign"><tt>0x10000</tt></td>
+<td class="topAlign">如果存在的斜线被删除。</td>
+</tr>
+</table>
+<p>请注意，在折叠的规则的情况下<a href="http://www.rfc-editor.org/rfc/rfc3491.txt">Nameprep</a>，这<a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>符合，需要总是被转换为小写的主机名，而不管使用的Qt.FormattingOptions的。</p>
+<p>该FormattingOptions类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cFormattingOption\u003e 。它存储FormattingOption值的或组合。</p>
+
+
+<h3 class="fn">
+<a name="ParsingMode-enum"></a>QUrl.ParsingMode</h3>
+<p>解析模式控制方式<a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>解析字符串。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QUrl.TolerantMode</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">
+<a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>将设法纠正URL中一些常见的错误。处理用户输入的URL时，这种模式十分有用。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QUrl.StrictMode</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">只有有效的URL被接受。此模式适用于一般的URL验证有用。</td>
+</tr>
+</table>
+<p>在TolerantMode ，解析器修正了以下无效输入：</p>
+<ul>
+<li>Spaces and "%20": If an encoded URL contains a space, this will
+be replaced with "%20". If a decoded URL contains "%20", this will
+be replaced with a single space before the URL is parsed.</li>
+<li>Single "%" characters: Any occurrences of a percent character
+"%" not followed by exactly two hexadecimal characters (e.g., "13%
+coverage.html") will be replaced by "%25".</li>
+<li>Reserved and unreserved characters: An encoded URL should only
+contain a few characters as literals; all other characters should
+be percent-encoded. In TolerantMode, these characters will be
+automatically percent-encoded where they are not allowed: space /
+double-quote / "&lt;" / "&gt;" / "[" / "" / "]" / "^" / "`" / "{" /
+"|" / "}"</li>
+</ul>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QUrl"></a>QUrl.__init__ (<i>self</i>)</h3>
+<p>构造一个空<a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>对象。</p>
+
+
+<h3 class="fn">
+<a name="QUrl-2"></a>QUrl.__init__ (<i>self</i>, QString <i>url</i>)</h3>
+<p>通过解析构造一个URL<i>url</i>。<i>url</i>被假定为在人类可读表示，没有百分之编码。<a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>会自动％的编码，但在URL中允许的所有字符。默认的解析模式是<a href="qurl.html#ParsingMode-enum" tppabs="http://pyqt4doc.appspot.com/qurl.html#ParsingMode-enum">TolerantMode</a>。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span> url(<span class="string">"http://www.example.com/List of holidays.xml"</span>);
+ <span class="comment">// url.toEncoded() == "http://www.example.com/List%20of%20holidays.xml"</span>
+</pre>
+<p>从一个编码的字符串，调用构造一个URL<a href="qurl.html#fromEncoded" tppabs="http://pyqt4doc.appspot.com/qurl.html#fromEncoded">fromEncoded</a>（）：</p>
+<pre class="cpp">
+ <span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span> url <span class="operator">=</span> <span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span><span class="operator">.</span><a href="qurl.html#fromEncoded" tppabs="http://pyqt4doc.appspot.com/qurl.html#fromEncoded">fromEncoded</a>(<span class="string">"http://qt.nokia.com/List%20of%20holidays.xml"</span>);
+</pre>
+<p><b>See also</b> <a href="qurl.html#setUrl" tppabs="http://pyqt4doc.appspot.com/qurl.html#setUrl">setUrl</a>（ ）<a href="qurl.html#setEncodedUrl" tppabs="http://pyqt4doc.appspot.com/qurl.html#setEncodedUrl">setEncodedUrl</a>（ ）<a href="qurl.html#fromEncoded" tppabs="http://pyqt4doc.appspot.com/qurl.html#fromEncoded">fromEncoded</a>（）和<a href="qurl.html#ParsingMode-enum" tppabs="http://pyqt4doc.appspot.com/qurl.html#ParsingMode-enum">TolerantMode</a>。</p>
+
+
+<h3 class="fn">
+<a name="QUrl-3"></a>QUrl.__init__ (<i>self</i>, QString <i>url</i>, <a href="qurl.html#ParsingMode-enum" tppabs="http://pyqt4doc.appspot.com/qurl.html#ParsingMode-enum">ParsingMode</a> <i>mode</i>)</h3>
+<p>构造的副本<i>other</i>。</p>
+
+
+<h3 class="fn">
+<a name="QUrl-4"></a>QUrl.__init__ (<i>self</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>copy</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>解析<i>url</i>使用分析器模式<i>parsingMode</i>。默认的解析模式是<a href="qurl.html#ParsingMode-enum" tppabs="http://pyqt4doc.appspot.com/qurl.html#ParsingMode-enum">TolerantMode</a>。</p>
+<p><b>See also</b> <a href="qurl.html#setUrl" tppabs="http://pyqt4doc.appspot.com/qurl.html#setUrl">setUrl</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addEncodedQueryItem"></a>QUrl.addEncodedQueryItem (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>key</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>value</i>)</h3>
+<p>插入对<i>key</i>=<i>value</i>到URL的查询字符串。</p>
+<p>注：此功能不验证，要么<i>key</i> or
+<i>value</i>被正确编码。它是调用者的责任，以确保查询的分隔符的编码正确，如果有的话。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qurl.html#addQueryItem" tppabs="http://pyqt4doc.appspot.com/qurl.html#addQueryItem">addQueryItem</a>（）和<a href="qurl.html#setQueryDelimiters" tppabs="http://pyqt4doc.appspot.com/qurl.html#setQueryDelimiters">setQueryDelimiters</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addQueryItem"></a>QUrl.addQueryItem (<i>self</i>, QString <i>key</i>, QString <i>value</i>)</h3>
+<p>插入对<i>key</i>=<i>value</i>到URL的查询字符串。</p>
+<p>之前它被添加到查询的键/值对被编码。两人在内部转换成单独的字符串。该<i>key</i>和<i>value</i>首先编码成UTF -8 ，然后由valueDelimiter （返回的字符分隔） 。每个键/值对是通过pairDelimiter （返回的字符分隔） 。</p>
+<p><b>Note:</b>此方法不编码空格（ ASCII码0X20 ）为加号（+ ）标志，就像HTML表单做。如果你需要这种编码方式，你必须自己编码值，并使用QUrl.addEncodedQueryItem 。</p>
+<p><b>See also</b> <a href="qurl.html#addEncodedQueryItem" tppabs="http://pyqt4doc.appspot.com/qurl.html#addEncodedQueryItem">addEncodedQueryItem</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="allEncodedQueryItemValues"></a>list-of-QByteArray QUrl.allEncodedQueryItemValues (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>key</i>)</h3>
+<p>返回的查询字符串值的一个列表，其关键是等于<i>key</i>从URL中。</p>
+<p>注意：如果该编码<i>key</i>不匹配查询的编码版本，此功能将无法正常工作。也就是说，如果该URL的编码查询“的搜索= Qt的％ 20Rules ” ，调用这个函数<i>key</i>= “ ％ 73earch ”将返回一个空列表。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qurl.html#allQueryItemValues" tppabs="http://pyqt4doc.appspot.com/qurl.html#allQueryItemValues">allQueryItemValues</a>（ ）<a href="qurl.html#queryItemValue" tppabs="http://pyqt4doc.appspot.com/qurl.html#queryItemValue">queryItemValue</a>（）和<a href="qurl.html#encodedQueryItemValue" tppabs="http://pyqt4doc.appspot.com/qurl.html#encodedQueryItemValue">encodedQueryItemValue</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="allQueryItemValues"></a>QStringList QUrl.allQueryItemValues (<i>self</i>, QString <i>key</i>)</h3>
+<p>返回的查询字符串值的一个列表，其关键是等于<i>key</i>从URL中。</p>
+<p><b>Note:</b>此方法不解码的空间加号（+ ）符号空格（ ASCII码0X20 ） ，如HTML表单做。如果你需要这种解码，则必须使用QUrl.allEncodedQueryItemValues​​和自己解码数据。</p>
+<p><b>See also</b> <a href="qurl.html#queryItemValue" tppabs="http://pyqt4doc.appspot.com/qurl.html#queryItemValue">queryItemValue</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="authority"></a>QString QUrl.authority (<i>self</i>)</h3>
+<p>返回如果它被定义URL的权限，否则为空字符串返回。</p>
+<p><b>See also</b> <a href="qurl.html#setAuthority" tppabs="http://pyqt4doc.appspot.com/qurl.html#setAuthority">setAuthority</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clear"></a>QUrl.clear (<i>self</i>)</h3>
+<p>重置的内容<a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>。调用该函数后，<a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>等于一个已经构建了默认的空构造函数。</p>
+
+
+<h3 class="fn">
+<a name="detach"></a>QUrl.detach (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="encodedFragment"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QUrl.encodedFragment (<i>self</i>)</h3>
+<p>返回如果它被定义URL的片段;否则返回空字符串。返回的值将拥有非ASCII和其他控制字符百分比编码，如<a href="qurl.html#toEncoded" tppabs="http://pyqt4doc.appspot.com/qurl.html#toEncoded">toEncoded</a>（ ） 。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qurl.html#setEncodedFragment" tppabs="http://pyqt4doc.appspot.com/qurl.html#setEncodedFragment">setEncodedFragment</a>（）和<a href="qurl.html#toEncoded" tppabs="http://pyqt4doc.appspot.com/qurl.html#toEncoded">toEncoded</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="encodedHost"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QUrl.encodedHost (<i>self</i>)</h3>
+<p>返回URL的主机部分，如果它被定义，否则返回空字符串。</p>
+<p>注： encodedHost （ ）不返回百分比编码的主机名。取而代之的是， ACE编码（ ASCII裸以Punycode编码）的形式将任何非ASCII主机名返回。</p>
+<p>此功能相当于调用<a href="qurl.html#toAce" tppabs="http://pyqt4doc.appspot.com/qurl.html#toAce">QUrl.toAce</a>（ ）上的返回值<a href="qurl.html#host" tppabs="http://pyqt4doc.appspot.com/qurl.html#host">host</a>（ ） 。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qurl.html#setEncodedHost" tppabs="http://pyqt4doc.appspot.com/qurl.html#setEncodedHost">setEncodedHost</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="encodedPassword"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QUrl.encodedPassword (<i>self</i>)</h3>
+<p>返回如果它被定义URL的密码，否则一个空字符串返回。返回的值将拥有非ASCII和其他控制字符百分比编码，如<a href="qurl.html#toEncoded" tppabs="http://pyqt4doc.appspot.com/qurl.html#toEncoded">toEncoded</a>（ ） 。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qurl.html#setEncodedPassword" tppabs="http://pyqt4doc.appspot.com/qurl.html#setEncodedPassword">setEncodedPassword</a>（）和<a href="qurl.html#toEncoded" tppabs="http://pyqt4doc.appspot.com/qurl.html#toEncoded">toEncoded</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="encodedPath"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QUrl.encodedPath (<i>self</i>)</h3>
+<p>返回如果它被定义URL的路径，否则返回空字符串。返回的值将拥有非ASCII和其他控制字符百分比编码，如<a href="qurl.html#toEncoded" tppabs="http://pyqt4doc.appspot.com/qurl.html#toEncoded">toEncoded</a>（ ） 。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qurl.html#setEncodedPath" tppabs="http://pyqt4doc.appspot.com/qurl.html#setEncodedPath">setEncodedPath</a>（）和<a href="qurl.html#toEncoded" tppabs="http://pyqt4doc.appspot.com/qurl.html#toEncoded">toEncoded</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="encodedQuery"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QUrl.encodedQuery (<i>self</i>)</h3>
+<p>返回百分比编码形式的URL查询字符串。</p>
+<p><b>See also</b> <a href="qurl.html#setEncodedQuery" tppabs="http://pyqt4doc.appspot.com/qurl.html#setEncodedQuery">setEncodedQuery</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="encodedQueryItems"></a>list-of-tuple-of-QByteArray-QByteArray QUrl.encodedQueryItems (<i>self</i>)</h3>
+<p>返回URL的查询字符串，如编码键和值的映射。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qurl.html#setEncodedQueryItems" tppabs="http://pyqt4doc.appspot.com/qurl.html#setEncodedQueryItems">setEncodedQueryItems</a>（ ）<a href="qurl.html#setQueryItems" tppabs="http://pyqt4doc.appspot.com/qurl.html#setQueryItems">setQueryItems</a>（）和<a href="qurl.html#setEncodedQuery" tppabs="http://pyqt4doc.appspot.com/qurl.html#setEncodedQuery">setEncodedQuery</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="encodedQueryItemValue"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QUrl.encodedQueryItemValue (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>key</i>)</h3>
+<p>返回第一个查询字符串值，其关键是等于<i>key</i>从URL中。</p>
+<p>注意：如果该编码<i>key</i>不匹配查询的编码版本，此功能将无法正常工作。也就是说，如果该URL的编码查询“的搜索= Qt的％ 20Rules ” ，调用这个函数<i>key</i>= “ ％ 73earch ”将返回一个空字符串。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qurl.html#queryItemValue" tppabs="http://pyqt4doc.appspot.com/qurl.html#queryItemValue">queryItemValue</a>（）和<a href="qurl.html#allQueryItemValues" tppabs="http://pyqt4doc.appspot.com/qurl.html#allQueryItemValues">allQueryItemValues</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="encodedUserName"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QUrl.encodedUserName (<i>self</i>)</h3>
+<p>返回如果它被定义URL的用户名;否则返回空字符串。返回的值将拥有非ASCII和其他控制字符百分比编码，如<a href="qurl.html#toEncoded" tppabs="http://pyqt4doc.appspot.com/qurl.html#toEncoded">toEncoded</a>（ ） 。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qurl.html#setEncodedUserName" tppabs="http://pyqt4doc.appspot.com/qurl.html#setEncodedUserName">setEncodedUserName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="errorString"></a>QString QUrl.errorString (<i>self</i>)</h3>
+<p>返回解释了为什么一个URL是在这样的情况下无效的文本字符串，否则返回一个空字符串。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="fragment"></a>QString QUrl.fragment (<i>self</i>)</h3>
+<p>返回URL的片段。</p>
+<p><b>See also</b> <a href="qurl.html#setFragment" tppabs="http://pyqt4doc.appspot.com/qurl.html#setFragment">setFragment</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fromAce"></a>QString QUrl.fromAce (<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>)</h3>
+<p>返回Unicode形式给定的域名<i>domain</i>，它被编码为ASCII兼容性编码（ACE）。此函数的结果被认为是等同于<i>domain</i>。</p>
+<p>如果该值在<i>domain</i>可以不进行编码，它会被转换为<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>并返回。</p>
+<p>该ASCII兼容性编码（ACE ）是由RFC 3490 ， RFC 3491和RFC 3492中定义。它是国际化域名的应用（ IDNA ）规范，它允许域名（如部分<tt>"example.com"</tt>）使用国际字符写入。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="fromEncoded"></a><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> QUrl.fromEncoded (<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>url</i>)</h3>
+<p>解析<i>input</i>并返回相应的<a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>。<i>input</i>被假定为以编码形式，只包含ASCII字符。</p>
+<p>URL是使用分析<a href="qurl.html#ParsingMode-enum" tppabs="http://pyqt4doc.appspot.com/qurl.html#ParsingMode-enum">TolerantMode</a>。</p>
+<p><b>See also</b> <a href="qurl.html#toEncoded" tppabs="http://pyqt4doc.appspot.com/qurl.html#toEncoded">toEncoded</a>（）和<a href="qurl.html#setUrl" tppabs="http://pyqt4doc.appspot.com/qurl.html#setUrl">setUrl</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fromEncoded-2"></a><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> QUrl.fromEncoded (<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>url</i>, <a href="qurl.html#ParsingMode-enum" tppabs="http://pyqt4doc.appspot.com/qurl.html#ParsingMode-enum">ParsingMode</a> <i>mode</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>解析使用URL<i>parsingMode</i>。</p>
+<p><b>See also</b> <a href="qurl.html#toEncoded" tppabs="http://pyqt4doc.appspot.com/qurl.html#toEncoded">toEncoded</a>（）和<a href="qurl.html#setUrl" tppabs="http://pyqt4doc.appspot.com/qurl.html#setUrl">setUrl</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fromLocalFile"></a><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> QUrl.fromLocalFile (QString <i>localfile</i>)</h3>
+<p>返回<a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>代表性<i>localFile</i>，解释为一个本地文件。这个函数接受由斜线以及本地分隔这个平台分隔的路径。</p>
+<p>这个函数还接受了一倍，领先的斜杠（或反斜杠）的路径来表示一个远程文件，如“ / /服务器名/路径/到/ file.txt的” 。请注意，只有某些平台上可以使用实际打开该文件<a href="qfile.html#open" tppabs="http://pyqt4doc.appspot.com/qfile.html#open">QFile.open</a>（ ） 。</p>
+<p><b>See also</b> <a href="qurl.html#toLocalFile" tppabs="http://pyqt4doc.appspot.com/qurl.html#toLocalFile">toLocalFile</a>（ ）<a href="qurl.html#isLocalFile" tppabs="http://pyqt4doc.appspot.com/qurl.html#isLocalFile">isLocalFile</a>（）和<a href="qdir.html#toNativeSeparators" tppabs="http://pyqt4doc.appspot.com/qdir.html#toNativeSeparators">QDir.toNativeSeparators</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fromPercentEncoding"></a>QString QUrl.fromPercentEncoding (<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>)</h3>
+<p>返回一个解码副本<i>input</i>。<i>input</i>首先从百分之编码解码，然后转换从UTF-8转换为Unicode 。</p>
+
+
+<h3 class="fn">
+<a name="fromPunycode"></a>QString QUrl.fromPunycode (<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>)</h3>
+<h3 class="fn">
+<a name="fromUserInput"></a><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> QUrl.fromUserInput (QString <i>userInput</i>)</h3>
+<p>从提供的用户返回一个有效的URL<i>userInput</i>字符串如果一个人可以扣除。在这是不可能的，无效的情况下<a href="qurl.html#QUrl" tppabs="http://pyqt4doc.appspot.com/qurl.html#QUrl">QUrl</a>（ ）返回。</p>
+<p>最能够浏览Web应用程序，允许用户输入在一个普通的字符串形式的URL。这个字符串可以手动输入到地址栏，从剪贴板获得，或通过命令行参数传递。</p>
+<p>当该字符串是不是已经是一个有效的URL ，一个最好的猜测是执行，使各种网络相关的假设。</p>
+<p>在该情况下，字符串对应于该系统上的一个有效的文件路径，文件:/ / URL构造，使用<a href="qurl.html#fromLocalFile" tppabs="http://pyqt4doc.appspot.com/qurl.html#fromLocalFile">QUrl.fromLocalFile</a>（ ） 。</p>
+<p>如果不是这种情况，试图把串入一个http://或ftp:// URL协议。在该情况下，后者的字符串开头是'ftp ' 。结果，然后通过传递<a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>的宽容解析器，并在案件或成功，有效的<a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>返回，否则一<a href="qurl.html#QUrl" tppabs="http://pyqt4doc.appspot.com/qurl.html#QUrl">QUrl</a>（ ） 。</p>
+<a id="examples" name="examples"></a>
+<h4>Examples:</h4>
+<ul>
+<li>qt.nokia.com becomes http://qt.nokia.com</li>
+<li>ftp.qt.nokia.com becomes ftp://ftp.qt.nokia.com</li>
+<li>hostname becomes http://hostname</li>
+<li>/home/user/test.html becomes file:///home/user/test.html</li>
+</ul>
+<p>此功能被引入Qt的4.6 。</p>
+
+
+<h3 class="fn">
+<a name="hasEncodedQueryItem"></a>bool QUrl.hasEncodedQueryItem (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>key</i>)</h3>
+<p>返回True如果有一个查询字符串对，其关键是等于<i>key</i>从URL中。</p>
+<p>注意：如果该编码<i>key</i>不匹配查询的编码版本，这个函数将返回False 。也就是说，如果该URL的编码查询“的搜索= Qt的％ 20Rules ” ，调用这个函数<i>key</i>= “ ％ 73earch ”将返回False 。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qurl.html#hasQueryItem" tppabs="http://pyqt4doc.appspot.com/qurl.html#hasQueryItem">hasQueryItem</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasFragment"></a>bool QUrl.hasFragment (<i>self</i>)</h3>
+<p>返回True如果该URL包含一个片段（例如，如果＃ ，看到就可以了） 。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qurl.html#fragment" tppabs="http://pyqt4doc.appspot.com/qurl.html#fragment">fragment</a>（）和<a href="qurl.html#setFragment" tppabs="http://pyqt4doc.appspot.com/qurl.html#setFragment">setFragment</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasQuery"></a>bool QUrl.hasQuery (<i>self</i>)</h3>
+<p>返回True如果该URL包含查询（即，如果？被认为就可以了） 。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qurl.html#hasQueryItem" tppabs="http://pyqt4doc.appspot.com/qurl.html#hasQueryItem">hasQueryItem</a>（）和<a href="qurl.html#encodedQuery" tppabs="http://pyqt4doc.appspot.com/qurl.html#encodedQuery">encodedQuery</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasQueryItem"></a>bool QUrl.hasQueryItem (<i>self</i>, QString <i>key</i>)</h3>
+<p>返回True如果有一个查询字符串对，其关键是等于<i>key</i>从URL中。</p>
+<p><b>See also</b> <a href="qurl.html#hasEncodedQueryItem" tppabs="http://pyqt4doc.appspot.com/qurl.html#hasEncodedQueryItem">hasEncodedQueryItem</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="host"></a>QString QUrl.host (<i>self</i>)</h3>
+<p>返回如果它被定义URL的主机;否则返回空字符串。</p>
+<p><b>See also</b> <a href="qurl.html#setHost" tppabs="http://pyqt4doc.appspot.com/qurl.html#setHost">setHost</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="idnWhitelist"></a>QStringList QUrl.idnWhitelist ()</h3>
+<p>返回被允许有非ASCII字符在他们的作文顶级域的当前白名单。</p>
+<p>See <a href="qurl.html#setIdnWhitelist" tppabs="http://pyqt4doc.appspot.com/qurl.html#setIdnWhitelist">setIdnWhitelist</a>（ ）就本列表的理由。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qurl.html#setIdnWhitelist" tppabs="http://pyqt4doc.appspot.com/qurl.html#setIdnWhitelist">setIdnWhitelist</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isDetached"></a>bool QUrl.isDetached (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="isEmpty"></a>bool QUrl.isEmpty (<i>self</i>)</h3>
+<p>返回True如果URL中没有数据，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isLocalFile"></a>bool QUrl.isLocalFile (<i>self</i>)</h3>
+<p>返回True如果这个URL是指向一个本地文件路径。 URL是本地文件路径，如果该计划是“文件” 。</p>
+<p>注意，这个函数考虑的URL与主机名是本地文件路径，即使最终的文件路径不能打开<a href="qfile.html#open" tppabs="http://pyqt4doc.appspot.com/qfile.html#open">QFile.open</a>（ ） 。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qurl.html#fromLocalFile" tppabs="http://pyqt4doc.appspot.com/qurl.html#fromLocalFile">fromLocalFile</a>（）和<a href="qurl.html#toLocalFile" tppabs="http://pyqt4doc.appspot.com/qurl.html#toLocalFile">toLocalFile</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isParentOf"></a>bool QUrl.isParentOf (<i>self</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>url</i>)</h3>
+<p>返回True如果这个URL是父<i>childUrl</i>。<i>childUrl</i>这是URL的孩子，如果两个URL共享相同的方案和权威，这个URL的路径是路径的父<i>childUrl</i>。</p>
+
+
+<h3 class="fn">
+<a name="isRelative"></a>bool QUrl.isRelative (<i>self</i>)</h3>
+<p>返回True如果该URL是相对的，否则返回False 。 URL是相对的，如果它的方案是不确定的，因此这个函数相当于调用<a href="qurl.html#scheme" tppabs="http://pyqt4doc.appspot.com/qurl.html#scheme">scheme</a>（ ） 。<a href="qurl.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qurl.html#isEmpty">isEmpty</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isValid"></a>bool QUrl.isValid (<i>self</i>)</h3>
+<p>返回True如果该URL是有效的，否则返回False 。</p>
+<p>该URL通过一致性测试运行。 URL的每一个部分都必须符合报告为有效的URL的URI标准的标准编码规则。</p>
+<pre class="cpp">
+ <span class="type">bool</span> checkUrl(<span class="keyword">const</span> <span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span> <span class="operator">&amp;</span>url) {
+     <span class="keyword">if</span> (<span class="operator">!</span>url<span class="operator">.</span>isValid()) {
+         <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>(<span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>(<span class="string">"Invalid URL: %1"</span>)<span class="operator">.</span>arg(url<span class="operator">.</span>toString()));
+         <span class="keyword">return</span> <span class="keyword">false</span>;
+     }
+
+     <span class="keyword">return</span> <span class="keyword">true</span>;
+ }
+</pre>
+
+
+<h3 class="fn">
+<a name="password"></a>QString QUrl.password (<i>self</i>)</h3>
+<p>返回如果它被定义URL的密码，否则一个空字符串返回。</p>
+<p><b>See also</b> <a href="qurl.html#setPassword" tppabs="http://pyqt4doc.appspot.com/qurl.html#setPassword">setPassword</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="path"></a>QString QUrl.path (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="port"></a>int QUrl.port (<i>self</i>)</h3>
+<p>返回URL的端口，或-1，如果该端口是不确定的。</p>
+<p><b>See also</b> <a href="qurl.html#setPort" tppabs="http://pyqt4doc.appspot.com/qurl.html#setPort">setPort</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="port-2"></a>int QUrl.port (<i>self</i>, int <i>defaultPort</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回URL的端口，或<i>defaultPort</i>如果端口是不确定的。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qftp.html" tppabs="http://pyqt4doc.appspot.com/qftp.html">QFtp</a></span> ftp;
+ ftp<span class="operator">.</span>connectToHost(url<span class="operator">.</span>host()<span class="operator">,</span> url<span class="operator">.</span>port(<span class="number">21</span>));
+</pre>
+<p>这个函数是Qt 4.1中引入。</p>
+
+
+<h3 class="fn">
+<a name="queryItems"></a>list-of-tuple-of-QString-QString QUrl.queryItems (<i>self</i>)</h3>
+<p>返回URL的查询字符串作为键和值的映射。</p>
+<p><b>Note:</b>此方法不解码的空间加号（+ ）符号空格（ ASCII码0X20 ） ，如HTML表单做。如果你需要这种解码，则必须使用QUrl.encodedQueryItems和自己解码数据。</p>
+<p><b>See also</b> <a href="qurl.html#setQueryItems" tppabs="http://pyqt4doc.appspot.com/qurl.html#setQueryItems">setQueryItems</a>（）和<a href="qurl.html#setEncodedQuery" tppabs="http://pyqt4doc.appspot.com/qurl.html#setEncodedQuery">setEncodedQuery</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="queryItemValue"></a>QString QUrl.queryItemValue (<i>self</i>, QString <i>key</i>)</h3>
+<p>返回第一个查询字符串值，其关键是等于<i>key</i>从URL中。</p>
+<p><b>Note:</b>此方法不解码的空间加号（+ ）符号空格（ ASCII码0X20 ） ，如HTML表单做。如果你需要这种解码，则必须使用QUrl.encodedQueryItemValue和自己解码数据。</p>
+<p><b>See also</b> <a href="qurl.html#allQueryItemValues" tppabs="http://pyqt4doc.appspot.com/qurl.html#allQueryItemValues">allQueryItemValues</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="queryPairDelimiter"></a>str QUrl.queryPairDelimiter (<i>self</i>)</h3>
+<p>返回用于在URL中的查询字符串键值对之间的分隔字符。</p>
+
+
+<h3 class="fn">
+<a name="queryValueDelimiter"></a>str QUrl.queryValueDelimiter (<i>self</i>)</h3>
+<p>返回用于在URL中的查询字符串键和值之间的分隔字符。</p>
+
+
+<h3 class="fn">
+<a name="removeAllEncodedQueryItems"></a>QUrl.removeAllEncodedQueryItems (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>key</i>)</h3>
+<p>删除所有的查询字符串对的关键是等于<i>key</i>从URL中。</p>
+<p>注意：如果该编码<i>key</i>不匹配查询的编码版本，此功能将无法正常工作。也就是说，如果该URL的编码查询“的搜索= Qt的％ 20Rules ” ，调用这个函数<i>key</i>= “ ％ 73earch ”不会做任何事。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qurl.html#removeQueryItem" tppabs="http://pyqt4doc.appspot.com/qurl.html#removeQueryItem">removeQueryItem</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="removeAllQueryItems"></a>QUrl.removeAllQueryItems (<i>self</i>, QString <i>key</i>)</h3>
+<p>删除所有的查询字符串对的关键是等于<i>key</i>从URL中。</p>
+<p><b>See also</b> <a href="qurl.html#removeQueryItem" tppabs="http://pyqt4doc.appspot.com/qurl.html#removeQueryItem">removeQueryItem</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="removeEncodedQueryItem"></a>QUrl.removeEncodedQueryItem (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>key</i>)</h3>
+<p>删除第一个查询字符串对，其关键是等于<i>key</i>从URL中。</p>
+<p>注意：如果该编码<i>key</i>不匹配查询的编码版本，此功能将无法正常工作。也就是说，如果该URL的编码查询“的搜索= Qt的％ 20Rules ” ，调用这个函数<i>key</i>= “ ％ 73earch ”不会做任何事。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qurl.html#removeQueryItem" tppabs="http://pyqt4doc.appspot.com/qurl.html#removeQueryItem">removeQueryItem</a>（）和<a href="qurl.html#removeAllQueryItems" tppabs="http://pyqt4doc.appspot.com/qurl.html#removeAllQueryItems">removeAllQueryItems</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="removeQueryItem"></a>QUrl.removeQueryItem (<i>self</i>, QString <i>key</i>)</h3>
+<p>删除第一个查询字符串对，其关键是等于<i>key</i>从URL中。</p>
+<p><b>See also</b> <a href="qurl.html#removeAllQueryItems" tppabs="http://pyqt4doc.appspot.com/qurl.html#removeAllQueryItems">removeAllQueryItems</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="resolved"></a><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> QUrl.resolved (<i>self</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>relative</i>)</h3>
+<p>返回此URL的合并的结果与<i>relative</i>。这个URL被用作基础来转换<i>relative</i>一个绝对URL 。</p>
+<p>If <i>relative</i>是不是一个相对的URL ，这个函数将返回<i>relative</i>直接。否则，这两个URL的路径被合并，并返回该新URL的基URL的方案和权威，但合并后的路径，如下面的例子：</p>
+<pre class="cpp">
+ <span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span> baseUrl(<span class="string">"http://qt.nokia.com/support"</span>);
+ <span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span> relativeUrl(<span class="string">"../products/solutions"</span>);
+ <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>(baseUrl<span class="operator">.</span>resolved(relativeUrl)<span class="operator">.</span>toString());
+ <span class="comment">// prints "http://qt.nokia.com/products/solutions"</span>
+</pre>
+<p>呼叫解决（ ）与“..”返回<a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>其目录是比原来更高一层。同样，调用解析（ ）用“ .. / .. ”从路径中移除两个层次。如果<i>relative</i>是“/” ，路径变为“/”。</p>
+<p><b>See also</b> <a href="qurl.html#isRelative" tppabs="http://pyqt4doc.appspot.com/qurl.html#isRelative">isRelative</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="scheme"></a>QString QUrl.scheme (<i>self</i>)</h3>
+<p>返回URL的方案。如果返回一个空字符串，这意味着该计划是不确定的，网址是那么相对的。</p>
+<p><b>See also</b> <a href="qurl.html#setScheme" tppabs="http://pyqt4doc.appspot.com/qurl.html#setScheme">setScheme</a>（）和<a href="qurl.html#isRelative" tppabs="http://pyqt4doc.appspot.com/qurl.html#isRelative">isRelative</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setAuthority"></a>QUrl.setAuthority (<i>self</i>, QString <i>authority</i>)</h3>
+<p>设置URL的权限<i>authority</i>。</p>
+<p>URL的权限是用户信息，主机名和端口的组合。所有这些元素都是可选的，因此一个空的权力是有效的。</p>
+<p>用户信息和主机是通过一个“分开<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html">@</a>“：” ，并在主机和端口通过一个分离“ 。如果用户信息是空的，则'<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html">@</a>“必须省略，虽然流浪'：'是允许的，如果该端口为空。</p>
+<p>下面的例子显示了一个有效的权威字符串：</p>
+<p class="centerAlign"><img alt="" src="images/qurl-authority.png"></p>
+<p><b>See also</b> <a href="qurl.html#authority" tppabs="http://pyqt4doc.appspot.com/qurl.html#authority">authority</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setEncodedFragment"></a>QUrl.setEncodedFragment (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>fragment</i>)</h3>
+<p>设定URL的片段的百分比编码<i>fragment</i>。该片段是URL的最后部分，通过一个“＃”后面字符的字符串来表示。它通常用于在HTTP进行指的是页面上的某条链路或点：</p>
+<p class="centerAlign"><img alt="" src="images/qurl-fragment.png"></p>
+<p>的片段，有时也被称为URL为“参考” 。</p>
+<p>通过QByteArray中（的说法） （空<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>）将取消设置的片段。传递的参数<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>（ “”） （空但不为空<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>）将设置片段为空字符串（就像原始的URL了一个孤独的“＃” ） 。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qurl.html#setFragment" tppabs="http://pyqt4doc.appspot.com/qurl.html#setFragment">setFragment</a>（）和<a href="qurl.html#encodedFragment" tppabs="http://pyqt4doc.appspot.com/qurl.html#encodedFragment">encodedFragment</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setEncodedHost"></a>QUrl.setEncodedHost (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>host</i>)</h3>
+<p>设定URL的主机与ACE -或百分比编码<i>host</i>。该<i>host</i>是在URL的权限的用户信息元素的一部分，如描述<a href="qurl.html#setAuthority" tppabs="http://pyqt4doc.appspot.com/qurl.html#setAuthority">setAuthority</a>（ ） 。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qurl.html#setHost" tppabs="http://pyqt4doc.appspot.com/qurl.html#setHost">setHost</a>（ ）<a href="qurl.html#encodedHost" tppabs="http://pyqt4doc.appspot.com/qurl.html#encodedHost">encodedHost</a>（ ）<a href="qurl.html#setAuthority" tppabs="http://pyqt4doc.appspot.com/qurl.html#setAuthority">setAuthority</a>（）和<a href="qurl.html#fromAce" tppabs="http://pyqt4doc.appspot.com/qurl.html#fromAce">fromAce</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setEncodedPassword"></a>QUrl.setEncodedPassword (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>password</i>)</h3>
+<p>设定URL的密码，以百分比编码<i>password</i>。该<i>password</i>是在URL的权限的用户信息元素的一部分，如描述<a href="qurl.html#setUserInfo" tppabs="http://pyqt4doc.appspot.com/qurl.html#setUserInfo">setUserInfo</a>（ ） 。</p>
+<p>注：此功能不会验证<i>password</i>被正确编码。它是调用者的责任，以确保任何分隔符（如冒号或斜线）被正确编码。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qurl.html#setPassword" tppabs="http://pyqt4doc.appspot.com/qurl.html#setPassword">setPassword</a>（ ）<a href="qurl.html#encodedPassword" tppabs="http://pyqt4doc.appspot.com/qurl.html#encodedPassword">encodedPassword</a>（）和<a href="qurl.html#setUserInfo" tppabs="http://pyqt4doc.appspot.com/qurl.html#setUserInfo">setUserInfo</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setEncodedPath"></a>QUrl.setEncodedPath (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>path</i>)</h3>
+<p>设定URL的路径百分比编码<i>path</i>。该路径是自带的权威之后，但在查询字符串之前的URL的一部分。</p>
+<p class="centerAlign"><img alt="" src="images/qurl-ftppath.png"></p>
+<p>对于非分层方案，路径将是一切按照计划的声明，如下面的示例所示：</p>
+<p class="centerAlign"><img alt="" src="images/qurl-mailtopath.png"></p>
+<p>注：此功能不会验证<i>path</i>被正确编码。它是调用者的责任，以确保任何分隔符（如'？'和'＃' ）被正确编码。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qurl.html#setPath" tppabs="http://pyqt4doc.appspot.com/qurl.html#setPath">setPath</a>（ ）<a href="qurl.html#encodedPath" tppabs="http://pyqt4doc.appspot.com/qurl.html#encodedPath">encodedPath</a>（）和<a href="qurl.html#setUserInfo" tppabs="http://pyqt4doc.appspot.com/qurl.html#setUserInfo">setUserInfo</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setEncodedQuery"></a>QUrl.setEncodedQuery (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>query</i>)</h3>
+<p>URL的查询字符串设置为<i>query</i>。该字符串被插入原样，并且打电话时不进行任何进一步的编码<a href="qurl.html#toEncoded" tppabs="http://pyqt4doc.appspot.com/qurl.html#toEncoded">toEncoded</a>（ ） 。</p>
+<p>如果你需要传递一个不适合的键 - 值模式的查询字符串，此功能非常有用，或者使用不同的方案进行编码特殊字符，比什么建议由<a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>。</p>
+<p>通过QByteArray中的（值）至<i>query</i>（空<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>）完全取消设置的查询。然而，路过的值<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>（ “”）将查询设置为空值，因为如果原始URL有一个孤独的“ ？ ” 。</p>
+<p><b>See also</b> <a href="qurl.html#encodedQuery" tppabs="http://pyqt4doc.appspot.com/qurl.html#encodedQuery">encodedQuery</a>（）和<a href="qurl.html#hasQuery" tppabs="http://pyqt4doc.appspot.com/qurl.html#hasQuery">hasQuery</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setEncodedQueryItems"></a>QUrl.setEncodedQueryItems (<i>self</i>, list-of-tuple-of-QByteArray-QByteArray <i>query</i>)</h3>
+<p>URL的查询字符串设置为的编码版本<i>query</i>。的内容<i>query</i>被转换为字符串内部，每对由pairDelimiter （ ）返回的字符，键和值分隔由valueDelimiter （分隔） 。</p>
+<p>注：此功能不确认键 - 值对的编码正确。它是调用者的责任，以确保查询的分隔符的编码正确，如果有的话。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qurl.html#setQueryDelimiters" tppabs="http://pyqt4doc.appspot.com/qurl.html#setQueryDelimiters">setQueryDelimiters</a>（ ）<a href="qurl.html#encodedQueryItems" tppabs="http://pyqt4doc.appspot.com/qurl.html#encodedQueryItems">encodedQueryItems</a>（）和<a href="qurl.html#setQueryItems" tppabs="http://pyqt4doc.appspot.com/qurl.html#setQueryItems">setQueryItems</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setEncodedUrl"></a>QUrl.setEncodedUrl (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>url</i>)</h3>
+<p>通过解析的内容构造一个URL<i>encodedUrl</i>。</p>
+<p><i>encodedUrl</i>被假定为一个URL字符串的百分比编码形式，只包含ASCII字符。</p>
+<p>使用<a href="qurl.html#isValid" tppabs="http://pyqt4doc.appspot.com/qurl.html#isValid">isValid</a>（ ） ，以确定是否一个有效的URL构建。</p>
+<p><b>See also</b> <a href="qurl.html#setUrl" tppabs="http://pyqt4doc.appspot.com/qurl.html#setUrl">setUrl</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setEncodedUrl-2"></a>QUrl.setEncodedUrl (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>url</i>, <a href="qurl.html#ParsingMode-enum" tppabs="http://pyqt4doc.appspot.com/qurl.html#ParsingMode-enum">ParsingMode</a> <i>mode</i>)</h3>
+<p>通过解析的内容构造一个URL<i>encodedUrl</i>使用给定的<i>parsingMode</i>。</p>
+
+
+<h3 class="fn">
+<a name="setEncodedUserName"></a>QUrl.setEncodedUserName (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>userName</i>)</h3>
+<p>设定URL的用户名的百分比编码<i>userName</i>。该<i>userName</i>是在URL的权限的用户信息元素的一部分，如描述<a href="qurl.html#setUserInfo" tppabs="http://pyqt4doc.appspot.com/qurl.html#setUserInfo">setUserInfo</a>（ ） 。</p>
+<p>注：此功能不会验证<i>userName</i>被正确编码。它是调用者的责任，以确保任何分隔符（如冒号或斜线）被正确编码。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qurl.html#setUserName" tppabs="http://pyqt4doc.appspot.com/qurl.html#setUserName">setUserName</a>（ ）<a href="qurl.html#encodedUserName" tppabs="http://pyqt4doc.appspot.com/qurl.html#encodedUserName">encodedUserName</a>（）和<a href="qurl.html#setUserInfo" tppabs="http://pyqt4doc.appspot.com/qurl.html#setUserInfo">setUserInfo</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFragment"></a>QUrl.setFragment (<i>self</i>, QString <i>fragment</i>)</h3>
+<p>设置URL的片段<i>fragment</i>。该片段是URL的最后部分，通过一个“＃”后面字符的字符串来表示。它通常用于在HTTP进行指的是页面上的某条链路或点：</p>
+<p class="centerAlign"><img alt="" src="images/qurl-fragment.png"></p>
+<p>的片段，有时也被称为URL为“参考” 。</p>
+<p>路过的QString （的说法） （空<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>）将取消设置的片段。传递的参数<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>（ “”） （空但不为空<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>）将设置片段为空字符串（就像原始的URL了一个孤独的“＃” ） 。</p>
+<p><b>See also</b> <a href="qurl.html#fragment" tppabs="http://pyqt4doc.appspot.com/qurl.html#fragment">fragment</a>（）和<a href="qurl.html#hasFragment" tppabs="http://pyqt4doc.appspot.com/qurl.html#hasFragment">hasFragment</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setHost"></a>QUrl.setHost (<i>self</i>, QString <i>host</i>)</h3>
+<p>设置URL的主机<i>host</i>。主机是权威的一部分。</p>
+<p><b>See also</b> <a href="qurl.html#host" tppabs="http://pyqt4doc.appspot.com/qurl.html#host">host</a>（）和<a href="qurl.html#setAuthority" tppabs="http://pyqt4doc.appspot.com/qurl.html#setAuthority">setAuthority</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setIdnWhitelist"></a>QUrl.setIdnWhitelist (QStringList)</h3>
+<p>集顶级域名（TLD ）中被允许有非ASCII字符的域值的白名单<i>list</i>。</p>
+<p>请注意，如果你调用这个函数，你需要做这样<b class="redFont"><code>\em</code></b>你开始可能访问任何线程之前<a href="qurl.html#idnWhitelist" tppabs="http://pyqt4doc.appspot.com/qurl.html#idnWhitelist">idnWhitelist</a>（ ） 。</p>
+<p>Qt拥有自带包含已发布国际化域名（IDN ）和规则的支持，以保证没有欺骗同样可以看的字符（如拉丁小写字母之间发生的互联网顶级域的默认列表<tt>'a'</tt>和西里尔当量，这在大多数字体是视觉上相同） 。</p>
+<p>这份清单会定期维护，如登记发布新规则。</p>
+<p>这个功能是为那些谁需要操作的列表，以添加或删除顶级域名。这是不建议改变其用途以外的其他测试值，因为它可能会暴露用户的安全风险。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qurl.html#idnWhitelist" tppabs="http://pyqt4doc.appspot.com/qurl.html#idnWhitelist">idnWhitelist</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPassword"></a>QUrl.setPassword (<i>self</i>, QString <i>password</i>)</h3>
+<p>设定URL的密码<i>password</i>。该<i>password</i>是在URL的权限的用户信息元素的一部分，如描述<a href="qurl.html#setUserInfo" tppabs="http://pyqt4doc.appspot.com/qurl.html#setUserInfo">setUserInfo</a>（ ） 。</p>
+<p><b>See also</b> <a href="qurl.html#password" tppabs="http://pyqt4doc.appspot.com/qurl.html#password">password</a>（）和<a href="qurl.html#setUserInfo" tppabs="http://pyqt4doc.appspot.com/qurl.html#setUserInfo">setUserInfo</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPath"></a>QUrl.setPath (<i>self</i>, QString <i>path</i>)</h3>
+<p>设置的URL的路径<i>path</i>。该路径是自带的权威之后，但在查询字符串之前的URL的一部分。</p>
+<p class="centerAlign"><img alt="" src="images/qurl-ftppath.png"></p>
+<p>对于非分层方案，路径将是一切按照计划的声明，如下面的示例所示：</p>
+<p class="centerAlign"><img alt="" src="images/qurl-mailtopath.png"></p>
+<p><b>See also</b> <a href="qurl.html#pathx" tppabs="http://pyqt4doc.appspot.com/qurl.html#pathx">path</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPort"></a>QUrl.setPort (<i>self</i>, int <i>port</i>)</h3>
+<p>设置URL的端口<i>port</i>。该港口是URL的权威的一部分，如描述<a href="qurl.html#setAuthority" tppabs="http://pyqt4doc.appspot.com/qurl.html#setAuthority">setAuthority</a>（ ） 。</p>
+<p><i>port</i>必须在0到65535之间的包容性。端口设置为-1表示该端口是不确定的。</p>
+<p><b>See also</b> <a href="qurl.html#port" tppabs="http://pyqt4doc.appspot.com/qurl.html#port">port</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setQueryDelimiters"></a>QUrl.setQueryDelimiters (<i>self</i>, str <i>valueDelimiter</i>, str <i>pairDelimiter</i>)</h3>
+<p>设置用于键和值之间的分隔字符，并在URL的查询字符串键值对之间。默认值为分隔符是“=” ，默认对分隔符是“＆” 。</p>
+<p class="centerAlign"><img alt="" src="images/qurl-querystring.png"></p>
+<p><i>valueDelimiter</i>将用于从值分离键和<i>pairDelimiter</i>将用于单独的键 - 值对。在查询字符串中的键和值的编码表示这些分隔字符出现的所有百分比编码。</p>
+<p>If <i>valueDelimiter</i>被设置为“ - ”和<i>pairDelimiter</i>是'/' ，上面的查询字符串将代替来表示是这样的：</p>
+<pre class="cpp">
+ http:<span class="comment">//www.example.com/cgi-bin/drawgraph.cgi?type-pie/color-green</span>
+</pre>
+<p>调用此函数不改变目前的查询字符串的分隔符。它只会影响<a href="qurl.html#queryItems" tppabs="http://pyqt4doc.appspot.com/qurl.html#queryItems">queryItems</a>（ ）<a href="qurl.html#setQueryItems" tppabs="http://pyqt4doc.appspot.com/qurl.html#setQueryItems">setQueryItems</a>（）和addQueryItems （） 。</p>
+
+
+<h3 class="fn">
+<a name="setQueryItems"></a>QUrl.setQueryItems (<i>self</i>, list-of-tuple-of-QString-QString <i>query</i>)</h3>
+<p>URL的查询字符串设置为的编码版本<i>query</i>。的内容<i>query</i>被转换为字符串内部，每对由pairDelimiter （ ）返回的字符，键和值分隔由valueDelimiter （分隔） 。</p>
+<p><b>Note:</b>此方法不编码空格（ ASCII码0X20 ）为加号（+ ）标志，就像HTML表单做。如果你需要这种编码方式，你必须自己编码值，并使用QUrl.setEncodedQueryItems 。</p>
+<p><b>See also</b> <a href="qurl.html#setQueryDelimiters" tppabs="http://pyqt4doc.appspot.com/qurl.html#setQueryDelimiters">setQueryDelimiters</a>（ ）<a href="qurl.html#queryItems" tppabs="http://pyqt4doc.appspot.com/qurl.html#queryItems">queryItems</a>（）和<a href="qurl.html#setEncodedQueryItems" tppabs="http://pyqt4doc.appspot.com/qurl.html#setEncodedQueryItems">setEncodedQueryItems</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setScheme"></a>QUrl.setScheme (<i>self</i>, QString <i>scheme</i>)</h3>
+<p>设置URL的计划<i>scheme</i>。作为一个方案只能包含ASCII字符，没有转换或编码完成对输入。</p>
+<p>该计划描述了URL的类型（或协议） 。 “：”它是由一个或多个ASCII字符，在开始的URL ，并且后跟一个表示。下面的例子显示了一个URL如该计划是“ ftp”的：</p>
+<p class="centerAlign"><img alt="" src="images/qurl-authority2.png"></p>
+<p>该方案还可以是空的，在这种情况下该URL被解释为相。</p>
+<p><b>See also</b> <a href="qurl.html#scheme" tppabs="http://pyqt4doc.appspot.com/qurl.html#scheme">scheme</a>（）和<a href="qurl.html#isRelative" tppabs="http://pyqt4doc.appspot.com/qurl.html#isRelative">isRelative</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setUrl"></a>QUrl.setUrl (<i>self</i>, QString <i>url</i>)</h3>
+<p>通过解析的内容构造一个URL<i>url</i>。</p>
+<p><i>url</i>被假定为Unicode格式，不带％的编码。</p>
+<p>调用<a href="qurl.html#isValid" tppabs="http://pyqt4doc.appspot.com/qurl.html#isValid">isValid</a>（ ）会告诉一个有效的URL是否被建造。</p>
+<p><b>See also</b> <a href="qurl.html#setEncodedUrl" tppabs="http://pyqt4doc.appspot.com/qurl.html#setEncodedUrl">setEncodedUrl</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setUrl-2"></a>QUrl.setUrl (<i>self</i>, QString <i>url</i>, <a href="qurl.html#ParsingMode-enum" tppabs="http://pyqt4doc.appspot.com/qurl.html#ParsingMode-enum">ParsingMode</a> <i>mode</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>解析<i>url</i>使用该模式解析<i>parsingMode</i>。</p>
+<p><b>See also</b> <a href="qurl.html#setEncodedUrl" tppabs="http://pyqt4doc.appspot.com/qurl.html#setEncodedUrl">setEncodedUrl</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setUserInfo"></a>QUrl.setUserInfo (<i>self</i>, QString <i>userInfo</i>)</h3>
+<p>设置URL的用户信息来<i>userInfo</i>。用户信息是URL的权威的可选部分，如第<a href="qurl.html#setAuthority" tppabs="http://pyqt4doc.appspot.com/qurl.html#setAuthority">setAuthority</a>().</p>
+<p>用户信息包括用户名和任选的密码，由一个分离的“：” 。如果密码是空的，结肠必须被省略。下面的例子显示了一个有效的用户信息字符串：</p>
+<p class="centerAlign"><img alt="" src="images/qurl-authority3.png"></p>
+<p><b>See also</b> <a href="qurl.html#userInfo" tppabs="http://pyqt4doc.appspot.com/qurl.html#userInfo">userInfo</a>（ ）<a href="qurl.html#setUserName" tppabs="http://pyqt4doc.appspot.com/qurl.html#setUserName">setUserName</a>（ ）<a href="qurl.html#setPassword" tppabs="http://pyqt4doc.appspot.com/qurl.html#setPassword">setPassword</a>（）和<a href="qurl.html#setAuthority" tppabs="http://pyqt4doc.appspot.com/qurl.html#setAuthority">setAuthority</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setUserName"></a>QUrl.setUserName (<i>self</i>, QString <i>userName</i>)</h3>
+<p>设定URL的用户名<i>userName</i>。该<i>userName</i>是在URL的权限的用户信息元素的一部分，如描述<a href="qurl.html#setUserInfo" tppabs="http://pyqt4doc.appspot.com/qurl.html#setUserInfo">setUserInfo</a>（ ） 。</p>
+<p><b>See also</b> <a href="qurl.html#setEncodedUserName" tppabs="http://pyqt4doc.appspot.com/qurl.html#setEncodedUserName">setEncodedUserName</a>（ ）<a href="qurl.html#userName" tppabs="http://pyqt4doc.appspot.com/qurl.html#userName">userName</a>（）和<a href="qurl.html#setUserInfo" tppabs="http://pyqt4doc.appspot.com/qurl.html#setUserInfo">setUserInfo</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="swap"></a>QUrl.swap (<i>self</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>other</i>)</h3>
+<p>交换链接<i>other</i>与此URL 。这个操作是非常快的，而且永远不会。</p>
+<p>此功能被引入Qt的4.8 。</p>
+
+
+<h3 class="fn">
+<a name="toAce"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QUrl.toAce (QString)</h3>
+<p>返回给定域名的ASCII兼容编码<i>domain</i>。此函数的结果被认为是等同于<i>domain</i>。</p>
+<p>将ASCII兼容编码（ACE ）是由RFC 3490 ， RFC 3491和RFC 3492中定义。它是国际化域名的应用（ IDNA ）规范，它允许域名（如部分<tt>"example.com"</tt>）使用国际字符写入。</p>
+<p>这个函数返回一个空QByteArra如果<i>domain</i>是不是一个有效的主机名。请注意，特别是IPv6文本不是有效的域名。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="toEncoded"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QUrl.toEncoded (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qurl-formattingoptions.html">FormattingOptions</a> <i>options</i> = QUrl.None)</h3>
+<p>返回URL的编码表示，如果是有效的，否则空<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>返回。该输出可以通过传递标志与定制<i>options</i>。</p>
+<p>用户信息，路径和片段都转换为UTF- 8 ，而所有非ASCII字符，然后％的编码。主机名是使用Punycode的编码。</p>
+
+
+<h3 class="fn">
+<a name="toLocalFile"></a>QString QUrl.toLocalFile (<i>self</i>)</h3>
+<p>返回URL格式化为一个本地文件路径的路径。返回的路径将使用正斜杠，即使它最初是从一个与反斜杠创建。</p>
+<p>如果这个URL中包含一个非空主机名，它会被编码的返回值在中小企业网络（例如， “ / /服务器名/路径/到/ file.txt的” ）发现的形式。</p>
+<p>如果这是一个相对URL ，在Qt 4.x的这个函数返回的路径，以保持向后兼容性。这将改变从5.0起。那么路径是唯一的网址如该计划是“文件”返回，并为所有其他URL的返回空字符串。</p>
+<p><b>See also</b> <a href="qurl.html#fromLocalFile" tppabs="http://pyqt4doc.appspot.com/qurl.html#fromLocalFile">fromLocalFile</a>（）和<a href="qurl.html#isLocalFile" tppabs="http://pyqt4doc.appspot.com/qurl.html#isLocalFile">isLocalFile</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toPercentEncoding"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QUrl.toPercentEncoding (QString <i>input</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>exclude</i> = QByteArray(), <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>include</i> = QByteArray())</h3>
+<p>返回的编码副本<i>input</i>。<i>input</i>首先被转化为UTF -8 ，和所有的ASCII字符是不是在毫无保留的组是百分之编码。为了防止字符被编码的百分之通过他们来<i>exclude</i>。要强制字符是百分比编码传递给他们<i>include</i>。</p>
+<p>未保留的定义是： ALPHA / DIGIT /“ - ”/“。 ” / “<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html">_</a>“/” 〜“</p>
+<pre class="cpp">
+ <span class="type"><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a></span> ba <span class="operator">=</span> <span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span><span class="operator">.</span>toPercentEncoding(<span class="string">"{a fishy string?}"</span><span class="operator">,</span> <span class="string">"{}"</span><span class="operator">,</span> <span class="string">"s"</span>);
+ <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>(ba<span class="operator">.</span>constData());
+ <span class="comment">// prints "{a fi%73hy %73tring%3F}"</span>
+</pre>
+
+
+<h3 class="fn">
+<a name="topLevelDomain"></a>QString QUrl.topLevelDomain (<i>self</i>)</h3>
+<p>返回URL的TLD （顶级域名） ， （如。 co.uk ， 。净额） 。请注意，返回值前面带一个“。”除非该网址没有包含有效的顶级域名，在这种情况下，函数返回一个空字符串。</p>
+<p>此功能被引入Qt的4.8 。</p>
+
+
+<h3 class="fn">
+<a name="toPunycode"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QUrl.toPunycode (QString)</h3>
+<h3 class="fn">
+<a name="toString"></a>QString QUrl.toString (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qurl-formattingoptions.html">FormattingOptions</a> <i>options</i> = QUrl.None)</h3>
+<p>返回URL的人显示的字符串表示形式。该输出可以通过传递标志与定制<i>options</i>。</p>
+<p><b>See also</b> <a href="qurl.html#FormattingOption-enum" tppabs="http://pyqt4doc.appspot.com/qurl.html#FormattingOption-enum">FormattingOptions</a>和<a href="qurl.html#toEncoded" tppabs="http://pyqt4doc.appspot.com/qurl.html#toEncoded">toEncoded</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="userInfo"></a>QString QUrl.userInfo (<i>self</i>)</h3>
+<p>返回URL的用户信息，或空字符串，如果用户信息是不确定的。</p>
+<p><b>See also</b> <a href="qurl.html#setUserInfo" tppabs="http://pyqt4doc.appspot.com/qurl.html#setUserInfo">setUserInfo</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="userName"></a>QString QUrl.userName (<i>self</i>)</h3>
+<p>返回如果它被定义URL的用户名;否则返回空字符串。</p>
+<p><b>See also</b> <a href="qurl.html#setUserName" tppabs="http://pyqt4doc.appspot.com/qurl.html#setUserName">setUserName</a>（）和<a href="qurl.html#encodedUserName" tppabs="http://pyqt4doc.appspot.com/qurl.html#encodedUserName">encodedUserName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="__eq__"></a>bool QUrl.__eq__ (<i>self</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>url</i>)</h3>
+<h3 class="fn">
+<a name="__ge__"></a>bool QUrl.__ge__ (<i>self</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>url</i>)</h3>
+<h3 class="fn">
+<a name="__hash__"></a>int QUrl.__hash__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="__lt__"></a>bool QUrl.__lt__ (<i>self</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>url</i>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QUrl.__ne__ (<i>self</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>url</i>)</h3>
+<h3 class="fn">
+<a name="__repr__"></a>str QUrl.__repr__ (<i>self</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

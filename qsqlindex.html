@@ -1,0 +1,134 @@
+﻿<html>
+<head>
+<title>QSqlIndex Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QSqlIndex Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtsql.html">QtSql</a> module]</sup></sup>
+</h1>
+<p>该QSqlIndex类提供的功能来处理和描述数据库中的索引。<a href="#details">More...</a></p>
+
+<p>继承<a href="qsqlrecord.html" tppabs="http://pyqt4doc.appspot.com/qsqlrecord.html">QSqlRecord</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlindex.html#QSqlIndex" tppabs="http://pyqt4doc.appspot.com/qsqlindex.html#QSqlIndex">__init__</a></b> (<i>self</i>, QString <i>cursorName</i> = QString(), QString <i>name</i> = QString())</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlindex.html#QSqlIndex-2" tppabs="http://pyqt4doc.appspot.com/qsqlindex.html#QSqlIndex-2">__init__</a></b> (<i>self</i>, QSqlIndex <i>other</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlindex.html#append" tppabs="http://pyqt4doc.appspot.com/qsqlindex.html#append">append</a></b> (<i>self</i>, QSqlField <i>field</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlindex.html#append-2" tppabs="http://pyqt4doc.appspot.com/qsqlindex.html#append-2">append</a></b> (<i>self</i>, QSqlField <i>field</i>, bool <i>desc</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsqlindex.html#cursorName" tppabs="http://pyqt4doc.appspot.com/qsqlindex.html#cursorName">cursorName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqlindex.html#isDescending" tppabs="http://pyqt4doc.appspot.com/qsqlindex.html#isDescending">isDescending</a></b> (<i>self</i>, int <i>i</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsqlindex.html#name" tppabs="http://pyqt4doc.appspot.com/qsqlindex.html#name">name</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlindex.html#setCursorName" tppabs="http://pyqt4doc.appspot.com/qsqlindex.html#setCursorName">setCursorName</a></b> (<i>self</i>, QString <i>cursorName</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlindex.html#setDescending" tppabs="http://pyqt4doc.appspot.com/qsqlindex.html#setDescending">setDescending</a></b> (<i>self</i>, int <i>i</i>, bool <i>desc</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlindex.html#setName" tppabs="http://pyqt4doc.appspot.com/qsqlindex.html#setName">setName</a></b> (<i>self</i>, QString <i>name</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QSqlIndex类提供的功能来处理和描述数据库中的索引。</p>
+<p>一个<i>index</i>指的是一个单一的表或视图中的数据库。关于构成该索引的字段的信息可以被用来生成SQL语句。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QSqlIndex"></a>QSqlIndex.__init__ (<i>self</i>, QString <i>cursorName</i> = QString(), QString <i>name</i> = QString())</h3>
+<p>构造使用游标名称的空索引<i>cursorname</i>和索引名<i>name</i>。</p>
+
+
+<h3 class="fn">
+<a name="QSqlIndex-2"></a>QSqlIndex.__init__ (<i>self</i>, <a href="qsqlindex.html" tppabs="http://pyqt4doc.appspot.com/qsqlindex.html">QSqlIndex</a> <i>other</i>)</h3>
+<p>构造的副本<i>other</i>。</p>
+
+
+<h3 class="fn">
+<a name="append"></a>QSqlIndex.append (<i>self</i>, <a href="qsqlfield.html" tppabs="http://pyqt4doc.appspot.com/qsqlfield.html">QSqlField</a> <i>field</i>)</h3>
+<p>附加领域<i>field</i>对索引字段的列表。本区又追加了一个升序排列。</p>
+
+
+<h3 class="fn">
+<a name="append-2"></a>QSqlIndex.append (<i>self</i>, <a href="qsqlfield.html" tppabs="http://pyqt4doc.appspot.com/qsqlfield.html">QSqlField</a> <i>field</i>, bool <i>desc</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>附加领域<i>field</i>对索引字段的列表。该字段追加升序排序顺序，除非<i>desc</i>是真实的。</p>
+
+
+<h3 class="fn">
+<a name="cursorName"></a>QString QSqlIndex.cursorName (<i>self</i>)</h3>
+<p>返回该索引相关联的光标的名称。</p>
+<p><b>See also</b> <a href="qsqlindex.html#setCursorName" tppabs="http://pyqt4doc.appspot.com/qsqlindex.html#setCursorName">setCursorName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isDescending"></a>bool QSqlIndex.isDescending (<i>self</i>, int <i>i</i>)</h3>
+<p>返回True如果场<i>i</i>该指数是按降序排序，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="name"></a>QString QSqlIndex.name (<i>self</i>)</h3>
+<p>返回的索引的名字。</p>
+<p><b>See also</b> <a href="qsqlindex.html#setName" tppabs="http://pyqt4doc.appspot.com/qsqlindex.html#setName">setName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCursorName"></a>QSqlIndex.setCursorName (<i>self</i>, QString <i>cursorName</i>)</h3>
+<p>设置该指数与对关联的游标的名称<i>cursorName</i>。</p>
+<p><b>See also</b> <a href="qsqlindex.html#cursorName" tppabs="http://pyqt4doc.appspot.com/qsqlindex.html#cursorName">cursorName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setDescending"></a>QSqlIndex.setDescending (<i>self</i>, int <i>i</i>, bool <i>desc</i>)</h3>
+<p>If <i>desc</i>是真的，场<i>i</i>是按降序排序。否则，场<i>i</i>按升序排序（缺省值） 。如果该字段不存在，则什么也不会发生。</p>
+<p><b>See also</b> <a href="qsqlindex.html#isDescending" tppabs="http://pyqt4doc.appspot.com/qsqlindex.html#isDescending">isDescending</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setName"></a>QSqlIndex.setName (<i>self</i>, QString <i>name</i>)</h3>
+<p>集的索引的名字<i>name</i>。</p>
+<p><b>See also</b> <a href="qsqlindex.html#name" tppabs="http://pyqt4doc.appspot.com/qsqlindex.html#name">name</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

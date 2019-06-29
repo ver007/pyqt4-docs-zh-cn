@@ -1,0 +1,638 @@
+﻿<html>
+<head>
+<title>QGLWidget Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QGLWidget Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtopengl.html">QtOpenGL</a> module]</sup></sup>
+</h1>
+<p>该的QGLWidget类是一个小部件的绘制OpenGL图形。<a href="#details">More...</a></p>
+
+<p>继承<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#QGLWidget" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#QGLWidget">__init__</a></b> (<i>self</i>, QWidget <i>parent</i> = None, QGLWidget <i>shareWidget</i> = None, Qt.WindowFlags <i>flags</i> = 0)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#QGLWidget-2" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#QGLWidget-2">__init__</a></b> (<i>self</i>, QGLContext <i>context</i>, QWidget <i>parent</i> = None, QGLWidget <i>shareWidget</i> = None, Qt.WindowFlags <i>flags</i> = 0)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#QGLWidget-3" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#QGLWidget-3">__init__</a></b> (<i>self</i>, QGLFormat <i>format</i>, QWidget <i>parent</i> = None, QGLWidget <i>shareWidget</i> = None, Qt.WindowFlags <i>flags</i> = 0)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qglwidget.html#autoBufferSwap" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#autoBufferSwap">autoBufferSwap</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qglwidget.html#bindTexture" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#bindTexture">bindTexture</a></b> (<i>self</i>, QImage <i>image</i>, int <i>target</i> = GL_TEXTURE_2D, int <i>format</i> = GL_RGBA)</li>
+<li>
+<div class="fn"></div>int <b><a href="qglwidget.html#bindTexture-2" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#bindTexture-2">bindTexture</a></b> (<i>self</i>, QPixmap <i>pixmap</i>, int <i>target</i> = GL_TEXTURE_2D, int <i>format</i> = GL_RGBA)</li>
+<li>
+<div class="fn"></div>int <b><a href="qglwidget.html#bindTexture-3" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#bindTexture-3">bindTexture</a></b> (<i>self</i>, QString <i>fileName</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qglwidget.html#bindTexture-4" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#bindTexture-4">bindTexture</a></b> (<i>self</i>, QImage <i>image</i>, int <i>target</i>, int <i>format</i>, QGLContext.BindOptions <i>options</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qglwidget.html#bindTexture-5" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#bindTexture-5">bindTexture</a></b> (<i>self</i>, QPixmap <i>pixmap</i>, int <i>target</i>, int <i>format</i>, QGLContext.BindOptions <i>options</i>)</li>
+<li>
+<div class="fn"></div>QGLColormap <b><a href="qglwidget.html#colormap" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#colormap">colormap</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QGLContext <b><a href="qglwidget.html#context" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#context">context</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#deleteTexture" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#deleteTexture">deleteTexture</a></b> (<i>self</i>, int <i>tx_id</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#doneCurrent" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#doneCurrent">doneCurrent</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qglwidget.html#doubleBuffer" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#doubleBuffer">doubleBuffer</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#drawTexture" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#drawTexture">drawTexture</a></b> (<i>self</i>, QRectF <i>target</i>, int <i>textureId</i>, int <i>textureTarget</i> = GL_TEXTURE_2D)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#drawTexture-2" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#drawTexture-2">drawTexture</a></b> (<i>self</i>, QPointF <i>point</i>, int <i>textureId</i>, int <i>textureTarget</i> = GL_TEXTURE_2D)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qglwidget.html#event" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#event">event</a></b> (<i>self</i>, QEvent)</li>
+<li>
+<div class="fn"></div>int <b><a href="qglwidget.html#fontDisplayListBase" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#fontDisplayListBase">fontDisplayListBase</a></b> (<i>self</i>, QFont <i>font</i>, int <i>listBase</i> = 2000)</li>
+<li>
+<div class="fn"></div>QGLFormat <b><a href="qglwidget.html#format" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#format">format</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#glDraw" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#glDraw">glDraw</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#glInit" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#glInit">glInit</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QImage <b><a href="qglwidget.html#grabFrameBuffer" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#grabFrameBuffer">grabFrameBuffer</a></b> (<i>self</i>, bool <i>withAlpha</i> = False)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#initializeGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#initializeGL">initializeGL</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#initializeOverlayGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#initializeOverlayGL">initializeOverlayGL</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qglwidget.html#isSharing" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#isSharing">isSharing</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qglwidget.html#isValid" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#isValid">isValid</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#makeCurrent" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#makeCurrent">makeCurrent</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#makeOverlayCurrent" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#makeOverlayCurrent">makeOverlayCurrent</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QGLContext <b><a href="qglwidget.html#overlayContext" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#overlayContext">overlayContext</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QPaintEngine <b><a href="qglwidget.html#paintEngine" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#paintEngine">paintEngine</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#paintEvent">paintEvent</a></b> (<i>self</i>, QPaintEvent)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#paintGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#paintGL">paintGL</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#paintOverlayGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#paintOverlayGL">paintOverlayGL</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#qglClearColor" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#qglClearColor">qglClearColor</a></b> (<i>self</i>, QColor <i>c</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#qglColor" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#qglColor">qglColor</a></b> (<i>self</i>, QColor <i>c</i>)</li>
+<li>
+<div class="fn"></div>QPixmap <b><a href="qglwidget.html#renderPixmap" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#renderPixmap">renderPixmap</a></b> (<i>self</i>, int <i>width</i> = 0, int <i>height</i> = 0, bool <i>useContext</i> = False)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#renderText" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#renderText">renderText</a></b> (<i>self</i>, int <i>x</i>, int <i>y</i>, QString <i>str</i>, QFont <i>font</i> = QFont(), int <i>listBase</i> = 2000)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#renderText-2" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#renderText-2">renderText</a></b> (<i>self</i>, float <i>x</i>, float <i>y</i>, float <i>z</i>, QString <i>str</i>, QFont <i>font</i> = QFont(), int <i>listBase</i> = 2000)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#resizeEvent" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#resizeEvent">resizeEvent</a></b> (<i>self</i>, QResizeEvent)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#resizeGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#resizeGL">resizeGL</a></b> (<i>self</i>, int <i>w</i>, int <i>h</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#resizeOverlayGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#resizeOverlayGL">resizeOverlayGL</a></b> (<i>self</i>, int <i>w</i>, int <i>h</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#setAutoBufferSwap" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#setAutoBufferSwap">setAutoBufferSwap</a></b> (<i>self</i>, bool <i>on</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#setColormap" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#setColormap">setColormap</a></b> (<i>self</i>, QGLColormap <i>map</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#setContext" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#setContext">setContext</a></b> (<i>self</i>, QGLContext <i>context</i>, QGLContext <i>shareContext</i> = None, bool <i>deleteOldContext</i> = True)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#setFormat" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#setFormat">setFormat</a></b> (<i>self</i>, QGLFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#setMouseTracking" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#setMouseTracking">setMouseTracking</a></b> (<i>self</i>, bool <i>enable</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#swapBuffers" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#swapBuffers">swapBuffers</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#updateGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#updateGL">updateGL</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglwidget.html#updateOverlayGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#updateOverlayGL">updateOverlayGL</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul><li>
+<div class="fn"></div>QImage <b><a href="qglwidget.html#convertToGLFormat" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#convertToGLFormat">convertToGLFormat</a></b> (QImage <i>img</i>)</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该的QGLWidget类是一个小部件的绘制OpenGL图形。</p>
+<p>的QGLWidget提供的功能显示集成到Qt应用OpenGL图形。它使用起来非常简单。你从它继承并使用子像任何其他<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>，但你必须使用之间的选择<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>和标准的OpenGL渲染命令。</p>
+<p>QGLWidget的规定，你可以在你的子类重新实现来执行典型任务的OpenGL三种简便的虚函数：</p>
+<ul>
+<li>
+<a href="qglwidget.html#paintGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#paintGL">paintGL</a>() - Renders the
+OpenGL scene. Gets called whenever the widget needs to be
+updated.</li>
+<li>
+<a href="qglwidget.html#resizeGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#resizeGL">resizeGL</a>() - Sets up the
+OpenGL viewport, projection, etc. Gets called whenever the widget
+has been resized (and also when it is shown for the first time
+because all newly created widgets get a resize event
+automatically).</li>
+<li>
+<a href="qglwidget.html#initializeGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#initializeGL">initializeGL</a>() - Sets
+up the OpenGL rendering context, defines display lists, etc. Gets
+called once before the first time <a href="qglwidget.html#resizeGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#resizeGL">resizeGL</a>() or <a href="qglwidget.html#paintGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#paintGL">paintGL</a>() is called.</li>
+</ul>
+<p>下面是一个如何的QGLWidget子类可能看起来粗线条：</p>
+<pre class="cpp">
+ <span class="keyword">class</span> MyGLDrawer : <span class="keyword">public</span> <span class="type">QGLWidget</span>
+ {
+     Q_OBJECT        <span class="comment">// must include this if you use Qt signals/slots</span>
+
+ <span class="keyword">public</span>:
+     MyGLDrawer(<span class="type"><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a></span> <span class="operator">*</span>parent)
+         : <span class="type">QGLWidget</span>(parent) {}
+
+ <span class="keyword">protected</span>:
+
+     <span class="type">void</span> initializeGL()
+     {
+         <span class="comment">// Set up the rendering context, define display lists etc.:</span>
+         <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+         glClearColor(<span class="number">0.0</span><span class="operator">,</span> <span class="number">0.0</span><span class="operator">,</span> <span class="number">0.0</span><span class="operator">,</span> <span class="number">0.0</span>);
+         glEnable(GL_DEPTH_TEST);
+         <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+     }
+
+     <span class="type">void</span> resizeGL(<span class="type">int</span> w<span class="operator">,</span> <span class="type">int</span> h)
+     {
+         <span class="comment">// setup viewport, projection etc.:</span>
+         glViewport(<span class="number">0</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> (GLint)w<span class="operator">,</span> (GLint)h);
+         <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+         glFrustum(<span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>);
+         <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+     }
+
+     <span class="type">void</span> paintGL()
+     {
+         <span class="comment">// draw the scene:</span>
+         <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+         glRotatef(<span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>);
+         glMaterialfv(<span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>);
+         glBegin(GL_QUADS);
+         glVertex3f(<span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>);
+         glVertex3f(<span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>);
+         <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+         glEnd();
+         <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+     }
+
+ };
+</pre>
+<p>如果你需要从触发比其他地方重绘<a href="qglwidget.html#paintGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#paintGL">paintGL</a>（ ）（一个典型的例子，当使用的是<a href="qtimer.html" tppabs="http://pyqt4doc.appspot.com/qtimer.html">timers</a>动画场景） ，你应该调用widget的<a href="qglwidget.html#updateGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#updateGL">updateGL</a>（）函数。</p>
+<p>Widget的OpenGL渲染上下文是由电流时<a href="qglwidget.html#paintGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#paintGL">paintGL</a>（ ）<a href="qglwidget.html#resizeGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#resizeGL">resizeGL</a>（） ，或<a href="qglwidget.html#initializeGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#initializeGL">initializeGL</a>（）被调用。如果你需要从其他地方（例如，在你的widget的构造函数或在自己的油漆函数）调用标准的OpenGL API函数，你必须调用<a href="qglwidget.html#makeCurrent" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#makeCurrent">makeCurrent</a>（ ）第一。</p>
+<p>的QGLWidget提供用于请求新显示器<a href="qglformat.html" tppabs="http://pyqt4doc.appspot.com/qglformat.html">format</a>你也可以创建小部件定制渲染<a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">contexts</a>。</p>
+<p>你也可以分享OpenGL显示列表的QGLWidget对象之间（见的QGLWidget构造的细节的文档）。</p>
+<p>请注意，Windows ，下<a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a>属于的QGLWidget有当的QGLWidget被重设父重新创建。这是由于在Windows平台上的局限性必要的。这很可能会导致问题的那些子类，并安装自己的用户<a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a>上的QGLWidget 。它可以解决此问题通过把QGLWidget的一个虚拟部件内，然后重定父级的虚拟窗口小部件，而不是QGLWidget的。这将侧步完全的问题，这也是我们建议对于需要这类功能的用户。</p>
+<p>在Mac OS X中，当Qt的是建立与可可的支持，一个的QGLWidget不能放在ontop的本身任何同级部件。这是由于可可API中的限制和不支持的苹果。</p>
+<a id="overlays" name="overlays"></a>
+<h3>Overlays</h3>
+<p>如果复盖层由底层系统所支持的的QGLWidget创建在除了正常的上下文中的GL复盖范围内。</p>
+<p>如果你想使用背景画面，您在指定它<a href="qglformat.html" tppabs="http://pyqt4doc.appspot.com/qglformat.html">format</a>。 （注：复盖必须传递给构造函数的QGLWidget的格式要求。 ）你的GL小工具还应该实现一些虚拟方法或全部：</p>
+<ul>
+<li>
+<a href="qglwidget.html#paintOverlayGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#paintOverlayGL">paintOverlayGL</a>()</li>
+<li>
+<a href="qglwidget.html#resizeOverlayGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#resizeOverlayGL">resizeOverlayGL</a>()</li>
+<li>
+<a href="qglwidget.html#initializeOverlayGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#initializeOverlayGL">initializeOverlayGL</a>()</li>
+</ul>
+<p>这些方法中以相同的方式工作，因为正常<a href="qglwidget.html#paintGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#paintGL">paintGL</a>（ ）等函数，不同之处在于，当复盖范围内由目前他们将被调用。你可以明确地使复盖范围内的电流通过<a href="qglwidget.html#makeOverlayCurrent" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#makeOverlayCurrent">makeOverlayCurrent</a>（ ） ，你可以直接通过调用访问复盖范围内（例如，要求其透明色）<a href="qglwidget.html#overlayContext" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#overlayContext">overlayContext</a>（ ） 。</p>
+<p>X服务器上，其中缺省视觉是在复盖面，非GL Qt的窗也可以用于复盖层。</p>
+<a id="painting-techniques" name="painting-techniques"></a>
+<h3>Painting Techniques</h3>
+<p>如上所述，子类的QGLWidget来呈现以下列方式纯三维内容：</p>
+<ul>
+<li>Reimplement the <a href="qglwidget.html#initializeGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#initializeGL">QGLWidget.initializeGL</a>() and
+<a href="qglwidget.html#resizeGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#resizeGL">QGLWidget.resizeGL</a>() to set
+up the OpenGL state and provide a perspective transformation.</li>
+<li>Reimplement <a href="qglwidget.html#paintGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#paintGL">QGLWidget.paintGL</a>() to paint the 3D
+scene, calling only OpenGL functions to draw on the widget.</li>
+</ul>
+<p>它也可以绘制2D图形到的QGLWidget子类中，有必要重新实现<a href="qglwidget.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#paintEvent">QGLWidget.paintEvent</a>（ ）并执行以下操作：</p>
+<ul>
+<li>Construct a <a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a> object.</li>
+<li>Initialize it for use on the widget with the <a href="qpainter.html#begin" tppabs="http://pyqt4doc.appspot.com/qpainter.html#begin">QPainter.begin</a>() function.</li>
+<li>Draw primitives using <a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>'s
+member functions.</li>
+<li>Call <a href="qpainter.html#end" tppabs="http://pyqt4doc.appspot.com/qpainter.html#end">QPainter.end</a>() to finish
+painting.</li>
+</ul>
+<p>对3D内容的顶部Overpainting 2D内容需要一点更多的努力。一种方法来执行此操作示于<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/opengl-overpainting.html">Overpainting</a>例子。</p>
+<a id="threading" name="threading"></a>
+<h3>Threading</h3>
+<p>由于Qt的4.8版本，这样做螺纹GL渲染的支持进行了改进。有迹象表明，我们目前支持三种情况：</p>
+<ul>
+<li>1. Buffer swapping in a thread.
+<p>交换缓冲区的双缓冲上下文可以是同步，锁定调用这可能是一个代价高昂的操作在一些GL实现。尤其是等嵌入式设备。这不是最佳的有CPU空转而GPU是做一个缓冲区交换。在这种情况下，它是可以做到的渲染在主线程并执行实际的缓冲区交换在一个单独的线程。这可以通过以下步骤来完成：</p>
+<p>1 。通话<a href="qglwidget.html#doneCurrent" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#doneCurrent">doneCurrent</a>（ ）的时候，渲染完成后，主线程。</p>
+<p>2 。通知交换的线程，它可以抓住的上下文。</p>
+<p>3 。使在交换线程渲染上下文电流<a href="qglwidget.html#makeCurrent" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#makeCurrent">makeCurrent</a>（ ），然后调用<a href="qglwidget.html#swapBuffers" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#swapBuffers">swapBuffers</a>（ ） 。</p>
+<p>4 。通话<a href="qglwidget.html#doneCurrent" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#doneCurrent">doneCurrent</a>（ ）在交换线，并通知主线程的交换完成。</p>
+<p>这样做将释放主线程，以便它可以继续使用，例如，处理UI事件或网络请求。即使是涉及上下文交换，相对于具有主线程等待而GPU完成交换操作也可能是优选的。注意，这是高度依赖于实现。</p>
+</li>
+<li>2. Texture uploading in a thread.
+<p>做质地上传在一个线程可能是应用处理大量需要被显示的，例如像一个图片库的图像应用程序非常有用。这是通过对现有的受支持Qt中<a href="qglwidget.html#bindTexture" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#bindTexture">bindTexture</a>（ ） API 。这样做的一个简单的方法是创建两个共享QGLWidgets 。一个是由当前在主界面线程，而其它是由当前在纹理上传线程。在上传线程窗口小部件从未显示，它仅用于与主线程共享的纹理。对于通过绑定每一个纹理<a href="qglwidget.html#bindTexture" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#bindTexture">bindTexture</a>（ ） ，通知主线程，以便它可以开始使用了质感。</p>
+</li>
+<li>3. Using <a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a> to draw into a
+QGLWidget in a thread.
+<p>在Qt 4.8 ，它可以用来绘制成的QGLWidget一个<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>在一个单独的线程。注意，这也可能QGLPixelBuffers和QGLFramebufferObjects 。由于这是唯一支持在GL 2绘图引擎， OpenGL的2.0或OpenGL ES 2.0是必需的。</p>
+<p>QGLWidgets只能在主界面线程被创建。这意味着调用<a href="qglwidget.html#doneCurrent" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#doneCurrent">doneCurrent</a>（ ）是需要从主线程释放GL上下文之前，小部件可以被另一个线程被捲入。此外，主界面线程将派遣调整大小和油漆事件到的QGLWidget时，小部件的大小时，或它的一部分将暴露在外或需要重绘。因此，有必要来处理这些事件，因为里面的QGLWidget的默认实现将尽力使的QGLWidget的背景电流，这将再次与渲染到小部件的任何线程干扰。重新实现<a href="qglwidget.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#paintEvent">QGLWidget.paintEvent</a>（）和<a href="qglwidget.html#resizeEvent" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#resizeEvent">QGLWidget.resizeEvent</a>（ ）通知渲染线程，一个调整大小或更新是必要的，并注意不要调用基类的实现。如果要渲染一个动画，它可能没有必要处理Paint事件，因为在所有的渲染线程正在做定期更新。那么这将是足以重新实现<a href="qglwidget.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#paintEvent">QGLWidget.paintEvent</a>（ ）什么也不做。</p>
+</li>
+</ul>
+<p>因为这样做线程渲染时一般规则：注意，绑定和在不同的线程释放上下文必须由用户进行同步。一个GL渲染上下文只能是当前一个线程在任何时候。如果您尝试打开一个<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>上的QGLWidget和窗口小部件的渲染上下文是当前在另一个线程，它会失败。</p>
+<p>需要注意的是X11下，有必要设置<a href="qt.html#ApplicationAttribute-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ApplicationAttribute-enum">Qt.AA_X11InitThreads</a>应用程序的属性，使X11的库和GLX调用线程安全的，否则上述情况将会失败。</p>
+<p>除了这一点，使用一个单独的线程原料GL调用呈现支持。</p>
+<p><i>OpenGL is a trademark of Silicon Graphics, Inc. in the United
+States and other countries.</i></p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QGLWidget"></a>QGLWidget.__init__ (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None, <a href="qglwidget.html" tppabs="http://pyqt4doc.appspot.com/qglwidget.html">QGLWidget</a> <i>shareWidget</i> = None, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-windowflags.html">Qt.WindowFlags</a> <i>flags</i> = 0)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个OpenGL窗口小部件与<i>parent</i>小工具。</p>
+<p>该<a href="qglformat.html#defaultFormat" tppabs="http://pyqt4doc.appspot.com/qglformat.html#defaultFormat">default format</a>被使用。窗口小部件会<a href="qglwidget.html#isValid" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#isValid">invalid</a>如果系统中没有<a href="qglformat.html#hasOpenGL" tppabs="http://pyqt4doc.appspot.com/qglformat.html#hasOpenGL">OpenGL support</a>。</p>
+<p>该<i>parent</i>和widget标志，<i>f</i>，参数被传递到<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>构造函数。</p>
+<p>If <i>shareWidget</i>是一个有效的<a href="qglwidget.html" tppabs="http://pyqt4doc.appspot.com/qglwidget.html">QGLWidget</a>，这个widget会分享OpenGL的显示列表和纹理与对象<i>shareWidget</i>。但是，如果<i>shareWidget</i>而这个小工具有不同的<a href="qglwidget.html#format" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#format">formats</a>，共享可能是不可能的。您可以检查共享是否有效通过调用<a href="qglwidget.html#isSharing" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#isSharing">isSharing</a>（ ） 。</p>
+<p>OpenGL的渲染状态等的初始化应通过重写来完成的<a href="qglwidget.html#initializeGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#initializeGL">initializeGL</a>（）函数，而不是在你的构造<a href="qglwidget.html" tppabs="http://pyqt4doc.appspot.com/qglwidget.html">QGLWidget</a>子类。</p>
+<p><b>See also</b> <a href="qglformat.html#defaultFormat" tppabs="http://pyqt4doc.appspot.com/qglformat.html#defaultFormat">QGLFormat.defaultFormat</a>（）和<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/opengl-textures.html">Textures Example</a>。</p>
+
+
+<h3 class="fn">
+<a name="QGLWidget-2"></a>QGLWidget.__init__ (<i>self</i>, <a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a> <i>context</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None, <a href="qglwidget.html" tppabs="http://pyqt4doc.appspot.com/qglwidget.html">QGLWidget</a> <i>shareWidget</i> = None, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-windowflags.html">Qt.WindowFlags</a> <i>flags</i> = 0)</h3>
+<p>该<i>context</i>说法有它的所有权转移给Qt的。</p>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个OpenGL窗口小部件与父<i>parent</i>。</p>
+<p>该<i>context</i>参数是一个指向<a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a>你希望绑定到这个小工具。这使您可以通过在自己的<a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a>子类。</p>
+<p>窗口小部件会<a href="qglwidget.html#isValid" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#isValid">invalid</a>如果系统中没有<a href="qglformat.html#hasOpenGL" tppabs="http://pyqt4doc.appspot.com/qglformat.html#hasOpenGL">OpenGL
+support</a>。</p>
+<p>该<i>parent</i>和widget标志，<i>f</i>，参数被传递到<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>构造函数。</p>
+<p>If <i>shareWidget</i>是一个有效的<a href="qglwidget.html" tppabs="http://pyqt4doc.appspot.com/qglwidget.html">QGLWidget</a>，这个widget会分享OpenGL的显示列表和纹理与对象<i>shareWidget</i>。但是，如果<i>shareWidget</i>而这个小工具有不同的<a href="qglwidget.html#format" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#format">formats</a>，共享可能是不可能的。您可以检查共享是否有效通过调用<a href="qglwidget.html#isSharing" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#isSharing">isSharing</a>（ ） 。</p>
+<p>OpenGL的渲染状态等的初始化应通过重写来完成的<a href="qglwidget.html#initializeGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#initializeGL">initializeGL</a>（）函数，而不是在你的构造<a href="qglwidget.html" tppabs="http://pyqt4doc.appspot.com/qglwidget.html">QGLWidget</a>子类。</p>
+<p><b>See also</b> <a href="qglformat.html#defaultFormat" tppabs="http://pyqt4doc.appspot.com/qglformat.html#defaultFormat">QGLFormat.defaultFormat</a>（）和<a href="qglwidget.html#isValid" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#isValid">isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QGLWidget-3"></a>QGLWidget.__init__ (<i>self</i>, <a href="qglformat.html" tppabs="http://pyqt4doc.appspot.com/qglformat.html">QGLFormat</a> <i>format</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None, <a href="qglwidget.html" tppabs="http://pyqt4doc.appspot.com/qglwidget.html">QGLWidget</a> <i>shareWidget</i> = None, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-windowflags.html">Qt.WindowFlags</a> <i>flags</i> = 0)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个OpenGL窗口小部件与父<i>parent</i>。</p>
+<p>该<i>format</i>参数指定所需<a href="qglformat.html" tppabs="http://pyqt4doc.appspot.com/qglformat.html">rendering options</a>。如果底层的OpenGL / Window系统不能满足所有要求的功能<i>format</i>，的特征最接近的子集将被使用。创建后，<a href="qglwidget.html#format" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#format">format</a>（ ）方法将返回所得到的实际格式。</p>
+<p>窗口小部件会<a href="qglwidget.html#isValid" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#isValid">invalid</a>如果系统中没有<a href="qglformat.html#hasOpenGL" tppabs="http://pyqt4doc.appspot.com/qglformat.html#hasOpenGL">OpenGL
+support</a>。</p>
+<p>该<i>parent</i>和widget标志，<i>f</i>，参数被传递到<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>构造函数。</p>
+<p>If <i>shareWidget</i>是一个有效的<a href="qglwidget.html" tppabs="http://pyqt4doc.appspot.com/qglwidget.html">QGLWidget</a>，这个widget会分享OpenGL的显示列表和纹理与对象<i>shareWidget</i>。但是，如果<i>shareWidget</i>而这个小工具有不同的<a href="qglwidget.html#format" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#format">formats</a>，共享可能是不可能的。您可以检查共享是否有效通过调用<a href="qglwidget.html#isSharing" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#isSharing">isSharing</a>（ ） 。</p>
+<p>OpenGL的渲染状态等的初始化应通过重写来完成的<a href="qglwidget.html#initializeGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#initializeGL">initializeGL</a>（）函数，而不是在你的构造<a href="qglwidget.html" tppabs="http://pyqt4doc.appspot.com/qglwidget.html">QGLWidget</a>子类。</p>
+<p><b>See also</b> <a href="qglformat.html#defaultFormat" tppabs="http://pyqt4doc.appspot.com/qglformat.html#defaultFormat">QGLFormat.defaultFormat</a>（）和<a href="qglwidget.html#isValid" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#isValid">isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="autoBufferSwap"></a>bool QGLWidget.autoBufferSwap (<i>self</i>)</h3>
+<p>返回True如果部件是做自动GL缓冲交换，否则返回False 。</p>
+<p><b>See also</b> <a href="qglwidget.html#setAutoBufferSwap" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#setAutoBufferSwap">setAutoBufferSwap</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="bindTexture"></a>int QGLWidget.bindTexture (<i>self</i>, <a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> <i>image</i>, int <i>target</i> = GL_TEXTURE_2D, int <i>format</i> = GL_RGBA)</h3>
+<p>调用QGLContext ： bindTexture （<i>image</i>，<i>target</i>，<i>format</i>）对当前设置环境。</p>
+<p><b>See also</b> <a href="qglwidget.html#deleteTexture" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#deleteTexture">deleteTexture</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="bindTexture-2"></a>int QGLWidget.bindTexture (<i>self</i>, <a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a> <i>pixmap</i>, int <i>target</i> = GL_TEXTURE_2D, int <i>format</i> = GL_RGBA)</h3>
+<p>调用QGLContext ： bindTexture （<i>pixmap</i>，<i>target</i>，<i>format</i>）对当前设置环境。</p>
+<p><b>See also</b> <a href="qglwidget.html#deleteTexture" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#deleteTexture">deleteTexture</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="bindTexture-3"></a>int QGLWidget.bindTexture (<i>self</i>, QString <i>fileName</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>绑定<i>options</i>是一组用来决定如何将纹理绑定到上下文选项。</p>
+<p>此功能被引入Qt的4.6 。</p>
+
+
+<h3 class="fn">
+<a name="bindTexture-4"></a>int QGLWidget.bindTexture (<i>self</i>, <a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> <i>image</i>, int <i>target</i>, int <i>format</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qglcontext-bindoptions.html">QGLContext.BindOptions</a> <i>options</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>生成和二维GL纹理绑定到当前上下文的基础上，<i>pixmap</i>。所生成的纹理ID被返回，并且可以在使用</p>
+<p>绑定<i>options</i>是一组用来决定如何将纹理绑定到上下文选项。</p>
+<p>此功能被引入Qt的4.6 。</p>
+
+
+<h3 class="fn">
+<a name="bindTexture-5"></a>int QGLWidget.bindTexture (<i>self</i>, <a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a> <i>pixmap</i>, int <i>target</i>, int <i>format</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qglcontext-bindoptions.html">QGLContext.BindOptions</a> <i>options</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>调用QGLContext.bindTexture （<i>fileName</i>）对当前设置环境。</p>
+<p><b>See also</b> <a href="qglwidget.html#deleteTexture" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#deleteTexture">deleteTexture</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="colormap"></a><a href="qglcolormap.html" tppabs="http://pyqt4doc.appspot.com/qglcolormap.html">QGLColormap</a> QGLWidget.colormap (<i>self</i>)</h3>
+<p>返回色图这个小工具。</p>
+<p>通常它是一个可以安装不同的色彩映射表只有顶层窗口部件。要求的子插件的颜色表将返回颜色映射为孩子的顶级窗口部件。</p>
+<p>如果没有颜色表已设置这个小工具的<a href="qglcolormap.html" tppabs="http://pyqt4doc.appspot.com/qglcolormap.html">QGLColormap</a>返回的将是空的。</p>
+<p><b>See also</b> <a href="qglwidget.html#setColormap" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#setColormap">setColormap</a>（）和<a href="qglcolormap.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qglcolormap.html#isEmpty">QGLColormap.isEmpty</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="context"></a><a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a> QGLWidget.context (<i>self</i>)</h3>
+<p>返回这个窗口部件的背景下。</p>
+<p>这是可能的情况下是无效的（参见<a href="qglwidget.html#isValid" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#isValid">isValid</a>（）） ，例如，如果底层的硬件不支持所请求的格式属性。</p>
+
+
+<h3 class="fn">
+<a name="convertToGLFormat"></a><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> QGLWidget.convertToGLFormat (<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> <i>img</i>)</h3>
+<p>将图像转换<i>img</i>到预期的OpenGL函数，如glTexImage2D （ ）的未命名格式。返回的图像是不能用作<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>，但<a href="qimage.html#width" tppabs="http://pyqt4doc.appspot.com/qimage.html#width">QImage.width</a>（ ）<a href="qimage.html#height" tppabs="http://pyqt4doc.appspot.com/qimage.html#height">QImage.height</a>（）和<a href="qimage.html#bits" tppabs="http://pyqt4doc.appspot.com/qimage.html#bits">QImage.bits</a>（ ）可用于与OpenGL的。使用的GL格式<tt>GL_RGBA</tt>。</p>
+
+
+<h3 class="fn">
+<a name="deleteTexture"></a>QGLWidget.deleteTexture (<i>self</i>, int <i>tx_id</i>)</h3>
+<p>调用QGLContext.deleteTexture （<i>id</i>）对当前设置环境。</p>
+<p><b>See also</b> <a href="qglwidget.html#bindTexture" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#bindTexture">bindTexture</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="doneCurrent"></a>QGLWidget.doneCurrent (<i>self</i>)</h3>
+<p>不作任何GL上下文的当前上下文。通常情况下，你不需要调用此函数;<a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a>调用它是必要的。然而，也可能是在多线程环境中是有用的。</p>
+
+
+<h3 class="fn">
+<a name="doubleBuffer"></a>bool QGLWidget.doubleBuffer (<i>self</i>)</h3>
+<p>返回True如果包含的GL渲染上下文具有双缓冲，否则返回False 。</p>
+<p><b>See also</b> <a href="qglformat.html#doubleBuffer" tppabs="http://pyqt4doc.appspot.com/qglformat.html#doubleBuffer">QGLFormat.doubleBuffer</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="drawTexture"></a>QGLWidget.drawTexture (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>target</i>, int <i>textureId</i>, int <i>textureTarget</i> = GL_TEXTURE_2D)</h3>
+<p>调用相应的<a href="qglcontext.html#drawTexture" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#drawTexture">QGLContext.drawTexture</a>（ ）与<i>target</i>，<i>textureId</i>和<i>textureTarget</i>这个小工具的上下文。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="drawTexture-2"></a>QGLWidget.drawTexture (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>point</i>, int <i>textureId</i>, int <i>textureTarget</i> = GL_TEXTURE_2D)</h3>
+<p>调用相应的<a href="qglcontext.html#drawTexture" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#drawTexture">QGLContext.drawTexture</a>（ ）与<i>point</i>，<i>textureId</i>和<i>textureTarget</i>这个小工具的上下文。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="event"></a>bool QGLWidget.event (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>)</h3>
+<p>从重新实现<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">QObject.event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fontDisplayListBase"></a>int QGLWidget.fontDisplayListBase (<i>self</i>, <a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a> <i>font</i>, int <i>listBase</i> = 2000)</h3>
+<h3 class="fn">
+<a name="format"></a><a href="qglformat.html" tppabs="http://pyqt4doc.appspot.com/qglformat.html">QGLFormat</a> QGLWidget.format (<i>self</i>)</h3>
+<p>返回所包含GL渲染上下文的格式。</p>
+<p><b>See also</b> <a class="obsolete" href="index.htm#setFormat" tppabs="http://pyqt4doc.appspot.com/qglwidget-obsolete.html#setFormat">setFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="glDraw"></a>QGLWidget.glDraw (<i>self</i>)</h3>
+<p>执行虚拟函数<a href="qglwidget.html#paintGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#paintGL">paintGL</a>（ ） 。</p>
+<p>窗口小部件的渲染上下文将成为当前上下文和<a href="qglwidget.html#initializeGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#initializeGL">initializeGL</a>（） ，如果它尚未被称为将被调用。</p>
+
+
+<h3 class="fn">
+<a name="glInit"></a>QGLWidget.glInit (<i>self</i>)</h3>
+<p>OpenGL的初始化这个小工具的上下文。调用虚函数<a href="qglwidget.html#initializeGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#initializeGL">initializeGL</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="grabFrameBuffer"></a><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> QGLWidget.grabFrameBuffer (<i>self</i>, bool <i>withAlpha</i> = False)</h3>
+<p>返回帧缓冲器的图像。如果<i>withAlpha</i>是真正的alpha通道被包括在内。</p>
+<p>根据您的硬件，就可以明确选择调用此函数之前用glReadBuffer （ ）调用抢的颜色缓冲区。</p>
+
+
+<h3 class="fn">
+<a name="initializeGL"></a>QGLWidget.initializeGL (<i>self</i>)</h3>
+<p>在第一次调用之前，这个虚函数被调用一次<a href="qglwidget.html#paintGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#paintGL">paintGL</a>（）或<a href="qglwidget.html#resizeGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#resizeGL">resizeGL</a>（） ，然后一旦每当插件已被分配一个新<a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a>。重新实现它的一个子类。</p>
+<p>这个功能应该设置任何所需的OpenGL上下文渲染标志，定义显示列表等。</p>
+<p>有不需要调用<a href="qglwidget.html#makeCurrent" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#makeCurrent">makeCurrent</a>（ ），因为这已经完成时，此函数被调用。</p>
+
+
+<h3 class="fn">
+<a name="initializeOverlayGL"></a>QGLWidget.initializeOverlayGL (<i>self</i>)</h3>
+<p>这个虚拟函数用于以相同的方式作为<a href="qglwidget.html#initializeGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#initializeGL">initializeGL</a>（）不同的是它运行在widget的复盖范围内，而不是widget的主要方面。这意味着， initializeOverlayGL （）的第一次调用之前被调用一次<a href="qglwidget.html#paintOverlayGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#paintOverlayGL">paintOverlayGL</a>（）或<a href="qglwidget.html#resizeOverlayGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#resizeOverlayGL">resizeOverlayGL</a>（ ） 。重新实现它的一个子类。</p>
+<p>这个功能应该设置任何所需的OpenGL上下文渲染标志，定义显示列表等的复盖范围内。</p>
+<p>有不需要调用<a href="qglwidget.html#makeOverlayCurrent" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#makeOverlayCurrent">makeOverlayCurrent</a>（ ），因为这已经完成时，此函数被调用。</p>
+
+
+<h3 class="fn">
+<a name="isSharing"></a>bool QGLWidget.isSharing (<i>self</i>)</h3>
+<p>返回True如果这个小工具的GL上下文与另一GL上下文共享，否则返回假。上下文共享可能不是可能的，如果小窗口使用不同的格式。</p>
+<p><b>See also</b> <a href="qglwidget.html#format" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#format">format</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isValid"></a>bool QGLWidget.isValid (<i>self</i>)</h3>
+<p>返回True如果部件有一个有效的GL渲染上下文，否则返回False 。一个widget将是无效的，如果系统没有<a href="qglformat.html#hasOpenGL" tppabs="http://pyqt4doc.appspot.com/qglformat.html#hasOpenGL">OpenGL support</a>。</p>
+
+
+<h3 class="fn">
+<a name="makeCurrent"></a>QGLWidget.makeCurrent (<i>self</i>)</h3>
+<p>使得这个小工具的当前部件的OpenGL操作，即让widget的渲染上下文当前的OpenGL渲染上下文。</p>
+
+
+<h3 class="fn">
+<a name="makeOverlayCurrent"></a>QGLWidget.makeOverlayCurrent (<i>self</i>)</h3>
+<p>使得这个小部件电流的复盖范围内。如果你需要发出OpenGL命令来复盖上下文之外使用此<a href="qglwidget.html#initializeOverlayGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#initializeOverlayGL">initializeOverlayGL</a>（ ）<a href="qglwidget.html#resizeOverlayGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#resizeOverlayGL">resizeOverlayGL</a>（）和<a href="qglwidget.html#paintOverlayGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#paintOverlayGL">paintOverlayGL</a>（ ） 。</p>
+<p>什么都不做，如果这个部件有没有重叠。</p>
+<p><b>See also</b> <a href="qglwidget.html#makeCurrent" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#makeCurrent">makeCurrent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="overlayContext"></a><a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a> QGLWidget.overlayContext (<i>self</i>)</h3>
+<p>返回这个窗口部件，或者0的复盖范围内，如果该部件有没有重叠。</p>
+<p><b>See also</b> <a href="qglwidget.html#context" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#context">context</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="paintEngine"></a><a href="qpaintengine.html" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html">QPaintEngine</a> QGLWidget.paintEngine (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="paintEvent"></a>QGLWidget.paintEvent (<i>self</i>, <a href="qpaintevent.html" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html">QPaintEvent</a>)</h3>
+<p>从重新实现<a href="qwidget.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#paintEvent">QWidget.paintEvent</a>（ ） 。</p>
+<p>在处理传入的paint事件<i>event</i>参数。会导致虚拟<a href="qglwidget.html#paintGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#paintGL">paintGL</a>（ ）函数被调用。</p>
+<p>窗口小部件的渲染上下文将成为当前上下文和<a href="qglwidget.html#initializeGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#initializeGL">initializeGL</a>（） ，如果它尚未被称为将被调用。</p>
+
+
+<h3 class="fn">
+<a name="paintGL"></a>QGLWidget.paintGL (<i>self</i>)</h3>
+<p>这个虚函数被调用时的小部件需要被重画。重新实现它的一个子类。</p>
+<p>有不需要调用<a href="qglwidget.html#makeCurrent" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#makeCurrent">makeCurrent</a>（ ），因为这已经完成时，此函数被调用。</p>
+
+
+<h3 class="fn">
+<a name="paintOverlayGL"></a>QGLWidget.paintOverlayGL (<i>self</i>)</h3>
+<p>这个虚拟函数用于以相同的方式作为<a href="qglwidget.html#paintGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#paintGL">paintGL</a>（）不同的是它运行在widget的复盖范围内，而不是widget的主要方面。这意味着， paintOverlayGL （）被调用每当widget的复盖需要被重画。重新实现它的一个子类。</p>
+<p>有不需要调用<a href="qglwidget.html#makeOverlayCurrent" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#makeOverlayCurrent">makeOverlayCurrent</a>（ ），因为这已经完成时，此函数被调用。</p>
+
+
+<h3 class="fn">
+<a name="qglClearColor"></a>QGLWidget.qglClearColor (<i>self</i>, <a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a> <i>c</i>)</h3>
+<p>便利功能用于指定清算颜色的OpenGL。调用glClearColor （在RGBA模式）或glClearIndex （在颜色索引模式）的颜色<i>c</i>。适用于本部件GL上下文。</p>
+<p><b>See also</b> <a href="qglwidget.html#qglColor" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#qglColor">qglColor</a>（ ）<a href="qglcontext.html#currentContext" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#currentContext">QGLContext.currentContext</a>（）和<a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a>。</p>
+
+
+<h3 class="fn">
+<a name="qglColor"></a>QGLWidget.qglColor (<i>self</i>, <a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a> <i>c</i>)</h3>
+<p>便利功能用于指定绘图颜色的OpenGL。调用glColor4 （在RGBA模式）或glIndex （在颜色索引模式）的颜色<i>c</i>。适用于本部件GL上下文。</p>
+<p><b>Note:</b>此功能不支持基于OpenGL / ES 2.0的系统。</p>
+<p><b>See also</b> <a href="qglwidget.html#qglClearColor" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#qglClearColor">qglClearColor</a>（ ）<a href="qglcontext.html#currentContext" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#currentContext">QGLContext.currentContext</a>（）和<a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a>。</p>
+
+
+<h3 class="fn">
+<a name="renderPixmap"></a><a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a> QGLWidget.renderPixmap (<i>self</i>, int <i>width</i> = 0, int <i>height</i> = 0, bool <i>useContext</i> = False)</h3>
+<p>呈现在一个像素映射当前场景，并返回像素图。</p>
+<p>您可以在可见和不可见使用这种方法<a href="qglwidget.html" tppabs="http://pyqt4doc.appspot.com/qglwidget.html">QGLWidget</a>对象。</p>
+<p>这个方法将创建一个像素图和临时<a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a>渲染的像素图。然后，它会调用<a href="qglwidget.html#initializeGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#initializeGL">initializeGL</a>（ ）<a href="qglwidget.html#resizeGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#resizeGL">resizeGL</a>（）和<a href="qglwidget.html#paintGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#paintGL">paintGL</a>（ ）在这种情况下。最后，小部件的原GL上下文恢复。</p>
+<p>像素图的大小将<i>w</i>像素宽和<i>h</i>像素高，除非这些参数中的一个为0 （缺省值） ，在这种情况下，像素映像将具有相同尺寸的窗口小部件。</p>
+<p>If <i>useContext</i>诚然，这个方法会尝试使用现有的GL上下文来渲染像素图更有效率。默认值为False 。仅使用真实的，如果你理解了风险。注意，在Windows下的临时上下文必须创建和使用<i>useContext</i>不支持参数。</p>
+<p>复盖不会呈现到像素图。</p>
+<p>如果GL渲染上下文和桌面有不同的位深度，其结果很可能会看起来令人惊讶。</p>
+<p>请注意，创建显示列表中，视锥等的修改应该从内完成<a href="qglwidget.html#initializeGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#initializeGL">initializeGL</a>（ ） 。如果不这样做，则临时<a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a>将无法正确初始化，并且呈现像素图可能不完整/损坏。</p>
+
+
+<h3 class="fn">
+<a name="renderText"></a>QGLWidget.renderText (<i>self</i>, int <i>x</i>, int <i>y</i>, QString <i>str</i>, <a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a> <i>font</i> = QFont(), int <i>listBase</i> = 2000)</h3>
+<p>呈现的字符串<i>str</i>这个小部件的GL上下文。</p>
+<p><i>x</i>和<i>y</i>在窗口坐标被指定，在该窗口的上部左角的原点。如果<i>font</i>没有被指定，当前设置的应用程序的字体将被用来呈现字符串。要改变呈现的文本的颜色，你可以使用glColor （ ）调用（或<a href="qglwidget.html#qglColor" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#qglColor">qglColor</a>（ ）便利功能） ，只是renderText （ ）调用之前。</p>
+<p>该<i>listBase</i>参数已过时，将在Qt的未来版本中删除。</p>
+<p><b>Note:</b>此功能清除模板缓冲区。</p>
+<p><b>Note:</b>此功能不支持基于OpenGL / ES系统。</p>
+<p><b>Note:</b>此功能暂时禁用深度测试时绘制文本。</p>
+<p><b>Note:</b>此功能只能在内部使用<a href="qpainter.html#beginNativePainting" tppabs="http://pyqt4doc.appspot.com/qpainter.html#beginNativePainting">QPainter.beginNativePainting</a>（）/<a href="qpainter.html#endNativePainting" tppabs="http://pyqt4doc.appspot.com/qpainter.html#endNativePainting">QPainter.endNativePainting</a>（ ）块，如果默认的OpenGL绘图引擎是<a href="qpaintengine.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#Type-enum">QPaintEngine.OpenGL</a>。为了使<a href="qpaintengine.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#Type-enum">QPaintEngine.OpenGL</a>默认的GL引擎，调用QGL.setPreferredPaintEngine （<a href="qpaintengine.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#Type-enum">QPaintEngine.OpenGL</a>）前<a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a>构造函数。</p>
+<p><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/opengl-overpainting.html">Overpaint</a>同<a href="qpainter.html#drawText" tppabs="http://pyqt4doc.appspot.com/qpainter.html#drawText">QPainter.drawText</a>（ ）来代替。</p>
+
+
+<h3 class="fn">
+<a name="renderText-2"></a>QGLWidget.renderText (<i>self</i>, float <i>x</i>, float <i>y</i>, float <i>z</i>, QString <i>str</i>, <a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a> <i>font</i> = QFont(), int <i>listBase</i> = 2000)</h3>
+<p>这是一个重载函数。</p>
+<p><i>x</i>，<i>y</i>和<i>z</i>被指定的场景或物体坐标相对于当前设置的投影和模型矩阵。如果要标注模型与文本标籤，并在标籤移动的模式，因为它旋转等，这可能是有用的</p>
+<p><b>Note:</b>此功能不支持基于OpenGL / ES系统。</p>
+<p><b>Note:</b>如果深度测试启用此函数被调用之前，那么绘制的文本将深度测试对那些已经被绘制在场景中的模型。使用<tt>glDisable(GL_DEPTH_TEST)</tt>之前调用这个函数来注释的模型，而无需深度测试的文本。</p>
+<p><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/opengl-overpainting.html">Overpaint</a>同<a href="qpainter.html#drawText" tppabs="http://pyqt4doc.appspot.com/qpainter.html#drawText">QPainter.drawText</a>（ ）来代替。</p>
+
+
+<h3 class="fn">
+<a name="resizeEvent"></a>QGLWidget.resizeEvent (<i>self</i>, <a href="qresizeevent.html" tppabs="http://pyqt4doc.appspot.com/qresizeevent.html">QResizeEvent</a>)</h3>
+<p>从重新实现<a href="qwidget.html#resizeEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#resizeEvent">QWidget.resizeEvent</a>（ ） 。</p>
+<p>手柄调整所传递的事件<i>event</i>参数。调用虚函数<a href="qglwidget.html#resizeGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#resizeGL">resizeGL</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="resizeGL"></a>QGLWidget.resizeGL (<i>self</i>, int <i>w</i>, int <i>h</i>)</h3>
+<p>这个虚函数被调用时的小部件已调整大小。新的大小被传递<i>width</i>和<i>height</i>。重新实现它的一个子类。</p>
+<p>有不需要调用<a href="qglwidget.html#makeCurrent" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#makeCurrent">makeCurrent</a>（ ），因为这已经完成时，此函数被调用。</p>
+
+
+<h3 class="fn">
+<a name="resizeOverlayGL"></a>QGLWidget.resizeOverlayGL (<i>self</i>, int <i>w</i>, int <i>h</i>)</h3>
+<p>这个虚拟函数用于以相同的方式作为<a href="qglwidget.html#paintGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#paintGL">paintGL</a>（）不同的是它运行在widget的复盖范围内，而不是widget的主要方面。这意味着， resizeOverlayGL （）被调用时的小部件已调整大小。新的大小被传递<i>width</i>和<i>height</i>。重新实现它的一个子类。</p>
+<p>有不需要调用<a href="qglwidget.html#makeOverlayCurrent" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#makeOverlayCurrent">makeOverlayCurrent</a>（ ），因为这已经完成时，此函数被调用。</p>
+
+
+<h3 class="fn">
+<a name="setAutoBufferSwap"></a>QGLWidget.setAutoBufferSwap (<i>self</i>, bool <i>on</i>)</h3>
+<p>If <i>on</i>是真正的自动GL缓冲交换被打开，否则将被关闭。</p>
+<p>If <i>on</i>是真实和小部件是使用双缓冲格式，背景和前景GL缓冲区会自动在每个被交换<a href="qglwidget.html#paintGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#paintGL">paintGL</a>（ ）调用。</p>
+<p>缓冲区自动交换是默认。</p>
+<p><b>See also</b> <a href="qglwidget.html#autoBufferSwap" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#autoBufferSwap">autoBufferSwap</a>（ ）<a href="qglwidget.html#doubleBuffer" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#doubleBuffer">doubleBuffer</a>（）和<a href="qglwidget.html#swapBuffers" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#swapBuffers">swapBuffers</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setColormap"></a>QGLWidget.setColormap (<i>self</i>, <a href="qglcolormap.html" tppabs="http://pyqt4doc.appspot.com/qglcolormap.html">QGLColormap</a> <i>map</i>)</h3>
+<p>设置颜色映射这个小工具到<i>cmap</i>。通常它是一种可以安装有色彩映射表仅顶层窗口小部件。</p>
+<p><b>See also</b> <a href="qglwidget.html#colormap" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#colormap">colormap</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setContext"></a>QGLWidget.setContext (<i>self</i>, <a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a> <i>context</i>, <a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a> <i>shareContext</i> = None, bool <i>deleteOldContext</i> = True)</h3>
+<p>该<i>context</i>说法有它的所有权转移给Qt的。</p>
+<h3 class="fn">
+<a name="setFormat"></a>QGLWidget.setFormat (<i>self</i>, <a href="qglformat.html" tppabs="http://pyqt4doc.appspot.com/qglformat.html">QGLFormat</a> <i>format</i>)</h3>
+<h3 class="fn">
+<a name="setMouseTracking"></a>QGLWidget.setMouseTracking (<i>self</i>, bool <i>enable</i>)</h3>
+<p>If <i>enable</i>是真的，那么鼠标跟踪被启用，否则将被禁用。</p>
+
+
+<h3 class="fn">
+<a name="swapBuffers"></a>QGLWidget.swapBuffers (<i>self</i>)</h3>
+<p>掉期，一个离屏缓冲屏幕内容。这只是工作，如果widget的格式指定双缓冲模式。</p>
+<p>通常情况下，没有必要显式调用这个函数，因为它是每个插件重绘后自动完成的，即每个时间后，<a href="qglwidget.html#paintGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#paintGL">paintGL</a>（ ）已经执行。</p>
+<p><b>See also</b> <a href="qglwidget.html#doubleBuffer" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#doubleBuffer">doubleBuffer</a>（ ）<a href="qglwidget.html#setAutoBufferSwap" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#setAutoBufferSwap">setAutoBufferSwap</a>（）和<a href="qglformat.html#setDoubleBuffer" tppabs="http://pyqt4doc.appspot.com/qglformat.html#setDoubleBuffer">QGLFormat.setDoubleBuffer</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="updateGL"></a>QGLWidget.updateGL (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void updateGL()</tt>。</p>
+<p>通过调用更新微件<a href="qglwidget.html#glDraw" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#glDraw">glDraw</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="updateOverlayGL"></a>QGLWidget.updateOverlayGL (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void updateOverlayGL()</tt>。</p>
+<p>更新微件的叠加（如果有的话） 。会导致虚函数<a href="qglwidget.html#paintOverlayGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#paintOverlayGL">paintOverlayGL</a>（）被执行。</p>
+<p>窗口小部件的渲染上下文将成为当前上下文和<a href="qglwidget.html#initializeGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#initializeGL">initializeGL</a>（） ，如果它尚未被称为将被调用。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

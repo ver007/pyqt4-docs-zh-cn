@@ -1,0 +1,114 @@
+﻿<html>
+<head>
+<title>QStatusTipEvent Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QStatusTipEvent Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QStatusTipEvent类提供了用于显示在状态栏消息的事件。<a href="#details">More...</a></p>
+
+<p>继承<a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qstatustipevent.html#QStatusTipEvent" tppabs="http://pyqt4doc.appspot.com/qstatustipevent.html#QStatusTipEvent">__init__</a></b> (<i>self</i>, QString <i>tip</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstatustipevent.html#QStatusTipEvent-2" tppabs="http://pyqt4doc.appspot.com/qstatustipevent.html#QStatusTipEvent-2">__init__</a></b> (<i>self</i>, QStatusTipEvent)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstatustipevent.html#tip" tppabs="http://pyqt4doc.appspot.com/qstatustipevent.html#tip">tip</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QStatusTipEvent类提供了用于显示在状态栏消息的事件。</p>
+<p>状态提示可以在窗口小部件使用设置的<a href="qwidget.html#statusTip-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#statusTip-prop">QWidget.setStatusTip</a>（）函数。它们显示在状态栏，当鼠标光标进入窗口小部件。例如：</p>
+<table class="generic" width="100%">
+<tr class="odd" valign="top">
+<td>
+<pre class="cpp">
+ MainWindow<span class="operator">.</span>MainWindow(<span class="type"><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a></span> <span class="operator">*</span>parent)
+     : <span class="type"><a href="qmainwindow.html" tppabs="http://pyqt4doc.appspot.com/qmainwindow.html">QMainWindow</a></span>(parent)
+ {
+     <span class="type"><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a></span> <span class="operator">*</span>myWidget <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a></span>;
+     myWidget<span class="operator">-</span><span class="operator">&gt;</span>setStatusTip(tr(<span class="string">"This is my widget."</span>));
+
+     setCentralWidget(myWidget);
+     ...
+ }
+</pre>
+</td>
+<td>
+<p class="centerAlign"><img alt="Widget with status tip." src="images/qstatustipevent-widget.png"></p>
+</td>
+</tr>
+</table>
+<p>状态提示也可以使用动作设置<a href="qaction.html#statusTip-prop" tppabs="http://pyqt4doc.appspot.com/qaction.html#statusTip-prop">QAction.setStatusTip</a>（ ）函数：</p>
+<table class="generic" width="100%">
+<tr class="odd" valign="top">
+<td>
+<pre class="cpp">
+ MainWindow<span class="operator">.</span>MainWindow(<span class="type"><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a></span> <span class="operator">*</span>parent)
+     : <span class="type"><a href="qmainwindow.html" tppabs="http://pyqt4doc.appspot.com/qmainwindow.html">QMainWindow</a></span>(parent)
+ {
+     <span class="type"><a href="qmenu.html" tppabs="http://pyqt4doc.appspot.com/qmenu.html">QMenu</a></span> <span class="operator">*</span>fileMenu <span class="operator">=</span> menuBar()<span class="operator">-</span><span class="operator">&gt;</span>addMenu(tr(<span class="string">"File"</span>));
+
+     <span class="type"><a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a></span> <span class="operator">*</span>newAct <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a></span>(tr(<span class="string">"&amp;New"</span>)<span class="operator">,</span> <span class="keyword">this</span>);
+     newAct<span class="operator">-</span><span class="operator">&gt;</span>setStatusTip(tr(<span class="string">"Create a new file."</span>));
+     fileMenu<span class="operator">-</span><span class="operator">&gt;</span>addAction(newAct);
+     ...
+ }
+</pre>
+</td>
+<td>
+<p class="centerAlign"><img alt="Action with status tip." src="images/qstatustipevent-action.png"></p>
+</td>
+</tr>
+</table>
+<p>最后，状态提示通过支持的项目视图类的<a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">Qt.StatusTipRole</a>枚举值。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QStatusTipEvent"></a>QStatusTipEvent.__init__ (<i>self</i>, QString <i>tip</i>)</h3>
+<p>构造一个状态提示事件与指定的文本<i>tip</i>。</p>
+<p><b>See also</b> <a href="qstatustipevent.html#tip" tppabs="http://pyqt4doc.appspot.com/qstatustipevent.html#tip">tip</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QStatusTipEvent-2"></a>QStatusTipEvent.__init__ (<i>self</i>, <a href="qstatustipevent.html" tppabs="http://pyqt4doc.appspot.com/qstatustipevent.html">QStatusTipEvent</a>)</h3>
+<h3 class="fn">
+<a name="tip"></a>QString QStatusTipEvent.tip (<i>self</i>)</h3>
+<p>返回消息在状态栏中显示。</p>
+<p><b>See also</b> <a href="qstatusbar.html#showMessage" tppabs="http://pyqt4doc.appspot.com/qstatusbar.html#showMessage">QStatusBar.showMessage</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

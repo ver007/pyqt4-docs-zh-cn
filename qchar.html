@@ -1,0 +1,1126 @@
+﻿<html>
+<head>
+<title>QChar Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QChar Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QChar类提供了一个16位的Unicode字符。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qchar.html#Category-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#Category-enum">Category</a></b> { NoCategory, Mark_NonSpacing, Mark_SpacingCombining, Mark_Enclosing, ..., Symbol_Other }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qchar.html#CombiningClass-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#CombiningClass-enum">CombiningClass</a></b> { Combining_BelowLeftAttached, Combining_BelowAttached, Combining_BelowRightAttached, Combining_LeftAttached, ..., Combining_IotaSubscript }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qchar.html#Decomposition-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#Decomposition-enum">Decomposition</a></b> { NoDecomposition, Canonical, Font, NoBreak, ..., Fraction }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qchar.html#Direction-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#Direction-enum">Direction</a></b> { DirL, DirR, DirEN, DirES, ..., DirBN }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qchar.html#Joining-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#Joining-enum">Joining</a></b> { OtherJoining, Dual, Right, Center }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qchar.html#SpecialCharacter-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#SpecialCharacter-enum">SpecialCharacter</a></b> { Null, Nbsp, ReplacementCharacter, ObjectReplacementCharacter, ..., LineSeparator }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qchar.html#UnicodeVersion-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#UnicodeVersion-enum">UnicodeVersion</a></b> { Unicode_Unassigned, Unicode_1_1, Unicode_2_0, Unicode_2_1_2, ..., Unicode_5_0 }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qchar.html#QChar" tppabs="http://pyqt4doc.appspot.com/qchar.html#QChar">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qchar.html#QChar-2" tppabs="http://pyqt4doc.appspot.com/qchar.html#QChar-2">__init__</a></b> (<i>self</i>, str <i>c</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qchar.html#QChar-3" tppabs="http://pyqt4doc.appspot.com/qchar.html#QChar-3">__init__</a></b> (<i>self</i>, QLatin1Char <i>ch</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qchar.html#QChar-4" tppabs="http://pyqt4doc.appspot.com/qchar.html#QChar-4">__init__</a></b> (<i>self</i>, str <i>c</i>, str <i>r</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qchar.html#QChar-5" tppabs="http://pyqt4doc.appspot.com/qchar.html#QChar-5">__init__</a></b> (<i>self</i>, int <i>rc</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qchar.html#QChar-6" tppabs="http://pyqt4doc.appspot.com/qchar.html#QChar-6">__init__</a></b> (<i>self</i>, SpecialCharacter <i>s</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qchar.html#QChar-7" tppabs="http://pyqt4doc.appspot.com/qchar.html#QChar-7">__init__</a></b> (<i>self</i>, QChar)</li>
+<li>
+<div class="fn"></div>Category <b><a href="qchar.html#category" tppabs="http://pyqt4doc.appspot.com/qchar.html#category">category</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qchar.html#cell" tppabs="http://pyqt4doc.appspot.com/qchar.html#cell">cell</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qchar.html#combiningClass" tppabs="http://pyqt4doc.appspot.com/qchar.html#combiningClass">combiningClass</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qchar.html#decomposition" tppabs="http://pyqt4doc.appspot.com/qchar.html#decomposition">decomposition</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Decomposition <b><a href="qchar.html#decompositionTag" tppabs="http://pyqt4doc.appspot.com/qchar.html#decompositionTag">decompositionTag</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qchar.html#digitValue" tppabs="http://pyqt4doc.appspot.com/qchar.html#digitValue">digitValue</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Direction <b><a href="qchar.html#direction" tppabs="http://pyqt4doc.appspot.com/qchar.html#direction">direction</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qchar.html#hasMirrored" tppabs="http://pyqt4doc.appspot.com/qchar.html#hasMirrored">hasMirrored</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qchar.html#isDigit" tppabs="http://pyqt4doc.appspot.com/qchar.html#isDigit">isDigit</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qchar.html#isHighSurrogate" tppabs="http://pyqt4doc.appspot.com/qchar.html#isHighSurrogate">isHighSurrogate</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qchar.html#isLetter" tppabs="http://pyqt4doc.appspot.com/qchar.html#isLetter">isLetter</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qchar.html#isLetterOrNumber" tppabs="http://pyqt4doc.appspot.com/qchar.html#isLetterOrNumber">isLetterOrNumber</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qchar.html#isLower" tppabs="http://pyqt4doc.appspot.com/qchar.html#isLower">isLower</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qchar.html#isLowSurrogate" tppabs="http://pyqt4doc.appspot.com/qchar.html#isLowSurrogate">isLowSurrogate</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qchar.html#isMark" tppabs="http://pyqt4doc.appspot.com/qchar.html#isMark">isMark</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qchar.html#isNull" tppabs="http://pyqt4doc.appspot.com/qchar.html#isNull">isNull</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qchar.html#isNumber" tppabs="http://pyqt4doc.appspot.com/qchar.html#isNumber">isNumber</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qchar.html#isPrint" tppabs="http://pyqt4doc.appspot.com/qchar.html#isPrint">isPrint</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qchar.html#isPunct" tppabs="http://pyqt4doc.appspot.com/qchar.html#isPunct">isPunct</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qchar.html#isSpace" tppabs="http://pyqt4doc.appspot.com/qchar.html#isSpace">isSpace</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qchar.html#isSymbol" tppabs="http://pyqt4doc.appspot.com/qchar.html#isSymbol">isSymbol</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qchar.html#isTitleCase" tppabs="http://pyqt4doc.appspot.com/qchar.html#isTitleCase">isTitleCase</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qchar.html#isUpper" tppabs="http://pyqt4doc.appspot.com/qchar.html#isUpper">isUpper</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Joining <b><a href="qchar.html#joining" tppabs="http://pyqt4doc.appspot.com/qchar.html#joining">joining</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QChar <b><a href="qchar.html#mirroredChar" tppabs="http://pyqt4doc.appspot.com/qchar.html#mirroredChar">mirroredChar</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qchar.html#row" tppabs="http://pyqt4doc.appspot.com/qchar.html#row">row</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qchar.html#setCell" tppabs="http://pyqt4doc.appspot.com/qchar.html#setCell">setCell</a></b> (<i>self</i>, str <i>acell</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qchar.html#setRow" tppabs="http://pyqt4doc.appspot.com/qchar.html#setRow">setRow</a></b> (<i>self</i>, str <i>arow</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qchar.html#toAscii" tppabs="http://pyqt4doc.appspot.com/qchar.html#toAscii">toAscii</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QChar <b><a href="qchar.html#toCaseFolded" tppabs="http://pyqt4doc.appspot.com/qchar.html#toCaseFolded">toCaseFolded</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qchar.html#toLatin1" tppabs="http://pyqt4doc.appspot.com/qchar.html#toLatin1">toLatin1</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QChar <b><a href="qchar.html#toLower" tppabs="http://pyqt4doc.appspot.com/qchar.html#toLower">toLower</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QChar <b><a href="qchar.html#toTitleCase" tppabs="http://pyqt4doc.appspot.com/qchar.html#toTitleCase">toTitleCase</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QChar <b><a href="qchar.html#toUpper" tppabs="http://pyqt4doc.appspot.com/qchar.html#toUpper">toUpper</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qchar.html#unicode" tppabs="http://pyqt4doc.appspot.com/qchar.html#unicode">unicode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>UnicodeVersion <b><a href="qchar.html#unicodeVersion" tppabs="http://pyqt4doc.appspot.com/qchar.html#unicodeVersion">unicodeVersion</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>Category <b><a href="qchar.html#category-2" tppabs="http://pyqt4doc.appspot.com/qchar.html#category-2">category</a></b> (int <i>ucs4</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qchar.html#combiningClass-2" tppabs="http://pyqt4doc.appspot.com/qchar.html#combiningClass-2">combiningClass</a></b> (int <i>ucs4</i>)</li>
+<li>
+<div class="fn"></div>UnicodeVersion <b><a href="qchar.html#currentUnicodeVersion" tppabs="http://pyqt4doc.appspot.com/qchar.html#currentUnicodeVersion">currentUnicodeVersion</a></b> ()</li>
+<li>
+<div class="fn"></div>QString <b><a href="qchar.html#decomposition-2" tppabs="http://pyqt4doc.appspot.com/qchar.html#decomposition-2">decomposition</a></b> (int <i>ucs4</i>)</li>
+<li>
+<div class="fn"></div>Decomposition <b><a href="qchar.html#decompositionTag-2" tppabs="http://pyqt4doc.appspot.com/qchar.html#decompositionTag-2">decompositionTag</a></b> (int <i>ucs4</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qchar.html#digitValue-2" tppabs="http://pyqt4doc.appspot.com/qchar.html#digitValue-2">digitValue</a></b> (int <i>ucs4</i>)</li>
+<li>
+<div class="fn"></div>Direction <b><a href="qchar.html#direction-2" tppabs="http://pyqt4doc.appspot.com/qchar.html#direction-2">direction</a></b> (int <i>ucs4</i>)</li>
+<li>
+<div class="fn"></div>QChar <b><a href="qchar.html#fromAscii" tppabs="http://pyqt4doc.appspot.com/qchar.html#fromAscii">fromAscii</a></b> (str <i>c</i>)</li>
+<li>
+<div class="fn"></div>QChar <b><a href="qchar.html#fromLatin1" tppabs="http://pyqt4doc.appspot.com/qchar.html#fromLatin1">fromLatin1</a></b> (str <i>c</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qchar.html#highSurrogate" tppabs="http://pyqt4doc.appspot.com/qchar.html#highSurrogate">highSurrogate</a></b> (int <i>ucs4</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qchar.html#isHighSurrogate-2" tppabs="http://pyqt4doc.appspot.com/qchar.html#isHighSurrogate-2">isHighSurrogate</a></b> (int <i>ucs4</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qchar.html#isLowSurrogate-2" tppabs="http://pyqt4doc.appspot.com/qchar.html#isLowSurrogate-2">isLowSurrogate</a></b> (int <i>ucs4</i>)</li>
+<li>
+<div class="fn"></div>Joining <b><a href="qchar.html#joining-2" tppabs="http://pyqt4doc.appspot.com/qchar.html#joining-2">joining</a></b> (int <i>ucs4</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qchar.html#lowSurrogate" tppabs="http://pyqt4doc.appspot.com/qchar.html#lowSurrogate">lowSurrogate</a></b> (int <i>ucs4</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qchar.html#mirroredChar-2" tppabs="http://pyqt4doc.appspot.com/qchar.html#mirroredChar-2">mirroredChar</a></b> (int <i>ucs4</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qchar.html#requiresSurrogates" tppabs="http://pyqt4doc.appspot.com/qchar.html#requiresSurrogates">requiresSurrogates</a></b> (int <i>ucs4</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qchar.html#surrogateToUcs4" tppabs="http://pyqt4doc.appspot.com/qchar.html#surrogateToUcs4">surrogateToUcs4</a></b> (int <i>high</i>, int <i>low</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qchar.html#surrogateToUcs4-2" tppabs="http://pyqt4doc.appspot.com/qchar.html#surrogateToUcs4-2">surrogateToUcs4</a></b> (QChar <i>high</i>, QChar <i>low</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qchar.html#toCaseFolded-2" tppabs="http://pyqt4doc.appspot.com/qchar.html#toCaseFolded-2">toCaseFolded</a></b> (int <i>ucs4</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qchar.html#toLower-2" tppabs="http://pyqt4doc.appspot.com/qchar.html#toLower-2">toLower</a></b> (int <i>ucs4</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qchar.html#toTitleCase-2" tppabs="http://pyqt4doc.appspot.com/qchar.html#toTitleCase-2">toTitleCase</a></b> (int <i>ucs4</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qchar.html#toUpper-2" tppabs="http://pyqt4doc.appspot.com/qchar.html#toUpper-2">toUpper</a></b> (int <i>ucs4</i>)</li>
+<li>
+<div class="fn"></div>UnicodeVersion <b><a href="qchar.html#unicodeVersion-2" tppabs="http://pyqt4doc.appspot.com/qchar.html#unicodeVersion-2">unicodeVersion</a></b> (int <i>ucs4</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QString <b><a href="qchar.html#__add__" tppabs="http://pyqt4doc.appspot.com/qchar.html#__add__">__add__</a></b> (<i>self</i>, QString <i>s2</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qchar.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qchar.html#__eq__">__eq__</a></b> (<i>self</i>, QChar <i>c2</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qchar.html#__ge__" tppabs="http://pyqt4doc.appspot.com/qchar.html#__ge__">__ge__</a></b> (<i>self</i>, QChar <i>c2</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qchar.html#__gt__" tppabs="http://pyqt4doc.appspot.com/qchar.html#__gt__">__gt__</a></b> (<i>self</i>, QChar <i>c2</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qchar.html#__hash__" tppabs="http://pyqt4doc.appspot.com/qchar.html#__hash__">__hash__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qchar.html#__le__" tppabs="http://pyqt4doc.appspot.com/qchar.html#__le__">__le__</a></b> (<i>self</i>, QChar <i>c2</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qchar.html#__lt__" tppabs="http://pyqt4doc.appspot.com/qchar.html#__lt__">__lt__</a></b> (<i>self</i>, QChar <i>c2</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qchar.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qchar.html#__ne__">__ne__</a></b> (<i>self</i>, QChar <i>c2</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qchar.html#__repr__" tppabs="http://pyqt4doc.appspot.com/qchar.html#__repr__">__repr__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qchar.html#__str__" tppabs="http://pyqt4doc.appspot.com/qchar.html#__str__">__str__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>unicode <b><a href="qchar.html#__unicode__" tppabs="http://pyqt4doc.appspot.com/qchar.html#__unicode__">__unicode__</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>这个类可以醃制。</p>
+<p>该QChar类提供了一个16位的Unicode字符。</p>
+<p>在Qt中， Unicode字符是没有任何标记或结构的16位实体。此类表示这样的实体。它是轻量级的，因此它可以随处使用。大多数编译器把它当作<tt>unsigned short</tt>。</p>
+<p>QChar提供的测试/分类功能全套，转换和从其他格式，从组成到分解的Unicode转换，并试图比较和大小写转换，如果你问它。</p>
+<p>分类功能包括像那些在标准C + +头\u003ccctype\u003e （原\u003cCTYPE.H\u003e ）功能，但在全方位的Unicode字符操作。他们都返回True，如果该字符是某种类型的字符，否则返回假。这些分类功能<a href="qchar.html#isNull" tppabs="http://pyqt4doc.appspot.com/qchar.html#isNull">isNull</a>（ ） （如果字符是'\ 0'返回True ） ，<a href="qchar.html#isPrint" tppabs="http://pyqt4doc.appspot.com/qchar.html#isPrint">isPrint</a>（ ） （ True如果字符是任何类型的可打印字符，包括空格的） ，<a href="qchar.html#isPunct" tppabs="http://pyqt4doc.appspot.com/qchar.html#isPunct">isPunct</a>（ ） （任何种类的点状的） ，<a href="qchar.html#isMark" tppabs="http://pyqt4doc.appspot.com/qchar.html#isMark">isMark</a>（ ） （ Unicode的标志） ，<a href="qchar.html#isLetter" tppabs="http://pyqt4doc.appspot.com/qchar.html#isLetter">isLetter</a>（ ） （一个字母） ，<a href="qchar.html#isNumber" tppabs="http://pyqt4doc.appspot.com/qchar.html#isNumber">isNumber</a>（ ） （任何种类的数字字符，不只是0-9 ） ，<a href="qchar.html#isLetterOrNumber" tppabs="http://pyqt4doc.appspot.com/qchar.html#isLetterOrNumber">isLetterOrNumber</a>（）和<a href="qchar.html#isDigit" tppabs="http://pyqt4doc.appspot.com/qchar.html#isDigit">isDigit</a>（ ） （小数位数） 。所有这些都是围绕包装<a href="qchar.html#category" tppabs="http://pyqt4doc.appspot.com/qchar.html#category">category</a>（ ），它返回的Unicode定义的每个字符的类别。</p>
+<p>QChar还提供<a href="qchar.html#direction" tppabs="http://pyqt4doc.appspot.com/qchar.html#direction">direction</a>（ ），表示这个人物的“自然”的写作方向。该<a href="qchar.html#joining" tppabs="http://pyqt4doc.appspot.com/qchar.html#joining">joining</a>（ ）函数指示如何连接字符与邻国（主要是阿拉伯语需要） ，最后<a href="qchar.html#hasMirrored" tppabs="http://pyqt4doc.appspot.com/qchar.html#hasMirrored">hasMirrored</a>（ ），这表明该字符是否需要打印时在其“非自然”的写作方向进行镜像。</p>
+<p>由Unicode字符（如A ）可以通过使用被转换为Unicode的分解（ “一”加“环以上” ）<a href="qchar.html#decomposition" tppabs="http://pyqt4doc.appspot.com/qchar.html#decomposition">decomposition</a>（ ） 。</p>
+<p>在Unicode中，比较未必能够和大小写转换是非常困难的最好的。 Unicode的，涵盖了“全”的世界，也包括世界上大部分的情况下和排序问题。运算符== （）和朋友会做的字符的数值Unicode值（代码点）完全基于比较和<a href="qchar.html#toUpper" tppabs="http://pyqt4doc.appspot.com/qchar.html#toUpper">toUpper</a>（）和<a href="qchar.html#toLower" tppabs="http://pyqt4doc.appspot.com/qchar.html#toLower">toLower</a>（ ）会做改变的情况下，当角色有一个明确定义的大写/小写形式。对于区域设置相关的比较，使用<a href="qstring.html#localeAwareCompare" tppabs="http://pyqt4doc.appspot.com/qstring.html#localeAwareCompare">QString.localeAwareCompare</a>（ ） 。</p>
+<p>该转换功能包括<a href="qchar.html#unicode" tppabs="http://pyqt4doc.appspot.com/qchar.html#unicode">unicode</a>（ ）（一个标量） ，<a href="qchar.html#toLatin1" tppabs="http://pyqt4doc.appspot.com/qchar.html#toLatin1">toLatin1</a>（ ） （标量，但将所有非Latin-1字符为0） ，<a href="qchar.html#row" tppabs="http://pyqt4doc.appspot.com/qchar.html#row">row</a>（ ） （给出了统一行） ，<a href="qchar.html#cell" tppabs="http://pyqt4doc.appspot.com/qchar.html#cell">cell</a>（ ） （给出了Unicode的细胞） ，<a href="qchar.html#digitValue" tppabs="http://pyqt4doc.appspot.com/qchar.html#digitValue">digitValue</a>（ ） （给出任何的众多数字字符的整数值） ，以及一系列的构造函数。</p>
+<p>QChar提供了构造函数和类型转换运算符，可以很容易转换，并从传统的8位<tt>char</tt>秒。如果你定义<tt>QT_NO_CAST_FROM_ASCII</tt>和<tt>QT_NO_CAST_TO_ASCII</tt>，如在解释<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>文档，你将需要显式调用<a href="qchar.html#fromAscii" tppabs="http://pyqt4doc.appspot.com/qchar.html#fromAscii">fromAscii</a>（）或<a href="qchar.html#fromLatin1" tppabs="http://pyqt4doc.appspot.com/qchar.html#fromLatin1">fromLatin1</a>（ ） ，或使用<a href="qlatin1char.html" tppabs="http://pyqt4doc.appspot.com/qlatin1char.html">QLatin1Char</a>，从8位构建QChar<tt>char</tt>，你将需要调用<a href="qchar.html#toAscii" tppabs="http://pyqt4doc.appspot.com/qchar.html#toAscii">toAscii</a>（）或<a href="qchar.html#toLatin1" tppabs="http://pyqt4doc.appspot.com/qchar.html#toLatin1">toLatin1</a>（ ）来得到8位的值返回。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="Category-enum"></a>QChar.Category</h3>
+<p>此枚举映射的Unicode字符类别。</p>
+<p>下面的字符是规范性的统一：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Mark_NonSpacing</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">Unicode类名的Mn</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Mark_SpacingCombining</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">Unicode类名MC</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Mark_Enclosing</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">Unicode类的名字我</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Number_DecimalDigit</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">Unicode类名的Nd</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Number_Letter</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">Unicode类名标准升</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Number_Other</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">Unicode类名无</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Separator_Space</tt></td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">Unicode类Zs的名字</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Separator_Line</tt></td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">Unicode类名ZL</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Separator_Paragraph</tt></td>
+<td class="topAlign"><tt>9</tt></td>
+<td class="topAlign">Unicode类名Zp中</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Other_Control</tt></td>
+<td class="topAlign"><tt>10</tt></td>
+<td class="topAlign">Unicode类名副本</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Other_Format</tt></td>
+<td class="topAlign"><tt>11</tt></td>
+<td class="topAlign">Unicode类名比照</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Other_Surrogate</tt></td>
+<td class="topAlign"><tt>12</tt></td>
+<td class="topAlign">Unicode类名铯</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Other_PrivateUse</tt></td>
+<td class="topAlign"><tt>13</tt></td>
+<td class="topAlign">Unicode类公司名称</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Other_NotAssigned</tt></td>
+<td class="topAlign"><tt>14</tt></td>
+<td class="topAlign">Unicode类名称CN</td>
+</tr>
+</table>
+<p>以下类别的信息以Unicode ：</p>
+<table class="valuelist">
+<tr class="even" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Letter_Uppercase</tt></td>
+<td class="topAlign"><tt>15</tt></td>
+<td class="topAlign">Unicode类名陆</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Letter_Lowercase</tt></td>
+<td class="topAlign"><tt>16</tt></td>
+<td class="topAlign">Unicode类名LL</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Letter_Titlecase</tt></td>
+<td class="topAlign"><tt>17</tt></td>
+<td class="topAlign">Unicode类名中尉</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Letter_Modifier</tt></td>
+<td class="topAlign"><tt>18</tt></td>
+<td class="topAlign">Unicode类名流明</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Letter_Other</tt></td>
+<td class="topAlign"><tt>19</tt></td>
+<td class="topAlign">Unicode类名罗</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Punctuation_Connector</tt></td>
+<td class="topAlign"><tt>20</tt></td>
+<td class="topAlign">Unicode类名称PC</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Punctuation_Dash</tt></td>
+<td class="topAlign"><tt>21</tt></td>
+<td class="topAlign">Unicode类名的Pd</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Punctuation_Open</tt></td>
+<td class="topAlign"><tt>22</tt></td>
+<td class="topAlign">Unicode类名诗</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Punctuation_Close</tt></td>
+<td class="topAlign"><tt>23</tt></td>
+<td class="topAlign">Unicode类名PE</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Punctuation_InitialQuote</tt></td>
+<td class="topAlign"><tt>24</tt></td>
+<td class="topAlign">Unicode类名皮</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Punctuation_FinalQuote</tt></td>
+<td class="topAlign"><tt>25</tt></td>
+<td class="topAlign">Unicode类名PF</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Punctuation_Other</tt></td>
+<td class="topAlign"><tt>26</tt></td>
+<td class="topAlign">Unicode类名宝</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Symbol_Math</tt></td>
+<td class="topAlign"><tt>27</tt></td>
+<td class="topAlign">Unicode类名称SM</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Symbol_Currency</tt></td>
+<td class="topAlign"><tt>28</tt></td>
+<td class="topAlign">Unicode类名钪</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Symbol_Modifier</tt></td>
+<td class="topAlign"><tt>29</tt></td>
+<td class="topAlign">Unicode类名Sk的</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Symbol_Other</tt></td>
+<td class="topAlign"><tt>30</tt></td>
+<td class="topAlign">Unicode的类名，这样</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.NoCategory</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">Qt可以找不到一个合适的类别的字符。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qchar.html#category" tppabs="http://pyqt4doc.appspot.com/qchar.html#category">category</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="CombiningClass-enum"></a>QChar.CombiningClass</h3>
+<h3 class="fn">
+<a name="Decomposition-enum"></a>QChar.Decomposition</h3>
+<p>这个枚举类型定义了Unicode的分解特性。请参阅<a href="http://www.unicode.org/">Unicode Standard</a>对值的说明。</p>
+<table class="valuelist">
+<tr>
+<th class="tblConst">Constant</th>
+<th class="tblVal">Value</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.NoDecomposition</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Canonical</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Circle</tt></td>
+<td class="topAlign"><tt>8</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Compat</tt></td>
+<td class="topAlign"><tt>16</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Final</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Font</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Fraction</tt></td>
+<td class="topAlign"><tt>17</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Initial</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Isolated</tt></td>
+<td class="topAlign"><tt>7</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Medial</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Narrow</tt></td>
+<td class="topAlign"><tt>13</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.NoBreak</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Small</tt></td>
+<td class="topAlign"><tt>14</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Square</tt></td>
+<td class="topAlign"><tt>15</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Sub</tt></td>
+<td class="topAlign"><tt>10</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Super</tt></td>
+<td class="topAlign"><tt>9</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Vertical</tt></td>
+<td class="topAlign"><tt>11</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Wide</tt></td>
+<td class="topAlign"><tt>12</tt></td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qchar.html#decomposition" tppabs="http://pyqt4doc.appspot.com/qchar.html#decomposition">decomposition</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="Direction-enum"></a>QChar.Direction</h3>
+<p>这个枚举类型定义了统一的方向属性。请参阅<a href="http://www.unicode.org/">Unicode Standard</a>对值的说明。</p>
+<p>为了符合C / C + +的命名约定“dir”是预先考虑到Unicode标准中使用的代码。</p>
+<table class="valuelist">
+<tr>
+<th class="tblConst">Constant</th>
+<th class="tblVal">Value</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.DirAL</tt></td>
+<td class="topAlign"><tt>13</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.DirAN</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.DirB</tt></td>
+<td class="topAlign"><tt>7</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.DirBN</tt></td>
+<td class="topAlign"><tt>18</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.DirCS</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.DirEN</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.DirES</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.DirET</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.DirL</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.DirLRE</tt></td>
+<td class="topAlign"><tt>11</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.DirLRO</tt></td>
+<td class="topAlign"><tt>12</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.DirNSM</tt></td>
+<td class="topAlign"><tt>17</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.DirON</tt></td>
+<td class="topAlign"><tt>10</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.DirPDF</tt></td>
+<td class="topAlign"><tt>16</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.DirR</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.DirRLE</tt></td>
+<td class="topAlign"><tt>14</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.DirRLO</tt></td>
+<td class="topAlign"><tt>15</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.DirS</tt></td>
+<td class="topAlign"><tt>8</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.DirWS</tt></td>
+<td class="topAlign"><tt>9</tt></td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qchar.html#direction" tppabs="http://pyqt4doc.appspot.com/qchar.html#direction">direction</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="Joining-enum"></a>QChar.Joining</h3>
+<p>这个枚举类型定义的Unicode加入属性。请参阅<a href="http://www.unicode.org/">Unicode Standard</a>对值的说明。</p>
+<table class="valuelist">
+<tr>
+<th class="tblConst">Constant</th>
+<th class="tblVal">Value</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Center</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Dual</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.OtherJoining</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Right</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qchar.html#joining" tppabs="http://pyqt4doc.appspot.com/qchar.html#joining">joining</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="SpecialCharacter-enum"></a>QChar.SpecialCharacter</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Null</tt></td>
+<td class="topAlign"><tt>0x0000</tt></td>
+<td class="topAlign">A <a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>与此值<a href="qchar.html#isNull" tppabs="http://pyqt4doc.appspot.com/qchar.html#isNull">isNull</a>（ ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Nbsp</tt></td>
+<td class="topAlign"><tt>0x00a0</tt></td>
+<td class="topAlign">不换行空格。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.ReplacementCharacter</tt></td>
+<td class="topAlign"><tt>0xfffd</tt></td>
+<td class="topAlign">所示的字符时，字体没有字形一定的编码点。一个特殊的问号字符被经常使用。编解码器使用此代码点，当输入的数据不能以Unicode来表示。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QChar.ObjectReplacementCharacter</tt>
+</td>
+<td class="topAlign"><tt>0xfffc</tt></td>
+<td class="topAlign">用于表示一个对象，例如图像时这样的对象不能被提交。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.ByteOrderMark</tt></td>
+<td class="topAlign"><tt>0xfeff</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.ByteOrderSwapped</tt></td>
+<td class="topAlign"><tt>0xfffe</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.ParagraphSeparator</tt></td>
+<td class="topAlign"><tt>0x2029</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.LineSeparator</tt></td>
+<td class="topAlign"><tt>0x2028</tt></td>
+<td class="topAlign"> </td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="UnicodeVersion-enum"></a>QChar.UnicodeVersion</h3>
+<p>指定哪些版本<a href="http://www.unicode.org/">Unicode standard</a>引入了一定的角色。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Unicode_1_1</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">1.1版</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Unicode_2_0</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">2.0版</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Unicode_2_1_2</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">版本2.1.2</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Unicode_3_0</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">3.0版</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Unicode_3_1</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">3.1版</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Unicode_3_2</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">3.2版</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Unicode_4_0</tt></td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">4.0版</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Unicode_4_1</tt></td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">4.1版</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Unicode_5_0</tt></td>
+<td class="topAlign"><tt>9</tt></td>
+<td class="topAlign">5.0版</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QChar.Unicode_Unassigned</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该值不会分配给任何字符的Unicode 5.0版。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qchar.html#unicodeVersion" tppabs="http://pyqt4doc.appspot.com/qchar.html#unicodeVersion">unicodeVersion</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QChar"></a>QChar.__init__ (<i>self</i>)</h3>
+<p>构造一个空<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>（ '\ 0' ） 。</p>
+<p><b>See also</b> <a href="qchar.html#isNull" tppabs="http://pyqt4doc.appspot.com/qchar.html#isNull">isNull</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QChar-2"></a>QChar.__init__ (<i>self</i>, str <i>c</i>)</h3>
+<p>构造一个<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>对应ASCII/Latin-1字符<i>ch</i>。</p>
+
+
+<h3 class="fn">
+<a name="QChar-3"></a>QChar.__init__ (<i>self</i>, <a href="qlatin1char.html" tppabs="http://pyqt4doc.appspot.com/qlatin1char.html">QLatin1Char</a> <i>ch</i>)</h3>
+<p>构造一个<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>对应ASCII/Latin-1字符<i>ch</i>。</p>
+
+
+<h3 class="fn">
+<a name="QChar-4"></a>QChar.__init__ (<i>self</i>, str <i>c</i>, str <i>r</i>)</h3>
+<p>构造一个<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>对应ASCII/Latin-1字符<i>ch</i>。</p>
+
+
+<h3 class="fn">
+<a name="QChar-5"></a>QChar.__init__ (<i>self</i>, int <i>rc</i>)</h3>
+<p>构造一个<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>对于Unicode细胞<i>cell</i>行<i>row</i>。</p>
+<p><b>See also</b> <a href="qchar.html#cell" tppabs="http://pyqt4doc.appspot.com/qchar.html#cell">cell</a>（）和<a href="qchar.html#row" tppabs="http://pyqt4doc.appspot.com/qchar.html#row">row</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QChar-6"></a>QChar.__init__ (<i>self</i>, <a href="qchar.html#SpecialCharacter-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#SpecialCharacter-enum">SpecialCharacter</a> <i>s</i>)</h3>
+<p>构造一个<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>对于字符与Unicode代码点<i>code</i>。</p>
+
+
+<h3 class="fn">
+<a name="QChar-7"></a>QChar.__init__ (<i>self</i>, <a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>)</h3>
+<p>构造一个<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>对于字符与Unicode代码点<i>code</i>。</p>
+
+
+<h3 class="fn">
+<a name="category"></a><a href="qchar.html#Category-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#Category-enum">Category</a> QChar.category (<i>self</i>)</h3>
+<p>返回字符的类别。</p>
+
+
+<h3 class="fn">
+<a name="category-2"></a><a href="qchar.html#Category-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#Category-enum">Category</a> QChar.category (int <i>ucs4</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回由指定的UCS - 4编码的字符的类别<i>ucs4</i>。</p>
+<p>此功能被引入Qt的4.3 。</p>
+
+
+<h3 class="fn">
+<a name="cell"></a>str QChar.cell (<i>self</i>)</h3>
+<p>返回Unicode字符的单元格（最显着字节） 。</p>
+<p><b>See also</b> <a href="qchar.html#row" tppabs="http://pyqt4doc.appspot.com/qchar.html#row">row</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="combiningClass"></a>str QChar.combiningClass (<i>self</i>)</h3>
+<p>返回结合类的字符作为Unicode标准定义。这主要是有用的定位提示为连接到一个基本字符标记。</p>
+<p>Qt的文本渲染引擎使用这些信息来正确定位围绕一个基本字符为非空格标记。</p>
+
+
+<h3 class="fn">
+<a name="combiningClass-2"></a>str QChar.combiningClass (int <i>ucs4</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回组合类由指定的UCS - 4编码的字符<i>ucs4</i>，如Unicode标准定义。</p>
+
+
+<h3 class="fn">
+<a name="currentUnicodeVersion"></a><a href="qchar.html#UnicodeVersion-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#UnicodeVersion-enum">UnicodeVersion</a> QChar.currentUnicodeVersion ()</h3>
+<p>返回最近支持Unicode版本。</p>
+<p>此功能被引入Qt的4.8 。</p>
+
+
+<h3 class="fn">
+<a name="decomposition"></a>QString QChar.decomposition (<i>self</i>)</h3>
+<p>分解一个字符到它的部分。返回如果没有分解存在一个空字符串。</p>
+
+
+<h3 class="fn">
+<a name="decomposition-2"></a>QString QChar.decomposition (int <i>ucs4</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>分解所指定的UCS - 4编码的字符<i>ucs4</i>成其组成部分。返回如果没有分解存在一个空字符串。</p>
+
+
+<h3 class="fn">
+<a name="decompositionTag"></a><a href="qchar.html#Decomposition-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#Decomposition-enum">Decomposition</a> QChar.decompositionTag (<i>self</i>)</h3>
+<p>返回定义的字符的组合物中的标记。回报<a href="qchar.html#Decomposition-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#Decomposition-enum">QChar.Single</a>如果没有分解的存在。</p>
+
+
+<h3 class="fn">
+<a name="decompositionTag-2"></a><a href="qchar.html#Decomposition-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#Decomposition-enum">Decomposition</a> QChar.decompositionTag (int <i>ucs4</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回定义所指定的UCS-4编码的字符的组合物中的标记<i>ucs4</i>。回报<a href="qchar.html#Decomposition-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#Decomposition-enum">QChar.Single</a>如果没有分解的存在。</p>
+
+
+<h3 class="fn">
+<a name="digitValue"></a>int QChar.digitValue (<i>self</i>)</h3>
+<p>返回数字的数值，或者-1如果字符是不是数字。</p>
+
+
+<h3 class="fn">
+<a name="digitValue-2"></a>int QChar.digitValue (int <i>ucs4</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回数字的数字值，由UCS-2编码的字符指定<i>ucs2</i>，或-1，如果字符不是一个数字。</p>
+
+
+<h3 class="fn">
+<a name="direction"></a><a href="qchar.html#Direction-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#Direction-enum">Direction</a> QChar.direction (<i>self</i>)</h3>
+<p>返回字符的方向。</p>
+
+
+<h3 class="fn">
+<a name="direction-2"></a><a href="qchar.html#Direction-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#Direction-enum">Direction</a> QChar.direction (int <i>ucs4</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回由指定的UCS - 4编码的字符的方向<i>ucs4</i>。</p>
+
+
+<h3 class="fn">
+<a name="fromAscii"></a>QChar QChar.fromAscii (str <i>c</i>)</h3>
+<p>ASCII字符转换<i>c</i>它的等效<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>。这主要是针对非国际化的软件非常有用。</p>
+<p>一个替代方案是使用<a href="qlatin1char.html" tppabs="http://pyqt4doc.appspot.com/qlatin1char.html">QLatin1Char</a>。</p>
+<p><b>See also</b> <a href="qchar.html#fromLatin1" tppabs="http://pyqt4doc.appspot.com/qchar.html#fromLatin1">fromLatin1</a>（ ）<a href="qchar.html#unicode" tppabs="http://pyqt4doc.appspot.com/qchar.html#unicode">unicode</a>（）和<a href="qtextcodec.html#codecForCStrings" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForCStrings">QTextCodec.codecForCStrings</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fromLatin1"></a>QChar QChar.fromLatin1 (str <i>c</i>)</h3>
+<p>拉丁- 1字符转换<i>c</i>它的等效<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>。这主要是针对非国际化的软件非常有用。</p>
+<p><b>See also</b> <a href="qchar.html#fromAscii" tppabs="http://pyqt4doc.appspot.com/qchar.html#fromAscii">fromAscii</a>（ ）<a href="qchar.html#unicode" tppabs="http://pyqt4doc.appspot.com/qchar.html#unicode">unicode</a>（）和<a href="qtextcodec.html#codecForCStrings" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForCStrings">QTextCodec.codecForCStrings</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasMirrored"></a>bool QChar.hasMirrored (<i>self</i>)</h3>
+<p>返回True如果如果文本方向是相反的性格应该得到扭转，否则返回False 。</p>
+<p>同（章<a href="qchar.html#mirroredChar" tppabs="http://pyqt4doc.appspot.com/qchar.html#mirroredChar">mirroredChar</a>（ ！） = CH） 。</p>
+<p><b>See also</b> <a href="qchar.html#mirroredChar" tppabs="http://pyqt4doc.appspot.com/qchar.html#mirroredChar">mirroredChar</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="highSurrogate"></a>int QChar.highSurrogate (int <i>ucs4</i>)</h3>
+<p>返回一个UCS4代码点的高代理项值。返回的结果是不确定的，如果<i>ucs4</i>比0x10000处小。</p>
+
+
+<h3 class="fn">
+<a name="isDigit"></a>bool QChar.isDigit (<i>self</i>)</h3>
+<p>如果字符是十进制数字，则返回True （<a href="qchar.html#Category-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#Category-enum">Number_DecimalDigit</a>），否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isHighSurrogate"></a>bool QChar.isHighSurrogate (<i>self</i>)</h3>
+<p>返回True如果<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>是UTF16代理（也就是说，如果它的代码点是0xd800和0xdbff （含）之间）的高位部分。</p>
+
+
+<h3 class="fn">
+<a name="isHighSurrogate-2"></a>bool QChar.isHighSurrogate (int <i>ucs4</i>)</h3>
+<p>返回True如果指定的UCS - 4编码的字符<i>ucs4</i>是UTF16代理（也就是说，如果它的代码点是0xd800和0xdbff （含）之间）的高位部分。</p>
+<p>此功能被引入Qt的4.7 。</p>
+
+
+<h3 class="fn">
+<a name="isLetter"></a>bool QChar.isLetter (<i>self</i>)</h3>
+<p>返回True如果该字符是字母（ Letter_ *类），否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isLetterOrNumber"></a>bool QChar.isLetterOrNumber (<i>self</i>)</h3>
+<p>返回True如果该字符是字母或数字（ Letter_ *或<a href="index.htm#number" tppabs="http://pyqt4doc.appspot.com/stylesheet-reference.html#number">Number_</a>*类），否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isLower"></a>bool QChar.isLower (<i>self</i>)</h3>
+<p>返回True如果该字符是小写字母，即<a href="qchar.html#category" tppabs="http://pyqt4doc.appspot.com/qchar.html#category">category</a>（）是<a href="qchar.html#Category-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#Category-enum">Letter_Lowercase</a>。</p>
+<p><b>See also</b> <a href="qchar.html#isUpper" tppabs="http://pyqt4doc.appspot.com/qchar.html#isUpper">isUpper</a>（ ）<a href="qchar.html#toLower" tppabs="http://pyqt4doc.appspot.com/qchar.html#toLower">toLower</a>（）和<a href="qchar.html#toUpper" tppabs="http://pyqt4doc.appspot.com/qchar.html#toUpper">toUpper</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isLowSurrogate"></a>bool QChar.isLowSurrogate (<i>self</i>)</h3>
+<p>返回True如果<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>是UTF16代理（也就是说，如果它的代码点是介于0xDC00和0xdfff （含）之间）的低部。</p>
+
+
+<h3 class="fn">
+<a name="isLowSurrogate-2"></a>bool QChar.isLowSurrogate (int <i>ucs4</i>)</h3>
+<p>返回True如果指定的UCS - 4编码的字符<i>ucs4</i>是UTF16代理（也就是说，如果它的代码点是介于0xDC00和0xdfff （含）之间）的低部。</p>
+<p>此功能被引入Qt的4.7 。</p>
+
+
+<h3 class="fn">
+<a name="isMark"></a>bool QChar.isMark (<i>self</i>)</h3>
+<p>返回True如果字符是标记（ Mark_ *类），否则返回False 。</p>
+<p>See <a href="qchar.html#Category-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#Category-enum">QChar.Category</a>了解有关标记的更多信息。</p>
+
+
+<h3 class="fn">
+<a name="isNull"></a>bool QChar.isNull (<i>self</i>)</h3>
+<p>返回True如果该字符是Unicode字符为0x0000 （ '\ 0' ），否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isNumber"></a>bool QChar.isNumber (<i>self</i>)</h3>
+<p>返回True如果该字符是数字（<a href="index.htm#number" tppabs="http://pyqt4doc.appspot.com/stylesheet-reference.html#number">Number_</a>*类别，而不只是0-9 ），否则返回False 。</p>
+<p><b>See also</b> <a href="qchar.html#isDigit" tppabs="http://pyqt4doc.appspot.com/qchar.html#isDigit">isDigit</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isPrint"></a>bool QChar.isPrint (<i>self</i>)</h3>
+<p>返回True如果字符是可打印字符，否则返回False 。这是不是类抄送或CN任意字符。</p>
+<p>请注意，这没有给出的字符是否是在一个特定的字体。</p>
+
+
+<h3 class="fn">
+<a name="isPunct"></a>bool QChar.isPunct (<i>self</i>)</h3>
+<p>返回True如果字符是一个标点符号（ Punctuation_ *类），否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isSpace"></a>bool QChar.isSpace (<i>self</i>)</h3>
+<p>返回True如果该字符是一个分隔符（ Separator_ *类），否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isSymbol"></a>bool QChar.isSymbol (<i>self</i>)</h3>
+<p>返回True如果该字符是符号（ Symbol_ *类），否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isTitleCase"></a>bool QChar.isTitleCase (<i>self</i>)</h3>
+<p>返回True如果该字符是首字母大写字母，即<a href="qchar.html#category" tppabs="http://pyqt4doc.appspot.com/qchar.html#category">category</a>（）是<a href="qchar.html#Category-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#Category-enum">Letter_Titlecase</a>。</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qchar.html#isLower" tppabs="http://pyqt4doc.appspot.com/qchar.html#isLower">isLower</a>（ ）<a href="qchar.html#toUpper" tppabs="http://pyqt4doc.appspot.com/qchar.html#toUpper">toUpper</a>（ ）<a href="qchar.html#toLower" tppabs="http://pyqt4doc.appspot.com/qchar.html#toLower">toLower</a>（）和<a href="qchar.html#toTitleCase" tppabs="http://pyqt4doc.appspot.com/qchar.html#toTitleCase">toTitleCase</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isUpper"></a>bool QChar.isUpper (<i>self</i>)</h3>
+<p>返回True如果该字符是一个大写字母，即<a href="qchar.html#category" tppabs="http://pyqt4doc.appspot.com/qchar.html#category">category</a>（）是<a href="qchar.html#Category-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#Category-enum">Letter_Uppercase</a>。</p>
+<p><b>See also</b> <a href="qchar.html#isLower" tppabs="http://pyqt4doc.appspot.com/qchar.html#isLower">isLower</a>（ ）<a href="qchar.html#toUpper" tppabs="http://pyqt4doc.appspot.com/qchar.html#toUpper">toUpper</a>（）和<a href="qchar.html#toLower" tppabs="http://pyqt4doc.appspot.com/qchar.html#toLower">toLower</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="joining"></a><a href="qchar.html#Joining-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#Joining-enum">Joining</a> QChar.joining (<i>self</i>)</h3>
+<p>返回有关字符（需要一定的语言，如阿拉伯语）的连接属性的信息。</p>
+
+
+<h3 class="fn">
+<a name="joining-2"></a><a href="qchar.html#Joining-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#Joining-enum">Joining</a> QChar.joining (int <i>ucs4</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回有关指定的UCS - 4编码的字符的连接属性的信息<i>ucs4</i>（需要特定的语言，如阿拉伯语） 。</p>
+
+
+<h3 class="fn">
+<a name="lowSurrogate"></a>int QChar.lowSurrogate (int <i>ucs4</i>)</h3>
+<p>返回一个UCS4代码点的低代理项值。返回的结果是不确定的，如果<i>ucs4</i>比0x10000处小。</p>
+
+
+<h3 class="fn">
+<a name="mirroredChar"></a>QChar QChar.mirroredChar (<i>self</i>)</h3>
+<p>返回镜像的字符，如果这个字符是一个镜像字符，否则返回字符本身。</p>
+<p><b>See also</b> <a href="qchar.html#hasMirrored" tppabs="http://pyqt4doc.appspot.com/qchar.html#hasMirrored">hasMirrored</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mirroredChar-2"></a>int QChar.mirroredChar (int <i>ucs4</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回镜像的字符，如果所指定的UCS - 4编码的字符<i>ucs4</i>是一个镜像字符，否则返回字符本身。</p>
+<p><b>See also</b> <a href="qchar.html#hasMirrored" tppabs="http://pyqt4doc.appspot.com/qchar.html#hasMirrored">hasMirrored</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="requiresSurrogates"></a>bool QChar.requiresSurrogates (int <i>ucs4</i>)</h3>
+<p>返回True如果指定的UCS - 4编码的字符<i>ucs4</i>可以拆分成UTF16替代的高和低的部分（也就是说，如果它的代码点大于或等于0x10000处） 。</p>
+<p>此功能被引入Qt的4.7 。</p>
+
+
+<h3 class="fn">
+<a name="row"></a>str QChar.row (<i>self</i>)</h3>
+<p>返回Unicode字符的行（最显着字节）。</p>
+<p><b>See also</b> <a href="qchar.html#cell" tppabs="http://pyqt4doc.appspot.com/qchar.html#cell">cell</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCell"></a>QChar.setCell (<i>self</i>, str <i>acell</i>)</h3>
+<h3 class="fn">
+<a name="setRow"></a>QChar.setRow (<i>self</i>, str <i>arow</i>)</h3>
+<h3 class="fn">
+<a name="surrogateToUcs4"></a>int QChar.surrogateToUcs4 (int <i>high</i>, int <i>low</i>)</h3>
+<p>一个UTF16代理对给定的转换<i>high</i>和<i>low</i>值其UCS- 4码点。</p>
+
+
+<h3 class="fn">
+<a name="surrogateToUcs4-2"></a>int QChar.surrogateToUcs4 (QChar <i>high</i>, QChar <i>low</i>)</h3>
+<p>一个UTF16代理对（转换<i>high</i>，<i>low</i>）其UCS4代码点。</p>
+
+
+<h3 class="fn">
+<a name="toAscii"></a>str QChar.toAscii (<i>self</i>)</h3>
+<p>返回的字符值<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>使用用于读取C字符串当前的编解码器，或者0，如果使用此编解码器的字符是不能表示获得的。默认的编解码处理的Latin-1编码的文本，但是这是可以改变的，以帮助开发人员使用其它的编码编写源代码。</p>
+<p>此功能的主要目的是保存在C字符串中使用ASCII字符。这主要是针对非国际化的软件开发者很有用。</p>
+<p><b>See also</b> <a href="qchar.html#toLatin1" tppabs="http://pyqt4doc.appspot.com/qchar.html#toLatin1">toLatin1</a>（ ）<a href="qchar.html#unicode" tppabs="http://pyqt4doc.appspot.com/qchar.html#unicode">unicode</a>（）和<a href="qtextcodec.html#codecForCStrings" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForCStrings">QTextCodec.codecForCStrings</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toCaseFolded"></a>QChar QChar.toCaseFolded (<i>self</i>)</h3>
+<p>返回的情况下折叠的字符等效的。对于大多数的Unicode字符，这是相同toLowerCase （） 。</p>
+
+
+<h3 class="fn">
+<a name="toCaseFolded-2"></a>int QChar.toCaseFolded (int <i>ucs4</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回的情况下通过折叠指定的UCS - 4编码的字符等效<i>ucs4</i>。对于大多数的Unicode字符，这是相同toLowerCase （） 。</p>
+
+
+<h3 class="fn">
+<a name="toLatin1"></a>str QChar.toLatin1 (<i>self</i>)</h3>
+<p>返回的Latin-1字符等同于<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>或0。这主要是针对非国际化的软件非常有用。</p>
+<p><b>See also</b> <a href="qchar.html#toAscii" tppabs="http://pyqt4doc.appspot.com/qchar.html#toAscii">toAscii</a>（ ）<a href="qchar.html#unicode" tppabs="http://pyqt4doc.appspot.com/qchar.html#unicode">unicode</a>（）和<a href="qtextcodec.html#codecForCStrings" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForCStrings">QTextCodec.codecForCStrings</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toLower"></a>QChar QChar.toLower (<i>self</i>)</h3>
+<p>返回小写等效如果字符是大写或首字母大写，否则返回字符本身。</p>
+
+
+<h3 class="fn">
+<a name="toLower-2"></a>int QChar.toLower (int <i>ucs4</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回由指定的UCS - 4编码的字符的小写等效<i>ucs4</i>如果字符是大写或首字母大写，否则返回字符本身。</p>
+
+
+<h3 class="fn">
+<a name="toTitleCase"></a>QChar QChar.toTitleCase (<i>self</i>)</h3>
+<p>返回标题等同的情况下如果字符是小写或大写，否则返回字符本身。</p>
+
+
+<h3 class="fn">
+<a name="toTitleCase-2"></a>int QChar.toTitleCase (int <i>ucs4</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回标题等同的情况下通过指定的UCS - 4编码的字符<i>ucs4</i>如果字符是小写或大写，否则返回字符本身。</p>
+
+
+<h3 class="fn">
+<a name="toUpper"></a>QChar QChar.toUpper (<i>self</i>)</h3>
+<p>返回大写等价的，如果该字符是小写或首字母大写，否则返回字符本身。</p>
+
+
+<h3 class="fn">
+<a name="toUpper-2"></a>int QChar.toUpper (int <i>ucs4</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回由指定的UCS - 4编码的字符的大写形式<i>ucs4</i>如果字符是小写或首字母大写，否则返回字符本身。</p>
+
+
+<h3 class="fn">
+<a name="unicode"></a>int QChar.unicode (<i>self</i>)</h3>
+<p>返回一个引用的数字Unicode值<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>。</p>
+
+
+<h3 class="fn">
+<a name="unicodeVersion"></a><a href="qchar.html#UnicodeVersion-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#UnicodeVersion-enum">UnicodeVersion</a> QChar.unicodeVersion (<i>self</i>)</h3>
+<p>返回介绍这个人物的Unicode版本。</p>
+
+
+<h3 class="fn">
+<a name="unicodeVersion-2"></a><a href="qchar.html#UnicodeVersion-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#UnicodeVersion-enum">UnicodeVersion</a> QChar.unicodeVersion (int <i>ucs4</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回介绍了其UCS- 4编码的形式指定的字符的Unicode版本<i>ucs4</i>。</p>
+
+
+<h3 class="fn">
+<a name="__add__"></a>QString QChar.__add__ (<i>self</i>, QString <i>s2</i>)</h3>
+<h3 class="fn">
+<a name="__eq__"></a>bool QChar.__eq__ (<i>self</i>, QChar <i>c2</i>)</h3>
+<h3 class="fn">
+<a name="__ge__"></a>bool QChar.__ge__ (<i>self</i>, QChar <i>c2</i>)</h3>
+<h3 class="fn">
+<a name="__gt__"></a>bool QChar.__gt__ (<i>self</i>, QChar <i>c2</i>)</h3>
+<h3 class="fn">
+<a name="__hash__"></a>int QChar.__hash__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="__le__"></a>bool QChar.__le__ (<i>self</i>, QChar <i>c2</i>)</h3>
+<h3 class="fn">
+<a name="__lt__"></a>bool QChar.__lt__ (<i>self</i>, QChar <i>c2</i>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QChar.__ne__ (<i>self</i>, QChar <i>c2</i>)</h3>
+<h3 class="fn">
+<a name="__repr__"></a>str QChar.__repr__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="__str__"></a>str QChar.__str__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="__unicode__"></a>unicode QChar.__unicode__ (<i>self</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

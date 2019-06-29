@@ -1,0 +1,205 @@
+﻿<html>
+<head>
+<title>QDBusServiceWatcher Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDBusServiceWatcher Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdbus.html">QtDBus</a> module]</sup></sup>
+</h1>
+<p>该QDBusServiceWatcher类允许用户观看的巴士服务的变化。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher-watchmode.html">WatchMode</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qdbusservicewatcher.html#WatchModeFlag-enum" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#WatchModeFlag-enum">WatchModeFlag</a></b> { WatchForRegistration, WatchForUnregistration, WatchForOwnerChange }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusservicewatcher.html#QDBusServiceWatcher" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#QDBusServiceWatcher">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusservicewatcher.html#QDBusServiceWatcher-2" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#QDBusServiceWatcher-2">__init__</a></b> (<i>self</i>, QString <i>service</i>, QDBusConnection <i>connection</i>, WatchMode <i>watchMode</i> = QDBusServiceWatcher.WatchForOwnerChange, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusservicewatcher.html#addWatchedService" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#addWatchedService">addWatchedService</a></b> (<i>self</i>, QString <i>newService</i>)</li>
+<li>
+<div class="fn"></div>QDBusConnection <b><a href="qdbusservicewatcher.html#connection" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#connection">connection</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdbusservicewatcher.html#removeWatchedService" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#removeWatchedService">removeWatchedService</a></b> (<i>self</i>, QString <i>service</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusservicewatcher.html#setConnection" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#setConnection">setConnection</a></b> (<i>self</i>, QDBusConnection <i>connection</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusservicewatcher.html#setWatchedServices" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#setWatchedServices">setWatchedServices</a></b> (<i>self</i>, QStringList <i>services</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusservicewatcher.html#setWatchMode" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#setWatchMode">setWatchMode</a></b> (<i>self</i>, WatchMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qdbusservicewatcher.html#watchedServices" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#watchedServices">watchedServices</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>WatchMode <b><a href="qdbusservicewatcher.html#watchMode" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#watchMode">watchMode</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qdbusservicewatcher.html#serviceOwnerChanged" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#serviceOwnerChanged">serviceOwnerChanged</a></b> (const QString&amp;,const QString&amp;,const QString&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qdbusservicewatcher.html#serviceRegistered" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#serviceRegistered">serviceRegistered</a></b> (const QString&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qdbusservicewatcher.html#serviceUnregistered" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#serviceUnregistered">serviceUnregistered</a></b> (const QString&amp;)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDBusServiceWatcher类允许用户观看的巴士服务的变化。</p>
+<p>一个QDBusServiceWatcher对象可以用来通知用户有关服务名的总线上的所有权变更申请。它有三个手表模式：</p>
+<ul>
+<li>Watching for service registration only.</li>
+<li>Watching for service unregistration only.</li>
+<li>Watching for any kind of service ownership change (the default
+mode).</li>
+</ul>
+<p>除了被创建或删除，服务可能会改变所有人没有注销/寄存器操作发生的事情。所以，<a href="qdbusservicewatcher.html#serviceRegistered" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#serviceRegistered">serviceRegistered</a>（）和<a href="qdbusservicewatcher.html#serviceUnregistered" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#serviceUnregistered">serviceUnregistered</a>如果发生这种情况（）信号可能不被发射。</p>
+<p>这个类是比使用更高效的<a href="qdbusconnectioninterface.html#serviceOwnerChanged" tppabs="http://pyqt4doc.appspot.com/qdbusconnectioninterface.html#serviceOwnerChanged">QDBusConnectionInterface.serviceOwnerChanged</a>（ ）信号，因为它允许一个只接收为其类是感兴趣的信号</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="WatchModeFlag-enum"></a>QDBusServiceWatcher.WatchModeFlag</h3>
+<p><a href="qdbusservicewatcher.html" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html">QDBusServiceWatcher</a>支持三种不同的观看模式，这是由该标志配置：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDBusServiceWatcher.WatchForRegistration</tt>
+</td>
+<td class="topAlign"><tt>0x01</tt></td>
+<td class="topAlign">手表仅售服务注册，而忽略与其他服务的所有权变更的任何信号。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDBusServiceWatcher.WatchForUnregistration</tt>
+</td>
+<td class="topAlign"><tt>0x02</tt></td>
+<td class="topAlign">手表仅售服务注销，而忽略相关的其他服务所有权变更的任何信号。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDBusServiceWatcher.WatchForOwnerChange</tt>
+</td>
+<td class="topAlign"><tt>0x03</tt></td>
+<td class="topAlign">观看任何类型的服务所有权的变化。</td>
+</tr>
+</table>
+<p>该WatchMode类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cWatchModeFlag\u003e 。它存储WatchModeFlag值的或组合。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDBusServiceWatcher"></a>QDBusServiceWatcher.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>创建<a href="qdbusservicewatcher.html" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html">QDBusServiceWatcher</a>对象。需要注意的是，直到你设置一个连接<a href="qdbusservicewatcher.html#setConnection" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#setConnection">setConnection</a>（ ） ，这个对象将不会发出任何信号。</p>
+<p>该<i>parent</i>参数被传递到<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>设置该对象的父。</p>
+
+
+<h3 class="fn">
+<a name="QDBusServiceWatcher-2"></a>QDBusServiceWatcher.__init__ (<i>self</i>, QString <i>service</i>, <a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a> <i>connection</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher-watchmode.html">WatchMode</a> <i>watchMode</i> = QDBusServiceWatcher.WatchForOwnerChange, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>创建<a href="qdbusservicewatcher.html" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html">QDBusServiceWatcher</a>对象，并将其附加到<i>connection</i>连接。另外，此功能将立即启动窥伺<i>watchMode</i>更改服务<i>service</i>。</p>
+<p>该<i>parent</i>参数被传递到<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>设置该对象的父。</p>
+
+
+<h3 class="fn">
+<a name="addWatchedService"></a>QDBusServiceWatcher.addWatchedService (<i>self</i>, QString <i>newService</i>)</h3>
+<p>添加<i>newService</i>到服务，通过该对象被监视的列表。这个函数是比更有效<a href="qdbusservicewatcher.html#watchedServices-prop" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#watchedServices-prop">setWatchedServices</a>（ ），并应尽可能使用添加服务。</p>
+
+
+<h3 class="fn">
+<a name="connection"></a><a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a> QDBusServiceWatcher.connection (<i>self</i>)</h3>
+<p>返回<a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a>这个对象附加到。</p>
+<p><b>See also</b> <a href="qdbusservicewatcher.html#setConnection" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#setConnection">setConnection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="removeWatchedService"></a>bool QDBusServiceWatcher.removeWatchedService (<i>self</i>, QString <i>service</i>)</h3>
+<p>移除<i>service</i>从正在观看由该对象的服务的列表。需要注意的是D-Bus的通知是异步的，所以有可能还是待交付有关信号<i>service</i>。每当D-Bus的消息处理这些信号仍然会排放。</p>
+<p>如果被拆除的任何服务该函数返回True。</p>
+
+
+<h3 class="fn">
+<a name="setConnection"></a>QDBusServiceWatcher.setConnection (<i>self</i>, <a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a> <i>connection</i>)</h3>
+<p>设置D-Bus的连接，这个对象附加到会<i>connection</i>。看着所有服务将被转移到这方面。</p>
+<p>需要注意的是<a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a>对象引用计数：<a href="qdbusservicewatcher.html" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html">QDBusServiceWatcher</a>将保持一个参考此连接，而它的存在。连接不关闭，直到引用计数下降到零，所以这将确保任何通知而收到这<a href="qdbusservicewatcher.html" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html">QDBusServiceWatcher</a>对象存在。</p>
+<p><b>See also</b> <a href="qdbusservicewatcher.html#connection" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#connection">connection</a>（ ） 。</p>
+<h3 class="fn">
+<a name="setWatchedServices"></a>QDBusServiceWatcher.setWatchedServices (<i>self</i>, QStringList <i>services</i>)</h3>
+<h3 class="fn">
+<a name="setWatchMode"></a>QDBusServiceWatcher.setWatchMode (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher-watchmode.html">WatchMode</a> <i>mode</i>)</h3>
+<h3 class="fn">
+<a name="watchedServices"></a>QStringList QDBusServiceWatcher.watchedServices (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="watchMode"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher-watchmode.html">WatchMode</a> QDBusServiceWatcher.watchMode (<i>self</i>)</h3>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="serviceOwnerChanged"></a>void serviceOwnerChanged (const QString&amp;,const QString&amp;,const QString&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>每当这个对象检测到有关于该服务的所有权改变这个信号被发射<i>serviceName</i>服务。该<i>oldOwner</i>参数包含旧的所有者名称和<i>newOwner</i>是新的主人。两<i>oldOwner</i>和<i>newOwner</i>是唯一的连接名。</p>
+<p>注意，此信号也被发射时的<i>serviceName</i>服务注册或未注册。如果它被注册，<i>oldOwner</i>将包含一个空字符串，而如果是未注册的，<i>newOwner</i>将包含一个空字符串。</p>
+<p>如果你只需要找出如果该服务被注册或只登记，不被通知的所有权变更，请考虑使用这些操作的具体模式。如果您使用更具体的模式这个类是更有效的。</p>
+<p><b>See also</b> <a href="qdbusservicewatcher.html#serviceRegistered" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#serviceRegistered">serviceRegistered</a>（）和<a href="qdbusservicewatcher.html#serviceUnregistered" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#serviceUnregistered">serviceUnregistered</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="serviceRegistered"></a>void serviceRegistered (const QString&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>每当这个对象检测这个信号被发射，该服务<i>serviceName</i>在公共汽车上变得可用。</p>
+<p><b>See also</b> <a href="qdbusservicewatcher.html#serviceUnregistered" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#serviceUnregistered">serviceUnregistered</a>（）和<a href="qdbusservicewatcher.html#serviceOwnerChanged" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#serviceOwnerChanged">serviceOwnerChanged</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="serviceUnregistered"></a>void serviceUnregistered (const QString&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>每当这个对象检测这个信号被发射，该服务<i>serviceName</i>从总线被取消注册，并不再可用。</p>
+<p><b>See also</b> <a href="qdbusservicewatcher.html#serviceRegistered" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#serviceRegistered">serviceRegistered</a>（）和<a href="qdbusservicewatcher.html#serviceOwnerChanged" tppabs="http://pyqt4doc.appspot.com/qdbusservicewatcher.html#serviceOwnerChanged">serviceOwnerChanged</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

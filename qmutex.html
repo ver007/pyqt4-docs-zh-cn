@@ -1,0 +1,191 @@
+﻿<html>
+<head>
+<title>QMutex Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QMutex Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QMutex类提供线程之间的访问串行化。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qmutex.html#RecursionMode-enum" tppabs="http://pyqt4doc.appspot.com/qmutex.html#RecursionMode-enum">RecursionMode</a></b> { NonRecursive, Recursive }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qmutex.html#QMutex" tppabs="http://pyqt4doc.appspot.com/qmutex.html#QMutex">__init__</a></b> (<i>self</i>, RecursionMode <i>mode</i> = QMutex.NonRecursive)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmutex.html#lock" tppabs="http://pyqt4doc.appspot.com/qmutex.html#lock">lock</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qmutex.html#tryLock" tppabs="http://pyqt4doc.appspot.com/qmutex.html#tryLock">tryLock</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qmutex.html#tryLock-2" tppabs="http://pyqt4doc.appspot.com/qmutex.html#tryLock-2">tryLock</a></b> (<i>self</i>, int <i>timeout</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmutex.html#unlock" tppabs="http://pyqt4doc.appspot.com/qmutex.html#unlock">unlock</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QMutex类提供线程之间的访问串行化。</p>
+<p>一个QMutex的目的是保护的对象，数据结构或代码部分，以便只有一个线程可以在同一时间访问它（这类似于Java<tt>synchronized</tt>关键字）。它通常是最好使用一个互斥与<a href="qmutexlocker.html" tppabs="http://pyqt4doc.appspot.com/qmutexlocker.html">QMutexLocker</a>因为这可以很容易地确保锁定和解锁一贯执行。</p>
+<p>例如，假设有一个打印一条消息，两行用户的方法：</p>
+<pre class="cpp">
+ <span class="type">int</span> number <span class="operator">=</span> <span class="number">6</span>;
+
+ <span class="type">void</span> method1()
+ {
+     number <span class="operator">*</span><span class="operator">=</span> <span class="number">5</span>;
+     number <span class="operator">/</span><span class="operator">=</span> <span class="number">4</span>;
+ }
+
+ <span class="type">void</span> method2()
+ {
+     number <span class="operator">*</span><span class="operator">=</span> <span class="number">3</span>;
+     number <span class="operator">/</span><span class="operator">=</span> <span class="number">2</span>;
+ }
+</pre>
+<p>如果这两种方法称为连续，会发生以下情况：</p>
+<pre class="cpp">
+ <span class="comment">// method1()</span>
+ number <span class="operator">*</span><span class="operator">=</span> <span class="number">5</span>;        <span class="comment">// number is now 30</span>
+ number <span class="operator">/</span><span class="operator">=</span> <span class="number">4</span>;        <span class="comment">// number is now 7</span>
+
+ <span class="comment">// method2()</span>
+ number <span class="operator">*</span><span class="operator">=</span> <span class="number">3</span>;        <span class="comment">// number is now 21</span>
+ number <span class="operator">/</span><span class="operator">=</span> <span class="number">2</span>;        <span class="comment">// number is now 10</span>
+</pre>
+<p>如果这两种方法都从两个线程同时调用然后按下列顺序会导致：</p>
+<pre class="cpp">
+ <span class="comment">// Thread 1 calls method1()</span>
+ number <span class="operator">*</span><span class="operator">=</span> <span class="number">5</span>;        <span class="comment">// number is now 30</span>
+
+ <span class="comment">// Thread 2 calls method2().</span>
+ <span class="comment">//</span>
+ <span class="comment">// Most likely Thread 1 has been put to sleep by the operating</span>
+ <span class="comment">// system to allow Thread 2 to run.</span>
+ number <span class="operator">*</span><span class="operator">=</span> <span class="number">3</span>;        <span class="comment">// number is now 90</span>
+ number <span class="operator">/</span><span class="operator">=</span> <span class="number">2</span>;        <span class="comment">// number is now 45</span>
+
+ <span class="comment">// Thread 1 finishes executing.</span>
+ number <span class="operator">/</span><span class="operator">=</span> <span class="number">4</span>;        <span class="comment">// number is now 11, instead of 10</span>
+</pre>
+<p>如果我们添加了一个互斥体，我们应该得到我们想要的结果：</p>
+<pre class="cpp">
+ <span class="type">QMutex</span> mutex;
+ <span class="type">int</span> number <span class="operator">=</span> <span class="number">6</span>;
+
+ <span class="type">void</span> method1()
+ {
+     mutex<span class="operator">.</span>lock();
+     number <span class="operator">*</span><span class="operator">=</span> <span class="number">5</span>;
+     number <span class="operator">/</span><span class="operator">=</span> <span class="number">4</span>;
+     mutex<span class="operator">.</span>unlock();
+ }
+
+ <span class="type">void</span> method2()
+ {
+     mutex<span class="operator">.</span>lock();
+     number <span class="operator">*</span><span class="operator">=</span> <span class="number">3</span>;
+     number <span class="operator">/</span><span class="operator">=</span> <span class="number">2</span>;
+     mutex<span class="operator">.</span>unlock();
+ }
+</pre>
+<p>那么只有一个线程可以修改<tt>number</tt>在任何给定的时间，其结果是正确的。这是一个简单的例子，当然，但适用于任何其他情况下的事情需要发生在一个特定的顺序。</p>
+<p>当你调用<a href="qmutex.html#lock" tppabs="http://pyqt4doc.appspot.com/qmutex.html#lock">lock</a>（ ）在一个线程，其它试图调用线程<a href="qmutex.html#lock" tppabs="http://pyqt4doc.appspot.com/qmutex.html#lock">lock</a>（ ）在同一个地方会阻塞，直到获得该锁调用的线程<a href="qmutex.html#unlock" tppabs="http://pyqt4doc.appspot.com/qmutex.html#unlock">unlock</a>（ ） 。非阻塞的替代品<a href="qmutex.html#lock" tppabs="http://pyqt4doc.appspot.com/qmutex.html#lock">lock</a>（）是<a href="qmutex.html#tryLock" tppabs="http://pyqt4doc.appspot.com/qmutex.html#tryLock">tryLock</a>（ ） 。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="RecursionMode-enum"></a>QMutex.RecursionMode</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMutex.Recursive</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">在这种模式下，一个线程可以锁定同一互斥多次和互斥不会被解锁，直到相应数量的<a href="qmutex.html#unlock" tppabs="http://pyqt4doc.appspot.com/qmutex.html#unlock">unlock</a>（ ）的调用而制定的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMutex.NonRecursive</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">在这种模式下，一个线程可能只锁定一个互斥体一次。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qmutex.html#QMutex" tppabs="http://pyqt4doc.appspot.com/qmutex.html#QMutex">QMutex</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QMutex"></a>QMutex.__init__ (<i>self</i>, <a href="qmutex.html#RecursionMode-enum" tppabs="http://pyqt4doc.appspot.com/qmutex.html#RecursionMode-enum">RecursionMode</a> <i>mode</i> = QMutex.NonRecursive)</h3>
+<p>构造一个新的互斥体。互斥锁处于未锁定状态下创建。</p>
+<p>If <i>mode</i> is <a href="qmutex.html#RecursionMode-enum" tppabs="http://pyqt4doc.appspot.com/qmutex.html#RecursionMode-enum">QMutex.Recursive</a>，一个线程可以锁定同一互斥多次和互斥不会被解锁，直到相应数量的<a href="qmutex.html#unlock" tppabs="http://pyqt4doc.appspot.com/qmutex.html#unlock">unlock</a>（ ）的调用而制定的。默认值是<a href="qmutex.html#RecursionMode-enum" tppabs="http://pyqt4doc.appspot.com/qmutex.html#RecursionMode-enum">QMutex.NonRecursive</a>。</p>
+<p><b>See also</b> <a href="qmutex.html#lock" tppabs="http://pyqt4doc.appspot.com/qmutex.html#lock">lock</a>（）和<a href="qmutex.html#unlock" tppabs="http://pyqt4doc.appspot.com/qmutex.html#unlock">unlock</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="lock"></a>QMutex.lock (<i>self</i>)</h3>
+<p>锁定互斥锁。如果另一个线程已锁定互斥锁，则该调用将被阻塞，直到该线程已经解锁了。</p>
+<p>调用此函数从同一个线程相同的互斥体多次是允许的，如果这个互斥体是一个<a href="qmutex.html#RecursionMode-enum" tppabs="http://pyqt4doc.appspot.com/qmutex.html#RecursionMode-enum">recursive mutex</a>。如果这个互斥体是一个<a href="qmutex.html#RecursionMode-enum" tppabs="http://pyqt4doc.appspot.com/qmutex.html#RecursionMode-enum">non-recursive
+mutex</a>，此功能将<i>dead-lock</i>当互斥锁递归锁定。</p>
+<p><b>See also</b> <a href="qmutex.html#unlock" tppabs="http://pyqt4doc.appspot.com/qmutex.html#unlock">unlock</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="tryLock"></a>bool QMutex.tryLock (<i>self</i>)</h3>
+<p>试图锁定互斥。如果获得了锁，这个函数返回True。如果另一个线程已锁定互斥锁，则该函数立即返回False 。</p>
+<p>如果获得了锁，互斥锁必须被解锁<a href="qmutex.html#unlock" tppabs="http://pyqt4doc.appspot.com/qmutex.html#unlock">unlock</a>（ ）之前，另一个线程可以成功地将其锁定。</p>
+<p>调用此函数从同一个线程相同的互斥体多次是允许的，如果这个互斥体是一个<a href="qmutex.html#RecursionMode-enum" tppabs="http://pyqt4doc.appspot.com/qmutex.html#RecursionMode-enum">recursive mutex</a>。如果这个互斥体是一个<a href="qmutex.html#RecursionMode-enum" tppabs="http://pyqt4doc.appspot.com/qmutex.html#RecursionMode-enum">non-recursive
+mutex</a>，此功能将<i>always</i>尝试以递归方式锁定互斥时返回False 。</p>
+<p><b>See also</b> <a href="qmutex.html#lock" tppabs="http://pyqt4doc.appspot.com/qmutex.html#lock">lock</a>（）和<a href="qmutex.html#unlock" tppabs="http://pyqt4doc.appspot.com/qmutex.html#unlock">unlock</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="tryLock-2"></a>bool QMutex.tryLock (<i>self</i>, int <i>timeout</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>试图锁定互斥。如果获得了锁这个函数返回True，否则返回False 。如果另一个线程已锁定互斥锁，则此功能将等待最多<i>timeout</i>毫秒互斥体变得可用。</p>
+<p>注意：传递一个负数作为<i>timeout</i>相当于调用<a href="qmutex.html#lock" tppabs="http://pyqt4doc.appspot.com/qmutex.html#lock">lock</a>（ ） ，即该函数将一直等待，直到互斥量能，如果被锁定<i>timeout</i>是负的。</p>
+<p>如果获得了锁，互斥锁必须被解锁<a href="qmutex.html#unlock" tppabs="http://pyqt4doc.appspot.com/qmutex.html#unlock">unlock</a>（ ）之前，另一个线程可以成功地将其锁定。</p>
+<p>调用此函数从同一个线程相同的互斥体多次是允许的，如果这个互斥体是一个<a href="qmutex.html#RecursionMode-enum" tppabs="http://pyqt4doc.appspot.com/qmutex.html#RecursionMode-enum">recursive mutex</a>。如果这个互斥体是一个<a href="qmutex.html#RecursionMode-enum" tppabs="http://pyqt4doc.appspot.com/qmutex.html#RecursionMode-enum">non-recursive
+mutex</a>，此功能将<i>always</i>尝试以递归方式锁定互斥时返回False 。</p>
+<p><b>See also</b> <a href="qmutex.html#lock" tppabs="http://pyqt4doc.appspot.com/qmutex.html#lock">lock</a>（）和<a href="qmutex.html#unlock" tppabs="http://pyqt4doc.appspot.com/qmutex.html#unlock">unlock</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="unlock"></a>QMutex.unlock (<i>self</i>)</h3>
+<p>解锁互斥量。尝试在不同的线程在一个锁定它会导致一个错误解除锁定互斥锁。解锁未在不确定的行为锁定的互斥锁。</p>
+<p><b>See also</b> <a href="qmutex.html#lock" tppabs="http://pyqt4doc.appspot.com/qmutex.html#lock">lock</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

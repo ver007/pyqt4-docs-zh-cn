@@ -1,0 +1,758 @@
+﻿<html>
+<head>
+<title>QTransform Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QTransform Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QTransform类指定坐标系的2D变换。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qtransform.html#TransformationType-enum" tppabs="http://pyqt4doc.appspot.com/qtransform.html#TransformationType-enum">TransformationType</a></b> { TxNone, TxTranslate, TxScale, TxRotate, TxShear, TxProject }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qtransform.html#QTransform" tppabs="http://pyqt4doc.appspot.com/qtransform.html#QTransform">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtransform.html#QTransform-2" tppabs="http://pyqt4doc.appspot.com/qtransform.html#QTransform-2">__init__</a></b> (<i>self</i>, float <i>m11</i>, float <i>m12</i>, float <i>m13</i>, float <i>m21</i>, float <i>m22</i>, float <i>m23</i>, float <i>m31</i>, float <i>m32</i>, float <i>m33</i> = 1)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtransform.html#QTransform-3" tppabs="http://pyqt4doc.appspot.com/qtransform.html#QTransform-3">__init__</a></b> (<i>self</i>, float <i>h11</i>, float <i>h12</i>, float <i>h13</i>, float <i>h21</i>, float <i>h22</i>, float <i>h23</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtransform.html#QTransform-4" tppabs="http://pyqt4doc.appspot.com/qtransform.html#QTransform-4">__init__</a></b> (<i>self</i>, QMatrix <i>mtx</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtransform.html#QTransform-5" tppabs="http://pyqt4doc.appspot.com/qtransform.html#QTransform-5">__init__</a></b> (<i>self</i>, QTransform)</li>
+<li>
+<div class="fn"></div>QTransform <b><a href="qtransform.html#adjoint" tppabs="http://pyqt4doc.appspot.com/qtransform.html#adjoint">adjoint</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtransform.html#det" tppabs="http://pyqt4doc.appspot.com/qtransform.html#det">det</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtransform.html#determinant" tppabs="http://pyqt4doc.appspot.com/qtransform.html#determinant">determinant</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtransform.html#dx" tppabs="http://pyqt4doc.appspot.com/qtransform.html#dx">dx</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtransform.html#dy" tppabs="http://pyqt4doc.appspot.com/qtransform.html#dy">dy</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>(QTransform, bool <i>invertible</i>) <b><a href="qtransform.html#inverted" tppabs="http://pyqt4doc.appspot.com/qtransform.html#inverted">inverted</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtransform.html#isAffine" tppabs="http://pyqt4doc.appspot.com/qtransform.html#isAffine">isAffine</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtransform.html#isIdentity" tppabs="http://pyqt4doc.appspot.com/qtransform.html#isIdentity">isIdentity</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtransform.html#isInvertible" tppabs="http://pyqt4doc.appspot.com/qtransform.html#isInvertible">isInvertible</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtransform.html#isRotating" tppabs="http://pyqt4doc.appspot.com/qtransform.html#isRotating">isRotating</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtransform.html#isScaling" tppabs="http://pyqt4doc.appspot.com/qtransform.html#isScaling">isScaling</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtransform.html#isTranslating" tppabs="http://pyqt4doc.appspot.com/qtransform.html#isTranslating">isTranslating</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtransform.html#m11" tppabs="http://pyqt4doc.appspot.com/qtransform.html#m11">m11</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtransform.html#m12" tppabs="http://pyqt4doc.appspot.com/qtransform.html#m12">m12</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtransform.html#m13" tppabs="http://pyqt4doc.appspot.com/qtransform.html#m13">m13</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtransform.html#m21" tppabs="http://pyqt4doc.appspot.com/qtransform.html#m21">m21</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtransform.html#m22" tppabs="http://pyqt4doc.appspot.com/qtransform.html#m22">m22</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtransform.html#m23" tppabs="http://pyqt4doc.appspot.com/qtransform.html#m23">m23</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtransform.html#m31" tppabs="http://pyqt4doc.appspot.com/qtransform.html#m31">m31</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtransform.html#m32" tppabs="http://pyqt4doc.appspot.com/qtransform.html#m32">m32</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtransform.html#m33" tppabs="http://pyqt4doc.appspot.com/qtransform.html#m33">m33</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>(int <i>tx</i>, int <i>ty</i>) <b><a href="qtransform.html#map" tppabs="http://pyqt4doc.appspot.com/qtransform.html#map">map</a></b> (<i>self</i>, int <i>x</i>, int <i>y</i>)</li>
+<li>
+<div class="fn"></div>(float <i>tx</i>, float <i>ty</i>) <b><a href="qtransform.html#map-2" tppabs="http://pyqt4doc.appspot.com/qtransform.html#map-2">map</a></b> (<i>self</i>, float <i>x</i>, float <i>y</i>)</li>
+<li>
+<div class="fn"></div>QPoint <b><a href="qtransform.html#map-3" tppabs="http://pyqt4doc.appspot.com/qtransform.html#map-3">map</a></b> (<i>self</i>, QPoint <i>p</i>)</li>
+<li>
+<div class="fn"></div>QPointF <b><a href="qtransform.html#map-4" tppabs="http://pyqt4doc.appspot.com/qtransform.html#map-4">map</a></b> (<i>self</i>, QPointF <i>p</i>)</li>
+<li>
+<div class="fn"></div>QLine <b><a href="qtransform.html#map-5" tppabs="http://pyqt4doc.appspot.com/qtransform.html#map-5">map</a></b> (<i>self</i>, QLine <i>l</i>)</li>
+<li>
+<div class="fn"></div>QLineF <b><a href="qtransform.html#map-6" tppabs="http://pyqt4doc.appspot.com/qtransform.html#map-6">map</a></b> (<i>self</i>, QLineF <i>l</i>)</li>
+<li>
+<div class="fn"></div>QPolygonF <b><a href="qtransform.html#map-7" tppabs="http://pyqt4doc.appspot.com/qtransform.html#map-7">map</a></b> (<i>self</i>, QPolygonF <i>a</i>)</li>
+<li>
+<div class="fn"></div>QPolygon <b><a href="qtransform.html#map-8" tppabs="http://pyqt4doc.appspot.com/qtransform.html#map-8">map</a></b> (<i>self</i>, QPolygon <i>a</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qtransform.html#map-9" tppabs="http://pyqt4doc.appspot.com/qtransform.html#map-9">map</a></b> (<i>self</i>, QRegion <i>r</i>)</li>
+<li>
+<div class="fn"></div>QPainterPath <b><a href="qtransform.html#map-10" tppabs="http://pyqt4doc.appspot.com/qtransform.html#map-10">map</a></b> (<i>self</i>, QPainterPath <i>p</i>)</li>
+<li>
+<div class="fn"></div>QRect <b><a href="qtransform.html#mapRect" tppabs="http://pyqt4doc.appspot.com/qtransform.html#mapRect">mapRect</a></b> (<i>self</i>, QRect)</li>
+<li>
+<div class="fn"></div>QRectF <b><a href="qtransform.html#mapRect-2" tppabs="http://pyqt4doc.appspot.com/qtransform.html#mapRect-2">mapRect</a></b> (<i>self</i>, QRectF)</li>
+<li>
+<div class="fn"></div>QPolygon <b><a href="qtransform.html#mapToPolygon" tppabs="http://pyqt4doc.appspot.com/qtransform.html#mapToPolygon">mapToPolygon</a></b> (<i>self</i>, QRect <i>r</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtransform.html#reset" tppabs="http://pyqt4doc.appspot.com/qtransform.html#reset">reset</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTransform <b><a href="qtransform.html#rotate" tppabs="http://pyqt4doc.appspot.com/qtransform.html#rotate">rotate</a></b> (<i>self</i>, float <i>angle</i>, Qt.Axis <i>axis</i> = Qt.ZAxis)</li>
+<li>
+<div class="fn"></div>QTransform <b><a href="qtransform.html#rotateRadians" tppabs="http://pyqt4doc.appspot.com/qtransform.html#rotateRadians">rotateRadians</a></b> (<i>self</i>, float <i>angle</i>, Qt.Axis <i>axis</i> = Qt.ZAxis)</li>
+<li>
+<div class="fn"></div>QTransform <b><a href="qtransform.html#scale" tppabs="http://pyqt4doc.appspot.com/qtransform.html#scale">scale</a></b> (<i>self</i>, float <i>sx</i>, float <i>sy</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtransform.html#setMatrix" tppabs="http://pyqt4doc.appspot.com/qtransform.html#setMatrix">setMatrix</a></b> (<i>self</i>, float <i>m11</i>, float <i>m12</i>, float <i>m13</i>, float <i>m21</i>, float <i>m22</i>, float <i>m23</i>, float <i>m31</i>, float <i>m32</i>, float <i>m33</i>)</li>
+<li>
+<div class="fn"></div>QTransform <b><a href="qtransform.html#shear" tppabs="http://pyqt4doc.appspot.com/qtransform.html#shear">shear</a></b> (<i>self</i>, float <i>sh</i>, float <i>sv</i>)</li>
+<li>
+<div class="fn"></div>QMatrix <b><a href="qtransform.html#toAffine" tppabs="http://pyqt4doc.appspot.com/qtransform.html#toAffine">toAffine</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTransform <b><a href="qtransform.html#translate" tppabs="http://pyqt4doc.appspot.com/qtransform.html#translate">translate</a></b> (<i>self</i>, float <i>dx</i>, float <i>dy</i>)</li>
+<li>
+<div class="fn"></div>QTransform <b><a href="qtransform.html#transposed" tppabs="http://pyqt4doc.appspot.com/qtransform.html#transposed">transposed</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>TransformationType <b><a href="qtransform.html#type" tppabs="http://pyqt4doc.appspot.com/qtransform.html#type">type</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QTransform <b><a href="qtransform.html#fromScale" tppabs="http://pyqt4doc.appspot.com/qtransform.html#fromScale">fromScale</a></b> (float <i>dx</i>, float <i>dy</i>)</li>
+<li>
+<div class="fn"></div>QTransform <b><a href="qtransform.html#fromTranslate" tppabs="http://pyqt4doc.appspot.com/qtransform.html#fromTranslate">fromTranslate</a></b> (float <i>dx</i>, float <i>dy</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtransform.html#quadToQuad" tppabs="http://pyqt4doc.appspot.com/qtransform.html#quadToQuad">quadToQuad</a></b> (QPolygonF <i>one</i>, QPolygonF <i>two</i>, QTransform <i>result</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtransform.html#quadToSquare" tppabs="http://pyqt4doc.appspot.com/qtransform.html#quadToSquare">quadToSquare</a></b> (QPolygonF <i>quad</i>, QTransform <i>result</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtransform.html#squareToQuad" tppabs="http://pyqt4doc.appspot.com/qtransform.html#squareToQuad">squareToQuad</a></b> (QPolygonF <i>square</i>, QTransform <i>result</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QTransform <b><a href="qtransform.html#__add__" tppabs="http://pyqt4doc.appspot.com/qtransform.html#__add__">__add__</a></b> (<i>self</i>, float <i>n</i>)</li>
+<li>
+<div class="fn"></div>QTransform <b><a href="qtransform.html#__div__" tppabs="http://pyqt4doc.appspot.com/qtransform.html#__div__">__div__</a></b> (<i>self</i>, float <i>n</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtransform.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qtransform.html#__eq__">__eq__</a></b> (<i>self</i>, QTransform)</li>
+<li>
+<div class="fn"></div>QTransform <b><a href="qtransform.html#__iadd__" tppabs="http://pyqt4doc.appspot.com/qtransform.html#__iadd__">__iadd__</a></b> (<i>self</i>, float <i>num</i>)</li>
+<li>
+<div class="fn"></div>QTransform <b><a href="qtransform.html#__idiv__" tppabs="http://pyqt4doc.appspot.com/qtransform.html#__idiv__">__idiv__</a></b> (<i>self</i>, float <i>div</i>)</li>
+<li>
+<div class="fn"></div>QTransform <b><a href="qtransform.html#__imul__" tppabs="http://pyqt4doc.appspot.com/qtransform.html#__imul__">__imul__</a></b> (<i>self</i>, QTransform)</li>
+<li>
+<div class="fn"></div>QTransform <b><a href="qtransform.html#__imul__-2" tppabs="http://pyqt4doc.appspot.com/qtransform.html#__imul__-2">__imul__</a></b> (<i>self</i>, float <i>num</i>)</li>
+<li>
+<div class="fn"></div>QTransform <b><a href="qtransform.html#__isub__" tppabs="http://pyqt4doc.appspot.com/qtransform.html#__isub__">__isub__</a></b> (<i>self</i>, float <i>num</i>)</li>
+<li>
+<div class="fn"></div>QTransform <b><a href="qtransform.html#__mul__" tppabs="http://pyqt4doc.appspot.com/qtransform.html#__mul__">__mul__</a></b> (<i>self</i>, QTransform <i>o</i>)</li>
+<li>
+<div class="fn"></div>QTransform <b><a href="qtransform.html#__mul__-2" tppabs="http://pyqt4doc.appspot.com/qtransform.html#__mul__-2">__mul__</a></b> (<i>self</i>, float <i>n</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtransform.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qtransform.html#__ne__">__ne__</a></b> (<i>self</i>, QTransform)</li>
+<li>
+<div class="fn"></div>QTransform <b><a href="qtransform.html#__sub__" tppabs="http://pyqt4doc.appspot.com/qtransform.html#__sub__">__sub__</a></b> (<i>self</i>, float <i>n</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>这个类可以醃制。</p>
+<p>该QTransform类指定坐标系的2D变换。</p>
+<p>一个转换指定如何翻译，缩放，剪切，旋转或投影坐标系，并绘制图形时，通常会使用。</p>
+<p>QTransform不同于<a class="obsolete" href="qmatrix.html" tppabs="http://pyqt4doc.appspot.com/qmatrix.html">QMatrix<sup>(obsolete)</sup></a>中，这是一个真正的3×3矩阵，使透视变换。 QTransform的<a href="qtransform.html#toAffine" tppabs="http://pyqt4doc.appspot.com/qtransform.html#toAffine">toAffine</a>（ ）方法允许铸造QTransform到<a class="obsolete" href="qmatrix.html" tppabs="http://pyqt4doc.appspot.com/qmatrix.html">QMatrix<sup>(obsolete)</sup></a>。如果一个透视变换已被指定的矩阵，则转换将导致数据丢失。</p>
+<p>QTransform是Qt推荐的转换类。</p>
+<p>一个QTransform对象可使用内置的<a href="qtransform.html#setMatrix" tppabs="http://pyqt4doc.appspot.com/qtransform.html#setMatrix">setMatrix</a>（ ）<a href="qtransform.html#scale" tppabs="http://pyqt4doc.appspot.com/qtransform.html#scale">scale</a>（ ）<a href="qtransform.html#rotate" tppabs="http://pyqt4doc.appspot.com/qtransform.html#rotate">rotate</a>（ ）<a href="qtransform.html#translate" tppabs="http://pyqt4doc.appspot.com/qtransform.html#translate">translate</a>（）和<a href="qtransform.html#shear" tppabs="http://pyqt4doc.appspot.com/qtransform.html#shear">shear</a>（）函数。另外，它可以通过施加建<a href="#basic-matrix-operations">basic
+matrix operations</a>。该矩阵也可以被定义时构造，并且它可以使用被重置为单位矩阵（默认值）的<a href="qtransform.html#reset" tppabs="http://pyqt4doc.appspot.com/qtransform.html#reset">reset</a>（）函数。</p>
+<p>该QTransform类支持的图形原语映射：一个给定的点，线，多边形，区域或画家路径可以映射到由坐标系定义<i>this</i>使用矩阵<a href="qtransform.html#map" tppabs="http://pyqt4doc.appspot.com/qtransform.html#map">map</a>（）函数。在情况下的四边形的，它的坐标可以用转化的<a href="qtransform.html#mapRect" tppabs="http://pyqt4doc.appspot.com/qtransform.html#mapRect">mapRect</a>（）函数。矩形也可以被改造成一个<i>polygon</i>（映射到定义的坐标系<i>this</i>矩阵），使用<a href="qtransform.html#mapToPolygon" tppabs="http://pyqt4doc.appspot.com/qtransform.html#mapToPolygon">mapToPolygon</a>（）函数。</p>
+<p>QTransform提供<a href="qtransform.html#isIdentity" tppabs="http://pyqt4doc.appspot.com/qtransform.html#isIdentity">isIdentity</a>（）函数，如果矩阵是单位矩阵，并且该方法返回True，则<a href="qtransform.html#isInvertible" tppabs="http://pyqt4doc.appspot.com/qtransform.html#isInvertible">isInvertible</a>（ ）函数如果矩阵是非奇异的（即AB = BA = I ），它返回True 。该<a href="qtransform.html#inverted" tppabs="http://pyqt4doc.appspot.com/qtransform.html#inverted">inverted</a>（ ）函数返回一个倒置的副本<i>this</i>矩阵，如果它是可逆的（否则返回单位矩阵） ，以及<a href="qtransform.html#adjoint" tppabs="http://pyqt4doc.appspot.com/qtransform.html#adjoint">adjoint</a>（ ）返回矩阵的标准伴随。此外， QTransform提供<a href="qtransform.html#determinant" tppabs="http://pyqt4doc.appspot.com/qtransform.html#determinant">determinant</a>（ ）函数返回矩阵的行列式。</p>
+<p>最后， QTransform类支持矩阵乘法，加法和减法，以及类的对象可以被串流播放，以及比较。</p>
+<a id="rendering-graphics" name="rendering-graphics"></a>
+<h3>Rendering Graphics</h3>
+<p>在绘制图形时，矩阵定义转换，但实际转换是由绘图函数中执行<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>。</p>
+<p>默认情况下，<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>操作相关联的设备自己的坐标系上。标准坐标系统<a href="qpaintdevice.html" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html">QPaintDevice</a>有其原点位于左上角的位置。该<i>x</i>值向右增大;<i>y</i>值向下增大。有关完整说明，请参阅<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/coordsys.html">coordinate
+system</a>文档。</p>
+<p><a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>有功能，平移，缩放，剪切和旋转坐标系统，而无需使用QTransform 。例如：</p>
+<table class="generic" width="100%">
+<tr class="odd" valign="top">
+<td><img alt="" src="images/qtransform-simpletransformation.png"></td>
+<td>
+<pre class="cpp">
+ <span class="type">void</span> SimpleTransformation<span class="operator">.</span>paintEvent(<span class="type"><a href="qpaintevent.html" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html">QPaintEvent</a></span> <span class="operator">*</span>)
+ {
+     <span class="type"><a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a></span> painter(<span class="keyword">this</span>);
+     painter<span class="operator">.</span>setPen(<span class="type"><a href="qpen.html" tppabs="http://pyqt4doc.appspot.com/qpen.html">QPen</a></span>(<span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>blue<span class="operator">,</span> <span class="number">1</span><span class="operator">,</span> <span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>DashLine));
+     painter<span class="operator">.</span>drawRect(<span class="number">0</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">100</span><span class="operator">,</span> <span class="number">100</span>);
+
+     painter<span class="operator">.</span>rotate(<span class="number">45</span>);
+
+     painter<span class="operator">.</span>setFont(<span class="type"><a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a></span>(<span class="string">"Helvetica"</span><span class="operator">,</span> <span class="number">24</span>));
+     painter<span class="operator">.</span>setPen(<span class="type"><a href="qpen.html" tppabs="http://pyqt4doc.appspot.com/qpen.html">QPen</a></span>(<span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>black<span class="operator">,</span> <span class="number">1</span>));
+     painter<span class="operator">.</span>drawText(<span class="number">20</span><span class="operator">,</span> <span class="number">10</span><span class="operator">,</span> <span class="string">"QTransform"</span>);
+ }
+</pre>
+</td>
+</tr>
+</table>
+<p>虽然这些功能都非常的方便，它可以更有效地建立一个QTransform和呼叫<a href="qpainter.html#setTransform" tppabs="http://pyqt4doc.appspot.com/qpainter.html#setTransform">QPainter.setTransform</a>（ ）如果你想执行一个以上的变换操作。例如：</p>
+<table class="generic" width="100%">
+<tr class="odd" valign="top">
+<td><img alt="" src="images/qtransform-combinedtransformation.png"></td>
+<td>
+<pre class="cpp">
+ <span class="type">void</span> CombinedTransformation<span class="operator">.</span>paintEvent(<span class="type"><a href="qpaintevent.html" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html">QPaintEvent</a></span> <span class="operator">*</span>)
+ {
+     <span class="type"><a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a></span> painter(<span class="keyword">this</span>);
+     painter<span class="operator">.</span>setPen(<span class="type"><a href="qpen.html" tppabs="http://pyqt4doc.appspot.com/qpen.html">QPen</a></span>(<span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>blue<span class="operator">,</span> <span class="number">1</span><span class="operator">,</span> <span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>DashLine));
+     painter<span class="operator">.</span>drawRect(<span class="number">0</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">100</span><span class="operator">,</span> <span class="number">100</span>);
+
+     <span class="type">QTransform</span> transform;
+     transform<span class="operator">.</span>translate(<span class="number">50</span><span class="operator">,</span> <span class="number">50</span>);
+     transform<span class="operator">.</span>rotate(<span class="number">45</span>);
+     transform<span class="operator">.</span>scale(<span class="number">0.5</span><span class="operator">,</span> <span class="number">1.0</span>);
+     painter<span class="operator">.</span>setTransform(transform);
+
+     painter<span class="operator">.</span>setFont(<span class="type"><a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a></span>(<span class="string">"Helvetica"</span><span class="operator">,</span> <span class="number">24</span>));
+     painter<span class="operator">.</span>setPen(<span class="type"><a href="qpen.html" tppabs="http://pyqt4doc.appspot.com/qpen.html">QPen</a></span>(<span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>black<span class="operator">,</span> <span class="number">1</span>));
+     painter<span class="operator">.</span>drawText(<span class="number">20</span><span class="operator">,</span> <span class="number">10</span><span class="operator">,</span> <span class="string">"QTransform"</span>);
+ }
+</pre>
+</td>
+</tr>
+</table>
+<a id="basic-matrix-operations" name="basic-matrix-operations"></a>
+<h3>Basic Matrix Operations</h3>
+<p class="centerAlign"><img alt="" src="images/qtransform-representation.png"></p>
+<p>一个QTransform对象包含一个3× 3的矩阵。该<tt>m31</tt>（<tt>dx</tt>）和<tt>m32</tt>（<tt>dy</tt>）元素指定水平和垂直平移。该<tt>m11</tt>和<tt>m22</tt>元素指定水平和垂直缩放。该<tt>m21</tt>和<tt>m12</tt>元素指定水平和垂直<i>shearing</i>。最后，本<tt>m13</tt>和<tt>m23</tt>元素指定水平和垂直投影，与<tt>m33</tt>作为一个额外的投影系数。</p>
+<p>使用下列公式QTransform转换成在平面上的点到另一点：</p>
+<pre class="cpp">
+ x<span class="char">' = m11*x + m21*y + dx
+ y'</span> <span class="operator">=</span> m22<span class="operator">*</span>y <span class="operator">+</span> m12<span class="operator">*</span>x <span class="operator">+</span> dy
+ <span class="keyword">if</span> (is <span class="keyword">not</span> affine) {
+     w<span class="char">' = m13*x + m23*y + m33
+     x'</span> <span class="operator">/</span><span class="operator">=</span> w<span class="char">'
+     y'</span> <span class="operator">/</span><span class="operator">=</span> w<span class="char">'
+ }</span>
+</pre>
+<p><span class="char">The point <i>(x, y)</i> is the original
+point, and <i>(x', y')</i> is the transformed point. <i>(x',
+y')</i> can be transformed back to <i>(x, y)</i> by performing the
+same operation on the <a href="qtransform.html#inverted" tppabs="http://pyqt4doc.appspot.com/qtransform.html#inverted">inverted</a>() matrix.</span></p>
+<p><span class="char">The various matrix elements can be set when
+constructing the matrix, or by using the <a href="qtransform.html#setMatrix" tppabs="http://pyqt4doc.appspot.com/qtransform.html#setMatrix">setMatrix</a>() function later on. They
+can also be manipulated using the <a href="qtransform.html#translate" tppabs="http://pyqt4doc.appspot.com/qtransform.html#translate">translate</a>(), <a href="qtransform.html#rotate" tppabs="http://pyqt4doc.appspot.com/qtransform.html#rotate">rotate</a>(), <a href="qtransform.html#scale" tppabs="http://pyqt4doc.appspot.com/qtransform.html#scale">scale</a>() and <a href="qtransform.html#shear" tppabs="http://pyqt4doc.appspot.com/qtransform.html#shear">shear</a>() convenience functions. The
+currently set values can be retrieved using the <a href="qtransform.html#m11" tppabs="http://pyqt4doc.appspot.com/qtransform.html#m11">m11</a>(), <a href="qtransform.html#m12" tppabs="http://pyqt4doc.appspot.com/qtransform.html#m12">m12</a>(), <a href="qtransform.html#m13" tppabs="http://pyqt4doc.appspot.com/qtransform.html#m13">m13</a>(), <a href="qtransform.html#m21" tppabs="http://pyqt4doc.appspot.com/qtransform.html#m21">m21</a>(), <a href="qtransform.html#m22" tppabs="http://pyqt4doc.appspot.com/qtransform.html#m22">m22</a>(), <a href="qtransform.html#m23" tppabs="http://pyqt4doc.appspot.com/qtransform.html#m23">m23</a>(), <a href="qtransform.html#m31" tppabs="http://pyqt4doc.appspot.com/qtransform.html#m31">m31</a>(), <a href="qtransform.html#m32" tppabs="http://pyqt4doc.appspot.com/qtransform.html#m32">m32</a>(), <a href="qtransform.html#m33" tppabs="http://pyqt4doc.appspot.com/qtransform.html#m33">m33</a>(), <a href="qtransform.html#dx" tppabs="http://pyqt4doc.appspot.com/qtransform.html#dx">dx</a>() and <a href="qtransform.html#dy" tppabs="http://pyqt4doc.appspot.com/qtransform.html#dy">dy</a>() functions.</span></p>
+<p><span class="char">Translation is the simplest transformation.
+Setting <tt>dx</tt> and <tt>dy</tt> will move the coordinate system
+<tt>dx</tt> units along the X axis and <tt>dy</tt> units along the
+Y axis. Scaling can be done by setting <tt>m11</tt> and
+<tt>m22</tt>. For example, setting <tt>m11</tt> to 2 and
+<tt>m22</tt> to 1.5 will double the height and increase the width
+by 50%. The identity matrix has <tt>m11</tt>, <tt>m22</tt>, and
+<tt>m33</tt> set to 1 (all others are set to 0) mapping a point to
+itself. Shearing is controlled by <tt>m12</tt> and <tt>m21</tt>.
+Setting these elements to values different from zero will twist the
+coordinate system. Rotation is achieved by setting both the
+shearing factors and the scaling factors. Perspective
+transformation is achieved by setting both the projection factors
+and the scaling factors.</span></p>
+<p><span class="char">Here's the combined transformations example
+using basic matrix operations:</span></p>
+<table class="generic" width="100%">
+<tr class="odd" valign="top">
+<td><img alt="" src="images/qtransform-combinedtransformation2.png"></td>
+<td>
+<pre class="cpp">
+ <span class="type">void</span> BasicOperations<span class="operator">.</span>paintEvent(<span class="type"><a href="qpaintevent.html" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html">QPaintEvent</a></span> <span class="operator">*</span>)
+ {
+     <span class="type">double</span> pi <span class="operator">=</span> <span class="number">3.14</span>;
+
+     <span class="type">double</span> a    <span class="operator">=</span> pi<span class="operator">/</span><span class="number">180</span> <span class="operator">*</span> <span class="number">45.0</span>;
+     <span class="type">double</span> sina <span class="operator">=</span> sin(a);
+     <span class="type">double</span> cosa <span class="operator">=</span> cos(a);
+
+     <span class="type">QTransform</span> translationTransform(<span class="number">1</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">1</span><span class="operator">,</span> <span class="number">50.0</span><span class="operator">,</span> <span class="number">50.0</span>);
+     <span class="type">QTransform</span> rotationTransform(cosa<span class="operator">,</span> sina<span class="operator">,</span> <span class="operator">-</span>sina<span class="operator">,</span> cosa<span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">0</span>);
+     <span class="type">QTransform</span> scalingTransform(<span class="number">0.5</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">1.0</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">0</span>);
+
+     <span class="type">QTransform</span> transform;
+     transform <span class="operator">=</span> scalingTransform <span class="operator">*</span> rotationTransform <span class="operator">*</span> translationTransform;
+
+     <span class="type"><a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a></span> painter(<span class="keyword">this</span>);
+     painter<span class="operator">.</span>setPen(<span class="type"><a href="qpen.html" tppabs="http://pyqt4doc.appspot.com/qpen.html">QPen</a></span>(<span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>blue<span class="operator">,</span> <span class="number">1</span><span class="operator">,</span> <span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>DashLine));
+     painter<span class="operator">.</span>drawRect(<span class="number">0</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">100</span><span class="operator">,</span> <span class="number">100</span>);
+
+     painter<span class="operator">.</span>setTransform(transform);
+
+     painter<span class="operator">.</span>setFont(<span class="type"><a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a></span>(<span class="string">"Helvetica"</span><span class="operator">,</span> <span class="number">24</span>));
+     painter<span class="operator">.</span>setPen(<span class="type"><a href="qpen.html" tppabs="http://pyqt4doc.appspot.com/qpen.html">QPen</a></span>(<span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>black<span class="operator">,</span> <span class="number">1</span>));
+     painter<span class="operator">.</span>drawText(<span class="number">20</span><span class="operator">,</span> <span class="number">10</span><span class="operator">,</span> <span class="string">"QTransform"</span>);
+ }
+</pre>
+</td>
+</tr>
+</table>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="TransformationType-enum"></a>QTransform.TransformationType</h3>
+<table class="valuelist">
+<tr>
+<th class="tblConst">Constant</th>
+<th class="tblVal">Value</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTransform.TxNone</tt></td>
+<td class="topAlign"><tt>0x00</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTransform.TxTranslate</tt></td>
+<td class="topAlign"><tt>0x01</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTransform.TxScale</tt></td>
+<td class="topAlign"><tt>0x02</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTransform.TxRotate</tt></td>
+<td class="topAlign"><tt>0x04</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTransform.TxShear</tt></td>
+<td class="topAlign"><tt>0x08</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTransform.TxProject</tt></td>
+<td class="topAlign"><tt>0x10</tt></td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QTransform"></a>QTransform.__init__ (<i>self</i>)</h3>
+<p>构造一个单位矩阵。</p>
+<p>所有的元素都设置为零，除了<tt>m11</tt>和<tt>m22</tt>（指定刻度）和<tt>m13</tt>它被设置为1 。</p>
+<p><b>See also</b> <a href="qtransform.html#reset" tppabs="http://pyqt4doc.appspot.com/qtransform.html#reset">reset</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QTransform-2"></a>QTransform.__init__ (<i>self</i>, float <i>m11</i>, float <i>m12</i>, float <i>m13</i>, float <i>m21</i>, float <i>m22</i>, float <i>m23</i>, float <i>m31</i>, float <i>m32</i>, float <i>m33</i> = 1)</h3>
+<h3 class="fn">
+<a name="QTransform-3"></a>QTransform.__init__ (<i>self</i>, float <i>h11</i>, float <i>h12</i>, float <i>h13</i>, float <i>h21</i>, float <i>h22</i>, float <i>h23</i>)</h3>
+<p>构造一个矩阵的元素，<i>m11</i>，<i>m12</i>，<i>m13</i>，<i>m21</i>，<i>m22</i>，<i>m23</i>，<i>m31</i>，<i>m32</i>，<i>m33</i>。</p>
+<p><b>See also</b> <a href="qtransform.html#setMatrix" tppabs="http://pyqt4doc.appspot.com/qtransform.html#setMatrix">setMatrix</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QTransform-4"></a>QTransform.__init__ (<i>self</i>, <a href="qmatrix.html" tppabs="http://pyqt4doc.appspot.com/qmatrix.html">QMatrix</a> <i>mtx</i>)</h3>
+<p>构造一个矩阵的元素，<i>m11</i>，<i>m12</i>，<i>m21</i>，<i>m22</i>，<i>dx</i>和<i>dy</i>。</p>
+<p><b>See also</b> <a href="qtransform.html#setMatrix" tppabs="http://pyqt4doc.appspot.com/qtransform.html#setMatrix">setMatrix</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QTransform-5"></a>QTransform.__init__ (<i>self</i>, <a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a>)</h3>
+<p>构造一个矩阵，是给定一个副本<i>matrix</i>。注意，这个<tt>m13</tt>，<tt>m23</tt>和<tt>m33</tt>元件分别设置为0,0和1。</p>
+
+
+<h3 class="fn">
+<a name="adjoint"></a><a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> QTransform.adjoint (<i>self</i>)</h3>
+<p>返回该矩阵的伴随。</p>
+
+
+<h3 class="fn">
+<a name="det"></a>float QTransform.det (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="determinant"></a>float QTransform.determinant (<i>self</i>)</h3>
+<p>返回矩阵的行列式。</p>
+
+
+<h3 class="fn">
+<a name="dx"></a>float QTransform.dx (<i>self</i>)</h3>
+<p>返回水平平移因子。</p>
+<p><b>See also</b> <a href="qtransform.html#m31" tppabs="http://pyqt4doc.appspot.com/qtransform.html#m31">m31</a>（ ）<a href="qtransform.html#translate" tppabs="http://pyqt4doc.appspot.com/qtransform.html#translate">translate</a>（）和<a href="qtransform.html#basic-matrix-operations" tppabs="http://pyqt4doc.appspot.com/qtransform.html#basic-matrix-operations">Basic Matrix
+Operations</a>。</p>
+
+
+<h3 class="fn">
+<a name="dy"></a>float QTransform.dy (<i>self</i>)</h3>
+<p>返回垂直平移因子。</p>
+<p><b>See also</b> <a href="qtransform.html#translate" tppabs="http://pyqt4doc.appspot.com/qtransform.html#translate">translate</a>（）和<a href="qtransform.html#basic-matrix-operations" tppabs="http://pyqt4doc.appspot.com/qtransform.html#basic-matrix-operations">Basic Matrix
+Operations</a>。</p>
+
+
+<h3 class="fn">
+<a name="fromScale"></a><a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> QTransform.fromScale (float <i>dx</i>, float <i>dy</i>)</h3>
+<p>创建其对应于缩放的矩阵<i>sx</i>水平和<i>sy</i>垂直。这是相同的<a href="qtransform.html#QTransform" tppabs="http://pyqt4doc.appspot.com/qtransform.html#QTransform">QTransform</a>（ ） 。规模（ SX ， SY ），但稍快。</p>
+<p>此功能被引入Qt的4.5 。</p>
+
+
+<h3 class="fn">
+<a name="fromTranslate"></a><a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> QTransform.fromTranslate (float <i>dx</i>, float <i>dy</i>)</h3>
+<p>创建其对应于翻译成矩阵<i>dx</i>沿x轴和<i>dy</i>沿y轴。这是相同的<a href="qtransform.html#QTransform" tppabs="http://pyqt4doc.appspot.com/qtransform.html#QTransform">QTransform</a>（ ） ，翻译（ DX，DY ），但稍快。</p>
+<p>此功能被引入Qt的4.5 。</p>
+
+
+<h3 class="fn">
+<a name="inverted"></a>(<a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a>, bool <i>invertible</i>) QTransform.inverted (<i>self</i>)</h3>
+<p>返回该矩阵的一个倒置的副本。</p>
+<p>如果矩阵是奇异的（不可逆的） ，则返回的矩阵是单位矩阵。如果<i>invertible</i>是有效的（即不为0 ） ，将其值设置为True，如果矩阵是可逆的，否则设置为False 。</p>
+<p><b>See also</b> <a href="qtransform.html#isInvertible" tppabs="http://pyqt4doc.appspot.com/qtransform.html#isInvertible">isInvertible</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isAffine"></a>bool QTransform.isAffine (<i>self</i>)</h3>
+<p>返回True如果矩阵表示仿射变换，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isIdentity"></a>bool QTransform.isIdentity (<i>self</i>)</h3>
+<p>返回True如果矩阵为单位矩阵，否则返回False 。</p>
+<p><b>See also</b> <a href="qtransform.html#reset" tppabs="http://pyqt4doc.appspot.com/qtransform.html#reset">reset</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isInvertible"></a>bool QTransform.isInvertible (<i>self</i>)</h3>
+<p>返回True如果矩阵是可逆的，否则返回False 。</p>
+<p><b>See also</b> <a href="qtransform.html#inverted" tppabs="http://pyqt4doc.appspot.com/qtransform.html#inverted">inverted</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isRotating"></a>bool QTransform.isRotating (<i>self</i>)</h3>
+<p>返回True如果矩阵代表某种旋转变换，否则返回False 。</p>
+<p><b>See also</b> <a href="qtransform.html#reset" tppabs="http://pyqt4doc.appspot.com/qtransform.html#reset">reset</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isScaling"></a>bool QTransform.isScaling (<i>self</i>)</h3>
+<p>返回True如果矩阵表示缩放转换，否则返回False 。</p>
+<p><b>See also</b> <a href="qtransform.html#reset" tppabs="http://pyqt4doc.appspot.com/qtransform.html#reset">reset</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isTranslating"></a>bool QTransform.isTranslating (<i>self</i>)</h3>
+<p>返回True如果矩阵表示平移变换，否则返回False 。</p>
+<p><b>See also</b> <a href="qtransform.html#reset" tppabs="http://pyqt4doc.appspot.com/qtransform.html#reset">reset</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="m11"></a>float QTransform.m11 (<i>self</i>)</h3>
+<p>返回水平缩放系数。</p>
+<p><b>See also</b> <a href="qtransform.html#scale" tppabs="http://pyqt4doc.appspot.com/qtransform.html#scale">scale</a>（）和<a href="qtransform.html#basic-matrix-operations" tppabs="http://pyqt4doc.appspot.com/qtransform.html#basic-matrix-operations">Basic Matrix
+Operations</a>。</p>
+
+
+<h3 class="fn">
+<a name="m12"></a>float QTransform.m12 (<i>self</i>)</h3>
+<p>返回垂直剪切因素。</p>
+<p><b>See also</b> <a href="qtransform.html#shear" tppabs="http://pyqt4doc.appspot.com/qtransform.html#shear">shear</a>（）和<a href="qtransform.html#basic-matrix-operations" tppabs="http://pyqt4doc.appspot.com/qtransform.html#basic-matrix-operations">Basic Matrix
+Operations</a>。</p>
+
+
+<h3 class="fn">
+<a name="m13"></a>float QTransform.m13 (<i>self</i>)</h3>
+<p>返回水平投影的因素。</p>
+<p><b>See also</b> <a href="qtransform.html#translate" tppabs="http://pyqt4doc.appspot.com/qtransform.html#translate">translate</a>（）和<a href="qtransform.html#basic-matrix-operations" tppabs="http://pyqt4doc.appspot.com/qtransform.html#basic-matrix-operations">Basic Matrix
+Operations</a>。</p>
+
+
+<h3 class="fn">
+<a name="m21"></a>float QTransform.m21 (<i>self</i>)</h3>
+<p>返回水平剪切的因素。</p>
+<p><b>See also</b> <a href="qtransform.html#shear" tppabs="http://pyqt4doc.appspot.com/qtransform.html#shear">shear</a>（）和<a href="qtransform.html#basic-matrix-operations" tppabs="http://pyqt4doc.appspot.com/qtransform.html#basic-matrix-operations">Basic Matrix
+Operations</a>。</p>
+
+
+<h3 class="fn">
+<a name="m22"></a>float QTransform.m22 (<i>self</i>)</h3>
+<p>返回垂直缩放系数。</p>
+<p><b>See also</b> <a href="qtransform.html#scale" tppabs="http://pyqt4doc.appspot.com/qtransform.html#scale">scale</a>（）和<a href="qtransform.html#basic-matrix-operations" tppabs="http://pyqt4doc.appspot.com/qtransform.html#basic-matrix-operations">Basic Matrix
+Operations</a>。</p>
+
+
+<h3 class="fn">
+<a name="m23"></a>float QTransform.m23 (<i>self</i>)</h3>
+<p>返回垂直投影的因素。</p>
+<p><b>See also</b> <a href="qtransform.html#translate" tppabs="http://pyqt4doc.appspot.com/qtransform.html#translate">translate</a>（）和<a href="qtransform.html#basic-matrix-operations" tppabs="http://pyqt4doc.appspot.com/qtransform.html#basic-matrix-operations">Basic Matrix
+Operations</a>。</p>
+
+
+<h3 class="fn">
+<a name="m31"></a>float QTransform.m31 (<i>self</i>)</h3>
+<p>返回水平平移因子。</p>
+<p><b>See also</b> <a href="qtransform.html#dx" tppabs="http://pyqt4doc.appspot.com/qtransform.html#dx">dx</a>（ ）<a href="qtransform.html#translate" tppabs="http://pyqt4doc.appspot.com/qtransform.html#translate">translate</a>（）和<a href="qtransform.html#basic-matrix-operations" tppabs="http://pyqt4doc.appspot.com/qtransform.html#basic-matrix-operations">Basic Matrix
+Operations</a>。</p>
+
+
+<h3 class="fn">
+<a name="m32"></a>float QTransform.m32 (<i>self</i>)</h3>
+<p>返回垂直平移因子。</p>
+<p><b>See also</b> <a href="qtransform.html#dy" tppabs="http://pyqt4doc.appspot.com/qtransform.html#dy">dy</a>（ ）<a href="qtransform.html#translate" tppabs="http://pyqt4doc.appspot.com/qtransform.html#translate">translate</a>（）和<a href="qtransform.html#basic-matrix-operations" tppabs="http://pyqt4doc.appspot.com/qtransform.html#basic-matrix-operations">Basic Matrix
+Operations</a>。</p>
+
+
+<h3 class="fn">
+<a name="m33"></a>float QTransform.m33 (<i>self</i>)</h3>
+<p>返回的分频因子。</p>
+<p><b>See also</b> <a href="qtransform.html#translate" tppabs="http://pyqt4doc.appspot.com/qtransform.html#translate">translate</a>（）和<a href="qtransform.html#basic-matrix-operations" tppabs="http://pyqt4doc.appspot.com/qtransform.html#basic-matrix-operations">Basic Matrix
+Operations</a>。</p>
+
+
+<h3 class="fn">
+<a name="map"></a>(int <i>tx</i>, int <i>ty</i>) QTransform.map (<i>self</i>, int <i>x</i>, int <i>y</i>)</h3>
+<p>对应给定的坐标<i>x</i>和<i>y</i>成由该矩阵定义的坐标系。被放置在所得到的值*<i>tx</i>和*<i>ty</i>元。</p>
+<p>则坐标值用下面的公式转化：</p>
+<pre class="cpp">
+ x' <span class="operator">=</span> m11<span class="operator">*</span>x <span class="operator">+</span> m21<span class="operator">*</span>y <span class="operator">+</span> dx
+ y<span class="char">' = m22*y + m12*x + dy
+ if (is not affine) {
+     w'</span> <span class="operator">=</span> m13<span class="operator">*</span>x <span class="operator">+</span> m23<span class="operator">*</span>y <span class="operator">+</span> m33
+     x<span class="char">' /= w'</span>
+     y<span class="char">' /= w'</span>
+ }
+</pre>
+<p>点（x ，y）是原始的点，和（ X'，Y '）是变换后的​​点。</p>
+<p><b>See also</b> <a href="qtransform.html#basic-matrix-operations" tppabs="http://pyqt4doc.appspot.com/qtransform.html#basic-matrix-operations">Basic Matrix
+Operations</a>。</p>
+
+
+<h3 class="fn">
+<a name="map-2"></a>(float <i>tx</i>, float <i>ty</i>) QTransform.map (<i>self</i>, float <i>x</i>, float <i>y</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>创建并返回一个<a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a>对象，它是给定的点的副本，<i>p</i>，映射到由该矩阵定义的坐标系。</p>
+
+
+<h3 class="fn">
+<a name="map-3"></a><a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> QTransform.map (<i>self</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>p</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>创建并返回一个<a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a>对象，它是给定一个副本<i>point</i>，映射到由该矩阵定义的坐标系。需要注意的是转换后的坐标四舍五入到最接近的整数。</p>
+
+
+<h3 class="fn">
+<a name="map-4"></a><a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> QTransform.map (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>p</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>创建并返回一个<a href="qlinef.html" tppabs="http://pyqt4doc.appspot.com/qlinef.html">QLineF</a>对象，它是给定行的一个副本，<i>l</i>，映射到由该矩阵定义的坐标系。</p>
+
+
+<h3 class="fn">
+<a name="map-5"></a><a href="qline.html" tppabs="http://pyqt4doc.appspot.com/qline.html">QLine</a> QTransform.map (<i>self</i>, <a href="qline.html" tppabs="http://pyqt4doc.appspot.com/qline.html">QLine</a> <i>l</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>创建并返回一个<a href="qline.html" tppabs="http://pyqt4doc.appspot.com/qline.html">QLine</a>对象，它是给定一个副本<i>line</i>，映射到由该矩阵定义的坐标系。需要注意的是转换后的坐标四舍五入到最接近的整数。</p>
+
+
+<h3 class="fn">
+<a name="map-6"></a><a href="qlinef.html" tppabs="http://pyqt4doc.appspot.com/qlinef.html">QLineF</a> QTransform.map (<i>self</i>, <a href="qlinef.html" tppabs="http://pyqt4doc.appspot.com/qlinef.html">QLineF</a> <i>l</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>创建并返回一个<a href="qpolygonf.html" tppabs="http://pyqt4doc.appspot.com/qpolygonf.html">QPolygonF</a>对象，它是给定一个副本<i>polygon</i>，映射到由该矩阵定义的坐标系。</p>
+
+
+<h3 class="fn">
+<a name="map-7"></a><a href="qpolygonf.html" tppabs="http://pyqt4doc.appspot.com/qpolygonf.html">QPolygonF</a> QTransform.map (<i>self</i>, <a href="qpolygonf.html" tppabs="http://pyqt4doc.appspot.com/qpolygonf.html">QPolygonF</a> <i>a</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>创建并返回一个<a href="qpolygon.html" tppabs="http://pyqt4doc.appspot.com/qpolygon.html">QPolygon</a>对象，它是给定一个副本<i>polygon</i>，映射到由该矩阵定义的坐标系。需要注意的是转换后的坐标四舍五入到最接近的整数。</p>
+
+
+<h3 class="fn">
+<a name="map-8"></a><a href="qpolygon.html" tppabs="http://pyqt4doc.appspot.com/qpolygon.html">QPolygon</a> QTransform.map (<i>self</i>, <a href="qpolygon.html" tppabs="http://pyqt4doc.appspot.com/qpolygon.html">QPolygon</a> <i>a</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>创建并返回一个<a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a>对象，它是给定一个副本<i>region</i>，映射到由该矩阵定义的坐标系。</p>
+<p>调用此方法可以是相当昂贵的，如果旋转或剪切的使用。</p>
+
+
+<h3 class="fn">
+<a name="map-9"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QTransform.map (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>r</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>创建并返回一个<a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a>对象，它是给定一个副本<i>path</i>，映射到由该矩阵定义的坐标系。</p>
+
+
+<h3 class="fn">
+<a name="map-10"></a><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> QTransform.map (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> <i>p</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>对应给定的坐标<i>x</i>和<i>y</i>成由该矩阵定义的坐标系。被放置在所得到的值*<i>tx</i>和*<i>ty</i>元。需要注意的是转换后的坐标四舍五入到最接近的整数。</p>
+
+
+<h3 class="fn">
+<a name="mapRect"></a><a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> QTransform.mapRect (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a>)</h3>
+<p>创建并返回一个<a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a>对象，它是给定一个副本<i>rectangle</i>，映射到由该矩阵定义的坐标系。</p>
+<p>矩形的坐标是用下面的公式转化：</p>
+<pre class="cpp">
+ x<span class="char">' = m11*x + m21*y + dx
+ y'</span> <span class="operator">=</span> m22<span class="operator">*</span>y <span class="operator">+</span> m12<span class="operator">*</span>x <span class="operator">+</span> dy
+ <span class="keyword">if</span> (is <span class="keyword">not</span> affine) {
+     w<span class="char">' = m13*x + m23*y + m33
+     x'</span> <span class="operator">/</span><span class="operator">=</span> w<span class="char">'
+     y'</span> <span class="operator">/</span><span class="operator">=</span> w<span class="char">'
+ }</span>
+</pre>
+<p><span class="char">If rotation or shearing has been specified,
+this function returns the <i>bounding</i> rectangle. To retrieve
+the exact region the given <i>rectangle</i> maps to, use the
+<a href="qtransform.html#mapToPolygon" tppabs="http://pyqt4doc.appspot.com/qtransform.html#mapToPolygon">mapToPolygon</a>() function
+instead.</span></p>
+<p><span class="char"><b>See also</b> <a href="qtransform.html#mapToPolygon" tppabs="http://pyqt4doc.appspot.com/qtransform.html#mapToPolygon">mapToPolygon</a>() and <a href="qtransform.html#basic-matrix-operations" tppabs="http://pyqt4doc.appspot.com/qtransform.html#basic-matrix-operations">Basic Matrix
+Operations</a>.</span></p>
+
+
+<h3 class="fn">
+<a name="mapRect-2"></a><a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> QTransform.mapRect (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a>)</h3>
+<h3 class="fn">
+<a name="mapToPolygon"></a><a href="qpolygon.html" tppabs="http://pyqt4doc.appspot.com/qpolygon.html">QPolygon</a> QTransform.mapToPolygon (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>r</i>)</h3>
+<p>创建并返回一个<a href="qpolygon.html" tppabs="http://pyqt4doc.appspot.com/qpolygon.html">QPolygon</a>给定的表示<i>rectangle</i>，映射到由该矩阵定义的坐标系。</p>
+<p>矩形的坐标是用下面的公式转化：</p>
+<pre class="cpp">
+ x' <span class="operator">=</span> m11<span class="operator">*</span>x <span class="operator">+</span> m21<span class="operator">*</span>y <span class="operator">+</span> dx
+ y<span class="char">' = m22*y + m12*x + dy
+ if (is not affine) {
+     w'</span> <span class="operator">=</span> m13<span class="operator">*</span>x <span class="operator">+</span> m23<span class="operator">*</span>y <span class="operator">+</span> m33
+     x<span class="char">' /= w'</span>
+     y<span class="char">' /= w'</span>
+ }
+</pre>
+<p>多边形和矩形的行为略有不同，当转换（由于四舍五入的整数） ，所以<tt>matrix.map(QPolygon(rectangle))</tt>并不总是相同<tt>matrix.mapToPolygon(rectangle)</tt>。</p>
+<p><b>See also</b> <a href="qtransform.html#mapRect" tppabs="http://pyqt4doc.appspot.com/qtransform.html#mapRect">mapRect</a>（）和<a href="qtransform.html#basic-matrix-operations" tppabs="http://pyqt4doc.appspot.com/qtransform.html#basic-matrix-operations">Basic Matrix
+Operations</a>。</p>
+
+
+<h3 class="fn">
+<a name="quadToQuad"></a>bool QTransform.quadToQuad (<a href="qpolygonf.html" tppabs="http://pyqt4doc.appspot.com/qpolygonf.html">QPolygonF</a> <i>one</i>, <a href="qpolygonf.html" tppabs="http://pyqt4doc.appspot.com/qpolygonf.html">QPolygonF</a> <i>two</i>, <a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> <i>result</i>)</h3>
+<p>创建一个变换矩阵，<i>trans</i>，映射一个四边形，<i>one</i>到另一个四边多边形，<i>two</i>。返回True如果转换是可能的;否则返回False。</p>
+<p>这是一个方便的方法相结合<a href="qtransform.html#quadToSquare" tppabs="http://pyqt4doc.appspot.com/qtransform.html#quadToSquare">quadToSquare</a>（）和<a href="qtransform.html#squareToQuad" tppabs="http://pyqt4doc.appspot.com/qtransform.html#squareToQuad">squareToQuad</a>（）方法。它允许输入四要转变成任何其他四。</p>
+<p><b>See also</b> <a href="qtransform.html#squareToQuad" tppabs="http://pyqt4doc.appspot.com/qtransform.html#squareToQuad">squareToQuad</a>（）和<a href="qtransform.html#quadToSquare" tppabs="http://pyqt4doc.appspot.com/qtransform.html#quadToSquare">quadToSquare</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="quadToSquare"></a>bool QTransform.quadToSquare (<a href="qpolygonf.html" tppabs="http://pyqt4doc.appspot.com/qpolygonf.html">QPolygonF</a> <i>quad</i>, <a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> <i>result</i>)</h3>
+<p>创建一个变换矩阵，<i>trans</i>，映射一个四边形，<i>quad</i>，到单位正方形。返回True如果变换构造还是假，如果这样的转变并不存在。</p>
+<p><b>See also</b> <a href="qtransform.html#squareToQuad" tppabs="http://pyqt4doc.appspot.com/qtransform.html#squareToQuad">squareToQuad</a>（）和<a href="qtransform.html#quadToQuad" tppabs="http://pyqt4doc.appspot.com/qtransform.html#quadToQuad">quadToQuad</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="reset"></a>QTransform.reset (<i>self</i>)</h3>
+<p>重置矩阵单位矩阵，即所有元素都设置为零，除非<tt>m11</tt>和<tt>m22</tt>（指定刻度）和<tt>m33</tt>它被设置为1 。</p>
+<p><b>See also</b> <a href="qtransform.html#QTransform" tppabs="http://pyqt4doc.appspot.com/qtransform.html#QTransform">QTransform</a>（ ）<a href="qtransform.html#isIdentity" tppabs="http://pyqt4doc.appspot.com/qtransform.html#isIdentity">isIdentity</a>（）和<a href="qtransform.html#basic-matrix-operations" tppabs="http://pyqt4doc.appspot.com/qtransform.html#basic-matrix-operations">Basic Matrix
+Operations</a>。</p>
+
+
+<h3 class="fn">
+<a name="rotate"></a><a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> QTransform.rotate (<i>self</i>, float <i>angle</i>, <a href="qt.html#Axis-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Axis-enum">Qt.Axis</a> <i>axis</i> = Qt.ZAxis)</h3>
+<p>由给定的逆时针旋转的坐标系<i>angle</i>关于指定<i>axis</i>并返回一个引用到矩阵。</p>
+<p>请注意，如果你申请一个<a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a>在小窗口坐标定义的一个点，该旋转方向将因为y轴指向下是顺时针。</p>
+<p>的角度被指定为度。</p>
+<p><b>See also</b> <a href="qtransform.html#setMatrix" tppabs="http://pyqt4doc.appspot.com/qtransform.html#setMatrix">setMatrix</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rotateRadians"></a><a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> QTransform.rotateRadians (<i>self</i>, float <i>angle</i>, <a href="qt.html#Axis-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Axis-enum">Qt.Axis</a> <i>axis</i> = Qt.ZAxis)</h3>
+<p>由给定的逆时针旋转的坐标系<i>angle</i>关于指定<i>axis</i>并返回一个引用到矩阵。</p>
+<p>请注意，如果你申请一个<a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a>在小窗口坐标定义的一个点，该旋转方向将因为y轴指向下是顺时针。</p>
+<p>的角度被指定为弧度。</p>
+<p><b>See also</b> <a href="qtransform.html#setMatrix" tppabs="http://pyqt4doc.appspot.com/qtransform.html#setMatrix">setMatrix</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="scale"></a><a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> QTransform.scale (<i>self</i>, float <i>sx</i>, float <i>sy</i>)</h3>
+<p>通过缩放坐标系<i>sx</i>水平和<i>sy</i>垂直，并返回一个引用到矩阵。</p>
+<p><b>See also</b> <a href="qtransform.html#setMatrix" tppabs="http://pyqt4doc.appspot.com/qtransform.html#setMatrix">setMatrix</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setMatrix"></a>QTransform.setMatrix (<i>self</i>, float <i>m11</i>, float <i>m12</i>, float <i>m13</i>, float <i>m21</i>, float <i>m22</i>, float <i>m23</i>, float <i>m31</i>, float <i>m32</i>, float <i>m33</i>)</h3>
+<p>设置矩阵的元素为指定的值，<i>m11</i>，<i>m12</i>，<i>m13</i> <i>m21</i>，<i>m22</i>，<i>m23</i>
+<i>m31</i>，<i>m32</i>和<i>m33</i>。请注意，此功能取代了以前的值。<a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a>提供<a href="qtransform.html#translate" tppabs="http://pyqt4doc.appspot.com/qtransform.html#translate">translate</a>（ ）<a href="qtransform.html#rotate" tppabs="http://pyqt4doc.appspot.com/qtransform.html#rotate">rotate</a>（ ）<a href="qtransform.html#scale" tppabs="http://pyqt4doc.appspot.com/qtransform.html#scale">scale</a>（）和<a href="qtransform.html#shear" tppabs="http://pyqt4doc.appspot.com/qtransform.html#shear">shear</a>（ ）方便的功能来操作基于当前定义的坐标系统中的各种矩阵元素。</p>
+<p><b>See also</b> <a href="qtransform.html#QTransform" tppabs="http://pyqt4doc.appspot.com/qtransform.html#QTransform">QTransform</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="shear"></a><a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> QTransform.shear (<i>self</i>, float <i>sh</i>, float <i>sv</i>)</h3>
+<p>通过剪坐标系<i>sh</i>水平和<i>sv</i>垂直，并返回一个引用到矩阵。</p>
+<p><b>See also</b> <a href="qtransform.html#setMatrix" tppabs="http://pyqt4doc.appspot.com/qtransform.html#setMatrix">setMatrix</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="squareToQuad"></a>bool QTransform.squareToQuad (<a href="qpolygonf.html" tppabs="http://pyqt4doc.appspot.com/qpolygonf.html">QPolygonF</a> <i>square</i>, <a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> <i>result</i>)</h3>
+<p>创建一个变换矩阵，<i>trans</i>，映射一个单位正方形四边多边形，<i>quad</i>。返回True如果变换构造还是假，如果这样的转变并不存在。</p>
+<p><b>See also</b> <a href="qtransform.html#quadToSquare" tppabs="http://pyqt4doc.appspot.com/qtransform.html#quadToSquare">quadToSquare</a>（）和<a href="qtransform.html#quadToQuad" tppabs="http://pyqt4doc.appspot.com/qtransform.html#quadToQuad">quadToQuad</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toAffine"></a><a href="qmatrix.html" tppabs="http://pyqt4doc.appspot.com/qmatrix.html">QMatrix</a> QTransform.toAffine (<i>self</i>)</h3>
+<p>返回<a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a>作为仿射矩阵。</p>
+<p><b>Warning:</b>如果已指定一个透视变换，那么转换将导致数据丢失。</p>
+
+
+<h3 class="fn">
+<a name="translate"></a><a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> QTransform.translate (<i>self</i>, float <i>dx</i>, float <i>dy</i>)</h3>
+<p>移动的坐标系统<i>dx</i>沿x轴和<i>dy</i>沿着y轴，并返回引用到矩阵。</p>
+<p><b>See also</b> <a href="qtransform.html#setMatrix" tppabs="http://pyqt4doc.appspot.com/qtransform.html#setMatrix">setMatrix</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="transposed"></a><a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> QTransform.transposed (<i>self</i>)</h3>
+<p>返回该矩阵的转置。</p>
+
+
+<h3 class="fn">
+<a name="type"></a><a href="qtransform.html#TransformationType-enum" tppabs="http://pyqt4doc.appspot.com/qtransform.html#TransformationType-enum">TransformationType</a> QTransform.type (<i>self</i>)</h3>
+<p>返回这个矩阵的转换类型。</p>
+<p>改造型是最高的枚举值捕获所有矩阵的变换。例如，如果两个矩阵规模和剪刀，类型是<tt>TxShear</tt>，因为<tt>TxShear</tt>具有比更高的枚举值<tt>TxScale</tt>。</p>
+<p>了解矩阵的变换类型是优化有用：你经常可以更优化处理特定类型的处理比一般情况下。</p>
+
+
+<h3 class="fn">
+<a name="__add__"></a><a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> QTransform.__add__ (<i>self</i>, float <i>n</i>)</h3>
+<h3 class="fn">
+<a name="__div__"></a><a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> QTransform.__div__ (<i>self</i>, float <i>n</i>)</h3>
+<h3 class="fn">
+<a name="__eq__"></a>bool QTransform.__eq__ (<i>self</i>, <a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a>)</h3>
+<h3 class="fn">
+<a name="__iadd__"></a><a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> QTransform.__iadd__ (<i>self</i>, float <i>num</i>)</h3>
+<h3 class="fn">
+<a name="__idiv__"></a><a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> QTransform.__idiv__ (<i>self</i>, float <i>div</i>)</h3>
+<h3 class="fn">
+<a name="__imul__"></a><a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> QTransform.__imul__ (<i>self</i>, <a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a>)</h3>
+<h3 class="fn">
+<a name="__imul__-2"></a><a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> QTransform.__imul__ (<i>self</i>, float <i>num</i>)</h3>
+<h3 class="fn">
+<a name="__isub__"></a><a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> QTransform.__isub__ (<i>self</i>, float <i>num</i>)</h3>
+<h3 class="fn">
+<a name="__mul__"></a><a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> QTransform.__mul__ (<i>self</i>, <a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> <i>o</i>)</h3>
+<h3 class="fn">
+<a name="__mul__-2"></a><a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> QTransform.__mul__ (<i>self</i>, float <i>n</i>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QTransform.__ne__ (<i>self</i>, <a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a>)</h3>
+<h3 class="fn">
+<a name="__sub__"></a><a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> QTransform.__sub__ (<i>self</i>, float <i>n</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

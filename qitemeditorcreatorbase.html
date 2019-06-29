@@ -1,0 +1,85 @@
+﻿<html>
+<head>
+<title>QItemEditorCreatorBase Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QItemEditorCreatorBase Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QItemEditorCreatorBase类提供​​了必须实施新的项目编辑器创造者时被继承的抽象基类。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qitemeditorcreatorbase.html#QItemEditorCreatorBase" tppabs="http://pyqt4doc.appspot.com/qitemeditorcreatorbase.html#QItemEditorCreatorBase">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qitemeditorcreatorbase.html#QItemEditorCreatorBase-2" tppabs="http://pyqt4doc.appspot.com/qitemeditorcreatorbase.html#QItemEditorCreatorBase-2">__init__</a></b> (<i>self</i>, QItemEditorCreatorBase)</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qitemeditorcreatorbase.html#createWidget" tppabs="http://pyqt4doc.appspot.com/qitemeditorcreatorbase.html#createWidget">createWidget</a></b> (<i>self</i>, QWidget <i>parent</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qitemeditorcreatorbase.html#valuePropertyName" tppabs="http://pyqt4doc.appspot.com/qitemeditorcreatorbase.html#valuePropertyName">valuePropertyName</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QItemEditorCreatorBase类提供​​了必须实施新的项目编辑器创造者时被继承的抽象基类。</p>
+<p>QItemEditorCreatorBase对象是专门的窗口小部件的工厂提供的编辑器部件为一个特定的<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>数据类型。它们被用来通过<a href="qitemeditorfactory.html" tppabs="http://pyqt4doc.appspot.com/qitemeditorfactory.html">QItemEditorFactory</a>创建编辑器<a href="qitemdelegate.html" tppabs="http://pyqt4doc.appspot.com/qitemdelegate.html">QItemDelegate</a>秒。造物主基地必须与注册<a href="qitemeditorfactory.html#registerEditor" tppabs="http://pyqt4doc.appspot.com/qitemeditorfactory.html#registerEditor">QItemEditorFactory.registerEditor</a>（ ） 。</p>
+<p>编辑应为它编辑的数据提供了一个用户属性。然后QItemDelagates可以使用Qt的访问属性<a href="index.htm#meta-object-system" tppabs="http://pyqt4doc.appspot.com/metaobjects.html#meta-object-system">meta-object system</a>设置和检索的编辑数据。一个属性被设置为与用户关键字的用户属性：</p>
+<pre class="cpp">
+ <a href="qobject.html#Q_PROPERTY" tppabs="http://pyqt4doc.appspot.com/qobject.html#Q_PROPERTY">Q_PROPERTY</a>(<span class="type"><a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a></span> color READ color WRITE setColor USER <span class="keyword">true</span>)
+</pre>
+<p>如果编辑器不提供用户属性，它必须从返回的属性的名称<a href="qitemeditorcreatorbase.html#valuePropertyName" tppabs="http://pyqt4doc.appspot.com/qitemeditorcreatorbase.html#valuePropertyName">valuePropertyName</a>（）;代表将使用此名称来访问属性。如果用户属性存在，项目代表将不会调用<a href="qitemeditorcreatorbase.html#valuePropertyName" tppabs="http://pyqt4doc.appspot.com/qitemeditorcreatorbase.html#valuePropertyName">valuePropertyName</a>（ ） 。</p>
+<p><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qstandarditemeditorcreator.html">QStandardItemEditorCreator</a>是可以用于注册的小部件，而不需要子类QItemEditorCreatorBase方便的模板类。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QItemEditorCreatorBase"></a>QItemEditorCreatorBase.__init__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="QItemEditorCreatorBase-2"></a>QItemEditorCreatorBase.__init__ (<i>self</i>, <a href="qitemeditorcreatorbase.html" tppabs="http://pyqt4doc.appspot.com/qitemeditorcreatorbase.html">QItemEditorCreatorBase</a>)</h3>
+<h3 class="fn">
+<a name="createWidget"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QItemEditorCreatorBase.createWidget (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>返回一个编辑器部件与给定<i>parent</i>。</p>
+<p>当实现这个类的子类此功能，您必须构造并返回新的编辑器部件使用指定的父控件。</p>
+
+
+<h3 class="fn">
+<a name="valuePropertyName"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QItemEditorCreatorBase.valuePropertyName (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回用于获取和创建者的编辑器窗口小部件设置值的属性的名称。</p>
+<p>当实现在子类中此功能，您必须确保在这个函数中指定的编辑器部件的属性可以接受的创造者注册的类型。例如，制作者它构造<a href="qcheckbox.html" tppabs="http://pyqt4doc.appspot.com/qcheckbox.html">QCheckBox</a>小工具来编辑布尔值将返回<a href="qabstractbutton.html#checkable-prop" tppabs="http://pyqt4doc.appspot.com/qabstractbutton.html#checkable-prop">checkable</a>从这个函数的属性名称，并且必须在项目编辑器工厂登记<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">QVariant.Bool</a>类型。</p>
+<p>注：由于Qt 4.2中的项目代表查询小工具的用户属性，只有调用这个函数，如果部件没有用户属性。您可以通过重新实现复盖此行为<a href="qabstractitemdelegate.html#setModelData" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#setModelData">QAbstractItemDelegate.setModelData</a>（）和<a href="qabstractitemdelegate.html#setEditorData" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#setEditorData">QAbstractItemDelegate.setEditorData</a>（ ） 。</p>
+<p><b>See also</b> <a href="qmetaobject.html#userProperty" tppabs="http://pyqt4doc.appspot.com/qmetaobject.html#userProperty">QMetaObject.userProperty</a>（）和<a href="qitemeditorfactory.html#registerEditor" tppabs="http://pyqt4doc.appspot.com/qitemeditorfactory.html#registerEditor">QItemEditorFactory.registerEditor</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

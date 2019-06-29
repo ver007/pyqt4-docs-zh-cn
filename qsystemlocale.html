@@ -1,0 +1,301 @@
+﻿<html>
+<head>
+<title>QSystemLocale Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QSystemLocale Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>The QSystemLocale class can be used to finetune the system
+locale of the user. <a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qsystemlocale.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qsystemlocale.html#QueryType-enum">QueryType</a></b> { LanguageId, ScriptId, CountryId, DecimalPoint, ..., NativeCountryName }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qsystemlocale.html#QSystemLocale" tppabs="http://pyqt4doc.appspot.com/qsystemlocale.html#QSystemLocale">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsystemlocale.html#QSystemLocale-2" tppabs="http://pyqt4doc.appspot.com/qsystemlocale.html#QSystemLocale-2">__init__</a></b> (<i>self</i>, QSystemLocale)</li>
+<li>
+<div class="fn"></div>QLocale <b><a href="qsystemlocale.html#fallbackLocale" tppabs="http://pyqt4doc.appspot.com/qsystemlocale.html#fallbackLocale">fallbackLocale</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qsystemlocale.html#query" tppabs="http://pyqt4doc.appspot.com/qsystemlocale.html#query">query</a></b> (<i>self</i>, QueryType <i>type</i>, QVariant <i>in</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>The QSystemLocale class can be used to finetune the system
+locale of the user.</p>
+<p><b>Warning:</b>这个类只有在非常罕见的情况下非常有用。平时<a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a>提供了所有必需的应用程序开发的功能。</p>
+<p>QSystemLocale允许复盖系统区域设置（提供的值<a href="qlocale.html#system" tppabs="http://pyqt4doc.appspot.com/qlocale.html#system">QLocale.system</a>（））。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="QueryType-enum"></a>QSystemLocale.QueryType</h3>
+<p>指定的信息被查询的类型<a href="qsystemlocale.html#query" tppabs="http://pyqt4doc.appspot.com/qsystemlocale.html#query">query</a>（ ） 。对于每一个值的信息从返回值的类型<a href="qsystemlocale.html#query" tppabs="http://pyqt4doc.appspot.com/qsystemlocale.html#query">query</a>（ ）方法被列出。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.LanguageId</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">一个UINT指定的语言。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.ScriptId</tt></td>
+<td class="topAlign"><tt>33</tt></td>
+<td class="topAlign">一个UINT指定的脚本。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.CountryId</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">一个UINT指定的国家。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.DecimalPoint</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">一<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>指定小数点。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.GroupSeparator</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">一<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>指定的组分隔符。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.ZeroDigit</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">一<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>指定零位。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.NegativeSign</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">一<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>指定减号。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.PositiveSign</tt></td>
+<td class="topAlign"><tt>23</tt></td>
+<td class="topAlign">一<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>指定加号。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.DateFormatLong</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">一<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>指定的长日期格式</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.DateFormatShort</tt></td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">一<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>指定的短日期格式</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.TimeFormatLong</tt></td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">一<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>指定的长时间格式</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.TimeFormatShort</tt></td>
+<td class="topAlign"><tt>9</tt></td>
+<td class="topAlign">一<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>指定的短时间格式</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.DayNameLong</tt></td>
+<td class="topAlign"><tt>10</tt></td>
+<td class="topAlign">一<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>指定工作日的名称。该变种中包含1和7之间的整数（星期一 - 星期日）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.DayNameShort</tt></td>
+<td class="topAlign"><tt>11</tt></td>
+<td class="topAlign">一<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>指定一个工作日的简称。该变种中包含1和7之间的整数（星期一 - 星期日）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.MonthNameLong</tt></td>
+<td class="topAlign"><tt>12</tt></td>
+<td class="topAlign">一<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>指定月份的名称。该变种中包含1到12之间的整数</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.MonthNameShort</tt></td>
+<td class="topAlign"><tt>13</tt></td>
+<td class="topAlign">一<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>指定月份的简称。该变种中包含1到12之间的整数</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.DateToStringLong</tt></td>
+<td class="topAlign"><tt>14</tt></td>
+<td class="topAlign">转换<a href="qdate.html" tppabs="http://pyqt4doc.appspot.com/qdate.html">QDate</a>存储在变量中的<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>采用长日期格式</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.DateToStringShort</tt></td>
+<td class="topAlign"><tt>15</tt></td>
+<td class="topAlign">转换<a href="qdate.html" tppabs="http://pyqt4doc.appspot.com/qdate.html">QDate</a>存储在变量中的<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>使用短日期格式</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.TimeToStringLong</tt></td>
+<td class="topAlign"><tt>16</tt></td>
+<td class="topAlign">转换<a href="qtime.html" tppabs="http://pyqt4doc.appspot.com/qtime.html">QTime</a>存储在变量中的<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>使用长时间格式</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.TimeToStringShort</tt></td>
+<td class="topAlign"><tt>17</tt></td>
+<td class="topAlign">转换<a href="qtime.html" tppabs="http://pyqt4doc.appspot.com/qtime.html">QTime</a>存储在变量中的<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>用很短的时间格式</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QSystemLocale.DateTimeFormatLong</tt>
+</td>
+<td class="topAlign"><tt>18</tt></td>
+<td class="topAlign">一<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>指定的长日期时间格式</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QSystemLocale.DateTimeFormatShort</tt>
+</td>
+<td class="topAlign"><tt>19</tt></td>
+<td class="topAlign">一<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>指定的短日期时间格式</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QSystemLocale.DateTimeToStringLong</tt>
+</td>
+<td class="topAlign"><tt>20</tt></td>
+<td class="topAlign">转换<a href="qdatetime.html" tppabs="http://pyqt4doc.appspot.com/qdatetime.html">QDateTime</a>在变型中的<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>使用长日期时间格式</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QSystemLocale.DateTimeToStringShort</tt>
+</td>
+<td class="topAlign"><tt>21</tt></td>
+<td class="topAlign">转换<a href="qdatetime.html" tppabs="http://pyqt4doc.appspot.com/qdatetime.html">QDateTime</a>在变型中的<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>使用短日期时间格式</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.MeasurementSystem</tt></td>
+<td class="topAlign"><tt>22</tt></td>
+<td class="topAlign">一<a href="qlocale.html#MeasurementSystem-enum" tppabs="http://pyqt4doc.appspot.com/qlocale.html#MeasurementSystem-enum">QLocale.MeasurementSystem</a>枚举指定测量系统</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.AMText</tt></td>
+<td class="topAlign"><tt>24</tt></td>
+<td class="topAlign">表示用12小时时钟相关的系统AM指示的字符串。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.PMText</tt></td>
+<td class="topAlign"><tt>25</tt></td>
+<td class="topAlign">表示用12小时时钟相关的系统PM指示的字符串。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.FirstDayOfWeek</tt></td>
+<td class="topAlign"><tt>26</tt></td>
+<td class="topAlign">一<a href="qt.html#DayOfWeek-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#DayOfWeek-enum">Qt.DayOfWeek</a>枚举specifiying一周的第一天</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.CurrencySymbol</tt></td>
+<td class="topAlign"><tt>28</tt></td>
+<td class="topAlign">它表示的格式QLocale.CurrencyFormat货币的字符串。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.CurrencyToString</tt></td>
+<td class="topAlign"><tt>29</tt></td>
+<td class="topAlign">一些带有货币符号的本地化字符串表示形式。将一个<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qsystemlocale-currencytostringargument.html">QSystemLocale.CurrencyToStringArgument</a>存储在变量中的<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.UILanguages</tt></td>
+<td class="topAlign"><tt>30</tt></td>
+<td class="topAlign">表示可用于用户界面翻译语言环境名称的字符串列表。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QSystemLocale.StringToStandardQuotation</tt>
+</td>
+<td class="topAlign"><tt>31</tt></td>
+<td class="topAlign">一<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>含有使用标准报价存储在变量中的字符串裁判的引用的版本。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QSystemLocale.StringToAlternateQuotation</tt>
+</td>
+<td class="topAlign"><tt>32</tt></td>
+<td class="topAlign">一<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>含有使用替代引号存储在变量中的字符串裁判的引用的版本。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.Weekdays</tt></td>
+<td class="topAlign"><tt>27</tt></td>
+<td class="topAlign">一<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qlist.html">QList</a>\u003c<a href="qt.html#DayOfWeek-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#DayOfWeek-enum">Qt.DayOfWeek</a>\u003e指定正规平日</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.LocaleChanged</tt></td>
+<td class="topAlign"><tt>35</tt></td>
+<td class="topAlign">这种类型的查询时系统区域设置被改变。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QSystemLocale.ListToSeparatedString</tt>
+</td>
+<td class="topAlign"><tt>34</tt></td>
+<td class="topAlign">一个表示连接的一个给定的一个字符串<a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a>一个语言环境定义的分隔符。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QSystemLocale.NativeLanguageName</tt>
+</td>
+<td class="topAlign"><tt>36</tt></td>
+<td class="topAlign">表示本机语言的名称的字符串。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemLocale.NativeCountryName</tt></td>
+<td class="topAlign"><tt>37</tt></td>
+<td class="topAlign">代表祖国的名称的字符串。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QSystemLocale"></a>QSystemLocale.__init__ (<i>self</i>)</h3>
+<p>构造一个<a href="qsystemlocale.html" tppabs="http://pyqt4doc.appspot.com/qsystemlocale.html">QSystemLocale</a>对象。该构造函数会自动安装这个对象作为系统区域设置和删除任何早期安装的系统语言环境。</p>
+
+
+<h3 class="fn">
+<a name="QSystemLocale-2"></a>QSystemLocale.__init__ (<i>self</i>, <a href="qsystemlocale.html" tppabs="http://pyqt4doc.appspot.com/qsystemlocale.html">QSystemLocale</a>)</h3>
+<h3 class="fn">
+<a name="fallbackLocale"></a><a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a> QSystemLocale.fallbackLocale (<i>self</i>)</h3>
+<p>返回从系统中获得的回退区域设置。</p>
+<p>此功能被引入Qt的4.6 。</p>
+
+
+<h3 class="fn">
+<a name="query"></a>QVariant QSystemLocale.query (<i>self</i>, <a href="qsystemlocale.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qsystemlocale.html#QueryType-enum">QueryType</a> <i>type</i>, QVariant <i>in</i>)</h3>
+<p>通用查询方法语言环境数据。提供间接。表示<i>type</i>用查询<i>in</i>作为输入数据根据查询。</p>
+<p><b>See also</b> <a href="qsystemlocale.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qsystemlocale.html#QueryType-enum">QSystemLocale.QueryType</a>。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

@@ -1,0 +1,115 @@
+﻿<html>
+<head>
+<title>QSwipeGesture Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QSwipeGesture Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QSwipeGesture类描述了一个滑动手势用户所做的。<a href="#details">More...</a></p>
+
+<p>继承<a href="qgesture.html" tppabs="http://pyqt4doc.appspot.com/qgesture.html">QGesture</a>。</p>
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qswipegesture.html#SwipeDirection-enum" tppabs="http://pyqt4doc.appspot.com/qswipegesture.html#SwipeDirection-enum">SwipeDirection</a></b> { NoDirection, Left, Right, Up, Down }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qswipegesture.html#QSwipeGesture" tppabs="http://pyqt4doc.appspot.com/qswipegesture.html#QSwipeGesture">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>SwipeDirection <b><a href="qswipegesture.html#horizontalDirection" tppabs="http://pyqt4doc.appspot.com/qswipegesture.html#horizontalDirection">horizontalDirection</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qswipegesture.html#setSwipeAngle" tppabs="http://pyqt4doc.appspot.com/qswipegesture.html#setSwipeAngle">setSwipeAngle</a></b> (<i>self</i>, float <i>value</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qswipegesture.html#swipeAngle" tppabs="http://pyqt4doc.appspot.com/qswipegesture.html#swipeAngle">swipeAngle</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>SwipeDirection <b><a href="qswipegesture.html#verticalDirection" tppabs="http://pyqt4doc.appspot.com/qswipegesture.html#verticalDirection">verticalDirection</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QSwipeGesture类描述了一个滑动手势用户所做的。</p>
+<p class="centerAlign"><img alt="" src="images/swipegesture.png"></p>
+<p>手势使用手势在你的应用程序在处理Qt和信息的概述，请参阅<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/gestures-overview.html">Gestures Programming</a>文档。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="SwipeDirection-enum"></a>QSwipeGesture.SwipeDirection</h3>
+<p>该枚举描述了用于沿水平和垂直轴的姿态的运动的可能方向。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSwipeGesture.NoDirection</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">手势没有与它在一个特定的轴关联的运动。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSwipeGesture.Left</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该手势所涉及的水平方向运动到左边。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSwipeGesture.Right</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">该手势所涉及的水平方向运动到右侧。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSwipeGesture.Up</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">姿态参与垂直向上运动。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSwipeGesture.Down</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">姿态参与垂直向下运动。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QSwipeGesture"></a>QSwipeGesture.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<h3 class="fn">
+<a name="horizontalDirection"></a><a href="qswipegesture.html#SwipeDirection-enum" tppabs="http://pyqt4doc.appspot.com/qswipegesture.html#SwipeDirection-enum">SwipeDirection</a> QSwipeGesture.horizontalDirection (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="setSwipeAngle"></a>QSwipeGesture.setSwipeAngle (<i>self</i>, float <i>value</i>)</h3>
+<h3 class="fn">
+<a name="swipeAngle"></a>float QSwipeGesture.swipeAngle (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="verticalDirection"></a><a href="qswipegesture.html#SwipeDirection-enum" tppabs="http://pyqt4doc.appspot.com/qswipegesture.html#SwipeDirection-enum">SwipeDirection</a> QSwipeGesture.verticalDirection (<i>self</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

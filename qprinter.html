@@ -1,0 +1,1075 @@
+﻿<html>
+<head>
+<title>QPrinter Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QPrinter Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QPrinter做类是涂料设备，油漆上的打印机。<a href="#details">More...</a></p>
+
+<p>继承<a href="qpaintdevice.html" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html">QPaintDevice</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qprinter.html#ColorMode-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#ColorMode-enum">ColorMode</a></b> { GrayScale, Color }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qprinter.html#DuplexMode-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#DuplexMode-enum">DuplexMode</a></b> { DuplexNone, DuplexAuto, DuplexLongSide, DuplexShortSide }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qprinter.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#Orientation-enum">Orientation</a></b> { Portrait, Landscape }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qprinter.html#OutputFormat-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#OutputFormat-enum">OutputFormat</a></b> { NativeFormat, PdfFormat, PostScriptFormat }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qprinter.html#PageOrder-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PageOrder-enum">PageOrder</a></b> { FirstPageFirst, LastPageFirst }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qprinter.html#PageSize-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PageSize-enum">PageSize</a></b> { A4, B5, Letter, Legal, ..., Custom }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qprinter.html#PaperSource-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PaperSource-enum">PaperSource</a></b> { OnlyOne, Lower, Middle, Manual, ..., MaxPageSource }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qprinter.html#PrinterMode-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PrinterMode-enum">PrinterMode</a></b> { ScreenResolution, PrinterResolution, HighResolution }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qprinter.html#PrinterState-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PrinterState-enum">PrinterState</a></b> { Idle, Active, Aborted, Error }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qprinter.html#PrintRange-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PrintRange-enum">PrintRange</a></b> { AllPages, Selection, PageRange, CurrentPage }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qprinter.html#Unit-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#Unit-enum">Unit</a></b> { Millimeter, Point, Inch, Pica, ..., DevicePixel }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#QPrinter" tppabs="http://pyqt4doc.appspot.com/qprinter.html#QPrinter">__init__</a></b> (<i>self</i>, PrinterMode <i>mode</i> = QPrinter.ScreenResolution)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#QPrinter-2" tppabs="http://pyqt4doc.appspot.com/qprinter.html#QPrinter-2">__init__</a></b> (<i>self</i>, QPrinterInfo <i>printer</i>, PrinterMode <i>mode</i> = QPrinter.ScreenResolution)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qprinter.html#abort" tppabs="http://pyqt4doc.appspot.com/qprinter.html#abort">abort</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qprinter.html#actualNumCopies" tppabs="http://pyqt4doc.appspot.com/qprinter.html#actualNumCopies">actualNumCopies</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qprinter.html#collateCopies" tppabs="http://pyqt4doc.appspot.com/qprinter.html#collateCopies">collateCopies</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>ColorMode <b><a href="qprinter.html#colorMode" tppabs="http://pyqt4doc.appspot.com/qprinter.html#colorMode">colorMode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qprinter.html#copyCount" tppabs="http://pyqt4doc.appspot.com/qprinter.html#copyCount">copyCount</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qprinter.html#creator" tppabs="http://pyqt4doc.appspot.com/qprinter.html#creator">creator</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qprinter.html#docName" tppabs="http://pyqt4doc.appspot.com/qprinter.html#docName">docName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qprinter.html#doubleSidedPrinting" tppabs="http://pyqt4doc.appspot.com/qprinter.html#doubleSidedPrinting">doubleSidedPrinting</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>DuplexMode <b><a href="qprinter.html#duplex" tppabs="http://pyqt4doc.appspot.com/qprinter.html#duplex">duplex</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qprinter.html#fontEmbeddingEnabled" tppabs="http://pyqt4doc.appspot.com/qprinter.html#fontEmbeddingEnabled">fontEmbeddingEnabled</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qprinter.html#fromPage" tppabs="http://pyqt4doc.appspot.com/qprinter.html#fromPage">fromPage</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qprinter.html#fullPage" tppabs="http://pyqt4doc.appspot.com/qprinter.html#fullPage">fullPage</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>(float <i>left</i>, float <i>top</i>, float <i>right</i>, float <i>bottom</i>) <b><a href="qprinter.html#getPageMargins" tppabs="http://pyqt4doc.appspot.com/qprinter.html#getPageMargins">getPageMargins</a></b> (<i>self</i>, Unit <i>unit</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qprinter.html#isValid" tppabs="http://pyqt4doc.appspot.com/qprinter.html#isValid">isValid</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qprinter.html#metric" tppabs="http://pyqt4doc.appspot.com/qprinter.html#metric">metric</a></b> (<i>self</i>, QPaintDevice.PaintDeviceMetric)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qprinter.html#newPage" tppabs="http://pyqt4doc.appspot.com/qprinter.html#newPage">newPage</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qprinter.html#numCopies" tppabs="http://pyqt4doc.appspot.com/qprinter.html#numCopies">numCopies</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Orientation <b><a href="qprinter.html#orientation" tppabs="http://pyqt4doc.appspot.com/qprinter.html#orientation">orientation</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qprinter.html#outputFileName" tppabs="http://pyqt4doc.appspot.com/qprinter.html#outputFileName">outputFileName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>OutputFormat <b><a href="qprinter.html#outputFormat" tppabs="http://pyqt4doc.appspot.com/qprinter.html#outputFormat">outputFormat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>PageOrder <b><a href="qprinter.html#pageOrder" tppabs="http://pyqt4doc.appspot.com/qprinter.html#pageOrder">pageOrder</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QRect <b><a href="qprinter.html#pageRect" tppabs="http://pyqt4doc.appspot.com/qprinter.html#pageRect">pageRect</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QRectF <b><a href="qprinter.html#pageRect-2" tppabs="http://pyqt4doc.appspot.com/qprinter.html#pageRect-2">pageRect</a></b> (<i>self</i>, Unit)</li>
+<li>
+<div class="fn"></div>PageSize <b><a href="qprinter.html#pageSize" tppabs="http://pyqt4doc.appspot.com/qprinter.html#pageSize">pageSize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QPaintEngine <b><a href="qprinter.html#paintEngine" tppabs="http://pyqt4doc.appspot.com/qprinter.html#paintEngine">paintEngine</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QRect <b><a href="qprinter.html#paperRect" tppabs="http://pyqt4doc.appspot.com/qprinter.html#paperRect">paperRect</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QRectF <b><a href="qprinter.html#paperRect-2" tppabs="http://pyqt4doc.appspot.com/qprinter.html#paperRect-2">paperRect</a></b> (<i>self</i>, Unit)</li>
+<li>
+<div class="fn"></div>PageSize <b><a href="qprinter.html#paperSize" tppabs="http://pyqt4doc.appspot.com/qprinter.html#paperSize">paperSize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSizeF <b><a href="qprinter.html#paperSize-2" tppabs="http://pyqt4doc.appspot.com/qprinter.html#paperSize-2">paperSize</a></b> (<i>self</i>, Unit <i>unit</i>)</li>
+<li>
+<div class="fn"></div>PaperSource <b><a href="qprinter.html#paperSource" tppabs="http://pyqt4doc.appspot.com/qprinter.html#paperSource">paperSource</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QPrintEngine <b><a href="qprinter.html#printEngine" tppabs="http://pyqt4doc.appspot.com/qprinter.html#printEngine">printEngine</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qprinter.html#printerName" tppabs="http://pyqt4doc.appspot.com/qprinter.html#printerName">printerName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qprinter.html#printerSelectionOption" tppabs="http://pyqt4doc.appspot.com/qprinter.html#printerSelectionOption">printerSelectionOption</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>PrinterState <b><a href="qprinter.html#printerState" tppabs="http://pyqt4doc.appspot.com/qprinter.html#printerState">printerState</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qprinter.html#printProgram" tppabs="http://pyqt4doc.appspot.com/qprinter.html#printProgram">printProgram</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>PrintRange <b><a href="qprinter.html#printRange" tppabs="http://pyqt4doc.appspot.com/qprinter.html#printRange">printRange</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qprinter.html#resolution" tppabs="http://pyqt4doc.appspot.com/qprinter.html#resolution">resolution</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setCollateCopies" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setCollateCopies">setCollateCopies</a></b> (<i>self</i>, bool <i>collate</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setColorMode" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setColorMode">setColorMode</a></b> (<i>self</i>, ColorMode)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setCopyCount" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setCopyCount">setCopyCount</a></b> (<i>self</i>, int)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setCreator" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setCreator">setCreator</a></b> (<i>self</i>, QString)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setDocName" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setDocName">setDocName</a></b> (<i>self</i>, QString)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setDoubleSidedPrinting" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setDoubleSidedPrinting">setDoubleSidedPrinting</a></b> (<i>self</i>, bool <i>enable</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setDuplex" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setDuplex">setDuplex</a></b> (<i>self</i>, DuplexMode <i>duplex</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setEngines" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setEngines">setEngines</a></b> (<i>self</i>, QPrintEngine <i>printEngine</i>, QPaintEngine <i>paintEngine</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setFontEmbeddingEnabled" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setFontEmbeddingEnabled">setFontEmbeddingEnabled</a></b> (<i>self</i>, bool <i>enable</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setFromTo" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setFromTo">setFromTo</a></b> (<i>self</i>, int <i>fromPage</i>, int <i>toPage</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setFullPage" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setFullPage">setFullPage</a></b> (<i>self</i>, bool)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setNumCopies" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setNumCopies">setNumCopies</a></b> (<i>self</i>, int)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setOrientation" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setOrientation">setOrientation</a></b> (<i>self</i>, Orientation)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setOutputFileName" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setOutputFileName">setOutputFileName</a></b> (<i>self</i>, QString)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setOutputFormat" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setOutputFormat">setOutputFormat</a></b> (<i>self</i>, OutputFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setPageMargins" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setPageMargins">setPageMargins</a></b> (<i>self</i>, float <i>left</i>, float <i>top</i>, float <i>right</i>, float <i>bottom</i>, Unit <i>unit</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setPageOrder" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setPageOrder">setPageOrder</a></b> (<i>self</i>, PageOrder)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setPageSize" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setPageSize">setPageSize</a></b> (<i>self</i>, PageSize)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setPaperSize" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setPaperSize">setPaperSize</a></b> (<i>self</i>, PageSize)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setPaperSize-2" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setPaperSize-2">setPaperSize</a></b> (<i>self</i>, QSizeF <i>paperSize</i>, Unit <i>unit</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setPaperSource" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setPaperSource">setPaperSource</a></b> (<i>self</i>, PaperSource)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setPrinterName" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setPrinterName">setPrinterName</a></b> (<i>self</i>, QString)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setPrinterSelectionOption" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setPrinterSelectionOption">setPrinterSelectionOption</a></b> (<i>self</i>, QString)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setPrintProgram" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setPrintProgram">setPrintProgram</a></b> (<i>self</i>, QString)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setPrintRange" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setPrintRange">setPrintRange</a></b> (<i>self</i>, PrintRange <i>range</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprinter.html#setResolution" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setResolution">setResolution</a></b> (<i>self</i>, int)</li>
+<li>
+<div class="fn"></div>list-of-int <b><a href="qprinter.html#supportedResolutions" tppabs="http://pyqt4doc.appspot.com/qprinter.html#supportedResolutions">supportedResolutions</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qprinter.html#supportsMultipleCopies" tppabs="http://pyqt4doc.appspot.com/qprinter.html#supportsMultipleCopies">supportsMultipleCopies</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qprinter.html#toPage" tppabs="http://pyqt4doc.appspot.com/qprinter.html#toPage">toPage</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QPrinter做类是涂料设备，油漆上的打印机。</p>
+<p>这个设备代表了一系列的打印输出页，并且被用在几乎完全一样的方式与其他涂料设备，如<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>和<a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a>。提供一组额外的功能来管理设备特定的功能，如方向和分辨率，并逐步在文档中的页面，因为它是生成的。</p>
+<p>直接打印在Windows或Mac OS X的打印机时， QPrinter则负责使用内置的打印机驱动程序。在X11上， QPrinter则负责使用<a href="http://www.cups.org/">Common Unix Printing System
+(CUPS)</a>或标准Unix<a href="http://www.ietf.org/rfc/rfc1179.txt#lpr">lpr</a>实用派的PostScript或PDF输出到打印机。作为替代，本<a href="qprinter.html#printProgram" tppabs="http://pyqt4doc.appspot.com/qprinter.html#printProgram">printProgram</a>（ ）函数可以用来指定命令或工具来使用，而不是系统默认的。</p>
+<p>请注意，如纸张尺寸和分辨率上的一个无效的打印机设置参数是不确定的。您可以使用<a href="qprinter.html#isValid" tppabs="http://pyqt4doc.appspot.com/qprinter.html#isValid">QPrinter.isValid</a>（）来更改任何参数之前验证这一点。</p>
+<p>QPrinter做支持多个参数，其中大部分可以通过一个最终用户来改变<a href="qprintdialog.html" tppabs="http://pyqt4doc.appspot.com/qprintdialog.html">print
+dialog</a>。在一般情况下， QPrinter做通过这些功能到底层<a href="qprintengine.html" tppabs="http://pyqt4doc.appspot.com/qprintengine.html">QPrintEngine</a>。</p>
+<p>最重要的参数是：</p>
+<ul>
+<li>
+<a href="qprinter.html#setOrientation" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setOrientation">setOrientation</a>()
+tells QPrinter which page orientation to use.</li>
+<li>
+<a href="qprinter.html#setPaperSize" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setPaperSize">setPaperSize</a>() tells
+QPrinter what paper size to expect from the printer.</li>
+<li>
+<a href="qprinter.html#setResolution" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setResolution">setResolution</a>() tells
+QPrinter what resolution you wish the printer to provide, in dots
+per inch (DPI).</li>
+<li>
+<a href="qprinter.html#setFullPage" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setFullPage">setFullPage</a>() tells
+QPrinter whether you want to deal with the full page or just with
+the part the printer can draw on.</li>
+<li>
+<a href="qprinter.html#setCopyCount" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setCopyCount">setCopyCount</a>() tells
+QPrinter how many copies of the document it should print.</li>
+</ul>
+<p>实际印刷开始之前许多这些功能只能叫（即前<a href="qpainter.html#begin" tppabs="http://pyqt4doc.appspot.com/qpainter.html#begin">QPainter.begin</a>（ ）被调用） 。这通常是有道理的，因为，例如，它是不可能的，当你中途印刷改变的份数。也有一些用户设置（通过打印机对话框），并且应用程序都应该遵守的一些设置。看<a href="qabstractprintdialog.html" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html">QAbstractPrintDialog</a>的文档了解更多信息。</p>
+<p>When <a href="qpainter.html#begin" tppabs="http://pyqt4doc.appspot.com/qpainter.html#begin">QPainter.begin</a>（）被调用时，它运行在QPrinter做准备一个新的页面，从而使<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>要立即用于油漆中的第一页的文档。一旦第一个页面已经被画，<a href="qprinter.html#newPage" tppabs="http://pyqt4doc.appspot.com/qprinter.html#newPage">newPage</a>（ ）可以调用请求一个新的空白页面上绘制，或<a href="qpainter.html#end" tppabs="http://pyqt4doc.appspot.com/qpainter.html#end">QPainter.end</a>（ ）可以被调用来完成打印。第二页和之后的所有页面都通过调用准备<a href="qprinter.html#newPage" tppabs="http://pyqt4doc.appspot.com/qprinter.html#newPage">newPage</a>（ ）它们都画前。</p>
+<p>在文档的第一页也不需要在前面加上一个呼叫到<a href="qprinter.html#newPage" tppabs="http://pyqt4doc.appspot.com/qprinter.html#newPage">newPage</a>（ ） 。你只需要调用<a href="qprinter.html#newPage" tppabs="http://pyqt4doc.appspot.com/qprinter.html#newPage">newPage</a>（ ）后<a href="qpainter.html#begin" tppabs="http://pyqt4doc.appspot.com/qpainter.html#begin">QPainter.begin</a>（ ）如果你需要打印的文档的开头插入一个空白页。同样，调用<a href="qprinter.html#newPage" tppabs="http://pyqt4doc.appspot.com/qprinter.html#newPage">newPage</a>（）中的文件的最后一页被涂之后，将导致附加到印刷文件的末尾的后空白页。</p>
+<p>如果你想中止打印作业，<a href="qprinter.html#abort" tppabs="http://pyqt4doc.appspot.com/qprinter.html#abort">abort</a>（ ）将尽最大努力停止打印。它可能会取消整个作业或只是其中的一部分。</p>
+<p>由于QPrinter做可以打印到任何<a href="qprintengine.html" tppabs="http://pyqt4doc.appspot.com/qprintengine.html">QPrintEngine</a>子类，它可以扩展打印支持通过子类化，以包括新类型的印刷子系统<a href="qprintengine.html" tppabs="http://pyqt4doc.appspot.com/qprintengine.html">QPrintEngine</a>并重新实现它的接口。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="ColorMode-enum"></a>QPrinter.ColorMode</h3>
+<p>该枚举类型用于指示是否<a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a>应该在颜色或不打印。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.Color</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">彩色打印如果可用，否则是灰色的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.GrayScale</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">灰度打印，即使在彩色打印机。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="DuplexMode-enum"></a>QPrinter.DuplexMode</h3>
+<p>该枚举用于指示是否将发生在纸（单面或双面印刷），每个片材的一侧或两侧上印刷。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.DuplexNone</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">单面（单面）打印只。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.DuplexAuto</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">打印机的默认设置是用来判断双面打印是否被使用。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.DuplexLongSide</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">每张纸的两面都用于印刷。将纸张翻过来的最长边的第二面打印之前</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.DuplexShortSide</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">每张纸的两面都用于印刷。将纸张翻过来的最短边的第二面打印之前</td>
+</tr>
+</table>
+<p>这个枚举被引入或修改的Qt 4.4 。</p>
+
+
+<h3 class="fn">
+<a name="Orientation-enum"></a>QPrinter.Orientation</h3>
+<p>该枚举类型（不要与混淆<tt>Orientation</tt>）被用来指定每个页面的方向。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.Portrait</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">页面的高度大于它的宽度。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.Landscape</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该页面的宽度大于它的高度。</td>
+</tr>
+</table>
+<p>这种类型的交互<a href="qprinter.html#PaperSize-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PaperSize-enum">QPrinter.PaperSize</a>和<a href="qprinter.html#setFullPage" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setFullPage">QPrinter.setFullPage</a>（）来判断页面的最终尺寸提供给应用程序。</p>
+
+
+<h3 class="fn">
+<a name="OutputFormat-enum"></a>QPrinter.OutputFormat</h3>
+<p>的OutputFormat枚举用于描述的格式<a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a>应该使用进行打印。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.NativeFormat</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">
+<a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a>将使用由它运行的平台定义的方法打印输出。这种模式是默认的直接打印到打印机时。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.PdfFormat</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">
+<a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a>会产生它的输出作为一个可搜索的PDF文件。这种模式是默认的打印到文件时。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.PostScriptFormat</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">
+<a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a>将产生其输出作为在PostScript格式。 （此功能被引入的Qt 4.2 。 ）</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qprinter.html#outputFormat" tppabs="http://pyqt4doc.appspot.com/qprinter.html#outputFormat">outputFormat</a>（ ）<a href="qprinter.html#setOutputFormat" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setOutputFormat">setOutputFormat</a>（）和<a href="qprinter.html#setOutputFileName" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setOutputFileName">setOutputFileName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="PageOrder-enum"></a>QPrinter.PageOrder</h3>
+<p>该枚举类型用于通过<a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a>告诉应用程序如何打印。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.FirstPageFirst</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">编号最小的页面应该先打印出来。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.LastPageFirst</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">最高编号的页面应该先打印出来。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="PageSize-enum"></a>QPrinter.PageSize</h3>
+<h3 class="fn">
+<a name="PaperSource-enum"></a>QPrinter.PaperSource</h3>
+<p>该枚举类型指定了纸张来源<a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a>是使用。<a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a>不检查纸张来源是否可用;它只是使用这些信息来尝试并设置纸张来源。它是否将设置纸张来源取决于打印机是否具有特定源。</p>
+<p><b>Warning:</b>这是目前唯一实现适用于Windows 。</p>
+<table class="valuelist">
+<tr>
+<th class="tblConst">Constant</th>
+<th class="tblVal">Value</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.Auto</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.Cassette</tt></td>
+<td class="topAlign"><tt>11</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.Envelope</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.EnvelopeManual</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.FormSource</tt></td>
+<td class="topAlign"><tt>12</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.LargeCapacity</tt></td>
+<td class="topAlign"><tt>10</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.LargeFormat</tt></td>
+<td class="topAlign"><tt>9</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.Lower</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.MaxPageSource</tt></td>
+<td class="topAlign"><tt>13</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.Middle</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.Manual</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.OnlyOne</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.Tractor</tt></td>
+<td class="topAlign"><tt>7</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.SmallFormat</tt></td>
+<td class="topAlign"><tt>8</tt></td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="PrinterMode-enum"></a>QPrinter.PrinterMode</h3>
+<p>这个枚举变量描述模式的打印机应该工作。它基本上是预置了一定的分辨率和工作模式。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.ScreenResolution</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">设置打印设备屏幕分辨率的分辨率。这具有很大的优势打印机上绘制时所获得的结果将在屏幕上可见的输出相匹配或多或少确切。这是最容易使用，在屏幕上和打印机上的字体度量标准是相同的。这是默认值。 ScreenResolution会产生低质量的输出比高分辨率，应该只用于草稿。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.PrinterResolution</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">此值已弃用。是相当于ScreenResolution在Unix和高分辨率在Windows和Mac 。由于做ScreenResolution和高分辨率之间的区别，使用这个值可能会导致非便携式打印机的代码。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.HighResolution</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">在Windows上，设置打印机分辨率，对于所使用的打印机定义。对于PostScript打印，设置PostScript驱动程序为1200 dpi的分辨率。</td>
+</tr>
+</table>
+<p><b>Note:</b>当在呈现文本<a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a>装置中，要认识到，文字的大小，当在指定的点，是独立于装置本身所指定的分辨率是重要的。因此，它可能是有用的，当结合文字与图形，以确保它们的相对大小是您所期望的指定以像素为单位的字体大小。</p>
+
+
+<h3 class="fn">
+<a name="PrinterState-enum"></a>QPrinter.PrinterState</h3>
+<table class="valuelist">
+<tr>
+<th class="tblConst">Constant</th>
+<th class="tblVal">Value</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.Idle</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.Active</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.Aborted</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.Error</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="PrintRange-enum"></a>QPrinter.PrintRange</h3>
+<p>用于指定打印范围选择选项。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.AllPages</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">所有网页应打印。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.Selection</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">唯一的选择应打印。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.PageRange</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">指定页面范围应打印。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.CurrentPage</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">只有当前页面应该被打印出来。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qabstractprintdialog.html#PrintRange-enum" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#PrintRange-enum">QAbstractPrintDialog.PrintRange</a>。</p>
+
+
+<h3 class="fn">
+<a name="Unit-enum"></a>QPrinter.Unit</h3>
+<p>该枚举类型用于指定的测量单位为页和纸张尺寸。</p>
+<table class="valuelist">
+<tr>
+<th class="tblConst">Constant</th>
+<th class="tblVal">Value</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.Millimeter</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.Point</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.Inch</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.Pica</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.Didot</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.Cicero</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPrinter.DevicePixel</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+</tr>
+</table>
+<p>注意点和DevicePixel之间的差异。的点部被定义为一英寸的1/72th ，而DevicePixel单元是分辨率依赖，并基于实际的像素，或点，在打印机上。</p>
+<p>这个枚举被引入或修改的Qt 4.4 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QPrinter"></a>QPrinter.__init__ (<i>self</i>, <a href="qprinter.html#PrinterMode-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PrinterMode-enum">PrinterMode</a> <i>mode</i> = QPrinter.ScreenResolution)</h3>
+<p>创建一个新的打印机对象与给定<i>mode</i>。</p>
+
+
+<h3 class="fn">
+<a name="QPrinter-2"></a>QPrinter.__init__ (<i>self</i>, <a href="qprinterinfo.html" tppabs="http://pyqt4doc.appspot.com/qprinterinfo.html">QPrinterInfo</a> <i>printer</i>, <a href="qprinter.html#PrinterMode-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PrinterMode-enum">PrinterMode</a> <i>mode</i> = QPrinter.ScreenResolution)</h3>
+<p>创建一个新的打印机对象与给定<i>printer</i>和<i>mode</i>。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="abort"></a>bool QPrinter.abort (<i>self</i>)</h3>
+<p>中止当前印数。返回True如果印数已成功中止，<a href="qprinter.html#printerState" tppabs="http://pyqt4doc.appspot.com/qprinter.html#printerState">printerState</a>（ ）将返回<a href="qprinter.html#PrinterState-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PrinterState-enum">QPrinter.Aborted</a>否则返回False 。</p>
+<p>它并不总是可能中止打印作业。例如，所有的数据已经到打印机，但打印机不能或不愿当被问及取消作业。</p>
+
+
+<h3 class="fn">
+<a name="actualNumCopies"></a>int QPrinter.actualNumCopies (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="collateCopies"></a>bool QPrinter.collateCopies (<i>self</i>)</h3>
+<p>如果核对开启当选择多个副本上，则返回True 。如果它被关闭，当选择多个副本，则返回False 。当核对被关闭各个页面的打印将被重复的<a class="obsolete" href="index.htm#numCopies" tppabs="http://pyqt4doc.appspot.com/qprinter-obsolete.html#numCopies">numCopies</a>（ ） ，开始下一个页面之前量。随着整理打开的所有网页上这些网页下副本开始前被打印出来。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qprinter.html#setCollateCopies" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setCollateCopies">setCollateCopies</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="colorMode"></a><a href="qprinter.html#ColorMode-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#ColorMode-enum">ColorMode</a> QPrinter.colorMode (<i>self</i>)</h3>
+<p>返回当前颜色模式。</p>
+<p><b>See also</b> <a href="qprinter.html#setColorMode" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setColorMode">setColorMode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="copyCount"></a>int QPrinter.copyCount (<i>self</i>)</h3>
+<p>返回将要打印的份数。默认值是1。</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qprinter.html#setCopyCount" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setCopyCount">setCopyCount</a>（）和<a href="qprinter.html#supportsMultipleCopies" tppabs="http://pyqt4doc.appspot.com/qprinter.html#supportsMultipleCopies">supportsMultipleCopies</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="creator"></a>QString QPrinter.creator (<i>self</i>)</h3>
+<p>返回创建文档的应用程序的名称。</p>
+<p><b>See also</b> <a href="qprinter.html#setCreator" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setCreator">setCreator</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="docName"></a>QString QPrinter.docName (<i>self</i>)</h3>
+<p>返回的文档名称。</p>
+<p><b>See also</b> <a href="qprinter.html#setDocName" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setDocName">setDocName</a>（）和<a href="qprintengine.html#PrintEnginePropertyKey-enum" tppabs="http://pyqt4doc.appspot.com/qprintengine.html#PrintEnginePropertyKey-enum">QPrintEngine.PrintEnginePropertyKey</a>。</p>
+
+
+<h3 class="fn">
+<a name="doubleSidedPrinting"></a>bool QPrinter.doubleSidedPrinting (<i>self</i>)</h3>
+<p>如果双面打印已启用，则返回True 。</p>
+<p>目前这个选项只支持X11 。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qprinter.html#setDoubleSidedPrinting" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setDoubleSidedPrinting">setDoubleSidedPrinting</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="duplex"></a><a href="qprinter.html#DuplexMode-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#DuplexMode-enum">DuplexMode</a> QPrinter.duplex (<i>self</i>)</h3>
+<p>返回当前的双工模式。</p>
+<p>目前这个选项只支持X11 。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qprinter.html#setDuplex" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setDuplex">setDuplex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fontEmbeddingEnabled"></a>bool QPrinter.fontEmbeddingEnabled (<i>self</i>)</h3>
+<p>如果字体嵌入已启用，则返回True 。</p>
+<p>目前这个选项只支持X11 。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qprinter.html#setFontEmbeddingEnabled" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setFontEmbeddingEnabled">setFontEmbeddingEnabled</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fromPage"></a>int QPrinter.fromPage (<i>self</i>)</h3>
+<p>返回第一页的范围为要打印的页数（在“从页”的设置） 。在文档中的页面会根据第一页第1页惯例编号。</p>
+<p>默认情况下，此函数返回一个特殊值0 ，这意味着“从页面”设置为no 。</p>
+<p><b>Note:</b>如果fromPage （）和<a href="qprinter.html#toPage" tppabs="http://pyqt4doc.appspot.com/qprinter.html#toPage">toPage</a>（ ）都返回0 ，这表明<i>the whole document will be printed</i>。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qprinter.html#setFromTo" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setFromTo">setFromTo</a>（）和<a href="qprinter.html#toPage" tppabs="http://pyqt4doc.appspot.com/qprinter.html#toPage">toPage</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fullPage"></a>bool QPrinter.fullPage (<i>self</i>)</h3>
+<p>如果打印机的坐标系的原点位于页面的角落，如果其为于可打印区域的边缘，则返回True 。</p>
+<p>See <a href="qprinter.html#setFullPage" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setFullPage">setFullPage</a>（ ）了解详情和注意事项。</p>
+<p><b>See also</b> <a href="qprinter.html#setFullPage" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setFullPage">setFullPage</a>（）和<a href="qprinter.html#PaperSize-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PaperSize-enum">PaperSize</a>。</p>
+
+
+<h3 class="fn">
+<a name="getPageMargins"></a>(float <i>left</i>, float <i>top</i>, float <i>right</i>, float <i>bottom</i>) QPrinter.getPageMargins (<i>self</i>, <a href="qprinter.html#Unit-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#Unit-enum">Unit</a> <i>unit</i>)</h3>
+<p>返回页边距为这台打印机在<i>left</i>，<i>top</i>，<i>right</i>，<i>bottom</i>。返回的边界的单元与指定<i>unit</i>参数。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="isValid"></a>bool QPrinter.isValid (<i>self</i>)</h3>
+<p>返回True如果当前选择的打印机是系统有效的打印机，或者一个纯粹的PDF / PostScript打印机，否则返回False 。</p>
+<p>为了检测其他故障检查的输出<a href="qpainter.html#begin" tppabs="http://pyqt4doc.appspot.com/qpainter.html#begin">QPainter.begin</a>（）或<a href="qprinter.html#newPage" tppabs="http://pyqt4doc.appspot.com/qprinter.html#newPage">QPrinter.newPage</a>（ ） 。</p>
+<pre class="cpp">
+     <span class="type"><a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a></span> printer;
+     printer<span class="operator">.</span>setOutputFormat(<span class="type"><a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a></span><span class="operator">.</span>PdfFormat);
+     printer<span class="operator">.</span>setOutputFileName(<span class="string">"/foobar/nonwritable.pdf"</span>);
+     <span class="type"><a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a></span> painter;
+     <span class="keyword">if</span> (<span class="operator">!</span> painter<span class="operator">.</span>begin(<span class="operator">&amp;</span>printer)) { <span class="comment">// failed to open file</span>
+         <a href="index.htm#qWarning" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qWarning">qWarning</a>(<span class="string">"failed to open file, is it writable?"</span>);
+         <span class="keyword">return</span> <span class="number">1</span>;
+     }
+     painter<span class="operator">.</span>drawText(<span class="number">10</span><span class="operator">,</span> <span class="number">10</span><span class="operator">,</span> <span class="string">"Test"</span>);
+     <span class="keyword">if</span> (<span class="operator">!</span> printer<span class="operator">.</span>newPage()) {
+         <a href="index.htm#qWarning" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qWarning">qWarning</a>(<span class="string">"failed in flushing page to disk, disk full?"</span>);
+         <span class="keyword">return</span> <span class="number">1</span>;
+     }
+     painter<span class="operator">.</span>drawText(<span class="number">10</span><span class="operator">,</span> <span class="number">10</span><span class="operator">,</span> <span class="string">"Test 2"</span>);
+     painter<span class="operator">.</span>end();
+</pre>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qprinter.html#setPrinterName" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setPrinterName">setPrinterName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="metric"></a>int QPrinter.metric (<i>self</i>, <a href="qpaintdevice.html#PaintDeviceMetric-enum" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html#PaintDeviceMetric-enum">QPaintDevice.PaintDeviceMetric</a>)</h3>
+<h3 class="fn">
+<a name="newPage"></a>bool QPrinter.newPage (<i>self</i>)</h3>
+<p>告诉打印机退出当前页面，并继续打印在新页面上。返回True如果成功，否则返回False 。</p>
+<p>在非活动呼叫NEWPAGE （ ）<a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a>对象总是会失败。</p>
+
+
+<h3 class="fn">
+<a name="numCopies"></a>int QPrinter.numCopies (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="orientation"></a><a href="qprinter.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#Orientation-enum">Orientation</a> QPrinter.orientation (<i>self</i>)</h3>
+<p>返回的方向设置。这是驱动程序相关的，但通常为<a href="qprinter.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#Orientation-enum">QPrinter.Portrait</a>。</p>
+<p><b>See also</b> <a href="qprinter.html#setOrientation" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setOrientation">setOrientation</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="outputFileName"></a>QString QPrinter.outputFileName (<i>self</i>)</h3>
+<p>返回的输出文件的名称。默认情况下，这是一个空字符串（表示打印机不能打印到文件） 。</p>
+<p><b>See also</b> <a href="qprinter.html#setOutputFileName" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setOutputFileName">setOutputFileName</a>（）和<a href="qprintengine.html#PrintEnginePropertyKey-enum" tppabs="http://pyqt4doc.appspot.com/qprintengine.html#PrintEnginePropertyKey-enum">QPrintEngine.PrintEnginePropertyKey</a>。</p>
+
+
+<h3 class="fn">
+<a name="outputFormat"></a><a href="qprinter.html#OutputFormat-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#OutputFormat-enum">OutputFormat</a> QPrinter.outputFormat (<i>self</i>)</h3>
+<p>返回此打印机的输出格式。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qprinter.html#setOutputFormat" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setOutputFormat">setOutputFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="pageOrder"></a><a href="qprinter.html#PageOrder-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PageOrder-enum">PageOrder</a> QPrinter.pageOrder (<i>self</i>)</h3>
+<p>返回当前页面顺序。</p>
+<p>默认的页面顺序是<tt>FirstPageFirst</tt>。</p>
+<p><b>See also</b> <a href="qprinter.html#setPageOrder" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setPageOrder">setPageOrder</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="pageRect"></a><a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> QPrinter.pageRect (<i>self</i>)</h3>
+<p>返回该页面的矩形，这是通常比小<a href="qprinter.html#paperRect" tppabs="http://pyqt4doc.appspot.com/qprinter.html#paperRect">paperRect</a>（ ），因为页面通常具有其边界和纸张之间的利润率。</p>
+<p>返回的矩形的单元是<a href="qprinter.html#Unit-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#Unit-enum">DevicePixel</a>。</p>
+<p><b>See also</b> <a href="qprinter.html#paperSize" tppabs="http://pyqt4doc.appspot.com/qprinter.html#paperSize">paperSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="pageRect-2"></a><a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> QPrinter.pageRect (<i>self</i>, <a href="qprinter.html#Unit-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#Unit-enum">Unit</a>)</h3>
+<p>返回页面的矩形<i>unit</i>;这通常比小<a href="qprinter.html#paperRect" tppabs="http://pyqt4doc.appspot.com/qprinter.html#paperRect">paperRect</a>（ ），因为页面通常具有其边界和纸张之间的利润率。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qprinter.html#paperSize" tppabs="http://pyqt4doc.appspot.com/qprinter.html#paperSize">paperSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="pageSize"></a><a href="qprinter.html#PageSize-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PageSize-enum">PageSize</a> QPrinter.pageSize (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="paintEngine"></a><a href="qpaintengine.html" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html">QPaintEngine</a> QPrinter.paintEngine (<i>self</i>)</h3>
+<p>从重新实现<a href="qpaintdevice.html#paintEngine" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html#paintEngine">QPaintDevice.paintEngine</a>（ ） 。</p>
+<p>返回打印机使用的绘图引擎。</p>
+
+
+<h3 class="fn">
+<a name="paperRect"></a><a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> QPrinter.paperRect (<i>self</i>)</h3>
+<p>返回该纸的矩形，这是通常比大<a href="qprinter.html#pageRect" tppabs="http://pyqt4doc.appspot.com/qprinter.html#pageRect">pageRect</a>（ ） 。</p>
+<p>返回的矩形的单元是<a href="qprinter.html#Unit-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#Unit-enum">DevicePixel</a>。</p>
+<p><b>See also</b> <a href="qprinter.html#pageRect" tppabs="http://pyqt4doc.appspot.com/qprinter.html#pageRect">pageRect</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="paperRect-2"></a><a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> QPrinter.paperRect (<i>self</i>, <a href="qprinter.html#Unit-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#Unit-enum">Unit</a>)</h3>
+<p>返回该论文的矩形<i>unit</i>;这通常比大<a href="qprinter.html#pageRect" tppabs="http://pyqt4doc.appspot.com/qprinter.html#pageRect">pageRect</a>（ ） 。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qprinter.html#pageRect" tppabs="http://pyqt4doc.appspot.com/qprinter.html#pageRect">pageRect</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="paperSize"></a><a href="qprinter.html#PageSize-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PageSize-enum">PageSize</a> QPrinter.paperSize (<i>self</i>)</h3>
+<p>返回打印机的纸张尺寸。默认值是驱动程序相关的。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qprinter.html#setPaperSize" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setPaperSize">setPaperSize</a>（ ）<a href="qprinter.html#pageRect" tppabs="http://pyqt4doc.appspot.com/qprinter.html#pageRect">pageRect</a>（）和<a href="qprinter.html#paperRect" tppabs="http://pyqt4doc.appspot.com/qprinter.html#paperRect">paperRect</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="paperSize-2"></a><a href="qsizef.html" tppabs="http://pyqt4doc.appspot.com/qsizef.html">QSizeF</a> QPrinter.paperSize (<i>self</i>, <a href="qprinter.html#Unit-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#Unit-enum">Unit</a> <i>unit</i>)</h3>
+<p>返回的纸张尺寸<i>unit</i>。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qprinter.html#setPaperSize" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setPaperSize">setPaperSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="paperSource"></a><a href="qprinter.html#PaperSource-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PaperSource-enum">PaperSource</a> QPrinter.paperSource (<i>self</i>)</h3>
+<p>返回打印机的纸张来源。这是<tt>Manual</tt>或打印机托盘或纸盒。</p>
+<p><b>See also</b> <a href="qprinter.html#setPaperSource" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setPaperSource">setPaperSource</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="printEngine"></a><a href="qprintengine.html" tppabs="http://pyqt4doc.appspot.com/qprintengine.html">QPrintEngine</a> QPrinter.printEngine (<i>self</i>)</h3>
+<p>返回所使用的打印机的打印引擎。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+
+
+<h3 class="fn">
+<a name="printerName"></a>QString QPrinter.printerName (<i>self</i>)</h3>
+<p>返回打印机的名称。这个值最初设置为默认打印机的名称。</p>
+<p><b>See also</b> <a href="qprinter.html#setPrinterName" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setPrinterName">setPrinterName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="printerSelectionOption"></a>QString QPrinter.printerSelectionOption (<i>self</i>)</h3>
+<p>返回打印机选项选择字符串。这是仅在打印命令已经明确设置非常有用。</p>
+<p>默认值（空字符串）意味着打印机应在与系统相关的方式来选择。</p>
+<p>任何其他值意味着，给定的值应该被使用。</p>
+<p><b>Warning:</b>此功能不适用于Windows 。</p>
+<p><b>See also</b> <a href="qprinter.html#setPrinterSelectionOption" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setPrinterSelectionOption">setPrinterSelectionOption</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="printerState"></a><a href="qprinter.html#PrinterState-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PrinterState-enum">PrinterState</a> QPrinter.printerState (<i>self</i>)</h3>
+<p>返回打印机的当前状态。这可能并不总是准确的（例如，如果打印机不具有报告其状态的操作系统的能力） 。</p>
+
+
+<h3 class="fn">
+<a name="printProgram"></a>QString QPrinter.printProgram (<i>self</i>)</h3>
+<p>返回发送的打印输出到打印机上的节目的名称。</p>
+<p>默认是返回一个空字符串，这意味着<a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a>会自作聪明的系统相关的方式。在X11而已，你可以将它设置为不同的东西来使用特定的打印程序。在其他平台上，此方法返回一个空字符串。</p>
+<p><b>See also</b> <a href="qprinter.html#setPrintProgram" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setPrintProgram">setPrintProgram</a>（）和<a href="qprinter.html#setPrinterSelectionOption" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setPrinterSelectionOption">setPrinterSelectionOption</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="printRange"></a><a href="qprinter.html#PrintRange-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PrintRange-enum">PrintRange</a> QPrinter.printRange (<i>self</i>)</h3>
+<p>返回的页面范围<a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a>。已经开通的打印设置对话框后，该函数返回用户选择的值。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qprinter.html#setPrintRange" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setPrintRange">setPrintRange</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="resolution"></a>int QPrinter.resolution (<i>self</i>)</h3>
+<p>返回打印机的当前假定号决议，载<a href="qprinter.html#setResolution" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setResolution">setResolution</a>（）或由打印机驱动程序。</p>
+<p><b>See also</b> <a href="qprinter.html#setResolution" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setResolution">setResolution</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCollateCopies"></a>QPrinter.setCollateCopies (<i>self</i>, bool <i>collate</i>)</h3>
+<p>设置了自动分页复选框的默认值将出现打印对话框的时候。如果<i>collate</i>是真的，它将使<a class="compat" href="index.htm#setCollateCopiesEnabled" tppabs="http://pyqt4doc.appspot.com/qprinter-qt3.html#setCollateCopiesEnabled">setCollateCopiesEnabled</a>（ ） 。默认值是False 。此值将通过什么用户按下在打印对话框中进行更改。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qprinter.html#collateCopies" tppabs="http://pyqt4doc.appspot.com/qprinter.html#collateCopies">collateCopies</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setColorMode"></a>QPrinter.setColorMode (<i>self</i>, <a href="qprinter.html#ColorMode-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#ColorMode-enum">ColorMode</a>)</h3>
+<p>设置打印机的色彩模式<i>newColorMode</i>，它可以是<tt>Color</tt> or <tt>GrayScale</tt>。</p>
+<p><b>See also</b> <a href="qprinter.html#colorMode" tppabs="http://pyqt4doc.appspot.com/qprinter.html#colorMode">colorMode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCopyCount"></a>QPrinter.setCopyCount (<i>self</i>, int)</h3>
+<p>设置的份数被打印到<i>count</i>。</p>
+<p>打印机驱动程序读取该设置并打印指定的副本数。</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qprinter.html#copyCount" tppabs="http://pyqt4doc.appspot.com/qprinter.html#copyCount">copyCount</a>（）和<a href="qprinter.html#supportsMultipleCopies" tppabs="http://pyqt4doc.appspot.com/qprinter.html#supportsMultipleCopies">supportsMultipleCopies</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCreator"></a>QPrinter.setCreator (<i>self</i>, QString)</h3>
+<p>设置创建该文件的应用程序的名称<i>creator</i>。</p>
+<p>此功能仅适用于X11版本的Qt 。如果没有指定创作者的名字，创作者将被设置为“ QT”后面跟着一些版本号。</p>
+<p><b>See also</b> <a href="qprinter.html#creator" tppabs="http://pyqt4doc.appspot.com/qprinter.html#creator">creator</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setDocName"></a>QPrinter.setDocName (<i>self</i>, QString)</h3>
+<p>设置文件名<i>name</i>。</p>
+<p>在X11上，文件名称是例如用作默认的输出文件名<a href="qprintdialog.html" tppabs="http://pyqt4doc.appspot.com/qprintdialog.html">QPrintDialog</a>。请注意，该文件的名称不影响文件名如果打印机打印到文件。使用setOutputFile （）函数来实现这个。</p>
+<p><b>See also</b> <a href="qprinter.html#docName" tppabs="http://pyqt4doc.appspot.com/qprinter.html#docName">docName</a>（）和<a href="qprintengine.html#PrintEnginePropertyKey-enum" tppabs="http://pyqt4doc.appspot.com/qprintengine.html#PrintEnginePropertyKey-enum">QPrintEngine.PrintEnginePropertyKey</a>。</p>
+
+
+<h3 class="fn">
+<a name="setDoubleSidedPrinting"></a>QPrinter.setDoubleSidedPrinting (<i>self</i>, bool <i>enable</i>)</h3>
+<p>启用双面打印，如果<i>doubleSided</i>为True，否则禁用它。</p>
+<p>目前这个选项只支持X11 。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qprinter.html#doubleSidedPrinting" tppabs="http://pyqt4doc.appspot.com/qprinter.html#doubleSidedPrinting">doubleSidedPrinting</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setDuplex"></a>QPrinter.setDuplex (<i>self</i>, <a href="qprinter.html#DuplexMode-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#DuplexMode-enum">DuplexMode</a> <i>duplex</i>)</h3>
+<p>启用基于双面打印<i>duplex</i>模式。</p>
+<p>目前这个选项只支持X11 。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qprinter.html#duplex" tppabs="http://pyqt4doc.appspot.com/qprinter.html#duplex">duplex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setEngines"></a>QPrinter.setEngines (<i>self</i>, <a href="qprintengine.html" tppabs="http://pyqt4doc.appspot.com/qprintengine.html">QPrintEngine</a> <i>printEngine</i>, <a href="qpaintengine.html" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html">QPaintEngine</a> <i>paintEngine</i>)</h3>
+<p>此功能用于通过子类<a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a>指定自定义打印和油漆引擎（<i>printEngine</i>和<i>paintEngine</i>，分别）。</p>
+<p><a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a>不佔用发动机的所有权，所以你需要管理这些引擎的情况下自己。</p>
+<p>请注意，改变发动机将重置打印机的状态和它的所有属性。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qprinter.html#printEngine" tppabs="http://pyqt4doc.appspot.com/qprinter.html#printEngine">printEngine</a>（ ）<a href="qprinter.html#paintEngine" tppabs="http://pyqt4doc.appspot.com/qprinter.html#paintEngine">paintEngine</a>（）和<a href="qprinter.html#setOutputFormat" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setOutputFormat">setOutputFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFontEmbeddingEnabled"></a>QPrinter.setFontEmbeddingEnabled (<i>self</i>, bool <i>enable</i>)</h3>
+<p>启用或禁用字体嵌入视<i>enable</i>。</p>
+<p>目前这个选项只支持X11 。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qprinter.html#fontEmbeddingEnabled" tppabs="http://pyqt4doc.appspot.com/qprinter.html#fontEmbeddingEnabled">fontEmbeddingEnabled</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFromTo"></a>QPrinter.setFromTo (<i>self</i>, int <i>fromPage</i>, int <i>toPage</i>)</h3>
+<p>设置的要打印到复盖由指定号码的页面的页面范围<i>from</i>和<i>to</i>，其中<i>from</i>对应于该区域中的第一页和<i>to</i>对应于最后。</p>
+<p><b>Note:</b>在文档中的页面会根据第一页第1页惯例编号。然而，如果<i>from</i>和<i>to</i>都设置为0，则<i>whole document will be
+printed</i>。</p>
+<p>此功能主要用于当你调用设置一个默认值，用户可以复盖在打印对话框<a class="compat" href="index.htm#setup" tppabs="http://pyqt4doc.appspot.com/qprinter-qt3.html#setup">setup</a>（ ） 。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qprinter.html#fromPage" tppabs="http://pyqt4doc.appspot.com/qprinter.html#fromPage">fromPage</a>（）和<a href="qprinter.html#toPage" tppabs="http://pyqt4doc.appspot.com/qprinter.html#toPage">toPage</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFullPage"></a>QPrinter.setFullPage (<i>self</i>, bool)</h3>
+<p>If <i>fp</i>诚然，使绘画在整个页面的支持，否则将绘制限制在设备报告的可打印区域。</p>
+<p>默认情况下，满页打印被禁用。在这种情况下，在原点<a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a>的坐标系可打印区域的左上角重合。</p>
+<p>如果整页打印启用时，的起源<a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a>的坐标系统与纸本身的左上角重合。在这种情况下，<a href="qpaintdevice.html#PaintDeviceMetric-enum" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html#PaintDeviceMetric-enum">device metrics</a>由所指示将报告完全相同的尺寸<a href="qprinter.html#PaperSize-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PaperSize-enum">PaperSize</a>。它可能无法在整个物理页的打印，因为打印机的页边距的，因此应用程序必须考虑边缘本身。</p>
+<p><b>See also</b> <a href="qprinter.html#fullPage" tppabs="http://pyqt4doc.appspot.com/qprinter.html#fullPage">fullPage</a>（ ）<a href="qprinter.html#setPaperSize" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setPaperSize">setPaperSize</a>（ ）<a href="qpaintdevice.html#width" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html#width">width</a>（ ）<a href="qpaintdevice.html#height" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html#height">height</a>（）和<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/printing.html">Printing with Qt</a>。</p>
+
+
+<h3 class="fn">
+<a name="setNumCopies"></a>QPrinter.setNumCopies (<i>self</i>, int)</h3>
+<h3 class="fn">
+<a name="setOrientation"></a>QPrinter.setOrientation (<i>self</i>, <a href="qprinter.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#Orientation-enum">Orientation</a>)</h3>
+<p>设置打印方向为<i>orientation</i>。</p>
+<p>方向既可以是<a href="qprinter.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#Orientation-enum">QPrinter.Portrait</a> or <a href="qprinter.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#Orientation-enum">QPrinter.Landscape</a>。</p>
+<p>打印机驱动程序读取使用指定的方向该设置并打印。</p>
+<p>在Windows上，可以在打印时更改此选项，将生效从下一次调用<a href="qprinter.html#newPage" tppabs="http://pyqt4doc.appspot.com/qprinter.html#newPage">newPage</a>（ ） 。</p>
+<p>在Mac OS X ，在打印作业期间改变方向没有影响。</p>
+<p><b>See also</b> <a href="qprinter.html#orientation" tppabs="http://pyqt4doc.appspot.com/qprinter.html#orientation">orientation</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setOutputFileName"></a>QPrinter.setOutputFileName (<i>self</i>, QString)</h3>
+<p>设置输出文件的名称<i>fileName</i>。</p>
+<p>设置为null或空名称（ 0或“” ）禁用打印到文件。设置一个非空的名字使打印到文件中。</p>
+<p>这可以改变的值<a href="qprinter.html#outputFormat" tppabs="http://pyqt4doc.appspot.com/qprinter.html#outputFormat">outputFormat</a>（ ） 。如果文件名的后缀“ 。 PS”的PostScript ，然后自动选择输出格式。如果文件名有“ PDF ”后缀的PDF生成。如果文件名有一个后缀不是“ PS”和“ PDF ”等，所使用的输出格式是一组与<a href="qprinter.html#setOutputFormat" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setOutputFormat">setOutputFormat</a>（ ） 。</p>
+<p><a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a>使用Qt的跨平台的PostScript或PDF打印引擎分别。如果你可以在本地生产这种格式，例如Mac OS X可以从它的打印引擎生成PDF文件，设置输出格式返回给<a href="qprinter.html#OutputFormat-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#OutputFormat-enum">NativeFormat</a>。</p>
+<p><b>See also</b> <a href="qprinter.html#outputFileName" tppabs="http://pyqt4doc.appspot.com/qprinter.html#outputFileName">outputFileName</a>（ ）<a class="compat" href="index.htm#setOutputToFile" tppabs="http://pyqt4doc.appspot.com/qprinter-qt3.html#setOutputToFile">setOutputToFile</a>（）和<a href="qprinter.html#setOutputFormat" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setOutputFormat">setOutputFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setOutputFormat"></a>QPrinter.setOutputFormat (<i>self</i>, <a href="qprinter.html#OutputFormat-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#OutputFormat-enum">OutputFormat</a> <i>format</i>)</h3>
+<p>设置该打印机的输出格式<i>format</i>。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qprinter.html#outputFormat" tppabs="http://pyqt4doc.appspot.com/qprinter.html#outputFormat">outputFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPageMargins"></a>QPrinter.setPageMargins (<i>self</i>, float <i>left</i>, float <i>top</i>, float <i>right</i>, float <i>bottom</i>, <a href="qprinter.html#Unit-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#Unit-enum">Unit</a> <i>unit</i>)</h3>
+<p>该函数设置<i>left</i>，<i>top</i>，<i>right</i>和<i>bottom</i>页边距为这台打印机。页边距的单位与指定<i>unit</i>参数。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="setPageOrder"></a>QPrinter.setPageOrder (<i>self</i>, <a href="qprinter.html#PageOrder-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PageOrder-enum">PageOrder</a>)</h3>
+<p>设置页面顺序来<i>pageOrder</i>。</p>
+<p>页面顺序可以是<a href="qprinter.html#PageOrder-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PageOrder-enum">QPrinter.FirstPageFirst</a> or
+<a href="qprinter.html#PageOrder-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PageOrder-enum">QPrinter.LastPageFirst</a>。该应用程序是负责读取页面顺序和相应的打印。</p>
+<p>此功能是设置一个默认值，用户可以在打印对话框中复盖最有用。</p>
+<p>此功能仅在X11下的支持。</p>
+<p><b>See also</b> <a href="qprinter.html#pageOrder" tppabs="http://pyqt4doc.appspot.com/qprinter.html#pageOrder">pageOrder</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPageSize"></a>QPrinter.setPageSize (<i>self</i>, <a href="qprinter.html#PageSize-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PageSize-enum">PageSize</a>)</h3>
+<h3 class="fn">
+<a name="setPaperSize"></a>QPrinter.setPaperSize (<i>self</i>, <a href="qprinter.html#PageSize-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PageSize-enum">PageSize</a>)</h3>
+<p>设置打印机纸张大小<i>newPaperSize</i>如果支持的大小。其结果是不确定的，如果<i>newPaperSize</i>不被支持。</p>
+<p>默认的纸张大小是取决于驱动程序。</p>
+<p>此功能主要是用于设置一个默认值，用户可以在打印对话框中重写有用的。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qprinter.html#paperSize" tppabs="http://pyqt4doc.appspot.com/qprinter.html#paperSize">paperSize</a>（ ）<a href="qprinter.html#PaperSize-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PaperSize-enum">PaperSize</a>，<a href="qprinter.html#setFullPage" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setFullPage">setFullPage</a>（ ）<a href="qprinter.html#setResolution" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setResolution">setResolution</a>（ ）<a href="qprinter.html#pageRect" tppabs="http://pyqt4doc.appspot.com/qprinter.html#pageRect">pageRect</a>（）和<a href="qprinter.html#paperRect" tppabs="http://pyqt4doc.appspot.com/qprinter.html#paperRect">paperRect</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPaperSize-2"></a>QPrinter.setPaperSize (<i>self</i>, <a href="qsizef.html" tppabs="http://pyqt4doc.appspot.com/qsizef.html">QSizeF</a> <i>paperSize</i>, <a href="qprinter.html#Unit-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#Unit-enum">Unit</a> <i>unit</i>)</h3>
+<p>设置纸张尺寸的基础上<i>paperSize</i>在<i>unit</i>。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qprinter.html#paperSize" tppabs="http://pyqt4doc.appspot.com/qprinter.html#paperSize">paperSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPaperSource"></a>QPrinter.setPaperSource (<i>self</i>, <a href="qprinter.html#PaperSource-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PaperSource-enum">PaperSource</a>)</h3>
+<p>设置纸张来源设置为<i>source</i>。</p>
+<p>仅适用于Windows ：该选项可以在打印时改变将生效从下一次调用<a href="qprinter.html#newPage" tppabs="http://pyqt4doc.appspot.com/qprinter.html#newPage">newPage</a>（ ）</p>
+<p><b>See also</b> <a href="qprinter.html#paperSource" tppabs="http://pyqt4doc.appspot.com/qprinter.html#paperSource">paperSource</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPrinterName"></a>QPrinter.setPrinterName (<i>self</i>, QString)</h3>
+<p>设置打印机名称<i>name</i>。</p>
+<p><b>See also</b> <a href="qprinter.html#printerName" tppabs="http://pyqt4doc.appspot.com/qprinter.html#printerName">printerName</a>（）和<a href="qprinter.html#isValid" tppabs="http://pyqt4doc.appspot.com/qprinter.html#isValid">isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPrinterSelectionOption"></a>QPrinter.setPrinterSelectionOption (<i>self</i>, QString)</h3>
+<p>设置要使用的打印机<i>option</i>选择打印机。<i>option</i>为null （默认情况下这意味着Qt的应该是足够聪明，猜对），但它可以被设置为其他值使用特定的打印机选择选项。</p>
+<p>如果选择打印机选项被改变，而在打印机处于活动状态，当前打印作业可能会或可能不会受到影响。</p>
+<p><b>Warning:</b>此功能不适用于Windows 。</p>
+<p><b>See also</b> <a href="qprinter.html#printerSelectionOption" tppabs="http://pyqt4doc.appspot.com/qprinter.html#printerSelectionOption">printerSelectionOption</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPrintProgram"></a>QPrinter.setPrintProgram (<i>self</i>, QString)</h3>
+<p>设置应该做的打印作业的程序的名称<i>printProg</i>。</p>
+<p>在X11上，此功能将设置程序与PostScript输出打电话。在其他平台上，它没有任何效果。</p>
+<p><b>See also</b> <a href="qprinter.html#printProgram" tppabs="http://pyqt4doc.appspot.com/qprinter.html#printProgram">printProgram</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPrintRange"></a>QPrinter.setPrintRange (<i>self</i>, <a href="qprinter.html#PrintRange-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PrintRange-enum">PrintRange</a> <i>range</i>)</h3>
+<p>设置打印范围选项是<i>range</i>。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qprinter.html#printRange" tppabs="http://pyqt4doc.appspot.com/qprinter.html#printRange">printRange</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setResolution"></a>QPrinter.setResolution (<i>self</i>, int)</h3>
+<p>要求打印机在打印<i>dpi</i>或在靠近<i>dpi</i>越好。</p>
+<p>所返回该设置影响的坐标系统，例如<a href="qpainter.html#viewport" tppabs="http://pyqt4doc.appspot.com/qpainter.html#viewport">QPainter.viewport</a>（ ） 。</p>
+<p>这个函数必须在被调用<a href="qpainter.html#begin" tppabs="http://pyqt4doc.appspot.com/qpainter.html#begin">QPainter.begin</a>（ ）有在所有平台上的效果。</p>
+<p><b>See also</b> <a href="qprinter.html#resolution" tppabs="http://pyqt4doc.appspot.com/qprinter.html#resolution">resolution</a>（）和<a href="qprinter.html#setPaperSize" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setPaperSize">setPaperSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="supportedResolutions"></a>list-of-int QPrinter.supportedResolutions (<i>self</i>)</h3>
+<p>返回的决议（的点每英寸的整数的列表）清单打印机说它支持。</p>
+<p>对于X11 ，所有的印刷是直接到后记，这个函数总是返回一个仅包含后记分辨率，即72 （ 72 dpi的一个项目列表 - 但见<a href="qprinter.html#PrinterMode-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PrinterMode-enum">PrinterMode</a>） 。</p>
+
+
+<h3 class="fn">
+<a name="supportsMultipleCopies"></a>bool QPrinter.supportsMultipleCopies (<i>self</i>)</h3>
+<p>返回True如果打印机支持打印在一个作业中的同一文档的多个副本，否则返回False。</p>
+<p>在大多数系统中，这个函数将返回True 。但是，不支持CUPS的X11系统上，这个函数将返回False 。这意味着应用程序具有通过打印同一文档的要求的次数来处理的份数。</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qprinter.html#setCopyCount" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setCopyCount">setCopyCount</a>（）和<a href="qprinter.html#copyCount" tppabs="http://pyqt4doc.appspot.com/qprinter.html#copyCount">copyCount</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toPage"></a>int QPrinter.toPage (<i>self</i>)</h3>
+<p>返回的最后一页，在一定范围内的要打印的页数（在“页面”的设置） 。在文档中的页面会根据第一页第1页惯例编号。</p>
+<p>默认情况下，此函数返回一个特殊值0 ，意思是“页面”设置为no 。</p>
+<p><b>Note:</b> If <a href="qprinter.html#fromPage" tppabs="http://pyqt4doc.appspot.com/qprinter.html#fromPage">fromPage</a>（）和toPage （）都返回0 ，这表明<i>the whole
+document will be printed</i>。</p>
+<p>程序员负责读取该设置并打印相应。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qprinter.html#setFromTo" tppabs="http://pyqt4doc.appspot.com/qprinter.html#setFromTo">setFromTo</a>（）和<a href="qprinter.html#fromPage" tppabs="http://pyqt4doc.appspot.com/qprinter.html#fromPage">fromPage</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

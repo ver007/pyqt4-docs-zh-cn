@@ -1,0 +1,665 @@
+﻿<html>
+<head>
+<title>QSqlQuery Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QSqlQuery Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtsql.html">QtSql</a> module]</sup></sup>
+</h1>
+<p>该QSqlQuery类提供执行和操作的SQL语句的方法。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qsqlquery.html#BatchExecutionMode-enum" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#BatchExecutionMode-enum">BatchExecutionMode</a></b> { ValuesAsRows, ValuesAsColumns }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlquery.html#QSqlQuery" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#QSqlQuery">__init__</a></b> (<i>self</i>, QSqlResult <i>r</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlquery.html#QSqlQuery-2" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#QSqlQuery-2">__init__</a></b> (<i>self</i>, QString <i>query</i> = QString(), QSqlDatabase <i>db</i> = QSqlDatabase())</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlquery.html#QSqlQuery-3" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#QSqlQuery-3">__init__</a></b> (<i>self</i>, QSqlDatabase <i>db</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlquery.html#QSqlQuery-4" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#QSqlQuery-4">__init__</a></b> (<i>self</i>, QSqlQuery <i>other</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlquery.html#addBindValue" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#addBindValue">addBindValue</a></b> (<i>self</i>, QVariant <i>val</i>, QSql.ParamType <i>type</i> = QSql.In)</li>
+<li>
+<div class="fn"></div>int <b><a href="qsqlquery.html#at" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#at">at</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlquery.html#bindValue" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#bindValue">bindValue</a></b> (<i>self</i>, QString <i>placeholder</i>, QVariant <i>val</i>, QSql.ParamType <i>type</i> = QSql.In)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlquery.html#bindValue-2" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#bindValue-2">bindValue</a></b> (<i>self</i>, int <i>pos</i>, QVariant <i>val</i>, QSql.ParamType <i>type</i> = QSql.In)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qsqlquery.html#boundValue" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#boundValue">boundValue</a></b> (<i>self</i>, QString <i>placeholder</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qsqlquery.html#boundValue-2" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#boundValue-2">boundValue</a></b> (<i>self</i>, int <i>pos</i>)</li>
+<li>
+<div class="fn"></div>dict-of-QString-QVariant <b><a href="qsqlquery.html#boundValues" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#boundValues">boundValues</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlquery.html#clear" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#clear">clear</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSqlDriver <b><a href="qsqlquery.html#driver" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#driver">driver</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqlquery.html#exec" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#exec">exec_</a></b> (<i>self</i>, QString <i>query</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqlquery.html#exec-2" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#exec-2">exec_</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqlquery.html#execBatch" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#execBatch">execBatch</a></b> (<i>self</i>, BatchExecutionMode <i>mode</i> = QSqlQuery.ValuesAsRows)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsqlquery.html#executedQuery" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#executedQuery">executedQuery</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlquery.html#finish" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#finish">finish</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqlquery.html#first" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#first">first</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqlquery.html#isActive" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isActive">isActive</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqlquery.html#isForwardOnly" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isForwardOnly">isForwardOnly</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqlquery.html#isNull" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isNull">isNull</a></b> (<i>self</i>, int <i>field</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqlquery.html#isSelect" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isSelect">isSelect</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqlquery.html#isValid" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isValid">isValid</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqlquery.html#last" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#last">last</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSqlError <b><a href="qsqlquery.html#lastError" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#lastError">lastError</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qsqlquery.html#lastInsertId" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#lastInsertId">lastInsertId</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsqlquery.html#lastQuery" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#lastQuery">lastQuery</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqlquery.html#next" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#next">next</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqlquery.html#nextResult" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#nextResult">nextResult</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSql.NumericalPrecisionPolicy <b><a href="qsqlquery.html#numericalPrecisionPolicy" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#numericalPrecisionPolicy">numericalPrecisionPolicy</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qsqlquery.html#numRowsAffected" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#numRowsAffected">numRowsAffected</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqlquery.html#prepare" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#prepare">prepare</a></b> (<i>self</i>, QString <i>query</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqlquery.html#previous" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#previous">previous</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSqlRecord <b><a href="qsqlquery.html#record" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#record">record</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSqlResult <b><a href="qsqlquery.html#result" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#result">result</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqlquery.html#seek" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#seek">seek</a></b> (<i>self</i>, int <i>index</i>, bool <i>relative</i> = False)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlquery.html#setForwardOnly" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#setForwardOnly">setForwardOnly</a></b> (<i>self</i>, bool <i>forward</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlquery.html#setNumericalPrecisionPolicy" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#setNumericalPrecisionPolicy">setNumericalPrecisionPolicy</a></b> (<i>self</i>, QSql.NumericalPrecisionPolicy <i>precisionPolicy</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qsqlquery.html#size" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#size">size</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qsqlquery.html#value" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#value">value</a></b> (<i>self</i>, int <i>i</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QSqlQuery类提供执行和操作的SQL语句的方法。</p>
+<p>QSqlQuery封装这是在执行涉及从SQL查询创建，浏览和检索数据的功能<a href="qsqldatabase.html" tppabs="http://pyqt4doc.appspot.com/qsqldatabase.html">QSqlDatabase</a>。它可以被用来执行DML （数据操纵语言）语句，如<tt>SELECT</tt>，<tt>INSERT</tt>，<tt>UPDATE</tt>和<tt>DELETE</tt>，以及DDL （数据定义语言）语句，如<tt>CREATE</tt> <tt>TABLE</tt>。它也可以被用来执行特定于数据库的命令而不是标准的SQL （例如<tt>SET DATESTYLE=ISO</tt>PostgreSQL的） 。</p>
+<p>成功执行的SQL语句设置查询的状态为主动，使<a href="qsqlquery.html#isActive" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isActive">isActive</a>（ ）返回True 。否则，查询的状态设置为无效。在任一情况下，执行一个新的SQL语句时，查询被定位在一个无效的记录。一个活跃的查询必须被导航到一个有效的记录（使<a href="qsqlquery.html#isValid" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isValid">isValid</a>（ ）值可以被检索之前返回True ） 。</p>
+<p>对于某些数据库，如果积极的查询，它是一个<tt>SELECT</tt>当你调用语句存在<a href="qsqldatabase.html#commit" tppabs="http://pyqt4doc.appspot.com/qsqldatabase.html#commit">commit()</a> or <a href="qsqldatabase.html#rollback" tppabs="http://pyqt4doc.appspot.com/qsqldatabase.html#rollback">rollback()</a>，在提交或回滚将失败。看<a href="qsqlquery.html#isActive" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isActive">isActive</a>（ ）了解详情。</p>
+<a id="qsqlquery-examples" name="qsqlquery-examples"></a>
+<p>导航记录的是具有以下功能进行：</p>
+<ul>
+<li>
+<a href="qsqlquery.html#next" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#next">next</a>()</li>
+<li>
+<a href="qsqlquery.html#previous" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#previous">previous</a>()</li>
+<li>
+<a href="qsqlquery.html#first" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#first">first</a>()</li>
+<li>
+<a href="qsqlquery.html#last" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#last">last</a>()</li>
+<li>
+<a href="qsqlquery.html#seek" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#seek">seek</a>()</li>
+</ul>
+<p>这些功能使程序员可以前进，后退或者擅自通过查询返回的记录。如果你只需要向前移动的结果（例如，通过使用<a href="qsqlquery.html#next" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#next">next</a>（ ） ） ，则可以使用<a href="qsqlquery.html#setForwardOnly" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#setForwardOnly">setForwardOnly</a>（ ） ，这将节省一个显着的内存开销，提高对某些数据库的性能。一旦活动查询被定位在一个有效的记录，数据可以使用检索<a href="qsqlquery.html#value" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#value">value</a>（ ） 。所有数据从SQL后端使用转<a href="index.htm#qvariants" tppabs="http://pyqt4doc.appspot.com/qtwebkit-bridge.html#qvariants">QVariants</a>。</p>
+<p>例如：</p>
+<pre class="cpp">
+     <span class="type">QSqlQuery</span> query(<span class="string">"SELECT country FROM artist"</span>);
+     <span class="keyword">while</span> (query<span class="operator">.</span>next()) {
+         <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> country <span class="operator">=</span> query<span class="operator">.</span>value(<span class="number">0</span>)<span class="operator">.</span>toString();
+         doSomething(country);
+     }
+</pre>
+<p>要访问查询返回的数据，使用值（整数）。在由返回的数据中的每个字段<tt>SELECT</tt>声明是通过传递该领域的地位在声明中，从0开始访问的。这使得使用<tt>SELECT *</tt>查询不可取的，因为返回的字段的顺序是不确定的。</p>
+<p>为了提高效率，有没有函数通过名字来访问一个字段（除非你使用预编译查询的姓名，解释见下文） 。若要将字段名成一个索引，使用<a href="qsqlquery.html#record" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#record">record</a>（ ） 。<a href="qsqlrecord.html#indexOf" tppabs="http://pyqt4doc.appspot.com/qsqlrecord.html#indexOf">indexOf()</a>例如：</p>
+<pre class="cpp">
+     <span class="type">QSqlQuery</span> query(<span class="string">"SELECT * FROM artist"</span>);
+     <span class="type">int</span> fieldNo <span class="operator">=</span> query<span class="operator">.</span>record()<span class="operator">.</span>indexOf(<span class="string">"country"</span>);
+     <span class="keyword">while</span> (query<span class="operator">.</span>next()) {
+         <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> country <span class="operator">=</span> query<span class="operator">.</span>value(fieldNo)<span class="operator">.</span>toString();
+         doSomething(country);
+     }
+</pre>
+<p>QSqlQuery支持准备好的查询执行和参数值来佔位符绑定。有些数据库不支持这些功能，所以对于那些， Qt的模拟所需的功能。例如， Oracle和ODBC驱动程序已准备妥当查询支持，和Qt使得它的使用，但对于那些没有这种支持的数据库， Qt的实现了功能本身，如通过执行一个查询时用实际值替换的佔位符。使用<a href="qsqlquery.html#numRowsAffected" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#numRowsAffected">numRowsAffected</a>（ ）来找出多少行受到非<tt>SELECT</tt>查询，并<a href="qsqlquery.html#size" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#size">size</a>（）找到多少被检索由<tt>SELECT</tt>。</p>
+<p>Oracle数据库通过使用一个冒号名称的语法，如查明佔位符<tt>:name</tt>。 ODBC只是使用<tt>?</tt>字符。 Qt支持这两种语法，用，你不能将它们混合在同一个查询的限制。</p>
+<p>您可以使用检索所有单个变量的字段的值（地图）<a href="qsqlquery.html#boundValues" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#boundValues">boundValues</a>（ ） 。</p>
+<a id="approaches-to-binding-values" name="approaches-to-binding-values"></a>
+<h3>Approaches to Binding Values</h3>
+<p>下面，我们提出使用每四个不同的结合方式，以及结合值到存储过程的一个例子相同的例子。</p>
+<p><b>Named binding using named placeholders:</b></p>
+<pre class="cpp">
+     <span class="type">QSqlQuery</span> query;
+     query<span class="operator">.</span>prepare(<span class="string">"INSERT INTO person (id, forename, surname) "</span>
+                   <span class="string">"VALUES (:id, :forename, :surname)"</span>);
+     query<span class="operator">.</span>bindValue(<span class="string">":id"</span><span class="operator">,</span> <span class="number">1001</span>);
+     query<span class="operator">.</span>bindValue(<span class="string">":forename"</span><span class="operator">,</span> <span class="string">"Bart"</span>);
+     query<span class="operator">.</span>bindValue(<span class="string">":surname"</span><span class="operator">,</span> <span class="string">"Simpson"</span>);
+     query<span class="operator">.</span>exec();
+</pre>
+<p><b>Positional binding using named placeholders:</b></p>
+<pre class="cpp">
+     <span class="type">QSqlQuery</span> query;
+     query<span class="operator">.</span>prepare(<span class="string">"INSERT INTO person (id, forename, surname) "</span>
+                   <span class="string">"VALUES (:id, :forename, :surname)"</span>);
+     query<span class="operator">.</span>bindValue(<span class="number">0</span><span class="operator">,</span> <span class="number">1001</span>);
+     query<span class="operator">.</span>bindValue(<span class="number">1</span><span class="operator">,</span> <span class="string">"Bart"</span>);
+     query<span class="operator">.</span>bindValue(<span class="number">2</span><span class="operator">,</span> <span class="string">"Simpson"</span>);
+     query<span class="operator">.</span>exec();
+</pre>
+<p><b>Binding values using positional placeholders (version
+1):</b></p>
+<pre class="cpp">
+     <span class="type">QSqlQuery</span> query;
+     query<span class="operator">.</span>prepare(<span class="string">"INSERT INTO person (id, forename, surname) "</span>
+                   <span class="string">"VALUES (?, ?, ?)"</span>);
+     query<span class="operator">.</span>bindValue(<span class="number">0</span><span class="operator">,</span> <span class="number">1001</span>);
+     query<span class="operator">.</span>bindValue(<span class="number">1</span><span class="operator">,</span> <span class="string">"Bart"</span>);
+     query<span class="operator">.</span>bindValue(<span class="number">2</span><span class="operator">,</span> <span class="string">"Simpson"</span>);
+     query<span class="operator">.</span>exec();
+</pre>
+<p><b>Binding values using positional placeholders (version
+2):</b></p>
+<pre class="cpp">
+     <span class="type">QSqlQuery</span> query;
+     query<span class="operator">.</span>prepare(<span class="string">"INSERT INTO person (id, forename, surname) "</span>
+                   <span class="string">"VALUES (?, ?, ?)"</span>);
+     query<span class="operator">.</span>addBindValue(<span class="number">1001</span>);
+     query<span class="operator">.</span>addBindValue(<span class="string">"Bart"</span>);
+     query<span class="operator">.</span>addBindValue(<span class="string">"Simpson"</span>);
+     query<span class="operator">.</span>exec();
+</pre>
+<p><b>Binding values to a stored procedure:</b></p>
+<p>此代码调用一个存储过程调用<tt>AsciiToInt()</tt>在参数传递给它一个字符通过，并考虑其结果的输出参数。</p>
+<pre class="cpp">
+     <span class="type">QSqlQuery</span> query;
+     query<span class="operator">.</span>prepare(<span class="string">"CALL AsciiToInt(?, ?)"</span>);
+     query<span class="operator">.</span>bindValue(<span class="number">0</span><span class="operator">,</span> <span class="string">"A"</span>);
+     query<span class="operator">.</span>bindValue(<span class="number">1</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="type"><a href="qsql.html" tppabs="http://pyqt4doc.appspot.com/qsql.html">QSql</a></span><span class="operator">.</span>Out);
+     query<span class="operator">.</span>exec();
+     <span class="type">int</span> i <span class="operator">=</span> query<span class="operator">.</span>boundValue(<span class="number">1</span>)<span class="operator">.</span>toInt(); <span class="comment">// i is 65</span>
+</pre>
+<p>需要注意的是未绑定的参数将保留它们的值。</p>
+<p>使用return语句返回值或返回多个结果集的存储过程，不完全支持。对于具体细节见<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/sql-driver.html">SQL Database
+Drivers</a>。</p>
+<p><b>Warning:</b>你必须载入SQL驱动程序并创建一个QSqlQuery之前打开连接。此外，该连接必须保持开放，而存在的查询，否则， QSqlQuery的行为是未定义的。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="BatchExecutionMode-enum"></a>QSqlQuery.BatchExecutionMode</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlQuery.ValuesAsRows</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign"> - 更新多行。黄柏中的每个条目<a href="qvariant.html#QVariantList-typedef" tppabs="http://pyqt4doc.appspot.com/qvariant.html#QVariantList-typedef">QVariantList</a>作为用于更新的下一行的值。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlQuery.ValuesAsColumns</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign"> - 更新一行。黄柏中的每个条目<a href="qvariant.html#QVariantList-typedef" tppabs="http://pyqt4doc.appspot.com/qvariant.html#QVariantList-typedef">QVariantList</a>作为数组类型的单个值。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QSqlQuery"></a>QSqlQuery.__init__ (<i>self</i>, <a href="qsqlresult.html" tppabs="http://pyqt4doc.appspot.com/qsqlresult.html">QSqlResult</a> <i>r</i>)</h3>
+<p>构造一个<a href="qsqlquery.html" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html">QSqlQuery</a>对象，它使用了<a href="qsqlresult.html" tppabs="http://pyqt4doc.appspot.com/qsqlresult.html">QSqlResult</a> <i>result</i>与数据库进行通信。</p>
+
+
+<h3 class="fn">
+<a name="QSqlQuery-2"></a>QSqlQuery.__init__ (<i>self</i>, QString <i>query</i> = QString(), <a href="qsqldatabase.html" tppabs="http://pyqt4doc.appspot.com/qsqldatabase.html">QSqlDatabase</a> <i>db</i> = QSqlDatabase())</h3>
+<p>构造一个<a href="qsqlquery.html" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html">QSqlQuery</a>使用SQL对象<i>query</i>和数据库<i>db</i>。如果<i>db</i>如果未指定，或者是无效的，应用程序的默认数据库被使用。如果<i>query</i>是不是空字符串，它就会被执行。</p>
+<p><b>See also</b> <a href="qsqldatabase.html" tppabs="http://pyqt4doc.appspot.com/qsqldatabase.html">QSqlDatabase</a>。</p>
+
+
+<h3 class="fn">
+<a name="QSqlQuery-3"></a>QSqlQuery.__init__ (<i>self</i>, <a href="qsqldatabase.html" tppabs="http://pyqt4doc.appspot.com/qsqldatabase.html">QSqlDatabase</a> <i>db</i>)</h3>
+<p>构造一个<a href="qsqlquery.html" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html">QSqlQuery</a>使用数据库对象<i>db</i>。如果<i>db</i>是无效的，应用程序的默认数据库将被使用。</p>
+<p><b>See also</b> <a href="qsqldatabase.html" tppabs="http://pyqt4doc.appspot.com/qsqldatabase.html">QSqlDatabase</a>。</p>
+
+
+<h3 class="fn">
+<a name="QSqlQuery-4"></a>QSqlQuery.__init__ (<i>self</i>, <a href="qsqlquery.html" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html">QSqlQuery</a> <i>other</i>)</h3>
+<p>构造的副本<i>other</i>。</p>
+
+
+<h3 class="fn">
+<a name="addBindValue"></a>QSqlQuery.addBindValue (<i>self</i>, QVariant <i>val</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qsql-paramtype.html">QSql.ParamType</a> <i>type</i> = QSql.In)</h3>
+<p>增加值<i>val</i>使用位置值绑定时的值列表。该addBindValue （ ）调用的顺序确定哪个佔位符的值将在准备好的查询绑定到。如果<i>paramType</i> is <a href="qsql.html#ParamTypeFlag-enum" tppabs="http://pyqt4doc.appspot.com/qsql.html#ParamTypeFlag-enum">QSql.Out</a> or <a href="qsql.html#ParamTypeFlag-enum" tppabs="http://pyqt4doc.appspot.com/qsql.html#ParamTypeFlag-enum">QSql.InOut</a>，佔位符将与后从数据库中的数据复盖<a href="qsqlquery.html#exec" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#exec">exec_</a>（ ）调用。</p>
+<p>要绑定一个NULL值，使用空<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>，例如，使用<tt>QVariant(QVariant.String)</tt>如果要绑定的字符串。</p>
+<p><b>See also</b> <a href="qsqlquery.html#bindValue" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#bindValue">bindValue</a>（ ）<a href="qsqlquery.html#prepare" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#prepare">prepare</a>（ ）<a href="qsqlquery.html#exec" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#exec">exec_</a>（ ）<a href="qsqlquery.html#boundValue" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#boundValue">boundValue</a>（）和<a href="qsqlquery.html#boundValues" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#boundValues">boundValues</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="at"></a>int QSqlQuery.at (<i>self</i>)</h3>
+<p>返回查询的当前内部位置。第一个记录是在位置0 。如果位置是无效的，则函数返回<a href="qsql.html#Location-enum" tppabs="http://pyqt4doc.appspot.com/qsql.html#Location-enum">QSql.BeforeFirstRow</a> or <a href="qsql.html#Location-enum" tppabs="http://pyqt4doc.appspot.com/qsql.html#Location-enum">QSql.AfterLastRow</a>，这是特殊的负值。</p>
+<p><b>See also</b> <a href="qsqlquery.html#previous" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#previous">previous</a>（ ）<a href="qsqlquery.html#next" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#next">next</a>（ ）<a href="qsqlquery.html#first" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#first">first</a>（ ）<a href="qsqlquery.html#last" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#last">last</a>（ ）<a href="qsqlquery.html#seek" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#seek">seek</a>（ ）<a href="qsqlquery.html#isActive" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isActive">isActive</a>（）和<a href="qsqlquery.html#isValid" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isValid">isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="bindValue"></a>QSqlQuery.bindValue (<i>self</i>, QString <i>placeholder</i>, QVariant <i>val</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qsql-paramtype.html">QSql.ParamType</a> <i>type</i> = QSql.In)</h3>
+<p>设置佔位符<i>placeholder</i>绑定到值<i>val</i>在准备好的语句。注意，佔位符标记（例如<tt>:</tt>）必须指定佔位符的名称时，必须包括在内。如果<i>paramType</i> is <a href="qsql.html#ParamTypeFlag-enum" tppabs="http://pyqt4doc.appspot.com/qsql.html#ParamTypeFlag-enum">QSql.Out</a> or <a href="qsql.html#ParamTypeFlag-enum" tppabs="http://pyqt4doc.appspot.com/qsql.html#ParamTypeFlag-enum">QSql.InOut</a>，佔位符将与后从数据库中的数据复盖<a href="qsqlquery.html#exec" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#exec">exec_</a>（ ）调用。在这种情况下，有足够的空间必须被预先分配给的结果存储到。</p>
+<p>要绑定一个NULL值，使用空<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>，例如，使用<tt>QVariant(QVariant.String)</tt>如果要绑定的字符串。</p>
+<p>值不能绑定到多个位置的查询，例如：</p>
+<pre class="cpp">
+ INSERT INTO testtable (id<span class="operator">,</span> name<span class="operator">,</span> samename) VALUES (:id<span class="operator">,</span> :name<span class="operator">,</span> :name)
+</pre>
+<p>绑定到名称将绑定到第一：名字，但没有第二个。</p>
+<p><b>See also</b> <a href="qsqlquery.html#addBindValue" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#addBindValue">addBindValue</a>（ ）<a href="qsqlquery.html#prepare" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#prepare">prepare</a>（ ）<a href="qsqlquery.html#exec" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#exec">exec_</a>（ ）<a href="qsqlquery.html#boundValue" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#boundValue">boundValue</a>（）和<a href="qsqlquery.html#boundValues" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#boundValues">boundValues</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="bindValue-2"></a>QSqlQuery.bindValue (<i>self</i>, int <i>pos</i>, QVariant <i>val</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qsql-paramtype.html">QSql.ParamType</a> <i>type</i> = QSql.In)</h3>
+<p>设置佔位符的位置<i>pos</i>绑定到值<i>val</i>在准备好的语句。字段编号从0开始。如果<i>paramType</i> is <a href="qsql.html#ParamTypeFlag-enum" tppabs="http://pyqt4doc.appspot.com/qsql.html#ParamTypeFlag-enum">QSql.Out</a> or <a href="qsql.html#ParamTypeFlag-enum" tppabs="http://pyqt4doc.appspot.com/qsql.html#ParamTypeFlag-enum">QSql.InOut</a>，佔位符将与后从数据库中的数据复盖<a href="qsqlquery.html#exec" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#exec">exec_</a>（ ）调用。</p>
+
+
+<h3 class="fn">
+<a name="boundValue"></a>QVariant QSqlQuery.boundValue (<i>self</i>, QString <i>placeholder</i>)</h3>
+<p>传回值<i>placeholder</i>。</p>
+<p><b>See also</b> <a href="qsqlquery.html#boundValues" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#boundValues">boundValues</a>（ ）<a href="qsqlquery.html#bindValue" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#bindValue">bindValue</a>（）和<a href="qsqlquery.html#addBindValue" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#addBindValue">addBindValue</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="boundValue-2"></a>QVariant QSqlQuery.boundValue (<i>self</i>, int <i>pos</i>)</h3>
+<p>返回在位置的佔位符的值<i>pos</i>。</p>
+
+
+<h3 class="fn">
+<a name="boundValues"></a>dict-of-QString-QVariant QSqlQuery.boundValues (<i>self</i>)</h3>
+<p>返回绑定值的地图。</p>
+<p>与名为绑定，绑定的值可以检查以下方面：</p>
+<pre class="cpp">
+     <span class="type"><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qmapiterator.html">QMapIterator</a></span><span class="operator">&lt;</span><span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span><span class="operator">,</span> <span class="type"><a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a></span><span class="operator">&gt;</span> i(query<span class="operator">.</span>boundValues());
+     <span class="keyword">while</span> (i<span class="operator">.</span>hasNext()) {
+         i<span class="operator">.</span>next();
+         cout <span class="operator">&lt;</span><span class="operator">&lt;</span> i<span class="operator">.</span>key()<span class="operator">.</span>toAscii()<span class="operator">.</span>data() <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">": "</span>
+              <span class="operator">&lt;</span><span class="operator">&lt;</span> i<span class="operator">.</span>value()<span class="operator">.</span>toString()<span class="operator">.</span>toAscii()<span class="operator">.</span>data() <span class="operator">&lt;</span><span class="operator">&lt;</span> endl;
+     }
+</pre>
+<p>与位置绑定，代码变为：</p>
+<pre class="cpp">
+     <span class="type"><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qlist.html">QList</a></span><span class="operator">&lt;</span><span class="type"><a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a></span><span class="operator">&gt;</span> list <span class="operator">=</span> query<span class="operator">.</span>boundValues()<span class="operator">.</span>values();
+     <span class="keyword">for</span> (<span class="type">int</span> i <span class="operator">=</span> <span class="number">0</span>; i <span class="operator">&lt;</span> list<span class="operator">.</span>size(); <span class="operator">+</span><span class="operator">+</span>i)
+         cout <span class="operator">&lt;</span><span class="operator">&lt;</span> i <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">": "</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> list<span class="operator">.</span>at(i)<span class="operator">.</span>toString()<span class="operator">.</span>toAscii()<span class="operator">.</span>data() <span class="operator">&lt;</span><span class="operator">&lt;</span> endl;
+</pre>
+<p><b>See also</b> <a href="qsqlquery.html#boundValue" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#boundValue">boundValue</a>（ ）<a href="qsqlquery.html#bindValue" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#bindValue">bindValue</a>（）和<a href="qsqlquery.html#addBindValue" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#addBindValue">addBindValue</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clear"></a>QSqlQuery.clear (<i>self</i>)</h3>
+<p>清除结果集，并释放该查询持有的任何资源。设置查询状态为无效。你应该很少，如果需要调用这个函数。</p>
+
+
+<h3 class="fn">
+<a name="driver"></a><a href="qsqldriver.html" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html">QSqlDriver</a> QSqlQuery.driver (<i>self</i>)</h3>
+<p>返回与查询相关联的数据库驱动程序。</p>
+
+
+<h3 class="fn">
+<a name="exec"></a>bool QSqlQuery.exec_ (<i>self</i>, QString <i>query</i>)</h3>
+<p>执行SQL中<i>query</i>。返回True ，并设置查询状态<a href="qsqlquery.html#isActive" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isActive">active</a>如果查询成功，否则返回False 。该<i>query</i>字符串必须使用适当的语法为被查询（例如，标准的SQL ）的SQL数据库。</p>
+<p>查询被执行后，查询被定位在一个<i>invalid</i>记录，并且必须被导航到一个有效记录的数据值可以被检索（例如，在使用前<a href="qsqlquery.html#next" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#next">next</a>（））。</p>
+<p>请注意，此查询的最后一个错误，当执行exec（ ）被调用复位。</p>
+<p>对SQLite的查询字符串可以一次只包含一个语句。如果多于一个语句被放弃，该函数返回False 。</p>
+<p>例如：</p>
+<pre class="cpp">
+     <span class="type"><a href="qsqlquery.html" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html">QSqlQuery</a></span> query;
+     query<span class="operator">.</span>exec(<span class="string">"INSERT INTO employee (id, name, salary) "</span>
+                <span class="string">"VALUES (1001, 'Thad Beaumont', 65000)"</span>);
+</pre>
+<p><b>See also</b> <a href="qsqlquery.html#isActive" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isActive">isActive</a>（ ）<a href="qsqlquery.html#isValid" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isValid">isValid</a>（ ）<a href="qsqlquery.html#next" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#next">next</a>（ ）<a href="qsqlquery.html#previous" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#previous">previous</a>（ ）<a href="qsqlquery.html#first" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#first">first</a>（ ）<a href="qsqlquery.html#last" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#last">last</a>（）和<a href="qsqlquery.html#seek" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#seek">seek</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="exec-2"></a>bool QSqlQuery.exec_ (<i>self</i>)</h3>
+<p>执行先前准备的SQL查询。返回True如果成功执行该查询，否则返回False 。</p>
+<p>请注意，此查询的最后一个错误是，当复位<a href="qsqlquery.html#exec" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#exec">exec_</a>（）被调用。</p>
+<p><b>See also</b> <a href="qsqlquery.html#prepare" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#prepare">prepare</a>（ ）<a href="qsqlquery.html#bindValue" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#bindValue">bindValue</a>（ ）<a href="qsqlquery.html#addBindValue" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#addBindValue">addBindValue</a>（ ）<a href="qsqlquery.html#boundValue" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#boundValue">boundValue</a>（）和<a href="qsqlquery.html#boundValues" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#boundValues">boundValues</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="execBatch"></a>bool QSqlQuery.execBatch (<i>self</i>, <a href="qsqlquery.html#BatchExecutionMode-enum" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#BatchExecutionMode-enum">BatchExecutionMode</a> <i>mode</i> = QSqlQuery.ValuesAsRows)</h3>
+<p>执行先前准备的SQL查询中的批次。所有绑定参数必须是变种列表。如果数据库不支持批量处决，驱动程序将使用传统的模拟它<a href="qsqlquery.html#exec" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#exec">exec_</a>（ ）调用。</p>
+<p>返回True如果查询成功执行，否则返回False 。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qsqlquery.html" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html">QSqlQuery</a></span> q;
+ q<span class="operator">.</span><a href="qsqlquery.html#prepare" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#prepare">prepare</a>(<span class="string">"insert into myTable values (?, ?)"</span>);
+
+ <span class="type"><a href="qvariant.html#QVariantList-typedef" tppabs="http://pyqt4doc.appspot.com/qvariant.html#QVariantList-typedef">QVariantList</a></span> ints;
+ ints <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="number">1</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="number">2</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="number">3</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="number">4</span>;
+ q<span class="operator">.</span><a href="qsqlquery.html#addBindValue" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#addBindValue">addBindValue</a>(ints);
+
+ <span class="type"><a href="qvariant.html#QVariantList-typedef" tppabs="http://pyqt4doc.appspot.com/qvariant.html#QVariantList-typedef">QVariantList</a></span> names;
+ names <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"Harald"</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"Boris"</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"Trond"</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="type"><a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a></span>(<span class="type"><a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a></span><span class="operator">.</span>String);
+ q<span class="operator">.</span><a href="qsqlquery.html#addBindValue" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#addBindValue">addBindValue</a>(names);
+
+ <span class="keyword">if</span> (<span class="operator">!</span>q<span class="operator">.</span>execBatch())
+     <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> q<span class="operator">.</span><a href="qsqlquery.html#lastError" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#lastError">lastError</a>();
+</pre>
+<p>上面的例子中插入四个新行插入<tt>myTable</tt>：</p>
+<pre class="cpp">
+ <span class="number">1</span>  Harald
+ <span class="number">2</span>  Boris
+ <span class="number">3</span>  Trond
+ <span class="number">4</span>  NULL
+</pre>
+<p>要绑定NULL值，空<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>相关类型的已被添加到绑定<a href="qvariant.html#QVariantList-typedef" tppabs="http://pyqt4doc.appspot.com/qvariant.html#QVariantList-typedef">QVariantList</a>，例如，<tt>QVariant(QVariant.String)</tt>应该如果您使用的是字符串中使用。</p>
+<p><b>Note:</b>每一个绑定<a href="qvariant.html#QVariantList-typedef" tppabs="http://pyqt4doc.appspot.com/qvariant.html#QVariantList-typedef">QVariantList</a>必须包含的变体是相同的。</p>
+<p><b>Note:</b>的类型<a href="index.htm#qvariants" tppabs="http://pyqt4doc.appspot.com/qtwebkit-bridge.html#qvariants">QVariants</a>在列表中不能改变。例如，您不能在一个混合整数和字符串变量<a href="qvariant.html#QVariantList-typedef" tppabs="http://pyqt4doc.appspot.com/qvariant.html#QVariantList-typedef">QVariantList</a>。</p>
+<p>该<i>mode</i>参数指示如何绑定<a href="qvariant.html#QVariantList-typedef" tppabs="http://pyqt4doc.appspot.com/qvariant.html#QVariantList-typedef">QVariantList</a>将被解释。如果<i>mode</i> is <tt>ValuesAsRows</tt>，内部的每一个变种<a href="qvariant.html#QVariantList-typedef" tppabs="http://pyqt4doc.appspot.com/qvariant.html#QVariantList-typedef">QVariantList</a>将被解释为一个新的行的值。<tt>ValuesAsColumns</tt>对于Oracle驱动程序的一个特例。在这种模式下，在一个每条目<a href="qvariant.html#QVariantList-typedef" tppabs="http://pyqt4doc.appspot.com/qvariant.html#QVariantList-typedef">QVariantList</a>将被解释为一个存储过程中的IN或OUT值的数组值。请注意，这只会工作，如果IN或OUT值是一个表型组成的基本型只有一列，例如<tt>TYPE myType IS TABLE OF VARCHAR(64) INDEX BY
+BINARY_INTEGER;</tt></p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qsqlquery.html#prepare" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#prepare">prepare</a>（ ）<a href="qsqlquery.html#bindValue" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#bindValue">bindValue</a>（）和<a href="qsqlquery.html#addBindValue" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#addBindValue">addBindValue</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="executedQuery"></a>QString QSqlQuery.executedQuery (<i>self</i>)</h3>
+<p>返回成功执行的最后一个查询。</p>
+<p>在大多数情况下，这个函数返回相同的字符串<a href="qsqlquery.html#lastQuery" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#lastQuery">lastQuery</a>（ ） 。如果有一个佔位符编写的查询上不支持它的DBMS执行，这个查询的制备效仿。在原始查询中的佔位符替换为它们的绑定值，形成一个新的查询。该函数返回修改后的查询。它是用于调试目的大多是有用的。</p>
+<p><b>See also</b> <a href="qsqlquery.html#lastQuery" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#lastQuery">lastQuery</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="finish"></a>QSqlQuery.finish (<i>self</i>)</h3>
+<p>指示没有更多的数据将从这个查询被取出，直到重新执行它的数据库驱动程序。通常没有必要调用这个函数，但它可能会有所帮助，以免费资源，例如锁或游标，如果你打算重新使用查询在以后的时间。</p>
+<p>设置查询为无效。绑定值保留它们的值。</p>
+<p>此功能被引入Qt的4.3.2 。</p>
+<p><b>See also</b> <a href="qsqlquery.html#prepare" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#prepare">prepare</a>（ ）<a href="qsqlquery.html#exec" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#exec">exec_</a>（）和<a href="qsqlquery.html#isActive" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isActive">isActive</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="first"></a>bool QSqlQuery.first (<i>self</i>)</h3>
+<p>获取第一条记录的结果，如果有的话，和对检索到的记录位置的查询。请注意，其结果必然是在<a href="qsqlquery.html#isActive" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isActive">active</a>状态<a href="qsqlquery.html#isSelect" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isSelect">isSelect</a>（）必须调用这个函数，否则将什么都不做，返回False才返回True。如果成功，则返回True 。如果不成功查询位置被设置为无效位置，返回False 。</p>
+<p><b>See also</b> <a href="qsqlquery.html#next" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#next">next</a>（ ）<a href="qsqlquery.html#previous" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#previous">previous</a>（ ）<a href="qsqlquery.html#last" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#last">last</a>（ ）<a href="qsqlquery.html#seek" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#seek">seek</a>（ ）<a href="qsqlquery.html#at" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#at">at</a>（ ）<a href="qsqlquery.html#isActive" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isActive">isActive</a>（）和<a href="qsqlquery.html#isValid" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isValid">isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isActive"></a>bool QSqlQuery.isActive (<i>self</i>)</h3>
+<p>返回True如果查询<i>active</i>。一个活跃<a href="qsqlquery.html" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html">QSqlQuery</a>是一个已经<a href="qsqlquery.html#exec" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#exec">exec()'d</a>成功但尚未完成。当你完成了一个活跃的查询，可以使使查询无效的调用<a href="qsqlquery.html#finish" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#finish">finish</a>（）或<a href="qsqlquery.html#clear" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#clear">clear</a>（ ） ，或者你可以删除<a href="qsqlquery.html" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html">QSqlQuery</a>实例。</p>
+<p><b>Note:</b>特别感兴趣的是一种主动查询，它是一个<tt>SELECT</tt>声明。对于支持事务的一些数据库，积极查询，它是一个<tt>SELECT</tt>语句可以导致<a href="qsqldatabase.html#commit" tppabs="http://pyqt4doc.appspot.com/qsqldatabase.html#commit">commit()</a>或<a href="qsqldatabase.html#rollback" tppabs="http://pyqt4doc.appspot.com/qsqldatabase.html#rollback">rollback()</a>失败，因此提交或回滚之前，你应该让你活跃<tt>SELECT</tt>语句查询无效使用上面列出的方法之一。</p>
+<p><b>See also</b> <a href="qsqlquery.html#isSelect" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isSelect">isSelect</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isForwardOnly"></a>bool QSqlQuery.isForwardOnly (<i>self</i>)</h3>
+<p>返回True如果你只能通过一个结果集向前滚动，否则返回False 。</p>
+<p><b>See also</b> <a href="qsqlquery.html#setForwardOnly" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#setForwardOnly">setForwardOnly</a>（）和<a href="qsqlquery.html#next" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#next">next</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isNull"></a>bool QSqlQuery.isNull (<i>self</i>, int <i>field</i>)</h3>
+<p>返回True如果查询<a href="qsqlquery.html#isActive" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isActive">active</a>和定位在一个有效的记录和<i>field</i>为NULL ，否则返回False 。请注意，对于某些驱动程序， ISNULL（ ）将不会返回准确的信息后，才试图检索数据。</p>
+<p><b>See also</b> <a href="qsqlquery.html#isActive" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isActive">isActive</a>（ ）<a href="qsqlquery.html#isValid" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isValid">isValid</a>（）和<a href="qsqlquery.html#value" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#value">value</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isSelect"></a>bool QSqlQuery.isSelect (<i>self</i>)</h3>
+<p>返回True如果当前的查询是<tt>SELECT</tt>声明，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isValid"></a>bool QSqlQuery.isValid (<i>self</i>)</h3>
+<p>返回True如果查询是目前定位在一个有效的记录，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="last"></a>bool QSqlQuery.last (<i>self</i>)</h3>
+<p>检索记录集中的最后结果，如果有的话，和对检索到的记录位置的查询。请注意，其结果必然是在<a href="qsqlquery.html#isActive" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isActive">active</a>状态<a href="qsqlquery.html#isSelect" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isSelect">isSelect</a>（）必须调用这个函数，否则将什么都不做，返回False才返回True。如果成功，则返回True 。如果不成功查询位置被设置为无效位置，返回False 。</p>
+<p><b>See also</b> <a href="qsqlquery.html#next" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#next">next</a>（ ）<a href="qsqlquery.html#previous" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#previous">previous</a>（ ）<a href="qsqlquery.html#first" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#first">first</a>（ ）<a href="qsqlquery.html#seek" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#seek">seek</a>（ ）<a href="qsqlquery.html#at" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#at">at</a>（ ）<a href="qsqlquery.html#isActive" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isActive">isActive</a>（）和<a href="qsqlquery.html#isValid" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isValid">isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="lastError"></a><a href="qsqlerror.html" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html">QSqlError</a> QSqlQuery.lastError (<i>self</i>)</h3>
+<p>返回有关最后一个错误（如果有的话） ，与此查询时发生的错误信息。</p>
+<p><b>See also</b> <a href="qsqlerror.html" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html">QSqlError</a>和<a href="qsqldatabase.html#lastError" tppabs="http://pyqt4doc.appspot.com/qsqldatabase.html#lastError">QSqlDatabase.lastError</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="lastInsertId"></a>QVariant QSqlQuery.lastInsertId (<i>self</i>)</h3>
+<p>返回最近插入的行的对象ID ，如果数据库支持它。无效的<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>将被退回，如果查询没有插入任何值，或者如果数据库没有报告ID后面。如果不止一个行被感动的插入，该行为是未定义的。</p>
+<p>对于MySQL数据库行的自动递增字段将被退回。</p>
+<p><b>Note:</b>对于这个功能在PSQL工作，该表的表必须包含的OID ，它可能没有被创建的默认。检查<tt>default_with_oids</tt>配置变量来确定。</p>
+<p><b>See also</b> <a href="qsqldriver.html#hasFeature" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#hasFeature">QSqlDriver.hasFeature</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="lastQuery"></a>QString QSqlQuery.lastQuery (<i>self</i>)</h3>
+<p>如果没有当前的查询文本返回当前查询所使用的文字，或空字符串。</p>
+<p><b>See also</b> <a href="qsqlquery.html#executedQuery" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#executedQuery">executedQuery</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="next"></a>bool QSqlQuery.next (<i>self</i>)</h3>
+<p>检索下一条记录中的结果，如果有的话，和对检索到的记录位置的查询。请注意，其结果必然是在<a href="qsqlquery.html#isActive" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isActive">active</a>状态<a href="qsqlquery.html#isSelect" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isSelect">isSelect</a>（）必须调用这个函数，否则将什么都不做，返回False才返回True。</p>
+<p>以下规则适用：</p>
+<ul>
+<li>If the result is currently located before the first record,
+e.g. immediately after a query is executed, an attempt is made to
+retrieve the first record.</li>
+<li>If the result is currently located after the last record, there
+is no change and false is returned.</li>
+<li>If the result is located somewhere in the middle, an attempt is
+made to retrieve the next record.</li>
+</ul>
+<p>如果不能被检索的记录，结果是最后一条记录并返回False后定位。如果记录被成功取出，则返回True 。</p>
+<p><b>See also</b> <a href="qsqlquery.html#previous" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#previous">previous</a>（ ）<a href="qsqlquery.html#first" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#first">first</a>（ ）<a href="qsqlquery.html#last" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#last">last</a>（ ）<a href="qsqlquery.html#seek" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#seek">seek</a>（ ）<a href="qsqlquery.html#at" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#at">at</a>（ ）<a href="qsqlquery.html#isActive" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isActive">isActive</a>（）和<a href="qsqlquery.html#isValid" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isValid">isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="nextResult"></a>bool QSqlQuery.nextResult (<i>self</i>)</h3>
+<p>丢弃当前的结果集，并导航到下一个（如果可用） 。</p>
+<p>有些数据库是可以返回多个结果集的存储过程或SQL批处理（包含多个语句的查询字符串）的。如果在执行一个查询此功能可用于导航到下一个结果集（次）后，多个结果集可用。</p>
+<p>如果一个新的结果集是可用此函数将返回True 。该查询将在一个重新定位<i>invalid</i>在新的结果集的记录，必须导航到一个有效的记录数据值可以被检索之前。如果一个新的结果集是不可用的函数返回False ，并且查询被设置为无效。在任何情况下，旧的结果集合将被丢弃。</p>
+<p>当语句之一是一个非select语句影响的行计数可能，而不是一个结果集可用。</p>
+<p>需要注意的是一些数据库，如微软的SQL Server ，要求非滚动游标与多个结果集时。有些数据库可以一次执行所有语句，而其他人可能会推迟执行，直到实际访问的结果集，以及一些数据库可能对哪些语句被允许在SQL批处理中使用的限制。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qsqldriver.html#hasFeature" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#hasFeature">QSqlDriver.hasFeature</a>（ ）<a href="qsqlquery.html#setForwardOnly" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#setForwardOnly">setForwardOnly</a>（ ）<a href="qsqlquery.html#next" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#next">next</a>（ ）<a href="qsqlquery.html#isSelect" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isSelect">isSelect</a>（ ）<a href="qsqlquery.html#numRowsAffected" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#numRowsAffected">numRowsAffected</a>（ ）<a href="qsqlquery.html#isActive" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isActive">isActive</a>（）和<a href="qsqlquery.html#lastError" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#lastError">lastError</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="numericalPrecisionPolicy"></a><a href="qsql.html#NumericalPrecisionPolicy-enum" tppabs="http://pyqt4doc.appspot.com/qsql.html#NumericalPrecisionPolicy-enum">QSql.NumericalPrecisionPolicy</a> QSqlQuery.numericalPrecisionPolicy (<i>self</i>)</h3>
+<p>返回当前的精度政策。</p>
+<p><b>See also</b> <a href="qsql.html#NumericalPrecisionPolicy-enum" tppabs="http://pyqt4doc.appspot.com/qsql.html#NumericalPrecisionPolicy-enum">QSql.NumericalPrecisionPolicy</a>和<a href="qsqlquery.html#setNumericalPrecisionPolicy" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#setNumericalPrecisionPolicy">setNumericalPrecisionPolicy</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="numRowsAffected"></a>int QSqlQuery.numRowsAffected (<i>self</i>)</h3>
+<p>返回受影响的结果的SQL语句，或者-1 ，如果它不能确定的行数。请注意，对于<tt>SELECT</tt>语句，该值是不确定的;使用<a href="qsqlquery.html#size" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#size">size</a>（ ）来代替。如果该查询是不<a href="qsqlquery.html#isActive" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isActive">active</a>，则返回-1。</p>
+<p><b>See also</b> <a href="qsqlquery.html#size" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#size">size</a>（）和<a href="qsqldriver.html#hasFeature" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#hasFeature">QSqlDriver.hasFeature</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="prepare"></a>bool QSqlQuery.prepare (<i>self</i>, QString <i>query</i>)</h3>
+<p>准备SQL查询<i>query</i>用于执行。返回True如果查询成功制备，否则返回False 。</p>
+<p>该查询可以包含佔位符绑定的值。这两个Oracle风格冒号名称（例如，<tt>:surname</tt>） ，和ODBC风格（<tt>?</tt>）佔位符的支持，但他们不能在同一查询中混用。请参阅<a href="qsqlquery.html#qsqlquery-examples" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#qsqlquery-examples">Detailed Description</a>为例子。</p>
+<p>可移植性注：有些数据库选择延迟准备的查询，直到它被执行的第一次。在这种情况下，准备一个语法错误的查询成功，但每一个连续的<a href="qsqlquery.html#exec" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#exec">exec_</a>（ ）将失败。</p>
+<p>对SQLite的查询字符串可以一次只包含一个语句。如果一个以上的语句给，函数返回False 。</p>
+<p>例如：</p>
+<pre class="cpp">
+     <span class="type"><a href="qsqlquery.html" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html">QSqlQuery</a></span> query;
+     query<span class="operator">.</span>prepare(<span class="string">"INSERT INTO person (id, forename, surname) "</span>
+                   <span class="string">"VALUES (:id, :forename, :surname)"</span>);
+     query<span class="operator">.</span>bindValue(<span class="string">":id"</span><span class="operator">,</span> <span class="number">1001</span>);
+     query<span class="operator">.</span>bindValue(<span class="string">":forename"</span><span class="operator">,</span> <span class="string">"Bart"</span>);
+     query<span class="operator">.</span>bindValue(<span class="string">":surname"</span><span class="operator">,</span> <span class="string">"Simpson"</span>);
+     query<span class="operator">.</span>exec();
+</pre>
+<p><b>See also</b> <a href="qsqlquery.html#exec" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#exec">exec_</a>（ ）<a href="qsqlquery.html#bindValue" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#bindValue">bindValue</a>（）和<a href="qsqlquery.html#addBindValue" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#addBindValue">addBindValue</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="previous"></a>bool QSqlQuery.previous (<i>self</i>)</h3>
+<p>检索以前的记录结果中，如果有的话，以及对检索到的记录位置的查询。请注意，其结果必然是在<a href="qsqlquery.html#isActive" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isActive">active</a>状态<a href="qsqlquery.html#isSelect" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isSelect">isSelect</a>（）必须调用这个函数，否则将什么都不做，返回False才返回True。</p>
+<p>以下规则适用：</p>
+<ul>
+<li>If the result is currently located before the first record,
+there is no change and false is returned.</li>
+<li>If the result is currently located after the last record, an
+attempt is made to retrieve the last record.</li>
+<li>If the result is somewhere in the middle, an attempt is made to
+retrieve the previous record.</li>
+</ul>
+<p>如果不能被检索的记录，结果被定位在第一个记录并返回False之前。如果记录被成功取出，则返回True 。</p>
+<p><b>See also</b> <a href="qsqlquery.html#next" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#next">next</a>（ ）<a href="qsqlquery.html#first" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#first">first</a>（ ）<a href="qsqlquery.html#last" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#last">last</a>（ ）<a href="qsqlquery.html#seek" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#seek">seek</a>（ ）<a href="qsqlquery.html#at" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#at">at</a>（ ）<a href="qsqlquery.html#isActive" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isActive">isActive</a>（）和<a href="qsqlquery.html#isValid" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isValid">isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="record"></a><a href="qsqlrecord.html" tppabs="http://pyqt4doc.appspot.com/qsqlrecord.html">QSqlRecord</a> QSqlQuery.record (<i>self</i>)</h3>
+<p>返回<a href="qsqlrecord.html" tppabs="http://pyqt4doc.appspot.com/qsqlrecord.html">QSqlRecord</a>包含域信息的当前查询。如果查询指向一个有效的行（<a href="qsqlquery.html#isValid" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isValid">isValid</a>（ ）返回True ） ，该记录被填充了该行的值。当没有主动查询一个空的记录，则返回（<a href="qsqlquery.html#isActive" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isActive">isActive</a>（ ）返回False ） 。</p>
+<p>从查询中检索值，<a href="qsqlquery.html#value" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#value">value</a>（ ）应该被使用，因为它的基于索引的查找速度更快。</p>
+<p>在下面的示例中，<tt>SELECT * FROM</tt>执行查询。由于列的顺序没有被定义，<a href="qsqlrecord.html#indexOf" tppabs="http://pyqt4doc.appspot.com/qsqlrecord.html#indexOf">QSqlRecord.indexOf</a>（）是用来获取的列的索引。</p>
+<pre class="cpp">
+ <span class="type"><a href="qsqlquery.html" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html">QSqlQuery</a></span> q(<span class="string">"select * from employees"</span>);
+ <span class="type"><a href="qsqlrecord.html" tppabs="http://pyqt4doc.appspot.com/qsqlrecord.html">QSqlRecord</a></span> rec <span class="operator">=</span> q<span class="operator">.</span>record();
+
+ <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"Number of columns: "</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> rec<span class="operator">.</span>count();
+
+ <span class="type">int</span> nameCol <span class="operator">=</span> rec<span class="operator">.</span>indexOf(<span class="string">"name"</span>); <span class="comment">// index of the field "name"</span>
+ <span class="keyword">while</span> (q<span class="operator">.</span>next())
+     <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> q<span class="operator">.</span><a href="qsqlquery.html#value" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#value">value</a>(nameCol)<span class="operator">.</span>toString(); <span class="comment">// output all names</span>
+</pre>
+<p><b>See also</b> <a href="qsqlquery.html#value" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#value">value</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="result"></a><a href="qsqlresult.html" tppabs="http://pyqt4doc.appspot.com/qsqlresult.html">QSqlResult</a> QSqlQuery.result (<i>self</i>)</h3>
+<p>返回与查询相关的结果。</p>
+
+
+<h3 class="fn">
+<a name="seek"></a>bool QSqlQuery.seek (<i>self</i>, int <i>index</i>, bool <i>relative</i> = False)</h3>
+<p>检索记录位置<i>index</i>如果有的话，和立场上所检索的记录的查询。第一个记录是在位置0 。请注意，查询必须是在<a href="qsqlquery.html#isActive" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isActive">active</a>状态<a href="qsqlquery.html#isSelect" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isSelect">isSelect</a>（ ）必须在调用这个函数之前返回True。</p>
+<p>If <i>relative</i>为False（默认值） ，则适用以下规则：</p>
+<ul>
+<li>If <i>index</i> is negative, the result is positioned before
+the first record and false is returned.</li>
+<li>Otherwise, an attempt is made to move to the record at position
+<i>index</i>. If the record at position <i>index</i> could not be
+retrieved, the result is positioned after the last record and false
+is returned. If the record is successfully retrieved, true is
+returned.</li>
+</ul>
+<p>If <i>relative</i>是真的，应遵守下列规则：</p>
+<ul>
+<li>If the result is currently positioned before the first record
+or on the first record, and <i>index</i> is negative, there is no
+change, and false is returned.</li>
+<li>If the result is currently located after the last record, and
+<i>index</i> is positive, there is no change, and false is
+returned.</li>
+<li>If the result is currently located somewhere in the middle, and
+the relative offset <i>index</i> moves the result below zero, the
+result is positioned before the first record and false is
+returned.</li>
+<li>Otherwise, an attempt is made to move to the record
+<i>index</i> records ahead of the current record (or <i>index</i>
+records behind the current record if <i>index</i> is negative). If
+the record at offset <i>index</i> could not be retrieved, the
+result is positioned after the last record if <i>index</i> &gt;= 0,
+(or before the first record if <i>index</i> is negative), and false
+is returned. If the record is successfully retrieved, true is
+returned.</li>
+</ul>
+<p><b>See also</b> <a href="qsqlquery.html#next" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#next">next</a>（ ）<a href="qsqlquery.html#previous" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#previous">previous</a>（ ）<a href="qsqlquery.html#first" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#first">first</a>（ ）<a href="qsqlquery.html#last" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#last">last</a>（ ）<a href="qsqlquery.html#at" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#at">at</a>（ ）<a href="qsqlquery.html#isActive" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isActive">isActive</a>（）和<a href="qsqlquery.html#isValid" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isValid">isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setForwardOnly"></a>QSqlQuery.setForwardOnly (<i>self</i>, bool <i>forward</i>)</h3>
+<p>设置只进模式<i>forward</i>。如果<i>forward</i>是真的，只<a href="qsqlquery.html#next" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#next">next</a>（）和<a href="qsqlquery.html#seek" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#seek">seek</a>（ ）与正面的价值观，是允许的导航结果。</p>
+<p>只正向模式即可（这取决于驱动程序）更多的内存效率，因为结果并不需要被缓存。它也将提高某些数据库的性能。对于这是真的，你必须调用<tt>setForwardOnly()</tt>查询准备或执行之前。需要注意的是，需要一个查询和数据库的构造函数可以执行查询。</p>
+<p>只正向模式默认是关闭的。</p>
+<p>前冲只为False是一个建议的数据库引擎，它拥有最终决定权在结果集是否是只向前或滚动。<a href="qsqlquery.html#isForwardOnly" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isForwardOnly">isForwardOnly</a>（ ）将总是返回结果集的正确状态。</p>
+<p><b>Note:</b>调用setForwardOnly后执行的查询会导致意想不到的结果充其量和崩溃在最坏的情况。</p>
+<p><b>See also</b> <a href="qsqlquery.html#isForwardOnly" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isForwardOnly">isForwardOnly</a>（ ）<a href="qsqlquery.html#next" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#next">next</a>（ ）<a href="qsqlquery.html#seek" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#seek">seek</a>（）和<a href="qsqlresult.html#setForwardOnly" tppabs="http://pyqt4doc.appspot.com/qsqlresult.html#setForwardOnly">QSqlResult.setForwardOnly</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setNumericalPrecisionPolicy"></a>QSqlQuery.setNumericalPrecisionPolicy (<i>self</i>, <a href="qsql.html#NumericalPrecisionPolicy-enum" tppabs="http://pyqt4doc.appspot.com/qsql.html#NumericalPrecisionPolicy-enum">QSql.NumericalPrecisionPolicy</a> <i>precisionPolicy</i>)</h3>
+<p>指示数据库驱动程序返回的数值由指定的精度<i>precisionPolicy</i>。</p>
+<p>Oracle驱动程序，例如，可以检索数字值作为字符串来防止精度损失。如果精度高不要紧，使用此方法绕过字符串转换来提高执行速度。</p>
+<p>注意：不支持用低精度取数值的驱动程序将忽略精度政策。您可以使用<a href="qsqldriver.html#hasFeature" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#hasFeature">QSqlDriver.hasFeature</a>（ ）来找出驱动程序是否支持此功能。</p>
+<p>注意：设置精度策略不影响当前活动的查询。通话<a href="qsqlquery.html#exec" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#exec">exec_</a>（<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>）或<a href="qsqlquery.html#prepare" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#prepare">prepare</a>（） ，以激活该策略。</p>
+<p><b>See also</b> <a href="qsql.html#NumericalPrecisionPolicy-enum" tppabs="http://pyqt4doc.appspot.com/qsql.html#NumericalPrecisionPolicy-enum">QSql.NumericalPrecisionPolicy</a>和<a href="qsqlquery.html#numericalPrecisionPolicy" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#numericalPrecisionPolicy">numericalPrecisionPolicy</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="size"></a>int QSqlQuery.size (<i>self</i>)</h3>
+<p>返回结果的大小（返回的行数） ，或-1，如果大小无法确定，或者如果数据库不支持报告有关查询大小的信息。请注意，对于非<tt>SELECT</tt>报表（<a href="qsqlquery.html#isSelect" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isSelect">isSelect</a>（ ）返回False ） ，大小（ ）将返回-1 。如果查询不活跃（<a href="qsqlquery.html#isActive" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isActive">isActive</a>（ ）返回False ） ，则返回-1。</p>
+<p>要确定一个非受影响的行数<tt>SELECT</tt>声明中，使用<a href="qsqlquery.html#numRowsAffected" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#numRowsAffected">numRowsAffected</a>（ ） 。</p>
+<p><b>See also</b> <a href="qsqlquery.html#isActive" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isActive">isActive</a>（ ）<a href="qsqlquery.html#numRowsAffected" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#numRowsAffected">numRowsAffected</a>（）和<a href="qsqldriver.html#hasFeature" tppabs="http://pyqt4doc.appspot.com/qsqldriver.html#hasFeature">QSqlDriver.hasFeature</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="value"></a>QVariant QSqlQuery.value (<i>self</i>, int <i>i</i>)</h3>
+<p>返回字段的值<i>index</i>在当前的记录。</p>
+<p>该字段使用的文本编号从左至右<tt>SELECT</tt>声明中，例如在</p>
+<pre class="cpp">
+ SELECT forename<span class="operator">,</span> surname FROM people;
+</pre>
+<p>场0<tt>forename</tt>和现场1<tt>surname</tt>。运用<tt>SELECT *</tt>不建议，因为在查询中字段的顺序是不确定的。</p>
+<p>无效的<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>返回如果场<i>index</i>不存在，如果查询是无效的，或者如果该查询被定位在一个无效的记录。</p>
+<p><b>See also</b> <a href="qsqlquery.html#previous" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#previous">previous</a>（ ）<a href="qsqlquery.html#next" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#next">next</a>（ ）<a href="qsqlquery.html#first" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#first">first</a>（ ）<a href="qsqlquery.html#last" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#last">last</a>（ ）<a href="qsqlquery.html#seek" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#seek">seek</a>（ ）<a href="qsqlquery.html#isActive" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isActive">isActive</a>（）和<a href="qsqlquery.html#isValid" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html#isValid">isValid</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

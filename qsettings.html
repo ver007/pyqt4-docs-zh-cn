@@ -1,0 +1,1206 @@
+﻿<html>
+<head>
+<title>QSettings Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QSettings Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QSettings类提供持久的与平台无关的应用程序设置。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">Format</a></b> { NativeFormat, IniFormat, InvalidFormat }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">Scope</a></b> { UserScope, SystemScope }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qsettings.html#Status-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Status-enum">Status</a></b> { NoError, AccessError, FormatError }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qsettings.html#QSettings" tppabs="http://pyqt4doc.appspot.com/qsettings.html#QSettings">__init__</a></b> (<i>self</i>, QString <i>organization</i>, QString <i>application</i> = QString(), QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsettings.html#QSettings-2" tppabs="http://pyqt4doc.appspot.com/qsettings.html#QSettings-2">__init__</a></b> (<i>self</i>, Scope <i>scope</i>, QString <i>organization</i>, QString <i>application</i> = QString(), QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsettings.html#QSettings-3" tppabs="http://pyqt4doc.appspot.com/qsettings.html#QSettings-3">__init__</a></b> (<i>self</i>, Format <i>format</i>, Scope <i>scope</i>, QString <i>organization</i>, QString <i>application</i> = QString(), QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsettings.html#QSettings-4" tppabs="http://pyqt4doc.appspot.com/qsettings.html#QSettings-4">__init__</a></b> (<i>self</i>, QString <i>fileName</i>, Format <i>format</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsettings.html#QSettings-5" tppabs="http://pyqt4doc.appspot.com/qsettings.html#QSettings-5">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qsettings.html#allKeys" tppabs="http://pyqt4doc.appspot.com/qsettings.html#allKeys">allKeys</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsettings.html#applicationName" tppabs="http://pyqt4doc.appspot.com/qsettings.html#applicationName">applicationName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsettings.html#beginGroup" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginGroup">beginGroup</a></b> (<i>self</i>, QString <i>prefix</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qsettings.html#beginReadArray" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginReadArray">beginReadArray</a></b> (<i>self</i>, QString <i>prefix</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsettings.html#beginWriteArray" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginWriteArray">beginWriteArray</a></b> (<i>self</i>, QString <i>prefix</i>, int <i>size</i> = -1)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qsettings.html#childGroups" tppabs="http://pyqt4doc.appspot.com/qsettings.html#childGroups">childGroups</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qsettings.html#childKeys" tppabs="http://pyqt4doc.appspot.com/qsettings.html#childKeys">childKeys</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsettings.html#clear" tppabs="http://pyqt4doc.appspot.com/qsettings.html#clear">clear</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsettings.html#contains" tppabs="http://pyqt4doc.appspot.com/qsettings.html#contains">contains</a></b> (<i>self</i>, QString <i>key</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsettings.html#endArray" tppabs="http://pyqt4doc.appspot.com/qsettings.html#endArray">endArray</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsettings.html#endGroup" tppabs="http://pyqt4doc.appspot.com/qsettings.html#endGroup">endGroup</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsettings.html#event" tppabs="http://pyqt4doc.appspot.com/qsettings.html#event">event</a></b> (<i>self</i>, QEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsettings.html#fallbacksEnabled" tppabs="http://pyqt4doc.appspot.com/qsettings.html#fallbacksEnabled">fallbacksEnabled</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsettings.html#fileName" tppabs="http://pyqt4doc.appspot.com/qsettings.html#fileName">fileName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Format <b><a href="qsettings.html#format" tppabs="http://pyqt4doc.appspot.com/qsettings.html#format">format</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsettings.html#group" tppabs="http://pyqt4doc.appspot.com/qsettings.html#group">group</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextCodec <b><a href="qsettings.html#iniCodec" tppabs="http://pyqt4doc.appspot.com/qsettings.html#iniCodec">iniCodec</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsettings.html#isWritable" tppabs="http://pyqt4doc.appspot.com/qsettings.html#isWritable">isWritable</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsettings.html#organizationName" tppabs="http://pyqt4doc.appspot.com/qsettings.html#organizationName">organizationName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsettings.html#remove" tppabs="http://pyqt4doc.appspot.com/qsettings.html#remove">remove</a></b> (<i>self</i>, QString <i>key</i>)</li>
+<li>
+<div class="fn"></div>Scope <b><a href="qsettings.html#scope" tppabs="http://pyqt4doc.appspot.com/qsettings.html#scope">scope</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsettings.html#setArrayIndex" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setArrayIndex">setArrayIndex</a></b> (<i>self</i>, int <i>i</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsettings.html#setFallbacksEnabled" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setFallbacksEnabled">setFallbacksEnabled</a></b> (<i>self</i>, bool <i>b</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsettings.html#setIniCodec" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setIniCodec">setIniCodec</a></b> (<i>self</i>, QTextCodec <i>codec</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsettings.html#setIniCodec-2" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setIniCodec-2">setIniCodec</a></b> (<i>self</i>, str <i>codecName</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a></b> (<i>self</i>, QString <i>key</i>, QVariant <i>value</i>)</li>
+<li>
+<div class="fn"></div>Status <b><a href="qsettings.html#status" tppabs="http://pyqt4doc.appspot.com/qsettings.html#status">status</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsettings.html#sync" tppabs="http://pyqt4doc.appspot.com/qsettings.html#sync">sync</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>object <b><a href="qsettings.html#value" tppabs="http://pyqt4doc.appspot.com/qsettings.html#value">value</a></b> (<i>self</i>, QString <i>key</i>, QVariant <i>defaultValue</i> = QVariant(), object <i>type</i> = None)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>Format <b><a href="qsettings.html#defaultFormat" tppabs="http://pyqt4doc.appspot.com/qsettings.html#defaultFormat">defaultFormat</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsettings.html#setDefaultFormat" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setDefaultFormat">setDefaultFormat</a></b> (Format <i>format</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsettings.html#setPath" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setPath">setPath</a></b> (Format <i>format</i>, Scope <i>scope</i>, QString <i>path</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsettings.html#setSystemIniPath" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setSystemIniPath">setSystemIniPath</a></b> (QString <i>dir</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsettings.html#setUserIniPath" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setUserIniPath">setUserIniPath</a></b> (QString <i>dir</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QSettings类提供持久的与平台无关的应用程序设置。</p>
+<p>用户通常期望的应用程序记住它的跨会话设置（窗口大小和位置，期权等） 。这些信息通常存储在Windows系统注册表，并在Mac OS X上在Unix系统中，在没有一个标准的XML文件的偏好，许多应用程序（包括KDE应用程序）使用INI的文本文件。</p>
+<p>QSettings是围绕这些技术的抽象，使您能够保存和恢复应用程序设置在一个便携的方式。它也支持<a href="qsettings.html#registerFormat" tppabs="http://pyqt4doc.appspot.com/qsettings.html#registerFormat">custom
+storage formats</a>。</p>
+<p>QSettings的API是基于<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>，让您节省最大的价值为基础的类型，如<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>，<a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a>和<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>，用最小的努力。</p>
+<p>如果你需要的是一种非持久性记忆体为基础的结构，可以考虑使用<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qmap.html">QMap</a>\u003c<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>，<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>\u003e代替。</p>
+<a id="basic-usage" name="basic-usage"></a>
+<h3>Basic Usage</h3>
+<p>当创建一个QSettings对象，你必须通过你的公司或组织的名称以及您的应用程序的名称。例如，如果您的产品被称为少年阿虎和您的公司被称为MySoft ，你会兴建QSettings对象，如下所示：</p>
+<pre class="cpp">
+     <span class="type">QSettings</span> settings(<span class="string">"MySoft"</span><span class="operator">,</span> <span class="string">"Star Runner"</span>);
+</pre>
+<p>QSettings对象可以（即使用创建无论是在栈或堆<tt>new</tt>） 。构建和销毁QSettings对象是非常快的。</p>
+<p>如果您使用的许多地方在你的应用程序QSettings ，您可能希望使用指定的组织名称和应用程序名称<a href="qcoreapplication.html#organizationName-prop" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#organizationName-prop">QCoreApplication.setOrganizationName</a>（）和<a href="qcoreapplication.html#applicationName-prop" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#applicationName-prop">QCoreApplication.setApplicationName</a>（ ） ，然后使用默认的构造函数QSettings ：</p>
+<pre class="cpp">
+     <span class="type"><a href="qcoreapplication.html" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html">QCoreApplication</a></span><span class="operator">.</span>setOrganizationName(<span class="string">"MySoft"</span>);
+     <span class="type"><a href="qcoreapplication.html" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html">QCoreApplication</a></span><span class="operator">.</span>setOrganizationDomain(<span class="string">"mysoft.com"</span>);
+     <span class="type"><a href="qcoreapplication.html" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html">QCoreApplication</a></span><span class="operator">.</span>setApplicationName(<span class="string">"Star Runner"</span>);
+     ...
+     <span class="type">QSettings</span> settings;
+</pre>
+<p>（在这里，我们也可以指定组织的互联网域名，当互联网域名设置，它是用来代替组织名称在Mac OS X ，因为Mac OS X的应用程序通常使用Internet域名来标识自己。如果没有域设置，假的域是从组织名称派生的。见<a href="#platform-specific-notes">Platform-Specific Notes</a>下面的详细信息。 ）</p>
+<p>QSettings存储设置。每个设置由一个<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>它指定该设置的名称（在<i>key</i>）和一个<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>存储与该键相关联的数据。写一个设置，使用<a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>（ ） 。例如：</p>
+<pre class="cpp">
+     settings<span class="operator">.</span>setValue(<span class="string">"editor/wrapMargin"</span><span class="operator">,</span> <span class="number">68</span>);
+</pre>
+<p>如果已经存在具有相同键的设置，现有的值会被新值复盖。为了提高效率，更改可能不会立即保存到永久存储。 （您可以随时拨打<a href="qsettings.html#sync" tppabs="http://pyqt4doc.appspot.com/qsettings.html#sync">sync</a>（ ）提交更改。 ）</p>
+<p>您可以使用得到一个设定的值返回<a href="qsettings.html#value" tppabs="http://pyqt4doc.appspot.com/qsettings.html#value">value</a>（）：</p>
+<pre class="cpp">
+     <span class="type">int</span> margin <span class="operator">=</span> settings<span class="operator">.</span>value(<span class="string">"editor/wrapMargin"</span>)<span class="operator">.</span>toInt();
+</pre>
+<p>如果没有具有指定名称的设置， QSettings返回null<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>（可以转换为整数0）。你可以通过传递第二个参数指定另一个缺省值<a href="qsettings.html#value" tppabs="http://pyqt4doc.appspot.com/qsettings.html#value">value</a>（）：</p>
+<pre class="cpp">
+     <span class="type">int</span> margin <span class="operator">=</span> settings<span class="operator">.</span>value(<span class="string">"editor/wrapMargin"</span><span class="operator">,</span> <span class="number">80</span>)<span class="operator">.</span>toInt();
+</pre>
+<p>为了测试是否一个给定的键存在，调用<a href="qsettings.html#contains" tppabs="http://pyqt4doc.appspot.com/qsettings.html#contains">contains</a>（ ） 。要删除一个键，呼叫相关的设置<a href="qsettings.html#remove" tppabs="http://pyqt4doc.appspot.com/qsettings.html#remove">remove</a>（ ） 。要获得所有键的列表，请致电<a href="qsettings.html#allKeys" tppabs="http://pyqt4doc.appspot.com/qsettings.html#allKeys">allKeys</a>（ ） 。要移除所有的键，通话<a href="qsettings.html#clear" tppabs="http://pyqt4doc.appspot.com/qsettings.html#clear">clear</a>（ ） 。</p>
+<a id="qvariant-and-gui-types" name="qvariant-and-gui-types"></a>
+<h3>QVariant and GUI Types</h3>
+<p>因为<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>是部分<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a>库，它不能提供转换功能以数据类型，例如<a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a>，<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>和<a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a>，它们是部分<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a>。换句话说，没有<tt>toColor()</tt>，<tt>toImage()</tt>或<tt>toPixmap()</tt>在功能<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>。</p>
+<p>相反，你可以使用<a href="qvariant.html#value" tppabs="http://pyqt4doc.appspot.com/qvariant.html#value">QVariant.value</a>（）或<a class="compat" href="index.htm#qVariantValue" tppabs="http://pyqt4doc.appspot.com/qvariant-qt3.html#qVariantValue">qVariantValue</a>（ ）模板函数。例如：</p>
+<pre class="cpp">
+ <span class="type">QSettings</span> settings(<span class="string">"MySoft"</span><span class="operator">,</span> <span class="string">"Star Runner"</span>);
+ <span class="type"><a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a></span> color <span class="operator">=</span> settings<span class="operator">.</span><a href="qsettings.html#value" tppabs="http://pyqt4doc.appspot.com/qsettings.html#value">value</a>(<span class="string">"DataPump/bgcolor"</span>)<span class="operator">.</span>value<span class="operator">&lt;</span><span class="type"><a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a></span><span class="operator">&gt;</span>();
+</pre>
+<p>逆变换（例如，从<a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a>至<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>）是自动对所支持的所有数据类型<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>包括GUI相关的类：</p>
+<pre class="cpp">
+ <span class="type">QSettings</span> settings(<span class="string">"MySoft"</span><span class="operator">,</span> <span class="string">"Star Runner"</span>);
+ <span class="type"><a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a></span> color <span class="operator">=</span> palette()<span class="operator">.</span>background()<span class="operator">.</span>color();
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"DataPump/bgcolor"</span><span class="operator">,</span> color);
+</pre>
+<p>自定义类型使用登记<a href="qmetatype.html#qRegisterMetaType" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#qRegisterMetaType">qRegisterMetaType</a>（）和<a href="qmetatype.html#qRegisterMetaTypeStreamOperators" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#qRegisterMetaTypeStreamOperators">qRegisterMetaTypeStreamOperators</a>（）可以使用QSettings被存储。</p>
+<a id="section-and-key-syntax" name="section-and-key-syntax"></a>
+<h3>Section and Key Syntax</h3>
+<p>设置键可以包含任何Unicode字符。 Windows注册表和INI文件使用不区分大小写键，而在Mac OS X中的碳Preferences API使用区分大小写键。为了避免可移植性问题，请遵循这些简单的规则：</p>
+<ol class="1">
+<li>总是使用相同的情况下，指的是同一个键。例如，如果你指的是键“文本字体”在一个地方在你的代码，不称其为“文本字体”别的地方。</li>
+<li>避免将除的情况下相同的键名。例如，如果您有一个名为键“<a href="index.htm#mainwindow" tppabs="http://pyqt4doc.appspot.com/designer-to-know.html#mainwindow">MainWindow</a>“不要试图去拯救另一个关键是”主窗口“ 。</li>
+<li>不要在节或键名称中使用斜线（' / '和' \ '）;反斜杠字符用于分隔子键（见下文） 。在windows '\'被QSettings转换为'/' ，这使得它们是相同的。</li>
+</ol>
+<p>您可以使用形成的“/”字符作为分隔符，类似于Unix的文件路径分级密钥。例如：</p>
+<pre class="cpp">
+     settings<span class="operator">.</span>setValue(<span class="string">"mainwindow/size"</span><span class="operator">,</span> win<span class="operator">-</span><span class="operator">&gt;</span>size());
+     settings<span class="operator">.</span>setValue(<span class="string">"mainwindow/fullScreen"</span><span class="operator">,</span> win<span class="operator">-</span><span class="operator">&gt;</span>isFullScreen());
+     settings<span class="operator">.</span>setValue(<span class="string">"outputpanel/visible"</span><span class="operator">,</span> panel<span class="operator">-</span><span class="operator">&gt;</span>isVisible());
+</pre>
+<p>如果你想保存或恢复具有相同前缀的许多设置，您可以使用指定的前缀<a href="qsettings.html#beginGroup" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginGroup">beginGroup</a>（ ）和呼叫<a href="qsettings.html#endGroup" tppabs="http://pyqt4doc.appspot.com/qsettings.html#endGroup">endGroup</a>（）结尾。下面是同样的例子了，但使用组机制这个时候：</p>
+<pre class="cpp">
+     settings<span class="operator">.</span>beginGroup(<span class="string">"mainwindow"</span>);
+     settings<span class="operator">.</span>setValue(<span class="string">"size"</span><span class="operator">,</span> win<span class="operator">-</span><span class="operator">&gt;</span>size());
+     settings<span class="operator">.</span>setValue(<span class="string">"fullScreen"</span><span class="operator">,</span> win<span class="operator">-</span><span class="operator">&gt;</span>isFullScreen());
+     settings<span class="operator">.</span>endGroup();
+
+     settings<span class="operator">.</span>beginGroup(<span class="string">"outputpanel"</span>);
+     settings<span class="operator">.</span>setValue(<span class="string">"visible"</span><span class="operator">,</span> panel<span class="operator">-</span><span class="operator">&gt;</span>isVisible());
+     settings<span class="operator">.</span>endGroup();
+</pre>
+<p>如果一组设置使用<a href="qsettings.html#beginGroup" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginGroup">beginGroup</a>（ ） ，大部分功能的行为从而改变了。组可以递归集。</p>
+<p>除了团体， QSettings还支持“数组”的概念。看<a href="qsettings.html#beginReadArray" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginReadArray">beginReadArray</a>（）和<a href="qsettings.html#beginWriteArray" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginWriteArray">beginWriteArray</a>（ ）了解详情。</p>
+<a id="fallback-mechanism" name="fallback-mechanism"></a>
+<h3>Fallback Mechanism</h3>
+<p>让我们假设你已经创建了一个QSettings对象与该组织名称MySoft和应用程序的名称少年阿虎。当你看到一个值，最多四个地点中搜索的顺序：</p>
+<ol class="1">
+<li>对于少年阿虎应用程序的用户特定位置</li>
+<li>用于通过MySoft所有应用程序的用户特定位置</li>
+<li>对于少年阿虎应用系统范围的位置</li>
+<li>由MySoft所有应用系统范围的位置</li>
+</ol>
+<p>（见<a href="#platform-specific-notes">Platform-Specific
+Notes</a>下面关于这些地点是在Qt所支持的不同平台的信息。 ）</p>
+<p>如果一个密钥不能在第一位置被发现，搜索继续在第二的位置，并依此类推。这使您能够存储系统范围或组织范围内设置，并复盖它们基于每个用户或每个应用程序的基础。要关闭此机制，调用setFallbacksEnabled （假） 。</p>
+<p>虽然可用于读取来自所有四个位置的键，仅在第一个文件（手头的应用程序的用户特定位置）是用于写访问。要写入的任何其他文件，省略了应用程序的名称和/或指定<a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">QSettings.SystemScope</a>（相对于<a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">QSettings.UserScope</a>，默认值） 。</p>
+<p>让我们用一个例子来看看：</p>
+<pre class="cpp">
+     <span class="type">QSettings</span> obj1(<span class="string">"MySoft"</span><span class="operator">,</span> <span class="string">"Star Runner"</span>);
+     <span class="type">QSettings</span> obj2(<span class="string">"MySoft"</span>);
+     <span class="type">QSettings</span> obj3(<span class="type">QSettings</span><span class="operator">.</span>SystemScope<span class="operator">,</span> <span class="string">"MySoft"</span><span class="operator">,</span> <span class="string">"Star Runner"</span>);
+     <span class="type">QSettings</span> obj4(<span class="type">QSettings</span><span class="operator">.</span>SystemScope<span class="operator">,</span> <span class="string">"MySoft"</span>);
+</pre>
+<p>下表总结了QSettings对象的访问哪个位置。 “<b>X</b>“表示该位置是相关联的主力位置的QSettings对象，并同时用于阅读和写作， ”O“是指阅读时的位置作为后备。</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Locations</th>
+<th><tt>obj1</tt></th>
+<th><tt>obj2</tt></th>
+<th><tt>obj3</tt></th>
+<th><tt>obj4</tt></th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td>1. User, Application</td>
+<td><b>X</b></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even" valign="top">
+<td>2. User, Organization</td>
+<td>o</td>
+<td><b>X</b></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd" valign="top">
+<td>3. System, Application</td>
+<td>o</td>
+<td></td>
+<td><b>X</b></td>
+<td></td>
+</tr>
+<tr class="even" valign="top">
+<td>4. System, Organization</td>
+<td>o</td>
+<td>o</td>
+<td>o</td>
+<td><b>X</b></td>
+</tr>
+</table>
+<p>这种机制的好处在于，它可以在Qt所支持的所有平台，并且它还是给你一个很大的灵活性，而不需要你指定的任何文件名或注册表路径。</p>
+<p>如果你想使用在所有平台上，而不是原生API INI文件，你可以传递<a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">QSettings.IniFormat</a>作为第一个参数传递给QSettings的构造函数，其次是范围，组织名称和应用程序名称：</p>
+<pre class="cpp">
+     <span class="type">QSettings</span> settings(<span class="type">QSettings</span><span class="operator">.</span>IniFormat<span class="operator">,</span> <span class="type">QSettings</span><span class="operator">.</span>UserScope<span class="operator">,</span>
+                        <span class="string">"MySoft"</span><span class="operator">,</span> <span class="string">"Star Runner"</span>);
+</pre>
+<p>该<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/tools-settingseditor.html">Settings Editor</a>例如，您可以尝试不同的设置位置，并作为默认选择开启或关闭。</p>
+<a id="restoring-the-state-of-a-gui-application" name="restoring-the-state-of-a-gui-application"></a>
+<h3>Restoring the State of a GUI Application</h3>
+<p>QSettings通常被用来存储一个图形用户界面的应用程序的状态。下面的例子演示了如何使用QSettings来保存和恢复应用程序的主窗口的几何形状。</p>
+<pre class="cpp">
+ <span class="type">void</span> MainWindow<span class="operator">.</span>writeSettings()
+ {
+     <span class="type">QSettings</span> settings(<span class="string">"Moose Soft"</span><span class="operator">,</span> <span class="string">"Clipper"</span>);
+
+     settings<span class="operator">.</span>beginGroup(<span class="string">"MainWindow"</span>);
+     settings<span class="operator">.</span>setValue(<span class="string">"size"</span><span class="operator">,</span> size());
+     settings<span class="operator">.</span>setValue(<span class="string">"pos"</span><span class="operator">,</span> pos());
+     settings<span class="operator">.</span>endGroup();
+ }
+
+ <span class="type">void</span> MainWindow<span class="operator">.</span>readSettings()
+ {
+     <span class="type">QSettings</span> settings(<span class="string">"Moose Soft"</span><span class="operator">,</span> <span class="string">"Clipper"</span>);
+
+     settings<span class="operator">.</span>beginGroup(<span class="string">"MainWindow"</span>);
+     resize(settings<span class="operator">.</span>value(<span class="string">"size"</span><span class="operator">,</span> <span class="type"><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a></span>(<span class="number">400</span><span class="operator">,</span> <span class="number">400</span>))<span class="operator">.</span>toSize());
+     move(settings<span class="operator">.</span>value(<span class="string">"pos"</span><span class="operator">,</span> <span class="type"><a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a></span>(<span class="number">200</span><span class="operator">,</span> <span class="number">200</span>))<span class="operator">.</span>toPoint());
+     settings<span class="operator">.</span>endGroup();
+ }
+</pre>
+<p>See <a href="index.htm#window-geometry" tppabs="http://pyqt4doc.appspot.com/application-windows.html#window-geometry">Window
+Geometry</a>关于为什么它是最好打电话讨论<a href="qwidget.html#size-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#size-prop">QWidget.resize</a>（）和<a href="qwidget.html#pos-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#pos-prop">QWidget.move</a>（ ），而不是<a href="qwidget.html#geometry-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#geometry-prop">QWidget.setGeometry</a>（ ）来还原窗口的几何形状。</p>
+<p>该<tt>readSettings()</tt>和<tt>writeSettings()</tt>功能必须从主窗口的构造函数和close事件处理程序中调用如下：</p>
+<pre class="cpp">
+ MainWindow<span class="operator">.</span>MainWindow()
+ {
+     ...
+     readSettings();
+ }
+
+ <span class="type">void</span> MainWindow<span class="operator">.</span>closeEvent(<span class="type"><a href="qcloseevent.html" tppabs="http://pyqt4doc.appspot.com/qcloseevent.html">QCloseEvent</a></span> <span class="operator">*</span>event)
+ {
+     <span class="keyword">if</span> (userReallyWantsToQuit()) {
+         writeSettings();
+         event<span class="operator">-</span><span class="operator">&gt;</span>accept();
+     } <span class="keyword">else</span> {
+         event<span class="operator">-</span><span class="operator">&gt;</span>ignore();
+     }
+ }
+</pre>
+<p>请参阅<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/mainwindows-application.html">Application</a>例如对于使用QSettings一个自包含的例子。</p>
+<a id="accessing-settings-from-multiple-threads-or-processes-simultaneously" name="accessing-settings-from-multiple-threads-or-processes-simultaneously"></a>
+<h3>Accessing Settings from Multiple Threads or Processes
+Simultaneously</h3>
+<p>QSettings是<a href="index.htm#reentrant" tppabs="http://pyqt4doc.appspot.com/threads-reentrancy.html#reentrant">reentrant</a>。这意味着，你可以在不同的线程中同时使用不同的QSettings对象。这保证代表，即使在​​QSettings对象引用磁盘上的同一个文件（或在系统注册表中的相同条目） 。如果设置是通过一个QSettings对象修改，更改将立即可见在同一位置上运行，而且住在同一个过程中的任何其他QSettings对象。</p>
+<p>QSettings可以安全使用来自不同的进程（可以是您的应用程序在同一时间或不同的应用程序运行完全不同的实例）来读取和写入到同一个系统中的位置。它使用的谘询文件锁定和智能融合算法，以确保数据的完整性。需要注意的是<a href="qsettings.html#sync" tppabs="http://pyqt4doc.appspot.com/qsettings.html#sync">sync</a>（ ）进口（除了写这个QSettings的变化）由其他进程的变化。</p>
+<a id="platform-specific-notes" name="platform-specific-notes"></a>
+<h3>Platform-Specific Notes</h3>
+<a id="locations-where-application-settings-are-stored" name="locations-where-application-settings-are-stored"></a>
+<h4>Locations Where Application Settings Are Stored</h4>
+<p>诚如<a href="#fallback-mechanism">Fallback
+Mechanism</a>节中， QSettings存储设置在四个位置，这取决于设置是否用户特定的或系统范围以及是否设置是特定于应用程序或组织范围内的应用程序。为简单起见，我们假设该组织被称为MySoft和应用程序被称为少年阿虎。</p>
+<p>在Unix系统中，如果文件格式是<a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">NativeFormat</a>，以下文件默认情况下使用：</p>
+<ol class="1">
+<li>
+<tt>$HOME/.config/MySoft/Star Runner.conf</tt>（ Qt嵌入式Linux操作系统：<tt>$HOME/Settings/MySoft/Star Runner.conf</tt>）</li>
+<li>
+<tt>$HOME/.config/MySoft.conf</tt>（ Qt嵌入式Linux操作系统：<tt>$HOME/Settings/MySoft.conf</tt>）</li>
+<li><tt>/etc/xdg/MySoft/Star Runner.conf</tt></li>
+<li><tt>/etc/xdg/MySoft.conf</tt></li>
+</ol>
+<p>在Mac OS X版本10.2和10.3 ，这些文件默认情况下使用：</p>
+<ol class="1">
+<li><tt>$HOME/Library/Preferences/com.MySoft.Star
+Runner.plist</tt></li>
+<li><tt>$HOME/Library/Preferences/com.MySoft.plist</tt></li>
+<li><tt>/Library/Preferences/com.MySoft.Star Runner.plist</tt></li>
+<li><tt>/Library/Preferences/com.MySoft.plist</tt></li>
+</ol>
+<p>在Windows上，<a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">NativeFormat</a>设置存储在以下注册表​​路径：</p>
+<ol class="1">
+<li><tt>HKEY_CURRENT_USER\Software\MySoft\Star Runner</tt></li>
+<li><tt>HKEY_CURRENT_USER\Software\MySoft</tt></li>
+<li><tt>HKEY_LOCAL_MACHINE\Software\MySoft\Star Runner</tt></li>
+<li><tt>HKEY_LOCAL_MACHINE\Software\MySoft</tt></li>
+</ol>
+<p><b>Note:</b>在Windows上，在WOW64模式下运行32位程序，设置存储在以下注册表路径：<tt>HKEY_LOCAL_MACHINE\Software\WOW6432node</tt>。</p>
+<p>如果文件格式是<a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">IniFormat</a>下列文件用于在Unix和Mac OS X ：</p>
+<ol class="1">
+<li>
+<tt>$HOME/.config/MySoft/Star Runner.ini</tt>（ Qt嵌入式Linux操作系统：<tt>$HOME/Settings/MySoft/Star Runner.ini</tt>）</li>
+<li>
+<tt>$HOME/.config/MySoft.ini</tt>（ Qt嵌入式Linux操作系统：<tt>$HOME/Settings/MySoft.ini</tt>）</li>
+<li><tt>/etc/xdg/MySoft/Star Runner.ini</tt></li>
+<li><tt>/etc/xdg/MySoft.ini</tt></li>
+</ol>
+<p>在Windows中，下列文件用于：</p>
+<ol class="1">
+<li><tt>%APPDATA%\MySoft\Star Runner.ini</tt></li>
+<li><tt>%APPDATA%\MySoft.ini</tt></li>
+<li><tt>%COMMON_APPDATA%\MySoft\Star Runner.ini</tt></li>
+<li><tt>%COMMON_APPDATA%\MySoft.ini</tt></li>
+</ol>
+<p>该<tt>%APPDATA%</tt>路径通常是<tt>C:\Documents and
+Settings\<i>User Name</i>\Application Data</tt>;的<tt>%COMMON_APPDATA%</tt>路径通常是<tt>C:\Documents and
+Settings\All Users\Application Data</tt>。</p>
+<p>在Symbian ，用于以下两个文件<a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">IniFormat</a>和<a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">NativeFormat</a>（在这个例子中，我们假定该应用程序被安装在<tt>e-drive</tt>和它的安全ID是<tt>0xECB00931</tt>） ：</p>
+<ol class="1">
+<li><tt>c:\data\.config\MySoft\Star Runner.conf</tt></li>
+<li><tt>c:\data\.config\MySoft.conf</tt></li>
+<li><tt>e:\private\ecb00931\MySoft\Star Runner.conf</tt></li>
+<li><tt>e:\private\ecb00931\MySoft.conf</tt></li>
+</ol>
+<p>该<a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">SystemScope</a>设置位置是从应用程序的安装驱动器和安全ID （ UID3 ）确定。如果应用程序是内置在ROM上，驱动器用于<a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">SystemScope</a> is <tt>c:</tt>。</p>
+<p><b>Note:</b>塞班<a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">SystemScope</a>设置为默认私有的应用程序和应用程序之间不共享，不像其他的环境。</p>
+<p>为路径<tt>.ini</tt>和<tt>.conf</tt>文件可以通过改变<a href="qsettings.html#setPath" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setPath">setPath</a>（ ） 。在Unix和Mac OS X ，用户可以重写它们通过设置<tt>XDG_CONFIG_HOME</tt>环境变量，见<a href="qsettings.html#setPath" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setPath">setPath</a>（ ）了解详情。</p>
+<a id="accessing-ini-and-plist-files-directly" name="accessing-ini-and-plist-files-directly"></a>
+<h4>Accessing INI and .plist Files Directly</h4>
+<p>有时候，你想访问存储在一个特定的文件或注册表路径设置。在所有的平台上，如果你想直接读取INI文件，则可以使用QSettings的构造函数接受一个文件名作为第一个参数，并通过<a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">QSettings.IniFormat</a>作为第二个参数。例如：</p>
+<pre class="cpp">
+ <span class="type">QSettings</span> settings(<span class="string">"/home/petra/misc/myapp.ini"</span><span class="operator">,</span>
+                    <span class="type">QSettings</span><span class="operator">.</span>IniFormat);
+</pre>
+<p>然后，您可以使用QSettings对象来读取和写入文件中的设置。</p>
+<p>在Mac OS X中，可以访问基于XML的<tt>.plist</tt>通过传递文件<a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">QSettings.NativeFormat</a>作为第二个参数。例如：</p>
+<pre class="cpp">
+ <span class="type">QSettings</span> settings(<span class="string">"/Users/petra/misc/myapp.plist"</span><span class="operator">,</span>
+                    <span class="type">QSettings</span><span class="operator">.</span>NativeFormat);
+</pre>
+<a id="accessing-the-windows-registry-directly" name="accessing-the-windows-registry-directly"></a>
+<h4>Accessing the Windows Registry Directly</h4>
+<p>在Windows中， QSettings可以让你访问已写入和QSettings （或设置，支持的格式，例如，字符串数据）在系统注册表设置。这是通过构建一个QSettings对象在注册表中的路径和完成<a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">QSettings.NativeFormat</a>。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type">QSettings</span> settings(<span class="string">"HKEY_CURRENT_USER\\Software\\Microsoft\\Office"</span><span class="operator">,</span>
+                    <span class="type">QSettings</span><span class="operator">.</span>NativeFormat);
+</pre>
+<p>所有出现在指定路径下的注册表项，可以读取或通过QSettings对象写像往常一样（使用正斜杠，而不是反斜杠） 。例如：</p>
+<pre class="cpp">
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"11.0/Outlook/Security/DontTrustInstalledFiles"</span><span class="operator">,</span> <span class="number">0</span>);
+</pre>
+<p>需要注意的是反斜杠字符是，如前所述，使用QSettings来单独的子项。因此，您无法读取或写入包含斜杠或反斜杠Windows的注册表条目，您必须使用本机Windows API，如果你需要的话。</p>
+<a id="accessing-common-registry-settings-on-windows" name="accessing-common-registry-settings-on-windows"></a>
+<h4>Accessing Common Registry Settings on Windows</h4>
+<p>在Windows上，它有可能为一键都有一个值和子项。它的默认值是使用“默认”或访问“ 。 ”代替一个子项：</p>
+<pre class="cpp">
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"HKEY_CURRENT_USER\\MySoft\\Star Runner\\Galaxy"</span><span class="operator">,</span> <span class="string">"Milkyway"</span>);
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"HKEY_CURRENT_USER\\MySoft\\Star Runner\\Galaxy\\Sun"</span><span class="operator">,</span> <span class="string">"OurStar"</span>);
+ settings<span class="operator">.</span><a href="qsettings.html#value" tppabs="http://pyqt4doc.appspot.com/qsettings.html#value">value</a>(<span class="string">"HKEY_CURRENT_USER\\MySoft\\Star Runner\\Galaxy\\Default"</span>); <span class="comment">// returns "Milkyway"</span>
+</pre>
+<p>在其它非Windows平台， “默认”和“ 。 ”将被视为常规的子项。</p>
+<a id="securing-application-settings-in-symbian" name="securing-application-settings-in-symbian"></a>
+<h4>Securing application settings in Symbian</h4>
+<p><a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">UserScope</a>在Symbian的设置是可写的默认的应用程序。为了保护和访问其他应用程序篡改应用程序设置，该设置需要放置在应用程序的私有安全区域。这可以通过直接指定给私人区域中的设置存储路径来完成。下面的代码片断改变<a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">UserScope</a>至<tt>c:/private/ecb00931/MySoft.conf</tt>（提供的应用程序被安装在<tt>c-drive</tt>和它的安全ID是<tt>0xECB00931</tt>：</p>
+<pre class="cpp">
+ <span class="type">QSettings</span> settings(<span class="type"><a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a></span><span class="operator">.</span>applicationDirPath() <span class="operator">+</span> <span class="string">"/MySoft.conf"</span>);
+</pre>
+<p>架构库（如Qt本身）可以使用存储配置和高速缓存设置<a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">UserScope</a>，这是方便和可写的其他应用程序。如果应用程序是很安全的敏感或采用高平台的安全功能，它可以谨慎地也迫使框架的设置将存储在应用程序的私有目录。这可以通过改变的缺省路径进行<a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">UserScope</a>前<a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a>创建：</p>
+<pre class="cpp">
+ <span class="preprocessor">#include &lt;QSettings&gt;</span>
+ <span class="preprocessor">#include &lt;QDesktopServices&gt;</span>
+ <span class="type">int</span> main(<span class="type">int</span> argc<span class="operator">,</span> <span class="type">char</span> <span class="operator">*</span>argv<span class="operator">[</span><span class="operator">]</span>)
+ {
+ <span class="preprocessor">#ifdef Q_OS_SYMBIAN</span>
+     <span class="comment">// Use QDesktopServices:storageLocation as QApplication is not yet created</span>
+     <span class="type">QSettings</span><span class="operator">.</span>setPath(
+         <span class="type">QSettings</span><span class="operator">.</span>NativeFormat<span class="operator">,</span> <span class="type">QSettings</span><span class="operator">.</span>UserScope<span class="operator">,</span>
+         <span class="type"><a href="qdesktopservices.html" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html">QDesktopServices</a></span><span class="operator">.</span>storageLocation(<span class="type"><a href="qdesktopservices.html" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html">QDesktopServices</a></span><span class="operator">.</span>DataLocation) <span class="operator">+</span> <span class="string">"/settings"</span>);
+ <span class="preprocessor">#endif</span>
+     <span class="type"><a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a></span> app(argc<span class="operator">,</span> argv);
+
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ }
+</pre>
+<p>请注意，这可能会影响框架库“功能，如果他们希望在应用程序之间共享的设置。</p>
+<a id="changing-the-location-of-global-qt-settings-on-mac-os-x" name="changing-the-location-of-global-qt-settings-on-mac-os-x"></a>
+<h4>Changing the location of global Qt settings on Mac OS X</h4>
+<p>在Mac OS X ，全球Qt的设置（存储在<tt>com.trolltech.plist</tt>）存储在两种情况下应用程序设置文件：</p>
+<ol class="1">
+<li>如果应用程序在Mac OS X中的沙箱运行（在Mac OS X 10.7或更高版本）或</li>
+<li>如果<tt>Info.plist</tt>该应用程序的文件中包含的关键<tt>"ForAppStore"</tt>与该值<tt>"yes"</tt>
+</li>
+</ol>
+<p>在这些情况下，应用程序设置文件使用该应用程序的包标识符，它因此必须在应用程序的设置命名<tt>Info.plist</tt>文件中。</p>
+<p>此功能提供方便的Qt应用程序的验收到Mac App Store的，如在存储全局的Qt设置的默认行为<tt>com.trolltech.plist</tt>文件不符合Mac App Store的文件系统的使用要求。有关提交Qt应用程序在Mac App Store的更多信息，请参阅<a href="index.htm#preparing-a-qt-application-for-mac-app-store-submission" tppabs="http://pyqt4doc.appspot.com/mac-differences.html#preparing-a-qt-application-for-mac-app-store-submission">
+Preparing a Qt application for Mac App Store submission</a>。</p>
+<a id="platform-limitations" name="platform-limitations"></a>
+<h4>Platform Limitations</h4>
+<p>尽管QSettings试图抚平支持的不同的平台之间的差异，还存在着一些分歧，你应该知道，当移植应用程序的：</p>
+<ul>
+<li>The Windows system registry has the following limitations: A
+subkey may not exceed 255 characters, an entry's value may not
+exceed 16,383 characters, and all the values of a key may not
+exceed 65,535 characters. One way to work around these limitations
+is to store the settings using the <a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">IniFormat</a> instead of the <a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">NativeFormat</a>.</li>
+<li>On Mac OS X, <a href="qsettings.html#allKeys" tppabs="http://pyqt4doc.appspot.com/qsettings.html#allKeys">allKeys</a>()
+will return some extra keys for global settings that apply to all
+applications. These keys can be read using <a href="qsettings.html#value" tppabs="http://pyqt4doc.appspot.com/qsettings.html#value">value</a>() but cannot be changed, only
+shadowed. Calling setFallbacksEnabled(false) will hide these global
+settings.</li>
+<li>On Mac OS X, the CFPreferences API used by QSettings expects
+Internet domain names rather than organization names. To provide a
+uniform API, QSettings derives a fake domain name from the
+organization name (unless the organization name already is a domain
+name, e.g. OpenOffice.org). The algorithm appends ".com" to the
+company name and replaces spaces and other illegal characters with
+hyphens. If you want to specify a different domain name, call
+<a href="qcoreapplication.html#organizationDomain-prop" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#organizationDomain-prop">QCoreApplication.setOrganizationDomain</a>(),
+<a href="qcoreapplication.html#organizationName-prop" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#organizationName-prop">QCoreApplication.setOrganizationName</a>(),
+and <a href="qcoreapplication.html#applicationName-prop" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#applicationName-prop">QCoreApplication.setApplicationName</a>()
+in your <tt>main()</tt> function and then use the default QSettings
+constructor. Another solution is to use preprocessor directives,
+for example:
+<pre class="cpp">
+ <span class="preprocessor">#ifdef Q_WS_MAC</span>
+     <span class="type">QSettings</span> settings(<span class="string">"grenoullelogique.fr"</span><span class="operator">,</span> <span class="string">"Squash"</span>);
+ <span class="preprocessor">#else</span>
+     <span class="type">QSettings</span> settings(<span class="string">"Grenoulle Logique"</span><span class="operator">,</span> <span class="string">"Squash"</span>);
+ <span class="preprocessor">#endif</span>
+</pre>
+</li>
+<li>On Unix and Mac OS X systems, the advisory file locking is
+disabled if NFS (or AutoFS or CacheFS) is detected to work around a
+bug in the NFS fcntl() implementation, which hangs forever if statd
+or lockd aren't running. Also, the locking isn't performed when
+accessing <tt>.plist</tt> files.</li>
+<li>On the BlackBerry platform, applications run in a sandbox. They
+are not allowed to read or write outside of this sandbox. This
+involves the following limitations:
+<ul>
+<li>As there is only a single scope the scope is simply
+ignored.</li>
+<li>The <a href="#fallback-mechanism">Fallback Mechanism</a> is not
+applied, i.e. only a single location is considered.</li>
+<li>It is advised against setting and using custom file paths.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="Format-enum"></a>QSettings.Format</h3>
+<p>该枚举类型指定使用的存储格式<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSettings.NativeFormat</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">Store the settings using the most appropriate
+storage format for the platform. On Windows, this means the system
+registry; on Mac OS X, this means the CFPreferences API; on Unix,
+this means textual configuration files in INI format.</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSettings.IniFormat</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">存储在INI文件中的设置。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSettings.InvalidFormat</tt></td>
+<td class="topAlign"><tt>16</tt></td>
+<td class="topAlign">特殊值返回的<a href="qsettings.html#registerFormat" tppabs="http://pyqt4doc.appspot.com/qsettings.html#registerFormat">registerFormat</a>（ ） 。</td>
+</tr>
+</table>
+<p>在Unix上， NativeFormat和IniFormat意思是一样的，只是文件扩展名是不同的（<tt>.conf</tt>为NativeFormat ，<tt>.ini</tt>为IniFormat ） 。</p>
+<p>INI文件的格式是， Qt支持所有平台上的Windows文件格式。在没有一个INI标准，我们尝试按照微软确实，但下列情况除外：</p>
+<ul>
+<li>If you store types that <a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>
+can't convert to <a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a> (e.g., <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a>, and
+<a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a>), Qt uses an <tt>@</tt>-based syntax
+to encode the type. For example:
+<pre class="cpp">
+ pos <span class="operator">=</span> @Point(<span class="number">100</span> <span class="number">100</span>)
+</pre>
+<p>为了最大限度地减少兼容性问题，任何<tt>@</tt>没有出现在值的第一个位置或后面没有一个Qt类型（<tt>Point</tt>，<tt>Rect</tt>，<tt>Size</tt>等）被视为普通字符。</p>
+</li>
+<li>Although backslash is a special character in INI files, most
+Windows applications don't escape backslashes (<tt>\</tt>) in file
+paths:
+<pre class="cpp">
+ windir <span class="operator">=</span> C:\Windows
+</pre>
+<p><a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>始终将反斜杠为一个特殊字符，并提供用于读取或写入这样的条目没有API 。</p>
+</li>
+<li>The INI file format has severe restrictions on the syntax of a
+key. Qt works around this by using <tt>%</tt> as an escape
+character in keys. In addition, if you save a top-level setting (a
+key with no slashes in it, e.g., "someKey"), it will appear in the
+INI file's "General" section. To avoid overwriting other keys, if
+you save something using the a key such as "General/someKey", the
+key will be located in the "%General" section, <i>not</i> in the
+"General" section.</li>
+<li>Following the philosophy that we should be liberal in what we
+accept and conservative in what we generate, <a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a> will accept Latin-1 encoded INI
+files, but generate pure ASCII files, where non-ASCII values are
+encoded using standard INI escape sequences. To make the INI files
+more readable (but potentially less compatible), call <a href="qsettings.html#setIniCodec" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setIniCodec">setIniCodec</a>().</li>
+</ul>
+<p><b>See also</b> <a href="qsettings.html#registerFormat" tppabs="http://pyqt4doc.appspot.com/qsettings.html#registerFormat">registerFormat</a>（）和<a href="qsettings.html#setPath" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setPath">setPath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="Scope-enum"></a>QSettings.Scope</h3>
+<p>此枚举指定的设置是否用户特定的或同一系统的所有用户共享。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSettings.UserScope</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">在特定于当前用户（例如，在用户的主目录）的位置存储设置。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSettings.SystemScope</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">在全球的位置存储设置，使在同一台机器上的所有用户访问同一组的设置。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qsettings.html#setPath" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setPath">setPath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="Status-enum"></a>QSettings.Status</h3>
+<p>下面的状态值是可能的：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSettings.NoError</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">未发生错误。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSettings.AccessError</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">出现访问错误（例如试图写一个只读文件） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSettings.FormatError</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">发生了格式错误（例如加载一个格式错误的INI文件） 。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qsettings.html#status" tppabs="http://pyqt4doc.appspot.com/qsettings.html#status">status</a>（ ） 。</p>
+
+
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QSettings"></a>QSettings.__init__ (<i>self</i>, QString <i>organization</i>, QString <i>application</i> = QString(), <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>对象，用于访问应用程序的设置，称为<i>application</i>从所谓的组织<i>organization</i>，并与家长<i>parent</i>。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a></span> settings(<span class="string">"Moose Tech"</span><span class="operator">,</span> <span class="string">"Facturo-Pro"</span>);
+</pre>
+<p>范围设置为<a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">QSettings.UserScope</a>以及格式被设置为<a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">QSettings.NativeFormat</a>（即调用<a href="qsettings.html#setDefaultFormat" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setDefaultFormat">setDefaultFormat</a>（ ）之前调用此构造函数没有效果） 。</p>
+<p><b>See also</b> <a href="qsettings.html#setDefaultFormat" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setDefaultFormat">setDefaultFormat</a>（）和<a href="qsettings.html#fallback-mechanism" tppabs="http://pyqt4doc.appspot.com/qsettings.html#fallback-mechanism">Fallback
+Mechanism</a>。</p>
+
+
+<h3 class="fn">
+<a name="QSettings-2"></a>QSettings.__init__ (<i>self</i>, <a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">Scope</a> <i>scope</i>, QString <i>organization</i>, QString <i>application</i> = QString(), <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>对象，用于访问应用程序的设置，称为<i>application</i>从所谓的组织<i>organization</i>，并与家长<i>parent</i>。</p>
+<p>If <i>scope</i> is <a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">QSettings.UserScope</a>时，<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>对象首先搜索用户特定的设置，它会搜索系统范围的设置作为后备之前。如果<i>scope</i> is <a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">QSettings.SystemScope</a>时，<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>对象将忽略用户特定的设置，并提供访问系统范围的设置。</p>
+<p>存储格式被设置为<a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">QSettings.NativeFormat</a>（即调用<a href="qsettings.html#setDefaultFormat" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setDefaultFormat">setDefaultFormat</a>（ ）之前调用此构造函数没有效果） 。</p>
+<p>如果没有应用程序名，则该<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>对象将只能访问整个组织的<a href="qsettings.html#fallback-mechanism" tppabs="http://pyqt4doc.appspot.com/qsettings.html#fallback-mechanism">locations</a>。</p>
+<p><b>See also</b> <a href="qsettings.html#setDefaultFormat" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setDefaultFormat">setDefaultFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QSettings-3"></a>QSettings.__init__ (<i>self</i>, <a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">Format</a> <i>format</i>, <a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">Scope</a> <i>scope</i>, QString <i>organization</i>, QString <i>application</i> = QString(), <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>对象，用于访问应用程序的设置，称为<i>application</i>从所谓的组织<i>organization</i>，并与家长<i>parent</i>。</p>
+<p>If <i>scope</i> is <a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">QSettings.UserScope</a>时，<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>对象首先搜索用户特定的设置，它会搜索系统范围的设置作为后备之前。如果<i>scope</i> is <a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">QSettings.SystemScope</a>时，<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>对象将忽略用户特定的设置，并提供访问系统范围的设置。</p>
+<p>If <i>format</i> is <a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">QSettings.NativeFormat</a>，本机API被用于存储设置。如果<i>format</i> is
+<a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">QSettings.IniFormat</a>中， INI格式被使用。</p>
+<p>如果没有应用程序名，则该<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>对象将只能访问整个组织的<a href="qsettings.html#fallback-mechanism" tppabs="http://pyqt4doc.appspot.com/qsettings.html#fallback-mechanism">locations</a>。</p>
+
+
+<h3 class="fn">
+<a name="QSettings-4"></a>QSettings.__init__ (<i>self</i>, QString <i>fileName</i>, <a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">Format</a> <i>format</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>对象用于访问存储在名为该文件中的设置<i>fileName</i>，与父<i>parent</i>。如果文件不存在，则创建它。</p>
+<p>If <i>format</i> is <a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">QSettings.NativeFormat</a>，的意思<i>fileName</i>取决于平台。在Unix上，<i>fileName</i>是INI文件的名称。在Mac OS X ，<i>fileName</i>是一个名字<tt>.plist</tt>文件中。在Windows上，<i>fileName</i>是在系统注册表中的路径。</p>
+<p>If <i>format</i> is <a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">QSettings.IniFormat</a>，<i>fileName</i>是INI文件的名称。</p>
+<p><b>Warning:</b>此功能提供了方便。它的工作原理以及用于访问INI或<tt>.plist</tt>通过Qt的产生，但文件可能在最初由其他程序，文件，发现了一些语法失败。尤其要注意以下限制：</p>
+<ul>
+<li>
+<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a> provides no way of
+reading INI "path" entries, i.e., entries with unescaped slash
+characters. (This is because these entries are ambiguous and cannot
+be resolved automatically.)</li>
+<li>In INI files, <a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a> uses the
+<tt>@</tt> character as a metacharacter in some contexts, to encode
+Qt-specific data types (e.g., <tt>@Rect</tt>), and might therefore
+misinterpret it when it occurs in pure INI files.</li>
+</ul>
+<p><b>See also</b> <a href="qsettings.html#fileName" tppabs="http://pyqt4doc.appspot.com/qsettings.html#fileName">fileName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QSettings-5"></a>QSettings.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>对象用于访问应用程序和组织的设置与调用先前设置<a href="qcoreapplication.html#organizationName-prop" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#organizationName-prop">QCoreApplication.setOrganizationName</a>（ ）<a href="qcoreapplication.html#organizationDomain-prop" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#organizationDomain-prop">QCoreApplication.setOrganizationDomain</a>（）和<a href="qcoreapplication.html#applicationName-prop" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#applicationName-prop">QCoreApplication.setApplicationName</a>（ ） 。</p>
+<p>的范围是<a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">QSettings.UserScope</a>和格式是<a href="qsettings.html#defaultFormat" tppabs="http://pyqt4doc.appspot.com/qsettings.html#defaultFormat">defaultFormat</a>（ ） （<a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">QSettings.NativeFormat</a>默认情况下） 。使用<a href="qsettings.html#setDefaultFormat" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setDefaultFormat">setDefaultFormat</a>（ ）调用此构造函数来改变使用此构造函数的默认格式之前。</p>
+<p>代码</p>
+<pre class="cpp">
+ <span class="type"><a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a></span> settings(<span class="string">"Moose Soft"</span><span class="operator">,</span> <span class="string">"Facturo-Pro"</span>);
+</pre>
+<p>相当于</p>
+<pre class="cpp">
+ <span class="type"><a href="qcoreapplication.html" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html">QCoreApplication</a></span><span class="operator">.</span>setOrganizationName(<span class="string">"Moose Soft"</span>);
+ <span class="type"><a href="qcoreapplication.html" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html">QCoreApplication</a></span><span class="operator">.</span>setApplicationName(<span class="string">"Facturo-Pro"</span>);
+ <span class="type"><a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a></span> settings;
+</pre>
+<p>If <a href="qcoreapplication.html#organizationName-prop" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#organizationName-prop">QCoreApplication.setOrganizationName</a>（）和<a href="qcoreapplication.html#applicationName-prop" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#applicationName-prop">QCoreApplication.setApplicationName</a>（）先前没有被调用，在<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>对象将不能读取或写入的任何设置，并<a href="qsettings.html#status" tppabs="http://pyqt4doc.appspot.com/qsettings.html#status">status</a>（ ）将返回<a href="qsettings.html#Status-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Status-enum">AccessError</a>。</p>
+<p>在Mac OS X中，如果两个名称和互联网域名都为组织指定的域优先于名称。在其他平台上，该名优先于域。</p>
+<p><b>See also</b> <a href="qcoreapplication.html#organizationName-prop" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#organizationName-prop">QCoreApplication.setOrganizationName</a>（ ）<a href="qcoreapplication.html#organizationDomain-prop" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#organizationDomain-prop">QCoreApplication.setOrganizationDomain</a>（ ）<a href="qcoreapplication.html#applicationName-prop" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#applicationName-prop">QCoreApplication.setApplicationName</a>（）和<a href="qsettings.html#setDefaultFormat" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setDefaultFormat">setDefaultFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="allKeys"></a>QStringList QSettings.allKeys (<i>self</i>)</h3>
+<p>返回所有键，包括子项的列表，可以使用读取的<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>对象。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a></span> settings;
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"fridge/color"</span><span class="operator">,</span> <span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>white);
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"fridge/size"</span><span class="operator">,</span> <span class="type"><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a></span>(<span class="number">32</span><span class="operator">,</span> <span class="number">96</span>));
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"sofa"</span><span class="operator">,</span> <span class="keyword">true</span>);
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"tv"</span><span class="operator">,</span> <span class="keyword">false</span>);
+
+ <span class="type"><a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a></span> keys <span class="operator">=</span> settings<span class="operator">.</span>allKeys();
+ <span class="comment">// keys: ["fridge/color", "fridge/size", "sofa", "tv"]</span>
+</pre>
+<p>如果一组设置使用<a href="qsettings.html#beginGroup" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginGroup">beginGroup</a>（ ）只返回该组中的按键，没有组前缀：</p>
+<pre class="cpp">
+ settings<span class="operator">.</span><a href="qsettings.html#beginGroup" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginGroup">beginGroup</a>(<span class="string">"fridge"</span>);
+ keys <span class="operator">=</span> settings<span class="operator">.</span>allKeys();
+ <span class="comment">// keys: ["color", "size"]</span>
+</pre>
+<p><b>See also</b> <a href="qsettings.html#childGroups" tppabs="http://pyqt4doc.appspot.com/qsettings.html#childGroups">childGroups</a>（）和<a href="qsettings.html#childKeys" tppabs="http://pyqt4doc.appspot.com/qsettings.html#childKeys">childKeys</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="applicationName"></a>QString QSettings.applicationName (<i>self</i>)</h3>
+<p>返回用于存储设置的应用程序的名称。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qcoreapplication.html#applicationName-prop" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#applicationName-prop">QCoreApplication.applicationName</a>（ ）<a href="qsettings.html#format" tppabs="http://pyqt4doc.appspot.com/qsettings.html#format">format</a>（ ）<a href="qsettings.html#scope" tppabs="http://pyqt4doc.appspot.com/qsettings.html#scope">scope</a>（）和<a href="qsettings.html#organizationName" tppabs="http://pyqt4doc.appspot.com/qsettings.html#organizationName">organizationName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="beginGroup"></a>QSettings.beginGroup (<i>self</i>, QString <i>prefix</i>)</h3>
+<p>追加可<i>prefix</i>到当前组。</p>
+<p>当前组会自动追加到指定所有键<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>。此外，查询功能，如<a href="qsettings.html#childGroups" tppabs="http://pyqt4doc.appspot.com/qsettings.html#childGroups">childGroups</a>（ ）<a href="qsettings.html#childKeys" tppabs="http://pyqt4doc.appspot.com/qsettings.html#childKeys">childKeys</a>（）和<a href="qsettings.html#allKeys" tppabs="http://pyqt4doc.appspot.com/qsettings.html#allKeys">allKeys</a>（ ）是基于组。缺省情况下，组设置。</p>
+<p>组是有用的，以避免一遍又一遍相同的设置路径打字。例如：</p>
+<pre class="cpp">
+ settings<span class="operator">.</span>beginGroup(<span class="string">"mainwindow"</span>);
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"size"</span><span class="operator">,</span> win<span class="operator">-</span><span class="operator">&gt;</span>size());
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"fullScreen"</span><span class="operator">,</span> win<span class="operator">-</span><span class="operator">&gt;</span>isFullScreen());
+ settings<span class="operator">.</span><a href="qsettings.html#endGroup" tppabs="http://pyqt4doc.appspot.com/qsettings.html#endGroup">endGroup</a>();
+
+ settings<span class="operator">.</span>beginGroup(<span class="string">"outputpanel"</span>);
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"visible"</span><span class="operator">,</span> panel<span class="operator">-</span><span class="operator">&gt;</span>isVisible());
+ settings<span class="operator">.</span><a href="qsettings.html#endGroup" tppabs="http://pyqt4doc.appspot.com/qsettings.html#endGroup">endGroup</a>();
+</pre>
+<p>这将设置的三个设置值：</p>
+<ul>
+<li><tt>mainwindow/size</tt></li>
+<li><tt>mainwindow/fullScreen</tt></li>
+<li><tt>outputpanel/visible</tt></li>
+</ul>
+<p>Call <a href="qsettings.html#endGroup" tppabs="http://pyqt4doc.appspot.com/qsettings.html#endGroup">endGroup</a>（ ）到当前组复位到它是什么相应的beginGroup （ ）调用之前。组可以嵌套。</p>
+<p><b>See also</b> <a href="qsettings.html#endGroup" tppabs="http://pyqt4doc.appspot.com/qsettings.html#endGroup">endGroup</a>（）和<a href="qsettings.html#group" tppabs="http://pyqt4doc.appspot.com/qsettings.html#group">group</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="beginReadArray"></a>int QSettings.beginReadArray (<i>self</i>, QString <i>prefix</i>)</h3>
+<p>添加<i>prefix</i>到当前组，并开始从数组中读取。返回该数组的大小。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="keyword">struct</span> Login {
+     <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> userName;
+     <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> password;
+ };
+ <span class="type"><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qlist.html">QList</a></span><span class="operator">&lt;</span>Login<span class="operator">&gt;</span> logins;
+ <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+
+ <span class="type"><a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a></span> settings;
+ <span class="type">int</span> size <span class="operator">=</span> settings<span class="operator">.</span>beginReadArray(<span class="string">"logins"</span>);
+ <span class="keyword">for</span> (<span class="type">int</span> i <span class="operator">=</span> <span class="number">0</span>; i <span class="operator">&lt;</span> size; <span class="operator">+</span><span class="operator">+</span>i) {
+     settings<span class="operator">.</span>setArrayIndex(i);
+     Login login;
+     login<span class="operator">.</span>userName <span class="operator">=</span> settings<span class="operator">.</span>value(<span class="string">"userName"</span>)<span class="operator">.</span>toString();
+     login<span class="operator">.</span>password <span class="operator">=</span> settings<span class="operator">.</span>value(<span class="string">"password"</span>)<span class="operator">.</span>toString();
+     logins<span class="operator">.</span>append(login);
+ }
+ settings<span class="operator">.</span><a href="qsettings.html#endArray" tppabs="http://pyqt4doc.appspot.com/qsettings.html#endArray">endArray</a>();
+</pre>
+<p>使用<a href="qsettings.html#beginWriteArray" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginWriteArray">beginWriteArray</a>（）写在首位的数组。</p>
+<p><b>See also</b> <a href="qsettings.html#beginWriteArray" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginWriteArray">beginWriteArray</a>（ ）<a href="qsettings.html#endArray" tppabs="http://pyqt4doc.appspot.com/qsettings.html#endArray">endArray</a>（）和<a href="qsettings.html#setArrayIndex" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setArrayIndex">setArrayIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="beginWriteArray"></a>QSettings.beginWriteArray (<i>self</i>, QString <i>prefix</i>, int <i>size</i> = -1)</h3>
+<p>添加<i>prefix</i>到当前组，并开始写大小的数组<i>size</i>。如果<i>size</i>为-1 （默认值） ，它会自动根据写入的条目的索引号。</p>
+<p>如果你有一定的组键的许多事件，你可以使用数组，使您的生活更轻松。例如，让我们假设你想保存的用户名和密码的长度可变的列表。那么你可以这样写：</p>
+<pre class="cpp">
+ <span class="keyword">struct</span> Login {
+     <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> userName;
+     <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> password;
+ };
+ <span class="type"><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qlist.html">QList</a></span><span class="operator">&lt;</span>Login<span class="operator">&gt;</span> logins;
+ <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+
+ <span class="type"><a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a></span> settings;
+ settings<span class="operator">.</span>beginWriteArray(<span class="string">"logins"</span>);
+ <span class="keyword">for</span> (<span class="type">int</span> i <span class="operator">=</span> <span class="number">0</span>; i <span class="operator">&lt;</span> logins<span class="operator">.</span>size(); <span class="operator">+</span><span class="operator">+</span>i) {
+     settings<span class="operator">.</span>setArrayIndex(i);
+     settings<span class="operator">.</span>setValue(<span class="string">"userName"</span><span class="operator">,</span> list<span class="operator">.</span>at(i)<span class="operator">.</span>userName);
+     settings<span class="operator">.</span>setValue(<span class="string">"password"</span><span class="operator">,</span> list<span class="operator">.</span>at(i)<span class="operator">.</span>password);
+ }
+ settings<span class="operator">.</span><a href="qsettings.html#endArray" tppabs="http://pyqt4doc.appspot.com/qsettings.html#endArray">endArray</a>();
+</pre>
+<p>生成的密钥将有形式</p>
+<ul>
+<li><tt>logins/size</tt></li>
+<li><tt>logins/1/userName</tt></li>
+<li><tt>logins/1/password</tt></li>
+<li><tt>logins/2/userName</tt></li>
+<li><tt>logins/2/password</tt></li>
+<li><tt>logins/3/userName</tt></li>
+<li><tt>logins/3/password</tt></li>
+<li>...</li>
+</ul>
+<p>读回一个数组，使用<a href="qsettings.html#beginReadArray" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginReadArray">beginReadArray</a>（ ） 。</p>
+<p><b>See also</b> <a href="qsettings.html#beginReadArray" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginReadArray">beginReadArray</a>（ ）<a href="qsettings.html#endArray" tppabs="http://pyqt4doc.appspot.com/qsettings.html#endArray">endArray</a>（）和<a href="qsettings.html#setArrayIndex" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setArrayIndex">setArrayIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="childGroups"></a>QStringList QSettings.childGroups (<i>self</i>)</h3>
+<p>返回包含所有按键键顶层组的列表，可以使用读取的<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>对象。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a></span> settings;
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"fridge/color"</span><span class="operator">,</span> <span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>white);
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"fridge/size"</span><span class="operator">,</span> <span class="type"><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a></span>(<span class="number">32</span><span class="operator">,</span> <span class="number">96</span>));
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"sofa"</span><span class="operator">,</span> <span class="keyword">true</span>);
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"tv"</span><span class="operator">,</span> <span class="keyword">false</span>);
+
+ <span class="type"><a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a></span> groups <span class="operator">=</span> settings<span class="operator">.</span>childGroups();
+ <span class="comment">// groups: ["fridge"]</span>
+</pre>
+<p>如果一组设置使用<a href="qsettings.html#beginGroup" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginGroup">beginGroup</a>（ ） ，则返回该组中的第一级按键，没有组前缀。</p>
+<pre class="cpp">
+ settings<span class="operator">.</span><a href="qsettings.html#beginGroup" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginGroup">beginGroup</a>(<span class="string">"fridge"</span>);
+ groups <span class="operator">=</span> settings<span class="operator">.</span>childGroups();
+ <span class="comment">// groups: []</span>
+</pre>
+<p>您可以通过整个层次结构设置使用导航<a href="qsettings.html#childKeys" tppabs="http://pyqt4doc.appspot.com/qsettings.html#childKeys">childKeys</a>（）和childGroups （ ）递归。</p>
+<p><b>See also</b> <a href="qsettings.html#childKeys" tppabs="http://pyqt4doc.appspot.com/qsettings.html#childKeys">childKeys</a>（）和<a href="qsettings.html#allKeys" tppabs="http://pyqt4doc.appspot.com/qsettings.html#allKeys">allKeys</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="childKeys"></a>QStringList QSettings.childKeys (<i>self</i>)</h3>
+<p>返回所有顶级键的列表，可以使用读取的<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>对象。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a></span> settings;
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"fridge/color"</span><span class="operator">,</span> <span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>white);
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"fridge/size"</span><span class="operator">,</span> <span class="type"><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a></span>(<span class="number">32</span><span class="operator">,</span> <span class="number">96</span>));
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"sofa"</span><span class="operator">,</span> <span class="keyword">true</span>);
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"tv"</span><span class="operator">,</span> <span class="keyword">false</span>);
+
+ <span class="type"><a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a></span> keys <span class="operator">=</span> settings<span class="operator">.</span>childKeys();
+ <span class="comment">// keys: ["sofa", "tv"]</span>
+</pre>
+<p>如果一组设置使用<a href="qsettings.html#beginGroup" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginGroup">beginGroup</a>（ ） ，则返回该组中的顶级键，而不群的前缀：</p>
+<pre class="cpp">
+ settings<span class="operator">.</span><a href="qsettings.html#beginGroup" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginGroup">beginGroup</a>(<span class="string">"fridge"</span>);
+ keys <span class="operator">=</span> settings<span class="operator">.</span>childKeys();
+ <span class="comment">// keys: ["color", "size"]</span>
+</pre>
+<p>您可以通过整个层次结构设置使用CHILDKEYS浏览（）和<a href="qsettings.html#childGroups" tppabs="http://pyqt4doc.appspot.com/qsettings.html#childGroups">childGroups</a>（ ）递归。</p>
+<p><b>See also</b> <a href="qsettings.html#childGroups" tppabs="http://pyqt4doc.appspot.com/qsettings.html#childGroups">childGroups</a>（）和<a href="qsettings.html#allKeys" tppabs="http://pyqt4doc.appspot.com/qsettings.html#allKeys">allKeys</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clear"></a>QSettings.clear (<i>self</i>)</h3>
+<p>删除所有条目关联到这个主位置<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>对象。</p>
+<p>在备用位置的条目不会被删除。</p>
+<p>如果你只是想删除当前条目<a href="qsettings.html#group" tppabs="http://pyqt4doc.appspot.com/qsettings.html#group">group</a>（ ） ，使用删除（“” ）来代替。</p>
+<p><b>See also</b> <a href="qsettings.html#remove" tppabs="http://pyqt4doc.appspot.com/qsettings.html#remove">remove</a>（）和<a href="qsettings.html#setFallbacksEnabled" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setFallbacksEnabled">setFallbacksEnabled</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="contains"></a>bool QSettings.contains (<i>self</i>, QString <i>key</i>)</h3>
+<p>如果存在一个名为设置，则返回True<i>key</i>否则返回False 。</p>
+<p>如果一组设置使用<a href="qsettings.html#beginGroup" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginGroup">beginGroup</a>（ ）<i>key</i>被视为相对于该组。</p>
+<p>请注意，Windows注册表和INI文件使用不区分大小写键，而在Mac OS X中的碳Preferences API使用区分大小写键。为了避免可移植性问题，请参见<a href="qsettings.html#section-and-key-syntax" tppabs="http://pyqt4doc.appspot.com/qsettings.html#section-and-key-syntax">Section and Key
+Syntax</a>规则。</p>
+<p><b>See also</b> <a href="qsettings.html#value" tppabs="http://pyqt4doc.appspot.com/qsettings.html#value">value</a>（）和<a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="defaultFormat"></a><a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">Format</a> QSettings.defaultFormat ()</h3>
+<p>用于存储的设置返回默认文件格式<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>（<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>* ）构造函数。如果没有默认格式设置，<a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">QSettings.NativeFormat</a>被使用。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qsettings.html#setDefaultFormat" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setDefaultFormat">setDefaultFormat</a>（）和<a href="qsettings.html#format" tppabs="http://pyqt4doc.appspot.com/qsettings.html#format">format</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="endArray"></a>QSettings.endArray (<i>self</i>)</h3>
+<p>关闭已启动使用数组<a href="qsettings.html#beginReadArray" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginReadArray">beginReadArray</a>（）或<a href="qsettings.html#beginWriteArray" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginWriteArray">beginWriteArray</a>（ ） 。</p>
+<p><b>See also</b> <a href="qsettings.html#beginReadArray" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginReadArray">beginReadArray</a>（）和<a href="qsettings.html#beginWriteArray" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginWriteArray">beginWriteArray</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="endGroup"></a>QSettings.endGroup (<i>self</i>)</h3>
+<p>复位组，这是什么相应的前<a href="qsettings.html#beginGroup" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginGroup">beginGroup</a>（ ）调用。</p>
+<p>例如：</p>
+<pre class="cpp">
+ settings<span class="operator">.</span><a href="qsettings.html#beginGroup" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginGroup">beginGroup</a>(<span class="string">"alpha"</span>);
+ <span class="comment">// settings.group() == "alpha"</span>
+
+ settings<span class="operator">.</span><a href="qsettings.html#beginGroup" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginGroup">beginGroup</a>(<span class="string">"beta"</span>);
+ <span class="comment">// settings.group() == "alpha/beta"</span>
+
+ settings<span class="operator">.</span>endGroup();
+ <span class="comment">// settings.group() == "alpha"</span>
+
+ settings<span class="operator">.</span>endGroup();
+ <span class="comment">// settings.group() == ""</span>
+</pre>
+<p><b>See also</b> <a href="qsettings.html#beginGroup" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginGroup">beginGroup</a>（）和<a href="qsettings.html#group" tppabs="http://pyqt4doc.appspot.com/qsettings.html#group">group</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="event"></a>bool QSettings.event (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">QObject.event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fallbacksEnabled"></a>bool QSettings.fallbacksEnabled (<i>self</i>)</h3>
+<p>返回True如果启用了回退，否则返回False 。</p>
+<p>默认情况下，回退启用。</p>
+<p><b>See also</b> <a href="qsettings.html#setFallbacksEnabled" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setFallbacksEnabled">setFallbacksEnabled</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fileName"></a>QString QSettings.fileName (<i>self</i>)</h3>
+<p>返回在使用此书面设置的路径<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>对象被存储。</p>
+<p>在Windows上，如果格式是<a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">QSettings.NativeFormat</a>，返回值是一个系统注册表路径，而不是文件路径。</p>
+<p><b>See also</b> <a href="qsettings.html#isWritable" tppabs="http://pyqt4doc.appspot.com/qsettings.html#isWritable">isWritable</a>（）和<a href="qsettings.html#format" tppabs="http://pyqt4doc.appspot.com/qsettings.html#format">format</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="format"></a><a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">Format</a> QSettings.format (<i>self</i>)</h3>
+<p>返回用于存储设置的格式。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qsettings.html#defaultFormat" tppabs="http://pyqt4doc.appspot.com/qsettings.html#defaultFormat">defaultFormat</a>（ ）<a href="qsettings.html#fileName" tppabs="http://pyqt4doc.appspot.com/qsettings.html#fileName">fileName</a>（ ）<a href="qsettings.html#scope" tppabs="http://pyqt4doc.appspot.com/qsettings.html#scope">scope</a>（ ）<a href="qsettings.html#organizationName" tppabs="http://pyqt4doc.appspot.com/qsettings.html#organizationName">organizationName</a>（）和<a href="qsettings.html#applicationName" tppabs="http://pyqt4doc.appspot.com/qsettings.html#applicationName">applicationName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="group"></a>QString QSettings.group (<i>self</i>)</h3>
+<p>返回当前组。</p>
+<p><b>See also</b> <a href="qsettings.html#beginGroup" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginGroup">beginGroup</a>（）和<a href="qsettings.html#endGroup" tppabs="http://pyqt4doc.appspot.com/qsettings.html#endGroup">endGroup</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="iniCodec"></a><a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a> QSettings.iniCodec (<i>self</i>)</h3>
+<p>返回用于访问INI文件的编解码器。缺省情况下，编解码器使用，所以返回空指针。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qsettings.html#setIniCodec" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setIniCodec">setIniCodec</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isWritable"></a>bool QSettings.isWritable (<i>self</i>)</h3>
+<p>返回True如果设置可以使用此写入<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>对象，否则返回False 。</p>
+<p>为什么isWritable （ ）也可能返回False的原因之一是，如果<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>运行在一个只读文件。</p>
+<p><b>Warning:</b>此功能是不完全可靠，因为文件权限可以随时更改。</p>
+<p><b>See also</b> <a href="qsettings.html#fileName" tppabs="http://pyqt4doc.appspot.com/qsettings.html#fileName">fileName</a>（ ）<a href="qsettings.html#status" tppabs="http://pyqt4doc.appspot.com/qsettings.html#status">status</a>（）和<a href="qsettings.html#sync" tppabs="http://pyqt4doc.appspot.com/qsettings.html#sync">sync</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="organizationName"></a>QString QSettings.organizationName (<i>self</i>)</h3>
+<p>返回用于存储设置的组织名称。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qcoreapplication.html#organizationName-prop" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#organizationName-prop">QCoreApplication.organizationName</a>（ ）<a href="qsettings.html#format" tppabs="http://pyqt4doc.appspot.com/qsettings.html#format">format</a>（ ）<a href="qsettings.html#scope" tppabs="http://pyqt4doc.appspot.com/qsettings.html#scope">scope</a>（）和<a href="qsettings.html#applicationName" tppabs="http://pyqt4doc.appspot.com/qsettings.html#applicationName">applicationName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="remove"></a>QSettings.remove (<i>self</i>, QString <i>key</i>)</h3>
+<p>删除设置<i>key</i>和任何一个子设定<i>key</i>。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a></span> settings;
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"ape"</span>);
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"monkey"</span><span class="operator">,</span> <span class="number">1</span>);
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"monkey/sea"</span><span class="operator">,</span> <span class="number">2</span>);
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"monkey/doe"</span><span class="operator">,</span> <span class="number">4</span>);
+
+ settings<span class="operator">.</span>remove(<span class="string">"monkey"</span>);
+ <span class="type"><a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a></span> keys <span class="operator">=</span> settings<span class="operator">.</span><a href="qsettings.html#allKeys" tppabs="http://pyqt4doc.appspot.com/qsettings.html#allKeys">allKeys</a>();
+ <span class="comment">// keys: ["ape"]</span>
+</pre>
+<p>请注意，如果回退的地点之一包含具有相同键的设置，该设置将调用remove （ ）后是可见的。</p>
+<p>If <i>key</i>是一个空字符串，在目前的所有键<a href="qsettings.html#group" tppabs="http://pyqt4doc.appspot.com/qsettings.html#group">group</a>（）被除去。例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a></span> settings;
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"ape"</span>);
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"monkey"</span><span class="operator">,</span> <span class="number">1</span>);
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"monkey/sea"</span><span class="operator">,</span> <span class="number">2</span>);
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"monkey/doe"</span><span class="operator">,</span> <span class="number">4</span>);
+
+ settings<span class="operator">.</span><a href="qsettings.html#beginGroup" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginGroup">beginGroup</a>(<span class="string">"monkey"</span>);
+ settings<span class="operator">.</span>remove(<span class="string">""</span>);
+ settings<span class="operator">.</span><a href="qsettings.html#endGroup" tppabs="http://pyqt4doc.appspot.com/qsettings.html#endGroup">endGroup</a>();
+
+ <span class="type"><a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a></span> keys <span class="operator">=</span> settings<span class="operator">.</span><a href="qsettings.html#allKeys" tppabs="http://pyqt4doc.appspot.com/qsettings.html#allKeys">allKeys</a>();
+ <span class="comment">// keys: ["ape"]</span>
+</pre>
+<p>请注意，Windows注册表和INI文件使用不区分大小写键，而在Mac OS X中的碳Preferences API使用区分大小写键。为了避免可移植性问题，请参见<a href="qsettings.html#section-and-key-syntax" tppabs="http://pyqt4doc.appspot.com/qsettings.html#section-and-key-syntax">Section and Key
+Syntax</a>规则。</p>
+<p><b>See also</b> <a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>（ ）<a href="qsettings.html#value" tppabs="http://pyqt4doc.appspot.com/qsettings.html#value">value</a>（）和<a href="qsettings.html#contains" tppabs="http://pyqt4doc.appspot.com/qsettings.html#contains">contains</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="scope"></a><a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">Scope</a> QSettings.scope (<i>self</i>)</h3>
+<p>返回用于存储设置的范围。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qsettings.html#format" tppabs="http://pyqt4doc.appspot.com/qsettings.html#format">format</a>（ ）<a href="qsettings.html#organizationName" tppabs="http://pyqt4doc.appspot.com/qsettings.html#organizationName">organizationName</a>（）和<a href="qsettings.html#applicationName" tppabs="http://pyqt4doc.appspot.com/qsettings.html#applicationName">applicationName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setArrayIndex"></a>QSettings.setArrayIndex (<i>self</i>, int <i>i</i>)</h3>
+<p>当前数组的索引设置为<i>i</i>。呼叫功能，如<a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>（ ）<a href="qsettings.html#value" tppabs="http://pyqt4doc.appspot.com/qsettings.html#value">value</a>（ ）<a href="qsettings.html#remove" tppabs="http://pyqt4doc.appspot.com/qsettings.html#remove">remove</a>（）和<a href="qsettings.html#contains" tppabs="http://pyqt4doc.appspot.com/qsettings.html#contains">contains</a>（ ）将运行在该索引处的数组项。</p>
+<p>你必须调用<a href="qsettings.html#beginReadArray" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginReadArray">beginReadArray</a>（）或<a href="qsettings.html#beginWriteArray" tppabs="http://pyqt4doc.appspot.com/qsettings.html#beginWriteArray">beginWriteArray</a>（ ）之前，你可以调用这个函数。</p>
+
+
+<h3 class="fn">
+<a name="setDefaultFormat"></a>QSettings.setDefaultFormat (<a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">Format</a> <i>format</i>)</h3>
+<p>设置默认的文件格式为给定的<i>format</i>，它被用于存储设定的<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>（<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>* ）构造函数。</p>
+<p>如果没有默认格式设置，<a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">QSettings.NativeFormat</a>被使用。请参阅该文档<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>您正在使用，看看是否该构造函数会忽略这个功能的构造函数。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qsettings.html#defaultFormat" tppabs="http://pyqt4doc.appspot.com/qsettings.html#defaultFormat">defaultFormat</a>（）和<a href="qsettings.html#format" tppabs="http://pyqt4doc.appspot.com/qsettings.html#format">format</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFallbacksEnabled"></a>QSettings.setFallbacksEnabled (<i>self</i>, bool <i>b</i>)</h3>
+<p>套回退是否启用<i>b</i>。</p>
+<p>默认情况下，回退启用。</p>
+<p><b>See also</b> <a href="qsettings.html#fallbacksEnabled" tppabs="http://pyqt4doc.appspot.com/qsettings.html#fallbacksEnabled">fallbacksEnabled</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setIniCodec"></a>QSettings.setIniCodec (<i>self</i>, <a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a> <i>codec</i>)</h3>
+<p>设置编解码器，用于访问INI文件（包括<tt>.conf</tt>在Unix文件）<i>codec</i>。编解码器，用于解码被从INI文件读取的数据，并用于编码被写入到文件中的任何数据。缺省情况下，编解码器用于和非ASCII字符都使用标准的INI转义序列编码。</p>
+<p><b>Warning:</b>该编解码器必须立即创建后设置的<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>对象，访问任何数据之前。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qsettings.html#iniCodec" tppabs="http://pyqt4doc.appspot.com/qsettings.html#iniCodec">iniCodec</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setIniCodec-2"></a>QSettings.setIniCodec (<i>self</i>, str <i>codecName</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>设置编解码器，用于访问INI文件（包括<tt>.conf</tt>在Unix文件）复制到<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>对于由指定的编码<i>codecName</i>。为共同的价值观<tt>codecName</tt>包括“ ISO 8859 ”，“ UTF-8” ，和“UTF- 16” 。如果编码不被识别，没有任何反应。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qtextcodec.html#codecForName" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForName">QTextCodec.codecForName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPath"></a>QSettings.setPath (<a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">Format</a> <i>format</i>, <a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">Scope</a> <i>scope</i>, QString <i>path</i>)</h3>
+<p>设置用于存储设置为给定的路径<i>format</i>和<i>scope</i>，以<i>path</i>。该<i>format</i>可以自定义格式。</p>
+<p>下面的表总结了默认值：</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Platform</th>
+<th>Format</th>
+<th>Scope</th>
+<th>Path</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td rowspan="2">Windows</td>
+<td rowspan="2"><a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">IniFormat</a></td>
+<td><a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">UserScope</a></td>
+<td><tt>%APPDATA%</tt></td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">SystemScope</a></td>
+<td><tt>%COMMON_APPDATA%</tt></td>
+</tr>
+<tr class="odd" valign="top">
+<td rowspan="2">Unix</td>
+<td rowspan="2">
+<a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">NativeFormat</a>, <a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">IniFormat</a>
+</td>
+<td><a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">UserScope</a></td>
+<td><tt>$HOME/.config</tt></td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">SystemScope</a></td>
+<td><tt>/etc/xdg</tt></td>
+</tr>
+<tr class="odd" valign="top">
+<td rowspan="2">Qt for Embedded Linux</td>
+<td rowspan="2">
+<a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">NativeFormat</a>, <a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">IniFormat</a>
+</td>
+<td><a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">UserScope</a></td>
+<td><tt>$HOME/Settings</tt></td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">SystemScope</a></td>
+<td><tt>/etc/xdg</tt></td>
+</tr>
+<tr class="odd" valign="top">
+<td rowspan="2">Mac OS X</td>
+<td rowspan="2"><a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">IniFormat</a></td>
+<td><a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">UserScope</a></td>
+<td><tt>$HOME/.config</tt></td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">SystemScope</a></td>
+<td><tt>/etc/xdg</tt></td>
+</tr>
+<tr class="odd" valign="top">
+<td rowspan="2">Symbian</td>
+<td rowspan="2">
+<a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">NativeFormat</a>, <a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">IniFormat</a>
+</td>
+<td><a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">UserScope</a></td>
+<td><tt>c:/data/.config</tt></td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">SystemScope</a></td>
+<td><tt>&lt;drive&gt;/private/&lt;uid&gt;</tt></td>
+</tr>
+</table>
+<p>默认<a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">UserScope</a>在Unix和Mac OS X （路径<tt>$HOME/.config</tt>或$ HOME /设置）可以通过设置由用户复盖了<tt>XDG_CONFIG_HOME</tt>环境变量。默认<a href="qsettings.html#Scope-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Scope-enum">SystemScope</a>在Unix和Mac OS X （路径<tt>/etc/xdg</tt>）可以使用构建Qt库时，被复盖的<tt>configure</tt>脚本的<tt>--sysconfdir</tt>标志（见<a href="qlibraryinfo.html" tppabs="http://pyqt4doc.appspot.com/qlibraryinfo.html">QLibraryInfo</a>有关详细信息） 。</p>
+<p>设置<a href="qsettings.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Format-enum">NativeFormat</a>在Windows和Mac OS X的路径没有影响。</p>
+<p><b>Warning:</b>此功能不会影响现有的<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>对象。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qsettings.html#registerFormat" tppabs="http://pyqt4doc.appspot.com/qsettings.html#registerFormat">registerFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setSystemIniPath"></a>QSettings.setSystemIniPath (QString <i>dir</i>)</h3>
+<h3 class="fn">
+<a name="setUserIniPath"></a>QSettings.setUserIniPath (QString <i>dir</i>)</h3>
+<h3 class="fn">
+<a name="setValue"></a>QSettings.setValue (<i>self</i>, QString <i>key</i>, QVariant <i>value</i>)</h3>
+<p>设定设定值<i>key</i>至<i>value</i>。如果<i>key</i>已经存在，原来的值将被复盖。</p>
+<p>请注意，Windows注册表和INI文件使用不区分大小写键，而在Mac OS X中的碳Preferences API使用区分大小写键。为了避免可移植性问题，请参见<a href="qsettings.html#section-and-key-syntax" tppabs="http://pyqt4doc.appspot.com/qsettings.html#section-and-key-syntax">Section and Key
+Syntax</a>规则。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a></span> settings;
+ settings<span class="operator">.</span>setValue(<span class="string">"interval"</span><span class="operator">,</span> <span class="number">30</span>);
+ settings<span class="operator">.</span><a href="qsettings.html#value" tppabs="http://pyqt4doc.appspot.com/qsettings.html#value">value</a>(<span class="string">"interval"</span>)<span class="operator">.</span>toInt();     <span class="comment">// returns 30</span>
+
+ settings<span class="operator">.</span>setValue(<span class="string">"interval"</span><span class="operator">,</span> <span class="number">6.55</span>);
+ settings<span class="operator">.</span><a href="qsettings.html#value" tppabs="http://pyqt4doc.appspot.com/qsettings.html#value">value</a>(<span class="string">"interval"</span>)<span class="operator">.</span>toDouble();  <span class="comment">// returns 6.55</span>
+</pre>
+<p><b>See also</b> <a href="qsettings.html#value" tppabs="http://pyqt4doc.appspot.com/qsettings.html#value">value</a>（ ）<a href="qsettings.html#remove" tppabs="http://pyqt4doc.appspot.com/qsettings.html#remove">remove</a>（）和<a href="qsettings.html#contains" tppabs="http://pyqt4doc.appspot.com/qsettings.html#contains">contains</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="status"></a><a href="qsettings.html#Status-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Status-enum">Status</a> QSettings.status (<i>self</i>)</h3>
+<p>返回指示会见了由的第一个错误状态码<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>或<a href="qsettings.html#Status-enum" tppabs="http://pyqt4doc.appspot.com/qsettings.html#Status-enum">QSettings.NoError</a>如果没有发生错误。</p>
+<p>要知道，<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>延迟执行某种操作。出于这个原因，你可能需要调用<a href="qsettings.html#sync" tppabs="http://pyqt4doc.appspot.com/qsettings.html#sync">sync</a>（） ，以确保存储在数据<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>呼叫状态（ ）之前被写入磁盘。</p>
+<p><b>See also</b> <a href="qsettings.html#sync" tppabs="http://pyqt4doc.appspot.com/qsettings.html#sync">sync</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sync"></a>QSettings.sync (<i>self</i>)</h3>
+<p>将任何未保存的更改永久存储，并重新载入已在此期间被修改由其他应用程序的任何设置。</p>
+<p>此功能是从自动调用<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>的析构函数，并通过定期的事件循环，所以你通常不需要自己调用它。</p>
+<p><b>See also</b> <a href="qsettings.html#status" tppabs="http://pyqt4doc.appspot.com/qsettings.html#status">status</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="value"></a>object QSettings.value (<i>self</i>, QString <i>key</i>, QVariant <i>defaultValue</i> = QVariant(), object <i>type</i> = None)</h3>
+<p>返回值用于设置<i>key</i>。如果设置不存在，返回<i>defaultValue</i>。</p>
+<p>如果没有指定默认值，则默认<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>返回。</p>
+<p>请注意，Windows注册表和INI文件使用不区分大小写键，而在Mac OS X中的碳Preferences API使用区分大小写键。为了避免可移植性问题，请参见<a href="qsettings.html#section-and-key-syntax" tppabs="http://pyqt4doc.appspot.com/qsettings.html#section-and-key-syntax">Section and Key
+Syntax</a>规则。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a></span> settings;
+ settings<span class="operator">.</span><a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>(<span class="string">"animal/snake"</span><span class="operator">,</span> <span class="number">58</span>);
+ settings<span class="operator">.</span>value(<span class="string">"animal/snake"</span><span class="operator">,</span> <span class="number">1024</span>)<span class="operator">.</span>toInt();   <span class="comment">// returns 58</span>
+ settings<span class="operator">.</span>value(<span class="string">"animal/zebra"</span><span class="operator">,</span> <span class="number">1024</span>)<span class="operator">.</span>toInt();   <span class="comment">// returns 1024</span>
+ settings<span class="operator">.</span>value(<span class="string">"animal/zebra"</span>)<span class="operator">.</span>toInt();         <span class="comment">// returns 0</span>
+</pre>
+<p><b>See also</b> <a href="qsettings.html#setValue" tppabs="http://pyqt4doc.appspot.com/qsettings.html#setValue">setValue</a>（ ）<a href="qsettings.html#contains" tppabs="http://pyqt4doc.appspot.com/qsettings.html#contains">contains</a>（）和<a href="qsettings.html#remove" tppabs="http://pyqt4doc.appspot.com/qsettings.html#remove">remove</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

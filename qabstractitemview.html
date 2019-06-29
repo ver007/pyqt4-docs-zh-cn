@@ -1,0 +1,1554 @@
+﻿<html>
+<head>
+<title>QAbstractItemView Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QAbstractItemView Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QAbstractItemView类为项目视图类的基本功能。<a href="#details">More...</a></p>
+
+<p>继承<a href="qabstractscrollarea.html" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html">QAbstractScrollArea</a>。</p>
+<p>通过继承<a href="qcolumnview.html" tppabs="http://pyqt4doc.appspot.com/qcolumnview.html">QColumnView</a>，<a href="qheaderview.html" tppabs="http://pyqt4doc.appspot.com/qheaderview.html">QHeaderView</a>，<a href="qlistview.html" tppabs="http://pyqt4doc.appspot.com/qlistview.html">QListView</a>，<a href="qtableview.html" tppabs="http://pyqt4doc.appspot.com/qtableview.html">QTableView</a>和<a href="qtreeview.html" tppabs="http://pyqt4doc.appspot.com/qtreeview.html">QTreeView</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qabstractitemview.html#CursorAction-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#CursorAction-enum">CursorAction</a></b> { MoveUp, MoveDown, MoveLeft, MoveRight, ..., MovePrevious }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qabstractitemview.html#DragDropMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#DragDropMode-enum">DragDropMode</a></b> { NoDragDrop, DragOnly, DropOnly, DragDrop, InternalMove }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qabstractitemview.html#DropIndicatorPosition-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#DropIndicatorPosition-enum">DropIndicatorPosition</a></b> { OnItem, AboveItem, BelowItem, OnViewport }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qabstractitemview.html#EditTrigger-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#EditTrigger-enum">EditTrigger</a></b> { NoEditTriggers, CurrentChanged, DoubleClicked, SelectedClicked, ..., AllEditTriggers }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qabstractitemview-edittriggers.html">EditTriggers</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qabstractitemview.html#ScrollHint-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#ScrollHint-enum">ScrollHint</a></b> { EnsureVisible, PositionAtTop, PositionAtBottom, PositionAtCenter }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qabstractitemview.html#ScrollMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#ScrollMode-enum">ScrollMode</a></b> { ScrollPerItem, ScrollPerPixel }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qabstractitemview.html#SelectionBehavior-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#SelectionBehavior-enum">SelectionBehavior</a></b> { SelectItems, SelectRows, SelectColumns }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qabstractitemview.html#SelectionMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#SelectionMode-enum">SelectionMode</a></b> { NoSelection, SingleSelection, MultiSelection, ExtendedSelection, ContiguousSelection }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qabstractitemview.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#State-enum">State</a></b> { NoState, DraggingState, DragSelectingState, EditingState, ..., AnimatingState }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#QAbstractItemView" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#QAbstractItemView">__init__</a></b> (<i>self</i>, QWidget <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemview.html#alternatingRowColors" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#alternatingRowColors">alternatingRowColors</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractitemview.html#autoScrollMargin" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#autoScrollMargin">autoScrollMargin</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#clearSelection" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#clearSelection">clearSelection</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#closeEditor" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#closeEditor">closeEditor</a></b> (<i>self</i>, QWidget <i>editor</i>, QAbstractItemDelegate.EndEditHint <i>hint</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#closePersistentEditor" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#closePersistentEditor">closePersistentEditor</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#commitData" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#commitData">commitData</a></b> (<i>self</i>, QWidget <i>editor</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#currentChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#currentChanged">currentChanged</a></b> (<i>self</i>, QModelIndex <i>current</i>, QModelIndex <i>previous</i>)</li>
+<li>
+<div class="fn"></div>QModelIndex <b><a href="qabstractitemview.html#currentIndex" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#currentIndex">currentIndex</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#dataChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#dataChanged">dataChanged</a></b> (<i>self</i>, QModelIndex <i>topLeft</i>, QModelIndex <i>bottomRight</i>)</li>
+<li>
+<div class="fn"></div>Qt.DropAction <b><a href="qabstractitemview.html#defaultDropAction" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#defaultDropAction">defaultDropAction</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QPoint <b><a href="qabstractitemview.html#dirtyRegionOffset" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#dirtyRegionOffset">dirtyRegionOffset</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>DragDropMode <b><a href="qabstractitemview.html#dragDropMode" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#dragDropMode">dragDropMode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemview.html#dragDropOverwriteMode" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#dragDropOverwriteMode">dragDropOverwriteMode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemview.html#dragEnabled" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#dragEnabled">dragEnabled</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#dragEnterEvent" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#dragEnterEvent">dragEnterEvent</a></b> (<i>self</i>, QDragEnterEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#dragLeaveEvent" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#dragLeaveEvent">dragLeaveEvent</a></b> (<i>self</i>, QDragLeaveEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#dragMoveEvent" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#dragMoveEvent">dragMoveEvent</a></b> (<i>self</i>, QDragMoveEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#dropEvent" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#dropEvent">dropEvent</a></b> (<i>self</i>, QDropEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>DropIndicatorPosition <b><a href="qabstractitemview.html#dropIndicatorPosition" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#dropIndicatorPosition">dropIndicatorPosition</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#edit" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#edit">edit</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemview.html#edit-2" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#edit-2">edit</a></b> (<i>self</i>, QModelIndex <i>index</i>, EditTrigger <i>trigger</i>, QEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#editorDestroyed" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#editorDestroyed">editorDestroyed</a></b> (<i>self</i>, QObject <i>editor</i>)</li>
+<li>
+<div class="fn"></div>EditTriggers <b><a href="qabstractitemview.html#editTriggers" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#editTriggers">editTriggers</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemview.html#event" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#event">event</a></b> (<i>self</i>, QEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#executeDelayedItemsLayout" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#executeDelayedItemsLayout">executeDelayedItemsLayout</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#focusInEvent" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#focusInEvent">focusInEvent</a></b> (<i>self</i>, QFocusEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemview.html#focusNextPrevChild" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#focusNextPrevChild">focusNextPrevChild</a></b> (<i>self</i>, bool <i>next</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#focusOutEvent" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#focusOutEvent">focusOutEvent</a></b> (<i>self</i>, QFocusEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemview.html#hasAutoScroll" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#hasAutoScroll">hasAutoScroll</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractitemview.html#horizontalOffset" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#horizontalOffset">horizontalOffset</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#horizontalScrollbarAction" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#horizontalScrollbarAction">horizontalScrollbarAction</a></b> (<i>self</i>, int <i>action</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#horizontalScrollbarValueChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#horizontalScrollbarValueChanged">horizontalScrollbarValueChanged</a></b> (<i>self</i>, int <i>value</i>)</li>
+<li>
+<div class="fn"></div>ScrollMode <b><a href="qabstractitemview.html#horizontalScrollMode" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#horizontalScrollMode">horizontalScrollMode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractitemview.html#horizontalStepsPerItem" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#horizontalStepsPerItem">horizontalStepsPerItem</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qabstractitemview.html#iconSize" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#iconSize">iconSize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QModelIndex <b><a href="qabstractitemview.html#indexAt" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#indexAt">indexAt</a></b> (<i>self</i>, QPoint <i>p</i>)</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qabstractitemview.html#indexWidget" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#indexWidget">indexWidget</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#inputMethodEvent" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#inputMethodEvent">inputMethodEvent</a></b> (<i>self</i>, QInputMethodEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qabstractitemview.html#inputMethodQuery" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#inputMethodQuery">inputMethodQuery</a></b> (<i>self</i>, Qt.InputMethodQuery <i>query</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemview.html#isIndexHidden" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#isIndexHidden">isIndexHidden</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>QAbstractItemDelegate <b><a href="qabstractitemview.html#itemDelegate" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#itemDelegate">itemDelegate</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QAbstractItemDelegate <b><a href="qabstractitemview.html#itemDelegate-2" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#itemDelegate-2">itemDelegate</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>QAbstractItemDelegate <b><a href="qabstractitemview.html#itemDelegateForColumn" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#itemDelegateForColumn">itemDelegateForColumn</a></b> (<i>self</i>, int <i>column</i>)</li>
+<li>
+<div class="fn"></div>QAbstractItemDelegate <b><a href="qabstractitemview.html#itemDelegateForRow" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#itemDelegateForRow">itemDelegateForRow</a></b> (<i>self</i>, int <i>row</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#keyboardSearch" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#keyboardSearch">keyboardSearch</a></b> (<i>self</i>, QString <i>search</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#keyPressEvent" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#keyPressEvent">keyPressEvent</a></b> (<i>self</i>, QKeyEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>QAbstractItemModel <b><a href="qabstractitemview.html#model" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#model">model</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#mouseDoubleClickEvent" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#mouseDoubleClickEvent">mouseDoubleClickEvent</a></b> (<i>self</i>, QMouseEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#mouseMoveEvent" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#mouseMoveEvent">mouseMoveEvent</a></b> (<i>self</i>, QMouseEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#mousePressEvent" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#mousePressEvent">mousePressEvent</a></b> (<i>self</i>, QMouseEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#mouseReleaseEvent" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#mouseReleaseEvent">mouseReleaseEvent</a></b> (<i>self</i>, QMouseEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>QModelIndex <b><a href="qabstractitemview.html#moveCursor" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#moveCursor">moveCursor</a></b> (<i>self</i>, CursorAction <i>cursorAction</i>, Qt.KeyboardModifiers <i>modifiers</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#openPersistentEditor" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#openPersistentEditor">openPersistentEditor</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#reset" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#reset">reset</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#resizeEvent" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#resizeEvent">resizeEvent</a></b> (<i>self</i>, QResizeEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>QModelIndex <b><a href="qabstractitemview.html#rootIndex" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#rootIndex">rootIndex</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#rowsAboutToBeRemoved" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#rowsAboutToBeRemoved">rowsAboutToBeRemoved</a></b> (<i>self</i>, QModelIndex <i>parent</i>, int <i>start</i>, int <i>end</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#rowsInserted" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#rowsInserted">rowsInserted</a></b> (<i>self</i>, QModelIndex <i>parent</i>, int <i>start</i>, int <i>end</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#scheduleDelayedItemsLayout" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#scheduleDelayedItemsLayout">scheduleDelayedItemsLayout</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#scrollDirtyRegion" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#scrollDirtyRegion">scrollDirtyRegion</a></b> (<i>self</i>, int <i>dx</i>, int <i>dy</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#scrollTo" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#scrollTo">scrollTo</a></b> (<i>self</i>, QModelIndex <i>index</i>, ScrollHint <i>hint</i> = QAbstractItemView.EnsureVisible)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#scrollToBottom" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#scrollToBottom">scrollToBottom</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#scrollToTop" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#scrollToTop">scrollToTop</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#selectAll" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#selectAll">selectAll</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QModelIndex <b><a href="qabstractitemview.html#selectedIndexes" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#selectedIndexes">selectedIndexes</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>SelectionBehavior <b><a href="qabstractitemview.html#selectionBehavior" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#selectionBehavior">selectionBehavior</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#selectionChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#selectionChanged">selectionChanged</a></b> (<i>self</i>, QItemSelection <i>selected</i>, QItemSelection <i>deselected</i>)</li>
+<li>
+<div class="fn"></div>QItemSelectionModel.SelectionFlags <b><a href="qabstractitemview.html#selectionCommand" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#selectionCommand">selectionCommand</a></b> (<i>self</i>, QModelIndex <i>index</i>, QEvent <i>event</i> = None)</li>
+<li>
+<div class="fn"></div>SelectionMode <b><a href="qabstractitemview.html#selectionMode" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#selectionMode">selectionMode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QItemSelectionModel <b><a href="qabstractitemview.html#selectionModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#selectionModel">selectionModel</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setAlternatingRowColors" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setAlternatingRowColors">setAlternatingRowColors</a></b> (<i>self</i>, bool <i>enable</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setAutoScroll" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setAutoScroll">setAutoScroll</a></b> (<i>self</i>, bool <i>enable</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setAutoScrollMargin" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setAutoScrollMargin">setAutoScrollMargin</a></b> (<i>self</i>, int <i>margin</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setCurrentIndex" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setCurrentIndex">setCurrentIndex</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setDefaultDropAction" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setDefaultDropAction">setDefaultDropAction</a></b> (<i>self</i>, Qt.DropAction <i>dropAction</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setDirtyRegion" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setDirtyRegion">setDirtyRegion</a></b> (<i>self</i>, QRegion <i>region</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setDragDropMode" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setDragDropMode">setDragDropMode</a></b> (<i>self</i>, DragDropMode <i>behavior</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setDragDropOverwriteMode" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setDragDropOverwriteMode">setDragDropOverwriteMode</a></b> (<i>self</i>, bool <i>overwrite</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setDragEnabled" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setDragEnabled">setDragEnabled</a></b> (<i>self</i>, bool <i>enable</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setDropIndicatorShown" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setDropIndicatorShown">setDropIndicatorShown</a></b> (<i>self</i>, bool <i>enable</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setEditTriggers" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setEditTriggers">setEditTriggers</a></b> (<i>self</i>, EditTriggers <i>triggers</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setHorizontalScrollMode" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setHorizontalScrollMode">setHorizontalScrollMode</a></b> (<i>self</i>, ScrollMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setHorizontalStepsPerItem" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setHorizontalStepsPerItem">setHorizontalStepsPerItem</a></b> (<i>self</i>, int <i>steps</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setIconSize" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setIconSize">setIconSize</a></b> (<i>self</i>, QSize <i>size</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setIndexWidget" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setIndexWidget">setIndexWidget</a></b> (<i>self</i>, QModelIndex <i>index</i>, QWidget <i>widget</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setItemDelegate" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setItemDelegate">setItemDelegate</a></b> (<i>self</i>, QAbstractItemDelegate <i>delegate</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setItemDelegateForColumn" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setItemDelegateForColumn">setItemDelegateForColumn</a></b> (<i>self</i>, int <i>column</i>, QAbstractItemDelegate <i>delegate</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setItemDelegateForRow" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setItemDelegateForRow">setItemDelegateForRow</a></b> (<i>self</i>, int <i>row</i>, QAbstractItemDelegate <i>delegate</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setModel">setModel</a></b> (<i>self</i>, QAbstractItemModel <i>model</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setRootIndex" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setRootIndex">setRootIndex</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setSelection" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setSelection">setSelection</a></b> (<i>self</i>, QRect <i>rect</i>, QItemSelectionModel.SelectionFlags <i>command</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setSelectionBehavior" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setSelectionBehavior">setSelectionBehavior</a></b> (<i>self</i>, SelectionBehavior <i>behavior</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setSelectionMode" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setSelectionMode">setSelectionMode</a></b> (<i>self</i>, SelectionMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setSelectionModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setSelectionModel">setSelectionModel</a></b> (<i>self</i>, QItemSelectionModel <i>selectionModel</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setState" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setState">setState</a></b> (<i>self</i>, State <i>state</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setTabKeyNavigation" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setTabKeyNavigation">setTabKeyNavigation</a></b> (<i>self</i>, bool <i>enable</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setTextElideMode" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setTextElideMode">setTextElideMode</a></b> (<i>self</i>, Qt.TextElideMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setVerticalScrollMode" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setVerticalScrollMode">setVerticalScrollMode</a></b> (<i>self</i>, ScrollMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#setVerticalStepsPerItem" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setVerticalStepsPerItem">setVerticalStepsPerItem</a></b> (<i>self</i>, int <i>steps</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemview.html#showDropIndicator" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#showDropIndicator">showDropIndicator</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractitemview.html#sizeHintForColumn" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#sizeHintForColumn">sizeHintForColumn</a></b> (<i>self</i>, int <i>column</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qabstractitemview.html#sizeHintForIndex" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#sizeHintForIndex">sizeHintForIndex</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractitemview.html#sizeHintForRow" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#sizeHintForRow">sizeHintForRow</a></b> (<i>self</i>, int <i>row</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#startDrag" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#startDrag">startDrag</a></b> (<i>self</i>, Qt.DropActions <i>supportedActions</i>)</li>
+<li>
+<div class="fn"></div>State <b><a href="qabstractitemview.html#state" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#state">state</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemview.html#tabKeyNavigation" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#tabKeyNavigation">tabKeyNavigation</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Qt.TextElideMode <b><a href="qabstractitemview.html#textElideMode" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#textElideMode">textElideMode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#timerEvent" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#timerEvent">timerEvent</a></b> (<i>self</i>, QTimerEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#update" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#update">update</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#update-2" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#update-2">update</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#updateEditorData" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#updateEditorData">updateEditorData</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#updateEditorGeometries" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#updateEditorGeometries">updateEditorGeometries</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#updateGeometries" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#updateGeometries">updateGeometries</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractitemview.html#verticalOffset" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#verticalOffset">verticalOffset</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#verticalScrollbarAction" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#verticalScrollbarAction">verticalScrollbarAction</a></b> (<i>self</i>, int <i>action</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemview.html#verticalScrollbarValueChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#verticalScrollbarValueChanged">verticalScrollbarValueChanged</a></b> (<i>self</i>, int <i>value</i>)</li>
+<li>
+<div class="fn"></div>ScrollMode <b><a href="qabstractitemview.html#verticalScrollMode" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#verticalScrollMode">verticalScrollMode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractitemview.html#verticalStepsPerItem" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#verticalStepsPerItem">verticalStepsPerItem</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStyleOptionViewItem <b><a href="qabstractitemview.html#viewOptions" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#viewOptions">viewOptions</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemview.html#viewportEvent" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#viewportEvent">viewportEvent</a></b> (<i>self</i>, QEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>QRect <b><a href="qabstractitemview.html#visualRect" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#visualRect">visualRect</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qabstractitemview.html#visualRegionForSelection" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#visualRegionForSelection">visualRegionForSelection</a></b> (<i>self</i>, QItemSelection <i>selection</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemview.html#activated" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#activated">activated</a></b> (const QModelIndex&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemview.html#clicked" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#clicked">clicked</a></b> (const QModelIndex&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemview.html#doubleClicked" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#doubleClicked">doubleClicked</a></b> (const QModelIndex&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemview.html#entered" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#entered">entered</a></b> (const QModelIndex&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemview.html#pressed" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#pressed">pressed</a></b> (const QModelIndex&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemview.html#viewportEntered" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#viewportEntered">viewportEntered</a></b> ()</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QAbstractItemView类为项目视图类的基本功能。</p>
+<p>QAbstractItemView类是使用每个标准视图的基类<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a>。 QAbstractItemView是一个抽象类，本身不能被实例化。它提供了通过信号和槽机制与模型进行交互操作，使子类必须跟上最新的变化，以他们的模型的标准接口。这个类提供了用于键盘和鼠标导航，视口滚动，项目编辑和选择标准的支持。键盘导航实现了这个功能：</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Keys</th>
+<th>Functionality</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td>Arrow keys</td>
+<td>Changes the current item and selects it.</td>
+</tr>
+<tr class="even" valign="top">
+<td>Ctrl+Arrow keys</td>
+<td>Changes the current item but does not select it.</td>
+</tr>
+<tr class="odd" valign="top">
+<td>Shift+Arrow keys</td>
+<td>Changes the current item and selects it. The previously
+selected item(s) is not deselected.</td>
+</tr>
+<tr class="even" valign="top">
+<td>Ctr+Space</td>
+<td>Toggles selection of the current item.</td>
+</tr>
+<tr class="odd" valign="top">
+<td>Tab/Backtab</td>
+<td>Changes the current item to the next/previous item.</td>
+</tr>
+<tr class="even" valign="top">
+<td>Home/End</td>
+<td>Selects the first/last item in the model.</td>
+</tr>
+<tr class="odd" valign="top">
+<td>Page up/Page down</td>
+<td>Scrolls the rows shown up/down by the number of visible rows in
+the view.</td>
+</tr>
+<tr class="even" valign="top">
+<td>Ctrl+A</td>
+<td>Selects all items in the model.</td>
+</tr>
+</table>
+<p>注意，上述表假设<a href="qabstractitemview.html#selectionMode-prop" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#selectionMode-prop">selection mode</a>允许的操作。例如，你不能选择项目，如果选择模式为<a href="qabstractitemview.html#SelectionMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#SelectionMode-enum">QAbstractItemView.NoSelection</a>。</p>
+<p>该QAbstractItemView类是一个<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/model-view.html">Model/View Classes</a>并且是Qt的一部分<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/model-view-programming.html">model/view framework</a>。</p>
+<p>继承QAbstractItemView的视图类只需要实现自己的看法特定的功能，如绘图项目，返回项目的几何形状，寻找项目，等等。</p>
+<p>QAbstractItemView提供通用的插槽，如<a href="qabstractitemview.html#edit" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#edit">edit</a>（）和<a href="qabstractitemview.html#setCurrentIndex" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setCurrentIndex">setCurrentIndex</a>（ ） 。还提供了许多保护的时隙，包括<a href="qabstractitemview.html#dataChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#dataChanged">dataChanged</a>（ ）<a href="qabstractitemview.html#rowsInserted" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#rowsInserted">rowsInserted</a>（ ）<a href="qabstractitemview.html#rowsAboutToBeRemoved" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#rowsAboutToBeRemoved">rowsAboutToBeRemoved</a>（ ）<a href="qabstractitemview.html#selectionChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#selectionChanged">selectionChanged</a>（）和<a href="qabstractitemview.html#currentChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#currentChanged">currentChanged</a>（ ） 。</p>
+<p>根项目是由返回<a href="qabstractitemview.html#rootIndex" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#rootIndex">rootIndex</a>（） ，并且通过当前项目<a href="qabstractitemview.html#currentIndex" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#currentIndex">currentIndex</a>（ ） 。为了确保一个项目是可见的使用<a href="qabstractitemview.html#scrollTo" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#scrollTo">scrollTo</a>（ ） 。</p>
+<p>一些QAbstractItemView的功能所关心的滚动，例如<a href="qabstractitemview.html#horizontalScrollMode-prop" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#horizontalScrollMode-prop">setHorizontalScrollMode</a>（）和<a href="qabstractitemview.html#verticalScrollMode-prop" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#verticalScrollMode-prop">setVerticalScrollMode</a>（ ） 。要设置滚动条的范围内，你可以，例如，重新实现视图的<a href="qabstractitemview.html#resizeEvent" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#resizeEvent">resizeEvent</a>（ ）函数：</p>
+<pre class="cpp">
+ <span class="type">void</span> MyView<span class="operator">.</span><a href="qabstractitemview.html#resizeEvent" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#resizeEvent">resizeEvent</a>(<span class="type"><a href="qresizeevent.html" tppabs="http://pyqt4doc.appspot.com/qresizeevent.html">QResizeEvent</a></span> <span class="operator">*</span>event) {
+     horizontalScrollBar()<span class="operator">-</span><span class="operator">&gt;</span>setRange(<span class="number">0</span><span class="operator">,</span> realWidth <span class="operator">-</span> width());
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ }
+</pre>
+<p>请注意，该区域未更新，直到小部件显示。</p>
+<p>其他一些功能所关心的选择控制，例如<a href="qabstractitemview.html#selectionMode-prop" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#selectionMode-prop">setSelectionMode</a>（）和<a href="qabstractitemview.html#selectionBehavior-prop" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#selectionBehavior-prop">setSelectionBehavior</a>（ ） 。这个类提供了一个默认的选择模型一起工作（<a href="qabstractitemview.html#selectionModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#selectionModel">selectionModel</a>（） ），但是这可以通过使用代替<a href="qabstractitemview.html#setSelectionModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setSelectionModel">setSelectionModel</a>（ ）与实例<a href="qitemselectionmodel.html" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html">QItemSelectionModel</a>。</p>
+<p>有关完整的控制项的显示和编辑您可以指定一个委讬<a href="qabstractitemview.html#setItemDelegate" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setItemDelegate">setItemDelegate</a>（ ） 。</p>
+<p>QAbstractItemView提供了很多保护功能。一些所关注的编辑，例如，<a href="qabstractitemview.html#edit" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#edit">edit</a>（）和<a href="qabstractitemview.html#commitData" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#commitData">commitData</a>（ ） ，而有些则是键盘和鼠标的事件处理程序。</p>
+<p><b>Note:</b>如果你继承QAbstractItemView并打算更新视口的内容，你应该使用视口 - \u003e<a href="qabstractitemview.html#update" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#update">update</a>（）而不是<a href="qwidget.html#update" tppabs="http://pyqt4doc.appspot.com/qwidget.html#update">update()</a>因为所有的绘画操作需要视口的地方。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="CursorAction-enum"></a>QAbstractItemView.CursorAction</h3>
+<p>这个枚举变量描述的不同方法的项目之间导航，</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.MoveUp</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">移动到高于目前项目的项目。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.MoveDown</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">移动到低于当前项目的项目。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.MoveLeft</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">移动到当前项目的左边的项目。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.MoveRight</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">移动到当前项目的项目的权利。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.MoveHome</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">移动到左上角的项目。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.MoveEnd</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">移动到右下角项目。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.MovePageUp</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">移动一页了高于目前的项目。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.MovePageDown</tt></td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">移动一页向下跌破目前的项目。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.MoveNext</tt></td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">目前项目后移至该项目。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.MovePrevious</tt></td>
+<td class="topAlign"><tt>9</tt></td>
+<td class="topAlign">移动到该项目目前的项目之前。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qabstractitemview.html#moveCursor" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#moveCursor">moveCursor</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="DragDropMode-enum"></a>QAbstractItemView.DragDropMode</h3>
+<p>介绍了各种拖放事件的视图可以进行操作。默认情况下，视图不支持拖动或下降（<tt>NoDragDrop</tt>） 。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.NoDragDrop</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">不支持拖放或删除。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.DragOnly</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该视图支持自己的物品拖动</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.DropOnly</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">该视图接受滴</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.DragDrop</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">该视图支持拖放</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.InternalMove</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">认为接受移动（<b>not copy</b>）只能从本身的操作。</td>
+</tr>
+</table>
+<p>请注意，该模式使用需求，提供拖放操作的支持。</p>
+<p>这个枚举被引入或修改的Qt 4.2 。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#dragDropMode-prop" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#dragDropMode-prop">setDragDropMode</a>（）和<a href="index.htm#using-drag-and-drop-with-item-views" tppabs="http://pyqt4doc.appspot.com/model-view-programming.html#using-drag-and-drop-with-item-views">Using
+drag and drop with item views</a>。</p>
+
+
+<h3 class="fn">
+<a name="DropIndicatorPosition-enum"></a>QAbstractItemView.DropIndicatorPosition</h3>
+<p>这个枚举表示有关该指数的下降指标在当前鼠标位置的位置：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.OnItem</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该项目将在指数下跌。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.AboveItem</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该项目将索引上面被丢弃。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.BelowItem</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">该项目将被丢弃指数下方。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.OnViewport</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">该项目将被丢弃到视口的区域，没有项目。每个视图处理项目拖放到视口的方式取决于所使用的底层模型的行为。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="EditTrigger-enum"></a>QAbstractItemView.EditTrigger</h3>
+<p>这个枚举变量描述了将启动项目编辑操作。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractItemView.NoEditTriggers</tt>
+</td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">没有编辑成为可能。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractItemView.CurrentChanged</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">编辑启动时电流项的变化。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.DoubleClicked</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">编辑开始当一个项目被双击。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractItemView.SelectedClicked</tt>
+</td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">编辑在已经选定的项目时，点击开始。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractItemView.EditKeyPressed</tt>
+</td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">当平台的编辑键被按下了某个项目开始编辑。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.AnyKeyPressed</tt></td>
+<td class="topAlign"><tt>16</tt></td>
+<td class="topAlign">当任何键被按下了某个项目开始编辑。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractItemView.AllEditTriggers</tt>
+</td>
+<td class="topAlign"><tt>31</tt></td>
+<td class="topAlign">编辑开始对所有上述行动。</td>
+</tr>
+</table>
+<p>该EditTriggers类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cEditTrigger\u003e 。它存储EditTrigger值的或组合。</p>
+
+
+<h3 class="fn">
+<a name="ScrollHint-enum"></a>QAbstractItemView.ScrollHint</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.EnsureVisible</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">滚动，以确保该项目是可见的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.PositionAtTop</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">滚动的视口的顶部位置的项目。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractItemView.PositionAtBottom</tt>
+</td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">滚动的视口的底部位置的项目。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractItemView.PositionAtCenter</tt>
+</td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">滚动的视口的中心位置的项目。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="ScrollMode-enum"></a>QAbstractItemView.ScrollMode</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.ScrollPerItem</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该视图会滚动的内容一个项目的时间。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractItemView.ScrollPerPixel</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该视图会滚动的内容一个像素的时间。</td>
+</tr>
+</table>
+<p>这个枚举被引入或修改的Qt 4.2 。</p>
+
+
+<h3 class="fn">
+<a name="SelectionBehavior-enum"></a>QAbstractItemView.SelectionBehavior</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.SelectItems</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">选择单个项目。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.SelectRows</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">只选择行。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.SelectColumns</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">只选择列。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="SelectionMode-enum"></a>QAbstractItemView.SelectionMode</h3>
+<p>这个枚举表示视图如何响应用户的选择：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractItemView.SingleSelection</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">当用户选择一个项目，任何已选定的项目变成未选中，并单击其上的用户无法取消选择所选的项目。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractItemView.ContiguousSelection</tt>
+</td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">当用户以通常的方式选择一个项目时，该选择被清除，新的项目中选定。但是，如果用户按下Shift键的同时单击某个项目，目前的项目和被点击的项目之间的所有项目都选择或取消选择，这取决于单击项的状态。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractItemView.ExtendedSelection</tt>
+</td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">当用户以通常的方式选择一个项目时，该选择被清除，新的项目中选定。但是，如果用户对某个项目时，点击按下Ctrl键，单击该项目被触发，其他所有项均保持不变。如果用户按下Shift键的同时单击某个项目，目前的项目和被点击的项目之间的所有项目都选择或取消选择，这取决于单击项的状态。多个项目可以通过拖动鼠标在他们被选中。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractItemView.MultiSelection</tt>
+</td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">当用户在通常的方式选择一个项目，该项目的选择状态翻转，其他项目都单独留在家中。多个项目可以通过拖动鼠标在他们进行切换。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.NoSelection</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">项目无法选择。</td>
+</tr>
+</table>
+<p>最常用的方式是SingleSelection和ExtendedSelection 。</p>
+
+
+<h3 class="fn">
+<a name="State-enum"></a>QAbstractItemView.State</h3>
+<p>描述了不同状态下的视图可以是英寸重新实现自己的看法时，这通常是只有趣。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.NoState</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">的是默认状态。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.DraggingState</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">用户拖动项目。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractItemView.DragSelectingState</tt>
+</td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">该用户选择项目的操作。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemView.EditingState</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">用户正在编辑一个项目中一个小部件的编辑器。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractItemView.ExpandingState</tt>
+</td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">用户被打开的项目的一个分支。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractItemView.CollapsingState</tt>
+</td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">该用户被关闭的项目的一个分支。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractItemView.AnimatingState</tt>
+</td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">项目视图正在执行的动画。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QAbstractItemView"></a>QAbstractItemView.__init__ (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个抽象的项目视图与给定<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="alternatingRowColors"></a>bool QAbstractItemView.alternatingRowColors (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="autoScrollMargin"></a>int QAbstractItemView.autoScrollMargin (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="clearSelection"></a>QAbstractItemView.clearSelection (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void clearSelection()</tt>。</p>
+<p>取消选择所有选定的项目。当前索引将不会被改变。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#setSelection" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setSelection">setSelection</a>（）和<a href="qabstractitemview.html#selectAll" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#selectAll">selectAll</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="closeEditor"></a>QAbstractItemView.closeEditor (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>editor</i>, <a href="qabstractitemdelegate.html#EndEditHint-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#EndEditHint-enum">QAbstractItemDelegate.EndEditHint</a> <i>hint</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void closeEditor(QWidget *,QAbstractItemDelegate::EndEditHint)</tt>。</p>
+<p>关闭给定的<i>editor</i>，并释放它。该<i>hint</i>用于指定视图如何应于编辑操作结束时作出响应。例如，提示可能表明，在视图中的下一个项目应该打开进行编辑。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#edit" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#edit">edit</a>（）和<a href="qabstractitemview.html#commitData" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#commitData">commitData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="closePersistentEditor"></a>QAbstractItemView.closePersistentEditor (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>关闭持久编辑该项目在给定的<i>index</i>。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#openPersistentEditor" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#openPersistentEditor">openPersistentEditor</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="commitData"></a>QAbstractItemView.commitData (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>editor</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void commitData(QWidget *)</tt>。</p>
+<p>提交的资料<i>editor</i>到模型中。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#closeEditor" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#closeEditor">closeEditor</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentChanged"></a>QAbstractItemView.currentChanged (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>current</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>previous</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void currentChanged(const QModelIndex&amp;,const QModelIndex&amp;)</tt>。</p>
+<p>当一个新项目成为当前项目这个槽被调用。先前的目前的项目是由指定的<i>previous</i>指数，并且由新的项目<i>current</i>索引。</p>
+<p>如果您想了解变更的项目看<a href="qabstractitemview.html#dataChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#dataChanged">dataChanged</a>（）信号。</p>
+
+
+<h3 class="fn">
+<a name="currentIndex"></a><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> QAbstractItemView.currentIndex (<i>self</i>)</h3>
+<p>返回当前项的模型索引。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#setCurrentIndex" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setCurrentIndex">setCurrentIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="dataChanged"></a>QAbstractItemView.dataChanged (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>topLeft</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>bottomRight</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void dataChanged(const QModelIndex&amp;,const QModelIndex&amp;)</tt>。</p>
+<p>这个槽被调用时，项目模型被改变。该变更的项目是那些从<i>topLeft</i>至<i>bottomRight</i>包容性。如果只有一个项目被改变<i>topLeft</i>==<i>bottomRight</i>。</p>
+
+
+<h3 class="fn">
+<a name="defaultDropAction"></a><a href="qt.html#DropAction-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#DropAction-enum">Qt.DropAction</a> QAbstractItemView.defaultDropAction (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="dirtyRegionOffset"></a><a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> QAbstractItemView.dirtyRegionOffset (<i>self</i>)</h3>
+<p>肮脏的地区，在视图返回偏移量。</p>
+<p>如果你使用<a href="qabstractitemview.html#scrollDirtyRegion" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#scrollDirtyRegion">scrollDirtyRegion</a>（ ）和实施<a href="qabstractscrollarea.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html#paintEvent">paintEvent</a>（）中的子类<a href="qabstractitemview.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html">QAbstractItemView</a>，你应该翻译的Paint事件与此功能的偏移返回给定的区域。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#scrollDirtyRegion" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#scrollDirtyRegion">scrollDirtyRegion</a>（）和<a href="qabstractitemview.html#setDirtyRegion" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setDirtyRegion">setDirtyRegion</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="dragDropMode"></a><a href="qabstractitemview.html#DragDropMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#DragDropMode-enum">DragDropMode</a> QAbstractItemView.dragDropMode (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="dragDropOverwriteMode"></a>bool QAbstractItemView.dragDropOverwriteMode (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="dragEnabled"></a>bool QAbstractItemView.dragEnabled (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="dragEnterEvent"></a>QAbstractItemView.dragEnterEvent (<i>self</i>, <a href="qdragenterevent.html" tppabs="http://pyqt4doc.appspot.com/qdragenterevent.html">QDragEnterEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#dragEnterEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#dragEnterEvent">QWidget.dragEnterEvent</a>（ ） 。</p>
+<p>这个函数被调用给定的<i>event</i>当拖放操作进入小部件。如果拖动是在一个有效的滴地方（如在接受滴的项目） ，该事件被接受，否则它将被忽略。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#dropEvent" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#dropEvent">dropEvent</a>（）和<a href="qabstractitemview.html#startDrag" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#startDrag">startDrag</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="dragLeaveEvent"></a>QAbstractItemView.dragLeaveEvent (<i>self</i>, <a href="qdragleaveevent.html" tppabs="http://pyqt4doc.appspot.com/qdragleaveevent.html">QDragLeaveEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#dragLeaveEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#dragLeaveEvent">QWidget.dragLeaveEvent</a>（ ） 。</p>
+<p>这个函数被调用时，被拖动的项叶的看法。该<i>event</i>介绍了拖放操作的状态。</p>
+
+
+<h3 class="fn">
+<a name="dragMoveEvent"></a>QAbstractItemView.dragMoveEvent (<i>self</i>, <a href="qdragmoveevent.html" tppabs="http://pyqt4doc.appspot.com/qdragmoveevent.html">QDragMoveEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#dragMoveEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#dragMoveEvent">QWidget.dragMoveEvent</a>（ ） 。</p>
+<p>此功能是与给定的连续叫<i>event</i>一个拖放操作在小部件中。它可以使视图的，举个例子，用户拖动鼠标选择要查看的右侧或底部边缘滚动。在这种情况下，事件将被接受，否则将被忽略。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#dropEvent" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#dropEvent">dropEvent</a>（）和<a href="qabstractitemview.html#startDrag" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#startDrag">startDrag</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="dropEvent"></a>QAbstractItemView.dropEvent (<i>self</i>, <a href="qdropevent.html" tppabs="http://pyqt4doc.appspot.com/qdropevent.html">QDropEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#dropEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#dropEvent">QWidget.dropEvent</a>（ ） 。</p>
+<p>这个函数被调用给定的<i>event</i>当一个放置事件发生在窗口小部件。如果模型接受甚至定位放置事件被接受，否则它将被忽略。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#startDrag" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#startDrag">startDrag</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="dropIndicatorPosition"></a><a href="qabstractitemview.html#DropIndicatorPosition-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#DropIndicatorPosition-enum">DropIndicatorPosition</a> QAbstractItemView.dropIndicatorPosition (<i>self</i>)</h3>
+<p>返回相对于最接近的项目拖放指示符的位置。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+
+
+<h3 class="fn">
+<a name="edit"></a>QAbstractItemView.edit (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void edit(const QModelIndex&amp;)</tt>。</p>
+<p>开始编辑对应于给定的产品<i>index</i>如果是可编辑的。</p>
+<p>注意，这个函数不改变当前索引。由于目前指数定义了一个和以前的项目进行编辑，用户可能会发现，由于预期键盘导航不起作用。为了提供一致的导航行为，请致电<a href="qabstractitemview.html#setCurrentIndex" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setCurrentIndex">setCurrentIndex</a>（ ）这个函数有相同的模型索引之前。</p>
+<p><b>See also</b> <a href="qmodelindex.html#flags" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html#flags">QModelIndex.flags</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="edit-2"></a>bool QAbstractItemView.edit (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>, <a href="qabstractitemview.html#EditTrigger-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#EditTrigger-enum">EditTrigger</a> <i>trigger</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>开始编辑了该项目<i>index</i>，如果有必要创建一个编辑器，并返回True，如果该视图的<a href="qabstractitemview.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#State-enum">State</a>现在是<a href="qabstractitemview.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#State-enum">EditingState</a>否则返回False 。</p>
+<p>导致该编辑过程中的作用通过描述<i>trigger</i>以及是由指定的相关联的事件<i>event</i>。</p>
+<p>编辑可以通过指定强制的<i>trigger</i>要<a href="qabstractitemview.html#EditTrigger-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#EditTrigger-enum">QAbstractItemView.AllEditTriggers</a>。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#closeEditor" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#closeEditor">closeEditor</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="editorDestroyed"></a>QAbstractItemView.editorDestroyed (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>editor</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void editorDestroyed(QObject *)</tt>。</p>
+<p>这个函数被调用的时候给出<i>editor</i>已被摧毁。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#closeEditor" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#closeEditor">closeEditor</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="editTriggers"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qabstractitemview-edittriggers.html">EditTriggers</a> QAbstractItemView.editTriggers (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="event"></a>bool QAbstractItemView.event (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">QObject.event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="executeDelayedItemsLayout"></a>QAbstractItemView.executeDelayedItemsLayout (<i>self</i>)</h3>
+<p>执行预定的布局，而无需等待该事件的处理开始。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#scheduleDelayedItemsLayout" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#scheduleDelayedItemsLayout">scheduleDelayedItemsLayout</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="focusInEvent"></a>QAbstractItemView.focusInEvent (<i>self</i>, <a href="qfocusevent.html" tppabs="http://pyqt4doc.appspot.com/qfocusevent.html">QFocusEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#focusInEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#focusInEvent">QWidget.focusInEvent</a>（ ） 。</p>
+<p>这个函数被调用给定的<i>event</i>当插件获得焦点。默认情况下，事件被忽略。</p>
+<p><b>See also</b> <a href="qwidget.html#setFocus" tppabs="http://pyqt4doc.appspot.com/qwidget.html#setFocus">setFocus</a>（）和<a href="qabstractitemview.html#focusOutEvent" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#focusOutEvent">focusOutEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="focusNextPrevChild"></a>bool QAbstractItemView.focusNextPrevChild (<i>self</i>, bool <i>next</i>)</h3>
+<p>从重新实现<a href="qwidget.html#focusNextPrevChild" tppabs="http://pyqt4doc.appspot.com/qwidget.html#focusNextPrevChild">QWidget.focusNextPrevChild</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="focusOutEvent"></a>QAbstractItemView.focusOutEvent (<i>self</i>, <a href="qfocusevent.html" tppabs="http://pyqt4doc.appspot.com/qfocusevent.html">QFocusEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#focusOutEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#focusOutEvent">QWidget.focusOutEvent</a>（ ） 。</p>
+<p>这个函数被调用给定的<i>event</i>当小部件失去焦点。默认情况下，事件被忽略。</p>
+<p><b>See also</b> <a href="qwidget.html#clearFocus" tppabs="http://pyqt4doc.appspot.com/qwidget.html#clearFocus">clearFocus</a>（）和<a href="qabstractitemview.html#focusInEvent" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#focusInEvent">focusInEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasAutoScroll"></a>bool QAbstractItemView.hasAutoScroll (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="horizontalOffset"></a>int QAbstractItemView.horizontalOffset (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回水平视图的偏移量。</p>
+<p>在基类中，这是一个纯虚函数。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#verticalOffset" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#verticalOffset">verticalOffset</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="horizontalScrollbarAction"></a>QAbstractItemView.horizontalScrollbarAction (<i>self</i>, int <i>action</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void horizontalScrollbarAction(int)</tt>。</p>
+<h3 class="fn">
+<a name="horizontalScrollbarValueChanged"></a>QAbstractItemView.horizontalScrollbarValueChanged (<i>self</i>, int <i>value</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void horizontalScrollbarValueChanged(int)</tt>。</p>
+<h3 class="fn">
+<a name="horizontalScrollMode"></a><a href="qabstractitemview.html#ScrollMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#ScrollMode-enum">ScrollMode</a> QAbstractItemView.horizontalScrollMode (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="horizontalStepsPerItem"></a>int QAbstractItemView.horizontalStepsPerItem (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="iconSize"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QAbstractItemView.iconSize (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="indexAt"></a><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> QAbstractItemView.indexAt (<i>self</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>p</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回项的模型索引处的视口坐标<i>point</i>。</p>
+<p>在基类中，这是一个纯虚函数。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#visualRect" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#visualRect">visualRect</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="indexWidget"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QAbstractItemView.indexWidget (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>返回部件的项目在给定的<i>index</i>。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#setIndexWidget" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setIndexWidget">setIndexWidget</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="inputMethodEvent"></a>QAbstractItemView.inputMethodEvent (<i>self</i>, <a href="qinputmethodevent.html" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html">QInputMethodEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#inputMethodEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#inputMethodEvent">QWidget.inputMethodEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="inputMethodQuery"></a>QVariant QAbstractItemView.inputMethodQuery (<i>self</i>, <a href="qt.html#InputMethodQuery-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#InputMethodQuery-enum">Qt.InputMethodQuery</a> <i>query</i>)</h3>
+<p>从重新实现<a href="qwidget.html#inputMethodQuery" tppabs="http://pyqt4doc.appspot.com/qwidget.html#inputMethodQuery">QWidget.inputMethodQuery</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isIndexHidden"></a>bool QAbstractItemView.isIndexHidden (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回True ，如果该项目由给定的简称<i>index</i>隐藏在视图，否则返回False 。</p>
+<p>隐藏的是一个视图特定的功能。例如在TableView中的列可以被标记为隐藏或行中的树视图。</p>
+<p>在基类中，这是一个纯虚函数。</p>
+
+
+<h3 class="fn">
+<a name="itemDelegate"></a><a href="qabstractitemdelegate.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html">QAbstractItemDelegate</a> QAbstractItemView.itemDelegate (<i>self</i>)</h3>
+<p>返回此视图和模型的项目委讬。这可能是一组与<a href="qabstractitemview.html#setItemDelegate" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setItemDelegate">setItemDelegate</a>（ ） ，或默认之一。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#setItemDelegate" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setItemDelegate">setItemDelegate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="itemDelegate-2"></a><a href="qabstractitemdelegate.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html">QAbstractItemDelegate</a> QAbstractItemView.itemDelegate (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>返回此视图和模型对于给定的项目代表<i>index</i>。</p>
+
+
+<h3 class="fn">
+<a name="itemDelegateForColumn"></a><a href="qabstractitemdelegate.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html">QAbstractItemDelegate</a> QAbstractItemView.itemDelegateForColumn (<i>self</i>, int <i>column</i>)</h3>
+<p>返回此视图和模型对于给定的项目代表<i>column</i>。您可以致电<a href="qabstractitemview.html#itemDelegate" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#itemDelegate">itemDelegate</a>（）来获得一个指向当前委讬一个给定的索引。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#setItemDelegateForColumn" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setItemDelegateForColumn">setItemDelegateForColumn</a>（ ）<a href="qabstractitemview.html#itemDelegateForRow" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#itemDelegateForRow">itemDelegateForRow</a>（）和<a href="qabstractitemview.html#itemDelegate" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#itemDelegate">itemDelegate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="itemDelegateForRow"></a><a href="qabstractitemdelegate.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html">QAbstractItemDelegate</a> QAbstractItemView.itemDelegateForRow (<i>self</i>, int <i>row</i>)</h3>
+<p>返回此视图和模型对于给定的项目代表<i>row</i>，或者0 ，如果没有委讬已分配。您可以致电<a href="qabstractitemview.html#itemDelegate" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#itemDelegate">itemDelegate</a>（）来获得一个指向当前委讬一个给定的索引。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#setItemDelegateForRow" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setItemDelegateForRow">setItemDelegateForRow</a>（ ）<a href="qabstractitemview.html#itemDelegateForColumn" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#itemDelegateForColumn">itemDelegateForColumn</a>（）和<a href="qabstractitemview.html#setItemDelegate" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setItemDelegate">setItemDelegate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="keyboardSearch"></a>QAbstractItemView.keyboardSearch (<i>self</i>, QString <i>search</i>)</h3>
+<p>移动到并选择最好的项目相匹配的字符串<i>search</i>。如果没有项目被发现没有任何反应。</p>
+<p>在默认实现中，搜索是复位，如果<i>search</i>是空的，或时间间隔上次的搜索已经超过<a href="qapplication.html#keyboardInputInterval-prop" tppabs="http://pyqt4doc.appspot.com/qapplication.html#keyboardInputInterval-prop">QApplication.keyboardInputInterval</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="keyPressEvent"></a>QAbstractItemView.keyPressEvent (<i>self</i>, <a href="qkeyevent.html" tppabs="http://pyqt4doc.appspot.com/qkeyevent.html">QKeyEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#keyPressEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#keyPressEvent">QWidget.keyPressEvent</a>（ ） 。</p>
+<p>这个函数被调用给定的<i>event</i>当一个键事件被发送给窗口小部件。默认实现处理基本的光标移动，如上，下，左，右，首页，上一页，和PageDown ;的<a href="qabstractitemview.html#activated" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#activated">activated</a>如果当前索引有效和激活键被按下（例如Enter键或Return ，取决于平台） （ ）信号被发射。这个功能就是编辑是由按键启动，如如果F2被按下。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#edit" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#edit">edit</a>（ ）<a href="qabstractitemview.html#moveCursor" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#moveCursor">moveCursor</a>（ ）<a href="qabstractitemview.html#keyboardSearch" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#keyboardSearch">keyboardSearch</a>（）和<a href="qabstractitemview.html#tabKeyNavigation-prop" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#tabKeyNavigation-prop">tabKeyNavigation</a>。</p>
+
+
+<h3 class="fn">
+<a name="model"></a><a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a> QAbstractItemView.model (<i>self</i>)</h3>
+<p>返回该视图呈现模式。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#setModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setModel">setModel</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mouseDoubleClickEvent"></a>QAbstractItemView.mouseDoubleClickEvent (<i>self</i>, <a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#mouseDoubleClickEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#mouseDoubleClickEvent">QWidget.mouseDoubleClickEvent</a>（ ） 。</p>
+<p>这个函数被调用给定的<i>event</i>当鼠标按钮被双击的widget内点击。如果双击是一个有效的项目它发出的<a href="qabstractitemview.html#doubleClicked" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#doubleClicked">doubleClicked</a>（ ）信号和通话<a href="qabstractitemview.html#edit" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#edit">edit</a>（ ）上的项目。</p>
+
+
+<h3 class="fn">
+<a name="mouseMoveEvent"></a>QAbstractItemView.mouseMoveEvent (<i>self</i>, <a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#mouseMoveEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#mouseMoveEvent">QWidget.mouseMoveEvent</a>（ ） 。</p>
+<p>这个函数被调用给定的<i>event</i>当鼠标移动事件被发送给窗口小部件。如果选择是在进步和新项目移到选择是延长;如果拖动操作正在进行，它继续。</p>
+
+
+<h3 class="fn">
+<a name="mousePressEvent"></a>QAbstractItemView.mousePressEvent (<i>self</i>, <a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#mousePressEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#mousePressEvent">QWidget.mousePressEvent</a>（ ） 。</p>
+<p>这个函数被调用给定的<i>event</i>当按下鼠标按钮时光标在widget内。如果一个有效的项目上按下制成的当前项。此功能会发出<a href="qabstractitemview.html#pressed" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#pressed">pressed</a>（）信号。</p>
+
+
+<h3 class="fn">
+<a name="mouseReleaseEvent"></a>QAbstractItemView.mouseReleaseEvent (<i>self</i>, <a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#mouseReleaseEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#mouseReleaseEvent">QWidget.mouseReleaseEvent</a>（ ） 。</p>
+<p>这个函数被调用给定的<i>event</i>当释放鼠标按钮，在窗口小部件鼠标按下事件后。如果用户按下你的widget里面的鼠标，然后拖动鼠标到另一个位置释放鼠标按钮之前，你的widget接收释放事件。该函数将放出<a href="qabstractitemview.html#clicked" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#clicked">clicked</a>（ ）如果一个项目是被按下的信号。</p>
+
+
+<h3 class="fn">
+<a name="moveCursor"></a><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> QAbstractItemView.moveCursor (<i>self</i>, <a href="qabstractitemview.html#CursorAction-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#CursorAction-enum">CursorAction</a> <i>cursorAction</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-keyboardmodifiers.html">Qt.KeyboardModifiers</a> <i>modifiers</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回<a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a>对象指向在视图中的下一个对象，根据给定的<i>cursorAction</i>并通过指定的键盘功能键<i>modifiers</i>。</p>
+<p>在基类中，这是一个纯虚函数。</p>
+
+
+<h3 class="fn">
+<a name="openPersistentEditor"></a>QAbstractItemView.openPersistentEditor (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>打开关于该项目的持续性编辑器在给定的<i>index</i>。如果没有编辑器存在，则委讬将创建一个新的编辑器。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#closePersistentEditor" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#closePersistentEditor">closePersistentEditor</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="reset"></a>QAbstractItemView.reset (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void reset()</tt>。</p>
+<p>重置视图的内部状态。</p>
+<p><b>Warning:</b>此功能将重新打开的编辑器，滚动条的位置，选择等现有的更改将不会被提交。如果你想重置视图时，保存更改，您可以重新实现此功能，提交你的修改，然后调用父类的实现。</p>
+
+
+<h3 class="fn">
+<a name="resizeEvent"></a>QAbstractItemView.resizeEvent (<i>self</i>, <a href="qresizeevent.html" tppabs="http://pyqt4doc.appspot.com/qresizeevent.html">QResizeEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#resizeEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#resizeEvent">QWidget.resizeEvent</a>（ ） 。</p>
+<p>这个函数被调用给定的<i>event</i>当resize事件被发送给窗口小部件。</p>
+<p><b>See also</b> <a href="qwidget.html#resizeEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#resizeEvent">QWidget.resizeEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rootIndex"></a><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> QAbstractItemView.rootIndex (<i>self</i>)</h3>
+<p>返回模型的根项的模型索引。根项目是父项视图的顶层项目。根可以是无效的。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#setRootIndex" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setRootIndex">setRootIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rowsAboutToBeRemoved"></a>QAbstractItemView.rowsAboutToBeRemoved (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i>, int <i>start</i>, int <i>end</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void rowsAboutToBeRemoved(const QModelIndex&amp;,int,int)</tt>。</p>
+<p>这个槽被调用时的行是要被去除。被删除的行是指在给定的<i>parent</i>从<i>start</i>至<i>end</i>包容性。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#rowsInserted" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#rowsInserted">rowsInserted</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rowsInserted"></a>QAbstractItemView.rowsInserted (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i>, int <i>start</i>, int <i>end</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void rowsInserted(const QModelIndex&amp;,int,int)</tt>。</p>
+<p>插入行时这个槽被调用。新行是指在给定的<i>parent</i>从<i>start</i>至<i>end</i>包容性。基类实现调用fetchMore （ ）在模型上，以检查更多的数据。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#rowsAboutToBeRemoved" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#rowsAboutToBeRemoved">rowsAboutToBeRemoved</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="scheduleDelayedItemsLayout"></a>QAbstractItemView.scheduleDelayedItemsLayout (<i>self</i>)</h3>
+<p>附表的事件处理开始时要执行在视图中的项目的布局。</p>
+<p>即使scheduleDelayedItemsLayout （ ）被调用前，事件被处理多次，认为只会做布局一次。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#executeDelayedItemsLayout" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#executeDelayedItemsLayout">executeDelayedItemsLayout</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="scrollDirtyRegion"></a>QAbstractItemView.scrollDirtyRegion (<i>self</i>, int <i>dx</i>, int <i>dy</i>)</h3>
+<p>准备由（视图为滚动<i>dx</i>，<i>dy</i>）像素通过移动脏区在相反的方向。你只需要调用这个函数，如果你要实现一个滚动视口在你的视图子类。</p>
+<p>如果您实现<a href="qabstractscrollarea.html#scrollContentsBy" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html#scrollContentsBy">scrollContentsBy</a>（）中的子类<a href="qabstractitemview.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html">QAbstractItemView</a>，在打电话之前调用这个函数<a href="qwidget.html#scroll" tppabs="http://pyqt4doc.appspot.com/qwidget.html#scroll">QWidget.scroll</a>（ ）上的视口。另外，只需要调用<a href="qabstractitemview.html#update" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#update">update</a>（ ） 。</p>
+<p><b>See also</b> <a href="qabstractscrollarea.html#scrollContentsBy" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html#scrollContentsBy">scrollContentsBy</a>（ ）<a href="qabstractitemview.html#dirtyRegionOffset" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#dirtyRegionOffset">dirtyRegionOffset</a>（）和<a href="qabstractitemview.html#setDirtyRegion" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setDirtyRegion">setDirtyRegion</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="scrollTo"></a>QAbstractItemView.scrollTo (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>, <a href="qabstractitemview.html#ScrollHint-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#ScrollHint-enum">ScrollHint</a> <i>hint</i> = QAbstractItemView.EnsureVisible)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>滚动的视图，如果必要，以确保在产品<i>index</i>是可见的。该视图将尝试根据给定定位产品<i>hint</i>。</p>
+<p>在基类中，这是一个纯虚函数。</p>
+
+
+<h3 class="fn">
+<a name="scrollToBottom"></a>QAbstractItemView.scrollToBottom (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void scrollToBottom()</tt>。</p>
+<p>滚动视图的底部。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#scrollTo" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#scrollTo">scrollTo</a>（）和<a href="qabstractitemview.html#scrollToTop" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#scrollToTop">scrollToTop</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="scrollToTop"></a>QAbstractItemView.scrollToTop (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void scrollToTop()</tt>。</p>
+<p>滚动视图顶端。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#scrollTo" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#scrollTo">scrollTo</a>（）和<a href="qabstractitemview.html#scrollToBottom" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#scrollToBottom">scrollToBottom</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="selectAll"></a>QAbstractItemView.selectAll (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void selectAll()</tt>。</p>
+<p>选择视图中的所有项目。此功能将使用选择的行为选择时，在视图中设置。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#setSelection" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setSelection">setSelection</a>（ ）<a href="qabstractitemview.html#selectedIndexes" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#selectedIndexes">selectedIndexes</a>（）和<a href="qabstractitemview.html#clearSelection" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#clearSelection">clearSelection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="selectedIndexes"></a>list-of-QModelIndex QAbstractItemView.selectedIndexes (<i>self</i>)</h3>
+<p>这个便利函数返回所有选定和非隐藏项的索引视图的列表。该列表包含没有重复，并没有排序。</p>
+<p><b>See also</b> <a href="qitemselectionmodel.html#selectedIndexes" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#selectedIndexes">QItemSelectionModel.selectedIndexes</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="selectionBehavior"></a><a href="qabstractitemview.html#SelectionBehavior-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#SelectionBehavior-enum">SelectionBehavior</a> QAbstractItemView.selectionBehavior (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="selectionChanged"></a>QAbstractItemView.selectionChanged (<i>self</i>, <a href="qitemselection.html" tppabs="http://pyqt4doc.appspot.com/qitemselection.html">QItemSelection</a> <i>selected</i>, <a href="qitemselection.html" tppabs="http://pyqt4doc.appspot.com/qitemselection.html">QItemSelection</a> <i>deselected</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void selectionChanged(const QItemSelection&amp;,const QItemSelection&amp;)</tt>。</p>
+<p>当选择改变这个槽被调用。先前的选择（可能是空的） ，通过指定<i>deselected</i>，和新的选择由<i>selected</i>。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#setSelection" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setSelection">setSelection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="selectionCommand"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel-selectionflags.html">QItemSelectionModel.SelectionFlags</a> QAbstractItemView.selectionCommand (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i> = None)</h3>
+<p>更新与选择要包括在返回要使用的SelectionFlags的<i>index</i>规定。该<i>event</i>是一个用户输入事件，例如鼠标或键盘事件。</p>
+<p>重新实现这个函数来定义自己的选择行为。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#setSelection" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setSelection">setSelection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="selectionMode"></a><a href="qabstractitemview.html#SelectionMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#SelectionMode-enum">SelectionMode</a> QAbstractItemView.selectionMode (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="selectionModel"></a><a href="qitemselectionmodel.html" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html">QItemSelectionModel</a> QAbstractItemView.selectionModel (<i>self</i>)</h3>
+<p>返回当前的选择模型。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#setSelectionModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setSelectionModel">setSelectionModel</a>（）和<a href="qabstractitemview.html#selectedIndexes" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#selectedIndexes">selectedIndexes</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setAlternatingRowColors"></a>QAbstractItemView.setAlternatingRowColors (<i>self</i>, bool <i>enable</i>)</h3>
+<h3 class="fn">
+<a name="setAutoScroll"></a>QAbstractItemView.setAutoScroll (<i>self</i>, bool <i>enable</i>)</h3>
+<h3 class="fn">
+<a name="setAutoScrollMargin"></a>QAbstractItemView.setAutoScrollMargin (<i>self</i>, int <i>margin</i>)</h3>
+<h3 class="fn">
+<a name="setCurrentIndex"></a>QAbstractItemView.setCurrentIndex (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setCurrentIndex(const QModelIndex&amp;)</tt>。</p>
+<p>设置当前项目是在该项目<i>index</i>。</p>
+<p>除非目前的选择模式<a href="qabstractitemview.html#SelectionMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#SelectionMode-enum">NoSelection</a>时，该项目也被选中。请注意，此功能也更新任何新的选择，用户执行的起始位置。</p>
+<p>设定的项目为当前项目而不选择它，调用</p>
+<p><tt>selectionModel()-&gt;setCurrentIndex(index,
+QItemSelectionModel.NoUpdate);</tt></p>
+<p><b>See also</b> <a href="qabstractitemview.html#currentIndex" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#currentIndex">currentIndex</a>（ ）<a href="qabstractitemview.html#currentChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#currentChanged">currentChanged</a>（）和<a href="qabstractitemview.html#selectionMode-prop" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#selectionMode-prop">selectionMode</a>。</p>
+
+
+<h3 class="fn">
+<a name="setDefaultDropAction"></a>QAbstractItemView.setDefaultDropAction (<i>self</i>, <a href="qt.html#DropAction-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#DropAction-enum">Qt.DropAction</a> <i>dropAction</i>)</h3>
+<h3 class="fn">
+<a name="setDirtyRegion"></a>QAbstractItemView.setDirtyRegion (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>region</i>)</h3>
+<p>标志着定<i>region</i>脏和时间表加以更新。你只需要调用这个函数，如果你要实现自己的视图子类。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#scrollDirtyRegion" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#scrollDirtyRegion">scrollDirtyRegion</a>（）和<a href="qabstractitemview.html#dirtyRegionOffset" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#dirtyRegionOffset">dirtyRegionOffset</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setDragDropMode"></a>QAbstractItemView.setDragDropMode (<i>self</i>, <a href="qabstractitemview.html#DragDropMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#DragDropMode-enum">DragDropMode</a> <i>behavior</i>)</h3>
+<h3 class="fn">
+<a name="setDragDropOverwriteMode"></a>QAbstractItemView.setDragDropOverwriteMode (<i>self</i>, bool <i>overwrite</i>)</h3>
+<h3 class="fn">
+<a name="setDragEnabled"></a>QAbstractItemView.setDragEnabled (<i>self</i>, bool <i>enable</i>)</h3>
+<h3 class="fn">
+<a name="setDropIndicatorShown"></a>QAbstractItemView.setDropIndicatorShown (<i>self</i>, bool <i>enable</i>)</h3>
+<h3 class="fn">
+<a name="setEditTriggers"></a>QAbstractItemView.setEditTriggers (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qabstractitemview-edittriggers.html">EditTriggers</a> <i>triggers</i>)</h3>
+<h3 class="fn">
+<a name="setHorizontalScrollMode"></a>QAbstractItemView.setHorizontalScrollMode (<i>self</i>, <a href="qabstractitemview.html#ScrollMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#ScrollMode-enum">ScrollMode</a> <i>mode</i>)</h3>
+<h3 class="fn">
+<a name="setHorizontalStepsPerItem"></a>QAbstractItemView.setHorizontalStepsPerItem (<i>self</i>, int <i>steps</i>)</h3>
+<h3 class="fn">
+<a name="setIconSize"></a>QAbstractItemView.setIconSize (<i>self</i>, <a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> <i>size</i>)</h3>
+<h3 class="fn">
+<a name="setIndexWidget"></a>QAbstractItemView.setIndexWidget (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>widget</i>)</h3>
+<p>该<i>widget</i>说法有它的所有权转移给Qt的。</p>
+<p>设置给定<i>widget</i>于在给定的产品<i>index</i>，通过widget的所有权视域。</p>
+<p>If <i>index</i>无效（例如，如果您通过根指数） ，这个函数不会做任何事。</p>
+<p>给定<i>widget</i>的<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">autoFillBackground</a>属性必须设置为True，否则widget的背景是透明的，显示出在给定两个模型数据与项目<i>index</i>。</p>
+<p>如果指数小部件A被替换为索引部件B，指数控件A将被删除。例如，下面的代码片段中，<a href="qlineedit.html" tppabs="http://pyqt4doc.appspot.com/qlineedit.html">QLineEdit</a>对象将被删除。</p>
+<pre class="cpp">
+ setIndexWidget(index<span class="operator">,</span> <span class="keyword">new</span> <span class="type"><a href="qlineedit.html" tppabs="http://pyqt4doc.appspot.com/qlineedit.html">QLineEdit</a></span>);
+ <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ setIndexWidget(index<span class="operator">,</span> <span class="keyword">new</span> <span class="type"><a href="qtextedit.html" tppabs="http://pyqt4doc.appspot.com/qtextedit.html">QTextEdit</a></span>);
+</pre>
+<p>这个功能应该仅被用于对应于数据项的可见区域内显示静态内容。如果你想显示自定义的动态内容或实现自定义编辑器部件，子类<a href="qitemdelegate.html" tppabs="http://pyqt4doc.appspot.com/qitemdelegate.html">QItemDelegate</a>代替。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#indexWidget" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#indexWidget">indexWidget</a>（）和<a href="index.htm#delegate-classes" tppabs="http://pyqt4doc.appspot.com/model-view-programming.html#delegate-classes">Delegate
+Classes</a>。</p>
+
+
+<h3 class="fn">
+<a name="setItemDelegate"></a>QAbstractItemView.setItemDelegate (<i>self</i>, <a href="qabstractitemdelegate.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html">QAbstractItemDelegate</a> <i>delegate</i>)</h3>
+<p>设置项委讬该视图及其模型<i>delegate</i>。如果你想完全控制了项目的编辑和显示，这是很有用的。</p>
+<p>任何现有的委讬将被删除，但不会被删除。<a href="qabstractitemview.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html">QAbstractItemView</a>不采取所有权<i>delegate</i>。</p>
+<p><b>Warning:</b>你不应该共享视图之间的委讬的同一实例。否则会导致不正确或不直观的编辑行为，因为在一个给定的委讬每个视图可能会收到<a href="qabstractitemdelegate.html#closeEditor" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#closeEditor">closeEditor()</a>信号，并试图访问，修改或关闭一个已经被关闭的编辑器。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#itemDelegate" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#itemDelegate">itemDelegate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setItemDelegateForColumn"></a>QAbstractItemView.setItemDelegateForColumn (<i>self</i>, int <i>column</i>, <a href="qabstractitemdelegate.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html">QAbstractItemDelegate</a> <i>delegate</i>)</h3>
+<p>设置给定项目<i>delegate</i>使用此视图和模型对于给定的<i>column</i>。所有项目<i>column</i>将绘制和管理<i>delegate</i>而不是使用默认的委讬（即，<a href="qabstractitemview.html#itemDelegate" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#itemDelegate">itemDelegate</a>（））。</p>
+<p>任何现有列委讬<i>column</i>将被删除，但不删除。<a href="qabstractitemview.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html">QAbstractItemView</a>不采取所有权<i>delegate</i>。</p>
+<p><b>Note:</b>如果委讬已被分配到两个行和列，行的委讬将优先考虑和管理的交叉单元索引。</p>
+<p><b>Warning:</b>你不应该共享视图之间的委讬的同一实例。否则会导致不正确或不直观的编辑行为，因为在一个给定的委讬每个视图可能会收到<a href="qabstractitemdelegate.html#closeEditor" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#closeEditor">closeEditor()</a>信号，并试图访问，修改或关闭一个已经被关闭的编辑器。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#itemDelegateForColumn" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#itemDelegateForColumn">itemDelegateForColumn</a>（ ）<a href="qabstractitemview.html#setItemDelegateForRow" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setItemDelegateForRow">setItemDelegateForRow</a>（）和<a href="qabstractitemview.html#itemDelegate" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#itemDelegate">itemDelegate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setItemDelegateForRow"></a>QAbstractItemView.setItemDelegateForRow (<i>self</i>, int <i>row</i>, <a href="qabstractitemdelegate.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html">QAbstractItemDelegate</a> <i>delegate</i>)</h3>
+<p>设置给定项目<i>delegate</i>使用此视图和模型对于给定的<i>row</i>。所有项目<i>row</i>将绘制和管理<i>delegate</i>而不是使用默认的委讬（即，<a href="qabstractitemview.html#itemDelegate" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#itemDelegate">itemDelegate</a>（））。</p>
+<p>任何现有的行委讬<i>row</i>将被删除，但不删除。<a href="qabstractitemview.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html">QAbstractItemView</a>不采取所有权<i>delegate</i>。</p>
+<p><b>Note:</b>如果委讬已被分配到两个行和列，行委讬（即该委讬）将优先考虑和管理的交叉单元索引。</p>
+<p><b>Warning:</b>你不应该共享视图之间的委讬的同一实例。否则会导致不正确或不直观的编辑行为，因为在一个给定的委讬每个视图可能会收到<a href="qabstractitemdelegate.html#closeEditor" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#closeEditor">closeEditor()</a>信号，并试图访问，修改或关闭一个已经被关闭的编辑器。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#itemDelegateForRow" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#itemDelegateForRow">itemDelegateForRow</a>（ ）<a href="qabstractitemview.html#setItemDelegateForColumn" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setItemDelegateForColumn">setItemDelegateForColumn</a>（）和<a href="qabstractitemview.html#itemDelegate" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#itemDelegate">itemDelegate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setModel"></a>QAbstractItemView.setModel (<i>self</i>, <a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a> <i>model</i>)</h3>
+<p>设置<i>model</i>该视图呈现。</p>
+<p>这个函数将创建并设置一个新的选择模式，取代先前设置的任何模型<a href="qabstractitemview.html#setSelectionModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setSelectionModel">setSelectionModel</a>（ ） 。然而，旧的选择模型不会因为它可能被多个视图之间共享删除。我们建议您删除，如果它不再需要旧的选择模型。这样做是用下面的代码：</p>
+<pre class="cpp">
+ <span class="type"><a href="qitemselectionmodel.html" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html">QItemSelectionModel</a></span> <span class="operator">*</span>m <span class="operator">=</span> view<span class="operator">-</span><span class="operator">&gt;</span><a href="qabstractitemview.html#selectionModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#selectionModel">selectionModel</a>();
+ view<span class="operator">-</span><span class="operator">&gt;</span>setModel(<span class="keyword">new</span> model);
+ <span class="keyword">delete</span> m;
+</pre>
+<p>如果两个旧的模式和旧的选择模型没有父母，或者他们的父母长期存活的对象，它可能是最好打电话到他们的<a href="qobject.html#deleteLater" tppabs="http://pyqt4doc.appspot.com/qobject.html#deleteLater">deleteLater</a>（ ）函数来显式地删除它们。</p>
+<p>视图<i>does not</i>取模型的所有权，除非它是模型的父对象，因为该模型可以被许多不同的视图之间共享。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#model" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#model">model</a>（ ）<a href="qabstractitemview.html#selectionModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#selectionModel">selectionModel</a>（）和<a href="qabstractitemview.html#setSelectionModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setSelectionModel">setSelectionModel</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setRootIndex"></a>QAbstractItemView.setRootIndex (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setRootIndex(const QModelIndex&amp;)</tt>。</p>
+<p>根项目设置的项目在给定的<i>index</i>。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#rootIndex" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#rootIndex">rootIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setSelection"></a>QAbstractItemView.setSelection (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>rect</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel-selectionflags.html">QItemSelectionModel.SelectionFlags</a> <i>command</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>适用的选择<i>flags</i>在项目或由矩形触摸时，<i>rect</i>。</p>
+<p>当实现自己的ItemView控件setSelection应该调用<a href="qabstractitemview.html#selectionModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#selectionModel">selectionModel</a>（ ） - \u003e选择（选择，旗），其中选择要么是空的<a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a>或<a href="qitemselection.html" tppabs="http://pyqt4doc.appspot.com/qitemselection.html">QItemSelection</a>包含所包含的所有项目<i>rect</i>。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#selectionCommand" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#selectionCommand">selectionCommand</a>（）和<a href="qabstractitemview.html#selectedIndexes" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#selectedIndexes">selectedIndexes</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setSelectionBehavior"></a>QAbstractItemView.setSelectionBehavior (<i>self</i>, <a href="qabstractitemview.html#SelectionBehavior-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#SelectionBehavior-enum">SelectionBehavior</a> <i>behavior</i>)</h3>
+<h3 class="fn">
+<a name="setSelectionMode"></a>QAbstractItemView.setSelectionMode (<i>self</i>, <a href="qabstractitemview.html#SelectionMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#SelectionMode-enum">SelectionMode</a> <i>mode</i>)</h3>
+<h3 class="fn">
+<a name="setSelectionModel"></a>QAbstractItemView.setSelectionModel (<i>self</i>, <a href="qitemselectionmodel.html" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html">QItemSelectionModel</a> <i>selectionModel</i>)</h3>
+<p>设置当前选择模型给定的<i>selectionModel</i>。</p>
+<p>需要注意的是，如果你调用<a href="qabstractitemview.html#setModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setModel">setModel</a>（ ）这个函数之后，给定的<i>selectionModel</i>将由一个由视图中创建所取代。</p>
+<p><b>Note:</b>它是由应用程序，如果它不再需要删除旧的选择模型，也就是说，如果它不被使用的其它视图。当它的父对象被删除，这会自动发生。然而，如果它不具有父，或者如果父是一个长期存在的对象，它可能是优选的，以调用其<a href="qobject.html#deleteLater" tppabs="http://pyqt4doc.appspot.com/qobject.html#deleteLater">deleteLater</a>（ ）函数来显式地删除它。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#selectionModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#selectionModel">selectionModel</a>（ ）<a href="qabstractitemview.html#setModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setModel">setModel</a>（）和<a href="qabstractitemview.html#clearSelection" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#clearSelection">clearSelection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setState"></a>QAbstractItemView.setState (<i>self</i>, <a href="qabstractitemview.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#State-enum">State</a> <i>state</i>)</h3>
+<p>设置项视图的状态给定的<i>state</i>。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#state" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#state">state</a>().</p>
+
+
+<h3 class="fn">
+<a name="setTabKeyNavigation"></a>QAbstractItemView.setTabKeyNavigation (<i>self</i>, bool <i>enable</i>)</h3>
+<h3 class="fn">
+<a name="setTextElideMode"></a>QAbstractItemView.setTextElideMode (<i>self</i>, <a href="qt.html#TextElideMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#TextElideMode-enum">Qt.TextElideMode</a> <i>mode</i>)</h3>
+<h3 class="fn">
+<a name="setVerticalScrollMode"></a>QAbstractItemView.setVerticalScrollMode (<i>self</i>, <a href="qabstractitemview.html#ScrollMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#ScrollMode-enum">ScrollMode</a> <i>mode</i>)</h3>
+<h3 class="fn">
+<a name="setVerticalStepsPerItem"></a>QAbstractItemView.setVerticalStepsPerItem (<i>self</i>, int <i>steps</i>)</h3>
+<h3 class="fn">
+<a name="showDropIndicator"></a>bool QAbstractItemView.showDropIndicator (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="sizeHintForColumn"></a>int QAbstractItemView.sizeHintForColumn (<i>self</i>, int <i>column</i>)</h3>
+<p>返回的宽度尺寸暗示指定<i>column</i>或者-1，如果没有模型。</p>
+<p>此功能用于在一个水平标题的观点找到尺寸暗示根据对给定内容的标题部分<i>column</i>。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#sizeHintForRow" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#sizeHintForRow">sizeHintForRow</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sizeHintForIndex"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QAbstractItemView.sizeHintForIndex (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>返回尺寸暗示该项目具有指定<i>index</i>或无效的大小无效索引。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#sizeHintForRow" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#sizeHintForRow">sizeHintForRow</a>（）和<a href="qabstractitemview.html#sizeHintForColumn" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#sizeHintForColumn">sizeHintForColumn</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sizeHintForRow"></a>int QAbstractItemView.sizeHintForRow (<i>self</i>, int <i>row</i>)</h3>
+<p>返回的高度尺寸暗示的指定<i>row</i>或者-1，如果没有模型。</p>
+<p>返回的高度是用给定大小的提示计算<i>row</i>的项目，即返回值是项目中的最大高度。请注意，要控制一个行的高度，你必须重新实现<a href="qabstractitemdelegate.html#sizeHint" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#sizeHint">QAbstractItemDelegate.sizeHint</a>（）函数。</p>
+<p>此功能用于在与垂直插头观点找到尺寸暗示根据对给定内容的标题部分<i>row</i>。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#sizeHintForColumn" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#sizeHintForColumn">sizeHintForColumn</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="startDrag"></a>QAbstractItemView.startDrag (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-dropactions.html">Qt.DropActions</a> <i>supportedActions</i>)</h3>
+<p>使用给定的调用拖 - \u003e EXEC （启动拖动）<i>supportedActions</i>。</p>
+
+
+<h3 class="fn">
+<a name="state"></a><a href="qabstractitemview.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#State-enum">State</a> QAbstractItemView.state (<i>self</i>)</h3>
+<p>返回该项目视图的状态。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#setState" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setState">setState</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="tabKeyNavigation"></a>bool QAbstractItemView.tabKeyNavigation (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="textElideMode"></a><a href="qt.html#TextElideMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#TextElideMode-enum">Qt.TextElideMode</a> QAbstractItemView.textElideMode (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="timerEvent"></a>QAbstractItemView.timerEvent (<i>self</i>, <a href="qtimerevent.html" tppabs="http://pyqt4doc.appspot.com/qtimerevent.html">QTimerEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qobject.html#timerEvent" tppabs="http://pyqt4doc.appspot.com/qobject.html#timerEvent">QObject.timerEvent</a>（ ） 。</p>
+<p>这个函数被调用给定的<i>event</i>当一个计时器事件被发送给窗口小部件。</p>
+<p><b>See also</b> <a href="qobject.html#timerEvent" tppabs="http://pyqt4doc.appspot.com/qobject.html#timerEvent">QObject.timerEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="update"></a>QAbstractItemView.update (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void update()</tt>。</p>
+<p>更新由给定的所佔据的区域<i>index</i>。</p>
+<p>此功能被引入Qt的4.3 。</p>
+
+
+<h3 class="fn">
+<a name="update-2"></a>QAbstractItemView.update (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void update(const QModelIndex&amp;)</tt>。</p>
+<h3 class="fn">
+<a name="updateEditorData"></a>QAbstractItemView.updateEditorData (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void updateEditorData()</tt>。</p>
+<h3 class="fn">
+<a name="updateEditorGeometries"></a>QAbstractItemView.updateEditorGeometries (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void updateEditorGeometries()</tt>。</p>
+<h3 class="fn">
+<a name="updateGeometries"></a>QAbstractItemView.updateGeometries (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void updateGeometries()</tt>。</p>
+<p>更新视图的子部件的几何形状。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="verticalOffset"></a>int QAbstractItemView.verticalOffset (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回垂直视图的偏移量。</p>
+<p>在基类中，这是一个纯虚函数。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#horizontalOffset" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#horizontalOffset">horizontalOffset</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="verticalScrollbarAction"></a>QAbstractItemView.verticalScrollbarAction (<i>self</i>, int <i>action</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void verticalScrollbarAction(int)</tt>。</p>
+<h3 class="fn">
+<a name="verticalScrollbarValueChanged"></a>QAbstractItemView.verticalScrollbarValueChanged (<i>self</i>, int <i>value</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void verticalScrollbarValueChanged(int)</tt>。</p>
+<h3 class="fn">
+<a name="verticalScrollMode"></a><a href="qabstractitemview.html#ScrollMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#ScrollMode-enum">ScrollMode</a> QAbstractItemView.verticalScrollMode (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="verticalStepsPerItem"></a>int QAbstractItemView.verticalStepsPerItem (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="viewOptions"></a><a href="qstyleoptionviewitem.html" tppabs="http://pyqt4doc.appspot.com/qstyleoptionviewitem.html">QStyleOptionViewItem</a> QAbstractItemView.viewOptions (<i>self</i>)</h3>
+<p>返回<a href="qstyleoptionviewitem.html" tppabs="http://pyqt4doc.appspot.com/qstyleoptionviewitem.html">QStyleOptionViewItem</a>结构填充视图的调色板，字体，状态，线路走向等。</p>
+
+
+<h3 class="fn">
+<a name="viewportEvent"></a>bool QAbstractItemView.viewportEvent (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qabstractscrollarea.html#viewportEvent" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html#viewportEvent">QAbstractScrollArea.viewportEvent</a>（ ） 。</p>
+<p>这个函数是用来处理工具提示，并这是什么？模式时，如果给定的<i>event</i>是<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.ToolTip</a>或<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.WhatsThis</a>。它传递给它的基类viewportEvent （）处理所有其他事件。</p>
+
+
+<h3 class="fn">
+<a name="visualRect"></a><a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> QAbstractItemView.visualRect (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回矩形上通过了该项目所佔用的视<i>index</i>。</p>
+<p>如果你的项目会显示在几个方面，然后visualRect应该返回一个包含索引，而不是完整的区域指数可能包括，触摸或导致绘图的主要区域。</p>
+<p>在基类中，这是一个纯虚函数。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#indexAt" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#indexAt">indexAt</a>（）和<a href="qabstractitemview.html#visualRegionForSelection" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#visualRegionForSelection">visualRegionForSelection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="visualRegionForSelection"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QAbstractItemView.visualRegionForSelection (<i>self</i>, <a href="qitemselection.html" tppabs="http://pyqt4doc.appspot.com/qitemselection.html">QItemSelection</a> <i>selection</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>从在给定的项目的视口返回区域<i>selection</i>。</p>
+<p>在基类中，这是一个纯虚函数。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#visualRect" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#visualRect">visualRect</a>（）和<a href="qabstractitemview.html#selectedIndexes" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#selectedIndexes">selectedIndexes</a>（ ） 。</p>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="activated"></a>void activated (const QModelIndex&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当指定的项目，该信号被发射<i>index</i>由用户激活。如何激活项目取决于平台，例如，通过单或双击该项目，或按回车键该项目是目前的当。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#clicked" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#clicked">clicked</a>（ ）<a href="qabstractitemview.html#doubleClicked" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#doubleClicked">doubleClicked</a>（ ）<a href="qabstractitemview.html#entered" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#entered">entered</a>（）和<a href="qabstractitemview.html#pressed" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#pressed">pressed</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clicked"></a>void clicked (const QModelIndex&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>单击鼠标按钮时，这个信号被发射。鼠标被点击的项目是由指定的<i>index</i>。当索引是有效的信号只发射。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#activated" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#activated">activated</a>（ ）<a href="qabstractitemview.html#doubleClicked" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#doubleClicked">doubleClicked</a>（ ）<a href="qabstractitemview.html#entered" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#entered">entered</a>（）和<a href="qabstractitemview.html#pressed" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#pressed">pressed</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="doubleClicked"></a>void doubleClicked (const QModelIndex&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当鼠标按钮被双击这个信号被发射。鼠标被双击的项目是由指定的<i>index</i>。当索引是有效的信号只发射。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#clicked" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#clicked">clicked</a>（）和<a href="qabstractitemview.html#activated" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#activated">activated</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="entered"></a>void entered (const QModelIndex&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当鼠标光标进入由指定的项目，这个信号被发射<i>index</i>。鼠标跟踪需要启用此功能工作。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#viewportEntered" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#viewportEntered">viewportEntered</a>（ ）<a href="qabstractitemview.html#activated" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#activated">activated</a>（ ）<a href="qabstractitemview.html#clicked" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#clicked">clicked</a>（ ）<a href="qabstractitemview.html#doubleClicked" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#doubleClicked">doubleClicked</a>（）和<a href="qabstractitemview.html#pressed" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#pressed">pressed</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="pressed"></a>void pressed (const QModelIndex&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当按下鼠标按键，这个信号被发射。鼠标被按下的项目是由指定的<i>index</i>。当索引是有效的信号只发射。</p>
+<p>使用<a href="qapplication.html#mouseButtons" tppabs="http://pyqt4doc.appspot.com/qapplication.html#mouseButtons">QApplication.mouseButtons</a>（ ）函数来获得鼠标按钮的状态。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#activated" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#activated">activated</a>（ ）<a href="qabstractitemview.html#clicked" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#clicked">clicked</a>（ ）<a href="qabstractitemview.html#doubleClicked" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#doubleClicked">doubleClicked</a>（）和<a href="qabstractitemview.html#entered" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#entered">entered</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="viewportEntered"></a>void viewportEntered ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>当鼠标光标进入视这个信号被发射。鼠标跟踪需要启用此功能工作。</p>
+<p><b>See also</b> <a href="qabstractitemview.html#entered" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#entered">entered</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

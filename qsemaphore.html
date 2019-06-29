@@ -1,0 +1,141 @@
+﻿<html>
+<head>
+<title>QSemaphore Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QSemaphore Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QSemaphore类提供了一个通用的计数信号量。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qsemaphore.html#QSemaphore" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#QSemaphore">__init__</a></b> (<i>self</i>, int <i>n</i> = 0)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsemaphore.html#acquire" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#acquire">acquire</a></b> (<i>self</i>, int <i>n</i> = 1)</li>
+<li>
+<div class="fn"></div>int <b><a href="qsemaphore.html#available" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#available">available</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsemaphore.html#release" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#release">release</a></b> (<i>self</i>, int <i>n</i> = 1)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsemaphore.html#tryAcquire" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#tryAcquire">tryAcquire</a></b> (<i>self</i>, int <i>n</i> = 1)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsemaphore.html#tryAcquire-2" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#tryAcquire-2">tryAcquire</a></b> (<i>self</i>, int <i>n</i>, int <i>timeout</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QSemaphore类提供了一个通用的计数信号量。</p>
+<p>信号量是互斥的推广。当一个互斥只能被锁定一次，有可能获得一个信号量多次。信号量是通常用于保护一定数量的相同的资源。</p>
+<p>信号量支持两种基本操作，<a href="qsemaphore.html#acquire" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#acquire">acquire</a>（）和<a href="qsemaphore.html#release" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#release">release</a>（）：</p>
+<ul>
+<li>acquire(<i>n</i>) tries to acquire <i>n</i> resources. If there
+aren't that many resources available, the call will block until
+this is the case.</li>
+<li>release(<i>n</i>) releases <i>n</i> resources.</li>
+</ul>
+<p>还有一个<a href="qsemaphore.html#tryAcquire" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#tryAcquire">tryAcquire</a>（ ）函数立即返回，如果它不能获得资源，以及<a href="qsemaphore.html#available" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#available">available</a>（）函数，返回可用资源的数量在任何时间。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type">QSemaphore</span> sem(<span class="number">5</span>);      <span class="comment">// sem.available() == 5</span>
+
+ sem<span class="operator">.</span><a href="qsemaphore.html#acquire" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#acquire">acquire</a>(<span class="number">3</span>);         <span class="comment">// sem.available() == 2</span>
+ sem<span class="operator">.</span><a href="qsemaphore.html#acquire" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#acquire">acquire</a>(<span class="number">2</span>);         <span class="comment">// sem.available() == 0</span>
+ sem<span class="operator">.</span><a href="qsemaphore.html#release" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#release">release</a>(<span class="number">5</span>);         <span class="comment">// sem.available() == 5</span>
+ sem<span class="operator">.</span><a href="qsemaphore.html#release" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#release">release</a>(<span class="number">5</span>);         <span class="comment">// sem.available() == 10</span>
+
+ sem<span class="operator">.</span><a href="qsemaphore.html#tryAcquire" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#tryAcquire">tryAcquire</a>(<span class="number">1</span>);      <span class="comment">// sem.available() == 9, returns true</span>
+ sem<span class="operator">.</span><a href="qsemaphore.html#tryAcquire" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#tryAcquire">tryAcquire</a>(<span class="number">250</span>);    <span class="comment">// sem.available() == 9, returns false</span>
+</pre>
+<p>信号量的一个典型应用是用于控制访问环形缓冲器由一个生产者线程和消费者线程共享。该<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/threads-semaphores.html">Semaphores</a>示例显示了如何使用QSemaphore来解决这个问题。</p>
+<p>信号量的非计算例子是在餐厅用餐。信号量与椅子在餐厅数初始化。当人们到达时，他们想要一个座位。由于座位填满，<a href="qsemaphore.html#available" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#available">available</a>（ ）递减。随着人们离开，<a href="qsemaphore.html#available" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#available">available</a>（ ）递增，让更多的人进入。如果10人一方想坐下，但只有9个座位，这10人将等待，但4人一党会坐下（以可用座位5 ，使得10人的派对等待更长的时间） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QSemaphore"></a>QSemaphore.__init__ (<i>self</i>, int <i>n</i> = 0)</h3>
+<p>创建一个新的信号量并初始化它扼守资源的数量<i>n</i>（默认为0 ） 。</p>
+<p><b>See also</b> <a href="qsemaphore.html#release" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#release">release</a>（）和<a href="qsemaphore.html#available" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#available">available</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="acquire"></a>QSemaphore.acquire (<i>self</i>, int <i>n</i> = 1)</h3>
+<p>试图获取<tt>n</tt>资源的信号量把守。如果<i>n</i>\u003e<a href="qsemaphore.html#available" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#available">available</a>（ ） ，这个调用将阻塞直到有足够的资源可用。</p>
+<p><b>See also</b> <a href="qsemaphore.html#release" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#release">release</a>（ ）<a href="qsemaphore.html#available" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#available">available</a>（）和<a href="qsemaphore.html#tryAcquire" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#tryAcquire">tryAcquire</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="available"></a>int QSemaphore.available (<i>self</i>)</h3>
+<p>返回资源的当前可用的信号的数目。这个号码永远不能否定的。</p>
+<p><b>See also</b> <a href="qsemaphore.html#acquire" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#acquire">acquire</a>（）和<a href="qsemaphore.html#release" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#release">release</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="release"></a>QSemaphore.release (<i>self</i>, int <i>n</i> = 1)</h3>
+<p>发布<i>n</i>资源的信号量把守。</p>
+<p>此功能可用于“创造”的资源也是如此。例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qsemaphore.html" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html">QSemaphore</a></span> sem(<span class="number">5</span>);      <span class="comment">// a semaphore that guards 5 resources</span>
+ sem<span class="operator">.</span><a href="qsemaphore.html#acquire" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#acquire">acquire</a>(<span class="number">5</span>);         <span class="comment">// acquire all 5 resources</span>
+ sem<span class="operator">.</span>release(<span class="number">5</span>);         <span class="comment">// release the 5 resources</span>
+ sem<span class="operator">.</span>release(<span class="number">10</span>);        <span class="comment">// "create" 10 new resources</span>
+</pre>
+<p><b>See also</b> <a href="qsemaphore.html#acquire" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#acquire">acquire</a>（）和<a href="qsemaphore.html#available" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#available">available</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="tryAcquire"></a>bool QSemaphore.tryAcquire (<i>self</i>, int <i>n</i> = 1)</h3>
+<p>试图获取<tt>n</tt>资源把守的信号，并成功返回True 。如果<a href="qsemaphore.html#available" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#available">available</a>（）\u003c<i>n</i>，这个调用会立即返回False不获取任何资源。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qsemaphore.html" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html">QSemaphore</a></span> sem(<span class="number">5</span>);      <span class="comment">// sem.available() == 5</span>
+ sem<span class="operator">.</span>tryAcquire(<span class="number">250</span>);    <span class="comment">// sem.available() == 5, returns false</span>
+ sem<span class="operator">.</span>tryAcquire(<span class="number">3</span>);      <span class="comment">// sem.available() == 2, returns true</span>
+</pre>
+<p><b>See also</b> <a href="qsemaphore.html#acquire" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#acquire">acquire</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="tryAcquire-2"></a>bool QSemaphore.tryAcquire (<i>self</i>, int <i>n</i>, int <i>timeout</i>)</h3>
+<p>试图获取<tt>n</tt>资源把守的信号，并成功返回True 。如果<a href="qsemaphore.html#available" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#available">available</a>（）\u003c<i>n</i>，这个调用会等待最多<i>timeout</i>毫秒资源变为可用。</p>
+<p>注意：传递一个负数作为<i>timeout</i>相当于调用<a href="qsemaphore.html#acquire" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#acquire">acquire</a>（ ） ，即该函数将一直等待资源变为可用，如果<i>timeout</i>是负的。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qsemaphore.html" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html">QSemaphore</a></span> sem(<span class="number">5</span>);            <span class="comment">// sem.available() == 5</span>
+ sem<span class="operator">.</span><a href="qsemaphore.html#tryAcquire" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#tryAcquire">tryAcquire</a>(<span class="number">250</span><span class="operator">,</span> <span class="number">1000</span>);    <span class="comment">// sem.available() == 5, waits 1000 milliseconds and returns false</span>
+ sem<span class="operator">.</span><a href="qsemaphore.html#tryAcquire" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#tryAcquire">tryAcquire</a>(<span class="number">3</span><span class="operator">,</span> <span class="number">30000</span>);     <span class="comment">// sem.available() == 2, returns true without waiting</span>
+</pre>
+<p><b>See also</b> <a href="qsemaphore.html#acquire" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html#acquire">acquire</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

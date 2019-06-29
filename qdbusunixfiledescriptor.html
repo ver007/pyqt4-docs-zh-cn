@@ -1,0 +1,124 @@
+﻿<html>
+<head>
+<title>QDBusUnixFileDescriptor Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDBusUnixFileDescriptor Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdbus.html">QtDBus</a> module]</sup></sup>
+</h1>
+<p>该QDBusUnixFileDescriptor类各执一份的Unix文件描述符。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusunixfiledescriptor.html#QDBusUnixFileDescriptor" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html#QDBusUnixFileDescriptor">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusunixfiledescriptor.html#QDBusUnixFileDescriptor-2" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html#QDBusUnixFileDescriptor-2">__init__</a></b> (<i>self</i>, int <i>fileDescriptor</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusunixfiledescriptor.html#QDBusUnixFileDescriptor-3" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html#QDBusUnixFileDescriptor-3">__init__</a></b> (<i>self</i>, QDBusUnixFileDescriptor <i>other</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qdbusunixfiledescriptor.html#fileDescriptor" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html#fileDescriptor">fileDescriptor</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdbusunixfiledescriptor.html#isValid" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html#isValid">isValid</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusunixfiledescriptor.html#setFileDescriptor" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html#setFileDescriptor">setFileDescriptor</a></b> (<i>self</i>, int <i>fileDescriptor</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul><li>
+<div class="fn"></div>bool <b><a href="qdbusunixfiledescriptor.html#isSupported" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html#isSupported">isSupported</a></b> ()</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDBusUnixFileDescriptor类各执一份的Unix文件描述符。</p>
+<p>该QDBusUnixFileDescriptor类用于容纳一个Unix的文件描述符与使用<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdbus.html">QtDBus</a>模块。这使得应用程序可以自动发送和接收的Unix文件描述符在D-Bus的连接，映射到D -总线类型的“h” 。</p>
+<p>也可以使用如在信号和通过用QDBusConnection.registerObject注册得到出口到D-总线时隙参数类型QDBusUnixFileDescriptors的对象。</p>
+<p>QDBusUnixFileDescriptor不走文件描述符的所有权。相反，它将使用Unix系统调用<tt>dup(2)</tt>使文件描述符的副本。此文件描述符属于QDBusUnixFileDescriptor对象，不应该被存储或由用户关闭。相反，你应该让自己的副本，如果你需要的。</p>
+<a id="availability" name="availability"></a>
+<h4>Availability</h4>
+<p>Unix的文件描述符的逝世是不是适用于所有的D-Bus连接。此功能目前与D-Bus的图书馆和总线守护程序版本1.4及以上的Unix系统。<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdbus.html">QtDBus</a>自动启用该功能，如果这样的版本被发现在编译时和运行时。</p>
+<p>要验证您的连接不支持通过文件描述符，检查<a href="qdbusconnection.html#ConnectionCapability-enum" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#ConnectionCapability-enum">QDBusConnection.UnixFileDescriptorPassing</a>功能设置与<a href="qdbusconnection.html#connectionCapabilities" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#connectionCapabilities">QDBusConnection.connectionCapabilities</a>（ ） 。如果标志不活跃，那么你将无法做出有QDBusUnixFileDescriptor作为参数，甚至在一个变体中嵌入这种类型的调用方法。您也不会收到包含该类型的呼叫。</p>
+<p>另请注意，远程应用程序可能无法让Unix文件描述符传递的支持。如果你犯了一个D-Bus的到无法接受这样一种类型的远程应用程序，您将收到一条错误的答复。如果您尝试发送一个含有D-Bus的文件描述符的信号，或从一个方法调用返回之一，该消息将被丢弃。</p>
+<p>即使功能不可用， QDBusUnixFileDescriptor将继续运行，所以代码不需要有编译时检查此功能的可用性。</p>
+<p>在非Unix系统， QDBusUnixFileDescriptor将始终报告无效状态，<a href="qdbusunixfiledescriptor.html#isSupported" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html#isSupported">QDBusUnixFileDescriptor.isSupported</a>（ ）将返回False 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDBusUnixFileDescriptor"></a>QDBusUnixFileDescriptor.__init__ (<i>self</i>)</h3>
+<p>构造一个<a href="qdbusunixfiledescriptor.html" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html">QDBusUnixFileDescriptor</a>没有包装的文件描述符。这等效于一个无效的文件描述符（如-1）构成的对象。</p>
+<p><b>See also</b> <a href="qdbusunixfiledescriptor.html#fileDescriptor" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html#fileDescriptor">fileDescriptor</a>（）和<a href="qdbusunixfiledescriptor.html#isValid" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html#isValid">isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QDBusUnixFileDescriptor-2"></a>QDBusUnixFileDescriptor.__init__ (<i>self</i>, int <i>fileDescriptor</i>)</h3>
+<p>构造一个<a href="qdbusunixfiledescriptor.html" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html">QDBusUnixFileDescriptor</a>通过复制的对象<i>fileDescriptor</i>参数。原始文件的描述符是不被用户触摸并必须关闭。</p>
+<p>请注意，返回的值由<a href="qdbusunixfiledescriptor.html#fileDescriptor" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html#fileDescriptor">fileDescriptor</a>（）将来自不同<i>fileDescriptor</i>参数传递。</p>
+<p>如果<i>fileDescriptor</i>参数是无效的，<a href="qdbusunixfiledescriptor.html#isValid" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html#isValid">isValid</a>（ ）将返回False，<a href="qdbusunixfiledescriptor.html#fileDescriptor" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html#fileDescriptor">fileDescriptor</a>（ ）将返回-1 。</p>
+<p><b>See also</b> <a href="qdbusunixfiledescriptor.html#setFileDescriptor" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html#setFileDescriptor">setFileDescriptor</a>（）和<a href="qdbusunixfiledescriptor.html#fileDescriptor" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html#fileDescriptor">fileDescriptor</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QDBusUnixFileDescriptor-3"></a>QDBusUnixFileDescriptor.__init__ (<i>self</i>, <a href="qdbusunixfiledescriptor.html" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html">QDBusUnixFileDescriptor</a> <i>other</i>)</h3>
+<p>构造一个<a href="qdbusunixfiledescriptor.html" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html">QDBusUnixFileDescriptor</a>通过复制对象<i>other</i>。</p>
+
+
+<h3 class="fn">
+<a name="fileDescriptor"></a>int QDBusUnixFileDescriptor.fileDescriptor (<i>self</i>)</h3>
+<p>返回包含此Unix的文件描述符<a href="qdbusunixfiledescriptor.html" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html">QDBusUnixFileDescriptor</a>对象。无效的文件描述符由值-1表示。</p>
+<p>请注意，这个函数返回的文件描述符是由拥有<a href="qdbusunixfiledescriptor.html" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html">QDBusUnixFileDescriptor</a>对象，并且必须不被保存过去的这个对象的生存期。它是确定使用它，而这个对象是有效的，但如果一个人想存放更长的使用，文件描述符应使用Unix的克隆<tt>dup(2)</tt>，<tt>dup2(2)</tt> or <tt>dup3(2)</tt>功能。</p>
+<p><b>See also</b> <a href="qdbusunixfiledescriptor.html#setFileDescriptor" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html#setFileDescriptor">setFileDescriptor</a>（）和<a href="qdbusunixfiledescriptor.html#isValid" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html#isValid">isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isSupported"></a>bool QDBusUnixFileDescriptor.isSupported ()</h3>
+<p>如果在Unix文件描述符都在这个平台上支持，则返回True 。换句话说，该函数返回True，如果这是一个Unix平台上。</p>
+<p>需要注意的是<a href="qdbusunixfiledescriptor.html" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html">QDBusUnixFileDescriptor</a>继续运行，即使这个函数返回False 。唯一的区别在于<a href="qdbusunixfiledescriptor.html" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html">QDBusUnixFileDescriptor</a>对象将始终处于<a href="qdbusunixfiledescriptor.html#isValid" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html#isValid">isValid</a>（ ） == False状态和<a href="qdbusunixfiledescriptor.html#fileDescriptor" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html#fileDescriptor">fileDescriptor</a>（ ）将总是返回-1 。本课程将不消耗任何作业系统资源。</p>
+
+
+<h3 class="fn">
+<a name="isValid"></a>bool QDBusUnixFileDescriptor.isValid (<i>self</i>)</h3>
+<p>返回True如果Unix的文件描述符是有效的。一个有效的Unix文件描述符不是-1 。</p>
+<p><b>See also</b> <a href="qdbusunixfiledescriptor.html#fileDescriptor" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html#fileDescriptor">fileDescriptor</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFileDescriptor"></a>QDBusUnixFileDescriptor.setFileDescriptor (<i>self</i>, int <i>fileDescriptor</i>)</h3>
+<p>设置文件描述符，这<a href="qdbusunixfiledescriptor.html" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html">QDBusUnixFileDescriptor</a>对象保存到副本<i>fileDescriptor</i>。原始文件的描述符是不被用户触摸并必须关闭。</p>
+<p>请注意，返回的值由<a href="qdbusunixfiledescriptor.html#fileDescriptor" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html#fileDescriptor">fileDescriptor</a>（）将来自不同<i>fileDescriptor</i>参数传递。</p>
+<p>如果<i>fileDescriptor</i>参数是无效的，<a href="qdbusunixfiledescriptor.html#isValid" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html#isValid">isValid</a>（ ）将返回False，<a href="qdbusunixfiledescriptor.html#fileDescriptor" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html#fileDescriptor">fileDescriptor</a>（ ）将返回-1 。</p>
+<p><b>See also</b> <a href="qdbusunixfiledescriptor.html#isValid" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html#isValid">isValid</a>（）和<a href="qdbusunixfiledescriptor.html#fileDescriptor" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html#fileDescriptor">fileDescriptor</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

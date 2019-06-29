@@ -1,0 +1,1248 @@
+﻿<html>
+<head>
+<title>QApplication Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QApplication Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该的QApplication类管理图形用户界面应用程序的控制流和主要设置。<a href="#details">More...</a></p>
+
+<p>继承<a href="qcoreapplication.html" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html">QCoreApplication</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qapplication.html#ColorSpec-enum" tppabs="http://pyqt4doc.appspot.com/qapplication.html#ColorSpec-enum">ColorSpec</a></b> { NormalColor, CustomColor, ManyColor }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qapplication.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qapplication.html#Type-enum">Type</a></b> { Tty, GuiClient, GuiServer }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#QApplication" tppabs="http://pyqt4doc.appspot.com/qapplication.html#QApplication">__init__</a></b> (<i>self</i>, list-of-str <i>argv</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#QApplication-2" tppabs="http://pyqt4doc.appspot.com/qapplication.html#QApplication-2">__init__</a></b> (<i>self</i>, list-of-str <i>argv</i>, bool <i>GUIenabled</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#QApplication-3" tppabs="http://pyqt4doc.appspot.com/qapplication.html#QApplication-3">__init__</a></b> (<i>self</i>, list-of-str <i>argv</i>, Type)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#QApplication-4" tppabs="http://pyqt4doc.appspot.com/qapplication.html#QApplication-4">__init__</a></b> (<i>self</i>, Display <i>display</i>, int <i>visual</i> = 0, int <i>colormap</i> = 0)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#QApplication-5" tppabs="http://pyqt4doc.appspot.com/qapplication.html#QApplication-5">__init__</a></b> (<i>self</i>, Display <i>dpy</i>, list-of-str <i>argv</i>, int <i>visual</i> = 0, int <i>cmap</i> = 0)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qapplication.html#autoSipEnabled" tppabs="http://pyqt4doc.appspot.com/qapplication.html#autoSipEnabled">autoSipEnabled</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#commitData" tppabs="http://pyqt4doc.appspot.com/qapplication.html#commitData">commitData</a></b> (<i>self</i>, QSessionManager <i>sm</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qapplication.html#event" tppabs="http://pyqt4doc.appspot.com/qapplication.html#event">event</a></b> (<i>self</i>, QEvent)</li>
+<li>
+<div class="fn"></div>QInputContext <b><a href="qapplication.html#inputContext" tppabs="http://pyqt4doc.appspot.com/qapplication.html#inputContext">inputContext</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qapplication.html#isSessionRestored" tppabs="http://pyqt4doc.appspot.com/qapplication.html#isSessionRestored">isSessionRestored</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qapplication.html#notify" tppabs="http://pyqt4doc.appspot.com/qapplication.html#notify">notify</a></b> (<i>self</i>, QObject, QEvent)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#saveState" tppabs="http://pyqt4doc.appspot.com/qapplication.html#saveState">saveState</a></b> (<i>self</i>, QSessionManager <i>sm</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qapplication.html#sessionId" tppabs="http://pyqt4doc.appspot.com/qapplication.html#sessionId">sessionId</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qapplication.html#sessionKey" tppabs="http://pyqt4doc.appspot.com/qapplication.html#sessionKey">sessionKey</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#setAutoSipEnabled" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setAutoSipEnabled">setAutoSipEnabled</a></b> (<i>self</i>, bool <i>enabled</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#setInputContext" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setInputContext">setInputContext</a></b> (<i>self</i>, QInputContext)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#setStyleSheet" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setStyleSheet">setStyleSheet</a></b> (<i>self</i>, QString <i>sheet</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qapplication.html#styleSheet" tppabs="http://pyqt4doc.appspot.com/qapplication.html#styleSheet">styleSheet</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qapplication.html#x11EventFilter" tppabs="http://pyqt4doc.appspot.com/qapplication.html#x11EventFilter">x11EventFilter</a></b> (<i>self</i>, sip.voidptr)</li>
+<li>
+<div class="fn"></div>int <b><a href="qapplication.html#x11ProcessEvent" tppabs="http://pyqt4doc.appspot.com/qapplication.html#x11ProcessEvent">x11ProcessEvent</a></b> (<i>self</i>, sip.voidptr)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#aboutQt" tppabs="http://pyqt4doc.appspot.com/qapplication.html#aboutQt">aboutQt</a></b> ()</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qapplication.html#activeModalWidget" tppabs="http://pyqt4doc.appspot.com/qapplication.html#activeModalWidget">activeModalWidget</a></b> ()</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qapplication.html#activePopupWidget" tppabs="http://pyqt4doc.appspot.com/qapplication.html#activePopupWidget">activePopupWidget</a></b> ()</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qapplication.html#activeWindow" tppabs="http://pyqt4doc.appspot.com/qapplication.html#activeWindow">activeWindow</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#alert" tppabs="http://pyqt4doc.appspot.com/qapplication.html#alert">alert</a></b> (QWidget <i>widget</i>, int <i>msecs</i> = 0)</li>
+<li>
+<div class="fn"></div>list-of-QWidget <b><a href="qapplication.html#allWidgets" tppabs="http://pyqt4doc.appspot.com/qapplication.html#allWidgets">allWidgets</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#beep" tppabs="http://pyqt4doc.appspot.com/qapplication.html#beep">beep</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#changeOverrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#changeOverrideCursor">changeOverrideCursor</a></b> (QCursor)</li>
+<li>
+<div class="fn"></div>QClipboard <b><a href="qapplication.html#clipboard" tppabs="http://pyqt4doc.appspot.com/qapplication.html#clipboard">clipboard</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#closeAllWindows" tppabs="http://pyqt4doc.appspot.com/qapplication.html#closeAllWindows">closeAllWindows</a></b> ()</li>
+<li>
+<div class="fn"></div>int <b><a href="qapplication.html#colorSpec" tppabs="http://pyqt4doc.appspot.com/qapplication.html#colorSpec">colorSpec</a></b> ()</li>
+<li>
+<div class="fn"></div>int <b><a href="qapplication.html#cursorFlashTime" tppabs="http://pyqt4doc.appspot.com/qapplication.html#cursorFlashTime">cursorFlashTime</a></b> ()</li>
+<li>
+<div class="fn"></div>QDesktopWidget <b><a href="qapplication.html#desktop" tppabs="http://pyqt4doc.appspot.com/qapplication.html#desktop">desktop</a></b> ()</li>
+<li>
+<div class="fn"></div>bool <b><a href="qapplication.html#desktopSettingsAware" tppabs="http://pyqt4doc.appspot.com/qapplication.html#desktopSettingsAware">desktopSettingsAware</a></b> ()</li>
+<li>
+<div class="fn"></div>int <b><a href="qapplication.html#doubleClickInterval" tppabs="http://pyqt4doc.appspot.com/qapplication.html#doubleClickInterval">doubleClickInterval</a></b> ()</li>
+<li>
+<div class="fn"></div>int <b><a href="qapplication.html#exec" tppabs="http://pyqt4doc.appspot.com/qapplication.html#exec">exec_</a></b> ()</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qapplication.html#focusWidget" tppabs="http://pyqt4doc.appspot.com/qapplication.html#focusWidget">focusWidget</a></b> ()</li>
+<li>
+<div class="fn"></div>QFont <b><a href="qapplication.html#font" tppabs="http://pyqt4doc.appspot.com/qapplication.html#font">font</a></b> ()</li>
+<li>
+<div class="fn"></div>QFont <b><a href="qapplication.html#font-2" tppabs="http://pyqt4doc.appspot.com/qapplication.html#font-2">font</a></b> (QWidget)</li>
+<li>
+<div class="fn"></div>QFont <b><a href="qapplication.html#font-3" tppabs="http://pyqt4doc.appspot.com/qapplication.html#font-3">font</a></b> (str <i>className</i>)</li>
+<li>
+<div class="fn"></div>QFontMetrics <b><a href="qapplication.html#fontMetrics" tppabs="http://pyqt4doc.appspot.com/qapplication.html#fontMetrics">fontMetrics</a></b> ()</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qapplication.html#globalStrut" tppabs="http://pyqt4doc.appspot.com/qapplication.html#globalStrut">globalStrut</a></b> ()</li>
+<li>
+<div class="fn"></div>bool <b><a href="qapplication.html#isEffectEnabled" tppabs="http://pyqt4doc.appspot.com/qapplication.html#isEffectEnabled">isEffectEnabled</a></b> (Qt.UIEffect)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qapplication.html#isLeftToRight" tppabs="http://pyqt4doc.appspot.com/qapplication.html#isLeftToRight">isLeftToRight</a></b> ()</li>
+<li>
+<div class="fn"></div>bool <b><a href="qapplication.html#isRightToLeft" tppabs="http://pyqt4doc.appspot.com/qapplication.html#isRightToLeft">isRightToLeft</a></b> ()</li>
+<li>
+<div class="fn"></div>Qt.LayoutDirection <b><a href="qapplication.html#keyboardInputDirection" tppabs="http://pyqt4doc.appspot.com/qapplication.html#keyboardInputDirection">keyboardInputDirection</a></b> ()</li>
+<li>
+<div class="fn"></div>int <b><a href="qapplication.html#keyboardInputInterval" tppabs="http://pyqt4doc.appspot.com/qapplication.html#keyboardInputInterval">keyboardInputInterval</a></b> ()</li>
+<li>
+<div class="fn"></div>QLocale <b><a href="qapplication.html#keyboardInputLocale" tppabs="http://pyqt4doc.appspot.com/qapplication.html#keyboardInputLocale">keyboardInputLocale</a></b> ()</li>
+<li>
+<div class="fn"></div>Qt.KeyboardModifiers <b><a href="qapplication.html#keyboardModifiers" tppabs="http://pyqt4doc.appspot.com/qapplication.html#keyboardModifiers">keyboardModifiers</a></b> ()</li>
+<li>
+<div class="fn"></div>Qt.LayoutDirection <b><a href="qapplication.html#layoutDirection" tppabs="http://pyqt4doc.appspot.com/qapplication.html#layoutDirection">layoutDirection</a></b> ()</li>
+<li>
+<div class="fn"></div>Qt.MouseButtons <b><a href="qapplication.html#mouseButtons" tppabs="http://pyqt4doc.appspot.com/qapplication.html#mouseButtons">mouseButtons</a></b> ()</li>
+<li>
+<div class="fn"></div>QCursor <b><a href="qapplication.html#overrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#overrideCursor">overrideCursor</a></b> ()</li>
+<li>
+<div class="fn"></div>QPalette <b><a href="qapplication.html#palette" tppabs="http://pyqt4doc.appspot.com/qapplication.html#palette">palette</a></b> ()</li>
+<li>
+<div class="fn"></div>QPalette <b><a href="qapplication.html#palette-2" tppabs="http://pyqt4doc.appspot.com/qapplication.html#palette-2">palette</a></b> (QWidget)</li>
+<li>
+<div class="fn"></div>QPalette <b><a href="qapplication.html#palette-3" tppabs="http://pyqt4doc.appspot.com/qapplication.html#palette-3">palette</a></b> (str <i>className</i>)</li>
+<li>
+<div class="fn"></div>Qt.KeyboardModifiers <b><a href="qapplication.html#queryKeyboardModifiers" tppabs="http://pyqt4doc.appspot.com/qapplication.html#queryKeyboardModifiers">queryKeyboardModifiers</a></b> ()</li>
+<li>
+<div class="fn"></div>bool <b><a href="qapplication.html#quitOnLastWindowClosed" tppabs="http://pyqt4doc.appspot.com/qapplication.html#quitOnLastWindowClosed">quitOnLastWindowClosed</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#restoreOverrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#restoreOverrideCursor">restoreOverrideCursor</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#setActiveWindow" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setActiveWindow">setActiveWindow</a></b> (QWidget <i>act</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#setColorSpec" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setColorSpec">setColorSpec</a></b> (int)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#setCursorFlashTime" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setCursorFlashTime">setCursorFlashTime</a></b> (int)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#setDesktopSettingsAware" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setDesktopSettingsAware">setDesktopSettingsAware</a></b> (bool)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#setDoubleClickInterval" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setDoubleClickInterval">setDoubleClickInterval</a></b> (int)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#setEffectEnabled" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setEffectEnabled">setEffectEnabled</a></b> (Qt.UIEffect <i>effect</i>, bool <i>enabled</i> = True)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#setFont" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setFont">setFont</a></b> (QFont <i>font</i>, str <i>className</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#setGlobalStrut" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setGlobalStrut">setGlobalStrut</a></b> (QSize)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#setGraphicsSystem" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setGraphicsSystem">setGraphicsSystem</a></b> (QString)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#setKeyboardInputInterval" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setKeyboardInputInterval">setKeyboardInputInterval</a></b> (int)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#setLayoutDirection" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setLayoutDirection">setLayoutDirection</a></b> (Qt.LayoutDirection <i>direction</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#setOverrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setOverrideCursor">setOverrideCursor</a></b> (QCursor)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#setPalette" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setPalette">setPalette</a></b> (QPalette <i>palette</i>, str <i>className</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#setQuitOnLastWindowClosed" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setQuitOnLastWindowClosed">setQuitOnLastWindowClosed</a></b> (bool <i>quit</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#setStartDragDistance" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setStartDragDistance">setStartDragDistance</a></b> (int <i>l</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#setStartDragTime" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setStartDragTime">setStartDragTime</a></b> (int <i>ms</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#setStyle" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setStyle">setStyle</a></b> (QStyle)</li>
+<li>
+<div class="fn"></div>QStyle <b><a href="qapplication.html#setStyle-2" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setStyle-2">setStyle</a></b> (QString)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#setWheelScrollLines" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setWheelScrollLines">setWheelScrollLines</a></b> (int)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#setWindowIcon" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setWindowIcon">setWindowIcon</a></b> (QIcon <i>icon</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qapplication.html#startDragDistance" tppabs="http://pyqt4doc.appspot.com/qapplication.html#startDragDistance">startDragDistance</a></b> ()</li>
+<li>
+<div class="fn"></div>int <b><a href="qapplication.html#startDragTime" tppabs="http://pyqt4doc.appspot.com/qapplication.html#startDragTime">startDragTime</a></b> ()</li>
+<li>
+<div class="fn"></div>QStyle <b><a href="qapplication.html#style" tppabs="http://pyqt4doc.appspot.com/qapplication.html#style">style</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qapplication.html#syncX" tppabs="http://pyqt4doc.appspot.com/qapplication.html#syncX">syncX</a></b> ()</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qapplication.html#topLevelAt" tppabs="http://pyqt4doc.appspot.com/qapplication.html#topLevelAt">topLevelAt</a></b> (QPoint <i>p</i>)</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qapplication.html#topLevelAt-2" tppabs="http://pyqt4doc.appspot.com/qapplication.html#topLevelAt-2">topLevelAt</a></b> (int <i>x</i>, int <i>y</i>)</li>
+<li>
+<div class="fn"></div>list-of-QWidget <b><a href="qapplication.html#topLevelWidgets" tppabs="http://pyqt4doc.appspot.com/qapplication.html#topLevelWidgets">topLevelWidgets</a></b> ()</li>
+<li>
+<div class="fn"></div>Type <b><a href="qapplication.html#type" tppabs="http://pyqt4doc.appspot.com/qapplication.html#type">type</a></b> ()</li>
+<li>
+<div class="fn"></div>int <b><a href="qapplication.html#wheelScrollLines" tppabs="http://pyqt4doc.appspot.com/qapplication.html#wheelScrollLines">wheelScrollLines</a></b> ()</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qapplication.html#widgetAt" tppabs="http://pyqt4doc.appspot.com/qapplication.html#widgetAt">widgetAt</a></b> (QPoint <i>p</i>)</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qapplication.html#widgetAt-2" tppabs="http://pyqt4doc.appspot.com/qapplication.html#widgetAt-2">widgetAt</a></b> (int <i>x</i>, int <i>y</i>)</li>
+<li>
+<div class="fn"></div>QIcon <b><a href="qapplication.html#windowIcon" tppabs="http://pyqt4doc.appspot.com/qapplication.html#windowIcon">windowIcon</a></b> ()</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qapplication.html#commitDataRequest" tppabs="http://pyqt4doc.appspot.com/qapplication.html#commitDataRequest">commitDataRequest</a></b> (QSessionManager&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qapplication.html#focusChanged" tppabs="http://pyqt4doc.appspot.com/qapplication.html#focusChanged">focusChanged</a></b> (QWidget *,QWidget *)</li>
+<li>
+<div class="fn"></div>void <b><a href="qapplication.html#fontDatabaseChanged" tppabs="http://pyqt4doc.appspot.com/qapplication.html#fontDatabaseChanged">fontDatabaseChanged</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qapplication.html#lastWindowClosed" tppabs="http://pyqt4doc.appspot.com/qapplication.html#lastWindowClosed">lastWindowClosed</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qapplication.html#saveStateRequest" tppabs="http://pyqt4doc.appspot.com/qapplication.html#saveStateRequest">saveStateRequest</a></b> (QSessionManager&amp;)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该的QApplication类管理图形用户界面应用程序的控制流和主要设置。</p>
+<p>的QApplication包含主事件循环，其中来自窗口系统和其他来源的所有事件被处理和调度。它也处理应用程序的初始化，最后定稿，并提供会话管理。此外，的QApplication处理大部分的系统范围和应用范围的设置。</p>
+<p>对于使用Qt的任何GUI应用程序，有正<b>one</b>QApplication对象，无论应用程序是否具有0 ，1，2或更多个窗口在任何给定时间。对于非GUI Qt应用程序，使用<a href="qcoreapplication.html" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html">QCoreApplication</a>相反，因为它不依赖于<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a>库。</p>
+<p>QApplication对象是通过访问<a href="qcoreapplication.html#instance" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#instance">instance</a>（ ）函数返回一个指针相当于全球<a href="index.htm#qApp-var" tppabs="http://pyqt4doc.appspot.com/qtgui.html#qApp-var">qApp</a>指针。</p>
+<p>的QApplication的主要责任领域是：</p>
+<ul>
+<li>It initializes the application with the user's desktop settings
+such as <a href="qapplication.html#palette" tppabs="http://pyqt4doc.appspot.com/qapplication.html#palette">palette</a>(), <a href="qapplication.html#font" tppabs="http://pyqt4doc.appspot.com/qapplication.html#font">font</a>() and <a href="qapplication.html#doubleClickInterval-prop" tppabs="http://pyqt4doc.appspot.com/qapplication.html#doubleClickInterval-prop">doubleClickInterval</a>().
+It keeps track of these properties in case the user changes the
+desktop globally, for example through some kind of control
+panel.</li>
+<li>It performs event handling, meaning that it receives events
+from the underlying window system and dispatches them to the
+relevant widgets. By using <a href="qcoreapplication.html#sendEvent" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#sendEvent">sendEvent</a>() and <a href="qcoreapplication.html#postEvent" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#postEvent">postEvent</a>() you can send your
+own events to widgets.</li>
+<li>It parses common command line arguments and sets its internal
+state accordingly. See the <a href="qapplication.html#QApplication" tppabs="http://pyqt4doc.appspot.com/qapplication.html#QApplication">constructor documentation</a>
+below for more details.</li>
+<li>It defines the application's look and feel, which is
+encapsulated in a <a href="qstyle.html" tppabs="http://pyqt4doc.appspot.com/qstyle.html">QStyle</a> object. This can
+be changed at runtime with <a href="qapplication.html#setStyle" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setStyle">setStyle</a>().</li>
+<li>It specifies how the application is to allocate colors. See
+<a href="qapplication.html#setColorSpec" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setColorSpec">setColorSpec</a>() for
+details.</li>
+<li>It provides localization of strings that are visible to the
+user via <a href="qcoreapplication.html#translate" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#translate">translate</a>().</li>
+<li>It provides some magical objects like the <a href="qapplication.html#desktop" tppabs="http://pyqt4doc.appspot.com/qapplication.html#desktop">desktop</a>() and the <a href="qapplication.html#clipboard" tppabs="http://pyqt4doc.appspot.com/qapplication.html#clipboard">clipboard</a>().</li>
+<li>It knows about the application's windows. You can ask which
+widget is at a certain position using <a href="qapplication.html#widgetAt" tppabs="http://pyqt4doc.appspot.com/qapplication.html#widgetAt">widgetAt</a>(), get a list of <a href="qapplication.html#topLevelWidgets" tppabs="http://pyqt4doc.appspot.com/qapplication.html#topLevelWidgets">topLevelWidgets</a>() and
+<a href="qapplication.html#closeAllWindows" tppabs="http://pyqt4doc.appspot.com/qapplication.html#closeAllWindows">closeAllWindows</a>(),
+etc.</li>
+<li>It manages the application's mouse cursor handling, see
+<a href="qapplication.html#setOverrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setOverrideCursor">setOverrideCursor</a>()</li>
+<li>On the X window system, it provides functions to flush and sync
+the communication stream, see <a class="compat" href="index.htm#flushX" tppabs="http://pyqt4doc.appspot.com/qapplication-qt3.html#flushX">flushX</a>() and
+<a href="qapplication.html#syncX" tppabs="http://pyqt4doc.appspot.com/qapplication.html#syncX">syncX</a>().</li>
+<li>It provides support for sophisticated <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/session.html">session management</a>. This makes it possible for
+applications to terminate gracefully when the user logs out, to
+cancel a shutdown process if termination isn't possible and even to
+preserve the entire application's state for a future session. See
+<a href="qapplication.html#isSessionRestored" tppabs="http://pyqt4doc.appspot.com/qapplication.html#isSessionRestored">isSessionRestored</a>(),
+<a href="qapplication.html#sessionId" tppabs="http://pyqt4doc.appspot.com/qapplication.html#sessionId">sessionId</a>() and <a href="qapplication.html#commitData" tppabs="http://pyqt4doc.appspot.com/qapplication.html#commitData">commitData</a>() and <a href="qapplication.html#saveState" tppabs="http://pyqt4doc.appspot.com/qapplication.html#saveState">saveState</a>() for details.</li>
+</ul>
+<p>由于QApplication对象做了如此多的初始化，它<i>must</i>创建与用户界面的任何其他对象之前被创建。的QApplication也处理命令行参数。因此，它通常是一个好主意来创建它<i>before</i>任何解释或修改<tt>argv</tt>在该应用程序本身就完成了。</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th colspan="2">Groups of functions</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td>System settings</td>
+<td>
+<a href="qapplication.html#desktopSettingsAware" tppabs="http://pyqt4doc.appspot.com/qapplication.html#desktopSettingsAware">desktopSettingsAware</a>(),
+<a href="qapplication.html#setDesktopSettingsAware" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setDesktopSettingsAware">setDesktopSettingsAware</a>(),
+<a href="qapplication.html#cursorFlashTime-prop" tppabs="http://pyqt4doc.appspot.com/qapplication.html#cursorFlashTime-prop">cursorFlashTime</a>(),
+<a href="qapplication.html#cursorFlashTime-prop" tppabs="http://pyqt4doc.appspot.com/qapplication.html#cursorFlashTime-prop">setCursorFlashTime</a>(),
+<a href="qapplication.html#doubleClickInterval-prop" tppabs="http://pyqt4doc.appspot.com/qapplication.html#doubleClickInterval-prop">doubleClickInterval</a>(),
+<a href="qapplication.html#doubleClickInterval-prop" tppabs="http://pyqt4doc.appspot.com/qapplication.html#doubleClickInterval-prop">setDoubleClickInterval</a>(),
+<a href="qapplication.html#keyboardInputInterval-prop" tppabs="http://pyqt4doc.appspot.com/qapplication.html#keyboardInputInterval-prop">setKeyboardInputInterval</a>(),
+<a href="qapplication.html#wheelScrollLines-prop" tppabs="http://pyqt4doc.appspot.com/qapplication.html#wheelScrollLines-prop">wheelScrollLines</a>(),
+<a href="qapplication.html#wheelScrollLines-prop" tppabs="http://pyqt4doc.appspot.com/qapplication.html#wheelScrollLines-prop">setWheelScrollLines</a>(),
+<a href="qapplication.html#palette" tppabs="http://pyqt4doc.appspot.com/qapplication.html#palette">palette</a>(), <a href="qapplication.html#setPalette" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setPalette">setPalette</a>(), <a href="qapplication.html#font" tppabs="http://pyqt4doc.appspot.com/qapplication.html#font">font</a>(), <a href="qapplication.html#setFont" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setFont">setFont</a>(), <a href="qapplication.html#fontMetrics" tppabs="http://pyqt4doc.appspot.com/qapplication.html#fontMetrics">fontMetrics</a>().</td>
+</tr>
+<tr class="even" valign="top">
+<td>Event handling</td>
+<td>
+<a href="qapplication.html#exec" tppabs="http://pyqt4doc.appspot.com/qapplication.html#exec">exec_</a>(), <a href="qcoreapplication.html#processEvents" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#processEvents">processEvents</a>(), <a href="qcoreapplication.html#exit" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#exit">exit</a>(), <a href="qcoreapplication.html#quit" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#quit">quit</a>(). <a href="qcoreapplication.html#sendEvent" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#sendEvent">sendEvent</a>(), <a href="qcoreapplication.html#postEvent" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#postEvent">postEvent</a>(), <a href="qcoreapplication.html#sendPostedEvents" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#sendPostedEvents">sendPostedEvents</a>(),
+<a href="qcoreapplication.html#removePostedEvents" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#removePostedEvents">removePostedEvents</a>(),
+<a href="qcoreapplication.html#hasPendingEvents" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#hasPendingEvents">hasPendingEvents</a>(),
+<a href="qapplication.html#notify" tppabs="http://pyqt4doc.appspot.com/qapplication.html#notify">notify</a>(), <a href="qapplication.html#macEventFilter" tppabs="http://pyqt4doc.appspot.com/qapplication.html#macEventFilter">macEventFilter</a>(), <a href="qapplication.html#qwsEventFilter" tppabs="http://pyqt4doc.appspot.com/qapplication.html#qwsEventFilter">qwsEventFilter</a>(), <a href="qapplication.html#x11EventFilter" tppabs="http://pyqt4doc.appspot.com/qapplication.html#x11EventFilter">x11EventFilter</a>(), <a href="qapplication.html#x11ProcessEvent" tppabs="http://pyqt4doc.appspot.com/qapplication.html#x11ProcessEvent">x11ProcessEvent</a>(), <a href="qcoreapplication.html#winEventFilter" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#winEventFilter">winEventFilter</a>().</td>
+</tr>
+<tr class="odd" valign="top">
+<td>GUI Styles</td>
+<td>
+<a href="qapplication.html#style" tppabs="http://pyqt4doc.appspot.com/qapplication.html#style">style</a>(), <a href="qapplication.html#setStyle" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setStyle">setStyle</a>().</td>
+</tr>
+<tr class="even" valign="top">
+<td>Color usage</td>
+<td>
+<a href="qapplication.html#colorSpec" tppabs="http://pyqt4doc.appspot.com/qapplication.html#colorSpec">colorSpec</a>(), <a href="qapplication.html#setColorSpec" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setColorSpec">setColorSpec</a>(), <a href="qapplication.html#qwsSetCustomColors" tppabs="http://pyqt4doc.appspot.com/qapplication.html#qwsSetCustomColors">qwsSetCustomColors</a>().</td>
+</tr>
+<tr class="odd" valign="top">
+<td>Text handling</td>
+<td>
+<a href="qcoreapplication.html#installTranslator" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#installTranslator">installTranslator</a>(),
+<a href="qcoreapplication.html#removeTranslator" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#removeTranslator">removeTranslator</a>()
+<a href="qcoreapplication.html#translate" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#translate">translate</a>().</td>
+</tr>
+<tr class="even" valign="top">
+<td>Widgets</td>
+<td>
+<a href="qapplication.html#allWidgets" tppabs="http://pyqt4doc.appspot.com/qapplication.html#allWidgets">allWidgets</a>(),
+<a href="qapplication.html#topLevelWidgets" tppabs="http://pyqt4doc.appspot.com/qapplication.html#topLevelWidgets">topLevelWidgets</a>(),
+<a href="qapplication.html#desktop" tppabs="http://pyqt4doc.appspot.com/qapplication.html#desktop">desktop</a>(), <a href="qapplication.html#activePopupWidget" tppabs="http://pyqt4doc.appspot.com/qapplication.html#activePopupWidget">activePopupWidget</a>(),
+<a href="qapplication.html#activeModalWidget" tppabs="http://pyqt4doc.appspot.com/qapplication.html#activeModalWidget">activeModalWidget</a>(),
+<a href="qapplication.html#clipboard" tppabs="http://pyqt4doc.appspot.com/qapplication.html#clipboard">clipboard</a>(), <a href="qapplication.html#focusWidget" tppabs="http://pyqt4doc.appspot.com/qapplication.html#focusWidget">focusWidget</a>(), <a href="qapplication.html#activeWindow" tppabs="http://pyqt4doc.appspot.com/qapplication.html#activeWindow">activeWindow</a>(), <a href="qapplication.html#widgetAt" tppabs="http://pyqt4doc.appspot.com/qapplication.html#widgetAt">widgetAt</a>().</td>
+</tr>
+<tr class="odd" valign="top">
+<td>Advanced cursor handling</td>
+<td>
+<a href="qapplication.html#overrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#overrideCursor">overrideCursor</a>(), <a href="qapplication.html#setOverrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setOverrideCursor">setOverrideCursor</a>(),
+<a href="qapplication.html#restoreOverrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#restoreOverrideCursor">restoreOverrideCursor</a>().</td>
+</tr>
+<tr class="even" valign="top">
+<td>X Window System synchronization</td>
+<td>
+<a class="compat" href="index.htm#flushX" tppabs="http://pyqt4doc.appspot.com/qapplication-qt3.html#flushX">flushX</a>(), <a href="qapplication.html#syncX" tppabs="http://pyqt4doc.appspot.com/qapplication.html#syncX">syncX</a>().</td>
+</tr>
+<tr class="odd" valign="top">
+<td>Session management</td>
+<td>
+<a href="qapplication.html#isSessionRestored" tppabs="http://pyqt4doc.appspot.com/qapplication.html#isSessionRestored">isSessionRestored</a>(),
+<a href="qapplication.html#sessionId" tppabs="http://pyqt4doc.appspot.com/qapplication.html#sessionId">sessionId</a>(), <a href="qapplication.html#commitData" tppabs="http://pyqt4doc.appspot.com/qapplication.html#commitData">commitData</a>(), <a href="qapplication.html#saveState" tppabs="http://pyqt4doc.appspot.com/qapplication.html#saveState">saveState</a>().</td>
+</tr>
+<tr class="even" valign="top">
+<td>Miscellaneous</td>
+<td>
+<a href="qapplication.html#closeAllWindows" tppabs="http://pyqt4doc.appspot.com/qapplication.html#closeAllWindows">closeAllWindows</a>(), <a href="qcoreapplication.html#startingUp" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#startingUp">startingUp</a>(), <a href="qcoreapplication.html#closingDown" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#closingDown">closingDown</a>(), <a href="qapplication.html#type" tppabs="http://pyqt4doc.appspot.com/qapplication.html#type">type</a>().</td>
+</tr>
+</table>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="ColorSpec-enum"></a>QApplication.ColorSpec</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QApplication.NormalColor</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">默认的颜色分配策略</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QApplication.CustomColor</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">NormalColor一样的X11 ，在Windows下需要一个调色板颜色分配</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QApplication.ManyColor</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">对于使用上千种颜色的应用的理想选择</td>
+</tr>
+</table>
+<p>See <a href="qapplication.html#setColorSpec" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setColorSpec">setColorSpec</a>（ ）的全部细节。</p>
+
+
+<h3 class="fn">
+<a name="Type-enum"></a>QApplication.Type</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QApplication.Tty</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">一个控制台应用程序</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QApplication.GuiClient</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">一个GUI客户端应用程序</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QApplication.GuiServer</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">一个GUI服务器应用程序（ Qt嵌入式Linux的）</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QApplication"></a>QApplication.__init__ (<i>self</i>, list-of-str <i>argv</i>)</h3>
+<p>初始化窗口系统，并构造一个应用程序对象<i>argc</i>在命令行参数<i>argv</i>。</p>
+<p><b>Warning:</b>由所述资料<i>argc</i>和<i>argv</i>必须保持有效的整个生命周期<a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a>对象。另外，<i>argc</i>必须大于零和<i>argv</i>必须至少包含一个有效的字符串。</p>
+<p>全球<tt>qApp</tt>指针指到这个应用程序对象。只有一个应用程序对象应该被创建。</p>
+<p>此应用程序对象必须在任何构造<a href="qpaintdevice.html" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html">paint devices</a>（包括窗口小部件，像素图，位图等）。</p>
+<p><b>Note:</b> <i>argc</i>和<i>argv</i>作为Qt的删除，它承认命令行参数可能会改变。</p>
+<p>Qt的调试选项（如果Qt未经定义的QT_DEBUG标志编译） ：</p>
+<ul>
+<li>-nograb, tells Qt that it must never grab the mouse or the
+keyboard.</li>
+<li>-dograb (only under X11), running under a debugger can cause an
+implicit -nograb, use -dograb to override.</li>
+<li>-sync (only under X11), switches to synchronous mode for
+debugging.</li>
+</ul>
+<p>See <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/debug.html">Debugging Techniques</a>对于更详细的解释。</p>
+<p>所有Qt程序自动支持以下命令行选项：</p>
+<ul>
+<li>-style= <i>style</i>, sets the application GUI style. Possible
+values are <tt>motif</tt>, <tt>windows</tt>, and <tt>platinum</tt>.
+If you compiled Qt with additional styles or have additional styles
+as plugins these will be available to the <tt>-style</tt> command
+line option.</li>
+<li>-style <i>style</i>, is the same as listed above.</li>
+<li>-stylesheet= <i>stylesheet</i>, sets the application <a href="qapplication.html#styleSheet-prop" tppabs="http://pyqt4doc.appspot.com/qapplication.html#styleSheet-prop">styleSheet</a>. The value must
+be a path to a file that contains the Style Sheet. <b>Note:</b>
+Relative URLs in the Style Sheet file are relative to the Style
+Sheet file's path.</li>
+<li>-stylesheet <i>stylesheet</i>, is the same as listed
+above.</li>
+<li>-session= <i>session</i>, restores the application from an
+earlier <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/session.html">session</a>.</li>
+<li>-session <i>session</i>, is the same as listed above.</li>
+<li>-widgetcount, prints debug message at the end about number of
+widgets left undestroyed and maximum number of widgets existed at
+the same time</li>
+<li>-reverse, sets the application's layout direction to <a href="qt.html#LayoutDirection-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#LayoutDirection-enum">Qt.RightToLeft</a>
+</li>
+<li>-graphicssystem, sets the backend to be used for on-screen
+widgets and QPixmaps. Available options are <tt>raster</tt> and
+<tt>opengl</tt>.</li>
+<li>-qmljsdebugger=, activates the QML/JS debugger with a specified
+port. The value must be of format port:1234[,block], where block is
+optional and will make the application wait until a debugger
+connects to it.</li>
+</ul>
+<p>在X11版本的Qt支持一些传统的X11命令行选项：</p>
+<ul>
+<li>-display <i>display</i>, sets the X display (default is
+$DISPLAY).</li>
+<li>-geometry <i>geometry</i>, sets the client geometry of the
+first window that is shown.</li>
+<li>-fn or <tt>-font</tt> <i>font</i>, defines the application
+font. The font should be specified using an X logical font
+description. Note that this option is ignored when Qt is built with
+fontconfig support enabled.</li>
+<li>-bg or <tt>-background</tt> <i>color</i>, sets the default
+background color and an application palette (light and dark shades
+are calculated).</li>
+<li>-fg or <tt>-foreground</tt> <i>color</i>, sets the default
+foreground color.</li>
+<li>-btn or <tt>-button</tt> <i>color</i>, sets the default button
+color.</li>
+<li>-name <i>name</i>, sets the application name.</li>
+<li>-title <i>title</i>, sets the application title.</li>
+<li>-visual <tt>TrueColor</tt>, forces the application to use a
+TrueColor visual on an 8-bit display.</li>
+<li>-ncols <i>count</i>, limits the number of colors allocated in
+the color cube on an 8-bit display, if the application is using the
+<a href="qapplication.html#ColorSpec-enum" tppabs="http://pyqt4doc.appspot.com/qapplication.html#ColorSpec-enum">QApplication.ManyColor</a>
+color specification. If <i>count</i> is 216 then a 6x6x6 color cube
+is used (i.e. 6 levels of red, 6 of green, and 6 of blue); for
+other values, a cube approximately proportional to a 2x3x1 cube is
+used.</li>
+<li>-cmap, causes the application to install a private color map on
+an 8-bit display.</li>
+<li>-im, sets the input method server (equivalent to setting the
+XMODIFIERS environment variable)</li>
+<li>-inputstyle, defines how the input is inserted into the given
+widget, e.g., <tt>onTheSpot</tt> makes the input appear directly in
+the widget, while <tt>overTheSpot</tt> makes the input appear in a
+box floating over the widget and is not inserted until the editing
+is done.</li>
+</ul>
+<a id="x11-notes" name="x11-notes"></a>
+<h4>X11 Notes</h4>
+<p>If <a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a>无法打开X11显示，它会终止进程。此行为与大多数X11应用程序是一致的。</p>
+<p><b>See also</b> <a href="qcoreapplication.html#arguments" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#arguments">arguments</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QApplication-2"></a>QApplication.__init__ (<i>self</i>, list-of-str <i>argv</i>, bool <i>GUIenabled</i>)</h3>
+<p>构造一个应用程序对象<i>argc</i>在命令行参数<i>argv</i>。如果<i>GUIenabled</i>诚然，一个GUI应用程序的构造，否则非图形用户界面（控制台）应用程序创建的。</p>
+<p><b>Warning:</b>由所述资料<i>argc</i>和<i>argv</i>必须保持有效的整个生命周期<a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a>对象。另外，<i>argc</i>必须大于零和<i>argv</i>必须至少包含一个有效的字符串。</p>
+<p>集<i>GUIenabled</i>为False，不，应该是能够在没有窗口系统上运行的图形用户界面程序。</p>
+<p>在X11中，窗口系统，如果初始化<i>GUIenabled</i>是真实的。如果<i>GUIenabled</i>是假的，应用程序不连接到X服务器。在Windows和Mac OS ，现在窗口系统总是会被初始化，无论GUIenabled的价值。这可能会改变的Qt的未来版本。</p>
+<p>下面的示例显示了如何创建一个使用图形界面时，可用的应用程序。</p>
+<pre class="cpp">
+ <span class="type">int</span> main(<span class="type">int</span> argc<span class="operator">,</span> <span class="type">char</span> <span class="operator">*</span><span class="operator">*</span>argv)
+ {
+ <span class="preprocessor">#ifdef Q_WS_X11</span>
+     <span class="type">bool</span> useGUI <span class="operator">=</span> getenv(<span class="string">"DISPLAY"</span>) <span class="operator">!</span><span class="operator">=</span> <span class="number">0</span>;
+ <span class="preprocessor">#else</span>
+     <span class="type">bool</span> useGUI <span class="operator">=</span> <span class="keyword">true</span>;
+ <span class="preprocessor">#endif</span>
+     <span class="type"><a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a></span> app(argc<span class="operator">,</span> argv<span class="operator">,</span> useGUI);
+
+     <span class="keyword">if</span> (useGUI) {
+        <span class="comment">// start GUI version</span>
+        <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+     } <span class="keyword">else</span> {
+        <span class="comment">// start non-GUI version</span>
+        <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+     }
+     <span class="keyword">return</span> app<span class="operator">.</span>exec();
+ }
+</pre>
+
+
+<h3 class="fn">
+<a name="QApplication-3"></a>QApplication.__init__ (<i>self</i>, list-of-str <i>argv</i>, <a href="qapplication.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qapplication.html#Type-enum">Type</a>)</h3>
+<p>构造一个应用程序对象<i>argc</i>在命令行参数<i>argv</i>。</p>
+<p><b>Warning:</b>由所述资料<i>argc</i>和<i>argv</i>必须保持有效的整个生命周期<a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a>对象。另外，<i>argc</i>必须大于零和<i>argv</i>必须至少包含一个有效的字符串。</p>
+<p>与Qt嵌入式Linux的，路过<a href="qapplication.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qapplication.html#Type-enum">QApplication.GuiServer</a>为<i>type</i>这使得应用程序的服务器（相当于与运行<tt>-qws</tt>选项）。</p>
+
+
+<h3 class="fn">
+<a name="QApplication-4"></a>QApplication.__init__ (<i>self</i>, Display <i>display</i>, int <i>visual</i> = 0, int <i>colormap</i> = 0)</h3>
+<p>创建一个应用程序，给定一个已经打开的显示器<i>display</i>。如果<i>visual</i>和<i>colormap</i>非零，应用程序将使用这些值作为默认的Visual和Colormap上下文。</p>
+<p><b>Warning:</b>的Qt只支持TrueColor模式在深度大于8位每像素高。</p>
+<p>此功能仅适用于X11 。</p>
+
+
+<h3 class="fn">
+<a name="QApplication-5"></a>QApplication.__init__ (<i>self</i>, Display <i>dpy</i>, list-of-str <i>argv</i>, int <i>visual</i> = 0, int <i>cmap</i> = 0)</h3>
+<p>创建一个应用程序，给定一个已经打开<i>display</i>并使用<i>argc</i>在命令行参数<i>argv</i>。如果<i>visual</i>和<i>colormap</i>非零，应用程序将使用这些值作为默认的Visual和Colormap上下文。</p>
+<p><b>Warning:</b>的Qt只支持TrueColor模式在深度大于8位每像素高。</p>
+<p>此功能仅适用于X11 。</p>
+
+
+<h3 class="fn">
+<a name="aboutQt"></a>QApplication.aboutQt ()</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void aboutQt()</tt>。</p>
+<p>显示关于Qt的一个简单的消息框。该消息包括对Qt的正在使用的应用程序的版本号。</p>
+<p>这是纳入有用<b>Help</b>一个应用程序的菜单，如图中<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/mainwindows-menus.html">Menus</a>例子。</p>
+<p>此函数是一个方便的槽，用于<a href="qmessagebox.html#aboutQt" tppabs="http://pyqt4doc.appspot.com/qmessagebox.html#aboutQt">QMessageBox.aboutQt</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="activeModalWidget"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QApplication.activeModalWidget ()</h3>
+<p>返回有效的模态窗口小部件。</p>
+<p>模态窗口小部件是一种特殊的顶级窗口部件这是一个子类<a href="qdialog.html" tppabs="http://pyqt4doc.appspot.com/qdialog.html">QDialog</a>指定构造函数作为真正的模态参数。模态窗口小部件，必须关闭之前，用户可以继续使用该程序的其他部分。</p>
+<p>模态窗口部件被组织在一个栈中。该函数返回有效的模态窗口小部件在堆栈的顶部。</p>
+<p><b>See also</b> <a href="qapplication.html#activePopupWidget" tppabs="http://pyqt4doc.appspot.com/qapplication.html#activePopupWidget">activePopupWidget</a>（）和<a href="qapplication.html#topLevelWidgets" tppabs="http://pyqt4doc.appspot.com/qapplication.html#topLevelWidgets">topLevelWidgets</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="activePopupWidget"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QApplication.activePopupWidget ()</h3>
+<p>返回激活弹出窗口部件。</p>
+<p>一个弹出窗口部件是一个特殊的顶级窗口部件设置<tt>Qt.WType_Popup</tt>小部件标志，例如该<a href="qmenu.html" tppabs="http://pyqt4doc.appspot.com/qmenu.html">QMenu</a>小工具。当应用程序打开一个弹出式窗口小部件，所有事件都发送到弹出。前弹出窗口部件被关闭正常的部件和模态窗口部件不能被访问。</p>
+<p>只有其他弹出窗口部件可以打开一个弹出式窗口小部件时显示。在弹出的窗口部件被组织在一个栈中。这个函数返回弹出窗口部件在堆栈的顶部。</p>
+<p><b>See also</b> <a href="qapplication.html#activeModalWidget" tppabs="http://pyqt4doc.appspot.com/qapplication.html#activeModalWidget">activeModalWidget</a>（）和<a href="qapplication.html#topLevelWidgets" tppabs="http://pyqt4doc.appspot.com/qapplication.html#topLevelWidgets">topLevelWidgets</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="activeWindow"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QApplication.activeWindow ()</h3>
+<p>返回应用程序顶层窗口拥有键盘输入焦点，或者0，如果没有应用程序窗口具有焦点。有可能是一个则activeWindow （ ），即使没有<a href="qapplication.html#focusWidget" tppabs="http://pyqt4doc.appspot.com/qapplication.html#focusWidget">focusWidget</a>（ ） ，例如，如果该窗口没有窗口部件接收键盘事件。</p>
+<p><b>See also</b> <a href="qapplication.html#setActiveWindow" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setActiveWindow">setActiveWindow</a>（ ）<a href="qwidget.html#setFocus" tppabs="http://pyqt4doc.appspot.com/qwidget.html#setFocus">QWidget.setFocus</a>（ ）<a href="qwidget.html#focus-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#focus-prop">QWidget.hasFocus</a>（）和<a href="qapplication.html#focusWidget" tppabs="http://pyqt4doc.appspot.com/qapplication.html#focusWidget">focusWidget</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="alert"></a>QApplication.alert (<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>widget</i>, int <i>msecs</i> = 0)</h3>
+<p>导致警报显示为<i>widget</i>如果窗口不是活动窗口。警报显示为<i>msec</i>毫秒。如果<i>msec</i>为0（默认），则显示警报下去，直到窗口再次变得活跃。</p>
+<p>目前，该函数不起作用的Qt嵌入式Linux操作系统。</p>
+<p>在Mac OS X上，这个作品更在应用程序级别，并会导致应用程序图标在Dock上弹跳。</p>
+<p>在Windows上，这会导致窗口的任务栏条目闪烁一段时间。如果<i>msec</i>是零，那么停止闪烁，并在任务栏条目将变成不同的颜色（目前橙色） 。</p>
+<p>在X11 ，这会导致窗口被标记为“需要注意” ，窗口不能被隐藏（即没有隐藏（）调用它，但在某种方式中可见） ，为了这个工作。</p>
+<p>此功能被引入Qt的4.3 。</p>
+
+
+<h3 class="fn">
+<a name="allWidgets"></a>list-of-QWidget QApplication.allWidgets ()</h3>
+<p>返回应用程序的所有窗口部件的列表。</p>
+<p>该列表是空的（<a href="index.htm#isEmpty" tppabs="http://pyqt4doc.appspot.com/qlist.html#isEmpty">QList.isEmpty</a>（ ） ）如果没有小部件。</p>
+<p><b>Note:</b>一些小部件可能会被隐藏。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type">void</span> updateAllWidgets()
+ {
+     foreach (<span class="type"><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a></span> <span class="operator">*</span>widget<span class="operator">,</span> <span class="type"><a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a></span><span class="operator">.</span>allWidgets())
+         widget<span class="operator">-</span><span class="operator">&gt;</span>update();
+ }
+</pre>
+<p><b>See also</b> <a href="qapplication.html#topLevelWidgets" tppabs="http://pyqt4doc.appspot.com/qapplication.html#topLevelWidgets">topLevelWidgets</a>（）和<a href="qwidget.html#visible-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#visible-prop">QWidget.isVisible</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="autoSipEnabled"></a>bool QApplication.autoSipEnabled (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="beep"></a>QApplication.beep ()</h3>
+<p>听起来钟，使用默认音量和声音。该函数是<i>not</i>在现有的Qt嵌入式Linux 。</p>
+
+
+<h3 class="fn">
+<a name="changeOverrideCursor"></a>QApplication.changeOverrideCursor (<a href="qcursor.html" tppabs="http://pyqt4doc.appspot.com/qcursor.html">QCursor</a>)</h3>
+<p>改变当前激活的应用程序复盖光标<i>cursor</i>。</p>
+<p>这个功能有没有影响，如果<a href="qapplication.html#setOverrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setOverrideCursor">setOverrideCursor</a>（ ）没有被调用。</p>
+<p><b>See also</b> <a href="qapplication.html#setOverrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setOverrideCursor">setOverrideCursor</a>（ ）<a href="qapplication.html#overrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#overrideCursor">overrideCursor</a>（ ）<a href="qapplication.html#restoreOverrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#restoreOverrideCursor">restoreOverrideCursor</a>（）和<a href="qwidget.html#cursor-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#cursor-prop">QWidget.setCursor</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clipboard"></a><a href="qclipboard.html" tppabs="http://pyqt4doc.appspot.com/qclipboard.html">QClipboard</a> QApplication.clipboard ()</h3>
+<p>返回一个指向应用程序的全局剪贴板。</p>
+<p><b>Note:</b>该<a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a>对象应该已经访问剪贴板之前建造。</p>
+
+
+<h3 class="fn">
+<a name="closeAllWindows"></a>QApplication.closeAllWindows ()</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void closeAllWindows()</tt>。</p>
+<p>关闭所有顶层窗口。</p>
+<p>此功能适用于许多顶层窗口的应用程序特别有用。它可以，例如，被连接到一个<b>Exit</b>在该条目<b>File</b>菜单：</p>
+<pre class="cpp">
+     exitAct <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a></span>(tr(<span class="string">"E&amp;xit"</span>)<span class="operator">,</span> <span class="keyword">this</span>);
+     exitAct<span class="operator">-</span><span class="operator">&gt;</span>setShortcuts(<span class="type"><a href="qkeysequence.html" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html">QKeySequence</a></span><span class="operator">.</span>Quit);
+     exitAct<span class="operator">-</span><span class="operator">&gt;</span>setStatusTip(tr(<span class="string">"Exit the application"</span>));
+     connect(exitAct<span class="operator">,</span> SIGNAL(triggered())<span class="operator">,</span> qApp<span class="operator">,</span> SLOT(closeAllWindows()));
+</pre>
+<p>该窗口都关闭以随机顺序，直到一个窗口不接受close事件。在应用程序退出时，最后一个窗口被成功关闭，这可以通过设置关闭<a href="qapplication.html#quitOnLastWindowClosed-prop" tppabs="http://pyqt4doc.appspot.com/qapplication.html#quitOnLastWindowClosed-prop">quitOnLastWindowClosed</a>为False。</p>
+<p><b>See also</b> <a href="qapplication.html#quitOnLastWindowClosed-prop" tppabs="http://pyqt4doc.appspot.com/qapplication.html#quitOnLastWindowClosed-prop">quitOnLastWindowClosed</a>，<a href="qapplication.html#lastWindowClosed" tppabs="http://pyqt4doc.appspot.com/qapplication.html#lastWindowClosed">lastWindowClosed</a>（ ）<a href="qwidget.html#close" tppabs="http://pyqt4doc.appspot.com/qwidget.html#close">QWidget.close</a>（ ）<a href="qwidget.html#closeEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#closeEvent">QWidget.closeEvent</a>（ ）<a href="qapplication.html#lastWindowClosed" tppabs="http://pyqt4doc.appspot.com/qapplication.html#lastWindowClosed">lastWindowClosed</a>（ ）<a href="qcoreapplication.html#quit" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#quit">quit</a>（ ）<a href="qapplication.html#topLevelWidgets" tppabs="http://pyqt4doc.appspot.com/qapplication.html#topLevelWidgets">topLevelWidgets</a>（）和<a href="qwidget.html#isWindow" tppabs="http://pyqt4doc.appspot.com/qwidget.html#isWindow">QWidget.isWindow</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="colorSpec"></a>int QApplication.colorSpec ()</h3>
+<p>返回颜色规格。</p>
+<p><b>See also</b> <a href="qapplication.html#setColorSpec" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setColorSpec">QApplication.setColorSpec</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="commitData"></a>QApplication.commitData (<i>self</i>, <a href="qsessionmanager.html" tppabs="http://pyqt4doc.appspot.com/qsessionmanager.html">QSessionManager</a> <i>sm</i>)</h3>
+<p>这个函数处理<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/session.html">session
+management</a>。它被调用时，<a href="qsessionmanager.html" tppabs="http://pyqt4doc.appspot.com/qsessionmanager.html">QSessionManager</a>想让应用程序提交的所有数据。</p>
+<p>通常，这意味着保存所有打开的文件，从用户得到允许后。此外，您可能需要提供由用户可以取消关机的手段。</p>
+<p>你不应该退出这个函数中的应用。相反，会话管理器可以或可以不这样做之后，这取决于上下文。</p>
+<p><b>Warning:</b>在这个函数中，没有用户交互是可能的，<i>unless</i>你问<i>manager</i>为明确许可。看<a href="qsessionmanager.html#allowsInteraction" tppabs="http://pyqt4doc.appspot.com/qsessionmanager.html#allowsInteraction">QSessionManager.allowsInteraction</a>（）和<a href="qsessionmanager.html#allowsErrorInteraction" tppabs="http://pyqt4doc.appspot.com/qsessionmanager.html#allowsErrorInteraction">QSessionManager.allowsErrorInteraction</a>（ ）了解详情和用法示例。</p>
+<p>默认实现请求交互和发送一个close事件给所有可见的顶层窗口部件。如果任何一个事件被拒绝，关机将被取消。</p>
+<p><b>See also</b> <a href="qapplication.html#isSessionRestored" tppabs="http://pyqt4doc.appspot.com/qapplication.html#isSessionRestored">isSessionRestored</a>（ ）<a href="qapplication.html#sessionId" tppabs="http://pyqt4doc.appspot.com/qapplication.html#sessionId">sessionId</a>（ ）<a href="qapplication.html#saveState" tppabs="http://pyqt4doc.appspot.com/qapplication.html#saveState">saveState</a>（）和<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/session.html">Session Management</a>。</p>
+
+
+<h3 class="fn">
+<a name="cursorFlashTime"></a>int QApplication.cursorFlashTime ()</h3>
+<h3 class="fn">
+<a name="desktop"></a><a href="qdesktopwidget.html" tppabs="http://pyqt4doc.appspot.com/qdesktopwidget.html">QDesktopWidget</a> QApplication.desktop ()</h3>
+<p>返回桌面窗口小部件（也称为根窗口）。</p>
+<p>桌面可以由多个屏幕，因此它是不正确的，例如，以试图<i>center</i>一些小工具在桌面的几何形状。<a href="qdesktopwidget.html" tppabs="http://pyqt4doc.appspot.com/qdesktopwidget.html">QDesktopWidget</a>具有各种功能的桌面在获得有用的几何形状，如<a href="qdesktopwidget.html#screenGeometry" tppabs="http://pyqt4doc.appspot.com/qdesktopwidget.html#screenGeometry">QDesktopWidget.screenGeometry</a>（）和<a href="qdesktopwidget.html#availableGeometry" tppabs="http://pyqt4doc.appspot.com/qdesktopwidget.html#availableGeometry">QDesktopWidget.availableGeometry</a>（ ） 。</p>
+<p>在X11上，但也可以绘制在桌面上。</p>
+
+
+<h3 class="fn">
+<a name="desktopSettingsAware"></a>bool QApplication.desktopSettingsAware ()</h3>
+<p>返回True如果Qt的设置为使用系统的标准颜色，字体等，否则返回False 。默认值为True 。</p>
+<p><b>See also</b> <a href="qapplication.html#setDesktopSettingsAware" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setDesktopSettingsAware">setDesktopSettingsAware</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="doubleClickInterval"></a>int QApplication.doubleClickInterval ()</h3>
+<h3 class="fn">
+<a name="event"></a>bool QApplication.event (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>)</h3>
+<p>从重新实现<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">QObject.event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="exec"></a>int QApplication.exec_ ()</h3>
+<p>进入主事件循环并等待，直到<a href="qcoreapplication.html#exit" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#exit">exit</a>（）被调用，然后返回被设置为值<a href="qcoreapplication.html#exit" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#exit">exit</a>（）（它是0，如果<a href="qcoreapplication.html#exit" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#exit">exit</a>（ ）通过调用<a href="qcoreapplication.html#quit" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#quit">quit</a>（））。</p>
+<p>有必要调用这个函数来启动事件处理。主事件循环接收事件从窗口系统并调度这些应用程序的部件。</p>
+<p>一般情况下，没有用户交互可以调用exec （ ）之前发生。作为一种特殊的情况下，模式对话框喜欢<a href="qmessagebox.html" tppabs="http://pyqt4doc.appspot.com/qmessagebox.html">QMessageBox</a>调用exec （之前可以使用） ，因为模式对话框调用exec （ ）来启动一个本地事件循环。</p>
+<p>为了使您的应用程序执行閒置处理，即执行一个特殊的功能，每当有没有挂起的事件，使用<a href="qtimer.html" tppabs="http://pyqt4doc.appspot.com/qtimer.html">QTimer</a>与0超时。更高级的空閒处理方案可以用来实现<a href="qcoreapplication.html#processEvents" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#processEvents">processEvents</a>（ ） 。</p>
+<p>我们建议您清理代码连接到<a href="qcoreapplication.html#aboutToQuit" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#aboutToQuit">aboutToQuit()</a>信号，而不是把它在你的应用程序，<tt>main()</tt>功能。这是因为，在某些平台上的QApplication.exec （ ）调用可能不会返回。例如，在Windows平台上，当用户注销时，系统终止进程的Qt关闭所有顶层窗口之后。因此，有<i>no guarantee</i>该应用程序将有时间退出事件循环，并执行代码的结束<tt>main()</tt>功能， QApplication.exec （ ）调用之后。</p>
+<p><b>See also</b> <a href="qapplication.html#quitOnLastWindowClosed-prop" tppabs="http://pyqt4doc.appspot.com/qapplication.html#quitOnLastWindowClosed-prop">quitOnLastWindowClosed</a>，<a href="qcoreapplication.html#quit" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#quit">quit</a>（ ）<a href="qcoreapplication.html#exit" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#exit">exit</a>（ ）<a href="qcoreapplication.html#processEvents" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#processEvents">processEvents</a>（）和<a href="qcoreapplication.html#exec" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#exec">QCoreApplication.exec</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="focusWidget"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QApplication.focusWidget ()</h3>
+<p>返回应用程序窗口部件拥有键盘输入焦点，或者0，如果在这个应用程序中没有窗口部件具有焦点。</p>
+<p><b>See also</b> <a href="qwidget.html#setFocus" tppabs="http://pyqt4doc.appspot.com/qwidget.html#setFocus">QWidget.setFocus</a>（ ）<a href="qwidget.html#focus-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#focus-prop">QWidget.hasFocus</a>（ ）<a href="qapplication.html#activeWindow" tppabs="http://pyqt4doc.appspot.com/qapplication.html#activeWindow">activeWindow</a>（）和<a href="qapplication.html#focusChanged" tppabs="http://pyqt4doc.appspot.com/qapplication.html#focusChanged">focusChanged</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="font"></a><a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a> QApplication.font ()</h3>
+<p>返回默认应用程序字体。</p>
+<p><b>See also</b> <a href="qapplication.html#setFont" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setFont">setFont</a>（ ）<a href="qapplication.html#fontMetrics" tppabs="http://pyqt4doc.appspot.com/qapplication.html#fontMetrics">fontMetrics</a>（）和<a href="qwidget.html#font-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#font-prop">QWidget.font</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="font-2"></a><a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a> QApplication.font (<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回的默认字体<i>widget</i>。</p>
+<p><b>See also</b> <a href="qapplication.html#fontMetrics" tppabs="http://pyqt4doc.appspot.com/qapplication.html#fontMetrics">fontMetrics</a>（）和<a href="qwidget.html#font-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#font-prop">QWidget.setFont</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="font-3"></a><a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a> QApplication.font (str <i>className</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回该字体的指定部件<i>className</i>。</p>
+<p><b>See also</b> <a href="qapplication.html#setFont" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setFont">setFont</a>（）和<a href="qwidget.html#font-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#font-prop">QWidget.font</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fontMetrics"></a><a href="qfontmetrics.html" tppabs="http://pyqt4doc.appspot.com/qfontmetrics.html">QFontMetrics</a> QApplication.fontMetrics ()</h3>
+<p>回报显示应用程序的字体（屏）字体度量。</p>
+<p><b>See also</b> <a href="qapplication.html#font" tppabs="http://pyqt4doc.appspot.com/qapplication.html#font">font</a>（ ）<a href="qapplication.html#setFont" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setFont">setFont</a>（ ）<a href="qwidget.html#fontMetrics" tppabs="http://pyqt4doc.appspot.com/qwidget.html#fontMetrics">QWidget.fontMetrics</a>（）和<a href="qpainter.html#fontMetrics" tppabs="http://pyqt4doc.appspot.com/qpainter.html#fontMetrics">QPainter.fontMetrics</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="globalStrut"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QApplication.globalStrut ()</h3>
+<h3 class="fn">
+<a name="inputContext"></a><a href="qinputcontext.html" tppabs="http://pyqt4doc.appspot.com/qinputcontext.html">QInputContext</a> QApplication.inputContext (<i>self</i>)</h3>
+<p>返回<a href="qinputcontext.html" tppabs="http://pyqt4doc.appspot.com/qinputcontext.html">QInputContext</a>比如所使用的应用程序。</p>
+<p><b>See also</b> <a href="qapplication.html#setInputContext" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setInputContext">setInputContext</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isEffectEnabled"></a>bool QApplication.isEffectEnabled (<a href="qt.html#UIEffect-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#UIEffect-enum">Qt.UIEffect</a>)</h3>
+<p>返回True如果<i>effect</i>被启用，否则返回False 。</p>
+<p>默认情况下， Qt会尝试使用桌面设置。为了防止这种情况，请致电setDesktopSettingsAware （假） 。</p>
+<p><b>Note:</b>所有的效果都上不到16位色彩深度运行屏幕禁用。</p>
+<p><b>See also</b> <a href="qapplication.html#setEffectEnabled" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setEffectEnabled">setEffectEnabled</a>（）和<a href="qt.html#UIEffect-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#UIEffect-enum">Qt.UIEffect</a>。</p>
+
+
+<h3 class="fn">
+<a name="isLeftToRight"></a>bool QApplication.isLeftToRight ()</h3>
+<p>返回True如果应用程序的布局方向<a href="qt.html#LayoutDirection-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#LayoutDirection-enum">Qt.LeftToRight</a>否则返回False 。</p>
+<p><b>See also</b> <a href="qapplication.html#layoutDirection-prop" tppabs="http://pyqt4doc.appspot.com/qapplication.html#layoutDirection-prop">layoutDirection</a>（）和<a href="qapplication.html#isRightToLeft" tppabs="http://pyqt4doc.appspot.com/qapplication.html#isRightToLeft">isRightToLeft</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isRightToLeft"></a>bool QApplication.isRightToLeft ()</h3>
+<p>返回True如果应用程序的布局方向<a href="qt.html#LayoutDirection-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#LayoutDirection-enum">Qt.RightToLeft</a>否则返回False 。</p>
+<p><b>See also</b> <a href="qapplication.html#layoutDirection-prop" tppabs="http://pyqt4doc.appspot.com/qapplication.html#layoutDirection-prop">layoutDirection</a>（）和<a href="qapplication.html#isLeftToRight" tppabs="http://pyqt4doc.appspot.com/qapplication.html#isLeftToRight">isLeftToRight</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isSessionRestored"></a>bool QApplication.isSessionRestored (<i>self</i>)</h3>
+<p>返回True如果该应用程序已恢复从以前的<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/session.html">session</a>否则返回False 。</p>
+<p><b>See also</b> <a href="qapplication.html#sessionId" tppabs="http://pyqt4doc.appspot.com/qapplication.html#sessionId">sessionId</a>（ ）<a href="qapplication.html#commitData" tppabs="http://pyqt4doc.appspot.com/qapplication.html#commitData">commitData</a>（）和<a href="qapplication.html#saveState" tppabs="http://pyqt4doc.appspot.com/qapplication.html#saveState">saveState</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="keyboardInputDirection"></a><a href="qt.html#LayoutDirection-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#LayoutDirection-enum">Qt.LayoutDirection</a> QApplication.keyboardInputDirection ()</h3>
+<p>返回当前的键盘输入方向。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="keyboardInputInterval"></a>int QApplication.keyboardInputInterval ()</h3>
+<h3 class="fn">
+<a name="keyboardInputLocale"></a><a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a> QApplication.keyboardInputLocale ()</h3>
+<p>返回当前的键盘输入法区域设置。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="keyboardModifiers"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-keyboardmodifiers.html">Qt.KeyboardModifiers</a> QApplication.keyboardModifiers ()</h3>
+<p>返回键盘上的组合键的当前状态。目前的状态是合同步更新事件队列被清空，将自发地改变键盘状态的事件（<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.KeyPress</a>和<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.KeyRelease</a>事件）。</p>
+<p>应该指出，这可能无法反映所保持的输入设备上的实际按键的时候调用的，而是修饰符作为最后报告在上述事件之一。如果没有键被关押<a href="qt.html#KeyboardModifier-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#KeyboardModifier-enum">Qt.NoModifier</a>返回。</p>
+<p><b>See also</b> <a href="qapplication.html#mouseButtons" tppabs="http://pyqt4doc.appspot.com/qapplication.html#mouseButtons">mouseButtons</a>（）和<a href="qapplication.html#queryKeyboardModifiers" tppabs="http://pyqt4doc.appspot.com/qapplication.html#queryKeyboardModifiers">queryKeyboardModifiers</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="layoutDirection"></a><a href="qt.html#LayoutDirection-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#LayoutDirection-enum">Qt.LayoutDirection</a> QApplication.layoutDirection ()</h3>
+<h3 class="fn">
+<a name="mouseButtons"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-mousebuttons.html">Qt.MouseButtons</a> QApplication.mouseButtons ()</h3>
+<p>返回鼠标上的按钮的当前状态。目前的状态是syncronously更新事件队列被清空，将自发地改变鼠标状态的事件（<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.MouseButtonPress</a>和<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.MouseButtonRelease</a>事件）。</p>
+<p>应该指出，这可能不是反映在打电话，而是在鼠标按键作为最后报告在上述事件之一时举行的输入设备上的实际按钮。如果没有鼠标按钮被关押<a href="qt.html#MouseButton-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#MouseButton-enum">Qt.NoButton</a>返回。</p>
+<p><b>See also</b> <a href="qapplication.html#keyboardModifiers" tppabs="http://pyqt4doc.appspot.com/qapplication.html#keyboardModifiers">keyboardModifiers</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="notify"></a>bool QApplication.notify (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>)</h3>
+<p>从重新实现<a href="qcoreapplication.html#notify" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#notify">QCoreApplication.notify</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="overrideCursor"></a><a href="qcursor.html" tppabs="http://pyqt4doc.appspot.com/qcursor.html">QCursor</a> QApplication.overrideCursor ()</h3>
+<p>返回当前应用程序强制光标。</p>
+<p>此函数返回0，如果没有应用程序的光标已经定义（即内部光标栈为空） 。</p>
+<p><b>See also</b> <a href="qapplication.html#setOverrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setOverrideCursor">setOverrideCursor</a>（）和<a href="qapplication.html#restoreOverrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#restoreOverrideCursor">restoreOverrideCursor</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="palette"></a><a href="qpalette.html" tppabs="http://pyqt4doc.appspot.com/qpalette.html">QPalette</a> QApplication.palette ()</h3>
+<p>返回应用程序的调色板。</p>
+<p><b>See also</b> <a href="qapplication.html#setPalette" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setPalette">setPalette</a>（）和<a href="qwidget.html#palette-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#palette-prop">QWidget.palette</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="palette-2"></a><a href="qpalette.html" tppabs="http://pyqt4doc.appspot.com/qpalette.html">QPalette</a> QApplication.palette (<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>)</h3>
+<p>这是一个重载函数。</p>
+<p>如果<i>widget</i>通过，则返回默认调色板中的控件的类。这可能是也可能不是该应用程序的调色板。在大多数情况下，对某些类型的部件没有特别的调色板，但一个值得注意的例外是Windows下的弹出菜单，如果用户已经定义了一个特殊的背景颜色菜单中的显示设置。</p>
+<p><b>See also</b> <a href="qapplication.html#setPalette" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setPalette">setPalette</a>（）和<a href="qwidget.html#palette-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#palette-prop">QWidget.palette</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="palette-3"></a><a href="qpalette.html" tppabs="http://pyqt4doc.appspot.com/qpalette.html">QPalette</a> QApplication.palette (str <i>className</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回调色板的特定部件<i>className</i>。</p>
+<p><b>See also</b> <a href="qapplication.html#setPalette" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setPalette">setPalette</a>（）和<a href="qwidget.html#palette-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#palette-prop">QWidget.palette</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="queryKeyboardModifiers"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-keyboardmodifiers.html">Qt.KeyboardModifiers</a> QApplication.queryKeyboardModifiers ()</h3>
+<p>查询并返回键盘上的组合键的状态。不像keyboardModifiers ，此方法返回在调用该方法时所保持的输入设备上的实际按键。</p>
+<p>它不依赖于已收到由该过程中，这使得它可以检查改性剂而移动窗口，比如按键事件。请注意，在大多数情况下，你应该使用<a href="qapplication.html#keyboardModifiers" tppabs="http://pyqt4doc.appspot.com/qapplication.html#keyboardModifiers">keyboardModifiers</a>（），这是更快和更精确，因为它包含的改性剂的状态，因为它们是在接收到当前处理的事件时。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qapplication.html#keyboardModifiers" tppabs="http://pyqt4doc.appspot.com/qapplication.html#keyboardModifiers">keyboardModifiers</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="quitOnLastWindowClosed"></a>bool QApplication.quitOnLastWindowClosed ()</h3>
+<h3 class="fn">
+<a name="restoreOverrideCursor"></a>QApplication.restoreOverrideCursor ()</h3>
+<p>撤消上一个<a href="qapplication.html#setOverrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setOverrideCursor">setOverrideCursor</a>（ ） 。</p>
+<p>If <a href="qapplication.html#setOverrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setOverrideCursor">setOverrideCursor</a>（ ）被调用两次，调用的restoreOverrideCursor （ ）时将激活第一个光标集。调用此函数第二次恢复原来的小部件'游标。</p>
+<p><b>See also</b> <a href="qapplication.html#setOverrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setOverrideCursor">setOverrideCursor</a>（）和<a href="qapplication.html#overrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#overrideCursor">overrideCursor</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="saveState"></a>QApplication.saveState (<i>self</i>, <a href="qsessionmanager.html" tppabs="http://pyqt4doc.appspot.com/qsessionmanager.html">QSessionManager</a> <i>sm</i>)</h3>
+<p>这个函数处理<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/session.html">session
+management</a>。它被调用时，<a href="qsessionmanager.html" tppabs="http://pyqt4doc.appspot.com/qsessionmanager.html">session manager</a>想让应用程序保存其状态为今后的会议。</p>
+<p>例如，文本编辑器会创建一个临时文件，其中包括它的编辑缓冲区，在当前编辑会话的游标等方面的位置的当前内容。</p>
+<p>你不应该退出这个函数中的应用。相反，会话管理器可以或可以不这样做之后，这取决于上下文。 Futhermore ，大多数会话管理器很可能会立即要求保存状态的应用程序已经开始之后。这允许会话管理器来了解应用程序的重新启动策略。</p>
+<p><b>Warning:</b>在这个函数中，没有用户交互是可能的，<i>unless</i>你问<i>manager</i>为明确许可。看<a href="qsessionmanager.html#allowsInteraction" tppabs="http://pyqt4doc.appspot.com/qsessionmanager.html#allowsInteraction">QSessionManager.allowsInteraction</a>（）和<a href="qsessionmanager.html#allowsErrorInteraction" tppabs="http://pyqt4doc.appspot.com/qsessionmanager.html#allowsErrorInteraction">QSessionManager.allowsErrorInteraction</a>（ ）了解详情。</p>
+<p><b>See also</b> <a href="qapplication.html#isSessionRestored" tppabs="http://pyqt4doc.appspot.com/qapplication.html#isSessionRestored">isSessionRestored</a>（ ）<a href="qapplication.html#sessionId" tppabs="http://pyqt4doc.appspot.com/qapplication.html#sessionId">sessionId</a>（ ）<a href="qapplication.html#commitData" tppabs="http://pyqt4doc.appspot.com/qapplication.html#commitData">commitData</a>（）和<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/session.html">Session Management</a>。</p>
+
+
+<h3 class="fn">
+<a name="sessionId"></a>QString QApplication.sessionId (<i>self</i>)</h3>
+<p>返回当前<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/session.html">session's</a>标识符。</p>
+<p>如果应用程序已恢复从以前的会话，这个标识符是因为它是在先前的对话一样。会话标识符保证是唯一既为不同的应用程序和同一应用程序的不同实例。</p>
+<p><b>See also</b> <a href="qapplication.html#isSessionRestored" tppabs="http://pyqt4doc.appspot.com/qapplication.html#isSessionRestored">isSessionRestored</a>（ ）<a href="qapplication.html#sessionKey" tppabs="http://pyqt4doc.appspot.com/qapplication.html#sessionKey">sessionKey</a>（ ）<a href="qapplication.html#commitData" tppabs="http://pyqt4doc.appspot.com/qapplication.html#commitData">commitData</a>（）和<a href="qapplication.html#saveState" tppabs="http://pyqt4doc.appspot.com/qapplication.html#saveState">saveState</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sessionKey"></a>QString QApplication.sessionKey (<i>self</i>)</h3>
+<p>返回在当前会话密钥<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/session.html">session</a>。</p>
+<p>如果应用程序已恢复从以前的会话，这个键是一样的，当前一交易日结束它。</p>
+<p>随着每次调用会话密钥的变化<a href="qapplication.html#commitData" tppabs="http://pyqt4doc.appspot.com/qapplication.html#commitData">commitData</a>（）或<a href="qapplication.html#saveState" tppabs="http://pyqt4doc.appspot.com/qapplication.html#saveState">saveState</a>（ ） 。</p>
+<p><b>See also</b> <a href="qapplication.html#isSessionRestored" tppabs="http://pyqt4doc.appspot.com/qapplication.html#isSessionRestored">isSessionRestored</a>（ ）<a href="qapplication.html#sessionId" tppabs="http://pyqt4doc.appspot.com/qapplication.html#sessionId">sessionId</a>（ ）<a href="qapplication.html#commitData" tppabs="http://pyqt4doc.appspot.com/qapplication.html#commitData">commitData</a>（）和<a href="qapplication.html#saveState" tppabs="http://pyqt4doc.appspot.com/qapplication.html#saveState">saveState</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setActiveWindow"></a>QApplication.setActiveWindow (<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>act</i>)</h3>
+<p>设置活动窗口到<i>active</i>小工具响应于系统事件。该功能是从特定于平台的事件处理程序调用。</p>
+<p><b>Warning:</b>这个函数<i>not</i>设置键盘焦点到活动部件。通话<a href="qwidget.html#activateWindow" tppabs="http://pyqt4doc.appspot.com/qwidget.html#activateWindow">QWidget.activateWindow</a>（ ）来代替。</p>
+<p>它集<a href="qapplication.html#activeWindow" tppabs="http://pyqt4doc.appspot.com/qapplication.html#activeWindow">activeWindow</a>（）和<a href="qapplication.html#focusWidget" tppabs="http://pyqt4doc.appspot.com/qapplication.html#focusWidget">focusWidget</a>（ ）属性，并发送适当的<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">WindowActivate</a>/<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">WindowDeactivate</a>和<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">FocusIn</a>/<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">FocusOut</a>活动以所有适当的部件。该窗口就会处于活跃状态涂漆（如光标在编辑行会闪烁） ，于是也有工具提示启用。</p>
+<p><b>See also</b> <a href="qapplication.html#activeWindow" tppabs="http://pyqt4doc.appspot.com/qapplication.html#activeWindow">activeWindow</a>（）和<a href="qwidget.html#activateWindow" tppabs="http://pyqt4doc.appspot.com/qwidget.html#activateWindow">QWidget.activateWindow</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setAutoSipEnabled"></a>QApplication.setAutoSipEnabled (<i>self</i>, bool <i>enabled</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setAutoSipEnabled(const bool)</tt>。</p>
+<h3 class="fn">
+<a name="setColorSpec"></a>QApplication.setColorSpec (int)</h3>
+<p>设置颜色规格为应用程序<i>spec</i>。</p>
+<p>颜色规格控制应用程序在有限的颜色数量的显示器上运行时，如何分配颜色，例如8位/ 256色显示。</p>
+<p>您之前创建的颜色规范必须设置<a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a>对象。</p>
+<p>选项有：</p>
+<ul>
+<li>
+<a href="qapplication.html#ColorSpec-enum" tppabs="http://pyqt4doc.appspot.com/qapplication.html#ColorSpec-enum">QApplication.NormalColor</a>.
+This is the default color allocation strategy. Use this option if
+your application uses buttons, menus, texts and pixmaps with few
+colors. With this option, the application uses system global
+colors. This works fine for most applications under X11, but on the
+Windows platform, it may cause dithering of non-standard
+colors.</li>
+<li>
+<a href="qapplication.html#ColorSpec-enum" tppabs="http://pyqt4doc.appspot.com/qapplication.html#ColorSpec-enum">QApplication.CustomColor</a>.
+Use this option if your application needs a small number of custom
+colors. On X11, this option is the same as <a href="qapplication.html#ColorSpec-enum" tppabs="http://pyqt4doc.appspot.com/qapplication.html#ColorSpec-enum">NormalColor</a>. On Windows, Qt
+creates a Windows palette, and allocates colors to it on
+demand.</li>
+<li>
+<a href="qapplication.html#ColorSpec-enum" tppabs="http://pyqt4doc.appspot.com/qapplication.html#ColorSpec-enum">QApplication.ManyColor</a>. Use
+this option if your application is very color hungry, e.g., it
+requires thousands of colors.<br>
+Under X11 the effect is:
+<ul>
+<li>For 256-color displays which have at best a 256 color true
+color visual, the default visual is used, and colors are allocated
+from a color cube. The color cube is the 6x6x6 (216 color) "Web
+palette" (the red, green, and blue components always have one of
+the following values: 0x00, 0x33, 0x66, 0x99, 0xCC, or 0xFF), but
+the number of colors can be changed by the <i>-ncols</i> option.
+The user can force the application to use the true color visual
+with the <a href="qapplication.html#QApplication" tppabs="http://pyqt4doc.appspot.com/qapplication.html#QApplication">-visual</a>
+option.</li>
+<li>For 256-color displays which have a true color visual with more
+than 256 colors, use that visual. Silicon Graphics X servers this
+feature, for example. They provide an 8 bit visual by default but
+can deliver true color when asked.</li>
+</ul>
+<p>在Windows下，Qt创建一个Windows调色板，并配以彩色立方体填充它。</p>
+</li>
+</ul>
+<p>请注意，<a href="qapplication.html#ColorSpec-enum" tppabs="http://pyqt4doc.appspot.com/qapplication.html#ColorSpec-enum">CustomColor</a>和<a href="qapplication.html#ColorSpec-enum" tppabs="http://pyqt4doc.appspot.com/qapplication.html#ColorSpec-enum">ManyColor</a>选择可能导致颜色映射闪烁：前台应用程序获取（大多数）的可用的颜色，而背景窗口会显得那么有吸引力。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type">int</span> main(<span class="type">int</span> argc<span class="operator">,</span> <span class="type">char</span> <span class="operator">*</span>argv<span class="operator">[</span><span class="operator">]</span>)
+ {
+     <span class="type"><a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a></span><span class="operator">.</span>setColorSpec(<span class="type"><a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a></span><span class="operator">.</span>ManyColor);
+     <span class="type"><a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a></span> app(argc<span class="operator">,</span> argv);
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+     <span class="keyword">return</span> app<span class="operator">.</span>exec();
+ }
+</pre>
+<p><b>See also</b> <a href="qapplication.html#colorSpec" tppabs="http://pyqt4doc.appspot.com/qapplication.html#colorSpec">colorSpec</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCursorFlashTime"></a>QApplication.setCursorFlashTime (int)</h3>
+<h3 class="fn">
+<a name="setDesktopSettingsAware"></a>QApplication.setDesktopSettingsAware (bool)</h3>
+<p>Qt的设置是否应使用系统的标准颜色，字体等，<i>on</i>。默认情况下，这是事实。</p>
+<p>这个函数必须在创建之前调用的<a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a>对象，像这样：</p>
+<pre class="cpp">
+ <span class="type">int</span> main(<span class="type">int</span> argc<span class="operator">,</span> <span class="type">char</span> <span class="operator">*</span>argv<span class="operator">[</span><span class="operator">]</span>)
+ {
+     <span class="type"><a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a></span><span class="operator">.</span>setDesktopSettingsAware(<span class="keyword">false</span>);
+     <span class="type"><a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a></span> app(argc<span class="operator">,</span> argv);
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+     <span class="keyword">return</span> app<span class="operator">.</span>exec();
+ }
+</pre>
+<p><b>See also</b> <a href="qapplication.html#desktopSettingsAware" tppabs="http://pyqt4doc.appspot.com/qapplication.html#desktopSettingsAware">desktopSettingsAware</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setDoubleClickInterval"></a>QApplication.setDoubleClickInterval (int)</h3>
+<h3 class="fn">
+<a name="setEffectEnabled"></a>QApplication.setEffectEnabled (<a href="qt.html#UIEffect-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#UIEffect-enum">Qt.UIEffect</a> <i>effect</i>, bool <i>enabled</i> = True)</h3>
+<p>使用户界面效果<i>effect</i>如果<i>enable</i>为真，否则效果将不被使用。</p>
+<p><b>Note:</b>所有的效果都上不到16位色彩深度运行屏幕禁用。</p>
+<p><b>See also</b> <a href="qapplication.html#isEffectEnabled" tppabs="http://pyqt4doc.appspot.com/qapplication.html#isEffectEnabled">isEffectEnabled</a>（ ）<a href="qt.html#UIEffect-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#UIEffect-enum">Qt.UIEffect</a>和<a href="qapplication.html#setDesktopSettingsAware" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setDesktopSettingsAware">setDesktopSettingsAware</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFont"></a>QApplication.setFont (<a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a> <i>font</i>, str <i>className</i> = None)</h3>
+<p>更改默认应用程序字体<i>font</i>。如果<i>className</i>通过后，改变只适用于继承类<i>className</i>（所报告的<a href="qobject.html#inherits" tppabs="http://pyqt4doc.appspot.com/qobject.html#inherits">QObject.inherits</a>（））。</p>
+<p>在应用程序启动时，默认字体依赖于窗口系统。它可以根据这两个窗口系统版本和语言环境而有所不同。此功能可让您复盖默认的字体，但压倒一切的可能是一个坏主意，因为，例如，某些区域设置需要额外的大字体，以支持他们的特殊字符。</p>
+<p><b>Warning:</b>请勿在结合使用此功能<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/stylesheet.html">Qt Style Sheets</a>。一个应用程序的字体可以使用“字体”样式表属性来定制。要设置粗体所有QPushButtons ，设置应用程序<a href="qapplication.html#styleSheet-prop" tppabs="http://pyqt4doc.appspot.com/qapplication.html#styleSheet-prop">styleSheet</a>（）作为“<a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a>【字体：黑体} “</p>
+<p><b>See also</b> <a href="qapplication.html#font" tppabs="http://pyqt4doc.appspot.com/qapplication.html#font">font</a>（ ）<a href="qapplication.html#fontMetrics" tppabs="http://pyqt4doc.appspot.com/qapplication.html#fontMetrics">fontMetrics</a>（）和<a href="qwidget.html#font-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#font-prop">QWidget.setFont</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setGlobalStrut"></a>QApplication.setGlobalStrut (<a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a>)</h3>
+<h3 class="fn">
+<a name="setGraphicsSystem"></a>QApplication.setGraphicsSystem (QString)</h3>
+<p>设置默认的图形后端<i>system</i>，这将用于在屏幕上的小部件和QPixmaps 。可用的系统<tt>"native"</tt>，<tt>"raster"</tt>和<tt>"opengl"</tt>。</p>
+<p>有几种方法来设置图形后端，以优先级递减的：</p>
+<ul>
+<li>the application commandline <tt>-graphicssystem</tt>
+switch</li>
+<li>QApplication.setGraphicsSystem()</li>
+<li>the QT_GRAPHICSSYSTEM environment variable</li>
+<li>the Qt configure <tt>-graphicssystem</tt> switch</li>
+</ul>
+<p>如果优先级最高的交换机设置了一个无效的名称，该错误将被忽略，默认后端将被使用。</p>
+<p><b>Warning:</b>此功能之前，唯一有效的<a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a>构造函数被调用。</p>
+<p><b>Note:</b>该<tt>"opengl"</tt>选项当前实验。</p>
+<p>此功能被引入Qt的4.5 。</p>
+
+
+<h3 class="fn">
+<a name="setInputContext"></a>QApplication.setInputContext (<i>self</i>, <a href="qinputcontext.html" tppabs="http://pyqt4doc.appspot.com/qinputcontext.html">QInputContext</a>)</h3>
+<p>该<i>QInputContext</i>说法有它的所有权转移给Qt的。</p>
+<p>此函数替换了<a href="qinputcontext.html" tppabs="http://pyqt4doc.appspot.com/qinputcontext.html">QInputContext</a>例如使用与该应用程序<i>inputContext</i>。</p>
+<p>Qt可以给定所有权<i>inputContext</i>。</p>
+<p><b>See also</b> <a href="qapplication.html#inputContext" tppabs="http://pyqt4doc.appspot.com/qapplication.html#inputContext">inputContext</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setKeyboardInputInterval"></a>QApplication.setKeyboardInputInterval (int)</h3>
+<h3 class="fn">
+<a name="setLayoutDirection"></a>QApplication.setLayoutDirection (<a href="qt.html#LayoutDirection-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#LayoutDirection-enum">Qt.LayoutDirection</a> <i>direction</i>)</h3>
+<h3 class="fn">
+<a name="setOverrideCursor"></a>QApplication.setOverrideCursor (<a href="qcursor.html" tppabs="http://pyqt4doc.appspot.com/qcursor.html">QCursor</a>)</h3>
+<p>设置应用程序复盖光标<i>cursor</i>。</p>
+<p>应用程序强制光标是为了显示该应用程序是在一个特殊的状态，例如，可能需要一段时间的操作过程中的用户。</p>
+<p>这将光标直到显示在应用程序的所有窗口部件<a href="qapplication.html#restoreOverrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#restoreOverrideCursor">restoreOverrideCursor</a>（）或另一个一个setOverrideCursor （）被调用。</p>
+<p>应用程序光标被存储在一个内部堆栈。一个setOverrideCursor （ ）推光标入堆栈，并<a href="qapplication.html#restoreOverrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#restoreOverrideCursor">restoreOverrideCursor</a>（ ）弹出活动光标堆栈。<a href="qapplication.html#changeOverrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#changeOverrideCursor">changeOverrideCursor</a>（ ）改变了活跃的会员...应用复盖光标。</p>
+<p>每一个setOverrideCursor （ ）最终必须后跟一个相应的<a href="qapplication.html#restoreOverrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#restoreOverrideCursor">restoreOverrideCursor</a>（ ），否则栈将永远不会被清空。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a></span><span class="operator">.</span>setOverrideCursor(<span class="type"><a href="qcursor.html" tppabs="http://pyqt4doc.appspot.com/qcursor.html">QCursor</a></span>(<span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>WaitCursor));
+ calculateHugeMandelbrot();              <span class="comment">// lunch time...</span>
+ <span class="type"><a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a></span><span class="operator">.</span><a href="qapplication.html#restoreOverrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#restoreOverrideCursor">restoreOverrideCursor</a>();
+</pre>
+<p><b>See also</b> <a href="qapplication.html#overrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#overrideCursor">overrideCursor</a>（ ）<a href="qapplication.html#restoreOverrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#restoreOverrideCursor">restoreOverrideCursor</a>（ ）<a href="qapplication.html#changeOverrideCursor" tppabs="http://pyqt4doc.appspot.com/qapplication.html#changeOverrideCursor">changeOverrideCursor</a>（）和<a href="qwidget.html#cursor-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#cursor-prop">QWidget.setCursor</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPalette"></a>QApplication.setPalette (<a href="qpalette.html" tppabs="http://pyqt4doc.appspot.com/qpalette.html">QPalette</a> <i>palette</i>, str <i>className</i> = None)</h3>
+<p>更改默认的应用程序调色板<i>palette</i>。</p>
+<p>If <i>className</i>通过后，改变只适用于继承部件<i>className</i>（所报告的<a href="qobject.html#inherits" tppabs="http://pyqt4doc.appspot.com/qobject.html#inherits">QObject.inherits</a>（））。如果<i>className</i>剩下0 ，则更改会影响所有部件，从而复盖任何先前设置的类特定的调色板。</p>
+<p>调色板可以根据当前的GUI样式中被改变<a href="qstyle.html#polish" tppabs="http://pyqt4doc.appspot.com/qstyle.html#polish">QStyle.polish</a>（ ） 。</p>
+<p><b>Warning:</b>请勿在结合使用此功能<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/stylesheet.html">Qt Style Sheets</a>。当使用样式表，一个小部件的调色板可以使用“颜色” ， “背景色” ， “选择颜色” ， “选择 - 背景色”和“复用背景色”进行自定义。</p>
+<p><b>Note:</b>有些样式不使用调色板的所有图纸，举例来说，如果他们利用原生主题引擎。这是Windows XP ， Windows Vista和Mac OS X的风格的情况下。</p>
+<p><b>See also</b> <a href="qwidget.html#palette-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#palette-prop">QWidget.setPalette</a>（ ）<a href="qapplication.html#palette" tppabs="http://pyqt4doc.appspot.com/qapplication.html#palette">palette</a>（）和<a href="qstyle.html#polish" tppabs="http://pyqt4doc.appspot.com/qstyle.html#polish">QStyle.polish</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setQuitOnLastWindowClosed"></a>QApplication.setQuitOnLastWindowClosed (bool <i>quit</i>)</h3>
+<h3 class="fn">
+<a name="setStartDragDistance"></a>QApplication.setStartDragDistance (int <i>l</i>)</h3>
+<h3 class="fn">
+<a name="setStartDragTime"></a>QApplication.setStartDragTime (int <i>ms</i>)</h3>
+<h3 class="fn">
+<a name="setStyle"></a>QApplication.setStyle (<a href="qstyle.html" tppabs="http://pyqt4doc.appspot.com/qstyle.html">QStyle</a>)</h3>
+<p>该<i>QStyle</i>说法有它的所有权转移给Qt的。</p>
+<p>设置应用程序的图形用户界面风格<i>style</i>。样式对象的所有权被转移到<a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a>，所以<a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a>将删除应用程序退出或者当一个新样式设置和旧风格仍然是应用程序对象的父项的样式对象。</p>
+<p>用法示例：</p>
+<pre class="cpp">
+ <span class="type"><a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a></span><span class="operator">.</span>setStyle(<span class="keyword">new</span> <span class="type"><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qwindowsstyle.html">QWindowsStyle</a></span>);
+</pre>
+<p>当切换应用的样式，颜色调色板设置恢复到初始的颜色或系统默认值。这是必要的，因为某些样式必须适应调色板是完全风格指南标准。</p>
+<p>调色板之前，设置样式已定，即之前创建<a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a>，会导致应用程序使用<a href="qstyle.html#standardPalette" tppabs="http://pyqt4doc.appspot.com/qstyle.html#standardPalette">QStyle.standardPalette</a>（ ）的调色板。</p>
+<p><b>Warning:</b>目前不支持Qt的样式表定制<a href="qstyle.html" tppabs="http://pyqt4doc.appspot.com/qstyle.html">QStyle</a>子类。我们计划在未来的版本解决这个问题。</p>
+<p><b>See also</b> <a href="qapplication.html#style" tppabs="http://pyqt4doc.appspot.com/qapplication.html#style">style</a>（ ）<a href="qstyle.html" tppabs="http://pyqt4doc.appspot.com/qstyle.html">QStyle</a>，<a href="qapplication.html#setPalette" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setPalette">setPalette</a>（）和<a href="qapplication.html#desktopSettingsAware" tppabs="http://pyqt4doc.appspot.com/qapplication.html#desktopSettingsAware">desktopSettingsAware</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setStyle-2"></a><a href="qstyle.html" tppabs="http://pyqt4doc.appspot.com/qstyle.html">QStyle</a> QApplication.setStyle (QString)</h3>
+<p>这是一个重载函数。</p>
+<p>请求<a href="qstyle.html" tppabs="http://pyqt4doc.appspot.com/qstyle.html">QStyle</a>对于对象<i>style</i>从<a href="qstylefactory.html" tppabs="http://pyqt4doc.appspot.com/qstylefactory.html">QStyleFactory</a>。</p>
+<p>该字符串必须是一个<a href="qstylefactory.html#keys" tppabs="http://pyqt4doc.appspot.com/qstylefactory.html#keys">QStyleFactory.keys</a>（） ，典型的“窗口”， 1 ， “基序”，“ CDE ”，“ PLASTIQUE ”，“ WindowsXP的”或“苹果” 。样式名不区分大小写。</p>
+<p>返回0，如果一个未知<i>style</i>通过，否则<a href="qstyle.html" tppabs="http://pyqt4doc.appspot.com/qstyle.html">QStyle</a>返回的对象被设置为应用程序的图形用户界面风格。</p>
+<p><b>Warning:</b>为了确保应用程序的风格设置是否正确，最好是前调用这个函数<a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a>构造函数，如果可能的话。</p>
+
+
+<h3 class="fn">
+<a name="setStyleSheet"></a>QApplication.setStyleSheet (<i>self</i>, QString <i>sheet</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setStyleSheet(const QString&amp;)</tt>。</p>
+<h3 class="fn">
+<a name="setWheelScrollLines"></a>QApplication.setWheelScrollLines (int)</h3>
+<h3 class="fn">
+<a name="setWindowIcon"></a>QApplication.setWindowIcon (<a href="qicon.html" tppabs="http://pyqt4doc.appspot.com/qicon.html">QIcon</a> <i>icon</i>)</h3>
+<h3 class="fn">
+<a name="startDragDistance"></a>int QApplication.startDragDistance ()</h3>
+<h3 class="fn">
+<a name="startDragTime"></a>int QApplication.startDragTime ()</h3>
+<h3 class="fn">
+<a name="style"></a><a href="qstyle.html" tppabs="http://pyqt4doc.appspot.com/qstyle.html">QStyle</a> QApplication.style ()</h3>
+<p>返回应用程序的样式对象。</p>
+<p><b>See also</b> <a href="qapplication.html#setStyle" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setStyle">setStyle</a>() and <a href="qstyle.html" tppabs="http://pyqt4doc.appspot.com/qstyle.html">QStyle</a>.</p>
+
+
+<h3 class="fn">
+<a name="styleSheet"></a>QString QApplication.styleSheet (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="syncX"></a>QApplication.syncX ()</h3>
+<p>与同步在X11实现X服务器。这通常需要一些时间。什么都不做在其他平台上。</p>
+
+
+<h3 class="fn">
+<a name="topLevelAt"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QApplication.topLevelAt (<a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>p</i>)</h3>
+<p>返回顶层窗口部件在给定的<i>point</i>;返回0，如果没有这样的小部件。</p>
+
+
+<h3 class="fn">
+<a name="topLevelAt-2"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QApplication.topLevelAt (int <i>x</i>, int <i>y</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回顶层窗口部件在点（<i>x</i>，<i>y</i>） ;返回0 ，如果不存在这样的窗口小部件。</p>
+
+
+<h3 class="fn">
+<a name="topLevelWidgets"></a>list-of-QWidget QApplication.topLevelWidgets ()</h3>
+<p>返回顶层窗口小部件（窗口）中的应用程序的列表。</p>
+<p><b>Note:</b>一些顶级小部件可能会被隐藏，例如工具提示，如果没有提示当前显示。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type">void</span> showAllHiddenTopLevelWidgets()
+ {
+     foreach (<span class="type"><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a></span> <span class="operator">*</span>widget<span class="operator">,</span> <span class="type"><a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a></span><span class="operator">.</span>topLevelWidgets()) {
+         <span class="keyword">if</span> (widget<span class="operator">-</span><span class="operator">&gt;</span>isHidden())
+             widget<span class="operator">-</span><span class="operator">&gt;</span>show();
+     }
+ }
+</pre>
+<p><b>See also</b> <a href="qapplication.html#allWidgets" tppabs="http://pyqt4doc.appspot.com/qapplication.html#allWidgets">allWidgets</a>（ ）<a href="qwidget.html#isWindow" tppabs="http://pyqt4doc.appspot.com/qwidget.html#isWindow">QWidget.isWindow</a>（）和<a href="qwidget.html#isHidden" tppabs="http://pyqt4doc.appspot.com/qwidget.html#isHidden">QWidget.isHidden</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="type"></a><a href="qapplication.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qapplication.html#Type-enum">Type</a> QApplication.type ()</h3>
+<p>返回应用程序的类型（<a href="qapplication.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qapplication.html#Type-enum">Tty</a>，<a href="qapplication.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qapplication.html#Type-enum">GuiClient</a>或<a href="qapplication.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qapplication.html#Type-enum">GuiServer</a>） 。该类型是施工时设置<a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a>对象。</p>
+
+
+<h3 class="fn">
+<a name="wheelScrollLines"></a>int QApplication.wheelScrollLines ()</h3>
+<h3 class="fn">
+<a name="widgetAt"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QApplication.widgetAt (<a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>p</i>)</h3>
+<p>返回小部件在全局屏幕位置<i>point</i>或0，如果没有Qt插件那里。</p>
+<p>此功能可能会很慢。</p>
+<p><b>See also</b> <a href="qcursor.html#pos" tppabs="http://pyqt4doc.appspot.com/qcursor.html#pos">QCursor.pos</a>（ ）<a href="qwidget.html#grabMouse" tppabs="http://pyqt4doc.appspot.com/qwidget.html#grabMouse">QWidget.grabMouse</a>（）和<a href="qwidget.html#grabKeyboard" tppabs="http://pyqt4doc.appspot.com/qwidget.html#grabKeyboard">QWidget.grabKeyboard</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="widgetAt-2"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QApplication.widgetAt (int <i>x</i>, int <i>y</i>)</h3>
+<h3 class="fn">
+<a name="windowIcon"></a><a href="qicon.html" tppabs="http://pyqt4doc.appspot.com/qicon.html">QIcon</a> QApplication.windowIcon ()</h3>
+<h3 class="fn">
+<a name="x11EventFilter"></a>bool QApplication.x11EventFilter (<i>self</i>, sip.voidptr)</h3>
+<p><b>Warning:</b>这个虚函数仅X11下实现的。</p>
+<p>如果你创建一个继承的应用程序<a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a>并且重新实现这个功能，你可以直接访问该从X服务器接收到的所有X事件。该事件传递的<i>event</i>参数。</p>
+<p>如果你想从被处理停止事件，则返回True 。返回False对于普通事件分派。默认实现返回False 。</p>
+<p>这是唯一的解决直接被过滤的邮件。您必须直接在事件调度程序，这是由返回安装一个事件过滤器<a href="qabstracteventdispatcher.html#instance" tppabs="http://pyqt4doc.appspot.com/qabstracteventdispatcher.html#instance">QAbstractEventDispatcher.instance</a>（ ） ，以处理全系统的消息。</p>
+<p><b>See also</b> <a href="qapplication.html#x11ProcessEvent" tppabs="http://pyqt4doc.appspot.com/qapplication.html#x11ProcessEvent">x11ProcessEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="x11ProcessEvent"></a>int QApplication.x11ProcessEvent (<i>self</i>, sip.voidptr)</h3>
+<p>这个函数做个体X的核心处理<i>event</i>秒，通常由调度Qt的事件到正确的目的地。</p>
+<p>它返回1，如果该事件被消耗了特殊处理， 0如果<i>event</i>由正常的处理消耗， -1，如果<i>event</i>是一个无法识别的部件。</p>
+<p><b>See also</b> <a href="qapplication.html#x11EventFilter" tppabs="http://pyqt4doc.appspot.com/qapplication.html#x11EventFilter">x11EventFilter</a>（ ） 。</p>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="commitDataRequest"></a>void commitDataRequest (QSessionManager&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>该信号处理<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/session.html">session
+management</a>。它被发射时的<a href="qsessionmanager.html" tppabs="http://pyqt4doc.appspot.com/qsessionmanager.html">QSessionManager</a>想让应用程序提交的所有数据。</p>
+<p>通常，这意味着保存所有打开的文件，从用户得到允许后。此外，您可能需要提供由用户可以取消关机的手段。</p>
+<p>你不应该离开这个信号中的应用。相反，会话管理器可以或可以不这样做之后，这取决于上下文。</p>
+<p><b>Warning:</b>在这个信号，无用户交互是可能的，<i>unless</i>你问<i>manager</i>为明确许可。看<a href="qsessionmanager.html#allowsInteraction" tppabs="http://pyqt4doc.appspot.com/qsessionmanager.html#allowsInteraction">QSessionManager.allowsInteraction</a>（）和<a href="qsessionmanager.html#allowsErrorInteraction" tppabs="http://pyqt4doc.appspot.com/qsessionmanager.html#allowsErrorInteraction">QSessionManager.allowsErrorInteraction</a>（ ）了解详情和用法示例。</p>
+<p><b>Note:</b>您应该使用<a href="qt.html#ConnectionType-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ConnectionType-enum">Qt.DirectConnection</a>连接到这个信号时。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qapplication.html#isSessionRestored" tppabs="http://pyqt4doc.appspot.com/qapplication.html#isSessionRestored">isSessionRestored</a>（ ）<a href="qapplication.html#sessionId" tppabs="http://pyqt4doc.appspot.com/qapplication.html#sessionId">sessionId</a>（ ）<a href="qapplication.html#saveState" tppabs="http://pyqt4doc.appspot.com/qapplication.html#saveState">saveState</a>（）和<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/session.html">Session Management</a>。</p>
+
+
+<h3 class="fn">
+<a name="focusChanged"></a>void focusChanged (QWidget *,QWidget *)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时具有键盘焦点的窗口小部件的改变<i>old</i>至<i>now</i>，即，因为用户按下Tab键，点击进入小部件或改变活动窗口。两<i>old</i>和<i>now</i>可以是空指针。</p>
+<p>该信号发出后两个部件都经过已经被告知了变化<a href="qfocusevent.html" tppabs="http://pyqt4doc.appspot.com/qfocusevent.html">QFocusEvent</a>。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qwidget.html#setFocus" tppabs="http://pyqt4doc.appspot.com/qwidget.html#setFocus">QWidget.setFocus</a>（ ）<a href="qwidget.html#clearFocus" tppabs="http://pyqt4doc.appspot.com/qwidget.html#clearFocus">QWidget.clearFocus</a>（）和<a href="qt.html#FocusReason-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#FocusReason-enum">Qt.FocusReason</a>。</p>
+
+
+<h3 class="fn">
+<a name="fontDatabaseChanged"></a>void fontDatabaseChanged ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号时应用的字体被加载或移除射出。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qfontdatabase.html#addApplicationFont" tppabs="http://pyqt4doc.appspot.com/qfontdatabase.html#addApplicationFont">QFontDatabase.addApplicationFont</a>（ ）<a href="qfontdatabase.html#addApplicationFontFromData" tppabs="http://pyqt4doc.appspot.com/qfontdatabase.html#addApplicationFontFromData">QFontDatabase.addApplicationFontFromData</a>（ ）<a href="qfontdatabase.html#removeAllApplicationFonts" tppabs="http://pyqt4doc.appspot.com/qfontdatabase.html#removeAllApplicationFonts">QFontDatabase.removeAllApplicationFonts</a>（）和<a href="qfontdatabase.html#removeApplicationFont" tppabs="http://pyqt4doc.appspot.com/qfontdatabase.html#removeApplicationFont">QFontDatabase.removeApplicationFont</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="lastWindowClosed"></a>void lastWindowClosed ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号从发射<a href="qapplication.html#exec" tppabs="http://pyqt4doc.appspot.com/qapplication.html#exec">QApplication.exec</a>（ ）当最后一个可见的主窗口（即窗口没有父）与<a href="qt.html#WidgetAttribute-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#WidgetAttribute-enum">Qt.WA_QuitOnClose</a>属性设置是关闭的。</p>
+<p>默认情况下，</p>
+<ul>
+<li>this attribute is set for all widgets except transient windows
+such as splash screens, tool windows, and popup menus</li>
+<li>
+<a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a> implicitly quits
+when this signal is emitted.</li>
+</ul>
+<p>此功能可以通过设置关闭<a href="qapplication.html#quitOnLastWindowClosed-prop" tppabs="http://pyqt4doc.appspot.com/qapplication.html#quitOnLastWindowClosed-prop">quitOnLastWindowClosed</a>为False。</p>
+<p><b>See also</b> <a href="qwidget.html#close" tppabs="http://pyqt4doc.appspot.com/qwidget.html#close">QWidget.close</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="saveStateRequest"></a>void saveStateRequest (QSessionManager&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>该信号处理<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/session.html">session
+management</a>。它被调用时，<a href="qsessionmanager.html" tppabs="http://pyqt4doc.appspot.com/qsessionmanager.html">session manager</a>想让应用程序保存其状态为今后的会议。</p>
+<p>例如，文本编辑器会创建一个临时文件，其中包括它的编辑缓冲区，在当前编辑会话的游标等方面的位置的当前内容。</p>
+<p>你不应该离开这个信号中的应用。相反，会话管理器可以或可以不这样做之后，这取决于上下文。 Futhermore ，大多数会话管理器很可能会立即要求保存状态的应用程序已经开始之后。这允许会话管理器来了解应用程序的重新启动策略。</p>
+<p><b>Warning:</b>在这个函数中，没有用户交互是可能的，<i>unless</i>你问<i>manager</i>为明确许可。看<a href="qsessionmanager.html#allowsInteraction" tppabs="http://pyqt4doc.appspot.com/qsessionmanager.html#allowsInteraction">QSessionManager.allowsInteraction</a>（）和<a href="qsessionmanager.html#allowsErrorInteraction" tppabs="http://pyqt4doc.appspot.com/qsessionmanager.html#allowsErrorInteraction">QSessionManager.allowsErrorInteraction</a>（ ）了解详情。</p>
+<p><b>Note:</b>您应该使用<a href="qt.html#ConnectionType-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ConnectionType-enum">Qt.DirectConnection</a>连接到这个信号时。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qapplication.html#isSessionRestored" tppabs="http://pyqt4doc.appspot.com/qapplication.html#isSessionRestored">isSessionRestored</a>（ ）<a href="qapplication.html#sessionId" tppabs="http://pyqt4doc.appspot.com/qapplication.html#sessionId">sessionId</a>（ ）<a href="qapplication.html#commitData" tppabs="http://pyqt4doc.appspot.com/qapplication.html#commitData">commitData</a>（）和<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/session.html">Session Management</a>。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

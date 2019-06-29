@@ -1,0 +1,447 @@
+﻿<html>
+<head>
+<title>QGLContext Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QGLContext Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtopengl.html">QtOpenGL</a> module]</sup></sup>
+</h1>
+<p>该QGLContext类封装了一个OpenGL渲染上下文。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qglcontext.html#BindOption-enum" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#BindOption-enum">BindOption</a></b> { NoBindOption, InvertedYBindOption, MipmapBindOption, PremultipliedAlphaBindOption, LinearFilteringBindOption, DefaultBindOption }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qglcontext-bindoptions.html">BindOptions</a></b>
+</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qglcontext.html#QGLContext" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#QGLContext">__init__</a></b> (<i>self</i>, QGLFormat <i>format</i>, QPaintDevice <i>device</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qglcontext.html#bindTexture" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#bindTexture">bindTexture</a></b> (<i>self</i>, QImage <i>image</i>, int <i>target</i> = GL_TEXTURE_2D, int <i>format</i> = GL_RGBA)</li>
+<li>
+<div class="fn"></div>int <b><a href="qglcontext.html#bindTexture-2" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#bindTexture-2">bindTexture</a></b> (<i>self</i>, QPixmap <i>pixmap</i>, int <i>target</i> = GL_TEXTURE_2D, int <i>format</i> = GL_RGBA)</li>
+<li>
+<div class="fn"></div>int <b><a href="qglcontext.html#bindTexture-3" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#bindTexture-3">bindTexture</a></b> (<i>self</i>, QString <i>fileName</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qglcontext.html#bindTexture-4" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#bindTexture-4">bindTexture</a></b> (<i>self</i>, QImage <i>image</i>, int <i>target</i>, int <i>format</i>, BindOptions <i>options</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qglcontext.html#bindTexture-5" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#bindTexture-5">bindTexture</a></b> (<i>self</i>, QPixmap <i>pixmap</i>, int <i>target</i>, int <i>format</i>, BindOptions <i>options</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qglcontext.html#chooseContext" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#chooseContext">chooseContext</a></b> (<i>self</i>, QGLContext <i>shareContext</i> = None)</li>
+<li>
+<div class="fn"></div>sip.voidptr <b><a href="qglcontext.html#chooseVisual" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#chooseVisual">chooseVisual</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qglcontext.html#create" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#create">create</a></b> (<i>self</i>, QGLContext <i>shareContext</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglcontext.html#deleteTexture" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#deleteTexture">deleteTexture</a></b> (<i>self</i>, int <i>tx_id</i>)</li>
+<li>
+<div class="fn"></div>QPaintDevice <b><a href="qglcontext.html#device" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#device">device</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qglcontext.html#deviceIsPixmap" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#deviceIsPixmap">deviceIsPixmap</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglcontext.html#doneCurrent" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#doneCurrent">doneCurrent</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglcontext.html#drawTexture" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#drawTexture">drawTexture</a></b> (<i>self</i>, QRectF <i>target</i>, int <i>textureId</i>, int <i>textureTarget</i> = GL_TEXTURE_2D)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglcontext.html#drawTexture-2" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#drawTexture-2">drawTexture</a></b> (<i>self</i>, QPointF <i>point</i>, int <i>textureId</i>, int <i>textureTarget</i> = GL_TEXTURE_2D)</li>
+<li>
+<div class="fn"></div>QGLFormat <b><a href="qglcontext.html#format" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#format">format</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglcontext.html#generateFontDisplayLists" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#generateFontDisplayLists">generateFontDisplayLists</a></b> (<i>self</i>, QFont <i>fnt</i>, int <i>listBase</i>)</li>
+<li>
+<div class="fn"></div>sip.voidptr <b><a href="qglcontext.html#getProcAddress" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#getProcAddress">getProcAddress</a></b> (<i>self</i>, QString <i>proc</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qglcontext.html#initialized" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#initialized">initialized</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qglcontext.html#isSharing" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#isSharing">isSharing</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qglcontext.html#isValid" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#isValid">isValid</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglcontext.html#makeCurrent" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#makeCurrent">makeCurrent</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QColor <b><a href="qglcontext.html#overlayTransparentColor" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#overlayTransparentColor">overlayTransparentColor</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QGLFormat <b><a href="qglcontext.html#requestedFormat" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#requestedFormat">requestedFormat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglcontext.html#reset" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#reset">reset</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglcontext.html#setFormat" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#setFormat">setFormat</a></b> (<i>self</i>, QGLFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglcontext.html#setInitialized" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#setInitialized">setInitialized</a></b> (<i>self</i>, bool <i>on</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglcontext.html#setWindowCreated" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#setWindowCreated">setWindowCreated</a></b> (<i>self</i>, bool <i>on</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglcontext.html#swapBuffers" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#swapBuffers">swapBuffers</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qglcontext.html#windowCreated" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#windowCreated">windowCreated</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>bool <b><a href="qglcontext.html#areSharing" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#areSharing">areSharing</a></b> (QGLContext <i>context1</i>, QGLContext <i>context2</i>)</li>
+<li>
+<div class="fn"></div>QGLContext <b><a href="qglcontext.html#currentContext" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#currentContext">currentContext</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglcontext.html#setTextureCacheLimit" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#setTextureCacheLimit">setTextureCacheLimit</a></b> (int <i>size</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qglcontext.html#textureCacheLimit" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#textureCacheLimit">textureCacheLimit</a></b> ()</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QGLContext类封装了一个OpenGL渲染上下文。</p>
+<p>一个OpenGL渲染上下文是一套完整的OpenGL状态变量。渲染上下文的<a href="qgl.html#FormatOption-enum" tppabs="http://pyqt4doc.appspot.com/qgl.html#FormatOption-enum">format</a>被设置在构造，但它也可以购买与设置<a href="qglcontext.html#setFormat" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#setFormat">setFormat</a>（ ） 。这实际上是设置格式选项由返回<a href="qglcontext.html#format" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#format">format</a>（）;你要的选项被退回<a href="qglcontext.html#requestedFormat" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#requestedFormat">requestedFormat</a>（ ） 。请注意，在一个QGLContext对象已建成，实际OpenGL上下文必须通过显式调用创建的<a href="qglcontext.html#create" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#create">create()</a>功能。该<a href="qglcontext.html#makeCurrent" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#makeCurrent">makeCurrent</a>（）函数使得这方面的当前呈现上下文。您可以<i>no</i>使用上下文电流<a href="qglcontext.html#doneCurrent" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#doneCurrent">doneCurrent</a>（ ） 。该<a href="qglcontext.html#reset" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#reset">reset</a>（ ）函数将重置上下文，并使其无效。</p>
+<p>你可以检查上下文的物业，如<a href="qglcontext.html#isValid" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#isValid">isValid</a>（ ）<a href="qglcontext.html#isSharing" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#isSharing">isSharing</a>（ ）<a href="qglcontext.html#initialized" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#initialized">initialized</a>（ ）<a href="qglcontext.html#windowCreated" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#windowCreated">windowCreated</a>（）和<a href="qglcontext.html#overlayTransparentColor" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#overlayTransparentColor">overlayTransparentColor</a>（ ） 。</p>
+<p>如果你使用双缓冲可以使用换用离屏缓冲屏幕内容<a href="qglcontext.html#swapBuffers" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#swapBuffers">swapBuffers</a>（ ） 。</p>
+<p>请注意， QGLContext是不<a href="index.htm#thread-safe" tppabs="http://pyqt4doc.appspot.com/threads-reentrancy.html#thread-safe">thread-safe</a>。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="BindOption-enum"></a>QGLContext.BindOption</h3>
+<p>一组选项来决定如何使用绑定纹理<a href="qglcontext.html#bindTexture" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#bindTexture">bindTexture</a>（ ） 。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGLContext.NoBindOption</tt></td>
+<td class="topAlign"><tt>0x0000</tt></td>
+<td class="topAlign">不要做任何事情，直通传递的质感。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGLContext.InvertedYBindOption</tt></td>
+<td class="topAlign"><tt>0x0001</tt></td>
+<td class="topAlign">指定纹理应该翻转X轴，以使纹理坐标0,0对应于左上角。反相纹理意味着一个深层副本之前上传。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGLContext.MipmapBindOption</tt></td>
+<td class="topAlign"><tt>0x0002</tt></td>
+<td class="topAlign">指定<a href="qglcontext.html#bindTexture" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#bindTexture">bindTexture</a>（ ）应该生成贴图。如果GL实现支持<tt>GL_SGIS_generate_mipmap</tt>扩展，贴图将自动为纹理生成。 MIP贴图一代只支持了<tt>GL_TEXTURE_2D</tt>目标。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QGLContext.PremultipliedAlphaBindOption</tt>
+</td>
+<td class="topAlign"><tt>0x0004</tt></td>
+<td class="topAlign">指定图像应使用预乘alpha上传并做了相应的转换。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QGLContext.LinearFilteringBindOption</tt>
+</td>
+<td class="topAlign"><tt>0x0008</tt></td>
+<td class="topAlign">指定纹理过滤应设置为GL_LINEAR 。默认值是GL_NEAREST 。如果MIP贴图也被启用，过滤将被设置为GL_LINEAR_MIPMAP_LINEAR 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGLContext.DefaultBindOption</tt></td>
+<td class="topAlign"><tt>LinearFilteringBindOption |
+InvertedYBindOption | MipmapBindOption</tt></td>
+<td class="topAlign">在Qt 4.5和更早的版本，<a href="qglcontext.html#bindTexture" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#bindTexture">bindTexture</a>（ ）将镜像图像，并自动生成贴图。此选项可帮助保护这种默认行为。</td>
+</tr>
+</table>
+<p>通过使用从像素图X11选择它是否可以在像素映射绑定倒挂与否。</p>
+<p>用于涂料引擎，表明像素图应该沿着边用像素图/图像进行内存管理，它从，如茎在他们破坏安装钩子。</p>
+<p>这个枚举被引入或修改的Qt 4.6 。</p>
+<p>该BINDOPTIONS类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cBindOption\u003e 。它存储BindOption值的或组合。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QGLContext"></a>QGLContext.__init__ (<i>self</i>, <a href="qglformat.html" tppabs="http://pyqt4doc.appspot.com/qglformat.html">QGLFormat</a> <i>format</i>, <a href="qpaintdevice.html" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html">QPaintDevice</a> <i>device</i>)</h3>
+<p>构造一个OpenGL上下文给定的<i>format</i>它指定为上下文多个显示选项。</p>
+<p>如果底层的OpenGL / Window系统不能满足所有要求的功能<i>format</i>，的特征最接近的子集将被使用。创建后，<a href="qglcontext.html#format" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#format">format</a>（ ）方法将返回所得到的实际格式。</p>
+<p>需要注意的是后一<a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a>对象被创建，<a href="qglcontext.html#create" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#create">create</a>（ ）必须显式地调用来创建实际的OpenGL上下文。上下文会<a href="qglcontext.html#isValid" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#isValid">invalid</a>如果它是不能够获得GL上下文的。</p>
+<p><b>See also</b> <a href="qglcontext.html#format" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#format">format</a>（）和<a href="qglcontext.html#isValid" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#isValid">isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="areSharing"></a>bool QGLContext.areSharing (<a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a> <i>context1</i>, <a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a> <i>context2</i>)</h3>
+<p>返回True如果<i>context1</i>和<i>context2</i>分享他们吉尔资源，如纹理，着色器程序等，否则返回False 。</p>
+<p>此功能被引入Qt的4.6 。</p>
+
+
+<h3 class="fn">
+<a name="bindTexture"></a>int QGLContext.bindTexture (<i>self</i>, <a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> <i>image</i>, int <i>target</i> = GL_TEXTURE_2D, int <i>format</i> = GL_RGBA)</h3>
+<p>生成和二维GL纹理绑定到当前上下文的基础上，<i>image</i>。生成的纹理ID被返回，并且可以在以后使用中<tt>glBindTexture()</tt>电话。</p>
+<p>该<i>target</i>参数指定纹理目标。默认的目标是<tt>GL_TEXTURE_2D</tt>。</p>
+<p>该<i>format</i>参数设置纹理的内部格式。默认格式为<tt>GL_RGBA</tt>。</p>
+<p>绑定<i>options</i>是一组用来决定如何将纹理绑定到上下文选项。</p>
+<p>生成的纹理缓存，所以多次调用bindTexture （ ）具有相同<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>将返回相同的纹理ID 。</p>
+<p>请注意，我们假设为glPixelStore （）和glPixelTransfer （ ）参数的默认值。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qglcontext.html#deleteTexture" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#deleteTexture">deleteTexture</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="bindTexture-2"></a>int QGLContext.bindTexture (<i>self</i>, <a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a> <i>pixmap</i>, int <i>target</i> = GL_TEXTURE_2D, int <i>format</i> = GL_RGBA)</h3>
+<p>这是一个重载函数。</p>
+<p>读取压缩的纹理文件<i>fileName</i>并从它生成一个二维GL纹理。</p>
+<p>此功能可以加载DirectDrawSurface （ DDS）纹理的DXT1 ， DXT3和DXT5 DDS格式，如果<tt>GL_ARB_texture_compression</tt>和<tt>GL_EXT_texture_compression_s3tc</tt>扩展的支持。</p>
+<p>自从4.6.1 ，在ETC1格式的纹理可以，如果被加载<tt>GL_OES_compressed_ETC1_RGB8_texture</tt>扩展支持与ETC1纹理已被封装在PVR的容器格式。另外，在PVRTC2和PVRTC4格式的纹理可以被加载，如果<tt>GL_IMG_texture_compression_pvrtc</tt>支持扩展。</p>
+<p><b>See also</b> <a href="qglcontext.html#deleteTexture" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#deleteTexture">deleteTexture</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="bindTexture-3"></a>int QGLContext.bindTexture (<i>self</i>, QString <i>fileName</i>)</h3>
+<p>生成和二维GL纹理绑定到当前上下文的基础上，<i>image</i>。生成的纹理ID被返回，并且可以在以后使用中<tt>glBindTexture()</tt>电话。</p>
+<p>这是一个重载函数。</p>
+
+
+<h3 class="fn">
+<a name="bindTexture-4"></a>int QGLContext.bindTexture (<i>self</i>, <a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> <i>image</i>, int <i>target</i>, int <i>format</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qglcontext-bindoptions.html">BindOptions</a> <i>options</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>生成并根据绑定一个2D GL纹理<i>pixmap</i>。</p>
+
+
+<h3 class="fn">
+<a name="bindTexture-5"></a>int QGLContext.bindTexture (<i>self</i>, <a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a> <i>pixmap</i>, int <i>target</i>, int <i>format</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qglcontext-bindoptions.html">BindOptions</a> <i>options</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>生成和二维GL纹理绑定到当前上下文的基础上，<i>pixmap</i>。</p>
+<p>此功能被引入Qt的4.6 。</p>
+
+
+<h3 class="fn">
+<a name="chooseContext"></a>bool QGLContext.chooseContext (<i>self</i>, <a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a> <i>shareContext</i> = None)</h3>
+<p>这个半内部函数被<a href="qglcontext.html#create" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#create">create</a>（ ） 。它创建了一个与系统相关的OpenGL手柄相匹配的<a href="qglcontext.html#format" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#format">format</a>的（ ）<i>shareContext</i>尽可能密切，返回True，如果成功则返回False合适的手柄找不到。</p>
+<p>在Windows上，它调用虚函数<a href="qglcontext.html#choosePixelFormat" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#choosePixelFormat">choosePixelFormat</a>（），它找到一个匹配的像素格式标识符。在X11上，它调用虚函数<a href="qglcontext.html#chooseVisual" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#chooseVisual">chooseVisual</a>（），它找到一个恰当的X视觉。在其他平台上也可能有不同的工作。</p>
+
+
+<h3 class="fn">
+<a name="chooseVisual"></a>sip.voidptr QGLContext.chooseVisual (<i>self</i>)</h3>
+<p><b>X11 only:</b>这个虚函数试图找到一个可视化的格式相匹配，减少了需求，如果原来的请求不能得到满足。</p>
+<p>该算法降低了格式的要求是相当简单的头脑，所以在你的子类中重写此方法，如果你的应用程序有视觉上的选择spcific要求。</p>
+<p><b>See also</b> <a href="qglcontext.html#chooseContext" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#chooseContext">chooseContext</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="create"></a>bool QGLContext.create (<i>self</i>, <a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a> <i>shareContext</i> = None)</h3>
+<p>创建GL上下文。返回True ，如果它是成功地创造在构造函数中指定的绘图设备上的有效GL渲染上下文，否则返回False （即上下文是无效的） 。</p>
+<p>创建成功后，<a href="qglcontext.html#format" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#format">format</a>（ ）返回集合的创建GL渲染上下文的功能。</p>
+<p>If <i>shareContext</i>指向一个有效的<a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a>，此方法将尝试建立这样的背景下，并与OpenGL显示列表和纹理对象共享<i>shareContext</i>。请注意，这可能会失败，如果两个上下文有不同的<a href="qglcontext.html#format" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#format">formats</a>。使用<a href="qglcontext.html#isSharing" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#isSharing">isSharing</a>（） ，以查看是否共享将发挥作用。</p>
+<p><b>Warning:</b>实现注意事项： C + +的类成员初始化通常发生在类的构造函数。<a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a>是一个例外，因为它必须是简单定制。虚函数<a href="qglcontext.html#chooseContext" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#chooseContext">chooseContext</a>（ ） （和<a href="qglcontext.html#chooseVisual" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#chooseVisual">chooseVisual</a>（ ）用于X11）可以在子类中被重新实现来选择特定的上下文。问题是，虚函数没有正确施工过程中调用（尽管这是正确的C + + ）因为C + +构造的类层次结构从下往上。出于这个原因，我们需要一个create（ ）函数。</p>
+<p><b>See also</b> <a href="qglcontext.html#chooseContext" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#chooseContext">chooseContext</a>（ ）<a href="qglcontext.html#format" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#format">format</a>（）和<a href="qglcontext.html#isValid" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#isValid">isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentContext"></a><a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a> QGLContext.currentContext ()</h3>
+<p>返回当前上下文，即任何OpenGL命令将当前被定向的上下文。返回0，如果没有上下文是最新的。</p>
+<p><b>See also</b> <a href="qglcontext.html#makeCurrent" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#makeCurrent">makeCurrent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="deleteTexture"></a>QGLContext.deleteTexture (<i>self</i>, int <i>tx_id</i>)</h3>
+<p>去除所确定的纹理<i>id</i>从纹理高速缓存，并呼吁glDeleteTextures （）来从上下文中删除的质感。</p>
+<p><b>See also</b> <a href="qglcontext.html#bindTexture" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#bindTexture">bindTexture</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="device"></a><a href="qpaintdevice.html" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html">QPaintDevice</a> QGLContext.device (<i>self</i>)</h3>
+<p>返回漆设备这方面设置。</p>
+<p><b>See also</b> <a href="qglcontext.html#QGLContext" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#QGLContext">QGLContext.QGLContext</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="deviceIsPixmap"></a>bool QGLContext.deviceIsPixmap (<i>self</i>)</h3>
+<p>返回True如果这个上下文的绘图设备是像素图，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="doneCurrent"></a>QGLContext.doneCurrent (<i>self</i>)</h3>
+<p>不作任何GL上下文的当前上下文。通常情况下，你不需要调用此函数;<a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a>调用它是必要的。</p>
+
+
+<h3 class="fn">
+<a name="drawTexture"></a>QGLContext.drawTexture (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>target</i>, int <i>textureId</i>, int <i>textureTarget</i> = GL_TEXTURE_2D)</h3>
+<p>此功能支持以下用例：</p>
+<ul>
+<li>On OpenGL and OpenGL ES 1.x it draws the given texture,
+<i>textureId</i>, to the given target rectangle, <i>target</i>, in
+OpenGL model space. The <i>textureTarget</i> should be a 2D texture
+target.</li>
+<li>On OpenGL and OpenGL ES 2.x, if a painter is active, not inside
+a beginNativePainting / endNativePainting block, and uses the
+engine with type <a href="qpaintengine.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#Type-enum">QPaintEngine.OpenGL2</a>, the
+function will draw the given texture, <i>textureId</i>, to the
+given target rectangle, <i>target</i>, respecting the current
+painter state. This will let you draw a texture with the clip,
+transform, render hints, and composition mode set by the painter.
+Note that the texture target needs to be GL_TEXTURE_2D for this use
+case, and that this is the only supported use case under OpenGL ES
+2.x.</li>
+</ul>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="drawTexture-2"></a>QGLContext.drawTexture (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>point</i>, int <i>textureId</i>, int <i>textureTarget</i> = GL_TEXTURE_2D)</h3>
+<p>此功能支持以下用例：</p>
+<ul>
+<li>By default it draws the given texture, <i>textureId</i>, at the
+given <i>point</i> in OpenGL model space. The <i>textureTarget</i>
+should be a 2D texture target.</li>
+<li>If a painter is active, not inside a beginNativePainting /
+endNativePainting block, and uses the engine with type <a href="qpaintengine.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#Type-enum">QPaintEngine.OpenGL2</a>, the
+function will draw the given texture, <i>textureId</i>, at the
+given <i>point</i>, respecting the current painter state. This will
+let you draw a texture with the clip, transform, render hints, and
+composition mode set by the painter. Note that the texture target
+needs to be GL_TEXTURE_2D for this use case.</li>
+</ul>
+<p><b>Note:</b>这个功能没有在任何版本的OpenGL ES的支持。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="format"></a><a href="qglformat.html" tppabs="http://pyqt4doc.appspot.com/qglformat.html">QGLFormat</a> QGLContext.format (<i>self</i>)</h3>
+<p>返回得到的（这可能是要求什么的一个子集）的帧缓冲格式。</p>
+<p><b>See also</b> <a href="qglcontext.html#setFormat" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#setFormat">setFormat</a>（）和<a href="qglcontext.html#requestedFormat" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#requestedFormat">requestedFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="generateFontDisplayLists"></a>QGLContext.generateFontDisplayLists (<i>self</i>, <a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a> <i>fnt</i>, int <i>listBase</i>)</h3>
+<h3 class="fn">
+<a name="getProcAddress"></a>sip.voidptr QGLContext.getProcAddress (<i>self</i>, QString <i>proc</i>)</h3>
+<p>返回一个函数指针传递的GL扩展功能<i>proc</i>。如果不能获得一个指向函数返回0。</p>
+
+
+<h3 class="fn">
+<a name="initialized"></a>bool QGLContext.initialized (<i>self</i>)</h3>
+<p>返回True如果这方面已经初始化，也就是说，如果<a href="qglwidget.html#initializeGL" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#initializeGL">QGLWidget.initializeGL</a>（ ）已在其上被执行，否则返回False 。</p>
+<p><b>See also</b> <a href="qglcontext.html#setInitialized" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#setInitialized">setInitialized</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isSharing"></a>bool QGLContext.isSharing (<i>self</i>)</h3>
+<p>返回True如果这方面是与另一个共享其GL上下文<a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a>，否则返回假。需要注意的是上下文共享可能不会上下文不同格式之间的支持。</p>
+
+
+<h3 class="fn">
+<a name="isValid"></a>bool QGLContext.isValid (<i>self</i>)</h3>
+<p>返回True如果一个GL渲染上下文已经成功创建，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="makeCurrent"></a>QGLContext.makeCurrent (<i>self</i>)</h3>
+<p>使得此背景下，当前的OpenGL渲染上下文。你叫所有的GL函数在这样的背景下运作，直到另一个方面是由电流。</p>
+<p>在一些非常罕见的情况下，底层调用可能会失败。如果发生这种情况的错误信息输出到stderr 。</p>
+
+
+<h3 class="fn">
+<a name="overlayTransparentColor"></a><a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a> QGLContext.overlayTransparentColor (<i>self</i>)</h3>
+<p>如果这方面是一个复盖面的有效范围内，则返回飞机的透明色。否则返回一个{<a href="qcolor.html#isValid" tppabs="http://pyqt4doc.appspot.com/qcolor.html#isValid">QColor.isValid</a>（） } {无效}颜色。</p>
+<p>返回<a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a>对象将一般工作，只有当作为参数传递如预期<a href="qglwidget.html#qglColor" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#qglColor">QGLWidget.qglColor</a>（）或<a href="qglwidget.html#qglClearColor" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#qglClearColor">QGLWidget.qglClearColor</a>（ ） 。在某些情况下它也可以用于绘制透明的图形用<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>。</p>
+
+
+<h3 class="fn">
+<a name="requestedFormat"></a><a href="qglformat.html" tppabs="http://pyqt4doc.appspot.com/qglformat.html">QGLFormat</a> QGLContext.requestedFormat (<i>self</i>)</h3>
+<p>返回的帧缓冲格式最初是要求在构造函数或<a href="qglcontext.html#setFormat" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#setFormat">setFormat</a>（ ） 。</p>
+<p><b>See also</b> <a href="qglcontext.html#format" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#format">format</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="reset"></a>QGLContext.reset (<i>self</i>)</h3>
+<p>重设背景，并使其无效。</p>
+<p><b>See also</b> <a href="qglcontext.html#create" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#create">create</a>（）和<a href="qglcontext.html#isValid" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#isValid">isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFormat"></a>QGLContext.setFormat (<i>self</i>, <a href="qglformat.html" tppabs="http://pyqt4doc.appspot.com/qglformat.html">QGLFormat</a> <i>format</i>)</h3>
+<p>设置<i>format</i>此上下文。上下文是<a href="qglcontext.html#reset" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#reset">reset</a>。</p>
+<p>Call <a href="qglcontext.html#create" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#create">create</a>（）来创建一个新的GL上下文，试图以匹配新的格式。</p>
+<pre class="cpp">
+ <span class="type"><a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a></span> <span class="operator">*</span>cx;
+ <span class="comment">//  ...</span>
+ <span class="type"><a href="qglformat.html" tppabs="http://pyqt4doc.appspot.com/qglformat.html">QGLFormat</a></span> f;
+ f<span class="operator">.</span>setStereo(<span class="keyword">true</span>);
+ cx<span class="operator">-</span><span class="operator">&gt;</span>setFormat(f);
+ <span class="keyword">if</span> (<span class="operator">!</span>cx<span class="operator">-</span><span class="operator">&gt;</span>create())
+     exit(); <span class="comment">// no OpenGL support, or cannot render on the specified paintdevice</span>
+ <span class="keyword">if</span> (<span class="operator">!</span>cx<span class="operator">-</span><span class="operator">&gt;</span>format()<span class="operator">.</span>stereo())
+     exit(); <span class="comment">// could not create stereo context</span>
+</pre>
+<p><b>See also</b> <a href="qglcontext.html#format" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#format">format</a>（ ）<a href="qglcontext.html#reset" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#reset">reset</a>（）和<a href="qglcontext.html#create" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#create">create</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setInitialized"></a>QGLContext.setInitialized (<i>self</i>, bool <i>on</i>)</h3>
+<p>If <i>on</i>是真正的上下文被初始化，即QGLContext.setInitialized （ ）被调用就可以了。如果<i>on</i>是假的情况下没有被初始化。</p>
+<p><b>See also</b> <a href="qglcontext.html#initialized" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#initialized">initialized</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setTextureCacheLimit"></a>QGLContext.setTextureCacheLimit (int <i>size</i>)</h3>
+<p>该函数设置限制的纹理缓存到<i>size</i>，表示以KB为单位。</p>
+<p>默认情况下，缓存限制为大约64 MB的。</p>
+<p><b>See also</b> <a href="qglcontext.html#textureCacheLimit" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#textureCacheLimit">textureCacheLimit</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setWindowCreated"></a>QGLContext.setWindowCreated (<i>self</i>, bool <i>on</i>)</h3>
+<p>If <i>on</i>是真正的上下文已为其创建一个窗口。如果<i>on</i>是假的无窗已为上下文中创建。</p>
+<p><b>See also</b> <a href="qglcontext.html#windowCreated" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#windowCreated">windowCreated</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="swapBuffers"></a>QGLContext.swapBuffers (<i>self</i>)</h3>
+<p>掉期，一个离屏缓冲屏幕内容。只有当上下文是在双缓冲模式。</p>
+<p><b>See also</b> <a href="qglformat.html#setDoubleBuffer" tppabs="http://pyqt4doc.appspot.com/qglformat.html#setDoubleBuffer">QGLFormat.setDoubleBuffer</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="textureCacheLimit"></a>int QGLContext.textureCacheLimit ()</h3>
+<p>返回以KB为单位的当前纹理缓存限制。</p>
+<p><b>See also</b> <a href="qglcontext.html#setTextureCacheLimit" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#setTextureCacheLimit">setTextureCacheLimit</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="windowCreated"></a>bool QGLContext.windowCreated (<i>self</i>)</h3>
+<p>如果一个窗口已经被用于这样的背景下建立的，则返回True ，否则返回False 。</p>
+<p><b>See also</b> <a href="qglcontext.html#setWindowCreated" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#setWindowCreated">setWindowCreated</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

@@ -1,0 +1,190 @@
+﻿<html>
+<head>
+<title>QGL Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QGL Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtopengl.html">QtOpenGL</a> module]</sup></sup>
+</h1>
+<p>该QGL命名空间指定了Qt的OpenGL模块中使用的其他标识符。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qgl.html#FormatOption-enum" tppabs="http://pyqt4doc.appspot.com/qgl.html#FormatOption-enum">FormatOption</a></b> { DoubleBuffer, DepthBuffer, Rgba, AlphaChannel, ..., NoDeprecatedFunctions }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qgl-formatoptions.html">FormatOptions</a></b>
+</li>
+</ul>
+<h3>Static Methods</h3>
+<ul><li>
+<div class="fn"></div>
+<b><a href="qgl.html#setPreferredPaintEngine" tppabs="http://pyqt4doc.appspot.com/qgl.html#setPreferredPaintEngine">setPreferredPaintEngine</a></b> (QPaintEngine.Type <i>engineType</i>)</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QGL命名空间指定了Qt的OpenGL模块中使用的其他标识符。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="FormatOption-enum"></a>QGL.FormatOption</h3>
+<p>此枚举指定可用于配置OpenGL上下文的格式选项。这些是使用设置<a href="qglformat.html#setOption" tppabs="http://pyqt4doc.appspot.com/qglformat.html#setOption">QGLFormat.setOption</a>（ ） 。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGL.DoubleBuffer</tt></td>
+<td class="topAlign"><tt>0x0001</tt></td>
+<td class="topAlign">指定使用双缓冲的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGL.DepthBuffer</tt></td>
+<td class="topAlign"><tt>0x0002</tt></td>
+<td class="topAlign">允许使用深度缓冲的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGL.Rgba</tt></td>
+<td class="topAlign"><tt>0x0004</tt></td>
+<td class="topAlign">指定的上下文中应该使用的RGBA作为其像素格式。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGL.AlphaChannel</tt></td>
+<td class="topAlign"><tt>0x0008</tt></td>
+<td class="topAlign">允许使用alpha通道的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGL.AccumBuffer</tt></td>
+<td class="topAlign"><tt>0x0010</tt></td>
+<td class="topAlign">允许使用的累加缓冲器。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGL.StencilBuffer</tt></td>
+<td class="topAlign"><tt>0x0020</tt></td>
+<td class="topAlign">允许使用模板缓冲区。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGL.StereoBuffers</tt></td>
+<td class="topAlign"><tt>0x0040</tt></td>
+<td class="topAlign">支持使用立体声缓冲器具有可视化的硬件使用。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGL.DirectRendering</tt></td>
+<td class="topAlign"><tt>0x0080</tt></td>
+<td class="topAlign">指定上下文被用于直接渲染到显示器。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGL.HasOverlay</tt></td>
+<td class="topAlign"><tt>0x0100</tt></td>
+<td class="topAlign">允许使用重叠的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGL.SampleBuffers</tt></td>
+<td class="topAlign"><tt>0x0200</tt></td>
+<td class="topAlign">允许使用样本缓冲区。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGL.DeprecatedFunctions</tt></td>
+<td class="topAlign"><tt>0x0400</tt></td>
+<td class="topAlign">允许使用过时的功能为OpenGL 3.x的上下文。启用了弃用功能的上下文被称为OpenGL规范一个完整的上下文。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGL.SingleBuffer</tt></td>
+<td class="topAlign"><tt>DoubleBuffer&lt;&lt;16</tt></td>
+<td class="topAlign">指定使用一个单一的缓冲液中，相对于双缓冲器。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGL.NoDepthBuffer</tt></td>
+<td class="topAlign"><tt>DepthBuffer&lt;&lt;16</tt></td>
+<td class="topAlign">禁止使用深度缓冲的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGL.ColorIndex</tt></td>
+<td class="topAlign"><tt>Rgba&lt;&lt;16</tt></td>
+<td class="topAlign">指定的上下文中应该使用的颜色索引作为其像素格式。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGL.NoAlphaChannel</tt></td>
+<td class="topAlign"><tt>AlphaChannel&lt;&lt;16</tt></td>
+<td class="topAlign">禁止使用Alpha通道。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGL.NoAccumBuffer</tt></td>
+<td class="topAlign"><tt>AccumBuffer&lt;&lt;16</tt></td>
+<td class="topAlign">禁止使用积累的缓冲区。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGL.NoStencilBuffer</tt></td>
+<td class="topAlign"><tt>StencilBuffer&lt;&lt;16</tt></td>
+<td class="topAlign">禁止使用模板缓冲区。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGL.NoStereoBuffers</tt></td>
+<td class="topAlign"><tt>StereoBuffers&lt;&lt;16</tt></td>
+<td class="topAlign">禁止使用立体声缓冲区。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGL.IndirectRendering</tt></td>
+<td class="topAlign"><tt>DirectRendering&lt;&lt;16</tt></td>
+<td class="topAlign">指定该上下文被用于间接渲染到一个缓冲区中。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGL.NoOverlay</tt></td>
+<td class="topAlign"><tt>HasOverlay&lt;&lt;16</tt></td>
+<td class="topAlign">禁止使用重叠的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGL.NoSampleBuffers</tt></td>
+<td class="topAlign"><tt>SampleBuffers&lt;&lt;16</tt></td>
+<td class="topAlign">禁止使用样本缓冲区。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGL.NoDeprecatedFunctions</tt></td>
+<td class="topAlign"><tt>DeprecatedFunctions&lt;&lt;16</tt></td>
+<td class="topAlign">禁止使用过时的功能为OpenGL 3.x的上下文。禁用过时的功能的情况下被调用OpenGL规范向前兼容的上下文。</td>
+</tr>
+</table>
+<p>该FormatOptions类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cFormatOption\u003e 。它存储FormatOption值的或组合。</p>
+<p><b>See also</b> <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/opengl-samplebuffers.html">Sample
+Buffers Example</a>。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="setPreferredPaintEngine"></a>QGL.setPreferredPaintEngine (<a href="qpaintengine.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#Type-enum">QPaintEngine.Type</a> <i>engineType</i>)</h3>
+<p>设置用于绘制到首选的OpenGL绘图引擎<a href="qglwidget.html" tppabs="http://pyqt4doc.appspot.com/qglwidget.html">QGLWidget</a>，<a href="qglpixelbuffer.html" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html">QGLPixelBuffer</a>和<a href="qglframebufferobject.html" tppabs="http://pyqt4doc.appspot.com/qglframebufferobject.html">QGLFramebufferObject</a>与目标<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>Qt中。</p>
+<p>该<i>engineType</i>参数指定了GL的发动机使用的。只<tt>QPaintEngine.OpenGL</tt>和<tt>QPaintEngine.OpenGL2</tt>是有效的参数传递给该函数。所有其他值将被忽略。</p>
+<p>默认情况下，<tt>QPaintEngine.OpenGL2</tt>引擎时使用GL / GLES 2.0版是可用的，否则<tt>QPaintEngine.OpenGL</tt>被使用。</p>
+<p><b>Warning:</b>此功能之前，必须调用<a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a>构造函数被调用。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

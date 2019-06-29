@@ -1,0 +1,602 @@
+﻿<html>
+<head>
+<title>QImageReader Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QImageReader Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QImageReader类提供了从文件或其它设备读取图像的格式无关的接口。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qimagereader.html#ImageReaderError-enum" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#ImageReaderError-enum">ImageReaderError</a></b> { UnknownError, FileNotFoundError, DeviceError, UnsupportedFormatError, InvalidDataError }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qimagereader.html#QImageReader" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#QImageReader">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimagereader.html#QImageReader-2" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#QImageReader-2">__init__</a></b> (<i>self</i>, QIODevice <i>device</i>, QByteArray <i>format</i> = QByteArray())</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimagereader.html#QImageReader-3" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#QImageReader-3">__init__</a></b> (<i>self</i>, QString <i>fileName</i>, QByteArray <i>format</i> = QByteArray())</li>
+<li>
+<div class="fn"></div>bool <b><a href="qimagereader.html#autoDetectImageFormat" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#autoDetectImageFormat">autoDetectImageFormat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QColor <b><a href="qimagereader.html#backgroundColor" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#backgroundColor">backgroundColor</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qimagereader.html#canRead" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#canRead">canRead</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QRect <b><a href="qimagereader.html#clipRect" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#clipRect">clipRect</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qimagereader.html#currentImageNumber" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#currentImageNumber">currentImageNumber</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QRect <b><a href="qimagereader.html#currentImageRect" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#currentImageRect">currentImageRect</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qimagereader.html#decideFormatFromContent" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#decideFormatFromContent">decideFormatFromContent</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QIODevice <b><a href="qimagereader.html#device" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#device">device</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>ImageReaderError <b><a href="qimagereader.html#error" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#error">error</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qimagereader.html#errorString" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#errorString">errorString</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qimagereader.html#fileName" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#fileName">fileName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qimagereader.html#format" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#format">format</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qimagereader.html#imageCount" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#imageCount">imageCount</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QImage.Format <b><a href="qimagereader.html#imageFormat-3" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#imageFormat-3">imageFormat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qimagereader.html#jumpToImage" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#jumpToImage">jumpToImage</a></b> (<i>self</i>, int <i>imageNumber</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qimagereader.html#jumpToNextImage" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#jumpToNextImage">jumpToNextImage</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qimagereader.html#loopCount" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#loopCount">loopCount</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qimagereader.html#nextImageDelay" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#nextImageDelay">nextImageDelay</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qimagereader.html#quality" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#quality">quality</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QImage <b><a href="qimagereader.html#read" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#read">read</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qimagereader.html#read-2" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#read-2">read</a></b> (<i>self</i>, QImage <i>image</i>)</li>
+<li>
+<div class="fn"></div>QRect <b><a href="qimagereader.html#scaledClipRect" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#scaledClipRect">scaledClipRect</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qimagereader.html#scaledSize" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#scaledSize">scaledSize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimagereader.html#setAutoDetectImageFormat" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setAutoDetectImageFormat">setAutoDetectImageFormat</a></b> (<i>self</i>, bool <i>enabled</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimagereader.html#setBackgroundColor" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setBackgroundColor">setBackgroundColor</a></b> (<i>self</i>, QColor <i>color</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimagereader.html#setClipRect" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setClipRect">setClipRect</a></b> (<i>self</i>, QRect <i>rect</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimagereader.html#setDecideFormatFromContent" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setDecideFormatFromContent">setDecideFormatFromContent</a></b> (<i>self</i>, bool <i>ignored</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimagereader.html#setDevice" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setDevice">setDevice</a></b> (<i>self</i>, QIODevice <i>device</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimagereader.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setFileName">setFileName</a></b> (<i>self</i>, QString <i>fileName</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimagereader.html#setFormat" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setFormat">setFormat</a></b> (<i>self</i>, QByteArray <i>format</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimagereader.html#setQuality" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setQuality">setQuality</a></b> (<i>self</i>, int <i>quality</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimagereader.html#setScaledClipRect" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setScaledClipRect">setScaledClipRect</a></b> (<i>self</i>, QRect <i>rect</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimagereader.html#setScaledSize" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setScaledSize">setScaledSize</a></b> (<i>self</i>, QSize <i>size</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qimagereader.html#size" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#size">size</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qimagereader.html#supportsAnimation" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#supportsAnimation">supportsAnimation</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qimagereader.html#supportsOption" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#supportsOption">supportsOption</a></b> (<i>self</i>, QImageIOHandler.ImageOption <i>option</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qimagereader.html#text" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#text">text</a></b> (<i>self</i>, QString <i>key</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qimagereader.html#textKeys" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#textKeys">textKeys</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qimagereader.html#imageFormat" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#imageFormat">imageFormat</a></b> (QString <i>fileName</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qimagereader.html#imageFormat-2" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#imageFormat-2">imageFormat</a></b> (QIODevice <i>device</i>)</li>
+<li>
+<div class="fn"></div>list-of-QByteArray <b><a href="qimagereader.html#supportedImageFormats" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#supportedImageFormats">supportedImageFormats</a></b> ()</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QImageReader类提供了从文件或其它设备读取图像的格式无关的接口。</p>
+<p>对图像进行读取的最常见的方式是通过<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>和<a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a>的构造函数，或致电<a href="qimage.html#load" tppabs="http://pyqt4doc.appspot.com/qimage.html#load">QImage.load</a>（）和<a href="qpixmap.html#load" tppabs="http://pyqt4doc.appspot.com/qpixmap.html#load">QPixmap.load</a>（ ） 。 QImageReader是一家专业类阅读图像时它给你更多的控制。例如，你可以通过调用读取图像到一个特定的大小<a href="qimagereader.html#setScaledSize" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setScaledSize">setScaledSize</a>（ ） ，你可以选择一个剪辑矩形，有效地只加载部分的图像，通过调用<a href="qimagereader.html#setClipRect" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setClipRect">setClipRect</a>（ ） 。根据不同的图像格式的支持基础上的，这样可以节省内存，加快加载图像。</p>
+<p>要读取的图像，你通过构建一个QImageReader对象开始。通过其中一个文件名或设备指针，图像格式QImageReader的构造函数。然后，您可以设置多个选项，如剪辑矩形（通过调用<a href="qimagereader.html#setClipRect" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setClipRect">setClipRect</a>（ ） ）和缩放大小（通过调用<a href="qimagereader.html#setScaledSize" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setScaledSize">setScaledSize</a>（））。<a href="qimagereader.html#canRead" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#canRead">canRead</a>（）返回的图像，如果QImageReader可以读取图像（即，被支持的图像格式和设备开放阅读） 。通话<a href="qimagereader.html#read" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#read">read</a>（）来读取该图像。</p>
+<p>如果在读取图像时出现任何错误，<a href="qimagereader.html#read" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#read">read</a>（ ）将返回一个null<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>。然后，您可以调用<a href="qimagereader.html#error" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#error">error</a>（）找到所发生的错误的类型，或者<a href="qimagereader.html#errorString" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#errorString">errorString</a>（）来得到一个什么地方出了错人类可读的描述。</p>
+<p>Call <a href="qimagereader.html#supportedImageFormats" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#supportedImageFormats">supportedImageFormats</a>（）用于该QImageReader可以阅读格式的列表。 QImageReader支持所有内置的图像格式，除了支持读取任何图像格式的插件。</p>
+<p>QImageReader自动检测默认的图像格式，通过查看所提供（可选）格式字符串，文件名后缀，和数据流内容。您可以启用或禁用此功能，通过调用<a href="qimagereader.html#setAutoDetectImageFormat" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setAutoDetectImageFormat">setAutoDetectImageFormat</a>（ ） 。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="ImageReaderError-enum"></a>QImageReader.ImageReaderError</h3>
+<p>这个枚举变量描述了不同类型的错误与读取图像时可能发生的<a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a>。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QImageReader.FileNotFoundError</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">
+<a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a>被使用的文件名，而不是文件被发现使用该名称。这也可能发生，如果文件名不包含扩展名，不支持的Qt用正确的扩展名的文件。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QImageReader.DeviceError</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">
+<a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a>读取图像时遇到设备错误。您可以谘询您的特定设备上出了什么问题的更多细节。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QImageReader.UnsupportedFormatError</tt>
+</td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">Qt不支持所请求的图像的格式。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QImageReader.InvalidDataError</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">图像数据是无效的，并<a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a>无法从中读取图像。如果图像文件被损坏可能发生。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QImageReader.UnknownError</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">发生未知错误。如果在调用后得到这个值<a href="qimagereader.html#read" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#read">read</a>（ ） ，它是最有可能的一个错误引起的<a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a>。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QImageReader"></a>QImageReader.__init__ (<i>self</i>)</h3>
+<p>构造一个空<a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a>对象。在阅读的图像，调用<a href="qimagereader.html#setDevice" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setDevice">setDevice</a>（）或<a href="qimagereader.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setFileName">setFileName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QImageReader-2"></a>QImageReader.__init__ (<i>self</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>device</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>format</i> = QByteArray())</h3>
+<p>构造一个<a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a>与设备对象<i>device</i>和图像格式<i>format</i>。</p>
+
+
+<h3 class="fn">
+<a name="QImageReader-3"></a>QImageReader.__init__ (<i>self</i>, QString <i>fileName</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>format</i> = QByteArray())</h3>
+<p>构造一个<a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a>用文件名对象<i>fileName</i>和图像格式<i>format</i>。</p>
+<p><b>See also</b> <a href="qimagereader.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setFileName">setFileName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="autoDetectImageFormat"></a>bool QImageReader.autoDetectImageFormat (<i>self</i>)</h3>
+<p>返回True如果图像格式自动检测是对这个形象的读者能，否则返回False 。默认情况下，自动检测被启用。</p>
+<p><b>See also</b> <a href="qimagereader.html#setAutoDetectImageFormat" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setAutoDetectImageFormat">setAutoDetectImageFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="backgroundColor"></a><a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a> QImageReader.backgroundColor (<i>self</i>)</h3>
+<p>返回的阅读一个图像时使用的背景颜色。如果图像格式不支持设置背景色无效的颜色恢复。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qimagereader.html#setBackgroundColor" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setBackgroundColor">setBackgroundColor</a>（）和<a href="qimagereader.html#read" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#read">read</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="canRead"></a>bool QImageReader.canRead (<i>self</i>)</h3>
+<p>返回True如果图像可以读取的设备（例如，支持的图像格式，并且该设备似乎包含有效的数据），否则返回False 。</p>
+<p>的CanRead （）是一个轻量级函数只能执行快速测试以查看该图像数据是有效的。<a href="qimagereader.html#read" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#read">read</a>（ ）的CanRead后仍可能返回False （ ）返回True ，如果图像数据被破坏。</p>
+<p>对于支持动画影像时，所有帧都被读取，的CanRead （ ）返回False 。</p>
+<p><b>See also</b> <a href="qimagereader.html#read" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#read">read</a>（）和<a href="qimagereader.html#supportedImageFormats" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#supportedImageFormats">supportedImageFormats</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clipRect"></a><a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> QImageReader.clipRect (<i>self</i>)</h3>
+<p>返回图像的剪辑矩形（也被称为ROI ，或感兴趣区域） 。如果没有剪辑矩形已定，一个无效的<a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a>返回。</p>
+<p><b>See also</b> <a href="qimagereader.html#setClipRect" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setClipRect">setClipRect</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentImageNumber"></a>int QImageReader.currentImageNumber (<i>self</i>)</h3>
+<p>对于支持动画图像格式，该函数返回当前帧的序列号。如果图像格式不支持动画，则返回0 。</p>
+<p>该函数返回-1，如果发生了错误。</p>
+<p><b>See also</b> <a href="qimagereader.html#supportsAnimation" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#supportsAnimation">supportsAnimation</a>（ ）<a href="qimageiohandler.html#currentImageNumber" tppabs="http://pyqt4doc.appspot.com/qimageiohandler.html#currentImageNumber">QImageIOHandler.currentImageNumber</a>（）和<a href="qimagereader.html#canRead" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#canRead">canRead</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentImageRect"></a><a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> QImageReader.currentImageRect (<i>self</i>)</h3>
+<p>对于支持动画图像格式，该函数返回的矩形为当前帧。否则，将返回一个空矩形。</p>
+<p><b>See also</b> <a href="qimagereader.html#supportsAnimation" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#supportsAnimation">supportsAnimation</a>（）和<a href="qimageiohandler.html#currentImageRect" tppabs="http://pyqt4doc.appspot.com/qimageiohandler.html#currentImageRect">QImageIOHandler.currentImageRect</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="decideFormatFromContent"></a>bool QImageReader.decideFormatFromContent (<i>self</i>)</h3>
+<p>返回的图像读取器是否应该决定哪些插件只使用基于数据流的内容，而不是文件扩展名。</p>
+<p><b>See also</b> <a href="qimagereader.html#setDecideFormatFromContent" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setDecideFormatFromContent">setDecideFormatFromContent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="device"></a><a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> QImageReader.device (<i>self</i>)</h3>
+<p>返回当前分配给设备<a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a>，或者0，如果没有设备已经被分配。</p>
+<p><b>See also</b> <a href="qimagereader.html#setDevice" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setDevice">setDevice</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="error"></a><a href="qimagereader.html#ImageReaderError-enum" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#ImageReaderError-enum">ImageReaderError</a> QImageReader.error (<i>self</i>)</h3>
+<p>返回上次发生错误的类型。</p>
+<p><b>See also</b> <a href="qimagereader.html#ImageReaderError-enum" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#ImageReaderError-enum">ImageReaderError</a>和<a href="qimagereader.html#errorString" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#errorString">errorString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="errorString"></a>QString QImageReader.errorString (<i>self</i>)</h3>
+<p>返回上次发生错误的可读描述。</p>
+<p><b>See also</b> <a href="qimagereader.html#error" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#error">error</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fileName"></a>QString QImageReader.fileName (<i>self</i>)</h3>
+<p>如果当前分配装置是<a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a>，或者如果<a href="qimagereader.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setFileName">setFileName</a>（ ）被调用，此函数返回文件的名称<a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a>读取。否则（即，如果没有设备已被分配或设备不是<a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a>） ，空<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>返回。</p>
+<p><b>See also</b> <a href="qimagereader.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setFileName">setFileName</a>（）和<a href="qimagereader.html#setDevice" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setDevice">setDevice</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="format"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QImageReader.format (<i>self</i>)</h3>
+<p>返回格式<a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a>用来读取图像。</p>
+<p>可以分配一个设备向读者以确定该设备的格式之后，调用此函数。例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a></span> reader(<span class="string">"image.png"</span>);
+ <span class="comment">// reader.format() == "png"</span>
+</pre>
+<p>如果读者不能从设备读取任何图像（例如，没有图像出现，或图像已经被读取） ，或者如果格式是不支持的，这个函数返回一个空QByteArray中（ ） 。</p>
+<p><b>See also</b> <a href="qimagereader.html#setFormat" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setFormat">setFormat</a>（）和<a href="qimagereader.html#supportedImageFormats" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#supportedImageFormats">supportedImageFormats</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="imageCount"></a>int QImageReader.imageCount (<i>self</i>)</h3>
+<p>对于支持动画图像格式，该函数返回的动画图像的总数。如果格式不支持动画，则返回0 。</p>
+<p>该函数返回-1，如果发生了错误。</p>
+<p><b>See also</b> <a href="qimagereader.html#supportsAnimation" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#supportsAnimation">supportsAnimation</a>（ ）<a href="qimageiohandler.html#imageCount" tppabs="http://pyqt4doc.appspot.com/qimageiohandler.html#imageCount">QImageIOHandler.imageCount</a>（）和<a href="qimagereader.html#canRead" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#canRead">canRead</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="imageFormat"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QImageReader.imageFormat (QString <i>fileName</i>)</h3>
+<p>返回的图像的格式，而无需实际读出图像的内容。该格式描述的图像格式<a href="qimagereader.html#read" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#read">QImageReader.read</a>（ ）返回，而不是实际的图像的格式。</p>
+<p>如果图像格式不支持此功能，这个函数返回一个无效的格式。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qimageiohandler.html#ImageOption-enum" tppabs="http://pyqt4doc.appspot.com/qimageiohandler.html#ImageOption-enum">QImageIOHandler.ImageOption</a>，<a href="qimageiohandler.html#option" tppabs="http://pyqt4doc.appspot.com/qimageiohandler.html#option">QImageIOHandler.option</a>（）和<a href="qimageiohandler.html#supportsOption" tppabs="http://pyqt4doc.appspot.com/qimageiohandler.html#supportsOption">QImageIOHandler.supportsOption</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="imageFormat-2"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QImageReader.imageFormat (<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>device</i>)</h3>
+<p>如果支持的话，这个函数返回文件的图像格式<i>fileName</i>。否则，返回一个空字符串。</p>
+
+
+<h3 class="fn">
+<a name="imageFormat-3"></a><a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">QImage.Format</a> QImageReader.imageFormat (<i>self</i>)</h3>
+<p>如果支持，则该函数返回设备的图像格式<i>device</i>。否则，返回一个空字符串。</p>
+<p><b>See also</b> <a href="qimagereader.html#autoDetectImageFormat" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#autoDetectImageFormat">QImageReader.autoDetectImageFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="jumpToImage"></a>bool QImageReader.jumpToImage (<i>self</i>, int <i>imageNumber</i>)</h3>
+<p>对于支持动画图像格式，该函数将跳到其序列号是图像<i>imageNumber</i>，返回True，如果成功则返回False相应的图像不能被发现。</p>
+<p>到下一次调用<a href="qimagereader.html#read" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#read">read</a>（ ）将尝试读取这个形象。</p>
+<p><b>See also</b> <a href="qimagereader.html#jumpToNextImage" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#jumpToNextImage">jumpToNextImage</a>（）和<a href="qimageiohandler.html#jumpToImage" tppabs="http://pyqt4doc.appspot.com/qimageiohandler.html#jumpToImage">QImageIOHandler.jumpToImage</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="jumpToNextImage"></a>bool QImageReader.jumpToNextImage (<i>self</i>)</h3>
+<p>对于支持动画图像格式，该功能的步骤在当前图像，返回True，如果成功或假，如果有在动画没有下面的图像。</p>
+<p>默认实现调用<a href="qimagereader.html#read" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#read">read</a>（ ），则丢弃所得到的图像，但图像处理程序可能必须执行这一操作的更有效的方法。</p>
+<p><b>See also</b> <a href="qimagereader.html#jumpToImage" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#jumpToImage">jumpToImage</a>（）和<a href="qimageiohandler.html#jumpToNextImage" tppabs="http://pyqt4doc.appspot.com/qimageiohandler.html#jumpToNextImage">QImageIOHandler.jumpToNextImage</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="loopCount"></a>int QImageReader.loopCount (<i>self</i>)</h3>
+<p>对于支持动画图像格式，该函数返回的时候动画应该循环的次数。如果这个函数返回-1 ，它可以意味着动画应该永远循环下去，或者发生了错误。如果发生错误，则<a href="qimagereader.html#canRead" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#canRead">canRead</a>（ ）将返回False 。</p>
+<p><b>See also</b> <a href="qimagereader.html#supportsAnimation" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#supportsAnimation">supportsAnimation</a>（ ）<a href="qimageiohandler.html#loopCount" tppabs="http://pyqt4doc.appspot.com/qimageiohandler.html#loopCount">QImageIOHandler.loopCount</a>（）和<a href="qimagereader.html#canRead" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#canRead">canRead</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="nextImageDelay"></a>int QImageReader.nextImageDelay (<i>self</i>)</h3>
+<p>对于支持动画图像格式，该函数返回的毫秒数要等到显示在动画的下一帧。如果图像格式不支持动画，则返回0 。</p>
+<p>该函数返回-1，如果发生了错误。</p>
+<p><b>See also</b> <a href="qimagereader.html#supportsAnimation" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#supportsAnimation">supportsAnimation</a>（ ）<a href="qimageiohandler.html#nextImageDelay" tppabs="http://pyqt4doc.appspot.com/qimageiohandler.html#nextImageDelay">QImageIOHandler.nextImageDelay</a>（）和<a href="qimagereader.html#canRead" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#canRead">canRead</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="quality"></a>int QImageReader.quality (<i>self</i>)</h3>
+<p>返回的图像的质量级别。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qimagereader.html#setQuality" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setQuality">setQuality</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="read"></a><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> QImageReader.read (<i>self</i>)</h3>
+<p>读取从设备中的图像。成功时，所读取的图像传回，否则空<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>返回。然后，您可以调用<a href="qimagereader.html#error" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#error">error</a>（）找到所发生的错误的类型，或者<a href="qimagereader.html#errorString" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#errorString">errorString</a>（ ）来获得错误的可读描述。</p>
+<p>对于支持动画，调用读取的图像格式（ ）多次将返回下一帧。当所有的帧都被读取，一个空的图像将被退回。</p>
+<p><b>See also</b> <a href="qimagereader.html#canRead" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#canRead">canRead</a>（ ）<a href="qimagereader.html#supportedImageFormats" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#supportedImageFormats">supportedImageFormats</a>（ ）<a href="qimagereader.html#supportsAnimation" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#supportsAnimation">supportsAnimation</a>（）和<a href="qmovie.html" tppabs="http://pyqt4doc.appspot.com/qmovie.html">QMovie</a>。</p>
+
+
+<h3 class="fn">
+<a name="read-2"></a>bool QImageReader.read (<i>self</i>, <a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> <i>image</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>读取从设备中的图像进<i>image</i>，它必须指向一个<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>。成功时返回TRUE ，否则返回False 。</p>
+<p>If <i>image</i>具有相同的格式和大小，因为这是将要读取的图像数据，此功能可能并不需要阅读之前，分配一个新的形象。正因为如此，它可以比其它快<a href="qimagereader.html#read" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#read">read</a>（）重载，它总是构造一个新的形象;读取多个图像具有相同的格式和大小时尤其如此。</p>
+<pre class="cpp">
+ <span class="type"><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a></span> icon(<span class="number">64</span><span class="operator">,</span> <span class="number">64</span><span class="operator">,</span> <span class="type"><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a></span><span class="operator">.</span>Format_RGB32);
+ <span class="type"><a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a></span> reader(<span class="string">"icon_64x64.bmp"</span>);
+ <span class="keyword">if</span> (reader<span class="operator">.</span>read(<span class="operator">&amp;</span>icon)) {
+     <span class="comment">// Display icon</span>
+ }
+</pre>
+<p>对于支持动画，调用图像格式<a href="qimagereader.html#read" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#read">read</a>（ ）多次将返回下一帧。当所有的帧都被读取，一个空的图像将被退回。</p>
+<p><b>See also</b> <a href="qimagereader.html#canRead" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#canRead">canRead</a>（ ）<a href="qimagereader.html#supportedImageFormats" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#supportedImageFormats">supportedImageFormats</a>（ ）<a href="qimagereader.html#supportsAnimation" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#supportsAnimation">supportsAnimation</a>（）和<a href="qmovie.html" tppabs="http://pyqt4doc.appspot.com/qmovie.html">QMovie</a>。</p>
+
+
+<h3 class="fn">
+<a name="scaledClipRect"></a><a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> QImageReader.scaledClipRect (<i>self</i>)</h3>
+<p>返回的图像的缩放的夹子正确。</p>
+<p><b>See also</b> <a href="qimagereader.html#setScaledClipRect" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setScaledClipRect">setScaledClipRect</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="scaledSize"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QImageReader.scaledSize (<i>self</i>)</h3>
+<p>返回的图像的缩放大小。</p>
+<p><b>See also</b> <a href="qimagereader.html#setScaledSize" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setScaledSize">setScaledSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setAutoDetectImageFormat"></a>QImageReader.setAutoDetectImageFormat (<i>self</i>, bool <i>enabled</i>)</h3>
+<p>If <i>enabled</i>诚然，图像格式自动检测被启用，否则，它被禁用。默认情况下，自动检测被启用。</p>
+<p><a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a>使用广泛的方法来检测图像格式：首先，如果你传递一个文件名<a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a>，它会尝试检测文件的扩展名，如果给定的文件名不指向现有的文件，通过追加支持默认扩展到给定的文件名，一次一个。然后使用下面的方法来检测图像格式：</p>
+<ul>
+<li>Image plugins are queried first, based on either the optional
+format string, or the file name suffix (if the source device is a
+file). No content detection is done at this stage. <a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a> will choose the first plugin
+that supports reading for this format.</li>
+<li>If no plugin supports the image format, Qt's built-in handlers
+are checked based on either the optional format string, or the file
+name suffix.</li>
+<li>If no capable plugins or built-in handlers are found, each
+plugin is tested by inspecting the content of the data stream.</li>
+<li>If no plugins could detect the image format based on data
+contents, each built-in image handler is tested by inspecting the
+contents.</li>
+<li>Finally, if all above approaches fail, <a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a> will report failure when
+trying to read the image.</li>
+</ul>
+<p>通过禁用图像格式自动检测，<a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a>只有查询的基础上，格式字符串（例如，没有文件扩展名进行测试）的插件和内置的处理程序。</p>
+<p><b>See also</b> <a href="qimagereader.html#autoDetectImageFormat" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#autoDetectImageFormat">autoDetectImageFormat</a>（ ）<a href="qimageiohandler.html#canRead" tppabs="http://pyqt4doc.appspot.com/qimageiohandler.html#canRead">QImageIOHandler.canRead</a>（）和<a href="index.htm#capabilities" tppabs="http://pyqt4doc.appspot.com/qimageioplugin.html#capabilities">QImageIOPlugin.capabilities</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setBackgroundColor"></a>QImageReader.setBackgroundColor (<i>self</i>, <a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a> <i>color</i>)</h3>
+<p>设置背景色为<i>color</i>。支持此操作的图像格式，预计到后台初始化<i>color</i>前阅读一个图像。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qimagereader.html#backgroundColor" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#backgroundColor">backgroundColor</a>（）和<a href="qimagereader.html#read" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#read">read</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setClipRect"></a>QImageReader.setClipRect (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>rect</i>)</h3>
+<p>设定影像剪辑矩形（也称为投资回报率，或感兴趣区域） ，以<i>rect</i>。的坐标<i>rect</i>是相对于未转化的图像的大小，所返回的<a href="qimagereader.html#size" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#size">size</a>（ ） 。</p>
+<p><b>See also</b> <a href="qimagereader.html#clipRect" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#clipRect">clipRect</a>（ ）<a href="qimagereader.html#setScaledSize" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setScaledSize">setScaledSize</a>（）和<a href="qimagereader.html#setScaledClipRect" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setScaledClipRect">setScaledClipRect</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setDecideFormatFromContent"></a>QImageReader.setDecideFormatFromContent (<i>self</i>, bool <i>ignored</i>)</h3>
+<p>If <i>ignored</i>设置为True ，则图像阅读器将忽略指定的格式或文件扩展名，并决定哪些插件只是基于在数据流中的内容使用。</p>
+<p>设置这个标志意味着所有图像插件被加载。每个插件将读取的图像数据的第一个字节，并决定是否插件兼容与否。</p>
+<p>这也将禁用自动检测的图像格式。</p>
+<p><b>See also</b> <a href="qimagereader.html#decideFormatFromContent" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#decideFormatFromContent">decideFormatFromContent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setDevice"></a>QImageReader.setDevice (<i>self</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>device</i>)</h3>
+<p>Sets <a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a>的设备<i>device</i>。如果设备已经被设置，旧设备是从除去<a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a>而在其他情况保持不变。</p>
+<p>如果该设备尚未打开，<a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a>将尝试在打开设备<a href="qiodevice.html#OpenModeFlag-enum" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#OpenModeFlag-enum">QIODevice.ReadOnly</a>模式通过调用open （ ） 。注意，这并不对某些设备，如工作<a href="qprocess.html" tppabs="http://pyqt4doc.appspot.com/qprocess.html">QProcess</a>，<a href="qtcpsocket.html" tppabs="http://pyqt4doc.appspot.com/qtcpsocket.html">QTcpSocket</a>和<a href="qudpsocket.html" tppabs="http://pyqt4doc.appspot.com/qudpsocket.html">QUdpSocket</a>，其中更多的逻辑需要打开设备。</p>
+<p><b>See also</b> <a href="qimagereader.html#device" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#device">device</a>（）和<a href="qimagereader.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setFileName">setFileName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFileName"></a>QImageReader.setFileName (<i>self</i>, QString <i>fileName</i>)</h3>
+<p>设置的文件名<a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a>至<i>fileName</i>。在内部，<a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a>将创建一个<a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a>对象，并在打开它<a href="qiodevice.html#OpenModeFlag-enum" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#OpenModeFlag-enum">QIODevice.ReadOnly</a>模式，阅读图像时使用这个。</p>
+<p>If <i>fileName</i>不包括文件扩展名（例如， 。 PNG或。 BMP ） ，<a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a>将循环遍历所有支持的扩展，直到找到一个匹配的文件。</p>
+<p><b>See also</b> <a href="qimagereader.html#fileName" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#fileName">fileName</a>（ ）<a href="qimagereader.html#setDevice" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setDevice">setDevice</a>（）和<a href="qimagereader.html#supportedImageFormats" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#supportedImageFormats">supportedImageFormats</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFormat"></a>QImageReader.setFormat (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>format</i>)</h3>
+<p>设置格式<a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a>将使用阅读图像时，以<i>format</i>。<i>format</i>是不区分大小写的文本字符串。例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a></span> reader;
+ reader<span class="operator">.</span>setFormat(<span class="string">"png"</span>); <span class="comment">// same as reader.setFormat("PNG");</span>
+</pre>
+<p>您可以致电<a href="qimagereader.html#supportedImageFormats" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#supportedImageFormats">supportedImageFormats</a>（ ）对于格式的完整列表<a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a>支持。</p>
+<p><b>See also</b> <a href="qimagereader.html#format" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#format">format</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setQuality"></a>QImageReader.setQuality (<i>self</i>, int <i>quality</i>)</h3>
+<p>这是一种图像格式的具体功能，用于设置图像的质量水平来<i>quality</i>。对于不支持设置质量的图像格式，该值将被忽略。</p>
+<p>的取值范围<i>quality</i>取决于图像格式。例如， “JPEG”格式支持的质量范围从0（低品质，高压缩）到100 （高品质，低压缩率） 。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qimagereader.html#quality" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#quality">quality</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setScaledClipRect"></a>QImageReader.setScaledClipRect (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>rect</i>)</h3>
+<p>设置缩放剪辑矩形到<i>rect</i>。缩放剪辑矩形是剪辑矩形（也称为投资回报率，或感兴趣区域）所应用的图像已被缩放后。</p>
+<p><b>See also</b> <a href="qimagereader.html#scaledClipRect" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#scaledClipRect">scaledClipRect</a>（）和<a href="qimagereader.html#setScaledSize" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setScaledSize">setScaledSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setScaledSize"></a>QImageReader.setScaledSize (<i>self</i>, <a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> <i>size</i>)</h3>
+<p>设置图像的缩放的大小来<i>size</i>。的缩放初始剪辑矩形后进行的，但经缩放的剪辑矩形应用之前。用于缩放的算法依赖于图像格式。默认情况下（即，如果图像格式不支持缩放）<a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a>将使用QImage.scale （ ）与Qt.SmoothScaling 。</p>
+<p><b>See also</b> <a href="qimagereader.html#scaledSize" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#scaledSize">scaledSize</a>（ ）<a href="qimagereader.html#setClipRect" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setClipRect">setClipRect</a>（）和<a href="qimagereader.html#setScaledClipRect" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setScaledClipRect">setScaledClipRect</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="size"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QImageReader.size (<i>self</i>)</h3>
+<p>返回图像的大小，而无需实际读出图像的内容。</p>
+<p>如果图像格式不支持此功能，这个函数返回一个无效的大小。 Qt的内置图像处理程序都支持此功能，但自定义图像格式的插件并不需要这么做。</p>
+<p><b>See also</b> <a href="qimageiohandler.html#ImageOption-enum" tppabs="http://pyqt4doc.appspot.com/qimageiohandler.html#ImageOption-enum">QImageIOHandler.ImageOption</a>，<a href="qimageiohandler.html#option" tppabs="http://pyqt4doc.appspot.com/qimageiohandler.html#option">QImageIOHandler.option</a>（）和<a href="qimageiohandler.html#supportsOption" tppabs="http://pyqt4doc.appspot.com/qimageiohandler.html#supportsOption">QImageIOHandler.supportsOption</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="supportedImageFormats"></a>list-of-QByteArray QImageReader.supportedImageFormats ()</h3>
+<p>传回的图像格式所支持的列表<a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a>。</p>
+<p>默认情况下， Qt可以阅读以下格式：</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Format</th>
+<th>Description</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td>BMP</td>
+<td>Windows Bitmap</td>
+</tr>
+<tr class="even" valign="top">
+<td>GIF</td>
+<td>Graphic Interchange Format (optional)</td>
+</tr>
+<tr class="odd" valign="top">
+<td>JPG</td>
+<td>Joint Photographic Experts Group</td>
+</tr>
+<tr class="even" valign="top">
+<td>JPEG</td>
+<td>Joint Photographic Experts Group</td>
+</tr>
+<tr class="odd" valign="top">
+<td>MNG</td>
+<td>Multiple-image Network Graphics</td>
+</tr>
+<tr class="even" valign="top">
+<td>PNG</td>
+<td>Portable Network Graphics</td>
+</tr>
+<tr class="odd" valign="top">
+<td>PBM</td>
+<td>Portable Bitmap</td>
+</tr>
+<tr class="even" valign="top">
+<td>PGM</td>
+<td>Portable Graymap</td>
+</tr>
+<tr class="odd" valign="top">
+<td>PPM</td>
+<td>Portable Pixmap</td>
+</tr>
+<tr class="even" valign="top">
+<td>TIFF</td>
+<td>Tagged Image File Format</td>
+</tr>
+<tr class="odd" valign="top">
+<td>XBM</td>
+<td>X11 Bitmap</td>
+</tr>
+<tr class="even" valign="top">
+<td>XPM</td>
+<td>X11 Pixmap</td>
+</tr>
+<tr class="odd" valign="top">
+<td>SVG</td>
+<td>Scalable Vector Graphics</td>
+</tr>
+<tr class="even" valign="top">
+<td>TGA</td>
+<td>Targa Image Format</td>
+</tr>
+</table>
+<p>读取和写入SVG文件是通过Qt的支持<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtsvg.html">SVG Module</a>。</p>
+<p>TGA只支持扩展到读非RLE压缩文件。尤其调用<a href="http://doc.qt.nokia.com/4.7-snapshot/qimageioplugin.html#capabilities">
+capabilities</a>对于TGA插件只返回<a href="index.htm#Capability-enum" tppabs="http://pyqt4doc.appspot.com/qimageioplugin.html#Capability-enum">QImageIOPlugin.CanRead</a>，不<a href="index.htm#Capability-enum" tppabs="http://pyqt4doc.appspot.com/qimageioplugin.html#Capability-enum">QImageIOPlugin.CanWrite</a>。</p>
+<p>要配置的Qt与支持GIF ，通过<tt>-qt-gif</tt>到<tt>configure</tt>脚本或检查在图形安装程序中的相应选项。</p>
+<p>注意，这个<a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a>实例必须调用此函数之前创建。</p>
+<p><b>See also</b> <a href="qimagereader.html#setFormat" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#setFormat">setFormat</a>（ ）<a href="qimagewriter.html#supportedImageFormats" tppabs="http://pyqt4doc.appspot.com/qimagewriter.html#supportedImageFormats">QImageWriter.supportedImageFormats</a>（）和<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qimageioplugin.html">QImageIOPlugin</a>。</p>
+
+
+<h3 class="fn">
+<a name="supportsAnimation"></a>bool QImageReader.supportsAnimation (<i>self</i>)</h3>
+<p>返回True如果图像格式支持动画，否则返回False 。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qmovie.html#supportedFormats" tppabs="http://pyqt4doc.appspot.com/qmovie.html#supportedFormats">QMovie.supportedFormats</a>().</p>
+
+
+<h3 class="fn">
+<a name="supportsOption"></a>bool QImageReader.supportsOption (<i>self</i>, <a href="qimageiohandler.html#ImageOption-enum" tppabs="http://pyqt4doc.appspot.com/qimageiohandler.html#ImageOption-enum">QImageIOHandler.ImageOption</a> <i>option</i>)</h3>
+<p>返回True如果读者支持<i>option</i>否则返回False 。</p>
+<p>不同的图像格式支持不同的选项。调用此函数来判断某个选项是否支持当前格式。例如， PNG格式允许你嵌入文本到图像的元数据（见<a href="qimagereader.html#text" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#text">text</a>（ ） ） ，和BMP格式允许您确定图像的大小，而无需加载整个图像到内存中（见<a href="qimagereader.html#size" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#size">size</a>（））。</p>
+<pre class="cpp">
+ <span class="type"><a href="qimagereader.html" tppabs="http://pyqt4doc.appspot.com/qimagereader.html">QImageReader</a></span> reader(<span class="string">":/image.png"</span>);
+ <span class="keyword">if</span> (reader<span class="operator">.</span>supportsOption(<span class="type"><a href="qimageiohandler.html" tppabs="http://pyqt4doc.appspot.com/qimageiohandler.html">QImageIOHandler</a></span><span class="operator">.</span>Size))
+     <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"Size:"</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> reader<span class="operator">.</span><a href="qimagereader.html#size" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#size">size</a>();
+</pre>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qimagewriter.html#supportsOption" tppabs="http://pyqt4doc.appspot.com/qimagewriter.html#supportsOption">QImageWriter.supportsOption</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="text"></a>QString QImageReader.text (<i>self</i>, QString <i>key</i>)</h3>
+<p>返回与相关图像的文字<i>key</i>。</p>
+<p>支持这个选项是通过实施<a href="qimageiohandler.html#ImageOption-enum" tppabs="http://pyqt4doc.appspot.com/qimageiohandler.html#ImageOption-enum">QImageIOHandler.Description</a>。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qimagereader.html#textKeys" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#textKeys">textKeys</a>（）和<a href="qimagewriter.html#setText" tppabs="http://pyqt4doc.appspot.com/qimagewriter.html#setText">QImageWriter.setText</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="textKeys"></a>QStringList QImageReader.textKeys (<i>self</i>)</h3>
+<p>返回文本键这一形象。您可以使用这些按键与<a href="qimagereader.html#text" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#text">text</a>（ ）列出图像文本的某些关键。</p>
+<p>支持这个选项是通过实施<a href="qimageiohandler.html#ImageOption-enum" tppabs="http://pyqt4doc.appspot.com/qimageiohandler.html#ImageOption-enum">QImageIOHandler.Description</a>。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qimagereader.html#text" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#text">text</a>（ ）<a href="qimagewriter.html#setText" tppabs="http://pyqt4doc.appspot.com/qimagewriter.html#setText">QImageWriter.setText</a>（）和<a href="qimage.html#textKeys" tppabs="http://pyqt4doc.appspot.com/qimage.html#textKeys">QImage.textKeys</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

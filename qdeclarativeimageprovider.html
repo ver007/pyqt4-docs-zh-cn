@@ -1,0 +1,189 @@
+﻿<html>
+<head>
+<title>QDeclarativeImageProvider Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDeclarativeImageProvider Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdeclarative.html">QtDeclarative</a> module]</sup></sup>
+</h1>
+<p>该QDeclarativeImageProvider类提供支持像素图和螺纹图像请求在QML的接口。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qdeclarativeimageprovider.html#ImageType-enum" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html#ImageType-enum">ImageType</a></b> { Image, Pixmap }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdeclarativeimageprovider.html#QDeclarativeImageProvider" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html#QDeclarativeImageProvider">__init__</a></b> (<i>self</i>, ImageType <i>type</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdeclarativeimageprovider.html#QDeclarativeImageProvider-2" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html#QDeclarativeImageProvider-2">__init__</a></b> (<i>self</i>, QDeclarativeImageProvider)</li>
+<li>
+<div class="fn"></div>ImageType <b><a href="qdeclarativeimageprovider.html#imageType" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html#imageType">imageType</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QImage <b><a href="qdeclarativeimageprovider.html#requestImage" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html#requestImage">requestImage</a></b> (<i>self</i>, QString <i>id</i>, QSize <i>size</i>, QSize <i>requestedSize</i>)</li>
+<li>
+<div class="fn"></div>QPixmap <b><a href="qdeclarativeimageprovider.html#requestPixmap" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html#requestPixmap">requestPixmap</a></b> (<i>self</i>, QString <i>id</i>, QSize <i>size</i>, QSize <i>requestedSize</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDeclarativeImageProvider类提供支持像素图和螺纹图像请求在QML的接口。</p>
+<p>QDeclarativeImageProvider是用来提供在QML应用先进的图像加载功能。它允许在QML图像是：</p>
+<ul>
+<li>Loaded using QPixmaps rather than actual image files</li>
+<li>Loaded asynchronously in a separate thread, if <a href="qdeclarativeimageprovider.html#imageType" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html#imageType">imageType</a>() is
+<a href="qdeclarativeimageprovider.html#ImageType-enum" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html#ImageType-enum">ImageType.Image</a>
+</li>
+</ul>
+<p>要指定图像应该通过图像提供商加载，使用<b>"image:"</b>方案的图像的URL源，接着通过图像提供者和请求图像的标识符。例如：</p>
+<pre class="qml">
+ <span class="type"><a href="qdeclarativeimageprovider.html#ImageType-enum" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html#ImageType-enum">Image</a></span> { <span class="name">source</span>: <span class="string">"image://myimageprovider/image.png"</span> }
+</pre>
+<p>这指定图像应该由名为“ myimageprovider ”的形象提供商被加载，并且要加载的图像被命名为“ image.png ” 。根据已通过注册的供应商的QML引擎调用相应的图像提供商<a href="qdeclarativeengine.html#addImageProvider" tppabs="http://pyqt4doc.appspot.com/qdeclarativeengine.html#addImageProvider">QDeclarativeEngine.addImageProvider</a>（ ） 。</p>
+<p>请注意，标识符是不区分大小写的，但是URL的其馀部分将被传递与保存情况。例如，下面的代码片段仍然会指定的图像是由一个名为“ myimageprovider ”的形象提供加载，但它会要求不同的图像比上面的代码片段（ “ Image.png ”而不是“ image.png ” ） 。</p>
+<pre class="qml">
+ <span class="type"><a href="qdeclarativeimageprovider.html#ImageType-enum" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html#ImageType-enum">Image</a></span> { <span class="name">source</span>: <span class="string">"image://MyImageProvider/Image.png"</span> }
+</pre>
+<p>如果你想要的URL的其馀部分是不区分大小写的，你将不得不采取的是自己的形象提供商内部的照顾。</p>
+<a id="an-example" name="an-example"></a>
+<h4>An example</h4>
+<p>这里有两个图像。他们的<tt>source</tt>值表明它们应以命名为“颜色”的图像提供者被加载，并且要加载的图像是“黄色”和“红色” ，分别是：</p>
+<pre class="qml">
+ <span class="type"><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qml-column.html">Column</a></span> {
+     <span class="type"><a href="qdeclarativeimageprovider.html#ImageType-enum" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html#ImageType-enum">Image</a></span> { <span class="name">source</span>: <span class="string">"image://colors/yellow"</span> }
+     <span class="type"><a href="qdeclarativeimageprovider.html#ImageType-enum" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html#ImageType-enum">Image</a></span> { <span class="name">source</span>: <span class="string">"image://colors/red"</span> }
+ }
+</pre>
+<p>当这些图像通过QML加载，它会寻找一个匹配的图像提供者和调用它的<a href="qdeclarativeimageprovider.html#requestImage" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html#requestImage">requestImage</a>（）或<a href="qdeclarativeimageprovider.html#requestPixmap" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html#requestPixmap">requestPixmap</a>（）方法（取决于其<a href="qdeclarativeimageprovider.html#imageType" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html#imageType">imageType</a>（））来加载图像。该方法被调用的<tt>id</tt>参数设置为“黄色”的第一映像，而“红色”为第二。</p>
+<p>这里是一个图像提供商实现，可以加载由上面的QML要求的图像。此实现动态生成<a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a>那充满了请求的彩色图像：</p>
+<pre class="cpp">
+ <span class="keyword">class</span> ColorImageProvider : <span class="keyword">public</span> <span class="type">QDeclarativeImageProvider</span>
+ {
+ <span class="keyword">public</span>:
+     ColorImageProvider()
+         : <span class="type">QDeclarativeImageProvider</span>(<span class="type">QDeclarativeImageProvider</span><span class="operator">.</span>Pixmap)
+     {
+     }
+
+     <span class="type"><a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a></span> requestPixmap(<span class="keyword">const</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> <span class="operator">&amp;</span>id<span class="operator">,</span> <span class="type"><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a></span> <span class="operator">*</span>size<span class="operator">,</span> <span class="keyword">const</span> <span class="type"><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a></span> <span class="operator">&amp;</span>requestedSize)
+     {
+         <span class="type">int</span> width <span class="operator">=</span> <span class="number">100</span>;
+         <span class="type">int</span> height <span class="operator">=</span> <span class="number">50</span>;
+
+         <span class="keyword">if</span> (size)
+             <span class="operator">*</span>size <span class="operator">=</span> <span class="type"><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a></span>(width<span class="operator">,</span> height);
+         <span class="type"><a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a></span> pixmap(requestedSize<span class="operator">.</span>width() <span class="operator">&gt;</span> <span class="number">0</span> <span class="operator">?</span> requestedSize<span class="operator">.</span>width() : width<span class="operator">,</span>
+                        requestedSize<span class="operator">.</span>height() <span class="operator">&gt;</span> <span class="number">0</span> <span class="operator">?</span> requestedSize<span class="operator">.</span>height() : height);
+         pixmap<span class="operator">.</span>fill(<span class="type"><a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a></span>(id)<span class="operator">.</span>rgba());
+
+         <span class="keyword">return</span> pixmap;
+     }
+ };
+</pre>
+<p>为了使这提供商访问QML ，它注册到QML引擎与“色”的标识符：</p>
+<pre class="cpp">
+ <span class="type">int</span> main(<span class="type">int</span> argc<span class="operator">,</span> <span class="type">char</span> <span class="operator">*</span>argv<span class="operator">[</span><span class="operator">]</span>)
+ {
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+
+     <span class="type"><a href="qdeclarativeengine.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativeengine.html">QDeclarativeEngine</a></span> engine;
+     engine<span class="operator">-</span><span class="operator">&gt;</span>addImageProvider(QLatin1String(<span class="string">"colors"</span>)<span class="operator">,</span> <span class="keyword">new</span> ColorPixmapProvider);
+
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ }
+</pre>
+<p>现在，该图像可以成功加载在QML ：</p>
+<p class="centerAlign"><img alt="" src="images/imageprovider.png"></p>
+<p>一个完整的例子可在Qt的<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/declarative-cppextensions-imageprovider.html">examples/declarative/cppextensions/imageprovider</a>目录。请注意该示例通过一个注册的供应商<a href="qdeclarativeextensionplugin.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativeextensionplugin.html">plugin</a>而不是注册在应用程序中<tt>main()</tt>功能，如上所示。</p>
+<a id="asynchronous-image-loading" name="asynchronous-image-loading"></a>
+<h4>Asynchronous image loading</h4>
+<p>支持图片提供商<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>自动加载包括对图像的异步加载的支持。要启用异步加载的图像源，设置<tt>asynchronous</tt>属性为<tt>true</tt>的相关<a href="qdeclarativeimageprovider.html#ImageType-enum" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html#ImageType-enum">Image</a>，<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qml-borderimage.html">BorderImage</a> or <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qml-animatedimage.html">AnimatedImage</a>对象。当启用此功能时，图像请求提供商是运行在一个低优先级的线程，让图像加载在后台被执行，并且减少了用户界面的性能影响。</p>
+<p>不支持，提供图像提供商异步加载<a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a>而不是<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>值，像素映射只能在主线程中创建的。在这种情况下，如果<a href="index.htm#asynchronous-prop" tppabs="http://pyqt4doc.appspot.com/qml-image.html#asynchronous-prop">asynchronous</a>被设置为<tt>true</tt>，该值将被忽略和图像同步加载。</p>
+<a id="image-caching" name="image-caching"></a>
+<h4>Image caching</h4>
+<p>由QDeclarativeImageProvider返回图像会自动缓存，类似于由QML引擎加载任何图像。当用“图像:/ / ”前缀的图像被从缓存中加载，<a href="qdeclarativeimageprovider.html#requestImage" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html#requestImage">requestImage</a>（）和<a href="qdeclarativeimageprovider.html#requestPixmap" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html#requestPixmap">requestPixmap</a>（ ）不会被调用相关图像提供商。如果图像应始终从图像提供者获取，并且不应该在所有高速缓存中，设置<tt>cache</tt>属性为<tt>false</tt>的相关<a href="qdeclarativeimageprovider.html#ImageType-enum" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html#ImageType-enum">Image</a>，<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qml-borderimage.html">BorderImage</a> or <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qml-animatedimage.html">AnimatedImage</a>对象。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="ImageType-enum"></a>QDeclarativeImageProvider.ImageType</h3>
+<p>定义此图像提供商支持的图像类型。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDeclarativeImageProvider.Image</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">图像提供商提供<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>图像。该<a href="qdeclarativeimageprovider.html#requestImage" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html#requestImage">requestImage</a>（ ）方法会被调用所有的图像请求。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDeclarativeImageProvider.Pixmap</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">图像提供商提供<a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a>图像。该<a href="qdeclarativeimageprovider.html#requestPixmap" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html#requestPixmap">requestPixmap</a>（ ）方法会被调用所有的图像请求。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDeclarativeImageProvider"></a>QDeclarativeImageProvider.__init__ (<i>self</i>, <a href="qdeclarativeimageprovider.html#ImageType-enum" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html#ImageType-enum">ImageType</a> <i>type</i>)</h3>
+<p>创建一个图像提供商，将提供给定的图像<i>type</i>。</p>
+
+
+<h3 class="fn">
+<a name="QDeclarativeImageProvider-2"></a>QDeclarativeImageProvider.__init__ (<i>self</i>, <a href="qdeclarativeimageprovider.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html">QDeclarativeImageProvider</a>)</h3>
+<h3 class="fn">
+<a name="imageType"></a><a href="qdeclarativeimageprovider.html#ImageType-enum" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html#ImageType-enum">ImageType</a> QDeclarativeImageProvider.imageType (<i>self</i>)</h3>
+<p>返回此提供程序支持的图像类型。</p>
+
+
+<h3 class="fn">
+<a name="requestImage"></a><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> QDeclarativeImageProvider.requestImage (<i>self</i>, QString <i>id</i>, <a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> <i>size</i>, <a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> <i>requestedSize</i>)</h3>
+<p>实现此方法与返回的图像<i>id</i>。默认实现返回一个空的图像。</p>
+<p>该<i>id</i>是请求的图像源，以“形象： ”方案和提供商的标识去掉。例如，如果图像<a href="index.htm#source-prop" tppabs="http://pyqt4doc.appspot.com/qml-image.html#source-prop">source</a>在“图像:/ / MYPROVIDER /图标/家” ，给定的<i>id</i>将“图标/家” 。</p>
+<p>该<i>requestedSize</i>对应于<a href="index.htm#sourceSize-prop" tppabs="http://pyqt4doc.appspot.com/qml-image.html#sourceSize-prop">Image.sourceSize</a>通过图像元素要求。如果<i>requestedSize</i>是一个有效的大小，返回的图像应该是大小。</p>
+<p>在所有情况下，<i>size</i>必须被设置到图像的原始大小。这是用于设置<a href="index.htm#width-prop" tppabs="http://pyqt4doc.appspot.com/qml-item.html#width-prop">width</a>和<a href="index.htm#height-prop" tppabs="http://pyqt4doc.appspot.com/qml-item.html#height-prop">height</a>相关的<a href="qdeclarativeimageprovider.html#ImageType-enum" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html#ImageType-enum">Image</a>如果这些值没有显式设置。</p>
+<p><b>Note:</b>这种方法可以被多个线程调用，因此确保该方法的实现是可重入的。</p>
+
+
+<h3 class="fn">
+<a name="requestPixmap"></a><a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a> QDeclarativeImageProvider.requestPixmap (<i>self</i>, QString <i>id</i>, <a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> <i>size</i>, <a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> <i>requestedSize</i>)</h3>
+<p>实现此方法与返回的像素图<i>id</i>。默认实现返回一个空的像素图。</p>
+<p>该<i>id</i>是请求的图像源，以“形象： ”方案和提供商的标识去掉。例如，如果图像<a href="index.htm#source-prop" tppabs="http://pyqt4doc.appspot.com/qml-image.html#source-prop">source</a>在“图像:/ / MYPROVIDER /图标/家” ，给定的<i>id</i>将“图标/家” 。</p>
+<p>该<i>requestedSize</i>对应于<a href="index.htm#sourceSize-prop" tppabs="http://pyqt4doc.appspot.com/qml-image.html#sourceSize-prop">Image.sourceSize</a>通过图像元素要求。如果<i>requestedSize</i>是一个有效的大小，返回的图像应该是大小。</p>
+<p>在所有情况下，<i>size</i>必须被设置到图像的原始大小。这是用于设置<a href="index.htm#width-prop" tppabs="http://pyqt4doc.appspot.com/qml-item.html#width-prop">width</a>和<a href="index.htm#height-prop" tppabs="http://pyqt4doc.appspot.com/qml-item.html#height-prop">height</a>相关的<a href="qdeclarativeimageprovider.html#ImageType-enum" tppabs="http://pyqt4doc.appspot.com/qdeclarativeimageprovider.html#ImageType-enum">Image</a>如果这些值没有显式设置。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

@@ -1,0 +1,862 @@
+﻿<html>
+<head>
+<title>QRegExp Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QRegExp Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>使用正则表达式类负责提供模式匹配。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qregexp.html#CaretMode-enum" tppabs="http://pyqt4doc.appspot.com/qregexp.html#CaretMode-enum">CaretMode</a></b> { CaretAtZero, CaretAtOffset, CaretWontMatch }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qregexp.html#PatternSyntax-enum" tppabs="http://pyqt4doc.appspot.com/qregexp.html#PatternSyntax-enum">PatternSyntax</a></b> { RegExp, RegExp2, Wildcard, FixedString, WildcardUnix, W3CXmlSchema11 }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qregexp.html#QRegExp" tppabs="http://pyqt4doc.appspot.com/qregexp.html#QRegExp">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qregexp.html#QRegExp-2" tppabs="http://pyqt4doc.appspot.com/qregexp.html#QRegExp-2">__init__</a></b> (<i>self</i>, QString <i>pattern</i>, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive, PatternSyntax <i>syntax</i> = QRegExp.RegExp)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qregexp.html#QRegExp-3" tppabs="http://pyqt4doc.appspot.com/qregexp.html#QRegExp-3">__init__</a></b> (<i>self</i>, QRegExp <i>rx</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qregexp.html#cap" tppabs="http://pyqt4doc.appspot.com/qregexp.html#cap">cap</a></b> (<i>self</i>, int <i>nth</i> = 0)</li>
+<li>
+<div class="fn"></div>int <b><a href="qregexp.html#captureCount" tppabs="http://pyqt4doc.appspot.com/qregexp.html#captureCount">captureCount</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qregexp.html#capturedTexts" tppabs="http://pyqt4doc.appspot.com/qregexp.html#capturedTexts">capturedTexts</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Qt.CaseSensitivity <b><a href="qregexp.html#caseSensitivity" tppabs="http://pyqt4doc.appspot.com/qregexp.html#caseSensitivity">caseSensitivity</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qregexp.html#errorString" tppabs="http://pyqt4doc.appspot.com/qregexp.html#errorString">errorString</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qregexp.html#exactMatch" tppabs="http://pyqt4doc.appspot.com/qregexp.html#exactMatch">exactMatch</a></b> (<i>self</i>, QString <i>str</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qregexp.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qregexp.html#indexIn">indexIn</a></b> (<i>self</i>, QString <i>str</i>, int <i>offset</i> = 0, CaretMode <i>caretMode</i> = QRegExp.CaretAtZero)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qregexp.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qregexp.html#isEmpty">isEmpty</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qregexp.html#isMinimal" tppabs="http://pyqt4doc.appspot.com/qregexp.html#isMinimal">isMinimal</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qregexp.html#isValid" tppabs="http://pyqt4doc.appspot.com/qregexp.html#isValid">isValid</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qregexp.html#lastIndexIn" tppabs="http://pyqt4doc.appspot.com/qregexp.html#lastIndexIn">lastIndexIn</a></b> (<i>self</i>, QString <i>str</i>, int <i>offset</i> = -1, CaretMode <i>caretMode</i> = QRegExp.CaretAtZero)</li>
+<li>
+<div class="fn"></div>int <b><a href="qregexp.html#matchedLength" tppabs="http://pyqt4doc.appspot.com/qregexp.html#matchedLength">matchedLength</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qregexp.html#numCaptures" tppabs="http://pyqt4doc.appspot.com/qregexp.html#numCaptures">numCaptures</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qregexp.html#pattern" tppabs="http://pyqt4doc.appspot.com/qregexp.html#pattern">pattern</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>PatternSyntax <b><a href="qregexp.html#patternSyntax" tppabs="http://pyqt4doc.appspot.com/qregexp.html#patternSyntax">patternSyntax</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qregexp.html#pos" tppabs="http://pyqt4doc.appspot.com/qregexp.html#pos">pos</a></b> (<i>self</i>, int <i>nth</i> = 0)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qregexp.html#setCaseSensitivity" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setCaseSensitivity">setCaseSensitivity</a></b> (<i>self</i>, Qt.CaseSensitivity <i>cs</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qregexp.html#setMinimal" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setMinimal">setMinimal</a></b> (<i>self</i>, bool <i>minimal</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qregexp.html#setPattern" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setPattern">setPattern</a></b> (<i>self</i>, QString <i>pattern</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qregexp.html#setPatternSyntax" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setPatternSyntax">setPatternSyntax</a></b> (<i>self</i>, PatternSyntax <i>syntax</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qregexp.html#swap" tppabs="http://pyqt4doc.appspot.com/qregexp.html#swap">swap</a></b> (<i>self</i>, QRegExp <i>other</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul><li>
+<div class="fn"></div>QString <b><a href="qregexp.html#escape" tppabs="http://pyqt4doc.appspot.com/qregexp.html#escape">escape</a></b> (QString <i>str</i>)</li></ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>bool <b><a href="qregexp.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qregexp.html#__eq__">__eq__</a></b> (<i>self</i>, QRegExp <i>rx</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qregexp.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qregexp.html#__ne__">__ne__</a></b> (<i>self</i>, QRegExp <i>rx</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qregexp.html#__repr__" tppabs="http://pyqt4doc.appspot.com/qregexp.html#__repr__">__repr__</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>使用正则表达式类负责提供模式匹配。</p>
+<a id="regular-expression" name="regular-expression"></a>
+<p>正则表达式，或“正则表达式” ，是在一个文本字符串匹配的模式。这在许多情况下是有用的，例如，</p>
+<table class="generic">
+<tr class="odd" valign="top">
+<td>Validation</td>
+<td>A regexp can test whether a substring meets some criteria, e.g.
+is an integer or contains no whitespace.</td>
+</tr>
+<tr class="even" valign="top">
+<td>Searching</td>
+<td>A regexp provides more powerful pattern matching than simple
+substring matching, e.g., match one of the words <i>mail</i>,
+<i>letter</i> or <i>correspondence</i>, but none of the words
+<i>email</i>, <i>mailman</i>, <i>mailer</i>, <i>letterbox</i>,
+etc.</td>
+</tr>
+<tr class="odd" valign="top">
+<td>Search and Replace</td>
+<td>A regexp can replace all occurrences of a substring with a
+different substring, e.g., replace all occurrences of <i>&amp;</i>
+with <i>&amp;amp;</i> except where the <i>&amp;</i> is already
+followed by an <i>amp;</i>.</td>
+</tr>
+<tr class="even" valign="top">
+<td>String Splitting</td>
+<td>A regexp can be used to identify where a string should be split
+apart, e.g. splitting tab-delimited strings.</td>
+</tr>
+</table>
+<p>简要介绍了正则表达式给出， Qt的正则表达式语言，一些例子，函数文档本身的描述。 QRegExp是仿照Perl的正则表达式语言。它完全支持Unicode 。 QRegExp也可以使用更简单的，<i>wildcard mode</i>类似于在命令shell中的功能。使用QRegExp的语法规则可以被改变<a href="qregexp.html#setPatternSyntax" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setPatternSyntax">setPatternSyntax</a>（ ） 。特别是，该模式的语法可以被设置为<a href="qregexp.html#PatternSyntax-enum" tppabs="http://pyqt4doc.appspot.com/qregexp.html#PatternSyntax-enum">QRegExp.FixedString</a>，这意味着要匹配的模式被解释为一个普通的字符串，即特殊字符（如反斜线）不会逃脱。</p>
+<p>在正则表达式一个很好的文本<i>Mastering Regular Expressions</i>（第三版）由Jeffrey EF Friedl的，国际标准书号0-596-52812-4 。</p>
+<a id="introduction" name="introduction"></a>
+<h3>Introduction</h3>
+<p>正则表达式是由表情，量词，并断言建立起来。最简单的表达式是一个字符，例如<b>x</b>
+or <b>5</b>。表达式也可以是一组方括号括起来的字符。<b>[ABCD]</b>将匹配<b>A</b>或<b>B</b>或<b>C</b>或<b>D</b>。我们可以这样写相同的表达式为<b>[A-D]</b>，以及以消痰匹配英文字母的任何下水管局字母写成<b>[A-Z]</b>。</p>
+<p>量词指定事件表达式必须匹配的数量。<b>x{1,1}</b>意味着匹配一个且只有一个<b>x</b>。<b>x{1,5}</b>表示匹配序列<b>x</b>包含至少一个字符<b>x</b>但不超过五个。</p>
+<p>请注意，在一般的正则表达式不能用于检查平衡括号或标籤。例如，正则表达式可以被写入到一个匹配HTML开始<tt>&lt;b&gt;</tt>及其关闭<tt>&lt;/b&gt;</tt>如果<tt>&lt;b&gt;</tt>标籤不能嵌套，但如果<tt>&lt;b&gt;</tt>标籤是嵌套的，即同样的正则表达式将匹配一开口<tt>&lt;b&gt;</tt>用错误的结束标记<tt>&lt;/b&gt;</tt>。对于片段<tt>&lt;b&gt;bold
+&lt;b&gt;bolder&lt;/b&gt;&lt;/b&gt;</tt>中，第一<tt>&lt;b&gt;</tt>将与第一个匹配<tt>&lt;/b&gt;</tt>，这是不正确的。但是，可以编写一个正则表达式，将正确匹配嵌套的括号或标籤，但只有当嵌套级别的数量是固定的和已知的。如果嵌套级别的数量是不固定的和已知的，它是不可能写，不会失败的一个正则表达式。</p>
+<p>假设我们希望有一个正则表达式来取值范围为0 〜99的整数相匹配。至少有一个数字是必需的，所以我们开始与表达<b>[0-9]{1,1}</b>，它匹配单个数字只出现一次。这个正则表达式在范围0到9的整数匹配。要匹配整数高达99 ，增加出现的最大数量为2，所以正则表达式变得<b>[0-9]{1,2}</b>。此正则表达式满足原来的要求相匹配的整数0至99 ，但它也将匹配出现在字符串中的中间整数。如果我们想匹配的整数是整个字符串，必须用锚断言，<b>^</b>（插入符号）和<b>$</b>（美元） 。何时<b>^</b>是一个正则表达式的第一个字符，这意味着正则表达式必须从字符串的开头匹配。何时<b>$</b>是正则表达式的最后一个字符，则表示正则表达式必须匹配到字符串的结尾。正则表达式变得<b>^[0-9]{1,2}$</b>。需要注意的是断言，例如<b>^</b>和<b>$</b>，不匹配的字符串中的字符，但位置。</p>
+<p>如果你看到其他地方所描述的正则表达式，它们可能看起来从此处显示的不同。这是因为有些字符集和一些量词是如此普遍，他们被赋予特殊的符号来表示它们。<b>[0-9]</b>可以替换的符号<b>\d</b>。量词完全匹配出现一次，<b>{1,1}</b>，可以被替换的表达式本身，即<b>x{1,1}</b>是一样的<b>x</b>。所以我们的0至99的匹配可以写成<b>^\d{1,2}$</b>。它也可以写成<b>^\d\d{0,1}$</b>，即<i>From the start of the
+string, match a digit, followed immediately by 0 or 1 digits</i>。在实践中，这将被写为<b>^\d\d?$</b>。该<b>?</b>是简写的量词<b>{0,1}</b>，即0或1出现。<b>?</b>使一个表达式可选。正则表达式<b>^\d\d?$</b>
+means <i>From the beginning of the string, match one digit,
+followed immediately by 0 or 1 more digit, followed immediately by
+end of string</i>。</p>
+<p>写一个正则表达式匹配一个单词'邮件'的<i>or</i>'信'<i>or</i>“对应”，但不匹配词都包含这些用语，例如， “电子邮件” ， “邮差”，“邮件”和“信箱” ，开始用正则表达式匹配'邮件'的。充分表达，正则表达式是<b>m{1,1}a{1,1}i{1,1}l{1,1}</b>，但由于字符表达式是由自动定量<b>{1,1}</b>，我们可以简化对正则表达式<b>mail</b>，即一个'M'后跟一个'a '后跟一个'i'后跟一个'L' 。现在我们可以使用竖线<b>|</b>，这意味着<b>or</b>，包括其他两个词，所以我们的正则表达式匹配任意的三个词的变<b>mail|letter|correspondence</b>。匹配'邮件'<b>or</b>'信'<b>or</b>'对应' 。虽然这个规则表达式将与要匹配的三个词之一，它也将匹配，我们不想匹配的话，比如， “电子邮件” 。要防止正则表达式匹配从不受欢迎的词汇，我们必须告诉它在字边界开始和结束比赛。首先，我们附上我们的正则表达式中括号，<b>(mail|letter|correspondence)</b>。括号组表达式在一起，他们确定，我们希望将正则表达式的一部分<a href="#capturing-text">capture</a>。括在括号中的表达式允许我们使用它作为在更复杂的正则表达式的组件。这也让我们审视这三个词实际上是匹配的。给力的比赛开始和结束的单词边界，我们附上了正则表达式中<b>\b</b> <i>word boundary</i>声明：<b>\b(mail|letter|correspondence)\b</b>。现在正则表达式的意思是：<i>Match a word boundary, followed by the regexp in
+parentheses, followed by a word boundary</i>。该<b>\b</b>断言匹配<i>position</i>在正则表达式，而不是一个<i>character</i>。字边界是任何非单词字符，如空格，换行符或字符串的开头或结尾。</p>
+<p>如果我们要使用HTML实体替换符号字符<b>&amp;amp;</b>，正则表达式匹配是根本<b>&amp;</b>。但是，这也正则表达式将匹配已经转换为HTML实体＆符号。我们想要替换只能尚未其次是＆符号<b>amp;</b>。对于这一点，我们需要的负预测先行断言，<b>(?!</b><a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html">__</a><b>)</b>。正则表达式可以被写成<b>&amp;(?!amp;)</b>，即<i>Match an ampersand that is</i>
+<b>not</b> <i>followed by</i> <b>amp;</b>。</p>
+<p>如果我们要计算'埃里克'和'的Eirik '的所有在字符串中出现，两个有效的解决方案<b>\b(Eric|Eirik)\b</b>和<b>\bEi?ri[ck]\b</b>。单词边界断言'\ B'是必须避免含有任一名称匹配单词，例如： “爱立信” 。请注意，第二个正则表达式匹配更多的拼写比我们想： '埃里克'，'埃里克'，' Eiric '和'的Eirik ' 。</p>
+<p>一些上面讨论的实施例是在实施<a href="#code-examples">code examples</a>一节。</p>
+<a id="characters-and-abbreviations-for-sets-of-characters" name="characters-and-abbreviations-for-sets-of-characters"></a><a id="characters-and-abbreviations-for-sets-of-characters" name="characters-and-abbreviations-for-sets-of-characters"></a>
+<h3>Characters and Abbreviations for Sets of Characters</h3>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Element</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td><b>c</b></td>
+<td>A character represents itself unless it has a special regexp
+meaning. e.g. <b>c</b> matches the character <i>c</i>.</td>
+</tr>
+<tr class="even" valign="top">
+<td><b>\c</b></td>
+<td>A character that follows a backslash matches the character
+itself, except as specified below. e.g., To match a literal caret
+at the beginning of a string, write <b>\^</b>.</td>
+</tr>
+<tr class="odd" valign="top">
+<td><b>\a</b></td>
+<td>Matches the ASCII bell (BEL, 0x07).</td>
+</tr>
+<tr class="even" valign="top">
+<td><b>\f</b></td>
+<td>Matches the ASCII form feed (FF, 0x0C).</td>
+</tr>
+<tr class="odd" valign="top">
+<td><b>\n</b></td>
+<td>Matches the ASCII line feed (LF, 0x0A, Unix newline).</td>
+</tr>
+<tr class="even" valign="top">
+<td><b>\r</b></td>
+<td>Matches the ASCII carriage return (CR, 0x0D).</td>
+</tr>
+<tr class="odd" valign="top">
+<td><b>\t</b></td>
+<td>Matches the ASCII horizontal tab (HT, 0x09).</td>
+</tr>
+<tr class="even" valign="top">
+<td><b>\v</b></td>
+<td>Matches the ASCII vertical tab (VT, 0x0B).</td>
+</tr>
+<tr class="odd" valign="top">
+<td><b>\x<i>hhhh</i></b></td>
+<td>Matches the Unicode character corresponding to the hexadecimal
+number <i>hhhh</i> (between 0x0000 and 0xFFFF).</td>
+</tr>
+<tr class="even" valign="top">
+<td>
+<b>\0<i>ooo</i></b> (i.e., \zero <i>ooo</i>)</td>
+<td>matches the ASCII/Latin1 character for the octal number
+<i>ooo</i> (between 0 and 0377).</td>
+</tr>
+<tr class="odd" valign="top">
+<td><b>. (dot)</b></td>
+<td>Matches any character (including newline).</td>
+</tr>
+<tr class="even" valign="top">
+<td><b>\d</b></td>
+<td>Matches a digit (<a href="qchar.html#isDigit" tppabs="http://pyqt4doc.appspot.com/qchar.html#isDigit">QChar.isDigit</a>()).</td>
+</tr>
+<tr class="odd" valign="top">
+<td><b>\D</b></td>
+<td>Matches a non-digit.</td>
+</tr>
+<tr class="even" valign="top">
+<td><b>\s</b></td>
+<td>Matches a whitespace character (<a href="qchar.html#isSpace" tppabs="http://pyqt4doc.appspot.com/qchar.html#isSpace">QChar.isSpace</a>()).</td>
+</tr>
+<tr class="odd" valign="top">
+<td><b>\S</b></td>
+<td>Matches a non-whitespace character.</td>
+</tr>
+<tr class="even" valign="top">
+<td><b>\w</b></td>
+<td>Matches a word character (<a href="qchar.html#isLetterOrNumber" tppabs="http://pyqt4doc.appspot.com/qchar.html#isLetterOrNumber">QChar.isLetterOrNumber</a>(),
+<a href="qchar.html#isMark" tppabs="http://pyqt4doc.appspot.com/qchar.html#isMark">QChar.isMark</a>(), or '<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html">_</a>').</td>
+</tr>
+<tr class="odd" valign="top">
+<td><b>\W</b></td>
+<td>Matches a non-word character.</td>
+</tr>
+<tr class="even" valign="top">
+<td><b>\<i>n</i></b></td>
+<td>The <i>n</i>-th <a href="#backreferences">backreference</a>,
+e.g. \1, \2, etc.</td>
+</tr>
+</table>
+<p><b>Note:</b>在C + +编译器把反斜杠在字符串中。要包括<b>\</b>在一个正则表达式，输入两次，即<tt>\\</tt>。要匹配反斜杠字符本身，进入它的四倍，即<tt>\\\\</tt>。</p>
+<a id="sets-of-characters" name="sets-of-characters"></a><a id="sets-of-characters" name="sets-of-characters"></a>
+<h3>Sets of Characters</h3>
+<p>方括号的意思是匹配包含在方括号内的任何字符。上述字符集的缩写可以出现在一个字符在方括号中设置。除字符集的缩写和以下两个例外，字符没有在方括号中的特殊含义。</p>
+<table class="generic">
+<tr class="odd" valign="top">
+<td><b>^</b></td>
+<td>The caret negates the character set if it occurs as the first
+character (i.e. immediately after the opening square bracket).
+<b>[abc]</b> matches 'a' or 'b' or 'c', but <b>[^abc]</b> matches
+anything <i>but</i> 'a' or 'b' or 'c'.</td>
+</tr>
+<tr class="even" valign="top">
+<td><b>-</b></td>
+<td>The dash indicates a range of characters. <b>[W-Z]</b> matches
+'W' or 'X' or 'Y' or 'Z'.</td>
+</tr>
+</table>
+<p>使用预定义的字符集的缩写比使用字符更便携的范围跨平台和语言。例如，<b>[0-9]</b>符合西方字母一个数字，但<b>\d</b>匹配一个数字<i>any</i>字母表。</p>
+<p>注：在其他的正则表达式的文档，字符集通常被称为“字符类” 。</p>
+<a id="quantifiers" name="quantifiers"></a><a id="quantifiers" name="quantifiers"></a>
+<h3>Quantifiers</h3>
+<p>默认情况下，一个表达式将自动被量化<b>{1,1}</b>的，即它应该发生一次。在下面的列表中，<b><i>E</i></b>代表表达。一个表达式是一个字符，或简称为一组字符或一组方括号中的字符，或者在括号中的表达式。</p>
+<table class="generic">
+<tr class="odd" valign="top">
+<td><b><i>E</i>?</b></td>
+<td>Matches zero or one occurrences of <i>E</i>. This quantifier
+means <i>The previous expression is optional</i>, because it will
+match whether or not the expression is found. <b><i>E</i>?</b> is
+the same as <b><i>E</i>{0,1}</b>. e.g., <b>dents?</b> matches
+'dent' or 'dents'.</td>
+</tr>
+<tr class="even" valign="top">
+<td><b><i>E</i>+</b></td>
+<td>Matches one or more occurrences of <i>E</i>. <b><i>E</i>+</b>
+is the same as <b><i>E</i>{1,}</b>. e.g., <b>0+</b> matches '0',
+'00', '000', etc.</td>
+</tr>
+<tr class="odd" valign="top">
+<td><b><i>E</i>*</b></td>
+<td>Matches zero or more occurrences of <i>E</i>. It is the same as
+<b><i>E</i>{0,}</b>. The <b>*</b> quantifier is often used in error
+where <b>+</b> should be used. For example, if <b>\s*$</b> is used
+in an expression to match strings that end in whitespace, it will
+match every string because <b>\s*$</b> means <i>Match zero or more
+whitespaces followed by end of string</i>. The correct regexp to
+match strings that have at least one trailing whitespace character
+is <b>\s+$</b>.</td>
+</tr>
+<tr class="even" valign="top">
+<td><b><i>E</i>{n}</b></td>
+<td>Matches exactly <i>n</i> occurrences of <i>E</i>.
+<b><i>E</i>{n}</b> is the same as repeating <i>E</i> <i>n</i>
+times. For example, <b>x{5}</b> is the same as <b>xxxxx</b>. It is
+also the same as <b><i>E</i>{n,n}</b>, e.g. <b>x{5,5}</b>.</td>
+</tr>
+<tr class="odd" valign="top">
+<td><b><i>E</i>{n,}</b></td>
+<td>Matches at least <i>n</i> occurrences of <i>E</i>.</td>
+</tr>
+<tr class="even" valign="top">
+<td><b><i>E</i>{,m}</b></td>
+<td>Matches at most <i>m</i> occurrences of <i>E</i>.
+<b><i>E</i>{,m}</b> is the same as <b><i>E</i>{0,m}</b>.</td>
+</tr>
+<tr class="odd" valign="top">
+<td><b><i>E</i>{n,m}</b></td>
+<td>Matches at least <i>n</i> and at most <i>m</i> occurrences of
+<i>E</i>.</td>
+</tr>
+</table>
+<p>要应用一个量词的不仅仅是前面的字符，使用括号字符组一起在一个表达式。例如，<b>tag+</b>匹配一个'T'后跟一个'a '后跟至少有一个“G” ，而<b>(tag)+</b>匹配至少一个出现'标籤'的。</p>
+<p>注：量词通常是“贪婪” 。他们总是匹配尽可能多的文本，因为他们可以。例如，<b>0+</b>第一个零匹配后找到的第一个零和所有连续的零。应用到'20005 ' ，它matches'2<u>000</u>5 ' 。量词可以由非贪婪，见<a href="qregexp.html#setMinimal" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setMinimal">setMinimal</a>（ ） 。</p>
+<a id="capturing-parentheses" name="capturing-parentheses"></a><a id="backreferences" name="backreferences"></a><a id="capturing-text" name="capturing-text"></a>
+<h3>Capturing Text</h3>
+<p>括号让我们组元素结合在一起，使我们能够量化和捕捉它们。例如，如果我们有表达<b>mail|letter|correspondence</b>匹配我们知道，一个串<i>one</i>的匹配的话，但没有哪一个。使用括号使我们能够“捕获”无论是匹配的范围内，所以如果我们使用<b>(mail|letter|correspondence)</b>和相匹配的字符串，这个正则表达式“我给你发一些电子邮件” ，我们可以使用<a href="qregexp.html#cap" tppabs="http://pyqt4doc.appspot.com/qregexp.html#cap">cap</a>（）或<a href="qregexp.html#capturedTexts" tppabs="http://pyqt4doc.appspot.com/qregexp.html#capturedTexts">capturedTexts</a>（）函数来提取匹配的字符，在这种情况下， “邮件” 。</p>
+<p>我们可以在正则表达式本身中使用捕获的文本。要引用我们使用捕获的文本<i>backreferences</i>这是从1索引，一样的<a href="qregexp.html#cap" tppabs="http://pyqt4doc.appspot.com/qregexp.html#cap">cap</a>（ ） 。例如，我们可以使用一个字符串搜索重复的单词<b>\b(\w+)\W+\1\b</b>这意味着匹配一个单词边界后跟后跟后跟相同的文字作为第一个括号表达式后跟一个单词边界的一个或多个非单词字符中的一个或多个单词字符。</p>
+<p>如果我们要纯粹使用括号进行分组，而不是用于捕捉，我们可以使用非捕获的语法，如<b>(?:green|blue)</b>。非捕获括号开始' （ ： '和结束'）' 。在这个例子中，我们要么匹配'绿色'或'蓝色'，但我们不捕获匹配，所以我们只知道我们是否匹配，但没有哪种颜色，我们居然发现。使用非捕获括号比使用捕获括号，因为正则表达式引擎必须少做簿记更有效率。</p>
+<p>捕捉和非捕获括号可以嵌套。</p>
+<a id="greedy-quantifiers" name="greedy-quantifiers"></a>
+<p>由于历史原因，量词（例如<b>*</b>）适用于捕获括号更“贪婪”比其他的量词。例如，<b>a*(a*)</b>将匹配“ AAA”帽（ 1 ） == “AAA” 。这种行为是从什么其他的正则表达式引擎做的（值得注意的是， Perl的）不同。为了获得更为直观的捕捉行为，请指定<a href="qregexp.html#PatternSyntax-enum" tppabs="http://pyqt4doc.appspot.com/qregexp.html#PatternSyntax-enum">QRegExp.RegExp2</a>到QRegExp构造函数或调用setPatternSyntax （<a href="qregexp.html#PatternSyntax-enum" tppabs="http://pyqt4doc.appspot.com/qregexp.html#PatternSyntax-enum">QRegExp.RegExp2</a>） 。</p>
+<a id="cap-in-a-loop" name="cap-in-a-loop"></a>
+<p>当匹配的数量不能预先确定，一个常见的成语是使用<a href="qregexp.html#cap" tppabs="http://pyqt4doc.appspot.com/qregexp.html#cap">cap</a>（）在一个循环。例如：</p>
+<pre class="cpp">
+ <span class="type">QRegExp</span> rx(<span class="string">"(\\d+)"</span>);
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"Offsets: 12 14 99 231 7"</span>;
+ <span class="type"><a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a></span> list;
+ <span class="type">int</span> pos <span class="operator">=</span> <span class="number">0</span>;
+
+ <span class="keyword">while</span> ((pos <span class="operator">=</span> rx<span class="operator">.</span>indexIn(str<span class="operator">,</span> pos)) <span class="operator">!</span><span class="operator">=</span> <span class="operator">-</span><span class="number">1</span>) {
+     list <span class="operator">&lt;</span><span class="operator">&lt;</span> rx<span class="operator">.</span>cap(<span class="number">1</span>);
+     pos <span class="operator">+</span><span class="operator">=</span> rx<span class="operator">.</span>matchedLength();
+ }
+ <span class="comment">// list: ["12", "14", "99", "231", "7"]</span>
+</pre>
+<a id="assertions" name="assertions"></a><a id="assertions" name="assertions"></a>
+<h3>Assertions</h3>
+<p>断言做出了一些文字语句，他们出现在正则表达式，但它们不匹配任何字符的地步。在下面的列表中<b><i>E</i></b>代表任意表达式。</p>
+<table class="generic">
+<tr class="odd" valign="top">
+<td><b>^</b></td>
+<td>The caret signifies the beginning of the string. If you wish to
+match a literal <tt>^</tt> you must escape it by writing
+<tt>\\^</tt>. For example, <b>^#include</b> will only match strings
+which <i>begin</i> with the characters '#include'. (When the caret
+is the first character of a character set it has a special meaning,
+see <a href="#sets-of-characters">Sets of Characters</a>.)</td>
+</tr>
+<tr class="even" valign="top">
+<td><b>$</b></td>
+<td>The dollar signifies the end of the string. For example
+<b>\d\s*$</b> will match strings which end with a digit optionally
+followed by whitespace. If you wish to match a literal <tt>$</tt>
+you must escape it by writing <tt>\\$</tt>.</td>
+</tr>
+<tr class="odd" valign="top">
+<td><b>\b</b></td>
+<td>A word boundary. For example the regexp <b>\bOK\b</b> means
+match immediately after a word boundary (e.g. start of string or
+whitespace) the letter 'O' then the letter 'K' immediately before
+another word boundary (e.g. end of string or whitespace). But note
+that the assertion does not actually match any whitespace so if we
+write <b>(\bOK\b)</b> and we have a match it will only contain 'OK'
+even if the string is "It's <u>OK</u> now".</td>
+</tr>
+<tr class="even" valign="top">
+<td><b>\B</b></td>
+<td>A non-word boundary. This assertion is true wherever <b>\b</b>
+is false. For example if we searched for <b>\Bon\B</b> in "Left on"
+the match would fail (space and end of string aren't non-word
+boundaries), but it would match in "t<u>on</u>ne".</td>
+</tr>
+<tr class="odd" valign="top">
+<td><b>(?=<i>E</i>)</b></td>
+<td>Positive lookahead. This assertion is true if the expression
+matches at this point in the regexp. For example,
+<b>const(?=\s+char)</b> matches 'const' whenever it is followed by
+'char', as in 'static <u>const</u> char *'. (Compare with
+<b>const\s+char</b>, which matches 'static <u>const char</u>
+*'.)</td>
+</tr>
+<tr class="even" valign="top">
+<td><b>(?!<i>E</i>)</b></td>
+<td>Negative lookahead. This assertion is true if the expression
+does not match at this point in the regexp. For example,
+<b>const(?!\s+char)</b> matches 'const' <i>except</i> when it is
+followed by 'char'.</td>
+</tr>
+</table>
+<a id="qregexp-wildcard-matching" name="qregexp-wildcard-matching"></a><a id="wildcard-matching" name="wildcard-matching"></a>
+<h3>Wildcard Matching</h3>
+<p>大多数命令shell ，如<i>bash</i> or <i>cmd.exe</i>支持“文件通配符”使用通配符来标识一组文件的能力。该<a href="qregexp.html#setPatternSyntax" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setPatternSyntax">setPatternSyntax</a>（ ）函数用于正则表达式和通配符模式之间切换。通配符匹配是比全正则表达式更简单，只有四个特点：</p>
+<table class="generic">
+<tr class="odd" valign="top">
+<td><b>c</b></td>
+<td>Any character represents itself apart from those mentioned
+below. Thus <b>c</b> matches the character <i>c</i>.</td>
+</tr>
+<tr class="even" valign="top">
+<td><b>?</b></td>
+<td>Matches any single character. It is the same as <b>.</b> in
+full regexps.</td>
+</tr>
+<tr class="odd" valign="top">
+<td><b>*</b></td>
+<td>Matches zero or more of any characters. It is the same as
+<b>.*</b> in full regexps.</td>
+</tr>
+<tr class="even" valign="top">
+<td><b>[...]</b></td>
+<td>Sets of characters can be represented in square brackets,
+similar to full regexps. Within the character class, like outside,
+backslash has no special meaning.</td>
+</tr>
+</table>
+<p>在该模式中通配符，通配符不能逃脱。在该模式<a href="qregexp.html#PatternSyntax-enum" tppabs="http://pyqt4doc.appspot.com/qregexp.html#PatternSyntax-enum">WildcardUnix</a>，字符“\”转义通配符。</p>
+<p>例如，如果我们在通配符模式，并有包含文件名的字符串，我们可以用识别HTML文件<b>*.html</b>。这将匹配零个或多个字符后面跟着一个点后面'H' ， 'T' ， 'm'和'L' 。</p>
+<p>要测试的一个通配符表达式，使用一个字符串<a href="qregexp.html#exactMatch" tppabs="http://pyqt4doc.appspot.com/qregexp.html#exactMatch">exactMatch</a>（ ） 。例如：</p>
+<pre class="cpp">
+ <span class="type">QRegExp</span> rx(<span class="string">"*.txt"</span>);
+ rx<span class="operator">.</span><a href="qregexp.html#setPatternSyntax" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setPatternSyntax">setPatternSyntax</a>(<span class="type">QRegExp</span><span class="operator">.</span>Wildcard);
+ rx<span class="operator">.</span><a href="qregexp.html#exactMatch" tppabs="http://pyqt4doc.appspot.com/qregexp.html#exactMatch">exactMatch</a>(<span class="string">"README.txt"</span>);        <span class="comment">// returns true</span>
+ rx<span class="operator">.</span><a href="qregexp.html#exactMatch" tppabs="http://pyqt4doc.appspot.com/qregexp.html#exactMatch">exactMatch</a>(<span class="string">"welcome.txt.bak"</span>);   <span class="comment">// returns false</span>
+</pre>
+<a id="perl-users" name="perl-users"></a><a id="notes-for-perl-users" name="notes-for-perl-users"></a>
+<h3>Notes for Perl Users</h3>
+<p>大多数通过Perl的支持的字符类缩写是由QRegExp支持，请参阅<a href="#characters-and-abbreviations-for-sets-of-characters">characters
+and abbreviations for sets of characters</a>。</p>
+<p>在QRegExp ，除了字符类中，<tt>^</tt>始终表示字符串的开始，所以符号标识必须始终逃脱，除非用于这一目的。在Perl中插入符号的含义有所不同自动将不同的地方发生这样逃脱它很少是必要的。这同样适用于<tt>$</tt>这在QRegExp始终表示字符串的结束。</p>
+<p>QRegExp的量词是一样的Perl的贪婪量词（但见<a href="#greedy-quantifiers">note above</a>） 。非贪婪匹配，不能应用到单个量词，但可以适用于所有模式的量词。例如，要匹配的Perl的正则表达式<b>ro+?m</b>要求：</p>
+<pre class="cpp">
+ <span class="type">QRegExp</span> rx(<span class="string">"ro+m"</span>);
+ rx<span class="operator">.</span><a href="qregexp.html#setMinimal" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setMinimal">setMinimal</a>(<span class="keyword">true</span>);
+</pre>
+<p>Perl的等效<tt>/i</tt>选项setCaseSensitivity （<a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseInsensitive</a>） 。</p>
+<p>Perl的<tt>/g</tt>选项可以使用来模拟<a href="#cap-in-a-loop">loop</a>。</p>
+<p>在QRegExp<b>.</b>匹配任何字符，因此所有的QRegExp正则表达式有Perl的等效<tt>/s</tt>选项。 QRegExp没有一个等同于Perl的<tt>/m</tt>选项，但这可以通过把输入到线路或通过用正则表达式，搜索换行符循环不同的方式，例如被模拟。</p>
+<p>因为QRegExp为导向的字符串，没有\ A ， \ Z或\ Ž断言。不支持的\ G断言，但可以在一个循环来模拟。</p>
+<p>Perl的$ ＆是帽（ 0 ）或<a href="qregexp.html#capturedTexts" tppabs="http://pyqt4doc.appspot.com/qregexp.html#capturedTexts">capturedTexts</a>（） [0]。有没有QRegExp等值$ ` ， $ '或$ + 。 Perl的捕获变量， $ 1，$ 2，...对应于盖（1 ）或<a href="qregexp.html#capturedTexts" tppabs="http://pyqt4doc.appspot.com/qregexp.html#capturedTexts">capturedTexts</a>（ ） [1] ，帽（ 2 ）或<a href="qregexp.html#capturedTexts" tppabs="http://pyqt4doc.appspot.com/qregexp.html#capturedTexts">capturedTexts</a>（）[ 2]等</p>
+<p>要替换的模式使用<a href="qstring.html#replace" tppabs="http://pyqt4doc.appspot.com/qstring.html#replace">QString.replace</a>（ ） 。</p>
+<p>Perl的扩展<tt>/x</tt>不支持的语法，也不是指令，例如（ ？ ⅰ），或正则表达式的评论，例如（ ？ ＃注释） 。另一方面，C + +的表示字符串的规则可以用来实现相同的：</p>
+<pre class="cpp">
+ <span class="type">QRegExp</span> mark(<span class="string">"\\b"</span>      <span class="comment">// word boundary</span>
+               <span class="string">"[Mm]ark"</span> <span class="comment">// the word we want to match</span>
+             );
+</pre>
+<p>两个零宽度的正序和零宽度负预测先行断言（ ？ =模式）和（ ？ ！模式）都具有相同的语法和Perl的支持。不支持Perl的向后断言， “独立”的子表达式和条件表达式。</p>
+<p>非捕获括号也支持，具有相同的（ ： ？模式）语法。</p>
+<p>See <a href="qstring.html#split" tppabs="http://pyqt4doc.appspot.com/qstring.html#split">QString.split</a>（）和<a href="qstringlist.html#join" tppabs="http://pyqt4doc.appspot.com/qstringlist.html#join">QStringList.join</a>（）的等值Perl的分割和结合功能。</p>
+<p>注：因为C + +转换\的，他们必须写<i>twice</i>在代码中，例如<b>\b</b>必须写<b>\\b</b>。</p>
+<a id="code-examples" name="code-examples"></a><a id="code-examples" name="code-examples"></a>
+<h3>Code Examples</h3>
+<pre class="cpp">
+ <span class="type">QRegExp</span> rx(<span class="string">"^\\d\\d?$"</span>);    <span class="comment">// match integers 0 to 99</span>
+ rx<span class="operator">.</span><a href="qregexp.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qregexp.html#indexIn">indexIn</a>(<span class="string">"123"</span>);          <span class="comment">// returns -1 (no match)</span>
+ rx<span class="operator">.</span><a href="qregexp.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qregexp.html#indexIn">indexIn</a>(<span class="string">"-6"</span>);           <span class="comment">// returns -1 (no match)</span>
+ rx<span class="operator">.</span><a href="qregexp.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qregexp.html#indexIn">indexIn</a>(<span class="string">"6"</span>);            <span class="comment">// returns 0 (matched as position 0)</span>
+</pre>
+<p>第三个字符串匹配'<u>6</u>' 。这是一个简单的验证正则表达式的取值范围为0 〜99的整数。</p>
+<pre class="cpp">
+ <span class="type">QRegExp</span> rx(<span class="string">"^\\S+$"</span>);       <span class="comment">// match strings without whitespace</span>
+ rx<span class="operator">.</span><a href="qregexp.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qregexp.html#indexIn">indexIn</a>(<span class="string">"Hello world"</span>);  <span class="comment">// returns -1 (no match)</span>
+ rx<span class="operator">.</span><a href="qregexp.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qregexp.html#indexIn">indexIn</a>(<span class="string">"This_is-OK"</span>);   <span class="comment">// returns 0 (matched at position 0)</span>
+</pre>
+<p>第二个字符串匹配'<u>This_is-OK</u>' 。我们已经使用的字符集的缩写'\ S' （非空白）和锚相匹配的不含空格的字符串。</p>
+<p>在下面的例子中，我们匹配包含'邮件'或'信'或'对应'字符串，但只匹配整个单词，即没有“电子邮件”</p>
+<pre class="cpp">
+ <span class="type">QRegExp</span> rx(<span class="string">"\\b(mail|letter|correspondence)\\b"</span>);
+ rx<span class="operator">.</span><a href="qregexp.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qregexp.html#indexIn">indexIn</a>(<span class="string">"I sent you an email"</span>);     <span class="comment">// returns -1 (no match)</span>
+ rx<span class="operator">.</span><a href="qregexp.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qregexp.html#indexIn">indexIn</a>(<span class="string">"Please write the letter"</span>); <span class="comment">// returns 17</span>
+</pre>
+<p>第二个字符串匹配“请写<u>letter</u>。 “这个词'信'是还抓获（因为括号） ，我们可以看到文字，我们已经捕获像这样：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> captured <span class="operator">=</span> rx<span class="operator">.</span><a href="qregexp.html#cap" tppabs="http://pyqt4doc.appspot.com/qregexp.html#cap">cap</a>(<span class="number">1</span>); <span class="comment">// captured == "letter"</span>
+</pre>
+<p>这将从第一组捕获括号（计数捕获左圆括号从左到右）捕获文本。括号是从1 ，因为帽计数（ 0 ）是整个匹配正则表达式（相当于'＆'在大多数正则表达式引擎） 。</p>
+<pre class="cpp">
+ <span class="type">QRegExp</span> rx(<span class="string">"&amp;(?!amp;)"</span>);      <span class="comment">// match ampersands but not &amp;amp;</span>
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> line1 <span class="operator">=</span> <span class="string">"This &amp; that"</span>;
+ line1<span class="operator">.</span>replace(rx<span class="operator">,</span> <span class="string">"&amp;amp;"</span>);
+ <span class="comment">// line1 == "This &amp;amp; that"</span>
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> line2 <span class="operator">=</span> <span class="string">"His &amp;amp; hers &amp; theirs"</span>;
+ line2<span class="operator">.</span>replace(rx<span class="operator">,</span> <span class="string">"&amp;amp;"</span>);
+ <span class="comment">// line2 == "His &amp;amp; hers &amp;amp; theirs"</span>
+</pre>
+<p>在这里，我们已经通过了QRegExp到<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>的替换（ ）函数来更换新的文本匹配的文本。</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"One Eric another Eirik, and an Ericsson. "</span>
+               <span class="string">"How many Eiriks, Eric?"</span>;
+ <span class="type">QRegExp</span> rx(<span class="string">"\\b(Eric|Eirik)\\b"</span>); <span class="comment">// match Eric or Eirik</span>
+ <span class="type">int</span> pos <span class="operator">=</span> <span class="number">0</span>;    <span class="comment">// where we are in the string</span>
+ <span class="type">int</span> count <span class="operator">=</span> <span class="number">0</span>;  <span class="comment">// how many Eric and Eirik's we've counted</span>
+ <span class="keyword">while</span> (pos <span class="operator">&gt;</span><span class="operator">=</span> <span class="number">0</span>) {
+     pos <span class="operator">=</span> rx<span class="operator">.</span>indexIn(str<span class="operator">,</span> pos);
+     <span class="keyword">if</span> (pos <span class="operator">&gt;</span><span class="operator">=</span> <span class="number">0</span>) {
+         <span class="operator">+</span><span class="operator">+</span>pos;      <span class="comment">// move along in str</span>
+         <span class="operator">+</span><span class="operator">+</span>count;    <span class="comment">// count our Eric or Eirik</span>
+     }
+ }
+</pre>
+<p>我们使用了<a href="qregexp.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qregexp.html#indexIn">indexIn</a>（ ）函数将字符串中的正则表达式匹配反复。请注意，而不是向前移动一个字符在一个时间，<tt>pos++</tt>我们可以写<tt>pos += rx.matchedLength()</tt>跳过已经匹配的字符串。伯爵将等于3 ，配套“一<u>Eric</u>另一<u>Eirik</u>以及爱立信。有多少Eiriks ，<u>Eric</u>？“ ，它不匹配'爱立信'或' Eiriks '，因为它们不是由非单词边界为界。</p>
+<p>一个常见的使用正则表达式的是分隔的数据行拆分为它们的组件领域。</p>
+<pre class="cpp">
+ str <span class="operator">=</span> <span class="string">"Nokia Corporation\tqt.nokia.com\tNorway"</span>;
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> company<span class="operator">,</span> web<span class="operator">,</span> country;
+ rx<span class="operator">.</span><a href="qregexp.html#setPattern" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setPattern">setPattern</a>(<span class="string">"^([^\t]+)\t([^\t]+)\t([^\t]+)$"</span>);
+ <span class="keyword">if</span> (rx<span class="operator">.</span>indexIn(str) <span class="operator">!</span><span class="operator">=</span> <span class="operator">-</span><span class="number">1</span>) {
+     company <span class="operator">=</span> rx<span class="operator">.</span>cap(<span class="number">1</span>);
+     web <span class="operator">=</span> rx<span class="operator">.</span>cap(<span class="number">2</span>);
+     country <span class="operator">=</span> rx<span class="operator">.</span>cap(<span class="number">3</span>);
+ }
+</pre>
+<p>在这个例子中我们输入行的格式为公司名称，网址和国家。不幸的是，正则表达式是相当长的，而不是非常灵活 - 该代码将打破，如果我们添加更多的字段。一个更简单和更好的解决办法是寻找分隔符， '\ T'在这种情况下，走周围的文字。该<a href="qstring.html#split" tppabs="http://pyqt4doc.appspot.com/qstring.html#split">QString.split</a>（ ）函数可以接受一个分隔字符串或正则表达式作为参数，并相应的分割字符串。</p>
+<pre class="cpp">
+ <span class="type"><a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a></span> field <span class="operator">=</span> str<span class="operator">.</span>split(<span class="string">"\t"</span>);
+</pre>
+<p>在此领域[ 0 ]是该公司，现场​​[1]的网址等。</p>
+<p>模仿一个外壳的匹配，我们可以使用通配符模式。</p>
+<pre class="cpp">
+ <span class="type">QRegExp</span> rx(<span class="string">"*.html"</span>);
+ rx<span class="operator">.</span><a href="qregexp.html#setPatternSyntax" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setPatternSyntax">setPatternSyntax</a>(<span class="type">QRegExp</span><span class="operator">.</span>Wildcard);
+ rx<span class="operator">.</span><a href="qregexp.html#exactMatch" tppabs="http://pyqt4doc.appspot.com/qregexp.html#exactMatch">exactMatch</a>(<span class="string">"index.html"</span>);                <span class="comment">// returns true</span>
+ rx<span class="operator">.</span><a href="qregexp.html#exactMatch" tppabs="http://pyqt4doc.appspot.com/qregexp.html#exactMatch">exactMatch</a>(<span class="string">"default.htm"</span>);               <span class="comment">// returns false</span>
+ rx<span class="operator">.</span><a href="qregexp.html#exactMatch" tppabs="http://pyqt4doc.appspot.com/qregexp.html#exactMatch">exactMatch</a>(<span class="string">"readme.txt"</span>);                <span class="comment">// returns false</span>
+</pre>
+<p>通配符匹配可能是因为它的简单方便，但任何通配符正则表达式可以使用完整的正则表达式来定义，例如：<b>.*\.html$</b>。请注意，我们不能同时匹配<tt>.html</tt>和<tt>.htm</tt>带通配符的文件，除非我们使用<b>*.htm*</b>这也将匹配' test.html.bak “ 。一个完整的正则表达式为我们提供了我们所需要的精度，<b>.*\.html?$</b>。</p>
+<p>QRegExp可以使用不区分大小写匹配情况<a href="qregexp.html#setCaseSensitivity" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setCaseSensitivity">setCaseSensitivity</a>（ ） ，并可以使用非贪婪匹配，请参阅<a href="qregexp.html#setMinimal" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setMinimal">setMinimal</a>（ ） 。默认情况下QRegExp采用全正则表达式，但是这可以通过改变<a class="compat" href="index.htm#setWildcard" tppabs="http://pyqt4doc.appspot.com/qregexp-qt3.html#setWildcard">setWildcard</a>（ ） 。搜索可以向前<a href="qregexp.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qregexp.html#indexIn">indexIn</a>（ ）或向后<a href="qregexp.html#lastIndexIn" tppabs="http://pyqt4doc.appspot.com/qregexp.html#lastIndexIn">lastIndexIn</a>（ ） 。捕获的文本可以使用访问<a href="qregexp.html#capturedTexts" tppabs="http://pyqt4doc.appspot.com/qregexp.html#capturedTexts">capturedTexts</a>（ ），它返回所有捕获的字符串的字符串列表，或者使用<a href="qregexp.html#cap" tppabs="http://pyqt4doc.appspot.com/qregexp.html#cap">cap</a>（ ），它返回捕获的字符串给定的索引。该<a href="qregexp.html#pos" tppabs="http://pyqt4doc.appspot.com/qregexp.html#pos">pos</a>（ ）函数接受一个匹配索引，并返回那里的比赛作出（或-1，如果没有匹配）在字符串中的位置。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="CaretMode-enum"></a>QRegExp.CaretMode</h3>
+<p>该CaretMode枚举定义插入符的不同含义（<b>^</b>）在正则表达式。可能的值有：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QRegExp.CaretAtZero</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">插入符号对应于索引0中搜索字符串。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QRegExp.CaretAtOffset</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">插入符号对应于开始搜索的偏移量。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QRegExp.CaretWontMatch</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">插入符号永远不匹配。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="PatternSyntax-enum"></a>QRegExp.PatternSyntax</h3>
+<p>语法用于解释该图案的含义。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QRegExp.RegExp</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">丰富的Perl类似的模式匹配语法。这是默认的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QRegExp.RegExp2</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">喜欢的RegExp ，但与<a href="qregexp.html#greedy-quantifiers" tppabs="http://pyqt4doc.appspot.com/qregexp.html#greedy-quantifiers">greedy quantifiers</a>。这将是默认的Qt 5 。 （在Qt 4.2中引入）。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QRegExp.Wildcard</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">这提供了“文件通配符”类似于使用的砲弹（命令解释器）一个简单的模式匹配的语法。看<a href="qregexp.html#wildcard-matching" tppabs="http://pyqt4doc.appspot.com/qregexp.html#wildcard-matching">Wildcard
+Matching</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QRegExp.WildcardUnix</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">这类似于通配符而是一个Unix外壳的行为。通配符可以用转义字符“ \ ” 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QRegExp.FixedString</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">模式是固定字符串。这相当于使用了RegExp模式上，所有的元字符进行转义字符串使用<a href="qregexp.html#escape" tppabs="http://pyqt4doc.appspot.com/qregexp.html#escape">escape</a>（ ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QRegExp.W3CXmlSchema11</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">该模式是一个正则表达式由W3C的XML Schema 1.1规范定义。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qregexp.html#setPatternSyntax" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setPatternSyntax">setPatternSyntax</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QRegExp"></a>QRegExp.__init__ (<i>self</i>)</h3>
+<p>构造一个空的正则表达式。</p>
+<p><b>See also</b> <a href="qregexp.html#isValid" tppabs="http://pyqt4doc.appspot.com/qregexp.html#isValid">isValid</a>（）和<a href="qregexp.html#errorString" tppabs="http://pyqt4doc.appspot.com/qregexp.html#errorString">errorString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QRegExp-2"></a>QRegExp.__init__ (<i>self</i>, QString <i>pattern</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive, <a href="qregexp.html#PatternSyntax-enum" tppabs="http://pyqt4doc.appspot.com/qregexp.html#PatternSyntax-enum">PatternSyntax</a> <i>syntax</i> = QRegExp.RegExp)</h3>
+<p>构造一个正则表达式对象为给定的<i>pattern</i>字符串。该模式必须使用通配符表示法，如果给予<i>syntax</i> is <a href="qregexp.html#PatternSyntax-enum" tppabs="http://pyqt4doc.appspot.com/qregexp.html#PatternSyntax-enum">Wildcard</a>，默认为<a href="qregexp.html#PatternSyntax-enum" tppabs="http://pyqt4doc.appspot.com/qregexp.html#PatternSyntax-enum">RegExp</a>。该模式是区分大小写的，除非<i>cs</i> is <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseInsensitive</a>。匹配是贪婪的（最大） ，但可以通过调用改变<a href="qregexp.html#setMinimal" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setMinimal">setMinimal</a>（ ） 。</p>
+<p><b>See also</b> <a href="qregexp.html#setPattern" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setPattern">setPattern</a>（ ）<a href="qregexp.html#setCaseSensitivity" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setCaseSensitivity">setCaseSensitivity</a>（）和<a href="qregexp.html#setPatternSyntax" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setPatternSyntax">setPatternSyntax</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QRegExp-3"></a>QRegExp.__init__ (<i>self</i>, <a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a> <i>rx</i>)</h3>
+<p>构造一个正则表达式的一个副本<i>rx</i>。</p>
+<p><b>See also</b> <a href="qregexp.html#operator-eq" tppabs="http://pyqt4doc.appspot.com/qregexp.html#operator-eq">operator=</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="cap"></a>QString QRegExp.cap (<i>self</i>, int <i>nth</i> = 0)</h3>
+<p>返回由捕获的文本<i>nth</i>子表达式。在整场比赛的索引为0和括号的子表达式有索引从1开始（不包括非捕获括号） 。</p>
+<pre class="cpp">
+ <span class="type"><a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a></span> rxlen(<span class="string">"(\\d+)(?:\\s*)(cm|inch)"</span>);
+ <span class="type">int</span> pos <span class="operator">=</span> rxlen<span class="operator">.</span><a href="qregexp.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qregexp.html#indexIn">indexIn</a>(<span class="string">"Length: 189cm"</span>);
+ <span class="keyword">if</span> (pos <span class="operator">&gt;</span> <span class="operator">-</span><span class="number">1</span>) {
+     <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> value <span class="operator">=</span> rxlen<span class="operator">.</span>cap(<span class="number">1</span>); <span class="comment">// "189"</span>
+     <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> unit <span class="operator">=</span> rxlen<span class="operator">.</span>cap(<span class="number">2</span>);  <span class="comment">// "cm"</span>
+     <span class="comment">// ...</span>
+ }
+</pre>
+<p>匹配由帽元件（ ）的顺序如下所示。第一个元素，帽（ 0 ） ，是整个匹配的字符串。每个后续元素对应到下一个捕获打开左括号。因此盖（ 1 ）是第一个捕获的括号的文本，帽（ 2 ）是第二的文本，等等。</p>
+<p><b>See also</b> <a href="qregexp.html#capturedTexts" tppabs="http://pyqt4doc.appspot.com/qregexp.html#capturedTexts">capturedTexts</a>（）和<a href="qregexp.html#pos" tppabs="http://pyqt4doc.appspot.com/qregexp.html#pos">pos</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="captureCount"></a>int QRegExp.captureCount (<i>self</i>)</h3>
+<p>返回包含在正则表达式捕获的数量。</p>
+<p>此功能被引入Qt的4.6 。</p>
+
+
+<h3 class="fn">
+<a name="capturedTexts"></a>QStringList QRegExp.capturedTexts (<i>self</i>)</h3>
+<p>返回捕获的文本字符串的列表。</p>
+<p>该列表中的第一个字符串是整个匹配的字符串。每个后续的列表元素包含了匹配正则表达式的（捕获）子表达式的字符串。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a></span> rx(<span class="string">"(\\d+)(\\s*)(cm|inch(es)?)"</span>);
+ <span class="type">int</span> pos <span class="operator">=</span> rx<span class="operator">.</span><a href="qregexp.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qregexp.html#indexIn">indexIn</a>(<span class="string">"Length: 36 inches"</span>);
+ <span class="type"><a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a></span> list <span class="operator">=</span> rx<span class="operator">.</span>capturedTexts();
+ <span class="comment">// list is now ("36 inches", "36", " ", "inches", "es")</span>
+</pre>
+<p>上面的例子还捕捉可能存在的元素，但我们有没有兴趣。这个问题可以通过使用非捕获括号来解决：</p>
+<pre class="cpp">
+ <span class="type"><a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a></span> rx(<span class="string">"(\\d+)(?:\\s*)(cm|inch(?:es)?)"</span>);
+ <span class="type">int</span> pos <span class="operator">=</span> rx<span class="operator">.</span><a href="qregexp.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qregexp.html#indexIn">indexIn</a>(<span class="string">"Length: 36 inches"</span>);
+ <span class="type"><a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a></span> list <span class="operator">=</span> rx<span class="operator">.</span>capturedTexts();
+ <span class="comment">// list is now ("36 inches", "36", "inches")</span>
+</pre>
+<p>需要注意的是，如果你想遍历列表，你应该遍历一个副本，如</p>
+<pre class="cpp">
+ <span class="type"><a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a></span> list <span class="operator">=</span> rx<span class="operator">.</span>capturedTexts();
+ <span class="type"><a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a></span><span class="operator">.</span>iterator it <span class="operator">=</span> list<span class="operator">.</span>begin();
+ <span class="keyword">while</span> (it <span class="operator">!</span><span class="operator">=</span> list<span class="operator">.</span>end()) {
+     myProcessing(<span class="operator">*</span>it);
+     <span class="operator">+</span><span class="operator">+</span>it;
+ }
+</pre>
+<p>一些正则表达式可以匹配一个不确定的次数。例如，如果输入字符串为“偏移： 12 14 99 231 7 ”和正则表达式，<tt>rx</tt>，是<b>(\d+)+</b>，我们希望让所有的数字相匹配的列表。但是，调用后<tt>rx.indexIn(str)</tt>， capturedTexts （ ）将返回列表中（ “12” ， “12” ） ，即在整场比赛是“ 12”和第一个子表达式匹配的是“12” 。正确的方法是使用<a href="qregexp.html#cap" tppabs="http://pyqt4doc.appspot.com/qregexp.html#cap">cap</a>在（）<a href="qregexp.html#cap-in-a-loop" tppabs="http://pyqt4doc.appspot.com/qregexp.html#cap-in-a-loop">loop</a>。</p>
+<p>在字符串列表中元素的顺序如下。第一个元素是整个匹配的字符串。每个后续元素对应到下一个捕获打开左括号。因此capturedTexts （ ） [1]是第一个捕获的括号， capturedTexts （ ） [ 2 ]是第二等（相当于$ 1，$ 2，等等，在其他一些正则表达式语言）文本的文本。</p>
+<p><b>See also</b> <a href="qregexp.html#cap" tppabs="http://pyqt4doc.appspot.com/qregexp.html#cap">cap</a>（）和<a href="qregexp.html#pos" tppabs="http://pyqt4doc.appspot.com/qregexp.html#pos">pos</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="caseSensitivity"></a><a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> QRegExp.caseSensitivity (<i>self</i>)</h3>
+<p>Returns <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitive</a>如果设置了RegExp是敏感匹配的情况下，否则返回<a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseInsensitive</a>。</p>
+<p><b>See also</b> <a href="qregexp.html#setCaseSensitivity" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setCaseSensitivity">setCaseSensitivity</a>（ ）<a href="qregexp.html#patternSyntax" tppabs="http://pyqt4doc.appspot.com/qregexp.html#patternSyntax">patternSyntax</a>（ ）<a href="qregexp.html#pattern" tppabs="http://pyqt4doc.appspot.com/qregexp.html#pattern">pattern</a>（）和<a href="qregexp.html#isMinimal" tppabs="http://pyqt4doc.appspot.com/qregexp.html#isMinimal">isMinimal</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="errorString"></a>QString QRegExp.errorString (<i>self</i>)</h3>
+<p>返回解释了为什么一个正则表达式模式无效的情况下是一个文本字符串，否则返回“没有发生错误” 。</p>
+<p><b>See also</b> <a href="qregexp.html#isValid" tppabs="http://pyqt4doc.appspot.com/qregexp.html#isValid">isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="escape"></a>QString QRegExp.escape (QString <i>str</i>)</h3>
+<p>返回字符串<i>str</i>与每一个正则表达式的特殊字符用反斜杠转义。特殊字符$ ​​， （ ， ） ， * ， + ， ， ， [ ， ， ] ， ^ ， ？ { ， |和} 。</p>
+<p>例如：</p>
+<pre class="cpp">
+ s1 <span class="operator">=</span> <span class="type"><a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a></span><span class="operator">.</span>escape(<span class="string">"bingo"</span>);   <span class="comment">// s1 == "bingo"</span>
+ s2 <span class="operator">=</span> <span class="type"><a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a></span><span class="operator">.</span>escape(<span class="string">"f(x)"</span>);    <span class="comment">// s2 == "f\\(x\\)"</span>
+</pre>
+<p>此功能是动态构造的正则表达式模式有用：</p>
+<pre class="cpp">
+ <span class="type"><a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a></span> rx(<span class="string">"("</span> <span class="operator">+</span> <span class="type"><a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a></span><span class="operator">.</span>escape(name) <span class="operator">+</span>
+            <span class="string">"|"</span> <span class="operator">+</span> <span class="type"><a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a></span><span class="operator">.</span>escape(alias) <span class="operator">+</span> <span class="string">")"</span>);
+</pre>
+<p><b>See also</b> <a href="qregexp.html#setPatternSyntax" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setPatternSyntax">setPatternSyntax</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="exactMatch"></a>bool QRegExp.exactMatch (<i>self</i>, QString <i>str</i>)</h3>
+<p>返回True如果<i>str</i>精确匹配这个正则表达式，否则返回False 。您可以决定如何将字符串的多少是相匹配的调用<a href="qregexp.html#matchedLength" tppabs="http://pyqt4doc.appspot.com/qregexp.html#matchedLength">matchedLength</a>（ ） 。</p>
+<p>对于一个给定的正则表达式的字符串R，完全匹配（ “R” ）是indexIn （ “ ^ R $ ” ），因为完全匹配相当于（ ）有效地封闭了正则表达式在字符串和字符串锚年底开始，除了它设置<a href="qregexp.html#matchedLength" tppabs="http://pyqt4doc.appspot.com/qregexp.html#matchedLength">matchedLength</a>（ ）不同。</p>
+<p>例如，如果正则表达式是<b>blue</b>，然后完全匹配（ ）只适用于输入返回True<tt>blue</tt>。对于输入<tt>bluebell</tt>，<tt>blutak</tt>和<tt>lightblue</tt>，完全匹配（ ）返回False ，并<a href="qregexp.html#matchedLength" tppabs="http://pyqt4doc.appspot.com/qregexp.html#matchedLength">matchedLength</a>（ ）将返回4,3和0分别。</p>
+<p>虽然常量，这个函数集<a href="qregexp.html#matchedLength" tppabs="http://pyqt4doc.appspot.com/qregexp.html#matchedLength">matchedLength</a>（ ）<a href="qregexp.html#capturedTexts" tppabs="http://pyqt4doc.appspot.com/qregexp.html#capturedTexts">capturedTexts</a>（）和<a href="qregexp.html#pos" tppabs="http://pyqt4doc.appspot.com/qregexp.html#pos">pos</a>（ ） 。</p>
+<p><b>See also</b> <a href="qregexp.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qregexp.html#indexIn">indexIn</a>（）和<a href="qregexp.html#lastIndexIn" tppabs="http://pyqt4doc.appspot.com/qregexp.html#lastIndexIn">lastIndexIn</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="indexIn"></a>int QRegExp.indexIn (<i>self</i>, QString <i>str</i>, int <i>offset</i> = 0, <a href="qregexp.html#CaretMode-enum" tppabs="http://pyqt4doc.appspot.com/qregexp.html#CaretMode-enum">CaretMode</a> <i>caretMode</i> = QRegExp.CaretAtZero)</h3>
+<p>试图找到一个匹配<i>str</i>从位置<i>offset</i>（默认为0 ） 。如果<i>offset</i>为-1，搜索从最后一个字符，如果-2 ，在倒数第二个字符，等等。</p>
+<p>返回第一个匹配，或者-1的位置，如果没有匹配。</p>
+<p>该<i>caretMode</i>参数可以被用来指示是否<b>^</b>应该匹配在索引0或<i>offset</i>。</p>
+<p>你可能更愿意使用<a href="qstring.html#indexOf" tppabs="http://pyqt4doc.appspot.com/qstring.html#indexOf">QString.indexOf</a>（ ）<a href="qstring.html#contains" tppabs="http://pyqt4doc.appspot.com/qstring.html#contains">QString.contains</a>（） ，或什至<a href="qstringlist.html#filter" tppabs="http://pyqt4doc.appspot.com/qstringlist.html#filter">QStringList.filter</a>（ ） 。要替换的匹配使用<a href="qstring.html#replace" tppabs="http://pyqt4doc.appspot.com/qstring.html#replace">QString.replace</a>（ ） 。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"offsets: 1.23 .50 71.00 6.00"</span>;
+ <span class="type"><a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a></span> rx(<span class="string">"\\d*\\.\\d+"</span>);    <span class="comment">// primitive floating point matching</span>
+ <span class="type">int</span> count <span class="operator">=</span> <span class="number">0</span>;
+ <span class="type">int</span> pos <span class="operator">=</span> <span class="number">0</span>;
+ <span class="keyword">while</span> ((pos <span class="operator">=</span> rx<span class="operator">.</span>indexIn(str<span class="operator">,</span> pos)) <span class="operator">!</span><span class="operator">=</span> <span class="operator">-</span><span class="number">1</span>) {
+     <span class="operator">+</span><span class="operator">+</span>count;
+     pos <span class="operator">+</span><span class="operator">=</span> rx<span class="operator">.</span>matchedLength();
+ }
+ <span class="comment">// pos will be 9, 14, 18 and finally 24; count will end up as 4</span>
+</pre>
+<p>虽然常量，这个函数集<a href="qregexp.html#matchedLength" tppabs="http://pyqt4doc.appspot.com/qregexp.html#matchedLength">matchedLength</a>（ ）<a href="qregexp.html#capturedTexts" tppabs="http://pyqt4doc.appspot.com/qregexp.html#capturedTexts">capturedTexts</a>（）和<a href="qregexp.html#pos" tppabs="http://pyqt4doc.appspot.com/qregexp.html#pos">pos</a>（ ） 。</p>
+<p>如果<a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a>是一个通配符表达式（见<a href="qregexp.html#setPatternSyntax" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setPatternSyntax">setPatternSyntax</a>（ ） ），并希望测试对整个通配符表达式，使用一个字符串<a href="qregexp.html#exactMatch" tppabs="http://pyqt4doc.appspot.com/qregexp.html#exactMatch">exactMatch</a>（代替此功能） 。</p>
+<p><b>See also</b> <a href="qregexp.html#lastIndexIn" tppabs="http://pyqt4doc.appspot.com/qregexp.html#lastIndexIn">lastIndexIn</a>（）和<a href="qregexp.html#exactMatch" tppabs="http://pyqt4doc.appspot.com/qregexp.html#exactMatch">exactMatch</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isEmpty"></a>bool QRegExp.isEmpty (<i>self</i>)</h3>
+<p>返回True如果该模式字符串为空，否则返回False 。</p>
+<p>如果你打电话<a href="qregexp.html#exactMatch" tppabs="http://pyqt4doc.appspot.com/qregexp.html#exactMatch">exactMatch</a>（ ）与空字符串的空模式将返回True，否则它，因为它工作在整个字符串返回False 。如果你打电话<a href="qregexp.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qregexp.html#indexIn">indexIn</a>（ ）对空模式<i>any</i>字符串将返回起始位置的偏移（默认为0 ） ，因为空模式在字符串的开头匹配的“空虚” 。在这种情况下返回的匹配的长度<a href="qregexp.html#matchedLength" tppabs="http://pyqt4doc.appspot.com/qregexp.html#matchedLength">matchedLength</a>（）为0。</p>
+<p>See <a href="qstring.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qstring.html#isEmpty">QString.isEmpty</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isMinimal"></a>bool QRegExp.isMinimal (<i>self</i>)</h3>
+<p>返回True如果已启用最小的（非贪婪）匹配，否则返回False 。</p>
+<p><b>See also</b> <a href="qregexp.html#caseSensitivity" tppabs="http://pyqt4doc.appspot.com/qregexp.html#caseSensitivity">caseSensitivity</a>（）和<a href="qregexp.html#setMinimal" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setMinimal">setMinimal</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isValid"></a>bool QRegExp.isValid (<i>self</i>)</h3>
+<p>返回True如果正则表达式是有效的，否则返回False 。无效的正则表达式永远不匹配。</p>
+<p>该模式<b>[a-z</b>是无效的模式的一个例子，因为它缺少结束括号。</p>
+<p>请注意，一个正则表达式的有效性也可能依赖于通配符标志的设置，例如<b>*.html</b>是一种有效的通配符正则表达式，但无效的正则表达式满。</p>
+<p><b>See also</b> <a href="qregexp.html#errorString" tppabs="http://pyqt4doc.appspot.com/qregexp.html#errorString">errorString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="lastIndexIn"></a>int QRegExp.lastIndexIn (<i>self</i>, QString <i>str</i>, int <i>offset</i> = -1, <a href="qregexp.html#CaretMode-enum" tppabs="http://pyqt4doc.appspot.com/qregexp.html#CaretMode-enum">CaretMode</a> <i>caretMode</i> = QRegExp.CaretAtZero)</h3>
+<p>试图找到向后在比赛中<i>str</i>从位置<i>offset</i>。如果<i>offset</i>为-1 （默认） ，搜索从最后一个字符，如果-2 ，在倒数第二个字符，等等。</p>
+<p>返回第一个匹配，或者-1的位置，如果没有匹配。</p>
+<p>该<i>caretMode</i>参数可以被用来指示是否<b>^</b>应该匹配在索引0或<i>offset</i>。</p>
+<p>虽然常量，这个函数集<a href="qregexp.html#matchedLength" tppabs="http://pyqt4doc.appspot.com/qregexp.html#matchedLength">matchedLength</a>（ ）<a href="qregexp.html#capturedTexts" tppabs="http://pyqt4doc.appspot.com/qregexp.html#capturedTexts">capturedTexts</a>（）和<a href="qregexp.html#pos" tppabs="http://pyqt4doc.appspot.com/qregexp.html#pos">pos</a>（ ） 。</p>
+<p><b>Warning:</b>反向搜索比正向搜索要慢很多。</p>
+<p><b>See also</b> <a href="qregexp.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qregexp.html#indexIn">indexIn</a>（）和<a href="qregexp.html#exactMatch" tppabs="http://pyqt4doc.appspot.com/qregexp.html#exactMatch">exactMatch</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="matchedLength"></a>int QRegExp.matchedLength (<i>self</i>)</h3>
+<p>返回最后一个匹配的字符串，或-1的长度，如果没有匹配。</p>
+<p><b>See also</b> <a href="qregexp.html#exactMatch" tppabs="http://pyqt4doc.appspot.com/qregexp.html#exactMatch">exactMatch</a>（ ）<a href="qregexp.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qregexp.html#indexIn">indexIn</a>（）和<a href="qregexp.html#lastIndexIn" tppabs="http://pyqt4doc.appspot.com/qregexp.html#lastIndexIn">lastIndexIn</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="numCaptures"></a>int QRegExp.numCaptures (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="pattern"></a>QString QRegExp.pattern (<i>self</i>)</h3>
+<p>返回正则表达式的模式字符串。该模式具有下列正则表达式语法或通配符语法，这取决于<a href="qregexp.html#patternSyntax" tppabs="http://pyqt4doc.appspot.com/qregexp.html#patternSyntax">patternSyntax</a>（ ） 。</p>
+<p><b>See also</b> <a href="qregexp.html#setPattern" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setPattern">setPattern</a>（ ）<a href="qregexp.html#patternSyntax" tppabs="http://pyqt4doc.appspot.com/qregexp.html#patternSyntax">patternSyntax</a>（）和<a href="qregexp.html#caseSensitivity" tppabs="http://pyqt4doc.appspot.com/qregexp.html#caseSensitivity">caseSensitivity</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="patternSyntax"></a><a href="qregexp.html#PatternSyntax-enum" tppabs="http://pyqt4doc.appspot.com/qregexp.html#PatternSyntax-enum">PatternSyntax</a> QRegExp.patternSyntax (<i>self</i>)</h3>
+<p>返回所使用的正则表达式的语法。默认值是<a href="qregexp.html#PatternSyntax-enum" tppabs="http://pyqt4doc.appspot.com/qregexp.html#PatternSyntax-enum">QRegExp.RegExp</a>。</p>
+<p><b>See also</b> <a href="qregexp.html#setPatternSyntax" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setPatternSyntax">setPatternSyntax</a>（ ）<a href="qregexp.html#pattern" tppabs="http://pyqt4doc.appspot.com/qregexp.html#pattern">pattern</a>（）和<a href="qregexp.html#caseSensitivity" tppabs="http://pyqt4doc.appspot.com/qregexp.html#caseSensitivity">caseSensitivity</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="pos"></a>int QRegExp.pos (<i>self</i>, int <i>nth</i> = 0)</h3>
+<p>返回的位置<i>nth</i>在搜索字符串捕获的文本。如果<i>nth</i>为0 （默认值） ， POS （ ）返回整个匹配的位置。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a></span> rx(<span class="string">"/([a-z]+)/([a-z]+)"</span>);
+ rx<span class="operator">.</span><a href="qregexp.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qregexp.html#indexIn">indexIn</a>(<span class="string">"Output /dev/null"</span>);   <span class="comment">// returns 7 (position of /dev/null)</span>
+ rx<span class="operator">.</span>pos(<span class="number">0</span>);                        <span class="comment">// returns 7 (position of /dev/null)</span>
+ rx<span class="operator">.</span>pos(<span class="number">1</span>);                        <span class="comment">// returns 8 (position of dev)</span>
+ rx<span class="operator">.</span>pos(<span class="number">2</span>);                        <span class="comment">// returns 12 (position of null)</span>
+</pre>
+<p>对于零长度匹配， POS （ ）总是返回-1 。 （例如，如果盖（ 4 ）将返回一个空字符串， POS （ 4 ）返回-1。 ）这是实现的一个特点。</p>
+<p><b>See also</b> <a href="qregexp.html#cap" tppabs="http://pyqt4doc.appspot.com/qregexp.html#cap">cap</a>（）和<a href="qregexp.html#capturedTexts" tppabs="http://pyqt4doc.appspot.com/qregexp.html#capturedTexts">capturedTexts</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCaseSensitivity"></a>QRegExp.setCaseSensitivity (<i>self</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i>)</h3>
+<p>设置区分大小写匹配<i>cs</i>。</p>
+<p>If <i>cs</i> is <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitive</a>，<b>\.txt$</b>
+matches <tt>readme.txt</tt>但不<tt>README.TXT</tt>。</p>
+<p><b>See also</b> <a href="qregexp.html#caseSensitivity" tppabs="http://pyqt4doc.appspot.com/qregexp.html#caseSensitivity">caseSensitivity</a>（ ）<a href="qregexp.html#setPatternSyntax" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setPatternSyntax">setPatternSyntax</a>（ ）<a href="qregexp.html#setPattern" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setPattern">setPattern</a>（）和<a href="qregexp.html#setMinimal" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setMinimal">setMinimal</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setMinimal"></a>QRegExp.setMinimal (<i>self</i>, bool <i>minimal</i>)</h3>
+<p>启用或禁用最小匹配。如果<i>minimal</i>是假的，匹配是贪婪的（最大），这是默认的。</p>
+<p>例如，假设我们有输入字符串：“我们必须\u003cb\u003e粗体\u003c / b\u003e中，非常\u003cb\u003e粗体\u003c / B\u003e ！ ”并且图案<b>&lt;b&gt;.*&lt;/b&gt;</b>。用默认的贪婪（最大）的匹配，与之匹配的是“我们必须<u>&lt;b&gt;bold&lt;/b&gt;, very &lt;b&gt;bold&lt;/b&gt;</u>！ “，但以最小的（非贪婪）匹配时，第一场比赛是： ”我们必须<u>&lt;b&gt;bold&lt;/b&gt;</u>，非常\u003cB\u003e \u003c / B\u003e大胆！ “，而第二场比赛是”我们必须\u003cb\u003e粗体\u003c / b\u003e中，很<u>&lt;b&gt;bold&lt;/b&gt;</u>！ “ 。在实践中，我们可能会使用该模式<b>&lt;b&gt;[^&lt;]*&lt;/b&gt;</b>相反，尽管这仍然会为嵌套标记失败。</p>
+<p><b>See also</b> <a class="compat" href="index.htm#minimal" tppabs="http://pyqt4doc.appspot.com/qregexp-qt3.html#minimal">minimal</a>（）和<a href="qregexp.html#setCaseSensitivity" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setCaseSensitivity">setCaseSensitivity</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPattern"></a>QRegExp.setPattern (<i>self</i>, QString <i>pattern</i>)</h3>
+<p>模式字符串设置为<i>pattern</i>。区分大小写，通配符，和最小的匹配选项不会改变。</p>
+<p><b>See also</b> <a href="qregexp.html#pattern" tppabs="http://pyqt4doc.appspot.com/qregexp.html#pattern">pattern</a>（ ）<a href="qregexp.html#setPatternSyntax" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setPatternSyntax">setPatternSyntax</a>（）和<a href="qregexp.html#setCaseSensitivity" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setCaseSensitivity">setCaseSensitivity</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPatternSyntax"></a>QRegExp.setPatternSyntax (<i>self</i>, <a href="qregexp.html#PatternSyntax-enum" tppabs="http://pyqt4doc.appspot.com/qregexp.html#PatternSyntax-enum">PatternSyntax</a> <i>syntax</i>)</h3>
+<p>设置语法模式的正则表达式。默认值是<a href="qregexp.html#PatternSyntax-enum" tppabs="http://pyqt4doc.appspot.com/qregexp.html#PatternSyntax-enum">QRegExp.RegExp</a>。</p>
+<p>Setting <i>syntax</i>至<a href="qregexp.html#PatternSyntax-enum" tppabs="http://pyqt4doc.appspot.com/qregexp.html#PatternSyntax-enum">QRegExp.Wildcard</a>让简单的壳状<a href="qregexp.html#wildcard-matching" tppabs="http://pyqt4doc.appspot.com/qregexp.html#wildcard-matching">wildcard
+matching</a>。例如，<b>r*.txt</b>字符串匹配<tt>readme.txt</tt>在通配符模式，但不匹配<tt>readme</tt>。</p>
+<p>Setting <i>syntax</i>至<a href="qregexp.html#PatternSyntax-enum" tppabs="http://pyqt4doc.appspot.com/qregexp.html#PatternSyntax-enum">QRegExp.FixedString</a>表示该图案被解释为一个简单的字符串。特殊字符（如反斜杠）不需要进行转义即可。</p>
+<p><b>See also</b> <a href="qregexp.html#patternSyntax" tppabs="http://pyqt4doc.appspot.com/qregexp.html#patternSyntax">patternSyntax</a>（ ）<a href="qregexp.html#setPattern" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setPattern">setPattern</a>（ ）<a href="qregexp.html#setCaseSensitivity" tppabs="http://pyqt4doc.appspot.com/qregexp.html#setCaseSensitivity">setCaseSensitivity</a>（）和<a href="qregexp.html#escape" tppabs="http://pyqt4doc.appspot.com/qregexp.html#escape">escape</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="swap"></a>QRegExp.swap (<i>self</i>, <a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a> <i>other</i>)</h3>
+<p>掉期的正则表达式<i>other</i>与此正则表达式。这个操作是非常快的，而且永远不会。</p>
+<p>此功能被引入Qt的4.8 。</p>
+
+
+<h3 class="fn">
+<a name="__eq__"></a>bool QRegExp.__eq__ (<i>self</i>, <a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a> <i>rx</i>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QRegExp.__ne__ (<i>self</i>, <a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a> <i>rx</i>)</h3>
+<h3 class="fn">
+<a name="__repr__"></a>str QRegExp.__repr__ (<i>self</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

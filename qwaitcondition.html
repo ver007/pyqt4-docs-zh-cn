@@ -1,0 +1,162 @@
+﻿<html>
+<head>
+<title>QWaitCondition Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QWaitCondition Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QWaitCondition类提供了线程同步的条件变量。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qwaitcondition.html#QWaitCondition" tppabs="http://pyqt4doc.appspot.com/qwaitcondition.html#QWaitCondition">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qwaitcondition.html#wait" tppabs="http://pyqt4doc.appspot.com/qwaitcondition.html#wait">wait</a></b> (<i>self</i>, QMutex <i>mutex</i>, int <i>msecs</i> = ULONG_MAX)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qwaitcondition.html#wait-2" tppabs="http://pyqt4doc.appspot.com/qwaitcondition.html#wait-2">wait</a></b> (<i>self</i>, QReadWriteLock <i>readWriteLock</i>, int <i>msecs</i> = ULONG_MAX)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwaitcondition.html#wakeAll" tppabs="http://pyqt4doc.appspot.com/qwaitcondition.html#wakeAll">wakeAll</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwaitcondition.html#wakeOne" tppabs="http://pyqt4doc.appspot.com/qwaitcondition.html#wakeOne">wakeOne</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QWaitCondition类提供了线程同步的条件变量。</p>
+<p>QWaitCondition允许一个线程告诉某种条件已经满足其他线程。一个或多个线程可以阻塞等待QWaitCondition设置的条件与<a href="qwaitcondition.html#wakeOne" tppabs="http://pyqt4doc.appspot.com/qwaitcondition.html#wakeOne">wakeOne</a>（）或<a href="qwaitcondition.html#wakeAll" tppabs="http://pyqt4doc.appspot.com/qwaitcondition.html#wakeAll">wakeAll</a>（ ） 。使用<a href="qwaitcondition.html#wakeOne" tppabs="http://pyqt4doc.appspot.com/qwaitcondition.html#wakeOne">wakeOne</a>（ ）来唤醒中随机选择的条件或<a href="qwaitcondition.html#wakeAll" tppabs="http://pyqt4doc.appspot.com/qwaitcondition.html#wakeAll">wakeAll</a>（ ）来唤醒他们。</p>
+<p>例如，让我们假设我们有每当用户按下一个键应该执行三项任务。每个任务可以被分成一个线程，每一个都具有一<a href="qthread.html#run" tppabs="http://pyqt4doc.appspot.com/qthread.html#run">run()</a>身体是这样的：</p>
+<pre class="cpp">
+ forever {
+     mutex<span class="operator">.</span>lock();
+     keyPressed<span class="operator">.</span>wait(<span class="operator">&amp;</span>mutex);
+     do_something();
+     mutex<span class="operator">.</span>unlock();
+ }
+</pre>
+<p>这里，本<tt>keyPressed</tt>变量的类型QWaitCondition的全局变量。</p>
+<p>第四个线程将读取按键和每收到一个，比如这个时候唤醒其它三个线程了：</p>
+<pre class="cpp">
+ forever {
+     getchar();
+     keyPressed<span class="operator">.</span>wakeAll();
+ }
+</pre>
+<p>其中三个线程被唤醒的顺序是不确定的。此外，如果某些线程仍在<tt>do_something()</tt>当按键被按下时，他们不会被唤醒（因为他们没有等待条件变量） ，所以该任务将不会为该按键来执行。这个问题可以用一个计数器和一个可以解决<a href="qmutex.html" tppabs="http://pyqt4doc.appspot.com/qmutex.html">QMutex</a>守护它。例如，这里的工作线程新的代码：</p>
+<pre class="cpp">
+ forever {
+     mutex<span class="operator">.</span>lock();
+     keyPressed<span class="operator">.</span>wait(<span class="operator">&amp;</span>mutex);
+     <span class="operator">+</span><span class="operator">+</span>count;
+     mutex<span class="operator">.</span>unlock();
+
+     do_something();
+
+     mutex<span class="operator">.</span>lock();
+     <span class="operator">-</span><span class="operator">-</span>count;
+     mutex<span class="operator">.</span>unlock();
+ }
+</pre>
+<p>下面是第四个线程的代码：</p>
+<pre class="cpp">
+ forever {
+     getchar();
+
+     mutex<span class="operator">.</span>lock();
+     <span class="comment">// Sleep until there are no busy worker threads</span>
+     <span class="keyword">while</span> (count <span class="operator">&gt;</span> <span class="number">0</span>) {
+         mutex<span class="operator">.</span>unlock();
+         sleep(<span class="number">1</span>);
+         mutex<span class="operator">.</span>lock();
+     }
+     keyPressed<span class="operator">.</span>wakeAll();
+     mutex<span class="operator">.</span>unlock();
+ }
+</pre>
+<p>互斥锁是必要的，因为两个线程试图改变同一个变量的值的结果同时是不可预知的。</p>
+<p>等待条件是一个强大的线程同步原语。该<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/threads-waitconditions.html">Wait Conditions</a>示例显示了如何使用QWaitCondition作为替代<a href="qsemaphore.html" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html">QSemaphore</a>用于控制访问环形缓冲器由一个生产者线程和消费者线程共享。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QWaitCondition"></a>QWaitCondition.__init__ (<i>self</i>)</h3>
+<p>构造一个新的等待条件的对象。</p>
+
+
+<h3 class="fn">
+<a name="wait"></a>bool QWaitCondition.wait (<i>self</i>, <a href="qmutex.html" tppabs="http://pyqt4doc.appspot.com/qmutex.html">QMutex</a> <i>mutex</i>, int <i>msecs</i> = ULONG_MAX)</h3>
+<p>释放锁定<i>mutex</i>并等待在等待条件。该<i>mutex</i>必须首先锁定调用线程。如果<i>mutex</i>是不是在锁定状态，该函数将立即返回。如果<i>mutex</i>是一个递归互斥体，该函数立即返回。该<i>mutex</i>将被解锁，并且调用线程将被阻塞，直到下列任一条件满足：</p>
+<ul>
+<li>Another thread signals it using <a href="qwaitcondition.html#wakeOne" tppabs="http://pyqt4doc.appspot.com/qwaitcondition.html#wakeOne">wakeOne</a>() or <a href="qwaitcondition.html#wakeAll" tppabs="http://pyqt4doc.appspot.com/qwaitcondition.html#wakeAll">wakeAll</a>(). This function will
+return true in this case.</li>
+<li>
+<i>time</i> milliseconds has elapsed. If <i>time</i> is
+<tt>ULONG_MAX</tt> (the default), then the wait will never timeout
+(the event must be signalled). This function will return false if
+the wait timed out.</li>
+</ul>
+<p>互斥将被返回到相同的锁定状态。这个功能被提供，以允许从锁定状态到等待状态的原子跃迁。</p>
+<p><b>See also</b> <a href="qwaitcondition.html#wakeOne" tppabs="http://pyqt4doc.appspot.com/qwaitcondition.html#wakeOne">wakeOne</a>（）和<a href="qwaitcondition.html#wakeAll" tppabs="http://pyqt4doc.appspot.com/qwaitcondition.html#wakeAll">wakeAll</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="wait-2"></a>bool QWaitCondition.wait (<i>self</i>, <a href="qreadwritelock.html" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html">QReadWriteLock</a> <i>readWriteLock</i>, int <i>msecs</i> = ULONG_MAX)</h3>
+<p>释放锁定<i>readWriteLock</i>并等待在等待条件。该<i>readWriteLock</i>必须首先锁定调用线程。如果<i>readWriteLock</i>是不是在锁定状态，该函数将立即返回。该<i>readWriteLock</i>不能被递归锁定，否则此功能将无法正常释放该锁。该<i>readWriteLock</i>将被解锁，并且调用线程将被阻塞，直到下列任一条件满足：</p>
+<ul>
+<li>Another thread signals it using <a href="qwaitcondition.html#wakeOne" tppabs="http://pyqt4doc.appspot.com/qwaitcondition.html#wakeOne">wakeOne</a>() or <a href="qwaitcondition.html#wakeAll" tppabs="http://pyqt4doc.appspot.com/qwaitcondition.html#wakeAll">wakeAll</a>(). This function will
+return true in this case.</li>
+<li>
+<i>time</i> milliseconds has elapsed. If <i>time</i> is
+<tt>ULONG_MAX</tt> (the default), then the wait will never timeout
+(the event must be signalled). This function will return false if
+the wait timed out.</li>
+</ul>
+<p>该<i>readWriteLock</i>将返回到相同的锁定状态。这个功能被提供，以允许从锁定状态到等待状态的原子跃迁。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qwaitcondition.html#wakeOne" tppabs="http://pyqt4doc.appspot.com/qwaitcondition.html#wakeOne">wakeOne</a>（）和<a href="qwaitcondition.html#wakeAll" tppabs="http://pyqt4doc.appspot.com/qwaitcondition.html#wakeAll">wakeAll</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="wakeAll"></a>QWaitCondition.wakeAll (<i>self</i>)</h3>
+<p>唤醒等待等待条件的所有线程。在该线程被唤醒的顺序依赖于操作系统的调度策略，并不能被控制或预测。</p>
+<p><b>See also</b> <a href="qwaitcondition.html#wakeOne" tppabs="http://pyqt4doc.appspot.com/qwaitcondition.html#wakeOne">wakeOne</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="wakeOne"></a>QWaitCondition.wakeOne (<i>self</i>)</h3>
+<p>唤醒等待的一个线程等待条件。该被唤醒的线程依赖于操作系统的调度策略，并且不能被控制或预测。</p>
+<p>如果你想唤醒一个特定的线程，该解决方案通常使用不同的等待状态，并有不同的线程在等待不同的条件。</p>
+<p><b>See also</b> <a href="qwaitcondition.html#wakeAll" tppabs="http://pyqt4doc.appspot.com/qwaitcondition.html#wakeAll">wakeAll</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

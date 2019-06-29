@@ -1,0 +1,187 @@
+﻿<html>
+<head>
+<title>QGestureRecognizer Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QGestureRecognizer Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QGestureRecognizer类提供了手势识别的基础设施。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer-result.html">Result</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qgesturerecognizer.html#ResultFlag-enum" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html#ResultFlag-enum">ResultFlag</a></b> { Ignore, MayBeGesture, TriggerGesture, FinishGesture, CancelGesture, ConsumeEventHint }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qgesturerecognizer.html#QGestureRecognizer" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html#QGestureRecognizer">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgesturerecognizer.html#QGestureRecognizer-2" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html#QGestureRecognizer-2">__init__</a></b> (<i>self</i>, QGestureRecognizer)</li>
+<li>
+<div class="fn"></div>QGesture <b><a href="qgesturerecognizer.html#create" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html#create">create</a></b> (<i>self</i>, QObject <i>target</i>)</li>
+<li>
+<div class="fn"></div>Result <b><a href="qgesturerecognizer.html#recognize" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html#recognize">recognize</a></b> (<i>self</i>, QGesture <i>state</i>, QObject <i>watched</i>, QEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgesturerecognizer.html#reset" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html#reset">reset</a></b> (<i>self</i>, QGesture <i>state</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>Qt.GestureType <b><a href="qgesturerecognizer.html#registerRecognizer" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html#registerRecognizer">registerRecognizer</a></b> (QGestureRecognizer <i>recognizer</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgesturerecognizer.html#unregisterRecognizer" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html#unregisterRecognizer">unregisterRecognizer</a></b> (Qt.GestureType <i>type</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QGestureRecognizer类提供了手势识别的基础设施。</p>
+<p>手势识别器负责创建和管理<a href="qgesture.html" tppabs="http://pyqt4doc.appspot.com/qgesture.html">QGesture</a>对象和发送到监视输入事件<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>和<a href="qgraphicsobject.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsobject.html">QGraphicsObject</a>子类。 QGestureRecognizer是实现自定义手势的基类。</p>
+<p>开发人员只需要提供手势识别的标准手势不需要直接使用这个类。实例将在幕后由框架创建。</p>
+<p>手势使用手势在你的应用程序在处理Qt和信息的概述，请参阅<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/gestures-overview.html">Gestures Programming</a>文档。</p>
+<a id="recognizing-gestures" name="recognizing-gestures"></a>
+<h3>Recognizing Gestures</h3>
+<p>识别手势的过程涉及发送给特定对象的过滤输入事件，并修改相关<a href="qgesture.html" tppabs="http://pyqt4doc.appspot.com/qgesture.html">QGesture</a>对象以包含有关用户的输入相关的信息。</p>
+<p>创建手势时，框架调用<a href="qgesturerecognizer.html#create" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html#create">create</a>（）来处理的特定实例的用户输入<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>
+or <a href="qgraphicsobject.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsobject.html">QGraphicsObject</a>子类。一<a href="qgesture.html" tppabs="http://pyqt4doc.appspot.com/qgesture.html">QGesture</a>对象为被配置为使用手势每个插件或项目创建。</p>
+<p>一旦<a href="qgesture.html" tppabs="http://pyqt4doc.appspot.com/qgesture.html">QGesture</a>已经为一个目标对象创建时，手势识别将获得它的活动<a href="qgesturerecognizer.html#recognize" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html#recognize">recognize</a>（ ）处理函数。</p>
+<p>当手势被取消，<a href="qgesturerecognizer.html#reset" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html#reset">reset</a>（ ）函数被调用，从而使识别器，以更新相应的适当的属性的机会<a href="qgesture.html" tppabs="http://pyqt4doc.appspot.com/qgesture.html">QGesture</a>对象。</p>
+<a id="supporting-new-gestures" name="supporting-new-gestures"></a>
+<h3>Supporting New Gestures</h3>
+<p>要添加新手势的支持，你需要从QGestureRecognizer派生来创建一个自定义识别器类，构造这个类的一个实例，并与应用程序通过调用它注册<a href="qgesturerecognizer.html#registerRecognizer" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html#registerRecognizer">QGestureRecognizer.registerRecognizer</a>（ ） 。您也可以继承<a href="qgesture.html" tppabs="http://pyqt4doc.appspot.com/qgesture.html">QGesture</a>创建一个自定义手势类，或依赖动态特性来表达你要处理的姿态具体细节。</p>
+<p>您的自定义QGestureRecognizer子类需要重新实现<a href="qgesturerecognizer.html#recognize" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html#recognize">recognize</a>（ ）函数来处理和过滤的传入输入事件<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>和<a href="qgraphicsobject.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsobject.html">QGraphicsObject</a>子类。虽然手势识别的逻辑在这个函数的实现，你可以存储在识别过程中的状态持久性信息<a href="qgesture.html" tppabs="http://pyqt4doc.appspot.com/qgesture.html">QGesture</a>对象提供。该<a href="qgesturerecognizer.html#recognize" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html#recognize">recognize</a>（ ）函数必须返回一个值<a href="qgesturerecognizer.html#ResultFlag-enum" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html#ResultFlag-enum">QGestureRecognizer.Result</a>这说明，对于一个给定的姿态和目标物体识别的状态。这决定了一个手势事件是否将被传递到的目标对象。</p>
+<p>如果您选择自定义来表示一种姿态<a href="qgesture.html" tppabs="http://pyqt4doc.appspot.com/qgesture.html">QGesture</a>子类，你需要重新实现<a href="qgesturerecognizer.html#create" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html#create">create</a>（ ）函数来构造你的手势类的实例。同样，您可能需要重新实现<a href="qgesturerecognizer.html#reset" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html#reset">reset</a>（ ）函数，如果要特殊处理，当手势被取消您的自定义手势对象需要。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="ResultFlag-enum"></a>QGestureRecognizer.ResultFlag</h3>
+<p>这个枚举变量描述了一个手势识别状态机的当前事件的过滤步骤的结果。</p>
+<p>该结果由一个状态值（一个忽略， MayBeGesture ， TriggerGesture ， FinishGesture ， CancelGesture ）和一个可选的提示（ ConsumeEventHint ） 。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGestureRecognizer.Ignore</tt></td>
+<td class="topAlign"><tt>0x0001</tt></td>
+<td class="topAlign">该事件不改变识别器的状态。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGestureRecognizer.MayBeGesture</tt></td>
+<td class="topAlign"><tt>0x0002</tt></td>
+<td class="topAlign">事件改变识别器的内部状态，但目前还不清楚，如果它是一个手势或没有。该识别需要过滤更多的事件来决定。在MayBeGesture状态手势识别，如果他们需要很长时间才能识别手势可能会自动复位。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QGestureRecognizer.TriggerGesture</tt>
+</td>
+<td class="topAlign"><tt>0x0004</tt></td>
+<td class="topAlign">姿态已被触发并且相应<a href="qgesture.html" tppabs="http://pyqt4doc.appspot.com/qgesture.html">QGesture</a>对象将被传递到的目标，作为一个部分<a href="qgestureevent.html" tppabs="http://pyqt4doc.appspot.com/qgestureevent.html">QGestureEvent</a>。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QGestureRecognizer.FinishGesture</tt>
+</td>
+<td class="topAlign"><tt>0x0008</tt></td>
+<td class="topAlign">手势已经成功完成，并适当<a href="qgesture.html" tppabs="http://pyqt4doc.appspot.com/qgesture.html">QGesture</a>对象将被传递到的目标，作为一个部分<a href="qgestureevent.html" tppabs="http://pyqt4doc.appspot.com/qgestureevent.html">QGestureEvent</a>。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QGestureRecognizer.CancelGesture</tt>
+</td>
+<td class="topAlign"><tt>0x0010</tt></td>
+<td class="topAlign">事件清楚表明，它不是一种姿态。如果手势识别是GestureTriggered状态之前，则该手势被取消，相应的<a href="qgesture.html" tppabs="http://pyqt4doc.appspot.com/qgesture.html">QGesture</a>对象将被传递到的目标，作为一个部分<a href="qgestureevent.html" tppabs="http://pyqt4doc.appspot.com/qgestureevent.html">QGestureEvent</a>。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QGestureRecognizer.ConsumeEventHint</tt>
+</td>
+<td class="topAlign"><tt>0x0100</tt></td>
+<td class="topAlign">这提示指定的手势框架应该消耗的过滤事件，并没有提供它的接收器。</td>
+</tr>
+</table>
+<p>结果类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cResultFlag\u003e 。它存储ResultFlag值的或组合。</p>
+<p><b>See also</b> <a href="qgesturerecognizer.html#recognize" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html#recognize">QGestureRecognizer.recognize</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QGestureRecognizer"></a>QGestureRecognizer.__init__ (<i>self</i>)</h3>
+<p>构造一个新的手势识别对象。</p>
+
+
+<h3 class="fn">
+<a name="QGestureRecognizer-2"></a>QGestureRecognizer.__init__ (<i>self</i>, <a href="qgesturerecognizer.html" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html">QGestureRecognizer</a>)</h3>
+<h3 class="fn">
+<a name="create"></a><a href="qgesture.html" tppabs="http://pyqt4doc.appspot.com/qgesture.html">QGesture</a> QGestureRecognizer.create (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>target</i>)</h3>
+<p>这个功能是通过Qt的调用来创建一个新的<a href="qgesture.html" tppabs="http://pyqt4doc.appspot.com/qgesture.html">QGesture</a>对象为给定的<i>target</i>（<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> or <a href="qgraphicsobject.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsobject.html">QGraphicsObject</a>） 。</p>
+<p>重新实现这个函数来创建一个自定义<a href="qgesture.html" tppabs="http://pyqt4doc.appspot.com/qgesture.html">QGesture</a>衍生的手势对象如有必要。</p>
+<p>该应用程序需要创建的手势对象的所有权。</p>
+
+
+<h3 class="fn">
+<a name="recognize"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer-result.html">Result</a> QGestureRecognizer.recognize (<i>self</i>, <a href="qgesture.html" tppabs="http://pyqt4doc.appspot.com/qgesture.html">QGesture</a> <i>state</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>watched</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>处理给定的<i>event</i>为<i>watched</i>对象，更新的状态<i>gesture</i>为所需的对象，并返回一个合适的结果，当前识别步骤。</p>
+<p>这个函数由框架调用，以允许识别器来过滤派往输入事件<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> or <a href="qgraphicsobject.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsobject.html">QGraphicsObject</a>情况下，它正在监视。</p>
+<p>其结果反映了手势的多已被确认。的状态<i>gesture</i>根据结果对象被设置。</p>
+<p><b>See also</b> <a href="qgesturerecognizer.html#ResultFlag-enum" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html#ResultFlag-enum">QGestureRecognizer.Result</a>。</p>
+
+
+<h3 class="fn">
+<a name="registerRecognizer"></a><a href="qt.html#GestureType-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#GestureType-enum">Qt.GestureType</a> QGestureRecognizer.registerRecognizer (<a href="qgesturerecognizer.html" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html">QGestureRecognizer</a> <i>recognizer</i>)</h3>
+<p>该<i>recognizer</i>说法有它的所有权转移给Qt的。</p>
+<p>注册给定的<i>recognizer</i>在手势框架，并返回一个手势ID为它。</p>
+<p>该应用程序采用的所有权<i>recognizer</i>并返回与它相关联的手势类型ID。对于手势识别的处理自定义<a href="qgesture.html" tppabs="http://pyqt4doc.appspot.com/qgesture.html">QGesture</a>对象（即，那些回报<a href="qt.html#GestureType-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#GestureType-enum">Qt.CustomGesture</a>在<a href="qgesture.html#gestureType-prop" tppabs="http://pyqt4doc.appspot.com/qgesture.html#gestureType-prop">QGesture.gestureType</a>（ ）函数）的返回值是与生成的手势识别码<a href="qt.html#GestureType-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#GestureType-enum">Qt.CustomGesture</a>标志设置。</p>
+<p><b>See also</b> <a href="qgesturerecognizer.html#unregisterRecognizer" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html#unregisterRecognizer">unregisterRecognizer</a>（ ）<a href="qgesturerecognizer.html#create" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html#create">QGestureRecognizer.create</a>（）和<a href="qgesture.html" tppabs="http://pyqt4doc.appspot.com/qgesture.html">QGesture</a>。</p>
+
+
+<h3 class="fn">
+<a name="reset"></a>QGestureRecognizer.reset (<i>self</i>, <a href="qgesture.html" tppabs="http://pyqt4doc.appspot.com/qgesture.html">QGesture</a> <i>state</i>)</h3>
+<p>调用此函数由框架来重置一个给定的<i>gesture</i>。</p>
+<p>重新实现这个函数来实现自定义的附加要求<a href="qgesture.html" tppabs="http://pyqt4doc.appspot.com/qgesture.html">QGesture</a>对象。如果你实现一个自定义的，这可能是必要的<a href="qgesture.html" tppabs="http://pyqt4doc.appspot.com/qgesture.html">QGesture</a>其性质需要当手势被复位特殊处理。</p>
+
+
+<h3 class="fn">
+<a name="unregisterRecognizer"></a>QGestureRecognizer.unregisterRecognizer (<a href="qt.html#GestureType-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#GestureType-enum">Qt.GestureType</a> <i>type</i>)</h3>
+<p>取消注册所有手势指定的识别<i>type</i>。</p>
+<p><b>See also</b> <a href="qgesturerecognizer.html#registerRecognizer" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html#registerRecognizer">registerRecognizer</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

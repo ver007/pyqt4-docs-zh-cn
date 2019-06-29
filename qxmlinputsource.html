@@ -1,0 +1,159 @@
+﻿<html>
+<head>
+<title>QXmlInputSource Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QXmlInputSource Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtxml.html">QtXml</a> module]</sup></sup>
+</h1>
+<p>该QXmlInputSource类提供​​输入数据为<a href="qxmlreader.html" tppabs="http://pyqt4doc.appspot.com/qxmlreader.html">QXmlReader</a>子类。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlinputsource.html#QXmlInputSource" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#QXmlInputSource">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlinputsource.html#QXmlInputSource-2" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#QXmlInputSource-2">__init__</a></b> (<i>self</i>, QIODevice <i>dev</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlinputsource.html#QXmlInputSource-3" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#QXmlInputSource-3">__init__</a></b> (<i>self</i>, QXmlInputSource)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qxmlinputsource.html#data" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#data">data</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlinputsource.html#fetchData" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#fetchData">fetchData</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qxmlinputsource.html#fromRawData" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#fromRawData">fromRawData</a></b> (<i>self</i>, QByteArray <i>data</i>, bool <i>beginning</i> = False)</li>
+<li>
+<div class="fn"></div>QChar <b><a href="qxmlinputsource.html#next" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#next">next</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlinputsource.html#reset" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#reset">reset</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlinputsource.html#setData" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#setData">setData</a></b> (<i>self</i>, QString <i>dat</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlinputsource.html#setData-2" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#setData-2">setData</a></b> (<i>self</i>, QByteArray <i>dat</i>)</li>
+</ul>
+<h3>Static Members</h3>
+<ul>
+<li>
+<div class="fn"></div>int <b><a href="qxmlinputsource.html#EndOfData-var" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#EndOfData-var">EndOfData</a></b>
+</li>
+<li>
+<div class="fn"></div>int <b><a href="qxmlinputsource.html#EndOfDocument-var" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#EndOfDocument-var">EndOfDocument</a></b>
+</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QXmlInputSource类提供​​输入数据为<a href="qxmlreader.html" tppabs="http://pyqt4doc.appspot.com/qxmlreader.html">QXmlReader</a>子类。</p>
+<p>的所有子类<a href="qxmlreader.html" tppabs="http://pyqt4doc.appspot.com/qxmlreader.html">QXmlReader</a>阅读从这个类的输入XML文档。</p>
+<p>这个类识别数据通过读取编码声明在XML文件中的编码，如果找到一个，并使用相应的编码读出的数据。如果它没有找到一个编码声明，那么它假定数据是用UTF -8或UTF-16 ，这取决于它是否能找到一个字节顺序标记。</p>
+<p>有两种方法来填充数据输入源：你可以用它构建<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>*使输入源读取该设备的数据。或者您也可以显式设置数据与之一<a href="qxmlinputsource.html#setData" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#setData">setData</a>（）函数。</p>
+<p>通常你要么建立在这一个工作QXmlInputSource<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>*或者你构造一个空QXmlInputSource和设置数据<a href="qxmlinputsource.html#setData" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#setData">setData</a>（ ） 。目前只有极少数情况下，您都需要混合这两种方法。</p>
+<p>该<a href="qxmlreader.html" tppabs="http://pyqt4doc.appspot.com/qxmlreader.html">QXmlReader</a>子类使用<a href="qxmlinputsource.html#next" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#next">next</a>（ ）函数按字符读取输入的字符。如果你想从头开始，使用<a href="qxmlinputsource.html#reset" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#reset">reset</a>（ ） 。</p>
+<p>该功能<a href="qxmlinputsource.html#data" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#data">data</a>（）和<a href="qxmlinputsource.html#fetchData" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#fetchData">fetchData</a>如果你想做一件事，比解析，如其他数据（ ）是有用的显示原始XML文件。使用QXmlInputClass在这种情况下的好处是，它会尝试使用正确的编码。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QXmlInputSource"></a>QXmlInputSource.__init__ (<i>self</i>)</h3>
+<p>构造一个其中不包含任何数据的输入源。</p>
+<p><b>See also</b> <a href="qxmlinputsource.html#setData" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#setData">setData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QXmlInputSource-2"></a>QXmlInputSource.__init__ (<i>self</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>dev</i>)</h3>
+<p>构造一个输入源，并从设备获取数据<i>dev</i>。如果<i>dev</i>是不是开放的，它在只读模式打开。如果<i>dev</i>是0或不可能从设备读取，输入信号源将不包含任何数据。</p>
+<p><b>See also</b> <a href="qxmlinputsource.html#setData" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#setData">setData</a>（ ）<a href="qxmlinputsource.html#fetchData" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#fetchData">fetchData</a>（）和<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>。</p>
+
+
+<h3 class="fn">
+<a name="QXmlInputSource-3"></a>QXmlInputSource.__init__ (<i>self</i>, <a href="qxmlinputsource.html" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html">QXmlInputSource</a>)</h3>
+<h3 class="fn">
+<a name="data"></a>QString QXmlInputSource.data (<i>self</i>)</h3>
+<p>返回输入源中包含的数据或空字符串，如果输入信号源不包含任何数据。</p>
+<p><b>See also</b> <a href="qxmlinputsource.html#setData" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#setData">setData</a>（ ）<a href="qxmlinputsource.html#QXmlInputSource" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#QXmlInputSource">QXmlInputSource</a>（）和<a href="qxmlinputsource.html#fetchData" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#fetchData">fetchData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fetchData"></a>QXmlInputSource.fetchData (<i>self</i>)</h3>
+<p>该函数读取从施工过程中设置的设备更多的数据。如果输入源已经包含数据，这个功能会删除该数据首次。</p>
+<p>这个对象包含调用此函数后没有数据，如果该对象没有一个设备读取数据，或者如果这个功能是无法从设备得到更多的数据构成。</p>
+<p>有两次，其中一个是隐含另一个函数调用来完成取：施工期间（使物体开始与一些初始数据如果有的话） ，以及在通话期间<a href="qxmlinputsource.html#next" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#next">next</a>（ ） （如果数据已经用完） 。</p>
+<p>你通常不需要，如果你用它来使用这个功能<a href="qxmlinputsource.html#next" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#next">next</a>（ ） 。</p>
+<p><b>See also</b> <a href="qxmlinputsource.html#data" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#data">data</a>（ ）<a href="qxmlinputsource.html#next" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#next">next</a>（）和<a href="qxmlinputsource.html#QXmlInputSource" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#QXmlInputSource">QXmlInputSource</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fromRawData"></a>QString QXmlInputSource.fromRawData (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>data</i>, bool <i>beginning</i> = False)</h3>
+<p>该函数读取XML文件<i>data</i>并试图识别的编码。它把原始数据<i>data</i>成<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>并返回它。它试图尽力获取XML文件的正确编码。</p>
+<p>If <i>beginning</i>诚然，这个函数假设数据开始于一个新的XML文档的开始，并寻找一个编码声明。如果<i>beginning</i>是假的，它使用从调用之前确定的编码转换的原始数据。</p>
+
+
+<h3 class="fn">
+<a name="next"></a>QChar QXmlInputSource.next (<i>self</i>)</h3>
+<p>返回输入源的下一个字符。如果这个函数达到可用数据的末尾时，它返回<a href="qxmlinputsource.html#EndOfData-var" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#EndOfData-var">QXmlInputSource.EndOfData</a>。如果你的next（）之后调用，它会尝试通过调用来获取更多数据<a href="qxmlinputsource.html#fetchData" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#fetchData">fetchData</a>（ ） 。如果<a href="qxmlinputsource.html#fetchData" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#fetchData">fetchData</a>（ ）调用会导致新的数据，这个函数返回数据的第一个字符，否则返回<a href="qxmlinputsource.html#EndOfDocument-var" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#EndOfDocument-var">QXmlInputSource.EndOfDocument</a>。</p>
+<p>读者如<a href="qxmlsimplereader.html" tppabs="http://pyqt4doc.appspot.com/qxmlsimplereader.html">QXmlSimpleReader</a>，将假设XML文档的结尾已经达到，如果这个函数返回<a href="qxmlinputsource.html#EndOfDocument-var" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#EndOfDocument-var">QXmlInputSource.EndOfDocument</a>，并且将检查所提供的输入是良好的。因此，重新实现这个函数的时候，一定要确保这种行为是重复是很重要的。</p>
+<p><b>See also</b> <a href="qxmlinputsource.html#reset" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#reset">reset</a>（ ）<a href="qxmlinputsource.html#fetchData" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#fetchData">fetchData</a>（ ）<a href="qxmlsimplereader.html#parse" tppabs="http://pyqt4doc.appspot.com/qxmlsimplereader.html#parse">QXmlSimpleReader.parse</a>（）和<a href="qxmlsimplereader.html#parseContinue" tppabs="http://pyqt4doc.appspot.com/qxmlsimplereader.html#parseContinue">QXmlSimpleReader.parseContinue</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="reset"></a>QXmlInputSource.reset (<i>self</i>)</h3>
+<p>这个函数设置使用的位置<a href="qxmlinputsource.html#next" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#next">next</a>（）来返回的数据的开头<a href="qxmlinputsource.html#data" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#data">data</a>（ ） 。如果你想使用的输入源不止一个解析，这是很有用的。</p>
+<p><b>Note:</b>在该情况下，底层的数据源是一个<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>在设备的当前位置是不会自动设置为输入的开始。该设备做这个呼吁QIODevice.seek （ 0 ） 。</p>
+<p><b>See also</b> <a href="qxmlinputsource.html#next" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#next">next</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setData"></a>QXmlInputSource.setData (<i>self</i>, QString <i>dat</i>)</h3>
+<p>输入源的数据集，以<i>dat</i>。</p>
+<p>如果输入源已经包含数据，这个功能会删除该数据首次。</p>
+<p><b>See also</b> <a href="qxmlinputsource.html#data" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html#data">data</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setData-2"></a>QXmlInputSource.setData (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>dat</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>数据<i>dat</i>通过正确的文本编解码器通过了，它被设置之前。</p>
+<hr>
+<h2>Member Documentation</h2>
+<h3 class="fn">
+<a name="EndOfData-var"></a>int EndOfData</h3>
+<p>此构件应被视为常数。</p>
+<h3 class="fn">
+<a name="EndOfDocument-var"></a>int EndOfDocument</h3>
+<p>此构件应被视为常数。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

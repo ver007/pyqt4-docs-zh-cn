@@ -1,0 +1,129 @@
+﻿<html>
+<head>
+<title>QGraphicsItemGroup Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QGraphicsItemGroup Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QGraphicsItemGroup类提供一个容器，把一组项目作为一个单独的项目。<a href="#details">More...</a></p>
+
+<p>继承<a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsitemgroup.html#QGraphicsItemGroup" tppabs="http://pyqt4doc.appspot.com/qgraphicsitemgroup.html#QGraphicsItemGroup">__init__</a></b> (<i>self</i>, QGraphicsItem <i>parent</i> = None, QGraphicsScene <i>scene</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsitemgroup.html#addToGroup" tppabs="http://pyqt4doc.appspot.com/qgraphicsitemgroup.html#addToGroup">addToGroup</a></b> (<i>self</i>, QGraphicsItem <i>item</i>)</li>
+<li>
+<div class="fn"></div>QRectF <b><a href="qgraphicsitemgroup.html#boundingRect" tppabs="http://pyqt4doc.appspot.com/qgraphicsitemgroup.html#boundingRect">boundingRect</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qgraphicsitemgroup.html#isObscuredBy" tppabs="http://pyqt4doc.appspot.com/qgraphicsitemgroup.html#isObscuredBy">isObscuredBy</a></b> (<i>self</i>, QGraphicsItem <i>item</i>)</li>
+<li>
+<div class="fn"></div>QPainterPath <b><a href="qgraphicsitemgroup.html#opaqueArea" tppabs="http://pyqt4doc.appspot.com/qgraphicsitemgroup.html#opaqueArea">opaqueArea</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsitemgroup.html#paint" tppabs="http://pyqt4doc.appspot.com/qgraphicsitemgroup.html#paint">paint</a></b> (<i>self</i>, QPainter <i>painter</i>, QStyleOptionGraphicsItem <i>option</i>, QWidget <i>widget</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsitemgroup.html#removeFromGroup" tppabs="http://pyqt4doc.appspot.com/qgraphicsitemgroup.html#removeFromGroup">removeFromGroup</a></b> (<i>self</i>, QGraphicsItem <i>item</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qgraphicsitemgroup.html#type" tppabs="http://pyqt4doc.appspot.com/qgraphicsitemgroup.html#type">type</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QGraphicsItemGroup类提供一个容器，把一组项目作为一个单独的项目。</p>
+<p>一个QGraphicsItemGroup是一种特殊类型的复合项目，对待自身及其所有子作为一个项目（即，所有的事件和几何形状为所有儿童都合并在一起） 。这是常见的使用项目组演示工具，当用户希望将若干较小的项目变成一个大项目，以简化移动和项目的复制。</p>
+<p>如果你想要的是存储在其它项目的项目，你可以使用任何<a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a>直接通过传递一个合适的父<a href="qgraphicsitem.html#setParentItem" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#setParentItem">setParentItem</a>（ ） 。</p>
+<p>该<a href="qgraphicsitemgroup.html#boundingRect" tppabs="http://pyqt4doc.appspot.com/qgraphicsitemgroup.html#boundingRect">boundingRect</a>QGraphicsItemGroup （）函数将返回所有项目的项目组中的边框。 QGraphicsItemGroup忽略<a href="qgraphicsitem.html#GraphicsItemFlag-enum" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#GraphicsItemFlag-enum">ItemIgnoresTransformations</a>旗上的孩子（即，相对于该组项目的几何形状，孩子们被视为好像它们是可转换的） 。</p>
+<p>有两种方法来构造一个项目组。最简单和最常用的方法是将项目（例如，所有选定的项目）的列表传递给<a href="qgraphicsscene.html#createItemGroup" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html#createItemGroup">QGraphicsScene.createItemGroup</a>（ ） ，它返回一个新的QGraphicsItemGroup项目。另一种方法是手动构造一个QGraphicsItemGroup项目，将其添加到场景调用<a href="qgraphicsscene.html#addItem" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html#addItem">QGraphicsScene.addItem</a>（ ） ，然后通过调用将项目添加到该组手动，一次一个<a href="qgraphicsitemgroup.html#addToGroup" tppabs="http://pyqt4doc.appspot.com/qgraphicsitemgroup.html#addToGroup">addToGroup</a>（ ） 。拆除（ “取消组合” ）的项目组，您可以调用<a href="qgraphicsscene.html#destroyItemGroup" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html#destroyItemGroup">QGraphicsScene.destroyItemGroup</a>（ ） ，或者你也可以手动调用从组中删除所有项目<a href="qgraphicsitemgroup.html#removeFromGroup" tppabs="http://pyqt4doc.appspot.com/qgraphicsitemgroup.html#removeFromGroup">removeFromGroup</a>（ ） 。</p>
+<pre class="cpp">
+ <span class="comment">// Group all selected items together</span>
+ <span class="type">QGraphicsItemGroup</span> <span class="operator">*</span>group <span class="operator">=</span> scene<span class="operator">-</span><span class="operator">&gt;</span>createItemGroup(scene<span class="operator">-</span><span class="operator">&gt;</span>selecteditems());
+
+ <span class="comment">// Destroy the group, and delete the group item</span>
+ scene<span class="operator">-</span><span class="operator">&gt;</span>destroyItemGroup(group);
+</pre>
+<p>添加和删除项目的操作保持了​​项目“场景的相对位置和变换，而不是调用<a href="qgraphicsitem.html#setParentItem" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#setParentItem">setParentItem</a>（ ） ，其中只有子项的父，相对位置和改造被保留。</p>
+<p>该addtoGroup （ ）函数reparents目标项目这个项目组，保持项目的位置和改造完好相对于场景。视觉上，这意味着项目通过加入<a href="qgraphicsitemgroup.html#addToGroup" tppabs="http://pyqt4doc.appspot.com/qgraphicsitemgroup.html#addToGroup">addToGroup</a>（ ）将保持完全不变，这个操作的结果，而不管该项目或该集团的当前位置或改造的，虽然该项目的位置和矩阵都可能发生变化。</p>
+<p>该<a href="qgraphicsitemgroup.html#removeFromGroup" tppabs="http://pyqt4doc.appspot.com/qgraphicsitemgroup.html#removeFromGroup">removeFromGroup</a>（ ）函数有类似的语义<a href="qgraphicsitem.html#setParentItem" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#setParentItem">setParentItem</a>（）;它reparents的项目到项目组的父项。与<a href="qgraphicsitemgroup.html#addToGroup" tppabs="http://pyqt4doc.appspot.com/qgraphicsitemgroup.html#addToGroup">addToGroup</a>（ ） ，该项目的场景相对位置和转型保持不变。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QGraphicsItemGroup"></a>QGraphicsItemGroup.__init__ (<i>self</i>, <a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a> <i>parent</i> = None, <a href="qgraphicsscene.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html">QGraphicsScene</a> <i>scene</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>该<i>scene</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a href="qgraphicsitemgroup.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitemgroup.html">QGraphicsItemGroup</a>。<i>parent</i>被传递给<a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a>的构造。</p>
+<p><b>See also</b> <a href="qgraphicsscene.html#addItem" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html#addItem">QGraphicsScene.addItem</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addToGroup"></a>QGraphicsItemGroup.addToGroup (<i>self</i>, <a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a> <i>item</i>)</h3>
+<p>该<i>item</i>说法有它的所有权转移给Qt的。</p>
+<p>将给定<i>item</i>和项目的子项到这个项目组。该项目及其子项将被重设父到这个组，但它的位置和相对于场景变换将保持不变。</p>
+<p><b>See also</b> <a href="qgraphicsitemgroup.html#removeFromGroup" tppabs="http://pyqt4doc.appspot.com/qgraphicsitemgroup.html#removeFromGroup">removeFromGroup</a>（）和<a href="qgraphicsscene.html#createItemGroup" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html#createItemGroup">QGraphicsScene.createItemGroup</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="boundingRect"></a><a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> QGraphicsItemGroup.boundingRect (<i>self</i>)</h3>
+<p>从重新实现<a href="qgraphicsitem.html#boundingRect" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#boundingRect">QGraphicsItem.boundingRect</a>（ ） 。</p>
+<p>返回该组项目的边界矩形，它的所有子项。</p>
+
+
+<h3 class="fn">
+<a name="isObscuredBy"></a>bool QGraphicsItemGroup.isObscuredBy (<i>self</i>, <a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a> <i>item</i>)</h3>
+<p>从重新实现<a href="qgraphicsitem.html#isObscuredBy" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#isObscuredBy">QGraphicsItem.isObscuredBy</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="opaqueArea"></a><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> QGraphicsItemGroup.opaqueArea (<i>self</i>)</h3>
+<p>从重新实现<a href="qgraphicsitem.html#opaqueArea" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#opaqueArea">QGraphicsItem.opaqueArea</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="paint"></a>QGraphicsItemGroup.paint (<i>self</i>, <a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a> <i>painter</i>, <a href="qstyleoptiongraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qstyleoptiongraphicsitem.html">QStyleOptionGraphicsItem</a> <i>option</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>widget</i> = None)</h3>
+<p>从重新实现<a href="qgraphicsitem.html#paint" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#paint">QGraphicsItem.paint</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="removeFromGroup"></a>QGraphicsItemGroup.removeFromGroup (<i>self</i>, <a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a> <i>item</i>)</h3>
+<p>删除指定的<i>item</i>从本组。该项目将被重设父到这个组的父项，或为0，如果该组没有父。它的位置和相对于场景变换将保持不变。</p>
+<p><b>See also</b> <a href="qgraphicsitemgroup.html#addToGroup" tppabs="http://pyqt4doc.appspot.com/qgraphicsitemgroup.html#addToGroup">addToGroup</a>（）和<a href="qgraphicsscene.html#destroyItemGroup" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html#destroyItemGroup">QGraphicsScene.destroyItemGroup</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="type"></a>int QGraphicsItemGroup.type (<i>self</i>)</h3>
+<p>从重新实现<a href="qgraphicsitem.html#type" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#type">QGraphicsItem.type</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

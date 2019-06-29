@@ -1,0 +1,107 @@
+﻿<html>
+<head>
+<title>QAbstractTableModel Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QAbstractTableModel Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QAbstractTableModel类提供了可以被子类来创建表款的抽象模型。<a href="#details">More...</a></p>
+
+<p>继承<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a>。</p>
+<p>通过继承<a href="qsqlquerymodel.html" tppabs="http://pyqt4doc.appspot.com/qsqlquerymodel.html">QSqlQueryModel</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qabstracttablemodel.html#QAbstractTableModel" tppabs="http://pyqt4doc.appspot.com/qabstracttablemodel.html#QAbstractTableModel">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstracttablemodel.html#dropMimeData" tppabs="http://pyqt4doc.appspot.com/qabstracttablemodel.html#dropMimeData">dropMimeData</a></b> (<i>self</i>, QMimeData <i>data</i>, Qt.DropAction <i>action</i>, int <i>row</i>, int <i>column</i>, QModelIndex <i>parent</i>)</li>
+<li>
+<div class="fn"></div>QModelIndex <b><a href="qabstracttablemodel.html#index" tppabs="http://pyqt4doc.appspot.com/qabstracttablemodel.html#index">index</a></b> (<i>self</i>, int <i>row</i>, int <i>column</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QAbstractTableModel类提供了可以被子类来创建表款的抽象模型。</p>
+<p>QAbstractTableModel为表示它们的数据作为二维件阵列模型的标准接口。它不能直接使用，但必须被继承。</p>
+<p>由于该模型提供了一个更专门的接口比<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a>，它不适合于用树视图的使用，虽然它可以被用于提供数据给一个<a href="qlistview.html" tppabs="http://pyqt4doc.appspot.com/qlistview.html">QListView</a>。如果你需要表示项目的简单列表，只需要一个模型来包含数据的单个列，子类化<a href="qabstractlistmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractlistmodel.html">QAbstractListModel</a>可能更合适。</p>
+<p>该<a href="qabstractitemmodel.html#rowCount" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#rowCount">rowCount</a>（）和<a href="qabstractitemmodel.html#columnCount" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#columnCount">columnCount</a>（ ）函数返回的表的尺寸。撷取对应到模型中的项目的模型索引，请使用<a href="qabstracttablemodel.html#index" tppabs="http://pyqt4doc.appspot.com/qabstracttablemodel.html#index">index</a>（ ），并提供唯一的行号和列号。</p>
+<a id="subclassing" name="subclassing"></a>
+<h3>Subclassing</h3>
+<p>当子类QAbstractTableModel ，必须实现<a href="qabstractitemmodel.html#rowCount" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#rowCount">rowCount</a>（ ）<a href="qabstractitemmodel.html#columnCount" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#columnCount">columnCount</a>（）和<a href="qabstractitemmodel.html#data" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#data">data</a>（ ） 。的默认实现<a href="qabstracttablemodel.html#index" tppabs="http://pyqt4doc.appspot.com/qabstracttablemodel.html#index">index</a>（）和<a href="qabstractitemmodel.html#parent" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#parent">parent</a>（）函数是将QAbstractTableModel提供。表现良好的车型也将实施<a href="qabstractitemmodel.html#headerData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#headerData">headerData</a>（ ） 。</p>
+<p>可编辑的模型需要实现<a href="qabstractitemmodel.html#setData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setData">setData</a>（ ） ，并实施<a href="qabstractitemmodel.html#flags" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#flags">flags</a>（ ）返回一个包含一个值<a href="qt.html#ItemFlag-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemFlag-enum">Qt.ItemIsEditable</a>。</p>
+<p>模型，提供接口来调整大小的数据结构可以提供的实现<a href="qabstractitemmodel.html#insertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertRows">insertRows</a>（ ）<a href="qabstractitemmodel.html#removeRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeRows">removeRows</a>（ ）<a href="qabstractitemmodel.html#insertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertColumns">insertColumns</a>（）和<a href="qabstractitemmodel.html#removeColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeColumns">removeColumns</a>（ ） 。当实现这些功能，它调用相应的功能很重要，这样所有连接的看法是知悉有任何变化：</p>
+<ul>
+<li>An <a href="qabstractitemmodel.html#insertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertRows">insertRows</a>()
+implementation must call <a href="qabstractitemmodel.html#beginInsertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginInsertRows">beginInsertRows</a>()
+<i>before</i> inserting new rows into the data structure, and it
+must call <a href="qabstractitemmodel.html#endInsertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endInsertRows">endInsertRows</a>()
+<i>immediately afterwards</i>.</li>
+<li>An <a href="qabstractitemmodel.html#insertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertColumns">insertColumns</a>()
+implementation must call <a href="qabstractitemmodel.html#beginInsertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginInsertColumns">beginInsertColumns</a>()
+<i>before</i> inserting new columns into the data structure, and it
+must call <a href="qabstractitemmodel.html#endInsertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endInsertColumns">endInsertColumns</a>()
+<i>immediately afterwards</i>.</li>
+<li>A <a href="qabstractitemmodel.html#removeRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeRows">removeRows</a>()
+implementation must call <a href="qabstractitemmodel.html#beginRemoveRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginRemoveRows">beginRemoveRows</a>()
+<i>before</i> the rows are removed from the data structure, and it
+must call <a href="qabstractitemmodel.html#endRemoveRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endRemoveRows">endRemoveRows</a>()
+<i>immediately afterwards</i>.</li>
+<li>A <a href="qabstractitemmodel.html#removeColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeColumns">removeColumns</a>()
+implementation must call <a href="qabstractitemmodel.html#beginRemoveColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginRemoveColumns">beginRemoveColumns</a>()
+<i>before</i> the columns are removed from the data structure, and
+it must call <a href="qabstractitemmodel.html#endRemoveColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endRemoveColumns">endRemoveColumns</a>()
+<i>immediately afterwards</i>.</li>
+</ul>
+<p><b>Note:</b>可在子类化模型的一些通用准则<a href="index.htm#model-subclassing-reference" tppabs="http://pyqt4doc.appspot.com/model-view-programming.html#model-subclassing-reference">Model
+Subclassing Reference</a>。</p>
+<p><b>Note:</b></p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QAbstractTableModel"></a>QAbstractTableModel.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造为给定的抽象表模型<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="dropMimeData"></a>bool QAbstractTableModel.dropMimeData (<i>self</i>, <a href="qmimedata.html" tppabs="http://pyqt4doc.appspot.com/qmimedata.html">QMimeData</a> <i>data</i>, <a href="qt.html#DropAction-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#DropAction-enum">Qt.DropAction</a> <i>action</i>, int <i>row</i>, int <i>column</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i>)</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#dropMimeData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#dropMimeData">QAbstractItemModel.dropMimeData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="index"></a><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> QAbstractTableModel.index (<i>self</i>, int <i>row</i>, int <i>column</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#index" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#index">QAbstractItemModel.index</a>（ ） 。</p>
+<p>返回的数据的索引<i>row</i>和<i>column</i>同<i>parent</i>。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#parent" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#parent">parent</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

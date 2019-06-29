@@ -1,0 +1,99 @@
+﻿<html>
+<head>
+<title>QBasicTimer Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QBasicTimer Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QBasicTimer类提供了定时器事件的对象。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qbasictimer.html#QBasicTimer" tppabs="http://pyqt4doc.appspot.com/qbasictimer.html#QBasicTimer">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qbasictimer.html#QBasicTimer-2" tppabs="http://pyqt4doc.appspot.com/qbasictimer.html#QBasicTimer-2">__init__</a></b> (<i>self</i>, QBasicTimer)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qbasictimer.html#isActive" tppabs="http://pyqt4doc.appspot.com/qbasictimer.html#isActive">isActive</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qbasictimer.html#start" tppabs="http://pyqt4doc.appspot.com/qbasictimer.html#start">start</a></b> (<i>self</i>, int <i>msec</i>, QObject <i>obj</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qbasictimer.html#stop" tppabs="http://pyqt4doc.appspot.com/qbasictimer.html#stop">stop</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qbasictimer.html#timerId" tppabs="http://pyqt4doc.appspot.com/qbasictimer.html#timerId">timerId</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QBasicTimer类提供了定时器事件的对象。</p>
+<p>这是由内部的Qt快速，重量轻，低层次的类。我们建议使用更高级别<a href="qtimer.html" tppabs="http://pyqt4doc.appspot.com/qtimer.html">QTimer</a>如果您要使用计时器在你的应用程序类，而不是这个类。请注意，这个定时器是一个重复的计时器，将发送后续的定时器事件，除非<a href="qbasictimer.html#stop" tppabs="http://pyqt4doc.appspot.com/qbasictimer.html#stop">stop</a>（ ）函数被调用。</p>
+<p>要使用这个类，创建一个QBasicTimer ，并调用它的<a href="qbasictimer.html#start" tppabs="http://pyqt4doc.appspot.com/qbasictimer.html#start">start</a>（ ）与一个超时间隔和一个指针指向一个函数<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>子类。当定时器超时，它会发送一个计时器事件到<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>子类。计时器可以在任何时候停止使用<a href="qbasictimer.html#stop" tppabs="http://pyqt4doc.appspot.com/qbasictimer.html#stop">stop</a>（ ） 。<a href="qbasictimer.html#isActive" tppabs="http://pyqt4doc.appspot.com/qbasictimer.html#isActive">isActive</a>（）对正在运行的定时器返回True ，即它已经开始，还没有达到超时时间，一直没有停止。定时器的ID可以用检索<a href="qbasictimer.html#timerId" tppabs="http://pyqt4doc.appspot.com/qbasictimer.html#timerId">timerId</a>（ ） 。</p>
+<p>该<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/widgets-wiggly.html">Wiggly</a>示例使用QBasicTimer重绘窗口小部件定期。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QBasicTimer"></a>QBasicTimer.__init__ (<i>self</i>)</h3>
+<p>Contructs一个基本定时器。</p>
+<p><b>See also</b> <a href="qbasictimer.html#start" tppabs="http://pyqt4doc.appspot.com/qbasictimer.html#start">start</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QBasicTimer-2"></a>QBasicTimer.__init__ (<i>self</i>, <a href="qbasictimer.html" tppabs="http://pyqt4doc.appspot.com/qbasictimer.html">QBasicTimer</a>)</h3>
+<h3 class="fn">
+<a name="isActive"></a>bool QBasicTimer.isActive (<i>self</i>)</h3>
+<p>如果计时器正在运行，并且尚未停止，则返回True ，否则返回False 。</p>
+<p><b>See also</b> <a href="qbasictimer.html#start" tppabs="http://pyqt4doc.appspot.com/qbasictimer.html#start">start</a>（）和<a href="qbasictimer.html#stop" tppabs="http://pyqt4doc.appspot.com/qbasictimer.html#stop">stop</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="start"></a>QBasicTimer.start (<i>self</i>, int <i>msec</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>obj</i>)</h3>
+<p>启动（或重启）与计时器<i>msec</i>毫秒超时。</p>
+<p>给定<i>object</i>将接收计时器事件。</p>
+<p><b>See also</b> <a href="qbasictimer.html#stop" tppabs="http://pyqt4doc.appspot.com/qbasictimer.html#stop">stop</a>（ ）<a href="qbasictimer.html#isActive" tppabs="http://pyqt4doc.appspot.com/qbasictimer.html#isActive">isActive</a>（）和<a href="qobject.html#timerEvent" tppabs="http://pyqt4doc.appspot.com/qobject.html#timerEvent">QObject.timerEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="stop"></a>QBasicTimer.stop (<i>self</i>)</h3>
+<p>停止计时器。</p>
+<p><b>See also</b> <a href="qbasictimer.html#start" tppabs="http://pyqt4doc.appspot.com/qbasictimer.html#start">start</a>（）和<a href="qbasictimer.html#isActive" tppabs="http://pyqt4doc.appspot.com/qbasictimer.html#isActive">isActive</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="timerId"></a>int QBasicTimer.timerId (<i>self</i>)</h3>
+<p>返回定时器的ID 。</p>
+<p><b>See also</b> <a href="qtimerevent.html#timerId" tppabs="http://pyqt4doc.appspot.com/qtimerevent.html#timerId">QTimerEvent.timerId</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

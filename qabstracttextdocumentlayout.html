@@ -1,0 +1,282 @@
+﻿<html>
+<head>
+<title>QAbstractTextDocumentLayout Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QAbstractTextDocumentLayout Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QAbstractTextDocumentLayout类是用于实现自定义布局QTextDocuments的抽象基类。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<p>通过继承<a href="qplaintextdocumentlayout.html" tppabs="http://pyqt4doc.appspot.com/qplaintextdocumentlayout.html">QPlainTextDocumentLayout</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout-paintcontext.html">PaintContext</a></b>
+</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout-selection.html">Selection</a></b>
+</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qabstracttextdocumentlayout.html#QAbstractTextDocumentLayout" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#QAbstractTextDocumentLayout">__init__</a></b> (<i>self</i>, QTextDocument <i>doc</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qabstracttextdocumentlayout.html#anchorAt" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#anchorAt">anchorAt</a></b> (<i>self</i>, QPointF <i>pos</i>)</li>
+<li>
+<div class="fn"></div>QRectF <b><a href="qabstracttextdocumentlayout.html#blockBoundingRect" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#blockBoundingRect">blockBoundingRect</a></b> (<i>self</i>, QTextBlock <i>block</i>)</li>
+<li>
+<div class="fn"></div>QTextDocument <b><a href="qabstracttextdocumentlayout.html#document" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#document">document</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstracttextdocumentlayout.html#documentChanged" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#documentChanged">documentChanged</a></b> (<i>self</i>, int <i>from</i>, int <i>charsRemoved</i>, int <i>charsAdded</i>)</li>
+<li>
+<div class="fn"></div>QSizeF <b><a href="qabstracttextdocumentlayout.html#documentSize" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#documentSize">documentSize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstracttextdocumentlayout.html#draw" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#draw">draw</a></b> (<i>self</i>, QPainter <i>painter</i>, PaintContext <i>context</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstracttextdocumentlayout.html#drawInlineObject" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#drawInlineObject">drawInlineObject</a></b> (<i>self</i>, QPainter <i>painter</i>, QRectF <i>rect</i>, QTextInlineObject <i>object</i>, int <i>posInDocument</i>, QTextFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>QTextCharFormat <b><a href="qabstracttextdocumentlayout.html#format" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#format">format</a></b> (<i>self</i>, int <i>pos</i>)</li>
+<li>
+<div class="fn"></div>QRectF <b><a href="qabstracttextdocumentlayout.html#frameBoundingRect" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#frameBoundingRect">frameBoundingRect</a></b> (<i>self</i>, QTextFrame <i>frame</i>)</li>
+<li>
+<div class="fn"></div>QTextObjectInterface <b><a href="qabstracttextdocumentlayout.html#handlerForObject" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#handlerForObject">handlerForObject</a></b> (<i>self</i>, int <i>objectType</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstracttextdocumentlayout.html#hitTest" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#hitTest">hitTest</a></b> (<i>self</i>, QPointF <i>point</i>, Qt.HitTestAccuracy <i>accuracy</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstracttextdocumentlayout.html#pageCount" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#pageCount">pageCount</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QPaintDevice <b><a href="qabstracttextdocumentlayout.html#paintDevice" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#paintDevice">paintDevice</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstracttextdocumentlayout.html#positionInlineObject" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#positionInlineObject">positionInlineObject</a></b> (<i>self</i>, QTextInlineObject <i>item</i>, int <i>posInDocument</i>, QTextFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstracttextdocumentlayout.html#registerHandler" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#registerHandler">registerHandler</a></b> (<i>self</i>, int <i>objectType</i>, QObject <i>component</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstracttextdocumentlayout.html#resizeInlineObject" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#resizeInlineObject">resizeInlineObject</a></b> (<i>self</i>, QTextInlineObject <i>item</i>, int <i>posInDocument</i>, QTextFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstracttextdocumentlayout.html#setPaintDevice" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#setPaintDevice">setPaintDevice</a></b> (<i>self</i>, QPaintDevice <i>device</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qabstracttextdocumentlayout.html#documentSizeChanged" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#documentSizeChanged">documentSizeChanged</a></b> (const QSizeF&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstracttextdocumentlayout.html#pageCountChanged" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#pageCountChanged">pageCountChanged</a></b> (int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstracttextdocumentlayout.html#update" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#update">update</a></b> (const QRectF&amp; = QRectF(0,0,1e+09,1e+09))</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstracttextdocumentlayout.html#updateBlock" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#updateBlock">updateBlock</a></b> (const QTextBlock&amp;)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QAbstractTextDocumentLayout类是用于实现自定义布局QTextDocuments的抽象基类。</p>
+<p>Qt提供了标准布局可以处理简单的文字处理，包括内嵌图片，列表和表格。</p>
+<p>有些应用程序，如文字处理器或DTP应用程序可能需要比Qt的布局引擎提供的，那些更多的功能，在这种情况下，你可以继承QAbstractTextDocumentLayout为您的文本文档提供自定义布局行为。</p>
+<p>该QAbstractTextDocumentLayout子类的实例可以在安装<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>与对象<a href="qtextdocument.html#setDocumentLayout" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#setDocumentLayout">setDocumentLayout()</a>功能。</p>
+<p>您可以将自定义对象成<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>，见<a href="qtextobjectinterface.html" tppabs="http://pyqt4doc.appspot.com/qtextobjectinterface.html">QTextObjectInterface</a>类描述的细节。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QAbstractTextDocumentLayout"></a>QAbstractTextDocumentLayout.__init__ (<i>self</i>, <a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a> <i>doc</i>)</h3>
+<p>创建用于指定一个新的文本文档布局<i>document</i>。</p>
+
+
+<h3 class="fn">
+<a name="anchorAt"></a>QString QAbstractTextDocumentLayout.anchorAt (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>pos</i>)</h3>
+<p>返回锚的参考给定的<i>position</i>，或者如果没有锚存在于该点一个空字符串。</p>
+
+
+<h3 class="fn">
+<a name="blockBoundingRect"></a><a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> QAbstractTextDocumentLayout.blockBoundingRect (<i>self</i>, <a href="qtextblock.html" tppabs="http://pyqt4doc.appspot.com/qtextblock.html">QTextBlock</a> <i>block</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回的边框<i>block</i>。</p>
+
+
+<h3 class="fn">
+<a name="document"></a><a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a> QAbstractTextDocumentLayout.document (<i>self</i>)</h3>
+<p>返回此布局工作于文本文档。</p>
+
+
+<h3 class="fn">
+<a name="documentChanged"></a>QAbstractTextDocumentLayout.documentChanged (<i>self</i>, int <i>from</i>, int <i>charsRemoved</i>, int <i>charsAdded</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>此功能被称为文档变化时的内容。当文本被插入，删除时，会发生变化，或这两种的组合。这种变化是通过指定<i>position</i>，<i>charsRemoved</i>和<i>charsAdded</i>对应于该变化的开始字符的位置，从文档中删除的字符数，和字符的数量加入。</p>
+<p>例如，进入一个空文档中插入文本“Hello ”时，<i>charsRemoved</i>将0和<i>charsAdded</i>将5（该字符串的长度）。</p>
+<p>替换文本是删除和插入的组合。例如，如果文本“Hello ”被替换为“Hi” ，<i>charsRemoved</i>将是5和<i>charsAdded</i>将2 。</p>
+<p>对于子类<a href="qabstracttextdocumentlayout.html" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html">QAbstractTextDocumentLayout</a>，这是中央函数所在的工作的很大一部分来布置和位置文件的内容已经完成。</p>
+<p>例如，在一个子类，只安排文本块，这个功能的实现就必须做到以下几点：</p>
+<ul>
+<li>Determine the list of changed <a href="qtextblock.html" tppabs="http://pyqt4doc.appspot.com/qtextblock.html">QTextBlock</a>(s) using the parameters
+provided.</li>
+<li>Each <a href="qtextblock.html" tppabs="http://pyqt4doc.appspot.com/qtextblock.html">QTextBlock</a> object's
+corresponding <a href="qtextlayout.html" tppabs="http://pyqt4doc.appspot.com/qtextlayout.html">QTextLayout</a> object
+needs to be processed. You can access the <a href="qtextblock.html" tppabs="http://pyqt4doc.appspot.com/qtextblock.html">QTextBlock</a>'s layout using the <a href="qtextblock.html#layout" tppabs="http://pyqt4doc.appspot.com/qtextblock.html#layout">QTextBlock.layout</a>() function. This
+processing should take the document's page size into
+consideration.</li>
+<li>If the total number of pages changed, the <a href="qabstracttextdocumentlayout.html#pageCountChanged" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#pageCountChanged">pageCountChanged</a>()
+signal should be emitted.</li>
+<li>If the total size changed, the <a href="qabstracttextdocumentlayout.html#documentSizeChanged" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#documentSizeChanged">documentSizeChanged</a>()
+signal should be emitted.</li>
+<li>The <a href="qabstracttextdocumentlayout.html#update" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#update">update</a>() signal
+should be emitted to schedule a repaint of areas in the layout that
+require repainting.</li>
+</ul>
+<p><b>See also</b> <a href="qtextlayout.html" tppabs="http://pyqt4doc.appspot.com/qtextlayout.html">QTextLayout</a>。</p>
+
+
+<h3 class="fn">
+<a name="documentSize"></a><a href="qsizef.html" tppabs="http://pyqt4doc.appspot.com/qsizef.html">QSizeF</a> QAbstractTextDocumentLayout.documentSize (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回文档的布局的总大小。</p>
+<p>这些信息可用于显示部件来正确地更新自己的滚动条。</p>
+<p><b>See also</b> <a href="qabstracttextdocumentlayout.html#documentSizeChanged" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#documentSizeChanged">documentSizeChanged</a>（）和<a href="qtextdocument.html#pageSize-prop" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#pageSize-prop">QTextDocument.pageSize</a>。</p>
+
+
+<h3 class="fn">
+<a name="draw"></a>QAbstractTextDocumentLayout.draw (<i>self</i>, <a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a> <i>painter</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout-paintcontext.html">PaintContext</a> <i>context</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>绘制布局与给定的<i>painter</i>使用给定的<i>context</i>。</p>
+
+
+<h3 class="fn">
+<a name="drawInlineObject"></a>QAbstractTextDocumentLayout.drawInlineObject (<i>self</i>, <a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a> <i>painter</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>rect</i>, <a href="qtextinlineobject.html" tppabs="http://pyqt4doc.appspot.com/qtextinlineobject.html">QTextInlineObject</a> <i>object</i>, int <i>posInDocument</i>, <a href="qtextformat.html" tppabs="http://pyqt4doc.appspot.com/qtextformat.html">QTextFormat</a> <i>format</i>)</h3>
+<p>调用此函数绘制内嵌的对象，<i>object</i>用给定的<i>painter</i>由指定的矩形内<i>rect</i>使用指定的文本<i>format</i>。</p>
+<p><i>posInDocument</i>指定文件内的对象的位置。</p>
+<p>默认实现调用drawObject （ ）上的对象处理程序。这个函数被调用只在Qt的。子类可以重新实现此功能自定义内联对象的绘制。</p>
+<p><b>See also</b> <a href="qabstracttextdocumentlayout.html#draw" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#draw">draw</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="format"></a><a href="qtextcharformat.html" tppabs="http://pyqt4doc.appspot.com/qtextcharformat.html">QTextCharFormat</a> QAbstractTextDocumentLayout.format (<i>self</i>, int <i>pos</i>)</h3>
+<p>返回字符格式，适用于给定的<i>position</i>。</p>
+
+
+<h3 class="fn">
+<a name="frameBoundingRect"></a><a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> QAbstractTextDocumentLayout.frameBoundingRect (<i>self</i>, <a href="qtextframe.html" tppabs="http://pyqt4doc.appspot.com/qtextframe.html">QTextFrame</a> <i>frame</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回的边框<i>frame</i>。</p>
+
+
+<h3 class="fn">
+<a name="handlerForObject"></a><a href="qtextobjectinterface.html" tppabs="http://pyqt4doc.appspot.com/qtextobjectinterface.html">QTextObjectInterface</a> QAbstractTextDocumentLayout.handlerForObject (<i>self</i>, int <i>objectType</i>)</h3>
+<p>返回一个处理程序的特定对象<i>objectType</i>。</p>
+
+
+<h3 class="fn">
+<a name="hitTest"></a>int QAbstractTextDocumentLayout.hitTest (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>point</i>, <a href="qt.html#HitTestAccuracy-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#HitTestAccuracy-enum">Qt.HitTestAccuracy</a> <i>accuracy</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回光标当前位置为给定的<i>point</i>用指定的<i>accuracy</i>。返回-1，如果没有有效的光标位置被发现。</p>
+
+
+<h3 class="fn">
+<a name="pageCount"></a>int QAbstractTextDocumentLayout.pageCount (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回中所包含的布局的页面数。</p>
+<p><b>See also</b> <a href="qabstracttextdocumentlayout.html#pageCountChanged" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#pageCountChanged">pageCountChanged</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="paintDevice"></a><a href="qpaintdevice.html" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html">QPaintDevice</a> QAbstractTextDocumentLayout.paintDevice (<i>self</i>)</h3>
+<p>返回用于呈现文档的布局绘制设备。</p>
+<p><b>See also</b> <a href="qabstracttextdocumentlayout.html#setPaintDevice" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#setPaintDevice">setPaintDevice</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="positionInlineObject"></a>QAbstractTextDocumentLayout.positionInlineObject (<i>self</i>, <a href="qtextinlineobject.html" tppabs="http://pyqt4doc.appspot.com/qtextinlineobject.html">QTextInlineObject</a> <i>item</i>, int <i>posInDocument</i>, <a href="qtextformat.html" tppabs="http://pyqt4doc.appspot.com/qtextformat.html">QTextFormat</a> <i>format</i>)</h3>
+<p>勾画出嵌入对象<i>item</i>使用给定的文本<i>format</i>。</p>
+<p><i>posInDocument</i>指定文件内的对象的位置。</p>
+<p>默认实现不执行任何操作。这个函数被调用只在Qt的。子类可以重新实现此功能自定义内联对象的位置。</p>
+<p><b>See also</b> <a href="qabstracttextdocumentlayout.html#drawInlineObject" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#drawInlineObject">drawInlineObject</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="registerHandler"></a>QAbstractTextDocumentLayout.registerHandler (<i>self</i>, int <i>objectType</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>component</i>)</h3>
+<p>注册给定的<i>component</i>作为一个处理程序的特定项目<i>objectType</i>。</p>
+<p><b>Note:</b>registerHandler （ ）为每个对象类型被调用一次。这意味着，只有一个对相同的对象类型的多个字符替换处理程序。</p>
+
+
+<h3 class="fn">
+<a name="resizeInlineObject"></a>QAbstractTextDocumentLayout.resizeInlineObject (<i>self</i>, <a href="qtextinlineobject.html" tppabs="http://pyqt4doc.appspot.com/qtextinlineobject.html">QTextInlineObject</a> <i>item</i>, int <i>posInDocument</i>, <a href="qtextformat.html" tppabs="http://pyqt4doc.appspot.com/qtextformat.html">QTextFormat</a> <i>format</i>)</h3>
+<p>设置内嵌对象的大小<i>item</i>对应于文本<i>format</i>。</p>
+<p><i>posInDocument</i>指定文件内的对象的位置。</p>
+<p>默认实现调整大小的<i>item</i>由对象处理程序的intrinsicSize （ ）函数返回的大小。这个函数被调用只在Qt的。子类可以重新实现此功能自定义内联对象的大小调整。</p>
+
+
+<h3 class="fn">
+<a name="setPaintDevice"></a>QAbstractTextDocumentLayout.setPaintDevice (<i>self</i>, <a href="qpaintdevice.html" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html">QPaintDevice</a> <i>device</i>)</h3>
+<p>获取用于渲染文档的布局，以给定的涂料设备<i>device</i>。</p>
+<p><b>See also</b> <a href="qabstracttextdocumentlayout.html#paintDevice" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#paintDevice">paintDevice</a>（ ） 。</p>
+
+
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="documentSizeChanged"></a>void documentSizeChanged (const QSizeF&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当文档布局的大小变更为这个信号被发射<i>newSize</i>。</p>
+<p>的子类<a href="qabstracttextdocumentlayout.html" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html">QAbstractTextDocumentLayout</a>应该发出这个信号，当文档的整个版面大小的变化。这个信号是显示文本文件，因为它使他们能够正确地更新自己的滚动条小工具非常有用。</p>
+<p><b>See also</b> <a href="qabstracttextdocumentlayout.html#documentSize" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#documentSize">documentSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="pageCountChanged"></a>void pageCountChanged (int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的布局变化的页数;<i>newPages</i>是更新页面计数。</p>
+<p>的子类<a href="qabstracttextdocumentlayout.html" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html">QAbstractTextDocumentLayout</a>应该发出这个信号时的布局中的页面的数量发生了变化。被改变的页面数通过改变布局或文件内容本身引起的。</p>
+<p><b>See also</b> <a href="qabstracttextdocumentlayout.html#pageCount" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#pageCount">pageCount</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="update"></a>void update (const QRectF&amp; = QRectF (0,0,1e+09,1e+09))</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时，矩形<i>rect</i>已被更新。</p>
+<p>的子类<a href="qabstracttextdocumentlayout.html" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html">QAbstractTextDocumentLayout</a>应该发出这个信号，当内容的布局改变，以重新绘制。</p>
+
+
+<h3 class="fn">
+<a name="updateBlock"></a>void updateBlock (const QTextBlock&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>指定时，这个信号被发射<i>block</i>已被更新。</p>
+<p>的子类<a href="qabstracttextdocumentlayout.html" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html">QAbstractTextDocumentLayout</a>应该发出这个信号时的布局<i>block</i>为了重新绘制了变化。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

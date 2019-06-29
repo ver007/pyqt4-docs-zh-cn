@@ -1,0 +1,450 @@
+﻿<html>
+<head>
+<title>QScriptEngineDebugger Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QScriptEngineDebugger Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscripttools.html">QtScriptTools</a> module]</sup></sup>
+</h1>
+<p>该QScriptEngineDebugger类提供了一个<a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a>调试器。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qscriptenginedebugger.html#DebuggerAction-enum" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#DebuggerAction-enum">DebuggerAction</a></b> { InterruptAction, ContinueAction, StepIntoAction, StepOverAction, ..., GoToLineAction }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qscriptenginedebugger.html#DebuggerState-enum" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#DebuggerState-enum">DebuggerState</a></b> { RunningState, SuspendedState }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qscriptenginedebugger.html#DebuggerWidget-enum" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#DebuggerWidget-enum">DebuggerWidget</a></b> { ConsoleWidget, StackWidget, ScriptsWidget, LocalsWidget, ..., ErrorLogWidget }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptenginedebugger.html#QScriptEngineDebugger" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#QScriptEngineDebugger">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>QAction <b><a href="qscriptenginedebugger.html#action" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#action">action</a></b> (<i>self</i>, DebuggerAction <i>action</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptenginedebugger.html#attachTo" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#attachTo">attachTo</a></b> (<i>self</i>, QScriptEngine <i>engine</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qscriptenginedebugger.html#autoShowStandardWindow" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#autoShowStandardWindow">autoShowStandardWindow</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QMenu <b><a href="qscriptenginedebugger.html#createStandardMenu" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#createStandardMenu">createStandardMenu</a></b> (<i>self</i>, QWidget <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>QToolBar <b><a href="qscriptenginedebugger.html#createStandardToolBar" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#createStandardToolBar">createStandardToolBar</a></b> (<i>self</i>, QWidget <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptenginedebugger.html#detach" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#detach">detach</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptenginedebugger.html#setAutoShowStandardWindow" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#setAutoShowStandardWindow">setAutoShowStandardWindow</a></b> (<i>self</i>, bool <i>autoShow</i>)</li>
+<li>
+<div class="fn"></div>QMainWindow <b><a href="qscriptenginedebugger.html#standardWindow" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#standardWindow">standardWindow</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>DebuggerState <b><a href="qscriptenginedebugger.html#state" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#state">state</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qscriptenginedebugger.html#widget" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#widget">widget</a></b> (<i>self</i>, DebuggerWidget <i>widget</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qscriptenginedebugger.html#evaluationResumed" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#evaluationResumed">evaluationResumed</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qscriptenginedebugger.html#evaluationSuspended" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#evaluationSuspended">evaluationSuspended</a></b> ()</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QScriptEngineDebugger类提供了一个<a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a>调试器。</p>
+<p>该QScriptEngineDebugger类提供了一个可以嵌入到使用Qt脚本Qt应用程序调试器。调试器允许应用程序用户能够检查脚本环境的状态和控制脚本的执行。</p>
+<p>为了将调试器附加到一个脚本引擎，调用<a href="qscriptenginedebugger.html#attachTo" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#attachTo">attachTo</a>（）函数。</p>
+<pre class="cpp">
+     <span class="type"><a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a></span> engine;
+     <span class="type">QScriptEngineDebugger</span> debugger;
+     debugger<span class="operator">.</span><a href="qscriptenginedebugger.html#attachTo" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#attachTo">attachTo</a>(<span class="operator">&amp;</span>engine);
+</pre>
+<p>一旦调试器已附加到一个脚本引擎，你可以继续执行脚本像往常一样，例如：通过调用<a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">QScriptEngine.evaluate</a>（ ） 。当一个未捕获的异常发生时，调试器将被触发，或当<tt>debugger</tt>语句在脚本中遇到的问题。它也可以通过触发中断脚本评估在任意时间<a href="qscriptenginedebugger.html#DebuggerAction-enum" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#DebuggerAction-enum">InterruptAction</a>。例如，当脚本评估开始启动调试器，你触发动作开始之前，你<a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">evaluate()</a>该脚本。</p>
+<pre class="cpp">
+      debugger<span class="operator">-</span><span class="operator">&gt;</span>action(<span class="type">QScriptEngineDebugger</span><span class="operator">.</span>InterruptAction)<span class="operator">-</span><span class="operator">&gt;</span>trigger();
+      engine<span class="operator">-</span><span class="operator">&gt;</span>evaluate(contents<span class="operator">,</span> fileName);
+</pre>
+<p>默认情况下，<a href="qscriptenginedebugger.html#standardWindow" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#standardWindow">standard debugger
+window</a>如图评估时暂停。这可以通过调用被改变<a href="qscriptenginedebugger.html#setAutoShowStandardWindow" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#setAutoShowStandardWindow">setAutoShowStandardWindow</a>（）函数。</p>
+<p>调试器定义了一组<a href="qscriptenginedebugger.html#DebuggerAction-enum" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#DebuggerAction-enum">actions</a>可用，例如停止执行或打印变量的内容。它还提供了一组小部件（组件）的显示可以从调试器和触发器要求的操作的信息。可用的操作是由所识别的<a href="qscriptenginedebugger.html#DebuggerAction-enum" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#DebuggerAction-enum">DebuggerAction</a>枚举和小部件是由所识别的<a href="qscriptenginedebugger.html#DebuggerWidget-enum" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#DebuggerWidget-enum">DebuggerWidget</a>枚举。</p>
+<p>访问各个调试窗口小部件是由提供<a href="qscriptenginedebugger.html#widget" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#widget">widget</a>（）函数。这使得它可以安排在一个自定义的方式在窗口小部件。类似地，<a href="qscriptenginedebugger.html#action" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#action">action</a>（ ）函数提供了访问各种调试操作。</p>
+<p>该<a href="qscriptenginedebugger.html#createStandardToolBar" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#createStandardToolBar">createStandardToolBar</a>（ ）函数创建一个标准工具栏，以及<a href="qscriptenginedebugger.html#createStandardMenu" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#createStandardMenu">createStandardMenu</a>（ ）函数创建一个标准的菜单，如果要创建一个自定义的调试器配置这些功能可能是有用的。</p>
+<p>该<a href="qscriptenginedebugger.html#evaluationSuspended" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#evaluationSuspended">evaluationSuspended</a>（）信号被发射时，调试器已经暂停脚本的评价和输入的交互模式下，即，在它接受来自用户的输入的方式。该<a href="qscriptenginedebugger.html#evaluationResumed" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#evaluationResumed">evaluationResumed</a>当脚本执行恢复（ ）信号被发射，即当执行控制权还回给脚本引擎。该<a href="qscriptenginedebugger.html#state" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#state">state</a>（ ）函数返回调试器的当前状态。</p>
+<p>当调用<a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">QScriptEngine.evaluate</a>（ ），它通过一个描述性的脚本名称（文件名）作为第二个参数是非常有用的，因为这是将被调试器中显示的名称<a href="qscriptenginedebugger.html#DebuggerWidget-enum" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#DebuggerWidget-enum">ScriptsWidget</a>，如果一个名字不获通过，该脚本将被标记为“匿名” 。</p>
+<p>当评估被暂停，调试器也将暂停脚本的事件循环。在下面的片段中，调用<a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">QScriptEngine.evaluate</a>（ ）使得调试器被触发，该函数调用不会返回，直到用户完成与调试器进行交互。</p>
+<pre class="cpp">
+     engine<span class="operator">.</span>evaluate(<span class="string">"debugger"</span>);
+</pre>
+<p>当Qt的脚本调试器运行时，C + +应用程序本身并没有“冻结” 。这意味着，有可能是多个脚本进行评估，尽管调试器已暂停的评价<b>current</b>脚本的评价。例如，一个C + +计时器可能引发导致被调用的脚本函数，或者用户可能会在主应用程序用户界面的点击（ ）信号连接到一个脚本功能，点击一个按钮。这种嵌套的评价是允许的。调试器将进入交互模式为新的脚本，如果有异常抛出，或到达断点。需要注意的是，当遇到它不会停止<tt>debugger</tt>语句。</p>
+<p>嵌套的评价需要一些思考决定调试器是如何呈现给用户时，例如，一个模态对话框是否适合，还是主应用程序用户界面的某些部分应在调试器运行时被禁用。</p>
+<p>调试的内<a href="qwidget.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#paintEvent">paintEvent</a>（ ）目前不支持。如果你需要调试绘画相关的脚本代码，该代码应在C + +中的paintEvent （外部评价） ，如通过绘制一个图像，像Context2D和蚱<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscript.html">QtScript</a>例子做。这将使得代码安全进行调试。</p>
+<p>调试器添加了一些特殊性能的脚本引擎：<tt>__FILE__</tt>保存在其中的当前评估产生的脚本的名称，并<tt>__LINE__</tt>保持当前的行号。这些做的print（）风格的调试（该消息出现在调试器的调试输出窗口小部件）时是有用的。</p>
+<p>该<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscriptdebugger-manual.html">Qt Script Debugger
+Manual</a>介绍如何使用调试器。该<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/script-context2d.html">Context2D example</a>显示了如何将调试器集成在应用程序中。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="DebuggerAction-enum"></a>QScriptEngineDebugger.DebuggerAction</h3>
+<p>这个枚举变量指定动作的<a href="qscriptenginedebugger.html#action" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#action">action</a>（ ）函数应该找回。检索到的动作可以被连接到任何槽，并连接到任何插件。请参阅<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscriptdebugger-manual.html">Qt Script Debugger Manual</a>的<a href="index.htm#console-command-reference" tppabs="http://pyqt4doc.appspot.com/qtscriptdebugger-manual.html#console-command-reference">Console
+Command Reference</a>这些动作的详细描述。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.InterruptAction</tt>
+</td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">只要下一个脚本语句达到暂停脚本的执行。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.ContinueAction</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">给人的执行控制权交还给脚本引擎。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.StepIntoAction</tt>
+</td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">执行步骤操作。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.StepOverAction</tt>
+</td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">进行下一个动作。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.StepOutAction</tt>
+</td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">执行脚本，直到当前函数返回。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.RunToCursorAction</tt>
+</td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">继续执行到所选择的行（其中包含光标）在<a href="qscriptenginedebugger.html#DebuggerWidget-enum" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#DebuggerWidget-enum">CodeWidget</a>。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.RunToNewScriptAction</tt>
+</td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">将控制返回给脚本引擎，直到一个新的脚本被执行。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.ToggleBreakpointAction</tt>
+</td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">切换断点在选定的线路<a href="qscriptenginedebugger.html#DebuggerWidget-enum" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#DebuggerWidget-enum">CodeWidget</a>。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.ClearDebugOutputAction</tt>
+</td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">清除的内容<a href="qscriptenginedebugger.html#DebuggerWidget-enum" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#DebuggerWidget-enum">DebugOutputWidget</a>。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.ClearErrorLogAction</tt>
+</td>
+<td class="topAlign"><tt>9</tt></td>
+<td class="topAlign">清除的内容<a href="qscriptenginedebugger.html#DebuggerWidget-enum" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#DebuggerWidget-enum">ErrorLogWidget</a>。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.ClearConsoleAction</tt>
+</td>
+<td class="topAlign"><tt>10</tt></td>
+<td class="topAlign">清除的内容<a href="qscriptenginedebugger.html#DebuggerWidget-enum" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#DebuggerWidget-enum">ConsoleWidget</a>。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.FindInScriptAction</tt>
+</td>
+<td class="topAlign"><tt>11</tt></td>
+<td class="topAlign">显示<a href="qscriptenginedebugger.html#DebuggerWidget-enum" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#DebuggerWidget-enum">CodeFinderWidget</a>。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.FindNextInScriptAction</tt>
+</td>
+<td class="topAlign"><tt>12</tt></td>
+<td class="topAlign">查找下一个出现在<a href="qscriptenginedebugger.html#DebuggerWidget-enum" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#DebuggerWidget-enum">CodeWidget</a>。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.FindPreviousInScriptAction</tt>
+</td>
+<td class="topAlign"><tt>13</tt></td>
+<td class="topAlign">查找以前发生在<a href="qscriptenginedebugger.html#DebuggerWidget-enum" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#DebuggerWidget-enum">CodeWidget</a>。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.GoToLineAction</tt>
+</td>
+<td class="topAlign"><tt>14</tt></td>
+<td class="topAlign">显示“转至行”对话框。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="DebuggerState-enum"></a>QScriptEngineDebugger.DebuggerState</h3>
+<p>这个枚举指定调试器的当前状态。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.RunningState</tt>
+</td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">在调试器运行。 （脚本的评价是允许的。 ）</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.SuspendedState</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该调试器已暂停脚本的评价。</td>
+</tr>
+</table>
+<p>这个枚举被引入或修改的Qt 4.6 。</p>
+
+
+<h3 class="fn">
+<a name="DebuggerWidget-enum"></a>QScriptEngineDebugger.DebuggerWidget</h3>
+<p>这个枚举变量决定了小部件的<a href="qscriptenginedebugger.html#widget" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#widget">widget</a>（ ）函数应该找回。我们在详细对待这些小部件<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscriptdebugger-manual.html">Qt Script Debugger Manual</a>。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.ConsoleWidget</tt>
+</td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">提供了一个命令行界面的调试器。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.StackWidget</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">显示脚本的执行状态的回溯。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.ScriptsWidget</tt>
+</td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">显示当前加载的脚本列表。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.LocalsWidget</tt>
+</td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">显示当前堆栈帧的局部变量。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.CodeWidget</tt>
+</td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">显示当前脚本的代码。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.CodeFinderWidget</tt>
+</td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">提供可搜索在CodeWidget所示的脚本文本的小工具。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.BreakpointsWidget</tt>
+</td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">显示已设置的断点。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.DebugOutputWidget</tt>
+</td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">包含从输出<tt>print()</tt>脚本函数。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineDebugger.ErrorLogWidget</tt>
+</td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">显示已生成的错误消息。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QScriptEngineDebugger"></a>QScriptEngineDebugger.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个新的<a href="qscriptenginedebugger.html" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html">QScriptEngineDebugger</a>与给定对象<i>parent</i>。</p>
+<p>要附加<a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a>到调试器，使用<a href="qscriptenginedebugger.html#attachTo" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#attachTo">attachTo</a>（）函数。</p>
+
+
+<h3 class="fn">
+<a name="action"></a><a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a> QScriptEngineDebugger.action (<i>self</i>, <a href="qscriptenginedebugger.html#DebuggerAction-enum" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#DebuggerAction-enum">DebuggerAction</a> <i>action</i>)</h3>
+<p>返回一个指向指定的<i>action</i>。可用的操作是由给定的<a href="qscriptenginedebugger.html#DebuggerAction-enum" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#DebuggerAction-enum">DebuggerAction</a>枚举。</p>
+<p>有了这个功能，你可以添加动作，将自己的小部件，工具栏和菜单。这也是方便的，如果你，例如，希望香料的东西用自己的常规图标。下面的代码示例演示如何将动作添加到<a href="qtoolbar.html" tppabs="http://pyqt4doc.appspot.com/qtoolbar.html">QToolBar</a>。</p>
+<pre class="cpp">
+     <span class="type"><a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a></span> <span class="operator">*</span>continueAction <span class="operator">=</span> debugger<span class="operator">-</span><span class="operator">&gt;</span>action(<span class="type"><a href="qscriptenginedebugger.html" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html">QScriptEngineDebugger</a></span><span class="operator">.</span>ContinueAction);
+     <span class="type"><a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a></span> <span class="operator">*</span>stepOverAction <span class="operator">=</span> debugger<span class="operator">-</span><span class="operator">&gt;</span>action(<span class="type"><a href="qscriptenginedebugger.html" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html">QScriptEngineDebugger</a></span><span class="operator">.</span>StepOverAction);
+     <span class="type"><a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a></span> <span class="operator">*</span>stepIntoAction <span class="operator">=</span> debugger<span class="operator">-</span><span class="operator">&gt;</span>action(<span class="type"><a href="qscriptenginedebugger.html" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html">QScriptEngineDebugger</a></span><span class="operator">.</span>StepIntoAction);
+
+     <span class="type"><a href="qtoolbar.html" tppabs="http://pyqt4doc.appspot.com/qtoolbar.html">QToolBar</a></span> <span class="operator">*</span>toolBar <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qtoolbar.html" tppabs="http://pyqt4doc.appspot.com/qtoolbar.html">QToolBar</a></span>;
+     toolBar<span class="operator">-</span><span class="operator">&gt;</span>addAction(continueAction);
+</pre>
+<p>需要注意的是<a href="qscriptenginedebugger.html" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html">QScriptEngineDebugger</a>已经添加了行动，其<a href="qscriptenginedebugger.html#DebuggerWidget-enum" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#DebuggerWidget-enum">standard
+widgets</a>和<a href="qscriptenginedebugger.html#standardWindow" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#standardWindow">standard
+window</a>。</p>
+<p><b>See also</b> <a href="qscriptenginedebugger.html#widget" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#widget">widget</a>（ ）<a href="qscriptenginedebugger.html#createStandardMenu" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#createStandardMenu">createStandardMenu</a>（ ）<a href="qscriptenginedebugger.html#createStandardToolBar" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#createStandardToolBar">createStandardToolBar</a>（）和<a href="qscriptenginedebugger.html#standardWindow" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#standardWindow">standardWindow</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="attachTo"></a>QScriptEngineDebugger.attachTo (<i>self</i>, <a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a> <i>engine</i>)</h3>
+<p>附加到给定的<i>engine</i>。</p>
+<p>调试器将安装一个自定义代理（使用<a href="qscriptengine.html#setAgent" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#setAgent">QScriptEngine.setAgent</a>（））来监测发动机。虽然附加调试器，你不应该改变的代理，但是，如果你必须执行额外的监控，你必须设置一个代理程序，它会将所有事件到调试器的代理。</p>
+<p><b>See also</b> <a href="qscriptenginedebugger.html#detach" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#detach">detach</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="autoShowStandardWindow"></a>bool QScriptEngineDebugger.autoShowStandardWindow (<i>self</i>)</h3>
+<p>返回是否评估时被挂起的标准调试器窗口会自动显示。</p>
+<p>默认值为True 。</p>
+<p><b>See also</b> <a href="qscriptenginedebugger.html#setAutoShowStandardWindow" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#setAutoShowStandardWindow">setAutoShowStandardWindow</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="createStandardMenu"></a><a href="qmenu.html" tppabs="http://pyqt4doc.appspot.com/qmenu.html">QMenu</a> QScriptEngineDebugger.createStandardMenu (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>创建具有给定一个标准的调试器菜单<i>parent</i>。返回新的菜单对象。</p>
+<p><b>See also</b> <a href="qscriptenginedebugger.html#createStandardToolBar" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#createStandardToolBar">createStandardToolBar</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="createStandardToolBar"></a><a href="qtoolbar.html" tppabs="http://pyqt4doc.appspot.com/qtoolbar.html">QToolBar</a> QScriptEngineDebugger.createStandardToolBar (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>建立一个标准的调试器工具栏与给定<i>parent</i>。返回新的工具栏对象。</p>
+<p><b>See also</b> <a href="qscriptenginedebugger.html#createStandardMenu" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#createStandardMenu">createStandardMenu</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="detach"></a>QScriptEngineDebugger.detach (<i>self</i>)</h3>
+<p>分离从目前的脚本引擎，如果有的话。</p>
+<p><b>See also</b> <a href="qscriptenginedebugger.html#attachTo" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#attachTo">attachTo</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setAutoShowStandardWindow"></a>QScriptEngineDebugger.setAutoShowStandardWindow (<i>self</i>, bool <i>autoShow</i>)</h3>
+<p>设置是否在评估被暂停的标准调试器窗口会自动显示。如果<i>autoShow</i>为True，则窗口会自动显示，否则不会。</p>
+<p><b>See also</b> <a href="qscriptenginedebugger.html#autoShowStandardWindow" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#autoShowStandardWindow">autoShowStandardWindow</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="standardWindow"></a><a href="qmainwindow.html" tppabs="http://pyqt4doc.appspot.com/qmainwindow.html">QMainWindow</a> QScriptEngineDebugger.standardWindow (<i>self</i>)</h3>
+<p>返回主窗口与调试器的组件的标准配置。</p>
+<p><b>See also</b> <a href="qscriptenginedebugger.html#createStandardMenu" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#createStandardMenu">createStandardMenu</a>（）和<a href="qscriptenginedebugger.html#createStandardToolBar" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#createStandardToolBar">createStandardToolBar</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="state"></a><a href="qscriptenginedebugger.html#DebuggerState-enum" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#DebuggerState-enum">DebuggerState</a> QScriptEngineDebugger.state (<i>self</i>)</h3>
+<p>返回调试器的当前状态。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qscriptenginedebugger.html#evaluationResumed" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#evaluationResumed">evaluationResumed</a>（）和<a href="qscriptenginedebugger.html#evaluationSuspended" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#evaluationSuspended">evaluationSuspended</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="widget"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QScriptEngineDebugger.widget (<i>self</i>, <a href="qscriptenginedebugger.html#DebuggerWidget-enum" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#DebuggerWidget-enum">DebuggerWidget</a> <i>widget</i>)</h3>
+<p>返回一个指向指定标准的实例<i>widget</i>。可用的窗口小部件是由定义<a href="qscriptenginedebugger.html#DebuggerWidget-enum" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#DebuggerWidget-enum">DebuggerWidget</a>枚举。</p>
+<p>通过返回一个包含所有小部件的主窗口<a href="qscriptenginedebugger.html#standardWindow" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#standardWindow">standardWindow</a>（ ） 。如果你不想使用这个窗口中，您可以获取各个部件使用此功能。例如，下面的代码示例显示了如何设置包含布局<a href="qscriptenginedebugger.html#DebuggerWidget-enum" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#DebuggerWidget-enum">code window</a>和<a href="qscriptenginedebugger.html#DebuggerWidget-enum" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#DebuggerWidget-enum">stack
+widget</a>。</p>
+<pre class="cpp">
+     <span class="type"><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a></span> <span class="operator">*</span>codeWindow <span class="operator">=</span> debugger<span class="operator">-</span><span class="operator">&gt;</span>widget(<span class="type"><a href="qscriptenginedebugger.html" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html">QScriptEngineDebugger</a></span><span class="operator">.</span>CodeWidget);
+     <span class="type"><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a></span> <span class="operator">*</span>stackWidget <span class="operator">=</span> debugger<span class="operator">-</span><span class="operator">&gt;</span>widget(<span class="type"><a href="qscriptenginedebugger.html" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html">QScriptEngineDebugger</a></span><span class="operator">.</span>StackWidget);
+
+     <span class="type"><a href="qlayout.html" tppabs="http://pyqt4doc.appspot.com/qlayout.html">QLayout</a></span> <span class="operator">*</span>layout <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qhboxlayout.html" tppabs="http://pyqt4doc.appspot.com/qhboxlayout.html">QHBoxLayout</a></span>;
+     layout<span class="operator">-</span><span class="operator">&gt;</span>addWidget(codeWindow);
+     layout<span class="operator">-</span><span class="operator">&gt;</span>addWidget(stackWidget);
+</pre>
+<p>请注意，您需要设置<a href="qscriptenginedebugger.html#setAutoShowStandardWindow" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#setAutoShowStandardWindow">setAutoShowStandardWindow</a>（ ）为False ;若否，标准的窗口将不分显示。</p>
+<p><b>See also</b> <a href="qscriptenginedebugger.html#action" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#action">action</a>（ ）<a href="qscriptenginedebugger.html#standardWindow" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#standardWindow">standardWindow</a>（）和<a href="qscriptenginedebugger.html#setAutoShowStandardWindow" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#setAutoShowStandardWindow">setAutoShowStandardWindow</a>（ ） 。</p>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="evaluationResumed"></a>void evaluationResumed ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>当调试器已经恢复脚本的评价（如用户给予“继续”命令），这个信号被发射。</p>
+<p><b>See also</b> <a href="qscriptenginedebugger.html#evaluationSuspended" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#evaluationSuspended">evaluationSuspended</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="evaluationSuspended"></a>void evaluationSuspended ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时，调试器已因任何原因而暂停脚本执行（例如由于未捕获到脚本异常，或由于断点被触发） 。</p>
+<p><b>See also</b> <a href="qscriptenginedebugger.html#evaluationResumed" tppabs="http://pyqt4doc.appspot.com/qscriptenginedebugger.html#evaluationResumed">evaluationResumed</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

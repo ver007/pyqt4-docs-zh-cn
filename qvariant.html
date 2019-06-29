@@ -1,0 +1,997 @@
+﻿<html>
+<head>
+<title>QVariant Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QVariant Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该的QVariant类的行为像最常见的Qt数据类型的联合。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Type</a></b> { Invalid, Bool, Int, UInt, ..., UserType }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qvariant.html#QVariant" tppabs="http://pyqt4doc.appspot.com/qvariant.html#QVariant">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qvariant.html#QVariant-2" tppabs="http://pyqt4doc.appspot.com/qvariant.html#QVariant-2">__init__</a></b> (<i>self</i>, Type <i>type</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qvariant.html#QVariant-3" tppabs="http://pyqt4doc.appspot.com/qvariant.html#QVariant-3">__init__</a></b> (<i>self</i>, int <i>typeOrUserType</i>, sip.voidptr <i>copy</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qvariant.html#QVariant-4" tppabs="http://pyqt4doc.appspot.com/qvariant.html#QVariant-4">__init__</a></b> (<i>self</i>, QVariant <i>other</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qvariant.html#QVariant-5" tppabs="http://pyqt4doc.appspot.com/qvariant.html#QVariant-5">__init__</a></b> (<i>self</i>, object)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a></b> (<i>self</i>, Type <i>t</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qvariant.html#clear" tppabs="http://pyqt4doc.appspot.com/qvariant.html#clear">clear</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a></b> (<i>self</i>, Type <i>t</i>)</li>
+<li>
+<div class="fn"></div>sip.voidptr <b><a href="qvariant.html#data" tppabs="http://pyqt4doc.appspot.com/qvariant.html#data">data</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qvariant.html#detach" tppabs="http://pyqt4doc.appspot.com/qvariant.html#detach">detach</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qvariant.html#isDetached" tppabs="http://pyqt4doc.appspot.com/qvariant.html#isDetached">isDetached</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qvariant.html#isNull" tppabs="http://pyqt4doc.appspot.com/qvariant.html#isNull">isNull</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qvariant.html#isValid" tppabs="http://pyqt4doc.appspot.com/qvariant.html#isValid">isValid</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qvariant.html#load" tppabs="http://pyqt4doc.appspot.com/qvariant.html#load">load</a></b> (<i>self</i>, QDataStream <i>ds</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qvariant.html#save" tppabs="http://pyqt4doc.appspot.com/qvariant.html#save">save</a></b> (<i>self</i>, QDataStream <i>ds</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qvariant.html#swap" tppabs="http://pyqt4doc.appspot.com/qvariant.html#swap">swap</a></b> (<i>self</i>, QVariant <i>other</i>)</li>
+<li>
+<div class="fn"></div>QBitArray <b><a href="qvariant.html#toBitArray" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toBitArray">toBitArray</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qvariant.html#toBool" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toBool">toBool</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qvariant.html#toByteArray" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toByteArray">toByteArray</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QChar <b><a href="qvariant.html#toChar" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toChar">toChar</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDate <b><a href="qvariant.html#toDate" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toDate">toDate</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDateTime <b><a href="qvariant.html#toDateTime" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toDateTime">toDateTime</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>(float, bool <i>ok</i>) <b><a href="qvariant.html#toDouble" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toDouble">toDouble</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QEasingCurve <b><a href="qvariant.html#toEasingCurve" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toEasingCurve">toEasingCurve</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>(float, bool <i>ok</i>) <b><a href="qvariant.html#toFloat" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toFloat">toFloat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>dict-of-QString-QVariant <b><a href="qvariant.html#toHash" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toHash">toHash</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>(int, bool <i>ok</i>) <b><a href="qvariant.html#toInt" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toInt">toInt</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QLine <b><a href="qvariant.html#toLine" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toLine">toLine</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QLineF <b><a href="qvariant.html#toLineF" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toLineF">toLineF</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QVariant <b><a href="qvariant.html#toList" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toList">toList</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QLocale <b><a href="qvariant.html#toLocale" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toLocale">toLocale</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>(int, bool <i>ok</i>) <b><a href="qvariant.html#toLongLong" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toLongLong">toLongLong</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>dict-of-QString-QVariant <b><a href="qvariant.html#toMap" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toMap">toMap</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QPoint <b><a href="qvariant.html#toPoint" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toPoint">toPoint</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QPointF <b><a href="qvariant.html#toPointF" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toPointF">toPointF</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>object <b><a href="qvariant.html#toPyObject" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toPyObject">toPyObject</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>(float, bool <i>ok</i>) <b><a href="qvariant.html#toReal" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toReal">toReal</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QRect <b><a href="qvariant.html#toRect" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toRect">toRect</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QRectF <b><a href="qvariant.html#toRectF" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toRectF">toRectF</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QRegExp <b><a href="qvariant.html#toRegExp" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toRegExp">toRegExp</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qvariant.html#toSize" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toSize">toSize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSizeF <b><a href="qvariant.html#toSizeF" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toSizeF">toSizeF</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qvariant.html#toString" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toString">toString</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qvariant.html#toStringList" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toStringList">toStringList</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTime <b><a href="qvariant.html#toTime" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toTime">toTime</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>(int, bool <i>ok</i>) <b><a href="qvariant.html#toUInt" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toUInt">toUInt</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>(int, bool <i>ok</i>) <b><a href="qvariant.html#toULongLong" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toULongLong">toULongLong</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QUrl <b><a href="qvariant.html#toUrl" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toUrl">toUrl</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Type <b><a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qvariant.html#typeName" tppabs="http://pyqt4doc.appspot.com/qvariant.html#typeName">typeName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qvariant.html#userType" tppabs="http://pyqt4doc.appspot.com/qvariant.html#userType">userType</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QVariant <b><a href="qvariant.html#fromList" tppabs="http://pyqt4doc.appspot.com/qvariant.html#fromList">fromList</a></b> (list-of-QVariant <i>list</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qvariant.html#fromMap" tppabs="http://pyqt4doc.appspot.com/qvariant.html#fromMap">fromMap</a></b> (dict-of-QString-QVariant <i>map</i>)</li>
+<li>
+<div class="fn"></div>Type <b><a href="qvariant.html#nameToType" tppabs="http://pyqt4doc.appspot.com/qvariant.html#nameToType">nameToType</a></b> (str <i>name</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qvariant.html#typeToName" tppabs="http://pyqt4doc.appspot.com/qvariant.html#typeToName">typeToName</a></b> (Type <i>type</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>bool <b><a href="qvariant.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qvariant.html#__eq__">__eq__</a></b> (<i>self</i>, QVariant <i>v</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qvariant.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qvariant.html#__ne__">__ne__</a></b> (<i>self</i>, QVariant <i>v</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>可以使用任何Python对象每当一个<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>预计。没有人会被解释为无效的QVariant 。</p>
+  <p>该的QVariant类的行为像最常见的Qt数据类型的联合。</p>
+<p>因为C + +不允许从包括具有非默认的构造函数或析构函数类型的工会，最有趣的Qt类不能在工会使用。没有的QVariant ，这将是一个问题<a href="qobject.html#property" tppabs="http://pyqt4doc.appspot.com/qobject.html#property">QObject.property</a>（ ）和数据库的工作，等等。</p>
+<p>一个的QVariant对象持有一个单一的单个值<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（）的时间。 （有些<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ） S是多值，例如一个字符串列表。 ）你可以找出哪些类型，T变种持有，使用它转换为不同的类型<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） ，取得使用TOT之一，它的值（ ）函数（例如，<a href="qvariant.html#toSize" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toSize">toSize</a>（） ），并检查是否该类型可以使用被转换成特定类型的<a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（ ） 。</p>
+<p>名为TOT （）的方法（例如，<a href="qvariant.html#toInt" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toInt">toInt</a>（ ）<a href="qvariant.html#toString" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toString">toString</a>（ ） ）是常量。如果你问的存储类型，它们返回的存储对象的一个副本。如果要求，可以从所存储的类型， TOT （ ）的拷贝和转换来生成和叶对象本身不变型。如果你问的是不能从存储的类型生成的类型，其结果取决于类型，详见函数文档。</p>
+<p>下面是一些示例代码来演示使用的QVariant的：</p>
+<pre class="cpp">
+ <span class="type"><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a></span> out(<span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>);
+ <span class="type">QVariant</span> v(<span class="number">123</span>);                <span class="comment">// The variant now contains an int</span>
+ <span class="type">int</span> x <span class="operator">=</span> v<span class="operator">.</span><a href="qvariant.html#toInt" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toInt">toInt</a>();              <span class="comment">// x = 123</span>
+ out <span class="operator">&lt;</span><span class="operator">&lt;</span> v;                       <span class="comment">// Writes a type tag and an int to out</span>
+ v <span class="operator">=</span> <span class="type">QVariant</span>(<span class="string">"hello"</span>);          <span class="comment">// The variant now contains a QByteArray</span>
+ v <span class="operator">=</span> <span class="type">QVariant</span>(tr(<span class="string">"hello"</span>));      <span class="comment">// The variant now contains a QString</span>
+ <span class="type">int</span> y <span class="operator">=</span> v<span class="operator">.</span><a href="qvariant.html#toInt" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toInt">toInt</a>();              <span class="comment">// y = 0 since v cannot be converted to an int</span>
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> s <span class="operator">=</span> v<span class="operator">.</span><a href="qvariant.html#toString" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toString">toString</a>();       <span class="comment">// s = tr("hello")  (see QObject.tr())</span>
+ out <span class="operator">&lt;</span><span class="operator">&lt;</span> v;                       <span class="comment">// Writes a type tag and a QString to out</span>
+ <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ <span class="type"><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a></span> in(<span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>);            <span class="comment">// (opening the previously written stream)</span>
+ in <span class="operator">&gt;</span><span class="operator">&gt;</span> v;                        <span class="comment">// Reads an Int variant</span>
+ <span class="type">int</span> z <span class="operator">=</span> v<span class="operator">.</span><a href="qvariant.html#toInt" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toInt">toInt</a>();              <span class="comment">// z = 123</span>
+ <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>(<span class="string">"Type is %s"</span><span class="operator">,</span>            <span class="comment">// prints "Type is int"</span>
+         v<span class="operator">.</span>typeName());
+ v <span class="operator">=</span> v<span class="operator">.</span><a href="qvariant.html#toInt" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toInt">toInt</a>() <span class="operator">+</span> <span class="number">100</span>;            <span class="comment">// The variant now hold the value 223</span>
+ v <span class="operator">=</span> <span class="type">QVariant</span>(<span class="type"><a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a></span>());
+</pre>
+<p>你甚至可以存储<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qlist.html">QList</a>\u003cQVariant\u003e和<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qmap.html">QMap</a>\u003c<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>在一个变体的QVariant \u003e的值，这样你就可以很容易地构造任意类型的任意复杂的数据结构。这是非常强大和灵活，但可能证明较少的内存和速度效率比存储特定类型的标准数据结构。</p>
+<p>的QVariant还支持空值，在那里你可以有一个定义的类型，没有值集的概念。但是请注意，当他们有一个值集的QVariant类型只能被施放。</p>
+<pre class="cpp">
+ <span class="type">QVariant</span> x<span class="operator">,</span> y(<span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>())<span class="operator">,</span> z(<span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>(<span class="string">""</span>));
+ x<span class="operator">.</span><a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>(<span class="type">QVariant</span><span class="operator">.</span>Int);
+ <span class="comment">// x.isNull() == true</span>
+ <span class="comment">// y.isNull() == true, z.isNull() == false</span>
+</pre>
+<p>的QVariant可以扩展到支持其他类型比在提及<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Type</a>枚举。请参阅<a href="qmetatype.html" tppabs="http://pyqt4doc.appspot.com/qmetatype.html">QMetaType</a>文档。</p>
+<a id="a-note-on-gui-types" name="a-note-on-gui-types"></a>
+<h3>A Note on GUI Types</h3>
+<p>因为是的QVariant的部分<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a>库，它不能提供转换功能，以定义数据类型<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a>如<a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a>，<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>和<a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a>。换句话说，没有<tt>toColor()</tt>功能。相反，你可以使用<a href="qvariant.html#value" tppabs="http://pyqt4doc.appspot.com/qvariant.html#value">QVariant.value</a>（）或<a href="qvariant.html#qvariant_cast" tppabs="http://pyqt4doc.appspot.com/qvariant.html#qvariant_cast">qvariant_cast</a>（ ）模板函数。例如：</p>
+<pre class="cpp">
+ <span class="type">QVariant</span> variant;
+ <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ <span class="type"><a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a></span> color <span class="operator">=</span> variant<span class="operator">.</span>value<span class="operator">&lt;</span><span class="type"><a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a></span><span class="operator">&gt;</span>();
+</pre>
+<p>逆变换（例如，从<a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a>到的QVariant ）是自动通过的QVariant支持的所有数据类型，包括GUI相关的类：</p>
+<pre class="cpp">
+ <span class="type"><a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a></span> color <span class="operator">=</span> palette()<span class="operator">.</span>background()<span class="operator">.</span>color();
+ <span class="type">QVariant</span> variant <span class="operator">=</span> color;
+</pre>
+<a id="using-canconvert-and-convert-consecutively" name="using-canconvert-and-convert-consecutively"></a>
+<h3>Using canConvert() and convert() Consecutively</h3>
+<p>当使用<a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（）连续，它有可能为<a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（ ）返回True ，但<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ）返回False 。这通常是因为<a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）只报告的QVariant来给出合适的数据类型之间进行转换的一般能力，它仍然是可能的，以提供其实际上不能被转换的数据。</p>
+<p>例如，<a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（ ）会叫上一个包含字符串变量的时候，因为在原则上，是的QVariant能够数字字符串转换为整数返回True 。然而，如果字符串中包含非数字字符时，它不能被转换成一个整数，并且任何试图将其转换将失败。因此，有两个函数返回True，对于一个成功的转换是非常重要的。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="Type-enum"></a>QVariant.Type</h3>
+<p>这个枚举类型定义变量的类型，一个<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>可以包含。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Invalid</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">没有类型</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.BitArray</tt></td>
+<td class="topAlign"><tt>13</tt></td>
+<td class="topAlign">一<a href="qbitarray.html" tppabs="http://pyqt4doc.appspot.com/qbitarray.html">QBitArray</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Bitmap</tt></td>
+<td class="topAlign"><tt>73</tt></td>
+<td class="topAlign">一<a href="qbitmap.html" tppabs="http://pyqt4doc.appspot.com/qbitmap.html">QBitmap</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Bool</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">一个bool</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Brush</tt></td>
+<td class="topAlign"><tt>66</tt></td>
+<td class="topAlign">一<a href="qbrush.html" tppabs="http://pyqt4doc.appspot.com/qbrush.html">QBrush</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.ByteArray</tt></td>
+<td class="topAlign"><tt>12</tt></td>
+<td class="topAlign">一<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Char</tt></td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">一<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Color</tt></td>
+<td class="topAlign"><tt>67</tt></td>
+<td class="topAlign">一<a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Cursor</tt></td>
+<td class="topAlign"><tt>74</tt></td>
+<td class="topAlign">一<a href="qcursor.html" tppabs="http://pyqt4doc.appspot.com/qcursor.html">QCursor</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Date</tt></td>
+<td class="topAlign"><tt>14</tt></td>
+<td class="topAlign">一<a href="qdate.html" tppabs="http://pyqt4doc.appspot.com/qdate.html">QDate</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.DateTime</tt></td>
+<td class="topAlign"><tt>16</tt></td>
+<td class="topAlign">一<a href="qdatetime.html" tppabs="http://pyqt4doc.appspot.com/qdatetime.html">QDateTime</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Double</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">双</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.EasingCurve</tt></td>
+<td class="topAlign"><tt>29</tt></td>
+<td class="topAlign">一<a href="qeasingcurve.html" tppabs="http://pyqt4doc.appspot.com/qeasingcurve.html">QEasingCurve</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Font</tt></td>
+<td class="topAlign"><tt>64</tt></td>
+<td class="topAlign">一<a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Hash</tt></td>
+<td class="topAlign"><tt>28</tt></td>
+<td class="topAlign">一<a href="qvariant.html#QVariantHash-typedef" tppabs="http://pyqt4doc.appspot.com/qvariant.html#QVariantHash-typedef">QVariantHash</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Icon</tt></td>
+<td class="topAlign"><tt>69</tt></td>
+<td class="topAlign">一<a href="qicon.html" tppabs="http://pyqt4doc.appspot.com/qicon.html">QIcon</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Image</tt></td>
+<td class="topAlign"><tt>70</tt></td>
+<td class="topAlign">一<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Int</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">一个int</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.KeySequence</tt></td>
+<td class="topAlign"><tt>76</tt></td>
+<td class="topAlign">一<a href="qkeysequence.html" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html">QKeySequence</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Line</tt></td>
+<td class="topAlign"><tt>23</tt></td>
+<td class="topAlign">一<a href="qline.html" tppabs="http://pyqt4doc.appspot.com/qline.html">QLine</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.LineF</tt></td>
+<td class="topAlign"><tt>24</tt></td>
+<td class="topAlign">一<a href="qlinef.html" tppabs="http://pyqt4doc.appspot.com/qlinef.html">QLineF</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.List</tt></td>
+<td class="topAlign"><tt>9</tt></td>
+<td class="topAlign">一<a href="qvariant.html#QVariantList-typedef" tppabs="http://pyqt4doc.appspot.com/qvariant.html#QVariantList-typedef">QVariantList</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Locale</tt></td>
+<td class="topAlign"><tt>18</tt></td>
+<td class="topAlign">一<a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.LongLong</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">一<a href="index.htm#qlonglong-typedef" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qlonglong-typedef">qlonglong</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Map</tt></td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">一<a href="qvariant.html#QVariantMap-typedef" tppabs="http://pyqt4doc.appspot.com/qvariant.html#QVariantMap-typedef">QVariantMap</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Matrix</tt></td>
+<td class="topAlign"><tt>80</tt></td>
+<td class="topAlign">一<a class="obsolete" href="qmatrix.html" tppabs="http://pyqt4doc.appspot.com/qmatrix.html">QMatrix<sup>(obsolete)</sup></a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Transform</tt></td>
+<td class="topAlign"><tt>81</tt></td>
+<td class="topAlign">一<a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Matrix4x4</tt></td>
+<td class="topAlign"><tt>82</tt></td>
+<td class="topAlign">一<a href="qmatrix4x4.html" tppabs="http://pyqt4doc.appspot.com/qmatrix4x4.html">QMatrix4x4</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Palette</tt></td>
+<td class="topAlign"><tt>68</tt></td>
+<td class="topAlign">一<a href="qpalette.html" tppabs="http://pyqt4doc.appspot.com/qpalette.html">QPalette</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Pen</tt></td>
+<td class="topAlign"><tt>77</tt></td>
+<td class="topAlign">一<a href="qpen.html" tppabs="http://pyqt4doc.appspot.com/qpen.html">QPen</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Pixmap</tt></td>
+<td class="topAlign"><tt>65</tt></td>
+<td class="topAlign">一<a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Point</tt></td>
+<td class="topAlign"><tt>25</tt></td>
+<td class="topAlign">一<a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.PointArray</tt></td>
+<td class="topAlign"><tt>Polygon</tt></td>
+<td class="topAlign">一<a href="index.htm#qpointarray" tppabs="http://pyqt4doc.appspot.com/porting4.html#qpointarray">QPointArray</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.PointF</tt></td>
+<td class="topAlign"><tt>26</tt></td>
+<td class="topAlign">一<a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Polygon</tt></td>
+<td class="topAlign"><tt>71</tt></td>
+<td class="topAlign">一<a href="qpolygon.html" tppabs="http://pyqt4doc.appspot.com/qpolygon.html">QPolygon</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Quaternion</tt></td>
+<td class="topAlign"><tt>86</tt></td>
+<td class="topAlign">一<a href="qquaternion.html" tppabs="http://pyqt4doc.appspot.com/qquaternion.html">QQuaternion</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Rect</tt></td>
+<td class="topAlign"><tt>19</tt></td>
+<td class="topAlign">一<a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.RectF</tt></td>
+<td class="topAlign"><tt>20</tt></td>
+<td class="topAlign">一<a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.RegExp</tt></td>
+<td class="topAlign"><tt>27</tt></td>
+<td class="topAlign">一<a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Region</tt></td>
+<td class="topAlign"><tt>72</tt></td>
+<td class="topAlign">一<a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Size</tt></td>
+<td class="topAlign"><tt>21</tt></td>
+<td class="topAlign">一<a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.SizeF</tt></td>
+<td class="topAlign"><tt>22</tt></td>
+<td class="topAlign">一<a href="qsizef.html" tppabs="http://pyqt4doc.appspot.com/qsizef.html">QSizeF</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.SizePolicy</tt></td>
+<td class="topAlign"><tt>75</tt></td>
+<td class="topAlign">一<a href="qsizepolicy.html" tppabs="http://pyqt4doc.appspot.com/qsizepolicy.html">QSizePolicy</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.String</tt></td>
+<td class="topAlign"><tt>10</tt></td>
+<td class="topAlign">一<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.StringList</tt></td>
+<td class="topAlign"><tt>11</tt></td>
+<td class="topAlign">一<a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.TextFormat</tt></td>
+<td class="topAlign"><tt>79</tt></td>
+<td class="topAlign">一<a href="qtextformat.html" tppabs="http://pyqt4doc.appspot.com/qtextformat.html">QTextFormat</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.TextLength</tt></td>
+<td class="topAlign"><tt>78</tt></td>
+<td class="topAlign">一<a href="qtextlength.html" tppabs="http://pyqt4doc.appspot.com/qtextlength.html">QTextLength</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Time</tt></td>
+<td class="topAlign"><tt>15</tt></td>
+<td class="topAlign">一<a href="qtime.html" tppabs="http://pyqt4doc.appspot.com/qtime.html">QTime</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.UInt</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">一<a href="index.htm#uint-typedef" tppabs="http://pyqt4doc.appspot.com/qtcore.html#uint-typedef">uint</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.ULongLong</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">一<a href="index.htm#qulonglong-typedef" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qulonglong-typedef">qulonglong</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Url</tt></td>
+<td class="topAlign"><tt>17</tt></td>
+<td class="topAlign">一<a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Vector2D</tt></td>
+<td class="topAlign"><tt>83</tt></td>
+<td class="topAlign">一<a href="qvector2d.html" tppabs="http://pyqt4doc.appspot.com/qvector2d.html">QVector2D</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Vector3D</tt></td>
+<td class="topAlign"><tt>84</tt></td>
+<td class="topAlign">一<a href="qvector3d.html" tppabs="http://pyqt4doc.appspot.com/qvector3d.html">QVector3D</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.Vector4D</tt></td>
+<td class="topAlign"><tt>85</tt></td>
+<td class="topAlign">一<a href="qvector4d.html" tppabs="http://pyqt4doc.appspot.com/qvector4d.html">QVector4D</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVariant.UserType</tt></td>
+<td class="topAlign"><tt>127</tt></td>
+<td class="topAlign">对于用户自定义类型的基础值。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QVariant"></a>QVariant.__init__ (<i>self</i>)</h3>
+<p>构造一个无效的变体。</p>
+
+
+<h3 class="fn">
+<a name="QVariant-2"></a>QVariant.__init__ (<i>self</i>, <a href="index.htm#Type-enum" tppabs="http://pyqt4doc.appspot.com/qtcore.html#Type-enum">Type</a> <i>type</i>)</h3>
+<p>构造类型的空变种<i>type</i>。</p>
+
+
+<h3 class="fn">
+<a name="QVariant-3"></a>QVariant.__init__ (<i>self</i>, int <i>typeOrUserType</i>, sip.voidptr <i>copy</i>)</h3>
+<p>构造类型的变种<i>typeOrUserType</i>以及与初始化<i>copy</i>如果<i>copy</i>不为0。</p>
+<p>请注意，你必须通过你想要保存的变量的地址。</p>
+<p>通常情况下，你从来没有使用此构造函数，使用<a href="qvariant.html#fromValue" tppabs="http://pyqt4doc.appspot.com/qvariant.html#fromValue">QVariant.fromValue</a>（ ）而不是由所代表的指针类型构造变形<tt>QMetaType.VoidStar</tt>，<tt>QMetaType.QObjectStar</tt>和<tt>QMetaType.QWidgetStar</tt>。</p>
+<p><b>See also</b> <a href="qvariant.html#fromValue" tppabs="http://pyqt4doc.appspot.com/qvariant.html#fromValue">QVariant.fromValue</a>（）和<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Type</a>。</p>
+
+
+<h3 class="fn">
+<a name="QVariant-4"></a>QVariant.__init__ (<i>self</i>, QVariant <i>other</i>)</h3>
+<h3 class="fn">
+<a name="QVariant-5"></a>QVariant.__init__ (<i>self</i>, object)</h3>
+<p>构造变形的副本，<i>p</i>，作为参数传递给此构造函数。</p>
+
+
+<h3 class="fn">
+<a name="canConvert"></a>bool QVariant.canConvert (<i>self</i>, <a href="index.htm#Type-enum" tppabs="http://pyqt4doc.appspot.com/qtcore.html#Type-enum">Type</a> <i>t</i>)</h3>
+<p>返回True如果变量的类型可以转换为所请求的类型，<i>t</i>。当调用此类铸件是自动完成的<a href="qvariant.html#toInt" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toInt">toInt</a>（ ）<a href="qvariant.html#toBool" tppabs="http://pyqt4doc.appspot.com/qvariant.html#toBool">toBool</a>（ ），...的方法。</p>
+<p>下面的类型转换是自动完成的：</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Type</th>
+<th>Automatically Cast To</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td><a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Bool</a></td>
+<td>
+<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Char</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Double</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Int</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">LongLong</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">UInt</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ULongLong</a>
+</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ByteArray</a></td>
+<td>
+<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Double</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Int</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">LongLong</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">UInt</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ULongLong</a>
+</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Char</a></td>
+<td>
+<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Bool</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Int</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">UInt</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">LongLong</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ULongLong</a>
+</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Color</a></td>
+<td><a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a></td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Date</a></td>
+<td>
+<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">DateTime</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>
+</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">DateTime</a></td>
+<td>
+<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Date</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Time</a>
+</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Double</a></td>
+<td>
+<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Bool</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Int</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">LongLong</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">UInt</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ULongLong</a>
+</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Font</a></td>
+<td><a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a></td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Int</a></td>
+<td>
+<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Bool</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Char</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Double</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">LongLong</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">UInt</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ULongLong</a>
+</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">KeySequence</a></td>
+<td>
+<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Int</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>
+</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">List</a></td>
+<td>
+<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">StringList</a> (if the list's
+items can be converted to strings)</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">LongLong</a></td>
+<td>
+<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Bool</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ByteArray</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Char</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Double</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Int</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">UInt</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ULongLong</a>
+</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Point</a></td>
+<td><a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">PointF</a></td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Rect</a></td>
+<td><a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">RectF</a></td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a></td>
+<td>
+<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Bool</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ByteArray</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Char</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Color</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Date</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">DateTime</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Double</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Font</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Int</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">KeySequence</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">LongLong</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">StringList</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Time</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">UInt</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ULongLong</a>
+</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">StringList</a></td>
+<td>
+<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">List</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a> (if the list contains exactly
+one item)</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Time</a></td>
+<td><a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a></td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">UInt</a></td>
+<td>
+<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Bool</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Char</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Double</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Int</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">LongLong</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ULongLong</a>
+</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ULongLong</a></td>
+<td>
+<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Bool</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Char</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Double</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Int</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">LongLong</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>, <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">UInt</a>
+</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clear"></a>QVariant.clear (<i>self</i>)</h3>
+<p>转换这个变种输入无效，并释放使用的资源。</p>
+
+
+<h3 class="fn">
+<a name="convert"></a>bool QVariant.convert (<i>self</i>, <a href="index.htm#Type-enum" tppabs="http://pyqt4doc.appspot.com/qtcore.html#Type-enum">Type</a> <i>t</i>)</h3>
+<p>注塑变种所请求的类型，<i>t</i>。如果转换无法完成，该变种被清除。返回True如果变量的当前类型已成功投，否则返回False 。</p>
+<p><b>Warning:</b>由于历史的原因，将空<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>结果在所希望的类型（例如，一个空字符串的空值<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>）和虚假的结果。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#clear" tppabs="http://pyqt4doc.appspot.com/qvariant.html#clear">clear</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="data"></a>sip.voidptr QVariant.data (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="detach"></a>QVariant.detach (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="fromList"></a>QVariant QVariant.fromList (list-of-QVariant <i>list</i>)</h3>
+<h3 class="fn">
+<a name="fromMap"></a>QVariant QVariant.fromMap (dict-of-QString-QVariant <i>map</i>)</h3>
+<h3 class="fn">
+<a name="isDetached"></a>bool QVariant.isDetached (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="isNull"></a>bool QVariant.isNull (<i>self</i>)</h3>
+<p>返回True如果这是一个空变量，否则返回False。</p>
+
+
+<h3 class="fn">
+<a name="isValid"></a>bool QVariant.isValid (<i>self</i>)</h3>
+<p>返回True如果这个变种的存储类型是不<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">QVariant.Invalid</a>否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="load"></a>QVariant.load (<i>self</i>, <a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> <i>ds</i>)</h3>
+<h3 class="fn">
+<a name="nameToType"></a><a href="index.htm#Type-enum" tppabs="http://pyqt4doc.appspot.com/qtcore.html#Type-enum">Type</a> QVariant.nameToType (str <i>name</i>)</h3>
+<p>在给定的存储类型的字符串表示形式转换<i>name</i>，其枚举表示。</p>
+<p>如果字符串表示不能转换为任何枚举表示，变量被设置为<tt>Invalid</tt>。</p>
+
+
+<h3 class="fn">
+<a name="save"></a>QVariant.save (<i>self</i>, <a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> <i>ds</i>)</h3>
+<h3 class="fn">
+<a name="swap"></a>QVariant.swap (<i>self</i>, QVariant <i>other</i>)</h3>
+<p>掉期变种<i>other</i>这种变体。这个操作是非常快的，而且永远不会。</p>
+<p>此功能被引入Qt的4.8 。</p>
+
+
+<h3 class="fn">
+<a name="toBitArray"></a><a href="qbitarray.html" tppabs="http://pyqt4doc.appspot.com/qbitarray.html">QBitArray</a> QVariant.toBitArray (<i>self</i>)</h3>
+<p>返回变量作为<a href="qbitarray.html" tppabs="http://pyqt4doc.appspot.com/qbitarray.html">QBitArray</a>如果该变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">BitArray</a>否则返回一个空的位阵列。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toBool"></a>bool QVariant.toBool (<i>self</i>)</h3>
+<p>返回变量为bool如果有变异<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）布尔。</p>
+<p>如果变量有，则返回True<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Bool</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Char</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Double</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Int</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">LongLong</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">UInt</a>或<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ULongLong</a>和的值是非零，或者如果所述变体的类型为<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a> or <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ByteArray</a>和其小写内容不为空， “0”或“假” ，否则返回假。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toByteArray"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QVariant.toByteArray (<i>self</i>)</h3>
+<p>返回变量作为<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>如果该变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ByteArray</a> or <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>使用（兑换<a href="qstring.html#fromAscii" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromAscii">QString.fromAscii</a>（ ） ） ，否则返回一个空字节数组。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toChar"></a>QChar QVariant.toChar (<i>self</i>)</h3>
+<p>返回变量作为<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>如果该变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Char</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Int</a>或<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">UInt</a>否则返回一个无效的<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toDate"></a><a href="qdate.html" tppabs="http://pyqt4doc.appspot.com/qdate.html">QDate</a> QVariant.toDate (<i>self</i>)</h3>
+<p>返回变量作为<a href="qdate.html" tppabs="http://pyqt4doc.appspot.com/qdate.html">QDate</a>如果该变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Date</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">DateTime</a>或<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>否则返回一个无效的日期。</p>
+<p>如果<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（）是<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>，一个无效的日期，如果该字符串不能解析为一个将被退回<a href="qt.html#DateFormat-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#DateFormat-enum">Qt.ISODate</a>格式的日期。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toDateTime"></a><a href="qdatetime.html" tppabs="http://pyqt4doc.appspot.com/qdatetime.html">QDateTime</a> QVariant.toDateTime (<i>self</i>)</h3>
+<p>返回变量作为<a href="qdatetime.html" tppabs="http://pyqt4doc.appspot.com/qdatetime.html">QDateTime</a>如果该变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">DateTime</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Date</a>或<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>否则返回一个无效的日期/时间。</p>
+<p>如果<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（）是<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>，一个无效的日期/时间，如果该字符串不能解析为一个将被退回<a href="qt.html#DateFormat-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#DateFormat-enum">Qt.ISODate</a>格式的日期/时间。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toDouble"></a>(float, bool <i>ok</i>) QVariant.toDouble (<i>self</i>)</h3>
+<p>返回变体作为双如果所述变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Double</a>，<a href="qmetatype.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#Type-enum">QMetaType.Float</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Bool</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ByteArray</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Int</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">LongLong</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">UInt</a>或<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ULongLong</a>否则返回0.0 。</p>
+<p>If <i>ok</i>不为null ：<tt>*</tt><i>ok</i>被设置为True，如果该值可以转换为double ，否则<tt>*</tt><i>ok</i>设置为False 。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toEasingCurve"></a><a href="qeasingcurve.html" tppabs="http://pyqt4doc.appspot.com/qeasingcurve.html">QEasingCurve</a> QVariant.toEasingCurve (<i>self</i>)</h3>
+<p>返回变量作为<a href="qeasingcurve.html" tppabs="http://pyqt4doc.appspot.com/qeasingcurve.html">QEasingCurve</a>如果该变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">EasingCurve</a>否则返回一个默认的缓动曲线。</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toFloat"></a>(float, bool <i>ok</i>) QVariant.toFloat (<i>self</i>)</h3>
+<p>返回变量为float ，如果该变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Double</a>，<a href="qmetatype.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#Type-enum">QMetaType.Float</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Bool</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ByteArray</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Int</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">LongLong</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">UInt</a>或<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ULongLong</a>否则返回0.0 。</p>
+<p>If <i>ok</i>不为null ：<tt>*</tt><i>ok</i>被设置为True，如果该值可以转换为double ，否则<tt>*</tt><i>ok</i>设置为False 。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toHash"></a>dict-of-QString-QVariant QVariant.toHash (<i>self</i>)</h3>
+<p>返回变量作为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qhash.html">QHash</a>\u003c<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>，<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>\u003e如果所述变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Hash</a>否则返回一个空映射。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toInt"></a>(int, bool <i>ok</i>) QVariant.toInt (<i>self</i>)</h3>
+<p>返回变量为int如果该变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Int</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Bool</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ByteArray</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Char</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Double</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">LongLong</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">UInt</a>或<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ULongLong</a>否则返回0 。</p>
+<p>If <i>ok</i>不为null ：<tt>*</tt><i>ok</i>被设置为True，如果该值可以转换为int ，否则<tt>*</tt><i>ok</i>设置为False 。</p>
+<p><b>Warning:</b>如果该值可以转换为一个<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">LongLong</a>但过大的一个int来表示，由此产生的算术溢出将不会反映在<i>ok</i>。一个简单的解决方法是使用<a href="qstring.html#toInt" tppabs="http://pyqt4doc.appspot.com/qstring.html#toInt">QString.toInt</a>（ ） 。修复这个bug已经被推迟到5的Qt为了避免破坏现有的代码。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toLine"></a><a href="qline.html" tppabs="http://pyqt4doc.appspot.com/qline.html">QLine</a> QVariant.toLine (<i>self</i>)</h3>
+<p>返回变量作为<a href="qline.html" tppabs="http://pyqt4doc.appspot.com/qline.html">QLine</a>如果该变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Line</a>否则返回一个无效的<a href="qline.html" tppabs="http://pyqt4doc.appspot.com/qline.html">QLine</a>。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toLineF"></a><a href="qlinef.html" tppabs="http://pyqt4doc.appspot.com/qlinef.html">QLineF</a> QVariant.toLineF (<i>self</i>)</h3>
+<p>返回变量作为<a href="qlinef.html" tppabs="http://pyqt4doc.appspot.com/qlinef.html">QLineF</a>如果该变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">LineF</a>否则返回一个无效的<a href="qlinef.html" tppabs="http://pyqt4doc.appspot.com/qlinef.html">QLineF</a>。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toList"></a>list-of-QVariant QVariant.toList (<i>self</i>)</h3>
+<p>返回变量作为<a href="qvariant.html#QVariantList-typedef" tppabs="http://pyqt4doc.appspot.com/qvariant.html#QVariantList-typedef">QVariantList</a>如果该变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">List</a> or <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">StringList</a>否则返回空列表。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toLocale"></a><a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a> QVariant.toLocale (<i>self</i>)</h3>
+<p>返回变量作为<a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a>如果该变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Locale</a>否则返回一个无效的<a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a>。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toLongLong"></a>(int, bool <i>ok</i>) QVariant.toLongLong (<i>self</i>)</h3>
+<p>返回变量为long long int的，如果有变异<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">LongLong</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Bool</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ByteArray</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Char</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Double</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Int</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">UInt</a>或<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ULongLong</a>否则返回0 。</p>
+<p>If <i>ok</i>不为null ：<tt>*</tt><tt>ok</tt>被设置为True，如果该值可以转换为int ，否则<tt>*</tt><tt>ok</tt>设置为False 。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toMap"></a>dict-of-QString-QVariant QVariant.toMap (<i>self</i>)</h3>
+<p>返回变量作为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qmap.html">QMap</a>\u003c<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>，<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>\u003e如果所述变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Map</a>否则返回一个空映射。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toPoint"></a><a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> QVariant.toPoint (<i>self</i>)</h3>
+<p>返回变量作为<a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a>如果该变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Point</a> or <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">PointF</a>否则返回空<a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a>。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toPointF"></a><a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> QVariant.toPointF (<i>self</i>)</h3>
+<p>返回变量作为<a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a>如果该变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Point</a> or <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">PointF</a>否则返回空<a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a>。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toPyObject"></a>object QVariant.toPyObject (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="toReal"></a>(float, bool <i>ok</i>) QVariant.toReal (<i>self</i>)</h3>
+<p>返回变体作为QREAL如果​​所述变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Double</a>，<a href="qmetatype.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#Type-enum">QMetaType.Float</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Bool</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ByteArray</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Int</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">LongLong</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">UInt</a>或<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ULongLong</a>否则返回0.0 。</p>
+<p>If <i>ok</i>不为null ：<tt>*</tt><i>ok</i>被设置为True，如果该值可以转换为double ，否则<tt>*</tt><i>ok</i>设置为False 。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toRect"></a><a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> QVariant.toRect (<i>self</i>)</h3>
+<p>返回变量作为<a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a>如果该变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Rect</a>否则返回一个无效的<a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a>。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toRectF"></a><a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> QVariant.toRectF (<i>self</i>)</h3>
+<p>返回变量作为<a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a>如果该变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Rect</a> or <a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">RectF</a>否则返回一个无效的<a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a>。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toRegExp"></a><a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a> QVariant.toRegExp (<i>self</i>)</h3>
+<p>返回变量作为<a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a>如果该变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">RegExp</a>否则返回一个空<a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a>。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toSize"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QVariant.toSize (<i>self</i>)</h3>
+<p>返回变量作为<a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a>如果该变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Size</a>否则返回一个无效的<a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a>。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toSizeF"></a><a href="qsizef.html" tppabs="http://pyqt4doc.appspot.com/qsizef.html">QSizeF</a> QVariant.toSizeF (<i>self</i>)</h3>
+<p>返回变量作为<a href="qsizef.html" tppabs="http://pyqt4doc.appspot.com/qsizef.html">QSizeF</a>如果该变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">SizeF</a>否则返回一个无效的<a href="qsizef.html" tppabs="http://pyqt4doc.appspot.com/qsizef.html">QSizeF</a>。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toString"></a>QString QVariant.toString (<i>self</i>)</h3>
+<p>返回变量作为<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>如果该变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Bool</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ByteArray</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Char</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Date</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">DateTime</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Double</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Int</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">LongLong</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">StringList</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Time</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">UInt</a>或<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ULongLong</a>否则返回一个空字符串。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toStringList"></a>QStringList QVariant.toStringList (<i>self</i>)</h3>
+<p>返回变量作为<a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a>如果该变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">StringList</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>或<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">List</a>这可以转换为一个类型的<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>否则返回空列表。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toTime"></a><a href="qtime.html" tppabs="http://pyqt4doc.appspot.com/qtime.html">QTime</a> QVariant.toTime (<i>self</i>)</h3>
+<p>返回变量作为<a href="qtime.html" tppabs="http://pyqt4doc.appspot.com/qtime.html">QTime</a>如果该变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Time</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">DateTime</a>或<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>否则返回一个无效的时间。</p>
+<p>如果<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（）是<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>，一个无效的时间，如果该字符串不能解析为一个将被退回<a href="qt.html#DateFormat-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#DateFormat-enum">Qt.ISODate</a>格式时间。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toUInt"></a>(int, bool <i>ok</i>) QVariant.toUInt (<i>self</i>)</h3>
+<p>返回变量为一个unsigned int如果该变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">UInt</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Bool</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ByteArray</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Char</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Double</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Int</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">LongLong</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>或<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ULongLong</a>否则返回0 。</p>
+<p>If <i>ok</i>不为null ：<tt>*</tt><i>ok</i>被设置为True，如果该值可以转换为一个unsigned int ，否则<tt>*</tt><i>ok</i>设置为False 。</p>
+<p><b>Warning:</b>如果该值可以转换为一个<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ULongLong</a>但过大的一个unsigned int来表示，由此产生的算术溢出将不会反映在<i>ok</i>。一个简单的解决方法是使用<a href="qstring.html#toUInt" tppabs="http://pyqt4doc.appspot.com/qstring.html#toUInt">QString.toUInt</a>（ ） 。修复这个bug已经被推迟到5的Qt为了避免破坏现有的代码。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toULongLong"></a>(int, bool <i>ok</i>) QVariant.toULongLong (<i>self</i>)</h3>
+<p>返回变体为unsigned long long int的，如果有变异<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ULongLong</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Bool</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">ByteArray</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Char</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Double</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Int</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">LongLong</a>，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">String</a>或<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">UInt</a>否则返回0 。</p>
+<p>If <i>ok</i>不为null ：<tt>*</tt><i>ok</i>被设置为True，如果该值可以转换为int ，否则<tt>*</tt><i>ok</i>设置为False 。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toUrl"></a><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> QVariant.toUrl (<i>self</i>)</h3>
+<p>返回变量作为<a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>如果该变体具有<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ）<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">Url</a>否则返回一个无效的<a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>。</p>
+<p><b>See also</b> <a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（）和<a href="qvariant.html#convert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#convert">convert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="type"></a><a href="index.htm#Type-enum" tppabs="http://pyqt4doc.appspot.com/qtcore.html#Type-enum">Type</a> QVariant.type (<i>self</i>)</h3>
+<p>返回存储在变量值的存储类型。虽然这个函数被声明为返回<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">QVariant.Type</a>，返回值应解释为<a href="qmetatype.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#Type-enum">QMetaType.Type</a>。特别地，<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">QVariant.UserType</a>这里只返回该值是否等于或大于<a href="qmetatype.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#Type-enum">QMetaType.User</a>。</p>
+<p>请注意，在该范围内的返回值<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">QVariant.Char</a>通过<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">QVariant.RegExp</a>和<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">QVariant.Font</a>通过<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">QVariant.Transform</a>对应于在范围中的值<a href="qmetatype.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#Type-enum">QMetaType.QChar</a>通过<a href="qmetatype.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#Type-enum">QMetaType.QRegExp</a>和<a href="qmetatype.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#Type-enum">QMetaType.QFont</a>通过<a href="qmetatype.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#Type-enum">QMetaType.QQuaternion</a>。</p>
+<p>用char工作时，要特别注意和<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>变种。需要注意的是，没有<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>构造函数专门为char类型，但有一个用于<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>。对于类型的变体<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>，这个函数返回<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">QVariant.Char</a>，这是相同的<a href="qmetatype.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#Type-enum">QMetaType.QChar</a>，但是对于类型的变体<tt>char</tt>，这个函数返回<a href="qmetatype.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#Type-enum">QMetaType.Char</a>，这是<i>not</i>一样<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">QVariant.Char</a>。</p>
+<p>还要注意的是类型<tt>void*</tt>，<tt>long</tt>，<tt>short</tt>，<tt>unsigned</tt> <tt>long</tt>，<tt>unsigned</tt>
+<tt>short</tt>，<tt>unsigned</tt> <tt>char</tt>，<tt>float</tt>，<tt>QObject*</tt>和<tt>QWidget*</tt>都派代表参加<a href="qmetatype.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#Type-enum">QMetaType.Type</a>但不是在<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">QVariant.Type</a>，并且它们可以由该函数返回。然而，它们都被认为是用户定义的类型时，对测试<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">QVariant.Type</a>。</p>
+<p>为了测试是否实例<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>包含与你感兴趣的数据类型，使用兼容的数据类型<a href="qvariant.html#canConvert" tppabs="http://pyqt4doc.appspot.com/qvariant.html#canConvert">canConvert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="typeName"></a>str QVariant.typeName (<i>self</i>)</h3>
+<p>返回存储在所述变体的类型的名称。返回的字符串描述了C + +的数据类型来存储数据：例如， “<a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a>“，”<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>“或”<a href="qvariant.html#QVariantList-typedef" tppabs="http://pyqt4doc.appspot.com/qvariant.html#QVariantList-typedef">QVariantList</a>“一个无效的变量返回0 。</p>
+
+
+<h3 class="fn">
+<a name="typeToName"></a>str QVariant.typeToName (<a href="index.htm#Type-enum" tppabs="http://pyqt4doc.appspot.com/qtcore.html#Type-enum">Type</a> <i>type</i>)</h3>
+<p>存储类型的枚举表示转换，<i>typ</i>，其字符串表示形式。</p>
+<p>返回一个空指针的类型是<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">QVariant.Invalid</a>或不存在。</p>
+
+
+<h3 class="fn">
+<a name="userType"></a>int QVariant.userType (<i>self</i>)</h3>
+<p>返回存储在变量值的存储类型。对于非用户类型，这是相同的<a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ） 。</p>
+<p><b>See also</b> <a href="qvariant.html#type" tppabs="http://pyqt4doc.appspot.com/qvariant.html#type">type</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="__eq__"></a>bool QVariant.__eq__ (<i>self</i>, QVariant <i>v</i>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QVariant.__ne__ (<i>self</i>, QVariant <i>v</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

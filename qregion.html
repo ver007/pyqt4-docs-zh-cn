@@ -1,0 +1,469 @@
+﻿<html>
+<head>
+<title>QRegion Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QRegion Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QRegion类指定一个画家的剪辑区域。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qregion.html#RegionType-enum" tppabs="http://pyqt4doc.appspot.com/qregion.html#RegionType-enum">RegionType</a></b> { Rectangle, Ellipse }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qregion.html#QRegion" tppabs="http://pyqt4doc.appspot.com/qregion.html#QRegion">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qregion.html#QRegion-2" tppabs="http://pyqt4doc.appspot.com/qregion.html#QRegion-2">__init__</a></b> (<i>self</i>, int <i>x</i>, int <i>y</i>, int <i>w</i>, int <i>h</i>, RegionType <i>type</i> = QRegion.Rectangle)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qregion.html#QRegion-3" tppabs="http://pyqt4doc.appspot.com/qregion.html#QRegion-3">__init__</a></b> (<i>self</i>, QRect <i>r</i>, RegionType <i>type</i> = QRegion.Rectangle)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qregion.html#QRegion-4" tppabs="http://pyqt4doc.appspot.com/qregion.html#QRegion-4">__init__</a></b> (<i>self</i>, QPolygon <i>a</i>, Qt.FillRule <i>fillRule</i> = Qt.OddEvenFill)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qregion.html#QRegion-5" tppabs="http://pyqt4doc.appspot.com/qregion.html#QRegion-5">__init__</a></b> (<i>self</i>, QBitmap <i>bitmap</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qregion.html#QRegion-6" tppabs="http://pyqt4doc.appspot.com/qregion.html#QRegion-6">__init__</a></b> (<i>self</i>, QRegion <i>region</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qregion.html#QRegion-7" tppabs="http://pyqt4doc.appspot.com/qregion.html#QRegion-7">__init__</a></b> (<i>self</i>, QVariant <i>variant</i>)</li>
+<li>
+<div class="fn"></div>QRect <b><a href="qregion.html#boundingRect" tppabs="http://pyqt4doc.appspot.com/qregion.html#boundingRect">boundingRect</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qregion.html#contains" tppabs="http://pyqt4doc.appspot.com/qregion.html#contains">contains</a></b> (<i>self</i>, QPoint <i>p</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qregion.html#contains-2" tppabs="http://pyqt4doc.appspot.com/qregion.html#contains-2">contains</a></b> (<i>self</i>, QRect <i>r</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#eor" tppabs="http://pyqt4doc.appspot.com/qregion.html#eor">eor</a></b> (<i>self</i>, QRegion <i>r</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#intersect" tppabs="http://pyqt4doc.appspot.com/qregion.html#intersect">intersect</a></b> (<i>self</i>, QRegion <i>r</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#intersected" tppabs="http://pyqt4doc.appspot.com/qregion.html#intersected">intersected</a></b> (<i>self</i>, QRegion <i>r</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#intersected-2" tppabs="http://pyqt4doc.appspot.com/qregion.html#intersected-2">intersected</a></b> (<i>self</i>, QRect <i>r</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qregion.html#intersects" tppabs="http://pyqt4doc.appspot.com/qregion.html#intersects">intersects</a></b> (<i>self</i>, QRegion <i>r</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qregion.html#intersects-2" tppabs="http://pyqt4doc.appspot.com/qregion.html#intersects-2">intersects</a></b> (<i>self</i>, QRect <i>r</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qregion.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qregion.html#isEmpty">isEmpty</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qregion.html#numRects" tppabs="http://pyqt4doc.appspot.com/qregion.html#numRects">numRects</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qregion.html#rectCount" tppabs="http://pyqt4doc.appspot.com/qregion.html#rectCount">rectCount</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QRect <b><a href="qregion.html#rects" tppabs="http://pyqt4doc.appspot.com/qregion.html#rects">rects</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#subtract" tppabs="http://pyqt4doc.appspot.com/qregion.html#subtract">subtract</a></b> (<i>self</i>, QRegion <i>r</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#subtracted" tppabs="http://pyqt4doc.appspot.com/qregion.html#subtracted">subtracted</a></b> (<i>self</i>, QRegion <i>r</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qregion.html#swap" tppabs="http://pyqt4doc.appspot.com/qregion.html#swap">swap</a></b> (<i>self</i>, QRegion <i>other</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qregion.html#translate" tppabs="http://pyqt4doc.appspot.com/qregion.html#translate">translate</a></b> (<i>self</i>, int <i>dx</i>, int <i>dy</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qregion.html#translate-2" tppabs="http://pyqt4doc.appspot.com/qregion.html#translate-2">translate</a></b> (<i>self</i>, QPoint <i>p</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#translated" tppabs="http://pyqt4doc.appspot.com/qregion.html#translated">translated</a></b> (<i>self</i>, int <i>dx</i>, int <i>dy</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#translated-2" tppabs="http://pyqt4doc.appspot.com/qregion.html#translated-2">translated</a></b> (<i>self</i>, QPoint <i>p</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#unite" tppabs="http://pyqt4doc.appspot.com/qregion.html#unite">unite</a></b> (<i>self</i>, QRegion <i>r</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#united" tppabs="http://pyqt4doc.appspot.com/qregion.html#united">united</a></b> (<i>self</i>, QRegion <i>r</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#united-2" tppabs="http://pyqt4doc.appspot.com/qregion.html#united-2">united</a></b> (<i>self</i>, QRect <i>r</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#xored" tppabs="http://pyqt4doc.appspot.com/qregion.html#xored">xored</a></b> (<i>self</i>, QRegion <i>r</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#__add__" tppabs="http://pyqt4doc.appspot.com/qregion.html#__add__">__add__</a></b> (<i>self</i>, QRegion <i>r</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#__add__-2" tppabs="http://pyqt4doc.appspot.com/qregion.html#__add__-2">__add__</a></b> (<i>self</i>, QRect <i>r</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#__and__" tppabs="http://pyqt4doc.appspot.com/qregion.html#__and__">__and__</a></b> (<i>self</i>, QRegion <i>r</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#__and__-2" tppabs="http://pyqt4doc.appspot.com/qregion.html#__and__-2">__and__</a></b> (<i>self</i>, QRect <i>r</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qregion.html#__bool__" tppabs="http://pyqt4doc.appspot.com/qregion.html#__bool__">__bool__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qregion.html#__contains__" tppabs="http://pyqt4doc.appspot.com/qregion.html#__contains__">__contains__</a></b> (<i>self</i>, QPoint <i>p</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qregion.html#__contains__-2" tppabs="http://pyqt4doc.appspot.com/qregion.html#__contains__-2">__contains__</a></b> (<i>self</i>, QRect <i>r</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qregion.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qregion.html#__eq__">__eq__</a></b> (<i>self</i>, QRegion <i>r</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#__iadd__" tppabs="http://pyqt4doc.appspot.com/qregion.html#__iadd__">__iadd__</a></b> (<i>self</i>, QRegion <i>r</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#__iadd__-2" tppabs="http://pyqt4doc.appspot.com/qregion.html#__iadd__-2">__iadd__</a></b> (<i>self</i>, QRect <i>r</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#__iand__" tppabs="http://pyqt4doc.appspot.com/qregion.html#__iand__">__iand__</a></b> (<i>self</i>, QRegion <i>r</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#__iand__-2" tppabs="http://pyqt4doc.appspot.com/qregion.html#__iand__-2">__iand__</a></b> (<i>self</i>, QRect <i>r</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#__ior__" tppabs="http://pyqt4doc.appspot.com/qregion.html#__ior__">__ior__</a></b> (<i>self</i>, QRegion <i>r</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#__isub__" tppabs="http://pyqt4doc.appspot.com/qregion.html#__isub__">__isub__</a></b> (<i>self</i>, QRegion <i>r</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#__ixor__" tppabs="http://pyqt4doc.appspot.com/qregion.html#__ixor__">__ixor__</a></b> (<i>self</i>, QRegion <i>r</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#__mul__" tppabs="http://pyqt4doc.appspot.com/qregion.html#__mul__">__mul__</a></b> (<i>self</i>, QMatrix <i>m</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#__mul__-2" tppabs="http://pyqt4doc.appspot.com/qregion.html#__mul__-2">__mul__</a></b> (<i>self</i>, QTransform <i>m</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qregion.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qregion.html#__ne__">__ne__</a></b> (<i>self</i>, QRegion <i>r</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#__or__" tppabs="http://pyqt4doc.appspot.com/qregion.html#__or__">__or__</a></b> (<i>self</i>, QRegion <i>r</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#__sub__" tppabs="http://pyqt4doc.appspot.com/qregion.html#__sub__">__sub__</a></b> (<i>self</i>, QRegion <i>r</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qregion.html#__xor__" tppabs="http://pyqt4doc.appspot.com/qregion.html#__xor__">__xor__</a></b> (<i>self</i>, QRegion <i>r</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QRegion类指定一个画家的剪辑区域。</p>
+<p>QRegion一起使用<a href="qpainter.html#setClipRegion" tppabs="http://pyqt4doc.appspot.com/qpainter.html#setClipRegion">QPainter.setClipRegion</a>（ ），以限制油漆区，以什么需要上漆。还有一个<a href="qwidget.html#repaint" tppabs="http://pyqt4doc.appspot.com/qwidget.html#repaint">QWidget.repaint</a>（ ）函数，它接受一个QRegion参数。 QRegion对于减少屏幕区域由一个重绘更新量的最佳工具。</p>
+<p>这个类是不适合于构建形状呈现，尤其是作为轮廓。使用<a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a>创建路径和形状与使用<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>。</p>
+<p>QRegion是<a href="index.htm#implicitly-shared" tppabs="http://pyqt4doc.appspot.com/implicit-sharing.html#implicitly-shared">implicitly shared</a>类。</p>
+<a id="creating-and-using-regions" name="creating-and-using-regions"></a>
+<h3>Creating and Using Regions</h3>
+<p>一个区域可以由一个矩形，椭圆形，多边形或一个位图被创建。复杂区域可以通过结合简单的使用区域来创建<a href="qregion.html#united" tppabs="http://pyqt4doc.appspot.com/qregion.html#united">united</a>（ ）<a href="qregion.html#intersected" tppabs="http://pyqt4doc.appspot.com/qregion.html#intersected">intersected</a>（ ）<a href="qregion.html#subtracted" tppabs="http://pyqt4doc.appspot.com/qregion.html#subtracted">subtracted</a>（） ，或<a href="qregion.html#xored" tppabs="http://pyqt4doc.appspot.com/qregion.html#xored">xored</a>（） （异或） 。您可以使用移动区域<a href="qregion.html#translate" tppabs="http://pyqt4doc.appspot.com/qregion.html#translate">translate</a>（ ） 。</p>
+<p>您可以测试是否一个区域<a href="qregion.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qregion.html#isEmpty">isEmpty</a>（） ，或者如果它<a href="qregion.html#contains" tppabs="http://pyqt4doc.appspot.com/qregion.html#contains">contains</a>（ ）一<a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> or <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a>。该边框可以找到<a href="qregion.html#boundingRect" tppabs="http://pyqt4doc.appspot.com/qregion.html#boundingRect">boundingRect</a>（ ） 。</p>
+<p>该功能<a href="qregion.html#rects" tppabs="http://pyqt4doc.appspot.com/qregion.html#rects">rects</a>（）给出的区域的分解成矩形。</p>
+<p>使用复杂的区域的例子：</p>
+<pre class="cpp">
+ <span class="type">void</span> MyWidget<span class="operator">.</span>paintEvent(<span class="type"><a href="qpaintevent.html" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html">QPaintEvent</a></span> <span class="operator">*</span>)
+ {
+     <span class="type">QRegion</span> r1(<span class="type"><a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a></span>(<span class="number">100</span><span class="operator">,</span> <span class="number">100</span><span class="operator">,</span> <span class="number">200</span><span class="operator">,</span> <span class="number">80</span>)<span class="operator">,</span>    <span class="comment">// r1: elliptic region</span>
+                <span class="type">QRegion</span><span class="operator">.</span>Ellipse);
+     <span class="type">QRegion</span> r2(<span class="type"><a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a></span>(<span class="number">100</span><span class="operator">,</span> <span class="number">120</span><span class="operator">,</span> <span class="number">90</span><span class="operator">,</span> <span class="number">30</span>));    <span class="comment">// r2: rectangular region</span>
+     <span class="type">QRegion</span> r3 <span class="operator">=</span> r1<span class="operator">.</span>intersected(r2);        <span class="comment">// r3: intersection</span>
+
+     <span class="type"><a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a></span> painter(<span class="keyword">this</span>);
+     painter<span class="operator">.</span>setClipRegion(r3);
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>                                     <span class="comment">// paint clipped graphics</span>
+ }
+</pre>
+<a id="additional-license-information" name="additional-license-information"></a>
+<h3>Additional License Information</h3>
+<p>在嵌入式Linux ， Windows CE和X11平台上，这个类的部分依靠以以下授权协议获得的代码：</p>
+<div class="LegaleseLeft">
+<p>版权所有（c ）1987 X联盟</p>
+<p>特此免费授予的，对任何获得本软件副本及相关文档文件（ “软件” ） ，以处理本软件不受任何限制，包括但不限于使用权，复制，修改，合并，发布，分发，再许可和/或销售软件副本，并允许他人为之软体家具是这样做的，须符合下列条件：</p>
+<p>上述版权声明和本许可声明应包含在所有的副本或实质性部分的软件。</p>
+<p>本软件按“原样”，没有任何形式的担保，明示或默示的担保，包括但不限于适销性，适用于特定用途和非侵权的保证。在任何情况下X联盟承担任何索赔，损害赔偿或其他责任，无论是合同行为，侵权行为或其他原因所产生的，运出或与本软件或使用，或软件中的其他交易。</p>
+<p>除本通知所载， X联盟的名称不得用于广告或其他方式来促进销售，使用或本软件中的其他交易未经X联盟事先书面授权。</p>
+</div>
+<br>
+<div class="LegaleseLeft">
+<p>版权所有1987年由数字设备公司，梅纳德，马萨诸塞。</p>
+<p>保留所有权利</p>
+<p>许可使用，复制，修改和分发本软件及其文档的任何目的免费特此授予，前提是上述版权声明出现在所有副本中，并且两种版权声明和本许可声明出现在支持文档，并且在广告或宣传有关软件分发没有具体的不能用数字的名称，事先书面许可。</p>
+<p>DIGITAL声明不提供本软件有关，包括对适销性和适用性的所有默示保证，在任何情况下数字都不对任何特殊，间接或后果性损害或任何损害因无法使用，数据丢失或利润，无论是在动作的合同，疏忽或其它侵权行为，所产生的或与本软件的使用或性能。</p>
+</div>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="RegionType-enum"></a>QRegion.RegionType</h3>
+<p>指定区域的要创建的形状。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QRegion.Rectangle</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该区域复盖了整个矩形。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QRegion.Ellipse</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该区域是在矩形内的椭圆形。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QRegion"></a>QRegion.__init__ (<i>self</i>)</h3>
+<p>构造一个空区域。</p>
+<p><b>See also</b> <a href="qregion.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qregion.html#isEmpty">isEmpty</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QRegion-2"></a>QRegion.__init__ (<i>self</i>, int <i>x</i>, int <i>y</i>, int <i>w</i>, int <i>h</i>, <a href="qregion.html#RegionType-enum" tppabs="http://pyqt4doc.appspot.com/qregion.html#RegionType-enum">RegionType</a> <i>type</i> = QRegion.Rectangle)</h3>
+<p>构造一个矩形或椭圆形区域。</p>
+<p>If <i>t</i> is <tt>Rectangle</tt>的区域是填充矩形（<i>x</i>，<i>y</i>，<i>w</i>，<i>h</i>） 。如果<i>t</i> is
+<tt>Ellipse</tt>，该地区是充满椭圆与中心（<i>x</i>+<i>w</i>/ 2，<i>y</i>+<i>h</i>/ 2）和尺寸（<i>w</i>，<i>h</i>） 。</p>
+
+
+<h3 class="fn">
+<a name="QRegion-3"></a>QRegion.__init__ (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>r</i>, <a href="qregion.html#RegionType-enum" tppabs="http://pyqt4doc.appspot.com/qregion.html#RegionType-enum">RegionType</a> <i>type</i> = QRegion.Rectangle)</h3>
+<p>从点阵列构造一个多边形区域<i>a</i>由指定的填充规则<i>fillRule</i>。</p>
+<p>If <i>fillRule</i> is <a href="qt.html#FillRule-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#FillRule-enum">Qt.WindingFill</a>，多边形区域是使用捲绕算法中定义，如果是<a href="qt.html#FillRule-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#FillRule-enum">Qt.OddEvenFill</a>，奇偶填充算法被使用。</p>
+<p><b>Warning:</b>这个构造函数可以用来创建复杂的地区使用时，将减缓画。</p>
+
+
+<h3 class="fn">
+<a name="QRegion-4"></a>QRegion.__init__ (<i>self</i>, <a href="qpolygon.html" tppabs="http://pyqt4doc.appspot.com/qpolygon.html">QPolygon</a> <i>a</i>, <a href="qt.html#FillRule-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#FillRule-enum">Qt.FillRule</a> <i>fillRule</i> = Qt.OddEvenFill)</h3>
+<h3 class="fn">
+<a name="QRegion-5"></a>QRegion.__init__ (<i>self</i>, <a href="qbitmap.html" tppabs="http://pyqt4doc.appspot.com/qbitmap.html">QBitmap</a> <i>bitmap</i>)</h3>
+<p>构造一个新的区域，它等于区域<i>r</i>。</p>
+
+
+<h3 class="fn">
+<a name="QRegion-6"></a>QRegion.__init__ (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>region</i>)</h3>
+<p>从位图构造一个区域<i>bm</i>。</p>
+<p>所得到的区域由以位图的像素的<i>bm</i>是<a href="qt.html#GlobalColor-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#GlobalColor-enum">Qt.color1</a>，好像每个像素是一个1×1的矩形。</p>
+<p>这个构造函数可以创建复杂的地区使用时，将减缓画。请注意，绘图蒙面像素映射可以做到更快使用<a href="qpixmap.html#setMask" tppabs="http://pyqt4doc.appspot.com/qpixmap.html#setMask">QPixmap.setMask</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QRegion-7"></a>QRegion.__init__ (<i>self</i>, QVariant <i>variant</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>创建基于rectange区域<i>r</i>与区域类型<i>t</i>。</p>
+<p>如果矩形是无效的空区域将被创建。</p>
+<p><b>See also</b> <a href="qregion.html#RegionType-enum" tppabs="http://pyqt4doc.appspot.com/qregion.html#RegionType-enum">QRegion.RegionType</a>。</p>
+
+
+<h3 class="fn">
+<a name="boundingRect"></a><a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> QRegion.boundingRect (<i>self</i>)</h3>
+<p>返回此区域的边界矩形。一个空的区域给出了一个矩形，它是<a href="qrect.html#isNull" tppabs="http://pyqt4doc.appspot.com/qrect.html#isNull">QRect.isNull</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="contains"></a>bool QRegion.contains (<i>self</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>p</i>)</h3>
+<p>如果该区域包含该点，则返回True<i>p</i>否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="contains-2"></a>bool QRegion.contains (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>r</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>如果该区域的矩形重叠，则返回True<i>r</i>否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="eor"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.eor (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>r</i>)</h3>
+<h3 class="fn">
+<a name="intersect"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.intersect (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>r</i>)</h3>
+<h3 class="fn">
+<a name="intersected"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.intersected (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>r</i>)</h3>
+<p>返回作为此区域的交集和地区<i>r</i>。</p>
+<p class="centerAlign"><img alt="Region Intersection" src="images/rintersect.png"></p>
+<p>该图显示了两个椭圆区域的交界处。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qregion.html#subtracted" tppabs="http://pyqt4doc.appspot.com/qregion.html#subtracted">subtracted</a>（ ）<a href="qregion.html#united" tppabs="http://pyqt4doc.appspot.com/qregion.html#united">united</a>（）和<a href="qregion.html#xored" tppabs="http://pyqt4doc.appspot.com/qregion.html#xored">xored</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="intersected-2"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.intersected (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>r</i>)</h3>
+<p>返回作为此区域的交集和给定的区域<i>rect</i>。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qregion.html#subtracted" tppabs="http://pyqt4doc.appspot.com/qregion.html#subtracted">subtracted</a>（ ）<a href="qregion.html#united" tppabs="http://pyqt4doc.appspot.com/qregion.html#united">united</a>（）和<a href="qregion.html#xored" tppabs="http://pyqt4doc.appspot.com/qregion.html#xored">xored</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="intersects"></a>bool QRegion.intersects (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>r</i>)</h3>
+<p>如果这个区域相交，则返回True<i>region</i>，否则返回False 。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="intersects-2"></a>bool QRegion.intersects (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>r</i>)</h3>
+<p>如果这个区域相交，则返回True<i>rect</i>，否则返回False 。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="isEmpty"></a>bool QRegion.isEmpty (<i>self</i>)</h3>
+<p>返回True如果该区域为空，否则返回False 。空白区是一个不包含任何点的区域中。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a></span> r1(<span class="number">10</span><span class="operator">,</span> <span class="number">10</span><span class="operator">,</span> <span class="number">20</span><span class="operator">,</span> <span class="number">20</span>);
+ r1<span class="operator">.</span>isEmpty();               <span class="comment">// false</span>
+
+ <span class="type"><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a></span> r3;
+ r3<span class="operator">.</span>isEmpty();               <span class="comment">// true</span>
+
+ <span class="type"><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a></span> r2(<span class="number">40</span><span class="operator">,</span> <span class="number">40</span><span class="operator">,</span> <span class="number">20</span><span class="operator">,</span> <span class="number">20</span>);
+ r3 <span class="operator">=</span> r1<span class="operator">.</span><a href="qregion.html#intersected" tppabs="http://pyqt4doc.appspot.com/qregion.html#intersected">intersected</a>(r2);    <span class="comment">// r3: intersection of r1 and r2</span>
+ r3<span class="operator">.</span>isEmpty();               <span class="comment">// true</span>
+
+ r3 <span class="operator">=</span> r1<span class="operator">.</span><a href="qregion.html#united" tppabs="http://pyqt4doc.appspot.com/qregion.html#united">united</a>(r2);         <span class="comment">// r3: union of r1 and r2</span>
+ r3<span class="operator">.</span>isEmpty();               <span class="comment">// false</span>
+</pre>
+
+
+<h3 class="fn">
+<a name="numRects"></a>int QRegion.numRects (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="rectCount"></a>int QRegion.rectCount (<i>self</i>)</h3>
+<p>返回将在返回矩形数<a href="qregion.html#rects" tppabs="http://pyqt4doc.appspot.com/qregion.html#rects">rects</a>（ ） 。</p>
+<p>此功能被引入Qt的4.6 。</p>
+
+
+<h3 class="fn">
+<a name="rects"></a>list-of-QRect QRegion.rects (<i>self</i>)</h3>
+<p>返回非重叠的矩形组成区域的数组。</p>
+<p>所有矩形的并集等于原来的区域。</p>
+<p><b>See also</b> <a href="qregion.html#setRects" tppabs="http://pyqt4doc.appspot.com/qregion.html#setRects">setRects</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="subtract"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.subtract (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>r</i>)</h3>
+<h3 class="fn">
+<a name="subtracted"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.subtracted (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>r</i>)</h3>
+<p>返回其是区域<i>r</i>减去这一地区。</p>
+<p class="centerAlign"><img alt="Region Subtraction" src="images/rsubtract.png"></p>
+<p>图中示出了结果，当在右侧的椭圆是从左侧的椭圆（减去<tt>left -
+right</tt>） 。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qregion.html#intersected" tppabs="http://pyqt4doc.appspot.com/qregion.html#intersected">intersected</a>（ ）<a href="qregion.html#united" tppabs="http://pyqt4doc.appspot.com/qregion.html#united">united</a>（）和<a href="qregion.html#xored" tppabs="http://pyqt4doc.appspot.com/qregion.html#xored">xored</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="swap"></a>QRegion.swap (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>other</i>)</h3>
+<p>交换区<i>other</i>与这一地区。这个操作是非常快的，而且永远不会。</p>
+<p>此功能被引入Qt的4.8 。</p>
+
+
+<h3 class="fn">
+<a name="translate"></a>QRegion.translate (<i>self</i>, int <i>dx</i>, int <i>dy</i>)</h3>
+<p>平移（移动）的区域<i>dx</i>沿X轴和<i>dy</i>沿着Y轴。</p>
+
+
+<h3 class="fn">
+<a name="translate-2"></a>QRegion.translate (<i>self</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>p</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>转译区<i>point</i><i>.x()</i>沿x轴和<i>point</i><i>.y()</i>沿着y轴，相对于当前位置。正值移动的区域向右和向下。</p>
+<p>转换为给定的<i>point</i>。</p>
+
+
+<h3 class="fn">
+<a name="translated"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.translated (<i>self</i>, int <i>dx</i>, int <i>dy</i>)</h3>
+<p>返回区域的一个副本被翻译<i>dx</i>沿x轴和<i>dy</i>沿着y轴，相对于当前位置。正值移动的区域向右和向下。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qregion.html#translate" tppabs="http://pyqt4doc.appspot.com/qregion.html#translate">translate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="translated-2"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.translated (<i>self</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>p</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回regtion的副本翻译<i>p</i><i>.x()</i>沿x轴和<i>p</i><i>.y()</i>沿着y轴，相对于当前位置。正值移动矩形向右和向下。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qregion.html#translate" tppabs="http://pyqt4doc.appspot.com/qregion.html#translate">translate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="unite"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.unite (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>r</i>)</h3>
+<h3 class="fn">
+<a name="united"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.united (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>r</i>)</h3>
+<p>返回作为此区域的和工会的区域<i>r</i>。</p>
+<p class="centerAlign"><img alt="Region Union" src="images/runion.png"></p>
+<p>该图显示了两个椭圆区域的联合。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qregion.html#intersected" tppabs="http://pyqt4doc.appspot.com/qregion.html#intersected">intersected</a>（ ）<a href="qregion.html#subtracted" tppabs="http://pyqt4doc.appspot.com/qregion.html#subtracted">subtracted</a>（）和<a href="qregion.html#xored" tppabs="http://pyqt4doc.appspot.com/qregion.html#xored">xored</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="united-2"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.united (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>r</i>)</h3>
+<p>返回作为此区域的和工会给定一个区域<i>rect</i>。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qregion.html#intersected" tppabs="http://pyqt4doc.appspot.com/qregion.html#intersected">intersected</a>（ ）<a href="qregion.html#subtracted" tppabs="http://pyqt4doc.appspot.com/qregion.html#subtracted">subtracted</a>（）和<a href="qregion.html#xored" tppabs="http://pyqt4doc.appspot.com/qregion.html#xored">xored</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="xored"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.xored (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>r</i>)</h3>
+<p>返回作为此区域的异或（ XOR）和一个区<i>r</i>。</p>
+<p class="centerAlign"><img alt="Region XORed" src="images/rxor.png"></p>
+<p>该图显示了专用的两个椭圆区域或。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qregion.html#intersected" tppabs="http://pyqt4doc.appspot.com/qregion.html#intersected">intersected</a>（ ）<a href="qregion.html#united" tppabs="http://pyqt4doc.appspot.com/qregion.html#united">united</a>（）和<a href="qregion.html#subtracted" tppabs="http://pyqt4doc.appspot.com/qregion.html#subtracted">subtracted</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="__add__"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.__add__ (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>r</i>)</h3>
+<h3 class="fn">
+<a name="__add__-2"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.__add__ (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>r</i>)</h3>
+<h3 class="fn">
+<a name="__and__"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.__and__ (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>r</i>)</h3>
+<h3 class="fn">
+<a name="__and__-2"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.__and__ (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>r</i>)</h3>
+<h3 class="fn">
+<a name="__bool__"></a>int QRegion.__bool__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="__contains__"></a>int QRegion.__contains__ (<i>self</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>p</i>)</h3>
+<h3 class="fn">
+<a name="__contains__-2"></a>int QRegion.__contains__ (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>r</i>)</h3>
+<h3 class="fn">
+<a name="__eq__"></a>bool QRegion.__eq__ (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>r</i>)</h3>
+<h3 class="fn">
+<a name="__iadd__"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.__iadd__ (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>r</i>)</h3>
+<h3 class="fn">
+<a name="__iadd__-2"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.__iadd__ (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>r</i>)</h3>
+<h3 class="fn">
+<a name="__iand__"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.__iand__ (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>r</i>)</h3>
+<h3 class="fn">
+<a name="__iand__-2"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.__iand__ (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>r</i>)</h3>
+<h3 class="fn">
+<a name="__ior__"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.__ior__ (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>r</i>)</h3>
+<h3 class="fn">
+<a name="__isub__"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.__isub__ (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>r</i>)</h3>
+<h3 class="fn">
+<a name="__ixor__"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.__ixor__ (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>r</i>)</h3>
+<h3 class="fn">
+<a name="__mul__"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.__mul__ (<i>self</i>, <a href="qmatrix.html" tppabs="http://pyqt4doc.appspot.com/qmatrix.html">QMatrix</a> <i>m</i>)</h3>
+<h3 class="fn">
+<a name="__mul__-2"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.__mul__ (<i>self</i>, <a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> <i>m</i>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QRegion.__ne__ (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>r</i>)</h3>
+<h3 class="fn">
+<a name="__or__"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.__or__ (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>r</i>)</h3>
+<h3 class="fn">
+<a name="__sub__"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.__sub__ (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>r</i>)</h3>
+<h3 class="fn">
+<a name="__xor__"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QRegion.__xor__ (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> <i>r</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

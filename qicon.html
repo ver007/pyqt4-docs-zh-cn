@@ -1,0 +1,398 @@
+﻿<html>
+<head>
+<title>QIcon Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QIcon Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QIcon则类提供了在不同的模式和状态可缩放图标。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qicon.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qicon.html#Mode-enum">Mode</a></b> { Normal, Disabled, Active, Selected }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qicon.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qicon.html#State-enum">State</a></b> { On, Off }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qicon.html#QIcon" tppabs="http://pyqt4doc.appspot.com/qicon.html#QIcon">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qicon.html#QIcon-2" tppabs="http://pyqt4doc.appspot.com/qicon.html#QIcon-2">__init__</a></b> (<i>self</i>, QPixmap <i>pixmap</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qicon.html#QIcon-3" tppabs="http://pyqt4doc.appspot.com/qicon.html#QIcon-3">__init__</a></b> (<i>self</i>, QIcon <i>other</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qicon.html#QIcon-4" tppabs="http://pyqt4doc.appspot.com/qicon.html#QIcon-4">__init__</a></b> (<i>self</i>, QString <i>fileName</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qicon.html#QIcon-5" tppabs="http://pyqt4doc.appspot.com/qicon.html#QIcon-5">__init__</a></b> (<i>self</i>, QIconEngine <i>engine</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qicon.html#QIcon-6" tppabs="http://pyqt4doc.appspot.com/qicon.html#QIcon-6">__init__</a></b> (<i>self</i>, QIconEngineV2 <i>engine</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qicon.html#QIcon-7" tppabs="http://pyqt4doc.appspot.com/qicon.html#QIcon-7">__init__</a></b> (<i>self</i>, QVariant <i>variant</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qicon.html#actualSize" tppabs="http://pyqt4doc.appspot.com/qicon.html#actualSize">actualSize</a></b> (<i>self</i>, QSize <i>size</i>, Mode <i>mode</i> = QIcon.Normal, State <i>state</i> = QIcon.Off)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qicon.html#addFile" tppabs="http://pyqt4doc.appspot.com/qicon.html#addFile">addFile</a></b> (<i>self</i>, QString <i>fileName</i>, QSize <i>size</i> = QSize(), Mode <i>mode</i> = QIcon.Normal, State <i>state</i> = QIcon.Off)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qicon.html#addPixmap" tppabs="http://pyqt4doc.appspot.com/qicon.html#addPixmap">addPixmap</a></b> (<i>self</i>, QPixmap <i>pixmap</i>, Mode <i>mode</i> = QIcon.Normal, State <i>state</i> = QIcon.Off)</li>
+<li>
+<div class="fn"></div>list-of-QSize <b><a href="qicon.html#availableSizes" tppabs="http://pyqt4doc.appspot.com/qicon.html#availableSizes">availableSizes</a></b> (<i>self</i>, Mode <i>mode</i> = QIcon.Normal, State <i>state</i> = QIcon.Off)</li>
+<li>
+<div class="fn"></div>int <b><a href="qicon.html#cacheKey" tppabs="http://pyqt4doc.appspot.com/qicon.html#cacheKey">cacheKey</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qicon.html#isDetached" tppabs="http://pyqt4doc.appspot.com/qicon.html#isDetached">isDetached</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qicon.html#isNull" tppabs="http://pyqt4doc.appspot.com/qicon.html#isNull">isNull</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qicon.html#name" tppabs="http://pyqt4doc.appspot.com/qicon.html#name">name</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qicon.html#paint" tppabs="http://pyqt4doc.appspot.com/qicon.html#paint">paint</a></b> (<i>self</i>, QPainter <i>painter</i>, QRect <i>rect</i>, Qt.Alignment <i>alignment</i> = Qt.AlignCenter, Mode <i>mode</i> = QIcon.Normal, State <i>state</i> = QIcon.Off)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qicon.html#paint-2" tppabs="http://pyqt4doc.appspot.com/qicon.html#paint-2">paint</a></b> (<i>self</i>, QPainter <i>painter</i>, int <i>x</i>, int <i>y</i>, int <i>w</i>, int <i>h</i>, Qt.Alignment <i>alignment</i> = Qt.AlignCenter, Mode <i>mode</i> = QIcon.Normal, State <i>state</i> = QIcon.Off)</li>
+<li>
+<div class="fn"></div>QPixmap <b><a href="qicon.html#pixmap" tppabs="http://pyqt4doc.appspot.com/qicon.html#pixmap">pixmap</a></b> (<i>self</i>, QSize <i>size</i>, Mode <i>mode</i> = QIcon.Normal, State <i>state</i> = QIcon.Off)</li>
+<li>
+<div class="fn"></div>QPixmap <b><a href="qicon.html#pixmap-2" tppabs="http://pyqt4doc.appspot.com/qicon.html#pixmap-2">pixmap</a></b> (<i>self</i>, int <i>w</i>, int <i>h</i>, Mode <i>mode</i> = QIcon.Normal, State <i>state</i> = QIcon.Off)</li>
+<li>
+<div class="fn"></div>QPixmap <b><a href="qicon.html#pixmap-3" tppabs="http://pyqt4doc.appspot.com/qicon.html#pixmap-3">pixmap</a></b> (<i>self</i>, int <i>extent</i>, Mode <i>mode</i> = QIcon.Normal, State <i>state</i> = QIcon.Off)</li>
+<li>
+<div class="fn"></div>int <b><a href="qicon.html#serialNumber" tppabs="http://pyqt4doc.appspot.com/qicon.html#serialNumber">serialNumber</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qicon.html#swap" tppabs="http://pyqt4doc.appspot.com/qicon.html#swap">swap</a></b> (<i>self</i>, QIcon <i>other</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QIcon <b><a href="qicon.html#fromTheme" tppabs="http://pyqt4doc.appspot.com/qicon.html#fromTheme">fromTheme</a></b> (QString <i>name</i>, QIcon <i>fallback</i> = QIcon())</li>
+<li>
+<div class="fn"></div>bool <b><a href="qicon.html#hasThemeIcon" tppabs="http://pyqt4doc.appspot.com/qicon.html#hasThemeIcon">hasThemeIcon</a></b> (QString <i>name</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qicon.html#setThemeName" tppabs="http://pyqt4doc.appspot.com/qicon.html#setThemeName">setThemeName</a></b> (QString <i>path</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qicon.html#setThemeSearchPaths" tppabs="http://pyqt4doc.appspot.com/qicon.html#setThemeSearchPaths">setThemeSearchPaths</a></b> (QStringList <i>searchpath</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qicon.html#themeName" tppabs="http://pyqt4doc.appspot.com/qicon.html#themeName">themeName</a></b> ()</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qicon.html#themeSearchPaths" tppabs="http://pyqt4doc.appspot.com/qicon.html#themeSearchPaths">themeSearchPaths</a></b> ()</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QIcon则类提供了在不同的模式和状态可缩放图标。</p>
+<p>一个QIcon则可以生成一组像素图的它被赋予较小的，更大的，积极的，和残疾人像素图。这样的像素图所使用的Qt控件显示代表一个特定动作的图标。</p>
+<p>最简单的使用QIcon则是创建一个从<a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a>文件或资源，然后使用它，可以让Qt的制定所有必需的图标样式和大小。例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qtoolbutton.html" tppabs="http://pyqt4doc.appspot.com/qtoolbutton.html">QToolButton</a></span> <span class="operator">*</span>button <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qtoolbutton.html" tppabs="http://pyqt4doc.appspot.com/qtoolbutton.html">QToolButton</a></span>;
+ button<span class="operator">-</span><span class="operator">&gt;</span>setIcon(<span class="type">QIcon</span>(<span class="string">"open.xpm"</span>));
+</pre>
+<p>要撤消QIcon则，只需在其位置空图标：</p>
+<pre class="cpp">
+ button<span class="operator">-</span><span class="operator">&gt;</span>setIcon(<span class="type">QIcon</span>());
+</pre>
+<p>使用<a href="qimagereader.html#supportedImageFormats" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#supportedImageFormats">QImageReader.supportedImageFormats</a>（）和<a href="qimagewriter.html#supportedImageFormats" tppabs="http://pyqt4doc.appspot.com/qimagewriter.html#supportedImageFormats">QImageWriter.supportedImageFormats</a>（ ）函数来获取支持的文件格式的完整列表。</p>
+<p>当您使用像素图（撷取像素图<a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a>，模式，状态） ，且没有像素映射为这个给定的大小，模式和状态已经被添加以<a href="qicon.html#addFile" tppabs="http://pyqt4doc.appspot.com/qicon.html#addFile">addFile</a>（）或<a href="qicon.html#addPixmap" tppabs="http://pyqt4doc.appspot.com/qicon.html#addPixmap">addPixmap</a>（），然后QIcon则将会产生1的飞行。该像素图的产生发生在一个<a href="qiconenginev2.html" tppabs="http://pyqt4doc.appspot.com/qiconenginev2.html">QIconEngineV2</a>。默认引擎秤像素映射下来，如果需要，但再也没有起来，并使用当前样式来计算伤残外观。通过使用自定义图标的引擎，您可以自定义生成图标的每一个方面。同<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qiconenginepluginv2.html">QIconEnginePluginV2</a>它可以注册不同的图标引擎不同的文件后缀，从而有可能为第三方提供额外的图标引擎包括那些使用Qt 。</p>
+<p><b>Note:</b>由于Qt 4.2中，支持SVG图标引擎包括在内。</p>
+<a id="making-classes-that-use-qicon" name="making-classes-that-use-qicon"></a>
+<h3>Making Classes that Use QIcon</h3>
+<p>如果你自己写的小工具，有一个选项来设置一个小像素映射，可以考虑允许QIcon则到该像素图进行设置。 Qt的类<a href="qtoolbutton.html" tppabs="http://pyqt4doc.appspot.com/qtoolbutton.html">QToolButton</a>是这样的一个部件的一个例子。</p>
+<p>提供一种方法来设置QIcon则，当你绘制图标，选择任何像素图是适合你的部件的当前状态。例如：</p>
+<pre class="cpp">
+ <span class="type">void</span> MyWidget<span class="operator">.</span>drawIcon(<span class="type"><a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a></span> <span class="operator">*</span>painter<span class="operator">,</span> <span class="type"><a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a></span> pos)
+ {
+     <span class="type"><a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a></span> pixmap <span class="operator">=</span> icon<span class="operator">.</span>pixmap(<span class="type"><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a></span>(<span class="number">22</span><span class="operator">,</span> <span class="number">22</span>)<span class="operator">,</span>
+                                    isEnabled() <span class="operator">?</span> <span class="type">QIcon</span><span class="operator">.</span>Normal
+                                                : <span class="type">QIcon</span><span class="operator">.</span>Disabled<span class="operator">,</span>
+                                    isChecked() <span class="operator">?</span> <span class="type">QIcon</span><span class="operator">.</span>On
+                                                : <span class="type">QIcon</span><span class="operator">.</span>Off);
+     painter<span class="operator">-</span><span class="operator">&gt;</span>drawPixmap(pos<span class="operator">,</span> pixmap);
+ }
+</pre>
+<p>您可能也使的使用<tt>Active</tt>模式，或许让你的widget<tt>Active</tt>当鼠标悬停在小部件（见<a href="qwidget.html#enterEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#enterEvent">QWidget.enterEvent</a>（ ） ） ，同时按下鼠标时以待释放，这将激活该功能，或当它是当前选定的项目。如果小部件可以切换，在“开”模式可能被用来绘制不同的图标。</p>
+<p class="centerAlign"><img alt="QIcon" src="images/icon.png"></p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="Mode-enum"></a>QIcon.Mode</h3>
+<p>该枚举类型描述了其中一个像素图的目的是要使用的模式。当前定义的模式有：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QIcon.Normal</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">显示的像素图，当用户不与图标交互的，而是由图标表示的功能是可用的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QIcon.Disabled</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">显示像素映射时由图标表示的功能不可用。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QIcon.Active</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">显示像素映射时由图标表示的功能是提供用户与交互图标，例如，移动鼠标，或单击它。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QIcon.Selected</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">显示像素映射时由图标表示该项目被选中。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="State-enum"></a>QIcon.State</h3>
+<p>该枚举描述了其中一个像素图的目的是要使用的状态。该<i>state</i>可以是：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QIcon.Off</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">显示像素图时，部件是在“关”的状态</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QIcon.On</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">显示像素图时，部件是在一个“开”状态</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QIcon"></a>QIcon.__init__ (<i>self</i>)</h3>
+<p>构造一个空的图标。</p>
+
+
+<h3 class="fn">
+<a name="QIcon-2"></a>QIcon.__init__ (<i>self</i>, <a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a> <i>pixmap</i>)</h3>
+<p>从构造一个图标<i>pixmap</i>。</p>
+
+
+<h3 class="fn">
+<a name="QIcon-3"></a>QIcon.__init__ (<i>self</i>, <a href="qicon.html" tppabs="http://pyqt4doc.appspot.com/qicon.html">QIcon</a> <i>other</i>)</h3>
+<p>构造的副本<i>other</i>。这是非常快的。</p>
+
+
+<h3 class="fn">
+<a name="QIcon-4"></a>QIcon.__init__ (<i>self</i>, QString <i>fileName</i>)</h3>
+<p>构造一个图标从文件中给定的<i>fileName</i>。该文件将被按需加载。</p>
+<p>If <i>fileName</i>包含相对路径（例如，文件名只）的相关文件，必须找到相对于运行时的工作目录。</p>
+<p>文件名可以是指在磁盘上或对应用程序的嵌入资源之一实际的文件。请参阅<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/resources.html">Resource System</a>概述有关如何嵌入在应用程序的可执行映像和其他资源文件的详细信息。</p>
+<p>使用<a href="qimagereader.html#supportedImageFormats" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#supportedImageFormats">QImageReader.supportedImageFormats</a>（）和<a href="qimagewriter.html#supportedImageFormats" tppabs="http://pyqt4doc.appspot.com/qimagewriter.html#supportedImageFormats">QImageWriter.supportedImageFormats</a>（ ）函数来获取支持的文件格式的完整列表。</p>
+
+
+<h3 class="fn">
+<a name="QIcon-5"></a>QIcon.__init__ (<i>self</i>, <a href="qiconengine.html" tppabs="http://pyqt4doc.appspot.com/qiconengine.html">QIconEngine</a> <i>engine</i>)</h3>
+<p>该<i>engine</i>说法有它的所有权转移给Qt的。</p>
+<p>创建一个具有特定图标的图标<i>engine</i>。图标采用了发动机的所有权。</p>
+
+
+<h3 class="fn">
+<a name="QIcon-6"></a>QIcon.__init__ (<i>self</i>, <a href="qiconenginev2.html" tppabs="http://pyqt4doc.appspot.com/qiconenginev2.html">QIconEngineV2</a> <i>engine</i>)</h3>
+<p>该<i>engine</i>说法有它的所有权转移给Qt的。</p>
+<p>创建一个具有特定图标的图标<i>engine</i>。图标采用了发动机的所有权。</p>
+
+
+<h3 class="fn">
+<a name="QIcon-7"></a>QIcon.__init__ (<i>self</i>, QVariant <i>variant</i>)</h3>
+<h3 class="fn">
+<a name="actualSize"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QIcon.actualSize (<i>self</i>, <a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> <i>size</i>, <a href="qicon.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qicon.html#Mode-enum">Mode</a> <i>mode</i> = QIcon.Normal, <a href="qicon.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qicon.html#State-enum">State</a> <i>state</i> = QIcon.Off)</h3>
+<p>返回图标的实际大小为所请求的<i>size</i>，<i>mode</i>和<i>state</i>。其结果可能会小于要求的，但从来没有较大。</p>
+<p><b>See also</b> <a href="qicon.html#pixmap" tppabs="http://pyqt4doc.appspot.com/qicon.html#pixmap">pixmap</a>（）和<a href="qicon.html#paint" tppabs="http://pyqt4doc.appspot.com/qicon.html#paint">paint</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addFile"></a>QIcon.addFile (<i>self</i>, QString <i>fileName</i>, <a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> <i>size</i> = QSize(), <a href="qicon.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qicon.html#Mode-enum">Mode</a> <i>mode</i> = QIcon.Normal, <a href="qicon.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qicon.html#State-enum">State</a> <i>state</i> = QIcon.Off)</h3>
+<p>增加了一个图像从文件用给定的<i>fileName</i>的图标，作为一个专业化的<i>size</i>，<i>mode</i>和<i>state</i>。该文件将被按需加载。注：自定义图标引擎可以自由地忽略额外添加的像素图。</p>
+<p>If <i>fileName</i>包含相对路径（例如，文件名只）的相关文件，必须找到相对于运行时的工作目录。</p>
+<p>文件名可以是指在磁盘上或对应用程序的嵌入资源之一实际的文件。请参阅<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/resources.html">Resource System</a>概述有关如何嵌入在应用程序的可执行映像和其他资源文件的详细信息。</p>
+<p>使用<a href="qimagereader.html#supportedImageFormats" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#supportedImageFormats">QImageReader.supportedImageFormats</a>（）和<a href="qimagewriter.html#supportedImageFormats" tppabs="http://pyqt4doc.appspot.com/qimagewriter.html#supportedImageFormats">QImageWriter.supportedImageFormats</a>（ ）函数来获取支持的文件格式的完整列表。</p>
+<p>注意：当您添加一个非空的文件名到<a href="qicon.html" tppabs="http://pyqt4doc.appspot.com/qicon.html">QIcon</a>，图标变为非空，即使该文件不存在或指向一个损坏的文件。</p>
+<p><b>See also</b> <a href="qicon.html#addPixmap" tppabs="http://pyqt4doc.appspot.com/qicon.html#addPixmap">addPixmap</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addPixmap"></a>QIcon.addPixmap (<i>self</i>, <a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a> <i>pixmap</i>, <a href="qicon.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qicon.html#Mode-enum">Mode</a> <i>mode</i> = QIcon.Normal, <a href="qicon.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qicon.html#State-enum">State</a> <i>state</i> = QIcon.Off)</h3>
+<p>添加<i>pixmap</i>的图标，作为一个专业化的<i>mode</i>和<i>state</i>。</p>
+<p>自定义图标的引擎可以自由地忽略额外添加的像素图。</p>
+<p><b>See also</b> <a href="qicon.html#addFile" tppabs="http://pyqt4doc.appspot.com/qicon.html#addFile">addFile</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="availableSizes"></a>list-of-QSize QIcon.availableSizes (<i>self</i>, <a href="qicon.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qicon.html#Mode-enum">Mode</a> <i>mode</i> = QIcon.Normal, <a href="qicon.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qicon.html#State-enum">State</a> <i>state</i> = QIcon.Off)</h3>
+<p>返回可用图标大小的列表指定<i>mode</i>和<i>state</i>。</p>
+<p>此功能被引入Qt的4.5 。</p>
+
+
+<h3 class="fn">
+<a name="cacheKey"></a>int QIcon.cacheKey (<i>self</i>)</h3>
+<p>返回一个数字，用于标识此内容<a href="qicon.html" tppabs="http://pyqt4doc.appspot.com/qicon.html">QIcon</a>对象。不同<a href="qicon.html" tppabs="http://pyqt4doc.appspot.com/qicon.html">QIcon</a>对象可以具有相同的密钥，如果它们指的是相同的内容。</p>
+<p>该cacheKey （ ）会改变时，该图标是通过改变<a href="qicon.html#addPixmap" tppabs="http://pyqt4doc.appspot.com/qicon.html#addPixmap">addPixmap</a>（）或<a href="qicon.html#addFile" tppabs="http://pyqt4doc.appspot.com/qicon.html#addFile">addFile</a>（ ） 。</p>
+<p>缓存键是最有用与缓存结合使用。</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qpixmap.html#cacheKey" tppabs="http://pyqt4doc.appspot.com/qpixmap.html#cacheKey">QPixmap.cacheKey</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fromTheme"></a><a href="qicon.html" tppabs="http://pyqt4doc.appspot.com/qicon.html">QIcon</a> QIcon.fromTheme (QString <i>name</i>, <a href="qicon.html" tppabs="http://pyqt4doc.appspot.com/qicon.html">QIcon</a> <i>fallback</i> = QIcon())</h3>
+<p>返回<a href="qicon.html" tppabs="http://pyqt4doc.appspot.com/qicon.html">QIcon</a>对应<i>name</i>在当前的图标主题。如果没有这样的图标在当前主题中找到<i>fallback</i>返回来代替。</p>
+<p>Freedesktop的图标规格及命名规范的最新版本可以在这里获得：</p>
+<ul>
+<li><a href="http://standards.freedesktop.org/icon-theme-spec/icon-theme-spec-latest.html">
+http://standards.freedesktop.org/icon-theme-spec/icon-theme-spec-latest.html</a></li>
+<li><a href="http://standards.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html">
+http://standards.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html</a></li>
+</ul>
+<p>来从当前的图标主题的图标：</p>
+<pre class="cpp">
+     <span class="type"><a href="qicon.html" tppabs="http://pyqt4doc.appspot.com/qicon.html">QIcon</a></span> undoicon <span class="operator">=</span> <span class="type"><a href="qicon.html" tppabs="http://pyqt4doc.appspot.com/qicon.html">QIcon</a></span><span class="operator">.</span>fromTheme(<span class="string">"edit-undo"</span>);
+</pre>
+<p>或者，如果你想提供一个保证回退不支持主题图标的平台，您可以使用第二个参数：</p>
+<pre class="cpp">
+     <span class="type"><a href="qicon.html" tppabs="http://pyqt4doc.appspot.com/qicon.html">QIcon</a></span> undoicon <span class="operator">=</span> <span class="type"><a href="qicon.html" tppabs="http://pyqt4doc.appspot.com/qicon.html">QIcon</a></span><span class="operator">.</span>fromTheme(<span class="string">"edit-undo"</span><span class="operator">,</span> <span class="type"><a href="qicon.html" tppabs="http://pyqt4doc.appspot.com/qicon.html">QIcon</a></span>(<span class="string">":/undo.png"</span>));
+</pre>
+<p><b>Note:</b>默认情况下，只有X11将支持主题图标。为了使用在Mac和Windows主题图标，你将不得不捆绑一个兼容的主题之一，您<a href="qicon.html#themeSearchPaths" tppabs="http://pyqt4doc.appspot.com/qicon.html#themeSearchPaths">themeSearchPaths</a>（ ），并设置适当的<a href="qicon.html#themeName" tppabs="http://pyqt4doc.appspot.com/qicon.html#themeName">themeName</a>（ ） 。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qicon.html#themeName" tppabs="http://pyqt4doc.appspot.com/qicon.html#themeName">themeName</a>（ ）<a href="qicon.html#setThemeName" tppabs="http://pyqt4doc.appspot.com/qicon.html#setThemeName">setThemeName</a>（）和<a href="qicon.html#themeSearchPaths" tppabs="http://pyqt4doc.appspot.com/qicon.html#themeSearchPaths">themeSearchPaths</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasThemeIcon"></a>bool QIcon.hasThemeIcon (QString <i>name</i>)</h3>
+<p>返回True如果有一个图标供<i>name</i>在当前的图标主题，否则返回False 。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qicon.html#themeSearchPaths" tppabs="http://pyqt4doc.appspot.com/qicon.html#themeSearchPaths">themeSearchPaths</a>（ ）<a href="qicon.html#fromTheme" tppabs="http://pyqt4doc.appspot.com/qicon.html#fromTheme">fromTheme</a>（）和<a href="qicon.html#setThemeName" tppabs="http://pyqt4doc.appspot.com/qicon.html#setThemeName">setThemeName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isDetached"></a>bool QIcon.isDetached (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="isNull"></a>bool QIcon.isNull (<i>self</i>)</h3>
+<p>返回True如果该图标为空，否则返回False 。</p>
+<p>图标是空的，如果它既不具有像素图，也不是一个文件名。</p>
+<p>注意：即使是一个非空的图标可能无法建立有效像素映射，如。如果文件不存在或无法读取。</p>
+
+
+<h3 class="fn">
+<a name="name"></a>QString QIcon.name (<i>self</i>)</h3>
+<p>返回（如果可用）来创建图标，名称。</p>
+<p>根据创建图标的方式，它可能有一个相关的名称。这是用于与创建的图标的情况下<a href="qicon.html#fromTheme" tppabs="http://pyqt4doc.appspot.com/qicon.html#fromTheme">fromTheme</a>（）或图标用<a href="qiconengine.html" tppabs="http://pyqt4doc.appspot.com/qiconengine.html">QIconEngine</a>支撑<a href="qiconenginev2.html#IconEngineHook-enum" tppabs="http://pyqt4doc.appspot.com/qiconenginev2.html#IconEngineHook-enum">QIconEngineV2.IconNameHook</a>。</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qicon.html#fromTheme" tppabs="http://pyqt4doc.appspot.com/qicon.html#fromTheme">fromTheme</a>（）和<a href="qiconengine.html" tppabs="http://pyqt4doc.appspot.com/qiconengine.html">QIconEngine</a>。</p>
+
+
+<h3 class="fn">
+<a name="paint"></a>QIcon.paint (<i>self</i>, <a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a> <i>painter</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>rect</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-alignment.html">Qt.Alignment</a> <i>alignment</i> = Qt.AlignCenter, <a href="qicon.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qicon.html#Mode-enum">Mode</a> <i>mode</i> = QIcon.Normal, <a href="qicon.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qicon.html#State-enum">State</a> <i>state</i> = QIcon.Off)</h3>
+<p>使用<i>painter</i>绘制图标与指定的<i>alignment</i>，需要<i>mode</i>和<i>state</i>成长方形<i>rect</i>。</p>
+<p><b>See also</b> <a href="qicon.html#actualSize" tppabs="http://pyqt4doc.appspot.com/qicon.html#actualSize">actualSize</a>（）和<a href="qicon.html#pixmap" tppabs="http://pyqt4doc.appspot.com/qicon.html#pixmap">pixmap</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="paint-2"></a>QIcon.paint (<i>self</i>, <a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a> <i>painter</i>, int <i>x</i>, int <i>y</i>, int <i>w</i>, int <i>h</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-alignment.html">Qt.Alignment</a> <i>alignment</i> = Qt.AlignCenter, <a href="qicon.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qicon.html#Mode-enum">Mode</a> <i>mode</i> = QIcon.Normal, <a href="qicon.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qicon.html#State-enum">State</a> <i>state</i> = QIcon.Off)</h3>
+<p>这是一个重载函数。</p>
+<p>绘制图标进入矩形<a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a>（<i>x</i>，<i>y</i>，<i>w</i>，<i>h</i>） 。</p>
+
+
+<h3 class="fn">
+<a name="pixmap"></a><a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a> QIcon.pixmap (<i>self</i>, <a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> <i>size</i>, <a href="qicon.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qicon.html#Mode-enum">Mode</a> <i>mode</i> = QIcon.Normal, <a href="qicon.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qicon.html#State-enum">State</a> <i>state</i> = QIcon.Off)</h3>
+<p>返回一个像素图的要求<i>size</i>，<i>mode</i>和<i>state</i>，生成1如果必要的。像素图可能小于要求的，但从来没有较大。</p>
+<p><b>See also</b> <a class="compat" href="index.htm#setPixmap" tppabs="http://pyqt4doc.appspot.com/qicon-qt3.html#setPixmap">setPixmap</a>（ ）<a href="qicon.html#actualSize" tppabs="http://pyqt4doc.appspot.com/qicon.html#actualSize">actualSize</a>（）和<a href="qicon.html#paint" tppabs="http://pyqt4doc.appspot.com/qicon.html#paint">paint</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="pixmap-2"></a><a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a> QIcon.pixmap (<i>self</i>, int <i>w</i>, int <i>h</i>, <a href="qicon.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qicon.html#Mode-enum">Mode</a> <i>mode</i> = QIcon.Normal, <a href="qicon.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qicon.html#State-enum">State</a> <i>state</i> = QIcon.Off)</h3>
+<h3 class="fn">
+<a name="pixmap-3"></a><a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a> QIcon.pixmap (<i>self</i>, int <i>extent</i>, <a href="qicon.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qicon.html#Mode-enum">Mode</a> <i>mode</i> = QIcon.Normal, <a href="qicon.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qicon.html#State-enum">State</a> <i>state</i> = QIcon.Off)</h3>
+<h3 class="fn">
+<a name="serialNumber"></a>int QIcon.serialNumber (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="setThemeName"></a>QIcon.setThemeName (QString <i>path</i>)</h3>
+<p>设置当前的图标主题<i>name</i>。</p>
+<p>该<i>name</i>应该对应于包含描述它的内容的index.theme文件中的themeSearchPath目录名（ ） 。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qicon.html#themeSearchPaths" tppabs="http://pyqt4doc.appspot.com/qicon.html#themeSearchPaths">themeSearchPaths</a>（）和<a href="qicon.html#themeName" tppabs="http://pyqt4doc.appspot.com/qicon.html#themeName">themeName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setThemeSearchPaths"></a>QIcon.setThemeSearchPaths (QStringList <i>searchpath</i>)</h3>
+<p>设置为图标主题的搜索路径<i>paths</i>。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qicon.html#themeSearchPaths" tppabs="http://pyqt4doc.appspot.com/qicon.html#themeSearchPaths">themeSearchPaths</a>（ ）<a href="qicon.html#fromTheme" tppabs="http://pyqt4doc.appspot.com/qicon.html#fromTheme">fromTheme</a>（）和<a href="qicon.html#setThemeName" tppabs="http://pyqt4doc.appspot.com/qicon.html#setThemeName">setThemeName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="swap"></a>QIcon.swap (<i>self</i>, <a href="qicon.html" tppabs="http://pyqt4doc.appspot.com/qicon.html">QIcon</a> <i>other</i>)</h3>
+<p>交换图标<i>other</i>与此图标。这个操作是非常快的，而且永远不会。</p>
+<p>此功能被引入Qt的4.8 。</p>
+
+
+<h3 class="fn">
+<a name="themeName"></a>QString QIcon.themeName ()</h3>
+<p>返回当前的图标主题的名称。</p>
+<p>在X11上，当前图标主题取决于您的桌面设置。在其他平台上它不是默认设置。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qicon.html#setThemeName" tppabs="http://pyqt4doc.appspot.com/qicon.html#setThemeName">setThemeName</a>（ ）<a href="qicon.html#themeSearchPaths" tppabs="http://pyqt4doc.appspot.com/qicon.html#themeSearchPaths">themeSearchPaths</a>（ ）<a href="qicon.html#fromTheme" tppabs="http://pyqt4doc.appspot.com/qicon.html#fromTheme">fromTheme</a>（）和<a href="qicon.html#hasThemeIcon" tppabs="http://pyqt4doc.appspot.com/qicon.html#hasThemeIcon">hasThemeIcon</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="themeSearchPaths"></a>QStringList QIcon.themeSearchPaths ()</h3>
+<p>返回图标主题的搜索路径。</p>
+<p>默认值将取决于平台：</p>
+<p>在X11 ，搜索路径将如果有使用XDG_DATA_DIRS环境变量。</p>
+<p>默认情况下，所有的平台都会有资源目录<tt>:\icons</tt>作为后备。您可以使用“ RCC项目” ，以从你的图标主题的资源文件。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qicon.html#setThemeSearchPaths" tppabs="http://pyqt4doc.appspot.com/qicon.html#setThemeSearchPaths">setThemeSearchPaths</a>（ ）<a href="qicon.html#fromTheme" tppabs="http://pyqt4doc.appspot.com/qicon.html#fromTheme">fromTheme</a>（）和<a href="qicon.html#setThemeName" tppabs="http://pyqt4doc.appspot.com/qicon.html#setThemeName">setThemeName</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

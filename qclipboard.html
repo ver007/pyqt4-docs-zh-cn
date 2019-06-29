@@ -1,0 +1,357 @@
+﻿<html>
+<head>
+<title>QClipboard Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QClipboard Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QClipboard类提供窗口系统剪贴板。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">Mode</a></b> { Clipboard, Selection, FindBuffer }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qclipboard.html#clear" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#clear">clear</a></b> (<i>self</i>, Mode <i>mode</i> = QClipboard.Clipboard)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qclipboard.html#connectNotify" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#connectNotify">connectNotify</a></b> (<i>self</i>, SIGNAL())</li>
+<li>
+<div class="fn"></div>bool <b><a href="qclipboard.html#event" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#event">event</a></b> (<i>self</i>, QEvent)</li>
+<li>
+<div class="fn"></div>QImage <b><a href="qclipboard.html#image" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#image">image</a></b> (<i>self</i>, Mode <i>mode</i> = QClipboard.Clipboard)</li>
+<li>
+<div class="fn"></div>QMimeData <b><a href="qclipboard.html#mimeData" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#mimeData">mimeData</a></b> (<i>self</i>, Mode <i>mode</i> = QClipboard.Clipboard)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qclipboard.html#ownsClipboard" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#ownsClipboard">ownsClipboard</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qclipboard.html#ownsFindBuffer" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#ownsFindBuffer">ownsFindBuffer</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qclipboard.html#ownsSelection" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#ownsSelection">ownsSelection</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QPixmap <b><a href="qclipboard.html#pixmap" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#pixmap">pixmap</a></b> (<i>self</i>, Mode <i>mode</i> = QClipboard.Clipboard)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qclipboard.html#setImage" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#setImage">setImage</a></b> (<i>self</i>, QImage, Mode <i>mode</i> = QClipboard.Clipboard)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qclipboard.html#setMimeData" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#setMimeData">setMimeData</a></b> (<i>self</i>, QMimeData <i>data</i>, Mode <i>mode</i> = QClipboard.Clipboard)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qclipboard.html#setPixmap" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#setPixmap">setPixmap</a></b> (<i>self</i>, QPixmap, Mode <i>mode</i> = QClipboard.Clipboard)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qclipboard.html#setText" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#setText">setText</a></b> (<i>self</i>, QString, Mode <i>mode</i> = QClipboard.Clipboard)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qclipboard.html#supportsFindBuffer" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#supportsFindBuffer">supportsFindBuffer</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qclipboard.html#supportsSelection" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#supportsSelection">supportsSelection</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qclipboard.html#text" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#text">text</a></b> (<i>self</i>, Mode <i>mode</i> = QClipboard.Clipboard)</li>
+<li>
+<div class="fn"></div>(QString, QString) <b><a href="qclipboard.html#text-2" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#text-2">text</a></b> (<i>self</i>, QString <i>subtype</i>, Mode <i>mode</i> = QClipboard.Clipboard)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qclipboard.html#text-3" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#text-3">text</a></b> (<i>self</i>, QString <i>subtype</i>, Mode <i>mode</i> = QClipboard.Clipboard)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qclipboard.html#changed" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#changed">changed</a></b> (QClipboard::Mode)</li>
+<li>
+<div class="fn"></div>void <b><a href="qclipboard.html#dataChanged" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#dataChanged">dataChanged</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qclipboard.html#findBufferChanged" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#findBufferChanged">findBufferChanged</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qclipboard.html#selectionChanged" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#selectionChanged">selectionChanged</a></b> ()</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QClipboard类提供窗口系统剪贴板。</p>
+<p>剪贴板提供复制和粘贴应用程序之间的数据的简单机制。</p>
+<p>QClipboard支持相同的数据类型<a href="qdrag.html" tppabs="http://pyqt4doc.appspot.com/qdrag.html">QDrag</a>确实，并采用类似的机制。对于高级剪贴板的使用读<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/dnd.html">Drag and
+Drop</a>。</p>
+<p>有一个在应用程序中的单个QClipboard对象​​，作为访问<a href="qapplication.html#clipboard" tppabs="http://pyqt4doc.appspot.com/qapplication.html#clipboard">QApplication.clipboard</a>（ ） 。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type">QClipboard</span> <span class="operator">*</span>clipboard <span class="operator">=</span> <span class="type"><a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a></span><span class="operator">.</span>clipboard();
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> originalText <span class="operator">=</span> clipboard<span class="operator">-</span><span class="operator">&gt;</span><a href="qclipboard.html#text" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#text">text</a>();
+ <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ clipboard<span class="operator">-</span><span class="operator">&gt;</span><a href="qclipboard.html#setText" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#setText">setText</a>(newText);
+</pre>
+<p>QClipboard具有一些方便的功能来访问常用数据类型：<a href="qclipboard.html#setText" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#setText">setText</a>（ ）允许Unicode文本的交换和<a href="qclipboard.html#setPixmap" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#setPixmap">setPixmap</a>（）和<a href="qclipboard.html#setImage" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#setImage">setImage</a>（ ）允许应用程序之间QPixmaps和QImages的交流。该<a href="qclipboard.html#setMimeData" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#setMimeData">setMimeData</a>（ ）函数是极大的灵活性：它可以让你添加任何<a href="qmimedata.html" tppabs="http://pyqt4doc.appspot.com/qmimedata.html">QMimeData</a>复制到剪贴板中。有相应的getter为每个这些，例如<a href="qclipboard.html#text" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#text">text</a>（ ）<a href="qclipboard.html#image" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#image">image</a>（）和<a href="qclipboard.html#pixmap" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#pixmap">pixmap</a>（ ） 。你可以通过调用清除剪贴板<a href="qclipboard.html#clear" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#clear">clear</a>（ ） 。</p>
+<p>使用这些功能的一个典型例子如下：</p>
+<pre class="cpp">
+ <span class="type">void</span> DropArea<span class="operator">.</span>paste()
+ {
+     <span class="keyword">const</span> <span class="type">QClipboard</span> <span class="operator">*</span>clipboard <span class="operator">=</span> <span class="type"><a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a></span><span class="operator">.</span>clipboard();
+     <span class="keyword">const</span> <span class="type"><a href="qmimedata.html" tppabs="http://pyqt4doc.appspot.com/qmimedata.html">QMimeData</a></span> <span class="operator">*</span>mimeData <span class="operator">=</span> clipboard<span class="operator">-</span><span class="operator">&gt;</span>mimeData();
+
+     <span class="keyword">if</span> (mimeData<span class="operator">-</span><span class="operator">&gt;</span>hasImage()) {
+         setPixmap(qvariant_cast<span class="operator">&lt;</span><span class="type"><a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a></span><span class="operator">&gt;</span>(mimeData<span class="operator">-</span><span class="operator">&gt;</span>imageData()));
+     } <span class="keyword">else</span> <span class="keyword">if</span> (mimeData<span class="operator">-</span><span class="operator">&gt;</span>hasHtml()) {
+         setText(mimeData<span class="operator">-</span><span class="operator">&gt;</span>html());
+         setTextFormat(<span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>RichText);
+     } <span class="keyword">else</span> <span class="keyword">if</span> (mimeData<span class="operator">-</span><span class="operator">&gt;</span>hasText()) {
+         setText(mimeData<span class="operator">-</span><span class="operator">&gt;</span>text());
+         setTextFormat(<span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>PlainText);
+     } <span class="keyword">else</span> {
+         setText(tr(<span class="string">"Cannot display data"</span>));
+     }
+</pre>
+<a id="notes-for-x11-users" name="notes-for-x11-users"></a>
+<h3>Notes for X11 Users</h3>
+<ul>
+<li>The X11 Window System has the concept of a separate selection
+and clipboard. When text is selected, it is immediately available
+as the global mouse selection. The global mouse selection may later
+be copied to the clipboard. By convention, the middle mouse button
+is used to paste the global mouse selection.</li>
+<li>X11 also has the concept of ownership; if you change the
+selection within a window, X11 will only notify the owner and the
+previous owner of the change, i.e. it will not notify all
+applications that the selection or clipboard data changed.</li>
+<li>Lastly, the X11 clipboard is event driven, i.e. the clipboard
+will not function properly if the event loop is not running.
+Similarly, it is recommended that the contents of the clipboard are
+stored or retrieved in direct response to user-input events, e.g.
+mouse button or key presses and releases. You should not store or
+retrieve the clipboard contents in response to timer or
+non-user-input events.</li>
+<li>Since there is no standard way to copy and paste files between
+applications on X11, various MIME types and conventions are
+currently in use. For instance, Nautilus expects files to be
+supplied with a <tt>x-special/gnome-copied-files</tt> MIME type
+with data beginning with the cut/copy action, a newline character,
+and the URL of the file.</li>
+</ul>
+<a id="notes-for-mac-os-x-users" name="notes-for-mac-os-x-users"></a>
+<h3>Notes for Mac OS X Users</h3>
+<p>Mac OS X支持保存在查找操作的当前搜索字符串单独发现的缓冲区。这一发现剪贴板可以通过指定访问的<a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">FindBuffer</a>模式。</p>
+<a id="notes-for-windows-and-mac-os-x-users" name="notes-for-windows-and-mac-os-x-users"></a>
+<h3>Notes for Windows and Mac OS X Users</h3>
+<ul>
+<li>Windows and Mac OS X do not support the global mouse selection;
+they only supports the global clipboard, i.e. they only add text to
+the clipboard when an explicit copy or cut is made.</li>
+<li>Windows and Mac OS X does not have the concept of ownership;
+the clipboard is a fully global resource so all applications are
+notified of changes.</li>
+</ul>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="Mode-enum"></a>QClipboard.Mode</h3>
+<a id="clipboard-mode" name="clipboard-mode"></a>
+<p>该枚举类型是用来控制系统剪贴板中的一部分是由<a href="qclipboard.html#mimeData" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#mimeData">QClipboard.mimeData</a>（ ）<a href="qclipboard.html#setMimeData" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#setMimeData">QClipboard.setMimeData</a>（ ）和相关函数。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QClipboard.Clipboard</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">表示数据应该存储和从全局剪贴板中检索。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QClipboard.Selection</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">表示数据应该存储和从全局鼠标选择检索。支持<tt>Selection</tt>是只设置一个全局鼠标选择（例如X11 ）系统。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QClipboard.FindBuffer</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">表示数据应该存储和查找缓冲区中检索。此模式用于保持搜索字符串在Mac OS X。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qclipboard.html#supportsSelection" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#supportsSelection">QClipboard.supportsSelection</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="clear"></a>QClipboard.clear (<i>self</i>, <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">Mode</a> <i>mode</i> = QClipboard.Clipboard)</h3>
+<p>清除剪贴板内容。</p>
+<p>该<i>mode</i>参数用来控制哪些系统剪贴板的一部分使用。如果<i>mode</i> is <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.Clipboard</a>，此功能清除全局剪贴板中的内容。如果<i>mode</i> is
+<a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.Selection</a>这个函数清除全局鼠标选择内容。如果<i>mode</i>
+is <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.FindBuffer</a>这个函数清除搜索字符串缓冲区。</p>
+<p><b>See also</b> <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.Mode</a>和<a href="qclipboard.html#supportsSelection" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#supportsSelection">supportsSelection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="connectNotify"></a>QClipboard.connectNotify (<i>self</i>, SIGNAL())</h3>
+<h3 class="fn">
+<a name="event"></a>bool QClipboard.event (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>)</h3>
+<p>从重新实现<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">QObject.event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="image"></a><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> QClipboard.image (<i>self</i>, <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">Mode</a> <i>mode</i> = QClipboard.Clipboard)</h3>
+<p>返回剪贴板中的图像，或者返回一个空图像，如果剪贴板中不包含的图像，或者如果它包含一个图像中不支持的图像格式。</p>
+<p>该<i>mode</i>参数用来控制哪些系统剪贴板的一部分使用。如果<i>mode</i> is <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.Clipboard</a>时，图像从全局剪贴板检索。如果<i>mode</i> is <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.Selection</a>时，图像从全局鼠标选择检索。</p>
+<p><b>See also</b> <a href="qclipboard.html#setImage" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#setImage">setImage</a>（ ）<a href="qclipboard.html#pixmap" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#pixmap">pixmap</a>（ ）<a href="qclipboard.html#mimeData" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#mimeData">mimeData</a>（）和<a href="qimage.html#isNull" tppabs="http://pyqt4doc.appspot.com/qimage.html#isNull">QImage.isNull</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mimeData"></a><a href="qmimedata.html" tppabs="http://pyqt4doc.appspot.com/qmimedata.html">QMimeData</a> QClipboard.mimeData (<i>self</i>, <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">Mode</a> <i>mode</i> = QClipboard.Clipboard)</h3>
+<p>返回一个引用<a href="qmimedata.html" tppabs="http://pyqt4doc.appspot.com/qmimedata.html">QMimeData</a>当前剪贴板中的数据的代表性。</p>
+<p>该<i>mode</i>参数用来控制哪些系统剪贴板的一部分使用。如果<i>mode</i> is <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.Clipboard</a>时，数据被从全局剪贴板检索。如果<i>mode</i> is <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.Selection</a>时，数据被从全局鼠标选择检索。如果<i>mode</i> is
+<a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.FindBuffer</a>时，数据被从该搜索字符串缓冲区中检索。</p>
+<p>该<a href="qclipboard.html#text" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#text">text</a>（ ）<a href="qclipboard.html#image" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#image">image</a>（）和<a href="qclipboard.html#pixmap" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#pixmap">pixmap</a>（ ）函数用于检索的文本，图像和像素映射数据简单包装。</p>
+<p><b>See also</b> <a href="qclipboard.html#setMimeData" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#setMimeData">setMimeData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="ownsClipboard"></a>bool QClipboard.ownsClipboard (<i>self</i>)</h3>
+<p>返回True如果剪贴板对象拥有的剪贴板数据，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="ownsFindBuffer"></a>bool QClipboard.ownsFindBuffer (<i>self</i>)</h3>
+<p>返回True如果剪贴板对象拥有的查找缓冲区中的数据，否则返回False 。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="ownsSelection"></a>bool QClipboard.ownsSelection (<i>self</i>)</h3>
+<p>返回True如果剪贴板对象拥有鼠标选择数据，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="pixmap"></a><a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a> QClipboard.pixmap (<i>self</i>, <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">Mode</a> <i>mode</i> = QClipboard.Clipboard)</h3>
+<p>返回剪贴板像素映射，或者null，如果剪贴板中不包含像素图。请注意，这可能会丢失信息。例如，如果图像是24位和显示器是8位，则结果被转换为8位，并且如果图像具有alpha通道，结果正好有一个掩膜。</p>
+<p>该<i>mode</i>参数用来控制哪些系统剪贴板的一部分使用。如果<i>mode</i> is <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.Clipboard</a>，像素图是从全局剪贴板中检索。如果<i>mode</i> is <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.Selection</a>，像素图是从全局鼠标选择检索。</p>
+<p><b>See also</b> <a href="qclipboard.html#setPixmap" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#setPixmap">setPixmap</a>（ ）<a href="qclipboard.html#image" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#image">image</a>（ ）<a href="qclipboard.html#mimeData" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#mimeData">mimeData</a>（）和<a href="qpixmap.html#convertFromImage" tppabs="http://pyqt4doc.appspot.com/qpixmap.html#convertFromImage">QPixmap.convertFromImage</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setImage"></a>QClipboard.setImage (<i>self</i>, <a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>, <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">Mode</a> <i>mode</i> = QClipboard.Clipboard)</h3>
+<p>副本<i>image</i>复制到剪贴板中。</p>
+<p>该<i>mode</i>参数用来控制哪些系统剪贴板的一部分使用。如果<i>mode</i> is <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.Clipboard</a>中，图像被存储在全局剪贴板。如果<i>mode</i> is <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.Selection</a>时，数据被存储在全局鼠标选择。</p>
+<p>这是简写：</p>
+<pre class="cpp">
+ <span class="type"><a href="qmimedata.html" tppabs="http://pyqt4doc.appspot.com/qmimedata.html">QMimeData</a></span> <span class="operator">*</span>data <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qmimedata.html" tppabs="http://pyqt4doc.appspot.com/qmimedata.html">QMimeData</a></span>;
+ data<span class="operator">-</span><span class="operator">&gt;</span>setImageData(image);
+ clipboard<span class="operator">-</span><span class="operator">&gt;</span><a href="qclipboard.html#setMimeData" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#setMimeData">setMimeData</a>(data<span class="operator">,</span> mode);
+</pre>
+<p><b>See also</b> <a href="qclipboard.html#image" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#image">image</a>（ ）<a href="qclipboard.html#setPixmap" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#setPixmap">setPixmap</a>（）和<a href="qclipboard.html#setMimeData" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#setMimeData">setMimeData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setMimeData"></a>QClipboard.setMimeData (<i>self</i>, <a href="qmimedata.html" tppabs="http://pyqt4doc.appspot.com/qmimedata.html">QMimeData</a> <i>data</i>, <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">Mode</a> <i>mode</i> = QClipboard.Clipboard)</h3>
+<p>剪贴板数据集<i>src</i>。该数据的所有权转移到剪贴板。如果你想删除数据或者调用<a href="qclipboard.html#clear" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#clear">clear</a>（ ）或致电setMimeData （ ）再次与新的数据。</p>
+<p>该<i>mode</i>参数用来控制哪些系统剪贴板的一部分使用。如果<i>mode</i> is <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.Clipboard</a>时，数据被存储在全局剪贴板。如果<i>mode</i> is <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.Selection</a>时，数据被存储在全局鼠标选择。如果<i>mode</i> is <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.FindBuffer</a>时，数据被存储在搜索字符串缓冲区。</p>
+<p>该<a href="qclipboard.html#setText" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#setText">setText</a>（ ）<a href="qclipboard.html#setImage" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#setImage">setImage</a>（）和<a href="qclipboard.html#setPixmap" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#setPixmap">setPixmap</a>（ ）函数分别用于设置文本，图像和像素映射数据简单的包装。</p>
+<p><b>See also</b> <a href="qclipboard.html#mimeData" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#mimeData">mimeData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPixmap"></a>QClipboard.setPixmap (<i>self</i>, <a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a>, <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">Mode</a> <i>mode</i> = QClipboard.Clipboard)</h3>
+<p>Copies <i>pixmap</i>复制到剪贴板中。注意，这是慢<a href="qclipboard.html#setImage" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#setImage">setImage</a>（） ，因为它需要转换的<a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a>到<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>第一。</p>
+<p>该<i>mode</i>参数用来控制哪些系统剪贴板的一部分使用。如果<i>mode</i> is <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.Clipboard</a>，像素图被存储在全局剪贴板。如果<i>mode</i> is <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.Selection</a>，像素图被存储在全局鼠标选择。</p>
+<p><b>See also</b> <a href="qclipboard.html#pixmap" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#pixmap">pixmap</a>（ ）<a href="qclipboard.html#setImage" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#setImage">setImage</a>（）和<a href="qclipboard.html#setMimeData" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#setMimeData">setMimeData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setText"></a>QClipboard.setText (<i>self</i>, QString, <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">Mode</a> <i>mode</i> = QClipboard.Clipboard)</h3>
+<p>Copies <i>text</i>到剪贴板为纯文本。</p>
+<p>该<i>mode</i>参数用来控制哪些系统剪贴板的一部分使用。如果<i>mode</i> is <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.Clipboard</a>，文本被存储在全局剪贴板。如果<i>mode</i> is <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.Selection</a>，文本存储在全局鼠标选择。如果<i>mode</i> is <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.FindBuffer</a>，文本存储在搜索字符串缓冲区。</p>
+<p><b>See also</b> <a href="qclipboard.html#text" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#text">text</a>（）和<a href="qclipboard.html#setMimeData" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#setMimeData">setMimeData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="supportsFindBuffer"></a>bool QClipboard.supportsFindBuffer (<i>self</i>)</h3>
+<p>返回True如果剪贴板支持一个单独的搜索缓存，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="supportsSelection"></a>bool QClipboard.supportsSelection (<i>self</i>)</h3>
+<p>返回True如果剪贴板支持鼠标选择，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="text"></a>QString QClipboard.text (<i>self</i>, <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">Mode</a> <i>mode</i> = QClipboard.Clipboard)</h3>
+<p>返回剪贴板中的文本为纯文本，或者一个空字符串，如果剪贴板中不包含任何文本。</p>
+<p>该<i>mode</i>参数用来控制哪些系统剪贴板的一部分使用。如果<i>mode</i> is <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.Clipboard</a>，文本从全局剪贴板中检索。如果<i>mode</i> is <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.Selection</a>，该文本从全局鼠标选择检索。如果<i>mode</i> is
+<a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.FindBuffer</a>，该文本从搜索字符串缓冲区中检索。</p>
+<p><b>See also</b> <a href="qclipboard.html#setText" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#setText">setText</a>（）和<a href="qclipboard.html#mimeData" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#mimeData">mimeData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="text-2"></a>(QString, QString) QClipboard.text (<i>self</i>, QString <i>subtype</i>, <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">Mode</a> <i>mode</i> = QClipboard.Clipboard)</h3>
+<p>这是一个重载函数。</p>
+<p>返回亚型剪贴板文本<i>subtype</i>，或一个空字符串，如果剪贴板中不包含任何文本。如果<i>subtype</i>为null ，任何亚型是可以接受的，并且<i>subtype</i>被设置为所选择的子类型。</p>
+<p>该<i>mode</i>参数用来控制哪些系统剪贴板的一部分使用。如果<i>mode</i> is <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.Clipboard</a>，文本从全局剪贴板中检索。如果<i>mode</i> is <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">QClipboard.Selection</a>，该文本从全局鼠标选择检索。</p>
+<p>为共同的价值观<i>subtype</i>是“普通”和“HTML” 。</p>
+<p>请注意，多次调用该函数，例如从一个关键的事件处理程序，可能会很慢。在这种情况下，你应该使用<tt>dataChanged()</tt>信号代替。</p>
+<p><b>See also</b> <a href="qclipboard.html#setText" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#setText">setText</a>（）和<a href="qclipboard.html#mimeData" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#mimeData">mimeData</a>（ ） 。</p>
+<h3 class="fn">
+<a name="text-3"></a>QString QClipboard.text (<i>self</i>, QString <i>subtype</i>, <a href="qclipboard.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#Mode-enum">Mode</a> <i>mode</i> = QClipboard.Clipboard)</h3>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="changed"></a>void changed (QClipboard::Mode)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时，对于给定的剪贴板中的数据<i>mode</i>被改变。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qclipboard.html#dataChanged" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#dataChanged">dataChanged</a>（ ）<a href="qclipboard.html#selectionChanged" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#selectionChanged">selectionChanged</a>（）和<a href="qclipboard.html#findBufferChanged" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#findBufferChanged">findBufferChanged</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="dataChanged"></a>void dataChanged ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>当剪贴板中的数据改变这个信号被发射。</p>
+<p>在Mac OS X和与Qt版本4.3或更高版本，由其他应用程序所做的剪贴板的变化将只检测时，应用程序被激活。</p>
+<p><b>See also</b> <a href="qclipboard.html#findBufferChanged" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#findBufferChanged">findBufferChanged</a>（ ）<a href="qclipboard.html#selectionChanged" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#selectionChanged">selectionChanged</a>（）和<a href="qclipboard.html#changed" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#changed">changed</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="findBufferChanged"></a>void findBufferChanged ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>当发现缓冲区改变这个信号被发射。这仅适用于Mac OS X。</p>
+<p>与Qt版本4.3或更高版本，由其他应用程序所做的剪贴板的变化将只检测时，应用程序被激活。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qclipboard.html#dataChanged" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#dataChanged">dataChanged</a>（ ）<a href="qclipboard.html#selectionChanged" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#selectionChanged">selectionChanged</a>（）和<a href="qclipboard.html#changed" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#changed">changed</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="selectionChanged"></a>void selectionChanged ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>当选择改变这个信号被发射。这仅适用于支持选项窗口系统，例如X11 。 Windows和Mac OS X不支持选择。</p>
+<p><b>See also</b> <a href="qclipboard.html#dataChanged" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#dataChanged">dataChanged</a>（ ）<a href="qclipboard.html#findBufferChanged" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#findBufferChanged">findBufferChanged</a>（）和<a href="qclipboard.html#changed" tppabs="http://pyqt4doc.appspot.com/qclipboard.html#changed">changed</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

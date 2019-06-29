@@ -1,0 +1,110 @@
+﻿<html>
+<head>
+<title>QErrorMessage Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QErrorMessage Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QErrorMessage类提供​​一个错误信息显示对话框。<a href="#details">More...</a></p>
+
+<p>继承<a href="qdialog.html" tppabs="http://pyqt4doc.appspot.com/qdialog.html">QDialog</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qerrormessage.html#QErrorMessage" tppabs="http://pyqt4doc.appspot.com/qerrormessage.html#QErrorMessage">__init__</a></b> (<i>self</i>, QWidget <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qerrormessage.html#changeEvent" tppabs="http://pyqt4doc.appspot.com/qerrormessage.html#changeEvent">changeEvent</a></b> (<i>self</i>, QEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qerrormessage.html#done" tppabs="http://pyqt4doc.appspot.com/qerrormessage.html#done">done</a></b> (<i>self</i>, int)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qerrormessage.html#showMessage" tppabs="http://pyqt4doc.appspot.com/qerrormessage.html#showMessage">showMessage</a></b> (<i>self</i>, QString <i>message</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qerrormessage.html#showMessage-2" tppabs="http://pyqt4doc.appspot.com/qerrormessage.html#showMessage-2">showMessage</a></b> (<i>self</i>, QString <i>message</i>, QString <i>type</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul><li>
+<div class="fn"></div>QErrorMessage <b><a href="qerrormessage.html#qtHandler" tppabs="http://pyqt4doc.appspot.com/qerrormessage.html#qtHandler">qtHandler</a></b> ()</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QErrorMessage类提供​​一个错误信息显示对话框。</p>
+<p>一个错误信息窗口小部件由一个文本标籤和一个复选框。该复选框允许用户控制是否相同的错误消息会在未来再次显示出来，通常显示文本“，再次显示此消息”翻译成当地合适的语言。</p>
+<p>在生产应用中，类可以用来显示所述用户只需要看到一次的消息。使用QErrorMessage这样，你通常的方式创建对话框，并通过调用显示它的<a href="qerrormessage.html#showMessage" tppabs="http://pyqt4doc.appspot.com/qerrormessage.html#showMessage">showMessage</a>（）槽或连接信号给它。</p>
+<p>静<a href="qerrormessage.html#qtHandler" tppabs="http://pyqt4doc.appspot.com/qerrormessage.html#qtHandler">qtHandler</a>（ ）函数安装使用消息处理程序<a href="index.htm#qInstallMsgHandler" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qInstallMsgHandler">qInstallMsgHandler</a>（ ）并创建一个QErrorMessage的显示器<a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>（ ）<a href="index.htm#qWarning" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qWarning">qWarning</a>（）和<a href="index.htm#qFatal" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qFatal">qFatal</a>（ ）消息。这是最有用的环境中没有控制台可以显示警告和错误消息。</p>
+<p>在这两种情况下QErrorMessage将伫列中等待消息，并为了显示他们，只要用户已经接受以前的消息被显示的每个新的消息。一旦用户指定的消息不被再次显示它会自动跳过，并且对话框将显示在队列中的下一个相应的消息。</p>
+<p>该<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/dialogs-standarddialogs.html">Standard Dialogs</a>示例显示了如何使用QErrorMessage以及其他内置Qt对话框。</p>
+<p class="centerAlign"><img alt="" src="images/qerrormessage.png"></p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QErrorMessage"></a>QErrorMessage.__init__ (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造并用给定的安装错误处理程序窗口<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="changeEvent"></a>QErrorMessage.changeEvent (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#changeEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#changeEvent">QWidget.changeEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="done"></a>QErrorMessage.done (<i>self</i>, int)</h3>
+<p>从重新实现<a href="qdialog.html#done" tppabs="http://pyqt4doc.appspot.com/qdialog.html#done">QDialog.done</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="qtHandler"></a><a href="qerrormessage.html" tppabs="http://pyqt4doc.appspot.com/qerrormessage.html">QErrorMessage</a> QErrorMessage.qtHandler ()</h3>
+<p>返回一个指针，指向一个<a href="qerrormessage.html" tppabs="http://pyqt4doc.appspot.com/qerrormessage.html">QErrorMessage</a>对象，其输出的默认Qt的消息。该函数创建这样一个对象，如果没有一个已。</p>
+
+
+<h3 class="fn">
+<a name="showMessage"></a>QErrorMessage.showMessage (<i>self</i>, QString <i>message</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void showMessage(const QString&amp;)</tt>。</p>
+<p>显示给定的消息，<i>message</i>，并立即返回。如果用户请求的消息不被再次显示，该函数不起作用。</p>
+<p>通常情况下，会立即显示该消息。然而，如果存在挂起的消息，它将被排队在后面显示。</p>
+
+
+<h3 class="fn">
+<a name="showMessage-2"></a>QErrorMessage.showMessage (<i>self</i>, QString <i>message</i>, QString <i>type</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void showMessage(const QString&amp;,const QString&amp;)</tt>。</p>
+<p>这是一个重载函数。</p>
+<p>显示给定的消息，<i>message</i>，并立即返回。如果用户已经请求类型的消息<i>type</i>，不被再次显示，该函数不起作用。</p>
+<p>通常情况下，会立即显示该消息。然而，如果存在挂起的消息，它将被排队在后面显示。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qerrormessage.html#showMessage" tppabs="http://pyqt4doc.appspot.com/qerrormessage.html#showMessage">showMessage</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

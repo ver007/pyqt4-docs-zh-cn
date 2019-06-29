@@ -1,0 +1,493 @@
+﻿<html>
+<head>
+<title>QNetworkSession Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QNetworkSession Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtnetwork.html">QtNetwork</a> module]</sup></sup>
+</h1>
+<p>该QNetworkSession类提供对系统的接入点控制，使会话管理的情况下，当多个客户端访问同一个接入点。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qnetworksession.html#SessionError-enum" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#SessionError-enum">SessionError</a></b> { UnknownSessionError, SessionAbortedError, RoamingError, OperationNotSupportedError, InvalidConfigurationError }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qnetworksession.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#State-enum">State</a></b> { Invalid, NotAvailable, Connecting, Connected, ..., Roaming }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworksession.html#QNetworkSession" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#QNetworkSession">__init__</a></b> (<i>self</i>, QNetworkConfiguration <i>connConfig</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworksession.html#accept" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#accept">accept</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qnetworksession.html#activeTime" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#activeTime">activeTime</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qnetworksession.html#bytesReceived" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#bytesReceived">bytesReceived</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qnetworksession.html#bytesWritten" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#bytesWritten">bytesWritten</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworksession.html#close" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#close">close</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QNetworkConfiguration <b><a href="qnetworksession.html#configuration" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#configuration">configuration</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworksession.html#connectNotify" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#connectNotify">connectNotify</a></b> (<i>self</i>, SIGNAL() <i>signal</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworksession.html#disconnectNotify" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#disconnectNotify">disconnectNotify</a></b> (<i>self</i>, SIGNAL() <i>signal</i>)</li>
+<li>
+<div class="fn"></div>SessionError <b><a href="qnetworksession.html#error" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#error">error</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qnetworksession.html#errorString" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#errorString">errorString</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworksession.html#ignore" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#ignore">ignore</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QNetworkInterface <b><a href="qnetworksession.html#interface" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#interface">interface</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qnetworksession.html#isOpen" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#isOpen">isOpen</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworksession.html#migrate" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#migrate">migrate</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworksession.html#open" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#open">open</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworksession.html#reject" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#reject">reject</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qnetworksession.html#sessionProperty" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#sessionProperty">sessionProperty</a></b> (<i>self</i>, QString <i>key</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworksession.html#setSessionProperty" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#setSessionProperty">setSessionProperty</a></b> (<i>self</i>, QString <i>key</i>, QVariant <i>value</i>)</li>
+<li>
+<div class="fn"></div>State <b><a href="qnetworksession.html#state" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#state">state</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworksession.html#stop" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#stop">stop</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qnetworksession.html#waitForOpened" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#waitForOpened">waitForOpened</a></b> (<i>self</i>, int <i>msecs</i> = 30000)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qnetworksession.html#closed" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#closed">closed</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qnetworksession.html#error-2" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#error-2">error</a></b> (QNetworkSession::SessionError)</li>
+<li>
+<div class="fn"></div>void <b><a href="qnetworksession.html#newConfigurationActivated" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#newConfigurationActivated">newConfigurationActivated</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qnetworksession.html#opened" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#opened">opened</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qnetworksession.html#preferredConfigurationChanged" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#preferredConfigurationChanged">preferredConfigurationChanged</a></b> (const QNetworkConfiguration&amp;,bool)</li>
+<li>
+<div class="fn"></div>void <b><a href="qnetworksession.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#stateChanged">stateChanged</a></b> (QNetworkSession::State)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QNetworkSession类提供对系统的接入点控制，使会话管理的情况下，当多个客户端访问同一个接入点。</p>
+<p>一个QNetworkSession使得在系统的网络接口控制。会话的配置参数是通过确定<a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a>对象，其中就必然。根据会话的类型（单一的接入点或网络服务）的会话可以被链接到一个或多个网络接口。借<a href="qnetworksession.html#open" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#open">opening</a>和<a href="qnetworksession.html#close" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#close">closing</a>网络课程的开发者可以启动和停止系统的网络接口。如果该结构代表多个接入点（见<a href="qnetworkconfiguration.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#Type-enum">QNetworkConfiguration.ServiceNetwork</a>）更先进的功能，例如漫游可能得到支持。</p>
+<p>QNetworkSession支持会话管理同一进程内的，并根据平台的功能可支持外的过程的会话。如果同一个网络配置使用多个打开的会话，一旦最后一个会话已经关闭了底层网络接口仅终止。</p>
+<a id="roaming" name="roaming"></a>
+<h3>Roaming</h3>
+<p>应用程序可以连接到<a href="qnetworksession.html#preferredConfigurationChanged" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#preferredConfigurationChanged">preferredConfigurationChanged</a>（）信号，以便接收通知时，更合适的接入点成为可用的。响应于该信号的应用程序必须或者发起漫游经由<a href="qnetworksession.html#migrate" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#migrate">migrate</a>（）或<a href="qnetworksession.html#ignore" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#ignore">ignore</a>（ ）新的接入点。一旦会话已漫游<a href="qnetworksession.html#newConfigurationActivated" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#newConfigurationActivated">newConfigurationActivated</a>（）信号被发射。该应用程序现在可以测试载体和必须要么<a href="qnetworksession.html#accept" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#accept">accept</a>（）或<a href="qnetworksession.html#reject" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#reject">reject</a>（ ）它。会议将返回到先前的接入点，如果漫游遭到拒绝。随后的状态图描述了所需要的状态转换。</p>
+<p class="centerAlign"><img alt="" src="images/roaming-states.png"></p>
+<p>有些平台可能区分强制漫游和应用层漫游（ ALR ） 。 ALR意味着应用控制（通过<a href="qnetworksession.html#migrate" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#migrate">migrate</a>（ ）<a href="qnetworksession.html#ignore" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#ignore">ignore</a>（ ）<a href="qnetworksession.html#accept" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#accept">accept</a>（）和<a href="qnetworksession.html#reject" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#reject">reject</a>（））是否在网络会话可以从一个接入点漫游到下一个。如果应用程序保持状态的套接字连接，并要控制从一个接口到下一个过渡这样的控制是有用的。强制漫游意味着系统会自动漫游到下一个网络没有谘询该应用程序。这样做的好处是应用程序可以利用漫游功能，而实际上是意识到这一点。预期的应用程序检测到相关插座被打破，并自动通过新的网络链路重新连接。</p>
+<p>如果平台支持漫游的两种模式，一个应用程序通过连接到显示其偏好<a href="qnetworksession.html#preferredConfigurationChanged" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#preferredConfigurationChanged">preferredConfigurationChanged</a>（）信号。连接到这个信号意味着该应用程序要接管漫游行为的控制，因此意味着应用程序级的漫游。如果客户端无法连接到<a href="qnetworksession.html#preferredConfigurationChanged" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#preferredConfigurationChanged">preferredConfigurationChanged</a>（ ） ，强制漫游使用。如果不支持强制漫游网络会话将默认不漫游。</p>
+<p>有些应用程序可能要抑制任何形式的漫游完全的。可能的用例可能是高优先级下载或远程服务无法处理漫游功能的客户端。客户可以通过连接到抑制漫游<a href="qnetworksession.html#preferredConfigurationChanged" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#preferredConfigurationChanged">preferredConfigurationChanged</a>（ ）信号，并回答与每个信号发射<a href="qnetworksession.html#ignore" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#ignore">ignore</a>（ ） 。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="SessionError-enum"></a>QNetworkSession.SessionError</h3>
+<p>这个枚举说明可能发生的会话错误。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkSession.UnknownSessionError</tt>
+</td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">发生不明的错误。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkSession.SessionAbortedError</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">这次会议是由用户中止或系统。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QNetworkSession.RoamingError</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">会话不能漫游到一个新的配置。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkSession.OperationNotSupportedError</tt>
+</td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">不支持当前配置的操作。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkSession.InvalidConfigurationError</tt>
+</td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">目前无法对当前配置进行操作。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="State-enum"></a>QNetworkSession.State</h3>
+<p>这个枚举变量描述了会话的连接状态。如果会话是基于一个单一的访问点配置会话的状态是一样的相关网络接口的状态。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QNetworkSession.Invalid</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">这次会议是由于无效的配置无效。这可能会发生因已移除接入点或者是无效的，开始与配置。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QNetworkSession.NotAvailable</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">这次会议是基于一个定义，但尚未发现<a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a>（见<a href="qnetworkconfiguration.html#StateFlag-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#StateFlag-enum">QNetworkConfiguration.StateFlag</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QNetworkSession.Connecting</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">网络会话正在建立。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QNetworkSession.Connected</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">网络会话连接。如果当前进程想使用这个会话它通过调用注册其兴趣<a href="qnetworksession.html#open" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#open">open</a>（ ） 。网络会话被认为是准备好套接字操作，如果它<a href="qnetworksession.html#isOpen" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#isOpen">isOpen</a>（）和连接。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QNetworkSession.Closing</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">网络会话处于被关闭的过程。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QNetworkSession.Disconnected</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">网络会话没有连接。相关<a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a>有状态<a href="qnetworkconfiguration.html#StateFlag-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#StateFlag-enum">QNetworkConfiguration.Discovered</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QNetworkSession.Roaming</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">所述网络会话是从一个接入点漫游到另一个接入点。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QNetworkSession"></a>QNetworkSession.__init__ (<i>self</i>, <a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a> <i>connConfig</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个会话的基础上<i>connectionConfig</i>用给定的<i>parent</i>。</p>
+<p><b>See also</b> <a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a>。</p>
+
+
+<h3 class="fn">
+<a name="accept"></a>QNetworkSession.accept (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void accept()</tt>。</p>
+<p>指示会话永久接受新的接入点。一旦该功能被称为会话可能不会返回到旧的接入点。</p>
+<p>旧的接入点可以在这一过程中被关闭，如果有针对它没有其它的网络会话。因此，仍然使用旧的接入点的任何打开的socket可能变得不稳定，并完成迁移之前，应该关闭。</p>
+
+
+<h3 class="fn">
+<a name="activeTime"></a>int QNetworkSession.activeTime (<i>self</i>)</h3>
+<p>返回该会话一直活跃的秒数。</p>
+
+
+<h3 class="fn">
+<a name="bytesReceived"></a>int QNetworkSession.bytesReceived (<i>self</i>)</h3>
+<p>返回字节接收到的数据量，否则为0 。</p>
+<p>该字段值包括其两端使用相同的网络接口的所有开放式网络会话使用。</p>
+<p>如果会话是基于服务的网络配置在所有活动成员配置发送的字节数返回。</p>
+<p>此功能可能并不总是在所有平台上，并返回0的支持。可以通过检测到该平台的能力<a href="qnetworkconfigurationmanager.html#Capability-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfigurationmanager.html#Capability-enum">QNetworkConfigurationManager.DataStatistics</a>。</p>
+<p><b>Note:</b>在某些平台上，此功能可能运行主事件循环。</p>
+
+
+<h3 class="fn">
+<a name="bytesWritten"></a>int QNetworkSession.bytesWritten (<i>self</i>)</h3>
+<p>返回以字节为单位发送的数据量，否则为0 。</p>
+<p>该字段值包括其两端使用相同的网络接口的所有开放式网络会话使用。</p>
+<p>如果会话是基于服务的网络配置在所有活动成员配置发送的字节数返回。</p>
+<p>此功能可能并不总是在所有平台上，并返回0的支持。可以通过检测到该平台的能力<a href="qnetworkconfigurationmanager.html#Capability-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfigurationmanager.html#Capability-enum">QNetworkConfigurationManager.DataStatistics</a>。</p>
+<p><b>Note:</b>在某些平台上，此功能可能运行主事件循环。</p>
+
+
+<h3 class="fn">
+<a name="close"></a>QNetworkSession.close (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void close()</tt>。</p>
+<p>减少对相关的网络配置的会话计数器。如果会话计数器归零活动的网络接口被关闭。这也意味着<a href="qnetworksession.html#state" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#state">state</a>（）将只从改变<a href="qnetworksession.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#State-enum">Connected</a>至<a href="qnetworksession.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#State-enum">Disconnected</a>如果当前会话是最后打开的会话。</p>
+<p>如果平台不支持外的会话过程中调用此函数不停止的接口。在这种情况下<a href="qnetworksession.html#stop" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#stop">stop</a>（ ）已被用来强制关闭。该平台的能力可通过被检测<a href="qnetworkconfigurationmanager.html#capabilities" tppabs="http://pyqt4doc.appspot.com/qnetworkconfigurationmanager.html#capabilities">QNetworkConfigurationManager.capabilities</a>（ ） 。</p>
+<p>注意，这个调用是异步的。根据此调用的结果的结果可以通过连接到被询问<a href="qnetworksession.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#stateChanged">stateChanged</a>（ ）<a href="qnetworksession.html#opened" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#opened">opened</a>（）或<a href="qnetworksession.html#error" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#error">error</a>（ ）信号。</p>
+<p><b>See also</b> <a href="qnetworksession.html#open" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#open">open</a>（ ）<a href="qnetworksession.html#stop" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#stop">stop</a>（）和<a href="qnetworksession.html#isOpen" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#isOpen">isOpen</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="configuration"></a><a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a> QNetworkSession.configuration (<i>self</i>)</h3>
+<p>返回<a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a>该网络会话对象基础上的。</p>
+<p><b>See also</b> <a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a>。</p>
+
+
+<h3 class="fn">
+<a name="connectNotify"></a>QNetworkSession.connectNotify (<i>self</i>, SIGNAL() <i>signal</i>)</h3>
+<h3 class="fn">
+<a name="disconnectNotify"></a>QNetworkSession.disconnectNotify (<i>self</i>, SIGNAL() <i>signal</i>)</h3>
+<h3 class="fn">
+<a name="error"></a><a href="qnetworksession.html#SessionError-enum" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#SessionError-enum">SessionError</a> QNetworkSession.error (<i>self</i>)</h3>
+<p>返回上次发生错误的类型。</p>
+<p><b>See also</b> <a href="qnetworksession.html#state" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#state">state</a>（）和<a href="qnetworksession.html#errorString" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#errorString">errorString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="errorString"></a>QString QNetworkSession.errorString (<i>self</i>)</h3>
+<p>返回上次发生设备错误的人类可读的描述。</p>
+<p><b>See also</b> <a href="qnetworksession.html#error" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#error">error</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="ignore"></a>QNetworkSession.ignore (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void ignore()</tt>。</p>
+<p>该函数表示该应用程序不希望漫游会话。</p>
+<p><b>See also</b> <a href="qnetworksession.html#migrate" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#migrate">migrate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="interface"></a><a href="qnetworkinterface.html" tppabs="http://pyqt4doc.appspot.com/qnetworkinterface.html">QNetworkInterface</a> QNetworkSession.interface (<i>self</i>)</h3>
+<p>返回用于此会话的网络接口。</p>
+<p>这个函数只返回一个有效的<a href="qnetworkinterface.html" tppabs="http://pyqt4doc.appspot.com/qnetworkinterface.html">QNetworkInterface</a>在本次会议是<a href="qnetworksession.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#State-enum">Connected</a>。</p>
+<p>返回的接口可能会改变一个漫游过程的结果。</p>
+<p>注：此功能在Symbian的模拟器，由于连接是模拟Windows上的工作方式。</p>
+<p><b>See also</b> <a href="qnetworksession.html#state" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#state">state</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isOpen"></a>bool QNetworkSession.isOpen (<i>self</i>)</h3>
+<p>返回True如果这个环节是开放的。如果所有打开的会话数是大于零的底层网络接口将保持连接/向上。</p>
+<p>会话可以通过被控制<a href="qnetworksession.html#open" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#open">open</a>（）和<a href="qnetworksession.html#close" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#close">close</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="migrate"></a>QNetworkSession.migrate (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void migrate()</tt>。</p>
+<p>指示会话漫游到新的接入点。旧的接入点保持有效，直到应用程序调用<a href="qnetworksession.html#accept" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#accept">accept</a>（ ） 。</p>
+<p>该<a href="qnetworksession.html#newConfigurationActivated" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#newConfigurationActivated">newConfigurationActivated</a>（）信号被发射一次漫游已经完成。</p>
+<p><b>See also</b> <a href="qnetworksession.html#accept" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#accept">accept</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="open"></a>QNetworkSession.open (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void open()</tt>。</p>
+<p>创建一个公开会议这增加了底层网络接口上的会话计数。直到会话引用计数器达到零，系统将不会终止网络接口。因此，一个公开会议允许应用程序注册其使用的接口。</p>
+<p>由于调用open的结果（ ）接口将被启动，如果它没有连接/上呢。有些平台可能不提供了进程外会话的支持。在这种平台上的会话计数器会忽略另一个进程持有的任何会议。该平台的能力可通过被检测<a href="qnetworkconfigurationmanager.html#capabilities" tppabs="http://pyqt4doc.appspot.com/qnetworkconfigurationmanager.html#capabilities">QNetworkConfigurationManager.capabilities</a>（ ） 。</p>
+<p>注意，这个调用是异步的。根据此调用的结果的结果可以通过连接到被询问<a href="qnetworksession.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#stateChanged">stateChanged</a>（ ）<a href="qnetworksession.html#opened" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#opened">opened</a>（）或<a href="qnetworksession.html#error" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#error">error</a>（ ）信号。</p>
+<p>这不是一个要求，以便监测底层网络接口打开会话。</p>
+<p><b>See also</b> <a href="qnetworksession.html#close" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#close">close</a>（ ）<a href="qnetworksession.html#stop" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#stop">stop</a>（）和<a href="qnetworksession.html#isOpen" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#isOpen">isOpen</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="reject"></a>QNetworkSession.reject (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void reject()</tt>。</p>
+<p>新的接入点是不适合的应用。通过调用这个函数会返回先前的接入点/配置。这个动作可能会使已经通过不想要的接入点建立的任何插座。</p>
+<p><b>See also</b> <a href="qnetworksession.html#accept" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#accept">accept</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sessionProperty"></a>QVariant QNetworkSession.sessionProperty (<i>self</i>, QString <i>key</i>)</h3>
+<p>返回属性的值<i>key</i>。</p>
+<p>一个网络会话可以有附加这可能说明会话更详细的属性。这个函数可用于获得这些属性。</p>
+<p>下面的属性键，保证在所有平台上指定：</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td>ActiveConfiguration</td>
+<td>If the session <a href="qnetworksession.html#isOpen" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#isOpen">isOpen</a>() this property returns
+the identifier of the <a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a> that is used
+by this session; otherwise an empty string.
+<p>该键的主要目的是确定哪些互联网接入点使用，如果会话是基于<a href="qnetworkconfiguration.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#Type-enum">ServiceNetwork</a>。下面的代码片段凸显差异：</p>
+<pre class="cpp">
+ <span class="type"><a href="qnetworkconfigurationmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfigurationmanager.html">QNetworkConfigurationManager</a></span> mgr;
+ <span class="type"><a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a></span> ap <span class="operator">=</span> mgr<span class="operator">.</span>defaultConfiguration();
+ <span class="type"><a href="qnetworksession.html" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html">QNetworkSession</a></span> <span class="operator">*</span>session <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qnetworksession.html" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html">QNetworkSession</a></span>(ap);
+ <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span> <span class="comment">//code activates session</span>
+
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> ident <span class="operator">=</span> session<span class="operator">-</span><span class="operator">&gt;</span>sessionProperty(<span class="string">"ActiveConfiguration"</span>)<span class="operator">.</span>toString();
+ <span class="keyword">if</span> ( ap<span class="operator">.</span>type() <span class="operator">=</span><span class="operator">=</span> <span class="type"><a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a></span><span class="operator">.</span>ServiceNetwork ) {
+     Q_ASSERT( ap<span class="operator">.</span>identifier() <span class="operator">!</span><span class="operator">=</span> ident );
+     Q_ASSERT( ap<span class="operator">.</span>children()<span class="operator">.</span>contains( mgr<span class="operator">.</span>configurationFromIdentifier(ident) ) );
+ } <span class="keyword">else</span> <span class="keyword">if</span> ( ap<span class="operator">.</span>type() <span class="operator">=</span><span class="operator">=</span> <span class="type"><a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a></span><span class="operator">.</span>InternetAccessPoint ) {
+     Q_ASSERT( ap<span class="operator">.</span>identifier() <span class="operator">=</span><span class="operator">=</span> ident );
+ }
+</pre>
+</td>
+</tr>
+<tr class="even" valign="top">
+<td>UserChoiceConfiguration</td>
+<td>If the session <a href="qnetworksession.html#isOpen" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#isOpen">isOpen</a>() and is bound to a
+<a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a> of
+type UserChoice, this property returns the identifier of the
+<a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a> that
+the configuration resolved to when <a href="qnetworksession.html#open" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#open">open</a>() was called; otherwise an
+empty string.
+<p>这个密钥的目的是为了确定实际<a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a>该会话使用。这关键是要从不同<i>ActiveConfiguration</i>在这关键的可能会返回一个标识符为任何一个<a href="qnetworkconfiguration.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#Type-enum">service network</a>或<a href="qnetworkconfiguration.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#Type-enum">Internet access
+points</a>配置，而<i>ActiveConfiguration</i>总是返回标识符<a href="qnetworkconfiguration.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#Type-enum">Internet access points</a>配置。</p>
+</td>
+</tr>
+<tr class="odd" valign="top">
+<td>ConnectInBackground</td>
+<td>Setting this property to <i>true</i> before calling <a href="qnetworksession.html#open" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#open">open</a>() implies that the connection
+attempt is made but if no connection can be established, the user
+is not connsulted and asked to select a suitable connection. This
+property is not set by default and support for it depends on the
+platform.</td>
+</tr>
+<tr class="even" valign="top">
+<td>AutoCloseSessionTimeout</td>
+<td>If the session requires polling to keep its state up to date,
+this property holds the timeout in milliseconds before the session
+will automatically close. If the value of this property is -1 the
+session will not automatically close. This property is set to -1 by
+default.
+<p>此属性的目的是尽量减少在使用轮询来更新会话的状态平台的资源使用。应用程序可以将此属性的值设置为所需的超时之前关闭会话。响应于该<a href="qnetworksession.html#closed" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#closed">closed</a>（ ）信号的网络会话应删除，以确保所有投票已停止。一旦它再次需要该会话就可以被重建。此属性对会话不需要轮询没有影响。</p>
+</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qnetworksession.html#setSessionProperty" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#setSessionProperty">setSessionProperty</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setSessionProperty"></a>QNetworkSession.setSessionProperty (<i>self</i>, QString <i>key</i>, QVariant <i>value</i>)</h3>
+<p>设置属性<i>value</i>本届会议。该物业使用标识<i>key</i>。移除已设置的属性可以通过传递一个无效的实现<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>。</p>
+<p>注意，这个<i>UserChoiceConfiguration</i>和<i>ActiveConfiguration</i>属性是只读的，不能用这种方法来改变。</p>
+<p><b>See also</b> <a href="qnetworksession.html#sessionProperty" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#sessionProperty">sessionProperty</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="state"></a><a href="qnetworksession.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#State-enum">State</a> QNetworkSession.state (<i>self</i>)</h3>
+<p>返回会话的状态。</p>
+<p>如果会话是基于一个单一的访问点配置会话的状态是一样的相关网络接口的状态。因此，一个网络会话对象可以用来监视网络接口。</p>
+<p>A <a href="qnetworkconfiguration.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#Type-enum">QNetworkConfiguration.ServiceNetwork</a>根据会议总结了所有儿童的状态，因此返回<a href="qnetworksession.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#State-enum">Connected</a>如果状态的服务网络的至少一个<a href="qnetworkconfiguration.html#children" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#children">children()</a>配置处于活动状态。</p>
+<p>请注意，它不是必需的，以便获得网络接口的状态举行公开会议。一个连接，但闭门会议可以用来监视网络接口，而一个开放和连接的会话对象可能会阻止网络接口被关闭。</p>
+<p><b>See also</b> <a href="qnetworksession.html#error" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#error">error</a>（）和<a href="qnetworksession.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#stateChanged">stateChanged</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="stop"></a>QNetworkSession.stop (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void stop()</tt>。</p>
+<p>对失效的网络接口的所有打开的会话，因此停止了底层网络接口。此函数始终改变会话的<a href="qnetworksession.html#state" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#state">state</a>（ ）标志，以<a href="qnetworksession.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#State-enum">Disconnected</a>。</p>
+<p>在Symbian平台，一个' NetworkControl的能力是必需的全接口级站（不带能力，仅在当前会话已停止） 。</p>
+<p><b>See also</b> <a href="qnetworksession.html#open" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#open">open</a>（）和<a href="qnetworksession.html#close" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#close">close</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="waitForOpened"></a>bool QNetworkSession.waitForOpened (<i>self</i>, int <i>msecs</i> = 30000)</h3>
+<p>等待，直到会话已开盘，最高<i>msecs</i>毫秒。如果会话已经打开，则该函数返回True，否则返回False 。当它返回False的情况下，你可以调用<a href="qnetworksession.html#error" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#error">error</a>（）来确定错误的原因。</p>
+<p>下面的例子最多等待一秒要打开的会话：</p>
+<pre class="cpp">
+ session<span class="operator">-</span><span class="operator">&gt;</span><a href="qnetworksession.html#open" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#open">open</a>();
+ <span class="keyword">if</span> (session<span class="operator">-</span><span class="operator">&gt;</span>waitForOpened(<span class="number">1000</span>))
+     <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>(<span class="string">"Open!"</span>);
+</pre>
+<p>If <i>msecs</i>为-1 ，此功能将不会超时。</p>
+<p><b>See also</b> <a href="qnetworksession.html#open" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#open">open</a>（）和<a href="qnetworksession.html#error" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#error">error</a>（ ） 。</p>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="closed"></a>void closed ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>当网络会话已被关闭，这个信号被发射。</p>
+
+
+<h3 class="fn">
+<a name="error-2"></a>void error (QNetworkSession::SessionError)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时发生错误之后。该<i>error</i>参数描述发生的错误。</p>
+<p><b>See also</b> <a href="qnetworksession.html#error" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#error">error</a>（）和<a href="qnetworksession.html#errorString" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#errorString">errorString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="newConfigurationActivated"></a>void newConfigurationActivated ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射一次会话已漫游到新的接入点。应用程序可能会重新开放插座和测试新的网络链接适用性。随后，它必须要么<a href="qnetworksession.html#accept" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#accept">accept</a>（）或<a href="qnetworksession.html#reject" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#reject">reject</a>（ ）新的接入点。</p>
+<p><b>See also</b> <a href="qnetworksession.html#accept" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#accept">accept</a>（）和<a href="qnetworksession.html#reject" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#reject">reject</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="opened"></a>void opened ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>网络会话已被打开时，这个信号被发射。</p>
+<p>底层网络接口不会被只要会话保持打开关闭。请注意，此功能是依赖于<a href="qnetworkconfigurationmanager.html#Capability-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfigurationmanager.html#Capability-enum">system
+wide session support</a>。</p>
+
+
+<h3 class="fn">
+<a name="preferredConfigurationChanged"></a>void preferredConfigurationChanged (const QNetworkConfiguration&amp;,bool)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的会话更改首选配置/接入点。只有那些基于服务的网络配置会话可能会发出这样的信号。<i>config</i>可用于确定接入点的具体细节，如代理设置，并<i>isSeamless</i>指示漫游是否将打破会话的IP地址。</p>
+<p>其结果是，以该信号中的应用程序必须通过调用启动漫游过程<a href="qnetworksession.html#migrate" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#migrate">migrate</a>（ ）或选择<a href="qnetworksession.html#ignore" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#ignore">ignore</a>（ ）新的接入点。</p>
+<p>如果在漫游过程是非无缝的IP地址将改变表示一个插座变得无效。然而无缝移动可以确保本地IP地址不会改变。这是通过使用这势必会在实际链路地址的虚拟IP地址来实现。在漫游过程中，虚拟地址被附加到新的链路地址。</p>
+<p>有些平台可能支持强制漫游和应用层漫游（ ALR ）的概念。强制漫游意味着该平台可以简单地漫游到一个新的配置没有谘询应用。它是由应用程序来检测链路层的损失和重建它的插座。相比之下ALR提供的机会，以防止系统的漫游。如果这个会话是基于一个支持漫游的应用程序可以选择是否要通过连接到这个信号进行谘询（ ALR用例）的配置。只要这个信号连接保持该会话仍然注册为漫游的利益相关者，否则漫游将通过该平台实施。</p>
+<p><b>See also</b> <a href="qnetworksession.html#migrate" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#migrate">migrate</a>（ ）<a href="qnetworksession.html#ignore" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#ignore">ignore</a>（）和<a href="qnetworkconfiguration.html#isRoamingAvailable" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#isRoamingAvailable">QNetworkConfiguration.isRoamingAvailable</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="stateChanged"></a>void stateChanged (QNetworkSession::State)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的网络会话的状态改变。该<i>state</i>参数是新的状态。</p>
+<p><b>See also</b> <a href="qnetworksession.html#state" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#state">state</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

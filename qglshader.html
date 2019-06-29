@@ -1,0 +1,184 @@
+﻿<html>
+<head>
+<title>QGLShader Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QGLShader Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtopengl.html">QtOpenGL</a> module]</sup></sup>
+</h1>
+<p>该QGLShader类允许的OpenGL着色器进行编译。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qglshader-shadertype.html">ShaderType</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qglshader.html#ShaderTypeBit-enum" tppabs="http://pyqt4doc.appspot.com/qglshader.html#ShaderTypeBit-enum">ShaderTypeBit</a></b> { Vertex, Fragment, Geometry }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qglshader.html#QGLShader" tppabs="http://pyqt4doc.appspot.com/qglshader.html#QGLShader">__init__</a></b> (<i>self</i>, ShaderType <i>type</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglshader.html#QGLShader-2" tppabs="http://pyqt4doc.appspot.com/qglshader.html#QGLShader-2">__init__</a></b> (<i>self</i>, ShaderType <i>type</i>, QGLContext <i>context</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qglshader.html#compileSourceCode" tppabs="http://pyqt4doc.appspot.com/qglshader.html#compileSourceCode">compileSourceCode</a></b> (<i>self</i>, QByteArray <i>source</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qglshader.html#compileSourceCode-2" tppabs="http://pyqt4doc.appspot.com/qglshader.html#compileSourceCode-2">compileSourceCode</a></b> (<i>self</i>, QString <i>source</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qglshader.html#compileSourceFile" tppabs="http://pyqt4doc.appspot.com/qglshader.html#compileSourceFile">compileSourceFile</a></b> (<i>self</i>, QString <i>fileName</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qglshader.html#isCompiled" tppabs="http://pyqt4doc.appspot.com/qglshader.html#isCompiled">isCompiled</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qglshader.html#log" tppabs="http://pyqt4doc.appspot.com/qglshader.html#log">log</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qglshader.html#shaderId" tppabs="http://pyqt4doc.appspot.com/qglshader.html#shaderId">shaderId</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>ShaderType <b><a href="qglshader.html#shaderType" tppabs="http://pyqt4doc.appspot.com/qglshader.html#shaderType">shaderType</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qglshader.html#sourceCode" tppabs="http://pyqt4doc.appspot.com/qglshader.html#sourceCode">sourceCode</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul><li>
+<div class="fn"></div>bool <b><a href="qglshader.html#hasOpenGLShaders" tppabs="http://pyqt4doc.appspot.com/qglshader.html#hasOpenGLShaders">hasOpenGLShaders</a></b> (ShaderType <i>type</i>, QGLContext <i>context</i> = None)</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QGLShader类允许的OpenGL着色器进行编译。</p>
+<p>此类支持写在OpenGL着色语言（ GLSL ）和OpenGL的/ ES着色语言（ GLSL / ES ）的着色器。</p>
+<p>QGLShader和<a href="qglshaderprogram.html" tppabs="http://pyqt4doc.appspot.com/qglshaderprogram.html">QGLShaderProgram</a>庇护程序员的编译和连接顶点和片段着色器的详细信息。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="ShaderTypeBit-enum"></a>QGLShader.ShaderTypeBit</h3>
+<p>这个枚举指定的类型<a href="qglshader.html" tppabs="http://pyqt4doc.appspot.com/qglshader.html">QGLShader</a>正在被创建。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGLShader.Vertex</tt></td>
+<td class="topAlign"><tt>0x0001</tt></td>
+<td class="topAlign">顶点着色器编写的OpenGL着色语言（ GLSL ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGLShader.Fragment</tt></td>
+<td class="topAlign"><tt>0x0002</tt></td>
+<td class="topAlign">片段着色器编写的OpenGL着色语言（ GLSL ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGLShader.Geometry</tt></td>
+<td class="topAlign"><tt>0x0004</tt></td>
+<td class="topAlign">写在OpenGL着色语言（ GLSL ），几何着色器的基础上， GL_EXT_geometry_shader4扩展。</td>
+</tr>
+</table>
+<p>该ShaderType类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cShaderTypeBit\u003e 。它存储ShaderTypeBit值的或组合。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QGLShader"></a>QGLShader.__init__ (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qglshader-shadertype.html">ShaderType</a> <i>type</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个新的<a href="qglshader.html" tppabs="http://pyqt4doc.appspot.com/qglshader.html">QGLShader</a>指定的对象<i>type</i>并重视它<i>parent</i>。如果不支持着色器程序，<a href="qglshaderprogram.html#hasOpenGLShaderPrograms" tppabs="http://pyqt4doc.appspot.com/qglshaderprogram.html#hasOpenGLShaderPrograms">QGLShaderProgram.hasOpenGLShaderPrograms</a>（ ）将返回False 。</p>
+<p>此构造函数通常后跟调用<a href="qglshader.html#compileSourceCode" tppabs="http://pyqt4doc.appspot.com/qglshader.html#compileSourceCode">compileSourceCode</a>（）或<a href="qglshader.html#compileSourceFile" tppabs="http://pyqt4doc.appspot.com/qglshader.html#compileSourceFile">compileSourceFile</a>（ ） 。</p>
+<p>着色器将与当前相关联<a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a>。</p>
+<p><b>See also</b> <a href="qglshader.html#compileSourceCode" tppabs="http://pyqt4doc.appspot.com/qglshader.html#compileSourceCode">compileSourceCode</a>（）和<a href="qglshader.html#compileSourceFile" tppabs="http://pyqt4doc.appspot.com/qglshader.html#compileSourceFile">compileSourceFile</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QGLShader-2"></a>QGLShader.__init__ (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qglshader-shadertype.html">ShaderType</a> <i>type</i>, <a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a> <i>context</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个新的<a href="qglshader.html" tppabs="http://pyqt4doc.appspot.com/qglshader.html">QGLShader</a>指定的对象<i>type</i>并重视它<i>parent</i>。如果不支持着色器程序，然后<a href="qglshaderprogram.html#hasOpenGLShaderPrograms" tppabs="http://pyqt4doc.appspot.com/qglshaderprogram.html#hasOpenGLShaderPrograms">QGLShaderProgram.hasOpenGLShaderPrograms</a>（ ）将返回False 。</p>
+<p>此构造函数通常后跟调用<a href="qglshader.html#compileSourceCode" tppabs="http://pyqt4doc.appspot.com/qglshader.html#compileSourceCode">compileSourceCode</a>（）或<a href="qglshader.html#compileSourceFile" tppabs="http://pyqt4doc.appspot.com/qglshader.html#compileSourceFile">compileSourceFile</a>（ ） 。</p>
+<p>着色器将与相关联<i>context</i>。</p>
+<p><b>See also</b> <a href="qglshader.html#compileSourceCode" tppabs="http://pyqt4doc.appspot.com/qglshader.html#compileSourceCode">compileSourceCode</a>（）和<a href="qglshader.html#compileSourceFile" tppabs="http://pyqt4doc.appspot.com/qglshader.html#compileSourceFile">compileSourceFile</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="compileSourceCode"></a>bool QGLShader.compileSourceCode (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>source</i>)</h3>
+<p>设置<i>source</i>码本着色器和编译它。返回True如果源被成功编译，否则返回False。</p>
+<p><b>See also</b> <a href="qglshader.html#compileSourceFile" tppabs="http://pyqt4doc.appspot.com/qglshader.html#compileSourceFile">compileSourceFile</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="compileSourceCode-2"></a>bool QGLShader.compileSourceCode (<i>self</i>, QString <i>source</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>设置<i>source</i>码本着色器和编译它。返回True如果源被成功编译，否则返回False。</p>
+<p><b>See also</b> <a href="qglshader.html#compileSourceFile" tppabs="http://pyqt4doc.appspot.com/qglshader.html#compileSourceFile">compileSourceFile</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="compileSourceFile"></a>bool QGLShader.compileSourceFile (<i>self</i>, QString <i>fileName</i>)</h3>
+<p>设置此着色器中的内容的源代码<i>fileName</i>并编译它。返回True如果文件可以被打开，源代码编译，否则返回False。</p>
+<p><b>See also</b> <a href="qglshader.html#compileSourceCode" tppabs="http://pyqt4doc.appspot.com/qglshader.html#compileSourceCode">compileSourceCode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasOpenGLShaders"></a>bool QGLShader.hasOpenGLShaders (<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qglshader-shadertype.html">ShaderType</a> <i>type</i>, <a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a> <i>context</i> = None)</h3>
+<p>返回True如果类型的着色器程序<i>type</i>否则为False ;此系统上都支持。</p>
+<p>该<i>context</i>用于解析GLSL的扩展。如果<i>context</i>为null，则<a href="qglcontext.html#currentContext" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#currentContext">QGLContext.currentContext</a>（ ）被使用。</p>
+<p>此功能被引入Qt的4.7 。</p>
+
+
+<h3 class="fn">
+<a name="isCompiled"></a>bool QGLShader.isCompiled (<i>self</i>)</h3>
+<p>返回True如果着色器已被编译，否则为False 。</p>
+<p><b>See also</b> <a href="qglshader.html#compileSourceCode" tppabs="http://pyqt4doc.appspot.com/qglshader.html#compileSourceCode">compileSourceCode</a>（）和<a href="qglshader.html#compileSourceFile" tppabs="http://pyqt4doc.appspot.com/qglshader.html#compileSourceFile">compileSourceFile</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="log"></a>QString QGLShader.log (<i>self</i>)</h3>
+<p>返回上次编译期间发生的错误和警告。</p>
+<p><b>See also</b> <a href="qglshader.html#compileSourceCode" tppabs="http://pyqt4doc.appspot.com/qglshader.html#compileSourceCode">compileSourceCode</a>（）和<a href="qglshader.html#compileSourceFile" tppabs="http://pyqt4doc.appspot.com/qglshader.html#compileSourceFile">compileSourceFile</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="shaderId"></a>int QGLShader.shaderId (<i>self</i>)</h3>
+<p>返回与此相关的着色器OpenGL的标识符。</p>
+<p><b>See also</b> <a href="qglshaderprogram.html#programId" tppabs="http://pyqt4doc.appspot.com/qglshaderprogram.html#programId">QGLShaderProgram.programId</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="shaderType"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qglshader-shadertype.html">ShaderType</a> QGLShader.shaderType (<i>self</i>)</h3>
+<p>返回此着色器的类型。</p>
+
+
+<h3 class="fn">
+<a name="sourceCode"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QGLShader.sourceCode (<i>self</i>)</h3>
+<p>返回的源代码着色器。</p>
+<p><b>See also</b> <a href="qglshader.html#compileSourceCode" tppabs="http://pyqt4doc.appspot.com/qglshader.html#compileSourceCode">compileSourceCode</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

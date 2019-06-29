@@ -1,0 +1,279 @@
+﻿<html>
+<head>
+<title>QGLPixelBuffer Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QGLPixelBuffer Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtopengl.html">QtOpenGL</a> module]</sup></sup>
+</h1>
+<p>该QGLPixelBuffer类封装了一个OpenGL pbuffer的。<a href="#details">More...</a></p>
+
+<p>继承<a href="qpaintdevice.html" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html">QPaintDevice</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qglpixelbuffer.html#QGLPixelBuffer" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#QGLPixelBuffer">__init__</a></b> (<i>self</i>, QSize <i>size</i>, QGLFormat <i>format</i> = QGLFormat.defaultFormat(), QGLWidget <i>shareWidget</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglpixelbuffer.html#QGLPixelBuffer-2" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#QGLPixelBuffer-2">__init__</a></b> (<i>self</i>, int <i>width</i>, int <i>height</i>, QGLFormat <i>format</i> = QGLFormat.defaultFormat(), QGLWidget <i>shareWidget</i> = None)</li>
+<li>
+<div class="fn"></div>int <b><a href="qglpixelbuffer.html#bindTexture" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#bindTexture">bindTexture</a></b> (<i>self</i>, QImage <i>image</i>, int <i>target</i> = GL_TEXTURE_2D)</li>
+<li>
+<div class="fn"></div>int <b><a href="qglpixelbuffer.html#bindTexture-2" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#bindTexture-2">bindTexture</a></b> (<i>self</i>, QPixmap <i>pixmap</i>, int <i>target</i> = GL_TEXTURE_2D)</li>
+<li>
+<div class="fn"></div>int <b><a href="qglpixelbuffer.html#bindTexture-3" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#bindTexture-3">bindTexture</a></b> (<i>self</i>, QString <i>fileName</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qglpixelbuffer.html#bindToDynamicTexture" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#bindToDynamicTexture">bindToDynamicTexture</a></b> (<i>self</i>, int <i>texture</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglpixelbuffer.html#deleteTexture" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#deleteTexture">deleteTexture</a></b> (<i>self</i>, int <i>texture_id</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qglpixelbuffer.html#devType" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#devType">devType</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qglpixelbuffer.html#doneCurrent" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#doneCurrent">doneCurrent</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglpixelbuffer.html#drawTexture" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#drawTexture">drawTexture</a></b> (<i>self</i>, QRectF <i>target</i>, int <i>textureId</i>, int <i>textureTarget</i> = GL_TEXTURE_2D)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglpixelbuffer.html#drawTexture-2" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#drawTexture-2">drawTexture</a></b> (<i>self</i>, QPointF <i>point</i>, int <i>textureId</i>, int <i>textureTarget</i> = GL_TEXTURE_2D)</li>
+<li>
+<div class="fn"></div>QGLFormat <b><a href="qglpixelbuffer.html#format" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#format">format</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qglpixelbuffer.html#generateDynamicTexture" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#generateDynamicTexture">generateDynamicTexture</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qglpixelbuffer.html#handle" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#handle">handle</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qglpixelbuffer.html#isValid" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#isValid">isValid</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qglpixelbuffer.html#makeCurrent" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#makeCurrent">makeCurrent</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qglpixelbuffer.html#metric" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#metric">metric</a></b> (<i>self</i>, QPaintDevice.PaintDeviceMetric <i>metric</i>)</li>
+<li>
+<div class="fn"></div>QPaintEngine <b><a href="qglpixelbuffer.html#paintEngine" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#paintEngine">paintEngine</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglpixelbuffer.html#releaseFromDynamicTexture" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#releaseFromDynamicTexture">releaseFromDynamicTexture</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qglpixelbuffer.html#size" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#size">size</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QImage <b><a href="qglpixelbuffer.html#toImage" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#toImage">toImage</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglpixelbuffer.html#updateDynamicTexture" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#updateDynamicTexture">updateDynamicTexture</a></b> (<i>self</i>, int <i>texture_id</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul><li>
+<div class="fn"></div>bool <b><a href="qglpixelbuffer.html#hasOpenGLPbuffers" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#hasOpenGLPbuffers">hasOpenGLPbuffers</a></b> ()</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QGLPixelBuffer类封装了一个OpenGL pbuffer的。</p>
+<p>渲染到pbuffer的通常情况下用完整的硬件加速。这可以比渲染成显着更快<a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a>。</p>
+<p>有三种方法来使用这个类：</p>
+<ol class="1">
+<li>
+<b>We can draw into the pbuffer and convert it to a <a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> using <a href="qglpixelbuffer.html#toImage" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#toImage">toImage</a>().</b>这通常比调用更快<a href="qglwidget.html#renderPixmap" tppabs="http://pyqt4doc.appspot.com/qglwidget.html#renderPixmap">QGLWidget.renderPixmap</a>（ ） 。</li>
+<li>
+<b>We can draw into the pbuffer and copy the contents into an
+OpenGL texture using <a href="qglpixelbuffer.html#updateDynamicTexture" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#updateDynamicTexture">updateDynamicTexture</a>().</b>这使我们能够创建与pbuffer的支持所有的系统动态纹理和作品。</li>
+<li>
+<b>On systems that support it, we can bind the pbuffer to an
+OpenGL texture.</b>纹理将自动更新时， pbuffer的内容发生变化，不再需要额外的复制操作。这仅支持在Windows和Mac OS X系统，提供了<tt>render_texture</tt>扩展名。需要注意的是在Windows下，一个多采样pbuffer的不能与结合使用<tt>render_texture</tt>扩展名。如果一个多重采样pbuffer的在Windows下所要求的<tt>render_texture</tt>扩展关闭该pbuffer的。</li>
+</ol>
+<a id="threading" name="threading"></a>
+<h3>Threading</h3>
+<p>由于Qt的4.8的，有可能使用的是渲染成QGLPixelBuffer<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>在一个单独的线程。需要注意的是OpenGL的2.0或OpenGL ES 2.0的是需要这种合作。此外， X11下，有必要设置<a href="qt.html#ApplicationAttribute-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ApplicationAttribute-enum">Qt.AA_X11InitThreads</a>应用属性。</p>
+<p>pbuffers的是通过对OpenGL提供<tt>pbuffer</tt>扩展;调用hasOpenGLPbuffer （ ） ，以找出是否为系统提供pbuffers的。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QGLPixelBuffer"></a>QGLPixelBuffer.__init__ (<i>self</i>, <a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> <i>size</i>, <a href="qglformat.html" tppabs="http://pyqt4doc.appspot.com/qglformat.html">QGLFormat</a> <i>format</i> = QGLFormat.defaultFormat(), <a href="qglwidget.html" tppabs="http://pyqt4doc.appspot.com/qglwidget.html">QGLWidget</a> <i>shareWidget</i> = None)</h3>
+<p>构造给定一个OpenGL pbuffer的<i>size</i>。如果没有<i>format</i>被指定，则<a href="qglformat.html#defaultFormat" tppabs="http://pyqt4doc.appspot.com/qglformat.html#defaultFormat">default format</a>被使用。如果<i>shareWidget</i>参数指向一个有效的<a href="qglwidget.html" tppabs="http://pyqt4doc.appspot.com/qglwidget.html">QGLWidget</a>，该pbuffer的将共享其上下文<i>shareWidget</i>。</p>
+<p>如果您打算在这个pbuffer的绑定为一个动态纹理的宽度和高度组件<tt>size</tt>必须是两个（例如， 512× 128）的权力。</p>
+<p><b>See also</b> <a href="qglpixelbuffer.html#size" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#size">size</a>（）和<a href="qglpixelbuffer.html#format" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#format">format</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QGLPixelBuffer-2"></a>QGLPixelBuffer.__init__ (<i>self</i>, int <i>width</i>, int <i>height</i>, <a href="qglformat.html" tppabs="http://pyqt4doc.appspot.com/qglformat.html">QGLFormat</a> <i>format</i> = QGLFormat.defaultFormat(), <a href="qglwidget.html" tppabs="http://pyqt4doc.appspot.com/qglwidget.html">QGLWidget</a> <i>shareWidget</i> = None)</h3>
+<p>这是一个重载函数。</p>
+<p>构造一个OpenGL pbuffer的同<i>width</i>和<i>height</i>。如果没有<i>format</i>被指定，则<a href="qglformat.html#defaultFormat" tppabs="http://pyqt4doc.appspot.com/qglformat.html#defaultFormat">default format</a>被使用。如果<i>shareWidget</i>参数指向一个有效的<a href="qglwidget.html" tppabs="http://pyqt4doc.appspot.com/qglwidget.html">QGLWidget</a>，该pbuffer的将共享其上下文<i>shareWidget</i>。</p>
+<p>如果您打算在这个pbuffer的绑定为一个动态纹理的宽度和高度组件<tt>size</tt>必须是两个（例如， 512× 128）的权力。</p>
+<p><b>See also</b> <a href="qglpixelbuffer.html#size" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#size">size</a>（）和<a href="qglpixelbuffer.html#format" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#format">format</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="bindTexture"></a>int QGLPixelBuffer.bindTexture (<i>self</i>, <a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> <i>image</i>, int <i>target</i> = GL_TEXTURE_2D)</h3>
+<p>生成和二维GL纹理绑定到当前上下文的基础上，<i>image</i>。所生成的纹理ID被返回，并且可以被用于在以后glBindTexture （）调用。</p>
+<p>该<i>target</i>参数指定纹理目标。</p>
+<p>相当于调用<a href="qglcontext.html#bindTexture" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#bindTexture">QGLContext.bindTexture</a>（ ） 。</p>
+<p><b>See also</b> <a href="qglpixelbuffer.html#deleteTexture" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#deleteTexture">deleteTexture</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="bindTexture-2"></a>int QGLPixelBuffer.bindTexture (<i>self</i>, <a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a> <i>pixmap</i>, int <i>target</i> = GL_TEXTURE_2D)</h3>
+<p>这是一个重载函数。</p>
+<p>生成并根据绑定一个2D GL纹理<i>pixmap</i>。</p>
+<p>相当于调用<a href="qglcontext.html#bindTexture" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#bindTexture">QGLContext.bindTexture</a>（ ） 。</p>
+<p><b>See also</b> <a href="qglpixelbuffer.html#deleteTexture" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#deleteTexture">deleteTexture</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="bindTexture-3"></a>int QGLPixelBuffer.bindTexture (<i>self</i>, QString <i>fileName</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>读取DirectDrawSurface （ DDS ）压缩文件<i>fileName</i>并从它生成一个二维GL纹理。</p>
+<p>相当于调用<a href="qglcontext.html#bindTexture" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#bindTexture">QGLContext.bindTexture</a>（ ） 。</p>
+<p><b>See also</b> <a href="qglpixelbuffer.html#deleteTexture" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#deleteTexture">deleteTexture</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="bindToDynamicTexture"></a>bool QGLPixelBuffer.bindToDynamicTexture (<i>self</i>, int <i>texture</i>)</h3>
+<p>通过绑定指定的质感<i>texture_id</i>该pbuffer的。成功时返回TRUE ，否则返回False 。</p>
+<p>纹理必须是相同的尺寸和格式的pbuffer的的。</p>
+<p>要解除绑定纹理，呼叫<a href="qglpixelbuffer.html#releaseFromDynamicTexture" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#releaseFromDynamicTexture">releaseFromDynamicTexture</a>（ ） 。虽然质地是绑定的，它会自动更新时， pbuffer的内容发生变化，不再需要额外的复制操作。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qglpixelbuffer.html" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html">QGLPixelBuffer</a></span> pbuffer(<span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>);
+ <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ pbuffer<span class="operator">.</span><a href="qglpixelbuffer.html#makeCurrent" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#makeCurrent">makeCurrent</a>();
+ GLuint dynamicTexture <span class="operator">=</span> pbuffer<span class="operator">.</span><a href="qglpixelbuffer.html#generateDynamicTexture" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#generateDynamicTexture">generateDynamicTexture</a>();
+ pbuffer<span class="operator">.</span>bindToDynamicTexture(dynamicTexture);
+ <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ pbuffer<span class="operator">.</span><a href="qglpixelbuffer.html#releaseFromDynamicTexture" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#releaseFromDynamicTexture">releaseFromDynamicTexture</a>();
+</pre>
+<p><b>Warning:</b>该函数使用<tt>render_texture</tt>扩展，这是目前没有在X11下的支持。在所有的系统（包括X11）的作品另一种方法是手动使用pbuffer的内容复制到一个纹理<a href="qglpixelbuffer.html#updateDynamicTexture" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#updateDynamicTexture">updateDynamicTexture</a>（ ） 。</p>
+<p><b>Warning:</b>对于bindToDynamicTexture （ ）调用成功，在Mac OS X上， pbuffer的需要一个共享的情况下，即<a href="qglpixelbuffer.html" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html">QGLPixelBuffer</a>必须以份额小部件来创建。</p>
+<p><b>See also</b> <a href="qglpixelbuffer.html#generateDynamicTexture" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#generateDynamicTexture">generateDynamicTexture</a>（）和<a href="qglpixelbuffer.html#releaseFromDynamicTexture" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#releaseFromDynamicTexture">releaseFromDynamicTexture</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="deleteTexture"></a>QGLPixelBuffer.deleteTexture (<i>self</i>, int <i>texture_id</i>)</h3>
+<p>去除所确定的纹理<i>texture_id</i>从纹理高速缓存。</p>
+<p>相当于调用<a href="qglcontext.html#deleteTexture" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#deleteTexture">QGLContext.deleteTexture</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="devType"></a>int QGLPixelBuffer.devType (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="doneCurrent"></a>bool QGLPixelBuffer.doneCurrent (<i>self</i>)</h3>
+<p>是没有上下文的当前OpenGL上下文。成功时返回TRUE ，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="drawTexture"></a>QGLPixelBuffer.drawTexture (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>target</i>, int <i>textureId</i>, int <i>textureTarget</i> = GL_TEXTURE_2D)</h3>
+<p>绘制给定的质感，<i>textureId</i>向给定目标矩形，<i>target</i>在OpenGL的模型空间。该<i>textureTarget</i>应该是一个2D纹理的目标。</p>
+<p>等同于相应的<a href="qglcontext.html#drawTexture" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#drawTexture">QGLContext.drawTexture</a>（ ） 。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="drawTexture-2"></a>QGLPixelBuffer.drawTexture (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>point</i>, int <i>textureId</i>, int <i>textureTarget</i> = GL_TEXTURE_2D)</h3>
+<p>绘制给定的质感，<i>textureId</i>，在给定的<i>point</i>在OpenGL的模型空间。该textureTarget参数应该是一个2D纹理的目标。</p>
+<p>等同于相应的<a href="qglcontext.html#drawTexture" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#drawTexture">QGLContext.drawTexture</a>（ ） 。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="format"></a><a href="qglformat.html" tppabs="http://pyqt4doc.appspot.com/qglformat.html">QGLFormat</a> QGLPixelBuffer.format (<i>self</i>)</h3>
+<p>返回pbuffer的格式。该格式可以是从被请求的不同。</p>
+
+
+<h3 class="fn">
+<a name="generateDynamicTexture"></a>int QGLPixelBuffer.generateDynamicTexture (<i>self</i>)</h3>
+<p>生成并结合一个2D GL的手感是大小相同的pbuffer的，并返回该纹理的ID。这可与结合使用<a href="qglpixelbuffer.html#bindToDynamicTexture" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#bindToDynamicTexture">bindToDynamicTexture</a>（）和<a href="qglpixelbuffer.html#updateDynamicTexture" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#updateDynamicTexture">updateDynamicTexture</a>（ ） 。</p>
+<p><b>See also</b> <a href="qglpixelbuffer.html#size" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#size">size</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="handle"></a>int QGLPixelBuffer.handle (<i>self</i>)</h3>
+<p>返回本机pbuffer的句柄。</p>
+
+
+<h3 class="fn">
+<a name="hasOpenGLPbuffers"></a>bool QGLPixelBuffer.hasOpenGLPbuffers ()</h3>
+<p>返回True如果OpenGL的<tt>pbuffer</tt>扩展出现在这个系统上，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isValid"></a>bool QGLPixelBuffer.isValid (<i>self</i>)</h3>
+<p>返回True如果pbuffer的是有效的，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="makeCurrent"></a>bool QGLPixelBuffer.makeCurrent (<i>self</i>)</h3>
+<p>使得这个pbuffer的当前OpenGL渲染上下文。成功时返回TRUE ，否则返回False 。</p>
+<p><b>See also</b> <a href="qglcontext.html#makeCurrent" tppabs="http://pyqt4doc.appspot.com/qglcontext.html#makeCurrent">QGLContext.makeCurrent</a>（）和<a href="qglpixelbuffer.html#doneCurrent" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#doneCurrent">doneCurrent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="metric"></a>int QGLPixelBuffer.metric (<i>self</i>, <a href="qpaintdevice.html#PaintDeviceMetric-enum" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html#PaintDeviceMetric-enum">QPaintDevice.PaintDeviceMetric</a> <i>metric</i>)</h3>
+<p>从重新实现<a href="qpaintdevice.html#metric" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html#metric">QPaintDevice.metric</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="paintEngine"></a><a href="qpaintengine.html" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html">QPaintEngine</a> QGLPixelBuffer.paintEngine (<i>self</i>)</h3>
+<p>从重新实现<a href="qpaintdevice.html#paintEngine" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html#paintEngine">QPaintDevice.paintEngine</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="releaseFromDynamicTexture"></a>QGLPixelBuffer.releaseFromDynamicTexture (<i>self</i>)</h3>
+<p>发布任何以前绑定的质感pbuffer的。</p>
+<p><b>See also</b> <a href="qglpixelbuffer.html#bindToDynamicTexture" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#bindToDynamicTexture">bindToDynamicTexture</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="size"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QGLPixelBuffer.size (<i>self</i>)</h3>
+<p>返回pbuffer的大小。</p>
+
+
+<h3 class="fn">
+<a name="toImage"></a><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> QGLPixelBuffer.toImage (<i>self</i>)</h3>
+<p>返回pbuffer的内容作为<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>。</p>
+
+
+<h3 class="fn">
+<a name="updateDynamicTexture"></a>QGLPixelBuffer.updateDynamicTexture (<i>self</i>, int <i>texture_id</i>)</h3>
+<p>与指定复制pbuffer的内容到纹理<i>texture_id</i>。</p>
+<p>纹理必须是相同的尺寸和格式的pbuffer的的。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qglpixelbuffer.html" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html">QGLPixelBuffer</a></span> pbuffer(<span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>);
+ <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ pbuffer<span class="operator">.</span><a href="qglpixelbuffer.html#makeCurrent" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#makeCurrent">makeCurrent</a>();
+ GLuint dynamicTexture <span class="operator">=</span> pbuffer<span class="operator">.</span><a href="qglpixelbuffer.html#generateDynamicTexture" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#generateDynamicTexture">generateDynamicTexture</a>();
+ <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ pbuffer<span class="operator">.</span>updateDynamicTexture(dynamicTexture);
+</pre>
+<p>在支持Windows和Mac OS X系统的替代<tt>render_texture</tt>分机是用<a href="qglpixelbuffer.html#bindToDynamicTexture" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#bindToDynamicTexture">bindToDynamicTexture</a>（）来获取纹理的动态更新。</p>
+<p><b>See also</b> <a href="qglpixelbuffer.html#generateDynamicTexture" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#generateDynamicTexture">generateDynamicTexture</a>（）和<a href="qglpixelbuffer.html#bindToDynamicTexture" tppabs="http://pyqt4doc.appspot.com/qglpixelbuffer.html#bindToDynamicTexture">bindToDynamicTexture</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

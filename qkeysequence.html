@@ -1,0 +1,1216 @@
+﻿<html>
+<head>
+<title>QKeySequence Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QKeySequence Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QKeySequence类封装所使用的快捷键的按键顺序。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qkeysequence.html#SequenceFormat-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#SequenceFormat-enum">SequenceFormat</a></b> { NativeText, PortableText }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qkeysequence.html#SequenceMatch-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#SequenceMatch-enum">SequenceMatch</a></b> { NoMatch, PartialMatch, ExactMatch }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">StandardKey</a></b> { UnknownKey, HelpContents, WhatsThis, Open, ..., Quit }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qkeysequence.html#QKeySequence" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#QKeySequence">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qkeysequence.html#QKeySequence-2" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#QKeySequence-2">__init__</a></b> (<i>self</i>, QKeySequence <i>ks</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qkeysequence.html#QKeySequence-3" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#QKeySequence-3">__init__</a></b> (<i>self</i>, QString <i>key</i>, SequenceFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qkeysequence.html#QKeySequence-4" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#QKeySequence-4">__init__</a></b> (<i>self</i>, int <i>k1</i>, int <i>key2</i> = 0, int <i>key3</i> = 0, int <i>key4</i> = 0)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qkeysequence.html#QKeySequence-5" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#QKeySequence-5">__init__</a></b> (<i>self</i>, QVariant <i>variant</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qkeysequence.html#count" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#count">count</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qkeysequence.html#isDetached" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#isDetached">isDetached</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qkeysequence.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#isEmpty">isEmpty</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>SequenceMatch <b><a href="qkeysequence.html#matches" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#matches">matches</a></b> (<i>self</i>, QKeySequence <i>seq</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qkeysequence.html#swap" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#swap">swap</a></b> (<i>self</i>, QKeySequence <i>other</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qkeysequence.html#toString" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#toString">toString</a></b> (<i>self</i>, SequenceFormat <i>format</i> = QKeySequence.PortableText)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QKeySequence <b><a href="qkeysequence.html#fromString" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#fromString">fromString</a></b> (QString <i>str</i>, SequenceFormat <i>format</i> = QKeySequence.PortableText)</li>
+<li>
+<div class="fn"></div>list-of-QKeySequence <b><a href="qkeysequence.html#keyBindings" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#keyBindings">keyBindings</a></b> (StandardKey <i>key</i>)</li>
+<li>
+<div class="fn"></div>QKeySequence <b><a href="qkeysequence.html#mnemonic" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#mnemonic">mnemonic</a></b> (QString <i>text</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>bool <b><a href="qkeysequence.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#__eq__">__eq__</a></b> (<i>self</i>, QKeySequence <i>other</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qkeysequence.html#__ge__" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#__ge__">__ge__</a></b> (<i>self</i>, QKeySequence <i>other</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qkeysequence.html#__getitem__" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#__getitem__">__getitem__</a></b> (<i>self</i>, int <i>i</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qkeysequence.html#__gt__" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#__gt__">__gt__</a></b> (<i>self</i>, QKeySequence <i>other</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qkeysequence.html#__int__" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#__int__">__int__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qkeysequence.html#__le__" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#__le__">__le__</a></b> (<i>self</i>, QKeySequence <i>other</i>)</li>
+<li>
+<div class="fn"></div> <b><a href="qkeysequence.html#__len__" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#__len__">__len__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qkeysequence.html#__lt__" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#__lt__">__lt__</a></b> (<i>self</i>, QKeySequence <i>ks</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qkeysequence.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#__ne__">__ne__</a></b> (<i>self</i>, QKeySequence <i>other</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>这个类可以醃制。</p>
+<p>
+    <a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">StandardKey</a>，<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>或Python的int对象可随时使用<a href="qkeysequence.html" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html">QKeySequence</a>预计。</p>
+  <p>该QKeySequence类封装所使用的快捷键的按键顺序。</p>
+<p>在其最常见的形式中，一个键序列描述了必须一起使用，以执行某些操作键的组合。密钥序列用于与<a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a>对象到指定键盘快捷键可以用来触发动作。</p>
+<p>键序列可以用作键盘快捷键在三种不同的方式来构造：</p>
+<ul>
+<li>For standard shortcuts, a <a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">standard key</a> can be used
+to request the platform-specific key sequence associated with each
+shortcut.</li>
+<li>For custom shortcuts, human-readable strings such as "Ctrl+X"
+can be used, and these can be translated into the appropriate
+shortcuts for users of different languages. Translations are made
+in the "<a href="qshortcut.html" tppabs="http://pyqt4doc.appspot.com/qshortcut.html">QShortcut</a>" context.</li>
+<li>For hard-coded shortcuts, integer key codes can be specified
+with a combination of values defined by the <a href="qt.html#Key-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Key-enum">Qt.Key</a> and <a href="qt.html#Modifier-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Modifier-enum">Qt.Modifier</a> enum values. Each key code
+consists of a single <a href="qt.html#Key-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Key-enum">Qt.Key</a> value
+and zero or more modifiers, such as <a href="qt.html#Modifier-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Modifier-enum">Qt.SHIFT</a>, <a href="qt.html#Modifier-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Modifier-enum">Qt.CTRL</a>, <a href="qt.html#Modifier-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Modifier-enum">Qt.ALT</a> and <a href="qt.html#Modifier-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Modifier-enum">Qt.META</a>.</li>
+</ul>
+<p>例如，<b>Ctrl P</b>可能用作用于打印文档的快捷方式的序列，并且可以在以下任一方式来指定：</p>
+<pre class="cpp">
+ <span class="type">QKeySequence</span>(<span class="type">QKeySequence</span><span class="operator">.</span>Print);
+ <span class="type">QKeySequence</span>(tr(<span class="string">"Ctrl+P"</span>));
+ <span class="type">QKeySequence</span>(tr(<span class="string">"Ctrl+p"</span>));
+ <span class="type">QKeySequence</span>(<span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>CTRL <span class="operator">+</span> <span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>Key_P);
+</pre>
+<p>需要注意的是，对于字母，在规范字符串的情况下并不重要。在上面的例子中，用户并不需要按住<b>Shift</b>键激活用的“Ctrl + P ”指定一个快捷方式。然而，对于其他的键，使用<b>Shift</b>作为一个未指定的额外修饰键会导致混乱的键盘布局不同，所使用的那些开发者的应用程序的用户。请参阅<a href="#keyboard-layout-issues">Keyboard Layout Issues</a>下面的部分获取更多细节。</p>
+<p>优选的是，其中可以使用标准的快捷方式。当创建非标准的快捷键按键顺序，你应该使用人类可读的字符串优先于硬编码的整数值。</p>
+<p>QKeySequence对象可以强制转换为<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>取得该序列的人类可读的翻译版本。类似地，<a href="qkeysequence.html#toString" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#toString">toString</a>（ ）函数生成的菜单人类可读的字符串使用。在Mac OS X ，适当的符号是用来使用的Macintosh键盘上的特殊键来形容键盘快捷键。</p>
+<p>指定硬编码键码的另一种方法是使用字符的Unicode代码点，例如， 'A'给出了相同的键顺序<a href="qt.html#Key-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Key-enum">Qt.Key_A</a>。</p>
+<p><b>Note:</b>在Mac OS X中，提及“ Ctrl”键，<a href="qt.html#Modifier-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Modifier-enum">Qt.CTRL</a>， Qt.Control和<a href="qt.html#KeyboardModifier-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#KeyboardModifier-enum">Qt.ControlModifier</a>对应于<b>Command</b>键在Macintosh键盘上，而凡提述“元” ，<a href="qt.html#Modifier-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Modifier-enum">Qt.META</a>， Qt.Meta和<a href="qt.html#KeyboardModifier-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#KeyboardModifier-enum">Qt.MetaModifier</a>对应于<b>Control</b>键。在Mac OS X开发人员可以使用相同的快捷键说明在所有平台，并如预期般在Mac OS X的应用程序会自动工作</p>
+<a id="standard-shortcuts" name="standard-shortcuts"></a>
+<h3>Standard Shortcuts</h3>
+<p>QKeySequence定义了许多<a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">standard keyboard
+shortcuts</a>减少设置操作在一个典型的应用程序时所需的努力的量。下表显示了通常由四个广泛使用的平台的应用程序中使用这些标准的快捷方式一些常见的键序列。请注意，在Mac OS X中，<b>Ctrl</b>值对应于<b>Command</b>键在Macintosh键盘上，并且<b>Meta</b>值对应于<b>Control</b>键。</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">StandardKey</a></th>
+<th>Windows</th>
+<th>Mac OS X</th>
+<th>KDE</th>
+<th>GNOME</th>
+<th>S60</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">HelpContents</a></td>
+<td>F1</td>
+<td>Ctrl+?</td>
+<td>F1</td>
+<td>F1</td>
+<td>F2</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">WhatsThis</a></td>
+<td>Shift+F1</td>
+<td>Shift+F1</td>
+<td>Shift+F1</td>
+<td>Shift+F1</td>
+<td>Shift+F1</td>
+</tr>
+<tr class="odd" valign="top">
+<td>Open</td>
+<td>Ctrl+O</td>
+<td>Ctrl+O</td>
+<td>Ctrl+O</td>
+<td>Ctrl+O</td>
+<td>(none)</td>
+</tr>
+<tr class="even" valign="top">
+<td>Close</td>
+<td>Ctrl+F4, Ctrl+W</td>
+<td>Ctrl+W, Ctrl+F4</td>
+<td>Ctrl+W</td>
+<td>Ctrl+W</td>
+<td>(none)</td>
+</tr>
+<tr class="odd" valign="top">
+<td>Save</td>
+<td>Ctrl+S</td>
+<td>Ctrl+S</td>
+<td>Ctrl+S</td>
+<td>Ctrl+S</td>
+<td>(none)</td>
+</tr>
+<tr class="even" valign="top">
+<td>Quit</td>
+<td></td>
+<td>Ctrl+Q</td>
+<td>Qtrl+Q</td>
+<td>Qtrl+Q</td>
+<td>(none)</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">SaveAs</a></td>
+<td></td>
+<td>Ctrl+Shift+S</td>
+<td></td>
+<td>Ctrl+Shift+S</td>
+<td>(none)</td>
+</tr>
+<tr class="even" valign="top">
+<td>New</td>
+<td>Ctrl+N</td>
+<td>Ctrl+N</td>
+<td>Ctrl+N</td>
+<td>Ctrl+N</td>
+<td>(none)</td>
+</tr>
+<tr class="odd" valign="top">
+<td>Delete</td>
+<td>Del</td>
+<td>Del, Meta+D</td>
+<td>Del, Ctrl+D</td>
+<td>Del, Ctrl+D</td>
+<td>Del</td>
+</tr>
+<tr class="even" valign="top">
+<td>Cut</td>
+<td>Ctrl+X, Shift+Del</td>
+<td>Ctrl+X</td>
+<td>Ctrl+X, F20, Shift+Del</td>
+<td>Ctrl+X, F20, Shift+Del</td>
+<td>Ctrl+X</td>
+</tr>
+<tr class="odd" valign="top">
+<td>Copy</td>
+<td>Ctrl+C, Ctrl+Ins</td>
+<td>Ctrl+C</td>
+<td>Ctrl+C, F16, Ctrl+Ins</td>
+<td>Ctrl+C, F16, Ctrl+Ins</td>
+<td>Ctrl+C</td>
+</tr>
+<tr class="even" valign="top">
+<td>Paste</td>
+<td>Ctrl+V, Shift+Ins</td>
+<td>Ctrl+V</td>
+<td>Ctrl+V, F18, Shift+Ins</td>
+<td>Ctrl+V, F18, Shift+Ins</td>
+<td>Ctrl+V</td>
+</tr>
+<tr class="odd" valign="top">
+<td>Preferences</td>
+<td></td>
+<td>Ctrl+,</td>
+<td></td>
+<td></td>
+<td>(none)</td>
+</tr>
+<tr class="even" valign="top">
+<td>Undo</td>
+<td>Ctrl+Z, Alt+Backspace</td>
+<td>Ctrl+Z</td>
+<td>Ctrl+Z, F14</td>
+<td>Ctrl+Z, F14</td>
+<td>Ctrl+Z</td>
+</tr>
+<tr class="odd" valign="top">
+<td>Redo</td>
+<td>Ctrl+Y, Shift+Ctrl+Z, Alt+Shift+Backspace</td>
+<td>Ctrl+Shift+Z</td>
+<td>Ctrl+Shift+Z</td>
+<td>Ctrl+Shift+Z</td>
+<td>(none)</td>
+</tr>
+<tr class="even" valign="top">
+<td>Back</td>
+<td>Alt+Left, Backspace</td>
+<td>Ctrl+[</td>
+<td>Alt+Left</td>
+<td>Alt+Left</td>
+<td>(none)</td>
+</tr>
+<tr class="odd" valign="top">
+<td>Forward</td>
+<td>Alt+Right, Shift+Backspace</td>
+<td>Ctrl+]</td>
+<td>Alt+Right</td>
+<td>Alt+Right</td>
+<td>(none)</td>
+</tr>
+<tr class="even" valign="top">
+<td>Refresh</td>
+<td>F5</td>
+<td>F5</td>
+<td>F5</td>
+<td>Ctrl+R, F5</td>
+<td>(none)</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">ZoomIn</a></td>
+<td>Ctrl+Plus</td>
+<td>Ctrl+Plus</td>
+<td>Ctrl+Plus</td>
+<td>Ctrl+Plus</td>
+<td>(none)</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">ZoomOut</a></td>
+<td>Ctrl+Minus</td>
+<td>Ctrl+Minus</td>
+<td>Ctrl+Minus</td>
+<td>Ctrl+Minus</td>
+<td>(none)</td>
+</tr>
+<tr class="odd" valign="top">
+<td>Print</td>
+<td>Ctrl+P</td>
+<td>Ctrl+P</td>
+<td>Ctrl+P</td>
+<td>Ctrl+P</td>
+<td>(none)</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">AddTab</a></td>
+<td>Ctrl+T</td>
+<td>Ctrl+T</td>
+<td>Ctrl+Shift+N, Ctrl+T</td>
+<td>Ctrl+T</td>
+<td>(none)</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">NextChild</a></td>
+<td>Ctrl+Tab, Forward, Ctrl+F6</td>
+<td>Ctrl+}, Forward, Ctrl+Tab</td>
+<td>Ctrl+Tab, Forward, Ctrl+Comma</td>
+<td>Ctrl+Tab, Forward</td>
+<td>(none)</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">PreviousChild</a></td>
+<td>Ctrl+Shift+Tab, Back, Ctrl+Shift+F6</td>
+<td>Ctrl+{, Back, Ctrl+Shift+Tab</td>
+<td>Ctrl+Shift+Tab, Back, Ctrl+Period</td>
+<td>Ctrl+Shift+Tab, Back</td>
+<td>(none)</td>
+</tr>
+<tr class="odd" valign="top">
+<td>Find</td>
+<td>Ctrl+F</td>
+<td>Ctrl+F</td>
+<td>Ctrl+F</td>
+<td>Ctrl+F</td>
+<td>(none)</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">FindNext</a></td>
+<td>F3, Ctrl+G</td>
+<td>Ctrl+G</td>
+<td>F3</td>
+<td>Ctrl+G, F3</td>
+<td>(none)</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">FindPrevious</a></td>
+<td>Shift+F3, Ctrl+Shift+G</td>
+<td>Ctrl+Shift+G</td>
+<td>Shift+F3</td>
+<td>Ctrl+Shift+G, Shift+F3</td>
+<td>(none)</td>
+</tr>
+<tr class="even" valign="top">
+<td>Replace</td>
+<td>Ctrl+H</td>
+<td>(none)</td>
+<td>Ctrl+R</td>
+<td>Ctrl+H</td>
+<td>(none)</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">SelectAll</a></td>
+<td>Ctrl+A</td>
+<td>Ctrl+A</td>
+<td>Ctrl+A</td>
+<td>Ctrl+A</td>
+<td>(none)</td>
+</tr>
+<tr class="even" valign="top">
+<td>Bold</td>
+<td>Ctrl+B</td>
+<td>Ctrl+B</td>
+<td>Ctrl+B</td>
+<td>Ctrl+B</td>
+<td>(none)</td>
+</tr>
+<tr class="odd" valign="top">
+<td>Italic</td>
+<td>Ctrl+I</td>
+<td>Ctrl+I</td>
+<td>Ctrl+I</td>
+<td>Ctrl+I</td>
+<td>(none)</td>
+</tr>
+<tr class="even" valign="top">
+<td>Underline</td>
+<td>Ctrl+U</td>
+<td>Ctrl+U</td>
+<td>Ctrl+U</td>
+<td>Ctrl+U</td>
+<td>(none)</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">MoveToNextChar</a></td>
+<td>Right</td>
+<td>Right</td>
+<td>Right</td>
+<td>Right</td>
+<td>Right</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">MoveToPreviousChar</a></td>
+<td>Left</td>
+<td>Left</td>
+<td>Left</td>
+<td>Left</td>
+<td>Left</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">MoveToNextWord</a></td>
+<td>Ctrl+Right</td>
+<td>Alt+Right</td>
+<td>Ctrl+Right</td>
+<td>Ctrl+Right</td>
+<td>Ctrl+Right</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">MoveToPreviousWord</a></td>
+<td>Ctrl+Left</td>
+<td>Alt+Left</td>
+<td>Ctrl+Left</td>
+<td>Ctrl+Left</td>
+<td>Ctrl+Left</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">MoveToNextLine</a></td>
+<td>Down</td>
+<td>Down</td>
+<td>Down</td>
+<td>Down</td>
+<td>Down</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">MoveToPreviousLine</a></td>
+<td>Up</td>
+<td>Up</td>
+<td>Up</td>
+<td>Up</td>
+<td>Up</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">MoveToNextPage</a></td>
+<td>PgDown</td>
+<td>PgDown, Alt+PgDown, Meta+Down, Meta+PgDown</td>
+<td>PgDown</td>
+<td>PgDown</td>
+<td>PgDown</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">MoveToPreviousPage</a></td>
+<td>PgUp</td>
+<td>PgUp, Alt+PgUp, Meta+Up, Meta+PgUp</td>
+<td>PgUp</td>
+<td>PgUp</td>
+<td>PgUp</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">MoveToStartOfLine</a></td>
+<td>Home</td>
+<td>Ctrl+Left, Meta+Left</td>
+<td>Home</td>
+<td>Home</td>
+<td>Home</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">MoveToEndOfLine</a></td>
+<td>End</td>
+<td>Ctrl+Right, Meta+Right</td>
+<td>End</td>
+<td>End</td>
+<td>End</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">MoveToStartOfBlock</a></td>
+<td>(none)</td>
+<td>Alt+Up, Meta+A</td>
+<td>(none)</td>
+<td>(none)</td>
+<td>(none)</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">MoveToEndOfBlock</a></td>
+<td>(none)</td>
+<td>Alt+Down, Meta+E</td>
+<td>(none)</td>
+<td>(none)</td>
+<td>(none)</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">MoveToStartOfDocument</a></td>
+<td>Ctrl+Home</td>
+<td>Ctrl+Up, Home</td>
+<td>Ctrl+Home</td>
+<td>Ctrl+Home</td>
+<td>Ctrl+Home</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">MoveToEndOfDocument</a></td>
+<td>Ctrl+End</td>
+<td>Ctrl+Down, End</td>
+<td>Ctrl+End</td>
+<td>Ctrl+End</td>
+<td>Ctrl+End</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">SelectNextChar</a></td>
+<td>Shift+Right</td>
+<td>Shift+Right</td>
+<td>Shift+Right</td>
+<td>Shift+Right</td>
+<td>Shift+Right</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">SelectPreviousChar</a></td>
+<td>Shift+Left</td>
+<td>Shift+Left</td>
+<td>Shift+Left</td>
+<td>Shift+Left</td>
+<td>Shift+Left</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">SelectNextWord</a></td>
+<td>Ctrl+Shift+Right</td>
+<td>Alt+Shift+Right</td>
+<td>Ctrl+Shift+Right</td>
+<td>Ctrl+Shift+Right</td>
+<td>Ctrl+Shift+Right</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">SelectPreviousWord</a></td>
+<td>Ctrl+Shift+Left</td>
+<td>Alt+Shift+Left</td>
+<td>Ctrl+Shift+Left</td>
+<td>Ctrl+Shift+Left</td>
+<td>Ctrl+Shift+Left</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">SelectNextLine</a></td>
+<td>Shift+Down</td>
+<td>Shift+Down</td>
+<td>Shift+Down</td>
+<td>Shift+Down</td>
+<td>Shift+Down</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">SelectPreviousLine</a></td>
+<td>Shift+Up</td>
+<td>Shift+Up</td>
+<td>Shift+Up</td>
+<td>Shift+Up</td>
+<td>Shift+Up</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">SelectNextPage</a></td>
+<td>Shift+PgDown</td>
+<td>Shift+PgDown</td>
+<td>Shift+PgDown</td>
+<td>Shift+PgDown</td>
+<td>Shift+PgDown</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">SelectPreviousPage</a></td>
+<td>Shift+PgUp</td>
+<td>Shift+PgUp</td>
+<td>Shift+PgUp</td>
+<td>Shift+PgUp</td>
+<td>Shift+PgUp</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">SelectStartOfLine</a></td>
+<td>Shift+Home</td>
+<td>Ctrl+Shift+Left</td>
+<td>Shift+Home</td>
+<td>Shift+Home</td>
+<td>Shift+Home</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">SelectEndOfLine</a></td>
+<td>Shift+End</td>
+<td>Ctrl+Shift+Right</td>
+<td>Shift+End</td>
+<td>Shift+End</td>
+<td>Shift+End</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">SelectStartOfBlock</a></td>
+<td>(none)</td>
+<td>Alt+Shift+Up, Meta+Shift+A</td>
+<td>(none)</td>
+<td>(none)</td>
+<td>(none)</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">SelectEndOfBlock</a></td>
+<td>(none)</td>
+<td>Alt+Shift+Down, Meta+Shift+E</td>
+<td>(none)</td>
+<td>(none)</td>
+<td>(none)</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">SelectStartOfDocument</a></td>
+<td>Ctrl+Shift+Home</td>
+<td>Ctrl+Shift+Up, Shift+Home</td>
+<td>Ctrl+Shift+Home</td>
+<td>Ctrl+Shift+Home</td>
+<td>Ctrl+Shift+Home</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">SelectEndOfDocument</a></td>
+<td>Ctrl+Shift+End</td>
+<td>Ctrl+Shift+Down, Shift+End</td>
+<td>Ctrl+Shift+End</td>
+<td>Ctrl+Shift+End</td>
+<td>Ctrl+Shift+End</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">DeleteStartOfWord</a></td>
+<td>Ctrl+Backspace</td>
+<td>Alt+Backspace</td>
+<td>Ctrl+Backspace</td>
+<td>Ctrl+Backspace</td>
+<td>(none)</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">DeleteEndOfWord</a></td>
+<td>Ctrl+Del</td>
+<td>(none)</td>
+<td>Ctrl+Del</td>
+<td>Ctrl+Del</td>
+<td>(none)</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">DeleteEndOfLine</a></td>
+<td>(none)</td>
+<td>(none)</td>
+<td>Ctrl+K</td>
+<td>Ctrl+K</td>
+<td>(none)</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">InsertParagraphSeparator</a></td>
+<td>Enter</td>
+<td>Enter</td>
+<td>Enter</td>
+<td>Enter</td>
+<td>(none)</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">InsertLineSeparator</a></td>
+<td>Shift+Enter</td>
+<td>Meta+Enter</td>
+<td>Shift+Enter</td>
+<td>Shift+Enter</td>
+<td>(none)</td>
+</tr>
+</table>
+<p>需要注意的是，由于用于标准的快捷方式键顺序的平台之间的不同，你还需要在每个平台上测试你的快捷方式，以确保您不会意外分配相同的密钥序列的许多行动。</p>
+<a id="keyboard-layout-issues" name="keyboard-layout-issues"></a>
+<h3>Keyboard Layout Issues</h3>
+<p>许多关键序列规格是由基于某些类型的键盘布局，而不是选择代表一个动作的名称的第一个字母键，如开发商选择<b>Ctrl S</b>（ “ Ctrl + S键” ）或<b>Ctrl C</b>（ “ Ctrl + C键” ） 。此外，由于某些符号只能用组合键对某些键盘布局的帮助输入，用于与一种键盘布局使用按键序列可以映射到一个不同的密钥，地图无钥匙可言，或者需要额外的辅助键来用在不同的键盘布局。</p>
+<p>例如，快捷方式，<b>Ctrl plus</b>和<b>Ctrl
+minus</b>，通常被用作用于图形应用缩放操作的快捷键，并且这些可以的“Ctrl +  - ”指定的“Ctrl + + ”和分别。然而，这些快捷方式指定和解释的方式取决于键盘布局。挪威键盘的用户会注意到，<b>+</b>和<b>-</b>键不是键盘上相邻，但仍然能够激活两个快捷键，而不需要按下<b>Shift</b>键。然而，用户与英国的键盘需要按住<b>Shift</b>键进入<b>+</b>符号，使得快捷有效地同为“ Ctrl + Shift + = ” 。</p>
+<p>虽然有些开发商可能会采取完全指定所有他们用自己的键盘来启动快捷方式的改性剂，这也将导致不同的键盘布局的用户意外行为。</p>
+<p>例如，使用英国键盘的显影剂可能会决定指定“ Ctrl + Shift + =”作为密钥序列，以便创建巧合的行为以同样的方式作为快捷方式<b>Ctrl
+plus</b>。然而，本<b>=</b>键需要使用被访问的<b>Shift</b>挪威键盘上的按键，有效地使所需要的快捷方式<b>Ctrl Shift Shift =</b>（一个不可能的组合键） 。</p>
+<p>其结果是，两个人可读的字符串和硬编码的密钥代码既可以是有问题的指定可以在各种不同的键盘布局中使用的键序列时使用。只有使用<a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">standard
+shortcuts</a>保证了用户将能够使用该开发人员的意图的快捷方式。</p>
+<p>尽管这样，我们就可以通过确保人类可读的字符串的使用，从而有可能为不同语言的用户作出键序列的翻译解决这个问题。这种方法会成功的用户，其键盘对他们所使用的语言是最典型布局。</p>
+<a id="gnu-emacs-style-key-sequences" name="gnu-emacs-style-key-sequences"></a>
+<h3>GNU Emacs Style Key Sequences</h3>
+<p>类似于使用键序列<a href="http://www.gnu.org/software/emacs/">GNU Emacs</a>，允许最多四个按键代码，可以通过使用多个参数的构造函数，或者通过逗号分隔的键序列的人类可读的字符串被创建。</p>
+<p>例如，密钥序列<b>Ctrl X</b>其次是<b>Ctrl
+C</b>，可以使用以下任一方式来指定：</p>
+<pre class="cpp">
+ <span class="type">QKeySequence</span>(tr(<span class="string">"Ctrl+X, Ctrl+C"</span>));
+ <span class="type">QKeySequence</span>(<span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>CTRL <span class="operator">+</span> <span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>Key_X<span class="operator">,</span> <span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>CTRL <span class="operator">+</span> <span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>Key_C);
+</pre>
+<p><b>Warning:</b> A <a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a>实例必须已建成创建QKeySequence之前，否则，你的应用程序可能会崩溃。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="SequenceFormat-enum"></a>QKeySequence.SequenceFormat</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.NativeText</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该密钥序列为平台特定的字符串。这意味着，它将会显示翻译并在Mac上它会像一个键序列从菜单栏。当你想要显示的字符串给用户这个枚举最好用。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.PortableText</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">键序列中给出一个“便携式”的格式，适合阅读和写入文件。在许多情况下，它看起来将类似于在Windows和X11原生文本。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="SequenceMatch-enum"></a>QKeySequence.SequenceMatch</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.NoMatch</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该键序列是不同的，不甚至部分匹配。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.PartialMatch</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该键序列匹配部分，但也不尽相同。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.ExactMatch</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">密钥序列是相同的。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="StandardKey-enum"></a>QKeySequence.StandardKey</h3>
+<p>这个枚举表示标准的键绑定。它们可以用于分配依赖于平台的键盘快捷键，一<a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a>。</p>
+<p>请注意，键绑定是平台相关的。当前绑定的快捷键可以使用查询<a href="qkeysequence.html#keyBindings" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#keyBindings">keyBindings</a>（ ） 。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.AddTab</tt></td>
+<td class="topAlign"><tt>19</tt></td>
+<td class="topAlign">添加新的选项卡。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.Back</tt></td>
+<td class="topAlign"><tt>13</tt></td>
+<td class="topAlign">导航回。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.Bold</tt></td>
+<td class="topAlign"><tt>27</tt></td>
+<td class="topAlign">粗体文本。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.Close</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">关闭文件/选项卡。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.Copy</tt></td>
+<td class="topAlign"><tt>9</tt></td>
+<td class="topAlign">复制。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.Cut</tt></td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">切。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.Delete</tt></td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">删除。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.DeleteEndOfLine</tt></td>
+<td class="topAlign"><tt>60</tt></td>
+<td class="topAlign">删除行尾。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.DeleteEndOfWord</tt></td>
+<td class="topAlign"><tt>59</tt></td>
+<td class="topAlign">从游标的末尾删除单词。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.DeleteStartOfWord</tt></td>
+<td class="topAlign"><tt>58</tt></td>
+<td class="topAlign">删除一个字到光标的开始。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.Find</tt></td>
+<td class="topAlign"><tt>22</tt></td>
+<td class="topAlign">查找文件。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.FindNext</tt></td>
+<td class="topAlign"><tt>23</tt></td>
+<td class="topAlign">查找下一个结果。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.FindPrevious</tt></td>
+<td class="topAlign"><tt>24</tt></td>
+<td class="topAlign">查找上一个结果。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.Forward</tt></td>
+<td class="topAlign"><tt>14</tt></td>
+<td class="topAlign">向前导航。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.HelpContents</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">打开帮助内容。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QKeySequence.InsertLineSeparator</tt>
+</td>
+<td class="topAlign"><tt>62</tt></td>
+<td class="topAlign">插入一个新行。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QKeySequence.InsertParagraphSeparator</tt>
+</td>
+<td class="topAlign"><tt>61</tt></td>
+<td class="topAlign">插入一个新的段落。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.Italic</tt></td>
+<td class="topAlign"><tt>28</tt></td>
+<td class="topAlign">斜体文本。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.MoveToEndOfBlock</tt></td>
+<td class="topAlign"><tt>41</tt></td>
+<td class="topAlign">移动光标到块的结尾。此快捷方式仅用于在OS X。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QKeySequence.MoveToEndOfDocument</tt>
+</td>
+<td class="topAlign"><tt>43</tt></td>
+<td class="topAlign">将光标移动到文件末尾。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.MoveToEndOfLine</tt></td>
+<td class="topAlign"><tt>39</tt></td>
+<td class="topAlign">移动光标到行尾。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.MoveToNextChar</tt></td>
+<td class="topAlign"><tt>30</tt></td>
+<td class="topAlign">将光标移动到下一个字符。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.MoveToNextLine</tt></td>
+<td class="topAlign"><tt>34</tt></td>
+<td class="topAlign">将光标移动到下一行。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.MoveToNextPage</tt></td>
+<td class="topAlign"><tt>36</tt></td>
+<td class="topAlign">将光标移动到下一个页面。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.MoveToNextWord</tt></td>
+<td class="topAlign"><tt>32</tt></td>
+<td class="topAlign">将光标移动到下一个单词。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.MoveToPreviousChar</tt></td>
+<td class="topAlign"><tt>31</tt></td>
+<td class="topAlign">将光标移动到前一个字符。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.MoveToPreviousLine</tt></td>
+<td class="topAlign"><tt>35</tt></td>
+<td class="topAlign">移动光标到上一行。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.MoveToPreviousPage</tt></td>
+<td class="topAlign"><tt>37</tt></td>
+<td class="topAlign">将光标移动到上一个页面。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.MoveToPreviousWord</tt></td>
+<td class="topAlign"><tt>33</tt></td>
+<td class="topAlign">将光标移动到前一个单词。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.MoveToStartOfBlock</tt></td>
+<td class="topAlign"><tt>40</tt></td>
+<td class="topAlign">将光标移动到开始一个块。此快捷方式仅用于OS X。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QKeySequence.MoveToStartOfDocument</tt>
+</td>
+<td class="topAlign"><tt>42</tt></td>
+<td class="topAlign">移动光标到启动文件。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.MoveToStartOfLine</tt></td>
+<td class="topAlign"><tt>38</tt></td>
+<td class="topAlign">移动光标到行首。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.New</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">创建新文档。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.NextChild</tt></td>
+<td class="topAlign"><tt>20</tt></td>
+<td class="topAlign">导航到下一个选项卡或子窗口。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.Open</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">打开的文档。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.Paste</tt></td>
+<td class="topAlign"><tt>10</tt></td>
+<td class="topAlign">粘贴。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.Preferences</tt></td>
+<td class="topAlign"><tt>64</tt></td>
+<td class="topAlign">打开选项对话框。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.PreviousChild</tt></td>
+<td class="topAlign"><tt>21</tt></td>
+<td class="topAlign">浏览上一个选项卡或子窗口。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.Print</tt></td>
+<td class="topAlign"><tt>18</tt></td>
+<td class="topAlign">打印文档。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.Quit</tt></td>
+<td class="topAlign"><tt>65</tt></td>
+<td class="topAlign">退出应用程序。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.Redo</tt></td>
+<td class="topAlign"><tt>12</tt></td>
+<td class="topAlign">重做。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.Refresh</tt></td>
+<td class="topAlign"><tt>15</tt></td>
+<td class="topAlign">刷新或重新加载当前文档。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.Replace</tt></td>
+<td class="topAlign"><tt>25</tt></td>
+<td class="topAlign">查找和替换。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.SaveAs</tt></td>
+<td class="topAlign"><tt>63</tt></td>
+<td class="topAlign">提示用户输入一个文件名后保存文件。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.Save</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">保存文件。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.SelectAll</tt></td>
+<td class="topAlign"><tt>26</tt></td>
+<td class="topAlign">选择所有文本。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.SelectEndOfBlock</tt></td>
+<td class="topAlign"><tt>55</tt></td>
+<td class="topAlign">扩展选择到文本块的结尾。此快捷方式仅用于OS X。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QKeySequence.SelectEndOfDocument</tt>
+</td>
+<td class="topAlign"><tt>57</tt></td>
+<td class="topAlign">扩展选择到文件末尾。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.SelectEndOfLine</tt></td>
+<td class="topAlign"><tt>53</tt></td>
+<td class="topAlign">扩展选择到行尾。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.SelectNextChar</tt></td>
+<td class="topAlign"><tt>44</tt></td>
+<td class="topAlign">扩展选择到下一个字符。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.SelectNextLine</tt></td>
+<td class="topAlign"><tt>48</tt></td>
+<td class="topAlign">扩展选择到下一行。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.SelectNextPage</tt></td>
+<td class="topAlign"><tt>50</tt></td>
+<td class="topAlign">扩展选择到下一个页面。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.SelectNextWord</tt></td>
+<td class="topAlign"><tt>46</tt></td>
+<td class="topAlign">扩展选择到下一个单词。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.SelectPreviousChar</tt></td>
+<td class="topAlign"><tt>45</tt></td>
+<td class="topAlign">扩展选择到一个字符。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.SelectPreviousLine</tt></td>
+<td class="topAlign"><tt>49</tt></td>
+<td class="topAlign">扩展选择到上一行。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.SelectPreviousPage</tt></td>
+<td class="topAlign"><tt>51</tt></td>
+<td class="topAlign">扩展选择到上一个页面。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.SelectPreviousWord</tt></td>
+<td class="topAlign"><tt>47</tt></td>
+<td class="topAlign">扩展选择到上一个单词。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.SelectStartOfBlock</tt></td>
+<td class="topAlign"><tt>54</tt></td>
+<td class="topAlign">扩展选择到一个文本块的开始。此快捷方式仅用于OS X。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QKeySequence.SelectStartOfDocument</tt>
+</td>
+<td class="topAlign"><tt>56</tt></td>
+<td class="topAlign">扩展选择开始文档。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.SelectStartOfLine</tt></td>
+<td class="topAlign"><tt>52</tt></td>
+<td class="topAlign">扩展选择到行首。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.Underline</tt></td>
+<td class="topAlign"><tt>29</tt></td>
+<td class="topAlign">下划线的文本。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.Undo</tt></td>
+<td class="topAlign"><tt>11</tt></td>
+<td class="topAlign">撤消。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.UnknownKey</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">未绑定的关键。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.WhatsThis</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">激活什么的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.ZoomIn</tt></td>
+<td class="topAlign"><tt>16</tt></td>
+<td class="topAlign">放大。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QKeySequence.ZoomOut</tt></td>
+<td class="topAlign"><tt>17</tt></td>
+<td class="topAlign">缩小。</td>
+</tr>
+</table>
+<p>这个枚举被引入或修改的Qt 4.2 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QKeySequence"></a>QKeySequence.__init__ (<i>self</i>)</h3>
+<p>构造一个空键序列。</p>
+
+
+<h3 class="fn">
+<a name="QKeySequence-2"></a>QKeySequence.__init__ (<i>self</i>, <a href="qkeysequence.html" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html">QKeySequence</a> <i>ks</i>)</h3>
+<p>创建从一个键序列<i>key</i>字符串。例如“ CTRL + O ”给出Ctrl + 'O' 。字符串“ Ctrl”键， “Shift”键， “ Alt”键和“元”均确认，以及他们的翻译等价于“<a href="qshortcut.html" tppabs="http://pyqt4doc.appspot.com/qshortcut.html">QShortcut</a>“上下文（使用<a href="qobject.html#tr" tppabs="http://pyqt4doc.appspot.com/qobject.html#tr">QObject.tr</a>（））。</p>
+<p>最多四个按键代码可以通过用逗号分隔输入，如： “ALT + X ， Ctrl + S键， Q” 。</p>
+<p><i>key</i>应该是在<a href="qkeysequence.html#SequenceFormat-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#SequenceFormat-enum">NativeText</a>格式。</p>
+<p>此构造方法通常用于<a href="qobject.html#tr" tppabs="http://pyqt4doc.appspot.com/qobject.html#tr">tr</a>（ ） ，这样的快捷键可以更换的翻译：</p>
+<pre class="cpp">
+ <span class="type"><a href="qmenu.html" tppabs="http://pyqt4doc.appspot.com/qmenu.html">QMenu</a></span> <span class="operator">*</span>file <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qmenu.html" tppabs="http://pyqt4doc.appspot.com/qmenu.html">QMenu</a></span>(<span class="keyword">this</span>);
+ file<span class="operator">-</span><span class="operator">&gt;</span>addAction(tr(<span class="string">"&amp;Open..."</span>)<span class="operator">,</span> <span class="keyword">this</span><span class="operator">,</span> SLOT(open())<span class="operator">,</span>
+                   <span class="type"><a href="qkeysequence.html" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html">QKeySequence</a></span>(tr(<span class="string">"Ctrl+O"</span><span class="operator">,</span> <span class="string">"File|Open"</span>)));
+</pre>
+<p>请注意“文件|打开”翻译注释。它是由无必要手段，但它提供了一些背景的人翻译。</p>
+
+
+<h3 class="fn">
+<a name="QKeySequence-3"></a>QKeySequence.__init__ (<i>self</i>, QString <i>key</i>, <a href="qkeysequence.html#SequenceFormat-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#SequenceFormat-enum">SequenceFormat</a> <i>format</i>)</h3>
+<p>创建从一个键序列<i>key</i>字符串的基础上<i>format</i>。</p>
+<p>此功能被引入Qt的4.7 。</p>
+
+
+<h3 class="fn">
+<a name="QKeySequence-4"></a>QKeySequence.__init__ (<i>self</i>, int <i>k1</i>, int <i>key2</i> = 0, int <i>key3</i> = 0, int <i>key4</i> = 0)</h3>
+<p>构建了一个密钥序列具有多达4个按键<i>k1</i>，<i>k2</i>，<i>k3</i>和<i>k4</i>。</p>
+<p>关键的代码列在<a href="qt.html#Key-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Key-enum">Qt.Key</a>并且可以与改性剂相结合（见<a href="qt.html#Modifier-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Modifier-enum">Qt.Modifier</a>）如<a href="qt.html#Modifier-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Modifier-enum">Qt.SHIFT</a>，<a href="qt.html#Modifier-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Modifier-enum">Qt.CTRL</a>，<a href="qt.html#Modifier-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Modifier-enum">Qt.ALT</a>或<a href="qt.html#Modifier-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Modifier-enum">Qt.META</a>。</p>
+
+
+<h3 class="fn">
+<a name="QKeySequence-5"></a>QKeySequence.__init__ (<i>self</i>, QVariant <i>variant</i>)</h3>
+<p>拷贝构造函数。使得副本<i>keysequence</i>。</p>
+
+
+<h3 class="fn">
+<a name="count"></a>int QKeySequence.count (<i>self</i>)</h3>
+<p>返回键的键序列的数目。最大值是4 。</p>
+
+
+<h3 class="fn">
+<a name="fromString"></a><a href="qkeysequence.html" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html">QKeySequence</a> QKeySequence.fromString (QString <i>str</i>, <a href="qkeysequence.html#SequenceFormat-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#SequenceFormat-enum">SequenceFormat</a> <i>format</i> = QKeySequence.PortableText)</h3>
+<p>返回<a href="qkeysequence.html" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html">QKeySequence</a>从字符串<i>str</i>基于<i>format</i>。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qkeysequence.html#toString" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#toString">toString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isDetached"></a>bool QKeySequence.isDetached (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="isEmpty"></a>bool QKeySequence.isEmpty (<i>self</i>)</h3>
+<p>返回True如果密钥序列为空，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="keyBindings"></a>list-of-QKeySequence QKeySequence.keyBindings (<a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">StandardKey</a> <i>key</i>)</h3>
+<p>返回键绑定的列表为给定的<i>key</i>。调用此函数的结果会根据目标平台上有所不同。列表中的第一个元素表示为给定平台的主要捷径。如果结果包含一个以上的结果是，这些可以被认为是另一种快捷方式对给定相同的平台上<i>key</i>。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="matches"></a><a href="qkeysequence.html#SequenceMatch-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#SequenceMatch-enum">SequenceMatch</a> QKeySequence.matches (<i>self</i>, <a href="qkeysequence.html" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html">QKeySequence</a> <i>seq</i>)</h3>
+<p>匹配序列<i>seq</i>。回报<a href="qkeysequence.html#SequenceMatch-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#SequenceMatch-enum">ExactMatch</a>如果成功的话，<a href="qkeysequence.html#SequenceMatch-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#SequenceMatch-enum">PartialMatch</a>如果<i>seq</i>不完全匹配，并<a href="qkeysequence.html#SequenceMatch-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#SequenceMatch-enum">NoMatch</a>如果序列没有任何共同之处。回报<a href="qkeysequence.html#SequenceMatch-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#SequenceMatch-enum">NoMatch</a>如果<i>seq</i>较短。</p>
+
+
+<h3 class="fn">
+<a name="mnemonic"></a><a href="qkeysequence.html" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html">QKeySequence</a> QKeySequence.mnemonic (QString <i>text</i>)</h3>
+<p>返回助记符中的快捷键序列<i>text</i>，或者一个空键序列，如果没有助记符发现。</p>
+<p>例如，助记符（ “E ＆ XIT ” ）返回<tt>Qt.ALT+Qt.Key_X</tt>，助记符（ “戒菸大” ）的回报<tt>ALT+Key_Q</tt>和助记符（ “退出” ）返回一个空<a href="qkeysequence.html" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html">QKeySequence</a>。</p>
+<p>我们提供了一个<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/accelerators.html">list of common
+mnemonics</a>英文的。在撰写本文时，微软及公开组似乎并没有发出其他语言的等价建议。</p>
+<p><b>See also</b> <a href="index.htm#qt_set_sequence_auto_mnemonic" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qt_set_sequence_auto_mnemonic">qt_set_sequence_auto_mnemonic</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="swap"></a>QKeySequence.swap (<i>self</i>, <a href="qkeysequence.html" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html">QKeySequence</a> <i>other</i>)</h3>
+<p>交换密钥序列<i>other</i>与此键序列。这个操作是非常快的，而且永远不会。</p>
+<p>此功能被引入Qt的4.8 。</p>
+
+
+<h3 class="fn">
+<a name="toString"></a>QString QKeySequence.toString (<i>self</i>, <a href="qkeysequence.html#SequenceFormat-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#SequenceFormat-enum">SequenceFormat</a> <i>format</i> = QKeySequence.PortableText)</h3>
+<p>返回键序列的字符串表示形式的基础上，<i>format</i>。</p>
+<p>例如，该值<a href="qt.html#Modifier-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Modifier-enum">Qt.CTRL</a>+<a href="qt.html#Key-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Key-enum">Qt.Key_O</a>结果在“ CTRL + O ” 。如果密钥序列具有多个密钥代码，每一个由逗号分隔的字符串中返回，如“ Alt + X组合，按Ctrl + Y，Z ” 。琴弦， “Ctrl”键， “Shift”键，使用等换算<a href="qobject.html#tr" tppabs="http://pyqt4doc.appspot.com/qobject.html#tr">QObject.tr</a>在（ ）中的“<a href="qshortcut.html" tppabs="http://pyqt4doc.appspot.com/qshortcut.html">QShortcut</a>“上下文。</p>
+<p>如果密钥序列没有按键，则返回一个空字符串。</p>
+<p>在Mac OS X ，返回的字符串类似于显示在菜单栏的顺序。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qkeysequence.html#fromString" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#fromString">fromString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="__eq__"></a>bool QKeySequence.__eq__ (<i>self</i>, <a href="qkeysequence.html" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html">QKeySequence</a> <i>other</i>)</h3>
+<h3 class="fn">
+<a name="__ge__"></a>bool QKeySequence.__ge__ (<i>self</i>, <a href="qkeysequence.html" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html">QKeySequence</a> <i>other</i>)</h3>
+<h3 class="fn">
+<a name="__getitem__"></a>int QKeySequence.__getitem__ (<i>self</i>, int <i>i</i>)</h3>
+<h3 class="fn">
+<a name="__gt__"></a>bool QKeySequence.__gt__ (<i>self</i>, <a href="qkeysequence.html" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html">QKeySequence</a> <i>other</i>)</h3>
+<h3 class="fn">
+<a name="__int__"></a>int QKeySequence.__int__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="__le__"></a>bool QKeySequence.__le__ (<i>self</i>, <a href="qkeysequence.html" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html">QKeySequence</a> <i>other</i>)</h3>
+<h3 class="fn">
+<a name="__len__"></a> QKeySequence.__len__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="__lt__"></a>bool QKeySequence.__lt__ (<i>self</i>, <a href="qkeysequence.html" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html">QKeySequence</a> <i>ks</i>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QKeySequence.__ne__ (<i>self</i>, <a href="qkeysequence.html" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html">QKeySequence</a> <i>other</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

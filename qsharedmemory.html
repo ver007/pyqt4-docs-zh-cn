@@ -1,0 +1,320 @@
+﻿<html>
+<head>
+<title>QSharedMemory Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QSharedMemory Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QSharedMemory类提供了访问一个共享内存段。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qsharedmemory.html#AccessMode-enum" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#AccessMode-enum">AccessMode</a></b> { ReadOnly, ReadWrite }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qsharedmemory.html#SharedMemoryError-enum" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#SharedMemoryError-enum">SharedMemoryError</a></b> { NoError, PermissionDenied, InvalidSize, KeyError, ..., UnknownError }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qsharedmemory.html#QSharedMemory" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#QSharedMemory">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsharedmemory.html#QSharedMemory-2" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#QSharedMemory-2">__init__</a></b> (<i>self</i>, QString <i>key</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsharedmemory.html#attach" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#attach">attach</a></b> (<i>self</i>, AccessMode <i>mode</i> = QSharedMemory.ReadWrite)</li>
+<li>
+<div class="fn"></div>sip.voidptr <b><a href="qsharedmemory.html#constData" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#constData">constData</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsharedmemory.html#create" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#create">create</a></b> (<i>self</i>, int <i>size</i>, AccessMode <i>mode</i> = QSharedMemory.ReadWrite)</li>
+<li>
+<div class="fn"></div>sip.voidptr <b><a href="qsharedmemory.html#data" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#data">data</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsharedmemory.html#detach" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#detach">detach</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>SharedMemoryError <b><a href="qsharedmemory.html#error" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#error">error</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsharedmemory.html#errorString" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#errorString">errorString</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsharedmemory.html#isAttached" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#isAttached">isAttached</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsharedmemory.html#key" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#key">key</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsharedmemory.html#lock" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#lock">lock</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsharedmemory.html#nativeKey" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#nativeKey">nativeKey</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsharedmemory.html#setKey" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#setKey">setKey</a></b> (<i>self</i>, QString <i>key</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsharedmemory.html#setNativeKey" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#setNativeKey">setNativeKey</a></b> (<i>self</i>, QString <i>key</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qsharedmemory.html#size" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#size">size</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsharedmemory.html#unlock" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#unlock">unlock</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QSharedMemory类提供了访问一个共享内存段。</p>
+<p>QSharedMemory提供了多个线程和进程访问共享内存段。它还提供了一种用于单个线程或进程锁定的内存进行独占访问。</p>
+<p>当使用这个类时，请注意以下平台的差异：</p>
+<ul>
+<li>Windows: QSharedMemory does not "own" the shared memory
+segment. When all threads or processes that have an instance of
+QSharedMemory attached to a particular shared memory segment have
+either destroyed their instance of QSharedMemory or exited, the
+Windows kernel releases the shared memory segment
+automatically.</li>
+<li>Unix: QSharedMemory "owns" the shared memory segment. When the
+last thread or process that has an instance of QSharedMemory
+attached to a particular shared memory segment detaches from the
+segment by destroying its instance of QSharedMemory, the Unix
+kernel release the shared memory segment. But if that last thread
+or process crashes without running the QSharedMemory destructor,
+the shared memory segment survives the crash.</li>
+<li>QNX: Due to possible race conditions in the POSIX IPC
+implementation, <a href="qsharedmemory.html#create" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#create">create</a>()
+should be called prior to any <a href="qsharedmemory.html#attach" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#attach">attach</a>() calls (even across
+multiple threads).</li>
+<li>HP-UX: Only one attach to a shared memory segment is allowed
+per process. This means that QSharedMemory should not be used
+across multiple threads in the same process in HP-UX.</li>
+<li>Symbian: QSharedMemory does not "own" the shared memory
+segment. When all threads or processes that have an instance of
+QSharedMemory attached to a particular shared memory segment have
+either destroyed their instance of QSharedMemory or exited, the
+Symbian kernel releases the shared memory segment automatically.
+Also, access to a shared memory segment cannot be limited to
+read-only in Symbian.</li>
+</ul>
+<p>记住用锁定共享内存<a href="qsharedmemory.html#lock" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#lock">lock</a>（ ）读取或写入共享内存，并且前记得要与解除锁定<a href="qsharedmemory.html#unlock" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#unlock">unlock</a>（ ）请在完成后。</p>
+<p>不像<a href="http://qt.digia.com/products/add-on-products/catalog/4/Utilities/qtsharedmemory/">
+QtSharedMemory</a>， QSharedMemory自动销毁共享内存段时QSharedMemory的最后一个实例被从段分离，并给段的引用仍然存在。不要混合使用<a href="http://qt.digia.com/products/add-on-products/catalog/4/Utilities/qtsharedmemory/">
+QtSharedMemory</a>和QSharedMemory 。端口一切QSharedMemory 。</p>
+<p><b>Warning:</b>QSharedMemory变化的关键在一个Qt特定的方式，除非另有规定。互操作与非Qt应用程序是通过首先创建一个默认的共享内存实现<a href="qsharedmemory.html#QSharedMemory" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#QSharedMemory">QSharedMemory</a>（ ） ，然后设置与本机键<a href="qsharedmemory.html#setNativeKey" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#setNativeKey">setNativeKey</a>（ ） 。当使用本机键，共享内存是不受保护就可以了多个访问（如无法<a href="qsharedmemory.html#lock" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#lock">lock</a>（））和用户定义的机制，用于实现这种保护。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="AccessMode-enum"></a>QSharedMemory.AccessMode</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSharedMemory.ReadOnly</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">共享内存段是只读的。写入共享内存段是不允许的。写与只读创建一个共享内存段的尝试导致程序中止。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSharedMemory.ReadWrite</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">读取和写入共享内存段都是允许的。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="SharedMemoryError-enum"></a>QSharedMemory.SharedMemoryError</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSharedMemory.NoError</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">未发生错误。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSharedMemory.PermissionDenied</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">操作失败，因为调用方没有所需的权限。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSharedMemory.InvalidSize</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">创建操作失败，因为请求的大小是无效的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSharedMemory.KeyError</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">操作失败，因为一个无效的关键。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSharedMemory.AlreadyExists</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">A <a href="qsharedmemory.html#create" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#create">create</a>（ ）操作失败，因为具有指定键的共享内存段已经存在。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSharedMemory.NotFound</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">一个<a href="qsharedmemory.html#attach" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#attach">attach</a>（ ）失败，因为具有指定键的共享内存段不能被发现。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSharedMemory.LockError</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">企图<a href="qsharedmemory.html#lock" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#lock">lock</a>（ ）的共享内存段失败的原因<a href="qsharedmemory.html#create" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#create">create</a>（）或<a href="qsharedmemory.html#attach" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#attach">attach</a>（ ）失败，返回False ，或者是因为在发生系统错误<a href="qsystemsemaphore.html#acquire" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#acquire">QSystemSemaphore.acquire</a>（ ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSharedMemory.OutOfResources</tt></td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">A <a href="qsharedmemory.html#create" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#create">create</a>（ ）操作失败，因为没有足够的可用内存来满足该请求。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSharedMemory.UnknownError</tt></td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">别的事情发生了，这是不好的。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QSharedMemory"></a>QSharedMemory.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个共享内存对象与给定<i>parent</i>并与将其键值设为<i>key</i>。由于其键设置，其<a href="qsharedmemory.html#create" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#create">create</a>（）和<a href="qsharedmemory.html#attach" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#attach">attach</a>（ ）函数可以调用。</p>
+<p><b>See also</b> <a href="qsharedmemory.html#setKey" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#setKey">setKey</a>（ ）<a href="qsharedmemory.html#create" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#create">create</a>（）和<a href="qsharedmemory.html#attach" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#attach">attach</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QSharedMemory-2"></a>QSharedMemory.__init__ (<i>self</i>, QString <i>key</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>这个函数的重载<a href="qsharedmemory.html#QSharedMemory" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#QSharedMemory">QSharedMemory</a>（ ） 。</p>
+<p>构造一个共享内存对象与给定<i>parent</i>。共享内存对象的关键不是由构造函数中设置，因此共享内存对象没有一个基本的共享内存段连接。该密钥必须与设置<a href="qsharedmemory.html#setKey" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#setKey">setKey</a>（）或<a href="qsharedmemory.html#setNativeKey" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#setNativeKey">setNativeKey</a>（ ）前<a href="qsharedmemory.html#create" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#create">create</a>（）或<a href="qsharedmemory.html#attach" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#attach">attach</a>（）都可以使用。</p>
+<p><b>See also</b> <a href="qsharedmemory.html#setKey" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#setKey">setKey</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="attach"></a>bool QSharedMemory.attach (<i>self</i>, <a href="qsharedmemory.html#AccessMode-enum" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#AccessMode-enum">AccessMode</a> <i>mode</i> = QSharedMemory.ReadWrite)</h3>
+<p>试图连接的过程中确定被传递给构造函数或调用该密钥的共享内存段<a href="qsharedmemory.html#setKey" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#setKey">setKey</a>（）或<a href="qsharedmemory.html#setNativeKey" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#setNativeKey">setNativeKey</a>（ ） 。访问<i>mode</i> is <a href="qsharedmemory.html#AccessMode-enum" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#AccessMode-enum">ReadWrite</a>在默认情况下。它也可以是<a href="qsharedmemory.html#AccessMode-enum" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#AccessMode-enum">ReadOnly</a>。返回True如果连接操作是成功的。如果返回False ，调用<a href="qsharedmemory.html#error" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#error">error</a>（）来判断发生错误。附加共享内存段后，一个指向共享内存可以通过调用获得<a href="qsharedmemory.html#data" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#data">data</a>（ ） 。</p>
+<p><b>See also</b> <a href="qsharedmemory.html#isAttached" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#isAttached">isAttached</a>（ ）<a href="qsharedmemory.html#detach" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#detach">detach</a>（）和<a href="qsharedmemory.html#create" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#create">create</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="constData"></a>sip.voidptr QSharedMemory.constData (<i>self</i>)</h3>
+<p>返回一个const指针，指向共享内存段的内容，如果已连接。否则返回null 。记住用锁定共享内存<a href="qsharedmemory.html#lock" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#lock">lock</a>（ ）读取或写入共享内存，并且前记得要与解除锁定<a href="qsharedmemory.html#unlock" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#unlock">unlock</a>（ ）请在完成后。</p>
+<p><b>See also</b> <a href="qsharedmemory.html#attach" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#attach">attach</a>（）和<a href="qsharedmemory.html#create" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#create">create</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="create"></a>bool QSharedMemory.create (<i>self</i>, int <i>size</i>, <a href="qsharedmemory.html#AccessMode-enum" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#AccessMode-enum">AccessMode</a> <i>mode</i> = QSharedMemory.ReadWrite)</h3>
+<p>创建一个共享内存段<i>size</i>与传递给构造函数的关键，设置字节<a href="qsharedmemory.html#setKey" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#setKey">setKey</a>（）或设置<a href="qsharedmemory.html#setNativeKey" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#setNativeKey">setNativeKey</a>（ ） ，然后附加到给定的接入新的共享内存段<i>mode</i>并返回<tt>true</tt>。如果指定了密钥的共享内存段已经存在，则不执行和附加操作<tt>false</tt>返回。当返回值是<tt>false</tt>，调用<a href="qsharedmemory.html#error" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#error">error</a>（）来判断发生错误。</p>
+<p><b>See also</b> <a href="qsharedmemory.html#error" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#error">error</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="data"></a>sip.voidptr QSharedMemory.data (<i>self</i>)</h3>
+<p>返回一个指向共享内存段的内容，如果已连接。否则返回null 。记住用锁定共享内存<a href="qsharedmemory.html#lock" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#lock">lock</a>（ ）读取或写入共享内存，并且前记得要与解除锁定<a href="qsharedmemory.html#unlock" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#unlock">unlock</a>（ ）请在完成后。</p>
+<p><b>See also</b> <a href="qsharedmemory.html#attach" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#attach">attach</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="detach"></a>bool QSharedMemory.detach (<i>self</i>)</h3>
+<p>从共享内存段分离的过程。如果这是附加到共享内存段的最后一个进程，那么共享内存段被释放系统，即内容被破坏。如果分离的共享内存段的函数返回True 。如果它返回False ，这通常意味着要么没有安装，或者它是由其他进程锁定的段。</p>
+<p><b>See also</b> <a href="qsharedmemory.html#attach" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#attach">attach</a>（）和<a href="qsharedmemory.html#isAttached" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#isAttached">isAttached</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="error"></a><a href="qsharedmemory.html#SharedMemoryError-enum" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#SharedMemoryError-enum">SharedMemoryError</a> QSharedMemory.error (<i>self</i>)</h3>
+<p>返回一个值，指示是否发生了错误，并且，如果是这样，这是其中的错误。</p>
+<p><b>See also</b> <a href="qsharedmemory.html#errorString" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#errorString">errorString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="errorString"></a>QString QSharedMemory.errorString (<i>self</i>)</h3>
+<p>返回上次发生错误的文本说明。如果<a href="qsharedmemory.html#error" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#error">error</a>（ ）返回一个<a href="qsharedmemory.html#SharedMemoryError-enum" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#SharedMemoryError-enum">error value</a>，调用这个函数来获取描述错误的文本字符串。</p>
+<p><b>See also</b> <a href="qsharedmemory.html#error" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#error">error</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isAttached"></a>bool QSharedMemory.isAttached (<i>self</i>)</h3>
+<p>如果这个过程被附加到共享内存段，则返回True 。</p>
+<p><b>See also</b> <a href="qsharedmemory.html#attach" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#attach">attach</a>（）和<a href="qsharedmemory.html#detach" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#detach">detach</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="key"></a>QString QSharedMemory.key (<i>self</i>)</h3>
+<p>返回指定的键<a href="qsharedmemory.html#setKey" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#setKey">setKey</a>（ ）这个共享内存，或null键，如果没有密钥已经被分配，或者如果该段被使用<a href="qsharedmemory.html#nativeKey" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#nativeKey">nativeKey</a>（ ） 。关键是使用Qt的应用程序，以确定共享内存段的标识。</p>
+<p>你可以找到本地的，特定的平台，重点使用的操作系统通过调用<a href="qsharedmemory.html#nativeKey" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#nativeKey">nativeKey</a>（ ） 。</p>
+<p><b>See also</b> <a href="qsharedmemory.html#setKey" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#setKey">setKey</a>（）和<a href="qsharedmemory.html#setNativeKey" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#setNativeKey">setNativeKey</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="lock"></a>bool QSharedMemory.lock (<i>self</i>)</h3>
+<p>这是一个信号，通过这个进程锁定访问共享内存段并返回True 。如果另一个进程已锁定该段，该功能块，直到该锁被释放。然后，它获得锁并返回True 。如果这个函数返回False ，这意味着你已经忽略了从虚假申报<a href="qsharedmemory.html#create" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#create">create</a>（）或<a href="qsharedmemory.html#attach" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#attach">attach</a>（ ） ，您所设定的关键<a href="qsharedmemory.html#setNativeKey" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#setNativeKey">setNativeKey</a>（ ），或<a href="qsystemsemaphore.html#acquire" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#acquire">QSystemSemaphore.acquire</a>（ ）失败，原因是未知的系统错误。</p>
+<p><b>See also</b> <a href="qsharedmemory.html#unlock" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#unlock">unlock</a>（ ）<a href="qsharedmemory.html#data" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#data">data</a>（）和<a href="qsystemsemaphore.html#acquire" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#acquire">QSystemSemaphore.acquire</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="nativeKey"></a>QString QSharedMemory.nativeKey (<i>self</i>)</h3>
+<p>返回本地，特定的平台，关键这个共享内存对象。本机关键是所使用的操作系统，以确定共享内存段的标识。</p>
+<p>您可以使用本机键访问还没有被创建了Qt的共享内存段，或授予非Qt应用程序共享内存的访问。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qsharedmemory.html#setKey" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#setKey">setKey</a>（）和<a href="qsharedmemory.html#setNativeKey" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#setNativeKey">setNativeKey</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setKey"></a>QSharedMemory.setKey (<i>self</i>, QString <i>key</i>)</h3>
+<p>设置独立于平台<i>key</i>这个共享内存对象。如果<i>key</i>相同的电流键，则函数返回而不做任何事情。</p>
+<p>您可以致电<a href="qsharedmemory.html#key" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#key">key</a>（ ）来检索平台无关的关键。在内部，<a href="qsharedmemory.html" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html">QSharedMemory</a>此键转换成特定于平台的关键。如果改为调用<a href="qsharedmemory.html#nativeKey" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#nativeKey">nativeKey</a>（ ） ，你会得到特定于平台的，转换的关键。</p>
+<p>如果共享内存对象附加到底层的共享内存段，它会<a href="qsharedmemory.html#detach" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#detach">detach</a>从它设置新键之前。此功能不会做一个<a href="qsharedmemory.html#attach" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#attach">attach</a>（ ） 。</p>
+<p><b>See also</b> <a href="qsharedmemory.html#key" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#key">key</a>（ ）<a href="qsharedmemory.html#nativeKey" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#nativeKey">nativeKey</a>（）和<a href="qsharedmemory.html#isAttached" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#isAttached">isAttached</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setNativeKey"></a>QSharedMemory.setNativeKey (<i>self</i>, QString <i>key</i>)</h3>
+<p>设置本机，特定于平台的，<i>key</i>这个共享内存对象。如果<i>key</i>是与当前本地密钥，没有做任何函数返回。如果你想要的是分配一个关键段，你应该调用<a href="qsharedmemory.html#setKey" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#setKey">setKey</a>（ ）来代替。</p>
+<p>您可以致电<a href="qsharedmemory.html#nativeKey" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#nativeKey">nativeKey</a>（ ）来检索本地密钥。如果本机键已被分配，调用<a href="qsharedmemory.html#key" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#key">key</a>（ ）将返回一个空字符串。</p>
+<p>如果共享内存对象附加到底层的共享内存段，它会<a href="qsharedmemory.html#detach" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#detach">detach</a>从它设置新键之前。此功能不会做一个<a href="qsharedmemory.html#attach" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#attach">attach</a>（ ） 。</p>
+<p>如果设置了本机键的应用程序将不能移植。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qsharedmemory.html#nativeKey" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#nativeKey">nativeKey</a>（ ）<a href="qsharedmemory.html#key" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#key">key</a>（）和<a href="qsharedmemory.html#isAttached" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#isAttached">isAttached</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="size"></a>int QSharedMemory.size (<i>self</i>)</h3>
+<p>返回连接的共享内存段的大小。如果没有共享内存段连接，则返回0 。</p>
+<p><b>See also</b> <a href="qsharedmemory.html#create" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#create">create</a>（）和<a href="qsharedmemory.html#attach" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#attach">attach</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="unlock"></a>bool QSharedMemory.unlock (<i>self</i>)</h3>
+<p>发布在共享内存段锁并返回True ，如果锁被该进程持有。如果该段没有被锁定，或者如果锁被另一个进程持有的，没有任何反应并返回False 。</p>
+<p><b>See also</b> <a href="qsharedmemory.html#lock" tppabs="http://pyqt4doc.appspot.com/qsharedmemory.html#lock">lock</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

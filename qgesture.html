@@ -1,0 +1,132 @@
+﻿<html>
+<head>
+<title>QGesture Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QGesture Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QGesture类表示一种姿态，包含描述相应的用户输入的属性。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<p>通过继承<a href="qpangesture.html" tppabs="http://pyqt4doc.appspot.com/qpangesture.html">QPanGesture</a>，<a href="qpinchgesture.html" tppabs="http://pyqt4doc.appspot.com/qpinchgesture.html">QPinchGesture</a>，<a href="qswipegesture.html" tppabs="http://pyqt4doc.appspot.com/qswipegesture.html">QSwipeGesture</a>，<a href="qtapandholdgesture.html" tppabs="http://pyqt4doc.appspot.com/qtapandholdgesture.html">QTapAndHoldGesture</a>和<a href="qtapgesture.html" tppabs="http://pyqt4doc.appspot.com/qtapgesture.html">QTapGesture</a>。</p>
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qgesture.html#GestureCancelPolicy-enum" tppabs="http://pyqt4doc.appspot.com/qgesture.html#GestureCancelPolicy-enum">GestureCancelPolicy</a></b> { CancelNone, CancelAllInContext }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qgesture.html#QGesture" tppabs="http://pyqt4doc.appspot.com/qgesture.html#QGesture">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>GestureCancelPolicy <b><a href="qgesture.html#gestureCancelPolicy" tppabs="http://pyqt4doc.appspot.com/qgesture.html#gestureCancelPolicy">gestureCancelPolicy</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Qt.GestureType <b><a href="qgesture.html#gestureType" tppabs="http://pyqt4doc.appspot.com/qgesture.html#gestureType">gestureType</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qgesture.html#hasHotSpot" tppabs="http://pyqt4doc.appspot.com/qgesture.html#hasHotSpot">hasHotSpot</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QPointF <b><a href="qgesture.html#hotSpot" tppabs="http://pyqt4doc.appspot.com/qgesture.html#hotSpot">hotSpot</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgesture.html#setGestureCancelPolicy" tppabs="http://pyqt4doc.appspot.com/qgesture.html#setGestureCancelPolicy">setGestureCancelPolicy</a></b> (<i>self</i>, GestureCancelPolicy <i>policy</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgesture.html#setHotSpot" tppabs="http://pyqt4doc.appspot.com/qgesture.html#setHotSpot">setHotSpot</a></b> (<i>self</i>, QPointF <i>value</i>)</li>
+<li>
+<div class="fn"></div>Qt.GestureState <b><a href="qgesture.html#state" tppabs="http://pyqt4doc.appspot.com/qgesture.html#state">state</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgesture.html#unsetHotSpot" tppabs="http://pyqt4doc.appspot.com/qgesture.html#unsetHotSpot">unsetHotSpot</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QGesture类表示一种姿态，包含描述相应的用户输入的属性。</p>
+<p>不直接由开发商建造的手势对象。它们被创建<a href="qgesturerecognizer.html" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html">QGestureRecognizer</a>对象已注册的应用程序，请参阅<a href="qgesturerecognizer.html#registerRecognizer" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html#registerRecognizer">QGestureRecognizer.registerRecognizer</a>（ ） 。</p>
+<p>手势使用手势在你的应用程序在处理Qt和信息的概述，请参阅<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/gestures-overview.html">Gestures Programming</a>文档。</p>
+<a id="gesture-properties" name="gesture-properties"></a>
+<h3>Gesture Properties</h3>
+<p>类具有可以由用户进行查询，以获得一些手势的特定参数的属性的列表。例如，该捏合姿态具有被公开为一个属性的缩放因子。</p>
+<p>自定义手势识别器开发人员可以以提供关于手势的附加信息添加额外的属性。这可以通过添加新的动态属性，以一个QGesture对象，或者通过继承QGesture类（或它的子类）来完成。</p>
+<a id="lifecycle-of-a-gesture-object" name="lifecycle-of-a-gesture-object"></a>
+<h3>Lifecycle of a Gesture Object</h3>
+<p>需要的，是通过Qt的拥有当A QGesture实例隐式创建。开发商不应该摧毁它们或将它们存储供以后使用的Qt的可能摧毁他们的特定实例，并创建新的来替换它们。</p>
+<p>注册手势识别通过监视目标对象的输入事件的<a href="qgesturerecognizer.html#recognize" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html#recognize">recognize()</a>功能，根据需要更新所述手势的对象的属性。</p>
+<p>所述手势的对象可以在被递送到目标对象<a href="qgestureevent.html" tppabs="http://pyqt4doc.appspot.com/qgestureevent.html">QGestureEvent</a>如果相应的姿态是主动还是刚被取消。被输送的每个事件包含手势的对象的列表中，由于可被使能用于目标对象为多个姿态的支持。由于事件在Qt的处理方式，手势事件可以被其他对象进行过滤。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="GestureCancelPolicy-enum"></a>QGesture.GestureCancelPolicy</h3>
+<p>这个枚举说明如何接受一个手势可以自动取消其他手势。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGesture.CancelNone</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">在接受这个手势没有其他的手势将受到影响。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGesture.CancelAllInContext</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">在接受这个手势是活跃在上下文中的所有手势（尊重<a href="qt.html#GestureFlag-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#GestureFlag-enum">Qt.GestureFlag</a>这是指定的，当订阅的手势）将被取消。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QGesture"></a>QGesture.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个新的手势对象与给定<i>parent</i>。</p>
+<p><a href="qgesture.html" tppabs="http://pyqt4doc.appspot.com/qgesture.html">QGesture</a>目的是通过手势识别在所创建的<a href="qgesturerecognizer.html#create" tppabs="http://pyqt4doc.appspot.com/qgesturerecognizer.html#create">QGestureRecognizer.create</a>（）函数。</p>
+
+
+<h3 class="fn">
+<a name="gestureCancelPolicy"></a><a href="qgesture.html#GestureCancelPolicy-enum" tppabs="http://pyqt4doc.appspot.com/qgesture.html#GestureCancelPolicy-enum">GestureCancelPolicy</a> QGesture.gestureCancelPolicy (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="gestureType"></a><a href="qt.html#GestureType-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#GestureType-enum">Qt.GestureType</a> QGesture.gestureType (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="hasHotSpot"></a>bool QGesture.hasHotSpot (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="hotSpot"></a><a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> QGesture.hotSpot (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="setGestureCancelPolicy"></a>QGesture.setGestureCancelPolicy (<i>self</i>, <a href="qgesture.html#GestureCancelPolicy-enum" tppabs="http://pyqt4doc.appspot.com/qgesture.html#GestureCancelPolicy-enum">GestureCancelPolicy</a> <i>policy</i>)</h3>
+<h3 class="fn">
+<a name="setHotSpot"></a>QGesture.setHotSpot (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>value</i>)</h3>
+<h3 class="fn">
+<a name="state"></a><a href="qt.html#GestureState-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#GestureState-enum">Qt.GestureState</a> QGesture.state (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="unsetHotSpot"></a>QGesture.unsetHotSpot (<i>self</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

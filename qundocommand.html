@@ -1,0 +1,212 @@
+﻿<html>
+<head>
+<title>QUndoCommand Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QUndoCommand Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QUndoCommand类是所有的命令存储在基类<a href="qundostack.html" tppabs="http://pyqt4doc.appspot.com/qundostack.html">QUndoStack</a>。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qundocommand.html#QUndoCommand" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#QUndoCommand">__init__</a></b> (<i>self</i>, QUndoCommand <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qundocommand.html#QUndoCommand-2" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#QUndoCommand-2">__init__</a></b> (<i>self</i>, QString <i>text</i>, QUndoCommand <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qundocommand.html#actionText" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#actionText">actionText</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QUndoCommand <b><a href="qundocommand.html#child" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#child">child</a></b> (<i>self</i>, int <i>index</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qundocommand.html#childCount" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#childCount">childCount</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qundocommand.html#id" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#id">id</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qundocommand.html#mergeWith" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#mergeWith">mergeWith</a></b> (<i>self</i>, QUndoCommand <i>other</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qundocommand.html#redo" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#redo">redo</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qundocommand.html#setText" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#setText">setText</a></b> (<i>self</i>, QString <i>text</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qundocommand.html#text" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#text">text</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qundocommand.html#undo" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#undo">undo</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QUndoCommand类是所有的命令存储在基类<a href="qundostack.html" tppabs="http://pyqt4doc.appspot.com/qundostack.html">QUndoStack</a>。</p>
+<p>对于Qt的复原框架的概述，请参阅<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qundo.html">overview document</a>。</p>
+<p>一个QUndoCommand代表文档中的单个编辑操作，例如，插入或删除一个文本编辑器文本块。 QUndoCommand可以申请更改的文件与<a href="qundocommand.html#redo" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#redo">redo</a>（）和撤销与变更<a href="qundocommand.html#undo" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#undo">undo</a>（ ） 。在实现这些功能必须在派生类中提供。</p>
+<pre class="cpp">
+ <span class="keyword">class</span> AppendText : <span class="keyword">public</span> <span class="type">QUndoCommand</span>
+ {
+ <span class="keyword">public</span>:
+     AppendText(<span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> <span class="operator">*</span>doc<span class="operator">,</span> <span class="keyword">const</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> <span class="operator">&amp;</span>text)
+         : m_document(doc)<span class="operator">,</span> m_text(text) { setText(<span class="string">"append text"</span>); }
+     <span class="keyword">virtual</span> <span class="type">void</span> undo()
+         { m_document<span class="operator">-</span><span class="operator">&gt;</span>chop(m_text<span class="operator">.</span>length()); }
+     <span class="keyword">virtual</span> <span class="type">void</span> redo()
+         { m_document<span class="operator">-</span><span class="operator">&gt;</span>append(m_text); }
+ <span class="keyword">private</span>:
+     <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> <span class="operator">*</span>m_document;
+     <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> m_text;
+ };
+</pre>
+<p>一个QUndoCommand都有一个关联的<a href="qundocommand.html#text" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#text">text</a>（ ） 。这是一个短字符串描述该命令功能。它是用来更新堆栈的撤消的文本属性和重复动作，见<a href="qundostack.html#createUndoAction" tppabs="http://pyqt4doc.appspot.com/qundostack.html#createUndoAction">QUndoStack.createUndoAction</a>（）和<a href="qundostack.html#createRedoAction" tppabs="http://pyqt4doc.appspot.com/qundostack.html#createRedoAction">QUndoStack.createRedoAction</a>（ ） 。</p>
+<p>QUndoCommand对象由堆栈他们被压入资。<a href="qundostack.html" tppabs="http://pyqt4doc.appspot.com/qundostack.html">QUndoStack</a>删除的命令，如果它已被撤消和一个新的命令被推动。例如：</p>
+<pre class="cpp">
+ MyCommand <span class="operator">*</span>command1 <span class="operator">=</span> <span class="keyword">new</span> MyCommand();
+ stack<span class="operator">-</span><span class="operator">&gt;</span>push(command1);
+ MyCommand <span class="operator">*</span>command2 <span class="operator">=</span> <span class="keyword">new</span> MyCommand();
+ stack<span class="operator">-</span><span class="operator">&gt;</span>push(command2);
+
+ stack<span class="operator">-</span><span class="operator">&gt;</span><a href="qundocommand.html#undo" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#undo">undo</a>();
+
+ MyCommand <span class="operator">*</span>command3 <span class="operator">=</span> <span class="keyword">new</span> MyCommand();
+ stack<span class="operator">-</span><span class="operator">&gt;</span>push(command3); <span class="comment">// command2 gets deleted</span>
+</pre>
+<p>实际上，当命令被按下时，它成为堆栈上的最顶层的命令。</p>
+<p>为了支持命令压缩， QUndoCommand有<a href="qundocommand.html#id" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#id">id</a>（ ）和虚拟功能<a href="qundocommand.html#mergeWith" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#mergeWith">mergeWith</a>（ ） 。这些功能所使用的<a href="qundostack.html#push" tppabs="http://pyqt4doc.appspot.com/qundostack.html#push">QUndoStack.push</a>（ ） 。</p>
+<p>为了支持宏命令，一个QUndoCommand对象可以有任意数量的子命令。撤消或重做父的命令会让孩子命令撤消或重做。命令可以在构造函数中显式地指定给父母。在这种情况下，该命令将被父所拥有。</p>
+<p>在这种情况下，父通常是一个空命令，因为它不提供它自己的实现的<a href="qundocommand.html#undo" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#undo">undo</a>（）和<a href="qundocommand.html#redo" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#redo">redo</a>（ ） 。相反，它使用这些功能的基本实现，它只是简单的调用<a href="qundocommand.html#undo" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#undo">undo</a>（）或<a href="qundocommand.html#redo" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#redo">redo</a>（ ）在它的所有子项。家长应，然而，有一个有意义的<a href="qundocommand.html#text" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#text">text</a>（ ） 。</p>
+<pre class="cpp">
+ <span class="type">QUndoCommand</span> <span class="operator">*</span>insertRed <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QUndoCommand</span>(); <span class="comment">// an empty command</span>
+ insertRed<span class="operator">-</span><span class="operator">&gt;</span><a href="qundocommand.html#setText" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#setText">setText</a>(<span class="string">"insert red text"</span>);
+
+ <span class="keyword">new</span> InsertText(document<span class="operator">,</span> idx<span class="operator">,</span> text<span class="operator">,</span> insertRed); <span class="comment">// becomes child of insertRed</span>
+ <span class="keyword">new</span> SetColor(document<span class="operator">,</span> idx<span class="operator">,</span> text<span class="operator">.</span>length()<span class="operator">,</span> <span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>red<span class="operator">,</span> insertRed);
+
+ stack<span class="operator">.</span>push(insertRed);
+</pre>
+<p>另一种方式来创建宏是使用便利的功能<a href="qundostack.html#beginMacro" tppabs="http://pyqt4doc.appspot.com/qundostack.html#beginMacro">QUndoStack.beginMacro</a>（）和<a href="qundostack.html#endMacro" tppabs="http://pyqt4doc.appspot.com/qundostack.html#endMacro">QUndoStack.endMacro</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QUndoCommand"></a>QUndoCommand.__init__ (<i>self</i>, <a href="qundocommand.html" tppabs="http://pyqt4doc.appspot.com/qundocommand.html">QUndoCommand</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a href="qundocommand.html" tppabs="http://pyqt4doc.appspot.com/qundocommand.html">QUndoCommand</a>与父对象<i>parent</i>。</p>
+<p>If <i>parent</i>不为0 ，则该命令被添加到父节点的子列表。父命令则拥有这个命令将在其析构函数删除它。</p>
+<p><b>See also</b> <a href="qundocommand.html#dtor.QUndoCommand" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#dtor.QUndoCommand">~QUndoCommand</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QUndoCommand-2"></a>QUndoCommand.__init__ (<i>self</i>, QString <i>text</i>, <a href="qundocommand.html" tppabs="http://pyqt4doc.appspot.com/qundocommand.html">QUndoCommand</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a href="qundocommand.html" tppabs="http://pyqt4doc.appspot.com/qundocommand.html">QUndoCommand</a>与给定对象<i>parent</i>和<i>text</i>。</p>
+<p>If <i>parent</i>不为0 ，则该命令被添加到父节点的子列表。父命令则拥有这个命令将在其析构函数删除它。</p>
+<p><b>See also</b> <a href="qundocommand.html#dtor.QUndoCommand" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#dtor.QUndoCommand">~QUndoCommand</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="actionText"></a>QString QUndoCommand.actionText (<i>self</i>)</h3>
+<p>返回描述了这个命令做了简短的文本字符串，例如， “插入文字” 。</p>
+<p>该文本时使用的堆栈的撤消的文本属性和重复动作被更新。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qundocommand.html#text" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#text">text</a>（ ）<a href="qundocommand.html#setText" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#setText">setText</a>（ ）<a href="qundostack.html#createUndoAction" tppabs="http://pyqt4doc.appspot.com/qundostack.html#createUndoAction">QUndoStack.createUndoAction</a>（）和<a href="qundostack.html#createRedoAction" tppabs="http://pyqt4doc.appspot.com/qundostack.html#createRedoAction">QUndoStack.createRedoAction</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="child"></a><a href="qundocommand.html" tppabs="http://pyqt4doc.appspot.com/qundocommand.html">QUndoCommand</a> QUndoCommand.child (<i>self</i>, int <i>index</i>)</h3>
+<p>在返回的子命令<i>index</i>。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qundocommand.html#childCount" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#childCount">childCount</a>（）和<a href="qundostack.html#command" tppabs="http://pyqt4doc.appspot.com/qundostack.html#command">QUndoStack.command</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="childCount"></a>int QUndoCommand.childCount (<i>self</i>)</h3>
+<p>返回此命令子命令的数量。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qundocommand.html#child" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#child">child</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="id"></a>int QUndoCommand.id (<i>self</i>)</h3>
+<p>返回此命令的ID 。</p>
+<p>命令ID用来在命令压缩。它必须是一个整数独此命令的类，或者-1如果命令不支持压缩。</p>
+<p>如果命令支持压缩这个函数必须在派生类中重写以返回正确的ID 。基实现返回-1 。</p>
+<p><a href="qundostack.html#push" tppabs="http://pyqt4doc.appspot.com/qundostack.html#push">QUndoStack.push</a>（）将只尝试合并两个命令，如果它们具有相同的ID，并且该ID不是-1。</p>
+<p><b>See also</b> <a href="qundocommand.html#mergeWith" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#mergeWith">mergeWith</a>（）和<a href="qundostack.html#push" tppabs="http://pyqt4doc.appspot.com/qundostack.html#push">QUndoStack.push</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mergeWith"></a>bool QUndoCommand.mergeWith (<i>self</i>, <a href="qundocommand.html" tppabs="http://pyqt4doc.appspot.com/qundocommand.html">QUndoCommand</a> <i>other</i>)</h3>
+<p>尝试与合并这个命令<i>command</i>。成功时返回TRUE ，否则返回False 。</p>
+<p>如果这个函数返回True，则调用此命令的<a href="qundocommand.html#redo" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#redo">redo</a>（ ）必须具有相同的效果，既重做这个命令和<i>command</i>。同样，调用此命令的<a href="qundocommand.html#undo" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#undo">undo</a>（ ）必须具有相同的效果撤消<i>command</i>与此命令。</p>
+<p><a href="qundostack.html" tppabs="http://pyqt4doc.appspot.com/qundostack.html">QUndoStack</a>只会尝试合并两个命令，如果他们有相同的id ，而id是不是-1 。</p>
+<p>默认实现返回False 。</p>
+<pre class="cpp">
+ <span class="type">bool</span> AppendText<span class="operator">.</span>mergeWith(<span class="keyword">const</span> <span class="type"><a href="qundocommand.html" tppabs="http://pyqt4doc.appspot.com/qundocommand.html">QUndoCommand</a></span> <span class="operator">*</span>other)
+ {
+     <span class="keyword">if</span> (other<span class="operator">-</span><span class="operator">&gt;</span>id() <span class="operator">!</span><span class="operator">=</span> id()) <span class="comment">// make sure other is also an AppendText command</span>
+         <span class="keyword">return</span> <span class="keyword">false</span>;
+     m_text <span class="operator">+</span><span class="operator">=</span> <span class="keyword">static_cast</span><span class="operator">&lt;</span><span class="keyword">const</span> AppendText<span class="operator">*</span><span class="operator">&gt;</span>(other)<span class="operator">-</span><span class="operator">&gt;</span>m_text;
+     <span class="keyword">return</span> <span class="keyword">true</span>;
+ }
+</pre>
+<p><b>See also</b> <a href="qundocommand.html#id" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#id">id</a>（）和<a href="qundostack.html#push" tppabs="http://pyqt4doc.appspot.com/qundostack.html#push">QUndoStack.push</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="redo"></a>QUndoCommand.redo (<i>self</i>)</h3>
+<p>适用变更的文件。这个函数必须在派生类中实现。调用<a href="qundostack.html#push" tppabs="http://pyqt4doc.appspot.com/qundostack.html#push">QUndoStack.push</a>（ ）<a href="qundostack.html#undo" tppabs="http://pyqt4doc.appspot.com/qundostack.html#undo">QUndoStack.undo</a>（）或<a href="qundostack.html#redo" tppabs="http://pyqt4doc.appspot.com/qundostack.html#redo">QUndoStack.redo</a>从这个函数（ ）导致未定义beahavior 。</p>
+<p>默认实现调用重做（ ）对所有的子命令。</p>
+<p><b>See also</b> <a href="qundocommand.html#undo" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#undo">undo</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setText"></a>QUndoCommand.setText (<i>self</i>, QString <i>text</i>)</h3>
+<p>设置为命令的文本<i>text</i>规定。</p>
+<p>指定文本应描述了这个命令的作用很短的用户可读的字符串。</p>
+<p>如果你需要有两个不同的字符串<a href="qundocommand.html#text" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#text">text</a>（）和<a href="qundocommand.html#actionText" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#actionText">actionText</a>（ ） ，将它们分开为“\ n ” ，并传递到这个函数。即使你在开发过程中不使用此功能的英文字符串，你仍然可以让翻译使用两个不同的字符串，以匹配特定语言的需求。所描述的特征和​​功能<a href="qundocommand.html#actionText" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#actionText">actionText</a>（ ）是因为Qt的4.8可用。</p>
+<p><b>See also</b> <a href="qundocommand.html#text" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#text">text</a>（ ）<a href="qundocommand.html#actionText" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#actionText">actionText</a>（ ）<a href="qundostack.html#createUndoAction" tppabs="http://pyqt4doc.appspot.com/qundostack.html#createUndoAction">QUndoStack.createUndoAction</a>（）和<a href="qundostack.html#createRedoAction" tppabs="http://pyqt4doc.appspot.com/qundostack.html#createRedoAction">QUndoStack.createRedoAction</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="text"></a>QString QUndoCommand.text (<i>self</i>)</h3>
+<p>返回描述了这个命令做了简短的文本字符串，例如， “插入文字” 。</p>
+<p>该文本是用于项目的名称<a href="qundoview.html" tppabs="http://pyqt4doc.appspot.com/qundoview.html">QUndoView</a>。</p>
+<p><b>See also</b> <a href="qundocommand.html#actionText" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#actionText">actionText</a>（ ）<a href="qundocommand.html#setText" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#setText">setText</a>（ ）<a href="qundostack.html#createUndoAction" tppabs="http://pyqt4doc.appspot.com/qundostack.html#createUndoAction">QUndoStack.createUndoAction</a>（）和<a href="qundostack.html#createRedoAction" tppabs="http://pyqt4doc.appspot.com/qundostack.html#createRedoAction">QUndoStack.createRedoAction</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="undo"></a>QUndoCommand.undo (<i>self</i>)</h3>
+<p>恢复一个变化到文档中。撤消（）被调用后，文件的状态应该是和以前一样<a href="qundocommand.html#redo" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#redo">redo</a>（ ）被调用。这个函数必须在派生类中实现。调用<a href="qundostack.html#push" tppabs="http://pyqt4doc.appspot.com/qundostack.html#push">QUndoStack.push</a>（ ）<a href="qundostack.html#undo" tppabs="http://pyqt4doc.appspot.com/qundostack.html#undo">QUndoStack.undo</a>（）或<a href="qundostack.html#redo" tppabs="http://pyqt4doc.appspot.com/qundostack.html#redo">QUndoStack.redo</a>从这个函数（ ）导致未定义beahavior 。</p>
+<p>默认实现调用撤消（ ）上的所有子命令的顺序相反。</p>
+<p><b>See also</b> <a href="qundocommand.html#redo" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#redo">redo</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

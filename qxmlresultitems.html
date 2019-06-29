@@ -1,0 +1,99 @@
+﻿<html>
+<head>
+<title>QXmlResultItems Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QXmlResultItems Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtxmlpatterns.html">QtXmlPatterns</a> module]</sup></sup>
+</h1>
+<p>通过评估的结果QXmlResultItems类的迭代<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>在<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlresultitems.html#QXmlResultItems" tppabs="http://pyqt4doc.appspot.com/qxmlresultitems.html#QXmlResultItems">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QXmlItem <b><a href="qxmlresultitems.html#current" tppabs="http://pyqt4doc.appspot.com/qxmlresultitems.html#current">current</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlresultitems.html#hasError" tppabs="http://pyqt4doc.appspot.com/qxmlresultitems.html#hasError">hasError</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QXmlItem <b><a href="qxmlresultitems.html#next" tppabs="http://pyqt4doc.appspot.com/qxmlresultitems.html#next">next</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>通过评估的结果QXmlResultItems类的迭代<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>在<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>。</p>
+<p>QXmlResultItems提出了一个相关查询的评估作为一个序列<a href="qxmlitem.html" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html">QXmlItems</a>。该序列走过一边喊<a href="qxmlresultitems.html#next" tppabs="http://pyqt4doc.appspot.com/qxmlresultitems.html#next">next</a>（ ） ，查询懒评估其实际产生的序列。</p>
+<pre class="cpp">
+ <span class="type"><a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a></span> query;
+ query<span class="operator">.</span>setQuery(<span class="string">"&lt;e/&gt;, 1, 'two'"</span>);
+ <span class="type">QXmlResultItems</span> result;
+
+ <span class="keyword">if</span> (query<span class="operator">.</span>isValid()) {
+     query<span class="operator">.</span>evaluateTo(<span class="operator">&amp;</span>result);
+     <span class="type"><a href="qxmlitem.html" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html">QXmlItem</a></span> item(result<span class="operator">.</span>next());
+     <span class="keyword">while</span> (<span class="operator">!</span>item<span class="operator">.</span>isNull()) {
+         <span class="comment">// use item</span>
+         item <span class="operator">=</span> result<span class="operator">.</span>next();
+     }
+     <span class="keyword">if</span> (result<span class="operator">.</span>hasError())
+         <span class="comment">/* Runtime error! */</span>;
+ }
+</pre>
+<p>让的效果<a href="qxmlresultitems.html#next" tppabs="http://pyqt4doc.appspot.com/qxmlresultitems.html#next">next</a>（ ）由懒惰的评价产生的序列是可以发生在任何调用一个查询错误<a href="qxmlresultitems.html#next" tppabs="http://pyqt4doc.appspot.com/qxmlresultitems.html#next">next</a>（ ） 。如果发生错误，都<a href="qxmlresultitems.html#next" tppabs="http://pyqt4doc.appspot.com/qxmlresultitems.html#next">next</a>（）和<a href="qxmlresultitems.html#current" tppabs="http://pyqt4doc.appspot.com/qxmlresultitems.html#current">current</a>（ ）将返回空值<a href="qxmlitem.html" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html">QXmlItem</a>和<a href="qxmlresultitems.html#hasError" tppabs="http://pyqt4doc.appspot.com/qxmlresultitems.html#hasError">hasError</a>（ ）将返回True 。</p>
+<p>QXmlResultItems可以被认为是一个“迭代”遍历查询结果的顺序一次，在向前的方向。每次调用<a href="qxmlresultitems.html#next" tppabs="http://pyqt4doc.appspot.com/qxmlresultitems.html#next">next</a>（ ）前进迭代到下一个<a href="qxmlitem.html" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html">QXmlItem</a>的序列中，并返回它，并<a href="qxmlresultitems.html#current" tppabs="http://pyqt4doc.appspot.com/qxmlresultitems.html#current">current</a>（ ）总是返回<a href="qxmlitem.html" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html">QXmlItem</a>那<a href="qxmlresultitems.html#next" tppabs="http://pyqt4doc.appspot.com/qxmlresultitems.html#next">next</a>（ ）返回的最后一次被调用。</p>
+<p><b>Note:</b>当使用的QXmlResultItems超载<a href="qxmlquery.html#evaluateTo" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#evaluateTo">QXmlQuery.evaluateTo</a>（ ）执行查询，最好是创建这个类的一个新实例为每个新的结果集，而不是重新使用旧的实例。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QXmlResultItems"></a>QXmlResultItems.__init__ (<i>self</i>)</h3>
+<p>构造的一个实例<a href="qxmlresultitems.html" tppabs="http://pyqt4doc.appspot.com/qxmlresultitems.html">QXmlResultItems</a>。</p>
+
+
+<h3 class="fn">
+<a name="current"></a><a href="qxmlitem.html" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html">QXmlItem</a> QXmlResultItems.current (<i>self</i>)</h3>
+<p>返回当前项目。目前的产品被生产和返回的最后一个项目<a href="qxmlresultitems.html#next" tppabs="http://pyqt4doc.appspot.com/qxmlresultitems.html#next">next</a>（ ） 。</p>
+<p>返回一个空<a href="qxmlitem.html" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html">QXmlItem</a>如果不存在相关联的<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>。</p>
+
+
+<h3 class="fn">
+<a name="hasError"></a>bool QXmlResultItems.hasError (<i>self</i>)</h3>
+<p>如果查询的评估过程中出现错误，则返回True 。</p>
+<p>返回False，如果查询评估已经完成。</p>
+
+
+<h3 class="fn">
+<a name="next"></a><a href="qxmlitem.html" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html">QXmlItem</a> QXmlResultItems.next (<i>self</i>)</h3>
+<p>返回由相关的查询懒评估产生的序列中的下一个结果。当返回<a href="qxmlitem.html" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html">QXmlItem</a>为null，则评价正常终止，不产生另一种结果，或者发生了错误。通话<a href="qxmlresultitems.html#hasError" tppabs="http://pyqt4doc.appspot.com/qxmlresultitems.html#hasError">hasError</a>（）来判断是否为null项目被正常终止或错误导致的。</p>
+<p>返回一个空<a href="qxmlitem.html" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html">QXmlItem</a>如果不存在相关联的<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

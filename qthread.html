@@ -1,0 +1,419 @@
+﻿<html>
+<head>
+<title>QThread Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QThread Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>在QThread中的类提供了一个平台无关的方式来管理线程。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qthread.html#Priority-enum" tppabs="http://pyqt4doc.appspot.com/qthread.html#Priority-enum">Priority</a></b> { IdlePriority, LowestPriority, LowPriority, NormalPriority, ..., InheritPriority }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qthread.html#QThread" tppabs="http://pyqt4doc.appspot.com/qthread.html#QThread">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>int <b><a href="qthread.html#exec" tppabs="http://pyqt4doc.appspot.com/qthread.html#exec">exec_</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qthread.html#exit" tppabs="http://pyqt4doc.appspot.com/qthread.html#exit">exit</a></b> (<i>self</i>, int <i>returnCode</i> = 0)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qthread.html#isFinished" tppabs="http://pyqt4doc.appspot.com/qthread.html#isFinished">isFinished</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qthread.html#isRunning" tppabs="http://pyqt4doc.appspot.com/qthread.html#isRunning">isRunning</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Priority <b><a href="qthread.html#priority" tppabs="http://pyqt4doc.appspot.com/qthread.html#priority">priority</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qthread.html#quit" tppabs="http://pyqt4doc.appspot.com/qthread.html#quit">quit</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qthread.html#run" tppabs="http://pyqt4doc.appspot.com/qthread.html#run">run</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qthread.html#setPriority" tppabs="http://pyqt4doc.appspot.com/qthread.html#setPriority">setPriority</a></b> (<i>self</i>, Priority <i>priority</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qthread.html#setStackSize" tppabs="http://pyqt4doc.appspot.com/qthread.html#setStackSize">setStackSize</a></b> (<i>self</i>, int <i>stackSize</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qthread.html#stackSize" tppabs="http://pyqt4doc.appspot.com/qthread.html#stackSize">stackSize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qthread.html#start" tppabs="http://pyqt4doc.appspot.com/qthread.html#start">start</a></b> (<i>self</i>, Priority <i>priority</i> = QThread.InheritPriority)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qthread.html#terminate" tppabs="http://pyqt4doc.appspot.com/qthread.html#terminate">terminate</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qthread.html#wait" tppabs="http://pyqt4doc.appspot.com/qthread.html#wait">wait</a></b> (<i>self</i>, int <i>msecs</i> = ULONG_MAX)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QThread <b><a href="qthread.html#currentThread" tppabs="http://pyqt4doc.appspot.com/qthread.html#currentThread">currentThread</a></b> ()</li>
+<li>
+<div class="fn"></div>int <b><a href="qthread.html#currentThreadId" tppabs="http://pyqt4doc.appspot.com/qthread.html#currentThreadId">currentThreadId</a></b> ()</li>
+<li>
+<div class="fn"></div>int <b><a href="qthread.html#idealThreadCount" tppabs="http://pyqt4doc.appspot.com/qthread.html#idealThreadCount">idealThreadCount</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qthread.html#msleep" tppabs="http://pyqt4doc.appspot.com/qthread.html#msleep">msleep</a></b> (int)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qthread.html#setTerminationEnabled" tppabs="http://pyqt4doc.appspot.com/qthread.html#setTerminationEnabled">setTerminationEnabled</a></b> (bool <i>enabled</i> = True)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qthread.html#sleep" tppabs="http://pyqt4doc.appspot.com/qthread.html#sleep">sleep</a></b> (int)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qthread.html#usleep" tppabs="http://pyqt4doc.appspot.com/qthread.html#usleep">usleep</a></b> (int)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qthread.html#yieldCurrentThread" tppabs="http://pyqt4doc.appspot.com/qthread.html#yieldCurrentThread">yieldCurrentThread</a></b> ()</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qthread.html#finished" tppabs="http://pyqt4doc.appspot.com/qthread.html#finished">finished</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qthread.html#started" tppabs="http://pyqt4doc.appspot.com/qthread.html#started">started</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qthread.html#terminated" tppabs="http://pyqt4doc.appspot.com/qthread.html#terminated">terminated</a></b> ()</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>在QThread中的类提供了一个平台无关的方式来管理线程。</p>
+<p>一个QThread中对象管理程序中控制一个线程。 QThreads开始执行的<a href="qthread.html#run" tppabs="http://pyqt4doc.appspot.com/qthread.html#run">run</a>（ ） 。默认情况下，<a href="qthread.html#run" tppabs="http://pyqt4doc.appspot.com/qthread.html#run">run</a>（ ）通过调用启动事件循环<a href="qthread.html#exec" tppabs="http://pyqt4doc.appspot.com/qthread.html#exec">exec_</a>（ ）并运行里面的线程Qt的事件循环。</p>
+<p>您可以使用它们移动到线程使用工作对象<a href="qobject.html#moveToThread" tppabs="http://pyqt4doc.appspot.com/qobject.html#moveToThread">QObject.moveToThread</a>（ ） 。</p>
+<pre class="cpp">
+ <span class="keyword">class</span> Worker : <span class="keyword">public</span> <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span>
+ {
+     Q_OBJECT
+     <span class="type">QThread</span> workerThread;
+
+ <span class="keyword">public</span> <span class="keyword">slots</span>:
+     <span class="type">void</span> doWork(<span class="keyword">const</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> <span class="operator">&amp;</span>parameter) {
+         <span class="comment">// ...</span>
+         <span class="keyword">emit</span> resultReady(result);
+     }
+
+ <span class="keyword">signals</span>:
+     <span class="type">void</span> resultReady(<span class="keyword">const</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> <span class="operator">&amp;</span>result);
+ };
+
+ <span class="keyword">class</span> Controller : <span class="keyword">public</span> <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span>
+ {
+     Q_OBJECT
+     <span class="type">QThread</span> workerThread;
+ <span class="keyword">public</span>:
+     Controller() {
+         Worker <span class="operator">*</span>worker <span class="operator">=</span> <span class="keyword">new</span> Worker;
+         worker<span class="operator">-</span><span class="operator">&gt;</span>moveToThread(<span class="operator">&amp;</span>workerThread);
+         connect(workerThread<span class="operator">,</span> SIGNAL(finished())<span class="operator">,</span> worker<span class="operator">,</span> SLOT(deleteLater()));
+         connect(<span class="keyword">this</span><span class="operator">,</span> SIGNAL(operate(<span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>))<span class="operator">,</span> worker<span class="operator">,</span> SLOT(doWork(<span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>)));
+         connect(worker<span class="operator">,</span> SIGNAL(resultReady(<span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>))<span class="operator">,</span> <span class="keyword">this</span><span class="operator">,</span> SLOT(handleResults(<span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>)));
+         workerThread<span class="operator">.</span>start();
+     }
+     <span class="operator">~</span>Controller() {
+         workerThread<span class="operator">.</span>quit();
+         workerThread<span class="operator">.</span>wait();
+     }
+ <span class="keyword">public</span> <span class="keyword">slots</span>:
+     <span class="type">void</span> handleResults(<span class="keyword">const</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> <span class="operator">&amp;</span>);
+ <span class="keyword">signals</span>:
+     <span class="type">void</span> operate(<span class="keyword">const</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> <span class="operator">&amp;</span>);
+ };
+</pre>
+<p>那么工人的插槽内的代码将在一个单独的线程中执行。但是，你可以自由的工人插槽连接到任何信号，任何物体，在任何线程。它是安全的连接在不同的线程信号和槽，这要归功于一个叫机制<a href="qt.html#ConnectionType-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ConnectionType-enum">queued
+connections</a>。</p>
+<p>另一种方法，使代码运行在一个单独的线程，是子类化QThread中，并重新实现<a href="qthread.html#run" tppabs="http://pyqt4doc.appspot.com/qthread.html#run">run</a>（ ） 。例如：</p>
+<pre class="cpp">
+</pre>
+<p>在这个例子中，该线程将退出运行函数返回之后。不会有任何事件循环运行的线程，除非你调用<a href="qthread.html#exec" tppabs="http://pyqt4doc.appspot.com/qthread.html#exec">exec_</a>（ ） 。</p>
+<p>重要的是要记住，一个QThread中的对象通常生活在它被创建的线程，而不是在它管理的线程是很重要的。这经常被忽视的细节是指一个QThread中的插槽将在其家乡线程的上下文中执行，而不是在它管理的线程的上下文中。出于这个原因，在QThread中的子类实现新的插槽是容易出错和气馁。</p>
+<p><b>Note:</b>如果你与对象交互，使用任何比排队的信号/插槽连接（例如直接函数调用）等技术，那么就需要平时多线程的预防措施才能作出。</p>
+<p><b>Note:</b>这是不可能改变GUI对象的线程关联，它们必须保持在主线程中。</p>
+<a id="managing-threads" name="managing-threads"></a>
+<h3>Managing threads</h3>
+<p>QThread中会通过当线程是一个信号notifiy你<a href="qthread.html#started" tppabs="http://pyqt4doc.appspot.com/qthread.html#started">started</a>（ ）<a href="qthread.html#finished" tppabs="http://pyqt4doc.appspot.com/qthread.html#finished">finished</a>（）和<a href="qthread.html#terminated" tppabs="http://pyqt4doc.appspot.com/qthread.html#terminated">terminated</a>（ ） ，也可以使用<a href="qthread.html#isFinished" tppabs="http://pyqt4doc.appspot.com/qthread.html#isFinished">isFinished</a>（）和<a href="qthread.html#isRunning" tppabs="http://pyqt4doc.appspot.com/qthread.html#isRunning">isRunning</a>（ ）来查询线程的状态。</p>
+<p>你可以通过调用停止线程<a href="qthread.html#exit" tppabs="http://pyqt4doc.appspot.com/qthread.html#exit">exit</a>（）或<a href="qthread.html#quit" tppabs="http://pyqt4doc.appspot.com/qthread.html#quit">quit</a>（ ） 。在极端情况下，你可能要强行<a href="qthread.html#terminate" tppabs="http://pyqt4doc.appspot.com/qthread.html#terminate">terminate</a>（ ）正在执行的线程。但是，这样做是危险的，气馁。请阅读文档<a href="qthread.html#terminate" tppabs="http://pyqt4doc.appspot.com/qthread.html#terminate">terminate</a>（）和<a href="qthread.html#setTerminationEnabled" tppabs="http://pyqt4doc.appspot.com/qthread.html#setTerminationEnabled">setTerminationEnabled</a>（ ）的详细信息。</p>
+<p>在Qt 4.8起，它可以释放生活在刚刚结束的线程对象，通过连接<a href="qthread.html#finished" tppabs="http://pyqt4doc.appspot.com/qthread.html#finished">finished</a>（）信号来<a href="qobject.html#deleteLater" tppabs="http://pyqt4doc.appspot.com/qobject.html#deleteLater">QObject.deleteLater</a>（ ） 。</p>
+<p>使用<a href="qthread.html#wait" tppabs="http://pyqt4doc.appspot.com/qthread.html#wait">wait</a>（）来阻塞调用线程，直到其他线程执行完毕（或者直到指定的时间已经过去了） 。</p>
+<p>静态函数<a href="qthread.html#currentThreadId" tppabs="http://pyqt4doc.appspot.com/qthread.html#currentThreadId">currentThreadId</a>（）和<a href="qthread.html#currentThread" tppabs="http://pyqt4doc.appspot.com/qthread.html#currentThread">currentThread</a>（ ）返回标识当前正在执行的线程。前者返回该线程的平台特定的ID ，后者返回一个QThread中的指针。</p>
+<p>要选择你的线程将给予（如确定该命令的名称<tt>ps -L</tt>在Linux上，例如） ，你可以调用<a href="qobject.html#objectName-prop" tppabs="http://pyqt4doc.appspot.com/qobject.html#objectName-prop">setObjectName()</a>前启动线程。如果你不打电话<a href="qobject.html#objectName-prop" tppabs="http://pyqt4doc.appspot.com/qobject.html#objectName-prop">setObjectName()</a>，给你的线程的名称将是你的线程对象的运行时类型（例如类名，<tt>"RenderThread"</tt>在的情况下<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/threads-mandelbrot.html">Mandelbrot Example</a>，因为这是QThread中的子类的名称） 。请注意，这是目前不可用发布版本的Windows 。</p>
+<p>QThread中还提供了静态的，平台独立的睡眠功能：<a href="qthread.html#sleep" tppabs="http://pyqt4doc.appspot.com/qthread.html#sleep">sleep</a>（ ）<a href="qthread.html#msleep" tppabs="http://pyqt4doc.appspot.com/qthread.html#msleep">msleep</a>（）和<a href="qthread.html#usleep" tppabs="http://pyqt4doc.appspot.com/qthread.html#usleep">usleep</a>（ ）允许完整秒，毫秒和微秒分辨率分别。</p>
+<p><b>Note:</b> <a href="qthread.html#wait" tppabs="http://pyqt4doc.appspot.com/qthread.html#wait">wait</a>（ ）和<a href="qthread.html#sleep" tppabs="http://pyqt4doc.appspot.com/qthread.html#sleep">sleep</a>（）函数应该是不必要的，一般的，因为Qt是事件驱动型的框架。而不是<a href="qthread.html#wait" tppabs="http://pyqt4doc.appspot.com/qthread.html#wait">wait</a>（ ） ，考虑侦听<a href="qthread.html#finished" tppabs="http://pyqt4doc.appspot.com/qthread.html#finished">finished</a>（）信号。取而代之的是<a href="qthread.html#sleep" tppabs="http://pyqt4doc.appspot.com/qthread.html#sleep">sleep</a>（ ）函数，可以考虑使用<a href="qtimer.html" tppabs="http://pyqt4doc.appspot.com/qtimer.html">QTimer</a>。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="Priority-enum"></a>QThread.Priority</h3>
+<p>该枚举类型表示操作系统应该如何安排新创建的线程。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QThread.IdlePriority</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">定没有其他线程正在运行时才能使用。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QThread.LowestPriority</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">定频率低于LowPriority 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QThread.LowPriority</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">定频率低于NormalPriority 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QThread.NormalPriority</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">操作系统的默认优先级。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QThread.HighPriority</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">预计往往比NormalPriority 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QThread.HighestPriority</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">预计往往高优先。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QThread.TimeCriticalPriority</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">尽可能多地如期举行。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QThread.InheritPriority</tt></td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">使用相同的优先级创建线程。这是默认的。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QThread"></a>QThread.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个新的<a href="qthread.html" tppabs="http://pyqt4doc.appspot.com/qthread.html">QThread</a>管理一个新的线程。该<i>parent</i>采取所有权<a href="qthread.html" tppabs="http://pyqt4doc.appspot.com/qthread.html">QThread</a>。该线程不会开始执行，直到<a href="qthread.html#start" tppabs="http://pyqt4doc.appspot.com/qthread.html#start">start</a>（）被调用。</p>
+<p><b>See also</b> <a href="qthread.html#start" tppabs="http://pyqt4doc.appspot.com/qthread.html#start">start</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentThread"></a><a href="qthread.html" tppabs="http://pyqt4doc.appspot.com/qthread.html">QThread</a> QThread.currentThread ()</h3>
+<p>返回一个指针，指向一个<a href="qthread.html" tppabs="http://pyqt4doc.appspot.com/qthread.html">QThread</a>该公司管理当前执行的线程。</p>
+
+
+<h3 class="fn">
+<a name="currentThreadId"></a>int QThread.currentThreadId ()</h3>
+<p>返回当前正在执行的线程的线程句柄。</p>
+<p><b>Warning:</b>此函数返回的句柄用于内部目的，不应在任何应用程序代码不能使用。</p>
+<p><b>Warning:</b>在Windows中，返回值是一个伪句柄为当前线程。它不能被用来进行数值比较。也就是说，这个函数返回由Win32函数getCurrentThread （ ）返回的Win32函数getCurrentThreadId返回的DWORD （ Windows的线程ID ） （ ） ，而不是句柄（ Windows的线程句柄） 。</p>
+
+
+<h3 class="fn">
+<a name="exec"></a>int QThread.exec_ (<i>self</i>)</h3>
+<p>进入事件循环并等待直到<a href="qthread.html#exit" tppabs="http://pyqt4doc.appspot.com/qthread.html#exit">exit</a>（）被调用，返回传递给该值<a href="qthread.html#exit" tppabs="http://pyqt4doc.appspot.com/qthread.html#exit">exit</a>（ ） 。返回的值是0，如果<a href="qthread.html#exit" tppabs="http://pyqt4doc.appspot.com/qthread.html#exit">exit</a>（ ）通过调用<a href="qthread.html#quit" tppabs="http://pyqt4doc.appspot.com/qthread.html#quit">quit</a>（ ） 。</p>
+<p>有必要调用这个函数来启动事件处理。</p>
+<p><b>See also</b> <a href="qthread.html#quit" tppabs="http://pyqt4doc.appspot.com/qthread.html#quit">quit</a>（）和<a href="qthread.html#exit" tppabs="http://pyqt4doc.appspot.com/qthread.html#exit">exit</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="exit"></a>QThread.exit (<i>self</i>, int <i>returnCode</i> = 0)</h3>
+<p>讲述了线程的事件循环退出与返回代码。</p>
+<p>调用该函数后，线程离开事件循环，并从调用返回<a href="qeventloop.html#exec" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#exec">QEventLoop.exec</a>（ ） 。该<a href="qeventloop.html#exec" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#exec">QEventLoop.exec</a>（ ）函数返回<i>returnCode</i>。</p>
+<p>按照惯例，<i>returnCode</i>0表示成功，非零值表示错误。</p>
+<p>请注意，与同名的C库函数，这个函数<i>does</i>返回给调用者 - 它是事件处理，停止。</p>
+<p>没有QEventLoops将不再启动该线程，直到<a href="qthread.html#exec" tppabs="http://pyqt4doc.appspot.com/qthread.html#exec">QThread.exec</a>（ ）再次被调用。如果在事件循环<a href="qthread.html#exec" tppabs="http://pyqt4doc.appspot.com/qthread.html#exec">QThread.exec</a>（ ）是不是下次调用运行，那么<a href="qthread.html#exec" tppabs="http://pyqt4doc.appspot.com/qthread.html#exec">QThread.exec</a>（ ）也将立即返回。</p>
+<p><b>See also</b> <a href="qthread.html#quit" tppabs="http://pyqt4doc.appspot.com/qthread.html#quit">quit</a>（）和<a href="qeventloop.html" tppabs="http://pyqt4doc.appspot.com/qeventloop.html">QEventLoop</a>。</p>
+
+
+<h3 class="fn">
+<a name="idealThreadCount"></a>int QThread.idealThreadCount ()</h3>
+<p>返回可在系统上运行的线程数理想。这样做是查询处理器内核的数量，实际和逻辑，在系统中。该函数返回-1，如果无法检测到处理器内核的数量。</p>
+
+
+<h3 class="fn">
+<a name="isFinished"></a>bool QThread.isFinished (<i>self</i>)</h3>
+<p>返回True如果线程完成，否则返回False 。</p>
+<p><b>See also</b> <a href="qthread.html#isRunning" tppabs="http://pyqt4doc.appspot.com/qthread.html#isRunning">isRunning</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isRunning"></a>bool QThread.isRunning (<i>self</i>)</h3>
+<p>返回如果线程正在运行，则为True，否则返回False。</p>
+<p><b>See also</b> <a href="qthread.html#isFinished" tppabs="http://pyqt4doc.appspot.com/qthread.html#isFinished">isFinished</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="msleep"></a>QThread.msleep (int)</h3>
+<p>强制当前线程睡眠<i>msecs</i>毫秒。</p>
+<p><b>See also</b> <a href="qthread.html#sleep" tppabs="http://pyqt4doc.appspot.com/qthread.html#sleep">sleep</a>（）和<a href="qthread.html#usleep" tppabs="http://pyqt4doc.appspot.com/qthread.html#usleep">usleep</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="priority"></a><a href="qthread.html#Priority-enum" tppabs="http://pyqt4doc.appspot.com/qthread.html#Priority-enum">Priority</a> QThread.priority (<i>self</i>)</h3>
+<p>返回的优先级为一个正在运行的线程。如果线程没有运行，这个函数返回<tt>InheritPriority</tt>。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qthread.html#Priority-enum" tppabs="http://pyqt4doc.appspot.com/qthread.html#Priority-enum">Priority</a>，<a href="qthread.html#setPriority" tppabs="http://pyqt4doc.appspot.com/qthread.html#setPriority">setPriority</a>（）和<a href="qthread.html#start" tppabs="http://pyqt4doc.appspot.com/qthread.html#start">start</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="quit"></a>QThread.quit (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void quit()</tt>。</p>
+<p>讲述了线程的事件循环退出，返回代码为0（成功） 。等效于调用QThread.exit （ 0 ） 。</p>
+<p>这个函数不执行任何操作，如果线程没有一个事件循环。</p>
+<p><b>See also</b> <a href="qthread.html#exit" tppabs="http://pyqt4doc.appspot.com/qthread.html#exit">exit</a>（）和<a href="qeventloop.html" tppabs="http://pyqt4doc.appspot.com/qeventloop.html">QEventLoop</a>。</p>
+
+
+<h3 class="fn">
+<a name="run"></a>QThread.run (<i>self</i>)</h3>
+<p>的起点的线。后调用<a href="qthread.html#start" tppabs="http://pyqt4doc.appspot.com/qthread.html#start">start</a>（ ） ，新创建的线程调用该函数。默认实现调用<a href="qthread.html#exec" tppabs="http://pyqt4doc.appspot.com/qthread.html#exec">exec_</a>（ ） 。</p>
+<p>您可以重新实现这个功能，方便先进的线程管理。从该方法返回将结束线程的执行。</p>
+<p><b>See also</b> <a href="qthread.html#start" tppabs="http://pyqt4doc.appspot.com/qthread.html#start">start</a>（）和<a href="qthread.html#wait" tppabs="http://pyqt4doc.appspot.com/qthread.html#wait">wait</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPriority"></a>QThread.setPriority (<i>self</i>, <a href="qthread.html#Priority-enum" tppabs="http://pyqt4doc.appspot.com/qthread.html#Priority-enum">Priority</a> <i>priority</i>)</h3>
+<p>该函数设置<i>priority</i>对于一个正在运行的线程。如果线程没有运行，这个函数不执行任何操作并立即返回。使用<a href="qthread.html#start" tppabs="http://pyqt4doc.appspot.com/qthread.html#start">start</a>（）开始一个特定的优先级的线程。</p>
+<p>该<i>priority</i>参数可以在任何值<tt>QThread.Priority</tt>枚举除<tt>InheritPriorty</tt>。</p>
+<p>的效果<i>priority</i>参数是依赖于操作系统的调度策略。特别是，本<i>priority</i>在不支持线程的优先级（如在Linux上，看到http://linux.die.net/man/2/sched_setscheduler更多的细节）系统将被忽略。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qthread.html#Priority-enum" tppabs="http://pyqt4doc.appspot.com/qthread.html#Priority-enum">Priority</a>，<a href="qthread.html#priority" tppabs="http://pyqt4doc.appspot.com/qthread.html#priority">priority</a>（）和<a href="qthread.html#start" tppabs="http://pyqt4doc.appspot.com/qthread.html#start">start</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setStackSize"></a>QThread.setStackSize (<i>self</i>, int <i>stackSize</i>)</h3>
+<p>设置为线程的最大堆栈大小<i>stackSize</i>。如果<i>stackSize</i>大于零，最大的堆栈大小设置为<i>stackSize</i>字节，否则的最大堆栈大小是自动由操作系统决定的。</p>
+<p><b>Warning:</b>大多数操作系统都放在线程堆栈尺寸最小和最大限制。该线程将无法启动，如果堆栈大小是超出这些限制。</p>
+<p><b>See also</b> <a href="qthread.html#stackSize" tppabs="http://pyqt4doc.appspot.com/qthread.html#stackSize">stackSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setTerminationEnabled"></a>QThread.setTerminationEnabled (bool <i>enabled</i> = True)</h3>
+<p>启用或禁用的基础上，终止当前线程的<i>enabled</i>参数。线程必须已经启动了<a href="qthread.html" tppabs="http://pyqt4doc.appspot.com/qthread.html">QThread</a>。</p>
+<p>When <i>enabled</i>是假的，终止被禁用。未来的呼叫<a href="qthread.html#terminate" tppabs="http://pyqt4doc.appspot.com/qthread.html#terminate">QThread.terminate</a>（ ）会立即返回而不影响。相反，终止被推迟到终端已启用。</p>
+<p>When <i>enabled</i>诚然，终端已启用。未来的呼叫<a href="qthread.html#terminate" tppabs="http://pyqt4doc.appspot.com/qthread.html#terminate">QThread.terminate</a>（ ）通常会终止线程。如果终止已推迟（即<a href="qthread.html#terminate" tppabs="http://pyqt4doc.appspot.com/qthread.html#terminate">QThread.terminate</a>（ ）被调用终止禁用） ，这个函数将终止调用线程<i>immediately</i>。注意，该函数不会在这种情况下返回。</p>
+<p><b>See also</b> <a href="qthread.html#terminate" tppabs="http://pyqt4doc.appspot.com/qthread.html#terminate">terminate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sleep"></a>QThread.sleep (int)</h3>
+<p>强制当前线程睡眠<i>secs</i>秒。</p>
+<p><b>See also</b> <a href="qthread.html#msleep" tppabs="http://pyqt4doc.appspot.com/qthread.html#msleep">msleep</a>（）和<a href="qthread.html#usleep" tppabs="http://pyqt4doc.appspot.com/qthread.html#usleep">usleep</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="stackSize"></a>int QThread.stackSize (<i>self</i>)</h3>
+<p>返回线程的最大堆栈大小（如果设置有<a href="qthread.html#setStackSize" tppabs="http://pyqt4doc.appspot.com/qthread.html#setStackSize">setStackSize</a>（ ） ） ;否则返回零。</p>
+<p><b>See also</b> <a href="qthread.html#setStackSize" tppabs="http://pyqt4doc.appspot.com/qthread.html#setStackSize">setStackSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="start"></a>QThread.start (<i>self</i>, <a href="qthread.html#Priority-enum" tppabs="http://pyqt4doc.appspot.com/qthread.html#Priority-enum">Priority</a> <i>priority</i> = QThread.InheritPriority)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void start(QThread::Priority = QThread.InheritPriority)</tt>。</p>
+<p>通过调用开始执行线程<a href="qthread.html#run" tppabs="http://pyqt4doc.appspot.com/qthread.html#run">run</a>（ ） 。该操作系统将根据安排线程<i>priority</i>参数。如果线程已经在运行，这个函数不执行任何操作。</p>
+<p>的效果<i>priority</i>参数是依赖于操作系统的调度策略。特别是，本<i>priority</i>在不支持线程的优先级（如在Linux上，看到http://linux.die.net/man/2/sched_setscheduler更多的细节）系统将被忽略。</p>
+<p><b>See also</b> <a href="qthread.html#run" tppabs="http://pyqt4doc.appspot.com/qthread.html#run">run</a>（）和<a href="qthread.html#terminate" tppabs="http://pyqt4doc.appspot.com/qthread.html#terminate">terminate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="terminate"></a>QThread.terminate (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void terminate()</tt>。</p>
+<p>终止线程的执行。该线程可能会或可能不会被立即终止，取决于操作系统的调度策略。监听<a href="qthread.html#terminated" tppabs="http://pyqt4doc.appspot.com/qthread.html#terminated">terminated</a>（）信号，或使用<a href="qthread.html#wait" tppabs="http://pyqt4doc.appspot.com/qthread.html#wait">QThread.wait</a>（ ）后终止（ ） ，以确保万无一失。</p>
+<p>当线程终止时，等待完成线程的所有线程将被唤醒。</p>
+<p><b>Warning:</b>这个函数是危险的，它的使用是气馁。该线程可以在它的代码路径中的任何一点被终止。线程可以同时修改数据被终止。没有机会的线程后自行清理，解锁任何持有的互斥锁，等等，总之，使用此功能只有在绝对必要的。</p>
+<p>终端可以明确地启用或禁用通过调用<a href="qthread.html#setTerminationEnabled" tppabs="http://pyqt4doc.appspot.com/qthread.html#setTerminationEnabled">QThread.setTerminationEnabled</a>（ ） 。调用此函数，而终止在终止伤残结果被推迟，直到重新启用终止。看到的文档<a href="qthread.html#setTerminationEnabled" tppabs="http://pyqt4doc.appspot.com/qthread.html#setTerminationEnabled">QThread.setTerminationEnabled</a>（ ）获取更多信息。</p>
+<p><b>See also</b> <a href="qthread.html#setTerminationEnabled" tppabs="http://pyqt4doc.appspot.com/qthread.html#setTerminationEnabled">setTerminationEnabled</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="usleep"></a>QThread.usleep (int)</h3>
+<p>强制当前线程睡眠<i>usecs</i>微秒。</p>
+<p><b>See also</b> <a href="qthread.html#sleep" tppabs="http://pyqt4doc.appspot.com/qthread.html#sleep">sleep</a>（）和<a href="qthread.html#msleep" tppabs="http://pyqt4doc.appspot.com/qthread.html#msleep">msleep</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="wait"></a>bool QThread.wait (<i>self</i>, int <i>msecs</i> = ULONG_MAX)</h3>
+<p>块的线程，直到下列任一条件满足：</p>
+<ul>
+<li>The thread associated with this <a href="qthread.html" tppabs="http://pyqt4doc.appspot.com/qthread.html">QThread</a> object has finished execution (i.e. when
+it returns from <a href="qthread.html#run" tppabs="http://pyqt4doc.appspot.com/qthread.html#run">run</a>()). This
+function will return true if the thread has finished. It also
+returns true if the thread has not been started yet.</li>
+<li>
+<i>time</i> milliseconds has elapsed. If <i>time</i> is
+ULONG_MAX (the default), then the wait will never timeout (the
+thread must return from <a href="qthread.html#run" tppabs="http://pyqt4doc.appspot.com/qthread.html#run">run</a>()). This
+function will return false if the wait timed out.</li>
+</ul>
+<p>这提供了类似的功能在POSIX<tt>pthread_join()</tt>功能。</p>
+<p><b>See also</b> <a href="qthread.html#sleep" tppabs="http://pyqt4doc.appspot.com/qthread.html#sleep">sleep</a>（）和<a href="qthread.html#terminate" tppabs="http://pyqt4doc.appspot.com/qthread.html#terminate">terminate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="yieldCurrentThread"></a>QThread.yieldCurrentThread ()</h3>
+<p>收益率执行当前线程到另一个线程可运行的，如果有的话。注意，操作系统决定哪个线程切换。</p>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="finished"></a>void finished ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>当线程执行完这个信号被发射。</p>
+<p><b>See also</b> <a href="qthread.html#started" tppabs="http://pyqt4doc.appspot.com/qthread.html#started">started</a>（）和<a href="qthread.html#terminated" tppabs="http://pyqt4doc.appspot.com/qthread.html#terminated">terminated</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="started"></a>void started ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>当线程开始执行这个信号被发射。</p>
+<p><b>See also</b> <a href="qthread.html#finished" tppabs="http://pyqt4doc.appspot.com/qthread.html#finished">finished</a>（）和<a href="qthread.html#terminated" tppabs="http://pyqt4doc.appspot.com/qthread.html#terminated">terminated</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="terminated"></a>void terminated ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>当线程被终止这个信号被发射。</p>
+<p><b>See also</b> <a href="qthread.html#started" tppabs="http://pyqt4doc.appspot.com/qthread.html#started">started</a>（）和<a href="qthread.html#finished" tppabs="http://pyqt4doc.appspot.com/qthread.html#finished">finished</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

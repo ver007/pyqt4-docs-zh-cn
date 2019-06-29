@@ -1,0 +1,150 @@
+﻿<html>
+<head>
+<title>QAbstractNetworkCache Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QAbstractNetworkCache Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtnetwork.html">QtNetwork</a> module]</sup></sup>
+</h1>
+<p>该QAbstractNetworkCache类提供用于缓存实现的接口。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<p>通过继承<a href="qnetworkdiskcache.html" tppabs="http://pyqt4doc.appspot.com/qnetworkdiskcache.html">QNetworkDiskCache</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractnetworkcache.html#QAbstractNetworkCache" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#QAbstractNetworkCache">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractnetworkcache.html#cacheSize" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#cacheSize">cacheSize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractnetworkcache.html#clear" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#clear">clear</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QIODevice <b><a href="qabstractnetworkcache.html#data" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#data">data</a></b> (<i>self</i>, QUrl <i>url</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractnetworkcache.html#insert" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#insert">insert</a></b> (<i>self</i>, QIODevice <i>device</i>)</li>
+<li>
+<div class="fn"></div>QNetworkCacheMetaData <b><a href="qabstractnetworkcache.html#metaData" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#metaData">metaData</a></b> (<i>self</i>, QUrl <i>url</i>)</li>
+<li>
+<div class="fn"></div>QIODevice <b><a href="qabstractnetworkcache.html#prepare" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#prepare">prepare</a></b> (<i>self</i>, QNetworkCacheMetaData <i>metaData</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractnetworkcache.html#remove" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#remove">remove</a></b> (<i>self</i>, QUrl <i>url</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractnetworkcache.html#updateMetaData" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#updateMetaData">updateMetaData</a></b> (<i>self</i>, QNetworkCacheMetaData <i>metaData</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QAbstractNetworkCache类提供用于缓存实现的接口。</p>
+<p>QAbstractNetworkCache是为用于在每个标准缓存基类<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>。 QAbstractNetworkCache是一个抽象类，不能被实例化。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QAbstractNetworkCache"></a>QAbstractNetworkCache.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个抽象的网络高速缓存与给定<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="cacheSize"></a>int QAbstractNetworkCache.cacheSize (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回由缓存佔用的电流的大小。根据不同的缓存实现，这可能是磁盘或内存的大小。</p>
+<p>在基类中，这是一个纯虚函数。</p>
+<p><b>See also</b> <a href="qabstractnetworkcache.html#clear" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#clear">clear</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clear"></a>QAbstractNetworkCache.clear (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void clear()</tt>。</p>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>删除所有项目从缓存。除非有故障清除缓存<a href="qabstractnetworkcache.html#cacheSize" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#cacheSize">cacheSize</a>（）应该调用清除后返回0 。</p>
+<p>在基类中，这是一个纯虚函数。</p>
+<p><b>See also</b> <a href="qabstractnetworkcache.html#cacheSize" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#cacheSize">cacheSize</a>（）和<a href="qabstractnetworkcache.html#remove" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#remove">remove</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="data"></a><a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> QAbstractNetworkCache.data (<i>self</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>url</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回具有相关联的数据<i>url</i>。</p>
+<p>它是由请求该数据的应用程序，删除<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>当用它做。</p>
+<p>如果没有高速缓存<i>url</i>，该URL是无效的，或者如果有一个内部缓存错误则返回0 。</p>
+<p>在基类中，这是一个纯虚函数。</p>
+<p><b>See also</b> <a href="qabstractnetworkcache.html#metaData" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#metaData">metaData</a>（）和<a href="qabstractnetworkcache.html#prepare" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#prepare">prepare</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insert"></a>QAbstractNetworkCache.insert (<i>self</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>device</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>插入在数据<i>device</i>和制备的元数据到高速缓存中。之后调用此函数使用的数据和元数据应该是检索<a href="qabstractnetworkcache.html#data" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#data">data</a>（）和<a href="qabstractnetworkcache.html#metaData" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#metaData">metaData</a>（ ） 。</p>
+<p>要取消一个准备插入的呼叫<a href="qabstractnetworkcache.html#remove" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#remove">remove</a>（ ）对元数据的URL 。</p>
+<p>在基类中，这是一个纯虚函数。</p>
+<p><b>See also</b> <a href="qabstractnetworkcache.html#prepare" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#prepare">prepare</a>（）和<a href="qabstractnetworkcache.html#remove" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#remove">remove</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="metaData"></a><a href="qnetworkcachemetadata.html" tppabs="http://pyqt4doc.appspot.com/qnetworkcachemetadata.html">QNetworkCacheMetaData</a> QAbstractNetworkCache.metaData (<i>self</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>url</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回的元数据的URL<i>url</i>。</p>
+<p>如果url是有效的，缓存包含数据的url，有效<a href="qnetworkcachemetadata.html" tppabs="http://pyqt4doc.appspot.com/qnetworkcachemetadata.html">QNetworkCacheMetaData</a>返回。</p>
+<p>在基类中，这是一个纯虚函数。</p>
+<p><b>See also</b> <a href="qabstractnetworkcache.html#updateMetaData" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#updateMetaData">updateMetaData</a>（）和<a href="qabstractnetworkcache.html#data" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#data">data</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="prepare"></a><a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> QAbstractNetworkCache.prepare (<i>self</i>, <a href="qnetworkcachemetadata.html" tppabs="http://pyqt4doc.appspot.com/qnetworkcachemetadata.html">QNetworkCacheMetaData</a> <i>metaData</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回一个应填入的数据缓存项设备<i>metaData</i>。当所有的数据已经被写入<a href="qabstractnetworkcache.html#insert" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#insert">insert</a>（ ）被调用。如果元数据是无效的或URL中的元数据是无效的，则返回0 。</p>
+<p>高速缓存拥有该设备，并将采取删除它被插入或拔出时的照顾。</p>
+<p>要取消一个准备插入的呼叫<a href="qabstractnetworkcache.html#remove" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#remove">remove</a>（ ）对元数据的URL 。</p>
+<p>在基类中，这是一个纯虚函数。</p>
+<p><b>See also</b> <a href="qabstractnetworkcache.html#remove" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#remove">remove</a>（ ）<a href="qabstractnetworkcache.html#updateMetaData" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#updateMetaData">updateMetaData</a>（）和<a href="qabstractnetworkcache.html#insert" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#insert">insert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="remove"></a>bool QAbstractNetworkCache.remove (<i>self</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>url</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>删除缓存项<i>url</i>，返回True，如果成功，否则为False 。</p>
+<p>在基类中，这是一个纯虚函数。</p>
+<p><b>See also</b> <a href="qabstractnetworkcache.html#clear" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#clear">clear</a>（）和<a href="qabstractnetworkcache.html#prepare" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#prepare">prepare</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="updateMetaData"></a>QAbstractNetworkCache.updateMetaData (<i>self</i>, <a href="qnetworkcachemetadata.html" tppabs="http://pyqt4doc.appspot.com/qnetworkcachemetadata.html">QNetworkCacheMetaData</a> <i>metaData</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>更新缓存荟萃日期为元数据的URL来<i>metaData</i></p>
+<p>如果缓存中不包含一个缓存项的URL ，然后不采取任何行动。</p>
+<p>在基类中，这是一个纯虚函数。</p>
+<p><b>See also</b> <a href="qabstractnetworkcache.html#metaData" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#metaData">metaData</a>（）和<a href="qabstractnetworkcache.html#prepare" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html#prepare">prepare</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

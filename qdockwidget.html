@@ -1,0 +1,335 @@
+﻿<html>
+<head>
+<title>QDockWidget Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDockWidget Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QDockWidget类提供了可以在里面一个停靠窗口小部件<a href="qmainwindow.html" tppabs="http://pyqt4doc.appspot.com/qmainwindow.html">QMainWindow</a>或浮在桌面上的顶层窗口。<a href="#details">More...</a></p>
+
+<p>继承<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qdockwidget.html#DockWidgetFeature-enum" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#DockWidgetFeature-enum">DockWidgetFeature</a></b> { DockWidgetClosable, DockWidgetMovable, DockWidgetFloatable, DockWidgetVerticalTitleBar, AllDockWidgetFeatures, NoDockWidgetFeatures }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdockwidget-dockwidgetfeatures.html">DockWidgetFeatures</a></b>
+</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdockwidget.html#QDockWidget" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#QDockWidget">__init__</a></b> (<i>self</i>, QString <i>title</i>, QWidget <i>parent</i> = None, Qt.WindowFlags <i>flags</i> = 0)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdockwidget.html#QDockWidget-2" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#QDockWidget-2">__init__</a></b> (<i>self</i>, QWidget <i>parent</i> = None, Qt.WindowFlags <i>flags</i> = 0)</li>
+<li>
+<div class="fn"></div>Qt.DockWidgetAreas <b><a href="qdockwidget.html#allowedAreas" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#allowedAreas">allowedAreas</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdockwidget.html#changeEvent" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#changeEvent">changeEvent</a></b> (<i>self</i>, QEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdockwidget.html#closeEvent" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#closeEvent">closeEvent</a></b> (<i>self</i>, QCloseEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdockwidget.html#event" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#event">event</a></b> (<i>self</i>, QEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>DockWidgetFeatures <b><a href="qdockwidget.html#features" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#features">features</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdockwidget.html#initStyleOption" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#initStyleOption">initStyleOption</a></b> (<i>self</i>, QStyleOptionDockWidget <i>option</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdockwidget.html#isAreaAllowed" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#isAreaAllowed">isAreaAllowed</a></b> (<i>self</i>, Qt.DockWidgetArea <i>area</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdockwidget.html#isFloating" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#isFloating">isFloating</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdockwidget.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#paintEvent">paintEvent</a></b> (<i>self</i>, QPaintEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdockwidget.html#setAllowedAreas" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#setAllowedAreas">setAllowedAreas</a></b> (<i>self</i>, Qt.DockWidgetAreas <i>areas</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdockwidget.html#setFeatures" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#setFeatures">setFeatures</a></b> (<i>self</i>, DockWidgetFeatures <i>features</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdockwidget.html#setFloating" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#setFloating">setFloating</a></b> (<i>self</i>, bool <i>floating</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdockwidget.html#setTitleBarWidget" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#setTitleBarWidget">setTitleBarWidget</a></b> (<i>self</i>, QWidget <i>widget</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdockwidget.html#setWidget" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#setWidget">setWidget</a></b> (<i>self</i>, QWidget <i>widget</i>)</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qdockwidget.html#titleBarWidget" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#titleBarWidget">titleBarWidget</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QAction <b><a href="qdockwidget.html#toggleViewAction" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#toggleViewAction">toggleViewAction</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qdockwidget.html#widget" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#widget">widget</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qdockwidget.html#allowedAreasChanged" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#allowedAreasChanged">allowedAreasChanged</a></b> (Qt::DockWidgetAreas)</li>
+<li>
+<div class="fn"></div>void <b><a href="qdockwidget.html#dockLocationChanged" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#dockLocationChanged">dockLocationChanged</a></b> (Qt::DockWidgetArea)</li>
+<li>
+<div class="fn"></div>void <b><a href="qdockwidget.html#featuresChanged" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#featuresChanged">featuresChanged</a></b> (QDockWidget::DockWidgetFeatures)</li>
+<li>
+<div class="fn"></div>void <b><a href="qdockwidget.html#topLevelChanged" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#topLevelChanged">topLevelChanged</a></b> (bool)</li>
+<li>
+<div class="fn"></div>void <b><a href="qdockwidget.html#visibilityChanged" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#visibilityChanged">visibilityChanged</a></b> (bool)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDockWidget类提供了可以在里面一个停靠窗口小部件<a href="qmainwindow.html" tppabs="http://pyqt4doc.appspot.com/qmainwindow.html">QMainWindow</a>或浮在桌面上的顶层窗口。</p>
+<p>QDockWidget提供码头部件的概念，也知道作为工具选项板或实用程序窗口。坞窗是放置在辅助窗口<i>dock widget area</i>周围的<a href="qmainwindow.html#centralWidget" tppabs="http://pyqt4doc.appspot.com/qmainwindow.html#centralWidget">central widget</a>在<a href="qmainwindow.html" tppabs="http://pyqt4doc.appspot.com/qmainwindow.html">QMainWindow</a>。</p>
+<p class="centerAlign"><img alt="" src="images/mainwindow-docks.png"></p>
+<p>停靠窗口可他们目前的区域内移动，移动到新的领域和浮动（例如，取消停靠）由最终用户。该QDockWidget API允许程序员来限制移动的船坞部件的能力， float和关闭，以及在它们可以被放置区域。</p>
+<a id="appearance" name="appearance"></a>
+<h3>Appearance</h3>
+<p>一个QDockWidget包括标题栏和内容区域。标题栏显示的停靠小部件<a href="qwidget.html#windowTitle-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#windowTitle-prop">window title</a>，一<i>float</i>按钮和<i>close</i>按钮。取决于QDockWidget ，状态的<i>float</i>和<i>close</i>按钮可能会被禁用或根本不显示。</p>
+<p>标题栏和按钮的外观取决于<a href="qstyle.html" tppabs="http://pyqt4doc.appspot.com/qstyle.html">style</a>在使用中。</p>
+<p>一个QDockWidget作为一个包装它的子控件，设置<a href="qdockwidget.html#setWidget" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#setWidget">setWidget</a>（ ） 。自定义大小的提示，最小和最大大小和尺寸的政策应该在孩子小部件来实现。 QDockWidget会尊重他们，调整自己的约束，包括框架和标题。尺寸的限制，不应在QDockWidget本身进行设置，因为它们取决于它是否停靠改变;停靠QDockWidget没有帧和一个较小的标题栏。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="DockWidgetFeature-enum"></a>QDockWidget.DockWidgetFeature</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDockWidget.DockWidgetClosable</tt></td>
+<td class="topAlign"><tt>0x01</tt></td>
+<td class="topAlign">码头widget可以被关闭。在某些系统上被告席小部件都会有一个关闭按钮时，它的（在MacOS 10.5为例）浮动。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDockWidget.DockWidgetMovable</tt></td>
+<td class="topAlign"><tt>0x02</tt></td>
+<td class="topAlign">码头widget可以码头之间由用户移动。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDockWidget.DockWidgetFloatable</tt></td>
+<td class="topAlign"><tt>0x04</tt></td>
+<td class="topAlign">码头小部件可以从主窗口分离，飘然作为一个独立的窗口。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDockWidget.DockWidgetVerticalTitleBar</tt>
+</td>
+<td class="topAlign"><tt>0x08</tt></td>
+<td class="topAlign">码头插件播放在其左侧垂直标题栏。这可以用来增加的垂直空间的量<a href="qmainwindow.html" tppabs="http://pyqt4doc.appspot.com/qmainwindow.html">QMainWindow</a>。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDockWidget.AllDockWidgetFeatures</tt>
+</td>
+<td class="topAlign"><tt>DockWidgetClosable | DockWidgetMovable |
+DockWidgetFloatable</tt></td>
+<td class="topAlign">（已取消）的码头小部件可以被关闭，移动和漂浮。由于新的功能可能会在以后的版本中添加，码头小部件的外观和行为，如果你使用这个标志可能会改变。请注明个人标志代替。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDockWidget.NoDockWidgetFeatures</tt>
+</td>
+<td class="topAlign"><tt>0x00</tt></td>
+<td class="topAlign">被告席部件不能关闭，移动或浮动。</td>
+</tr>
+</table>
+<p>该DockWidgetFeatures类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cDockWidgetFeature\u003e 。它存储DockWidgetFeature值的或组合。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDockWidget"></a>QDockWidget.__init__ (<i>self</i>, QString <i>title</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-windowflags.html">Qt.WindowFlags</a> <i>flags</i> = 0)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a href="qdockwidget.html" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html">QDockWidget</a>与父<i>parent</i>和窗口标志<i>flags</i>。被告席上的部件将被放置在左侧码头小工具区域。</p>
+<p>窗口标题设置为<i>title</i>。这个标题时使用<a href="qdockwidget.html" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html">QDockWidget</a>停靠和取消停靠。它也可用于在所提供的上下文菜单<a href="qmainwindow.html" tppabs="http://pyqt4doc.appspot.com/qmainwindow.html">QMainWindow</a>。</p>
+<p><b>See also</b> <a href="qwidget.html#windowTitle-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#windowTitle-prop">setWindowTitle</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QDockWidget-2"></a>QDockWidget.__init__ (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-windowflags.html">Qt.WindowFlags</a> <i>flags</i> = 0)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a href="qdockwidget.html" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html">QDockWidget</a>与父<i>parent</i>和窗口标志<i>flags</i>。被告席上的部件将被放置在左侧码头小工具区域。</p>
+
+
+<h3 class="fn">
+<a name="allowedAreas"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-dockwidgetareas.html">Qt.DockWidgetAreas</a> QDockWidget.allowedAreas (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="changeEvent"></a>QDockWidget.changeEvent (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#changeEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#changeEvent">QWidget.changeEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="closeEvent"></a>QDockWidget.closeEvent (<i>self</i>, <a href="qcloseevent.html" tppabs="http://pyqt4doc.appspot.com/qcloseevent.html">QCloseEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#closeEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#closeEvent">QWidget.closeEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="event"></a>bool QDockWidget.event (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">QObject.event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="features"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdockwidget-dockwidgetfeatures.html">DockWidgetFeatures</a> QDockWidget.features (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="initStyleOption"></a>QDockWidget.initStyleOption (<i>self</i>, <a href="qstyleoptiondockwidget.html" tppabs="http://pyqt4doc.appspot.com/qstyleoptiondockwidget.html">QStyleOptionDockWidget</a> <i>option</i>)</h3>
+<p>初始化<i>option</i>与其它的值<a href="qdockwidget.html" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html">QDockWidget</a>。当他们需要一个这种方法是有用的子类<a href="qstyleoptiondockwidget.html" tppabs="http://pyqt4doc.appspot.com/qstyleoptiondockwidget.html">QStyleOptionDockWidget</a>，但不希望在所有的信息填写自己。</p>
+<p><b>See also</b> <a href="qstyleoption.html#initFrom" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html#initFrom">QStyleOption.initFrom</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isAreaAllowed"></a>bool QDockWidget.isAreaAllowed (<i>self</i>, <a href="qt.html#DockWidgetArea-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#DockWidgetArea-enum">Qt.DockWidgetArea</a> <i>area</i>)</h3>
+<p>返回True如果此停靠小部件可以放置在给定的<i>area</i>否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isFloating"></a>bool QDockWidget.isFloating (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="paintEvent"></a>QDockWidget.paintEvent (<i>self</i>, <a href="qpaintevent.html" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html">QPaintEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#paintEvent">QWidget.paintEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setAllowedAreas"></a>QDockWidget.setAllowedAreas (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-dockwidgetareas.html">Qt.DockWidgetAreas</a> <i>areas</i>)</h3>
+<h3 class="fn">
+<a name="setFeatures"></a>QDockWidget.setFeatures (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdockwidget-dockwidgetfeatures.html">DockWidgetFeatures</a> <i>features</i>)</h3>
+<h3 class="fn">
+<a name="setFloating"></a>QDockWidget.setFloating (<i>self</i>, bool <i>floating</i>)</h3>
+<h3 class="fn">
+<a name="setTitleBarWidget"></a>QDockWidget.setTitleBarWidget (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>widget</i>)</h3>
+<p>该<i>widget</i>说法有它的所有权转移给Qt的。</p>
+<p>设置一个任意<i>widget</i>作为基座部件的标题栏。如果<i>widget</i>为0 ，任何自定义标题栏小工具以前在码头上小部件设置被删除，但不能删除，默认的标题栏将被使用。</p>
+<p>如果标题栏小工具设置，<a href="qdockwidget.html" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html">QDockWidget</a>将不使用本机窗口装饰时，它是浮动的。</p>
+<p>下面是实现自定义标题栏的一些提示：</p>
+<ul>
+<li>Mouse events that are not explicitly handled by the title bar
+widget must be ignored by calling <a href="qevent.html#ignore" tppabs="http://pyqt4doc.appspot.com/qevent.html#ignore">QMouseEvent.ignore</a>(). These events then
+propagate to the <a href="qdockwidget.html" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html">QDockWidget</a> parent,
+which handles them in the usual manner, moving when the title bar
+is dragged, docking and undocking when it is double-clicked,
+etc.</li>
+<li>When <a href="qdockwidget.html#DockWidgetFeature-enum" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#DockWidgetFeature-enum">DockWidgetVerticalTitleBar</a>
+is set on <a href="qdockwidget.html" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html">QDockWidget</a>, the title bar
+widget is repositioned accordingly. In <a href="qwidget.html#resizeEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#resizeEvent">resizeEvent</a>(), the title bar should
+check what orientation it should assume:
+<pre class="cpp">
+ <span class="type"><a href="qdockwidget.html" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html">QDockWidget</a></span> <span class="operator">*</span>dockWidget <span class="operator">=</span> qobject_cast<span class="operator">&lt;</span><span class="type"><a href="qdockwidget.html" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html">QDockWidget</a></span><span class="operator">*</span><span class="operator">&gt;</span>(parentWidget());
+ <span class="keyword">if</span> (dockWidget<span class="operator">-</span><span class="operator">&gt;</span>features() <span class="operator">&amp;</span> <span class="type"><a href="qdockwidget.html" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html">QDockWidget</a></span><span class="operator">.</span>DockWidgetVerticalTitleBar) {
+     <span class="comment">// I need to be vertical</span>
+ } <span class="keyword">else</span> {
+     <span class="comment">// I need to be horizontal</span>
+ }
+</pre>
+</li>
+<li>The title bar widget must have a valid <a href="qwidget.html#sizeHint-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#sizeHint-prop">QWidget.sizeHint</a>() and <a href="qwidget.html#minimumSizeHint-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#minimumSizeHint-prop">QWidget.minimumSizeHint</a>().
+These functions should take into account the current orientation of
+the title bar.</li>
+<li>It is not possible to remove a title bar from a dock widget.
+However, a similar effect can be achieved by setting a default
+constructed <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> as the title bar
+widget.</li>
+</ul>
+<p>Using <a href="qobject.html#qobject_cast" tppabs="http://pyqt4doc.appspot.com/qobject.html#qobject_cast">qobject_cast</a>（ ）如上图所示，在标题栏小工具可以完全访问它的父<a href="qdockwidget.html" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html">QDockWidget</a>。因此，它可以响应于用户的操作作为对接和遮盖力执行这样的操作。</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qdockwidget.html#titleBarWidget" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#titleBarWidget">titleBarWidget</a>（）和<a href="qdockwidget.html#DockWidgetFeature-enum" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#DockWidgetFeature-enum">DockWidgetVerticalTitleBar</a>。</p>
+
+
+<h3 class="fn">
+<a name="setWidget"></a>QDockWidget.setWidget (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>widget</i>)</h3>
+<p>该<i>widget</i>说法有它的所有权转移给Qt的。</p>
+<p>设置部件码头小部件<i>widget</i>。</p>
+<p>如果船坞部件是可见的，当<i>widget</i>是说，你必须<a href="qwidget.html#show" tppabs="http://pyqt4doc.appspot.com/qwidget.html#show">show()</a>它明确。</p>
+<p>请注意，您必须添加的布局<i>widget</i>你调用这个函数之前，如果没有，<i>widget</i>将不可见。</p>
+<p><b>See also</b> <a href="qdockwidget.html#widget" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#widget">widget</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="titleBarWidget"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QDockWidget.titleBarWidget (<i>self</i>)</h3>
+<p>返回的自定义标题栏widget集<a href="qdockwidget.html" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html">QDockWidget</a>，或者0，如果没有自定义标题栏已定。</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qdockwidget.html#setTitleBarWidget" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#setTitleBarWidget">setTitleBarWidget</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toggleViewAction"></a><a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a> QDockWidget.toggleViewAction (<i>self</i>)</h3>
+<p>返回一个可用于显示或关闭此停靠小部件可检查的动作。</p>
+<p>该操作的文本设置为停靠窗口小部件的窗口标题。</p>
+<p><b>See also</b> <a href="qaction.html#text-prop" tppabs="http://pyqt4doc.appspot.com/qaction.html#text-prop">QAction.text</a>和<a href="qwidget.html#windowTitle-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#windowTitle-prop">QWidget.windowTitle</a>。</p>
+
+
+<h3 class="fn">
+<a name="widget"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QDockWidget.widget (<i>self</i>)</h3>
+<p>返回部件码头部件。该函数返回零，如果插件并未设置。</p>
+<p><b>See also</b> <a href="qdockwidget.html#setWidget" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#setWidget">setWidget</a>（ ） 。</p>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="allowedAreasChanged"></a>void allowedAreasChanged (Qt::DockWidgetAreas)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的<a href="qdockwidget.html#allowedAreas-prop" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#allowedAreas-prop">allowedAreas</a>属性更改。该<i>allowedAreas</i>参数给出该属性的新值。</p>
+
+
+<h3 class="fn">
+<a name="dockLocationChanged"></a>void dockLocationChanged (Qt::DockWidgetArea)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当基座部件被移动到另一个码头这个信号被发射<i>area</i>，或移动到其当前船坞区的不同位置。发生这种情况时，基座部件被编程方式移动或由用户拖动到一个新位置。</p>
+<p>此功能被引入Qt的4.3 。</p>
+
+
+<h3 class="fn">
+<a name="featuresChanged"></a>void featuresChanged (QDockWidget::DockWidgetFeatures)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的<a href="qdockwidget.html#features-prop" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#features-prop">features</a>属性更改。该<i>features</i>参数给出该属性的新值。</p>
+
+
+<h3 class="fn">
+<a name="topLevelChanged"></a>void topLevelChanged (bool)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的<a href="qdockwidget.html#floating-prop" tppabs="http://pyqt4doc.appspot.com/qdockwidget.html#floating-prop">floating</a>属性更改。该<i>topLevel</i>参数为True ，如果停靠小部件，现在浮动，否则为假。</p>
+<p><b>See also</b> <a href="qwidget.html#isWindow" tppabs="http://pyqt4doc.appspot.com/qwidget.html#isWindow">isWindow</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="visibilityChanged"></a>void visibilityChanged (bool)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当基座部件成为这个信号被发射<i>visible</i>（或不可见） 。这种情况发生在小部件是隐藏或显示，以及当它停靠在一个标籤式码头区，其标籤变成选择或取消选择。</p>
+<p>此功能被引入Qt的4.3 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

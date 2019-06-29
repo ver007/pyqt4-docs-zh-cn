@@ -1,0 +1,148 @@
+﻿<html>
+<head>
+<title>QWidgetAction Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QWidgetAction Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QWidgetAction类扩展<a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a>通过插入自定义的控件到基础的行动的容器，如工具栏的接口。<a href="#details">More...</a></p>
+
+<p>继承<a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qwidgetaction.html#QWidgetAction" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#QWidgetAction">__init__</a></b> (<i>self</i>, QObject <i>parent</i>)</li>
+<li>
+<div class="fn"></div>list-of-QWidget <b><a href="qwidgetaction.html#createdWidgets" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#createdWidgets">createdWidgets</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qwidgetaction.html#createWidget" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#createWidget">createWidget</a></b> (<i>self</i>, QWidget <i>parent</i>)</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qwidgetaction.html#defaultWidget" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#defaultWidget">defaultWidget</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwidgetaction.html#deleteWidget" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#deleteWidget">deleteWidget</a></b> (<i>self</i>, QWidget <i>widget</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qwidgetaction.html#event" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#event">event</a></b> (<i>self</i>, QEvent)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qwidgetaction.html#eventFilter" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#eventFilter">eventFilter</a></b> (<i>self</i>, QObject, QEvent)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwidgetaction.html#releaseWidget" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#releaseWidget">releaseWidget</a></b> (<i>self</i>, QWidget <i>widget</i>)</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qwidgetaction.html#requestWidget" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#requestWidget">requestWidget</a></b> (<i>self</i>, QWidget <i>parent</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwidgetaction.html#setDefaultWidget" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#setDefaultWidget">setDefaultWidget</a></b> (<i>self</i>, QWidget <i>w</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QWidgetAction类扩展<a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a>通过插入自定义的控件到基础的行动的容器，如工具栏的接口。</p>
+<p>大多数操作在一个应用程序中表示为在工具栏菜单或按钮的项目。但有时比较复杂的部件是必要的。例如，在一个文字处理软件的缩放操作可使用实现<a href="qcombobox.html" tppabs="http://pyqt4doc.appspot.com/qcombobox.html">QComboBox</a>在<a href="qtoolbar.html" tppabs="http://pyqt4doc.appspot.com/qtoolbar.html">QToolBar</a>，呈现出各种不同的缩放级别。<a href="qtoolbar.html" tppabs="http://pyqt4doc.appspot.com/qtoolbar.html">QToolBar</a>提供<a href="qtoolbar.html#insertWidget" tppabs="http://pyqt4doc.appspot.com/qtoolbar.html#insertWidget">QToolBar.insertWidget</a>（）作为便利的功能，用于插入一个单一的部件。但是，如果你想实现在多个容器使用自定义的小部件进行可视化的操作，那么你必须继承QWidgetAction 。</p>
+<p>如果一个QWidgetAction被添加到例如<a href="qtoolbar.html" tppabs="http://pyqt4doc.appspot.com/qtoolbar.html">QToolBar</a>然后<a href="qwidgetaction.html#createWidget" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#createWidget">QWidgetAction.createWidget</a>（）被调用。该函数的重新实现应该创建一个新的自定义小部件指定的父。</p>
+<p>如果动作是从一个容器控件，然后取出<a href="qwidgetaction.html#deleteWidget" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#deleteWidget">QWidgetAction.deleteWidget</a>（ ）被调用先前创建的自定义窗口小部件作为参数。默认实现隐藏窗口小部件并使用它删除<a href="qobject.html#deleteLater" tppabs="http://pyqt4doc.appspot.com/qobject.html#deleteLater">QObject.deleteLater</a>（ ） 。</p>
+<p>如果你只有一个单一的自定义窗口小部件，那么你可以用它设置为默认的小工具<a href="qwidgetaction.html#setDefaultWidget" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#setDefaultWidget">setDefaultWidget</a>（ ） 。如果该操作被添加到该插件将被用于<a href="qtoolbar.html" tppabs="http://pyqt4doc.appspot.com/qtoolbar.html">QToolBar</a>或者一般来支持QWidgetAction动作容器。如果只有一个默认插件一个QWidgetAction被添加到两个工具栏的同时则默认插件仅示出了在操作中加入第一工具条。 QWidgetAction接管了默认的窗口小部件的所有权。</p>
+<p>请注意，它是由小部件通过重新实现鼠标事件处理程序，并调用激活动作，例如<a href="qaction.html#trigger" tppabs="http://pyqt4doc.appspot.com/qaction.html#trigger">QAction.trigger</a>（ ） 。</p>
+<p><b>Mac OS X</b>：如果您添加一个Widget在Mac OS X上的应用程序的菜单栏中的菜单，小工具将被添加，它会发挥作用，但有一些限制：</p>
+<ol class="1">
+<li>小部件是从重设父离开<a href="qmenu.html" tppabs="http://pyqt4doc.appspot.com/qmenu.html">QMenu</a>本机菜单视图。如果你表现出的菜单在其他地方（例如，作为一个弹出菜单） ，小部件不会在那里。</li>
+<li>widget的对焦/键盘操作是不可能的。</li>
+<li>由于苹果的设计，在部件上鼠标跟踪目前不起作用。</li>
+<li>连接<a href="qaction.html#triggered" tppabs="http://pyqt4doc.appspot.com/qaction.html#triggered">triggered</a>（）信号来打开一个模态对话框会导致在Mac OS X 10.4 （已知的bug被苹果公司承认）崩溃插槽，一个解决方法是使用一个QueuedConnection而不是DirectConnection 。</li>
+</ol>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QWidgetAction"></a>QWidgetAction.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i>)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个行动<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="createdWidgets"></a>list-of-QWidget QWidgetAction.createdWidgets (<i>self</i>)</h3>
+<p>返回已使用该控件列表<a href="qwidgetaction.html#createWidget" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#createWidget">createWidget</a>（）和目前正在由小部件使用的行动已被添加到。</p>
+
+
+<h3 class="fn">
+<a name="createWidget"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QWidgetAction.createWidget (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i>)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>这个函数被调用时的动作被添加到支持自定义部件的容器控件。如果你不希望一个自定义窗口小部件被用作指定的操作的代表性<i>parent</i>窗口小部件然后0应该返回。</p>
+<p><b>See also</b> <a href="qwidgetaction.html#deleteWidget" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#deleteWidget">deleteWidget</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="defaultWidget"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QWidgetAction.defaultWidget (<i>self</i>)</h3>
+<p>返回默认的小部件。</p>
+<p><b>See also</b> <a href="qwidgetaction.html#setDefaultWidget" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#setDefaultWidget">setDefaultWidget</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="deleteWidget"></a>QWidgetAction.deleteWidget (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>widget</i>)</h3>
+<p>该<i>widget</i>说法有它的所有权转移给Qt的。</p>
+<p>每当行动是从一个容器控件，使用一个自定义的显示操作删除这个函数被调用<i>widget</i>以前使用创建<a href="qwidgetaction.html#createWidget" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#createWidget">createWidget</a>（ ） 。默认实现隐藏<i>widget</i>并用准备好删除<a href="qobject.html#deleteLater" tppabs="http://pyqt4doc.appspot.com/qobject.html#deleteLater">QObject.deleteLater</a>（ ） 。</p>
+<p><b>See also</b> <a href="qwidgetaction.html#createWidget" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#createWidget">createWidget</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="event"></a>bool QWidgetAction.event (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>)</h3>
+<p>从重新实现<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">QObject.event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="eventFilter"></a>bool QWidgetAction.eventFilter (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>)</h3>
+<p>从重新实现<a href="qobject.html#eventFilter" tppabs="http://pyqt4doc.appspot.com/qobject.html#eventFilter">QObject.eventFilter</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="releaseWidget"></a>QWidgetAction.releaseWidget (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>widget</i>)</h3>
+<p>该<i>widget</i>争论</p>
+<p>指定发布<i>widget</i>。</p>
+<p>支持行动容器部件调用此函数时，窗口小部件操作被删除。</p>
+<p><b>See also</b> <a href="qwidgetaction.html#requestWidget" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#requestWidget">requestWidget</a>（ ）<a href="qwidgetaction.html#deleteWidget" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#deleteWidget">deleteWidget</a>（）和<a href="qwidgetaction.html#defaultWidget" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#defaultWidget">defaultWidget</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="requestWidget"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QWidgetAction.requestWidget (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i>)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>返回表示动作的部件，用给定的<i>parent</i>。</p>
+<p>支持行动集装箱部件可以调用这个函数来请求一个widget作为动作的视觉表现。</p>
+<p><b>See also</b> <a href="qwidgetaction.html#releaseWidget" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#releaseWidget">releaseWidget</a>（ ）<a href="qwidgetaction.html#createWidget" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#createWidget">createWidget</a>（）和<a href="qwidgetaction.html#defaultWidget" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#defaultWidget">defaultWidget</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setDefaultWidget"></a>QWidgetAction.setDefaultWidget (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>w</i>)</h3>
+<p>该<i>w</i>说法有它的所有权转移给Qt的。</p>
+<p>Sets <i>widget</i>是默认的小部件。所有权转移至<a href="qwidgetaction.html" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html">QWidgetAction</a>。除非<a href="qwidgetaction.html#createWidget" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#createWidget">createWidget</a>（ ）是由一个子类重新实现当一个容器控件通过请求将Widget返回一个新插件的默认控件是用来<a href="qwidgetaction.html#requestWidget" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#requestWidget">requestWidget</a>（ ） 。</p>
+<p><b>See also</b> <a href="qwidgetaction.html#defaultWidget" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html#defaultWidget">defaultWidget</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

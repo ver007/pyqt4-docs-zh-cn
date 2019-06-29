@@ -1,0 +1,542 @@
+﻿<html>
+<head>
+<title>QDialogButtonBox Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDialogButtonBox Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QDialogButtonBox类是一个小部件，呈现在布局是适合当前控件样式按钮。<a href="#details">More...</a></p>
+
+<p>继承<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qdialogbuttonbox.html#ButtonLayout-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonLayout-enum">ButtonLayout</a></b> { WinLayout, MacLayout, KdeLayout, GnomeLayout }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">ButtonRole</a></b> { InvalidRole, AcceptRole, RejectRole, DestructiveRole, ..., ApplyRole }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qdialogbuttonbox.html#StandardButton-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#StandardButton-enum">StandardButton</a></b> { NoButton, Ok, Save, SaveAll, ..., RestoreDefaults }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox-standardbuttons.html">StandardButtons</a></b>
+</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdialogbuttonbox.html#QDialogButtonBox" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#QDialogButtonBox">__init__</a></b> (<i>self</i>, QWidget <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdialogbuttonbox.html#QDialogButtonBox-2" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#QDialogButtonBox-2">__init__</a></b> (<i>self</i>, Qt.Orientation <i>orientation</i>, QWidget <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdialogbuttonbox.html#QDialogButtonBox-3" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#QDialogButtonBox-3">__init__</a></b> (<i>self</i>, StandardButtons <i>buttons</i>, Qt.Orientation <i>orientation</i> = Qt.Horizontal, QWidget <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdialogbuttonbox.html#addButton" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#addButton">addButton</a></b> (<i>self</i>, QAbstractButton <i>button</i>, ButtonRole <i>role</i>)</li>
+<li>
+<div class="fn"></div>QPushButton <b><a href="qdialogbuttonbox.html#addButton-2" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#addButton-2">addButton</a></b> (<i>self</i>, QString <i>text</i>, ButtonRole <i>role</i>)</li>
+<li>
+<div class="fn"></div>QPushButton <b><a href="qdialogbuttonbox.html#addButton-3" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#addButton-3">addButton</a></b> (<i>self</i>, StandardButton <i>button</i>)</li>
+<li>
+<div class="fn"></div>QPushButton <b><a href="qdialogbuttonbox.html#button" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#button">button</a></b> (<i>self</i>, StandardButton <i>which</i>)</li>
+<li>
+<div class="fn"></div>ButtonRole <b><a href="qdialogbuttonbox.html#buttonRole" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#buttonRole">buttonRole</a></b> (<i>self</i>, QAbstractButton <i>button</i>)</li>
+<li>
+<div class="fn"></div>list-of-QAbstractButton <b><a href="qdialogbuttonbox.html#buttons" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#buttons">buttons</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdialogbuttonbox.html#centerButtons" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#centerButtons">centerButtons</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdialogbuttonbox.html#changeEvent" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#changeEvent">changeEvent</a></b> (<i>self</i>, QEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdialogbuttonbox.html#clear" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#clear">clear</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdialogbuttonbox.html#event" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#event">event</a></b> (<i>self</i>, QEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>Qt.Orientation <b><a href="qdialogbuttonbox.html#orientation" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#orientation">orientation</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdialogbuttonbox.html#removeButton" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#removeButton">removeButton</a></b> (<i>self</i>, QAbstractButton <i>button</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdialogbuttonbox.html#setCenterButtons" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#setCenterButtons">setCenterButtons</a></b> (<i>self</i>, bool <i>center</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdialogbuttonbox.html#setOrientation" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#setOrientation">setOrientation</a></b> (<i>self</i>, Qt.Orientation <i>orientation</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdialogbuttonbox.html#setStandardButtons" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#setStandardButtons">setStandardButtons</a></b> (<i>self</i>, StandardButtons <i>buttons</i>)</li>
+<li>
+<div class="fn"></div>StandardButton <b><a href="qdialogbuttonbox.html#standardButton" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#standardButton">standardButton</a></b> (<i>self</i>, QAbstractButton <i>button</i>)</li>
+<li>
+<div class="fn"></div>StandardButtons <b><a href="qdialogbuttonbox.html#standardButtons" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#standardButtons">standardButtons</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qdialogbuttonbox.html#accepted" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#accepted">accepted</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qdialogbuttonbox.html#clicked" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#clicked">clicked</a></b> (QAbstractButton *)</li>
+<li>
+<div class="fn"></div>void <b><a href="qdialogbuttonbox.html#helpRequested" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#helpRequested">helpRequested</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qdialogbuttonbox.html#rejected" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#rejected">rejected</a></b> ()</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDialogButtonBox类是一个小部件，呈现在布局是适合当前控件样式按钮。</p>
+<p>在布局符合该平台的界面指南对话框和消息框通常存在按钮。不变的是，不同的平台有不同的布局他们的对话。 QDialogButtonBox允许开发人员添加按钮，并会自动使用适当的布局，为用户的桌面环境。</p>
+<p>大多数按钮的对话框遵循一定的角色。这样的角色包括：</p>
+<ul>
+<li>Accepting or rejecting the dialog.</li>
+<li>Asking for help.</li>
+<li>Performing actions on the dialog itself (such as resetting
+fields or applying changes).</li>
+</ul>
+<p>此外，还可以解僱这可能会导致破坏性的结果的对话框的替代方式。</p>
+<p>大多数对话框有一个几乎可以被认为是标准的（比如按钮<b>OK</b>和<b>Cancel</b>按钮）。它有时是方便的，以一种标准的方式创建这些按钮。</p>
+<p>有使用QDialogButtonBox的几种方法。其中一个方法是创建按钮（或按钮文本）自己并把它们添加到按钮盒，指定他们的角色。</p>
+<pre class="cpp">
+     findButton <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a></span>(tr(<span class="string">"&amp;Find"</span>));
+     findButton<span class="operator">-</span><span class="operator">&gt;</span>setDefault(<span class="keyword">true</span>);
+
+     moreButton <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a></span>(tr(<span class="string">"&amp;More"</span>));
+     moreButton<span class="operator">-</span><span class="operator">&gt;</span>setCheckable(<span class="keyword">true</span>);
+     moreButton<span class="operator">-</span><span class="operator">&gt;</span>setAutoDefault(<span class="keyword">false</span>);
+
+     buttonBox <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QDialogButtonBox</span>(<span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>Vertical);
+     buttonBox<span class="operator">-</span><span class="operator">&gt;</span>addButton(findButton<span class="operator">,</span> <span class="type">QDialogButtonBox</span><span class="operator">.</span>ActionRole);
+     buttonBox<span class="operator">-</span><span class="operator">&gt;</span>addButton(moreButton<span class="operator">,</span> <span class="type">QDialogButtonBox</span><span class="operator">.</span>ActionRole);
+</pre>
+<p>另外， QDialogButtonBox提供了几个标准按钮（例如确定，取消，保存），您可以使用。他们共同存在的标志使你可以或它们的构造函数。</p>
+<pre class="cpp">
+     buttonBox <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QDialogButtonBox</span>(<span class="type">QDialogButtonBox</span><span class="operator">.</span>Ok
+                                      <span class="operator">|</span> <span class="type">QDialogButtonBox</span><span class="operator">.</span>Cancel);
+
+     connect(buttonBox<span class="operator">,</span> SIGNAL(accepted())<span class="operator">,</span> <span class="keyword">this</span><span class="operator">,</span> SLOT(accept()));
+     connect(buttonBox<span class="operator">,</span> SIGNAL(rejected())<span class="operator">,</span> <span class="keyword">this</span><span class="operator">,</span> SLOT(reject()));
+</pre>
+<p>你可以混合和匹配正常的按钮和标准按钮。</p>
+<p>目前的按钮被布置在下面的方式，如果该按钮框是水平的：</p>
+<table class="generic">
+<tr class="odd" valign="top">
+<td><img alt="GnomeLayout Horizontal" src="images/buttonbox-gnomelayout-horizontal.png"></td>
+<td>Button box laid out in horizontal <a href="qdialogbuttonbox.html#ButtonLayout-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonLayout-enum">GnomeLayout</a>
+</td>
+</tr>
+<tr class="even" valign="top">
+<td><img alt="KdeLayout Horizontal" src="images/buttonbox-kdelayout-horizontal.png"></td>
+<td>Button box laid out in horizontal <a href="qdialogbuttonbox.html#ButtonLayout-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonLayout-enum">KdeLayout</a>
+</td>
+</tr>
+<tr class="odd" valign="top">
+<td><img alt="MacLayout Horizontal" src="images/buttonbox-maclayout-horizontal.png"></td>
+<td>Button box laid out in horizontal <a href="qdialogbuttonbox.html#ButtonLayout-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonLayout-enum">MacLayout</a>
+</td>
+</tr>
+<tr class="even" valign="top">
+<td><img alt="WinLayout Horizontal" src="images/buttonbox-winlayout-horizontal.png"></td>
+<td>Button box laid out in horizontal <a href="qdialogbuttonbox.html#ButtonLayout-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonLayout-enum">WinLayout</a>
+</td>
+</tr>
+</table>
+<p>这些按钮的布局方式如下，如果按钮盒是垂直的：</p>
+<table class="generic">
+<tr class="odd" valign="top">
+<td><a href="qdialogbuttonbox.html#ButtonLayout-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonLayout-enum">GnomeLayout</a></td>
+<td><a href="qdialogbuttonbox.html#ButtonLayout-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonLayout-enum">KdeLayout</a></td>
+<td><a href="qdialogbuttonbox.html#ButtonLayout-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonLayout-enum">MacLayout</a></td>
+<td><a href="qdialogbuttonbox.html#ButtonLayout-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonLayout-enum">WinLayout</a></td>
+</tr>
+<tr class="even" valign="top">
+<td><img alt="GnomeLayout Vertical" src="images/buttonbox-gnomelayout-vertical.png"></td>
+<td><img alt="KdeLayout Vertical" src="images/buttonbox-kdelayout-vertical.png"></td>
+<td><img alt="MacLayout Vertical" src="images/buttonbox-maclayout-vertical.png"></td>
+<td><img alt="WinLayout Vertical" src="images/buttonbox-winlayout-vertical.png"></td>
+</tr>
+</table>
+<p>此外，按钮盒仅包含有按钮<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">ActionRole</a> or
+<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">HelpRole</a>可以考虑无模式，并有备用看看Mac OS X上：</p>
+<table class="generic">
+<tr class="odd" valign="top">
+<td>modeless horizontal <a href="qdialogbuttonbox.html#ButtonLayout-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonLayout-enum">MacLayout</a>
+</td>
+<td><img alt="Screenshot of modeless horizontal MacLayout" src="images/buttonbox-mac-modeless-horizontal.png"></td>
+</tr>
+</table>
+<p>当单击该按钮中的按钮时，<a href="qdialogbuttonbox.html#clicked" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#clicked">clicked</a>（）信号被发射的实际按钮被按下。为方便起见，如果按钮有<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">AcceptRole</a>，<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">RejectRole</a>或<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">HelpRole</a>时，<a href="qdialogbuttonbox.html#accepted" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#accepted">accepted</a>（ ）<a href="qdialogbuttonbox.html#rejected" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#rejected">rejected</a>（） ，或<a href="qdialogbuttonbox.html#helpRequested" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#helpRequested">helpRequested</a>（）信号被分别发射。</p>
+<p>如果你想要一个特定的按钮被默认你需要调用<a href="qpushbutton.html#default-prop" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html#default-prop">QPushButton.setDefault</a>（ ）就可以了你自己。但是，如果没有默认按钮设置，并保存在使用哪个按钮是默认按钮跨平台的<a href="qpushbutton.html#autoDefault-prop" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html#autoDefault-prop">QPushButton.autoDefault</a>物业，第一按钮与接受角色成为默认按钮QDialogButtonBox显示时，</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="ButtonLayout-enum"></a>QDialogButtonBox.ButtonLayout</h3>
+<p>该枚举描述配置中包含的按钮中的按钮时所要使用的布局策略。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.WinLayout</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">使用原则适用于在Windows应用程序。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.MacLayout</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">使用策略适用于Mac OS X上的应用</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.KdeLayout</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">使用策略适合在KDE应用程序。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.GnomeLayout</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">使用策略适合在GNOME应用程序。</td>
+</tr>
+</table>
+<p>按键布局由指定的<a href="qwidget.html#style" tppabs="http://pyqt4doc.appspot.com/qwidget.html#style">current style</a>。然而， X11的平台上，也可以通过在桌面环境的影响。</p>
+
+
+<h3 class="fn">
+<a name="ButtonRole-enum"></a>QDialogButtonBox.ButtonRole</h3>
+<p>该枚举描述了可用于描述按键在按钮框的作用。这些角色的组合作为标志用来形容他们的行为的不同方面。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.InvalidRole</tt></td>
+<td class="topAlign"><tt>-1</tt></td>
+<td class="topAlign">该按钮是无效的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.AcceptRole</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">单击该按钮被接受的对话框（如确定）。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.RejectRole</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">单击该按钮会导致被拒绝的对话框（例如取消） 。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDialogButtonBox.DestructiveRole</tt>
+</td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">单击该按钮会导致破坏性的变化（例如，用于舍弃变更） ，然后关闭对话框。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.ActionRole</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">单击该按钮使更改对话框中的元素。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.HelpRole</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">该按钮可点击，请求帮助。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.YesRole</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">该按钮是一个“是”形按钮。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.NoRole</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">该按钮是一个“无”形按钮。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.ApplyRole</tt></td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">按钮适用电流的变化。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.ResetRole</tt></td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">按钮重置对话框的字段默认值。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qdialogbuttonbox.html#StandardButton-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#StandardButton-enum">StandardButton</a>。</p>
+
+
+<h3 class="fn">
+<a name="StandardButton-enum"></a>QDialogButtonBox.StandardButton</h3>
+<p>这些枚举描述了标准按钮标志。每个按钮都有一个定义<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">ButtonRole</a>。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.Ok</tt></td>
+<td class="topAlign"><tt>0x00000400</tt></td>
+<td class="topAlign">与定义的一个“OK”按钮<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">AcceptRole</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.Open</tt></td>
+<td class="topAlign"><tt>0x00002000</tt></td>
+<td class="topAlign">与定义的“打开”按钮<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">AcceptRole</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.Save</tt></td>
+<td class="topAlign"><tt>0x00000800</tt></td>
+<td class="topAlign">与定义的“保存”按钮<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">AcceptRole</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.Cancel</tt></td>
+<td class="topAlign"><tt>0x00400000</tt></td>
+<td class="topAlign">“取消”的按钮定义<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">RejectRole</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.Close</tt></td>
+<td class="topAlign"><tt>0x00200000</tt></td>
+<td class="topAlign">与定义的“关闭”按钮<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">RejectRole</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.Discard</tt></td>
+<td class="topAlign"><tt>0x00800000</tt></td>
+<td class="topAlign">A“放弃”或“不保存”按钮，根据不同的平台上，与定义<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">DestructiveRole</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.Apply</tt></td>
+<td class="topAlign"><tt>0x02000000</tt></td>
+<td class="topAlign">一个“应用”的定义的按钮<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">ApplyRole</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.Reset</tt></td>
+<td class="topAlign"><tt>0x04000000</tt></td>
+<td class="topAlign">“复位”的定义的按钮<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">ResetRole</a>。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDialogButtonBox.RestoreDefaults</tt>
+</td>
+<td class="topAlign"><tt>0x08000000</tt></td>
+<td class="topAlign">A“还原为默认值”的定义的按钮<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">ResetRole</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.Help</tt></td>
+<td class="topAlign"><tt>0x01000000</tt></td>
+<td class="topAlign">与定义的“帮助”按钮<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">HelpRole</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.SaveAll</tt></td>
+<td class="topAlign"><tt>0x00001000</tt></td>
+<td class="topAlign">与定义的“全部保存”按钮<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">AcceptRole</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.Yes</tt></td>
+<td class="topAlign"><tt>0x00004000</tt></td>
+<td class="topAlign">与定义的“Yes”按钮<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">YesRole</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.YesToAll</tt></td>
+<td class="topAlign"><tt>0x00008000</tt></td>
+<td class="topAlign">与定义的“全是”按钮<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">YesRole</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.No</tt></td>
+<td class="topAlign"><tt>0x00010000</tt></td>
+<td class="topAlign">与定义的“否”按钮<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">NoRole</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.NoToAll</tt></td>
+<td class="topAlign"><tt>0x00020000</tt></td>
+<td class="topAlign">与定义的“全否”按钮<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">NoRole</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.Abort</tt></td>
+<td class="topAlign"><tt>0x00040000</tt></td>
+<td class="topAlign">与定义的“中止”按钮<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">RejectRole</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.Retry</tt></td>
+<td class="topAlign"><tt>0x00080000</tt></td>
+<td class="topAlign">与定义的“重试”按钮<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">AcceptRole</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.Ignore</tt></td>
+<td class="topAlign"><tt>0x00100000</tt></td>
+<td class="topAlign">一个“忽略”的定义的按钮<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">AcceptRole</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDialogButtonBox.NoButton</tt></td>
+<td class="topAlign"><tt>0x00000000</tt></td>
+<td class="topAlign">无效的按钮。</td>
+</tr>
+</table>
+<p>该StandardButtons类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cStandardButton\u003e 。它存储StandardButton值的或组合。</p>
+<p><b>See also</b> <a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">ButtonRole</a>和<a href="qdialogbuttonbox.html#standardButtons-prop" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#standardButtons-prop">standardButtons</a>。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDialogButtonBox"></a>QDialogButtonBox.__init__ (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个空，水平按钮盒给定的<i>parent</i>。</p>
+<p><b>See also</b> <a href="qdialogbuttonbox.html#orientation-prop" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#orientation-prop">orientation</a>和<a href="qdialogbuttonbox.html#addButton" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#addButton">addButton</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QDialogButtonBox-2"></a>QDialogButtonBox.__init__ (<i>self</i>, <a href="qt.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Orientation-enum">Qt.Orientation</a> <i>orientation</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个空按钮盒给定的<i>orientation</i>和<i>parent</i>。</p>
+<p><b>See also</b> <a href="qdialogbuttonbox.html#orientation-prop" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#orientation-prop">orientation</a>和<a href="qdialogbuttonbox.html#addButton" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#addButton">addButton</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QDialogButtonBox-3"></a>QDialogButtonBox.__init__ (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox-standardbuttons.html">StandardButtons</a> <i>buttons</i>, <a href="qt.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Orientation-enum">Qt.Orientation</a> <i>orientation</i> = Qt.Horizontal, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个按钮盒给定的<i>orientation</i>和<i>parent</i>，包含由指定的标准按钮<i>buttons</i>。</p>
+<p><b>See also</b> <a href="qdialogbuttonbox.html#orientation-prop" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#orientation-prop">orientation</a>和<a href="qdialogbuttonbox.html#addButton" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#addButton">addButton</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addButton"></a>QDialogButtonBox.addButton (<i>self</i>, <a href="qabstractbutton.html" tppabs="http://pyqt4doc.appspot.com/qabstractbutton.html">QAbstractButton</a> <i>button</i>, <a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">ButtonRole</a> <i>role</i>)</h3>
+<p>该<i>button</i>说法有它的所有权转移给Qt的。</p>
+<p>将给定<i>button</i>与指定的按钮盒<i>role</i>。如果该角色是无效的，不添加该按钮。</p>
+<p>如果按钮已经被添加，它被删除，并以新的角色再次添加。</p>
+<p><b>Note:</b>按钮盒采用按钮的所有权。</p>
+<p><b>See also</b> <a href="qdialogbuttonbox.html#removeButton" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#removeButton">removeButton</a>（）和<a href="qdialogbuttonbox.html#clear" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#clear">clear</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addButton-2"></a><a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a> QDialogButtonBox.addButton (<i>self</i>, QString <i>text</i>, <a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">ButtonRole</a> <i>role</i>)</h3>
+<p>创建一个按钮与给定的<i>text</i>，将其添加到该按钮框对指定<i>role</i>，并返回相应的按钮。如果<i>role</i>是无效的，则不会创建按钮，则返回0。</p>
+<p><b>See also</b> <a href="qdialogbuttonbox.html#removeButton" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#removeButton">removeButton</a>（）和<a href="qdialogbuttonbox.html#clear" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#clear">clear</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addButton-3"></a><a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a> QDialogButtonBox.addButton (<i>self</i>, <a href="qdialogbuttonbox.html#StandardButton-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#StandardButton-enum">StandardButton</a> <i>button</i>)</h3>
+<p>增加了一个标准<i>button</i>在按钮框，如果它是有效的话，并返回一个按钮。如果<i>button</i>是无效的，它不被添加到该按钮的框，并返回0。</p>
+<p><b>See also</b> <a href="qdialogbuttonbox.html#removeButton" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#removeButton">removeButton</a>（）和<a href="qdialogbuttonbox.html#clear" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#clear">clear</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="button"></a><a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a> QDialogButtonBox.button (<i>self</i>, <a href="qdialogbuttonbox.html#StandardButton-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#StandardButton-enum">StandardButton</a> <i>which</i>)</h3>
+<p>返回<a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a>对应于标准按钮<i>which</i>，或者0，如果标准按钮不能在这个按钮盒存在。</p>
+<p><b>See also</b> <a href="qdialogbuttonbox.html#standardButton" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#standardButton">standardButton</a>（ ）<a href="qdialogbuttonbox.html#standardButtons-prop" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#standardButtons-prop">standardButtons</a>（）和<a href="qdialogbuttonbox.html#buttons" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#buttons">buttons</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="buttonRole"></a><a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">ButtonRole</a> QDialogButtonBox.buttonRole (<i>self</i>, <a href="qabstractbutton.html" tppabs="http://pyqt4doc.appspot.com/qabstractbutton.html">QAbstractButton</a> <i>button</i>)</h3>
+<p>返回指定按钮的作用<i>button</i>。这个函数返回<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">InvalidRole</a>如果<i>button</i>是0或未被添加到按钮框。</p>
+<p><b>See also</b> <a href="qdialogbuttonbox.html#buttons" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#buttons">buttons</a>（）和<a href="qdialogbuttonbox.html#addButton" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#addButton">addButton</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="buttons"></a>list-of-QAbstractButton QDialogButtonBox.buttons (<i>self</i>)</h3>
+<p>返回所有已被添加到按钮中的按钮的列表。</p>
+<p><b>See also</b> <a href="qdialogbuttonbox.html#buttonRole" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#buttonRole">buttonRole</a>（ ）<a href="qdialogbuttonbox.html#addButton" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#addButton">addButton</a>（）和<a href="qdialogbuttonbox.html#removeButton" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#removeButton">removeButton</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="centerButtons"></a>bool QDialogButtonBox.centerButtons (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="changeEvent"></a>QDialogButtonBox.changeEvent (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#changeEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#changeEvent">QWidget.changeEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clear"></a>QDialogButtonBox.clear (<i>self</i>)</h3>
+<p>清除按钮盒，删除其中的所有按钮。</p>
+<p><b>See also</b> <a href="qdialogbuttonbox.html#removeButton" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#removeButton">removeButton</a>（）和<a href="qdialogbuttonbox.html#addButton" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#addButton">addButton</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="event"></a>bool QDialogButtonBox.event (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">QObject.event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="orientation"></a><a href="qt.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Orientation-enum">Qt.Orientation</a> QDialogButtonBox.orientation (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="removeButton"></a>QDialogButtonBox.removeButton (<i>self</i>, <a href="qabstractbutton.html" tppabs="http://pyqt4doc.appspot.com/qabstractbutton.html">QAbstractButton</a> <i>button</i>)</h3>
+<p>该<i>button</i>争论</p>
+<p>移除<i>button</i>从而不删除它，并设置其父零按钮盒。</p>
+<p><b>See also</b> <a href="qdialogbuttonbox.html#clear" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#clear">clear</a>（ ）<a href="qdialogbuttonbox.html#buttons" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#buttons">buttons</a>（）和<a href="qdialogbuttonbox.html#addButton" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#addButton">addButton</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCenterButtons"></a>QDialogButtonBox.setCenterButtons (<i>self</i>, bool <i>center</i>)</h3>
+<h3 class="fn">
+<a name="setOrientation"></a>QDialogButtonBox.setOrientation (<i>self</i>, <a href="qt.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Orientation-enum">Qt.Orientation</a> <i>orientation</i>)</h3>
+<h3 class="fn">
+<a name="setStandardButtons"></a>QDialogButtonBox.setStandardButtons (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox-standardbuttons.html">StandardButtons</a> <i>buttons</i>)</h3>
+<h3 class="fn">
+<a name="standardButton"></a><a href="qdialogbuttonbox.html#StandardButton-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#StandardButton-enum">StandardButton</a> QDialogButtonBox.standardButton (<i>self</i>, <a href="qabstractbutton.html" tppabs="http://pyqt4doc.appspot.com/qabstractbutton.html">QAbstractButton</a> <i>button</i>)</h3>
+<p>返回对应于给定的标准按钮枚举值<i>button</i>或<a href="qdialogbuttonbox.html#StandardButton-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#StandardButton-enum">NoButton</a>如果给定的<i>button</i>不是一个标准的按钮。</p>
+<p><b>See also</b> <a href="qdialogbuttonbox.html#button" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#button">button</a>（ ）<a href="qdialogbuttonbox.html#buttons" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#buttons">buttons</a>（）和<a href="qdialogbuttonbox.html#standardButtons-prop" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#standardButtons-prop">standardButtons</a>（ ） 。</p>
+<h3 class="fn">
+<a name="standardButtons"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox-standardbuttons.html">StandardButtons</a> QDialogButtonBox.standardButtons (<i>self</i>)</h3>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="accepted"></a>void accepted ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>按钮盒内部的按钮被点击时，只要它被定义与这个信号被发射<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">AcceptRole</a> or <a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">YesRole</a>。</p>
+<p><b>See also</b> <a href="qdialogbuttonbox.html#rejected" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#rejected">rejected</a>（ ）<a href="qdialogbuttonbox.html#clicked" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#clicked">clicked</a>（）和<a href="qdialogbuttonbox.html#helpRequested" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#helpRequested">helpRequested</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clicked"></a>void clicked (QAbstractButton *)</h3>
+<p>这是该信号的默认超载。</p>
+<p>单击该按钮盒内的按钮时，这个信号被发射。被指定的被按下的特定键<i>button</i>。</p>
+<p><b>See also</b> <a href="qdialogbuttonbox.html#accepted" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#accepted">accepted</a>（ ）<a href="qdialogbuttonbox.html#rejected" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#rejected">rejected</a>（）和<a href="qdialogbuttonbox.html#helpRequested" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#helpRequested">helpRequested</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="helpRequested"></a>void helpRequested ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>按钮盒内部的按钮被点击时，只要它被定义与这个信号被发射<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">HelpRole</a>。</p>
+<p><b>See also</b> <a href="qdialogbuttonbox.html#accepted" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#accepted">accepted</a>（ ）<a href="qdialogbuttonbox.html#rejected" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#rejected">rejected</a>（）和<a href="qdialogbuttonbox.html#clicked" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#clicked">clicked</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rejected"></a>void rejected ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>按钮盒内部的按钮被点击时，只要它被定义与这个信号被发射<a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">RejectRole</a> or <a href="qdialogbuttonbox.html#ButtonRole-enum" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#ButtonRole-enum">NoRole</a>。</p>
+<p><b>See also</b> <a href="qdialogbuttonbox.html#accepted" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#accepted">accepted</a>（ ）<a href="qdialogbuttonbox.html#helpRequested" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#helpRequested">helpRequested</a>（）和<a href="qdialogbuttonbox.html#clicked" tppabs="http://pyqt4doc.appspot.com/qdialogbuttonbox.html#clicked">clicked</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

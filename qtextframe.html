@@ -1,0 +1,148 @@
+﻿<html>
+<head>
+<title>QTextFrame Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QTextFrame Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QTextFrame类表示一帧<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>。<a href="#details">More...</a></p>
+
+<p>继承<a href="qtextobject.html" tppabs="http://pyqt4doc.appspot.com/qtextobject.html">QTextObject</a>。</p>
+<p>通过继承<a href="qtexttable.html" tppabs="http://pyqt4doc.appspot.com/qtexttable.html">QTextTable</a>。</p>
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtextframe-iterator.html">iterator</a></b>
+</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qtextframe.html#QTextFrame" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#QTextFrame">__init__</a></b> (<i>self</i>, QTextDocument <i>doc</i>)</li>
+<li>
+<div class="fn"></div>iterator <b><a href="qtextframe.html#begin" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#begin">begin</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QTextFrame <b><a href="qtextframe.html#childFrames" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#childFrames">childFrames</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>iterator <b><a href="qtextframe.html#end" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#end">end</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextCursor <b><a href="qtextframe.html#firstCursorPosition" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#firstCursorPosition">firstCursorPosition</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextframe.html#firstPosition" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#firstPosition">firstPosition</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextFrameFormat <b><a href="qtextframe.html#frameFormat" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#frameFormat">frameFormat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextCursor <b><a href="qtextframe.html#lastCursorPosition" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#lastCursorPosition">lastCursorPosition</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextframe.html#lastPosition" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#lastPosition">lastPosition</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextFrame <b><a href="qtextframe.html#parentFrame" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#parentFrame">parentFrame</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextframe.html#setFrameFormat" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#setFrameFormat">setFrameFormat</a></b> (<i>self</i>, QTextFrameFormat <i>aformat</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QTextFrame类表示一帧<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>。</p>
+<p>文本框的文档中的文本提供结构。它们被用作通用的容器，其他的文档元素。帧通常是通过使用建立的<a href="qtextcursor.html#insertFrame" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertFrame">QTextCursor.insertFrame</a>（ ） 。</p>
+<p>框架可以用来创建分层结构的富文本文档。每个文档都有一个根框架（<a href="qtextdocument.html#rootFrame" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#rootFrame">QTextDocument.rootFrame</a>（ ） ） ，根框架下的每一帧都有一个父框架和子框架的一个（可能为空）列表。父框架可以被发现<a href="qtextframe.html#parentFrame" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#parentFrame">parentFrame</a>（ ）和<a href="qtextframe.html#childFrames" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#childFrames">childFrames</a>（）函数提供子框架的列表。</p>
+<p>每个帧包含至少一个文本块，使文字游标中插入新的文档元素。其结果是，在<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtextframe-iterator.html">QTextFrame.iterator</a>类是用来给定的框架内穿越两个块和子框架。在该帧中的第一个和最后一个子元素可以与发现<a href="qtextframe.html#begin" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#begin">begin</a>（）和<a href="qtextframe.html#end" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#end">end</a>（ ） 。</p>
+<p>帧也有使用的格式（指定<a href="qtextframeformat.html" tppabs="http://pyqt4doc.appspot.com/qtextframeformat.html">QTextFrameFormat</a>），它可与设置<a href="qtextobject.html#setFormat" tppabs="http://pyqt4doc.appspot.com/qtextobject.html#setFormat">setFormat</a>（）和read与<a href="qtextobject.html#format" tppabs="http://pyqt4doc.appspot.com/qtextobject.html#format">format</a>（ ） 。</p>
+<p>文字游标可以得到该点到框架内的第一个和最后一个有效的光标位置;使用<a href="qtextframe.html#firstCursorPosition" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#firstCursorPosition">firstCursorPosition</a>（）和<a href="qtextframe.html#lastCursorPosition" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#lastCursorPosition">lastCursorPosition</a>（ ）这个函数。在文档中的帧的幅度可以与发现<a href="qtextframe.html#firstPosition" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#firstPosition">firstPosition</a>（）和<a href="qtextframe.html#lastPosition" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#lastPosition">lastPosition</a>（ ） 。</p>
+<p>您可以使用在一帧中的内容重复的<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtextframe-iterator.html">QTextFrame.iterator</a>类：这提供了其内部文本块和子帧的列表只读访问。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QTextFrame"></a>QTextFrame.__init__ (<i>self</i>, <a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a> <i>doc</i>)</h3>
+<p>创建文本一个新的空框架<i>document</i>。</p>
+
+
+<h3 class="fn">
+<a name="begin"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtextframe-iterator.html">iterator</a> QTextFrame.begin (<i>self</i>)</h3>
+<p>返回一个迭代器指向框架内的第一个文档元素。请参阅文档<a href="index.htm#stl-style-iterators" tppabs="http://pyqt4doc.appspot.com/containers.html#stl-style-iterators">STL-style-Iterators</a>了解更多信息。</p>
+<p><b>See also</b> <a href="qtextframe.html#end" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#end">end</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="childFrames"></a>list-of-QTextFrame QTextFrame.childFrames (<i>self</i>)</h3>
+<p>返回框架的子框架的一个（可能为空）列表。</p>
+<p><b>See also</b> <a href="qtextframe.html#parentFrame" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#parentFrame">parentFrame</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="end"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtextframe-iterator.html">iterator</a> QTextFrame.end (<i>self</i>)</h3>
+<p>返回一个迭代器，指向过去的框架内的最后一个文档元素的位置。请参阅文档<a href="index.htm#stl-style-iterators" tppabs="http://pyqt4doc.appspot.com/containers.html#stl-style-iterators">STL-Style Iterators</a>了解更多信息。</p>
+<p><b>See also</b> <a href="qtextframe.html#begin" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#begin">begin</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="firstCursorPosition"></a><a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a> QTextFrame.firstCursorPosition (<i>self</i>)</h3>
+<p>返回框架内的第一个光标位置。</p>
+<p><b>See also</b> <a href="qtextframe.html#lastCursorPosition" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#lastCursorPosition">lastCursorPosition</a>（ ）<a href="qtextframe.html#firstPosition" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#firstPosition">firstPosition</a>（）和<a href="qtextframe.html#lastPosition" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#lastPosition">lastPosition</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="firstPosition"></a>int QTextFrame.firstPosition (<i>self</i>)</h3>
+<p>返回框架内的第一个文件的位置。</p>
+<p><b>See also</b> <a href="qtextframe.html#lastPosition" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#lastPosition">lastPosition</a>（ ）<a href="qtextframe.html#firstCursorPosition" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#firstCursorPosition">firstCursorPosition</a>（）和<a href="qtextframe.html#lastCursorPosition" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#lastCursorPosition">lastCursorPosition</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="frameFormat"></a><a href="qtextframeformat.html" tppabs="http://pyqt4doc.appspot.com/qtextframeformat.html">QTextFrameFormat</a> QTextFrame.frameFormat (<i>self</i>)</h3>
+<p>返回帧的格式。</p>
+<p><b>See also</b> <a href="qtextframe.html#setFrameFormat" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#setFrameFormat">setFrameFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="lastCursorPosition"></a><a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a> QTextFrame.lastCursorPosition (<i>self</i>)</h3>
+<p>返回框架内的一个光标位置。</p>
+<p><b>See also</b> <a href="qtextframe.html#firstCursorPosition" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#firstCursorPosition">firstCursorPosition</a>（ ）<a href="qtextframe.html#firstPosition" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#firstPosition">firstPosition</a>（）和<a href="qtextframe.html#lastPosition" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#lastPosition">lastPosition</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="lastPosition"></a>int QTextFrame.lastPosition (<i>self</i>)</h3>
+<p>返回框架内的最后一份文件的位置。</p>
+<p><b>See also</b> <a href="qtextframe.html#firstPosition" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#firstPosition">firstPosition</a>（ ）<a href="qtextframe.html#firstCursorPosition" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#firstCursorPosition">firstCursorPosition</a>（）和<a href="qtextframe.html#lastCursorPosition" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#lastCursorPosition">lastCursorPosition</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="parentFrame"></a><a href="qtextframe.html" tppabs="http://pyqt4doc.appspot.com/qtextframe.html">QTextFrame</a> QTextFrame.parentFrame (<i>self</i>)</h3>
+<p>返回框架的父框架。如果该帧是一个文件的根帧，这将返回0。</p>
+<p><b>See also</b> <a href="qtextframe.html#childFrames" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#childFrames">childFrames</a>（）和<a href="qtextdocument.html#rootFrame" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#rootFrame">QTextDocument.rootFrame</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFrameFormat"></a>QTextFrame.setFrameFormat (<i>self</i>, <a href="qtextframeformat.html" tppabs="http://pyqt4doc.appspot.com/qtextframeformat.html">QTextFrameFormat</a> <i>aformat</i>)</h3>
+<p>设置帧的<i>format</i>。</p>
+<p><b>See also</b> <a href="qtextframe.html#frameFormat" tppabs="http://pyqt4doc.appspot.com/qtextframe.html#frameFormat">frameFormat</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

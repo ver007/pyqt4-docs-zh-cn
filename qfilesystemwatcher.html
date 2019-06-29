@@ -1,0 +1,152 @@
+﻿<html>
+<head>
+<title>QFileSystemWatcher Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QFileSystemWatcher Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QFileSystemWatcher类提供用于监视文件和目录进行修改的接口。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qfilesystemwatcher.html#QFileSystemWatcher" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#QFileSystemWatcher">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfilesystemwatcher.html#QFileSystemWatcher-2" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#QFileSystemWatcher-2">__init__</a></b> (<i>self</i>, QStringList <i>paths</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfilesystemwatcher.html#addPath" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#addPath">addPath</a></b> (<i>self</i>, QString <i>file</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfilesystemwatcher.html#addPaths" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#addPaths">addPaths</a></b> (<i>self</i>, QStringList <i>files</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qfilesystemwatcher.html#directories" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#directories">directories</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qfilesystemwatcher.html#files" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#files">files</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfilesystemwatcher.html#removePath" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#removePath">removePath</a></b> (<i>self</i>, QString <i>file</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfilesystemwatcher.html#removePaths" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#removePaths">removePaths</a></b> (<i>self</i>, QStringList <i>files</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qfilesystemwatcher.html#directoryChanged" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#directoryChanged">directoryChanged</a></b> (const QString&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qfilesystemwatcher.html#fileChanged" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#fileChanged">fileChanged</a></b> (const QString&amp;)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QFileSystemWatcher类提供用于监视文件和目录进行修改的接口。</p>
+<p>QFileSystemWatcher监控通过观看指定的路径列表的修改文件和目录的文件系统。</p>
+<p>Call <a href="qfilesystemwatcher.html#addPath" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#addPath">addPath</a>（）来观看特定的文件或目录。多条路径可以使用添加的<a href="qfilesystemwatcher.html#addPaths" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#addPaths">addPaths</a>（）函数。现有的路径可以通过使用可移除的<a href="qfilesystemwatcher.html#removePath" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#removePath">removePath</a>（）和<a href="qfilesystemwatcher.html#removePaths" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#removePaths">removePaths</a>（）函数。</p>
+<p>QFileSystemWatcher检查添加到它的每个路径。已经添加到QFileSystemWatcher文件可以使用被访问的<a href="qfilesystemwatcher.html#files" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#files">files</a>（）函数，并使用目录中的<a href="qfilesystemwatcher.html#directories" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#directories">directories</a>（）函数。</p>
+<p>该<a href="qfilesystemwatcher.html#fileChanged" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#fileChanged">fileChanged</a>当一个文件被修改，重命名或从磁盘删除（ ）信号被发射。类似地，<a href="qfilesystemwatcher.html#directoryChanged" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#directoryChanged">directoryChanged</a>当一个目录或其内容被修改或删除（ ）信号被发射。需要注意的是QFileSystemWatcher停止监控的文件，一旦他们被改名或删除的磁盘和目录，一旦他们被从磁盘中删除。</p>
+<p><b>Note:</b>在运行Linux内核没有inotify的支持系统，包含看了路径文件系统不能被卸载。</p>
+<p><b>Note:</b>Windows CE不支持目录监视默认情况下，因为这取决于所安装的文件系统驱动程序。</p>
+<p><b>Note:</b>监控文件和目录的修改行为会消耗系统资源。这意味着有一个限度的文件和目录的过程中可以同时监控数。在Mac OS X 10.4和所有的BSD变体，例如，打开的文件描述符是需要为每个监视的文件。一些系统在默认情况下打开的文件描述符的数量限制为256 。这意味着<a href="qfilesystemwatcher.html#addPath" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#addPath">addPath</a>（）和<a href="qfilesystemwatcher.html#addPaths" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#addPaths">addPaths</a>（ ）会在你的进程试图超过256个文件或目录添加到文件系统监视器失败。另外请注意，你的程序可能有其他文件描述符，除了为那些被监视文件的打开，而这些其他打开的描述符也算在总。的Mac OS X 10.5及以上版本使用不同的后端，并没有从这个问题受到影响。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QFileSystemWatcher"></a>QFileSystemWatcher.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个新的文件系统观察的对象与给定<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="QFileSystemWatcher-2"></a>QFileSystemWatcher.__init__ (<i>self</i>, QStringList <i>paths</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个新的文件系统观察的对象与给定<i>parent</i>它监视指定的<i>paths</i>列表。</p>
+
+
+<h3 class="fn">
+<a name="addPath"></a>QFileSystemWatcher.addPath (<i>self</i>, QString <i>file</i>)</h3>
+<p>添加<i>path</i>该文件系统观察，如果<i>path</i>存在。如果它不存在的路径不被添加，或者如果它已经由文件系统观察监测。</p>
+<p>If <i>path</i>指定一个目录，该<a href="qfilesystemwatcher.html#directoryChanged" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#directoryChanged">directoryChanged</a>（在）信号将被发射时<i>path</i>被修改或从磁盘中删除，否则<a href="qfilesystemwatcher.html#fileChanged" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#fileChanged">fileChanged</a>（）信号被发射时<i>path</i>被修改，重命名或删除。</p>
+<p><b>Note:</b>有一个依赖于系统的限制，可以同时进行监视的文件和目录的数目。如果已达到极限，<i>path</i>不会被添加到文件系统观察，并警告信息将被打印到<i>stderr</i>。</p>
+<p><b>See also</b> <a href="qfilesystemwatcher.html#addPaths" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#addPaths">addPaths</a>（）和<a href="qfilesystemwatcher.html#removePath" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#removePath">removePath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addPaths"></a>QFileSystemWatcher.addPaths (<i>self</i>, QStringList <i>files</i>)</h3>
+<p>将每个路径<i>paths</i>该文件系统观察。如果它们不存在，不会添加路径，或者如果他们已经由文件系统观察监测。</p>
+<p>如果路径指定一个目录，<a href="qfilesystemwatcher.html#directoryChanged" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#directoryChanged">directoryChanged</a>（在）信号将在路径从磁盘修改或删除被发射，否则<a href="qfilesystemwatcher.html#fileChanged" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#fileChanged">fileChanged</a>当路径被修改，重命名或删除（ ）信号被发射。</p>
+<p><b>Note:</b>有一个依赖于系统的限制，可以同时进行监视的文件和目录的数目。如果已达到限制，多馀的<i>paths</i>不会被添加到文件系统观察，并警告信息将被打印到<i>stderr</i>对于无法加入的每个路径。</p>
+<p><b>See also</b> <a href="qfilesystemwatcher.html#addPath" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#addPath">addPath</a>（）和<a href="qfilesystemwatcher.html#removePaths" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#removePaths">removePaths</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="directories"></a>QStringList QFileSystemWatcher.directories (<i>self</i>)</h3>
+<p>返回的路径列表到被监视的目录。</p>
+<p><b>See also</b> <a href="qfilesystemwatcher.html#files" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#files">files</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="files"></a>QStringList QFileSystemWatcher.files (<i>self</i>)</h3>
+<p>返回的路径列表到被监视的文件。</p>
+<p><b>See also</b> <a href="qfilesystemwatcher.html#directories" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#directories">directories</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="removePath"></a>QFileSystemWatcher.removePath (<i>self</i>, QString <i>file</i>)</h3>
+<p>删除指定的<i>path</i>从文件系统观察。</p>
+<p><b>See also</b> <a href="qfilesystemwatcher.html#removePaths" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#removePaths">removePaths</a>（）和<a href="qfilesystemwatcher.html#addPath" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#addPath">addPath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="removePaths"></a>QFileSystemWatcher.removePaths (<i>self</i>, QStringList <i>files</i>)</h3>
+<p>删除指定的<i>paths</i>从文件系统观察。</p>
+<p><b>See also</b> <a href="qfilesystemwatcher.html#removePath" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#removePath">removePath</a>（）和<a href="qfilesystemwatcher.html#addPaths" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#addPaths">addPaths</a>（ ） 。</p>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="directoryChanged"></a>void directoryChanged (const QString&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当指定在一个目录中这个信号被发射<i>path</i>，被修改（例如，当一个文件被添加，修改或删除），或从磁盘上删除。需要注意的是，如果有在很短的时间内一些变化，一些变化可能不会发出这个信号。然而，变化的序列中的最后变化总是会生成这个信号。</p>
+<p><b>See also</b> <a href="qfilesystemwatcher.html#fileChanged" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#fileChanged">fileChanged</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fileChanged"></a>void fileChanged (const QString&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当指定的文件这个信号被发射<i>path</i>被修改，重命名或从磁盘中删除。</p>
+<p><b>See also</b> <a href="qfilesystemwatcher.html#directoryChanged" tppabs="http://pyqt4doc.appspot.com/qfilesystemwatcher.html#directoryChanged">directoryChanged</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

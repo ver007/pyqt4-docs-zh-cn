@@ -1,0 +1,237 @@
+﻿<html>
+<head>
+<title>QTextBoundaryFinder Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QTextBoundaryFinder Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QTextBoundaryFinder类提供了查找Unicode文本的边界在一个字符串的方法。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qtextboundaryfinder.html#BoundaryReason-enum" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html#BoundaryReason-enum">BoundaryReason</a></b> { NotAtBoundary, StartWord, EndWord }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder-boundaryreasons.html">BoundaryReasons</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qtextboundaryfinder.html#BoundaryType-enum" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html#BoundaryType-enum">BoundaryType</a></b> { Grapheme, Word, Line, Sentence }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qtextboundaryfinder.html#QTextBoundaryFinder" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html#QTextBoundaryFinder">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextboundaryfinder.html#QTextBoundaryFinder-2" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html#QTextBoundaryFinder-2">__init__</a></b> (<i>self</i>, QTextBoundaryFinder <i>other</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextboundaryfinder.html#QTextBoundaryFinder-3" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html#QTextBoundaryFinder-3">__init__</a></b> (<i>self</i>, BoundaryType <i>type</i>, QString <i>string</i>)</li>
+<li>
+<div class="fn"></div>BoundaryReasons <b><a href="qtextboundaryfinder.html#boundaryReasons" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html#boundaryReasons">boundaryReasons</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextboundaryfinder.html#isAtBoundary" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html#isAtBoundary">isAtBoundary</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextboundaryfinder.html#isValid" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html#isValid">isValid</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextboundaryfinder.html#position" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html#position">position</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextboundaryfinder.html#setPosition" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html#setPosition">setPosition</a></b> (<i>self</i>, int <i>position</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qtextboundaryfinder.html#string" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html#string">string</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextboundaryfinder.html#toEnd" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html#toEnd">toEnd</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextboundaryfinder.html#toNextBoundary" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html#toNextBoundary">toNextBoundary</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextboundaryfinder.html#toPreviousBoundary" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html#toPreviousBoundary">toPreviousBoundary</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextboundaryfinder.html#toStart" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html#toStart">toStart</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>BoundaryType <b><a href="qtextboundaryfinder.html#type" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html#type">type</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QTextBoundaryFinder类提供了查找Unicode文本的边界在一个字符串的方法。</p>
+<p>QTextBoundaryFinder可以发现Unicode文本的边界在一个字符串中，类似的Unicode文本边界规范（见http://www.unicode.org/reports/tr29/tr29-11.html ） 。</p>
+<p>QTextBoundaryFinder可以在一个操作<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>在这取决于价值四种可能的方式<i>BoundaryType</i>。</p>
+<p>Unicode字符是什么单位的用户认为作为语言的字符或基本单元构成这里称为字字集群。这两个Unicode字符' A'+分音符做，例如形成一个字形集群作为用户他们认为作为一个字符，但它是由两个Unicode代码点来表示这种情况。</p>
+<p>字边界是有定位什么语言认为是一个单词的开始和结束。</p>
+<p>换行符边界的地方给一个换行符可能发生和句子边界将显示整个句子的开头和结尾可能的地方。</p>
+<p>在字符串的第一个位置始终是一个有效的边界，指的是位置的第一个字符之前。在字符串的长度的最后一个位置也是有效的，最后一个字符之后指的位置。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="BoundaryReason-enum"></a>QTextBoundaryFinder.BoundaryReason</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTextBoundaryFinder.NotAtBoundary</tt>
+</td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">边界取景器是不是在边界位置。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextBoundaryFinder.StartWord</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">边界取景器是在一个单词的开头。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextBoundaryFinder.EndWord</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">边界取景器是在一个字的结尾。</td>
+</tr>
+</table>
+<p>该BoundaryReasons类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cBoundaryReason\u003e 。它存储BoundaryReason值的或组合。</p>
+
+
+<h3 class="fn">
+<a name="BoundaryType-enum"></a>QTextBoundaryFinder.BoundaryType</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextBoundaryFinder.Grapheme</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">发现一个字形这是最小的边界。它包括字母，点状标记，数字等。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextBoundaryFinder.Word</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">找到一个词。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextBoundaryFinder.Line</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">查找打破文本分成多行可能的位置。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextBoundaryFinder.Sentence</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">找到句子的界限。这些措施包括句号，问号等。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QTextBoundaryFinder"></a>QTextBoundaryFinder.__init__ (<i>self</i>)</h3>
+<p>构造一个无效的<a href="qtextboundaryfinder.html" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html">QTextBoundaryFinder</a>对象。</p>
+
+
+<h3 class="fn">
+<a name="QTextBoundaryFinder-2"></a>QTextBoundaryFinder.__init__ (<i>self</i>, <a href="qtextboundaryfinder.html" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html">QTextBoundaryFinder</a> <i>other</i>)</h3>
+<p>副本<a href="qtextboundaryfinder.html" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html">QTextBoundaryFinder</a>反对，<i>other</i>。</p>
+
+
+<h3 class="fn">
+<a name="QTextBoundaryFinder-3"></a>QTextBoundaryFinder.__init__ (<i>self</i>, <a href="qtextboundaryfinder.html#BoundaryType-enum" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html#BoundaryType-enum">BoundaryType</a> <i>type</i>, QString <i>string</i>)</h3>
+<p>创建<a href="qtextboundaryfinder.html" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html">QTextBoundaryFinder</a>对象<i>type</i>操作上<i>string</i>。</p>
+
+
+<h3 class="fn">
+<a name="boundaryReasons"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder-boundaryreasons.html">BoundaryReasons</a> QTextBoundaryFinder.boundaryReasons (<i>self</i>)</h3>
+<p>返回到所选择的当前位置为界的原因边界取景器。</p>
+
+
+<h3 class="fn">
+<a name="isAtBoundary"></a>bool QTextBoundaryFinder.isAtBoundary (<i>self</i>)</h3>
+<p>返回True如果对象的<a href="qtextboundaryfinder.html#position" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html#position">position</a>（ ）是目前一个有效的文本边界。</p>
+
+
+<h3 class="fn">
+<a name="isValid"></a>bool QTextBoundaryFinder.isValid (<i>self</i>)</h3>
+<p>返回True如果文字边界发现者是有效的，否则返回False 。默认<a href="qtextboundaryfinder.html" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html">QTextBoundaryFinder</a>是无效的。</p>
+
+
+<h3 class="fn">
+<a name="position"></a>int QTextBoundaryFinder.position (<i>self</i>)</h3>
+<p>返回的当前位置<a href="qtextboundaryfinder.html" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html">QTextBoundaryFinder</a>。</p>
+<p>的范围是从0 （在字符串的开头）到字符串包容的长度。</p>
+<p><b>See also</b> <a href="qtextboundaryfinder.html#setPosition" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html#setPosition">setPosition</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPosition"></a>QTextBoundaryFinder.setPosition (<i>self</i>, int <i>position</i>)</h3>
+<p>设置的当前位置<a href="qtextboundaryfinder.html" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html">QTextBoundaryFinder</a>至<i>position</i>。</p>
+<p>If <i>position</i>是出界，它必将唯一有效的位置。在这种情况下，有效的位置是从0到字符串包的长度。</p>
+<p><b>See also</b> <a href="qtextboundaryfinder.html#position" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html#position">position</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="string"></a>QString QTextBoundaryFinder.string (<i>self</i>)</h3>
+<p>返回字符串的<a href="qtextboundaryfinder.html" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html">QTextBoundaryFinder</a>对象运行在。</p>
+
+
+<h3 class="fn">
+<a name="toEnd"></a>QTextBoundaryFinder.toEnd (<i>self</i>)</h3>
+<p>移动取景到字符串的结尾。这相当于setPosition方法（和string.length （））。</p>
+<p><b>See also</b> <a href="qtextboundaryfinder.html#setPosition" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html#setPosition">setPosition</a>（）和<a href="qtextboundaryfinder.html#position" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html#position">position</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toNextBoundary"></a>int QTextBoundaryFinder.toNextBoundary (<i>self</i>)</h3>
+<p>移动<a href="qtextboundaryfinder.html" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html">QTextBoundaryFinder</a>到下一个边界位置，并返回该位置。</p>
+<p>返回-1，如果没有下边界。</p>
+
+
+<h3 class="fn">
+<a name="toPreviousBoundary"></a>int QTextBoundaryFinder.toPreviousBoundary (<i>self</i>)</h3>
+<p>移动<a href="qtextboundaryfinder.html" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html">QTextBoundaryFinder</a>先前的边界位置，并返回该位置。</p>
+<p>返回-1，如果没有以前的边界。</p>
+
+
+<h3 class="fn">
+<a name="toStart"></a>QTextBoundaryFinder.toStart (<i>self</i>)</h3>
+<p>移动取景器的字符串的开头。这相当于setPosition方法（0）。</p>
+<p><b>See also</b> <a href="qtextboundaryfinder.html#setPosition" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html#setPosition">setPosition</a>（）和<a href="qtextboundaryfinder.html#position" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html#position">position</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="type"></a><a href="qtextboundaryfinder.html#BoundaryType-enum" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html#BoundaryType-enum">BoundaryType</a> QTextBoundaryFinder.type (<i>self</i>)</h3>
+<p>返回的类型<a href="qtextboundaryfinder.html" tppabs="http://pyqt4doc.appspot.com/qtextboundaryfinder.html">QTextBoundaryFinder</a>。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

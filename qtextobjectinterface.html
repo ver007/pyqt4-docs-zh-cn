@@ -1,0 +1,111 @@
+﻿<html>
+<head>
+<title>QTextObjectInterface Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QTextObjectInterface Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QTextObjectInterface类允许自定义文本对象的图形中<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>秒。<a href="#details">More...</a></p>
+
+<p>通过继承<a href="qpytextobject.html" tppabs="http://pyqt4doc.appspot.com/qpytextobject.html">QPyTextObject</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qtextobjectinterface.html#QTextObjectInterface" tppabs="http://pyqt4doc.appspot.com/qtextobjectinterface.html#QTextObjectInterface">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextobjectinterface.html#QTextObjectInterface-2" tppabs="http://pyqt4doc.appspot.com/qtextobjectinterface.html#QTextObjectInterface-2">__init__</a></b> (<i>self</i>, QTextObjectInterface)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextobjectinterface.html#drawObject" tppabs="http://pyqt4doc.appspot.com/qtextobjectinterface.html#drawObject">drawObject</a></b> (<i>self</i>, QPainter <i>painter</i>, QRectF <i>rect</i>, QTextDocument <i>doc</i>, int <i>posInDocument</i>, QTextFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>QSizeF <b><a href="qtextobjectinterface.html#intrinsicSize" tppabs="http://pyqt4doc.appspot.com/qtextobjectinterface.html#intrinsicSize">intrinsicSize</a></b> (<i>self</i>, QTextDocument <i>doc</i>, int <i>posInDocument</i>, QTextFormat <i>format</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QTextObjectInterface类允许自定义文本对象的图形中<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>秒。</p>
+<p>文本对象描述的文本文档中的一个或多个元素的结构，例如，从HTML导入的图像是使用文本对象来实现。文本对象知道如何布局并绘制它的元素当一个文档被渲染。</p>
+<p>Qt的可自定义文本对象通过注册一个自定义的被插入到文档中<a href="qtextformat.html#objectType" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#objectType">object
+type</a>同<a href="qtextcharformat.html" tppabs="http://pyqt4doc.appspot.com/qtextcharformat.html">QTextCharFormat</a>。一个QTextObjectInterface也必须对这种类型实施，并<a href="qabstracttextdocumentlayout.html#registerHandler" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#registerHandler">registered</a>与<a href="qabstracttextdocumentlayout.html" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html">QAbstractTextDocumentLayout</a>文档。当对象类型，而渲染遇到<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>时，<a href="qtextobjectinterface.html#intrinsicSize" tppabs="http://pyqt4doc.appspot.com/qtextobjectinterface.html#intrinsicSize">intrinsicSize</a>（）和<a href="qtextobjectinterface.html#drawObject" tppabs="http://pyqt4doc.appspot.com/qtextobjectinterface.html#drawObject">drawObject</a>（）的接口的函数被调用。</p>
+<p>下面的列表说明插入一个自定义的文本对象插入到文档中所需的步骤：</p>
+<ul>
+<li>Choose an <i>objectType</i>. The <i>objectType</i> is an
+integer with a value greater or equal to <a href="qtextformat.html#ObjectTypes-enum" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#ObjectTypes-enum">QTextFormat.UserObject</a>.</li>
+<li>Create a <a href="qtextcharformat.html" tppabs="http://pyqt4doc.appspot.com/qtextcharformat.html">QTextCharFormat</a>
+object and set the object type to the chosen type using the
+setObjectType() function.</li>
+<li>Implement the QTextObjectInterface class.</li>
+<li>Call <a href="qabstracttextdocumentlayout.html#registerHandler" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#registerHandler">QAbstractTextDocumentLayout.registerHandler</a>()
+with an instance of your QTextObjectInterface subclass to register
+your object type.</li>
+<li>Insert <a href="qchar.html#SpecialCharacter-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#SpecialCharacter-enum">QChar.ObjectReplacementCharacter</a>
+with the aforementioned <a href="qtextcharformat.html" tppabs="http://pyqt4doc.appspot.com/qtextcharformat.html">QTextCharFormat</a> of the chosen object
+type into the document. As mentioned, the functions of
+QTextObjectInterface <a href="qtextobjectinterface.html#intrinsicSize" tppabs="http://pyqt4doc.appspot.com/qtextobjectinterface.html#intrinsicSize">intrinsicSize()</a> and
+<a href="qtextobjectinterface.html#drawObject" tppabs="http://pyqt4doc.appspot.com/qtextobjectinterface.html#drawObject">drawObject()</a>
+will then be called with the <a href="qtextformat.html" tppabs="http://pyqt4doc.appspot.com/qtextformat.html">QTextFormat</a> as parameter whenever the
+replacement character is encountered.</li>
+</ul>
+<p>一个类实现一个文本对象需要同时继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>和QTextObjectInterface 。<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>必须是继承了一流的。例如：</p>
+<pre class="cpp">
+ <span class="keyword">class</span> SvgTextObject : <span class="keyword">public</span> <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span><span class="operator">,</span> <span class="keyword">public</span> <span class="type">QTextObjectInterface</span>
+ {
+     Q_OBJECT
+     Q_INTERFACES(<span class="type">QTextObjectInterface</span>)
+</pre>
+<p>文本对象的数据通常存储在<a href="qtextcharformat.html" tppabs="http://pyqt4doc.appspot.com/qtextcharformat.html">QTextCharFormat</a> using <a href="qtextformat.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setProperty">QTextCharFormat.setProperty</a>（） ，然后用检索<a href="qtextformat.html#property" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#property">QTextCharFormat.property</a>（ ） 。</p>
+<p><b>Warning:</b>复制和粘贴操作忽略自定义的文本对象。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QTextObjectInterface"></a>QTextObjectInterface.__init__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="QTextObjectInterface-2"></a>QTextObjectInterface.__init__ (<i>self</i>, <a href="qtextobjectinterface.html" tppabs="http://pyqt4doc.appspot.com/qtextobjectinterface.html">QTextObjectInterface</a>)</h3>
+<h3 class="fn">
+<a name="drawObject"></a>QTextObjectInterface.drawObject (<i>self</i>, <a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a> <i>painter</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>rect</i>, <a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a> <i>doc</i>, int <i>posInDocument</i>, <a href="qtextformat.html" tppabs="http://pyqt4doc.appspot.com/qtextformat.html">QTextFormat</a> <i>format</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>使用指定绘制这个文本对象<i>painter</i>。</p>
+<p>该矩形的大小，<i>rect</i>，画中是先前计算的大小<a href="qtextobjectinterface.html#intrinsicSize" tppabs="http://pyqt4doc.appspot.com/qtextobjectinterface.html#intrinsicSize">intrinsicSize</a>（ ） 。矩形的位置是相对于<i>painter</i>。</p>
+<p>您还可以得到该文件（<i>doc</i>）和位置（<i>posInDocument</i>的）的<i>format</i>该文件中。</p>
+<p><b>See also</b> <a href="qtextobjectinterface.html#intrinsicSize" tppabs="http://pyqt4doc.appspot.com/qtextobjectinterface.html#intrinsicSize">intrinsicSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="intrinsicSize"></a><a href="qsizef.html" tppabs="http://pyqt4doc.appspot.com/qsizef.html">QSizeF</a> QTextObjectInterface.intrinsicSize (<i>self</i>, <a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a> <i>doc</i>, int <i>posInDocument</i>, <a href="qtextformat.html" tppabs="http://pyqt4doc.appspot.com/qtextformat.html">QTextFormat</a> <i>format</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>该intrinsicSize （ ）函数返回所代表的文本对象的大小<i>format</i>给定的文件中（<i>doc</i>）在给定位置（<i>posInDocument</i>） 。</p>
+<p>计算出的大小将用于后续调用<a href="qtextobjectinterface.html#drawObject" tppabs="http://pyqt4doc.appspot.com/qtextobjectinterface.html#drawObject">drawObject</a>（ ）就本<i>format</i>。</p>
+<p><b>See also</b> <a href="qtextobjectinterface.html#drawObject" tppabs="http://pyqt4doc.appspot.com/qtextobjectinterface.html#drawObject">drawObject</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

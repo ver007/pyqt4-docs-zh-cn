@@ -1,0 +1,100 @@
+﻿<html>
+<head>
+<title>QDomEntity Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDomEntity Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtxml.html">QtXml</a> module]</sup></sup>
+</h1>
+<p>该QDomEntity类表示一个XML实体。<a href="#details">More...</a></p>
+
+<p>继承<a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdomentity.html#QDomEntity" tppabs="http://pyqt4doc.appspot.com/qdomentity.html#QDomEntity">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdomentity.html#QDomEntity-2" tppabs="http://pyqt4doc.appspot.com/qdomentity.html#QDomEntity-2">__init__</a></b> (<i>self</i>, QDomEntity <i>x</i>)</li>
+<li>
+<div class="fn"></div>QDomNode.NodeType <b><a href="qdomentity.html#nodeType" tppabs="http://pyqt4doc.appspot.com/qdomentity.html#nodeType">nodeType</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdomentity.html#notationName" tppabs="http://pyqt4doc.appspot.com/qdomentity.html#notationName">notationName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdomentity.html#publicId" tppabs="http://pyqt4doc.appspot.com/qdomentity.html#publicId">publicId</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdomentity.html#systemId" tppabs="http://pyqt4doc.appspot.com/qdomentity.html#systemId">systemId</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDomEntity类表示一个XML实体。</p>
+<p>这个类表示XML文档中的一个实体，解析和未解析。请注意，此模型实体本身不是实体声明。</p>
+<p>DOM不支持编辑实体节点，如果用户想更改一个实体的内容，每一个相关的<a href="qdomentityreference.html" tppabs="http://pyqt4doc.appspot.com/qdomentityreference.html">QDomEntityReference</a>节点必须更换在DOM树中通过的实体内容的克隆，然后进行必要的更改必须对每个克隆代替。一个实体节点的所有后代都是只读的。</p>
+<p>一个实体节点没有任何父。</p>
+<p>您可以访问该公司<a href="qdomentity.html#publicId" tppabs="http://pyqt4doc.appspot.com/qdomentity.html#publicId">publicId</a>（ ）<a href="qdomentity.html#systemId" tppabs="http://pyqt4doc.appspot.com/qdomentity.html#systemId">systemId</a>（）和<a href="qdomentity.html#notationName" tppabs="http://pyqt4doc.appspot.com/qdomentity.html#notationName">notationName</a>（ ）时可用。</p>
+<p>关于文档对象模型有进一步的信息<a href="http://www.w3.org/TR/REC-DOM-Level-1/">Level 1</a>和<a href="http://www.w3.org/TR/DOM-Level-2-Core/">Level 2 Core</a>。对于更一般介绍的DOM实现的见<a href="qdomdocument.html" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html">QDomDocument</a>文档。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDomEntity"></a>QDomEntity.__init__ (<i>self</i>)</h3>
+<p>构造一个空的实体。</p>
+
+
+<h3 class="fn">
+<a name="QDomEntity-2"></a>QDomEntity.__init__ (<i>self</i>, <a href="qdomentity.html" tppabs="http://pyqt4doc.appspot.com/qdomentity.html">QDomEntity</a> <i>x</i>)</h3>
+<p>构造的副本<i>x</i>。</p>
+<p>副本的数据是共享的（浅拷贝） ：修改一个节点也将改变其他。如果你想使一个深拷贝，使用<a href="qdomnode.html#cloneNode" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#cloneNode">cloneNode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="nodeType"></a><a href="qdomnode.html#NodeType-enum" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#NodeType-enum">QDomNode.NodeType</a> QDomEntity.nodeType (<i>self</i>)</h3>
+<p>Returns <tt>EntityNode</tt>。</p>
+
+
+<h3 class="fn">
+<a name="notationName"></a>QString QDomEntity.notationName (<i>self</i>)</h3>
+<p>对于未解析实体这个函数返回的符号的实体的名称。对于已解析实体这个函数返回一个空字符串。</p>
+
+
+<h3 class="fn">
+<a name="publicId"></a>QString QDomEntity.publicId (<i>self</i>)</h3>
+<p>返回与此实体相关的公共标识符。如果未指定公共标识符是一个空字符串返回。</p>
+
+
+<h3 class="fn">
+<a name="systemId"></a>QString QDomEntity.systemId (<i>self</i>)</h3>
+<p>返回与此实体相关的系统标识符。如果未指定系统标识符是一个空字符串返回。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

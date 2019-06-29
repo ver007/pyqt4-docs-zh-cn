@@ -1,0 +1,285 @@
+﻿<html>
+<head>
+<title>QAbstractPrintDialog Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QAbstractPrintDialog Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QAbstractPrintDialog类提供了一个基实现，用于配置打印机的打印对话框。<a href="#details">More...</a></p>
+
+<p>继承<a href="qdialog.html" tppabs="http://pyqt4doc.appspot.com/qdialog.html">QDialog</a>。</p>
+<p>通过继承<a href="qprintdialog.html" tppabs="http://pyqt4doc.appspot.com/qprintdialog.html">QPrintDialog</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qabstractprintdialog.html#PrintDialogOption-enum" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#PrintDialogOption-enum">PrintDialogOption</a></b> { None, PrintToFile, PrintSelection, PrintPageRange, ..., PrintCurrentPage }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog-printdialogoptions.html">PrintDialogOptions</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qabstractprintdialog.html#PrintRange-enum" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#PrintRange-enum">PrintRange</a></b> { AllPages, Selection, PageRange, CurrentPage }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractprintdialog.html#QAbstractPrintDialog" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#QAbstractPrintDialog">__init__</a></b> (<i>self</i>, QPrinter <i>printer</i>, QWidget <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractprintdialog.html#addEnabledOption" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#addEnabledOption">addEnabledOption</a></b> (<i>self</i>, PrintDialogOption <i>option</i>)</li>
+<li>
+<div class="fn"></div>PrintDialogOptions <b><a href="qabstractprintdialog.html#enabledOptions" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#enabledOptions">enabledOptions</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractprintdialog.html#exec" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#exec">exec_</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractprintdialog.html#fromPage" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#fromPage">fromPage</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractprintdialog.html#isOptionEnabled" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#isOptionEnabled">isOptionEnabled</a></b> (<i>self</i>, PrintDialogOption <i>option</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractprintdialog.html#maxPage" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#maxPage">maxPage</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractprintdialog.html#minPage" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#minPage">minPage</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QPrinter <b><a href="qabstractprintdialog.html#printer" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#printer">printer</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>PrintRange <b><a href="qabstractprintdialog.html#printRange" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#printRange">printRange</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractprintdialog.html#setEnabledOptions" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#setEnabledOptions">setEnabledOptions</a></b> (<i>self</i>, PrintDialogOptions <i>options</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractprintdialog.html#setFromTo" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#setFromTo">setFromTo</a></b> (<i>self</i>, int <i>fromPage</i>, int <i>toPage</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractprintdialog.html#setMinMax" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#setMinMax">setMinMax</a></b> (<i>self</i>, int <i>min</i>, int <i>max</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractprintdialog.html#setOptionTabs" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#setOptionTabs">setOptionTabs</a></b> (<i>self</i>, list-of-QWidget <i>tabs</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractprintdialog.html#setPrintRange" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#setPrintRange">setPrintRange</a></b> (<i>self</i>, PrintRange <i>range</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractprintdialog.html#toPage" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#toPage">toPage</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QAbstractPrintDialog类提供了一个基实现，用于配置打印机的打印对话框。</p>
+<p>这个类实现了用于自定义打印对话框中显示的设置getter和setter函数，但它不能直接使用。使用<a href="qprintdialog.html" tppabs="http://pyqt4doc.appspot.com/qprintdialog.html">QPrintDialog</a>在你的应用程序中显示打印对话框。</p>
+<p>在Symbian ，有打印的支持。因此，不应该在Symbian中使用此对话框。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="PrintDialogOption-enum"></a>QAbstractPrintDialog.PrintDialogOption</h3>
+<p>用于指定打印对话框的部分应该是可见的。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractPrintDialog.None</tt></td>
+<td class="topAlign"><tt>0x0000</tt></td>
+<td class="topAlign">没有一个选项被启用。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractPrintDialog.PrintToFile</tt>
+</td>
+<td class="topAlign"><tt>0x0001</tt></td>
+<td class="topAlign">到文件选项打印已启用。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractPrintDialog.PrintSelection</tt>
+</td>
+<td class="topAlign"><tt>0x0002</tt></td>
+<td class="topAlign">打印选择的选项被启用。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractPrintDialog.PrintPageRange</tt>
+</td>
+<td class="topAlign"><tt>0x0004</tt></td>
+<td class="topAlign">页面范围选择的选项被启用。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractPrintDialog.PrintShowPageSize</tt>
+</td>
+<td class="topAlign"><tt>0x0008</tt></td>
+<td class="topAlign">显示页面大小+页边距仅当启用此功能。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractPrintDialog.PrintCollateCopies</tt>
+</td>
+<td class="topAlign"><tt>0x0010</tt></td>
+<td class="topAlign">启用了分页复印选项</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractPrintDialog.PrintCurrentPage</tt>
+</td>
+<td class="topAlign"><tt>0x0040</tt></td>
+<td class="topAlign">打印当前页面的选项被启用（该值是在4.7推出。 ）</td>
+</tr>
+</table>
+<p>这个值是过时的，不执行任何操作，因为Qt的4.5 ：</p>
+<table class="valuelist">
+<tr class="even" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractPrintDialog.DontUseSheet</tt>
+</td>
+<td class="topAlign"><tt>0x0020</tt></td>
+<td class="topAlign">在Qt的早期版本中，<a href="qabstractprintdialog.html#exec" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#exec">exec_</a>（ ）打印对话框将创建一个表在默认情况下被赋予了一个对话框父。这不再是在Qt的4.5的支持。如果你想使用表，使用<a href="qprintdialog.html#open" tppabs="http://pyqt4doc.appspot.com/qprintdialog.html#open">QPrintDialog.open</a>（ ）来代替。</td>
+</tr>
+</table>
+<p>该PrintDialogOptions类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cPrintDialogOption\u003e 。它存储PrintDialogOption值的或组合。</p>
+
+
+<h3 class="fn">
+<a name="PrintRange-enum"></a>QAbstractPrintDialog.PrintRange</h3>
+<p>用于指定打印范围选择选项。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractPrintDialog.AllPages</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">所有网页应打印。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractPrintDialog.Selection</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">唯一的选择应打印。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractPrintDialog.PageRange</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">指定页面范围应打印。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractPrintDialog.CurrentPage</tt>
+</td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">只有当前可见的页面应该被打印出来。 （这个值被引入4.7 。 ）</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qprinter.html#PrintRange-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PrintRange-enum">QPrinter.PrintRange</a>。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QAbstractPrintDialog"></a>QAbstractPrintDialog.__init__ (<i>self</i>, <a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a> <i>printer</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个抽象的打印对话框<i>printer</i>同<i>parent</i>作为父控件。</p>
+
+
+<h3 class="fn">
+<a name="addEnabledOption"></a>QAbstractPrintDialog.addEnabledOption (<i>self</i>, <a href="qabstractprintdialog.html#PrintDialogOption-enum" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#PrintDialogOption-enum">PrintDialogOption</a> <i>option</i>)</h3>
+<h3 class="fn">
+<a name="enabledOptions"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog-printdialogoptions.html">PrintDialogOptions</a> QAbstractPrintDialog.enabledOptions (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="exec"></a>int QAbstractPrintDialog.exec_ (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>这个虚函数被调用，弹出对话框。它必须重新实现在子类中。</p>
+
+
+<h3 class="fn">
+<a name="fromPage"></a>int QAbstractPrintDialog.fromPage (<i>self</i>)</h3>
+<p>返回要打印默认情况下在第一页，此值设置为0 。</p>
+
+
+<h3 class="fn">
+<a name="isOptionEnabled"></a>bool QAbstractPrintDialog.isOptionEnabled (<i>self</i>, <a href="qabstractprintdialog.html#PrintDialogOption-enum" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#PrintDialogOption-enum">PrintDialogOption</a> <i>option</i>)</h3>
+<h3 class="fn">
+<a name="maxPage"></a>int QAbstractPrintDialog.maxPage (<i>self</i>)</h3>
+<p>返回最大页面中的页面范围。由于Qt的4.4的，这个函数返回INT_MAX默认。以前的版本中返回的缺省值为1 。</p>
+
+
+<h3 class="fn">
+<a name="minPage"></a>int QAbstractPrintDialog.minPage (<i>self</i>)</h3>
+<p>返回最小的页面在页面范围。默认情况下，该值设置为1 。</p>
+
+
+<h3 class="fn">
+<a name="printer"></a><a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a> QAbstractPrintDialog.printer (<i>self</i>)</h3>
+<p>返回此对话框打印机上操作打印机。</p>
+
+
+<h3 class="fn">
+<a name="printRange"></a><a href="qabstractprintdialog.html#PrintRange-enum" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#PrintRange-enum">PrintRange</a> QAbstractPrintDialog.printRange (<i>self</i>)</h3>
+<p>返回打印范围。</p>
+<p><b>See also</b> <a href="qabstractprintdialog.html#setPrintRange" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#setPrintRange">setPrintRange</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setEnabledOptions"></a>QAbstractPrintDialog.setEnabledOptions (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog-printdialogoptions.html">PrintDialogOptions</a> <i>options</i>)</h3>
+<h3 class="fn">
+<a name="setFromTo"></a>QAbstractPrintDialog.setFromTo (<i>self</i>, int <i>fromPage</i>, int <i>toPage</i>)</h3>
+<p>设定范围在打印对话框是从<i>from</i>至<i>to</i>。</p>
+
+
+<h3 class="fn">
+<a name="setMinMax"></a>QAbstractPrintDialog.setMinMax (<i>self</i>, int <i>min</i>, int <i>max</i>)</h3>
+<p>设置页面范围这个对话框是从<i>min</i>至<i>max</i>。这也使<a href="qabstractprintdialog.html#PrintDialogOption-enum" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#PrintDialogOption-enum">PrintPageRange</a>选项。</p>
+
+
+<h3 class="fn">
+<a name="setOptionTabs"></a>QAbstractPrintDialog.setOptionTabs (<i>self</i>, list-of-QWidget <i>tabs</i>)</h3>
+<p>设置小部件列表作为<i>tabs</i>要显示打印对话框上，如果支持的话。</p>
+<p>目前这个选项只支持X11 。</p>
+<p>设置选项卡将其所有权转移到打印对话框。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="setPrintRange"></a>QAbstractPrintDialog.setPrintRange (<i>self</i>, <a href="qabstractprintdialog.html#PrintRange-enum" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#PrintRange-enum">PrintRange</a> <i>range</i>)</h3>
+<p>设置打印范围选项是<i>range</i>。</p>
+<p><b>See also</b> <a href="qabstractprintdialog.html#printRange" tppabs="http://pyqt4doc.appspot.com/qabstractprintdialog.html#printRange">printRange</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toPage"></a>int QAbstractPrintDialog.toPage (<i>self</i>)</h3>
+<p>返回最后一个要打印的页面。默认情况下，该值设置为0 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

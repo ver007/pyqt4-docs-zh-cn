@@ -1,0 +1,108 @@
+﻿<html>
+<head>
+<title>QScriptString Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QScriptString Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscript.html">QtScript</a> module]</sup></sup>
+</h1>
+<p>该QScriptString类充当手柄来“实习”的字符串中<a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a>。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptstring.html#QScriptString" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html#QScriptString">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptstring.html#QScriptString-2" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html#QScriptString-2">__init__</a></b> (<i>self</i>, QScriptString <i>other</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qscriptstring.html#isValid" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html#isValid">isValid</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>(int, bool <i>ok</i>) <b><a href="qscriptstring.html#toArrayIndex" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html#toArrayIndex">toArrayIndex</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qscriptstring.html#toString" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html#toString">toString</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>bool <b><a href="qscriptstring.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html#__eq__">__eq__</a></b> (<i>self</i>, QScriptString <i>other</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qscriptstring.html#__hash__" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html#__hash__">__hash__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qscriptstring.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html#__ne__">__ne__</a></b> (<i>self</i>, QScriptString <i>other</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QScriptString类充当手柄来“实习”的字符串中<a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a>。</p>
+<p>QScriptString可以用来实现更快的（重复）属性获取/设置和属性名称的比较，脚本对象。</p>
+<p>为了得到一个字符串的QScriptString表示，将字符串传递给<a href="qscriptengine.html#toStringHandle" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#toStringHandle">QScriptEngine.toStringHandle</a>（ ） 。典型的使用模式是注册一个或多个预先定义的字符串设置你的脚本环境中时，随后使用相关QScriptString作为参数，例如<a href="qscriptvalue.html#property" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html#property">QScriptValue.property</a>（ ） 。</p>
+<p>调用<a href="qscriptstring.html#toString" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html#toString">toString</a>（ ）函数来获得一个QScriptString表示字符串。</p>
+<p>调用<a href="qscriptstring.html#toArrayIndex" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html#toArrayIndex">toArrayIndex</a>（ ）函数将QScriptString转换为数组索引。使用时，这是有用的<a href="qscriptclass.html" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html">QScriptClass</a>实现类似数组的对象。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QScriptString"></a>QScriptString.__init__ (<i>self</i>)</h3>
+<p>构造一个无效的<a href="qscriptstring.html" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html">QScriptString</a>。</p>
+
+
+<h3 class="fn">
+<a name="QScriptString-2"></a>QScriptString.__init__ (<i>self</i>, <a href="qscriptstring.html" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html">QScriptString</a> <i>other</i>)</h3>
+<p>构造一个新的<a href="qscriptstring.html" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html">QScriptString</a>即副本<i>other</i>。</p>
+
+
+<h3 class="fn">
+<a name="isValid"></a>bool QScriptString.isValid (<i>self</i>)</h3>
+<p>返回True如果<a href="qscriptstring.html" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html">QScriptString</a>是有效的，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="toArrayIndex"></a>(int, bool <i>ok</i>) QScriptString.toArrayIndex (<i>self</i>)</h3>
+<p>尝试将它转换<a href="qscriptstring.html" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html">QScriptString</a>到<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscript.html">QtScript</a>数组的索引，并返回结果。</p>
+<p>如果发生转换错误， *<i>ok</i>设置为False ，否则*<i>ok</i>设置为True 。</p>
+<p>此功能被引入Qt的4.6 。</p>
+
+
+<h3 class="fn">
+<a name="toString"></a>QString QScriptString.toString (<i>self</i>)</h3>
+<p>返回字符串，此<a href="qscriptstring.html" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html">QScriptString</a>代表，或一个空字符串，如果这<a href="qscriptstring.html" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html">QScriptString</a>是无效的。</p>
+<p><b>See also</b> <a href="qscriptstring.html#isValid" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html#isValid">isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="__eq__"></a>bool QScriptString.__eq__ (<i>self</i>, <a href="qscriptstring.html" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html">QScriptString</a> <i>other</i>)</h3>
+<h3 class="fn">
+<a name="__hash__"></a>int QScriptString.__hash__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QScriptString.__ne__ (<i>self</i>, <a href="qscriptstring.html" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html">QScriptString</a> <i>other</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

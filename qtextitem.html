@@ -1,0 +1,140 @@
+﻿<html>
+<head>
+<title>QTextItem Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QTextItem Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QTextItem类提供了所有在自定义绘图引擎绘制文本所需的信息。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qtextitem.html#RenderFlag-enum" tppabs="http://pyqt4doc.appspot.com/qtextitem.html#RenderFlag-enum">RenderFlag</a></b> { RightToLeft, Overline, Underline, StrikeOut }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtextitem-renderflags.html">RenderFlags</a></b>
+</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qtextitem.html#QTextItem" tppabs="http://pyqt4doc.appspot.com/qtextitem.html#QTextItem">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextitem.html#QTextItem-2" tppabs="http://pyqt4doc.appspot.com/qtextitem.html#QTextItem-2">__init__</a></b> (<i>self</i>, QTextItem)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtextitem.html#ascent" tppabs="http://pyqt4doc.appspot.com/qtextitem.html#ascent">ascent</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtextitem.html#descent" tppabs="http://pyqt4doc.appspot.com/qtextitem.html#descent">descent</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QFont <b><a href="qtextitem.html#font" tppabs="http://pyqt4doc.appspot.com/qtextitem.html#font">font</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>RenderFlags <b><a href="qtextitem.html#renderFlags" tppabs="http://pyqt4doc.appspot.com/qtextitem.html#renderFlags">renderFlags</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qtextitem.html#text" tppabs="http://pyqt4doc.appspot.com/qtextitem.html#text">text</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtextitem.html#width" tppabs="http://pyqt4doc.appspot.com/qtextitem.html#width">width</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QTextItem类提供了所有在自定义绘图引擎绘制文本所需的信息。</p>
+<p>当你重新实现自己的绘图引擎，你必须重新实现<a href="qpaintengine.html#drawTextItem" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#drawTextItem">QPaintEngine.drawTextItem</a>（ ） ，一个函数，它接受一个QTextItem作为它的一个参数。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="RenderFlag-enum"></a>QTextItem.RenderFlag</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextItem.RightToLeft</tt></td>
+<td class="topAlign"><tt>0x1</tt></td>
+<td class="topAlign">呈现由右至左的文本。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextItem.Overline</tt></td>
+<td class="topAlign"><tt>0x10</tt></td>
+<td class="topAlign">涂料上面的文字行。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextItem.Underline</tt></td>
+<td class="topAlign"><tt>0x20</tt></td>
+<td class="topAlign">涂料在文本下一条线。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextItem.StrikeOut</tt></td>
+<td class="topAlign"><tt>0x40</tt></td>
+<td class="topAlign">通过文字描绘出线条。</td>
+</tr>
+</table>
+<p>该RenderFlags类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cRenderFlag\u003e 。它存储RenderFlag值的或组合。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QTextItem"></a>QTextItem.__init__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="QTextItem-2"></a>QTextItem.__init__ (<i>self</i>, <a href="qtextitem.html" tppabs="http://pyqt4doc.appspot.com/qtextitem.html">QTextItem</a>)</h3>
+<h3 class="fn">
+<a name="ascent"></a>float QTextItem.ascent (<i>self</i>)</h3>
+<p>对应于<a href="qfontmetrics.html#ascent" tppabs="http://pyqt4doc.appspot.com/qfontmetrics.html#ascent">ascent</a>的一段文字所绘制的。</p>
+
+
+<h3 class="fn">
+<a name="descent"></a>float QTextItem.descent (<i>self</i>)</h3>
+<p>对应于<a href="qfontmetrics.html#descent" tppabs="http://pyqt4doc.appspot.com/qfontmetrics.html#descent">descent</a>的一段文字所绘制的。</p>
+
+
+<h3 class="fn">
+<a name="font"></a><a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a> QTextItem.font (<i>self</i>)</h3>
+<p>返回应该被用来绘制文本的字体。</p>
+
+
+<h3 class="fn">
+<a name="renderFlags"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtextitem-renderflags.html">RenderFlags</a> QTextItem.renderFlags (<i>self</i>)</h3>
+<p>返回用于渲染的标志。</p>
+
+
+<h3 class="fn">
+<a name="text"></a>QString QTextItem.text (<i>self</i>)</h3>
+<p>返回一个应绘制的文本。</p>
+
+
+<h3 class="fn">
+<a name="width"></a>float QTextItem.width (<i>self</i>)</h3>
+<p>指定要绘制的文本的总宽度。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

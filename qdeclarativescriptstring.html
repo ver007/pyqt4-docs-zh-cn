@@ -1,0 +1,129 @@
+﻿<html>
+<head>
+<title>QDeclarativeScriptString Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDeclarativeScriptString Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdeclarative.html">QtDeclarative</a> module]</sup></sup>
+</h1>
+<p>该QDeclarativeScriptString类封装了一个脚本，它的上下文。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdeclarativescriptstring.html#QDeclarativeScriptString" tppabs="http://pyqt4doc.appspot.com/qdeclarativescriptstring.html#QDeclarativeScriptString">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdeclarativescriptstring.html#QDeclarativeScriptString-2" tppabs="http://pyqt4doc.appspot.com/qdeclarativescriptstring.html#QDeclarativeScriptString-2">__init__</a></b> (<i>self</i>, QDeclarativeScriptString)</li>
+<li>
+<div class="fn"></div>QDeclarativeContext <b><a href="qdeclarativescriptstring.html#context" tppabs="http://pyqt4doc.appspot.com/qdeclarativescriptstring.html#context">context</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QObject <b><a href="qdeclarativescriptstring.html#scopeObject" tppabs="http://pyqt4doc.appspot.com/qdeclarativescriptstring.html#scopeObject">scopeObject</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdeclarativescriptstring.html#script" tppabs="http://pyqt4doc.appspot.com/qdeclarativescriptstring.html#script">script</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdeclarativescriptstring.html#setContext" tppabs="http://pyqt4doc.appspot.com/qdeclarativescriptstring.html#setContext">setContext</a></b> (<i>self</i>, QDeclarativeContext)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdeclarativescriptstring.html#setScopeObject" tppabs="http://pyqt4doc.appspot.com/qdeclarativescriptstring.html#setScopeObject">setScopeObject</a></b> (<i>self</i>, QObject)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdeclarativescriptstring.html#setScript" tppabs="http://pyqt4doc.appspot.com/qdeclarativescriptstring.html#setScript">setScript</a></b> (<i>self</i>, QString)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDeclarativeScriptString类封装了一个脚本，它的上下文。</p>
+<p>QDeclarativeScriptString被用来创建<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>接受从QML脚本“转让”的属性。</p>
+<p>通常，下面的QML会导致约束正在建立的<tt>script</tt>财产;即<tt>script</tt>将被分配从运行而获得的值<tt>myObj.value =
+Math.max(myValue, 100)</tt></p>
+<pre class="qml">
+ <span class="type">MyType</span> {
+     <span class="name">script</span>: <span class="name">myObj</span>.<span class="name">value</span> <span class="operator">=</span> <span class="name">Math</span>.<span class="name">max</span>(<span class="name">myValue</span>, <span class="number">100</span>)
+ }
+</pre>
+<p>相反，如果该属性有一个类型QDeclarativeScriptString ，脚本本身的 - <i>myObj.value = Math.max(myValue, 100)</i> - 将被传递给<tt>script</tt>属性和类可以选择如何处理它。通常情况下，该类将使用一段时间以后评估脚本<a href="qdeclarativeexpression.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativeexpression.html">QDeclarativeExpression</a>。</p>
+<pre class="cpp">
+ <span class="type"><a href="qdeclarativeexpression.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativeexpression.html">QDeclarativeExpression</a></span> expr(scriptString<span class="operator">.</span>context()<span class="operator">,</span> scriptString<span class="operator">.</span>script()<span class="operator">,</span> scriptStr<span class="operator">.</span>scopeObject());
+ expr<span class="operator">.</span>value();
+</pre>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDeclarativeScriptString"></a>QDeclarativeScriptString.__init__ (<i>self</i>)</h3>
+<p>构造一个空实例。</p>
+
+
+<h3 class="fn">
+<a name="QDeclarativeScriptString-2"></a>QDeclarativeScriptString.__init__ (<i>self</i>, <a href="qdeclarativescriptstring.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativescriptstring.html">QDeclarativeScriptString</a>)</h3>
+<p>Copies <i>other</i>。</p>
+
+
+<h3 class="fn">
+<a name="context"></a><a href="qdeclarativecontext.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html">QDeclarativeContext</a> QDeclarativeScriptString.context (<i>self</i>)</h3>
+<p>返回上下文的脚本。</p>
+<p><b>See also</b> <a href="qdeclarativescriptstring.html#setContext" tppabs="http://pyqt4doc.appspot.com/qdeclarativescriptstring.html#setContext">setContext</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="scopeObject"></a><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> QDeclarativeScriptString.scopeObject (<i>self</i>)</h3>
+<p>返回的范围对象的脚本。</p>
+<p><b>See also</b> <a href="qdeclarativescriptstring.html#setScopeObject" tppabs="http://pyqt4doc.appspot.com/qdeclarativescriptstring.html#setScopeObject">setScopeObject</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="script"></a>QString QDeclarativeScriptString.script (<i>self</i>)</h3>
+<p>返回脚本文本。</p>
+<p><b>See also</b> <a href="qdeclarativescriptstring.html#setScript" tppabs="http://pyqt4doc.appspot.com/qdeclarativescriptstring.html#setScript">setScript</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setContext"></a>QDeclarativeScriptString.setContext (<i>self</i>, <a href="qdeclarativecontext.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html">QDeclarativeContext</a>)</h3>
+<p>设置<i>context</i>为脚本。</p>
+<p><b>See also</b> <a href="qdeclarativescriptstring.html#context" tppabs="http://pyqt4doc.appspot.com/qdeclarativescriptstring.html#context">context</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setScopeObject"></a>QDeclarativeScriptString.setScopeObject (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>)</h3>
+<p>设定范围<i>object</i>为脚本。</p>
+<p><b>See also</b> <a href="qdeclarativescriptstring.html#scopeObject" tppabs="http://pyqt4doc.appspot.com/qdeclarativescriptstring.html#scopeObject">scopeObject</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setScript"></a>QDeclarativeScriptString.setScript (<i>self</i>, QString)</h3>
+<p>设置<i>script</i>文本。</p>
+<p><b>See also</b> <a href="qdeclarativescriptstring.html#script" tppabs="http://pyqt4doc.appspot.com/qdeclarativescriptstring.html#script">script</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

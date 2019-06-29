@@ -1,0 +1,371 @@
+﻿<html>
+<head>
+<title>QGLBuffer Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QGLBuffer Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtopengl.html">QtOpenGL</a> module]</sup></sup>
+</h1>
+<p>该QGLBuffer类提供用于创建和管理GL缓冲区对象。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qglbuffer.html#Access-enum" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#Access-enum">Access</a></b> { ReadOnly, WriteOnly, ReadWrite }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qglbuffer.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#Type-enum">Type</a></b> { VertexBuffer, IndexBuffer, PixelPackBuffer, PixelUnpackBuffer }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qglbuffer.html#UsagePattern-enum" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#UsagePattern-enum">UsagePattern</a></b> { StreamDraw, StreamRead, StreamCopy, StaticDraw, ..., DynamicCopy }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qglbuffer.html#QGLBuffer" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#QGLBuffer">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglbuffer.html#QGLBuffer-2" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#QGLBuffer-2">__init__</a></b> (<i>self</i>, Type <i>type</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglbuffer.html#QGLBuffer-3" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#QGLBuffer-3">__init__</a></b> (<i>self</i>, QGLBuffer <i>other</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglbuffer.html#allocate" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#allocate">allocate</a></b> (<i>self</i>, sip.voidptr <i>data</i>, int <i>count</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglbuffer.html#allocate-2" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#allocate-2">allocate</a></b> (<i>self</i>, int <i>count</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qglbuffer.html#bind" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#bind">bind</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qglbuffer.html#bufferId" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#bufferId">bufferId</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qglbuffer.html#create" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#create">create</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglbuffer.html#destroy" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#destroy">destroy</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qglbuffer.html#isCreated" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#isCreated">isCreated</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>sip.voidptr <b><a href="qglbuffer.html#map" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#map">map</a></b> (<i>self</i>, Access <i>access</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qglbuffer.html#read" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#read">read</a></b> (<i>self</i>, int <i>offset</i>, sip.voidptr <i>data</i>, int <i>count</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglbuffer.html#release" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#release">release</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglbuffer.html#setUsagePattern" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#setUsagePattern">setUsagePattern</a></b> (<i>self</i>, UsagePattern <i>value</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qglbuffer.html#size" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#size">size</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Type <b><a href="qglbuffer.html#type" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#type">type</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qglbuffer.html#unmap" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#unmap">unmap</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>UsagePattern <b><a href="qglbuffer.html#usagePattern" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#usagePattern">usagePattern</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qglbuffer.html#write" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#write">write</a></b> (<i>self</i>, int <i>offset</i>, sip.voidptr <i>data</i>, int <i>count</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul><li>
+<div class="fn"></div>
+<b><a href="qglbuffer.html#release-2" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#release-2">release</a></b> (Type <i>type</i>)</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QGLBuffer类提供用于创建和管理GL缓冲区对象。</p>
+<p>缓冲对象在GL服务器创建，使客户端应用程序可避免上传顶点，索引，纹理图像数据等，他们需要每一次。</p>
+<p>QGLBuffer对象可以被复制围绕作为参照相关GL缓冲对象：</p>
+<pre class="cpp">
+ <span class="type">QGLBuffer</span> buffer1(<span class="type">QGLBuffer</span><span class="operator">.</span>IndexBuffer);
+ buffer1<span class="operator">.</span><a href="qglbuffer.html#create" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#create">create</a>();
+
+ <span class="type">QGLBuffer</span> buffer2 <span class="operator">=</span> buffer1;
+</pre>
+<p>QGLBuffer进行浅拷贝时，对象被复制以这种方式，但没有实现副本上写的语义。原来的对象会受到影响每当副本被修改。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="Access-enum"></a>QGLBuffer.Access</h3>
+<p>这个枚举变量定义的访问模式<a href="qglbuffer.html#map" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#map">QGLBuffer.map</a>（ ） 。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGLBuffer.ReadOnly</tt></td>
+<td class="topAlign"><tt>0x88B8</tt></td>
+<td class="topAlign">该缓冲区将被映射为只读。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGLBuffer.WriteOnly</tt></td>
+<td class="topAlign"><tt>0x88B9</tt></td>
+<td class="topAlign">该缓冲区将被映射为只写。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGLBuffer.ReadWrite</tt></td>
+<td class="topAlign"><tt>0x88BA</tt></td>
+<td class="topAlign">该缓冲区将被映射为阅读和写作。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="Type-enum"></a>QGLBuffer.Type</h3>
+<p>这个枚举变量定义GL缓冲对象的创建与类型<a href="qglbuffer.html" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html">QGLBuffer</a>。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGLBuffer.VertexBuffer</tt></td>
+<td class="topAlign"><tt>0x8892</tt></td>
+<td class="topAlign">顶点缓冲对象指定顶点数组时使用。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGLBuffer.IndexBuffer</tt></td>
+<td class="topAlign"><tt>0x8893</tt></td>
+<td class="topAlign">与使用索引缓冲区对象<tt>glDrawElements()</tt>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGLBuffer.PixelPackBuffer</tt></td>
+<td class="topAlign"><tt>0x88EB</tt></td>
+<td class="topAlign">自GL服务器读取像素数据的像素组缓存对象（例如，与<tt>glReadPixels()</tt>） 。下的OpenGL / ES不支持。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGLBuffer.PixelUnpackBuffer</tt></td>
+<td class="topAlign"><tt>0x88EC</tt></td>
+<td class="topAlign">为像素数据写入到GL服务器（例如，以像素解包缓冲区对象<tt>glTexImage2D()</tt>） 。下的OpenGL / ES不支持。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="UsagePattern-enum"></a>QGLBuffer.UsagePattern</h3>
+<p>这个枚举变量定义的使用模式<a href="qglbuffer.html" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html">QGLBuffer</a>对象。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGLBuffer.StreamDraw</tt></td>
+<td class="topAlign"><tt>0x88E0</tt></td>
+<td class="topAlign">这些数据将被设置一次，用过几次的绘图操作。下OpenGL / ES 1.1 ，这是相同的StaticDraw 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGLBuffer.StreamRead</tt></td>
+<td class="topAlign"><tt>0x88E1</tt></td>
+<td class="topAlign">这些数据将被设置一次，用过几次读回数据从GL服务器。下的OpenGL / ES不支持。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGLBuffer.StreamCopy</tt></td>
+<td class="topAlign"><tt>0x88E2</tt></td>
+<td class="topAlign">这些数据将被设置一次，用过几次读取数据从GL服务器回在进一步的绘制操作使用。下的OpenGL / ES不支持。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGLBuffer.StaticDraw</tt></td>
+<td class="topAlign"><tt>0x88E4</tt></td>
+<td class="topAlign">这些数据将被设置一次，多次使用的绘图操作。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGLBuffer.StaticRead</tt></td>
+<td class="topAlign"><tt>0x88E5</tt></td>
+<td class="topAlign">这些数据将被设置一次，多次使用读回数据从GL服务器。下的OpenGL / ES不支持。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGLBuffer.StaticCopy</tt></td>
+<td class="topAlign"><tt>0x88E6</tt></td>
+<td class="topAlign">这些数据将被设置一次，多次使用，用于读取数据从GL服务器回在进一步的绘制操作使用。下的OpenGL / ES不支持。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGLBuffer.DynamicDraw</tt></td>
+<td class="topAlign"><tt>0x88E8</tt></td>
+<td class="topAlign">该数据将被反复修改和多次使用的绘图操作。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGLBuffer.DynamicRead</tt></td>
+<td class="topAlign"><tt>0x88E9</tt></td>
+<td class="topAlign">该数据将被反复修改和多次使用读回数据从GL服务器。下的OpenGL / ES不支持。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGLBuffer.DynamicCopy</tt></td>
+<td class="topAlign"><tt>0x88EA</tt></td>
+<td class="topAlign">该数据将被反复修改和多次使用，用于读取数据从GL服务器回在进一步的绘制操作使用。下的OpenGL / ES不支持。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QGLBuffer"></a>QGLBuffer.__init__ (<i>self</i>)</h3>
+<p>构造类型的一个新的缓冲区对象<a href="qglbuffer.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#Type-enum">QGLBuffer.VertexBuffer</a>。</p>
+<p>注：此构造函数只是创建<a href="qglbuffer.html" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html">QGLBuffer</a>实例。在GL服务器的实际缓冲区对象不创建，直到<a href="qglbuffer.html#create" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#create">create</a>（）被调用。</p>
+<p><b>See also</b> <a href="qglbuffer.html#create" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#create">create</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QGLBuffer-2"></a>QGLBuffer.__init__ (<i>self</i>, <a href="qglbuffer.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#Type-enum">Type</a> <i>type</i>)</h3>
+<p>构建了一个新的缓冲区对象<i>type</i>。</p>
+<p>注：此构造函数只是创建<a href="qglbuffer.html" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html">QGLBuffer</a>实例。在GL服务器的实际缓冲区对象不创建，直到<a href="qglbuffer.html#create" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#create">create</a>（）被调用。</p>
+<p><b>See also</b> <a href="qglbuffer.html#create" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#create">create</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QGLBuffer-3"></a>QGLBuffer.__init__ (<i>self</i>, <a href="qglbuffer.html" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html">QGLBuffer</a> <i>other</i>)</h3>
+<p>构造的浅表副本<i>other</i>。</p>
+<p>注意：<a href="qglbuffer.html" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html">QGLBuffer</a>没有实现副本上写的语义，所以<i>other</i>将受到影响每当副本被修改。</p>
+
+
+<h3 class="fn">
+<a name="allocate"></a>QGLBuffer.allocate (<i>self</i>, sip.voidptr <i>data</i>, int <i>count</i>)</h3>
+<p>中分配<i>count</i>的空间的缓冲区中的字节，并将其初始化内容<i>data</i>。任何以前的内容将被删除。</p>
+<p>假定<a href="qglbuffer.html#create" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#create">create</a>（ ）被调用这个缓冲区，它已经绑定到当前的上下文。</p>
+<p><b>See also</b> <a href="qglbuffer.html#create" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#create">create</a>（ ）<a href="qglbuffer.html#read" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#read">read</a>（）和<a href="qglbuffer.html#write" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#write">write</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="allocate-2"></a>QGLBuffer.allocate (<i>self</i>, int <i>count</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>中分配<i>count</i>的空间字节的缓冲区。任何以前的内容将被删除。</p>
+<p>假定<a href="qglbuffer.html#create" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#create">create</a>（ ）被调用这个缓冲区，它已经绑定到当前的上下文。</p>
+<p><b>See also</b> <a href="qglbuffer.html#create" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#create">create</a>（）和<a href="qglbuffer.html#write" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#write">write</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="bind"></a>bool QGLBuffer.bind (<i>self</i>)</h3>
+<p>结合与此对象到当前的GL上下文相关联的缓冲区。如果结合是不可能的，通常是因为返回False<a href="qglbuffer.html#type" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#type">type</a>（ ）不支持此GL实现。</p>
+<p>该缓冲区必须被绑定到同一个<a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a>当电流<a href="qglbuffer.html#create" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#create">create</a>（ ）被调用，或到另一个<a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a>这是分享它。否则为False将被从这个函数返回。</p>
+<p><b>See also</b> <a href="qglbuffer.html#release" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#release">release</a>（）和<a href="qglbuffer.html#create" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#create">create</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="bufferId"></a>int QGLBuffer.bufferId (<i>self</i>)</h3>
+<p>返回与该缓冲区关联的GL标识符;如果缓冲区尚未创建为零。</p>
+<p><b>See also</b> <a href="qglbuffer.html#isCreated" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#isCreated">isCreated</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="create"></a>bool QGLBuffer.create (<i>self</i>)</h3>
+<p>在创建GL服务器的缓冲区对象。如果在创建对象，则返回True ，否则返回False 。</p>
+<p>此函数必须调用当前<a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a>。该缓冲区将被绑定到，可以在这方面（或与它共享的任何其他情况下）才能使用。</p>
+<p>这个函数将返回False ，如果GL实现不支持的缓冲区，或者是没有电流<a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a>。</p>
+<p><b>See also</b> <a href="qglbuffer.html#isCreated" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#isCreated">isCreated</a>（ ）<a href="qglbuffer.html#allocate" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#allocate">allocate</a>（ ）<a href="qglbuffer.html#write" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#write">write</a>（）和<a href="qglbuffer.html#destroy" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#destroy">destroy</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="destroy"></a>QGLBuffer.destroy (<i>self</i>)</h3>
+<p>摧毁这个缓冲区对象，包括GL服务器所使用的存储。到缓冲区中的所有引用都将变成无效。</p>
+
+
+<h3 class="fn">
+<a name="isCreated"></a>bool QGLBuffer.isCreated (<i>self</i>)</h3>
+<p>如果这个缓冲区已经建立，则返回True ，否则返回False 。</p>
+<p><b>See also</b> <a href="qglbuffer.html#create" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#create">create</a>（）和<a href="qglbuffer.html#destroy" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#destroy">destroy</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="map"></a>sip.voidptr QGLBuffer.map (<i>self</i>, <a href="qglbuffer.html#Access-enum" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#Access-enum">Access</a> <i>access</i>)</h3>
+<p>这个映射缓冲区的内容到应用程序的内存空间，并返回一个指向它的指针。返回null ，如果内存映射是不可能的。该<i>access</i>参数表示将要执行的访问类型。</p>
+<p>假定<a href="qglbuffer.html#create" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#create">create</a>（ ）被调用这个缓冲区，它已经绑定到当前的上下文。</p>
+<p>此功能仅是下的OpenGL / ES的支持，如果<tt>GL_OES_mapbuffer</tt>扩展出现。</p>
+<p><b>See also</b> <a href="qglbuffer.html#unmap" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#unmap">unmap</a>（ ）<a href="qglbuffer.html#create" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#create">create</a>（）和<a href="qglbuffer.html#bind" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#bind">bind</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="read"></a>bool QGLBuffer.read (<i>self</i>, int <i>offset</i>, sip.voidptr <i>data</i>, int <i>count</i>)</h3>
+<p>读取<i>count</i>在这个缓冲区起始字节<i>offset</i>成<i>data</i>。如果不支持从缓冲区读取错误;在成功时返回真。下的OpenGL / ES不支持的缓冲区读取。</p>
+<p>据推测，此缓冲区已被绑定到当前上下文。</p>
+<p><b>See also</b> <a href="qglbuffer.html#write" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#write">write</a>（）和<a href="qglbuffer.html#bind" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#bind">bind</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="release"></a>QGLBuffer.release (<i>self</i>)</h3>
+<p>释放与从目前的GL上下文此对象关联的缓冲区。</p>
+<p>这个函数必须被调用，使用相同的<a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a>电流时<a href="qglbuffer.html#bind" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#bind">bind</a>（ ）被调用的缓冲区。</p>
+<p><b>See also</b> <a href="qglbuffer.html#bind" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#bind">bind</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="release-2"></a>QGLBuffer.release (<a href="qglbuffer.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#Type-enum">Type</a> <i>type</i>)</h3>
+<p>释放与相关联的缓冲<i>type</i>在当前的<a href="qglcontext.html" tppabs="http://pyqt4doc.appspot.com/qglcontext.html">QGLContext</a>。</p>
+<p>此功能是直接调用<tt>glBindBuffer(type, 0)</tt>使用时，调用者不知道哪些<a href="qglbuffer.html" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html">QGLBuffer</a>已经被绑定到上下文，但要确保它被释放。</p>
+<pre class="cpp">
+ <span class="type"><a href="qglbuffer.html" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html">QGLBuffer</a></span><span class="operator">.</span><a href="qglbuffer.html#release" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#release">release</a>(<span class="type"><a href="qglbuffer.html" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html">QGLBuffer</a></span><span class="operator">.</span>VertexBuffer);
+</pre>
+
+
+<h3 class="fn">
+<a name="setUsagePattern"></a>QGLBuffer.setUsagePattern (<i>self</i>, <a href="qglbuffer.html#UsagePattern-enum" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#UsagePattern-enum">UsagePattern</a> <i>value</i>)</h3>
+<p>设置此缓冲区对象的使用模式<i>value</i>。这个函数必须在被调用<a href="qglbuffer.html#allocate" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#allocate">allocate</a>（）或<a href="qglbuffer.html#write" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#write">write</a>（ ） 。</p>
+<p><b>See also</b> <a href="qglbuffer.html#usagePattern" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#usagePattern">usagePattern</a>（ ）<a href="qglbuffer.html#allocate" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#allocate">allocate</a>（）和<a href="qglbuffer.html#write" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#write">write</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="size"></a>int QGLBuffer.size (<i>self</i>)</h3>
+<p>返回数据的大小在此缓冲液中，用于读取操作。返回-1，如果读取缓冲区的大小是不支持，或者缓冲尚未建立。</p>
+<p>据推测，此缓冲区已被绑定到当前上下文。</p>
+<p><b>See also</b> <a href="qglbuffer.html#isCreated" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#isCreated">isCreated</a>（）和<a href="qglbuffer.html#bind" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#bind">bind</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="type"></a><a href="qglbuffer.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#Type-enum">Type</a> QGLBuffer.type (<i>self</i>)</h3>
+<p>返回缓冲区的当前对象表示的类型。</p>
+
+
+<h3 class="fn">
+<a name="unmap"></a>bool QGLBuffer.unmap (<i>self</i>)</h3>
+<p>取消映射缓冲区它被映射到应用程序的内存空间与以前调用后<a href="qglbuffer.html#map" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#map">map</a>（ ） 。返回True如果取消映射成功，否则返回False 。</p>
+<p>据推测，此缓冲区已被绑定到当前上下文，它先前被映射到<a href="qglbuffer.html#map" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#map">map</a>（ ） 。</p>
+<p>此功能仅是下的OpenGL / ES的支持，如果<tt>GL_OES_mapbuffer</tt>扩展出现。</p>
+<p><b>See also</b> <a href="qglbuffer.html#map" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#map">map</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="usagePattern"></a><a href="qglbuffer.html#UsagePattern-enum" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#UsagePattern-enum">UsagePattern</a> QGLBuffer.usagePattern (<i>self</i>)</h3>
+<p>返回此缓冲区对象的使用模式。缺省值是<a href="qglbuffer.html#UsagePattern-enum" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#UsagePattern-enum">StaticDraw</a>。</p>
+<p><b>See also</b> <a href="qglbuffer.html#setUsagePattern" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#setUsagePattern">setUsagePattern</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="write"></a>QGLBuffer.write (<i>self</i>, int <i>offset</i>, sip.voidptr <i>data</i>, int <i>count</i>)</h3>
+<p>替换<i>count</i>这个缓冲区的字节开始<i>offset</i>同的内容<i>data</i>。在缓冲区内的任何其他字节将保持不变。</p>
+<p>假定<a href="qglbuffer.html#create" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#create">create</a>（ ）被调用这个缓冲区，它已经绑定到当前的上下文。</p>
+<p><b>See also</b> <a href="qglbuffer.html#create" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#create">create</a>（ ）<a href="qglbuffer.html#read" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#read">read</a>（）和<a href="qglbuffer.html#allocate" tppabs="http://pyqt4doc.appspot.com/qglbuffer.html#allocate">allocate</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

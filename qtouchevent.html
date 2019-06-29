@@ -1,0 +1,175 @@
+﻿<html>
+<head>
+<title>QTouchEvent Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QTouchEvent Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QTouchEvent类包含描述一个触摸事件的参数。<a href="#details">More...</a></p>
+
+<p>继承<a href="qinputevent.html" tppabs="http://pyqt4doc.appspot.com/qinputevent.html">QInputEvent</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qtouchevent.html#DeviceType-enum" tppabs="http://pyqt4doc.appspot.com/qtouchevent.html#DeviceType-enum">DeviceType</a></b> { TouchScreen, TouchPad }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtouchevent-touchpoint.html">TouchPoint</a></b>
+</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qtouchevent.html#QTouchEvent" tppabs="http://pyqt4doc.appspot.com/qtouchevent.html#QTouchEvent">__init__</a></b> (<i>self</i>, QEvent.Type <i>eventType</i>, DeviceType <i>deviceType</i> = QTouchEvent.TouchScreen, Qt.KeyboardModifiers <i>modifiers</i> = Qt.NoModifier, Qt.TouchPointStates <i>touchPointStates</i> = 0, list-of-QTouchEvent.TouchPoint <i>touchPoints</i> = QList&lt;QTouchEvent.TouchPoint&gt;())</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtouchevent.html#QTouchEvent-2" tppabs="http://pyqt4doc.appspot.com/qtouchevent.html#QTouchEvent-2">__init__</a></b> (<i>self</i>, QTouchEvent)</li>
+<li>
+<div class="fn"></div>DeviceType <b><a href="qtouchevent.html#deviceType" tppabs="http://pyqt4doc.appspot.com/qtouchevent.html#deviceType">deviceType</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QTouchEvent.TouchPoint <b><a href="qtouchevent.html#touchPoints" tppabs="http://pyqt4doc.appspot.com/qtouchevent.html#touchPoints">touchPoints</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Qt.TouchPointStates <b><a href="qtouchevent.html#touchPointStates" tppabs="http://pyqt4doc.appspot.com/qtouchevent.html#touchPointStates">touchPointStates</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qtouchevent.html#widget" tppabs="http://pyqt4doc.appspot.com/qtouchevent.html#widget">widget</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QTouchEvent类包含描述一个触摸事件的参数。</p>
+<a id="enabling-touch-events" name="enabling-touch-events"></a>
+<h3>Enabling Touch Events</h3>
+<p>触压时，释放，或移动触摸设备上的一个或多个触摸点（如触摸屏或轨道垫）事件发生。要接收触摸事件，小部件必须有<a href="qt.html#WidgetAttribute-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#WidgetAttribute-enum">Qt.WA_AcceptTouchEvents</a>属性设置和图形项目需要有<a href="qgraphicsitem.html#setAcceptTouchEvents" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#setAcceptTouchEvents">acceptTouchEvents</a>属性设置为True。</p>
+<p>当使用<a href="qabstractscrollarea.html" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html">QAbstractScrollArea</a>基于小部件，您应该启用<a href="qt.html#WidgetAttribute-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#WidgetAttribute-enum">Qt.WA_AcceptTouchEvents</a>属性上的滚动区域的<a href="qabstractscrollarea.html#viewport" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html#viewport">viewport</a>。</p>
+<p>同样以<a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a>， Qt的自动抓取上的小工具里面的第一次记者每个接触点，以及部件将接收所有的更新为触摸点，直到它被释放。需要注意的是它有可能为一个部件来接收事件为众多的接触点，并且多个部件可以在同一时间接收到触摸事件。</p>
+<a id="event-handling" name="event-handling"></a>
+<h3>Event Handling</h3>
+<p>所有的触摸事件的类型为<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.TouchBegin</a>，<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.TouchUpdate</a>或<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.TouchEnd</a>。重新实现<a href="qwidget.html#event" tppabs="http://pyqt4doc.appspot.com/qwidget.html#event">QWidget.event</a>（）或<a href="qabstractscrollarea.html#viewportEvent" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html#viewportEvent">QAbstractScrollArea.viewportEvent</a>（ ）的部件和<a href="qgraphicsitem.html#sceneEvent" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#sceneEvent">QGraphicsItem.sceneEvent</a>（）在图形视图中的项目，以接收触摸事件。</p>
+<p>该<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.TouchUpdate</a>和<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.TouchEnd</a>事件发送给窗口小部件或产品所接受的<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.TouchBegin</a>事件。如果<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.TouchBegin</a>事件是不能接受的，而不是由一个事件过滤器过滤，再没有进一步的触摸事件被发送，直到下一个<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.TouchBegin</a>。</p>
+<p>该<a href="qtouchevent.html#touchPoints" tppabs="http://pyqt4doc.appspot.com/qtouchevent.html#touchPoints">touchPoints</a>（ ）函数返回包含在该事件的所有接触点的列表。关于每个触摸点信息可使用检索到的<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtouchevent-touchpoint.html">QTouchEvent.TouchPoint</a>类。该<a href="qt.html#TouchPointState-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#TouchPointState-enum">Qt.TouchPointState</a>枚举描述了不同的状态，一个触摸点可能有。</p>
+<a id="event-delivery-and-propagation" name="event-delivery-and-propagation"></a>
+<h3>Event Delivery and Propagation</h3>
+<p>默认情况下，<a href="qwidget.html#event" tppabs="http://pyqt4doc.appspot.com/qwidget.html#event">QWidget.event</a>（）平移所述第一非主触摸点在QTouchEvent成<a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a>。这使得它可以使在现有的小部件通常不处理QTouchEvent触摸事件。看看下面的这样做时需要一些特殊的注意事项的信息。</p>
+<p><a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.TouchBegin</a>是发送到插件的第一触摸事件。该<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.TouchBegin</a>事件包含一个特殊的接受标志，指示接收者是否愿意事件。默认情况下，事件被接受。你应该调用<a href="qevent.html#ignore" tppabs="http://pyqt4doc.appspot.com/qevent.html#ignore">ignore</a>（ ）如果触摸事件不是由您的Widget处理。该<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.TouchBegin</a>事件被传播到父控件链，直到一个小部件接受它<a href="qevent.html#accept" tppabs="http://pyqt4doc.appspot.com/qevent.html#accept">accept</a>（ ） ，或者一个事件过滤器会消耗它。对于QGraphicsItems的<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.TouchBegin</a>事件被传播到下鼠标（类似于用于QGraphicsItems鼠标事件传播）项目。</p>
+<a id="touch-point-grouping" name="touch-point-grouping"></a>
+<h3>Touch Point Grouping</h3>
+<p>如上面所提到的，有可能是几个部件可以接收QTouchEvents在同一时间。然而， Qt后，一定要永不重复发送<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.TouchBegin</a>事件以相同的部件，它可以在传播过程中理论上发生，如果，例如，在用户触摸的2个独立的小部件在一个<a href="qgroupbox.html" tppabs="http://pyqt4doc.appspot.com/qgroupbox.html">QGroupBox</a>和两个小部件忽略<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.TouchBegin</a>事件。</p>
+<p>为了避免这种情况， Qt会组新的接触点一起使用以下规则：</p>
+<ul>
+<li>When the first touch point is detected, the destination widget
+is determined firstly by the location on screen and secondly by the
+propagation rules.</li>
+<li>When additional touch points are detected, Qt first looks to
+see if there are any active touch points on any ancestor or
+descendent of the widget under the new touch point. If there are,
+the new touch point is grouped with the first, and the new touch
+point will be sent in a single QTouchEvent to the widget that
+handled the first touch point. (The widget under the new touch
+point will not receive an event).</li>
+</ul>
+<p>这使得它可以为同级部件独立处理触摸事件，同时确保QTouchEvents的顺序永远是正确的。</p>
+<a id="mouse-events-and-the-primary-touch-point" name="mouse-events-and-the-primary-touch-point"></a>
+<h3>Mouse Events and the Primary Touch Point</h3>
+<p>QTouchEvent交付是独立于中<a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a>。在一些窗口系统，鼠标事件也发送了<a href="index.htm#isPrimary" tppabs="http://pyqt4doc.appspot.com/qtouchevent-touchpoint.html#isPrimary">primary touch point</a>。这意味着它有可能为你的widget能够同时接收QTouchEvent和<a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a>对于相同的用户交互点。您可以使用<a href="index.htm#isPrimary" tppabs="http://pyqt4doc.appspot.com/qtouchevent-touchpoint.html#isPrimary">QTouchEvent.TouchPoint.isPrimary</a>（ ）函数来确定的主要接触点。</p>
+<p>请注意，在某些系统上，它可以接收触摸事件没有主触摸点。这一切都意味着，将有在QTouchEvent触摸点不产生鼠标事件。</p>
+<a id="caveats" name="caveats"></a>
+<h3>Caveats</h3>
+<ul>
+<li>As mentioned above, enabling touch events means multiple
+widgets can be receiving touch events simultaneously. Combined with
+the default <a href="qwidget.html#event" tppabs="http://pyqt4doc.appspot.com/qwidget.html#event">QWidget.event</a>()
+handling for QTouchEvents, this gives you great flexibility in
+designing touch user interfaces. Be aware of the implications. For
+example, it is possible that the user is moving a <a href="qslider.html" tppabs="http://pyqt4doc.appspot.com/qslider.html">QSlider</a> with one finger and pressing a <a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a> with another. The signals
+emitted by these widgets will be interleaved.</li>
+<li>Recursion into the event loop using one of the exec() methods
+(e.g., <a href="qdialog.html#exec" tppabs="http://pyqt4doc.appspot.com/qdialog.html#exec">QDialog.exec</a>() or <a href="qmenu.html#exec" tppabs="http://pyqt4doc.appspot.com/qmenu.html#exec">QMenu.exec</a>()) in a QTouchEvent event handler
+is not supported. Since there are multiple event recipients,
+recursion may cause problems, including but not limited to lost
+events and unexpected infinite recursion.</li>
+<li>QTouchEvents are not affected by a <a href="qwidget.html#grabMouse" tppabs="http://pyqt4doc.appspot.com/qwidget.html#grabMouse">mouse grab</a> or an <a href="qapplication.html#activePopupWidget" tppabs="http://pyqt4doc.appspot.com/qapplication.html#activePopupWidget">active pop-up widget</a>. The
+behavior of QTouchEvents is undefined when opening a pop-up or
+grabbing the mouse while there are more than one active touch
+points.</li>
+</ul>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="DeviceType-enum"></a>QTouchEvent.DeviceType</h3>
+<p>该枚举表示所产生的一装置的类型<a href="qtouchevent.html" tppabs="http://pyqt4doc.appspot.com/qtouchevent.html">QTouchEvent</a>。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTouchEvent.TouchScreen</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">在这种类型的设备中，触摸表面和显示器被集成。这意味着在表面和显示器通常具有相同的尺寸，使得在所述触摸点“物理位置和坐标报告之间的直接关系<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtouchevent-touchpoint.html">QTouchEvent.TouchPoint</a>。其结果是， Qt的允许用户直接与多个QWidgets和QGraphicsItems在同一时间进行交互。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTouchEvent.TouchPad</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">在这种类型的设备，所述触摸表面是分开的显示。没有物理接触位置和屏幕上的坐标之间的直接关系。相反，它们被计算相对于当前鼠标位置，而用户必须使用触摸板移动至该参考点。不像触摸屏， Qt的允许用户只与一个单一的交互<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> or
+<a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a>在一个时间。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QTouchEvent"></a>QTouchEvent.__init__ (<i>self</i>, <a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.Type</a> <i>eventType</i>, <a href="qtouchevent.html#DeviceType-enum" tppabs="http://pyqt4doc.appspot.com/qtouchevent.html#DeviceType-enum">DeviceType</a> <i>deviceType</i> = QTouchEvent.TouchScreen, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-keyboardmodifiers.html">Qt.KeyboardModifiers</a> <i>modifiers</i> = Qt.NoModifier, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-touchpointstates.html">Qt.TouchPointStates</a> <i>touchPointStates</i> = 0, list-of-QTouchEvent.TouchPoint <i>touchPoints</i> = QList&lt;QTouchEvent.TouchPoint&gt;())</h3>
+<p>构造一个<a href="qtouchevent.html" tppabs="http://pyqt4doc.appspot.com/qtouchevent.html">QTouchEvent</a>用给定的<i>eventType</i>，<i>deviceType</i>和<i>touchPoints</i>。该<i>touchPointStates</i>和<i>modifiers</i>是当前触摸点的状态和键盘功能键在事件发生的时间。</p>
+
+
+<h3 class="fn">
+<a name="QTouchEvent-2"></a>QTouchEvent.__init__ (<i>self</i>, <a href="qtouchevent.html" tppabs="http://pyqt4doc.appspot.com/qtouchevent.html">QTouchEvent</a>)</h3>
+<h3 class="fn">
+<a name="deviceType"></a><a href="qtouchevent.html#DeviceType-enum" tppabs="http://pyqt4doc.appspot.com/qtouchevent.html#DeviceType-enum">DeviceType</a> QTouchEvent.deviceType (<i>self</i>)</h3>
+<p>返回触摸设备类型，它的类型是<a href="qtouchevent.html#DeviceType-enum" tppabs="http://pyqt4doc.appspot.com/qtouchevent.html#DeviceType-enum">DeviceType</a>。</p>
+
+
+<h3 class="fn">
+<a name="touchPoints"></a>list-of-QTouchEvent.TouchPoint QTouchEvent.touchPoints (<i>self</i>)</h3>
+<p>返回包含在该触摸事件的触摸点的列表。</p>
+
+
+<h3 class="fn">
+<a name="touchPointStates"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-touchpointstates.html">Qt.TouchPointStates</a> QTouchEvent.touchPointStates (<i>self</i>)</h3>
+<p>返回此事件的一个位的所有接触点或国家。</p>
+
+
+<h3 class="fn">
+<a name="widget"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QTouchEvent.widget (<i>self</i>)</h3>
+<p>返回上发生事件的小部件。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

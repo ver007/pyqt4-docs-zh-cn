@@ -1,0 +1,95 @@
+﻿<html>
+<head>
+<title>QTextBlockGroup Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QTextBlockGroup Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QTextBlockGroup类提供一个容器内的文本块<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>。<a href="#details">More...</a></p>
+
+<p>继承<a href="qtextobject.html" tppabs="http://pyqt4doc.appspot.com/qtextobject.html">QTextObject</a>。</p>
+<p>通过继承<a href="qtextlist.html" tppabs="http://pyqt4doc.appspot.com/qtextlist.html">QTextList</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qtextblockgroup.html#QTextBlockGroup" tppabs="http://pyqt4doc.appspot.com/qtextblockgroup.html#QTextBlockGroup">__init__</a></b> (<i>self</i>, QTextDocument <i>doc</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextblockgroup.html#blockFormatChanged" tppabs="http://pyqt4doc.appspot.com/qtextblockgroup.html#blockFormatChanged">blockFormatChanged</a></b> (<i>self</i>, QTextBlock <i>block</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextblockgroup.html#blockInserted" tppabs="http://pyqt4doc.appspot.com/qtextblockgroup.html#blockInserted">blockInserted</a></b> (<i>self</i>, QTextBlock <i>block</i>)</li>
+<li>
+<div class="fn"></div>list-of-QTextBlock <b><a href="qtextblockgroup.html#blockList" tppabs="http://pyqt4doc.appspot.com/qtextblockgroup.html#blockList">blockList</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextblockgroup.html#blockRemoved" tppabs="http://pyqt4doc.appspot.com/qtextblockgroup.html#blockRemoved">blockRemoved</a></b> (<i>self</i>, QTextBlock <i>block</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QTextBlockGroup类提供一个容器内的文本块<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>。</p>
+<p>块组可以被用来在文档内组织的文本块。他们认为属于他们的文本块的一个最新的最新列表，甚至当文本块被编辑。</p>
+<p>每个组都有其当组构造指定的父文档。</p>
+<p>文本块可以被插入到一组具有<a href="qtextblockgroup.html#blockInserted" tppabs="http://pyqt4doc.appspot.com/qtextblockgroup.html#blockInserted">blockInserted</a>（ ）中，用去除<a href="qtextblockgroup.html#blockRemoved" tppabs="http://pyqt4doc.appspot.com/qtextblockgroup.html#blockRemoved">blockRemoved</a>（ ） 。如果一个块的格式改变，<a href="qtextblockgroup.html#blockFormatChanged" tppabs="http://pyqt4doc.appspot.com/qtextblockgroup.html#blockFormatChanged">blockFormatChanged</a>（）被调用。</p>
+<p>该组中的块列表是由返回<a href="qtextblockgroup.html#blockList" tppabs="http://pyqt4doc.appspot.com/qtextblockgroup.html#blockList">blockList</a>（ ） 。请注意，列表中的块不一定在文件中相邻元素，例如，在一个多级列表中的顶级项目将由项目列表中较低水平的分离。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QTextBlockGroup"></a>QTextBlockGroup.__init__ (<i>self</i>, <a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a> <i>doc</i>)</h3>
+<p>创建一个新的新的块组给定的<i>document</i>。</p>
+<p><b>Warning:</b>此功能只能由被称为<a href="qtextdocument.html#createObject" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#createObject">QTextDocument.createObject</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="blockFormatChanged"></a>QTextBlockGroup.blockFormatChanged (<i>self</i>, <a href="qtextblock.html" tppabs="http://pyqt4doc.appspot.com/qtextblock.html">QTextBlock</a> <i>block</i>)</h3>
+<p>这个函数被调用时指定的<i>block</i>的文本被改变。文本块是该组的成员。</p>
+<p>基类的实现不执行任何操作。</p>
+
+
+<h3 class="fn">
+<a name="blockInserted"></a>QTextBlockGroup.blockInserted (<i>self</i>, <a href="qtextblock.html" tppabs="http://pyqt4doc.appspot.com/qtextblock.html">QTextBlock</a> <i>block</i>)</h3>
+<p>添加给定的<i>block</i>该组的结尾。</p>
+<p><b>Warning:</b>如果你重新实现这个函数必须调用基类的实现。</p>
+
+
+<h3 class="fn">
+<a name="blockList"></a>list-of-QTextBlock QTextBlockGroup.blockList (<i>self</i>)</h3>
+<p>返回所有的块组的一部分的块（可能为空）列表。</p>
+
+
+<h3 class="fn">
+<a name="blockRemoved"></a>QTextBlockGroup.blockRemoved (<i>self</i>, <a href="qtextblock.html" tppabs="http://pyqt4doc.appspot.com/qtextblock.html">QTextBlock</a> <i>block</i>)</h3>
+<p>删除给定的<i>block</i>从组;块本身并没有被删除，那根本不是这个组的成员了。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

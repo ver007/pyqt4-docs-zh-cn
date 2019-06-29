@@ -1,0 +1,307 @@
+﻿<html>
+<head>
+<title>QSslCertificate Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QSslCertificate Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtnetwork.html">QtNetwork</a> module]</sup></sup>
+</h1>
+<p>该QSslCertificate类提供了一个X509证书了方便的API 。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qsslcertificate.html#SubjectInfo-enum" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#SubjectInfo-enum">SubjectInfo</a></b> { Organization, CommonName, LocalityName, OrganizationalUnitName, CountryName, StateOrProvinceName }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qsslcertificate.html#QSslCertificate" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#QSslCertificate">__init__</a></b> (<i>self</i>, QIODevice <i>device</i>, QSsl.EncodingFormat <i>format</i> = QSsl.Pem)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslcertificate.html#QSslCertificate-2" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#QSslCertificate-2">__init__</a></b> (<i>self</i>, QByteArray <i>data</i> = QByteArray(), QSsl.EncodingFormat <i>format</i> = QSsl.Pem)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslcertificate.html#QSslCertificate-3" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#QSslCertificate-3">__init__</a></b> (<i>self</i>, QSslCertificate <i>other</i>)</li>
+<li>
+<div class="fn"></div>dict-of-QSsl.AlternateNameEntryType-list-of-QString <b><a href="qsslcertificate.html#alternateSubjectNames" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#alternateSubjectNames">alternateSubjectNames</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslcertificate.html#clear" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#clear">clear</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qsslcertificate.html#digest" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#digest">digest</a></b> (<i>self</i>, QCryptographicHash.Algorithm <i>algorithm</i> = QCryptographicHash.Md5)</li>
+<li>
+<div class="fn"></div>QDateTime <b><a href="qsslcertificate.html#effectiveDate" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#effectiveDate">effectiveDate</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDateTime <b><a href="qsslcertificate.html#expiryDate" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#expiryDate">expiryDate</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qsslcertificate.html#handle" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#handle">handle</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsslcertificate.html#isNull" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#isNull">isNull</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsslcertificate.html#issuerInfo" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#issuerInfo">issuerInfo</a></b> (<i>self</i>, SubjectInfo <i>info</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsslcertificate.html#issuerInfo-2" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#issuerInfo-2">issuerInfo</a></b> (<i>self</i>, QByteArray <i>tag</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsslcertificate.html#isValid" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#isValid">isValid</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSslKey <b><a href="qsslcertificate.html#publicKey" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#publicKey">publicKey</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qsslcertificate.html#serialNumber" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#serialNumber">serialNumber</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsslcertificate.html#subjectInfo" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#subjectInfo">subjectInfo</a></b> (<i>self</i>, SubjectInfo <i>info</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsslcertificate.html#subjectInfo-2" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#subjectInfo-2">subjectInfo</a></b> (<i>self</i>, QByteArray <i>tag</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qsslcertificate.html#toDer" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#toDer">toDer</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qsslcertificate.html#toPem" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#toPem">toPem</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qsslcertificate.html#version" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#version">version</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>list-of-QSslCertificate <b><a href="qsslcertificate.html#fromData" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#fromData">fromData</a></b> (QByteArray <i>data</i>, QSsl.EncodingFormat <i>format</i> = QSsl.Pem)</li>
+<li>
+<div class="fn"></div>list-of-QSslCertificate <b><a href="qsslcertificate.html#fromDevice" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#fromDevice">fromDevice</a></b> (QIODevice <i>device</i>, QSsl.EncodingFormat <i>format</i> = QSsl.Pem)</li>
+<li>
+<div class="fn"></div>list-of-QSslCertificate <b><a href="qsslcertificate.html#fromPath" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#fromPath">fromPath</a></b> (QString <i>path</i>, QSsl.EncodingFormat <i>format</i> = QSsl.Pem, QRegExp.PatternSyntax <i>syntax</i> = QRegExp.FixedString)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>bool <b><a href="qsslcertificate.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#__eq__">__eq__</a></b> (<i>self</i>, QSslCertificate <i>other</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsslcertificate.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#__ne__">__ne__</a></b> (<i>self</i>, QSslCertificate <i>other</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QSslCertificate类提供了一个X509证书了方便的API 。</p>
+<p>QSslCertificate存储X509证书，并且通常用于验证有关本地主机，远程连接等，或可信任的第三方认证机构的标识和存储信息。</p>
+<p>有许多方法来构造一个QSslCertificate 。最常见的方法是调用<a href="qsslsocket.html#peerCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#peerCertificate">QSslSocket.peerCertificate</a>（ ） ，它返回一个QSslCertificate对象，或<a href="qsslsocket.html#peerCertificateChain" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#peerCertificateChain">QSslSocket.peerCertificateChain</a>（ ） ，它返回它们的列表。您也可以加载一个DER证书（二进制）或PEM （ Base64编码）编码的捆绑，通常存储为一个或多个本地文件，或在Qt的资源。</p>
+<p>您可以致电<a href="qsslcertificate.html#isNull" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#isNull">isNull</a>（）来检查，如果你的证书为null 。默认情况下， QSslCertificate构造一个空证书。要检查证书是否有效，呼叫<a href="qsslcertificate.html#isValid" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#isValid">isValid</a>（ ） 。空证书是无效的，但一个无效的证书不一定空。如果你想重置所有内容的凭证，请致电<a href="qsslcertificate.html#clear" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#clear">clear</a>（ ） 。</p>
+<p>加载证书后，您可以找到有关证书，它的主题，它的发行者信息，通过调用许多存取功能之一，包括<a href="qsslcertificate.html#version" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#version">version</a>（ ）<a href="qsslcertificate.html#serialNumber" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#serialNumber">serialNumber</a>（ ）<a href="qsslcertificate.html#issuerInfo" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#issuerInfo">issuerInfo</a>（）和<a href="qsslcertificate.html#subjectInfo" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#subjectInfo">subjectInfo</a>（ ） 。您可以致电<a href="qsslcertificate.html#effectiveDate" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#effectiveDate">effectiveDate</a>（）和<a href="qsslcertificate.html#expiryDate" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#expiryDate">expiryDate</a>（）来检查时，启动证书是有效，当它过期。该<a href="qsslcertificate.html#publicKey" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#publicKey">publicKey</a>（ ）函数返回证书主题的公钥作为<a href="qsslkey.html" tppabs="http://pyqt4doc.appspot.com/qsslkey.html">QSslKey</a>。您可以致电<a href="qsslcertificate.html#issuerInfo" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#issuerInfo">issuerInfo</a>（）或<a href="qsslcertificate.html#subjectInfo" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#subjectInfo">subjectInfo</a>（）来获取有关证书颁发者和它的主题的详细信息。</p>
+<p>在内部， QSslCertificate被存储为一个X509结构。您可以通过调用访问此手柄<a href="qsslcertificate.html#handle" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#handle">handle</a>（） ，但结果可能不是可移植的。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="SubjectInfo-enum"></a>QSslCertificate.SubjectInfo</h3>
+<p>介绍了可以传递给钥匙<a href="qsslcertificate.html#issuerInfo" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#issuerInfo">QSslCertificate.issuerInfo</a>（）或<a href="qsslcertificate.html#subjectInfo" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#subjectInfo">QSslCertificate.subjectInfo</a>（）来获取有关证书颁发者或主题的信息。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSslCertificate.Organization</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">“O”的组织的名称。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSslCertificate.CommonName</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">“CN”的通用名称;最常这是用来存储主机名。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSslCertificate.LocalityName</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">“L”的地方。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QSslCertificate.OrganizationalUnitName</tt>
+</td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">「其他指定用途“的组织单位名称。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSslCertificate.CountryName</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">“C”的国家。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QSslCertificate.StateOrProvinceName</tt>
+</td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">“ST”的州或省。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QSslCertificate"></a>QSslCertificate.__init__ (<i>self</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>device</i>, <a href="qssl.html#EncodingFormat-enum" tppabs="http://pyqt4doc.appspot.com/qssl.html#EncodingFormat-enum">QSsl.EncodingFormat</a> <i>format</i> = QSsl.Pem)</h3>
+<p>构造一个<a href="qsslcertificate.html" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html">QSslCertificate</a>阅读<i>format</i>从编码数据<i>device</i>并使用找到的第一个证书。您可以稍后致电<a href="qsslcertificate.html#isNull" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#isNull">isNull</a>（） ，以查看是否<i>device</i>包含一个证书，如果加载成功后，该证书。</p>
+
+
+<h3 class="fn">
+<a name="QSslCertificate-2"></a>QSslCertificate.__init__ (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>data</i> = QByteArray(), <a href="qssl.html#EncodingFormat-enum" tppabs="http://pyqt4doc.appspot.com/qssl.html#EncodingFormat-enum">QSsl.EncodingFormat</a> <i>format</i> = QSsl.Pem)</h3>
+<p>构造一个<a href="qsslcertificate.html" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html">QSslCertificate</a>通过解析<i>format</i>编码<i>data</i>并使用找到的第一个可用的证书。您可以稍后致电<a href="qsslcertificate.html#isNull" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#isNull">isNull</a>（） ，以查看是否<i>data</i>包含一个证书，如果加载成功后，该证书。</p>
+
+
+<h3 class="fn">
+<a name="QSslCertificate-3"></a>QSslCertificate.__init__ (<i>self</i>, <a href="qsslcertificate.html" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html">QSslCertificate</a> <i>other</i>)</h3>
+<p>构造完全相同的副本<i>other</i>。</p>
+
+
+<h3 class="fn">
+<a name="alternateSubjectNames"></a>dict-of-QSsl.AlternateNameEntryType-list-of-QString QSslCertificate.alternateSubjectNames (<i>self</i>)</h3>
+<p>返回此证书备用主题名的列表。备选主题名称通常包含主机名，可以使用通配符，即有效期为这个​​证书。</p>
+<p>这些名称对所连接的对端的主机名进行测试，如果任一标的信息<a href="qsslcertificate.html#SubjectInfo-enum" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#SubjectInfo-enum">CommonName</a>没有定义一个有效的主机名，或拍摄主体信息名称不匹配对端的主机名。</p>
+<p><b>See also</b> <a href="qsslcertificate.html#subjectInfo" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#subjectInfo">subjectInfo</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clear"></a>QSslCertificate.clear (<i>self</i>)</h3>
+<p>清除该证书的内容，使之成为一个空证书。</p>
+<p><b>See also</b> <a href="qsslcertificate.html#isNull" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#isNull">isNull</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="digest"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QSslCertificate.digest (<i>self</i>, <a href="qcryptographichash.html#Algorithm-enum" tppabs="http://pyqt4doc.appspot.com/qcryptographichash.html#Algorithm-enum">QCryptographicHash.Algorithm</a> <i>algorithm</i> = QCryptographicHash.Md5)</h3>
+<p>返回此证书的加密摘要。默认情况下，一个MD5摘要将会产生，但您也可以指定自定义<i>algorithm</i>。</p>
+
+
+<h3 class="fn">
+<a name="effectiveDate"></a><a href="qdatetime.html" tppabs="http://pyqt4doc.appspot.com/qdatetime.html">QDateTime</a> QSslCertificate.effectiveDate (<i>self</i>)</h3>
+<p>返回的日期，时间，该证书生效，或空<a href="qdatetime.html" tppabs="http://pyqt4doc.appspot.com/qdatetime.html">QDateTime</a>如果这是一个无效的证书。</p>
+<p><b>See also</b> <a href="qsslcertificate.html#expiryDate" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#expiryDate">expiryDate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="expiryDate"></a><a href="qdatetime.html" tppabs="http://pyqt4doc.appspot.com/qdatetime.html">QDateTime</a> QSslCertificate.expiryDate (<i>self</i>)</h3>
+<p>返回日期时间的证书过期，或空<a href="qdatetime.html" tppabs="http://pyqt4doc.appspot.com/qdatetime.html">QDateTime</a>如果这是一个无效的证书。</p>
+<p><b>See also</b> <a href="qsslcertificate.html#effectiveDate" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#effectiveDate">effectiveDate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fromData"></a>list-of-QSslCertificate QSslCertificate.fromData (<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>data</i>, <a href="qssl.html#EncodingFormat-enum" tppabs="http://pyqt4doc.appspot.com/qssl.html#EncodingFormat-enum">QSsl.EncodingFormat</a> <i>format</i> = QSsl.Pem)</h3>
+<p>搜索和分析所有证书<i>data</i>被编码在指定<i>format</i>并返回他们的证书的列表。</p>
+<p><b>See also</b> <a href="qsslcertificate.html#fromDevice" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#fromDevice">fromDevice</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fromDevice"></a>list-of-QSslCertificate QSslCertificate.fromDevice (<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>device</i>, <a href="qssl.html#EncodingFormat-enum" tppabs="http://pyqt4doc.appspot.com/qssl.html#EncodingFormat-enum">QSsl.EncodingFormat</a> <i>format</i> = QSsl.Pem)</h3>
+<p>搜索和分析所有证书<i>device</i>被编码在指定<i>format</i>并返回他们的证书的列表。</p>
+<p><b>See also</b> <a href="qsslcertificate.html#fromData" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#fromData">fromData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fromPath"></a>list-of-QSslCertificate QSslCertificate.fromPath (QString <i>path</i>, <a href="qssl.html#EncodingFormat-enum" tppabs="http://pyqt4doc.appspot.com/qssl.html#EncodingFormat-enum">QSsl.EncodingFormat</a> <i>format</i> = QSsl.Pem, <a href="qregexp.html#PatternSyntax-enum" tppabs="http://pyqt4doc.appspot.com/qregexp.html#PatternSyntax-enum">QRegExp.PatternSyntax</a> <i>syntax</i> = QRegExp.FixedString)</h3>
+<p>搜索中的所有文件<i>path</i>对于证书编码指定<i>format</i>并返回它们在列表中。<i>must</i>是一个文件或一个图案匹配一个或多个文件，所指定的<i>syntax</i>。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <a href="index.htm#foreach" tppabs="http://pyqt4doc.appspot.com/qtcore.html#foreach">foreach</a> (<span class="keyword">const</span> <span class="type"><a href="qsslcertificate.html" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html">QSslCertificate</a></span> <span class="operator">&amp;</span>cert<span class="operator">,</span> <span class="type"><a href="qsslcertificate.html" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html">QSslCertificate</a></span><span class="operator">.</span>fromPath(<span class="string">"C:/ssl/certificate.*.pem"</span><span class="operator">,</span> <span class="type"><a href="qssl.html" tppabs="http://pyqt4doc.appspot.com/qssl.html">QSsl</a></span><span class="operator">.</span>Pem<span class="operator">,</span>
+                                                          <span class="type"><a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a></span><span class="operator">.</span>Wildcard)) {
+     <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> cert<span class="operator">.</span>issuerInfo(<span class="type"><a href="qsslcertificate.html" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html">QSslCertificate</a></span><span class="operator">.</span>Organization);
+ }
+</pre>
+<p><b>See also</b> <a href="qsslcertificate.html#fromData" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#fromData">fromData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="handle"></a>int QSslCertificate.handle (<i>self</i>)</h3>
+<p>返回一个指向本地证书手柄，如果有一个或一个空指针，否则。</p>
+<p>你可以使用这个句柄，与原生API一起，访问有关证书的扩展信息。</p>
+<p><b>Warning:</b>使用此功能有被非便携式的概率很高，它的返回值可能会有所不同从平台到平台或次要版本变更次要版本。</p>
+
+
+<h3 class="fn">
+<a name="isNull"></a>bool QSslCertificate.isNull (<i>self</i>)</h3>
+<p>返回True如果这是一个空证书（即一个没有内容的证书），否则返回False 。</p>
+<p>默认情况下，<a href="qsslcertificate.html" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html">QSslCertificate</a>构造一个空证书。</p>
+<p><b>See also</b> <a href="qsslcertificate.html#isValid" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#isValid">isValid</a>（）和<a href="qsslcertificate.html#clear" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#clear">clear</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="issuerInfo"></a>QString QSslCertificate.issuerInfo (<i>self</i>, <a href="qsslcertificate.html#SubjectInfo-enum" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#SubjectInfo-enum">SubjectInfo</a> <i>info</i>)</h3>
+<p>返回发行人信息的<i>subject</i>从证书，或空字符串，如果没有信息<i>subject</i>在证书中。</p>
+<p><b>See also</b> <a href="qsslcertificate.html#subjectInfo" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#subjectInfo">subjectInfo</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="issuerInfo-2"></a>QString QSslCertificate.issuerInfo (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>tag</i>)</h3>
+<p>返回发行人信息<i>tag</i>从证书，或空字符串，如果没有信息<i>tag</i>在证书中。</p>
+<p><b>See also</b> <a href="qsslcertificate.html#subjectInfo" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#subjectInfo">subjectInfo</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isValid"></a>bool QSslCertificate.isValid (<i>self</i>)</h3>
+<p>返回True如果该证书是有效的，否则返回False 。</p>
+<p>注：目前，该功能会检查当前的数据时间是在此期间，该证书被认为有效的日期时间范围内，并检查该证书是不是在欺诈证书的黑名单。</p>
+<p><b>See also</b> <a href="qsslcertificate.html#isNull" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#isNull">isNull</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="publicKey"></a><a href="qsslkey.html" tppabs="http://pyqt4doc.appspot.com/qsslkey.html">QSslKey</a> QSslCertificate.publicKey (<i>self</i>)</h3>
+<p>返回证书主题的公钥。</p>
+
+
+<h3 class="fn">
+<a name="serialNumber"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QSslCertificate.serialNumber (<i>self</i>)</h3>
+<p>以十进制格式返回该证书的序列号字符串。若序列号不能转换为十进制格式（例如，如果它大于4294967295 ，这意味着它不适合4个字节） ，则返回其十六进制的版本。</p>
+
+
+<h3 class="fn">
+<a name="subjectInfo"></a>QString QSslCertificate.subjectInfo (<i>self</i>, <a href="qsslcertificate.html#SubjectInfo-enum" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#SubjectInfo-enum">SubjectInfo</a> <i>info</i>)</h3>
+<p>返回的信息为<i>subject</i>，或空字符串，如果没有信息<i>subject</i>在证书中。</p>
+<p><b>See also</b> <a href="qsslcertificate.html#issuerInfo" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#issuerInfo">issuerInfo</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="subjectInfo-2"></a>QString QSslCertificate.subjectInfo (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>tag</i>)</h3>
+<p>返回主题信息<i>tag</i>，或空字符串，如果没有信息<i>tag</i>在证书中。</p>
+<p><b>See also</b> <a href="qsslcertificate.html#issuerInfo" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#issuerInfo">issuerInfo</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toDer"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QSslCertificate.toDer (<i>self</i>)</h3>
+<p>返回此证书转换为DER （二进制）编码表示。</p>
+
+
+<h3 class="fn">
+<a name="toPem"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QSslCertificate.toPem (<i>self</i>)</h3>
+<p>返回此证书转换为PEM （ Base64编码）编码表示。</p>
+
+
+<h3 class="fn">
+<a name="version"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QSslCertificate.version (<i>self</i>)</h3>
+<p>返回证书的版本字符串。</p>
+
+
+<h3 class="fn">
+<a name="__eq__"></a>bool QSslCertificate.__eq__ (<i>self</i>, <a href="qsslcertificate.html" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html">QSslCertificate</a> <i>other</i>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QSslCertificate.__ne__ (<i>self</i>, <a href="qsslcertificate.html" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html">QSslCertificate</a> <i>other</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

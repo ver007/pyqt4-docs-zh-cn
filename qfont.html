@@ -1,0 +1,1205 @@
+﻿<html>
+<head>
+<title>QFont Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QFont Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QFont类指定用于绘制文本的字体。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qfont.html#Capitalization-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#Capitalization-enum">Capitalization</a></b> { MixedCase, AllUppercase, AllLowercase, SmallCaps, Capitalize }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qfont.html#HintingPreference-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#HintingPreference-enum">HintingPreference</a></b> { PreferDefaultHinting, PreferNoHinting, PreferVerticalHinting, PreferFullHinting }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qfont.html#SpacingType-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#SpacingType-enum">SpacingType</a></b> { PercentageSpacing, AbsoluteSpacing }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qfont.html#Stretch-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#Stretch-enum">Stretch</a></b> { UltraCondensed, ExtraCondensed, Condensed, SemiCondensed, ..., UltraExpanded }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qfont.html#Style-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#Style-enum">Style</a></b> { StyleNormal, StyleItalic, StyleOblique }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qfont.html#StyleHint-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#StyleHint-enum">StyleHint</a></b> { Helvetica, SansSerif, Times, Serif, ..., Fantasy }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qfont.html#StyleStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#StyleStrategy-enum">StyleStrategy</a></b> { PreferDefault, PreferBitmap, PreferDevice, PreferOutline, ..., ForceIntegerMetrics }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qfont.html#Weight-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#Weight-enum">Weight</a></b> { Light, Normal, DemiBold, Bold, Black }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#QFont" tppabs="http://pyqt4doc.appspot.com/qfont.html#QFont">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#QFont-2" tppabs="http://pyqt4doc.appspot.com/qfont.html#QFont-2">__init__</a></b> (<i>self</i>, QString <i>family</i>, int <i>pointSize</i> = -1, int <i>weight</i> = -1, bool <i>italic</i> = False)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#QFont-3" tppabs="http://pyqt4doc.appspot.com/qfont.html#QFont-3">__init__</a></b> (<i>self</i>, QFont, QPaintDevice <i>pd</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#QFont-4" tppabs="http://pyqt4doc.appspot.com/qfont.html#QFont-4">__init__</a></b> (<i>self</i>, QFont)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#QFont-5" tppabs="http://pyqt4doc.appspot.com/qfont.html#QFont-5">__init__</a></b> (<i>self</i>, QVariant <i>variant</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qfont.html#bold" tppabs="http://pyqt4doc.appspot.com/qfont.html#bold">bold</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Capitalization <b><a href="qfont.html#capitalization" tppabs="http://pyqt4doc.appspot.com/qfont.html#capitalization">capitalization</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qfont.html#defaultFamily" tppabs="http://pyqt4doc.appspot.com/qfont.html#defaultFamily">defaultFamily</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qfont.html#exactMatch" tppabs="http://pyqt4doc.appspot.com/qfont.html#exactMatch">exactMatch</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qfont.html#family" tppabs="http://pyqt4doc.appspot.com/qfont.html#family">family</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qfont.html#fixedPitch" tppabs="http://pyqt4doc.appspot.com/qfont.html#fixedPitch">fixedPitch</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qfont.html#fromString" tppabs="http://pyqt4doc.appspot.com/qfont.html#fromString">fromString</a></b> (<i>self</i>, QString)</li>
+<li>
+<div class="fn"></div>int <b><a href="qfont.html#handle" tppabs="http://pyqt4doc.appspot.com/qfont.html#handle">handle</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>HintingPreference <b><a href="qfont.html#hintingPreference" tppabs="http://pyqt4doc.appspot.com/qfont.html#hintingPreference">hintingPreference</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qfont.html#isCopyOf" tppabs="http://pyqt4doc.appspot.com/qfont.html#isCopyOf">isCopyOf</a></b> (<i>self</i>, QFont)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qfont.html#italic" tppabs="http://pyqt4doc.appspot.com/qfont.html#italic">italic</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qfont.html#kerning" tppabs="http://pyqt4doc.appspot.com/qfont.html#kerning">kerning</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qfont.html#key" tppabs="http://pyqt4doc.appspot.com/qfont.html#key">key</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qfont.html#lastResortFamily" tppabs="http://pyqt4doc.appspot.com/qfont.html#lastResortFamily">lastResortFamily</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qfont.html#lastResortFont" tppabs="http://pyqt4doc.appspot.com/qfont.html#lastResortFont">lastResortFont</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qfont.html#letterSpacing" tppabs="http://pyqt4doc.appspot.com/qfont.html#letterSpacing">letterSpacing</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>SpacingType <b><a href="qfont.html#letterSpacingType" tppabs="http://pyqt4doc.appspot.com/qfont.html#letterSpacingType">letterSpacingType</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qfont.html#overline" tppabs="http://pyqt4doc.appspot.com/qfont.html#overline">overline</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qfont.html#pixelSize" tppabs="http://pyqt4doc.appspot.com/qfont.html#pixelSize">pixelSize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qfont.html#pointSize" tppabs="http://pyqt4doc.appspot.com/qfont.html#pointSize">pointSize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qfont.html#pointSizeF" tppabs="http://pyqt4doc.appspot.com/qfont.html#pointSizeF">pointSizeF</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qfont.html#rawMode" tppabs="http://pyqt4doc.appspot.com/qfont.html#rawMode">rawMode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qfont.html#rawName" tppabs="http://pyqt4doc.appspot.com/qfont.html#rawName">rawName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QFont <b><a href="qfont.html#resolve" tppabs="http://pyqt4doc.appspot.com/qfont.html#resolve">resolve</a></b> (<i>self</i>, QFont)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#setBold" tppabs="http://pyqt4doc.appspot.com/qfont.html#setBold">setBold</a></b> (<i>self</i>, bool <i>enable</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#setCapitalization" tppabs="http://pyqt4doc.appspot.com/qfont.html#setCapitalization">setCapitalization</a></b> (<i>self</i>, Capitalization)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#setFamily" tppabs="http://pyqt4doc.appspot.com/qfont.html#setFamily">setFamily</a></b> (<i>self</i>, QString)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#setFixedPitch" tppabs="http://pyqt4doc.appspot.com/qfont.html#setFixedPitch">setFixedPitch</a></b> (<i>self</i>, bool)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#setHintingPreference" tppabs="http://pyqt4doc.appspot.com/qfont.html#setHintingPreference">setHintingPreference</a></b> (<i>self</i>, HintingPreference <i>hintingPreference</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#setItalic" tppabs="http://pyqt4doc.appspot.com/qfont.html#setItalic">setItalic</a></b> (<i>self</i>, bool <i>b</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#setKerning" tppabs="http://pyqt4doc.appspot.com/qfont.html#setKerning">setKerning</a></b> (<i>self</i>, bool)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#setLetterSpacing" tppabs="http://pyqt4doc.appspot.com/qfont.html#setLetterSpacing">setLetterSpacing</a></b> (<i>self</i>, SpacingType <i>type</i>, float <i>spacing</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#setOverline" tppabs="http://pyqt4doc.appspot.com/qfont.html#setOverline">setOverline</a></b> (<i>self</i>, bool)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#setPixelSize" tppabs="http://pyqt4doc.appspot.com/qfont.html#setPixelSize">setPixelSize</a></b> (<i>self</i>, int)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#setPointSize" tppabs="http://pyqt4doc.appspot.com/qfont.html#setPointSize">setPointSize</a></b> (<i>self</i>, int)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#setPointSizeF" tppabs="http://pyqt4doc.appspot.com/qfont.html#setPointSizeF">setPointSizeF</a></b> (<i>self</i>, float)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#setRawMode" tppabs="http://pyqt4doc.appspot.com/qfont.html#setRawMode">setRawMode</a></b> (<i>self</i>, bool)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#setRawName" tppabs="http://pyqt4doc.appspot.com/qfont.html#setRawName">setRawName</a></b> (<i>self</i>, QString)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#setStretch" tppabs="http://pyqt4doc.appspot.com/qfont.html#setStretch">setStretch</a></b> (<i>self</i>, int)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#setStrikeOut" tppabs="http://pyqt4doc.appspot.com/qfont.html#setStrikeOut">setStrikeOut</a></b> (<i>self</i>, bool)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#setStyle" tppabs="http://pyqt4doc.appspot.com/qfont.html#setStyle">setStyle</a></b> (<i>self</i>, Style <i>style</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#setStyleHint" tppabs="http://pyqt4doc.appspot.com/qfont.html#setStyleHint">setStyleHint</a></b> (<i>self</i>, StyleHint <i>hint</i>, StyleStrategy <i>strategy</i> = QFont.PreferDefault)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#setStyleName" tppabs="http://pyqt4doc.appspot.com/qfont.html#setStyleName">setStyleName</a></b> (<i>self</i>, QString <i>styleName</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#setStyleStrategy" tppabs="http://pyqt4doc.appspot.com/qfont.html#setStyleStrategy">setStyleStrategy</a></b> (<i>self</i>, StyleStrategy <i>s</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#setUnderline" tppabs="http://pyqt4doc.appspot.com/qfont.html#setUnderline">setUnderline</a></b> (<i>self</i>, bool)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#setWeight" tppabs="http://pyqt4doc.appspot.com/qfont.html#setWeight">setWeight</a></b> (<i>self</i>, int)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#setWordSpacing" tppabs="http://pyqt4doc.appspot.com/qfont.html#setWordSpacing">setWordSpacing</a></b> (<i>self</i>, float <i>spacing</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qfont.html#stretch" tppabs="http://pyqt4doc.appspot.com/qfont.html#stretch">stretch</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qfont.html#strikeOut" tppabs="http://pyqt4doc.appspot.com/qfont.html#strikeOut">strikeOut</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Style <b><a href="qfont.html#style" tppabs="http://pyqt4doc.appspot.com/qfont.html#style">style</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>StyleHint <b><a href="qfont.html#styleHint" tppabs="http://pyqt4doc.appspot.com/qfont.html#styleHint">styleHint</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qfont.html#styleName" tppabs="http://pyqt4doc.appspot.com/qfont.html#styleName">styleName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>StyleStrategy <b><a href="qfont.html#styleStrategy" tppabs="http://pyqt4doc.appspot.com/qfont.html#styleStrategy">styleStrategy</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qfont.html#toString" tppabs="http://pyqt4doc.appspot.com/qfont.html#toString">toString</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qfont.html#underline" tppabs="http://pyqt4doc.appspot.com/qfont.html#underline">underline</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qfont.html#weight" tppabs="http://pyqt4doc.appspot.com/qfont.html#weight">weight</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qfont.html#wordSpacing" tppabs="http://pyqt4doc.appspot.com/qfont.html#wordSpacing">wordSpacing</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#cacheStatistics" tppabs="http://pyqt4doc.appspot.com/qfont.html#cacheStatistics">cacheStatistics</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#cleanup" tppabs="http://pyqt4doc.appspot.com/qfont.html#cleanup">cleanup</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#initialize" tppabs="http://pyqt4doc.appspot.com/qfont.html#initialize">initialize</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#insertSubstitution" tppabs="http://pyqt4doc.appspot.com/qfont.html#insertSubstitution">insertSubstitution</a></b> (QString, QString)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#insertSubstitutions" tppabs="http://pyqt4doc.appspot.com/qfont.html#insertSubstitutions">insertSubstitutions</a></b> (QString, QStringList)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfont.html#removeSubstitution" tppabs="http://pyqt4doc.appspot.com/qfont.html#removeSubstitution">removeSubstitution</a></b> (QString)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qfont.html#substitute" tppabs="http://pyqt4doc.appspot.com/qfont.html#substitute">substitute</a></b> (QString)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qfont.html#substitutes" tppabs="http://pyqt4doc.appspot.com/qfont.html#substitutes">substitutes</a></b> (QString)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qfont.html#substitutions" tppabs="http://pyqt4doc.appspot.com/qfont.html#substitutions">substitutions</a></b> ()</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>bool <b><a href="qfont.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qfont.html#__eq__">__eq__</a></b> (<i>self</i>, QFont)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qfont.html#__ge__" tppabs="http://pyqt4doc.appspot.com/qfont.html#__ge__">__ge__</a></b> (<i>self</i>, QFont)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qfont.html#__lt__" tppabs="http://pyqt4doc.appspot.com/qfont.html#__lt__">__lt__</a></b> (<i>self</i>, QFont)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qfont.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qfont.html#__ne__">__ne__</a></b> (<i>self</i>, QFont)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QFont类指定用于绘制文本的字体。</p>
+<p>当你创建一个QFont对象，你指定你想要的字体有不同的属性。 Qt会使用的字体与指定的属性，或者如果没有匹配的字体存在， Qt会使用最接近的匹配安装的字体。实际使用的字体的属性是由可回收<a href="qfontinfo.html" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html">QFontInfo</a>对象。如果窗口系统提供的精确匹配<a href="qfont.html#exactMatch" tppabs="http://pyqt4doc.appspot.com/qfont.html#exactMatch">exactMatch</a>（ ）返回True 。使用<a href="qfontmetrics.html" tppabs="http://pyqt4doc.appspot.com/qfontmetrics.html">QFontMetrics</a>以获得测量值，例如使用字符串的像素长度<a href="qfontmetrics.html#width" tppabs="http://pyqt4doc.appspot.com/qfontmetrics.html#width">QFontMetrics.width</a>（ ） 。</p>
+<p>请注意，一个<a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a>实例必须存在一个QFont才能使用。您可以设置应用程序的默认字体，<a href="qapplication.html#setFont" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setFont">QApplication.setFont</a>（ ） 。</p>
+<p>如果选择的字体不包括所有需要显示的字符， QFont将试图找到在最接近的字体的字符。当<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>绘制一个字符从字体QFont会报告它是否有性格，如果没有的话，<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>将绘制一个空心的方形。</p>
+<p>创建这样QFonts ：</p>
+<pre class="cpp">
+ <span class="type">QFont</span> serifFont(<span class="string">"Times"</span><span class="operator">,</span> <span class="number">10</span><span class="operator">,</span> <span class="type">QFont</span><span class="operator">.</span>Bold);
+ <span class="type">QFont</span> sansFont(<span class="string">"Helvetica [Cronyx]"</span><span class="operator">,</span> <span class="number">12</span>);
+</pre>
+<p>在构造函数中设置的属性也可以在以后设置，例如：<a href="qfont.html#setFamily" tppabs="http://pyqt4doc.appspot.com/qfont.html#setFamily">setFamily</a>（ ）<a href="qfont.html#setPointSize" tppabs="http://pyqt4doc.appspot.com/qfont.html#setPointSize">setPointSize</a>（ ）<a class="compat" href="index.htm#setPointSizeFloat" tppabs="http://pyqt4doc.appspot.com/qfont-qt3.html#setPointSizeFloat">setPointSizeFloat</a>（ ）<a href="qfont.html#setWeight" tppabs="http://pyqt4doc.appspot.com/qfont.html#setWeight">setWeight</a>（）和<a href="qfont.html#setItalic" tppabs="http://pyqt4doc.appspot.com/qfont.html#setItalic">setItalic</a>（ ） 。其馀的属性后，必须contstruction ，例如设置<a href="qfont.html#setBold" tppabs="http://pyqt4doc.appspot.com/qfont.html#setBold">setBold</a>（ ）<a href="qfont.html#setUnderline" tppabs="http://pyqt4doc.appspot.com/qfont.html#setUnderline">setUnderline</a>（ ）<a href="qfont.html#setOverline" tppabs="http://pyqt4doc.appspot.com/qfont.html#setOverline">setOverline</a>（ ）<a href="qfont.html#setStrikeOut" tppabs="http://pyqt4doc.appspot.com/qfont.html#setStrikeOut">setStrikeOut</a>（）和<a href="qfont.html#setFixedPitch" tppabs="http://pyqt4doc.appspot.com/qfont.html#setFixedPitch">setFixedPitch</a>（ ） 。<a href="qfontinfo.html" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html">QFontInfo</a>要创建的对象<i>after</i>字体的属性已被置位。一<a href="qfontinfo.html" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html">QFontInfo</a>对象将不会改变，即使改变字体的属性。相应的“获取”功能，例如<a href="qfont.html#family" tppabs="http://pyqt4doc.appspot.com/qfont.html#family">family</a>（ ）<a href="qfont.html#pointSize" tppabs="http://pyqt4doc.appspot.com/qfont.html#pointSize">pointSize</a>（ ）等等，返回已设置的值，即使所使用的值可能不同。的实际值可以从一个<a href="qfontinfo.html" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html">QFontInfo</a>对象。</p>
+<p>如果请求的字体系列不可用，你可以影响<a href="#fontmatching">font matching algorithm</a>通过选择一个特定的<a href="qfont.html#StyleHint-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#StyleHint-enum">QFont.StyleHint</a>和<a href="qfont.html#StyleStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#StyleStrategy-enum">QFont.StyleStrategy</a>同<a href="qfont.html#setStyleHint" tppabs="http://pyqt4doc.appspot.com/qfont.html#setStyleHint">setStyleHint</a>（ ） 。缺省家族（对应于当前样式的提示）被返回<a href="qfont.html#defaultFamily" tppabs="http://pyqt4doc.appspot.com/qfont.html#defaultFamily">defaultFamily</a>（ ） 。</p>
+<p>字体匹配算法有<a href="qfont.html#lastResortFamily" tppabs="http://pyqt4doc.appspot.com/qfont.html#lastResortFamily">lastResortFamily</a>（）和<a href="qfont.html#lastResortFont" tppabs="http://pyqt4doc.appspot.com/qfont.html#lastResortFont">lastResortFont</a>（ ）在一个合适的匹配不能被发现的情况。您可以提供替代使用字体系列名称<a href="qfont.html#insertSubstitution" tppabs="http://pyqt4doc.appspot.com/qfont.html#insertSubstitution">insertSubstitution</a>（）和<a href="qfont.html#insertSubstitutions" tppabs="http://pyqt4doc.appspot.com/qfont.html#insertSubstitutions">insertSubstitutions</a>（ ） 。取代基可以与被删除<a href="qfont.html#removeSubstitution" tppabs="http://pyqt4doc.appspot.com/qfont.html#removeSubstitution">removeSubstitution</a>（ ） 。使用<a href="qfont.html#substitute" tppabs="http://pyqt4doc.appspot.com/qfont.html#substitute">substitute</a>（ ）来获取一个家庭的第一替补，或姓本身，如果它没有替代品。使用<a href="qfont.html#substitutes" tppabs="http://pyqt4doc.appspot.com/qfont.html#substitutes">substitutes</a>（ ）来获取一个家庭的替代品列表（可能为空） 。</p>
+<p>每QFont有<a href="qfont.html#key" tppabs="http://pyqt4doc.appspot.com/qfont.html#key">key</a>（），它可以使用，例如，如在高速缓存或字典中的键。如果你想存储用户的字体首选项，您可以使用<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>，与写入的字体信息<a href="qfont.html#toString" tppabs="http://pyqt4doc.appspot.com/qfont.html#toString">toString</a>（ ），并阅读它带回来<a href="qfont.html#fromString" tppabs="http://pyqt4doc.appspot.com/qfont.html#fromString">fromString</a>（ ） 。该运算符\u003c\u003c （）和operator \u003e\u003e （ ）功能也都具备，但他们的数据流工作。</p>
+<p>它可以设置在屏幕上显示的字符，以像素为单位的指定数量的高度与<a href="qfont.html#setPixelSize" tppabs="http://pyqt4doc.appspot.com/qfont.html#setPixelSize">setPixelSize</a>（ ），但是使用<a href="qfont.html#setPointSize" tppabs="http://pyqt4doc.appspot.com/qfont.html#setPointSize">setPointSize</a>（ ）也有类似的效果，并提供设备独立性。</p>
+<p>在X11中，您可以使用其系统的具体名称与设置字体<a href="qfont.html#setRawName" tppabs="http://pyqt4doc.appspot.com/qfont.html#setRawName">setRawName</a>（ ） 。</p>
+<p>加载中字体可以是昂贵的，特别是在X11 。 QFont包含大量的优化，以使QFont的复制对象快，缓存它依赖于缓慢窗口系统功能的结果。</p>
+<a id="fontmatching" name="fontmatching"></a>
+<p>字体匹配算法的工作原理如下：</p>
+<ol class="1">
+<li>指定字体系列中搜索。</li>
+<li>如果没有找到，<a href="qfont.html#styleHint" tppabs="http://pyqt4doc.appspot.com/qfont.html#styleHint">styleHint</a>（）是用来选择一个替换的家庭。</li>
+<li>每次更换字体系列中搜索。</li>
+<li>如果没有这些被发现或没有<a href="qfont.html#styleHint" tppabs="http://pyqt4doc.appspot.com/qfont.html#styleHint">styleHint</a>（ ） ， “黑体”将搜索。</li>
+<li>如果找不到“黑体” Qt会尝试<a href="qfont.html#lastResortFamily" tppabs="http://pyqt4doc.appspot.com/qfont.html#lastResortFamily">lastResortFamily</a>（ ） 。</li>
+<li>如果<a href="qfont.html#lastResortFamily" tppabs="http://pyqt4doc.appspot.com/qfont.html#lastResortFamily">lastResortFamily</a>（ ）没有找到Qt会尝试<a href="qfont.html#lastResortFont" tppabs="http://pyqt4doc.appspot.com/qfont.html#lastResortFont">lastResortFont</a>（）将总是返回某种类型的名称。</li>
+</ol>
+<p>请注意，实际的字体匹配算法变化从平台到平台。</p>
+<p>在Windows的“信使”字体的请求将被自动更改为“宋体” ，快递的改进版本，它允许平滑缩放。旧的“信使”位图字体可以通过设置选择<a href="qfont.html#StyleStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#StyleStrategy-enum">PreferBitmap</a>风格策略（见<a href="qfont.html#setStyleStrategy" tppabs="http://pyqt4doc.appspot.com/qfont.html#setStyleStrategy">setStyleStrategy</a>（））。</p>
+<p>一旦字体被发现，其馀的属性是匹配的优先顺序：</p>
+<ol class="1">
+<li>
+<a href="qfont.html#fixedPitch" tppabs="http://pyqt4doc.appspot.com/qfont.html#fixedPitch">fixedPitch</a>（ ）</li>
+<li>
+<a href="qfont.html#pointSize" tppabs="http://pyqt4doc.appspot.com/qfont.html#pointSize">pointSize</a>（） （见下文）</li>
+<li>
+<a href="qfont.html#weight" tppabs="http://pyqt4doc.appspot.com/qfont.html#weight">weight</a>（ ）</li>
+<li>
+<a href="qfont.html#style" tppabs="http://pyqt4doc.appspot.com/qfont.html#style">style</a>（ ）</li>
+</ol>
+<p>如果你有一个相匹配的家庭字体，即使没有其他属性匹配，该字体将选择优先于字体不上家人匹配，但它确实对其他属性的匹配。这是因为字体家族是佔主导地位的搜索条件。</p>
+<p>点的大小被定义为匹配，如果它是在所需的点尺寸的20％。当几个字体匹配，并且只由点的大小区分，与最接近的点大小为所请求的字体将被选择。</p>
+<p>用于绘制文本的实际家庭，字体大小，重量等字体属性将取决于什么可供选择的家庭下的窗口系统。一<a href="qfontinfo.html" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html">QFontInfo</a>对象可以被用来确定用于绘制文本的实际值。</p>
+<p>示例：</p>
+<pre class="cpp">
+ <span class="type">QFont</span> f(<span class="string">"Helvetica"</span>);
+</pre>
+<p>如果你同时有一个Adobe和Cronyx Helvetica字体，你可能会得到两种。</p>
+<pre class="cpp">
+ <span class="type">QFont</span> f(<span class="string">"Helvetica [Cronyx]"</span>);
+</pre>
+<p>您可以在家庭中的名称来指定你想要的代工。在上面的例子中的字体F可以被设置为“黑体[ Cronyx ]” 。</p>
+<p>为了确定在窗口系统中实际使用的字体的属性，使用<a href="qfontinfo.html" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html">QFontInfo</a>对象，例如</p>
+<pre class="cpp">
+ <span class="type"><a href="qfontinfo.html" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html">QFontInfo</a></span> info(f1);
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> family <span class="operator">=</span> info<span class="operator">.</span><a href="qfont.html#family" tppabs="http://pyqt4doc.appspot.com/qfont.html#family">family</a>();
+</pre>
+<p>要了解字体规格使用<a href="qfontmetrics.html" tppabs="http://pyqt4doc.appspot.com/qfontmetrics.html">QFontMetrics</a>对象，例如</p>
+<pre class="cpp">
+ <span class="type"><a href="qfontmetrics.html" tppabs="http://pyqt4doc.appspot.com/qfontmetrics.html">QFontMetrics</a></span> fm(f1);
+ <span class="type">int</span> textWidthInPixels <span class="operator">=</span> fm<span class="operator">.</span>width(<span class="string">"How many pixels wide is this text?"</span>);
+ <span class="type">int</span> textHeightInPixels <span class="operator">=</span> fm<span class="operator">.</span>height();
+</pre>
+<p>有关字体的常规信息，请参阅<a href="http://nwalsh.com/comp.fonts/FAQ/">comp.fonts FAQ.</a>关于编码的信息可以发现<a href="http://czyborra.com/">Roman
+Czyborra's</a>页面。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="Capitalization-enum"></a>QFont.Capitalization</h3>
+<p>渲染选项，这个文本字体适用于。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.MixedCase</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">这是没有市值变化所应用的普通文本渲染选项。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.AllUppercase</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">这改变在全部大写类型所要呈现的文本。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.AllLowercase</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">这会改变所有小写类型所要呈现的文本。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.SmallCaps</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">这改变了在小型股型要呈现的文本。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.Capitalize</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">这改变与每个单词的第一个字符被呈现为一个大写字符的文本。</td>
+</tr>
+</table>
+<p>这个枚举被引入或修改的Qt 4.4 。</p>
+
+
+<h3 class="fn">
+<a name="HintingPreference-enum"></a>QFont.HintingPreference</h3>
+<p>该枚举描述暗示的不同级别，可以应用到字形，以提高易读性的地方，否则可能由像素的密度来保证显示器。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.PreferDefaultHinting</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">使用默认的暗示水平为目标平台。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.PreferNoHinting</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">如果可能的话，渲染文本，而不提示字形的轮廓。文本布局将是印刷上准确的和可扩展性，使用与被使用，例如相同的度量打印时。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.PreferVerticalHinting</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">如果可能的话，呈现文本无水平暗示，但字形排列的像素网格在垂直方向上。该文字会出现在其中显示的密度太低保鲜盒给予字形的准确渲染。但由于字形的水平度量unhinted ，文字的布局将扩展到更高密度的设备（如打印机） ，而不会影响细节，比如换行符。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.PreferFullHinting</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">如果可能的话，呈现文本与暗示在水平和垂直方向。该文本将被修改，以优化可读性的目标设备上，但由于指标将取决于文本的目标大小，字形，换行符和其他排版细节的位置将无法扩展，这意味着文本的布局可能会与不同像素密度的设备不同。</td>
+</tr>
+</table>
+<p>请注意，此枚举只描述一个偏好，以全方位暗示的水平上不支持所有的Qt支持的平台的。下表载列于目标平台的选定的一组给定的暗示偏好的影响。</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th></th>
+<th>PreferDefaultHinting</th>
+<th>PreferNoHinting</th>
+<th>PreferVerticalHinting</th>
+<th>PreferFullHinting</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td>Windows Vista (w/o Platform Update) and earlier</td>
+<td>Full hinting</td>
+<td>Full hinting</td>
+<td>Full hinting</td>
+<td>Full hinting</td>
+</tr>
+<tr class="even" valign="top">
+<td>Windows 7 and Windows Vista (w/Platform Update) and DirectWrite
+enabled in Qt</td>
+<td>Full hinting</td>
+<td>Vertical hinting</td>
+<td>Vertical hinting</td>
+<td>Full hinting</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="index.htm#freetype" tppabs="http://pyqt4doc.appspot.com/qt-embedded-fonts.html#freetype">FreeType</a></td>
+<td>Operating System setting</td>
+<td>No hinting</td>
+<td>Vertical hinting (light)</td>
+<td>Full hinting</td>
+</tr>
+<tr class="even" valign="top">
+<td>Cocoa on Mac OS X</td>
+<td>No hinting</td>
+<td>No hinting</td>
+<td>No hinting</td>
+<td>No hinting</td>
+</tr>
+</table>
+<p><b>Note:</b>请注意，改变在Windows上提示的偏好可通过DirectWrite的字体引擎。这是适用于Windows Vista上安装平台更新后，和Windows 7 。为了使用这个扩展，配置Qt的使用， DirectWrite的。然后，目标应用程序将取决于DirectWrite中的目标系统上的可用性。</p>
+<p>这个枚举被引入或修改的Qt 4.8 。</p>
+
+
+<h3 class="fn">
+<a name="SpacingType-enum"></a>QFont.SpacingType</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.PercentageSpacing</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">100的值将保持间距不变;值200将人物本身的宽度的字符后扩大的间距。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.AbsoluteSpacing</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">正值增加字母间距由相应的像素;负值减小的间距。</td>
+</tr>
+</table>
+<p>这个枚举被引入或修改的Qt 4.4 。</p>
+
+
+<h3 class="fn">
+<a name="Stretch-enum"></a>QFont.Stretch</h3>
+<p>按照CSS的命名约定的预定义的拉伸值。该值越高，越伸文字是。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.UltraCondensed</tt></td>
+<td class="topAlign"><tt>50</tt></td>
+<td class="topAlign">50</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.ExtraCondensed</tt></td>
+<td class="topAlign"><tt>62</tt></td>
+<td class="topAlign">62</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.Condensed</tt></td>
+<td class="topAlign"><tt>75</tt></td>
+<td class="topAlign">75</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.SemiCondensed</tt></td>
+<td class="topAlign"><tt>87</tt></td>
+<td class="topAlign">87</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.Unstretched</tt></td>
+<td class="topAlign"><tt>100</tt></td>
+<td class="topAlign">100</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.SemiExpanded</tt></td>
+<td class="topAlign"><tt>112</tt></td>
+<td class="topAlign">112</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.Expanded</tt></td>
+<td class="topAlign"><tt>125</tt></td>
+<td class="topAlign">125</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.ExtraExpanded</tt></td>
+<td class="topAlign"><tt>150</tt></td>
+<td class="topAlign">150</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.UltraExpanded</tt></td>
+<td class="topAlign"><tt>200</tt></td>
+<td class="topAlign">200</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qfont.html#setStretch" tppabs="http://pyqt4doc.appspot.com/qfont.html#setStretch">setStretch</a>（）和<a href="qfont.html#stretch" tppabs="http://pyqt4doc.appspot.com/qfont.html#stretch">stretch</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="Style-enum"></a>QFont.Style</h3>
+<p>这个枚举变量描述了不同风格的字形，用于显示文本。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.StyleNormal</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">在无样式的文本中使用的正常字形。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.StyleItalic</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">斜体字形专为代表斜体文本的目的而设计的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.StyleOblique</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">字形与通常基于无样式字形，但微调来表示斜体文本的目的，斜体的外观。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qfont.html#Weight-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#Weight-enum">Weight</a>。</p>
+
+
+<h3 class="fn">
+<a name="StyleHint-enum"></a>QFont.StyleHint</h3>
+<p>风格提示所使用的<a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">font
+matching</a>算法来找到一个合适的默认的家庭，如果选择的字体系列不可用。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.AnyStyle</tt></td>
+<td class="topAlign">？</td>
+<td class="topAlign">离开的字体匹配算法来选择家庭。这是默认的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.SansSerif</tt></td>
+<td class="topAlign"><tt>Helvetica</tt></td>
+<td class="topAlign">字体匹配更喜欢无衬线字体。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.Helvetica</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">是同义词<tt>SansSerif</tt>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.Serif</tt></td>
+<td class="topAlign"><tt>Times</tt></td>
+<td class="topAlign">字体匹配更喜欢serif字体。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.Times</tt></td>
+<td class="topAlign">？</td>
+<td class="topAlign">是同义词<tt>Serif</tt>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.TypeWriter</tt></td>
+<td class="topAlign"><tt>Courier</tt></td>
+<td class="topAlign">字体匹配更喜欢固定的间距字体。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.Courier</tt></td>
+<td class="topAlign">？</td>
+<td class="topAlign">同义词<tt>TypeWriter</tt>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.OldEnglish</tt></td>
+<td class="topAlign">？</td>
+<td class="topAlign">字体匹配更喜欢装饰性字体。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.Decorative</tt></td>
+<td class="topAlign"><tt>OldEnglish</tt></td>
+<td class="topAlign">是同义词<tt>OldEnglish</tt>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.Monospace</tt></td>
+<td class="topAlign">？</td>
+<td class="topAlign">字体匹配倾向于映射到CSS通用字体家庭“等宽”字体。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.Fantasy</tt></td>
+<td class="topAlign">？</td>
+<td class="topAlign">字体匹配倾向于映射到CSS通用字体家族'幻想'字型。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.Cursive</tt></td>
+<td class="topAlign">？</td>
+<td class="topAlign">字体匹配倾向于映射到CSS通用字体家族“草书”字体。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.System</tt></td>
+<td class="topAlign">？</td>
+<td class="topAlign">字体匹配喜欢的系统字体。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="StyleStrategy-enum"></a>QFont.StyleStrategy</h3>
+<p>风格策略告诉<a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">font
+matching</a>算法是什么类型的字体应该被用来找到一个合适的默认的家人。</p>
+<p>以下策略可供选择：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.PreferDefault</tt></td>
+<td class="topAlign"><tt>0x0001</tt></td>
+<td class="topAlign">默认样式的策略。它不喜欢的任何类型的字体。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.PreferBitmap</tt></td>
+<td class="topAlign"><tt>0x0002</tt></td>
+<td class="topAlign">喜欢点阵字体（相对于轮廓字体） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.PreferDevice</tt></td>
+<td class="topAlign"><tt>0x0004</tt></td>
+<td class="topAlign">喜欢的设备字体。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.PreferOutline</tt></td>
+<td class="topAlign"><tt>0x0008</tt></td>
+<td class="topAlign">喜欢轮廓字体（相对于位图字体） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.ForceOutline</tt></td>
+<td class="topAlign"><tt>0x0010</tt></td>
+<td class="topAlign">强制使用轮廓字体。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.NoAntialias</tt></td>
+<td class="topAlign"><tt>0x0100</tt></td>
+<td class="topAlign">不消除锯齿的字体。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.PreferAntialias</tt></td>
+<td class="topAlign"><tt>0x0080</tt></td>
+<td class="topAlign">如果可能的话反锯齿。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.OpenGLCompatible</tt></td>
+<td class="topAlign"><tt>0x0200</tt></td>
+<td class="topAlign">强制使用兼容OpenGL字体。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.NoFontMerging</tt></td>
+<td class="topAlign"><tt>0x8000</tt></td>
+<td class="topAlign">If the font selected for a certain writing
+system does not contain a character requested to draw, then Qt
+automatically chooses a similar looking font that contains the
+character. The NoFontMerging flag disables this feature. Please
+note that enabling this flag will not prevent Qt from automatically
+picking a suitable font when the selected font does not support the
+writing system of the text.</td>
+</tr>
+</table>
+<p>任何这些可能是或的结果与这些标志之一：</p>
+<table class="valuelist">
+<tr class="even" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.PreferMatch</tt></td>
+<td class="topAlign"><tt>0x0020</tt></td>
+<td class="topAlign">喜欢的精确匹配。字体匹配器将尝试使用已指定的确切的字体大小。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.PreferQuality</tt></td>
+<td class="topAlign"><tt>0x0040</tt></td>
+<td class="topAlign">喜欢最优质的字体。字体匹配器将使用该字体支持的最接近的标准点的大小。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.ForceIntegerMetrics</tt></td>
+<td class="topAlign"><tt>0x0400</tt></td>
+<td class="topAlign">部队在支持小数字体规格的字体引擎中使用的整数值。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="Weight-enum"></a>QFont.Weight</h3>
+<p>Qt使用加权刻度从0到99类似，但不一样的，在Windows或CSS中使用的尺度。 0的重量为超轻，而99将是一个非常黑。</p>
+<p>这个枚举包含预定义字体粗细：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.Light</tt></td>
+<td class="topAlign"><tt>25</tt></td>
+<td class="topAlign">25</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.Normal</tt></td>
+<td class="topAlign"><tt>50</tt></td>
+<td class="topAlign">50</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.DemiBold</tt></td>
+<td class="topAlign"><tt>63</tt></td>
+<td class="topAlign">63</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.Bold</tt></td>
+<td class="topAlign"><tt>75</tt></td>
+<td class="topAlign">75</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFont.Black</tt></td>
+<td class="topAlign"><tt>87</tt></td>
+<td class="topAlign">87</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QFont"></a>QFont.__init__ (<i>self</i>)</h3>
+<p>构造一个使用应用程序的默认字体的字体对象。</p>
+<p><b>See also</b> <a href="qapplication.html#setFont" tppabs="http://pyqt4doc.appspot.com/qapplication.html#setFont">QApplication.setFont</a>（）和<a href="qapplication.html#font" tppabs="http://pyqt4doc.appspot.com/qapplication.html#font">QApplication.font</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QFont-2"></a>QFont.__init__ (<i>self</i>, QString <i>family</i>, int <i>pointSize</i> = -1, int <i>weight</i> = -1, bool <i>italic</i> = False)</h3>
+<p>构造一个字体对象与指定的<i>family</i>，<i>pointSize</i>，<i>weight</i>和<i>italic</i>设置。</p>
+<p>If <i>pointSize</i>是零或负值，则字体的点大小被设定为一个系统有关的默认值。一般来说，这是12个点，除了在Symbian它是7分。</p>
+<p>该<i>family</i>名称可以任选还包括一个铸造厂的名称，例如“黑体[ Cronyx ]” 。如果<i>family</i>可从一个以上的铸造和未指明的铸造，任意铸造被选择。如果家庭不具备的家庭将使用设置的<a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">font matching</a>算法。</p>
+<p><b>See also</b> <a href="qfont.html#Weight-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#Weight-enum">Weight</a>，<a href="qfont.html#setFamily" tppabs="http://pyqt4doc.appspot.com/qfont.html#setFamily">setFamily</a>（ ）<a href="qfont.html#setPointSize" tppabs="http://pyqt4doc.appspot.com/qfont.html#setPointSize">setPointSize</a>（ ）<a href="qfont.html#setWeight" tppabs="http://pyqt4doc.appspot.com/qfont.html#setWeight">setWeight</a>（ ）<a href="qfont.html#setItalic" tppabs="http://pyqt4doc.appspot.com/qfont.html#setItalic">setItalic</a>（ ）<a href="qfont.html#setStyleHint" tppabs="http://pyqt4doc.appspot.com/qfont.html#setStyleHint">setStyleHint</a>（）和<a href="qapplication.html#font" tppabs="http://pyqt4doc.appspot.com/qapplication.html#font">QApplication.font</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QFont-3"></a>QFont.__init__ (<i>self</i>, <a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a>, <a href="qpaintdevice.html" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html">QPaintDevice</a> <i>pd</i>)</h3>
+<p>构造一个从字体<i>font</i>供漆设备上使用<i>pd</i>。</p>
+
+
+<h3 class="fn">
+<a name="QFont-4"></a>QFont.__init__ (<i>self</i>, <a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a>)</h3>
+<p>构造一个字体是副本<i>font</i>。</p>
+
+
+<h3 class="fn">
+<a name="QFont-5"></a>QFont.__init__ (<i>self</i>, QVariant <i>variant</i>)</h3>
+<h3 class="fn">
+<a name="bold"></a>bool QFont.bold (<i>self</i>)</h3>
+<p>返回True如果<a href="qfont.html#weight" tppabs="http://pyqt4doc.appspot.com/qfont.html#weight">weight</a>（）是一个大于<a href="qfont.html#Weight-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#Weight-enum">QFont.Normal</a>否则返回False 。</p>
+<p><b>See also</b> <a href="qfont.html#weight" tppabs="http://pyqt4doc.appspot.com/qfont.html#weight">weight</a>（ ）<a href="qfont.html#setBold" tppabs="http://pyqt4doc.appspot.com/qfont.html#setBold">setBold</a>（）和<a href="qfontinfo.html#bold" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html#bold">QFontInfo.bold</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="cacheStatistics"></a>QFont.cacheStatistics ()</h3>
+<h3 class="fn">
+<a name="capitalization"></a><a href="qfont.html#Capitalization-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#Capitalization-enum">Capitalization</a> QFont.capitalization (<i>self</i>)</h3>
+<p>返回该字体的当前市值类型。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qfont.html#setCapitalization" tppabs="http://pyqt4doc.appspot.com/qfont.html#setCapitalization">setCapitalization</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="cleanup"></a>QFont.cleanup ()</h3>
+<h3 class="fn">
+<a name="defaultFamily"></a>QString QFont.defaultFamily (<i>self</i>)</h3>
+<p>返回对应于当前样式提示的姓。</p>
+<p><b>See also</b> <a href="qfont.html#StyleHint-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#StyleHint-enum">StyleHint</a>，<a href="qfont.html#styleHint" tppabs="http://pyqt4doc.appspot.com/qfont.html#styleHint">styleHint</a>（）和<a href="qfont.html#setStyleHint" tppabs="http://pyqt4doc.appspot.com/qfont.html#setStyleHint">setStyleHint</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="exactMatch"></a>bool QFont.exactMatch (<i>self</i>)</h3>
+<p>返回True如果一个窗口系统字体完全匹配该字体的设置是可用的。</p>
+<p><b>See also</b> <a href="qfontinfo.html" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html">QFontInfo</a>。</p>
+
+
+<h3 class="fn">
+<a name="family"></a>QString QFont.family (<i>self</i>)</h3>
+<p>返回请求的字体系列名称，即名称在构造或最后个setFont （ ）调用设置。</p>
+<p><b>See also</b> <a href="qfont.html#setFamily" tppabs="http://pyqt4doc.appspot.com/qfont.html#setFamily">setFamily</a>（ ）<a href="qfont.html#substitutes" tppabs="http://pyqt4doc.appspot.com/qfont.html#substitutes">substitutes</a>（）和<a href="qfont.html#substitute" tppabs="http://pyqt4doc.appspot.com/qfont.html#substitute">substitute</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fixedPitch"></a>bool QFont.fixedPitch (<i>self</i>)</h3>
+<p>返回True如果固定摊位已经被置位，否则返回False 。</p>
+<p><b>See also</b> <a href="qfont.html#setFixedPitch" tppabs="http://pyqt4doc.appspot.com/qfont.html#setFixedPitch">setFixedPitch</a>（）和<a href="qfontinfo.html#fixedPitch" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html#fixedPitch">QFontInfo.fixedPitch</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fromString"></a>bool QFont.fromString (<i>self</i>, QString)</h3>
+<p>设置该字体相匹配的说明<i>descrip</i>。该说明是用逗号分隔的字体属性列表，返回的<a href="qfont.html#toString" tppabs="http://pyqt4doc.appspot.com/qfont.html#toString">toString</a>（ ） 。</p>
+<p><b>See also</b> <a href="qfont.html#toString" tppabs="http://pyqt4doc.appspot.com/qfont.html#toString">toString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="handle"></a>int QFont.handle (<i>self</i>)</h3>
+<p>返回窗口的系统句柄的字体，对于低级别的访问。使用此功能是<i>not</i>便携。</p>
+
+
+<h3 class="fn">
+<a name="hintingPreference"></a><a href="qfont.html#HintingPreference-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#HintingPreference-enum">HintingPreference</a> QFont.hintingPreference (<i>self</i>)</h3>
+<p>返回字形与此字体渲染当前的优选暗示的水平。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qfont.html#setHintingPreference" tppabs="http://pyqt4doc.appspot.com/qfont.html#setHintingPreference">setHintingPreference</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="initialize"></a>QFont.initialize ()</h3>
+<h3 class="fn">
+<a name="insertSubstitution"></a>QFont.insertSubstitution (QString, QString)</h3>
+<p>Inserts <i>substituteName</i>成家庭中的替换表<i>familyName</i>。</p>
+<p><b>See also</b> <a href="qfont.html#insertSubstitutions" tppabs="http://pyqt4doc.appspot.com/qfont.html#insertSubstitutions">insertSubstitutions</a>（ ）<a href="qfont.html#removeSubstitution" tppabs="http://pyqt4doc.appspot.com/qfont.html#removeSubstitution">removeSubstitution</a>（ ）<a href="qfont.html#substitutions" tppabs="http://pyqt4doc.appspot.com/qfont.html#substitutions">substitutions</a>（ ）<a href="qfont.html#substitute" tppabs="http://pyqt4doc.appspot.com/qfont.html#substitute">substitute</a>（）和<a href="qfont.html#substitutes" tppabs="http://pyqt4doc.appspot.com/qfont.html#substitutes">substitutes</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertSubstitutions"></a>QFont.insertSubstitutions (QString, QStringList)</h3>
+<p>插入家庭的名单<i>substituteNames</i>入替换列表<i>familyName</i>。</p>
+<p><b>See also</b> <a href="qfont.html#insertSubstitution" tppabs="http://pyqt4doc.appspot.com/qfont.html#insertSubstitution">insertSubstitution</a>（ ）<a href="qfont.html#removeSubstitution" tppabs="http://pyqt4doc.appspot.com/qfont.html#removeSubstitution">removeSubstitution</a>（ ）<a href="qfont.html#substitutions" tppabs="http://pyqt4doc.appspot.com/qfont.html#substitutions">substitutions</a>（）和<a href="qfont.html#substitute" tppabs="http://pyqt4doc.appspot.com/qfont.html#substitute">substitute</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isCopyOf"></a>bool QFont.isCopyOf (<i>self</i>, <a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a>)</h3>
+<p>返回True如果这个字体和<i>f</i>是彼此的副本，即，其中的一个被创建为其它既不以来已经被修改的副本。这比平等更严格的。</p>
+<p><b>See also</b> <a href="qfont.html#operator-eq" tppabs="http://pyqt4doc.appspot.com/qfont.html#operator-eq">operator=</a>（）和<a href="qfont.html#operator-eq-eq" tppabs="http://pyqt4doc.appspot.com/qfont.html#operator-eq-eq">operator==</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="italic"></a>bool QFont.italic (<i>self</i>)</h3>
+<p>返回True如果<a href="qfont.html#style" tppabs="http://pyqt4doc.appspot.com/qfont.html#style">style</a>字体的（）不是<a href="qfont.html#Style-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#Style-enum">QFont.StyleNormal</a></p>
+<p><b>See also</b> <a href="qfont.html#setItalic" tppabs="http://pyqt4doc.appspot.com/qfont.html#setItalic">setItalic</a>（）和<a href="qfont.html#style" tppabs="http://pyqt4doc.appspot.com/qfont.html#style">style</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="kerning"></a>bool QFont.kerning (<i>self</i>)</h3>
+<p>返回True如果字距应绘制文本使用此字体时使用。</p>
+<p><b>See also</b> <a href="qfont.html#setKerning" tppabs="http://pyqt4doc.appspot.com/qfont.html#setKerning">setKerning</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="key"></a>QString QFont.key (<i>self</i>)</h3>
+<p>返回字体的按键，字体的文字表述。它通常被用作密钥对字体的高速缓存或字典。</p>
+<p><b>See also</b> <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qmap.html">QMap</a>。</p>
+
+
+<h3 class="fn">
+<a name="lastResortFamily"></a>QString QFont.lastResortFamily (<i>self</i>)</h3>
+<p>返回“最后手段”字体系列名称。</p>
+<p>当前的实现尝试多种常见的字体，返回的第一个发现。是有可能是没有家人在这种情况下，一个空字符串，则返回找到。</p>
+<p><b>See also</b> <a href="qfont.html#lastResortFont" tppabs="http://pyqt4doc.appspot.com/qfont.html#lastResortFont">lastResortFont</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="lastResortFont"></a>QString QFont.lastResortFont (<i>self</i>)</h3>
+<p>对于字体匹配算法返回一个“不得已而为之”的字体名称​​。这是使用，如果不得已家人不可用。它总是返回一个名称，如果需要返回类似于“固定”或“系统” 。</p>
+<p>当前的实现尝试多种常见的字体，返回的第一个发现。实现可以在任何时候改变，但这个函数总是返回包含一些字符串。</p>
+<p>这在理论上是可能的，是不是真的有一个lastResortFont （ ）在这种情况下， Qt会显示一条错误消息中止。我们一直无法识别的情况下发生这种情况。请<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/bughowto.html">report it as a bug</a>如果是的话，最好用你安装的字体列表。</p>
+<p><b>See also</b> <a href="qfont.html#lastResortFamily" tppabs="http://pyqt4doc.appspot.com/qfont.html#lastResortFamily">lastResortFamily</a>（）和<a href="qfont.html#rawName" tppabs="http://pyqt4doc.appspot.com/qfont.html#rawName">rawName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="letterSpacing"></a>float QFont.letterSpacing (<i>self</i>)</h3>
+<p>返回字母间距的字体。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qfont.html#setLetterSpacing" tppabs="http://pyqt4doc.appspot.com/qfont.html#setLetterSpacing">setLetterSpacing</a>（ ）<a href="qfont.html#letterSpacingType" tppabs="http://pyqt4doc.appspot.com/qfont.html#letterSpacingType">letterSpacingType</a>（）和<a href="qfont.html#setWordSpacing" tppabs="http://pyqt4doc.appspot.com/qfont.html#setWordSpacing">setWordSpacing</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="letterSpacingType"></a><a href="qfont.html#SpacingType-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#SpacingType-enum">SpacingType</a> QFont.letterSpacingType (<i>self</i>)</h3>
+<p>返回用于字母间距的间距类型。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qfont.html#letterSpacing" tppabs="http://pyqt4doc.appspot.com/qfont.html#letterSpacing">letterSpacing</a>（ ）<a href="qfont.html#setLetterSpacing" tppabs="http://pyqt4doc.appspot.com/qfont.html#setLetterSpacing">setLetterSpacing</a>（）和<a href="qfont.html#setWordSpacing" tppabs="http://pyqt4doc.appspot.com/qfont.html#setWordSpacing">setWordSpacing</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="overline"></a>bool QFont.overline (<i>self</i>)</h3>
+<p>返回True如果划线已经被置位，否则返回False 。</p>
+<p><b>See also</b> <a href="qfont.html#setOverline" tppabs="http://pyqt4doc.appspot.com/qfont.html#setOverline">setOverline</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="pixelSize"></a>int QFont.pixelSize (<i>self</i>)</h3>
+<p>返回该字体的像素大小，如果它被设置以<a href="qfont.html#setPixelSize" tppabs="http://pyqt4doc.appspot.com/qfont.html#setPixelSize">setPixelSize</a>（ ） 。返回-1，如果将尺寸设定与<a href="qfont.html#setPointSize" tppabs="http://pyqt4doc.appspot.com/qfont.html#setPointSize">setPointSize</a>（）或<a href="qfont.html#setPointSizeF" tppabs="http://pyqt4doc.appspot.com/qfont.html#setPointSizeF">setPointSizeF</a>（ ） 。</p>
+<p><b>See also</b> <a href="qfont.html#setPixelSize" tppabs="http://pyqt4doc.appspot.com/qfont.html#setPixelSize">setPixelSize</a>（ ）<a href="qfont.html#pointSize" tppabs="http://pyqt4doc.appspot.com/qfont.html#pointSize">pointSize</a>（ ）<a href="qfontinfo.html#pointSize" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html#pointSize">QFontInfo.pointSize</a>（）和<a href="qfontinfo.html#pixelSize" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html#pixelSize">QFontInfo.pixelSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="pointSize"></a>int QFont.pointSize (<i>self</i>)</h3>
+<p>返回字体的点数大小。返回-1，如果字体大小被以像素为单位指定的。</p>
+<p><b>See also</b> <a href="qfont.html#setPointSize" tppabs="http://pyqt4doc.appspot.com/qfont.html#setPointSize">setPointSize</a>（）和<a href="qfont.html#pointSizeF" tppabs="http://pyqt4doc.appspot.com/qfont.html#pointSizeF">pointSizeF</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="pointSizeF"></a>float QFont.pointSizeF (<i>self</i>)</h3>
+<p>返回字体的点数大小。返回-1，如果字体大小被以像素为单位指定的。</p>
+<p><b>See also</b> <a href="qfont.html#pointSize" tppabs="http://pyqt4doc.appspot.com/qfont.html#pointSize">pointSize</a>（ ）<a href="qfont.html#setPointSizeF" tppabs="http://pyqt4doc.appspot.com/qfont.html#setPointSizeF">setPointSizeF</a>（ ）<a href="qfont.html#pixelSize" tppabs="http://pyqt4doc.appspot.com/qfont.html#pixelSize">pixelSize</a>（ ）<a href="qfontinfo.html#pointSize" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html#pointSize">QFontInfo.pointSize</a>（）和<a href="qfontinfo.html#pixelSize" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html#pixelSize">QFontInfo.pixelSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rawMode"></a>bool QFont.rawMode (<i>self</i>)</h3>
+<p>返回True如果原始模式用于字体名称匹配，否则返回False 。</p>
+<p><b>See also</b> <a href="qfont.html#setRawMode" tppabs="http://pyqt4doc.appspot.com/qfont.html#setRawMode">setRawMode</a>（）和<a href="qfont.html#rawName" tppabs="http://pyqt4doc.appspot.com/qfont.html#rawName">rawName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rawName"></a>QString QFont.rawName (<i>self</i>)</h3>
+<p>返回底层窗口系统中的字体的名称。</p>
+<p>在X11上，这个函数会返回一个空字符串，如果Qt的是建立与fontconfig的支持，否则XLFD （ X逻辑字体描述）被返回。</p>
+<p>使用这个函数的返回值通常是<i>not</i>
+<i>portable</i>。</p>
+<p><b>See also</b> <a href="qfont.html#setRawName" tppabs="http://pyqt4doc.appspot.com/qfont.html#setRawName">setRawName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="removeSubstitution"></a>QFont.removeSubstitution (QString)</h3>
+<p>删除所有的换人<i>familyName</i>。</p>
+<p><b>See also</b> <a href="qfont.html#insertSubstitutions" tppabs="http://pyqt4doc.appspot.com/qfont.html#insertSubstitutions">insertSubstitutions</a>（ ）<a href="qfont.html#insertSubstitution" tppabs="http://pyqt4doc.appspot.com/qfont.html#insertSubstitution">insertSubstitution</a>（ ）<a href="qfont.html#substitutions" tppabs="http://pyqt4doc.appspot.com/qfont.html#substitutions">substitutions</a>（）和<a href="qfont.html#substitute" tppabs="http://pyqt4doc.appspot.com/qfont.html#substitute">substitute</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="resolve"></a><a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a> QFont.resolve (<i>self</i>, <a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a>)</h3>
+<p>返回一个新的<a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a>具有从属性复制<i>other</i>还没有对这种字体被预先设定。</p>
+
+
+<h3 class="fn">
+<a name="setBold"></a>QFont.setBold (<i>self</i>, bool <i>enable</i>)</h3>
+<p>If <i>enable</i>是真正的设置字体的重量<a href="qfont.html#Weight-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#Weight-enum">QFont.Bold</a>否则设置的权重<a href="qfont.html#Weight-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#Weight-enum">QFont.Normal</a>。</p>
+<p>为了更好的气魄控制使用<a href="qfont.html#setWeight" tppabs="http://pyqt4doc.appspot.com/qfont.html#setWeight">setWeight</a>（ ） 。</p>
+<p><b>See also</b> <a href="qfont.html#bold" tppabs="http://pyqt4doc.appspot.com/qfont.html#bold">bold</a>（）和<a href="qfont.html#setWeight" tppabs="http://pyqt4doc.appspot.com/qfont.html#setWeight">setWeight</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCapitalization"></a>QFont.setCapitalization (<i>self</i>, <a href="qfont.html#Capitalization-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#Capitalization-enum">Capitalization</a>)</h3>
+<p>在设置该字体的文字，以资本化<i>caps</i>。</p>
+<p>字体的大小写使文本显示在选定资本化模式。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qfont.html#capitalization" tppabs="http://pyqt4doc.appspot.com/qfont.html#capitalization">capitalization</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFamily"></a>QFont.setFamily (<i>self</i>, QString)</h3>
+<p>设置字体的系列名称。该名称是区分大小写的，并且可能包括代工的名称。</p>
+<p>该<i>family</i>名称可以任选还包括一个铸造厂的名称，例如“黑体[ Cronyx ]” 。如果<i>family</i>可从一个以上的铸造和未指明的铸造，任意铸造被选择。如果家庭不具备的家庭将使用设置的<a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">font matching</a>算法。</p>
+<p><b>See also</b> <a href="qfont.html#family" tppabs="http://pyqt4doc.appspot.com/qfont.html#family">family</a>（ ）<a href="qfont.html#setStyleHint" tppabs="http://pyqt4doc.appspot.com/qfont.html#setStyleHint">setStyleHint</a>（）和<a href="qfontinfo.html" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html">QFontInfo</a>。</p>
+
+
+<h3 class="fn">
+<a name="setFixedPitch"></a>QFont.setFixedPitch (<i>self</i>, bool)</h3>
+<p>If <i>enable</i>诚然，在设置固定间距，否则套固定摊位了。</p>
+<p><b>See also</b> <a href="qfont.html#fixedPitch" tppabs="http://pyqt4doc.appspot.com/qfont.html#fixedPitch">fixedPitch</a>（）和<a href="qfontinfo.html" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html">QFontInfo</a>。</p>
+
+
+<h3 class="fn">
+<a name="setHintingPreference"></a>QFont.setHintingPreference (<i>self</i>, <a href="qfont.html#HintingPreference-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#HintingPreference-enum">HintingPreference</a> <i>hintingPreference</i>)</h3>
+<p>偏爱字形的暗示级别设置为<i>hintingPreference</i>。这是一个暗示，底层的字体渲染系统使用暗示一定水平，并且跨平台具有不同的支持。请参阅下表说明文档中的<a href="qfont.html#HintingPreference-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#HintingPreference-enum">QFont.HintingPreference</a>更多的细节。</p>
+<p>默认暗示偏好<a href="qfont.html#HintingPreference-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#HintingPreference-enum">QFont.PreferDefaultHinting</a>。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qfont.html#hintingPreference" tppabs="http://pyqt4doc.appspot.com/qfont.html#hintingPreference">hintingPreference</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setItalic"></a>QFont.setItalic (<i>self</i>, bool <i>b</i>)</h3>
+<p>设置<a href="qfont.html#style" tppabs="http://pyqt4doc.appspot.com/qfont.html#style">style</a>的字体（）来<a href="qfont.html#Style-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#Style-enum">QFont.StyleItalic</a>如果<i>enable</i>是真的，否则样式设置为<a href="qfont.html#Style-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#Style-enum">QFont.StyleNormal</a>。</p>
+<p><b>See also</b> <a href="qfont.html#italic" tppabs="http://pyqt4doc.appspot.com/qfont.html#italic">italic</a>（）和<a href="qfontinfo.html" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html">QFontInfo</a>。</p>
+
+
+<h3 class="fn">
+<a name="setKerning"></a>QFont.setKerning (<i>self</i>, bool)</h3>
+<p>启用字距这个字体，如果<i>enable</i>为True，否则禁用它。默认情况下，启用字距调整。</p>
+<p>如果启用字距调整，字形度量对不上号了，即使是拉丁文字。换句话说，该宽度（' a'）的宽度+ （' b'）中的假设是等于宽度（ “AB” ）是不neccesairly真。</p>
+<p><b>See also</b> <a href="qfont.html#kerning" tppabs="http://pyqt4doc.appspot.com/qfont.html#kerning">kerning</a>（）和<a href="qfontmetrics.html" tppabs="http://pyqt4doc.appspot.com/qfontmetrics.html">QFontMetrics</a>。</p>
+
+
+<h3 class="fn">
+<a name="setLetterSpacing"></a>QFont.setLetterSpacing (<i>self</i>, <a href="qfont.html#SpacingType-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#SpacingType-enum">SpacingType</a> <i>type</i>, float <i>spacing</i>)</h3>
+<p>设置字母间距的字体<i>spacing</i>和间距的类型<i>type</i>。</p>
+<p>字母间距改变了字体个别字母之间的默认间距。字母之间的间距可以做得更小以及更大。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qfont.html#letterSpacing" tppabs="http://pyqt4doc.appspot.com/qfont.html#letterSpacing">letterSpacing</a>（ ）<a href="qfont.html#letterSpacingType" tppabs="http://pyqt4doc.appspot.com/qfont.html#letterSpacingType">letterSpacingType</a>（）和<a href="qfont.html#setWordSpacing" tppabs="http://pyqt4doc.appspot.com/qfont.html#setWordSpacing">setWordSpacing</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setOverline"></a>QFont.setOverline (<i>self</i>, bool)</h3>
+<p>If <i>enable</i>诚然，在设置上划线，否则套划线了。</p>
+<p><b>See also</b> <a href="qfont.html#overline" tppabs="http://pyqt4doc.appspot.com/qfont.html#overline">overline</a>（）和<a href="qfontinfo.html" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html">QFontInfo</a>。</p>
+
+
+<h3 class="fn">
+<a name="setPixelSize"></a>QFont.setPixelSize (<i>self</i>, int)</h3>
+<p>设置字体大小<i>pixelSize</i>像素。</p>
+<p>使用此功能使字体与设备相关。使用<a href="qfont.html#setPointSize" tppabs="http://pyqt4doc.appspot.com/qfont.html#setPointSize">setPointSize</a>（）或<a href="qfont.html#setPointSizeF" tppabs="http://pyqt4doc.appspot.com/qfont.html#setPointSizeF">setPointSizeF</a>（）来设置的字体大小的设备中独立的方式。</p>
+<p><b>See also</b> <a href="qfont.html#pixelSize" tppabs="http://pyqt4doc.appspot.com/qfont.html#pixelSize">pixelSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPointSize"></a>QFont.setPointSize (<i>self</i>, int)</h3>
+<p>设置点的大小<i>pointSize</i>。点的大小必须大于零。</p>
+<p><b>See also</b> <a href="qfont.html#pointSize" tppabs="http://pyqt4doc.appspot.com/qfont.html#pointSize">pointSize</a>（）和<a href="qfont.html#setPointSizeF" tppabs="http://pyqt4doc.appspot.com/qfont.html#setPointSizeF">setPointSizeF</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPointSizeF"></a>QFont.setPointSizeF (<i>self</i>, float)</h3>
+<p>设置点的大小<i>pointSize</i>。点的大小必须大于零。所要求的精度可能无法在所有平台上实现。</p>
+<p><b>See also</b> <a href="qfont.html#pointSizeF" tppabs="http://pyqt4doc.appspot.com/qfont.html#pointSizeF">pointSizeF</a>（ ）<a href="qfont.html#setPointSize" tppabs="http://pyqt4doc.appspot.com/qfont.html#setPointSize">setPointSize</a>（）和<a href="qfont.html#setPixelSize" tppabs="http://pyqt4doc.appspot.com/qfont.html#setPixelSize">setPixelSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setRawMode"></a>QFont.setRawMode (<i>self</i>, bool)</h3>
+<p>If <i>enable</i>是真的，将原始的模式，否则将原始模式关闭。此功能只有在X11下的效果。</p>
+<p>如果原始模式被激活， Qt会寻找一个X字体具有完整的字体名匹配的姓，忽略了设置的所有其他值<a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a>。如果字体名称匹配多种字体， Qt会使用由十传回的第一个字体<a href="qfontinfo.html" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html">QFontInfo</a> <i>cannot</i>用于获取有关信息<a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a>使用原始模式（它会返回在设置的值<a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a>对于所有参数，包括姓） 。</p>
+<p><b>Warning:</b>不要使用原始模式，除非你真的需要它！在大多数（如果不是全部）的情况下，<a href="qfont.html#setRawName" tppabs="http://pyqt4doc.appspot.com/qfont.html#setRawName">setRawName</a>（ ）是一个更好的选择。</p>
+<p><b>See also</b> <a href="qfont.html#rawMode" tppabs="http://pyqt4doc.appspot.com/qfont.html#rawMode">rawMode</a>（）和<a href="qfont.html#setRawName" tppabs="http://pyqt4doc.appspot.com/qfont.html#setRawName">setRawName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setRawName"></a>QFont.setRawName (<i>self</i>, QString)</h3>
+<p>其系统的具体名称设置字体。在X下该功能是非常有用的，其中系统字体设置（例如X资源）通常可在XLFD （ X逻辑字体描述）唯一形式。你可以传递一个XLFD为<i>name</i>此功能。</p>
+<p>设置setRawName字体（ ）仍然是一个全功能的<a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a>。它可以查询（例如用<a href="qfont.html#italic" tppabs="http://pyqt4doc.appspot.com/qfont.html#italic">italic</a>（））或修改（例如，利用<a href="qfont.html#setItalic" tppabs="http://pyqt4doc.appspot.com/qfont.html#setItalic">setItalic</a>（） ），因此也适合用于呈现富文本。</p>
+<p>如果Qt的内部字体数据库无法解析的原始名称，字体变成了原始的字体，<i>name</i>作为其家人。</p>
+<p>需要注意的是，本实施中不XLFD的处理通配符很好，而且字体别名（文件<tt>fonts.alias</tt>在X11 ）字体目录不支持。</p>
+<p><b>See also</b> <a href="qfont.html#rawName" tppabs="http://pyqt4doc.appspot.com/qfont.html#rawName">rawName</a>（ ）<a href="qfont.html#setRawMode" tppabs="http://pyqt4doc.appspot.com/qfont.html#setRawMode">setRawMode</a>（）和<a href="qfont.html#setFamily" tppabs="http://pyqt4doc.appspot.com/qfont.html#setFamily">setFamily</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setStretch"></a>QFont.setStretch (<i>self</i>, int)</h3>
+<p>设置为字体的拉伸因子。</p>
+<p>伸展因子变化的字体中的所有字符的宽度<i>factor</i>个百分点。例如，设置<i>factor</i>150导致在字体被（即150 ％）的1.5倍更宽的所有字符。默认拉伸系数为100 。最小拉伸因子是1 ，最大伸长率是4000 。</p>
+<p>上的伸长率是只适用于轮廓字体。拉伸系数被忽略的位图字体。</p>
+<p>注意：<a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a>不能伸展XLFD字体。当装载在X11 XLFD字体，拉伸系数匹配一组预定义的值的XLFD的SETWIDTH_NAME领域。</p>
+<p><b>See also</b> <a href="qfont.html#stretch" tppabs="http://pyqt4doc.appspot.com/qfont.html#stretch">stretch</a>（）和<a href="qfont.html#Stretch-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#Stretch-enum">QFont.Stretch</a>。</p>
+
+
+<h3 class="fn">
+<a name="setStrikeOut"></a>QFont.setStrikeOut (<i>self</i>, bool)</h3>
+<p>If <i>enable</i>是真的，套三振上，否则套三振了。</p>
+<p><b>See also</b> <a href="qfont.html#strikeOut" tppabs="http://pyqt4doc.appspot.com/qfont.html#strikeOut">strikeOut</a>（）和<a href="qfontinfo.html" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html">QFontInfo</a>。</p>
+
+
+<h3 class="fn">
+<a name="setStyle"></a>QFont.setStyle (<i>self</i>, <a href="qfont.html#Style-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#Style-enum">Style</a> <i>style</i>)</h3>
+<p>设置字体的样式<i>style</i>。</p>
+<p><b>See also</b> <a href="qfont.html#style" tppabs="http://pyqt4doc.appspot.com/qfont.html#style">style</a>（ ）<a href="qfont.html#italic" tppabs="http://pyqt4doc.appspot.com/qfont.html#italic">italic</a>（）和<a href="qfontinfo.html" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html">QFontInfo</a>。</p>
+
+
+<h3 class="fn">
+<a name="setStyleHint"></a>QFont.setStyleHint (<i>self</i>, <a href="qfont.html#StyleHint-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#StyleHint-enum">StyleHint</a> <i>hint</i>, <a href="qfont.html#StyleStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#StyleStrategy-enum">StyleStrategy</a> <i>strategy</i> = QFont.PreferDefault)</h3>
+<p>设置风格提示和策略，<i>hint</i>和<i>strategy</i>元。</p>
+<p>如果这些都没有明确设定的样式提示将默认为<tt>AnyStyle</tt>和风格策略，<tt>PreferDefault</tt>。</p>
+<p>Qt不支持样式提示在X11 ，因为没有提供窗口系统信息。</p>
+<p><b>See also</b> <a href="qfont.html#StyleHint-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#StyleHint-enum">StyleHint</a>，<a href="qfont.html#styleHint" tppabs="http://pyqt4doc.appspot.com/qfont.html#styleHint">styleHint</a>（ ）<a href="qfont.html#StyleStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#StyleStrategy-enum">StyleStrategy</a>，<a href="qfont.html#styleStrategy" tppabs="http://pyqt4doc.appspot.com/qfont.html#styleStrategy">styleStrategy</a>（）和<a href="qfontinfo.html" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html">QFontInfo</a>。</p>
+
+
+<h3 class="fn">
+<a name="setStyleName"></a>QFont.setStyleName (<i>self</i>, QString <i>styleName</i>)</h3>
+<p>设置字体的样式名称，以给定的<i>styleName</i>。就像当设置，其他样式属性<a href="qfont.html#style" tppabs="http://pyqt4doc.appspot.com/qfont.html#style">style</a>（）和<a href="qfont.html#weight" tppabs="http://pyqt4doc.appspot.com/qfont.html#weight">weight</a>（ ）将被忽略字体匹配。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qfont.html#styleName" tppabs="http://pyqt4doc.appspot.com/qfont.html#styleName">styleName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setStyleStrategy"></a>QFont.setStyleStrategy (<i>self</i>, <a href="qfont.html#StyleStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#StyleStrategy-enum">StyleStrategy</a> <i>s</i>)</h3>
+<p>设置样式战略字体<i>s</i>。</p>
+<p><b>See also</b> <a href="qfont.html#styleStrategy" tppabs="http://pyqt4doc.appspot.com/qfont.html#styleStrategy">styleStrategy</a>（）和<a href="qfont.html#StyleStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#StyleStrategy-enum">QFont.StyleStrategy</a>。</p>
+
+
+<h3 class="fn">
+<a name="setUnderline"></a>QFont.setUnderline (<i>self</i>, bool)</h3>
+<p>If <i>enable</i>是真的，套下划线上，否则设置下划线关闭。</p>
+<p><b>See also</b> <a href="qfont.html#underline" tppabs="http://pyqt4doc.appspot.com/qfont.html#underline">underline</a>（）和<a href="qfontinfo.html" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html">QFontInfo</a>。</p>
+
+
+<h3 class="fn">
+<a name="setWeight"></a>QFont.setWeight (<i>self</i>, int)</h3>
+<p>设置权重的字体<i>weight</i>，这应该是从一个值<a href="qfont.html#Weight-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#Weight-enum">QFont.Weight</a>枚举。</p>
+<p><b>See also</b> <a href="qfont.html#weight" tppabs="http://pyqt4doc.appspot.com/qfont.html#weight">weight</a>（）和<a href="qfontinfo.html" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html">QFontInfo</a>。</p>
+
+
+<h3 class="fn">
+<a name="setWordSpacing"></a>QFont.setWordSpacing (<i>self</i>, float <i>spacing</i>)</h3>
+<p>设置字间距的字体<i>spacing</i>。</p>
+<p>字间距改变个别单词之间的默认间距。正值增加了字间距由像素的相应金额，而负值减小跨字相应的间距。</p>
+<p>字间距将不适用于书写系统，其中indiviaul话是不是由空格分隔。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qfont.html#wordSpacing" tppabs="http://pyqt4doc.appspot.com/qfont.html#wordSpacing">wordSpacing</a>（）和<a href="qfont.html#setLetterSpacing" tppabs="http://pyqt4doc.appspot.com/qfont.html#setLetterSpacing">setLetterSpacing</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="stretch"></a>int QFont.stretch (<i>self</i>)</h3>
+<p>返回的字体拉伸因子。</p>
+<p><b>See also</b> <a href="qfont.html#setStretch" tppabs="http://pyqt4doc.appspot.com/qfont.html#setStretch">setStretch</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="strikeOut"></a>bool QFont.strikeOut (<i>self</i>)</h3>
+<p>返回True如果三振出局已定，否则返回False 。</p>
+<p><b>See also</b> <a href="qfont.html#setStrikeOut" tppabs="http://pyqt4doc.appspot.com/qfont.html#setStrikeOut">setStrikeOut</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="style"></a><a href="qfont.html#Style-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#Style-enum">Style</a> QFont.style (<i>self</i>)</h3>
+<p>返回字体的风格。</p>
+<p><b>See also</b> <a href="qfont.html#setStyle" tppabs="http://pyqt4doc.appspot.com/qfont.html#setStyle">setStyle</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="styleHint"></a><a href="qfont.html#StyleHint-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#StyleHint-enum">StyleHint</a> QFont.styleHint (<i>self</i>)</h3>
+<p>返回<a href="qfont.html#StyleHint-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#StyleHint-enum">StyleHint</a>。</p>
+<p>风格暗示的影响<a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">font
+matching</a>算法。看<a href="qfont.html#StyleHint-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#StyleHint-enum">QFont.StyleHint</a>对于可用的提示的列表。</p>
+<p><b>See also</b> <a href="qfont.html#setStyleHint" tppabs="http://pyqt4doc.appspot.com/qfont.html#setStyleHint">setStyleHint</a>（ ）<a href="qfont.html#StyleStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#StyleStrategy-enum">QFont.StyleStrategy</a>和<a href="qfontinfo.html#styleHint" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html#styleHint">QFontInfo.styleHint</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="styleName"></a>QString QFont.styleName (<i>self</i>)</h3>
+<p>返回请求的字体样式名称，它将被用来配合不规则样式的字体（即不能在其他样式属性进行归一化） 。这取决于系统字体的支持，因此仅适用于Mac OS X和X11至今。在Windows中不规则的样式将被添加为单独的字体系列所以没有这种需要。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qfont.html#setStyleName" tppabs="http://pyqt4doc.appspot.com/qfont.html#setStyleName">setStyleName</a>（ ）<a href="qfont.html#setFamily" tppabs="http://pyqt4doc.appspot.com/qfont.html#setFamily">setFamily</a>（）和<a href="qfont.html#setStyle" tppabs="http://pyqt4doc.appspot.com/qfont.html#setStyle">setStyle</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="styleStrategy"></a><a href="qfont.html#StyleStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#StyleStrategy-enum">StyleStrategy</a> QFont.styleStrategy (<i>self</i>)</h3>
+<p>返回<a href="qfont.html#StyleStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#StyleStrategy-enum">StyleStrategy</a>。</p>
+<p>风格策略的影响<a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">font
+matching</a>算法。看<a href="qfont.html#StyleStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#StyleStrategy-enum">QFont.StyleStrategy</a>可用策略的列表。</p>
+<p><b>See also</b> <a href="qfont.html#setStyleStrategy" tppabs="http://pyqt4doc.appspot.com/qfont.html#setStyleStrategy">setStyleStrategy</a>（ ）<a href="qfont.html#setStyleHint" tppabs="http://pyqt4doc.appspot.com/qfont.html#setStyleHint">setStyleHint</a>（）和<a href="qfont.html#StyleHint-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#StyleHint-enum">QFont.StyleHint</a>。</p>
+
+
+<h3 class="fn">
+<a name="substitute"></a>QString QFont.substitute (QString)</h3>
+<p>返回第一个系列名称中使用时<i>familyName</i>是指定的。查找不区分大小写。</p>
+<p>如果没有取代<i>familyName</i>，<i>familyName</i>返回。</p>
+<p>取得替换使用列表<a href="qfont.html#substitutes" tppabs="http://pyqt4doc.appspot.com/qfont.html#substitutes">substitutes</a>（ ） 。</p>
+<p><b>See also</b> <a href="qfont.html#setFamily" tppabs="http://pyqt4doc.appspot.com/qfont.html#setFamily">setFamily</a>（ ）<a href="qfont.html#insertSubstitutions" tppabs="http://pyqt4doc.appspot.com/qfont.html#insertSubstitutions">insertSubstitutions</a>（ ）<a href="qfont.html#insertSubstitution" tppabs="http://pyqt4doc.appspot.com/qfont.html#insertSubstitution">insertSubstitution</a>（）和<a href="qfont.html#removeSubstitution" tppabs="http://pyqt4doc.appspot.com/qfont.html#removeSubstitution">removeSubstitution</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="substitutes"></a>QStringList QFont.substitutes (QString)</h3>
+<p>返回姓氏的情况下使用时的清单<i>familyName</i>是指定的。查找不区分大小写。</p>
+<p>如果没有取代<i>familyName</i>，则返回空列表。</p>
+<p><b>See also</b> <a href="qfont.html#substitute" tppabs="http://pyqt4doc.appspot.com/qfont.html#substitute">substitute</a>（ ）<a href="qfont.html#insertSubstitutions" tppabs="http://pyqt4doc.appspot.com/qfont.html#insertSubstitutions">insertSubstitutions</a>（ ）<a href="qfont.html#insertSubstitution" tppabs="http://pyqt4doc.appspot.com/qfont.html#insertSubstitution">insertSubstitution</a>（）和<a href="qfont.html#removeSubstitution" tppabs="http://pyqt4doc.appspot.com/qfont.html#removeSubstitution">removeSubstitution</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="substitutions"></a>QStringList QFont.substitutions ()</h3>
+<p>返回取代姓氏排序的列表。</p>
+<p><b>See also</b> <a href="qfont.html#insertSubstitution" tppabs="http://pyqt4doc.appspot.com/qfont.html#insertSubstitution">insertSubstitution</a>（ ）<a href="qfont.html#removeSubstitution" tppabs="http://pyqt4doc.appspot.com/qfont.html#removeSubstitution">removeSubstitution</a>（）和<a href="qfont.html#substitute" tppabs="http://pyqt4doc.appspot.com/qfont.html#substitute">substitute</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toString"></a>QString QFont.toString (<i>self</i>)</h3>
+<p>返回该字体的描述。描述是一个以逗号分隔的属性，非常适合使用在列表<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>。</p>
+<p><b>See also</b> <a href="qfont.html#fromString" tppabs="http://pyqt4doc.appspot.com/qfont.html#fromString">fromString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="underline"></a>bool QFont.underline (<i>self</i>)</h3>
+<p>返回True如果底线已经被置位，否则返回False 。</p>
+<p><b>See also</b> <a href="qfont.html#setUnderline" tppabs="http://pyqt4doc.appspot.com/qfont.html#setUnderline">setUnderline</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="weight"></a>int QFont.weight (<i>self</i>)</h3>
+<p>从返回的是枚举值中的一个字体的重量<a href="qfont.html#Weight-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#Weight-enum">QFont.Weight</a>。</p>
+<p><b>See also</b> <a href="qfont.html#setWeight" tppabs="http://pyqt4doc.appspot.com/qfont.html#setWeight">setWeight</a>（ ）<a href="qfont.html#Weight-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#Weight-enum">Weight</a>和<a href="qfontinfo.html" tppabs="http://pyqt4doc.appspot.com/qfontinfo.html">QFontInfo</a>。</p>
+
+
+<h3 class="fn">
+<a name="wordSpacing"></a>float QFont.wordSpacing (<i>self</i>)</h3>
+<p>返回字间距字体。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qfont.html#setWordSpacing" tppabs="http://pyqt4doc.appspot.com/qfont.html#setWordSpacing">setWordSpacing</a>（）和<a href="qfont.html#setLetterSpacing" tppabs="http://pyqt4doc.appspot.com/qfont.html#setLetterSpacing">setLetterSpacing</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="__eq__"></a>bool QFont.__eq__ (<i>self</i>, <a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a>)</h3>
+<h3 class="fn">
+<a name="__ge__"></a>bool QFont.__ge__ (<i>self</i>, <a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a>)</h3>
+<h3 class="fn">
+<a name="__lt__"></a>bool QFont.__lt__ (<i>self</i>, <a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QFont.__ne__ (<i>self</i>, <a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

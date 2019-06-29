@@ -1,0 +1,100 @@
+﻿<html>
+<head>
+<title>QSqlRelation Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QSqlRelation Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtsql.html">QtSql</a> module]</sup></sup>
+</h1>
+<p>关于一个SQL外键的QSqlRelation类存储信息。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlrelation.html#QSqlRelation" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html#QSqlRelation">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlrelation.html#QSqlRelation-2" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html#QSqlRelation-2">__init__</a></b> (<i>self</i>, QString <i>aTableName</i>, QString <i>indexCol</i>, QString <i>displayCol</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlrelation.html#QSqlRelation-3" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html#QSqlRelation-3">__init__</a></b> (<i>self</i>, QSqlRelation)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsqlrelation.html#displayColumn" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html#displayColumn">displayColumn</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsqlrelation.html#indexColumn" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html#indexColumn">indexColumn</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqlrelation.html#isValid" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html#isValid">isValid</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsqlrelation.html#tableName" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html#tableName">tableName</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>关于一个SQL外键的QSqlRelation类存储信息。</p>
+<p>QSqlRelation是一个辅助类<a href="qsqlrelationaltablemodel.html" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html">QSqlRelationalTableModel</a>。看<a href="qsqlrelationaltablemodel.html#setRelation" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#setRelation">QSqlRelationalTableModel.setRelation</a>（）和<a href="qsqlrelationaltablemodel.html#relation" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#relation">QSqlRelationalTableModel.relation</a>（ ）了解详情。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QSqlRelation"></a>QSqlRelation.__init__ (<i>self</i>)</h3>
+<p>构造一个无效的<a href="qsqlrelation.html" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html">QSqlRelation</a>对象。</p>
+<p>对于这样一个对象，该<a href="qsqlrelation.html#tableName" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html#tableName">tableName</a>（ ）<a href="qsqlrelation.html#indexColumn" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html#indexColumn">indexColumn</a>（）和<a href="qsqlrelation.html#displayColumn" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html#displayColumn">displayColumn</a>（ ）函数返回一个空字符串。</p>
+<p><b>See also</b> <a href="qsqlrelation.html#isValid" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html#isValid">isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QSqlRelation-2"></a>QSqlRelation.__init__ (<i>self</i>, QString <i>aTableName</i>, QString <i>indexCol</i>, QString <i>displayCol</i>)</h3>
+<p>构造一个<a href="qsqlrelation.html" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html">QSqlRelation</a>对象，其中<i>tableName</i>是指为一个外键引用的SQL表名，<i>indexColumn</i>是外键，和<i>displayColumn</i>是应该被呈现给用户的字段。</p>
+<p><b>See also</b> <a href="qsqlrelation.html#tableName" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html#tableName">tableName</a>（ ）<a href="qsqlrelation.html#indexColumn" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html#indexColumn">indexColumn</a>（）和<a href="qsqlrelation.html#displayColumn" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html#displayColumn">displayColumn</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QSqlRelation-3"></a>QSqlRelation.__init__ (<i>self</i>, <a href="qsqlrelation.html" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html">QSqlRelation</a>)</h3>
+<h3 class="fn">
+<a name="displayColumn"></a>QString QSqlRelation.displayColumn (<i>self</i>)</h3>
+<p>从表中返回列<a href="qsqlrelation.html#tableName" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html#tableName">tableName</a>（）应该被呈现给用户，而不是一个外键。</p>
+
+
+<h3 class="fn">
+<a name="indexColumn"></a>QString QSqlRelation.indexColumn (<i>self</i>)</h3>
+<p>从表中返回索引列<a href="qsqlrelation.html#tableName" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html#tableName">tableName</a>（）到一个外键引用。</p>
+
+
+<h3 class="fn">
+<a name="isValid"></a>bool QSqlRelation.isValid (<i>self</i>)</h3>
+<p>返回True如果<a href="qsqlrelation.html" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html">QSqlRelation</a>对象是有效的，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="tableName"></a>QString QSqlRelation.tableName (<i>self</i>)</h3>
+<p>返回表中，以其中一个外键引用的名称。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

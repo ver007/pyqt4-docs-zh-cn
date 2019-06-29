@@ -1,0 +1,1001 @@
+﻿<html>
+<head>
+<title>QDir Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDir Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>归QDir类提供了访问目录结构和它们的内容。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qdir.html#Filter-enum" tppabs="http://pyqt4doc.appspot.com/qdir.html#Filter-enum">Filter</a></b> { Dirs, Files, Drives, NoSymLinks, ..., NoDotDot }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdir-filters.html">Filters</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qdir.html#SortFlag-enum" tppabs="http://pyqt4doc.appspot.com/qdir.html#SortFlag-enum">SortFlag</a></b> { Name, Time, Size, Unsorted, ..., NoSort }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdir-sortflags.html">SortFlags</a></b>
+</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdir.html#QDir" tppabs="http://pyqt4doc.appspot.com/qdir.html#QDir">__init__</a></b> (<i>self</i>, QDir)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdir.html#QDir-2" tppabs="http://pyqt4doc.appspot.com/qdir.html#QDir-2">__init__</a></b> (<i>self</i>, QString <i>path</i> = QString())</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdir.html#QDir-3" tppabs="http://pyqt4doc.appspot.com/qdir.html#QDir-3">__init__</a></b> (<i>self</i>, QString <i>path</i>, QString <i>nameFilter</i>, SortFlags <i>sort</i> = QDir.Name|QDir.IgnoreCase, Filters <i>filters</i> = QDir.AllEntries)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdir.html#absoluteFilePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#absoluteFilePath">absoluteFilePath</a></b> (<i>self</i>, QString <i>fileName</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdir.html#absolutePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#absolutePath">absolutePath</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdir.html#canonicalPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#canonicalPath">canonicalPath</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdir.html#cd" tppabs="http://pyqt4doc.appspot.com/qdir.html#cd">cd</a></b> (<i>self</i>, QString <i>dirName</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdir.html#cdUp" tppabs="http://pyqt4doc.appspot.com/qdir.html#cdUp">cdUp</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qdir.html#count" tppabs="http://pyqt4doc.appspot.com/qdir.html#count">count</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdir.html#dirName" tppabs="http://pyqt4doc.appspot.com/qdir.html#dirName">dirName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QFileInfo <b><a href="qdir.html#entryInfoList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryInfoList">entryInfoList</a></b> (<i>self</i>, Filters <i>filters</i> = QDir.NoFilter, SortFlags <i>sort</i> = QDir.NoSort)</li>
+<li>
+<div class="fn"></div>list-of-QFileInfo <b><a href="qdir.html#entryInfoList-2" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryInfoList-2">entryInfoList</a></b> (<i>self</i>, QStringList <i>nameFilters</i>, Filters <i>filters</i> = QDir.NoFilter, SortFlags <i>sort</i> = QDir.NoSort)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qdir.html#entryList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryList">entryList</a></b> (<i>self</i>, Filters <i>filters</i> = QDir.NoFilter, SortFlags <i>sort</i> = QDir.NoSort)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qdir.html#entryList-2" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryList-2">entryList</a></b> (<i>self</i>, QStringList <i>nameFilters</i>, Filters <i>filters</i> = QDir.NoFilter, SortFlags <i>sort</i> = QDir.NoSort)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdir.html#exists" tppabs="http://pyqt4doc.appspot.com/qdir.html#exists">exists</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdir.html#exists-2" tppabs="http://pyqt4doc.appspot.com/qdir.html#exists-2">exists</a></b> (<i>self</i>, QString <i>name</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdir.html#filePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#filePath">filePath</a></b> (<i>self</i>, QString <i>fileName</i>)</li>
+<li>
+<div class="fn"></div>Filters <b><a href="qdir.html#filter" tppabs="http://pyqt4doc.appspot.com/qdir.html#filter">filter</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdir.html#isAbsolute" tppabs="http://pyqt4doc.appspot.com/qdir.html#isAbsolute">isAbsolute</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdir.html#isReadable" tppabs="http://pyqt4doc.appspot.com/qdir.html#isReadable">isReadable</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdir.html#isRelative" tppabs="http://pyqt4doc.appspot.com/qdir.html#isRelative">isRelative</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdir.html#isRoot" tppabs="http://pyqt4doc.appspot.com/qdir.html#isRoot">isRoot</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdir.html#makeAbsolute" tppabs="http://pyqt4doc.appspot.com/qdir.html#makeAbsolute">makeAbsolute</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdir.html#mkdir" tppabs="http://pyqt4doc.appspot.com/qdir.html#mkdir">mkdir</a></b> (<i>self</i>, QString <i>dirName</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdir.html#mkpath" tppabs="http://pyqt4doc.appspot.com/qdir.html#mkpath">mkpath</a></b> (<i>self</i>, QString <i>dirPath</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qdir.html#nameFilters" tppabs="http://pyqt4doc.appspot.com/qdir.html#nameFilters">nameFilters</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdir.html#path" tppabs="http://pyqt4doc.appspot.com/qdir.html#path">path</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdir.html#refresh" tppabs="http://pyqt4doc.appspot.com/qdir.html#refresh">refresh</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdir.html#relativeFilePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#relativeFilePath">relativeFilePath</a></b> (<i>self</i>, QString <i>fileName</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdir.html#remove" tppabs="http://pyqt4doc.appspot.com/qdir.html#remove">remove</a></b> (<i>self</i>, QString <i>fileName</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdir.html#rename" tppabs="http://pyqt4doc.appspot.com/qdir.html#rename">rename</a></b> (<i>self</i>, QString <i>oldName</i>, QString <i>newName</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdir.html#rmdir" tppabs="http://pyqt4doc.appspot.com/qdir.html#rmdir">rmdir</a></b> (<i>self</i>, QString <i>dirName</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdir.html#rmpath" tppabs="http://pyqt4doc.appspot.com/qdir.html#rmpath">rmpath</a></b> (<i>self</i>, QString <i>dirPath</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdir.html#setFilter" tppabs="http://pyqt4doc.appspot.com/qdir.html#setFilter">setFilter</a></b> (<i>self</i>, Filters <i>filter</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdir.html#setNameFilters" tppabs="http://pyqt4doc.appspot.com/qdir.html#setNameFilters">setNameFilters</a></b> (<i>self</i>, QStringList <i>nameFilters</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdir.html#setPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#setPath">setPath</a></b> (<i>self</i>, QString <i>path</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdir.html#setSorting" tppabs="http://pyqt4doc.appspot.com/qdir.html#setSorting">setSorting</a></b> (<i>self</i>, SortFlags <i>sort</i>)</li>
+<li>
+<div class="fn"></div>SortFlags <b><a href="qdir.html#sorting" tppabs="http://pyqt4doc.appspot.com/qdir.html#sorting">sorting</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdir.html#addResourceSearchPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#addResourceSearchPath">addResourceSearchPath</a></b> (QString <i>path</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdir.html#addSearchPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#addSearchPath">addSearchPath</a></b> (QString <i>prefix</i>, QString <i>path</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdir.html#cleanPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#cleanPath">cleanPath</a></b> (QString <i>path</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdir.html#convertSeparators" tppabs="http://pyqt4doc.appspot.com/qdir.html#convertSeparators">convertSeparators</a></b> (QString <i>pathName</i>)</li>
+<li>
+<div class="fn"></div>QDir <b><a href="qdir.html#current" tppabs="http://pyqt4doc.appspot.com/qdir.html#current">current</a></b> ()</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdir.html#currentPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#currentPath">currentPath</a></b> ()</li>
+<li>
+<div class="fn"></div>list-of-QFileInfo <b><a href="qdir.html#drives" tppabs="http://pyqt4doc.appspot.com/qdir.html#drives">drives</a></b> ()</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdir.html#fromNativeSeparators" tppabs="http://pyqt4doc.appspot.com/qdir.html#fromNativeSeparators">fromNativeSeparators</a></b> (QString <i>pathName</i>)</li>
+<li>
+<div class="fn"></div>QDir <b><a href="qdir.html#home" tppabs="http://pyqt4doc.appspot.com/qdir.html#home">home</a></b> ()</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdir.html#homePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#homePath">homePath</a></b> ()</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdir.html#isAbsolutePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#isAbsolutePath">isAbsolutePath</a></b> (QString <i>path</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdir.html#isRelativePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#isRelativePath">isRelativePath</a></b> (QString <i>path</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdir.html#match" tppabs="http://pyqt4doc.appspot.com/qdir.html#match">match</a></b> (QStringList <i>filters</i>, QString <i>fileName</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdir.html#match-2" tppabs="http://pyqt4doc.appspot.com/qdir.html#match-2">match</a></b> (QString <i>filter</i>, QString <i>fileName</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qdir.html#nameFiltersFromString" tppabs="http://pyqt4doc.appspot.com/qdir.html#nameFiltersFromString">nameFiltersFromString</a></b> (QString <i>nameFilter</i>)</li>
+<li>
+<div class="fn"></div>QDir <b><a href="qdir.html#root" tppabs="http://pyqt4doc.appspot.com/qdir.html#root">root</a></b> ()</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdir.html#rootPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#rootPath">rootPath</a></b> ()</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qdir.html#searchPaths" tppabs="http://pyqt4doc.appspot.com/qdir.html#searchPaths">searchPaths</a></b> (QString <i>prefix</i>)</li>
+<li>
+<div class="fn"></div>QChar <b><a href="qdir.html#separator" tppabs="http://pyqt4doc.appspot.com/qdir.html#separator">separator</a></b> ()</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdir.html#setCurrent" tppabs="http://pyqt4doc.appspot.com/qdir.html#setCurrent">setCurrent</a></b> (QString <i>path</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdir.html#setSearchPaths" tppabs="http://pyqt4doc.appspot.com/qdir.html#setSearchPaths">setSearchPaths</a></b> (QString <i>prefix</i>, QStringList <i>searchPaths</i>)</li>
+<li>
+<div class="fn"></div>QDir <b><a href="qdir.html#temp" tppabs="http://pyqt4doc.appspot.com/qdir.html#temp">temp</a></b> ()</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdir.html#tempPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#tempPath">tempPath</a></b> ()</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdir.html#toNativeSeparators" tppabs="http://pyqt4doc.appspot.com/qdir.html#toNativeSeparators">toNativeSeparators</a></b> (QString <i>pathName</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>int <b><a href="qdir.html#__contains__" tppabs="http://pyqt4doc.appspot.com/qdir.html#__contains__">__contains__</a></b> (<i>self</i>, QString)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdir.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qdir.html#__eq__">__eq__</a></b> (<i>self</i>, QDir <i>dir</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdir.html#__getitem__" tppabs="http://pyqt4doc.appspot.com/qdir.html#__getitem__">__getitem__</a></b> (<i>self</i>, int)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qdir.html#__getitem__-2" tppabs="http://pyqt4doc.appspot.com/qdir.html#__getitem__-2">__getitem__</a></b> (<i>self</i>, slice)</li>
+<li>
+<div class="fn"></div> <b><a href="qdir.html#__len__" tppabs="http://pyqt4doc.appspot.com/qdir.html#__len__">__len__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdir.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qdir.html#__ne__">__ne__</a></b> (<i>self</i>, QDir <i>dir</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>归QDir类提供了访问目录结构和它们的内容。</p>
+<p>一个的QDir用来操作路径名称，访问有关的路径和文件的信息，并操作底层文件系统。它也可以被用来访问Qt的<a href="index.htm#resource-system" tppabs="http://pyqt4doc.appspot.com/resources.html#resource-system">resource system</a>。</p>
+<p>Qt使用“/”作为以同样的方式， “ / ”作为URL中的路径分隔符的通用目录分隔符。如果你总是使用“ / ”作为目录分隔符， Qt将会把你的路径，以符合底层操作系统。</p>
+<p>一个的QDir可以指向使用相对或绝对路径的文件。绝对路径开头的目录分隔符（前面可以在Windows下的驱动器规格） 。相对文件名开头的目录名或文件名和路径指定一个相对于当前目录。</p>
+<p>绝对路径的例子：</p>
+<pre class="cpp">
+ <span class="type">QDir</span>(<span class="string">"/home/user/Documents"</span>)
+ <span class="type">QDir</span>(<span class="string">"C:/Documents and Settings"</span>)
+</pre>
+<p>在Windows上，上述第二个例子将被转换为<tt>C:\Documents and Settings</tt>用于访问文件时。</p>
+<p>相对路径的例子：</p>
+<pre class="cpp">
+ <span class="type">QDir</span>(<span class="string">"images/landscape.png"</span>)
+</pre>
+<p>您可以使用<a href="qdir.html#isRelative" tppabs="http://pyqt4doc.appspot.com/qdir.html#isRelative">isRelative</a>（）或<a href="qdir.html#isAbsolute" tppabs="http://pyqt4doc.appspot.com/qdir.html#isAbsolute">isAbsolute</a>（ ）函数，如果一个的QDir使用相对或绝对文件路径来检查。通话<a href="qdir.html#makeAbsolute" tppabs="http://pyqt4doc.appspot.com/qdir.html#makeAbsolute">makeAbsolute</a>（ ）到一个相对的QDir转化为绝对的。</p>
+<a id="navigation-and-directory-operations" name="navigation-and-directory-operations"></a>
+<h3>Navigation and Directory Operations</h3>
+<p>一个目录的路径可以用得到<a href="qdir.html#pathx" tppabs="http://pyqt4doc.appspot.com/qdir.html#pathx">path</a>（ ）函数，并设置了一个新的路径<a href="qdir.html#setPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#setPath">setPath</a>（）函数。的绝对路径的目录是通过调用发现<a href="qdir.html#absolutePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#absolutePath">absolutePath</a>（ ） 。</p>
+<p>目录的名称使用中发现的<a href="qdir.html#dirName" tppabs="http://pyqt4doc.appspot.com/qdir.html#dirName">dirName</a>（）函数。这通常返回指定的目录的位置的绝对路径中的最后一个元素。然而，它也可以返回“ 。 ”如果的QDir表示当前目录。</p>
+<pre class="cpp">
+ <span class="type">QDir</span>(<span class="string">"Documents/Letters/Applications"</span>)<span class="operator">.</span>dirName() <span class="comment">// "Applications"</span>
+ <span class="type">QDir</span>()<span class="operator">.</span>dirName()                                 <span class="comment">// "."</span>
+</pre>
+<p>对目录的路径，也可以用改变<a href="qdir.html#cd" tppabs="http://pyqt4doc.appspot.com/qdir.html#cd">cd</a>（）和<a href="qdir.html#cdUp" tppabs="http://pyqt4doc.appspot.com/qdir.html#cdUp">cdUp</a>这两者（ ）函数，操作就像熟悉shell命令。何时<a href="qdir.html#cd" tppabs="http://pyqt4doc.appspot.com/qdir.html#cd">cd</a>（ ）被调用现有的目录的名称，归QDir对象改变目录，它表示该目录代替。该<a href="qdir.html#cdUp" tppabs="http://pyqt4doc.appspot.com/qdir.html#cdUp">cdUp</a>（ ）函数改变的QDir对象的目录，以便它指的是它的父目录，即CD（ “..” ）等价于<a href="qdir.html#cdUp" tppabs="http://pyqt4doc.appspot.com/qdir.html#cdUp">cdUp</a>（ ） 。</p>
+<p>目录可以使用以下命令创建<a href="qdir.html#mkdir" tppabs="http://pyqt4doc.appspot.com/qdir.html#mkdir">mkdir</a>（ ） ，重命名<a href="qdir.html#rename" tppabs="http://pyqt4doc.appspot.com/qdir.html#rename">rename</a>（ ）中，用去除<a href="qdir.html#rmdir" tppabs="http://pyqt4doc.appspot.com/qdir.html#rmdir">rmdir</a>（ ） 。</p>
+<p>您可以通过使用测试具有给定名称的目录存在<a href="qdir.html#exists" tppabs="http://pyqt4doc.appspot.com/qdir.html#exists">exists</a>（ ）和目录的属性可以与被测试<a href="qdir.html#isReadable" tppabs="http://pyqt4doc.appspot.com/qdir.html#isReadable">isReadable</a>（ ）<a href="qdir.html#isAbsolute" tppabs="http://pyqt4doc.appspot.com/qdir.html#isAbsolute">isAbsolute</a>（ ）<a href="qdir.html#isRelative" tppabs="http://pyqt4doc.appspot.com/qdir.html#isRelative">isRelative</a>（）和<a href="qdir.html#isRoot" tppabs="http://pyqt4doc.appspot.com/qdir.html#isRoot">isRoot</a>（ ） 。</p>
+<p>该<a href="qdir.html#refresh" tppabs="http://pyqt4doc.appspot.com/qdir.html#refresh">refresh</a>（ ）函数再从磁盘读取该目录的数据。</p>
+<a id="files-and-directory-contents" name="files-and-directory-contents"></a>
+<h3>Files and Directory Contents</h3>
+<p>目录包含多个条目，代表文件，目录和符号链接。条目中的目录数被返回<a href="qdir.html#count" tppabs="http://pyqt4doc.appspot.com/qdir.html#count">count</a>（ ） 。可以得到在一个目录中的所有条目的名称的字符串列表<a href="qdir.html#entryList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryList">entryList</a>（ ） 。如果您需要了解每一个项目的信息，请使用<a href="qdir.html#entryInfoList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryInfoList">entryInfoList</a>（）获得的一个列表<a href="qfileinfo.html" tppabs="http://pyqt4doc.appspot.com/qfileinfo.html">QFileInfo</a>对象。</p>
+<p>路径文件和一个目录下的目录可以使用构造<a href="qdir.html#filePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#filePath">filePath</a>（）和<a href="qdir.html#absoluteFilePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#absoluteFilePath">absoluteFilePath</a>（ ） 。该<a href="qdir.html#filePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#filePath">filePath</a>（ ）函数返回一个路径指定的文件或目录相对的QDir对象的路径;<a href="qdir.html#absoluteFilePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#absoluteFilePath">absoluteFilePath</a>（ ）返回一个绝对路径指定的文件或目录。无论这些函数会检查文件或目录是否存在，他们只是构建路径。</p>
+<pre class="cpp">
+ <span class="type">QDir</span> directory(<span class="string">"Documents/Letters"</span>);
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> path <span class="operator">=</span> directory<span class="operator">.</span>filePath(<span class="string">"contents.txt"</span>);
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> absolutePath <span class="operator">=</span> directory<span class="operator">.</span>absoluteFilePath(<span class="string">"contents.txt"</span>);
+</pre>
+<p>文件可以通过使用可移除的<a href="qdir.html#remove" tppabs="http://pyqt4doc.appspot.com/qdir.html#remove">remove</a>（）函数。目录不能以同样的方式作为文件被删除;使用<a href="qdir.html#rmdir" tppabs="http://pyqt4doc.appspot.com/qdir.html#rmdir">rmdir</a>（）来代替删除它们。</p>
+<p>它能够减少由返回的条目的数量<a href="qdir.html#entryList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryList">entryList</a>（）和<a href="qdir.html#entryInfoList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryInfoList">entryInfoList</a>（ ）通过应用过滤器到的QDir对象。你可以申请一个名字过滤器来指定使用通配符模式的文件名需要匹配，属性过滤器的选择项的属性和文件和目录可以区分，和排序顺序。</p>
+<p>名称过滤器的字符串传递给该列表<a href="qdir.html#setNameFilters" tppabs="http://pyqt4doc.appspot.com/qdir.html#setNameFilters">setNameFilters</a>（ ） 。属性过滤器由一个过滤器按位或组合，而这些都是调用时指定<a href="qdir.html#setFilter" tppabs="http://pyqt4doc.appspot.com/qdir.html#setFilter">setFilter</a>（ ） 。使用指定的排序顺序<a href="qdir.html#setSorting" tppabs="http://pyqt4doc.appspot.com/qdir.html#setSorting">setSorting</a>（ ）用按位或组合<a href="qdir.html#SortFlag-enum" tppabs="http://pyqt4doc.appspot.com/qdir.html#SortFlag-enum">SortFlags</a>。</p>
+<p>你可以测试一下，看有没有使用的文件名匹配的过滤器<a href="qdir.html#match" tppabs="http://pyqt4doc.appspot.com/qdir.html#match">match</a>（）函数。</p>
+<p>筛选和排序顺序标志也可能被调用时指定<a href="qdir.html#entryList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryList">entryList</a>（）和<a href="qdir.html#entryInfoList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryInfoList">entryInfoList</a>（）以复盖先前定义的行为。</p>
+<a id="the-current-directory-and-other-special-paths" name="the-current-directory-and-other-special-paths"></a>
+<h3>The Current Directory and Other Special Paths</h3>
+<p>访问一些常见的目录设置有若干静态函数返回的QDir对象。还有这些返回字符串对应的功能：</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>QDir</th>
+<th><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></th>
+<th>Return Value</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td>
+<a href="qdir.html#current" tppabs="http://pyqt4doc.appspot.com/qdir.html#current">current</a>()</td>
+<td>
+<a href="qdir.html#currentPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#currentPath">currentPath</a>()</td>
+<td>The application's working directory</td>
+</tr>
+<tr class="even" valign="top">
+<td>
+<a href="qdir.html#home" tppabs="http://pyqt4doc.appspot.com/qdir.html#home">home</a>()</td>
+<td>
+<a href="qdir.html#homePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#homePath">homePath</a>()</td>
+<td>The user's home directory</td>
+</tr>
+<tr class="odd" valign="top">
+<td>
+<a href="qdir.html#root" tppabs="http://pyqt4doc.appspot.com/qdir.html#root">root</a>()</td>
+<td>
+<a href="qdir.html#rootPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#rootPath">rootPath</a>()</td>
+<td>The root directory</td>
+</tr>
+<tr class="even" valign="top">
+<td>
+<a href="qdir.html#temp" tppabs="http://pyqt4doc.appspot.com/qdir.html#temp">temp</a>()</td>
+<td>
+<a href="qdir.html#tempPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#tempPath">tempPath</a>()</td>
+<td>The system's temporary directory</td>
+</tr>
+</table>
+<p>该<a href="qdir.html#setCurrent" tppabs="http://pyqt4doc.appspot.com/qdir.html#setCurrent">setCurrent</a>（ ）静态函数也可以用于设置应用程序的工作目录。</p>
+<p>如果你想找到包含应用程序的可执行文件的目录，请参见<a href="qcoreapplication.html#applicationDirPath" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#applicationDirPath">QCoreApplication.applicationDirPath</a>（ ） 。</p>
+<p>该<a href="qdir.html#drives" tppabs="http://pyqt4doc.appspot.com/qdir.html#drives">drives</a>（）静态函数提供为每个包含一个归档系统设备根目录的列表。在Unix系统中，这会返回一个包含单个根目录“ / ”的列表;在Windows上的列表通常包含<tt>C:/</tt>，以及其他可能的驱动器号，如<tt>D:/</tt>，这取决于用户的系统的配置。</p>
+<a id="path-manipulation-and-strings" name="path-manipulation-and-strings"></a>
+<h3>Path Manipulation and Strings</h3>
+<p>路径包含“ 。 ”引用当前目录在路径点的元素， “..”元素引用的父目录和符号链接可以使用减少到规范形式的<a href="qdir.html#canonicalPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#canonicalPath">canonicalPath</a>（）函数。</p>
+<p>路径也可以通过使用简化的<a href="qdir.html#cleanPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#cleanPath">cleanPath</a>（）删除多馀的“ / ”和“..”元素。</p>
+<p>它有时需要能够显示在本机表示一个路径为用户的平台。静<a href="qdir.html#toNativeSeparators" tppabs="http://pyqt4doc.appspot.com/qdir.html#toNativeSeparators">toNativeSeparators</a>（ ）函数返回，其中每个目录分隔符替换为适当的分隔符底层操作系统的指定路径的一个副本。</p>
+<a id="examples" name="examples"></a>
+<h3>Examples</h3>
+<p>检查目录是否存在：</p>
+<pre class="cpp">
+ <span class="type">QDir</span> dir(<span class="string">"example"</span>);
+ <span class="keyword">if</span> (<span class="operator">!</span>dir<span class="operator">.</span>exists())
+     <a href="index.htm#qWarning" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qWarning">qWarning</a>(<span class="string">"Cannot find the example directory"</span>);
+</pre>
+<p>（我们也可以使用静态的便利功能<a href="qfile.html#exists" tppabs="http://pyqt4doc.appspot.com/qfile.html#exists">QFile.exists</a>（ ） 。 ）</p>
+<p>遍历目录和读取文件：</p>
+<pre class="cpp">
+ <span class="type">QDir</span> dir <span class="operator">=</span> <span class="type">QDir</span><span class="operator">.</span>root();                 <span class="comment">// "/"</span>
+ <span class="keyword">if</span> (<span class="operator">!</span>dir<span class="operator">.</span>cd(<span class="string">"tmp"</span>)) {                    <span class="comment">// "/tmp"</span>
+     <a href="index.htm#qWarning" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qWarning">qWarning</a>(<span class="string">"Cannot find the \"/tmp\" directory"</span>);
+ } <span class="keyword">else</span> {
+     <span class="type"><a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a></span> file(dir<span class="operator">.</span>filePath(<span class="string">"ex1.txt"</span>)); <span class="comment">// "/tmp/ex1.txt"</span>
+     <span class="keyword">if</span> (<span class="operator">!</span>file<span class="operator">.</span>open(<span class="type"><a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a></span><span class="operator">.</span>ReadWrite))
+         <a href="index.htm#qWarning" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qWarning">qWarning</a>(<span class="string">"Cannot create the file %s"</span><span class="operator">,</span> file<span class="operator">.</span>name());
+ }
+</pre>
+<p>一个程序，列出当前目录下的所有文件（不包括符号链接） ，按大小排序，最小的第一：</p>
+<pre class="cpp">
+ <span class="preprocessor">#include &lt;QDir&gt;</span>
+ <span class="preprocessor">#include &lt;iostream&gt;</span>
+
+ <span class="type">int</span> main(<span class="type">int</span> argc<span class="operator">,</span> <span class="type">char</span> <span class="operator">*</span>argv<span class="operator">[</span><span class="operator">]</span>)
+ {
+     <span class="type"><a href="qcoreapplication.html" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html">QCoreApplication</a></span> app(argc<span class="operator">,</span> argv);
+     <span class="type">QDir</span> dir;
+     dir<span class="operator">.</span>setFilter(<span class="type">QDir</span><span class="operator">.</span>Files <span class="operator">|</span> <span class="type">QDir</span><span class="operator">.</span>Hidden <span class="operator">|</span> <span class="type">QDir</span><span class="operator">.</span>NoSymLinks);
+     dir<span class="operator">.</span>setSorting(<span class="type">QDir</span><span class="operator">.</span>Size <span class="operator">|</span> <span class="type">QDir</span><span class="operator">.</span>Reversed);
+
+     <span class="type"><a href="qfileinfo.html#QFileInfoList-typedef" tppabs="http://pyqt4doc.appspot.com/qfileinfo.html#QFileInfoList-typedef">QFileInfoList</a></span> list <span class="operator">=</span> dir<span class="operator">.</span>entryInfoList();
+     std<span class="operator">.</span>cout <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"     Bytes Filename"</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> std<span class="operator">.</span>endl;
+     <span class="keyword">for</span> (<span class="type">int</span> i <span class="operator">=</span> <span class="number">0</span>; i <span class="operator">&lt;</span> list<span class="operator">.</span>size(); <span class="operator">+</span><span class="operator">+</span>i) {
+         <span class="type"><a href="qfileinfo.html" tppabs="http://pyqt4doc.appspot.com/qfileinfo.html">QFileInfo</a></span> fileInfo <span class="operator">=</span> list<span class="operator">.</span>at(i);
+         std<span class="operator">.</span>cout <span class="operator">&lt;</span><span class="operator">&lt;</span> <a href="index.htm#qPrintable" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qPrintable">qPrintable</a>(<span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>(<span class="string">"%1 %2"</span>)<span class="operator">.</span>arg(fileInfo<span class="operator">.</span>size()<span class="operator">,</span> <span class="number">10</span>)
+                                                 <span class="operator">.</span>arg(fileInfo<span class="operator">.</span>fileName()));
+         std<span class="operator">.</span>cout <span class="operator">&lt;</span><span class="operator">&lt;</span> std<span class="operator">.</span>endl;
+     }
+     <span class="keyword">return</span> <span class="number">0</span>;
+ }
+</pre>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="Filter-enum"></a>QDir.Filter</h3>
+<p>这个枚举描述提供给过滤选项<a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a>;如为<a href="qdir.html#entryList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryList">entryList</a>（）和<a href="qdir.html#entryInfoList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryInfoList">entryInfoList</a>（ ） 。指定通过使用按位OR运算符下面的列表值相结合的过滤器值：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.Dirs</tt></td>
+<td class="topAlign"><tt>0x001</tt></td>
+<td class="topAlign">相匹配的过滤器列表目录。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.AllDirs</tt></td>
+<td class="topAlign"><tt>0x400</tt></td>
+<td class="topAlign">列出所有的目录，即不过滤器不适用于目录名。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.Files</tt></td>
+<td class="topAlign"><tt>0x002</tt></td>
+<td class="topAlign">列表文件。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.Drives</tt></td>
+<td class="topAlign"><tt>0x004</tt></td>
+<td class="topAlign">列表磁盘驱动器（在Unix下被忽略） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.NoSymLinks</tt></td>
+<td class="topAlign"><tt>0x008</tt></td>
+<td class="topAlign">不要列出符号链接（由不支持符号连接的操作系统忽略不计） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.NoDotAndDotDot</tt></td>
+<td class="topAlign"><tt>0x1000</tt></td>
+<td class="topAlign">不要列出特殊项目“ 。 ”和“..”。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.NoDot</tt></td>
+<td class="topAlign"><tt>0x2000</tt></td>
+<td class="topAlign">不要列出的特殊条目“ 。”</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.NoDotDot</tt></td>
+<td class="topAlign"><tt>0x4000</tt></td>
+<td class="topAlign">不要列出特殊的入口“..” 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.AllEntries</tt></td>
+<td class="topAlign"><tt>Dirs | Files | Drives</tt></td>
+<td class="topAlign">列出目录，文件，驱动器和符号链接（这并不列出破碎的符号链接，除非您指定系统） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.Readable</tt></td>
+<td class="topAlign"><tt>0x010</tt></td>
+<td class="topAlign">列表文件的应用程序有读权限。可读值需要与显示目录或文件相结合。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.Writable</tt></td>
+<td class="topAlign"><tt>0x020</tt></td>
+<td class="topAlign">列出文件该申请写访问。可写值需要与显示目录或文件相结合。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.Executable</tt></td>
+<td class="topAlign"><tt>0x040</tt></td>
+<td class="topAlign">列出文件该应用程序具有执行权限。可执行值需要与显示目录或文件相结合。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.Modified</tt></td>
+<td class="topAlign"><tt>0x080</tt></td>
+<td class="topAlign">仅列出已修改（忽略在Unix ）文件。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.Hidden</tt></td>
+<td class="topAlign"><tt>0x100</tt></td>
+<td class="topAlign">列出隐藏文件（在Unix上，文件开头的“。”） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.System</tt></td>
+<td class="topAlign"><tt>0x200</tt></td>
+<td class="topAlign">列表的系统文件（在Unix上， FIFO的，插座和设备文件都包括在内;在Windows上，<tt>.lnk</tt>文件都包括在内）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.CaseSensitive</tt></td>
+<td class="topAlign"><tt>0x800</tt></td>
+<td class="topAlign">该过滤器应区分大小写。</td>
+</tr>
+</table>
+<p>使用过滤器枚举值来过滤文件和目录列表的功能将包括符号链接文件和目录，除非你设置NoSymLinks值。</p>
+<p>构造一个默认的<a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a>不会过滤出基于其权限的文件，所以<a href="qdir.html#entryList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryList">entryList</a>（）和<a href="qdir.html#entryInfoList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryInfoList">entryInfoList</a>（ ）将返回一个可读的所有文件，可写，可执行，或三者的任意组合。这使得默认容易编写，并在同一时间是有用的。</p>
+<p>例如，设置<tt>Readable</tt>，<tt>Writable</tt>和<tt>Files</tt>标志允许该应用程序有读权限被列出的所有文件，写访问或两者兼而有之。如果<tt>Dirs</tt>和<tt>Drives</tt>标志也包含在这个组合则所有的驱动器，目录，该应用程序可以读，写或执行所有文件，符号链接到这些文件/目录可以上市。</p>
+<p>检索PERMISSONS的目录，使用<a href="qdir.html#entryInfoList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryInfoList">entryInfoList</a>（ ）函数来获取相关的<a href="qfileinfo.html" tppabs="http://pyqt4doc.appspot.com/qfileinfo.html">QFileInfo</a>对象，然后使用QFileInfo.permissons （ ）来获取权限和所有权的每个文件。</p>
+<p>该过滤器类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>的\u003cfilter\u003e 。它存储滤波值的或组合。</p>
+
+
+<h3 class="fn">
+<a name="SortFlag-enum"></a>QDir.SortFlag</h3>
+<p>这个枚举介绍可用于排序选项<a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a>如为<a href="qdir.html#entryList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryList">entryList</a>（）和<a href="qdir.html#entryInfoList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryInfoList">entryInfoList</a>（ ） 。指定由从以下列表中的OR-ing合值的排序值：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.Name</tt></td>
+<td class="topAlign"><tt>0x00</tt></td>
+<td class="topAlign">按名称排序。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.Time</tt></td>
+<td class="topAlign"><tt>0x01</tt></td>
+<td class="topAlign">按时间排序（修改时间） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.Size</tt></td>
+<td class="topAlign"><tt>0x02</tt></td>
+<td class="topAlign">排序按文件大小。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.Type</tt></td>
+<td class="topAlign"><tt>0x80</tt></td>
+<td class="topAlign">排序文件类型（扩展名） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.Unsorted</tt></td>
+<td class="topAlign"><tt>0x03</tt></td>
+<td class="topAlign">不排序。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.NoSort</tt></td>
+<td class="topAlign"><tt>-1</tt></td>
+<td class="topAlign">没有排序默认。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.DirsFirst</tt></td>
+<td class="topAlign"><tt>0x04</tt></td>
+<td class="topAlign">把该目录，然后是文件。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.DirsLast</tt></td>
+<td class="topAlign"><tt>0x20</tt></td>
+<td class="topAlign">把文件先，然后是目录。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.Reversed</tt></td>
+<td class="topAlign"><tt>0x08</tt></td>
+<td class="topAlign">反向排序。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.IgnoreCase</tt></td>
+<td class="topAlign"><tt>0x10</tt></td>
+<td class="topAlign">排序不区分大小写。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDir.LocaleAware</tt></td>
+<td class="topAlign"><tt>0x40</tt></td>
+<td class="topAlign">适当地使用当前区域设置项进行排序。</td>
+</tr>
+</table>
+<p>您只能指定前四个中的一个。</p>
+<p>如果同时指定DirsFirst和反转，目录还是把第一，但以相反的顺序，该文件会以相反的顺序被列出的目录后，再次。</p>
+<p>该SortFlags类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cSortFlag\u003e 。它存储SortFlag值的或组合。</p>
+
+
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDir"></a>QDir.__init__ (<i>self</i>, <a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a>)</h3>
+<p>构造一个<a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a>对象，它是的一个副本<a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a>反对的目录<i>dir</i>。</p>
+<p><b>See also</b> <a href="qdir.html#operator-eq" tppabs="http://pyqt4doc.appspot.com/qdir.html#operator-eq">operator=</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QDir-2"></a>QDir.__init__ (<i>self</i>, QString <i>path</i> = QString())</h3>
+<p>构造一个<a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a>指向给定目录<i>path</i>。如果path是空的程序的工作目录（ “。”） ，被使用。</p>
+<p><b>See also</b> <a href="qdir.html#currentPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#currentPath">currentPath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QDir-3"></a>QDir.__init__ (<i>self</i>, QString <i>path</i>, QString <i>nameFilter</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdir-sortflags.html">SortFlags</a> <i>sort</i> = QDir.Name|QDir.IgnoreCase, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdir-filters.html">Filters</a> <i>filters</i> = QDir.AllEntries)</h3>
+<p>构造一个<a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a>与路径<i>path</i>，通过名称使用的过滤条目<i>nameFilter</i>并且通过使用属性<i>filters</i>。它还使用排序的名字<i>sort</i>。</p>
+<p>默认<i>nameFilter</i>是一个空字符串，不包括什么，默认<i>filters</i> is <a href="qdir.html#Filter-enum" tppabs="http://pyqt4doc.appspot.com/qdir.html#Filter-enum">AllEntries</a>，这也意味着排除无关。默认<i>sort</i> is <a href="qdir.html#SortFlag-enum" tppabs="http://pyqt4doc.appspot.com/qdir.html#SortFlag-enum">Name</a>|<a href="qdir.html#SortFlag-enum" tppabs="http://pyqt4doc.appspot.com/qdir.html#SortFlag-enum">IgnoreCase</a>，即按名称排序不区分大小写。</p>
+<p>If <i>path</i>是一个空字符串，<a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a>使用“ 。 ” （当前目录） 。如果<i>nameFilter</i>是一个空字符串，<a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a>使用名称过滤器“ * ” （所有文件） 。</p>
+<p>需要注意的是<i>path</i>不需要存在。</p>
+<p><b>See also</b> <a href="qdir.html#exists" tppabs="http://pyqt4doc.appspot.com/qdir.html#exists">exists</a>（ ）<a href="qdir.html#setPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#setPath">setPath</a>（ ）<a class="compat" href="index.htm#setNameFilter" tppabs="http://pyqt4doc.appspot.com/qdir-qt3.html#setNameFilter">setNameFilter</a>（ ）<a href="qdir.html#setFilter" tppabs="http://pyqt4doc.appspot.com/qdir.html#setFilter">setFilter</a>（）和<a href="qdir.html#setSorting" tppabs="http://pyqt4doc.appspot.com/qdir.html#setSorting">setSorting</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="absoluteFilePath"></a>QString QDir.absoluteFilePath (<i>self</i>, QString <i>fileName</i>)</h3>
+<p>返回目录中的文件的绝对路径名。是否<i>not</i>检查文件是否确实存在于目录，但看<a href="qdir.html#exists" tppabs="http://pyqt4doc.appspot.com/qdir.html#exists">exists</a>（ ） 。冗馀的多个隔板或“。 ”中和“..”的目录<i>fileName</i>不会被删除（见<a href="qdir.html#cleanPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#cleanPath">cleanPath</a>（））。</p>
+<p><b>See also</b> <a href="qdir.html#relativeFilePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#relativeFilePath">relativeFilePath</a>（ ）<a href="qdir.html#filePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#filePath">filePath</a>（）和<a href="qdir.html#canonicalPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#canonicalPath">canonicalPath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="absolutePath"></a>QString QDir.absolutePath (<i>self</i>)</h3>
+<p>返回绝对路径（以“ / ”或驱动器规格开始的路径） ，其中可能包含符号链接，但不会包含多馀的“ 。 ” ， “..”或多个分隔符。</p>
+<p><b>See also</b> <a href="qdir.html#setPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#setPath">setPath</a>（ ）<a href="qdir.html#canonicalPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#canonicalPath">canonicalPath</a>（ ）<a href="qdir.html#exists" tppabs="http://pyqt4doc.appspot.com/qdir.html#exists">exists</a>（ ）<a href="qdir.html#cleanPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#cleanPath">cleanPath</a>（ ）<a href="qdir.html#dirName" tppabs="http://pyqt4doc.appspot.com/qdir.html#dirName">dirName</a>（）和<a href="qdir.html#absoluteFilePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#absoluteFilePath">absoluteFilePath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addResourceSearchPath"></a>QDir.addResourceSearchPath (QString <i>path</i>)</h3>
+<h3 class="fn">
+<a name="addSearchPath"></a>QDir.addSearchPath (QString <i>prefix</i>, QString <i>path</i>)</h3>
+<p>添加<i>path</i>为搜索路径<i>prefix</i>。</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qdir.html#setSearchPaths" tppabs="http://pyqt4doc.appspot.com/qdir.html#setSearchPaths">setSearchPaths</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="canonicalPath"></a>QString QDir.canonicalPath (<i>self</i>)</h3>
+<p>返回规范的路径，即路径没有符号链接或多馀的“ 。 ”或“..”元素。</p>
+<p>对不具有符号链接此功能的系统将始终返回相同的字符串<a href="qdir.html#absolutePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#absolutePath">absolutePath</a>（ ）返回。如果规范的路径不存在（通常是由于悬空符号链接） canonicalPath （ ）返回一个空字符串。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> bin <span class="operator">=</span> <span class="string">"/local/bin"</span>;         <span class="comment">// where /local/bin is a symlink to /usr/bin</span>
+ <span class="type"><a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a></span> binDir(bin);
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> canonicalBin <span class="operator">=</span> binDir<span class="operator">.</span>canonicalPath();
+ <span class="comment">// canonicalBin now equals "/usr/bin"</span>
+
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> ls <span class="operator">=</span> <span class="string">"/local/bin/ls"</span>;       <span class="comment">// where ls is the executable "ls"</span>
+ <span class="type"><a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a></span> lsDir(ls);
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> canonicalLs <span class="operator">=</span> lsDir<span class="operator">.</span>canonicalPath();
+ <span class="comment">// canonicalLS now equals "/usr/bin/ls".</span>
+</pre>
+<p><b>See also</b> <a href="qdir.html#pathx" tppabs="http://pyqt4doc.appspot.com/qdir.html#pathx">path</a>（ ）<a href="qdir.html#absolutePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#absolutePath">absolutePath</a>（ ）<a href="qdir.html#exists" tppabs="http://pyqt4doc.appspot.com/qdir.html#exists">exists</a>（ ）<a href="qdir.html#cleanPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#cleanPath">cleanPath</a>（ ）<a href="qdir.html#dirName" tppabs="http://pyqt4doc.appspot.com/qdir.html#dirName">dirName</a>（）和<a href="qdir.html#absoluteFilePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#absoluteFilePath">absoluteFilePath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="cd"></a>bool QDir.cd (<i>self</i>, QString <i>dirName</i>)</h3>
+<p>更改<a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a>的目录<i>dirName</i>。</p>
+<p>返回True如果新的目录存在并且可读，否则返回False 。请注意，如果新的目录不存在，不进行逻辑CD （）操作。</p>
+<p>调用CD（ “..”）等同于调用<a href="qdir.html#cdUp" tppabs="http://pyqt4doc.appspot.com/qdir.html#cdUp">cdUp</a>（ ） 。</p>
+<p><b>See also</b> <a href="qdir.html#cdUp" tppabs="http://pyqt4doc.appspot.com/qdir.html#cdUp">cdUp</a>（ ）<a href="qdir.html#isReadable" tppabs="http://pyqt4doc.appspot.com/qdir.html#isReadable">isReadable</a>（ ）<a href="qdir.html#exists" tppabs="http://pyqt4doc.appspot.com/qdir.html#exists">exists</a>（）和<a href="qdir.html#pathx" tppabs="http://pyqt4doc.appspot.com/qdir.html#pathx">path</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="cdUp"></a>bool QDir.cdUp (<i>self</i>)</h3>
+<p>通过移动一个目录从该目录的变化<a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a>目前的目录。</p>
+<p>返回True如果新的目录存在并且可读，否则返回False 。请注意，如果新的目录不存在，不进行逻辑CDUP （）操作。</p>
+<p><b>See also</b> <a href="qdir.html#cd" tppabs="http://pyqt4doc.appspot.com/qdir.html#cd">cd</a>（ ）<a href="qdir.html#isReadable" tppabs="http://pyqt4doc.appspot.com/qdir.html#isReadable">isReadable</a>（ ）<a href="qdir.html#exists" tppabs="http://pyqt4doc.appspot.com/qdir.html#exists">exists</a>（）和<a href="qdir.html#pathx" tppabs="http://pyqt4doc.appspot.com/qdir.html#pathx">path</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="cleanPath"></a>QString QDir.cleanPath (QString <i>path</i>)</h3>
+<p>移除所有多个目录分隔符“ / ” ，并解决在路径中找到任何“ ，” s或“..” S，<i>path</i>。</p>
+<p>符号链接将被保留。这个函数不返回规范路径，而是将输入的简单版本。例如， “ /本地”变成了“本地” ， “本地/ 。 。 / bin”就会变成“垃圾桶”和“ /本地/ usr / 。 。 / bin”就会变成“ / local / bin目录” 。</p>
+<p><b>See also</b> <a href="qdir.html#absolutePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#absolutePath">absolutePath</a>（）和<a href="qdir.html#canonicalPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#canonicalPath">canonicalPath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="convertSeparators"></a>QString QDir.convertSeparators (QString <i>pathName</i>)</h3>
+<h3 class="fn">
+<a name="count"></a>int QDir.count (<i>self</i>)</h3>
+<p>返回目录和文件的目录总数。</p>
+<p>相当于<a href="qdir.html#entryList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryList">entryList</a>（ ） ， COUNT（ ） 。</p>
+<p><b>See also</b> <a href="qdir.html#operator-5b-5d" tppabs="http://pyqt4doc.appspot.com/qdir.html#operator-5b-5d">operator[]</a>（）和<a href="qdir.html#entryList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryList">entryList</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="current"></a><a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a> QDir.current ()</h3>
+<p>返回应用程序的当前目录。</p>
+<p>该目录是使用当前目录的绝对路径，确保构建其<a href="qdir.html#pathx" tppabs="http://pyqt4doc.appspot.com/qdir.html#pathx">path</a>（）将是相同的其<a href="qdir.html#absolutePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#absolutePath">absolutePath</a>（ ） 。</p>
+<p><b>See also</b> <a href="qdir.html#currentPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#currentPath">currentPath</a>（ ）<a href="qdir.html#setCurrent" tppabs="http://pyqt4doc.appspot.com/qdir.html#setCurrent">setCurrent</a>（ ）<a href="qdir.html#home" tppabs="http://pyqt4doc.appspot.com/qdir.html#home">home</a>（ ）<a href="qdir.html#root" tppabs="http://pyqt4doc.appspot.com/qdir.html#root">root</a>（）和<a href="qdir.html#temp" tppabs="http://pyqt4doc.appspot.com/qdir.html#temp">temp</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentPath"></a>QString QDir.currentPath ()</h3>
+<p>返回应用程序的当前目录的绝对路径。</p>
+<p><b>See also</b> <a href="qdir.html#current" tppabs="http://pyqt4doc.appspot.com/qdir.html#current">current</a>（ ）<a href="qdir.html#setCurrent" tppabs="http://pyqt4doc.appspot.com/qdir.html#setCurrent">setCurrent</a>（ ）<a href="qdir.html#homePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#homePath">homePath</a>（ ）<a href="qdir.html#rootPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#rootPath">rootPath</a>（）和<a href="qdir.html#tempPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#tempPath">tempPath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="dirName"></a>QString QDir.dirName (<i>self</i>)</h3>
+<p>返回目录的名称，这是<i>not</i>相同的路径，例如名称为“邮件”的目录，可能有路径“的/ var / spool / mail中” 。如果目录没有名称（例如，它是根目录）一个空字符串返回。</p>
+<p>没有检查，以确保与此名称的目录确实存在，但看<a href="qdir.html#exists" tppabs="http://pyqt4doc.appspot.com/qdir.html#exists">exists</a>（ ） 。</p>
+<p><b>See also</b> <a href="qdir.html#pathx" tppabs="http://pyqt4doc.appspot.com/qdir.html#pathx">path</a>（ ）<a href="qdir.html#filePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#filePath">filePath</a>（ ）<a href="qdir.html#absolutePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#absolutePath">absolutePath</a>（）和<a href="qdir.html#absoluteFilePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#absoluteFilePath">absoluteFilePath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="drives"></a>list-of-QFileInfo QDir.drives ()</h3>
+<p>返回此系统的根目录的列表。</p>
+<p>在Windows中，此方法返回列表<a href="qfileinfo.html" tppabs="http://pyqt4doc.appspot.com/qfileinfo.html">QFileInfo</a>包含对象的“C :/ ” ， “D ​​:/ ”等在其他操作系统上，它返回一个包含只有一个根目录（即“/”）的列表。</p>
+<p><b>See also</b> <a href="qdir.html#root" tppabs="http://pyqt4doc.appspot.com/qdir.html#root">root</a>（）和<a href="qdir.html#rootPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#rootPath">rootPath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="entryInfoList"></a>list-of-QFileInfo QDir.entryInfoList (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdir-filters.html">Filters</a> <i>filters</i> = QDir.NoFilter, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdir-sortflags.html">SortFlags</a> <i>sort</i> = QDir.NoSort)</h3>
+<p>返回列表<a href="qfileinfo.html" tppabs="http://pyqt4doc.appspot.com/qfileinfo.html">QFileInfo</a>在目录中的所有文件和目录对象，根据名称和属性序滤事先用<a href="qdir.html#setNameFilters" tppabs="http://pyqt4doc.appspot.com/qdir.html#setNameFilters">setNameFilters</a>（）和<a href="qdir.html#setFilter" tppabs="http://pyqt4doc.appspot.com/qdir.html#setFilter">setFilter</a>（ ） ，并排序按设定的标志<a href="qdir.html#setSorting" tppabs="http://pyqt4doc.appspot.com/qdir.html#setSorting">setSorting</a>（ ） 。</p>
+<p>该名过滤器，文件属性过滤和排序规范可以使用被复盖的<i>nameFilters</i>，<i>filters</i>和<i>sort</i>参数。</p>
+<p>返回空列表，如果该目录是不可读的，不存在，或者如果没有的规格相匹配。</p>
+<p><b>See also</b> <a href="qdir.html#entryList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryList">entryList</a>（ ）<a href="qdir.html#setNameFilters" tppabs="http://pyqt4doc.appspot.com/qdir.html#setNameFilters">setNameFilters</a>（ ）<a href="qdir.html#setSorting" tppabs="http://pyqt4doc.appspot.com/qdir.html#setSorting">setSorting</a>（ ）<a href="qdir.html#setFilter" tppabs="http://pyqt4doc.appspot.com/qdir.html#setFilter">setFilter</a>（ ）<a href="qdir.html#isReadable" tppabs="http://pyqt4doc.appspot.com/qdir.html#isReadable">isReadable</a>（）和<a href="qdir.html#exists" tppabs="http://pyqt4doc.appspot.com/qdir.html#exists">exists</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="entryInfoList-2"></a>list-of-QFileInfo QDir.entryInfoList (<i>self</i>, QStringList <i>nameFilters</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdir-filters.html">Filters</a> <i>filters</i> = QDir.NoFilter, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdir-sortflags.html">SortFlags</a> <i>sort</i> = QDir.NoSort)</h3>
+<p>这是一个重载函数。</p>
+<p>返回列表<a href="qfileinfo.html" tppabs="http://pyqt4doc.appspot.com/qfileinfo.html">QFileInfo</a>在目录中的所有文件和目录对象，根据名称和属性序滤事先用<a href="qdir.html#setNameFilters" tppabs="http://pyqt4doc.appspot.com/qdir.html#setNameFilters">setNameFilters</a>（）和<a href="qdir.html#setFilter" tppabs="http://pyqt4doc.appspot.com/qdir.html#setFilter">setFilter</a>（ ） ，并排序按设定的标志<a href="qdir.html#setSorting" tppabs="http://pyqt4doc.appspot.com/qdir.html#setSorting">setSorting</a>（ ） 。</p>
+<p>该属性过滤和排序的规定可以使用被复盖的<i>filters</i>和<i>sort</i>参数。</p>
+<p>返回空列表，如果该目录是不可读的，不存在，或者如果没有的规格相匹配。</p>
+<p><b>See also</b> <a href="qdir.html#entryList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryList">entryList</a>（ ）<a href="qdir.html#setNameFilters" tppabs="http://pyqt4doc.appspot.com/qdir.html#setNameFilters">setNameFilters</a>（ ）<a href="qdir.html#setSorting" tppabs="http://pyqt4doc.appspot.com/qdir.html#setSorting">setSorting</a>（ ）<a href="qdir.html#setFilter" tppabs="http://pyqt4doc.appspot.com/qdir.html#setFilter">setFilter</a>（ ）<a href="qdir.html#isReadable" tppabs="http://pyqt4doc.appspot.com/qdir.html#isReadable">isReadable</a>（）和<a href="qdir.html#exists" tppabs="http://pyqt4doc.appspot.com/qdir.html#exists">exists</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="entryList"></a>QStringList QDir.entryList (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdir-filters.html">Filters</a> <i>filters</i> = QDir.NoFilter, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdir-sortflags.html">SortFlags</a> <i>sort</i> = QDir.NoSort)</h3>
+<p>返回目录中的所有文件和目录的名称列表，责令按照名称和属性之前设置过滤器<a href="qdir.html#setNameFilters" tppabs="http://pyqt4doc.appspot.com/qdir.html#setNameFilters">setNameFilters</a>（）和<a href="qdir.html#setFilter" tppabs="http://pyqt4doc.appspot.com/qdir.html#setFilter">setFilter</a>（ ） ，并排序按设定的标志<a href="qdir.html#setSorting" tppabs="http://pyqt4doc.appspot.com/qdir.html#setSorting">setSorting</a>（ ） 。</p>
+<p>该名过滤器，文件属性过滤和排序规范可以使用被复盖的<i>nameFilters</i>，<i>filters</i>和<i>sort</i>参数。</p>
+<p>返回空列表，如果该目录是不可读的，不存在，或者如果没有的规格相匹配。</p>
+<p><b>See also</b> <a href="qdir.html#entryInfoList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryInfoList">entryInfoList</a>（ ）<a href="qdir.html#setNameFilters" tppabs="http://pyqt4doc.appspot.com/qdir.html#setNameFilters">setNameFilters</a>（ ）<a href="qdir.html#setSorting" tppabs="http://pyqt4doc.appspot.com/qdir.html#setSorting">setSorting</a>（）和<a href="qdir.html#setFilter" tppabs="http://pyqt4doc.appspot.com/qdir.html#setFilter">setFilter</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="entryList-2"></a>QStringList QDir.entryList (<i>self</i>, QStringList <i>nameFilters</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdir-filters.html">Filters</a> <i>filters</i> = QDir.NoFilter, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdir-sortflags.html">SortFlags</a> <i>sort</i> = QDir.NoSort)</h3>
+<p>这是一个重载函数。</p>
+<p>返回目录中的所有文件和目录的名称列表，责令按照名称和属性之前设置过滤器<a href="qdir.html#setNameFilters" tppabs="http://pyqt4doc.appspot.com/qdir.html#setNameFilters">setNameFilters</a>（）和<a href="qdir.html#setFilter" tppabs="http://pyqt4doc.appspot.com/qdir.html#setFilter">setFilter</a>（ ） ，并排序按设定的标志<a href="qdir.html#setSorting" tppabs="http://pyqt4doc.appspot.com/qdir.html#setSorting">setSorting</a>（ ） 。</p>
+<p>该属性过滤和排序的规定可以使用被复盖的<i>filters</i>和<i>sort</i>参数。</p>
+<p>返回空列表，如果该目录是不可读的，不存在，或者如果没有的规格相匹配。</p>
+<p><b>Note:</b>要列出指向不存在的文件的符号链接，<a href="qdir.html#Filter-enum" tppabs="http://pyqt4doc.appspot.com/qdir.html#Filter-enum">System</a>必须被传递到过滤器。</p>
+<p><b>See also</b> <a href="qdir.html#entryInfoList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryInfoList">entryInfoList</a>（ ）<a href="qdir.html#setNameFilters" tppabs="http://pyqt4doc.appspot.com/qdir.html#setNameFilters">setNameFilters</a>（ ）<a href="qdir.html#setSorting" tppabs="http://pyqt4doc.appspot.com/qdir.html#setSorting">setSorting</a>（）和<a href="qdir.html#setFilter" tppabs="http://pyqt4doc.appspot.com/qdir.html#setFilter">setFilter</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="exists"></a>bool QDir.exists (<i>self</i>)</h3>
+<p>返回True如果调用的文件<i>name</i>存在，否则返回False 。</p>
+<p>除非<i>name</i>包含一个绝对文件路径，文件名被假定为是相对于目录本身，所以这个功能通常用于检查文件的目录中存在。</p>
+<p><b>See also</b> <a href="qfileinfo.html#exists" tppabs="http://pyqt4doc.appspot.com/qfileinfo.html#exists">QFileInfo.exists</a>（）和<a href="qfile.html#exists" tppabs="http://pyqt4doc.appspot.com/qfile.html#exists">QFile.exists</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="exists-2"></a>bool QDir.exists (<i>self</i>, QString <i>name</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回True如果该目录存在，否则返回False 。 （如果找到具有相同名称的文件此函数将返回False ） 。</p>
+<p>这个函数接受一个参数的重载是用来测试文件和目录的目录中存在。</p>
+<p><b>See also</b> <a href="qfileinfo.html#exists" tppabs="http://pyqt4doc.appspot.com/qfileinfo.html#exists">QFileInfo.exists</a>（）和<a href="qfile.html#exists" tppabs="http://pyqt4doc.appspot.com/qfile.html#exists">QFile.exists</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="filePath"></a>QString QDir.filePath (<i>self</i>, QString <i>fileName</i>)</h3>
+<p>返回目录中的文件的路径名。是否<i>not</i>检查文件是否确实存在于目录，但看<a href="qdir.html#exists" tppabs="http://pyqt4doc.appspot.com/qdir.html#exists">exists</a>（ ） 。如果<a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a>相对于返回的路径名称也将是相对的。冗馀的多个隔板或“。 ”中和“..”的目录<i>fileName</i>不会被删除（见<a href="qdir.html#cleanPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#cleanPath">cleanPath</a>（））。</p>
+<p><b>See also</b> <a href="qdir.html#dirName" tppabs="http://pyqt4doc.appspot.com/qdir.html#dirName">dirName</a>（ ）<a href="qdir.html#absoluteFilePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#absoluteFilePath">absoluteFilePath</a>（ ）<a href="qdir.html#isRelative" tppabs="http://pyqt4doc.appspot.com/qdir.html#isRelative">isRelative</a>（）和<a href="qdir.html#canonicalPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#canonicalPath">canonicalPath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="filter"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdir-filters.html">Filters</a> QDir.filter (<i>self</i>)</h3>
+<p>返回由设置的值<a href="qdir.html#setFilter" tppabs="http://pyqt4doc.appspot.com/qdir.html#setFilter">setFilter</a>（ ）</p>
+<p><b>See also</b> <a href="qdir.html#setFilter" tppabs="http://pyqt4doc.appspot.com/qdir.html#setFilter">setFilter</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fromNativeSeparators"></a>QString QDir.fromNativeSeparators (QString <i>pathName</i>)</h3>
+<p>Returns <i>pathName</i>用'/'作为文件分隔符。在Windows上，例如， fromNativeSeparators （ “<tt>c:\\winnt\\system32</tt>“）返回” C :/在winnt/system32 “ 。</p>
+<p>返回的字符串可能是相同的说法在某些操作系统上，例如在Unix上。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qdir.html#toNativeSeparators" tppabs="http://pyqt4doc.appspot.com/qdir.html#toNativeSeparators">toNativeSeparators</a>（）和<a href="qdir.html#separator" tppabs="http://pyqt4doc.appspot.com/qdir.html#separator">separator</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="home"></a><a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a> QDir.home ()</h3>
+<p>返回用户的主目录。</p>
+<p>该目录是使用主目录的绝对路径，确保构建其<a href="qdir.html#pathx" tppabs="http://pyqt4doc.appspot.com/qdir.html#pathx">path</a>（）将是相同的其<a href="qdir.html#absolutePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#absolutePath">absolutePath</a>（ ） 。</p>
+<p>See <a href="qdir.html#homePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#homePath">homePath</a>（ ）了解详情。</p>
+<p><b>See also</b> <a href="qdir.html#drives" tppabs="http://pyqt4doc.appspot.com/qdir.html#drives">drives</a>（ ）<a href="qdir.html#current" tppabs="http://pyqt4doc.appspot.com/qdir.html#current">current</a>（ ）<a href="qdir.html#root" tppabs="http://pyqt4doc.appspot.com/qdir.html#root">root</a>（）和<a href="qdir.html#temp" tppabs="http://pyqt4doc.appspot.com/qdir.html#temp">temp</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="homePath"></a>QString QDir.homePath ()</h3>
+<p>返回用户的主目录的绝对路径。</p>
+<p>在Windows下这个函数会返回当前用户的配置文件的目录。典型地，这是：</p>
+<pre class="cpp">
+ C:<span class="operator">/</span>Documents <span class="keyword">and</span> Settings<span class="operator">/</span>Username
+</pre>
+<p>使用<a href="qdir.html#toNativeSeparators" tppabs="http://pyqt4doc.appspot.com/qdir.html#toNativeSeparators">toNativeSeparators</a>（ ）函数的分隔符转换为那些适用于底层的操作系统。</p>
+<p>如果当前用户的配置文件的目录不存在或无法检索，下面的替代品将被选中（在给定的顺序），直到现有的和可用的路径中找到：</p>
+<ol class="1">
+<li>由指定的路径<tt>USERPROFILE</tt>环境变量。</li>
+<li>通过连接形成的路径<tt>HOMEDRIVE</tt>和<tt>HOMEPATH</tt>环境变量。</li>
+<li>由指定的路径<tt>HOME</tt>环境变量。</li>
+<li>在返回的路径<a href="qdir.html#rootPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#rootPath">rootPath</a>（）函数（它使用<tt>SystemDrive</tt>环境变量）</li>
+<li>该<tt>C:/</tt>目录。</li>
+</ol>
+<p>在非Windows操作系统<tt>HOME</tt>环境变量用于如果存在的话，否则路径的返回<a href="qdir.html#rootPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#rootPath">rootPath</a>（ ） 。</p>
+<p>在Symbian这通常会返回“C :/数据”，即同本地PathInfo.PhoneMemoryRootPath （ ） 。</p>
+<p><b>See also</b> <a href="qdir.html#home" tppabs="http://pyqt4doc.appspot.com/qdir.html#home">home</a>（ ）<a href="qdir.html#currentPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#currentPath">currentPath</a>（ ）<a href="qdir.html#rootPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#rootPath">rootPath</a>（）和<a href="qdir.html#tempPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#tempPath">tempPath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isAbsolute"></a>bool QDir.isAbsolute (<i>self</i>)</h3>
+<p>返回True如果该目录的路径是绝对的，否则返回False 。看<a href="qdir.html#isAbsolutePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#isAbsolutePath">isAbsolutePath</a>（ ） 。</p>
+<p><b>See also</b> <a href="qdir.html#isRelative" tppabs="http://pyqt4doc.appspot.com/qdir.html#isRelative">isRelative</a>（ ）<a href="qdir.html#makeAbsolute" tppabs="http://pyqt4doc.appspot.com/qdir.html#makeAbsolute">makeAbsolute</a>（）和<a href="qdir.html#cleanPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#cleanPath">cleanPath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isAbsolutePath"></a>bool QDir.isAbsolutePath (QString <i>path</i>)</h3>
+<p>返回True如果<i>path</i>是绝对的，如果它是相对于返回False 。</p>
+<p><b>See also</b> <a href="qdir.html#isAbsolute" tppabs="http://pyqt4doc.appspot.com/qdir.html#isAbsolute">isAbsolute</a>（ ）<a href="qdir.html#isRelativePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#isRelativePath">isRelativePath</a>（ ）<a href="qdir.html#makeAbsolute" tppabs="http://pyqt4doc.appspot.com/qdir.html#makeAbsolute">makeAbsolute</a>（）和<a href="qdir.html#cleanPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#cleanPath">cleanPath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isReadable"></a>bool QDir.isReadable (<i>self</i>)</h3>
+<p>返回True如果该目录是可读的<i>and</i>我们可以通过名字打开文件，否则返回False 。</p>
+<p><b>Warning:</b>从这个函数值为False并不保证该目录中的文件无法访问。</p>
+<p><b>See also</b> <a href="qfileinfo.html#isReadable" tppabs="http://pyqt4doc.appspot.com/qfileinfo.html#isReadable">QFileInfo.isReadable</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isRelative"></a>bool QDir.isRelative (<i>self</i>)</h3>
+<p>返回True如果该目录是相对路径，否则返回False 。 （在Unix下的路径是相对的，如果它不是以一个“/”） 。</p>
+<p><b>See also</b> <a href="qdir.html#makeAbsolute" tppabs="http://pyqt4doc.appspot.com/qdir.html#makeAbsolute">makeAbsolute</a>（ ）<a href="qdir.html#isAbsolute" tppabs="http://pyqt4doc.appspot.com/qdir.html#isAbsolute">isAbsolute</a>（ ）<a href="qdir.html#isAbsolutePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#isAbsolutePath">isAbsolutePath</a>（）和<a href="qdir.html#cleanPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#cleanPath">cleanPath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isRelativePath"></a>bool QDir.isRelativePath (QString <i>path</i>)</h3>
+<p>返回True如果<i>path</i>是相对的，如果它是绝对的返回False 。</p>
+<p><b>See also</b> <a href="qdir.html#isRelative" tppabs="http://pyqt4doc.appspot.com/qdir.html#isRelative">isRelative</a>（ ）<a href="qdir.html#isAbsolutePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#isAbsolutePath">isAbsolutePath</a>（）和<a href="qdir.html#makeAbsolute" tppabs="http://pyqt4doc.appspot.com/qdir.html#makeAbsolute">makeAbsolute</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isRoot"></a>bool QDir.isRoot (<i>self</i>)</h3>
+<p>返回True如果该目录是根目录，否则返回False 。</p>
+<p>注：如果该目录是根目录下的符号链接这个函数返回False 。如果你想测试这个使用<a href="qdir.html#canonicalPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#canonicalPath">canonicalPath</a>（ ），例如</p>
+<pre class="cpp">
+ <span class="type"><a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a></span> dir(<span class="string">"/tmp/root_link"</span>);
+ dir <span class="operator">=</span> dir<span class="operator">.</span>canonicalPath();
+ <span class="keyword">if</span> (dir<span class="operator">.</span>isRoot())
+     <a href="index.htm#qWarning" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qWarning">qWarning</a>(<span class="string">"It is a root link"</span>);
+</pre>
+<p><b>See also</b> <a href="qdir.html#root" tppabs="http://pyqt4doc.appspot.com/qdir.html#root">root</a>（）和<a href="qdir.html#rootPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#rootPath">rootPath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="makeAbsolute"></a>bool QDir.makeAbsolute (<i>self</i>)</h3>
+<p>目录路径为绝对路径转换。如果它已经绝对没有任何反应。返回True如果转换成功，否则返回False 。</p>
+<p><b>See also</b> <a href="qdir.html#isAbsolute" tppabs="http://pyqt4doc.appspot.com/qdir.html#isAbsolute">isAbsolute</a>（ ）<a href="qdir.html#isAbsolutePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#isAbsolutePath">isAbsolutePath</a>（ ）<a href="qdir.html#isRelative" tppabs="http://pyqt4doc.appspot.com/qdir.html#isRelative">isRelative</a>（）和<a href="qdir.html#cleanPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#cleanPath">cleanPath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="match"></a>bool QDir.match (QStringList <i>filters</i>, QString <i>fileName</i>)</h3>
+<p>返回True如果<i>fileName</i>匹配通配符（ GLOB ）模式<i>filter</i>否则返回False 。该<i>filter</i>可能包含由空格或分号分隔的多个模式。匹配不区分大小写。</p>
+<p><b>See also</b> <a href="qregexp.html#qregexp-wildcard-matching" tppabs="http://pyqt4doc.appspot.com/qregexp.html#qregexp-wildcard-matching">QRegExp wildcard
+matching</a>，<a href="qregexp.html#exactMatch" tppabs="http://pyqt4doc.appspot.com/qregexp.html#exactMatch">QRegExp.exactMatch</a>（ ）<a href="qdir.html#entryList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryList">entryList</a>（）和<a href="qdir.html#entryInfoList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryInfoList">entryInfoList</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="match-2"></a>bool QDir.match (QString <i>filter</i>, QString <i>fileName</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回True如果<i>fileName</i>匹配任何通配符的（水珠）模式中的列表<i>filters</i>否则返回False 。匹配不区分大小写。</p>
+<p><b>See also</b> <a href="qregexp.html#qregexp-wildcard-matching" tppabs="http://pyqt4doc.appspot.com/qregexp.html#qregexp-wildcard-matching">QRegExp wildcard
+matching</a>，<a href="qregexp.html#exactMatch" tppabs="http://pyqt4doc.appspot.com/qregexp.html#exactMatch">QRegExp.exactMatch</a>（ ）<a href="qdir.html#entryList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryList">entryList</a>（）和<a href="qdir.html#entryInfoList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryInfoList">entryInfoList</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mkdir"></a>bool QDir.mkdir (<i>self</i>, QString <i>dirName</i>)</h3>
+<p>创建一个子目录名为<i>dirName</i>。</p>
+<p>成功时返回TRUE ，否则返回False 。</p>
+<p>如果该目录已经存在时，这个函数被调用时，它会返回False 。</p>
+<p><b>See also</b> <a href="qdir.html#rmdir" tppabs="http://pyqt4doc.appspot.com/qdir.html#rmdir">rmdir</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mkpath"></a>bool QDir.mkpath (<i>self</i>, QString <i>dirPath</i>)</h3>
+<p>创建该目录路径<i>dirPath</i>。</p>
+<p>该函数将创建需要创建该目录下所有的父目录。</p>
+<p>成功返回True ，否则返回False 。</p>
+<p>如果路径已经存在时，这个函数被调用时，它会返回True 。</p>
+<p><b>See also</b> <a href="qdir.html#rmpath" tppabs="http://pyqt4doc.appspot.com/qdir.html#rmpath">rmpath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="nameFilters"></a>QStringList QDir.nameFilters (<i>self</i>)</h3>
+<p>返回字符串列表进行设置<a href="qdir.html#setNameFilters" tppabs="http://pyqt4doc.appspot.com/qdir.html#setNameFilters">setNameFilters</a>（ ）</p>
+<p><b>See also</b> <a href="qdir.html#setNameFilters" tppabs="http://pyqt4doc.appspot.com/qdir.html#setNameFilters">setNameFilters</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="nameFiltersFromString"></a>QStringList QDir.nameFiltersFromString (QString <i>nameFilter</i>)</h3>
+<h3 class="fn">
+<a name="path"></a>QString QDir.path (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="refresh"></a>QDir.refresh (<i>self</i>)</h3>
+<p>刷新的目录信息。</p>
+
+
+<h3 class="fn">
+<a name="relativeFilePath"></a>QString QDir.relativeFilePath (<i>self</i>, QString <i>fileName</i>)</h3>
+<p>返回的路径<i>fileName</i>相对于该目录。</p>
+<pre class="cpp">
+ <span class="type"><a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a></span> dir(<span class="string">"/home/bob"</span>);
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> s;
+
+ s <span class="operator">=</span> dir<span class="operator">.</span>relativeFilePath(<span class="string">"images/file.jpg"</span>);     <span class="comment">// s is "images/file.jpg"</span>
+ s <span class="operator">=</span> dir<span class="operator">.</span>relativeFilePath(<span class="string">"/home/mary/file.txt"</span>); <span class="comment">// s is "../mary/file.txt"</span>
+</pre>
+<p><b>See also</b> <a href="qdir.html#absoluteFilePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#absoluteFilePath">absoluteFilePath</a>（ ）<a href="qdir.html#filePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#filePath">filePath</a>（）和<a href="qdir.html#canonicalPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#canonicalPath">canonicalPath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="remove"></a>bool QDir.remove (<i>self</i>, QString <i>fileName</i>)</h3>
+<p>删除该文件，<i>fileName</i>。</p>
+<p>返回True如果文件被成功删除，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="rename"></a>bool QDir.rename (<i>self</i>, QString <i>oldName</i>, QString <i>newName</i>)</h3>
+<p>重命名一个文件或目录<i>oldName</i>至<i>newName</i>，并成功返回True ，否则返回False 。</p>
+<p>在大多数的文件系统，重新命名（）失败仅当<i>oldName</i>不存在，如果<i>newName</i>和<i>oldName</i>不在同一个分区，或者使用新名称的文件已经存在。然而，也有其他原因，重命名（ ）可能会失败。例如，在至少一个文件系统命名（）将失败，如果<i>newName</i>指向一个打开的文件。</p>
+
+
+<h3 class="fn">
+<a name="rmdir"></a>bool QDir.rmdir (<i>self</i>, QString <i>dirName</i>)</h3>
+<p>通过移除指定的目录<i>dirName</i>。</p>
+<p>该目录必须是空的命令rmdir （）来取得成功。</p>
+<p>成功返回True ，否则返回False 。</p>
+<p><b>See also</b> <a href="qdir.html#mkdir" tppabs="http://pyqt4doc.appspot.com/qdir.html#mkdir">mkdir</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rmpath"></a>bool QDir.rmpath (<i>self</i>, QString <i>dirPath</i>)</h3>
+<p>删除的目录路径<i>dirPath</i>。</p>
+<p>该功能将删除所有父目录中<i>dirPath</i>，只要它们是空的。这是mkpath （ dirPath ）的对面。</p>
+<p>成功返回True ，否则返回False 。</p>
+<p><b>See also</b> <a href="qdir.html#mkpath" tppabs="http://pyqt4doc.appspot.com/qdir.html#mkpath">mkpath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="root"></a><a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a> QDir.root ()</h3>
+<p>返回根目录。</p>
+<p>该目录是使用根目录的绝对路径，确保构造，其<a href="qdir.html#pathx" tppabs="http://pyqt4doc.appspot.com/qdir.html#pathx">path</a>（）将是相同的其<a href="qdir.html#absolutePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#absolutePath">absolutePath</a>（ ） 。</p>
+<p>See <a href="qdir.html#rootPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#rootPath">rootPath</a>（ ）了解详情。</p>
+<p><b>See also</b> <a href="qdir.html#drives" tppabs="http://pyqt4doc.appspot.com/qdir.html#drives">drives</a>（ ）<a href="qdir.html#current" tppabs="http://pyqt4doc.appspot.com/qdir.html#current">current</a>（ ）<a href="qdir.html#home" tppabs="http://pyqt4doc.appspot.com/qdir.html#home">home</a>（）和<a href="qdir.html#temp" tppabs="http://pyqt4doc.appspot.com/qdir.html#temp">temp</a>().</p>
+
+
+<h3 class="fn">
+<a name="rootPath"></a>QString QDir.rootPath ()</h3>
+<p>返回根目录的绝对路径。</p>
+<p>对于Unix操作系统这将返回“ / ” 。对于Windows和Symbian的文件系统中，这通常会返回“C :/ ” 。 I.E.在系统驱动器的根目录。</p>
+<p><b>See also</b> <a href="qdir.html#root" tppabs="http://pyqt4doc.appspot.com/qdir.html#root">root</a>（ ）<a href="qdir.html#drives" tppabs="http://pyqt4doc.appspot.com/qdir.html#drives">drives</a>（ ）<a href="qdir.html#currentPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#currentPath">currentPath</a>（ ）<a href="qdir.html#homePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#homePath">homePath</a>（）和<a href="qdir.html#tempPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#tempPath">tempPath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="searchPaths"></a>QStringList QDir.searchPaths (QString <i>prefix</i>)</h3>
+<p>返回的搜索路径<i>prefix</i>。</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qdir.html#setSearchPaths" tppabs="http://pyqt4doc.appspot.com/qdir.html#setSearchPaths">setSearchPaths</a>（）和<a href="qdir.html#addSearchPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#addSearchPath">addSearchPath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="separator"></a>QChar QDir.separator ()</h3>
+<p>返回本机目录分隔符“ / ”的Unix （包括Mac OS X ）根据与“\” Windows下。</p>
+<p>你不需要使用这个功能来构建文件路径。如果你总是使用“ / ” ， Qt将会把你的路径，以符合底层操作系统。如果你想使用自己的操作系统的分隔符使用，以显示给用户的路径<a href="qdir.html#toNativeSeparators" tppabs="http://pyqt4doc.appspot.com/qdir.html#toNativeSeparators">toNativeSeparators</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCurrent"></a>bool QDir.setCurrent (QString <i>path</i>)</h3>
+<p>设置应用程序的当前工作目录<i>path</i>。返回True如果该目录已成功更改，否则返回False 。</p>
+<p><b>See also</b> <a href="qdir.html#current" tppabs="http://pyqt4doc.appspot.com/qdir.html#current">current</a>（ ）<a href="qdir.html#currentPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#currentPath">currentPath</a>（ ）<a href="qdir.html#home" tppabs="http://pyqt4doc.appspot.com/qdir.html#home">home</a>（ ）<a href="qdir.html#root" tppabs="http://pyqt4doc.appspot.com/qdir.html#root">root</a>（）和<a href="qdir.html#temp" tppabs="http://pyqt4doc.appspot.com/qdir.html#temp">temp</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFilter"></a>QDir.setFilter (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdir-filters.html">Filters</a> <i>filter</i>)</h3>
+<p>设置所使用的过滤器<a href="qdir.html#entryList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryList">entryList</a>（）和<a href="qdir.html#entryInfoList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryInfoList">entryInfoList</a>（）来<i>filters</i>。该过滤器是用于指定类型的文件，应当由被返回<a href="qdir.html#entryList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryList">entryList</a>（）和<a href="qdir.html#entryInfoList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryInfoList">entryInfoList</a>（ ） 。看<a href="qdir.html#Filter-enum" tppabs="http://pyqt4doc.appspot.com/qdir.html#Filter-enum">QDir.Filter</a>。</p>
+<p><b>See also</b> <a href="qdir.html#filter" tppabs="http://pyqt4doc.appspot.com/qdir.html#filter">filter</a>（）和<a href="qdir.html#setNameFilters" tppabs="http://pyqt4doc.appspot.com/qdir.html#setNameFilters">setNameFilters</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setNameFilters"></a>QDir.setNameFilters (<i>self</i>, QStringList <i>nameFilters</i>)</h3>
+<p>设置所使用的过滤器名称<a href="qdir.html#entryList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryList">entryList</a>（）和<a href="qdir.html#entryInfoList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryInfoList">entryInfoList</a>（ ）到由指定的过滤器列表<i>nameFilters</i>。</p>
+<p>每名过滤器是一个通配符（通配符）过滤器能够理解<tt>*</tt>和<tt>?</tt>通配符。 （见<a href="qregexp.html#qregexp-wildcard-matching" tppabs="http://pyqt4doc.appspot.com/qregexp.html#qregexp-wildcard-matching">QRegExp wildcard
+matching</a>。 ）</p>
+<p>例如，下面的代码设置在三名过滤器<a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a>以确保与扩展通常用于C + +源文件只有文件被列出：</p>
+<pre class="cpp">
+     <span class="type"><a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a></span> filters;
+     filters <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"*.cpp"</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"*.cxx"</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"*.cc"</span>;
+     dir<span class="operator">.</span>setNameFilters(filters);
+</pre>
+<p><b>See also</b> <a href="qdir.html#nameFilters" tppabs="http://pyqt4doc.appspot.com/qdir.html#nameFilters">nameFilters</a>（）和<a href="qdir.html#setFilter" tppabs="http://pyqt4doc.appspot.com/qdir.html#setFilter">setFilter</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPath"></a>QDir.setPath (<i>self</i>, QString <i>path</i>)</h3>
+<p>载到目录的路径<i>path</i>。的路径被清除多馀的“...”， “...”和多个隔板。没有检查，看看这个路径中的目录是否真的存在，但你可以检查自己使用<a href="qdir.html#exists" tppabs="http://pyqt4doc.appspot.com/qdir.html#exists">exists</a>（ ） 。</p>
+<p>该路径可以是绝对的或相对的。绝对路径开头的目录分隔符“ / ” （前面可以在Windows下的驱动器规格） 。相对文件名开头的目录名或文件名和路径指定一个相对于当前目录。绝对路径的一个例子是字符串“ / tmp目录/石英” ，相对路径可能看起来像“的src / fatlib ” 。</p>
+<p><b>See also</b> <a href="qdir.html#pathx" tppabs="http://pyqt4doc.appspot.com/qdir.html#pathx">path</a>（ ）<a href="qdir.html#absolutePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#absolutePath">absolutePath</a>（ ）<a href="qdir.html#exists" tppabs="http://pyqt4doc.appspot.com/qdir.html#exists">exists</a>（ ）<a href="qdir.html#cleanPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#cleanPath">cleanPath</a>（ ）<a href="qdir.html#dirName" tppabs="http://pyqt4doc.appspot.com/qdir.html#dirName">dirName</a>（ ）<a href="qdir.html#absoluteFilePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#absoluteFilePath">absoluteFilePath</a>（ ）<a href="qdir.html#isRelative" tppabs="http://pyqt4doc.appspot.com/qdir.html#isRelative">isRelative</a>（）和<a href="qdir.html#makeAbsolute" tppabs="http://pyqt4doc.appspot.com/qdir.html#makeAbsolute">makeAbsolute</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setSearchPaths"></a>QDir.setSearchPaths (QString <i>prefix</i>, QStringList <i>searchPaths</i>)</h3>
+<p>设置或替换文件名Qt的搜索路径的前缀<i>prefix</i>至<i>searchPaths</i>。</p>
+<p>要指定一个前缀的文件名，前面加上前缀后跟一个冒号（例如， “图片： undo.png ” ， “ xmldocs ： books.xml”文件） 。<i>prefix</i>只能包含字母或数字（例如，它不能包含一个冒号，也没有斜线） 。</p>
+<p>Qt使用这个搜索路径来定位文件与已知的前缀。搜索路径条目，以便进行测试，从第一个项目。</p>
+<pre class="cpp">
+ <span class="type"><a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a></span><span class="operator">.</span>setSearchPaths(<span class="string">"icons"</span><span class="operator">,</span> <span class="type"><a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a></span>(<span class="type"><a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a></span><span class="operator">.</span>homePath() <span class="operator">+</span> <span class="string">"/images"</span>));
+ <span class="type"><a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a></span><span class="operator">.</span>setSearchPaths(<span class="string">"docs"</span><span class="operator">,</span> <span class="type"><a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a></span>(<span class="string">":/embeddedDocuments"</span>));
+ <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ <span class="type"><a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a></span> pixmap(<span class="string">"icons:undo.png"</span>); <span class="comment">// will look for undo.png in QDir.homePath() + "/images"</span>
+ <span class="type"><a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a></span> file(<span class="string">"docs:design.odf"</span>); <span class="comment">// will look in the :/embeddedDocuments resource path</span>
+</pre>
+<p>文件名前缀必须至少为2个字符，以避免与Windows驱动器盘符冲突。</p>
+<p>搜索路径可能包含为路径<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/resources.html">The
+Qt Resource System</a>。</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qdir.html#searchPaths" tppabs="http://pyqt4doc.appspot.com/qdir.html#searchPaths">searchPaths</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setSorting"></a>QDir.setSorting (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdir-sortflags.html">SortFlags</a> <i>sort</i>)</h3>
+<p>设置使用的排序顺序<a href="qdir.html#entryList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryList">entryList</a>（）和<a href="qdir.html#entryInfoList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryInfoList">entryInfoList</a>（ ） 。</p>
+<p>该<i>sort</i>从枚举指定的OR-ing值<a href="qdir.html#SortFlag-enum" tppabs="http://pyqt4doc.appspot.com/qdir.html#SortFlag-enum">QDir.SortFlag</a>。</p>
+<p><b>See also</b> <a href="qdir.html#sorting" tppabs="http://pyqt4doc.appspot.com/qdir.html#sorting">sorting</a>（）和<a href="qdir.html#SortFlag-enum" tppabs="http://pyqt4doc.appspot.com/qdir.html#SortFlag-enum">SortFlag</a>。</p>
+
+
+<h3 class="fn">
+<a name="sorting"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdir-sortflags.html">SortFlags</a> QDir.sorting (<i>self</i>)</h3>
+<p>返回由设置的值<a href="qdir.html#setSorting" tppabs="http://pyqt4doc.appspot.com/qdir.html#setSorting">setSorting</a>（ ）</p>
+<p><b>See also</b> <a href="qdir.html#setSorting" tppabs="http://pyqt4doc.appspot.com/qdir.html#setSorting">setSorting</a>（）和<a href="qdir.html#SortFlag-enum" tppabs="http://pyqt4doc.appspot.com/qdir.html#SortFlag-enum">SortFlag</a>。</p>
+
+
+<h3 class="fn">
+<a name="temp"></a><a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a> QDir.temp ()</h3>
+<p>返回系统的临时目录。</p>
+<p>该目录是使用临时目录的绝对路径，确保构建其<a href="qdir.html#pathx" tppabs="http://pyqt4doc.appspot.com/qdir.html#pathx">path</a>（）将是相同的其<a href="qdir.html#absolutePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#absolutePath">absolutePath</a>（ ） 。</p>
+<p>See <a href="qdir.html#tempPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#tempPath">tempPath</a>（ ）了解详情。</p>
+<p><b>See also</b> <a href="qdir.html#drives" tppabs="http://pyqt4doc.appspot.com/qdir.html#drives">drives</a>（ ）<a href="qdir.html#current" tppabs="http://pyqt4doc.appspot.com/qdir.html#current">current</a>（ ）<a href="qdir.html#home" tppabs="http://pyqt4doc.appspot.com/qdir.html#home">home</a>（）和<a href="qdir.html#root" tppabs="http://pyqt4doc.appspot.com/qdir.html#root">root</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="tempPath"></a>QString QDir.tempPath ()</h3>
+<p>返回系统的临时目录的绝对路径。</p>
+<p>在Unix / Linux系统中，这是在路径<tt>TMPDIR</tt>环境变量或<tt>/tmp</tt>如果<tt>TMPDIR</tt>没有定义。在Windows上，这是通常在路径<tt>TEMP</tt>
+or <tt>TMP</tt>环境变量。目录分隔符是否被添加到末尾与否，取决于操作系统。</p>
+<p><b>See also</b> <a href="qdir.html#temp" tppabs="http://pyqt4doc.appspot.com/qdir.html#temp">temp</a>（ ）<a href="qdir.html#currentPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#currentPath">currentPath</a>（ ）<a href="qdir.html#homePath" tppabs="http://pyqt4doc.appspot.com/qdir.html#homePath">homePath</a>（）和<a href="qdir.html#rootPath" tppabs="http://pyqt4doc.appspot.com/qdir.html#rootPath">rootPath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toNativeSeparators"></a>QString QDir.toNativeSeparators (QString <i>pathName</i>)</h3>
+<p>Returns <i>pathName</i>用'/'分隔符转换为分隔符是适用于底层的操作系统。</p>
+<p>在Windows上， toNativeSeparators （ “C :/在winnt/system32 ”）返回“C ： \ WINNT \ SYSTEM32 ” 。</p>
+<p>返回的字符串可能是相同的说法在某些操作系统上，例如在Unix上。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qdir.html#fromNativeSeparators" tppabs="http://pyqt4doc.appspot.com/qdir.html#fromNativeSeparators">fromNativeSeparators</a>（）和<a href="qdir.html#separator" tppabs="http://pyqt4doc.appspot.com/qdir.html#separator">separator</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="__contains__"></a>int QDir.__contains__ (<i>self</i>, QString)</h3>
+<h3 class="fn">
+<a name="__eq__"></a>bool QDir.__eq__ (<i>self</i>, <a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a> <i>dir</i>)</h3>
+<h3 class="fn">
+<a name="__getitem__"></a>QString QDir.__getitem__ (<i>self</i>, int)</h3>
+<h3 class="fn">
+<a name="__getitem__-2"></a>QStringList QDir.__getitem__ (<i>self</i>, slice)</h3>
+<h3 class="fn">
+<a name="__len__"></a> QDir.__len__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QDir.__ne__ (<i>self</i>, <a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a> <i>dir</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

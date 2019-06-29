@@ -1,0 +1,157 @@
+﻿<html>
+<head>
+<title>QAbstractTransition Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QAbstractTransition Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QAbstractTransition类是过渡之间的基类<a href="qabstractstate.html" tppabs="http://pyqt4doc.appspot.com/qabstractstate.html">QAbstractState</a>对象。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<p>通过继承<a href="qeventtransition.html" tppabs="http://pyqt4doc.appspot.com/qeventtransition.html">QEventTransition</a>和<a href="qsignaltransition.html" tppabs="http://pyqt4doc.appspot.com/qsignaltransition.html">QSignalTransition</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qabstracttransition.html#QAbstractTransition" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#QAbstractTransition">__init__</a></b> (<i>self</i>, QState <i>sourceState</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstracttransition.html#addAnimation" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#addAnimation">addAnimation</a></b> (<i>self</i>, QAbstractAnimation <i>animation</i>)</li>
+<li>
+<div class="fn"></div>list-of-QAbstractAnimation <b><a href="qabstracttransition.html#animations" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#animations">animations</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstracttransition.html#event" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#event">event</a></b> (<i>self</i>, QEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstracttransition.html#eventTest" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#eventTest">eventTest</a></b> (<i>self</i>, QEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>QStateMachine <b><a href="qabstracttransition.html#machine" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#machine">machine</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstracttransition.html#onTransition" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#onTransition">onTransition</a></b> (<i>self</i>, QEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstracttransition.html#removeAnimation" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#removeAnimation">removeAnimation</a></b> (<i>self</i>, QAbstractAnimation <i>animation</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstracttransition.html#setTargetState" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#setTargetState">setTargetState</a></b> (<i>self</i>, QAbstractState <i>target</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstracttransition.html#setTargetStates" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#setTargetStates">setTargetStates</a></b> (<i>self</i>, list-of-QAbstractState <i>targets</i>)</li>
+<li>
+<div class="fn"></div>QState <b><a href="qabstracttransition.html#sourceState" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#sourceState">sourceState</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QAbstractState <b><a href="qabstracttransition.html#targetState" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#targetState">targetState</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QAbstractState <b><a href="qabstracttransition.html#targetStates" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#targetStates">targetStates</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul><li>
+<div class="fn"></div>void <b><a href="qabstracttransition.html#triggered" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#triggered">triggered</a></b> ()</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QAbstractTransition类是过渡之间的基类<a href="qabstractstate.html" tppabs="http://pyqt4doc.appspot.com/qabstractstate.html">QAbstractState</a>对象。</p>
+<p>该QAbstractTransition类是过渡态之间的抽象基类（<a href="qabstractstate.html" tppabs="http://pyqt4doc.appspot.com/qabstractstate.html">QAbstractState</a>的对象）<a href="qstatemachine.html" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html">QStateMachine</a>。 QAbstractTransition是一部分<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/statemachine-api.html">The State Machine
+Framework</a>。</p>
+<p>该<a href="qabstracttransition.html#sourceState-prop" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#sourceState-prop">sourceState</a>（ ）函数返回的过渡之源。该<a href="qabstracttransition.html#targetStates-prop" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#targetStates-prop">targetStates</a>（ ）函数返回的过渡的目标。该<a href="qabstracttransition.html#machine" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#machine">machine</a>（ ）函数返回的状态机的过渡的一部分。</p>
+<p>该<a href="qabstracttransition.html#triggered" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#triggered">triggered</a>当过渡已被触发（）信号被发射。</p>
+<p>转换可能会导致动画播放。使用<a href="qabstracttransition.html#addAnimation" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#addAnimation">addAnimation</a>（）函数将动画添加到过渡。</p>
+<a id="subclassing" name="subclassing"></a>
+<h3>Subclassing</h3>
+<p>该<a href="qabstracttransition.html#eventTest" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#eventTest">eventTest</a>（ ）函数被调用的状态机来判断事件是否应触发的过渡。在你重新实现您通常检查事件类型和事件对象转换为正确的类型，并检查事件的一个或多个属性符合您的标准。</p>
+<p>该<a href="qabstracttransition.html#onTransition" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#onTransition">onTransition</a>（ ）函数被调用时的过渡被触发，重新实现这个函数来执行自定义处理过渡。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QAbstractTransition"></a>QAbstractTransition.__init__ (<i>self</i>, <a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a> <i>sourceState</i> = None)</h3>
+<p>该<i>sourceState</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个新的<a href="qabstracttransition.html" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html">QAbstractTransition</a>与给定对象<i>sourceState</i>。</p>
+
+
+<h3 class="fn">
+<a name="addAnimation"></a>QAbstractTransition.addAnimation (<i>self</i>, <a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a> <i>animation</i>)</h3>
+<p>将给定<i>animation</i>到这种转变。过渡不走动画的所有权。</p>
+<p><b>See also</b> <a href="qabstracttransition.html#removeAnimation" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#removeAnimation">removeAnimation</a>（）和<a href="qabstracttransition.html#animations" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#animations">animations</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="animations"></a>list-of-QAbstractAnimation QAbstractTransition.animations (<i>self</i>)</h3>
+<p>返回与此过渡，或一个空列表关联的，如果它没有动画的动画列表中。</p>
+<p><b>See also</b> <a href="qabstracttransition.html#addAnimation" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#addAnimation">addAnimation</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="event"></a>bool QAbstractTransition.event (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">QObject.event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="eventTest"></a>bool QAbstractTransition.eventTest (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>这个函数被调用，以确定是否在给定<i>event</i>应引起这种转变来触发。重新实现这个函数，返回True，如果事件应触发的过渡，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="machine"></a><a href="qstatemachine.html" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html">QStateMachine</a> QAbstractTransition.machine (<i>self</i>)</h3>
+<p>返回该状态机，这是过渡的一部分，或者0，如果过渡不是一个状态机的一部分。</p>
+
+
+<h3 class="fn">
+<a name="onTransition"></a>QAbstractTransition.onTransition (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>当转换触发此函数被调用。给定<i>event</i>是什么原因造成的过渡触发。重新实现这个函数来执行自定义处理时的过渡被触发。</p>
+
+
+<h3 class="fn">
+<a name="removeAnimation"></a>QAbstractTransition.removeAnimation (<i>self</i>, <a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a> <i>animation</i>)</h3>
+<p>删除给定的<i>animation</i>从这种转变。</p>
+<p><b>See also</b> <a href="qabstracttransition.html#addAnimation" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#addAnimation">addAnimation</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setTargetState"></a>QAbstractTransition.setTargetState (<i>self</i>, <a href="qabstractstate.html" tppabs="http://pyqt4doc.appspot.com/qabstractstate.html">QAbstractState</a> <i>target</i>)</h3>
+<h3 class="fn">
+<a name="setTargetStates"></a>QAbstractTransition.setTargetStates (<i>self</i>, list-of-QAbstractState <i>targets</i>)</h3>
+<h3 class="fn">
+<a name="sourceState"></a><a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a> QAbstractTransition.sourceState (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="targetState"></a><a href="qabstractstate.html" tppabs="http://pyqt4doc.appspot.com/qabstractstate.html">QAbstractState</a> QAbstractTransition.targetState (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="targetStates"></a>list-of-QAbstractState QAbstractTransition.targetStates (<i>self</i>)</h3>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="triggered"></a>void triggered ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>当过渡已被触发（在这信号被发射<a href="qabstracttransition.html#onTransition" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#onTransition">onTransition</a>（ ）被调用） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

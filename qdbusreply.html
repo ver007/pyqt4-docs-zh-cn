@@ -1,0 +1,123 @@
+﻿<html>
+<head>
+<title>QDBusReply Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDBusReply Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdbus.html">QtDBus</a> module]</sup></sup>
+</h1>
+<p>该QDBusReply类存储为一个方法调用远程对象的答复。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusreply.html#QDBusReply" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html#QDBusReply">__init__</a></b> (<i>self</i>, QDBusMessage <i>reply</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusreply.html#QDBusReply-2" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html#QDBusReply-2">__init__</a></b> (<i>self</i>, QDBusPendingCall <i>call</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusreply.html#QDBusReply-3" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html#QDBusReply-3">__init__</a></b> (<i>self</i>, QDBusError <i>error</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusreply.html#QDBusReply-4" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html#QDBusReply-4">__init__</a></b> (<i>self</i>, QDBusReply <i>other</i>)</li>
+<li>
+<div class="fn"></div>QDBusError <b><a href="qdbusreply.html#error" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html#error">error</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdbusreply.html#isValid" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html#isValid">isValid</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>object <b><a href="qdbusreply.html#value" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html#value">value</a></b> (<i>self</i>, object <i>type</i> = None)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDBusReply类存储为一个方法调用远程对象的答复。</p>
+<p>一个QDBusReply对象的一个子集<a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a>对象，表示一个方法调用的答复。它仅包含第一个输出参数或错误代码，并使用<a href="qdbusinterface.html" tppabs="http://pyqt4doc.appspot.com/qdbusinterface.html">QDBusInterface</a>派生类，允许错误代码返回为函数的返回参数。</p>
+<p>它可以以下面的方式被使用：</p>
+<pre class="cpp">
+ <span class="type">QDBusReply</span><span class="operator">&lt;</span><span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span><span class="operator">&gt;</span> reply <span class="operator">=</span> interface<span class="operator">-</span><span class="operator">&gt;</span>call(<span class="string">"RemoteMethod"</span>);
+ <span class="keyword">if</span> (reply<span class="operator">.</span>isValid())
+     <span class="comment">// use the returned value</span>
+     useValue(reply<span class="operator">.</span>value());
+ <span class="keyword">else</span>
+     <span class="comment">// call failed. Show an error condition.</span>
+     showError(reply<span class="operator">.</span>error());
+</pre>
+<p>如果远程方法调用不能失败，你可以跳过错误检查：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> reply <span class="operator">=</span> interface<span class="operator">-</span><span class="operator">&gt;</span>call(<span class="string">"RemoteMethod"</span>);
+</pre>
+<p>然而，如果它确实在这些条件下发生故障，返回的值<a href="qdbusreply.html#value" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html#value">QDBusReply.value</a>（）是一个缺省构造值。它可能是从一个有效的返回值没有什么区别。</p>
+<p>QDBusReply对象用于为没有输出参数或返回值（即，他们有一个“空”返回类型）的远程调用。使用<a href="qdbusreply.html#isValid" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html#isValid">isValid</a>（ ）函数来测试是否回复成功。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDBusReply"></a>QDBusReply.__init__ (<i>self</i>, <a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a> <i>reply</i>)</h3>
+<p>自动构建<a href="qdbusreply.html" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html">QDBusReply</a>从回复消息对象<i>reply</i>，提取它的第一个返回值，如果它是成功的回复。</p>
+
+
+<h3 class="fn">
+<a name="QDBusReply-2"></a>QDBusReply.__init__ (<i>self</i>, <a href="qdbuspendingcall.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingcall.html">QDBusPendingCall</a> <i>call</i>)</h3>
+<p>自动构建<a href="qdbusreply.html" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html">QDBusReply</a>从挂起的异步调用对象<i>pcall</i>。如果呼叫尚未完成，<a href="qdbusreply.html" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html">QDBusReply</a>将调用QDBusPendingCall.waitForFinished （），它是一个阻塞操作。</p>
+<p>如果返回类型的补丁，<a href="qdbusreply.html" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html">QDBusReply</a>将提取的答复的第一个返回参数。</p>
+
+
+<h3 class="fn">
+<a name="QDBusReply-3"></a>QDBusReply.__init__ (<i>self</i>, <a href="qdbuserror.html" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html">QDBusError</a> <i>error</i>)</h3>
+<p>构造一个<a href="qdbusreply.html" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html">QDBusReply</a>从挂起的回复消息对象，<i>reply</i>。</p>
+
+
+<h3 class="fn">
+<a name="QDBusReply-4"></a>QDBusReply.__init__ (<i>self</i>, <a href="qdbusreply.html" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html">QDBusReply</a> <i>other</i>)</h3>
+<p>从构造由下式给出了D-Bus的错误代码的错误答复<i>error</i>。</p>
+
+
+<h3 class="fn">
+<a name="error"></a><a href="qdbuserror.html" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html">QDBusError</a> QDBusReply.error (<i>self</i>)</h3>
+<p>返回从远程函数调用返回的错误代码。如果远程调用没有返回一个错误（例如，如果它成功了） ，那么<a href="qdbuserror.html" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html">QDBusError</a>返回的对象将不会是一个有效的错误代码（<a href="qdbuserror.html#isValid" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html#isValid">QDBusError.isValid</a>（ ）将返回False ） 。</p>
+<p><b>See also</b> <a href="qdbusreply.html#isValid" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html#isValid">isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isValid"></a>bool QDBusReply.isValid (<i>self</i>)</h3>
+<p>返回True如果没有发生错误，否则返回False 。</p>
+<p><b>See also</b> <a href="qdbusreply.html#error" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html#error">error</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="value"></a>object QDBusReply.value (<i>self</i>, object <i>type</i> = None)</h3>
+<p>返回远程函数调用的返回值。如果远程调用返回一个错误，这个函数的返回值是不确定的，可能是从一个有效的返回值无法区分。</p>
+<p>此功能无法使用，如果远程调用返回<tt>void</tt>。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

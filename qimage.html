@@ -1,0 +1,1328 @@
+﻿<html>
+<head>
+<title>QImage Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QImage Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>QImage的类提供了与硬件无关的图像表示，它允许直接访问的像素数据，并可以作为一个绘图设备。<a href="#details">More...</a></p>
+
+<p>继承<a href="qpaintdevice.html" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html">QPaintDevice</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">Format</a></b> { Format_Invalid, Format_Mono, Format_MonoLSB, Format_Indexed8, ..., Format_ARGB4444_Premultiplied }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qimage.html#InvertMode-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#InvertMode-enum">InvertMode</a></b> { InvertRgb, InvertRgba }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#QImage" tppabs="http://pyqt4doc.appspot.com/qimage.html#QImage">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#QImage-2" tppabs="http://pyqt4doc.appspot.com/qimage.html#QImage-2">__init__</a></b> (<i>self</i>, QSize <i>size</i>, Format <i>format</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#QImage-3" tppabs="http://pyqt4doc.appspot.com/qimage.html#QImage-3">__init__</a></b> (<i>self</i>, int <i>width</i>, int <i>height</i>, Format <i>format</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#QImage-4" tppabs="http://pyqt4doc.appspot.com/qimage.html#QImage-4">__init__</a></b> (<i>self</i>, str <i>data</i>, int <i>width</i>, int <i>height</i>, Format <i>format</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#QImage-5" tppabs="http://pyqt4doc.appspot.com/qimage.html#QImage-5">__init__</a></b> (<i>self</i>, sip.voidptr <i>data</i>, int <i>width</i>, int <i>height</i>, Format <i>format</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#QImage-6" tppabs="http://pyqt4doc.appspot.com/qimage.html#QImage-6">__init__</a></b> (<i>self</i>, str <i>data</i>, int <i>width</i>, int <i>height</i>, int <i>bytesPerLine</i>, Format <i>format</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#QImage-7" tppabs="http://pyqt4doc.appspot.com/qimage.html#QImage-7">__init__</a></b> (<i>self</i>, sip.voidptr <i>data</i>, int <i>width</i>, int <i>height</i>, int <i>bytesPerLine</i>, Format <i>format</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#QImage-8" tppabs="http://pyqt4doc.appspot.com/qimage.html#QImage-8">__init__</a></b> (<i>self</i>, list-of-str <i>xpm</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#QImage-9" tppabs="http://pyqt4doc.appspot.com/qimage.html#QImage-9">__init__</a></b> (<i>self</i>, QString <i>fileName</i>, str <i>format</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#QImage-10" tppabs="http://pyqt4doc.appspot.com/qimage.html#QImage-10">__init__</a></b> (<i>self</i>, QImage)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#QImage-11" tppabs="http://pyqt4doc.appspot.com/qimage.html#QImage-11">__init__</a></b> (<i>self</i>, QVariant <i>variant</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qimage.html#allGray" tppabs="http://pyqt4doc.appspot.com/qimage.html#allGray">allGray</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QImage <b><a href="qimage.html#alphaChannel" tppabs="http://pyqt4doc.appspot.com/qimage.html#alphaChannel">alphaChannel</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qimage.html#bitPlaneCount" tppabs="http://pyqt4doc.appspot.com/qimage.html#bitPlaneCount">bitPlaneCount</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>sip.voidptr <b><a href="qimage.html#bits" tppabs="http://pyqt4doc.appspot.com/qimage.html#bits">bits</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qimage.html#byteCount" tppabs="http://pyqt4doc.appspot.com/qimage.html#byteCount">byteCount</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qimage.html#bytesPerLine" tppabs="http://pyqt4doc.appspot.com/qimage.html#bytesPerLine">bytesPerLine</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qimage.html#cacheKey" tppabs="http://pyqt4doc.appspot.com/qimage.html#cacheKey">cacheKey</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qimage.html#color" tppabs="http://pyqt4doc.appspot.com/qimage.html#color">color</a></b> (<i>self</i>, int <i>i</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qimage.html#colorCount" tppabs="http://pyqt4doc.appspot.com/qimage.html#colorCount">colorCount</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-int <b><a href="qimage.html#colorTable" tppabs="http://pyqt4doc.appspot.com/qimage.html#colorTable">colorTable</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>sip.voidptr <b><a href="qimage.html#constBits" tppabs="http://pyqt4doc.appspot.com/qimage.html#constBits">constBits</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>sip.voidptr <b><a href="qimage.html#constScanLine" tppabs="http://pyqt4doc.appspot.com/qimage.html#constScanLine">constScanLine</a></b> (<i>self</i>, int)</li>
+<li>
+<div class="fn"></div>QImage <b><a href="qimage.html#convertToFormat" tppabs="http://pyqt4doc.appspot.com/qimage.html#convertToFormat">convertToFormat</a></b> (<i>self</i>, Format <i>format</i>, Qt.ImageConversionFlags <i>flags</i> = Qt.AutoColor)</li>
+<li>
+<div class="fn"></div>QImage <b><a href="qimage.html#convertToFormat-2" tppabs="http://pyqt4doc.appspot.com/qimage.html#convertToFormat-2">convertToFormat</a></b> (<i>self</i>, Format <i>format</i>, list-of-int <i>colorTable</i>, Qt.ImageConversionFlags <i>flags</i> = Qt.AutoColor)</li>
+<li>
+<div class="fn"></div>QImage <b><a href="qimage.html#copy" tppabs="http://pyqt4doc.appspot.com/qimage.html#copy">copy</a></b> (<i>self</i>, QRect <i>rect</i> = QRect())</li>
+<li>
+<div class="fn"></div>QImage <b><a href="qimage.html#copy-2" tppabs="http://pyqt4doc.appspot.com/qimage.html#copy-2">copy</a></b> (<i>self</i>, int <i>x</i>, int <i>y</i>, int <i>w</i>, int <i>h</i>)</li>
+<li>
+<div class="fn"></div>QImage <b><a href="qimage.html#createAlphaMask" tppabs="http://pyqt4doc.appspot.com/qimage.html#createAlphaMask">createAlphaMask</a></b> (<i>self</i>, Qt.ImageConversionFlags <i>flags</i> = Qt.AutoColor)</li>
+<li>
+<div class="fn"></div>QImage <b><a href="qimage.html#createHeuristicMask" tppabs="http://pyqt4doc.appspot.com/qimage.html#createHeuristicMask">createHeuristicMask</a></b> (<i>self</i>, bool <i>clipTight</i> = True)</li>
+<li>
+<div class="fn"></div>QImage <b><a href="qimage.html#createMaskFromColor" tppabs="http://pyqt4doc.appspot.com/qimage.html#createMaskFromColor">createMaskFromColor</a></b> (<i>self</i>, int <i>color</i>, Qt.MaskMode <i>mode</i> = Qt.MaskInColor)</li>
+<li>
+<div class="fn"></div>int <b><a href="qimage.html#depth" tppabs="http://pyqt4doc.appspot.com/qimage.html#depth">depth</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#detach" tppabs="http://pyqt4doc.appspot.com/qimage.html#detach">detach</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qimage.html#devType" tppabs="http://pyqt4doc.appspot.com/qimage.html#devType">devType</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qimage.html#dotsPerMeterX" tppabs="http://pyqt4doc.appspot.com/qimage.html#dotsPerMeterX">dotsPerMeterX</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qimage.html#dotsPerMeterY" tppabs="http://pyqt4doc.appspot.com/qimage.html#dotsPerMeterY">dotsPerMeterY</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#fill" tppabs="http://pyqt4doc.appspot.com/qimage.html#fill">fill</a></b> (<i>self</i>, Qt.GlobalColor <i>color</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#fill-2" tppabs="http://pyqt4doc.appspot.com/qimage.html#fill-2">fill</a></b> (<i>self</i>, QColor <i>color</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#fill-3" tppabs="http://pyqt4doc.appspot.com/qimage.html#fill-3">fill</a></b> (<i>self</i>, int <i>pixel</i>)</li>
+<li>
+<div class="fn"></div>Format <b><a href="qimage.html#format" tppabs="http://pyqt4doc.appspot.com/qimage.html#format">format</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qimage.html#hasAlphaChannel" tppabs="http://pyqt4doc.appspot.com/qimage.html#hasAlphaChannel">hasAlphaChannel</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qimage.html#height" tppabs="http://pyqt4doc.appspot.com/qimage.html#height">height</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#invertPixels" tppabs="http://pyqt4doc.appspot.com/qimage.html#invertPixels">invertPixels</a></b> (<i>self</i>, InvertMode <i>mode</i> = QImage.InvertRgb)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qimage.html#isDetached" tppabs="http://pyqt4doc.appspot.com/qimage.html#isDetached">isDetached</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qimage.html#isGrayscale" tppabs="http://pyqt4doc.appspot.com/qimage.html#isGrayscale">isGrayscale</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qimage.html#isNull" tppabs="http://pyqt4doc.appspot.com/qimage.html#isNull">isNull</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qimage.html#load" tppabs="http://pyqt4doc.appspot.com/qimage.html#load">load</a></b> (<i>self</i>, QIODevice <i>device</i>, str <i>format</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qimage.html#load-2" tppabs="http://pyqt4doc.appspot.com/qimage.html#load-2">load</a></b> (<i>self</i>, QString <i>fileName</i>, str <i>format</i> = None)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qimage.html#loadFromData" tppabs="http://pyqt4doc.appspot.com/qimage.html#loadFromData">loadFromData</a></b> (<i>self</i>, str <i>data</i>, str <i>format</i> = None)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qimage.html#loadFromData-2" tppabs="http://pyqt4doc.appspot.com/qimage.html#loadFromData-2">loadFromData</a></b> (<i>self</i>, QByteArray <i>data</i>, str <i>format</i> = None)</li>
+<li>
+<div class="fn"></div>int <b><a href="qimage.html#metric" tppabs="http://pyqt4doc.appspot.com/qimage.html#metric">metric</a></b> (<i>self</i>, QPaintDevice.PaintDeviceMetric <i>metric</i>)</li>
+<li>
+<div class="fn"></div>QImage <b><a href="qimage.html#mirrored" tppabs="http://pyqt4doc.appspot.com/qimage.html#mirrored">mirrored</a></b> (<i>self</i>, bool <i>horizontal</i> = False, bool <i>vertical</i> = True)</li>
+<li>
+<div class="fn"></div>int <b><a href="qimage.html#numBytes" tppabs="http://pyqt4doc.appspot.com/qimage.html#numBytes">numBytes</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qimage.html#numColors" tppabs="http://pyqt4doc.appspot.com/qimage.html#numColors">numColors</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QPoint <b><a href="qimage.html#offset" tppabs="http://pyqt4doc.appspot.com/qimage.html#offset">offset</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QPaintEngine <b><a href="qimage.html#paintEngine" tppabs="http://pyqt4doc.appspot.com/qimage.html#paintEngine">paintEngine</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qimage.html#pixel" tppabs="http://pyqt4doc.appspot.com/qimage.html#pixel">pixel</a></b> (<i>self</i>, QPoint <i>pt</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qimage.html#pixel-2" tppabs="http://pyqt4doc.appspot.com/qimage.html#pixel-2">pixel</a></b> (<i>self</i>, int <i>x</i>, int <i>y</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qimage.html#pixelIndex" tppabs="http://pyqt4doc.appspot.com/qimage.html#pixelIndex">pixelIndex</a></b> (<i>self</i>, QPoint <i>pt</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qimage.html#pixelIndex-2" tppabs="http://pyqt4doc.appspot.com/qimage.html#pixelIndex-2">pixelIndex</a></b> (<i>self</i>, int <i>x</i>, int <i>y</i>)</li>
+<li>
+<div class="fn"></div>QRect <b><a href="qimage.html#rect" tppabs="http://pyqt4doc.appspot.com/qimage.html#rect">rect</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QImage <b><a href="qimage.html#rgbSwapped" tppabs="http://pyqt4doc.appspot.com/qimage.html#rgbSwapped">rgbSwapped</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qimage.html#save" tppabs="http://pyqt4doc.appspot.com/qimage.html#save">save</a></b> (<i>self</i>, QString <i>fileName</i>, str <i>format</i> = None, int <i>quality</i> = -1)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qimage.html#save-2" tppabs="http://pyqt4doc.appspot.com/qimage.html#save-2">save</a></b> (<i>self</i>, QIODevice <i>device</i>, str <i>format</i> = None, int <i>quality</i> = -1)</li>
+<li>
+<div class="fn"></div>QImage <b><a href="qimage.html#scaled" tppabs="http://pyqt4doc.appspot.com/qimage.html#scaled">scaled</a></b> (<i>self</i>, int <i>width</i>, int <i>height</i>, Qt.AspectRatioMode <i>aspectRatioMode</i> = Qt.IgnoreAspectRatio, Qt.TransformationMode <i>transformMode</i> = Qt.FastTransformation)</li>
+<li>
+<div class="fn"></div>QImage <b><a href="qimage.html#scaled-2" tppabs="http://pyqt4doc.appspot.com/qimage.html#scaled-2">scaled</a></b> (<i>self</i>, QSize <i>size</i>, Qt.AspectRatioMode <i>aspectRatioMode</i> = Qt.IgnoreAspectRatio, Qt.TransformationMode <i>transformMode</i> = Qt.FastTransformation)</li>
+<li>
+<div class="fn"></div>QImage <b><a href="qimage.html#scaledToHeight" tppabs="http://pyqt4doc.appspot.com/qimage.html#scaledToHeight">scaledToHeight</a></b> (<i>self</i>, int <i>height</i>, Qt.TransformationMode <i>mode</i> = Qt.FastTransformation)</li>
+<li>
+<div class="fn"></div>QImage <b><a href="qimage.html#scaledToWidth" tppabs="http://pyqt4doc.appspot.com/qimage.html#scaledToWidth">scaledToWidth</a></b> (<i>self</i>, int <i>width</i>, Qt.TransformationMode <i>mode</i> = Qt.FastTransformation)</li>
+<li>
+<div class="fn"></div>sip.voidptr <b><a href="qimage.html#scanLine" tppabs="http://pyqt4doc.appspot.com/qimage.html#scanLine">scanLine</a></b> (<i>self</i>, int)</li>
+<li>
+<div class="fn"></div>int <b><a href="qimage.html#serialNumber" tppabs="http://pyqt4doc.appspot.com/qimage.html#serialNumber">serialNumber</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#setAlphaChannel" tppabs="http://pyqt4doc.appspot.com/qimage.html#setAlphaChannel">setAlphaChannel</a></b> (<i>self</i>, QImage <i>alphaChannel</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#setColor" tppabs="http://pyqt4doc.appspot.com/qimage.html#setColor">setColor</a></b> (<i>self</i>, int <i>i</i>, int <i>c</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#setColorCount" tppabs="http://pyqt4doc.appspot.com/qimage.html#setColorCount">setColorCount</a></b> (<i>self</i>, int)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#setColorTable" tppabs="http://pyqt4doc.appspot.com/qimage.html#setColorTable">setColorTable</a></b> (<i>self</i>, list-of-int <i>colors</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#setDotsPerMeterX" tppabs="http://pyqt4doc.appspot.com/qimage.html#setDotsPerMeterX">setDotsPerMeterX</a></b> (<i>self</i>, int)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#setDotsPerMeterY" tppabs="http://pyqt4doc.appspot.com/qimage.html#setDotsPerMeterY">setDotsPerMeterY</a></b> (<i>self</i>, int)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#setNumColors" tppabs="http://pyqt4doc.appspot.com/qimage.html#setNumColors">setNumColors</a></b> (<i>self</i>, int)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#setOffset" tppabs="http://pyqt4doc.appspot.com/qimage.html#setOffset">setOffset</a></b> (<i>self</i>, QPoint)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#setPixel" tppabs="http://pyqt4doc.appspot.com/qimage.html#setPixel">setPixel</a></b> (<i>self</i>, QPoint <i>pt</i>, int <i>index_or_rgb</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#setPixel-2" tppabs="http://pyqt4doc.appspot.com/qimage.html#setPixel-2">setPixel</a></b> (<i>self</i>, int <i>x</i>, int <i>y</i>, int <i>index_or_rgb</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#setText" tppabs="http://pyqt4doc.appspot.com/qimage.html#setText">setText</a></b> (<i>self</i>, QString <i>key</i>, QString <i>value</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qimage.html#size" tppabs="http://pyqt4doc.appspot.com/qimage.html#size">size</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qimage.html#swap" tppabs="http://pyqt4doc.appspot.com/qimage.html#swap">swap</a></b> (<i>self</i>, QImage <i>other</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qimage.html#text" tppabs="http://pyqt4doc.appspot.com/qimage.html#text">text</a></b> (<i>self</i>, QString <i>key</i> = QString())</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qimage.html#textKeys" tppabs="http://pyqt4doc.appspot.com/qimage.html#textKeys">textKeys</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QImage <b><a href="qimage.html#transformed" tppabs="http://pyqt4doc.appspot.com/qimage.html#transformed">transformed</a></b> (<i>self</i>, QMatrix <i>matrix</i>, Qt.TransformationMode <i>mode</i> = Qt.FastTransformation)</li>
+<li>
+<div class="fn"></div>QImage <b><a href="qimage.html#transformed-2" tppabs="http://pyqt4doc.appspot.com/qimage.html#transformed-2">transformed</a></b> (<i>self</i>, QTransform <i>matrix</i>, Qt.TransformationMode <i>mode</i> = Qt.FastTransformation)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qimage.html#valid" tppabs="http://pyqt4doc.appspot.com/qimage.html#valid">valid</a></b> (<i>self</i>, QPoint <i>pt</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qimage.html#valid-2" tppabs="http://pyqt4doc.appspot.com/qimage.html#valid-2">valid</a></b> (<i>self</i>, int <i>x</i>, int <i>y</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qimage.html#width" tppabs="http://pyqt4doc.appspot.com/qimage.html#width">width</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QImage <b><a href="qimage.html#fromData" tppabs="http://pyqt4doc.appspot.com/qimage.html#fromData">fromData</a></b> (str <i>data</i>, str <i>format</i> = None)</li>
+<li>
+<div class="fn"></div>QImage <b><a href="qimage.html#fromData-2" tppabs="http://pyqt4doc.appspot.com/qimage.html#fromData-2">fromData</a></b> (QByteArray <i>data</i>, str <i>format</i> = None)</li>
+<li>
+<div class="fn"></div>QMatrix <b><a href="qimage.html#trueMatrix" tppabs="http://pyqt4doc.appspot.com/qimage.html#trueMatrix">trueMatrix</a></b> (QMatrix, int <i>w</i>, int <i>h</i>)</li>
+<li>
+<div class="fn"></div>QTransform <b><a href="qimage.html#trueMatrix-2" tppabs="http://pyqt4doc.appspot.com/qimage.html#trueMatrix-2">trueMatrix</a></b> (QTransform, int <i>w</i>, int <i>h</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>bool <b><a href="qimage.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qimage.html#__eq__">__eq__</a></b> (<i>self</i>, QImage)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qimage.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qimage.html#__ne__">__ne__</a></b> (<i>self</i>, QImage)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>QImage的类提供了与硬件无关的图像表示，它允许直接访问的像素数据，并可以作为一个绘图设备。</p>
+<p>Qt提供了四个类用于处理图像数据： QImage的，<a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a>，<a href="qbitmap.html" tppabs="http://pyqt4doc.appspot.com/qbitmap.html">QBitmap</a>和<a href="qpicture.html" tppabs="http://pyqt4doc.appspot.com/qpicture.html">QPicture</a>。 QImage的设计和优化的I / O和直接像素访问和操作，而<a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a>设计并显示在屏幕上的图像进行了优化。<a href="qbitmap.html" tppabs="http://pyqt4doc.appspot.com/qbitmap.html">QBitmap</a>只有继承一个方便的类<a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a>，确保深度为1 。最后，该<a href="qpicture.html" tppabs="http://pyqt4doc.appspot.com/qpicture.html">QPicture</a>类是一个绘图设备，记录和重放<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>的命令。</p>
+<p>因为QImage的是<a href="qpaintdevice.html" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html">QPaintDevice</a>子类，<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>可用于直接绘制到图像。当使用<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>在QImage的，这幅画可以在另一个线程来执行比目前的GUI线程。</p>
+<p>该QImage的类支持由所描述的几种图像格式<a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">Format</a>枚举。这些措施包括单色， 8位， 32位和alpha混合图像这是适用于所有版本的Qt 4.x中的</p>
+<p>QImage的规定的，可以被用来获得各种有关图像信息的功能的集合。也有几个功能，使图像的变换。</p>
+<p>因为QImage的类使用QImage的对象可以被传来传去传值<a href="index.htm#implicit-data-sharing" tppabs="http://pyqt4doc.appspot.com/implicit-sharing.html#implicit-data-sharing">implicit data
+sharing</a>。 QImage的对象也可以流并进行比较。</p>
+<p><b>Note:</b>如果你想加载QImage的对象在静态编译的Qt ，指的是<a href="index.htm#static-plugins" tppabs="http://pyqt4doc.appspot.com/plugins-howto.html#static-plugins">Plugin HowTo</a>。</p>
+<p><b>Warning:</b>画上的QImage与格式<a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">QImage.Format_Indexed8</a>不被支持。</p>
+<a id="reading-and-writing-image-files" name="reading-and-writing-image-files"></a>
+<h3>Reading and Writing Image Files</h3>
+<p>提供QImage的加载图像文件的几种方法：该文件可以构造QImage的对象时被加载，或使用<a href="qimage.html#load" tppabs="http://pyqt4doc.appspot.com/qimage.html#load">load</a>（）或<a href="qimage.html#loadFromData" tppabs="http://pyqt4doc.appspot.com/qimage.html#loadFromData">loadFromData</a>（ ）函数以后。 QImage的还提供了静态<a href="qimage.html#fromData" tppabs="http://pyqt4doc.appspot.com/qimage.html#fromData">fromData</a>（）函数，从给定的数据构造一个QImage的。当加载一个图像，文件名可以指在磁盘上的实际文件或应用的嵌入式资源之一。看<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/resources.html">The
+Qt Resource System</a>概述有关如何嵌入在应用程序的可执行映像和其他资源文件的详细信息。</p>
+<p>只需调用<a href="qimage.html#save" tppabs="http://pyqt4doc.appspot.com/qimage.html#save">save</a>（ ）函数来保存QImage的对象。</p>
+<p>都可以通过支持的文件格式的完整列表<a href="qimagereader.html#supportedImageFormats" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#supportedImageFormats">QImageReader.supportedImageFormats</a>（）和<a href="qimagewriter.html#supportedImageFormats" tppabs="http://pyqt4doc.appspot.com/qimagewriter.html#supportedImageFormats">QImageWriter.supportedImageFormats</a>（）函数。新的文件格式可以添加插件。默认情况下， Qt支持以下格式：</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Format</th>
+<th>Description</th>
+<th>Qt's support</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td>BMP</td>
+<td>Windows Bitmap</td>
+<td>Read/write</td>
+</tr>
+<tr class="even" valign="top">
+<td>GIF</td>
+<td>Graphic Interchange Format (optional)</td>
+<td>Read</td>
+</tr>
+<tr class="odd" valign="top">
+<td>JPG</td>
+<td>Joint Photographic Experts Group</td>
+<td>Read/write</td>
+</tr>
+<tr class="even" valign="top">
+<td>JPEG</td>
+<td>Joint Photographic Experts Group</td>
+<td>Read/write</td>
+</tr>
+<tr class="odd" valign="top">
+<td>PNG</td>
+<td>Portable Network Graphics</td>
+<td>Read/write</td>
+</tr>
+<tr class="even" valign="top">
+<td>PBM</td>
+<td>Portable Bitmap</td>
+<td>Read</td>
+</tr>
+<tr class="odd" valign="top">
+<td>PGM</td>
+<td>Portable Graymap</td>
+<td>Read</td>
+</tr>
+<tr class="even" valign="top">
+<td>PPM</td>
+<td>Portable Pixmap</td>
+<td>Read/write</td>
+</tr>
+<tr class="odd" valign="top">
+<td>TIFF</td>
+<td>Tagged Image File Format</td>
+<td>Read/write</td>
+</tr>
+<tr class="even" valign="top">
+<td>XBM</td>
+<td>X11 Bitmap</td>
+<td>Read/write</td>
+</tr>
+<tr class="odd" valign="top">
+<td>XPM</td>
+<td>X11 Pixmap</td>
+<td>Read/write</td>
+</tr>
+</table>
+<a id="image-information" name="image-information"></a>
+<h3>Image Information</h3>
+<p>QImage的规定的，可以被用来获得各种有关图像信息的功能的集合：</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th></th>
+<th>Available Functions</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td>Geometry</td>
+<td>The <a href="qimage.html#size" tppabs="http://pyqt4doc.appspot.com/qimage.html#size">size</a>(), <a href="qimage.html#width" tppabs="http://pyqt4doc.appspot.com/qimage.html#width">width</a>(), <a href="qimage.html#height" tppabs="http://pyqt4doc.appspot.com/qimage.html#height">height</a>(), <a href="qimage.html#dotsPerMeterX" tppabs="http://pyqt4doc.appspot.com/qimage.html#dotsPerMeterX">dotsPerMeterX</a>(), and <a href="qimage.html#dotsPerMeterY" tppabs="http://pyqt4doc.appspot.com/qimage.html#dotsPerMeterY">dotsPerMeterY</a>() functions provide
+information about the image size and aspect ratio.
+<p>该<a href="qimage.html#rect" tppabs="http://pyqt4doc.appspot.com/qimage.html#rect">rect</a>（ ）函数返回图像的外接矩形。该<a href="qimage.html#valid" tppabs="http://pyqt4doc.appspot.com/qimage.html#valid">valid</a>（ ）函数告诉如果给定的对坐标是该矩形内。该<a href="qimage.html#offset" tppabs="http://pyqt4doc.appspot.com/qimage.html#offset">offset</a>（）函数返回由该图像的目的是当使用位于相对于其他图像，这些图像也可以被操纵，以此作为偏移的像素的数量的<a href="qimage.html#setOffset" tppabs="http://pyqt4doc.appspot.com/qimage.html#setOffset">setOffset</a>（）函数。</p>
+</td>
+</tr>
+<tr class="even" valign="top">
+<td>Colors</td>
+<td>The color of a pixel can be retrieved by passing its
+coordinates to the <a href="qimage.html#pixel" tppabs="http://pyqt4doc.appspot.com/qimage.html#pixel">pixel</a>()
+function. The <a href="qimage.html#pixel" tppabs="http://pyqt4doc.appspot.com/qimage.html#pixel">pixel</a>() function
+returns the color as a <a href="qcolor.html#QRgb-typedef" tppabs="http://pyqt4doc.appspot.com/qcolor.html#QRgb-typedef">QRgb</a>
+value indepedent of the image's format.
+<p>在单色的情况下和8位的图像，该<a href="qimage.html#colorCount" tppabs="http://pyqt4doc.appspot.com/qimage.html#colorCount">colorCount</a>（）和<a href="qimage.html#colorTable" tppabs="http://pyqt4doc.appspot.com/qimage.html#colorTable">colorTable</a>（）函数提供了有关用于存储图像数据的颜色成分的信息：该<a href="qimage.html#colorTable" tppabs="http://pyqt4doc.appspot.com/qimage.html#colorTable">colorTable</a>（ ）函数返回图像的整个颜色表。为了得到一个单一的项目，请使用<a href="qimage.html#pixelIndex" tppabs="http://pyqt4doc.appspot.com/qimage.html#pixelIndex">pixelIndex</a>（ ）函数来检索一个给定的对坐标的像素索引，然后使用<a href="qimage.html#color" tppabs="http://pyqt4doc.appspot.com/qimage.html#color">color</a>（ ）函数来检索的颜色。请注意，如果您手动创建一个8位图像，你必须设置在图像上有效的颜色表也是如此。</p>
+<p>该<a href="qimage.html#hasAlphaChannel" tppabs="http://pyqt4doc.appspot.com/qimage.html#hasAlphaChannel">hasAlphaChannel</a>（ ）函数告诉如果图像的格式，尊重alpha通道，还是不行。该<a href="qimage.html#allGray" tppabs="http://pyqt4doc.appspot.com/qimage.html#allGray">allGray</a>（）和<a href="qimage.html#isGrayscale" tppabs="http://pyqt4doc.appspot.com/qimage.html#isGrayscale">isGrayscale</a>（ ）函数告诉了图像的颜色是否是灰色的形形色色。</p>
+<p>另见<a href="#pixel-manipulation">Pixel
+Manipulation</a>和<a href="#image-transformations">Image
+Transformations</a>部分。</p>
+</td>
+</tr>
+<tr class="odd" valign="top">
+<td>Text</td>
+<td>The <a href="qimage.html#text" tppabs="http://pyqt4doc.appspot.com/qimage.html#text">text</a>() function returns the
+image text associated with the given text key. An image's text keys
+can be retrieved using the <a href="qimage.html#textKeys" tppabs="http://pyqt4doc.appspot.com/qimage.html#textKeys">textKeys</a>() function. Use the <a href="qimage.html#setText" tppabs="http://pyqt4doc.appspot.com/qimage.html#setText">setText</a>() function to alter an image's
+text.</td>
+</tr>
+<tr class="even" valign="top">
+<td>Low-level information</td>
+<td>The <a href="qimage.html#depth" tppabs="http://pyqt4doc.appspot.com/qimage.html#depth">depth</a>() function returns
+the depth of the image. The supported depths are 1 (monochrome), 8,
+16, 24 and 32 bits. The <a href="qimage.html#bitPlaneCount" tppabs="http://pyqt4doc.appspot.com/qimage.html#bitPlaneCount">bitPlaneCount</a>() function tells how
+many of those bits that are used. For more information see the
+<a href="#image-formats">Image Formats</a> section.
+<p>该<a href="qimage.html#format" tppabs="http://pyqt4doc.appspot.com/qimage.html#format">format</a>（ ）<a href="qimage.html#bytesPerLine" tppabs="http://pyqt4doc.appspot.com/qimage.html#bytesPerLine">bytesPerLine</a>（）和<a href="qimage.html#byteCount" tppabs="http://pyqt4doc.appspot.com/qimage.html#byteCount">byteCount</a>（）函数提供关于存储的图像中的数据的低级别信息。</p>
+<p>该<a href="qimage.html#cacheKey" tppabs="http://pyqt4doc.appspot.com/qimage.html#cacheKey">cacheKey</a>（ ）函数返回一个数字，它唯一标识此QImage的对象的内容。</p>
+</td>
+</tr>
+</table>
+<a id="pixel-manipulation" name="pixel-manipulation"></a>
+<h3>Pixel Manipulation</h3>
+<p>用于处理图像的像素的功能取决于图像格式。其原因是单色和8位图像是基于索引的，并使用一个颜色查找表，而32位图像存储ARGB值直接。有关图像格式的详细信息，请参阅<a href="#image-formats">Image Formats</a>一节。</p>
+<p>万一一个32位的图像，本<a href="qimage.html#setPixel" tppabs="http://pyqt4doc.appspot.com/qimage.html#setPixel">setPixel</a>（）函数可以被用来改变该像素的颜色在指定的ARGB四联的给定坐标的任何其他颜色。为了让合适的<a href="qcolor.html#QRgb-typedef" tppabs="http://pyqt4doc.appspot.com/qcolor.html#QRgb-typedef">QRgb</a>值，使用<a href="index.htm#qRgb" tppabs="http://pyqt4doc.appspot.com/qtgui.html#qRgb">qRgb</a>（ ） （添加一个默认的alpha分量给定的RGB值，即创建一个不透明的颜色）或<a href="index.htm#qRgba" tppabs="http://pyqt4doc.appspot.com/qtgui.html#qRgba">qRgba</a>（）函数。例如：</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th colspan="2">32-bit</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td><img alt="" src="images/qimage-32bit_scaled.png"></td>
+<td>
+<pre class="cpp">
+ <span class="type">QImage</span> image(<span class="number">3</span><span class="operator">,</span> <span class="number">3</span><span class="operator">,</span> <span class="type">QImage</span><span class="operator">.</span>Format_RGB32);
+ <span class="type"><a href="qcolor.html#QRgb-typedef" tppabs="http://pyqt4doc.appspot.com/qcolor.html#QRgb-typedef">QRgb</a></span> value;
+
+ value <span class="operator">=</span> <a href="index.htm#qRgb" tppabs="http://pyqt4doc.appspot.com/qtgui.html#qRgb">qRgb</a>(<span class="number">189</span><span class="operator">,</span> <span class="number">149</span><span class="operator">,</span> <span class="number">39</span>); <span class="comment">// 0xffbd9527</span>
+ image<span class="operator">.</span><a href="qimage.html#setPixel" tppabs="http://pyqt4doc.appspot.com/qimage.html#setPixel">setPixel</a>(<span class="number">1</span><span class="operator">,</span> <span class="number">1</span><span class="operator">,</span> value);
+
+ value <span class="operator">=</span> <a href="index.htm#qRgb" tppabs="http://pyqt4doc.appspot.com/qtgui.html#qRgb">qRgb</a>(<span class="number">122</span><span class="operator">,</span> <span class="number">163</span><span class="operator">,</span> <span class="number">39</span>); <span class="comment">// 0xff7aa327</span>
+ image<span class="operator">.</span><a href="qimage.html#setPixel" tppabs="http://pyqt4doc.appspot.com/qimage.html#setPixel">setPixel</a>(<span class="number">0</span><span class="operator">,</span> <span class="number">1</span><span class="operator">,</span> value);
+ image<span class="operator">.</span><a href="qimage.html#setPixel" tppabs="http://pyqt4doc.appspot.com/qimage.html#setPixel">setPixel</a>(<span class="number">1</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> value);
+
+ value <span class="operator">=</span> <a href="index.htm#qRgb" tppabs="http://pyqt4doc.appspot.com/qtgui.html#qRgb">qRgb</a>(<span class="number">237</span><span class="operator">,</span> <span class="number">187</span><span class="operator">,</span> <span class="number">51</span>); <span class="comment">// 0xffedba31</span>
+ image<span class="operator">.</span><a href="qimage.html#setPixel" tppabs="http://pyqt4doc.appspot.com/qimage.html#setPixel">setPixel</a>(<span class="number">2</span><span class="operator">,</span> <span class="number">1</span><span class="operator">,</span> value);
+</pre>
+</td>
+</tr>
+</table>
+<p>在壳体的8位和monchrome图像中，像素值是只从图像的颜色表的索引。所以，<a href="qimage.html#setPixel" tppabs="http://pyqt4doc.appspot.com/qimage.html#setPixel">setPixel</a>（）函数仅可用于改变像素的颜色在给定的坐标以一个预定义的色彩从该图像的颜色表，即它只能改变像素的索引值。要更改或添加颜色到图像的颜色表，使用<a href="qimage.html#setColor" tppabs="http://pyqt4doc.appspot.com/qimage.html#setColor">setColor</a>（）函数。</p>
+<p>在颜色表中的条目是一个ARGB四胞胎编码为<a href="qcolor.html#QRgb-typedef" tppabs="http://pyqt4doc.appspot.com/qcolor.html#QRgb-typedef">QRgb</a>值。使用<a href="index.htm#qRgb" tppabs="http://pyqt4doc.appspot.com/qtgui.html#qRgb">qRgb</a>（）和<a href="index.htm#qRgba" tppabs="http://pyqt4doc.appspot.com/qtgui.html#qRgba">qRgba</a>（ ）函数来作出适当的<a href="qcolor.html#QRgb-typedef" tppabs="http://pyqt4doc.appspot.com/qcolor.html#QRgb-typedef">QRgb</a>值与使用<a href="qimage.html#setColor" tppabs="http://pyqt4doc.appspot.com/qimage.html#setColor">setColor</a>（）函数。例如：</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th colspan="2">8-bit</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td><img alt="" src="images/qimage-8bit_scaled.png"></td>
+<td>
+<pre class="cpp">
+ <span class="type">QImage</span> image(<span class="number">3</span><span class="operator">,</span> <span class="number">3</span><span class="operator">,</span> <span class="type">QImage</span><span class="operator">.</span>Format_Indexed8);
+ <span class="type"><a href="qcolor.html#QRgb-typedef" tppabs="http://pyqt4doc.appspot.com/qcolor.html#QRgb-typedef">QRgb</a></span> value;
+
+ value <span class="operator">=</span> <a href="index.htm#qRgb" tppabs="http://pyqt4doc.appspot.com/qtgui.html#qRgb">qRgb</a>(<span class="number">122</span><span class="operator">,</span> <span class="number">163</span><span class="operator">,</span> <span class="number">39</span>); <span class="comment">// 0xff7aa327</span>
+ image<span class="operator">.</span><a href="qimage.html#setColor" tppabs="http://pyqt4doc.appspot.com/qimage.html#setColor">setColor</a>(<span class="number">0</span><span class="operator">,</span> value);
+
+ value <span class="operator">=</span> <a href="index.htm#qRgb" tppabs="http://pyqt4doc.appspot.com/qtgui.html#qRgb">qRgb</a>(<span class="number">237</span><span class="operator">,</span> <span class="number">187</span><span class="operator">,</span> <span class="number">51</span>); <span class="comment">// 0xffedba31</span>
+ image<span class="operator">.</span><a href="qimage.html#setColor" tppabs="http://pyqt4doc.appspot.com/qimage.html#setColor">setColor</a>(<span class="number">1</span><span class="operator">,</span> value);
+
+ value <span class="operator">=</span> <a href="index.htm#qRgb" tppabs="http://pyqt4doc.appspot.com/qtgui.html#qRgb">qRgb</a>(<span class="number">189</span><span class="operator">,</span> <span class="number">149</span><span class="operator">,</span> <span class="number">39</span>); <span class="comment">// 0xffbd9527</span>
+ image<span class="operator">.</span><a href="qimage.html#setColor" tppabs="http://pyqt4doc.appspot.com/qimage.html#setColor">setColor</a>(<span class="number">2</span><span class="operator">,</span> value);
+
+ image<span class="operator">.</span><a href="qimage.html#setPixel" tppabs="http://pyqt4doc.appspot.com/qimage.html#setPixel">setPixel</a>(<span class="number">0</span><span class="operator">,</span> <span class="number">1</span><span class="operator">,</span> <span class="number">0</span>);
+ image<span class="operator">.</span><a href="qimage.html#setPixel" tppabs="http://pyqt4doc.appspot.com/qimage.html#setPixel">setPixel</a>(<span class="number">1</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">0</span>);
+ image<span class="operator">.</span><a href="qimage.html#setPixel" tppabs="http://pyqt4doc.appspot.com/qimage.html#setPixel">setPixel</a>(<span class="number">1</span><span class="operator">,</span> <span class="number">1</span><span class="operator">,</span> <span class="number">2</span>);
+ image<span class="operator">.</span><a href="qimage.html#setPixel" tppabs="http://pyqt4doc.appspot.com/qimage.html#setPixel">setPixel</a>(<span class="number">2</span><span class="operator">,</span> <span class="number">1</span><span class="operator">,</span> <span class="number">1</span>);
+</pre>
+</td>
+</tr>
+</table>
+<p>QImage的还提供了<a href="qimage.html#scanLine" tppabs="http://pyqt4doc.appspot.com/qimage.html#scanLine">scanLine</a>（ ）函数返回一个指向像素数据在给定索引扫描线，以及<a href="qimage.html#bits" tppabs="http://pyqt4doc.appspot.com/qimage.html#bits">bits</a>（ ）函数返回一个指向第一个像素的数据（这相当于<tt>scanLine(0)</tt>） 。</p>
+<a id="image-formats" name="image-formats"></a>
+<h3>Image Formats</h3>
+<p>存储在一个QImage的每个像素由一个整数表示。视格式的整数的大小而有所不同。 QImage的支持由所描述的几种图像格式<a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">Format</a>枚举。</p>
+<p>单色图像使用的是1位索引到颜色表最多两种颜色存储。有两种不同类型的黑白图像：大端（高位在前）和little endian（低位在前）位顺序。</p>
+<p>8位的图像是使用8位的索引到一个颜色表中存储的，即它们具有每像素一个字节。该颜色表是一个<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qvector.html">QVector</a>\u003c<a href="qcolor.html#QRgb-typedef" tppabs="http://pyqt4doc.appspot.com/qcolor.html#QRgb-typedef">QRgb</a>\u003e和<a href="qcolor.html#QRgb-typedef" tppabs="http://pyqt4doc.appspot.com/qcolor.html#QRgb-typedef">QRgb</a>的typedef相当于包含的格式0xAARRGGBB一个ARGB四胞胎一个unsigned int 。</p>
+<p>32位图像没有颜色表，而是每个像素包含一个<a href="qcolor.html#QRgb-typedef" tppabs="http://pyqt4doc.appspot.com/qcolor.html#QRgb-typedef">QRgb</a>值。有三种不同类型的32位图像分别存储的RGB （即0xffRRGGBB ） ， ARGB和预乘的ARGB值。在预乘格式的红色，绿色和蓝色通道是由alpha分量除以255乘以。</p>
+<p>的图像的格式可以用要检索的<a href="qimage.html#format" tppabs="http://pyqt4doc.appspot.com/qimage.html#format">format</a>（）函数。使用<a href="qimage.html#convertToFormat" tppabs="http://pyqt4doc.appspot.com/qimage.html#convertToFormat">convertToFormat</a>（）函数将图像转换成另一种格式。该<a href="qimage.html#allGray" tppabs="http://pyqt4doc.appspot.com/qimage.html#allGray">allGray</a>（）和<a href="qimage.html#isGrayscale" tppabs="http://pyqt4doc.appspot.com/qimage.html#isGrayscale">isGrayscale</a>（）函数判断是否彩色图像可以安全地被转换为灰度图像。</p>
+<a id="image-transformations" name="image-transformations"></a>
+<h3>Image Transformations</h3>
+<p>QImage的支持许多函数，用于创建一个新的图像，它是原始的转换后的版本：该<a href="qimage.html#createAlphaMask" tppabs="http://pyqt4doc.appspot.com/qimage.html#createAlphaMask">createAlphaMask</a>（ ）函数建立和从这个图片的alpha缓冲区返回一个1 - BPP掩码和<a href="qimage.html#createHeuristicMask" tppabs="http://pyqt4doc.appspot.com/qimage.html#createHeuristicMask">createHeuristicMask</a>（ ）函数创建并返回一个1 - BPP启发式掩码这一形象。后者的功能是通过从一个角中选择一种颜色，然后小打小闹该颜色的起始像素的所有边。</p>
+<p>该<a href="qimage.html#mirrored" tppabs="http://pyqt4doc.appspot.com/qimage.html#mirrored">mirrored</a>（）函数返回的图像的反射镜在所需方向上的<a href="qimage.html#scaled" tppabs="http://pyqt4doc.appspot.com/qimage.html#scaled">scaled</a>（）返回的图像缩放到所要求的措施，一个矩形的副本，并且该<a href="qimage.html#rgbSwapped" tppabs="http://pyqt4doc.appspot.com/qimage.html#rgbSwapped">rgbSwapped</a>（ ）函数构造一个BGR图像从RGB图像。</p>
+<p>该<a href="qimage.html#scaledToWidth" tppabs="http://pyqt4doc.appspot.com/qimage.html#scaledToWidth">scaledToWidth</a>（）和<a href="qimage.html#scaledToHeight" tppabs="http://pyqt4doc.appspot.com/qimage.html#scaledToHeight">scaledToHeight</a>（ ）函数返回图像的缩放复印。</p>
+<p>该<a href="qimage.html#transformed" tppabs="http://pyqt4doc.appspot.com/qimage.html#transformed">transformed</a>（ ）函数返回的转化与给定的变换矩阵与变换模式的图像的副本：在内部，该变换矩阵进行调整，以补偿不需要翻译，即<a href="qimage.html#transformed" tppabs="http://pyqt4doc.appspot.com/qimage.html#transformed">transformed</a>（ ）返回一个包含原始图像的所有变换的点的最小图像。静<a href="qimage.html#trueMatrix" tppabs="http://pyqt4doc.appspot.com/qimage.html#trueMatrix">trueMatrix</a>（）函数返回用于变换图像的实际矩阵。</p>
+<p>也有用于改变就地图像的属性功能：</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td>
+<a href="qimage.html#setDotsPerMeterX" tppabs="http://pyqt4doc.appspot.com/qimage.html#setDotsPerMeterX">setDotsPerMeterX</a>()</td>
+<td>Defines the aspect ratio by setting the number of pixels that
+fit horizontally in a physical meter.</td>
+</tr>
+<tr class="even" valign="top">
+<td>
+<a href="qimage.html#setDotsPerMeterY" tppabs="http://pyqt4doc.appspot.com/qimage.html#setDotsPerMeterY">setDotsPerMeterY</a>()</td>
+<td>Defines the aspect ratio by setting the number of pixels that
+fit vertically in a physical meter.</td>
+</tr>
+<tr class="odd" valign="top">
+<td>
+<a href="qimage.html#fill" tppabs="http://pyqt4doc.appspot.com/qimage.html#fill">fill</a>()</td>
+<td>Fills the entire image with the given pixel value.</td>
+</tr>
+<tr class="even" valign="top">
+<td>
+<a href="qimage.html#invertPixels" tppabs="http://pyqt4doc.appspot.com/qimage.html#invertPixels">invertPixels</a>()</td>
+<td>Inverts all pixel values in the image using the given <a href="qimage.html#InvertMode-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#InvertMode-enum">InvertMode</a> value.</td>
+</tr>
+<tr class="odd" valign="top">
+<td>
+<a href="qimage.html#setColorTable" tppabs="http://pyqt4doc.appspot.com/qimage.html#setColorTable">setColorTable</a>()</td>
+<td>Sets the color table used to translate color indexes. Only
+monochrome and 8-bit formats.</td>
+</tr>
+<tr class="even" valign="top">
+<td>
+<a href="qimage.html#setColorCount" tppabs="http://pyqt4doc.appspot.com/qimage.html#setColorCount">setColorCount</a>()</td>
+<td>Resizes the color table. Only monochrome and 8-bit
+formats.</td>
+</tr>
+</table>
+<a id="legal-information" name="legal-information"></a>
+<h3>Legal Information</h3>
+<p>对于平滑缩放，<a href="qimage.html#transformed" tppabs="http://pyqt4doc.appspot.com/qimage.html#transformed">transformed</a>（ ）函数使用的代码基础上由Daniel M. Duley平滑缩放算法。</p>
+<div class="LegaleseLeft">
+<p>版权所有（C ） 2004，2005丹尼尔米Duley</p>
+<p>再分配和在源代码和二进制形式的使用，无论修改与否，都允许下列条件：</p>
+<p>1 。源代码的再分发必须保留上述版权声明，此条件列表和以下免责声明。 2 。以二进制形式再分发必须复制上述版权声明，此条件列表和文档和/或随分发提供的其他材料中的下列免责声明。</p>
+<p>本软件是由作者``原样''任何明示或暗示的担保，包括但不限于适销性和适用性的暗示担保适用于某一特定用途的保证。在任何情况下，作者均不对任何直接的，间接的，附带的，特殊的，惩罚性的或后果性的损害（包括但不限于购买替代商品或服务，使用损失，数据丢失或利润损失或业务中断）而引起的任何责任理论，无论是在合同，严格赔偿责任或民事侵权行为（包括疏忽或其它）以任何方式产生出这种软件的使用，即使已被告知发生此类损害的可能性。</p>
+</div>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="Format-enum"></a>QImage.Format</h3>
+<p>下面的图像格式，可在Qt的。值大于QImage.Format_RGB16分别加入Qt的4.4 。请参阅下表后的注意事项。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QImage.Format_Invalid</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该图像是无效的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QImage.Format_Mono</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该图像是使用每像素1位的存储。字节首先挤满了最显着的位（MSB ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QImage.Format_MonoLSB</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">该图像是使用每像素1位的存储。字节首先挤满了少显着位（LSB ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QImage.Format_Indexed8</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">该图像是用8位的索引为一个颜色表存储。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QImage.Format_RGB32</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">该图像是使用一个32位的RGB格式（ 0xffRRGGBB ）存储。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QImage.Format_ARGB32</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">该图像是使用一个32位ARGB格式（ 0xAARRGGBB ）存储。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QImage.Format_ARGB32_Premultiplied</tt>
+</td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">该图像是使用预乘32位ARGB格式（ 0xAARRGGBB ）存储，即红色，绿色和蓝色通道是由alpha分量除以255乘以。 （如果RR，GG或BB有更高的价值比alpha通道，结果是不确定的。 ）某些操作（如使用alpha混合图像组合物）使用速度更快左乘ARGB32比普通ARGB32 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QImage.Format_RGB16</tt></td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">该图像是使用一个16位的RGB格式（ 5-6-5 ）存储。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QImage.Format_ARGB8565_Premultiplied</tt>
+</td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">该图像是使用预乘24位ARGB格式（ 8-5-6-5 ）存储。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QImage.Format_RGB666</tt></td>
+<td class="topAlign"><tt>9</tt></td>
+<td class="topAlign">该图像是用一个24位的RGB格式（ 6-6-6 ）存储。未使用的最显着的位始终为零。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QImage.Format_ARGB6666_Premultiplied</tt>
+</td>
+<td class="topAlign"><tt>10</tt></td>
+<td class="topAlign">该图像是使用预乘24位ARGB格式（ 6-6-6-6 ）存储。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QImage.Format_RGB555</tt></td>
+<td class="topAlign"><tt>11</tt></td>
+<td class="topAlign">该图像是使用一个16位的RGB格式（ 5-5-5 ）存储。未使用的最显着位始终为零。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QImage.Format_ARGB8555_Premultiplied</tt>
+</td>
+<td class="topAlign"><tt>12</tt></td>
+<td class="topAlign">该图像是使用预乘24位ARGB格式（ 8-5-5-5 ）存储。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QImage.Format_RGB888</tt></td>
+<td class="topAlign"><tt>13</tt></td>
+<td class="topAlign">该图像是用一个24位的RGB格式（ 8-8-8 ）存储。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QImage.Format_RGB444</tt></td>
+<td class="topAlign"><tt>14</tt></td>
+<td class="topAlign">该图像是使用一个16位的RGB格式（ 4-4-4 ）存储。未使用的位始终为零。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QImage.Format_ARGB4444_Premultiplied</tt>
+</td>
+<td class="topAlign"><tt>15</tt></td>
+<td class="topAlign">该图像是使用预乘16位ARGB格式（ 4-4-4-4 ）存储。</td>
+</tr>
+</table>
+<p><b>Note:</b>拉丝成<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>与QImage.Format_Indexed8不支持。</p>
+<p><b>Note:</b>不要渲染成ARGB32使用的图像<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>。使用QImage.Format_ARGB32_Premultiplied是显着更快。</p>
+<p><b>See also</b> <a href="qimage.html#format" tppabs="http://pyqt4doc.appspot.com/qimage.html#format">format</a>（）和<a href="qimage.html#convertToFormat" tppabs="http://pyqt4doc.appspot.com/qimage.html#convertToFormat">convertToFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="InvertMode-enum"></a>QImage.InvertMode</h3>
+<p>该枚举类型用于描述如何像素值应在倒<a href="qimage.html#invertPixels" tppabs="http://pyqt4doc.appspot.com/qimage.html#invertPixels">invertPixels</a>（）函数。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QImage.InvertRgb</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">仅反转的RGB值，并保留alpha通道不变。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QImage.InvertRgba</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">反转所有通道，包括Alpha通道。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qimage.html#invertPixels" tppabs="http://pyqt4doc.appspot.com/qimage.html#invertPixels">invertPixels</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QImage"></a>QImage.__init__ (<i>self</i>)</h3>
+<p>构造一个空图像。</p>
+<p><b>See also</b> <a href="qimage.html#isNull" tppabs="http://pyqt4doc.appspot.com/qimage.html#isNull">isNull</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QImage-2"></a>QImage.__init__ (<i>self</i>, <a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> <i>size</i>, <a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">Format</a> <i>format</i>)</h3>
+<p>构造一个图像与给定的<i>size</i>和<i>format</i>。</p>
+<p>A <a href="qimage.html#isNull" tppabs="http://pyqt4doc.appspot.com/qimage.html#isNull">null</a>如果内存无法分配图像返回。</p>
+<p><b>Warning:</b>这将创建一个<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>与未初始化的数据。通话<a href="qimage.html#fill" tppabs="http://pyqt4doc.appspot.com/qimage.html#fill">fill</a>（ ）与绘制到它之前，以填补一个合适的像素值的图像<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>。</p>
+
+
+<h3 class="fn">
+<a name="QImage-3"></a>QImage.__init__ (<i>self</i>, int <i>width</i>, int <i>height</i>, <a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">Format</a> <i>format</i>)</h3>
+<p>构造一个图像与给定的<i>width</i>，<i>height</i>和<i>format</i>。</p>
+<p>A <a href="qimage.html#isNull" tppabs="http://pyqt4doc.appspot.com/qimage.html#isNull">null</a>如果内存无法分配图像将被退回。</p>
+<p><b>Warning:</b>这将创建一个<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>与未初始化的数据。通话<a href="qimage.html#fill" tppabs="http://pyqt4doc.appspot.com/qimage.html#fill">fill</a>（ ）与绘制到它之前，以填补一个合适的像素值的图像<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>。</p>
+
+
+<h3 class="fn">
+<a name="QImage-4"></a>QImage.__init__ (<i>self</i>, str <i>data</i>, int <i>width</i>, int <i>height</i>, <a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">Format</a> <i>format</i>)</h3>
+<p>构造一个图像与给定的<i>width</i>，<i>height</i>和<i>format</i>，使用现有的内存缓冲区，<i>data</i>。该<i>width</i>和<i>height</i>必须以像素为单位来指定，<i>data</i>必须是32位对齐的，并且在图像数据的每一个的扫描线也必须是32位对齐的。</p>
+<p>该缓冲区必须保持有效的整个的生命<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>。图像不会删除缓冲区破坏。</p>
+<p>If <i>format</i>是一种索引颜色格式，图像颜色表开始是空的，必须充分扩展了<a href="qimage.html#setColorCount" tppabs="http://pyqt4doc.appspot.com/qimage.html#setColorCount">setColorCount</a>（）或<a href="qimage.html#setColorTable" tppabs="http://pyqt4doc.appspot.com/qimage.html#setColorTable">setColorTable</a>（）的图像被使用之前。</p>
+
+
+<h3 class="fn">
+<a name="QImage-5"></a>QImage.__init__ (<i>self</i>, sip.voidptr <i>data</i>, int <i>width</i>, int <i>height</i>, <a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">Format</a> <i>format</i>)</h3>
+<p>构造一个图像与给定的<i>width</i>，<i>height</i>和<i>format</i>中，使用现有的只读存储器缓冲器，<i>data</i>。该<i>width</i>和<i>height</i>必须以像素为单位来指定，<i>data</i>必须是32位对齐的，并且在图像数据的每一个的扫描线也必须是32位对齐的。</p>
+<p>该缓冲区必须保持有效的整个的生命<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>而那些没有被修改或以其他方式脱离了原来的缓冲区中的所有副本。图像不会删除缓冲区破坏。</p>
+<p>If <i>format</i>是一种索引颜色格式，图像颜色表开始是空的，必须充分扩展了<a href="qimage.html#setColorCount" tppabs="http://pyqt4doc.appspot.com/qimage.html#setColorCount">setColorCount</a>（）或<a href="qimage.html#setColorTable" tppabs="http://pyqt4doc.appspot.com/qimage.html#setColorTable">setColorTable</a>（）的图像被使用之前。</p>
+<p>不同于类似<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>构造函数接受一个非const数据缓冲区，该版本将永远不会改变缓冲区的内容。例如，调用<a href="qimage.html#bits" tppabs="http://pyqt4doc.appspot.com/qimage.html#bits">QImage.bits</a>（ ）将返回图像的深层副本，而不是缓冲区传递给构造函数。这使得构建的效率<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>从原始数据，而不对原始数据被改变的可能性。</p>
+
+
+<h3 class="fn">
+<a name="QImage-6"></a>QImage.__init__ (<i>self</i>, str <i>data</i>, int <i>width</i>, int <i>height</i>, int <i>bytesPerLine</i>, <a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">Format</a> <i>format</i>)</h3>
+<p>构造一个图像与给定的<i>width</i>，<i>height</i>和<i>format</i>，使用现有的内存缓冲区，<i>data</i>。该<i>width</i>和<i>height</i>必须以像素为单位来指定。<i>bytesPerLine</i>指定每行（步幅）的字节数。</p>
+<p>该缓冲区必须保持有效的整个的生命<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>。图像不会删除缓冲区破坏。</p>
+<p>If <i>format</i>是一种索引颜色格式，图像颜色表开始是空的，必须充分扩展了<a href="qimage.html#setColorCount" tppabs="http://pyqt4doc.appspot.com/qimage.html#setColorCount">setColorCount</a>（）或<a href="qimage.html#setColorTable" tppabs="http://pyqt4doc.appspot.com/qimage.html#setColorTable">setColorTable</a>（）的图像被使用之前。</p>
+
+
+<h3 class="fn">
+<a name="QImage-7"></a>QImage.__init__ (<i>self</i>, sip.voidptr <i>data</i>, int <i>width</i>, int <i>height</i>, int <i>bytesPerLine</i>, <a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">Format</a> <i>format</i>)</h3>
+<p>构造一个图像与给定的<i>width</i>，<i>height</i>和<i>format</i>，使用现有的内存缓冲区，<i>data</i>。该<i>width</i>和<i>height</i>必须以像素为单位来指定。<i>bytesPerLine</i>指定每行（步幅）的字节数。</p>
+<p>该缓冲区必须保持有效的整个的生命<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>。图像不会删除缓冲区破坏。</p>
+<p>If <i>format</i>是一种索引颜色格式，图像颜色表开始是空的，必须充分扩展了<a href="qimage.html#setColorCount" tppabs="http://pyqt4doc.appspot.com/qimage.html#setColorCount">setColorCount</a>（）或<a href="qimage.html#setColorTable" tppabs="http://pyqt4doc.appspot.com/qimage.html#setColorTable">setColorTable</a>（）的图像被使用之前。</p>
+<p>不同于类似<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>构造函数接受一个非const数据缓冲区，该版本将永远不会改变缓冲区的内容。例如，调用<a href="qimage.html#bits" tppabs="http://pyqt4doc.appspot.com/qimage.html#bits">QImage.bits</a>（ ）将返回图像的深层副本，而不是缓冲区传递给构造函数。这使得构建的效率<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>从原始数据，而不对原始数据被改变的可能性。</p>
+
+
+<h3 class="fn">
+<a name="QImage-8"></a>QImage.__init__ (<i>self</i>, list-of-str <i>xpm</i>)</h3>
+<p>构造一个图像从给定的<i>xpm</i>图像。</p>
+<p>确保图像是一个有效的XPM图像。错误被忽略。</p>
+<p>请注意，它可能通过使用一个不同寻常的声明挤压XPM变量一点点：</p>
+<pre class="cpp">
+ <span class="keyword">static</span> <span class="keyword">const</span> <span class="type">char</span> <span class="operator">*</span> <span class="keyword">const</span> start_xpm<span class="operator">[</span><span class="operator">]</span> <span class="operator">=</span> {
+     <span class="string">"16 15 8 1"</span><span class="operator">,</span>
+     <span class="string">"a c #cec6bd"</span><span class="operator">,</span>
+ <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+</pre>
+<p>额外的<tt>const</tt>使得整个定义为只读，这会更有效（例如，当代码是在一个共享库），并能够存储在ROM中的应用程序。</p>
+
+
+<h3 class="fn">
+<a name="QImage-9"></a>QImage.__init__ (<i>self</i>, QString <i>fileName</i>, str <i>format</i> = None)</h3>
+<p>构造一个图像，并尝试从该文件与给定的加载图像<i>fileName</i>。</p>
+<p>加载器会尝试使用指定的读取图像<i>format</i>。如果<i>format</i>未指定（这是默认值） ，加载器探测文件的标题来猜测文件格式。</p>
+<p>如果图像的装载失败，这个对象是一个空的图像。</p>
+<p>文件名可以是指在磁盘上的实际文件或应用的嵌入式资源之一。请参阅<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/resources.html">Resource System</a>概述有关如何嵌入在应用程序的可执行映像和其他资源文件的详细信息。</p>
+<p><b>See also</b> <a href="qimage.html#isNull" tppabs="http://pyqt4doc.appspot.com/qimage.html#isNull">isNull</a>（）和<a href="qimage.html#reading-and-writing-image-files" tppabs="http://pyqt4doc.appspot.com/qimage.html#reading-and-writing-image-files">Reading and
+Writing Image Files</a>。</p>
+
+
+<h3 class="fn">
+<a name="QImage-10"></a>QImage.__init__ (<i>self</i>, <a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>)</h3>
+<p>构造一个图像，并尝试从该文件与给定的加载图像<i>fileName</i>。</p>
+<p>加载器会尝试使用指定的读取图像<i>format</i>。如果<i>format</i>未指定（这是默认值） ，加载器探测文件的标题来猜测文件格式。</p>
+<p>如果图像的装载失败，这个对象是一个空的图像。</p>
+<p>文件名可以是指在磁盘上的实际文件或应用的嵌入式资源之一。请参阅<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/resources.html">Resource System</a>概述有关如何嵌入在应用程序的可执行映像和其他资源文件的详细信息。</p>
+<p>您可以通过定义禁用此构造函数<tt>QT_NO_CAST_FROM_ASCII</tt>当您编译您的应用程序。这可能是有用的，例如，如果你想确保所有用户可见的字符串经过<a href="qobject.html#tr" tppabs="http://pyqt4doc.appspot.com/qobject.html#tr">QObject.tr</a>（ ） 。</p>
+<p><b>See also</b> <a href="qstring.html#fromAscii" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromAscii">QString.fromAscii</a>（ ）<a href="qimage.html#isNull" tppabs="http://pyqt4doc.appspot.com/qimage.html#isNull">isNull</a>（）和<a href="qimage.html#reading-and-writing-image-files" tppabs="http://pyqt4doc.appspot.com/qimage.html#reading-and-writing-image-files">Reading and Writing
+Image Files</a>。</p>
+
+
+<h3 class="fn">
+<a name="QImage-11"></a>QImage.__init__ (<i>self</i>, QVariant <i>variant</i>)</h3>
+<p>构造给定的浅表副本<i>image</i>。</p>
+<p>如需浅副本的详细信息，请参阅<a href="index.htm#implicit-data-sharing" tppabs="http://pyqt4doc.appspot.com/implicit-sharing.html#implicit-data-sharing">Implicit Data
+Sharing</a>文档。</p>
+<p><b>See also</b> <a href="qimage.html#copy" tppabs="http://pyqt4doc.appspot.com/qimage.html#copy">copy</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="allGray"></a>bool QImage.allGray (<i>self</i>)</h3>
+<p>返回True如果图像中所有的颜色都是灰色的（也就是他们的红色，绿色和蓝色成分相同）的阴影，否则为False 。</p>
+<p>注意，这个函数是没有颜色表的图像缓慢。</p>
+<p><b>See also</b> <a href="qimage.html#isGrayscale" tppabs="http://pyqt4doc.appspot.com/qimage.html#isGrayscale">isGrayscale</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="alphaChannel"></a><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> QImage.alphaChannel (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="bitPlaneCount"></a>int QImage.bitPlaneCount (<i>self</i>)</h3>
+<p>返回的图像中的位平面的数目。</p>
+<p>位平面的数目为颜色和透明度信息对每个像素的比特数。这是从深度（即小于）时，图像格式包含未用的比特不同。</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qimage.html#depth" tppabs="http://pyqt4doc.appspot.com/qimage.html#depth">depth</a>（ ）<a href="qimage.html#format" tppabs="http://pyqt4doc.appspot.com/qimage.html#format">format</a>（）和<a href="qimage.html#image-formats" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-formats">Image Formats</a>。</p>
+
+
+<h3 class="fn">
+<a name="bits"></a>sip.voidptr QImage.bits (<i>self</i>)</h3>
+<p>将指针返回到所述第一像素数据。这相当于扫描线（0）。</p>
+<p>需要注意的是<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> uses <a href="index.htm#implicit-data-sharing" tppabs="http://pyqt4doc.appspot.com/implicit-sharing.html#implicit-data-sharing">implicit data
+sharing</a>。这个函数执行的共享像素数据的深层副本，从而确保这<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>可使用现行的返回值是唯一一个。</p>
+<p><b>See also</b> <a href="qimage.html#scanLine" tppabs="http://pyqt4doc.appspot.com/qimage.html#scanLine">scanLine</a>（ ）<a href="qimage.html#byteCount" tppabs="http://pyqt4doc.appspot.com/qimage.html#byteCount">byteCount</a>（）和<a href="qimage.html#constBits" tppabs="http://pyqt4doc.appspot.com/qimage.html#constBits">constBits</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="byteCount"></a>int QImage.byteCount (<i>self</i>)</h3>
+<p>返回由图像数据所佔用的字节数。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qimage.html#bytesPerLine" tppabs="http://pyqt4doc.appspot.com/qimage.html#bytesPerLine">bytesPerLine</a>（ ）<a href="qimage.html#bits" tppabs="http://pyqt4doc.appspot.com/qimage.html#bits">bits</a>（）和<a href="qimage.html#image-information" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-information">Image Information</a>。</p>
+
+
+<h3 class="fn">
+<a name="bytesPerLine"></a>int QImage.bytesPerLine (<i>self</i>)</h3>
+<p>返回每幅图像扫描线的字节数。</p>
+<p>这等效于<a href="qimage.html#byteCount" tppabs="http://pyqt4doc.appspot.com/qimage.html#byteCount">byteCount</a>（）/<a href="qimage.html#height" tppabs="http://pyqt4doc.appspot.com/qimage.html#height">height</a>（ ） 。</p>
+<p><b>See also</b> <a href="qimage.html#scanLine" tppabs="http://pyqt4doc.appspot.com/qimage.html#scanLine">scanLine</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="cacheKey"></a>int QImage.cacheKey (<i>self</i>)</h3>
+<p>返回一个数字，用于标识此内容<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>对象。不同<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>对象只能具有相同的密钥，如果它们指的是相同的内容。</p>
+<p>该键将改变当图像被改变。</p>
+
+
+<h3 class="fn">
+<a name="color"></a>int QImage.color (<i>self</i>, int <i>i</i>)</h3>
+<p>在索引返回的颜色的颜色表<i>i</i>。第一种颜色的索引为0 。</p>
+<p>图像中的颜色表中的颜色指定为ARGB四胞胎（<a href="qcolor.html#QRgb-typedef" tppabs="http://pyqt4doc.appspot.com/qcolor.html#QRgb-typedef">QRgb</a>） 。使用<a href="index.htm#qAlpha" tppabs="http://pyqt4doc.appspot.com/qtgui.html#qAlpha">qAlpha</a>（ ）<a href="index.htm#qRed" tppabs="http://pyqt4doc.appspot.com/qtgui.html#qRed">qRed</a>（ ）<a href="index.htm#qGreen" tppabs="http://pyqt4doc.appspot.com/qtgui.html#qGreen">qGreen</a>（）和<a href="index.htm#qBlue" tppabs="http://pyqt4doc.appspot.com/qtgui.html#qBlue">qBlue</a>（ ）函数来获取颜色值的组件。</p>
+<p><b>See also</b> <a href="qimage.html#setColor" tppabs="http://pyqt4doc.appspot.com/qimage.html#setColor">setColor</a>（ ）<a href="qimage.html#pixelIndex" tppabs="http://pyqt4doc.appspot.com/qimage.html#pixelIndex">pixelIndex</a>（）和<a href="qimage.html#pixel-manipulation" tppabs="http://pyqt4doc.appspot.com/qimage.html#pixel-manipulation">Pixel Manipulation</a>。</p>
+
+
+<h3 class="fn">
+<a name="colorCount"></a>int QImage.colorCount (<i>self</i>)</h3>
+<p>返回颜色表的图像的大小。</p>
+<p>请注意， colorCount （ ）返回0表示32位色的图像，因为这些图像不使用颜色表，而是编码的像素值作为ARGB四胞胎。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qimage.html#setColorCount" tppabs="http://pyqt4doc.appspot.com/qimage.html#setColorCount">setColorCount</a>（）和<a href="qimage.html#image-information" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-information">Image Information</a>。</p>
+
+
+<h3 class="fn">
+<a name="colorTable"></a>list-of-int QImage.colorTable (<i>self</i>)</h3>
+<p>返回包含在图像的颜色表中的颜色列表，或者一个空列表，如果图像没有颜色表</p>
+<p><b>See also</b> <a href="qimage.html#setColorTable" tppabs="http://pyqt4doc.appspot.com/qimage.html#setColorTable">setColorTable</a>（ ）<a href="qimage.html#colorCount" tppabs="http://pyqt4doc.appspot.com/qimage.html#colorCount">colorCount</a>（）和<a href="qimage.html#color" tppabs="http://pyqt4doc.appspot.com/qimage.html#color">color</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="constBits"></a>sip.voidptr QImage.constBits (<i>self</i>)</h3>
+<p>将指针返回到所述第一像素数据。</p>
+<p>需要注意的是<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> uses <a href="index.htm#implicit-data-sharing" tppabs="http://pyqt4doc.appspot.com/implicit-sharing.html#implicit-data-sharing">implicit data
+sharing</a>，但这个函数<i>not</i>执行共享像素数据的深层副本，因为返回的数据是常量。</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qimage.html#bits" tppabs="http://pyqt4doc.appspot.com/qimage.html#bits">bits</a>（）和<a href="qimage.html#constScanLine" tppabs="http://pyqt4doc.appspot.com/qimage.html#constScanLine">constScanLine</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="constScanLine"></a>sip.voidptr QImage.constScanLine (<i>self</i>, int)</h3>
+<p>返回一个指针，指向像素数据与索引扫描线<i>i</i>。第一个扫描行的索引为0 。</p>
+<p>该扫描线数据是对齐的32位边界。</p>
+<p>需要注意的是<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> uses <a href="index.htm#implicit-data-sharing" tppabs="http://pyqt4doc.appspot.com/implicit-sharing.html#implicit-data-sharing">implicit data
+sharing</a>，但这个函数<i>not</i>执行共享像素数据的深层副本，因为返回的数据是常量。</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qimage.html#scanLine" tppabs="http://pyqt4doc.appspot.com/qimage.html#scanLine">scanLine</a>（）和<a href="qimage.html#constBits" tppabs="http://pyqt4doc.appspot.com/qimage.html#constBits">constBits</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="convertToFormat"></a><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> QImage.convertToFormat (<i>self</i>, <a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">Format</a> <i>format</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-imageconversionflags.html">Qt.ImageConversionFlags</a> <i>flags</i> = Qt.AutoColor)</h3>
+<p>返回图像的一个副本在给定的<i>format</i>。</p>
+<p>指定的图像转换<i>flags</i>控制如何在转换过程中的图像数据被处理。</p>
+<p><b>See also</b> <a href="qimage.html#image-formats" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-formats">Image
+Format</a>。</p>
+
+
+<h3 class="fn">
+<a name="convertToFormat-2"></a><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> QImage.convertToFormat (<i>self</i>, <a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">Format</a> <i>format</i>, list-of-int <i>colorTable</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-imageconversionflags.html">Qt.ImageConversionFlags</a> <i>flags</i> = Qt.AutoColor)</h3>
+<p>这是一个重载函数。</p>
+<p>返回的图像的副本转换为给定<i>format</i>使用指定的<i>colorTable</i>。</p>
+<p>从32位到8位索引转换是一个缓慢的操作，将使用一个简单的最接近的颜色的方法，无抖动。</p>
+
+
+<h3 class="fn">
+<a name="copy"></a><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> QImage.copy (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>rect</i> = QRect())</h3>
+<p>返回图像的子区域作为一个新的形象。</p>
+<p>返回的图像从位置复制（<i>rectangle</i>， X（ ） ，<i>rectangle</i>， Y（ ） ）在这个形象，并总是具有给定的尺寸<i>rectangle</i>。</p>
+<p>在此以外的图像区域，像素被设置为0。对于32位RGB图像，这意味着黑，为32位ARGB图像，这意味着透明的黑色;为8位图像，这意味着索引为0的颜色表，可以是任何颜色， 1位图像中，这意味着<a href="qt.html#GlobalColor-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#GlobalColor-enum">Qt.color0</a>。</p>
+<p>如果给定的<i>rectangle</i>是一个空矩形整个图像被复制。</p>
+<p><b>See also</b> <a href="qimage.html#QImage" tppabs="http://pyqt4doc.appspot.com/qimage.html#QImage">QImage</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="copy-2"></a><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> QImage.copy (<i>self</i>, int <i>x</i>, int <i>y</i>, int <i>w</i>, int <i>h</i>)</h3>
+<h3 class="fn">
+<a name="createAlphaMask"></a><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> QImage.createAlphaMask (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-imageconversionflags.html">Qt.ImageConversionFlags</a> <i>flags</i> = Qt.AutoColor)</h3>
+<p>构建并从该图像的alpha缓冲区返回1 BPP掩码。返回一个空图像，如果图像的格式是<a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">QImage.Format_RGB32</a>。</p>
+<p>该<i>flags</i>参数是的一个按位或<a href="qt.html#ImageConversionFlag-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ImageConversionFlag-enum">Qt.ImageConversionFlags</a>和控制转换过程。路过0标志设置所有默认选项。</p>
+<p>返回的图像有小端位顺序（即图像的格式是<a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">QImage.Format_MonoLSB</a>） ，你可以转换为大端（<a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">QImage.Format_Mono</a>）使用<a href="qimage.html#convertToFormat" tppabs="http://pyqt4doc.appspot.com/qimage.html#convertToFormat">convertToFormat</a>（）函数。</p>
+<p><b>See also</b> <a href="qimage.html#createHeuristicMask" tppabs="http://pyqt4doc.appspot.com/qimage.html#createHeuristicMask">createHeuristicMask</a>（）和<a href="qimage.html#image-transformations" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-transformations">Image
+Transformations</a>。</p>
+
+
+<h3 class="fn">
+<a name="createHeuristicMask"></a><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> QImage.createHeuristicMask (<i>self</i>, bool <i>clipTight</i> = True)</h3>
+<p>创建并返回一个1 - BPP启发式掩码这一形象。</p>
+<p>该功能的工作原理是从一个角选择一种颜色，然后小打小闹的颜色开始的像素，所有的边缘。四角投票的颜色是被屏蔽了。的情况下的拉伸（这通常意味着这个函数是不适用的图像） ，其结果是任意的。</p>
+<p>返回的图像有小端位顺序（即图像的格式是<a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">QImage.Format_MonoLSB</a>） ，你可以转换为大端（<a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">QImage.Format_Mono</a>）使用<a href="qimage.html#convertToFormat" tppabs="http://pyqt4doc.appspot.com/qimage.html#convertToFormat">convertToFormat</a>（）函数。</p>
+<p>If <i>clipTight</i>为True（默认值）的面具只是大到足以复盖的像素，否则，面膜比数据像素。</p>
+<p>注意，这个函数会忽略的alpha缓冲区。</p>
+<p><b>See also</b> <a href="qimage.html#createAlphaMask" tppabs="http://pyqt4doc.appspot.com/qimage.html#createAlphaMask">createAlphaMask</a>（）和<a href="qimage.html#image-transformations" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-transformations">Image Transformations</a>。</p>
+
+
+<h3 class="fn">
+<a name="createMaskFromColor"></a><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> QImage.createMaskFromColor (<i>self</i>, int <i>color</i>, <a href="qt.html#MaskMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#MaskMode-enum">Qt.MaskMode</a> <i>mode</i> = Qt.MaskInColor)</h3>
+<p>创建并返回的基础上，给出了这一形象口罩<i>color</i>值。如果<i>mode</i>是MaskInColor （默认值） ，所有像素匹配<i>color</i>将不透明像素的掩模。如果<i>mode</i>是MaskOutColor ，匹配给定颜色的所有像素将是透明的。</p>
+<p><b>See also</b> <a href="qimage.html#createAlphaMask" tppabs="http://pyqt4doc.appspot.com/qimage.html#createAlphaMask">createAlphaMask</a>（）和<a href="qimage.html#createHeuristicMask" tppabs="http://pyqt4doc.appspot.com/qimage.html#createHeuristicMask">createHeuristicMask</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="depth"></a>int QImage.depth (<i>self</i>)</h3>
+<p>返回图像的深度。</p>
+<p>图像深度是用来存储一个像素的比特数，也称为每像素（bpp ）位。</p>
+<p>支持的深度是1 ， 8 ， 16 ， 24和32 。</p>
+<p><b>See also</b> <a href="qimage.html#bitPlaneCount" tppabs="http://pyqt4doc.appspot.com/qimage.html#bitPlaneCount">bitPlaneCount</a>（ ）<a href="qimage.html#convertToFormat" tppabs="http://pyqt4doc.appspot.com/qimage.html#convertToFormat">convertToFormat</a>（ ）<a href="qimage.html#image-formats" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-formats">Image Formats</a>和<a href="qimage.html#image-information" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-information">Image Information</a>。</p>
+
+
+<h3 class="fn">
+<a name="detach"></a>QImage.detach (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="devType"></a>int QImage.devType (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="dotsPerMeterX"></a>int QImage.dotsPerMeterX (<i>self</i>)</h3>
+<p>返回适合水平地在一个物理米的像素的数目。再加上<a href="qimage.html#dotsPerMeterY" tppabs="http://pyqt4doc.appspot.com/qimage.html#dotsPerMeterY">dotsPerMeterY</a>（），这个数定义期望的规模和图像的纵横比。</p>
+<p><b>See also</b> <a href="qimage.html#setDotsPerMeterX" tppabs="http://pyqt4doc.appspot.com/qimage.html#setDotsPerMeterX">setDotsPerMeterX</a>（）和<a href="qimage.html#image-information" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-information">Image Information</a>。</p>
+
+
+<h3 class="fn">
+<a name="dotsPerMeterY"></a>int QImage.dotsPerMeterY (<i>self</i>)</h3>
+<p>返回适合垂直于一个物理米的像素的数目。再加上<a href="qimage.html#dotsPerMeterX" tppabs="http://pyqt4doc.appspot.com/qimage.html#dotsPerMeterX">dotsPerMeterX</a>（），这个数定义期望的规模和图像的纵横比。</p>
+<p><b>See also</b> <a href="qimage.html#setDotsPerMeterY" tppabs="http://pyqt4doc.appspot.com/qimage.html#setDotsPerMeterY">setDotsPerMeterY</a>（）和<a href="qimage.html#image-information" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-information">Image Information</a>。</p>
+
+
+<h3 class="fn">
+<a name="fill"></a>QImage.fill (<i>self</i>, <a href="qt.html#GlobalColor-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#GlobalColor-enum">Qt.GlobalColor</a> <i>color</i>)</h3>
+<p>填充整个图像具有给定<i>pixelValue</i>。</p>
+<p>如果这个图像的深度为1，只有最低位被使用。如果你说填（ 0 ） ，填充（ 2 ）等，图像充满了0。如果你说的填写（ 1 ） ，填充（ 3 ）等，图像充满了1秒。如果深度是8 ，最低的8位被使用，如果深度为16的最低16比特的使用。</p>
+<p>注意：<a href="qimage.html#pixel" tppabs="http://pyqt4doc.appspot.com/qimage.html#pixel">QImage.pixel</a>（ ）返回像素的颜色，而在给定坐标<a class="compat" href="index.htm#pixel" tppabs="http://pyqt4doc.appspot.com/qcolor-qt3.html#pixel">QColor.pixel</a>（ ）返回底层窗口系统（本质上是一个索引值）的像素值，因此通常你会希望使用<a href="qimage.html#pixel" tppabs="http://pyqt4doc.appspot.com/qimage.html#pixel">QImage.pixel</a>（）使用从现有的图像的颜色或<a href="qcolor.html#rgb" tppabs="http://pyqt4doc.appspot.com/qcolor.html#rgb">QColor.rgb</a>（）使用特定的颜色。</p>
+<p><b>See also</b> <a href="qimage.html#depth" tppabs="http://pyqt4doc.appspot.com/qimage.html#depth">depth</a>（）和<a href="qimage.html#image-transformations" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-transformations">Image
+Transformations</a>。</p>
+
+
+<h3 class="fn">
+<a name="fill-2"></a>QImage.fill (<i>self</i>, <a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a> <i>color</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>填充图像与给定的<i>color</i>，描述为一个标准的全球色彩。</p>
+<p>此功能被引入Qt的4.8 。</p>
+
+
+<h3 class="fn">
+<a name="fill-3"></a>QImage.fill (<i>self</i>, int <i>pixel</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>填充整个图像具有给定<i>color</i>。</p>
+<p>如果图像的深度为1 ，则图像将充满1如果<i>color</i>等于<a href="qt.html#GlobalColor-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#GlobalColor-enum">Qt.color1</a>它否则将被填0。</p>
+<p>如果图像的深度是8 ，该图像将被填充的索引对应的<i>color</i>在颜色表中如果存在的话，它会以其他方式填0。</p>
+<p>此功能被引入Qt的4.8 。</p>
+
+
+<h3 class="fn">
+<a name="format"></a><a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">Format</a> QImage.format (<i>self</i>)</h3>
+<p>返回的图像的格式。</p>
+<p><b>See also</b> <a href="qimage.html#image-formats" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-formats">Image
+Formats</a>。</p>
+
+
+<h3 class="fn">
+<a name="fromData"></a><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> QImage.fromData (str <i>data</i>, str <i>format</i> = None)</h3>
+<p>构造一个<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>从第一<i>size</i>给定的二进制字节<i>data</i>。加载器会尝试使用指定的读取图像<i>format</i>。如果<i>format</i>未指定（这是默认值） ，加载器探测文件的标题来猜测文件格式。二进制<i>data</i>。装载机尝试读取图像，或者使用可选的图像<i>format</i>指定或通过确定从数据的图像格式。</p>
+<p>If <i>format</i>未指定（这是默认值） ，加载器探针头的文件，以确定该文件的格式。如果<i>format</i>被指定，它必须是通过返回的值之一<a href="qimagereader.html#supportedImageFormats" tppabs="http://pyqt4doc.appspot.com/qimagereader.html#supportedImageFormats">QImageReader.supportedImageFormats</a>（ ） 。</p>
+<p>如果图像的装载失败，返回的图像将是一个空的图像。</p>
+<p><b>See also</b> <a href="qimage.html#load" tppabs="http://pyqt4doc.appspot.com/qimage.html#load">load</a>（ ）<a href="qimage.html#save" tppabs="http://pyqt4doc.appspot.com/qimage.html#save">save</a>（）和<a href="qimage.html#reading-and-writing-image-files" tppabs="http://pyqt4doc.appspot.com/qimage.html#reading-and-writing-image-files">Reading and Writing
+Image Files</a>。</p>
+
+
+<h3 class="fn">
+<a name="fromData-2"></a><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> QImage.fromData (<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>data</i>, str <i>format</i> = None)</h3>
+<p>这是一个重载函数。</p>
+<p>加载一个图像从给定的<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>data</i>。</p>
+
+
+<h3 class="fn">
+<a name="hasAlphaChannel"></a>bool QImage.hasAlphaChannel (<i>self</i>)</h3>
+<p>返回True如果图像有一个尊重的alpha通道的格式，否则返回False 。</p>
+<p><b>See also</b> <a href="qimage.html#image-information" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-information">Image
+Information</a>。</p>
+
+
+<h3 class="fn">
+<a name="height"></a>int QImage.height (<i>self</i>)</h3>
+<p>返回图像的高度。</p>
+<p><b>See also</b> <a href="qimage.html#image-information" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-information">Image
+Information</a>。</p>
+
+
+<h3 class="fn">
+<a name="invertPixels"></a>QImage.invertPixels (<i>self</i>, <a href="qimage.html#InvertMode-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#InvertMode-enum">InvertMode</a> <i>mode</i> = QImage.InvertRgb)</h3>
+<p>反转图像中的所有像素值。</p>
+<p>给定的倒置<i>mode</i>只有一个意义时，图像的深度为32。默认<i>mode</i> is <a href="qimage.html#InvertMode-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#InvertMode-enum">InvertRgb</a>，这让alpha通道不变。如果<i>mode</i> is <a href="qimage.html#InvertMode-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#InvertMode-enum">InvertRgba</a>中，α位也反转。</p>
+<p>反相一个8位图像是指采用显色指数，以取代所有像素<i>i</i>使用显色指数255减去像素<i>i</i>。同样是一个1位的图像的情况。注意，颜色表是<i>not</i>改变。</p>
+<p><b>See also</b> <a href="qimage.html#image-transformations" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-transformations">Image Transformations</a>。</p>
+
+
+<h3 class="fn">
+<a name="isDetached"></a>bool QImage.isDetached (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="isGrayscale"></a>bool QImage.isGrayscale (<i>self</i>)</h3>
+<p>对于32位图像，这个功能相当于<a href="qimage.html#allGray" tppabs="http://pyqt4doc.appspot.com/qimage.html#allGray">allGray</a>（ ） 。</p>
+<p>对于8位色的图像，这个功能如果颜色（ i）为返回True<a href="qcolor.html#QRgb-typedef" tppabs="http://pyqt4doc.appspot.com/qcolor.html#QRgb-typedef">QRgb</a>（ I， I，I ）的颜色表的所有索引，否则返回False 。</p>
+<p><b>See also</b> <a href="qimage.html#allGray" tppabs="http://pyqt4doc.appspot.com/qimage.html#allGray">allGray</a>（）和<a href="qimage.html#image-formats" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-formats">Image Formats</a>。</p>
+
+
+<h3 class="fn">
+<a name="isNull"></a>bool QImage.isNull (<i>self</i>)</h3>
+<p>返回True ，如果它是一个空图像，否则返回False 。</p>
+<p>一个空的图像具有设置为零的所有参数，没有分配的数据。</p>
+
+
+<h3 class="fn">
+<a name="load"></a>bool QImage.load (<i>self</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>device</i>, str <i>format</i>)</h3>
+<p>加载一个图像从文件中给定的<i>fileName</i>。返回True如果成功加载图像，否则返回False 。</p>
+<p>加载器会尝试使用指定的读取图像<i>format</i>，例如， PNG或JPG格式。如果<i>format</i>未指定（这是默认值） ，加载器探测文件的标题来猜测文件格式。</p>
+<p>文件名可以是指在磁盘上的实际文件或应用的嵌入式资源之一。请参阅<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/resources.html">Resource System</a>概述有关如何嵌入在应用程序的可执行映像和其他资源文件的详细信息。</p>
+<p><b>See also</b> <a href="qimage.html#reading-and-writing-image-files" tppabs="http://pyqt4doc.appspot.com/qimage.html#reading-and-writing-image-files">Reading and Writing
+Image Files</a>。</p>
+
+
+<h3 class="fn">
+<a name="load-2"></a>bool QImage.load (<i>self</i>, QString <i>fileName</i>, str <i>format</i> = None)</h3>
+<p>这是一个重载函数。</p>
+<p>该函数读取<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>从给定的<i>device</i>。这可以，例如，可以用来直接将图像加载到一个<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>。</p>
+
+
+<h3 class="fn">
+<a name="loadFromData"></a>bool QImage.loadFromData (<i>self</i>, str <i>data</i>, str <i>format</i> = None)</h3>
+<p>加载一个图像从第一<i>len</i>给定的二进制字节<i>data</i>。返回True如果成功加载图像，否则返回False 。</p>
+<p>加载器会尝试使用指定的读取图像<i>format</i>，例如， PNG或JPG格式。如果<i>format</i>未指定（这是默认值） ，加载器探测文件的标题来猜测文件格式。</p>
+<p><b>See also</b> <a href="qimage.html#reading-and-writing-image-files" tppabs="http://pyqt4doc.appspot.com/qimage.html#reading-and-writing-image-files">Reading and Writing
+Image Files</a>。</p>
+
+
+<h3 class="fn">
+<a name="loadFromData-2"></a>bool QImage.loadFromData (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>data</i>, str <i>format</i> = None)</h3>
+<p>这是一个重载函数。</p>
+<p>加载一个图像从给定的<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>data</i>。</p>
+
+
+<h3 class="fn">
+<a name="metric"></a>int QImage.metric (<i>self</i>, <a href="qpaintdevice.html#PaintDeviceMetric-enum" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html#PaintDeviceMetric-enum">QPaintDevice.PaintDeviceMetric</a> <i>metric</i>)</h3>
+<h3 class="fn">
+<a name="mirrored"></a><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> QImage.mirrored (<i>self</i>, bool <i>horizontal</i> = False, bool <i>vertical</i> = True)</h3>
+<p>返回图像的镜像，镜像中的水平和/或垂直方向取决于是否<i>horizontal</i>和<i>vertical</i>被设置为True或False 。</p>
+<p>请注意，原始图像没有改变。</p>
+<p><b>See also</b> <a href="qimage.html#image-transformations" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-transformations">Image Transformations</a>。</p>
+
+
+<h3 class="fn">
+<a name="numBytes"></a>int QImage.numBytes (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="numColors"></a>int QImage.numColors (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="offset"></a><a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> QImage.offset (<i>self</i>)</h3>
+<p>返回由该图像的目的是当定位相对于其它图像由被抵消的像素的数目。</p>
+<p><b>See also</b> <a href="qimage.html#setOffset" tppabs="http://pyqt4doc.appspot.com/qimage.html#setOffset">setOffset</a>()
+and <a href="qimage.html#image-information" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-information">Image
+Information</a>.</p>
+
+
+<h3 class="fn">
+<a name="paintEngine"></a><a href="qpaintengine.html" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html">QPaintEngine</a> QImage.paintEngine (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="pixel"></a>int QImage.pixel (<i>self</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>pt</i>)</h3>
+<p>返回该像素的颜色在给定的<i>position</i>。</p>
+<p>如果<i>position</i>是无效的，结果是不确定的。</p>
+<p><b>Warning:</b>此功能是昂贵的用于大规模的像素操作时。</p>
+<p><b>See also</b> <a href="qimage.html#setPixel" tppabs="http://pyqt4doc.appspot.com/qimage.html#setPixel">setPixel</a>（ ）<a href="qimage.html#valid" tppabs="http://pyqt4doc.appspot.com/qimage.html#valid">valid</a>（）和<a href="qimage.html#pixel-manipulation" tppabs="http://pyqt4doc.appspot.com/qimage.html#pixel-manipulation">Pixel Manipulation</a>。</p>
+
+
+<h3 class="fn">
+<a name="pixel-2"></a>int QImage.pixel (<i>self</i>, int <i>x</i>, int <i>y</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回该像素的颜色坐标（<i>x</i>，<i>y</i>） 。</p>
+
+
+<h3 class="fn">
+<a name="pixelIndex"></a>int QImage.pixelIndex (<i>self</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>pt</i>)</h3>
+<p>返回的像素指数在给定的<i>position</i>。</p>
+<p>If <i>position</i>是无效的，或者如果图像是不是一个调色板图像（<a href="qimage.html#depth" tppabs="http://pyqt4doc.appspot.com/qimage.html#depth">depth</a>（ ） \u003e 8 ） ，结果是不确定的。</p>
+<p><b>See also</b> <a href="qimage.html#valid" tppabs="http://pyqt4doc.appspot.com/qimage.html#valid">valid</a>（ ）<a href="qimage.html#depth" tppabs="http://pyqt4doc.appspot.com/qimage.html#depth">depth</a>（）和<a href="qimage.html#pixel-manipulation" tppabs="http://pyqt4doc.appspot.com/qimage.html#pixel-manipulation">Pixel Manipulation</a>。</p>
+
+
+<h3 class="fn">
+<a name="pixelIndex-2"></a>int QImage.pixelIndex (<i>self</i>, int <i>x</i>, int <i>y</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回像素的索引（<i>x</i>，<i>y</i>） 。</p>
+
+
+<h3 class="fn">
+<a name="rect"></a><a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> QImage.rect (<i>self</i>)</h3>
+<p>返回的包围矩形（ 0，0，<a href="qimage.html#width" tppabs="http://pyqt4doc.appspot.com/qimage.html#width">width</a>（ ）<a href="qimage.html#height" tppabs="http://pyqt4doc.appspot.com/qimage.html#height">height</a>的图像（））。</p>
+<p><b>See also</b> <a href="qimage.html#image-information" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-information">Image
+Information</a>。</p>
+
+
+<h3 class="fn">
+<a name="rgbSwapped"></a><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> QImage.rgbSwapped (<i>self</i>)</h3>
+<p>返回<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>在其中的所有像素的红色和蓝色分量的值被交换，有效地转换为RGB图像到一个BGR图像。</p>
+<p>原<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>不改变。</p>
+<p><b>See also</b> <a href="qimage.html#image-transformations" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-transformations">Image Transformations</a>。</p>
+
+
+<h3 class="fn">
+<a name="save"></a>bool QImage.save (<i>self</i>, QString <i>fileName</i>, str <i>format</i> = None, int <i>quality</i> = -1)</h3>
+<p>的图像保存到文件中与给定的<i>fileName</i>，使用给定的图像文件<i>format</i>和<i>quality</i>因素。如果<i>format</i>为0时，<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>将尝试通过观察来猜测格式<i>fileName</i>的后缀。</p>
+<p>该<i>quality</i>因子必须介于0到100或-1 。指定0以获得小的压缩文件， 100为大型无压缩文件，并-1（默认值）来使用默认设置。</p>
+<p>返回True如果图像保存成功，否则返回False 。</p>
+<p><b>See also</b> <a href="qimage.html#reading-and-writing-image-files" tppabs="http://pyqt4doc.appspot.com/qimage.html#reading-and-writing-image-files">Reading and Writing
+Image Files</a>。</p>
+
+
+<h3 class="fn">
+<a name="save-2"></a>bool QImage.save (<i>self</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>device</i>, str <i>format</i> = None, int <i>quality</i> = -1)</h3>
+<p>这是一个重载函数。</p>
+<p>该函数将一个<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>为给定的<i>device</i>。</p>
+<p>这可以，例如，可以用于图像直接保存成<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>：</p>
+<pre class="cpp">
+         <span class="type"><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a></span> image;
+         <span class="type"><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a></span> ba;
+         <span class="type"><a href="qbuffer.html" tppabs="http://pyqt4doc.appspot.com/qbuffer.html">QBuffer</a></span> buffer(<span class="operator">&amp;</span>ba);
+         buffer<span class="operator">.</span>open(<span class="type"><a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a></span><span class="operator">.</span>WriteOnly);
+         image<span class="operator">.</span>save(<span class="operator">&amp;</span>buffer<span class="operator">,</span> <span class="string">"PNG"</span>); <span class="comment">// writes image into ba in PNG format</span>
+</pre>
+
+
+<h3 class="fn">
+<a name="scaled"></a><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> QImage.scaled (<i>self</i>, int <i>width</i>, int <i>height</i>, <a href="qt.html#AspectRatioMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#AspectRatioMode-enum">Qt.AspectRatioMode</a> <i>aspectRatioMode</i> = Qt.IgnoreAspectRatio, <a href="qt.html#TransformationMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#TransformationMode-enum">Qt.TransformationMode</a> <i>transformMode</i> = Qt.FastTransformation)</h3>
+<p>返回图像的缩放副本由给定定义的矩形<i>size</i>根据给定的<i>aspectRatioMode</i>和<i>transformMode</i>。</p>
+<p class="centerAlign"><img alt="" src="images/qimage-scaling.png"></p>
+<ul>
+<li>If <i>aspectRatioMode</i> is <a href="qt.html#AspectRatioMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#AspectRatioMode-enum">Qt.IgnoreAspectRatio</a>, the image
+is scaled to <i>size</i>.</li>
+<li>If <i>aspectRatioMode</i> is <a href="qt.html#AspectRatioMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#AspectRatioMode-enum">Qt.KeepAspectRatio</a>, the image
+is scaled to a rectangle as large as possible inside <i>size</i>,
+preserving the aspect ratio.</li>
+<li>If <i>aspectRatioMode</i> is <a href="qt.html#AspectRatioMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#AspectRatioMode-enum">Qt.KeepAspectRatioByExpanding</a>,
+the image is scaled to a rectangle as small as possible outside
+<i>size</i>, preserving the aspect ratio.</li>
+</ul>
+<p>如果给定的<i>size</i>是空的，这个函数返回一个空的图像。</p>
+<p><b>See also</b> <a href="qimage.html#isNull" tppabs="http://pyqt4doc.appspot.com/qimage.html#isNull">isNull</a>（）和<a href="qimage.html#image-transformations" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-transformations">Image
+Transformations</a>。</p>
+
+
+<h3 class="fn">
+<a name="scaled-2"></a><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> QImage.scaled (<i>self</i>, <a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> <i>size</i>, <a href="qt.html#AspectRatioMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#AspectRatioMode-enum">Qt.AspectRatioMode</a> <i>aspectRatioMode</i> = Qt.IgnoreAspectRatio, <a href="qt.html#TransformationMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#TransformationMode-enum">Qt.TransformationMode</a> <i>transformMode</i> = Qt.FastTransformation)</h3>
+<p>这是一个重载函数。</p>
+<p>返回图像的缩放，以一个矩形与给定的副本<i>width</i>和<i>height</i>根据给定的<i>aspectRatioMode</i>和<i>transformMode</i>。</p>
+<p>如果任何一个<i>width</i>或<i>height</i>为零或负数，则该函数返回一个空的图像。</p>
+
+
+<h3 class="fn">
+<a name="scaledToHeight"></a><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> QImage.scaledToHeight (<i>self</i>, int <i>height</i>, <a href="qt.html#TransformationMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#TransformationMode-enum">Qt.TransformationMode</a> <i>mode</i> = Qt.FastTransformation)</h3>
+<p>返回图像的缩放复印。返回的图像被缩放为给定的<i>height</i>使用指定的变换<i>mode</i>。</p>
+<p>这个函数自动计算的图像的宽度，以使图像的比率被保持。</p>
+<p>如果给定的<i>height</i>为0或负数，则返回一个空的图像。</p>
+<p><b>See also</b> <a href="qimage.html#image-transformations" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-transformations">Image Transformations</a>。</p>
+
+
+<h3 class="fn">
+<a name="scaledToWidth"></a><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> QImage.scaledToWidth (<i>self</i>, int <i>width</i>, <a href="qt.html#TransformationMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#TransformationMode-enum">Qt.TransformationMode</a> <i>mode</i> = Qt.FastTransformation)</h3>
+<p>返回图像的缩放复印。返回的图像被缩放为给定的<i>width</i>使用指定的变换<i>mode</i>。</p>
+<p>这个函数自动计算图像的高度，使得其高宽比被保存下来。</p>
+<p>如果给定的<i>width</i>为0或负数，则返回一个空的图像。</p>
+<p><b>See also</b> <a href="qimage.html#image-transformations" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-transformations">Image Transformations</a>。</p>
+
+
+<h3 class="fn">
+<a name="scanLine"></a>sip.voidptr QImage.scanLine (<i>self</i>, int)</h3>
+<p>返回一个指针，指向像素数据与索引扫描线<i>i</i>。第一个扫描行的索引为0 。</p>
+<p>该扫描线数据是对齐的32位边界。</p>
+<p><b>Warning:</b>如果您正在访问32位色的图像数据，转换返回的指针<tt>QRgb*</tt>（<a href="qcolor.html#QRgb-typedef" tppabs="http://pyqt4doc.appspot.com/qcolor.html#QRgb-typedef">QRgb</a>有一个32位的大小） ，并用它来读取/写入的像素值。你不能使用<tt>uchar*</tt>直接指针，因为像素格式依赖于底层平台上的字节顺序。使用<a href="index.htm#qRed" tppabs="http://pyqt4doc.appspot.com/qtgui.html#qRed">qRed</a>（ ）<a href="index.htm#qGreen" tppabs="http://pyqt4doc.appspot.com/qtgui.html#qGreen">qGreen</a>（ ）<a href="index.htm#qBlue" tppabs="http://pyqt4doc.appspot.com/qtgui.html#qBlue">qBlue</a>（）和<a href="index.htm#qAlpha" tppabs="http://pyqt4doc.appspot.com/qtgui.html#qAlpha">qAlpha</a>（）来访问的像素。</p>
+<p><b>See also</b> <a href="qimage.html#bytesPerLine" tppabs="http://pyqt4doc.appspot.com/qimage.html#bytesPerLine">bytesPerLine</a>（ ）<a href="qimage.html#bits" tppabs="http://pyqt4doc.appspot.com/qimage.html#bits">bits</a>（ ）<a href="qimage.html#pixel-manipulation" tppabs="http://pyqt4doc.appspot.com/qimage.html#pixel-manipulation">Pixel Manipulation</a>和<a href="qimage.html#constScanLine" tppabs="http://pyqt4doc.appspot.com/qimage.html#constScanLine">constScanLine</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="serialNumber"></a>int QImage.serialNumber (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="setAlphaChannel"></a>QImage.setAlphaChannel (<i>self</i>, <a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> <i>alphaChannel</i>)</h3>
+<h3 class="fn">
+<a name="setColor"></a>QImage.setColor (<i>self</i>, int <i>i</i>, int <i>c</i>)</h3>
+<p>设置颜色在给定的<i>index</i>在颜色表中，给定到<i>colorValue</i>。颜色值是一个ARGB四胞胎。</p>
+<p>If <i>index</i>在颜色表的当前大小之外，它与扩展<a href="qimage.html#setColorCount" tppabs="http://pyqt4doc.appspot.com/qimage.html#setColorCount">setColorCount</a>（ ） 。</p>
+<p><b>See also</b> <a href="qimage.html#color" tppabs="http://pyqt4doc.appspot.com/qimage.html#color">color</a>（ ）<a href="qimage.html#colorCount" tppabs="http://pyqt4doc.appspot.com/qimage.html#colorCount">colorCount</a>（ ）<a href="qimage.html#setColorTable" tppabs="http://pyqt4doc.appspot.com/qimage.html#setColorTable">setColorTable</a>（）和<a href="qimage.html#pixel-manipulation" tppabs="http://pyqt4doc.appspot.com/qimage.html#pixel-manipulation">Pixel Manipulation</a>。</p>
+
+
+<h3 class="fn">
+<a name="setColorCount"></a>QImage.setColorCount (<i>self</i>, int)</h3>
+<p>调整大小，颜色表包含<i>colorCount</i>条目。</p>
+<p>如果颜色表被扩展时，这些额外的颜色将被设置为透明的（即qRgba （0，0 ，0，0 ））。</p>
+<p>当图像被使用时，颜色表必须足够大，以对所有存在于图像中的像素/索引值的条目，否则结果是不确定的。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qimage.html#colorCount" tppabs="http://pyqt4doc.appspot.com/qimage.html#colorCount">colorCount</a>（ ）<a href="qimage.html#colorTable" tppabs="http://pyqt4doc.appspot.com/qimage.html#colorTable">colorTable</a>（ ）<a href="qimage.html#setColor" tppabs="http://pyqt4doc.appspot.com/qimage.html#setColor">setColor</a>（）和<a href="qimage.html#image-transformations" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-transformations">Image Transformations</a>。</p>
+
+
+<h3 class="fn">
+<a name="setColorTable"></a>QImage.setColorTable (<i>self</i>, list-of-int <i>colors</i>)</h3>
+<p>设置用来翻译的颜色索引颜色表<a href="qcolor.html#QRgb-typedef" tppabs="http://pyqt4doc.appspot.com/qcolor.html#QRgb-typedef">QRgb</a>值，与指定<i>colors</i>。</p>
+<p>当图像被使用时，颜色表必须足够大，以对所有存在于图像中的像素/索引值的条目，否则结果是不确定的。</p>
+<p><b>See also</b> <a href="qimage.html#colorTable" tppabs="http://pyqt4doc.appspot.com/qimage.html#colorTable">colorTable</a>（ ）<a href="qimage.html#setColor" tppabs="http://pyqt4doc.appspot.com/qimage.html#setColor">setColor</a>（）和<a href="qimage.html#image-transformations" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-transformations">Image Transformations</a>。</p>
+
+
+<h3 class="fn">
+<a name="setDotsPerMeterX"></a>QImage.setDotsPerMeterX (<i>self</i>, int)</h3>
+<p>设置适合于水平方向的物理米的像素的数目，以<i>x</i>。</p>
+<p>再加上<a href="qimage.html#dotsPerMeterY" tppabs="http://pyqt4doc.appspot.com/qimage.html#dotsPerMeterY">dotsPerMeterY</a>（），这个数定义期望的规模和图像的纵横比，并确定比例在其中<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>将在图像上绘制图形。它不改变时，它是在其他绘图设备上呈现的图像的比例或纵横比。</p>
+<p><b>See also</b> <a href="qimage.html#dotsPerMeterX" tppabs="http://pyqt4doc.appspot.com/qimage.html#dotsPerMeterX">dotsPerMeterX</a>（）和<a href="qimage.html#image-information" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-information">Image Information</a>。</p>
+
+
+<h3 class="fn">
+<a name="setDotsPerMeterY"></a>QImage.setDotsPerMeterY (<i>self</i>, int)</h3>
+<p>设置适合垂直于一个物理米的像素的数目，以<i>y</i>。</p>
+<p>再加上<a href="qimage.html#dotsPerMeterX" tppabs="http://pyqt4doc.appspot.com/qimage.html#dotsPerMeterX">dotsPerMeterX</a>（），这个数定义期望的规模和图像的纵横比，并确定比例在其中<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>将在图像上绘制图形。它不改变时，它是在其他绘图设备上呈现的图像的比例或纵横比。</p>
+<p><b>See also</b> <a href="qimage.html#dotsPerMeterY" tppabs="http://pyqt4doc.appspot.com/qimage.html#dotsPerMeterY">dotsPerMeterY</a>（）和<a href="qimage.html#image-information" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-information">Image Information</a>。</p>
+
+
+<h3 class="fn">
+<a name="setNumColors"></a>QImage.setNumColors (<i>self</i>, int)</h3>
+<h3 class="fn">
+<a name="setOffset"></a>QImage.setOffset (<i>self</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a>)</h3>
+<p>设置由所述图像的目的是当定位相对于其他图像，以此作为偏移量的像素数<i>offset</i>。</p>
+<p><b>See also</b> <a href="qimage.html#offset" tppabs="http://pyqt4doc.appspot.com/qimage.html#offset">offset</a>（）和<a href="qimage.html#image-information" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-information">Image Information</a>。</p>
+
+
+<h3 class="fn">
+<a name="setPixel"></a>QImage.setPixel (<i>self</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>pt</i>, int <i>index_or_rgb</i>)</h3>
+<p>设置在像素索引或颜色在给定的<i>position</i>至<i>index_or_rgb</i>。</p>
+<p>如果图像的格式可以是单色或8位，在给定<i>index_or_rgb</i>值必须是一个索引图像的颜色表，否则该参数必须是一个<a href="qcolor.html#QRgb-typedef" tppabs="http://pyqt4doc.appspot.com/qcolor.html#QRgb-typedef">QRgb</a>值。</p>
+<p>If <i>position</i>不是一个有效的坐标对图像中，或者如果<i>index_or_rgb</i>\u003e =<a href="qimage.html#colorCount" tppabs="http://pyqt4doc.appspot.com/qimage.html#colorCount">colorCount</a>（ ）在单色和8位图像的情况下，结果是不确定的。</p>
+<p><b>Warning:</b>这个功能是昂贵的，由于内部的呼叫<tt>detach()</tt>函数调用中，如果性能是一个问题，我们建议使用<a href="qimage.html#scanLine" tppabs="http://pyqt4doc.appspot.com/qimage.html#scanLine">scanLine()</a>以直接访问的像素数据。</p>
+<p><b>See also</b> <a href="qimage.html#pixel" tppabs="http://pyqt4doc.appspot.com/qimage.html#pixel">pixel</a>（）和<a href="qimage.html#pixel-manipulation" tppabs="http://pyqt4doc.appspot.com/qimage.html#pixel-manipulation">Pixel
+Manipulation</a>。</p>
+
+
+<h3 class="fn">
+<a name="setPixel-2"></a>QImage.setPixel (<i>self</i>, int <i>x</i>, int <i>y</i>, int <i>index_or_rgb</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>设定像素索引或颜色的（<i>x</i>，<i>y</i>）至<i>index_or_rgb</i>。</p>
+
+
+<h3 class="fn">
+<a name="setText"></a>QImage.setText (<i>self</i>, QString <i>key</i>, QString <i>value</i>)</h3>
+<p>设置图像的文字给定的<i>text</i>并将它与给定的关联<i>key</i>。</p>
+<p>如果你只是想存储一个单一的文本块（即“注释”或只是一个描述） ，你可以传递一个空键，或使用如“描述”一个通用密钥。</p>
+<p>图像的文字嵌入到图像数据，当你调用<a href="qimage.html#save" tppabs="http://pyqt4doc.appspot.com/qimage.html#save">save</a>（）或<a href="qimagewriter.html#write" tppabs="http://pyqt4doc.appspot.com/qimagewriter.html#write">QImageWriter.write</a>（ ） 。</p>
+<p>不是所有的图像格式支持嵌入式文本。你可以发现，如果一个特定的图像格式，或通过使用支持嵌入文本<a href="qimagewriter.html#supportsOption" tppabs="http://pyqt4doc.appspot.com/qimagewriter.html#supportsOption">QImageWriter.supportsOption</a>（ ） 。我们举一个例子：</p>
+<pre class="cpp">
+         <span class="type"><a href="qimagewriter.html" tppabs="http://pyqt4doc.appspot.com/qimagewriter.html">QImageWriter</a></span> writer;
+         writer<span class="operator">.</span>setFormat(<span class="string">"png"</span>);
+         <span class="keyword">if</span> (writer<span class="operator">.</span>supportsOption(<span class="type"><a href="qimageiohandler.html" tppabs="http://pyqt4doc.appspot.com/qimageiohandler.html">QImageIOHandler</a></span><span class="operator">.</span>Description))
+             <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"Png supports embedded text"</span>;
+</pre>
+<p>您可以使用<a href="qimagewriter.html#supportedImageFormats" tppabs="http://pyqt4doc.appspot.com/qimagewriter.html#supportedImageFormats">QImageWriter.supportedImageFormats</a>（）来找出哪些图像格式提供给您。</p>
+<p><b>See also</b> <a href="qimage.html#text" tppabs="http://pyqt4doc.appspot.com/qimage.html#text">text</a>（）和<a href="qimage.html#textKeys" tppabs="http://pyqt4doc.appspot.com/qimage.html#textKeys">textKeys</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="size"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QImage.size (<i>self</i>)</h3>
+<p>返回的图像的尺寸，即其<a href="qimage.html#width" tppabs="http://pyqt4doc.appspot.com/qimage.html#width">width</a>（）和<a href="qimage.html#height" tppabs="http://pyqt4doc.appspot.com/qimage.html#height">height</a>（ ） 。</p>
+<p><b>See also</b> <a href="qimage.html#image-information" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-information">Image
+Information</a>。</p>
+
+
+<h3 class="fn">
+<a name="swap"></a>QImage.swap (<i>self</i>, <a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> <i>other</i>)</h3>
+<p>掉期图像<i>other</i>与此图像。这个操作是非常快的，而且永远不会。</p>
+<p>此功能被引入Qt的4.8 。</p>
+
+
+<h3 class="fn">
+<a name="text"></a>QString QImage.text (<i>self</i>, QString <i>key</i> = QString())</h3>
+<p>返回与给定关联的图像文本<i>key</i>。如果指定的<i>key</i>是一个空字符串，则返回整个图像的文字，每个按键文对用换行分隔。</p>
+<p><b>See also</b> <a href="qimage.html#setText" tppabs="http://pyqt4doc.appspot.com/qimage.html#setText">setText</a>（）和<a href="qimage.html#textKeys" tppabs="http://pyqt4doc.appspot.com/qimage.html#textKeys">textKeys</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="textKeys"></a>QStringList QImage.textKeys (<i>self</i>)</h3>
+<p>返回文本键这一形象。</p>
+<p>您可以使用这些按键与<a href="qimage.html#text" tppabs="http://pyqt4doc.appspot.com/qimage.html#text">text</a>（ ）列出图像文本的某些关键。</p>
+<p><b>See also</b> <a href="qimage.html#text" tppabs="http://pyqt4doc.appspot.com/qimage.html#text">text</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="transformed"></a><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> QImage.transformed (<i>self</i>, <a href="qmatrix.html" tppabs="http://pyqt4doc.appspot.com/qmatrix.html">QMatrix</a> <i>matrix</i>, <a href="qt.html#TransformationMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#TransformationMode-enum">Qt.TransformationMode</a> <i>mode</i> = Qt.FastTransformation)</h3>
+<p>传回的图像，是利用给定的变换转化副本<i>matrix</i>改造<i>mode</i>。</p>
+<p>改造<i>matrix</i>在内部进行调整，以补偿不希望的翻译，即所产生的图像是包含原始图像的所有变换的点的最小图像。使用<a href="qimage.html#trueMatrix" tppabs="http://pyqt4doc.appspot.com/qimage.html#trueMatrix">trueMatrix</a>（）函数来检索用于转化的图像的实际的矩阵。</p>
+<p><b>See also</b> <a href="qimage.html#trueMatrix" tppabs="http://pyqt4doc.appspot.com/qimage.html#trueMatrix">trueMatrix</a>（）和<a href="qimage.html#image-transformations" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-transformations">Image Transformations</a>。</p>
+
+
+<h3 class="fn">
+<a name="transformed-2"></a><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> QImage.transformed (<i>self</i>, <a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> <i>matrix</i>, <a href="qt.html#TransformationMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#TransformationMode-enum">Qt.TransformationMode</a> <i>mode</i> = Qt.FastTransformation)</h3>
+<p>传回的图像，是利用给定的变换转化副本<i>matrix</i>改造<i>mode</i>。</p>
+<p>改造<i>matrix</i>在内部进行调整，以补偿不希望的翻译，即所产生的图像是包含原始图像的所有变换的点的最小图像。使用<a href="qimage.html#trueMatrix" tppabs="http://pyqt4doc.appspot.com/qimage.html#trueMatrix">trueMatrix</a>（）函数来检索用于转化的图像的实际的矩阵。</p>
+<p>不像其他的过载时，此功能可用于对图像进行透视变换。</p>
+<p><b>See also</b> <a href="qimage.html#trueMatrix" tppabs="http://pyqt4doc.appspot.com/qimage.html#trueMatrix">trueMatrix</a>（）和<a href="qimage.html#image-transformations" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-transformations">Image Transformations</a>。</p>
+
+
+<h3 class="fn">
+<a name="trueMatrix"></a><a href="qmatrix.html" tppabs="http://pyqt4doc.appspot.com/qmatrix.html">QMatrix</a> QImage.trueMatrix (<a href="qmatrix.html" tppabs="http://pyqt4doc.appspot.com/qmatrix.html">QMatrix</a>, int <i>w</i>, int <i>h</i>)</h3>
+<p>返回用于转化的图像与给定的实际的矩阵<i>width</i>，<i>height</i>和<i>matrix</i>。</p>
+<p>当使用变换的图像的<a href="qimage.html#transformed" tppabs="http://pyqt4doc.appspot.com/qimage.html#transformed">transformed</a>（）函数，该变换矩阵是在内部调整以补偿不需要的翻译，即<a href="qimage.html#transformed" tppabs="http://pyqt4doc.appspot.com/qimage.html#transformed">transformed</a>（ ）返回一个包含原始图像的所有变换的点的最小图像。这个函数返回修改后的矩阵，正确映射点从原始图像到新的形象。</p>
+<p><b>See also</b> <a href="qimage.html#transformed" tppabs="http://pyqt4doc.appspot.com/qimage.html#transformed">transformed</a>（）和<a href="qimage.html#image-transformations" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-transformations">Image Transformations</a>。</p>
+
+
+<h3 class="fn">
+<a name="trueMatrix-2"></a><a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> QImage.trueMatrix (<a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a>, int <i>w</i>, int <i>h</i>)</h3>
+<p>返回用于转化的图像与给定的实际的矩阵<i>width</i>，<i>height</i>和<i>matrix</i>。</p>
+<p>当使用变换的图像的<a href="qimage.html#transformed" tppabs="http://pyqt4doc.appspot.com/qimage.html#transformed">transformed</a>（）函数，该变换矩阵是在内部调整以补偿不需要的翻译，即<a href="qimage.html#transformed" tppabs="http://pyqt4doc.appspot.com/qimage.html#transformed">transformed</a>（ ）返回一个包含原始图像的所有变换的点的最小图像。这个函数返回修改后的矩阵，正确映射点从原始图像到新的形象。</p>
+<p>不像其他的过载，此功能创建可用于上的图像进行透视变换变换矩阵。</p>
+<p><b>See also</b> <a href="qimage.html#transformed" tppabs="http://pyqt4doc.appspot.com/qimage.html#transformed">transformed</a>（）和<a href="qimage.html#image-transformations" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-transformations">Image Transformations</a>。</p>
+
+
+<h3 class="fn">
+<a name="valid"></a>bool QImage.valid (<i>self</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>pt</i>)</h3>
+<p>返回True如果<i>pos</i>是一种有效的坐标在图像内对;否则返回False。</p>
+<p><b>See also</b> <a href="qimage.html#rect" tppabs="http://pyqt4doc.appspot.com/qimage.html#rect">rect</a>（）和<a href="qrect.html#contains" tppabs="http://pyqt4doc.appspot.com/qrect.html#contains">QRect.contains</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="valid-2"></a>bool QImage.valid (<i>self</i>, int <i>x</i>, int <i>y</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回True如果<a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a>（<i>x</i>，<i>y</i>）是一个有效的坐标在图像内对;否则返回False。</p>
+
+
+<h3 class="fn">
+<a name="width"></a>int QImage.width (<i>self</i>)</h3>
+<p>返回图像的宽度。</p>
+<p><b>See also</b> <a href="qimage.html#image-information" tppabs="http://pyqt4doc.appspot.com/qimage.html#image-information">Image
+Information</a>。</p>
+
+
+<h3 class="fn">
+<a name="__eq__"></a>bool QImage.__eq__ (<i>self</i>, <a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QImage.__ne__ (<i>self</i>, <a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

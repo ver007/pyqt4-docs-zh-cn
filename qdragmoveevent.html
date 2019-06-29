@@ -1,0 +1,105 @@
+﻿<html>
+<head>
+<title>QDragMoveEvent Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDragMoveEvent Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>QDragMoveEvent所类提供了发送，同时拖拽动作正在进行中的事件。<a href="#details">More...</a></p>
+
+<p>继承<a href="qdropevent.html" tppabs="http://pyqt4doc.appspot.com/qdropevent.html">QDropEvent</a>。</p>
+<p>通过继承<a href="qdragenterevent.html" tppabs="http://pyqt4doc.appspot.com/qdragenterevent.html">QDragEnterEvent</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdragmoveevent.html#QDragMoveEvent" tppabs="http://pyqt4doc.appspot.com/qdragmoveevent.html#QDragMoveEvent">__init__</a></b> (<i>self</i>, QPoint <i>pos</i>, Qt.DropActions <i>actions</i>, QMimeData <i>data</i>, Qt.MouseButtons <i>buttons</i>, Qt.KeyboardModifiers <i>modifiers</i>, QEvent.Type <i>type</i> = QEvent.DragMove)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdragmoveevent.html#QDragMoveEvent-2" tppabs="http://pyqt4doc.appspot.com/qdragmoveevent.html#QDragMoveEvent-2">__init__</a></b> (<i>self</i>, QDragMoveEvent)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdragmoveevent.html#accept" tppabs="http://pyqt4doc.appspot.com/qdragmoveevent.html#accept">accept</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdragmoveevent.html#accept-2" tppabs="http://pyqt4doc.appspot.com/qdragmoveevent.html#accept-2">accept</a></b> (<i>self</i>, QRect <i>r</i>)</li>
+<li>
+<div class="fn"></div>QRect <b><a href="qdragmoveevent.html#answerRect" tppabs="http://pyqt4doc.appspot.com/qdragmoveevent.html#answerRect">answerRect</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdragmoveevent.html#ignore" tppabs="http://pyqt4doc.appspot.com/qdragmoveevent.html#ignore">ignore</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdragmoveevent.html#ignore-2" tppabs="http://pyqt4doc.appspot.com/qdragmoveevent.html#ignore-2">ignore</a></b> (<i>self</i>, QRect <i>r</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>QDragMoveEvent所类提供了发送，同时拖拽动作正在进行中的事件。</p>
+<p>一个widget将不断收到拖动移动事件而阻力是它的范围内，如果它接受<a href="qwidget.html#acceptDrops-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#acceptDrops-prop">drop events</a>和<a href="qwidget.html#dragEnterEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#dragEnterEvent">enter events</a>。窗口小部件应检查事件，看看有什么样的数据呢<a class="compat" href="index.htm#provides" tppabs="http://pyqt4doc.appspot.com/qdropevent-qt3.html#provides">provides</a>，并调用<a href="qdragmoveevent.html#accept" tppabs="http://pyqt4doc.appspot.com/qdragmoveevent.html#accept">accept</a>（ ）函数来接受放置如果合适的。</p>
+<p>由所提供的矩形<a href="qdragmoveevent.html#answerRect" tppabs="http://pyqt4doc.appspot.com/qdragmoveevent.html#answerRect">answerRect</a>（）函数可以被用来限制下降到插件的某些部分。例如，我们可以检查矩形是否相交的某子控件，只调用几何<a href="qdropevent.html#acceptProposedAction" tppabs="http://pyqt4doc.appspot.com/qdropevent.html#acceptProposedAction">acceptProposedAction()</a>如果是这样的话。</p>
+<p>注意，这个类继承了它的大部分功能从<a href="qdropevent.html" tppabs="http://pyqt4doc.appspot.com/qdropevent.html">QDropEvent</a>。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDragMoveEvent"></a>QDragMoveEvent.__init__ (<i>self</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>pos</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-dropactions.html">Qt.DropActions</a> <i>actions</i>, <a href="qmimedata.html" tppabs="http://pyqt4doc.appspot.com/qmimedata.html">QMimeData</a> <i>data</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-mousebuttons.html">Qt.MouseButtons</a> <i>buttons</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-keyboardmodifiers.html">Qt.KeyboardModifiers</a> <i>modifiers</i>, <a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.Type</a> <i>type</i> = QEvent.DragMove)</h3>
+<p>创建<a href="qdragmoveevent.html" tppabs="http://pyqt4doc.appspot.com/qdragmoveevent.html">QDragMoveEvent</a>所需的<i>type</i>这表明鼠标在位置<i>pos</i>一个小部件内给予。</p>
+<p>鼠标和键盘状态由指定<i>buttons</i>和<i>modifiers</i>和<i>actions</i>描述拖放操作是可能的类型。拖动数据传递作为MIME编码的信息<i>data</i>。</p>
+<p><b>Warning:</b>不要试图创建一个<a href="qdragmoveevent.html" tppabs="http://pyqt4doc.appspot.com/qdragmoveevent.html">QDragMoveEvent</a>你自己。这些对象依赖于Qt的内部状态。</p>
+
+
+<h3 class="fn">
+<a name="QDragMoveEvent-2"></a>QDragMoveEvent.__init__ (<i>self</i>, <a href="qdragmoveevent.html" tppabs="http://pyqt4doc.appspot.com/qdragmoveevent.html">QDragMoveEvent</a>)</h3>
+<h3 class="fn">
+<a name="accept"></a>QDragMoveEvent.accept (<i>self</i>)</h3>
+<p>同为接受（ ） ，而且还通知移动未来也将是可以接受的，如果他们留在了<i>rectangle</i>在部件上给出。这可以提高性能，但是也可以由底层系统忽略。</p>
+<p>如果矩形为空，拖动移动事件会不断发送。如果源是滚动定时器事件，这是很有用的。</p>
+
+
+<h3 class="fn">
+<a name="accept-2"></a>QDragMoveEvent.accept (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>r</i>)</h3>
+<h3 class="fn">
+<a name="answerRect"></a><a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> QDragMoveEvent.answerRect (<i>self</i>)</h3>
+<p>返回如果接受将发生下降的插件的矩形。您可以使用此信息来限制滴在部件上的某些地方。</p>
+
+
+<h3 class="fn">
+<a name="ignore"></a>QDragMoveEvent.ignore (<i>self</i>)</h3>
+<p>在接受（常量相反<a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a>＆ ）函数。内移动<i>rectangle</i>是不能接受的，并且会被忽略。</p>
+
+
+<h3 class="fn">
+<a name="ignore-2"></a>QDragMoveEvent.ignore (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>r</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>电话<a href="qevent.html#ignore" tppabs="http://pyqt4doc.appspot.com/qevent.html#ignore">QDropEvent.ignore</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

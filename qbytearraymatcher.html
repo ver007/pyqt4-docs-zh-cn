@@ -1,0 +1,99 @@
+﻿<html>
+<head>
+<title>QByteArrayMatcher Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QByteArrayMatcher Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QByteArrayMatcher类认为，可以快速匹配一个字节数组中的一个字节序列。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qbytearraymatcher.html#QByteArrayMatcher" tppabs="http://pyqt4doc.appspot.com/qbytearraymatcher.html#QByteArrayMatcher">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qbytearraymatcher.html#QByteArrayMatcher-2" tppabs="http://pyqt4doc.appspot.com/qbytearraymatcher.html#QByteArrayMatcher-2">__init__</a></b> (<i>self</i>, QByteArray <i>pattern</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qbytearraymatcher.html#QByteArrayMatcher-3" tppabs="http://pyqt4doc.appspot.com/qbytearraymatcher.html#QByteArrayMatcher-3">__init__</a></b> (<i>self</i>, QByteArrayMatcher <i>other</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qbytearraymatcher.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qbytearraymatcher.html#indexIn">indexIn</a></b> (<i>self</i>, QByteArray <i>ba</i>, int <i>from</i> = 0)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qbytearraymatcher.html#pattern" tppabs="http://pyqt4doc.appspot.com/qbytearraymatcher.html#pattern">pattern</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qbytearraymatcher.html#setPattern" tppabs="http://pyqt4doc.appspot.com/qbytearraymatcher.html#setPattern">setPattern</a></b> (<i>self</i>, QByteArray <i>pattern</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QByteArrayMatcher类认为，可以快速匹配一个字节数组中的一个字节序列。</p>
+<p>当你有，你要反复对一些字节数组（也许在一个循环）匹配字节序列这个类是有用的，或者当你想搜索的字节多次相同的字节数组中相同的序列。使用一个匹配对象，<a href="qbytearraymatcher.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qbytearraymatcher.html#indexIn">indexIn</a>（）比匹配的一个普通速度<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>同<a href="qbytearray.html#indexOf" tppabs="http://pyqt4doc.appspot.com/qbytearray.html#indexOf">QByteArray.indexOf</a>（）如果匹配的重复发生。这个类没有提供任何好处，如果你正在做一次性的字节数组匹配。</p>
+<p>创建QByteArrayMatcher与<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>你要搜索的内容。然后调用<a href="qbytearraymatcher.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qbytearraymatcher.html#indexIn">indexIn</a>（）对<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>您要搜索。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QByteArrayMatcher"></a>QByteArrayMatcher.__init__ (<i>self</i>)</h3>
+<p>构造一个空字节数组匹配，将不符合任何东西。通话<a href="qbytearraymatcher.html#setPattern" tppabs="http://pyqt4doc.appspot.com/qbytearraymatcher.html#setPattern">setPattern</a>（）给它一个模式来匹配。</p>
+
+
+<h3 class="fn">
+<a name="QByteArrayMatcher-2"></a>QByteArrayMatcher.__init__ (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>pattern</i>)</h3>
+<p>构造一个字节数组匹配，将搜索<i>pattern</i>。通话<a href="qbytearraymatcher.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qbytearraymatcher.html#indexIn">indexIn</a>（）来执行搜索。</p>
+
+
+<h3 class="fn">
+<a name="QByteArrayMatcher-3"></a>QByteArrayMatcher.__init__ (<i>self</i>, <a href="qbytearraymatcher.html" tppabs="http://pyqt4doc.appspot.com/qbytearraymatcher.html">QByteArrayMatcher</a> <i>other</i>)</h3>
+<p>构造一个字节数组从匹配<i>pattern</i>。<i>pattern</i>已定<i>length</i>。<i>pattern</i>必须保持在范围内，但析构函数并不删除<i>pattern</i>。</p>
+
+
+<h3 class="fn">
+<a name="indexIn"></a>int QByteArrayMatcher.indexIn (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>ba</i>, int <i>from</i> = 0)</h3>
+<p>搜索字节数组<i>ba</i>从字节位置<i>from</i>（默认为0 ，即从第一个字节） ，为字节数组<a href="qbytearraymatcher.html#pattern" tppabs="http://pyqt4doc.appspot.com/qbytearraymatcher.html#pattern">pattern</a>（ ），这是设置在构造函数中，或在最近一次调用<a href="qbytearraymatcher.html#setPattern" tppabs="http://pyqt4doc.appspot.com/qbytearraymatcher.html#setPattern">setPattern</a>（ ） 。返回该位置处<a href="qbytearraymatcher.html#pattern" tppabs="http://pyqt4doc.appspot.com/qbytearraymatcher.html#pattern">pattern</a>（ ）匹配<i>ba</i>，或-1，如果没有找到匹配项。</p>
+
+
+<h3 class="fn">
+<a name="pattern"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QByteArrayMatcher.pattern (<i>self</i>)</h3>
+<p>返回字节数组模式该字节数组匹配器将搜索。</p>
+<p><b>See also</b> <a href="qbytearraymatcher.html#setPattern" tppabs="http://pyqt4doc.appspot.com/qbytearraymatcher.html#setPattern">setPattern</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPattern"></a>QByteArrayMatcher.setPattern (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>pattern</i>)</h3>
+<p>设置字节数组，这个字节数组匹配器将搜索到<i>pattern</i>。</p>
+<p><b>See also</b> <a href="qbytearraymatcher.html#pattern" tppabs="http://pyqt4doc.appspot.com/qbytearraymatcher.html#pattern">pattern</a>（）和<a href="qbytearraymatcher.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qbytearraymatcher.html#indexIn">indexIn</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

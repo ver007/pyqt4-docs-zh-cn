@@ -1,0 +1,84 @@
+﻿<html>
+<head>
+<title>QDeclarativeNetworkAccessManagerFactory Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDeclarativeNetworkAccessManagerFactory Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdeclarative.html">QtDeclarative</a> module]</sup></sup>
+</h1>
+<p>该QDeclarativeNetworkAccessManagerFactory类创建<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>实例一QML引擎。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdeclarativenetworkaccessmanagerfactory.html#QDeclarativeNetworkAccessManagerFactory" tppabs="http://pyqt4doc.appspot.com/qdeclarativenetworkaccessmanagerfactory.html#QDeclarativeNetworkAccessManagerFactory">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdeclarativenetworkaccessmanagerfactory.html#QDeclarativeNetworkAccessManagerFactory-2" tppabs="http://pyqt4doc.appspot.com/qdeclarativenetworkaccessmanagerfactory.html#QDeclarativeNetworkAccessManagerFactory-2">__init__</a></b> (<i>self</i>, QDeclarativeNetworkAccessManagerFactory)</li>
+<li>
+<div class="fn"></div>QNetworkAccessManager <b><a href="qdeclarativenetworkaccessmanagerfactory.html#create" tppabs="http://pyqt4doc.appspot.com/qdeclarativenetworkaccessmanagerfactory.html#create">create</a></b> (<i>self</i>, QObject <i>parent</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDeclarativeNetworkAccessManagerFactory类创建<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>实例一QML引擎。</p>
+<p>一个QML引擎使用<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>所有网络接入。通过实施一个工厂，能够提供QML发动机与定制<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>有专门的缓存，代理和cookie的支持情况。</p>
+<p>实现工厂，子类QDeclarativeNetworkAccessManagerFactory和实现虚拟<a href="qdeclarativenetworkaccessmanagerfactory.html#create" tppabs="http://pyqt4doc.appspot.com/qdeclarativenetworkaccessmanagerfactory.html#create">create</a>（）方法，然后将其用分配给相关的QML引擎<a href="qdeclarativeengine.html#setNetworkAccessManagerFactory" tppabs="http://pyqt4doc.appspot.com/qdeclarativeengine.html#setNetworkAccessManagerFactory">QDeclarativeEngine.setNetworkAccessManagerFactory</a>（ ） 。</p>
+<p>注意QML引擎可能创造<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>从多个线程实例。正因为如此，本实施<a href="qdeclarativenetworkaccessmanagerfactory.html#create" tppabs="http://pyqt4doc.appspot.com/qdeclarativenetworkaccessmanagerfactory.html#create">create</a>（ ）方法必须是<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/threads-reentrancy.html">reentrant</a>。此外，开发人员应该小心，如果该对象的信号从返回<a href="qdeclarativenetworkaccessmanagerfactory.html#create" tppabs="http://pyqt4doc.appspot.com/qdeclarativenetworkaccessmanagerfactory.html#create">create</a>（ ）被连接到可能在不同的线程被创建的对象的槽：</p>
+<ul>
+<li>The QML engine internally handles all requests, and cleans up
+any <a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a> objects it
+creates. Receiving the <a href="qnetworkaccessmanager.html#finished" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#finished">QNetworkAccessManager.finished</a>()
+signal in another thread may not provide the receiver with a valid
+reply object if it has already been deleted.</li>
+<li>Authentication details provided to <a href="qnetworkaccessmanager.html#authenticationRequired" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#authenticationRequired">QNetworkAccessManager.authenticationRequired</a>()
+must be provided immediately, so this signal cannot be connected as
+a <a href="qt.html#ConnectionType-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ConnectionType-enum">Qt.QueuedConnection</a>
+(or as the default <a href="qt.html#ConnectionType-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ConnectionType-enum">Qt.AutoConnection</a> from another
+thread).</li>
+</ul>
+<p>有关信号和线程的详细信息，请参阅<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/threads-qobject.html">Threads and QObjects</a>和<a href="index.htm#signals-and-slots-across-threads" tppabs="http://pyqt4doc.appspot.com/threads-qobject.html#signals-and-slots-across-threads">Signals and
+Slots Across Threads</a>。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDeclarativeNetworkAccessManagerFactory"></a>QDeclarativeNetworkAccessManagerFactory.__init__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="QDeclarativeNetworkAccessManagerFactory-2"></a>QDeclarativeNetworkAccessManagerFactory.__init__ (<i>self</i>, <a href="qdeclarativenetworkaccessmanagerfactory.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativenetworkaccessmanagerfactory.html">QDeclarativeNetworkAccessManagerFactory</a>)</h3>
+<h3 class="fn">
+<a name="create"></a><a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a> QDeclarativeNetworkAccessManagerFactory.create (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>创建并返回一个网络访问管理器与指定的<i>parent</i>。此方法必须返回一个新的<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>比如每次它被称为。</p>
+<p>注意：这个方法可能被多个线程调用，因此确保该方法的实现是可重入的。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

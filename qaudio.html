@@ -1,0 +1,141 @@
+﻿<html>
+<head>
+<title>QAudio Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QAudio Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtmultimedia.html">QtMultimedia</a> module]</sup></sup>
+</h1>
+<p>该QAudio命名空间包含用于音频类的枚举。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qaudio.html#Error-enum" tppabs="http://pyqt4doc.appspot.com/qaudio.html#Error-enum">Error</a></b> { NoError, OpenError, IOError, UnderrunError, FatalError }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qaudio.html#Mode-enum" tppabs="http://pyqt4doc.appspot.com/qaudio.html#Mode-enum">Mode</a></b> { AudioInput, AudioOutput }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qaudio.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qaudio.html#State-enum">State</a></b> { ActiveState, SuspendedState, StoppedState, IdleState }</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QAudio命名空间包含用于音频类的枚举。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="Error-enum"></a>QAudio.Error</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAudio.NoError</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">没有错误发生</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAudio.OpenError</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">打开音频设备的错误</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAudio.IOError</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">在音频设备的读/写时发生错误</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAudio.UnderrunError</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">音频数据不被馈送到音频设备以足够快的速率</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAudio.FatalError</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">发生不可恢复的错误，音频设备不可用在这个时候。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="Mode-enum"></a>QAudio.Mode</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAudio.AudioOutput</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">音频输出装置</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAudio.AudioInput</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">音频输入设备</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="State-enum"></a>QAudio.State</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAudio.ActiveState</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">音频数据被处理时，该状态被设置在开始后（ ）被调用时，虽然音频数据是可用以进行处理。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAudio.SuspendedState</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">音频设备处于暂停状态，这种状态才会进入暂停后， （ ）被调用。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAudio.StoppedState</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">音频设备是封闭的，不处理任何音频数据</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAudio.IdleState</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">该<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>在没有任何数据和音频系统的缓冲区是空的通过，这种状态开始后设置（ ）被调用，而没有音频数据可被处理。</td>
+</tr>
+</table>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

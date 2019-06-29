@@ -1,0 +1,101 @@
+﻿<html>
+<head>
+<title>QTextObject Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QTextObject Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QTextObject类是为不同类型对象的基类，它可以为一组零件<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>在一起。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<p>通过继承<a href="qtextblockgroup.html" tppabs="http://pyqt4doc.appspot.com/qtextblockgroup.html">QTextBlockGroup</a>和<a href="qtextframe.html" tppabs="http://pyqt4doc.appspot.com/qtextframe.html">QTextFrame</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qtextobject.html#QTextObject" tppabs="http://pyqt4doc.appspot.com/qtextobject.html#QTextObject">__init__</a></b> (<i>self</i>, QTextDocument <i>doc</i>)</li>
+<li>
+<div class="fn"></div>QTextDocument <b><a href="qtextobject.html#document" tppabs="http://pyqt4doc.appspot.com/qtextobject.html#document">document</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextFormat <b><a href="qtextobject.html#format" tppabs="http://pyqt4doc.appspot.com/qtextobject.html#format">format</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextobject.html#formatIndex" tppabs="http://pyqt4doc.appspot.com/qtextobject.html#formatIndex">formatIndex</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextobject.html#objectIndex" tppabs="http://pyqt4doc.appspot.com/qtextobject.html#objectIndex">objectIndex</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextobject.html#setFormat" tppabs="http://pyqt4doc.appspot.com/qtextobject.html#setFormat">setFormat</a></b> (<i>self</i>, QTextFormat <i>format</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QTextObject类是为不同类型对象的基类，它可以为一组零件<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>在一起。</p>
+<p>通用分组文本对象列表（<a href="qtextlist.html" tppabs="http://pyqt4doc.appspot.com/qtextlist.html">QTextList</a>） ，框架（<a href="qtextframe.html" tppabs="http://pyqt4doc.appspot.com/qtextframe.html">QTextFrame</a>）和表（<a href="qtexttable.html" tppabs="http://pyqt4doc.appspot.com/qtexttable.html">QTextTable</a>） 。文本对象都有一个关联的<a href="qtextobject.html#format" tppabs="http://pyqt4doc.appspot.com/qtextobject.html#format">format</a>（）和<a href="qtextobject.html#document" tppabs="http://pyqt4doc.appspot.com/qtextobject.html#document">document</a>（ ） 。</p>
+<p>基本上有两种类型的文本对象：那些被用来与块（块格式），以及那些被用于字符（字符格式） 。第一种是来源于<a href="qtextblockgroup.html" tppabs="http://pyqt4doc.appspot.com/qtextblockgroup.html">QTextBlockGroup</a>以及从所述第二类<a href="qtextframe.html" tppabs="http://pyqt4doc.appspot.com/qtextframe.html">QTextFrame</a>。</p>
+<p>你很少需要直接使用这个类。在创建自定义的文本对象，你还需要重写<a href="qtextdocument.html#createObject" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#createObject">QTextDocument.createObject</a>（），它作为一个工厂方法来创建文本对象。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QTextObject"></a>QTextObject.__init__ (<i>self</i>, <a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a> <i>doc</i>)</h3>
+<p>创建一个新的<a href="qtextobject.html" tppabs="http://pyqt4doc.appspot.com/qtextobject.html">QTextObject</a>对于给定的<i>document</i>。</p>
+<p><b>Warning:</b>这个函数不应该被直接调用，而只能从<a href="qtextdocument.html#createObject" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#createObject">QTextDocument.createObject</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="document"></a><a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a> QTextObject.document (<i>self</i>)</h3>
+<p>返回此对象所属的文件。</p>
+<p><b>See also</b> <a href="qtextobject.html#format" tppabs="http://pyqt4doc.appspot.com/qtextobject.html#format">format</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="format"></a><a href="qtextformat.html" tppabs="http://pyqt4doc.appspot.com/qtextformat.html">QTextFormat</a> QTextObject.format (<i>self</i>)</h3>
+<p>返回文本对象的格式。</p>
+<p><b>See also</b> <a href="qtextobject.html#setFormat" tppabs="http://pyqt4doc.appspot.com/qtextobject.html#setFormat">setFormat</a>（）和<a href="qtextobject.html#document" tppabs="http://pyqt4doc.appspot.com/qtextobject.html#document">document</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="formatIndex"></a>int QTextObject.formatIndex (<i>self</i>)</h3>
+<p>返回文档的内部格式列表中的对象的格式的索引。</p>
+<p><b>See also</b> <a href="qtextdocument.html#allFormats" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#allFormats">QTextDocument.allFormats</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="objectIndex"></a>int QTextObject.objectIndex (<i>self</i>)</h3>
+<p>返回此对象的对象索引。这可以被一起使用<a href="qtextformat.html#setObjectIndex" tppabs="http://pyqt4doc.appspot.com/qtextformat.html#setObjectIndex">QTextFormat.setObjectIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFormat"></a>QTextObject.setFormat (<i>self</i>, <a href="qtextformat.html" tppabs="http://pyqt4doc.appspot.com/qtextformat.html">QTextFormat</a> <i>format</i>)</h3>
+<p>设置文本对象的<i>format</i>。</p>
+<p><b>See also</b> <a href="qtextobject.html#format" tppabs="http://pyqt4doc.appspot.com/qtextobject.html#format">format</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

@@ -1,0 +1,724 @@
+﻿<html>
+<head>
+<title>QWebSettings Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QWebSettings Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtwebkit.html">QtWebKit</a> module]</sup></sup>
+</h1>
+<p>该QWebSettings类提供了一个对象来存储所使用的设置<a href="qwebpage.html" tppabs="http://pyqt4doc.appspot.com/qwebpage.html">QWebPage</a>和<a href="qwebframe.html" tppabs="http://pyqt4doc.appspot.com/qwebframe.html">QWebFrame</a>。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qwebsettings.html#FontFamily-enum" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#FontFamily-enum">FontFamily</a></b> { StandardFont, FixedFont, SerifFont, SansSerifFont, CursiveFont, FantasyFont }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qwebsettings.html#FontSize-enum" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#FontSize-enum">FontSize</a></b> { MinimumFontSize, MinimumLogicalFontSize, DefaultFontSize, DefaultFixedFontSize }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qwebsettings.html#WebAttribute-enum" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#WebAttribute-enum">WebAttribute</a></b> { AutoLoadImages, JavascriptEnabled, JavaEnabled, PluginsEnabled, ..., HyperlinkAuditingEnabled }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qwebsettings.html#WebGraphic-enum" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#WebGraphic-enum">WebGraphic</a></b> { MissingImageGraphic, MissingPluginGraphic, DefaultFrameIconGraphic, TextAreaSizeGripCornerGraphic, ..., SearchCancelButtonPressedGraphic }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QString <b><a href="qwebsettings.html#defaultTextEncoding" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#defaultTextEncoding">defaultTextEncoding</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qwebsettings.html#fontFamily" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#fontFamily">fontFamily</a></b> (<i>self</i>, FontFamily <i>which</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qwebsettings.html#fontSize" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#fontSize">fontSize</a></b> (<i>self</i>, FontSize <i>type</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qwebsettings.html#localStoragePath" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#localStoragePath">localStoragePath</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwebsettings.html#resetAttribute" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#resetAttribute">resetAttribute</a></b> (<i>self</i>, WebAttribute <i>attr</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwebsettings.html#resetFontFamily" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#resetFontFamily">resetFontFamily</a></b> (<i>self</i>, FontFamily <i>which</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwebsettings.html#resetFontSize" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#resetFontSize">resetFontSize</a></b> (<i>self</i>, FontSize <i>type</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwebsettings.html#setAttribute" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setAttribute">setAttribute</a></b> (<i>self</i>, WebAttribute <i>attr</i>, bool <i>on</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwebsettings.html#setDefaultTextEncoding" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setDefaultTextEncoding">setDefaultTextEncoding</a></b> (<i>self</i>, QString <i>encoding</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwebsettings.html#setFontFamily" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setFontFamily">setFontFamily</a></b> (<i>self</i>, FontFamily <i>which</i>, QString <i>family</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwebsettings.html#setFontSize" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setFontSize">setFontSize</a></b> (<i>self</i>, FontSize <i>type</i>, int <i>size</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwebsettings.html#setLocalStoragePath" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setLocalStoragePath">setLocalStoragePath</a></b> (<i>self</i>, QString <i>path</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwebsettings.html#setUserStyleSheetUrl" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setUserStyleSheetUrl">setUserStyleSheetUrl</a></b> (<i>self</i>, QUrl <i>location</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qwebsettings.html#testAttribute" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#testAttribute">testAttribute</a></b> (<i>self</i>, WebAttribute <i>attr</i>)</li>
+<li>
+<div class="fn"></div>QUrl <b><a href="qwebsettings.html#userStyleSheetUrl" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#userStyleSheetUrl">userStyleSheetUrl</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qwebsettings.html#clearIconDatabase" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#clearIconDatabase">clearIconDatabase</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwebsettings.html#clearMemoryCaches" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#clearMemoryCaches">clearMemoryCaches</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwebsettings.html#enablePersistentStorage" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#enablePersistentStorage">enablePersistentStorage</a></b> (QString <i>path</i> = QString())</li>
+<li>
+<div class="fn"></div>QWebSettings <b><a href="qwebsettings.html#globalSettings" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#globalSettings">globalSettings</a></b> ()</li>
+<li>
+<div class="fn"></div>QString <b><a href="qwebsettings.html#iconDatabasePath" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#iconDatabasePath">iconDatabasePath</a></b> ()</li>
+<li>
+<div class="fn"></div>QIcon <b><a href="qwebsettings.html#iconForUrl" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#iconForUrl">iconForUrl</a></b> (QUrl <i>url</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qwebsettings.html#maximumPagesInCache" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#maximumPagesInCache">maximumPagesInCache</a></b> ()</li>
+<li>
+<div class="fn"></div>int <b><a href="qwebsettings.html#offlineStorageDefaultQuota" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#offlineStorageDefaultQuota">offlineStorageDefaultQuota</a></b> ()</li>
+<li>
+<div class="fn"></div>QString <b><a href="qwebsettings.html#offlineStoragePath" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#offlineStoragePath">offlineStoragePath</a></b> ()</li>
+<li>
+<div class="fn"></div>QString <b><a href="qwebsettings.html#offlineWebApplicationCachePath" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#offlineWebApplicationCachePath">offlineWebApplicationCachePath</a></b> ()</li>
+<li>
+<div class="fn"></div>int <b><a href="qwebsettings.html#offlineWebApplicationCacheQuota" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#offlineWebApplicationCacheQuota">offlineWebApplicationCacheQuota</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwebsettings.html#setIconDatabasePath" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setIconDatabasePath">setIconDatabasePath</a></b> (QString <i>location</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwebsettings.html#setMaximumPagesInCache" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setMaximumPagesInCache">setMaximumPagesInCache</a></b> (int <i>pages</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwebsettings.html#setObjectCacheCapacities" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setObjectCacheCapacities">setObjectCacheCapacities</a></b> (int <i>cacheMinDeadCapacity</i>, int <i>cacheMaxDead</i>, int <i>totalCapacity</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwebsettings.html#setOfflineStorageDefaultQuota" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setOfflineStorageDefaultQuota">setOfflineStorageDefaultQuota</a></b> (int <i>maximumSize</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwebsettings.html#setOfflineStoragePath" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setOfflineStoragePath">setOfflineStoragePath</a></b> (QString <i>path</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwebsettings.html#setOfflineWebApplicationCachePath" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setOfflineWebApplicationCachePath">setOfflineWebApplicationCachePath</a></b> (QString <i>path</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwebsettings.html#setOfflineWebApplicationCacheQuota" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setOfflineWebApplicationCacheQuota">setOfflineWebApplicationCacheQuota</a></b> (int <i>maximumSize</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwebsettings.html#setWebGraphic" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setWebGraphic">setWebGraphic</a></b> (WebGraphic <i>type</i>, QPixmap <i>graphic</i>)</li>
+<li>
+<div class="fn"></div>QPixmap <b><a href="qwebsettings.html#webGraphic" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#webGraphic">webGraphic</a></b> (WebGraphic <i>type</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QWebSettings类提供了一个对象来存储所使用的设置<a href="qwebpage.html" tppabs="http://pyqt4doc.appspot.com/qwebpage.html">QWebPage</a>和<a href="qwebframe.html" tppabs="http://pyqt4doc.appspot.com/qwebframe.html">QWebFrame</a>。</p>
+<p>Each <a href="qwebpage.html" tppabs="http://pyqt4doc.appspot.com/qwebpage.html">QWebPage</a>对象都有自己的QWebSettings对象，它配置该页面的设置。如果未配置设置，那么就抬头在全局设置对象，可以使用访问<a href="qwebsettings.html#globalSettings" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#globalSettings">globalSettings</a>（ ） 。</p>
+<p>QWebSettings允许浏览器属性，如字体大小和家庭，自定义样式表的位置，如JavaScript和插件的通用属性配置。各个属性使用设置<a href="qwebsettings.html#setAttribute" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setAttribute">setAttribute</a>（）函数。该<a href="qwebsettings.html#WebAttribute-enum" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#WebAttribute-enum">WebAttribute</a>枚举进一步描述了每个属性。</p>
+<p>QWebSettings还配置全局属性，如网页的内存缓存，图标数据库，本地数据库存储和离线应用程序存储。</p>
+<a id="enabling-plugins" name="enabling-plugins"></a>
+<h3>Enabling Plugins</h3>
+<p>支持浏览器插件可以通过设置启用<a href="qwebsettings.html#WebAttribute-enum" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#WebAttribute-enum">PluginsEnabled</a>属性。对于许多应用来说，这个属性是启用所有的网页通过在设置它<a href="qwebsettings.html#globalSettings" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#globalSettings">global
+settings object</a>。<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtwebkit.html">QtWebKit</a>将处理Qt的插件时，总是忽略此设置。允许决定一个Qt插件在其重新实现由客户端<a href="qwebpage.html#createPlugin" tppabs="http://pyqt4doc.appspot.com/qwebpage.html#createPlugin">QWebPage.createPlugin</a>（ ） 。</p>
+<a id="web-application-support" name="web-application-support"></a>
+<h3>Web Application Support</h3>
+<p>WebKit的规定在指定功能的支持<a href="http://www.w3.org/TR/html5/">HTML 5</a>能够提高Web应用程序的性能和功能。其中包括客户端（离线）的存储和使用Web应用程序缓存。</p>
+<p>客户端（离线）存储是经过改良的使用Cookie来存储持久数据的Web应用程序。应用程序可以配置并启用通过调用使用离线存储数据库的<a href="qwebsettings.html#setOfflineStoragePath" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setOfflineStoragePath">setOfflineStoragePath</a>（）以适当的文件路径，并且可以通过调用限制配额为每个应用程序<a href="qwebsettings.html#setOfflineStorageDefaultQuota" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setOfflineStorageDefaultQuota">setOfflineStorageDefaultQuota</a>（ ） 。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="FontFamily-enum"></a>QWebSettings.FontFamily</h3>
+<p>这个枚举描述由CSS 2中定义的通用字体家族。欲了解更多信息，请参阅<a href="http://www.w3.org/TR/REC-CSS2/fonts.html#generic-font-families">CSS
+standard</a>。</p>
+<table class="valuelist">
+<tr>
+<th class="tblConst">Constant</th>
+<th class="tblVal">Value</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWebSettings.StandardFont</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWebSettings.FixedFont</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWebSettings.SerifFont</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWebSettings.SansSerifFont</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWebSettings.CursiveFont</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWebSettings.FantasyFont</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="FontSize-enum"></a>QWebSettings.FontSize</h3>
+<p>这个枚举变量描述字体大小，通过配置<a href="qwebsettings.html" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html">QWebSettings</a>。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWebSettings.MinimumFontSize</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">硬盘最小字体大小。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.MinimumLogicalFontSize</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">与缩小时所采用的最小的逻辑字体大小<a href="qwebframe.html#setTextSizeMultiplier" tppabs="http://pyqt4doc.appspot.com/qwebframe.html#setTextSizeMultiplier">QWebFrame.setTextSizeMultiplier</a>（ ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWebSettings.DefaultFontSize</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">默认字体大小为普通文字。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.DefaultFixedFontSize</tt>
+</td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">默认字体大小为固定间距的文字。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="WebAttribute-enum"></a>QWebSettings.WebAttribute</h3>
+<p>这个枚举变量描述了通过配置各种属性<a href="qwebsettings.html" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html">QWebSettings</a>。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWebSettings.AutoLoadImages</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">指定图像是否在网页中自动加载。这是默认启用的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWebSettings.DnsPrefetchEnabled</tt></td>
+<td class="topAlign">？</td>
+<td class="topAlign">指定QtWebKit的是否会尝试预取的DNS条目，以加快浏览。这只能作为一个全球性的属性。只为Qt 4.6和更高版本。这是默认情况下禁用。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWebSettings.JavascriptEnabled</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">启用或禁用JavaScript程序的运行。这是默认启用</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWebSettings.JavaEnabled</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">启用或禁用Java小程序。目前不支持Java小程序。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWebSettings.PluginsEnabled</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">启用或禁用网页中的插件（例如，使用NPAPI ） 。 Qt的插件有一个MIME类型，如“应用程序/ x - QT-插件”不受此设置。这是默认情况下禁用。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.PrivateBrowsingEnabled</tt>
+</td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">私人浏览功能可以防止从WebKit的记录在历史上访问过的网页和存储网页的图标。这是默认情况下禁用。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.JavascriptCanOpenWindows</tt>
+</td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">指定的JavaScript程序是否可以打开新窗口。这是默认情况下禁用。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.JavascriptCanCloseWindows</tt>
+</td>
+<td class="topAlign">？</td>
+<td class="topAlign">指定的JavaScript程序是否可以关闭窗口。这是默认情况下禁用。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.JavascriptCanAccessClipboard</tt>
+</td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">指定的JavaScript程序是否可以读取或写入剪贴板。这是默认情况下禁用。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.DeveloperExtrasEnabled</tt>
+</td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">启用额外的Web开发工具。目前，这使得在上下文菜单中的“检查”元素，以及使用<a href="qwebinspector.html" tppabs="http://pyqt4doc.appspot.com/qwebinspector.html">QWebInspector</a>它控制着Web检查器对网站进行调试。这是默认情况下禁用。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.SpatialNavigationEnabled</tt>
+</td>
+<td class="topAlign">？</td>
+<td class="topAlign">启用或禁用空间导航的功能，其中包括在通过左，右，上和下箭头键在网页中可聚焦元素，如超链接和窗体控件之间进行导航的能力。例如，如果用户按下右键，启发式判断是否有他可能会试图达成朝着正确的，哪些元素是他想的元素。这是默认情况下禁用。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.LinksIncludedInFocusChain</tt>
+</td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">指定的超链接是否应该包括在键盘焦点链。这是默认启用的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWebSettings.ZoomTextOnly</tt></td>
+<td class="topAlign"><tt>9</tt></td>
+<td class="topAlign">指定是否在框架上的变焦倍率仅适用于文本或全部内容。这是默认情况下禁用。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.PrintElementBackgrounds</tt>
+</td>
+<td class="topAlign"><tt>10</tt></td>
+<td class="topAlign">指定背景颜色和图像是否也招来当页面被打印。这是默认启用的。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.OfflineStorageDatabaseEnabled</tt>
+</td>
+<td class="topAlign"><tt>11</tt></td>
+<td class="topAlign">指定了HTML 5的离线存储功能的支持是否启用与否。这是默认情况下禁用。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.OfflineWebApplicationCacheEnabled</tt>
+</td>
+<td class="topAlign"><tt>12</tt></td>
+<td class="topAlign">指定为HTML 5 Web应用程序的缓存功能的支持是否启用与否。这是默认情况下禁用。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.LocalStorageEnabled</tt>
+</td>
+<td class="topAlign"><tt>13</tt></td>
+<td class="topAlign">指定了HTML 5的本地存储功能支持是否启用与否。这是默认情况下禁用。 （这个值被引入4.6 。 ）</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.LocalStorageDatabaseEnabled</tt>
+</td>
+<td class="topAlign"><tt>LocalStorageEnabled</tt></td>
+<td class="topAlign">
+<i>This enum value is deprecated.</i>使用QWebSettings.LocalStorageEnabled代替。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.LocalContentCanAccessRemoteUrls</tt>
+</td>
+<td class="topAlign">？</td>
+<td class="topAlign">指定本地加载的文件是否被允许访问远程URL 。这是默认情况下禁用。有关安全性的起源和本地与远程内容查看详细信息<a href="qwebsecurityorigin.html" tppabs="http://pyqt4doc.appspot.com/qwebsecurityorigin.html">QWebSecurityOrigin</a>。 （这个值被引入4.6 。 ）</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.LocalContentCanAccessFileUrls</tt>
+</td>
+<td class="topAlign">？</td>
+<td class="topAlign">指定本地加载的文件是否被允许访问其他地方的URL。这是默认启用的。有关安全性的起源和本地与远程内容查看详细信息<a href="qwebsecurityorigin.html" tppabs="http://pyqt4doc.appspot.com/qwebsecurityorigin.html">QWebSecurityOrigin</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWebSettings.XSSAuditingEnabled</tt></td>
+<td class="topAlign">？</td>
+<td class="topAlign">指定是否负荷要求应为跨站点脚本尝试进行监控。可疑的脚本将被阻止并报告在检查的JavaScript控制台。启用此功能可能会对性能产生影响，它默认是禁用的。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.AcceleratedCompositingEnabled</tt>
+</td>
+<td class="topAlign">？</td>
+<td class="topAlign">这个特点，配合使用时<a href="qgraphicswebview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicswebview.html">QGraphicsWebView</a>，加速Web内容的动画。变换和不透明性质的CSS动画将构成动画元素的缓存内容进行渲染。这是默认启用的。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.TiledBackingStoreEnabled</tt>
+</td>
+<td class="topAlign">？</td>
+<td class="topAlign">此设置使瓷砖后备存储功能的<a href="qgraphicswebview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicswebview.html">QGraphicsWebView</a>。与平铺的后备存储使能，以及当前可见区域周围的网页内容被推测为缓存位图的瓷砖。瓦片被自动保持同步的网页，因为它改变。启用平铺可以显着加快油画般滚动沉重的作业。启用该功能会增加内存消耗。使用CSS固定定位与内容，它不能很好地工作（参见<a href="qgraphicswebview.html#resizesToContents-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicswebview.html#resizesToContents-prop">resizesToContents</a>属性）。<a href="qgraphicswebview.html#tiledBackingStoreFrozen-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicswebview.html#tiledBackingStoreFrozen-prop">tiledBackingStoreFrozen</a>属性允许应用程序暂时冻结后备存储的内容。这是默认情况下禁用。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.FrameFlatteningEnabled</tt>
+</td>
+<td class="topAlign">？</td>
+<td class="topAlign">与此设置每个子帧被扩展为它的内容。在触摸设备，它是理想的没有页面的任何可滚动的子部件，因为它会导致一个混乱的用户体验，带滚动有时滚动的子部件，并在其他时间滚动页面本身。出于这个原因，内置页框和框架都在触摸设备几乎无法使用。这将压扁的所有帧成为一体滚动页面。这是默认情况下禁用。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.SiteSpecificQuirksEnabled</tt>
+</td>
+<td class="topAlign">？</td>
+<td class="topAlign">此设置使WebKit的解决方法打破的网站。它是默认启用的。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="WebGraphic-enum"></a>QWebSettings.WebGraphic</h3>
+<p>此枚举描述网页中使用的标准图形元素。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.MissingImageGraphic</tt>
+</td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">所示的替换图形图像时无法加载。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.MissingPluginGraphic</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">所示的替换图形时，插件无法加载。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.DefaultFrameIconGraphic</tt>
+</td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">为默认图标<a href="qwebframe.html#icon-prop" tppabs="http://pyqt4doc.appspot.com/qwebframe.html#icon-prop">QWebFrame.icon</a>（ ） 。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.TextAreaSizeGripCornerGraphic</tt>
+</td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">用于显示文本区域的大小手柄的图形。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.DeleteButtonGraphic</tt>
+</td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">所示为WebKit的 - 编辑 - 删除 - 按钮在删除用户界面的图形。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.InputSpeechButtonGraphic</tt>
+</td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">支持语音识别输入字段中显示的图形。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.SearchCancelButtonGraphic</tt>
+</td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">为显示在搜索字段中清除文本图形。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWebSettings.SearchCancelButtonPressedGraphic</tt>
+</td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">当SearchCancelButtonGraphic按下所示的图形。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="clearIconDatabase"></a>QWebSettings.clearIconDatabase ()</h3>
+<p>清除图标库。</p>
+
+
+<h3 class="fn">
+<a name="clearMemoryCaches"></a>QWebSettings.clearMemoryCaches ()</h3>
+<p>将释放尽可能多的内存可以通过清理所有的内存高速缓存，如页面，对象和字体缓存。</p>
+<p>此功能被引入Qt的4.6 。</p>
+
+
+<h3 class="fn">
+<a name="defaultTextEncoding"></a>QString QWebSettings.defaultTextEncoding (<i>self</i>)</h3>
+<p>返回默认文本编码。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qwebsettings.html#setDefaultTextEncoding" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setDefaultTextEncoding">setDefaultTextEncoding</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="enablePersistentStorage"></a>QWebSettings.enablePersistentStorage (QString <i>path</i> = QString())</h3>
+<p>启用WebKit的数据持久化，并设置为路径<i>path</i>。如果<i>path</i>是空的，由指定的用户特定数据的位置<a href="qdesktopservices.html#StandardLocation-enum" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#StandardLocation-enum">DataLocation</a>将被代替使用。</p>
+<p>此方法将同时设置并启用<a href="qwebsettings.html#iconDatabasePath" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#iconDatabasePath">iconDatabasePath</a>（ ）<a href="qwebsettings.html#localStoragePath" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#localStoragePath">localStoragePath</a>（ ）<a href="qwebsettings.html#offlineStoragePath" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#offlineStoragePath">offlineStoragePath</a>（）和<a href="qwebsettings.html#offlineWebApplicationCachePath" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#offlineWebApplicationCachePath">offlineWebApplicationCachePath</a>（ ） 。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qwebsettings.html#localStoragePath" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#localStoragePath">localStoragePath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fontFamily"></a>QString QWebSettings.fontFamily (<i>self</i>, <a href="qwebsettings.html#FontFamily-enum" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#FontFamily-enum">FontFamily</a> <i>which</i>)</h3>
+<p>返回实际的字体系列指定通用字体家族，<i>which</i>。</p>
+<p><b>See also</b> <a href="qwebsettings.html#setFontFamily" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setFontFamily">setFontFamily</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fontSize"></a>int QWebSettings.fontSize (<i>self</i>, <a href="qwebsettings.html#FontSize-enum" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#FontSize-enum">FontSize</a> <i>type</i>)</h3>
+<p>返回默认的字体大小<i>type</i>。</p>
+<p><b>See also</b> <a href="qwebsettings.html#setFontSize" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setFontSize">setFontSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="globalSettings"></a><a href="qwebsettings.html" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html">QWebSettings</a> QWebSettings.globalSettings ()</h3>
+<p>返回全局设置对象。</p>
+<p>改变默认的对象的任何设置将自动应用于所有<a href="qwebpage.html" tppabs="http://pyqt4doc.appspot.com/qwebpage.html">QWebPage</a>倘或特定的设置尚未复盖。</p>
+
+
+<h3 class="fn">
+<a name="iconDatabasePath"></a>QString QWebSettings.iconDatabasePath ()</h3>
+<p>如果返回的图标数据库被禁用的图标库或空字符串的路径。</p>
+<p><b>See also</b> <a href="qwebsettings.html#setIconDatabasePath" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setIconDatabasePath">setIconDatabasePath</a>（）和<a href="qwebsettings.html#clearIconDatabase" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#clearIconDatabase">clearIconDatabase</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="iconForUrl"></a><a href="qicon.html" tppabs="http://pyqt4doc.appspot.com/qicon.html">QIcon</a> QWebSettings.iconForUrl (<a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>url</i>)</h3>
+<p>返回该网站的图标<i>url</i>。</p>
+<p>如果网站不指定图标<b>OR</b>如果图标是不是在数据库中，空<a href="qicon.html" tppabs="http://pyqt4doc.appspot.com/qicon.html">QIcon</a>返回。</p>
+<p><b>Note:</b>返回图标的大小是任意的。</p>
+<p><b>See also</b> <a href="qwebsettings.html#setIconDatabasePath" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setIconDatabasePath">setIconDatabasePath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="localStoragePath"></a>QString QWebSettings.localStoragePath (<i>self</i>)</h3>
+<p>返回HTML5的本地存储路径。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qwebsettings.html#setLocalStoragePath" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setLocalStoragePath">setLocalStoragePath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="maximumPagesInCache"></a>int QWebSettings.maximumPagesInCache ()</h3>
+<p>返回的网页被保存在内存中缓存的最大数量。</p>
+<p><b>See also</b> <a href="qwebsettings.html#setMaximumPagesInCache" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setMaximumPagesInCache">setMaximumPagesInCache</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="offlineStorageDefaultQuota"></a>int QWebSettings.offlineStorageDefaultQuota ()</h3>
+<p>返回默认配额为新的离线存储数据库中的值。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qwebsettings.html#setOfflineStorageDefaultQuota" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setOfflineStorageDefaultQuota">setOfflineStorageDefaultQuota</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="offlineStoragePath"></a>QString QWebSettings.offlineStoragePath ()</h3>
+<p>返回的功能，如果禁用了HTML5的客户端数据库存储或空字符串的路径。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qwebsettings.html#setOfflineStoragePath" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setOfflineStoragePath">setOfflineStoragePath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="offlineWebApplicationCachePath"></a>QString QWebSettings.offlineWebApplicationCachePath ()</h3>
+<p>返回的功能，如果禁用了HTML5离线Web应用程序的缓存存储或空字符串的路径。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qwebsettings.html#setOfflineWebApplicationCachePath" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setOfflineWebApplicationCachePath">setOfflineWebApplicationCachePath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="offlineWebApplicationCacheQuota"></a>int QWebSettings.offlineWebApplicationCacheQuota ()</h3>
+<p>返回配额的离线网络应用程序缓存的值。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qwebsettings.html#setOfflineWebApplicationCacheQuota" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setOfflineWebApplicationCacheQuota">setOfflineWebApplicationCacheQuota</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="resetAttribute"></a>QWebSettings.resetAttribute (<i>self</i>, <a href="qwebsettings.html#WebAttribute-enum" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#WebAttribute-enum">WebAttribute</a> <i>attr</i>)</h3>
+<p>复位的设置<i>attribute</i>在全球指定的值<a href="qwebsettings.html" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html">QWebSettings</a>实例。</p>
+<p>此功能对全球无影响<a href="qwebsettings.html" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html">QWebSettings</a>实例。</p>
+<p><b>See also</b> <a href="qwebsettings.html#globalSettings" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#globalSettings">globalSettings</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="resetFontFamily"></a>QWebSettings.resetFontFamily (<i>self</i>, <a href="qwebsettings.html#FontFamily-enum" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#FontFamily-enum">FontFamily</a> <i>which</i>)</h3>
+<p>通过复位指定的实际字体系列<i>which</i>到所述一个全局设置<a href="qwebsettings.html" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html">QWebSettings</a>实例。</p>
+<p>此功能对全球无影响<a href="qwebsettings.html" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html">QWebSettings</a>实例。</p>
+
+
+<h3 class="fn">
+<a name="resetFontSize"></a>QWebSettings.resetFontSize (<i>self</i>, <a href="qwebsettings.html#FontSize-enum" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#FontSize-enum">FontSize</a> <i>type</i>)</h3>
+<p>复位时的字体大小<i>type</i>在指定的大小的全局设置对象。</p>
+<p>此功能对全球无影响<a href="qwebsettings.html" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html">QWebSettings</a>实例。</p>
+
+
+<h3 class="fn">
+<a name="setAttribute"></a>QWebSettings.setAttribute (<i>self</i>, <a href="qwebsettings.html#WebAttribute-enum" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#WebAttribute-enum">WebAttribute</a> <i>attr</i>, bool <i>on</i>)</h3>
+<p>启用或禁用指定<i>attribute</i>功能取决于价值<i>on</i>。</p>
+
+
+<h3 class="fn">
+<a name="setDefaultTextEncoding"></a>QWebSettings.setDefaultTextEncoding (<i>self</i>, QString <i>encoding</i>)</h3>
+<p>指定默认的文字编码系统。</p>
+<p>该<i>encoding</i>，必须描述的编码，如“ UTF-8”的字符串， “ISO-8859 -1”等，如果为空的默认值将被使用。对于更广泛的编码名称的列表，请参阅<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a></p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qwebsettings.html#defaultTextEncoding" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#defaultTextEncoding">defaultTextEncoding</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFontFamily"></a>QWebSettings.setFontFamily (<i>self</i>, <a href="qwebsettings.html#FontFamily-enum" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#FontFamily-enum">FontFamily</a> <i>which</i>, QString <i>family</i>)</h3>
+<p>将实际的字体家族<i>family</i>指定通用系列，<i>which</i>。</p>
+<p><b>See also</b> <a href="qwebsettings.html#fontFamily" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#fontFamily">fontFamily</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFontSize"></a>QWebSettings.setFontSize (<i>self</i>, <a href="qwebsettings.html#FontSize-enum" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#FontSize-enum">FontSize</a> <i>type</i>, int <i>size</i>)</h3>
+<p>设置字体大小<i>type</i>至<i>size</i>。</p>
+<p><b>See also</b> <a href="qwebsettings.html#fontSize" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#fontSize">fontSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setIconDatabasePath"></a>QWebSettings.setIconDatabasePath (QString <i>location</i>)</h3>
+<p>设置的图标数据库的路径<i>path</i>。图标数据库，用于存储与网站相关联的“收藏夹图标” 。</p>
+<p><i>path</i>必须指向现有的目录。</p>
+<p>设置一个空的路径禁用图标库。</p>
+<p><b>See also</b> <a href="qwebsettings.html#iconDatabasePath" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#iconDatabasePath">iconDatabasePath</a>（）和<a href="qwebsettings.html#clearIconDatabase" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#clearIconDatabase">clearIconDatabase</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setLocalStoragePath"></a>QWebSettings.setLocalStoragePath (<i>self</i>, QString <i>path</i>)</h3>
+<p>设置为HTML5的本地存储路径<i>path</i>。</p>
+<p>有关HTML5的本地存储更多的信息，请参阅<a href="http://www.w3.org/TR/webstorage/#the-localstorage-attribute">Web
+Storage standard</a>。</p>
+<p>支持本地存储可以通过设置启用<a href="qwebsettings.html#WebAttribute-enum" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#WebAttribute-enum">LocalStorageEnabled</a>属性。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qwebsettings.html#localStoragePath" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#localStoragePath">localStoragePath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setMaximumPagesInCache"></a>QWebSettings.setMaximumPagesInCache (int <i>pages</i>)</h3>
+<p>设置的最大页数，以保持在内存中页面缓存到<i>pages</i>。</p>
+<p>页面缓存使得导航时提出，或返回到前进/后退历史记录页面，通过暂停和恢复到一个更好的用户体验<i>pages</i>。</p>
+<p>有关该功能的更多信息，请参考：</p>
+<p>http://webkit.org/blog/427/webkit-page-cache-i-the-basics/</p>
+<p><b>See also</b> <a href="qwebsettings.html#maximumPagesInCache" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#maximumPagesInCache">maximumPagesInCache</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setObjectCacheCapacities"></a>QWebSettings.setObjectCacheCapacities (int <i>cacheMinDeadCapacity</i>, int <i>cacheMaxDead</i>, int <i>totalCapacity</i>)</h3>
+<p>指定容量的死对象，如样式表或脚本的内存缓存。</p>
+<p>该<i>cacheMinDeadCapacity</i>指定<i>minimum</i>字节死对象应该消耗在缓存处于压力下的人数。</p>
+<p><i>cacheMaxDead</i>是<i>maximum</i>字节数是死对象要消耗当缓存<b>not</b>下压力。</p>
+<p><i>totalCapacity</i>指定<i>maximum</i>该高速缓存应该消耗的字节数<b>overall</b>。</p>
+<p>高速缓存是默认启用的。调用setObjectCacheCapacities （ 0 ， 0 ， 0 ）将禁用缓存。用一个非零调用它再次启用它。</p>
+
+
+<h3 class="fn">
+<a name="setOfflineStorageDefaultQuota"></a>QWebSettings.setOfflineStorageDefaultQuota (int <i>maximumSize</i>)</h3>
+<p>设置默认配额的价值，新的离线存储数据库<i>maximumSize</i>。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qwebsettings.html#offlineStorageDefaultQuota" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#offlineStorageDefaultQuota">offlineStorageDefaultQuota</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setOfflineStoragePath"></a>QWebSettings.setOfflineStoragePath (QString <i>path</i>)</h3>
+<p>Sets <i>path</i>作为保存位置HTML5的客户端数据库存储数据。</p>
+<p><i>path</i>必须指向现有的目录。</p>
+<p>设置一个空的路径禁用该功能。</p>
+<p>支持客户端的数据库可以通过设置启用<a href="qwebsettings.html#WebAttribute-enum" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#WebAttribute-enum">OfflineStorageDatabaseEnabled</a>属性。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qwebsettings.html#offlineStoragePath" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#offlineStoragePath">offlineStoragePath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setOfflineWebApplicationCachePath"></a>QWebSettings.setOfflineWebApplicationCachePath (QString <i>path</i>)</h3>
+<p>设置为HTML5离线Web应用程序的缓存存储的路径<i>path</i>。</p>
+<p>一个应用程序的缓存就像在某些意义上的HTTP缓存。对于使用通过JavaScript的应用程序缓存文件，装载机发动机将首先要求的内容的应用程序缓存，接触网络之前。</p>
+<p>http://dev.w3.org/html5/spec/Overview.html ＃ appcache ：该功能在细节处描述</p>
+<p><i>path</i>必须指向现有的目录。</p>
+<p>设置一个空的路径禁用该功能。</p>
+<p>支持离线Web应用程序的缓存存储可以通过设置启用<a href="qwebsettings.html#WebAttribute-enum" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#WebAttribute-enum">OfflineWebApplicationCacheEnabled</a>属性。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qwebsettings.html#offlineWebApplicationCachePath" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#offlineWebApplicationCachePath">offlineWebApplicationCachePath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setOfflineWebApplicationCacheQuota"></a>QWebSettings.setOfflineWebApplicationCacheQuota (int <i>maximumSize</i>)</h3>
+<p>设置配额的离线网络应用程序缓存的值<i>maximumSize</i>。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qwebsettings.html#offlineWebApplicationCacheQuota" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#offlineWebApplicationCacheQuota">offlineWebApplicationCacheQuota</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setUserStyleSheetUrl"></a>QWebSettings.setUserStyleSheetUrl (<i>self</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>location</i>)</h3>
+<p>指定用户样式表的位置来加载与每个网页。</p>
+<p>该<i>location</i>必须是在本地文件系统的路径，或使用UTF-8和Base64编码的数据，如数据的URL ：</p>
+<p>“数据：文本/ CSS ;字符集= UTF -8;的base64 ， cCB7IGJhY2tncm91bmQtY29sb3I6IHJlZCB9Ow ==”</p>
+<p><b>Note:</b>如果base64的数据是无效的，该样式将不会被应用。</p>
+<p><b>See also</b> <a href="qwebsettings.html#userStyleSheetUrl" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#userStyleSheetUrl">userStyleSheetUrl</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setWebGraphic"></a>QWebSettings.setWebGraphic (<a href="qwebsettings.html#WebGraphic-enum" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#WebGraphic-enum">WebGraphic</a> <i>type</i>, <a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a> <i>graphic</i>)</h3>
+<p>Sets <i>graphic</i>要绘制时<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtwebkit.html">QtWebKit</a>需要借鉴的给定的图像<i>type</i>。</p>
+<p>例如，当图像不能被加载，像素映像指定由<a href="qwebsettings.html#WebGraphic-enum" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#WebGraphic-enum">MissingImageGraphic</a>绘制代替。</p>
+<p><b>See also</b> <a href="qwebsettings.html#webGraphic" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#webGraphic">webGraphic</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="testAttribute"></a>bool QWebSettings.testAttribute (<i>self</i>, <a href="qwebsettings.html#WebAttribute-enum" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#WebAttribute-enum">WebAttribute</a> <i>attr</i>)</h3>
+<p>返回True如果<i>attribute</i>被启用，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="userStyleSheetUrl"></a><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> QWebSettings.userStyleSheetUrl (<i>self</i>)</h3>
+<p>返回用户样式表的位置。</p>
+<p><b>See also</b> <a href="qwebsettings.html#setUserStyleSheetUrl" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setUserStyleSheetUrl">setUserStyleSheetUrl</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="webGraphic"></a><a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a> QWebSettings.webGraphic (<a href="qwebsettings.html#WebGraphic-enum" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#WebGraphic-enum">WebGraphic</a> <i>type</i>)</h3>
+<p>返回用来绘制指定的图形置换预先设定的像素图<i>type</i>。</p>
+<p><b>See also</b> <a href="qwebsettings.html#setWebGraphic" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setWebGraphic">setWebGraphic</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

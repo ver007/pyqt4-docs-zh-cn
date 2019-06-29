@@ -1,0 +1,139 @@
+﻿<html>
+<head>
+<title>QStyleOptionFrame Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QStyleOptionFrame Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QStyleOptionFrame类是用来描述的参数绘制的帧。<a href="#details">More...</a></p>
+
+<p>继承<a href="qstyleoption.html" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html">QStyleOption</a>。</p>
+<p>通过继承<a href="qstyleoptionframev2.html" tppabs="http://pyqt4doc.appspot.com/qstyleoptionframev2.html">QStyleOptionFrameV2</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qstyleoptionframe.html#StyleOptionType-enum" tppabs="http://pyqt4doc.appspot.com/qstyleoptionframe.html#StyleOptionType-enum">StyleOptionType</a></b> { Type }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qstyleoptionframe.html#StyleOptionVersion-enum" tppabs="http://pyqt4doc.appspot.com/qstyleoptionframe.html#StyleOptionVersion-enum">StyleOptionVersion</a></b> { Version }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qstyleoptionframe.html#QStyleOptionFrame" tppabs="http://pyqt4doc.appspot.com/qstyleoptionframe.html#QStyleOptionFrame">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstyleoptionframe.html#QStyleOptionFrame-2" tppabs="http://pyqt4doc.appspot.com/qstyleoptionframe.html#QStyleOptionFrame-2">__init__</a></b> (<i>self</i>, QStyleOptionFrame <i>other</i>)</li>
+</ul>
+<h3>Members</h3>
+<ul>
+<li>
+<div class="fn"></div>int <b><a href="qstyleoptionframe.html#lineWidth-var" tppabs="http://pyqt4doc.appspot.com/qstyleoptionframe.html#lineWidth-var">lineWidth</a></b>
+</li>
+<li>
+<div class="fn"></div>int <b><a href="qstyleoptionframe.html#midLineWidth-var" tppabs="http://pyqt4doc.appspot.com/qstyleoptionframe.html#midLineWidth-var">midLineWidth</a></b>
+</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QStyleOptionFrame类是用来描述的参数绘制的帧。</p>
+<p>QStyleOptionFrame用于绘制几个内置的Qt部件，包括<a href="qframe.html" tppabs="http://pyqt4doc.appspot.com/qframe.html">QFrame</a>，<a href="qgroupbox.html" tppabs="http://pyqt4doc.appspot.com/qgroupbox.html">QGroupBox</a>，<a href="qlineedit.html" tppabs="http://pyqt4doc.appspot.com/qlineedit.html">QLineEdit</a>和<a href="qmenu.html" tppabs="http://pyqt4doc.appspot.com/qmenu.html">QMenu</a>。需要注意的是描述绘制在Qt的4.1或以上的一帧所必需的参数，你必须使用<a href="qstyleoptionframev2.html" tppabs="http://pyqt4doc.appspot.com/qstyleoptionframev2.html">QStyleOptionFrameV2</a>子类。</p>
+<p>该QStyleOptionFrame类的实例有<a href="qstyleoption.html#type-varx" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html#type-varx">type</a> <a href="qstyleoption.html#OptionType-enum" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html#OptionType-enum">SO_Frame</a>和<a href="qstyleoption.html#version-var" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html#version-var">version</a>1 。</p>
+<p>该类型在内部使用<a href="qstyleoption.html" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html">QStyleOption</a>，它的子类，并<a href="qstyleoption.html#qstyleoption_cast" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html#qstyleoption_cast">qstyleoption_cast</a>（）来确定的样式选项的类型。一般来说，你不需要担心这个，除非你想创建自己的<a href="qstyleoption.html" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html">QStyleOption</a>子类和你自己的风格。的版本是由<a href="qstyleoption.html" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html">QStyleOption</a>子类实现不破坏兼容性扩展。如果你使用<a href="qstyleoption.html#qstyleoption_cast" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html#qstyleoption_cast">qstyleoption_cast</a>（ ） ，你通常并不需要检查它。</p>
+<p>如果您创建自己的<a href="qstyle.html" tppabs="http://pyqt4doc.appspot.com/qstyle.html">QStyle</a>子类，你应该同时处理QStyleOptionFrame和<a href="qstyleoptionframev2.html" tppabs="http://pyqt4doc.appspot.com/qstyleoptionframev2.html">QStyleOptionFrameV2</a>。</p>
+<p>举一个例子展示风格选择如何使用，请参阅<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/widgets-styles.html">Styles</a>例子。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="StyleOptionType-enum"></a>QStyleOptionFrame.StyleOptionType</h3>
+<p>此枚举是用来保存有关样式选项的类型信息，并定义每个<a href="qstyleoption.html" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html">QStyleOption</a>子类。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QStyleOptionFrame.Type</tt></td>
+<td class="topAlign"><tt>SO_Frame</tt></td>
+<td class="topAlign">风格选择该类型提供（<a href="qstyleoption.html#OptionType-enum" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html#OptionType-enum">SO_Frame</a>这个类） 。</td>
+</tr>
+</table>
+<p>该类型在内部使用<a href="qstyleoption.html" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html">QStyleOption</a>，它的子类，并<a href="qstyleoption.html#qstyleoption_cast" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html#qstyleoption_cast">qstyleoption_cast</a>（）来确定的样式选项的类型。一般来说，你不需要担心这个，除非你想创建自己的<a href="qstyleoption.html" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html">QStyleOption</a>子类和你自己的风格。</p>
+<p><b>See also</b> <a href="qstyleoptionframe.html#StyleOptionVersion-enum" tppabs="http://pyqt4doc.appspot.com/qstyleoptionframe.html#StyleOptionVersion-enum">StyleOptionVersion</a>。</p>
+
+
+<h3 class="fn">
+<a name="StyleOptionVersion-enum"></a>QStyleOptionFrame.StyleOptionVersion</h3>
+<p>此枚举是用来保存有关样式选项的版本信息，并定义每个<a href="qstyleoption.html" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html">QStyleOption</a>子类。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QStyleOptionFrame.Version</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">1</td>
+</tr>
+</table>
+<p>的版本是由<a href="qstyleoption.html" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html">QStyleOption</a>子类实现不破坏兼容性扩展。如果你使用<a href="qstyleoption.html#qstyleoption_cast" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html#qstyleoption_cast">qstyleoption_cast</a>（ ） ，你通常并不需要检查它。</p>
+<p><b>See also</b> <a href="qstyleoptionframe.html#StyleOptionType-enum" tppabs="http://pyqt4doc.appspot.com/qstyleoptionframe.html#StyleOptionType-enum">StyleOptionType</a>。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QStyleOptionFrame"></a>QStyleOptionFrame.__init__ (<i>self</i>)</h3>
+<p>构造一个<a href="qstyleoptionframe.html" tppabs="http://pyqt4doc.appspot.com/qstyleoptionframe.html">QStyleOptionFrame</a>，初始化成员变量，它们的默认值。</p>
+
+
+<h3 class="fn">
+<a name="QStyleOptionFrame-2"></a>QStyleOptionFrame.__init__ (<i>self</i>, <a href="qstyleoptionframe.html" tppabs="http://pyqt4doc.appspot.com/qstyleoptionframe.html">QStyleOptionFrame</a> <i>other</i>)</h3>
+<p>构造的一个副本<i>other</i>样式选项。</p>
+<hr>
+<h2>Member Documentation</h2>
+<h3 class="fn">
+<a name="lineWidth-var"></a>int lineWidth</h3>
+<p>这个变量保存线宽绘制框架。</p>
+<p>默认值是0。</p>
+<p><b>See also</b> <a href="qframe.html#lineWidth-prop" tppabs="http://pyqt4doc.appspot.com/qframe.html#lineWidth-prop">QFrame.lineWidth</a>。</p>
+
+
+<h3 class="fn">
+<a name="midLineWidth-var"></a>int midLineWidth</h3>
+<p>这个变量保存中间线宽绘制框架。</p>
+<p>这通常用于绘制沉船或凸起的框架。</p>
+<p>默认值是0。</p>
+<p><b>See also</b> <a href="qframe.html#midLineWidth-prop" tppabs="http://pyqt4doc.appspot.com/qframe.html#midLineWidth-prop">QFrame.midLineWidth</a>。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

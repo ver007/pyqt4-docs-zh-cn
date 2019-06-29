@@ -1,0 +1,90 @@
+﻿<html>
+<head>
+<title>QSqlRelationalDelegate Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QSqlRelationalDelegate Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtsql.html">QtSql</a> module]</sup></sup>
+</h1>
+<p>该QSqlRelationalDelegate类提供了用于显示和编辑从数据委讬<a href="qsqlrelationaltablemodel.html" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html">QSqlRelationalTableModel</a>。<a href="#details">More...</a></p>
+
+<p>继承<a href="qitemdelegate.html" tppabs="http://pyqt4doc.appspot.com/qitemdelegate.html">QItemDelegate</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlrelationaldelegate.html#QSqlRelationalDelegate" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaldelegate.html#QSqlRelationalDelegate">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qsqlrelationaldelegate.html#createEditor" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaldelegate.html#createEditor">createEditor</a></b> (<i>self</i>, QWidget <i>parent</i>, QStyleOptionViewItem <i>option</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlrelationaldelegate.html#setEditorData" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaldelegate.html#setEditorData">setEditorData</a></b> (<i>self</i>, QWidget <i>editor</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlrelationaldelegate.html#setModelData" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaldelegate.html#setModelData">setModelData</a></b> (<i>self</i>, QWidget <i>editor</i>, QAbstractItemModel <i>model</i>, QModelIndex <i>index</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QSqlRelationalDelegate类提供了用于显示和编辑从数据委讬<a href="qsqlrelationaltablemodel.html" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html">QSqlRelationalTableModel</a>。</p>
+<p>不同的是默认的委讬， QSqlRelationalDelegate提供了一个组合框是外键到其他表中的字段。使用类，只需调用<a href="qabstractitemview.html#setItemDelegate" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setItemDelegate">QAbstractItemView.setItemDelegate</a>（ ）与QSqlRelationalDelegate的一个实例的视图：</p>
+<pre class="cpp">
+     <span class="type"><a href="qtableview.html" tppabs="http://pyqt4doc.appspot.com/qtableview.html">QTableView</a></span> <span class="operator">*</span>view <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qtableview.html" tppabs="http://pyqt4doc.appspot.com/qtableview.html">QTableView</a></span>;
+     view<span class="operator">-</span><span class="operator">&gt;</span>setModel(model);
+     view<span class="operator">-</span><span class="operator">&gt;</span>setItemDelegate(<span class="keyword">new</span> <span class="type">QSqlRelationalDelegate</span>(view));
+</pre>
+<p>该<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/sql-relationaltablemodel.html">Relational Table
+Model</a>例如（如下图所示）说明如何使用QSqlRelationalDelegate与配合<a href="qsqlrelationaltablemodel.html" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html">QSqlRelationalTableModel</a>提供表外键的支持。</p>
+<p class="centerAlign"><img alt="" src="images/relationaltable.png"></p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QSqlRelationalDelegate"></a>QSqlRelationalDelegate.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a href="qsqlrelationaldelegate.html" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaldelegate.html">QSqlRelationalDelegate</a>与给定对象<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="createEditor"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QSqlRelationalDelegate.createEditor (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i>, <a href="qstyleoptionviewitem.html" tppabs="http://pyqt4doc.appspot.com/qstyleoptionviewitem.html">QStyleOptionViewItem</a> <i>option</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>从重新实现<a href="qabstractitemdelegate.html#createEditor" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#createEditor">QAbstractItemDelegate.createEditor</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setEditorData"></a>QSqlRelationalDelegate.setEditorData (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>editor</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>从重新实现<a href="qabstractitemdelegate.html#setEditorData" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#setEditorData">QAbstractItemDelegate.setEditorData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setModelData"></a>QSqlRelationalDelegate.setModelData (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>editor</i>, <a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a> <i>model</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>从重新实现<a href="qabstractitemdelegate.html#setModelData" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#setModelData">QAbstractItemDelegate.setModelData</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

@@ -1,0 +1,94 @@
+﻿<html>
+<head>
+<title>QDomNotation Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDomNotation Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtxml.html">QtXml</a> module]</sup></sup>
+</h1>
+<p>该QDomNotation类表示一个XML标记。<a href="#details">More...</a></p>
+
+<p>继承<a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdomnotation.html#QDomNotation" tppabs="http://pyqt4doc.appspot.com/qdomnotation.html#QDomNotation">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdomnotation.html#QDomNotation-2" tppabs="http://pyqt4doc.appspot.com/qdomnotation.html#QDomNotation-2">__init__</a></b> (<i>self</i>, QDomNotation <i>x</i>)</li>
+<li>
+<div class="fn"></div>QDomNode.NodeType <b><a href="qdomnotation.html#nodeType" tppabs="http://pyqt4doc.appspot.com/qdomnotation.html#nodeType">nodeType</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdomnotation.html#publicId" tppabs="http://pyqt4doc.appspot.com/qdomnotation.html#publicId">publicId</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdomnotation.html#systemId" tppabs="http://pyqt4doc.appspot.com/qdomnotation.html#systemId">systemId</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDomNotation类表示一个XML标记。</p>
+<p>一个符号或者声明，按名称，一个未析实体的格式（参见XML 1.0规范的第4.7节） ，或者是用于处理指令目标的正式声明（见XML 1.0规范的第2.6节） 。</p>
+<p>DOM不支持编辑符号的节点，它们是​​因此只读。</p>
+<p>一个符号节点没有任何父。</p>
+<p>You can retrieve the <a href="qdomnotation.html#publicId" tppabs="http://pyqt4doc.appspot.com/qdomnotation.html#publicId">publicId</a>() and <a href="qdomnotation.html#systemId" tppabs="http://pyqt4doc.appspot.com/qdomnotation.html#systemId">systemId</a>() from a notation
+node.</p>
+<p>关于文档对象模型有进一步的信息<a href="http://www.w3.org/TR/REC-DOM-Level-1/">Level 1</a>和<a href="http://www.w3.org/TR/DOM-Level-2-Core/">Level 2 Core</a>。对于更一般介绍的DOM实现的见<a href="qdomdocument.html" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html">QDomDocument</a>文档。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDomNotation"></a>QDomNotation.__init__ (<i>self</i>)</h3>
+<p>构造函数。</p>
+
+
+<h3 class="fn">
+<a name="QDomNotation-2"></a>QDomNotation.__init__ (<i>self</i>, <a href="qdomnotation.html" tppabs="http://pyqt4doc.appspot.com/qdomnotation.html">QDomNotation</a> <i>x</i>)</h3>
+<p>构造的副本<i>x</i>。</p>
+<p>副本的数据是共享的（浅拷贝） ：修改一个节点也将改变其他。如果你想使一个深拷贝，使用<a href="qdomnode.html#cloneNode" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#cloneNode">cloneNode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="nodeType"></a><a href="qdomnode.html#NodeType-enum" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#NodeType-enum">QDomNode.NodeType</a> QDomNotation.nodeType (<i>self</i>)</h3>
+<p>Returns <tt>NotationNode</tt>。</p>
+
+
+<h3 class="fn">
+<a name="publicId"></a>QString QDomNotation.publicId (<i>self</i>)</h3>
+<p>返回此符号的公共标识符。</p>
+
+
+<h3 class="fn">
+<a name="systemId"></a>QString QDomNotation.systemId (<i>self</i>)</h3>
+<p>返回此标记的系统标识符。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

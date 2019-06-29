@@ -1,0 +1,233 @@
+﻿<html>
+<head>
+<title>QTreeWidgetItemIterator Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QTreeWidgetItemIterator Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QTreeWidgetItemIterator类提供了一种方法来遍历一个项目<a href="qtreewidget.html" tppabs="http://pyqt4doc.appspot.com/qtreewidget.html">QTreeWidget</a>实例。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qtreewidgetitemiterator.html#IteratorFlag-enum" tppabs="http://pyqt4doc.appspot.com/qtreewidgetitemiterator.html#IteratorFlag-enum">IteratorFlag</a></b> { All, Hidden, NotHidden, Selected, ..., UserFlag }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtreewidgetitemiterator-iteratorflags.html">IteratorFlags</a></b>
+</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qtreewidgetitemiterator.html#QTreeWidgetItemIterator" tppabs="http://pyqt4doc.appspot.com/qtreewidgetitemiterator.html#QTreeWidgetItemIterator">__init__</a></b> (<i>self</i>, QTreeWidgetItemIterator <i>it</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtreewidgetitemiterator.html#QTreeWidgetItemIterator-2" tppabs="http://pyqt4doc.appspot.com/qtreewidgetitemiterator.html#QTreeWidgetItemIterator-2">__init__</a></b> (<i>self</i>, QTreeWidget <i>widget</i>, IteratorFlags <i>flags</i> = QTreeWidgetItemIterator.All)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtreewidgetitemiterator.html#QTreeWidgetItemIterator-3" tppabs="http://pyqt4doc.appspot.com/qtreewidgetitemiterator.html#QTreeWidgetItemIterator-3">__init__</a></b> (<i>self</i>, QTreeWidgetItem <i>item</i>, IteratorFlags <i>flags</i> = QTreeWidgetItemIterator.All)</li>
+<li>
+<div class="fn"></div>QTreeWidgetItem <b><a href="qtreewidgetitemiterator.html#value" tppabs="http://pyqt4doc.appspot.com/qtreewidgetitemiterator.html#value">value</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QTreeWidgetItemIterator <b><a href="qtreewidgetitemiterator.html#__iadd__" tppabs="http://pyqt4doc.appspot.com/qtreewidgetitemiterator.html#__iadd__">__iadd__</a></b> (<i>self</i>, int <i>n</i>)</li>
+<li>
+<div class="fn"></div>QTreeWidgetItemIterator <b><a href="qtreewidgetitemiterator.html#__isub__" tppabs="http://pyqt4doc.appspot.com/qtreewidgetitemiterator.html#__isub__">__isub__</a></b> (<i>self</i>, int <i>n</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QTreeWidgetItemIterator类提供了一种方法来遍历一个项目<a href="qtreewidget.html" tppabs="http://pyqt4doc.appspot.com/qtreewidget.html">QTreeWidget</a>实例。</p>
+<p>迭代器都将走在一个前序遍历顺序选择项目，从而访问父节点<i>before</i>它继续到子节点。</p>
+<p>例如，下面的代码示例每个项目在树上，检查中对用户指定的搜索字符串的第一个列中的文本：</p>
+<pre class="cpp">
+     <span class="type">QTreeWidgetItemIterator</span> it(treeWidget);
+     <span class="keyword">while</span> (<span class="operator">*</span>it) {
+         <span class="keyword">if</span> ((<span class="operator">*</span>it)<span class="operator">-</span><span class="operator">&gt;</span>text(<span class="number">0</span>) <span class="operator">=</span><span class="operator">=</span> itemText)
+             (<span class="operator">*</span>it)<span class="operator">-</span><span class="operator">&gt;</span>setSelected(<span class="keyword">true</span>);
+         <span class="operator">+</span><span class="operator">+</span>it;
+     }
+</pre>
+<p>另外，也可以通过将某些过滤掉某些类型的节点的<a href="qtreewidgetitemiterator.html#IteratorFlag-enum" tppabs="http://pyqt4doc.appspot.com/qtreewidgetitemiterator.html#IteratorFlag-enum">flags</a>到QTreeWidgetItemIterator的构造函数。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="IteratorFlag-enum"></a>QTreeWidgetItemIterator.IteratorFlag</h3>
+<p>这些标志可以被传递给一个<a href="qtreewidgetitemiterator.html" tppabs="http://pyqt4doc.appspot.com/qtreewidgetitemiterator.html">QTreeWidgetItemIterator</a>构造函数（或 - 编在一起，如果超过一个时） ，从而使迭代器将只遍历匹配给定的标志，物品。</p>
+<table class="valuelist">
+<tr>
+<th class="tblConst">Constant</th>
+<th class="tblVal">Value</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTreeWidgetItemIterator.All</tt></td>
+<td class="topAlign"><tt>0x00000000</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTreeWidgetItemIterator.Hidden</tt></td>
+<td class="topAlign"><tt>0x00000001</tt></td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTreeWidgetItemIterator.NotHidden</tt>
+</td>
+<td class="topAlign"><tt>0x00000002</tt></td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTreeWidgetItemIterator.Selected</tt>
+</td>
+<td class="topAlign"><tt>0x00000004</tt></td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTreeWidgetItemIterator.Unselected</tt>
+</td>
+<td class="topAlign"><tt>0x00000008</tt></td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTreeWidgetItemIterator.Selectable</tt>
+</td>
+<td class="topAlign"><tt>0x00000010</tt></td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTreeWidgetItemIterator.NotSelectable</tt>
+</td>
+<td class="topAlign"><tt>0x00000020</tt></td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTreeWidgetItemIterator.DragEnabled</tt>
+</td>
+<td class="topAlign"><tt>0x00000040</tt></td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTreeWidgetItemIterator.DragDisabled</tt>
+</td>
+<td class="topAlign"><tt>0x00000080</tt></td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTreeWidgetItemIterator.DropEnabled</tt>
+</td>
+<td class="topAlign"><tt>0x00000100</tt></td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTreeWidgetItemIterator.DropDisabled</tt>
+</td>
+<td class="topAlign"><tt>0x00000200</tt></td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTreeWidgetItemIterator.HasChildren</tt>
+</td>
+<td class="topAlign"><tt>0x00000400</tt></td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTreeWidgetItemIterator.NoChildren</tt>
+</td>
+<td class="topAlign"><tt>0x00000800</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTreeWidgetItemIterator.Checked</tt></td>
+<td class="topAlign"><tt>0x00001000</tt></td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTreeWidgetItemIterator.NotChecked</tt>
+</td>
+<td class="topAlign"><tt>0x00002000</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTreeWidgetItemIterator.Enabled</tt></td>
+<td class="topAlign"><tt>0x00004000</tt></td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTreeWidgetItemIterator.Disabled</tt>
+</td>
+<td class="topAlign"><tt>0x00008000</tt></td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTreeWidgetItemIterator.Editable</tt>
+</td>
+<td class="topAlign"><tt>0x00010000</tt></td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTreeWidgetItemIterator.NotEditable</tt>
+</td>
+<td class="topAlign"><tt>0x00020000</tt></td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTreeWidgetItemIterator.UserFlag</tt>
+</td>
+<td class="topAlign"><tt>0x01000000</tt></td>
+</tr>
+</table>
+<p>该IteratorFlags类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cIteratorFlag\u003e 。它存储IteratorFlag值的或组合。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QTreeWidgetItemIterator"></a>QTreeWidgetItemIterator.__init__ (<i>self</i>, <a href="qtreewidgetitemiterator.html" tppabs="http://pyqt4doc.appspot.com/qtreewidgetitemiterator.html">QTreeWidgetItemIterator</a> <i>it</i>)</h3>
+<p>构造一个迭代器相同<a href="qtreewidget.html" tppabs="http://pyqt4doc.appspot.com/qtreewidget.html">QTreeWidget</a>如<i>it</i>。当前迭代项设置为点上的当前项目<i>it</i>。</p>
+
+
+<h3 class="fn">
+<a name="QTreeWidgetItemIterator-2"></a>QTreeWidgetItemIterator.__init__ (<i>self</i>, <a href="qtreewidget.html" tppabs="http://pyqt4doc.appspot.com/qtreewidget.html">QTreeWidget</a> <i>widget</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtreewidgetitemiterator-iteratorflags.html">IteratorFlags</a> <i>flags</i> = QTreeWidgetItemIterator.All)</h3>
+<p>构造一个迭代器对给定的<i>widget</i>使用指定的<i>flags</i>以确定哪些迭代过程中发现的项目。迭代器被设置为指向包含在插件的第一个顶级项目，或下一个匹配的项目，如果在最上层的项目不匹配的标志。</p>
+<p><b>See also</b> <a href="qtreewidgetitemiterator.html#IteratorFlag-enum" tppabs="http://pyqt4doc.appspot.com/qtreewidgetitemiterator.html#IteratorFlag-enum">QTreeWidgetItemIterator.IteratorFlag</a>。</p>
+
+
+<h3 class="fn">
+<a name="QTreeWidgetItemIterator-3"></a>QTreeWidgetItemIterator.__init__ (<i>self</i>, <a href="qtreewidgetitem.html" tppabs="http://pyqt4doc.appspot.com/qtreewidgetitem.html">QTreeWidgetItem</a> <i>item</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtreewidgetitemiterator-iteratorflags.html">IteratorFlags</a> <i>flags</i> = QTreeWidgetItemIterator.All)</h3>
+<p>构造一个迭代器对给定的<i>item</i>使用指定的<i>flags</i>以确定哪些迭代过程中发现的项目。迭代器被设置为指向<i>item</i>，或下一个匹配的项目，如果<i>item</i>不匹配的标志。</p>
+<p><b>See also</b> <a href="qtreewidgetitemiterator.html#IteratorFlag-enum" tppabs="http://pyqt4doc.appspot.com/qtreewidgetitemiterator.html#IteratorFlag-enum">QTreeWidgetItemIterator.IteratorFlag</a>。</p>
+
+
+<h3 class="fn">
+<a name="value"></a><a href="qtreewidgetitem.html" tppabs="http://pyqt4doc.appspot.com/qtreewidgetitem.html">QTreeWidgetItem</a> QTreeWidgetItemIterator.value (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="__iadd__"></a><a href="qtreewidgetitemiterator.html" tppabs="http://pyqt4doc.appspot.com/qtreewidgetitemiterator.html">QTreeWidgetItemIterator</a> QTreeWidgetItemIterator.__iadd__ (<i>self</i>, int <i>n</i>)</h3>
+<h3 class="fn">
+<a name="__isub__"></a><a href="qtreewidgetitemiterator.html" tppabs="http://pyqt4doc.appspot.com/qtreewidgetitemiterator.html">QTreeWidgetItemIterator</a> QTreeWidgetItemIterator.__isub__ (<i>self</i>, int <i>n</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

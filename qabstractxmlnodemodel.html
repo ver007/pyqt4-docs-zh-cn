@@ -1,0 +1,375 @@
+﻿<html>
+<head>
+<title>QAbstractXmlNodeModel Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QAbstractXmlNodeModel Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtxmlpatterns.html">QtXmlPatterns</a> module]</sup></sup>
+</h1>
+<p>该QAbstractXmlNodeModel类是模拟非XML数据看起来像XML作为一个抽象基类<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>。<a href="#details">More...</a></p>
+
+<p>通过继承<a href="qsimplexmlnodemodel.html" tppabs="http://pyqt4doc.appspot.com/qsimplexmlnodemodel.html">QSimpleXmlNodeModel</a>。</p>
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qabstractxmlnodemodel.html#SimpleAxis-enum" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#SimpleAxis-enum">SimpleAxis</a></b> { Parent, FirstChild, PreviousSibling, NextSibling }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractxmlnodemodel.html#QAbstractXmlNodeModel" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#QAbstractXmlNodeModel">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QXmlNodeModelIndex <b><a href="qabstractxmlnodemodel.html#attributes" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#attributes">attributes</a></b> (<i>self</i>, QXmlNodeModelIndex <i>element</i>)</li>
+<li>
+<div class="fn"></div>QUrl <b><a href="qabstractxmlnodemodel.html#baseUri" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#baseUri">baseUri</a></b> (<i>self</i>, QXmlNodeModelIndex <i>ni</i>)</li>
+<li>
+<div class="fn"></div>QXmlNodeModelIndex.DocumentOrder <b><a href="qabstractxmlnodemodel.html#compareOrder" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#compareOrder">compareOrder</a></b> (<i>self</i>, QXmlNodeModelIndex <i>ni1</i>, QXmlNodeModelIndex <i>ni2</i>)</li>
+<li>
+<div class="fn"></div>QXmlNodeModelIndex <b><a href="qabstractxmlnodemodel.html#createIndex" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#createIndex">createIndex</a></b> (<i>self</i>, int <i>data</i>)</li>
+<li>
+<div class="fn"></div>QXmlNodeModelIndex <b><a href="qabstractxmlnodemodel.html#createIndex-2" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#createIndex-2">createIndex</a></b> (<i>self</i>, int <i>data</i>, int <i>additionalData</i>)</li>
+<li>
+<div class="fn"></div>QXmlNodeModelIndex <b><a href="qabstractxmlnodemodel.html#createIndex-3" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#createIndex-3">createIndex</a></b> (<i>self</i>, object <i>pointer</i>, int <i>additionalData</i> = 0)</li>
+<li>
+<div class="fn"></div>QUrl <b><a href="qabstractxmlnodemodel.html#documentUri" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#documentUri">documentUri</a></b> (<i>self</i>, QXmlNodeModelIndex <i>ni</i>)</li>
+<li>
+<div class="fn"></div>QXmlNodeModelIndex <b><a href="qabstractxmlnodemodel.html#elementById" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#elementById">elementById</a></b> (<i>self</i>, QXmlName <i>NCName</i>)</li>
+<li>
+<div class="fn"></div>QXmlNodeModelIndex.NodeKind <b><a href="qabstractxmlnodemodel.html#kind" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#kind">kind</a></b> (<i>self</i>, QXmlNodeModelIndex <i>ni</i>)</li>
+<li>
+<div class="fn"></div>QXmlName <b><a href="qabstractxmlnodemodel.html#name" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#name">name</a></b> (<i>self</i>, QXmlNodeModelIndex <i>ni</i>)</li>
+<li>
+<div class="fn"></div>list-of-QXmlName <b><a href="qabstractxmlnodemodel.html#namespaceBindings" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#namespaceBindings">namespaceBindings</a></b> (<i>self</i>, QXmlNodeModelIndex <i>n</i>)</li>
+<li>
+<div class="fn"></div>QXmlNodeModelIndex <b><a href="qabstractxmlnodemodel.html#nextFromSimpleAxis" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#nextFromSimpleAxis">nextFromSimpleAxis</a></b> (<i>self</i>, SimpleAxis <i>axis</i>, QXmlNodeModelIndex <i>origin</i>)</li>
+<li>
+<div class="fn"></div>list-of-QXmlNodeModelIndex <b><a href="qabstractxmlnodemodel.html#nodesByIdref" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#nodesByIdref">nodesByIdref</a></b> (<i>self</i>, QXmlName <i>NCName</i>)</li>
+<li>
+<div class="fn"></div>QXmlNodeModelIndex <b><a href="qabstractxmlnodemodel.html#root" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#root">root</a></b> (<i>self</i>, QXmlNodeModelIndex <i>n</i>)</li>
+<li>
+<div class="fn"></div>QSourceLocation <b><a href="qabstractxmlnodemodel.html#sourceLocation" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#sourceLocation">sourceLocation</a></b> (<i>self</i>, QXmlNodeModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qabstractxmlnodemodel.html#stringValue" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#stringValue">stringValue</a></b> (<i>self</i>, QXmlNodeModelIndex <i>n</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qabstractxmlnodemodel.html#typedValue" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#typedValue">typedValue</a></b> (<i>self</i>, QXmlNodeModelIndex <i>n</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QAbstractXmlNodeModel类是模拟非XML数据看起来像XML作为一个抽象基类<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>。</p>
+<p>该QAbstractXmlNodeModel指定一个节点模型必须实现该节点模型的接口可以访问用于处理查询引擎<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>查询。一个节点的模型数据表示为可查询，就好像数据是XML的结构。</p>
+<p>通过QAbstractXmlNodeModel的子类表示的节点模型是指由被访问<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtxmlpatterns.html">QtXmlPatterns</a>查询引擎。如果API似乎有点怪在一些地方，这是因为成员函数是由查询引擎称为它的评估<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>。它们并不意味着被编程使用。</p>
+<a id="usage" name="usage"></a>
+<h3>Usage</h3>
+<p>QAbstractXmlNodeModel桥樑要查询的非XML数据的任意的结构和良好定义的由理解的XML数据的结构之间的间隙<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>。</p>
+<p>想想看，读取文件中的化学中的应用<tt>chemistryData</tt>，其中包含代表分子和原子组成的化学结构非XML数据。该应用程序将查询该化学数据与<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>它从文件中读取<tt>queryFile</tt>。我们写QAbstractXmlNodeModel的自定义子类（<tt>ChemistryNodeModel</tt>）读取<tt>chemistryData</tt>并建立一个数据结构，也许是由我们自己的类的对象<tt>molecule</tt>和<tt>atom</tt>。显然，这种数据结构是不是XML。我们的自定义子类就知道如何遍历这个非XML结构，并通过展示它的<a href="http://www.w3.org/TR/xpath-datamodel/">XPath Data Model
+interface</a>。</p>
+<pre class="cpp">
+ <span class="type"><a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a></span> queryFile(argv<span class="operator">[</span><span class="number">1</span><span class="operator">]</span>);
+ <span class="type"><a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a></span> chemistryData(argv<span class="operator">[</span><span class="number">2</span><span class="operator">]</span>);
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> moleculeName <span class="operator">=</span> argv<span class="operator">[</span><span class="number">3</span><span class="operator">]</span>;
+
+ <span class="type"><a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a></span> query;
+ query<span class="operator">.</span>setQuery(<span class="operator">&amp;</span>queryFile<span class="operator">,</span> <span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span><span class="operator">.</span>fromLocalFile(queryFile<span class="operator">.</span>fileName()));
+
+ ChemistryNodeModel myNodeModel(query<span class="operator">.</span>namePool()<span class="operator">,</span> chemistryData);
+ <span class="type"><a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a></span> startNode <span class="operator">=</span> myNodeModel<span class="operator">.</span>nodeFor(moleculeName);
+ query<span class="operator">.</span>bindVariable(<span class="string">"queryRoot"</span><span class="operator">,</span> startNode);
+
+ <span class="type"><a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a></span> out;
+ out<span class="operator">.</span>open(stdout<span class="operator">,</span> <span class="type"><a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a></span><span class="operator">.</span>WriteOnly);
+
+ <span class="type"><a href="qxmlserializer.html" tppabs="http://pyqt4doc.appspot.com/qxmlserializer.html">QXmlSerializer</a></span> serializer(query<span class="operator">,</span> <span class="operator">&amp;</span>out);
+ query<span class="operator">.</span>evaluateTo(<span class="operator">&amp;</span>serializer);
+</pre>
+<p>应用程序首先创建的实例<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>并呼吁<a href="qxmlquery.html#setQuery" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setQuery">setQuery()</a> to read <tt>queryFile</tt>含<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>我们要运行。然后，它创建了我们自定义的节点模型类的实例，<tt>ChemistryNodeModel</tt>，这是QAbstractXmlNodeModel的子类。它的构造函数被调用，<a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">name pool</a>从我们获得的<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>以及与<tt>chemistryFile</tt>含分子和原子的待查询的结构。该<a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">name pool</a>是必需的，因为我们的自定义节点模型具有成员函数<a href="qabstractxmlnodemodel.html#name" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#name">name()</a>，它返回<a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">name</a>的模型中的任何节点。该<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">query</a>和自定义节点模型必须使用相同的名称池构造这些<a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">names</a>。该构造函数将改为<tt>chemistryFile</tt>并建立自定义节点模型结构。</p>
+<p>连接<tt>query</tt>到自定义节点模型，我们必须绑定在查询中使用到模型中的一个节点的变量名。该变量可以被用来在查询中作为起始节点。首先，将<a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">index</a>为所需的起始节点被检索到通过调用<a href="qabstractxmlnodemodel.html#createIndex" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#createIndex">QAbstractXmlNodeModel.createIndex</a>（ ） 。然后索引绑定到变量名，在此情况下<tt>queryRoot</tt>，通过将名字和索引<a href="qxmlquery.html#bindVariable" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#bindVariable">QXmlQuery.bindVariable</a>（ ） 。然后，查询可以使用一个变量引用<tt>$queryRoot</tt>指起始节点。需要注意的是，如果<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">query</a>使用多个变量引用，调用<a href="qxmlquery.html#bindVariable" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#bindVariable">QXmlQuery.bindVariable</a>（ ）需要在每个不同的变量名称绑定到模型中的一个节点。</p>
+<p>当应用程序调用的一个查询被执行<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>评价职能。该应用程序使用QXmlQuery.evaluateTo （<a href="qabstractxmlreceiver.html" tppabs="http://pyqt4doc.appspot.com/qabstractxmlreceiver.html">QAbstractXmlReceiver</a>* ） ，因为它然后使用<a href="qxmlserializer.html" tppabs="http://pyqt4doc.appspot.com/qxmlserializer.html">serializer</a>到了查询结果作为XML来<tt>stdout</tt>。我们也可以使用QXmlQuery.evaluateTo （<a href="qxmlresultitems.html" tppabs="http://pyqt4doc.appspot.com/qxmlresultitems.html">QXmlResultItems</a>* ）来获取结果的项目，或QXmlQuery.evaluateTo列表（<a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a>* ）如果查询评估，以一序列<tt>xs:string</tt>值。</p>
+<p>在查询执行时，引擎遍历节点模型使用<a href="qabstractxmlnodemodel.html#nextFromSimpleAxis" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#nextFromSimpleAxis">nextFromSimpleAxis</a>（ ）来获得<a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">index</a>的下一个节点进行访问。该发动机可以通过调用得到一个节点的名称<a href="qabstractxmlnodemodel.html#name" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#name">name</a>（ ）与该节点的<a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">index</a>。<a href="qabstractxmlnodemodel.html#stringValue" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#stringValue">stringValue</a>（ ）<a href="qabstractxmlnodemodel.html#baseUri" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#baseUri">baseUri</a>（ ）<a href="qabstractxmlnodemodel.html#documentUri" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#documentUri">documentUri</a>（）和<a href="qabstractxmlnodemodel.html#kind" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#kind">kind</a>（）根据需要与节点也被称为<a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">index</a>。</p>
+<p>该示例演示了标准模式使用QAbstractXmlNodeModel的一个子类与组合<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>要执行的<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>。</p>
+<ol class="1">
+<li>实例<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>并给它<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>要运行;</li>
+<li>实例QAbstractXmlNodeModel的子类或<a href="qsimplexmlnodemodel.html" tppabs="http://pyqt4doc.appspot.com/qsimplexmlnodemodel.html">QSimpleXmlNodeModel</a>;</li>
+<li>检索<a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a>对于模型中的节点，其中<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>应开始查询;</li>
+<li>使用<a href="qxmlquery.html#bindVariable" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#bindVariable">QXmlQuery.bindVariable</a>（）来绑定<a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a>至<tt>$variable name</tt>;</li>
+<li>呼叫之一<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>评价函数来执行查询。</li>
+</ol>
+<a id="subclassing" name="subclassing"></a>
+<h3>Subclassing</h3>
+<p>因为<a href="http://www.w3.org/TR/xpath-datamodel/">XPath Data Model
+interface</a>通过QAbstractXmlNodeModel允许提出<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>对非XML数据进行操作，就好像它是XML ，实施QAbstractXmlNodeModel的子类可以涉及一个显着的工作量。该<a href="qsimplexmlnodemodel.html" tppabs="http://pyqt4doc.appspot.com/qsimplexmlnodemodel.html">QSimpleXmlNodeModel</a>类提供简化的实施对于许多常见的用例。</p>
+<a id="thread-safety" name="thread-safety"></a>
+<h3>Thread Safety</h3>
+<p>因为节点模型可以同时通过线程的访问<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtxmlpatterns.html">QtXmlPatterns</a>模块， QAbstractXmlNodeModel的子类必须被编写成<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/threads-reentrancy.html">thread-safe</a>。能够简化执行的线程安全类包括<a href="qreadlocker.html" tppabs="http://pyqt4doc.appspot.com/qreadlocker.html">QReadLocker</a>和<a href="qwritelocker.html" tppabs="http://pyqt4doc.appspot.com/qwritelocker.html">QWriteLocker</a>。</p>
+<p>请参阅示例<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlpatterns-filetree.html">File System
+Example</a>演示。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="SimpleAxis-enum"></a>QAbstractXmlNodeModel.SimpleAxis</h3>
+<p>四个轴，每个包含一个节点而已。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractXmlNodeModel.Parent</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">上下文节点的父</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractXmlNodeModel.FirstChild</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">上下文节点的第一个孩子</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractXmlNodeModel.PreviousSibling</tt>
+</td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">上下文节点的上一个孩子</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractXmlNodeModel.NextSibling</tt>
+</td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">上下文节点的下一个子</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QAbstractXmlNodeModel"></a>QAbstractXmlNodeModel.__init__ (<i>self</i>)</h3>
+<p>默认构造函数。</p>
+
+
+<h3 class="fn">
+<a name="attributes"></a>list-of-QXmlNodeModelIndex QAbstractXmlNodeModel.attributes (<i>self</i>, <a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a> <i>element</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回的属性<i>element</i>。调用者保证<i>element</i>是在该节点模型的元素。</p>
+
+
+<h3 class="fn">
+<a name="baseUri"></a><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> QAbstractXmlNodeModel.baseUri (<i>self</i>, <a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a> <i>ni</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回其索引节点的基URI<i>n</i>。调用者保证<i>n</i>不<tt>null</tt>并且，它属于在该节点模型的一个节点。</p>
+<p>一个节点的基URI可使用提取出的<tt>fn:base-uri()</tt>功能。基URI通常用于解决出现在节点或它的孩子相对URI 。这是符合标准的，只是返回文档的URI ，尽管这可能无法正确反映基础数据。</p>
+<p>这个函数映射到<tt>dm:base-uri</tt>访问器，根据下面的返回一个基URI ：</p>
+<ul>
+<li>For document nodes, the base URI and the document URI are the
+same.</li>
+<li>For elements, the base URI is the URI appearing in the
+element's <tt>xml:base</tt> attribute, if present, or it is
+resolved to the parent element's base URI.</li>
+<li>Namespace nodes have no base URI.</li>
+<li>The base URI for a processing instruction, comment, attribute,
+or text node is the base URI of the node's parent element.</li>
+</ul>
+<p>实施保证返回一个有效的<a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>或默认构造<a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>。如果一个节点没有基URI ，如在注释没有家长的情况下，默认的构造<a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>返回。</p>
+<p><b>See also</b> <a href="http://www.w3.org/TR/xpath-datamodel/#dm-base-uri">XQuery 1.0 and
+XPath 2.0 Data Model (XDM), 5.2 base-uri Accessor</a>。</p>
+
+
+<h3 class="fn">
+<a name="compareOrder"></a><a href="qxmlnodemodelindex.html#DocumentOrder-enum" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html#DocumentOrder-enum">QXmlNodeModelIndex.DocumentOrder</a> QAbstractXmlNodeModel.compareOrder (<i>self</i>, <a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a> <i>ni1</i>, <a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a> <i>ni2</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>该函数返回由索引节点的相对顺序文件<i>ni1</i>和<i>ni2</i>。它被用于<tt>Is</tt>运营商和文档顺序排序节点。</p>
+<p>调用者保证<i>ni1</i>和<i>ni2</i>不<tt>null</tt>并且这两个标识在这个节点模型节点。</p>
+<p>If <i>ni1</i>是相同的<i>ni2</i>，<a href="qxmlnodemodelindex.html#DocumentOrder-enum" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html#DocumentOrder-enum">QXmlNodeModelIndex.Is</a>返回。如果<i>ni1</i>先于<i>ni2</i>按文档顺序，<a href="qxmlnodemodelindex.html#DocumentOrder-enum" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html#DocumentOrder-enum">QXmlNodeModelIndex.Precedes</a>返回。如果<i>ni1</i> follows <i>ni2</i>按文档顺序，<a href="qxmlnodemodelindex.html#DocumentOrder-enum" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html#DocumentOrder-enum">QXmlNodeModelIndex.Follows</a>返回。</p>
+<p><b>See also</b> <a href="http://www.w3.org/TR/xpath-datamodel/#document-order">XQuery 1.0
+and XPath 2.0 Data Model (XDM), 2.4 Document Order</a>。</p>
+
+
+<h3 class="fn">
+<a name="createIndex"></a><a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a> QAbstractXmlNodeModel.createIndex (<i>self</i>, int <i>data</i>)</h3>
+<p>创建一个具有节点索引<i>data</i>作为它的内部数据。<i>data</i>没有限制。</p>
+
+
+<h3 class="fn">
+<a name="createIndex-2"></a><a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a> QAbstractXmlNodeModel.createIndex (<i>self</i>, int <i>data</i>, int <i>additionalData</i>)</h3>
+<p>创建一个具有节点索引<i>pointer</i>和<i>additionalData</i>作为它的内部数据。</p>
+<p>什么<i>pointer</i>和<i>additionalData</i>是，不是限制。</p>
+
+
+<h3 class="fn">
+<a name="createIndex-3"></a><a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a> QAbstractXmlNodeModel.createIndex (<i>self</i>, object <i>pointer</i>, int <i>additionalData</i> = 0)</h3>
+<p>这是一个重载函数。</p>
+<p>创建<a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a> containing
+<i>data</i>和<i>additionalData</i>。</p>
+
+
+<h3 class="fn">
+<a name="documentUri"></a><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> QAbstractXmlNodeModel.documentUri (<i>self</i>, <a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a> <i>ni</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回的文档URI<i>n</i>。该文件的URI标识的是该文件的资源。例如，该文件可能是一个普通文件，例如：<tt>file:/</tt>或者它可以是<tt>http://</tt>一个文件的位置的URL。该文件的URI用于解析URI和简单地知道该文件是。</p>
+<p>如果节点模型映射到URI以自然的方式，返回的URI 。否则，返回公司或产品的URI 。文档的URI可以是任意的URI ，只要其有效和绝对的。</p>
+<p>调用者保证<i>n</i>不<tt>null</tt>并且，它属于本<a href="qabstractxmlnodemodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html">QAbstractXmlNodeModel</a>。</p>
+<p>这个函数映射到<tt>dm:document-uri</tt>访问器，根据下面的返回一个文件的URI ：</p>
+<ul>
+<li>If <i>n</i> is a document node, return an absolute <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> containing the document URI, or a default
+constructed <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>. The latter signals that
+no document URI is available for the document node.</li>
+<li>For all other nodes, return a default constructed <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>.</li>
+</ul>
+<p><b>See also</b> <a href="http://www.w3.org/TR/xpath-datamodel/#dm-document-uri">XQuery 1.0
+and XPath 2.0 Data Model (XDM), 5.4 document-uri Accessor</a>，<a href="qurl.html#isValid" tppabs="http://pyqt4doc.appspot.com/qurl.html#isValid">QUrl.isValid</a>（）和<a href="qurl.html#isRelative" tppabs="http://pyqt4doc.appspot.com/qurl.html#isRelative">QUrl.isRelative</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="elementById"></a><a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a> QAbstractXmlNodeModel.elementById (<i>self</i>, <a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a> <i>NCName</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回标识为元素的索引<i>id</i>。<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>的<tt>id()</tt>函数调用这个函数。</p>
+<p>返回的节点的索引将其值类型的元素节点<tt>ID</tt>和equals<i>id</i>，或者这将是一个具有属性，其类型化值的类型的元素节点<tt>ID</tt>和equals<i>id</i>。如果不存在这样的元素，一个默认的构造<a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a>实例返回。实现者保证，如果返回的节点的索引不为空，它标识元素。</p>
+<p>它是不足够的，以只被称为属性或元素<tt>id</tt>。它的值类型也必须是<tt>ID</tt>。然而，保留的名称<tt>xml:id</tt>就足够了。</p>
+<p>In <i>id</i>时，<tt>namespace URI</tt>和<tt>prefix</tt>是不确定的，并且<tt>local name</tt>是应该抬头的ID。</p>
+<p><b>See also</b> <a href="http://www.w3.org/TR/xpath-functions/#func-id">XQuery 1.0 and
+XPath 2.0 Functions and Operators, 15.5.2 fn:id</a>。</p>
+
+
+<h3 class="fn">
+<a name="kind"></a><a href="qxmlnodemodelindex.html#NodeKind-enum" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html#NodeKind-enum">QXmlNodeModelIndex.NodeKind</a> QAbstractXmlNodeModel.kind (<i>self</i>, <a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a> <i>ni</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回一个值，指示确定了节点的类型<i>ni</i>。调用者保证<i>ni</i>不为null ，并且它标识了此节点模型的节点。这个函数映射到<tt>dm:node-kind()</tt>访问。</p>
+<p><b>See also</b> <a href="http://www.w3.org/TR/xpath-datamodel/#dm-node-kind">XQuery 1.0 and
+XPath 2.0 Data Model (XDM), 5.10 node-kind Accessor</a>。</p>
+
+
+<h3 class="fn">
+<a name="name"></a><a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a> QAbstractXmlNodeModel.name (<i>self</i>, <a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a> <i>ni</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回的名称<i>ni</i>。调用者保证<i>ni</i>不<tt>null</tt>并且，它属于本<a href="qabstractxmlnodemodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html">QAbstractXmlNodeModel</a>。</p>
+<p>如果一个节点没有一个名称，例如，注释节点，空<a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a>返回。 QXmlNames必须的实例被创建<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>正被用于使用这个评估查询<a href="qabstractxmlnodemodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html">QAbstractXmlNodeModel</a>。</p>
+<p>这个函数映射到<tt>dm:node-name()</tt>访问。</p>
+<p>If <i>ni</i>是一个处理指令，一个<a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a>返回的本地名称作为目标名称和命名空间URI和前缀都为空。</p>
+<p><b>See also</b> <a href="http://www.w3.org/TR/xpath-datamodel/#dm-node-name">XQuery 1.0 and
+XPath 2.0 Data Model (XDM), 5.11 node-name Accessor</a>和<a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a>。</p>
+
+
+<h3 class="fn">
+<a name="namespaceBindings"></a>list-of-QXmlName QAbstractXmlNodeModel.namespaceBindings (<i>self</i>, <a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a> <i>n</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回在范围的命名空间<i>n</i>。调用者保证<i>n</i>不<tt>null</tt>并且，它属于本<a href="qabstractxmlnodemodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html">QAbstractXmlNodeModel</a>。</p>
+<p>此功能对应的<tt>dm:namespace-nodes</tt>访问。</p>
+<p>命名空间声明的返回向量包括的祖先命名空间<i>n</i>。</p>
+<p>调用者保证<i>n</i>是属于这样的一个元素<a href="qabstractxmlnodemodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html">QAbstractXmlNodeModel</a>。</p>
+
+
+<h3 class="fn">
+<a name="nextFromSimpleAxis"></a><a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a> QAbstractXmlNodeModel.nextFromSimpleAxis (<i>self</i>, <a href="qabstractxmlnodemodel.html#SimpleAxis-enum" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#SimpleAxis-enum">SimpleAxis</a> <i>axis</i>, <a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a> <i>origin</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>When <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtxmlpatterns.html">QtXmlPatterns</a>计算路径表达式，它效仿他们通过电话的结合<a href="qabstractxmlnodemodel.html#SimpleAxis-enum" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#SimpleAxis-enum">QSimpleXmlNodeModel.SimpleAxis</a>值。因此，该功能的实现必须返回该节点，如果有的话，就出现<i>axis</i>从发出<i>origin</i>。</p>
+<p>如果没有这样的节点可用，默认的构造<a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a>返回。</p>
+<p><a href="qsimplexmlnodemodel.html" tppabs="http://pyqt4doc.appspot.com/qsimplexmlnodemodel.html">QSimpleXmlNodeModel</a>无需通过保证它永远不会要求来处理多馀的边角情况：</p>
+<ul>
+<li>Children or siblings for attributes.</li>
+<li>Children for comments, processing instructions, and text
+nodes.</li>
+<li>Siblings or parents for document nodes.</li>
+</ul>
+<p>一个典型的实现执行<tt>switch</tt>上的值<i>axis</i>：</p>
+<pre class="cpp">
+ <span class="type"><a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a></span> MyTreeModel<span class="operator">.</span>nextFromSimpleAxis(SimpleAxis axis<span class="operator">,</span> <span class="keyword">const</span> <span class="type"><a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a></span> <span class="operator">&amp;</span>origin) <span class="keyword">const</span>
+ {
+   <span class="comment">// Convert the QXmlNodeModelIndex to a value that is specific to what we represent.</span>
+   <span class="keyword">const</span> MyValue value <span class="operator">=</span> toMyValue(ni);
+
+   <span class="keyword">switch</span>(axis)
+   {
+       <span class="keyword">case</span> Parent:
+           <span class="keyword">return</span> toNodeIndex(value<span class="operator">.</span>parent());
+       <span class="keyword">case</span> FirstChild:
+       <span class="keyword">case</span> PreviousSibling:
+       <span class="keyword">case</span> NextSibling:
+           <span class="comment">// and so on</span>
+   }
+ }
+</pre>
+
+
+<h3 class="fn">
+<a name="nodesByIdref"></a>list-of-QXmlNodeModelIndex QAbstractXmlNodeModel.nodesByIdref (<i>self</i>, <a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a> <i>NCName</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回具有一个元素和/或属性<tt>IDREF</tt>值等于<i>idref</i>。<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>的<tt>idref()</tt>函数调用这个函数。</p>
+<p>实现者保证所确定的返回索引节点是元素或属性。</p>
+<p>它是不足够的，以只被称为属性或元素<tt>idref</tt>。它也必须是类型<tt>IDREF</tt>。元素必须键入为<tt>xs:IDREF</tt> or <tt>xs:IDREFS</tt>或者，在属性的情况下，如<tt>IDREF</tt> or <tt>IDREFS</tt>在架构中。</p>
+<p>In <i>idref</i>时，<tt>namespace URI</tt>和<tt>prefix</tt>是不确定的，并且<tt>local name</tt>是应该抬头的ID。</p>
+<p><b>See also</b> <a href="http://www.w3.org/TR/xpath-functions/#func-idref">XQuery 1.0 and
+XPath 2.0 Functions and Operators, 15.5.3 fn:idref</a>。</p>
+
+
+<h3 class="fn">
+<a name="root"></a><a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a> QAbstractXmlNodeModel.root (<i>self</i>, <a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a> <i>n</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回该树包含其索引是该节点的根节点<i>n</i>。调用者保证<i>n</i>不<tt>null</tt>而且它标识了此节点模型的节点。</p>
+<p>If <i>n</i>标识一个节点是根，父母的直接子（ ）将返回相同的<a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a>这个函数返回。</p>
+
+
+<h3 class="fn">
+<a name="sourceLocation"></a><a href="qsourcelocation.html" tppabs="http://pyqt4doc.appspot.com/qsourcelocation.html">QSourceLocation</a> QAbstractXmlNodeModel.sourceLocation (<i>self</i>, <a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a> <i>index</i>)</h3>
+<p>与给定返回该对象的源位置<i>index</i>或默认构造<a href="qsourcelocation.html" tppabs="http://pyqt4doc.appspot.com/qsourcelocation.html">QSourceLocation</a>在任何情况下，位置信息是可用的。</p>
+<p>此功能被引入Qt的4.6 。</p>
+
+
+<h3 class="fn">
+<a name="stringValue"></a>QString QAbstractXmlNodeModel.stringValue (<i>self</i>, <a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a> <i>n</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回节点的字符串值<i>n</i>。</p>
+<p>调用者保证<i>n</i>不<tt>null</tt>而且它属于此<a href="qabstractxmlnodemodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html">QAbstractXmlNodeModel</a>实例。</p>
+<p>这个函数映射到<tt>dm:string-value()</tt>访问器，其规格完全指定。这里有一个总结：</p>
+<ul>
+<li>For processing instructions, the string value is the data
+section(excluding any whitespace appearing between the name and the
+data).</li>
+<li>For text nodes, the string value equals the text node.</li>
+<li>For comments, the content of the comment</li>
+<li>For elements, the concatenation of all text nodes that are
+descendants. Note, this is not only the children, but the
+childrens' childrens' text nodes, and so forth.</li>
+<li>For document nodes, the concatenation of all text nodes in the
+document.</li>
+</ul>
+<p><b>See also</b> <a href="http://www.w3.org/TR/xpath-datamodel/#dm-string-value">XQuery 1.0
+and XPath 2.0 Data Model (XDM), 5.13 string-value Accessor</a>。</p>
+
+
+<h3 class="fn">
+<a name="typedValue"></a>QVariant QAbstractXmlNodeModel.typedValue (<i>self</i>, <a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a> <i>n</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回节点的类型值<i>node</i>。</p>
+<p>类型化值是原子值，该元素或属性包含。</p>
+<p>调用者保证<i>node</i>或者是一个元素或属性。返回的实施者担保<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>有被支撑在一个值<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>。它不能是任意的<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>值。实现者也保证<a href="qabstractxmlnodemodel.html#stringValue" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html#stringValue">stringValue</a>（）返回的TypedValue的词汇表示（ ） （这是由担保<a href="qsimplexmlnodemodel.html#stringValue" tppabs="http://pyqt4doc.appspot.com/qsimplexmlnodemodel.html#stringValue">QSimpleXmlNodeModel.stringValue</a>（））。</p>
+<p>如果返回的<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>是一个默认的构造变形，它预示着，<i>node</i>没有类型化值。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

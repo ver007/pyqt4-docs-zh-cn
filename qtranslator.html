@@ -1,0 +1,180 @@
+﻿<html>
+<head>
+<title>QTranslator Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QTranslator Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QTranslator这样类提供了文本输出的国际化支持。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qtranslator.html#QTranslator" tppabs="http://pyqt4doc.appspot.com/qtranslator.html#QTranslator">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtranslator.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qtranslator.html#isEmpty">isEmpty</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtranslator.html#load" tppabs="http://pyqt4doc.appspot.com/qtranslator.html#load">load</a></b> (<i>self</i>, QString <i>fileName</i>, QString <i>directory</i> = QString(), QString <i>searchDelimiters</i> = QString(), QString <i>suffix</i> = QString())</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtranslator.html#load-2" tppabs="http://pyqt4doc.appspot.com/qtranslator.html#load-2">load</a></b> (<i>self</i>, QLocale <i>locale</i>, QString <i>fileName</i>, QString <i>prefix</i> = QString(), QString <i>directory</i> = QString(), QString <i>suffix</i> = QString())</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtranslator.html#loadFromData" tppabs="http://pyqt4doc.appspot.com/qtranslator.html#loadFromData">loadFromData</a></b> (<i>self</i>, str <i>data</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qtranslator.html#translate" tppabs="http://pyqt4doc.appspot.com/qtranslator.html#translate">translate</a></b> (<i>self</i>, str <i>context</i>, str <i>sourceText</i>, str <i>disambiguation</i> = None)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qtranslator.html#translate-2" tppabs="http://pyqt4doc.appspot.com/qtranslator.html#translate-2">translate</a></b> (<i>self</i>, str <i>context</i>, str <i>sourceText</i>, str <i>comment</i>, int <i>n</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QTranslator这样类提供了文本输出的国际化支持。</p>
+<p>这个类的一个对象包含了一组从源语言翻译成目标语言的。 QTranslator这样提供的功能来查找在翻译文件翻译。使用创建翻译文件<a href="index.htm#qt-linguist" tppabs="http://pyqt4doc.appspot.com/linguist-manual.html#qt-linguist">Qt Linguist</a>。</p>
+<p>最常见的用途QTranslator这样的是：它使用加载翻译文件，安装<a href="qcoreapplication.html#installTranslator" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#installTranslator">QApplication.installTranslator</a>（） ，并通过用它<a href="qobject.html#tr" tppabs="http://pyqt4doc.appspot.com/qobject.html#tr">QObject.tr</a>（ ） 。这里的<tt>main()</tt>从功能上<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/linguist-hellotr.html">Hello tr()</a>例如：</p>
+<pre class="cpp">
+ <span class="type">int</span> main(<span class="type">int</span> argc<span class="operator">,</span> <span class="type">char</span> <span class="operator">*</span>argv<span class="operator">[</span><span class="operator">]</span>)
+ {
+     <span class="type"><a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a></span> app(argc<span class="operator">,</span> argv);
+
+     <span class="type">QTranslator</span> translator;
+     translator<span class="operator">.</span>load(<span class="string">"hellotr_la"</span>);
+     app<span class="operator">.</span>installTranslator(<span class="operator">&amp;</span>translator);
+
+     <span class="type"><a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a></span> hello(<span class="type"><a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a></span><span class="operator">.</span>tr(<span class="string">"Hello world!"</span>));
+     hello<span class="operator">.</span>resize(<span class="number">100</span><span class="operator">,</span> <span class="number">30</span>);
+
+     hello<span class="operator">.</span>show();
+     <span class="keyword">return</span> app<span class="operator">.</span>exec();
+ }
+</pre>
+<p>需要注意的是，译者必须创建<i>before</i>应用程序的窗口小部件。</p>
+<p>大多数应用程序都不需要做任何事情都要有这个类。这个类提供的其他功能是对翻译文件的工作应用中非常有用。</p>
+<a id="looking-up-translations" name="looking-up-translations"></a>
+<h3>Looking up Translations</h3>
+<p>它可以利用查找翻译<a href="qtranslator.html#translate" tppabs="http://pyqt4doc.appspot.com/qtranslator.html#translate">translate</a>（ ） （如<a href="qobject.html#tr" tppabs="http://pyqt4doc.appspot.com/qobject.html#tr">tr</a>（）和<a href="qcoreapplication.html#translate" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#translate">QApplication.translate</a>（ ）一样） 。该<a href="qtranslator.html#translate" tppabs="http://pyqt4doc.appspot.com/qtranslator.html#translate">translate</a>（ ）函数需要三个参数：</p>
+<ul>
+<li>The <i>context</i> - usually the class name for the <a href="qobject.html#tr" tppabs="http://pyqt4doc.appspot.com/qobject.html#tr">tr</a>() caller.</li>
+<li>The <i>source text</i> - usually the argument to <a href="qobject.html#tr" tppabs="http://pyqt4doc.appspot.com/qobject.html#tr">tr</a>().</li>
+<li>The <i>disambiguation</i> - an optional string that helps
+disambiguate different uses of the same text in the same
+context.</li>
+</ul>
+<p>例如，在一个对话框“取消”可能具有“ Anuluj ”时，程序在波兰的运行（在这种情况下，源文本将是“取消” ） 。上下文将（通常）是对话框的类名;有一般会是没有意见，而翻译的文本将是“ Anuluj ” 。</p>
+<p>但它并不总是那么简单。打印机对话框中的设定进行双面打印和装订的西班牙语版本可能会同时需要“ Activado ”和“ Activada ”作为翻译为“​​已启用” 。在这种情况下，源文本将在这两种情况下“启用” ，并在上下文将是对话框的类名，但是这两个项目将有disambiguations如“双面打印”为1与“结合”，为其他。消歧使译者选择适当的性别为西班牙语版本，使Qt的翻译来区分。</p>
+<a id="using-multiple-translations" name="using-multiple-translations"></a>
+<h3>Using Multiple Translations</h3>
+<p>多个翻译文件可以安装在一个应用程序。翻译是在它们被安装在其相反的顺序搜索的，所以最近安装的翻译文件中搜索翻译第一和最早的翻译文件最后搜索。搜索一旦被发现包含匹配的字符串翻译停止。</p>
+<p>这种机制使得它可以为特定的翻译被“选中”或优先于他人，只需通过它传递给从应用程序卸载翻译<a href="qcoreapplication.html#removeTranslator" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#removeTranslator">QApplication.removeTranslator</a>（ ）函数，并重新安装<a href="qcoreapplication.html#installTranslator" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#installTranslator">QApplication.installTranslator</a>（ ） 。那么这将是第一次翻译要查找的字符串匹配。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QTranslator"></a>QTranslator.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个空消息文件对象的父<i>parent</i>未连接到任何文件。</p>
+
+
+<h3 class="fn">
+<a name="isEmpty"></a>bool QTranslator.isEmpty (<i>self</i>)</h3>
+<p>返回True如果翻译为空，否则返回False 。此功能适用于剥离和未移除的翻译文件。</p>
+
+
+<h3 class="fn">
+<a name="load"></a>bool QTranslator.load (<i>self</i>, QString <i>fileName</i>, QString <i>directory</i> = QString(), QString <i>searchDelimiters</i> = QString(), QString <i>suffix</i> = QString())</h3>
+<p>负载<i>filename</i>+<i>suffix</i>（ “ QM ”如果<i>suffix</i>未指定） ，其可以是绝对文件名或相对于<i>directory</i>。返回True如果加载成功的翻译，否则返回False 。</p>
+<p>If <i>directory</i>没有被指定，应用程序的可执行文件的目录时（即作为<a href="qcoreapplication.html#applicationDirPath" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#applicationDirPath">applicationDirPath()</a>） 。</p>
+<p>这个翻译对象的以前的内容将被丢弃。</p>
+<p>如果文件名不存在，其他的文件名尝试按以下顺序：</p>
+<ol class="1">
+<li>文件名不<i>suffix</i>追加。</li>
+<li>文件名与一个字符之后的文字<i>search_delimiters</i>剥去（ “<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html">_</a>“是默认的<i>search_delimiters</i>如果它是一个空字符串）和<i>suffix</i>。</li>
+<li>没有文件名剥离<i>suffix</i>追加。</li>
+<li>文件名再剥离等。</li>
+</ol>
+<p>例如，在fr_CA语言环境中运行（法语加拿大）的应用程序可能调用的负载（ “ foo.fr_ca ” ， “ /选择/ foolib ” ） 。 load（）方法会然后尝试从该列表中打开的第一个现有可读的文件：</p>
+<ol class="1">
+<li><tt>/opt/foolib/foo.fr_ca.qm</tt></li>
+<li><tt>/opt/foolib/foo.fr_ca</tt></li>
+<li><tt>/opt/foolib/foo.fr.qm</tt></li>
+<li><tt>/opt/foolib/foo.fr</tt></li>
+<li><tt>/opt/foolib/foo.qm</tt></li>
+<li><tt>/opt/foolib/foo</tt></li>
+</ol>
+
+
+<h3 class="fn">
+<a name="load-2"></a>bool QTranslator.load (<i>self</i>, <a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a> <i>locale</i>, QString <i>fileName</i>, QString <i>prefix</i> = QString(), QString <i>directory</i> = QString(), QString <i>suffix</i> = QString())</h3>
+<p>负载<i>filename</i>+<i>prefix</i>+<a href="qlocale.html#uiLanguages" tppabs="http://pyqt4doc.appspot.com/qlocale.html#uiLanguages">ui language name</a>+<i>suffix</i>（ “ QM ”如果<i>suffix</i>未指定） ，其可以是绝对文件名或相对于<i>directory</i>。返回True如果加载成功的翻译，否则返回False 。</p>
+<p>这个翻译对象的以前的内容将被丢弃。</p>
+<p>如果文件名不存在，其他的文件名尝试按以下顺序：</p>
+<ol class="1">
+<li>文件名不<i>suffix</i>追加。</li>
+<li>后文件与用户界面语言部分名称的“<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html">_</a>“字符剥离和<i>suffix</i>。</li>
+<li>无剥离与用户界面语言部分文件名<i>suffix</i>追加。</li>
+<li>与用户界面语言部分文件名再剥离等</li>
+</ol>
+<p>例如，运行在语言环境下的应用程序<a href="qlocale.html#uiLanguages" tppabs="http://pyqt4doc.appspot.com/qlocale.html#uiLanguages">ui languages</a> - “上课” ， “ FR- CA” ， “德”可以称之为负载（<a href="qlocale.html#system" tppabs="http://pyqt4doc.appspot.com/qlocale.html#system">QLocale.system</a>（ ） ， “富” ， “ ” ， “ /选择/ foolib ” ， “ QM ” ） 。<a href="qtranslator.html#load" tppabs="http://pyqt4doc.appspot.com/qtranslator.html#load">load</a>（ ）将取代' - ' （破折号）与'<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html">_</a>' （下划线）在UI语言，然后尝试从该列表中打开的第一个现有可读的文件：</p>
+<ol class="1">
+<li><tt>/opt/foolib/foo.es.qm</tt></li>
+<li><tt>/opt/foolib/foo.es</tt></li>
+<li><tt>/opt/foolib/foo.fr_CA.qm</tt></li>
+<li><tt>/opt/foolib/foo.fr_CA</tt></li>
+<li><tt>/opt/foolib/foo.de.qm</tt></li>
+<li><tt>/opt/foolib/foo.de</tt></li>
+<li><tt>/opt/foolib/foo.fr.qm</tt></li>
+<li><tt>/opt/foolib/foo.fr</tt></li>
+<li><tt>/opt/foolib/foo.qm</tt></li>
+<li>
+<tt>/opt/foolib/foo</tt>。</li>
+<li><tt>/opt/foolib/foo</tt></li>
+</ol>
+<p>对操作系统所在的文件系统是大小写敏感的，<a href="qtranslator.html" tppabs="http://pyqt4doc.appspot.com/qtranslator.html">QTranslator</a>也尝试加载区域名称的小写版本。</p>
+<p>此功能被引入Qt的4.8 。</p>
+
+
+<h3 class="fn">
+<a name="loadFromData"></a>bool QTranslator.loadFromData (<i>self</i>, str <i>data</i>)</h3>
+<h3 class="fn">
+<a name="translate"></a>QString QTranslator.translate (<i>self</i>, str <i>context</i>, str <i>sourceText</i>, str <i>disambiguation</i> = None)</h3>
+<p>返回翻译的关键（<i>context</i>，<i>sourceText</i>，<i>disambiguation</i>） 。如果没有找到，还尝试（<i>context</i>，<i>sourceText</i>，“”） 。如果仍然失败，则返回一个空字符串。</p>
+<p>如果您需要以编程方式插入翻译中的<a href="qtranslator.html" tppabs="http://pyqt4doc.appspot.com/qtranslator.html">QTranslator</a>这个功能可以重新实现。</p>
+<p><b>See also</b> <a href="qtranslator.html#load" tppabs="http://pyqt4doc.appspot.com/qtranslator.html#load">load</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="translate-2"></a>QString QTranslator.translate (<i>self</i>, str <i>context</i>, str <i>sourceText</i>, str <i>comment</i>, int <i>n</i>)</h3>
+<p>这个函数的重载<a href="qtranslator.html#translate" tppabs="http://pyqt4doc.appspot.com/qtranslator.html#translate">translate</a>（ ） 。</p>
+<p>返回翻译的关键（<i>context</i>，<i>sourceText</i>，<i>disambiguation</i>） 。如果没有找到，还尝试（<i>context</i>，<i>sourceText</i>，“”） 。如果仍然失败，则返回一个空字符串。</p>
+<p>If <i>n</i>是不是-1 ，它是用来选择的翻译（例如“ ％ n文件中找到”与“ ％不找到文件” ）以适当的形式。</p>
+<p><b>See also</b> <a href="qtranslator.html#load" tppabs="http://pyqt4doc.appspot.com/qtranslator.html#load">load</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

@@ -1,0 +1,534 @@
+﻿<html>
+<head>
+<title>QLayout Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QLayout Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>The QLayout class is the base class of geometry managers.
+<a href="#details">More...</a></p>
+
+<p>Inherits <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> and <a href="qlayoutitem.html" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html">QLayoutItem</a>.</p>
+<p>Inherited by <a href="qboxlayout.html" tppabs="http://pyqt4doc.appspot.com/qboxlayout.html">QBoxLayout</a>, <a href="qformlayout.html" tppabs="http://pyqt4doc.appspot.com/qformlayout.html">QFormLayout</a>, <a href="qgridlayout.html" tppabs="http://pyqt4doc.appspot.com/qgridlayout.html">QGridLayout</a> and <a href="qstackedlayout.html" tppabs="http://pyqt4doc.appspot.com/qstackedlayout.html">QStackedLayout</a>.</p>
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qlayout.html#SizeConstraint-enum" tppabs="http://pyqt4doc.appspot.com/qlayout.html#SizeConstraint-enum">SizeConstraint</a></b> { SetDefaultConstraint, SetNoConstraint, SetMinimumSize, SetFixedSize, SetMaximumSize, SetMinAndMaxSize }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qlayout.html#QLayout" tppabs="http://pyqt4doc.appspot.com/qlayout.html#QLayout">__init__</a></b> (<i>self</i>, QWidget <i>parent</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlayout.html#QLayout-2" tppabs="http://pyqt4doc.appspot.com/qlayout.html#QLayout-2">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qlayout.html#activate" tppabs="http://pyqt4doc.appspot.com/qlayout.html#activate">activate</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlayout.html#addChildLayout" tppabs="http://pyqt4doc.appspot.com/qlayout.html#addChildLayout">addChildLayout</a></b> (<i>self</i>, QLayout <i>l</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlayout.html#addChildWidget" tppabs="http://pyqt4doc.appspot.com/qlayout.html#addChildWidget">addChildWidget</a></b> (<i>self</i>, QWidget <i>w</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlayout.html#addItem" tppabs="http://pyqt4doc.appspot.com/qlayout.html#addItem">addItem</a></b> (<i>self</i>, QLayoutItem)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlayout.html#addWidget" tppabs="http://pyqt4doc.appspot.com/qlayout.html#addWidget">addWidget</a></b> (<i>self</i>, QWidget <i>w</i>)</li>
+<li>
+<div class="fn"></div>QRect <b><a href="qlayout.html#alignmentRect" tppabs="http://pyqt4doc.appspot.com/qlayout.html#alignmentRect">alignmentRect</a></b> (<i>self</i>, QRect)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlayout.html#childEvent" tppabs="http://pyqt4doc.appspot.com/qlayout.html#childEvent">childEvent</a></b> (<i>self</i>, QChildEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>QMargins <b><a href="qlayout.html#contentsMargins" tppabs="http://pyqt4doc.appspot.com/qlayout.html#contentsMargins">contentsMargins</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QRect <b><a href="qlayout.html#contentsRect" tppabs="http://pyqt4doc.appspot.com/qlayout.html#contentsRect">contentsRect</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qlayout.html#count" tppabs="http://pyqt4doc.appspot.com/qlayout.html#count">count</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Qt.Orientations <b><a href="qlayout.html#expandingDirections" tppabs="http://pyqt4doc.appspot.com/qlayout.html#expandingDirections">expandingDirections</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QRect <b><a href="qlayout.html#geometry" tppabs="http://pyqt4doc.appspot.com/qlayout.html#geometry">geometry</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>(int <i>left</i>, int <i>top</i>, int <i>right</i>, int <i>bottom</i>) <b><a href="qlayout.html#getContentsMargins" tppabs="http://pyqt4doc.appspot.com/qlayout.html#getContentsMargins">getContentsMargins</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qlayout.html#indexOf" tppabs="http://pyqt4doc.appspot.com/qlayout.html#indexOf">indexOf</a></b> (<i>self</i>, QWidget)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlayout.html#invalidate" tppabs="http://pyqt4doc.appspot.com/qlayout.html#invalidate">invalidate</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qlayout.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qlayout.html#isEmpty">isEmpty</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qlayout.html#isEnabled" tppabs="http://pyqt4doc.appspot.com/qlayout.html#isEnabled">isEnabled</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QLayoutItem <b><a href="qlayout.html#itemAt" tppabs="http://pyqt4doc.appspot.com/qlayout.html#itemAt">itemAt</a></b> (<i>self</i>, int <i>index</i>)</li>
+<li>
+<div class="fn"></div>QLayout <b><a href="qlayout.html#layout" tppabs="http://pyqt4doc.appspot.com/qlayout.html#layout">layout</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qlayout.html#margin" tppabs="http://pyqt4doc.appspot.com/qlayout.html#margin">margin</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qlayout.html#maximumSize" tppabs="http://pyqt4doc.appspot.com/qlayout.html#maximumSize">maximumSize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qlayout.html#menuBar" tppabs="http://pyqt4doc.appspot.com/qlayout.html#menuBar">menuBar</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qlayout.html#minimumSize" tppabs="http://pyqt4doc.appspot.com/qlayout.html#minimumSize">minimumSize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qlayout.html#parentWidget" tppabs="http://pyqt4doc.appspot.com/qlayout.html#parentWidget">parentWidget</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlayout.html#removeItem" tppabs="http://pyqt4doc.appspot.com/qlayout.html#removeItem">removeItem</a></b> (<i>self</i>, QLayoutItem)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlayout.html#removeWidget" tppabs="http://pyqt4doc.appspot.com/qlayout.html#removeWidget">removeWidget</a></b> (<i>self</i>, QWidget <i>w</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qlayout.html#setAlignment" tppabs="http://pyqt4doc.appspot.com/qlayout.html#setAlignment">setAlignment</a></b> (<i>self</i>, QWidget <i>w</i>, Qt.Alignment <i>alignment</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qlayout.html#setAlignment-2" tppabs="http://pyqt4doc.appspot.com/qlayout.html#setAlignment-2">setAlignment</a></b> (<i>self</i>, QLayout <i>l</i>, Qt.Alignment <i>alignment</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlayout.html#setAlignment-3" tppabs="http://pyqt4doc.appspot.com/qlayout.html#setAlignment-3">setAlignment</a></b> (<i>self</i>, Qt.Alignment <i>alignment</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlayout.html#setContentsMargins" tppabs="http://pyqt4doc.appspot.com/qlayout.html#setContentsMargins">setContentsMargins</a></b> (<i>self</i>, int <i>left</i>, int <i>top</i>, int <i>right</i>, int <i>bottom</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlayout.html#setContentsMargins-2" tppabs="http://pyqt4doc.appspot.com/qlayout.html#setContentsMargins-2">setContentsMargins</a></b> (<i>self</i>, QMargins <i>margins</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlayout.html#setEnabled" tppabs="http://pyqt4doc.appspot.com/qlayout.html#setEnabled">setEnabled</a></b> (<i>self</i>, bool)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlayout.html#setGeometry" tppabs="http://pyqt4doc.appspot.com/qlayout.html#setGeometry">setGeometry</a></b> (<i>self</i>, QRect)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlayout.html#setMargin" tppabs="http://pyqt4doc.appspot.com/qlayout.html#setMargin">setMargin</a></b> (<i>self</i>, int)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlayout.html#setMenuBar" tppabs="http://pyqt4doc.appspot.com/qlayout.html#setMenuBar">setMenuBar</a></b> (<i>self</i>, QWidget <i>w</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlayout.html#setSizeConstraint" tppabs="http://pyqt4doc.appspot.com/qlayout.html#setSizeConstraint">setSizeConstraint</a></b> (<i>self</i>, SizeConstraint)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlayout.html#setSpacing" tppabs="http://pyqt4doc.appspot.com/qlayout.html#setSpacing">setSpacing</a></b> (<i>self</i>, int)</li>
+<li>
+<div class="fn"></div>SizeConstraint <b><a href="qlayout.html#sizeConstraint" tppabs="http://pyqt4doc.appspot.com/qlayout.html#sizeConstraint">sizeConstraint</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qlayout.html#spacing" tppabs="http://pyqt4doc.appspot.com/qlayout.html#spacing">spacing</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QLayoutItem <b><a href="qlayout.html#takeAt" tppabs="http://pyqt4doc.appspot.com/qlayout.html#takeAt">takeAt</a></b> (<i>self</i>, int <i>index</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qlayout.html#totalHeightForWidth" tppabs="http://pyqt4doc.appspot.com/qlayout.html#totalHeightForWidth">totalHeightForWidth</a></b> (<i>self</i>, int <i>w</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qlayout.html#totalMaximumSize" tppabs="http://pyqt4doc.appspot.com/qlayout.html#totalMaximumSize">totalMaximumSize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qlayout.html#totalMinimumSize" tppabs="http://pyqt4doc.appspot.com/qlayout.html#totalMinimumSize">totalMinimumSize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qlayout.html#totalSizeHint" tppabs="http://pyqt4doc.appspot.com/qlayout.html#totalSizeHint">totalSizeHint</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlayout.html#update" tppabs="http://pyqt4doc.appspot.com/qlayout.html#update">update</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlayout.html#widgetEvent" tppabs="http://pyqt4doc.appspot.com/qlayout.html#widgetEvent">widgetEvent</a></b> (<i>self</i>, QEvent)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul><li>
+<div class="fn"></div>QSize <b><a href="qlayout.html#closestAcceptableSize" tppabs="http://pyqt4doc.appspot.com/qlayout.html#closestAcceptableSize">closestAcceptableSize</a></b> (QWidget <i>w</i>, QSize <i>s</i>)</li></ul>
+<h3>Special Methods</h3>
+<ul><li>
+<div class="fn"></div> <b><a href="qlayout.html#__len__" tppabs="http://pyqt4doc.appspot.com/qlayout.html#__len__">__len__</a></b> (<i>self</i>)</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QLayout类是几何管理者的基类。</p>
+<p>这是继承的具体类的抽象基类<a href="qboxlayout.html" tppabs="http://pyqt4doc.appspot.com/qboxlayout.html">QBoxLayout</a>，<a href="qgridlayout.html" tppabs="http://pyqt4doc.appspot.com/qgridlayout.html">QGridLayout</a>，<a href="qformlayout.html" tppabs="http://pyqt4doc.appspot.com/qformlayout.html">QFormLayout</a>和<a href="qstackedlayout.html" tppabs="http://pyqt4doc.appspot.com/qstackedlayout.html">QStackedLayout</a>。</p>
+<p>有关的QLayout子类或用户<a href="qmainwindow.html" tppabs="http://pyqt4doc.appspot.com/qmainwindow.html">QMainWindow</a>里面很少有任何需要使用由QLayout提供的基本功能，如<a href="qlayout.html#sizeConstraint-prop" tppabs="http://pyqt4doc.appspot.com/qlayout.html#sizeConstraint-prop">setSizeConstraint</a>（）或<a href="qlayout.html#setMenuBar" tppabs="http://pyqt4doc.appspot.com/qlayout.html#setMenuBar">setMenuBar</a>（ ） 。看<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/layout.html">Layout Management</a>了解更多信息。</p>
+<p>为了使自己的布局管理器，实现功能<a href="qlayout.html#addItem" tppabs="http://pyqt4doc.appspot.com/qlayout.html#addItem">addItem</a>（ ）<a href="qlayoutitem.html#sizeHint" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#sizeHint">sizeHint</a>（ ）<a href="qlayout.html#setGeometry" tppabs="http://pyqt4doc.appspot.com/qlayout.html#setGeometry">setGeometry</a>（ ）<a href="qlayout.html#itemAt" tppabs="http://pyqt4doc.appspot.com/qlayout.html#itemAt">itemAt</a>（）和<a href="qlayout.html#takeAt" tppabs="http://pyqt4doc.appspot.com/qlayout.html#takeAt">takeAt</a>（ ） 。你也应该实施<a href="qlayout.html#minimumSize" tppabs="http://pyqt4doc.appspot.com/qlayout.html#minimumSize">minimumSize</a>（ ），以确保你的布局是不是调整到零尺寸，如果有空间太少。为了支持儿童，其高度依赖于它们的宽度，实施<a href="qlayoutitem.html#hasHeightForWidth" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#hasHeightForWidth">hasHeightForWidth</a>（）和<a href="qlayoutitem.html#heightForWidth" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#heightForWidth">heightForWidth</a>（ ） 。请参阅<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/layouts-borderlayout.html">Border Layout</a>和<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/layouts-flowlayout.html">Flow Layout</a>示例有关实现自定义布局管理器的更多信息。</p>
+<p>当布局管理器被删除几何管理停止。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="SizeConstraint-enum"></a>QLayout.SizeConstraint</h3>
+<p>可能的值有：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QLayout.SetDefaultConstraint</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">主窗口部件的最小大小设置为<a href="qlayout.html#minimumSize" tppabs="http://pyqt4doc.appspot.com/qlayout.html#minimumSize">minimumSize</a>（）中，除插件已经具有的最小尺寸。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QLayout.SetFixedSize</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">主窗口部件的大小设置为<a href="qlayoutitem.html#sizeHint" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#sizeHint">sizeHint</a>（）;它不能在所有的调整大小。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QLayout.SetMinimumSize</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">主窗口部件的最小大小设置为<a href="qlayout.html#minimumSize" tppabs="http://pyqt4doc.appspot.com/qlayout.html#minimumSize">minimumSize</a>（）;它不能是较小的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QLayout.SetMaximumSize</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">主窗口部件的最大大小设置为<a href="qlayout.html#maximumSize" tppabs="http://pyqt4doc.appspot.com/qlayout.html#maximumSize">maximumSize</a>（）;它不能大。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QLayout.SetMinAndMaxSize</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">主窗口部件的最小大小设置为<a href="qlayout.html#minimumSize" tppabs="http://pyqt4doc.appspot.com/qlayout.html#minimumSize">minimumSize</a>（） ，其最大尺寸设定为<a href="qlayout.html#maximumSize" tppabs="http://pyqt4doc.appspot.com/qlayout.html#maximumSize">maximumSize</a>（ ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QLayout.SetNoConstraint</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">窗口小部件不受限。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qlayout.html#sizeConstraint-prop" tppabs="http://pyqt4doc.appspot.com/qlayout.html#sizeConstraint-prop">setSizeConstraint</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QLayout"></a>QLayout.__init__ (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i>)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个新的顶级<a href="qlayout.html" tppabs="http://pyqt4doc.appspot.com/qlayout.html">QLayout</a>，与父<i>parent</i>。<i>parent</i>可能不是0 。</p>
+<p>只能有一个是一个小部件的顶层布局。它是由返回<a href="qwidget.html#layout" tppabs="http://pyqt4doc.appspot.com/qwidget.html#layout">QWidget.layout</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QLayout-2"></a>QLayout.__init__ (<i>self</i>)</h3>
+<p>构造一个新的子<a href="qlayout.html" tppabs="http://pyqt4doc.appspot.com/qlayout.html">QLayout</a>。</p>
+<p>这种布局有被插入到另一个布局之前几何管理将工作。</p>
+
+
+<h3 class="fn">
+<a name="activate"></a>bool QLayout.activate (<i>self</i>)</h3>
+<p>重做的布局<a href="qlayout.html#parentWidget" tppabs="http://pyqt4doc.appspot.com/qlayout.html#parentWidget">parentWidget</a>（）如果需要的话。</p>
+<p>你通常应该不需要调用这个，因为它是自动调用在最适当的时候。如果布局被再做它返回True 。</p>
+<p><b>See also</b> <a href="qlayout.html#update" tppabs="http://pyqt4doc.appspot.com/qlayout.html#update">update</a>（）和<a href="qwidget.html#updateGeometry" tppabs="http://pyqt4doc.appspot.com/qwidget.html#updateGeometry">QWidget.updateGeometry</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addChildLayout"></a>QLayout.addChildLayout (<i>self</i>, <a href="qlayout.html" tppabs="http://pyqt4doc.appspot.com/qlayout.html">QLayout</a> <i>l</i>)</h3>
+<p>该<i>l</i>说法有它的所有权转移给Qt的。</p>
+<p>此功能是从所谓的<tt>addLayout()</tt> or
+<tt>insertLayout()</tt>在子类的功能来添加布局<i>l</i>作为子布局。</p>
+<p>在其中你需要把它直接调用的唯一情况是，如果你执行一个支持嵌套的布局自定义布局。</p>
+<p><b>See also</b> <a href="qboxlayout.html#addLayout" tppabs="http://pyqt4doc.appspot.com/qboxlayout.html#addLayout">QBoxLayout.addLayout</a>（ ）<a href="qboxlayout.html#insertLayout" tppabs="http://pyqt4doc.appspot.com/qboxlayout.html#insertLayout">QBoxLayout.insertLayout</a>（）和<a href="qgridlayout.html#addLayout" tppabs="http://pyqt4doc.appspot.com/qgridlayout.html#addLayout">QGridLayout.addLayout</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addChildWidget"></a>QLayout.addChildWidget (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>w</i>)</h3>
+<p>该<i>w</i>说法有它的所有权转移给Qt的。</p>
+<p>此功能是从所谓的<tt>addWidget()</tt>在子类中添加功能<i>w</i>作为布局的一个管理部件。</p>
+<p>If <i>w</i>已通过布局管理，此功能将给予警告并删除<i>w</i>从布局。这个功能，因此必须加入之前调用<i>w</i>到布局的数据结构。</p>
+
+
+<h3 class="fn">
+<a name="addItem"></a>QLayout.addItem (<i>self</i>, <a href="qlayoutitem.html" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html">QLayoutItem</a>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>该<i>QLayoutItem</i>说法有它的所有权转移给Qt的。</p>
+<p>实现在子类中添加一个<i>item</i>。它是如何添加特定于每个子类。</p>
+<p>这个功能并不是通常所说的应用程序代码。以一个小部件添加到布局，使用<a href="qlayout.html#addWidget" tppabs="http://pyqt4doc.appspot.com/qlayout.html#addWidget">addWidget</a>（ ）函数;有关规定增加一个子布局，使用addLayout （ ）函数<a href="qlayout.html" tppabs="http://pyqt4doc.appspot.com/qlayout.html">QLayout</a>子类。</p>
+<p><b>Note:</b>所有权<i>item</i>被转移到布局，它的布局的责任将其删除。</p>
+<p><b>See also</b> <a href="qlayout.html#addWidget" tppabs="http://pyqt4doc.appspot.com/qlayout.html#addWidget">addWidget</a>（ ）<a href="qboxlayout.html#addLayout" tppabs="http://pyqt4doc.appspot.com/qboxlayout.html#addLayout">QBoxLayout.addLayout</a>（）和<a href="qgridlayout.html#addLayout" tppabs="http://pyqt4doc.appspot.com/qgridlayout.html#addLayout">QGridLayout.addLayout</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addWidget"></a>QLayout.addWidget (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>w</i>)</h3>
+<p>该<i>w</i>说法有它的所有权转移给Qt的。</p>
+<p>添加小工具<i>w</i>在特定的布局方式这样的布局。此函数使用<a href="qlayout.html#addItem" tppabs="http://pyqt4doc.appspot.com/qlayout.html#addItem">addItem</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="alignmentRect"></a><a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> QLayout.alignmentRect (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a>)</h3>
+<p>返回时，此布局的几何形状被设置为应涵盖的矩形<i>r</i>，但前提是这个布局支持<a href="qlayout.html#setAlignment" tppabs="http://pyqt4doc.appspot.com/qlayout.html#setAlignment">setAlignment</a>（ ） 。</p>
+<p>其结果是衍生自<a href="qlayoutitem.html#sizeHint" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#sizeHint">sizeHint</a>（ ）和扩展（ ） 。这是从来没有大于<i>r</i>。</p>
+
+
+<h3 class="fn">
+<a name="childEvent"></a>QLayout.childEvent (<i>self</i>, <a href="qchildevent.html" tppabs="http://pyqt4doc.appspot.com/qchildevent.html">QChildEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qobject.html#childEvent" tppabs="http://pyqt4doc.appspot.com/qobject.html#childEvent">QObject.childEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="closestAcceptableSize"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QLayout.closestAcceptableSize (<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>w</i>, <a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> <i>s</i>)</h3>
+<p>返回一个大小满足所有尺寸的限制<i>widget</i>包括<a href="qlayoutitem.html#heightForWidth" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#heightForWidth">heightForWidth</a>（ ），并且是尽可能接近到<i>size</i>。</p>
+
+
+<h3 class="fn">
+<a name="contentsMargins"></a><a href="qmargins.html" tppabs="http://pyqt4doc.appspot.com/qmargins.html">QMargins</a> QLayout.contentsMargins (<i>self</i>)</h3>
+<p>返回周围的布局中使用的利润。</p>
+<p>默认情况下，<a href="qlayout.html" tppabs="http://pyqt4doc.appspot.com/qlayout.html">QLayout</a>使用由式所提供的值。在大多数平台上，保证金是在所有方向11像素。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qlayout.html#setContentsMargins" tppabs="http://pyqt4doc.appspot.com/qlayout.html#setContentsMargins">setContentsMargins</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="contentsRect"></a><a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> QLayout.contentsRect (<i>self</i>)</h3>
+<p>返回布局的<a href="qlayout.html#geometry" tppabs="http://pyqt4doc.appspot.com/qlayout.html#geometry">geometry</a>（ ）的矩形，但考虑到内容的利润率。</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qlayout.html#setContentsMargins" tppabs="http://pyqt4doc.appspot.com/qlayout.html#setContentsMargins">setContentsMargins</a>（）和<a href="qlayout.html#getContentsMargins" tppabs="http://pyqt4doc.appspot.com/qlayout.html#getContentsMargins">getContentsMargins</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="count"></a>int QLayout.count (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>必须在子类中实现返回布局的项目数。</p>
+<p><b>See also</b> <a href="qlayout.html#itemAt" tppabs="http://pyqt4doc.appspot.com/qlayout.html#itemAt">itemAt</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="expandingDirections"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-orientations.html">Qt.Orientations</a> QLayout.expandingDirections (<i>self</i>)</h3>
+<p>从重新实现<a href="qlayoutitem.html#expandingDirections" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#expandingDirections">QLayoutItem.expandingDirections</a>（ ） 。</p>
+<p>返回此布局是否可以使更多的空间比使用<a href="qlayoutitem.html#sizeHint" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#sizeHint">sizeHint</a>（ ） 。的值<a href="qt.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Orientation-enum">Qt.Vertical</a> or <a href="qt.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Orientation-enum">Qt.Horizontal</a>意味着它要在只有一维增长，而<a href="qt.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Orientation-enum">Qt.Vertical</a>|<a href="qt.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Orientation-enum">Qt.Horizontal</a>也就是说，它要在这两个方面的增长。</p>
+<p>默认实现返回<a href="qt.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Orientation-enum">Qt.Horizontal</a>|<a href="qt.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Orientation-enum">Qt.Vertical</a>。子类重新实现它返回基于其子控件的一个有意义的值<a href="qsizepolicy.html" tppabs="http://pyqt4doc.appspot.com/qsizepolicy.html">size policies</a>。</p>
+<p><b>See also</b> <a href="qlayoutitem.html#sizeHint" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#sizeHint">sizeHint</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="geometry"></a><a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> QLayout.geometry (<i>self</i>)</h3>
+<p>从重新实现<a href="qlayoutitem.html#geometry" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#geometry">QLayoutItem.geometry</a>（ ） 。</p>
+<p><b>See also</b> <a href="qlayout.html#setGeometry" tppabs="http://pyqt4doc.appspot.com/qlayout.html#setGeometry">setGeometry</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="getContentsMargins"></a>(int <i>left</i>, int <i>top</i>, int <i>right</i>, int <i>bottom</i>) QLayout.getContentsMargins (<i>self</i>)</h3>
+<p>提取左，上，右，和周围的布局中使用上下边界，并为它们分配到*<i>left</i>*<i>top</i>*<i>right</i>和*<i>bottom</i>（除非他们是空指针） 。</p>
+<p>默认情况下，<a href="qlayout.html" tppabs="http://pyqt4doc.appspot.com/qlayout.html">QLayout</a>使用由式所提供的值。在大多数平台上，保证金是在所有方向11像素。</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qlayout.html#setContentsMargins" tppabs="http://pyqt4doc.appspot.com/qlayout.html#setContentsMargins">setContentsMargins</a>（ ）<a href="qstyle.html#pixelMetric" tppabs="http://pyqt4doc.appspot.com/qstyle.html#pixelMetric">QStyle.pixelMetric</a>（ ）<a href="qstyle.html#PixelMetric-enum" tppabs="http://pyqt4doc.appspot.com/qstyle.html#PixelMetric-enum">PM_LayoutLeftMargin</a>，<a href="qstyle.html#PixelMetric-enum" tppabs="http://pyqt4doc.appspot.com/qstyle.html#PixelMetric-enum">PM_LayoutTopMargin</a>，<a href="qstyle.html#PixelMetric-enum" tppabs="http://pyqt4doc.appspot.com/qstyle.html#PixelMetric-enum">PM_LayoutRightMargin</a>和<a href="qstyle.html#PixelMetric-enum" tppabs="http://pyqt4doc.appspot.com/qstyle.html#PixelMetric-enum">PM_LayoutBottomMargin</a>。</p>
+
+
+<h3 class="fn">
+<a name="indexOf"></a>int QLayout.indexOf (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>)</h3>
+<p>搜索小工具<i>widget</i>在这种布局（不包括子布局） 。</p>
+<p>返回的索引<i>widget</i>，或-1，如果<i>widget</i>是没有找到。</p>
+<p>对所有项目使用默认的实现迭代<a href="qlayout.html#itemAt" tppabs="http://pyqt4doc.appspot.com/qlayout.html#itemAt">itemAt</a>（ ）</p>
+
+
+<h3 class="fn">
+<a name="invalidate"></a>QLayout.invalidate (<i>self</i>)</h3>
+<p>从重新实现<a href="qlayoutitem.html#invalidate" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#invalidate">QLayoutItem.invalidate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isEmpty"></a>bool QLayout.isEmpty (<i>self</i>)</h3>
+<p>从重新实现<a href="qlayoutitem.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#isEmpty">QLayoutItem.isEmpty</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isEnabled"></a>bool QLayout.isEnabled (<i>self</i>)</h3>
+<p>返回True如果启用了布局，否则返回False 。</p>
+<p><b>See also</b> <a href="qlayout.html#setEnabled" tppabs="http://pyqt4doc.appspot.com/qlayout.html#setEnabled">setEnabled</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="itemAt"></a><a href="qlayoutitem.html" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html">QLayoutItem</a> QLayout.itemAt (<i>self</i>, int <i>index</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>必须在子类中实现，以在返回版面项目<i>index</i>。如果不存在这样的产品，该函数必须返回0。项目从0连续编号。如果一个项目被删除，其他项目将被重新编号。</p>
+<p>此功能可用于迭代的布局。下面的代码将绘制在小部件的布局结构为每个布局项目的矩形。</p>
+<pre class="cpp">
+ <span class="keyword">static</span> <span class="type">void</span> paintLayout(<span class="type"><a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a></span> <span class="operator">*</span>painter<span class="operator">,</span> <span class="type"><a href="qlayoutitem.html" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html">QLayoutItem</a></span> <span class="operator">*</span>item)
+ {
+     <span class="type"><a href="qlayout.html" tppabs="http://pyqt4doc.appspot.com/qlayout.html">QLayout</a></span> <span class="operator">*</span>layout <span class="operator">=</span> item<span class="operator">-</span><span class="operator">&gt;</span>layout();
+     <span class="keyword">if</span> (layout) {
+         <span class="keyword">for</span> (<span class="type">int</span> i <span class="operator">=</span> <span class="number">0</span>; i <span class="operator">&lt;</span> layout<span class="operator">-</span><span class="operator">&gt;</span>count(); <span class="operator">+</span><span class="operator">+</span>i)
+             paintLayout(painter<span class="operator">,</span> layout<span class="operator">-</span><span class="operator">&gt;</span>itemAt(i));
+     }
+     painter<span class="operator">-</span><span class="operator">&gt;</span>drawRect(item<span class="operator">-</span><span class="operator">&gt;</span>geometry());
+ }
+
+ <span class="type">void</span> MyWidget<span class="operator">.</span>paintEvent(<span class="type"><a href="qpaintevent.html" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html">QPaintEvent</a></span> <span class="operator">*</span>)
+ {
+     <span class="type"><a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a></span> painter(<span class="keyword">this</span>);
+     <span class="keyword">if</span> (layout())
+         paintLayout(<span class="operator">&amp;</span>painter<span class="operator">,</span> layout());
+ }
+</pre>
+<p><b>See also</b> <a href="qlayout.html#count" tppabs="http://pyqt4doc.appspot.com/qlayout.html#count">count</a>（）和<a href="qlayout.html#takeAt" tppabs="http://pyqt4doc.appspot.com/qlayout.html#takeAt">takeAt</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="layout"></a><a href="qlayout.html" tppabs="http://pyqt4doc.appspot.com/qlayout.html">QLayout</a> QLayout.layout (<i>self</i>)</h3>
+<p>从重新实现<a href="qlayoutitem.html#layout" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#layout">QLayoutItem.layout</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="margin"></a>int QLayout.margin (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="maximumSize"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QLayout.maximumSize (<i>self</i>)</h3>
+<p>从重新实现<a href="qlayoutitem.html#maximumSize" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#maximumSize">QLayoutItem.maximumSize</a>（ ） 。</p>
+<p>返回此布局的最大尺寸。这是该布局可以有同时仍尊重规格的最大尺寸。</p>
+<p>返回值不包括所需的空间<a href="qwidget.html#setContentsMargins" tppabs="http://pyqt4doc.appspot.com/qwidget.html#setContentsMargins">QWidget.setContentsMargins</a>（）或<a href="qlayout.html#menuBar" tppabs="http://pyqt4doc.appspot.com/qlayout.html#menuBar">menuBar</a>（ ） 。</p>
+<p>默认实现允许无限制调整大小。</p>
+
+
+<h3 class="fn">
+<a name="menuBar"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QLayout.menuBar (<i>self</i>)</h3>
+<p>返回菜单栏设置此布局，或者0，如果没有菜单栏设置。</p>
+<p><b>See also</b> <a href="qlayout.html#setMenuBar" tppabs="http://pyqt4doc.appspot.com/qlayout.html#setMenuBar">setMenuBar</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="minimumSize"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QLayout.minimumSize (<i>self</i>)</h3>
+<p>从重新实现<a href="qlayoutitem.html#minimumSize" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#minimumSize">QLayoutItem.minimumSize</a>（ ） 。</p>
+<p>返回此布局的最小尺寸。这是该布局可以有同时仍尊重的规格的最小尺寸。</p>
+<p>返回值不包括所需的空间<a href="qwidget.html#setContentsMargins" tppabs="http://pyqt4doc.appspot.com/qwidget.html#setContentsMargins">QWidget.setContentsMargins</a>（）或<a href="qlayout.html#menuBar" tppabs="http://pyqt4doc.appspot.com/qlayout.html#menuBar">menuBar</a>（ ） 。</p>
+<p>默认实现允许无限制调整大小。</p>
+
+
+<h3 class="fn">
+<a name="parentWidget"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QLayout.parentWidget (<i>self</i>)</h3>
+<p>返回此布局，或0的父控件，如果这个布局上没有任何部件安装。</p>
+<p>如果布局是一个子布局，该函数返回父布局的父控件。</p>
+<p><b>See also</b> <a href="qobject.html#parent" tppabs="http://pyqt4doc.appspot.com/qobject.html#parent">parent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="removeItem"></a>QLayout.removeItem (<i>self</i>, <a href="qlayoutitem.html" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html">QLayoutItem</a>)</h3>
+<p>该<i>QLayoutItem</i>争论</p>
+<p>删除布局项目<i>item</i>从布局。它是调用者的责任要删除的项目。</p>
+<p>请注意，<i>item</i>可以是一个布局（自<a href="qlayout.html" tppabs="http://pyqt4doc.appspot.com/qlayout.html">QLayout</a>继承<a href="qlayoutitem.html" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html">QLayoutItem</a>） 。</p>
+<p><b>See also</b> <a href="qlayout.html#removeWidget" tppabs="http://pyqt4doc.appspot.com/qlayout.html#removeWidget">removeWidget</a>（）和<a href="qlayout.html#addItem" tppabs="http://pyqt4doc.appspot.com/qlayout.html#addItem">addItem</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="removeWidget"></a>QLayout.removeWidget (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>w</i>)</h3>
+<p>删除小工具<i>widget</i>从布局。此调用后，它是调用者的责任给小部件合理的几何形状或把小工具放回布局。</p>
+<p><b>Note:</b>所有权<i>widget</i>保持不变它被加入时相同。</p>
+<p><b>See also</b> <a href="qlayout.html#removeItem" tppabs="http://pyqt4doc.appspot.com/qlayout.html#removeItem">removeItem</a>（ ）<a href="qwidget.html#geometry-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#geometry-prop">QWidget.setGeometry</a>（）和<a href="qlayout.html#addWidget" tppabs="http://pyqt4doc.appspot.com/qlayout.html#addWidget">addWidget</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setAlignment"></a>bool QLayout.setAlignment (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>w</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-alignment.html">Qt.Alignment</a> <i>alignment</i>)</h3>
+<p>设置对齐部件<i>w</i>至<i>alignment</i>并返回True ，如果<i>w</i>在这种布局（不包括子布局）被发现，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="setAlignment-2"></a>bool QLayout.setAlignment (<i>self</i>, <a href="qlayout.html" tppabs="http://pyqt4doc.appspot.com/qlayout.html">QLayout</a> <i>l</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-alignment.html">Qt.Alignment</a> <i>alignment</i>)</h3>
+<p>设置此项目的对齐方式<i>alignment</i>。</p>
+<p><b>See also</b> <a href="qlayoutitem.html#setAlignment" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#setAlignment">QLayoutItem.setAlignment</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setAlignment-3"></a>QLayout.setAlignment (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-alignment.html">Qt.Alignment</a> <i>alignment</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>设置对齐布局<i>l</i>至<i>alignment</i>并返回True ，如果<i>l</i>在这种布局（不包括子布局）被发现，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="setContentsMargins"></a>QLayout.setContentsMargins (<i>self</i>, int <i>left</i>, int <i>top</i>, int <i>right</i>, int <i>bottom</i>)</h3>
+<p>设置<i>left</i>，<i>top</i>，<i>right</i>和<i>bottom</i>利润使用周围的布局。</p>
+<p>默认情况下，<a href="qlayout.html" tppabs="http://pyqt4doc.appspot.com/qlayout.html">QLayout</a>使用由式所提供的值。在大多数平台上，保证金是在所有方向11像素。</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qlayout.html#contentsMargins" tppabs="http://pyqt4doc.appspot.com/qlayout.html#contentsMargins">contentsMargins</a>（ ）<a href="qlayout.html#getContentsMargins" tppabs="http://pyqt4doc.appspot.com/qlayout.html#getContentsMargins">getContentsMargins</a>（ ）<a href="qstyle.html#pixelMetric" tppabs="http://pyqt4doc.appspot.com/qstyle.html#pixelMetric">QStyle.pixelMetric</a>（ ）<a href="qstyle.html#PixelMetric-enum" tppabs="http://pyqt4doc.appspot.com/qstyle.html#PixelMetric-enum">PM_LayoutLeftMargin</a>，<a href="qstyle.html#PixelMetric-enum" tppabs="http://pyqt4doc.appspot.com/qstyle.html#PixelMetric-enum">PM_LayoutTopMargin</a>，<a href="qstyle.html#PixelMetric-enum" tppabs="http://pyqt4doc.appspot.com/qstyle.html#PixelMetric-enum">PM_LayoutRightMargin</a>和<a href="qstyle.html#PixelMetric-enum" tppabs="http://pyqt4doc.appspot.com/qstyle.html#PixelMetric-enum">PM_LayoutBottomMargin</a>。</p>
+
+
+<h3 class="fn">
+<a name="setContentsMargins-2"></a>QLayout.setContentsMargins (<i>self</i>, <a href="qmargins.html" tppabs="http://pyqt4doc.appspot.com/qmargins.html">QMargins</a> <i>margins</i>)</h3>
+<p>设置<i>margins</i>使用周围的布局。</p>
+<p>默认情况下，<a href="qlayout.html" tppabs="http://pyqt4doc.appspot.com/qlayout.html">QLayout</a>使用由式所提供的值。在大多数平台上，保证金是在所有方向11像素。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qlayout.html#contentsMargins" tppabs="http://pyqt4doc.appspot.com/qlayout.html#contentsMargins">contentsMargins</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setEnabled"></a>QLayout.setEnabled (<i>self</i>, bool)</h3>
+<p>启用此布局，如果<i>enable</i>是真，否则禁用它。</p>
+<p>已启用的布局动态调整​​的变化，而停用的布局行为，就好像它不存在。</p>
+<p>默认情况下所有版面已启用。</p>
+<p><b>See also</b> <a href="qlayout.html#isEnabled" tppabs="http://pyqt4doc.appspot.com/qlayout.html#isEnabled">isEnabled</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setGeometry"></a>QLayout.setGeometry (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a>)</h3>
+<p>从重新实现<a href="qlayoutitem.html#setGeometry" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#setGeometry">QLayoutItem.setGeometry</a>（ ） 。</p>
+<p><b>See also</b> <a href="qlayout.html#geometry" tppabs="http://pyqt4doc.appspot.com/qlayout.html#geometry">geometry</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setMargin"></a>QLayout.setMargin (<i>self</i>, int)</h3>
+<h3 class="fn">
+<a name="setMenuBar"></a>QLayout.setMenuBar (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>w</i>)</h3>
+<p>该<i>w</i>说法有它的所有权转移给Qt的。</p>
+<p>告诉几何管理器放置在菜单栏<i>widget</i>在顶部<a href="qlayout.html#parentWidget" tppabs="http://pyqt4doc.appspot.com/qlayout.html#parentWidget">parentWidget</a>（ ） ，外<a href="qwidget.html#contentsMargins" tppabs="http://pyqt4doc.appspot.com/qwidget.html#contentsMargins">QWidget.contentsMargins</a>（ ） 。所有子控件放置在菜单栏的底部边缘下方。</p>
+<p><b>See also</b> <a href="qlayout.html#menuBar" tppabs="http://pyqt4doc.appspot.com/qlayout.html#menuBar">menuBar</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setSizeConstraint"></a>QLayout.setSizeConstraint (<i>self</i>, <a href="qlayout.html#SizeConstraint-enum" tppabs="http://pyqt4doc.appspot.com/qlayout.html#SizeConstraint-enum">SizeConstraint</a>)</h3>
+<h3 class="fn">
+<a name="setSpacing"></a>QLayout.setSpacing (<i>self</i>, int)</h3>
+<h3 class="fn">
+<a name="sizeConstraint"></a><a href="qlayout.html#SizeConstraint-enum" tppabs="http://pyqt4doc.appspot.com/qlayout.html#SizeConstraint-enum">SizeConstraint</a> QLayout.sizeConstraint (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="spacing"></a>int QLayout.spacing (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="takeAt"></a><a href="qlayoutitem.html" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html">QLayoutItem</a> QLayout.takeAt (<i>self</i>, int <i>index</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>该<i>QLayoutItem</i>结果</p>
+<p>必须在子类中实现以除去布局项目<i>index</i>从布局，并返回该项目。如果没有这样的项目，该函数必须什么也不做，返回0 。项目从0连续编号。如果一个项目被删除，其他项目将被重新编号。</p>
+<p>下面的代码片段显示了一个安全的方式从布局中删除的所有项目：</p>
+<pre class="cpp">
+ <span class="type"><a href="qlayoutitem.html" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html">QLayoutItem</a></span> <span class="operator">*</span>child;
+ <span class="keyword">while</span> ((child <span class="operator">=</span> layout<span class="operator">-</span><span class="operator">&gt;</span>takeAt(<span class="number">0</span>)) <span class="operator">!</span><span class="operator">=</span> <span class="number">0</span>) {
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+     <span class="keyword">delete</span> child;
+ }
+</pre>
+<p><b>See also</b> <a href="qlayout.html#itemAt" tppabs="http://pyqt4doc.appspot.com/qlayout.html#itemAt">itemAt</a>（）和<a href="qlayout.html#count" tppabs="http://pyqt4doc.appspot.com/qlayout.html#count">count</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="totalHeightForWidth"></a>int QLayout.totalHeightForWidth (<i>self</i>, int <i>w</i>)</h3>
+<h3 class="fn">
+<a name="totalMaximumSize"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QLayout.totalMaximumSize (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="totalMinimumSize"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QLayout.totalMinimumSize (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="totalSizeHint"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QLayout.totalSizeHint (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="update"></a>QLayout.update (<i>self</i>)</h3>
+<p>更新的布局<a href="qlayout.html#parentWidget" tppabs="http://pyqt4doc.appspot.com/qlayout.html#parentWidget">parentWidget</a>（ ） 。</p>
+<p>你通常应该不需要调用这个，因为它是自动调用在最适当的时候。</p>
+<p><b>See also</b> <a href="qlayout.html#activate" tppabs="http://pyqt4doc.appspot.com/qlayout.html#activate">activate</a>（）和<a href="qlayout.html#invalidate" tppabs="http://pyqt4doc.appspot.com/qlayout.html#invalidate">invalidate</a>（ ） 。</p>
+<h3 class="fn">
+<a name="widgetEvent"></a>QLayout.widgetEvent (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>)</h3>
+<h3 class="fn">
+<a name="__len__"></a> QLayout.__len__ (<i>self</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

@@ -1,0 +1,157 @@
+﻿<html>
+<head>
+<title>QItemEditorFactory Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QItemEditorFactory Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QItemEditorFactory类提供的小部件，用于编辑项目的数据在视图和代表。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qitemeditorfactory.html#QItemEditorFactory" tppabs="http://pyqt4doc.appspot.com/qitemeditorfactory.html#QItemEditorFactory">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qitemeditorfactory.html#QItemEditorFactory-2" tppabs="http://pyqt4doc.appspot.com/qitemeditorfactory.html#QItemEditorFactory-2">__init__</a></b> (<i>self</i>, QItemEditorFactory)</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qitemeditorfactory.html#createEditor" tppabs="http://pyqt4doc.appspot.com/qitemeditorfactory.html#createEditor">createEditor</a></b> (<i>self</i>, Type <i>type</i>, QWidget <i>parent</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qitemeditorfactory.html#registerEditor" tppabs="http://pyqt4doc.appspot.com/qitemeditorfactory.html#registerEditor">registerEditor</a></b> (<i>self</i>, Type <i>type</i>, QItemEditorCreatorBase <i>creator</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qitemeditorfactory.html#valuePropertyName" tppabs="http://pyqt4doc.appspot.com/qitemeditorfactory.html#valuePropertyName">valuePropertyName</a></b> (<i>self</i>, Type <i>type</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QItemEditorFactory <b><a href="qitemeditorfactory.html#defaultFactory" tppabs="http://pyqt4doc.appspot.com/qitemeditorfactory.html#defaultFactory">defaultFactory</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qitemeditorfactory.html#setDefaultFactory" tppabs="http://pyqt4doc.appspot.com/qitemeditorfactory.html#setDefaultFactory">setDefaultFactory</a></b> (QItemEditorFactory <i>factory</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QItemEditorFactory类提供的小部件，用于编辑项目的数据在视图和代表。</p>
+<p>当编辑在项目视图数据，编辑由委讬创建并显示。<a href="qitemdelegate.html" tppabs="http://pyqt4doc.appspot.com/qitemdelegate.html">QItemDelegate</a>，这是在默认情况下安装在Qt的项目视图的委讬，采用的是QItemEditorFactory创建编辑它。由QItemEditorFactory提供一个默认的唯一实例被所有项目的代表。如果你设置新的默认出厂带<a href="qitemeditorfactory.html#setDefaultFactory" tppabs="http://pyqt4doc.appspot.com/qitemeditorfactory.html#setDefaultFactory">setDefaultFactory</a>（ ） ，该新工厂将用于现有的和新的代表。</p>
+<p>一个工厂保持集合<a href="qitemeditorcreatorbase.html" tppabs="http://pyqt4doc.appspot.com/qitemeditorcreatorbase.html">QItemEditorCreatorBase</a>情况下，这是产生编辑一个特定的专门的编辑器<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>数据类型（所有Qt的模型将其数据存储在<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>S） 。</p>
+<a id="standard-editing-widgets" name="standard-editing-widgets"></a>
+<h3>Standard Editing Widgets</h3>
+<p>标准厂房的实施提供了编辑器，适用于各种数据类型。这些被创建时的委讬需要提供的编辑器由模型提供的数据。下表显示的类型和所提供的标准编辑器之间的关系。</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Type</th>
+<th>Editor Widget</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td>bool</td>
+<td><a href="qcombobox.html" tppabs="http://pyqt4doc.appspot.com/qcombobox.html">QComboBox</a></td>
+</tr>
+<tr class="even" valign="top">
+<td>double</td>
+<td><a href="qdoublespinbox.html" tppabs="http://pyqt4doc.appspot.com/qdoublespinbox.html">QDoubleSpinBox</a></td>
+</tr>
+<tr class="odd" valign="top">
+<td>int</td>
+<td rowspan="2"><a href="qspinbox.html" tppabs="http://pyqt4doc.appspot.com/qspinbox.html">QSpinBox</a></td>
+</tr>
+<tr class="even" valign="top">
+<td>unsigned int</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qdate.html" tppabs="http://pyqt4doc.appspot.com/qdate.html">QDate</a></td>
+<td><a href="qdateedit.html" tppabs="http://pyqt4doc.appspot.com/qdateedit.html">QDateEdit</a></td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qdatetime.html" tppabs="http://pyqt4doc.appspot.com/qdatetime.html">QDateTime</a></td>
+<td><a href="qdatetimeedit.html" tppabs="http://pyqt4doc.appspot.com/qdatetimeedit.html">QDateTimeEdit</a></td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a></td>
+<td><a href="qlabel.html" tppabs="http://pyqt4doc.appspot.com/qlabel.html">QLabel</a></td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></td>
+<td><a href="qlineedit.html" tppabs="http://pyqt4doc.appspot.com/qlineedit.html">QLineEdit</a></td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qtime.html" tppabs="http://pyqt4doc.appspot.com/qtime.html">QTime</a></td>
+<td><a href="qtimeedit.html" tppabs="http://pyqt4doc.appspot.com/qtimeedit.html">QTimeEdit</a></td>
+</tr>
+</table>
+<p>其他编辑器可以与注册<a href="qitemeditorfactory.html#registerEditor" tppabs="http://pyqt4doc.appspot.com/qitemeditorfactory.html#registerEditor">registerEditor</a>（）函数。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QItemEditorFactory"></a>QItemEditorFactory.__init__ (<i>self</i>)</h3>
+<p>构造一个新的项目编辑器的工厂。</p>
+
+
+<h3 class="fn">
+<a name="QItemEditorFactory-2"></a>QItemEditorFactory.__init__ (<i>self</i>, <a href="qitemeditorfactory.html" tppabs="http://pyqt4doc.appspot.com/qitemeditorfactory.html">QItemEditorFactory</a>)</h3>
+<h3 class="fn">
+<a name="createEditor"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QItemEditorFactory.createEditor (<i>self</i>, <a href="index.htm#Type-enum" tppabs="http://pyqt4doc.appspot.com/qtcore.html#Type-enum">Type</a> <i>type</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i>)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>创建一个编辑器部件与给定<i>parent</i>为指定的<i>type</i>的数据，并返回它作为一个的<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>。</p>
+<p><b>See also</b> <a href="qitemeditorfactory.html#registerEditor" tppabs="http://pyqt4doc.appspot.com/qitemeditorfactory.html#registerEditor">registerEditor</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="defaultFactory"></a><a href="qitemeditorfactory.html" tppabs="http://pyqt4doc.appspot.com/qitemeditorfactory.html">QItemEditorFactory</a> QItemEditorFactory.defaultFactory ()</h3>
+<p>返回默认项目编辑器的工厂。</p>
+<p><b>See also</b> <a href="qitemeditorfactory.html#setDefaultFactory" tppabs="http://pyqt4doc.appspot.com/qitemeditorfactory.html#setDefaultFactory">setDefaultFactory</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="registerEditor"></a>QItemEditorFactory.registerEditor (<i>self</i>, <a href="index.htm#Type-enum" tppabs="http://pyqt4doc.appspot.com/qtcore.html#Type-enum">Type</a> <i>type</i>, <a href="qitemeditorcreatorbase.html" tppabs="http://pyqt4doc.appspot.com/qitemeditorcreatorbase.html">QItemEditorCreatorBase</a> <i>creator</i>)</h3>
+<p>该<i>creator</i>说法有它的所有权转移给Qt的。</p>
+<p>通过注册一个指定的项目编辑器创造者<i>creator</i>对于给定的<i>type</i>数据。</p>
+<p><b>Note:</b>本厂承接的项目编辑器创建者的所有权，并会破坏它，如果相同类型的新创造者以后注册。</p>
+<p><b>See also</b> <a href="qitemeditorfactory.html#createEditor" tppabs="http://pyqt4doc.appspot.com/qitemeditorfactory.html#createEditor">createEditor</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setDefaultFactory"></a>QItemEditorFactory.setDefaultFactory (<a href="qitemeditorfactory.html" tppabs="http://pyqt4doc.appspot.com/qitemeditorfactory.html">QItemEditorFactory</a> <i>factory</i>)</h3>
+<p>该<i>factory</i>说法有它的所有权转移给Qt的。</p>
+<p>设置默认项目编辑器厂家给定的<i>factory</i>。新的和现有的代表将使用新的工厂。</p>
+<p><b>See also</b> <a href="qitemeditorfactory.html#defaultFactory" tppabs="http://pyqt4doc.appspot.com/qitemeditorfactory.html#defaultFactory">defaultFactory</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="valuePropertyName"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QItemEditorFactory.valuePropertyName (<i>self</i>, <a href="index.htm#Type-enum" tppabs="http://pyqt4doc.appspot.com/qtcore.html#Type-enum">Type</a> <i>type</i>)</h3>
+<p>返回用于访问数据为给定的属性名<i>type</i>数据。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

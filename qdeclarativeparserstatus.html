@@ -1,0 +1,92 @@
+﻿<html>
+<head>
+<title>QDeclarativeParserStatus Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDeclarativeParserStatus Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdeclarative.html">QtDeclarative</a> module]</sup></sup>
+</h1>
+<p>该QDeclarativeParserStatus类提供的QML解析器的状态更新。<a href="#details">More...</a></p>
+
+<p>通过继承<a href="qdeclarativeitem.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativeitem.html">QDeclarativeItem</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdeclarativeparserstatus.html#QDeclarativeParserStatus" tppabs="http://pyqt4doc.appspot.com/qdeclarativeparserstatus.html#QDeclarativeParserStatus">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdeclarativeparserstatus.html#QDeclarativeParserStatus-2" tppabs="http://pyqt4doc.appspot.com/qdeclarativeparserstatus.html#QDeclarativeParserStatus-2">__init__</a></b> (<i>self</i>, QDeclarativeParserStatus)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdeclarativeparserstatus.html#classBegin" tppabs="http://pyqt4doc.appspot.com/qdeclarativeparserstatus.html#classBegin">classBegin</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdeclarativeparserstatus.html#componentComplete" tppabs="http://pyqt4doc.appspot.com/qdeclarativeparserstatus.html#componentComplete">componentComplete</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDeclarativeParserStatus类提供的QML解析器的状态更新。</p>
+<p>QDeclarativeParserStatus提供了一种机制，用于通过一个实例化的类<a href="qdeclarativeengine.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativeengine.html">QDeclarativeEngine</a>要在他们的创作关键点收到通知。</p>
+<p>这个类通常用于优化的目的，因为它可以让你推迟昂贵的操作后，所有的属性都被设置在对象上，直到。例如， QML的<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qml-text.html">Text</a>元素使用的解析器状态推迟文字排版，直到所有的属性都被设置（我们不希望布局时，<tt>text</tt>被分配，然后重新布局时<tt>font</tt>分配和重新布局时再<tt>width</tt>被分配，等等） 。</p>
+<p>要使用QDeclarativeParserStatus ，你必须同时继承一个<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>派生类和QDeclarativeParserStatus ，并使用<a href="qobject.html#Q_INTERFACES" tppabs="http://pyqt4doc.appspot.com/qobject.html#Q_INTERFACES">Q_INTERFACES</a>（）宏。</p>
+<pre class="cpp">
+ <span class="keyword">class</span> MyObject : <span class="keyword">public</span> <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span><span class="operator">,</span> <span class="keyword">public</span> <span class="type">QDeclarativeParserStatus</span>
+ {
+     Q_OBJECT
+     Q_INTERFACES(<span class="type">QDeclarativeParserStatus</span>)
+
+ <span class="keyword">public</span>:
+     MyObject(<span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span> <span class="operator">*</span>parent <span class="operator">=</span> <span class="number">0</span>);
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+     <span class="type">void</span> classBegin();
+     <span class="type">void</span> componentComplete();
+ }
+</pre>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDeclarativeParserStatus"></a>QDeclarativeParserStatus.__init__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="QDeclarativeParserStatus-2"></a>QDeclarativeParserStatus.__init__ (<i>self</i>, <a href="qdeclarativeparserstatus.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativeparserstatus.html">QDeclarativeParserStatus</a>)</h3>
+<h3 class="fn">
+<a name="classBegin"></a>QDeclarativeParserStatus.classBegin (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>类创建后调用，但任何属性已设定之前。</p>
+
+
+<h3 class="fn">
+<a name="componentComplete"></a>QDeclarativeParserStatus.componentComplete (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>导致此实例已建设完成的根组件后调用。在这一点上所有的静态值和绑定值已被分配给类。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

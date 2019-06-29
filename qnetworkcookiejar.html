@@ -1,0 +1,102 @@
+﻿<html>
+<head>
+<title>QNetworkCookieJar Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QNetworkCookieJar Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtnetwork.html">QtNetwork</a> module]</sup></sup>
+</h1>
+<p>该QNetworkCookieJar类实现的一个简单的罐子<a href="qnetworkcookie.html" tppabs="http://pyqt4doc.appspot.com/qnetworkcookie.html">QNetworkCookie</a>对象<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkcookiejar.html#QNetworkCookieJar" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html#QNetworkCookieJar">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>list-of-QNetworkCookie <b><a href="qnetworkcookiejar.html#allCookies" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html#allCookies">allCookies</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QNetworkCookie <b><a href="qnetworkcookiejar.html#cookiesForUrl" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html#cookiesForUrl">cookiesForUrl</a></b> (<i>self</i>, QUrl <i>url</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkcookiejar.html#setAllCookies" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html#setAllCookies">setAllCookies</a></b> (<i>self</i>, list-of-QNetworkCookie <i>cookieList</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qnetworkcookiejar.html#setCookiesFromUrl" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html#setCookiesFromUrl">setCookiesFromUrl</a></b> (<i>self</i>, list-of-QNetworkCookie <i>cookieList</i>, QUrl <i>url</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QNetworkCookieJar类实现的一个简单的罐子<a href="qnetworkcookie.html" tppabs="http://pyqt4doc.appspot.com/qnetworkcookie.html">QNetworkCookie</a>对象</p>
+<p>Cookies是少量的信息，像HTTP中使用无状态的协议，以保持在要求的一些持久信息。</p>
+<p>一个cookie是由远程服务器设置，当它回复到一个请求，它预计在相同的cookie被发送回来的时候再发送请求。</p>
+<p>饼干罐是保存在以前的请求设置的所有Cookie对象。 Web浏览器保存他们的饼干罐到磁盘，以便在应用程序的调用保存永久的cookie 。</p>
+<p>QNetworkCookieJar没有实现永久存储：它不仅保持了饼干在内存中。一旦QNetworkCookieJar对象被删除时，其所持有的所有cookie将被丢弃，以及。如果你想保存的cookies，您应该从这个类并实现其保存到磁盘到自己的存储格式。</p>
+<p>这个类只实现推荐的cookie规范的基本安全和不执行任何Cookie接受策略（它接受任何请求设置的所有Cookie ） 。为了复盖这些规则，你应该重新实现<a href="qnetworkcookiejar.html#cookiesForUrl" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html#cookiesForUrl">cookiesForUrl</a>（）和<a href="qnetworkcookiejar.html#setCookiesFromUrl" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html#setCookiesFromUrl">setCookiesFromUrl</a>（ ）虚函数。它们被称为<a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a>和<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>当他们发现新的cookies ，当他们需要cookie 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QNetworkCookieJar"></a>QNetworkCookieJar.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>创建<a href="qnetworkcookiejar.html" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html">QNetworkCookieJar</a>对象，并将成为父对象<i>parent</i>。</p>
+<p>饼干罐被初始化为空。</p>
+
+
+<h3 class="fn">
+<a name="allCookies"></a>list-of-QNetworkCookie QNetworkCookieJar.allCookies (<i>self</i>)</h3>
+<p>返回存储在这个饼干罐的所有Cookie。此功能适用于派生类对cookie保存到磁盘，以及实施cookie的过期和其他政策。</p>
+<p><b>See also</b> <a href="qnetworkcookiejar.html#setAllCookies" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html#setAllCookies">setAllCookies</a>（）和<a href="qnetworkcookiejar.html#cookiesForUrl" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html#cookiesForUrl">cookiesForUrl</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="cookiesForUrl"></a>list-of-QNetworkCookie QNetworkCookieJar.cookiesForUrl (<i>self</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>url</i>)</h3>
+<p>返回的cookie被添加到当一个请求被发送到<i>url</i>。调用此函数由默认<a href="qnetworkaccessmanager.html#createRequest" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#createRequest">QNetworkAccessManager.createRequest</a>（ ） ，它增加了这个功能来发送请求返回的Cookie 。</p>
+<p>如果找到多个cookie名称相同，但具有不同的路径，一个较长的路径是一个更短的路径之前返回。换句话说，该函数返回的cookie排序按递减的路径长度。</p>
+<p>默认<a href="qnetworkcookiejar.html" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html">QNetworkCookieJar</a>类只实现一个非常基本的安全策略（它确保了饼干'域和路径匹配答复的） 。为加强与自己的算法的安全策略，复盖cookiesForUrl （ ） 。</p>
+<p><b>See also</b> <a href="qnetworkcookiejar.html#setCookiesFromUrl" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html#setCookiesFromUrl">setCookiesFromUrl</a>（）和<a href="qnetworkaccessmanager.html#setCookieJar" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#setCookieJar">QNetworkAccessManager.setCookieJar</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setAllCookies"></a>QNetworkCookieJar.setAllCookies (<i>self</i>, list-of-QNetworkCookie <i>cookieList</i>)</h3>
+<p>设置由这个饼干罐认为是Cookie的内部列表<i>cookieList</i>。此功能适用于派生类通过重新实现来实现从永久存储，或者自己接受cookie政策加载饼干<a href="qnetworkcookiejar.html#setCookiesFromUrl" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html#setCookiesFromUrl">setCookiesFromUrl</a>（ ） 。</p>
+<p><b>See also</b> <a href="qnetworkcookiejar.html#allCookies" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html#allCookies">allCookies</a>（）和<a href="qnetworkcookiejar.html#setCookiesFromUrl" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html#setCookiesFromUrl">setCookiesFromUrl</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCookiesFromUrl"></a>bool QNetworkCookieJar.setCookiesFromUrl (<i>self</i>, list-of-QNetworkCookie <i>cookieList</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>url</i>)</h3>
+<p>添加饼干列表<i>cookieList</i>这个饼干罐。对于路径和域的默认值是从拍摄<i>url</i>对象。</p>
+<p>返回True如果一个或多个cookie被设置为<i>url</i>，否则为False 。</p>
+<p>如果一个cookie已经存在于饼干罐，它会被那些在被复盖<i>cookieList</i>。</p>
+<p>默认<a href="qnetworkcookiejar.html" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html">QNetworkCookieJar</a>类只实现一个非常基本的安全策略（它确保了饼干'域和路径匹配答复的） 。为加强与自己的算法的安全策略，复盖setCookiesFromUrl （ ） 。</p>
+<p>另外，<a href="qnetworkcookiejar.html" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html">QNetworkCookieJar</a>不会有一个最大的饼干桶的大小。重新实现这个函数会丢弃较早的cookie创建为新的空间。</p>
+<p><b>See also</b> <a href="qnetworkcookiejar.html#cookiesForUrl" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html#cookiesForUrl">cookiesForUrl</a>（）和<a href="qnetworkaccessmanager.html#setCookieJar" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#setCookieJar">QNetworkAccessManager.setCookieJar</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

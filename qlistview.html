@@ -1,0 +1,601 @@
+﻿<html>
+<head>
+<title>QListView Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QListView Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>的而QListView类提供了一个列表或图标视图到模型。<a href="#details">More...</a></p>
+
+<p>继承<a href="qabstractitemview.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html">QAbstractItemView</a>。</p>
+<p>通过继承<a href="qhelpindexwidget.html" tppabs="http://pyqt4doc.appspot.com/qhelpindexwidget.html">QHelpIndexWidget</a>，<a href="qlistwidget.html" tppabs="http://pyqt4doc.appspot.com/qlistwidget.html">QListWidget</a>和<a href="qundoview.html" tppabs="http://pyqt4doc.appspot.com/qundoview.html">QUndoView</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qlistview.html#Flow-enum" tppabs="http://pyqt4doc.appspot.com/qlistview.html#Flow-enum">Flow</a></b> { LeftToRight, TopToBottom }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qlistview.html#LayoutMode-enum" tppabs="http://pyqt4doc.appspot.com/qlistview.html#LayoutMode-enum">LayoutMode</a></b> { SinglePass, Batched }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qlistview.html#Movement-enum" tppabs="http://pyqt4doc.appspot.com/qlistview.html#Movement-enum">Movement</a></b> { Static, Free, Snap }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qlistview.html#ResizeMode-enum" tppabs="http://pyqt4doc.appspot.com/qlistview.html#ResizeMode-enum">ResizeMode</a></b> { Fixed, Adjust }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qlistview.html#ViewMode-enum" tppabs="http://pyqt4doc.appspot.com/qlistview.html#ViewMode-enum">ViewMode</a></b> { ListMode, IconMode }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#QListView" tppabs="http://pyqt4doc.appspot.com/qlistview.html#QListView">__init__</a></b> (<i>self</i>, QWidget <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>int <b><a href="qlistview.html#batchSize" tppabs="http://pyqt4doc.appspot.com/qlistview.html#batchSize">batchSize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#clearPropertyFlags" tppabs="http://pyqt4doc.appspot.com/qlistview.html#clearPropertyFlags">clearPropertyFlags</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#currentChanged" tppabs="http://pyqt4doc.appspot.com/qlistview.html#currentChanged">currentChanged</a></b> (<i>self</i>, QModelIndex <i>current</i>, QModelIndex <i>previous</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#dataChanged" tppabs="http://pyqt4doc.appspot.com/qlistview.html#dataChanged">dataChanged</a></b> (<i>self</i>, QModelIndex <i>topLeft</i>, QModelIndex <i>bottomRight</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#dragLeaveEvent" tppabs="http://pyqt4doc.appspot.com/qlistview.html#dragLeaveEvent">dragLeaveEvent</a></b> (<i>self</i>, QDragLeaveEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#dragMoveEvent" tppabs="http://pyqt4doc.appspot.com/qlistview.html#dragMoveEvent">dragMoveEvent</a></b> (<i>self</i>, QDragMoveEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#dropEvent" tppabs="http://pyqt4doc.appspot.com/qlistview.html#dropEvent">dropEvent</a></b> (<i>self</i>, QDropEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qlistview.html#event" tppabs="http://pyqt4doc.appspot.com/qlistview.html#event">event</a></b> (<i>self</i>, QEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>Flow <b><a href="qlistview.html#flow" tppabs="http://pyqt4doc.appspot.com/qlistview.html#flow">flow</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qlistview.html#gridSize" tppabs="http://pyqt4doc.appspot.com/qlistview.html#gridSize">gridSize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qlistview.html#horizontalOffset" tppabs="http://pyqt4doc.appspot.com/qlistview.html#horizontalOffset">horizontalOffset</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QModelIndex <b><a href="qlistview.html#indexAt" tppabs="http://pyqt4doc.appspot.com/qlistview.html#indexAt">indexAt</a></b> (<i>self</i>, QPoint <i>p</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qlistview.html#isIndexHidden" tppabs="http://pyqt4doc.appspot.com/qlistview.html#isIndexHidden">isIndexHidden</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qlistview.html#isRowHidden" tppabs="http://pyqt4doc.appspot.com/qlistview.html#isRowHidden">isRowHidden</a></b> (<i>self</i>, int <i>row</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qlistview.html#isSelectionRectVisible" tppabs="http://pyqt4doc.appspot.com/qlistview.html#isSelectionRectVisible">isSelectionRectVisible</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qlistview.html#isWrapping" tppabs="http://pyqt4doc.appspot.com/qlistview.html#isWrapping">isWrapping</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>LayoutMode <b><a href="qlistview.html#layoutMode" tppabs="http://pyqt4doc.appspot.com/qlistview.html#layoutMode">layoutMode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qlistview.html#modelColumn" tppabs="http://pyqt4doc.appspot.com/qlistview.html#modelColumn">modelColumn</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#mouseMoveEvent" tppabs="http://pyqt4doc.appspot.com/qlistview.html#mouseMoveEvent">mouseMoveEvent</a></b> (<i>self</i>, QMouseEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#mouseReleaseEvent" tppabs="http://pyqt4doc.appspot.com/qlistview.html#mouseReleaseEvent">mouseReleaseEvent</a></b> (<i>self</i>, QMouseEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>QModelIndex <b><a href="qlistview.html#moveCursor" tppabs="http://pyqt4doc.appspot.com/qlistview.html#moveCursor">moveCursor</a></b> (<i>self</i>, QAbstractItemView.CursorAction <i>cursorAction</i>, Qt.KeyboardModifiers <i>modifiers</i>)</li>
+<li>
+<div class="fn"></div>Movement <b><a href="qlistview.html#movement" tppabs="http://pyqt4doc.appspot.com/qlistview.html#movement">movement</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qlistview.html#paintEvent">paintEvent</a></b> (<i>self</i>, QPaintEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>QRect <b><a href="qlistview.html#rectForIndex" tppabs="http://pyqt4doc.appspot.com/qlistview.html#rectForIndex">rectForIndex</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#reset" tppabs="http://pyqt4doc.appspot.com/qlistview.html#reset">reset</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#resizeEvent" tppabs="http://pyqt4doc.appspot.com/qlistview.html#resizeEvent">resizeEvent</a></b> (<i>self</i>, QResizeEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>ResizeMode <b><a href="qlistview.html#resizeMode" tppabs="http://pyqt4doc.appspot.com/qlistview.html#resizeMode">resizeMode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#rowsAboutToBeRemoved" tppabs="http://pyqt4doc.appspot.com/qlistview.html#rowsAboutToBeRemoved">rowsAboutToBeRemoved</a></b> (<i>self</i>, QModelIndex <i>parent</i>, int <i>start</i>, int <i>end</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#rowsInserted" tppabs="http://pyqt4doc.appspot.com/qlistview.html#rowsInserted">rowsInserted</a></b> (<i>self</i>, QModelIndex <i>parent</i>, int <i>start</i>, int <i>end</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#scrollContentsBy" tppabs="http://pyqt4doc.appspot.com/qlistview.html#scrollContentsBy">scrollContentsBy</a></b> (<i>self</i>, int <i>dx</i>, int <i>dy</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#scrollTo" tppabs="http://pyqt4doc.appspot.com/qlistview.html#scrollTo">scrollTo</a></b> (<i>self</i>, QModelIndex <i>index</i>, QAbstractItemView.ScrollHint <i>hint</i> = QAbstractItemView.EnsureVisible)</li>
+<li>
+<div class="fn"></div>list-of-QModelIndex <b><a href="qlistview.html#selectedIndexes" tppabs="http://pyqt4doc.appspot.com/qlistview.html#selectedIndexes">selectedIndexes</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#selectionChanged" tppabs="http://pyqt4doc.appspot.com/qlistview.html#selectionChanged">selectionChanged</a></b> (<i>self</i>, QItemSelection <i>selected</i>, QItemSelection <i>deselected</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#setBatchSize" tppabs="http://pyqt4doc.appspot.com/qlistview.html#setBatchSize">setBatchSize</a></b> (<i>self</i>, int <i>batchSize</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#setFlow" tppabs="http://pyqt4doc.appspot.com/qlistview.html#setFlow">setFlow</a></b> (<i>self</i>, Flow <i>flow</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#setGridSize" tppabs="http://pyqt4doc.appspot.com/qlistview.html#setGridSize">setGridSize</a></b> (<i>self</i>, QSize <i>size</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#setLayoutMode" tppabs="http://pyqt4doc.appspot.com/qlistview.html#setLayoutMode">setLayoutMode</a></b> (<i>self</i>, LayoutMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#setModelColumn" tppabs="http://pyqt4doc.appspot.com/qlistview.html#setModelColumn">setModelColumn</a></b> (<i>self</i>, int <i>column</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#setMovement" tppabs="http://pyqt4doc.appspot.com/qlistview.html#setMovement">setMovement</a></b> (<i>self</i>, Movement <i>movement</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#setPositionForIndex" tppabs="http://pyqt4doc.appspot.com/qlistview.html#setPositionForIndex">setPositionForIndex</a></b> (<i>self</i>, QPoint <i>position</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#setResizeMode" tppabs="http://pyqt4doc.appspot.com/qlistview.html#setResizeMode">setResizeMode</a></b> (<i>self</i>, ResizeMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#setRootIndex" tppabs="http://pyqt4doc.appspot.com/qlistview.html#setRootIndex">setRootIndex</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#setRowHidden" tppabs="http://pyqt4doc.appspot.com/qlistview.html#setRowHidden">setRowHidden</a></b> (<i>self</i>, int <i>row</i>, bool <i>hide</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#setSelection" tppabs="http://pyqt4doc.appspot.com/qlistview.html#setSelection">setSelection</a></b> (<i>self</i>, QRect <i>rect</i>, QItemSelectionModel.SelectionFlags <i>command</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#setSelectionRectVisible" tppabs="http://pyqt4doc.appspot.com/qlistview.html#setSelectionRectVisible">setSelectionRectVisible</a></b> (<i>self</i>, bool <i>show</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#setSpacing" tppabs="http://pyqt4doc.appspot.com/qlistview.html#setSpacing">setSpacing</a></b> (<i>self</i>, int <i>space</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#setUniformItemSizes" tppabs="http://pyqt4doc.appspot.com/qlistview.html#setUniformItemSizes">setUniformItemSizes</a></b> (<i>self</i>, bool <i>enable</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#setViewMode" tppabs="http://pyqt4doc.appspot.com/qlistview.html#setViewMode">setViewMode</a></b> (<i>self</i>, ViewMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#setWordWrap" tppabs="http://pyqt4doc.appspot.com/qlistview.html#setWordWrap">setWordWrap</a></b> (<i>self</i>, bool <i>on</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#setWrapping" tppabs="http://pyqt4doc.appspot.com/qlistview.html#setWrapping">setWrapping</a></b> (<i>self</i>, bool <i>enable</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qlistview.html#spacing" tppabs="http://pyqt4doc.appspot.com/qlistview.html#spacing">spacing</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#startDrag" tppabs="http://pyqt4doc.appspot.com/qlistview.html#startDrag">startDrag</a></b> (<i>self</i>, Qt.DropActions <i>supportedActions</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#timerEvent" tppabs="http://pyqt4doc.appspot.com/qlistview.html#timerEvent">timerEvent</a></b> (<i>self</i>, QTimerEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qlistview.html#uniformItemSizes" tppabs="http://pyqt4doc.appspot.com/qlistview.html#uniformItemSizes">uniformItemSizes</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlistview.html#updateGeometries" tppabs="http://pyqt4doc.appspot.com/qlistview.html#updateGeometries">updateGeometries</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qlistview.html#verticalOffset" tppabs="http://pyqt4doc.appspot.com/qlistview.html#verticalOffset">verticalOffset</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>ViewMode <b><a href="qlistview.html#viewMode" tppabs="http://pyqt4doc.appspot.com/qlistview.html#viewMode">viewMode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStyleOptionViewItem <b><a href="qlistview.html#viewOptions" tppabs="http://pyqt4doc.appspot.com/qlistview.html#viewOptions">viewOptions</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QRect <b><a href="qlistview.html#visualRect" tppabs="http://pyqt4doc.appspot.com/qlistview.html#visualRect">visualRect</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qlistview.html#visualRegionForSelection" tppabs="http://pyqt4doc.appspot.com/qlistview.html#visualRegionForSelection">visualRegionForSelection</a></b> (<i>self</i>, QItemSelection <i>selection</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qlistview.html#wordWrap" tppabs="http://pyqt4doc.appspot.com/qlistview.html#wordWrap">wordWrap</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul><li>
+<div class="fn"></div>void <b><a href="qlistview.html#indexesMoved" tppabs="http://pyqt4doc.appspot.com/qlistview.html#indexesMoved">indexesMoved</a></b> (const QModelIndexList&amp;)</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>的而QListView类提供了一个列表或图标视图到模型。</p>
+<p>一而QListView呈现存储在一个模型中的项目，无论是作为一个简单的非层次结构列表，或作为图标的集合。这个类是用来提供以前由提供的列表和图标视图<tt>QListBox</tt>和<tt>QIconView</tt>类，但通过使用Qt的模型/视图结构中提供的更灵活的方法。</p>
+<p>的而QListView类中的一个<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/model-view.html">Model/View Classes</a>并且是Qt的一部分<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/model-view-programming.html">model/view framework</a>。</p>
+<p>这种观点不显示水平或垂直头，显示项目列表与水平头，使用<a href="qtreeview.html" tppabs="http://pyqt4doc.appspot.com/qtreeview.html">QTreeView</a>代替。</p>
+<p>而QListView实现由定义的接口<a href="qabstractitemview.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html">QAbstractItemView</a>类以允许其显示由从派生模型提供数据<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a>类。</p>
+<p>在：在列表视图中的项目，可以使用两种视图模式之一显示<a href="qlistview.html#ViewMode-enum" tppabs="http://pyqt4doc.appspot.com/qlistview.html#ViewMode-enum">ListMode</a>，该项目显示在一个简单的列表形式，在<a href="qlistview.html#ViewMode-enum" tppabs="http://pyqt4doc.appspot.com/qlistview.html#ViewMode-enum">IconMode</a>，列表视图采用的形式<i>icon view</i>在该项目在文件管理器中显示包含的文件图标。默认情况下，列表视图中<a href="qlistview.html#ViewMode-enum" tppabs="http://pyqt4doc.appspot.com/qlistview.html#ViewMode-enum">ListMode</a>。要更改视图模式下，使用<a href="qlistview.html#viewMode-prop" tppabs="http://pyqt4doc.appspot.com/qlistview.html#viewMode-prop">setViewMode</a>（ ）函数，并确定当前视图模式下，使用<a href="qlistview.html#viewMode-prop" tppabs="http://pyqt4doc.appspot.com/qlistview.html#viewMode-prop">viewMode</a>（ ） 。</p>
+<p>在这些视图项目，由指定的方向布局<a href="qlistview.html#flow-prop" tppabs="http://pyqt4doc.appspot.com/qlistview.html#flow-prop">flow</a>列表视图的（ ） 。该条目可以被固定在适当位置，或者可以移动，这取决于视图的<a href="qlistview.html#movement-prop" tppabs="http://pyqt4doc.appspot.com/qlistview.html#movement-prop">movement</a>（ ）状态。</p>
+<p>如果在模型中的项，不能完全在流动方向上布置，它们可以在视图窗口部件的边界被包裹，这取决于<a href="qlistview.html#isWrapping-prop" tppabs="http://pyqt4doc.appspot.com/qlistview.html#isWrapping-prop">isWrapping</a>（ ） 。当项目正由一个图标视图中表示此属性很有用。</p>
+<p>该<a href="qlistview.html#resizeMode-prop" tppabs="http://pyqt4doc.appspot.com/qlistview.html#resizeMode-prop">resizeMode</a>（）和<a href="qlistview.html#layoutMode-prop" tppabs="http://pyqt4doc.appspot.com/qlistview.html#layoutMode-prop">layoutMode</a>（ ）治理项目的布局方式和时间。项目按他们的间隔<a href="qlistview.html#spacing-prop" tppabs="http://pyqt4doc.appspot.com/qlistview.html#spacing-prop">spacing</a>（） ，并能大小的由指定的名义网格内的存在<a href="qlistview.html#gridSize-prop" tppabs="http://pyqt4doc.appspot.com/qlistview.html#gridSize-prop">gridSize</a>（ ） 。本项目可以根据被渲染为或大或小的图标<a href="qabstractitemview.html#iconSize-prop" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#iconSize-prop">iconSize</a>（ ） 。</p>
+<table class="generic" width="100%">
+<tr class="odd" valign="top">
+<td><img alt="Screenshot of a Windows XP style list view" src="images/windowsxp-listview.png"></td>
+<td><img alt="Screenshot of a Macintosh style table view" src="images/macintosh-listview.png"></td>
+<td><img alt="Screenshot of a Plastique style table view" src="images/plastique-listview.png"></td>
+</tr>
+<tr class="even" valign="top">
+<td>A <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/gallery-windowsxp.html">Windows XP style</a> list
+view.</td>
+<td>A <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/gallery-macintosh.html">Macintosh style</a> list
+view.</td>
+<td>A <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/gallery-plastique.html">Plastique style</a> list
+view.</td>
+</tr>
+</table>
+<a id="improving-performance" name="improving-performance"></a>
+<h3>Improving Performance</h3>
+<p>它可以给出关于它正在处理，以便显示大量项目时，以改善其性能的数据的视图的提示。可以采取一种方法对于旨在与相等尺寸的显示项目的观点是设置<a href="qlistview.html#uniformItemSizes-prop" tppabs="http://pyqt4doc.appspot.com/qlistview.html#uniformItemSizes-prop">uniformItemSizes</a>属性设置为True 。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="Flow-enum"></a>QListView.Flow</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QListView.LeftToRight</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该项目奠定了在视图中从左边到右边。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QListView.TopToBottom</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该项目的布局视图从顶部至底部。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="LayoutMode-enum"></a>QListView.LayoutMode</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QListView.SinglePass</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该项目奠定了一下子。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QListView.Batched</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该项目在分批布局<a href="qlistview.html#batchSize-prop" tppabs="http://pyqt4doc.appspot.com/qlistview.html#batchSize-prop">batchSize</a>项目。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qlistview.html#batchSize-prop" tppabs="http://pyqt4doc.appspot.com/qlistview.html#batchSize-prop">batchSize</a>。</p>
+
+
+<h3 class="fn">
+<a name="Movement-enum"></a>QListView.Movement</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QListView.Static</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该项目不能被用户移动。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QListView.Free</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该项目可以由用户自由移动。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QListView.Snap</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">该项目捕捉到移动时指定的网格;见<a href="qlistview.html#gridSize-prop" tppabs="http://pyqt4doc.appspot.com/qlistview.html#gridSize-prop">setGridSize</a>（ ） 。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="ResizeMode-enum"></a>QListView.ResizeMode</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QListView.Fixed</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该项目将只在第一次的视图显示进行布局。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QListView.Adjust</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该项目将在每次视图调整大小时布局。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="ViewMode-enum"></a>QListView.ViewMode</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QListView.ListMode</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该项目的布局使用<a href="qlistview.html#Flow-enum" tppabs="http://pyqt4doc.appspot.com/qlistview.html#Flow-enum">TopToBottom</a>流，具有体积小，静态运动</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QListView.IconMode</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该项目的布局使用<a href="qlistview.html#Flow-enum" tppabs="http://pyqt4doc.appspot.com/qlistview.html#Flow-enum">LeftToRight</a>流，具有大尺寸和自由流动</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QListView"></a>QListView.__init__ (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>创建一个新的<a href="qlistview.html" tppabs="http://pyqt4doc.appspot.com/qlistview.html">QListView</a>用给定的<i>parent</i>查看模型。使用<a href="qabstractitemview.html#setModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setModel">setModel</a>（）来设定模型。</p>
+
+
+<h3 class="fn">
+<a name="batchSize"></a>int QListView.batchSize (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="clearPropertyFlags"></a>QListView.clearPropertyFlags (<i>self</i>)</h3>
+<p>清除<a href="qlistview.html" tppabs="http://pyqt4doc.appspot.com/qlistview.html">QListView</a>特定的属性标志。看<a href="qlistview.html#viewMode-prop" tppabs="http://pyqt4doc.appspot.com/qlistview.html#viewMode-prop">viewMode</a>。</p>
+<p>属性继承自<a href="qabstractitemview.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html">QAbstractItemView</a>不包括由酒店的标志。具体来说，<a href="qabstractitemview.html#dragEnabled-prop" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#dragEnabled-prop">dragEnabled</a>和<a href="qwidget.html#acceptDrops-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#acceptDrops-prop">acceptsDrops</a>通过计算<a href="qlistview.html" tppabs="http://pyqt4doc.appspot.com/qlistview.html">QListView</a>当调用<a href="qlistview.html#movement-prop" tppabs="http://pyqt4doc.appspot.com/qlistview.html#movement-prop">setMovement</a>（）或<a href="qlistview.html#viewMode-prop" tppabs="http://pyqt4doc.appspot.com/qlistview.html#viewMode-prop">setViewMode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentChanged"></a>QListView.currentChanged (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>current</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>previous</i>)</h3>
+<p>从重新实现<a href="qabstractitemview.html#currentChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#currentChanged">QAbstractItemView.currentChanged</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="dataChanged"></a>QListView.dataChanged (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>topLeft</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>bottomRight</i>)</h3>
+<p>从重新实现<a href="qabstractitemview.html#dataChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#dataChanged">QAbstractItemView.dataChanged</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="dragLeaveEvent"></a>QListView.dragLeaveEvent (<i>self</i>, <a href="qdragleaveevent.html" tppabs="http://pyqt4doc.appspot.com/qdragleaveevent.html">QDragLeaveEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#dragLeaveEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#dragLeaveEvent">QWidget.dragLeaveEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="dragMoveEvent"></a>QListView.dragMoveEvent (<i>self</i>, <a href="qdragmoveevent.html" tppabs="http://pyqt4doc.appspot.com/qdragmoveevent.html">QDragMoveEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#dragMoveEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#dragMoveEvent">QWidget.dragMoveEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="dropEvent"></a>QListView.dropEvent (<i>self</i>, <a href="qdropevent.html" tppabs="http://pyqt4doc.appspot.com/qdropevent.html">QDropEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#dropEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#dropEvent">QWidget.dropEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="event"></a>bool QListView.event (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">QObject.event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="flow"></a><a href="qlistview.html#Flow-enum" tppabs="http://pyqt4doc.appspot.com/qlistview.html#Flow-enum">Flow</a> QListView.flow (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="gridSize"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QListView.gridSize (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="horizontalOffset"></a>int QListView.horizontalOffset (<i>self</i>)</h3>
+<p>从重新实现<a href="qabstractitemview.html#horizontalOffset" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#horizontalOffset">QAbstractItemView.horizontalOffset</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="indexAt"></a><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> QListView.indexAt (<i>self</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>p</i>)</h3>
+<p>从重新实现<a href="qabstractitemview.html#indexAt" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#indexAt">QAbstractItemView.indexAt</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isIndexHidden"></a>bool QListView.isIndexHidden (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>从重新实现<a href="qabstractitemview.html#isIndexHidden" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#isIndexHidden">QAbstractItemView.isIndexHidden</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isRowHidden"></a>bool QListView.isRowHidden (<i>self</i>, int <i>row</i>)</h3>
+<p>返回True如果<i>row</i>被隐藏，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isSelectionRectVisible"></a>bool QListView.isSelectionRectVisible (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="isWrapping"></a>bool QListView.isWrapping (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="layoutMode"></a><a href="qlistview.html#LayoutMode-enum" tppabs="http://pyqt4doc.appspot.com/qlistview.html#LayoutMode-enum">LayoutMode</a> QListView.layoutMode (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="modelColumn"></a>int QListView.modelColumn (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="mouseMoveEvent"></a>QListView.mouseMoveEvent (<i>self</i>, <a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#mouseMoveEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#mouseMoveEvent">QWidget.mouseMoveEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mouseReleaseEvent"></a>QListView.mouseReleaseEvent (<i>self</i>, <a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#mouseReleaseEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#mouseReleaseEvent">QWidget.mouseReleaseEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="moveCursor"></a><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> QListView.moveCursor (<i>self</i>, <a href="qabstractitemview.html#CursorAction-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#CursorAction-enum">QAbstractItemView.CursorAction</a> <i>cursorAction</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-keyboardmodifiers.html">Qt.KeyboardModifiers</a> <i>modifiers</i>)</h3>
+<p>从重新实现<a href="qabstractitemview.html#moveCursor" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#moveCursor">QAbstractItemView.moveCursor</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="movement"></a><a href="qlistview.html#Movement-enum" tppabs="http://pyqt4doc.appspot.com/qlistview.html#Movement-enum">Movement</a> QListView.movement (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="paintEvent"></a>QListView.paintEvent (<i>self</i>, <a href="qpaintevent.html" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html">QPaintEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#paintEvent">QWidget.paintEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rectForIndex"></a><a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> QListView.rectForIndex (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>返回该项目的位置的矩形<i>index</i>在模型中。矩形是在内容坐标。</p>
+<p><b>See also</b> <a href="qlistview.html#visualRect" tppabs="http://pyqt4doc.appspot.com/qlistview.html#visualRect">visualRect</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="reset"></a>QListView.reset (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="resizeEvent"></a>QListView.resizeEvent (<i>self</i>, <a href="qresizeevent.html" tppabs="http://pyqt4doc.appspot.com/qresizeevent.html">QResizeEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#resizeEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#resizeEvent">QWidget.resizeEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="resizeMode"></a><a href="qlistview.html#ResizeMode-enum" tppabs="http://pyqt4doc.appspot.com/qlistview.html#ResizeMode-enum">ResizeMode</a> QListView.resizeMode (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="rowsAboutToBeRemoved"></a>QListView.rowsAboutToBeRemoved (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i>, int <i>start</i>, int <i>end</i>)</h3>
+<p>从重新实现<a href="qabstractitemview.html#rowsAboutToBeRemoved" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#rowsAboutToBeRemoved">QAbstractItemView.rowsAboutToBeRemoved</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rowsInserted"></a>QListView.rowsInserted (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i>, int <i>start</i>, int <i>end</i>)</h3>
+<p>从重新实现<a href="qabstractitemview.html#rowsInserted" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#rowsInserted">QAbstractItemView.rowsInserted</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="scrollContentsBy"></a>QListView.scrollContentsBy (<i>self</i>, int <i>dx</i>, int <i>dy</i>)</h3>
+<h3 class="fn">
+<a name="scrollTo"></a>QListView.scrollTo (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>, <a href="qabstractitemview.html#ScrollHint-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#ScrollHint-enum">QAbstractItemView.ScrollHint</a> <i>hint</i> = QAbstractItemView.EnsureVisible)</h3>
+<p>从重新实现<a href="qabstractitemview.html#scrollTo" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#scrollTo">QAbstractItemView.scrollTo</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="selectedIndexes"></a>list-of-QModelIndex QListView.selectedIndexes (<i>self</i>)</h3>
+<p>从重新实现<a href="qabstractitemview.html#selectedIndexes" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#selectedIndexes">QAbstractItemView.selectedIndexes</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="selectionChanged"></a>QListView.selectionChanged (<i>self</i>, <a href="qitemselection.html" tppabs="http://pyqt4doc.appspot.com/qitemselection.html">QItemSelection</a> <i>selected</i>, <a href="qitemselection.html" tppabs="http://pyqt4doc.appspot.com/qitemselection.html">QItemSelection</a> <i>deselected</i>)</h3>
+<p>从重新实现<a href="qabstractitemview.html#selectionChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#selectionChanged">QAbstractItemView.selectionChanged</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setBatchSize"></a>QListView.setBatchSize (<i>self</i>, int <i>batchSize</i>)</h3>
+<h3 class="fn">
+<a name="setFlow"></a>QListView.setFlow (<i>self</i>, <a href="qlistview.html#Flow-enum" tppabs="http://pyqt4doc.appspot.com/qlistview.html#Flow-enum">Flow</a> <i>flow</i>)</h3>
+<h3 class="fn">
+<a name="setGridSize"></a>QListView.setGridSize (<i>self</i>, <a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> <i>size</i>)</h3>
+<h3 class="fn">
+<a name="setLayoutMode"></a>QListView.setLayoutMode (<i>self</i>, <a href="qlistview.html#LayoutMode-enum" tppabs="http://pyqt4doc.appspot.com/qlistview.html#LayoutMode-enum">LayoutMode</a> <i>mode</i>)</h3>
+<h3 class="fn">
+<a name="setModelColumn"></a>QListView.setModelColumn (<i>self</i>, int <i>column</i>)</h3>
+<h3 class="fn">
+<a name="setMovement"></a>QListView.setMovement (<i>self</i>, <a href="qlistview.html#Movement-enum" tppabs="http://pyqt4doc.appspot.com/qlistview.html#Movement-enum">Movement</a> <i>movement</i>)</h3>
+<h3 class="fn">
+<a name="setPositionForIndex"></a>QListView.setPositionForIndex (<i>self</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>position</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>设置在该项目中的内容位置<i>index</i>在模型中，以给定的<i>position</i>。如果列表视图的运动模式是静态的还是它的视图模式是<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qml-listview.html">ListView</a>，此功能不会有任何效果。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+
+
+<h3 class="fn">
+<a name="setResizeMode"></a>QListView.setResizeMode (<i>self</i>, <a href="qlistview.html#ResizeMode-enum" tppabs="http://pyqt4doc.appspot.com/qlistview.html#ResizeMode-enum">ResizeMode</a> <i>mode</i>)</h3>
+<h3 class="fn">
+<a name="setRootIndex"></a>QListView.setRootIndex (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<h3 class="fn">
+<a name="setRowHidden"></a>QListView.setRowHidden (<i>self</i>, int <i>row</i>, bool <i>hide</i>)</h3>
+<p>If <i>hide</i>诚然，在给定<i>row</i>将被隐藏，否则<i>row</i>将显示。</p>
+<p><b>See also</b> <a href="qlistview.html#isRowHidden" tppabs="http://pyqt4doc.appspot.com/qlistview.html#isRowHidden">isRowHidden</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setSelection"></a>QListView.setSelection (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>rect</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel-selectionflags.html">QItemSelectionModel.SelectionFlags</a> <i>command</i>)</h3>
+<p>从重新实现<a href="qabstractitemview.html#setSelection" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setSelection">QAbstractItemView.setSelection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setSelectionRectVisible"></a>QListView.setSelectionRectVisible (<i>self</i>, bool <i>show</i>)</h3>
+<h3 class="fn">
+<a name="setSpacing"></a>QListView.setSpacing (<i>self</i>, int <i>space</i>)</h3>
+<h3 class="fn">
+<a name="setUniformItemSizes"></a>QListView.setUniformItemSizes (<i>self</i>, bool <i>enable</i>)</h3>
+<h3 class="fn">
+<a name="setViewMode"></a>QListView.setViewMode (<i>self</i>, <a href="qlistview.html#ViewMode-enum" tppabs="http://pyqt4doc.appspot.com/qlistview.html#ViewMode-enum">ViewMode</a> <i>mode</i>)</h3>
+<h3 class="fn">
+<a name="setWordWrap"></a>QListView.setWordWrap (<i>self</i>, bool <i>on</i>)</h3>
+<h3 class="fn">
+<a name="setWrapping"></a>QListView.setWrapping (<i>self</i>, bool <i>enable</i>)</h3>
+<h3 class="fn">
+<a name="spacing"></a>int QListView.spacing (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="startDrag"></a>QListView.startDrag (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-dropactions.html">Qt.DropActions</a> <i>supportedActions</i>)</h3>
+<p>从重新实现<a href="qabstractitemview.html#startDrag" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#startDrag">QAbstractItemView.startDrag</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="timerEvent"></a>QListView.timerEvent (<i>self</i>, <a href="qtimerevent.html" tppabs="http://pyqt4doc.appspot.com/qtimerevent.html">QTimerEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qobject.html#timerEvent" tppabs="http://pyqt4doc.appspot.com/qobject.html#timerEvent">QObject.timerEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="uniformItemSizes"></a>bool QListView.uniformItemSizes (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="updateGeometries"></a>QListView.updateGeometries (<i>self</i>)</h3>
+<p>从重新实现<a href="qabstractitemview.html#updateGeometries" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#updateGeometries">QAbstractItemView.updateGeometries</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="verticalOffset"></a>int QListView.verticalOffset (<i>self</i>)</h3>
+<p>从重新实现<a href="qabstractitemview.html#verticalOffset" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#verticalOffset">QAbstractItemView.verticalOffset</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="viewMode"></a><a href="qlistview.html#ViewMode-enum" tppabs="http://pyqt4doc.appspot.com/qlistview.html#ViewMode-enum">ViewMode</a> QListView.viewMode (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="viewOptions"></a><a href="qstyleoptionviewitem.html" tppabs="http://pyqt4doc.appspot.com/qstyleoptionviewitem.html">QStyleOptionViewItem</a> QListView.viewOptions (<i>self</i>)</h3>
+<p>从重新实现<a href="qabstractitemview.html#viewOptions" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#viewOptions">QAbstractItemView.viewOptions</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="visualRect"></a><a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> QListView.visualRect (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>从重新实现<a href="qabstractitemview.html#visualRect" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#visualRect">QAbstractItemView.visualRect</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="visualRegionForSelection"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QListView.visualRegionForSelection (<i>self</i>, <a href="qitemselection.html" tppabs="http://pyqt4doc.appspot.com/qitemselection.html">QItemSelection</a> <i>selection</i>)</h3>
+<p>从重新实现<a href="qabstractitemview.html#visualRegionForSelection" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#visualRegionForSelection">QAbstractItemView.visualRegionForSelection</a>（ ） 。</p>
+<p>由于4.7 ，返回的区域仅包含矩形相交（或计入）的视口。</p>
+<h3 class="fn">
+<a name="wordWrap"></a>bool QListView.wordWrap (<i>self</i>)</h3>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="indexesMoved"></a>void indexesMoved (const QModelIndexList&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>指定时，这个信号被发射<i>indexes</i>移动在视图中。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

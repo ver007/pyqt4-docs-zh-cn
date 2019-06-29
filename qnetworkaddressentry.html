@@ -1,0 +1,152 @@
+﻿<html>
+<head>
+<title>QNetworkAddressEntry Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QNetworkAddressEntry Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtnetwork.html">QtNetwork</a> module]</sup></sup>
+</h1>
+<p>该QNetworkAddressEntry类存储一个IP地址，通过网络接口支持，连同其相关联的网络掩码和广播地址。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkaddressentry.html#QNetworkAddressEntry" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#QNetworkAddressEntry">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkaddressentry.html#QNetworkAddressEntry-2" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#QNetworkAddressEntry-2">__init__</a></b> (<i>self</i>, QNetworkAddressEntry <i>other</i>)</li>
+<li>
+<div class="fn"></div>QHostAddress <b><a href="qnetworkaddressentry.html#broadcast" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#broadcast">broadcast</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QHostAddress <b><a href="qnetworkaddressentry.html#ip" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#ip">ip</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QHostAddress <b><a href="qnetworkaddressentry.html#netmask" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#netmask">netmask</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qnetworkaddressentry.html#prefixLength" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#prefixLength">prefixLength</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkaddressentry.html#setBroadcast" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#setBroadcast">setBroadcast</a></b> (<i>self</i>, QHostAddress <i>newBroadcast</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkaddressentry.html#setIp" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#setIp">setIp</a></b> (<i>self</i>, QHostAddress <i>newIp</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkaddressentry.html#setNetmask" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#setNetmask">setNetmask</a></b> (<i>self</i>, QHostAddress <i>newNetmask</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkaddressentry.html#setPrefixLength" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#setPrefixLength">setPrefixLength</a></b> (<i>self</i>, int <i>length</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>bool <b><a href="qnetworkaddressentry.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#__eq__">__eq__</a></b> (<i>self</i>, QNetworkAddressEntry <i>other</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qnetworkaddressentry.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#__ne__">__ne__</a></b> (<i>self</i>, QNetworkAddressEntry <i>other</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QNetworkAddressEntry类存储一个IP地址，通过网络接口支持，连同其相关联的网络掩码和广播地址。</p>
+<p>每个网络接口可以包含零个或多个IP地址，从而可以用一个掩码和/或广播地址（根据从操作系统支持）相关联。</p>
+<p>这个类表示一个这样的团体。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QNetworkAddressEntry"></a>QNetworkAddressEntry.__init__ (<i>self</i>)</h3>
+<p>构造一个空<a href="qnetworkaddressentry.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html">QNetworkAddressEntry</a>对象。</p>
+
+
+<h3 class="fn">
+<a name="QNetworkAddressEntry-2"></a>QNetworkAddressEntry.__init__ (<i>self</i>, <a href="qnetworkaddressentry.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html">QNetworkAddressEntry</a> <i>other</i>)</h3>
+<p>构造一个<a href="qnetworkaddressentry.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html">QNetworkAddressEntry</a>对象，该对象是该对象的一个拷贝<i>other</i>。</p>
+
+
+<h3 class="fn">
+<a name="broadcast"></a><a href="qhostaddress.html" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html">QHostAddress</a> QNetworkAddressEntry.broadcast (<i>self</i>)</h3>
+<p>返回与该IPv4地址和网络掩码相关联的广播地址。它通常可以从这些2通过设置于其中的网络掩码包含0的IP地址为1的比特导出。 （换句话说，通过按位或运算与网络掩码的逆的IP地址）</p>
+<p>这个成员总是空的IPv6地址，因为广播的概念已经被摒弃，该系统支持多播的。特别是，该组对应于本地网络中的所有节点的主机可以通过“所有节点”特殊的多播组（地址FF02.1 ）即可到达。</p>
+<p><b>See also</b> <a href="qnetworkaddressentry.html#setBroadcast" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#setBroadcast">setBroadcast</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="ip"></a><a href="qhostaddress.html" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html">QHostAddress</a> QNetworkAddressEntry.ip (<i>self</i>)</h3>
+<p>这个函数返回一个IPv4或IPv6地址发现，被发现在一个网络接口。</p>
+<p><b>See also</b> <a href="qnetworkaddressentry.html#setIp" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#setIp">setIp</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="netmask"></a><a href="qhostaddress.html" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html">QHostAddress</a> QNetworkAddressEntry.netmask (<i>self</i>)</h3>
+<p>返回与IP地址关联的子网掩码。网络掩码是体现在一个IP地址，如255.255.0.0的形式。</p>
+<p>对于IPv6地址，前缀长度被转换为一个地址设置为1的位的数目等于前缀长度。为64位（最常见的值）的前缀长度，网络掩码将被表示为一个<a href="qhostaddress.html" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html">QHostAddress</a>保持的地址FFFF： FFFF： FFFF： FFFF。</p>
+<p><b>See also</b> <a href="qnetworkaddressentry.html#setNetmask" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#setNetmask">setNetmask</a>（）和<a href="qnetworkaddressentry.html#prefixLength" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#prefixLength">prefixLength</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="prefixLength"></a>int QNetworkAddressEntry.prefixLength (<i>self</i>)</h3>
+<p>返回此IP地址的前缀长度。前缀长度的子网掩码设置为1的比特数匹配（见<a href="qnetworkaddressentry.html#netmask" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#netmask">netmask</a>（））。对于IPv4地址，该值介于0和32 。为IPv6地址，它包含在0和128 ，是表示地址的最佳形式。</p>
+<p>该函数返回-1，如果前缀长度无法确定（即，<a href="qnetworkaddressentry.html#netmask" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#netmask">netmask</a>（ ）返回一个空QHostAddress （ ） ） 。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qnetworkaddressentry.html#setPrefixLength" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#setPrefixLength">setPrefixLength</a>（）和<a href="qnetworkaddressentry.html#netmask" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#netmask">netmask</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setBroadcast"></a>QNetworkAddressEntry.setBroadcast (<i>self</i>, <a href="qhostaddress.html" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html">QHostAddress</a> <i>newBroadcast</i>)</h3>
+<p>设置的这个广播IP地址<a href="qnetworkaddressentry.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html">QNetworkAddressEntry</a>反对<i>newBroadcast</i>。</p>
+<p><b>See also</b> <a href="qnetworkaddressentry.html#broadcast" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#broadcast">broadcast</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setIp"></a>QNetworkAddressEntry.setIp (<i>self</i>, <a href="qhostaddress.html" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html">QHostAddress</a> <i>newIp</i>)</h3>
+<p>设置IP地址<a href="qnetworkaddressentry.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html">QNetworkAddressEntry</a>对象包含<i>newIp</i>。</p>
+<p><b>See also</b> <a href="qnetworkaddressentry.html#ip" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#ip">ip</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setNetmask"></a>QNetworkAddressEntry.setNetmask (<i>self</i>, <a href="qhostaddress.html" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html">QHostAddress</a> <i>newNetmask</i>)</h3>
+<p>设置网络掩码，这<a href="qnetworkaddressentry.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html">QNetworkAddressEntry</a>对象包含<i>newNetmask</i>。设置子网掩码还设置了前缀长度以匹配新的网络掩码。</p>
+<p><b>See also</b> <a href="qnetworkaddressentry.html#netmask" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#netmask">netmask</a>（）和<a href="qnetworkaddressentry.html#setPrefixLength" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#setPrefixLength">setPrefixLength</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPrefixLength"></a>QNetworkAddressEntry.setPrefixLength (<i>self</i>, int <i>length</i>)</h3>
+<p>设置这个IP地址的前缀长度<i>length</i>。价值<i>length</i>必须是有效的这种类型的IP地址： 0至32之间为IPv4地址，介于0和128为IPv6地址。设置为任何无效的值等于设置为-1 ，这意味着“无前缀长度” 。</p>
+<p>设置前缀长度还设置了网络掩码（见<a href="qnetworkaddressentry.html#netmask" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#netmask">netmask</a>（））。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qnetworkaddressentry.html#prefixLength" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#prefixLength">prefixLength</a>（）和<a href="qnetworkaddressentry.html#setNetmask" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html#setNetmask">setNetmask</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="__eq__"></a>bool QNetworkAddressEntry.__eq__ (<i>self</i>, <a href="qnetworkaddressentry.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html">QNetworkAddressEntry</a> <i>other</i>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QNetworkAddressEntry.__ne__ (<i>self</i>, <a href="qnetworkaddressentry.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaddressentry.html">QNetworkAddressEntry</a> <i>other</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

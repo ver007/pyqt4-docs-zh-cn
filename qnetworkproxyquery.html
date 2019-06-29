@@ -1,0 +1,357 @@
+﻿<html>
+<head>
+<title>QNetworkProxyQuery Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QNetworkProxyQuery Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtnetwork.html">QtNetwork</a> module]</sup></sup>
+</h1>
+<p>该QNetworkProxyQuery类用于查询套接字的代理服务器设置<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QueryType</a></b> { TcpSocket, UdpSocket, TcpServer, UrlRequest }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxyquery.html#QNetworkProxyQuery" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QNetworkProxyQuery">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxyquery.html#QNetworkProxyQuery-2" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QNetworkProxyQuery-2">__init__</a></b> (<i>self</i>, QUrl <i>requestUrl</i>, QueryType <i>type</i> = QNetworkProxyQuery.UrlRequest)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxyquery.html#QNetworkProxyQuery-3" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QNetworkProxyQuery-3">__init__</a></b> (<i>self</i>, QString <i>hostname</i>, int <i>port</i>, QString <i>protocolTag</i> = QString(), QueryType <i>type</i> = QNetworkProxyQuery.TcpSocket)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxyquery.html#QNetworkProxyQuery-4" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QNetworkProxyQuery-4">__init__</a></b> (<i>self</i>, int <i>bindPort</i>, QString <i>protocolTag</i> = QString(), QueryType <i>type</i> = QNetworkProxyQuery.TcpServer)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxyquery.html#QNetworkProxyQuery-5" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QNetworkProxyQuery-5">__init__</a></b> (<i>self</i>, QNetworkConfiguration <i>networkConfiguration</i>, QUrl <i>requestUrl</i>, QueryType <i>queryType</i> = QNetworkProxyQuery.UrlRequest)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxyquery.html#QNetworkProxyQuery-6" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QNetworkProxyQuery-6">__init__</a></b> (<i>self</i>, QNetworkConfiguration <i>networkConfiguration</i>, QString <i>hostname</i>, int <i>port</i>, QString <i>protocolTag</i> = QString(), QueryType <i>type</i> = QNetworkProxyQuery.TcpSocket)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxyquery.html#QNetworkProxyQuery-7" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QNetworkProxyQuery-7">__init__</a></b> (<i>self</i>, QNetworkConfiguration <i>networkConfiguration</i>, int <i>bindPort</i>, QString <i>protocolTag</i> = QString(), QueryType <i>type</i> = QNetworkProxyQuery.TcpServer)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxyquery.html#QNetworkProxyQuery-8" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QNetworkProxyQuery-8">__init__</a></b> (<i>self</i>, QNetworkProxyQuery <i>other</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qnetworkproxyquery.html#localPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#localPort">localPort</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QNetworkConfiguration <b><a href="qnetworkproxyquery.html#networkConfiguration" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#networkConfiguration">networkConfiguration</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qnetworkproxyquery.html#peerHostName" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#peerHostName">peerHostName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qnetworkproxyquery.html#peerPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#peerPort">peerPort</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qnetworkproxyquery.html#protocolTag" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#protocolTag">protocolTag</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QueryType <b><a href="qnetworkproxyquery.html#queryType" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#queryType">queryType</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxyquery.html#setLocalPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#setLocalPort">setLocalPort</a></b> (<i>self</i>, int <i>port</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxyquery.html#setNetworkConfiguration" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#setNetworkConfiguration">setNetworkConfiguration</a></b> (<i>self</i>, QNetworkConfiguration <i>networkConfiguration</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxyquery.html#setPeerHostName" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#setPeerHostName">setPeerHostName</a></b> (<i>self</i>, QString <i>hostname</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxyquery.html#setPeerPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#setPeerPort">setPeerPort</a></b> (<i>self</i>, int <i>port</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxyquery.html#setProtocolTag" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#setProtocolTag">setProtocolTag</a></b> (<i>self</i>, QString <i>protocolTag</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxyquery.html#setQueryType" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#setQueryType">setQueryType</a></b> (<i>self</i>, QueryType <i>type</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxyquery.html#setUrl" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#setUrl">setUrl</a></b> (<i>self</i>, QUrl <i>url</i>)</li>
+<li>
+<div class="fn"></div>QUrl <b><a href="qnetworkproxyquery.html#url" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#url">url</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>bool <b><a href="qnetworkproxyquery.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#__eq__">__eq__</a></b> (<i>self</i>, QNetworkProxyQuery <i>other</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qnetworkproxyquery.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#__ne__">__ne__</a></b> (<i>self</i>, QNetworkProxyQuery <i>other</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QNetworkProxyQuery类用于查询套接字的代理服务器设置</p>
+<p>QNetworkProxyQuery持有被创建一个套接字，或正在取得请求的详细信息。它是利用<a href="qnetworkproxy.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html">QNetworkProxy</a>和<a href="qnetworkproxyfactory.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyfactory.html">QNetworkProxyFactory</a>允许应用程序有一个更细粒度控制哪些代理服务器的使用，根据查询的详细信息。这使得应用程序可以应用不同的设置，根据该协议或目的地的主机名，例如。</p>
+<p>QNetworkProxyQuery支持用于选择代理以下条件：</p>
+<ul>
+<li>the type of query</li>
+<li>the local port number to use</li>
+<li>the destination host name</li>
+<li>the destination port number</li>
+<li>the protocol name, such as "http" or "ftp"</li>
+<li>the URL being requested</li>
+</ul>
+<p>目标主机名称是在即将离任的连接插座的情况下，连接的主机。它是<tt>hostName</tt>传递给参数<a href="qabstractsocket.html#connectToHost" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#connectToHost">QTcpSocket.connectToHost</a>（）或要求与URL的主机组件<a href="qnetworkrequest.html" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html">QNetworkRequest</a>。</p>
+<p>目的端口号是请求的端口连接到在传出插座的情况下，而本地端口号是socket希望尝试进行外部连接之前在本地使用的端口。在大多数情况下，本地端口号用于监听套接字只（<a href="qtcpsocket.html" tppabs="http://pyqt4doc.appspot.com/qtcpsocket.html">QTcpSocket</a>）或数据报套接字（<a href="qudpsocket.html" tppabs="http://pyqt4doc.appspot.com/qudpsocket.html">QUdpSocket</a>） 。</p>
+<p>协议名称是一个任意的字符串，它表示连接正在尝试的类型。例如，它可以匹配URL的模式，就是“http ” ， “ https”开头和“ FTP ” 。在大多数情况下，该代理选择不会取决于协议改变，但是这个信息被提供的情况下更好的选择可以由，例如用于基于HTTP的连接选择一个高速缓存的HTTP代理服务器，但对于所有其他功能更强大的SOCKSv5代理。</p>
+<p>网络配置指定要使用的配置，当承载管理使用。例如在手机中的代理设置可能是不同的蜂窝网络与WLAN 。</p>
+<p>有些标准可能是没有意义的所有的查询类型。下面的表列出了最常用的标准，根据查询的类型。</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Query type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td><a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">TcpSocket</a></td>
+<td>Normal sockets requesting a connection to a remote server, like
+<a href="qtcpsocket.html" tppabs="http://pyqt4doc.appspot.com/qtcpsocket.html">QTcpSocket</a>. The peer hostname and
+peer port match the values passed to <a href="qabstractsocket.html#connectToHost" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#connectToHost">QTcpSocket.connectToHost</a>().
+The local port is usually -1, indicating the socket has no
+preference in which port should be used. The URL component is not
+used.</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">UdpSocket</a></td>
+<td>Datagram-based sockets, which can both send and receive. The
+local port, remote host or remote port fields can all be used or be
+left unused, depending on the characteristics of the socket. The
+URL component is not used.</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">TcpServer</a></td>
+<td>Passive server sockets that listen on a port and await incoming
+connections from the network. Normally, only the local port is
+used, but the remote address could be used in specific
+circumstances, for example to indicate which remote host a
+connection is expected from. The URL component is not used.</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">UrlRequest</a></td>
+<td>A more high-level request, such as those coming from <a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>. These
+requests will inevitably use an outgoing TCP socket, but the this
+query type is provided to indicate that more detailed information
+is present in the URL component. For ease of implementation, the
+URL's host and port are set as the destination address.</td>
+</tr>
+</table>
+<p>但应注意的是，任何一个规则可能会丢失或未知（空<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>对于主机名或协议名称， -1为端口号） 。如果出现这种情况，执行查询的功能应该让他们的最好的猜测或应用某些实现定义的默认值。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="QueryType-enum"></a>QNetworkProxyQuery.QueryType</h3>
+<p>描述1的类型<a href="qnetworkproxyquery.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html">QNetworkProxyQuery</a>查询。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QNetworkProxyQuery.TcpSocket</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">一个正常的，传出TCP套接字</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QNetworkProxyQuery.UdpSocket</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">一个基于数据报的UDP套接字，它可以发送到多个目的地</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QNetworkProxyQuery.TcpServer</tt></td>
+<td class="topAlign"><tt>100</tt></td>
+<td class="topAlign">用于侦听来自网络的传入连接TCP服务器</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QNetworkProxyQuery.UrlRequest</tt></td>
+<td class="topAlign"><tt>101</tt></td>
+<td class="topAlign">一个更复杂的要求，涉及装载的URL</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qnetworkproxyquery.html#queryType" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#queryType">queryType</a>（）和<a href="qnetworkproxyquery.html#setQueryType" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#setQueryType">setQueryType</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QNetworkProxyQuery"></a>QNetworkProxyQuery.__init__ (<i>self</i>)</h3>
+<p>构造一个默认的<a href="qnetworkproxyquery.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html">QNetworkProxyQuery</a>对象。默认情况下，查询类型将是<a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QNetworkProxyQuery.TcpSocket</a>。</p>
+
+
+<h3 class="fn">
+<a name="QNetworkProxyQuery-2"></a>QNetworkProxyQuery.__init__ (<i>self</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>requestUrl</i>, <a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QueryType</a> <i>type</i> = QNetworkProxyQuery.UrlRequest)</h3>
+<p>构造一个<a href="qnetworkproxyquery.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html">QNetworkProxyQuery</a>与URL<i>requestUrl</i>并设置查询类型<i>queryType</i>。</p>
+<p><b>See also</b> <a href="qnetworkproxyquery.html#protocolTag" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#protocolTag">protocolTag</a>（ ）<a href="qnetworkproxyquery.html#peerHostName" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#peerHostName">peerHostName</a>（）和<a href="qnetworkproxyquery.html#peerPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#peerPort">peerPort</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QNetworkProxyQuery-3"></a>QNetworkProxyQuery.__init__ (<i>self</i>, QString <i>hostname</i>, int <i>port</i>, QString <i>protocolTag</i> = QString(), <a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QueryType</a> <i>type</i> = QNetworkProxyQuery.TcpSocket)</h3>
+<p>构造一个<a href="qnetworkproxyquery.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html">QNetworkProxyQuery</a>类型<i>queryType</i>并将协议标籤是<i>protocolTag</i>。此构造适合<a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QNetworkProxyQuery.TcpSocket</a>查询，因为它设置了对主机名<i>hostname</i>而到同行的端口号<i>port</i>。</p>
+
+
+<h3 class="fn">
+<a name="QNetworkProxyQuery-4"></a>QNetworkProxyQuery.__init__ (<i>self</i>, int <i>bindPort</i>, QString <i>protocolTag</i> = QString(), <a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QueryType</a> <i>type</i> = QNetworkProxyQuery.TcpServer)</h3>
+<p>构造一个<a href="qnetworkproxyquery.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html">QNetworkProxyQuery</a>类型<i>queryType</i>并将协议标籤是<i>protocolTag</i>。此构造适合<a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QNetworkProxyQuery.TcpSocket</a>查询，因为它设置的本地端口号<i>bindPort</i>。</p>
+<p>需要注意的是<i>bindPort</i>是类型quint16的指示所请求的具体的端口号。在此上下文中是不允许的-1 （未知）的值。</p>
+<p><b>See also</b> <a href="qnetworkproxyquery.html#localPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#localPort">localPort</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QNetworkProxyQuery-5"></a>QNetworkProxyQuery.__init__ (<i>self</i>, <a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a> <i>networkConfiguration</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>requestUrl</i>, <a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QueryType</a> <i>queryType</i> = QNetworkProxyQuery.UrlRequest)</h3>
+<p>构造一个<a href="qnetworkproxyquery.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html">QNetworkProxyQuery</a>对象，它是一个拷贝<i>other</i>。</p>
+
+
+<h3 class="fn">
+<a name="QNetworkProxyQuery-6"></a>QNetworkProxyQuery.__init__ (<i>self</i>, <a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a> <i>networkConfiguration</i>, QString <i>hostname</i>, int <i>port</i>, QString <i>protocolTag</i> = QString(), <a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QueryType</a> <i>type</i> = QNetworkProxyQuery.TcpSocket)</h3>
+<p>构造一个<a href="qnetworkproxyquery.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html">QNetworkProxyQuery</a>与URL<i>requestUrl</i>并设置查询类型<i>queryType</i>。指定<i>networkConfiguration</i>用于解析代理服务器设置。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qnetworkproxyquery.html#protocolTag" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#protocolTag">protocolTag</a>（ ）<a href="qnetworkproxyquery.html#peerHostName" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#peerHostName">peerHostName</a>（ ）<a href="qnetworkproxyquery.html#peerPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#peerPort">peerPort</a>（）和<a href="qnetworkproxyquery.html#networkConfiguration" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#networkConfiguration">networkConfiguration</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QNetworkProxyQuery-7"></a>QNetworkProxyQuery.__init__ (<i>self</i>, <a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a> <i>networkConfiguration</i>, int <i>bindPort</i>, QString <i>protocolTag</i> = QString(), <a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QueryType</a> <i>type</i> = QNetworkProxyQuery.TcpServer)</h3>
+<p>构造一个<a href="qnetworkproxyquery.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html">QNetworkProxyQuery</a>类型<i>queryType</i>并将协议标籤是<i>protocolTag</i>。此构造适合<a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QNetworkProxyQuery.TcpSocket</a>查询，因为它设置了对主机名<i>hostname</i>而到同行的端口号<i>port</i>。指定<i>networkConfiguration</i>用于解析代理服务器设置。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qnetworkproxyquery.html#networkConfiguration" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#networkConfiguration">networkConfiguration</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QNetworkProxyQuery-8"></a>QNetworkProxyQuery.__init__ (<i>self</i>, <a href="qnetworkproxyquery.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html">QNetworkProxyQuery</a> <i>other</i>)</h3>
+<p>构造一个<a href="qnetworkproxyquery.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html">QNetworkProxyQuery</a>类型<i>queryType</i>并将协议标籤是<i>protocolTag</i>。此构造适合<a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QNetworkProxyQuery.TcpSocket</a>查询，因为它设置的本地端口号<i>bindPort</i>。指定<i>networkConfiguration</i>用于解析代理服务器设置。</p>
+<p>需要注意的是<i>bindPort</i>是类型quint16的指示所请求的具体的端口号。在此上下文中是不允许的-1 （未知）的值。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qnetworkproxyquery.html#localPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#localPort">localPort</a>（）和<a href="qnetworkproxyquery.html#networkConfiguration" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#networkConfiguration">networkConfiguration</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="localPort"></a>int QNetworkProxyQuery.localPort (<i>self</i>)</h3>
+<p>返回套接字将接受来自远程服务器的入站数据包或-1，如果该端口是不知道的端口号。</p>
+<p><b>See also</b> <a href="qnetworkproxyquery.html#peerPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#peerPort">peerPort</a>（ ）<a href="qnetworkproxyquery.html#peerHostName" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#peerHostName">peerHostName</a>（）和<a href="qnetworkproxyquery.html#setLocalPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#setLocalPort">setLocalPort</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="networkConfiguration"></a><a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a> QNetworkProxyQuery.networkConfiguration (<i>self</i>)</h3>
+<p>返回代理查询的网络配置。</p>
+<p><b>See also</b> <a href="qnetworkproxyquery.html#setNetworkConfiguration" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#setNetworkConfiguration">setNetworkConfiguration</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="peerHostName"></a>QString QNetworkProxyQuery.peerHostName (<i>self</i>)</h3>
+<p>返回的主机名或所要求的出站连接的IP地址为，或如果远程主机名不知道一个空字符串。</p>
+<p>如果查询的类型是<a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QNetworkProxyQuery.UrlRequest</a>，这个函数返回所请求的URL的主机组件。</p>
+<p><b>See also</b> <a href="qnetworkproxyquery.html#peerPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#peerPort">peerPort</a>（ ）<a href="qnetworkproxyquery.html#localPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#localPort">localPort</a>（）和<a href="qnetworkproxyquery.html#setPeerHostName" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#setPeerHostName">setPeerHostName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="peerPort"></a>int QNetworkProxyQuery.peerPort (<i>self</i>)</h3>
+<p>返回传出请求或端口号-1，如果端口号是不知道。</p>
+<p>如果查询的类型是<a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QNetworkProxyQuery.UrlRequest</a>，这个函数返回所请求的URL的端口号。一般情况下，框架将在端口号填入的默认值。</p>
+<p><b>See also</b> <a href="qnetworkproxyquery.html#peerHostName" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#peerHostName">peerHostName</a>（ ）<a href="qnetworkproxyquery.html#localPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#localPort">localPort</a>（）和<a href="qnetworkproxyquery.html#setPeerPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#setPeerPort">setPeerPort</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="protocolTag"></a>QString QNetworkProxyQuery.protocolTag (<i>self</i>)</h3>
+<p>返回此协议标籤<a href="qnetworkproxyquery.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html">QNetworkProxyQuery</a>对象，或空<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>的情况下的协议标籤是未知的。</p>
+<p>在类型的查询的情况下，<a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QNetworkProxyQuery.UrlRequest</a>，这个函数返回的URL的模式组件的值。</p>
+<p><b>See also</b> <a href="qnetworkproxyquery.html#setProtocolTag" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#setProtocolTag">setProtocolTag</a>（）和<a href="qnetworkproxyquery.html#url" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#url">url</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="queryType"></a><a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QueryType</a> QNetworkProxyQuery.queryType (<i>self</i>)</h3>
+<p>返回的查询类型。</p>
+<p><b>See also</b> <a href="qnetworkproxyquery.html#setQueryType" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#setQueryType">setQueryType</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setLocalPort"></a>QNetworkProxyQuery.setLocalPort (<i>self</i>, int <i>port</i>)</h3>
+<p>设置套接字希望使用本地接受来自远程服务器的入站数据包的端口号<i>port</i>。本地端口是最经常与使用<a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QNetworkProxyQuery.TcpServer</a>和<a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QNetworkProxyQuery.UdpSocket</a>查询类型。</p>
+<p>有效值为0到65535 （ 0表示任意端口号是可以接受的）或-1 ，这意味着本地端口号是未知或不适用的。</p>
+<p>在某些情况下，对于特殊协议，它的本地端口号也可以用类型的查询中使用<a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QNetworkProxyQuery.TcpSocket</a>。当发生这种情况时，插座表明它希望使用的端口号<i>port</i>连接到远程主机时。</p>
+<p><b>See also</b> <a href="qnetworkproxyquery.html#localPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#localPort">localPort</a>（ ）<a href="qnetworkproxyquery.html#setPeerPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#setPeerPort">setPeerPort</a>（）和<a href="qnetworkproxyquery.html#setPeerHostName" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#setPeerHostName">setPeerHostName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setNetworkConfiguration"></a>QNetworkProxyQuery.setNetworkConfiguration (<i>self</i>, <a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a> <i>networkConfiguration</i>)</h3>
+<p>设置这个网络配置组件<a href="qnetworkproxyquery.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html">QNetworkProxyQuery</a>反对是<i>networkConfiguration</i>。网络配置可以被用来返回基于在网络中使用不同的代理设置，例如WLAN与手机的蜂窝网络。</p>
+<p>在“选择用户”或“服务网络”配置的情况下，你应该先启动<a href="qnetworksession.html" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html">QNetworkSession</a>从它的属性得到有效配置。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qnetworkproxyquery.html#networkConfiguration" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#networkConfiguration">networkConfiguration</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPeerHostName"></a>QNetworkProxyQuery.setPeerHostName (<i>self</i>, QString <i>hostname</i>)</h3>
+<p>设置的出站连接被请求的主机名<i>hostname</i>。一个空的主机名可以被用来指示该远程主机是未知的。</p>
+<p>对端的主机名，也可以用于指示在的情况下的输入连接的预期源地址<a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QNetworkProxyQuery.UdpSocket</a>
+or <a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QNetworkProxyQuery.TcpServer</a>查询类型。</p>
+<p><b>See also</b> <a href="qnetworkproxyquery.html#peerHostName" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#peerHostName">peerHostName</a>（ ）<a href="qnetworkproxyquery.html#setPeerPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#setPeerPort">setPeerPort</a>（）和<a href="qnetworkproxyquery.html#setLocalPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#setLocalPort">setLocalPort</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPeerPort"></a>QNetworkProxyQuery.setPeerPort (<i>self</i>, int <i>port</i>)</h3>
+<p>设置用于传出连接是请求的端口号<i>port</i>。有效值为1到65535 ，或-1 ，表明远程端口号是未知的。</p>
+<p>对端的端口号也可以用来指示在的情况下的输入连接的预期端口号<a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QNetworkProxyQuery.UdpSocket</a>
+or <a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QNetworkProxyQuery.TcpServer</a>查询类型。</p>
+<p><b>See also</b> <a href="qnetworkproxyquery.html#peerPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#peerPort">peerPort</a>（ ）<a href="qnetworkproxyquery.html#setPeerHostName" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#setPeerHostName">setPeerHostName</a>（）和<a href="qnetworkproxyquery.html#setLocalPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#setLocalPort">setLocalPort</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setProtocolTag"></a>QNetworkProxyQuery.setProtocolTag (<i>self</i>, QString <i>protocolTag</i>)</h3>
+<p>设置此协议标籤<a href="qnetworkproxyquery.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html">QNetworkProxyQuery</a>反对是<i>protocolTag</i>。</p>
+<p>该协议的电子标籤是一个任意的字符串，指示该协议正在谈论过插座，如“ HTTP ” ， “ XMPP ” ， “远程登录” ，等等。协议标记是用于后端返回的要求是比较具体的有问题的协议：例如，一个HTTP连接可以使用缓存的HTTP代理服务器，而其他所有连接都使用一个更强大的SOCKSv5代理服务器。</p>
+<p><b>See also</b> <a href="qnetworkproxyquery.html#protocolTag" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#protocolTag">protocolTag</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setQueryType"></a>QNetworkProxyQuery.setQueryType (<i>self</i>, <a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QueryType</a> <i>type</i>)</h3>
+<p>设置为这个对象的查询类型<i>type</i>。</p>
+<p><b>See also</b> <a href="qnetworkproxyquery.html#queryType" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#queryType">queryType</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setUrl"></a>QNetworkProxyQuery.setUrl (<i>self</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>url</i>)</h3>
+<p>设置这个网址组件<a href="qnetworkproxyquery.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html">QNetworkProxyQuery</a>反对是<i>url</i>。设置URL也将设置协议标籤，远程主机名和端口号。这样做是为了以方便的代码，用于确定要使用的代理服务器的执行。</p>
+<p><b>See also</b> <a href="qnetworkproxyquery.html#url" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#url">url</a>（ ）<a href="qnetworkproxyquery.html#peerHostName" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#peerHostName">peerHostName</a>（）和<a href="qnetworkproxyquery.html#peerPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#peerPort">peerPort</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="url"></a><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> QNetworkProxyQuery.url (<i>self</i>)</h3>
+<p>返回此网址组件<a href="qnetworkproxyquery.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html">QNetworkProxyQuery</a>在案件类型的查询对象<a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QNetworkProxyQuery.UrlRequest</a>。</p>
+<p><b>See also</b> <a href="qnetworkproxyquery.html#setUrl" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#setUrl">setUrl</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="__eq__"></a>bool QNetworkProxyQuery.__eq__ (<i>self</i>, <a href="qnetworkproxyquery.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html">QNetworkProxyQuery</a> <i>other</i>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QNetworkProxyQuery.__ne__ (<i>self</i>, <a href="qnetworkproxyquery.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html">QNetworkProxyQuery</a> <i>other</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

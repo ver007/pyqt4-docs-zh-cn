@@ -1,0 +1,119 @@
+﻿<html>
+<head>
+<title>QStringMatcher Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QStringMatcher Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QStringMatcher类认为，可以快速匹配一个Unicode字符串的字符序列。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qstringmatcher.html#QStringMatcher" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html#QStringMatcher">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstringmatcher.html#QStringMatcher-2" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html#QStringMatcher-2">__init__</a></b> (<i>self</i>, QString <i>pattern</i>, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstringmatcher.html#QStringMatcher-3" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html#QStringMatcher-3">__init__</a></b> (<i>self</i>, QStringMatcher <i>other</i>)</li>
+<li>
+<div class="fn"></div>Qt.CaseSensitivity <b><a href="qstringmatcher.html#caseSensitivity" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html#caseSensitivity">caseSensitivity</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstringmatcher.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html#indexIn">indexIn</a></b> (<i>self</i>, QString <i>str</i>, int <i>from</i> = 0)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstringmatcher.html#pattern" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html#pattern">pattern</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstringmatcher.html#setCaseSensitivity" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html#setCaseSensitivity">setCaseSensitivity</a></b> (<i>self</i>, Qt.CaseSensitivity <i>cs</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstringmatcher.html#setPattern" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html#setPattern">setPattern</a></b> (<i>self</i>, QString <i>pattern</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QStringMatcher类认为，可以快速匹配一个Unicode字符串的字符序列。</p>
+<p>当你有一个序列这个类是非常有用的<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>要反复对一些字符串（也许在一个循环）相匹配，或s当你要搜索的字符中多次相同的字符串相同的序列。使用一个匹配对象，<a href="qstringmatcher.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html#indexIn">indexIn</a>（）比匹配的一个普通速度<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>同<a href="qstring.html#indexOf" tppabs="http://pyqt4doc.appspot.com/qstring.html#indexOf">QString.indexOf</a>（）如果匹配的重复发生。这个类没有提供任何好处，如果你正在做一次性的字符串匹配。</p>
+<p>创建QStringMatcher与<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>你要搜索的内容。然后调用<a href="qstringmatcher.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html#indexIn">indexIn</a>（）对<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>您要搜索。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QStringMatcher"></a>QStringMatcher.__init__ (<i>self</i>)</h3>
+<p>构造一个空字符串匹配，将不符合任何东西。通话<a href="qstringmatcher.html#setPattern" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html#setPattern">setPattern</a>（）给它一个模式来匹配。</p>
+
+
+<h3 class="fn">
+<a name="QStringMatcher-2"></a>QStringMatcher.__init__ (<i>self</i>, QString <i>pattern</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<p>构造一个字符串匹配，将搜索<i>pattern</i>，有区分大小写<i>cs</i>。</p>
+<p>Call <a href="qstringmatcher.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html#indexIn">indexIn</a>（）来执行搜索。</p>
+
+
+<h3 class="fn">
+<a name="QStringMatcher-3"></a>QStringMatcher.__init__ (<i>self</i>, <a href="qstringmatcher.html" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html">QStringMatcher</a> <i>other</i>)</h3>
+<p>构造一个字符串匹配，将搜索者提到的模式<i>uc</i>用给定的<i>length</i>并通过指定的区分大小写<i>cs</i>。</p>
+<p>此功能被引入Qt的4.5 。</p>
+
+
+<h3 class="fn">
+<a name="caseSensitivity"></a><a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> QStringMatcher.caseSensitivity (<i>self</i>)</h3>
+<p>返回区分大小写设置该字符串匹配。</p>
+<p><b>See also</b> <a href="qstringmatcher.html#setCaseSensitivity" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html#setCaseSensitivity">setCaseSensitivity</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="indexIn"></a>int QStringMatcher.indexIn (<i>self</i>, QString <i>str</i>, int <i>from</i> = 0)</h3>
+<p>搜索字符串<i>str</i>从字符位置<i>from</i>（默认为0 ，即从第一个字符） ，字符串<a href="qstringmatcher.html#pattern" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html#pattern">pattern</a>（ ），这是设置在构造函数中，或在最近一次调用<a href="qstringmatcher.html#setPattern" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html#setPattern">setPattern</a>（ ） 。返回该位置处<a href="qstringmatcher.html#pattern" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html#pattern">pattern</a>（ ）匹配<i>str</i>，或-1，如果没有找到匹配项。</p>
+<p><b>See also</b> <a href="qstringmatcher.html#setPattern" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html#setPattern">setPattern</a>（）和<a href="qstringmatcher.html#setCaseSensitivity" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html#setCaseSensitivity">setCaseSensitivity</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="pattern"></a>QString QStringMatcher.pattern (<i>self</i>)</h3>
+<p>返回字符串的模式，这个字符串匹配器将搜索。</p>
+<p><b>See also</b> <a href="qstringmatcher.html#setPattern" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html#setPattern">setPattern</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCaseSensitivity"></a>QStringMatcher.setCaseSensitivity (<i>self</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i>)</h3>
+<p>设置该字符串匹配的区分大小写设置为<i>cs</i>。</p>
+<p><b>See also</b> <a href="qstringmatcher.html#caseSensitivity" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html#caseSensitivity">caseSensitivity</a>（ ）<a href="qstringmatcher.html#setPattern" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html#setPattern">setPattern</a>（）和<a href="qstringmatcher.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html#indexIn">indexIn</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPattern"></a>QStringMatcher.setPattern (<i>self</i>, QString <i>pattern</i>)</h3>
+<p>设置该字符串匹配器将搜索到的字符串<i>pattern</i>。</p>
+<p><b>See also</b> <a href="qstringmatcher.html#pattern" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html#pattern">pattern</a>（ ）<a href="qstringmatcher.html#setCaseSensitivity" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html#setCaseSensitivity">setCaseSensitivity</a>（）和<a href="qstringmatcher.html#indexIn" tppabs="http://pyqt4doc.appspot.com/qstringmatcher.html#indexIn">indexIn</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

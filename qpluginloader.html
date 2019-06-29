@@ -1,0 +1,157 @@
+﻿<html>
+<head>
+<title>QPluginLoader Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QPluginLoader Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QPluginLoader类加载插件在运行时。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qpluginloader.html#QPluginLoader" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#QPluginLoader">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpluginloader.html#QPluginLoader-2" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#QPluginLoader-2">__init__</a></b> (<i>self</i>, QString <i>fileName</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qpluginloader.html#errorString" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#errorString">errorString</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qpluginloader.html#fileName" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#fileName">fileName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QObject <b><a href="qpluginloader.html#instance" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#instance">instance</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qpluginloader.html#isLoaded" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#isLoaded">isLoaded</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qpluginloader.html#load" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#load">load</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QLibrary.LoadHints <b><a href="qpluginloader.html#loadHints" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#loadHints">loadHints</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpluginloader.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#setFileName">setFileName</a></b> (<i>self</i>, QString <i>fileName</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpluginloader.html#setLoadHints" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#setLoadHints">setLoadHints</a></b> (<i>self</i>, QLibrary.LoadHints <i>loadHints</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qpluginloader.html#unload" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#unload">unload</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul><li>
+<div class="fn"></div>list-of-QObject <b><a href="qpluginloader.html#staticInstances" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#staticInstances">staticInstances</a></b> ()</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QPluginLoader类加载插件在运行时。</p>
+<p>QPluginLoader提供了访问<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/plugins-howto.html">Qt plugin</a>。一个Qt的插件存储在一个共享库（一个DLL ），并在共享库提供这些好处利用访问<a href="qlibrary.html" tppabs="http://pyqt4doc.appspot.com/qlibrary.html">QLibrary</a>：</p>
+<ul>
+<li>QPluginLoader checks that a plugin is linked against the same
+version of Qt as the application.</li>
+<li>QPluginLoader provides direct access to a root component object
+(<a href="qpluginloader.html#instance" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#instance">instance</a>()), instead of
+forcing you to resolve a C function manually.</li>
+</ul>
+<p>一个QPluginLoader对象的一个实例运行在一个单一的共享库文件，我们称之为一个插件。它提供了一个与平台无关的方式获得在插件的功能。要指定哪些插件加载，无论是在构造函数中传递一个文件名或将其设置<a href="qpluginloader.html#fileName-prop" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#fileName-prop">setFileName</a>（ ） 。</p>
+<p>最重要的功能是<a href="qpluginloader.html#load" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#load">load</a>（ ）动态加载的插件文件，<a href="qpluginloader.html#isLoaded" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#isLoaded">isLoaded</a>（）来检查装载是否成功，并<a href="qpluginloader.html#instance" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#instance">instance</a>（ ）来访问插件的根组件。该<a href="qpluginloader.html#instance" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#instance">instance</a>（ ）函数隐式地尝试加载该插件，如果它没有被加载。 QPluginLoader的多个实例可以被用于访问同一物理插件。</p>
+<p>一旦加载，插件保留在内存中，直到QPluginLoader的所有实例已被卸载，或直到应用程序终止。你可以尝试使用卸载插件<a href="qpluginloader.html#unload" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#unload">unload</a>（ ） ，但如果QPluginLoader的其他实例都使用相同的库，则调用将失败，并卸载当每一个实例都调用才会发生<a href="qpluginloader.html#unload" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#unload">unload</a>（ ） 。权利之前卸载发生，根组件也将被删除。</p>
+<p>为了加快加载和插件验证，某些被装载过程中收集的信息被缓存在持久性存储器（通过<a href="qsettings.html" tppabs="http://pyqt4doc.appspot.com/qsettings.html">QSettings</a>） 。举例来说，一个负荷运算的结果（例如，成功或失败）被存储在高速缓存中，这样，后续的加载操作不尝试加载一个无效的插件。但是，如果一个插件的“最后修改”时间戳已经改变，该插件的缓存项失效，并不管值的插件重新加载缓存中的条目。缓存条目，然后更新了负载运行的新的结果。</p>
+<p>这也意味着，时间戳必须在插件或任何依赖资源（如共享库）被更新，每次更新，因为依赖的资源可能会影响加载插件的结果。</p>
+<p>See <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/plugins-howto.html">How to Create Qt Plugins</a>关于如何通过插件使你的应用程序扩展的信息。</p>
+<p>请注意， QPluginLoader不能使用，如果你的应用程序是针对Qt的静态链接。在这种情况下，你也将有静态链接到插件。您可以使用<a href="qlibrary.html" tppabs="http://pyqt4doc.appspot.com/qlibrary.html">QLibrary</a>如果你需要在一个静态链接的应用程序加载动态库。</p>
+<p><b>Note:</b>在Symbian插件存根文件，必须使用时的路径插件是必要的。对于加载的插件的目的，存根可被认为具有相同的名称作为实际插件二进制文件。在实践中，他们有“ 。 QTPLUGIN ”扩展名，而不是“ DLL” ，但这种差异是由QPluginLoader透明处理和<a href="qlibrary.html" tppabs="http://pyqt4doc.appspot.com/qlibrary.html">QLibrary</a>避免需要特殊的Symbian处理插件，在大多数Qt应用程序。需要插件的存根，因为Symbian平台安全性拒绝所有访问在实际的插件二进制文件所在的目录。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QPluginLoader"></a>QPluginLoader.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个插件加载给定的<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="QPluginLoader-2"></a>QPluginLoader.__init__ (<i>self</i>, QString <i>fileName</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个插件加载给定的<i>parent</i>可以加载指定的插件<i>fileName</i>。</p>
+<p>要加载，文件的后缀必须是一个可加载的库的有效后缀按照平台，如<tt>.so</tt>在Unix上， - <tt>.dylib</tt>在Mac OS X ，和<tt>.dll</tt>在Windows上。后缀可以与验证<a href="qlibrary.html#isLibrary" tppabs="http://pyqt4doc.appspot.com/qlibrary.html#isLibrary">QLibrary.isLibrary</a>（ ） 。</p>
+<p>注：在Symbian的<i>fileName</i>必须指向插件存根文件。</p>
+<p><b>See also</b> <a href="qpluginloader.html#fileName-prop" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#fileName-prop">setFileName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="errorString"></a>QString QPluginLoader.errorString (<i>self</i>)</h3>
+<p>返回与上次发生错误的描述文本字符串。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="fileName"></a>QString QPluginLoader.fileName (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="instance"></a><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> QPluginLoader.instance (<i>self</i>)</h3>
+<p>返回插件的根组件对象。如有必要，该插件被加载。该函数返回0，如果插件无法加载或如果根组件对象不能被实例化。</p>
+<p>如果根组件对象被销毁，调用这个函数创建一个新的实例。</p>
+<p>根组件，该函数的返回，不会被删除时，<a href="qpluginloader.html" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html">QPluginLoader</a>被破坏。如果你想确保根组件被删除，你应该调用<a href="qpluginloader.html#unload" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#unload">unload</a>（ ）只要您不必再访问核心组件。当库最后卸载，根组件将被自动删除。</p>
+<p>该组件对象是<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。使用<a href="qobject.html#qobject_cast" tppabs="http://pyqt4doc.appspot.com/qobject.html#qobject_cast">qobject_cast</a>（ ）来访问您感兴趣的接口</p>
+<p><b>See also</b> <a href="qpluginloader.html#load" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#load">load</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isLoaded"></a>bool QPluginLoader.isLoaded (<i>self</i>)</h3>
+<p>返回True如果该插件被加载，否则返回False 。</p>
+<p><b>See also</b> <a href="qpluginloader.html#load" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#load">load</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="load"></a>bool QPluginLoader.load (<i>self</i>)</h3>
+<p>加载插件，如果已成功加载的插件返回True，否则返回False 。自<a href="qpluginloader.html#instance" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#instance">instance</a>（ ）解决，没有必要显式调用它的任何符号前总是调用这个函数。在某些情况下，您可能想预先加载的插件，你会在这种情况下使用此功能。</p>
+<p><b>See also</b> <a href="qpluginloader.html#unload" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#unload">unload</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="loadHints"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qlibrary-loadhints.html">QLibrary.LoadHints</a> QPluginLoader.loadHints (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="setFileName"></a>QPluginLoader.setFileName (<i>self</i>, QString <i>fileName</i>)</h3>
+<h3 class="fn">
+<a name="setLoadHints"></a>QPluginLoader.setLoadHints (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qlibrary-loadhints.html">QLibrary.LoadHints</a> <i>loadHints</i>)</h3>
+<h3 class="fn">
+<a name="staticInstances"></a>list-of-QObject QPluginLoader.staticInstances ()</h3>
+<p>返回静态插件实例（根组件）本插件加载持有的一份名单。</p>
+
+
+<h3 class="fn">
+<a name="unload"></a>bool QPluginLoader.unload (<i>self</i>)</h3>
+<p>卸载插件，如果插件可以卸载返回True，否则返回False 。</p>
+<p>出现这种情况自动终止应用程序，所以你通常不应需要调用这个函数。</p>
+<p>如果其它实例<a href="qpluginloader.html" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html">QPluginLoader</a>使用相同的插件，则调用将失败，并卸载只会发生在每一个实例都调用unload （ ） 。</p>
+<p>不要试图删除根组件。而不是依赖于卸载（ ）在需要时会自动将其删除。</p>
+<p><b>See also</b> <a href="qpluginloader.html#instance" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#instance">instance</a>（）和<a href="qpluginloader.html#load" tppabs="http://pyqt4doc.appspot.com/qpluginloader.html#load">load</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

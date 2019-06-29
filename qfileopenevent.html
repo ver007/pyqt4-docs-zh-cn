@@ -1,0 +1,75 @@
+﻿<html>
+<head>
+<title>QFileOpenEvent Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QFileOpenEvent Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QFileOpenEvent类提供当有一个请求，打开文件或URL将发送一个事件。<a href="#details">More...</a></p>
+
+<p>继承<a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QString <b><a href="qfileopenevent.html#file" tppabs="http://pyqt4doc.appspot.com/qfileopenevent.html#file">file</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qfileopenevent.html#openFile" tppabs="http://pyqt4doc.appspot.com/qfileopenevent.html#openFile">openFile</a></b> (<i>self</i>, QFile <i>file</i>, QIODevice.OpenMode <i>flags</i>)</li>
+<li>
+<div class="fn"></div>QUrl <b><a href="qfileopenevent.html#url" tppabs="http://pyqt4doc.appspot.com/qfileopenevent.html#url">url</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QFileOpenEvent类提供当有一个请求，打开文件或URL将发送一个事件。</p>
+<p>文件打开事件将被发送到<a href="qcoreapplication.html#instance" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#instance">QApplication.instance</a>（ ）当操作系统请求一个文件或URL应该被打开。这是一个可以通过根据用户的桌面环境，不同的用户操作引起的高级别事件，例如，双击Finder中的Mac OS X上的文件图标</p>
+<p>此事件只用于通知请求的应用程序。它可以安全地忽略。</p>
+<p><b>Note:</b>这个类是目前支持Mac OS X和Symbian只。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="file"></a>QString QFileOpenEvent.file (<i>self</i>)</h3>
+<p>返回正在被打开的文件。</p>
+
+
+<h3 class="fn">
+<a name="openFile"></a>bool QFileOpenEvent.openFile (<i>self</i>, <a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a> <i>file</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qiodevice-openmode.html">QIODevice.OpenMode</a> <i>flags</i>)</h3>
+<p>打开一个<a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a>在<i>file</i>通过本次活动中所指定的模式参考<i>flags</i>。成功返回True ，否则返回False 。</p>
+<p>这是必要的，因为一些文件不能被名义开立，但需要存储在该事件的具体信息。例如，如果该<a href="qfileopenevent.html" tppabs="http://pyqt4doc.appspot.com/qfileopenevent.html">QFileOpenEvent</a>包含一个请求，要求打开一个Symbian笼数据文件，该<a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a>只能从这个事件的结构中使用了Symbian的RFile打开。</p>
+<p>此功能被引入Qt的4.8 。</p>
+
+
+<h3 class="fn">
+<a name="url"></a><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> QFileOpenEvent.url (<i>self</i>)</h3>
+<p>返回要打开的URL。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

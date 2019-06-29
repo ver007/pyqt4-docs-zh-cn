@@ -1,0 +1,1275 @@
+﻿<html>
+<head>
+<title>QDataStream Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDataStream Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QDataStream类提供的二进制数据序列化到一个<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qdatastream.html#ByteOrder-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#ByteOrder-enum">ByteOrder</a></b> { BigEndian, LittleEndian }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qdatastream.html#FloatingPointPrecision-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#FloatingPointPrecision-enum">FloatingPointPrecision</a></b> { SinglePrecision, DoublePrecision }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qdatastream.html#Status-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#Status-enum">Status</a></b> { Ok, ReadPastEnd, ReadCorruptData, WriteFailed }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qdatastream.html#Version-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#Version-enum">Version</a></b> { Qt_1_0, Qt_2_0, Qt_2_1, Qt_3_0, ..., Qt_4_8 }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#QDataStream" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#QDataStream">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#QDataStream-2" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#QDataStream-2">__init__</a></b> (<i>self</i>, QIODevice)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#QDataStream-3" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#QDataStream-3">__init__</a></b> (<i>self</i>, QByteArray, QIODevice.OpenMode <i>flags</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#QDataStream-4" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#QDataStream-4">__init__</a></b> (<i>self</i>, QByteArray)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdatastream.html#atEnd" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#atEnd">atEnd</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>ByteOrder <b><a href="qdatastream.html#byteOrder" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#byteOrder">byteOrder</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QIODevice <b><a href="qdatastream.html#device" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#device">device</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>FloatingPointPrecision <b><a href="qdatastream.html#floatingPointPrecision" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#floatingPointPrecision">floatingPointPrecision</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdatastream.html#readBool" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readBool">readBool</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qdatastream.html#readBytes" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readBytes">readBytes</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qdatastream.html#readDouble" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readDouble">readDouble</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qdatastream.html#readFloat" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readFloat">readFloat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qdatastream.html#readInt" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readInt">readInt</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qdatastream.html#readInt16" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readInt16">readInt16</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qdatastream.html#readInt32" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readInt32">readInt32</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qdatastream.html#readInt64" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readInt64">readInt64</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qdatastream.html#readInt8" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readInt8">readInt8</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdatastream.html#readQString" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readQString">readQString</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qdatastream.html#readQStringList" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readQStringList">readQStringList</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qdatastream.html#readQVariant" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readQVariant">readQVariant</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>dict-of-QString-QVariant <b><a href="qdatastream.html#readQVariantHash" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readQVariantHash">readQVariantHash</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QVariant <b><a href="qdatastream.html#readQVariantList" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readQVariantList">readQVariantList</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>dict-of-QString-QVariant <b><a href="qdatastream.html#readQVariantMap" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readQVariantMap">readQVariantMap</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qdatastream.html#readRawData" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readRawData">readRawData</a></b> (<i>self</i>, int <i>len</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qdatastream.html#readString" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readString">readString</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qdatastream.html#readUInt16" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readUInt16">readUInt16</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qdatastream.html#readUInt32" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readUInt32">readUInt32</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qdatastream.html#readUInt64" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readUInt64">readUInt64</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qdatastream.html#readUInt8" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readUInt8">readUInt8</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#resetStatus" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#resetStatus">resetStatus</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#setByteOrder" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#setByteOrder">setByteOrder</a></b> (<i>self</i>, ByteOrder)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#setDevice" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#setDevice">setDevice</a></b> (<i>self</i>, QIODevice)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#setFloatingPointPrecision" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#setFloatingPointPrecision">setFloatingPointPrecision</a></b> (<i>self</i>, FloatingPointPrecision <i>precision</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#setStatus" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#setStatus">setStatus</a></b> (<i>self</i>, Status <i>status</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#setVersion" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#setVersion">setVersion</a></b> (<i>self</i>, int <i>v</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qdatastream.html#skipRawData" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#skipRawData">skipRawData</a></b> (<i>self</i>, int <i>len</i>)</li>
+<li>
+<div class="fn"></div>Status <b><a href="qdatastream.html#status" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#status">status</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#unsetDevice" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#unsetDevice">unsetDevice</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qdatastream.html#version" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#version">version</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#writeBool" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeBool">writeBool</a></b> (<i>self</i>, bool <i>i</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#writeBytes" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeBytes">writeBytes</a></b> (<i>self</i>, str)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#writeDouble" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeDouble">writeDouble</a></b> (<i>self</i>, float <i>f</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#writeFloat" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeFloat">writeFloat</a></b> (<i>self</i>, float <i>f</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#writeInt" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeInt">writeInt</a></b> (<i>self</i>, int <i>i</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#writeInt16" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeInt16">writeInt16</a></b> (<i>self</i>, int <i>i</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#writeInt32" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeInt32">writeInt32</a></b> (<i>self</i>, int <i>i</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#writeInt64" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeInt64">writeInt64</a></b> (<i>self</i>, int <i>i</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#writeInt8" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeInt8">writeInt8</a></b> (<i>self</i>, str <i>i</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#writeQString" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeQString">writeQString</a></b> (<i>self</i>, QString <i>qstr</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#writeQStringList" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeQStringList">writeQStringList</a></b> (<i>self</i>, QStringList <i>qstrlst</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#writeQVariant" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeQVariant">writeQVariant</a></b> (<i>self</i>, QVariant <i>qvar</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#writeQVariantHash" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeQVariantHash">writeQVariantHash</a></b> (<i>self</i>, dict-of-QString-QVariant <i>qvarhash</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#writeQVariantList" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeQVariantList">writeQVariantList</a></b> (<i>self</i>, list-of-QVariant <i>qvarlst</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#writeQVariantMap" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeQVariantMap">writeQVariantMap</a></b> (<i>self</i>, dict-of-QString-QVariant <i>qvarmap</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qdatastream.html#writeRawData" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeRawData">writeRawData</a></b> (<i>self</i>, str)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#writeString" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeString">writeString</a></b> (<i>self</i>, str <i>str</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#writeUInt16" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeUInt16">writeUInt16</a></b> (<i>self</i>, int <i>i</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#writeUInt32" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeUInt32">writeUInt32</a></b> (<i>self</i>, int <i>i</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#writeUInt64" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeUInt64">writeUInt64</a></b> (<i>self</i>, int <i>i</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatastream.html#writeUInt8" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeUInt8">writeUInt8</a></b> (<i>self</i>, str <i>i</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__">__lshift__</a></b> (<i>self</i>, QColor)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__" tppabs="http://pyqt4doc.appspot.com/qtnetwork.html#__lshift__">__lshift__</a></b> (<i>self</i>, QNetworkCacheMetaData)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__" tppabs="http://pyqt4doc.appspot.com/qtscript.html#__lshift__">__lshift__</a></b> (<i>self</i>, QScriptContextInfo)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__" tppabs="http://pyqt4doc.appspot.com/qtwebkit.html#__lshift__">__lshift__</a></b> (<i>self</i>, QWebHistory)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-2" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-2">__lshift__</a></b> (<i>self</i>, QBrush)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-2" tppabs="http://pyqt4doc.appspot.com/qtnetwork.html#__lshift__-2">__lshift__</a></b> (<i>self</i>, QHostAddress)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-3" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-3">__lshift__</a></b> (<i>self</i>, QCursor <i>cursor</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-4" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-4">__lshift__</a></b> (<i>self</i>, QFont)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-5" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-5">__lshift__</a></b> (<i>self</i>, QIcon)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-6" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-6">__lshift__</a></b> (<i>self</i>, QImage)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-7" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-7">__lshift__</a></b> (<i>self</i>, QKeySequence <i>ks</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-8" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-8">__lshift__</a></b> (<i>self</i>, QListWidgetItem <i>item</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-9" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-9">__lshift__</a></b> (<i>self</i>, QMatrix)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-10" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-10">__lshift__</a></b> (<i>self</i>, QMatrix4x4)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-11" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-11">__lshift__</a></b> (<i>self</i>, QPainterPath)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-12" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-12">__lshift__</a></b> (<i>self</i>, QPalette <i>p</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-13" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-13">__lshift__</a></b> (<i>self</i>, QPen)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-14" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-14">__lshift__</a></b> (<i>self</i>, QPicture <i>p</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-15" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-15">__lshift__</a></b> (<i>self</i>, QPixmap)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-16" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-16">__lshift__</a></b> (<i>self</i>, QPolygonF <i>array</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-17" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-17">__lshift__</a></b> (<i>self</i>, QPolygon <i>polygon</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-18" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-18">__lshift__</a></b> (<i>self</i>, QQuaternion)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-19" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-19">__lshift__</a></b> (<i>self</i>, QRegion)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-20" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-20">__lshift__</a></b> (<i>self</i>, QSizePolicy)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-22" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-22">__lshift__</a></b> (<i>self</i>, QStandardItem <i>item</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-23" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-23">__lshift__</a></b> (<i>self</i>, QTableWidgetItem <i>item</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-24" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-24">__lshift__</a></b> (<i>self</i>, QTextLength)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-25" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-25">__lshift__</a></b> (<i>self</i>, QTextFormat)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-26" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-26">__lshift__</a></b> (<i>self</i>, QTransform)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-27" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-27">__lshift__</a></b> (<i>self</i>, QTreeWidgetItem <i>item</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-28" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-28">__lshift__</a></b> (<i>self</i>, QVector2D)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-29" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-29">__lshift__</a></b> (<i>self</i>, QVector3D)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__lshift__-30" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-30">__lshift__</a></b> (<i>self</i>, QVector4D)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__">__rshift__</a></b> (<i>self</i>, QColor)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__" tppabs="http://pyqt4doc.appspot.com/qtnetwork.html#__rshift__">__rshift__</a></b> (<i>self</i>, QNetworkCacheMetaData)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__" tppabs="http://pyqt4doc.appspot.com/qtscript.html#__rshift__">__rshift__</a></b> (<i>self</i>, QScriptContextInfo)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__" tppabs="http://pyqt4doc.appspot.com/qtwebkit.html#__rshift__">__rshift__</a></b> (<i>self</i>, QWebHistory)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-2" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-2">__rshift__</a></b> (<i>self</i>, QBrush)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-2" tppabs="http://pyqt4doc.appspot.com/qtnetwork.html#__rshift__-2">__rshift__</a></b> (<i>self</i>, QHostAddress)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-3" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-3">__rshift__</a></b> (<i>self</i>, QCursor <i>cursor</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-4" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-4">__rshift__</a></b> (<i>self</i>, QFont)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-5" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-5">__rshift__</a></b> (<i>self</i>, QIcon)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-6" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-6">__rshift__</a></b> (<i>self</i>, QImage)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-7" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-7">__rshift__</a></b> (<i>self</i>, QKeySequence <i>ks</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-8" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-8">__rshift__</a></b> (<i>self</i>, QListWidgetItem <i>item</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-9" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-9">__rshift__</a></b> (<i>self</i>, QMatrix)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-10" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-10">__rshift__</a></b> (<i>self</i>, QMatrix4x4)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-11" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-11">__rshift__</a></b> (<i>self</i>, QPainterPath)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-12" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-12">__rshift__</a></b> (<i>self</i>, QPalette <i>p</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-13" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-13">__rshift__</a></b> (<i>self</i>, QPen)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-14" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-14">__rshift__</a></b> (<i>self</i>, QPicture <i>p</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-15" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-15">__rshift__</a></b> (<i>self</i>, QPixmap)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-16" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-16">__rshift__</a></b> (<i>self</i>, QPolygonF <i>array</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-17" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-17">__rshift__</a></b> (<i>self</i>, QPolygon <i>polygon</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-18" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-18">__rshift__</a></b> (<i>self</i>, QQuaternion)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-19" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-19">__rshift__</a></b> (<i>self</i>, QRegion)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-20" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-20">__rshift__</a></b> (<i>self</i>, QSizePolicy)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-22" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-22">__rshift__</a></b> (<i>self</i>, QStandardItem <i>item</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-23" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-23">__rshift__</a></b> (<i>self</i>, QTableWidgetItem <i>item</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-24" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-24">__rshift__</a></b> (<i>self</i>, QTextLength)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-25" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-25">__rshift__</a></b> (<i>self</i>, QTextFormat)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-26" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-26">__rshift__</a></b> (<i>self</i>, QTransform)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-27" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-27">__rshift__</a></b> (<i>self</i>, QTreeWidgetItem <i>item</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-28" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-28">__rshift__</a></b> (<i>self</i>, QVector2D)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-29" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-29">__rshift__</a></b> (<i>self</i>, QVector3D)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="index.htm#__rshift__-30" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-30">__rshift__</a></b> (<i>self</i>, QVector4D)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__lshift__" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__lshift__">__lshift__</a></b> (<i>self</i>, QBitArray)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__lshift__-2" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__lshift__-2">__lshift__</a></b> (<i>self</i>, QByteArray)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__lshift__-3" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__lshift__-3">__lshift__</a></b> (<i>self</i>, QChar)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__lshift__-4" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__lshift__-4">__lshift__</a></b> (<i>self</i>, QDate)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__lshift__-5" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__lshift__-5">__lshift__</a></b> (<i>self</i>, QTime)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__lshift__-6" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__lshift__-6">__lshift__</a></b> (<i>self</i>, QDateTime)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__lshift__-7" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__lshift__-7">__lshift__</a></b> (<i>self</i>, QEasingCurve)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__lshift__-8" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__lshift__-8">__lshift__</a></b> (<i>self</i>, QLine)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__lshift__-9" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__lshift__-9">__lshift__</a></b> (<i>self</i>, QLineF)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__lshift__-10" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__lshift__-10">__lshift__</a></b> (<i>self</i>, QLocale)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__lshift__-11" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__lshift__-11">__lshift__</a></b> (<i>self</i>, QPoint)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__lshift__-12" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__lshift__-12">__lshift__</a></b> (<i>self</i>, QPointF)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__lshift__-13" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__lshift__-13">__lshift__</a></b> (<i>self</i>, QRect)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__lshift__-14" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__lshift__-14">__lshift__</a></b> (<i>self</i>, QRectF)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__lshift__-15" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__lshift__-15">__lshift__</a></b> (<i>self</i>, QRegExp <i>regExp</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__lshift__-16" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__lshift__-16">__lshift__</a></b> (<i>self</i>, QSize)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__lshift__-17" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__lshift__-17">__lshift__</a></b> (<i>self</i>, QSizeF)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__lshift__-18" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__lshift__-18">__lshift__</a></b> (<i>self</i>, QString)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__lshift__-19" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__lshift__-19">__lshift__</a></b> (<i>self</i>, QStringList <i>list</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__lshift__-20" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__lshift__-20">__lshift__</a></b> (<i>self</i>, QUrl)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__lshift__-21" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__lshift__-21">__lshift__</a></b> (<i>self</i>, QUuid)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__lshift__-22" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__lshift__-22">__lshift__</a></b> (<i>self</i>, QVariant <i>p</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__lshift__-23" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__lshift__-23">__lshift__</a></b> (<i>self</i>, Type <i>p</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__rshift__" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__rshift__">__rshift__</a></b> (<i>self</i>, QBitArray)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__rshift__-2" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__rshift__-2">__rshift__</a></b> (<i>self</i>, QByteArray)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__rshift__-3" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__rshift__-3">__rshift__</a></b> (<i>self</i>, QChar)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__rshift__-4" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__rshift__-4">__rshift__</a></b> (<i>self</i>, QDate)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__rshift__-5" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__rshift__-5">__rshift__</a></b> (<i>self</i>, QTime)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__rshift__-6" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__rshift__-6">__rshift__</a></b> (<i>self</i>, QDateTime)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__rshift__-7" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__rshift__-7">__rshift__</a></b> (<i>self</i>, QEasingCurve)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__rshift__-8" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__rshift__-8">__rshift__</a></b> (<i>self</i>, QLine)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__rshift__-9" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__rshift__-9">__rshift__</a></b> (<i>self</i>, QLineF)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__rshift__-10" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__rshift__-10">__rshift__</a></b> (<i>self</i>, QLocale)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__rshift__-11" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__rshift__-11">__rshift__</a></b> (<i>self</i>, QPoint)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__rshift__-12" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__rshift__-12">__rshift__</a></b> (<i>self</i>, QPointF)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__rshift__-13" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__rshift__-13">__rshift__</a></b> (<i>self</i>, QRect)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__rshift__-14" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__rshift__-14">__rshift__</a></b> (<i>self</i>, QRectF)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__rshift__-15" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__rshift__-15">__rshift__</a></b> (<i>self</i>, QRegExp <i>regExp</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__rshift__-16" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__rshift__-16">__rshift__</a></b> (<i>self</i>, QSize)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__rshift__-17" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__rshift__-17">__rshift__</a></b> (<i>self</i>, QSizeF)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__rshift__-18" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__rshift__-18">__rshift__</a></b> (<i>self</i>, QString)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__rshift__-19" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__rshift__-19">__rshift__</a></b> (<i>self</i>, QStringList <i>list</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__rshift__-20" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__rshift__-20">__rshift__</a></b> (<i>self</i>, QUrl)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__rshift__-21" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__rshift__-21">__rshift__</a></b> (<i>self</i>, QUuid)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__rshift__-22" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__rshift__-22">__rshift__</a></b> (<i>self</i>, QVariant <i>p</i>)</li>
+<li>
+<div class="fn"></div>QDataStream <b><a href="qdatastream.html#__rshift__-23" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#__rshift__-23">__rshift__</a></b> (<i>self</i>, Type <i>p</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDataStream类提供的二进制数据序列化到一个<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>。</p>
+<p>数据流是独立于主机的操作系统， CPU或字节顺序的100 ％的编码信息的二进制流。例如，写的是Windows下的PC机的数据流可以通过在Sun SPARC上运行的Solaris读取。</p>
+<p>您也可以使用一个数据流读/写<a href="#raw">raw
+unencoded binary data</a>。如果你想要一个“解析”输入流，请参阅<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>。</p>
+<p>该QDataStream类实现了C + +的基本数据类型的序列化，如<tt>char</tt>，<tt>short</tt>，<tt>int</tt>，<tt>char *</tt>，更复杂的数据序列化等由数据分解成原始单位来完成的。</p>
+<p>一个数据流与密切合作<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>。一<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>表示输入/输出介质1可以读取数据和写入数据到。该<a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a>类是一个I / O设备的一个例子。</p>
+<p>例如（写入二进制数据流） ：</p>
+<pre class="cpp">
+ <span class="type"><a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a></span> file(<span class="string">"file.dat"</span>);
+ file<span class="operator">.</span>open(<span class="type"><a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a></span><span class="operator">.</span>WriteOnly);
+ <span class="type">QDataStream</span> out(<span class="operator">&amp;</span>file);   <span class="comment">// we will serialize the data into the file</span>
+ out <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>(<span class="string">"the answer is"</span>);   <span class="comment">// serialize a string</span>
+ out <span class="operator">&lt;</span><span class="operator">&lt;</span> (<span class="type"><a href="index.htm#qint32-typedef" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qint32-typedef">qint32</a></span>)<span class="number">42</span>;        <span class="comment">// serialize an integer</span>
+</pre>
+<p>示例（读取流的二进制数据） ：</p>
+<pre class="cpp">
+ <span class="type"><a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a></span> file(<span class="string">"file.dat"</span>);
+ file<span class="operator">.</span>open(<span class="type"><a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a></span><span class="operator">.</span>ReadOnly);
+ <span class="type">QDataStream</span> in(<span class="operator">&amp;</span>file);    <span class="comment">// read the data serialized from the file</span>
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str;
+ <span class="type"><a href="index.htm#qint32-typedef" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qint32-typedef">qint32</a></span> a;
+ in <span class="operator">&gt;</span><span class="operator">&gt;</span> str <span class="operator">&gt;</span><span class="operator">&gt;</span> a;           <span class="comment">// extract "the answer is" and 42</span>
+</pre>
+<p>写入流中的每一项是写在根据项目的不同类型预定义的二进制格式。支持Qt的类型包括<a href="qbrush.html" tppabs="http://pyqt4doc.appspot.com/qbrush.html">QBrush</a>，<a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a>，<a href="qdatetime.html" tppabs="http://pyqt4doc.appspot.com/qdatetime.html">QDateTime</a>，<a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a>，<a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a>，<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>，<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>和其他许多人。对于所有类型的Qt支持的数据流看的完整列表<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/datastreamformat.html">Serializing Qt Data Types</a>。</p>
+<p>对于整数，最好是始终转换为Qt的整数类型的写作，和读回相同Qt的整数类型。这可以确保你得到你想要的大小的整数，并隔离了一些编译器和平台的差异。</p>
+<p>举个例子，一个<tt>char *</tt>字符串被写入作为一个32位整数，等于包括'\ 0'字节，接着是字符串的所有字符，包括'\ 0'字节的字符串的长度。当读取一个<tt>char *</tt>串的4个字节被读出以创建32比特长度的值，那么这许多字符的<tt>char *</tt>读取字符串包括' \ 0 '终止。</p>
+<p>最初的I / O设备通常设置在构造函数中，但可以用改变<a href="qdatastream.html#setDevice" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#setDevice">setDevice</a>（ ） 。如果你已经达到了数据的末尾（或如果没有I / O设备设置）<a href="qdatastream.html#atEnd" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#atEnd">atEnd</a>（ ）将返回True 。</p>
+<a id="versioning" name="versioning"></a>
+<h3>Versioning</h3>
+<p>由于Qt的1.0 QDataStream的二进制格式的演变，并有可能继续发展，以反映Qt中所作的更改。当输入或输出复杂的类型，它是非常重要的，以确保流的同一版本（<a href="qdatastream.html#version" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#version">version</a>（） ）是用于读取和写入。如果你需要向前和向后兼容性，您可以硬编码在应用程序的版本号：</p>
+<pre class="cpp">
+ stream<span class="operator">.</span>setVersion(<span class="type">QDataStream</span><span class="operator">.</span>Qt_4_0);
+</pre>
+<p>如果你正在制作一个新的二进制数据格式，如用于您的应用程序创建的文档的文件格式，你可以使用操作QDataStream写在便携格式的数据。通常情况下，你会写包含magic字符串和版本号给自己空间，未来扩展一个简短的标题。例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a></span> file(<span class="string">"file.xxx"</span>);
+ file<span class="operator">.</span>open(<span class="type"><a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a></span><span class="operator">.</span>WriteOnly);
+ <span class="type">QDataStream</span> out(<span class="operator">&amp;</span>file);
+
+ <span class="comment">// Write a header with a "magic number" and a version</span>
+ out <span class="operator">&lt;</span><span class="operator">&lt;</span> (<span class="type"><a href="index.htm#quint32-typedef" tppabs="http://pyqt4doc.appspot.com/qtcore.html#quint32-typedef">quint32</a></span>)<span class="number">0xA0B0C0D0</span>;
+ out <span class="operator">&lt;</span><span class="operator">&lt;</span> (<span class="type"><a href="index.htm#qint32-typedef" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qint32-typedef">qint32</a></span>)<span class="number">123</span>;
+
+ out<span class="operator">.</span>setVersion(<span class="type">QDataStream</span><span class="operator">.</span>Qt_4_0);
+
+ <span class="comment">// Write the data</span>
+ out <span class="operator">&lt;</span><span class="operator">&lt;</span> lots_of_interesting_data;
+</pre>
+<p>然后读取它与：</p>
+<pre class="cpp">
+ <span class="type"><a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a></span> file(<span class="string">"file.xxx"</span>);
+ file<span class="operator">.</span>open(<span class="type"><a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a></span><span class="operator">.</span>ReadOnly);
+ <span class="type">QDataStream</span> in(<span class="operator">&amp;</span>file);
+
+ <span class="comment">// Read and check the header</span>
+ <span class="type"><a href="index.htm#quint32-typedef" tppabs="http://pyqt4doc.appspot.com/qtcore.html#quint32-typedef">quint32</a></span> magic;
+ in <span class="operator">&gt;</span><span class="operator">&gt;</span> magic;
+ <span class="keyword">if</span> (magic <span class="operator">!</span><span class="operator">=</span> <span class="number">0xA0B0C0D0</span>)
+     <span class="keyword">return</span> XXX_BAD_FILE_FORMAT;
+
+ <span class="comment">// Read the version</span>
+ <span class="type"><a href="index.htm#qint32-typedef" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qint32-typedef">qint32</a></span> version;
+ in <span class="operator">&gt;</span><span class="operator">&gt;</span> version;
+ <span class="keyword">if</span> (version <span class="operator">&lt;</span> <span class="number">100</span>)
+     <span class="keyword">return</span> XXX_BAD_FILE_TOO_OLD;
+ <span class="keyword">if</span> (version <span class="operator">&gt;</span> <span class="number">123</span>)
+     <span class="keyword">return</span> XXX_BAD_FILE_TOO_NEW;
+
+ <span class="keyword">if</span> (version <span class="operator">&lt;</span><span class="operator">=</span> <span class="number">110</span>)
+     in<span class="operator">.</span>setVersion(<span class="type">QDataStream</span><span class="operator">.</span>Qt_3_2);
+ <span class="keyword">else</span>
+     in<span class="operator">.</span>setVersion(<span class="type">QDataStream</span><span class="operator">.</span>Qt_4_0);
+
+ <span class="comment">// Read the data</span>
+ in <span class="operator">&gt;</span><span class="operator">&gt;</span> lots_of_interesting_data;
+ <span class="keyword">if</span> (version <span class="operator">&gt;</span><span class="operator">=</span> <span class="number">120</span>)
+     in <span class="operator">&gt;</span><span class="operator">&gt;</span> data_new_in_XXX_version_1_2;
+ in <span class="operator">&gt;</span><span class="operator">&gt;</span> other_interesting_data;
+</pre>
+<p>你可以选择其中的字节顺序序列化数据时使用。默认设置为大端（高位在前） 。它改变为小端打破了便携性（除非读者也改变为小端） 。我们建议保持此设置，除非你有特殊的要求。</p>
+<a id="raw" name="raw"></a><a id="reading-and-writing-raw-binary-data" name="reading-and-writing-raw-binary-data"></a>
+<h3>Reading and writing raw binary data</h3>
+<p>你不妨读/写自己的原始二进制数据到/直接从数据流中。数据可以被从该流读取到一个预先分配的<tt>char *</tt> using <a href="qdatastream.html#readRawData" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readRawData">readRawData</a>（ ） 。同样的数据可以使用被写入到该流<a href="qdatastream.html#writeRawData" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeRawData">writeRawData</a>（ ） 。请注意，任何数据编码/解码必须由你来完成。</p>
+<p>一对相似的功能是<a href="qdatastream.html#readBytes" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readBytes">readBytes</a>（）和<a href="qdatastream.html#writeBytes" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeBytes">writeBytes</a>（ ） 。这些从他们的不同<i>raw</i>对口如下：<a href="qdatastream.html#readBytes" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readBytes">readBytes</a>（）读取被视为将要读取的数据的长度的quint32 ，则该数目的字节被读入预先分配的<tt>char *</tt>;<a href="qdatastream.html#writeBytes" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeBytes">writeBytes</a>（）写入包含该数据的长度的quint32 ，然后是数据。请注意，数据（除了长度quint32 ）任何编码/解码必须由你来完成。</p>
+<a id="reading-and-writing-qt-collection-classes" name="reading-and-writing-qt-collection-classes"></a>
+<h3>Reading and writing Qt collection classes</h3>
+<p>Qt的容器类也可以被序列化到操作QDataStream 。这些措施包括<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qlist.html">QList</a>，<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qlinkedlist.html">QLinkedList</a>，<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qvector.html">QVector</a>，<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qset.html">QSet</a>，<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qhash.html">QHash</a>和<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qmap.html">QMap</a>。流运算符被声明为类的非成员。</p>
+<a id="serializing-qt-classes" name="serializing-qt-classes"></a><a id="reading-and-writing-other-qt-classes" name="reading-and-writing-other-qt-classes"></a>
+<h3>Reading and writing other Qt classes.</h3>
+<p>除了重载流运算符记录在这里，任何的Qt类，你可能要序列化操作QDataStream将有声明为类的非成员适当的流运算符：</p>
+<pre class="cpp">
+ <span class="type">QDataStream</span> <span class="operator">&amp;</span><span class="keyword">operator</span><span class="operator">&lt;</span><span class="operator">&lt;</span>(<span class="type">QDataStream</span> <span class="operator">&amp;</span><span class="operator">,</span> <span class="keyword">const</span> <span class="type">QXxx</span> <span class="operator">&amp;</span>);
+ <span class="type">QDataStream</span> <span class="operator">&amp;</span><span class="keyword">operator</span><span class="operator">&gt;</span><span class="operator">&gt;</span>(<span class="type">QDataStream</span> <span class="operator">&amp;</span><span class="operator">,</span> <span class="type">QXxx</span> <span class="operator">&amp;</span>);
+</pre>
+<p>例如，这里有流运营商宣布作为非成员<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>类：</p>
+<pre class="cpp">
+ <span class="type">QDataStream</span> <span class="operator">&amp;</span> <span class="keyword">operator</span><span class="operator">&lt;</span><span class="operator">&lt;</span> (<span class="type">QDataStream</span><span class="operator">&amp;</span> stream<span class="operator">,</span> <span class="keyword">const</span> <span class="type"><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a></span><span class="operator">&amp;</span> image);
+ <span class="type">QDataStream</span> <span class="operator">&amp;</span> <span class="keyword">operator</span><span class="operator">&gt;</span><span class="operator">&gt;</span> (<span class="type">QDataStream</span><span class="operator">&amp;</span> stream<span class="operator">,</span> <span class="type"><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a></span><span class="operator">&amp;</span> image);
+</pre>
+<p>要看看你最喜欢的Qt类定义了类似的流运算符，请检查<b>Related Non-Members</b>类的文档页面的部分。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="ByteOrder-enum"></a>QDataStream.ByteOrder</h3>
+<p>用于读取/写入数据的字节顺序。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDataStream.BigEndian</tt></td>
+<td class="topAlign"><tt>QSysInfo.BigEndian</tt></td>
+<td class="topAlign">第一个最显着字节（默认）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDataStream.LittleEndian</tt></td>
+<td class="topAlign"><tt>QSysInfo.LittleEndian</tt></td>
+<td class="topAlign">首先至少显着字节</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="FloatingPointPrecision-enum"></a>QDataStream.FloatingPointPrecision</h3>
+<p>用于读/写数据的浮点数的精度。这只会产生效果，如果数据流的版本是<a href="qdatastream.html#Version-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#Version-enum">Qt_4_6</a>或更高。</p>
+<p><b>Warning:</b>浮点精度必须被设置为相同的值，写入对象并读取数据流中的对象上。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDataStream.SinglePrecision</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">在数据流中的所有浮点数具有32位精度。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDataStream.DoublePrecision</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">在数据流中的所有浮点数具有64位精度。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qdatastream.html#setFloatingPointPrecision" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#setFloatingPointPrecision">setFloatingPointPrecision</a>（）和<a href="qdatastream.html#floatingPointPrecision" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#floatingPointPrecision">floatingPointPrecision</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="Status-enum"></a>QDataStream.Status</h3>
+<p>该枚举描述了数据流的当前状态。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDataStream.Ok</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该数据流是否正常运行。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDataStream.ReadPastEnd</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该数据流已经读取过的底层设备中的数据的结尾。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDataStream.ReadCorruptData</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">数据流已经读取损坏的数据。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDataStream.WriteFailed</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">数据流不能写入到基础设备。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="Version-enum"></a>QDataStream.Version</h3>
+<p>此枚举提供了象征性的同义词，数据序列化格式的版本号。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDataStream.Qt_1_0</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">版本1 （ Qt的1.x中）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDataStream.Qt_2_0</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">第2版​​（ Qt的2.0）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDataStream.Qt_2_1</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">第3版（ Qt的2.1 ，2.2， 2.3 ）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDataStream.Qt_3_0</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">第4版（QT 3.0 ）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDataStream.Qt_3_1</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">第5版（QT 3.1 ， 3.2 ）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDataStream.Qt_3_3</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">第6版（QT 3.3 ）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDataStream.Qt_4_0</tt></td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">第7版（QT 4.0 ， Qt的4.1 ）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDataStream.Qt_4_1</tt></td>
+<td class="topAlign"><tt>Qt_4_0</tt></td>
+<td class="topAlign">第7版（QT 4.0 ， Qt的4.1 ）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDataStream.Qt_4_2</tt></td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">8版本（ Qt 4.2中）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDataStream.Qt_4_3</tt></td>
+<td class="topAlign"><tt>9</tt></td>
+<td class="topAlign">第9版（QT 4.3 ）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDataStream.Qt_4_4</tt></td>
+<td class="topAlign"><tt>10</tt></td>
+<td class="topAlign">第10版（QT 4.4 ）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDataStream.Qt_4_5</tt></td>
+<td class="topAlign"><tt>11</tt></td>
+<td class="topAlign">版本11 （QT 4.5 ）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDataStream.Qt_4_6</tt></td>
+<td class="topAlign"><tt>12</tt></td>
+<td class="topAlign">版本12 （QT 4.6 ， 4.7的Qt ， Qt的4.8 ）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDataStream.Qt_4_7</tt></td>
+<td class="topAlign"><tt>Qt_4_6</tt></td>
+<td class="topAlign">同Qt_4_6 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDataStream.Qt_4_8</tt></td>
+<td class="topAlign"><tt>Qt_4_7 Qt_4_9 = Qt_4_8</tt></td>
+<td class="topAlign">同Qt_4_6 。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qdatastream.html#setVersion" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#setVersion">setVersion</a>（）和<a href="qdatastream.html#version" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#version">version</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDataStream"></a>QDataStream.__init__ (<i>self</i>)</h3>
+<p>构造一个没有I / O设备的数据流。</p>
+<p><b>See also</b> <a href="qdatastream.html#setDevice" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#setDevice">setDevice</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QDataStream-2"></a>QDataStream.__init__ (<i>self</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>)</h3>
+<p>构造一个使用I / O设备的数据流<i>d</i>。</p>
+<p><b>Warning:</b>如果你使用<a href="index.htm#qsocket" tppabs="http://pyqt4doc.appspot.com/porting4.html#qsocket">QSocket</a> or <a href="index.htm#qsocketdevice" tppabs="http://pyqt4doc.appspot.com/porting4.html#qsocketdevice">QSocketDevice</a>作为I / O设备<i>d</i>读取数据时，你必须确保有足够的数据可在套接字的操作来顺利进行;<a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a>没有任何手段来处理或从短读取恢复。</p>
+<p><b>See also</b> <a href="qdatastream.html#setDevice" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#setDevice">setDevice</a>（）和<a href="qdatastream.html#device" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#device">device</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QDataStream-3"></a>QDataStream.__init__ (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qiodevice-openmode.html">QIODevice.OpenMode</a> <i>flags</i>)</h3>
+<h3 class="fn">
+<a name="QDataStream-4"></a>QDataStream.__init__ (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>)</h3>
+<p>构造一个操作的字节数组上的数据流，<i>a</i>。该<i>mode</i>描述了设备是如何被使用的。</p>
+<p>或者，您也可以使用<a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a>（常量<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>＆） ，如果你只是想从一个字节数组来读取。</p>
+<p>自<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>是不是一个<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>子类，一个内部<a href="qbuffer.html" tppabs="http://pyqt4doc.appspot.com/qbuffer.html">QBuffer</a>创建包的字节数组。</p>
+
+
+<h3 class="fn">
+<a name="atEnd"></a>bool QDataStream.atEnd (<i>self</i>)</h3>
+<p>返回True如果I / O设备已经到达末端位置（流或文件结束），或者如果没有I / O设备一套，否则返回False 。</p>
+<p><b>See also</b> <a href="qiodevice.html#atEnd" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#atEnd">QIODevice.atEnd</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="byteOrder"></a><a href="qdatastream.html#ByteOrder-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#ByteOrder-enum">ByteOrder</a> QDataStream.byteOrder (<i>self</i>)</h3>
+<p>返回当前字节顺序设置 - 无论是<a href="qdatastream.html#ByteOrder-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#ByteOrder-enum">BigEndian</a> or <a href="qdatastream.html#ByteOrder-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#ByteOrder-enum">LittleEndian</a>。</p>
+<p><b>See also</b> <a href="qdatastream.html#setByteOrder" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#setByteOrder">setByteOrder</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="device"></a><a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> QDataStream.device (<i>self</i>)</h3>
+<p>返回当前设置的I / O设备，或0，如果没有设备的当前设置。</p>
+<p><b>See also</b> <a href="qdatastream.html#setDevice" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#setDevice">setDevice</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="floatingPointPrecision"></a><a href="qdatastream.html#FloatingPointPrecision-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#FloatingPointPrecision-enum">FloatingPointPrecision</a> QDataStream.floatingPointPrecision (<i>self</i>)</h3>
+<p>返回数据流的浮点精度。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qdatastream.html#FloatingPointPrecision-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#FloatingPointPrecision-enum">FloatingPointPrecision</a>和<a href="qdatastream.html#setFloatingPointPrecision" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#setFloatingPointPrecision">setFloatingPointPrecision</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="readBool"></a>bool QDataStream.readBool (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="readBytes"></a>str QDataStream.readBytes (<i>self</i>)</h3>
+<p>读取缓冲区<i>s</i>从流，并返回一个引用到流。</p>
+<p>缓冲区<i>s</i>使用分配<tt>new</tt>。与摧毁它<tt>delete[]</tt>运营商。</p>
+<p>该<i>l</i>参数被设置为缓冲区的长度。如果读取的字符串是空的，<i>l</i>被设置为0 ，并<i>s</i>设置为空指针。</p>
+<p>序列化格式是quint32长度说明符，然后再<i>l</i>字节的数据。</p>
+<p><b>See also</b> <a href="qdatastream.html#readRawData" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readRawData">readRawData</a>（）和<a href="qdatastream.html#writeBytes" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeBytes">writeBytes</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="readDouble"></a>float QDataStream.readDouble (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="readFloat"></a>float QDataStream.readFloat (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="readInt"></a>int QDataStream.readInt (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="readInt16"></a>int QDataStream.readInt16 (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="readInt32"></a>int QDataStream.readInt32 (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="readInt64"></a>int QDataStream.readInt64 (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="readInt8"></a>str QDataStream.readInt8 (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="readQString"></a>QString QDataStream.readQString (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="readQStringList"></a>QStringList QDataStream.readQStringList (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="readQVariant"></a>QVariant QDataStream.readQVariant (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="readQVariantHash"></a>dict-of-QString-QVariant QDataStream.readQVariantHash (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="readQVariantList"></a>list-of-QVariant QDataStream.readQVariantList (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="readQVariantMap"></a>dict-of-QString-QVariant QDataStream.readQVariantMap (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="readRawData"></a>str QDataStream.readRawData (<i>self</i>, int <i>len</i>)</h3>
+<p>阅读次数最多<i>len</i>从流成字节<i>s</i>并返回读取的字节数。如果发生错误，该函数返回-1 。</p>
+<p>缓冲区<i>s</i>必须预先分配。该数据是<i>not</i>编码。</p>
+<p><b>See also</b> <a href="qdatastream.html#readBytes" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readBytes">readBytes</a>（ ）<a href="qiodevice.html#read" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#read">QIODevice.read</a>（）和<a href="qdatastream.html#writeRawData" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeRawData">writeRawData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="readString"></a>str QDataStream.readString (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="readUInt16"></a>int QDataStream.readUInt16 (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="readUInt32"></a>int QDataStream.readUInt32 (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="readUInt64"></a>int QDataStream.readUInt64 (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="readUInt8"></a>str QDataStream.readUInt8 (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="resetStatus"></a>QDataStream.resetStatus (<i>self</i>)</h3>
+<p>重置数据流的状态。</p>
+<p><b>See also</b> <a href="qdatastream.html#Status-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#Status-enum">Status</a>，<a href="qdatastream.html#status" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#status">status</a>（）和<a href="qdatastream.html#setStatus" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#setStatus">setStatus</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setByteOrder"></a>QDataStream.setByteOrder (<i>self</i>, <a href="qdatastream.html#ByteOrder-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#ByteOrder-enum">ByteOrder</a>)</h3>
+<p>设置序列化字节顺序<i>bo</i>。</p>
+<p>该<i>bo</i>参数可以是<a href="qdatastream.html#ByteOrder-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#ByteOrder-enum">QDataStream.BigEndian</a> or
+<a href="qdatastream.html#ByteOrder-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#ByteOrder-enum">QDataStream.LittleEndian</a>。</p>
+<p>默认设置为大端。我们建议您保留此设置，除非你有特殊的要求。</p>
+<p><b>See also</b> <a href="qdatastream.html#byteOrder" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#byteOrder">byteOrder</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setDevice"></a>QDataStream.setDevice (<i>self</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>)</h3>
+<p>无效QDataStream.setDevice （<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>* D ）</p>
+<p>在I / O设备设置为<i>d</i>，它可以是0到未设置到当前的I / O设备。</p>
+<p><b>See also</b> <a href="qdatastream.html#device" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#device">device</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFloatingPointPrecision"></a>QDataStream.setFloatingPointPrecision (<i>self</i>, <a href="qdatastream.html#FloatingPointPrecision-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#FloatingPointPrecision-enum">FloatingPointPrecision</a> <i>precision</i>)</h3>
+<p>设置数据流的浮点精度<i>precision</i>。如果浮点精度<a href="qdatastream.html#FloatingPointPrecision-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#FloatingPointPrecision-enum">DoublePrecision</a>和数据流的版本是<a href="qdatastream.html#Version-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#Version-enum">Qt_4_6</a>或更高，所有的浮点数字将被写入和读取与64位精度。如果浮点精度<a href="qdatastream.html#FloatingPointPrecision-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#FloatingPointPrecision-enum">SinglePrecision</a>和版本是<a href="qdatastream.html#Version-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#Version-enum">Qt_4_6</a>或更高，所有的浮点数字将被写入和读取与32位精度。</p>
+<p>对于之前的版本<a href="qdatastream.html#Version-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#Version-enum">Qt_4_6</a>，的数据流中的浮点数的精度取决于流运算符调用。</p>
+<p>默认值是<a href="qdatastream.html#FloatingPointPrecision-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#FloatingPointPrecision-enum">DoublePrecision</a>。</p>
+<p><b>Warning:</b>此属性必须被设置为相同的值，该值写入对象并读取该数据流的对象。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qdatastream.html#floatingPointPrecision" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#floatingPointPrecision">floatingPointPrecision</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setStatus"></a>QDataStream.setStatus (<i>self</i>, <a href="qdatastream.html#Status-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#Status-enum">Status</a> <i>status</i>)</h3>
+<p>设置数据流的状态到<i>status</i>给出。</p>
+<p>后续调用setStatus （）被忽略，直到<a href="qdatastream.html#resetStatus" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#resetStatus">resetStatus</a>（）被调用。</p>
+<p><b>See also</b> <a href="qdatastream.html#Status-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#Status-enum">Status</a>，<a href="qdatastream.html#status" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#status">status</a>（）和<a href="qdatastream.html#resetStatus" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#resetStatus">resetStatus</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setVersion"></a>QDataStream.setVersion (<i>self</i>, int <i>v</i>)</h3>
+<p>设置数据序列化格式的版本号<i>v</i>。</p>
+<p>你不<i>have</i>设置一个版本，如果你正在使用Qt的最新版本，但对于自己的自定义的二进制格式，我们建议你这样做，见<a href="qdatastream.html#versioning" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#versioning">Versioning</a>在详细说明。</p>
+<p>为了适应新的功能，一些Qt类的数据流的序列化格式在某些版本的Qt已经改变。如果你想读通过的Qt的早期版本创建的数据，或写可以由被与Qt的早期版本编译的程序可以读取数据，使用此功能来修改所使用的序列化格式<a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a>。</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Qt Version</th>
+<th>
+<a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> Version</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td>Qt 4.6</td>
+<td>12</td>
+</tr>
+<tr class="even" valign="top">
+<td>Qt 4.5</td>
+<td>11</td>
+</tr>
+<tr class="odd" valign="top">
+<td>Qt 4.4</td>
+<td>10</td>
+</tr>
+<tr class="even" valign="top">
+<td>Qt 4.3</td>
+<td>9</td>
+</tr>
+<tr class="odd" valign="top">
+<td>Qt 4.2</td>
+<td>8</td>
+</tr>
+<tr class="even" valign="top">
+<td>Qt 4.0, 4.1</td>
+<td>7</td>
+</tr>
+<tr class="odd" valign="top">
+<td>Qt 3.3</td>
+<td>6</td>
+</tr>
+<tr class="even" valign="top">
+<td>Qt 3.1, 3.2</td>
+<td>5</td>
+</tr>
+<tr class="odd" valign="top">
+<td>Qt 3.0</td>
+<td>4</td>
+</tr>
+<tr class="even" valign="top">
+<td>Qt 2.1, 2.2, 2.3</td>
+<td>3</td>
+</tr>
+<tr class="odd" valign="top">
+<td>Qt 2.0</td>
+<td>2</td>
+</tr>
+<tr class="even" valign="top">
+<td>Qt 1.x</td>
+<td>1</td>
+</tr>
+</table>
+<p>该<a href="qdatastream.html#Version-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#Version-enum">Version</a>枚举提供了不同版本的Qt的符号常量。例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a></span> out(file);
+ out<span class="operator">.</span>setVersion(<span class="type"><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a></span><span class="operator">.</span>Qt_4_0);
+</pre>
+<p><b>See also</b> <a href="qdatastream.html#version" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#version">version</a>（）和<a href="qdatastream.html#Version-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#Version-enum">Version</a>。</p>
+
+
+<h3 class="fn">
+<a name="skipRawData"></a>int QDataStream.skipRawData (<i>self</i>, int <i>len</i>)</h3>
+<p>跳过<i>len</i>从设备字节。返回的错误字节数居然跳过，或-1 。</p>
+<p>这等同于调用<a href="qdatastream.html#readRawData" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readRawData">readRawData</a>（）的长度的缓冲区<i>len</i>而忽略了缓冲区。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qiodevice.html#seek" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#seek">QIODevice.seek</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="status"></a><a href="qdatastream.html#Status-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#Status-enum">Status</a> QDataStream.status (<i>self</i>)</h3>
+<p>返回数据流的状态。</p>
+<p><b>See also</b> <a href="qdatastream.html#Status-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#Status-enum">Status</a>，<a href="qdatastream.html#setStatus" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#setStatus">setStatus</a>（）和<a href="qdatastream.html#resetStatus" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#resetStatus">resetStatus</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="unsetDevice"></a>QDataStream.unsetDevice (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="version"></a>int QDataStream.version (<i>self</i>)</h3>
+<p>返回的数据序列化格式的版本号。</p>
+<p><b>See also</b> <a href="qdatastream.html#setVersion" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#setVersion">setVersion</a>（）和<a href="qdatastream.html#Version-enum" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#Version-enum">Version</a>。</p>
+
+
+<h3 class="fn">
+<a name="writeBool"></a>QDataStream.writeBool (<i>self</i>, bool <i>i</i>)</h3>
+<h3 class="fn">
+<a name="writeBytes"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.writeBytes (<i>self</i>, str)</h3>
+<p>写入长度说明<i>len</i>和缓冲<i>s</i>到流并返回一个引用到流。</p>
+<p>该<i>len</i>被序列化为一个quint32 ，其次是<i>len</i>从字节<i>s</i>。注意，该数据是<i>not</i>编码。</p>
+<p><b>See also</b> <a href="qdatastream.html#writeRawData" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeRawData">writeRawData</a>（）和<a href="qdatastream.html#readBytes" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readBytes">readBytes</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="writeDouble"></a>QDataStream.writeDouble (<i>self</i>, float <i>f</i>)</h3>
+<h3 class="fn">
+<a name="writeFloat"></a>QDataStream.writeFloat (<i>self</i>, float <i>f</i>)</h3>
+<h3 class="fn">
+<a name="writeInt"></a>QDataStream.writeInt (<i>self</i>, int <i>i</i>)</h3>
+<h3 class="fn">
+<a name="writeInt16"></a>QDataStream.writeInt16 (<i>self</i>, int <i>i</i>)</h3>
+<h3 class="fn">
+<a name="writeInt32"></a>QDataStream.writeInt32 (<i>self</i>, int <i>i</i>)</h3>
+<h3 class="fn">
+<a name="writeInt64"></a>QDataStream.writeInt64 (<i>self</i>, int <i>i</i>)</h3>
+<h3 class="fn">
+<a name="writeInt8"></a>QDataStream.writeInt8 (<i>self</i>, str <i>i</i>)</h3>
+<h3 class="fn">
+<a name="writeQString"></a>QDataStream.writeQString (<i>self</i>, QString <i>qstr</i>)</h3>
+<h3 class="fn">
+<a name="writeQStringList"></a>QDataStream.writeQStringList (<i>self</i>, QStringList <i>qstrlst</i>)</h3>
+<h3 class="fn">
+<a name="writeQVariant"></a>QDataStream.writeQVariant (<i>self</i>, QVariant <i>qvar</i>)</h3>
+<h3 class="fn">
+<a name="writeQVariantHash"></a>QDataStream.writeQVariantHash (<i>self</i>, dict-of-QString-QVariant <i>qvarhash</i>)</h3>
+<h3 class="fn">
+<a name="writeQVariantList"></a>QDataStream.writeQVariantList (<i>self</i>, list-of-QVariant <i>qvarlst</i>)</h3>
+<h3 class="fn">
+<a name="writeQVariantMap"></a>QDataStream.writeQVariantMap (<i>self</i>, dict-of-QString-QVariant <i>qvarmap</i>)</h3>
+<h3 class="fn">
+<a name="writeRawData"></a>int QDataStream.writeRawData (<i>self</i>, str)</h3>
+<p>Writes <i>len</i>从字节<i>s</i>到流。返回实际写入的字节数，或-1。该数据是<i>not</i>编码。</p>
+<p><b>See also</b> <a href="qdatastream.html#writeBytes" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#writeBytes">writeBytes</a>（ ）<a href="qiodevice.html#write" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#write">QIODevice.write</a>（）和<a href="qdatastream.html#readRawData" tppabs="http://pyqt4doc.appspot.com/qdatastream.html#readRawData">readRawData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="writeString"></a>QDataStream.writeString (<i>self</i>, str <i>str</i>)</h3>
+<h3 class="fn">
+<a name="writeUInt16"></a>QDataStream.writeUInt16 (<i>self</i>, int <i>i</i>)</h3>
+<h3 class="fn">
+<a name="writeUInt32"></a>QDataStream.writeUInt32 (<i>self</i>, int <i>i</i>)</h3>
+<h3 class="fn">
+<a name="writeUInt64"></a>QDataStream.writeUInt64 (<i>self</i>, int <i>i</i>)</h3>
+<h3 class="fn">
+<a name="writeUInt8"></a>QDataStream.writeUInt8 (<i>self</i>, str <i>i</i>)</h3>
+<h3 class="fn">
+<a name="__lshift__"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qnetworkcachemetadata.html" tppabs="http://pyqt4doc.appspot.com/qnetworkcachemetadata.html">QNetworkCacheMetaData</a>)</h3>
+<p>如果QtNetwork模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qscriptcontextinfo.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontextinfo.html">QScriptContextInfo</a>)</h3>
+<p>如果QtScript模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qwebhistory.html" tppabs="http://pyqt4doc.appspot.com/qwebhistory.html">QWebHistory</a>)</h3>
+<p>如果QtWebKit的模块被导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-2"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qbrush.html" tppabs="http://pyqt4doc.appspot.com/qbrush.html">QBrush</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-2"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qhostaddress.html" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html">QHostAddress</a>)</h3>
+<p>如果QtNetwork模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-3"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qcursor.html" tppabs="http://pyqt4doc.appspot.com/qcursor.html">QCursor</a> <i>cursor</i>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-4"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-5"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qicon.html" tppabs="http://pyqt4doc.appspot.com/qicon.html">QIcon</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-6"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-7"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qkeysequence.html" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html">QKeySequence</a> <i>ks</i>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-8"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qlistwidgetitem.html" tppabs="http://pyqt4doc.appspot.com/qlistwidgetitem.html">QListWidgetItem</a> <i>item</i>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-9"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qmatrix.html" tppabs="http://pyqt4doc.appspot.com/qmatrix.html">QMatrix</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-10"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qmatrix4x4.html" tppabs="http://pyqt4doc.appspot.com/qmatrix4x4.html">QMatrix4x4</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-11"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-12"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qpalette.html" tppabs="http://pyqt4doc.appspot.com/qpalette.html">QPalette</a> <i>p</i>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-13"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qpen.html" tppabs="http://pyqt4doc.appspot.com/qpen.html">QPen</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-14"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qpicture.html" tppabs="http://pyqt4doc.appspot.com/qpicture.html">QPicture</a> <i>p</i>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-15"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-16"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qpolygonf.html" tppabs="http://pyqt4doc.appspot.com/qpolygonf.html">QPolygonF</a> <i>array</i>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-17"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qpolygon.html" tppabs="http://pyqt4doc.appspot.com/qpolygon.html">QPolygon</a> <i>polygon</i>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-18"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qquaternion.html" tppabs="http://pyqt4doc.appspot.com/qquaternion.html">QQuaternion</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-19"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-20"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qsizepolicy.html" tppabs="http://pyqt4doc.appspot.com/qsizepolicy.html">QSizePolicy</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-22"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a> <i>item</i>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-23"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qtablewidgetitem.html" tppabs="http://pyqt4doc.appspot.com/qtablewidgetitem.html">QTableWidgetItem</a> <i>item</i>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-24"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qtextlength.html" tppabs="http://pyqt4doc.appspot.com/qtextlength.html">QTextLength</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-25"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qtextformat.html" tppabs="http://pyqt4doc.appspot.com/qtextformat.html">QTextFormat</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-26"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-27"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qtreewidgetitem.html" tppabs="http://pyqt4doc.appspot.com/qtreewidgetitem.html">QTreeWidgetItem</a> <i>item</i>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-28"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qvector2d.html" tppabs="http://pyqt4doc.appspot.com/qvector2d.html">QVector2D</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-29"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qvector3d.html" tppabs="http://pyqt4doc.appspot.com/qvector3d.html">QVector3D</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-30"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __lshift__ (<i>self</i>, <a href="qvector4d.html" tppabs="http://pyqt4doc.appspot.com/qvector4d.html">QVector4D</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qnetworkcachemetadata.html" tppabs="http://pyqt4doc.appspot.com/qnetworkcachemetadata.html">QNetworkCacheMetaData</a>)</h3>
+<p>如果QtNetwork模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qscriptcontextinfo.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontextinfo.html">QScriptContextInfo</a>)</h3>
+<p>如果QtScript模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qwebhistory.html" tppabs="http://pyqt4doc.appspot.com/qwebhistory.html">QWebHistory</a>)</h3>
+<p>如果QtWebKit的模块被导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-2"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qbrush.html" tppabs="http://pyqt4doc.appspot.com/qbrush.html">QBrush</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-2"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qhostaddress.html" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html">QHostAddress</a>)</h3>
+<p>如果QtNetwork模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-3"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qcursor.html" tppabs="http://pyqt4doc.appspot.com/qcursor.html">QCursor</a> <i>cursor</i>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-4"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-5"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qicon.html" tppabs="http://pyqt4doc.appspot.com/qicon.html">QIcon</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-6"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-7"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qkeysequence.html" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html">QKeySequence</a> <i>ks</i>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-8"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qlistwidgetitem.html" tppabs="http://pyqt4doc.appspot.com/qlistwidgetitem.html">QListWidgetItem</a> <i>item</i>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-9"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qmatrix.html" tppabs="http://pyqt4doc.appspot.com/qmatrix.html">QMatrix</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-10"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qmatrix4x4.html" tppabs="http://pyqt4doc.appspot.com/qmatrix4x4.html">QMatrix4x4</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-11"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-12"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qpalette.html" tppabs="http://pyqt4doc.appspot.com/qpalette.html">QPalette</a> <i>p</i>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-13"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qpen.html" tppabs="http://pyqt4doc.appspot.com/qpen.html">QPen</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-14"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qpicture.html" tppabs="http://pyqt4doc.appspot.com/qpicture.html">QPicture</a> <i>p</i>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-15"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-16"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qpolygonf.html" tppabs="http://pyqt4doc.appspot.com/qpolygonf.html">QPolygonF</a> <i>array</i>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-17"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qpolygon.html" tppabs="http://pyqt4doc.appspot.com/qpolygon.html">QPolygon</a> <i>polygon</i>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-18"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qquaternion.html" tppabs="http://pyqt4doc.appspot.com/qquaternion.html">QQuaternion</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-19"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-20"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qsizepolicy.html" tppabs="http://pyqt4doc.appspot.com/qsizepolicy.html">QSizePolicy</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-22"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a> <i>item</i>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-23"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qtablewidgetitem.html" tppabs="http://pyqt4doc.appspot.com/qtablewidgetitem.html">QTableWidgetItem</a> <i>item</i>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-24"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qtextlength.html" tppabs="http://pyqt4doc.appspot.com/qtextlength.html">QTextLength</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-25"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qtextformat.html" tppabs="http://pyqt4doc.appspot.com/qtextformat.html">QTextFormat</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-26"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-27"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qtreewidgetitem.html" tppabs="http://pyqt4doc.appspot.com/qtreewidgetitem.html">QTreeWidgetItem</a> <i>item</i>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-28"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qvector2d.html" tppabs="http://pyqt4doc.appspot.com/qvector2d.html">QVector2D</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-29"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qvector3d.html" tppabs="http://pyqt4doc.appspot.com/qvector3d.html">QVector3D</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-30"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> __rshift__ (<i>self</i>, <a href="qvector4d.html" tppabs="http://pyqt4doc.appspot.com/qvector4d.html">QVector4D</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__lshift__ (<i>self</i>, <a href="qbitarray.html" tppabs="http://pyqt4doc.appspot.com/qbitarray.html">QBitArray</a>)</h3>
+<h3 class="fn">
+<a name="__lshift__-2"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__lshift__ (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>)</h3>
+<h3 class="fn">
+<a name="__lshift__-3"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__lshift__ (<i>self</i>, QChar)</h3>
+<h3 class="fn">
+<a name="__lshift__-4"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__lshift__ (<i>self</i>, <a href="qdate.html" tppabs="http://pyqt4doc.appspot.com/qdate.html">QDate</a>)</h3>
+<h3 class="fn">
+<a name="__lshift__-5"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__lshift__ (<i>self</i>, <a href="qtime.html" tppabs="http://pyqt4doc.appspot.com/qtime.html">QTime</a>)</h3>
+<h3 class="fn">
+<a name="__lshift__-6"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__lshift__ (<i>self</i>, <a href="qdatetime.html" tppabs="http://pyqt4doc.appspot.com/qdatetime.html">QDateTime</a>)</h3>
+<h3 class="fn">
+<a name="__lshift__-7"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__lshift__ (<i>self</i>, <a href="qeasingcurve.html" tppabs="http://pyqt4doc.appspot.com/qeasingcurve.html">QEasingCurve</a>)</h3>
+<h3 class="fn">
+<a name="__lshift__-8"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__lshift__ (<i>self</i>, <a href="qline.html" tppabs="http://pyqt4doc.appspot.com/qline.html">QLine</a>)</h3>
+<h3 class="fn">
+<a name="__lshift__-9"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__lshift__ (<i>self</i>, <a href="qlinef.html" tppabs="http://pyqt4doc.appspot.com/qlinef.html">QLineF</a>)</h3>
+<h3 class="fn">
+<a name="__lshift__-10"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__lshift__ (<i>self</i>, <a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a>)</h3>
+<h3 class="fn">
+<a name="__lshift__-11"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__lshift__ (<i>self</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a>)</h3>
+<h3 class="fn">
+<a name="__lshift__-12"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__lshift__ (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a>)</h3>
+<h3 class="fn">
+<a name="__lshift__-13"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__lshift__ (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a>)</h3>
+<h3 class="fn">
+<a name="__lshift__-14"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__lshift__ (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a>)</h3>
+<h3 class="fn">
+<a name="__lshift__-15"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__lshift__ (<i>self</i>, <a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a> <i>regExp</i>)</h3>
+<h3 class="fn">
+<a name="__lshift__-16"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__lshift__ (<i>self</i>, <a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a>)</h3>
+<h3 class="fn">
+<a name="__lshift__-17"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__lshift__ (<i>self</i>, <a href="qsizef.html" tppabs="http://pyqt4doc.appspot.com/qsizef.html">QSizeF</a>)</h3>
+<h3 class="fn">
+<a name="__lshift__-18"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__lshift__ (<i>self</i>, QString)</h3>
+<h3 class="fn">
+<a name="__lshift__-19"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__lshift__ (<i>self</i>, QStringList <i>list</i>)</h3>
+<h3 class="fn">
+<a name="__lshift__-20"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__lshift__ (<i>self</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>)</h3>
+<h3 class="fn">
+<a name="__lshift__-21"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__lshift__ (<i>self</i>, <a href="quuid.html" tppabs="http://pyqt4doc.appspot.com/quuid.html">QUuid</a>)</h3>
+<h3 class="fn">
+<a name="__lshift__-22"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__lshift__ (<i>self</i>, QVariant <i>p</i>)</h3>
+<h3 class="fn">
+<a name="__lshift__-23"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__lshift__ (<i>self</i>, <a href="index.htm#Type-enum" tppabs="http://pyqt4doc.appspot.com/qtcore.html#Type-enum">Type</a> <i>p</i>)</h3>
+<h3 class="fn">
+<a name="__rshift__"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__rshift__ (<i>self</i>, <a href="qbitarray.html" tppabs="http://pyqt4doc.appspot.com/qbitarray.html">QBitArray</a>)</h3>
+<h3 class="fn">
+<a name="__rshift__-2"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__rshift__ (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>)</h3>
+<h3 class="fn">
+<a name="__rshift__-3"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__rshift__ (<i>self</i>, QChar)</h3>
+<h3 class="fn">
+<a name="__rshift__-4"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__rshift__ (<i>self</i>, <a href="qdate.html" tppabs="http://pyqt4doc.appspot.com/qdate.html">QDate</a>)</h3>
+<h3 class="fn">
+<a name="__rshift__-5"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__rshift__ (<i>self</i>, <a href="qtime.html" tppabs="http://pyqt4doc.appspot.com/qtime.html">QTime</a>)</h3>
+<h3 class="fn">
+<a name="__rshift__-6"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__rshift__ (<i>self</i>, <a href="qdatetime.html" tppabs="http://pyqt4doc.appspot.com/qdatetime.html">QDateTime</a>)</h3>
+<h3 class="fn">
+<a name="__rshift__-7"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__rshift__ (<i>self</i>, <a href="qeasingcurve.html" tppabs="http://pyqt4doc.appspot.com/qeasingcurve.html">QEasingCurve</a>)</h3>
+<h3 class="fn">
+<a name="__rshift__-8"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__rshift__ (<i>self</i>, <a href="qline.html" tppabs="http://pyqt4doc.appspot.com/qline.html">QLine</a>)</h3>
+<h3 class="fn">
+<a name="__rshift__-9"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__rshift__ (<i>self</i>, <a href="qlinef.html" tppabs="http://pyqt4doc.appspot.com/qlinef.html">QLineF</a>)</h3>
+<h3 class="fn">
+<a name="__rshift__-10"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__rshift__ (<i>self</i>, <a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a>)</h3>
+<h3 class="fn">
+<a name="__rshift__-11"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__rshift__ (<i>self</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a>)</h3>
+<h3 class="fn">
+<a name="__rshift__-12"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__rshift__ (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a>)</h3>
+<h3 class="fn">
+<a name="__rshift__-13"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__rshift__ (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a>)</h3>
+<h3 class="fn">
+<a name="__rshift__-14"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__rshift__ (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a>)</h3>
+<h3 class="fn">
+<a name="__rshift__-15"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__rshift__ (<i>self</i>, <a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a> <i>regExp</i>)</h3>
+<h3 class="fn">
+<a name="__rshift__-16"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__rshift__ (<i>self</i>, <a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a>)</h3>
+<h3 class="fn">
+<a name="__rshift__-17"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__rshift__ (<i>self</i>, <a href="qsizef.html" tppabs="http://pyqt4doc.appspot.com/qsizef.html">QSizeF</a>)</h3>
+<h3 class="fn">
+<a name="__rshift__-18"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__rshift__ (<i>self</i>, QString)</h3>
+<h3 class="fn">
+<a name="__rshift__-19"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__rshift__ (<i>self</i>, QStringList <i>list</i>)</h3>
+<h3 class="fn">
+<a name="__rshift__-20"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__rshift__ (<i>self</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>)</h3>
+<h3 class="fn">
+<a name="__rshift__-21"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__rshift__ (<i>self</i>, <a href="quuid.html" tppabs="http://pyqt4doc.appspot.com/quuid.html">QUuid</a>)</h3>
+<h3 class="fn">
+<a name="__rshift__-22"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__rshift__ (<i>self</i>, QVariant <i>p</i>)</h3>
+<h3 class="fn">
+<a name="__rshift__-23"></a><a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> QDataStream.__rshift__ (<i>self</i>, <a href="index.htm#Type-enum" tppabs="http://pyqt4doc.appspot.com/qtcore.html#Type-enum">Type</a> <i>p</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

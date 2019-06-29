@@ -1,0 +1,71 @@
+﻿<html>
+<head>
+<title>QCloseEvent Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QCloseEvent Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QCloseEvent类包含描述一个close事件的参数。<a href="#details">More...</a></p>
+
+<p>继承<a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qcloseevent.html#QCloseEvent" tppabs="http://pyqt4doc.appspot.com/qcloseevent.html#QCloseEvent">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qcloseevent.html#QCloseEvent-2" tppabs="http://pyqt4doc.appspot.com/qcloseevent.html#QCloseEvent-2">__init__</a></b> (<i>self</i>, QCloseEvent)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QCloseEvent类包含描述一个close事件的参数。</p>
+<p>关闭事件发送到窗口部件，用户要关闭，通常是通过从窗口菜单中选择“关闭” ，或按一下<b>X</b>标题栏按钮。当你调用他们还派出<a href="qwidget.html#close" tppabs="http://pyqt4doc.appspot.com/qwidget.html#close">QWidget.close</a>（ ）以编程方式关闭一个widget 。</p>
+<p>关闭事件包含一个标志，指示接收者是否希望小部件被关闭与否。当一个组件的所有close事件，它是隐藏的（并销毁，如果它是与创建<a href="qt.html#WidgetAttribute-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#WidgetAttribute-enum">Qt.WA_DeleteOnClose</a>标志） 。如果拒绝接受close事件没有任何反应。 （在X11下有可能是窗口管理器将强制关闭该窗口，但在写作的时候，我们并不知悉有任何窗口管理器，确实如此。 ）</p>
+<p>该事件处理程序<a href="qwidget.html#closeEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#closeEvent">QWidget.closeEvent</a>（ ）接收关闭事件。这个事件处理程序的默认实现接受close事件。如果您不希望您的小部件被隐藏，或者想一些特殊处理，你应该重新实现事件处理程序和<a href="qevent.html#ignore" tppabs="http://pyqt4doc.appspot.com/qevent.html#ignore">ignore</a>（）的事件。</p>
+<p>该<a href="index.htm#close-event-handler" tppabs="http://pyqt4doc.appspot.com/mainwindows-application.html#close-event-handler">closeEvent() in
+the Application example</a>显示关闭事件处理程序会询问是否在关闭之前保存文档。</p>
+<p>如果你想，当它关闭时，窗口小部件被删除，与创建它<a href="qt.html#WidgetAttribute-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#WidgetAttribute-enum">Qt.WA_DeleteOnClose</a>标志。这是独立的顶层窗口在多窗口应用非常有用。</p>
+<p><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>s放出<a href="qobject.html#destroyed" tppabs="http://pyqt4doc.appspot.com/qobject.html#destroyed">destroyed()</a>它们被删除时发出信号。</p>
+<p>如果最后一个顶层窗口被关闭，<a href="qapplication.html#lastWindowClosed" tppabs="http://pyqt4doc.appspot.com/qapplication.html#lastWindowClosed">QApplication.lastWindowClosed</a>（）信号被发射。</p>
+<p>该<a href="qevent.html#accepted-prop" tppabs="http://pyqt4doc.appspot.com/qevent.html#accepted-prop">isAccepted</a>（ ）函数返回True，如果该事件的接收方已同意关闭的小部件;调用<a href="qevent.html#accept" tppabs="http://pyqt4doc.appspot.com/qevent.html#accept">accept</a>（）同意关闭窗口小部件并调用<a href="qevent.html#ignore" tppabs="http://pyqt4doc.appspot.com/qevent.html#ignore">ignore</a>（ ）如果此事件的接收方不想要的小工具被关闭。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QCloseEvent"></a>QCloseEvent.__init__ (<i>self</i>)</h3>
+<p>构造一个close事件对象。</p>
+<p><b>See also</b> <a href="qevent.html#accept" tppabs="http://pyqt4doc.appspot.com/qevent.html#accept">accept</a>（ ） 。</p>
+<h3 class="fn">
+<a name="QCloseEvent-2"></a>QCloseEvent.__init__ (<i>self</i>, <a href="qcloseevent.html" tppabs="http://pyqt4doc.appspot.com/qcloseevent.html">QCloseEvent</a>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

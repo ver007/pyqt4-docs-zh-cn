@@ -1,0 +1,98 @@
+﻿<html>
+<head>
+<title>QDesignerActionEditorInterface Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDesignerActionEditorInterface Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdesigner.html">QtDesigner</a> module]</sup></sup>
+</h1>
+<p>该QDesignerActionEditorInterface类允许您更改的Qt Designer的动作编辑器的焦点。<a href="#details">More...</a></p>
+
+<p>继承<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdesigneractioneditorinterface.html#QDesignerActionEditorInterface" tppabs="http://pyqt4doc.appspot.com/qdesigneractioneditorinterface.html#QDesignerActionEditorInterface">__init__</a></b> (<i>self</i>, QWidget <i>parent</i>, Qt.WindowFlags <i>flags</i> = 0)</li>
+<li>
+<div class="fn"></div>QDesignerFormEditorInterface <b><a href="qdesigneractioneditorinterface.html#core" tppabs="http://pyqt4doc.appspot.com/qdesigneractioneditorinterface.html#core">core</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdesigneractioneditorinterface.html#manageAction" tppabs="http://pyqt4doc.appspot.com/qdesigneractioneditorinterface.html#manageAction">manageAction</a></b> (<i>self</i>, QAction <i>action</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdesigneractioneditorinterface.html#setFormWindow" tppabs="http://pyqt4doc.appspot.com/qdesigneractioneditorinterface.html#setFormWindow">setFormWindow</a></b> (<i>self</i>, QDesignerFormWindowInterface <i>formWindow</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdesigneractioneditorinterface.html#unmanageAction" tppabs="http://pyqt4doc.appspot.com/qdesigneractioneditorinterface.html#unmanageAction">unmanageAction</a></b> (<i>self</i>, QAction <i>action</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDesignerActionEditorInterface类允许您更改的Qt Designer的动作编辑器的焦点。</p>
+<p>该QDesignerActionEditorInterface类不适合直接实例化。你可以检索界面<i>Qt
+Designer</i>使用的动作编辑器<a href="qdesignerformeditorinterface.html#actionEditor" tppabs="http://pyqt4doc.appspot.com/qdesignerformeditorinterface.html#actionEditor">QDesignerFormEditorInterface.actionEditor</a>（）函数。</p>
+<p>您可以使用控制，也可在动作编辑器的窗口，它的行动<a href="qdesigneractioneditorinterface.html#manageAction" tppabs="http://pyqt4doc.appspot.com/qdesigneractioneditorinterface.html#manageAction">manageAction</a>（）和<a href="qdesigneractioneditorinterface.html#unmanageAction" tppabs="http://pyqt4doc.appspot.com/qdesigneractioneditorinterface.html#unmanageAction">unmanageAction</a>（）函数。是受管理的动作<i>Qt Designer</i>在动作编辑器可用，而一个非讬管的操作将被忽略。</p>
+<p>QDesignerActionEditorInterface还提供了<a href="qdesigneractioneditorinterface.html#core" tppabs="http://pyqt4doc.appspot.com/qdesigneractioneditorinterface.html#core">core</a>（ ）函数，你可以用它来检索指向<i>Qt Designer</i>目前的<a href="qdesignerformeditorinterface.html" tppabs="http://pyqt4doc.appspot.com/qdesignerformeditorinterface.html">QDesignerFormEditorInterface</a>对象，并且<a href="qdesigneractioneditorinterface.html#setFormWindow" tppabs="http://pyqt4doc.appspot.com/qdesigneractioneditorinterface.html#setFormWindow">setFormWindow</a>（ ）函数，使您可以更改当前选定窗体窗口。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDesignerActionEditorInterface"></a>QDesignerActionEditorInterface.__init__ (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-windowflags.html">Qt.WindowFlags</a> <i>flags</i> = 0)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个动作编辑器界面与给定<i>parent</i>和在指定的窗口<i>flags</i>。</p>
+
+
+<h3 class="fn">
+<a name="core"></a><a href="qdesignerformeditorinterface.html" tppabs="http://pyqt4doc.appspot.com/qdesignerformeditorinterface.html">QDesignerFormEditorInterface</a> QDesignerActionEditorInterface.core (<i>self</i>)</h3>
+<p>返回一个指针<i>Qt Designer</i>目前的<a href="qdesignerformeditorinterface.html" tppabs="http://pyqt4doc.appspot.com/qdesignerformeditorinterface.html">QDesignerFormEditorInterface</a>对象。</p>
+
+
+<h3 class="fn">
+<a name="manageAction"></a>QDesignerActionEditorInterface.manageAction (<i>self</i>, <a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a> <i>action</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>指示<i>Qt Designer</i>管理规定<i>action</i>。是受管理的动作<i>Qt Designer</i>可在动作编辑器。</p>
+<p><b>See also</b> <a href="qdesigneractioneditorinterface.html#unmanageAction" tppabs="http://pyqt4doc.appspot.com/qdesigneractioneditorinterface.html#unmanageAction">unmanageAction</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFormWindow"></a>QDesignerActionEditorInterface.setFormWindow (<i>self</i>, <a href="qdesignerformwindowinterface.html" tppabs="http://pyqt4doc.appspot.com/qdesignerformwindowinterface.html">QDesignerFormWindowInterface</a> <i>formWindow</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setFormWindow(QDesignerFormWindowInterface *)</tt>。</p>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>设置当前选定的表格窗口<i>formWindow</i>。</p>
+
+
+<h3 class="fn">
+<a name="unmanageAction"></a>QDesignerActionEditorInterface.unmanageAction (<i>self</i>, <a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a> <i>action</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>指示<i>Qt Designer</i>忽略指定的<i>action</i>。非讬管的动作是不是在动作编辑器。</p>
+<p><b>See also</b> <a href="qdesigneractioneditorinterface.html#manageAction" tppabs="http://pyqt4doc.appspot.com/qdesigneractioneditorinterface.html#manageAction">manageAction</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

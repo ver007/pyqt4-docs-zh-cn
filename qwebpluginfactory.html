@@ -1,0 +1,156 @@
+﻿<html>
+<head>
+<title>QWebPluginFactory Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QWebPluginFactory Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtwebkit.html">QtWebKit</a> module]</sup></sup>
+</h1>
+<p>该QWebPluginFactory类用于嵌入在网页中自定义数据类型。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qwebpluginfactory.html#Extension-enum" tppabs="http://pyqt4doc.appspot.com/qwebpluginfactory.html#Extension-enum">Extension</a></b> {  }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qwebpluginfactory-extensionoption.html">ExtensionOption</a></b>
+</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qwebpluginfactory-extensionreturn.html">ExtensionReturn</a></b>
+</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qwebpluginfactory-mimetype.html">MimeType</a></b>
+</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qwebpluginfactory-plugin.html">Plugin</a></b>
+</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qwebpluginfactory.html#QWebPluginFactory" tppabs="http://pyqt4doc.appspot.com/qwebpluginfactory.html#QWebPluginFactory">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>QObject <b><a href="qwebpluginfactory.html#create" tppabs="http://pyqt4doc.appspot.com/qwebpluginfactory.html#create">create</a></b> (<i>self</i>, QString <i>mimeType</i>, QUrl <i>url</i>, QStringList <i>argumentNames</i>, QStringList <i>argumentValues</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qwebpluginfactory.html#extension" tppabs="http://pyqt4doc.appspot.com/qwebpluginfactory.html#extension">extension</a></b> (<i>self</i>, Extension <i>extension</i>, ExtensionOption <i>option</i> = None, ExtensionReturn <i>output</i> = None)</li>
+<li>
+<div class="fn"></div>list-of-QWebPluginFactory.Plugin <b><a href="qwebpluginfactory.html#plugins" tppabs="http://pyqt4doc.appspot.com/qwebpluginfactory.html#plugins">plugins</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwebpluginfactory.html#refreshPlugins" tppabs="http://pyqt4doc.appspot.com/qwebpluginfactory.html#refreshPlugins">refreshPlugins</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qwebpluginfactory.html#supportsExtension" tppabs="http://pyqt4doc.appspot.com/qwebpluginfactory.html#supportsExtension">supportsExtension</a></b> (<i>self</i>, Extension <i>extension</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QWebPluginFactory类用于嵌入在网页中自定义数据类型。</p>
+<p>在HTML<tt>&lt;object&gt;</tt>标籤被用来嵌入任意内容到网页中，例如：</p>
+<pre class="cpp">
+ <span class="operator">&lt;</span>object type<span class="operator">=</span><span class="string">"application/x-pdf"</span> data<span class="operator">=</span><span class="string">"http://qt.nokia.com/document.pdf"</span> width<span class="operator">=</span><span class="string">"500"</span> height<span class="operator">=</span><span class="string">"400"</span><span class="operator">&gt;</span><span class="operator">&lt;</span><span class="operator">/</span>object<span class="operator">&gt;</span>
+</pre>
+<p>QtWebKit的将本地处理像最基本的数据类型<tt>text/html</tt>和<tt>image/jpeg</tt>，但对于任何先进的或自定义的数据类型，你需要给自己提供一个处理程序。</p>
+<p>QWebPluginFactory是一个工厂，用于创建插件<a href="qwebpage.html" tppabs="http://pyqt4doc.appspot.com/qwebpage.html">QWebPage</a>，其中每个插件提供对一个或多个数据类型的支持。一个插件工厂可以在安装<a href="qwebpage.html" tppabs="http://pyqt4doc.appspot.com/qwebpage.html">QWebPage</a> using <a href="qwebpage.html#setPluginFactory" tppabs="http://pyqt4doc.appspot.com/qwebpage.html#setPluginFactory">QWebPage.setPluginFactory</a>（ ） 。</p>
+<p><b>Note:</b>如果插件是通过启用该插件工厂仅用于<a href="qwebsettings.html" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html">QWebSettings</a>。</p>
+<p>你通过实施提供QWebPluginFactory的<a href="qwebpluginfactory.html#plugins" tppabs="http://pyqt4doc.appspot.com/qwebpluginfactory.html#plugins">plugins</a>（ ）和<a href="qwebpluginfactory.html#create" tppabs="http://pyqt4doc.appspot.com/qwebpluginfactory.html#create">create</a>（）方法。为<a href="qwebpluginfactory.html#plugins" tppabs="http://pyqt4doc.appspot.com/qwebpluginfactory.html#plugins">plugins</a>（ ）有必要说明的插件工厂可以创建，包括描述和支持的MIME类型。该MIME类型的每个插件可以处理应与在HTML中指定的那些<tt>&lt;object&gt;</tt>标记您的内容。</p>
+<p>该<a href="qwebpluginfactory.html#create" tppabs="http://pyqt4doc.appspot.com/qwebpluginfactory.html#create">create</a>（）方法，如果支持所请求的MIME类型调用。该实现必须返回请求给定MIME类型和指定的URL插件的新实例。</p>
+<p>该插件本身的子类<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>，但目前仅插件的基础上无论是<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> or <a href="qgraphicswidget.html" tppabs="http://pyqt4doc.appspot.com/qgraphicswidget.html">QGraphicsWidget</a>被支持。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="Extension-enum"></a>QWebPluginFactory.Extension</h3>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QWebPluginFactory"></a>QWebPluginFactory.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a href="qwebpluginfactory.html" tppabs="http://pyqt4doc.appspot.com/qwebpluginfactory.html">QWebPluginFactory</a>与父<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="create"></a><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> QWebPluginFactory.create (<i>self</i>, QString <i>mimeType</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>url</i>, QStringList <i>argumentNames</i>, QStringList <i>argumentValues</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>在子类中实现，以创建一个新的插件，可以显示给定MIME类型的内容<i>mimeType</i>。在被提供的内容的URL<i>url</i>。返回的对象应该是一个<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>。</p>
+<p>HTML object元素可以通过提供参数<tt>&lt;param&gt;</tt>标记。这些变量的名称和值的属性被指定<i>argumentNames</i>和<i>argumentValues</i>字符串列表。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="operator">&lt;</span>object type<span class="operator">=</span><span class="string">"application/x-pdf"</span> data<span class="operator">=</span><span class="string">"http://qt.nokia.com/document.pdf"</span> width<span class="operator">=</span><span class="string">"500"</span> height<span class="operator">=</span><span class="string">"400"</span><span class="operator">&gt;</span>
+     <span class="operator">&lt;</span>param name<span class="operator">=</span><span class="string">"showTableOfContents"</span> value<span class="operator">=</span><span class="string">"true"</span> <span class="operator">/</span><span class="operator">&gt;</span>
+     <span class="operator">&lt;</span>param name<span class="operator">=</span><span class="string">"hideThumbnails"</span> value<span class="operator">=</span><span class="string">"false"</span> <span class="operator">/</span><span class="operator">&gt;</span>
+ <span class="operator">&lt;</span><span class="operator">/</span>object<span class="operator">&gt;</span>
+</pre>
+<p>上述对象元素将导致调用来创建（ ）使用以下参数：</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td>mimeType</td>
+<td>"application/x-pdf"</td>
+</tr>
+<tr class="even" valign="top">
+<td>url</td>
+<td>"http://qt.nokia.com/document.pdf"</td>
+</tr>
+<tr class="odd" valign="top">
+<td>argumentNames</td>
+<td>"showTableOfContents" "hideThumbnails"</td>
+</tr>
+<tr class="even" valign="top">
+<td>argumentVaues</td>
+<td>"true" "false"</td>
+</tr>
+</table>
+<p><b>Note:</b>返回的对象的所有权将转移给调用者。</p>
+
+
+<h3 class="fn">
+<a name="extension"></a>bool QWebPluginFactory.extension (<i>self</i>, <a href="qwebpluginfactory.html#Extension-enum" tppabs="http://pyqt4doc.appspot.com/qwebpluginfactory.html#Extension-enum">Extension</a> <i>extension</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qwebpluginfactory-extensionoption.html">ExtensionOption</a> <i>option</i> = None, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qwebpluginfactory-extensionreturn.html">ExtensionReturn</a> <i>output</i> = None)</h3>
+<h3 class="fn">
+<a name="plugins"></a>list-of-QWebPluginFactory.Plugin QWebPluginFactory.plugins (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>这个函数重新实现在子类中返回支持的插件工厂可以创建一个列表。</p>
+<p><b>Note:</b>目前，此功能只调用时JavaScript程序访问全局<tt>plugins</tt> or
+<tt>mimetypes</tt>对象。</p>
+
+
+<h3 class="fn">
+<a name="refreshPlugins"></a>QWebPluginFactory.refreshPlugins (<i>self</i>)</h3>
+<p>这个函数被调用以刷新支持的插件列表中。后一个新的插件已经安装在系统中可能被调用。</p>
+<h3 class="fn">
+<a name="supportsExtension"></a>bool QWebPluginFactory.supportsExtension (<i>self</i>, <a href="qwebpluginfactory.html#Extension-enum" tppabs="http://pyqt4doc.appspot.com/qwebpluginfactory.html#Extension-enum">Extension</a> <i>extension</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

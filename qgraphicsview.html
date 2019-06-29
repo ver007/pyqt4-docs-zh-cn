@@ -1,0 +1,1144 @@
+﻿<html>
+<head>
+<title>QGraphicsView Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QGraphicsView Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QGraphicsView类提供了一个小工具，用于显示的内容<a href="qgraphicsscene.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html">QGraphicsScene</a>。<a href="#details">More...</a></p>
+
+<p>继承<a href="qabstractscrollarea.html" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html">QAbstractScrollArea</a>。</p>
+<p>通过继承<a href="qdeclarativeview.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativeview.html">QDeclarativeView</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qgraphicsview-cachemode.html">CacheMode</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qgraphicsview.html#CacheModeFlag-enum" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#CacheModeFlag-enum">CacheModeFlag</a></b> { CacheNone, CacheBackground }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qgraphicsview.html#DragMode-enum" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#DragMode-enum">DragMode</a></b> { NoDrag, ScrollHandDrag, RubberBandDrag }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qgraphicsview.html#OptimizationFlag-enum" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#OptimizationFlag-enum">OptimizationFlag</a></b> { DontClipPainter, DontSavePainterState, DontAdjustForAntialiasing }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qgraphicsview-optimizationflags.html">OptimizationFlags</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qgraphicsview.html#ViewportAnchor-enum" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#ViewportAnchor-enum">ViewportAnchor</a></b> { NoAnchor, AnchorViewCenter, AnchorUnderMouse }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qgraphicsview.html#ViewportUpdateMode-enum" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#ViewportUpdateMode-enum">ViewportUpdateMode</a></b> { FullViewportUpdate, MinimalViewportUpdate, SmartViewportUpdate, BoundingRectViewportUpdate, NoViewportUpdate }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#QGraphicsView" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#QGraphicsView">__init__</a></b> (<i>self</i>, QWidget <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#QGraphicsView-2" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#QGraphicsView-2">__init__</a></b> (<i>self</i>, QGraphicsScene <i>scene</i>, QWidget <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>Qt.Alignment <b><a href="qgraphicsview.html#alignment" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#alignment">alignment</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QBrush <b><a href="qgraphicsview.html#backgroundBrush" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#backgroundBrush">backgroundBrush</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>CacheMode <b><a href="qgraphicsview.html#cacheMode" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#cacheMode">cacheMode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#centerOn" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#centerOn">centerOn</a></b> (<i>self</i>, QPointF <i>pos</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#centerOn-2" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#centerOn-2">centerOn</a></b> (<i>self</i>, QGraphicsItem <i>item</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#centerOn-3" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#centerOn-3">centerOn</a></b> (<i>self</i>, float <i>ax</i>, float <i>ay</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#contextMenuEvent" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#contextMenuEvent">contextMenuEvent</a></b> (<i>self</i>, QContextMenuEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#dragEnterEvent" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#dragEnterEvent">dragEnterEvent</a></b> (<i>self</i>, QDragEnterEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#dragLeaveEvent" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#dragLeaveEvent">dragLeaveEvent</a></b> (<i>self</i>, QDragLeaveEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>DragMode <b><a href="qgraphicsview.html#dragMode" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#dragMode">dragMode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#dragMoveEvent" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#dragMoveEvent">dragMoveEvent</a></b> (<i>self</i>, QDragMoveEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#drawBackground" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#drawBackground">drawBackground</a></b> (<i>self</i>, QPainter <i>painter</i>, QRectF <i>rect</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#drawForeground" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#drawForeground">drawForeground</a></b> (<i>self</i>, QPainter <i>painter</i>, QRectF <i>rect</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#drawItems" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#drawItems">drawItems</a></b> (<i>self</i>, QPainter <i>painter</i>, list-of-QGraphicsItem <i>items</i>, list-of-QStyleOptionGraphicsItem <i>options</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#dropEvent" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#dropEvent">dropEvent</a></b> (<i>self</i>, QDropEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#ensureVisible" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#ensureVisible">ensureVisible</a></b> (<i>self</i>, QRectF <i>rect</i>, int <i>xMargin</i> = 50, int <i>yMargin</i> = 50)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#ensureVisible-2" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#ensureVisible-2">ensureVisible</a></b> (<i>self</i>, QGraphicsItem <i>item</i>, int <i>xMargin</i> = 50, int <i>yMargin</i> = 50)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#ensureVisible-3" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#ensureVisible-3">ensureVisible</a></b> (<i>self</i>, float <i>x</i>, float <i>y</i>, float <i>w</i>, float <i>h</i>, int <i>xMargin</i> = 50, int <i>yMargin</i> = 50)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qgraphicsview.html#event" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#event">event</a></b> (<i>self</i>, QEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#fitInView" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#fitInView">fitInView</a></b> (<i>self</i>, QRectF <i>rect</i>, Qt.AspectRatioMode <i>mode</i> = Qt.IgnoreAspectRatio)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#fitInView-2" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#fitInView-2">fitInView</a></b> (<i>self</i>, QGraphicsItem <i>item</i>, Qt.AspectRatioMode <i>mode</i> = Qt.IgnoreAspectRatio)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#fitInView-3" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#fitInView-3">fitInView</a></b> (<i>self</i>, float <i>x</i>, float <i>y</i>, float <i>w</i>, float <i>h</i>, Qt.AspectRatioMode <i>mode</i> = Qt.IgnoreAspectRatio)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#focusInEvent" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#focusInEvent">focusInEvent</a></b> (<i>self</i>, QFocusEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qgraphicsview.html#focusNextPrevChild" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#focusNextPrevChild">focusNextPrevChild</a></b> (<i>self</i>, bool <i>next</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#focusOutEvent" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#focusOutEvent">focusOutEvent</a></b> (<i>self</i>, QFocusEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>QBrush <b><a href="qgraphicsview.html#foregroundBrush" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#foregroundBrush">foregroundBrush</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#inputMethodEvent" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#inputMethodEvent">inputMethodEvent</a></b> (<i>self</i>, QInputMethodEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qgraphicsview.html#inputMethodQuery" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#inputMethodQuery">inputMethodQuery</a></b> (<i>self</i>, Qt.InputMethodQuery <i>query</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#invalidateScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#invalidateScene">invalidateScene</a></b> (<i>self</i>, QRectF <i>rect</i> = QRectF(), QGraphicsScene.SceneLayers <i>layers</i> = QGraphicsScene.AllLayers)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qgraphicsview.html#isInteractive" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#isInteractive">isInteractive</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qgraphicsview.html#isTransformed" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#isTransformed">isTransformed</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QGraphicsItem <b><a href="qgraphicsview.html#itemAt" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#itemAt">itemAt</a></b> (<i>self</i>, QPoint <i>pos</i>)</li>
+<li>
+<div class="fn"></div>QGraphicsItem <b><a href="qgraphicsview.html#itemAt-2" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#itemAt-2">itemAt</a></b> (<i>self</i>, int <i>ax</i>, int <i>ay</i>)</li>
+<li>
+<div class="fn"></div>list-of-QGraphicsItem <b><a href="qgraphicsview.html#items" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#items">items</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QGraphicsItem <b><a href="qgraphicsview.html#items-2" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#items-2">items</a></b> (<i>self</i>, QPoint <i>pos</i>)</li>
+<li>
+<div class="fn"></div>list-of-QGraphicsItem <b><a href="qgraphicsview.html#items-3" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#items-3">items</a></b> (<i>self</i>, int <i>ax</i>, int <i>ay</i>)</li>
+<li>
+<div class="fn"></div>list-of-QGraphicsItem <b><a href="qgraphicsview.html#items-4" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#items-4">items</a></b> (<i>self</i>, int <i>x</i>, int <i>y</i>, int <i>w</i>, int <i>h</i>, Qt.ItemSelectionMode <i>mode</i> = Qt.IntersectsItemShape)</li>
+<li>
+<div class="fn"></div>list-of-QGraphicsItem <b><a href="qgraphicsview.html#items-5" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#items-5">items</a></b> (<i>self</i>, QRect <i>rect</i>, Qt.ItemSelectionMode <i>mode</i> = Qt.IntersectsItemShape)</li>
+<li>
+<div class="fn"></div>list-of-QGraphicsItem <b><a href="qgraphicsview.html#items-6" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#items-6">items</a></b> (<i>self</i>, QPolygon <i>polygon</i>, Qt.ItemSelectionMode <i>mode</i> = Qt.IntersectsItemShape)</li>
+<li>
+<div class="fn"></div>list-of-QGraphicsItem <b><a href="qgraphicsview.html#items-7" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#items-7">items</a></b> (<i>self</i>, QPainterPath <i>path</i>, Qt.ItemSelectionMode <i>mode</i> = Qt.IntersectsItemShape)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#keyPressEvent" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#keyPressEvent">keyPressEvent</a></b> (<i>self</i>, QKeyEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#keyReleaseEvent" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#keyReleaseEvent">keyReleaseEvent</a></b> (<i>self</i>, QKeyEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>QPoint <b><a href="qgraphicsview.html#mapFromScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapFromScene">mapFromScene</a></b> (<i>self</i>, QPointF <i>point</i>)</li>
+<li>
+<div class="fn"></div>QPolygon <b><a href="qgraphicsview.html#mapFromScene-2" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapFromScene-2">mapFromScene</a></b> (<i>self</i>, QRectF <i>rect</i>)</li>
+<li>
+<div class="fn"></div>QPolygon <b><a href="qgraphicsview.html#mapFromScene-3" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapFromScene-3">mapFromScene</a></b> (<i>self</i>, QPolygonF <i>polygon</i>)</li>
+<li>
+<div class="fn"></div>QPainterPath <b><a href="qgraphicsview.html#mapFromScene-4" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapFromScene-4">mapFromScene</a></b> (<i>self</i>, QPainterPath <i>path</i>)</li>
+<li>
+<div class="fn"></div>QPoint <b><a href="qgraphicsview.html#mapFromScene-5" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapFromScene-5">mapFromScene</a></b> (<i>self</i>, float <i>ax</i>, float <i>ay</i>)</li>
+<li>
+<div class="fn"></div>QPolygon <b><a href="qgraphicsview.html#mapFromScene-6" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapFromScene-6">mapFromScene</a></b> (<i>self</i>, float <i>ax</i>, float <i>ay</i>, float <i>w</i>, float <i>h</i>)</li>
+<li>
+<div class="fn"></div>QPointF <b><a href="qgraphicsview.html#mapToScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapToScene">mapToScene</a></b> (<i>self</i>, QPoint <i>point</i>)</li>
+<li>
+<div class="fn"></div>QPolygonF <b><a href="qgraphicsview.html#mapToScene-2" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapToScene-2">mapToScene</a></b> (<i>self</i>, QRect <i>rect</i>)</li>
+<li>
+<div class="fn"></div>QPolygonF <b><a href="qgraphicsview.html#mapToScene-3" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapToScene-3">mapToScene</a></b> (<i>self</i>, QPolygon <i>polygon</i>)</li>
+<li>
+<div class="fn"></div>QPainterPath <b><a href="qgraphicsview.html#mapToScene-4" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapToScene-4">mapToScene</a></b> (<i>self</i>, QPainterPath <i>path</i>)</li>
+<li>
+<div class="fn"></div>QPointF <b><a href="qgraphicsview.html#mapToScene-5" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapToScene-5">mapToScene</a></b> (<i>self</i>, int <i>ax</i>, int <i>ay</i>)</li>
+<li>
+<div class="fn"></div>QPolygonF <b><a href="qgraphicsview.html#mapToScene-6" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapToScene-6">mapToScene</a></b> (<i>self</i>, int <i>ax</i>, int <i>ay</i>, int <i>w</i>, int <i>h</i>)</li>
+<li>
+<div class="fn"></div>QMatrix <b><a href="qgraphicsview.html#matrix" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#matrix">matrix</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#mouseDoubleClickEvent" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mouseDoubleClickEvent">mouseDoubleClickEvent</a></b> (<i>self</i>, QMouseEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#mouseMoveEvent" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mouseMoveEvent">mouseMoveEvent</a></b> (<i>self</i>, QMouseEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#mousePressEvent" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mousePressEvent">mousePressEvent</a></b> (<i>self</i>, QMouseEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#mouseReleaseEvent" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mouseReleaseEvent">mouseReleaseEvent</a></b> (<i>self</i>, QMouseEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>OptimizationFlags <b><a href="qgraphicsview.html#optimizationFlags" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#optimizationFlags">optimizationFlags</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#paintEvent">paintEvent</a></b> (<i>self</i>, QPaintEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#render" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#render">render</a></b> (<i>self</i>, QPainter <i>painter</i>, QRectF <i>target</i> = QRectF(), QRect <i>source</i> = QRect(), Qt.AspectRatioMode <i>mode</i> = Qt.KeepAspectRatio)</li>
+<li>
+<div class="fn"></div>QPainter.RenderHints <b><a href="qgraphicsview.html#renderHints" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#renderHints">renderHints</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#resetCachedContent" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#resetCachedContent">resetCachedContent</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#resetMatrix" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#resetMatrix">resetMatrix</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#resetTransform" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#resetTransform">resetTransform</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>ViewportAnchor <b><a href="qgraphicsview.html#resizeAnchor" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#resizeAnchor">resizeAnchor</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#resizeEvent" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#resizeEvent">resizeEvent</a></b> (<i>self</i>, QResizeEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#rotate" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#rotate">rotate</a></b> (<i>self</i>, float <i>angle</i>)</li>
+<li>
+<div class="fn"></div>Qt.ItemSelectionMode <b><a href="qgraphicsview.html#rubberBandSelectionMode" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#rubberBandSelectionMode">rubberBandSelectionMode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#scale" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#scale">scale</a></b> (<i>self</i>, float <i>sx</i>, float <i>sy</i>)</li>
+<li>
+<div class="fn"></div>QGraphicsScene <b><a href="qgraphicsview.html#scene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#scene">scene</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QRectF <b><a href="qgraphicsview.html#sceneRect" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#sceneRect">sceneRect</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#scrollContentsBy" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#scrollContentsBy">scrollContentsBy</a></b> (<i>self</i>, int <i>dx</i>, int <i>dy</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#setAlignment" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setAlignment">setAlignment</a></b> (<i>self</i>, Qt.Alignment <i>alignment</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#setBackgroundBrush" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setBackgroundBrush">setBackgroundBrush</a></b> (<i>self</i>, QBrush <i>brush</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#setCacheMode" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setCacheMode">setCacheMode</a></b> (<i>self</i>, CacheMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#setDragMode" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setDragMode">setDragMode</a></b> (<i>self</i>, DragMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#setForegroundBrush" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setForegroundBrush">setForegroundBrush</a></b> (<i>self</i>, QBrush <i>brush</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#setInteractive" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setInteractive">setInteractive</a></b> (<i>self</i>, bool <i>allowed</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#setMatrix" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setMatrix">setMatrix</a></b> (<i>self</i>, QMatrix <i>matrix</i>, bool <i>combine</i> = False)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#setOptimizationFlag" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setOptimizationFlag">setOptimizationFlag</a></b> (<i>self</i>, OptimizationFlag <i>flag</i>, bool <i>enabled</i> = True)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#setOptimizationFlags" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setOptimizationFlags">setOptimizationFlags</a></b> (<i>self</i>, OptimizationFlags <i>flags</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#setRenderHint" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setRenderHint">setRenderHint</a></b> (<i>self</i>, QPainter.RenderHint <i>hint</i>, bool <i>on</i> = True)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#setRenderHints" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setRenderHints">setRenderHints</a></b> (<i>self</i>, QPainter.RenderHints <i>hints</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#setResizeAnchor" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setResizeAnchor">setResizeAnchor</a></b> (<i>self</i>, ViewportAnchor <i>anchor</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#setRubberBandSelectionMode" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setRubberBandSelectionMode">setRubberBandSelectionMode</a></b> (<i>self</i>, Qt.ItemSelectionMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#setScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setScene">setScene</a></b> (<i>self</i>, QGraphicsScene <i>scene</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#setSceneRect" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setSceneRect">setSceneRect</a></b> (<i>self</i>, QRectF <i>rect</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#setSceneRect-2" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setSceneRect-2">setSceneRect</a></b> (<i>self</i>, float <i>ax</i>, float <i>ay</i>, float <i>aw</i>, float <i>ah</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#setTransform" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setTransform">setTransform</a></b> (<i>self</i>, QTransform <i>matrix</i>, bool <i>combine</i> = False)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#setTransformationAnchor" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setTransformationAnchor">setTransformationAnchor</a></b> (<i>self</i>, ViewportAnchor <i>anchor</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#setupViewport" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setupViewport">setupViewport</a></b> (<i>self</i>, QWidget <i>widget</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#setViewportUpdateMode" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setViewportUpdateMode">setViewportUpdateMode</a></b> (<i>self</i>, ViewportUpdateMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#shear" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#shear">shear</a></b> (<i>self</i>, float <i>sh</i>, float <i>sv</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#showEvent" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#showEvent">showEvent</a></b> (<i>self</i>, QShowEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qgraphicsview.html#sizeHint" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#sizeHint">sizeHint</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTransform <b><a href="qgraphicsview.html#transform" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#transform">transform</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>ViewportAnchor <b><a href="qgraphicsview.html#transformationAnchor" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#transformationAnchor">transformationAnchor</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#translate" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#translate">translate</a></b> (<i>self</i>, float <i>dx</i>, float <i>dy</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#updateScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#updateScene">updateScene</a></b> (<i>self</i>, list-of-QRectF <i>rects</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#updateSceneRect" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#updateSceneRect">updateSceneRect</a></b> (<i>self</i>, QRectF <i>rect</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qgraphicsview.html#viewportEvent" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#viewportEvent">viewportEvent</a></b> (<i>self</i>, QEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>QTransform <b><a href="qgraphicsview.html#viewportTransform" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#viewportTransform">viewportTransform</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>ViewportUpdateMode <b><a href="qgraphicsview.html#viewportUpdateMode" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#viewportUpdateMode">viewportUpdateMode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsview.html#wheelEvent" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#wheelEvent">wheelEvent</a></b> (<i>self</i>, QWheelEvent <i>event</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QGraphicsView类提供了一个小工具，用于显示的内容<a href="qgraphicsscene.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html">QGraphicsScene</a>。</p>
+<p>QGraphicsView可视化的内容<a href="qgraphicsscene.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html">QGraphicsScene</a>在一个可滚动的视口。要创建具有几何项目的场景，看到<a href="qgraphicsscene.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html">QGraphicsScene</a>的文档。 QGraphicsView是部分<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/graphicsview.html">Graphics
+View Framework</a>。</p>
+<p>看到一个场景，你通过构建一个QGraphicsView对象，传递你希望显示到QGraphicsView的构造场景的地址开始。或者，您也可以致电<a href="qgraphicsview.html#setScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setScene">setScene</a>（）来设置场景在稍后一点。你打电话后<a href="qwidget.html#show" tppabs="http://pyqt4doc.appspot.com/qwidget.html#show">show</a>（ ） ，视图将默认滚动到场景的中心，并显示在这一点上可见的任何物品。例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qgraphicsscene.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html">QGraphicsScene</a></span> scene;
+ scene<span class="operator">.</span>addText(<span class="string">"Hello, world!"</span>);
+
+ <span class="type">QGraphicsView</span> view(<span class="operator">&amp;</span>scene);
+ view<span class="operator">.</span><a href="qwidget.html#show" tppabs="http://pyqt4doc.appspot.com/qwidget.html#show">show</a>();
+</pre>
+<p>你可以明确地滚动到现场使用滚动条的任何位置，或致电<a href="qgraphicsview.html#centerOn" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#centerOn">centerOn</a>（ ） 。通过传递点<a href="qgraphicsview.html#centerOn" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#centerOn">centerOn</a>（ ） ， QGraphicsView将滚动的视口，以确保点集中在视图中。过载提供滚动到<a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a>在这种情况下QGraphicsView将看到的项的中心为中心的视图。如果你想要的是确保一定的区域是可见的， （但不一定为中心），你可以调用<a href="qgraphicsview.html#ensureVisible" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#ensureVisible">ensureVisible</a>（ ）来代替。</p>
+<p>QGraphicsView可以用来可视化整个场景，或仅部分。可视化领域是默认自动检测时显示的视图第一次（通过调用<a href="qgraphicsscene.html#itemsBoundingRect" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html#itemsBoundingRect">QGraphicsScene.itemsBoundingRect</a>（））。要设置可视区域矩形自己，你可以调用<a href="qgraphicsview.html#sceneRect-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#sceneRect-prop">setSceneRect</a>（ ） 。这将适当调整滚动条“的范围。请注意，虽然场景支持几乎无限的大小，滚动条的范围不会超过一个整数（ INT_MIN ， INT_MAX ）的范围内。</p>
+<p>QGraphicsView通过调用可视化场景<a href="qgraphicsview.html#render" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#render">render</a>（ ） 。默认情况下，该项目通过使用常规绘制到视<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>以及使用默认呈现提示。要更改默认的渲染提示QGraphicsView传递到<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>涂装项目时，您可以拨打<a href="qgraphicsview.html#renderHints-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#renderHints-prop">setRenderHints</a>（ ） 。</p>
+<p>默认情况下， QGraphicsView提供了一个正规<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>为视角构件。您可以通过调用访问这个widget<a href="qabstractscrollarea.html#viewport" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html#viewport">viewport</a>（ ） ，或者你可以通过调用替换它<a href="qabstractscrollarea.html#setViewport" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html#setViewport">setViewport</a>（ ） 。为了呈现使用OpenGL ，只需调用setViewport （新<a href="qglwidget.html" tppabs="http://pyqt4doc.appspot.com/qglwidget.html">QGLWidget</a>） 。 QGraphicsView需要视口部件的所有权。</p>
+<p>QGraphicsView支持仿射变换，用<a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a>。您可以将矩阵要么传递给<a href="qgraphicsview.html#setTransform" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setTransform">setTransform</a>（ ） ，或者您也可以拨打方便的功能之一<a href="qgraphicsview.html#rotate" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#rotate">rotate</a>（ ）<a href="qgraphicsview.html#scale" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#scale">scale</a>（ ）<a href="qgraphicsview.html#translate" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#translate">translate</a>（）或<a href="qgraphicsview.html#shear" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#shear">shear</a>（ ） 。最常见2转换的比例，这是用于实现缩放和旋转。 QGraphicsView保持在转换过程中的固定视图的中心。因为现场校准（ setAligment （ ） ）的，翻译的看法不会有视觉冲击力。</p>
+<p>您可以使用鼠标和键盘对场景中的项目进行互动。 QGraphicsView转化鼠标和键盘事件到<i>scene</i>事件（事件继承<a href="qgraphicssceneevent.html" tppabs="http://pyqt4doc.appspot.com/qgraphicssceneevent.html">QGraphicsSceneEvent</a>， ） ，并将其转发到可视化的场景。在最后，它是处理该事件并发生反应，它们的个别项目。例如，如果你点击一个可选项目，该项目将通常让现场知道它已被选中，它也将重绘自身来显示一个选择矩形。 Similiary ，如果您单击并拖动鼠标来移动一个可移动的项目，它是处理鼠标移动和移动自己的项目。项目的互动是默认启用的，你可以通过调用它切换<a href="qgraphicsview.html#interactive-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#interactive-prop">setInteractive</a>（ ） 。</p>
+<p>您也可以提供自己的自定义场景的交互，通过创建QGraphicsView的一个子类，并重新实现鼠标和键盘事件处理程序。为了简化你如何与视图中的项编程交互， QGraphicsView提供了映射函数<a href="qgraphicsview.html#mapToScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapToScene">mapToScene</a>（）和<a href="qgraphicsview.html#mapFromScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapFromScene">mapFromScene</a>（） ，并且项目的存取<a href="qgraphicsview.html#items" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#items">items</a>（）和<a href="qgraphicsview.html#itemAt" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#itemAt">itemAt</a>（ ） 。这些功能允许你映射视图坐标和场景之间的坐标点，矩形，多边形和路径，并找到使用视图坐标在现场的项目。</p>
+<p class="centerAlign"><img alt="" src="images/graphicsview-view.png"></p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="CacheModeFlag-enum"></a>QGraphicsView.CacheModeFlag</h3>
+<p>这个枚举说明您可以对设置的标志<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>的缓存模式。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGraphicsView.CacheNone</tt></td>
+<td class="topAlign"><tt>0x0</tt></td>
+<td class="topAlign">所有的画是直接完成到视口。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGraphicsView.CacheBackground</tt></td>
+<td class="topAlign"><tt>0x1</tt></td>
+<td class="topAlign">后台缓存。这会影响自定义的背景，并基于该背景<a href="qgraphicsview.html#backgroundBrush-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#backgroundBrush-prop">backgroundBrush</a>属性。当这个标志被启用，<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>将分配一个像素图与视口的全尺寸。</td>
+</tr>
+</table>
+<p>CacheMode参数类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cCacheModeFlag\u003e 。它存储CacheModeFlag值的或组合。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#cacheMode-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#cacheMode-prop">cacheMode</a>。</p>
+
+
+<h3 class="fn">
+<a name="DragMode-enum"></a>QGraphicsView.DragMode</h3>
+<p>按住并拖动鼠标移到视口时，此枚举描述的默认操作的视图。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGraphicsView.NoDrag</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">什么也没有发生;鼠标事件被忽略。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGraphicsView.ScrollHandDrag</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">光标变为手形指针，和周围拖动鼠标将滚动scrolbars 。此模式无论是在<a href="qgraphicsview.html#interactive-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#interactive-prop">interactive</a>和非交互模式。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGraphicsView.RubberBandDrag</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">橡胶带将出现。拖动鼠标，将设置橡皮筋的几何形状，以及所涵盖的橡皮筋​​会选择所有项目。这种模式对于非交互式的看法禁用。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qgraphicsview.html#dragMode-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#dragMode-prop">dragMode</a>和<a href="qgraphicsscene.html#setSelectionArea" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html#setSelectionArea">QGraphicsScene.setSelectionArea</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="OptimizationFlag-enum"></a>QGraphicsView.OptimizationFlag</h3>
+<p>这个枚举说明标志，您可以启用，以提高渲染性能<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>。默认情况下，没有这些标志的设置。请注意，设置一个标志，通常对一个副作用，这种作用可以喷漆设备和平台之间变化。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGraphicsView.DontClipPainter</tt></td>
+<td class="topAlign"><tt>0x1</tt></td>
+<td class="topAlign">此值已过时，没有任何效果。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QGraphicsView.DontSavePainterState</tt>
+</td>
+<td class="topAlign"><tt>0x2</tt></td>
+<td class="topAlign">当渲染，<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>保护画家状态（见<a href="qpainter.html#save" tppabs="http://pyqt4doc.appspot.com/qpainter.html#save">QPainter.save</a>（ ） ）绘制背景或前景时，并呈现每个项目时。这可以让你离开画家在改变状态（例如，你可以调用<a href="qpainter.html#setPen" tppabs="http://pyqt4doc.appspot.com/qpainter.html#setPen">QPainter.setPen</a>（）或<a href="qpainter.html#setBrush" tppabs="http://pyqt4doc.appspot.com/qpainter.html#setBrush">QPainter.setBrush</a>（ ）无涂装后恢复状态） 。但是，如果项目持续做恢复状态，您应该启用这个标志，以防止<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>从做同样的。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QGraphicsView.DontAdjustForAntialiasing</tt>
+</td>
+<td class="topAlign"><tt>0x4</tt></td>
+<td class="topAlign">禁用<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>的抗锯齿自动调整曝光过的区域。该渲染的抗锯齿边界线的项目<a href="qgraphicsitem.html#boundingRect" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#boundingRect">QGraphicsItem.boundingRect</a>（ ）可以结束了渲染线的部分外。为了防止渲染文物，<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>通过在各个方向2像素展开所有暴露区域。如果您启用这个标志，<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>将不再执行这些调整，最大限度地减少需要重绘，从而提高了性能方面。一个常见的副作用是那些绘制抗锯齿项目能留下痕迹的绘画背后的身影，因为他们所感动。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGraphicsView.IndirectPainting</tt></td>
+<td class="topAlign"><tt>0x8</tt></td>
+<td class="topAlign">由于Qt的4.6 ，恢复旧的绘画算法调用<a class="obsolete" href="index.htm#drawItems" tppabs="http://pyqt4doc.appspot.com/qgraphicsview-obsolete.html#drawItems">QGraphicsView.drawItems</a>（）和<a class="obsolete" href="index.htm#drawItems" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene-obsolete.html#drawItems">QGraphicsScene.drawItems</a>（ ） 。要只是为了与旧代码的兼容性使用。</td>
+</tr>
+</table>
+<p>这个枚举被引入或修改的Qt 4.3 。</p>
+<p>该OptimizationFlags类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cOptimizationFlag\u003e 。它存储OptimizationFlag值的或组合。</p>
+
+
+<h3 class="fn">
+<a name="ViewportAnchor-enum"></a>QGraphicsView.ViewportAnchor</h3>
+<p>此枚举描述了可能的锚<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>当用户改变视图或视图时转化可以使用。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGraphicsView.NoAnchor</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">无锚，即认为离开现场的位置不变。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGraphicsView.AnchorViewCenter</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">在视图的中心现场点作为支撑点。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGraphicsView.AnchorUnderMouse</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">鼠标下的点作为支撑点。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qgraphicsview.html#resizeAnchor-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#resizeAnchor-prop">resizeAnchor</a>和<a href="qgraphicsview.html#transformationAnchor-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#transformationAnchor-prop">transformationAnchor</a>。</p>
+
+
+<h3 class="fn">
+<a name="ViewportUpdateMode-enum"></a>QGraphicsView.ViewportUpdateMode</h3>
+<p>这个枚举说明如何<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>更新其视口时的情景内容变更或暴露。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QGraphicsView.FullViewportUpdate</tt>
+</td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">当场景中任何可见部分改变或再次暴露，<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>将更新整个视口。这种方法是最快的时候<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>花费更多的时间搞清楚什么画会比花绘图（例如，当非常多的小项目，多次更新） 。这是优选的更新模式对视口不支持部分更新，如<a href="qglwidget.html" tppabs="http://pyqt4doc.appspot.com/qglwidget.html">QGLWidget</a>，为此，需要禁用滚动优化的视口。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QGraphicsView.MinimalViewportUpdate</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">
+<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>将确定的最小视口区域需要重绘，尽量减少避免那些没有改变的区域重绘图纸花费的时间。这是<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>的默认模式。虽然这种方法提供了最佳的性能在一般情况下，如果有在现场许多小可见的变化，<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>最终可能会花费更多的时间寻找最小的方法比将斥资绘图。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QGraphicsView.SmartViewportUpdate</tt>
+</td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">
+<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>将尝试通过分析那些需要重绘的区域找到一个最佳的更新模式。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QGraphicsView.BoundingRectViewportUpdate</tt>
+</td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">在视口中的所有更改的边框将被重新绘制。这种模式具有的优点是<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>搜索只有一个变化区域，最大限度地减少花费的时间确定什么需要重绘。它的缺点是没有变化的区域也需要被重新绘制。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGraphicsView.NoViewportUpdate</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">
+<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>永远不会更新其视口时的情景变化，用户有望控制所有更新。此模式禁用所有（可能慢）项的可见性测试<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>以及适合于场景，要么需要固定帧速率，或在视口外部，否则更新。</td>
+</tr>
+</table>
+<p>这个枚举被引入或修改的Qt 4.3 。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#viewportUpdateMode-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#viewportUpdateMode-prop">viewportUpdateMode</a>。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QGraphicsView"></a>QGraphicsView.__init__ (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>。<i>parent</i>被传递给<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>的构造。</p>
+
+
+<h3 class="fn">
+<a name="QGraphicsView-2"></a>QGraphicsView.__init__ (<i>self</i>, <a href="qgraphicsscene.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html">QGraphicsScene</a> <i>scene</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>并设置可视化场景<i>scene</i>。<i>parent</i>被传递给<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>的构造。</p>
+
+
+<h3 class="fn">
+<a name="alignment"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-alignment.html">Qt.Alignment</a> QGraphicsView.alignment (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="backgroundBrush"></a><a href="qbrush.html" tppabs="http://pyqt4doc.appspot.com/qbrush.html">QBrush</a> QGraphicsView.backgroundBrush (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="cacheMode"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qgraphicsview-cachemode.html">CacheMode</a> QGraphicsView.cacheMode (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="centerOn"></a>QGraphicsView.centerOn (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>pos</i>)</h3>
+<p>滚动视口的内容，以确保现场协调<i>pos</i>，集中在视图中。</p>
+<p>因为<i>pos</i>是一个浮点坐标，滚动条上的整数坐标进行操作，对中只是一个近似值。</p>
+<p><b>Note:</b>如果该项目已接近或外部的边界，这将是可见的视图，但不集中。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#ensureVisible" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#ensureVisible">ensureVisible</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="centerOn-2"></a>QGraphicsView.centerOn (<i>self</i>, <a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a> <i>item</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>此功能提供了方便。这相当于调用centerOn （<a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a>（<i>x</i>，<i>y</i>））。</p>
+
+
+<h3 class="fn">
+<a name="centerOn-3"></a>QGraphicsView.centerOn (<i>self</i>, float <i>ax</i>, float <i>ay</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>滚动视口的内容，以确保<i>item</i>集中在视图中。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#ensureVisible" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#ensureVisible">ensureVisible</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="contextMenuEvent"></a>QGraphicsView.contextMenuEvent (<i>self</i>, <a href="qcontextmenuevent.html" tppabs="http://pyqt4doc.appspot.com/qcontextmenuevent.html">QContextMenuEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#contextMenuEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#contextMenuEvent">QWidget.contextMenuEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="dragEnterEvent"></a>QGraphicsView.dragEnterEvent (<i>self</i>, <a href="qdragenterevent.html" tppabs="http://pyqt4doc.appspot.com/qdragenterevent.html">QDragEnterEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#dragEnterEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#dragEnterEvent">QWidget.dragEnterEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="dragLeaveEvent"></a>QGraphicsView.dragLeaveEvent (<i>self</i>, <a href="qdragleaveevent.html" tppabs="http://pyqt4doc.appspot.com/qdragleaveevent.html">QDragLeaveEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#dragLeaveEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#dragLeaveEvent">QWidget.dragLeaveEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="dragMode"></a><a href="qgraphicsview.html#DragMode-enum" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#DragMode-enum">DragMode</a> QGraphicsView.dragMode (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="dragMoveEvent"></a>QGraphicsView.dragMoveEvent (<i>self</i>, <a href="qdragmoveevent.html" tppabs="http://pyqt4doc.appspot.com/qdragmoveevent.html">QDragMoveEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#dragMoveEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#dragMoveEvent">QWidget.dragMoveEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="drawBackground"></a>QGraphicsView.drawBackground (<i>self</i>, <a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a> <i>painter</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>rect</i>)</h3>
+<p>绘制的场景采用背景<i>painter</i>之前，任何产品和前景绘制。重新实现这个函数提供一个自定义的背景这一观点。</p>
+<p>如果你想要的是定义一个颜色，纹理或渐变的背景，你可以调用<a href="qgraphicsview.html#backgroundBrush-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#backgroundBrush-prop">setBackgroundBrush</a>（ ）来代替。</p>
+<p>所有的绘制是在做<i>scene</i>坐标。<i>rect</i>是暴露的矩形。</p>
+<p>默认实现罢了<i>rect</i>使用视图的<a href="qgraphicsview.html#backgroundBrush-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#backgroundBrush-prop">backgroundBrush</a>。如果没有这样的笔刷定义（默认） ，场景的drawBackground （ ）函数被调用来代替。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#drawForeground" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#drawForeground">drawForeground</a>（）和<a href="qgraphicsscene.html#drawBackground" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html#drawBackground">QGraphicsScene.drawBackground</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="drawForeground"></a>QGraphicsView.drawForeground (<i>self</i>, <a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a> <i>painter</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>rect</i>)</h3>
+<p>绘制场景的使用前景<i>painter</i>，背景和所有项目后得出。重新实现这个函数提供一个自定义前景的这一观点。</p>
+<p>如果你想要的是定义一个颜色，纹理或渐变的前景，你可以调用<a href="qgraphicsview.html#foregroundBrush-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#foregroundBrush-prop">setForegroundBrush</a>（ ）来代替。</p>
+<p>所有的绘制是在做<i>scene</i>坐标。<i>rect</i>是暴露的矩形。</p>
+<p>默认实现罢了<i>rect</i>使用视图的<a href="qgraphicsview.html#foregroundBrush-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#foregroundBrush-prop">foregroundBrush</a>。如果没有这样的笔刷定义（默认） ，场景的drawForeground （ ）函数被调用来代替。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#drawBackground" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#drawBackground">drawBackground</a>（）和<a href="qgraphicsscene.html#drawForeground" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html#drawForeground">QGraphicsScene.drawForeground</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="drawItems"></a>QGraphicsView.drawItems (<i>self</i>, <a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a> <i>painter</i>, list-of-QGraphicsItem <i>items</i>, list-of-QStyleOptionGraphicsItem <i>options</i>)</h3>
+<h3 class="fn">
+<a name="dropEvent"></a>QGraphicsView.dropEvent (<i>self</i>, <a href="qdropevent.html" tppabs="http://pyqt4doc.appspot.com/qdropevent.html">QDropEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#dropEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#dropEvent">QWidget.dropEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="ensureVisible"></a>QGraphicsView.ensureVisible (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>rect</i>, int <i>xMargin</i> = 50, int <i>yMargin</i> = 50)</h3>
+<p>视口的滚动内容，使现场的矩形<i>rect</i>可见，与以像素为单位指定页边距<i>xmargin</i>和<i>ymargin</i>。如果指定的矩形无法达成，内容滚动到最近的有效位置。两个边距的默认值是50个像素。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#centerOn" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#centerOn">centerOn</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="ensureVisible-2"></a>QGraphicsView.ensureVisible (<i>self</i>, <a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a> <i>item</i>, int <i>xMargin</i> = 50, int <i>yMargin</i> = 50)</h3>
+<p>这是一个重载函数。</p>
+<p>此功能提供了方便。这相当于调用ensureVisible （<a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a>（<i>x</i>，<i>y</i>，<i>w</i>，<i>h</i>） ，<i>xmargin</i>，<i>ymargin</i>） 。</p>
+
+
+<h3 class="fn">
+<a name="ensureVisible-3"></a>QGraphicsView.ensureVisible (<i>self</i>, float <i>x</i>, float <i>y</i>, float <i>w</i>, float <i>h</i>, int <i>xMargin</i> = 50, int <i>yMargin</i> = 50)</h3>
+<p>这是一个重载函数。</p>
+<p>滚动视口的内容，使项目的中心<i>item</i>可见，与以像素为单位指定页边距<i>xmargin</i>和<i>ymargin</i>。如果指定的点不能达到，其内容被滚动到最近的有效位置。两个边距的默认值是50个像素。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#centerOn" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#centerOn">centerOn</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="event"></a>bool QGraphicsView.event (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">QObject.event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fitInView"></a>QGraphicsView.fitInView (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>rect</i>, <a href="qt.html#AspectRatioMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#AspectRatioMode-enum">Qt.AspectRatioMode</a> <i>mode</i> = Qt.IgnoreAspectRatio)</h3>
+<p>缩放视图矩阵和滚动滚动条，以确保现场的矩形<i>rect</i>适合视口内。<i>rect</i>必须是现场矩形内部，否则fitInView （ ）不能保证整个RECT是可见的。</p>
+<p>此功能保持视图的旋转，平移，或剪切。该视图是根据缩放<i>aspectRatioMode</i>。<i>rect</i>将集中在视图中，如果它不紧紧贴合。</p>
+<p>这是常见的从一个重新实现内部调用fitInView （ ）<a href="qgraphicsview.html#resizeEvent" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#resizeEvent">resizeEvent</a>（ ） ，以确保整个场景或场景的部分，自动缩放以适应视口的新大小作为视图调整大小。不过请注意，从里面调用fitInView （ ）<a href="qgraphicsview.html#resizeEvent" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#resizeEvent">resizeEvent</a>（ ）可能会导致不必要的调整大小递归，如果新的变革切换滚动条的自动状态。您可以切换滚动条政策，以常开或常关闭，以防止这种情况（见<a href="qabstractscrollarea.html#horizontalScrollBarPolicy-prop" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html#horizontalScrollBarPolicy-prop">horizontalScrollBarPolicy</a>（）和<a href="qabstractscrollarea.html#verticalScrollBarPolicy-prop" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html#verticalScrollBarPolicy-prop">verticalScrollBarPolicy</a>（））。</p>
+<p>If <i>rect</i>是空的，或者如果视口太小，这个函数不会做任何事。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#setTransform" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setTransform">setTransform</a>（ ）<a href="qgraphicsview.html#ensureVisible" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#ensureVisible">ensureVisible</a>（）和<a href="qgraphicsview.html#centerOn" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#centerOn">centerOn</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fitInView-2"></a>QGraphicsView.fitInView (<i>self</i>, <a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a> <i>item</i>, <a href="qt.html#AspectRatioMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#AspectRatioMode-enum">Qt.AspectRatioMode</a> <i>mode</i> = Qt.IgnoreAspectRatio)</h3>
+<p>这是一个重载函数。</p>
+<p>这个方便的功能等同于调用fitInView （<a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a>（<i>x</i>，<i>y</i>，<i>w</i>，<i>h</i>） ，<i>aspectRatioMode</i>） 。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#ensureVisible" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#ensureVisible">ensureVisible</a>（）和<a href="qgraphicsview.html#centerOn" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#centerOn">centerOn</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fitInView-3"></a>QGraphicsView.fitInView (<i>self</i>, float <i>x</i>, float <i>y</i>, float <i>w</i>, float <i>h</i>, <a href="qt.html#AspectRatioMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#AspectRatioMode-enum">Qt.AspectRatioMode</a> <i>mode</i> = Qt.IgnoreAspectRatio)</h3>
+<p>这是一个重载函数。</p>
+<p>确保<i>item</i>紧密配合在视图内，根据缩放视图<i>aspectRatioMode</i>。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#ensureVisible" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#ensureVisible">ensureVisible</a>（）和<a href="qgraphicsview.html#centerOn" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#centerOn">centerOn</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="focusInEvent"></a>QGraphicsView.focusInEvent (<i>self</i>, <a href="qfocusevent.html" tppabs="http://pyqt4doc.appspot.com/qfocusevent.html">QFocusEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#focusInEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#focusInEvent">QWidget.focusInEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="focusNextPrevChild"></a>bool QGraphicsView.focusNextPrevChild (<i>self</i>, bool <i>next</i>)</h3>
+<p>从重新实现<a href="qwidget.html#focusNextPrevChild" tppabs="http://pyqt4doc.appspot.com/qwidget.html#focusNextPrevChild">QWidget.focusNextPrevChild</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="focusOutEvent"></a>QGraphicsView.focusOutEvent (<i>self</i>, <a href="qfocusevent.html" tppabs="http://pyqt4doc.appspot.com/qfocusevent.html">QFocusEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#focusOutEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#focusOutEvent">QWidget.focusOutEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="foregroundBrush"></a><a href="qbrush.html" tppabs="http://pyqt4doc.appspot.com/qbrush.html">QBrush</a> QGraphicsView.foregroundBrush (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="inputMethodEvent"></a>QGraphicsView.inputMethodEvent (<i>self</i>, <a href="qinputmethodevent.html" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html">QInputMethodEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#inputMethodEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#inputMethodEvent">QWidget.inputMethodEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="inputMethodQuery"></a>QVariant QGraphicsView.inputMethodQuery (<i>self</i>, <a href="qt.html#InputMethodQuery-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#InputMethodQuery-enum">Qt.InputMethodQuery</a> <i>query</i>)</h3>
+<p>从重新实现<a href="qwidget.html#inputMethodQuery" tppabs="http://pyqt4doc.appspot.com/qwidget.html#inputMethodQuery">QWidget.inputMethodQuery</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="invalidateScene"></a>QGraphicsView.invalidateScene (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>rect</i> = QRectF(), <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene-scenelayers.html">QGraphicsScene.SceneLayers</a> <i>layers</i> = QGraphicsScene.AllLayers)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void invalidateScene(const QRectF&amp; = QRectF(),QGraphicsScene::SceneLayers = QGraphicsScene.AllLayers)</tt>。</p>
+<p>废止及时间表重绘<i>layers</i>内<i>rect</i>。<i>rect</i>在场景坐标。对于任何缓存的内容<i>layers</i>内<i>rect</i>无条件失效并重新绘制。</p>
+<p>你可以调用这个函数来通知<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>的改变，背景或场景的前景。它通常用于场景与基于区块的背景来通知改变时<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>启用了后台缓存。</p>
+<p>需要注意的是<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>目前支持后台缓存只（见<a href="qgraphicsview.html#CacheModeFlag-enum" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#CacheModeFlag-enum">QGraphicsView.CacheBackground</a>） 。此功能相当于调用<a href="qwidget.html#update" tppabs="http://pyqt4doc.appspot.com/qwidget.html#update">update</a>（ ）如有层，但<a href="qgraphicsscene.html#SceneLayer-enum" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html#SceneLayer-enum">QGraphicsScene.BackgroundLayer</a>被传递。</p>
+<p><b>See also</b> <a href="qgraphicsscene.html#invalidate" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html#invalidate">QGraphicsScene.invalidate</a>（）和<a href="qwidget.html#update" tppabs="http://pyqt4doc.appspot.com/qwidget.html#update">update</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isInteractive"></a>bool QGraphicsView.isInteractive (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="isTransformed"></a>bool QGraphicsView.isTransformed (<i>self</i>)</h3>
+<p>返回True如果视图被转换（即，非恒等变换已被分配，或滚动条进行调整） 。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#setTransform" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setTransform">setTransform</a>（ ）<a href="qabstractscrollarea.html#horizontalScrollBar" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html#horizontalScrollBar">horizontalScrollBar</a>（）和<a href="qabstractscrollarea.html#verticalScrollBar" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html#verticalScrollBar">verticalScrollBar</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="itemAt"></a><a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a> QGraphicsView.itemAt (<i>self</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>pos</i>)</h3>
+<p>返回在位置的项目<i>pos</i>，这是在视口坐标。如果有多个项目在这个位置，这个函数返回的最上方项目。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type">void</span> CustomView<span class="operator">.</span>mousePressEvent(<span class="type"><a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a></span> <span class="operator">*</span>event)
+ {
+     <span class="keyword">if</span> (<span class="type"><a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a></span> <span class="operator">*</span>item <span class="operator">=</span> itemAt(event<span class="operator">-</span><span class="operator">&gt;</span>pos())) {
+         <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"You clicked on item"</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> item;
+     } <span class="keyword">else</span> {
+         <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"You didn't click on an item."</span>;
+     }
+ }
+</pre>
+<p><b>See also</b> <a href="qgraphicsview.html#items" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#items">items</a>（）和<a href="qgraphicsitem.html#sorting" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#sorting">Sorting</a>。</p>
+
+
+<h3 class="fn">
+<a name="itemAt-2"></a><a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a> QGraphicsView.itemAt (<i>self</i>, int <i>ax</i>, int <i>ay</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>此功能提供了方便。这相当于调用itemAt （<a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a>（<i>x</i>，<i>y</i>））。</p>
+
+
+<h3 class="fn">
+<a name="items"></a>list-of-QGraphicsItem QGraphicsView.items (<i>self</i>)</h3>
+<p>返回相关联的场景中的所有项目，按降序堆叠顺序（即，在返回列表中的第一项是最上面的项目）的列表。</p>
+<p><b>See also</b> <a href="qgraphicsscene.html#items" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html#items">QGraphicsScene.items</a>（）和<a href="qgraphicsitem.html#sorting" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#sorting">Sorting</a>。</p>
+
+
+<h3 class="fn">
+<a name="items-2"></a>list-of-QGraphicsItem QGraphicsView.items (<i>self</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>pos</i>)</h3>
+<p>返回所有项目的列表的位置<i>pos</i>在视图中。该项目按递减顺序堆叠（即，在列表中的第一个项目是最上面的项目，最后项目是最下面的项目） 。<i>pos</i>在视口中坐标。</p>
+<p>这个功能是最常用的内鼠标事件处理程序调用子类中的<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>。<i>pos</i>在未转化的视口坐标，就像<a href="qmouseevent.html#pos" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#pos">QMouseEvent.pos</a>（ ） 。</p>
+<pre class="cpp">
+ <span class="type">void</span> CustomView<span class="operator">.</span>mousePressEvent(<span class="type"><a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a></span> <span class="operator">*</span>event)
+ {
+     <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"There are"</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> items(event<span class="operator">-</span><span class="operator">&gt;</span>pos())<span class="operator">.</span>size()
+              <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"items at position"</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> mapToScene(event<span class="operator">-</span><span class="operator">&gt;</span>pos());
+ }
+</pre>
+<p><b>See also</b> <a href="qgraphicsscene.html#items" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html#items">QGraphicsScene.items</a>（）和<a href="qgraphicsitem.html#sorting" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#sorting">Sorting</a>。</p>
+
+
+<h3 class="fn">
+<a name="items-3"></a>list-of-QGraphicsItem QGraphicsView.items (<i>self</i>, int <i>ax</i>, int <i>ay</i>)</h3>
+<p>此功能提供了方便。这相当于调用项目（<a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a>（<i>x</i>，<i>y</i>））。</p>
+
+
+<h3 class="fn">
+<a name="items-4"></a>list-of-QGraphicsItem QGraphicsView.items (<i>self</i>, int <i>x</i>, int <i>y</i>, int <i>w</i>, int <i>h</i>, <a href="qt.html#ItemSelectionMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemSelectionMode-enum">Qt.ItemSelectionMode</a> <i>mode</i> = Qt.IntersectsItemShape)</h3>
+<p>这个方便的功能等同于调用项目（<a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a>（<i>x</i>，<i>y</i>，<i>w</i>，<i>h</i>） ，<i>mode</i>） 。</p>
+<p>此功能被引入Qt的4.3 。</p>
+
+
+<h3 class="fn">
+<a name="items-5"></a>list-of-QGraphicsItem QGraphicsView.items (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>rect</i>, <a href="qt.html#ItemSelectionMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemSelectionMode-enum">Qt.ItemSelectionMode</a> <i>mode</i> = Qt.IntersectsItemShape)</h3>
+<p>这是一个重载函数。</p>
+<p>返回所有的，取决于项目的列表<i>mode</i>，是由两种或包含与相交<i>rect</i>。<i>rect</i>在视口中坐标。</p>
+<p>为默认值<i>mode</i> is <a href="qt.html#ItemSelectionMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemSelectionMode-enum">Qt.IntersectsItemShape</a>;所有项目的确切形状相交或包含由<i>rect</i>返回。</p>
+<p>该项目按降序堆叠顺序（即，在返回列表中的第一项是最上面的项目） 。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#itemAt" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#itemAt">itemAt</a>（ ）<a href="qgraphicsview.html#items" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#items">items</a>（ ）<a href="qgraphicsview.html#mapToScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapToScene">mapToScene</a>（）和<a href="qgraphicsitem.html#sorting" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#sorting">Sorting</a>。</p>
+
+
+<h3 class="fn">
+<a name="items-6"></a>list-of-QGraphicsItem QGraphicsView.items (<i>self</i>, <a href="qpolygon.html" tppabs="http://pyqt4doc.appspot.com/qpolygon.html">QPolygon</a> <i>polygon</i>, <a href="qt.html#ItemSelectionMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemSelectionMode-enum">Qt.ItemSelectionMode</a> <i>mode</i> = Qt.IntersectsItemShape)</h3>
+<p>这是一个重载函数。</p>
+<p>返回所有的，取决于项目的列表<i>mode</i>，是由两种或包含与相交<i>polygon</i>。<i>polygon</i>在视口中坐标。</p>
+<p>为默认值<i>mode</i> is <a href="qt.html#ItemSelectionMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemSelectionMode-enum">Qt.IntersectsItemShape</a>;所有项目的确切形状相交或包含由<i>polygon</i>返回。</p>
+<p>该项目是由递减堆栈顺序（即，在返回列表中的第一项是最上面的项目）进行分类。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#itemAt" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#itemAt">itemAt</a>（ ）<a href="qgraphicsview.html#items" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#items">items</a>（ ）<a href="qgraphicsview.html#mapToScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapToScene">mapToScene</a>（）和<a href="qgraphicsitem.html#sorting" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#sorting">Sorting</a>。</p>
+
+
+<h3 class="fn">
+<a name="items-7"></a>list-of-QGraphicsItem QGraphicsView.items (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> <i>path</i>, <a href="qt.html#ItemSelectionMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemSelectionMode-enum">Qt.ItemSelectionMode</a> <i>mode</i> = Qt.IntersectsItemShape)</h3>
+<p>这是一个重载函数。</p>
+<p>返回所有的，取决于项目的列表<i>mode</i>，是由两种或包含与相交<i>path</i>。<i>path</i>在视口中坐标。</p>
+<p>为默认值<i>mode</i> is <a href="qt.html#ItemSelectionMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemSelectionMode-enum">Qt.IntersectsItemShape</a>;所有项目的确切形状相交或包含由<i>path</i>返回。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#itemAt" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#itemAt">itemAt</a>（ ）<a href="qgraphicsview.html#items" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#items">items</a>（ ）<a href="qgraphicsview.html#mapToScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapToScene">mapToScene</a>（）和<a href="qgraphicsitem.html#sorting" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#sorting">Sorting</a>。</p>
+
+
+<h3 class="fn">
+<a name="keyPressEvent"></a>QGraphicsView.keyPressEvent (<i>self</i>, <a href="qkeyevent.html" tppabs="http://pyqt4doc.appspot.com/qkeyevent.html">QKeyEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#keyPressEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#keyPressEvent">QWidget.keyPressEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="keyReleaseEvent"></a>QGraphicsView.keyReleaseEvent (<i>self</i>, <a href="qkeyevent.html" tppabs="http://pyqt4doc.appspot.com/qkeyevent.html">QKeyEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#keyReleaseEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#keyReleaseEvent">QWidget.keyReleaseEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mapFromScene"></a><a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> QGraphicsView.mapFromScene (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>point</i>)</h3>
+<p>返回现场协调<i>point</i>视口坐标。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#mapToScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapToScene">mapToScene</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mapFromScene-2"></a><a href="qpolygon.html" tppabs="http://pyqt4doc.appspot.com/qpolygon.html">QPolygon</a> QGraphicsView.mapFromScene (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>rect</i>)</h3>
+<p>返回矩形现场<i>rect</i>一个视口坐标的多边形。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#mapToScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapToScene">mapToScene</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mapFromScene-3"></a><a href="qpolygon.html" tppabs="http://pyqt4doc.appspot.com/qpolygon.html">QPolygon</a> QGraphicsView.mapFromScene (<i>self</i>, <a href="qpolygonf.html" tppabs="http://pyqt4doc.appspot.com/qpolygonf.html">QPolygonF</a> <i>polygon</i>)</h3>
+<p>返回现场多边形的坐标<i>polygon</i>一个视口坐标的多边形。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#mapToScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapToScene">mapToScene</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mapFromScene-4"></a><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> QGraphicsView.mapFromScene (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> <i>path</i>)</h3>
+<p>返回现场协调画家路径<i>path</i>一个视口坐标画家路径。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#mapToScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapToScene">mapToScene</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mapFromScene-5"></a><a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> QGraphicsView.mapFromScene (<i>self</i>, float <i>ax</i>, float <i>ay</i>)</h3>
+<p>此功能提供了方便。这相当于调用mapFromScene （<a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a>（<i>x</i>，<i>y</i>））。</p>
+
+
+<h3 class="fn">
+<a name="mapFromScene-6"></a><a href="qpolygon.html" tppabs="http://pyqt4doc.appspot.com/qpolygon.html">QPolygon</a> QGraphicsView.mapFromScene (<i>self</i>, float <i>ax</i>, float <i>ay</i>, float <i>w</i>, float <i>h</i>)</h3>
+<p>此功能提供了方便。这相当于调用mapFromScene （<a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a>（<i>x</i>，<i>y</i>，<i>w</i>，<i>h</i>））。</p>
+
+
+<h3 class="fn">
+<a name="mapToScene"></a><a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> QGraphicsView.mapToScene (<i>self</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>point</i>)</h3>
+<p>返回视口坐标<i>point</i>映射到场景坐标。</p>
+<p>注意：它可以是有用的映射所复盖的像素在整个矩形<i>point</i>代替点本身。要做到这一点，你可以调用mapToScene （<a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a>（<i>point</i>，<a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a>（ 2，2） ））。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#mapFromScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapFromScene">mapFromScene</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mapToScene-2"></a><a href="qpolygonf.html" tppabs="http://pyqt4doc.appspot.com/qpolygonf.html">QPolygonF</a> QGraphicsView.mapToScene (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>rect</i>)</h3>
+<p>返回视口矩形<i>rect</i>映射到一个场景坐标的多边形。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#mapFromScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapFromScene">mapFromScene</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mapToScene-3"></a><a href="qpolygonf.html" tppabs="http://pyqt4doc.appspot.com/qpolygonf.html">QPolygonF</a> QGraphicsView.mapToScene (<i>self</i>, <a href="qpolygon.html" tppabs="http://pyqt4doc.appspot.com/qpolygon.html">QPolygon</a> <i>polygon</i>)</h3>
+<p>返回多边形视口<i>polygon</i>映射到一个场景坐标的多边形。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#mapFromScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapFromScene">mapFromScene</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mapToScene-4"></a><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> QGraphicsView.mapToScene (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> <i>path</i>)</h3>
+<p>返回视口画家路径<i>path</i>映射到一个场景的坐标画家路径。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#mapFromScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapFromScene">mapFromScene</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mapToScene-5"></a><a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> QGraphicsView.mapToScene (<i>self</i>, int <i>ax</i>, int <i>ay</i>)</h3>
+<p>此功能提供了方便。这相当于调用mapToScene （<a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a>（<i>x</i>，<i>y</i>））。</p>
+
+
+<h3 class="fn">
+<a name="mapToScene-6"></a><a href="qpolygonf.html" tppabs="http://pyqt4doc.appspot.com/qpolygonf.html">QPolygonF</a> QGraphicsView.mapToScene (<i>self</i>, int <i>ax</i>, int <i>ay</i>, int <i>w</i>, int <i>h</i>)</h3>
+<p>此功能提供了方便。这相当于调用mapToScene （<a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a>（<i>x</i>，<i>y</i>，<i>w</i>，<i>h</i>））。</p>
+
+
+<h3 class="fn">
+<a name="matrix"></a><a href="qmatrix.html" tppabs="http://pyqt4doc.appspot.com/qmatrix.html">QMatrix</a> QGraphicsView.matrix (<i>self</i>)</h3>
+<p>返回该视图的当前转换矩阵。如果没有当前变换设置，返回单位矩阵。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#setMatrix" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setMatrix">setMatrix</a>（ ）<a href="qgraphicsview.html#transform" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#transform">transform</a>（ ）<a href="qgraphicsview.html#rotate" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#rotate">rotate</a>（ ）<a href="qgraphicsview.html#scale" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#scale">scale</a>（ ）<a href="qgraphicsview.html#shear" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#shear">shear</a>（）和<a href="qgraphicsview.html#translate" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#translate">translate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mouseDoubleClickEvent"></a>QGraphicsView.mouseDoubleClickEvent (<i>self</i>, <a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#mouseDoubleClickEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#mouseDoubleClickEvent">QWidget.mouseDoubleClickEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mouseMoveEvent"></a>QGraphicsView.mouseMoveEvent (<i>self</i>, <a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#mouseMoveEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#mouseMoveEvent">QWidget.mouseMoveEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mousePressEvent"></a>QGraphicsView.mousePressEvent (<i>self</i>, <a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#mousePressEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#mousePressEvent">QWidget.mousePressEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mouseReleaseEvent"></a>QGraphicsView.mouseReleaseEvent (<i>self</i>, <a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#mouseReleaseEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#mouseReleaseEvent">QWidget.mouseReleaseEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="optimizationFlags"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qgraphicsview-optimizationflags.html">OptimizationFlags</a> QGraphicsView.optimizationFlags (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="paintEvent"></a>QGraphicsView.paintEvent (<i>self</i>, <a href="qpaintevent.html" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html">QPaintEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#paintEvent">QWidget.paintEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="render"></a>QGraphicsView.render (<i>self</i>, <a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a> <i>painter</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>target</i> = QRectF(), <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>source</i> = QRect(), <a href="qt.html#AspectRatioMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#AspectRatioMode-enum">Qt.AspectRatioMode</a> <i>mode</i> = Qt.KeepAspectRatio)</h3>
+<p>呈现<i>source</i>矩形，这是在视图坐标，从场景到<i>target</i>，这是在绘制设备坐标，使用<i>painter</i>。此功能可用于捕获视图的内容到一个绘图设备，如一个有用的<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>（例如，采取截图） ，或用于印刷<a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a>。例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qgraphicsscene.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html">QGraphicsScene</a></span> scene;
+ scene<span class="operator">.</span>addItem(<span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+
+ <span class="type"><a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a></span> view(<span class="operator">&amp;</span>scene);
+ view<span class="operator">.</span>show();
+ <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+
+ <span class="type"><a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a></span> printer(<span class="type"><a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a></span><span class="operator">.</span>HighResolution);
+ printer<span class="operator">.</span>setPageSize(<span class="type"><a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a></span><span class="operator">.</span>A4);
+ <span class="type"><a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a></span> painter(<span class="operator">&amp;</span>printer);
+
+ <span class="comment">// print, fitting the viewport contents into a full page</span>
+ view<span class="operator">.</span>render(<span class="operator">&amp;</span>painter);
+
+ <span class="comment">// print the upper half of the viewport into the lower.</span>
+ <span class="comment">// half of the page.</span>
+ <span class="type"><a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a></span> viewport <span class="operator">=</span> view<span class="operator">.</span>viewport()<span class="operator">-</span><span class="operator">&gt;</span>rect();
+ view<span class="operator">.</span>render(<span class="operator">&amp;</span>painter<span class="operator">,</span>
+             <span class="type"><a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a></span>(<span class="number">0</span><span class="operator">,</span> printer<span class="operator">.</span>height() <span class="operator">/</span> <span class="number">2</span><span class="operator">,</span>
+                    printer<span class="operator">.</span>width()<span class="operator">,</span> printer<span class="operator">.</span>height() <span class="operator">/</span> <span class="number">2</span>)<span class="operator">,</span>
+             viewport<span class="operator">.</span>adjusted(<span class="number">0</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="operator">-</span>viewport<span class="operator">.</span>height() <span class="operator">/</span> <span class="number">2</span>));
+</pre>
+<p>If <i>source</i>是一个空矩形，该函数将使用<a href="qabstractscrollarea.html#viewport" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html#viewport">viewport</a>（） - \u003e<a href="qwidget.html#rect-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#rect-prop">rect</a>（）来确定要画什么。如果<i>target</i>是一个空矩形，的全尺寸<i>painter</i>的涂料设备（例如，对于一个<a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a>，页大小）将被使用。</p>
+<p>矩形内容源将根据待转化<i>aspectRatioMode</i>以适应目标矩形。默认情况下，纵横比蒙了，<i>source</i>缩放以适合<i>target</i>。</p>
+<p><b>See also</b> <a href="qgraphicsscene.html#render" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html#render">QGraphicsScene.render</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="renderHints"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qpainter-renderhints.html">QPainter.RenderHints</a> QGraphicsView.renderHints (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="resetCachedContent"></a>QGraphicsView.resetCachedContent (<i>self</i>)</h3>
+<p>重置任何缓存内容。调用此函数将清除<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>的缓存。如果当前缓存模式<a href="qgraphicsview.html#CacheModeFlag-enum" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#CacheModeFlag-enum">CacheNone</a>，这个函数不执行任何操作。</p>
+<p>此功能自动为您调用的时候，<a href="qgraphicsview.html#backgroundBrush-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#backgroundBrush-prop">backgroundBrush</a> or
+<a href="qgraphicsscene.html#backgroundBrush-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html#backgroundBrush-prop">QGraphicsScene.backgroundBrush</a>性质发生变化，你只需要调用这个函数，如果你已经重新实现<a href="qgraphicsscene.html#drawBackground" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html#drawBackground">QGraphicsScene.drawBackground</a>（）或<a href="qgraphicsview.html#drawBackground" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#drawBackground">QGraphicsView.drawBackground</a>（）来绘制一个自定义背景，以及需要触发一个完全重绘。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#cacheMode-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#cacheMode-prop">cacheMode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="resetMatrix"></a>QGraphicsView.resetMatrix (<i>self</i>)</h3>
+<p>重置视图变换矩阵为单位矩阵。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#resetTransform" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#resetTransform">resetTransform</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="resetTransform"></a>QGraphicsView.resetTransform (<i>self</i>)</h3>
+<p>重置视图转换为单位矩阵。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#transform" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#transform">transform</a>（）和<a href="qgraphicsview.html#setTransform" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setTransform">setTransform</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="resizeAnchor"></a><a href="qgraphicsview.html#ViewportAnchor-enum" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#ViewportAnchor-enum">ViewportAnchor</a> QGraphicsView.resizeAnchor (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="resizeEvent"></a>QGraphicsView.resizeEvent (<i>self</i>, <a href="qresizeevent.html" tppabs="http://pyqt4doc.appspot.com/qresizeevent.html">QResizeEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#resizeEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#resizeEvent">QWidget.resizeEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rotate"></a>QGraphicsView.rotate (<i>self</i>, float <i>angle</i>)</h3>
+<p>旋转当前视图转换<i>angle</i>度顺时针旋转。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#setTransform" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setTransform">setTransform</a>（ ）<a href="qgraphicsview.html#transform" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#transform">transform</a>（ ）<a href="qgraphicsview.html#scale" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#scale">scale</a>（ ）<a href="qgraphicsview.html#shear" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#shear">shear</a>（）和<a href="qgraphicsview.html#translate" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#translate">translate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rubberBandSelectionMode"></a><a href="qt.html#ItemSelectionMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemSelectionMode-enum">Qt.ItemSelectionMode</a> QGraphicsView.rubberBandSelectionMode (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="scale"></a>QGraphicsView.scale (<i>self</i>, float <i>sx</i>, float <i>sy</i>)</h3>
+<p>由（缩放当前视图转换<i>sx</i>，<i>sy</i>） 。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#setTransform" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setTransform">setTransform</a>（ ）<a href="qgraphicsview.html#transform" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#transform">transform</a>（ ）<a href="qgraphicsview.html#rotate" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#rotate">rotate</a>（ ）<a href="qgraphicsview.html#shear" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#shear">shear</a>（）和<a href="qgraphicsview.html#translate" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#translate">translate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="scene"></a><a href="qgraphicsscene.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html">QGraphicsScene</a> QGraphicsView.scene (<i>self</i>)</h3>
+<p>返回一个指针，在视图中当前可视化的场景。如果没有现场正在显现，则返回0 。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#setScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setScene">setScene</a>().</p>
+
+
+<h3 class="fn">
+<a name="sceneRect"></a><a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> QGraphicsView.sceneRect (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="scrollContentsBy"></a>QGraphicsView.scrollContentsBy (<i>self</i>, int <i>dx</i>, int <i>dy</i>)</h3>
+<p>从重新实现<a href="qabstractscrollarea.html#scrollContentsBy" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html#scrollContentsBy">QAbstractScrollArea.scrollContentsBy</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setAlignment"></a>QGraphicsView.setAlignment (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-alignment.html">Qt.Alignment</a> <i>alignment</i>)</h3>
+<h3 class="fn">
+<a name="setBackgroundBrush"></a>QGraphicsView.setBackgroundBrush (<i>self</i>, <a href="qbrush.html" tppabs="http://pyqt4doc.appspot.com/qbrush.html">QBrush</a> <i>brush</i>)</h3>
+<h3 class="fn">
+<a name="setCacheMode"></a>QGraphicsView.setCacheMode (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qgraphicsview-cachemode.html">CacheMode</a> <i>mode</i>)</h3>
+<h3 class="fn">
+<a name="setDragMode"></a>QGraphicsView.setDragMode (<i>self</i>, <a href="qgraphicsview.html#DragMode-enum" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#DragMode-enum">DragMode</a> <i>mode</i>)</h3>
+<h3 class="fn">
+<a name="setForegroundBrush"></a>QGraphicsView.setForegroundBrush (<i>self</i>, <a href="qbrush.html" tppabs="http://pyqt4doc.appspot.com/qbrush.html">QBrush</a> <i>brush</i>)</h3>
+<h3 class="fn">
+<a name="setInteractive"></a>QGraphicsView.setInteractive (<i>self</i>, bool <i>allowed</i>)</h3>
+<h3 class="fn">
+<a name="setMatrix"></a>QGraphicsView.setMatrix (<i>self</i>, <a href="qmatrix.html" tppabs="http://pyqt4doc.appspot.com/qmatrix.html">QMatrix</a> <i>matrix</i>, bool <i>combine</i> = False)</h3>
+<p>设置视图的当前转换矩阵<i>matrix</i>。</p>
+<p>If <i>combine</i>是真的，那么<i>matrix</i>是结合当前矩阵，否则<i>matrix</i> <i>replaces</i>当前矩阵。<i>combine</i>默认为False 。</p>
+<p>变换矩阵tranforms现场成视图坐标。使用默认的转变，由单位矩阵提供，在视图中一个像素代表一个单位中的场景（例如，一个10×10的矩形项目使用视图10X10像素绘制） 。如果一个2x2矩阵缩放应用，该场景将在1:2绘制（例如，一个10×10的矩形产品，然后使用视图20×20像素绘制） 。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qgraphicsscene.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html">QGraphicsScene</a></span> scene;
+ scene<span class="operator">.</span>addText(<span class="string">"GraphicsView rotated clockwise"</span>);
+
+ <span class="type"><a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a></span> view(<span class="operator">&amp;</span>scene);
+ view<span class="operator">.</span><a href="qgraphicsview.html#rotate" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#rotate">rotate</a>(<span class="number">90</span>); <span class="comment">// the text is rendered with a 90 degree clockwise rotation</span>
+ view<span class="operator">.</span><a href="qwidget.html#show" tppabs="http://pyqt4doc.appspot.com/qwidget.html#show">show</a>();
+</pre>
+<p>为了简化互为作用与使用转换视图中的项目，<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>提供mapTo ...和mapFrom ...功能，可以现场和视图坐标之间的转换。例如，你可以调用<a href="qgraphicsview.html#mapToScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapToScene">mapToScene</a>（ ）映射视图坐标为浮点场景坐标，或<a href="qgraphicsview.html#mapFromScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapFromScene">mapFromScene</a>（）从浮点数的场景地图坐标，查看坐标。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#matrix" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#matrix">matrix</a>（ ）<a href="qgraphicsview.html#setTransform" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setTransform">setTransform</a>（ ）<a href="qgraphicsview.html#rotate" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#rotate">rotate</a>（ ）<a href="qgraphicsview.html#scale" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#scale">scale</a>（ ）<a href="qgraphicsview.html#shear" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#shear">shear</a>（）和<a href="qgraphicsview.html#translate" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#translate">translate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setOptimizationFlag"></a>QGraphicsView.setOptimizationFlag (<i>self</i>, <a href="qgraphicsview.html#OptimizationFlag-enum" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#OptimizationFlag-enum">OptimizationFlag</a> <i>flag</i>, bool <i>enabled</i> = True)</h3>
+<p>Enables <i>flag</i>如果<i>enabled</i>为True，否则禁用<i>flag</i>。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#optimizationFlags-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#optimizationFlags-prop">optimizationFlags</a>。</p>
+
+
+<h3 class="fn">
+<a name="setOptimizationFlags"></a>QGraphicsView.setOptimizationFlags (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qgraphicsview-optimizationflags.html">OptimizationFlags</a> <i>flags</i>)</h3>
+<h3 class="fn">
+<a name="setRenderHint"></a>QGraphicsView.setRenderHint (<i>self</i>, <a href="qpainter.html#RenderHint-enum" tppabs="http://pyqt4doc.appspot.com/qpainter.html#RenderHint-enum">QPainter.RenderHint</a> <i>hint</i>, bool <i>on</i> = True)</h3>
+<p>If <i>enabled</i>是真的，渲染提示<i>hint</i>被启用，否则它被禁用。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#renderHints-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#renderHints-prop">renderHints</a>。</p>
+
+
+<h3 class="fn">
+<a name="setRenderHints"></a>QGraphicsView.setRenderHints (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qpainter-renderhints.html">QPainter.RenderHints</a> <i>hints</i>)</h3>
+<h3 class="fn">
+<a name="setResizeAnchor"></a>QGraphicsView.setResizeAnchor (<i>self</i>, <a href="qgraphicsview.html#ViewportAnchor-enum" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#ViewportAnchor-enum">ViewportAnchor</a> <i>anchor</i>)</h3>
+<h3 class="fn">
+<a name="setRubberBandSelectionMode"></a>QGraphicsView.setRubberBandSelectionMode (<i>self</i>, <a href="qt.html#ItemSelectionMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemSelectionMode-enum">Qt.ItemSelectionMode</a> <i>mode</i>)</h3>
+<h3 class="fn">
+<a name="setScene"></a>QGraphicsView.setScene (<i>self</i>, <a href="qgraphicsscene.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html">QGraphicsScene</a> <i>scene</i>)</h3>
+<p>设置当前场景<i>scene</i>。如果<i>scene</i>正在被查看，该函数不起作用。</p>
+<p>当一个场景设置在一个视图中，<a href="qgraphicsscene.html#changed" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html#changed">QGraphicsScene.changed</a>（ ）信号会自动连接到这个视图的<a href="qgraphicsview.html#updateScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#updateScene">updateScene</a>（ ）插槽，以及视图的滚动条进行调整，以适应现场的大小。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#scene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#scene">scene</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setSceneRect"></a>QGraphicsView.setSceneRect (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>rect</i>)</h3>
+<h3 class="fn">
+<a name="setSceneRect-2"></a>QGraphicsView.setSceneRect (<i>self</i>, float <i>ax</i>, float <i>ay</i>, float <i>aw</i>, float <i>ah</i>)</h3>
+<h3 class="fn">
+<a name="setTransform"></a>QGraphicsView.setTransform (<i>self</i>, <a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> <i>matrix</i>, bool <i>combine</i> = False)</h3>
+<p>设置视图的当前转换矩阵<i>matrix</i>。</p>
+<p>If <i>combine</i>是真的，那么<i>matrix</i>是结合当前矩阵，否则<i>matrix</i> <i>replaces</i>当前矩阵。<i>combine</i>默认为False 。</p>
+<p>变换矩阵tranforms现场成视图坐标。使用默认的转变，由单位矩阵提供，在视图中一个像素代表一个单位中的场景（例如，一个10×10的矩形项目使用视图10X10像素绘制） 。如果一个2x2矩阵缩放应用，该场景将在1:2绘制（例如，一个10×10的矩形产品，然后使用视图20×20像素绘制） 。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qgraphicsscene.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html">QGraphicsScene</a></span> scene;
+ scene<span class="operator">.</span>addText(<span class="string">"GraphicsView rotated clockwise"</span>);
+
+ <span class="type"><a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a></span> view(<span class="operator">&amp;</span>scene);
+ view<span class="operator">.</span>rotate(<span class="number">90</span>); <span class="comment">// the text is rendered with a 90 degree clockwise rotation</span>
+ view<span class="operator">.</span>show();
+</pre>
+<p>为了简化互为作用与使用转换视图中的项目，<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>提供mapTo ...和mapFrom ...功能，可以现场和视图坐标之间的转换。例如，你可以调用<a href="qgraphicsview.html#mapToScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapToScene">mapToScene</a>（ ）到一个视图coordiate映射到一个浮点场景坐标，或<a href="qgraphicsview.html#mapFromScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapFromScene">mapFromScene</a>（）从浮点数的场景地图坐标，查看坐标。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#transform" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#transform">transform</a>（ ）<a href="qgraphicsview.html#rotate" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#rotate">rotate</a>（ ）<a href="qgraphicsview.html#scale" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#scale">scale</a>（ ）<a href="qgraphicsview.html#shear" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#shear">shear</a>（）和<a href="qgraphicsview.html#translate" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#translate">translate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setTransformationAnchor"></a>QGraphicsView.setTransformationAnchor (<i>self</i>, <a href="qgraphicsview.html#ViewportAnchor-enum" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#ViewportAnchor-enum">ViewportAnchor</a> <i>anchor</i>)</h3>
+<h3 class="fn">
+<a name="setupViewport"></a>QGraphicsView.setupViewport (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>widget</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setupViewport(QWidget *)</tt>。</p>
+<p>这个槽被调用者<a href="qabstractscrollarea.html" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html">QAbstractScrollArea</a>后<a href="qabstractscrollarea.html#setViewport" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html#setViewport">setViewport</a>（ ）被调用。在子类重新实现此功能<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>初始化新视<i>widget</i>之前就被采用。</p>
+<p><b>See also</b> <a href="qabstractscrollarea.html#setViewport" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html#setViewport">setViewport</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setViewportUpdateMode"></a>QGraphicsView.setViewportUpdateMode (<i>self</i>, <a href="qgraphicsview.html#ViewportUpdateMode-enum" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#ViewportUpdateMode-enum">ViewportUpdateMode</a> <i>mode</i>)</h3>
+<h3 class="fn">
+<a name="shear"></a>QGraphicsView.shear (<i>self</i>, float <i>sh</i>, float <i>sv</i>)</h3>
+<p>由（剪当前视图转型<i>sh</i>，<i>sv</i>） 。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#setTransform" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setTransform">setTransform</a>（ ）<a href="qgraphicsview.html#transform" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#transform">transform</a>（ ）<a href="qgraphicsview.html#rotate" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#rotate">rotate</a>（ ）<a href="qgraphicsview.html#scale" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#scale">scale</a>（）和<a href="qgraphicsview.html#translate" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#translate">translate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="showEvent"></a>QGraphicsView.showEvent (<i>self</i>, <a href="qshowevent.html" tppabs="http://pyqt4doc.appspot.com/qshowevent.html">QShowEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#showEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#showEvent">QWidget.showEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sizeHint"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QGraphicsView.sizeHint (<i>self</i>)</h3>
+<p>从重新实现<a href="qwidget.html#sizeHint-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#sizeHint-prop">QWidget.sizeHint</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="transform"></a><a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> QGraphicsView.transform (<i>self</i>)</h3>
+<p>返回该视图的当前转换矩阵。如果没有当前变换设置，返回单位矩阵。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#setTransform" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setTransform">setTransform</a>（ ）<a href="qgraphicsview.html#rotate" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#rotate">rotate</a>（ ）<a href="qgraphicsview.html#scale" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#scale">scale</a>（ ）<a href="qgraphicsview.html#shear" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#shear">shear</a>（）和<a href="qgraphicsview.html#translate" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#translate">translate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="transformationAnchor"></a><a href="qgraphicsview.html#ViewportAnchor-enum" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#ViewportAnchor-enum">ViewportAnchor</a> QGraphicsView.transformationAnchor (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="translate"></a>QGraphicsView.translate (<i>self</i>, float <i>dx</i>, float <i>dy</i>)</h3>
+<p>由（平移当前视图转型<i>dx</i>，<i>dy</i>） 。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#setTransform" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#setTransform">setTransform</a>（ ）<a href="qgraphicsview.html#transform" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#transform">transform</a>（ ）<a href="qgraphicsview.html#rotate" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#rotate">rotate</a>（）和<a href="qgraphicsview.html#shear" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#shear">shear</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="updateScene"></a>QGraphicsView.updateScene (<i>self</i>, list-of-QRectF <i>rects</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void updateScene(const QList&lt;QRectF&gt;&amp;)</tt>。</p>
+<p>附表现场矩形的更新<i>rects</i>。</p>
+<p><b>See also</b> <a href="qgraphicsscene.html#changed" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html#changed">QGraphicsScene.changed</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="updateSceneRect"></a>QGraphicsView.updateSceneRect (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>rect</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void updateSceneRect(const QRectF&amp;)</tt>。</p>
+<p>通知<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>该场景的场景RECT发生了变化。<i>rect</i>是新的场景正确。如果视图已经有一个明确设定的场景矩形，该函数不起作用。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#sceneRect-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#sceneRect-prop">sceneRect</a>和<a href="qgraphicsscene.html#sceneRectChanged" tppabs="http://pyqt4doc.appspot.com/qgraphicsscene.html#sceneRectChanged">QGraphicsScene.sceneRectChanged</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="viewportEvent"></a>bool QGraphicsView.viewportEvent (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qabstractscrollarea.html#viewportEvent" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html#viewportEvent">QAbstractScrollArea.viewportEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="viewportTransform"></a><a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> QGraphicsView.viewportTransform (<i>self</i>)</h3>
+<p>返回映射视口坐标场景坐标的矩阵。</p>
+<p><b>See also</b> <a href="qgraphicsview.html#mapToScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapToScene">mapToScene</a>（）和<a href="qgraphicsview.html#mapFromScene" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#mapFromScene">mapFromScene</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="viewportUpdateMode"></a><a href="qgraphicsview.html#ViewportUpdateMode-enum" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html#ViewportUpdateMode-enum">ViewportUpdateMode</a> QGraphicsView.viewportUpdateMode (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="wheelEvent"></a>QGraphicsView.wheelEvent (<i>self</i>, <a href="qwheelevent.html" tppabs="http://pyqt4doc.appspot.com/qwheelevent.html">QWheelEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#wheelEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#wheelEvent">QWidget.wheelEvent</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

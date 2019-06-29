@@ -1,0 +1,266 @@
+﻿<html>
+<head>
+<title>QSqlRelationalTableModel Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QSqlRelationalTableModel Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtsql.html">QtSql</a> module]</sup></sup>
+</h1>
+<p>该QSqlRelationalTableModel类提供了一个可编辑的数据模型为单个数据库表，与外键的支持。<a href="#details">More...</a></p>
+
+<p>继承<a href="qsqltablemodel.html" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html">QSqlTableModel</a>。</p>
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qsqlrelationaltablemodel.html#JoinMode-enum" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#JoinMode-enum">JoinMode</a></b> { InnerJoin, LeftJoin }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlrelationaltablemodel.html#QSqlRelationalTableModel" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#QSqlRelationalTableModel">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None, QSqlDatabase <i>db</i> = QSqlDatabase())</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlrelationaltablemodel.html#clear" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#clear">clear</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qsqlrelationaltablemodel.html#data" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#data">data</a></b> (<i>self</i>, QModelIndex <i>index</i>, int <i>role</i> = Qt.DisplayRole)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqlrelationaltablemodel.html#insertRowIntoTable" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#insertRowIntoTable">insertRowIntoTable</a></b> (<i>self</i>, QSqlRecord <i>values</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsqlrelationaltablemodel.html#orderByClause" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#orderByClause">orderByClause</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSqlRelation <b><a href="qsqlrelationaltablemodel.html#relation" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#relation">relation</a></b> (<i>self</i>, int <i>column</i>)</li>
+<li>
+<div class="fn"></div>QSqlTableModel <b><a href="qsqlrelationaltablemodel.html#relationModel" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#relationModel">relationModel</a></b> (<i>self</i>, int <i>column</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqlrelationaltablemodel.html#removeColumns" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#removeColumns">removeColumns</a></b> (<i>self</i>, int <i>column</i>, int <i>count</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlrelationaltablemodel.html#revertRow" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#revertRow">revertRow</a></b> (<i>self</i>, int <i>row</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqlrelationaltablemodel.html#select" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#select">select</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsqlrelationaltablemodel.html#selectStatement" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#selectStatement">selectStatement</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqlrelationaltablemodel.html#setData" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#setData">setData</a></b> (<i>self</i>, QModelIndex <i>index</i>, QVariant <i>value</i>, int <i>role</i> = Qt.EditRole)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlrelationaltablemodel.html#setJoinMode" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#setJoinMode">setJoinMode</a></b> (<i>self</i>, JoinMode <i>joinMode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlrelationaltablemodel.html#setRelation" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#setRelation">setRelation</a></b> (<i>self</i>, int <i>column</i>, QSqlRelation <i>relation</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlrelationaltablemodel.html#setTable" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#setTable">setTable</a></b> (<i>self</i>, QString <i>tableName</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqlrelationaltablemodel.html#updateRowInTable" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#updateRowInTable">updateRowInTable</a></b> (<i>self</i>, int <i>row</i>, QSqlRecord <i>values</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QSqlRelationalTableModel类提供了一个可编辑的数据模型为单个数据库表，与外键的支持。</p>
+<p>QSqlRelationalTableModel就像<a href="qsqltablemodel.html" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html">QSqlTableModel</a>，但允许列要被设置为外键成其他数据库表。</p>
+<table class="generic">
+<tr class="odd" valign="top">
+<td><img alt="" src="images/noforeignkeys.png"></td>
+<td><img alt="" src="images/foreignkeys.png"></td>
+</tr>
+</table>
+<p>左边的屏幕截图显示了纯<a href="qsqltablemodel.html" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html">QSqlTableModel</a>在<a href="qtableview.html" tppabs="http://pyqt4doc.appspot.com/qtableview.html">QTableView</a>。外键（<tt>city</tt>和<tt>country</tt>）不会被解析为可读价值。右边的屏幕截图显示了QSqlRelationalTableModel ，与外键分解成可读的文本字符串。</p>
+<p>下面的代码片段显示了QSqlRelationalTableModel是如何设置：</p>
+<pre class="cpp">
+     model<span class="operator">-</span><span class="operator">&gt;</span>setTable(<span class="string">"employee"</span>);
+
+     model<span class="operator">-</span><span class="operator">&gt;</span>setRelation(<span class="number">2</span><span class="operator">,</span> <span class="type"><a href="qsqlrelation.html" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html">QSqlRelation</a></span>(<span class="string">"city"</span><span class="operator">,</span> <span class="string">"id"</span><span class="operator">,</span> <span class="string">"name"</span>));
+     model<span class="operator">-</span><span class="operator">&gt;</span>setRelation(<span class="number">3</span><span class="operator">,</span> <span class="type"><a href="qsqlrelation.html" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html">QSqlRelation</a></span>(<span class="string">"country"</span><span class="operator">,</span> <span class="string">"id"</span><span class="operator">,</span> <span class="string">"name"</span>));
+</pre>
+<p>该<a href="qsqlrelationaltablemodel.html#setRelation" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#setRelation">setRelation</a>（ ）函数调用建立两个表之间的关系。第一次调用指定表2列<tt>employee</tt>是，与字段映射外键<tt>id</tt>表<tt>city</tt>，而认为应该提出的<tt>city</tt>的<tt>name</tt>字段给用户。第二次调用是否与第3列类似的东西。</p>
+<p>如果你使用一个读写QSqlRelationalTableModel ，你可能想使用<a href="qsqlrelationaldelegate.html" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaldelegate.html">QSqlRelationalDelegate</a>在视图上。不同的是默认的委讬，<a href="qsqlrelationaldelegate.html" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaldelegate.html">QSqlRelationalDelegate</a>提供了一个组合框是外键到其他表中的字段。使用类，只需调用<a href="qabstractitemview.html#setItemDelegate" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setItemDelegate">QAbstractItemView.setItemDelegate</a>（ ）与实例的视图<a href="qsqlrelationaldelegate.html" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaldelegate.html">QSqlRelationalDelegate</a>：</p>
+<pre class="cpp">
+     <span class="type"><a href="qtableview.html" tppabs="http://pyqt4doc.appspot.com/qtableview.html">QTableView</a></span> <span class="operator">*</span>view <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qtableview.html" tppabs="http://pyqt4doc.appspot.com/qtableview.html">QTableView</a></span>;
+     view<span class="operator">-</span><span class="operator">&gt;</span>setModel(model);
+     view<span class="operator">-</span><span class="operator">&gt;</span>setItemDelegate(<span class="keyword">new</span> <span class="type"><a href="qsqlrelationaldelegate.html" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaldelegate.html">QSqlRelationalDelegate</a></span>(view));
+</pre>
+<p>该<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/sql-relationaltablemodel.html">sql/relationaltablemodel</a>示例说明了如何使用QSqlRelationalTableModel与配合<a href="qsqlrelationaldelegate.html" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaldelegate.html">QSqlRelationalDelegate</a>提供表外键的支持。</p>
+<p class="centerAlign"><img alt="" src="images/relationaltable.png"></p>
+<p>注意事项：</p>
+<ul>
+<li>The table must have a primary key declared.</li>
+<li>The table's primary key may not contain a relation to another
+table.</li>
+<li>If a relational table contains keys that refer to non-existent
+rows in the referenced table, the rows containing the invalid keys
+will not be exposed through the model. The user or the database is
+responsible for keeping referential integrity.</li>
+<li>If a relation's display column name is also used as a column
+name in the main table, or if it is used as display column name in
+more than one relation it will be aliased. The alias is is the
+relation's table name and display column name joined by an
+underscore (e.g. tablename_columnname). All occurrences of the
+duplicate display column name are aliased when duplication is
+detected, but no aliasing is done to the column names in the main
+table. The aliasing doesn't affect <a href="qsqlrelation.html" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html">QSqlRelation</a>, so <a href="qsqlrelation.html#displayColumn" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html#displayColumn">QSqlRelation.displayColumn</a>()
+will return the original display column name, but <a href="qsqlrecord.html#fieldName" tppabs="http://pyqt4doc.appspot.com/qsqlrecord.html#fieldName">QSqlRecord.fieldName</a>() will return
+aliases.</li>
+<li>When using <a href="qsqlrelationaltablemodel.html#setData" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#setData">setData</a>() the role
+should always be <a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">Qt.EditRole</a>, and when using
+<a href="qsqlrelationaltablemodel.html#data" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#data">data</a>() the role
+should always be <a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">Qt.DisplayRole</a>.</li>
+</ul>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="JoinMode-enum"></a>QSqlRelationalTableModel.JoinMode</h3>
+<p>此枚举指定的模式连接两个表时要使用的类型。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QSqlRelationalTableModel.InnerJoin</tt>
+</td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">内部联接模式，返回行的时候，至少有一个匹配两个表中。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QSqlRelationalTableModel.LeftJoin</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">LEFT JOIN模式，返回左表（ table_name1 ）的所有行，即使在右表（ table_name2 ）的结果。</td>
+</tr>
+</table>
+<p>这个枚举被引入或修改的Qt 4.8 。</p>
+<p><b>See also</b> <a href="qsqlrelationaltablemodel.html#setJoinMode" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#setJoinMode">QSqlRelationalTableModel.setJoinMode</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QSqlRelationalTableModel"></a>QSqlRelationalTableModel.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None, <a href="qsqldatabase.html" tppabs="http://pyqt4doc.appspot.com/qsqldatabase.html">QSqlDatabase</a> <i>db</i> = QSqlDatabase())</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>创建一个空的<a href="qsqlrelationaltablemodel.html" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html">QSqlRelationalTableModel</a>并设置父<i>parent</i>与数据库连接<i>db</i>。如果<i>db</i>是无效的，默认的数据库连接将被使用。</p>
+
+
+<h3 class="fn">
+<a name="clear"></a>QSqlRelationalTableModel.clear (<i>self</i>)</h3>
+<p>从重新实现<a href="qsqlquerymodel.html#clear" tppabs="http://pyqt4doc.appspot.com/qsqlquerymodel.html#clear">QSqlQueryModel.clear</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="data"></a>QVariant QSqlRelationalTableModel.data (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>, int <i>role</i> = Qt.DisplayRole)</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#data" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#data">QAbstractItemModel.data</a>（ ） 。</p>
+<p><b>See also</b> <a href="qsqlrelationaltablemodel.html#setData" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#setData">setData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertRowIntoTable"></a>bool QSqlRelationalTableModel.insertRowIntoTable (<i>self</i>, <a href="qsqlrecord.html" tppabs="http://pyqt4doc.appspot.com/qsqlrecord.html">QSqlRecord</a> <i>values</i>)</h3>
+<p>从重新实现<a href="qsqltablemodel.html#insertRowIntoTable" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#insertRowIntoTable">QSqlTableModel.insertRowIntoTable</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="orderByClause"></a>QString QSqlRelationalTableModel.orderByClause (<i>self</i>)</h3>
+<p>从重新实现<a href="qsqltablemodel.html#orderByClause" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#orderByClause">QSqlTableModel.orderByClause</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="relation"></a><a href="qsqlrelation.html" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html">QSqlRelation</a> QSqlRelationalTableModel.relation (<i>self</i>, int <i>column</i>)</h3>
+<p>返回列的关系<i>column</i>或无效的关系，如果没有关系设定。</p>
+<p><b>See also</b> <a href="qsqlrelationaltablemodel.html#setRelation" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#setRelation">setRelation</a>（）和<a href="qsqlrelation.html#isValid" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html#isValid">QSqlRelation.isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="relationModel"></a><a href="qsqltablemodel.html" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html">QSqlTableModel</a> QSqlRelationalTableModel.relationModel (<i>self</i>, int <i>column</i>)</h3>
+<p>返回<a href="qsqltablemodel.html" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html">QSqlTableModel</a>对象，用于访问表的量<i>column</i>是外键，或者0，如果没有为给定的没有关系<i>column</i>。</p>
+<p>返回的对象是由资<a href="qsqlrelationaltablemodel.html" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html">QSqlRelationalTableModel</a>。</p>
+<p><b>See also</b> <a href="qsqlrelationaltablemodel.html#setRelation" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#setRelation">setRelation</a>（）和<a href="qsqlrelationaltablemodel.html#relation" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#relation">relation</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="removeColumns"></a>bool QSqlRelationalTableModel.removeColumns (<i>self</i>, int <i>column</i>, int <i>count</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#removeColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeColumns">QAbstractItemModel.removeColumns</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="revertRow"></a>QSqlRelationalTableModel.revertRow (<i>self</i>, int <i>row</i>)</h3>
+<p>从重新实现<a href="qsqltablemodel.html#revertRow" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#revertRow">QSqlTableModel.revertRow</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="select"></a>bool QSqlRelationalTableModel.select (<i>self</i>)</h3>
+<p>从重新实现<a href="qsqltablemodel.html#select" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#select">QSqlTableModel.select</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="selectStatement"></a>QString QSqlRelationalTableModel.selectStatement (<i>self</i>)</h3>
+<p>从重新实现<a href="qsqltablemodel.html#selectStatement" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#selectStatement">QSqlTableModel.selectStatement</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setData"></a>bool QSqlRelationalTableModel.setData (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>, QVariant <i>value</i>, int <i>role</i> = Qt.EditRole)</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#setData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setData">QAbstractItemModel.setData</a>（ ） 。</p>
+<p>设置数据的<i>role</i>在用指定的项<i>index</i>到<i>value</i>给出。取决于编辑策略，则该值可能被应用到数据库一次，或者它可以在模型中被缓存。</p>
+<p>返回True如果该值可以设置，或虚假的错误（例如，如果<i>index</i>是出界） 。</p>
+<p>对于关系栏目，<i>value</i>必须是索引，而不是显示值。该指数还必须存在于被引用表，否则返回False 。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#editStrategy" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#editStrategy">editStrategy</a>（ ）<a href="qsqlrelationaltablemodel.html#data" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#data">data</a>（ ）<a href="qsqltablemodel.html#submit" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#submit">submit</a>（）和<a href="qsqlrelationaltablemodel.html#revertRow" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#revertRow">revertRow</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setJoinMode"></a>QSqlRelationalTableModel.setJoinMode (<i>self</i>, <a href="qsqlrelationaltablemodel.html#JoinMode-enum" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#JoinMode-enum">JoinMode</a> <i>joinMode</i>)</h3>
+<p>设置SQL加盟模式由给定的值<i>joinMode</i>要显示或隐藏与NULL外键的行。</p>
+<p>In <a href="qsqlrelationaltablemodel.html#JoinMode-enum" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#JoinMode-enum">InnerJoin</a>模式（默认）这些行不会被显示;使用<a href="qsqlrelationaltablemodel.html#JoinMode-enum" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#JoinMode-enum">LeftJoin</a>模式下，如果你想向他们展示。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qsqlrelationaltablemodel.html#JoinMode-enum" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#JoinMode-enum">QSqlRelationalTableModel.JoinMode</a>。</p>
+
+
+<h3 class="fn">
+<a name="setRelation"></a>QSqlRelationalTableModel.setRelation (<i>self</i>, int <i>column</i>, <a href="qsqlrelation.html" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html">QSqlRelation</a> <i>relation</i>)</h3>
+<p>让指定的<i>column</i>可以通过指定的外国指数<i>relation</i>。</p>
+<p>例如：</p>
+<pre class="cpp">
+     model<span class="operator">-</span><span class="operator">&gt;</span>setTable(<span class="string">"employee"</span>);
+
+     model<span class="operator">-</span><span class="operator">&gt;</span>setRelation(<span class="number">2</span><span class="operator">,</span> <span class="type"><a href="qsqlrelation.html" tppabs="http://pyqt4doc.appspot.com/qsqlrelation.html">QSqlRelation</a></span>(<span class="string">"city"</span><span class="operator">,</span> <span class="string">"id"</span><span class="operator">,</span> <span class="string">"name"</span>));
+</pre>
+<p>该setRelation （ ）调用指定表2列<tt>employee</tt>是，与字段映射外键<tt>id</tt>表<tt>city</tt>，而认为应该提出的<tt>city</tt>的<tt>name</tt>字段给用户。</p>
+<p>注：表中的主键可能不包含关系到另一个表。</p>
+<p><b>See also</b> <a href="qsqlrelationaltablemodel.html#relation" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html#relation">relation</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setTable"></a>QSqlRelationalTableModel.setTable (<i>self</i>, QString <i>tableName</i>)</h3>
+<p>从重新实现<a href="qsqltablemodel.html#setTable" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setTable">QSqlTableModel.setTable</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="updateRowInTable"></a>bool QSqlRelationalTableModel.updateRowInTable (<i>self</i>, int <i>row</i>, <a href="qsqlrecord.html" tppabs="http://pyqt4doc.appspot.com/qsqlrecord.html">QSqlRecord</a> <i>values</i>)</h3>
+<p>从重新实现<a href="qsqltablemodel.html#updateRowInTable" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#updateRowInTable">QSqlTableModel.updateRowInTable</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

@@ -1,0 +1,414 @@
+﻿<html>
+<head>
+<title>QNetworkProxy Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QNetworkProxy Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtnetwork.html">QtNetwork</a> module]</sup></sup>
+</h1>
+<p>该QNetworkProxy类提供了网络层的代理。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy-capabilities.html">Capabilities</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qnetworkproxy.html#Capability-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#Capability-enum">Capability</a></b> { TunnelingCapability, ListeningCapability, UdpTunnelingCapability, CachingCapability, HostNameLookupCapability }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qnetworkproxy.html#ProxyType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#ProxyType-enum">ProxyType</a></b> { DefaultProxy, Socks5Proxy, NoProxy, HttpProxy, HttpCachingProxy, FtpCachingProxy }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxy.html#QNetworkProxy" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#QNetworkProxy">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxy.html#QNetworkProxy-2" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#QNetworkProxy-2">__init__</a></b> (<i>self</i>, ProxyType <i>type</i>, QString <i>hostName</i> = QString(), int <i>port</i> = 0, QString <i>user</i> = QString(), QString <i>password</i> = QString())</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxy.html#QNetworkProxy-3" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#QNetworkProxy-3">__init__</a></b> (<i>self</i>, QNetworkProxy <i>other</i>)</li>
+<li>
+<div class="fn"></div>Capabilities <b><a href="qnetworkproxy.html#capabilities" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#capabilities">capabilities</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qnetworkproxy.html#hostName" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#hostName">hostName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qnetworkproxy.html#isCachingProxy" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#isCachingProxy">isCachingProxy</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qnetworkproxy.html#isTransparentProxy" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#isTransparentProxy">isTransparentProxy</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qnetworkproxy.html#password" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#password">password</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qnetworkproxy.html#port" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#port">port</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxy.html#setCapabilities" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setCapabilities">setCapabilities</a></b> (<i>self</i>, Capabilities <i>capab</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxy.html#setHostName" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setHostName">setHostName</a></b> (<i>self</i>, QString <i>hostName</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxy.html#setPassword" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setPassword">setPassword</a></b> (<i>self</i>, QString <i>password</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxy.html#setPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setPort">setPort</a></b> (<i>self</i>, int <i>port</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxy.html#setType" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setType">setType</a></b> (<i>self</i>, ProxyType <i>type</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxy.html#setUser" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setUser">setUser</a></b> (<i>self</i>, QString <i>userName</i>)</li>
+<li>
+<div class="fn"></div>ProxyType <b><a href="qnetworkproxy.html#type" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#type">type</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qnetworkproxy.html#user" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#user">user</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QNetworkProxy <b><a href="qnetworkproxy.html#applicationProxy" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#applicationProxy">applicationProxy</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxy.html#setApplicationProxy" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setApplicationProxy">setApplicationProxy</a></b> (QNetworkProxy <i>proxy</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>bool <b><a href="qnetworkproxy.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#__eq__">__eq__</a></b> (<i>self</i>, QNetworkProxy <i>other</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qnetworkproxy.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#__ne__">__ne__</a></b> (<i>self</i>, QNetworkProxy <i>other</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QNetworkProxy类提供了网络层的代理。</p>
+<p>QNetworkProxy提供了方法来配置网络层代理支持Qt的网络类。目前支持的类<a href="qabstractsocket.html" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html">QAbstractSocket</a>，<a href="qtcpsocket.html" tppabs="http://pyqt4doc.appspot.com/qtcpsocket.html">QTcpSocket</a>，<a href="qudpsocket.html" tppabs="http://pyqt4doc.appspot.com/qudpsocket.html">QUdpSocket</a>，<a href="qtcpserver.html" tppabs="http://pyqt4doc.appspot.com/qtcpserver.html">QTcpServer</a>，<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>和<a href="qftp.html" tppabs="http://pyqt4doc.appspot.com/qftp.html">QFtp</a>。该代理支持被设计成尽可能透明。这意味着，您已经编写现有的网络应用程序应该使用下面的代码支持自动网络代理。</p>
+<pre class="cpp">
+ <span class="type">QNetworkProxy</span> proxy;
+ proxy<span class="operator">.</span><a href="qnetworkproxy.html#setType" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setType">setType</a>(<span class="type">QNetworkProxy</span><span class="operator">.</span>Socks5Proxy);
+ proxy<span class="operator">.</span><a href="qnetworkproxy.html#setHostName" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setHostName">setHostName</a>(<span class="string">"proxy.example.com"</span>);
+ proxy<span class="operator">.</span><a href="qnetworkproxy.html#setPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setPort">setPort</a>(<span class="number">1080</span>);
+ proxy<span class="operator">.</span><a href="qnetworkproxy.html#setUser" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setUser">setUser</a>(<span class="string">"username"</span>);
+ proxy<span class="operator">.</span><a href="qnetworkproxy.html#setPassword" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setPassword">setPassword</a>(<span class="string">"password"</span>);
+ <span class="type">QNetworkProxy</span><span class="operator">.</span><a href="qnetworkproxy.html#setApplicationProxy" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setApplicationProxy">setApplicationProxy</a>(proxy);
+</pre>
+<p>另一种方法来设置应用程序范围的代理是用来指定单个插座代理<a href="qabstractsocket.html#setProxy" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#setProxy">QAbstractSocket.setProxy</a>（）和<a href="qtcpserver.html#setProxy" tppabs="http://pyqt4doc.appspot.com/qtcpserver.html#setProxy">QTcpServer.setProxy</a>（ ） 。以这种方式，有可能禁止使用使用以下代码具体套接字的代理：</p>
+<pre class="cpp">
+ serverSocket<span class="operator">-</span><span class="operator">&gt;</span>setProxy(<span class="type">QNetworkProxy</span><span class="operator">.</span>NoProxy);
+</pre>
+<p>网络代理不使用，如果所使用的地址<a href="qabstractsocket.html#connectToHost" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#connectToHost">connectToHost()</a>，<a href="qudpsocket.html#bind" tppabs="http://pyqt4doc.appspot.com/qudpsocket.html#bind">bind()</a> or <a href="qtcpserver.html#listen" tppabs="http://pyqt4doc.appspot.com/qtcpserver.html#listen">listen()</a>相当于<a href="qhostaddress.html#SpecialAddress-enum" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#SpecialAddress-enum">QHostAddress.LocalHost</a>
+or <a href="qhostaddress.html#SpecialAddress-enum" tppabs="http://pyqt4doc.appspot.com/qhostaddress.html#SpecialAddress-enum">QHostAddress.LocalHostIPv6</a>。</p>
+<p>每种类型的代理支持具有与之相关的某些限制。你应该阅读<a href="qnetworkproxy.html#ProxyType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#ProxyType-enum">ProxyType</a>文档谨慎选择代理类型使用之前。</p>
+<p><b>Note:</b>向当前连接的套接字更改不会生效。如果您需要更改连接的套接字，你应该重新连接。</p>
+<a id="socks5" name="socks5"></a>
+<h3>SOCKS5</h3>
+<p>socks5的支持Qt的4是基于<a href="http://www.rfc-editor.org/rfc/rfc1928.txt">RFC 1928</a>和<a href="http://www.rfc-editor.org/rfc/rfc1929.txt">RFC 1929</a>。支持的身份验证方法是没有身份验证和用户名/密码认证。 IPv4和IPv6的支持。域名是通过SOCKS5服务器解析，如果<a href="qnetworkproxy.html#Capability-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#Capability-enum">QNetworkProxy.HostNameLookupCapability</a>被激活，否则它们是本地解析和IP地址被发送到服务器。有几件事情使用SOCKS5用时要记住<a href="qudpsocket.html" tppabs="http://pyqt4doc.appspot.com/qudpsocket.html">QUdpSocket</a>和<a href="qtcpserver.html" tppabs="http://pyqt4doc.appspot.com/qtcpserver.html">QTcpServer</a>：</p>
+<p>With <a href="qudpsocket.html" tppabs="http://pyqt4doc.appspot.com/qudpsocket.html">QUdpSocket</a>，调用<a href="qudpsocket.html#bind" tppabs="http://pyqt4doc.appspot.com/qudpsocket.html#bind">bind()</a>超时错误可能会失败。如果不是0的端口号传递给<a href="qudpsocket.html#bind" tppabs="http://pyqt4doc.appspot.com/qudpsocket.html#bind">bind()</a>，它不能保证它是指定的端口将被使用。使用<a href="qabstractsocket.html#localPort" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#localPort">localPort()</a>和<a href="qabstractsocket.html#localAddress" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#localAddress">localAddress()</a>得到实际使用中的地址和端口号。因为代理的UDP经过两个UDP连接，它更可能是数据包将被丢弃。</p>
+<p>With <a href="qtcpserver.html" tppabs="http://pyqt4doc.appspot.com/qtcpserver.html">QTcpServer</a>调用<a href="qtcpserver.html#listen" tppabs="http://pyqt4doc.appspot.com/qtcpserver.html#listen">listen()</a>超时错误可能会失败。如果不是0的端口号传递给<a href="qtcpserver.html#listen" tppabs="http://pyqt4doc.appspot.com/qtcpserver.html#listen">listen()</a>的话，就不能保证它是指定的端口将被使用。使用<a href="qtcpserver.html#serverPort" tppabs="http://pyqt4doc.appspot.com/qtcpserver.html#serverPort">serverPort()</a>和<a href="qtcpserver.html#serverAddress" tppabs="http://pyqt4doc.appspot.com/qtcpserver.html#serverAddress">serverAddress()</a>得到的实际地址和端口用于侦听连接。 SOCKS5只支持一个接受每个呼叫连接到<a href="qtcpserver.html#listen" tppabs="http://pyqt4doc.appspot.com/qtcpserver.html#listen">listen()</a>，并且每个呼叫很可能会导致不同的<a href="qtcpserver.html#serverPort" tppabs="http://pyqt4doc.appspot.com/qtcpserver.html#serverPort">serverPort()</a>被使用。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="Capability-enum"></a>QNetworkProxy.Capability</h3>
+<p>这些标志指示一个给定的代理服务器支持的功能。</p>
+<p><a href="qnetworkproxy.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html">QNetworkProxy</a>默认情况下，设置不同的功能在创建对象时（见<a href="qnetworkproxy.html#ProxyType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#ProxyType-enum">QNetworkProxy.ProxyType</a>为默认值的列表） 。然而，这是可以改变capabitilies后的对象已经创建与<a href="qnetworkproxy.html#setCapabilities" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setCapabilities">setCapabilities</a>（ ） 。</p>
+<p>的功能，<a href="qnetworkproxy.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html">QNetworkProxy</a>支持有：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkProxy.TunnelingCapability</tt>
+</td>
+<td class="topAlign"><tt>0x0001</tt></td>
+<td class="topAlign">能够打开到远程主机透明，隧道TCP连接。代理服务器中继传输逐字从一个侧面向其他并不做任何缓存。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkProxy.ListeningCapability</tt>
+</td>
+<td class="topAlign"><tt>0x0002</tt></td>
+<td class="topAlign">能够创建一个监听套接字，并等待来自远程主机传入的TCP连接。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkProxy.UdpTunnelingCapability</tt>
+</td>
+<td class="topAlign"><tt>0x0004</tt></td>
+<td class="topAlign">能够通过代理服务器，并从远程主机中继的UDP数据报。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QNetworkProxy.CachingCapability</tt></td>
+<td class="topAlign"><tt>0x0008</tt></td>
+<td class="topAlign">能力来缓存传递的内容。这种能力是具体到每个协议和代理类型。例如， HTTP代理缓存可以用“GET”命令传送网络数据的内容。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkProxy.HostNameLookupCapability</tt>
+</td>
+<td class="topAlign"><tt>0x0010</tt></td>
+<td class="topAlign">能够连接到执行查找上一个远程主机名，并连接到它，而不是要求应用程序执行名称查找，并要求连接到的IP地址只。</td>
+</tr>
+</table>
+<p>这个枚举被引入或修改的Qt 4.5 。</p>
+<p>功能类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cCapability\u003e 。它存储能力值的一个或组合。</p>
+
+
+<h3 class="fn">
+<a name="ProxyType-enum"></a>QNetworkProxy.ProxyType</h3>
+<p>这个枚举变量描述的Qt提供的网络代理的类型。</p>
+<p>有两种类型的代理Qt的理解：透明代理和缓存代理。第一组由代理服务器可以处理任意的数据传输，而第二个只能处理特定的请求。该缓存代理服务器才有意义的特定类，他们都可以使用。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QNetworkProxy.NoProxy</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">无代理使用</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QNetworkProxy.DefaultProxy</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">代理服务器是基于使用应用程序代理组确定<a href="qnetworkproxy.html#setApplicationProxy" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setApplicationProxy">setApplicationProxy</a>（ ）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QNetworkProxy.Socks5Proxy</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">
+<a href="qnetworkproxy.html#socks5" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#socks5">Socks5</a>代理使用</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QNetworkProxy.HttpProxy</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">HTTP透明代理时（此值是在4.3推出。 ）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QNetworkProxy.HttpCachingProxy</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">代理HTTP请求只（这个值被引入4.4 。 ）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QNetworkProxy.FtpCachingProxy</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">代理FTP请求只（这个值被引入4.4 。 ）</td>
+</tr>
+</table>
+<p>下表列出了不同的代理类型和它们的功能。由于每个代理类型具有不同的功能，了解他们选择代理类型之前，是很重要的。</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Proxy type</th>
+<th>Description</th>
+<th>Default capabilities</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td>SOCKS 5</td>
+<td>Generic proxy for any kind of connection. Supports TCP, UDP,
+binding to a port (incoming connections) and authentication.</td>
+<td>
+<a href="qnetworkproxy.html#Capability-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#Capability-enum">TunnelingCapability</a>,
+<a href="qnetworkproxy.html#Capability-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#Capability-enum">ListeningCapability</a>,
+<a href="qnetworkproxy.html#Capability-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#Capability-enum">UdpTunnelingCapability</a>,
+<a href="qnetworkproxy.html#Capability-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#Capability-enum">HostNameLookupCapability</a>
+</td>
+</tr>
+<tr class="even" valign="top">
+<td>HTTP</td>
+<td>Implemented using the "CONNECT" command, supports only outgoing
+TCP connections; supports authentication.</td>
+<td>
+<a href="qnetworkproxy.html#Capability-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#Capability-enum">TunnelingCapability</a>,
+<a href="qnetworkproxy.html#Capability-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#Capability-enum">CachingCapability</a>,
+<a href="qnetworkproxy.html#Capability-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#Capability-enum">HostNameLookupCapability</a>
+</td>
+</tr>
+<tr class="odd" valign="top">
+<td>Caching-only HTTP</td>
+<td>Implemented using normal HTTP commands, it is useful only in
+the context of HTTP requests (see <a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>)</td>
+<td>
+<a href="qnetworkproxy.html#Capability-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#Capability-enum">CachingCapability</a>,
+<a href="qnetworkproxy.html#Capability-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#Capability-enum">HostNameLookupCapability</a>
+</td>
+</tr>
+<tr class="even" valign="top">
+<td>Caching FTP</td>
+<td>Implemented using an FTP proxy, it is useful only in the
+context of FTP requests (see <a href="qftp.html" tppabs="http://pyqt4doc.appspot.com/qftp.html">QFtp</a>, <a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>)</td>
+<td>
+<a href="qnetworkproxy.html#Capability-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#Capability-enum">CachingCapability</a>,
+<a href="qnetworkproxy.html#Capability-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#Capability-enum">HostNameLookupCapability</a>
+</td>
+</tr>
+</table>
+<p>另外请注意，你不应该设置应用程序默认的代理（<a href="qnetworkproxy.html#setApplicationProxy" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setApplicationProxy">setApplicationProxy</a>（ ））以不具有的代理<a href="qnetworkproxy.html#Capability-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#Capability-enum">TunnelingCapability</a>能力。如果你这样做，<a href="qtcpsocket.html" tppabs="http://pyqt4doc.appspot.com/qtcpsocket.html">QTcpSocket</a>将不知道如何打开连接。</p>
+<p><b>See also</b> <a href="qnetworkproxy.html#setType" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setType">setType</a>（ ）<a href="qnetworkproxy.html#type" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#type">type</a>（ ）<a href="qnetworkproxy.html#capabilities" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#capabilities">capabilities</a>（）和<a href="qnetworkproxy.html#setCapabilities" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setCapabilities">setCapabilities</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QNetworkProxy"></a>QNetworkProxy.__init__ (<i>self</i>)</h3>
+<p>构造一个<a href="qnetworkproxy.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html">QNetworkProxy</a>同<a href="qnetworkproxy.html#ProxyType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#ProxyType-enum">DefaultProxy</a>输入;代理类型是由确定<a href="qnetworkproxy.html#applicationProxy" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#applicationProxy">applicationProxy</a>（ ） ，默认为<a href="qnetworkproxy.html#ProxyType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#ProxyType-enum">NoProxy</a>。</p>
+<p><b>See also</b> <a href="qnetworkproxy.html#setType" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setType">setType</a>（）和<a href="qnetworkproxy.html#setApplicationProxy" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setApplicationProxy">setApplicationProxy</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QNetworkProxy-2"></a>QNetworkProxy.__init__ (<i>self</i>, <a href="qnetworkproxy.html#ProxyType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#ProxyType-enum">ProxyType</a> <i>type</i>, QString <i>hostName</i> = QString(), int <i>port</i> = 0, QString <i>user</i> = QString(), QString <i>password</i> = QString())</h3>
+<p>构造一个<a href="qnetworkproxy.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html">QNetworkProxy</a>同<i>type</i>，<i>hostName</i>，<i>port</i>，<i>user</i>和<i>password</i>。</p>
+<p>对代理类型的默认功能<i>type</i>会自动设定。</p>
+<p><b>See also</b> <a href="qnetworkproxy.html#capabilities" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#capabilities">capabilities</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QNetworkProxy-3"></a>QNetworkProxy.__init__ (<i>self</i>, <a href="qnetworkproxy.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html">QNetworkProxy</a> <i>other</i>)</h3>
+<p>构造的副本<i>other</i>。</p>
+
+
+<h3 class="fn">
+<a name="applicationProxy"></a><a href="qnetworkproxy.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html">QNetworkProxy</a> QNetworkProxy.applicationProxy ()</h3>
+<p>返回应用程序级的网络代理。</p>
+<p>如果<a href="qabstractsocket.html" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html">QAbstractSocket</a> or
+<a href="qtcpsocket.html" tppabs="http://pyqt4doc.appspot.com/qtcpsocket.html">QTcpSocket</a>有<a href="qnetworkproxy.html#ProxyType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#ProxyType-enum">QNetworkProxy.DefaultProxy</a>输入时，则<a href="qnetworkproxy.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html">QNetworkProxy</a>用于返回由该函数。</p>
+<p><b>See also</b> <a href="qnetworkproxyfactory.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyfactory.html">QNetworkProxyFactory</a>，<a href="qnetworkproxy.html#setApplicationProxy" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setApplicationProxy">setApplicationProxy</a>（ ）<a href="qabstractsocket.html#proxy" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#proxy">QAbstractSocket.proxy</a>（）和<a href="qtcpserver.html#proxy" tppabs="http://pyqt4doc.appspot.com/qtcpserver.html#proxy">QTcpServer.proxy</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="capabilities"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy-capabilities.html">Capabilities</a> QNetworkProxy.capabilities (<i>self</i>)</h3>
+<p>返回此代理服务器的功能。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qnetworkproxy.html#setCapabilities" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setCapabilities">setCapabilities</a>（）和<a href="qnetworkproxy.html#type" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#type">type</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hostName"></a>QString QNetworkProxy.hostName (<i>self</i>)</h3>
+<p>返回代理主机的主机名。</p>
+<p><b>See also</b> <a href="qnetworkproxy.html#setHostName" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setHostName">setHostName</a>（ ）<a href="qnetworkproxy.html#setPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setPort">setPort</a>（）和<a href="qnetworkproxy.html#port" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#port">port</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isCachingProxy"></a>bool QNetworkProxy.isCachingProxy (<i>self</i>)</h3>
+<p>如果该代理支持，则返回True的<a href="qnetworkproxy.html#Capability-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#Capability-enum">QNetworkProxy.CachingCapability</a>能力。</p>
+<p>在Qt 4.4的能力被捆绑到代理类型，但由于Qt的4.5就可以通过调用从代理中删除高速缓存的能力<a href="qnetworkproxy.html#setCapabilities" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setCapabilities">setCapabilities</a>（ ） 。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qnetworkproxy.html#capabilities" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#capabilities">capabilities</a>（ ）<a href="qnetworkproxy.html#type" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#type">type</a>（）和<a href="qnetworkproxy.html#isTransparentProxy" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#isTransparentProxy">isTransparentProxy</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isTransparentProxy"></a>bool QNetworkProxy.isTransparentProxy (<i>self</i>)</h3>
+<p>如果该代理支持TCP连接的透明隧道，则返回True 。这符合<a href="qnetworkproxy.html#Capability-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#Capability-enum">QNetworkProxy.TunnelingCapability</a>能力。</p>
+<p>在Qt 4.4的能力被捆绑到代理类型，但由于Qt的4.5就可以通过调用从代理中删除高速缓存的能力<a href="qnetworkproxy.html#setCapabilities" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setCapabilities">setCapabilities</a>（ ） 。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qnetworkproxy.html#capabilities" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#capabilities">capabilities</a>（ ）<a href="qnetworkproxy.html#type" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#type">type</a>（）和<a href="qnetworkproxy.html#isCachingProxy" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#isCachingProxy">isCachingProxy</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="password"></a>QString QNetworkProxy.password (<i>self</i>)</h3>
+<p>返回用于验证的密码。</p>
+<p><b>See also</b> <a href="qnetworkproxy.html#user" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#user">user</a>（ ）<a href="qnetworkproxy.html#setPassword" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setPassword">setPassword</a>（）和<a href="qnetworkproxy.html#setUser" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setUser">setUser</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="port"></a>int QNetworkProxy.port (<i>self</i>)</h3>
+<p>返回代理主机的端口。</p>
+<p><b>See also</b> <a href="qnetworkproxy.html#setHostName" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setHostName">setHostName</a>（ ）<a href="qnetworkproxy.html#setPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setPort">setPort</a>（）和<a href="qnetworkproxy.html#hostName" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#hostName">hostName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setApplicationProxy"></a>QNetworkProxy.setApplicationProxy (<a href="qnetworkproxy.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html">QNetworkProxy</a> <i>proxy</i>)</h3>
+<p>设置应用程序级的网络代理是<i>networkProxy</i>。</p>
+<p>如果<a href="qabstractsocket.html" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html">QAbstractSocket</a> or
+<a href="qtcpsocket.html" tppabs="http://pyqt4doc.appspot.com/qtcpsocket.html">QTcpSocket</a>有<a href="qnetworkproxy.html#ProxyType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#ProxyType-enum">QNetworkProxy.DefaultProxy</a>输入时，则<a href="qnetworkproxy.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html">QNetworkProxy</a>设置使用此功能。如果你想确定哪个代理更多的灵活性，可以使用<a href="qnetworkproxyfactory.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyfactory.html">QNetworkProxyFactory</a>类。</p>
+<p>设置默认值的代理使用此功能将复盖应用程序代理工厂集与QNetworkProxyFactory.setApplicationProxyFactory 。</p>
+<p><b>See also</b> <a href="qnetworkproxyfactory.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyfactory.html">QNetworkProxyFactory</a>，<a href="qnetworkproxy.html#applicationProxy" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#applicationProxy">applicationProxy</a>（ ）<a href="qabstractsocket.html#setProxy" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#setProxy">QAbstractSocket.setProxy</a>（）和<a href="qtcpserver.html#setProxy" tppabs="http://pyqt4doc.appspot.com/qtcpserver.html#setProxy">QTcpServer.setProxy</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCapabilities"></a>QNetworkProxy.setCapabilities (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy-capabilities.html">Capabilities</a> <i>capab</i>)</h3>
+<p>设置这个代理的功能，<i>capabilities</i>。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qnetworkproxy.html#setType" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setType">setType</a>（）和<a href="qnetworkproxy.html#capabilities" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#capabilities">capabilities</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setHostName"></a>QNetworkProxy.setHostName (<i>self</i>, QString <i>hostName</i>)</h3>
+<p>设置代理主机是主机名<i>hostName</i>。</p>
+<p><b>See also</b> <a href="qnetworkproxy.html#hostName" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#hostName">hostName</a>（ ）<a href="qnetworkproxy.html#setPort" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setPort">setPort</a>（）和<a href="qnetworkproxy.html#port" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#port">port</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPassword"></a>QNetworkProxy.setPassword (<i>self</i>, QString <i>password</i>)</h3>
+<p>设置密码代理身份验证是<i>password</i>。</p>
+<p><b>See also</b> <a href="qnetworkproxy.html#user" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#user">user</a>（ ）<a href="qnetworkproxy.html#setUser" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setUser">setUser</a>（）和<a href="qnetworkproxy.html#password" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#password">password</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPort"></a>QNetworkProxy.setPort (<i>self</i>, int <i>port</i>)</h3>
+<p>设置代理主机的端口为<i>port</i>。</p>
+<p><b>See also</b> <a href="qnetworkproxy.html#hostName" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#hostName">hostName</a>（ ）<a href="qnetworkproxy.html#setHostName" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setHostName">setHostName</a>（）和<a href="qnetworkproxy.html#port" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#port">port</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setType"></a>QNetworkProxy.setType (<i>self</i>, <a href="qnetworkproxy.html#ProxyType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#ProxyType-enum">ProxyType</a> <i>type</i>)</h3>
+<p>设置为代理类型此实例<i>type</i>。</p>
+<p>请注意，更改代理服务器的类型不改变设置的这个功能<a href="qnetworkproxy.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html">QNetworkProxy</a>如有能力已经设置对象持有<a href="qnetworkproxy.html#setCapabilities" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setCapabilities">setCapabilities</a>（ ） 。</p>
+<p><b>See also</b> <a href="qnetworkproxy.html#type" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#type">type</a>（）和<a href="qnetworkproxy.html#setCapabilities" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setCapabilities">setCapabilities</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setUser"></a>QNetworkProxy.setUser (<i>self</i>, QString <i>userName</i>)</h3>
+<p>设置代理身份验证是用户名<i>user</i>。</p>
+<p><b>See also</b> <a href="qnetworkproxy.html#user" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#user">user</a>（ ）<a href="qnetworkproxy.html#setPassword" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setPassword">setPassword</a>（）和<a href="qnetworkproxy.html#password" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#password">password</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="type"></a><a href="qnetworkproxy.html#ProxyType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#ProxyType-enum">ProxyType</a> QNetworkProxy.type (<i>self</i>)</h3>
+<p>返回代理类此实例。</p>
+<p><b>See also</b> <a href="qnetworkproxy.html#setType" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setType">setType</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="user"></a>QString QNetworkProxy.user (<i>self</i>)</h3>
+<p>返回用于认证的用户名。</p>
+<p><b>See also</b> <a href="qnetworkproxy.html#setUser" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setUser">setUser</a>（ ）<a href="qnetworkproxy.html#setPassword" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setPassword">setPassword</a>（）和<a href="qnetworkproxy.html#password" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#password">password</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="__eq__"></a>bool QNetworkProxy.__eq__ (<i>self</i>, <a href="qnetworkproxy.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html">QNetworkProxy</a> <i>other</i>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QNetworkProxy.__ne__ (<i>self</i>, <a href="qnetworkproxy.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html">QNetworkProxy</a> <i>other</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

@@ -1,0 +1,316 @@
+﻿<html>
+<head>
+<title>QDBusMessage Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDBusMessage Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdbus.html">QtDBus</a> module]</sup></sup>
+</h1>
+<p>该QDBusMessage类表示发送或接收通过D - Bus总线一个消息。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qdbusmessage.html#MessageType-enum" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#MessageType-enum">MessageType</a></b> { InvalidMessage, MethodCallMessage, ReplyMessage, ErrorMessage, SignalMessage }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusmessage.html#QDBusMessage" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#QDBusMessage">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusmessage.html#QDBusMessage-2" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#QDBusMessage-2">__init__</a></b> (<i>self</i>, QDBusMessage <i>other</i>)</li>
+<li>
+<div class="fn"></div>list-of-QVariant <b><a href="qdbusmessage.html#arguments" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#arguments">arguments</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdbusmessage.html#autoStartService" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#autoStartService">autoStartService</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDBusMessage <b><a href="qdbusmessage.html#createErrorReply" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#createErrorReply">createErrorReply</a></b> (<i>self</i>, QString <i>name</i>, QString <i>msg</i>)</li>
+<li>
+<div class="fn"></div>QDBusMessage <b><a href="qdbusmessage.html#createErrorReply-2" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#createErrorReply-2">createErrorReply</a></b> (<i>self</i>, QDBusError <i>error</i>)</li>
+<li>
+<div class="fn"></div>QDBusMessage <b><a href="qdbusmessage.html#createErrorReply-3" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#createErrorReply-3">createErrorReply</a></b> (<i>self</i>, QDBusError.ErrorType <i>type</i>, QString <i>msg</i>)</li>
+<li>
+<div class="fn"></div>QDBusMessage <b><a href="qdbusmessage.html#createReply" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#createReply">createReply</a></b> (<i>self</i>, list-of-QVariant <i>arguments</i> = QList&lt;QVariant&gt;())</li>
+<li>
+<div class="fn"></div>QDBusMessage <b><a href="qdbusmessage.html#createReply-2" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#createReply-2">createReply</a></b> (<i>self</i>, QVariant <i>argument</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdbusmessage.html#errorMessage" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#errorMessage">errorMessage</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdbusmessage.html#errorName" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#errorName">errorName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdbusmessage.html#interface" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#interface">interface</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdbusmessage.html#isDelayedReply" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#isDelayedReply">isDelayedReply</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdbusmessage.html#isReplyRequired" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#isReplyRequired">isReplyRequired</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdbusmessage.html#member" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#member">member</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdbusmessage.html#path" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#path">path</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdbusmessage.html#service" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#service">service</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusmessage.html#setArguments" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#setArguments">setArguments</a></b> (<i>self</i>, list-of-QVariant <i>arguments</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusmessage.html#setAutoStartService" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#setAutoStartService">setAutoStartService</a></b> (<i>self</i>, bool <i>enable</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusmessage.html#setDelayedReply" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#setDelayedReply">setDelayedReply</a></b> (<i>self</i>, bool <i>enable</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdbusmessage.html#signature" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#signature">signature</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>MessageType <b><a href="qdbusmessage.html#type" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#type">type</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QDBusMessage <b><a href="qdbusmessage.html#createError" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#createError">createError</a></b> (QString <i>name</i>, QString <i>msg</i>)</li>
+<li>
+<div class="fn"></div>QDBusMessage <b><a href="qdbusmessage.html#createError-2" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#createError-2">createError</a></b> (QDBusError <i>error</i>)</li>
+<li>
+<div class="fn"></div>QDBusMessage <b><a href="qdbusmessage.html#createError-3" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#createError-3">createError</a></b> (QDBusError.ErrorType <i>type</i>, QString <i>msg</i>)</li>
+<li>
+<div class="fn"></div>QDBusMessage <b><a href="qdbusmessage.html#createMethodCall" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#createMethodCall">createMethodCall</a></b> (QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>method</i>)</li>
+<li>
+<div class="fn"></div>QDBusMessage <b><a href="qdbusmessage.html#createSignal" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#createSignal">createSignal</a></b> (QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul><li>
+<div class="fn"></div>QDBusMessage <b><a href="qdbusmessage.html#__lshift__" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#__lshift__">__lshift__</a></b> (<i>self</i>, QVariant <i>arg</i>)</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDBusMessage类表示发送或接收通过D - Bus总线一个消息。</p>
+<p>这个对象可以表示任何四个不同类型的消息的（<a href="qdbusmessage.html#MessageType-enum" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#MessageType-enum">MessageType</a>） ，可以发生在总线上：</p>
+<ul>
+<li>Method calls</li>
+<li>Method return values</li>
+<li>Signal emissions</li>
+<li>Error codes</li>
+</ul>
+<p>这种类型的对象与静态创建<a href="qdbusmessage.html#createError" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#createError">createError</a>（ ）<a href="qdbusmessage.html#createMethodCall" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#createMethodCall">createMethodCall</a>（）和<a href="qdbusmessage.html#createSignal" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#createSignal">createSignal</a>（）函数。使用<a href="qdbusconnection.html#send" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#send">QDBusConnection.send</a>（ ）函数来发送消息。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="MessageType-enum"></a>QDBusMessage.MessageType</h3>
+<p>可能的消息类型：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusMessage.MethodCallMessage</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">较传出或传入方法调用的消息</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusMessage.SignalMessage</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">较传出或传入信号发射的消息</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusMessage.ReplyMessage</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">表示方法调用的返回值的消息</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusMessage.ErrorMessage</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">表示响应于一个方法调用的错误状态的信息</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusMessage.InvalidMessage</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">无效的消息：这是从来没有从D-Bus的收到的邮件设置</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDBusMessage"></a>QDBusMessage.__init__ (<i>self</i>)</h3>
+<p>构造一个空的，无效的<a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a>对象。</p>
+<p><b>See also</b> <a href="qdbusmessage.html#createError" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#createError">createError</a>（ ）<a href="qdbusmessage.html#createMethodCall" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#createMethodCall">createMethodCall</a>（）和<a href="qdbusmessage.html#createSignal" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#createSignal">createSignal</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QDBusMessage-2"></a>QDBusMessage.__init__ (<i>self</i>, <a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a> <i>other</i>)</h3>
+<p>通过构造特定对象的一个副本<i>other</i>。</p>
+<p>注意：<a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a>对象是共享的。对副本所做的修改会影响到原来的为好。看<a href="qdbusmessage.html#setDelayedReply" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#setDelayedReply">setDelayedReply</a>（ ）获取更多信息。</p>
+
+
+<h3 class="fn">
+<a name="arguments"></a>list-of-QVariant QDBusMessage.arguments (<i>self</i>)</h3>
+<p>返回与将要发送或从D-总线收到的参数列表。</p>
+<p><b>See also</b> <a href="qdbusmessage.html#setArguments" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#setArguments">setArguments</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="autoStartService"></a>bool QDBusMessage.autoStartService (<i>self</i>)</h3>
+<p>返回自动开始标志，以载<a href="qdbusmessage.html#setAutoStartService" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#setAutoStartService">setAutoStartService</a>（ ） 。默认情况下，此标志为True ，这意味着<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdbus.html">QtDBus</a>会自动启动服务，如果它尚未运行。</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qdbusmessage.html#setAutoStartService" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#setAutoStartService">setAutoStartService</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="createError"></a><a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a> QDBusMessage.createError (QString <i>name</i>, QString <i>msg</i>)</h3>
+<p>构造一个新的乌思消息表示错误，用给定的<i>name</i>和<i>msg</i>。</p>
+
+
+<h3 class="fn">
+<a name="createError-2"></a><a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a> QDBusMessage.createError (<a href="qdbuserror.html" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html">QDBusError</a> <i>error</i>)</h3>
+<p>构造一个新的乌思消息表示给定<i>error</i>。</p>
+
+
+<h3 class="fn">
+<a name="createError-3"></a><a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a> QDBusMessage.createError (<a href="qdbuserror.html#ErrorType-enum" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html#ErrorType-enum">QDBusError.ErrorType</a> <i>type</i>, QString <i>msg</i>)</h3>
+<p>构造一个新的乌思消息错误类型<i>type</i>使用消息<i>msg</i>。返回乌思消息。</p>
+
+
+<h3 class="fn">
+<a name="createErrorReply"></a><a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a> QDBusMessage.createErrorReply (<i>self</i>, QString <i>name</i>, QString <i>msg</i>)</h3>
+<p>构造一个新的乌思消息表示错误应答消息，与给定<i>name</i>和<i>msg</i>。</p>
+
+
+<h3 class="fn">
+<a name="createErrorReply-2"></a><a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a> QDBusMessage.createErrorReply (<i>self</i>, <a href="qdbuserror.html" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html">QDBusError</a> <i>error</i>)</h3>
+<p>构造一个新的乌思消息表示错误应答消息，从给定的<i>error</i>对象。</p>
+
+
+<h3 class="fn">
+<a name="createErrorReply-3"></a><a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a> QDBusMessage.createErrorReply (<i>self</i>, <a href="qdbuserror.html#ErrorType-enum" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html#ErrorType-enum">QDBusError.ErrorType</a> <i>type</i>, QString <i>msg</i>)</h3>
+<p>构建了错误类型的新乌思回复消息<i>type</i>使用消息<i>msg</i>。返回乌思消息。</p>
+
+
+<h3 class="fn">
+<a name="createMethodCall"></a><a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a> QDBusMessage.createMethodCall (QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>method</i>)</h3>
+<p>构造一个新的乌思消息表示一个方法调用。一个方法调用总是会通知其目的地地址（<i>service</i>，<i>path</i>，<i>interface</i>和<i>method</i>） 。</p>
+<p>该乌思总线允许调用一个给定的远程对象上的方法，而无需指定目的接口，如果方法名是唯一的。然而，如果对远程对象的两个接口导出相同的方法名称，则结果是不确定的（两个中的一个可被称为或错误可以被返回）。</p>
+<p>当一个对等情况下（即未在公共汽车上）使用乌思时，<i>service</i>参数是可选的。</p>
+<p>该QDBusObject和<a href="qdbusinterface.html" tppabs="http://pyqt4doc.appspot.com/qdbusinterface.html">QDBusInterface</a>类提供了一个更简单的抽象同步方法调用。</p>
+<p>这个函数返回一个<a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a>可以与发送对象<a href="qdbusconnection.html#call" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#call">QDBusConnection.call</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="createReply"></a><a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a> QDBusMessage.createReply (<i>self</i>, list-of-QVariant <i>arguments</i> = QList&lt;QVariant&gt;())</h3>
+<p>构造一个新的消息乌思代表的答复，与给定<i>arguments</i>。</p>
+
+
+<h3 class="fn">
+<a name="createReply-2"></a><a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a> QDBusMessage.createReply (<i>self</i>, QVariant <i>argument</i>)</h3>
+<p>构造一个新的消息乌思代表的答复，与给定<i>argument</i>。</p>
+
+
+<h3 class="fn">
+<a name="createSignal"></a><a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a> QDBusMessage.createSignal (QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>)</h3>
+<p>构造一个新的消息乌思用给定的<i>path</i>，<i>interface</i>和<i>name</i>，表示信号发射。</p>
+<p>一个乌思信号从一个应用程序发出和接收到正在侦听从该接口信号的所有应用程序。</p>
+<p>该<a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a>返回的对象可以使用被发送的<a href="qdbusconnection.html#send" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#send">QDBusConnection.send</a>（）函数。</p>
+
+
+<h3 class="fn">
+<a name="errorMessage"></a>QString QDBusMessage.errorMessage (<i>self</i>)</h3>
+<p>返回与接收到的错误相关联的人类可读的消息。</p>
+<p>此功能被引入Qt的4.3 。</p>
+
+
+<h3 class="fn">
+<a name="errorName"></a>QString QDBusMessage.errorName (<i>self</i>)</h3>
+<p>返回接收到的错误的名称。</p>
+
+
+<h3 class="fn">
+<a name="interface"></a>QString QDBusMessage.interface (<i>self</i>)</h3>
+<p>返回被调用（在一个方法调用的情况下）的方法，或从接收到的信号的接口。</p>
+
+
+<h3 class="fn">
+<a name="isDelayedReply"></a>bool QDBusMessage.isDelayedReply (<i>self</i>)</h3>
+<p>返回延迟应答标志位，如设置<a href="qdbusmessage.html#setDelayedReply" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#setDelayedReply">setDelayedReply</a>（ ） 。默认情况下，此标志为False ，这意味着<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdbus.html">QtDBus</a>有需要时会产生自动回复。</p>
+
+
+<h3 class="fn">
+<a name="isReplyRequired"></a>bool QDBusMessage.isReplyRequired (<i>self</i>)</h3>
+<p>返回标志，指示该消息应该会看到一个回复或没有。这是唯一有意义的<a href="qdbusmessage.html#MessageType-enum" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#MessageType-enum">method call messages</a>：其他任何类型的消息不能有答复，该函数将始终返回False他们。</p>
+
+
+<h3 class="fn">
+<a name="member"></a>QString QDBusMessage.member (<i>self</i>)</h3>
+<p>返回所发射的信号的名称，或者被调用的方法的名称。</p>
+
+
+<h3 class="fn">
+<a name="path"></a>QString QDBusMessage.path (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="service"></a>QString QDBusMessage.service (<i>self</i>)</h3>
+<p>返回该服务的名称或远程方法调用的总线地址。</p>
+
+
+<h3 class="fn">
+<a name="setArguments"></a>QDBusMessage.setArguments (<i>self</i>, list-of-QVariant <i>arguments</i>)</h3>
+<p>设置将要发送的D-Bus的参数<i>arguments</i>。这些将是参数的方法调用或信号中的参数。</p>
+<p><b>See also</b> <a href="qdbusmessage.html#arguments" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#arguments">arguments</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setAutoStartService"></a>QDBusMessage.setAutoStartService (<i>self</i>, bool <i>enable</i>)</h3>
+<p>设定自动开始标志，以<i>enable</i>。此标志仅是有道理的，方法调用的消息，它讲述了D-Bus的服务器要么自动开始负责服务名称，或不自动启动该服务。</p>
+<p>默认情况下，此标志为True ，即服务是自动启动。这意味着：</p>
+<p>当这个方法调用被发送到服务已在运行，方法调用被发送给它。如果服务没有运行的是，在D-Bus的守护程序要求自动启动分配给该服务名称服务。这是通过被放置在已知为D- Bus服务器的目录中。服务文件处理。这些文件然后每个都包含一个服务名称和路径时，该服务名称要求应执行的程序。</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qdbusmessage.html#autoStartService" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#autoStartService">autoStartService</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setDelayedReply"></a>QDBusMessage.setDelayedReply (<i>self</i>, bool <i>enable</i>)</h3>
+<p>设置消息是否会被回答后（如果<i>enable</i>是真实的），或者是否应该通过产生一个自动回复<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdbus.html">QtDBus</a>（如果<i>enable</i>是假的） 。</p>
+<p>在D-Bus的，所有方法调用必须产生给调用者的答复，除非调用者明确表示，否则（见<a href="qdbusmessage.html#isReplyRequired" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#isReplyRequired">isReplyRequired</a>（））。<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdbus.html">QtDBus</a>自动生成这样的答复为被调用的任何插槽，但它也允许插槽，以表明他们是否会采取发送应答在以后的责任，之后该功能已完成处理。</p>
+<p><b>See also</b> <a href="qdbusmessage.html#isDelayedReply" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#isDelayedReply">isDelayedReply</a>（）和<a href="index.htm#delayed-replies" tppabs="http://pyqt4doc.appspot.com/qdbusdeclaringslots.html#delayed-replies">Delayed
+Replies</a>。</p>
+
+
+<h3 class="fn">
+<a name="signature"></a>QString QDBusMessage.signature (<i>self</i>)</h3>
+<p>返回收到或方法调用的输出参数的信号的签名。</p>
+
+
+<h3 class="fn">
+<a name="type"></a><a href="qdbusmessage.html#MessageType-enum" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#MessageType-enum">MessageType</a> QDBusMessage.type (<i>self</i>)</h3>
+<p>返回的消息类型。</p>
+
+
+<h3 class="fn">
+<a name="__lshift__"></a><a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a> QDBusMessage.__lshift__ (<i>self</i>, QVariant <i>arg</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

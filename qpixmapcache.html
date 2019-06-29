@@ -1,0 +1,176 @@
+﻿<html>
+<head>
+<title>QPixmapCache Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QPixmapCache Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QPixmapCache类为像素图的应用范围的缓存。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qpixmapcache-key.html">Key</a></b>
+</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qpixmapcache.html#QPixmapCache" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#QPixmapCache">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpixmapcache.html#QPixmapCache-2" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#QPixmapCache-2">__init__</a></b> (<i>self</i>, QPixmapCache)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>int <b><a href="qpixmapcache.html#cacheLimit" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#cacheLimit">cacheLimit</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpixmapcache.html#clear" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#clear">clear</a></b> ()</li>
+<li>
+<div class="fn"></div>QPixmap <b><a href="qpixmapcache.html#find" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#find">find</a></b> (QString <i>key</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qpixmapcache.html#find-2" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#find-2">find</a></b> (QString <i>key</i>, QPixmap <i>pixmap</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qpixmapcache.html#find-3" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#find-3">find</a></b> (Key <i>key</i>, QPixmap <i>pixmap</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qpixmapcache.html#insert" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#insert">insert</a></b> (QString <i>key</i>, QPixmap)</li>
+<li>
+<div class="fn"></div>Key <b><a href="qpixmapcache.html#insert-2" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#insert-2">insert</a></b> (QPixmap <i>pixmap</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpixmapcache.html#remove" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#remove">remove</a></b> (QString <i>key</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpixmapcache.html#remove-2" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#remove-2">remove</a></b> (Key <i>key</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qpixmapcache.html#replace" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#replace">replace</a></b> (Key <i>key</i>, QPixmap <i>pixmap</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpixmapcache.html#setCacheLimit" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#setCacheLimit">setCacheLimit</a></b> (int)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QPixmapCache类为像素图的应用范围的缓存。</p>
+<p>这个类是最优化的绘图工具<a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a>。你可以用它来存储临时像素图是昂贵的生成，而无需使用比更多的存储空间<a href="qpixmapcache.html#cacheLimit" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#cacheLimit">cacheLimit</a>（ ） 。使用<a href="qpixmapcache.html#insert" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#insert">insert</a>（ ）来插入像素图，<a href="qpixmapcache.html#find" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#find">find</a>（）找到他们，<a href="qpixmapcache.html#clear" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#clear">clear</a>（）来清空缓存。</p>
+<p>QPixmapCache不包含成员数据，只有静态函数来访问全局像素图缓存。它创建了一个内部<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qcache.html">QCache</a>对象用于缓存的像素图。</p>
+<p>高速缓存关联一个像素映像与用户提供的字符串作为密钥，或与<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qpixmapcache-key.html">QPixmapCache.Key</a>高速缓存生成。运用<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qpixmapcache-key.html">QPixmapCache.Key</a>钥匙比使用字符串快。该字符串的API是复杂的键很方便，但<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qpixmapcache-key.html">QPixmapCache.Key</a>API将是非常有效和方便的一到一个对象到像素图绘制 - 在这种情况下，你可以存储密钥作为一个对象的成员。</p>
+<p>如果两个像素图被插入到使用相等的键缓存，那么最后的pixmap将替代缓存中的第一个像素图。在此之前的行为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qhash.html">QHash</a>和<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qcache.html">QCache</a>类。</p>
+<p>当所有的像素图中的高速缓存的总大小超过缓存已满<a href="qpixmapcache.html#cacheLimit" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#cacheLimit">cacheLimit</a>（ ） 。初始高速缓存限制为2048 KB桌面平台（ 2 MB ）的嵌入式平台， 10240 KB （ 10 MB） ，你可以通过调用改变这个<a href="qpixmapcache.html#setCacheLimit" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#setCacheLimit">setCacheLimit</a>（ ）与所需的值。一个像素图大致需要（<i>width</i>*<i>height</i>*<i>depth</i>） / 8字节的内存。</p>
+<p>该<i>Qt Quarterly</i>文章<a href="http://qt.nokia.com/doc/qq/qq12-qpixmapcache.html">Optimizing with
+QPixmapCache</a>解释如何使用QPixmapCache通过缓存绘画的结果，以加快应用程序。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QPixmapCache"></a>QPixmapCache.__init__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="QPixmapCache-2"></a>QPixmapCache.__init__ (<i>self</i>, <a href="qpixmapcache.html" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html">QPixmapCache</a>)</h3>
+<h3 class="fn">
+<a name="cacheLimit"></a>int QPixmapCache.cacheLimit ()</h3>
+<p>返回高速缓存的限制（以KB为单位） 。</p>
+<p>默认的缓存限制为2048 KB的嵌入式平台， 10240 KB桌面平台。</p>
+<p><b>See also</b> <a href="qpixmapcache.html#setCacheLimit" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#setCacheLimit">setCacheLimit</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clear"></a>QPixmapCache.clear ()</h3>
+<p>删除所有像素图从缓存。</p>
+
+
+<h3 class="fn">
+<a name="find"></a><a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a> QPixmapCache.find (QString <i>key</i>)</h3>
+<p>查找与给定关联的缓存像素图<i>key</i>在缓存中。如果找到了像素图，函数集<i>pixmap</i>到像素图，并返回True，否则它的叶子<i>pixmap</i>独自返回False 。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a></span> pm;
+ <span class="keyword">if</span> (<span class="operator">!</span><span class="type"><a href="qpixmapcache.html" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html">QPixmapCache</a></span><span class="operator">.</span>find(<span class="string">"my_big_image"</span><span class="operator">,</span> <span class="operator">&amp;</span>pm)) {
+     pm<span class="operator">.</span>load(<span class="string">"bigimage.png"</span>);
+     <span class="type"><a href="qpixmapcache.html" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html">QPixmapCache</a></span><span class="operator">.</span>insert(<span class="string">"my_big_image"</span><span class="operator">,</span> pm);
+ }
+ painter<span class="operator">-</span><span class="operator">&gt;</span>drawPixmap(<span class="number">0</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> pm);
+</pre>
+<p>此功能被引入Qt的4.6 。</p>
+
+
+<h3 class="fn">
+<a name="find-2"></a>bool QPixmapCache.find (QString <i>key</i>, <a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a> <i>pixmap</i>)</h3>
+<h3 class="fn">
+<a name="find-3"></a>bool QPixmapCache.find (<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qpixmapcache-key.html">Key</a> <i>key</i>, <a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a> <i>pixmap</i>)</h3>
+<p>查找与给定关联的缓存像素图<i>key</i>在缓存中。如果找到了像素图，函数集<i>pixmap</i>到像素图，并返回True，否则它的叶子<i>pixmap</i>独自返回False 。如果未找到该像素图，它表示该<i>key</i>不再有效，因此它会被释放下一个插入。</p>
+<p>此功能被引入Qt的4.6 。</p>
+
+
+<h3 class="fn">
+<a name="insert"></a>bool QPixmapCache.insert (QString <i>key</i>, <a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a>)</h3>
+<p>插入的像素图的副本<i>pixmap</i>与相关联的<i>key</i>到缓存中。</p>
+<p>通过Qt库中插入的所有像素映射有一个主要的出发用“ $ QT” ，所以你自己的像素映射的键应该永远不会开始“$ QT” 。</p>
+<p>当一个像素映射插入和缓存将要超过它的极限，它消除了像素图，直到有足够的空间将被插入的像素图。</p>
+<p>当需要更多空间的最古老的像素图（最近最少在缓存中访问）都将被删除。</p>
+<p>如果该对象被插入到缓存中的函数返回True，否则返回False 。</p>
+<p><b>See also</b> <a href="qpixmapcache.html#setCacheLimit" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#setCacheLimit">setCacheLimit</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insert-2"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qpixmapcache-key.html">Key</a> QPixmapCache.insert (<a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a> <i>pixmap</i>)</h3>
+<p>插入给定的一个副本<i>pixmap</i>到缓存中，并返回可用于对其进行检索的密钥。</p>
+<p>当一个像素映射插入和缓存将要超过它的极限，它消除了像素图，直到有足够的空间将被插入的像素图。</p>
+<p>当需要更多空间的最古老的像素图（最近最少在缓存中访问）都将被删除。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qpixmapcache.html#setCacheLimit" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#setCacheLimit">setCacheLimit</a>（）和<a href="qpixmapcache.html#replace" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#replace">replace</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="remove"></a>QPixmapCache.remove (QString <i>key</i>)</h3>
+<p>删除关联的像素图<i>key</i>从高速缓存中。</p>
+
+
+<h3 class="fn">
+<a name="remove-2"></a>QPixmapCache.remove (<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qpixmapcache-key.html">Key</a> <i>key</i>)</h3>
+<p>删除关联的像素图<i>key</i>从高速缓存中，并释放键为未来的插入。</p>
+<p>此功能被引入Qt的4.6 。</p>
+
+
+<h3 class="fn">
+<a name="replace"></a>bool QPixmapCache.replace (<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qpixmapcache-key.html">Key</a> <i>key</i>, <a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a> <i>pixmap</i>)</h3>
+<p>替换与给定关联的像素图<i>key</i>与<i>pixmap</i>规定。返回True如果<i>pixmap</i>已正确插入到缓存中，否则返回False 。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qpixmapcache.html#setCacheLimit" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#setCacheLimit">setCacheLimit</a>（）和<a href="qpixmapcache.html#insert" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#insert">insert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCacheLimit"></a>QPixmapCache.setCacheLimit (int)</h3>
+<p>设置缓存的限制<i>n</i>千字节。</p>
+<p>默认设置为2048 KB的嵌入式平台， 10240 KB桌面平台。</p>
+<p><b>See also</b> <a href="qpixmapcache.html#cacheLimit" tppabs="http://pyqt4doc.appspot.com/qpixmapcache.html#cacheLimit">cacheLimit</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

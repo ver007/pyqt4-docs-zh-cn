@@ -1,0 +1,448 @@
+﻿<html>
+<head>
+<title>QCompleter Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QCompleter Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QCompleter类提供了基于项目模型落成。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qcompleter.html#CompletionMode-enum" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#CompletionMode-enum">CompletionMode</a></b> { PopupCompletion, UnfilteredPopupCompletion, InlineCompletion }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qcompleter.html#ModelSorting-enum" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#ModelSorting-enum">ModelSorting</a></b> { UnsortedModel, CaseSensitivelySortedModel, CaseInsensitivelySortedModel }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qcompleter.html#QCompleter" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#QCompleter">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qcompleter.html#QCompleter-2" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#QCompleter-2">__init__</a></b> (<i>self</i>, QAbstractItemModel <i>model</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qcompleter.html#QCompleter-3" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#QCompleter-3">__init__</a></b> (<i>self</i>, QStringList <i>list</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>Qt.CaseSensitivity <b><a href="qcompleter.html#caseSensitivity" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#caseSensitivity">caseSensitivity</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qcompleter.html#complete" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#complete">complete</a></b> (<i>self</i>, QRect <i>rect</i> = QRect())</li>
+<li>
+<div class="fn"></div>int <b><a href="qcompleter.html#completionColumn" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionColumn">completionColumn</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qcompleter.html#completionCount" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionCount">completionCount</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>CompletionMode <b><a href="qcompleter.html#completionMode" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionMode">completionMode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QAbstractItemModel <b><a href="qcompleter.html#completionModel" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionModel">completionModel</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qcompleter.html#completionPrefix" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionPrefix">completionPrefix</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qcompleter.html#completionRole" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionRole">completionRole</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qcompleter.html#currentCompletion" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#currentCompletion">currentCompletion</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QModelIndex <b><a href="qcompleter.html#currentIndex" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#currentIndex">currentIndex</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qcompleter.html#currentRow" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#currentRow">currentRow</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qcompleter.html#event" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#event">event</a></b> (<i>self</i>, QEvent)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qcompleter.html#eventFilter" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#eventFilter">eventFilter</a></b> (<i>self</i>, QObject <i>o</i>, QEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qcompleter.html#maxVisibleItems" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#maxVisibleItems">maxVisibleItems</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QAbstractItemModel <b><a href="qcompleter.html#model" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#model">model</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>ModelSorting <b><a href="qcompleter.html#modelSorting" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#modelSorting">modelSorting</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qcompleter.html#pathFromIndex" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#pathFromIndex">pathFromIndex</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>QAbstractItemView <b><a href="qcompleter.html#popup" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#popup">popup</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qcompleter.html#setCaseSensitivity" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#setCaseSensitivity">setCaseSensitivity</a></b> (<i>self</i>, Qt.CaseSensitivity <i>caseSensitivity</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qcompleter.html#setCompletionColumn" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#setCompletionColumn">setCompletionColumn</a></b> (<i>self</i>, int <i>column</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qcompleter.html#setCompletionMode" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#setCompletionMode">setCompletionMode</a></b> (<i>self</i>, CompletionMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qcompleter.html#setCompletionPrefix" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#setCompletionPrefix">setCompletionPrefix</a></b> (<i>self</i>, QString <i>prefix</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qcompleter.html#setCompletionRole" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#setCompletionRole">setCompletionRole</a></b> (<i>self</i>, int <i>role</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qcompleter.html#setCurrentRow" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#setCurrentRow">setCurrentRow</a></b> (<i>self</i>, int <i>row</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qcompleter.html#setMaxVisibleItems" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#setMaxVisibleItems">setMaxVisibleItems</a></b> (<i>self</i>, int <i>maxItems</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qcompleter.html#setModel" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#setModel">setModel</a></b> (<i>self</i>, QAbstractItemModel <i>c</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qcompleter.html#setModelSorting" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#setModelSorting">setModelSorting</a></b> (<i>self</i>, ModelSorting <i>sorting</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qcompleter.html#setPopup" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#setPopup">setPopup</a></b> (<i>self</i>, QAbstractItemView <i>popup</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qcompleter.html#setWidget" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#setWidget">setWidget</a></b> (<i>self</i>, QWidget <i>widget</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qcompleter.html#setWrapAround" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#setWrapAround">setWrapAround</a></b> (<i>self</i>, bool <i>wrap</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qcompleter.html#splitPath" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#splitPath">splitPath</a></b> (<i>self</i>, QString <i>path</i>)</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qcompleter.html#widget" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#widget">widget</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qcompleter.html#wrapAround" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#wrapAround">wrapAround</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qcompleter.html#activated" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#activated">activated</a></b> (const QString&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qcompleter.html#activated-2" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#activated-2">activated</a></b> (const QModelIndex&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qcompleter.html#highlighted" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#highlighted">highlighted</a></b> (const QString&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qcompleter.html#highlighted-2" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#highlighted-2">highlighted</a></b> (const QModelIndex&amp;)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QCompleter类提供了基于项目模型落成。</p>
+<p>您可以使用QCompleter提供自动完成功能在任何Qt的窗口小部件，如<a href="qlineedit.html" tppabs="http://pyqt4doc.appspot.com/qlineedit.html">QLineEdit</a>和<a href="qcombobox.html" tppabs="http://pyqt4doc.appspot.com/qcombobox.html">QComboBox</a>。当用户开始输入一个字， QCompleter提示完成单词根据单词列表的可能途径。单词列表是作为一个<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a>。 （对于简单的应用，这里所说的列表是静态的，你可以通过一个<a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a>到QCompleter的构造函数。 ）</p>
+<a id="basic-usage" name="basic-usage"></a>
+<h3>Basic Usage</h3>
+<p>一个QCompleter通常用于与<a href="qlineedit.html" tppabs="http://pyqt4doc.appspot.com/qlineedit.html">QLineEdit</a> or <a href="qcombobox.html" tppabs="http://pyqt4doc.appspot.com/qcombobox.html">QComboBox</a>。例如，这里是如何从一个简单的单词列表提供自动补全<a href="qlineedit.html" tppabs="http://pyqt4doc.appspot.com/qlineedit.html">QLineEdit</a>：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a></span> wordList;
+ wordList <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"alpha"</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"omega"</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"omicron"</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"zeta"</span>;
+
+ <span class="type"><a href="qlineedit.html" tppabs="http://pyqt4doc.appspot.com/qlineedit.html">QLineEdit</a></span> <span class="operator">*</span>lineEdit <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qlineedit.html" tppabs="http://pyqt4doc.appspot.com/qlineedit.html">QLineEdit</a></span>(<span class="keyword">this</span>);
+
+ <span class="type">QCompleter</span> <span class="operator">*</span>completer <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QCompleter</span>(wordList<span class="operator">,</span> <span class="keyword">this</span>);
+ completer<span class="operator">-</span><span class="operator">&gt;</span><a href="qcompleter.html#caseSensitivity-prop" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#caseSensitivity-prop">setCaseSensitivity</a>(<span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>CaseInsensitive);
+ lineEdit<span class="operator">-</span><span class="operator">&gt;</span>setCompleter(completer);
+</pre>
+<p>A <a href="qfilesystemmodel.html" tppabs="http://pyqt4doc.appspot.com/qfilesystemmodel.html">QFileSystemModel</a>可用于提供文件名的自动完成。例如：</p>
+<pre class="cpp">
+ <span class="type">QCompleter</span> <span class="operator">*</span>completer <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QCompleter</span>(<span class="keyword">this</span>);
+ completer<span class="operator">-</span><span class="operator">&gt;</span><a href="qcompleter.html#setModel" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#setModel">setModel</a>(<span class="keyword">new</span> <span class="type"><a href="qdirmodel.html" tppabs="http://pyqt4doc.appspot.com/qdirmodel.html">QDirModel</a></span>(completer));
+ lineEdit<span class="operator">-</span><span class="operator">&gt;</span>setCompleter(completer);
+</pre>
+<p>要设置哪些QCompleter应操作模式，通话时间<a href="qcompleter.html#setModel" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#setModel">setModel</a>（ ） 。默认情况下， QCompleter将尝试匹配<a href="qcompleter.html#completionPrefix-prop" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionPrefix-prop">completion prefix</a>（也就是说，用户已经开始键入单词）对<a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">Qt.EditRole</a>存储在模型的情况下0列数据敏感。这可以使用被改变<a href="qcompleter.html#completionRole-prop" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionRole-prop">setCompletionRole</a>（ ）<a href="qcompleter.html#completionColumn-prop" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionColumn-prop">setCompletionColumn</a>（）和<a href="qcompleter.html#caseSensitivity-prop" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#caseSensitivity-prop">setCaseSensitivity</a>（ ） 。</p>
+<p>如果模型进行排序了用于完成列和作用，可以调用<a href="qcompleter.html#modelSorting-prop" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#modelSorting-prop">setModelSorting</a>（ ）与任何<a href="qcompleter.html#ModelSorting-enum" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#ModelSorting-enum">QCompleter.CaseSensitivelySortedModel</a>
+or <a href="qcompleter.html#ModelSorting-enum" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#ModelSorting-enum">QCompleter.CaseInsensitivelySortedModel</a>作为参数。在大型模型，这可能会导致显着的性能提升，因为QCompleter就可以使用二进制搜索，而不是线性搜索。</p>
+<p>该模型可以是一<a href="qabstractlistmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractlistmodel.html">list
+model</a>，一<a href="qabstracttablemodel.html" tppabs="http://pyqt4doc.appspot.com/qabstracttablemodel.html">table model</a>或<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">tree model</a>。完成对树模型是稍微更复杂，并复盖在<a href="#handling-tree-models">Handling Tree Models</a>下面一节。</p>
+<p>该<a href="qcompleter.html#completionMode-prop" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionMode-prop">completionMode</a>（）确定用于提供完井给用户的方式。</p>
+<a id="iterating-through-completions" name="iterating-through-completions"></a>
+<h3>Iterating Through Completions</h3>
+<p>检索单个候选字符串，调用<a href="qcompleter.html#completionPrefix-prop" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionPrefix-prop">setCompletionPrefix</a>（）与需要完成的文本和通话<a href="qcompleter.html#currentCompletion" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#currentCompletion">currentCompletion</a>（ ） 。您可以通过补全列表迭代如下：</p>
+<pre class="cpp">
+ <span class="keyword">for</span> (<span class="type">int</span> i <span class="operator">=</span> <span class="number">0</span>; completer<span class="operator">-</span><span class="operator">&gt;</span>setCurrentRow(i); i<span class="operator">+</span><span class="operator">+</span>)
+     <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> completer<span class="operator">-</span><span class="operator">&gt;</span><a href="qcompleter.html#currentCompletion" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#currentCompletion">currentCompletion</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">" is match number "</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> i;
+</pre>
+<p><a href="qcompleter.html#completionCount" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionCount">completionCount</a>（）返回完井的总数为当前前缀。<a href="qcompleter.html#completionCount" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionCount">completionCount</a>（）时，应避免可能的，因为它要求在整个模型的扫描。</p>
+<a id="the-completion-model" name="the-completion-model"></a>
+<h3>The Completion Model</h3>
+<p><a href="qcompleter.html#completionModel" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionModel">completionModel</a>（ ）返回一个包含所有可能的补全当前完成前缀列表模式，在它们出现在模型中的顺序。该模型可用于显示当前的落成在自定义视图。调用<a href="qcompleter.html#completionPrefix-prop" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionPrefix-prop">setCompletionPrefix</a>（ ）自动刷新完成模型。</p>
+<a id="handling-tree-models" name="handling-tree-models"></a>
+<h3>Handling Tree Models</h3>
+<p>QCompleter可以寻找在树模型的完成，假设任何项目（或子项或子分项）可以明确指定该项目的路径表示为一个字符串。完成，然后进行一个级别的时间。</p>
+<p>让我们在一个文件系统中的路径的用户输入的示例。该模型是一个（分层）<a href="qfilesystemmodel.html" tppabs="http://pyqt4doc.appspot.com/qfilesystemmodel.html">QFileSystemModel</a>。完成出现在路径中的每个元素。例如，如果当前的文本是<tt>C:\Wind</tt>， QCompleter可能会建议<tt>Windows</tt>完成当前路径元素。同样，如果当前的文本是<tt>C:\Windows\Sy</tt>， QCompleter可能会建议<tt>System</tt>。</p>
+<p>对于这种完成工作的， QCompleter需要能够将路径分割成匹配在每个级别的字符串列表。为<tt>C:\Windows\Sy</tt>，它需要被分割为“C ：”，“窗口”和“施” 。的默认实现<a href="qcompleter.html#splitPath" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#splitPath">splitPath</a>（ ） ，分裂<a href="qcompleter.html#completionPrefix-prop" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionPrefix-prop">completionPrefix</a> using
+<a href="qdir.html#separator" tppabs="http://pyqt4doc.appspot.com/qdir.html#separator">QDir.separator</a>（ ）如果模型是一个<a href="qfilesystemmodel.html" tppabs="http://pyqt4doc.appspot.com/qfilesystemmodel.html">QFileSystemModel</a>。</p>
+<p>提供完井， QCompleter需要从索引知道路径。这是通过提供<a href="qcompleter.html#pathFromIndex" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#pathFromIndex">pathFromIndex</a>（ ） 。的默认实现<a href="qcompleter.html#pathFromIndex" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#pathFromIndex">pathFromIndex</a>（ ） ，返回的数据<a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">edit role</a>为列表模式和绝对文件路径，如果模式是<a href="qfilesystemmodel.html" tppabs="http://pyqt4doc.appspot.com/qfilesystemmodel.html">QFileSystemModel</a>。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="CompletionMode-enum"></a>QCompleter.CompletionMode</h3>
+<p>该枚举指定如何完井提供给用户。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QCompleter.PopupCompletion</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">目前完井显示在一个弹出窗口。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QCompleter.InlineCompletion</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">完井行内显示（选定文本）。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QCompleter.UnfilteredPopupCompletion</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">所有可能的完成与指示为当前最有可能的建议，显示在一个弹出窗口中。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qcompleter.html#completionMode-prop" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionMode-prop">setCompletionMode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="ModelSorting-enum"></a>QCompleter.ModelSorting</h3>
+<p>此枚举指定如何在模型中的项目进行排序。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QCompleter.UnsortedModel</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该模型是未排序。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QCompleter.CaseSensitivelySortedModel</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该模型是敏感排序的情况。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QCompleter.CaseInsensitivelySortedModel</tt>
+</td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">该模型是不区分大小写排序的情况。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qcompleter.html#modelSorting-prop" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#modelSorting-prop">setModelSorting</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QCompleter"></a>QCompleter.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>争论</p>
+<p>构造一个完成者对象与给定<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="QCompleter-2"></a>QCompleter.__init__ (<i>self</i>, <a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a> <i>model</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个完成者对象与给定<i>parent</i>提供完井从指定的<i>model</i>。</p>
+
+
+<h3 class="fn">
+<a name="QCompleter-3"></a>QCompleter.__init__ (<i>self</i>, QStringList <i>list</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a href="qcompleter.html" tppabs="http://pyqt4doc.appspot.com/qcompleter.html">QCompleter</a>与给定对象<i>parent</i>使用指定的<i>list</i>作为尽可能完整的源代码。</p>
+
+
+<h3 class="fn">
+<a name="caseSensitivity"></a><a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> QCompleter.caseSensitivity (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="complete"></a>QCompleter.complete (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>rect</i> = QRect())</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void complete(const QRect&amp; = QRect())</tt>。</p>
+<p>为<a href="qcompleter.html#CompletionMode-enum" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#CompletionMode-enum">QCompleter.PopupCompletion</a>和QCompletion.UnfilteredPopupCompletion模式，调用这个函数显示显示当前落成弹出。默认情况下，如果<i>rect</i>没有指定，则弹出窗口显示的底部<a href="qcompleter.html#widget" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#widget">widget</a>（ ） 。如果<i>rect</i>指定了弹出窗口被显示在矩形的左边缘。</p>
+<p>为<a href="qcompleter.html#CompletionMode-enum" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#CompletionMode-enum">QCompleter.InlineCompletion</a>模式下，<a href="qcompleter.html#highlighted" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#highlighted">highlighted</a>（ ）信号被发射了与当前的完成。</p>
+
+
+<h3 class="fn">
+<a name="completionColumn"></a>int QCompleter.completionColumn (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="completionCount"></a>int QCompleter.completionCount (<i>self</i>)</h3>
+<p>返回完井的数量为当前前缀。对于有大量项目的未排序的模型可以是昂贵的。使用<a href="qcompleter.html#setCurrentRow" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#setCurrentRow">setCurrentRow</a>（）和<a href="qcompleter.html#currentCompletion" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#currentCompletion">currentCompletion</a>（ ）遍历所有的补全。</p>
+
+
+<h3 class="fn">
+<a name="completionMode"></a><a href="qcompleter.html#CompletionMode-enum" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#CompletionMode-enum">CompletionMode</a> QCompleter.completionMode (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="completionModel"></a><a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a> QCompleter.completionModel (<i>self</i>)</h3>
+<p>返回完成模型。在完成模型是包含所有当前完成前缀可能的匹配一个只读列表模式。完成模型自动更新，以反映当前的落成。</p>
+<p><b>Note:</b>这个函数的返回值被定义为一个<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a>纯粹是为了通用性。这实际返回的一种模型是一个实例<a href="qabstractproxymodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractproxymodel.html">QAbstractProxyModel</a>子类。</p>
+<p><b>See also</b> <a href="qcompleter.html#completionPrefix-prop" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionPrefix-prop">completionPrefix</a>和<a href="qcompleter.html#model" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#model">model</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="completionPrefix"></a>QString QCompleter.completionPrefix (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="completionRole"></a>int QCompleter.completionRole (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="currentCompletion"></a>QString QCompleter.currentCompletion (<i>self</i>)</h3>
+<p>返回当前完井管柱。这包括<a href="qcompleter.html#completionPrefix-prop" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionPrefix-prop">completionPrefix</a>。当一起使用<a href="qcompleter.html#setCurrentRow" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#setCurrentRow">setCurrentRow</a>（ ） ，它可以用来遍历所有的比赛。</p>
+<p><b>See also</b> <a href="qcompleter.html#setCurrentRow" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#setCurrentRow">setCurrentRow</a>（）和<a href="qcompleter.html#currentIndex" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#currentIndex">currentIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentIndex"></a><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> QCompleter.currentIndex (<i>self</i>)</h3>
+<p>返回在当前完成的模型索引<a href="qcompleter.html#completionModel" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionModel">completionModel</a>（ ） 。</p>
+<p><b>See also</b> <a href="qcompleter.html#setCurrentRow" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#setCurrentRow">setCurrentRow</a>（ ）<a href="qcompleter.html#currentCompletion" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#currentCompletion">currentCompletion</a>（）和<a href="qcompleter.html#model" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#model">model</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentRow"></a>int QCompleter.currentRow (<i>self</i>)</h3>
+<p>返回当前行。</p>
+<p><b>See also</b> <a href="qcompleter.html#setCurrentRow" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#setCurrentRow">setCurrentRow</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="event"></a>bool QCompleter.event (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>)</h3>
+<p>从重新实现<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">QObject.event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="eventFilter"></a>bool QCompleter.eventFilter (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>o</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qobject.html#eventFilter" tppabs="http://pyqt4doc.appspot.com/qobject.html#eventFilter">QObject.eventFilter</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="maxVisibleItems"></a>int QCompleter.maxVisibleItems (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="model"></a><a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a> QCompleter.model (<i>self</i>)</h3>
+<p>返回提供完井管柱模型。</p>
+<p><b>See also</b> <a href="qcompleter.html#setModel" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#setModel">setModel</a>（）和<a href="qcompleter.html#completionModel" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionModel">completionModel</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="modelSorting"></a><a href="qcompleter.html#ModelSorting-enum" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#ModelSorting-enum">ModelSorting</a> QCompleter.modelSorting (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="pathFromIndex"></a>QString QCompleter.pathFromIndex (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>返回路径为给定的<i>index</i>。完成者对象使用这个从底层模型得到完成文本。</p>
+<p>默认实现返回<a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">edit role</a>为列表模式的项目。它返回文件的绝对路径，如果这个模型是一个<a href="qfilesystemmodel.html" tppabs="http://pyqt4doc.appspot.com/qfilesystemmodel.html">QFileSystemModel</a>。</p>
+<p><b>See also</b> <a href="qcompleter.html#splitPath" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#splitPath">splitPath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="popup"></a><a href="qabstractitemview.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html">QAbstractItemView</a> QCompleter.popup (<i>self</i>)</h3>
+<p>返回用于显示落成弹出。</p>
+<p><b>See also</b> <a href="qcompleter.html#setPopup" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#setPopup">setPopup</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCaseSensitivity"></a>QCompleter.setCaseSensitivity (<i>self</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>caseSensitivity</i>)</h3>
+<h3 class="fn">
+<a name="setCompletionColumn"></a>QCompleter.setCompletionColumn (<i>self</i>, int <i>column</i>)</h3>
+<h3 class="fn">
+<a name="setCompletionMode"></a>QCompleter.setCompletionMode (<i>self</i>, <a href="qcompleter.html#CompletionMode-enum" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#CompletionMode-enum">CompletionMode</a> <i>mode</i>)</h3>
+<h3 class="fn">
+<a name="setCompletionPrefix"></a>QCompleter.setCompletionPrefix (<i>self</i>, QString <i>prefix</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setCompletionPrefix(const QString&amp;)</tt>。</p>
+<h3 class="fn">
+<a name="setCompletionRole"></a>QCompleter.setCompletionRole (<i>self</i>, int <i>role</i>)</h3>
+<h3 class="fn">
+<a name="setCurrentRow"></a>bool QCompleter.setCurrentRow (<i>self</i>, int <i>row</i>)</h3>
+<p>当前行设置为<i>row</i>规定。成功返回True ，否则返回False 。</p>
+<p>这个功能可以随着所用<a href="qcompleter.html#currentCompletion" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#currentCompletion">currentCompletion</a>（ ）遍历所有可能的补全。</p>
+<p><b>See also</b> <a href="qcompleter.html#currentRow" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#currentRow">currentRow</a>（ ）<a href="qcompleter.html#currentCompletion" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#currentCompletion">currentCompletion</a>（）和<a href="qcompleter.html#completionCount" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionCount">completionCount</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setMaxVisibleItems"></a>QCompleter.setMaxVisibleItems (<i>self</i>, int <i>maxItems</i>)</h3>
+<h3 class="fn">
+<a name="setModel"></a>QCompleter.setModel (<i>self</i>, <a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a> <i>c</i>)</h3>
+<p>设置提供完井模型<i>model</i>。该<i>model</i>可以列表模式或树模型。如果模型已经被预先设置，并具有<a href="qcompleter.html" tppabs="http://pyqt4doc.appspot.com/qcompleter.html">QCompleter</a>作为其母公司，将被删除。</p>
+<p>为方便起见，如果<i>model</i>是<a href="qfilesystemmodel.html" tppabs="http://pyqt4doc.appspot.com/qfilesystemmodel.html">QFileSystemModel</a>，<a href="qcompleter.html" tppabs="http://pyqt4doc.appspot.com/qcompleter.html">QCompleter</a>其切换<a href="qcompleter.html#caseSensitivity-prop" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#caseSensitivity-prop">caseSensitivity</a>至<a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseInsensitive</a>在Windows和<a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitive</a>在其他平台上。</p>
+<p><b>See also</b> <a href="qcompleter.html#completionModel" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionModel">completionModel</a>（ ）<a href="qcompleter.html#modelSorting-prop" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#modelSorting-prop">modelSorting</a>和<a href="qcompleter.html#handling-tree-models" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#handling-tree-models">Handling Tree
+Models</a>。</p>
+
+
+<h3 class="fn">
+<a name="setModelSorting"></a>QCompleter.setModelSorting (<i>self</i>, <a href="qcompleter.html#ModelSorting-enum" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#ModelSorting-enum">ModelSorting</a> <i>sorting</i>)</h3>
+<h3 class="fn">
+<a name="setPopup"></a>QCompleter.setPopup (<i>self</i>, <a href="qabstractitemview.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html">QAbstractItemView</a> <i>popup</i>)</h3>
+<p>该<i>popup</i>说法有它的所有权转移给Qt的。</p>
+<p>设置用于显示完井弹出<i>popup</i>。<a href="qcompleter.html" tppabs="http://pyqt4doc.appspot.com/qcompleter.html">QCompleter</a>采用该视图的所有权。</p>
+<p>A <a href="qlistview.html" tppabs="http://pyqt4doc.appspot.com/qlistview.html">QListView</a>时自动创建的<a href="qcompleter.html#completionMode-prop" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionMode-prop">completionMode</a>（ ）被设置为<a href="qcompleter.html#CompletionMode-enum" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#CompletionMode-enum">QCompleter.PopupCompletion</a>
+or <a href="qcompleter.html#CompletionMode-enum" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#CompletionMode-enum">QCompleter.UnfilteredPopupCompletion</a>。默认的弹出窗口显示<a href="qcompleter.html#completionColumn-prop" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionColumn-prop">completionColumn</a>（ ） 。</p>
+<p>确保这个函数被调用视图设置被修改之前。这是必需的，因为视图的属性可能需要一个模型已经被设置的视图（例如，隐藏在视图中的列需要一个模型要在视图中设置） 。</p>
+<p><b>See also</b> <a href="qcompleter.html#popup" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#popup">popup</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setWidget"></a>QCompleter.setWidget (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>widget</i>)</h3>
+<p>该<i>widget</i>说法有它的所有权转移给Qt的。</p>
+<p>设置用来完成所规定的小部件<i>widget</i>。这个函数被自动调用，当<a href="qcompleter.html" tppabs="http://pyqt4doc.appspot.com/qcompleter.html">QCompleter</a>设置在<a href="qlineedit.html" tppabs="http://pyqt4doc.appspot.com/qlineedit.html">QLineEdit</a> using <a href="qlineedit.html#setCompleter" tppabs="http://pyqt4doc.appspot.com/qlineedit.html#setCompleter">QLineEdit.setCompleter</a>（）或上一个<a href="qcombobox.html" tppabs="http://pyqt4doc.appspot.com/qcombobox.html">QComboBox</a> using <a href="qcombobox.html#setCompleter" tppabs="http://pyqt4doc.appspot.com/qcombobox.html#setCompleter">QComboBox.setCompleter</a>（ ） 。该部件需要明确规定完成为自定义控件时进行设置。</p>
+<p><b>See also</b> <a href="qcompleter.html#widget" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#widget">widget</a>（ ）<a href="qcompleter.html#setModel" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#setModel">setModel</a>（）和<a href="qcompleter.html#setPopup" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#setPopup">setPopup</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setWrapAround"></a>QCompleter.setWrapAround (<i>self</i>, bool <i>wrap</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setWrapAround(bool)</tt>。</p>
+<h3 class="fn">
+<a name="splitPath"></a>QStringList QCompleter.splitPath (<i>self</i>, QString <i>path</i>)</h3>
+<p>拆分给定的<i>path</i>成用于匹配在每个级别的字符串<a href="qcompleter.html#model" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#model">model</a>（ ） 。</p>
+<p>splitPath的默认实现（ ）分割基于文件系统路径<a href="qdir.html#separator" tppabs="http://pyqt4doc.appspot.com/qdir.html#separator">QDir.separator</a>（）当sourceModel （）是一个<a href="qfilesystemmodel.html" tppabs="http://pyqt4doc.appspot.com/qfilesystemmodel.html">QFileSystemModel</a>。</p>
+<p>当与表模型中使用，在返回列表中的第一个项目是用于匹配。</p>
+<p><b>See also</b> <a href="qcompleter.html#pathFromIndex" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#pathFromIndex">pathFromIndex</a>（）和<a href="qcompleter.html#handling-tree-models" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#handling-tree-models">Handling Tree
+Models</a>。</p>
+
+
+<h3 class="fn">
+<a name="widget"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QCompleter.widget (<i>self</i>)</h3>
+<p>返回其完成者对象提供的补全部件。</p>
+<p><b>See also</b> <a href="qcompleter.html#setWidget" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#setWidget">setWidget</a>（ ） 。</p>
+<h3 class="fn">
+<a name="wrapAround"></a>bool QCompleter.wrapAround (<i>self</i>)</h3>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="activated"></a>void activated (const QString&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发送时，在一个项目<a href="qcompleter.html#popup" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#popup">popup</a>（ ）是由用户（通过单击或按回车键）激活。该项目的<i>text</i>给出。</p>
+
+
+<h3 class="fn">
+<a name="activated-2"></a>void activated (const QModelIndex&amp;)</h3>
+<p>这个信号被发送时，在一个项目<a href="qcompleter.html#popup" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#popup">popup</a>（）是由用户激活。 （通过单击或按回车键） 。该项目的<i>index</i>在<a href="qcompleter.html#completionModel" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionModel">completionModel</a>（）给出。</p>
+
+
+<h3 class="fn">
+<a name="highlighted"></a>void highlighted (const QString&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发送时，在一个项目<a href="qcompleter.html#popup" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#popup">popup</a>（）是由用户突出显示。它也被发送，如果<a href="qcompleter.html#complete" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#complete">complete</a>（ ）被调用，<a href="qcompleter.html#completionMode-prop" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionMode-prop">completionMode</a>（）设定为<a href="qcompleter.html#CompletionMode-enum" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#CompletionMode-enum">QCompleter.InlineCompletion</a>。该项目的<i>text</i>给出。</p>
+
+
+<h3 class="fn">
+<a name="highlighted-2"></a>void highlighted (const QModelIndex&amp;)</h3>
+<p>这个信号被发送时，在一个项目<a href="qcompleter.html#popup" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#popup">popup</a>（）是由用户突出显示。它也被发送，如果<a href="qcompleter.html#complete" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#complete">complete</a>（ ）被调用，<a href="qcompleter.html#completionMode-prop" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionMode-prop">completionMode</a>（）设定为<a href="qcompleter.html#CompletionMode-enum" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#CompletionMode-enum">QCompleter.InlineCompletion</a>。该项目的<i>index</i>在<a href="qcompleter.html#completionModel" tppabs="http://pyqt4doc.appspot.com/qcompleter.html#completionModel">completionModel</a>（）给出。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

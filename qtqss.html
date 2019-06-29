@@ -1,0 +1,1531 @@
+﻿<html lang="zh-CN"><head><meta charset="UTF-8">
+  
+<!-- stylesheet.qdoc -->
+  <title>Qt Style Sheets Examples | Qt 4.8 </title>
+  <link rel="stylesheet" type="text/css" href="./qtqss/online.css">
+  <link rel="shortcut icon" href="http://d3hp9ud7yvwzy0.cloudfront.net/wp-content/themes/oneqt/images/favicon.ico.gzip">
+  
+  
+  
+  <link type="text/css" href="./qtqss/default+en.css" rel="stylesheet"><link type="text/css" href="./qtqss/default.css" rel="stylesheet"><style type="text/css">
+.gsc-control-cse {
+font-family: Arial, sans-serif;
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-control-cse .gsc-table-result {
+font-family: Arial, sans-serif;
+}
+input.gsc-input {
+border-color: #D9D9D9;
+}
+input.gsc-search-button {
+border-color: #5CAA15;
+background-color: #5CAA15;
+}
+.gsc-tabHeader.gsc-tabhInactive {
+border-color: #E9E9E9;
+background-color: #E9E9E9;
+}
+.gsc-tabHeader.gsc-tabhActive {
+border-top-color: #5CAA15;
+border-left-color: #E9E9E9;
+border-right-color: #E9E9E9;
+background-color: #FFFFFF;
+}
+.gsc-tabsArea {
+border-color: #E9E9E9;
+}
+.gsc-webResult.gsc-result,
+.gsc-results .gsc-imageResult {
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-webResult.gsc-result:hover,
+.gsc-imageResult:hover {
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-webResult.gsc-result.gsc-promotion:hover {
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gs-webResult.gs-result a.gs-title:link,
+.gs-webResult.gs-result a.gs-title:link b,
+.gs-imageResult a.gs-title:link,
+.gs-imageResult a.gs-title:link b {
+color: #5CAA15;
+}
+.gs-webResult.gs-result a.gs-title:visited,
+.gs-webResult.gs-result a.gs-title:visited b,
+.gs-imageResult a.gs-title:visited,
+.gs-imageResult a.gs-title:visited b {
+color: #46A2DA;
+}
+.gs-webResult.gs-result a.gs-title:hover,
+.gs-webResult.gs-result a.gs-title:hover b,
+.gs-imageResult a.gs-title:hover,
+.gs-imageResult a.gs-title:hover b {
+color: #46A2DA;
+}
+.gs-webResult.gs-result a.gs-title:active,
+.gs-webResult.gs-result a.gs-title:active b,
+.gs-imageResult a.gs-title:active,
+.gs-imageResult a.gs-title:active b {
+color: #5CAA15;
+}
+.gsc-cursor-page {
+color: #5CAA15;
+}
+a.gsc-trailing-more-results:link {
+color: #5CAA15;
+}
+.gs-webResult .gs-snippet,
+.gs-imageResult .gs-snippet,
+.gs-fileFormatType {
+color: #404244;
+}
+.gs-webResult div.gs-visibleUrl,
+.gs-imageResult div.gs-visibleUrl {
+color: #5CAA15;
+}
+.gs-webResult div.gs-visibleUrl-short {
+color: #5CAA15;
+}
+.gs-webResult div.gs-visibleUrl-short {
+display: none;
+}
+.gs-webResult div.gs-visibleUrl-long {
+display: block;
+}
+.gs-promotion div.gs-visibleUrl-short {
+display: none;
+}
+.gs-promotion div.gs-visibleUrl-long {
+display: block;
+}
+.gsc-cursor-box {
+border-color: #FFFFFF;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+border-color: #E9E9E9;
+background-color: #FFFFFF;
+color: #5CAA15;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+border-color: #5CAA15;
+background-color: #FFFFFF;
+color: #46A2DA;
+}
+.gsc-webResult.gsc-result.gsc-promotion {
+border-color: #404244;
+background-color: #FFFFFF;
+}
+.gsc-completion-title {
+color: #5CAA15;
+}
+.gsc-completion-snippet {
+color: #404244;
+}
+.gs-promotion a.gs-title:link,
+.gs-promotion a.gs-title:link *,
+.gs-promotion .gs-snippet a:link {
+color: #0000CC;
+}
+.gs-promotion a.gs-title:visited,
+.gs-promotion a.gs-title:visited *,
+.gs-promotion .gs-snippet a:visited {
+color: #0000CC;
+}
+.gs-promotion a.gs-title:hover,
+.gs-promotion a.gs-title:hover *,
+.gs-promotion .gs-snippet a:hover {
+color: #0000CC;
+}
+.gs-promotion a.gs-title:active,
+.gs-promotion a.gs-title:active *,
+.gs-promotion .gs-snippet a:active {
+color: #0000CC;
+}
+.gs-promotion .gs-snippet,
+.gs-promotion .gs-title .gs-promotion-title-right,
+.gs-promotion .gs-title .gs-promotion-title-right * {
+color: #000000;
+}
+.gs-promotion .gs-visibleUrl,
+.gs-promotion .gs-visibleUrl-short {
+color: #008000;
+}</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-webkit-user-select:none;white-space:nowrap}.gsst_e{opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gscsep_a{display:none}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em;-webkit-appearance:button}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gsfe_a{border:1px solid #b9b9b9;border-top-color:#a0a0a0;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);}.gsfe_b{border:1px solid #4d90fe;outline:none;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);}.gssb_a{padding:0 7px}.gssb_e{border:0}.gssb_l{margin:5px 0}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style><link type="text/css" href="./qtqss/default+zh_CN.css" rel="stylesheet"></head>
+<body>
+
+<div class="main">
+<div class="main-rounded">
+
+<div class="content">
+    <div class="line">
+        <div class="content mainContent">
+  <link rel="prev" href="stylesheet-reference.html">
+<p class="naviNextPrevious headerNavi">
+<a class="prevPage" href="stylesheet-reference.html">Qt Style Sheets Reference</a>
+</p><p>
+</p><div class="sidebar">
+<div class="toc"><div id="toc-toggle"></div>
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="qtqss.html #style-sheet-usage">Style Sheet Usage</a></li>
+<li class="level2"><a href="qtqss.html #customizing-the-foreground-and-background-colors">自定义 the Foreground and Background Colors</a></li>
+<li class="level2"><a href="qtqss.html #customizing-using-dynamic-properties">自定义 Using Dynamic Properties</a></li>
+<li class="level2"><a href="qtqss.html #customizing-a-qpushbutton-using-the-box-model">自定义 a QPushButton Using the Box Model</a></li>
+<li class="level2"><a href="qtqss.html #customizing-the-qpushbutton-s-menu-indicator-sub-control">自定义 the QPushButton's Menu Indicator Sub-Control</a></li>
+<li class="level2"><a href="qtqss.html #complex-selector-example">Complex Selector Example</a></li>
+<li class="level1"><a href="qtqss.html #customizing-specific-widgets">自定义 specific widgets</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qabstractscrollarea">自定义 QAbstractScrollArea</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qcheckbox">自定义 QCheckBox</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qcombobox">自定义 QComboBox</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qdockwidget">自定义 QDockWidget</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qframe">自定义 QFrame</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qgroupbox">自定义 QGroupBox</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qheaderview">自定义 QHeaderView</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qlineedit">自定义 QLineEdit</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qlistview">自定义 QListView</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qmainwindow">自定义 QMainWindow</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qmenu">自定义 QMenu</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qmenubar">自定义 QMenuBar</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qprogressbar">自定义 QProgressBar</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qpushbutton">自定义 QPushButton</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qradiobutton">自定义 QRadioButton</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qscrollbar">自定义 QScrollBar</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qsizegrip">自定义 QSizeGrip</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qslider">自定义 QSlider</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qspinbox">自定义 QSpinBox</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qsplitter">自定义 QSplitter</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qstatusbar">自定义 QStatusBar</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qtabwidget-and-qtabbar">自定义 QTabWidget and QTabBar</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qtableview">自定义 QTableView</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qtoolbar">自定义 QToolBar</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qtoolbox">自定义 QToolBox</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qtoolbutton">自定义 QToolButton</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qtooltip">自定义 QToolTip</a></li>
+<li class="level2"><a href="qtqss.html #customizing-qtreeview">自定义 QTreeView</a></li>
+<li class="level1"><a href="qtqss.html #common-mistakes">Common mistakes</a></li>
+<li class="level2"><a href="qtqss.html #qpushbutton-and-images">QPushButton and images</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"><div id="sidebar-toggle"></div><h2 id="reference">Reference</h2><div class="sectionlist normallist">
+    <div class="heading">
+        <a name="reference"></a>
+        <h2 id="reference">Reference</h2>
+    </div>
+    <div class="indexboxcont indexboxbar">
+        <ul>
+
+        </ul>
+    </div>
+</div>
+
+
+</div></div>
+<div class="context">
+<p><a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html">Home</a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html">All Classes</a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html">Modules</a>  · <a href="qss.html">QSS HELP</a>  · <a href="qtqss.html">QSS 案例</a> · <a href="HTTP://VER007.COM">VER007 HOME</a></p>
+<h1 class="title">Qt 样式表 例子 </h1>
+<span class="subtitle"></span>
+<!-- $$$stylesheet-examples.html-description -->
+<div class="descr"> <a name="details"></a><a name="style-sheet-usage"></a>
+<h2 id="style-sheet-usage"><span onMouseOver="_tipon(this)" onMouseOut="_tipoff()">样式表的使用</span></h2>
+<a name="customizing-the-foreground-and-background-colors"></a>
+<h3>自定义<span onMouseOver="_tipon(this)" onMouseOut="_tipoff()"> 前景和背景颜色</span></h3>
+<p>让我们通过设置黄色是所有的背景颜色开始 <a href="qtqss.html#qlineedit">QLineEdit</a> <span onMouseOver="_tipon(this)" onMouseOut="_tipoff()">某个应用程序中。</span> <span onMouseOver="_tipon(this)" onMouseOut="_tipoff()">这可以实现如下</span>.</p>
+<pre class="cpp">qApp<span class="operator">-</span><span class="operator">&gt;</span>setStyleSheet(<span class="string">"QLineEdit { background-color: yellow }"</span>);</pre>
+<p>如果我们希望属性只适用于<a href="qtqss.html#qlineedit">QLineEdit</a>s中的一个特定的对话框的子项（或孙子或重孙子）</p>
+<pre class="cpp">myDialog<span class="operator">-</span><span class="operator">&gt;</span>setStyleSheet(<span class="string">"QLineEdit { background-color: yellow }"</span>);</pre>
+<p>如果我们希望属性只适用于一个特定的<a href="qtqss.html#qlineedit">QLineEdit</a>, 我们可以给它使用名称 <a href="qobject.html#objectName-prop">QObject::setObjectName</a>() 并使用一个ID选择器来引用它：</p>
+<pre class="cpp">myDialog<span class="operator">-</span><span class="operator">&gt;</span>setStyleSheet(<span class="string">"QLineEdit#nameEdit { background-color: yellow }"</span>);</pre>
+<p>或者，我们可以设置<a href="stylesheet-reference.html#background-prop">background-color</a> 的直接财产<a href="qtqss.html#qlineedit">QLineEdit</a>, 省略了选择</p>
+<pre class="cpp">nameEdit<span class="operator">-</span><span class="operator">&gt;</span>setStyleSheet(<span class="string">"background-color: yellow"</span>);</pre>
+<p>为了确保良好的对比，我们还应该指定一个合适的颜色的文本</p>
+<pre class="cpp">nameEdit<span class="operator">-</span><span class="operator">&gt;</span>setStyleSheet(<span class="string">"color: blue; background-color: yellow"</span>);</pre>
+<p>这可能是更改用于选定的文本以及色彩的一个好主意：</p>
+<pre class="cpp">nameEdit<span class="operator">-</span><span class="operator">&gt;</span>setStyleSheet(<span class="string">"color: blue;"</span>
+                        <span class="string">"background-color: yellow;"</span>
+                        <span class="string">"selection-color: yellow;"</span>
+                        <span class="string">"selection-background-color: blue;"</span>);</pre>
+<a name="customizing-using-dynamic-properties"></a>
+<h3><span onMouseOver="_tipon(this)" onMouseOut="_tipoff()">使用自定义动态属性</span></h3>
+<p><span onMouseOver="_tipon(this)" onMouseOut="_tipoff()">还有，我们需要提出一个具有强制性的字段的表格很多情况下。</span> <span onMouseOver="_tipon(this)" onMouseOut="_tipoff()">以指示该字段是强制性的，一次有效（虽然美观可疑）解决方案是使用黄色作为背景色为这些字段的用户。</span> <span onMouseOver="_tipon(this)" onMouseOut="_tipoff()">事实证明，这是非常容易使用Qt样式表来实现。</span> <span onMouseOver="_tipon(this)" onMouseOut="_tipoff()">首先，我们可以使用下面的应用程序范围内的样式表</span></p>
+<pre class="cpp"><span class="operator">*</span><span class="operator">[</span>mandatoryField<span class="operator">=</span><span class="string">"true"</span><span class="operator">]</span> { background<span class="operator">-</span>color: yellow }</pre>
+<p><span onMouseOver="_tipon(this)" onMouseOut="_tipoff()">这意味着，每个部件的mandatoryField Qt的属性设置为true，将有一个黄色的背景。</span></p>
+<p><span onMouseOver="_tipon(this)" onMouseOut="_tipoff()">然后，对于每个必填字段部件，我们可以简单地创建一个mandatoryField动态属性，并将其设置为true。</span> <span onMouseOver="_tipon(this)" onMouseOut="_tipoff()">例如：</span></p>
+<pre class="cpp"><span class="type"><a href="qlineedit.html">QLineEdit</a></span> <span class="operator">*</span>nameEdit <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qlineedit.html">QLineEdit</a></span>(<span class="keyword">this</span>);
+nameEdit<span class="operator">-</span><span class="operator">&gt;</span>setProperty(<span class="string">"mandatoryField"</span><span class="operator">,</span> <span class="keyword">true</span>);
+
+<span class="type"><a href="qlineedit.html">QLineEdit</a></span> <span class="operator">*</span>emailEdit <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qlineedit.html">QLineEdit</a></span>(<span class="keyword">this</span>);
+emailEdit<span class="operator">-</span><span class="operator">&gt;</span>setProperty(<span class="string">"mandatoryField"</span><span class="operator">,</span> <span class="keyword">true</span>);
+
+<span class="type"><a href="qspinbox.html">QSpinBox</a></span> <span class="operator">*</span>ageSpinBox <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qspinbox.html">QSpinBox</a></span>(<span class="keyword">this</span>);
+ageSpinBox<span class="operator">-</span><span class="operator">&gt;</span>setProperty(<span class="string">"mandatoryField"</span><span class="operator">,</span> <span class="keyword">true</span>);</pre>
+<a name="customizing-a-qpushbutton-using-the-box-model"></a>
+<h3><span onMouseOver="_tipon(this)" onMouseOut="_tipoff()">自定义QPushButton使用盒模型</span></h3>
+<p>这一次，我们将展示如何创建一个红色<a href="qtqss.html#qpushbutton">QPushButton</a>. 这<a href="qtqss.html#qpushbutton">QPushButton</a> 大概会被连接到一个极具破坏性的一段代码。</p>
+<p>首先，我们要使用这个样式表：</p>
+<pre class="cpp"><span class="type"><a href="qpushbutton.html">QPushButton</a></span><span class="preprocessor">#evilButton { background-color: red }</span></pre>
+<p>但是，结果是一个没有边界没有平整：</p>
+<p class="centerAlign"><img src="./qtqss/stylesheet-redbutton1.png" alt="A flat red button"></p>
+<p>发生了什么事呢：</p>
+<ul>
+  <li><span onMouseOver="_tipon(this)" onMouseOut="_tipoff()">我们已经提出，不能单独使用本地样式来满足的请求（例如，Windows XP主题引擎不会让我们指定按钮的背景颜色）。</span></li>
+  <li><span onMouseOver="_tipon(this)" onMouseOut="_tipoff()">因此，按钮被使用样式表呈现。</span></li>
+  <li><span onMouseOver="_tipon(this)" onMouseOut="_tipoff()">我们没有指定任何值</span><a href="stylesheet-reference.html#border-width-prop">border-width</a> and <a href="stylesheet-reference.html#border-style-prop">border-style</a>, 所以默认情况下，我们得到的风格0像素宽的边框none 。</li>
+</ul>
+<p><span onMouseOver="_tipon(this)" onMouseOut="_tipoff()">让我们通过指定边界改善情况：</span></p>
+<br>
+<pre class="cpp"><span class="type"><a href="qpushbutton.html">QPushButton</a></span><span class="preprocessor">#evilButton {</span>
+    background<span class="operator">-</span>color: red;
+    border<span class="operator">-</span>style: outset;
+    border<span class="operator">-</span>width: <span class="number">2px</span>;
+    border<span class="operator">-</span>color: beige;
+}</pre>
+<p class="centerAlign"><img src="./qtqss/stylesheet-redbutton2.png" alt="A red button with a beige border"></p>
+<p><span onMouseOver="_tipon(this)" onMouseOut="_tipoff()">事情看起来已经好了很多。</span> <span onMouseOver="_tipon(this)" onMouseOut="_tipoff()">但是，按钮看起来有点局促。</span> <span onMouseOver="_tipon(this)" onMouseOut="_tipoff()">让我们来指定边框，并使用文字之间的间距一些</span> <a href="stylesheet-reference.html#padding-prop">padding</a>. 此外，我们将执行的最小宽度，圆形边角，并指定一个更大的字体，使按钮看起来更好：</p>
+<pre class="cpp"><span class="type"><a href="qpushbutton.html">QPushButton</a></span><span class="preprocessor">#evilButton {</span>
+    background<span class="operator">-</span>color: red;
+    border<span class="operator">-</span>style: outset;
+    border<span class="operator">-</span>width: <span class="number">2px</span>;
+    border<span class="operator">-</span>radius: <span class="number">10px</span>;
+    border<span class="operator">-</span>color: beige;
+    font: bold <span class="number">14px</span>;
+    min<span class="operator">-</span>width: <span class="number">10em</span>;
+    padding: <span class="number">6px</span>;
+}</pre>
+<p class="centerAlign"><img src="./qtqss/stylesheet-redbutton3.png" alt="A red button with a round beige border and big, bold text"></p><p><span onMouseOver="_tipon(this)" onMouseOut="_tipoff()">剩下唯一的问题是，当我们按下按钮没有反应。</span> <span onMouseOver="_tipon(this)" onMouseOut="_tipoff()">我们可以通过指定一个稍微不同的背景色修复它并使用不同的边框样式。</span></p>
+<pre class="cpp"><span class="type"><a href="qpushbutton.html">QPushButton</a></span><span class="preprocessor">#evilButton {</span>
+    background<span class="operator">-</span>color: red;
+    border<span class="operator">-</span>style: outset;
+    border<span class="operator">-</span>width: <span class="number">2px</span>;
+    border<span class="operator">-</span>radius: <span class="number">10px</span>;
+    border<span class="operator">-</span>color: beige;
+    font: bold <span class="number">14px</span>;
+    min<span class="operator">-</span>width: <span class="number">10em</span>;
+    padding: <span class="number">6px</span>;
+}
+<span class="type"><a href="qpushbutton.html">QPushButton</a></span><span class="preprocessor">#evilButton:pressed {</span>
+    background<span class="operator">-</span>color: rgb(<span class="number">224</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">0</span>);
+    border<span class="operator">-</span>style: inset;
+}</pre>
+<a name="customizing-the-qpushbutton-s-menu-indicator-sub-control"></a>
+<h3><span onMouseOver="_tipon(this)" onMouseOut="_tipoff()">自定义QPushButton的菜单指示器分控</span></h3>
+<p>子控件授予访问小窗口的子元素。 例如，一个 <a href="qtqss.html#qpushbutton">QPushButton</a> 与菜单相关联(使用 <a href="qpushbutton.html#setMenu">QPushButton::setMenu</a>()) 有一个菜单指示符。 让我们定制的红色按钮菜单指标:</p>
+<pre class="cpp"><span class="type"><a href="qpushbutton.html">QPushButton</a></span><span class="preprocessor">#evilButton::menu-indicator {</span>
+    image: url(myindicator<span class="operator">.</span>png);
+}</pre>
+<p>默认情况下，菜单指示器位于填充矩形的右下角。 我们可以通过指定改变这个 <a href="stylesheet-reference.html#subcontrol-position-prop">subcontrol-position</a> <a href="stylesheet-reference.html#subcontrol-origin-prop">和 subcontrol-origin</a> to以不同的锚定指标。 我们也可以用<a href="stylesheet-reference.html#top-prop">top</a> and <a href="stylesheet-reference.html#left-prop">left</a>由几个像素来移动指针。 例如：</p>
+<pre class="cpp"><span class="type"><a href="qpushbutton.html">QPushButton</a></span><span class="operator">::</span>menu<span class="operator">-</span>indicator {
+    image: url(myindicator<span class="operator">.</span>png);
+    subcontrol<span class="operator">-</span>position: right center;
+    subcontrol<span class="operator">-</span>origin: padding;
+    left: <span class="operator">-</span><span class="number">2px</span>;
+}</pre>
+<p>这种定位的myindicator.png到的中间偏右 <a href="qtqss.html#qpushbutton">QPushButton</a>'s <a href="stylesheet-reference.html#padding-prop">padding</a> 矩形 (见 <a href="stylesheet-reference.html#subcontrol-origin-prop">subcontrol-origin</a> 获取更多信息).</p>
+<a name="complex-selector-example"></a>
+<h3>复杂的选择示例</h3>
+<p>由于红色似乎是我们最喜欢的颜色，让我们在文中 <a href="qtqss.html#qlineedit">QLineEdit</a> 通过设置以下应用程序范围的样式表红：</p>
+<pre class="cpp"><span class="type"><a href="qlineedit.html">QLineEdit</a></span> { color: red }</pre>
+<p>但是，我们想给的视觉指示一个 <a href="qtqss.html#qlineedit">QLineEdit</a> 是只读使其显示为灰色：</p>
+<pre class="cpp"><span class="type"><a href="qlineedit.html">QLineEdit</a></span> { color: red }
+<span class="type"><a href="qlineedit.html">QLineEdit</a></span><span class="operator">[</span>readOnly<span class="operator">=</span><span class="string">"true"</span><span class="operator">]</span> { color: gray }</pre>
+<p>在某些时候，我们的设计团队配备了所有的要求 <a href="qtqss.html#qlineedit">QLineEdit</a> 在登记表（使用 <a href="qobject.html#objectName-prop">object name</a> <code>registrationDialog</code>) 为棕色</p>
+<pre class="cpp"><span class="type"><a href="qlineedit.html">QLineEdit</a></span> { color: red }
+<span class="type"><a href="qlineedit.html">QLineEdit</a></span><span class="operator">[</span>readOnly<span class="operator">=</span><span class="string">"true"</span><span class="operator">]</span> { color: gray }
+<span class="preprocessor">#registrationDialog QLineEdit { color: brown }</span></pre>
+<p>一些UI设计的会议之后，我们决定，我们所有的 <a href="qdialog.html">QDialog</a> 应该具有棕色<a href="qtqss.html#qlineedit">QLineEdit</a>里:</p>
+<pre class="cpp"><span class="type"><a href="qlineedit.html">QLineEdit</a></span> { color: red }
+<span class="type"><a href="qlineedit.html">QLineEdit</a></span><span class="operator">[</span>readOnly<span class="operator">=</span><span class="string">"true"</span><span class="operator">]</span> { color: gray }
+<span class="type"><a href="qdialog.html">QDialog</a></span> <span class="type"><a href="qlineedit.html">QLineEdit</a></span> { color: brown }</pre>
+<p><a name="customizing-specific-widgets"></a></p>
+<h2 id="customizing-specific-widgets">自定义特定的部件</h2>
+<p>本节提供了示例来使用自定义样式表的特定部件。</p>
+<a name="customizing-qabstractscrollarea"></a>
+<h3>自定义 QAbstractScrollArea</h3>
+<p>任何背景 <a href="qabstractscrollarea.html">QAbstractScrollArea</a> (项目的意见, <a href="qtqss.html#qtextedit">QTextEdit</a> and <a href="qtextbrowser.html">QTextBrowser</a>) 可以使用背景属性进行设置。 例如，要设置一个背景图像，与滚动条滚动：</p>
+<pre class="cpp"><span class="type"><a href="qtextedit.html">QTextEdit</a></span><span class="operator">,</span> <span class="type"><a href="qlistview.html">QListView</a></span> {
+    background<span class="operator">-</span>color: white;
+    background<span class="operator">-</span>image: url(draft<span class="operator">.</span>png);
+    background<span class="operator">-</span>attachment: scroll;
+}</pre>
+<p>如果该背景图像是被固定的视区：</p>
+<pre class="cpp"><span class="type"><a href="qtextedit.html">QTextEdit</a></span><span class="operator">,</span> <span class="type"><a href="qlistview.html">QListView</a></span> {
+    background<span class="operator">-</span>color: white;
+    background<span class="operator">-</span>image: url(draft<span class="operator">.</span>png);
+    background<span class="operator">-</span>attachment: fixed;
+}</pre>
+<a name="customizing-qcheckbox"></a>
+<h3>自定义 QCheckBox</h3>
+<p>一个定型 <a href="qcheckbox.html">QCheckBox</a> is almost indentical to styling a <a href="qradiobutton.html">QRadioButton</a>. 的主要区别在于，一个三态 <a href="qcheckbox.html">QCheckBox</a> 具有不确定状态。</p>
+<pre class="cpp"><span class="type"><a href="qcheckbox.html">QCheckBox</a></span> {
+    spacing: <span class="number">5px</span>;
+}
+
+<span class="type"><a href="qcheckbox.html">QCheckBox</a></span><span class="operator">::</span>indicator {
+    width: <span class="number">13px</span>;
+    height: <span class="number">13px</span>;
+}
+
+<span class="type"><a href="qcheckbox.html">QCheckBox</a></span><span class="operator">::</span>indicator:unchecked {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>checkbox_unchecked<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qcheckbox.html">QCheckBox</a></span><span class="operator">::</span>indicator:unchecked:hover {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>checkbox_unchecked_hover<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qcheckbox.html">QCheckBox</a></span><span class="operator">::</span>indicator:unchecked:pressed {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>checkbox_unchecked_pressed<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qcheckbox.html">QCheckBox</a></span><span class="operator">::</span>indicator:checked {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>checkbox_checked<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qcheckbox.html">QCheckBox</a></span><span class="operator">::</span>indicator:checked:hover {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>checkbox_checked_hover<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qcheckbox.html">QCheckBox</a></span><span class="operator">::</span>indicator:checked:pressed {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>checkbox_checked_pressed<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qcheckbox.html">QCheckBox</a></span><span class="operator">::</span>indicator:indeterminate:hover {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>checkbox_indeterminate_hover<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qcheckbox.html">QCheckBox</a></span><span class="operator">::</span>indicator:indeterminate:pressed {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>checkbox_indeterminate_pressed<span class="operator">.</span>png);
+}</pre>
+<a name="customizing-qcombobox"></a>
+<h3>自定义 QComboBox</h3>
+<p>我们将看看那里下拉一个按钮一个例子 <a href="qtqss.html#qcombobox">QComboBox</a> 出现“合并”与组合框框架</p>
+<pre class="cpp"><span class="type"><a href="qcombobox.html">QComboBox</a></span> {
+    border: <span class="number">1px</span> solid gray;
+    border<span class="operator">-</span>radius: <span class="number">3px</span>;
+    padding: <span class="number">1px</span> <span class="number">18px</span> <span class="number">1px</span> <span class="number">3px</span>;
+    min<span class="operator">-</span>width: <span class="number">6em</span>;
+}
+
+<span class="type"><a href="qcombobox.html">QComboBox</a></span>:editable {
+    background: white;
+}
+
+<span class="type"><a href="qcombobox.html">QComboBox</a></span>:<span class="operator">!</span>editable<span class="operator">,</span> <span class="type"><a href="qcombobox.html">QComboBox</a></span><span class="operator">::</span>drop<span class="operator">-</span>down:editable {
+     background: qlineargradient(x1: <span class="number">0</span><span class="operator">,</span> y1: <span class="number">0</span><span class="operator">,</span> x2: <span class="number">0</span><span class="operator">,</span> y2: <span class="number">1</span><span class="operator">,</span>
+                                 stop: <span class="number">0</span> <span class="preprocessor">#E1E1E1, stop: 0.4 #DDDDDD,</span>
+                                 stop: <span class="number">0.5</span> <span class="preprocessor">#D8D8D8, stop: 1.0 #D3D3D3);</span>
+}
+
+<span class="comment">/* QComboBox gets the "on" state when the popup is open */</span>
+<span class="type"><a href="qcombobox.html">QComboBox</a></span>:<span class="operator">!</span>editable:on<span class="operator">,</span> <span class="type"><a href="qcombobox.html">QComboBox</a></span><span class="operator">::</span>drop<span class="operator">-</span>down:editable:on {
+    background: qlineargradient(x1: <span class="number">0</span><span class="operator">,</span> y1: <span class="number">0</span><span class="operator">,</span> x2: <span class="number">0</span><span class="operator">,</span> y2: <span class="number">1</span><span class="operator">,</span>
+                                stop: <span class="number">0</span> <span class="preprocessor">#D3D3D3, stop: 0.4 #D8D8D8,</span>
+                                stop: <span class="number">0.5</span> <span class="preprocessor">#DDDDDD, stop: 1.0 #E1E1E1);</span>
+}
+
+<span class="type"><a href="qcombobox.html">QComboBox</a></span>:on { <span class="comment">/* shift the text when the popup opens */</span>
+    padding<span class="operator">-</span>top: <span class="number">3px</span>;
+    padding<span class="operator">-</span>left: <span class="number">4px</span>;
+}
+
+<span class="type"><a href="qcombobox.html">QComboBox</a></span><span class="operator">::</span>drop<span class="operator">-</span>down {
+    subcontrol<span class="operator">-</span>origin: padding;
+    subcontrol<span class="operator">-</span>position: top right;
+    width: <span class="number">15px</span>;
+
+    border<span class="operator">-</span>left<span class="operator">-</span>width: <span class="number">1px</span>;
+    border<span class="operator">-</span>left<span class="operator">-</span>color: darkgray;
+    border<span class="operator">-</span>left<span class="operator">-</span>style: solid; <span class="comment">/* just a single line */</span>
+    border<span class="operator">-</span>top<span class="operator">-</span>right<span class="operator">-</span>radius: <span class="number">3px</span>; <span class="comment">/* same radius as the QComboBox */</span>
+    border<span class="operator">-</span>bottom<span class="operator">-</span>right<span class="operator">-</span>radius: <span class="number">3px</span>;
+}
+
+<span class="type"><a href="qcombobox.html">QComboBox</a></span><span class="operator">::</span>down<span class="operator">-</span>arrow {
+    image: url(<span class="operator">/</span>usr<span class="operator">/</span>share<span class="operator">/</span>icons<span class="operator">/</span>crystalsvg<span class="operator">/</span><span class="number">16x16</span><span class="operator">/</span>actions<span class="operator">/</span><span class="number">1downarrow.png</span>);
+}
+
+<span class="type"><a href="qcombobox.html">QComboBox</a></span><span class="operator">::</span>down<span class="operator">-</span>arrow:on { <span class="comment">/* shift the arrow when popup is open */</span>
+    top: <span class="number">1px</span>;
+    left: <span class="number">1px</span>;
+}</pre>
+<p>该的弹出 <a href="qtqss.html#qcombobox">QComboBox</a> is a <a href="qabstractitemview.html">QAbstractItemView</a> 并使用后代选择的样式：</p>
+<pre class="cpp"><span class="type"><a href="qcombobox.html">QComboBox</a></span> <span class="type"><a href="qabstractitemview.html">QAbstractItemView</a></span> {
+    border: <span class="number">2px</span> solid darkgray;
+    selection<span class="operator">-</span>background<span class="operator">-</span>color: lightgray;
+}</pre>
+<a name="customizing-qdockwidget"></a>
+<h3>自定义 QDockWidget</h3>
+<p>标题栏和的按钮 <a href="qdockwidget.html">QDockWidget</a> 可自定义如下：</p>
+<pre class="cpp"><span class="type"><a href="qdockwidget.html">QDockWidget</a></span> {
+    border: <span class="number">1px</span> solid lightgray;
+    titlebar<span class="operator">-</span>close<span class="operator">-</span>icon: url(close<span class="operator">.</span>png);
+    titlebar<span class="operator">-</span>normal<span class="operator">-</span>icon: url(undock<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qdockwidget.html">QDockWidget</a></span><span class="operator">::</span>title {
+    text<span class="operator">-</span>align: left; <span class="comment">/* align the text to the left */</span>
+    background: lightgray;
+    padding<span class="operator">-</span>left: <span class="number">5px</span>;
+}
+
+<span class="type"><a href="qdockwidget.html">QDockWidget</a></span><span class="operator">::</span>close<span class="operator">-</span>button<span class="operator">,</span> <span class="type"><a href="qdockwidget.html">QDockWidget</a></span><span class="operator">::</span><span class="type">float</span><span class="operator">-</span>button {
+    border: <span class="number">1px</span> solid transparent;
+    background: darkgray;
+    padding: <span class="number">0px</span>;
+}
+
+<span class="type"><a href="qdockwidget.html">QDockWidget</a></span><span class="operator">::</span>close<span class="operator">-</span>button:hover<span class="operator">,</span> <span class="type"><a href="qdockwidget.html">QDockWidget</a></span><span class="operator">::</span><span class="type">float</span><span class="operator">-</span>button:hover {
+    background: gray;
+}
+
+<span class="type"><a href="qdockwidget.html">QDockWidget</a></span><span class="operator">::</span>close<span class="operator">-</span>button:pressed<span class="operator">,</span> <span class="type"><a href="qdockwidget.html">QDockWidget</a></span><span class="operator">::</span><span class="type">float</span><span class="operator">-</span>button:pressed {
+    padding: <span class="number">1px</span> <span class="operator">-</span><span class="number">1px</span> <span class="operator">-</span><span class="number">1px</span> <span class="number">1px</span>;
+}</pre>
+<p>如果一个人希望<a href="qdockwidget.html">Dock Widget</a>部件按钮移动到左侧，下面的样式表，可以用：</p>
+<pre class="cpp"><span class="type"><a href="qdockwidget.html">QDockWidget</a></span> {
+    border: <span class="number">1px</span> solid lightgray;
+    titlebar<span class="operator">-</span>close<span class="operator">-</span>icon: url(close<span class="operator">.</span>png);
+    titlebar<span class="operator">-</span>normal<span class="operator">-</span>icon: url(<span class="type">float</span><span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qdockwidget.html">QDockWidget</a></span><span class="operator">::</span>title {
+    text<span class="operator">-</span>align: left;
+    background: lightgray;
+    padding<span class="operator">-</span>left: <span class="number">35px</span>;
+}
+
+<span class="type"><a href="qdockwidget.html">QDockWidget</a></span><span class="operator">::</span>close<span class="operator">-</span>button<span class="operator">,</span> <span class="type"><a href="qdockwidget.html">QDockWidget</a></span><span class="operator">::</span><span class="type">float</span><span class="operator">-</span>button {
+    background: darkgray;
+    padding: <span class="number">0px</span>;
+    icon<span class="operator">-</span>size: <span class="number">14px</span>; <span class="comment">/* maximum icon size */</span>
+}
+
+<span class="type"><a href="qdockwidget.html">QDockWidget</a></span><span class="operator">::</span>close<span class="operator">-</span>button:hover<span class="operator">,</span> <span class="type"><a href="qdockwidget.html">QDockWidget</a></span><span class="operator">::</span><span class="type">float</span><span class="operator">-</span>button:hover {
+    background: gray;
+}
+
+<span class="type"><a href="qdockwidget.html">QDockWidget</a></span><span class="operator">::</span>close<span class="operator">-</span>button:pressed<span class="operator">,</span> <span class="type"><a href="qdockwidget.html">QDockWidget</a></span><span class="operator">::</span><span class="type">float</span><span class="operator">-</span>button:pressed {
+    padding: <span class="number">1px</span> <span class="operator">-</span><span class="number">1px</span> <span class="operator">-</span><span class="number">1px</span> <span class="number">1px</span>;
+}
+
+<span class="type"><a href="qdockwidget.html">QDockWidget</a></span><span class="operator">::</span>close<span class="operator">-</span>button {
+    subcontrol<span class="operator">-</span>position: top left;
+    subcontrol<span class="operator">-</span>origin: margin;
+    position: absolute;
+    top: <span class="number">0px</span>; left: <span class="number">0px</span>; bottom: <span class="number">0px</span>;
+    width: <span class="number">14px</span>;
+}
+
+<span class="type"><a href="qdockwidget.html">QDockWidget</a></span><span class="operator">::</span><span class="type">float</span><span class="operator">-</span>button {
+    subcontrol<span class="operator">-</span>position: top left;
+    subcontrol<span class="operator">-</span>origin: margin;
+    position: absolute;
+    top: <span class="number">0px</span>; left: <span class="number">16px</span>; bottom: <span class="number">0px</span>;
+    width: <span class="number">14px</span>;
+}</pre>
+<p><b>Note: </b>要自定义分离器的（调整句柄） <a href="qdockwidget.html">QDockWidget</a>, 使用的QMainWindow ::分隔符。</p><a name="customizing-qframe"></a>
+<h3>自定义 QFrame</h3>
+<p>A <a href="qtqss.html#qframe">QFrame</a> 是使用样式 <a href="stylesheet-customizing.html#the-box-model">The Box Model</a>.</p>
+<pre class="cpp"><span class="type"><a href="qframe.html">QFrame</a></span><span class="operator">,</span> <span class="type"><a href="qlabel.html">QLabel</a></span><span class="operator">,</span> <span class="type"><a href="qtooltip.html">QToolTip</a></span> {
+    border: <span class="number">2px</span> solid green;
+    border<span class="operator">-</span>radius: <span class="number">4px</span>;
+    padding: <span class="number">2px</span>;
+    background<span class="operator">-</span>image: url(images<span class="operator">/</span>welcome<span class="operator">.</span>png);
+}</pre>
+<a name="customizing-qgroupbox"></a>
+<h3>自定义 QGroupBox</h3>
+<p>让我们看一下移动为例 <a href="qtqss.html#qgroupbox">QGroupBox</a>'里 的标题为中心。</p>
+<pre class="cpp"><span class="type"><a href="qgroupbox.html">QGroupBox</a></span> {
+    background<span class="operator">-</span>color: qlineargradient(x1: <span class="number">0</span><span class="operator">,</span> y1: <span class="number">0</span><span class="operator">,</span> x2: <span class="number">0</span><span class="operator">,</span> y2: <span class="number">1</span><span class="operator">,</span>
+                                      stop: <span class="number">0</span> <span class="preprocessor">#E0E0E0, stop: 1 #FFFFFF);</span>
+    border: <span class="number">2px</span> solid gray;
+    border<span class="operator">-</span>radius: <span class="number">5px</span>;
+    margin<span class="operator">-</span>top: <span class="number">1ex</span>; <span class="comment">/* leave space at the top for the title */</span>
+}
+
+<span class="type"><a href="qgroupbox.html">QGroupBox</a></span><span class="operator">::</span>title {
+    subcontrol<span class="operator">-</span>origin: margin;
+    subcontrol<span class="operator">-</span>position: top center; <span class="comment">/* position at the top center */</span>
+    padding: <span class="number">0</span> <span class="number">3px</span>;
+    background<span class="operator">-</span>color: qlineargradient(x1: <span class="number">0</span><span class="operator">,</span> y1: <span class="number">0</span><span class="operator">,</span> x2: <span class="number">0</span><span class="operator">,</span> y2: <span class="number">1</span><span class="operator">,</span>
+                                      stop: <span class="number">0</span> <span class="preprocessor">#FFOECE, stop: 1 #FFFFFF);</span>
+}</pre>
+<p>对于一个可检查的 <a href="qtqss.html#qgroupbox">QGroupBox</a>, 使用 {#indicator-sub}{indicator} 子控件和风格它酷似一个 <a href="qcheckbox.html">QCheckBox</a> (i.e)</p>
+<pre class="cpp"><span class="type"><a href="qgroupbox.html">QGroupBox</a></span><span class="operator">::</span>indicator {
+    width: <span class="number">13px</span>;
+    height: <span class="number">13px</span>;
+}
+
+<span class="type"><a href="qgroupbox.html">QGroupBox</a></span><span class="operator">::</span>indicator:unchecked {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>checkbox_unchecked<span class="operator">.</span>png);
+}
+
+<span class="comment">/* proceed with styling just like QCheckBox */</span></pre>
+<a name="customizing-qheaderview"></a>
+<h3>自定义 QHeaderView</h3>
+<p><a href="qheaderview.html">QHeaderView</a> 定制如下:</p>
+<pre class="cpp"><span class="type"><a href="qheaderview.html">QHeaderView</a></span><span class="operator">::</span>section {
+    background<span class="operator">-</span>color: qlineargradient(x1:<span class="number">0</span><span class="operator">,</span> y1:<span class="number">0</span><span class="operator">,</span> x2:<span class="number">0</span><span class="operator">,</span> y2:<span class="number">1</span><span class="operator">,</span>
+                                      stop:<span class="number">0</span> <span class="preprocessor">#616161, stop: 0.5 #505050,</span>
+                                      stop: <span class="number">0.6</span> <span class="preprocessor">#434343, stop:1 #656565);</span>
+    color: white;
+    padding<span class="operator">-</span>left: <span class="number">4px</span>;
+    border: <span class="number">1px</span> solid <span class="preprocessor">#6c6c6c;</span>
+}
+
+<span class="type"><a href="qheaderview.html">QHeaderView</a></span><span class="operator">::</span>section:checked
+{
+    background<span class="operator">-</span>color: red;
+}
+
+<span class="comment">/* style the sort indicator */</span>
+<span class="type"><a href="qheaderview.html">QHeaderView</a></span><span class="operator">::</span>down<span class="operator">-</span>arrow {
+    image: url(down_arrow<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qheaderview.html">QHeaderView</a></span><span class="operator">::</span>up<span class="operator">-</span>arrow {
+    image: url(up_arrow<span class="operator">.</span>png);
+}</pre>
+<a name="customizing-qlineedit"></a>
+<h3>自定义 QLineEdit</h3>
+<p>这个框架 <a href="qtqss.html#qlineedit">QLineEdit</a> 正在使用的样式 <a href="stylesheet-customizing.html#the-box-model">The Box Model</a>.  要创建一个圆角线的编辑，我们可以设置：</p>
+<pre class="cpp"><span class="type"><a href="qlineedit.html">QLineEdit</a></span> {
+    border: <span class="number">2px</span> solid gray;
+    border<span class="operator">-</span>radius: <span class="number">10px</span>;
+    padding: <span class="number">0</span> <span class="number">8px</span>;
+    background: yellow;
+    selection<span class="operator">-</span>background<span class="operator">-</span>color: darkgray;
+}</pre>
+<p>线编辑的密码字符有 <a href="qlineedit.html#EchoMode-enum">QLineEdit::Password</a> 回波模式可以使用设置：</p>
+<pre class="cpp"><span class="type"><a href="qlineedit.html">QLineEdit</a></span><span class="operator">[</span>echoMode<span class="operator">=</span><span class="string">"2"</span><span class="operator">]</span> {
+    lineedit<span class="operator">-</span>password<span class="operator">-</span>character: <span class="number">9679</span>;
+}</pre>
+<p>一个只读的背景 <a href="qtqss.html#qlineedit">QLineEdit</a> 可被修改如下:</p>
+<pre class="cpp"><span class="type"><a href="qlineedit.html">QLineEdit</a></span>:read<span class="operator">-</span>only {
+    background: lightblue;</pre>
+<a name="customizing-qlistview"></a>
+<h3>自定义 QListView</h3>
+<p>交替行的背景颜色可以用下面的样式表进行定制</p>
+<pre class="cpp"><span class="type"><a href="qlistview.html">QListView</a></span> {
+    alternate<span class="operator">-</span>background<span class="operator">-</span>color: yellow;
+}</pre>
+<p>为了提供当你将鼠标悬停在项的特殊背景下，我们可以使用 <a href="stylesheet-reference.html#item-sub">::item</a> 子控件。 例如，</p>
+<pre class="cpp"><span class="type"><a href="qlistview.html">QListView</a></span> {
+    show<span class="operator">-</span>decoration<span class="operator">-</span>selected: <span class="number">1</span>; <span class="comment">/* make the selection span the entire width of the view */</span>
+}
+
+<span class="type"><a href="qlistview.html">QListView</a></span><span class="operator">::</span>item:alternate {
+    background: <span class="preprocessor">#EEEEEE;</span>
+}
+
+<span class="type"><a href="qlistview.html">QListView</a></span><span class="operator">::</span>item:selected {
+    border: <span class="number">1px</span> solid <span class="preprocessor">#6a6ea9;</span>
+}
+
+<span class="type"><a href="qlistview.html">QListView</a></span><span class="operator">::</span>item:selected:<span class="operator">!</span>active {
+    background: qlineargradient(x1: <span class="number">0</span><span class="operator">,</span> y1: <span class="number">0</span><span class="operator">,</span> x2: <span class="number">0</span><span class="operator">,</span> y2: <span class="number">1</span><span class="operator">,</span>
+                                stop: <span class="number">0</span> <span class="preprocessor">#ABAFE5, stop: 1 #8588B2);</span>
+}
+
+<span class="type"><a href="qlistview.html">QListView</a></span><span class="operator">::</span>item:selected:active {
+    background: qlineargradient(x1: <span class="number">0</span><span class="operator">,</span> y1: <span class="number">0</span><span class="operator">,</span> x2: <span class="number">0</span><span class="operator">,</span> y2: <span class="number">1</span><span class="operator">,</span>
+                                stop: <span class="number">0</span> <span class="preprocessor">#6a6ea9, stop: 1 #888dd9);</span>
+}
+
+<span class="type"><a href="qlistview.html">QListView</a></span><span class="operator">::</span>item:hover {
+    background: qlineargradient(x1: <span class="number">0</span><span class="operator">,</span> y1: <span class="number">0</span><span class="operator">,</span> x2: <span class="number">0</span><span class="operator">,</span> y2: <span class="number">1</span><span class="operator">,</span>
+                                stop: <span class="number">0</span> <span class="preprocessor">#FAFBFE, stop: 1 #DCDEF1);</span>
+}</pre>
+<a name="customizing-qmainwindow"></a>
+<h3>自定义 QMainWindow</h3>
+<p>一个分离器的 <a href="qtqss.html#qmainwindow">QMainWindow</a> 可以样式如下</p>
+<pre class="cpp"><span class="type"><a href="qmainwindow.html">QMainWindow</a></span><span class="operator">::</span>separator {
+    background: yellow;
+    width: <span class="number">10px</span>; <span class="comment">/* when vertical */</span>
+    height: <span class="number">10px</span>; <span class="comment">/* when horizontal */</span>
+}
+
+<span class="type"><a href="qmainwindow.html">QMainWindow</a></span><span class="operator">::</span>separator:hover {
+    background: red;
+}</pre>
+<a name="customizing-qmenu"></a>
+<h3>自定义 QMenu</h3>
+<p>一个个人项目 <a href="qmenu.html">QMenu</a> 中使用了'项目'子控件如下样式：</p>
+<pre class="cpp"><span class="type"><a href="qmenu.html">QMenu</a></span> {
+    background<span class="operator">-</span>color: <span class="preprocessor">#ABABAB; /* sets background of the menu */</span>
+    border: <span class="number">1px</span> solid black;
+}
+
+<span class="type"><a href="qmenu.html">QMenu</a></span><span class="operator">::</span>item {
+    <span class="comment">/* sets background of menu item. set this to something non-transparent
+        if you want menu color and menu item color to be different */</span>
+    background<span class="operator">-</span>color: transparent;
+}
+
+<span class="type"><a href="qmenu.html">QMenu</a></span><span class="operator">::</span>item:selected { <span class="comment">/* when user selects item using mouse or keyboard */</span>
+    background<span class="operator">-</span>color: <span class="preprocessor">#654321;</span>
+}</pre>
+<p>对于更高级的定制，按如下方式使用样式表：</p>
+<pre class="cpp"><span class="type"><a href="qmenu.html">QMenu</a></span> {
+    background<span class="operator">-</span>color: white;
+    margin: <span class="number">2px</span>; <span class="comment">/* some spacing around the menu */</span>
+}
+
+<span class="type"><a href="qmenu.html">QMenu</a></span><span class="operator">::</span>item {
+    padding: <span class="number">2px</span> <span class="number">25px</span> <span class="number">2px</span> <span class="number">20px</span>;
+    border: <span class="number">1px</span> solid transparent; <span class="comment">/* reserve space for selection border */</span>
+}
+
+<span class="type"><a href="qmenu.html">QMenu</a></span><span class="operator">::</span>item:selected {
+    border<span class="operator">-</span>color: darkblue;
+    background: rgba(<span class="number">100</span><span class="operator">,</span> <span class="number">100</span><span class="operator">,</span> <span class="number">100</span><span class="operator">,</span> <span class="number">150</span>);
+}
+
+<span class="type"><a href="qmenu.html">QMenu</a></span><span class="operator">::</span>icon:checked { <span class="comment">/* appearance of a 'checked' icon */</span>
+    background: gray;
+    border: <span class="number">1px</span> inset gray;
+    position: absolute;
+    top: <span class="number">1px</span>;
+    right: <span class="number">1px</span>;
+    bottom: <span class="number">1px</span>;
+    left: <span class="number">1px</span>;
+}
+
+<span class="type"><a href="qmenu.html">QMenu</a></span><span class="operator">::</span>separator {
+    height: <span class="number">2px</span>;
+    background: lightblue;
+    margin<span class="operator">-</span>left: <span class="number">10px</span>;
+    margin<span class="operator">-</span>right: <span class="number">5px</span>;
+}
+
+<span class="type"><a href="qmenu.html">QMenu</a></span><span class="operator">::</span>indicator {
+    width: <span class="number">13px</span>;
+    height: <span class="number">13px</span>;
+}
+
+<span class="comment">/* non-exclusive indicator = check box style indicator (see QActionGroup::setExclusive) */</span>
+<span class="type"><a href="qmenu.html">QMenu</a></span><span class="operator">::</span>indicator:non<span class="operator">-</span>exclusive:unchecked {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>checkbox_unchecked<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qmenu.html">QMenu</a></span><span class="operator">::</span>indicator:non<span class="operator">-</span>exclusive:unchecked:selected {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>checkbox_unchecked_hover<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qmenu.html">QMenu</a></span><span class="operator">::</span>indicator:non<span class="operator">-</span>exclusive:checked {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>checkbox_checked<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qmenu.html">QMenu</a></span><span class="operator">::</span>indicator:non<span class="operator">-</span>exclusive:checked:selected {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>checkbox_checked_hover<span class="operator">.</span>png);
+}
+
+<span class="comment">/* exclusive indicator = radio button style indicator (see QActionGroup::setExclusive) */</span>
+<span class="type"><a href="qmenu.html">QMenu</a></span><span class="operator">::</span>indicator:exclusive:unchecked {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>radiobutton_unchecked<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qmenu.html">QMenu</a></span><span class="operator">::</span>indicator:exclusive:unchecked:selected {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>radiobutton_unchecked_hover<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qmenu.html">QMenu</a></span><span class="operator">::</span>indicator:exclusive:checked {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>radiobutton_checked<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qmenu.html">QMenu</a></span><span class="operator">::</span>indicator:exclusive:checked:selected {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>radiobutton_checked_hover<span class="operator">.</span>png);
+}</pre>
+<a name="customizing-qmenubar"></a>
+<h3>自定义 QMenuBar</h3>
+<p><a href="qtqss.html#qmenubar">QMenuBar</a> 的样式如下：</p>
+<pre class="cpp"><span class="type"><a href="qmenubar.html">QMenuBar</a></span> {
+    background<span class="operator">-</span>color: qlineargradient(x1:<span class="number">0</span><span class="operator">,</span> y1:<span class="number">0</span><span class="operator">,</span> x2:<span class="number">0</span><span class="operator">,</span> y2:<span class="number">1</span><span class="operator">,</span>
+                                      stop:<span class="number">0</span> lightgray<span class="operator">,</span> stop:<span class="number">1</span> darkgray);
+}
+
+<span class="type"><a href="qmenubar.html">QMenuBar</a></span><span class="operator">::</span>item {
+    spacing: <span class="number">3px</span>; <span class="comment">/* spacing between menu bar items */</span>
+    padding: <span class="number">1px</span> <span class="number">4px</span>;
+    background: transparent;
+    border<span class="operator">-</span>radius: <span class="number">4px</span>;
+}
+
+<span class="type"><a href="qmenubar.html">QMenuBar</a></span><span class="operator">::</span>item:selected { <span class="comment">/* when selected using mouse or keyboard */</span>
+    background: <span class="preprocessor">#a8a8a8;</span>
+}
+
+<span class="type"><a href="qmenubar.html">QMenuBar</a></span><span class="operator">::</span>item:pressed {
+    background: <span class="preprocessor">#888888;</span>
+}</pre>
+<a name="customizing-qprogressbar"></a>
+<h3>自定义 QProgressBar</h3>
+<p>该 <a href="qtqss.html#qprogressbar">QProgressBar</a>'s <a href="stylesheet-reference.html#border-prop">border</a>, <a href="stylesheet-reference.html#chunk-sub">chunk</a>, 和 <a href="stylesheet-reference.html#text-align-prop">text-align</a> 可以使用样式表来定制。 然而，如果一个属性或副控制被定制，所有其他属性或子控制也必须定做。</p>
+<p class="centerAlign"><img src="./qtqss/progressBar-stylesheet.png" alt=""></p>
+<p>例如，我们改变 <a href="stylesheet-reference.html#border-prop">border</a> 为灰色和<a href="stylesheet-reference.html#chunk-sub"> chunk</a> 蔚蓝。</p>
+<pre class="cpp"><span class="type"><a href="qprogressbar.html">QProgressBar</a></span> {
+    border: <span class="number">2px</span> solid grey;
+    border<span class="operator">-</span>radius: <span class="number">5px</span>;
+}
+
+<span class="type"><a href="qprogressbar.html">QProgressBar</a></span><span class="operator">::</span>chunk {
+    background<span class="operator">-</span>color: <span class="preprocessor">#05B8CC;</span>
+    width: <span class="number">20px</span>;
+}</pre>
+<p>这使得 <a href="stylesheet-reference.html#text-align-prop">text-align</a>, 我们通过定位在进度条的中央的文字定义。</p>
+<pre class="cpp"><span class="type"><a href="qprogressbar.html">QProgressBar</a></span> {
+    border: <span class="number">2px</span> solid grey;
+    border<span class="operator">-</span>radius: <span class="number">5px</span>;
+    text<span class="operator">-</span>align: center;
+}</pre>
+<p>一个 <a href="stylesheet-reference.html#margin-prop">margin</a> 可以包括获得更多的可见块。</p>
+<p class="centerAlign"><img src="./qtqss/progressBar2-stylesheet.png" alt=""></p>
+<p>在上面的截图中，我们使用了 <a href="stylesheet-reference.html#margin-prop">margin</a> 的0.5像素。</p>
+<pre class="cpp"><span class="type"><a href="qprogressbar.html">QProgressBar</a></span><span class="operator">::</span>chunk {
+    background<span class="operator">-</span>color: <span class="preprocessor">#CD96CD;</span>
+    width: <span class="number">10px</span>;
+    margin: <span class="number">0.5px</span>;
+}</pre>
+<a name="customizing-qpushbutton"></a>
+<h3>自定义 QPushButton</h3>
+<p>一个 <a href="qtqss.html#qpushbutton">QPushButton</a> 的样式如下：</p>
+<pre class="cpp"><span class="type"><a href="qpushbutton.html">QPushButton</a></span> {
+    border: <span class="number">2px</span> solid <span class="preprocessor">#8f8f91;</span>
+    border<span class="operator">-</span>radius: <span class="number">6px</span>;
+    background<span class="operator">-</span>color: qlineargradient(x1: <span class="number">0</span><span class="operator">,</span> y1: <span class="number">0</span><span class="operator">,</span> x2: <span class="number">0</span><span class="operator">,</span> y2: <span class="number">1</span><span class="operator">,</span>
+                                      stop: <span class="number">0</span> <span class="preprocessor">#f6f7fa, stop: 1 #dadbde);</span>
+    min<span class="operator">-</span>width: <span class="number">80px</span>;
+}
+
+<span class="type"><a href="qpushbutton.html">QPushButton</a></span>:pressed {
+    background<span class="operator">-</span>color: qlineargradient(x1: <span class="number">0</span><span class="operator">,</span> y1: <span class="number">0</span><span class="operator">,</span> x2: <span class="number">0</span><span class="operator">,</span> y2: <span class="number">1</span><span class="operator">,</span>
+                                      stop: <span class="number">0</span> <span class="preprocessor">#dadbde, stop: 1 #f6f7fa);</span>
+}
+
+<span class="type"><a href="qpushbutton.html">QPushButton</a></span>:flat {
+    border: none; <span class="comment">/* no border for a flat push button */</span>
+}
+
+<span class="type"><a href="qpushbutton.html">QPushButton</a></span>:<span class="keyword">default</span> {
+    border<span class="operator">-</span>color: navy; <span class="comment">/* make the default button prominent */</span>
+}</pre>
+<p>对于 <a href="qtqss.html#qpushbutton">QPushButton</a> 有菜单，使用 <a href="stylesheet-reference.html#menu-indicator-sub">::menu-indicator</a> 子控件。</p>
+<pre class="cpp"><span class="type"><a href="qpushbutton.html">QPushButton</a></span>:open { <span class="comment">/* when the button has its menu open */</span>
+    background<span class="operator">-</span>color: qlineargradient(x1: <span class="number">0</span><span class="operator">,</span> y1: <span class="number">0</span><span class="operator">,</span> x2: <span class="number">0</span><span class="operator">,</span> y2: <span class="number">1</span><span class="operator">,</span>
+                                      stop: <span class="number">0</span> <span class="preprocessor">#dadbde, stop: 1 #f6f7fa);</span>
+}
+
+<span class="type"><a href="qpushbutton.html">QPushButton</a></span><span class="operator">::</span>menu<span class="operator">-</span>indicator {
+    image: url(menu_indicator<span class="operator">.</span>png);
+    subcontrol<span class="operator">-</span>origin: padding;
+    subcontrol<span class="operator">-</span>position: bottom right;
+}
+
+<span class="type"><a href="qpushbutton.html">QPushButton</a></span><span class="operator">::</span>menu<span class="operator">-</span>indicator:pressed<span class="operator">,</span> <span class="type"><a href="qpushbutton.html">QPushButton</a></span><span class="operator">::</span>menu<span class="operator">-</span>indicator:open {
+    position: relative;
+    top: <span class="number">2px</span>; left: <span class="number">2px</span>; <span class="comment">/* shift the arrow by 2 px */</span>
+}</pre>
+<p>可勾选 <a href="qtqss.html#qpushbutton">QPushButton</a> 有 <a href="stylesheet-reference.html#checked-ps">:checked</a> 伪状态集</p>
+<a name="customizing-qradiobutton"></a>
+<h3>自定义 QRadioButton</h3>
+<p>一个 <a href="qradiobutton.html">QRadioButton</a> 可以进行转换</p>
+<pre class="cpp"><span class="type"><a href="qradiobutton.html">QRadioButton</a></span><span class="operator">::</span>indicator {
+    width: <span class="number">13px</span>;
+    height: <span class="number">13px</span>;
+}
+
+<span class="type"><a href="qradiobutton.html">QRadioButton</a></span><span class="operator">::</span>indicator<span class="operator">::</span>unchecked {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>radiobutton_unchecked<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qradiobutton.html">QRadioButton</a></span><span class="operator">::</span>indicator:unchecked:hover {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>radiobutton_unchecked_hover<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qradiobutton.html">QRadioButton</a></span><span class="operator">::</span>indicator:unchecked:pressed {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>radiobutton_unchecked_pressed<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qradiobutton.html">QRadioButton</a></span><span class="operator">::</span>indicator<span class="operator">::</span>checked {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>radiobutton_checked<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qradiobutton.html">QRadioButton</a></span><span class="operator">::</span>indicator:checked:hover {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>radiobutton_checked_hover<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qradiobutton.html">QRadioButton</a></span><span class="operator">::</span>indicator:checked:pressed {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>radiobutton_checked_pressed<span class="operator">.</span>png);
+}</pre>
+<a name="customizing-qscrollbar"></a>
+<h3>自定义 QScrollBar</h3>
+<p>该 <a href="qtqss.html#qscrollbar">QScrollBar</a> 可以使用其子控件等来称呼 <a href="stylesheet-reference.html#handle-sub">handle</a>, <a href="stylesheet-reference.html#add-line-sub">add-line</a>, <a href="stylesheet-reference.html#sub-line-sub">sub-line</a>, 依此类推。 请注意，如果一个属性或副控制被定制，所有其他属性或子控制也必须定做。</p>
+<p class="centerAlign"><img src="./qtqss/stylesheet-scrollbar1.png" alt=""></p><p>滚动条上面已经在风格蓝晶了坚实的灰色边框。</p>
+<pre class="cpp"><span class="type"><a href="qscrollbar.html">QScrollBar</a></span>:horizontal {
+    border: <span class="number">2px</span> solid grey;
+    background: <span class="preprocessor">#32CC99;</span>
+    height: <span class="number">15px</span>;
+    margin: <span class="number">0px</span> <span class="number">20px</span> <span class="number">0</span> <span class="number">20px</span>;
+}
+<span class="type"><a href="qscrollbar.html">QScrollBar</a></span><span class="operator">::</span>handle:horizontal {
+    background: white;
+    min<span class="operator">-</span>width: <span class="number">20px</span>;
+}
+<span class="type"><a href="qscrollbar.html">QScrollBar</a></span><span class="operator">::</span>add<span class="operator">-</span>line:horizontal {
+    border: <span class="number">2px</span> solid grey;
+    background: <span class="preprocessor">#32CC99;</span>
+    width: <span class="number">20px</span>;
+    subcontrol<span class="operator">-</span>position: right;
+    subcontrol<span class="operator">-</span>origin: margin;
+}
+
+<span class="type"><a href="qscrollbar.html">QScrollBar</a></span><span class="operator">::</span>sub<span class="operator">-</span>line:horizontal {
+    border: <span class="number">2px</span> solid grey;
+    background: <span class="preprocessor">#32CC99;</span>
+    width: <span class="number">20px</span>;
+    subcontrol<span class="operator">-</span>position: left;
+    subcontrol<span class="operator">-</span>origin: margin;
+}</pre>
+<p>在 <a href="stylesheet-reference.html#left-arrow-sub">left-arrow</a> and <a href="stylesheet-reference.html#right-arrow-sub">right-arrow</a> 有一个白色的背景了坚实的灰色边框。 作为替代方案，你也可以嵌入一个箭头的形象。</p>
+<pre class="cpp"><span class="type"><a href="qscrollbar.html">QScrollBar</a></span>:left<span class="operator">-</span>arrow:horizontal<span class="operator">,</span> <span class="type"><a href="qscrollbar.html">QScrollBar</a></span><span class="operator">::</span>right<span class="operator">-</span>arrow:horizontal {
+    border: <span class="number">2px</span> solid grey;
+    width: <span class="number">3px</span>;
+    height: <span class="number">3px</span>;
+    background: white;
+}
+
+<span class="type"><a href="qscrollbar.html">QScrollBar</a></span><span class="operator">::</span>add<span class="operator">-</span>page:horizontal<span class="operator">,</span> <span class="type"><a href="qscrollbar.html">QScrollBar</a></span><span class="operator">::</span>sub<span class="operator">-</span>page:horizontal {
+    background: none;
+}</pre>
+<p>如果你想在滚动条的滚动按钮被放置在一起（而不是边缘），如Mac OS X上，你可以使用下面的样式表：</p>
+<pre class="cpp"><span class="type"><a href="qscrollbar.html">QScrollBar</a></span>:horizontal {
+    border: <span class="number">2px</span> solid green;
+    background: cyan;
+    height: <span class="number">15px</span>;
+    margin: <span class="number">0px</span> <span class="number">40px</span> <span class="number">0</span> <span class="number">0px</span>;
+}
+
+<span class="type"><a href="qscrollbar.html">QScrollBar</a></span><span class="operator">::</span>handle:horizontal {
+    background: gray;
+    min<span class="operator">-</span>width: <span class="number">20px</span>;
+}
+
+<span class="type"><a href="qscrollbar.html">QScrollBar</a></span><span class="operator">::</span>add<span class="operator">-</span>line:horizontal {
+    background: blue;
+    width: <span class="number">16px</span>;
+    subcontrol<span class="operator">-</span>position: right;
+    subcontrol<span class="operator">-</span>origin: margin;
+    border: <span class="number">2px</span> solid black;
+}
+
+<span class="type"><a href="qscrollbar.html">QScrollBar</a></span><span class="operator">::</span>sub<span class="operator">-</span>line:horizontal {
+    background: magenta;
+    width: <span class="number">16px</span>;
+    subcontrol<span class="operator">-</span>position: top right;
+    subcontrol<span class="operator">-</span>origin: margin;
+    border: <span class="number">2px</span> solid black;
+    position: absolute;
+    right: <span class="number">20px</span>;
+}
+
+<span class="type"><a href="qscrollbar.html">QScrollBar</a></span>:left<span class="operator">-</span>arrow:horizontal<span class="operator">,</span> <span class="type"><a href="qscrollbar.html">QScrollBar</a></span><span class="operator">::</span>right<span class="operator">-</span>arrow:horizontal {
+    width: <span class="number">3px</span>;
+    height: <span class="number">3px</span>;
+    background: pink;
+}
+
+<span class="type"><a href="qscrollbar.html">QScrollBar</a></span><span class="operator">::</span>add<span class="operator">-</span>page:horizontal<span class="operator">,</span> <span class="type"><a href="qscrollbar.html">QScrollBar</a></span><span class="operator">::</span>sub<span class="operator">-</span>page:horizontal {
+    background: none;
+}</pre>
+<p>使用上述样式表的滚动条是这样的：</p>
+<p class="centerAlign"><img src="./qtqss/stylesheet-scrollbar2.png" alt=""></p><p>要自定义垂直滚动条使用类似如下的样式表：</p>
+<pre class="cpp"> <span class="type"><a href="qscrollbar.html">QScrollBar</a></span>:vertical {
+     border: <span class="number">2px</span> solid grey;
+     background: <span class="preprocessor">#32CC99;</span>
+     width: <span class="number">15px</span>;
+     margin: <span class="number">22px</span> <span class="number">0</span> <span class="number">22px</span> <span class="number">0</span>;
+ }
+ <span class="type"><a href="qscrollbar.html">QScrollBar</a></span><span class="operator">::</span>handle:vertical {
+     background: white;
+     min<span class="operator">-</span>height: <span class="number">20px</span>;
+ }
+ <span class="type"><a href="qscrollbar.html">QScrollBar</a></span><span class="operator">::</span>add<span class="operator">-</span>line:vertical {
+     border: <span class="number">2px</span> solid grey;
+     background: <span class="preprocessor">#32CC99;</span>
+     height: <span class="number">20px</span>;
+     subcontrol<span class="operator">-</span>position: bottom;
+     subcontrol<span class="operator">-</span>origin: margin;
+ }
+
+ <span class="type"><a href="qscrollbar.html">QScrollBar</a></span><span class="operator">::</span>sub<span class="operator">-</span>line:vertical {
+     border: <span class="number">2px</span> solid grey;
+     background: <span class="preprocessor">#32CC99;</span>
+     height: <span class="number">20px</span>;
+     subcontrol<span class="operator">-</span>position: top;
+     subcontrol<span class="operator">-</span>origin: margin;
+ }
+ <span class="type"><a href="qscrollbar.html">QScrollBar</a></span><span class="operator">::</span>up<span class="operator">-</span>arrow:vertical<span class="operator">,</span> <span class="type"><a href="qscrollbar.html">QScrollBar</a></span><span class="operator">::</span>down<span class="operator">-</span>arrow:vertical {
+     border: <span class="number">2px</span> solid grey;
+     width: <span class="number">3px</span>;
+     height: <span class="number">3px</span>;
+     background: white;
+ }
+
+ <span class="type"><a href="qscrollbar.html">QScrollBar</a></span><span class="operator">::</span>add<span class="operator">-</span>page:vertical<span class="operator">,</span> <span class="type"><a href="qscrollbar.html">QScrollBar</a></span><span class="operator">::</span>sub<span class="operator">-</span>page:vertical {
+     background: none;
+ }</pre>
+<a name="customizing-qsizegrip"></a>
+<h3>自定义 QSizeGrip</h3>
+<p><a href="qsizegrip.html">QSizeGrip</a> 常是由刚刚设置的图像风格。</p>
+<pre class="cpp"><span class="type"><a href="qsizegrip.html">QSizeGrip</a></span> {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>sizegrip<span class="operator">.</span>png);
+    width: <span class="number">16px</span>;
+    height: <span class="number">16px</span>;
+}</pre>
+<a name="customizing-qslider"></a>
+<h3>自定义 QSlider</h3>
+<p>你可以样式水平滑块如下：</p>
+<pre class="cpp"><span class="type"><a href="qslider.html">QSlider</a></span><span class="operator">::</span>groove:horizontal {
+    border: <span class="number">1px</span> solid <span class="preprocessor">#999999;</span>
+    height: <span class="number">8px</span>; <span class="comment">/* the groove expands to the size of the slider by default. by giving it a height, it has a fixed size */</span>
+    background: qlineargradient(x1:<span class="number">0</span><span class="operator">,</span> y1:<span class="number">0</span><span class="operator">,</span> x2:<span class="number">0</span><span class="operator">,</span> y2:<span class="number">1</span><span class="operator">,</span> stop:<span class="number">0</span> <span class="preprocessor">#B1B1B1, stop:1 #c4c4c4);</span>
+    margin: <span class="number">2px</span> <span class="number">0</span>;
+}
+
+<span class="type"><a href="qslider.html">QSlider</a></span><span class="operator">::</span>handle:horizontal {
+    background: qlineargradient(x1:<span class="number">0</span><span class="operator">,</span> y1:<span class="number">0</span><span class="operator">,</span> x2:<span class="number">1</span><span class="operator">,</span> y2:<span class="number">1</span><span class="operator">,</span> stop:<span class="number">0</span> <span class="preprocessor">#b4b4b4, stop:1 #8f8f8f);</span>
+    border: <span class="number">1px</span> solid <span class="preprocessor">#5c5c5c;</span>
+    width: <span class="number">18px</span>;
+    margin: <span class="operator">-</span><span class="number">2px</span> <span class="number">0</span>; <span class="comment">/* handle is placed by default on the contents rect of the groove. Expand outside the groove */</span>
+    border<span class="operator">-</span>radius: <span class="number">3px</span>;
+}</pre>
+<p>如果你想把手前后改变滑块部分的颜色，可以使用加载页面和子页面子控件。 例如，对于一个垂直滑块：</p>
+<pre class="cpp"><span class="type"><a href="qslider.html">QSlider</a></span><span class="operator">::</span>groove:vertical {
+    background: red;
+    position: absolute; <span class="comment">/* absolutely position 4px from the left and right of the widget. setting margins on the widget should work too... */</span>
+    left: <span class="number">4px</span>; right: <span class="number">4px</span>;
+}
+
+<span class="type"><a href="qslider.html">QSlider</a></span><span class="operator">::</span>handle:vertical {
+    height: <span class="number">10px</span>;
+    background: green;
+    margin: <span class="number">0</span> <span class="operator">-</span><span class="number">4px</span>; <span class="comment">/* expand outside the groove */</span>
+}
+
+<span class="type"><a href="qslider.html">QSlider</a></span><span class="operator">::</span>add<span class="operator">-</span>page:vertical {
+    background: white;
+}
+
+<span class="type"><a href="qslider.html">QSlider</a></span><span class="operator">::</span>sub<span class="operator">-</span>page:vertical {
+    background: pink;
+}</pre>
+<a name="customizing-qspinbox"></a>
+<h3>自定义 QSpinBox</h3>
+<p><a href="qtqss.html#qspinbox">QSpinBox</a> 可完全自定义如下（样式表有评论在线）：</p>
+<pre class="cpp"><span class="type"><a href="qspinbox.html">QSpinBox</a></span> {
+    padding<span class="operator">-</span>right: <span class="number">15px</span>; <span class="comment">/* make room for the arrows */</span>
+    border<span class="operator">-</span>image: url(:<span class="operator">/</span>images<span class="operator">/</span>frame<span class="operator">.</span>png) <span class="number">4</span>;
+    border<span class="operator">-</span>width: <span class="number">3</span>;
+}
+
+<span class="type"><a href="qspinbox.html">QSpinBox</a></span><span class="operator">::</span>up<span class="operator">-</span>button {
+    subcontrol<span class="operator">-</span>origin: border;
+    subcontrol<span class="operator">-</span>position: top right; <span class="comment">/* position at the top right corner */</span>
+
+    width: <span class="number">16px</span>; <span class="comment">/* 16 + 2*1px border-width = 15px padding + 3px parent border */</span>
+    border<span class="operator">-</span>image: url(:<span class="operator">/</span>images<span class="operator">/</span>spinup<span class="operator">.</span>png) <span class="number">1</span>;
+    border<span class="operator">-</span>width: <span class="number">1px</span>;
+}
+
+<span class="type"><a href="qspinbox.html">QSpinBox</a></span><span class="operator">::</span>up<span class="operator">-</span>button:hover {
+    border<span class="operator">-</span>image: url(:<span class="operator">/</span>images<span class="operator">/</span>spinup_hover<span class="operator">.</span>png) <span class="number">1</span>;
+}
+
+<span class="type"><a href="qspinbox.html">QSpinBox</a></span><span class="operator">::</span>up<span class="operator">-</span>button:pressed {
+    border<span class="operator">-</span>image: url(:<span class="operator">/</span>images<span class="operator">/</span>spinup_pressed<span class="operator">.</span>png) <span class="number">1</span>;
+}
+
+<span class="type"><a href="qspinbox.html">QSpinBox</a></span><span class="operator">::</span>up<span class="operator">-</span>arrow {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>up_arrow<span class="operator">.</span>png);
+    width: <span class="number">7px</span>;
+    height: <span class="number">7px</span>;
+}
+
+<span class="type"><a href="qspinbox.html">QSpinBox</a></span><span class="operator">::</span>up<span class="operator">-</span>arrow:disabled<span class="operator">,</span> <span class="type"><a href="qspinbox.html">QSpinBox</a></span><span class="operator">::</span>up<span class="operator">-</span>arrow:off { <span class="comment">/* off state when value is max */</span>
+   image: url(:<span class="operator">/</span>images<span class="operator">/</span>up_arrow_disabled<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qspinbox.html">QSpinBox</a></span><span class="operator">::</span>down<span class="operator">-</span>button {
+    subcontrol<span class="operator">-</span>origin: border;
+    subcontrol<span class="operator">-</span>position: bottom right; <span class="comment">/* position at bottom right corner */</span>
+
+    width: <span class="number">16px</span>;
+    border<span class="operator">-</span>image: url(:<span class="operator">/</span>images<span class="operator">/</span>spindown<span class="operator">.</span>png) <span class="number">1</span>;
+    border<span class="operator">-</span>width: <span class="number">1px</span>;
+    border<span class="operator">-</span>top<span class="operator">-</span>width: <span class="number">0</span>;
+}
+
+<span class="type"><a href="qspinbox.html">QSpinBox</a></span><span class="operator">::</span>down<span class="operator">-</span>button:hover {
+    border<span class="operator">-</span>image: url(:<span class="operator">/</span>images<span class="operator">/</span>spindown_hover<span class="operator">.</span>png) <span class="number">1</span>;
+}
+
+<span class="type"><a href="qspinbox.html">QSpinBox</a></span><span class="operator">::</span>down<span class="operator">-</span>button:pressed {
+    border<span class="operator">-</span>image: url(:<span class="operator">/</span>images<span class="operator">/</span>spindown_pressed<span class="operator">.</span>png) <span class="number">1</span>;
+}
+
+<span class="type"><a href="qspinbox.html">QSpinBox</a></span><span class="operator">::</span>down<span class="operator">-</span>arrow {
+    image: url(:<span class="operator">/</span>images<span class="operator">/</span>down_arrow<span class="operator">.</span>png);
+    width: <span class="number">7px</span>;
+    height: <span class="number">7px</span>;
+}
+
+<span class="type"><a href="qspinbox.html">QSpinBox</a></span><span class="operator">::</span>down<span class="operator">-</span>arrow:disabled<span class="operator">,</span>
+<span class="type"><a href="qspinbox.html">QSpinBox</a></span><span class="operator">::</span>down<span class="operator">-</span>arrow:off { <span class="comment">/* off state when value in min */</span>
+   image: url(:<span class="operator">/</span>images<span class="operator">/</span>down_arrow_disabled<span class="operator">.</span>png);
+}</pre>
+<a name="customizing-qsplitter"></a>
+<h3>自定义 QSplitter</h3>
+<p>一个 <a href="qtqss.html#qsplitter">QSplitter</a> 从派生 <a href="qtqss.html#qframe">QFrame</a> 和因此可以样式像 <a href="qtqss.html#qframe">QFrame</a>.  把手或句柄使用定制 <a href="stylesheet-reference.html#handle-sub">::handle</a> 子控件.</p>
+<pre class="cpp"><span class="type"><a href="qsplitter.html">QSplitter</a></span><span class="operator">::</span>handle {
+    image: url(images<span class="operator">/</span>splitter<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qsplitter.html">QSplitter</a></span><span class="operator">::</span>handle:horizontal {
+    width: <span class="number">2px</span>;
+}
+
+<span class="type"><a href="qsplitter.html">QSplitter</a></span><span class="operator">::</span>handle:vertical {
+    height: <span class="number">2px</span>;
+}
+
+<span class="type"><a href="qsplitter.html">QSplitter</a></span><span class="operator">::</span>handle:pressed {
+    image: url(images<span class="operator">/</span>splitter_pressed<span class="operator">.</span>png);
+}</pre>
+<a name="customizing-qstatusbar"></a>
+<h3>自定义 QStatusBar</h3>
+<p>我们可以提供状态栏的背景和状态栏里面的物品边框，如下所示：</p>
+<pre class="cpp"><span class="type"><a href="qstatusbar.html">QStatusBar</a></span> {
+    background: brown;
+}
+
+<span class="type"><a href="qstatusbar.html">QStatusBar</a></span><span class="operator">::</span>item {
+    border: <span class="number">1px</span> solid red;
+    border<span class="operator">-</span>radius: <span class="number">3px</span>;
+}</pre>
+<p>需要注意的是已被添加到窗口小部件 <a href="qstatusbar.html">QStatusBar</a> 可以使用后代声明的样式（即）</p>
+<pre class="cpp"><span class="type"><a href="qstatusbar.html">QStatusBar</a></span> <span class="type"><a href="qlabel.html">QLabel</a></span> {
+    border: <span class="number">3px</span> solid white;
+}</pre>
+<a name="customizing-qtabwidget-and-qtabbar"></a>
+<h3>自定义 QTabWidget and QTabBar</h3>
+<p class="centerAlign"><img src="./qtqss/tabWidget-stylesheet1.png" alt=""></p><p>对于上面的截图中，我们需要一个样式表如下：</p>
+<pre class="cpp"><span class="type"><a href="qtabwidget.html">QTabWidget</a></span><span class="operator">::</span>pane { <span class="comment">/* The tab widget frame */</span>
+    border<span class="operator">-</span>top: <span class="number">2px</span> solid <span class="preprocessor">#C2C7CB;</span>
+}
+
+<span class="type"><a href="qtabwidget.html">QTabWidget</a></span><span class="operator">::</span>tab<span class="operator">-</span>bar {
+    left: <span class="number">5px</span>; <span class="comment">/* move to the right by 5px */</span>
+}
+
+<span class="comment">/* Style the tab using the tab sub-control. Note that
+    it reads QTabBar _not_ QTabWidget */</span>
+<span class="type"><a href="qtabbar.html">QTabBar</a></span><span class="operator">::</span>tab {
+    background: qlineargradient(x1: <span class="number">0</span><span class="operator">,</span> y1: <span class="number">0</span><span class="operator">,</span> x2: <span class="number">0</span><span class="operator">,</span> y2: <span class="number">1</span><span class="operator">,</span>
+                                stop: <span class="number">0</span> <span class="preprocessor">#E1E1E1, stop: 0.4 #DDDDDD,</span>
+                                stop: <span class="number">0.5</span> <span class="preprocessor">#D8D8D8, stop: 1.0 #D3D3D3);</span>
+    border: <span class="number">2px</span> solid <span class="preprocessor">#C4C4C3;</span>
+    border<span class="operator">-</span>bottom<span class="operator">-</span>color: <span class="preprocessor">#C2C7CB; /* same as the pane color */</span>
+    border<span class="operator">-</span>top<span class="operator">-</span>left<span class="operator">-</span>radius: <span class="number">4px</span>;
+    border<span class="operator">-</span>top<span class="operator">-</span>right<span class="operator">-</span>radius: <span class="number">4px</span>;
+    min<span class="operator">-</span>width: <span class="number">8ex</span>;
+    padding: <span class="number">2px</span>;
+}
+
+<span class="type"><a href="qtabbar.html">QTabBar</a></span><span class="operator">::</span>tab:selected<span class="operator">,</span> <span class="type"><a href="qtabbar.html">QTabBar</a></span><span class="operator">::</span>tab:hover {
+    background: qlineargradient(x1: <span class="number">0</span><span class="operator">,</span> y1: <span class="number">0</span><span class="operator">,</span> x2: <span class="number">0</span><span class="operator">,</span> y2: <span class="number">1</span><span class="operator">,</span>
+                                stop: <span class="number">0</span> <span class="preprocessor">#fafafa, stop: 0.4 #f4f4f4,</span>
+                                stop: <span class="number">0.5</span> <span class="preprocessor">#e7e7e7, stop: 1.0 #fafafa);</span>
+}
+
+<span class="type"><a href="qtabbar.html">QTabBar</a></span><span class="operator">::</span>tab:selected {
+    border<span class="operator">-</span>color: <span class="preprocessor">#9B9B9B;</span>
+    border<span class="operator">-</span>bottom<span class="operator">-</span>color: <span class="preprocessor">#C2C7CB; /* same as pane color */</span>
+}
+
+<span class="type"><a href="qtabbar.html">QTabBar</a></span><span class="operator">::</span>tab:<span class="operator">!</span>selected {
+    margin<span class="operator">-</span>top: <span class="number">2px</span>; <span class="comment">/* make non-selected tabs look smaller */</span>
+}</pre>
+<p>通常情况下，我们需要的标签重叠的样子如下：</p>
+<p class="centerAlign"><img src="./qtqss/tabWidget-stylesheet2.png" alt=""></p>
+<p>对于一个标签控件，看起来像上述情况，我们利用 <a href="http://www.communitymx.com/content/article.cfm?cid=B0029">negative margins</a>. 由此产生的样式表如下：</p>
+<pre class="cpp"><span class="type"><a href="qtabwidget.html">QTabWidget</a></span><span class="operator">::</span>pane { <span class="comment">/* The tab widget frame */</span>
+    border<span class="operator">-</span>top: <span class="number">2px</span> solid <span class="preprocessor">#C2C7CB;</span>
+}
+
+<span class="type"><a href="qtabwidget.html">QTabWidget</a></span><span class="operator">::</span>tab<span class="operator">-</span>bar {
+    left: <span class="number">5px</span>; <span class="comment">/* move to the right by 5px */</span>
+}
+
+<span class="comment">/* Style the tab using the tab sub-control. Note that
+    it reads QTabBar _not_ QTabWidget */</span>
+<span class="type"><a href="qtabbar.html">QTabBar</a></span><span class="operator">::</span>tab {
+    background: qlineargradient(x1: <span class="number">0</span><span class="operator">,</span> y1: <span class="number">0</span><span class="operator">,</span> x2: <span class="number">0</span><span class="operator">,</span> y2: <span class="number">1</span><span class="operator">,</span>
+                                stop: <span class="number">0</span> <span class="preprocessor">#E1E1E1, stop: 0.4 #DDDDDD,</span>
+                                stop: <span class="number">0.5</span> <span class="preprocessor">#D8D8D8, stop: 1.0 #D3D3D3);</span>
+    border: <span class="number">2px</span> solid <span class="preprocessor">#C4C4C3;</span>
+    border<span class="operator">-</span>bottom<span class="operator">-</span>color: <span class="preprocessor">#C2C7CB; /* same as the pane color */</span>
+    border<span class="operator">-</span>top<span class="operator">-</span>left<span class="operator">-</span>radius: <span class="number">4px</span>;
+    border<span class="operator">-</span>top<span class="operator">-</span>right<span class="operator">-</span>radius: <span class="number">4px</span>;
+    min<span class="operator">-</span>width: <span class="number">8ex</span>;
+    padding: <span class="number">2px</span>;
+}
+
+<span class="type"><a href="qtabbar.html">QTabBar</a></span><span class="operator">::</span>tab:selected<span class="operator">,</span> <span class="type"><a href="qtabbar.html">QTabBar</a></span><span class="operator">::</span>tab:hover {
+    background: qlineargradient(x1: <span class="number">0</span><span class="operator">,</span> y1: <span class="number">0</span><span class="operator">,</span> x2: <span class="number">0</span><span class="operator">,</span> y2: <span class="number">1</span><span class="operator">,</span>
+                                stop: <span class="number">0</span> <span class="preprocessor">#fafafa, stop: 0.4 #f4f4f4,</span>
+                                stop: <span class="number">0.5</span> <span class="preprocessor">#e7e7e7, stop: 1.0 #fafafa);</span>
+}
+
+<span class="type"><a href="qtabbar.html">QTabBar</a></span><span class="operator">::</span>tab:selected {
+    border<span class="operator">-</span>color: <span class="preprocessor">#9B9B9B;</span>
+    border<span class="operator">-</span>bottom<span class="operator">-</span>color: <span class="preprocessor">#C2C7CB; /* same as pane color */</span>
+}
+
+<span class="type"><a href="qtabbar.html">QTabBar</a></span><span class="operator">::</span>tab:<span class="operator">!</span>selected {
+    margin<span class="operator">-</span>top: <span class="number">2px</span>; <span class="comment">/* make non-selected tabs look smaller */</span>
+}
+
+<span class="comment">/* make use of negative margins for overlapping tabs */</span>
+<span class="type"><a href="qtabbar.html">QTabBar</a></span><span class="operator">::</span>tab:selected {
+    <span class="comment">/* expand/overlap to the left and right by 4px */</span>
+    margin<span class="operator">-</span>left: <span class="operator">-</span><span class="number">4px</span>;
+    margin<span class="operator">-</span>right: <span class="operator">-</span><span class="number">4px</span>;
+}
+
+<span class="type"><a href="qtabbar.html">QTabBar</a></span><span class="operator">::</span>tab:first:selected {
+    margin<span class="operator">-</span>left: <span class="number">0</span>; <span class="comment">/* the first selected tab has nothing to overlap with on the left */</span>
+}
+
+<span class="type"><a href="qtabbar.html">QTabBar</a></span><span class="operator">::</span>tab:last:selected {
+    margin<span class="operator">-</span>right: <span class="number">0</span>; <span class="comment">/* the last selected tab has nothing to overlap with on the right */</span>
+}
+
+<span class="type"><a href="qtabbar.html">QTabBar</a></span><span class="operator">::</span>tab:only<span class="operator">-</span>one {
+    margin: <span class="number">0</span>; <span class="comment">/* if there is only one tab, we don't want overlapping margins */</span>
+}</pre>
+<p>若要将标签栏中心（如下），我们需要以下样式表：</p>
+<p class="centerAlign"><img src="./qtqss/tabWidget-stylesheet3.png" alt=""></p><pre class="cpp"><span class="type"><a href="qtabwidget.html">QTabWidget</a></span><span class="operator">::</span>pane { <span class="comment">/* The tab widget frame */</span>
+    border<span class="operator">-</span>top: <span class="number">2px</span> solid <span class="preprocessor">#C2C7CB;</span>
+    position: absolute;
+    top: <span class="operator">-</span><span class="number">0.5em</span>;
+}
+
+<span class="type"><a href="qtabwidget.html">QTabWidget</a></span><span class="operator">::</span>tab<span class="operator">-</span>bar {
+    alignment: center;
+}
+
+<span class="comment">/* Style the tab using the tab sub-control. Note that
+    it reads QTabBar _not_ QTabWidget */</span>
+<span class="type"><a href="qtabbar.html">QTabBar</a></span><span class="operator">::</span>tab {
+    background: qlineargradient(x1: <span class="number">0</span><span class="operator">,</span> y1: <span class="number">0</span><span class="operator">,</span> x2: <span class="number">0</span><span class="operator">,</span> y2: <span class="number">1</span><span class="operator">,</span>
+                                stop: <span class="number">0</span> <span class="preprocessor">#E1E1E1, stop: 0.4 #DDDDDD,</span>
+                                stop: <span class="number">0.5</span> <span class="preprocessor">#D8D8D8, stop: 1.0 #D3D3D3);</span>
+    border: <span class="number">2px</span> solid <span class="preprocessor">#C4C4C3;</span>
+    border<span class="operator">-</span>bottom<span class="operator">-</span>color: <span class="preprocessor">#C2C7CB; /* same as the pane color */</span>
+    border<span class="operator">-</span>top<span class="operator">-</span>left<span class="operator">-</span>radius: <span class="number">4px</span>;
+    border<span class="operator">-</span>top<span class="operator">-</span>right<span class="operator">-</span>radius: <span class="number">4px</span>;
+    min<span class="operator">-</span>width: <span class="number">8ex</span>;
+    padding: <span class="number">2px</span>;
+}
+
+<span class="type"><a href="qtabbar.html">QTabBar</a></span><span class="operator">::</span>tab:selected<span class="operator">,</span> <span class="type"><a href="qtabbar.html">QTabBar</a></span><span class="operator">::</span>tab:hover {
+    background: qlineargradient(x1: <span class="number">0</span><span class="operator">,</span> y1: <span class="number">0</span><span class="operator">,</span> x2: <span class="number">0</span><span class="operator">,</span> y2: <span class="number">1</span><span class="operator">,</span>
+                                stop: <span class="number">0</span> <span class="preprocessor">#fafafa, stop: 0.4 #f4f4f4,</span>
+                                stop: <span class="number">0.5</span> <span class="preprocessor">#e7e7e7, stop: 1.0 #fafafa);</span>
+}
+
+<span class="type"><a href="qtabbar.html">QTabBar</a></span><span class="operator">::</span>tab:selected {
+    border<span class="operator">-</span>color: <span class="preprocessor">#9B9B9B;</span>
+    border<span class="operator">-</span>bottom<span class="operator">-</span>color: <span class="preprocessor">#C2C7CB; /* same as pane color */</span>
+}</pre>
+<p>撕裂指示灯和滚动按钮可以进一步自定义如下：</p>
+<pre class="cpp"><span class="type"><a href="qtabbar.html">QTabBar</a></span><span class="operator">::</span>tear {
+    image: url(tear_indicator<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qtabbar.html">QTabBar</a></span><span class="operator">::</span>scroller { <span class="comment">/* the width of the scroll buttons */</span>
+    width: <span class="number">20px</span>;
+}
+
+<span class="type"><a href="qtabbar.html">QTabBar</a></span> <span class="type"><a href="qtoolbutton.html">QToolButton</a></span> { <span class="comment">/* the scroll buttons are tool buttons */</span>
+    border<span class="operator">-</span>image: url(scrollbutton<span class="operator">.</span>png) <span class="number">2</span>;
+    border<span class="operator">-</span>width: <span class="number">2px</span>;
+}
+
+<span class="type"><a href="qtabbar.html">QTabBar</a></span> <span class="type"><a href="qtoolbutton.html">QToolButton</a></span><span class="operator">::</span>right<span class="operator">-</span>arrow { <span class="comment">/* the arrow mark in the tool buttons */</span>
+    image: url(rightarrow<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qtabbar.html">QTabBar</a></span> <span class="type"><a href="qtoolbutton.html">QToolButton</a></span><span class="operator">::</span>left<span class="operator">-</span>arrow {
+    image: url(leftarrow<span class="operator">.</span>png);
+}</pre>
+<p>Qt的4.6的关闭按钮可以自定义如下：</p>
+<pre class="cpp"><span class="type"><a href="qtabbar.html">QTabBar</a></span><span class="operator">::</span>close<span class="operator">-</span>button {
+    image: url(close<span class="operator">.</span>png)
+    subcontrol<span class="operator">-</span>position: left;
+}
+<span class="type"><a href="qtabbar.html">QTabBar</a></span><span class="operator">::</span>close<span class="operator">-</span>button:hover {
+    image: url(close<span class="operator">-</span>hover<span class="operator">.</span>png)
+}</pre>
+<a name="customizing-qtableview"></a>
+<h3>自定义 QTableView</h3>
+<p>假设我们想在我们选择的项目 <a href="qtableview.html">QTableView</a> 中有泡泡糖粉红色褪色成白色为背景</p>
+<p class="centerAlign"><img src="./qtqss/tableWidget-stylesheet.png" alt=""></p>
+<p>这是可能的 <a href="stylesheet-reference.html#selection-background-color-prop">selection-background-color</a> 属性和所需的语法是：</p>
+<pre class="cpp"><span class="type"><a href="qtableview.html">QTableView</a></span> {
+    selection<span class="operator">-</span>background<span class="operator">-</span>color: qlineargradient(x1: <span class="number">0</span><span class="operator">,</span> y1: <span class="number">0</span><span class="operator">,</span> x2: <span class="number">0.5</span><span class="operator">,</span> y2: <span class="number">0.5</span><span class="operator">,</span>
+                                stop: <span class="number">0</span> <span class="preprocessor">#FF92BB, stop: 1 white);</span>
+}</pre>
+<p>转角小部件可以使用下面的样式表来定制</p>
+<pre class="cpp"><span class="type"><a href="qtableview.html">QTableView</a></span> <span class="type">QTableCornerButton</span><span class="operator">::</span>section {
+    background: red;
+    border: <span class="number">2px</span> outset red;
+}</pre>
+<a name="customizing-qtoolbar"></a>
+<h3>自定义 QToolBar</h3>
+<p>背景和一个句柄 <a href="qtqss.html#qtoolbar">QToolBar</a> 定制如下:</p>
+<pre class="cpp"><span class="type"><a href="qtoolbar.html">QToolBar</a></span> {
+    background: red;
+    spacing: <span class="number">3px</span>; <span class="comment">/* spacing between items in the tool bar */</span>
+}
+
+<span class="type"><a href="qtoolbar.html">QToolBar</a></span><span class="operator">::</span>handle {
+    image: url(handle<span class="operator">.</span>png);
+}</pre>
+<a name="customizing-qtoolbox"></a>
+<h3>自定义 QToolBox</h3>
+<p>标签 <a href="qtoolbox.html">QToolBox</a> 正在使用的'标签'子控件定制</p>
+<pre class="cpp"><span class="type"><a href="qtoolbox.html">QToolBox</a></span><span class="operator">::</span>tab {
+    background: qlineargradient(x1: <span class="number">0</span><span class="operator">,</span> y1: <span class="number">0</span><span class="operator">,</span> x2: <span class="number">0</span><span class="operator">,</span> y2: <span class="number">1</span><span class="operator">,</span>
+                                stop: <span class="number">0</span> <span class="preprocessor">#E1E1E1, stop: 0.4 #DDDDDD,</span>
+                                stop: <span class="number">0.5</span> <span class="preprocessor">#D8D8D8, stop: 1.0 #D3D3D3);</span>
+    border<span class="operator">-</span>radius: <span class="number">5px</span>;
+    color: darkgray;
+}
+
+<span class="type"><a href="qtoolbox.html">QToolBox</a></span><span class="operator">::</span>tab:selected { <span class="comment">/* italicize selected tabs */</span>
+    font: italic;
+    color: white;
+}</pre>
+<a name="customizing-qtoolbutton"></a>
+<h3>自定义 QToolButton</h3>
+<p>有三种类型的QToolButtons</p>
+<ul>
+<li>该 <a href="qtqss.html#qtoolbutton">QToolButton</a> 没有菜单。在这种情况下 <a href="qtqss.html#qtoolbutton">QToolButton</a> 是风格酷似 <a href="qtqss.html#qpushbutton">QPushButton</a>. 见<a href="qtqss.html #customizing-qpushbutton">自定义 QPushButton</a> 的一个例子。</li>
+<li>该 <a href="qtqss.html#qtoolbutton">QToolButton</a> 拥有一个菜单，并具有 <a href="qtoolbutton.html#popupMode-prop">QToolButton::popupMode</a> 设置为 <a href="qtoolbutton.html#ToolButtonPopupMode-enum">QToolButton::DelayedPopup</a> 或者 <a href="qtoolbutton.html#ToolButtonPopupMode-enum">QToolButton::InstantPopup</a>. 在这种情况下 该 <a href="qtqss.html#qtoolbutton">QToolButton</a> 是风格酷似 <a href="qtqss.html#qpushbutton">QPushButton</a> 用的菜单。见 <a href="qtqss.html #customizing-qpushbutton">自定义 QPushButton</a> 为菜单指示器伪状态的使用的一个例子。</li>
+<li>该 <a href="qtqss.html#qtoolbutton">QToolButton</a> 拥有 <a href="qtoolbutton.html#popupMode-prop">QToolButton::popupMode</a> 设置 <a href="qtoolbutton.html#ToolButtonPopupMode-enum">QToolButton::MenuButtonPopup</a>.在这种情况下，我们的样式，如下所示：</li>
+</ul>
+<pre class="cpp"><span class="type"><a href="qtoolbutton.html">QToolButton</a></span> { <span class="comment">/* all types of tool button */</span>
+    border: <span class="number">2px</span> solid <span class="preprocessor">#8f8f91;</span>
+    border<span class="operator">-</span>radius: <span class="number">6px</span>;
+    background<span class="operator">-</span>color: qlineargradient(x1: <span class="number">0</span><span class="operator">,</span> y1: <span class="number">0</span><span class="operator">,</span> x2: <span class="number">0</span><span class="operator">,</span> y2: <span class="number">1</span><span class="operator">,</span>
+                                      stop: <span class="number">0</span> <span class="preprocessor">#f6f7fa, stop: 1 #dadbde);</span>
+}
+
+<span class="type"><a href="qtoolbutton.html">QToolButton</a></span><span class="operator">[</span>popupMode<span class="operator">=</span><span class="string">"1"</span><span class="operator">]</span> { <span class="comment">/* only for MenuButtonPopup */</span>
+    padding<span class="operator">-</span>right: <span class="number">20px</span>; <span class="comment">/* make way for the popup button */</span>
+}
+
+<span class="type"><a href="qtoolbutton.html">QToolButton</a></span>:pressed {
+    background<span class="operator">-</span>color: qlineargradient(x1: <span class="number">0</span><span class="operator">,</span> y1: <span class="number">0</span><span class="operator">,</span> x2: <span class="number">0</span><span class="operator">,</span> y2: <span class="number">1</span><span class="operator">,</span>
+                                      stop: <span class="number">0</span> <span class="preprocessor">#dadbde, stop: 1 #f6f7fa);</span>
+}
+
+<span class="comment">/* the subcontrols below are used only in the MenuButtonPopup mode */</span>
+<span class="type"><a href="qtoolbutton.html">QToolButton</a></span><span class="operator">::</span>menu<span class="operator">-</span>button {
+    border: <span class="number">2px</span> solid gray;
+    border<span class="operator">-</span>top<span class="operator">-</span>right<span class="operator">-</span>radius: <span class="number">6px</span>;
+    border<span class="operator">-</span>bottom<span class="operator">-</span>right<span class="operator">-</span>radius: <span class="number">6px</span>;
+    <span class="comment">/* 16px width + 4px for border = 20px allocated above */</span>
+    width: <span class="number">16px</span>;
+}
+
+<span class="type"><a href="qtoolbutton.html">QToolButton</a></span><span class="operator">::</span>menu<span class="operator">-</span>arrow {
+    image: url(downarrow<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qtoolbutton.html">QToolButton</a></span><span class="operator">::</span>menu<span class="operator">-</span>arrow:open {
+    top: <span class="number">1px</span>; left: <span class="number">1px</span>; <span class="comment">/* shift it a bit */</span>
+}</pre>
+<a name="customizing-qtooltip"></a>
+<h3>自定义 QToolTip</h3>
+<p><a href="qtqss.html#qtooltip">QToolTip</a> 定制酷似的 <a href="qtqss.html#qlabel">QLabel</a>. 此外，用于支持它的平台上，不透明度属性可以被设置为调整不透明度</p>
+<p>例如，</p>
+<pre class="cpp"><span class="type"><a href="qtooltip.html">QToolTip</a></span> {
+    border: <span class="number">2px</span> solid darkkhaki;
+    padding: <span class="number">5px</span>;
+    border<span class="operator">-</span>radius: <span class="number">3px</span>;
+    opacity: <span class="number">200</span>;
+}</pre>
+<a name="customizing-qtreeview"></a>
+<h3>自定义 QTreeView</h3>
+<p>交替行的背景颜色可以用下面的样式表进行定制：</p>
+<pre class="cpp"><span class="type"><a href="qtreeview.html">QTreeView</a></span> {
+    alternate<span class="operator">-</span>background<span class="operator">-</span>color: yellow;
+}</pre>
+<p>为了提供当你将鼠标悬停在项的特殊背景下，我们可以使用 <a href="stylesheet-reference.html#item-sub">::item</a> 子控件。例如，</p>
+<pre class="cpp"><span class="type"><a href="qtreeview.html">QTreeView</a></span> {
+    show<span class="operator">-</span>decoration<span class="operator">-</span>selected: <span class="number">1</span>;
+}
+
+<span class="type"><a href="qtreeview.html">QTreeView</a></span><span class="operator">::</span>item {
+     border: <span class="number">1px</span> solid <span class="preprocessor">#d9d9d9;</span>
+    border<span class="operator">-</span>top<span class="operator">-</span>color: transparent;
+    border<span class="operator">-</span>bottom<span class="operator">-</span>color: transparent;
+}
+
+<span class="type"><a href="qtreeview.html">QTreeView</a></span><span class="operator">::</span>item:hover {
+    background: qlineargradient(x1: <span class="number">0</span><span class="operator">,</span> y1: <span class="number">0</span><span class="operator">,</span> x2: <span class="number">0</span><span class="operator">,</span> y2: <span class="number">1</span><span class="operator">,</span> stop: <span class="number">0</span> <span class="preprocessor">#e7effd, stop: 1 #cbdaf1);</span>
+    border: <span class="number">1px</span> solid <span class="preprocessor">#bfcde4;</span>
+}
+
+<span class="type"><a href="qtreeview.html">QTreeView</a></span><span class="operator">::</span>item:selected {
+    border: <span class="number">1px</span> solid <span class="preprocessor">#567dbc;</span>
+}
+
+<span class="type"><a href="qtreeview.html">QTreeView</a></span><span class="operator">::</span>item:selected:active{
+    background: qlineargradient(x1: <span class="number">0</span><span class="operator">,</span> y1: <span class="number">0</span><span class="operator">,</span> x2: <span class="number">0</span><span class="operator">,</span> y2: <span class="number">1</span><span class="operator">,</span> stop: <span class="number">0</span> <span class="preprocessor">#6ea1f1, stop: 1 #567dbc);</span>
+}
+
+<span class="type"><a href="qtreeview.html">QTreeView</a></span><span class="operator">::</span>item:selected:<span class="operator">!</span>active {
+    background: qlineargradient(x1: <span class="number">0</span><span class="operator">,</span> y1: <span class="number">0</span><span class="operator">,</span> x2: <span class="number">0</span><span class="operator">,</span> y2: <span class="number">1</span><span class="operator">,</span> stop: <span class="number">0</span> <span class="preprocessor">#6b9be8, stop: 1 #577fbf);</span>
+}</pre>
+<p>一的分支 <a href="qtreeview.html">QTreeView</a> 则使用风格 <a href="stylesheet-reference.html#branch-sub">::branch</a> 子控件。绘图分支时，以下样式表颜色代码的各种状态。</p>
+<pre class="cpp"><span class="type"><a href="qtreeview.html">QTreeView</a></span><span class="operator">::</span>branch {
+        background: palette(base);
+}
+
+<span class="type"><a href="qtreeview.html">QTreeView</a></span><span class="operator">::</span>branch:has<span class="operator">-</span>siblings:<span class="operator">!</span>adjoins<span class="operator">-</span>item {
+        background: cyan;
+}
+
+<span class="type"><a href="qtreeview.html">QTreeView</a></span><span class="operator">::</span>branch:has<span class="operator">-</span>siblings:adjoins<span class="operator">-</span>item {
+        background: red;
+}
+
+<span class="type"><a href="qtreeview.html">QTreeView</a></span><span class="operator">::</span>branch:<span class="operator">!</span>has<span class="operator">-</span>children:<span class="operator">!</span>has<span class="operator">-</span>siblings:adjoins<span class="operator">-</span>item {
+        background: blue;
+}
+
+<span class="type"><a href="qtreeview.html">QTreeView</a></span><span class="operator">::</span>branch:closed:has<span class="operator">-</span>children:has<span class="operator">-</span>siblings {
+        background: pink;
+}
+
+<span class="type"><a href="qtreeview.html">QTreeView</a></span><span class="operator">::</span>branch:has<span class="operator">-</span>children:<span class="operator">!</span>has<span class="operator">-</span>siblings:closed {
+        background: gray;
+}
+
+<span class="type"><a href="qtreeview.html">QTreeView</a></span><span class="operator">::</span>branch:open:has<span class="operator">-</span>children:has<span class="operator">-</span>siblings {
+        background: magenta;
+}
+
+<span class="type"><a href="qtreeview.html">QTreeView</a></span><span class="operator">::</span>branch:open:has<span class="operator">-</span>children:<span class="operator">!</span>has<span class="operator">-</span>siblings {
+        background: green;
+}</pre>
+<p>丰富多彩的，虽然它是一个更有用的例子，可以用下面的图像进行：</p>
+<div class="table"><table class="generic">
+ <tbody><tr valign="top" class="odd"><td><img src="./qtqss/stylesheet-vline.png" alt=""></td><td><img src="./qtqss/stylesheet-branch-more.png" alt=""></td><td><img src="./qtqss/stylesheet-branch-end.png" alt=""></td><td><img src="./qtqss/stylesheet-branch-closed.png" alt=""></td><td><img src="./qtqss/stylesheet-branch-open.png" alt=""></td></tr>
+<tr valign="top" class="even"><td>vline.png</td><td>branch-more.png</td><td>branch-end.png</td><td>branch-closed.png</td><td>branch-open.png</td></tr>
+</tbody></table></div>
+<pre class="cpp"><span class="type"><a href="qtreeview.html">QTreeView</a></span><span class="operator">::</span>branch:has<span class="operator">-</span>siblings:<span class="operator">!</span>adjoins<span class="operator">-</span>item {
+    border<span class="operator">-</span>image: url(vline<span class="operator">.</span>png) <span class="number">0</span>;
+}
+
+<span class="type"><a href="qtreeview.html">QTreeView</a></span><span class="operator">::</span>branch:has<span class="operator">-</span>siblings:adjoins<span class="operator">-</span>item {
+    border<span class="operator">-</span>image: url(branch<span class="operator">-</span>more<span class="operator">.</span>png) <span class="number">0</span>;
+}
+
+<span class="type"><a href="qtreeview.html">QTreeView</a></span><span class="operator">::</span>branch:<span class="operator">!</span>has<span class="operator">-</span>children:<span class="operator">!</span>has<span class="operator">-</span>siblings:adjoins<span class="operator">-</span>item {
+    border<span class="operator">-</span>image: url(branch<span class="operator">-</span>end<span class="operator">.</span>png) <span class="number">0</span>;
+}
+
+<span class="type"><a href="qtreeview.html">QTreeView</a></span><span class="operator">::</span>branch:has<span class="operator">-</span>children:<span class="operator">!</span>has<span class="operator">-</span>siblings:closed<span class="operator">,</span>
+<span class="type"><a href="qtreeview.html">QTreeView</a></span><span class="operator">::</span>branch:closed:has<span class="operator">-</span>children:has<span class="operator">-</span>siblings {
+        border<span class="operator">-</span>image: none;
+        image: url(branch<span class="operator">-</span>closed<span class="operator">.</span>png);
+}
+
+<span class="type"><a href="qtreeview.html">QTreeView</a></span><span class="operator">::</span>branch:open:has<span class="operator">-</span>children:<span class="operator">!</span>has<span class="operator">-</span>siblings<span class="operator">,</span>
+<span class="type"><a href="qtreeview.html">QTreeView</a></span><span class="operator">::</span>branch:open:has<span class="operator">-</span>children:has<span class="operator">-</span>siblings  {
+        border<span class="operator">-</span>image: none;
+        image: url(branch<span class="operator">-</span>open<span class="operator">.</span>png);
+}</pre>
+<p>结果树视图看起来是这样的：</p>
+<p class="centerAlign"><img src="./qtqss/stylesheet-treeview.png" alt=""></p><a name="common-mistakes"></a>
+<h2 id="common-mistakes">常见错误 使用样式表时，本节列出一些常见的错误</h2>
+<a name="qpushbutton-and-images"></a>
+<h3>QPushButton and images</h3>
+<p>当造型一个 <a href="qtqss.html#qpushbutton">QPushButton</a>, 通常希望使用图像作为按钮图形。这是常见的尝试 <a href="stylesheet-reference.html#background-image-prop">background-image</a> 属性，但这有许多缺点：例如，背景会经常出现隐藏按钮装饰后面，因为它不被认为是背景。此外，如果按钮的大小时，整个背景会被拉伸或平铺，这并不总是不好看。</p>
+<p>这是更好地利用 <a href="stylesheet-reference.html#border-image-prop">border-image</a> 财产，因为它总是会显示图像，无论背景（你可以，如果它有它的alpha值与背景结合起来），它具有特殊的设置来处理按钮大小调整。</p>
+<p>考虑下面的代码片段:</p>
+<pre class="cpp">        <span class="type"><a href="qpushbutton.html">QPushButton</a></span> {
+            color: grey;
+            border<span class="operator">-</span>image: url(<span class="operator">/</span>home<span class="operator">/</span>kamlie<span class="operator">/</span>code<span class="operator">/</span>button<span class="operator">.</span>png) <span class="number">3</span> <span class="number">10</span> <span class="number">3</span> <span class="number">10</span>;
+            border<span class="operator">-</span>top: <span class="number">3px</span> transparent;
+            border<span class="operator">-</span>bottom: <span class="number">3px</span> transparent;
+            border<span class="operator">-</span>right: <span class="number">10px</span> transparent;
+            border<span class="operator">-</span>left: <span class="number">10px</span> transparent;
+        }</pre>
+<p>这将产生一个按钮，看起来像这样：</p>
+<p class="centerAlign"><img src="./qtqss/stylesheet-border-image-normal.png" alt=""></p><p>在URL后的数字分别赋予像素的上，右，下和左数。这些数字对应的边界，不应该当伸展大小的变化。无论何时调整按钮，图像的中间部分将在两个方向上拉伸，而在样式表中不会指定的像素。这使得该按钮的边框看起来更自然，就像这样：</p>
+<div class="table"><table class="generic">
+ <tbody><tr valign="top" class="odd"><td><img src="./qtqss/stylesheet-border-image-stretched.png" alt=""></td></tr>
+<tr valign="top" class="even">
+  <td>圆形边界</td></tr>
+</tbody></table></div>
+<div class="table"><table class="generic">
+ <tbody><tr valign="top" class="odd"><td><img src="./qtqss/stylesheet-border-image-wrong.png" alt=""></td></tr>
+<tr valign="top" class="even">
+  <td>无边界</td></tr>
+</tbody></table></div>
+</div>
+<p><b>另请参见 </b><a href="qt-widgets-stylesheet-example.html">Style Sheet Example</a>, <a href="richtext-html-subset.html">Supported HTML Subset</a>, and <a href="qtqss.html#qstyle">QStyle</a>.</p>
+<!-- @@@stylesheet-examples.html -->
+<p class="naviNextPrevious footerNavi">
+<a class="prevPage" href="stylesheet-reference.html">Qt Style Sheets Reference</a>
+Qt的样式表参考</p>
+   </div>
+   
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer"><footer id="footerbar">
+    <div class="footer-main">
+            <div class="container clearfix">
+                <nav class="footer-nav clearfix">
+                    <div class="menu-footer-menu-container"></div></nav>
+
+    
+</div>
+</div>
+<div class="disclaimer">
+<div class="container clearfix no_discs">
+    <ul id="menu-footer-submenu" class="right clearfix">
+      <li id="menu-item-17853" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17853"><a href="http://www.cafepress.com/theqtcompany">Qt Merchandise</a></li>
+      <li id="menu-item-1795" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1795"><a title="Sign into your account." href="https://account.qt.io/login">Sign In</a></li>
+      <li id="menu-item-10375" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10375"><a href="mailto:feedback@theqtcompany.com?Subject=Feedback%20about%20doc.qt.io%20site">Feedback</a></li>
+      <li id="menu-item-4472" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4472"><a href="http://qt.io/about-us/">© 2016 The Qt Company</a></li>
+    </ul>
+</div>
+</div>
+</footer>
+</div>
+
+
+<table cellspacing="0" cellpadding="0" class="gstl_50 gssb_c" style="width: 628px; display: none; top: 186px; position: absolute; left: 952px;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div></body></html>

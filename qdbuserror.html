@@ -1,0 +1,248 @@
+﻿<html>
+<head>
+<title>QDBusError Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDBusError Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdbus.html">QtDBus</a> module]</sup></sup>
+</h1>
+<p>该QDBusError类代表从D - Bus总线或从总线发现远程应用程序收到一个错误。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qdbuserror.html#ErrorType-enum" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html#ErrorType-enum">ErrorType</a></b> { NoError, Other, Failed, NoMemory, ..., InvalidMember }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdbuserror.html#QDBusError" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html#QDBusError">__init__</a></b> (<i>self</i>, QDBusError <i>other</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdbuserror.html#isValid" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html#isValid">isValid</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdbuserror.html#message" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html#message">message</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdbuserror.html#name" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html#name">name</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>ErrorType <b><a href="qdbuserror.html#type" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html#type">type</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul><li>
+<div class="fn"></div>QString <b><a href="qdbuserror.html#errorString" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html#errorString">errorString</a></b> (ErrorType <i>error</i>)</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDBusError类代表从D - Bus总线或从总线发现远程应用程序收到一个错误。</p>
+<p>当使用D - Bus总线服务或远程应用程序通过D-Bus处理，一些错误情况可能会发生。这个错误条件是通过返回错误值或由QDBusError有时信号。</p>
+<p>C + +和Java的例外是D-Bus的错误，一个有效的比喻：不是有一个返回值，远程应用程序和总线正常返回可能决定抛出一个错误条件。然而，本<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdbus.html">QtDBus</a>实现不使用C + +异常抛出机制，所以你会收到QDBusErrors在返回的答复（见<a href="qdbusreply.html#error" tppabs="http://pyqt4doc.appspot.com/qdbusreply.html#error">QDBusReply.error</a>（））。</p>
+<p>QDBusError对象用于检查错误名称和距离公共汽车站和远程应用程序收到的消息。你不应该自己创建这些对象的信号错误条件从D-Bus的调用时：相反，使用<a href="qdbusmessage.html#createError" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#createError">QDBusMessage.createError</a>（）和<a href="qdbusconnection.html#send" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#send">QDBusConnection.send</a>（ ） 。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="ErrorType-enum"></a>QDBusError.ErrorType</h3>
+<p>为了便于核查的D-Bus的执行和总线守护程序本身产生的最常见的D-Bus错误，<a href="qdbuserror.html" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html">QDBusError</a>可以比作一组预先定义的值：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.NoError</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">
+<a href="qdbuserror.html" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html">QDBusError</a>是无效的（即，调用成功）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.Other</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">
+<a href="qdbuserror.html" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html">QDBusError</a>包含错误，它是众所周知的之一</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.Failed</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">调用失败（<tt>org.freedesktop.DBus.Error.Failed</tt>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.NoMemory</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">出存储器（<tt>org.freedesktop.DBus.Error.NoMemory</tt>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.ServiceUnknown</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">被调用的服务是未知的（<tt>org.freedesktop.DBus.Error.ServiceUnknown</tt>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.NoReply</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">被调用的方法没有在指定的超时时间内答复（<tt>org.freedesktop.DBus.Error.NoReply</tt>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.BadAddress</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">给出的地址是无效的（<tt>org.freedesktop.DBus.Error.BadAddress</tt>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.NotSupported</tt></td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">不支持通话/操作（<tt>org.freedesktop.DBus.Error.NotSupported</tt>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.LimitsExceeded</tt></td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">分配给此进程/呼叫/连接的限制超出了预先定义的值（<tt>org.freedesktop.DBus.Error.LimitsExceeded</tt>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.AccessDenied</tt></td>
+<td class="topAlign"><tt>9</tt></td>
+<td class="topAlign">呼叫/操作试图访问一个资源它不允许（<tt>org.freedesktop.DBus.Error.AccessDenied</tt>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.NoServer</tt></td>
+<td class="topAlign"><tt>10</tt></td>
+<td class="topAlign">
+<i>Documentation doesn't say what this is
+for</i>（<tt>org.freedesktop.DBus.Error.NoServer</tt>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.Timeout</tt></td>
+<td class="topAlign"><tt>11</tt></td>
+<td class="topAlign">
+<i>Documentation doesn't say what this is for
+or how it's used</i>（<tt>org.freedesktop.DBus.Error.Timeout</tt>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.NoNetwork</tt></td>
+<td class="topAlign"><tt>12</tt></td>
+<td class="topAlign">
+<i>Documentation doesn't say what this is
+for</i>（<tt>org.freedesktop.DBus.Error.NoNetwork</tt>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.AddressInUse</tt></td>
+<td class="topAlign"><tt>13</tt></td>
+<td class="topAlign">QDBusServer试图绑定到一个地址已被使用（<tt>org.freedesktop.DBus.Error.AddressInUse</tt>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.Disconnected</tt></td>
+<td class="topAlign"><tt>14</tt></td>
+<td class="topAlign">呼叫/进程/消息被发送后，<a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a>断开（<tt>org.freedesktop.DBus.Error.Disconnected</tt>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.InvalidArgs</tt></td>
+<td class="topAlign"><tt>15</tt></td>
+<td class="topAlign">传递给这个调用/操作的参数是无效的（<tt>org.freedesktop.DBus.Error.InvalidArgs</tt>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.UnknownMethod</tt></td>
+<td class="topAlign"><tt>16</tt></td>
+<td class="topAlign">在这个对象/接口与给定的参数（未找到调用的方法<tt>org.freedesktop.DBus.Error.UnknownMethod</tt>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.TimedOut</tt></td>
+<td class="topAlign"><tt>17</tt></td>
+<td class="topAlign">
+<i>Documentation doesn't say...</i>（<tt>org.freedesktop.DBus.Error.TimedOut</tt>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.InvalidSignature</tt></td>
+<td class="topAlign"><tt>18</tt></td>
+<td class="topAlign">类型签名是无效的或兼容（<tt>org.freedesktop.DBus.Error.InvalidSignature</tt>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.UnknownInterface</tt></td>
+<td class="topAlign"><tt>19</tt></td>
+<td class="topAlign">该接口是不为人所知的</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.InternalError</tt></td>
+<td class="topAlign"><tt>20</tt></td>
+<td class="topAlign">发生内部错误（<tt>com.trolltech.QtDBus.Error.InternalError</tt>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.InvalidObjectPath</tt></td>
+<td class="topAlign"><tt>23</tt></td>
+<td class="topAlign">提供的对象路径无效。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.InvalidService</tt></td>
+<td class="topAlign"><tt>22</tt></td>
+<td class="topAlign">所请求的服务无效。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.InvalidMember</tt></td>
+<td class="topAlign"><tt>25</tt></td>
+<td class="topAlign">该部件是无效的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.InvalidInterface</tt></td>
+<td class="topAlign"><tt>24</tt></td>
+<td class="topAlign">该接口是无效的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusError.UnknownObject</tt></td>
+<td class="topAlign"><tt>21</tt></td>
+<td class="topAlign">远程对象找不到。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDBusError"></a>QDBusError.__init__ (<i>self</i>, <a href="qdbuserror.html" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html">QDBusError</a> <i>other</i>)</h3>
+<h3 class="fn">
+<a name="errorString"></a>QString QDBusError.errorString (<a href="qdbuserror.html#ErrorType-enum" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html#ErrorType-enum">ErrorType</a> <i>error</i>)</h3>
+<p>返回与错误情况相关联的错误名称<i>error</i>。</p>
+<p>此功能被引入Qt的4.3 。</p>
+
+
+<h3 class="fn">
+<a name="isValid"></a>bool QDBusError.isValid (<i>self</i>)</h3>
+<p>返回True如果这是一个有效的错误条件（例如，如果有一个错误） ，否则为False 。</p>
+
+
+<h3 class="fn">
+<a name="message"></a>QString QDBusError.message (<i>self</i>)</h3>
+<p>返回被叫与此错误相关的消息。错误信息是实现定义的，通常包含人类可读的错误代码，虽然这并不意味着它是适合您的最终用户。</p>
+
+
+<h3 class="fn">
+<a name="name"></a>QString QDBusError.name (<i>self</i>)</h3>
+<p>返回这个错误的名字。错误名称类似的D-Bus接口的名称，如<tt>org.freedesktop.DBus.InvalidArgs</tt>。</p>
+<p><b>See also</b> <a href="qdbuserror.html#type" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html#type">type</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="type"></a><a href="qdbuserror.html#ErrorType-enum" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html#ErrorType-enum">ErrorType</a> QDBusError.type (<i>self</i>)</h3>
+<p>返回此错误的<a href="qdbuserror.html#ErrorType-enum" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html#ErrorType-enum">ErrorType</a>。</p>
+<p><b>See also</b> <a href="qdbuserror.html#ErrorType-enum" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html#ErrorType-enum">ErrorType</a>。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

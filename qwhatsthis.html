@@ -1,0 +1,123 @@
+﻿<html>
+<head>
+<title>QWhatsThis Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QWhatsThis Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QWhatsThis类提供的任何部件的简单描述，即回答“这是什么？ ” 。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul><li>
+<div class="fn"></div>
+<b><a href="qwhatsthis.html#QWhatsThis" tppabs="http://pyqt4doc.appspot.com/qwhatsthis.html#QWhatsThis">__init__</a></b> (<i>self</i>, QWhatsThis)</li></ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QAction <b><a href="qwhatsthis.html#createAction" tppabs="http://pyqt4doc.appspot.com/qwhatsthis.html#createAction">createAction</a></b> (QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwhatsthis.html#enterWhatsThisMode" tppabs="http://pyqt4doc.appspot.com/qwhatsthis.html#enterWhatsThisMode">enterWhatsThisMode</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwhatsthis.html#hideText" tppabs="http://pyqt4doc.appspot.com/qwhatsthis.html#hideText">hideText</a></b> ()</li>
+<li>
+<div class="fn"></div>bool <b><a href="qwhatsthis.html#inWhatsThisMode" tppabs="http://pyqt4doc.appspot.com/qwhatsthis.html#inWhatsThisMode">inWhatsThisMode</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwhatsthis.html#leaveWhatsThisMode" tppabs="http://pyqt4doc.appspot.com/qwhatsthis.html#leaveWhatsThisMode">leaveWhatsThisMode</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwhatsthis.html#showText" tppabs="http://pyqt4doc.appspot.com/qwhatsthis.html#showText">showText</a></b> (QPoint <i>pos</i>, QString <i>text</i>, QWidget <i>widget</i> = None)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QWhatsThis类提供的任何部件的简单描述，即回答“这是什么？ ” 。</p>
+<p>“这是什么？ ”帮助是一个应用程序的联机帮助系统的一部分，并为用户提供有关特定组件的功能和使用信息。 “这是什么？ ”帮助文本通常是更长，更详细的比<a href="qtooltip.html" tppabs="http://pyqt4doc.appspot.com/qtooltip.html">tooltips</a>，但通常提供比由单独的帮助窗口提供的信息较少。</p>
+<p>QWhatsThis提供单一窗口弹出当用户要求的说明文字“这是什么？ ” 。默认方式为用户问的问题是将焦点移动到相关窗口小部件，然后按Shift + F1键。帮助文本立即出现，它就会消失，一旦用户做别的东西。 （请注意，如果有一个Shift + F1键的快捷方式，这种机制将不起作用。 ）某些对话框提供了一个“ ？ ”按钮，用户可以点击进入“这是什么？ ”模式，它们然后单击相关的小工具，弹出“这是什么？ ”窗口。它也可以提供AA选项菜单或工具栏按钮，切换到“这是什么？ ”模式。</p>
+<p>要添加“这是什么？ ”文本窗口小部件或一个动作，你只需要调用<a href="qwidget.html#whatsThis-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#whatsThis-prop">QWidget.setWhatsThis</a>（）或<a href="qaction.html#whatsThis-prop" tppabs="http://pyqt4doc.appspot.com/qaction.html#whatsThis-prop">QAction.setWhatsThis</a>（ ） 。</p>
+<p>文本可以是富文本或纯文本。如果指定了丰富的文本格式的字符串，它会使用默认的样式表来呈现，从而有可能在显示的文本插入图片。要尽可能快，默认的样式表使用一个简单的方法来确定文本是否可以呈现为纯文本。看<a href="qt.html#mightBeRichText" tppabs="http://pyqt4doc.appspot.com/qt.html#mightBeRichText">Qt.mightBeRichText</a>（ ）了解详情。</p>
+<pre class="cpp">
+     newAct <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a></span>(tr(<span class="string">"&amp;New"</span>)<span class="operator">,</span> <span class="keyword">this</span>);
+     newAct<span class="operator">-</span><span class="operator">&gt;</span>setShortcut(tr(<span class="string">"Ctrl+N"</span>));
+     newAct<span class="operator">-</span><span class="operator">&gt;</span>setStatusTip(tr(<span class="string">"Create a new file"</span>));
+     newAct<span class="operator">-</span><span class="operator">&gt;</span>setWhatsThis(tr(<span class="string">"Click this option to create a new file."</span>));
+</pre>
+<p>进入另一种方式“这是什么？ ”模式是调用<a href="qwhatsthis.html#createAction" tppabs="http://pyqt4doc.appspot.com/qwhatsthis.html#createAction">createAction</a>（ ） ，并添加返回<a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a>要么菜单或工具栏。通过调用这方面的帮助作用（在下面的图片，用箭头和问号图标的按钮） ，用户切换到“这是什么？ ”模式。如果他们现在点击窗口小部件会显示相应的说明文字。当帮助时或者当用户按下Esc键的方式离开了。</p>
+<p class="centerAlign"><img alt="" src="images/whatsthis.png"></p>
+<p>您可以输入“这是什么？ ”模式与编程<a href="qwhatsthis.html#enterWhatsThisMode" tppabs="http://pyqt4doc.appspot.com/qwhatsthis.html#enterWhatsThisMode">enterWhatsThisMode</a>（ ） ，检查模式<a href="qwhatsthis.html#inWhatsThisMode" tppabs="http://pyqt4doc.appspot.com/qwhatsthis.html#inWhatsThisMode">inWhatsThisMode</a>（ ） ，并返回到正常模式<a href="qwhatsthis.html#leaveWhatsThisMode" tppabs="http://pyqt4doc.appspot.com/qwhatsthis.html#leaveWhatsThisMode">leaveWhatsThisMode</a>（ ） 。</p>
+<p>如果你想控制的“这是什么？ ”一个小部件的行为手动见<a href="qt.html#WidgetAttribute-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#WidgetAttribute-enum">Qt.WA_CustomWhatsThis</a>。</p>
+<p>另外，也可以显示不同的帮助文本窗口小部件的不同区域，通过使用<a href="qhelpevent.html" tppabs="http://pyqt4doc.appspot.com/qhelpevent.html">QHelpEvent</a>类型<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.WhatsThis</a>。拦截在你的widget的帮助事件<a href="qwidget.html#event" tppabs="http://pyqt4doc.appspot.com/qwidget.html#event">QWidget.event</a>（ ）函数和调用<a href="qwhatsthis.html#showText" tppabs="http://pyqt4doc.appspot.com/qwhatsthis.html#showText">QWhatsThis.showText</a>（ ）与文本要显示在指定的位置<a href="qhelpevent.html#pos" tppabs="http://pyqt4doc.appspot.com/qhelpevent.html#pos">QHelpEvent.pos</a>（ ） 。如果文本是丰富的文本和用户点击一个链接时，窗口小部件也接收<a href="qwhatsthisclickedevent.html" tppabs="http://pyqt4doc.appspot.com/qwhatsthisclickedevent.html">QWhatsThisClickedEvent</a>与该链接的引用作为<a href="qwhatsthisclickedevent.html#href" tppabs="http://pyqt4doc.appspot.com/qwhatsthisclickedevent.html#href">QWhatsThisClickedEvent.href</a>（ ） 。如果<a href="qwhatsthisclickedevent.html" tppabs="http://pyqt4doc.appspot.com/qwhatsthisclickedevent.html">QWhatsThisClickedEvent</a>处理（即<a href="qwidget.html#event" tppabs="http://pyqt4doc.appspot.com/qwidget.html#event">QWidget.event</a>（ ）返回True ） ，帮助窗口仍然可见。通话<a href="qwhatsthis.html#hideText" tppabs="http://pyqt4doc.appspot.com/qwhatsthis.html#hideText">QWhatsThis.hideText</a>（ ）显式地将其隐藏。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QWhatsThis"></a>QWhatsThis.__init__ (<i>self</i>, <a href="qwhatsthis.html" tppabs="http://pyqt4doc.appspot.com/qwhatsthis.html">QWhatsThis</a>)</h3>
+<h3 class="fn">
+<a name="createAction"></a><a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a> QWhatsThis.createAction (<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>返回一个现成的<a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a>，用于调用“这是什么？ ”上下文帮助，用给定的<i>parent</i>。</p>
+<p>返回<a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a>提供了一个便捷的方式，让用户输入“这是什么？ ”模式。</p>
+
+
+<h3 class="fn">
+<a name="enterWhatsThisMode"></a>QWhatsThis.enterWhatsThisMode ()</h3>
+<p>该功能切换用户界面进入“这是什么？ ”模式。用户界面可以切换回正常模式由用户（例如，通过他们点击或按下Esc键） ，或以编程方式通过调用<a href="qwhatsthis.html#leaveWhatsThisMode" tppabs="http://pyqt4doc.appspot.com/qwhatsthis.html#leaveWhatsThisMode">leaveWhatsThisMode</a>（ ） 。</p>
+<p>当进入“这是什么？ ”模式中，一个<a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>类型Qt.EnterWhatsThisMode被发送到所有顶层窗口小部件。</p>
+<p><b>See also</b> <a href="qwhatsthis.html#inWhatsThisMode" tppabs="http://pyqt4doc.appspot.com/qwhatsthis.html#inWhatsThisMode">inWhatsThisMode</a>（）和<a href="qwhatsthis.html#leaveWhatsThisMode" tppabs="http://pyqt4doc.appspot.com/qwhatsthis.html#leaveWhatsThisMode">leaveWhatsThisMode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hideText"></a>QWhatsThis.hideText ()</h3>
+<p>如果“这是什么？ ”窗口显示，这会破坏它。</p>
+<p><b>See also</b> <a href="qwhatsthis.html#showText" tppabs="http://pyqt4doc.appspot.com/qwhatsthis.html#showText">showText</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="inWhatsThisMode"></a>bool QWhatsThis.inWhatsThisMode ()</h3>
+<p>返回True如果用户界面是“这是什么？ ”模式，否则返回False 。</p>
+<p><b>See also</b> <a href="qwhatsthis.html#enterWhatsThisMode" tppabs="http://pyqt4doc.appspot.com/qwhatsthis.html#enterWhatsThisMode">enterWhatsThisMode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="leaveWhatsThisMode"></a>QWhatsThis.leaveWhatsThisMode ()</h3>
+<p>如果用户界面是“这是什么？ ”模式下，该功能切换回正常模式，否则它什么也不做。</p>
+<p>当离开“这是什么？ ”模式中，一个<a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>类型Qt.LeaveWhatsThisMode被发送到所有顶层窗口小部件。</p>
+<p><b>See also</b> <a href="qwhatsthis.html#enterWhatsThisMode" tppabs="http://pyqt4doc.appspot.com/qwhatsthis.html#enterWhatsThisMode">enterWhatsThisMode</a>（）和<a href="qwhatsthis.html#inWhatsThisMode" tppabs="http://pyqt4doc.appspot.com/qwhatsthis.html#inWhatsThisMode">inWhatsThisMode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="showText"></a>QWhatsThis.showText (<a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>pos</i>, QString <i>text</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>widget</i> = None)</h3>
+<p>Shows <i>text</i>作为一个“这是什么？ ”窗口，在全球地位<i>pos</i>。可选的窗口小部件的参数，<i>w</i>，用于确定在多磁头系统相应的屏幕。</p>
+<p><b>See also</b> <a href="qwhatsthis.html#hideText" tppabs="http://pyqt4doc.appspot.com/qwhatsthis.html#hideText">hideText</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

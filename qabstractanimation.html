@@ -1,0 +1,348 @@
+﻿<html>
+<head>
+<title>QAbstractAnimation Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · 
+<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · 
+<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a>  · 
+ 
+</td>
+</table>
+<h1 align="center">QAbstractAnimation Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QAbstractAnimation类是所有动画的基础。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<p>通过继承<a href="qanimationgroup.html" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html">QAnimationGroup</a>，<a href="qpauseanimation.html" tppabs="http://pyqt4doc.appspot.com/qpauseanimation.html">QPauseAnimation</a>和<a href="qvariantanimation.html" tppabs="http://pyqt4doc.appspot.com/qvariantanimation.html">QVariantAnimation</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qabstractanimation.html#DeletionPolicy-enum" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#DeletionPolicy-enum">DeletionPolicy</a></b> { KeepWhenStopped, DeleteWhenStopped }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qabstractanimation.html#Direction-enum" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#Direction-enum">Direction</a></b> { Forward, Backward }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qabstractanimation.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#State-enum">State</a></b> { Stopped, Paused, Running }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractanimation.html#QAbstractAnimation" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#QAbstractAnimation">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractanimation.html#currentLoop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#currentLoop">currentLoop</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractanimation.html#currentLoopTime" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#currentLoopTime">currentLoopTime</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractanimation.html#currentTime" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#currentTime">currentTime</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Direction <b><a href="qabstractanimation.html#direction" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#direction">direction</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractanimation.html#duration" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#duration">duration</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractanimation.html#event" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#event">event</a></b> (<i>self</i>, QEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>QAnimationGroup <b><a href="qabstractanimation.html#group" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#group">group</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractanimation.html#loopCount" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#loopCount">loopCount</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractanimation.html#pause" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#pause">pause</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractanimation.html#resume" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#resume">resume</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractanimation.html#setCurrentTime" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#setCurrentTime">setCurrentTime</a></b> (<i>self</i>, int <i>msecs</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractanimation.html#setDirection" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#setDirection">setDirection</a></b> (<i>self</i>, Direction <i>direction</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractanimation.html#setLoopCount" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#setLoopCount">setLoopCount</a></b> (<i>self</i>, int <i>loopCount</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractanimation.html#setPaused" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#setPaused">setPaused</a></b> (<i>self</i>, bool)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractanimation.html#start" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#start">start</a></b> (<i>self</i>, DeletionPolicy <i>policy</i> = QAbstractAnimation.KeepWhenStopped)</li>
+<li>
+<div class="fn"></div>State <b><a href="qabstractanimation.html#state" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#state">state</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractanimation.html#stop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#stop">stop</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractanimation.html#totalDuration" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#totalDuration">totalDuration</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractanimation.html#updateCurrentTime" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#updateCurrentTime">updateCurrentTime</a></b> (<i>self</i>, int <i>currentTime</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractanimation.html#updateDirection" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#updateDirection">updateDirection</a></b> (<i>self</i>, Direction <i>direction</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractanimation.html#updateState" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#updateState">updateState</a></b> (<i>self</i>, State <i>newState</i>, State <i>oldState</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qabstractanimation.html#currentLoopChanged" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#currentLoopChanged">currentLoopChanged</a></b> (int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractanimation.html#directionChanged" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#directionChanged">directionChanged</a></b> (QAbstractAnimation::Direction)</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractanimation.html#finished" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#finished">finished</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractanimation.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#stateChanged">stateChanged</a></b> (QAbstractAnimation::State,QAbstractAnimation::State)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QAbstractAnimation类是所有动画的基础。</p>
+<p>这个类定义了所有的动画共享的功能的功能。通过继承这个类，您可以创建自定义动画，插入的动画框架的其馀部分。</p>
+<p>动画的进度是由它的当前时间（给定<a href="qabstractanimation.html#currentLoopTime" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#currentLoopTime">currentLoopTime</a>（）），这是从动画开始以毫秒为单位（0）到它的端部（<a href="qabstractanimation.html#duration-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#duration-prop">duration</a>（））。动画运行时的值会自动更新。它也可以直接与设置<a href="qabstractanimation.html#currentTime-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#currentTime-prop">setCurrentTime</a>（ ） 。</p>
+<p>在任何时候动画是在三种状态之一：<a href="qabstractanimation.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#State-enum">Running</a>，<a href="qabstractanimation.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#State-enum">Stopped</a>或<a href="qabstractanimation.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#State-enum">Paused</a> - 被定义<a href="qabstractanimation.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#State-enum">State</a>枚举。目前的状态可以通过调用改变<a href="qabstractanimation.html#start" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#start">start</a>（ ）<a href="qabstractanimation.html#stop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#stop">stop</a>（ ）<a href="qabstractanimation.html#pause" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#pause">pause</a>（） ，或<a href="qabstractanimation.html#resume" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#resume">resume</a>（ ） 。动画将重新设定其<a href="qabstractanimation.html#currentTime-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#currentTime-prop">current time</a>当它被启动。如果暂停，它会继续恢复时相同的当前时间。当动画停止时，它不能被恢复，但将保持其当前时间（直到再次启动）。 QAbstractAnimation会发出<a href="qabstractanimation.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#stateChanged">stateChanged</a>（ ）每当它的状态的变化。</p>
+<p>动画可以循环通过设置任意数量的倍<a href="qabstractanimation.html#loopCount-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#loopCount-prop">loopCount</a>属性。当动画的当前时间达到<a href="qabstractanimation.html#duration-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#duration-prop">duration</a>（ ） ，它会重置当前的时间，并保持运行。为1，循环次数（默认值）表示该动画将运行一次。需要注意的是-1的持续时间意味着动画将运行到停止，当前的时间将增加下去。当当前时间等于<a href="qabstractanimation.html#duration-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#duration-prop">duration</a>（）和动画是在其最后循环中，<a href="qabstractanimation.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#State-enum">Stopped</a>进入状态，而<a href="qabstractanimation.html#finished" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#finished">finished</a>（）信号被发射。</p>
+<p>QAbstractAnimation提供由子类用于跟踪动画的进度纯虚函数：<a href="qabstractanimation.html#duration-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#duration-prop">duration</a>（）和<a href="qabstractanimation.html#updateCurrentTime" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#updateCurrentTime">updateCurrentTime</a>（ ） 。该<a href="qabstractanimation.html#duration-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#duration-prop">duration</a>（ ）函数可以报告一个持续时间为动画（如上所述） 。动画框架调用<a href="qabstractanimation.html#updateCurrentTime" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#updateCurrentTime">updateCurrentTime</a>（ ）时，当前时间已更改。通过重新实现此功能，您可以跟踪动画进度。请注意，无论呼叫也不调用该函数的数量之间的间隔被定义，虽然，它通常是每秒60更新。</p>
+<p>通过重新实现<a href="qabstractanimation.html#updateState" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#updateState">updateState</a>（ ） ，你可以跟踪动画的状态发生变化，这是不是由时间驱动的动画特别有用。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="DeletionPolicy-enum"></a>QAbstractAnimation.DeletionPolicy</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractAnimation.KeepWhenStopped</tt>
+</td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">停止时的动画效果将不会被删除。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractAnimation.DeleteWhenStopped</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">停止时，动画将被自动删除。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="Direction-enum"></a>QAbstractAnimation.Direction</h3>
+<p>这个枚举变量描述了动画的方向时，<a href="qabstractanimation.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#State-enum">Running</a>状态。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractAnimation.Forward</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">随时间的增加动画的当前时间（即从0到接近尾声/时间移动） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractAnimation.Backward</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">随着时间（即从底/持续时间和对0移动）动画的当前时间减少。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qabstractanimation.html#direction-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#direction-prop">direction</a>。</p>
+
+
+<h3 class="fn">
+<a name="State-enum"></a>QAbstractAnimation.State</h3>
+<p>这个枚举变量描述了动画的状态。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractAnimation.Stopped</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">动画没有运行。这是初始状态<a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a>，和国家<a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a>重新进入时完成。当前时间保持不变，直至<a href="qabstractanimation.html#currentTime-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#currentTime-prop">setCurrentTime</a>（）被调用，或动画是通过调用启动<a href="qabstractanimation.html#start" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#start">start</a>（ ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractAnimation.Paused</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">动画暂停（即暂停） 。调用<a href="qabstractanimation.html#resume" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#resume">resume</a>（ ）将恢复动画活动。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractAnimation.Running</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">在动画运行。而控制是在事件循环，<a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a>将定期更新其当前的时间，调用<a href="qabstractanimation.html#updateCurrentTime" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#updateCurrentTime">updateCurrentTime</a>（ ）在适当的时候。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qabstractanimation.html#state-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#state-prop">state</a>（）和<a href="qabstractanimation.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#stateChanged">stateChanged</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QAbstractAnimation"></a>QAbstractAnimation.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构建<a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a>基类和通行证<i>parent</i>至<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>的构造。</p>
+<p><b>See also</b> <a href="qvariantanimation.html" tppabs="http://pyqt4doc.appspot.com/qvariantanimation.html">QVariantAnimation</a>和<a href="qanimationgroup.html" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html">QAnimationGroup</a>。</p>
+
+
+<h3 class="fn">
+<a name="currentLoop"></a>int QAbstractAnimation.currentLoop (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="currentLoopTime"></a>int QAbstractAnimation.currentLoopTime (<i>self</i>)</h3>
+<p>返回当前循环内的当前时间。它可以从0到<a href="qabstractanimation.html#duration-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#duration-prop">duration</a>（ ） 。</p>
+<p><b>See also</b> <a href="qabstractanimation.html#duration-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#duration-prop">duration</a>（）和<a href="qabstractanimation.html#currentTime-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#currentTime-prop">currentTime</a>。</p>
+
+
+<h3 class="fn">
+<a name="currentTime"></a>int QAbstractAnimation.currentTime (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="direction"></a><a href="qabstractanimation.html#Direction-enum" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#Direction-enum">Direction</a> QAbstractAnimation.direction (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="duration"></a>int QAbstractAnimation.duration (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<h3 class="fn">
+<a name="event"></a>bool QAbstractAnimation.event (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">QObject.event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="group"></a><a href="qanimationgroup.html" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html">QAnimationGroup</a> QAbstractAnimation.group (<i>self</i>)</h3>
+<p>如果这个动画的一部分<a href="qanimationgroup.html" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html">QAnimationGroup</a>，这个函数返回一个指针到组，否则返回0 。</p>
+<p><b>See also</b> <a href="qanimationgroup.html#addAnimation" tppabs="http://pyqt4doc.appspot.com/qanimationgroup.html#addAnimation">QAnimationGroup.addAnimation</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="loopCount"></a>int QAbstractAnimation.loopCount (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="pause"></a>QAbstractAnimation.pause (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void pause()</tt>。</p>
+<p>暂停动画。当动画暂停时，<a href="qabstractanimation.html#state-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#state-prop">state</a>（）返回暂停。价值<a href="qabstractanimation.html#currentTime-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#currentTime-prop">currentTime</a>将保持不变，直到<a href="qabstractanimation.html#resume" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#resume">resume</a>（）或<a href="qabstractanimation.html#start" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#start">start</a>（）被调用。如果你想从当前时间继续，请致电<a href="qabstractanimation.html#resume" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#resume">resume</a>（ ） 。</p>
+<p><b>See also</b> <a href="qabstractanimation.html#start" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#start">start</a>（ ）<a href="qabstractanimation.html#state-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#state-prop">state</a>（）和<a href="qabstractanimation.html#resume" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#resume">resume</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="resume"></a>QAbstractAnimation.resume (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void resume()</tt>。</p>
+<p>它恢复暂停后动画。当动画恢复时，它发出的恢复（）和<a href="qabstractanimation.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#stateChanged">stateChanged</a>（ ）信号。该currentTime的不被改变。</p>
+<p><b>See also</b> <a href="qabstractanimation.html#start" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#start">start</a>（ ）<a href="qabstractanimation.html#pause" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#pause">pause</a>（）和<a href="qabstractanimation.html#state-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#state-prop">state</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCurrentTime"></a>QAbstractAnimation.setCurrentTime (<i>self</i>, int <i>msecs</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setCurrentTime(int)</tt>。</p>
+<h3 class="fn">
+<a name="setDirection"></a>QAbstractAnimation.setDirection (<i>self</i>, <a href="qabstractanimation.html#Direction-enum" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#Direction-enum">Direction</a> <i>direction</i>)</h3>
+<h3 class="fn">
+<a name="setLoopCount"></a>QAbstractAnimation.setLoopCount (<i>self</i>, int <i>loopCount</i>)</h3>
+<h3 class="fn">
+<a name="setPaused"></a>QAbstractAnimation.setPaused (<i>self</i>, bool)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setPaused(bool)</tt>。</p>
+<p>If <i>paused</i>诚然，动画暂停。如果<i>paused</i>是假的，动画重新开始。</p>
+<p><b>See also</b> <a href="qabstractanimation.html#state-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#state-prop">state</a>（ ）<a href="qabstractanimation.html#pause" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#pause">pause</a>（）和<a href="qabstractanimation.html#resume" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#resume">resume</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="start"></a>QAbstractAnimation.start (<i>self</i>, <a href="qabstractanimation.html#DeletionPolicy-enum" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#DeletionPolicy-enum">DeletionPolicy</a> <i>policy</i> = QAbstractAnimation.KeepWhenStopped)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void start(QAbstractAnimation::DeletionPolicy = QAbstractAnimation.KeepWhenStopped)</tt>。</p>
+<p>启动动画。该<i>policy</i>论证说，不论是否当它完成的动画应该被删除。当动画开始，则<a href="qabstractanimation.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#stateChanged">stateChanged</a>（）信号被发射，和<a href="qabstractanimation.html#state-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#state-prop">state</a>（）返回运行。当控制到达事件循环，动画将自行运行，周期性地调用<a href="qabstractanimation.html#updateCurrentTime" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#updateCurrentTime">updateCurrentTime</a>（ ）作为动画的进展。</p>
+<p>如果动画目前已停止或已走到了尽头，调用start （ ）将回放动画，并从头开始。当动画到达末尾时，动画要么停止，或者如果在循环水平大于1，它会倒带，并从开头继续。</p>
+<p>如果动画已经在运行，这个函数不执行任何操作。</p>
+<p><b>See also</b> <a href="qabstractanimation.html#stop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#stop">stop</a>（）和<a href="qabstractanimation.html#state-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#state-prop">state</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="state"></a><a href="qabstractanimation.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#State-enum">State</a> QAbstractAnimation.state (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="stop"></a>QAbstractAnimation.stop (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void stop()</tt>。</p>
+<p>停止播放动画。当动画停止时，它发出的<a href="qabstractanimation.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#stateChanged">stateChanged</a>（）信号，并<a href="qabstractanimation.html#state-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#state-prop">state</a>（ ）返回时停止。当前的时间不会改变。</p>
+<p>如果在到达终点后停止动画本身（即，<a href="qabstractanimation.html#currentLoopTime" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#currentLoopTime">currentLoopTime</a>（）==<a href="qabstractanimation.html#duration-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#duration-prop">duration</a>（）和<a href="qabstractanimation.html#currentLoop-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#currentLoop-prop">currentLoop</a>（ ） \u003e<a href="qabstractanimation.html#loopCount-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#loopCount-prop">loopCount</a>（） -  1 ），则<a href="qabstractanimation.html#finished" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#finished">finished</a>（）信号被发射。</p>
+<p><b>See also</b> <a href="qabstractanimation.html#start" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#start">start</a>（）和<a href="qabstractanimation.html#state-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#state-prop">state</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="totalDuration"></a>int QAbstractAnimation.totalDuration (<i>self</i>)</h3>
+<p>返回动画的总有效和持续时间，包括循环计数。</p>
+<p><b>See also</b> <a href="qabstractanimation.html#duration-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#duration-prop">duration</a>（）和<a href="qabstractanimation.html#currentTime-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#currentTime-prop">currentTime</a>。</p>
+
+
+<h3 class="fn">
+<a name="updateCurrentTime"></a>QAbstractAnimation.updateCurrentTime (<i>self</i>, int <i>currentTime</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>这个纯虚函数被调用每次动画的<i>currentTime</i>变化。</p>
+<p><b>See also</b> <a href="qabstractanimation.html#updateState" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#updateState">updateState</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="updateDirection"></a>QAbstractAnimation.updateDirection (<i>self</i>, <a href="qabstractanimation.html#Direction-enum" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#Direction-enum">Direction</a> <i>direction</i>)</h3>
+<p>这个虚函数被调用<a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a>当动画的方向被改变。该<i>direction</i>参数是新的方向。</p>
+<p><b>See also</b> <a href="qabstractanimation.html#direction-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#direction-prop">setDirection</a>（）和<a href="qabstractanimation.html#direction-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#direction-prop">direction</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="updateState"></a>QAbstractAnimation.updateState (<i>self</i>, <a href="qabstractanimation.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#State-enum">State</a> <i>newState</i>, <a href="qabstractanimation.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#State-enum">State</a> <i>oldState</i>)</h3>
+<p>这个虚函数被调用<a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a>当动画的状态从变<i>oldState</i>至<i>newState</i>。</p>
+<p><b>See also</b> <a href="qabstractanimation.html#start" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#start">start</a>（ ）<a href="qabstractanimation.html#stop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#stop">stop</a>（ ）<a href="qabstractanimation.html#pause" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#pause">pause</a>（）和<a href="qabstractanimation.html#resume" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#resume">resume</a>（ ） 。</p>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="currentLoopChanged"></a>void currentLoopChanged (int)</h3>
+<p>这是该信号的默认超载。</p>
+<p><a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a>发出该信号时电流回路的改变。<i>currentLoop</i>是电流回路。</p>
+<p><b>See also</b> <a href="qabstractanimation.html#currentLoop-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#currentLoop-prop">currentLoop</a>（）和<a href="qabstractanimation.html#loopCount-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#loopCount-prop">loopCount</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="directionChanged"></a>void directionChanged (QAbstractAnimation::Direction)</h3>
+<p>这是该信号的默认超载。</p>
+<p><a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a>发出该信号时的方向已经改变。<i>newDirection</i>是新的方向。</p>
+<p><b>See also</b> <a href="qabstractanimation.html#direction-prop" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#direction-prop">direction</a>。</p>
+
+
+<h3 class="fn">
+<a name="finished"></a>void finished ()</h3>
+<p>这是该信号的默认超载。</p>
+<p><a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a>发出此信号后的动画已经停止，并已达到结束。</p>
+<p>之后此信号被发射<a href="qabstractanimation.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#stateChanged">stateChanged</a>（ ） 。</p>
+<p><b>See also</b> <a href="qabstractanimation.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#stateChanged">stateChanged</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="stateChanged"></a>void stateChanged (QAbstractAnimation::State,QAbstractAnimation::State)</h3>
+<p>这是该信号的默认超载。</p>
+<p><a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a>发出这个信号时动画的状态已经从<i>oldState</i>至<i>newState</i>。之后虚拟这个信号被发射<a href="qabstractanimation.html#updateState" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#updateState">updateState</a>（ ）函数被调用。</p>
+<p><b>See also</b> <a href="qabstractanimation.html#updateState" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html#updateState">updateState</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

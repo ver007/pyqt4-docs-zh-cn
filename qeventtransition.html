@@ -1,0 +1,126 @@
+﻿<html>
+<head>
+<title>QEventTransition Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QEventTransition Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QEventTransition类提供了一个<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>特定于Qt的事件过渡。<a href="#details">More...</a></p>
+
+<p>继承<a href="qabstracttransition.html" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html">QAbstractTransition</a>。</p>
+<p>通过继承<a href="qkeyeventtransition.html" tppabs="http://pyqt4doc.appspot.com/qkeyeventtransition.html">QKeyEventTransition</a>和<a href="qmouseeventtransition.html" tppabs="http://pyqt4doc.appspot.com/qmouseeventtransition.html">QMouseEventTransition</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qeventtransition.html#QEventTransition" tppabs="http://pyqt4doc.appspot.com/qeventtransition.html#QEventTransition">__init__</a></b> (<i>self</i>, QState <i>sourceState</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qeventtransition.html#QEventTransition-2" tppabs="http://pyqt4doc.appspot.com/qeventtransition.html#QEventTransition-2">__init__</a></b> (<i>self</i>, QObject <i>object</i>, QEvent.Type <i>type</i>, QState <i>sourceState</i> = None)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qeventtransition.html#event" tppabs="http://pyqt4doc.appspot.com/qeventtransition.html#event">event</a></b> (<i>self</i>, QEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>QObject <b><a href="qeventtransition.html#eventSource" tppabs="http://pyqt4doc.appspot.com/qeventtransition.html#eventSource">eventSource</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qeventtransition.html#eventTest" tppabs="http://pyqt4doc.appspot.com/qeventtransition.html#eventTest">eventTest</a></b> (<i>self</i>, QEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>QEvent.Type <b><a href="qeventtransition.html#eventType" tppabs="http://pyqt4doc.appspot.com/qeventtransition.html#eventType">eventType</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qeventtransition.html#onTransition" tppabs="http://pyqt4doc.appspot.com/qeventtransition.html#onTransition">onTransition</a></b> (<i>self</i>, QEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qeventtransition.html#setEventSource" tppabs="http://pyqt4doc.appspot.com/qeventtransition.html#setEventSource">setEventSource</a></b> (<i>self</i>, QObject <i>object</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qeventtransition.html#setEventType" tppabs="http://pyqt4doc.appspot.com/qeventtransition.html#setEventType">setEventType</a></b> (<i>self</i>, QEvent.Type <i>type</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QEventTransition类提供了一个<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>特定于Qt的事件过渡。</p>
+<p>一个QEventTransition对象的事件绑定到一个特定的<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。 QEventTransition是一部分<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/statemachine-api.html">The State Machine
+Framework</a>。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a></span> <span class="operator">*</span>button <span class="operator">=</span> <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>;
+ <span class="type"><a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a></span> <span class="operator">*</span>s1 <span class="operator">=</span> <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>;
+ <span class="type"><a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a></span> <span class="operator">*</span>s2 <span class="operator">=</span> <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>;
+ <span class="comment">// If in s1 and the button receives an Enter event, transition to s2</span>
+ <span class="type">QEventTransition</span> <span class="operator">*</span>enterTransition <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QEventTransition</span>(button<span class="operator">,</span> <span class="type"><a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a></span><span class="operator">.</span>Enter);
+ enterTransition<span class="operator">-</span><span class="operator">&gt;</span><a href="qabstracttransition.html#targetState-prop" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#targetState-prop">setTargetState</a>(s2);
+ s1<span class="operator">-</span><span class="operator">&gt;</span>addTransition(enterTransition);
+ <span class="comment">// If in s2 and the button receives an Exit event, transition back to s1</span>
+ <span class="type">QEventTransition</span> <span class="operator">*</span>leaveTransition <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QEventTransition</span>(button<span class="operator">,</span> <span class="type"><a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a></span><span class="operator">.</span>Leave);
+ leaveTransition<span class="operator">-</span><span class="operator">&gt;</span><a href="qabstracttransition.html#targetState-prop" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#targetState-prop">setTargetState</a>(s1);
+ s2<span class="operator">-</span><span class="operator">&gt;</span>addTransition(leaveTransition);
+</pre>
+<a id="subclassing" name="subclassing"></a>
+<h3>Subclassing</h3>
+<p>当重新实现<a href="qeventtransition.html#eventTest" tppabs="http://pyqt4doc.appspot.com/qeventtransition.html#eventTest">eventTest</a>（ ）函数，你应该先调用基实现，以验证该事件是<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qstatemachine-wrappedevent.html">QStateMachine.WrappedEvent</a>为正确的对象和事件类型。然后，您可投的情况下，以一<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qstatemachine-wrappedevent.html">QStateMachine.WrappedEvent</a>并通过调用得到的原始事件<a href="index.htm#event" tppabs="http://pyqt4doc.appspot.com/qstatemachine-wrappedevent.html#event">QStateMachine.WrappedEvent.event</a>（ ） ，并执行该对象上的额外检查。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QEventTransition"></a>QEventTransition.__init__ (<i>self</i>, <a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a> <i>sourceState</i> = None)</h3>
+<p>该<i>sourceState</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个新的<a href="qeventtransition.html" tppabs="http://pyqt4doc.appspot.com/qeventtransition.html">QEventTransition</a>与给定对象<i>sourceState</i>。</p>
+
+
+<h3 class="fn">
+<a name="QEventTransition-2"></a>QEventTransition.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>object</i>, <a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.Type</a> <i>type</i>, <a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a> <i>sourceState</i> = None)</h3>
+<p>该<i>sourceState</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个新的<a href="qeventtransition.html" tppabs="http://pyqt4doc.appspot.com/qeventtransition.html">QEventTransition</a>与给定的事件相关联的对象<i>type</i>对于给定的<i>object</i>，并用给定的<i>sourceState</i>。</p>
+
+
+<h3 class="fn">
+<a name="event"></a>bool QEventTransition.event (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">QObject.event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="eventSource"></a><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> QEventTransition.eventSource (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="eventTest"></a>bool QEventTransition.eventTest (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qabstracttransition.html#eventTest" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#eventTest">QAbstractTransition.eventTest</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="eventType"></a><a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.Type</a> QEventTransition.eventType (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="onTransition"></a>QEventTransition.onTransition (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qabstracttransition.html#onTransition" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html#onTransition">QAbstractTransition.onTransition</a>（ ） 。</p>
+<h3 class="fn">
+<a name="setEventSource"></a>QEventTransition.setEventSource (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>object</i>)</h3>
+<h3 class="fn">
+<a name="setEventType"></a>QEventTransition.setEventType (<i>self</i>, <a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.Type</a> <i>type</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

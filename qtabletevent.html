@@ -1,0 +1,308 @@
+﻿<html>
+<head>
+<title>QTabletEvent Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QTabletEvent Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QTabletEvent类包含描述一个平板事件参数。<a href="#details">More...</a></p>
+
+<p>继承<a href="qinputevent.html" tppabs="http://pyqt4doc.appspot.com/qinputevent.html">QInputEvent</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qtabletevent.html#PointerType-enum" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#PointerType-enum">PointerType</a></b> { UnknownPointer, Pen, Cursor, Eraser }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qtabletevent.html#TabletDevice-enum" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#TabletDevice-enum">TabletDevice</a></b> { NoDevice, Puck, Stylus, Airbrush, ..., RotationStylus }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qtabletevent.html#QTabletEvent" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#QTabletEvent">__init__</a></b> (<i>self</i>, QEvent.Type <i>t</i>, QPoint <i>pos</i>, QPoint <i>globalPos</i>, QPointF <i>hiResGlobalPos</i>, int <i>device</i>, int <i>pointerType</i>, float <i>pressure</i>, int <i>xTilt</i>, int <i>yTilt</i>, float <i>tangentialPressure</i>, float <i>rotation</i>, int <i>z</i>, Qt.KeyboardModifiers <i>keyState</i>, int <i>uniqueID</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtabletevent.html#QTabletEvent-2" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#QTabletEvent-2">__init__</a></b> (<i>self</i>, QTabletEvent)</li>
+<li>
+<div class="fn"></div>TabletDevice <b><a href="qtabletevent.html#device" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#device">device</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QPoint <b><a href="qtabletevent.html#globalPos" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#globalPos">globalPos</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtabletevent.html#globalX" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#globalX">globalX</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtabletevent.html#globalY" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#globalY">globalY</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QPointF <b><a href="qtabletevent.html#hiResGlobalPos" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#hiResGlobalPos">hiResGlobalPos</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtabletevent.html#hiResGlobalX" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#hiResGlobalX">hiResGlobalX</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtabletevent.html#hiResGlobalY" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#hiResGlobalY">hiResGlobalY</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>PointerType <b><a href="qtabletevent.html#pointerType" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#pointerType">pointerType</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QPoint <b><a href="qtabletevent.html#pos" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#pos">pos</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtabletevent.html#pressure" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#pressure">pressure</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtabletevent.html#rotation" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#rotation">rotation</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtabletevent.html#tangentialPressure" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#tangentialPressure">tangentialPressure</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtabletevent.html#uniqueId" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#uniqueId">uniqueId</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtabletevent.html#x" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#x">x</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtabletevent.html#xTilt" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#xTilt">xTilt</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtabletevent.html#y" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#y">y</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtabletevent.html#yTilt" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#yTilt">yTilt</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtabletevent.html#z" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#z">z</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QTabletEvent类包含描述一个平板事件参数。</p>
+<p>从Wacom数位板产生片剂活动。大多数时候，你会想应对来自平板电脑的事件，好像他们是从一个鼠标事件，例如，您可以检索与光标位置<a href="qtabletevent.html#x" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#x">x</a>（ ）<a href="qtabletevent.html#y" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#y">y</a>（ ）<a href="qtabletevent.html#pos" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#pos">pos</a>（ ）<a href="qtabletevent.html#globalX" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#globalX">globalX</a>（ ）<a href="qtabletevent.html#globalY" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#globalY">globalY</a>（）和<a href="qtabletevent.html#globalPos" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#globalPos">globalPos</a>（ ） 。在某些情况下，您可能希望获取平板电脑设备驱动程序提供了额外的信息，例如，您可能想要做更高分辨率的坐标subpixeling或者您可能希望根据压力来调整色彩亮度。 QTabletEvent让您阅读<a href="qtabletevent.html#pressure" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#pressure">pressure</a>（）中的<a href="qtabletevent.html#xTilt" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#xTilt">xTilt</a>（）和<a href="qtabletevent.html#yTilt" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#yTilt">yTilt</a>（） ，以及设备的类型与用来<a href="qtabletevent.html#device" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#device">device</a>（ ） （见<a href="qtabletevent.html#TabletDevice-enum" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#TabletDevice-enum">TabletDevice</a>） 。它也可以给你的最低和最高值的每个设备的压力和高分辨率的坐标。</p>
+<p>片剂事件中包含一个特殊的接受标志，指示接收者是否愿意事件。你应该调用<a href="qevent.html#accept" tppabs="http://pyqt4doc.appspot.com/qevent.html#accept">QTabletEvent.accept</a>（）如果你处理的平板事件，否则将被发送到父widget 。唯一的例外是<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">TabletEnterProximity</a>和<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">TabletLeaveProximity</a>事件，这些只发送到<a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a>不检查是否它们是否接受。</p>
+<p>该<a href="qwidget.html#enabled-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#enabled-prop">QWidget.setEnabled</a>（）函数可以被用来使能或禁止鼠标和键盘事件为一个部件。</p>
+<p>该事件处理程序<a href="qwidget.html#tabletEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#tabletEvent">QWidget.tabletEvent</a>（ ）接收所有三种类型的平板电脑的事件。 Qt会首先发一个tabletEvent那么，如果不被接受，它会发送一个鼠标事件。这允许不使用平板电脑应用程序使用平板电脑就像一个鼠标，同时也使那些谁想要同时使用平板电脑和鼠标不同。</p>
+<a id="notes-for-x11-users" name="notes-for-x11-users"></a>
+<h3>Notes for X11 Users</h3>
+<p>Qt使用下面的硬编码名称来自于X11的xorg.conf文件（除了IRIX ）确定平板设备： “手写笔”，“钢笔”和“橡皮擦” 。如果设备有其他的名字，他们将不会被拾起的Qt 。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="PointerType-enum"></a>QTabletEvent.PointerType</h3>
+<p>这个枚举变量定义什么类型的点生成事件。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTabletEvent.UnknownPointer</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">一个未知设备。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTabletEvent.Pen</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">手写笔的设备（笔的窄端）的末端。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTabletEvent.Cursor</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">任何冰球之类的设备。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTabletEvent.Eraser</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">手写笔的设备（笔的宽端）的橡皮擦端。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qtabletevent.html#pointerType" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#pointerType">pointerType</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="TabletDevice-enum"></a>QTabletEvent.TabletDevice</h3>
+<p>这个枚举变量定义什么类型的设备正在生成事件。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTabletEvent.NoDevice</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">没有设备或未知设备。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTabletEvent.Puck</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">冰球（一种装置，类似于一个扁平鼠标采用了透明的圆十字线） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTabletEvent.Stylus</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">手写笔。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTabletEvent.Airbrush</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">喷枪</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTabletEvent.FourDMouse</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">一个4D鼠标。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTabletEvent.RotationStylus</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">一个特殊的手写笔也知道旋转（一6D手写笔） 。</td>
+</tr>
+</table>
+<p>这个枚举被引入或修改的Qt 4.1 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QTabletEvent"></a>QTabletEvent.__init__ (<i>self</i>, <a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.Type</a> <i>t</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>pos</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>globalPos</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>hiResGlobalPos</i>, int <i>device</i>, int <i>pointerType</i>, float <i>pressure</i>, int <i>xTilt</i>, int <i>yTilt</i>, float <i>tangentialPressure</i>, float <i>rotation</i>, int <i>z</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-keyboardmodifiers.html">Qt.KeyboardModifiers</a> <i>keyState</i>, int <i>uniqueID</i>)</h3>
+<p>构造的给定片剂事件<i>type</i>。</p>
+<p>该<i>pos</i>参数表示凡在插件的事件发生;<i>globalPos</i>是在绝对坐标中的相应位置。该<i>hiResGlobalPos</i>包含的位置的高分辨率测量。</p>
+<p><i>pressure</i>包含施加在压力<i>device</i>。</p>
+<p><i>pointerType</i>描述正在使用的笔的类型。</p>
+<p><i>xTilt</i>和<i>yTilt</i>分别包含在x和y轴倾斜设备的程度。</p>
+<p><i>keyState</i>其键盘功能键被按下指定（如，<b>Ctrl</b>） 。</p>
+<p>该<i>uniqueID</i>参数包含当前设备的唯一ID 。</p>
+<p>该<i>z</i>参数包含在平板设备的坐标，这通常是由在4D鼠标滚轮给出。如果设备不支持Z轴，传递零这里。</p>
+<p>该<i>tangentialPressure</i>参数contins气刷的切线压力。如果设备不支持切向压力，传递0在这里。</p>
+<p><i>rotation</i>包含度装置的旋转。 4D鼠标支持旋转。如果设备不支持旋转，传递0在这里。</p>
+<p><b>See also</b> <a href="qtabletevent.html#pos" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#pos">pos</a>（ ）<a href="qtabletevent.html#globalPos" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#globalPos">globalPos</a>（ ）<a href="qtabletevent.html#device" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#device">device</a>（ ）<a href="qtabletevent.html#pressure" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#pressure">pressure</a>（ ）<a href="qtabletevent.html#xTilt" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#xTilt">xTilt</a>（ ）<a href="qtabletevent.html#yTilt" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#yTilt">yTilt</a>（ ）<a href="qtabletevent.html#uniqueId" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#uniqueId">uniqueId</a>（ ）<a href="qtabletevent.html#rotation" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#rotation">rotation</a>（ ）<a href="qtabletevent.html#tangentialPressure" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#tangentialPressure">tangentialPressure</a>（）和<a href="qtabletevent.html#z" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#z">z</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QTabletEvent-2"></a>QTabletEvent.__init__ (<i>self</i>, <a href="qtabletevent.html" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html">QTabletEvent</a>)</h3>
+<h3 class="fn">
+<a name="device"></a><a href="qtabletevent.html#TabletDevice-enum" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#TabletDevice-enum">TabletDevice</a> QTabletEvent.device (<i>self</i>)</h3>
+<p>返回装置产生事件的类型。</p>
+<p><b>See also</b> <a href="qtabletevent.html#TabletDevice-enum" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#TabletDevice-enum">TabletDevice</a>。</p>
+
+
+<h3 class="fn">
+<a name="globalPos"></a><a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> QTabletEvent.globalPos (<i>self</i>)</h3>
+<p>返回设备的全球地位<i>at the time of the
+event</i>。这是很重要的异步Windows系统上的X11一样，每当你在响应鼠标事件， globalPos左右移动你的widget （ ）可以显着从当前位置有所不同<a href="qcursor.html#pos" tppabs="http://pyqt4doc.appspot.com/qcursor.html#pos">QCursor.pos</a>（ ） 。</p>
+<p><b>See also</b> <a href="qtabletevent.html#globalX" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#globalX">globalX</a>（ ）<a href="qtabletevent.html#globalY" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#globalY">globalY</a>（）和<a href="qtabletevent.html#hiResGlobalPos" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#hiResGlobalPos">hiResGlobalPos</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="globalX"></a>int QTabletEvent.globalX (<i>self</i>)</h3>
+<p>返回在事件发生时鼠标指针的全局x位置。</p>
+<p><b>See also</b> <a href="qtabletevent.html#globalY" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#globalY">globalY</a>（ ）<a href="qtabletevent.html#globalPos" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#globalPos">globalPos</a>（）和<a href="qtabletevent.html#hiResGlobalX" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#hiResGlobalX">hiResGlobalX</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="globalY"></a>int QTabletEvent.globalY (<i>self</i>)</h3>
+<p>返回在事件发生时的平板设备的全球y位置。</p>
+<p><b>See also</b> <a href="qtabletevent.html#globalX" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#globalX">globalX</a>（ ）<a href="qtabletevent.html#globalPos" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#globalPos">globalPos</a>（）和<a href="qtabletevent.html#hiResGlobalY" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#hiResGlobalY">hiResGlobalY</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hiResGlobalPos"></a><a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> QTabletEvent.hiResGlobalPos (<i>self</i>)</h3>
+<p>从平板电脑传送的高精度坐标表示。子pixeling信息是在的小数部分<a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a>。</p>
+<p><b>See also</b> <a href="qtabletevent.html#globalPos" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#globalPos">globalPos</a>（ ）<a href="qtabletevent.html#hiResGlobalX" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#hiResGlobalX">hiResGlobalX</a>（）和<a href="qtabletevent.html#hiResGlobalY" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#hiResGlobalY">hiResGlobalY</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hiResGlobalX"></a>float QTabletEvent.hiResGlobalX (<i>self</i>)</h3>
+<p>平板设备的精度高x位置。</p>
+
+
+<h3 class="fn">
+<a name="hiResGlobalY"></a>float QTabletEvent.hiResGlobalY (<i>self</i>)</h3>
+<p>平板设备的高精度y位置。</p>
+
+
+<h3 class="fn">
+<a name="pointerType"></a><a href="qtabletevent.html#PointerType-enum" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#PointerType-enum">PointerType</a> QTabletEvent.pointerType (<i>self</i>)</h3>
+<p>返回点生成事件的类型。</p>
+
+
+<h3 class="fn">
+<a name="pos"></a><a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> QTabletEvent.pos (<i>self</i>)</h3>
+<p>返回该装置的位置，相对于接收到的事件的插件。</p>
+<p>如果您在响应鼠标事件，利用左右移动部件<a href="qtabletevent.html#globalPos" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#globalPos">globalPos</a>（代替此功能） 。</p>
+<p><b>See also</b> <a href="qtabletevent.html#x" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#x">x</a>（ ）<a href="qtabletevent.html#y" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#y">y</a>（）和<a href="qtabletevent.html#globalPos" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#globalPos">globalPos</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="pressure"></a>float QTabletEvent.pressure (<i>self</i>)</h3>
+<p>返回该设备的压力。 0.0表示该指示笔是不是就片剂， 1.0表示为触针的压力的最大量。</p>
+<p><b>See also</b> <a href="qtabletevent.html#tangentialPressure" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#tangentialPressure">tangentialPressure</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rotation"></a>float QTabletEvent.rotation (<i>self</i>)</h3>
+<p>返回学位的当前设备的旋转。这通常是通过一个4D鼠标给出。如果设备不支持旋转此值始终为0.0 。</p>
+
+
+<h3 class="fn">
+<a name="tangentialPressure"></a>float QTabletEvent.tangentialPressure (<i>self</i>)</h3>
+<p>返回该设备的切线压力。这通常是通过对喷枪工具手指轮给出。范围是1.0到1.0 。 0.0表示一个中立的立场。当前喷枪只能移动在从量中立型位置的正方向。如果设备不支持切线压力，此值始终为0.0 。</p>
+<p><b>See also</b> <a href="qtabletevent.html#pressure" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#pressure">pressure</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="uniqueId"></a>int QTabletEvent.uniqueId (<i>self</i>)</h3>
+<p>返回一个唯一的ID为当前设备，使得有可能被使用的同时在数位板上的多个设备之间的区分。</p>
+<p>支持此功能的是依赖于平板电脑。</p>
+<p>值相同的设备可能会有所不同从操作系统到操作系统。</p>
+<p>Wacom驱动程式适用于Linux的更高版本现在将报告的ID信息。如果你有一个支持唯一ID的平板电脑，并没有得到在Linux上的信息，请考虑升级您的驱动程序。</p>
+<p>由于Qt 4.2中，独特的ID是一样的，不管笔的方向。早期版本会使用橡皮擦端与某些操作系统的手写笔的笔结束的时候报告一个不同的值。</p>
+<p><b>See also</b> <a href="qtabletevent.html#pointerType" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#pointerType">pointerType</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="x"></a>int QTabletEvent.x (<i>self</i>)</h3>
+<p>返回设备的x位置，相对于接收到的事件的插件。</p>
+<p><b>See also</b> <a href="qtabletevent.html#y" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#y">y</a>（）和<a href="qtabletevent.html#pos" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#pos">pos</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="xTilt"></a>int QTabletEvent.xTilt (<i>self</i>)</h3>
+<p>返回的x轴的方向上的垂直器件之间的角度（一个笔，例如）和。正值是对平板电脑的实际权利。该角度的范围为-60 〜+60度。</p>
+<p class="centerAlign"><img alt="" src="images/qtabletevent-tilt.png"></p>
+<p><b>See also</b> <a href="qtabletevent.html#yTilt" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#yTilt">yTilt</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="y"></a>int QTabletEvent.y (<i>self</i>)</h3>
+<p>返回设备的y位置，相对于接收事件的窗口小部件。</p>
+<p><b>See also</b> <a href="qtabletevent.html#x" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#x">x</a>（）和<a href="qtabletevent.html#pos" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#pos">pos</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="yTilt"></a>int QTabletEvent.yTilt (<i>self</i>)</h3>
+<p>返回在y轴方向上的垂直器件之间的角度（一个笔，例如）和。正值是对平板电脑的底部。的角度为范围-60到+60度的范围内。</p>
+<p><b>See also</b> <a href="qtabletevent.html#xTilt" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#xTilt">xTilt</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="z"></a>int QTabletEvent.z (<i>self</i>)</h3>
+<p>返回设备的z位置。通常，这是通过在一个4D鼠标滚轮来表示。如果设备不支持Z轴，这个值永远是零。这是<b>not</b>相同的压力。</p>
+<p><b>See also</b> <a href="qtabletevent.html#pressure" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html#pressure">pressure</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

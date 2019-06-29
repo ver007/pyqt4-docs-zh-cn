@@ -1,0 +1,97 @@
+﻿<html>
+<head>
+<title>QFinalState Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QFinalState Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QFinalState类提供了一个最终状态。<a href="#details">More...</a></p>
+
+<p>继承<a href="qabstractstate.html" tppabs="http://pyqt4doc.appspot.com/qabstractstate.html">QAbstractState</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qfinalstate.html#QFinalState" tppabs="http://pyqt4doc.appspot.com/qfinalstate.html#QFinalState">__init__</a></b> (<i>self</i>, QState <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qfinalstate.html#event" tppabs="http://pyqt4doc.appspot.com/qfinalstate.html#event">event</a></b> (<i>self</i>, QEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfinalstate.html#onEntry" tppabs="http://pyqt4doc.appspot.com/qfinalstate.html#onEntry">onEntry</a></b> (<i>self</i>, QEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qfinalstate.html#onExit" tppabs="http://pyqt4doc.appspot.com/qfinalstate.html#onExit">onExit</a></b> (<i>self</i>, QEvent <i>event</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QFinalState类提供了一个最终状态。</p>
+<p>最终状态是用来沟通的（部分）一<a href="qstatemachine.html" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html">QStateMachine</a>已完成其工作。当进入最后的顶级状态，状态机的<a href="qstate.html#finished" tppabs="http://pyqt4doc.appspot.com/qstate.html#finished">finished</a>（）信号被发射。的一个在一般情况下，当最后的子状态（子<a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a>）输入，父状态的<a href="qstate.html#finished" tppabs="http://pyqt4doc.appspot.com/qstate.html#finished">finished</a>（）信号被发射。 QFinalState是一部分<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/statemachine-api.html">The State
+Machine Framework</a>。</p>
+<p>要使用一个最终状态，您可以创建一个QFinalState对象，并添加从另一个状态过渡到它。例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a></span> button;
+
+ <span class="type"><a href="qstatemachine.html" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html">QStateMachine</a></span> machine;
+ <span class="type"><a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a></span> <span class="operator">*</span>s1 <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a></span>();
+ <span class="type">QFinalState</span> <span class="operator">*</span>s2 <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QFinalState</span>();
+ s1<span class="operator">-</span><span class="operator">&gt;</span>addTransition(<span class="operator">&amp;</span>button<span class="operator">,</span> SIGNAL(clicked())<span class="operator">,</span> s2);
+ machine<span class="operator">.</span>addState(s1);
+ machine<span class="operator">.</span>addState(s2);
+
+ <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span><span class="operator">.</span><a href="qobject.html#connect" tppabs="http://pyqt4doc.appspot.com/qobject.html#connect">connect</a>(<span class="operator">&amp;</span>machine<span class="operator">,</span> SIGNAL(finished())<span class="operator">,</span> <span class="type"><a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a></span><span class="operator">.</span>instance()<span class="operator">,</span> SLOT(quit()));
+ machine<span class="operator">.</span>setInitialState(s1);
+ machine<span class="operator">.</span>start();
+</pre>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QFinalState"></a>QFinalState.__init__ (<i>self</i>, <a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个新的<a href="qfinalstate.html" tppabs="http://pyqt4doc.appspot.com/qfinalstate.html">QFinalState</a>与给定对象<i>parent</i>状态。</p>
+
+
+<h3 class="fn">
+<a name="event"></a>bool QFinalState.event (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">QObject.event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="onEntry"></a>QFinalState.onEntry (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qabstractstate.html#onEntry" tppabs="http://pyqt4doc.appspot.com/qabstractstate.html#onEntry">QAbstractState.onEntry</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="onExit"></a>QFinalState.onExit (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qabstractstate.html#onExit" tppabs="http://pyqt4doc.appspot.com/qabstractstate.html#onExit">QAbstractState.onExit</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

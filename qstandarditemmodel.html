@@ -1,0 +1,609 @@
+﻿<html>
+<head>
+<title>QStandardItemModel Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QStandardItemModel Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QStandardItemModel类提供用于存储自定义数据的通用模型。<a href="#details">More...</a></p>
+
+<p>继承<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qstandarditemmodel.html#QStandardItemModel" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#QStandardItemModel">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstandarditemmodel.html#QStandardItemModel-2" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#QStandardItemModel-2">__init__</a></b> (<i>self</i>, int <i>rows</i>, int <i>columns</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstandarditemmodel.html#appendColumn" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#appendColumn">appendColumn</a></b> (<i>self</i>, list-of-QStandardItem <i>items</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstandarditemmodel.html#appendRow" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#appendRow">appendRow</a></b> (<i>self</i>, list-of-QStandardItem <i>items</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstandarditemmodel.html#appendRow-2" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#appendRow-2">appendRow</a></b> (<i>self</i>, QStandardItem <i>aitem</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstandarditemmodel.html#clear" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#clear">clear</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstandarditemmodel.html#columnCount" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#columnCount">columnCount</a></b> (<i>self</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qstandarditemmodel.html#data" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#data">data</a></b> (<i>self</i>, QModelIndex <i>index</i>, int <i>role</i> = Qt.DisplayRole)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstandarditemmodel.html#dropMimeData" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#dropMimeData">dropMimeData</a></b> (<i>self</i>, QMimeData <i>data</i>, Qt.DropAction <i>action</i>, int <i>row</i>, int <i>column</i>, QModelIndex <i>parent</i>)</li>
+<li>
+<div class="fn"></div>list-of-QStandardItem <b><a href="qstandarditemmodel.html#findItems" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#findItems">findItems</a></b> (<i>self</i>, QString <i>text</i>, Qt.MatchFlags <i>flags</i> = Qt.MatchExactly, int <i>column</i> = 0)</li>
+<li>
+<div class="fn"></div>Qt.ItemFlags <b><a href="qstandarditemmodel.html#flags" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#flags">flags</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstandarditemmodel.html#hasChildren" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#hasChildren">hasChildren</a></b> (<i>self</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qstandarditemmodel.html#headerData" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#headerData">headerData</a></b> (<i>self</i>, int <i>section</i>, Qt.Orientation <i>orientation</i>, int <i>role</i> = Qt.DisplayRole)</li>
+<li>
+<div class="fn"></div>QStandardItem <b><a href="qstandarditemmodel.html#horizontalHeaderItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#horizontalHeaderItem">horizontalHeaderItem</a></b> (<i>self</i>, int <i>column</i>)</li>
+<li>
+<div class="fn"></div>QModelIndex <b><a href="qstandarditemmodel.html#index" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#index">index</a></b> (<i>self</i>, int <i>row</i>, int <i>column</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>QModelIndex <b><a href="qstandarditemmodel.html#indexFromItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#indexFromItem">indexFromItem</a></b> (<i>self</i>, QStandardItem <i>item</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstandarditemmodel.html#insertColumn" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#insertColumn">insertColumn</a></b> (<i>self</i>, int <i>column</i>, list-of-QStandardItem <i>items</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstandarditemmodel.html#insertColumn-2" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#insertColumn-2">insertColumn</a></b> (<i>self</i>, int <i>column</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstandarditemmodel.html#insertColumns" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#insertColumns">insertColumns</a></b> (<i>self</i>, int <i>column</i>, int <i>count</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstandarditemmodel.html#insertRow" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#insertRow">insertRow</a></b> (<i>self</i>, int <i>row</i>, list-of-QStandardItem <i>items</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstandarditemmodel.html#insertRow-2" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#insertRow-2">insertRow</a></b> (<i>self</i>, int <i>arow</i>, QStandardItem <i>aitem</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstandarditemmodel.html#insertRow-3" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#insertRow-3">insertRow</a></b> (<i>self</i>, int <i>row</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstandarditemmodel.html#insertRows" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#insertRows">insertRows</a></b> (<i>self</i>, int <i>row</i>, int <i>count</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>QStandardItem <b><a href="qstandarditemmodel.html#invisibleRootItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#invisibleRootItem">invisibleRootItem</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStandardItem <b><a href="qstandarditemmodel.html#item" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#item">item</a></b> (<i>self</i>, int <i>row</i>, int <i>column</i> = 0)</li>
+<li>
+<div class="fn"></div>dict-of-int-QVariant <b><a href="qstandarditemmodel.html#itemData" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#itemData">itemData</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>QStandardItem <b><a href="qstandarditemmodel.html#itemFromIndex" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#itemFromIndex">itemFromIndex</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>QStandardItem <b><a href="qstandarditemmodel.html#itemPrototype" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#itemPrototype">itemPrototype</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QMimeData <b><a href="qstandarditemmodel.html#mimeData" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#mimeData">mimeData</a></b> (<i>self</i>, list-of-QModelIndex <i>indexes</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qstandarditemmodel.html#mimeTypes" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#mimeTypes">mimeTypes</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QModelIndex <b><a href="qstandarditemmodel.html#parent" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#parent">parent</a></b> (<i>self</i>, QModelIndex <i>child</i>)</li>
+<li>
+<div class="fn"></div>QObject <b><a href="qstandarditemmodel.html#parent-2" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#parent-2">parent</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstandarditemmodel.html#removeColumns" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#removeColumns">removeColumns</a></b> (<i>self</i>, int <i>column</i>, int <i>count</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstandarditemmodel.html#removeRows" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#removeRows">removeRows</a></b> (<i>self</i>, int <i>row</i>, int <i>count</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>int <b><a href="qstandarditemmodel.html#rowCount" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#rowCount">rowCount</a></b> (<i>self</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstandarditemmodel.html#setColumnCount" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setColumnCount">setColumnCount</a></b> (<i>self</i>, int <i>columns</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstandarditemmodel.html#setData" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setData">setData</a></b> (<i>self</i>, QModelIndex <i>index</i>, QVariant <i>value</i>, int <i>role</i> = Qt.EditRole)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstandarditemmodel.html#setHeaderData" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setHeaderData">setHeaderData</a></b> (<i>self</i>, int <i>section</i>, Qt.Orientation <i>orientation</i>, QVariant <i>value</i>, int <i>role</i> = Qt.EditRole)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstandarditemmodel.html#setHorizontalHeaderItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setHorizontalHeaderItem">setHorizontalHeaderItem</a></b> (<i>self</i>, int <i>column</i>, QStandardItem <i>item</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstandarditemmodel.html#setHorizontalHeaderLabels" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setHorizontalHeaderLabels">setHorizontalHeaderLabels</a></b> (<i>self</i>, QStringList <i>labels</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstandarditemmodel.html#setItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setItem">setItem</a></b> (<i>self</i>, int <i>row</i>, int <i>column</i>, QStandardItem <i>item</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstandarditemmodel.html#setItem-2" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setItem-2">setItem</a></b> (<i>self</i>, int <i>arow</i>, QStandardItem <i>aitem</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstandarditemmodel.html#setItemData" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setItemData">setItemData</a></b> (<i>self</i>, QModelIndex <i>index</i>, dict-of-int-QVariant <i>roles</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstandarditemmodel.html#setItemPrototype" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setItemPrototype">setItemPrototype</a></b> (<i>self</i>, QStandardItem <i>item</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstandarditemmodel.html#setRowCount" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setRowCount">setRowCount</a></b> (<i>self</i>, int <i>rows</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstandarditemmodel.html#setSortRole" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setSortRole">setSortRole</a></b> (<i>self</i>, int <i>role</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstandarditemmodel.html#setVerticalHeaderItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setVerticalHeaderItem">setVerticalHeaderItem</a></b> (<i>self</i>, int <i>row</i>, QStandardItem <i>item</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstandarditemmodel.html#setVerticalHeaderLabels" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setVerticalHeaderLabels">setVerticalHeaderLabels</a></b> (<i>self</i>, QStringList <i>labels</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstandarditemmodel.html#sort" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#sort">sort</a></b> (<i>self</i>, int <i>column</i>, Qt.SortOrder <i>order</i> = Qt.AscendingOrder)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstandarditemmodel.html#sortRole" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#sortRole">sortRole</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Qt.DropActions <b><a href="qstandarditemmodel.html#supportedDropActions" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#supportedDropActions">supportedDropActions</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QStandardItem <b><a href="qstandarditemmodel.html#takeColumn" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#takeColumn">takeColumn</a></b> (<i>self</i>, int <i>column</i>)</li>
+<li>
+<div class="fn"></div>QStandardItem <b><a href="qstandarditemmodel.html#takeHorizontalHeaderItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#takeHorizontalHeaderItem">takeHorizontalHeaderItem</a></b> (<i>self</i>, int <i>column</i>)</li>
+<li>
+<div class="fn"></div>QStandardItem <b><a href="qstandarditemmodel.html#takeItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#takeItem">takeItem</a></b> (<i>self</i>, int <i>row</i>, int <i>column</i> = 0)</li>
+<li>
+<div class="fn"></div>list-of-QStandardItem <b><a href="qstandarditemmodel.html#takeRow" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#takeRow">takeRow</a></b> (<i>self</i>, int <i>row</i>)</li>
+<li>
+<div class="fn"></div>QStandardItem <b><a href="qstandarditemmodel.html#takeVerticalHeaderItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#takeVerticalHeaderItem">takeVerticalHeaderItem</a></b> (<i>self</i>, int <i>row</i>)</li>
+<li>
+<div class="fn"></div>QStandardItem <b><a href="qstandarditemmodel.html#verticalHeaderItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#verticalHeaderItem">verticalHeaderItem</a></b> (<i>self</i>, int <i>row</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul><li>
+<div class="fn"></div>void <b><a href="qstandarditemmodel.html#itemChanged" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#itemChanged">itemChanged</a></b> (QStandardItem *)</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QStandardItemModel类提供用于存储自定义数据的通用模型。</p>
+<p>QStandardItemModel可以作为标准的Qt数据类型的存储库。它是一<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/model-view.html">Model/View
+Classes</a>并且是Qt的一部分<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/model-view-programming.html">model/view</a>框架。</p>
+<p>QStandardItemModel提供了一个典型的项目为基础的方法与模型的工作。在QStandardItemModel的项目是由提供<a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a>。</p>
+<p>QStandardItemModel实现<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a>接口，这意味着，该模型可以用来提供数据支持该接口（如任何视图<a href="qlistview.html" tppabs="http://pyqt4doc.appspot.com/qlistview.html">QListView</a>，<a href="qtableview.html" tppabs="http://pyqt4doc.appspot.com/qtableview.html">QTableView</a>和<a href="qtreeview.html" tppabs="http://pyqt4doc.appspot.com/qtreeview.html">QTreeView</a>，和你自己的自定义视图） 。对于性能和灵活性，你可能要继承<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a>提供不同类型的数据存储库的支持。例如，本<a class="obsolete" href="qdirmodel.html" tppabs="http://pyqt4doc.appspot.com/qdirmodel.html">QDirModel<sup>(obsolete)</sup></a>提供了一个模型界面到底层的文件系统。</p>
+<p>当你想要一个列表或树，你可以创建一个空的QStandardItemModel和使用<a href="qstandarditemmodel.html#appendRow" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#appendRow">appendRow</a>（ ）将项目添加到模型中，并<a href="qstandarditemmodel.html#item" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#item">item</a>（）来存取项目。如果你的模型是一个表，通常需要传递的表的尺寸的QStandardItemModel的构造和使用<a href="qstandarditemmodel.html#setItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setItem">setItem</a>（ ）来定位的项目到表中。您也可以使用<a href="qstandarditemmodel.html#setRowCount" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setRowCount">setRowCount</a>（）和<a href="qstandarditemmodel.html#setColumnCount" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setColumnCount">setColumnCount</a>（）来改变模型的尺寸。要插入的项目，使用<a href="qstandarditemmodel.html#insertRow" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#insertRow">insertRow</a>（）或<a href="qstandarditemmodel.html#insertColumn" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#insertColumn">insertColumn</a>（ ） ，并删除项目，使用<a href="qabstractitemmodel.html#removeRow" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeRow">removeRow</a>（）或<a href="qabstractitemmodel.html#removeColumn" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeColumn">removeColumn</a>（ ） 。</p>
+<p>你可以设置你的模型的标题与标籤<a href="qstandarditemmodel.html#setHorizontalHeaderLabels" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setHorizontalHeaderLabels">setHorizontalHeaderLabels</a>（）和<a href="qstandarditemmodel.html#setVerticalHeaderLabels" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setVerticalHeaderLabels">setVerticalHeaderLabels</a>（ ） 。</p>
+<p>您可以在模型中的项目与搜索<a href="qstandarditemmodel.html#findItems" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#findItems">findItems</a>（） ，并且模型通过调用排序<a href="qstandarditemmodel.html#sort" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#sort">sort</a>（ ） 。</p>
+<p>Call <a href="qstandarditemmodel.html#clear" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#clear">clear</a>（）从模型中删除所有项目。</p>
+<p>QStandardItemModel的使用示例创建一个表：</p>
+<pre class="cpp">
+ <span class="type">QStandardItemModel</span> model(<span class="number">4</span><span class="operator">,</span> <span class="number">4</span>);
+ <span class="keyword">for</span> (<span class="type">int</span> row <span class="operator">=</span> <span class="number">0</span>; row <span class="operator">&lt;</span> <span class="number">4</span>; <span class="operator">+</span><span class="operator">+</span>row) {
+     <span class="keyword">for</span> (<span class="type">int</span> column <span class="operator">=</span> <span class="number">0</span>; column <span class="operator">&lt;</span> <span class="number">4</span>; <span class="operator">+</span><span class="operator">+</span>column) {
+         <span class="type"><a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a></span> <span class="operator">*</span>item <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a></span>(<span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>(<span class="string">"row %0, column %1"</span>)<span class="operator">.</span>arg(row)<span class="operator">.</span>arg(column));
+         model<span class="operator">.</span>setItem(row<span class="operator">,</span> column<span class="operator">,</span> item);
+     }
+ }
+</pre>
+<p>QStandardItemModel的使用示例创建树：</p>
+<pre class="cpp">
+ <span class="type">QStandardItemModel</span> model;
+ <span class="type"><a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a></span> <span class="operator">*</span>parentItem <span class="operator">=</span> model<span class="operator">.</span><a href="qstandarditemmodel.html#invisibleRootItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#invisibleRootItem">invisibleRootItem</a>();
+ <span class="keyword">for</span> (<span class="type">int</span> i <span class="operator">=</span> <span class="number">0</span>; i <span class="operator">&lt;</span> <span class="number">4</span>; <span class="operator">+</span><span class="operator">+</span>i) {
+     <span class="type"><a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a></span> <span class="operator">*</span>item <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a></span>(<span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>(<span class="string">"item %0"</span>)<span class="operator">.</span>arg(i));
+     parentItem<span class="operator">-</span><span class="operator">&gt;</span>appendRow(item);
+     parentItem <span class="operator">=</span> item;
+ }
+</pre>
+<p>设置模型的视图后，你通常需要响应用户操作，如被点击的项目。由于<a href="qabstractitemview.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html">QAbstractItemView</a>提供<a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a>为基础的信号和功能，你需要一种方法来获得<a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a>对应于一个给定的<a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a>，反之亦然。<a href="qstandarditemmodel.html#itemFromIndex" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#itemFromIndex">itemFromIndex</a>（）和<a href="qstandarditemmodel.html#indexFromItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#indexFromItem">indexFromItem</a>（ ）提供这种映射。典型的用法<a href="qstandarditemmodel.html#itemFromIndex" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#itemFromIndex">itemFromIndex</a>（）包括：获取该项目的当前索引处的一个视图，并获得对应于由一个执行一个索引的资料<a href="qabstractitemview.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html">QAbstractItemView</a>信号，如<a href="qabstractitemview.html#clicked" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#clicked">QAbstractItemView.clicked</a>（ ） 。首先，你的观点的信号连接到您的班级插槽：</p>
+<pre class="cpp">
+ <span class="type"><a href="qtreeview.html" tppabs="http://pyqt4doc.appspot.com/qtreeview.html">QTreeView</a></span> <span class="operator">*</span>treeView <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qtreeview.html" tppabs="http://pyqt4doc.appspot.com/qtreeview.html">QTreeView</a></span>(<span class="keyword">this</span>);
+ treeView<span class="operator">-</span><span class="operator">&gt;</span>setModel(myStandardItemModel);
+ <a href="qobject.html#connect" tppabs="http://pyqt4doc.appspot.com/qobject.html#connect">connect</a>(treeView<span class="operator">,</span> SIGNAL(clicked(<span class="type"><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a></span>))<span class="operator">,</span>
+         <span class="keyword">this</span><span class="operator">,</span> SLOT(clicked(<span class="type"><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a></span>)));
+</pre>
+<p>当您收到信号，你叫<a href="qstandarditemmodel.html#itemFromIndex" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#itemFromIndex">itemFromIndex</a>（ ）在给定的模型索引来获得一个指向文件：</p>
+<pre class="cpp">
+ <span class="type">void</span> MyWidget<span class="operator">.</span>clicked(<span class="keyword">const</span> <span class="type"><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a></span> <span class="operator">&amp;</span>index)
+ {
+     <span class="type"><a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a></span> <span class="operator">*</span>item <span class="operator">=</span> myStandardItemModel<span class="operator">-</span><span class="operator">&gt;</span>itemFromIndex(index);
+     <span class="comment">// Do stuff with the item ...</span>
+ }
+</pre>
+<p>相反，你必须获得<a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a>当你要调用一个模型/视图函数，它接受一个索引作为参数的项目。您可以使用该模型的两种获取索引<a href="qstandarditemmodel.html#indexFromItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#indexFromItem">indexFromItem</a>（）函数，或等价地，通过调用<a href="qstandarditem.html#index" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html#index">QStandardItem.index</a>（）：</p>
+<pre class="cpp">
+ treeView<span class="operator">-</span><span class="operator">&gt;</span>scrollTo(item<span class="operator">-</span><span class="operator">&gt;</span>index());
+</pre>
+<p>你当然不需要使用的项目为基础的方法，你可以代替完全依赖<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a>接口与模型的工作，或者在两者的组合中适当的时候。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QStandardItemModel"></a>QStandardItemModel.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个新的项目模型，给定<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="QStandardItemModel-2"></a>QStandardItemModel.__init__ (<i>self</i>, int <i>rows</i>, int <i>columns</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个新的项目模型，最初有<i>rows</i>行和<i>columns</i>列，并且具有给定<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="appendColumn"></a>QStandardItemModel.appendColumn (<i>self</i>, list-of-QStandardItem <i>items</i>)</h3>
+<p>该<i>items</i>说法有它的所有权转移给Qt的。</p>
+<p>含追加一列<i>items</i>。如果有必要，该行数将增加至大小<i>items</i>。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#insertColumn" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#insertColumn">insertColumn</a>（）和<a href="qstandarditemmodel.html#appendRow" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#appendRow">appendRow</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="appendRow"></a>QStandardItemModel.appendRow (<i>self</i>, list-of-QStandardItem <i>items</i>)</h3>
+<p>该<i>items</i>说法有它的所有权转移给Qt的。</p>
+<p>含追加的行<i>items</i>。如果需要的话，列计数值增加到的大小<i>items</i>。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#insertRow" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#insertRow">insertRow</a>（）和<a href="qstandarditemmodel.html#appendColumn" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#appendColumn">appendColumn</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="appendRow-2"></a>QStandardItemModel.appendRow (<i>self</i>, <a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a> <i>aitem</i>)</h3>
+<p>该<i>aitem</i>说法有它的所有权转移给Qt的。</p>
+<p>这是一个重载函数。</p>
+<p>当建立一个列表，或者只有一列树，该功能提供了一种方便的方式来追加一个新<i>item</i>。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="clear"></a>QStandardItemModel.clear (<i>self</i>)</h3>
+<p>从模型中删除所有项目（包括头项） ，并设置行数和列数为零。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#removeColumns" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#removeColumns">removeColumns</a>（）和<a href="qstandarditemmodel.html#removeRows" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#removeRows">removeRows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="columnCount"></a>int QStandardItemModel.columnCount (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#columnCount" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#columnCount">QAbstractItemModel.columnCount</a>（ ） 。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#setColumnCount" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setColumnCount">setColumnCount</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="data"></a>QVariant QStandardItemModel.data (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>, int <i>role</i> = Qt.DisplayRole)</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#data" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#data">QAbstractItemModel.data</a>（ ） 。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#setData" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setData">setData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="dropMimeData"></a>bool QStandardItemModel.dropMimeData (<i>self</i>, <a href="qmimedata.html" tppabs="http://pyqt4doc.appspot.com/qmimedata.html">QMimeData</a> <i>data</i>, <a href="qt.html#DropAction-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#DropAction-enum">Qt.DropAction</a> <i>action</i>, int <i>row</i>, int <i>column</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i>)</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#dropMimeData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#dropMimeData">QAbstractItemModel.dropMimeData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="findItems"></a>list-of-QStandardItem QStandardItemModel.findItems (<i>self</i>, QString <i>text</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-matchflags.html">Qt.MatchFlags</a> <i>flags</i> = Qt.MatchExactly, int <i>column</i> = 0)</h3>
+<p>返回匹配给定的项目清单<i>text</i>，使用给定的<i>flags</i>在给定的<i>column</i>。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="flags"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-itemflags.html">Qt.ItemFlags</a> QStandardItemModel.flags (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#flags" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#flags">QAbstractItemModel.flags</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasChildren"></a>bool QStandardItemModel.hasChildren (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#hasChildren" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#hasChildren">QAbstractItemModel.hasChildren</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="headerData"></a>QVariant QStandardItemModel.headerData (<i>self</i>, int <i>section</i>, <a href="qt.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Orientation-enum">Qt.Orientation</a> <i>orientation</i>, int <i>role</i> = Qt.DisplayRole)</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#headerData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#headerData">QAbstractItemModel.headerData</a>（ ） 。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#setHeaderData" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setHeaderData">setHeaderData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="horizontalHeaderItem"></a><a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a> QStandardItemModel.horizontalHeaderItem (<i>self</i>, int <i>column</i>)</h3>
+<p>返回水平标题项为<i>column</i>如果已经设置，否则返回0 。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#setHorizontalHeaderItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setHorizontalHeaderItem">setHorizontalHeaderItem</a>（）和<a href="qstandarditemmodel.html#verticalHeaderItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#verticalHeaderItem">verticalHeaderItem</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="index"></a><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> QStandardItemModel.index (<i>self</i>, int <i>row</i>, int <i>column</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#index" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#index">QAbstractItemModel.index</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="indexFromItem"></a><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> QStandardItemModel.indexFromItem (<i>self</i>, <a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a> <i>item</i>)</h3>
+<p>返回<a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a>用给定的相关联<i>item</i>。</p>
+<p>当您要执行需要的操作使用此功能<a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a>该项目时，如<a href="qabstractitemview.html#scrollTo" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#scrollTo">QAbstractItemView.scrollTo</a>（ ） 。<a href="qstandarditem.html#index" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html#index">QStandardItem.index</a>（ ）是作为方便，它等效于调用这个函数。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#itemFromIndex" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#itemFromIndex">itemFromIndex</a>（）和<a href="qstandarditem.html#index" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html#index">QStandardItem.index</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertColumn"></a>QStandardItemModel.insertColumn (<i>self</i>, int <i>column</i>, list-of-QStandardItem <i>items</i>)</h3>
+<p>该<i>items</i>说法有它的所有权转移给Qt的。</p>
+<p>在插入一列<i>column</i> containing <i>items</i>。如果有必要，该行数将增加至大小<i>items</i>。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#takeColumn" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#takeColumn">takeColumn</a>（ ）<a href="qstandarditemmodel.html#appendColumn" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#appendColumn">appendColumn</a>（）和<a href="qstandarditemmodel.html#insertRow" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#insertRow">insertRow</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertColumn-2"></a>bool QStandardItemModel.insertColumn (<i>self</i>, int <i>column</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>给定前插入一列<i>column</i>中的子项<i>parent</i>规定。返回True如果插入的列，否则返回False 。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#insertColumns" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#insertColumns">insertColumns</a>（ ）<a href="qstandarditemmodel.html#insertRow" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#insertRow">insertRow</a>（）和<a href="qabstractitemmodel.html#removeColumn" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeColumn">removeColumn</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertColumns"></a>bool QStandardItemModel.insertColumns (<i>self</i>, int <i>column</i>, int <i>count</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#insertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertColumns">QAbstractItemModel.insertColumns</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertRow"></a>QStandardItemModel.insertRow (<i>self</i>, int <i>row</i>, list-of-QStandardItem <i>items</i>)</h3>
+<p>该<i>items</i>说法有它的所有权转移给Qt的。</p>
+<p>插入一个一行<i>row</i> containing <i>items</i>。如果需要的话，列计数值增加到的大小<i>items</i>。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#takeRow" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#takeRow">takeRow</a>（ ）<a href="qstandarditemmodel.html#appendRow" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#appendRow">appendRow</a>（）和<a href="qstandarditemmodel.html#insertColumn" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#insertColumn">insertColumn</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertRow-2"></a>QStandardItemModel.insertRow (<i>self</i>, int <i>arow</i>, <a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a> <i>aitem</i>)</h3>
+<p>该<i>aitem</i>说法有它的所有权转移给Qt的。</p>
+<p>给定前插入一个单行<i>row</i>中的子项<i>parent</i>规定。返回True如果被插入的行，否则返回False 。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#insertRows" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#insertRows">insertRows</a>（ ）<a href="qstandarditemmodel.html#insertColumn" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#insertColumn">insertColumn</a>（）和<a href="qabstractitemmodel.html#removeRow" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeRow">removeRow</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertRow-3"></a>bool QStandardItemModel.insertRow (<i>self</i>, int <i>row</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>这是一个重载函数。</p>
+<p>插入一个一行<i>row</i> containing <i>item</i>。</p>
+<p>当建立一个列表，或者只有一列树，该功能提供了一种方便的方式来追加新的单一项目。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="insertRows"></a>bool QStandardItemModel.insertRows (<i>self</i>, int <i>row</i>, int <i>count</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#insertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertRows">QAbstractItemModel.insertRows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="invisibleRootItem"></a><a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a> QStandardItemModel.invisibleRootItem (<i>self</i>)</h3>
+<p>返回模型的无形之根项目。</p>
+<p>看不见的根项目，通过提供对模型的顶层项目<a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a>的API ，从而可以写，可以治疗以统一的方式顶级项目及其子女的功能，例如，涉及树模型递归函数。</p>
+<p><b>Note:</b>调用<a href="qabstractitemmodel.html#index" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#index">index()</a>在<a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a>从这个功能检索的对象是无效的。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="item"></a><a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a> QStandardItemModel.item (<i>self</i>, int <i>row</i>, int <i>column</i> = 0)</h3>
+<p>返回的项目为给定的<i>row</i>和<i>column</i>如果已经设置，否则返回0 。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#setItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setItem">setItem</a>（ ）<a href="qstandarditemmodel.html#takeItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#takeItem">takeItem</a>（）和<a href="qstandarditemmodel.html#itemFromIndex" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#itemFromIndex">itemFromIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="itemData"></a>dict-of-int-QVariant QStandardItemModel.itemData (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#itemData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#itemData">QAbstractItemModel.itemData</a>（ ） 。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#setItemData" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setItemData">setItemData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="itemFromIndex"></a><a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a> QStandardItemModel.itemFromIndex (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>返回一个指针<a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a>用给定的相关联<i>index</i>。</p>
+<p>调用此函数通常是最初的一步处理时，<a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a>从一个基于视图的信号，如<a href="qabstractitemview.html#activated" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#activated">QAbstractItemView.activated</a>（ ） 。在您的插槽，你叫itemFromIndex （ ） ，与<a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a>由信号作为参数进行，得到一个指向相应<a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a>。</p>
+<p>注意，这个函数会懒洋洋地创建索引项（使用<a href="qstandarditemmodel.html#itemPrototype" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#itemPrototype">itemPrototype</a>（ ） ） ，并将其设置在父项的子表，如果没有项目已经存在该索引。</p>
+<p>If <i>index</i>是一个无效的指标，这个函数返回0 。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#indexFromItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#indexFromItem">indexFromItem</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="itemPrototype"></a><a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a> QStandardItemModel.itemPrototype (<i>self</i>)</h3>
+<p>返回产品原型所使用的模型。该模型使用的项目原型作为项目的工厂时，它需要构建随需应变的新项目（例如，当一个视图或项目委讬调用<a href="qstandarditemmodel.html#setData" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setData">setData</a>（））。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#setItemPrototype" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setItemPrototype">setItemPrototype</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mimeData"></a><a href="qmimedata.html" tppabs="http://pyqt4doc.appspot.com/qmimedata.html">QMimeData</a> QStandardItemModel.mimeData (<i>self</i>, list-of-QModelIndex <i>indexes</i>)</h3>
+<p>该<i>QMimeData</i>结果</p>
+<p>从重新实现<a href="qabstractitemmodel.html#mimeData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#mimeData">QAbstractItemModel.mimeData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mimeTypes"></a>QStringList QStandardItemModel.mimeTypes (<i>self</i>)</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#mimeTypes" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#mimeTypes">QAbstractItemModel.mimeTypes</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="parent"></a><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> QStandardItemModel.parent (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>child</i>)</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#parent" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#parent">QAbstractItemModel.parent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="parent-2"></a><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> QStandardItemModel.parent (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="removeColumns"></a>bool QStandardItemModel.removeColumns (<i>self</i>, int <i>column</i>, int <i>count</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#removeColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeColumns">QAbstractItemModel.removeColumns</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="removeRows"></a>bool QStandardItemModel.removeRows (<i>self</i>, int <i>row</i>, int <i>count</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#removeRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeRows">QAbstractItemModel.removeRows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rowCount"></a>int QStandardItemModel.rowCount (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#rowCount" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#rowCount">QAbstractItemModel.rowCount</a>（ ） 。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#setRowCount" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setRowCount">setRowCount</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setColumnCount"></a>QStandardItemModel.setColumnCount (<i>self</i>, int <i>columns</i>)</h3>
+<p>载列在这个模型数<i>columns</i>。如果它小于<a href="qstandarditemmodel.html#columnCount" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#columnCount">columnCount</a>（） ，在不需要的列中的数据将被丢弃。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#columnCount" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#columnCount">columnCount</a>（）和<a href="qstandarditemmodel.html#setRowCount" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setRowCount">setRowCount</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setData"></a>bool QStandardItemModel.setData (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>, QVariant <i>value</i>, int <i>role</i> = Qt.EditRole)</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#setData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setData">QAbstractItemModel.setData</a>（ ） 。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#data" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#data">data</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setHeaderData"></a>bool QStandardItemModel.setHeaderData (<i>self</i>, int <i>section</i>, <a href="qt.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Orientation-enum">Qt.Orientation</a> <i>orientation</i>, QVariant <i>value</i>, int <i>role</i> = Qt.EditRole)</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#setHeaderData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setHeaderData">QAbstractItemModel.setHeaderData</a>（ ） 。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#headerData" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#headerData">headerData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setHorizontalHeaderItem"></a>QStandardItemModel.setHorizontalHeaderItem (<i>self</i>, int <i>column</i>, <a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a> <i>item</i>)</h3>
+<p>该<i>item</i>说法有它的所有权转移给Qt的。</p>
+<p>设置水平标题项为<i>column</i>至<i>item</i>。该模型考虑了项目的所有权。如果需要的话，列计数增加，以适应产品。以前的标题项（如果有的话）将被删除。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#horizontalHeaderItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#horizontalHeaderItem">horizontalHeaderItem</a>（ ）<a href="qstandarditemmodel.html#setHorizontalHeaderLabels" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setHorizontalHeaderLabels">setHorizontalHeaderLabels</a>（）和<a href="qstandarditemmodel.html#setVerticalHeaderItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setVerticalHeaderItem">setVerticalHeaderItem</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setHorizontalHeaderLabels"></a>QStandardItemModel.setHorizontalHeaderLabels (<i>self</i>, QStringList <i>labels</i>)</h3>
+<p>设置使用水平标题标籤<i>labels</i>。如果需要的话，列计数值增加到的大小<i>labels</i>。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#setHorizontalHeaderItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setHorizontalHeaderItem">setHorizontalHeaderItem</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setItem"></a>QStandardItemModel.setItem (<i>self</i>, int <i>row</i>, int <i>column</i>, <a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a> <i>item</i>)</h3>
+<p>该<i>item</i>说法有它的所有权转移给Qt的。</p>
+<p>设置项对于给定的<i>row</i>和<i>column</i>至<i>item</i>。该模型考虑了项目的所有权。如果必要，行数和列数都增加，以适应产品。在给定位置（如果有的话）上一个项目被删除。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#item" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#item">item</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setItem-2"></a>QStandardItemModel.setItem (<i>self</i>, int <i>arow</i>, <a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a> <i>aitem</i>)</h3>
+<p>该<i>aitem</i>说法有它的所有权转移给Qt的。</p>
+<p>这是一个重载函数。</p>
+
+
+<h3 class="fn">
+<a name="setItemData"></a>bool QStandardItemModel.setItemData (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>, dict-of-int-QVariant <i>roles</i>)</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#setItemData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setItemData">QAbstractItemModel.setItemData</a>（ ） 。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#itemData" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#itemData">itemData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setItemPrototype"></a>QStandardItemModel.setItemPrototype (<i>self</i>, <a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a> <i>item</i>)</h3>
+<p>该<i>item</i>说法有它的所有权转移给Qt的。</p>
+<p>设置项的原型模型的指定的<i>item</i>。该模型采用原型的所有权。</p>
+<p>该项目的原型作为一个<a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a>工厂，所依托的<a href="qstandarditem.html#clone" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html#clone">QStandardItem.clone</a>（）函数。提供自己的原型，子类<a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a>，重新实现<a href="qstandarditem.html#clone" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html#clone">QStandardItem.clone</a>（）和set原型是您的自定义类的实例。每当<a href="qstandarditemmodel.html" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html">QStandardItemModel</a>需要按需创建一个项目（例如，视图或项目委讬呼叫时<a href="qstandarditemmodel.html#setData" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setData">setData</a>（ ） ） ） ，该新项目将是你的自定义类的实例。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#itemPrototype" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#itemPrototype">itemPrototype</a>（）和<a href="qstandarditem.html#clone" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html#clone">QStandardItem.clone</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setRowCount"></a>QStandardItemModel.setRowCount (<i>self</i>, int <i>rows</i>)</h3>
+<p>设定排在这个模型数<i>rows</i>。如果它小于<a href="qstandarditemmodel.html#rowCount" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#rowCount">rowCount</a>（） ，在不需要的行中的数据将被丢弃。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#rowCount" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#rowCount">rowCount</a>（）和<a href="qstandarditemmodel.html#setColumnCount" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setColumnCount">setColumnCount</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setSortRole"></a>QStandardItemModel.setSortRole (<i>self</i>, int <i>role</i>)</h3>
+<h3 class="fn">
+<a name="setVerticalHeaderItem"></a>QStandardItemModel.setVerticalHeaderItem (<i>self</i>, int <i>row</i>, <a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a> <i>item</i>)</h3>
+<p>该<i>item</i>说法有它的所有权转移给Qt的。</p>
+<p>设置垂直标题项为<i>row</i>至<i>item</i>。该模型考虑了项目的所有权。如果必要，行计数增加，以适应产品。以前的标题项（如果有的话）将被删除。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#verticalHeaderItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#verticalHeaderItem">verticalHeaderItem</a>（ ）<a href="qstandarditemmodel.html#setVerticalHeaderLabels" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setVerticalHeaderLabels">setVerticalHeaderLabels</a>（）和<a href="qstandarditemmodel.html#setHorizontalHeaderItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setHorizontalHeaderItem">setHorizontalHeaderItem</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setVerticalHeaderLabels"></a>QStandardItemModel.setVerticalHeaderLabels (<i>self</i>, QStringList <i>labels</i>)</h3>
+<p>设置使用垂直标题标籤<i>labels</i>。如果有必要，该行数将增加至大小<i>labels</i>。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#setVerticalHeaderItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setVerticalHeaderItem">setVerticalHeaderItem</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sort"></a>QStandardItemModel.sort (<i>self</i>, int <i>column</i>, <a href="qt.html#SortOrder-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#SortOrder-enum">Qt.SortOrder</a> <i>order</i> = Qt.AscendingOrder)</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#sort" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#sort">QAbstractItemModel.sort</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sortRole"></a>int QStandardItemModel.sortRole (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="supportedDropActions"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-dropactions.html">Qt.DropActions</a> QStandardItemModel.supportedDropActions (<i>self</i>)</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#supportedDropActions" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#supportedDropActions">QAbstractItemModel.supportedDropActions</a>（ ） 。</p>
+<p><a href="qstandarditemmodel.html" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html">QStandardItemModel</a>支持复制和移动两种。</p>
+
+
+<h3 class="fn">
+<a name="takeColumn"></a>list-of-QStandardItem QStandardItemModel.takeColumn (<i>self</i>, int <i>column</i>)</h3>
+<p>该<i>list-of-QStandardItem</i>结果</p>
+<p>删除给定的<i>column</i>不删除的列项，并返回指针列表的删除的项。该模型释放的物品的所有权。在尚未设定的列项，列表中的相应指针将是0 。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#takeRow" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#takeRow">takeRow</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="takeHorizontalHeaderItem"></a><a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a> QStandardItemModel.takeHorizontalHeaderItem (<i>self</i>, int <i>column</i>)</h3>
+<p>该<i>QStandardItem</i>结果</p>
+<p>删除在水平标题项<i>column</i>从标题而不删除它，并返回一个指向的项目。该模型发布该项目的所有权。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#horizontalHeaderItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#horizontalHeaderItem">horizontalHeaderItem</a>（）和<a href="qstandarditemmodel.html#takeVerticalHeaderItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#takeVerticalHeaderItem">takeVerticalHeaderItem</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="takeItem"></a><a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a> QStandardItemModel.takeItem (<i>self</i>, int <i>row</i>, int <i>column</i> = 0)</h3>
+<p>该<i>QStandardItem</i>结果</p>
+<p>删除的项目（<i>row</i>，<i>column</i>）而不删除它。该模型发布该项目的所有权。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#item" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#item">item</a>（ ）<a href="qstandarditemmodel.html#takeRow" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#takeRow">takeRow</a>（）和<a href="qstandarditemmodel.html#takeColumn" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#takeColumn">takeColumn</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="takeRow"></a>list-of-QStandardItem QStandardItemModel.takeRow (<i>self</i>, int <i>row</i>)</h3>
+<p>该<i>list-of-QStandardItem</i>结果</p>
+<p>删除给定的<i>row</i>不删除的行项目，并返回指针列表的删除的项目。该模型释放的物品的所有权。对于没有被设置的行中的项目，列表中的相应指针将是0 。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#takeColumn" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#takeColumn">takeColumn</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="takeVerticalHeaderItem"></a><a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a> QStandardItemModel.takeVerticalHeaderItem (<i>self</i>, int <i>row</i>)</h3>
+<p>该<i>QStandardItem</i>结果</p>
+<p>删除在垂直标题项<i>row</i>从标题而不删除它，并返回一个指向的项目。该模型发布该项目的所有权。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#verticalHeaderItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#verticalHeaderItem">verticalHeaderItem</a>（）和<a href="qstandarditemmodel.html#takeHorizontalHeaderItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#takeHorizontalHeaderItem">takeHorizontalHeaderItem</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="verticalHeaderItem"></a><a href="qstandarditem.html" tppabs="http://pyqt4doc.appspot.com/qstandarditem.html">QStandardItem</a> QStandardItemModel.verticalHeaderItem (<i>self</i>, int <i>row</i>)</h3>
+<p>返回行的垂直标题项<i>row</i>如果已经设置，否则返回0 。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qstandarditemmodel.html#setVerticalHeaderItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#setVerticalHeaderItem">setVerticalHeaderItem</a>（）和<a href="qstandarditemmodel.html#horizontalHeaderItem" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html#horizontalHeaderItem">horizontalHeaderItem</a>（ ） 。</p>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="itemChanged"></a>void itemChanged (QStandardItem *)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的数据<i>item</i>已经改变。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

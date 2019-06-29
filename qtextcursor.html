@@ -1,0 +1,972 @@
+﻿<html>
+<head>
+<title>QTextCursor Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QTextCursor Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QTextCursor类提供了一个API来访问和修改QTextDocuments 。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qtextcursor.html#MoveMode-enum" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#MoveMode-enum">MoveMode</a></b> { MoveAnchor, KeepAnchor }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qtextcursor.html#MoveOperation-enum" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#MoveOperation-enum">MoveOperation</a></b> { NoMove, Start, Up, StartOfLine, ..., PreviousRow }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qtextcursor.html#SelectionType-enum" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#SelectionType-enum">SelectionType</a></b> { WordUnderCursor, LineUnderCursor, BlockUnderCursor, Document }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#QTextCursor" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#QTextCursor">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#QTextCursor-2" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#QTextCursor-2">__init__</a></b> (<i>self</i>, QTextDocument <i>document</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#QTextCursor-3" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#QTextCursor-3">__init__</a></b> (<i>self</i>, QTextFrame <i>frame</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#QTextCursor-4" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#QTextCursor-4">__init__</a></b> (<i>self</i>, QTextBlock <i>block</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#QTextCursor-5" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#QTextCursor-5">__init__</a></b> (<i>self</i>, QTextCursor <i>cursor</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextcursor.html#anchor" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#anchor">anchor</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextcursor.html#atBlockEnd" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#atBlockEnd">atBlockEnd</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextcursor.html#atBlockStart" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#atBlockStart">atBlockStart</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextcursor.html#atEnd" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#atEnd">atEnd</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextcursor.html#atStart" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#atStart">atStart</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#beginEditBlock" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#beginEditBlock">beginEditBlock</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextBlock <b><a href="qtextcursor.html#block" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#block">block</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextCharFormat <b><a href="qtextcursor.html#blockCharFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#blockCharFormat">blockCharFormat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextBlockFormat <b><a href="qtextcursor.html#blockFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#blockFormat">blockFormat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextcursor.html#blockNumber" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#blockNumber">blockNumber</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextCharFormat <b><a href="qtextcursor.html#charFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#charFormat">charFormat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#clearSelection" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#clearSelection">clearSelection</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextcursor.html#columnNumber" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#columnNumber">columnNumber</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextList <b><a href="qtextcursor.html#createList" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#createList">createList</a></b> (<i>self</i>, QTextListFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>QTextList <b><a href="qtextcursor.html#createList-2" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#createList-2">createList</a></b> (<i>self</i>, QTextListFormat.Style <i>style</i>)</li>
+<li>
+<div class="fn"></div>QTextFrame <b><a href="qtextcursor.html#currentFrame" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#currentFrame">currentFrame</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextList <b><a href="qtextcursor.html#currentList" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#currentList">currentList</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextTable <b><a href="qtextcursor.html#currentTable" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#currentTable">currentTable</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#deleteChar" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#deleteChar">deleteChar</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#deletePreviousChar" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#deletePreviousChar">deletePreviousChar</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextDocument <b><a href="qtextcursor.html#document" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#document">document</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#endEditBlock" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#endEditBlock">endEditBlock</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextcursor.html#hasComplexSelection" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#hasComplexSelection">hasComplexSelection</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextcursor.html#hasSelection" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#hasSelection">hasSelection</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#insertBlock" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertBlock">insertBlock</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#insertBlock-2" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertBlock-2">insertBlock</a></b> (<i>self</i>, QTextBlockFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#insertBlock-3" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertBlock-3">insertBlock</a></b> (<i>self</i>, QTextBlockFormat <i>format</i>, QTextCharFormat <i>charFormat</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#insertFragment" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertFragment">insertFragment</a></b> (<i>self</i>, QTextDocumentFragment <i>fragment</i>)</li>
+<li>
+<div class="fn"></div>QTextFrame <b><a href="qtextcursor.html#insertFrame" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertFrame">insertFrame</a></b> (<i>self</i>, QTextFrameFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#insertHtml" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertHtml">insertHtml</a></b> (<i>self</i>, QString <i>html</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#insertImage" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertImage">insertImage</a></b> (<i>self</i>, QTextImageFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#insertImage-2" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertImage-2">insertImage</a></b> (<i>self</i>, QTextImageFormat <i>format</i>, QTextFrameFormat.Position <i>alignment</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#insertImage-3" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertImage-3">insertImage</a></b> (<i>self</i>, QString <i>name</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#insertImage-4" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertImage-4">insertImage</a></b> (<i>self</i>, QImage <i>image</i>, QString <i>name</i> = QString())</li>
+<li>
+<div class="fn"></div>QTextList <b><a href="qtextcursor.html#insertList" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertList">insertList</a></b> (<i>self</i>, QTextListFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>QTextList <b><a href="qtextcursor.html#insertList-2" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertList-2">insertList</a></b> (<i>self</i>, QTextListFormat.Style <i>style</i>)</li>
+<li>
+<div class="fn"></div>QTextTable <b><a href="qtextcursor.html#insertTable" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertTable">insertTable</a></b> (<i>self</i>, int <i>rows</i>, int <i>cols</i>, QTextTableFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>QTextTable <b><a href="qtextcursor.html#insertTable-2" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertTable-2">insertTable</a></b> (<i>self</i>, int <i>rows</i>, int <i>cols</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#insertText" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertText">insertText</a></b> (<i>self</i>, QString <i>text</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#insertText-2" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertText-2">insertText</a></b> (<i>self</i>, QString <i>text</i>, QTextCharFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextcursor.html#isCopyOf" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#isCopyOf">isCopyOf</a></b> (<i>self</i>, QTextCursor <i>other</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextcursor.html#isNull" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#isNull">isNull</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#joinPreviousEditBlock" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#joinPreviousEditBlock">joinPreviousEditBlock</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextcursor.html#keepPositionOnInsert" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#keepPositionOnInsert">keepPositionOnInsert</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#mergeBlockCharFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#mergeBlockCharFormat">mergeBlockCharFormat</a></b> (<i>self</i>, QTextCharFormat <i>modifier</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#mergeBlockFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#mergeBlockFormat">mergeBlockFormat</a></b> (<i>self</i>, QTextBlockFormat <i>modifier</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#mergeCharFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#mergeCharFormat">mergeCharFormat</a></b> (<i>self</i>, QTextCharFormat <i>modifier</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextcursor.html#movePosition" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#movePosition">movePosition</a></b> (<i>self</i>, MoveOperation <i>op</i>, MoveMode <i>mode</i> = QTextCursor.MoveAnchor, int <i>n</i> = 1)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextcursor.html#positionInBlock" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#positionInBlock">positionInBlock</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#removeSelectedText" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#removeSelectedText">removeSelectedText</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#select" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#select">select</a></b> (<i>self</i>, SelectionType <i>selection</i>)</li>
+<li>
+<div class="fn"></div>(int <i>firstRow</i>, int <i>numRows</i>, int <i>firstColumn</i>, int <i>numColumns</i>) <b><a href="qtextcursor.html#selectedTableCells" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#selectedTableCells">selectedTableCells</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qtextcursor.html#selectedText" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#selectedText">selectedText</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextDocumentFragment <b><a href="qtextcursor.html#selection" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#selection">selection</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextcursor.html#selectionEnd" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#selectionEnd">selectionEnd</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextcursor.html#selectionStart" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#selectionStart">selectionStart</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#setBlockCharFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#setBlockCharFormat">setBlockCharFormat</a></b> (<i>self</i>, QTextCharFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#setBlockFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#setBlockFormat">setBlockFormat</a></b> (<i>self</i>, QTextBlockFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#setCharFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#setCharFormat">setCharFormat</a></b> (<i>self</i>, QTextCharFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#setKeepPositionOnInsert" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#setKeepPositionOnInsert">setKeepPositionOnInsert</a></b> (<i>self</i>, bool <i>b</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#setPosition" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#setPosition">setPosition</a></b> (<i>self</i>, int <i>pos</i>, MoveMode <i>mode</i> = QTextCursor.MoveAnchor)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#setVerticalMovementX" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#setVerticalMovementX">setVerticalMovementX</a></b> (<i>self</i>, int <i>x</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcursor.html#setVisualNavigation" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#setVisualNavigation">setVisualNavigation</a></b> (<i>self</i>, bool <i>b</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextcursor.html#verticalMovementX" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#verticalMovementX">verticalMovementX</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextcursor.html#visualNavigation" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#visualNavigation">visualNavigation</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>bool <b><a href="qtextcursor.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#__eq__">__eq__</a></b> (<i>self</i>, QTextCursor <i>rhs</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextcursor.html#__ge__" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#__ge__">__ge__</a></b> (<i>self</i>, QTextCursor <i>rhs</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextcursor.html#__gt__" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#__gt__">__gt__</a></b> (<i>self</i>, QTextCursor <i>rhs</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextcursor.html#__le__" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#__le__">__le__</a></b> (<i>self</i>, QTextCursor <i>rhs</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextcursor.html#__lt__" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#__lt__">__lt__</a></b> (<i>self</i>, QTextCursor <i>rhs</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextcursor.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#__ne__">__ne__</a></b> (<i>self</i>, QTextCursor <i>rhs</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QTextCursor类提供了一个API来访问和修改QTextDocuments 。</p>
+<p>文字游标是用来通过模仿光标在文本编辑器的行为的编程接口来访问和修改的内容及相关文本文档的结构对象。 QTextCursor包含内两个光标的位置信息<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>而任何选择，它已经做。</p>
+<p>QTextCursor是仿照文本光标的行为在文本编辑器的方式，通过提供用户界面执行标准操作的编程方法。一个文档可以被看作是字符的字符串。光标的当前<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（ ）则始终为<i>between</i>两个连续字符的字符串，否则<i>before</i>的第一个字符或<i>after</i>在最后一个字符的字符串。文件还可以包含表格，列表，图像和其他对象除了文字，但是，从开发者的角度来看，该文件可以被视为一个长字符串。该串中的某些部分可以被认为在于特定块（例如段落）中，或一个表的单元格或列表的项目，或其它结构元件内。当我们提到“当前字符”我们立即指的是字符<i>before</i>光标<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（ ）在文档中。同样，“当前块”是一个包含光标块<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（ ） 。</p>
+<p>一个QTextCursor也有一个<a href="qtextcursor.html#anchor" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#anchor">anchor</a>（）位置。这是之间的文本<a href="qtextcursor.html#anchor" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#anchor">anchor</a>（ ）和<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（）是该选择。如果<a href="qtextcursor.html#anchor" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#anchor">anchor</a>（）==<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（ ）没有选择。</p>
+<p>光标位置可以通过编程方式使用改变<a href="qtextcursor.html#setPosition" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#setPosition">setPosition</a>（）和<a href="qtextcursor.html#movePosition" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#movePosition">movePosition</a>（） ，后者也可以被用来选择文本。对于选择看<a href="qtextcursor.html#selectionStart" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#selectionStart">selectionStart</a>（ ）<a href="qtextcursor.html#selectionEnd" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#selectionEnd">selectionEnd</a>（ ）<a href="qtextcursor.html#hasSelection" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#hasSelection">hasSelection</a>（ ）<a href="qtextcursor.html#clearSelection" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#clearSelection">clearSelection</a>（）和<a href="qtextcursor.html#removeSelectedText" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#removeSelectedText">removeSelectedText</a>（ ） 。</p>
+<p>如果<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（）是在一个块的开始<a href="qtextcursor.html#atBlockStart" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#atBlockStart">atBlockStart</a>（ ）返回True ，如果它是在一个块结束<a href="qtextcursor.html#atBlockEnd" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#atBlockEnd">atBlockEnd</a>（ ）返回True 。当前字符的格式由返回<a href="qtextcursor.html#charFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#charFormat">charFormat</a>（）和当前块的格式是由返回<a href="qtextcursor.html#blockFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#blockFormat">blockFormat</a>（ ） 。</p>
+<p>格式化可以使用适用于当前文本文档<a href="qtextcursor.html#setCharFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#setCharFormat">setCharFormat</a>（ ）<a href="qtextcursor.html#mergeCharFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#mergeCharFormat">mergeCharFormat</a>（ ）<a href="qtextcursor.html#setBlockFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#setBlockFormat">setBlockFormat</a>（）和<a href="qtextcursor.html#mergeBlockFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#mergeBlockFormat">mergeBlockFormat</a>（）函数。在'设置'功能将取代光标的当前字符或块格式，而“合并”功能添加给定的格式属性光标的当前格式。如果光标有一个选择给定的格式应用到当前的选择。请注意，当被选择的块的唯一部件的块格式被应用到整个块。在当前字符位置的文本可以使用变成一个列表<a href="qtextcursor.html#createList" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#createList">createList</a>（ ） 。</p>
+<p>缺失可以使用可以实现<a href="qtextcursor.html#deleteChar" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#deleteChar">deleteChar</a>（ ）<a href="qtextcursor.html#deletePreviousChar" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#deletePreviousChar">deletePreviousChar</a>（）和<a href="qtextcursor.html#removeSelectedText" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#removeSelectedText">removeSelectedText</a>（ ） 。</p>
+<p>文本串可以被插入到与该文件<a href="qtextcursor.html#insertText" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertText">insertText</a>（）函数，块（即新段落）可以插入与<a href="qtextcursor.html#insertBlock" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertBlock">insertBlock</a>（ ） 。</p>
+<p>现有的文本片段可被插入与<a href="qtextcursor.html#insertFragment" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertFragment">insertFragment</a>（ ），但是，如果你要插入文本块的各种格式，通常还是更容易使用<a href="qtextcursor.html#insertText" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertText">insertText</a>（） ，并提供一个字符的格式。</p>
+<p>各种类型的较高级别的结构中，也可以插入到光标的文件：</p>
+<ul>
+<li>Lists are ordered sequences of block elements that are
+decorated with bullet points or symbols. These are inserted in a
+specified format with <a href="qtextcursor.html#insertList" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertList">insertList</a>().</li>
+<li>Tables are inserted with the <a href="qtextcursor.html#insertTable" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertTable">insertTable</a>() function, and can
+be given an optional format. These contain an array of cells that
+can be traversed using the cursor.</li>
+<li>Inline images are inserted with <a href="qtextcursor.html#insertImage" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertImage">insertImage</a>(). The image to be
+used can be specified in an image format, or by name.</li>
+<li>Frames are inserted by calling <a href="qtextcursor.html#insertFrame" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertFrame">insertFrame</a>() with a specified
+format.</li>
+</ul>
+<p>操作可以分组（即视作撤销/重做一个动作）使用<a href="qtextcursor.html#beginEditBlock" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#beginEditBlock">beginEditBlock</a>（）和<a href="qtextcursor.html#endEditBlock" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#endEditBlock">endEditBlock</a>（ ） 。</p>
+<p>光标移动仅限于有效的光标位置。在拉丁语写作，这是任何两个连续字符的文本之间，第一个字符之前，或之后的最后一个字符。在其他一些书写系统的光标移动仅限于“集群” （如一个音节在梵文，或基字母加变音符号） 。功能，如<a href="qtextcursor.html#movePosition" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#movePosition">movePosition</a>（）和<a href="qtextcursor.html#deleteChar" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#deleteChar">deleteChar</a>（ ）限制光标移动到这些有效的位置。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="MoveMode-enum"></a>QTextCursor.MoveMode</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.MoveAnchor</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">移动锚定至相同的位置的光标本身。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.KeepAnchor</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">保持锚在哪里。</td>
+</tr>
+</table>
+<p>如果<a href="qtextcursor.html#anchor" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#anchor">anchor</a>（）被保持在那里它是与<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（ ）移动，在之间的文本将被选中。</p>
+
+
+<h3 class="fn">
+<a name="MoveOperation-enum"></a>QTextCursor.MoveOperation</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.NoMove</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">保持光标的地方是</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.Start</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">移动到文档的开始。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.StartOfLine</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">移动到当前行的开始。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.StartOfBlock</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">移动到当前块的开始。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.StartOfWord</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">移动到当前单词的开头。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.PreviousBlock</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">移动到前一个块的开始。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.PreviousCharacter</tt></td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">移动到前一个字符。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.PreviousWord</tt></td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">移动到前一个单词的起始处。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.Up</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">向上移动一行。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.Left</tt></td>
+<td class="topAlign"><tt>9</tt></td>
+<td class="topAlign">向左移动一个字符。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.WordLeft</tt></td>
+<td class="topAlign"><tt>10</tt></td>
+<td class="topAlign">向左移动一个词。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.End</tt></td>
+<td class="topAlign"><tt>11</tt></td>
+<td class="topAlign">移动到文档的末尾。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.EndOfLine</tt></td>
+<td class="topAlign"><tt>13</tt></td>
+<td class="topAlign">移动到当前行的结尾。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.EndOfWord</tt></td>
+<td class="topAlign"><tt>14</tt></td>
+<td class="topAlign">移动到当前字的结尾。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.EndOfBlock</tt></td>
+<td class="topAlign"><tt>15</tt></td>
+<td class="topAlign">移动到当前块的结尾。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.NextBlock</tt></td>
+<td class="topAlign"><tt>16</tt></td>
+<td class="topAlign">移动到下一个块的开始。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.NextCharacter</tt></td>
+<td class="topAlign"><tt>17</tt></td>
+<td class="topAlign">移动到下一个字符。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.NextWord</tt></td>
+<td class="topAlign"><tt>18</tt></td>
+<td class="topAlign">移动到下一个单词。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.Down</tt></td>
+<td class="topAlign"><tt>12</tt></td>
+<td class="topAlign">向下移动一行。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.Right</tt></td>
+<td class="topAlign"><tt>19</tt></td>
+<td class="topAlign">向右移动一个字符。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.WordRight</tt></td>
+<td class="topAlign"><tt>20</tt></td>
+<td class="topAlign">向右移动一个词。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.NextCell</tt></td>
+<td class="topAlign"><tt>21</tt></td>
+<td class="topAlign">移动到下一个表格单元格的开头当前表内。如果当前单元格是行中的最后一个单元格，将光标移动到下一行的第一个单元格。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.PreviousCell</tt></td>
+<td class="topAlign"><tt>22</tt></td>
+<td class="topAlign">移动到前一个表格单元格的开头当前表内。如果当前单元格是行中的第一个单元格，将光标移动到前一行的最后一个单元格。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.NextRow</tt></td>
+<td class="topAlign"><tt>23</tt></td>
+<td class="topAlign">移动到下一行的当前表中的第一个新小区。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.PreviousRow</tt></td>
+<td class="topAlign"><tt>24</tt></td>
+<td class="topAlign">移动到上一行在当前表中的最后一个单元格。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qtextcursor.html#movePosition" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#movePosition">movePosition</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="SelectionType-enum"></a>QTextCursor.SelectionType</h3>
+<p>该枚举描述可以与应用于所选内容的类型<a href="qtextcursor.html#select" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#select">select</a>（）函数。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.Document</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">选择整个文档。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.BlockUnderCursor</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">选择光标下的文本块。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.LineUnderCursor</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">选择光标下的文本行。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCursor.WordUnderCursor</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">选择光标下的单词。如果游标未定位的可选字符的字符串中，没有文本被选中。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QTextCursor"></a>QTextCursor.__init__ (<i>self</i>)</h3>
+<p>构造一个空指针。</p>
+
+
+<h3 class="fn">
+<a name="QTextCursor-2"></a>QTextCursor.__init__ (<i>self</i>, <a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a> <i>document</i>)</h3>
+<p>构造一个游标指向的开始<i>document</i>。</p>
+
+
+<h3 class="fn">
+<a name="QTextCursor-3"></a>QTextCursor.__init__ (<i>self</i>, <a href="qtextframe.html" tppabs="http://pyqt4doc.appspot.com/qtextframe.html">QTextFrame</a> <i>frame</i>)</h3>
+<h3 class="fn">
+<a name="QTextCursor-4"></a>QTextCursor.__init__ (<i>self</i>, <a href="qtextblock.html" tppabs="http://pyqt4doc.appspot.com/qtextblock.html">QTextBlock</a> <i>block</i>)</h3>
+<p>构造一个游标指向的开始<i>frame</i>。</p>
+
+
+<h3 class="fn">
+<a name="QTextCursor-5"></a>QTextCursor.__init__ (<i>self</i>, <a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a> <i>cursor</i>)</h3>
+<p>构造一个游标指向的开始<i>block</i>。</p>
+
+
+<h3 class="fn">
+<a name="anchor"></a>int QTextCursor.anchor (<i>self</i>)</h3>
+<p>返回的锚定位置，这是相同的<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（） ，除非在此情况下，选择<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（）标记的选择和锚的一端（）马克的另一端。就像光标位置，支撑点位是字符之间。</p>
+<p><b>See also</b> <a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（ ）<a href="qtextcursor.html#setPosition" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#setPosition">setPosition</a>（ ）<a href="qtextcursor.html#movePosition" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#movePosition">movePosition</a>（ ）<a href="qtextcursor.html#selectionStart" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#selectionStart">selectionStart</a>（）和<a href="qtextcursor.html#selectionEnd" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#selectionEnd">selectionEnd</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="atBlockEnd"></a>bool QTextCursor.atBlockEnd (<i>self</i>)</h3>
+<p>返回True如果光标在一个块结束，否则返回False 。</p>
+<p><b>See also</b> <a href="qtextcursor.html#atBlockStart" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#atBlockStart">atBlockStart</a>（）和<a href="qtextcursor.html#atEnd" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#atEnd">atEnd</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="atBlockStart"></a>bool QTextCursor.atBlockStart (<i>self</i>)</h3>
+<p>返回True如果光标在一个块的开始，否则返回False 。</p>
+<p><b>See also</b> <a href="qtextcursor.html#atBlockEnd" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#atBlockEnd">atBlockEnd</a>（）和<a href="qtextcursor.html#atStart" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#atStart">atStart</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="atEnd"></a>bool QTextCursor.atEnd (<i>self</i>)</h3>
+<p>返回True如果光标在文档的末尾，否则返回False 。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qtextcursor.html#atStart" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#atStart">atStart</a>（）和<a href="qtextcursor.html#atBlockEnd" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#atBlockEnd">atBlockEnd</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="atStart"></a>bool QTextCursor.atStart (<i>self</i>)</h3>
+<p>返回True如果光标在文件的开头，否则返回False 。</p>
+<p><b>See also</b> <a href="qtextcursor.html#atBlockStart" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#atBlockStart">atBlockStart</a>（）和<a href="qtextcursor.html#atEnd" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#atEnd">atEnd</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="beginEditBlock"></a>QTextCursor.beginEditBlock (<i>self</i>)</h3>
+<p>表示编辑操作上应显示为一个单一的操作从视图中撤消/重做点的文件块的开始。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a></span> cursor(textDocument);
+ cursor<span class="operator">.</span>beginEditBlock();
+ cursor<span class="operator">.</span><a href="qtextcursor.html#insertText" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertText">insertText</a>(<span class="string">"Hello"</span>);
+ cursor<span class="operator">.</span><a href="qtextcursor.html#insertText" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertText">insertText</a>(<span class="string">"World"</span>);
+ cursor<span class="operator">.</span><a href="qtextcursor.html#endEditBlock" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#endEditBlock">endEditBlock</a>();
+
+ textDocument<span class="operator">-</span><span class="operator">&gt;</span>undo();
+</pre>
+<p>撤消（）的调用会导致两个插入到被撤消，造成两个“世界”和“你好”被删除。</p>
+<p>它也可以嵌套调用beginEditBlock和endEditBlock 。最上面的一对将决定撤消/重做操作的范围。</p>
+<p><b>See also</b> <a href="qtextcursor.html#endEditBlock" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#endEditBlock">endEditBlock</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="block"></a><a href="qtextblock.html" tppabs="http://pyqt4doc.appspot.com/qtextblock.html">QTextBlock</a> QTextCursor.block (<i>self</i>)</h3>
+<p>返回包含光标块。</p>
+
+
+<h3 class="fn">
+<a name="blockCharFormat"></a><a href="qtextcharformat.html" tppabs="http://pyqt4doc.appspot.com/qtextcharformat.html">QTextCharFormat</a> QTextCursor.blockCharFormat (<i>self</i>)</h3>
+<p>返回光标所在的块的块的字符格式</p>
+<p>块char格式是一个空块的开头插入文本时所使用的格式。</p>
+<p><b>See also</b> <a href="qtextcursor.html#setBlockCharFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#setBlockCharFormat">setBlockCharFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="blockFormat"></a><a href="qtextblockformat.html" tppabs="http://pyqt4doc.appspot.com/qtextblockformat.html">QTextBlockFormat</a> QTextCursor.blockFormat (<i>self</i>)</h3>
+<p>返回光标所在的块的块格式</p>
+<p><b>See also</b> <a href="qtextcursor.html#setBlockFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#setBlockFormat">setBlockFormat</a>（）和<a href="qtextcursor.html#charFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#charFormat">charFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="blockNumber"></a>int QTextCursor.blockNumber (<i>self</i>)</h3>
+<p>返回光标在，或0，如果光标是无效的块的数目。</p>
+<p>请注意，此功能才有意义的文件而无需复杂的对象，如表格或框架。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="charFormat"></a><a href="qtextcharformat.html" tppabs="http://pyqt4doc.appspot.com/qtextcharformat.html">QTextCharFormat</a> QTextCursor.charFormat (<i>self</i>)</h3>
+<p>立即光标前返回字符的格式<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（ ） 。如果光标被定位在一个文本块，它是不是空的开头，然后该字符的光标之后的格式被返回。</p>
+<p><b>See also</b> <a href="qtextcursor.html#setCharFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#setCharFormat">setCharFormat</a>（ ）<a href="qtextcursor.html#insertText" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertText">insertText</a>（）和<a href="qtextcursor.html#blockFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#blockFormat">blockFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clearSelection"></a>QTextCursor.clearSelection (<i>self</i>)</h3>
+<p>通过锚设置到光标位置清除当前的选择。</p>
+<p>需要注意的是它<b>not</b>删除选定的文本。</p>
+<p><b>See also</b> <a href="qtextcursor.html#removeSelectedText" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#removeSelectedText">removeSelectedText</a>（）和<a href="qtextcursor.html#hasSelection" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#hasSelection">hasSelection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="columnNumber"></a>int QTextCursor.columnNumber (<i>self</i>)</h3>
+<p>返回其包含的行内光标的位置。</p>
+<p>注意，这是列数相对于一个缠绕线，而不是相对于该块（即段落）。</p>
+<p>你可能想打电话<a href="qtextcursor.html#positionInBlock" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#positionInBlock">positionInBlock</a>（ ）来代替。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qtextcursor.html#positionInBlock" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#positionInBlock">positionInBlock</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="createList"></a><a href="qtextlist.html" tppabs="http://pyqt4doc.appspot.com/qtextlist.html">QTextList</a> QTextCursor.createList (<i>self</i>, <a href="qtextlistformat.html" tppabs="http://pyqt4doc.appspot.com/qtextlistformat.html">QTextListFormat</a> <i>format</i>)</h3>
+<p>创建并返回一个新的列表给定的<i>format</i>，并使得当前段落光标在第一个列表项。</p>
+<p><b>See also</b> <a href="qtextcursor.html#insertList" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertList">insertList</a>（）和<a href="qtextcursor.html#currentList" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#currentList">currentList</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="createList-2"></a><a href="qtextlist.html" tppabs="http://pyqt4doc.appspot.com/qtextlist.html">QTextList</a> QTextCursor.createList (<i>self</i>, <a href="qtextlistformat.html#Style-enum" tppabs="http://pyqt4doc.appspot.com/qtextlistformat.html#Style-enum">QTextListFormat.Style</a> <i>style</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>创建并返回一个新的列表给定的<i>style</i>，使得光标的当前段落的第一个列表项。</p>
+<p>要使用的样式被定义<a href="qtextlistformat.html#Style-enum" tppabs="http://pyqt4doc.appspot.com/qtextlistformat.html#Style-enum">QTextListFormat.Style</a>枚举。</p>
+<p><b>See also</b> <a href="qtextcursor.html#insertList" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertList">insertList</a>（）和<a href="qtextcursor.html#currentList" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#currentList">currentList</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentFrame"></a><a href="qtextframe.html" tppabs="http://pyqt4doc.appspot.com/qtextframe.html">QTextFrame</a> QTextCursor.currentFrame (<i>self</i>)</h3>
+<p>将指针返回到当前帧。返回0，如果游标是无效的。</p>
+<p><b>See also</b> <a href="qtextcursor.html#insertFrame" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertFrame">insertFrame</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentList"></a><a href="qtextlist.html" tppabs="http://pyqt4doc.appspot.com/qtextlist.html">QTextList</a> QTextCursor.currentList (<i>self</i>)</h3>
+<p>返回当前列表中，如果光标<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（ ）是一个块是列表的一部分里面，否则返回0 。</p>
+<p><b>See also</b> <a href="qtextcursor.html#insertList" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertList">insertList</a>（）和<a href="qtextcursor.html#createList" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#createList">createList</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentTable"></a><a href="qtexttable.html" tppabs="http://pyqt4doc.appspot.com/qtexttable.html">QTextTable</a> QTextCursor.currentTable (<i>self</i>)</h3>
+<p>返回一个指针，指向当前表如果光标<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（）是一个块，它是一个表中的部分内，否则返回0 。</p>
+<p><b>See also</b> <a href="qtextcursor.html#insertTable" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertTable">insertTable</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="deleteChar"></a>QTextCursor.deleteChar (<i>self</i>)</h3>
+<p>如果没有选定的文本，删除字符<i>at</i>当前光标位置，否则将删除选定的文本。</p>
+<p><b>See also</b> <a href="qtextcursor.html#deletePreviousChar" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#deletePreviousChar">deletePreviousChar</a>（ ）<a href="qtextcursor.html#hasSelection" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#hasSelection">hasSelection</a>（）和<a href="qtextcursor.html#clearSelection" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#clearSelection">clearSelection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="deletePreviousChar"></a>QTextCursor.deletePreviousChar (<i>self</i>)</h3>
+<p>如果没有选定的文本，删除字符<i>before</i>当前光标位置，否则将删除选定的文本。</p>
+<p><b>See also</b> <a href="qtextcursor.html#deleteChar" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#deleteChar">deleteChar</a>（ ）<a href="qtextcursor.html#hasSelection" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#hasSelection">hasSelection</a>（）和<a href="qtextcursor.html#clearSelection" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#clearSelection">clearSelection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="document"></a><a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a> QTextCursor.document (<i>self</i>)</h3>
+<p>返回此光标关联的文件。</p>
+<p>此功能被引入Qt的4.5 。</p>
+
+
+<h3 class="fn">
+<a name="endEditBlock"></a>QTextCursor.endEditBlock (<i>self</i>)</h3>
+<p>表示编辑操作上应显示为一个单一的操作从视图中撤消/重做点的文件块的结尾。</p>
+<p><b>See also</b> <a href="qtextcursor.html#beginEditBlock" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#beginEditBlock">beginEditBlock</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasComplexSelection"></a>bool QTextCursor.hasComplexSelection (<i>self</i>)</h3>
+<p>如果光标包含一个选择，是不是只是一个范围，则返回True<a href="qtextcursor.html#selectionStart" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#selectionStart">selectionStart</a>（）来<a href="qtextcursor.html#selectionEnd" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#selectionEnd">selectionEnd</a>（ ），否则返回False 。</p>
+<p>复杂的选择是那些跨越至少两个小区中的表格;他们的程度是通过指定<a href="qtextcursor.html#selectedTableCells" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#selectedTableCells">selectedTableCells</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasSelection"></a>bool QTextCursor.hasSelection (<i>self</i>)</h3>
+<p>返回True如果光标包含一个选择，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="insertBlock"></a>QTextCursor.insertBlock (<i>self</i>)</h3>
+<p>在游标位置插入一个新的空块<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（）与当前<a href="qtextcursor.html#blockFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#blockFormat">blockFormat</a>（）和<a href="qtextcursor.html#charFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#charFormat">charFormat</a>（ ） 。</p>
+<p><b>See also</b> <a href="qtextcursor.html#setBlockFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#setBlockFormat">setBlockFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertBlock-2"></a>QTextCursor.insertBlock (<i>self</i>, <a href="qtextblockformat.html" tppabs="http://pyqt4doc.appspot.com/qtextblockformat.html">QTextBlockFormat</a> <i>format</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>在游标位置插入一个新的空块<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（ ）与块格式<i>format</i>和电流<a href="qtextcursor.html#charFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#charFormat">charFormat</a>（ ）为块字符格式。</p>
+<p><b>See also</b> <a href="qtextcursor.html#setBlockFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#setBlockFormat">setBlockFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertBlock-3"></a>QTextCursor.insertBlock (<i>self</i>, <a href="qtextblockformat.html" tppabs="http://pyqt4doc.appspot.com/qtextblockformat.html">QTextBlockFormat</a> <i>format</i>, <a href="qtextcharformat.html" tppabs="http://pyqt4doc.appspot.com/qtextcharformat.html">QTextCharFormat</a> <i>charFormat</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>在游标位置插入一个新的空块<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（ ）与块格式<i>format</i>和<i>charFormat</i>为块字符格式。</p>
+<p><b>See also</b> <a href="qtextcursor.html#setBlockFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#setBlockFormat">setBlockFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertFragment"></a>QTextCursor.insertFragment (<i>self</i>, <a href="qtextdocumentfragment.html" tppabs="http://pyqt4doc.appspot.com/qtextdocumentfragment.html">QTextDocumentFragment</a> <i>fragment</i>)</h3>
+<p>插入文本<i>fragment</i>在当前<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertFrame"></a><a href="qtextframe.html" tppabs="http://pyqt4doc.appspot.com/qtextframe.html">QTextFrame</a> QTextCursor.insertFrame (<i>self</i>, <a href="qtextframeformat.html" tppabs="http://pyqt4doc.appspot.com/qtextframeformat.html">QTextFrameFormat</a> <i>format</i>)</h3>
+<p>插入一个框架给定的<i>format</i>在当前光标<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（ ） ，移动光标<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（）的框架内，并返回该帧。</p>
+<p>如果光标持有的选择，整机选用移动的框架内。</p>
+<p><b>See also</b> <a href="qtextcursor.html#hasSelection" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#hasSelection">hasSelection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertHtml"></a>QTextCursor.insertHtml (<i>self</i>, QString <i>html</i>)</h3>
+<p>插入文本<i>html</i>在当前<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（ ） 。该文本被解释为HTML 。</p>
+<p><b>Note:</b>使用此功能时使用样式表，样式表只适用于文档中的当前块。为了对整个文档应用样式表，使用<a href="qtextdocument.html#defaultStyleSheet-prop" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#defaultStyleSheet-prop">QTextDocument.setDefaultStyleSheet</a>（ ）来代替。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="insertImage"></a>QTextCursor.insertImage (<i>self</i>, <a href="qtextimageformat.html" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html">QTextImageFormat</a> <i>format</i>)</h3>
+<p>插入由所定义的图像<i>format</i>在当前<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertImage-2"></a>QTextCursor.insertImage (<i>self</i>, <a href="qtextimageformat.html" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html">QTextImageFormat</a> <i>format</i>, <a href="qtextframeformat.html#Position-enum" tppabs="http://pyqt4doc.appspot.com/qtextframeformat.html#Position-enum">QTextFrameFormat.Position</a> <i>alignment</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>，将图像由给定的定义<i>format</i>在光标的当前位置与指定的<i>alignment</i>。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertImage-3"></a>QTextCursor.insertImage (<i>self</i>, QString <i>name</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>便利的方法与给定插入图像<i>name</i>在当前<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（ ） 。</p>
+<pre class="cpp">
+ <span class="type"><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a></span> img <span class="operator">=</span> <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ textDocument<span class="operator">-</span><span class="operator">&gt;</span>addResource(<span class="type"><a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a></span><span class="operator">.</span>ImageResource<span class="operator">,</span> <span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span>(<span class="string">"myimage"</span>)<span class="operator">,</span> img);
+ cursor<span class="operator">.</span><a href="qtextcursor.html#insertImage" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertImage">insertImage</a>(<span class="string">"myimage"</span>);
+</pre>
+
+
+<h3 class="fn">
+<a name="insertImage-4"></a>QTextCursor.insertImage (<i>self</i>, <a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> <i>image</i>, QString <i>name</i> = QString())</h3>
+<p>这是一个重载函数。</p>
+<p>便利功能用于插入给定的<i>image</i>具有可选<i>name</i>在当前<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（ ） 。</p>
+<p>此功能被引入Qt的4.5 。</p>
+
+
+<h3 class="fn">
+<a name="insertList"></a><a href="qtextlist.html" tppabs="http://pyqt4doc.appspot.com/qtextlist.html">QTextList</a> QTextCursor.insertList (<i>self</i>, <a href="qtextlistformat.html" tppabs="http://pyqt4doc.appspot.com/qtextlistformat.html">QTextListFormat</a> <i>format</i>)</h3>
+<p>插入一个新块的当前位置，并使它成为一个新创建的列表中给出的第一个列表项<i>format</i>。返回创建的列表。</p>
+<p><b>See also</b> <a href="qtextcursor.html#currentList" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#currentList">currentList</a>（ ）<a href="qtextcursor.html#createList" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#createList">createList</a>（）和<a href="qtextcursor.html#insertBlock" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertBlock">insertBlock</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertList-2"></a><a href="qtextlist.html" tppabs="http://pyqt4doc.appspot.com/qtextlist.html">QTextList</a> QTextCursor.insertList (<i>self</i>, <a href="qtextlistformat.html#Style-enum" tppabs="http://pyqt4doc.appspot.com/qtextlistformat.html#Style-enum">QTextListFormat.Style</a> <i>style</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>插入一个新块的当前位置，并使它成为一个新创建的列表中给出的第一个列表项<i>style</i>。返回创建的列表。</p>
+<p><b>See also</b> <a href="qtextcursor.html#currentList" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#currentList">currentList</a>（ ）<a href="qtextcursor.html#createList" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#createList">createList</a>（）和<a href="qtextcursor.html#insertBlock" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertBlock">insertBlock</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertTable"></a><a href="qtexttable.html" tppabs="http://pyqt4doc.appspot.com/qtexttable.html">QTextTable</a> QTextCursor.insertTable (<i>self</i>, int <i>rows</i>, int <i>cols</i>, <a href="qtexttableformat.html" tppabs="http://pyqt4doc.appspot.com/qtexttableformat.html">QTextTableFormat</a> <i>format</i>)</h3>
+<p>创建一个具有给定数量的新表<i>rows</i>和<i>columns</i>在指定的<i>format</i>，将其插入到当前光标<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（ ）在文件中，并返回表对象。将光标移动到第一小区的开头。</p>
+<p>必须有在表中的至少一行和一列。</p>
+<p><b>See also</b> <a href="qtextcursor.html#currentTable" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#currentTable">currentTable</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertTable-2"></a><a href="qtexttable.html" tppabs="http://pyqt4doc.appspot.com/qtexttable.html">QTextTable</a> QTextCursor.insertTable (<i>self</i>, int <i>rows</i>, int <i>cols</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>创建一个具有给定数量的新表<i>rows</i>和<i>columns</i>，将其插入到当前光标<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（ ）在文件中，并返回表对象。将光标移动到第一小区的开头。</p>
+<p>必须有在表中的至少一行和一列。</p>
+<p><b>See also</b> <a href="qtextcursor.html#currentTable" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#currentTable">currentTable</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertText"></a>QTextCursor.insertText (<i>self</i>, QString <i>text</i>)</h3>
+<p>Inserts <i>text</i>在当前位置，使用当前的字符格式。</p>
+<p>如果有选择，选择被删除，取而代之的是<i>text</i>例如：</p>
+<pre class="cpp">
+ cursor<span class="operator">.</span><a href="qtextcursor.html#clearSelection" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#clearSelection">clearSelection</a>();
+ cursor<span class="operator">.</span><a href="qtextcursor.html#movePosition" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#movePosition">movePosition</a>(<span class="type"><a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a></span><span class="operator">.</span>NextWord<span class="operator">,</span> <span class="type"><a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a></span><span class="operator">.</span>KeepAnchor);
+ cursor<span class="operator">.</span>insertText(<span class="string">"Hello World"</span>);
+</pre>
+<p>这将清除任何现有的选择，选择这个词在光标（即<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（ ）向前） ，并替换选择的短语的“Hello World ” 。</p>
+<p>在插入的文本任何ASCII换行符（ \ n）被转换成Unicode块分隔符，对应<a href="qtextcursor.html#insertBlock" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertBlock">insertBlock</a>（ ）调用。</p>
+<p><b>See also</b> <a href="qtextcursor.html#charFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#charFormat">charFormat</a>（）和<a href="qtextcursor.html#hasSelection" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#hasSelection">hasSelection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertText-2"></a>QTextCursor.insertText (<i>self</i>, QString <i>text</i>, <a href="qtextcharformat.html" tppabs="http://pyqt4doc.appspot.com/qtextcharformat.html">QTextCharFormat</a> <i>format</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>Inserts <i>text</i>在当前位置与给定的<i>format</i>。</p>
+
+
+<h3 class="fn">
+<a name="isCopyOf"></a>bool QTextCursor.isCopyOf (<i>self</i>, <a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a> <i>other</i>)</h3>
+<p>返回True如果光标和<i>other</i>是彼此的副本，即它们中的一个被创建为其它和因为无论已移动的一个副本。这比平等更严格的。</p>
+<p><b>See also</b> <a href="qtextcursor.html#operator-eq" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#operator-eq">operator=</a>（）和<a href="qtextcursor.html#operator-eq-eq" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#operator-eq-eq">operator==</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isNull"></a>bool QTextCursor.isNull (<i>self</i>)</h3>
+<p>返回True如果光标为空，否则返回False 。一个空指针被默认构造函数创建的。</p>
+
+
+<h3 class="fn">
+<a name="joinPreviousEditBlock"></a>QTextCursor.joinPreviousEditBlock (<i>self</i>)</h3>
+<p>喜欢<a href="qtextcursor.html#beginEditBlock" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#beginEditBlock">beginEditBlock</a>（ ）表示编辑操作的块应显示为撤消/重做一个操作的开始。然而不同<a href="qtextcursor.html#beginEditBlock" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#beginEditBlock">beginEditBlock</a>（ ）它不会启动一个新的块，但反转以前调用<a href="qtextcursor.html#endEditBlock" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#endEditBlock">endEditBlock</a>（ ），因此使得下面创建的前一个编辑数据块的操作部分。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a></span> cursor(textDocument);
+ cursor<span class="operator">.</span><a href="qtextcursor.html#beginEditBlock" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#beginEditBlock">beginEditBlock</a>();
+ cursor<span class="operator">.</span><a href="qtextcursor.html#insertText" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertText">insertText</a>(<span class="string">"Hello"</span>);
+ cursor<span class="operator">.</span><a href="qtextcursor.html#insertText" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertText">insertText</a>(<span class="string">"World"</span>);
+ cursor<span class="operator">.</span><a href="qtextcursor.html#endEditBlock" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#endEditBlock">endEditBlock</a>();
+
+ <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+
+ cursor<span class="operator">.</span>joinPreviousEditBlock();
+ cursor<span class="operator">.</span><a href="qtextcursor.html#insertText" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#insertText">insertText</a>(<span class="string">"Hey"</span>);
+ cursor<span class="operator">.</span><a href="qtextcursor.html#endEditBlock" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#endEditBlock">endEditBlock</a>();
+
+ textDocument<span class="operator">-</span><span class="operator">&gt;</span>undo();
+</pre>
+<p>撤消（）的调用会导致所有三个插入到被撤消。</p>
+<p><b>See also</b> <a href="qtextcursor.html#beginEditBlock" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#beginEditBlock">beginEditBlock</a>（）和<a href="qtextcursor.html#endEditBlock" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#endEditBlock">endEditBlock</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="keepPositionOnInsert"></a>bool QTextCursor.keepPositionOnInsert (<i>self</i>)</h3>
+<p>返回游标是否应保持其目前的位置，当文本被插入到光标的位置。</p>
+<p>默认值为False ;</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qtextcursor.html#setKeepPositionOnInsert" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#setKeepPositionOnInsert">setKeepPositionOnInsert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mergeBlockCharFormat"></a>QTextCursor.mergeBlockCharFormat (<i>self</i>, <a href="qtextcharformat.html" tppabs="http://pyqt4doc.appspot.com/qtextcharformat.html">QTextCharFormat</a> <i>modifier</i>)</h3>
+<p>修改当前块的块char格式（或包含在选区中的所有块）由指定的程序段格式<i>modifier</i>。</p>
+<p><b>See also</b> <a href="qtextcursor.html#setBlockCharFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#setBlockCharFormat">setBlockCharFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mergeBlockFormat"></a>QTextCursor.mergeBlockFormat (<i>self</i>, <a href="qtextblockformat.html" tppabs="http://pyqt4doc.appspot.com/qtextblockformat.html">QTextBlockFormat</a> <i>modifier</i>)</h3>
+<p>修改当前块的块格式（或包含在选择的所有块）与所指定的数据块格式<i>modifier</i>。</p>
+<p><b>See also</b> <a href="qtextcursor.html#setBlockFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#setBlockFormat">setBlockFormat</a>（）和<a href="qtextcursor.html#blockFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#blockFormat">blockFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mergeCharFormat"></a>QTextCursor.mergeCharFormat (<i>self</i>, <a href="qtextcharformat.html" tppabs="http://pyqt4doc.appspot.com/qtextcharformat.html">QTextCharFormat</a> <i>modifier</i>)</h3>
+<p>合并光标的与格式描述的属性当前字符格式<i>modifier</i>。如果光标有一个选择，这个功能适用于所有设置属性<i>modifier</i>所有的字符格式，是选择的一部分。</p>
+<p><b>See also</b> <a href="qtextcursor.html#hasSelection" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#hasSelection">hasSelection</a>（）和<a href="qtextcursor.html#setCharFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#setCharFormat">setCharFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="movePosition"></a>bool QTextCursor.movePosition (<i>self</i>, <a href="qtextcursor.html#MoveOperation-enum" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#MoveOperation-enum">MoveOperation</a> <i>op</i>, <a href="qtextcursor.html#MoveMode-enum" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#MoveMode-enum">MoveMode</a> <i>mode</i> = QTextCursor.MoveAnchor, int <i>n</i> = 1)</h3>
+<p>通过执行给定的移动光标<i>operation</i>
+<i>n</i>次，使用指定的<i>mode</i>，并返回True，如果所有操作都成功完成，否则返回False 。</p>
+<p>例如，如果这个功能被反复使用以寻求到下一个字的结尾，它最终将当达到文件结尾的失败。</p>
+<p>默认情况下，执行移动操作一次（<i>n</i>= 1）。</p>
+<p>If <i>mode</i> is <tt>KeepAnchor</tt>，光标选择它移动到文本上。这是当他们按住Shift键并移动光标，光标键，用户达到相同的效果。</p>
+<p><b>See also</b> <a href="qtextcursor.html#setVisualNavigation" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#setVisualNavigation">setVisualNavigation</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="position"></a>int QTextCursor.position (<i>self</i>)</h3>
+<p>返回文档内的光标的绝对位置。将光标定位字符之间。</p>
+<p><b>See also</b> <a href="qtextcursor.html#setPosition" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#setPosition">setPosition</a>（ ）<a href="qtextcursor.html#movePosition" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#movePosition">movePosition</a>（ ）<a href="qtextcursor.html#anchor" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#anchor">anchor</a>（）和<a href="qtextcursor.html#positionInBlock" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#positionInBlock">positionInBlock</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="positionInBlock"></a>int QTextCursor.positionInBlock (<i>self</i>)</h3>
+<p>返回块内的光标的相对位置。将光标定位字符之间。</p>
+<p>这等效于<tt>position() -
+block().position()</tt>。</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="removeSelectedText"></a>QTextCursor.removeSelectedText (<i>self</i>)</h3>
+<p>如果有选择，它的内容将被删除，否则什么都不做。</p>
+<p><b>See also</b> <a href="qtextcursor.html#hasSelection" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#hasSelection">hasSelection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="select"></a>QTextCursor.select (<i>self</i>, <a href="qtextcursor.html#SelectionType-enum" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#SelectionType-enum">SelectionType</a> <i>selection</i>)</h3>
+<p>根据给定的选择文档中的文本<i>selection</i>。</p>
+
+
+<h3 class="fn">
+<a name="selectedTableCells"></a>(int <i>firstRow</i>, int <i>numRows</i>, int <i>firstColumn</i>, int <i>numColumns</i>) QTextCursor.selectedTableCells (<i>self</i>)</h3>
+<p>如果选择跨越表格单元格，<i>firstRow</i>填入第一行中选择的数量，<i>firstColumn</i>以在选择第一列的数目，并<i>numRows</i>和<i>numColumns</i>以行和列的选择数目。如果选择不跨越任何表格单元格的结果是无害的，但不确定。</p>
+
+
+<h3 class="fn">
+<a name="selectedText"></a>QString QTextCursor.selectedText (<i>self</i>)</h3>
+<p>返回当前选择的文本（可能为空） 。这只能返回文本，没有丰富的文本格式的信息。如果你想有一个文档片段（即格式化的富文本）的使用<a href="qtextcursor.html#selection" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#selection">selection</a>（ ）来代替。</p>
+<p><b>Note:</b>如果从编辑获得的选择跨越一个换行符，文本将包含一个Unicode ü 2029段分隔符，而不是一个换行符<tt>\n</tt>字符。使用<a href="qstring.html#replace" tppabs="http://pyqt4doc.appspot.com/qstring.html#replace">QString.replace</a>（）与换行符替换这些字符。</p>
+
+
+<h3 class="fn">
+<a name="selection"></a><a href="qtextdocumentfragment.html" tppabs="http://pyqt4doc.appspot.com/qtextdocumentfragment.html">QTextDocumentFragment</a> QTextCursor.selection (<i>self</i>)</h3>
+<p>返回当前的选择（可能为空） ，其所有的格式化信息。如果你只是想选定的文本（即纯文本）的使用<a href="qtextcursor.html#selectedText" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#selectedText">selectedText</a>（ ）来代替。</p>
+<p><b>Note:</b>不像<a href="qtextdocumentfragment.html#toPlainText" tppabs="http://pyqt4doc.appspot.com/qtextdocumentfragment.html#toPlainText">QTextDocumentFragment.toPlainText</a>（ ）<a href="qtextcursor.html#selectedText" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#selectedText">selectedText</a>（ ）可能包括特殊的Unicode字符，如<a href="qchar.html#SpecialCharacter-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#SpecialCharacter-enum">QChar.ParagraphSeparator</a>。</p>
+<p><b>See also</b> <a href="qtextdocumentfragment.html#toPlainText" tppabs="http://pyqt4doc.appspot.com/qtextdocumentfragment.html#toPlainText">QTextDocumentFragment.toPlainText</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="selectionEnd"></a>int QTextCursor.selectionEnd (<i>self</i>)</h3>
+<p>返回所选内容的末尾或<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（）如果光标没有选择。</p>
+<p><b>See also</b> <a href="qtextcursor.html#selectionStart" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#selectionStart">selectionStart</a>（ ）<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（）和<a href="qtextcursor.html#anchor" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#anchor">anchor</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="selectionStart"></a>int QTextCursor.selectionStart (<i>self</i>)</h3>
+<p>返回所选内容的开始或<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（）如果光标没有选择。</p>
+<p><b>See also</b> <a href="qtextcursor.html#selectionEnd" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#selectionEnd">selectionEnd</a>（ ）<a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（）和<a href="qtextcursor.html#anchor" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#anchor">anchor</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setBlockCharFormat"></a>QTextCursor.setBlockCharFormat (<i>self</i>, <a href="qtextcharformat.html" tppabs="http://pyqt4doc.appspot.com/qtextcharformat.html">QTextCharFormat</a> <i>format</i>)</h3>
+<p>设置当前块的块char格式（或包含在选区中的所有块） ，以<i>format</i>。</p>
+<p><b>See also</b> <a href="qtextcursor.html#blockCharFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#blockCharFormat">blockCharFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setBlockFormat"></a>QTextCursor.setBlockFormat (<i>self</i>, <a href="qtextblockformat.html" tppabs="http://pyqt4doc.appspot.com/qtextblockformat.html">QTextBlockFormat</a> <i>format</i>)</h3>
+<p>将当前块的块格式（或包含在选择的所有块），以<i>format</i>。</p>
+<p><b>See also</b> <a href="qtextcursor.html#blockFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#blockFormat">blockFormat</a>（）和<a href="qtextcursor.html#mergeBlockFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#mergeBlockFormat">mergeBlockFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCharFormat"></a>QTextCursor.setCharFormat (<i>self</i>, <a href="qtextcharformat.html" tppabs="http://pyqt4doc.appspot.com/qtextcharformat.html">QTextCharFormat</a> <i>format</i>)</h3>
+<p>设置光标的当前字符格式到给定<i>format</i>。如果光标有一个选择，给定的<i>format</i>应用到当前的选择。</p>
+<p><b>See also</b> <a href="qtextcursor.html#charFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#charFormat">charFormat</a>（ ）<a href="qtextcursor.html#hasSelection" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#hasSelection">hasSelection</a>（）和<a href="qtextcursor.html#mergeCharFormat" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#mergeCharFormat">mergeCharFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setKeepPositionOnInsert"></a>QTextCursor.setKeepPositionOnInsert (<i>self</i>, bool <i>b</i>)</h3>
+<p>定义游标是否应保持其目前的位置，当文本被插入到光标的当前位置。</p>
+<p>If <i>b</i>诚然，光标保持其当前位置，当文字被插入到光标的：放置。如果<i>b</i>是假的，光标移动随插入的文本。</p>
+<p>默认值为False 。</p>
+<p>请注意，光标移动始终文本时，光标的当前位置之前插入，并且始终保持其位置时，文本光标的当前位置后插入。</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qtextcursor.html#keepPositionOnInsert" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#keepPositionOnInsert">keepPositionOnInsert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPosition"></a>QTextCursor.setPosition (<i>self</i>, int <i>pos</i>, <a href="qtextcursor.html#MoveMode-enum" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#MoveMode-enum">MoveMode</a> <i>mode</i> = QTextCursor.MoveAnchor)</h3>
+<p>将光标移动到所指定的文件中的绝对位置<i>pos</i>使用<tt>MoveMode</tt>通过指定<i>m</i>。将光标定位字符之间。</p>
+<p><b>See also</b> <a href="qtextcursor.html#position" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#position">position</a>（ ）<a href="qtextcursor.html#movePosition" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#movePosition">movePosition</a>（）和<a href="qtextcursor.html#anchor" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#anchor">anchor</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setVerticalMovementX"></a>QTextCursor.setVerticalMovementX (<i>self</i>, int <i>x</i>)</h3>
+<p>设置为垂直光标运动的视觉x位置，以<i>x</i>。</p>
+<p>垂直运动x位置自动清零当光标水平移动，并保持不变，当光标上下移动。该机制允许光标上下移动以与比例字体在视觉上的直线，并轻轻地“跳”过短的线路。</p>
+<p>值-1表示没有预定义的x位置。然后，它会自动在下一次光标向上或向下移动设置。</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qtextcursor.html#verticalMovementX" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#verticalMovementX">verticalMovementX</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setVisualNavigation"></a>QTextCursor.setVisualNavigation (<i>self</i>, bool <i>b</i>)</h3>
+<p>设置视觉导航到<i>b</i>。</p>
+<p>视觉导航是指跳过隐藏的文本pragraphs 。默认值为False 。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qtextcursor.html#visualNavigation" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#visualNavigation">visualNavigation</a>（）和<a href="qtextcursor.html#movePosition" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#movePosition">movePosition</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="verticalMovementX"></a>int QTextCursor.verticalMovementX (<i>self</i>)</h3>
+<p>返回垂直光标运动的视觉x位置。</p>
+<p>值-1表示没有预定义的x位置。然后，它会自动在下一次光标向上或向下移动设置。</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qtextcursor.html#setVerticalMovementX" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#setVerticalMovementX">setVerticalMovementX</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="visualNavigation"></a>bool QTextCursor.visualNavigation (<i>self</i>)</h3>
+<p>返回True如果光标做视觉导航;否则返回False。</p>
+<p>视觉导航是指跳过隐藏的文本pragraphs 。默认值为False 。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qtextcursor.html#setVisualNavigation" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#setVisualNavigation">setVisualNavigation</a>（）和<a href="qtextcursor.html#movePosition" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html#movePosition">movePosition</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="__eq__"></a>bool QTextCursor.__eq__ (<i>self</i>, <a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a> <i>rhs</i>)</h3>
+<h3 class="fn">
+<a name="__ge__"></a>bool QTextCursor.__ge__ (<i>self</i>, <a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a> <i>rhs</i>)</h3>
+<h3 class="fn">
+<a name="__gt__"></a>bool QTextCursor.__gt__ (<i>self</i>, <a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a> <i>rhs</i>)</h3>
+<h3 class="fn">
+<a name="__le__"></a>bool QTextCursor.__le__ (<i>self</i>, <a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a> <i>rhs</i>)</h3>
+<h3 class="fn">
+<a name="__lt__"></a>bool QTextCursor.__lt__ (<i>self</i>, <a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a> <i>rhs</i>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QTextCursor.__ne__ (<i>self</i>, <a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a> <i>rhs</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

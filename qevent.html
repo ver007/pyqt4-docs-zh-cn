@@ -1,0 +1,870 @@
+﻿<html>
+<head>
+<title>QEvent Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QEvent Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QEvent的类是所有事件类的基类。事件对象包含事件参数。<a href="#details">More...</a></p>
+
+<p>通过继承<a href="qactionevent.html" tppabs="http://pyqt4doc.appspot.com/qactionevent.html">QActionEvent</a>，<a href="qchildevent.html" tppabs="http://pyqt4doc.appspot.com/qchildevent.html">QChildEvent</a>，<a href="qcloseevent.html" tppabs="http://pyqt4doc.appspot.com/qcloseevent.html">QCloseEvent</a>，<a href="qdragleaveevent.html" tppabs="http://pyqt4doc.appspot.com/qdragleaveevent.html">QDragLeaveEvent</a>，<a href="qdropevent.html" tppabs="http://pyqt4doc.appspot.com/qdropevent.html">QDropEvent</a>，<a href="qdynamicpropertychangeevent.html" tppabs="http://pyqt4doc.appspot.com/qdynamicpropertychangeevent.html">QDynamicPropertyChangeEvent</a>，<a href="qfileopenevent.html" tppabs="http://pyqt4doc.appspot.com/qfileopenevent.html">QFileOpenEvent</a>，<a href="qfocusevent.html" tppabs="http://pyqt4doc.appspot.com/qfocusevent.html">QFocusEvent</a>，<a href="qgestureevent.html" tppabs="http://pyqt4doc.appspot.com/qgestureevent.html">QGestureEvent</a>，<a href="qgraphicssceneevent.html" tppabs="http://pyqt4doc.appspot.com/qgraphicssceneevent.html">QGraphicsSceneEvent</a>，<a href="qhelpevent.html" tppabs="http://pyqt4doc.appspot.com/qhelpevent.html">QHelpEvent</a>，<a href="qhideevent.html" tppabs="http://pyqt4doc.appspot.com/qhideevent.html">QHideEvent</a>，<a href="qhoverevent.html" tppabs="http://pyqt4doc.appspot.com/qhoverevent.html">QHoverEvent</a>，<a href="qicondragevent.html" tppabs="http://pyqt4doc.appspot.com/qicondragevent.html">QIconDragEvent</a>，<a href="qinputevent.html" tppabs="http://pyqt4doc.appspot.com/qinputevent.html">QInputEvent</a>，<a href="qinputmethodevent.html" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html">QInputMethodEvent</a>，<a href="qmoveevent.html" tppabs="http://pyqt4doc.appspot.com/qmoveevent.html">QMoveEvent</a>，<a href="qpaintevent.html" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html">QPaintEvent</a>，<a href="qresizeevent.html" tppabs="http://pyqt4doc.appspot.com/qresizeevent.html">QResizeEvent</a>，<a href="qshortcutevent.html" tppabs="http://pyqt4doc.appspot.com/qshortcutevent.html">QShortcutEvent</a>，<a href="qshowevent.html" tppabs="http://pyqt4doc.appspot.com/qshowevent.html">QShowEvent</a>，<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qstatemachine-signalevent.html">SignalEvent</a>，<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qstatemachine-wrappedevent.html">WrappedEvent</a>，<a href="qstatustipevent.html" tppabs="http://pyqt4doc.appspot.com/qstatustipevent.html">QStatusTipEvent</a>，<a href="qtimerevent.html" tppabs="http://pyqt4doc.appspot.com/qtimerevent.html">QTimerEvent</a>，<a href="qwhatsthisclickedevent.html" tppabs="http://pyqt4doc.appspot.com/qwhatsthisclickedevent.html">QWhatsThisClickedEvent</a>和<a href="qwindowstatechangeevent.html" tppabs="http://pyqt4doc.appspot.com/qwindowstatechangeevent.html">QWindowStateChangeEvent</a>。</p>
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">Type</a></b> { None, Timer, MouseButtonPress, MouseButtonRelease, ..., MaxUser }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qevent.html#QEvent" tppabs="http://pyqt4doc.appspot.com/qevent.html#QEvent">__init__</a></b> (<i>self</i>, Type <i>type</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qevent.html#QEvent-2" tppabs="http://pyqt4doc.appspot.com/qevent.html#QEvent-2">__init__</a></b> (<i>self</i>, QEvent)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qevent.html#accept" tppabs="http://pyqt4doc.appspot.com/qevent.html#accept">accept</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qevent.html#ignore" tppabs="http://pyqt4doc.appspot.com/qevent.html#ignore">ignore</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qevent.html#isAccepted" tppabs="http://pyqt4doc.appspot.com/qevent.html#isAccepted">isAccepted</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qevent.html#setAccepted" tppabs="http://pyqt4doc.appspot.com/qevent.html#setAccepted">setAccepted</a></b> (<i>self</i>, bool <i>accepted</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qevent.html#spontaneous" tppabs="http://pyqt4doc.appspot.com/qevent.html#spontaneous">spontaneous</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Type <b><a href="qevent.html#type" tppabs="http://pyqt4doc.appspot.com/qevent.html#type">type</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul><li>
+<div class="fn"></div>int <b><a href="qevent.html#registerEventType" tppabs="http://pyqt4doc.appspot.com/qevent.html#registerEventType">registerEventType</a></b> (int <i>hint</i> = -1)</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QEvent的类是所有事件类的基类。事件对象包含事件参数。</p>
+<p>Qt的主事件循环（<a href="qcoreapplication.html#exec" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#exec">QCoreApplication.exec</a>（ ） ）获取从事件队列本地窗口系统事件，将它们转换成QEvents ，并将转换事件<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>秒。</p>
+<p>一般情况下，事件来自底层窗口系统（<a href="qevent.html#spontaneous" tppabs="http://pyqt4doc.appspot.com/qevent.html#spontaneous">spontaneous</a>（ ）返回True ），但它也可以使用手动发送事件<a href="qcoreapplication.html#sendEvent" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#sendEvent">QCoreApplication.sendEvent</a>（）和<a href="qcoreapplication.html#postEvent" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#postEvent">QCoreApplication.postEvent</a>（ ） （<a href="qevent.html#spontaneous" tppabs="http://pyqt4doc.appspot.com/qevent.html#spontaneous">spontaneous</a>（ ）返回False ） 。</p>
+<p><a href="index.htm#qobjects" tppabs="http://pyqt4doc.appspot.com/qtwebkit-bridge.html#qobjects">QObjects</a>由有接收事件的<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">QObject.event</a>（ ）函数调用。该函数可以在子类中重新实现自定义事件处理，并添加额外的事件类型;<a href="qwidget.html#event" tppabs="http://pyqt4doc.appspot.com/qwidget.html#event">QWidget.event</a>（）是一个显着的例子。默认情况下，事件分派到事件处理程序一样<a href="qobject.html#timerEvent" tppabs="http://pyqt4doc.appspot.com/qobject.html#timerEvent">QObject.timerEvent</a>（）和<a href="qwidget.html#mouseMoveEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#mouseMoveEvent">QWidget.mouseMoveEvent</a>（ ） 。<a href="qobject.html#installEventFilter" tppabs="http://pyqt4doc.appspot.com/qobject.html#installEventFilter">QObject.installEventFilter</a>（ ）允许一个对象截获发往另一个对象的事件。</p>
+<p>基本的QEvent只包含一个事件类型参数和一个“接受”的标志。在接受标志设置<a href="qevent.html#accept" tppabs="http://pyqt4doc.appspot.com/qevent.html#accept">accept</a>（ ） ，并与清除<a href="qevent.html#ignore" tppabs="http://pyqt4doc.appspot.com/qevent.html#ignore">ignore</a>（ ） 。这是默认设置，但不靠这个作为子类可以选择清除它在其构造函数。</p>
+<p>QEvent的子类包含描述特定事件的附加参数。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="Type-enum"></a>QEvent.Type</h3>
+<p>这个枚举类型定义Qt中有效的事件类型。的事件类型和专门的类为每种类型如下：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.None</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">而不是一个事件。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.AccessibilityDescription</tt></td>
+<td class="topAlign"><tt>130</tt></td>
+<td class="topAlign">用于查询辅助说明文字（<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qaccessibleevent.html">QAccessibleEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.AccessibilityHelp</tt></td>
+<td class="topAlign"><tt>119</tt></td>
+<td class="topAlign">用于查询辅助说明文字（<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qaccessibleevent.html">QAccessibleEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.AccessibilityPrepare</tt></td>
+<td class="topAlign"><tt>86</tt></td>
+<td class="topAlign">请求无障碍的信息。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.ActionAdded</tt></td>
+<td class="topAlign"><tt>114</tt></td>
+<td class="topAlign">一个新的行动已添加（<a href="qactionevent.html" tppabs="http://pyqt4doc.appspot.com/qactionevent.html">QActionEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.ActionChanged</tt></td>
+<td class="topAlign"><tt>113</tt></td>
+<td class="topAlign">一个动作已经改变（<a href="qactionevent.html" tppabs="http://pyqt4doc.appspot.com/qactionevent.html">QActionEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.ActionRemoved</tt></td>
+<td class="topAlign"><tt>115</tt></td>
+<td class="topAlign">动作已被删除（<a href="qactionevent.html" tppabs="http://pyqt4doc.appspot.com/qactionevent.html">QActionEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.ActivationChange</tt></td>
+<td class="topAlign"><tt>99</tt></td>
+<td class="topAlign">Widget的顶层窗口的激活状态发生了变化。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.ApplicationActivate</tt></td>
+<td class="topAlign"><tt>121</tt></td>
+<td class="topAlign">该应用程序已被提供给用户。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.ApplicationActivated</tt></td>
+<td class="topAlign"><tt>ApplicationActivate</tt></td>
+<td class="topAlign">这个枚举已弃用。使用ApplicationActivate代替。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.ApplicationDeactivate</tt></td>
+<td class="topAlign"><tt>122</tt></td>
+<td class="topAlign">该应用程序已暂停，并且是不可用的用户。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.ApplicationFontChange</tt></td>
+<td class="topAlign"><tt>36</tt></td>
+<td class="topAlign">默认的应用程序的字体已经改变。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QEvent.ApplicationLayoutDirectionChange</tt>
+</td>
+<td class="topAlign"><tt>37</tt></td>
+<td class="topAlign">默认的应用程序布局的方向发生了变化。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.ApplicationPaletteChange</tt></td>
+<td class="topAlign"><tt>38</tt></td>
+<td class="topAlign">默认的应用程序的调色板已经改变。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QEvent.ApplicationWindowIconChange</tt>
+</td>
+<td class="topAlign"><tt>35</tt></td>
+<td class="topAlign">该应用程序的图标发生了变化。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.ChildAdded</tt></td>
+<td class="topAlign"><tt>68</tt></td>
+<td class="topAlign">一个对象得到一个孩子（<a href="qchildevent.html" tppabs="http://pyqt4doc.appspot.com/qchildevent.html">QChildEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.ChildInserted</tt></td>
+<td class="topAlign"><tt>70</tt></td>
+<td class="topAlign">一个对象得到一个孩子（<a href="qchildevent.html" tppabs="http://pyqt4doc.appspot.com/qchildevent.html">QChildEvent</a>） 。<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt3support.html">Qt3Support</a>只是，使用ChildAdded代替。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.ChildPolished</tt></td>
+<td class="topAlign"><tt>69</tt></td>
+<td class="topAlign">一个widget孩子被抛光（<a href="qchildevent.html" tppabs="http://pyqt4doc.appspot.com/qchildevent.html">QChildEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.ChildRemoved</tt></td>
+<td class="topAlign"><tt>71</tt></td>
+<td class="topAlign">对象失去一个孩子（<a href="qchildevent.html" tppabs="http://pyqt4doc.appspot.com/qchildevent.html">QChildEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.Clipboard</tt></td>
+<td class="topAlign"><tt>40</tt></td>
+<td class="topAlign">剪贴板中的内容已经改变（ QClipboardEvent ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.Close</tt></td>
+<td class="topAlign"><tt>19</tt></td>
+<td class="topAlign">窗口小部件被关闭（<a href="qcloseevent.html" tppabs="http://pyqt4doc.appspot.com/qcloseevent.html">QCloseEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.CloseSoftwareInputPanel</tt></td>
+<td class="topAlign"><tt>200</tt></td>
+<td class="topAlign">一个widget要关闭该软件输入面板（SIP ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.ContentsRectChange</tt></td>
+<td class="topAlign"><tt>178</tt></td>
+<td class="topAlign">widget的内容矩形的边缘改变。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.ContextMenu</tt></td>
+<td class="topAlign"><tt>82</tt></td>
+<td class="topAlign">上下文弹出菜单（<a href="qcontextmenuevent.html" tppabs="http://pyqt4doc.appspot.com/qcontextmenuevent.html">QContextMenuEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.CursorChange</tt></td>
+<td class="topAlign"><tt>183</tt></td>
+<td class="topAlign">widget的指针已经改变。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.DeferredDelete</tt></td>
+<td class="topAlign"><tt>52</tt></td>
+<td class="topAlign">后，它已清理的对象将被删除。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.DragEnter</tt></td>
+<td class="topAlign"><tt>60</tt></td>
+<td class="topAlign">光标一个拖放操作过程中进入一个小部件（<a href="qdragenterevent.html" tppabs="http://pyqt4doc.appspot.com/qdragenterevent.html">QDragEnterEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.DragLeave</tt></td>
+<td class="topAlign"><tt>62</tt></td>
+<td class="topAlign">光标一个拖放操作过程中留下一个小部件（<a href="qdragleaveevent.html" tppabs="http://pyqt4doc.appspot.com/qdragleaveevent.html">QDragLeaveEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.DragMove</tt></td>
+<td class="topAlign"><tt>61</tt></td>
+<td class="topAlign">拖放操作过程中（<a href="qdragmoveevent.html" tppabs="http://pyqt4doc.appspot.com/qdragmoveevent.html">QDragMoveEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.Drop</tt></td>
+<td class="topAlign"><tt>63</tt></td>
+<td class="topAlign">拖放操作完成（<a href="qdropevent.html" tppabs="http://pyqt4doc.appspot.com/qdropevent.html">QDropEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.EnabledChange</tt></td>
+<td class="topAlign"><tt>98</tt></td>
+<td class="topAlign">Widget的启用状态已经改变。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.Enter</tt></td>
+<td class="topAlign"><tt>10</tt></td>
+<td class="topAlign">鼠标进入widget的边界。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.EnterEditFocus</tt></td>
+<td class="topAlign"><tt>150</tt></td>
+<td class="topAlign">一个编辑器控件获得焦点时进行编辑。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.EnterWhatsThisMode</tt></td>
+<td class="topAlign"><tt>124</tt></td>
+<td class="topAlign">发送到顶层widget开发应用程序进入“这是什么？ ”模式。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.FileOpen</tt></td>
+<td class="topAlign"><tt>116</tt></td>
+<td class="topAlign">打开文件的请求（<a href="qfileopenevent.html" tppabs="http://pyqt4doc.appspot.com/qfileopenevent.html">QFileOpenEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.FocusIn</tt></td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">窗口小部件获得键盘焦点（<a href="qfocusevent.html" tppabs="http://pyqt4doc.appspot.com/qfocusevent.html">QFocusEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.FocusOut</tt></td>
+<td class="topAlign"><tt>9</tt></td>
+<td class="topAlign">窗口小部件失去键盘焦点（<a href="qfocusevent.html" tppabs="http://pyqt4doc.appspot.com/qfocusevent.html">QFocusEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.FontChange</tt></td>
+<td class="topAlign"><tt>97</tt></td>
+<td class="topAlign">Widget的字体已经改变。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.GrabKeyboard</tt></td>
+<td class="topAlign"><tt>188</tt></td>
+<td class="topAlign">项目收益键盘捕获（<a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a>只）。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.GrabMouse</tt></td>
+<td class="topAlign"><tt>186</tt></td>
+<td class="topAlign">项目获得鼠标抓（<a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a>只）。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.GraphicsSceneContextMenu</tt></td>
+<td class="topAlign"><tt>159</tt></td>
+<td class="topAlign">在图形场景上下文弹出菜单（<a href="qgraphicsscenecontextmenuevent.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscenecontextmenuevent.html">QGraphicsSceneContextMenuEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.GraphicsSceneDragEnter</tt></td>
+<td class="topAlign"><tt>164</tt></td>
+<td class="topAlign">光标一个拖放操作过程中进入一个图形场景（<a href="qgraphicsscenedragdropevent.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscenedragdropevent.html">QGraphicsSceneDragDropEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.GraphicsSceneDragLeave</tt></td>
+<td class="topAlign"><tt>166</tt></td>
+<td class="topAlign">光标一个拖放操作过程中留下的图形场景（<a href="qgraphicsscenedragdropevent.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscenedragdropevent.html">QGraphicsSceneDragDropEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.GraphicsSceneDragMove</tt></td>
+<td class="topAlign"><tt>165</tt></td>
+<td class="topAlign">拖放操作是在一个场景中的进展（<a href="qgraphicsscenedragdropevent.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscenedragdropevent.html">QGraphicsSceneDragDropEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.GraphicsSceneDrop</tt></td>
+<td class="topAlign"><tt>167</tt></td>
+<td class="topAlign">拖放操作完成了一个场景（<a href="qgraphicsscenedragdropevent.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscenedragdropevent.html">QGraphicsSceneDragDropEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.GraphicsSceneHelp</tt></td>
+<td class="topAlign"><tt>163</tt></td>
+<td class="topAlign">用户请求帮助的图形场景（<a href="qhelpevent.html" tppabs="http://pyqt4doc.appspot.com/qhelpevent.html">QHelpEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.GraphicsSceneHoverEnter</tt></td>
+<td class="topAlign"><tt>160</tt></td>
+<td class="topAlign">鼠标光标进入悬停项目在图形场景（<a href="qgraphicsscenehoverevent.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscenehoverevent.html">QGraphicsSceneHoverEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.GraphicsSceneHoverLeave</tt></td>
+<td class="topAlign"><tt>162</tt></td>
+<td class="topAlign">将鼠标光标离开悬停项目在图形场景（<a href="qgraphicsscenehoverevent.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscenehoverevent.html">QGraphicsSceneHoverEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.GraphicsSceneHoverMove</tt></td>
+<td class="topAlign"><tt>161</tt></td>
+<td class="topAlign">将鼠标光标悬停项目内移动在图形场景（<a href="qgraphicsscenehoverevent.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscenehoverevent.html">QGraphicsSceneHoverEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QEvent.GraphicsSceneMouseDoubleClick</tt>
+</td>
+<td class="topAlign"><tt>158</tt></td>
+<td class="topAlign">鼠标再次按下（双击）在图形场景（<a href="qgraphicsscenemouseevent.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscenemouseevent.html">QGraphicsSceneMouseEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.GraphicsSceneMouseMove</tt></td>
+<td class="topAlign"><tt>155</tt></td>
+<td class="topAlign">移动鼠标在图形场景（<a href="qgraphicsscenemouseevent.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscenemouseevent.html">QGraphicsSceneMouseEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.GraphicsSceneMousePress</tt></td>
+<td class="topAlign"><tt>156</tt></td>
+<td class="topAlign">在图形场景中按下鼠标（<a href="qgraphicsscenemouseevent.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscenemouseevent.html">QGraphicsSceneMouseEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QEvent.GraphicsSceneMouseRelease</tt>
+</td>
+<td class="topAlign"><tt>157</tt></td>
+<td class="topAlign">释放鼠标在图形场景（<a href="qgraphicsscenemouseevent.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscenemouseevent.html">QGraphicsSceneMouseEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.GraphicsSceneMove</tt></td>
+<td class="topAlign"><tt>182</tt></td>
+<td class="topAlign">窗口小部件被感动（<a href="qgraphicsscenemoveevent.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscenemoveevent.html">QGraphicsSceneMoveEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.GraphicsSceneResize</tt></td>
+<td class="topAlign"><tt>181</tt></td>
+<td class="topAlign">小部件调整大小（<a href="qgraphicssceneresizeevent.html" tppabs="http://pyqt4doc.appspot.com/qgraphicssceneresizeevent.html">QGraphicsSceneResizeEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.GraphicsSceneWheel</tt></td>
+<td class="topAlign"><tt>168</tt></td>
+<td class="topAlign">在图形场景中鼠标滚轮滚动（<a href="qgraphicsscenewheelevent.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscenewheelevent.html">QGraphicsSceneWheelEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.Hide</tt></td>
+<td class="topAlign"><tt>18</tt></td>
+<td class="topAlign">窗口小部件被隐藏（<a href="qhideevent.html" tppabs="http://pyqt4doc.appspot.com/qhideevent.html">QHideEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.HideToParent</tt></td>
+<td class="topAlign"><tt>27</tt></td>
+<td class="topAlign">孩子小部件已被隐藏。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.HoverEnter</tt></td>
+<td class="topAlign"><tt>127</tt></td>
+<td class="topAlign">鼠标光标进入悬停窗口小部件（<a href="qhoverevent.html" tppabs="http://pyqt4doc.appspot.com/qhoverevent.html">QHoverEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.HoverLeave</tt></td>
+<td class="topAlign"><tt>128</tt></td>
+<td class="topAlign">将鼠标光标离开悬停窗口小部件（<a href="qhoverevent.html" tppabs="http://pyqt4doc.appspot.com/qhoverevent.html">QHoverEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.HoverMove</tt></td>
+<td class="topAlign"><tt>129</tt></td>
+<td class="topAlign">将鼠标光标悬停widget内移动（<a href="qhoverevent.html" tppabs="http://pyqt4doc.appspot.com/qhoverevent.html">QHoverEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.IconDrag</tt></td>
+<td class="topAlign"><tt>96</tt></td>
+<td class="topAlign">窗口的主图标已经被拖走（<a href="qicondragevent.html" tppabs="http://pyqt4doc.appspot.com/qicondragevent.html">QIconDragEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.IconTextChange</tt></td>
+<td class="topAlign"><tt>101</tt></td>
+<td class="topAlign">Widget的图标已被修改。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.InputMethod</tt></td>
+<td class="topAlign"><tt>83</tt></td>
+<td class="topAlign">一种输入方法正在使用（<a href="qinputmethodevent.html" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html">QInputMethodEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.KeyPress</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">按键（<a href="qkeyevent.html" tppabs="http://pyqt4doc.appspot.com/qkeyevent.html">QKeyEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.KeyRelease</tt></td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">键释放（<a href="qkeyevent.html" tppabs="http://pyqt4doc.appspot.com/qkeyevent.html">QKeyEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.LanguageChange</tt></td>
+<td class="topAlign"><tt>89</tt></td>
+<td class="topAlign">该应用程序翻译修改。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.LayoutDirectionChange</tt></td>
+<td class="topAlign"><tt>90</tt></td>
+<td class="topAlign">布局的方向改变。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.LayoutRequest</tt></td>
+<td class="topAlign"><tt>76</tt></td>
+<td class="topAlign">小部件的布局需要重做。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.Leave</tt></td>
+<td class="topAlign"><tt>11</tt></td>
+<td class="topAlign">鼠标离开控件的边界。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.LeaveEditFocus</tt></td>
+<td class="topAlign"><tt>151</tt></td>
+<td class="topAlign">一个编辑器控件失去焦点时进行编辑。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.LeaveWhatsThisMode</tt></td>
+<td class="topAlign"><tt>125</tt></td>
+<td class="topAlign">发送到顶层的小部件应用程序离开时， “这是什么？ ”模式。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.LocaleChange</tt></td>
+<td class="topAlign"><tt>88</tt></td>
+<td class="topAlign">系统语言环境发生了变化。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QEvent.NonClientAreaMouseButtonDblClick</tt>
+</td>
+<td class="topAlign"><tt>176</tt></td>
+<td class="topAlign">鼠标双击发生在客户区之外。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QEvent.NonClientAreaMouseButtonPress</tt>
+</td>
+<td class="topAlign"><tt>174</tt></td>
+<td class="topAlign">鼠标按下按钮时发生的工作区之外。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QEvent.NonClientAreaMouseButtonRelease</tt>
+</td>
+<td class="topAlign"><tt>175</tt></td>
+<td class="topAlign">鼠标按钮释放发生在客户区之外。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.NonClientAreaMouseMove</tt></td>
+<td class="topAlign"><tt>173</tt></td>
+<td class="topAlign">鼠标移动时发生的工作区之外。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.MacSizeChange</tt></td>
+<td class="topAlign"><tt>177</tt></td>
+<td class="topAlign">用户改变了他的部件尺寸（仅限Mac OS X ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.MenubarUpdated</tt></td>
+<td class="topAlign"><tt>153</tt></td>
+<td class="topAlign">该窗口的菜单栏已更新。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.MetaCall</tt></td>
+<td class="topAlign"><tt>43</tt></td>
+<td class="topAlign">通过异步方法调用<a href="qmetaobject.html#invokeMethod" tppabs="http://pyqt4doc.appspot.com/qmetaobject.html#invokeMethod">QMetaObject.invokeMethod</a>（ ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.ModifiedChange</tt></td>
+<td class="topAlign"><tt>102</tt></td>
+<td class="topAlign">小工具修改状态已经改变。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.MouseButtonDblClick</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">鼠标再次按（<a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.MouseButtonPress</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">按下鼠标（<a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.MouseButtonRelease</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">鼠标释放（<a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.MouseMove</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">鼠标移动（<a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.MouseTrackingChange</tt></td>
+<td class="topAlign"><tt>109</tt></td>
+<td class="topAlign">鼠标跟踪状态已经改变。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.Move</tt></td>
+<td class="topAlign"><tt>13</tt></td>
+<td class="topAlign">widget的位置改变（<a href="qmoveevent.html" tppabs="http://pyqt4doc.appspot.com/qmoveevent.html">QMoveEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.Paint</tt></td>
+<td class="topAlign"><tt>12</tt></td>
+<td class="topAlign">屏幕更新必要的（<a href="qpaintevent.html" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html">QPaintEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.PaletteChange</tt></td>
+<td class="topAlign"><tt>39</tt></td>
+<td class="topAlign">窗口小部件的调色板改变。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.ParentAboutToChange</tt></td>
+<td class="topAlign"><tt>131</tt></td>
+<td class="topAlign">窗口小部件的父即将改变。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.ParentChange</tt></td>
+<td class="topAlign"><tt>21</tt></td>
+<td class="topAlign">窗口小部件的父已经改变。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.PlatformPanel</tt></td>
+<td class="topAlign"><tt>212</tt></td>
+<td class="topAlign">特定于平台的面板已要求。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.Polish</tt></td>
+<td class="topAlign"><tt>75</tt></td>
+<td class="topAlign">窗口小部件进行抛光。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.PolishRequest</tt></td>
+<td class="topAlign"><tt>74</tt></td>
+<td class="topAlign">窗口小部件应进行打磨。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.QueryWhatsThis</tt></td>
+<td class="topAlign"><tt>123</tt></td>
+<td class="topAlign">该部件应该接受的情况下，如果它“这是什么？ ”帮助。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QEvent.RequestSoftwareInputPanel</tt>
+</td>
+<td class="topAlign"><tt>199</tt></td>
+<td class="topAlign">一个widget要开一个软件输入面板（SIP ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.Resize</tt></td>
+<td class="topAlign"><tt>14</tt></td>
+<td class="topAlign">widget的大小改变（<a href="qresizeevent.html" tppabs="http://pyqt4doc.appspot.com/qresizeevent.html">QResizeEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.Shortcut</tt></td>
+<td class="topAlign"><tt>117</tt></td>
+<td class="topAlign">在孩子的快捷键操作按键（<a href="qshortcutevent.html" tppabs="http://pyqt4doc.appspot.com/qshortcutevent.html">QShortcutEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.ShortcutOverride</tt></td>
+<td class="topAlign"><tt>51</tt></td>
+<td class="topAlign">在孩子的按键，为压倒一切的快捷键操作（<a href="qkeyevent.html" tppabs="http://pyqt4doc.appspot.com/qkeyevent.html">QKeyEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.Show</tt></td>
+<td class="topAlign"><tt>17</tt></td>
+<td class="topAlign">窗口小部件被显示在屏幕上（<a href="qshowevent.html" tppabs="http://pyqt4doc.appspot.com/qshowevent.html">QShowEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.ShowToParent</tt></td>
+<td class="topAlign"><tt>26</tt></td>
+<td class="topAlign">孩子小部件已被证明。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.SockAct</tt></td>
+<td class="topAlign"><tt>50</tt></td>
+<td class="topAlign">插座激活，用于实现<a href="qsocketnotifier.html" tppabs="http://pyqt4doc.appspot.com/qsocketnotifier.html">QSocketNotifier</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.StateMachineSignal</tt></td>
+<td class="topAlign"><tt>192</tt></td>
+<td class="topAlign">交付给一个状态机（信号<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qstatemachine-signalevent.html">QStateMachine.SignalEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.StateMachineWrapped</tt></td>
+<td class="topAlign"><tt>193</tt></td>
+<td class="topAlign">本次活动是一个包装，即包含，另一个事件（<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qstatemachine-wrappedevent.html">QStateMachine.WrappedEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.StatusTip</tt></td>
+<td class="topAlign"><tt>112</tt></td>
+<td class="topAlign">一个状态提示要求（<a href="qstatustipevent.html" tppabs="http://pyqt4doc.appspot.com/qstatustipevent.html">QStatusTipEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.StyleChange</tt></td>
+<td class="topAlign"><tt>100</tt></td>
+<td class="topAlign">widget的风格已经改变了。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.TabletMove</tt></td>
+<td class="topAlign"><tt>87</tt></td>
+<td class="topAlign">Wacom数位板移动（<a href="qtabletevent.html" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html">QTabletEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.TabletPress</tt></td>
+<td class="topAlign"><tt>92</tt></td>
+<td class="topAlign">Wacom数位板按（<a href="qtabletevent.html" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html">QTabletEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.TabletRelease</tt></td>
+<td class="topAlign"><tt>93</tt></td>
+<td class="topAlign">Wacom数位板发布（<a href="qtabletevent.html" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html">QTabletEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.OkRequest</tt></td>
+<td class="topAlign"><tt>94</tt></td>
+<td class="topAlign">在装修ok键按下。仅适用于Windows CE所支持。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.TabletEnterProximity</tt></td>
+<td class="topAlign"><tt>171</tt></td>
+<td class="topAlign">Wacom数位板进入接近事件（<a href="qtabletevent.html" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html">QTabletEvent</a>） ，发送到<a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.TabletLeaveProximity</tt></td>
+<td class="topAlign"><tt>172</tt></td>
+<td class="topAlign">Wacom数位板假期接近事件（<a href="qtabletevent.html" tppabs="http://pyqt4doc.appspot.com/qtabletevent.html">QTabletEvent</a>） ，发送到<a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.Timer</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">常规的定时器​​事件（<a href="qtimerevent.html" tppabs="http://pyqt4doc.appspot.com/qtimerevent.html">QTimerEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.ToolBarChange</tt></td>
+<td class="topAlign"><tt>120</tt></td>
+<td class="topAlign">该工具栏按钮是切换在Mac OS X</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.ToolTip</tt></td>
+<td class="topAlign"><tt>110</tt></td>
+<td class="topAlign">请求了工具提示（<a href="qhelpevent.html" tppabs="http://pyqt4doc.appspot.com/qhelpevent.html">QHelpEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.ToolTipChange</tt></td>
+<td class="topAlign"><tt>184</tt></td>
+<td class="topAlign">widget的工具提示发生了变化。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.UngrabKeyboard</tt></td>
+<td class="topAlign"><tt>189</tt></td>
+<td class="topAlign">项目失去键盘抢（<a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a>只）。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.UngrabMouse</tt></td>
+<td class="topAlign"><tt>187</tt></td>
+<td class="topAlign">项目失去鼠标抓（<a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a>只）。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.UpdateLater</tt></td>
+<td class="topAlign"><tt>78</tt></td>
+<td class="topAlign">窗口小部件应进行排队在稍后的时间重新绘制。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.UpdateRequest</tt></td>
+<td class="topAlign"><tt>77</tt></td>
+<td class="topAlign">窗口小部件，应重新绘制。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.WhatsThis</tt></td>
+<td class="topAlign"><tt>111</tt></td>
+<td class="topAlign">窗口小部件应显示“这是什么？ ”帮助（<a href="qhelpevent.html" tppabs="http://pyqt4doc.appspot.com/qhelpevent.html">QHelpEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.WhatsThisClicked</tt></td>
+<td class="topAlign"><tt>118</tt></td>
+<td class="topAlign">在widget的一个链接“这是什么？ ”帮助被点击了。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.Wheel</tt></td>
+<td class="topAlign"><tt>31</tt></td>
+<td class="topAlign">鼠标滚轮滚动（<a href="qwheelevent.html" tppabs="http://pyqt4doc.appspot.com/qwheelevent.html">QWheelEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.WinEventAct</tt></td>
+<td class="topAlign"><tt>132</tt></td>
+<td class="topAlign">发生了针对Windows的激活事件。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.WindowActivate</tt></td>
+<td class="topAlign"><tt>24</tt></td>
+<td class="topAlign">窗口被激活。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.WindowBlocked</tt></td>
+<td class="topAlign"><tt>103</tt></td>
+<td class="topAlign">该窗口被阻止通过一个模态对话框。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.WindowDeactivate</tt></td>
+<td class="topAlign"><tt>25</tt></td>
+<td class="topAlign">窗口被激活。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.WindowIconChange</tt></td>
+<td class="topAlign"><tt>34</tt></td>
+<td class="topAlign">窗口的图标发生了变化。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.WindowStateChange</tt></td>
+<td class="topAlign"><tt>105</tt></td>
+<td class="topAlign">该<a href="qwidget.html#windowState" tppabs="http://pyqt4doc.appspot.com/qwidget.html#windowState">window's state</a>（最小化，最大化或全屏）已经改变（<a href="qwindowstatechangeevent.html" tppabs="http://pyqt4doc.appspot.com/qwindowstatechangeevent.html">QWindowStateChangeEvent</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.WindowTitleChange</tt></td>
+<td class="topAlign"><tt>33</tt></td>
+<td class="topAlign">一直窗口标题改变。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.WindowUnblocked</tt></td>
+<td class="topAlign"><tt>104</tt></td>
+<td class="topAlign">该窗口是畅通的一个模态对话框退出后。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.ZOrderChange</tt></td>
+<td class="topAlign"><tt>126</tt></td>
+<td class="topAlign">widget的Z顺序发生了变化。此事件不会发送给顶层窗口。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.KeyboardLayoutChange</tt></td>
+<td class="topAlign"><tt>169</tt></td>
+<td class="topAlign">键盘布局发生了变化。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.DynamicPropertyChange</tt></td>
+<td class="topAlign"><tt>170</tt></td>
+<td class="topAlign">动态属性添加，更改或从对象中删除。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.TouchBegin</tt></td>
+<td class="topAlign"><tt>194</tt></td>
+<td class="topAlign">开始的触摸屏和/或跟踪垫的事件序列（<a href="qtouchevent.html" tppabs="http://pyqt4doc.appspot.com/qtouchevent.html">QTouchEvent</a>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.TouchUpdate</tt></td>
+<td class="topAlign"><tt>195</tt></td>
+<td class="topAlign">触摸屏事件（<a href="qtouchevent.html" tppabs="http://pyqt4doc.appspot.com/qtouchevent.html">QTouchEvent</a>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.TouchEnd</tt></td>
+<td class="topAlign"><tt>196</tt></td>
+<td class="topAlign">触摸事件序列结束（<a href="qtouchevent.html" tppabs="http://pyqt4doc.appspot.com/qtouchevent.html">QTouchEvent</a>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.WinIdChange</tt></td>
+<td class="topAlign"><tt>203</tt></td>
+<td class="topAlign">窗口系统标识符为这个原生窗口部件已经改变</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.Gesture</tt></td>
+<td class="topAlign"><tt>198</tt></td>
+<td class="topAlign">手势被触发（<a href="qgestureevent.html" tppabs="http://pyqt4doc.appspot.com/qgestureevent.html">QGestureEvent</a>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.GestureOverride</tt></td>
+<td class="topAlign"><tt>202</tt></td>
+<td class="topAlign">手势复盖被触发（<a href="qgestureevent.html" tppabs="http://pyqt4doc.appspot.com/qgestureevent.html">QGestureEvent</a>）</td>
+</tr>
+</table>
+<p>用户事件应具备的价值观<tt>User</tt>和<tt>MaxUser</tt>：</p>
+<table class="valuelist">
+<tr class="even" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.User</tt></td>
+<td class="topAlign"><tt>1000</tt></td>
+<td class="topAlign">用户定义的事件。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEvent.MaxUser</tt></td>
+<td class="topAlign"><tt>65535</tt></td>
+<td class="topAlign">最后用户事件ID。</td>
+</tr>
+</table>
+<p>为方便起见，你可以使用<a href="qevent.html#registerEventType" tppabs="http://pyqt4doc.appspot.com/qevent.html#registerEventType">registerEventType</a>（ ）函数来注册的和预定你的应用程序的自定义事件类型。这样做可以让你避免意外重新使用已经在使用自定义事件类型的应用程序中的其他地方。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QEvent"></a>QEvent.__init__ (<i>self</i>, <a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">Type</a> <i>type</i>)</h3>
+<p>Contructs类型的事件对象<i>type</i>。</p>
+
+
+<h3 class="fn">
+<a name="QEvent-2"></a>QEvent.__init__ (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>)</h3>
+<h3 class="fn">
+<a name="accept"></a>QEvent.accept (<i>self</i>)</h3>
+<p>设置事件对象，调用setAccepted （真）的等价的接受标志。</p>
+<p>设定接受参数表示该事件接收器想要的事件。不需要的事件可能会被传播到父widget 。</p>
+<p><b>See also</b> <a href="qevent.html#ignore" tppabs="http://pyqt4doc.appspot.com/qevent.html#ignore">ignore</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="ignore"></a>QEvent.ignore (<i>self</i>)</h3>
+<p>清除事件对象的接受标志参数，调用setAccepted （假）的等价物。</p>
+<p>清除接受参数表示事件接收器不想要的事件。不需要的事件可能会被传播到父widget 。</p>
+<p><b>See also</b> <a href="qevent.html#accept" tppabs="http://pyqt4doc.appspot.com/qevent.html#accept">accept</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isAccepted"></a>bool QEvent.isAccepted (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="registerEventType"></a>int QEvent.registerEventType (int <i>hint</i> = -1)</h3>
+<p>寄存器并返回一个自定义的事件类型。该<i>hint</i>设置将被使用，如果它是可用的，否则会之间返回值<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.User</a>和<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.MaxUser</a>一个尚未被注册。该<i>hint</i>如果其值不间被忽略<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.User</a>和<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.MaxUser</a>。</p>
+<p><b>Note:</b>这个功能是<a href="index.htm#thread-safe" tppabs="http://pyqt4doc.appspot.com/threads-reentrancy.html#thread-safe">thread-safe</a>。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="setAccepted"></a>QEvent.setAccepted (<i>self</i>, bool <i>accepted</i>)</h3>
+<h3 class="fn">
+<a name="spontaneous"></a>bool QEvent.spontaneous (<i>self</i>)</h3>
+<p>返回True如果该事件起源于应用程序（系统事件）之外，否则返回False 。</p>
+<p>这个函数的返回值是没有定义的绘制事件。</p>
+
+
+<h3 class="fn">
+<a name="type"></a><a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">Type</a> QEvent.type (<i>self</i>)</h3>
+<p>返回的事件类型。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

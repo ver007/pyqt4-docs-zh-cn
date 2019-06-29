@@ -1,0 +1,632 @@
+﻿<html>
+<head>
+<title>QAction Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QAction Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>QAction类负责提供可插入小部件抽象的用户界面操作。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<p>通过继承<a href="qwidgetaction.html" tppabs="http://pyqt4doc.appspot.com/qwidgetaction.html">QWidgetAction</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qaction.html#ActionEvent-enum" tppabs="http://pyqt4doc.appspot.com/qaction.html#ActionEvent-enum">ActionEvent</a></b> { Trigger, Hover }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qaction.html#MenuRole-enum" tppabs="http://pyqt4doc.appspot.com/qaction.html#MenuRole-enum">MenuRole</a></b> { NoRole, TextHeuristicRole, ApplicationSpecificRole, AboutQtRole, ..., QuitRole }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qaction.html#Priority-enum" tppabs="http://pyqt4doc.appspot.com/qaction.html#Priority-enum">Priority</a></b> { LowPriority, NormalPriority, HighPriority }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qaction.html#SoftKeyRole-enum" tppabs="http://pyqt4doc.appspot.com/qaction.html#SoftKeyRole-enum">SoftKeyRole</a></b> { NoSoftKey, PositiveSoftKey, NegativeSoftKey, SelectSoftKey }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#QAction" tppabs="http://pyqt4doc.appspot.com/qaction.html#QAction">__init__</a></b> (<i>self</i>, QObject <i>parent</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#QAction-2" tppabs="http://pyqt4doc.appspot.com/qaction.html#QAction-2">__init__</a></b> (<i>self</i>, QString <i>text</i>, QObject <i>parent</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#QAction-3" tppabs="http://pyqt4doc.appspot.com/qaction.html#QAction-3">__init__</a></b> (<i>self</i>, QIcon <i>icon</i>, QString <i>text</i>, QObject <i>parent</i>)</li>
+<li>
+<div class="fn"></div>QActionGroup <b><a href="qaction.html#actionGroup" tppabs="http://pyqt4doc.appspot.com/qaction.html#actionGroup">actionGroup</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#activate" tppabs="http://pyqt4doc.appspot.com/qaction.html#activate">activate</a></b> (<i>self</i>, ActionEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>list-of-QGraphicsWidget <b><a href="qaction.html#associatedGraphicsWidgets" tppabs="http://pyqt4doc.appspot.com/qaction.html#associatedGraphicsWidgets">associatedGraphicsWidgets</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QWidget <b><a href="qaction.html#associatedWidgets" tppabs="http://pyqt4doc.appspot.com/qaction.html#associatedWidgets">associatedWidgets</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qaction.html#autoRepeat" tppabs="http://pyqt4doc.appspot.com/qaction.html#autoRepeat">autoRepeat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qaction.html#data" tppabs="http://pyqt4doc.appspot.com/qaction.html#data">data</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qaction.html#event" tppabs="http://pyqt4doc.appspot.com/qaction.html#event">event</a></b> (<i>self</i>, QEvent)</li>
+<li>
+<div class="fn"></div>QFont <b><a href="qaction.html#font" tppabs="http://pyqt4doc.appspot.com/qaction.html#font">font</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#hover" tppabs="http://pyqt4doc.appspot.com/qaction.html#hover">hover</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QIcon <b><a href="qaction.html#icon" tppabs="http://pyqt4doc.appspot.com/qaction.html#icon">icon</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qaction.html#iconText" tppabs="http://pyqt4doc.appspot.com/qaction.html#iconText">iconText</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qaction.html#isCheckable" tppabs="http://pyqt4doc.appspot.com/qaction.html#isCheckable">isCheckable</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qaction.html#isChecked" tppabs="http://pyqt4doc.appspot.com/qaction.html#isChecked">isChecked</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qaction.html#isEnabled" tppabs="http://pyqt4doc.appspot.com/qaction.html#isEnabled">isEnabled</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qaction.html#isIconVisibleInMenu" tppabs="http://pyqt4doc.appspot.com/qaction.html#isIconVisibleInMenu">isIconVisibleInMenu</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qaction.html#isSeparator" tppabs="http://pyqt4doc.appspot.com/qaction.html#isSeparator">isSeparator</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qaction.html#isVisible" tppabs="http://pyqt4doc.appspot.com/qaction.html#isVisible">isVisible</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QMenu <b><a href="qaction.html#menu" tppabs="http://pyqt4doc.appspot.com/qaction.html#menu">menu</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>MenuRole <b><a href="qaction.html#menuRole" tppabs="http://pyqt4doc.appspot.com/qaction.html#menuRole">menuRole</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qaction.html#parentWidget" tppabs="http://pyqt4doc.appspot.com/qaction.html#parentWidget">parentWidget</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Priority <b><a href="qaction.html#priority" tppabs="http://pyqt4doc.appspot.com/qaction.html#priority">priority</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#setActionGroup" tppabs="http://pyqt4doc.appspot.com/qaction.html#setActionGroup">setActionGroup</a></b> (<i>self</i>, QActionGroup <i>group</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#setAutoRepeat" tppabs="http://pyqt4doc.appspot.com/qaction.html#setAutoRepeat">setAutoRepeat</a></b> (<i>self</i>, bool)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#setCheckable" tppabs="http://pyqt4doc.appspot.com/qaction.html#setCheckable">setCheckable</a></b> (<i>self</i>, bool)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#setChecked" tppabs="http://pyqt4doc.appspot.com/qaction.html#setChecked">setChecked</a></b> (<i>self</i>, bool)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#setData" tppabs="http://pyqt4doc.appspot.com/qaction.html#setData">setData</a></b> (<i>self</i>, QVariant <i>var</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#setDisabled" tppabs="http://pyqt4doc.appspot.com/qaction.html#setDisabled">setDisabled</a></b> (<i>self</i>, bool <i>b</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#setEnabled" tppabs="http://pyqt4doc.appspot.com/qaction.html#setEnabled">setEnabled</a></b> (<i>self</i>, bool)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#setFont" tppabs="http://pyqt4doc.appspot.com/qaction.html#setFont">setFont</a></b> (<i>self</i>, QFont <i>font</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#setIcon" tppabs="http://pyqt4doc.appspot.com/qaction.html#setIcon">setIcon</a></b> (<i>self</i>, QIcon <i>icon</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#setIconText" tppabs="http://pyqt4doc.appspot.com/qaction.html#setIconText">setIconText</a></b> (<i>self</i>, QString <i>text</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#setIconVisibleInMenu" tppabs="http://pyqt4doc.appspot.com/qaction.html#setIconVisibleInMenu">setIconVisibleInMenu</a></b> (<i>self</i>, bool <i>visible</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#setMenu" tppabs="http://pyqt4doc.appspot.com/qaction.html#setMenu">setMenu</a></b> (<i>self</i>, QMenu <i>menu</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#setMenuRole" tppabs="http://pyqt4doc.appspot.com/qaction.html#setMenuRole">setMenuRole</a></b> (<i>self</i>, MenuRole <i>menuRole</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#setPriority" tppabs="http://pyqt4doc.appspot.com/qaction.html#setPriority">setPriority</a></b> (<i>self</i>, Priority <i>priority</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#setSeparator" tppabs="http://pyqt4doc.appspot.com/qaction.html#setSeparator">setSeparator</a></b> (<i>self</i>, bool <i>b</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#setShortcut" tppabs="http://pyqt4doc.appspot.com/qaction.html#setShortcut">setShortcut</a></b> (<i>self</i>, QKeySequence <i>shortcut</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#setShortcutContext" tppabs="http://pyqt4doc.appspot.com/qaction.html#setShortcutContext">setShortcutContext</a></b> (<i>self</i>, Qt.ShortcutContext <i>context</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#setShortcuts" tppabs="http://pyqt4doc.appspot.com/qaction.html#setShortcuts">setShortcuts</a></b> (<i>self</i>, list-of-QKeySequence <i>shortcuts</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#setShortcuts-2" tppabs="http://pyqt4doc.appspot.com/qaction.html#setShortcuts-2">setShortcuts</a></b> (<i>self</i>, QKeySequence.StandardKey)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#setSoftKeyRole" tppabs="http://pyqt4doc.appspot.com/qaction.html#setSoftKeyRole">setSoftKeyRole</a></b> (<i>self</i>, SoftKeyRole <i>softKeyRole</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#setStatusTip" tppabs="http://pyqt4doc.appspot.com/qaction.html#setStatusTip">setStatusTip</a></b> (<i>self</i>, QString <i>statusTip</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#setText" tppabs="http://pyqt4doc.appspot.com/qaction.html#setText">setText</a></b> (<i>self</i>, QString <i>text</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#setToolTip" tppabs="http://pyqt4doc.appspot.com/qaction.html#setToolTip">setToolTip</a></b> (<i>self</i>, QString <i>tip</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#setVisible" tppabs="http://pyqt4doc.appspot.com/qaction.html#setVisible">setVisible</a></b> (<i>self</i>, bool)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#setWhatsThis" tppabs="http://pyqt4doc.appspot.com/qaction.html#setWhatsThis">setWhatsThis</a></b> (<i>self</i>, QString <i>what</i>)</li>
+<li>
+<div class="fn"></div>QKeySequence <b><a href="qaction.html#shortcut" tppabs="http://pyqt4doc.appspot.com/qaction.html#shortcut">shortcut</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Qt.ShortcutContext <b><a href="qaction.html#shortcutContext" tppabs="http://pyqt4doc.appspot.com/qaction.html#shortcutContext">shortcutContext</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QKeySequence <b><a href="qaction.html#shortcuts" tppabs="http://pyqt4doc.appspot.com/qaction.html#shortcuts">shortcuts</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qaction.html#showStatusText" tppabs="http://pyqt4doc.appspot.com/qaction.html#showStatusText">showStatusText</a></b> (<i>self</i>, QWidget <i>widget</i> = None)</li>
+<li>
+<div class="fn"></div>SoftKeyRole <b><a href="qaction.html#softKeyRole" tppabs="http://pyqt4doc.appspot.com/qaction.html#softKeyRole">softKeyRole</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qaction.html#statusTip" tppabs="http://pyqt4doc.appspot.com/qaction.html#statusTip">statusTip</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qaction.html#text" tppabs="http://pyqt4doc.appspot.com/qaction.html#text">text</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#toggle" tppabs="http://pyqt4doc.appspot.com/qaction.html#toggle">toggle</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qaction.html#toolTip" tppabs="http://pyqt4doc.appspot.com/qaction.html#toolTip">toolTip</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qaction.html#trigger" tppabs="http://pyqt4doc.appspot.com/qaction.html#trigger">trigger</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qaction.html#whatsThis" tppabs="http://pyqt4doc.appspot.com/qaction.html#whatsThis">whatsThis</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qaction.html#changed" tppabs="http://pyqt4doc.appspot.com/qaction.html#changed">changed</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qaction.html#hovered" tppabs="http://pyqt4doc.appspot.com/qaction.html#hovered">hovered</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qaction.html#toggled" tppabs="http://pyqt4doc.appspot.com/qaction.html#toggled">toggled</a></b> (bool)</li>
+<li>
+<div class="fn"></div>void <b><a href="qaction.html#triggered" tppabs="http://pyqt4doc.appspot.com/qaction.html#triggered">triggered</a></b> (bool = 0)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>QAction类负责提供可插入小部件抽象的用户界面操作。</p>
+<p>在实际应用中很多常见的命令可以通过菜单，工具栏按钮和键盘快捷键来调用。由于用户期望要以相同的方式执行的每个命令，而不管所使用的用户界面，它表示每个命令作为一个非常有用<i>action</i>。</p>
+<p>操作可以被添加到菜单和工具栏，并且会自动使它们保持同步。例如，在一个文字处理器，如果用户按下一个大胆的工具栏按钮，粗体菜单项将自动进行检查。</p>
+<p>动作可以被创建为独立的对象，但它们也可以菜单的施工过程中产生;的<a href="qmenu.html" tppabs="http://pyqt4doc.appspot.com/qmenu.html">QMenu</a>类包含用于创建适合用作菜单项行动方便的功能。</p>
+<p>一个的QAction可能包含图标，菜单文本，快捷键，状态文字， “这是什么？ ”文本和工具提示。大多数这些可以在构造函数中设置。它们也可以独立地设置<a href="qaction.html#icon-prop" tppabs="http://pyqt4doc.appspot.com/qaction.html#icon-prop">setIcon</a>（ ）<a href="qaction.html#text-prop" tppabs="http://pyqt4doc.appspot.com/qaction.html#text-prop">setText</a>（ ）<a href="qaction.html#iconText-prop" tppabs="http://pyqt4doc.appspot.com/qaction.html#iconText-prop">setIconText</a>（ ）<a href="qaction.html#shortcut-prop" tppabs="http://pyqt4doc.appspot.com/qaction.html#shortcut-prop">setShortcut</a>（ ）<a href="qaction.html#statusTip-prop" tppabs="http://pyqt4doc.appspot.com/qaction.html#statusTip-prop">setStatusTip</a>（ ）<a href="qaction.html#whatsThis-prop" tppabs="http://pyqt4doc.appspot.com/qaction.html#whatsThis-prop">setWhatsThis</a>（）和<a href="qaction.html#toolTip-prop" tppabs="http://pyqt4doc.appspot.com/qaction.html#toolTip-prop">setToolTip</a>（ ） 。为菜单项，可以设置一个单独的字体与<a href="qaction.html#font-prop" tppabs="http://pyqt4doc.appspot.com/qaction.html#font-prop">setFont</a>（ ） 。</p>
+<p>操作使用添加小工具<a href="qwidget.html#addAction" tppabs="http://pyqt4doc.appspot.com/qwidget.html#addAction">QWidget.addAction</a>（）或<a href="qgraphicswidget.html#addAction" tppabs="http://pyqt4doc.appspot.com/qgraphicswidget.html#addAction">QGraphicsWidget.addAction</a>（ ） 。请注意，一个动作必须被添加到窗口小部件可以被使用之前，这也是真实的，当快捷方式应该是全局的（也就是<a href="qt.html#ShortcutContext-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ShortcutContext-enum">Qt.ApplicationShortcut</a>如<a href="qt.html#ShortcutContext-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ShortcutContext-enum">Qt.ShortcutContext</a>） 。</p>
+<p>一次的QAction已创建它应该被添加到相关的菜单和工具栏上，然后连接到将执行的动作的插槽。例如：</p>
+<pre class="cpp">
+     openAct <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QAction</span>(<span class="type"><a href="qicon.html" tppabs="http://pyqt4doc.appspot.com/qicon.html">QIcon</a></span>(<span class="string">":/images/open.png"</span>)<span class="operator">,</span> tr(<span class="string">"&amp;Open..."</span>)<span class="operator">,</span> <span class="keyword">this</span>);
+     openAct<span class="operator">-</span><span class="operator">&gt;</span>setShortcuts(<span class="type"><a href="qkeysequence.html" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html">QKeySequence</a></span><span class="operator">.</span>Open);
+     openAct<span class="operator">-</span><span class="operator">&gt;</span>setStatusTip(tr(<span class="string">"Open an existing file"</span>));
+     connect(openAct<span class="operator">,</span> SIGNAL(triggered())<span class="operator">,</span> <span class="keyword">this</span><span class="operator">,</span> SLOT(open()));
+
+     fileMenu<span class="operator">-</span><span class="operator">&gt;</span>addAction(openAct);
+     fileToolBar<span class="operator">-</span><span class="operator">&gt;</span>addAction(openAct);
+</pre>
+<p>我们建议的行动被创建为使用它们。在大多数情况下，操作窗口的孩子们将应用程序的主窗口的儿童。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="ActionEvent-enum"></a>QAction.ActionEvent</h3>
+<p>该枚举类型是调用时使用<a href="qaction.html#activate" tppabs="http://pyqt4doc.appspot.com/qaction.html#activate">QAction.activate</a>（ ）</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAction.Trigger</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">这将导致<a href="qaction.html#triggered" tppabs="http://pyqt4doc.appspot.com/qaction.html#triggered">QAction.triggered</a>（）信号被发射。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAction.Hover</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">这将导致<a href="qaction.html#hovered" tppabs="http://pyqt4doc.appspot.com/qaction.html#hovered">QAction.hovered</a>（）信号被发射。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="MenuRole-enum"></a>QAction.MenuRole</h3>
+<p>这个枚举变量描述了如何一个动作应该被移动到应用程序菜单上的Mac OS X。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAction.NoRole</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">这个动作不应该被放到应用程序菜单</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAction.TextHeuristicRole</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">这个动作应该在应用程序菜单的基础上采取行动的文本中所描述的放<a href="qmenubar.html" tppabs="http://pyqt4doc.appspot.com/qmenubar.html">QMenuBar</a>文档。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAction.ApplicationSpecificRole</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">这个动作应该被放置在应用程序菜单中有一个特定的应用程序角色</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAction.AboutQtRole</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">这个动作匹配处理“关于Qt ”菜单项。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAction.AboutRole</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">这个动作应该放在哪里“关于”菜单项，在应用程序菜单。菜单项的文本将被设置为“关于\u003capplication NAME\u003e ” 。该应用程序的名称是从牵强<tt>Info.plist</tt>在应用程序的包文件（见<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/deployment-mac.html">Deploying
+an Application on Mac OS X</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAction.PreferencesRole</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">这个动作应该放在那里的“首选项... ”菜单项，在应用程序菜单。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAction.QuitRole</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">这个动作应该放在哪里Quit菜单项是在应用程序菜单。</td>
+</tr>
+</table>
+<p>设置此值只对那些在菜单栏，而不是那些菜单的子菜单的直接菜单项的效果。例如，如果你有文件菜单中的菜单栏和文件菜单中有一个子菜单，设置MenuRole在该子菜单中的操作没有任何效果。他们将永远不会被移动。</p>
+
+
+<h3 class="fn">
+<a name="Priority-enum"></a>QAction.Priority</h3>
+<p>这个枚举变量定义为在用户界面操作的优先事项。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAction.LowPriority</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该操作不应该被优先在用户界面中。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAction.NormalPriority</tt></td>
+<td class="topAlign"><tt>128</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAction.HighPriority</tt></td>
+<td class="topAlign"><tt>256</tt></td>
+<td class="topAlign">该行动应优先在用户界面。</td>
+</tr>
+</table>
+<p>这个枚举被引入或修改的Qt 4.6 。</p>
+<p><b>See also</b> <a href="qaction.html#priority-prop" tppabs="http://pyqt4doc.appspot.com/qaction.html#priority-prop">priority</a>。</p>
+
+
+<h3 class="fn">
+<a name="SoftKeyRole-enum"></a>QAction.SoftKeyRole</h3>
+<p>这个枚举说明如何动作应放置在软键栏。目前，该枚举只有在Symbian平台上的效果。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAction.NoSoftKey</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">此操作不应该被用来作为一个软键</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAction.PositiveSoftKey</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">这个动作是用来描述一个软键以积极的还是非破坏性的作用，如OK，选择或选项。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAction.NegativeSoftKey</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">这个动作是用来描述一个软安永具有负的或破坏性的角色作用，如取消，丢弃，或关闭。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAction.SelectSoftKey</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">这个动作是用来描述用于选择应用程序中的特定项目或插件的作用。</td>
+</tr>
+</table>
+<p>与定义的功能键角色的动作才可见在软键栏时，包含动作的部件具有焦点。如果没有小工具​​目前拥有焦点时，软键框架将向上遍历父控件层次结构查找包含软键操作的部件。</p>
+<p>这个枚举被引入或修改的Qt 4.6 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QAction"></a>QAction.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i>)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个行动<i>parent</i>。如果<i>parent</i>是一个行动小组的行动将被自动插入到组。</p>
+
+
+<h3 class="fn">
+<a name="QAction-2"></a>QAction.__init__ (<i>self</i>, QString <i>text</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i>)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个动作与一些<i>text</i>和<i>parent</i>。如果<i>parent</i>是一个行动小组的行动将被自动插入到组。</p>
+<p>该操作使用的一个简化版本<i>text</i>（例如：“和菜单选项... ”变成“菜单选项” ）作为描述性文本工具按钮。您可以通过设置特定的描述与复盖此<a href="qaction.html#text-prop" tppabs="http://pyqt4doc.appspot.com/qaction.html#text-prop">setText</a>（ ） 。同样的文本将被用于工具提示除非您指定使用不同的文字<a href="qaction.html#toolTip-prop" tppabs="http://pyqt4doc.appspot.com/qaction.html#toolTip-prop">setToolTip</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QAction-3"></a>QAction.__init__ (<i>self</i>, <a href="qicon.html" tppabs="http://pyqt4doc.appspot.com/qicon.html">QIcon</a> <i>icon</i>, QString <i>text</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i>)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个动作与<i>icon</i>有的<i>text</i>和<i>parent</i>。如果<i>parent</i>是一个行动小组的行动将被自动插入到组。</p>
+<p>该操作使用的一个简化版本<i>text</i>（例如：“和菜单选项... ”变成“菜单选项” ）作为描述性文本工具按钮。您可以通过设置特定的描述与复盖此<a href="qaction.html#text-prop" tppabs="http://pyqt4doc.appspot.com/qaction.html#text-prop">setText</a>（ ） 。同样的文本将被用于工具提示除非您指定使用不同的文字<a href="qaction.html#toolTip-prop" tppabs="http://pyqt4doc.appspot.com/qaction.html#toolTip-prop">setToolTip</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="actionGroup"></a><a href="qactiongroup.html" tppabs="http://pyqt4doc.appspot.com/qactiongroup.html">QActionGroup</a> QAction.actionGroup (<i>self</i>)</h3>
+<p>返回该行动小组的这一行动。如果不采取行动组管理这个行动，那么将返回0 。</p>
+<p><b>See also</b> <a href="qactiongroup.html" tppabs="http://pyqt4doc.appspot.com/qactiongroup.html">QActionGroup</a>和<a href="qaction.html#setActionGroup" tppabs="http://pyqt4doc.appspot.com/qaction.html#setActionGroup">QAction.setActionGroup</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="activate"></a>QAction.activate (<i>self</i>, <a href="qaction.html#ActionEvent-enum" tppabs="http://pyqt4doc.appspot.com/qaction.html#ActionEvent-enum">ActionEvent</a> <i>event</i>)</h3>
+<p>发送相关信号<a href="qaction.html#ActionEvent-enum" tppabs="http://pyqt4doc.appspot.com/qaction.html#ActionEvent-enum">ActionEvent</a> <i>event</i>。</p>
+<p>根据动作的部件使用这个API使<a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a>以发射信号，以及发射自己。</p>
+
+
+<h3 class="fn">
+<a name="associatedGraphicsWidgets"></a>list-of-QGraphicsWidget QAction.associatedGraphicsWidgets (<i>self</i>)</h3>
+<p>返回部件此操作已被添加到列表。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qwidget.html#addAction" tppabs="http://pyqt4doc.appspot.com/qwidget.html#addAction">QWidget.addAction</a>（）和<a href="qaction.html#associatedWidgets" tppabs="http://pyqt4doc.appspot.com/qaction.html#associatedWidgets">associatedWidgets</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="associatedWidgets"></a>list-of-QWidget QAction.associatedWidgets (<i>self</i>)</h3>
+<p>返回部件此操作已被添加到列表。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qwidget.html#addAction" tppabs="http://pyqt4doc.appspot.com/qwidget.html#addAction">QWidget.addAction</a>（）和<a href="qaction.html#associatedGraphicsWidgets" tppabs="http://pyqt4doc.appspot.com/qaction.html#associatedGraphicsWidgets">associatedGraphicsWidgets</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="autoRepeat"></a>bool QAction.autoRepeat (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="data"></a>QVariant QAction.data (<i>self</i>)</h3>
+<p>返回用户数据作为在QAction.setData设置。</p>
+<p><b>See also</b> <a href="qaction.html#setData" tppabs="http://pyqt4doc.appspot.com/qaction.html#setData">setData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="event"></a>bool QAction.event (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>)</h3>
+<p>从重新实现<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">QObject.event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="font"></a><a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a> QAction.font (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="hover"></a>QAction.hover (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void hover()</tt>。</p>
+<p>这是一个方便的插槽调用激活（哈弗） 。</p>
+
+
+<h3 class="fn">
+<a name="icon"></a><a href="qicon.html" tppabs="http://pyqt4doc.appspot.com/qicon.html">QIcon</a> QAction.icon (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="iconText"></a>QString QAction.iconText (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="isCheckable"></a>bool QAction.isCheckable (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="isChecked"></a>bool QAction.isChecked (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="isEnabled"></a>bool QAction.isEnabled (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="isIconVisibleInMenu"></a>bool QAction.isIconVisibleInMenu (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="isSeparator"></a>bool QAction.isSeparator (<i>self</i>)</h3>
+<p>返回True如果这个动作是一个分离器的动作，否则返回False 。</p>
+<p><b>See also</b> <a href="qaction.html#setSeparator" tppabs="http://pyqt4doc.appspot.com/qaction.html#setSeparator">QAction.setSeparator</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isVisible"></a>bool QAction.isVisible (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="menu"></a><a href="qmenu.html" tppabs="http://pyqt4doc.appspot.com/qmenu.html">QMenu</a> QAction.menu (<i>self</i>)</h3>
+<p>返回包含由这个动作菜单。包含菜单操作，可用于创建带有子菜单的菜单项，或插入到工具栏来创建弹出式菜单的按钮。</p>
+<p><b>See also</b> <a href="qaction.html#setMenu" tppabs="http://pyqt4doc.appspot.com/qaction.html#setMenu">setMenu</a>（）和<a href="qmenu.html#addAction" tppabs="http://pyqt4doc.appspot.com/qmenu.html#addAction">QMenu.addAction</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="menuRole"></a><a href="qaction.html#MenuRole-enum" tppabs="http://pyqt4doc.appspot.com/qaction.html#MenuRole-enum">MenuRole</a> QAction.menuRole (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="parentWidget"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QAction.parentWidget (<i>self</i>)</h3>
+<p>返回父控件。</p>
+
+
+<h3 class="fn">
+<a name="priority"></a><a href="qaction.html#Priority-enum" tppabs="http://pyqt4doc.appspot.com/qaction.html#Priority-enum">Priority</a> QAction.priority (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="setActionGroup"></a>QAction.setActionGroup (<i>self</i>, <a href="qactiongroup.html" tppabs="http://pyqt4doc.appspot.com/qactiongroup.html">QActionGroup</a> <i>group</i>)</h3>
+<p>设置此行动组<i>group</i>。该动作将被自动添加到行动组的列表。</p>
+<p>组内的行动将是相互排斥的。</p>
+<p><b>See also</b> <a href="qactiongroup.html" tppabs="http://pyqt4doc.appspot.com/qactiongroup.html">QActionGroup</a>和<a href="qaction.html#actionGroup" tppabs="http://pyqt4doc.appspot.com/qaction.html#actionGroup">QAction.actionGroup</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setAutoRepeat"></a>QAction.setAutoRepeat (<i>self</i>, bool)</h3>
+<h3 class="fn">
+<a name="setCheckable"></a>QAction.setCheckable (<i>self</i>, bool)</h3>
+<h3 class="fn">
+<a name="setChecked"></a>QAction.setChecked (<i>self</i>, bool)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setChecked(bool)</tt>。</p>
+<h3 class="fn">
+<a name="setData"></a>QAction.setData (<i>self</i>, QVariant <i>var</i>)</h3>
+<p>该行动的内部数据设置为给定<i>userData</i>。</p>
+<p><b>See also</b> <a href="qaction.html#data" tppabs="http://pyqt4doc.appspot.com/qaction.html#data">data</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setDisabled"></a>QAction.setDisabled (<i>self</i>, bool <i>b</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setDisabled(bool)</tt>。</p>
+<p>这是一个方便的功能为<a href="qaction.html#enabled-prop" tppabs="http://pyqt4doc.appspot.com/qaction.html#enabled-prop">enabled</a>财产，那是非常有用的信号 - 槽连接。如果<i>b</i>是真实的动作被禁止，否则将被启用。</p>
+
+
+<h3 class="fn">
+<a name="setEnabled"></a>QAction.setEnabled (<i>self</i>, bool)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setEnabled(bool)</tt>。</p>
+<h3 class="fn">
+<a name="setFont"></a>QAction.setFont (<i>self</i>, <a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a> <i>font</i>)</h3>
+<h3 class="fn">
+<a name="setIcon"></a>QAction.setIcon (<i>self</i>, <a href="qicon.html" tppabs="http://pyqt4doc.appspot.com/qicon.html">QIcon</a> <i>icon</i>)</h3>
+<h3 class="fn">
+<a name="setIconText"></a>QAction.setIconText (<i>self</i>, QString <i>text</i>)</h3>
+<h3 class="fn">
+<a name="setIconVisibleInMenu"></a>QAction.setIconVisibleInMenu (<i>self</i>, bool <i>visible</i>)</h3>
+<h3 class="fn">
+<a name="setMenu"></a>QAction.setMenu (<i>self</i>, <a href="qmenu.html" tppabs="http://pyqt4doc.appspot.com/qmenu.html">QMenu</a> <i>menu</i>)</h3>
+<p>设置包含在这个动作菜单到指定的<i>menu</i>。</p>
+<p><b>See also</b> <a href="qaction.html#menu" tppabs="http://pyqt4doc.appspot.com/qaction.html#menu">menu</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setMenuRole"></a>QAction.setMenuRole (<i>self</i>, <a href="qaction.html#MenuRole-enum" tppabs="http://pyqt4doc.appspot.com/qaction.html#MenuRole-enum">MenuRole</a> <i>menuRole</i>)</h3>
+<h3 class="fn">
+<a name="setPriority"></a>QAction.setPriority (<i>self</i>, <a href="qaction.html#Priority-enum" tppabs="http://pyqt4doc.appspot.com/qaction.html#Priority-enum">Priority</a> <i>priority</i>)</h3>
+<h3 class="fn">
+<a name="setSeparator"></a>QAction.setSeparator (<i>self</i>, bool <i>b</i>)</h3>
+<p>If <i>b</i>是真的，那么这个动作将被视为分隔符。</p>
+<p>如何隔板被表示取决于它被插入到插件。在大多数情况下文本，子菜单，图标将被忽略分隔符的行为。</p>
+<p><b>See also</b> <a href="qaction.html#isSeparator" tppabs="http://pyqt4doc.appspot.com/qaction.html#isSeparator">QAction.isSeparator</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setShortcut"></a>QAction.setShortcut (<i>self</i>, <a href="qkeysequence.html" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html">QKeySequence</a> <i>shortcut</i>)</h3>
+<h3 class="fn">
+<a name="setShortcutContext"></a>QAction.setShortcutContext (<i>self</i>, <a href="qt.html#ShortcutContext-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ShortcutContext-enum">Qt.ShortcutContext</a> <i>context</i>)</h3>
+<h3 class="fn">
+<a name="setShortcuts"></a>QAction.setShortcuts (<i>self</i>, list-of-QKeySequence <i>shortcuts</i>)</h3>
+<p>Sets <i>shortcuts</i>作为触发动作的快捷键列表。列表中的第一个元素是主要的捷径。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qaction.html#shortcuts" tppabs="http://pyqt4doc.appspot.com/qaction.html#shortcuts">shortcuts</a>（）和<a href="qaction.html#shortcut-prop" tppabs="http://pyqt4doc.appspot.com/qaction.html#shortcut-prop">shortcut</a>。</p>
+
+
+<h3 class="fn">
+<a name="setShortcuts-2"></a>QAction.setShortcuts (<i>self</i>, <a href="qkeysequence.html#StandardKey-enum" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#StandardKey-enum">QKeySequence.StandardKey</a>)</h3>
+<p>设置快捷方式的基础上，一个平台相关的清单<i>key</i>。调用此函数的结果将取决于当前运行的平台上。请注意，一个以上的快捷方式可通过此操作分配。如果只有主快捷方式是必需的，使用setShortcut代替。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qkeysequence.html#keyBindings" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html#keyBindings">QKeySequence.keyBindings</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setSoftKeyRole"></a>QAction.setSoftKeyRole (<i>self</i>, <a href="qaction.html#SoftKeyRole-enum" tppabs="http://pyqt4doc.appspot.com/qaction.html#SoftKeyRole-enum">SoftKeyRole</a> <i>softKeyRole</i>)</h3>
+<h3 class="fn">
+<a name="setStatusTip"></a>QAction.setStatusTip (<i>self</i>, QString <i>statusTip</i>)</h3>
+<h3 class="fn">
+<a name="setText"></a>QAction.setText (<i>self</i>, QString <i>text</i>)</h3>
+<h3 class="fn">
+<a name="setToolTip"></a>QAction.setToolTip (<i>self</i>, QString <i>tip</i>)</h3>
+<h3 class="fn">
+<a name="setVisible"></a>QAction.setVisible (<i>self</i>, bool)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setVisible(bool)</tt>。</p>
+<h3 class="fn">
+<a name="setWhatsThis"></a>QAction.setWhatsThis (<i>self</i>, QString <i>what</i>)</h3>
+<h3 class="fn">
+<a name="shortcut"></a><a href="qkeysequence.html" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html">QKeySequence</a> QAction.shortcut (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="shortcutContext"></a><a href="qt.html#ShortcutContext-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ShortcutContext-enum">Qt.ShortcutContext</a> QAction.shortcutContext (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="shortcuts"></a>list-of-QKeySequence QAction.shortcuts (<i>self</i>)</h3>
+<p>返回快捷键的列表，与主快捷键为列表的第一个元素。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qaction.html#setShortcuts" tppabs="http://pyqt4doc.appspot.com/qaction.html#setShortcuts">setShortcuts</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="showStatusText"></a>bool QAction.showStatusText (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>widget</i> = None)</h3>
+<p>更新了相关的状态栏<i>widget</i>通过发送一个指定<a href="qstatustipevent.html" tppabs="http://pyqt4doc.appspot.com/qstatustipevent.html">QStatusTipEvent</a>它的父控件。如果返回的事件被送往True，否则返回False 。</p>
+<p>如果指定的一个空小部件，则该事件被发送到该操作的父代。</p>
+<p><b>See also</b> <a href="qaction.html#statusTip-prop" tppabs="http://pyqt4doc.appspot.com/qaction.html#statusTip-prop">statusTip</a>。</p>
+
+
+<h3 class="fn">
+<a name="softKeyRole"></a><a href="qaction.html#SoftKeyRole-enum" tppabs="http://pyqt4doc.appspot.com/qaction.html#SoftKeyRole-enum">SoftKeyRole</a> QAction.softKeyRole (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="statusTip"></a>QString QAction.statusTip (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="text"></a>QString QAction.text (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="toggle"></a>QAction.toggle (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void toggle()</tt>。</p>
+<p>这是一个方便的功能为<a href="qaction.html#checked-prop" tppabs="http://pyqt4doc.appspot.com/qaction.html#checked-prop">checked</a>属性。连接到它的选中状态更改为相反的状态。</p>
+
+
+<h3 class="fn">
+<a name="toolTip"></a>QString QAction.toolTip (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="trigger"></a>QAction.trigger (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void trigger()</tt>。</p>
+<p>这是一个方便的插槽调用激活（触发） 。</p>
+
+
+<h3 class="fn">
+<a name="whatsThis"></a>QString QAction.whatsThis (<i>self</i>)</h3>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="changed"></a>void changed ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的动作已经改变。如果你只关心在一个给定的窗口小部件的动作，你可以观察<a href="qwidget.html#actionEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#actionEvent">QWidget.actionEvent</a>（ ）发送与<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.ActionChanged</a>。</p>
+<p><b>See also</b> <a href="qwidget.html#actionEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#actionEvent">QWidget.actionEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hovered"></a>void hovered ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的动作是由用户突出显示的，例如，当用户暂停使用光标移到菜单选项，工具栏按钮，或按下一个操作的快捷键组合。</p>
+<p><b>See also</b> <a href="qaction.html#activate" tppabs="http://pyqt4doc.appspot.com/qaction.html#activate">QAction.activate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toggled"></a>void toggled (bool)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射每当一个辨认的作用改变其<a href="qaction.html#checked-prop" tppabs="http://pyqt4doc.appspot.com/qaction.html#checked-prop">isChecked</a>（ ）状态。这可以是用户交互的结果，或者是因为<a href="qaction.html#checked-prop" tppabs="http://pyqt4doc.appspot.com/qaction.html#checked-prop">setChecked</a>（ ）被调用。</p>
+<p><i>checked</i>是如果动作被选中真的，还是假的，如果动作是听之任之。</p>
+<p><b>See also</b> <a href="qaction.html#activate" tppabs="http://pyqt4doc.appspot.com/qaction.html#activate">QAction.activate</a>（ ）<a href="qaction.html#triggered" tppabs="http://pyqt4doc.appspot.com/qaction.html#triggered">QAction.triggered</a>（）和<a href="qaction.html#checked-prop" tppabs="http://pyqt4doc.appspot.com/qaction.html#checked-prop">checked</a>。</p>
+
+
+<h3 class="fn">
+<a name="triggered"></a>void triggered (bool = 0)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的动作是由用户激活的，例如，当用户点击一个菜单选项，工具栏按钮，或按下一个操作的快捷键组合，或当<a href="qaction.html#trigger" tppabs="http://pyqt4doc.appspot.com/qaction.html#trigger">trigger</a>（ ）被调用。值得注意的是，它是<i>not</i>当发射<a href="qaction.html#checked-prop" tppabs="http://pyqt4doc.appspot.com/qaction.html#checked-prop">setChecked</a>（）或<a href="qaction.html#toggle" tppabs="http://pyqt4doc.appspot.com/qaction.html#toggle">toggle</a>（）被调用。</p>
+<p>如果动作是可复，<i>checked</i>是如果动作被选中真的，还是假的，如果动作是听之任之。</p>
+<p><b>See also</b> <a href="qaction.html#activate" tppabs="http://pyqt4doc.appspot.com/qaction.html#activate">QAction.activate</a>（ ）<a href="qaction.html#toggled" tppabs="http://pyqt4doc.appspot.com/qaction.html#toggled">QAction.toggled</a>（）和<a href="qaction.html#checked-prop" tppabs="http://pyqt4doc.appspot.com/qaction.html#checked-prop">checked</a>。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

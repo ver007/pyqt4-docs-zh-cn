@@ -1,0 +1,302 @@
+﻿<html>
+<head>
+<title>QScriptContext Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QScriptContext Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscript.html">QtScript</a> module]</sup></sup>
+</h1>
+<p>该QScriptContext类表示一个Qt脚本函数调用。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qscriptcontext.html#Error-enum" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#Error-enum">Error</a></b> { UnknownError, ReferenceError, SyntaxError, TypeError, RangeError, URIError }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qscriptcontext.html#ExecutionState-enum" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#ExecutionState-enum">ExecutionState</a></b> { NormalState, ExceptionState }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptcontext.html#activationObject" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#activationObject">activationObject</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptcontext.html#argument" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#argument">argument</a></b> (<i>self</i>, int <i>index</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qscriptcontext.html#argumentCount" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#argumentCount">argumentCount</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptcontext.html#argumentsObject" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#argumentsObject">argumentsObject</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qscriptcontext.html#backtrace" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#backtrace">backtrace</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptcontext.html#callee" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#callee">callee</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QScriptEngine <b><a href="qscriptcontext.html#engine" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#engine">engine</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qscriptcontext.html#isCalledAsConstructor" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#isCalledAsConstructor">isCalledAsConstructor</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QScriptContext <b><a href="qscriptcontext.html#parentContext" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#parentContext">parentContext</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptcontext.html#setActivationObject" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#setActivationObject">setActivationObject</a></b> (<i>self</i>, QScriptValue <i>activation</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptcontext.html#setThisObject" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#setThisObject">setThisObject</a></b> (<i>self</i>, QScriptValue <i>thisObject</i>)</li>
+<li>
+<div class="fn"></div>ExecutionState <b><a href="qscriptcontext.html#state" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#state">state</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptcontext.html#thisObject" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#thisObject">thisObject</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptcontext.html#throwError" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#throwError">throwError</a></b> (<i>self</i>, Error <i>error</i>, QString <i>text</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptcontext.html#throwError-2" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#throwError-2">throwError</a></b> (<i>self</i>, QString <i>text</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptcontext.html#throwValue" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#throwValue">throwValue</a></b> (<i>self</i>, QScriptValue <i>value</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qscriptcontext.html#toString" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#toString">toString</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QScriptContext类表示一个Qt脚本函数调用。</p>
+<p>一个QScriptContext提供了访问` this'对象和参数传递给脚本的功能。您通常希望当你写一个本机（ C + +）函数来访问这些信息（见<a href="qscriptengine.html#newFunction" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newFunction">QScriptEngine.newFunction</a>（ ） ）将被调用的脚本代码。例如，当脚本代码</p>
+<pre class="cpp">
+ foo(<span class="number">20.5</span><span class="operator">,</span> <span class="string">"hello"</span><span class="operator">,</span> <span class="keyword">new</span> Object())
+</pre>
+<p>被评估，一个QScriptContext将被创建，并在上下文将携带的参数作为QScriptValues ​​，在这种特殊情况下，参数将其中<a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>含有数20.5 ，第二<a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>包含字符串<tt>"hello"</tt>以及第三<a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>包含一个Qt Script对象。</p>
+<p>使用<a href="qscriptcontext.html#argumentCount" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#argumentCount">argumentCount</a>（）来获取参数传递给函数的数量，<a href="qscriptcontext.html#argument" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#argument">argument</a>（）来获取参数在一定的指数。该<a href="qscriptcontext.html#argumentsObject" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#argumentsObject">argumentsObject</a>（ ）函数返回一个包含所有参数的Qt的脚本数组对象，你可以使用<a href="qscriptvalueiterator.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalueiterator.html">QScriptValueIterator</a>遍历其元素，或者传递数组作为参数使用另一个脚本函数<a href="qscriptvalue.html#call" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html#call">QScriptValue.call</a>（ ） 。</p>
+<p>使用<a href="qscriptcontext.html#thisObject" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#thisObject">thisObject</a>（ ）来获得与函数调用相关的` this'对象，并<a href="qscriptcontext.html#setThisObject" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#setThisObject">setThisObject</a>（ ）来设置` this'对象。如果要实现一个本地的“实例方法” ，通常取<a href="qscriptcontext.html#thisObject" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#thisObject">thisObject</a>（ ）和访问它的一个或多个属性：</p>
+<pre class="cpp">
+ <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> Person_prototype_fullName(<span class="type">QScriptContext</span> <span class="operator">*</span>context<span class="operator">,</span> <span class="type"><a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a></span> <span class="operator">*</span>engine)
+ {
+     <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> self <span class="operator">=</span> context<span class="operator">-</span><span class="operator">&gt;</span>thisObject();
+     <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> result;
+     result <span class="operator">+</span><span class="operator">=</span> self<span class="operator">.</span>property(<span class="string">"firstName"</span>)<span class="operator">.</span>toString();
+     result <span class="operator">+</span><span class="operator">=</span> QLatin1String(<span class="string">" "</span>);
+     result <span class="operator">+</span><span class="operator">=</span> self<span class="operator">.</span>property(<span class="string">"lastName"</span>)<span class="operator">.</span>toString();
+     <span class="keyword">return</span> result;
+ }
+</pre>
+<p>使用<a href="qscriptcontext.html#isCalledAsConstructor" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#isCalledAsConstructor">isCalledAsConstructor</a>（）来确定函数被调用的构造函数（如<tt>"new foo()"</tt>（作为构造函数），或者只是<tt>"foo()"</tt>） 。当一个函数被调用的构造函数中，<a href="qscriptcontext.html#thisObject" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#thisObject">thisObject</a>（）中包含的功能，预计以初始化新构造的对象。</p>
+<p>使用<a href="qscriptcontext.html#throwValue" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#throwValue">throwValue</a>（）或<a href="qscriptcontext.html#throwError" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#throwError">throwError</a>（ ）抛出一个异常。</p>
+<p>使用<a href="qscriptcontext.html#callee" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#callee">callee</a>（ ），得到<a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>表示被调用的函数。例如，这可以被用于递归地调用该函数。</p>
+<p>使用<a href="qscriptcontext.html#parentContext" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#parentContext">parentContext</a>（ ）来获得一个指向前面这种情况下在激活堆栈上下文。 （构建某种形式的回溯时，如）这是用于调试目的大多是有用的。</p>
+<p>该<a href="qscriptcontext.html#activationObject" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#activationObject">activationObject</a>（ ）函数返回用于保存与该函数调用关联的本地变量的对象。你可以通过调用替换激活对象<a href="qscriptcontext.html#setActivationObject" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#setActivationObject">setActivationObject</a>（ ） 。这些函数的典型用法是，当你想脚本代码在父上下文的语境来评价，例如：实现一个include（）函数：</p>
+<pre class="cpp">
+ <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> myInclude(<span class="type">QScriptContext</span> <span class="operator">*</span>ctx<span class="operator">,</span> <span class="type"><a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a></span> <span class="operator">*</span>eng)
+ {
+     <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> fileName <span class="operator">=</span> ctx<span class="operator">-</span><span class="operator">&gt;</span>argument(<span class="number">0</span>)<span class="operator">.</span>toString();
+     <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> contents <span class="operator">=</span> readTheFile(fileName);
+     ctx<span class="operator">-</span><span class="operator">&gt;</span>setActivationObject(ctx<span class="operator">-</span><span class="operator">&gt;</span>parentContext()<span class="operator">-</span><span class="operator">&gt;</span>activationObject());
+     ctx<span class="operator">-</span><span class="operator">&gt;</span>setThisObject(ctx<span class="operator">-</span><span class="operator">&gt;</span>parentContext()<span class="operator">-</span><span class="operator">&gt;</span>thisObject());
+     <span class="keyword">return</span> eng<span class="operator">-</span><span class="operator">&gt;</span>evaluate(contents<span class="operator">,</span> fileName);
+ }
+</pre>
+<p>使用<a href="qscriptcontext.html#backtrace" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#backtrace">backtrace</a>（ ）来获得与这方面有关的人类可读的回溯。这对于实现本机的功能调试时非常有用。该<a href="qscriptcontext.html#toString" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#toString">toString</a>（ ）函数提供了上下文的字符串表示形式。 （<a href="qscriptcontextinfo.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontextinfo.html">QScriptContextInfo</a>提供有关QScriptContext更详细的调试相关的信息。 ）</p>
+<p>使用<a href="qscriptcontext.html#engine" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#engine">engine</a>（）来获得一个指向<a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a>这方面驻留英寸</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="Error-enum"></a>QScriptContext.Error</h3>
+<p>此枚举指定类型的错误。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QScriptContext.ReferenceError</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">参考错误。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QScriptContext.SyntaxError</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">语法错误。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QScriptContext.TypeError</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">A型错误。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QScriptContext.RangeError</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">值域错误。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QScriptContext.URIError</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">一个URI错误。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QScriptContext.UnknownError</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">未知错误。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="ExecutionState-enum"></a>QScriptContext.ExecutionState</h3>
+<p>这个枚举指定上下文的frameution状态。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QScriptContext.NormalState</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">上下文是在正常状态下。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QScriptContext.ExceptionState</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">上下文是在一个特殊的状态。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="activationObject"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptContext.activationObject (<i>self</i>)</h3>
+<p>返回此激活对象<a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a>。激活对象提供与此内容相关联的局部变量。</p>
+<p><b>Note:</b>激活对象可能无法使用，如果没有活动<a href="qscriptengineagent.html" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html">QScriptEngineAgent</a>的，因为它可能会被优化。</p>
+<p><b>See also</b> <a href="qscriptcontext.html#setActivationObject" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#setActivationObject">setActivationObject</a>（ ）<a href="qscriptcontext.html#argument" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#argument">argument</a>（）和<a href="qscriptcontext.html#argumentsObject" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#argumentsObject">argumentsObject</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="argument"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptContext.argument (<i>self</i>, int <i>index</i>)</h3>
+<p>返回的函数参数在给定的<i>index</i>。</p>
+<p>If <i>index</i>\u003e =<a href="qscriptcontext.html#argumentCount" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#argumentCount">argumentCount</a>（）的一个<a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>基本类型的未定义返回。</p>
+<p><b>See also</b> <a href="qscriptcontext.html#argumentCount" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#argumentCount">argumentCount</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="argumentCount"></a>int QScriptContext.argumentCount (<i>self</i>)</h3>
+<p>返回的参数传递给函数在此调用的次数。</p>
+<p>请注意，参数计数可以从参数的正式编号（不同的<tt>length</tt>物业<a href="qscriptcontext.html#callee" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#callee">callee</a>（））。</p>
+<p><b>See also</b> <a href="qscriptcontext.html#argument" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#argument">argument</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="argumentsObject"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptContext.argumentsObject (<i>self</i>)</h3>
+<p>返回此参数对象<a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a>。</p>
+<p>该参数对象的属性<tt>callee</tt>（等于<a href="qscriptcontext.html#callee" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#callee">callee</a>（））和<tt>length</tt>（等于<a href="qscriptcontext.html#argumentCount" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#argumentCount">argumentCount</a>（）），和属性<tt>0</tt>，<tt>1</tt>，...，<a href="qscriptcontext.html#argumentCount" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#argumentCount">argumentCount</a>（ ） - 1 ，提供访问参数值。起初，物业<tt>P</tt>（ 0 \u003c=<tt>P</tt>\u003c<a href="qscriptcontext.html#argumentCount" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#argumentCount">argumentCount</a>（ ） ）具有相同的值作为参数（<tt>P</tt>） 。在案件时<tt>P</tt>小于的函数形式参数的数量，<tt>P</tt>与激活对象的相应属性分享它的值（<a href="qscriptcontext.html#activationObject" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#activationObject">activationObject</a>（））。这意味着，更改此属性将更改激活对象的相应属性，反之亦然。</p>
+<p><b>See also</b> <a href="qscriptcontext.html#argument" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#argument">argument</a>（）和<a href="qscriptcontext.html#activationObject" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#activationObject">activationObject</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="backtrace"></a>QStringList QScriptContext.backtrace (<i>self</i>)</h3>
+<p>返回此人类可读的回溯<a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a>。</p>
+<p>每一行的形式为<tt>&lt;function-name&gt;(&lt;arguments&gt;)@&lt;file-name&gt;:&lt;line-number&gt;</tt>。</p>
+<p>要访问各个部分的调试相关的信息（例如，构造自己的回溯表示） ，使用<a href="qscriptcontextinfo.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontextinfo.html">QScriptContextInfo</a>。</p>
+<p><b>See also</b> <a href="qscriptengine.html#uncaughtExceptionBacktrace" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#uncaughtExceptionBacktrace">QScriptEngine.uncaughtExceptionBacktrace</a>（ ）<a href="qscriptcontextinfo.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontextinfo.html">QScriptContextInfo</a>和<a href="qscriptcontext.html#toString" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#toString">toString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="callee"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptContext.callee (<i>self</i>)</h3>
+<p>返回被调用。被调用的是函数对象，这<a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a>代表的调用。</p>
+
+
+<h3 class="fn">
+<a name="engine"></a><a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a> QScriptContext.engine (<i>self</i>)</h3>
+<p>返回<a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a>这<a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a>属于。</p>
+
+
+<h3 class="fn">
+<a name="isCalledAsConstructor"></a>bool QScriptContext.isCalledAsConstructor (<i>self</i>)</h3>
+<p>返回True如果函数被调用的构造函数（如<tt>"new foo()"</tt>），否则返回False 。</p>
+<p>当一个函数被调用的构造函数中，<a href="qscriptcontext.html#thisObject" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#thisObject">thisObject</a>（）包含要初始化的新构造的对象。</p>
+<p><b>Note:</b>此功能只保证工作对应于原生函数的上下文。</p>
+
+
+<h3 class="fn">
+<a name="parentContext"></a><a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a> QScriptContext.parentContext (<i>self</i>)</h3>
+<p>返回此父上下文<a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a>。</p>
+
+
+<h3 class="fn">
+<a name="setActivationObject"></a>QScriptContext.setActivationObject (<i>self</i>, <a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> <i>activation</i>)</h3>
+<p>设置这个激活对象<a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a>为给定的<i>activation</i>。</p>
+<p>If <i>activation</i>不是一个对象，这个函数不执行任何操作。</p>
+<p><b>Note:</b>为对应的JavaScript函数的上下文，这是只保证工作，如果有一个<a href="qscriptengineagent.html" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html">QScriptEngineAgent</a>活性在发动机上，而功能进行评价。</p>
+<p><b>See also</b> <a href="qscriptcontext.html#activationObject" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#activationObject">activationObject</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setThisObject"></a>QScriptContext.setThisObject (<i>self</i>, <a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> <i>thisObject</i>)</h3>
+<p>设置了` this'对象与此相关<a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a>要<i>thisObject</i>。</p>
+<p>If <i>thisObject</i>不是一个对象，这个函数不执行任何操作。</p>
+<p><b>See also</b> <a href="qscriptcontext.html#thisObject" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#thisObject">thisObject</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="state"></a><a href="qscriptcontext.html#ExecutionState-enum" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#ExecutionState-enum">ExecutionState</a> QScriptContext.state (<i>self</i>)</h3>
+<p>返回此的frameution状态<a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a>。</p>
+
+
+<h3 class="fn">
+<a name="thisObject"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptContext.thisObject (<i>self</i>)</h3>
+<p>返回与此相关联的` this'对象<a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a>。</p>
+<p><b>See also</b> <a href="qscriptcontext.html#setThisObject" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#setThisObject">setThisObject</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="throwError"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptContext.throwError (<i>self</i>, <a href="qscriptcontext.html#Error-enum" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#Error-enum">Error</a> <i>error</i>, QString <i>text</i>)</h3>
+<p>抛出一个<i>error</i>用给定的<i>text</i>。返回创建的错误对象。</p>
+<p>该<i>text</i>将被存储在<tt>message</tt>错误对象的属性。</p>
+<p>Error对象将被初始化为包含有关发生错误的位置信息;具体而言，它将拥有属性<tt>lineNumber</tt>，<tt>fileName</tt>和<tt>stack</tt>。这些属性中描述<a href="index.htm#qtscript-extensions-to-ecmascript" tppabs="http://pyqt4doc.appspot.com/scripting.html#qtscript-extensions-to-ecmascript">QtScript
+Extensions to ECMAScript</a>。</p>
+<p><b>See also</b> <a href="qscriptcontext.html#throwValue" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#throwValue">throwValue</a>（）和<a href="qscriptcontext.html#state" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#state">state</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="throwError-2"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptContext.throwError (<i>self</i>, QString <i>text</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>与给定抛出一个错误<i>text</i>。返回创建的错误对象。</p>
+<p><b>See also</b> <a href="qscriptcontext.html#throwValue" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#throwValue">throwValue</a>（）和<a href="qscriptcontext.html#state" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#state">state</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="throwValue"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptContext.throwValue (<i>self</i>, <a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> <i>value</i>)</h3>
+<p>用给定的抛出一个异常<i>value</i>。返回抛出（相同的参数）的值。</p>
+<p><b>See also</b> <a href="qscriptcontext.html#throwError" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#throwError">throwError</a>（）和<a href="qscriptcontext.html#state" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#state">state</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toString"></a>QString QScriptContext.toString (<i>self</i>)</h3>
+<p>返回此上下文的字符串表示形式。这对于调试非常有用。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qscriptcontext.html#backtrace" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#backtrace">backtrace</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

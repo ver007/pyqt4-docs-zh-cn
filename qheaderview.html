@@ -1,0 +1,906 @@
+﻿<html>
+<head>
+<title>QHeaderView Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QHeaderView Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QHeaderView类提供了一个标题行或项目的意见标题列。<a href="#details">More...</a></p>
+
+<p>继承<a href="qabstractitemview.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html">QAbstractItemView</a>。</p>
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qheaderview.html#ResizeMode-enum" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#ResizeMode-enum">ResizeMode</a></b> { Interactive, Fixed, Stretch, ResizeToContents, Custom }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#QHeaderView" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#QHeaderView">__init__</a></b> (<i>self</i>, Qt.Orientation <i>orientation</i>, QWidget <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qheaderview.html#cascadingSectionResizes" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#cascadingSectionResizes">cascadingSectionResizes</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qheaderview.html#count" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#count">count</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#currentChanged" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#currentChanged">currentChanged</a></b> (<i>self</i>, QModelIndex <i>current</i>, QModelIndex <i>old</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#dataChanged" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#dataChanged">dataChanged</a></b> (<i>self</i>, QModelIndex <i>topLeft</i>, QModelIndex <i>bottomRight</i>)</li>
+<li>
+<div class="fn"></div>Qt.Alignment <b><a href="qheaderview.html#defaultAlignment" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#defaultAlignment">defaultAlignment</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qheaderview.html#defaultSectionSize" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#defaultSectionSize">defaultSectionSize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qheaderview.html#event" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#event">event</a></b> (<i>self</i>, QEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#headerDataChanged" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#headerDataChanged">headerDataChanged</a></b> (<i>self</i>, Qt.Orientation <i>orientation</i>, int <i>logicalFirst</i>, int <i>logicalLast</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qheaderview.html#hiddenSectionCount" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#hiddenSectionCount">hiddenSectionCount</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#hideSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#hideSection">hideSection</a></b> (<i>self</i>, int <i>alogicalIndex</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qheaderview.html#highlightSections" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#highlightSections">highlightSections</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qheaderview.html#horizontalOffset" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#horizontalOffset">horizontalOffset</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QModelIndex <b><a href="qheaderview.html#indexAt" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#indexAt">indexAt</a></b> (<i>self</i>, QPoint <i>p</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#initialize" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#initialize">initialize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#initializeSections" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#initializeSections">initializeSections</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#initializeSections-2" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#initializeSections-2">initializeSections</a></b> (<i>self</i>, int <i>start</i>, int <i>end</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#initStyleOption" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#initStyleOption">initStyleOption</a></b> (<i>self</i>, QStyleOptionHeader <i>option</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qheaderview.html#isClickable" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#isClickable">isClickable</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qheaderview.html#isIndexHidden" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#isIndexHidden">isIndexHidden</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qheaderview.html#isMovable" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#isMovable">isMovable</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qheaderview.html#isSectionHidden" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#isSectionHidden">isSectionHidden</a></b> (<i>self</i>, int <i>logicalIndex</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qheaderview.html#isSortIndicatorShown" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#isSortIndicatorShown">isSortIndicatorShown</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qheaderview.html#length" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#length">length</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qheaderview.html#logicalIndex" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#logicalIndex">logicalIndex</a></b> (<i>self</i>, int <i>visualIndex</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qheaderview.html#logicalIndexAt" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#logicalIndexAt">logicalIndexAt</a></b> (<i>self</i>, int <i>position</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qheaderview.html#logicalIndexAt-2" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#logicalIndexAt-2">logicalIndexAt</a></b> (<i>self</i>, int <i>ax</i>, int <i>ay</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qheaderview.html#logicalIndexAt-3" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#logicalIndexAt-3">logicalIndexAt</a></b> (<i>self</i>, QPoint <i>apos</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qheaderview.html#minimumSectionSize" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#minimumSectionSize">minimumSectionSize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#mouseDoubleClickEvent" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#mouseDoubleClickEvent">mouseDoubleClickEvent</a></b> (<i>self</i>, QMouseEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#mouseMoveEvent" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#mouseMoveEvent">mouseMoveEvent</a></b> (<i>self</i>, QMouseEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#mousePressEvent" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#mousePressEvent">mousePressEvent</a></b> (<i>self</i>, QMouseEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#mouseReleaseEvent" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#mouseReleaseEvent">mouseReleaseEvent</a></b> (<i>self</i>, QMouseEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>QModelIndex <b><a href="qheaderview.html#moveCursor" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#moveCursor">moveCursor</a></b> (<i>self</i>, QAbstractItemView.CursorAction, Qt.KeyboardModifiers)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#moveSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#moveSection">moveSection</a></b> (<i>self</i>, int <i>from</i>, int <i>to</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qheaderview.html#offset" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#offset">offset</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Qt.Orientation <b><a href="qheaderview.html#orientation" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#orientation">orientation</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#paintEvent">paintEvent</a></b> (<i>self</i>, QPaintEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#paintSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#paintSection">paintSection</a></b> (<i>self</i>, QPainter <i>painter</i>, QRect <i>rect</i>, int <i>logicalIndex</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#reset" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#reset">reset</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>ResizeMode <b><a href="qheaderview.html#resizeMode" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#resizeMode">resizeMode</a></b> (<i>self</i>, int <i>logicalIndex</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#resizeSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#resizeSection">resizeSection</a></b> (<i>self</i>, int <i>logicalIndex</i>, int <i>size</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#resizeSections" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#resizeSections">resizeSections</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#resizeSections-2" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#resizeSections-2">resizeSections</a></b> (<i>self</i>, ResizeMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qheaderview.html#restoreState" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#restoreState">restoreState</a></b> (<i>self</i>, QByteArray <i>state</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#rowsInserted" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#rowsInserted">rowsInserted</a></b> (<i>self</i>, QModelIndex <i>parent</i>, int <i>start</i>, int <i>end</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qheaderview.html#saveState" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#saveState">saveState</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#scrollContentsBy" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#scrollContentsBy">scrollContentsBy</a></b> (<i>self</i>, int <i>dx</i>, int <i>dy</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#scrollTo" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#scrollTo">scrollTo</a></b> (<i>self</i>, QModelIndex <i>index</i>, QAbstractItemView.ScrollHint <i>hint</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qheaderview.html#sectionPosition" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionPosition">sectionPosition</a></b> (<i>self</i>, int <i>logicalIndex</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#sectionsAboutToBeRemoved" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionsAboutToBeRemoved">sectionsAboutToBeRemoved</a></b> (<i>self</i>, QModelIndex <i>parent</i>, int <i>logicalFirst</i>, int <i>logicalLast</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qheaderview.html#sectionsHidden" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionsHidden">sectionsHidden</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#sectionsInserted" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionsInserted">sectionsInserted</a></b> (<i>self</i>, QModelIndex <i>parent</i>, int <i>logicalFirst</i>, int <i>logicalLast</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qheaderview.html#sectionSize" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionSize">sectionSize</a></b> (<i>self</i>, int <i>logicalIndex</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qheaderview.html#sectionSizeFromContents" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionSizeFromContents">sectionSizeFromContents</a></b> (<i>self</i>, int <i>logicalIndex</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qheaderview.html#sectionSizeHint" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionSizeHint">sectionSizeHint</a></b> (<i>self</i>, int <i>logicalIndex</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qheaderview.html#sectionsMoved" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionsMoved">sectionsMoved</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qheaderview.html#sectionViewportPosition" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionViewportPosition">sectionViewportPosition</a></b> (<i>self</i>, int <i>logicalIndex</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#setCascadingSectionResizes" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setCascadingSectionResizes">setCascadingSectionResizes</a></b> (<i>self</i>, bool <i>enable</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#setClickable" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setClickable">setClickable</a></b> (<i>self</i>, bool <i>clickable</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#setDefaultAlignment" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setDefaultAlignment">setDefaultAlignment</a></b> (<i>self</i>, Qt.Alignment <i>alignment</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#setDefaultSectionSize" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setDefaultSectionSize">setDefaultSectionSize</a></b> (<i>self</i>, int <i>size</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#setHighlightSections" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setHighlightSections">setHighlightSections</a></b> (<i>self</i>, bool <i>highlight</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#setMinimumSectionSize" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setMinimumSectionSize">setMinimumSectionSize</a></b> (<i>self</i>, int <i>size</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#setModel" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setModel">setModel</a></b> (<i>self</i>, QAbstractItemModel <i>model</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#setMovable" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setMovable">setMovable</a></b> (<i>self</i>, bool <i>movable</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#setOffset" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setOffset">setOffset</a></b> (<i>self</i>, int <i>offset</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#setOffsetToLastSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setOffsetToLastSection">setOffsetToLastSection</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#setOffsetToSectionPosition" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setOffsetToSectionPosition">setOffsetToSectionPosition</a></b> (<i>self</i>, int <i>visualIndex</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#setResizeMode" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setResizeMode">setResizeMode</a></b> (<i>self</i>, ResizeMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#setResizeMode-2" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setResizeMode-2">setResizeMode</a></b> (<i>self</i>, int <i>logicalIndex</i>, ResizeMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#setSectionHidden" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setSectionHidden">setSectionHidden</a></b> (<i>self</i>, int <i>logicalIndex</i>, bool <i>hide</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#setSelection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setSelection">setSelection</a></b> (<i>self</i>, QRect, QItemSelectionModel.SelectionFlags)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#setSortIndicator" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setSortIndicator">setSortIndicator</a></b> (<i>self</i>, int <i>logicalIndex</i>, Qt.SortOrder <i>order</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#setSortIndicatorShown" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setSortIndicatorShown">setSortIndicatorShown</a></b> (<i>self</i>, bool <i>show</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#setStretchLastSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setStretchLastSection">setStretchLastSection</a></b> (<i>self</i>, bool <i>stretch</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#showSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#showSection">showSection</a></b> (<i>self</i>, int <i>alogicalIndex</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qheaderview.html#sizeHint" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sizeHint">sizeHint</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Qt.SortOrder <b><a href="qheaderview.html#sortIndicatorOrder" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sortIndicatorOrder">sortIndicatorOrder</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qheaderview.html#sortIndicatorSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sortIndicatorSection">sortIndicatorSection</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qheaderview.html#stretchLastSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#stretchLastSection">stretchLastSection</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qheaderview.html#stretchSectionCount" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#stretchSectionCount">stretchSectionCount</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#swapSections" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#swapSections">swapSections</a></b> (<i>self</i>, int <i>first</i>, int <i>second</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#updateGeometries" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#updateGeometries">updateGeometries</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qheaderview.html#updateSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#updateSection">updateSection</a></b> (<i>self</i>, int <i>logicalIndex</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qheaderview.html#verticalOffset" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#verticalOffset">verticalOffset</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qheaderview.html#viewportEvent" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#viewportEvent">viewportEvent</a></b> (<i>self</i>, QEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qheaderview.html#visualIndex" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#visualIndex">visualIndex</a></b> (<i>self</i>, int <i>logicalIndex</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qheaderview.html#visualIndexAt" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#visualIndexAt">visualIndexAt</a></b> (<i>self</i>, int <i>position</i>)</li>
+<li>
+<div class="fn"></div>QRect <b><a href="qheaderview.html#visualRect" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#visualRect">visualRect</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>QRegion <b><a href="qheaderview.html#visualRegionForSelection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#visualRegionForSelection">visualRegionForSelection</a></b> (<i>self</i>, QItemSelection <i>selection</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul><li>
+<div class="fn"></div> <b><a href="qheaderview.html#__len__" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#__len__">__len__</a></b> (<i>self</i>)</li></ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qheaderview.html#geometriesChanged" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#geometriesChanged">geometriesChanged</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qheaderview.html#sectionAutoResize" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionAutoResize">sectionAutoResize</a></b> (int,QHeaderView::ResizeMode)</li>
+<li>
+<div class="fn"></div>void <b><a href="qheaderview.html#sectionClicked" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionClicked">sectionClicked</a></b> (int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qheaderview.html#sectionCountChanged" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionCountChanged">sectionCountChanged</a></b> (int,int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qheaderview.html#sectionDoubleClicked" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionDoubleClicked">sectionDoubleClicked</a></b> (int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qheaderview.html#sectionEntered" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionEntered">sectionEntered</a></b> (int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qheaderview.html#sectionHandleDoubleClicked" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionHandleDoubleClicked">sectionHandleDoubleClicked</a></b> (int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qheaderview.html#sectionMoved" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionMoved">sectionMoved</a></b> (int,int,int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qheaderview.html#sectionPressed" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionPressed">sectionPressed</a></b> (int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qheaderview.html#sectionResized" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionResized">sectionResized</a></b> (int,int,int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qheaderview.html#sortIndicatorChanged" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sortIndicatorChanged">sortIndicatorChanged</a></b> (int,Qt::SortOrder)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QHeaderView类提供了一个标题行或项目的意见标题列。</p>
+<p>一个QHeaderView显示在项目的意见，如使用的头<a href="qtableview.html" tppabs="http://pyqt4doc.appspot.com/qtableview.html">QTableView</a>和<a href="qtreeview.html" tppabs="http://pyqt4doc.appspot.com/qtreeview.html">QTreeView</a>类。它需要Qt3的的地点<tt>QHeader</tt>级以前用于同样的目的，但使用Qt的模型/视图架构与项目视图类的一致性。</p>
+<p>该QHeaderView类是一个<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/model-view.html">Model/View Classes</a>并且是Qt的一部分<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/model-view-programming.html">model/view framework</a>。</p>
+<p>从模型中使用的报头获取的每个部分中的数据的<a href="qabstractitemmodel.html#headerData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#headerData">QAbstractItemModel.headerData</a>（）函数。您可以通过使用数据集<a href="qabstractitemmodel.html#setHeaderData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setHeaderData">QAbstractItemModel.setHeaderData</a>（ ） 。</p>
+<p>每个头都有一个<a href="qheaderview.html#orientation" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#orientation">orientation</a>（）和若干节，由给定的<a href="qheaderview.html#count" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#count">count</a>（）函数。甲部分指的是报头的一部分 - 要么一排或一列，取决于方位。</p>
+<p>部分可以移动和调整大小使用<a href="qheaderview.html#moveSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#moveSection">moveSection</a>（）和<a href="qheaderview.html#resizeSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#resizeSection">resizeSection</a>（） ，它们也可以被隐藏，以示<a href="qheaderview.html#hideSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#hideSection">hideSection</a>（）和<a href="qheaderview.html#showSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#showSection">showSection</a>（ ） 。</p>
+<p>报头的每个部分是由一个段的ID ，则其部分（指定的）中描述，并且可以位于特定的<a href="qheaderview.html#visualIndex" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#visualIndex">visualIndex</a>（）的报头。 A节可以有一个排序的指标设置<a href="qheaderview.html#setSortIndicator" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setSortIndicator">setSortIndicator</a>（）;这表明无论是在相关的项目视图中的项目将在由部分给定的顺序进行排序。</p>
+<p>对于一个水平标头中的部分等效于在模型中的一列，并为一个垂直头中的部分等效于一个行中的模型。</p>
+<a id="moving-header-sections" name="moving-header-sections"></a>
+<h3>Moving Header Sections</h3>
+<p>一个头可以固定在适当位置，或做成可移动的带<a href="qheaderview.html#setMovable" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setMovable">setMovable</a>（ ） 。它可以制成可点击与<a href="qheaderview.html#setClickable" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setClickable">setClickable</a>（） ，并调整大小按照行为<a href="qheaderview.html#setResizeMode" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setResizeMode">setResizeMode</a>（ ） 。</p>
+<p><b>Note:</b>上一个头要调整部分双击仅适用于可见行。</p>
+<p>一个头会发出<a href="qheaderview.html#sectionMoved" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionMoved">sectionMoved</a>（）如果用户移动部分，<a href="qheaderview.html#sectionResized" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionResized">sectionResized</a>（）如果用户调整一个部分，<a href="qheaderview.html#sectionClicked" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionClicked">sectionClicked</a>（）以及<a href="qheaderview.html#sectionHandleDoubleClicked" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionHandleDoubleClicked">sectionHandleDoubleClicked</a>（ ）响应鼠标点击。一个头也会放出<a href="qheaderview.html#sectionCountChanged" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionCountChanged">sectionCountChanged</a>（）和<a href="qheaderview.html#sectionAutoResize" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionAutoResize">sectionAutoResize</a>（ ） 。</p>
+<p>您可以使用识别部分<a href="qheaderview.html#logicalIndex" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#logicalIndex">logicalIndex</a>（）和<a href="qheaderview.html#logicalIndexAt" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#logicalIndexAt">logicalIndexAt</a>（ ）函数，或者通过其索引位置，使用<a href="qheaderview.html#visualIndex" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#visualIndex">visualIndex</a>（）和<a href="qheaderview.html#visualIndexAt" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#visualIndexAt">visualIndexAt</a>（）函数。视觉索引会改变，如果一个部分被移动，但逻辑索引不会改变。</p>
+<a id="appearance" name="appearance"></a>
+<h3>Appearance</h3>
+<p><a href="qtablewidget.html" tppabs="http://pyqt4doc.appspot.com/qtablewidget.html">QTableWidget</a>和<a href="qtableview.html" tppabs="http://pyqt4doc.appspot.com/qtableview.html">QTableView</a>创建默认标题。如果你想标题是可见的，你可以使用<a href="qwidget.html#visible-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#visible-prop">setVisible()</a>。</p>
+<p>不是所有的<a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">ItemDataRole</a>s将会有一个QHeaderView的效果。如果您需要绘制其他角色，你可以继承QHeaderView和重新实现<a href="qheaderview.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#paintEvent">paintEvent()</a>。 QHeaderView尊重以下项目数据的作用：<a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">TextAlignmentRole</a>，<a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">DisplayRole</a>，<a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">FontRole</a>，<a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">DecorationRole</a>，<a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">ForegroundRole</a>和<a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">BackgroundRole</a>。</p>
+<p><b>Note:</b>每头呈现每个部分本身的数据，并且不依赖于委讬。其结果是，调用一个头的<a href="qabstractitemview.html#setItemDelegate" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setItemDelegate">setItemDelegate</a>（ ）函数就没有任何效果。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="ResizeMode-enum"></a>QHeaderView.ResizeMode</h3>
+<p>调整大小模式指定的标头部分的行为。它可以对整个头视图或在个别路段使用设置<a href="qheaderview.html#setResizeMode" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setResizeMode">setResizeMode</a>（ ） 。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHeaderView.Interactive</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">用户可以调整该区段。的部分也可以通过使用编程的调整大小<a href="qheaderview.html#resizeSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#resizeSection">resizeSection</a>（ ） 。本节大小默认为<a href="qheaderview.html#defaultSectionSize-prop" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#defaultSectionSize-prop">defaultSectionSize</a>。 （另请参见<a href="qheaderview.html#cascadingSectionResizes-prop" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#cascadingSectionResizes-prop">cascadingSectionResizes</a>。 ）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHeaderView.Fixed</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">用户不能调整的部分。节只能使用编程方式调整<a href="qheaderview.html#resizeSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#resizeSection">resizeSection</a>（ ） 。本节大小默认为<a href="qheaderview.html#defaultSectionSize-prop" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#defaultSectionSize-prop">defaultSectionSize</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHeaderView.Stretch</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">
+<a href="qheaderview.html" tppabs="http://pyqt4doc.appspot.com/qheaderview.html">QHeaderView</a>会自动调整节的大小，以填满可用空间。大小不能由用户或编程来改变。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHeaderView.ResizeToContents</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">
+<a href="qheaderview.html" tppabs="http://pyqt4doc.appspot.com/qheaderview.html">QHeaderView</a>将自动调整大小的部分到其基于整个行或列的内容，最佳大小。大小不能由用户或编程来改变。 （该值是在4.2中引入）</td>
+</tr>
+</table>
+<p>下面的值已过时：</p>
+<table class="valuelist">
+<tr class="even" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHeaderView.Custom</tt></td>
+<td class="topAlign"><tt>Fixed</tt></td>
+<td class="topAlign">使用固定代替。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qheaderview.html#setResizeMode" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setResizeMode">setResizeMode</a>（ ）<a href="qheaderview.html#stretchLastSection-prop" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#stretchLastSection-prop">stretchLastSection</a>和<a href="qheaderview.html#minimumSectionSize-prop" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#minimumSectionSize-prop">minimumSectionSize</a>。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QHeaderView"></a>QHeaderView.__init__ (<i>self</i>, <a href="qt.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Orientation-enum">Qt.Orientation</a> <i>orientation</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>创建一个新的通用头与给定<i>orientation</i>和<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="cascadingSectionResizes"></a>bool QHeaderView.cascadingSectionResizes (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="count"></a>int QHeaderView.count (<i>self</i>)</h3>
+<p>返回部分的标头中的数量。</p>
+<p><b>See also</b> <a href="qheaderview.html#sectionCountChanged" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionCountChanged">sectionCountChanged</a>（）和<a href="qheaderview.html#length" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#length">length</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentChanged"></a>QHeaderView.currentChanged (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>current</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>old</i>)</h3>
+<p>从重新实现<a href="qabstractitemview.html#currentChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#currentChanged">QAbstractItemView.currentChanged</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="dataChanged"></a>QHeaderView.dataChanged (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>topLeft</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>bottomRight</i>)</h3>
+<h3 class="fn">
+<a name="defaultAlignment"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-alignment.html">Qt.Alignment</a> QHeaderView.defaultAlignment (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="defaultSectionSize"></a>int QHeaderView.defaultSectionSize (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="event"></a>bool QHeaderView.event (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">QObject.event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="headerDataChanged"></a>QHeaderView.headerDataChanged (<i>self</i>, <a href="qt.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Orientation-enum">Qt.Orientation</a> <i>orientation</i>, int <i>logicalFirst</i>, int <i>logicalLast</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void headerDataChanged(Qt::Orientation,int,int)</tt>。</p>
+<p>更新改变的报头部分与给定<i>orientation</i>，从<i>logicalFirst</i>至<i>logicalLast</i>包容性。</p>
+
+
+<h3 class="fn">
+<a name="hiddenSectionCount"></a>int QHeaderView.hiddenSectionCount (<i>self</i>)</h3>
+<p>返回部分中已隐藏的报头的数量。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qheaderview.html#setSectionHidden" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setSectionHidden">setSectionHidden</a>（）和<a href="qheaderview.html#isSectionHidden" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#isSectionHidden">isSectionHidden</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hideSection"></a>QHeaderView.hideSection (<i>self</i>, int <i>alogicalIndex</i>)</h3>
+<p>隐藏由指定的段<i>logicalIndex</i>。</p>
+<p><b>See also</b> <a href="qheaderview.html#showSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#showSection">showSection</a>（ ）<a href="qheaderview.html#isSectionHidden" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#isSectionHidden">isSectionHidden</a>（ ）<a href="qheaderview.html#hiddenSectionCount" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#hiddenSectionCount">hiddenSectionCount</a>（）和<a href="qheaderview.html#setSectionHidden" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setSectionHidden">setSectionHidden</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="highlightSections"></a>bool QHeaderView.highlightSections (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="horizontalOffset"></a>int QHeaderView.horizontalOffset (<i>self</i>)</h3>
+<p>从重新实现<a href="qabstractitemview.html#horizontalOffset" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#horizontalOffset">QAbstractItemView.horizontalOffset</a>（ ） 。</p>
+<p>返回水平标头的偏移量。这是0垂直头。</p>
+<p><b>See also</b> <a href="qheaderview.html#offset" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#offset">offset</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="indexAt"></a><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> QHeaderView.indexAt (<i>self</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>p</i>)</h3>
+<h3 class="fn">
+<a name="initialize"></a>QHeaderView.initialize (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="initializeSections"></a>QHeaderView.initializeSections (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="initializeSections-2"></a>QHeaderView.initializeSections (<i>self</i>, int <i>start</i>, int <i>end</i>)</h3>
+<h3 class="fn">
+<a name="initStyleOption"></a>QHeaderView.initStyleOption (<i>self</i>, <a href="qstyleoptionheader.html" tppabs="http://pyqt4doc.appspot.com/qstyleoptionheader.html">QStyleOptionHeader</a> <i>option</i>)</h3>
+<p>初始化<i>option</i>与其它的值<a href="qheaderview.html" tppabs="http://pyqt4doc.appspot.com/qheaderview.html">QHeaderView</a>。当他们需要一个这种方法是有用的子类<a href="qstyleoptionheader.html" tppabs="http://pyqt4doc.appspot.com/qstyleoptionheader.html">QStyleOptionHeader</a>，但不希望在所有的信息填写自己。</p>
+<p><b>See also</b> <a href="qstyleoption.html#initFrom" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html#initFrom">QStyleOption.initFrom</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isClickable"></a>bool QHeaderView.isClickable (<i>self</i>)</h3>
+<p>返回True如果标题是可点击的，否则返回False 。一个可点击的标题可以被设置为允许用户更改数据在相关的头视图中的代表性。</p>
+<p><b>See also</b> <a href="qheaderview.html#setClickable" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setClickable">setClickable</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isIndexHidden"></a>bool QHeaderView.isIndexHidden (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<h3 class="fn">
+<a name="isMovable"></a>bool QHeaderView.isMovable (<i>self</i>)</h3>
+<p>返回True如果头可以被用户移动，否则返回False 。</p>
+<p><b>See also</b> <a href="qheaderview.html#setMovable" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setMovable">setMovable</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isSectionHidden"></a>bool QHeaderView.isSectionHidden (<i>self</i>, int <i>logicalIndex</i>)</h3>
+<p>返回True如果指定的节<i>logicalIndex</i>从用户明确地隐藏，否则返回False 。</p>
+<p><b>See also</b> <a href="qheaderview.html#hideSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#hideSection">hideSection</a>（ ）<a href="qheaderview.html#showSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#showSection">showSection</a>（ ）<a href="qheaderview.html#setSectionHidden" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setSectionHidden">setSectionHidden</a>（）和<a href="qheaderview.html#hiddenSectionCount" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#hiddenSectionCount">hiddenSectionCount</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isSortIndicatorShown"></a>bool QHeaderView.isSortIndicatorShown (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="length"></a>int QHeaderView.length (<i>self</i>)</h3>
+<p>返回沿头的方向的长度。</p>
+<p><b>See also</b> <a href="qheaderview.html#sizeHint" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sizeHint">sizeHint</a>（ ）<a href="qheaderview.html#setResizeMode" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setResizeMode">setResizeMode</a>（）和<a href="qheaderview.html#offset" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#offset">offset</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="logicalIndex"></a>int QHeaderView.logicalIndex (<i>self</i>, int <i>visualIndex</i>)</h3>
+<p>返回logicalIndex的部分在给定的<i>visualIndex</i>位置，或-1，如果visualIndex \u003c 0或visualIndex \u003e =<a href="qheaderview.html#count" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#count">QHeaderView.count</a>（ ） 。</p>
+<p>注意， visualIndex不受隐藏部分。</p>
+<p><b>See also</b> <a href="qheaderview.html#visualIndex" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#visualIndex">visualIndex</a>（）和<a href="qheaderview.html#sectionPosition" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionPosition">sectionPosition</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="logicalIndexAt"></a>int QHeaderView.logicalIndexAt (<i>self</i>, int <i>position</i>)</h3>
+<p>返回复盖给定的节<i>position</i>在视口中。</p>
+<p><b>See also</b> <a href="qheaderview.html#visualIndexAt" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#visualIndexAt">visualIndexAt</a>（）和<a href="qheaderview.html#isSectionHidden" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#isSectionHidden">isSectionHidden</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="logicalIndexAt-2"></a>int QHeaderView.logicalIndexAt (<i>self</i>, int <i>ax</i>, int <i>ay</i>)</h3>
+<p>返回部分的逻辑索引在给定的坐标。如果标题是水平<i>x</i>将被使用，否则<i>y</i>将被用来寻找逻辑索引。</p>
+
+
+<h3 class="fn">
+<a name="logicalIndexAt-3"></a>int QHeaderView.logicalIndexAt (<i>self</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>apos</i>)</h3>
+<p>返回部分的逻辑索引在给定的位置<i>pos</i>。如果标题是水平的x坐标将被使用，否则y坐标将被用来寻找逻辑索引。</p>
+<p><b>See also</b> <a href="qheaderview.html#sectionPosition" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionPosition">sectionPosition</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="minimumSectionSize"></a>int QHeaderView.minimumSectionSize (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="mouseDoubleClickEvent"></a>QHeaderView.mouseDoubleClickEvent (<i>self</i>, <a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#mouseDoubleClickEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#mouseDoubleClickEvent">QWidget.mouseDoubleClickEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mouseMoveEvent"></a>QHeaderView.mouseMoveEvent (<i>self</i>, <a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#mouseMoveEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#mouseMoveEvent">QWidget.mouseMoveEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mousePressEvent"></a>QHeaderView.mousePressEvent (<i>self</i>, <a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#mousePressEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#mousePressEvent">QWidget.mousePressEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mouseReleaseEvent"></a>QHeaderView.mouseReleaseEvent (<i>self</i>, <a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#mouseReleaseEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#mouseReleaseEvent">QWidget.mouseReleaseEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="moveCursor"></a><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> QHeaderView.moveCursor (<i>self</i>, <a href="qabstractitemview.html#CursorAction-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#CursorAction-enum">QAbstractItemView.CursorAction</a>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-keyboardmodifiers.html">Qt.KeyboardModifiers</a>)</h3>
+<h3 class="fn">
+<a name="moveSection"></a>QHeaderView.moveSection (<i>self</i>, int <i>from</i>, int <i>to</i>)</h3>
+<p>移动部分在视觉索引<i>from</i>佔据视觉指数<i>to</i>。</p>
+<p><b>See also</b> <a href="qheaderview.html#sectionsMoved" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionsMoved">sectionsMoved</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="offset"></a>int QHeaderView.offset (<i>self</i>)</h3>
+<p>返回头的偏移量：这是标题的最左边（或最顶层垂直头）可见像素。</p>
+<p><b>See also</b> <a href="qheaderview.html#setOffset" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setOffset">setOffset</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="orientation"></a><a href="qt.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Orientation-enum">Qt.Orientation</a> QHeaderView.orientation (<i>self</i>)</h3>
+<p>返回头的方位。</p>
+<p><b>See also</b> <a href="qt.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Orientation-enum">Qt.Orientation</a>。</p>
+
+
+<h3 class="fn">
+<a name="paintEvent"></a>QHeaderView.paintEvent (<i>self</i>, <a href="qpaintevent.html" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html">QPaintEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qwidget.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#paintEvent">QWidget.paintEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="paintSection"></a>QHeaderView.paintSection (<i>self</i>, <a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a> <i>painter</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>rect</i>, int <i>logicalIndex</i>)</h3>
+<p>绘制由给定指定的节<i>logicalIndex</i>，使用给定的<i>painter</i>和<i>rect</i>。</p>
+<p>通常情况下，你不必调用这个函数。</p>
+
+
+<h3 class="fn">
+<a name="reset"></a>QHeaderView.reset (<i>self</i>)</h3>
+<p>从重新实现<a href="qabstractitemview.html#reset" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#reset">QAbstractItemView.reset</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="resizeMode"></a><a href="qheaderview.html#ResizeMode-enum" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#ResizeMode-enum">ResizeMode</a> QHeaderView.resizeMode (<i>self</i>, int <i>logicalIndex</i>)</h3>
+<p>返回适用于部分由给定指定的尺寸模式<i>logicalIndex</i>。</p>
+<p><b>See also</b> <a href="qheaderview.html#setResizeMode" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setResizeMode">setResizeMode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="resizeSection"></a>QHeaderView.resizeSection (<i>self</i>, int <i>logicalIndex</i>, int <i>size</i>)</h3>
+<p>重新调整所指定的部分<i>logicalIndex</i>至<i>size</i>以像素为单位。</p>
+<p><b>See also</b> <a href="qheaderview.html#sectionResized" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionResized">sectionResized</a>（ ）<a href="qheaderview.html#resizeMode" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#resizeMode">resizeMode</a>（）和<a href="qheaderview.html#sectionSize" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionSize">sectionSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="resizeSections"></a>QHeaderView.resizeSections (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void resizeSections()</tt>。</p>
+<p>根据给定的大小调整部分<i>mode</i>忽略当前调整模式。</p>
+<p><b>See also</b> <a href="qheaderview.html#resizeMode" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#resizeMode">resizeMode</a>（）和<a href="qheaderview.html#sectionResized" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionResized">sectionResized</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="resizeSections-2"></a>QHeaderView.resizeSections (<i>self</i>, <a href="qheaderview.html#ResizeMode-enum" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#ResizeMode-enum">ResizeMode</a> <i>mode</i>)</h3>
+<p>根据他们的大小提示重新调整的部分。通常情况下，你不必调用这个函数。</p>
+
+
+<h3 class="fn">
+<a name="restoreState"></a>bool QHeaderView.restoreState (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>state</i>)</h3>
+<p>恢复<i>state</i>这头视图。这个函数返回<tt>true</tt>如果状态得到恢复，否则返回False 。</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qheaderview.html#saveState" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#saveState">saveState</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rowsInserted"></a>QHeaderView.rowsInserted (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i>, int <i>start</i>, int <i>end</i>)</h3>
+<h3 class="fn">
+<a name="saveState"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QHeaderView.saveState (<i>self</i>)</h3>
+<p>保存这个头视图的当前状态。</p>
+<p>要恢复保存的状态，返回值传递给<a href="qheaderview.html#restoreState" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#restoreState">restoreState</a>（ ） 。</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qheaderview.html#restoreState" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#restoreState">restoreState</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="scrollContentsBy"></a>QHeaderView.scrollContentsBy (<i>self</i>, int <i>dx</i>, int <i>dy</i>)</h3>
+<h3 class="fn">
+<a name="scrollTo"></a>QHeaderView.scrollTo (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>, <a href="qabstractitemview.html#ScrollHint-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#ScrollHint-enum">QAbstractItemView.ScrollHint</a> <i>hint</i>)</h3>
+<h3 class="fn">
+<a name="sectionPosition"></a>int QHeaderView.sectionPosition (<i>self</i>, int <i>logicalIndex</i>)</h3>
+<p>返回给定的区间位置<i>logicalIndex</i>，或-1，如果部分被隐藏。位置是衡量像素从第一个可见项的左上角，以该项目的左上角与<i>logicalIndex</i>。测量是沿x轴为水平的标头，并沿y轴为垂直的标头。</p>
+<p><b>See also</b> <a href="qheaderview.html#sectionViewportPosition" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionViewportPosition">sectionViewportPosition</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sectionsAboutToBeRemoved"></a>QHeaderView.sectionsAboutToBeRemoved (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i>, int <i>logicalFirst</i>, int <i>logicalLast</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void sectionsAboutToBeRemoved(const QModelIndex&amp;,int,int)</tt>。</p>
+<p>当部分被从删除该槽被调用<i>parent</i>。<i>logicalFirst</i>和<i>logicalLast</i>表示除去路段。</p>
+<p>如果只有一个部分被去除，<i>logicalFirst</i>和<i>logicalLast</i>将是相同的。</p>
+
+
+<h3 class="fn">
+<a name="sectionsHidden"></a>bool QHeaderView.sectionsHidden (<i>self</i>)</h3>
+<p>返回True如果在头段已被隐藏，否则返回False ;</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qheaderview.html#setSectionHidden" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setSectionHidden">setSectionHidden</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sectionsInserted"></a>QHeaderView.sectionsInserted (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i>, int <i>logicalFirst</i>, int <i>logicalLast</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void sectionsInserted(const QModelIndex&amp;,int,int)</tt>。</p>
+<p>当部分被插入到该插槽被称为<i>parent</i>。<i>logicalFirst</i>和<i>logicalLast</i>指数表示插入新的路段。</p>
+<p>如果只插入一个部分，<i>logicalFirst</i>和<i>logicalLast</i>将是相同的。</p>
+
+
+<h3 class="fn">
+<a name="sectionSize"></a>int QHeaderView.sectionSize (<i>self</i>, int <i>logicalIndex</i>)</h3>
+<p>返回给定的宽度（或高度垂直头）<i>logicalIndex</i>。</p>
+<p><b>See also</b> <a href="qheaderview.html#length" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#length">length</a>（ ）<a href="qheaderview.html#setResizeMode" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setResizeMode">setResizeMode</a>（）和<a href="qheaderview.html#defaultSectionSize-prop" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#defaultSectionSize-prop">defaultSectionSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sectionSizeFromContents"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QHeaderView.sectionSizeFromContents (<i>self</i>, int <i>logicalIndex</i>)</h3>
+<p>返回的部分的内容由给定的指定尺寸<i>logicalIndex</i>。</p>
+<p><b>See also</b> <a href="qheaderview.html#defaultSectionSize-prop" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#defaultSectionSize-prop">defaultSectionSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sectionSizeHint"></a>int QHeaderView.sectionSizeHint (<i>self</i>, int <i>logicalIndex</i>)</h3>
+<p>返回一个合适大小的提示由指定的节<i>logicalIndex</i>。</p>
+<p><b>See also</b> <a href="qheaderview.html#sizeHint" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sizeHint">sizeHint</a>（ ）<a href="qheaderview.html#defaultSectionSize-prop" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#defaultSectionSize-prop">defaultSectionSize</a>（ ）<a href="qheaderview.html#minimumSectionSize-prop" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#minimumSectionSize-prop">minimumSectionSize</a>（）和<a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">Qt.SizeHintRole</a>。</p>
+
+
+<h3 class="fn">
+<a name="sectionsMoved"></a>bool QHeaderView.sectionsMoved (<i>self</i>)</h3>
+<p>返回True如果在头段已被移动，否则返回False ;</p>
+<p><b>See also</b> <a href="qheaderview.html#moveSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#moveSection">moveSection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sectionViewportPosition"></a>int QHeaderView.sectionViewportPosition (<i>self</i>, int <i>logicalIndex</i>)</h3>
+<p>返回给定的部分视口位置<i>logicalIndex</i>。</p>
+<p>如果部分被隐藏，返回值是不确定的。</p>
+<p><b>See also</b> <a href="qheaderview.html#sectionPosition" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionPosition">sectionPosition</a>（）和<a href="qheaderview.html#isSectionHidden" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#isSectionHidden">isSectionHidden</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCascadingSectionResizes"></a>QHeaderView.setCascadingSectionResizes (<i>self</i>, bool <i>enable</i>)</h3>
+<h3 class="fn">
+<a name="setClickable"></a>QHeaderView.setClickable (<i>self</i>, bool <i>clickable</i>)</h3>
+<p>If <i>clickable</i>是真的，头将响应单一的点击。</p>
+<p><b>See also</b> <a href="qheaderview.html#isClickable" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#isClickable">isClickable</a>（ ）<a href="qheaderview.html#sectionClicked" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionClicked">sectionClicked</a>（ ）<a href="qheaderview.html#sectionPressed" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionPressed">sectionPressed</a>（）和<a href="qheaderview.html#showSortIndicator-prop" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#showSortIndicator-prop">setSortIndicatorShown</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setDefaultAlignment"></a>QHeaderView.setDefaultAlignment (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-alignment.html">Qt.Alignment</a> <i>alignment</i>)</h3>
+<h3 class="fn">
+<a name="setDefaultSectionSize"></a>QHeaderView.setDefaultSectionSize (<i>self</i>, int <i>size</i>)</h3>
+<h3 class="fn">
+<a name="setHighlightSections"></a>QHeaderView.setHighlightSections (<i>self</i>, bool <i>highlight</i>)</h3>
+<h3 class="fn">
+<a name="setMinimumSectionSize"></a>QHeaderView.setMinimumSectionSize (<i>self</i>, int <i>size</i>)</h3>
+<h3 class="fn">
+<a name="setModel"></a>QHeaderView.setModel (<i>self</i>, <a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a> <i>model</i>)</h3>
+<p>从重新实现<a href="qabstractitemview.html#setModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setModel">QAbstractItemView.setModel</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setMovable"></a>QHeaderView.setMovable (<i>self</i>, bool <i>movable</i>)</h3>
+<p>If <i>movable</i>为真，则报头可以被用户移动，否则它被固定在适当位置。</p>
+<p><b>See also</b> <a href="qheaderview.html#isMovable" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#isMovable">isMovable</a>（）和<a href="qheaderview.html#sectionMoved" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionMoved">sectionMoved</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setOffset"></a>QHeaderView.setOffset (<i>self</i>, int <i>offset</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setOffset(int)</tt>。</p>
+<p>套头的偏移量<i>offset</i>。</p>
+<p><b>See also</b> <a href="qheaderview.html#offset" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#offset">offset</a>（）和<a href="qheaderview.html#length" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#length">length</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setOffsetToLastSection"></a>QHeaderView.setOffsetToLastSection (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setOffsetToLastSection()</tt>。</p>
+<p>设置偏移，使上节可见。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qheaderview.html#setOffset" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setOffset">setOffset</a>（ ）<a href="qheaderview.html#sectionPosition" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionPosition">sectionPosition</a>（）和<a href="qheaderview.html#setOffsetToSectionPosition" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setOffsetToSectionPosition">setOffsetToSectionPosition</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setOffsetToSectionPosition"></a>QHeaderView.setOffsetToSectionPosition (<i>self</i>, int <i>visualIndex</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setOffsetToSectionPosition(int)</tt>。</p>
+<p>集在给定的偏移量的部分的开始<i>visualIndex</i>。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qheaderview.html#setOffset" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setOffset">setOffset</a>（）和<a href="qheaderview.html#sectionPosition" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionPosition">sectionPosition</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setResizeMode"></a>QHeaderView.setResizeMode (<i>self</i>, <a href="qheaderview.html#ResizeMode-enum" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#ResizeMode-enum">ResizeMode</a> <i>mode</i>)</h3>
+<p>设置如何头可以调整到那些由给定描述的约束<i>mode</i>。</p>
+<p><b>See also</b> <a href="qheaderview.html#resizeMode" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#resizeMode">resizeMode</a>（ ）<a href="qheaderview.html#length" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#length">length</a>（ ）<a href="qheaderview.html#sectionResized" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionResized">sectionResized</a>（）和<a href="qheaderview.html#sectionAutoResize" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionAutoResize">sectionAutoResize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setResizeMode-2"></a>QHeaderView.setResizeMode (<i>self</i>, int <i>logicalIndex</i>, <a href="qheaderview.html#ResizeMode-enum" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#ResizeMode-enum">ResizeMode</a> <i>mode</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>设置约束的部分由指定如何<i>logicalIndex</i>在头可以调整到那些由给定的描述<i>mode</i>。逻辑索引应该存在在这个函数被调用的时间。</p>
+<p><b>Note:</b>此设置将被忽略的最后一节，如果<a href="qheaderview.html#stretchLastSection-prop" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#stretchLastSection-prop">stretchLastSection</a>属性设置为True。这是默认提供的水平标题<a href="qtreeview.html" tppabs="http://pyqt4doc.appspot.com/qtreeview.html">QTreeView</a>。</p>
+<p><b>See also</b> <a href="qheaderview.html#stretchLastSection-prop" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#stretchLastSection-prop">setStretchLastSection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setSectionHidden"></a>QHeaderView.setSectionHidden (<i>self</i>, int <i>logicalIndex</i>, bool <i>hide</i>)</h3>
+<p>If <i>hide</i>是真正的由指定的段<i>logicalIndex</i>是隐藏的，否则该部分被示出。</p>
+<p><b>See also</b> <a href="qheaderview.html#isSectionHidden" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#isSectionHidden">isSectionHidden</a>（）和<a href="qheaderview.html#hiddenSectionCount" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#hiddenSectionCount">hiddenSectionCount</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setSelection"></a>QHeaderView.setSelection (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel-selectionflags.html">QItemSelectionModel.SelectionFlags</a>)</h3>
+<p>从重新实现<a href="qabstractitemview.html#setSelection" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#setSelection">QAbstractItemView.setSelection</a>（ ） 。</p>
+<p>选择在给定的项目<i>rect</i>根据指定的<i>flags</i>。</p>
+<p>基类的实现不执行任何操作。</p>
+
+
+<h3 class="fn">
+<a name="setSortIndicator"></a>QHeaderView.setSortIndicator (<i>self</i>, int <i>logicalIndex</i>, <a href="qt.html#SortOrder-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#SortOrder-enum">Qt.SortOrder</a> <i>order</i>)</h3>
+<p>设置排序指标由给定指定的节<i>logicalIndex</i>在所指定的方向<i>order</i>，并删除从已显示它的任何其他部分的排序指标。</p>
+<p><i>logicalIndex</i>可能是-1 ，在这种情况下，不排序指示器将显示与该模型将回到它的自然，未排序的顺序。请注意，并非所有型号都支持这一点，甚至可能会崩溃在这种情况下。</p>
+<p><b>See also</b> <a href="qheaderview.html#sortIndicatorSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sortIndicatorSection">sortIndicatorSection</a>（）和<a href="qheaderview.html#sortIndicatorOrder" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sortIndicatorOrder">sortIndicatorOrder</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setSortIndicatorShown"></a>QHeaderView.setSortIndicatorShown (<i>self</i>, bool <i>show</i>)</h3>
+<h3 class="fn">
+<a name="setStretchLastSection"></a>QHeaderView.setStretchLastSection (<i>self</i>, bool <i>stretch</i>)</h3>
+<h3 class="fn">
+<a name="showSection"></a>QHeaderView.showSection (<i>self</i>, int <i>alogicalIndex</i>)</h3>
+<p>显示由指定的节<i>logicalIndex</i>。</p>
+<p><b>See also</b> <a href="qheaderview.html#hideSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#hideSection">hideSection</a>（ ）<a href="qheaderview.html#isSectionHidden" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#isSectionHidden">isSectionHidden</a>（ ）<a href="qheaderview.html#hiddenSectionCount" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#hiddenSectionCount">hiddenSectionCount</a>（）和<a href="qheaderview.html#setSectionHidden" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setSectionHidden">setSectionHidden</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sizeHint"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QHeaderView.sizeHint (<i>self</i>)</h3>
+<p>从重新实现<a href="qwidget.html#sizeHint-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#sizeHint-prop">QWidget.sizeHint</a>（ ） 。</p>
+<p>返回一个合适的尺寸暗示这个头。</p>
+<p><b>See also</b> <a href="qheaderview.html#sectionSizeHint" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionSizeHint">sectionSizeHint</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sortIndicatorOrder"></a><a href="qt.html#SortOrder-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#SortOrder-enum">Qt.SortOrder</a> QHeaderView.sortIndicatorOrder (<i>self</i>)</h3>
+<p>返回排序指标的顺序。如果没有部分有一个排序指示器这个函数的返回值是不确定的。</p>
+<p><b>See also</b> <a href="qheaderview.html#setSortIndicator" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setSortIndicator">setSortIndicator</a>（）和<a href="qheaderview.html#sortIndicatorSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sortIndicatorSection">sortIndicatorSection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sortIndicatorSection"></a>int QHeaderView.sortIndicatorSection (<i>self</i>)</h3>
+<p>返回具有某种指示器部分的逻辑索引。默认情况下，这是一节0 。</p>
+<p><b>See also</b> <a href="qheaderview.html#setSortIndicator" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setSortIndicator">setSortIndicator</a>（ ）<a href="qheaderview.html#sortIndicatorOrder" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sortIndicatorOrder">sortIndicatorOrder</a>（）和<a href="qheaderview.html#showSortIndicator-prop" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#showSortIndicator-prop">setSortIndicatorShown</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="stretchLastSection"></a>bool QHeaderView.stretchLastSection (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="stretchSectionCount"></a>int QHeaderView.stretchSectionCount (<i>self</i>)</h3>
+<p>返回设置为调整模式舒展的节数。在视图中，这可以用来查看是否headerview需要调整的部分，当视图的几何变化。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qheaderview.html#stretchLastSection-prop" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#stretchLastSection-prop">stretchLastSection</a>和<a href="qheaderview.html#resizeMode" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#resizeMode">resizeMode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="swapSections"></a>QHeaderView.swapSections (<i>self</i>, int <i>first</i>, int <i>second</i>)</h3>
+<p>掉期的部分在视觉索引<i>first</i>与部分在视觉索引<i>second</i>。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qheaderview.html#moveSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#moveSection">moveSection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="updateGeometries"></a>QHeaderView.updateGeometries (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="updateSection"></a>QHeaderView.updateSection (<i>self</i>, int <i>logicalIndex</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void updateSection(int)</tt>。</p>
+<h3 class="fn">
+<a name="verticalOffset"></a>int QHeaderView.verticalOffset (<i>self</i>)</h3>
+<p>从重新实现<a href="qabstractitemview.html#verticalOffset" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#verticalOffset">QAbstractItemView.verticalOffset</a>（ ） 。</p>
+<p>返回垂直头的偏移量。这是0水平的标头。</p>
+<p><b>See also</b> <a href="qheaderview.html#offset" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#offset">offset</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="viewportEvent"></a>bool QHeaderView.viewportEvent (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qabstractscrollarea.html#viewportEvent" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html#viewportEvent">QAbstractScrollArea.viewportEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="visualIndex"></a>int QHeaderView.visualIndex (<i>self</i>, int <i>logicalIndex</i>)</h3>
+<p>返回段由给定指定的可视索引位置<i>logicalIndex</i>，否则返回-1 。</p>
+<p>隐藏部分仍然具有有效的可视化索引。</p>
+<p><b>See also</b> <a href="qheaderview.html#logicalIndex" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#logicalIndex">logicalIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="visualIndexAt"></a>int QHeaderView.visualIndexAt (<i>self</i>, int <i>position</i>)</h3>
+<p>返回复盖给定部分的视觉索引<i>position</i>在视口中。</p>
+<p><b>See also</b> <a href="qheaderview.html#logicalIndexAt" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#logicalIndexAt">logicalIndexAt</a>（ ） 。</p>
+<h3 class="fn">
+<a name="visualRect"></a><a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> QHeaderView.visualRect (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<h3 class="fn">
+<a name="visualRegionForSelection"></a><a href="qregion.html" tppabs="http://pyqt4doc.appspot.com/qregion.html">QRegion</a> QHeaderView.visualRegionForSelection (<i>self</i>, <a href="qitemselection.html" tppabs="http://pyqt4doc.appspot.com/qitemselection.html">QItemSelection</a> <i>selection</i>)</h3>
+<h3 class="fn">
+<a name="__len__"></a> QHeaderView.__len__ (<i>self</i>)</h3>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="geometriesChanged"></a>void geometriesChanged ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>当标头的几何形状发生了变化，这个信号被发射。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="sectionAutoResize"></a>void sectionAutoResize (int,QHeaderView::ResizeMode)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时，部分会自动调整大小。该部分的逻辑索引是通过指定<i>logicalIndex</i>，并调整大小模式<i>mode</i>。</p>
+<p><b>See also</b> <a href="qheaderview.html#setResizeMode" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setResizeMode">setResizeMode</a>（）和<a href="qheaderview.html#stretchLastSection-prop" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#stretchLastSection-prop">stretchLastSection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sectionClicked"></a>void sectionClicked (int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>一个部分被点击时，这个信号被发射。该部分的逻辑索引是通过指定<i>logicalIndex</i>。</p>
+<p>注意， sectionPressed信号也将被发射。</p>
+<p><b>See also</b> <a href="qheaderview.html#setClickable" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setClickable">setClickable</a>（）和<a href="qheaderview.html#sectionPressed" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionPressed">sectionPressed</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sectionCountChanged"></a>void sectionCountChanged (int,int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时，部分的数目发生变化，即，当部分被添加或删除。原始计数被指定<i>oldCount</i>，并且由新的计<i>newCount</i>。</p>
+<p><b>See also</b> <a href="qheaderview.html#count" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#count">count</a>（ ）<a href="qheaderview.html#length" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#length">length</a>（）和<a href="qheaderview.html#headerDataChanged" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#headerDataChanged">headerDataChanged</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sectionDoubleClicked"></a>void sectionDoubleClicked (int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当一个段被双击这个信号被发射。该部分的逻辑索引是通过指定<i>logicalIndex</i>。</p>
+<p><b>See also</b> <a href="qheaderview.html#setClickable" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setClickable">setClickable</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sectionEntered"></a>void sectionEntered (int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当光标移过的部分和鼠标左键被按下这个信号被发射。该部分的逻辑索引是通过指定<i>logicalIndex</i>。</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qheaderview.html#setClickable" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setClickable">setClickable</a>（）和<a href="qheaderview.html#sectionPressed" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#sectionPressed">sectionPressed</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sectionHandleDoubleClicked"></a>void sectionHandleDoubleClicked (int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当一个段被双击这个信号被发射。该部分的逻辑索引是通过指定<i>logicalIndex</i>。</p>
+<p><b>See also</b> <a href="qheaderview.html#setClickable" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setClickable">setClickable</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sectionMoved"></a>void sectionMoved (int,int,int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当一个区段被移动这个信号被发射。该部分的逻辑索引是通过指定<i>logicalIndex</i>，老指数由<i>oldVisualIndex</i>，并且由新的索引位置<i>newVisualIndex</i>。</p>
+<p><b>See also</b> <a href="qheaderview.html#moveSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#moveSection">moveSection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sectionPressed"></a>void sectionPressed (int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当一个区段被按下这个信号被发射。该部分的逻辑索引是通过指定<i>logicalIndex</i>。</p>
+<p><b>See also</b> <a href="qheaderview.html#setClickable" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setClickable">setClickable</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sectionResized"></a>void sectionResized (int,int,int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当一个部分被调整大小，这个信号被发射。该部分的逻辑数由指定<i>logicalIndex</i>，旧的大小由<i>oldSize</i>，并以新的大小<i>newSize</i>。</p>
+<p><b>See also</b> <a href="qheaderview.html#resizeSection" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#resizeSection">resizeSection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sortIndicatorChanged"></a>void sortIndicatorChanged (int,Qt::SortOrder)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当改变包含排序指示器或指示的顺序的部分，这个信号被发射。该部分的逻辑索引是通过指定<i>logicalIndex</i>并通过指定的排序顺序<i>order</i>。</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qheaderview.html#setSortIndicator" tppabs="http://pyqt4doc.appspot.com/qheaderview.html#setSortIndicator">setSortIndicator</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

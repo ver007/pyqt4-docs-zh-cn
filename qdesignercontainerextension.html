@@ -1,0 +1,199 @@
+﻿<html>
+<head>
+<title>QDesignerContainerExtension Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDesignerContainerExtension Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdesigner.html">QtDesigner</a> module]</sup></sup>
+</h1>
+<p>该QDesignerContainerExtension类可以让你的网页添加到Qt Designer中的工作区中的自定义多页的容器。<a href="#details">More...</a></p>
+
+<p>通过继承<a href="qpydesignercontainerextension.html" tppabs="http://pyqt4doc.appspot.com/qpydesignercontainerextension.html">QPyDesignerContainerExtension</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdesignercontainerextension.html#QDesignerContainerExtension" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#QDesignerContainerExtension">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdesignercontainerextension.html#QDesignerContainerExtension-2" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#QDesignerContainerExtension-2">__init__</a></b> (<i>self</i>, QDesignerContainerExtension)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdesignercontainerextension.html#addWidget" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#addWidget">addWidget</a></b> (<i>self</i>, QWidget <i>widget</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qdesignercontainerextension.html#count" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#count">count</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qdesignercontainerextension.html#currentIndex" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#currentIndex">currentIndex</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdesignercontainerextension.html#insertWidget" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#insertWidget">insertWidget</a></b> (<i>self</i>, int <i>index</i>, QWidget <i>widget</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdesignercontainerextension.html#remove" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#remove">remove</a></b> (<i>self</i>, int <i>index</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdesignercontainerextension.html#setCurrentIndex" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#setCurrentIndex">setCurrentIndex</a></b> (<i>self</i>, int <i>index</i>)</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qdesignercontainerextension.html#widget" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#widget">widget</a></b> (<i>self</i>, int <i>index</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul><li>
+<div class="fn"></div> <b><a href="qdesignercontainerextension.html#__len__" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#__len__">__len__</a></b> (<i>self</i>)</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDesignerContainerExtension类可以让你的网页添加到Qt Designer中的工作区中的自定义多页的容器。</p>
+<p>QDesignerContainerExtension用于创建自定义容器扩展提供了一个接口。容器扩展包括函数的集合的那个<i>Qt Designer</i>需要管理一个多页容器插件，且在容器的页的列表。</p>
+<p class="centerAlign"><img alt="" src="images/containerextension-example.png"></p>
+<p><b>Warning:</b>这是<i>not</i>在一般情况下，只有自定义容器的插件扩展<i>multi-page</i>容器。</p>
+<p>要创建一个容器扩展，你的扩展类必须继承自两个<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>和QDesignerContainerExtension 。例如：</p>
+<pre class="cpp">
+ <span class="keyword">class</span> MyContainerExtension : <span class="keyword">public</span> <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span><span class="operator">,</span>
+        <span class="keyword">public</span> <span class="type">QDesignerContainerExtension</span>
+ {
+     Q_OBJECT
+     Q_INTERFACES(<span class="type">QDesignerContainerExtension</span>)
+
+ <span class="keyword">public</span>:
+     MyContainerExtension(MyCustomWidget <span class="operator">*</span>widget<span class="operator">,</span>
+                          <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span> <span class="operator">*</span>parent <span class="operator">=</span> <span class="number">0</span>);
+     <span class="type">int</span> count() <span class="keyword">const</span>;
+     <span class="type"><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a></span> <span class="operator">*</span>widget(<span class="type">int</span> index) <span class="keyword">const</span>;
+     <span class="type">int</span> currentIndex() <span class="keyword">const</span>;
+     <span class="type">void</span> setCurrentIndex(<span class="type">int</span> index);
+     <span class="type">void</span> addWidget(<span class="type"><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a></span> <span class="operator">*</span>widget);
+     <span class="type">void</span> insertWidget(<span class="type">int</span> index<span class="operator">,</span> <span class="type"><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a></span> <span class="operator">*</span>widget);
+     <span class="type">void</span> remove(<span class="type">int</span> index);
+
+ <span class="keyword">private</span>:
+     MyCustomWidget <span class="operator">*</span>myWidget;
+ };
+</pre>
+<p>由于我们正在实现一个接口，我们必须确保它是由已知的元对象系统中使用<a href="qobject.html#Q_INTERFACES" tppabs="http://pyqt4doc.appspot.com/qobject.html#Q_INTERFACES">Q_INTERFACES</a>（）宏。这使<i>Qt Designer</i>使用<a href="qobject.html#qobject_cast" tppabs="http://pyqt4doc.appspot.com/qobject.html#qobject_cast">qobject_cast</a>（ ）函数用什么来查询所支持的接口，但一<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>指针。</p>
+<p>你必须重新实现几个功能，使<i>Qt
+Designer</i>管理自定义多页的容器控件：<i>Qt
+Designer</i> uses <a href="qdesignercontainerextension.html#count" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#count">count</a>（ ）来跟踪的页数在你的容器中，<a href="qdesignercontainerextension.html#widget" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#widget">widget</a>（ ）给定的索引在容器的页面列表在返回的页面，<a href="qdesignercontainerextension.html#currentIndex" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#currentIndex">currentIndex</a>（ ）返回选定的页面的列表索引。<i>Qt Designer</i>使用<a href="qdesignercontainerextension.html#addWidget" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#addWidget">addWidget</a>（ ）函数在给定页面添加到容器中，期待它附加到页面列表，而它预计<a href="qdesignercontainerextension.html#insertWidget" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#insertWidget">insertWidget</a>（ ）函数通过给定的索引处插入了一个给定页面添加到容器中。</p>
+<p>In <i>Qt Designer</i>未创建的扩展，直到你需要它们。出于这个原因，你必须同时创建一个<a href="qextensionfactory.html" tppabs="http://pyqt4doc.appspot.com/qextensionfactory.html">QExtensionFactory</a>，即一个类，它能够让你的扩展的一个实例，并使用它注册<i>Qt Designer</i>的<a href="qextensionmanager.html" tppabs="http://pyqt4doc.appspot.com/qextensionmanager.html">extension
+manager</a>。</p>
+<p>当一个容器扩展是必需的，<i>Qt Designer</i>的<a href="qextensionmanager.html" tppabs="http://pyqt4doc.appspot.com/qextensionmanager.html">extension manager</a>将通过其所有已注册的工厂运行要求<a href="qextensionfactory.html#createExtension" tppabs="http://pyqt4doc.appspot.com/qextensionfactory.html#createExtension">QExtensionFactory.createExtension</a>（ ）对每一直到第一个即能创建一个容器延伸，被找到。这家工厂将创建的扩展插件。</p>
+<p>有扩展的四个可用的类型<i>Qt
+Designer</i>： QDesignerContainerExtension ，<a href="qdesignermembersheetextension.html" tppabs="http://pyqt4doc.appspot.com/qdesignermembersheetextension.html">QDesignerMemberSheetExtension</a>，<a href="qdesignerpropertysheetextension.html" tppabs="http://pyqt4doc.appspot.com/qdesignerpropertysheetextension.html">QDesignerPropertySheetExtension</a>和<a href="qdesignertaskmenuextension.html" tppabs="http://pyqt4doc.appspot.com/qdesignertaskmenuextension.html">QDesignerTaskMenuExtension</a>。<i>Qt Designer</i>的行为是一样的具有多页的容器，一个成员表，属性表或任务菜单中的延期申请是否相关。</p>
+<p>该<a href="qextensionfactory.html" tppabs="http://pyqt4doc.appspot.com/qextensionfactory.html">QExtensionFactory</a>类提供了一个标准的扩展工厂，并且也可以用作用于定义扩展工厂的接口。您可以创建一个新的<a href="qextensionfactory.html" tppabs="http://pyqt4doc.appspot.com/qextensionfactory.html">QExtensionFactory</a>并重新实现<a href="qextensionfactory.html#createExtension" tppabs="http://pyqt4doc.appspot.com/qextensionfactory.html#createExtension">QExtensionFactory.createExtension</a>（）函数。例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span> <span class="operator">*</span>ANewExtensionFactory<span class="operator">.</span>createExtension(<span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span> <span class="operator">*</span>object<span class="operator">,</span>
+         <span class="keyword">const</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> <span class="operator">&amp;</span>iid<span class="operator">,</span> <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span> <span class="operator">*</span>parent) <span class="keyword">const</span>
+ {
+     <span class="keyword">if</span> (iid <span class="operator">!</span><span class="operator">=</span> Q_TYPEID(<span class="type">QDesignerContainerExtension</span>))
+         <span class="keyword">return</span> <span class="number">0</span>;
+
+     <span class="keyword">if</span> (MyCustomWidget <span class="operator">*</span>widget <span class="operator">=</span> qobject_cast<span class="operator">&lt;</span>MyCustomWidget<span class="operator">*</span><span class="operator">&gt;</span>
+            (object))
+         <span class="keyword">return</span> <span class="keyword">new</span> MyContainerExtension(widget<span class="operator">,</span> parent);
+
+     <span class="keyword">return</span> <span class="number">0</span>;
+ }
+</pre>
+<p>或者您可以使用现有的工厂，扩大<a href="qextensionfactory.html#createExtension" tppabs="http://pyqt4doc.appspot.com/qextensionfactory.html#createExtension">QExtensionFactory.createExtension</a>（ ）函数，使工厂能够创建一个容器扩展为好。例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span> <span class="operator">*</span>AGeneralExtensionFactory<span class="operator">.</span>createExtension(<span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span> <span class="operator">*</span>object<span class="operator">,</span>
+         <span class="keyword">const</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> <span class="operator">&amp;</span>iid<span class="operator">,</span> <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span> <span class="operator">*</span>parent) <span class="keyword">const</span>
+ {
+     MyCustomWidget <span class="operator">*</span>widget <span class="operator">=</span> qobject_cast<span class="operator">&lt;</span>MyCustomWidget<span class="operator">*</span><span class="operator">&gt;</span>(object);
+
+     <span class="keyword">if</span> (widget <span class="operator">&amp;</span><span class="operator">&amp;</span> (iid <span class="operator">=</span><span class="operator">=</span> Q_TYPEID(<span class="type"><a href="qdesignertaskmenuextension.html" tppabs="http://pyqt4doc.appspot.com/qdesignertaskmenuextension.html">QDesignerTaskMenuExtension</a></span>))) {
+         <span class="keyword">return</span> <span class="keyword">new</span> MyTaskMenuExtension(widget<span class="operator">,</span> parent);
+
+     } <span class="keyword">else</span> <span class="keyword">if</span> (widget <span class="operator">&amp;</span><span class="operator">&amp;</span> (iid <span class="operator">=</span><span class="operator">=</span> Q_TYPEID(<span class="type">QDesignerContainerExtension</span>))) {
+         <span class="keyword">return</span> <span class="keyword">new</span> MyContainerExtension(widget<span class="operator">,</span> parent);
+
+     } <span class="keyword">else</span> {
+         <span class="keyword">return</span> <span class="number">0</span>;
+     }
+ }
+</pre>
+<p>对于使用QDesignerContainerExtension类的完整示例，请参见<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/designer-containerextension.html">Container
+Extension example</a>。该示例显示了如何创建一个自定义多页插件<i>Qt Designer</i>。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDesignerContainerExtension"></a>QDesignerContainerExtension.__init__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="QDesignerContainerExtension-2"></a>QDesignerContainerExtension.__init__ (<i>self</i>, <a href="qdesignercontainerextension.html" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html">QDesignerContainerExtension</a>)</h3>
+<h3 class="fn">
+<a name="addWidget"></a>QDesignerContainerExtension.addWidget (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>widget</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>将给定<i>page</i>到容器将其附加到页面的扩展名的列表。</p>
+<p><b>See also</b> <a href="qdesignercontainerextension.html#insertWidget" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#insertWidget">insertWidget</a>（ ）<a href="qdesignercontainerextension.html#remove" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#remove">remove</a>（）和<a href="qdesignercontainerextension.html#widget" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#widget">widget</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="count"></a>int QDesignerContainerExtension.count (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回容器中的页数。</p>
+
+
+<h3 class="fn">
+<a name="currentIndex"></a>int QDesignerContainerExtension.currentIndex (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回容器中的当前选择的页的索引。</p>
+<p><b>See also</b> <a href="qdesignercontainerextension.html#setCurrentIndex" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#setCurrentIndex">setCurrentIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertWidget"></a>QDesignerContainerExtension.insertWidget (<i>self</i>, int <i>index</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>widget</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>将给定<i>page</i>到容器通过在给定的插入它<i>index</i>在页面的扩展名的列表。</p>
+<p><b>See also</b> <a href="qdesignercontainerextension.html#addWidget" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#addWidget">addWidget</a>（ ）<a href="qdesignercontainerextension.html#remove" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#remove">remove</a>（）和<a href="qdesignercontainerextension.html#widget" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#widget">widget</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="remove"></a>QDesignerContainerExtension.remove (<i>self</i>, int <i>index</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>移除网页在给定的<i>index</i>从页面的扩展名的列表。</p>
+<p><b>See also</b> <a href="qdesignercontainerextension.html#addWidget" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#addWidget">addWidget</a>（）和<a href="qdesignercontainerextension.html#insertWidget" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#insertWidget">insertWidget</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCurrentIndex"></a>QDesignerContainerExtension.setCurrentIndex (<i>self</i>, int <i>index</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>设置当前所选页面中的容器是网页在给定的<i>index</i>在页面的扩展名的列表。</p>
+<p><b>See also</b> <a href="qdesignercontainerextension.html#currentIndex" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#currentIndex">currentIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="widget"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QDesignerContainerExtension.widget (<i>self</i>, int <i>index</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回页面在给定的<i>index</i>在页面的扩展名的列表。</p>
+<p><b>See also</b> <a href="qdesignercontainerextension.html#addWidget" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#addWidget">addWidget</a>（）和<a href="qdesignercontainerextension.html#insertWidget" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html#insertWidget">insertWidget</a>（ ） 。</p>
+<h3 class="fn">
+<a name="__len__"></a> QDesignerContainerExtension.__len__ (<i>self</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

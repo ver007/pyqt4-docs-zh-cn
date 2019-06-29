@@ -1,0 +1,605 @@
+﻿<html>
+<head>
+<title>QDBusConnection Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDBusConnection Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdbus.html">QtDBus</a> module]</sup></sup>
+</h1>
+<p>该QDBusConnection类代表到D - Bus总线守护进程的连接。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qdbusconnection.html#BusType-enum" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#BusType-enum">BusType</a></b> { SessionBus, SystemBus, ActivationBus }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdbusconnection-connectioncapabilities.html">ConnectionCapabilities</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qdbusconnection.html#ConnectionCapability-enum" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#ConnectionCapability-enum">ConnectionCapability</a></b> { UnixFileDescriptorPassing }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qdbusconnection.html#RegisterOption-enum" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#RegisterOption-enum">RegisterOption</a></b> { ExportAdaptors, ExportScriptableSlots, ExportScriptableSignals, ExportScriptableProperties, ..., ExportChildObjects }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdbusconnection-registeroptions.html">RegisterOptions</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qdbusconnection.html#UnregisterMode-enum" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#UnregisterMode-enum">UnregisterMode</a></b> { UnregisterNode, UnregisterTree }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusconnection.html#QDBusConnection" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#QDBusConnection">__init__</a></b> (<i>self</i>, QString <i>name</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusconnection.html#QDBusConnection-2" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#QDBusConnection-2">__init__</a></b> (<i>self</i>, QDBusConnection <i>other</i>)</li>
+<li>
+<div class="fn"></div>QDBusPendingCall <b><a href="qdbusconnection.html#asyncCall" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#asyncCall">asyncCall</a></b> (<i>self</i>, QDBusMessage <i>message</i>, int <i>timeout</i> = -1)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdbusconnection.html#baseService" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#baseService">baseService</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDBusMessage <b><a href="qdbusconnection.html#call" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#call">call</a></b> (<i>self</i>, QDBusMessage <i>message</i>, QDBus.CallMode <i>mode</i> = QDBus.Block, int <i>timeout</i> = -1)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdbusconnection.html#callWithCallback" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#callWithCallback">callWithCallback</a></b> (<i>self</i>, QDBusMessage <i>message</i>, QObject <i>receiver</i>, SLOT() <i>returnMethod</i>, SLOT() <i>errorMethod</i>, int <i>timeout</i> = -1)</li>
+<li>
+<div class="fn"></div>object <b><a href="qdbusconnection.html#callWithCallback-2" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#callWithCallback-2">callWithCallback</a></b> (<i>self</i>, QDBusMessage <i>message</i>, callable <i>returnMethod</i>, callable <i>errorMethod</i>, int <i>timeout</i> = -1)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdbusconnection.html#callWithCallback-3" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#callWithCallback-3">callWithCallback</a></b> (<i>self</i>, QDBusMessage <i>message</i>, QObject <i>receiver</i>, SLOT() <i>slot</i>, int <i>timeout</i> = -1)</li>
+<li>
+<div class="fn"></div>object <b><a href="qdbusconnection.html#callWithCallback-4" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#callWithCallback-4">callWithCallback</a></b> (<i>self</i>, QDBusMessage <i>message</i>, callable <i>slot</i>, int <i>timeout</i> = -1)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdbusconnection.html#connect" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#connect">connect</a></b> (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>, QObject <i>receiver</i>, SLOT() <i>slot</i>)</li>
+<li>
+<div class="fn"></div>object <b><a href="qdbusconnection.html#connect-2" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#connect-2">connect</a></b> (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>, callable <i>slot</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdbusconnection.html#connect-3" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#connect-3">connect</a></b> (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>, QString <i>signature</i>, QObject <i>receiver</i>, SLOT() <i>slot</i>)</li>
+<li>
+<div class="fn"></div>object <b><a href="qdbusconnection.html#connect-4" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#connect-4">connect</a></b> (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>, QString <i>signature</i>, callable <i>slot</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdbusconnection.html#connect-5" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#connect-5">connect</a></b> (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>, QStringList <i>argumentMatch</i>, QString <i>signature</i>, QObject <i>receiver</i>, SLOT() <i>slot</i>)</li>
+<li>
+<div class="fn"></div>object <b><a href="qdbusconnection.html#connect-6" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#connect-6">connect</a></b> (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>, QStringList <i>argumentMatch</i>, QString <i>signature</i>, callable <i>slot</i>)</li>
+<li>
+<div class="fn"></div>ConnectionCapabilities <b><a href="qdbusconnection.html#connectionCapabilities" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#connectionCapabilities">connectionCapabilities</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdbusconnection.html#disconnect" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#disconnect">disconnect</a></b> (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>, QObject <i>receiver</i>, SLOT() <i>slot</i>)</li>
+<li>
+<div class="fn"></div>object <b><a href="qdbusconnection.html#disconnect-2" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#disconnect-2">disconnect</a></b> (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>, callable <i>slot</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdbusconnection.html#disconnect-3" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#disconnect-3">disconnect</a></b> (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>, QString <i>signature</i>, QObject <i>receiver</i>, SLOT() <i>slot</i>)</li>
+<li>
+<div class="fn"></div>object <b><a href="qdbusconnection.html#disconnect-4" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#disconnect-4">disconnect</a></b> (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>, QString <i>signature</i>, callable <i>slot</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdbusconnection.html#disconnect-5" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#disconnect-5">disconnect</a></b> (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>, QStringList <i>argumentMatch</i>, QString <i>signature</i>, QObject <i>receiver</i>, SLOT() <i>slot</i>)</li>
+<li>
+<div class="fn"></div>object <b><a href="qdbusconnection.html#disconnect-6" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#disconnect-6">disconnect</a></b> (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>, QStringList <i>argumentMatch</i>, QString <i>signature</i>, callable <i>slot</i>)</li>
+<li>
+<div class="fn"></div>QDBusConnectionInterface <b><a href="qdbusconnection.html#interface" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#interface">interface</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdbusconnection.html#isConnected" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#isConnected">isConnected</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDBusError <b><a href="qdbusconnection.html#lastError" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#lastError">lastError</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdbusconnection.html#name" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#name">name</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QObject <b><a href="qdbusconnection.html#objectRegisteredAt" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#objectRegisteredAt">objectRegisteredAt</a></b> (<i>self</i>, QString <i>path</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdbusconnection.html#registerObject" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#registerObject">registerObject</a></b> (<i>self</i>, QString <i>path</i>, QObject <i>object</i>, RegisterOptions <i>options</i> = QDBusConnection.ExportAdaptors)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdbusconnection.html#registerService" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#registerService">registerService</a></b> (<i>self</i>, QString <i>serviceName</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdbusconnection.html#send" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#send">send</a></b> (<i>self</i>, QDBusMessage <i>message</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusconnection.html#unregisterObject" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#unregisterObject">unregisterObject</a></b> (<i>self</i>, QString <i>path</i>, UnregisterMode <i>mode</i> = QDBusConnection.UnregisterNode)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdbusconnection.html#unregisterService" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#unregisterService">unregisterService</a></b> (<i>self</i>, QString <i>serviceName</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QDBusConnection <b><a href="qdbusconnection.html#connectToBus" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#connectToBus">connectToBus</a></b> (BusType <i>type</i>, QString <i>name</i>)</li>
+<li>
+<div class="fn"></div>QDBusConnection <b><a href="qdbusconnection.html#connectToBus-2" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#connectToBus-2">connectToBus</a></b> (QString <i>address</i>, QString <i>name</i>)</li>
+<li>
+<div class="fn"></div>QDBusConnection <b><a href="qdbusconnection.html#connectToPeer" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#connectToPeer">connectToPeer</a></b> (QString <i>address</i>, QString <i>name</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusconnection.html#disconnectFromBus" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#disconnectFromBus">disconnectFromBus</a></b> (QString <i>name</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusconnection.html#disconnectFromPeer" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#disconnectFromPeer">disconnectFromPeer</a></b> (QString <i>name</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qdbusconnection.html#localMachineId" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#localMachineId">localMachineId</a></b> ()</li>
+<li>
+<div class="fn"></div>QDBusConnection <b><a href="qdbusconnection.html#sender" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#sender">sender</a></b> ()</li>
+<li>
+<div class="fn"></div>QDBusConnection <b><a href="qdbusconnection.html#sessionBus" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#sessionBus">sessionBus</a></b> ()</li>
+<li>
+<div class="fn"></div>QDBusConnection <b><a href="qdbusconnection.html#systemBus" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#systemBus">systemBus</a></b> ()</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDBusConnection类代表到D - Bus总线守护进程的连接。</p>
+<p>这个类是在一个D-Bus的会话初始点。使用它，你可以访问远程对象，接口，连接远程信号传送到对象的插槽;注册对象，等等。</p>
+<p>使用创建的D-Bus连接的<a href="qdbusconnection.html#connectToBus" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#connectToBus">connectToBus</a>（ ）函数，该函数打开一个到服务器守护程序的连接，并执行初始握手，与相关联的名称连接。进一步尝试使用相同的名称来连接将返回相同的连接。</p>
+<p>的连接，然后扯下使用<a href="qdbusconnection.html#disconnectFromBus" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#disconnectFromBus">disconnectFromBus</a>（）函数。</p>
+<p>一旦断开连接，调用<a href="qdbusconnection.html#connectToBus" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#connectToBus">connectToBus</a>（ ）将不会重新建立连接，必须创建一个新的QDBusConnection实例。</p>
+<p>为了方便的两个最常见的连接类型，<a href="qdbusconnection.html#sessionBus" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#sessionBus">sessionBus</a>（）和<a href="qdbusconnection.html#systemBus" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#systemBus">systemBus</a>（ ）函数返回打开连接到会话服务器守护程序和系统服务器守护程序，分别。这些连接被打开第一次使用时和关闭时的<a href="qcoreapplication.html" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html">QCoreApplication</a>析构函数被执行。</p>
+<p>D-Bus的还支持对等网络连接，而不需要一个总线服务器守护程序。使用这种设备，两个应用程序可以相互交谈并交换信息。这可以通过传递一个地址来实现<a href="qdbusconnection.html#connectToBus" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#connectToBus">connectToBus</a>（ ）函数，它是由另一个D-Bus的应用程序中使用QDBusServer打开。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="BusType-enum"></a>QDBusConnection.BusType</h3>
+<p>指定的总线连接的类型。有效的总线类型包括：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusConnection.SessionBus</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">会话总线，与正在运行的桌面会话相关联</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusConnection.SystemBus</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">系统总线，搭配全系统进程进行通信</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusConnection.ActivationBus</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">激活总线， “别名”为启动该服务总线</td>
+</tr>
+</table>
+<p>在会话总线，可以由共享同一桌面会话（因此得名）同一用户找到其他应用程序。在系统总线，但是，对于整个系统共享流程通常发现。</p>
+
+
+<h3 class="fn">
+<a name="ConnectionCapability-enum"></a>QDBusConnection.ConnectionCapability</h3>
+<p>这个枚举变量描述了一个D-Bus的连接可用的功能。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDBusConnection.UnixFileDescriptorPassing</tt>
+</td>
+<td class="topAlign"><tt>0x0001</tt></td>
+<td class="topAlign">能够通过Unix的文件描述符给其他进程（见<a href="qdbusunixfiledescriptor.html" tppabs="http://pyqt4doc.appspot.com/qdbusunixfiledescriptor.html">QDBusUnixFileDescriptor</a>）</td>
+</tr>
+</table>
+<p>这个枚举被引入或修改的Qt 4.8 。</p>
+<p>该ConnectionCapabilities类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cConnectionCapability\u003e 。它存储ConnectionCapability值的或组合。</p>
+<p><b>See also</b> <a href="qdbusconnection.html#connectionCapabilities" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#connectionCapabilities">connectionCapabilities</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="RegisterOption-enum"></a>QDBusConnection.RegisterOption</h3>
+<p>指定与连接对象注册的选项。可能的值有：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusConnection.ExportAdaptors</tt></td>
+<td class="topAlign"><tt>0x01</tt></td>
+<td class="topAlign">导出适配器在这个对象中找到的内容</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDBusConnection.ExportScriptableSlots</tt>
+</td>
+<td class="topAlign"><tt>0x10</tt></td>
+<td class="topAlign">导出此对象的可编写脚本的插槽</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDBusConnection.ExportScriptableSignals</tt>
+</td>
+<td class="topAlign"><tt>0x20</tt></td>
+<td class="topAlign">导出此对象的脚本化的信号</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDBusConnection.ExportScriptableProperties</tt>
+</td>
+<td class="topAlign"><tt>0x40</tt></td>
+<td class="topAlign">导出此对象的脚本属性</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDBusConnection.ExportScriptableInvokables</tt>
+</td>
+<td class="topAlign"><tt>0x80</tt></td>
+<td class="topAlign">导出此对象的可编写脚本invokables</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDBusConnection.ExportScriptableContents</tt>
+</td>
+<td class="topAlign"><tt>0xf0</tt></td>
+<td class="topAlign">简写形式ExportScriptableSlots | ExportScriptableSignals | ExportScriptableProperties</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDBusConnection.ExportNonScriptableSlots</tt>
+</td>
+<td class="topAlign"><tt>0x100</tt></td>
+<td class="topAlign">导出此对象的非脚本化的插槽</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDBusConnection.ExportNonScriptableSignals</tt>
+</td>
+<td class="topAlign"><tt>0x200</tt></td>
+<td class="topAlign">导出此对象的非脚本化的信号</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDBusConnection.ExportNonScriptableProperties</tt>
+</td>
+<td class="topAlign"><tt>0x400</tt></td>
+<td class="topAlign">导出此对象的非脚本化的属性</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDBusConnection.ExportNonScriptableInvokables</tt>
+</td>
+<td class="topAlign"><tt>0x800</tt></td>
+<td class="topAlign">导出此对象的非脚本化的invokables</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDBusConnection.ExportNonScriptableContents</tt>
+</td>
+<td class="topAlign"><tt>0xf00</tt></td>
+<td class="topAlign">简写形式ExportNonScriptableSlots | ExportNonScriptableSignals | ExportNonScriptableProperties</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusConnection.ExportAllSlots</tt></td>
+<td class="topAlign"><tt>ExportScriptableSlots |
+ExportNonScriptableSlots</tt></td>
+<td class="topAlign">导出所有该对象的插槽</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDBusConnection.ExportAllSignals</tt>
+</td>
+<td class="topAlign"><tt>ExportScriptableSignals |
+ExportNonScriptableSignals</tt></td>
+<td class="topAlign">导出所有该对象的信号</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDBusConnection.ExportAllProperties</tt>
+</td>
+<td class="topAlign"><tt>ExportScriptableProperties |
+ExportNonScriptableProperties</tt></td>
+<td class="topAlign">导出所有的此对象的属性</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDBusConnection.ExportAllInvokables</tt>
+</td>
+<td class="topAlign"><tt>ExportScriptableInvokables |
+ExportNonScriptableInvokables</tt></td>
+<td class="topAlign">导出所有该对象的invokables</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDBusConnection.ExportAllContents</tt>
+</td>
+<td class="topAlign"><tt>ExportScriptableContents |
+ExportNonScriptableContents</tt></td>
+<td class="topAlign">导出所有该对象的内容</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDBusConnection.ExportChildObjects</tt>
+</td>
+<td class="topAlign"><tt>0x1000</tt></td>
+<td class="topAlign">导出此对象的子对象</td>
+</tr>
+</table>
+<p>该RegisterOptions类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cRegisterOption\u003e 。它存储使用registerOption值的或组合。</p>
+<p><b>See also</b> <a href="qdbusconnection.html#registerObject" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#registerObject">registerObject</a>（ ）<a href="qdbusabstractadaptor.html" tppabs="http://pyqt4doc.appspot.com/qdbusabstractadaptor.html">QDBusAbstractAdaptor</a>和<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/usingadaptors.html">Using adaptors</a>。</p>
+
+
+<h3 class="fn">
+<a name="UnregisterMode-enum"></a>QDBusConnection.UnregisterMode</h3>
+<p>该模式用于注销一个对象路径：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusConnection.UnregisterNode</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">注销这个节点只有：不取消注册子对象</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDBusConnection.UnregisterTree</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">注销此节点及其所有子树</td>
+</tr>
+</table>
+<p>但是请注意，如果该对象被注册了<a href="qdbusconnection.html#RegisterOption-enum" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#RegisterOption-enum">ExportChildObjects</a>选项， UnregisterNode将注销子对象了。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDBusConnection"></a>QDBusConnection.__init__ (<i>self</i>, QString <i>name</i>)</h3>
+<p>创建<a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a>附加到名称与连接对象<i>name</i>。</p>
+<p>这不打开连接。你必须调用<a href="qdbusconnection.html#connectToBus" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#connectToBus">connectToBus</a>（）将其打开。</p>
+
+
+<h3 class="fn">
+<a name="QDBusConnection-2"></a>QDBusConnection.__init__ (<i>self</i>, <a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a> <i>other</i>)</h3>
+<p>创建的副本<i>other</i>连接。</p>
+
+
+<h3 class="fn">
+<a name="asyncCall"></a><a href="qdbuspendingcall.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingcall.html">QDBusPendingCall</a> QDBusConnection.asyncCall (<i>self</i>, <a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a> <i>message</i>, int <i>timeout</i> = -1)</h3>
+<p>发送<i>message</i>在紧接该连接并返回。此功能适用于方法只调用。它返回类型的对象<a href="qdbuspendingcall.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingcall.html">QDBusPendingCall</a>它可以被用来跟踪应答的状态。</p>
+<p>如果没有答复内收到<i>timeout</i>毫秒为单位，自动误差将交付指示呼叫期满。默认<i>timeout</i>是-1，这将被替换为一个实现定义的值，是适合进程间通信（通常25秒） 。此超时也是在等待QDBusPendingCall.waitForFinished （ ）的上限。</p>
+<p>请参阅<a href="qdbusabstractinterface.html#asyncCall" tppabs="http://pyqt4doc.appspot.com/qdbusabstractinterface.html#asyncCall">QDBusInterface.asyncCall</a>（ ）函数用于发出呼叫的一个更友好的方式。</p>
+<p>此功能被引入Qt的4.5 。</p>
+
+
+<h3 class="fn">
+<a name="baseService"></a>QString QDBusConnection.baseService (<i>self</i>)</h3>
+<p>返回此连接的唯一连接的名称，如果这<a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a>对象连接，或空<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>否则。</p>
+<p>唯一的连接名称是一个字符串形式“ ： x.xxx ” （其中x是十进制数字） ，是由D-Bus的服务器守护程序在连接时分配。它唯一标识此客户端的总线。</p>
+<p>这个函数返回一个空的<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>为对等连接。</p>
+
+
+<h3 class="fn">
+<a name="call"></a><a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a> QDBusConnection.call (<i>self</i>, <a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a> <i>message</i>, <a href="qdbus.html#CallMode-enum" tppabs="http://pyqt4doc.appspot.com/qdbus.html#CallMode-enum">QDBus.CallMode</a> <i>mode</i> = QDBus.Block, int <i>timeout</i> = -1)</h3>
+<p>发送<i>message</i>在这方面，板块，等待答复，顶多<i>timeout</i>毫秒。此功能适用于方法只调用。它返回的应答消息作为它的返回值，这将是两种类型的<a href="qdbusmessage.html#MessageType-enum" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#MessageType-enum">QDBusMessage.ReplyMessage</a>
+or <a href="qdbusmessage.html#MessageType-enum" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#MessageType-enum">QDBusMessage.ErrorMessage</a>。</p>
+<p>如果没有答复内收到<i>timeout</i>毫秒为单位，自动误差将交付指示呼叫期满。默认<i>timeout</i>是-1，这将被替换为一个实现定义的值，是适合进程间通信（通常25秒） 。</p>
+<p>请参阅<a href="qdbusabstractinterface.html#call" tppabs="http://pyqt4doc.appspot.com/qdbusabstractinterface.html#call">QDBusInterface.call</a>（ ）函数用于发出呼叫的一个更友好的方式。</p>
+<p><b>Warning:</b> If <i>mode</i> is <a href="qdbus.html#CallMode-enum" tppabs="http://pyqt4doc.appspot.com/qdbus.html#CallMode-enum">QDBus.BlockWithGui</a>，此功能将重新进入，以等待答复Qt的事件循环。在等待期间，它可能会带来信号和其他方法调用您的应用程序。因此，它必须准备处理重入每当一个呼叫被置于与（）的调用。</p>
+
+
+<h3 class="fn">
+<a name="callWithCallback"></a>bool QDBusConnection.callWithCallback (<i>self</i>, <a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a> <i>message</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>receiver</i>, SLOT() <i>returnMethod</i>, SLOT() <i>errorMethod</i>, int <i>timeout</i> = -1)</h3>
+<p>发送<i>message</i>在紧接该连接并返回。当应答被接收时，该方法<i>returnMethod</i>被称为在<i>receiver</i>对象。如果发生错误，则该方法<i>errorMethod</i>将被调用来代替。</p>
+<p>如果没有答复内收到<i>timeout</i>毫秒为单位，自动误差将交付指示呼叫期满。默认<i>timeout</i>是-1，这将被替换为一个实现定义的值，是适合进程间通信（通常25秒） 。</p>
+<p>此功能适用于方法只调用。这是保证的时隙将被调用一次的答复，只要在参数类型匹配，并且不会发生错误。</p>
+<p>返回True如果消息被发送，或假，如果无法发送邮件。</p>
+
+
+<h3 class="fn">
+<a name="callWithCallback-2"></a>object QDBusConnection.callWithCallback (<i>self</i>, <a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a> <i>message</i>, callable <i>returnMethod</i>, callable <i>errorMethod</i>, int <i>timeout</i> = -1)</h3>
+<p>此功能已被弃用。</p>
+<p>这是一个重载函数。</p>
+<p>发送<i>message</i>在紧接该连接并返回。当应答被接收时，该方法<i>returnMethod</i>被称为在<i>receiver</i>对象。</p>
+<p>此功能适用于方法只调用。这是保证的时隙将被调用一次的答复，只要在参数类型匹配，并且不会发生错误。</p>
+<p>这个函数是危险的，因为它不能报告错误，包括超时期满。</p>
+<p>返回True如果消息被发送，或假，如果无法发送邮件。</p>
+
+
+<h3 class="fn">
+<a name="callWithCallback-3"></a>bool QDBusConnection.callWithCallback (<i>self</i>, <a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a> <i>message</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>receiver</i>, SLOT() <i>slot</i>, int <i>timeout</i> = -1)</h3>
+<h3 class="fn">
+<a name="callWithCallback-4"></a>object QDBusConnection.callWithCallback (<i>self</i>, <a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a> <i>message</i>, callable <i>slot</i>, int <i>timeout</i> = -1)</h3>
+<h3 class="fn">
+<a name="connect"></a>bool QDBusConnection.connect (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>receiver</i>, SLOT() <i>slot</i>)</h3>
+<p>连接由指定的信号<i>service</i>，<i>path</i>，<i>interface</i>和<i>name</i>参数到槽<i>slot</i>在对象<i>receiver</i>。该参数<i>service</i>和<i>path</i>可以为空，表示到的（任何信号的连接<i>interface</i>，<i>name</i>）对，从任何远程应用程序。</p>
+<p>返回True如果连接成功。</p>
+<p><b>Warning:</b>该信号将只被传递到时隙，如果参数匹配。该验证可以做到在接收到信号，只有当，而不是在连接时间。</p>
+
+
+<h3 class="fn">
+<a name="connect-2"></a>object QDBusConnection.connect (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>, callable <i>slot</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>该信号连接到槽<i>slot</i>在对象<i>receiver</i>。不同于以往的<a href="qdbusconnection.html#connect" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#connect">connect</a>（）过载时，此功能允许一个使用指定参数签名要连接的<i>signature</i>变量。该函数将验证这个签名可以传送到指定的插槽由<i>slot</i>并返回，否则返回False 。</p>
+<p>返回True如果连接成功。</p>
+<p><b>Note:</b>此功能验证信号的签名相匹配的插槽的参数，但它不会验证与远程服务给定的签名存在的实际信号。</p>
+
+
+<h3 class="fn">
+<a name="connect-3"></a>bool QDBusConnection.connect (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>, QString <i>signature</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>receiver</i>, SLOT() <i>slot</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>该信号连接到槽<i>slot</i>在对象<i>receiver</i>。不同于以往的<a href="qdbusconnection.html#connect" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#connect">connect</a>（）过载时，此功能允许一个使用指定参数签名要连接的<i>signature</i>变量。该函数将验证这个签名可以传送到指定的插槽由<i>slot</i>并返回，否则返回False 。</p>
+<p>该<i>argumentMatch</i>参数列出了要匹配的字符串参数，按顺序。需要注意的是，要匹配一个空字符串，你需要传递一个<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>那是空的，但不为空（即，<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>（“” ））。空<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>跳过该位置匹配。</p>
+<p>返回True如果连接成功。</p>
+<p><b>Note:</b>此功能验证信号的签名相匹配的插槽的参数，但它不会验证与远程服务给定的签名存在的实际信号。</p>
+<p>此功能被引入Qt的4.6 。</p>
+
+
+<h3 class="fn">
+<a name="connect-4"></a>object QDBusConnection.connect (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>, QString <i>signature</i>, callable <i>slot</i>)</h3>
+<h3 class="fn">
+<a name="connect-5"></a>bool QDBusConnection.connect (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>, QStringList <i>argumentMatch</i>, QString <i>signature</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>receiver</i>, SLOT() <i>slot</i>)</h3>
+<h3 class="fn">
+<a name="connect-6"></a>object QDBusConnection.connect (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>, QStringList <i>argumentMatch</i>, QString <i>signature</i>, callable <i>slot</i>)</h3>
+<h3 class="fn">
+<a name="connectionCapabilities"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdbusconnection-connectioncapabilities.html">ConnectionCapabilities</a> QDBusConnection.connectionCapabilities (<i>self</i>)</h3>
+<p>返回此连接的能力，谈判与总线的服务器或对等。如果这<a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a>没有连接，这个函数没有返回的能力。</p>
+<p>此功能被引入Qt的4.8 。</p>
+
+
+<h3 class="fn">
+<a name="connectToBus"></a><a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a> QDBusConnection.connectToBus (<a href="qdbusconnection.html#BusType-enum" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#BusType-enum">BusType</a> <i>type</i>, QString <i>name</i>)</h3>
+<p>打开型的连接<i>type</i>对已知的总线和联营公司与它的连接名称中的一个<i>name</i>。返回<a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a>与该连接相关联的对象。</p>
+
+
+<h3 class="fn">
+<a name="connectToBus-2"></a><a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a> QDBusConnection.connectToBus (QString <i>address</i>, QString <i>name</i>)</h3>
+<p>打开上的地址到私有总线的连接<i>address</i>和与它相关联的连接名称<i>name</i>。返回<a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a>与该连接相关联的对象。</p>
+
+
+<h3 class="fn">
+<a name="connectToPeer"></a><a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a> QDBusConnection.connectToPeer (QString <i>address</i>, QString <i>name</i>)</h3>
+<p>打开上地址的对等连接<i>address</i>和与它相关联的连接名称<i>name</i>。返回<a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a>与该连接相关联的对象。</p>
+<p>此功能被引入Qt的4.8 。</p>
+
+
+<h3 class="fn">
+<a name="disconnect"></a>bool QDBusConnection.disconnect (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>receiver</i>, SLOT() <i>slot</i>)</h3>
+<p>断开由指定的信号<i>service</i>，<i>path</i>，<i>interface</i>和<i>name</i>从槽参数<i>slot</i>在对象<i>receiver</i>。作为传递给该参数必须相同<a href="qdbusconnection.html#connect" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#connect">connect</a>（）函数。</p>
+<p>返回True如果断开成功。</p>
+
+
+<h3 class="fn">
+<a name="disconnect-2"></a>object QDBusConnection.disconnect (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>, callable <i>slot</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>断开由指定的信号<i>service</i>，<i>path</i>，<i>interface</i>，<i>name</i>和<i>signature</i>从槽参数<i>slot</i>在对象<i>receiver</i>。作为传递给该参数必须相同<a href="qdbusconnection.html#connect" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#connect">connect</a>（）函数。</p>
+<p>返回True如果断开成功。</p>
+
+
+<h3 class="fn">
+<a name="disconnect-3"></a>bool QDBusConnection.disconnect (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>, QString <i>signature</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>receiver</i>, SLOT() <i>slot</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>断开由指定的信号<i>service</i>，<i>path</i>，<i>interface</i>，<i>name</i>，<i>argumentMatch</i>和<i>signature</i>从槽参数<i>slot</i>在对象<i>receiver</i>。作为传递给该参数必须相同<a href="qdbusconnection.html#connect" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#connect">connect</a>（）函数。</p>
+<p>返回True如果断开成功。</p>
+<p>此功能被引入Qt的4.6 。</p>
+
+
+<h3 class="fn">
+<a name="disconnect-4"></a>object QDBusConnection.disconnect (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>, QString <i>signature</i>, callable <i>slot</i>)</h3>
+<h3 class="fn">
+<a name="disconnect-5"></a>bool QDBusConnection.disconnect (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>, QStringList <i>argumentMatch</i>, QString <i>signature</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>receiver</i>, SLOT() <i>slot</i>)</h3>
+<h3 class="fn">
+<a name="disconnect-6"></a>object QDBusConnection.disconnect (<i>self</i>, QString <i>service</i>, QString <i>path</i>, QString <i>interface</i>, QString <i>name</i>, QStringList <i>argumentMatch</i>, QString <i>signature</i>, callable <i>slot</i>)</h3>
+<h3 class="fn">
+<a name="disconnectFromBus"></a>QDBusConnection.disconnectFromBus (QString <i>name</i>)</h3>
+<p>关闭的名字总线连接<i>name</i>。</p>
+<p>需要注意的是，如果仍有<a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a>使用相同的连接相关联的对象，该连接不会被关闭，直到所有引用都将被丢弃。但是，可以使用创建没有进一步的引用<a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a>构造函数。</p>
+
+
+<h3 class="fn">
+<a name="disconnectFromPeer"></a>QDBusConnection.disconnectFromPeer (QString <i>name</i>)</h3>
+<p>关闭的名义对等连接<i>name</i>。</p>
+<p>需要注意的是，如果仍有<a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a>使用相同的连接相关联的对象，该连接不会被关闭，直到所有引用都将被丢弃。但是，可以使用创建没有进一步的引用<a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a>构造函数。</p>
+<p>此功能被引入Qt的4.8 。</p>
+
+
+<h3 class="fn">
+<a name="interface"></a><a href="qdbusconnectioninterface.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnectioninterface.html">QDBusConnectionInterface</a> QDBusConnection.interface (<i>self</i>)</h3>
+<p>返回<a href="qdbusconnectioninterface.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnectioninterface.html">QDBusConnectionInterface</a>对象，表示该连接的D-Bus的服务器接口。</p>
+
+
+<h3 class="fn">
+<a name="isConnected"></a>bool QDBusConnection.isConnected (<i>self</i>)</h3>
+<p>返回True如果<a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a>对象连接。</p>
+
+
+<h3 class="fn">
+<a name="lastError"></a><a href="qdbuserror.html" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html">QDBusError</a> QDBusConnection.lastError (<i>self</i>)</h3>
+<p>返回所发生的这方面的最后一个错误。</p>
+<p>该功能提供了低级别的代码。如果你使用<a href="qdbusabstractinterface.html#call" tppabs="http://pyqt4doc.appspot.com/qdbusabstractinterface.html#call">QDBusInterface.call</a>（ ） ，错误代码是报告它的返回值。</p>
+<p><b>See also</b> <a href="qdbusinterface.html" tppabs="http://pyqt4doc.appspot.com/qdbusinterface.html">QDBusInterface</a>和<a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a>。</p>
+
+
+<h3 class="fn">
+<a name="localMachineId"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QDBusConnection.localMachineId ()</h3>
+<p>返回已知的D -Bus系统在本地机器的ID 。运行的D-总线的每个节点或主机具有一个唯一的标识符，该标识符可用于从其它主机相区别，如果它们共享资源，如文件系统。</p>
+<p>注意，在本地机器ID不保证是整个系统的靴子持久的，所以该标识符不应该被存储在持久性存储器（例如文件系统） 。它是保证只有在此引导会话的生命周期保持不变。</p>
+<p>此功能被引入Qt的4.8 。</p>
+
+
+<h3 class="fn">
+<a name="name"></a>QString QDBusConnection.name (<i>self</i>)</h3>
+<p>返回连接名称为这个连接，给出name参数来<a href="qdbusconnection.html#connectToBus" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#connectToBus">connectToBus</a>（ ） 。</p>
+<p>连接名称可以用来唯一标识实际的底层连接到总线。从一个单一的连接制作的复制品总是隐含共享底层的连接，从而将具有相同的连接名称。</p>
+<p>相反，两种连接方式具有不同的连接名称将永远既可以连接到不同的总线，或有不同的唯一的名称（如返回的<a href="qdbusconnection.html#baseService" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#baseService">baseService</a>（ ） ）的总线上。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qdbusconnection.html#connectToBus" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#connectToBus">connectToBus</a>（）和<a href="qdbusconnection.html#disconnectFromBus" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#disconnectFromBus">disconnectFromBus</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="objectRegisteredAt"></a><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> QDBusConnection.objectRegisteredAt (<i>self</i>, QString <i>path</i>)</h3>
+<p>返回注册到该对象<a href="qdbusconnection.html#registerObject" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#registerObject">registerObject</a>（ ）由给定的对象路径<i>path</i>。</p>
+
+
+<h3 class="fn">
+<a name="registerObject"></a>bool QDBusConnection.registerObject (<i>self</i>, QString <i>path</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>object</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdbusconnection-registeroptions.html">RegisterOptions</a> <i>options</i> = QDBusConnection.ExportAdaptors)</h3>
+<p>登记对象<i>object</i>在路径<i>path</i>如果注册成功则返回True。该<i>options</i>参数指定了对象<i>object</i>将通过D-Bus的暴露。</p>
+<p>此功能不会取代现有的对象：如果有已经在路径注册的对象<i>path</i>，这个函数将返回False 。使用<a href="qdbusconnection.html#unregisterObject" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#unregisterObject">unregisterObject</a>（ ）先注销它。</p>
+<p>你不能注册的对象为已注册的对象的子对象<a href="qdbusconnection.html#RegisterOption-enum" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#RegisterOption-enum">QDBusConnection.ExportChildObjects</a>。</p>
+
+
+<h3 class="fn">
+<a name="registerService"></a>bool QDBusConnection.registerService (<i>self</i>, QString <i>serviceName</i>)</h3>
+<p>尝试注册<i>serviceName</i>在D-Bus的服务器上，如果注册成功则返回True 。如果该名称已被其他应用程序的注册将失败。</p>
+<p><b>See also</b> <a href="qdbusconnection.html#unregisterService" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#unregisterService">unregisterService</a>（）和<a href="qdbusconnectioninterface.html#registerService" tppabs="http://pyqt4doc.appspot.com/qdbusconnectioninterface.html#registerService">QDBusConnectionInterface.registerService</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="send"></a>bool QDBusConnection.send (<i>self</i>, <a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a> <i>message</i>)</h3>
+<p>发送<i>message</i>在这方面，没有等待答复。本品适用于错误，信号和返回值，以及调用的返回值是没有必要的。</p>
+<p>返回True如果消息被排队成功，否则返回False。</p>
+
+
+<h3 class="fn">
+<a name="sender"></a><a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a> QDBusConnection.sender ()</h3>
+<p>返回发送的信号的连接，如果在调用通过激活一个时隙<a href="qdbus.html" tppabs="http://pyqt4doc.appspot.com/qdbus.html">QDBus</a>，否则返回0 。</p>
+<p><b>Note:</b>请避免此功能。这个函数不是线程安全的，所以如果有任何其他线程提供一个D-Bus的调用，此函数可能返回错误的连接。在新的代码，请用<a href="index.htm#connection" tppabs="http://pyqt4doc.appspot.com/qdbuscontext.html#connection">QDBusContext.connection</a>（ ） （请参阅类关于如何使用它的描述） 。</p>
+<p><b>Warning:</b>此功能不<a href="index.htm#reentrant" tppabs="http://pyqt4doc.appspot.com/threads-reentrancy.html#reentrant">reentrant</a>。</p>
+
+
+<h3 class="fn">
+<a name="sessionBus"></a><a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a> QDBusConnection.sessionBus ()</h3>
+<p>返回<a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a>对象打开与会话总线。这个函数返回的对象引用是有效的，直到应用程序终止，在这一点上的连接将被关闭和删除对象。</p>
+
+
+<h3 class="fn">
+<a name="systemBus"></a><a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a> QDBusConnection.systemBus ()</h3>
+<p>返回<a href="qdbusconnection.html" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html">QDBusConnection</a>打开对象与系统总线。这个函数返回的对象引用是有效的，直到<a href="qcoreapplication.html" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html">QCoreApplication</a>的析构函数被执行，当连接将被关闭和对象，删除。</p>
+
+
+<h3 class="fn">
+<a name="unregisterObject"></a>QDBusConnection.unregisterObject (<i>self</i>, QString <i>path</i>, <a href="qdbusconnection.html#UnregisterMode-enum" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#UnregisterMode-enum">UnregisterMode</a> <i>mode</i> = QDBusConnection.UnregisterNode)</h3>
+<p>注销注册到一个对象<a href="qdbusconnection.html#registerObject" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#registerObject">registerObject</a>（ ）由给定的对象路径<i>path</i>并且，如果<i>mode</i> is <a href="qdbusconnection.html#UnregisterMode-enum" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#UnregisterMode-enum">QDBusConnection.UnregisterTree</a>，它的所有子对象了。</p>
+<p>请注意，您不能注销了未与登记对象<a href="qdbusconnection.html#registerObject" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#registerObject">registerObject</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="unregisterService"></a>bool QDBusConnection.unregisterService (<i>self</i>, QString <i>serviceName</i>)</h3>
+<p>注销服务<i>serviceName</i>先前与注册<a href="qdbusconnection.html#registerService" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#registerService">registerService</a>（ ），如果成功则返回True。</p>
+<p><b>See also</b> <a href="qdbusconnection.html#registerService" tppabs="http://pyqt4doc.appspot.com/qdbusconnection.html#registerService">registerService</a>（）和<a href="qdbusconnectioninterface.html#unregisterService" tppabs="http://pyqt4doc.appspot.com/qdbusconnectioninterface.html#unregisterService">QDBusConnectionInterface.unregisterService</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

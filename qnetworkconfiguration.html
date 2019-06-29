@@ -1,0 +1,423 @@
+﻿<html>
+<head>
+<title>QNetworkConfiguration Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QNetworkConfiguration Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtnetwork.html">QtNetwork</a> module]</sup></sup>
+</h1>
+<p>该QNetworkConfiguration类提供的一个或多个接入点的配置的抽象。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qnetworkconfiguration.html#BearerType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#BearerType-enum">BearerType</a></b> { BearerUnknown, BearerEthernet, BearerWLAN, Bearer2G, ..., BearerWiMAX }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qnetworkconfiguration.html#Purpose-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#Purpose-enum">Purpose</a></b> { UnknownPurpose, PublicPurpose, PrivatePurpose, ServiceSpecificPurpose }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qnetworkconfiguration.html#StateFlag-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#StateFlag-enum">StateFlag</a></b> { Undefined, Defined, Discovered, Active }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration-stateflags.html">StateFlags</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qnetworkconfiguration.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#Type-enum">Type</a></b> { InternetAccessPoint, ServiceNetwork, UserChoice, Invalid }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkconfiguration.html#QNetworkConfiguration" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#QNetworkConfiguration">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkconfiguration.html#QNetworkConfiguration-2" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#QNetworkConfiguration-2">__init__</a></b> (<i>self</i>, QNetworkConfiguration <i>other</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qnetworkconfiguration.html#bearerName" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#bearerName">bearerName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>BearerType <b><a href="qnetworkconfiguration.html#bearerType" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#bearerType">bearerType</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qnetworkconfiguration.html#bearerTypeName" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#bearerTypeName">bearerTypeName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QNetworkConfiguration <b><a href="qnetworkconfiguration.html#children" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#children">children</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qnetworkconfiguration.html#identifier" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#identifier">identifier</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qnetworkconfiguration.html#isRoamingAvailable" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#isRoamingAvailable">isRoamingAvailable</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qnetworkconfiguration.html#isValid" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#isValid">isValid</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qnetworkconfiguration.html#name" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#name">name</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Purpose <b><a href="qnetworkconfiguration.html#purpose" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#purpose">purpose</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>StateFlags <b><a href="qnetworkconfiguration.html#state" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#state">state</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Type <b><a href="qnetworkconfiguration.html#type" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#type">type</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>bool <b><a href="qnetworkconfiguration.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#__eq__">__eq__</a></b> (<i>self</i>, QNetworkConfiguration <i>cp</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qnetworkconfiguration.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#__ne__">__ne__</a></b> (<i>self</i>, QNetworkConfiguration <i>cp</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QNetworkConfiguration类提供的一个或多个接入点的配置的抽象。</p>
+<p>QNetworkConfiguration封装单个接入点或服务网络。在大多数情况下，一个单一的接入点的配置可以被映射到一个网络接口。然而，一个单一的网络接口可能并不总是映射到唯一的一个接入点的配置。对于同一网络中设备的多种配置可使得多个接入点。一例装置，可以表现出这样的结构可能是一个智能手机，它允许用户管理多个WLAN配置，而设备本身仅具有一个WLAN网络设备。</p>
+<p>该QNetworkConfiguration还支持服务网络的概念。这个概念允许多个接入点的配置的组合成一个实体。这样的一组被称为服务网络，可以在案件是有益由此网络会话到特定目的地网络是必需的（如公司网络） 。当使用一服务网络的用户通常不关心其中的连接选项1被选择（例如，企业WLAN或VPN通过GPRS ） ，只要他能够达到公司的目标服务器。根据当前位置和时间的一些接入点组成的服务网络甚至可能不是可用的。此外自动接入点漫游可以启用，使该器件能够动态更改网络接口的配置，同时保持应用程序连接到目标网络。它允许适应不断变化的环境，并可以使优化与问候成本，速度或其他网络参数。</p>
+<p>类型的特殊配置<a href="qnetworkconfiguration.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#Type-enum">UserChoice</a>提供一种由平台解析为实际的网络结构的佔位符的配置，当一个<a href="qnetworksession.html" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html">session</a> is <a href="qnetworksession.html#open" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#open">opened</a>。不是所有平台都支持用户选择配置的概念。</p>
+<a id="configuration-states" name="configuration-states"></a>
+<h3>Configuration states</h3>
+<p>可以通过以下方式获得可用配置的清单<a href="qnetworkconfigurationmanager.html#allConfigurations" tppabs="http://pyqt4doc.appspot.com/qnetworkconfigurationmanager.html#allConfigurations">QNetworkConfigurationManager.allConfigurations</a>（ ） 。配置中可以有多个状态。该<a href="qnetworkconfiguration.html#StateFlag-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#StateFlag-enum">Defined</a>配置状态表示的结构被存储在设备上。但是，该构造还没有准备好被激活为如WLAN中可能无法使用在当前时间。</p>
+<p>该<a href="qnetworkconfiguration.html#StateFlag-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#StateFlag-enum">Discovered</a>状态隐含该配置是<a href="qnetworkconfiguration.html#StateFlag-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#StateFlag-enum">Defined</a>与外界条件是这样的配置，可以立即使用，以打开一个新的网络会话。这样的条件以外，例如，可以是以太网电缆实际上是连接到设备，或与指定的SSID的无线网络是否在范围内。</p>
+<p>该<a href="qnetworkconfiguration.html#StateFlag-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#StateFlag-enum">Active</a>状态隐含该配置是<a href="qnetworkconfiguration.html#StateFlag-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#StateFlag-enum">Discovered</a>。处于这种状态的配置是当前正在使用的应用程序。底层网络接口有一个有效的IP配置，并可以在设备和目标网络之间传输的IP数据包。</p>
+<p>该<a href="qnetworkconfiguration.html#StateFlag-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#StateFlag-enum">Undefined</a>状态表示系统有可能的目标网络的知识，但实际上并不能使用这些知识来连接到它。为这样的状态，例如，可以是已经发现，但用户还没有实际保存包括所需的密码这将允许设备连接到它的结构的加密的WLAN 。</p>
+<p>根据配置的不同类型的一些州是一过性的。可以使用GPRS / UMTS连接可能几乎总是<a href="qnetworkconfiguration.html#StateFlag-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#StateFlag-enum">Discovered</a>如果在GSM / UMTS网络是可用的。然而，如果将GSM / UMTS网络失去连接的相关联的配置有可能改变它的状态<a href="qnetworkconfiguration.html#StateFlag-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#StateFlag-enum">Discovered</a>至<a href="qnetworkconfiguration.html#StateFlag-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#StateFlag-enum">Defined</a>为好。类似的用例可能是由WLAN连接状态被触发。<a href="qnetworkconfigurationmanager.html#updateConfigurations" tppabs="http://pyqt4doc.appspot.com/qnetworkconfigurationmanager.html#updateConfigurations">QNetworkConfigurationManager.updateConfigurations</a>（）可用于手动触发状态的更新。请注意，某些平台并不需要这些更新，因为他们暗中更改一旦被发现的状态。如果配置的状态更改所有相关QNetworkConfiguration情况自动改变它们的状态。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="BearerType-enum"></a>QNetworkConfiguration.BearerType</h3>
+<p>指定用于由一个配置的承载类型。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkConfiguration.BearerUnknown</tt>
+</td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">承载的类型未知或不确定的。该<a href="qnetworkconfiguration.html#bearerTypeName" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#bearerTypeName">bearerTypeName</a>（ ）函数可以返回更多的信息。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkConfiguration.BearerEthernet</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该配置是一个以太网接口。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkConfiguration.BearerWLAN</tt>
+</td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">该设置是针对无线局域网的接口。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QNetworkConfiguration.Bearer2G</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">该设置是针对CSD ， GPRS， HSCSD ， EDGE或cdmaOne的接口。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkConfiguration.BearerCDMA2000</tt>
+</td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">的配置是适用于CDMA接口。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkConfiguration.BearerWCDMA</tt>
+</td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">配置为W-CDMA/UMTS接口。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkConfiguration.BearerHSPA</tt>
+</td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">该配置是高速分组接入（HSPA ）接口。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkConfiguration.BearerBluetooth</tt>
+</td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">配置为蓝牙接口。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkConfiguration.BearerWiMAX</tt>
+</td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">配置是用于WiMAX接口。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="Purpose-enum"></a>QNetworkConfiguration.Purpose</h3>
+<p>指定配置的目的。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkConfiguration.UnknownPurpose</tt>
+</td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">在配置上并没有指定任何目的。这是默认值。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkConfiguration.PublicPurpose</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该配置可用于一般用途的互联网接入。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkConfiguration.PrivatePurpose</tt>
+</td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">该配置适用于访问私有网络，如一个办公室内联网。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkConfiguration.ServiceSpecificPurpose</tt>
+</td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">该配置可用于运营商特定服务（如接收彩信或内容流） 。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="StateFlag-enum"></a>QNetworkConfiguration.StateFlag</h3>
+<p>指定配置状态。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QNetworkConfiguration.Undefined</tt></td>
+<td class="topAlign"><tt>0x0000001</tt></td>
+<td class="topAlign">这种状态是用于瞬时配置，如新发现的WLAN的量，用户实际上并没有创建配置爱好。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QNetworkConfiguration.Defined</tt></td>
+<td class="topAlign"><tt>0x0000002</tt></td>
+<td class="topAlign">定义的配置是众所周知的系统，但不是立即可用（例如，配置的WLAN是不在范围内或以太网电缆目前没有插入机） 。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkConfiguration.Discovered</tt>
+</td>
+<td class="topAlign"><tt>0x0000006</tt></td>
+<td class="topAlign">发现的配置，可立即用于创建一个新的<a href="qnetworksession.html" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html">QNetworkSession</a>。已发现的结构的一个例子可以是一个无线局域网是在范围内。如果设备移出的范围内发现标志被丢弃。第二个例子是一个GPRS配置通常仍然发现，只要该设备具有网络复盖。具有此状态的配置也是在状态QNetworkConfiguration.Defined 。如果配置一个服务网络这个标志被设置，如果底层的接入点配置的至少一个具有发现的状态。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QNetworkConfiguration.Active</tt></td>
+<td class="topAlign"><tt>0x000000e</tt></td>
+<td class="topAlign">该配置是目前使用的一个开放的网络会议（见<a href="qnetworksession.html#isOpen" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#isOpen">QNetworkSession.isOpen</a>（））。然而，这并不意味着当前进程是创建公开会议的实体。它仅仅表明，如果一个新的<a href="qnetworksession.html" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html">QNetworkSession</a>是在此基础上对配置进行构建<a href="qnetworksession.html#state" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#state">QNetworkSession.state</a>（ ）将返回<a href="qnetworksession.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html#State-enum">QNetworkSession.Connected</a>。这种状态意味着QNetworkConfiguration.Discovered状态。</td>
+</tr>
+</table>
+<p>该StateFlags类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cStateFlag\u003e 。它存储StateFlag值的或组合。</p>
+
+
+<h3 class="fn">
+<a name="Type-enum"></a>QNetworkConfiguration.Type</h3>
+<p>这个枚举描述的配置类型。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkConfiguration.InternetAccessPoint</tt>
+</td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">配置指定了细节的单一访问点。注意，类型InternetAccessPoint的配置可以是类型ServiceNetwork的其他QNetworkConfigurations的一部分。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkConfiguration.ServiceNetwork</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该配置是基于一组类型InternetAccessPoint的QNetworkConfigurations的。所有小组成员可以达到同样的目标网络。这种类型的配置是漫游功能的网络会话的强制性要求。在某些平台这种形式的配置也可以被称为服务网络接入点（ SNAP ） 。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkConfiguration.UserChoice</tt>
+</td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">配置是一个佔位符将由该平台的会话打开的时候被解析为实际的配置。根据不同的平台上的选择可能会生成一个弹出式对话框，询问他的首选用户。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QNetworkConfiguration.Invalid</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">配置是无效的。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QNetworkConfiguration"></a>QNetworkConfiguration.__init__ (<i>self</i>)</h3>
+<p>构造一个无效的配置对象。</p>
+<p><b>See also</b> <a href="qnetworkconfiguration.html#isValid" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#isValid">isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QNetworkConfiguration-2"></a>QNetworkConfiguration.__init__ (<i>self</i>, <a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a> <i>other</i>)</h3>
+<p>创建的副本<a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a>包含的对象<i>other</i>。</p>
+
+
+<h3 class="fn">
+<a name="bearerName"></a>QString QNetworkConfiguration.bearerName (<i>self</i>)</h3>
+<p>此功能已被弃用。</p>
+<p>此功能已被弃用。这等同于调用<a href="qnetworkconfiguration.html#bearerTypeName" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#bearerTypeName">bearerTypeName</a>（ ） ，但<a href="qnetworkconfiguration.html#bearerType" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#bearerType">bearerType</a>（ ）应优先使用。</p>
+
+
+<h3 class="fn">
+<a name="bearerType"></a><a href="qnetworkconfiguration.html#BearerType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#BearerType-enum">BearerType</a> QNetworkConfiguration.bearerType (<i>self</i>)</h3>
+<p>返回此网络配置承载的类型。</p>
+<p>如果载体的类型<a href="qnetworkconfiguration.html#BearerType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#BearerType-enum">unknown</a>该<a href="qnetworkconfiguration.html#bearerTypeName" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#bearerTypeName">bearerTypeName</a>（）函数可以被用于检索承载一个纹理类型名称。</p>
+<p>一个无效的网络配置总是返回<a href="qnetworkconfiguration.html#BearerType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#BearerType-enum">BearerUnknown</a>值。</p>
+
+
+<h3 class="fn">
+<a name="bearerTypeName"></a>QString QNetworkConfiguration.bearerTypeName (<i>self</i>)</h3>
+<p>返回此网络配置为一个字符串承载的类型。</p>
+<p>该字符串不被翻译，并因此不能被显示给用户。随后的表显示之间的固定映射<a href="qnetworkconfiguration.html#BearerType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#BearerType-enum">BearerType</a>并为已知类型的承载类型名称。如果<a href="qnetworkconfiguration.html#BearerType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#BearerType-enum">BearerType</a>未知这个函数可以返回更多的信息，如果它是可用的，否则一个空字符串将被返回。</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th><a href="qnetworkconfiguration.html#BearerType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#BearerType-enum">BearerType</a></th>
+<th>Value</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td><a href="qnetworkconfiguration.html#BearerType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#BearerType-enum">BearerUnknown</a></td>
+<td></td>
+<td>The session is based on an unknown or unspecified bearer type.
+The value of the string returned describes the bearer type.</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qnetworkconfiguration.html#BearerType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#BearerType-enum">BearerEthernet</a></td>
+<td>Ethernet</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qnetworkconfiguration.html#BearerType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#BearerType-enum">BearerWLAN</a></td>
+<td>WLAN</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qnetworkconfiguration.html#BearerType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#BearerType-enum">Bearer2G</a></td>
+<td>2G</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qnetworkconfiguration.html#BearerType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#BearerType-enum">BearerCDMA2000</a></td>
+<td>CDMA2000</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qnetworkconfiguration.html#BearerType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#BearerType-enum">BearerWCDMA</a></td>
+<td>WCDMA</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qnetworkconfiguration.html#BearerType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#BearerType-enum">BearerHSPA</a></td>
+<td>HSPA</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qnetworkconfiguration.html#BearerType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#BearerType-enum">BearerBluetooth</a></td>
+<td>Bluetooth</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qnetworkconfiguration.html#BearerType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#BearerType-enum">BearerWiMAX</a></td>
+<td>WiMAX</td>
+</tr>
+</table>
+<p>这个函数返回一个空字符串，如果这是无效的配置，类型的网络配置<a href="qnetworkconfiguration.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#Type-enum">QNetworkConfiguration.ServiceNetwork</a>
+or <a href="qnetworkconfiguration.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#Type-enum">QNetworkConfiguration.UserChoice</a>。</p>
+<p><b>See also</b> <a href="qnetworkconfiguration.html#bearerType" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#bearerType">bearerType</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="children"></a>list-of-QNetworkConfiguration QNetworkConfiguration.children (<i>self</i>)</h3>
+<p>返回优先顺序该网络配置的所有子配置。在列表中的第一子结构具有最高优先级。</p>
+<p>类型的唯一网络配置<a href="qnetworkconfiguration.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#Type-enum">ServiceNetwork</a>可以有孩子。否则，这个函数返回一个空列表。</p>
+
+
+<h3 class="fn">
+<a name="identifier"></a>QString QNetworkConfiguration.identifier (<i>self</i>)</h3>
+<p>返回此网络配置的独特性和平台特定的标识符，否则为空字符串。</p>
+
+
+<h3 class="fn">
+<a name="isRoamingAvailable"></a>bool QNetworkConfiguration.isRoamingAvailable (<i>self</i>)</h3>
+<p>返回True如果此配置支持漫游，否则为False 。</p>
+
+
+<h3 class="fn">
+<a name="isValid"></a>bool QNetworkConfiguration.isValid (<i>self</i>)</h3>
+<p>返回True如果<a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a>目的是有效的。如果用户删除配置或配置了缺省构造的配置可能会变得无效。</p>
+<p>的添加和删除的配置，可以通过监测<a href="qnetworkconfigurationmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfigurationmanager.html">QNetworkConfigurationManager</a>。</p>
+<p><b>See also</b> <a href="qnetworkconfigurationmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfigurationmanager.html">QNetworkConfigurationManager</a>。</p>
+
+
+<h3 class="fn">
+<a name="name"></a>QString QNetworkConfiguration.name (<i>self</i>)</h3>
+<p>返回该配置的用户可见的名称。</p>
+<p>名称可以是底层的接入点的名称或服务的网络，这种结构代表名称。</p>
+
+
+<h3 class="fn">
+<a name="purpose"></a><a href="qnetworkconfiguration.html#Purpose-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#Purpose-enum">Purpose</a> QNetworkConfiguration.purpose (<i>self</i>)</h3>
+<p>返回该配置的目的。</p>
+<p>其目的字段可以用于以编程方式确定配置的目的。这些信息通常是接入点或服务网络的元数据的一部分。</p>
+
+
+<h3 class="fn">
+<a name="state"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration-stateflags.html">StateFlags</a> QNetworkConfiguration.state (<i>self</i>)</h3>
+<p>返回构造的当前状态。</p>
+
+
+<h3 class="fn">
+<a name="type"></a><a href="qnetworkconfiguration.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#Type-enum">Type</a> QNetworkConfiguration.type (<i>self</i>)</h3>
+<p>返回构造的类型。</p>
+<p>配置中可以代表一个单独的接入点的配置或一组接入点的配置。这样的一组被称为服务网络。这是基于一个服务网络上的配置可以潜在地支持网络会话的漫游。</p>
+
+
+<h3 class="fn">
+<a name="__eq__"></a>bool QNetworkConfiguration.__eq__ (<i>self</i>, <a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a> <i>cp</i>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QNetworkConfiguration.__ne__ (<i>self</i>, <a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a> <i>cp</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

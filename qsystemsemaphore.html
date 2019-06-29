@@ -1,0 +1,250 @@
+﻿<html>
+<head>
+<title>QSystemSemaphore Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QSystemSemaphore Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QSystemSemaphore类提供了一个通用的计数系统信号量。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qsystemsemaphore.html#AccessMode-enum" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#AccessMode-enum">AccessMode</a></b> { Open, Create }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qsystemsemaphore.html#SystemSemaphoreError-enum" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#SystemSemaphoreError-enum">SystemSemaphoreError</a></b> { NoError, PermissionDenied, KeyError, AlreadyExists, ..., UnknownError }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qsystemsemaphore.html#QSystemSemaphore" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#QSystemSemaphore">__init__</a></b> (<i>self</i>, QString <i>key</i>, int <i>initialValue</i> = 0, AccessMode <i>mode</i> = QSystemSemaphore.Open)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsystemsemaphore.html#acquire" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#acquire">acquire</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>SystemSemaphoreError <b><a href="qsystemsemaphore.html#error" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#error">error</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsystemsemaphore.html#errorString" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#errorString">errorString</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsystemsemaphore.html#key" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#key">key</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsystemsemaphore.html#release" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#release">release</a></b> (<i>self</i>, int <i>n</i> = 1)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsystemsemaphore.html#setKey" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#setKey">setKey</a></b> (<i>self</i>, QString <i>key</i>, int <i>initialValue</i> = 0, AccessMode <i>mode</i> = QSystemSemaphore.Open)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QSystemSemaphore类提供了一个通用的计数系统信号量。</p>
+<p>信号量是互斥的推广。当一个互斥可以锁定只有一次，一个信号可以被收购多次。通常情况下，一个信号是用来保护一定数量的相同的资源。</p>
+<p>像它的对手更轻<a href="qsemaphore.html" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html">QSemaphore</a>，一个QSystemSemaphore可以从多个被访问<a href="qthread.html" tppabs="http://pyqt4doc.appspot.com/qthread.html">threads</a>。不像<a href="qsemaphore.html" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html">QSemaphore</a>，一个QSystemSemaphore可以从多个也可以访问<a href="qprocess.html" tppabs="http://pyqt4doc.appspot.com/qprocess.html">processes</a>。这意味着QSystemSemaphore是一个更重的类，所以如果你的应用程序并不需要访问多个进程的信号量，你可能会想使用<a href="qsemaphore.html" tppabs="http://pyqt4doc.appspot.com/qsemaphore.html">QSemaphore</a>。</p>
+<p>信号量支持两种基本操作，<a href="qsystemsemaphore.html#acquire" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#acquire">acquire</a>（）和<a href="qsystemsemaphore.html#release" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#release">release</a>（）：</p>
+<p><a href="qsystemsemaphore.html#acquire" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#acquire">acquire</a>（ ）试图获取一个资源。如果没有资源可用，呼叫阻塞，直到一个资源变为可用。然后，资源获取和调用返回。</p>
+<p><a href="qsystemsemaphore.html#release" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#release">release</a>（ ）释放一个资源，因此它可以被其他进程获得。该功能也可以被称为具有参数n \u003e 1时，它释放N个资源。</p>
+<p>系统信号与一个字符串键创建其他进程可以使用使用相同的信号。</p>
+<p>例如：创建一个系统信号量</p>
+<pre class="cpp">
+ <span class="type">QSystemSemaphore</span> sem(<span class="string">"market"</span><span class="operator">,</span> <span class="number">3</span><span class="operator">,</span> <span class="type">QSystemSemaphore</span><span class="operator">.</span>Create);
+                              <span class="comment">// resources available == 3</span>
+ sem<span class="operator">.</span><a href="qsystemsemaphore.html#acquire" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#acquire">acquire</a>();               <span class="comment">// resources available == 2</span>
+ sem<span class="operator">.</span><a href="qsystemsemaphore.html#acquire" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#acquire">acquire</a>();               <span class="comment">// resources available == 1</span>
+ sem<span class="operator">.</span><a href="qsystemsemaphore.html#acquire" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#acquire">acquire</a>();               <span class="comment">// resources available == 0</span>
+ sem<span class="operator">.</span><a href="qsystemsemaphore.html#release" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#release">release</a>();               <span class="comment">// resources available == 1</span>
+ sem<span class="operator">.</span><a href="qsystemsemaphore.html#release" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#release">release</a>(<span class="number">2</span>);              <span class="comment">// resources available == 3</span>
+</pre>
+<p>系统的信号量的一个典型应用是用于控制访问环形缓冲器由一个生产者进程共享和消费者的过程。</p>
+<a id="platform-specific-behavior" name="platform-specific-behavior"></a>
+<h3>Platform-Specific Behavior</h3>
+<p>当使用这个类时，请注意以下平台的差异：</p>
+<p><b>Windows:</b>QSystemSemaphore并不拥有其底层的系统semaphore 。窗口拥有它。这意味着，当QSystemSemaphore针对特定键的所有实例都被摧毁，要么有自己的析构函数被调用，或者因为一个或多个进程崩溃时，Windows将删除底层的系统semaphore 。</p>
+<p><b>Unix:</b></p>
+<ul>
+<li>QSystemSemaphore owns the underlying system semaphore in Unix
+systems. This means that the last process having an instance of
+QSystemSemaphore for a particular key must remove the underlying
+system semaphore in its destructor. If the last process crashes
+without running the QSystemSemaphore destructor, Unix does not
+automatically remove the underlying system semaphore, and the
+semaphore survives the crash. A subsequent process that constructs
+a QSystemSemaphore with the same key will then be given the
+existing system semaphore. In that case, if the QSystemSemaphore
+constructor has specified its <a href="qsystemsemaphore.html#AccessMode-enum" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#AccessMode-enum">access mode</a> as <a href="qsystemsemaphore.html#AccessMode-enum" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#AccessMode-enum">Open</a>, its initial
+resource count will not be reset to the one provided but remain set
+to the value it received in the crashed process. To protect against
+this, the first process to create a semaphore for a particular key
+(usually a server), must pass its <a href="qsystemsemaphore.html#AccessMode-enum" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#AccessMode-enum">access mode</a> as <a href="qsystemsemaphore.html#AccessMode-enum" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#AccessMode-enum">Create</a>, which will
+force Unix to reset the resource count in the underlying system
+semaphore.</li>
+<li>When a process using QSystemSemaphore terminates for any
+reason, Unix automatically reverses the effect of all acquire
+operations that were not released. Thus if the process acquires a
+resource and then exits without releasing it, Unix will release
+that resource.</li>
+<li>Symbian: QSystemSemaphore behaves the same as Windows
+semaphores. In other words, the operating system owns the semaphore
+and ignores <a href="qsystemsemaphore.html#AccessMode-enum" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#AccessMode-enum">QSystemSemaphore.AccessMode</a>.</li>
+</ul>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="AccessMode-enum"></a>QSystemSemaphore.AccessMode</h3>
+<p>此枚举所使用的构造函数和<a href="qsystemsemaphore.html#setKey" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#setKey">setKey</a>（ ） 。其目的是使处理问题在崩溃的生存信号量的Unix实现。在Unix中，当信号量生存崩溃，我们需要一种方法来迫使它重新设置它的资源数，当系统重新使用信号量。在Windows和Symbian的，其中信号量不能崩溃生存，此枚举有没有效果。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemSemaphore.Open</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">如果信号量已经存在，它的初始资源计数不复位。如果信号量不存在，则创建它和它的初始资源计数设置。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemSemaphore.Create</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">
+<a href="qsystemsemaphore.html" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html">QSystemSemaphore</a>采用信号量的所有权，并将其资源数量为请求值，不管信号是否已经存在了有倖存崩溃。此值应传递给构造函数，当第一个信号为一个特定的键构造，你知道，如果信号量已经存在，它只能是因为撞车。在Windows和Symbian的，其中一个信号量不能崩溃生存，创建并打开具有相同的行为。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="SystemSemaphoreError-enum"></a>QSystemSemaphore.SystemSemaphoreError</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemSemaphore.NoError</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">未发生错误。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QSystemSemaphore.PermissionDenied</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">操作失败，因为调用方没有所需的权限。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemSemaphore.KeyError</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">操作失败，因为一个无效的关键。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemSemaphore.AlreadyExists</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">操作失败，因为具有指定键的系统信号量已经存在。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemSemaphore.NotFound</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">操作失败，因为具有指定键的系统信号量不能被发现。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemSemaphore.OutOfResources</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">操作失败，因为没有足够的可用内存来满足该请求。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSystemSemaphore.UnknownError</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">别的事情发生了，这是不好的。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QSystemSemaphore"></a>QSystemSemaphore.__init__ (<i>self</i>, QString <i>key</i>, int <i>initialValue</i> = 0, <a href="qsystemsemaphore.html#AccessMode-enum" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#AccessMode-enum">AccessMode</a> <i>mode</i> = QSystemSemaphore.Open)</h3>
+<p>请求系统信号灯指定<i>key</i>。参数<i>initialValue</i>和<i>mode</i>根据下面的规则，这是依赖于系统的使用。</p>
+<p>在Unix中，如果<i>mode</i> is <a href="qsystemsemaphore.html#AccessMode-enum" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#AccessMode-enum">Open</a>并且系统已经由一个信号量<i>key</i>，该信号被使用，并且信号量的资源计数不改变，即<i>initialValue</i>被忽略。但如果系统中还没有确定的一个信号<i>key</i>，它会为重点的新信号量，并设置其资源计数<i>initialValue</i>。</p>
+<p>在Unix中，如果<i>mode</i> is <a href="qsystemsemaphore.html#AccessMode-enum" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#AccessMode-enum">Create</a>并且系统已经由一个信号量<i>key</i>，该信号被使用，并且其资源计数设置为<i>initialValue</i>。如果系统中还没有确定的一个信号<i>key</i>，它会为重点的新信号量，并设置其资源计数<i>initialValue</i>。</p>
+<p>在QNX ，如果<i>mode</i> is <a href="qsystemsemaphore.html#AccessMode-enum" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#AccessMode-enum">Create</a>并且系统已经由一个信号量<i>key</i>，该信号量将被删除，新的人会与资源计数设置为密钥创建<i>initialValue</i>。</p>
+<p>在Windows和Symbian的，<i>mode</i>被忽略，系统总是试图创建一个信号量指定<i>key</i>。如果系统中还没有确定为一个信号<i>key</i>，它创建了信号量，并设置其资源计数<i>initialValue</i>。但是，如果系统中已经有确定的信号<i>key</i>它使用信号量，而忽略<i>initialValue</i>。</p>
+<p>该<a href="qsystemsemaphore.html#AccessMode-enum" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#AccessMode-enum">mode</a>参数只适用于Unix系统，以处理一个信号量生存进程崩溃的情况。在这种情况下，下一个进程分配一个信号具有相同的<i>key</i>将获得生还的信号，除非<i>mode</i> is
+<a href="qsystemsemaphore.html#AccessMode-enum" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#AccessMode-enum">Create</a>，资源计数不会被重置<i>initialValue</i>但将保留它已由坠毁过程中给出的初始值。</p>
+<p><b>See also</b> <a href="qsystemsemaphore.html#acquire" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#acquire">acquire</a>（）和<a href="qsystemsemaphore.html#key" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#key">key</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="acquire"></a>bool QSystemSemaphore.acquire (<i>self</i>)</h3>
+<p>获取通过这个信号量把守的资源之一，如果有一个可用的，则返回True 。如果把这个信号量把守的资源已被收购，呼叫阻塞，直到其中一人被释放由另一个进程或具有相同的密钥信号量的线程。</p>
+<p>如果返回False ，表示发生了系统错误。通话<a href="qsystemsemaphore.html#error" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#error">error</a>（）来得到一个值<a href="qsystemsemaphore.html#SystemSemaphoreError-enum" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#SystemSemaphoreError-enum">QSystemSemaphore.SystemSemaphoreError</a>指示发生错误。</p>
+<p><b>See also</b> <a href="qsystemsemaphore.html#release" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#release">release</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="error"></a><a href="qsystemsemaphore.html#SystemSemaphoreError-enum" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#SystemSemaphoreError-enum">SystemSemaphoreError</a> QSystemSemaphore.error (<i>self</i>)</h3>
+<p>返回一个值，指示是否发生了错误，并且，如果是这样，这是其中的错误。</p>
+<p><b>See also</b> <a href="qsystemsemaphore.html#errorString" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#errorString">errorString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="errorString"></a>QString QSystemSemaphore.errorString (<i>self</i>)</h3>
+<p>返回上次发生错误的文本说明。如果<a href="qsystemsemaphore.html#error" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#error">error</a>（ ）返回一个<a href="qsystemsemaphore.html#SystemSemaphoreError-enum" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#SystemSemaphoreError-enum">error
+value</a>，调用这个函数来获取描述错误的文本字符串。</p>
+<p><b>See also</b> <a href="qsystemsemaphore.html#error" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#error">error</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="key"></a>QString QSystemSemaphore.key (<i>self</i>)</h3>
+<p>返回分配给本系统信号量的关键。最关键的是通过它的信号可以从其他进程访问的名称。</p>
+<p><b>See also</b> <a href="qsystemsemaphore.html#setKey" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#setKey">setKey</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="release"></a>bool QSystemSemaphore.release (<i>self</i>, int <i>n</i> = 1)</h3>
+<p>发布<i>n</i>资源的信号量把守。返回True除非有一个系统错误。</p>
+<p>例如：创建有五个资源的系统信号量，获取所有这些，然后释放它们。</p>
+<pre class="cpp">
+ <span class="type"><a href="qsystemsemaphore.html" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html">QSystemSemaphore</a></span> sem(<span class="string">"market"</span><span class="operator">,</span> <span class="number">5</span><span class="operator">,</span> <span class="type"><a href="qsystemsemaphore.html" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html">QSystemSemaphore</a></span><span class="operator">.</span>Create);
+ sem<span class="operator">.</span><a href="qsystemsemaphore.html#acquire" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#acquire">acquire</a>(<span class="number">5</span>);           <span class="comment">// acquire all 5 resources</span>
+ sem<span class="operator">.</span>release(<span class="number">5</span>);           <span class="comment">// release the 5 resources</span>
+</pre>
+<p>此功能还可以“创造”的资源。例如，马上上述声明的顺序如下，假设我们添加语句：</p>
+<pre class="cpp">
+ sem<span class="operator">.</span>release(<span class="number">10</span>);          <span class="comment">// "create" 10 new resources</span>
+</pre>
+<p>十大新的资源现在由信号量把守，除了已经存在的五个。你通常不会使用这个函数来创建更多的资源。</p>
+<p><b>See also</b> <a href="qsystemsemaphore.html#acquire" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#acquire">acquire</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setKey"></a>QSystemSemaphore.setKey (<i>self</i>, QString <i>key</i>, int <i>initialValue</i> = 0, <a href="qsystemsemaphore.html#AccessMode-enum" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#AccessMode-enum">AccessMode</a> <i>mode</i> = QSystemSemaphore.Open)</h3>
+<p>此功能的工作方式相同的构造。它这个重构<a href="qsystemsemaphore.html" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html">QSystemSemaphore</a>对象。如果新的<i>key</i>是从旧的密钥不同，调用这个函数就像调用与旧的密钥信号的析构函数，然后调用构造函数来创建一个新的信号量与新<i>key</i>。该<i>initialValue</i>和<i>mode</i>参数的定义与构造。</p>
+<p><b>See also</b> <a href="qsystemsemaphore.html#QSystemSemaphore" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#QSystemSemaphore">QSystemSemaphore</a>（）和<a href="qsystemsemaphore.html#key" tppabs="http://pyqt4doc.appspot.com/qsystemsemaphore.html#key">key</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

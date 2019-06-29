@@ -1,0 +1,154 @@
+﻿<html>
+<head>
+<title>QScriptClassPropertyIterator Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QScriptClassPropertyIterator Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscript.html">QtScript</a> module]</sup></sup>
+</h1>
+<p>该QScriptClassPropertyIterator类提供一个迭代器接口，用于定制的Qt Script对象。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptclasspropertyiterator.html#QScriptClassPropertyIterator" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#QScriptClassPropertyIterator">__init__</a></b> (<i>self</i>, QScriptValue <i>object</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue.PropertyFlags <b><a href="qscriptclasspropertyiterator.html#flags" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#flags">flags</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qscriptclasspropertyiterator.html#hasNext" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#hasNext">hasNext</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qscriptclasspropertyiterator.html#hasPrevious" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#hasPrevious">hasPrevious</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qscriptclasspropertyiterator.html#id" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#id">id</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QScriptString <b><a href="qscriptclasspropertyiterator.html#name" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#name">name</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptclasspropertyiterator.html#next" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#next">next</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptclasspropertyiterator.html#object" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#object">object</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptclasspropertyiterator.html#previous" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#previous">previous</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptclasspropertyiterator.html#toBack" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#toBack">toBack</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptclasspropertyiterator.html#toFront" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#toFront">toFront</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QScriptClassPropertyIterator类提供一个迭代器接口，用于定制的Qt Script对象。</p>
+<p>这个类是只有相关的，如果你有子类<a href="qscriptclass.html" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html">QScriptClass</a>并希望提供您的自定义属性（例如枚举，当你的类的对象使用<a href="qscriptvalueiterator.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalueiterator.html">QScriptValueIterator</a>，或者与换在声明脚本） 。</p>
+<p>该<a href="qscriptclasspropertyiterator.html#object" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#object">object</a>（ ）函数返回的Qt脚本对象的迭代器遍历。</p>
+<p><a href="qscriptclasspropertyiterator.html#toFront" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#toFront">toFront</a>（ ）<a href="qscriptclasspropertyiterator.html#hasNext" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#hasNext">hasNext</a>（）和<a href="qscriptclasspropertyiterator.html#next" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#next">next</a>（ ）提供向前迭代。</p>
+<p><a href="qscriptclasspropertyiterator.html#toBack" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#toBack">toBack</a>（ ）<a href="qscriptclasspropertyiterator.html#hasPrevious" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#hasPrevious">hasPrevious</a>（）和<a href="qscriptclasspropertyiterator.html#previous" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#previous">previous</a>（ ）提供向后迭代。</p>
+<p><a href="qscriptclasspropertyiterator.html#name" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#name">name</a>（ ）<a href="qscriptclasspropertyiterator.html#id" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#id">id</a>（）和<a href="qscriptclasspropertyiterator.html#flags" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#flags">flags</a>（ ）有关已跃过使用最后一个属性返回信息<a href="qscriptclasspropertyiterator.html#next" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#next">next</a>（）或<a href="qscriptclasspropertyiterator.html#previous" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#previous">previous</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QScriptClassPropertyIterator"></a>QScriptClassPropertyIterator.__init__ (<i>self</i>, <a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> <i>object</i>)</h3>
+<p>构造一个迭代器遍历<i>object</i>。</p>
+<p>子类应确保迭代器被设置为物业序列的前面（第一属性之前） 。</p>
+
+
+<h3 class="fn">
+<a name="flags"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qscriptvalue-propertyflags.html">QScriptValue.PropertyFlags</a> QScriptClassPropertyIterator.flags (<i>self</i>)</h3>
+<p>返回用跃过最后一个属性的标志<a href="qscriptclasspropertyiterator.html#next" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#next">next</a>（）或<a href="qscriptclasspropertyiterator.html#previous" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#previous">previous</a>（ ） 。</p>
+<p>默认实现调用propertyFlags （）函数<a href="qscriptclasspropertyiterator.html#object" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#object">object</a>（ ）与参数<a href="qscriptclasspropertyiterator.html#name" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#name">name</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasNext"></a>bool QScriptClassPropertyIterator.hasNext (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回True如果至少有一个项目未来的迭代器（即迭代器<i>not</i>在属性序列）的后面，否则返回False 。</p>
+<p><b>See also</b> <a href="qscriptclasspropertyiterator.html#next" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#next">next</a>（）和<a href="qscriptclasspropertyiterator.html#hasPrevious" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#hasPrevious">hasPrevious</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasPrevious"></a>bool QScriptClassPropertyIterator.hasPrevious (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>如果在后面的迭代器至少有一个项目，则返回True （即迭代器<i>not</i>在属性序列）的前面，否则返回False 。</p>
+<p><b>See also</b> <a href="qscriptclasspropertyiterator.html#previous" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#previous">previous</a>（）和<a href="qscriptclasspropertyiterator.html#hasNext" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#hasNext">hasNext</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="id"></a>int QScriptClassPropertyIterator.id (<i>self</i>)</h3>
+<p>返回用跃过最后一个属性的id<a href="qscriptclasspropertyiterator.html#next" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#next">next</a>（）或<a href="qscriptclasspropertyiterator.html#previous" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#previous">previous</a>（ ） 。</p>
+<p>默认实现返回0 。</p>
+<p><b>See also</b> <a href="qscriptclasspropertyiterator.html#name" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#name">name</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="name"></a><a href="qscriptstring.html" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html">QScriptString</a> QScriptClassPropertyIterator.name (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回用跃过最后一个属性的名称<a href="qscriptclasspropertyiterator.html#next" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#next">next</a>（）或<a href="qscriptclasspropertyiterator.html#previous" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#previous">previous</a>（ ） 。</p>
+<p><b>See also</b> <a href="qscriptclasspropertyiterator.html#id" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#id">id</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="next"></a>QScriptClassPropertyIterator.next (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>一个位置前进的迭代器。</p>
+<p>在位于容器的后面的迭代器调用这个函数会导致不确定的结果。</p>
+<p><b>See also</b> <a href="qscriptclasspropertyiterator.html#hasNext" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#hasNext">hasNext</a>（ ）<a href="qscriptclasspropertyiterator.html#previous" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#previous">previous</a>（）和<a href="qscriptclasspropertyiterator.html#name" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#name">name</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="object"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptClassPropertyIterator.object (<i>self</i>)</h3>
+<p>返回的Qt Script对象这个迭代器遍历。</p>
+
+
+<h3 class="fn">
+<a name="previous"></a>QScriptClassPropertyIterator.previous (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>一个位置移动迭代回来。</p>
+<p>在位于容器的前一个迭代器调用这个函数会导致不确定的结果。</p>
+<p><b>See also</b> <a href="qscriptclasspropertyiterator.html#hasPrevious" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#hasPrevious">hasPrevious</a>（ ）<a href="qscriptclasspropertyiterator.html#next" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#next">next</a>（）和<a href="qscriptclasspropertyiterator.html#name" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#name">name</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toBack"></a>QScriptClassPropertyIterator.toBack (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>移动迭代器的背面<a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>（后最后一个属性） 。</p>
+<p><b>See also</b> <a href="qscriptclasspropertyiterator.html#toFront" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#toFront">toFront</a>（）和<a href="qscriptclasspropertyiterator.html#previous" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#previous">previous</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toFront"></a>QScriptClassPropertyIterator.toFront (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>移动迭代器的前面<a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>（第一属性之前） 。</p>
+<p><b>See also</b> <a href="qscriptclasspropertyiterator.html#toBack" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#toBack">toBack</a>（）和<a href="qscriptclasspropertyiterator.html#next" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html#next">next</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

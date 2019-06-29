@@ -1,0 +1,160 @@
+﻿<html>
+<head>
+<title>QSizeGrip Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QSizeGrip Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QSizeGrip类提供了一个大小调整手柄大小调整顶层窗口。<a href="#details">More...</a></p>
+
+<p>继承<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qsizegrip.html#QSizeGrip" tppabs="http://pyqt4doc.appspot.com/qsizegrip.html#QSizeGrip">__init__</a></b> (<i>self</i>, QWidget <i>parent</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsizegrip.html#event" tppabs="http://pyqt4doc.appspot.com/qsizegrip.html#event">event</a></b> (<i>self</i>, QEvent)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsizegrip.html#eventFilter" tppabs="http://pyqt4doc.appspot.com/qsizegrip.html#eventFilter">eventFilter</a></b> (<i>self</i>, QObject, QEvent)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsizegrip.html#hideEvent" tppabs="http://pyqt4doc.appspot.com/qsizegrip.html#hideEvent">hideEvent</a></b> (<i>self</i>, QHideEvent <i>hideEvent</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsizegrip.html#mouseMoveEvent" tppabs="http://pyqt4doc.appspot.com/qsizegrip.html#mouseMoveEvent">mouseMoveEvent</a></b> (<i>self</i>, QMouseEvent)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsizegrip.html#mousePressEvent" tppabs="http://pyqt4doc.appspot.com/qsizegrip.html#mousePressEvent">mousePressEvent</a></b> (<i>self</i>, QMouseEvent)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsizegrip.html#mouseReleaseEvent" tppabs="http://pyqt4doc.appspot.com/qsizegrip.html#mouseReleaseEvent">mouseReleaseEvent</a></b> (<i>self</i>, QMouseEvent <i>mouseEvent</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsizegrip.html#moveEvent" tppabs="http://pyqt4doc.appspot.com/qsizegrip.html#moveEvent">moveEvent</a></b> (<i>self</i>, QMoveEvent <i>moveEvent</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsizegrip.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qsizegrip.html#paintEvent">paintEvent</a></b> (<i>self</i>, QPaintEvent)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsizegrip.html#setVisible" tppabs="http://pyqt4doc.appspot.com/qsizegrip.html#setVisible">setVisible</a></b> (<i>self</i>, bool)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsizegrip.html#showEvent" tppabs="http://pyqt4doc.appspot.com/qsizegrip.html#showEvent">showEvent</a></b> (<i>self</i>, QShowEvent <i>showEvent</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qsizegrip.html#sizeHint" tppabs="http://pyqt4doc.appspot.com/qsizegrip.html#sizeHint">sizeHint</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QSizeGrip类提供了一个大小调整手柄大小调整顶层窗口。</p>
+<p>这个小工具的工作方式类似于标准的Windows调整大小手柄。在X11版本的大小调整手柄通常的工作方式不同从所提供的系统，如果X11窗口管理器不支持必要的现代后ICCCM规范之一。</p>
+<p>把这个小工具的任何地方在一个widget树，用户可以用它来调整顶层窗口或任何部件与<a href="qt.html#WindowType-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#WindowType-enum">Qt.SubWindow</a>标志设置。一般情况下，这应该是在右下角的角落。需要注意的是<a href="qstatusbar.html" tppabs="http://pyqt4doc.appspot.com/qstatusbar.html">QStatusBar</a>已经使用这个小工具，所以如果你有一个状态栏（例如，你使用<a href="qmainwindow.html" tppabs="http://pyqt4doc.appspot.com/qmainwindow.html">QMainWindow</a>） ，那么你就不需要显式地使用这个小工具。</p>
+<p>在某些平台上的大小手柄自动隐藏自己当窗口显示全屏或最大化。</p>
+<table class="generic" width="50%">
+<tr class="odd" valign="top">
+<td><img alt="Screenshot of a Plastique style size grip" src="images/plastique-sizegrip.png"></td>
+<td>A size grip widget at the bottom-right corner of a main window,
+shown in the <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/gallery-plastique.html">Plastique widget
+style</a>.</td>
+</tr>
+</table>
+<p>该QSizeGrip类继承<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>并重新实现了<a href="qwidget.html#mousePressEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#mousePressEvent">mousePressEvent()</a>和<a href="qwidget.html#mouseMoveEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#mouseMoveEvent">mouseMoveEvent()</a>功能特点调整大小的功能，而<a href="qwidget.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#paintEvent">paintEvent()</a>功能呈现大小手柄部件。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QSizeGrip"></a>QSizeGrip.__init__ (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i>)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个调整大小角落的特定子widget<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="event"></a>bool QSizeGrip.event (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>)</h3>
+<p>从重新实现<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">QObject.event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="eventFilter"></a>bool QSizeGrip.eventFilter (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>)</h3>
+<p>从重新实现<a href="qobject.html#eventFilter" tppabs="http://pyqt4doc.appspot.com/qobject.html#eventFilter">QObject.eventFilter</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hideEvent"></a>QSizeGrip.hideEvent (<i>self</i>, <a href="qhideevent.html" tppabs="http://pyqt4doc.appspot.com/qhideevent.html">QHideEvent</a> <i>hideEvent</i>)</h3>
+<p>从重新实现<a href="qwidget.html#hideEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#hideEvent">QWidget.hideEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mouseMoveEvent"></a>QSizeGrip.mouseMoveEvent (<i>self</i>, <a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a>)</h3>
+<p>从重新实现<a href="qwidget.html#mouseMoveEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#mouseMoveEvent">QWidget.mouseMoveEvent</a>（ ） 。</p>
+<p>重新调整包含此插件的顶级窗口部件。鼠标移动事件传递的<i>event</i>参数。</p>
+
+
+<h3 class="fn">
+<a name="mousePressEvent"></a>QSizeGrip.mousePressEvent (<i>self</i>, <a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a>)</h3>
+<p>从重新实现<a href="qwidget.html#mousePressEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#mousePressEvent">QWidget.mousePressEvent</a>（ ） 。</p>
+<p>接收到鼠标按下的事件窗口小部件，和素数的大小调整操作。鼠标按下事件传递的<i>event</i>参数。</p>
+
+
+<h3 class="fn">
+<a name="mouseReleaseEvent"></a>QSizeGrip.mouseReleaseEvent (<i>self</i>, <a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a> <i>mouseEvent</i>)</h3>
+<p>从重新实现<a href="qwidget.html#mouseReleaseEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#mouseReleaseEvent">QWidget.mouseReleaseEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="moveEvent"></a>QSizeGrip.moveEvent (<i>self</i>, <a href="qmoveevent.html" tppabs="http://pyqt4doc.appspot.com/qmoveevent.html">QMoveEvent</a> <i>moveEvent</i>)</h3>
+<p>从重新实现<a href="qwidget.html#moveEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#moveEvent">QWidget.moveEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="paintEvent"></a>QSizeGrip.paintEvent (<i>self</i>, <a href="qpaintevent.html" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html">QPaintEvent</a>)</h3>
+<p>从重新实现<a href="qwidget.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#paintEvent">QWidget.paintEvent</a>（ ） 。</p>
+<p>绘制调整大小的抓地力。</p>
+<p>调整握把通常呈现为在右下角的小斜线纹理的线条。该漆事件被传递的<i>event</i>参数。</p>
+
+
+<h3 class="fn">
+<a name="setVisible"></a>QSizeGrip.setVisible (<i>self</i>, bool)</h3>
+<p>从重新实现<a href="qwidget.html#visible-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#visible-prop">QWidget.setVisible</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="showEvent"></a>QSizeGrip.showEvent (<i>self</i>, <a href="qshowevent.html" tppabs="http://pyqt4doc.appspot.com/qshowevent.html">QShowEvent</a> <i>showEvent</i>)</h3>
+<p>从重新实现<a href="qwidget.html#showEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#showEvent">QWidget.showEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sizeHint"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QSizeGrip.sizeHint (<i>self</i>)</h3>
+<p>从重新实现<a href="qwidget.html#sizeHint-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#sizeHint-prop">QWidget.sizeHint</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

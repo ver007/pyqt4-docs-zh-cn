@@ -1,0 +1,920 @@
+﻿<html>
+<head>
+<title>QScriptEngine Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QScriptEngine Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscript.html">QtScript</a> module]</sup></sup>
+</h1>
+<p>该代码QScriptEngine类提供​​用于评估的Qt Script代码的环境。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qscriptengine.html#QObjectWrapOption-enum" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#QObjectWrapOption-enum">QObjectWrapOption</a></b> { ExcludeChildObjects, ExcludeSuperClassMethods, ExcludeSuperClassProperties, AutoCreateDynamicProperties, ..., ExcludeSlots }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qscriptengine-qobjectwrapoptions.html">QObjectWrapOptions</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qscriptengine.html#ValueOwnership-enum" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#ValueOwnership-enum">ValueOwnership</a></b> { QtOwnership, ScriptOwnership, AutoOwnership }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptengine.html#QScriptEngine" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#QScriptEngine">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptengine.html#QScriptEngine-2" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#QScriptEngine-2">__init__</a></b> (<i>self</i>, QObject <i>parent</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptengine.html#abortEvaluation" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#abortEvaluation">abortEvaluation</a></b> (<i>self</i>, QScriptValue <i>result</i> = QScriptValue())</li>
+<li>
+<div class="fn"></div>QScriptEngineAgent <b><a href="qscriptengine.html#agent" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#agent">agent</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qscriptengine.html#availableExtensions" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#availableExtensions">availableExtensions</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qscriptengine.html#canEvaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#canEvaluate">canEvaluate</a></b> (<i>self</i>, QString <i>program</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptengine.html#clearExceptions" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#clearExceptions">clearExceptions</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptengine.html#collectGarbage" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#collectGarbage">collectGarbage</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QScriptContext <b><a href="qscriptengine.html#currentContext" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#currentContext">currentContext</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptengine.html#defaultPrototype" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#defaultPrototype">defaultPrototype</a></b> (<i>self</i>, int <i>metaTypeId</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">evaluate</a></b> (<i>self</i>, QString <i>program</i>, QString <i>fileName</i> = QString(), int <i>lineNumber</i> = 1)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptengine.html#globalObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#globalObject">globalObject</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qscriptengine.html#hasUncaughtException" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#hasUncaughtException">hasUncaughtException</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qscriptengine.html#importedExtensions" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#importedExtensions">importedExtensions</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptengine.html#importExtension" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#importExtension">importExtension</a></b> (<i>self</i>, QString <i>extension</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptengine.html#installTranslatorFunctions" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#installTranslatorFunctions">installTranslatorFunctions</a></b> (<i>self</i>, QScriptValue <i>object</i> = QScriptValue())</li>
+<li>
+<div class="fn"></div>bool <b><a href="qscriptengine.html#isEvaluating" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#isEvaluating">isEvaluating</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptengine.html#newArray" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newArray">newArray</a></b> (<i>self</i>, int <i>length</i> = 0)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptengine.html#newDate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newDate">newDate</a></b> (<i>self</i>, float <i>value</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptengine.html#newDate-2" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newDate-2">newDate</a></b> (<i>self</i>, QDateTime <i>value</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptengine.html#newFunction" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newFunction">newFunction</a></b> (<i>self</i>, callable <i>signature</i>, int <i>length</i> = 0)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptengine.html#newFunction-2" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newFunction-2">newFunction</a></b> (<i>self</i>, callable <i>signature</i>, QScriptValue <i>prototype</i>, int <i>length</i> = 0)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptengine.html#newObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newObject">newObject</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptengine.html#newObject-2" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newObject-2">newObject</a></b> (<i>self</i>, QScriptClass <i>scriptClass</i>, QScriptValue <i>data</i> = QScriptValue())</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptengine.html#newQMetaObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newQMetaObject">newQMetaObject</a></b> (<i>self</i>, QMetaObject <i>metaObject</i>, QScriptValue <i>ctor</i> = QScriptValue())</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptengine.html#newQObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newQObject">newQObject</a></b> (<i>self</i>, QObject <i>object</i>, ValueOwnership <i>ownership</i> = QScriptEngine.QtOwnership, QObjectWrapOptions <i>options</i> = 0)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptengine.html#newQObject-2" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newQObject-2">newQObject</a></b> (<i>self</i>, QScriptValue <i>scriptObject</i>, QObject <i>qtObject</i>, ValueOwnership <i>ownership</i> = QScriptEngine.QtOwnership, QObjectWrapOptions <i>options</i> = 0)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptengine.html#newRegExp" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newRegExp">newRegExp</a></b> (<i>self</i>, QRegExp <i>regexp</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptengine.html#newRegExp-2" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newRegExp-2">newRegExp</a></b> (<i>self</i>, QString <i>pattern</i>, QString <i>flags</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptengine.html#newVariant" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newVariant">newVariant</a></b> (<i>self</i>, QVariant <i>value</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptengine.html#newVariant-2" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newVariant-2">newVariant</a></b> (<i>self</i>, QScriptValue <i>object</i>, QVariant <i>value</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptengine.html#nullValue" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#nullValue">nullValue</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptengine.html#popContext" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#popContext">popContext</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qscriptengine.html#processEventsInterval" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#processEventsInterval">processEventsInterval</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QScriptContext <b><a href="qscriptengine.html#pushContext" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#pushContext">pushContext</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptengine.html#reportAdditionalMemoryCost" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#reportAdditionalMemoryCost">reportAdditionalMemoryCost</a></b> (<i>self</i>, int <i>size</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptengine.html#setAgent" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#setAgent">setAgent</a></b> (<i>self</i>, QScriptEngineAgent <i>agent</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptengine.html#setDefaultPrototype" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#setDefaultPrototype">setDefaultPrototype</a></b> (<i>self</i>, int <i>metaTypeId</i>, QScriptValue <i>prototype</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptengine.html#setGlobalObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#setGlobalObject">setGlobalObject</a></b> (<i>self</i>, QScriptValue <i>object</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptengine.html#setProcessEventsInterval" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#setProcessEventsInterval">setProcessEventsInterval</a></b> (<i>self</i>, int <i>interval</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptengine.html#toObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#toObject">toObject</a></b> (<i>self</i>, QScriptValue <i>value</i>)</li>
+<li>
+<div class="fn"></div>QScriptString <b><a href="qscriptengine.html#toStringHandle" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#toStringHandle">toStringHandle</a></b> (<i>self</i>, QString <i>str</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptengine.html#uncaughtException" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#uncaughtException">uncaughtException</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qscriptengine.html#uncaughtExceptionBacktrace" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#uncaughtExceptionBacktrace">uncaughtExceptionBacktrace</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qscriptengine.html#uncaughtExceptionLineNumber" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#uncaughtExceptionLineNumber">uncaughtExceptionLineNumber</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptengine.html#undefinedValue" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#undefinedValue">undefinedValue</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul><li>
+<div class="fn"></div>QScriptSyntaxCheckResult <b><a href="qscriptengine.html#checkSyntax" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#checkSyntax">checkSyntax</a></b> (QString <i>program</i>)</li></ul>
+<h3>Qt Signals</h3>
+<ul><li>
+<div class="fn"></div>void <b><a href="qscriptengine.html#signalHandlerException" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#signalHandlerException">signalHandlerException</a></b> (const QScriptValue&amp;)</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该代码QScriptEngine类提供​​用于评估的Qt Script代码的环境。</p>
+<p>请参阅<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscript.html">QtScript</a>文档，了解关于Qt的脚本语言，以及如何开始使用脚本你的C + +应用程序的信息。</p>
+<a id="evaluating-scripts" name="evaluating-scripts"></a>
+<h3>Evaluating Scripts</h3>
+<p>使用<a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">evaluate</a>（ ）来评估的脚本代码，这是C + +的等效内置的脚本功能<tt>eval()</tt>。</p>
+<pre class="cpp">
+ <span class="type">QScriptEngine</span> myEngine;
+ <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> three <span class="operator">=</span> myEngine<span class="operator">.</span><a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">evaluate</a>(<span class="string">"1 + 2"</span>);
+</pre>
+<p><a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">evaluate</a>（ ）返回一个<a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>保存了评价的结果。该<a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>类提供函数计算结果转换为不同的C + +类型（如<a href="qscriptvalue.html#toString" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html#toString">QScriptValue.toString</a>（）和<a href="qscriptvalue.html#toNumber" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html#toNumber">QScriptValue.toNumber</a>（））。</p>
+<p>下面的代码片段显示了一个脚本函数可以被定义，然后从C + +调用的使用<a href="qscriptvalue.html#call" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html#call">QScriptValue.call</a>（）：</p>
+<pre class="cpp">
+ <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> fun <span class="operator">=</span> myEngine<span class="operator">.</span><a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">evaluate</a>(<span class="string">"(function(a, b) { return a + b; })"</span>);
+ <span class="type">QScriptValueList</span> args;
+ args <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="number">1</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="number">2</span>;
+ <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> threeAgain <span class="operator">=</span> fun<span class="operator">.</span>call(<span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span>()<span class="operator">,</span> args);
+</pre>
+<p>如可以从上面的代码段中可以看出，一个脚本被提供给发动机以字符串的形式。加载脚本的一种常见方法是通过读取一个文件的内容，并把它传递给<a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">evaluate</a>（）：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> fileName <span class="operator">=</span> <span class="string">"helloworld.qs"</span>;
+ <span class="type"><a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a></span> scriptFile(fileName);
+ <span class="keyword">if</span> (<span class="operator">!</span>scriptFile<span class="operator">.</span>open(<span class="type"><a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a></span><span class="operator">.</span>ReadOnly))
+     <span class="comment">// handle error</span>
+ <span class="type"><a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a></span> stream(<span class="operator">&amp;</span>scriptFile);
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> contents <span class="operator">=</span> stream<span class="operator">.</span>readAll();
+ scriptFile<span class="operator">.</span>close();
+ myEngine<span class="operator">.</span><a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">evaluate</a>(contents<span class="operator">,</span> fileName);
+</pre>
+<p>在这里，我们传递的文件名作为第二个参数<a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">evaluate</a>（ ） 。这并不影响评价以任何方式，第二个参数是用来识别脚本调试通用字符串（例如，文件名我们现在将任何显示<a href="qscriptengine.html#uncaughtExceptionBacktrace" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#uncaughtExceptionBacktrace">uncaughtExceptionBacktrace</a>（ ）涉及脚本） 。</p>
+<a id="engine-configuration" name="engine-configuration"></a>
+<h3>Engine Configuration</h3>
+<p>该<a href="qscriptengine.html#globalObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#globalObject">globalObject</a>（ ）函数返回<b>Global Object</b>与脚本引擎相关联。全局对象的属性是从任何脚本代码访问（也就是说，它们是全局变量） 。通常情况下，评估“用户”脚本之前，你会希望通过添加一个或多个属性的全局对象来配置脚本引擎：</p>
+<pre class="cpp">
+ myEngine<span class="operator">.</span><a href="qscriptengine.html#globalObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#globalObject">globalObject</a>()<span class="operator">.</span><a href="qobject.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qobject.html#setProperty">setProperty</a>(<span class="string">"myNumber"</span><span class="operator">,</span> <span class="number">123</span>);
+ <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> myNumberPlusOne <span class="operator">=</span> myEngine<span class="operator">.</span><a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">evaluate</a>(<span class="string">"myNumber + 1"</span>);
+</pre>
+<p>添加自定义属性的脚本环境是提供脚本API是特定于应用程序的标准方法之一。通常这些自定义属性是由创建的对象<a href="qscriptengine.html#newQObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newQObject">newQObject</a>（）或<a href="qscriptengine.html#newObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newObject">newObject</a>通过创建（ ）函数或构造函数<a href="qscriptengine.html#newFunction" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newFunction">newFunction</a>（ ） 。</p>
+<a id="script-exceptions" name="script-exceptions"></a>
+<h3>Script Exceptions</h3>
+<p><a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">evaluate</a>（ ）可以抛出一个脚本异常（例如，由于语法错误） ，在这种情况下，返回值是被抛出的值（通常是<tt>Error</tt>对象） 。您可以检查是否评估通过调用出现异常<a href="qscriptengine.html#hasUncaughtException" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#hasUncaughtException">hasUncaughtException</a>（ ） 。在这种情况下，你可以调用的错误对象的toString （）来获取错误消息。目前未捕获的异常，也可通过<a href="qscriptengine.html#uncaughtException" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#uncaughtException">uncaughtException</a>（ ） 。调用<a href="qscriptengine.html#clearExceptions" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#clearExceptions">clearExceptions</a>（ ）将导致任何未捕获的异常被清除。</p>
+<pre class="cpp">
+ <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> result <span class="operator">=</span> myEngine<span class="operator">.</span><a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">evaluate</a>(<span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>);
+ <span class="keyword">if</span> (myEngine<span class="operator">.</span>hasUncaughtException()) {
+     <span class="type">int</span> line <span class="operator">=</span> myEngine<span class="operator">.</span>uncaughtExceptionLineNumber();
+     <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"uncaught exception at line"</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> line <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">":"</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> result<span class="operator">.</span>toString();
+ }
+</pre>
+<p>该<a href="qscriptengine.html#checkSyntax" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#checkSyntax">checkSyntax</a>（）函数可以被用来确定是否代码可以被有效地传递给<a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">evaluate</a>（ ） 。</p>
+<a id="script-object-creation" name="script-object-creation"></a>
+<h3>Script Object Creation</h3>
+<p>使用<a href="qscriptengine.html#newObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newObject">newObject</a>（）来创建一个标准的Qt Script对象，这是C + +的等效脚本语句<tt>new Object()</tt>。您可以使用对象特定功能​​的<a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>操纵脚本对象（例如<a href="qscriptvalue.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html#setProperty">QScriptValue.setProperty</a>（））。同样地，使用<a href="qscriptengine.html#newArray" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newArray">newArray</a>（）来创建一个Qt脚本数组对象。使用<a href="qscriptengine.html#newDate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newDate">newDate</a>（ ）来创建一个<tt>Date</tt>对象，并<a href="qscriptengine.html#newRegExp" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newRegExp">newRegExp</a>（ ）来创建一个<tt>RegExp</tt>对象。</p>
+<a id="qobject-integration" name="qobject-integration"></a>
+<h3>QObject Integration</h3>
+<p>使用<a href="qscriptengine.html#newQObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newQObject">newQObject</a>（ ）来包装<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>（或子类）的指针。<a href="qscriptengine.html#newQObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newQObject">newQObject</a>（ ）返回一个代理脚本对象，属性，孩子，的信号和槽<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>可作为代理对象的属性。不需要任何绑定代码，因为它是使用Qt元对象系统动态地进行。</p>
+<pre class="cpp">
+ <span class="type"><a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a></span> button;
+ <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> scriptButton <span class="operator">=</span> myEngine<span class="operator">.</span><a href="qscriptengine.html#newQObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newQObject">newQObject</a>(<span class="operator">&amp;</span>button);
+ myEngine<span class="operator">.</span><a href="qscriptengine.html#globalObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#globalObject">globalObject</a>()<span class="operator">.</span><a href="qobject.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qobject.html#setProperty">setProperty</a>(<span class="string">"button"</span><span class="operator">,</span> scriptButton);
+
+ myEngine<span class="operator">.</span><a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">evaluate</a>(<span class="string">"button.checkable = true"</span>);
+
+ <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> scriptButton<span class="operator">.</span><a href="qobject.html#property" tppabs="http://pyqt4doc.appspot.com/qobject.html#property">property</a>(<span class="string">"checkable"</span>)<span class="operator">.</span>toBoolean();
+ scriptButton<span class="operator">.</span><a href="qobject.html#property" tppabs="http://pyqt4doc.appspot.com/qobject.html#property">property</a>(<span class="string">"show"</span>)<span class="operator">.</span>call(); <span class="comment">// call the show() slot</span>
+</pre>
+<p>使用<a href="qscriptengine.html#qScriptConnect" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#qScriptConnect">qScriptConnect</a>（ ）到一个C + +的信号连接到一个脚本函数，这是Qt脚本相当于<a href="qobject.html#connect" tppabs="http://pyqt4doc.appspot.com/qobject.html#connect">QObject.connect</a>（ ） 。当一个脚本函数以响应一个C + +的信号调用时，它可能会导致脚本异常，你可以连接到<a href="qscriptengine.html#signalHandlerException" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#signalHandlerException">signalHandlerException</a>（）信号捕捉这样的异常。</p>
+<p>使用<a href="qscriptengine.html#newQMetaObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newQMetaObject">newQMetaObject</a>（ ）来包装<a href="qmetaobject.html" tppabs="http://pyqt4doc.appspot.com/qmetaobject.html">QMetaObject</a>，这给你的一个“脚本表示”<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>基类。<a href="qscriptengine.html#newQMetaObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newQMetaObject">newQMetaObject</a>（ ）返回一个代理脚本对象，可作为代理对象的属性的类的枚举值。您还可以指定将用于构造类的对象（例如，当构造函数是从一个脚本调用）的函数。对于具有“标准”的Qt类的构造函数， Qt的脚本可以提供一个默认的构造函数的脚本为你见<a href="qscriptengine.html#scriptValueFromQMetaObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#scriptValueFromQMetaObject">scriptValueFromQMetaObject</a>（ ） 。</p>
+<p>如需了解更多信息<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>整合，见<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/scripting.html">Making Applications
+Scriptable</a></p>
+<a id="support-for-custom-c-types" name="support-for-custom-c-types"></a>
+<h3>Support for Custom C++ Types</h3>
+<p>使用<a href="qscriptengine.html#newVariant" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newVariant">newVariant</a>（ ）来包装<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>。这可以被用来存储自定义的值（非<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>已登记的Qt的间位型系统）的C + +类型。为了使这种类型的脚本化的，通常一个原型（代表）对象的C + +类通过调用相关联<a href="qscriptengine.html#setDefaultPrototype" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#setDefaultPrototype">setDefaultPrototype</a>（）;原型对象定义了C + +类型的脚本API 。不同的是<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>集成，没有自动绑定可能在这里，即你必须使用创建脚本API自己，例如<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qscriptable.html">QScriptable</a>类。</p>
+<p>使用<a href="qscriptengine.html#fromScriptValue" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#fromScriptValue">fromScriptValue</a>（ ）投从<a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>另一种类型，并<a href="qscriptengine.html#toScriptValue" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#toScriptValue">toScriptValue</a>（ ）来创建一个<a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>从另一个值。您可以指定C + +类型的转换是要与执行<a href="qscriptengine.html#qScriptRegisterMetaType" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#qScriptRegisterMetaType">qScriptRegisterMetaType</a>（）和<a href="qscriptengine.html#qScriptRegisterSequenceMetaType" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#qScriptRegisterSequenceMetaType">qScriptRegisterSequenceMetaType</a>（ ） 。默认情况下， Qt的脚本将使用<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>存储自定义类型的值。</p>
+<a id="importing-extensions" name="importing-extensions"></a>
+<h3>Importing Extensions</h3>
+<p>使用<a href="qscriptengine.html#importExtension" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#importExtension">importExtension</a>（ ）来导入基于插件的扩展进入发动机。通话<a href="qscriptengine.html#availableExtensions" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#availableExtensions">availableExtensions</a>（）来获取一个列表命名所有可用的扩展，<a href="qscriptengine.html#importedExtensions" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#importedExtensions">importedExtensions</a>（）来获取一个列表的命名只有那些已导入扩展。</p>
+<p>Call <a href="qscriptengine.html#pushContext" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#pushContext">pushContext</a>（）打开了一个新的变量范围，<a href="qscriptengine.html#popContext" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#popContext">popContext</a>（ ）来关闭当前作用域。如果你正在实施，评估含临时变量定义（如脚本代码的扩展，这是非常有用<tt>var foo = 123;</tt>）是安全的丢弃时，评估已经完成。</p>
+<a id="native-functions" name="native-functions"></a>
+<h3>Native Functions</h3>
+<p>使用<a href="qscriptengine.html#newFunction" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newFunction">newFunction</a>（ ）包装机（C + + ）的功能，包括构造为自己的自定义类型，使得这些可以从脚本代码被调用。这些功能必须有签名<a href="qscriptengine.html#FunctionSignature-typedef" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#FunctionSignature-typedef">QScriptEngine.FunctionSignature</a>。然后，您可以通过该函数作为参数传递给<a href="qscriptengine.html#newFunction" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newFunction">newFunction</a>（ ） 。这里是一个函数返回它的前两个参数的和的一个例子：</p>
+<pre class="cpp">
+ <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> myAdd(<span class="type"><a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a></span> <span class="operator">*</span>context<span class="operator">,</span> <span class="type">QScriptEngine</span> <span class="operator">*</span>engine)
+ {
+    <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> a <span class="operator">=</span> context<span class="operator">-</span><span class="operator">&gt;</span>argument(<span class="number">0</span>);
+    <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> b <span class="operator">=</span> context<span class="operator">-</span><span class="operator">&gt;</span>argument(<span class="number">1</span>);
+    <span class="keyword">return</span> a<span class="operator">.</span>toNumber() <span class="operator">+</span> b<span class="operator">.</span>toNumber();
+ }
+</pre>
+<p>为了揭露这个功能的脚本代码，可以将其设置为全局对象的一个属性：</p>
+<pre class="cpp">
+ <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> fun <span class="operator">=</span> myEngine<span class="operator">.</span><a href="qscriptengine.html#newFunction" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newFunction">newFunction</a>(myAdd);
+ myEngine<span class="operator">.</span><a href="qscriptengine.html#globalObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#globalObject">globalObject</a>()<span class="operator">.</span><a href="qobject.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qobject.html#setProperty">setProperty</a>(<span class="string">"myAdd"</span><span class="operator">,</span> fun);
+</pre>
+<p>一旦做到这一点，脚本代码可以调用你的函数在完全相同的方式作为一个“正常”的脚本函数：</p>
+<pre class="cpp">
+ <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> result <span class="operator">=</span> myEngine<span class="operator">.</span><a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">evaluate</a>(<span class="string">"myAdd(myNumber, 1)"</span>);
+</pre>
+<a id="long-running-scripts" name="long-running-scripts"></a>
+<h3>Long-running Scripts</h3>
+<p>如果您需要评估从主（图形用户界面）线程可能长时间运行脚本，你应该首先调用<a href="qscriptengine.html#setProcessEventsInterval" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#setProcessEventsInterval">setProcessEventsInterval</a>（ ） ，以确保该GUI保持响应。你可以通过调用中止当前运行脚本<a href="qscriptengine.html#abortEvaluation" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#abortEvaluation">abortEvaluation</a>（ ） 。您可以决定是否发动机是通过调用当前正在运行的脚本<a href="qscriptengine.html#isEvaluating" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#isEvaluating">isEvaluating</a>（ ） 。</p>
+<a id="garbage-collection" name="garbage-collection"></a>
+<h3>Garbage Collection</h3>
+<p>Qt的脚本对象可以被垃圾收集时，他们不再被引用。有没有保证，以时自动垃圾回收将会发生。</p>
+<p>该<a href="qscriptengine.html#collectGarbage" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#collectGarbage">collectGarbage</a>（ ）函数可以被调用来显式地请求垃圾收集。</p>
+<p>该<a href="qscriptengine.html#reportAdditionalMemoryCost" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#reportAdditionalMemoryCost">reportAdditionalMemoryCost</a>（ ）函数可以被调用，以表明一个Qt Script对象佔并非由脚本环境管理内存。报告的额外成本使得它更可能是垃圾收集器将被触发。这可能是有用的，例如，当许多习俗，当地人的Qt Script对象被分配。</p>
+<a id="core-debugging-tracing-facilities" name="core-debugging-tracing-facilities"></a>
+<h3>Core Debugging/Tracing Facilities</h3>
+<p>由于Qt的4.4 ，您可以通过有关脚本执行（如脚本函数调用和语句的执行）活动通知<a href="qscriptengineagent.html" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html">QScriptEngineAgent</a>接口，见<a href="qscriptengine.html#setAgent" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#setAgent">setAgent</a>（）函数。这可以被用来实现调试和代码QScriptEngine的分析。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="QObjectWrapOption-enum"></a>QScriptEngine.QObjectWrapOption</h3>
+<p>这些标志包装时指定一个选项<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>终场前<a href="qscriptengine.html#newQObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newQObject">newQObject</a>（ ） 。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngine.ExcludeChildObjects</tt>
+</td>
+<td class="topAlign"><tt>0x0001</tt></td>
+<td class="topAlign">该脚本对象不会暴露子对象的属性。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngine.ExcludeSuperClassMethods</tt>
+</td>
+<td class="topAlign"><tt>0x0002</tt></td>
+<td class="topAlign">该脚本对象不会暴露在超类继承的信号和槽。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngine.ExcludeSuperClassProperties</tt>
+</td>
+<td class="topAlign"><tt>0x0004</tt></td>
+<td class="topAlign">该脚本对象不会暴露在超类继承的属性。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngine.ExcludeSuperClassContents</tt>
+</td>
+<td class="topAlign"><tt>0x0006</tt></td>
+<td class="topAlign">简写形式ExcludeSuperClassMethods | ExcludeSuperClassProperties</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngine.ExcludeDeleteLater</tt>
+</td>
+<td class="topAlign"><tt>0x0010</tt></td>
+<td class="topAlign">该脚本对象将不会暴露<a href="qobject.html#deleteLater" tppabs="http://pyqt4doc.appspot.com/qobject.html#deleteLater">QObject.deleteLater</a>（）槽。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QScriptEngine.ExcludeSlots</tt></td>
+<td class="topAlign"><tt>0x0020</tt></td>
+<td class="topAlign">该脚本对象将不会暴露<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>的插槽。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngine.AutoCreateDynamicProperties</tt>
+</td>
+<td class="topAlign"><tt>0x0100</tt></td>
+<td class="topAlign">不已经在存在属性<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>将创建作为该对象的动态属性，而不是作为脚本对象的属性。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngine.PreferExistingWrapperObject</tt>
+</td>
+<td class="topAlign"><tt>0x0200</tt></td>
+<td class="topAlign">如果与请求的配置一个包装对象已存在，则返回该对象。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngine.SkipMethodsInEnumeration</tt>
+</td>
+<td class="topAlign"><tt>0x0008</tt></td>
+<td class="topAlign">枚举对象的属性时，不包括方法（信号和槽） 。</td>
+</tr>
+</table>
+<p>该QObjectWrapOptions类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cQObjectWrapOption\u003e 。它存储QObjectWrapOption值的或组合。</p>
+
+
+<h3 class="fn">
+<a name="ValueOwnership-enum"></a>QScriptEngine.ValueOwnership</h3>
+<p>包装一个C + +的值，例如，当此枚举指定所有权通过使用<a href="qscriptengine.html#newQObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newQObject">newQObject</a>（ ） 。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QScriptEngine.QtOwnership</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">标准的Qt所有权规则适用，即相关联的对象将永远不会被明确地被脚本引擎删除。这是默认的。 （<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>所有权的解释<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/objecttrees.html">Object Trees &amp; Ownership</a>。 ）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QScriptEngine.ScriptOwnership</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该值是由脚本环境拥有。相关的数据都将被删除时，相应的（比如，在垃圾收集器发现，有没有更多的活动引用到的值） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QScriptEngine.AutoOwnership</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">如果关联的对象有父， Qt的所有权规则（ QtOwnership ），否则，该对象是由脚本环境（ ScriptOwnership ）全资拥有。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QScriptEngine"></a>QScriptEngine.__init__ (<i>self</i>)</h3>
+<p>构造一个<a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a>对象。</p>
+<p>该<a href="qscriptengine.html#globalObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#globalObject">globalObject</a>（ ）初始化为具有属性中所描述<a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">
+ECMA-262</a>，第15.1节。</p>
+
+
+<h3 class="fn">
+<a name="QScriptEngine-2"></a>QScriptEngine.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i>)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a>与给定对象<i>parent</i>。</p>
+<p>该<a href="qscriptengine.html#globalObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#globalObject">globalObject</a>（ ）初始化为具有属性中所描述<a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">
+ECMA-262</a>，第15.1节。</p>
+
+
+<h3 class="fn">
+<a name="abortEvaluation"></a>QScriptEngine.abortEvaluation (<i>self</i>, <a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> <i>result</i> = QScriptValue())</h3>
+<p>中止任何脚本评估目前正在进行这款发动机。给定<i>result</i>被传递回作为评价的结果（即，它是从调用返回到<a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">evaluate</a>（ ）被中止） 。</p>
+<p>如果发动机没有评估一个脚本（即<a href="qscriptengine.html#isEvaluating" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#isEvaluating">isEvaluating</a>（ ）返回False ） ，这个函数不执行任何操作。</p>
+<p>调用此函数，如果您需要中止正在运行的脚本出于某种原因，如当你发现这个脚本已经运行了几秒钟没有完成。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">evaluate</a>（ ）<a href="qscriptengine.html#isEvaluating" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#isEvaluating">isEvaluating</a>（）和<a href="qscriptengine.html#setProcessEventsInterval" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#setProcessEventsInterval">setProcessEventsInterval</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="agent"></a><a href="qscriptengineagent.html" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html">QScriptEngineAgent</a> QScriptEngine.agent (<i>self</i>)</h3>
+<p>返回在此引擎上，或0当前已安装，如果没有安装代理的代理。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qscriptengine.html#setAgent" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#setAgent">setAgent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="availableExtensions"></a>QStringList QScriptEngine.availableExtensions (<i>self</i>)</h3>
+<p>返回一个列表的命名可以导入现有的扩展使用<a href="qscriptengine.html#importExtension" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#importExtension">importExtension</a>（）函数。该列表包括已导入扩展。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qscriptengine.html#importExtension" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#importExtension">importExtension</a>（）和<a href="qscriptengine.html#importedExtensions" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#importedExtensions">importedExtensions</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="canEvaluate"></a>bool QScriptEngine.canEvaluate (<i>self</i>, QString <i>program</i>)</h3>
+<h3 class="fn">
+<a name="checkSyntax"></a><a href="qscriptsyntaxcheckresult.html" tppabs="http://pyqt4doc.appspot.com/qscriptsyntaxcheckresult.html">QScriptSyntaxCheckResult</a> QScriptEngine.checkSyntax (QString <i>program</i>)</h3>
+<p>检查给定的语法<i>program</i>。返回<a href="qscriptsyntaxcheckresult.html" tppabs="http://pyqt4doc.appspot.com/qscriptsyntaxcheckresult.html">QScriptSyntaxCheckResult</a>对象，该对象包含检查的结果。</p>
+<p>此功能被引入Qt的4.5 。</p>
+
+
+<h3 class="fn">
+<a name="clearExceptions"></a>QScriptEngine.clearExceptions (<i>self</i>)</h3>
+<p>清除在这款发动机的任何未捕获的异常。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qscriptengine.html#hasUncaughtException" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#hasUncaughtException">hasUncaughtException</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="collectGarbage"></a>QScriptEngine.collectGarbage (<i>self</i>)</h3>
+<p>运行垃圾回收器。</p>
+<p>垃圾收集器将尝试通过定位和处理不再可达脚本环境中的对象回收内存。</p>
+<p>通常你不需要调用此函数;垃圾收集器会自动被调用时，<a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a>决定是明智的，这样做（即已经建立了一定数量的新对象时） 。但是，您可以明确地请求垃圾收集，应尽快进行调用这个函数。</p>
+<p><b>See also</b> <a href="qscriptengine.html#reportAdditionalMemoryCost" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#reportAdditionalMemoryCost">reportAdditionalMemoryCost</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentContext"></a><a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a> QScriptEngine.currentContext (<i>self</i>)</h3>
+<p>返回当前上下文。</p>
+<p>当前上下文通常访问来检索本地函数的参数和' this'对象，为了方便，它可作为第一个参数<a href="qscriptengine.html#FunctionSignature-typedef" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#FunctionSignature-typedef">QScriptEngine.FunctionSignature</a>。</p>
+
+
+<h3 class="fn">
+<a name="defaultPrototype"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptEngine.defaultPrototype (<i>self</i>, int <i>metaTypeId</i>)</h3>
+<p>返回与给定关联的默认原型<i>metaTypeId</i>，或无效<a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>如果没有预设的样机已定。</p>
+<p><b>See also</b> <a href="qscriptengine.html#setDefaultPrototype" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#setDefaultPrototype">setDefaultPrototype</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="evaluate"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptEngine.evaluate (<i>self</i>, QString <i>program</i>, QString <i>fileName</i> = QString(), int <i>lineNumber</i> = 1)</h3>
+<p>Evaluates <i>program</i>，使用<i>lineNumber</i>作为基准线数，并返回该评价的结果。</p>
+<p>脚本代码会在当前上下文中进行评估。</p>
+<p>的评价<i>program</i>可能会导致发动机异常，在这种情况下，返回值将是被抛出（通常是一个例外<tt>Error</tt>对象） 。您可以致电<a href="qscriptengine.html#hasUncaughtException" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#hasUncaughtException">hasUncaughtException</a>（ ） ，以确定是否发生在最后一次通话异常，评估（ ） 。</p>
+<p><i>lineNumber</i>用于指定一个开始行号为<i>program</i>;报告，涉及到本次评测的发动机（如行号信息<a href="qscriptengine.html#uncaughtExceptionLineNumber" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#uncaughtExceptionLineNumber">uncaughtExceptionLineNumber</a>（ ） ）将基于这个论点。例如，如果<i>program</i>由两行代码，并在第二行的语句会导致一个脚本异常，<a href="qscriptengine.html#uncaughtExceptionLineNumber" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#uncaughtExceptionLineNumber">uncaughtExceptionLineNumber</a>（ ）将返回给定的<i>lineNumber</i>加1 。当没有指定起始行号，行号为1型。</p>
+<p><i>fileName</i>用于错误报告。例如，在错误的对象的文件名可以访问通过“文件名”属性，如果它提供了这个功能。</p>
+<p><b>See also</b> <a class="obsolete" href="index.htm#canEvaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine-obsolete.html#canEvaluate">canEvaluate</a>（ ）<a href="qscriptengine.html#hasUncaughtException" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#hasUncaughtException">hasUncaughtException</a>（ ）<a href="qscriptengine.html#isEvaluating" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#isEvaluating">isEvaluating</a>（）和<a href="qscriptengine.html#abortEvaluation" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#abortEvaluation">abortEvaluation</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="globalObject"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptEngine.globalObject (<i>self</i>)</h3>
+<p>返回此引擎的全局对象。</p>
+<p>默认情况下，全局对象包含了内置对象是一部分<a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">
+ECMA-262</a>，如数学，日期和字符串。此外，您可以设置全局对象的属性，以使所有脚本代码你自己的扩展。在脚本代码的非局部变量将被创建为全局对象的属性，以及在全局代码中的局部变量。</p>
+<p><b>See also</b> <a href="qscriptengine.html#setGlobalObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#setGlobalObject">setGlobalObject</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasUncaughtException"></a>bool QScriptEngine.hasUncaughtException (<i>self</i>)</h3>
+<p>返回True如果最后一个脚本评价，导致未捕获的异常，否则返回False 。</p>
+<p>唯一的例外状态被清除时，<a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">evaluate</a>（）被调用。</p>
+<p><b>See also</b> <a href="qscriptengine.html#uncaughtException" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#uncaughtException">uncaughtException</a>（）和<a href="qscriptengine.html#uncaughtExceptionLineNumber" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#uncaughtExceptionLineNumber">uncaughtExceptionLineNumber</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="importedExtensions"></a>QStringList QScriptEngine.importedExtensions (<i>self</i>)</h3>
+<p>返回一个列表的命名已导入的扩展使用<a href="qscriptengine.html#importExtension" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#importExtension">importExtension</a>（）函数。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qscriptengine.html#availableExtensions" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#availableExtensions">availableExtensions</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="importExtension"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptEngine.importExtension (<i>self</i>, QString <i>extension</i>)</h3>
+<p>进口给定的<i>extension</i>这个<a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a>。回报<a href="qscriptengine.html#undefinedValue" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#undefinedValue">undefinedValue</a>（ ）如果分机已成功导入。您可以致电<a href="qscriptengine.html#hasUncaughtException" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#hasUncaughtException">hasUncaughtException</a>（）来检查是否发生错误，在这种情况下，返回值是被抛出的异常（通常是一个值<tt>Error</tt>对象） 。</p>
+<p><a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a>确保一个特定的扩展仅导入一次，随后调用importExtension （ ）使用相同的扩展名会做什么，回报<a href="qscriptengine.html#undefinedValue" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#undefinedValue">undefinedValue</a>（ ） 。</p>
+<p><b>See also</b> <a href="qscriptengine.html#availableExtensions" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#availableExtensions">availableExtensions</a>（ ）<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qscriptextensionplugin.html">QScriptExtensionPlugin</a>和<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscriptextensions.html">Creating QtScript
+Extensions</a>。</p>
+
+
+<h3 class="fn">
+<a name="installTranslatorFunctions"></a>QScriptEngine.installTranslatorFunctions (<i>self</i>, <a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> <i>object</i> = QScriptValue())</h3>
+<p>安装在给定的翻译功能<i>object</i>或全局对象上，如果没有指定对象。</p>
+<p>Qt的剧本翻译的功能和C + +翻译功能之间的关系如下表所述：</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Script Function</th>
+<th>Corresponding C++ Function</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td>qsTr()</td>
+<td>
+<a href="qobject.html#tr" tppabs="http://pyqt4doc.appspot.com/qobject.html#tr">QObject.tr</a>()</td>
+</tr>
+<tr class="even" valign="top">
+<td>
+<a href="index.htm#QT_TR_NOOP" tppabs="http://pyqt4doc.appspot.com/qtcore.html#QT_TR_NOOP">QT_TR_NOOP</a>()</td>
+<td>
+<a href="index.htm#QT_TR_NOOP" tppabs="http://pyqt4doc.appspot.com/qtcore.html#QT_TR_NOOP">QT_TR_NOOP</a>()</td>
+</tr>
+<tr class="odd" valign="top">
+<td>qsTranslate()</td>
+<td>
+<a href="qcoreapplication.html#translate" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#translate">QCoreApplication.translate</a>()</td>
+</tr>
+<tr class="even" valign="top">
+<td>
+<a href="index.htm#QT_TRANSLATE_NOOP" tppabs="http://pyqt4doc.appspot.com/qtcore.html#QT_TRANSLATE_NOOP">QT_TRANSLATE_NOOP</a>()</td>
+<td>
+<a href="index.htm#QT_TRANSLATE_NOOP" tppabs="http://pyqt4doc.appspot.com/qtcore.html#QT_TRANSLATE_NOOP">QT_TRANSLATE_NOOP</a>()</td>
+</tr>
+<tr class="odd" valign="top">
+<td>qsTrId() (since 4.7)</td>
+<td>
+<a href="index.htm#qtTrId" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qtTrId">qtTrId</a>()</td>
+</tr>
+<tr class="even" valign="top">
+<td>
+<a href="index.htm#QT_TRID_NOOP" tppabs="http://pyqt4doc.appspot.com/qtcore.html#QT_TRID_NOOP">QT_TRID_NOOP</a>() (since
+4.7)</td>
+<td>
+<a href="index.htm#QT_TRID_NOOP" tppabs="http://pyqt4doc.appspot.com/qtcore.html#QT_TRID_NOOP">QT_TRID_NOOP</a>()</td>
+</tr>
+</table>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/internationalization.html">Internationalization with Qt</a>。</p>
+
+
+<h3 class="fn">
+<a name="isEvaluating"></a>bool QScriptEngine.isEvaluating (<i>self</i>)</h3>
+<p>返回True如果该发动机目前正在评估一个脚本，否则返回False 。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">evaluate</a>（）和<a href="qscriptengine.html#abortEvaluation" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#abortEvaluation">abortEvaluation</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="newArray"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptEngine.newArray (<i>self</i>, int <i>length</i> = 0)</h3>
+<p>创建<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscript.html">QtScript</a>与给定的类数组对象<i>length</i>。</p>
+<p><b>See also</b> <a href="qscriptengine.html#newObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newObject">newObject</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="newDate"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptEngine.newDate (<i>self</i>, float <i>value</i>)</h3>
+<p>创建<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscript.html">QtScript</a>之类的日期与给定对象<i>value</i>（毫秒自1970年1月1日的数字， UTC ） 。</p>
+
+
+<h3 class="fn">
+<a name="newDate-2"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptEngine.newDate (<i>self</i>, <a href="qdatetime.html" tppabs="http://pyqt4doc.appspot.com/qdatetime.html">QDateTime</a> <i>value</i>)</h3>
+<p>创建<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscript.html">QtScript</a>从给定的类Date对象<i>value</i>。</p>
+<p><b>See also</b> <a href="qscriptvalue.html#toDateTime" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html#toDateTime">QScriptValue.toDateTime</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="newFunction"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptEngine.newFunction (<i>self</i>, callable <i>signature</i>, int <i>length</i> = 0)</h3>
+<p>创建<a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>一个封装了原生（ C + +）的功能。<i>fun</i>必须是一个C + +函数签名<a href="qscriptengine.html#FunctionSignature-typedef" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#FunctionSignature-typedef">QScriptEngine.FunctionSignature</a>。<i>length</i>是参数的数量<i>fun</i>预计，这将成为<tt>length</tt>的创建属性<a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>。</p>
+<p>需要注意的是<i>length</i>只给出了函数需要的参数个数的指示，一个函数的实际调用可以包括任意数量的参数。您可以检查<a href="qscriptcontext.html#argumentCount" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#argumentCount">argumentCount()</a>的<a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a>与调用相关联，以确定传递的参数的实际数目。</p>
+<p>A <tt>prototype</tt>属性是生成的函数对象自动创建的，以提供该功能将被用作构造函数的可能性。</p>
+<p>通过结合newFunction （ ）和属性标志<a href="qscriptvalue.html#PropertyFlag-enum" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html#PropertyFlag-enum">QScriptValue.PropertyGetter</a>和<a href="qscriptvalue.html#PropertyFlag-enum" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html#PropertyFlag-enum">QScriptValue.PropertySetter</a>，您可以创建像在脚本代码的正常性能的脚本对象的属性，但实际上通过函数（类似于物业的工作访问<a href="index.htm#qt-s-property-system" tppabs="http://pyqt4doc.appspot.com/properties.html#qt-s-property-system">Qt's Property System</a>） 。例如：</p>
+<pre class="cpp">
+ <span class="keyword">static</span> <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> getSetFoo(<span class="type"><a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a></span> <span class="operator">*</span>context<span class="operator">,</span> <span class="type"><a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a></span> <span class="operator">*</span>engine)
+ {
+     <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> callee <span class="operator">=</span> context<span class="operator">-</span><span class="operator">&gt;</span>callee();
+     <span class="keyword">if</span> (context<span class="operator">-</span><span class="operator">&gt;</span>argumentCount() <span class="operator">=</span><span class="operator">=</span> <span class="number">1</span>) <span class="comment">// writing?</span>
+         callee<span class="operator">.</span>setProperty(<span class="string">"value"</span><span class="operator">,</span> context<span class="operator">-</span><span class="operator">&gt;</span>argument(<span class="number">0</span>));
+     <span class="keyword">return</span> callee<span class="operator">.</span>property(<span class="string">"value"</span>);
+ }
+
+ <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+
+ <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> object <span class="operator">=</span> engine<span class="operator">.</span><a href="qscriptengine.html#newObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newObject">newObject</a>();
+ object<span class="operator">.</span><a href="qobject.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qobject.html#setProperty">setProperty</a>(<span class="string">"foo"</span><span class="operator">,</span> engine<span class="operator">.</span>newFunction(getSetFoo)<span class="operator">,</span>
+     <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span><span class="operator">.</span>PropertyGetter <span class="operator">|</span> <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span><span class="operator">.</span>PropertySetter);
+</pre>
+<p>当属性<tt>foo</tt>脚本对象的脚本代码随后访问，<tt>getSetFoo()</tt>将被调用来处理访问。在这种特殊情况下，我们选择了存储的“真实”的价值<tt>foo</tt>作为访问函数本身的属性，你可以自由的做任何你喜欢这个功能。</p>
+<p>在上面的例子中，一个单一的原生函数用来处理读取和写入属性;参数计数来确定，如果我们正在处理一个读或写。您还可以使用两个单独的函数，只需指定相关标志（<a href="qscriptvalue.html#PropertyFlag-enum" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html#PropertyFlag-enum">QScriptValue.PropertyGetter</a>
+or <a href="qscriptvalue.html#PropertyFlag-enum" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html#PropertyFlag-enum">QScriptValue.PropertySetter</a>）设置属性时，例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> object <span class="operator">=</span> engine<span class="operator">.</span><a href="qscriptengine.html#newObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newObject">newObject</a>();
+ object<span class="operator">.</span><a href="qobject.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qobject.html#setProperty">setProperty</a>(<span class="string">"foo"</span><span class="operator">,</span> engine<span class="operator">.</span>newFunction(getFoo)<span class="operator">,</span> <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span><span class="operator">.</span>PropertyGetter);
+ object<span class="operator">.</span><a href="qobject.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qobject.html#setProperty">setProperty</a>(<span class="string">"foo"</span><span class="operator">,</span> engine<span class="operator">.</span>newFunction(setFoo)<span class="operator">,</span> <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span><span class="operator">.</span>PropertySetter);
+</pre>
+<p><b>See also</b> <a href="qscriptvalue.html#call" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html#call">QScriptValue.call</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="newFunction-2"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptEngine.newFunction (<i>self</i>, callable <i>signature</i>, <a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> <i>prototype</i>, int <i>length</i> = 0)</h3>
+<p>从创建一个构造函数<i>fun</i>用给定的<i>length</i>。该<tt>prototype</tt>所得到的函数的属性被设定为给定的<i>prototype</i>。该<tt>constructor</tt>物业<i>prototype</i>被设定为所产生的功能。</p>
+<p>当一个函数被调用的构造函数（例如<tt>new
+Foo()</tt>） ，与函数调用相关的` this'对象是新对象，该函数将初始化;这个默认构造对象的原型将是功能的公共<tt>prototype</tt>属性。如果你总是想要的功能表现为一个构造函数（如<tt>Foo()</tt>还应该创建一个新的对象） ，或者如果你需要创建自己的对象，而不是使用默认的` this'对象，你应该确保你的对象的原型是否设置正确，或者通过手动设置它，或者，当包装一个自定义类型，由经注册的<a href="qscriptengine.html#defaultPrototype" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#defaultPrototype">defaultPrototype</a>该类型的（） 。例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> Foo(<span class="type"><a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a></span> <span class="operator">*</span>context<span class="operator">,</span> <span class="type"><a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a></span> <span class="operator">*</span>engine)
+ {
+     <span class="keyword">if</span> (context<span class="operator">-</span><span class="operator">&gt;</span>calledAsConstructor()) {
+         <span class="comment">// initialize the new object</span>
+         context<span class="operator">-</span><span class="operator">&gt;</span>thisObject()<span class="operator">.</span>setProperty(<span class="string">"bar"</span><span class="operator">,</span> <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>);
+         <span class="comment">// ...</span>
+         <span class="comment">// return a non-object value to indicate that the</span>
+         <span class="comment">// thisObject() should be the result of the "new Foo()" expression</span>
+         <span class="keyword">return</span> engine<span class="operator">-</span><span class="operator">&gt;</span>undefinedValue();
+     } <span class="keyword">else</span> {
+         <span class="comment">// not called as "new Foo()", just "Foo()"</span>
+         <span class="comment">// create our own object and return that one</span>
+         <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> object <span class="operator">=</span> engine<span class="operator">-</span><span class="operator">&gt;</span>newObject();
+         object<span class="operator">.</span>setPrototype(context<span class="operator">-</span><span class="operator">&gt;</span>callee()<span class="operator">.</span>property(<span class="string">"prototype"</span>));
+         object<span class="operator">.</span>setProperty(<span class="string">"baz"</span><span class="operator">,</span> <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>);
+         <span class="keyword">return</span> object;
+     }
+ }
+
+ <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+
+ <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> fooProto <span class="operator">=</span> engine<span class="operator">-</span><span class="operator">&gt;</span><a href="qscriptengine.html#newObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newObject">newObject</a>();
+ fooProto<span class="operator">.</span><a href="qobject.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qobject.html#setProperty">setProperty</a>(<span class="string">"whatever"</span><span class="operator">,</span> <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>);
+ engine<span class="operator">-</span><span class="operator">&gt;</span><a href="qscriptengine.html#globalObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#globalObject">globalObject</a>()<span class="operator">.</span><a href="qobject.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qobject.html#setProperty">setProperty</a>(<span class="string">"Foo"</span><span class="operator">,</span> engine<span class="operator">-</span><span class="operator">&gt;</span>newFunction(Foo<span class="operator">,</span> fooProto));
+</pre>
+<p>包装一个自定义类型，并为它提供一个构造函数，你通常会做这样的事情：</p>
+<pre class="cpp">
+ <span class="keyword">class</span> Bar { <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span> };
+
+ <a href="qmetatype.html#Q_DECLARE_METATYPE" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#Q_DECLARE_METATYPE">Q_DECLARE_METATYPE</a>(Bar)
+
+ <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> constructBar(<span class="type"><a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a></span> <span class="operator">*</span>context<span class="operator">,</span> <span class="type"><a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a></span> <span class="operator">*</span>engine)
+ {
+     Bar bar;
+     <span class="comment">// initialize from arguments in context, if desired</span>
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+     <span class="keyword">return</span> engine<span class="operator">-</span><span class="operator">&gt;</span>toScriptValue(bar);
+ }
+
+ <span class="keyword">class</span> BarPrototype : <span class="keyword">public</span> <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span><span class="operator">,</span> <span class="keyword">public</span> <span class="type"><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qscriptable.html">QScriptable</a></span>
+ {
+ <span class="comment">// provide the scriptable interface of this type using slots and properties</span>
+ <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ };
+
+ <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+
+ <span class="comment">// create and register the Bar prototype and constructor in the engine</span>
+ BarPrototype <span class="operator">*</span>barPrototypeObject <span class="operator">=</span> <span class="keyword">new</span> BarPrototype(<span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>);
+ <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> barProto <span class="operator">=</span> engine<span class="operator">-</span><span class="operator">&gt;</span><a href="qscriptengine.html#newQObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newQObject">newQObject</a>(barPrototypeObject);
+ engine<span class="operator">-</span><span class="operator">&gt;</span><a href="qscriptengine.html#setDefaultPrototype" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#setDefaultPrototype">setDefaultPrototype</a>(<a href="qmetatype.html#qMetaTypeId" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#qMetaTypeId">qMetaTypeId</a><span class="operator">&lt;</span>Bar<span class="operator">&gt;</span><span class="operator">,</span> barProto);
+ <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> barCtor <span class="operator">=</span> engine<span class="operator">-</span><span class="operator">&gt;</span><a href="qscriptengine.html#newFunction" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newFunction">newFunction</a>(constructBar<span class="operator">,</span> barProto);
+ engine<span class="operator">-</span><span class="operator">&gt;</span><a href="qscriptengine.html#globalObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#globalObject">globalObject</a>()<span class="operator">.</span><a href="qobject.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qobject.html#setProperty">setProperty</a>(<span class="string">"Bar"</span><span class="operator">,</span> barCtor);
+</pre>
+
+
+<h3 class="fn">
+<a name="newObject"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptEngine.newObject (<i>self</i>)</h3>
+<p>创建<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscript.html">QtScript</a>Object类的对象。</p>
+<p>所创建的对象的原型将是对象的原型对象。</p>
+<p><b>See also</b> <a href="qscriptengine.html#newArray" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newArray">newArray</a>（）和<a href="qscriptvalue.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html#setProperty">QScriptValue.setProperty</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="newObject-2"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptEngine.newObject (<i>self</i>, <a href="qscriptclass.html" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html">QScriptClass</a> <i>scriptClass</i>, <a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> <i>data</i> = QScriptValue())</h3>
+<p>这是一个重载函数。</p>
+<p>创建<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscript.html">QtScript</a>给定的类的对象，<i>scriptClass</i>。</p>
+<p>所创建的对象的原型将是对象的原型对象。</p>
+<p><i>data</i>如果指定，则设定为新的对象的内部数据（使用<a href="qscriptvalue.html#setData" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html#setData">QScriptValue.setData</a>（））。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qscriptvalue.html#scriptClass" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html#scriptClass">QScriptValue.scriptClass</a>（）和<a href="qscriptengine.html#reportAdditionalMemoryCost" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#reportAdditionalMemoryCost">reportAdditionalMemoryCost</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="newQMetaObject"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptEngine.newQMetaObject (<i>self</i>, <a href="qmetaobject.html" tppabs="http://pyqt4doc.appspot.com/qmetaobject.html">QMetaObject</a> <i>metaObject</i>, <a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> <i>ctor</i> = QScriptValue())</h3>
+<p>创建<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscript.html">QtScript</a>对象，它代表一个<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>类，使用给定的<i>metaObject</i>和构造函数<i>ctor</i>。</p>
+<p>的枚举<i>metaObject</i>（与Q_ENUMS申报）可作为创建的属性<a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>。当类被称为一个函数，<i>ctor</i>将被调用来创建类的新实例。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> mySpecialQObjectConstructor(<span class="type"><a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a></span> <span class="operator">*</span>context<span class="operator">,</span>
+                                          <span class="type"><a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a></span> <span class="operator">*</span>engine)
+ {
+     <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span> <span class="operator">*</span>parent <span class="operator">=</span> context<span class="operator">-</span><span class="operator">&gt;</span>argument(<span class="number">0</span>)<span class="operator">.</span>toQObject();
+     <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span> <span class="operator">*</span>object <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span>(parent);
+     <span class="keyword">return</span> engine<span class="operator">-</span><span class="operator">&gt;</span>newQObject(object<span class="operator">,</span> <span class="type"><a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a></span><span class="operator">.</span>ScriptOwnership);
+ }
+
+ <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+
+ <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> ctor <span class="operator">=</span> engine<span class="operator">.</span>newFunction(mySpecialQObjectConstructor);
+ <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> metaObject <span class="operator">=</span> engine<span class="operator">.</span>newQMetaObject(<span class="operator">&amp;</span><span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span><span class="operator">.</span>staticMetaObject<span class="operator">,</span> ctor);
+ engine<span class="operator">.</span>globalObject()<span class="operator">.</span>setProperty(<span class="string">"QObject"</span><span class="operator">,</span> metaObject);
+
+ <span class="type"><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a></span> result <span class="operator">=</span> engine<span class="operator">.</span>evaluate(<span class="string">"new QObject()"</span>);
+</pre>
+<p><b>See also</b> <a href="qscriptengine.html#newQObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newQObject">newQObject</a>（）和<a href="qscriptengine.html#scriptValueFromQMetaObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#scriptValueFromQMetaObject">scriptValueFromQMetaObject</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="newQObject"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptEngine.newQObject (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>object</i>, <a href="qscriptengine.html#ValueOwnership-enum" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#ValueOwnership-enum">ValueOwnership</a> <i>ownership</i> = QScriptEngine.QtOwnership, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qscriptengine-qobjectwrapoptions.html">QObjectWrapOptions</a> <i>options</i> = 0)</h3>
+<p>创建<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscript.html">QtScript</a>对象，它封装了给定的<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>object</i>，使用给定的<i>ownership</i>。给定<i>options</i>控制与所得到的脚本对象的交互的各个方面。</p>
+<p>信号和槽，属性和儿童<i>object</i>可作为所创建的属性<a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>。欲了解更多信息，请参阅<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscript.html">QtScript</a>文档。</p>
+<p>If <i>object</i>是一个空指针，这个函数返回<a href="qscriptengine.html#nullValue" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#nullValue">nullValue</a>（ ） 。</p>
+<p>如果默认样机已经注册了<i>object</i>的类（或它的超类，递归） ，新的脚本对象的原型将被设置为默认的原型。</p>
+<p>如果给定的<i>object</i>外面被删除<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscript.html">QtScript</a>的控制，任何试图访问已删除<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>的成员通过<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscript.html">QtScript</a>包装对象（通过脚本代码或C + + ）将导致脚本异常。</p>
+<p><b>See also</b> <a href="qscriptvalue.html#toQObject" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html#toQObject">QScriptValue.toQObject</a>（）和<a href="qscriptengine.html#reportAdditionalMemoryCost" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#reportAdditionalMemoryCost">reportAdditionalMemoryCost</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="newQObject-2"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptEngine.newQObject (<i>self</i>, <a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> <i>scriptObject</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>qtObject</i>, <a href="qscriptengine.html#ValueOwnership-enum" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#ValueOwnership-enum">ValueOwnership</a> <i>ownership</i> = QScriptEngine.QtOwnership, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qscriptengine-qobjectwrapoptions.html">QObjectWrapOptions</a> <i>options</i> = 0)</h3>
+<p>这是一个重载函数。</p>
+<p>初始化给定的<i>scriptObject</i>保持在给定<i>qtObject</i>，并返回该<i>scriptObject</i>。</p>
+<p>此功能使您能够“促进”一个普通的Qt Script对象（由创建<a href="qscriptengine.html#newObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newObject">newObject</a>（）函数），以一<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>代理，或取代<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>包含先前所创建的对象内<a href="qscriptengine.html#newQObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newQObject">newQObject</a>（）函数。</p>
+<p>的原型（ ）<i>scriptObject</i>将保持不变。</p>
+<p>If <i>scriptObject</i>不是一个对象，这个函数的行为类似于正常<a href="qscriptengine.html#newQObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newQObject">newQObject</a>（ ） ，也就是说，它会创建一个新的脚本对象并返回它。</p>
+<p>当你想提供一个脚本构造的这个功能是非常有用的<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>基类。如果你的构造函数中调用一个<tt>new</tt>表达式（<a href="qscriptcontext.html#isCalledAsConstructor" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#isCalledAsConstructor">QScriptContext.isCalledAsConstructor</a>（ ）返回True ） ，你可以通过<a href="qscriptcontext.html#thisObject" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#thisObject">QScriptContext.thisObject</a>（ ） （默认构造脚本对象）这个函数来初始化新的对象。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qscriptengine.html#reportAdditionalMemoryCost" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#reportAdditionalMemoryCost">reportAdditionalMemoryCost</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="newRegExp"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptEngine.newRegExp (<i>self</i>, <a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a> <i>regexp</i>)</h3>
+<p>创建<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscript.html">QtScript</a>一流的RegExp与给定的对象<i>regexp</i>。</p>
+<p><b>See also</b> <a href="qscriptvalue.html#toRegExp" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html#toRegExp">QScriptValue.toRegExp</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="newRegExp-2"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptEngine.newRegExp (<i>self</i>, QString <i>pattern</i>, QString <i>flags</i>)</h3>
+<p>创建<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscript.html">QtScript</a>一流的RegExp与给定的对象<i>pattern</i>和<i>flags</i>。</p>
+<p>法律标志是“G” （全局） ， 'I' （忽略大小写） ，和“M”（多行） 。</p>
+
+
+<h3 class="fn">
+<a name="newVariant"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptEngine.newVariant (<i>self</i>, QVariant <i>value</i>)</h3>
+<p>创建<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscript.html">QtScript</a>物体保持给定的变体<i>value</i>。</p>
+<p>如果默认样机已经注册的元类型的id<i>value</i>，那么创建的对象的原型将是原型，否则，原型将是对象的原型对象。</p>
+<p><b>See also</b> <a href="qscriptengine.html#setDefaultPrototype" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#setDefaultPrototype">setDefaultPrototype</a>（ ）<a href="qscriptvalue.html#toVariant" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html#toVariant">QScriptValue.toVariant</a>（）和<a href="qscriptengine.html#reportAdditionalMemoryCost" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#reportAdditionalMemoryCost">reportAdditionalMemoryCost</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="newVariant-2"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptEngine.newVariant (<i>self</i>, <a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> <i>object</i>, QVariant <i>value</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>初始化给定的Qt脚本<i>object</i>以保持给定的变体<i>value</i>，并返回该<i>object</i>。</p>
+<p>此功能使您能够“促进”一个普通的Qt Script对象（由创建<a href="qscriptengine.html#newObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newObject">newObject</a>（）函数），以一个变体，或替换包含在对象内的变体通过先前建立的<a href="qscriptengine.html#newVariant" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newVariant">newVariant</a>（）函数。</p>
+<p>的原型（ ）<i>object</i>将保持不变。</p>
+<p>If <i>object</i>不是一个对象，这个函数的行为类似于正常<a href="qscriptengine.html#newVariant" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newVariant">newVariant</a>（ ） ，也就是说，它会创建一个新的脚本对象并返回它。</p>
+<p>当你想提供一个脚本构造一个C + +类型，此功能非常有用。如果你的构造函数中调用一个<tt>new</tt>表达式（<a href="qscriptcontext.html#isCalledAsConstructor" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#isCalledAsConstructor">QScriptContext.isCalledAsConstructor</a>（ ）返回True ） ，你可以通过<a href="qscriptcontext.html#thisObject" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#thisObject">QScriptContext.thisObject</a>（ ） （默认构造脚本对象）这个函数来初始化新的对象。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qscriptengine.html#reportAdditionalMemoryCost" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#reportAdditionalMemoryCost">reportAdditionalMemoryCost</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="nullValue"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptEngine.nullValue (<i>self</i>)</h3>
+<p>返回<a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>的原始类型空。</p>
+<p><b>See also</b> <a href="qscriptengine.html#undefinedValue" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#undefinedValue">undefinedValue</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="popContext"></a>QScriptEngine.popContext (<i>self</i>)</h3>
+<p>跳出当前执行上下文，并恢复前一个。该功能必须在配合使用<a href="qscriptengine.html#pushContext" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#pushContext">pushContext</a>（ ） 。</p>
+<p><b>See also</b> <a href="qscriptengine.html#pushContext" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#pushContext">pushContext</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="processEventsInterval"></a>int QScriptEngine.processEventsInterval (<i>self</i>)</h3>
+<p>返回呼叫之间的时间间隔以毫秒为单位<a href="qcoreapplication.html#processEvents" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#processEvents">QCoreApplication.processEvents</a>（ ）解释器运行时。</p>
+<p><b>See also</b> <a href="qscriptengine.html#setProcessEventsInterval" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#setProcessEventsInterval">setProcessEventsInterval</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="pushContext"></a><a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a> QScriptEngine.pushContext (<i>self</i>)</h3>
+<p>进入一个新的执行上下文，并返回相关的<a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a>对象。</p>
+<p>一旦你与上下文做的，你应该叫<a href="qscriptengine.html#popContext" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#popContext">popContext</a>（ ）来恢复旧的上下文。</p>
+<p>默认情况下，新的上下文的` this'对象是全局对象。上下文的<a href="qscriptcontext.html#callee" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#callee">callee</a>（ ）将是无效的。</p>
+<p>当您要评估的脚本代码，就好像它是一个函数体，此功能非常有用。您可以使用上下文的<a href="qscriptcontext.html#activationObject" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html#activationObject">activationObject</a>（ ）来初始化局部变量将提供给脚本。例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a></span> engine;
+ <span class="type"><a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a></span> <span class="operator">*</span>context <span class="operator">=</span> engine<span class="operator">.</span>pushContext();
+ context<span class="operator">-</span><span class="operator">&gt;</span>activationObject()<span class="operator">.</span>setProperty(<span class="string">"myArg"</span><span class="operator">,</span> <span class="number">123</span>);
+ engine<span class="operator">.</span>evaluate(<span class="string">"var tmp = myArg + 42"</span>);
+ <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ engine<span class="operator">.</span>popContext();
+</pre>
+<p>在上面的例子中，新的变量“TMP ”，在脚本中定义的将是本地上下文;换句话说，脚本不会对地球环境有任何影响。</p>
+<p>万一栈溢出，则返回0</p>
+<p><b>See also</b> <a href="qscriptengine.html#popContext" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#popContext">popContext</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="reportAdditionalMemoryCost"></a>QScriptEngine.reportAdditionalMemoryCost (<i>self</i>, int <i>size</i>)</h3>
+<p>报告的给予额外的内存消耗<i>size</i>，以字节为单位，对垃圾收集器。</p>
+<p>这个函数可以调用，以表明一个Qt Script对象都有一个与之关联的内存不是由Qt的脚本本身的管理。报告的额外成本使得它更可能是垃圾收集器将被触发。</p>
+<p>请注意，如果额外的记忆体与脚本环境之外的对象共享，成本不应该被报导，因为收集了Qt Script对象将不会导致内存被释放反正。</p>
+<p>Negative <i>size</i>值将被忽略，即这个功能不能用于报告，额外的内存已经被释放。</p>
+<p>This function was introduced in Qt 4.7.</p>
+<p><b>See also</b> <a href="qscriptengine.html#collectGarbage" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#collectGarbage">collectGarbage</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setAgent"></a>QScriptEngine.setAgent (<i>self</i>, <a href="qscriptengineagent.html" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html">QScriptEngineAgent</a> <i>agent</i>)</h3>
+<p>安装给定的<i>agent</i>在此引擎上。该代理将收到有关脚本执行的各种活动。当你想找出到底是什么引擎这样做是有用的，例如：何时<a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">evaluate</a>（）被调用。代理接口是一样的调试器和分析器工具的基础。</p>
+<p>该引擎维护的所有权<i>agent</i>。</p>
+<p>如有调用此函数将取代现有的代理。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qscriptengine.html#agent" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#agent">agent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setDefaultPrototype"></a>QScriptEngine.setDefaultPrototype (<i>self</i>, int <i>metaTypeId</i>, <a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> <i>prototype</i>)</h3>
+<p>设置确定了在给定的C + +类的默认原型<i>metaTypeId</i>至<i>prototype</i>。</p>
+<p>默认的原型为类型的值的脚本接口<i>metaTypeId</i>当该类型的值从脚本代码访问。每当脚本引擎（隐式或显式地）创建一个<a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>从类型的值<i>metaTypeId</i>，默认的原型将被设置为<a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>的原型。</p>
+<p>该<i>prototype</i>对象本身可以使用的两个主要技术之一来建造;最简单的是子类化<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qscriptable.html">QScriptable</a>，它使您能够通过定义类型的脚本API<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>属性和插槽。另一种可能性是通过调用来创建一个脚本对象<a href="qscriptengine.html#newObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newObject">newObject</a>（ ） ，并填充包裹所需的属性（如原生函数的对象<a href="qscriptengine.html#newFunction" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newFunction">newFunction</a>（））。</p>
+<p><b>See also</b> <a href="qscriptengine.html#defaultPrototype" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#defaultPrototype">defaultPrototype</a>（ ）<a href="qscriptengine.html#qScriptRegisterMetaType" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#qScriptRegisterMetaType">qScriptRegisterMetaType</a>（ ）<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qscriptable.html">QScriptable</a>和<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/script-defaultprototypes.html">Default Prototypes Example</a>。</p>
+
+
+<h3 class="fn">
+<a name="setGlobalObject"></a>QScriptEngine.setGlobalObject (<i>self</i>, <a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> <i>object</i>)</h3>
+<p>设置要在给定的这台发动机的全局对象<i>object</i>。如果<i>object</i>是不是一个有效的脚本对象，这个函数不执行任何操作。</p>
+<p>当设置一个自定义的全局对象，你可能要使用<a href="qscriptvalueiterator.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalueiterator.html">QScriptValueIterator</a>复制的标准全局对象的属性，或者，你可以设置你的自定义对象的内部原型是原始全局对象。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qscriptengine.html#globalObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#globalObject">globalObject</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setProcessEventsInterval"></a>QScriptEngine.setProcessEventsInterval (<i>self</i>, int <i>interval</i>)</h3>
+<p>设置呼叫QCoreApplication.processEvents之间的时间间隔<i>interval</i>毫秒。</p>
+<p>当解释器运行时，所有事件处理是在默认情况下阻止。这意味着，例如，该GUI将不被更新和定时器将不被触发。以允许解释器在执行期间的事件处理1可指定的处理的时间间隔是一个正的值，表示毫秒的每个时间间隔的秒数<a href="qcoreapplication.html#processEvents" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#processEvents">QCoreApplication.processEvents</a>（）被调用。</p>
+<p>默认值是-1，这解释器执行过程中禁用事件处理。</p>
+<p>您可以使用<a href="qcoreapplication.html#postEvent" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#postEvent">QCoreApplication.postEvent</a>（）发表，在接下来的时间间隔进行自定义处理事件。例如，你可以保持的脚本和呼叫的总运行时间轨迹<a href="qscriptengine.html#abortEvaluation" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#abortEvaluation">abortEvaluation</a>当你发现这个脚本已经运行了很长一段时间没有完成（ ） 。</p>
+<p><b>See also</b> <a href="qscriptengine.html#processEventsInterval" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#processEventsInterval">processEventsInterval</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toObject"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptEngine.toObject (<i>self</i>, <a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> <i>value</i>)</h3>
+<p>转换给定的<i>value</i>一个对象，如果有这样的转换是可能的，否则返回一个无效的<a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>。该转换是根据下面的表执行：</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Input Type</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td>Undefined</td>
+<td>An invalid <a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>.</td>
+</tr>
+<tr class="even" valign="top">
+<td>Null</td>
+<td>An invalid <a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>.</td>
+</tr>
+<tr class="odd" valign="top">
+<td>Boolean</td>
+<td>A new Boolean object whose internal value is set to the value
+of the boolean.</td>
+</tr>
+<tr class="even" valign="top">
+<td>Number</td>
+<td>A new Number object whose internal value is set to the value of
+the number.</td>
+</tr>
+<tr class="odd" valign="top">
+<td>String</td>
+<td>A new String object whose internal value is set to the value of
+the string.</td>
+</tr>
+<tr class="even" valign="top">
+<td>Object</td>
+<td>The result is the object itself (no conversion).</td>
+</tr>
+</table>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qscriptengine.html#newObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newObject">newObject</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toStringHandle"></a><a href="qscriptstring.html" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html">QScriptString</a> QScriptEngine.toStringHandle (<i>self</i>, QString <i>str</i>)</h3>
+<p>返回表示给定字符串的句柄，<i>str</i>。</p>
+<p><a href="qscriptstring.html" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html">QScriptString</a>可以用来快速查找属性和比较属性名的脚本对象。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qscriptvalue.html#property" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html#property">QScriptValue.property</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="uncaughtException"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptEngine.uncaughtException (<i>self</i>)</h3>
+<p>返回当前未捕获的异常，或无效<a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>如果没有捕获的异常。</p>
+<p>唯一的例外值通常是一个<tt>Error</tt>对象，在这种情况下，你可以调用toString（）的返回值来获得一个错误消息。</p>
+<p><b>See also</b> <a href="qscriptengine.html#hasUncaughtException" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#hasUncaughtException">hasUncaughtException</a>（）和<a href="qscriptengine.html#uncaughtExceptionLineNumber" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#uncaughtExceptionLineNumber">uncaughtExceptionLineNumber</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="uncaughtExceptionBacktrace"></a>QStringList QScriptEngine.uncaughtExceptionBacktrace (<i>self</i>)</h3>
+<p>返回最后一个未捕获的异常的人类可读的回溯。</p>
+<p>它的形式为<tt>&lt;function-name&gt;()@&lt;file-name&gt;:&lt;line-number&gt;</tt>。</p>
+<p><b>See also</b> <a href="qscriptengine.html#uncaughtException" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#uncaughtException">uncaughtException</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="uncaughtExceptionLineNumber"></a>int QScriptEngine.uncaughtExceptionLineNumber (<i>self</i>)</h3>
+<p>返回最近发生的未捕获异常的代码行数。</p>
+<p>行号从1开始的，除非一个不同的基地被指定为第二个参数<a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">evaluate</a>（ ） 。</p>
+<p><b>See also</b> <a href="qscriptengine.html#hasUncaughtException" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#hasUncaughtException">hasUncaughtException</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="undefinedValue"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptEngine.undefinedValue (<i>self</i>)</h3>
+<p>返回<a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>基本类型未定义的。</p>
+<p><b>See also</b> <a href="qscriptengine.html#nullValue" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#nullValue">nullValue</a>（ ） 。</p>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="signalHandlerException"></a>void signalHandlerException (const QScriptValue&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当连接到一个信号的脚本功能使这个信号被发射的<i>exception</i>。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qscriptengine.html#qScriptConnect" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#qScriptConnect">qScriptConnect</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

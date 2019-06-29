@@ -1,0 +1,448 @@
+﻿<html>
+<head>
+<title>QMetaType Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QMetaType Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QMetaType类管理的元对象系统中命名类型。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qmetatype.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#Type-enum">Type</a></b> { Void, Bool, Int, UInt, ..., User }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qmetatype.html#QMetaType" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#QMetaType">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmetatype.html#QMetaType-2" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#QMetaType-2">__init__</a></b> (<i>self</i>, QMetaType)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>bool <b><a href="qmetatype.html#isRegistered" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#isRegistered">isRegistered</a></b> (int <i>type</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qmetatype.html#type" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#type">type</a></b> (str <i>typeName</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qmetatype.html#typeName" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#typeName">typeName</a></b> (int <i>type</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QMetaType类管理的元对象系统中命名类型。</p>
+<p>这个类被用作辅助马歇尔类型<a href="qmetatype.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#Type-enum">QVariant</a>而在排队的信号和槽的连接。它关联一个类型名的类型，以便它可以被创建并在运行时动态地破坏。声明新类型的<a href="qmetatype.html#Q_DECLARE_METATYPE" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#Q_DECLARE_METATYPE">Q_DECLARE_METATYPE</a>（ ） ，使他们能够提供<a href="qmetatype.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#Type-enum">QVariant</a>与其他基于模板的功能。通话<a href="qmetatype.html#qRegisterMetaType" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#qRegisterMetaType">qRegisterMetaType</a>（）以提供给非基于模板的功能，诸如排队的信号和槽的连接类型。</p>
+<p>任何类或结构有一个公共的默认构造函数，公共拷贝构造函数和析构函数市民可以注册。</p>
+<p>下面的代码分配和解构的一个实例<tt>MyClass</tt>：</p>
+<pre class="cpp">
+ <span class="type">int</span> id <span class="operator">=</span> <span class="type">QMetaType</span><span class="operator">.</span><a href="qmetatype.html#type" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#type">type</a>(<span class="string">"MyClass"</span>);
+ <span class="keyword">if</span> (id <span class="operator">!</span><span class="operator">=</span> <span class="number">0</span>) {
+     <span class="type">void</span> <span class="operator">*</span>myClassPtr <span class="operator">=</span> <span class="type">QMetaType</span><span class="operator">.</span>construct(id);
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+     <span class="type">QMetaType</span><span class="operator">.</span>destroy(id<span class="operator">,</span> myClassPtr);
+     myClassPtr <span class="operator">=</span> <span class="number">0</span>;
+ }
+</pre>
+<p>如果我们想在流运算符<tt>operator&lt;&lt;()</tt>和<tt>operator&gt;&gt;()</tt>工作在<a href="qmetatype.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#Type-enum">QVariant</a>存储自定义类型的对象，自定义类型必须提供<tt>operator&lt;&lt;()</tt>和<tt>operator&gt;&gt;()</tt>运营商。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="Type-enum"></a>QMetaType.Type</h3>
+<p>这些是由所支持的内置类型<a href="qmetatype.html" tppabs="http://pyqt4doc.appspot.com/qmetatype.html">QMetaType</a>：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.Void</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign"><tt>void</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.Bool</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign"><tt>bool</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.Int</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign"><tt>int</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.UInt</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign"><tt>unsigned int</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.Double</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign"><tt>double</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QChar</tt></td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">QChar</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QString</tt></td>
+<td class="topAlign"><tt>10</tt></td>
+<td class="topAlign">QString的</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QByteArray</tt></td>
+<td class="topAlign"><tt>12</tt></td>
+<td class="topAlign">QByteArray中</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.VoidStar</tt></td>
+<td class="topAlign"><tt>128</tt></td>
+<td class="topAlign"><tt>void *</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.Long</tt></td>
+<td class="topAlign"><tt>129</tt></td>
+<td class="topAlign"><tt>long</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.LongLong</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">的LongLong</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.Short</tt></td>
+<td class="topAlign"><tt>130</tt></td>
+<td class="topAlign"><tt>short</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.Char</tt></td>
+<td class="topAlign"><tt>131</tt></td>
+<td class="topAlign"><tt>char</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.ULong</tt></td>
+<td class="topAlign"><tt>132</tt></td>
+<td class="topAlign"><tt>unsigned long</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.ULongLong</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">ULONGLONG</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.UShort</tt></td>
+<td class="topAlign"><tt>133</tt></td>
+<td class="topAlign"><tt>unsigned short</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.UChar</tt></td>
+<td class="topAlign"><tt>134</tt></td>
+<td class="topAlign"><tt>unsigned char</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.Float</tt></td>
+<td class="topAlign"><tt>135</tt></td>
+<td class="topAlign"><tt>float</tt></td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QObjectStar</tt></td>
+<td class="topAlign"><tt>136</tt></td>
+<td class="topAlign">
+<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>*</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QWidgetStar</tt></td>
+<td class="topAlign"><tt>137</tt></td>
+<td class="topAlign">
+<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>*</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QVariant</tt></td>
+<td class="topAlign"><tt>138</tt></td>
+<td class="topAlign">的QVariant</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QColorGroup</tt></td>
+<td class="topAlign"><tt>63</tt></td>
+<td class="topAlign">QColorGroup</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QCursor</tt></td>
+<td class="topAlign"><tt>74</tt></td>
+<td class="topAlign">QCursor</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QDate</tt></td>
+<td class="topAlign"><tt>14</tt></td>
+<td class="topAlign">的QDate</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QSize</tt></td>
+<td class="topAlign"><tt>21</tt></td>
+<td class="topAlign">QSIZE</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QTime</tt></td>
+<td class="topAlign"><tt>15</tt></td>
+<td class="topAlign">QTIME</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QVariantList</tt></td>
+<td class="topAlign"><tt>9</tt></td>
+<td class="topAlign">QVariantList</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QPolygon</tt></td>
+<td class="topAlign"><tt>71</tt></td>
+<td class="topAlign">QPolygon</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QColor</tt></td>
+<td class="topAlign"><tt>67</tt></td>
+<td class="topAlign">而QColor</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QSizeF</tt></td>
+<td class="topAlign"><tt>22</tt></td>
+<td class="topAlign">QSizeF</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QRectF</tt></td>
+<td class="topAlign"><tt>20</tt></td>
+<td class="topAlign">QRectF</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QLine</tt></td>
+<td class="topAlign"><tt>23</tt></td>
+<td class="topAlign">QLine</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QTextLength</tt></td>
+<td class="topAlign"><tt>78</tt></td>
+<td class="topAlign">QTextLength</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QStringList</tt></td>
+<td class="topAlign"><tt>11</tt></td>
+<td class="topAlign">QStringList中</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QVariantMap</tt></td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">QVariantMap</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QVariantHash</tt></td>
+<td class="topAlign"><tt>28</tt></td>
+<td class="topAlign">QVariantHash</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QIcon</tt></td>
+<td class="topAlign"><tt>69</tt></td>
+<td class="topAlign">QIcon则</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QPen</tt></td>
+<td class="topAlign"><tt>77</tt></td>
+<td class="topAlign">QPen</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QLineF</tt></td>
+<td class="topAlign"><tt>24</tt></td>
+<td class="topAlign">QLineF</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QTextFormat</tt></td>
+<td class="topAlign"><tt>79</tt></td>
+<td class="topAlign">QTextFormat</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QRect</tt></td>
+<td class="topAlign"><tt>19</tt></td>
+<td class="topAlign">查阅QRect</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QPoint</tt></td>
+<td class="topAlign"><tt>25</tt></td>
+<td class="topAlign">QPoint</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QUrl</tt></td>
+<td class="topAlign"><tt>17</tt></td>
+<td class="topAlign">QUrl</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QRegExp</tt></td>
+<td class="topAlign"><tt>27</tt></td>
+<td class="topAlign">QRegExp</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QDateTime</tt></td>
+<td class="topAlign"><tt>16</tt></td>
+<td class="topAlign">QDateTime</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QPointF</tt></td>
+<td class="topAlign"><tt>26</tt></td>
+<td class="topAlign">QPointF</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QPalette</tt></td>
+<td class="topAlign"><tt>68</tt></td>
+<td class="topAlign">QPalette</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QFont</tt></td>
+<td class="topAlign"><tt>64</tt></td>
+<td class="topAlign">QFont</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QBrush</tt></td>
+<td class="topAlign"><tt>66</tt></td>
+<td class="topAlign">QBrush</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QRegion</tt></td>
+<td class="topAlign"><tt>72</tt></td>
+<td class="topAlign">QRegion</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QBitArray</tt></td>
+<td class="topAlign"><tt>13</tt></td>
+<td class="topAlign">QBitArray</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QImage</tt></td>
+<td class="topAlign"><tt>70</tt></td>
+<td class="topAlign">QImage的</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QKeySequence</tt></td>
+<td class="topAlign"><tt>76</tt></td>
+<td class="topAlign">QKeySequence</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QSizePolicy</tt></td>
+<td class="topAlign"><tt>75</tt></td>
+<td class="topAlign">QSizePolicy</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QPixmap</tt></td>
+<td class="topAlign"><tt>65</tt></td>
+<td class="topAlign">的QPixmap</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QLocale</tt></td>
+<td class="topAlign"><tt>18</tt></td>
+<td class="topAlign">QLocale</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QBitmap</tt></td>
+<td class="topAlign"><tt>73</tt></td>
+<td class="topAlign">QBitmap</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QMatrix</tt></td>
+<td class="topAlign"><tt>80</tt></td>
+<td class="topAlign">系列QMatrix</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QTransform</tt></td>
+<td class="topAlign"><tt>81</tt></td>
+<td class="topAlign">QTransform</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QMatrix4x4</tt></td>
+<td class="topAlign"><tt>82</tt></td>
+<td class="topAlign">QMatrix4x4</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QVector2D</tt></td>
+<td class="topAlign"><tt>83</tt></td>
+<td class="topAlign">QVector2D</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QVector3D</tt></td>
+<td class="topAlign"><tt>84</tt></td>
+<td class="topAlign">QVector3D</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QVector4D</tt></td>
+<td class="topAlign"><tt>85</tt></td>
+<td class="topAlign">QVector4D</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QQuaternion</tt></td>
+<td class="topAlign"><tt>86</tt></td>
+<td class="topAlign">QQuaternion</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.QEasingCurve</tt></td>
+<td class="topAlign"><tt>29</tt></td>
+<td class="topAlign">QEasingCurve</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMetaType.User</tt></td>
+<td class="topAlign"><tt>256</tt></td>
+<td class="topAlign">用户类型基值</td>
+</tr>
+</table>
+<p>其他类型的可使用注册<a href="qmetatype.html#Q_DECLARE_METATYPE" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#Q_DECLARE_METATYPE">Q_DECLARE_METATYPE</a>（ ） 。</p>
+<p><b>See also</b> <a href="qmetatype.html#type" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#type">type</a>（）和<a href="qmetatype.html#typeName" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#typeName">typeName</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QMetaType"></a>QMetaType.__init__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="QMetaType-2"></a>QMetaType.__init__ (<i>self</i>, <a href="qmetatype.html" tppabs="http://pyqt4doc.appspot.com/qmetatype.html">QMetaType</a>)</h3>
+<h3 class="fn">
+<a name="isRegistered"></a>bool QMetaType.isRegistered (int <i>type</i>)</h3>
+<p>返回True如果一个ID的数据类型<i>type</i>注册，否则返回False 。</p>
+<p><b>See also</b> <a href="qmetatype.html#type" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#type">type</a>（ ）<a href="qmetatype.html#typeName" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#typeName">typeName</a>（）和<a href="qmetatype.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#Type-enum">Type</a>。</p>
+
+
+<h3 class="fn">
+<a name="type"></a>int QMetaType.type (str <i>typeName</i>)</h3>
+<p>返回的句柄调用类型<i>typeName</i>或0，如果不存在这样的类型。</p>
+<p><b>See also</b> <a href="qmetatype.html#isRegistered" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#isRegistered">isRegistered</a>（ ）<a href="qmetatype.html#typeName" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#typeName">typeName</a>（）和<a href="qmetatype.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#Type-enum">Type</a>。</p>
+
+
+<h3 class="fn">
+<a name="typeName"></a>str QMetaType.typeName (int <i>type</i>)</h3>
+<p>返回与给定关联的类型名称<i>type</i>，或者0 ，如果没有匹配的类型被发现。返回的指针不能被删除。</p>
+<p><b>See also</b> <a href="qmetatype.html#type" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#type">type</a>（ ）<a href="qmetatype.html#isRegistered" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#isRegistered">isRegistered</a>（）和<a href="qmetatype.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qmetatype.html#Type-enum">Type</a>。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

@@ -1,0 +1,356 @@
+﻿<html>
+<head>
+<title>QItemSelectionModel Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QItemSelectionModel Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QItemSelectionModel类跟踪视图的选定项目。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qitemselectionmodel.html#SelectionFlag-enum" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#SelectionFlag-enum">SelectionFlag</a></b> { NoUpdate, Clear, Select, Deselect, ..., ClearAndSelect }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel-selectionflags.html">SelectionFlags</a></b>
+</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qitemselectionmodel.html#QItemSelectionModel" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#QItemSelectionModel">__init__</a></b> (<i>self</i>, QAbstractItemModel <i>model</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qitemselectionmodel.html#QItemSelectionModel-2" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#QItemSelectionModel-2">__init__</a></b> (<i>self</i>, QAbstractItemModel <i>model</i>, QObject <i>parent</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qitemselectionmodel.html#clear" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#clear">clear</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qitemselectionmodel.html#clearSelection" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#clearSelection">clearSelection</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qitemselectionmodel.html#columnIntersectsSelection" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#columnIntersectsSelection">columnIntersectsSelection</a></b> (<i>self</i>, int <i>column</i>, QModelIndex <i>parent</i>)</li>
+<li>
+<div class="fn"></div>QModelIndex <b><a href="qitemselectionmodel.html#currentIndex" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#currentIndex">currentIndex</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qitemselectionmodel.html#emitSelectionChanged" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#emitSelectionChanged">emitSelectionChanged</a></b> (<i>self</i>, QItemSelection <i>newSelection</i>, QItemSelection <i>oldSelection</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qitemselectionmodel.html#hasSelection" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#hasSelection">hasSelection</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qitemselectionmodel.html#isColumnSelected" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#isColumnSelected">isColumnSelected</a></b> (<i>self</i>, int <i>column</i>, QModelIndex <i>parent</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qitemselectionmodel.html#isRowSelected" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#isRowSelected">isRowSelected</a></b> (<i>self</i>, int <i>row</i>, QModelIndex <i>parent</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qitemselectionmodel.html#isSelected" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#isSelected">isSelected</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>QAbstractItemModel <b><a href="qitemselectionmodel.html#model" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#model">model</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qitemselectionmodel.html#reset" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#reset">reset</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qitemselectionmodel.html#rowIntersectsSelection" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#rowIntersectsSelection">rowIntersectsSelection</a></b> (<i>self</i>, int <i>row</i>, QModelIndex <i>parent</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qitemselectionmodel.html#select" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#select">select</a></b> (<i>self</i>, QModelIndex <i>index</i>, SelectionFlags <i>command</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qitemselectionmodel.html#select-2" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#select-2">select</a></b> (<i>self</i>, QItemSelection <i>selection</i>, SelectionFlags <i>command</i>)</li>
+<li>
+<div class="fn"></div>list-of-QModelIndex <b><a href="qitemselectionmodel.html#selectedColumns" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#selectedColumns">selectedColumns</a></b> (<i>self</i>, int <i>row</i> = 0)</li>
+<li>
+<div class="fn"></div>list-of-QModelIndex <b><a href="qitemselectionmodel.html#selectedIndexes" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#selectedIndexes">selectedIndexes</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QModelIndex <b><a href="qitemselectionmodel.html#selectedRows" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#selectedRows">selectedRows</a></b> (<i>self</i>, int <i>column</i> = 0)</li>
+<li>
+<div class="fn"></div>QItemSelection <b><a href="qitemselectionmodel.html#selection" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#selection">selection</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qitemselectionmodel.html#setCurrentIndex" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#setCurrentIndex">setCurrentIndex</a></b> (<i>self</i>, QModelIndex <i>index</i>, SelectionFlags <i>command</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qitemselectionmodel.html#currentChanged" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#currentChanged">currentChanged</a></b> (const QModelIndex&amp;,const QModelIndex&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qitemselectionmodel.html#currentColumnChanged" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#currentColumnChanged">currentColumnChanged</a></b> (const QModelIndex&amp;,const QModelIndex&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qitemselectionmodel.html#currentRowChanged" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#currentRowChanged">currentRowChanged</a></b> (const QModelIndex&amp;,const QModelIndex&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qitemselectionmodel.html#selectionChanged" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#selectionChanged">selectionChanged</a></b> (const QItemSelection&amp;,const QItemSelection&amp;)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QItemSelectionModel类跟踪视图的选定项目。</p>
+<p>一个QItemSelectionModel跟踪选定的项目在一个视图或多个视图到同一个模型。它也跟踪当前所选项目的视图中。</p>
+<p>该QItemSelectionModel类是一个<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/model-view.html">Model/View Classes</a>并且是Qt的一部分<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/model-view-programming.html">model/view framework</a>。</p>
+<p>所选择的项目，采用范围存储。每当你要修改的选定项目<a href="qitemselectionmodel.html#select" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#select">select</a>（ ），并提供任一<a href="qitemselection.html" tppabs="http://pyqt4doc.appspot.com/qitemselection.html">QItemSelection</a>或<a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a>和<a href="qitemselectionmodel.html#SelectionFlag-enum" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#SelectionFlag-enum">QItemSelectionModel.SelectionFlag</a>。</p>
+<p>该QItemSelectionModel需要一个两层的方法来选择管理，处理已提交双方选定的项目，并且是当前选择的一部分项目。在当前选择的项目是当前交互的选择（例如用橡皮筋选择或键盘移位的选择）的一部分。</p>
+<p>要更新当前选定的项目，使用或按位<a href="qitemselectionmodel.html#SelectionFlag-enum" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#SelectionFlag-enum">QItemSelectionModel.Current</a>和任何其它的<a href="qitemselectionmodel.html#SelectionFlag-enum" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#SelectionFlag-enum">SelectionFlags</a>。如果省略了<a href="qitemselectionmodel.html#SelectionFlag-enum" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#SelectionFlag-enum">QItemSelectionModel.Current</a>命令，新的当前选择将被创建，并且前一个加入到整个选择。所有的功能在两个层次上作业，例如， selectedItems （ ）将从两个层返回的项目。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="SelectionFlag-enum"></a>QItemSelectionModel.SelectionFlag</h3>
+<p>这个枚举变量描述的方式选择模型将被更新。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QItemSelectionModel.NoUpdate</tt></td>
+<td class="topAlign"><tt>0x0000</tt></td>
+<td class="topAlign">没有选择将会作出修改。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QItemSelectionModel.Clear</tt></td>
+<td class="topAlign"><tt>0x0001</tt></td>
+<td class="topAlign">完整的选择将被清零。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QItemSelectionModel.Select</tt></td>
+<td class="topAlign"><tt>0x0002</tt></td>
+<td class="topAlign">所有指定的索引将被选中。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QItemSelectionModel.Deselect</tt></td>
+<td class="topAlign"><tt>0x0004</tt></td>
+<td class="topAlign">所有指定的索引将被取消。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QItemSelectionModel.Toggle</tt></td>
+<td class="topAlign"><tt>0x0008</tt></td>
+<td class="topAlign">所有指定的索引将被选择或取消选择取决于它们的当前状态。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QItemSelectionModel.Current</tt></td>
+<td class="topAlign"><tt>0x0010</tt></td>
+<td class="topAlign">当前的选择将被更新。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QItemSelectionModel.Rows</tt></td>
+<td class="topAlign"><tt>0x0020</tt></td>
+<td class="topAlign">所有索引将扩大到跨越行。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QItemSelectionModel.Columns</tt></td>
+<td class="topAlign"><tt>0x0040</tt></td>
+<td class="topAlign">所有索引将扩大到跨列。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QItemSelectionModel.SelectCurrent</tt>
+</td>
+<td class="topAlign"><tt>Select | Current</tt></td>
+<td class="topAlign">选择和电流的组合，提供了方便。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QItemSelectionModel.ToggleCurrent</tt>
+</td>
+<td class="topAlign"><tt>Toggle | Current</tt></td>
+<td class="topAlign">切换和电流的组合，提供了方便。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QItemSelectionModel.ClearAndSelect</tt>
+</td>
+<td class="topAlign"><tt>Clear | Select</tt></td>
+<td class="topAlign">清除和选择的组合，提供了方便。</td>
+</tr>
+</table>
+<p>该SelectionFlags类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cSelectionFlag\u003e 。它存储SelectionFlag值的或组合。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QItemSelectionModel"></a>QItemSelectionModel.__init__ (<i>self</i>, <a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a> <i>model</i>)</h3>
+<p>构造一个运行在指定项目的选择模型<i>model</i>。</p>
+
+
+<h3 class="fn">
+<a name="QItemSelectionModel-2"></a>QItemSelectionModel.__init__ (<i>self</i>, <a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a> <i>model</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i>)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个运行在指定项目的选择模型<i>model</i>同<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="clear"></a>QItemSelectionModel.clear (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void clear()</tt>。</p>
+<p>清除选择模型。发射<a href="qitemselectionmodel.html#selectionChanged" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#selectionChanged">selectionChanged</a>（）和<a href="qitemselectionmodel.html#currentChanged" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#currentChanged">currentChanged</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clearSelection"></a>QItemSelectionModel.clearSelection (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void clearSelection()</tt>。</p>
+<p>清除选择中的选择模型。发射<a href="qitemselectionmodel.html#selectionChanged" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#selectionChanged">selectionChanged</a>（ ） 。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="columnIntersectsSelection"></a>bool QItemSelectionModel.columnIntersectsSelection (<i>self</i>, int <i>column</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i>)</h3>
+<p>如果在所选择的任何项目，则返回True<i>column</i>用给定的<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="currentIndex"></a><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> QItemSelectionModel.currentIndex (<i>self</i>)</h3>
+<p>返回模型项指数目前的项目，或无效的索引，如果没有当前项目。</p>
+<p><b>See also</b> <a href="qitemselectionmodel.html#setCurrentIndex" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#setCurrentIndex">setCurrentIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="emitSelectionChanged"></a>QItemSelectionModel.emitSelectionChanged (<i>self</i>, <a href="qitemselection.html" tppabs="http://pyqt4doc.appspot.com/qitemselection.html">QItemSelection</a> <i>newSelection</i>, <a href="qitemselection.html" tppabs="http://pyqt4doc.appspot.com/qitemselection.html">QItemSelection</a> <i>oldSelection</i>)</h3>
+<p>比较了两种选择<i>newSelection</i>和<i>oldSelection</i>并发出<a href="qitemselectionmodel.html#selectionChanged" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#selectionChanged">selectionChanged</a>（ ）与取消和选定的项目。</p>
+
+
+<h3 class="fn">
+<a name="hasSelection"></a>bool QItemSelectionModel.hasSelection (<i>self</i>)</h3>
+<p>返回True如果选择模型中包含的任何选择的范围，否则返回False 。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="isColumnSelected"></a>bool QItemSelectionModel.isColumnSelected (<i>self</i>, int <i>column</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i>)</h3>
+<p>如果所有项目中被选中，则返回True<i>column</i>用给定的<i>parent</i>。</p>
+<p>注意，这个函数通常比调用更快<a href="qitemselectionmodel.html#isSelected" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#isSelected">isSelected</a>（）在同一列中，并且所有的项目不可选择的数据项都被忽略。</p>
+
+
+<h3 class="fn">
+<a name="isRowSelected"></a>bool QItemSelectionModel.isRowSelected (<i>self</i>, int <i>row</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i>)</h3>
+<p>如果所有项目中被选中，则返回True<i>row</i>用给定的<i>parent</i>。</p>
+<p>注意，这个函数通常比调用更快<a href="qitemselectionmodel.html#isSelected" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#isSelected">isSelected</a>（）在同一行和所有项目不可选择的数据项都被忽略。</p>
+
+
+<h3 class="fn">
+<a name="isSelected"></a>bool QItemSelectionModel.isSelected (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>返回True如果给定的模型项目<i>index</i>被选中。</p>
+
+
+<h3 class="fn">
+<a name="model"></a><a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a> QItemSelectionModel.model (<i>self</i>)</h3>
+<p>返回由选择模型上操作的项目模型。</p>
+
+
+<h3 class="fn">
+<a name="reset"></a>QItemSelectionModel.reset (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void reset()</tt>。</p>
+<p>清除选择模型。不发射任何信号。</p>
+
+
+<h3 class="fn">
+<a name="rowIntersectsSelection"></a>bool QItemSelectionModel.rowIntersectsSelection (<i>self</i>, int <i>row</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i>)</h3>
+<p>如果在所选择的任何项目，则返回True<i>row</i>用给定的<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="select"></a>QItemSelectionModel.select (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel-selectionflags.html">SelectionFlags</a> <i>command</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void select(const QModelIndex&amp;,QItemSelectionModel::SelectionFlags)</tt>。</p>
+<p>选择模型项目<i>index</i>使用指定的<i>command</i>，并发射<a href="qitemselectionmodel.html#selectionChanged" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#selectionChanged">selectionChanged</a>（ ） 。</p>
+<p><b>See also</b> <a href="qitemselectionmodel.html#SelectionFlag-enum" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#SelectionFlag-enum">QItemSelectionModel.SelectionFlags</a>。</p>
+
+
+<h3 class="fn">
+<a name="select-2"></a>QItemSelectionModel.select (<i>self</i>, <a href="qitemselection.html" tppabs="http://pyqt4doc.appspot.com/qitemselection.html">QItemSelection</a> <i>selection</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel-selectionflags.html">SelectionFlags</a> <i>command</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void select(const QItemSelection&amp;,QItemSelectionModel::SelectionFlags)</tt>。</p>
+<p>选择项目<i>selection</i>使用指定的<i>command</i>，并发射<a href="qitemselectionmodel.html#selectionChanged" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#selectionChanged">selectionChanged</a>（ ） 。</p>
+<p><b>See also</b> <a href="qitemselectionmodel.html#SelectionFlag-enum" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#SelectionFlag-enum">QItemSelectionModel.SelectionFlag</a>。</p>
+
+
+<h3 class="fn">
+<a name="selectedColumns"></a>list-of-QModelIndex QItemSelectionModel.selectedColumns (<i>self</i>, int <i>row</i> = 0)</h3>
+<p>返回该索引中的给定<i>row</i>对其中所有行被选中的列。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qitemselectionmodel.html#selectedIndexes" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#selectedIndexes">selectedIndexes</a>（）和<a href="qitemselectionmodel.html#selectedRows" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#selectedRows">selectedRows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="selectedIndexes"></a>list-of-QModelIndex QItemSelectionModel.selectedIndexes (<i>self</i>)</h3>
+<p>返回所有选定的模型项目索引的列表。该列表包含没有重复，并没有排序。</p>
+
+
+<h3 class="fn">
+<a name="selectedRows"></a>list-of-QModelIndex QItemSelectionModel.selectedRows (<i>self</i>, int <i>column</i> = 0)</h3>
+<p>返回该索引中的给定<i>column</i>对所有列被选中的行。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qitemselectionmodel.html#selectedIndexes" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#selectedIndexes">selectedIndexes</a>（）和<a href="qitemselectionmodel.html#selectedColumns" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#selectedColumns">selectedColumns</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="selection"></a><a href="qitemselection.html" tppabs="http://pyqt4doc.appspot.com/qitemselection.html">QItemSelection</a> QItemSelectionModel.selection (<i>self</i>)</h3>
+<p>返回存储在选择模型的选择范围。</p>
+
+
+<h3 class="fn">
+<a name="setCurrentIndex"></a>QItemSelectionModel.setCurrentIndex (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel-selectionflags.html">SelectionFlags</a> <i>command</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setCurrentIndex(const QModelIndex&amp;,QItemSelectionModel::SelectionFlags)</tt>。</p>
+<p>设定模型项目<i>index</i>为当前项目，并发射<a href="qitemselectionmodel.html#currentChanged" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#currentChanged">currentChanged</a>（ ） 。目前项目用于键盘导航和焦点指示，它是独立于任何选定的项目，虽然选择的项目也可以是当前项目。</p>
+<p>根据指定的<i>command</i>时，<i>index</i>也可以成为当前选择的一部分。</p>
+<p><b>See also</b> <a href="qitemselectionmodel.html#currentIndex" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#currentIndex">currentIndex</a>（）和<a href="qitemselectionmodel.html#select" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#select">select</a>（ ） 。</p>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="currentChanged"></a>void currentChanged (const QModelIndex&amp;,const QModelIndex&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的当前项的变化。该<i>previous</i>模型项目指标被替换<i>current</i>指标作为选择的当前项。</p>
+<p>请注意，当产品模型被重新设定此信号将不被发射。</p>
+<p><b>See also</b> <a href="qitemselectionmodel.html#currentIndex" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#currentIndex">currentIndex</a>（ ）<a href="qitemselectionmodel.html#setCurrentIndex" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#setCurrentIndex">setCurrentIndex</a>（）和<a href="qitemselectionmodel.html#selectionChanged" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#selectionChanged">selectionChanged</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentColumnChanged"></a>void currentColumnChanged (const QModelIndex&amp;,const QModelIndex&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射，如果<i>current</i>项目的变化和它的列是不同的列<i>previous</i>目前的项目。</p>
+<p>请注意，当产品模型被重新设定此信号将不被发射。</p>
+<p><b>See also</b> <a href="qitemselectionmodel.html#currentChanged" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#currentChanged">currentChanged</a>（ ）<a href="qitemselectionmodel.html#currentRowChanged" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#currentRowChanged">currentRowChanged</a>（ ）<a href="qitemselectionmodel.html#currentIndex" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#currentIndex">currentIndex</a>（）和<a href="qitemselectionmodel.html#setCurrentIndex" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#setCurrentIndex">setCurrentIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentRowChanged"></a>void currentRowChanged (const QModelIndex&amp;,const QModelIndex&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射，如果<i>current</i>项目的变化和它的行是不同的行<i>previous</i>目前的项目。</p>
+<p>请注意，当产品模型被重新设定此信号将不被发射。</p>
+<p><b>See also</b> <a href="qitemselectionmodel.html#currentChanged" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#currentChanged">currentChanged</a>（ ）<a href="qitemselectionmodel.html#currentColumnChanged" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#currentColumnChanged">currentColumnChanged</a>（ ）<a href="qitemselectionmodel.html#currentIndex" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#currentIndex">currentIndex</a>（）和<a href="qitemselectionmodel.html#setCurrentIndex" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#setCurrentIndex">setCurrentIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="selectionChanged"></a>void selectionChanged (const QItemSelection&amp;,const QItemSelection&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的选择改变。在选择的变化被表示为一个项目的选择<i>deselected</i>项目和项目的选择<i>selected</i>项目。</p>
+<p>请注意，目前指数从选择独立的变化。还要注意的是，当该项目模型复位这个信号将不发射。</p>
+<p><b>See also</b> <a href="qitemselectionmodel.html#select" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#select">select</a>（）和<a href="qitemselectionmodel.html#currentChanged" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#currentChanged">currentChanged</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

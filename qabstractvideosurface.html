@@ -1,0 +1,232 @@
+﻿<html>
+<head>
+<title>QAbstractVideoSurface Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QAbstractVideoSurface Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtmultimedia.html">QtMultimedia</a> module]</sup></sup>
+</h1>
+<p>该QAbstractVideoSurface类是视频演示表面的基类。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qabstractvideosurface.html#Error-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#Error-enum">Error</a></b> { NoError, UnsupportedFormatError, IncorrectFormatError, StoppedError, ResourceError }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractvideosurface.html#QAbstractVideoSurface" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#QAbstractVideoSurface">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>Error <b><a href="qabstractvideosurface.html#error" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#error">error</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractvideosurface.html#isActive" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#isActive">isActive</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractvideosurface.html#isFormatSupported" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#isFormatSupported">isFormatSupported</a></b> (<i>self</i>, QVideoSurfaceFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>QVideoSurfaceFormat <b><a href="qabstractvideosurface.html#nearestFormat" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#nearestFormat">nearestFormat</a></b> (<i>self</i>, QVideoSurfaceFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractvideosurface.html#present" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#present">present</a></b> (<i>self</i>, QVideoFrame <i>frame</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractvideosurface.html#setError" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#setError">setError</a></b> (<i>self</i>, Error <i>error</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractvideosurface.html#start" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#start">start</a></b> (<i>self</i>, QVideoSurfaceFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractvideosurface.html#stop" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#stop">stop</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QVideoFrame.PixelFormat <b><a href="qabstractvideosurface.html#supportedPixelFormats" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#supportedPixelFormats">supportedPixelFormats</a></b> (<i>self</i>, QAbstractVideoBuffer.HandleType <i>type</i> = QAbstractVideoBuffer.NoHandle)</li>
+<li>
+<div class="fn"></div>QVideoSurfaceFormat <b><a href="qabstractvideosurface.html#surfaceFormat" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#surfaceFormat">surfaceFormat</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qabstractvideosurface.html#activeChanged" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#activeChanged">activeChanged</a></b> (bool)</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractvideosurface.html#supportedFormatsChanged" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#supportedFormatsChanged">supportedFormatsChanged</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractvideosurface.html#surfaceFormatChanged" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#surfaceFormatChanged">surfaceFormatChanged</a></b> (const QVideoSurfaceFormat&amp;)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QAbstractVideoSurface类是视频演示表面的基类。</p>
+<p>该QAbstractVideoSurface类定义了视频制作者用它来与视频演示表面互操作的标准接口。它不应该被直接实例化。相反，你应该继承它来创建新的视频表面。</p>
+<p>一种视频表面呈现格式相同的帧，其中每个帧的格式与开始演示时供给的流格式兼容的连续流。</p>
+<p>像素的列表格式的表面可呈现由给定<a href="qabstractvideosurface.html#supportedPixelFormats" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#supportedPixelFormats">supportedPixelFormats</a>（）函数，并且<a href="qabstractvideosurface.html#isFormatSupported" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#isFormatSupported">isFormatSupported</a>（）函数将测试是否受支持的视频格式表面。如果不支持的格式<a href="qabstractvideosurface.html#nearestFormat" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#nearestFormat">nearestFormat</a>（）函数可能能够提供一个类似的格式。例如，如果一个表面上支持固定的分辨率可能暗示包含提呈之决议案的最小支持的分辨率。</p>
+<p>该<a href="qabstractvideosurface.html#start" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#start">start</a>（ ）函数接受一个支持的格式，使视频的表面。一旦开始了表面会开始显示它接收的帧<a href="qabstractvideosurface.html#present" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#present">present</a>（）函数。表面可持有，直到一个新的框架，提出或流停止时的参考，提出了视频帧的缓冲区。该<a href="qabstractvideosurface.html#stop" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#stop">stop</a>（ ）函数将禁用表面和发布任何视频缓冲其持有的引用。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="Error-enum"></a>QAbstractVideoSurface.Error</h3>
+<p>该枚举描述了可以通过返回的错误<a href="qabstractvideosurface.html#error" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#error">error</a>（）函数。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractVideoSurface.NoError</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">未发生错误。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractVideoSurface.UnsupportedFormatError</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">不支持的视频格式。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractVideoSurface.IncorrectFormatError</tt>
+</td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">一个视频帧是不与该表面的格式不兼容。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractVideoSurface.StoppedError</tt>
+</td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">表面尚未启动。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractVideoSurface.ResourceError</tt>
+</td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">表面无法分配一些资源。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QAbstractVideoSurface"></a>QAbstractVideoSurface.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个视频面与给定<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="error"></a><a href="qabstractvideosurface.html#Error-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#Error-enum">Error</a> QAbstractVideoSurface.error (<i>self</i>)</h3>
+<p>返回所发生的最后一个错误。</p>
+<p>如果表面不<a href="qabstractvideosurface.html#start" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#start">start</a>（ ） ，或意外停止此功能可以被调用来发现什么错误发生。</p>
+<p><b>See also</b> <a href="qabstractvideosurface.html#setError" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#setError">setError</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isActive"></a>bool QAbstractVideoSurface.isActive (<i>self</i>)</h3>
+<p>表示视频表面是否已经启动。</p>
+<p>返回True如果表面已经启动，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isFormatSupported"></a>bool QAbstractVideoSurface.isFormatSupported (<i>self</i>, <a href="qvideosurfaceformat.html" tppabs="http://pyqt4doc.appspot.com/qvideosurfaceformat.html">QVideoSurfaceFormat</a> <i>format</i>)</h3>
+<p>测试一个视频面<i>format</i>以确定是否一个面都能接受。</p>
+<p>如果格式是由表面支撑，否则为False ，则返回True 。</p>
+
+
+<h3 class="fn">
+<a name="nearestFormat"></a><a href="qvideosurfaceformat.html" tppabs="http://pyqt4doc.appspot.com/qvideosurfaceformat.html">QVideoSurfaceFormat</a> QAbstractVideoSurface.nearestFormat (<i>self</i>, <a href="qvideosurfaceformat.html" tppabs="http://pyqt4doc.appspot.com/qvideosurfaceformat.html">QVideoSurfaceFormat</a> <i>format</i>)</h3>
+<p>返回一个支持的视频格式的表面，类似于<i>format</i>。</p>
+<p>类似的表面格式是一个具有相同<a href="qvideosurfaceformat.html#pixelFormat" tppabs="http://pyqt4doc.appspot.com/qvideosurfaceformat.html#pixelFormat">pixel format</a>和<a href="qvideosurfaceformat.html#handleType" tppabs="http://pyqt4doc.appspot.com/qvideosurfaceformat.html#handleType">handle type</a>但在其他一些特性是不同的。例如，如果有就限制<a href="qvideosurfaceformat.html#frameSize" tppabs="http://pyqt4doc.appspot.com/qvideosurfaceformat.html#frameSize">frame sizes</a>视频表面可以接受它可能意味着一种格式具有较大的帧大小和<a href="qvideosurfaceformat.html#viewport" tppabs="http://pyqt4doc.appspot.com/qvideosurfaceformat.html#viewport">viewport</a>原始帧尺寸的大小。</p>
+<p>如果已支持的格式也将原样返回，或如果没有类似支持的格式无效的格式将被退回。</p>
+
+
+<h3 class="fn">
+<a name="present"></a>bool QAbstractVideoSurface.present (<i>self</i>, <a href="qvideoframe.html" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html">QVideoFrame</a> <i>frame</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>提出了一个视频<i>frame</i>。</p>
+<p>返回True如果在发生错误的帧被提出，并假的。</p>
+<p>不是所有的表面将被阻塞，直到一个帧的显示已经完成。如果调用前一帧的呈现完成之前无阻塞表面上调用存在（ ）可能会失败。在这种情况下，直到它有机会处理事件的表面可能不会返回到就绪状态。</p>
+<p>如果存在（ ）失败因任何其他原因，表面会立即进入停止状态和<a href="qabstractvideosurface.html#error" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#error">error</a>（ ）值将被设置。</p>
+<p>视频表面必须处于启动状态的存在（ ）成功，和视频帧的格式必须与当前的视频表面格式兼容。</p>
+<p><b>See also</b> <a href="qabstractvideosurface.html#error" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#error">error</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setError"></a>QAbstractVideoSurface.setError (<i>self</i>, <a href="qabstractvideosurface.html#Error-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#Error-enum">Error</a> <i>error</i>)</h3>
+<p>设置的值<a href="qabstractvideosurface.html#error" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#error">error</a>（）来<i>error</i>。</p>
+<p><b>See also</b> <a href="qabstractvideosurface.html#error" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#error">error</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="start"></a>bool QAbstractVideoSurface.start (<i>self</i>, <a href="qvideosurfaceformat.html" tppabs="http://pyqt4doc.appspot.com/qvideosurfaceformat.html">QVideoSurfaceFormat</a> <i>format</i>)</h3>
+<p>开始视频表面呈现<i>format</i>帧。</p>
+<p>如果表面已经开始，并且假，如果发生错误，则返回True 。</p>
+<p><b>See also</b> <a href="qabstractvideosurface.html#isActive" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#isActive">isActive</a>（）和<a href="qabstractvideosurface.html#stop" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#stop">stop</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="stop"></a>QAbstractVideoSurface.stop (<i>self</i>)</h3>
+<p>停止视频表面呈现帧并释放所收购的任何资源<a href="qabstractvideosurface.html#start" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#start">start</a>（ ） 。</p>
+<p><b>See also</b> <a href="qabstractvideosurface.html#isActive" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#isActive">isActive</a>（）和<a href="qabstractvideosurface.html#start" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#start">start</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="supportedPixelFormats"></a>list-of-QVideoFrame.PixelFormat QAbstractVideoSurface.supportedPixelFormats (<i>self</i>, <a href="qabstractvideobuffer.html#HandleType-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#HandleType-enum">QAbstractVideoBuffer.HandleType</a> <i>type</i> = QAbstractVideoBuffer.NoHandle)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回的像素格式的视频表面可呈现为一个给定的句柄列表<i>type</i>。</p>
+<p>像素格式返回的<a href="qabstractvideobuffer.html#HandleType-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#HandleType-enum">QAbstractVideoBuffer.NoHandle</a>类型是有效的，可以映射到只读模式的任何缓冲区。</p>
+<p>这是第一个在列表中的类型可以被假定为更快的渲染。</p>
+
+
+<h3 class="fn">
+<a name="surfaceFormat"></a><a href="qvideosurfaceformat.html" tppabs="http://pyqt4doc.appspot.com/qvideosurfaceformat.html">QVideoSurfaceFormat</a> QAbstractVideoSurface.surfaceFormat (<i>self</i>)</h3>
+<p>返回视频表面的格式。</p>
+
+
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="activeChanged"></a>void activeChanged (bool)</h3>
+<p>这是该信号的默认超载。</p>
+<p>信号的<i>active</i>视频表面状态发生了变化。</p>
+<p><b>See also</b> <a href="qabstractvideosurface.html#isActive" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#isActive">isActive</a>（ ）<a href="qabstractvideosurface.html#start" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#start">start</a>（）和<a href="qabstractvideosurface.html#stop" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#stop">stop</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="supportedFormatsChanged"></a>void supportedFormatsChanged ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>该组由视频表面支持的格式发生了变化的信号。</p>
+<p><b>See also</b> <a href="qabstractvideosurface.html#supportedPixelFormats" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#supportedPixelFormats">supportedPixelFormats</a>（）和<a href="qabstractvideosurface.html#isFormatSupported" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#isFormatSupported">isFormatSupported</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="surfaceFormatChanged"></a>void surfaceFormatChanged (const QVideoSurfaceFormat&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>所配置的信号<i>format</i>的一个视频表面发生了变化。</p>
+<p><b>See also</b> <a href="qabstractvideosurface.html#surfaceFormat" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#surfaceFormat">surfaceFormat</a>（）和<a href="qabstractvideosurface.html#start" tppabs="http://pyqt4doc.appspot.com/qabstractvideosurface.html#start">start</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

@@ -1,0 +1,158 @@
+﻿<html>
+<head>
+<title>QGraphicsBlurEffect Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QGraphicsBlurEffect Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QGraphicsBlurEffect类提供了一个模糊效果。<a href="#details">More...</a></p>
+
+<p>继承<a href="qgraphicseffect.html" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html">QGraphicsEffect</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qgraphicsblureffect.html#BlurHint-enum" tppabs="http://pyqt4doc.appspot.com/qgraphicsblureffect.html#BlurHint-enum">BlurHint</a></b> { PerformanceHint, QualityHint, AnimationHint }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qgraphicsblureffect-blurhints.html">BlurHints</a></b>
+</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsblureffect.html#QGraphicsBlurEffect" tppabs="http://pyqt4doc.appspot.com/qgraphicsblureffect.html#QGraphicsBlurEffect">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>BlurHints <b><a href="qgraphicsblureffect.html#blurHints" tppabs="http://pyqt4doc.appspot.com/qgraphicsblureffect.html#blurHints">blurHints</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qgraphicsblureffect.html#blurRadius" tppabs="http://pyqt4doc.appspot.com/qgraphicsblureffect.html#blurRadius">blurRadius</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QRectF <b><a href="qgraphicsblureffect.html#boundingRectFor" tppabs="http://pyqt4doc.appspot.com/qgraphicsblureffect.html#boundingRectFor">boundingRectFor</a></b> (<i>self</i>, QRectF <i>rect</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsblureffect.html#draw" tppabs="http://pyqt4doc.appspot.com/qgraphicsblureffect.html#draw">draw</a></b> (<i>self</i>, QPainter <i>painter</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsblureffect.html#setBlurHints" tppabs="http://pyqt4doc.appspot.com/qgraphicsblureffect.html#setBlurHints">setBlurHints</a></b> (<i>self</i>, BlurHints <i>hints</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicsblureffect.html#setBlurRadius" tppabs="http://pyqt4doc.appspot.com/qgraphicsblureffect.html#setBlurRadius">setBlurRadius</a></b> (<i>self</i>, float <i>blurRadius</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qgraphicsblureffect.html#blurHintsChanged" tppabs="http://pyqt4doc.appspot.com/qgraphicsblureffect.html#blurHintsChanged">blurHintsChanged</a></b> (QGraphicsBlurEffect::BlurHints)</li>
+<li>
+<div class="fn"></div>void <b><a href="qgraphicsblureffect.html#blurRadiusChanged" tppabs="http://pyqt4doc.appspot.com/qgraphicsblureffect.html#blurRadiusChanged">blurRadiusChanged</a></b> (qreal)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QGraphicsBlurEffect类提供了一个模糊效果。</p>
+<p>一个模糊效果模糊的来源。这种效果是减少细节，当源失去焦点，如有用的，你想提请注意的其他元素。信息的详细程度可使用修改的<a href="qgraphicsblureffect.html#blurRadius-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicsblureffect.html#blurRadius-prop">setBlurRadius</a>（）函数。使用<a href="qgraphicsblureffect.html#blurHints-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicsblureffect.html#blurHints-prop">setBlurHints</a>（ ）选择模糊的提示。</p>
+<p>默认情况下，模糊半径为5像素。模糊半径被指定在设备坐标。</p>
+<p class="centerAlign"><img alt="" src="images/graphicseffect-blur.png"></p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="BlurHint-enum"></a>QGraphicsBlurEffect.BlurHint</h3>
+<p>这个枚举变量描述了可用于控制如何虚化效果应用的可能的提示。该提示可能没有效果在所有油漆引擎。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QGraphicsBlurEffect.PerformanceHint</tt>
+</td>
+<td class="topAlign"><tt>0x00</tt></td>
+<td class="topAlign">表示渲染性能是最重要的因素，在低质量的潜在成本。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGraphicsBlurEffect.QualityHint</tt></td>
+<td class="topAlign"><tt>0x01</tt></td>
+<td class="topAlign">表示渲染质量是最重要的因素，在低性能的潜在成本。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QGraphicsBlurEffect.AnimationHint</tt>
+</td>
+<td class="topAlign"><tt>0x02</tt></td>
+<td class="topAlign">表明模糊半径将被动画化，暗示该实现可以保持源的模糊verisons的缓存。请不要使用此提示如果源将是动态变化的。</td>
+</tr>
+</table>
+<p>这个枚举被引入或修改的Qt 4.6 。</p>
+<p>该BlurHints类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cBlurHint\u003e 。它存储BlurHint值的或组合。</p>
+<p><b>See also</b> <a href="qgraphicsblureffect.html#blurHints-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicsblureffect.html#blurHints-prop">blurHints</a>（）和<a href="qgraphicsblureffect.html#blurHints-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicsblureffect.html#blurHints-prop">setBlurHints</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QGraphicsBlurEffect"></a>QGraphicsBlurEffect.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个新的<a href="qgraphicsblureffect.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsblureffect.html">QGraphicsBlurEffect</a>实例。该<i>parent</i>参数被传递到<a href="qgraphicseffect.html" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html">QGraphicsEffect</a>的构造。</p>
+
+
+<h3 class="fn">
+<a name="blurHints"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qgraphicsblureffect-blurhints.html">BlurHints</a> QGraphicsBlurEffect.blurHints (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="blurRadius"></a>float QGraphicsBlurEffect.blurRadius (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="boundingRectFor"></a><a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> QGraphicsBlurEffect.boundingRectFor (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>rect</i>)</h3>
+<p>从重新实现<a href="qgraphicseffect.html#boundingRectFor" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#boundingRectFor">QGraphicsEffect.boundingRectFor</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="draw"></a>QGraphicsBlurEffect.draw (<i>self</i>, <a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a> <i>painter</i>)</h3>
+<p>从重新实现<a href="qgraphicseffect.html#draw" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#draw">QGraphicsEffect.draw</a>（ ） 。</p>
+<h3 class="fn">
+<a name="setBlurHints"></a>QGraphicsBlurEffect.setBlurHints (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qgraphicsblureffect-blurhints.html">BlurHints</a> <i>hints</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setBlurHints(QGraphicsBlurEffect::BlurHints)</tt>。</p>
+<h3 class="fn">
+<a name="setBlurRadius"></a>QGraphicsBlurEffect.setBlurRadius (<i>self</i>, float <i>blurRadius</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setBlurRadius(qreal)</tt>。</p>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="blurHintsChanged"></a>void blurHintsChanged (QGraphicsBlurEffect::BlurHints)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的效果的模糊暗示的改变。该<i>hints</i>参数保存效果的新型模糊的提示。</p>
+
+
+<h3 class="fn">
+<a name="blurRadiusChanged"></a>void blurRadiusChanged (qreal)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的效果的模糊半径的变化。该<i>radius</i>参数保存效果的新的模糊半径。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

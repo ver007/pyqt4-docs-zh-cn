@@ -1,0 +1,250 @@
+﻿<html>
+<head>
+<title>QXmlSchema Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QXmlSchema Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtxmlpatterns.html">QtXmlPatterns</a> module]</sup></sup>
+</h1>
+<p>该QXmlSchema类提供了一个W3C XML模式的加载和验证。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlschema.html#QXmlSchema" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#QXmlSchema">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QUrl <b><a href="qxmlschema.html#documentUri" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#documentUri">documentUri</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlschema.html#isValid" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#isValid">isValid</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlschema.html#load" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#load">load</a></b> (<i>self</i>, QUrl <i>source</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlschema.html#load-2" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#load-2">load</a></b> (<i>self</i>, QIODevice <i>source</i>, QUrl <i>documentUri</i> = QUrl())</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlschema.html#load-3" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#load-3">load</a></b> (<i>self</i>, QByteArray <i>data</i>, QUrl <i>documentUri</i> = QUrl())</li>
+<li>
+<div class="fn"></div>QAbstractMessageHandler <b><a href="qxmlschema.html#messageHandler" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#messageHandler">messageHandler</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QXmlNamePool <b><a href="qxmlschema.html#namePool" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#namePool">namePool</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QNetworkAccessManager <b><a href="qxmlschema.html#networkAccessManager" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#networkAccessManager">networkAccessManager</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlschema.html#setMessageHandler" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#setMessageHandler">setMessageHandler</a></b> (<i>self</i>, QAbstractMessageHandler <i>handler</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlschema.html#setNetworkAccessManager" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#setNetworkAccessManager">setNetworkAccessManager</a></b> (<i>self</i>, QNetworkAccessManager <i>networkmanager</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlschema.html#setUriResolver" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#setUriResolver">setUriResolver</a></b> (<i>self</i>, QAbstractUriResolver <i>resolver</i>)</li>
+<li>
+<div class="fn"></div>QAbstractUriResolver <b><a href="qxmlschema.html#uriResolver" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#uriResolver">uriResolver</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QXmlSchema类提供了一个W3C XML模式的加载和验证。</p>
+<p>该QXmlSchema类加载，编译和验证，可以进一步通过用于XML实例文档验证的W3C XML Schema文件<a href="qxmlschemavalidator.html" tppabs="http://pyqt4doc.appspot.com/qxmlschemavalidator.html">QXmlSchemaValidator</a>。</p>
+<p>下面的示例演示如何从网络加载一个XML Schema文件，并测试它是否是一个有效的架构文档：</p>
+<pre class="cpp">
+     <span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span> url(<span class="string">"http://www.schema-example.org/myschema.xsd"</span>);
+
+     <span class="type">QXmlSchema</span> schema;
+     <span class="keyword">if</span> (schema<span class="operator">.</span>load(url) <span class="operator">=</span><span class="operator">=</span> <span class="keyword">true</span>)
+         <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"schema is valid"</span>;
+     <span class="keyword">else</span>
+         <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"schema is invalid"</span>;
+</pre>
+<a id="xml-schema-version" name="xml-schema-version"></a>
+<h3>XML Schema Version</h3>
+<p>这个类是用来表示符合的模式<a href="http://www.w3.org/XML/Schema">XML Schema</a>1.0规范。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QXmlSchema"></a>QXmlSchema.__init__ (<i>self</i>)</h3>
+<p>构造不能使用，直到无效，空架构<a href="qxmlschema.html#load" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#load">load</a>（）被调用。</p>
+
+
+<h3 class="fn">
+<a name="documentUri"></a><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> QXmlSchema.documentUri (<i>self</i>)</h3>
+<p>返回架构的文档URI或空的URI ，如果没有模式已定。</p>
+
+
+<h3 class="fn">
+<a name="isValid"></a>bool QXmlSchema.isValid (<i>self</i>)</h3>
+<p>返回True如果这个模式是有效的。失效模式的例子是那些包含语法错误或不符合W3C的XML Schema规范。</p>
+
+
+<h3 class="fn">
+<a name="load"></a>bool QXmlSchema.load (<i>self</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>source</i>)</h3>
+<p>此套<a href="qxmlschema.html" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html">QXmlSchema</a>以从加载的模式<i>source</i>URI。</p>
+<p>如果架构<a href="qxmlschema.html#isValid" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#isValid">is invalid</a>，<tt>false</tt>返回和行为是未定义的。</p>
+<p>例如：</p>
+<pre class="cpp">
+     <span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span> url(<span class="string">"http://www.schema-example.org/myschema.xsd"</span>);
+
+     <span class="type"><a href="qxmlschema.html" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html">QXmlSchema</a></span> schema;
+     <span class="keyword">if</span> (schema<span class="operator">.</span>load(url) <span class="operator">=</span><span class="operator">=</span> <span class="keyword">true</span>)
+         <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"schema is valid"</span>;
+     <span class="keyword">else</span>
+         <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"schema is invalid"</span>;
+</pre>
+<p><b>See also</b> <a href="qxmlschema.html#isValid" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#isValid">isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="load-2"></a>bool QXmlSchema.load (<i>self</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>source</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>documentUri</i> = QUrl())</h3>
+<p>此套<a href="qxmlschema.html" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html">QXmlSchema</a>从读取架构<i>source</i>设备。该设备必须已经打开了至少<a href="qiodevice.html#OpenModeFlag-enum" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#OpenModeFlag-enum">QIODevice.ReadOnly</a>。</p>
+<p><i>documentUri</i>表示从所获得的模式<i>source</i>设备。它是架构的基础URI，它在内部使用，以解决出现在架构相对URI ，以及消息的报告。</p>
+<p>If <i>source</i> is <tt>null</tt>或无法读取，或者如果<i>documentUri</i>是不是一个有效的URI ，行为是未定义的。</p>
+<p>如果架构<a href="qxmlschema.html#isValid" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#isValid">is invalid</a>，<tt>false</tt>返回和行为是未定义的。</p>
+<p>例如：</p>
+<pre class="cpp">
+     <span class="type"><a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a></span> file(<span class="string">"myschema.xsd"</span>);
+     file<span class="operator">.</span>open(<span class="type"><a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a></span><span class="operator">.</span>ReadOnly);
+
+     <span class="type"><a href="qxmlschema.html" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html">QXmlSchema</a></span> schema;
+     schema<span class="operator">.</span>load(<span class="operator">&amp;</span>file<span class="operator">,</span> <span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span><span class="operator">.</span>fromLocalFile(file<span class="operator">.</span>fileName()));
+
+     <span class="keyword">if</span> (schema<span class="operator">.</span>isValid())
+         <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"schema is valid"</span>;
+     <span class="keyword">else</span>
+         <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"schema is invalid"</span>;
+</pre>
+<p><b>See also</b> <a href="qxmlschema.html#isValid" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#isValid">isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="load-3"></a>bool QXmlSchema.load (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>data</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>documentUri</i> = QUrl())</h3>
+<p>此套<a href="qxmlschema.html" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html">QXmlSchema</a>从读取架构<i>data</i></p>
+<p><i>documentUri</i>表示从所获得的模式<i>data</i>。它是架构的基础URI，它在内部使用，以解决出现在架构相对URI ，以及消息的报告。</p>
+<p>If <i>documentUri</i>是不是一个有效的URI ，行为是未定义的。</p>
+<p>如果架构<a href="qxmlschema.html#isValid" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#isValid">is invalid</a>，<tt>false</tt>返回和行为是未定义的。</p>
+<p>例如：</p>
+<pre class="cpp">
+     <span class="type"><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a></span> data( <span class="string">"&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;"</span>
+                      <span class="string">"&lt;xsd:schema"</span>
+                      <span class="string">"        xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\""</span>
+                      <span class="string">"        xmlns=\"http://qt.nokia.com/xmlschematest\""</span>
+                      <span class="string">"        targetNamespace=\"http://qt.nokia.com/xmlschematest\""</span>
+                      <span class="string">"        version=\"1.0\""</span>
+                      <span class="string">"        elementFormDefault=\"qualified\"&gt;"</span>
+                      <span class="string">"&lt;/xsd:schema&gt;"</span> );
+
+     <span class="type"><a href="qxmlschema.html" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html">QXmlSchema</a></span> schema;
+     schema<span class="operator">.</span>load(data);
+
+     <span class="keyword">if</span> (schema<span class="operator">.</span>isValid())
+         <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"schema is valid"</span>;
+     <span class="keyword">else</span>
+         <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"schema is invalid"</span>;
+</pre>
+<p><b>See also</b> <a href="qxmlschema.html#isValid" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#isValid">isValid</a>（）和<a href="qxmlschema.html#isValid" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#isValid">isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="messageHandler"></a><a href="qabstractmessagehandler.html" tppabs="http://pyqt4doc.appspot.com/qabstractmessagehandler.html">QAbstractMessageHandler</a> QXmlSchema.messageHandler (<i>self</i>)</h3>
+<p>返回处理这个编译和验证消息的消息处理程序<a href="qxmlschema.html" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html">QXmlSchema</a>。</p>
+<p><b>See also</b> <a href="qxmlschema.html#setMessageHandler" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#setMessageHandler">setMessageHandler</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="namePool"></a><a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">QXmlNamePool</a> QXmlSchema.namePool (<i>self</i>)</h3>
+<p>返回此名称池<a href="qxmlschema.html" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html">QXmlSchema</a>构建<a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">names</a>。有没有setter的名字池，因为混合池的名称会导致错误，由于名称的混乱。</p>
+
+
+<h3 class="fn">
+<a name="networkAccessManager"></a><a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a> QXmlSchema.networkAccessManager (<i>self</i>)</h3>
+<p>返回该网络管理器，或0 ，如果它没有被设置。</p>
+<p><b>See also</b> <a href="qxmlschema.html#setNetworkAccessManager" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#setNetworkAccessManager">setNetworkAccessManager</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setMessageHandler"></a>QXmlSchema.setMessageHandler (<i>self</i>, <a href="qabstractmessagehandler.html" tppabs="http://pyqt4doc.appspot.com/qabstractmessagehandler.html">QAbstractMessageHandler</a> <i>handler</i>)</h3>
+<p>更改<a href="qabstractmessagehandler.html" tppabs="http://pyqt4doc.appspot.com/qabstractmessagehandler.html">message
+handler</a>这<a href="qxmlschema.html" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html">QXmlSchema</a>至<i>handler</i>。该架构将所有的编译和验证消息，此消息处理程序。<a href="qxmlschema.html" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html">QXmlSchema</a>不采取所有权<i>handler</i>。</p>
+<p>通常情况下，默认的消息处理就足够了。它写的编译和验证消息的<i>stderr</i>。默认的消息处理程序，包括颜色代码，如果<i>stderr</i>可以使色彩。</p>
+<p>When <a href="qxmlschema.html" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html">QXmlSchema</a>电话<a href="qabstractmessagehandler.html#message" tppabs="http://pyqt4doc.appspot.com/qabstractmessagehandler.html#message">QAbstractMessageHandler.message</a>（ ） ，参数如下：</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>message() argument</th>
+<th>Semantics</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td>
+<a href="index.htm#QtMsgType-enum" tppabs="http://pyqt4doc.appspot.com/qtcore.html#QtMsgType-enum">QtMsgType</a> type</td>
+<td>Only <a href="index.htm#QtMsgType-enum" tppabs="http://pyqt4doc.appspot.com/qtcore.html#QtMsgType-enum">QtWarningMsg</a>
+and <a href="index.htm#QtMsgType-enum" tppabs="http://pyqt4doc.appspot.com/qtcore.html#QtMsgType-enum">QtFatalMsg</a> are used.
+The former identifies a warning, while the latter identifies an
+error.</td>
+</tr>
+<tr class="even" valign="top">
+<td>const <a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a> &amp; description</td>
+<td>An XHTML document which is the actual message. It is translated
+into the current language.</td>
+</tr>
+<tr class="odd" valign="top">
+<td>const <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> &amp;identifier</td>
+<td>Identifies the error with a URI, where the fragment is the
+error code, and the rest of the URI is the error namespace.</td>
+</tr>
+<tr class="even" valign="top">
+<td>const <a href="qsourcelocation.html" tppabs="http://pyqt4doc.appspot.com/qsourcelocation.html">QSourceLocation</a> &amp;
+sourceLocation</td>
+<td>Identifies where the error occurred.</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qxmlschema.html#messageHandler" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#messageHandler">messageHandler</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setNetworkAccessManager"></a>QXmlSchema.setNetworkAccessManager (<i>self</i>, <a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a> <i>networkmanager</i>)</h3>
+<p>设置网络管理员<i>manager</i>。<a href="qxmlschema.html" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html">QXmlSchema</a>不采取所有权<i>manager</i>。</p>
+<p><b>See also</b> <a href="qxmlschema.html#networkAccessManager" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#networkAccessManager">networkAccessManager</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setUriResolver"></a>QXmlSchema.setUriResolver (<i>self</i>, <a href="qabstracturiresolver.html" tppabs="http://pyqt4doc.appspot.com/qabstracturiresolver.html">QAbstractUriResolver</a> <i>resolver</i>)</h3>
+<p>设置的URI解析器<i>resolver</i>。<a href="qxmlschema.html" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html">QXmlSchema</a>不采取所有权<i>resolver</i>。</p>
+<p><b>See also</b> <a href="qxmlschema.html#uriResolver" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#uriResolver">uriResolver</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="uriResolver"></a><a href="qabstracturiresolver.html" tppabs="http://pyqt4doc.appspot.com/qabstracturiresolver.html">QAbstractUriResolver</a> QXmlSchema.uriResolver (<i>self</i>)</h3>
+<p>返回架构的URI解析器。如果没有的URI解析器已定，<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtxmlpatterns.html">QtXmlPatterns</a>将使用的URI的模式，因为它们。</p>
+<p>这个URI解析器提供了一个抽象层，或<i>polymorphic URIs</i>。解析器可以重写<i>logical</i>URI与物理的，或者它可以翻译过时的或无效的URI来有效的。</p>
+<p>When <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtxmlpatterns.html">QtXmlPatterns</a>电话<a href="qabstracturiresolver.html#resolve" tppabs="http://pyqt4doc.appspot.com/qabstracturiresolver.html#resolve">QAbstractUriResolver.resolve</a>（ ）的绝对URI是由架构规范规定的URI和相对URI是由用户指定的URI。</p>
+<p><b>See also</b> <a href="qxmlschema.html#setUriResolver" tppabs="http://pyqt4doc.appspot.com/qxmlschema.html#setUriResolver">setUriResolver</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

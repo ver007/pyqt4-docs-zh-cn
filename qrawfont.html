@@ -1,0 +1,357 @@
+﻿<html>
+<head>
+<title>QRawFont Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QRawFont Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QRawFont类提供了访问字体的单个物理实例。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qrawfont.html#AntialiasingType-enum" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#AntialiasingType-enum">AntialiasingType</a></b> { PixelAntialiasing, SubPixelAntialiasing }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qrawfont.html#QRawFont" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#QRawFont">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qrawfont.html#QRawFont-2" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#QRawFont-2">__init__</a></b> (<i>self</i>, QString <i>fileName</i>, float <i>pixelSize</i>, QFont.HintingPreference <i>hintingPreference</i> = QFont.PreferDefaultHinting)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qrawfont.html#QRawFont-3" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#QRawFont-3">__init__</a></b> (<i>self</i>, QByteArray <i>fontData</i>, float <i>pixelSize</i>, QFont.HintingPreference <i>hintingPreference</i> = QFont.PreferDefaultHinting)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qrawfont.html#QRawFont-4" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#QRawFont-4">__init__</a></b> (<i>self</i>, QRawFont <i>other</i>)</li>
+<li>
+<div class="fn"></div>list-of-QPointF <b><a href="qrawfont.html#advancesForGlyphIndexes" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#advancesForGlyphIndexes">advancesForGlyphIndexes</a></b> (<i>self</i>, list-of-int <i>glyphIndexes</i>)</li>
+<li>
+<div class="fn"></div>QImage <b><a href="qrawfont.html#alphaMapForGlyph" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#alphaMapForGlyph">alphaMapForGlyph</a></b> (<i>self</i>, int <i>glyphIndex</i>, AntialiasingType <i>antialiasingType</i> = QRawFont.SubPixelAntialiasing, QTransform <i>transform</i> = QTransform())</li>
+<li>
+<div class="fn"></div>float <b><a href="qrawfont.html#ascent" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#ascent">ascent</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qrawfont.html#averageCharWidth" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#averageCharWidth">averageCharWidth</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qrawfont.html#descent" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#descent">descent</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qrawfont.html#familyName" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#familyName">familyName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qrawfont.html#fontTable" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#fontTable">fontTable</a></b> (<i>self</i>, str <i>tagName</i>)</li>
+<li>
+<div class="fn"></div>list-of-int <b><a href="qrawfont.html#glyphIndexesForString" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#glyphIndexesForString">glyphIndexesForString</a></b> (<i>self</i>, QString <i>text</i>)</li>
+<li>
+<div class="fn"></div>QFont.HintingPreference <b><a href="qrawfont.html#hintingPreference" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#hintingPreference">hintingPreference</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qrawfont.html#isValid" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#isValid">isValid</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qrawfont.html#leading" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#leading">leading</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qrawfont.html#loadFromData" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#loadFromData">loadFromData</a></b> (<i>self</i>, QByteArray <i>fontData</i>, float <i>pixelSize</i>, QFont.HintingPreference <i>hintingPreference</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qrawfont.html#loadFromFile" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#loadFromFile">loadFromFile</a></b> (<i>self</i>, QString <i>fileName</i>, float <i>pixelSize</i>, QFont.HintingPreference <i>hintingPreference</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qrawfont.html#maxCharWidth" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#maxCharWidth">maxCharWidth</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QPainterPath <b><a href="qrawfont.html#pathForGlyph" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#pathForGlyph">pathForGlyph</a></b> (<i>self</i>, int <i>glyphIndex</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qrawfont.html#pixelSize" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#pixelSize">pixelSize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qrawfont.html#setPixelSize" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#setPixelSize">setPixelSize</a></b> (<i>self</i>, float <i>pixelSize</i>)</li>
+<li>
+<div class="fn"></div>QFont.Style <b><a href="qrawfont.html#style" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#style">style</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qrawfont.html#styleName" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#styleName">styleName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QFontDatabase.WritingSystem <b><a href="qrawfont.html#supportedWritingSystems" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#supportedWritingSystems">supportedWritingSystems</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qrawfont.html#supportsCharacter" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#supportsCharacter">supportsCharacter</a></b> (<i>self</i>, int <i>ucs4</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qrawfont.html#supportsCharacter-2" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#supportsCharacter-2">supportsCharacter</a></b> (<i>self</i>, QChar <i>character</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qrawfont.html#unitsPerEm" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#unitsPerEm">unitsPerEm</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qrawfont.html#weight" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#weight">weight</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qrawfont.html#xHeight" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#xHeight">xHeight</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul><li>
+<div class="fn"></div>QRawFont <b><a href="qrawfont.html#fromFont" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#fromFont">fromFont</a></b> (QFont <i>font</i>, QFontDatabase.WritingSystem <i>writingSystem</i> = QFontDatabase.Any)</li></ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>bool <b><a href="qrawfont.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#__eq__">__eq__</a></b> (<i>self</i>, QRawFont <i>other</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qrawfont.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#__ne__">__ne__</a></b> (<i>self</i>, QRawFont <i>other</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QRawFont类提供了访问字体的单个物理实例。</p>
+<p><b>Note:</b>QRawFont是一个低级别的类。对于大多数用途<a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a>是一个比较合适的类。</p>
+<p>最常见的是，在用户界面中显示文本时，确切的字体用于呈现字符在某种程度上是未知的。这可能是有几个原因的情况：例如，在实际的物理存在于目标系统上的字体可能会不期而至的开发商，或者文本可以包含用户选择的样式，尺寸或书写系统不支持所选择的字体的代码。</p>
+<p>因此， Qt的<a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a>类真正代表字体的查询。当文本被解释， Qt会尽力的文字查询匹配，但根据的支持，不同的字体可用于在幕后。</p>
+<p>对于大多数用例来说，这既是预期的和必要的，因为它最大限度地减少文本的用户界面是不可显示的可能性。在某些情况下，但是，更直接地控制这个过程可能是有用的。正是由于这些用例的QRawFont类存在。</p>
+<p>一个QRawFont对象代表一个给定的字体在一个给定的像素大小单个物理实例。即在典型的情况下，它代表一组TrueType或OpenType字体表，并使用用户指定的像素大小来度量转换为逻辑像素单位。它可与组合使用<a href="qglyphrun.html" tppabs="http://pyqt4doc.appspot.com/qglyphrun.html">QGlyphRun</a>类绘制特定的字形索引在特定位置，也有访问到物理字体的一些相关数据。</p>
+<p>QRawFont只提供了主要的字体技术支持： GDI和DirectWrite在Windows平台上，<a href="index.htm#freetype" tppabs="http://pyqt4doc.appspot.com/qt-embedded-fonts.html#freetype">FreeType</a>Symbian和Linux平台和CoreText在Mac OS X。对于其他字体后端上，这些API将被禁用。</p>
+<p>QRawFont可以以多种方式进行构造：</p>
+<ul>
+<li>It can be constructed by calling QTextLayout.glyphs() or
+QTextFragment.glyphs(). The returned QGlyphs objects will contain
+QRawFont objects which represent the actual fonts used to render
+each portion of the text.</li>
+<li>It can be constructed by passing a <a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a> object to <a href="qrawfont.html#fromFont" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#fromFont">QRawFont.fromFont</a>(). The function
+will return a QRawFont object representing the font that will be
+selected as response to the <a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a> query
+and the selected writing system.</li>
+<li>It can be constructed by passing a file name or <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> directly to the QRawFont
+constructor, or by calling <a href="qrawfont.html#loadFromFile" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#loadFromFile">loadFromFile</a>() or <a href="qrawfont.html#loadFromData" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#loadFromData">loadFromData</a>(). In this case, the
+font will not be registered in <a href="qfontdatabase.html" tppabs="http://pyqt4doc.appspot.com/qfontdatabase.html">QFontDatabase</a>, and it will not be
+available as part of regular font selection.</li>
+</ul>
+<p>QRawFont被认为是本地在其构造（或者使用构造函数的线程，或致电<a href="qrawfont.html#loadFromData" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#loadFromData">loadFromData</a>（）或<a href="qrawfont.html#loadFromFile" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#loadFromFile">loadFromFile</a>（））。该QRawFont不能移动到一个不同的线程，但会在有问题的线程被创建。</p>
+<p><b>Note:</b>对于缓存字形索引和字体选项的静态文本，以避免重塑和relayouting在应用程序的内部循环的要求，更好的选择是<a href="qstatictext.html" tppabs="http://pyqt4doc.appspot.com/qstatictext.html">QStaticText</a>类，因为它优化高速缓存的存储器成本并且还提供了额外的加速绘图引擎的特定高速缓存的可能性。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="AntialiasingType-enum"></a>QRawFont.AntialiasingType</h3>
+<p>这个枚举变量代表了不同方式的字形可以在函数被光栅化<a href="qrawfont.html#alphaMapForGlyph" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#alphaMapForGlyph">alphaMapForGlyph</a>（ ） 。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QRawFont.PixelAntialiasing</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">通过测量全像素形状的复盖范围将栅格化。返回的图像中包含的每个像素的基础上，字形形状的复盖范围的alpha值。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QRawFont.SubPixelAntialiasing</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">通过测量各子像素的显示，对于每个各像素的红色，绿色和蓝色分量的返回一个单独的α值将栅格化。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QRawFont"></a>QRawFont.__init__ (<i>self</i>)</h3>
+<p>构造一个无效的<a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a>。</p>
+
+
+<h3 class="fn">
+<a name="QRawFont-2"></a>QRawFont.__init__ (<i>self</i>, QString <i>fileName</i>, float <i>pixelSize</i>, <a href="qfont.html#HintingPreference-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#HintingPreference-enum">QFont.HintingPreference</a> <i>hintingPreference</i> = QFont.PreferDefaultHinting)</h3>
+<p>构造一个<a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a>表示包含由所引用的文件中的字体<i>fileName</i>对于通过给定的大小（以像素为单位）<i>pixelSize</i>，并使用所指定的提示的优先级<i>hintingPreference</i>。</p>
+<p><b>Note:</b>引用的文件必须包含一个TrueType或OpenType字体。</p>
+
+
+<h3 class="fn">
+<a name="QRawFont-3"></a>QRawFont.__init__ (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>fontData</i>, float <i>pixelSize</i>, <a href="qfont.html#HintingPreference-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#HintingPreference-enum">QFont.HintingPreference</a> <i>hintingPreference</i> = QFont.PreferDefaultHinting)</h3>
+<p>构造一个<a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a>表示包含在所提供的字体<i>fontData</i>对于通过给定的大小（以像素为单位）<i>pixelSize</i>，并使用所指定的提示的优先级<i>hintingPreference</i>。</p>
+<p><b>Note:</b>该数据必须包含TrueType或OpenType字体。</p>
+
+
+<h3 class="fn">
+<a name="QRawFont-4"></a>QRawFont.__init__ (<i>self</i>, <a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a> <i>other</i>)</h3>
+<p>创建<a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a>这是一个拷贝<i>other</i>。</p>
+
+
+<h3 class="fn">
+<a name="advancesForGlyphIndexes"></a>list-of-QPointF QRawFont.advancesForGlyphIndexes (<i>self</i>, list-of-int <i>glyphIndexes</i>)</h3>
+<p>返回<a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a>的前进对每个<i>glyphIndexes</i>以像素为单位。该贷款给从给定字形的位置到下一个字形应绘制，使其看起来好像两个字形unspaced的距离。</p>
+<p><b>See also</b> <a href="qtextline.html#horizontalAdvance" tppabs="http://pyqt4doc.appspot.com/qtextline.html#horizontalAdvance">QTextLine.horizontalAdvance</a>（）和<a href="qfontmetricsf.html#width" tppabs="http://pyqt4doc.appspot.com/qfontmetricsf.html#width">QFontMetricsF.width</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="alphaMapForGlyph"></a><a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> QRawFont.alphaMapForGlyph (<i>self</i>, int <i>glyphIndex</i>, <a href="qrawfont.html#AntialiasingType-enum" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#AntialiasingType-enum">AntialiasingType</a> <i>antialiasingType</i> = QRawFont.SubPixelAntialiasing, <a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> <i>transform</i> = QTransform())</h3>
+<p>该函数返回字形的光栅化图像在给定的<i>glyphIndex</i>在底层的字体，用<i>transform</i>规定。如果<a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a>是无效的，该函数将返回一个无效<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>。</p>
+<p>If <i>antialiasingType</i>被设置为<a href="qrawfont.html#AntialiasingType-enum" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#AntialiasingType-enum">QRawFont.SubPixelAntialiasing</a>，然后将生成的图像将在<a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">QImage.Format_RGB32</a>和每个像素的RGB值，将表示在该字形的光栅化的像素的子像素的不透明度。否则，图像将在格式<a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">QImage.Format_Indexed8</a>和每个像素将包含像素的光栅化的不透明度。</p>
+<p><b>See also</b> <a href="qrawfont.html#pathForGlyph" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#pathForGlyph">pathForGlyph</a>（）和<a href="qpainter.html#drawGlyphRun" tppabs="http://pyqt4doc.appspot.com/qpainter.html#drawGlyphRun">QPainter.drawGlyphRun</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="ascent"></a>float QRawFont.ascent (<i>self</i>)</h3>
+<p>返回此东昇<a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a>以像素为单位。</p>
+<p><b>See also</b> <a href="qfontmetricsf.html#ascent" tppabs="http://pyqt4doc.appspot.com/qfontmetricsf.html#ascent">QFontMetricsF.ascent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="averageCharWidth"></a>float QRawFont.averageCharWidth (<i>self</i>)</h3>
+<p>返回此字符的平均宽度<a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a>以像素为单位。</p>
+<p><b>See also</b> <a href="qfontmetricsf.html#averageCharWidth" tppabs="http://pyqt4doc.appspot.com/qfontmetricsf.html#averageCharWidth">QFontMetricsF.averageCharWidth</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="descent"></a>float QRawFont.descent (<i>self</i>)</h3>
+<p>返回此下降<a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a>以像素为单位。</p>
+<p><b>See also</b> <a href="qfontmetricsf.html#descent" tppabs="http://pyqt4doc.appspot.com/qfontmetricsf.html#descent">QFontMetricsF.descent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="familyName"></a>QString QRawFont.familyName (<i>self</i>)</h3>
+<p>返回此姓氏<a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a>。</p>
+
+
+<h3 class="fn">
+<a name="fontTable"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QRawFont.fontTable (<i>self</i>, str <i>tagName</i>)</h3>
+<p>检索评为SFNT表<i>tagName</i>从底层的物理字体，或者一个空字节数组，如果没有这样的表被发现。返回的字体表中的字节顺序是大端，像SFNT格式指定。该<i>tagName</i>必须为四个字符，并应在当前平台的默认字节顺序进行格式化。</p>
+
+
+<h3 class="fn">
+<a name="fromFont"></a><a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a> QRawFont.fromFont (<a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a> <i>font</i>, <a href="qfontdatabase.html#WritingSystem-enum" tppabs="http://pyqt4doc.appspot.com/qfontdatabase.html#WritingSystem-enum">QFontDatabase.WritingSystem</a> <i>writingSystem</i> = QFontDatabase.Any)</h3>
+<p>取基于物理表示<i>font</i>查询。返回的物理字体是由Qt的首选，以在选定的显示文本的字体<i>writingSystem</i>。</p>
+
+
+<h3 class="fn">
+<a name="glyphIndexesForString"></a>list-of-int QRawFont.glyphIndexesForString (<i>self</i>, QString <i>text</i>)</h3>
+<p>unicode的点串由下式给出转换<i>text</i>使用CMAP表的基本字体到字形索引，并返回包含结果的载体。</p>
+<p>需要注意的是，在存在于该字体的其他表影响文本的成形的情况下，返回的字形索引将不正确地表示该文本的渲染。为了得到正确的形文字，可以使用<a href="qtextlayout.html" tppabs="http://pyqt4doc.appspot.com/qtextlayout.html">QTextLayout</a>布置和形状的文本，然后调用QTextLayout.glyphs （ ）来获取一套字形索引列表和<a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a>对。</p>
+<p><b>See also</b> <a href="qrawfont.html#advancesForGlyphIndexes" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#advancesForGlyphIndexes">advancesForGlyphIndexes</a>（ ）<a href="qrawfont.html#glyphIndexesForChars" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#glyphIndexesForChars">glyphIndexesForChars</a>（ ）<a href="qglyphrun.html" tppabs="http://pyqt4doc.appspot.com/qglyphrun.html">QGlyphRun</a>，<a href="qtextlayout.html#glyphRuns" tppabs="http://pyqt4doc.appspot.com/qtextlayout.html#glyphRuns">QTextLayout.glyphRuns</a>（）和<a href="qtextfragment.html#glyphRuns" tppabs="http://pyqt4doc.appspot.com/qtextfragment.html#glyphRuns">QTextFragment.glyphRuns</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hintingPreference"></a><a href="qfont.html#HintingPreference-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#HintingPreference-enum">QFont.HintingPreference</a> QRawFont.hintingPreference (<i>self</i>)</h3>
+<p>返回用于构造这个暗示偏好<a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a>。</p>
+<p><b>See also</b> <a href="qfont.html#hintingPreference" tppabs="http://pyqt4doc.appspot.com/qfont.html#hintingPreference">QFont.hintingPreference</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isValid"></a>bool QRawFont.isValid (<i>self</i>)</h3>
+<p>返回True如果<a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a>是有效的，否则为False。</p>
+
+
+<h3 class="fn">
+<a name="leading"></a>float QRawFont.leading (<i>self</i>)</h3>
+<p>返回此领先<a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a>以像素为单位。</p>
+<p><b>See also</b> <a href="qfontmetricsf.html#leading" tppabs="http://pyqt4doc.appspot.com/qfontmetricsf.html#leading">QFontMetricsF.leading</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="loadFromData"></a>QRawFont.loadFromData (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>fontData</i>, float <i>pixelSize</i>, <a href="qfont.html#HintingPreference-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#HintingPreference-enum">QFont.HintingPreference</a> <i>hintingPreference</i>)</h3>
+<p>替换当前<a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a>与包含在所提供的字体<i>fontData</i>对于通过给定的大小（以像素为单位）<i>pixelSize</i>，并使用所指定的提示的优先级<i>hintingPreference</i>。</p>
+<p>该<i>fontData</i>必须包含TrueType或OpenType字体。</p>
+<p><b>See also</b> <a href="qrawfont.html#loadFromFile" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#loadFromFile">loadFromFile</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="loadFromFile"></a>QRawFont.loadFromFile (<i>self</i>, QString <i>fileName</i>, float <i>pixelSize</i>, <a href="qfont.html#HintingPreference-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#HintingPreference-enum">QFont.HintingPreference</a> <i>hintingPreference</i>)</h3>
+<p>替换当前<a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a>由所引用的文件中的内容<i>fileName</i>对于通过给定的大小（以像素为单位）<i>pixelSize</i>，并使用所指定的提示的优先级<i>hintingPreference</i>。</p>
+<p>该文件必须引用一个TrueType或OpenType字体。</p>
+<p><b>See also</b> <a href="qrawfont.html#loadFromData" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#loadFromData">loadFromData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="maxCharWidth"></a>float QRawFont.maxCharWidth (<i>self</i>)</h3>
+<p>返回最宽的字符的字体的宽度。</p>
+<p><b>See also</b> <a href="qfontmetricsf.html#maxWidth" tppabs="http://pyqt4doc.appspot.com/qfontmetricsf.html#maxWidth">QFontMetricsF.maxWidth</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="pathForGlyph"></a><a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> QRawFont.pathForGlyph (<i>self</i>, int <i>glyphIndex</i>)</h3>
+<p>这个函数返回该字形的形状在给定的<i>glyphIndex</i>在底层的字体，如果<a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a>是有效的。否则，它返回一个空<a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a>。</p>
+<p>返回的字形将始终unhinted 。</p>
+<p><b>See also</b> <a href="qrawfont.html#alphaMapForGlyph" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#alphaMapForGlyph">alphaMapForGlyph</a>（）和<a href="qpainterpath.html#addText" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html#addText">QPainterPath.addText</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="pixelSize"></a>float QRawFont.pixelSize (<i>self</i>)</h3>
+<p>返回此像素大小设置<a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a>。像素大小会影响字形光栅，通过回字形的大小<a href="qrawfont.html#pathForGlyph" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#pathForGlyph">pathForGlyph</a>（） ，并用于内部度量转换设计单位逻辑像素单位。</p>
+<p><b>See also</b> <a href="qrawfont.html#setPixelSize" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#setPixelSize">setPixelSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPixelSize"></a>QRawFont.setPixelSize (<i>self</i>, float <i>pixelSize</i>)</h3>
+<p>设置像素大小与该字体应该被渲染到<i>pixelSize</i>。</p>
+<p><b>See also</b> <a href="qrawfont.html#pixelSize" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#pixelSize">pixelSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="style"></a><a href="qfont.html#Style-enum" tppabs="http://pyqt4doc.appspot.com/qfont.html#Style-enum">QFont.Style</a> QRawFont.style (<i>self</i>)</h3>
+<p>返回此风格<a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a>。</p>
+<p><b>See also</b> <a href="qfont.html#style" tppabs="http://pyqt4doc.appspot.com/qfont.html#style">QFont.style</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="styleName"></a>QString QRawFont.styleName (<i>self</i>)</h3>
+<p>返回此样式名<a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a>。</p>
+<p><b>See also</b> <a href="qfont.html#styleName" tppabs="http://pyqt4doc.appspot.com/qfont.html#styleName">QFont.styleName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="supportedWritingSystems"></a>list-of-QFontDatabase.WritingSystem QRawFont.supportedWritingSystems (<i>self</i>)</h3>
+<p>返回根据设计师对字体支持的书写系统列表中的字体文件中提供的信息。请注意，这并不能保证在字体特定的Unicode点支撑。您可以使用<a href="qrawfont.html#supportsCharacter" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#supportsCharacter">supportsCharacter</a>（ ）来检查一个单一的，特定的字符支持。</p>
+<p><b>Note:</b>该列表是基于字体的OS / 2表设置，需要这样一个表存在于底层的字体文件Unicode范围和代码页范围内确定。</p>
+<p><b>See also</b> <a href="qrawfont.html#supportsCharacter" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#supportsCharacter">supportsCharacter</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="supportsCharacter"></a>bool QRawFont.supportsCharacter (<i>self</i>, int <i>ucs4</i>)</h3>
+<p>如果字体有对应于给定的字形，则返回True<i>character</i>。</p>
+<p><b>See also</b> <a href="qrawfont.html#supportedWritingSystems" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#supportedWritingSystems">supportedWritingSystems</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="supportsCharacter-2"></a>bool QRawFont.supportsCharacter (<i>self</i>, QChar <i>character</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>如果字体有对应于UCS- 4编码的字符的字形，则返回True<i>ucs4</i>。</p>
+<p><b>See also</b> <a href="qrawfont.html#supportedWritingSystems" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#supportedWritingSystems">supportedWritingSystems</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="unitsPerEm"></a>float QRawFont.unitsPerEm (<i>self</i>)</h3>
+<p>返回设计单位的数量界定em方形这个的宽度和高度<a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a>。此值与像素尺寸转换设计度量时，以像素单位使用的，作为内部度量在设计单位指定与像素大小给出1烯的大小（像素）。</p>
+<p><b>See also</b> <a href="qrawfont.html#pixelSize" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#pixelSize">pixelSize</a>（）和<a href="qrawfont.html#setPixelSize" tppabs="http://pyqt4doc.appspot.com/qrawfont.html#setPixelSize">setPixelSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="weight"></a>int QRawFont.weight (<i>self</i>)</h3>
+<p>返回此重量<a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a>。</p>
+<p><b>See also</b> <a href="qfont.html#weight" tppabs="http://pyqt4doc.appspot.com/qfont.html#weight">QFont.weight</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="xHeight"></a>float QRawFont.xHeight (<i>self</i>)</h3>
+<p>返回此的xHeight<a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a>以像素为单位。</p>
+<p><b>See also</b> <a href="qfontmetricsf.html#xHeight" tppabs="http://pyqt4doc.appspot.com/qfontmetricsf.html#xHeight">QFontMetricsF.xHeight</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="__eq__"></a>bool QRawFont.__eq__ (<i>self</i>, <a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a> <i>other</i>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QRawFont.__ne__ (<i>self</i>, <a href="qrawfont.html" tppabs="http://pyqt4doc.appspot.com/qrawfont.html">QRawFont</a> <i>other</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

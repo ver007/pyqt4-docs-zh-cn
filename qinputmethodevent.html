@@ -1,0 +1,203 @@
+﻿<html>
+<head>
+<title>QInputMethodEvent Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QInputMethodEvent Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QInputMethodEvent类提供了输入法的事件参数。<a href="#details">More...</a></p>
+
+<p>继承<a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent-attribute.html">Attribute</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qinputmethodevent.html#AttributeType-enum" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#AttributeType-enum">AttributeType</a></b> { TextFormat, Cursor, Language, Ruby, Selection }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qinputmethodevent.html#QInputMethodEvent" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#QInputMethodEvent">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qinputmethodevent.html#QInputMethodEvent-2" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#QInputMethodEvent-2">__init__</a></b> (<i>self</i>, QString <i>preeditText</i>, list-of-QInputMethodEvent.Attribute <i>attributes</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qinputmethodevent.html#QInputMethodEvent-3" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#QInputMethodEvent-3">__init__</a></b> (<i>self</i>, QInputMethodEvent <i>other</i>)</li>
+<li>
+<div class="fn"></div>list-of-QInputMethodEvent.Attribute <b><a href="qinputmethodevent.html#attributes" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#attributes">attributes</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qinputmethodevent.html#commitString" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#commitString">commitString</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qinputmethodevent.html#preeditString" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#preeditString">preeditString</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qinputmethodevent.html#replacementLength" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#replacementLength">replacementLength</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qinputmethodevent.html#replacementStart" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#replacementStart">replacementStart</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qinputmethodevent.html#setCommitString" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#setCommitString">setCommitString</a></b> (<i>self</i>, QString <i>commitString</i>, int <i>from</i> = 0, int <i>length</i> = 0)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QInputMethodEvent类提供了输入法的事件参数。</p>
+<p>输入法事件发送到窗口部件时，输入法来输入文本的小工具。输入法被广泛用于输入文字与非拉丁字母的语言。</p>
+<p>请注意，创建自定义的文本编辑窗口部件时，该<a href="qt.html#WidgetAttribute-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#WidgetAttribute-enum">Qt.WA_InputMethodEnabled</a>窗口属性必须显式设置（使用<a href="qwidget.html#setAttribute" tppabs="http://pyqt4doc.appspot.com/qwidget.html#setAttribute">QWidget.setAttribute</a>（ ）函数） ，以便接收输入方法事件。</p>
+<p>该事件感兴趣的人谁不想能正确处理复杂的文字输入语言的键盘输入部件的作者。在这样的语言的文本输入通常是三个步骤：</p>
+<ol class="1">
+<li>
+<b>Starting to Compose</b>
+<p>当用户按下键盘上的第一键，输入上下文被创建。该输入上下文将包含键入的字符的字符串。</p>
+</li>
+<li>
+<b>Composing</b>
+<p>随着按下每一个新键，输入法将尝试创建一个匹配的字符串输入的文字至今被称为预编辑字符串。而输入上下文活动时，用户可以只将光标移动属于该输入上下文内的字符串。</p>
+</li>
+<li>
+<b>Completing</b>
+<p>在一些点，用户将激活一个用户接口部件（可能使用特定的键），其中它们可以从许多匹配他们已经输入到目前为止文本字符串的选择。用户可以确认他们的选择取消输入，在这两种情况下的输入上下文将被关闭。</p>
+</li>
+</ol>
+<p>QInputMethodEvent模型这三个阶段，并转移到正确渲染中间结果所需的信息。一个QInputMethodEvent有两个主要参数：<a href="qinputmethodevent.html#preeditString" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#preeditString">preeditString</a>（）和<a href="qinputmethodevent.html#commitString" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#commitString">commitString</a>（ ） 。该<a href="qinputmethodevent.html#preeditString" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#preeditString">preeditString</a>（ ）参数提供了当前活动的预编辑字符串。该<a href="qinputmethodevent.html#commitString" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#commitString">commitString</a>（）的参数给出了应该被添加到（或更换的零件）的编辑控件的文本的文本。它通常是输入操作的结果，并具有直接的预编辑字符串之前，要被插入到该小部件文本。</p>
+<p>如果<a href="qinputmethodevent.html#commitString" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#commitString">commitString</a>（ ）应该更换的编辑器中的文字部分，<a href="qinputmethodevent.html#replacementLength" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#replacementLength">replacementLength</a>（）将包含要被替换的字符数。<a href="qinputmethodevent.html#replacementStart" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#replacementStart">replacementStart</a>（）包含在该字符将相对从预编辑字符串的开始取代了位置。</p>
+<p>一些属性控制预编辑字符串的视觉外观（文本的视觉外观的预编辑字符串外仅由部件控制） 。该<a href="qinputmethodevent.html#AttributeType-enum" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#AttributeType-enum">AttributeType</a>枚举描述了可设置不同的属性。</p>
+<p>一个类实现<a href="qwidget.html#inputMethodEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#inputMethodEvent">QWidget.inputMethodEvent</a>（）或<a href="qgraphicsitem.html#inputMethodEvent" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#inputMethodEvent">QGraphicsItem.inputMethodEvent</a>（ ）至少应该理解和尊敬<a href="qinputmethodevent.html#AttributeType-enum" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#AttributeType-enum">TextFormat</a>和<a href="qinputmethodevent.html#AttributeType-enum" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#AttributeType-enum">Cursor</a>属性。</p>
+<p>因为输入方法需要能够从部件或图形项查询某些属性，子类还必须实现<a href="qwidget.html#inputMethodQuery" tppabs="http://pyqt4doc.appspot.com/qwidget.html#inputMethodQuery">QWidget.inputMethodQuery</a>（）和<a href="qgraphicsitem.html#inputMethodQuery" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#inputMethodQuery">QGraphicsItem.inputMethodQuery</a>（） ，分别为。</p>
+<p>当接收到一个输入法事件，文本组件必须执行以下步骤：</p>
+<ol class="1">
+<li>如果控件已选定的文本，选定文本应该得到消除。</li>
+<li>删除文本的起始处<a href="qinputmethodevent.html#replacementStart" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#replacementStart">replacementStart</a>（ ）与长度<a href="qinputmethodevent.html#replacementLength" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#replacementLength">replacementLength</a>（）和由它代替<a href="qinputmethodevent.html#commitString" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#commitString">commitString</a>（ ） 。如果<a href="qinputmethodevent.html#replacementLength" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#replacementLength">replacementLength</a>（ ）为0，<a href="qinputmethodevent.html#replacementStart" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#replacementStart">replacementStart</a>（）给出的插入位置<a href="qinputmethodevent.html#commitString" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#commitString">commitString</a>（ ） 。<p>当进行置换预先编辑字符串的区域将被忽略，从而替代从-1开始为2的长度将预编辑字符串，之后的第一个字符之前删除的最后一个字符，并直接将预编辑字符串前插入提交字符串。</p>
+<p>如果小部件工具撤消/重做，这种操作被添加到撤消堆栈中。</p>
+</li>
+<li>如果没有当前预编辑字符串，插入<a href="qinputmethodevent.html#preeditString" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#preeditString">preeditString</a>（ ）在当前光标位置，否则与此事件收到一个取代以前preeditString 。<p>如果小部件工具撤消/重做时，<a href="qinputmethodevent.html#preeditString" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#preeditString">preeditString</a>（ ）不应该影响撤消/重做栈以任何方式。</p>
+<p>窗口小部件应检查属性列表应用到预编辑字符串。它具有至少了解的<a href="qinputmethodevent.html#AttributeType-enum" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#AttributeType-enum">TextFormat</a>和游标属性和指定渲染它们。</p>
+</li>
+</ol>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="AttributeType-enum"></a>QInputMethodEvent.AttributeType</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QInputMethodEvent.TextFormat</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">A <a href="qtextcharformat.html" tppabs="http://pyqt4doc.appspot.com/qtextcharformat.html">QTextCharFormat</a>对预编辑字符串由start和length指定的一部分。值包含一个<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>类型<a href="qtextformat.html" tppabs="http://pyqt4doc.appspot.com/qtextformat.html">QTextFormat</a>指定这部分的预编辑字符串的渲染。应该有至多有一个格式的预编辑字符串的每一个部分。如果几个是在字符串中指定的任何字符的行为是未定义的。一个符合标准的实现必须至少兑现格式的backgroundColor ，文字颜色及加底线的属性。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QInputMethodEvent.Cursor</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">如果设置，光标应显示预编辑字符串内的位置开始。长度变量确定光标是否可见或不可见。如果长度为0的光标是不可见的。如果值是一个<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>类型<a href="qcolor.html" tppabs="http://pyqt4doc.appspot.com/qcolor.html">QColor</a>这种颜色将用于渲染光标，否则周围文本的颜色将被使用。应该有每个事件最多只有一个光标属性。如果几个指定的行为是未定义的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QInputMethodEvent.Language</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">变体包含一个<a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a>对象指定预编辑字符串的某一部分的语言。应该有至多有一个语言的预编辑字符串的每一个部分设置。如果几个是在字符串中指定的任何字符的行为是未定义的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QInputMethodEvent.Ruby</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">红宝石文本预编辑字符串的一部分。应该有对预编辑字符串的每一个部分最多有一个红宝石的文本集。如果几个是在字符串中指定的任何字符的行为是未定义的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QInputMethodEvent.Selection</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">如果设置，编辑光标应该被移动到编辑器中的文本内容中的指定位置。与此相反<tt>Cursor</tt>，这个属性不能在预先编辑文字工作，但对周围的文字。光标将后移至提交字符串一直致力于，并预先编辑字符串将设在新的编辑位置。的开始位置指定新的位置和长度可变，可用于设置从该点起进行选择。该值是未使用的。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent-attribute.html">Attribute</a>。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QInputMethodEvent"></a>QInputMethodEvent.__init__ (<i>self</i>)</h3>
+<p>构造类型的事件<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.InputMethod</a>。该<a href="qinputmethodevent.html#attributes" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#attributes">attributes</a>（ ）<a href="qinputmethodevent.html#preeditString" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#preeditString">preeditString</a>（ ）<a href="qinputmethodevent.html#commitString" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#commitString">commitString</a>（ ）<a href="qinputmethodevent.html#replacementStart" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#replacementStart">replacementStart</a>（）和<a href="qinputmethodevent.html#replacementLength" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#replacementLength">replacementLength</a>（ ）被初始化为默认值。</p>
+<p><b>See also</b> <a href="qinputmethodevent.html#setCommitString" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#setCommitString">setCommitString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QInputMethodEvent-2"></a>QInputMethodEvent.__init__ (<i>self</i>, QString <i>preeditText</i>, list-of-QInputMethodEvent.Attribute <i>attributes</i>)</h3>
+<p>Construcs类型的事件<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.InputMethod</a>。预编辑文本设置为<i>preeditText</i>的属性<i>attributes</i>。</p>
+<p>该<a href="qinputmethodevent.html#commitString" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#commitString">commitString</a>（ ）<a href="qinputmethodevent.html#replacementStart" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#replacementStart">replacementStart</a>（）和<a href="qinputmethodevent.html#replacementLength" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#replacementLength">replacementLength</a>（）值可以使用设置<a href="qinputmethodevent.html#setCommitString" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#setCommitString">setCommitString</a>（ ） 。</p>
+<p><b>See also</b> <a href="qinputmethodevent.html#preeditString" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#preeditString">preeditString</a>（）和<a href="qinputmethodevent.html#attributes" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#attributes">attributes</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QInputMethodEvent-3"></a>QInputMethodEvent.__init__ (<i>self</i>, <a href="qinputmethodevent.html" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html">QInputMethodEvent</a> <i>other</i>)</h3>
+<p>构造的副本<i>other</i>。</p>
+
+
+<h3 class="fn">
+<a name="attributes"></a>list-of-QInputMethodEvent.Attribute QInputMethodEvent.attributes (<i>self</i>)</h3>
+<p>返回传递到属性列表<a href="qinputmethodevent.html" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html">QInputMethodEvent</a>构造函数。的属性控制在预编辑字符串的视觉外观（文字的视觉外观的预编辑字符串以外仅由部件控制）。</p>
+<p><b>See also</b> <a href="qinputmethodevent.html#preeditString" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#preeditString">preeditString</a>（）和<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent-attribute.html">Attribute</a>。</p>
+
+
+<h3 class="fn">
+<a name="commitString"></a>QString QInputMethodEvent.commitString (<i>self</i>)</h3>
+<p>返回应该被添加到（或更换的零件）的编辑控件的文本。它通常是输入操作的结果，并具有直接的预编辑字符串之前，要被插入到该小部件文本。</p>
+<p><b>See also</b> <a href="qinputmethodevent.html#setCommitString" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#setCommitString">setCommitString</a>（ ）<a href="qinputmethodevent.html#preeditString" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#preeditString">preeditString</a>（ ）<a href="qinputmethodevent.html#replacementStart" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#replacementStart">replacementStart</a>（）和<a href="qinputmethodevent.html#replacementLength" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#replacementLength">replacementLength</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="preeditString"></a>QString QInputMethodEvent.preeditString (<i>self</i>)</h3>
+<p>返回预编辑文本，即文本的用户开始编辑它。</p>
+<p><b>See also</b> <a href="qinputmethodevent.html#commitString" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#commitString">commitString</a>（）和<a href="qinputmethodevent.html#attributes" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#attributes">attributes</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="replacementLength"></a>int QInputMethodEvent.replacementLength (<i>self</i>)</h3>
+<p>返回被替换的预编辑字符串中的字符数。</p>
+<p><b>See also</b> <a href="qinputmethodevent.html#replacementStart" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#replacementStart">replacementStart</a>（）和<a href="qinputmethodevent.html#setCommitString" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#setCommitString">setCommitString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="replacementStart"></a>int QInputMethodEvent.replacementStart (<i>self</i>)</h3>
+<p>返回字符将被相对的预编辑字符串的开始取代了位置。</p>
+<p><b>See also</b> <a href="qinputmethodevent.html#replacementLength" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#replacementLength">replacementLength</a>（）和<a href="qinputmethodevent.html#setCommitString" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#setCommitString">setCommitString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCommitString"></a>QInputMethodEvent.setCommitString (<i>self</i>, QString <i>commitString</i>, int <i>from</i> = 0, int <i>length</i> = 0)</h3>
+<p>提交字符串设置为<i>commitString</i>。</p>
+<p>提交的字符串是一个应该被添加到（或更换的零件）的编辑控件的文本。它通常是输入操作的结果，并具有直接的预编辑字符串之前，要被插入到该小部件文本。</p>
+<p>如果提交的字符串应该替换的编辑器中的文字部分，<i>replaceLength</i>指定要被替换的字符数。<i>replaceFrom</i>指定在哪个字符被从相对的预编辑字符串的开始取代了位置。</p>
+<p><b>See also</b> <a href="qinputmethodevent.html#commitString" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#commitString">commitString</a>（ ）<a href="qinputmethodevent.html#replacementStart" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#replacementStart">replacementStart</a>（）和<a href="qinputmethodevent.html#replacementLength" tppabs="http://pyqt4doc.appspot.com/qinputmethodevent.html#replacementLength">replacementLength</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

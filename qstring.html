@@ -1,0 +1,2128 @@
+﻿<html>
+<head>
+<title>QString Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QString Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>QString类提供了一个Unicode字符的字符串。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qstring.html#NormalizationForm-enum" tppabs="http://pyqt4doc.appspot.com/qstring.html#NormalizationForm-enum">NormalizationForm</a></b> { NormalizationForm_D, NormalizationForm_C, NormalizationForm_KD, NormalizationForm_KC }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qstring.html#SectionFlag-enum" tppabs="http://pyqt4doc.appspot.com/qstring.html#SectionFlag-enum">SectionFlag</a></b> { SectionDefault, SectionSkipEmpty, SectionIncludeLeadingSep, SectionIncludeTrailingSep, SectionCaseInsensitiveSeps }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qstring-sectionflags.html">SectionFlags</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qstring.html#SplitBehavior-enum" tppabs="http://pyqt4doc.appspot.com/qstring.html#SplitBehavior-enum">SplitBehavior</a></b> { KeepEmptyParts, SkipEmptyParts }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qstring.html#QString" tppabs="http://pyqt4doc.appspot.com/qstring.html#QString">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstring.html#QString" tppabs="http://pyqt4doc.appspot.com/qstring.html#QString">__init__</a></b> (<i>self</i>, QKeySequence)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstring.html#QString" tppabs="http://pyqt4doc.appspot.com/qstring.html#QString">__init__</a></b> (<i>self</i>, QScriptString)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstring.html#QString-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#QString-2">__init__</a></b> (<i>self</i>, int <i>size</i>, QChar <i>c</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstring.html#QString-3" tppabs="http://pyqt4doc.appspot.com/qstring.html#QString-3">__init__</a></b> (<i>self</i>, QString <i>s</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstring.html#QString-4" tppabs="http://pyqt4doc.appspot.com/qstring.html#QString-4">__init__</a></b> (<i>self</i>, QByteArray <i>a</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstring.html#QString-5" tppabs="http://pyqt4doc.appspot.com/qstring.html#QString-5">__init__</a></b> (<i>self</i>, QUuid)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#append" tppabs="http://pyqt4doc.appspot.com/qstring.html#append">append</a></b> (<i>self</i>, QString <i>s</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#append-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#append-2">append</a></b> (<i>self</i>, QLatin1String <i>s</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#append-3" tppabs="http://pyqt4doc.appspot.com/qstring.html#append-3">append</a></b> (<i>self</i>, QByteArray <i>s</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#arg" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg">arg</a></b> (<i>self</i>, int <i>a</i>, int <i>fieldWidth</i> = 0, int <i>base</i> = 10, QChar <i>fillChar</i> = QLatin1Char(' '))</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#arg-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg-2">arg</a></b> (<i>self</i>, float <i>a</i>, int <i>fieldWidth</i> = 0, str <i>format</i> = 'g', int <i>precision</i> = -1, QChar <i>fillChar</i> = QLatin1Char(' '))</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#arg-3" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg-3">arg</a></b> (<i>self</i>, int <i>a</i>, int <i>fieldWidth</i> = 0, int <i>base</i> = 10, QChar <i>fillChar</i> = QLatin1Char(' '))</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#arg-4" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg-4">arg</a></b> (<i>self</i>, int <i>a</i>, int <i>fieldWidth</i> = 0, int <i>base</i> = 10, QChar <i>fillChar</i> = QLatin1Char(' '))</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#arg-5" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg-5">arg</a></b> (<i>self</i>, QString <i>a</i>, int <i>fieldWidth</i> = 0, QChar <i>fillChar</i> = QLatin1Char(' '))</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#arg-6" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg-6">arg</a></b> (<i>self</i>, QString <i>a1</i>, QString <i>a2</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#arg-7" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg-7">arg</a></b> (<i>self</i>, QString <i>a1</i>, QString <i>a2</i>, QString <i>a3</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#arg-8" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg-8">arg</a></b> (<i>self</i>, QString <i>a1</i>, QString <i>a2</i>, QString <i>a3</i>, QString <i>a4</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#arg-9" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg-9">arg</a></b> (<i>self</i>, QString <i>a1</i>, QString <i>a2</i>, QString <i>a3</i>, QString <i>a4</i>, QString <i>a5</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#arg-10" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg-10">arg</a></b> (<i>self</i>, QString <i>a1</i>, QString <i>a2</i>, QString <i>a3</i>, QString <i>a4</i>, QString <i>a5</i>, QString <i>a6</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#arg-11" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg-11">arg</a></b> (<i>self</i>, QString <i>a1</i>, QString <i>a2</i>, QString <i>a3</i>, QString <i>a4</i>, QString <i>a5</i>, QString <i>a6</i>, QString <i>a7</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#arg-12" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg-12">arg</a></b> (<i>self</i>, QString <i>a1</i>, QString <i>a2</i>, QString <i>a3</i>, QString <i>a4</i>, QString <i>a5</i>, QString <i>a6</i>, QString <i>a7</i>, QString <i>a8</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#arg-13" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg-13">arg</a></b> (<i>self</i>, QString <i>a1</i>, QString <i>a2</i>, QString <i>a3</i>, QString <i>a4</i>, QString <i>a5</i>, QString <i>a6</i>, QString <i>a7</i>, QString <i>a8</i>, QString <i>a9</i>)</li>
+<li>
+<div class="fn"></div>QChar <b><a href="qstring.html#at" tppabs="http://pyqt4doc.appspot.com/qstring.html#at">at</a></b> (<i>self</i>, int <i>i</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#capacity" tppabs="http://pyqt4doc.appspot.com/qstring.html#capacity">capacity</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstring.html#chop" tppabs="http://pyqt4doc.appspot.com/qstring.html#chop">chop</a></b> (<i>self</i>, int <i>n</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstring.html#clear" tppabs="http://pyqt4doc.appspot.com/qstring.html#clear">clear</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#compare" tppabs="http://pyqt4doc.appspot.com/qstring.html#compare">compare</a></b> (<i>self</i>, QString <i>s</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#compare-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#compare-2">compare</a></b> (<i>self</i>, QString <i>s</i>, Qt.CaseSensitivity <i>cs</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#compare-3" tppabs="http://pyqt4doc.appspot.com/qstring.html#compare-3">compare</a></b> (<i>self</i>, QLatin1String <i>other</i>, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#compare-4" tppabs="http://pyqt4doc.appspot.com/qstring.html#compare-4">compare</a></b> (<i>self</i>, QStringRef <i>ref</i>, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#contains" tppabs="http://pyqt4doc.appspot.com/qstring.html#contains">contains</a></b> (<i>self</i>, QString <i>str</i>, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#contains-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#contains-2">contains</a></b> (<i>self</i>, QStringRef <i>s</i>, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#contains-3" tppabs="http://pyqt4doc.appspot.com/qstring.html#contains-3">contains</a></b> (<i>self</i>, QRegExp <i>rx</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#count" tppabs="http://pyqt4doc.appspot.com/qstring.html#count">count</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#count-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#count-2">count</a></b> (<i>self</i>, QString <i>str</i>, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#count-3" tppabs="http://pyqt4doc.appspot.com/qstring.html#count-3">count</a></b> (<i>self</i>, QStringRef <i>str</i>, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#count-4" tppabs="http://pyqt4doc.appspot.com/qstring.html#count-4">count</a></b> (<i>self</i>, QRegExp)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#endsWith" tppabs="http://pyqt4doc.appspot.com/qstring.html#endsWith">endsWith</a></b> (<i>self</i>, QString <i>s</i>, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#endsWith-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#endsWith-2">endsWith</a></b> (<i>self</i>, QStringRef <i>s</i>, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#endsWith-3" tppabs="http://pyqt4doc.appspot.com/qstring.html#endsWith-3">endsWith</a></b> (<i>self</i>, QLatin1String <i>s</i>, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#fill" tppabs="http://pyqt4doc.appspot.com/qstring.html#fill">fill</a></b> (<i>self</i>, QChar <i>ch</i>, int <i>size</i> = -1)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#indexOf" tppabs="http://pyqt4doc.appspot.com/qstring.html#indexOf">indexOf</a></b> (<i>self</i>, QString <i>str</i>, int <i>from</i> = 0, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#indexOf-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#indexOf-2">indexOf</a></b> (<i>self</i>, QStringRef <i>str</i>, int <i>from</i> = 0, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#indexOf-3" tppabs="http://pyqt4doc.appspot.com/qstring.html#indexOf-3">indexOf</a></b> (<i>self</i>, QLatin1String <i>str</i>, int <i>from</i> = 0, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#indexOf-4" tppabs="http://pyqt4doc.appspot.com/qstring.html#indexOf-4">indexOf</a></b> (<i>self</i>, QRegExp <i>rx</i>, int <i>from</i> = 0)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#insert" tppabs="http://pyqt4doc.appspot.com/qstring.html#insert">insert</a></b> (<i>self</i>, int <i>i</i>, QString <i>s</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#insert-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#insert-2">insert</a></b> (<i>self</i>, int <i>i</i>, QLatin1String <i>s</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qstring.html#isEmpty">isEmpty</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#isNull" tppabs="http://pyqt4doc.appspot.com/qstring.html#isNull">isNull</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#isRightToLeft" tppabs="http://pyqt4doc.appspot.com/qstring.html#isRightToLeft">isRightToLeft</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#isSimpleText" tppabs="http://pyqt4doc.appspot.com/qstring.html#isSimpleText">isSimpleText</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#lastIndexOf" tppabs="http://pyqt4doc.appspot.com/qstring.html#lastIndexOf">lastIndexOf</a></b> (<i>self</i>, QString <i>str</i>, int <i>from</i> = -1, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#lastIndexOf-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#lastIndexOf-2">lastIndexOf</a></b> (<i>self</i>, QStringRef <i>str</i>, int <i>from</i> = -1, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#lastIndexOf-3" tppabs="http://pyqt4doc.appspot.com/qstring.html#lastIndexOf-3">lastIndexOf</a></b> (<i>self</i>, QLatin1String <i>str</i>, int <i>from</i> = -1, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#lastIndexOf-4" tppabs="http://pyqt4doc.appspot.com/qstring.html#lastIndexOf-4">lastIndexOf</a></b> (<i>self</i>, QRegExp <i>rx</i>, int <i>from</i> = -1)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#left" tppabs="http://pyqt4doc.appspot.com/qstring.html#left">left</a></b> (<i>self</i>, int <i>len</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#leftJustified" tppabs="http://pyqt4doc.appspot.com/qstring.html#leftJustified">leftJustified</a></b> (<i>self</i>, int <i>width</i>, QChar <i>fillChar</i> = QLatin1Char(' '), bool <i>truncate</i> = False)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#length" tppabs="http://pyqt4doc.appspot.com/qstring.html#length">length</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#localeAwareCompare" tppabs="http://pyqt4doc.appspot.com/qstring.html#localeAwareCompare">localeAwareCompare</a></b> (<i>self</i>, QString <i>s</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#localeAwareCompare-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#localeAwareCompare-2">localeAwareCompare</a></b> (<i>self</i>, QStringRef <i>s</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#mid" tppabs="http://pyqt4doc.appspot.com/qstring.html#mid">mid</a></b> (<i>self</i>, int <i>position</i>, int <i>n</i> = -1)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#normalized" tppabs="http://pyqt4doc.appspot.com/qstring.html#normalized">normalized</a></b> (<i>self</i>, NormalizationForm <i>mode</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#normalized-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#normalized-2">normalized</a></b> (<i>self</i>, NormalizationForm <i>mode</i>, QChar.UnicodeVersion <i>version</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#prepend" tppabs="http://pyqt4doc.appspot.com/qstring.html#prepend">prepend</a></b> (<i>self</i>, QString <i>s</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#prepend-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#prepend-2">prepend</a></b> (<i>self</i>, QLatin1String <i>s</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#prepend-3" tppabs="http://pyqt4doc.appspot.com/qstring.html#prepend-3">prepend</a></b> (<i>self</i>, QByteArray <i>s</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstring.html#push_back" tppabs="http://pyqt4doc.appspot.com/qstring.html#push_back">push_back</a></b> (<i>self</i>, QString <i>s</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstring.html#push_front" tppabs="http://pyqt4doc.appspot.com/qstring.html#push_front">push_front</a></b> (<i>self</i>, QString <i>s</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#remove" tppabs="http://pyqt4doc.appspot.com/qstring.html#remove">remove</a></b> (<i>self</i>, int <i>i</i>, int <i>len</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#remove-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#remove-2">remove</a></b> (<i>self</i>, QString <i>str</i>, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#remove-3" tppabs="http://pyqt4doc.appspot.com/qstring.html#remove-3">remove</a></b> (<i>self</i>, QRegExp <i>rx</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#repeated" tppabs="http://pyqt4doc.appspot.com/qstring.html#repeated">repeated</a></b> (<i>self</i>, int <i>times</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#replace" tppabs="http://pyqt4doc.appspot.com/qstring.html#replace">replace</a></b> (<i>self</i>, int <i>i</i>, int <i>len</i>, QString <i>after</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#replace-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#replace-2">replace</a></b> (<i>self</i>, QString <i>before</i>, QString <i>after</i>, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#replace-3" tppabs="http://pyqt4doc.appspot.com/qstring.html#replace-3">replace</a></b> (<i>self</i>, QRegExp <i>rx</i>, QString <i>after</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#replace-4" tppabs="http://pyqt4doc.appspot.com/qstring.html#replace-4">replace</a></b> (<i>self</i>, QLatin1String <i>before</i>, QLatin1String <i>after</i>, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#replace-5" tppabs="http://pyqt4doc.appspot.com/qstring.html#replace-5">replace</a></b> (<i>self</i>, QLatin1String <i>before</i>, QString <i>after</i>, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#replace-6" tppabs="http://pyqt4doc.appspot.com/qstring.html#replace-6">replace</a></b> (<i>self</i>, QString <i>before</i>, QLatin1String <i>after</i>, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstring.html#reserve" tppabs="http://pyqt4doc.appspot.com/qstring.html#reserve">reserve</a></b> (<i>self</i>, int <i>asize</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstring.html#resize" tppabs="http://pyqt4doc.appspot.com/qstring.html#resize">resize</a></b> (<i>self</i>, int <i>size</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#right" tppabs="http://pyqt4doc.appspot.com/qstring.html#right">right</a></b> (<i>self</i>, int <i>len</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#rightJustified" tppabs="http://pyqt4doc.appspot.com/qstring.html#rightJustified">rightJustified</a></b> (<i>self</i>, int <i>width</i>, QChar <i>fillChar</i> = QLatin1Char(' '), bool <i>truncate</i> = False)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#section" tppabs="http://pyqt4doc.appspot.com/qstring.html#section">section</a></b> (<i>self</i>, QString <i>sep</i>, int <i>start</i>, int <i>end</i> = -1, SectionFlags <i>flags</i> = QString.SectionDefault)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#section-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#section-2">section</a></b> (<i>self</i>, QRegExp <i>reg</i>, int <i>start</i>, int <i>end</i> = -1, SectionFlags <i>flags</i> = QString.SectionDefault)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#setNum" tppabs="http://pyqt4doc.appspot.com/qstring.html#setNum">setNum</a></b> (<i>self</i>, int <i>n</i>, int <i>base</i> = 10)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#setNum-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#setNum-2">setNum</a></b> (<i>self</i>, float <i>n</i>, str <i>format</i> = 'g', int <i>precision</i> = 6)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#setNum-3" tppabs="http://pyqt4doc.appspot.com/qstring.html#setNum-3">setNum</a></b> (<i>self</i>, int <i>n</i>, int <i>base</i> = 10)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#setNum-4" tppabs="http://pyqt4doc.appspot.com/qstring.html#setNum-4">setNum</a></b> (<i>self</i>, int <i>n</i>, int <i>base</i> = 10)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#simplified" tppabs="http://pyqt4doc.appspot.com/qstring.html#simplified">simplified</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#size" tppabs="http://pyqt4doc.appspot.com/qstring.html#size">size</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qstring.html#split" tppabs="http://pyqt4doc.appspot.com/qstring.html#split">split</a></b> (<i>self</i>, QString <i>sep</i>, SplitBehavior <i>behavior</i> = QString.KeepEmptyParts, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qstring.html#split-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#split-2">split</a></b> (<i>self</i>, QRegExp <i>sep</i>, SplitBehavior <i>behavior</i> = QString.KeepEmptyParts)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstring.html#squeeze" tppabs="http://pyqt4doc.appspot.com/qstring.html#squeeze">squeeze</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#startsWith" tppabs="http://pyqt4doc.appspot.com/qstring.html#startsWith">startsWith</a></b> (<i>self</i>, QString <i>s</i>, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#startsWith-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#startsWith-2">startsWith</a></b> (<i>self</i>, QStringRef <i>s</i>, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#startsWith-3" tppabs="http://pyqt4doc.appspot.com/qstring.html#startsWith-3">startsWith</a></b> (<i>self</i>, QLatin1String <i>s</i>, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstring.html#swap" tppabs="http://pyqt4doc.appspot.com/qstring.html#swap">swap</a></b> (<i>self</i>, QString <i>other</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qstring.html#toAscii" tppabs="http://pyqt4doc.appspot.com/qstring.html#toAscii">toAscii</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#toCaseFolded" tppabs="http://pyqt4doc.appspot.com/qstring.html#toCaseFolded">toCaseFolded</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>(float, bool <i>ok</i>) <b><a href="qstring.html#toDouble" tppabs="http://pyqt4doc.appspot.com/qstring.html#toDouble">toDouble</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>(float, bool <i>ok</i>) <b><a href="qstring.html#toFloat" tppabs="http://pyqt4doc.appspot.com/qstring.html#toFloat">toFloat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>(int, bool <i>ok</i>) <b><a href="qstring.html#toInt" tppabs="http://pyqt4doc.appspot.com/qstring.html#toInt">toInt</a></b> (<i>self</i>, int <i>base</i> = 10)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qstring.html#toLatin1" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLatin1">toLatin1</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qstring.html#toLocal8Bit" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLocal8Bit">toLocal8Bit</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>(int, bool <i>ok</i>) <b><a href="qstring.html#toLong" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLong">toLong</a></b> (<i>self</i>, int <i>base</i> = 10)</li>
+<li>
+<div class="fn"></div>(int, bool <i>ok</i>) <b><a href="qstring.html#toLongLong" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLongLong">toLongLong</a></b> (<i>self</i>, int <i>base</i> = 10)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#toLower" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLower">toLower</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>(int, bool <i>ok</i>) <b><a href="qstring.html#toShort" tppabs="http://pyqt4doc.appspot.com/qstring.html#toShort">toShort</a></b> (<i>self</i>, int <i>base</i> = 10)</li>
+<li>
+<div class="fn"></div>(int, bool <i>ok</i>) <b><a href="qstring.html#toUInt" tppabs="http://pyqt4doc.appspot.com/qstring.html#toUInt">toUInt</a></b> (<i>self</i>, int <i>base</i> = 10)</li>
+<li>
+<div class="fn"></div>(int, bool <i>ok</i>) <b><a href="qstring.html#toULong" tppabs="http://pyqt4doc.appspot.com/qstring.html#toULong">toULong</a></b> (<i>self</i>, int <i>base</i> = 10)</li>
+<li>
+<div class="fn"></div>(int, bool <i>ok</i>) <b><a href="qstring.html#toULongLong" tppabs="http://pyqt4doc.appspot.com/qstring.html#toULongLong">toULongLong</a></b> (<i>self</i>, int <i>base</i> = 10)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#toUpper" tppabs="http://pyqt4doc.appspot.com/qstring.html#toUpper">toUpper</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>(int, bool <i>ok</i>) <b><a href="qstring.html#toUShort" tppabs="http://pyqt4doc.appspot.com/qstring.html#toUShort">toUShort</a></b> (<i>self</i>, int <i>base</i> = 10)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qstring.html#toUtf8" tppabs="http://pyqt4doc.appspot.com/qstring.html#toUtf8">toUtf8</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#trimmed" tppabs="http://pyqt4doc.appspot.com/qstring.html#trimmed">trimmed</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstring.html#truncate" tppabs="http://pyqt4doc.appspot.com/qstring.html#truncate">truncate</a></b> (<i>self</i>, int <i>pos</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#compare-5" tppabs="http://pyqt4doc.appspot.com/qstring.html#compare-5">compare</a></b> (QString <i>s1</i>, QString <i>s2</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#compare-6" tppabs="http://pyqt4doc.appspot.com/qstring.html#compare-6">compare</a></b> (QString <i>s1</i>, QString <i>s2</i>, Qt.CaseSensitivity <i>cs</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#compare-7" tppabs="http://pyqt4doc.appspot.com/qstring.html#compare-7">compare</a></b> (QString <i>s1</i>, QLatin1String <i>s2</i>, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#compare-8" tppabs="http://pyqt4doc.appspot.com/qstring.html#compare-8">compare</a></b> (QLatin1String <i>s1</i>, QString <i>s2</i>, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#compare-9" tppabs="http://pyqt4doc.appspot.com/qstring.html#compare-9">compare</a></b> (QString <i>s1</i>, QStringRef <i>s2</i>, Qt.CaseSensitivity <i>cs</i> = Qt.CaseSensitive)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#fromAscii" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromAscii">fromAscii</a></b> (str <i>str</i>, int <i>size</i> = -1)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#fromLatin1" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromLatin1">fromLatin1</a></b> (str <i>str</i>, int <i>size</i> = -1)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#fromLocal8Bit" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromLocal8Bit">fromLocal8Bit</a></b> (str <i>str</i>, int <i>size</i> = -1)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#fromUtf8" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromUtf8">fromUtf8</a></b> (str <i>str</i>, int <i>size</i> = -1)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#localeAwareCompare-3" tppabs="http://pyqt4doc.appspot.com/qstring.html#localeAwareCompare-3">localeAwareCompare</a></b> (QString <i>s1</i>, QString <i>s2</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#localeAwareCompare-4" tppabs="http://pyqt4doc.appspot.com/qstring.html#localeAwareCompare-4">localeAwareCompare</a></b> (QString <i>s1</i>, QStringRef <i>s2</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#number" tppabs="http://pyqt4doc.appspot.com/qstring.html#number">number</a></b> (int <i>n</i>, int <i>base</i> = 10)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#number-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#number-2">number</a></b> (float <i>n</i>, str <i>format</i> = 'g', int <i>precision</i> = 6)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#number-3" tppabs="http://pyqt4doc.appspot.com/qstring.html#number-3">number</a></b> (int <i>n</i>, int <i>base</i> = 10)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#number-4" tppabs="http://pyqt4doc.appspot.com/qstring.html#number-4">number</a></b> (int <i>n</i>, int <i>base</i> = 10)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#__add__" tppabs="http://pyqt4doc.appspot.com/qstring.html#__add__">__add__</a></b> (<i>self</i>, QString <i>s2</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#__add__-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#__add__-2">__add__</a></b> (<i>self</i>, QByteArray <i>ba</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#__contains__" tppabs="http://pyqt4doc.appspot.com/qstring.html#__contains__">__contains__</a></b> (<i>self</i>, QString <i>s</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qstring.html#__eq__">__eq__</a></b> (<i>self</i>, QString <i>s</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#__eq__-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#__eq__-2">__eq__</a></b> (<i>self</i>, QLatin1String <i>s</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#__eq__-3" tppabs="http://pyqt4doc.appspot.com/qstring.html#__eq__-3">__eq__</a></b> (<i>self</i>, QByteArray <i>s</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#__eq__-4" tppabs="http://pyqt4doc.appspot.com/qstring.html#__eq__-4">__eq__</a></b> (<i>self</i>, QStringRef <i>s2</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#__ge__" tppabs="http://pyqt4doc.appspot.com/qstring.html#__ge__">__ge__</a></b> (<i>self</i>, QString <i>s</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#__ge__-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#__ge__-2">__ge__</a></b> (<i>self</i>, QLatin1String <i>s</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#__ge__-3" tppabs="http://pyqt4doc.appspot.com/qstring.html#__ge__-3">__ge__</a></b> (<i>self</i>, QByteArray <i>s</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#__getitem__" tppabs="http://pyqt4doc.appspot.com/qstring.html#__getitem__">__getitem__</a></b> (<i>self</i>, int <i>i</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#__getitem__-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#__getitem__-2">__getitem__</a></b> (<i>self</i>, slice <i>slice</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#__gt__" tppabs="http://pyqt4doc.appspot.com/qstring.html#__gt__">__gt__</a></b> (<i>self</i>, QString <i>s</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#__gt__-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#__gt__-2">__gt__</a></b> (<i>self</i>, QLatin1String <i>s</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#__gt__-3" tppabs="http://pyqt4doc.appspot.com/qstring.html#__gt__-3">__gt__</a></b> (<i>self</i>, QByteArray <i>s</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstring.html#__hash__" tppabs="http://pyqt4doc.appspot.com/qstring.html#__hash__">__hash__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#__iadd__" tppabs="http://pyqt4doc.appspot.com/qstring.html#__iadd__">__iadd__</a></b> (<i>self</i>, QChar.SpecialCharacter <i>c</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#__iadd__-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#__iadd__-2">__iadd__</a></b> (<i>self</i>, QString <i>s</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#__iadd__-3" tppabs="http://pyqt4doc.appspot.com/qstring.html#__iadd__-3">__iadd__</a></b> (<i>self</i>, QLatin1String <i>s</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#__iadd__-4" tppabs="http://pyqt4doc.appspot.com/qstring.html#__iadd__-4">__iadd__</a></b> (<i>self</i>, QByteArray <i>s</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#__imul__" tppabs="http://pyqt4doc.appspot.com/qstring.html#__imul__">__imul__</a></b> (<i>self</i>, int <i>m</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#__le__" tppabs="http://pyqt4doc.appspot.com/qstring.html#__le__">__le__</a></b> (<i>self</i>, QString <i>s</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#__le__-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#__le__-2">__le__</a></b> (<i>self</i>, QLatin1String <i>s</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#__le__-3" tppabs="http://pyqt4doc.appspot.com/qstring.html#__le__-3">__le__</a></b> (<i>self</i>, QByteArray <i>s</i>)</li>
+<li>
+<div class="fn"></div> <b><a href="qstring.html#__len__" tppabs="http://pyqt4doc.appspot.com/qstring.html#__len__">__len__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#__lt__" tppabs="http://pyqt4doc.appspot.com/qstring.html#__lt__">__lt__</a></b> (<i>self</i>, QString <i>s</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#__lt__-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#__lt__-2">__lt__</a></b> (<i>self</i>, QLatin1String <i>s</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#__lt__-3" tppabs="http://pyqt4doc.appspot.com/qstring.html#__lt__-3">__lt__</a></b> (<i>self</i>, QByteArray <i>s</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstring.html#__mul__" tppabs="http://pyqt4doc.appspot.com/qstring.html#__mul__">__mul__</a></b> (<i>self</i>, int <i>m</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qstring.html#__ne__">__ne__</a></b> (<i>self</i>, QString <i>s</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#__ne__-2" tppabs="http://pyqt4doc.appspot.com/qstring.html#__ne__-2">__ne__</a></b> (<i>self</i>, QLatin1String <i>s</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#__ne__-3" tppabs="http://pyqt4doc.appspot.com/qstring.html#__ne__-3">__ne__</a></b> (<i>self</i>, QByteArray <i>s</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstring.html#__ne__-4" tppabs="http://pyqt4doc.appspot.com/qstring.html#__ne__-4">__ne__</a></b> (<i>self</i>, QStringRef <i>s2</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qstring.html#__repr__" tppabs="http://pyqt4doc.appspot.com/qstring.html#__repr__">__repr__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qstring.html#__str__" tppabs="http://pyqt4doc.appspot.com/qstring.html#__str__">__str__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>unicode <b><a href="qstring.html#__unicode__" tppabs="http://pyqt4doc.appspot.com/qstring.html#__unicode__">__unicode__</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>这个类可以醃制。</p>
+<p>一个Python字符串或使用unicode对象，<a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a>或<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>可用于每当一个<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>预计。</p>
+  <p>QString类提供了一个Unicode字符的字符串。</p>
+<p>卖场QString的16位字符串<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>s，其中每个<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>对应1的Unicode 4.0字符。 （ Unicode字符代码值高于65535使用代理对存储，也就是说，两个连续的<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>秒。 ）</p>
+<p><a href="index.htm#unicode" tppabs="http://pyqt4doc.appspot.com/unicode.html#unicode">Unicode</a>今天，它支持大多数的书写系统中使用的国际标准。它是US-ASCII （ ANSI X3.4 - 1986）和拉丁语-1 （ ISO 8859-1 ）的一个超集，所有的US-ASCII/Latin-1字符可在相同的代码的位置。</p>
+<p>在幕后，使用的QString<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/implicit-sharing.html">implicit sharing</a>（复制上写的），以减少内存使用量，避免不必要的数据复制。这也有助于减少存储16位的字符，而不是8位字符的固有开销。</p>
+<p>除了的QString ， Qt还提供了<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>类存储原始字节和传统的8位'\ 0'结尾的字符串。在大多数情况下， QString的是您要使用的类。它是用来在整个Qt的API和Unicode支持可以确保如果您想扩展您的应用程序的市场在某些时候你的应用程序将很容易翻译。两个主要的情况下<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>当您需要存储原始二进制数据是合适的，而当内存保护是至关重要的（例如，用<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-embedded-linux.html">Qt for Embedded
+Linux</a>） 。</p>
+<a id="initializing-a-string" name="initializing-a-string"></a>
+<h3>Initializing a String</h3>
+<p>初始化一个QString的一种方法是简单地传递一个<tt>const
+char *</tt>它的构造函数。例如，下面的代码创建一个包含数据的“Hello ”大小5的QString的：</p>
+<pre class="cpp">
+ <span class="type">QString</span> str <span class="operator">=</span> <span class="string">"Hello"</span>;
+</pre>
+<p>QString的转换<tt>const char *</tt>数据转换为Unicode使用<a href="qstring.html#fromAscii" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromAscii">fromAscii</a>（）函数。默认情况下，<a href="qstring.html#fromAscii" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromAscii">fromAscii</a>（ ）把字符以上128为Latin-1字符，但是这可以通过调用改变<a href="qtextcodec.html#setCodecForCStrings" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#setCodecForCStrings">QTextCodec.setCodecForCStrings</a>（ ） 。</p>
+<p>在所有的QString的函数取<tt>const char *</tt>参数，该<tt>const char *</tt>被解释为经典的C风格的'\ 0'结尾的字符串。它是合法的<tt>const char
+*</tt>参数为0 。</p>
+<p>还可以提供字符串数据作为数组<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>S：</p>
+<pre class="cpp">
+ <span class="keyword">static</span> <span class="keyword">const</span> <span class="type"><a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a></span> data<span class="operator">[</span><span class="number">4</span><span class="operator">]</span> <span class="operator">=</span> { <span class="number">0x0055</span><span class="operator">,</span> <span class="number">0x006e</span><span class="operator">,</span> <span class="number">0x10e3</span><span class="operator">,</span> <span class="number">0x03a3</span> };
+ <span class="type">QString</span> str(data<span class="operator">,</span> <span class="number">4</span>);
+</pre>
+<p>做的QString的深层副本<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>数据，所以你可以在以后修改它没有遇到的副作用。 （如果由于性能原因你不希望采取的字符数据，使用深拷贝<a href="qstring.html#fromRawData" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromRawData">QString.fromRawData</a>（ ）来代替。 ）</p>
+<p>另一种方法是利用设置字符串的大小<a href="qstring.html#resize" tppabs="http://pyqt4doc.appspot.com/qstring.html#resize">resize</a>（）和初始化每个字符的数据字符。 QString的使用基于0的索引，就像C + +中的数组。要访问该字符在特定索引位置，则可以使用<a href="qstring.html#operator-5b-5d" tppabs="http://pyqt4doc.appspot.com/qstring.html#operator-5b-5d">operator[]</a>（ ） 。对非const的字符串，<a href="qstring.html#operator-5b-5d" tppabs="http://pyqt4doc.appspot.com/qstring.html#operator-5b-5d">operator[]</a>（ ）返回一个引用，可以在赋值的左侧使用一个字符。例如：</p>
+<pre class="cpp">
+ <span class="type">QString</span> str;
+ str<span class="operator">.</span>resize(<span class="number">4</span>);
+
+ str<span class="operator">[</span><span class="number">0</span><span class="operator">]</span> <span class="operator">=</span> <span class="type"><a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a></span>(<span class="char">'U'</span>);
+ str<span class="operator">[</span><span class="number">1</span><span class="operator">]</span> <span class="operator">=</span> <span class="type"><a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a></span>(<span class="char">'n'</span>);
+ str<span class="operator">[</span><span class="number">2</span><span class="operator">]</span> <span class="operator">=</span> <span class="type"><a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a></span>(<span class="number">0x10e3</span>);
+ str<span class="operator">[</span><span class="number">3</span><span class="operator">]</span> <span class="operator">=</span> <span class="type"><a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a></span>(<span class="number">0x03a3</span>);
+</pre>
+<p>对于只读访问，另一种语法是使用<a href="qstring.html#at" tppabs="http://pyqt4doc.appspot.com/qstring.html#at">at</a>（ ）函数：</p>
+<pre class="cpp">
+ <span class="type">QString</span> str;
+
+ <span class="keyword">for</span> (<span class="type">int</span> i <span class="operator">=</span> <span class="number">0</span>; i <span class="operator">&lt;</span> str<span class="operator">.</span>size(); <span class="operator">+</span><span class="operator">+</span>i) {
+     <span class="keyword">if</span> (str<span class="operator">.</span>at(i) <span class="operator">&gt;</span><span class="operator">=</span> <span class="type"><a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a></span>(<span class="char">'a'</span>) <span class="operator">&amp;</span><span class="operator">&amp;</span> str<span class="operator">.</span>at(i) <span class="operator">&lt;</span><span class="operator">=</span> <span class="type"><a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a></span>(<span class="char">'f'</span>))
+         <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"Found character in range [a-f]"</span>;
+ }
+</pre>
+<p>该<a href="qstring.html#at" tppabs="http://pyqt4doc.appspot.com/qstring.html#at">at</a>（ ）函数可以比快<a href="qstring.html#operator-5b-5d" tppabs="http://pyqt4doc.appspot.com/qstring.html#operator-5b-5d">operator[]</a>（），因为它不会导致一个<a href="index.htm#deep-copy" tppabs="http://pyqt4doc.appspot.com/implicit-sharing.html#deep-copy">deep copy</a>发生。或者，使用<a href="qstring.html#left" tppabs="http://pyqt4doc.appspot.com/qstring.html#left">left</a>（ ）<a href="qstring.html#right" tppabs="http://pyqt4doc.appspot.com/qstring.html#right">right</a>（） ，或<a href="qstring.html#mid" tppabs="http://pyqt4doc.appspot.com/qstring.html#mid">mid</a>（ ）函数来在一个时间提取几个字符。</p>
+<p>一个QString的可以嵌入'\ 0 '字符（<a href="qchar.html#SpecialCharacter-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#SpecialCharacter-enum">QChar.Null</a>） 。该<a href="qstring.html#size" tppabs="http://pyqt4doc.appspot.com/qstring.html#size">size</a>（ ）函数总是返回整个字符串的大小，包括嵌入式'\ 0 '字符。</p>
+<p>调用后<a href="qstring.html#resize" tppabs="http://pyqt4doc.appspot.com/qstring.html#resize">resize</a>（ ）函数，新分配的字符都未定义的值。要设置所有字符的字符串到一个特定的值，使用<a href="qstring.html#fill" tppabs="http://pyqt4doc.appspot.com/qstring.html#fill">fill</a>（）函数。</p>
+<p>的QString提供几十旨在简化字符串使用重载的。例如，如果你想一个QString的一个字符串字面量进行比较，可以写出这样的代码，它会如预期般运作：</p>
+<pre class="cpp">
+ <span class="type">QString</span> str;
+
+ <span class="keyword">if</span> (str <span class="operator">=</span><span class="operator">=</span> <span class="string">"auto"</span> <span class="operator">|</span><span class="operator">|</span> str <span class="operator">=</span><span class="operator">=</span> <span class="string">"extern"</span>
+         <span class="operator">|</span><span class="operator">|</span> str <span class="operator">=</span><span class="operator">=</span> <span class="string">"static"</span> <span class="operator">|</span><span class="operator">|</span> str <span class="operator">=</span><span class="operator">=</span> <span class="string">"register"</span>) {
+     <span class="comment">// ...</span>
+ }
+</pre>
+<p>您也可以字符串文字传递给需要将QString作为参数，调用的QString （为const char * ）构造函数。同样，你可以通过一个QString时，一个函数，它接受一个<tt>const char *</tt>使用的参数<a href="index.htm#qPrintable" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qPrintable">qPrintable</a>（）宏返回给定的QString作为<tt>const char *</tt>。这等效于调用\u003cQString\u003e 。<a href="qstring.html#toLocal8Bit" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLocal8Bit">toLocal8Bit</a>（ ） 。<a href="qstring.html#constData" tppabs="http://pyqt4doc.appspot.com/qstring.html#constData">constData</a>（ ） 。</p>
+<a id="manipulating-string-data" name="manipulating-string-data"></a>
+<h3>Manipulating String Data</h3>
+<p>的QString提供了修饰的字符数据的基本功能如下：<a href="qstring.html#append" tppabs="http://pyqt4doc.appspot.com/qstring.html#append">append</a>（ ）<a href="qstring.html#prepend" tppabs="http://pyqt4doc.appspot.com/qstring.html#prepend">prepend</a>（ ）<a href="qstring.html#insert" tppabs="http://pyqt4doc.appspot.com/qstring.html#insert">insert</a>（ ）<a href="qstring.html#replace" tppabs="http://pyqt4doc.appspot.com/qstring.html#replace">replace</a>（）和<a href="qstring.html#remove" tppabs="http://pyqt4doc.appspot.com/qstring.html#remove">remove</a>（ ） 。例如：</p>
+<pre class="cpp">
+ <span class="type">QString</span> str <span class="operator">=</span> <span class="string">"and"</span>;
+ str<span class="operator">.</span>prepend(<span class="string">"rock "</span>);     <span class="comment">// str == "rock and"</span>
+ str<span class="operator">.</span>append(<span class="string">" roll"</span>);        <span class="comment">// str == "rock and roll"</span>
+ str<span class="operator">.</span>replace(<span class="number">5</span><span class="operator">,</span> <span class="number">3</span><span class="operator">,</span> <span class="string">"&amp;"</span>);   <span class="comment">// str == "rock &amp; roll"</span>
+</pre>
+<p>如果你正在建设一个QString的逐渐提前知道大致的QString将有多少个字符包含，你可以调用<a href="qstring.html#reserve" tppabs="http://pyqt4doc.appspot.com/qstring.html#reserve">reserve</a>（ ） ，要求QString时，预先分配一定数量的内存。您也可以拨打<a href="qstring.html#capacity" tppabs="http://pyqt4doc.appspot.com/qstring.html#capacity">capacity</a>（）来找出多少内存QString的实际分配。</p>
+<p>该<a href="qstring.html#replace" tppabs="http://pyqt4doc.appspot.com/qstring.html#replace">replace</a>（）和<a href="qstring.html#remove" tppabs="http://pyqt4doc.appspot.com/qstring.html#remove">remove</a>（ ）函数的前两个参数是要开始擦除，并应被删除的字符数的位置。如果你想更换另一特定字符串的所有匹配，使用这两个参数中的一个<a href="qstring.html#replace" tppabs="http://pyqt4doc.appspot.com/qstring.html#replace">replace</a>（ ）重载。</p>
+<p>一个常见的要求是从一个字符串（的'\ n '，' \ T' ，''，等等）删除空白字符。如果你想从一个QString的两端删除空白字符，请使用<a href="qstring.html#trimmed" tppabs="http://pyqt4doc.appspot.com/qstring.html#trimmed">trimmed</a>（）函数。如果你想从两端删除空白和字符串中的单个空格字符替换多个连续的空格，使用<a href="qstring.html#simplified" tppabs="http://pyqt4doc.appspot.com/qstring.html#simplified">simplified</a>（ ） 。</p>
+<p>如果你想找到一个特定的字符或子串中所有出现在一个QString的，使用<a href="qstring.html#indexOf" tppabs="http://pyqt4doc.appspot.com/qstring.html#indexOf">indexOf</a>（）或<a href="qstring.html#lastIndexOf" tppabs="http://pyqt4doc.appspot.com/qstring.html#lastIndexOf">lastIndexOf</a>（）函数。前者向前搜索从给定的索引位置，后者向后搜索开始。都返回字符或字符串的索引位置，如果他们找到它，否则，它们将返回-1 。例如，下面是一个典型的循环，找到一个特定的子字符串的所有匹配：</p>
+<pre class="cpp">
+ <span class="type">QString</span> str <span class="operator">=</span> <span class="string">"We must be &lt;b&gt;bold&lt;/b&gt;, very &lt;b&gt;bold&lt;/b&gt;"</span>;
+ <span class="type">int</span> j <span class="operator">=</span> <span class="number">0</span>;
+
+ <span class="keyword">while</span> ((j <span class="operator">=</span> str<span class="operator">.</span>indexOf(<span class="string">"&lt;b&gt;"</span><span class="operator">,</span> j)) <span class="operator">!</span><span class="operator">=</span> <span class="operator">-</span><span class="number">1</span>) {
+     <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"Found &lt;b&gt; tag at index position"</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> j;
+     <span class="operator">+</span><span class="operator">+</span>j;
+ }
+</pre>
+<p>的QString提供了许多功能，将数字转换成字符串和字符串转换成数字。请参阅<a href="qstring.html#arg" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg">arg</a>（）函数，该<a href="qstring.html#setNum" tppabs="http://pyqt4doc.appspot.com/qstring.html#setNum">setNum</a>（）函数，该<a href="qstring.html#number" tppabs="http://pyqt4doc.appspot.com/qstring.html#number">number</a>（）静态函数，并且<a href="qstring.html#toInt" tppabs="http://pyqt4doc.appspot.com/qstring.html#toInt">toInt</a>（ ）<a href="qstring.html#toDouble" tppabs="http://pyqt4doc.appspot.com/qstring.html#toDouble">toDouble</a>（） ，和类似的功能。</p>
+<p>为了得到一个字符串使用大写或小写版本<a href="qstring.html#toUpper" tppabs="http://pyqt4doc.appspot.com/qstring.html#toUpper">toUpper</a>（）或<a href="qstring.html#toLower" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLower">toLower</a>（ ） 。</p>
+<p>字符串列表是由处理<a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a>类。您可以使用字符串分割成一个字符串列表的<a href="qstring.html#split" tppabs="http://pyqt4doc.appspot.com/qstring.html#split">split</a>（ ）函数，并加入字符串列表与一个可选的分离器使用一个单独的字符串<a href="qstringlist.html#join" tppabs="http://pyqt4doc.appspot.com/qstringlist.html#join">QStringList.join</a>（ ） 。你可以从一个字符串列表中包含特定字符串或匹配特定得到的字符串列表<a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a>使用<a href="qstringlist.html#filter" tppabs="http://pyqt4doc.appspot.com/qstringlist.html#filter">QStringList.filter</a>（）函数。</p>
+<a id="querying-string-data" name="querying-string-data"></a>
+<h3>Querying String Data</h3>
+<p>如果你想看看一个QString的启动或与特定的子串结束使用<a href="qstring.html#startsWith" tppabs="http://pyqt4doc.appspot.com/qstring.html#startsWith">startsWith</a>（）或<a href="qstring.html#endsWith" tppabs="http://pyqt4doc.appspot.com/qstring.html#endsWith">endsWith</a>（ ） 。如果你只是想检查的QString是否包含特定字符或字符串，可以使用<a href="qstring.html#contains" tppabs="http://pyqt4doc.appspot.com/qstring.html#contains">contains</a>（）函数。如果你想了解有多少次一个特定的字符或子出现在字符串，使用<a href="qstring.html#count" tppabs="http://pyqt4doc.appspot.com/qstring.html#count">count</a>（ ） 。</p>
+<p>将QString可以使用重载的运算符，例如进行比较<a href="qstring.html#operator-lt" tppabs="http://pyqt4doc.appspot.com/qstring.html#operator-lt">operator&lt;</a>（ ）<a href="qstring.html#operator-lt-eq" tppabs="http://pyqt4doc.appspot.com/qstring.html#operator-lt-eq">operator&lt;=</a>（ ）<a href="qstring.html#operator-eq-eq" tppabs="http://pyqt4doc.appspot.com/qstring.html#operator-eq-eq">operator==</a>（ ）<a href="qstring.html#operator-gt-eq" tppabs="http://pyqt4doc.appspot.com/qstring.html#operator-gt-eq">operator&gt;=</a>（） ，等等。请注意，比较的字符的数值Unicode值完全基于。这是非常快的，但不是什么人的期望;的<a href="qstring.html#localeAwareCompare" tppabs="http://pyqt4doc.appspot.com/qstring.html#localeAwareCompare">QString.localeAwareCompare</a>（ ）函数是排序用户界面字符串一个更好的选择。</p>
+<p>为了获得一个指向实际的字符数据，调用<a href="qstring.html#data" tppabs="http://pyqt4doc.appspot.com/qstring.html#data">data</a>（）或<a href="qstring.html#constData" tppabs="http://pyqt4doc.appspot.com/qstring.html#constData">constData</a>（ ） 。这些函数返回一个指针的开始<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>数据。指针是保证仍然有效，直到一个非const函数被调用的QString的。</p>
+<a id="converting-between-8-bit-strings-and-unicode-strings" name="converting-between-8-bit-strings-and-unicode-strings"></a>
+<h3>Converting Between 8-Bit Strings and Unicode Strings</h3>
+<p>的QString提供以下四种函数返回一个<tt>const char *</tt>版本字符串为<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>：<a href="qstring.html#toAscii" tppabs="http://pyqt4doc.appspot.com/qstring.html#toAscii">toAscii</a>（ ）<a href="qstring.html#toLatin1" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLatin1">toLatin1</a>（ ）<a href="qstring.html#toUtf8" tppabs="http://pyqt4doc.appspot.com/qstring.html#toUtf8">toUtf8</a>（）和<a href="qstring.html#toLocal8Bit" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLocal8Bit">toLocal8Bit</a>（ ） 。</p>
+<ul>
+<li>
+<a href="qstring.html#toAscii" tppabs="http://pyqt4doc.appspot.com/qstring.html#toAscii">toAscii</a>() returns an 8-bit
+string encoded using the codec specified by
+QTextCodec.codecForCStrings (by default, that is Latin 1).</li>
+<li>
+<a href="qstring.html#toLatin1" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLatin1">toLatin1</a>() returns a
+Latin-1 (ISO 8859-1) encoded 8-bit string.</li>
+<li>
+<a href="qstring.html#toUtf8" tppabs="http://pyqt4doc.appspot.com/qstring.html#toUtf8">toUtf8</a>() returns a UTF-8
+encoded 8-bit string. UTF-8 is a superset of US-ASCII (ANSI
+X3.4-1986) that supports the entire Unicode character set through
+multibyte sequences.</li>
+<li>
+<a href="qstring.html#toLocal8Bit" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLocal8Bit">toLocal8Bit</a>() returns an
+8-bit string using the system's local encoding.</li>
+</ul>
+<p>从这些编码的一个转换，提供的QString<a href="qstring.html#fromAscii" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromAscii">fromAscii</a>（ ）<a href="qstring.html#fromLatin1" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromLatin1">fromLatin1</a>（ ）<a href="qstring.html#fromUtf8" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromUtf8">fromUtf8</a>（）和<a href="qstring.html#fromLocal8Bit" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromLocal8Bit">fromLocal8Bit</a>（ ） 。其它的编码，通过支持<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>类。</p>
+<p>如上所述， QString的提供了大量的函数和运算符可以很容易地与互操作<tt>const char
+*</tt>字符串。但是这个功能是一个双刃剑：它让QString的使用更为方便，如果所有的字符串都是US-ASCII或Latin- 1 ，但总是有风险的或隐式转换<tt>const char *</tt>完成使用错误的8位编码。为了尽量减少这些风险，您可以关闭这些隐式转换通过定义以下两个预处理器符号：</p>
+<ul>
+<li>
+<tt>QT_NO_CAST_FROM_ASCII</tt> disables automatic conversions
+from C string literals and pointers to Unicode.</li>
+<li>
+<tt>QT_NO_CAST_TO_ASCII</tt> disables automatic conversion from
+QString to C strings.</li>
+</ul>
+<p>在全球范围内定义这些预处理器符号为您的应用程序的一种方法是将以下条目​​添加到您的<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qmake-project-files.html">qmake project file</a>：</p>
+<pre class="cpp">
+ DEFINES <span class="operator">+</span><span class="operator">=</span> QT_NO_CAST_FROM_ASCII \
+            QT_NO_CAST_TO_ASCII
+</pre>
+<p>然后，您需要显式调用<a href="qstring.html#fromAscii" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromAscii">fromAscii</a>（ ）<a href="qstring.html#fromLatin1" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromLatin1">fromLatin1</a>（ ）<a href="qstring.html#fromUtf8" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromUtf8">fromUtf8</a>（） ，或<a href="qstring.html#fromLocal8Bit" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromLocal8Bit">fromLocal8Bit</a>（）来构造从一个8位字符串的QString ，或者使用轻量<a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a>类，例如：</p>
+<pre class="cpp">
+ <span class="type">QString</span> url <span class="operator">=</span> QLatin1String(<span class="string">"http://www.unicode.org/"</span>);
+</pre>
+<p>同样的，你必须调用<a href="qstring.html#toAscii" tppabs="http://pyqt4doc.appspot.com/qstring.html#toAscii">toAscii</a>（ ）<a href="qstring.html#toLatin1" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLatin1">toLatin1</a>（ ）<a href="qstring.html#toUtf8" tppabs="http://pyqt4doc.appspot.com/qstring.html#toUtf8">toUtf8</a>（） ，或<a href="qstring.html#toLocal8Bit" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLocal8Bit">toLocal8Bit</a>（）明确地向的QString转换为一个8位的字符串。 （其它的编码是通过支持<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>类。 ）</p>
+<table class="generic" width="100 %">
+<thead>
+<tr class="qt-style">
+<th>Note for C Programmers</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td>Due to C++'s type system and the fact that QString is <a href="index.htm#implicitly-shared" tppabs="http://pyqt4doc.appspot.com/implicit-sharing.html#implicitly-shared">implicitly shared</a>,
+QStrings may be treated like <tt>int</tt>s or other basic types.
+For example:
+<pre class="cpp">
+ <span class="type">QString</span> Widget<span class="operator">.</span>boolToString(<span class="type">bool</span> b)
+ {
+     <span class="type">QString</span> result;
+     <span class="keyword">if</span> (b)
+         result <span class="operator">=</span> <span class="string">"True"</span>;
+     <span class="keyword">else</span>
+         result <span class="operator">=</span> <span class="string">"False"</span>;
+     <span class="keyword">return</span> result;
+ }
+</pre>
+<p>该<tt>result</tt>变量是在堆栈上分配一个普通变量。何时<tt>return</tt>被调用，因为我们通过返回值，拷贝构造函数被调用和字符串的一个副本被返回。没有实际的复制发生感谢隐含共享。</p>
+</td>
+</tr>
+</table>
+<a id="distinction-between-null-and-empty-strings" name="distinction-between-null-and-empty-strings"></a>
+<h3>Distinction Between Null and Empty Strings</h3>
+<p>由于历史原因， QString的一个空字符串和空字符串之间的区别。一<i>null</i>字符串是使用的QString的默认构造函数初始化或通过传递（为const char * ）0给构造函数的字符串。一个<i>empty</i>字符串是用大小为0的字符串。空字符串总是空的，但一个空字符串不一定空：</p>
+<pre class="cpp">
+ <span class="type">QString</span>()<span class="operator">.</span>isNull();               <span class="comment">// returns true</span>
+ <span class="type">QString</span>()<span class="operator">.</span>isEmpty();              <span class="comment">// returns true</span>
+
+ <span class="type">QString</span>(<span class="string">""</span>)<span class="operator">.</span>isNull();             <span class="comment">// returns false</span>
+ <span class="type">QString</span>(<span class="string">""</span>)<span class="operator">.</span>isEmpty();            <span class="comment">// returns true</span>
+
+ <span class="type">QString</span>(<span class="string">"abc"</span>)<span class="operator">.</span>isNull();          <span class="comment">// returns false</span>
+ <span class="type">QString</span>(<span class="string">"abc"</span>)<span class="operator">.</span>isEmpty();         <span class="comment">// returns false</span>
+</pre>
+<p>之外的全部功能<a href="qstring.html#isNull" tppabs="http://pyqt4doc.appspot.com/qstring.html#isNull">isNull</a>（ ）把空字符串相同的为空字符串。例如，<a href="qstring.html#toAscii" tppabs="http://pyqt4doc.appspot.com/qstring.html#toAscii">toAscii</a>（ ） 。<a href="qstring.html#constData" tppabs="http://pyqt4doc.appspot.com/qstring.html#constData">constData</a>（ ）返回一个指向一个'\ 0 '字符为空字符串（<i>not</i>一个空指针） ，和<a href="qstring.html#QString" tppabs="http://pyqt4doc.appspot.com/qstring.html#QString">QString</a>（ ）比较相等的QString （ “”） 。我们建议您始终使用<a href="qstring.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qstring.html#isEmpty">isEmpty</a>（ ）函数，并避免<a href="qstring.html#isNull" tppabs="http://pyqt4doc.appspot.com/qstring.html#isNull">isNull</a>（ ） 。</p>
+<a id="argument-formats" name="argument-formats"></a>
+<h3>Argument Formats</h3>
+<p>在成员函数，其中一个参数<i>format</i>可以指定（例如，<a href="qstring.html#arg" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg">arg</a>（ ）<a href="qstring.html#number" tppabs="http://pyqt4doc.appspot.com/qstring.html#number">number</a>（ ） ） ，参数<i>format</i>可以是下列之一：</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Format</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td><tt>e</tt></td>
+<td>format as [-]9.9e[+|-]999</td>
+</tr>
+<tr class="even" valign="top">
+<td><tt>E</tt></td>
+<td>format as [-]9.9E[+|-]999</td>
+</tr>
+<tr class="odd" valign="top">
+<td><tt>f</tt></td>
+<td>format as [-]9.9</td>
+</tr>
+<tr class="even" valign="top">
+<td><tt>g</tt></td>
+<td>use <tt>e</tt> or <tt>f</tt> format, whichever is the most
+concise</td>
+</tr>
+<tr class="odd" valign="top">
+<td><tt>G</tt></td>
+<td>use <tt>E</tt> or <tt>f</tt> format, whichever is the most
+concise</td>
+</tr>
+</table>
+<p>A <i>precision</i>也与参数指定<i>format</i>。为' E' ， ' E'和'F'格式中，<i>precision</i>表示的数字的数量<i>after</i>小数点。对于“G”和“G”格式中，<i>precision</i>较显着位数（尾随零被省略）的最大数量。</p>
+<a id="more-efficient-string-construction" name="more-efficient-string-construction"></a>
+<h3>More Efficient String Construction</h3>
+<p>使用的QString<tt>'+'</tt>算子，它很容易从多个子构建复杂的字符串。你经常会写这样的代码：</p>
+<pre class="cpp">
+     <span class="type">QString</span> foo;
+     <span class="type">QString</span> type <span class="operator">=</span> <span class="string">"long"</span>;
+
+     foo<span class="operator">-</span><span class="operator">&gt;</span>setText(QLatin1String(<span class="string">"vector&lt;"</span>) <span class="operator">+</span> type <span class="operator">+</span> QLatin1String(<span class="string">"&gt;.iterator"</span>));
+
+     <span class="keyword">if</span> (foo<span class="operator">.</span>startsWith(<span class="string">"("</span> <span class="operator">+</span> type <span class="operator">+</span> <span class="string">") 0x"</span>))
+         <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+</pre>
+<p>有什么不对与任何这些字符串构造的，但也有一些隐藏的低效率。与Qt 4.6开始，你可以消灭他们。</p>
+<p>第一，多种用途<tt>'+'</tt>运营商通常是指多个内存分配。当串联<i>n</i>子，其中<i>n &gt; 2</i>，可以有多达<i>n -
+1</i>调用内存分配器。</p>
+<p>第二，<a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a>不，但在内部调用存储其长度<a href="index.htm#qstrlen" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qstrlen">qstrlen</a>（）时，它需要知道它的长度。</p>
+<p>4.6 ，内部的模板类<tt>QStringBuilder</tt>一直伴随着几个辅助函数添加。这个类被标记为内部并没有出现在文档中，因为你的目的不是实例化它在你的代码。它的使用将是自动的，如下面所述。该类中发现<tt>src/corelib/tools/qstringbuilder.cpp</tt>如果你想看看它。</p>
+<p><tt>QStringBuilder</tt>使用表达式模板和重新实现了<tt>'%'</tt>运营商这样当你使用<tt>'%'</tt>对于字符串连接，而不是<tt>'+'</tt>，多个子串连将被推迟到最后的结果就是即将被分配到的QString 。在这一点上，存储器所需的最终结果的量是已知的。该内存分配器，然后调用<i>once</i>获得所需要的空间，而子被复制到了一个接一个。</p>
+<p><tt>QLatin1Literal</tt>是第二类内部，可替换<a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a>，它可以出于兼容性原因不能改变。<tt>QLatin1Literal</tt>存储其长度，从而节省了时间，当<tt>QStringBuilder</tt>计算所需的内存为最后的字符串的数量。</p>
+<p>额外的效率是通过内联和减少引用计数（从创建取得的QString<tt>QStringBuilder</tt>通常具有1的引用计数，而<a href="qstring.html#append" tppabs="http://pyqt4doc.appspot.com/qstring.html#append">QString.append</a>（ ）需要一个额外的测试） 。</p>
+<p>有三种方法可以访问字符串构造这个改进的方法。直接的方法是包括<tt>QStringBuilder</tt>无论你想使用它，并使用<tt>'%'</tt>操盘手的<tt>'+'</tt>连接字符串时：</p>
+<pre class="cpp">
+     <span class="preprocessor">#include &lt;QStringBuilder&gt;</span>
+
+     <span class="type">QString</span> hello(<span class="string">"hello"</span>);
+     <span class="type"><a href="qstringref.html" tppabs="http://pyqt4doc.appspot.com/qstringref.html">QStringRef</a></span> el(<span class="operator">&amp;</span>hello<span class="operator">,</span> <span class="number">2</span><span class="operator">,</span> <span class="number">3</span>);
+     QLatin1String world(<span class="string">"world"</span>);
+     <span class="type">QString</span> message <span class="operator">=</span>  hello <span class="operator">%</span> el <span class="operator">%</span> world <span class="operator">%</span> <span class="type"><a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a></span>(<span class="char">'!'</span>);
+</pre>
+<p>更具全球性的做法，是最方便的，但不完全兼容的源代码，是这样定义你的pro文件：</p>
+<pre class="cpp">
+     DEFINES <span class="operator">*</span><span class="operator">=</span> QT_USE_QSTRINGBUILDER
+</pre>
+<p>和<tt>'+'</tt>会自动为所执行的<tt>QStringBuilder</tt> <tt>'%'</tt>无处不在。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="NormalizationForm-enum"></a>QString.NormalizationForm</h3>
+<p>这个枚举描述Unicode文本的各种标准化的形式。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QString.NormalizationForm_D</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">标准分解</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QString.NormalizationForm_C</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">标准分解其次是标准合成</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QString.NormalizationForm_KD</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">兼容性分解</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QString.NormalizationForm_KC</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">兼容性分解其次是标准合成</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qstring.html#normalized" tppabs="http://pyqt4doc.appspot.com/qstring.html#normalized">normalized</a>（）和<a href="http://www.unicode.org/reports/tr15/">Unicode Standard Annex
+#15</a>。</p>
+
+
+<h3 class="fn">
+<a name="SectionFlag-enum"></a>QString.SectionFlag</h3>
+<p>该枚举指定标志，可用于影响的各个方面<a href="qstring.html#section" tppabs="http://pyqt4doc.appspot.com/qstring.html#section">section</a>（ ）就分隔符和空字段功能的行为。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QString.SectionDefault</tt></td>
+<td class="topAlign"><tt>0x00</tt></td>
+<td class="topAlign">空字段进行计数，前缘和后隔板不包括在内，且所述分离器灵敏相比的情况。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QString.SectionSkipEmpty</tt></td>
+<td class="topAlign"><tt>0x01</tt></td>
+<td class="topAlign">把空字段，如果他们不存在，即它们不是尽可能考虑<i>start</i>和<i>end</i>关注。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QString.SectionIncludeLeadingSep</tt>
+</td>
+<td class="topAlign"><tt>0x02</tt></td>
+<td class="topAlign">包括领先的分隔符（如果有的话）结果字符串。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QString.SectionIncludeTrailingSep</tt>
+</td>
+<td class="topAlign"><tt>0x04</tt></td>
+<td class="topAlign">在结果字符串中包含尾随分隔符（如果有的话） 。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QString.SectionCaseInsensitiveSeps</tt>
+</td>
+<td class="topAlign"><tt>0x08</tt></td>
+<td class="topAlign">不区分大小写比较的分隔符。</td>
+</tr>
+</table>
+<p>该SectionFlags类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cSectionFlag\u003e 。它存储SectionFlag值的或组合。</p>
+<p><b>See also</b> <a href="qstring.html#section" tppabs="http://pyqt4doc.appspot.com/qstring.html#section">section</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="SplitBehavior-enum"></a>QString.SplitBehavior</h3>
+<p>此枚举指定如何<a href="qstring.html#split" tppabs="http://pyqt4doc.appspot.com/qstring.html#split">split</a>（ ）函数的行为应该就空字符串。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QString.KeepEmptyParts</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">如果某个字段是空的，保持它的结果。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QString.SkipEmptyParts</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">如果某个字段为空，不包括它的结果。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qstring.html#split" tppabs="http://pyqt4doc.appspot.com/qstring.html#split">split</a>（ ） 。</p>
+
+
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QString"></a>QString.__init__ (<i>self</i>)</h3>
+<p>构造一个空字符串。空字符串也是空的。</p>
+<p><b>See also</b> <a href="qstring.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qstring.html#isEmpty">isEmpty</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QString"></a>QString.__init__ (<i>self</i>, <a href="qkeysequence.html" tppabs="http://pyqt4doc.appspot.com/qkeysequence.html">QKeySequence</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<p>构造一个空字符串。空字符串也是空的。</p>
+<p><b>See also</b> <a href="qstring.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qstring.html#isEmpty">isEmpty</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QString"></a>QString.__init__ (<i>self</i>, <a href="qscriptstring.html" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html">QScriptString</a>)</h3>
+<p>如果QtScript模块导入此方法仅适用。</p>
+<p>构造一个空字符串。空字符串也是空的。</p>
+<p><b>See also</b> <a href="qstring.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qstring.html#isEmpty">isEmpty</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QString-2"></a>QString.__init__ (<i>self</i>, int <i>size</i>, QChar <i>c</i>)</h3>
+<p>构造与第一次初始化字符串<i>size</i>的字符<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>排列<i>unicode</i>。</p>
+<p><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>使得字符串数据的深层副本。 unicode的数据被原样复制，如果存在字节顺序标记被保留。</p>
+
+
+<h3 class="fn">
+<a name="QString-3"></a>QString.__init__ (<i>self</i>, QString <i>s</i>)</h3>
+<p>构造具有的字符初始化的字符串<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>排列<i>unicode</i>，这必须终止与0 。</p>
+<p><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>使得字符串数据的深层副本。 unicode的数据被原样复制，如果存在字节顺序标记被保留。</p>
+<p>此功能被引入Qt的4.7 。</p>
+
+
+<h3 class="fn">
+<a name="QString-4"></a>QString.__init__ (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>a</i>)</h3>
+<p>构造大小为1包含字符的字符串<i>ch</i>。</p>
+
+
+<h3 class="fn">
+<a name="QString-5"></a>QString.__init__ (<i>self</i>, <a href="quuid.html" tppabs="http://pyqt4doc.appspot.com/quuid.html">QUuid</a>)</h3>
+<p>构造的给定的字符串<i>size</i>与每一个字符集<i>ch</i>。</p>
+<p><b>See also</b> <a href="qstring.html#fill" tppabs="http://pyqt4doc.appspot.com/qstring.html#fill">fill</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="append"></a>QString QString.append (<i>self</i>, QString <i>s</i>)</h3>
+<p>附加字符串<i>str</i>到这个字符串的结尾。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> x <span class="operator">=</span> <span class="string">"free"</span>;
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> y <span class="operator">=</span> <span class="string">"dom"</span>;
+
+ x<span class="operator">.</span>append(y);
+ <span class="comment">// x == "freedom"</span>
+</pre>
+<p>这是与使用的<a href="qstring.html#insert" tppabs="http://pyqt4doc.appspot.com/qstring.html#insert">insert</a>（ ）函数：</p>
+<pre class="cpp">
+ x<span class="operator">.</span>insert(x<span class="operator">.</span>size()<span class="operator">,</span> y);
+</pre>
+<p>追加（）函数通常是非常快的（<a href="index.htm#constant-time" tppabs="http://pyqt4doc.appspot.com/containers.html#constant-time">constant time</a>） ，因为<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>预分配额外的空间，在字符串数据的末尾，从而无需每次都重新配置整个字符串成长。</p>
+<p><b>See also</b> <a href="qstring.html#operator-2b-eq" tppabs="http://pyqt4doc.appspot.com/qstring.html#operator-2b-eq">operator+=</a>（ ）<a href="qstring.html#prepend" tppabs="http://pyqt4doc.appspot.com/qstring.html#prepend">prepend</a>（）和<a href="qstring.html#insert" tppabs="http://pyqt4doc.appspot.com/qstring.html#insert">insert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="append-2"></a>QString QString.append (<i>self</i>, <a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a> <i>s</i>)</h3>
+<p>添加给定的字符串<i>reference</i>这个字符串，并返回结果。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="append-3"></a>QString QString.append (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>s</i>)</h3>
+<p>这个函数的重载<a href="qstring.html#append" tppabs="http://pyqt4doc.appspot.com/qstring.html#append">append</a>（ ） 。</p>
+<p>追加Latin-1的字符串<i>str</i>这个字符串。</p>
+
+
+<h3 class="fn">
+<a name="arg"></a>QString QString.arg (<i>self</i>, int <i>a</i>, int <i>fieldWidth</i> = 0, int <i>base</i> = 10, QChar <i>fillChar</i> = QLatin1Char(' '))</h3>
+<p>返回此字符串的一个副本，编号最小的位置标记通过字符串替换<i>a</i>即<tt>%1</tt>，<tt>%2</tt>，...，<tt>%99</tt>。</p>
+<p><i>fieldWidth</i>指定间距的最小量这样的说法<i>a</i>不得佔用。如果<i>a</i>比需要较少的空间<i>fieldWidth</i>，它被填充到<i>fieldWidth</i>与性格<i>fillChar</i>。正<i>fieldWidth</i>产生右对齐文本。负<i>fieldWidth</i>产生左对齐的文本。</p>
+<p>这个例子显示了我们如何创建一个<tt>status</tt>串报告进展情况，同时处理文件的列表：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> i;           <span class="comment">// current file's number</span>
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> total;       <span class="comment">// number of files to process</span>
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> fileName;    <span class="comment">// current file's name</span>
+
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> status <span class="operator">=</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>(<span class="string">"Processing file %1 of %2: %3"</span>)
+                 <span class="operator">.</span>arg(i)<span class="operator">.</span>arg(total)<span class="operator">.</span>arg(fileName);
+</pre>
+<p>First, <tt>arg(i)</tt>替换<tt>%1</tt>。然后<tt>arg(total)</tt>替换<tt>%2</tt>。最后，<tt>arg(fileName)</tt>替换<tt>%3</tt>。</p>
+<p>一个优点使用arg的（ ）以上<a href="qstring.html#sprintf" tppabs="http://pyqt4doc.appspot.com/qstring.html#sprintf">sprintf</a>（ ）是的编号的位置标记的顺序可以改变，如果应用程序的字符串翻译成其他语言，但每个ARG （ ）仍然将取代编号最小的未更换位置标记，不管它在哪里出现。此外，如果位置标记<tt>%i</tt>多次出现在字符串中时， ARG （ ）取代他们。</p>
+<p>如果没有未更换位置标记剩馀，一个输出警告信息，其结果是不确定的。位置标记号码必须是范围为1至99 。</p>
+
+
+<h3 class="fn">
+<a name="arg-2"></a>QString QString.arg (<i>self</i>, float <i>a</i>, int <i>fieldWidth</i> = 0, str <i>format</i> = 'g', int <i>precision</i> = -1, QChar <i>fillChar</i> = QLatin1Char(' '))</h3>
+<p>这个函数的重载<a href="qstring.html#arg" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg">arg</a>（ ） 。</p>
+<p>这是相同的<tt>str.arg(a1).arg(a2)</tt>，除了字符串<i>a1</i>和<i>a2</i>替换在一次通过。这可以使如果有差别<i>a1</i>例如包含<tt>%1</tt>：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str;
+ str <span class="operator">=</span> <span class="string">"%1 %2"</span>;
+
+ str<span class="operator">.</span>arg(<span class="string">"%1f"</span><span class="operator">,</span> <span class="string">"Hello"</span>);        <span class="comment">// returns "%1f Hello"</span>
+ str<span class="operator">.</span>arg(<span class="string">"%1f"</span>)<span class="operator">.</span>arg(<span class="string">"Hello"</span>);    <span class="comment">// returns "Hellof %2"</span>
+</pre>
+
+
+<h3 class="fn">
+<a name="arg-3"></a>QString QString.arg (<i>self</i>, int <i>a</i>, int <i>fieldWidth</i> = 0, int <i>base</i> = 10, QChar <i>fillChar</i> = QLatin1Char(' '))</h3>
+<p>这个函数的重载<a href="qstring.html#arg" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg">arg</a>（ ） 。</p>
+<p>这是一样的调用<tt>str.arg(a1).arg(a2).arg(a3)</tt>，除了字符串<i>a1</i>，<i>a2</i>和<i>a3</i>替换在一次通过。</p>
+
+
+<h3 class="fn">
+<a name="arg-4"></a>QString QString.arg (<i>self</i>, int <i>a</i>, int <i>fieldWidth</i> = 0, int <i>base</i> = 10, QChar <i>fillChar</i> = QLatin1Char(' '))</h3>
+<p>这个函数的重载<a href="qstring.html#arg" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg">arg</a>（ ） 。</p>
+<p>这是一样的调用<tt>str.arg(a1).arg(a2).arg(a3).arg(a4)</tt>，除了字符串<i>a1</i>，<i>a2</i>，<i>a3</i>和<i>a4</i>替换在一次通过。</p>
+
+
+<h3 class="fn">
+<a name="arg-5"></a>QString QString.arg (<i>self</i>, QString <i>a</i>, int <i>fieldWidth</i> = 0, QChar <i>fillChar</i> = QLatin1Char(' '))</h3>
+<p>这个函数的重载<a href="qstring.html#arg" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg">arg</a>（ ） 。</p>
+<p>这是一样的调用<tt>str.arg(a1).arg(a2).arg(a3).arg(a4).arg(a5)</tt>，除了字符串<i>a1</i>，<i>a2</i>，<i>a3</i>，<i>a4</i>和<i>a5</i>替换在一次通过。</p>
+
+
+<h3 class="fn">
+<a name="arg-6"></a>QString QString.arg (<i>self</i>, QString <i>a1</i>, QString <i>a2</i>)</h3>
+<p>这个函数的重载<a href="qstring.html#arg" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg">arg</a>（ ） 。</p>
+<p>这是一样的调用<tt>str.arg(a1).arg(a2).arg(a3).arg(a4).arg(a5).arg(a6))</tt>，除了字符串<i>a1</i>，<i>a2</i>，<i>a3</i>，<i>a4</i>，<i>a5</i>和<i>a6</i>替换在一次通过。</p>
+
+
+<h3 class="fn">
+<a name="arg-7"></a>QString QString.arg (<i>self</i>, QString <i>a1</i>, QString <i>a2</i>, QString <i>a3</i>)</h3>
+<p>这个函数的重载<a href="qstring.html#arg" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg">arg</a>（ ） 。</p>
+<p>这是一样的调用<tt>str.arg(a1).arg(a2).arg(a3).arg(a4).arg(a5).arg(a6).arg(a7)</tt>，除了字符串<i>a1</i>，<i>a2</i>，<i>a3</i>，<i>a4</i>，<i>a5</i>，<i>a6</i>和<i>a7</i>替换在一次通过。</p>
+
+
+<h3 class="fn">
+<a name="arg-8"></a>QString QString.arg (<i>self</i>, QString <i>a1</i>, QString <i>a2</i>, QString <i>a3</i>, QString <i>a4</i>)</h3>
+<p>这个函数的重载<a href="qstring.html#arg" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg">arg</a>（ ） 。</p>
+<p>这是一样的调用<tt>str.arg(a1).arg(a2).arg(a3).arg(a4).arg(a5).arg(a6).arg(a7).arg(a8)</tt>，除了字符串<i>a1</i>，<i>a2</i>，<i>a3</i>，<i>a4</i>，<i>a5</i>，<i>a6</i>，<i>a7</i>和<i>a8</i>替换在一次通过。</p>
+
+
+<h3 class="fn">
+<a name="arg-9"></a>QString QString.arg (<i>self</i>, QString <i>a1</i>, QString <i>a2</i>, QString <i>a3</i>, QString <i>a4</i>, QString <i>a5</i>)</h3>
+<p>这个函数的重载<a href="qstring.html#arg" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg">arg</a>（ ） 。</p>
+<p>这是一样的调用<tt>str.arg(a1).arg(a2).arg(a3).arg(a4).arg(a5).arg(a6).arg(a7).arg(a8).arg(a9)</tt>，除了字符串<i>a1</i>，<i>a2</i>，<i>a3</i>，<i>a4</i>，<i>a5</i>，<i>a6</i>，<i>a7</i>，<i>a8</i>和<i>a9</i>替换在一次通过。</p>
+
+
+<h3 class="fn">
+<a name="arg-10"></a>QString QString.arg (<i>self</i>, QString <i>a1</i>, QString <i>a2</i>, QString <i>a3</i>, QString <i>a4</i>, QString <i>a5</i>, QString <i>a6</i>)</h3>
+<p>这个函数的重载<a href="qstring.html#arg" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg">arg</a>（ ） 。</p>
+<p>该<i>a</i>参数表现在基础<i>base</i>，它默认为10 ，并且必须在2到36之间。对于基础不是10 ，<i>a</i>被视为一个无符号整数。</p>
+<p><i>fieldWidth</i>指定空间的最低金额<i>a</i>被填充到与填充有字符<i>fillChar</i>。正值产生右对齐文本，负值产生左对齐的文本。</p>
+<p>的'％'可以跟随一个“L” ，在这种情况下，序列被替换的局部表示<i>a</i>。该转换使用默认的语言环境，通过设置<a href="qlocale.html#setDefault" tppabs="http://pyqt4doc.appspot.com/qlocale.html#setDefault">QLocale.setDefault</a>（ ） 。如果没有指定默认的语言环境中，“ C”语言环境使用。在“L”标志将被忽略，如果<i>base</i>是不是10 。</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str;
+ str <span class="operator">=</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>(<span class="string">"Decimal 63 is %1 in hexadecimal"</span>)
+         <span class="operator">.</span>arg(<span class="number">63</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">16</span>);
+ <span class="comment">// str == "Decimal 63 is 3f in hexadecimal"</span>
+
+ <span class="type"><a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a></span><span class="operator">.</span>setDefault(<span class="type"><a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a></span>(<span class="type"><a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a></span><span class="operator">.</span>English<span class="operator">,</span> <span class="type"><a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a></span><span class="operator">.</span>UnitedStates));
+ str <span class="operator">=</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>(<span class="string">"%1 %L2 %L3"</span>)
+         <span class="operator">.</span>arg(<span class="number">12345</span>)
+         <span class="operator">.</span>arg(<span class="number">12345</span>)
+         <span class="operator">.</span>arg(<span class="number">12345</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">16</span>);
+ <span class="comment">// str == "12345 12,345 3039"</span>
+</pre>
+<p>If <i>fillChar</i>是'0' （数字0， ASCII码48 ） ，语言环境的零被使用。对于负数，零填充可能会在减号前出现。</p>
+
+
+<h3 class="fn">
+<a name="arg-11"></a>QString QString.arg (<i>self</i>, QString <i>a1</i>, QString <i>a2</i>, QString <i>a3</i>, QString <i>a4</i>, QString <i>a5</i>, QString <i>a6</i>, QString <i>a7</i>)</h3>
+<p>这个函数的重载<a href="qstring.html#arg" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg">arg</a>（ ） 。</p>
+<p>该<i>base</i>参数指定的基数换算整数时使用<i>a</i>成一个字符串。所述碱必须具有2和36之间。</p>
+<p>If <i>fillChar</i>是'0' （数字0， ASCII码48 ） ，语言环境的零被使用。对于负数，零填充可能会在减号前出现。</p>
+
+
+<h3 class="fn">
+<a name="arg-12"></a>QString QString.arg (<i>self</i>, QString <i>a1</i>, QString <i>a2</i>, QString <i>a3</i>, QString <i>a4</i>, QString <i>a5</i>, QString <i>a6</i>, QString <i>a7</i>, QString <i>a8</i>)</h3>
+<p>这个函数的重载<a href="qstring.html#arg" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg">arg</a>（ ） 。</p>
+<p><i>fieldWidth</i>指定空间的最低金额<i>a</i>被填充到与填充有字符<i>fillChar</i>。正值产生右对齐文本，负值产生左对齐的文本。</p>
+<p>该<i>a</i>参数表示在给定的<i>base</i>，它默认为10 ，并且必须在2到36之间。</p>
+<p>的'％'可以跟随一个“L” ，在这种情况下，序列被替换的局部表示<i>a</i>。转换使用默认的语言环境。默认的区域是从应用程序启动时系统的区域设置决定。它可以通过改变<a href="qlocale.html#setDefault" tppabs="http://pyqt4doc.appspot.com/qlocale.html#setDefault">QLocale.setDefault</a>（ ） 。在“L”标志将被忽略，如果<i>base</i>是不是10 。</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str;
+ str <span class="operator">=</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>(<span class="string">"Decimal 63 is %1 in hexadecimal"</span>)
+         <span class="operator">.</span>arg(<span class="number">63</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">16</span>);
+ <span class="comment">// str == "Decimal 63 is 3f in hexadecimal"</span>
+
+ <span class="type"><a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a></span><span class="operator">.</span>setDefault(<span class="type"><a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a></span>(<span class="type"><a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a></span><span class="operator">.</span>English<span class="operator">,</span> <span class="type"><a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a></span><span class="operator">.</span>UnitedStates));
+ str <span class="operator">=</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>(<span class="string">"%1 %L2 %L3"</span>)
+         <span class="operator">.</span>arg(<span class="number">12345</span>)
+         <span class="operator">.</span>arg(<span class="number">12345</span>)
+         <span class="operator">.</span>arg(<span class="number">12345</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">16</span>);
+ <span class="comment">// str == "12345 12,345 3039"</span>
+</pre>
+<p>If <i>fillChar</i>是'0' （数字0， ASCII码48 ） ，语言环境的零被使用。对于负数，零填充可能会在减号前出现。</p>
+
+
+<h3 class="fn">
+<a name="arg-13"></a>QString QString.arg (<i>self</i>, QString <i>a1</i>, QString <i>a2</i>, QString <i>a3</i>, QString <i>a4</i>, QString <i>a5</i>, QString <i>a6</i>, QString <i>a7</i>, QString <i>a8</i>, QString <i>a9</i>)</h3>
+<p>这个函数的重载<a href="qstring.html#arg" tppabs="http://pyqt4doc.appspot.com/qstring.html#arg">arg</a>（ ） 。</p>
+<p><i>fieldWidth</i>指定空间的最低金额<i>a</i>被填充到与填充有字符<i>fillChar</i>。正值产生右对齐文本，负值产生左对齐的文本。</p>
+<p>该<i>base</i>参数指定的基数换算整数时使用<i>a</i>为一个字符串。该基地必须是2和36之间，给予8进制， 10进制和16进制数。</p>
+<p>If <i>fillChar</i>是'0' （数字0， ASCII码48 ） ，语言环境的零被使用。对于负数，零填充可能会在减号前出现。</p>
+
+
+<h3 class="fn">
+<a name="at"></a>QChar QString.at (<i>self</i>, int <i>i</i>)</h3>
+<p>返回字符的给定索引处<i>position</i>在字符串中。</p>
+<p>该<i>position</i>必须是在字符串中的有效索引位置（即0 \u003c =<i>position</i>\u003c<a href="qstring.html#size" tppabs="http://pyqt4doc.appspot.com/qstring.html#size">size</a>（））。</p>
+<p><b>See also</b> <a href="qstring.html#operator-5b-5d" tppabs="http://pyqt4doc.appspot.com/qstring.html#operator-5b-5d">operator[]</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="capacity"></a>int QString.capacity (<i>self</i>)</h3>
+<p>返回可以存储在字符串中不强制重新分配的字符的最大数目。</p>
+<p>此函数的唯一目的是提供微调的手段<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>的内存使用情况。一般情况下，你很少会需要调用这个函数。如果你想知道有多少字符是字符串，调用<a href="qstring.html#size" tppabs="http://pyqt4doc.appspot.com/qstring.html#size">size</a>（ ） 。</p>
+<p><b>See also</b> <a href="qstring.html#reserve" tppabs="http://pyqt4doc.appspot.com/qstring.html#reserve">reserve</a>（）和<a href="qstring.html#squeeze" tppabs="http://pyqt4doc.appspot.com/qstring.html#squeeze">squeeze</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="chop"></a>QString.chop (<i>self</i>, int <i>n</i>)</h3>
+<p>移除<i>n</i>字符从字符串的结尾。</p>
+<p>If <i>n</i>大于<a href="qstring.html#size" tppabs="http://pyqt4doc.appspot.com/qstring.html#size">size</a>（ ） ，结果是空字符串。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str(<span class="string">"LOGOUT\r\n"</span>);
+ str<span class="operator">.</span>chop(<span class="number">2</span>);
+ <span class="comment">// str == "LOGOUT"</span>
+</pre>
+<p>如果你想从删除的字符<i>beginning</i>的字符串，使用<a href="qstring.html#remove" tppabs="http://pyqt4doc.appspot.com/qstring.html#remove">remove</a>（ ）来代替。</p>
+<p><b>See also</b> <a href="qstring.html#truncate" tppabs="http://pyqt4doc.appspot.com/qstring.html#truncate">truncate</a>（ ）<a href="qstring.html#resize" tppabs="http://pyqt4doc.appspot.com/qstring.html#resize">resize</a>（）和<a href="qstring.html#remove" tppabs="http://pyqt4doc.appspot.com/qstring.html#remove">remove</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clear"></a>QString.clear (<i>self</i>)</h3>
+<p>清除字符串的内容，并使其为空。</p>
+<p><b>See also</b> <a href="qstring.html#resize" tppabs="http://pyqt4doc.appspot.com/qstring.html#resize">resize</a>() and
+<a href="qstring.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qstring.html#isEmpty">isEmpty</a>().</p>
+
+
+<h3 class="fn">
+<a name="compare"></a>int QString.compare (<i>self</i>, QString <i>s</i>)</h3>
+<p>比较<i>s1</i>同<i>s2</i>并返回一个整数大于零小于，等于，或大于，如果<i>s1</i>小于，等于或大于<i>s2</i>。</p>
+<p>If <i>cs</i> is <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitive</a>，比较是区分大小写的，否则比较不区分大小写。</p>
+<p>区分大小写的比较是完全基于字符的数值Unicode值和速度非常快，但不是什么人期望的那样。考虑与分拣用户可见的字符串<a href="qstring.html#localeAwareCompare" tppabs="http://pyqt4doc.appspot.com/qstring.html#localeAwareCompare">localeAwareCompare</a>（ ） 。</p>
+<pre class="cpp">
+ <span class="type">int</span> x <span class="operator">=</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span><span class="operator">.</span>compare(<span class="string">"aUtO"</span><span class="operator">,</span> <span class="string">"AuTo"</span><span class="operator">,</span> <span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>CaseInsensitive);  <span class="comment">// x == 0</span>
+ <span class="type">int</span> y <span class="operator">=</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span><span class="operator">.</span>compare(<span class="string">"auto"</span><span class="operator">,</span> <span class="string">"Car"</span><span class="operator">,</span> <span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>CaseSensitive);     <span class="comment">// y &gt; 0</span>
+ <span class="type">int</span> z <span class="operator">=</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span><span class="operator">.</span>compare(<span class="string">"auto"</span><span class="operator">,</span> <span class="string">"Car"</span><span class="operator">,</span> <span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>CaseInsensitive);   <span class="comment">// z &lt; 0</span>
+</pre>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qstring.html#operator-eq-eq" tppabs="http://pyqt4doc.appspot.com/qstring.html#operator-eq-eq">operator==</a>（ ）<a href="qstring.html#operator-lt" tppabs="http://pyqt4doc.appspot.com/qstring.html#operator-lt">operator&lt;</a>（）和<a href="qstring.html#operator-gt" tppabs="http://pyqt4doc.appspot.com/qstring.html#operator-gt">operator&gt;</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="compare-2"></a>int QString.compare (<i>self</i>, QString <i>s</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i>)</h3>
+<p>这个函数的重载<a href="qstring.html#compare" tppabs="http://pyqt4doc.appspot.com/qstring.html#compare">compare</a>（ ） 。</p>
+<p>执行敏感的比较情况<i>s1</i>和<i>s2</i>。</p>
+
+
+<h3 class="fn">
+<a name="compare-3"></a>int QString.compare (<i>self</i>, <a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a> <i>other</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<p>这个函数的重载<a href="qstring.html#compare" tppabs="http://pyqt4doc.appspot.com/qstring.html#compare">compare</a>（ ） 。</p>
+<p>执行的比较<i>s1</i>和<i>s2</i>使用区分大小写设置<i>cs</i>。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="compare-4"></a>int QString.compare (<i>self</i>, QStringRef <i>ref</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<p>这个函数的重载<a href="qstring.html#compare" tppabs="http://pyqt4doc.appspot.com/qstring.html#compare">compare</a>（ ） 。</p>
+<p>执行的比较<i>s1</i>和<i>s2</i>使用区分大小写设置<i>cs</i>。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="compare-5"></a>int QString.compare (QString <i>s1</i>, QString <i>s2</i>)</h3>
+<p>这个函数的重载<a href="qstring.html#compare" tppabs="http://pyqt4doc.appspot.com/qstring.html#compare">compare</a>（ ） 。</p>
+<p>词汇与比较此字符串<i>other</i>字符串并返回比，等于大于零的整数更少，或更大，如果该字符串是比其他字符串小于，等于，或更大。</p>
+<p>相当于<tt>compare(*this, other)</tt>。</p>
+
+
+<h3 class="fn">
+<a name="compare-6"></a>int QString.compare (QString <i>s1</i>, QString <i>s2</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i>)</h3>
+<p>这个函数的重载<a href="qstring.html#compare" tppabs="http://pyqt4doc.appspot.com/qstring.html#compare">compare</a>（ ） 。</p>
+<p>同样作为比较（ *此，<i>other</i>，<i>cs</i>） 。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="compare-7"></a>int QString.compare (QString <i>s1</i>, <a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a> <i>s2</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<p>这个函数的重载<a href="qstring.html#compare" tppabs="http://pyqt4doc.appspot.com/qstring.html#compare">compare</a>（ ） 。</p>
+<p>同样作为比较（ *此，<i>other</i>，<i>cs</i>） 。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="compare-8"></a>int QString.compare (<a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a> <i>s1</i>, QString <i>s2</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<p>这个函数的重载<a href="qstring.html#compare" tppabs="http://pyqt4doc.appspot.com/qstring.html#compare">compare</a>（ ） 。</p>
+<p>比较字符串引用，<i>ref</i>与字符串并返回比，等于大于零的整数更少，或更大，如果该字符串是小于，等于或大于<i>ref</i>。</p>
+
+
+<h3 class="fn">
+<a name="compare-9"></a>int QString.compare (QString <i>s1</i>, QStringRef <i>s2</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<p>这个函数的重载<a href="qstring.html#compare" tppabs="http://pyqt4doc.appspot.com/qstring.html#compare">compare</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="contains"></a>bool QString.contains (<i>self</i>, QString <i>str</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<p>如果此字符串包含字符串的出现，则返回True<i>str</i>否则返回False 。</p>
+<p>If <i>cs</i> is <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitive</a>（默认） ，搜索是区分大小写的，否则搜索不区分大小写。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"Peter Pan"</span>;
+ str<span class="operator">.</span>contains(<span class="string">"peter"</span><span class="operator">,</span> <span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>CaseInsensitive);    <span class="comment">// returns true</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#indexOf" tppabs="http://pyqt4doc.appspot.com/qstring.html#indexOf">indexOf</a>（）和<a href="qstring.html#count" tppabs="http://pyqt4doc.appspot.com/qstring.html#count">count</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="contains-2"></a>bool QString.contains (<i>self</i>, QStringRef <i>s</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<p>如果这个字符串包含的字符串引用的出现，则返回True<i>str</i>否则返回False 。</p>
+<p>If <i>cs</i> is <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitive</a>（默认） ，搜索是区分大小写的，否则搜索不区分大小写。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qstring.html#indexOf" tppabs="http://pyqt4doc.appspot.com/qstring.html#indexOf">indexOf</a>（）和<a href="qstring.html#count" tppabs="http://pyqt4doc.appspot.com/qstring.html#count">count</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="contains-3"></a>bool QString.contains (<i>self</i>, <a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a> <i>rx</i>)</h3>
+<h3 class="fn">
+<a name="count"></a>int QString.count (<i>self</i>)</h3>
+<p>返回（可能重叠）字符串的出现次数<i>str</i>在此字符串。</p>
+<p>If <i>cs</i> is <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitive</a>（默认） ，搜索是区分大小写的，否则搜索不区分大小写。</p>
+<p><b>See also</b> <a href="qstring.html#contains" tppabs="http://pyqt4doc.appspot.com/qstring.html#contains">contains</a>（）和<a href="qstring.html#indexOf" tppabs="http://pyqt4doc.appspot.com/qstring.html#indexOf">indexOf</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="count-2"></a>int QString.count (<i>self</i>, QString <i>str</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<p>这个函数的重载<a href="qstring.html#count" tppabs="http://pyqt4doc.appspot.com/qstring.html#count">count</a>（ ） 。</p>
+<p>返回事件字符的数目<i>ch</i>在字符串中。</p>
+
+
+<h3 class="fn">
+<a name="count-3"></a>int QString.count (<i>self</i>, QStringRef <i>str</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<p>这个函数的重载<a href="qstring.html#count" tppabs="http://pyqt4doc.appspot.com/qstring.html#count">count</a>（ ） 。</p>
+<p>返回（可能重叠）出现的字符串引用数<i>str</i>在此字符串。</p>
+<p>If <i>cs</i> is <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitive</a>（默认） ，搜索是区分大小写的，否则搜索不区分大小写。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qstring.html#contains" tppabs="http://pyqt4doc.appspot.com/qstring.html#contains">contains</a>（）和<a href="qstring.html#indexOf" tppabs="http://pyqt4doc.appspot.com/qstring.html#indexOf">indexOf</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="count-4"></a>int QString.count (<i>self</i>, <a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a>)</h3>
+<p>这个函数的重载<a href="qstring.html#count" tppabs="http://pyqt4doc.appspot.com/qstring.html#count">count</a>（ ） 。</p>
+<p>返回的次数的正则表达式<i>rx</i>匹配字符串中。</p>
+<p>此函数计算重叠的匹配，所以在下面的例子中，有“模拟”或“ AMA”的四个实例：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"banana and panama"</span>;
+ str<span class="operator">.</span>count(<span class="type"><a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a></span>(<span class="string">"a[nm]a"</span>));    <span class="comment">// returns 4</span>
+</pre>
+
+
+<h3 class="fn">
+<a name="endsWith"></a>bool QString.endsWith (<i>self</i>, QString <i>s</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<p>如果字符串结尾，则返回True<i>s</i>否则返回False 。</p>
+<p>If <i>cs</i> is <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitive</a>（默认） ，搜索是区分大小写的，否则搜索不区分大小写。</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"Bananas"</span>;
+ str<span class="operator">.</span>endsWith(<span class="string">"anas"</span>);         <span class="comment">// returns true</span>
+ str<span class="operator">.</span>endsWith(<span class="string">"pple"</span>);         <span class="comment">// returns false</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#startsWith" tppabs="http://pyqt4doc.appspot.com/qstring.html#startsWith">startsWith</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="endsWith-2"></a>bool QString.endsWith (<i>self</i>, QStringRef <i>s</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<h3 class="fn">
+<a name="endsWith-3"></a>bool QString.endsWith (<i>self</i>, <a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a> <i>s</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<p>这个函数的重载<a href="qstring.html#endsWith" tppabs="http://pyqt4doc.appspot.com/qstring.html#endsWith">endsWith</a>（ ） 。</p>
+<p>如果字符串的字符串引用结束，则返回True<i>s</i>否则返回False 。</p>
+<p>If <i>cs</i> is <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitive</a>（默认） ，搜索是区分大小写的，否则搜索不区分大小写。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qstring.html#startsWith" tppabs="http://pyqt4doc.appspot.com/qstring.html#startsWith">startsWith</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fill"></a>QString QString.fill (<i>self</i>, QChar <i>ch</i>, int <i>size</i> = -1)</h3>
+<p>设置每个字符的字符串中的字符<i>ch</i>。如果<i>size</i>是从-1 （默认值）不同，该字符串被调整为<i>size</i>事前。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"Berlin"</span>;
+ str<span class="operator">.</span>fill(<span class="char">'z'</span>);
+ <span class="comment">// str == "zzzzzz"</span>
+
+ str<span class="operator">.</span>fill(<span class="char">'A'</span><span class="operator">,</span> <span class="number">2</span>);
+ <span class="comment">// str == "AA"</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#resize" tppabs="http://pyqt4doc.appspot.com/qstring.html#resize">resize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fromAscii"></a>QString QString.fromAscii (str <i>str</i>, int <i>size</i> = -1)</h3>
+<p>返回<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>与第一次初始化<i>size</i>从字符串中的字符<i>str</i>。</p>
+<p>If <i>size</i>为-1 （默认值） ，它被视为于qstrlen （<i>str</i>） 。</p>
+<p>需要注意的是，尽管这个名字，这个功能实际上是通过使用定义的编码解码器<a href="qtextcodec.html#setCodecForCStrings" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#setCodecForCStrings">QTextCodec.setCodecForCStrings</a>（ ）来转换<i>str</i>为Unicode。取决于编解码器，它可能不接受有效的US-ASCII （ANSI X3.4 - 1986）的输入。如果没有编解码器已经设置，这个函数一样<a href="qstring.html#fromLatin1" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromLatin1">fromLatin1</a>（ ） 。</p>
+<p><b>See also</b> <a href="qstring.html#toAscii" tppabs="http://pyqt4doc.appspot.com/qstring.html#toAscii">toAscii</a>（ ）<a href="qstring.html#fromLatin1" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromLatin1">fromLatin1</a>（ ）<a href="qstring.html#fromUtf8" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromUtf8">fromUtf8</a>（）和<a href="qstring.html#fromLocal8Bit" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromLocal8Bit">fromLocal8Bit</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fromLatin1"></a>QString QString.fromLatin1 (str <i>str</i>, int <i>size</i> = -1)</h3>
+<p>返回<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>与第一次初始化<i>size</i>拉丁- 1字符串的字符<i>str</i>。</p>
+<p>If <i>size</i>为-1 （默认值） ，它被视为于qstrlen （<i>str</i>） 。</p>
+<p><b>See also</b> <a href="qstring.html#toLatin1" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLatin1">toLatin1</a>（ ）<a href="qstring.html#fromAscii" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromAscii">fromAscii</a>（ ）<a href="qstring.html#fromUtf8" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromUtf8">fromUtf8</a>（）和<a href="qstring.html#fromLocal8Bit" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromLocal8Bit">fromLocal8Bit</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fromLocal8Bit"></a>QString QString.fromLocal8Bit (str <i>str</i>, int <i>size</i> = -1)</h3>
+<p>返回<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>与第一次初始化<i>size</i>8位字符串的字符<i>str</i>。</p>
+<p>If <i>size</i>为-1 （默认值） ，它被视为于qstrlen （<i>str</i>） 。</p>
+<p><a href="qtextcodec.html#codecForLocale" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForLocale">QTextCodec.codecForLocale</a>（ ）是用来执行转换。</p>
+<p><b>See also</b> <a href="qstring.html#toLocal8Bit" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLocal8Bit">toLocal8Bit</a>（ ）<a href="qstring.html#fromAscii" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromAscii">fromAscii</a>（ ）<a href="qstring.html#fromLatin1" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromLatin1">fromLatin1</a>（）和<a href="qstring.html#fromUtf8" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromUtf8">fromUtf8</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fromUtf8"></a>QString QString.fromUtf8 (str <i>str</i>, int <i>size</i> = -1)</h3>
+<p>返回<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>与第一次初始化<i>size</i>在UTF-8字符串的字节<i>str</i>。</p>
+<p>If <i>size</i>为-1 （默认值） ，它被视为于qstrlen （<i>str</i>） 。</p>
+<p>UTF - 8是Unicode编码，可以表示所有字符的Unicode字符串像<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>。然而，无效的序列是可以使用UTF -8和，如果有这样的发现，他们将被替换为一个或多个“替换字符” ，或抑制。这些包括非Unicode序列，非字符，过长的序列或编码成UTF-8代码点。</p>
+<p>非字符码点是Unicode标准的储备，不能在文本交换使用。他们在每一个Unicode平面（ U + FFFE ， U + FFFF ， U +1 FFFE ， U +1 FFFF ， U +2 FFFE等） ，以及16码点在范围U + FDD0 .. U +最后两个代码点FDDF ，包容性。</p>
+<p><b>See also</b> <a href="qstring.html#toUtf8" tppabs="http://pyqt4doc.appspot.com/qstring.html#toUtf8">toUtf8</a>（ ）<a href="qstring.html#fromAscii" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromAscii">fromAscii</a>（ ）<a href="qstring.html#fromLatin1" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromLatin1">fromLatin1</a>（）和<a href="qstring.html#fromLocal8Bit" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromLocal8Bit">fromLocal8Bit</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="indexOf"></a>int QString.indexOf (<i>self</i>, QString <i>str</i>, int <i>from</i> = 0, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<p>返回字符串中第一次出现的索引位置<i>str</i>在这个字符串，搜索着从索引位置<i>from</i>。返回-1，如果<i>str</i>是没有找到。</p>
+<p>If <i>cs</i> is <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitive</a>（默认） ，搜索是区分大小写的，否则搜索不区分大小写。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> x <span class="operator">=</span> <span class="string">"sticky question"</span>;
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> y <span class="operator">=</span> <span class="string">"sti"</span>;
+ x<span class="operator">.</span>indexOf(y);               <span class="comment">// returns 0</span>
+ x<span class="operator">.</span>indexOf(y<span class="operator">,</span> <span class="number">1</span>);            <span class="comment">// returns 10</span>
+ x<span class="operator">.</span>indexOf(y<span class="operator">,</span> <span class="number">10</span>);           <span class="comment">// returns 10</span>
+ x<span class="operator">.</span>indexOf(y<span class="operator">,</span> <span class="number">11</span>);           <span class="comment">// returns -1</span>
+</pre>
+<p>If <i>from</i>为-1，搜索从最后一个字符，如果是-2 ，在倒数第二个字符等等。</p>
+<p><b>See also</b> <a href="qstring.html#lastIndexOf" tppabs="http://pyqt4doc.appspot.com/qstring.html#lastIndexOf">lastIndexOf</a>（ ）<a href="qstring.html#contains" tppabs="http://pyqt4doc.appspot.com/qstring.html#contains">contains</a>（）和<a href="qstring.html#count" tppabs="http://pyqt4doc.appspot.com/qstring.html#count">count</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="indexOf-2"></a>int QString.indexOf (<i>self</i>, QStringRef <i>str</i>, int <i>from</i> = 0, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<p>返回字符串中第一次出现的索引位置<i>str</i>在这个字符串，搜索着从索引位置<i>from</i>。返回-1，如果<i>str</i>是没有找到。</p>
+<p>If <i>cs</i> is <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitive</a>（默认） ，搜索是区分大小写的，否则搜索不区分大小写。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> x <span class="operator">=</span> <span class="string">"sticky question"</span>;
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> y <span class="operator">=</span> <span class="string">"sti"</span>;
+ x<span class="operator">.</span>indexOf(y);               <span class="comment">// returns 0</span>
+ x<span class="operator">.</span>indexOf(y<span class="operator">,</span> <span class="number">1</span>);            <span class="comment">// returns 10</span>
+ x<span class="operator">.</span>indexOf(y<span class="operator">,</span> <span class="number">10</span>);           <span class="comment">// returns 10</span>
+ x<span class="operator">.</span>indexOf(y<span class="operator">,</span> <span class="number">11</span>);           <span class="comment">// returns -1</span>
+</pre>
+<p>If <i>from</i>为-1，搜索从最后一个字符，如果是-2 ，在倒数第二个字符等等。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qstring.html#lastIndexOf" tppabs="http://pyqt4doc.appspot.com/qstring.html#lastIndexOf">lastIndexOf</a>（ ）<a href="qstring.html#contains" tppabs="http://pyqt4doc.appspot.com/qstring.html#contains">contains</a>（）和<a href="qstring.html#count" tppabs="http://pyqt4doc.appspot.com/qstring.html#count">count</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="indexOf-3"></a>int QString.indexOf (<i>self</i>, <a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a> <i>str</i>, int <i>from</i> = 0, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<p>这个函数的重载<a href="qstring.html#indexOf" tppabs="http://pyqt4doc.appspot.com/qstring.html#indexOf">indexOf</a>（ ） 。</p>
+<p>返回字符的第一个匹配项的索引位置<i>ch</i>在字符串中，寻找着从索引位置<i>from</i>。返回-1，如果<i>ch</i>找不到。</p>
+
+
+<h3 class="fn">
+<a name="indexOf-4"></a>int QString.indexOf (<i>self</i>, <a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a> <i>rx</i>, int <i>from</i> = 0)</h3>
+<p>这个函数的重载<a href="qstring.html#indexOf" tppabs="http://pyqt4doc.appspot.com/qstring.html#indexOf">indexOf</a>（ ） 。</p>
+<p>返回的字符串引用中第一次出现的索引位置<i>str</i>在这个字符串，搜索着从索引位置<i>from</i>。返回-1，如果<i>str</i>是没有找到。</p>
+<p>If <i>cs</i> is <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitive</a>（默认） ，搜索是区分大小写的，否则搜索不区分大小写。</p>
+<p>此功能被引入Qt的4.8 。</p>
+
+
+<h3 class="fn">
+<a name="insert"></a>QString QString.insert (<i>self</i>, int <i>i</i>, QString <i>s</i>)</h3>
+<p>插入字符串<i>str</i>给定索引处<i>position</i>并返回一个引用这个字符串。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"Meal"</span>;
+ str<span class="operator">.</span>insert(<span class="number">1</span><span class="operator">,</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>(<span class="string">"ontr"</span>));
+ <span class="comment">// str == "Montreal"</span>
+</pre>
+<p>如果给定的<i>position</i>大于<a href="qstring.html#size" tppabs="http://pyqt4doc.appspot.com/qstring.html#size">size</a>（） ，该阵列是第一，采用扩展<a href="qstring.html#resize" tppabs="http://pyqt4doc.appspot.com/qstring.html#resize">resize</a>（ ） 。</p>
+<p><b>See also</b> <a href="qstring.html#append" tppabs="http://pyqt4doc.appspot.com/qstring.html#append">append</a>（ ）<a href="qstring.html#prepend" tppabs="http://pyqt4doc.appspot.com/qstring.html#prepend">prepend</a>（ ）<a href="qstring.html#replace" tppabs="http://pyqt4doc.appspot.com/qstring.html#replace">replace</a>（）和<a href="qstring.html#remove" tppabs="http://pyqt4doc.appspot.com/qstring.html#remove">remove</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insert-2"></a>QString QString.insert (<i>self</i>, int <i>i</i>, <a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a> <i>s</i>)</h3>
+<p>这个函数的重载<a href="qstring.html#insert" tppabs="http://pyqt4doc.appspot.com/qstring.html#insert">insert</a>（ ） 。</p>
+<p>插入Latin-1的字符串<i>str</i>给定索引处<i>position</i>。</p>
+
+
+<h3 class="fn">
+<a name="isEmpty"></a>bool QString.isEmpty (<i>self</i>)</h3>
+<p>返回True如果该字符串没有字符，否则返回False 。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>()<span class="operator">.</span>isEmpty();            <span class="comment">// returns true</span>
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>(<span class="string">""</span>)<span class="operator">.</span>isEmpty();          <span class="comment">// returns true</span>
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>(<span class="string">"x"</span>)<span class="operator">.</span>isEmpty();         <span class="comment">// returns false</span>
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>(<span class="string">"abc"</span>)<span class="operator">.</span>isEmpty();       <span class="comment">// returns false</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#size" tppabs="http://pyqt4doc.appspot.com/qstring.html#size">size</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isNull"></a>bool QString.isNull (<i>self</i>)</h3>
+<p>返回True如果该字符串为null ，否则返回False 。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>()<span class="operator">.</span>isNull();             <span class="comment">// returns true</span>
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>(<span class="string">""</span>)<span class="operator">.</span>isNull();           <span class="comment">// returns false</span>
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>(<span class="string">"abc"</span>)<span class="operator">.</span>isNull();        <span class="comment">// returns false</span>
+</pre>
+<p>Qt后，由于历史原因，空字符串和空字符串之间的区别。对于大多数应用来说，重要的是一个字符串是否包含任何数据，这可以通过将所确定的<a href="qstring.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qstring.html#isEmpty">isEmpty</a>（）函数。</p>
+<p><b>See also</b> <a href="qstring.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qstring.html#isEmpty">isEmpty</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isRightToLeft"></a>bool QString.isRightToLeft (<i>self</i>)</h3>
+<p>返回True如果该字符串读取从右到左。</p>
+
+
+<h3 class="fn">
+<a name="isSimpleText"></a>bool QString.isSimpleText (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="lastIndexOf"></a>int QString.lastIndexOf (<i>self</i>, QString <i>str</i>, int <i>from</i> = -1, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<p>返回字符串中最后一次出现的索引位置<i>str</i>在这个字符串，从索引位置向后搜索<i>from</i>。如果<i>from</i>为-1 （默认），搜索从最后一个字符，如果<i>from</i>为-2 ，在旁边的最后一个字符等等。返回-1，如果<i>str</i>是没有找到。</p>
+<p>If <i>cs</i> is <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitive</a>（默认） ，搜索是区分大小写的，否则搜索不区分大小写。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> x <span class="operator">=</span> <span class="string">"crazy azimuths"</span>;
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> y <span class="operator">=</span> <span class="string">"az"</span>;
+ x<span class="operator">.</span>lastIndexOf(y);           <span class="comment">// returns 6</span>
+ x<span class="operator">.</span>lastIndexOf(y<span class="operator">,</span> <span class="number">6</span>);        <span class="comment">// returns 6</span>
+ x<span class="operator">.</span>lastIndexOf(y<span class="operator">,</span> <span class="number">5</span>);        <span class="comment">// returns 2</span>
+ x<span class="operator">.</span>lastIndexOf(y<span class="operator">,</span> <span class="number">1</span>);        <span class="comment">// returns -1</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#indexOf" tppabs="http://pyqt4doc.appspot.com/qstring.html#indexOf">indexOf</a>（ ）<a href="qstring.html#contains" tppabs="http://pyqt4doc.appspot.com/qstring.html#contains">contains</a>（）和<a href="qstring.html#count" tppabs="http://pyqt4doc.appspot.com/qstring.html#count">count</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="lastIndexOf-2"></a>int QString.lastIndexOf (<i>self</i>, QStringRef <i>str</i>, int <i>from</i> = -1, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<p>这个函数的重载<a href="qstring.html#lastIndexOf" tppabs="http://pyqt4doc.appspot.com/qstring.html#lastIndexOf">lastIndexOf</a>（ ） 。</p>
+<p>返回字符串中最后一次出现的索引位置<i>str</i>在这个字符串，从索引位置向后搜索<i>from</i>。如果<i>from</i>为-1 （默认），搜索从最后一个字符，如果<i>from</i>为-2 ，在倒数第二个字符等等。返回-1，如果<i>str</i>是没有找到。</p>
+<p>If <i>cs</i> is <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitive</a>（默认） ，搜索是区分大小写的，否则搜索不区分大小写。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> x <span class="operator">=</span> <span class="string">"crazy azimuths"</span>;
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> y <span class="operator">=</span> <span class="string">"az"</span>;
+ x<span class="operator">.</span>lastIndexOf(y);           <span class="comment">// returns 6</span>
+ x<span class="operator">.</span>lastIndexOf(y<span class="operator">,</span> <span class="number">6</span>);        <span class="comment">// returns 6</span>
+ x<span class="operator">.</span>lastIndexOf(y<span class="operator">,</span> <span class="number">5</span>);        <span class="comment">// returns 2</span>
+ x<span class="operator">.</span>lastIndexOf(y<span class="operator">,</span> <span class="number">1</span>);        <span class="comment">// returns -1</span>
+</pre>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qstring.html#indexOf" tppabs="http://pyqt4doc.appspot.com/qstring.html#indexOf">indexOf</a>（ ）<a href="qstring.html#contains" tppabs="http://pyqt4doc.appspot.com/qstring.html#contains">contains</a>（）和<a href="qstring.html#count" tppabs="http://pyqt4doc.appspot.com/qstring.html#count">count</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="lastIndexOf-3"></a>int QString.lastIndexOf (<i>self</i>, <a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a> <i>str</i>, int <i>from</i> = -1, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<p>这个函数的重载<a href="qstring.html#lastIndexOf" tppabs="http://pyqt4doc.appspot.com/qstring.html#lastIndexOf">lastIndexOf</a>（ ） 。</p>
+<p>返回字符的最后一个匹配项的索引位置<i>ch</i>从位置向后搜索<i>from</i>。</p>
+
+
+<h3 class="fn">
+<a name="lastIndexOf-4"></a>int QString.lastIndexOf (<i>self</i>, <a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a> <i>rx</i>, int <i>from</i> = -1)</h3>
+<p>这个函数的重载<a href="qstring.html#lastIndexOf" tppabs="http://pyqt4doc.appspot.com/qstring.html#lastIndexOf">lastIndexOf</a>（ ） 。</p>
+<p>返回的字符串引用的最后一个匹配项的索引位置<i>str</i>在这个字符串，从索引位置向后搜索<i>from</i>。如果<i>from</i>为-1 （默认），搜索从最后一个字符，如果<i>from</i>为-2 ，在倒数第二个字符等等。返回-1，如果<i>str</i>是没有找到。</p>
+<p>If <i>cs</i> is <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitive</a>（默认） ，搜索是区分大小写的，否则搜索不区分大小写。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qstring.html#indexOf" tppabs="http://pyqt4doc.appspot.com/qstring.html#indexOf">indexOf</a>（ ）<a href="qstring.html#contains" tppabs="http://pyqt4doc.appspot.com/qstring.html#contains">contains</a>（）和<a href="qstring.html#count" tppabs="http://pyqt4doc.appspot.com/qstring.html#count">count</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="left"></a>QString QString.left (<i>self</i>, int <i>len</i>)</h3>
+<p>返回包含一个子串的<i>n</i>字符串最左边的字符。</p>
+<p>如果整个字符串被返回<i>n</i>大于<a href="qstring.html#size" tppabs="http://pyqt4doc.appspot.com/qstring.html#size">size</a>（）或小于零。</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> x <span class="operator">=</span> <span class="string">"Pineapple"</span>;
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> y <span class="operator">=</span> x<span class="operator">.</span>left(<span class="number">4</span>);      <span class="comment">// y == "Pine"</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#right" tppabs="http://pyqt4doc.appspot.com/qstring.html#right">right</a>（ ）<a href="qstring.html#mid" tppabs="http://pyqt4doc.appspot.com/qstring.html#mid">mid</a>（）和<a href="qstring.html#startsWith" tppabs="http://pyqt4doc.appspot.com/qstring.html#startsWith">startsWith</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="leftJustified"></a>QString QString.leftJustified (<i>self</i>, int <i>width</i>, QChar <i>fillChar</i> = QLatin1Char(' '), bool <i>truncate</i> = False)</h3>
+<p>返回大小的字符串<i>width</i>包含该字符串被填充<i>fill</i>字符。</p>
+<p>If <i>truncate</i>是假的而<a href="qstring.html#size" tppabs="http://pyqt4doc.appspot.com/qstring.html#size">size</a>字符串（ ）大于<i>width</i>，那么返回的字符串是字符串的一个副本。</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> s <span class="operator">=</span> <span class="string">"apple"</span>;
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> t <span class="operator">=</span> s<span class="operator">.</span>leftJustified(<span class="number">8</span><span class="operator">,</span> <span class="char">'.'</span>);    <span class="comment">// t == "apple..."</span>
+</pre>
+<p>If <i>truncate</i>是真实的<a href="qstring.html#size" tppabs="http://pyqt4doc.appspot.com/qstring.html#size">size</a>字符串（ ）大于<i>width</i>，然后在字符串的位置后，副本的任何字符<i>width</i>被删除，并且该副本被返回。</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"Pineapple"</span>;
+ str <span class="operator">=</span> str<span class="operator">.</span>leftJustified(<span class="number">5</span><span class="operator">,</span> <span class="char">'.'</span><span class="operator">,</span> <span class="keyword">true</span>);    <span class="comment">// str == "Pinea"</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#rightJustified" tppabs="http://pyqt4doc.appspot.com/qstring.html#rightJustified">rightJustified</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="length"></a>int QString.length (<i>self</i>)</h3>
+<p>返回此字符串中的字符数。相当于<a href="qstring.html#size" tppabs="http://pyqt4doc.appspot.com/qstring.html#size">size</a>（ ） 。</p>
+<p><b>See also</b> <a class="compat" href="index.htm#setLength" tppabs="http://pyqt4doc.appspot.com/qstring-qt3.html#setLength">setLength</a>（）和<a href="qstring.html#resize" tppabs="http://pyqt4doc.appspot.com/qstring.html#resize">resize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="localeAwareCompare"></a>int QString.localeAwareCompare (<i>self</i>, QString <i>s</i>)</h3>
+<p>比较<i>s1</i>同<i>s2</i>并返回一个整数大于零小于，等于，或大于，如果<i>s1</i>小于，等于或大于<i>s2</i>。</p>
+<p>比较是在一个语言环境，也依赖于平台的方式进行。使用此功能可呈现字符串排序的列表给用户。</p>
+<p>自从上的Qt 4.3的Mac OS X ，此功能根据“订单的排序列表”，在国际prefereces面板设置进行比较。</p>
+<p><b>See also</b> <a href="qstring.html#compare" tppabs="http://pyqt4doc.appspot.com/qstring.html#compare">compare</a>（）和<a class="compat" href="index.htm#locale" tppabs="http://pyqt4doc.appspot.com/qtextcodec-qt3.html#locale">QTextCodec.locale</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="localeAwareCompare-2"></a>int QString.localeAwareCompare (<i>self</i>, QStringRef <i>s</i>)</h3>
+<p>这个函数的重载<a href="qstring.html#localeAwareCompare" tppabs="http://pyqt4doc.appspot.com/qstring.html#localeAwareCompare">localeAwareCompare</a>（ ） 。</p>
+<p>比较此字符串与<i>other</i>字符串并返回比，等于大于零的整数更少，或更大，如果该字符串比小于，等于，或大于<i>other</i>字符串。</p>
+<p>比较是在一个语言环境，也依赖于平台的方式进行。使用此功能可呈现字符串排序的列表给用户。</p>
+<p>同<tt>localeAwareCompare(*this, other)</tt>。</p>
+<p>此功能被引入Qt的4.5 。</p>
+
+
+<h3 class="fn">
+<a name="localeAwareCompare-3"></a>int QString.localeAwareCompare (QString <i>s1</i>, QString <i>s2</i>)</h3>
+<p>这个函数的重载<a href="qstring.html#localeAwareCompare" tppabs="http://pyqt4doc.appspot.com/qstring.html#localeAwareCompare">localeAwareCompare</a>（ ） 。</p>
+<p>比较<i>s1</i>同<i>s2</i>并返回一个整数大于零小于，等于，或大于，如果<i>s1</i>小于，等于或大于<i>s2</i>。</p>
+<p>比较是在一个语言环境，也依赖于平台的方式进行。使用此功能可呈现字符串排序的列表给用户。</p>
+<p>此功能被引入Qt的4.5 。</p>
+
+
+<h3 class="fn">
+<a name="localeAwareCompare-4"></a>int QString.localeAwareCompare (QString <i>s1</i>, QStringRef <i>s2</i>)</h3>
+<p>这个函数的重载<a href="qstring.html#localeAwareCompare" tppabs="http://pyqt4doc.appspot.com/qstring.html#localeAwareCompare">localeAwareCompare</a>（ ） 。</p>
+<p>比较此字符串与<i>other</i>字符串并返回比，等于大于零的整数更少，或更大，如果该字符串比小于，等于，或大于<i>other</i>字符串。</p>
+<p>比较是在一个语言环境，也依赖于平台的方式进行。使用此功能可呈现字符串排序的列表给用户。</p>
+<p>同<tt>localeAwareCompare(*this, other)</tt>。</p>
+
+
+<h3 class="fn">
+<a name="mid"></a>QString QString.mid (<i>self</i>, int <i>position</i>, int <i>n</i> = -1)</h3>
+<p>返回包含一个字符串<i>n</i>这串字符，起始于指定<i>position</i>索引。</p>
+<p>返回一个空字符串，如果<i>position</i>索引超出了字符串的长度。如果有小于<i>n</i>从给定的字符串中的字符<i>position</i>，或者如果<i>n</i>为-1 （默认） ，该函数返回，可从指定的所有字符<i>position</i>。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> x <span class="operator">=</span> <span class="string">"Nine pineapples"</span>;
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> y <span class="operator">=</span> x<span class="operator">.</span>mid(<span class="number">5</span><span class="operator">,</span> <span class="number">4</span>);            <span class="comment">// y == "pine"</span>
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> z <span class="operator">=</span> x<span class="operator">.</span>mid(<span class="number">5</span>);               <span class="comment">// z == "pineapples"</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#left" tppabs="http://pyqt4doc.appspot.com/qstring.html#left">left</a>（）和<a href="qstring.html#right" tppabs="http://pyqt4doc.appspot.com/qstring.html#right">right</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="normalized"></a>QString QString.normalized (<i>self</i>, <a href="qstring.html#NormalizationForm-enum" tppabs="http://pyqt4doc.appspot.com/qstring.html#NormalizationForm-enum">NormalizationForm</a> <i>mode</i>)</h3>
+<p>返回字符串中给定的Unicode范式<i>mode</i>。</p>
+
+
+<h3 class="fn">
+<a name="normalized-2"></a>QString QString.normalized (<i>self</i>, <a href="qstring.html#NormalizationForm-enum" tppabs="http://pyqt4doc.appspot.com/qstring.html#NormalizationForm-enum">NormalizationForm</a> <i>mode</i>, <a href="qchar.html#UnicodeVersion-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#UnicodeVersion-enum">QChar.UnicodeVersion</a> <i>version</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>返回字符串中给定的Unicode范式<i>mode</i>，根据给定的<i>version</i>的Unicode标准。</p>
+
+
+<h3 class="fn">
+<a name="number"></a>QString QString.number (int <i>n</i>, int <i>base</i> = 10)</h3>
+<p>返回一个当量数的串<i>n</i>根据指定的<i>base</i>。</p>
+<p>该基地默认为10 ，并且必须在2到36之间。对于基础不是10 ，<i>n</i>被视为一个无符号整数。</p>
+<pre class="cpp">
+ <span class="type">long</span> a <span class="operator">=</span> <span class="number">63</span>;
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> s <span class="operator">=</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span><span class="operator">.</span>number(a<span class="operator">,</span> <span class="number">16</span>);             <span class="comment">// s == "3f"</span>
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> t <span class="operator">=</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span><span class="operator">.</span>number(a<span class="operator">,</span> <span class="number">16</span>)<span class="operator">.</span>toUpper();     <span class="comment">// t == "3F"</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#setNum" tppabs="http://pyqt4doc.appspot.com/qstring.html#setNum">setNum</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="number-2"></a>QString QString.number (float <i>n</i>, str <i>format</i> = 'g', int <i>precision</i> = 6)</h3>
+<p>返回一个当量数的串<i>n</i>，根据指定的格式<i>format</i>和<i>precision</i>。看<a href="qstring.html#argument-formats" tppabs="http://pyqt4doc.appspot.com/qstring.html#argument-formats">Argument Formats</a>了解详情。</p>
+<p>不像<a href="qlocale.html#toString" tppabs="http://pyqt4doc.appspot.com/qlocale.html#toString">QLocale.toString</a>（ ） ，这个函数不尊重用户的区域设置。</p>
+<p><b>See also</b> <a href="qstring.html#setNum" tppabs="http://pyqt4doc.appspot.com/qstring.html#setNum">setNum</a>（）和<a href="qlocale.html#toString" tppabs="http://pyqt4doc.appspot.com/qlocale.html#toString">QLocale.toString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="number-3"></a>QString QString.number (int <i>n</i>, int <i>base</i> = 10)</h3>
+<p>这是一个重载函数。</p>
+
+
+<h3 class="fn">
+<a name="number-4"></a>QString QString.number (int <i>n</i>, int <i>base</i> = 10)</h3>
+<p>这是一个重载函数。</p>
+
+
+<h3 class="fn">
+<a name="prepend"></a>QString QString.prepend (<i>self</i>, QString <i>s</i>)</h3>
+<p>预先考虑字符串<i>str</i>这个字符串的开头，并返回一个引用这个字符串。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> x <span class="operator">=</span> <span class="string">"ship"</span>;
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> y <span class="operator">=</span> <span class="string">"air"</span>;
+ x<span class="operator">.</span>prepend(y);
+ <span class="comment">// x == "airship"</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#append" tppabs="http://pyqt4doc.appspot.com/qstring.html#append">append</a>（）和<a href="qstring.html#insert" tppabs="http://pyqt4doc.appspot.com/qstring.html#insert">insert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="prepend-2"></a>QString QString.prepend (<i>self</i>, <a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a> <i>s</i>)</h3>
+<p>这个函数的重载<a href="qstring.html#prepend" tppabs="http://pyqt4doc.appspot.com/qstring.html#prepend">prepend</a>（ ） 。</p>
+<p>预先考虑Latin-1的字符串<i>str</i>这个字符串。</p>
+
+
+<h3 class="fn">
+<a name="prepend-3"></a>QString QString.prepend (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>s</i>)</h3>
+<p>这个函数的重载<a href="qstring.html#prepend" tppabs="http://pyqt4doc.appspot.com/qstring.html#prepend">prepend</a>（ ） 。</p>
+<p>预先考虑字节数组<i>ba</i>这个字符串。字节数组是使用转换为Unicode<a href="qstring.html#fromAscii" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromAscii">fromAscii</a>（）函数。</p>
+<p>您可以通过定义关闭此功能<tt>QT_NO_CAST_FROM_ASCII</tt>当您编译您的应用程序。如果你想确保所有用户可见的字符串经过这可能是有用的<a href="qobject.html#tr" tppabs="http://pyqt4doc.appspot.com/qobject.html#tr">QObject.tr</a>（） ，例如。</p>
+
+
+<h3 class="fn">
+<a name="push_back"></a>QString.push_back (<i>self</i>, QString <i>s</i>)</h3>
+<p>此功能提供了STL的兼容性，附加给定的<i>other</i>串到这个字符串的结尾。它相当于<tt>append(other)</tt>。</p>
+<p><b>See also</b> <a href="qstring.html#append" tppabs="http://pyqt4doc.appspot.com/qstring.html#append">append</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="push_front"></a>QString.push_front (<i>self</i>, QString <i>s</i>)</h3>
+<p>此功能提供了STL的兼容性，前面加上给定的<i>other</i>字符串此字符串的开头。它相当于<tt>prepend(other)</tt>。</p>
+<p><b>See also</b> <a href="qstring.html#prepend" tppabs="http://pyqt4doc.appspot.com/qstring.html#prepend">prepend</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="remove"></a>QString QString.remove (<i>self</i>, int <i>i</i>, int <i>len</i>)</h3>
+<p>移除<i>n</i>从字符串中的字符，开始于指定的<i>position</i>索引，并返回一个引用的字符串。</p>
+<p>如果指定的<i>position</i>索引是字符串中，但<i>position</i>+<i>n</i>超出了字符串的结尾，字符串被截断在指定<i>position</i>。</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> s <span class="operator">=</span> <span class="string">"Montreal"</span>;
+ s<span class="operator">.</span>remove(<span class="number">1</span><span class="operator">,</span> <span class="number">4</span>);
+ <span class="comment">// s == "Meal"</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#insert" tppabs="http://pyqt4doc.appspot.com/qstring.html#insert">insert</a>（）和<a href="qstring.html#replace" tppabs="http://pyqt4doc.appspot.com/qstring.html#replace">replace</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="remove-2"></a>QString QString.remove (<i>self</i>, QString <i>str</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<p>删除的字符每次出现<i>ch</i>在这个字符串，并返回一个引用这个字符串。</p>
+<p>If <i>cs</i> is <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitive</a>（默认） ，搜索是区分大小写的，否则搜索不区分大小写。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> t <span class="operator">=</span> <span class="string">"Ali Baba"</span>;
+ t<span class="operator">.</span>remove(<span class="type"><a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a></span>(<span class="char">'a'</span>)<span class="operator">,</span> <span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>CaseInsensitive);
+ <span class="comment">// t == "li Bb"</span>
+</pre>
+<p>这是相同的<tt>replace(ch, "", cs)</tt>。</p>
+<p><b>See also</b> <a href="qstring.html#replace" tppabs="http://pyqt4doc.appspot.com/qstring.html#replace">replace</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="remove-3"></a>QString QString.remove (<i>self</i>, <a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a> <i>rx</i>)</h3>
+<p>删除给定的每次出现<i>str</i>字符串在此字符串中，并返回一个指向该字符串。</p>
+<p>If <i>cs</i> is <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitive</a>（默认） ，搜索是区分大小写的，否则搜索不区分大小写。</p>
+<p>这是相同的<tt>replace(str, "", cs)</tt>。</p>
+<p><b>See also</b> <a href="qstring.html#replace" tppabs="http://pyqt4doc.appspot.com/qstring.html#replace">replace</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="repeated"></a>QString QString.repeated (<i>self</i>, int <i>times</i>)</h3>
+<p>返回此字符串的一个副本重复指定次数<i>times</i>。</p>
+<p>If <i>times</i>小于1 ，则返回一个空字符串。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str(<span class="string">"ab"</span>);
+ str<span class="operator">.</span>repeated(<span class="number">4</span>);            <span class="comment">// returns "abababab"</span>
+</pre>
+<p>此功能被引入Qt的4.5 。</p>
+
+
+<h3 class="fn">
+<a name="replace"></a>QString QString.replace (<i>self</i>, int <i>i</i>, int <i>len</i>, QString <i>after</i>)</h3>
+<p>替换<i>n</i>字符开头索引<i>position</i>与串<i>after</i>并返回一个引用这个字符串。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> x <span class="operator">=</span> <span class="string">"Say yes!"</span>;
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> y <span class="operator">=</span> <span class="string">"no"</span>;
+ x<span class="operator">.</span>replace(<span class="number">4</span><span class="operator">,</span> <span class="number">3</span><span class="operator">,</span> y);
+ <span class="comment">// x == "Say no!"</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#insert" tppabs="http://pyqt4doc.appspot.com/qstring.html#insert">insert</a>（）和<a href="qstring.html#remove" tppabs="http://pyqt4doc.appspot.com/qstring.html#remove">remove</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="replace-2"></a>QString QString.replace (<i>self</i>, QString <i>before</i>, QString <i>after</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<h3 class="fn">
+<a name="replace-3"></a>QString QString.replace (<i>self</i>, <a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a> <i>rx</i>, QString <i>after</i>)</h3>
+<h3 class="fn">
+<a name="replace-4"></a>QString QString.replace (<i>self</i>, <a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a> <i>before</i>, <a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a> <i>after</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<h3 class="fn">
+<a name="replace-5"></a>QString QString.replace (<i>self</i>, <a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a> <i>before</i>, QString <i>after</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<h3 class="fn">
+<a name="replace-6"></a>QString QString.replace (<i>self</i>, QString <i>before</i>, <a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a> <i>after</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<p>这个函数的重载<a href="qstring.html#replace" tppabs="http://pyqt4doc.appspot.com/qstring.html#replace">replace</a>（ ） 。</p>
+<p>替换<i>n</i>字符开头索引<i>position</i>与第一<i>size</i>的字符<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>排列<i>unicode</i>并返回一个引用这个字符串。</p>
+
+
+<h3 class="fn">
+<a name="reserve"></a>QString.reserve (<i>self</i>, int <i>asize</i>)</h3>
+<p>尝试分配内存，至少<i>size</i>字符。如果你事先知道该字符串将有多大的话，你可以调用这个函数，如果你调整字符串的时候你很可能会获得更好的性能。如果<i>size</i>是低估，会发生最坏的是，<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>会有点慢。</p>
+<p>此函数的唯一目的是提供微调的手段<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>的内存使用情况。一般情况下，你很少会需要调用这个函数。如果你想改变字符串的大小，请致电<a href="qstring.html#resize" tppabs="http://pyqt4doc.appspot.com/qstring.html#resize">resize</a>（ ） 。</p>
+<p>此功能对于需要建立一个长字符串，并希望避免反复重新分配代码很有用。在这个例子中，我们要添加到字符串，直到某个条件为真，而且我们相当肯定，尺寸够大，足以让值得调用储备（ ） ：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> result;
+ <span class="type">int</span> maxSize;
+ <span class="type">bool</span> condition;
+ <span class="type"><a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a></span> nextChar;
+
+ result<span class="operator">.</span>reserve(maxSize);
+
+ <span class="keyword">while</span> (condition)
+     result<span class="operator">.</span>append(nextChar);
+
+ result<span class="operator">.</span>squeeze();
+</pre>
+<p><b>See also</b> <a href="qstring.html#squeeze" tppabs="http://pyqt4doc.appspot.com/qstring.html#squeeze">squeeze</a>（）和<a href="qstring.html#capacity" tppabs="http://pyqt4doc.appspot.com/qstring.html#capacity">capacity</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="resize"></a>QString.resize (<i>self</i>, int <i>size</i>)</h3>
+<p>设置字符串的大小，以<i>size</i>字符。</p>
+<p>If <i>size</i>大于该电流的大小，则该字符串被扩展以使其<i>size</i>字符长着多馀的字符添加到末尾。新的字符是未初始化的。</p>
+<p>If <i>size</i>小于该电流的大小，字符被从端部除去。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> s <span class="operator">=</span> <span class="string">"Hello world"</span>;
+ s<span class="operator">.</span>resize(<span class="number">5</span>);
+ <span class="comment">// s == "Hello"</span>
+
+ s<span class="operator">.</span>resize(<span class="number">8</span>);
+ <span class="comment">// s == "Hello???" (where ? stands for any character)</span>
+</pre>
+<p>如果你要追加一定数量的相同字符的字符串，请使用<a href="qstring.html#operator-2b-eq" tppabs="http://pyqt4doc.appspot.com/qstring.html#operator-2b-eq">operator+=</a>（）如下而非调整大小（）：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> t <span class="operator">=</span> <span class="string">"Hello"</span>;
+ t <span class="operator">+</span><span class="operator">=</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>(<span class="number">10</span><span class="operator">,</span> <span class="char">'X'</span>);
+ <span class="comment">// t == "HelloXXXXXXXXXX"</span>
+</pre>
+<p>如果你想使之达到一定的宽度扩大字符串，并填写与特定字符的新阵地，用<a href="qstring.html#leftJustified" tppabs="http://pyqt4doc.appspot.com/qstring.html#leftJustified">leftJustified</a>（ ）函数：</p>
+<p>If <i>size</i>为负时，它相当于通过零。</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> r <span class="operator">=</span> <span class="string">"Hello"</span>;
+ r <span class="operator">=</span> r<span class="operator">.</span>leftJustified(<span class="number">10</span><span class="operator">,</span> <span class="char">' '</span>);
+ <span class="comment">// r == "Hello     "</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#truncate" tppabs="http://pyqt4doc.appspot.com/qstring.html#truncate">truncate</a>（）和<a href="qstring.html#reserve" tppabs="http://pyqt4doc.appspot.com/qstring.html#reserve">reserve</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="right"></a>QString QString.right (<i>self</i>, int <i>len</i>)</h3>
+<p>返回包含一个子串的<i>n</i>字符串的最右边的字符。</p>
+<p>如果整个字符串被返回<i>n</i>大于<a href="qstring.html#size" tppabs="http://pyqt4doc.appspot.com/qstring.html#size">size</a>（）或小于零。</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> x <span class="operator">=</span> <span class="string">"Pineapple"</span>;
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> y <span class="operator">=</span> x<span class="operator">.</span>right(<span class="number">5</span>);      <span class="comment">// y == "apple"</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#left" tppabs="http://pyqt4doc.appspot.com/qstring.html#left">left</a>（ ）<a href="qstring.html#mid" tppabs="http://pyqt4doc.appspot.com/qstring.html#mid">mid</a>（）和<a href="qstring.html#endsWith" tppabs="http://pyqt4doc.appspot.com/qstring.html#endsWith">endsWith</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rightJustified"></a>QString QString.rightJustified (<i>self</i>, int <i>width</i>, QChar <i>fillChar</i> = QLatin1Char(' '), bool <i>truncate</i> = False)</h3>
+<p>返回的字符串<a href="qstring.html#size" tppabs="http://pyqt4doc.appspot.com/qstring.html#size">size</a>（ ）<i>width</i>包含<i>fill</i>字符后面的字符串。例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> s <span class="operator">=</span> <span class="string">"apple"</span>;
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> t <span class="operator">=</span> s<span class="operator">.</span>rightJustified(<span class="number">8</span><span class="operator">,</span> <span class="char">'.'</span>);    <span class="comment">// t == "...apple"</span>
+</pre>
+<p>If <i>truncate</i>是假的而<a href="qstring.html#size" tppabs="http://pyqt4doc.appspot.com/qstring.html#size">size</a>字符串（ ）大于<i>width</i>，那么返回的字符串是字符串的一个副本。</p>
+<p>If <i>truncate</i>是真实的<a href="qstring.html#size" tppabs="http://pyqt4doc.appspot.com/qstring.html#size">size</a>字符串（ ）大于<i>width</i>，然后将得到的字符串被截断位置<i>width</i>。</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"Pineapple"</span>;
+ str <span class="operator">=</span> str<span class="operator">.</span>rightJustified(<span class="number">5</span><span class="operator">,</span> <span class="char">'.'</span><span class="operator">,</span> <span class="keyword">true</span>);    <span class="comment">// str == "Pinea"</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#leftJustified" tppabs="http://pyqt4doc.appspot.com/qstring.html#leftJustified">leftJustified</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="section"></a>QString QString.section (<i>self</i>, QString <i>sep</i>, int <i>start</i>, int <i>end</i> = -1, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qstring-sectionflags.html">SectionFlags</a> <i>flags</i> = QString.SectionDefault)</h3>
+<p>该函数返回字符串的一部分。</p>
+<p>这个字符串被视为由字符分隔的字段的顺序，<i>sep</i>。返回的字符串包含从位置字段<i>start</i>到位置<i>end</i>包容性。如果<i>end</i>没有被指定，所有从位置字段<i>start</i>到字符串的末尾都包括在内。字段被编号为0 ，1，2 ，等等，从左边算起，并从右至左-1，-2等，计数。</p>
+<p>该<i>flags</i>参数可以被用来影响功能的行为的某些方面，例如是否区分大小写，是否跳过空字段，以及如何处理与开头和结尾的分隔符，见<a href="qstring.html#SectionFlag-enum" tppabs="http://pyqt4doc.appspot.com/qstring.html#SectionFlag-enum">SectionFlags</a>。</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str;
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> csv <span class="operator">=</span> <span class="string">"forename,middlename,surname,phone"</span>;
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> path <span class="operator">=</span> <span class="string">"/usr/local/bin/myapp"</span>; <span class="comment">// First field is empty</span>
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span><span class="operator">.</span>SectionFlag flag <span class="operator">=</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span><span class="operator">.</span>SectionSkipEmpty;
+
+ str <span class="operator">=</span> csv<span class="operator">.</span>section(<span class="char">','</span><span class="operator">,</span> <span class="number">2</span><span class="operator">,</span> <span class="number">2</span>);   <span class="comment">// str == "surname"</span>
+ str <span class="operator">=</span> path<span class="operator">.</span>section(<span class="char">'/'</span><span class="operator">,</span> <span class="number">3</span><span class="operator">,</span> <span class="number">4</span>);  <span class="comment">// str == "bin/myapp"</span>
+ str <span class="operator">=</span> path<span class="operator">.</span>section(<span class="char">'/'</span><span class="operator">,</span> <span class="number">3</span><span class="operator">,</span> <span class="number">3</span><span class="operator">,</span> flag); <span class="comment">// str == "myapp"</span>
+</pre>
+<p>If <i>start</i> or <i>end</i>是负的，我们指望从字符串的右边，最右边的字段为-1 ，从最右边的字段为-2之一，等等领域。</p>
+<pre class="cpp">
+ str <span class="operator">=</span> csv<span class="operator">.</span>section(<span class="char">','</span><span class="operator">,</span> <span class="operator">-</span><span class="number">3</span><span class="operator">,</span> <span class="operator">-</span><span class="number">2</span>);  <span class="comment">// str == "middlename,surname"</span>
+ str <span class="operator">=</span> path<span class="operator">.</span>section(<span class="char">'/'</span><span class="operator">,</span> <span class="operator">-</span><span class="number">1</span>); <span class="comment">// str == "myapp"</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#split" tppabs="http://pyqt4doc.appspot.com/qstring.html#split">split</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="section-2"></a>QString QString.section (<i>self</i>, <a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a> <i>reg</i>, int <i>start</i>, int <i>end</i> = -1, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qstring-sectionflags.html">SectionFlags</a> <i>flags</i> = QString.SectionDefault)</h3>
+<p>这个函数的重载<a href="qstring.html#section" tppabs="http://pyqt4doc.appspot.com/qstring.html#section">section</a>（ ） 。</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str;
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> data <span class="operator">=</span> <span class="string">"forename**middlename**surname**phone"</span>;
+
+ str <span class="operator">=</span> data<span class="operator">.</span>section(<span class="string">"**"</span><span class="operator">,</span> <span class="number">2</span><span class="operator">,</span> <span class="number">2</span>); <span class="comment">// str == "surname"</span>
+ str <span class="operator">=</span> data<span class="operator">.</span>section(<span class="string">"**"</span><span class="operator">,</span> <span class="operator">-</span><span class="number">3</span><span class="operator">,</span> <span class="operator">-</span><span class="number">2</span>); <span class="comment">// str == "middlename**surname"</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#split" tppabs="http://pyqt4doc.appspot.com/qstring.html#split">split</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setNum"></a>QString QString.setNum (<i>self</i>, int <i>n</i>, int <i>base</i> = 10)</h3>
+<p>字符串设置为印刷价值<i>n</i>在指定的<i>base</i>，并返回一个引用的字符串。</p>
+<p>该基地默认为10 ，并且必须在2到36之间。对于基础不是10 ，<i>n</i>被视为一个无符号整数。</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str;
+ str<span class="operator">.</span>setNum(<span class="number">1234</span>);       <span class="comment">// str == "1234"</span>
+</pre>
+<p>格式化始终使用<a href="qlocale.html#Language-enum" tppabs="http://pyqt4doc.appspot.com/qlocale.html#Language-enum">QLocale.C</a>，即英语/ UnitedStates的。为了得到一些本地化的字符串表示形式，使用<a href="qlocale.html#toString" tppabs="http://pyqt4doc.appspot.com/qlocale.html#toString">QLocale.toString</a>（ ）用适当的语言环境。</p>
+
+
+<h3 class="fn">
+<a name="setNum-2"></a>QString QString.setNum (<i>self</i>, float <i>n</i>, str <i>format</i> = 'g', int <i>precision</i> = 6)</h3>
+<p>这是一个重载函数。</p>
+
+
+<h3 class="fn">
+<a name="setNum-3"></a>QString QString.setNum (<i>self</i>, int <i>n</i>, int <i>base</i> = 10)</h3>
+<p>这是一个重载函数。</p>
+
+
+<h3 class="fn">
+<a name="setNum-4"></a>QString QString.setNum (<i>self</i>, int <i>n</i>, int <i>base</i> = 10)</h3>
+<p>这是一个重载函数。</p>
+
+
+<h3 class="fn">
+<a name="simplified"></a>QString QString.simplified (<i>self</i>)</h3>
+<p>返回已经从空白开始和结束时去除，并具有内部的空格用一个空格代替每个序列的字符串。</p>
+<p>空白是指任何字符的<a href="qchar.html#isSpace" tppabs="http://pyqt4doc.appspot.com/qchar.html#isSpace">QChar.isSpace</a>（ ）返回True 。这包括ASCII字符'\ T' ，为'\ n '，' \ V' ， '\ F' ， ' \ r '和' “ 。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"  lots\t of\nwhitespace\r\n "</span>;
+ str <span class="operator">=</span> str<span class="operator">.</span>simplified();
+ <span class="comment">// str == "lots of whitespace";</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#trimmed" tppabs="http://pyqt4doc.appspot.com/qstring.html#trimmed">trimmed</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="size"></a>int QString.size (<i>self</i>)</h3>
+<p>返回此字符串中的字符数。</p>
+<p>字符串中的最后一个字符的位置是大小（ ） - 1 。另外，<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>确保字符位置的大小（ ）总是'\ 0' ，这样就可以使用的返回值<a href="qstring.html#data" tppabs="http://pyqt4doc.appspot.com/qstring.html#data">data</a>（）和<a href="qstring.html#constData" tppabs="http://pyqt4doc.appspot.com/qstring.html#constData">constData</a>（）作为参数传递给该期待'\ 0'结尾的字符串函数。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"World"</span>;
+ <span class="type">int</span> n <span class="operator">=</span> str<span class="operator">.</span>size();         <span class="comment">// n == 5</span>
+ str<span class="operator">.</span>data()<span class="operator">[</span><span class="number">0</span><span class="operator">]</span>;              <span class="comment">// returns 'W'</span>
+ str<span class="operator">.</span>data()<span class="operator">[</span><span class="number">4</span><span class="operator">]</span>;              <span class="comment">// returns 'd'</span>
+ str<span class="operator">.</span>data()<span class="operator">[</span><span class="number">5</span><span class="operator">]</span>;              <span class="comment">// returns '\0'</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qstring.html#isEmpty">isEmpty</a>（）和<a href="qstring.html#resize" tppabs="http://pyqt4doc.appspot.com/qstring.html#resize">resize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="split"></a>QStringList QString.split (<i>self</i>, QString <i>sep</i>, <a href="qstring.html#SplitBehavior-enum" tppabs="http://pyqt4doc.appspot.com/qstring.html#SplitBehavior-enum">SplitBehavior</a> <i>behavior</i> = QString.KeepEmptyParts, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<p>拆分字符串成子的地方<i>sep</i>发生，并返回这些字符串列表。如果<i>sep</i>不匹配的字符串中的任何位置，分割（ ）返回一个包含此字符串的单元素列表。</p>
+<p><i>cs</i>指定是否<i>sep</i>应不区分大小写匹配的情况下，敏感或情况。</p>
+<p>If <i>behavior</i> is <a href="qstring.html#SplitBehavior-enum" tppabs="http://pyqt4doc.appspot.com/qstring.html#SplitBehavior-enum">QString.SkipEmptyParts</a>，空项不会出现在结果中。默认情况下，空项目保留。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"a,,b,c"</span>;
+
+ <span class="type"><a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a></span> list1 <span class="operator">=</span> str<span class="operator">.</span>split(<span class="string">","</span>);
+ <span class="comment">// list1: [ "a", "", "b", "c" ]</span>
+
+ <span class="type"><a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a></span> list2 <span class="operator">=</span> str<span class="operator">.</span>split(<span class="string">","</span><span class="operator">,</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span><span class="operator">.</span>SkipEmptyParts);
+ <span class="comment">// list2: [ "a", "b", "c" ]</span>
+</pre>
+<p><b>See also</b> <a href="qstringlist.html#join" tppabs="http://pyqt4doc.appspot.com/qstringlist.html#join">QStringList.join</a>（）和<a href="qstring.html#section" tppabs="http://pyqt4doc.appspot.com/qstring.html#section">section</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="split-2"></a>QStringList QString.split (<i>self</i>, <a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a> <i>sep</i>, <a href="qstring.html#SplitBehavior-enum" tppabs="http://pyqt4doc.appspot.com/qstring.html#SplitBehavior-enum">SplitBehavior</a> <i>behavior</i> = QString.KeepEmptyParts)</h3>
+<p>这是一个重载函数。</p>
+
+
+<h3 class="fn">
+<a name="squeeze"></a>QString.squeeze (<i>self</i>)</h3>
+<p>释放所有的内存并不需要存储的字符数据。</p>
+<p>此函数的唯一目的是提供微调的手段<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>的内存使用情况。一般情况下，你很少会需要调用这个函数。</p>
+<p><b>See also</b> <a href="qstring.html#reserve" tppabs="http://pyqt4doc.appspot.com/qstring.html#reserve">reserve</a>() and
+<a href="qstring.html#capacity" tppabs="http://pyqt4doc.appspot.com/qstring.html#capacity">capacity</a>().</p>
+
+
+<h3 class="fn">
+<a name="startsWith"></a>bool QString.startsWith (<i>self</i>, QString <i>s</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<p>如果在字符串开头，则返回True<i>s</i>否则返回False 。</p>
+<p>If <i>cs</i> is <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitive</a>（默认） ，搜索是区分大小写的，否则搜索不区分大小写。</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"Bananas"</span>;
+ str<span class="operator">.</span>startsWith(<span class="string">"Ban"</span>);     <span class="comment">// returns true</span>
+ str<span class="operator">.</span>startsWith(<span class="string">"Car"</span>);     <span class="comment">// returns false</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#endsWith" tppabs="http://pyqt4doc.appspot.com/qstring.html#endsWith">endsWith</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="startsWith-2"></a>bool QString.startsWith (<i>self</i>, QStringRef <i>s</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<h3 class="fn">
+<a name="startsWith-3"></a>bool QString.startsWith (<i>self</i>, <a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a> <i>s</i>, <a href="qt.html#CaseSensitivity-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CaseSensitivity-enum">Qt.CaseSensitivity</a> <i>cs</i> = Qt.CaseSensitive)</h3>
+<p>这个函数的重载<a href="qstring.html#startsWith" tppabs="http://pyqt4doc.appspot.com/qstring.html#startsWith">startsWith</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="swap"></a>QString.swap (<i>self</i>, QString <i>other</i>)</h3>
+<p>掉期的字符串<i>other</i>与此字符串。这个操作是非常快的，而且永远不会。</p>
+<p>此功能被引入Qt的4.8 。</p>
+
+
+<h3 class="fn">
+<a name="toAscii"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QString.toAscii (<i>self</i>)</h3>
+<p>返回字符串的8位表示为<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>。</p>
+<p>如果一个编解码器已使用设置<a href="qtextcodec.html#setCodecForCStrings" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#setCodecForCStrings">QTextCodec.setCodecForCStrings</a>（ ） ，它是用来为Unicode转换为8位字符，否则这个函数一样<a href="qstring.html#toLatin1" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLatin1">toLatin1</a>（ ） 。</p>
+<p>需要注意的是，尽管这个名字，这个功能并不一定返回一个US-ASCII （ ANSI X3.4 - 1986）的字符串，其结果可能不是US-ASCII兼容。</p>
+<p><b>See also</b> <a href="qstring.html#fromAscii" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromAscii">fromAscii</a>（ ）<a href="qstring.html#toLatin1" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLatin1">toLatin1</a>（ ）<a href="qstring.html#toUtf8" tppabs="http://pyqt4doc.appspot.com/qstring.html#toUtf8">toUtf8</a>（ ）<a href="qstring.html#toLocal8Bit" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLocal8Bit">toLocal8Bit</a>（）和<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>。</p>
+
+
+<h3 class="fn">
+<a name="toCaseFolded"></a>QString QString.toCaseFolded (<i>self</i>)</h3>
+<p>返回的情况下折叠的字符串相同。对于大多数的Unicode字符，这是相同的<a href="qstring.html#toLower" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLower">toLower</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toDouble"></a>(float, bool <i>ok</i>) QString.toDouble (<i>self</i>)</h3>
+<p>返回字符串转换为<tt>double</tt>值。</p>
+<p>如果转换失败，则返回0.0 。</p>
+<p>如果发生转换错误，<tt>*</tt><i>ok</i>设置为False ，否则<tt>*</tt><i>ok</i>设置为True 。</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"1234.56"</span>;
+ <span class="type">double</span> val <span class="operator">=</span> str<span class="operator">.</span>toDouble();   <span class="comment">// val == 1234.56</span>
+</pre>
+<p>各种字符串格式的浮点数可以转换为double值：</p>
+<pre class="cpp">
+ <span class="type">bool</span> ok;
+ <span class="type">double</span> d;
+
+ d <span class="operator">=</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>( <span class="string">"1234.56e-02"</span> )<span class="operator">.</span>toDouble(<span class="operator">&amp;</span>ok); <span class="comment">// ok == true, d == 12.3456</span>
+</pre>
+<p>该函数试图根据当前的语言环境来解释的字符串。当前区域设置从系统中应用程序启动时确定，可以通过调用改变<a href="qlocale.html#setDefault" tppabs="http://pyqt4doc.appspot.com/qlocale.html#setDefault">QLocale.setDefault</a>（ ） 。如果字符串不能根据当前的locale解释，该功能将在“ C”语言环境。</p>
+<pre class="cpp">
+ <span class="type"><a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a></span><span class="operator">.</span>setDefault(<span class="type"><a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a></span><span class="operator">.</span>C);
+ d <span class="operator">=</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>( <span class="string">"1234,56"</span> )<span class="operator">.</span>toDouble(<span class="operator">&amp;</span>ok); <span class="comment">// ok == false</span>
+ d <span class="operator">=</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>( <span class="string">"1234.56"</span> )<span class="operator">.</span>toDouble(<span class="operator">&amp;</span>ok); <span class="comment">// ok == true, d == 1234.56</span>
+
+ <span class="type"><a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a></span><span class="operator">.</span>setDefault(<span class="type"><a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a></span><span class="operator">.</span>German);
+ d <span class="operator">=</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>( <span class="string">"1234,56"</span> )<span class="operator">.</span>toDouble(<span class="operator">&amp;</span>ok); <span class="comment">// ok == true, d == 1234.56</span>
+ d <span class="operator">=</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>( <span class="string">"1234.56"</span> )<span class="operator">.</span>toDouble(<span class="operator">&amp;</span>ok); <span class="comment">// ok == true, d == 1234.56</span>
+</pre>
+<p>由于不同的地区小数点还有数千组分隔界限的模糊，这个函数不处理数千组分隔符。如果你需要转换这些号码，请参阅<a href="qlocale.html#toDouble" tppabs="http://pyqt4doc.appspot.com/qlocale.html#toDouble">QLocale.toDouble</a>（ ） 。</p>
+<pre class="cpp">
+ <span class="type"><a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a></span><span class="operator">.</span>setDefault(<span class="type"><a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a></span><span class="operator">.</span>C);
+ d <span class="operator">=</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span>( <span class="string">"1234,56"</span> )<span class="operator">.</span>toDouble(<span class="operator">&amp;</span>ok); <span class="comment">// ok == false</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#number" tppabs="http://pyqt4doc.appspot.com/qstring.html#number">number</a>（ ）<a href="qlocale.html#setDefault" tppabs="http://pyqt4doc.appspot.com/qlocale.html#setDefault">QLocale.setDefault</a>（ ）<a href="qlocale.html#toDouble" tppabs="http://pyqt4doc.appspot.com/qlocale.html#toDouble">QLocale.toDouble</a>（）和<a href="qstring.html#trimmed" tppabs="http://pyqt4doc.appspot.com/qstring.html#trimmed">trimmed</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toFloat"></a>(float, bool <i>ok</i>) QString.toFloat (<i>self</i>)</h3>
+<p>返回字符串转换为<tt>float</tt>值。</p>
+<p>如果发生转换错误， *<i>ok</i>设置为False ，否则*<i>ok</i>设置为True 。如果转换失败，则返回0.0 。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str1 <span class="operator">=</span> <span class="string">"1234.56"</span>;
+ str1<span class="operator">.</span>toFloat();             <span class="comment">// returns 1234.56</span>
+
+ <span class="type">bool</span> ok;
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str2 <span class="operator">=</span> <span class="string">"R2D2"</span>;
+ str2<span class="operator">.</span>toFloat(<span class="operator">&amp;</span>ok);          <span class="comment">// returns 0.0, sets ok to false</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#number" tppabs="http://pyqt4doc.appspot.com/qstring.html#number">number</a>（ ）<a href="qstring.html#toDouble" tppabs="http://pyqt4doc.appspot.com/qstring.html#toDouble">toDouble</a>（）和<a href="qstring.html#toInt" tppabs="http://pyqt4doc.appspot.com/qstring.html#toInt">toInt</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toInt"></a>(int, bool <i>ok</i>) QString.toInt (<i>self</i>, int <i>base</i> = 10)</h3>
+<p>返回字符串转换为<tt>int</tt>使用基<i>base</i>，它默认为10 ，并且必须是2和36 ，或0之间。返回0，如果转换失败。</p>
+<p>如果发生转换错误， *<i>ok</i>设置为False ，否则*<i>ok</i>设置为True 。</p>
+<p>If <i>base</i>为0时， C语言惯例是使用：如果字符串开头的“0x ” ，基部16被使用;如果字符串以“ 0”时，基部8被使用，否则底座10被使用。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"FF"</span>;
+ <span class="type">bool</span> ok;
+ <span class="type">int</span> hex <span class="operator">=</span> str<span class="operator">.</span>toInt(<span class="operator">&amp;</span>ok<span class="operator">,</span> <span class="number">16</span>);       <span class="comment">// hex == 255, ok == true</span>
+ <span class="type">int</span> dec <span class="operator">=</span> str<span class="operator">.</span>toInt(<span class="operator">&amp;</span>ok<span class="operator">,</span> <span class="number">10</span>);       <span class="comment">// dec == 0, ok == false</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#number" tppabs="http://pyqt4doc.appspot.com/qstring.html#number">number</a>（ ）<a href="qstring.html#toUInt" tppabs="http://pyqt4doc.appspot.com/qstring.html#toUInt">toUInt</a>（）和<a href="qstring.html#toDouble" tppabs="http://pyqt4doc.appspot.com/qstring.html#toDouble">toDouble</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toLatin1"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QString.toLatin1 (<i>self</i>)</h3>
+<p>返回字符串的的Latin-1表示为<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>。</p>
+<p>返回的字节数组是不确定的，如果字符串包含非拉丁文字符。这些字符可以被抑制或问号代替。</p>
+<p><b>See also</b> <a href="qstring.html#fromLatin1" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromLatin1">fromLatin1</a>（ ）<a href="qstring.html#toAscii" tppabs="http://pyqt4doc.appspot.com/qstring.html#toAscii">toAscii</a>（ ）<a href="qstring.html#toUtf8" tppabs="http://pyqt4doc.appspot.com/qstring.html#toUtf8">toUtf8</a>（ ）<a href="qstring.html#toLocal8Bit" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLocal8Bit">toLocal8Bit</a>（）和<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>。</p>
+
+
+<h3 class="fn">
+<a name="toLocal8Bit"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QString.toLocal8Bit (<i>self</i>)</h3>
+<p>返回字符串作为当地8位表示<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>。返回的字节数组是不确定的，如果该字符串包含不支持的本地8位编码的字符。</p>
+<p><a href="qtextcodec.html#codecForLocale" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForLocale">QTextCodec.codecForLocale</a>（ ）是用来从Unicode执行转换。如果本地编码不能确定，这个函数一样<a href="qstring.html#toLatin1" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLatin1">toLatin1</a>（ ） 。</p>
+<p>如果这个字符串包含不能在语言环境进行编码的任何字符，返回的字节数组是不确定的。这些字符可以由另一被抑制或更换。</p>
+<p><b>See also</b> <a href="qstring.html#fromLocal8Bit" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromLocal8Bit">fromLocal8Bit</a>（ ）<a href="qstring.html#toAscii" tppabs="http://pyqt4doc.appspot.com/qstring.html#toAscii">toAscii</a>（ ）<a href="qstring.html#toLatin1" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLatin1">toLatin1</a>（ ）<a href="qstring.html#toUtf8" tppabs="http://pyqt4doc.appspot.com/qstring.html#toUtf8">toUtf8</a>（）和<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>。</p>
+
+
+<h3 class="fn">
+<a name="toLong"></a>(int, bool <i>ok</i>) QString.toLong (<i>self</i>, int <i>base</i> = 10)</h3>
+<p>返回字符串转换为<tt>long</tt>使用基<i>base</i>，它默认为10 ，并且必须是2和36 ，或0之间。返回0，如果转换失败。</p>
+<p>如果发生转换错误， *<i>ok</i>设置为False ，否则*<i>ok</i>设置为True 。</p>
+<p>If <i>base</i>为0时， C语言惯例是使用：如果字符串开头的“0x ” ，基部16被使用;如果字符串以“ 0”时，基部8被使用，否则底座10被使用。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"FF"</span>;
+ <span class="type">bool</span> ok;
+
+ <span class="type">long</span> hex <span class="operator">=</span> str<span class="operator">.</span>toLong(<span class="operator">&amp;</span>ok<span class="operator">,</span> <span class="number">16</span>);     <span class="comment">// hex == 255, ok == true</span>
+ <span class="type">long</span> dec <span class="operator">=</span> str<span class="operator">.</span>toLong(<span class="operator">&amp;</span>ok<span class="operator">,</span> <span class="number">10</span>);     <span class="comment">// dec == 0, ok == false</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#number" tppabs="http://pyqt4doc.appspot.com/qstring.html#number">number</a>（ ）<a href="qstring.html#toULong" tppabs="http://pyqt4doc.appspot.com/qstring.html#toULong">toULong</a>（）和<a href="qstring.html#toInt" tppabs="http://pyqt4doc.appspot.com/qstring.html#toInt">toInt</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toLongLong"></a>(int, bool <i>ok</i>) QString.toLongLong (<i>self</i>, int <i>base</i> = 10)</h3>
+<p>返回字符串转换为<tt>long long</tt>使用基<i>base</i>，它默认为10 ，并且必须是2和36 ，或0之间。返回0，如果转换失败。</p>
+<p>如果发生转换错误， *<i>ok</i>设置为False ，否则*<i>ok</i>设置为True 。</p>
+<p>If <i>base</i>为0时， C语言惯例是使用：如果字符串开头的“0x ” ，基部16被使用;如果字符串以“ 0”时，基部8被使用，否则底座10被使用。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"FF"</span>;
+ <span class="type">bool</span> ok;
+
+ <span class="type"><a href="index.htm#qint64-typedef" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qint64-typedef">long</a></span> hex <span class="operator">=</span> str<span class="operator">.</span>toLongLong(<span class="operator">&amp;</span>ok<span class="operator">,</span> <span class="number">16</span>);      <span class="comment">// hex == 255, ok == true</span>
+ <span class="type"><a href="index.htm#qint64-typedef" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qint64-typedef">long</a></span> dec <span class="operator">=</span> str<span class="operator">.</span>toLongLong(<span class="operator">&amp;</span>ok<span class="operator">,</span> <span class="number">10</span>);      <span class="comment">// dec == 0, ok == false</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#number" tppabs="http://pyqt4doc.appspot.com/qstring.html#number">number</a>（ ）<a href="qstring.html#toULongLong" tppabs="http://pyqt4doc.appspot.com/qstring.html#toULongLong">toULongLong</a>（）和<a href="qstring.html#toInt" tppabs="http://pyqt4doc.appspot.com/qstring.html#toInt">toInt</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toLower"></a>QString QString.toLower (<i>self</i>)</h3>
+<p>返回字符串的小写形式的副本。</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"Qt by NOKIA"</span>;
+ str <span class="operator">=</span> str<span class="operator">.</span>toLower();        <span class="comment">// str == "qt by nokia"</span>
+</pre>
+<p>的情况下转换将总是发生在“C”语言环境。对于依赖于语言环境的情况下使用的折叠<a href="qlocale.html#toLower" tppabs="http://pyqt4doc.appspot.com/qlocale.html#toLower">QLocale.toLower</a>（ ）</p>
+<p><b>See also</b> <a href="qstring.html#toUpper" tppabs="http://pyqt4doc.appspot.com/qstring.html#toUpper">toUpper</a>（）和<a href="qlocale.html#toLower" tppabs="http://pyqt4doc.appspot.com/qlocale.html#toLower">QLocale.toLower</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toShort"></a>(int, bool <i>ok</i>) QString.toShort (<i>self</i>, int <i>base</i> = 10)</h3>
+<p>返回字符串转换为<tt>short</tt>使用基<i>base</i>，它默认为10 ，并且必须是2和36 ，或0之间。返回0，如果转换失败。</p>
+<p>如果发生转换错误， *<i>ok</i>设置为False ，否则*<i>ok</i>设置为True 。</p>
+<p>If <i>base</i>为0时， C语言惯例是使用：如果字符串开头的“0x ” ，基部16被使用;如果字符串以“ 0”时，基部8被使用，否则底座10被使用。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"FF"</span>;
+ <span class="type">bool</span> ok;
+
+ <span class="type">short</span> hex <span class="operator">=</span> str<span class="operator">.</span>toShort(<span class="operator">&amp;</span>ok<span class="operator">,</span> <span class="number">16</span>);   <span class="comment">// hex == 255, ok == true</span>
+ <span class="type">short</span> dec <span class="operator">=</span> str<span class="operator">.</span>toShort(<span class="operator">&amp;</span>ok<span class="operator">,</span> <span class="number">10</span>);   <span class="comment">// dec == 0, ok == false</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#number" tppabs="http://pyqt4doc.appspot.com/qstring.html#number">number</a>（ ）<a href="qstring.html#toUShort" tppabs="http://pyqt4doc.appspot.com/qstring.html#toUShort">toUShort</a>（）和<a href="qstring.html#toInt" tppabs="http://pyqt4doc.appspot.com/qstring.html#toInt">toInt</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toUInt"></a>(int, bool <i>ok</i>) QString.toUInt (<i>self</i>, int <i>base</i> = 10)</h3>
+<p>返回字符串转换为<tt>unsigned int</tt>使用基<i>base</i>，它默认为10 ，并且必须是2和36 ，或0之间。返回0，如果转换失败。</p>
+<p>如果发生转换错误， *<i>ok</i>设置为False ，否则*<i>ok</i>设置为True 。</p>
+<p>If <i>base</i>为0时， C语言惯例是使用：如果字符串开头的“0x ” ，基部16被使用;如果字符串以“ 0”时，基部8被使用，否则底座10被使用。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"FF"</span>;
+ <span class="type">bool</span> ok;
+
+ <span class="type"><a href="index.htm#uint-typedef" tppabs="http://pyqt4doc.appspot.com/qtcore.html#uint-typedef">uint</a></span> hex <span class="operator">=</span> str<span class="operator">.</span>toUInt(<span class="operator">&amp;</span>ok<span class="operator">,</span> <span class="number">16</span>);     <span class="comment">// hex == 255, ok == true</span>
+ <span class="type"><a href="index.htm#uint-typedef" tppabs="http://pyqt4doc.appspot.com/qtcore.html#uint-typedef">uint</a></span> dec <span class="operator">=</span> str<span class="operator">.</span>toUInt(<span class="operator">&amp;</span>ok<span class="operator">,</span> <span class="number">10</span>);     <span class="comment">// dec == 0, ok == false</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#number" tppabs="http://pyqt4doc.appspot.com/qstring.html#number">number</a>（）和<a href="qstring.html#toInt" tppabs="http://pyqt4doc.appspot.com/qstring.html#toInt">toInt</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toULong"></a>(int, bool <i>ok</i>) QString.toULong (<i>self</i>, int <i>base</i> = 10)</h3>
+<p>返回字符串转换为<tt>unsigned long</tt>使用基<i>base</i>，它默认为10 ，并且必须是2和36 ，或0之间。返回0，如果转换失败。</p>
+<p>如果发生转换错误， *<i>ok</i>设置为False ，否则*<i>ok</i>设置为True 。</p>
+<p>If <i>base</i>为0时， C语言惯例是使用：如果字符串开头的“0x ” ，基部16被使用;如果字符串以“ 0”时，基部8被使用，否则底座10被使用。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"FF"</span>;
+ <span class="type">bool</span> ok;
+
+ <span class="type"><a href="index.htm#ulong-typedef" tppabs="http://pyqt4doc.appspot.com/qtcore.html#ulong-typedef">ulong</a></span> hex <span class="operator">=</span> str<span class="operator">.</span>toULong(<span class="operator">&amp;</span>ok<span class="operator">,</span> <span class="number">16</span>);   <span class="comment">// hex == 255, ok == true</span>
+ <span class="type"><a href="index.htm#ulong-typedef" tppabs="http://pyqt4doc.appspot.com/qtcore.html#ulong-typedef">ulong</a></span> dec <span class="operator">=</span> str<span class="operator">.</span>toULong(<span class="operator">&amp;</span>ok<span class="operator">,</span> <span class="number">10</span>);   <span class="comment">// dec == 0, ok == false</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#number" tppabs="http://pyqt4doc.appspot.com/qstring.html#number">number</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toULongLong"></a>(int, bool <i>ok</i>) QString.toULongLong (<i>self</i>, int <i>base</i> = 10)</h3>
+<p>返回字符串转换为<tt>unsigned long long</tt>使用基<i>base</i>，它默认为10 ，并且必须是2和36 ，或0之间。返回0，如果转换失败。</p>
+<p>如果发生转换错误， *<i>ok</i>设置为False ，否则*<i>ok</i>设置为True 。</p>
+<p>If <i>base</i>为0时， C语言惯例是使用：如果字符串开头的“0x ” ，基部16被使用;如果字符串以“ 0”时，基部8被使用，否则底座10被使用。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"FF"</span>;
+ <span class="type">bool</span> ok;
+
+ <span class="type"><a href="index.htm#quint64-typedef" tppabs="http://pyqt4doc.appspot.com/qtcore.html#quint64-typedef">unsigned long</a></span> hex <span class="operator">=</span> str<span class="operator">.</span>toULongLong(<span class="operator">&amp;</span>ok<span class="operator">,</span> <span class="number">16</span>);    <span class="comment">// hex == 255, ok == true</span>
+ <span class="type"><a href="index.htm#quint64-typedef" tppabs="http://pyqt4doc.appspot.com/qtcore.html#quint64-typedef">unsigned long</a></span> dec <span class="operator">=</span> str<span class="operator">.</span>toULongLong(<span class="operator">&amp;</span>ok<span class="operator">,</span> <span class="number">10</span>);    <span class="comment">// dec == 0, ok == false</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#number" tppabs="http://pyqt4doc.appspot.com/qstring.html#number">number</a>（）和<a href="qstring.html#toLongLong" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLongLong">toLongLong</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toUpper"></a>QString QString.toUpper (<i>self</i>)</h3>
+<p>返回字符串的大写副本。</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"TeXt"</span>;
+ str <span class="operator">=</span> str<span class="operator">.</span>toUpper();        <span class="comment">// str == "TEXT"</span>
+</pre>
+<p>的情况下转换将总是发生在“C”语言环境。对于依赖于语言环境的情况下使用的折叠<a href="qlocale.html#toUpper" tppabs="http://pyqt4doc.appspot.com/qlocale.html#toUpper">QLocale.toUpper</a>（ ）</p>
+<p><b>See also</b> <a href="qstring.html#toLower" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLower">toLower</a>（）和<a href="qlocale.html#toLower" tppabs="http://pyqt4doc.appspot.com/qlocale.html#toLower">QLocale.toLower</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toUShort"></a>(int, bool <i>ok</i>) QString.toUShort (<i>self</i>, int <i>base</i> = 10)</h3>
+<p>返回字符串转换为<tt>unsigned short</tt>使用基<i>base</i>，它默认为10 ，并且必须是2和36 ，或0之间。返回0，如果转换失败。</p>
+<p>如果发生转换错误， *<i>ok</i>设置为False ，否则*<i>ok</i>设置为True 。</p>
+<p>If <i>base</i>为0时， C语言惯例是使用：如果字符串开头的“0x ” ，基部16被使用;如果字符串以“ 0”时，基部8被使用，否则底座10被使用。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"FF"</span>;
+ <span class="type">bool</span> ok;
+
+ <span class="type"><a href="index.htm#ushort-typedef" tppabs="http://pyqt4doc.appspot.com/qtcore.html#ushort-typedef">ushort</a></span> hex <span class="operator">=</span> str<span class="operator">.</span>toUShort(<span class="operator">&amp;</span>ok<span class="operator">,</span> <span class="number">16</span>);     <span class="comment">// hex == 255, ok == true</span>
+ <span class="type"><a href="index.htm#ushort-typedef" tppabs="http://pyqt4doc.appspot.com/qtcore.html#ushort-typedef">ushort</a></span> dec <span class="operator">=</span> str<span class="operator">.</span>toUShort(<span class="operator">&amp;</span>ok<span class="operator">,</span> <span class="number">10</span>);     <span class="comment">// dec == 0, ok == false</span>
+</pre>
+<p><b>See also</b> <a href="qstring.html#number" tppabs="http://pyqt4doc.appspot.com/qstring.html#number">number</a>（）和<a href="qstring.html#toShort" tppabs="http://pyqt4doc.appspot.com/qstring.html#toShort">toShort</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toUtf8"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QString.toUtf8 (<i>self</i>)</h3>
+<p>返回字符串的UTF-8表示为<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>。</p>
+<p>UTF - 8是Unicode编码，可以表示所有字符的Unicode字符串像<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>。</p>
+<p>然而，在Unicode的范围内，但是也有一些不被视为某些字符码点。 Unicode标准中保留每个Unicode平面（ U + FFFE ， U + FFFF ， U +1 FFFE ， U +1 FFFF ， U +2 FFFE等） ，以及16码点在范围U + FDD0最后两个码点.. U + FDDF ，包容性的，非字符。如果任何这些出现在字符串中，它们可以被丢弃，而不会出现在UTF-8表示，或者它们可以由一个或多个字符替换被替换。</p>
+<p><b>See also</b> <a href="qstring.html#fromUtf8" tppabs="http://pyqt4doc.appspot.com/qstring.html#fromUtf8">fromUtf8</a>（ ）<a href="qstring.html#toAscii" tppabs="http://pyqt4doc.appspot.com/qstring.html#toAscii">toAscii</a>（ ）<a href="qstring.html#toLatin1" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLatin1">toLatin1</a>（ ）<a href="qstring.html#toLocal8Bit" tppabs="http://pyqt4doc.appspot.com/qstring.html#toLocal8Bit">toLocal8Bit</a>（）和<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>。</p>
+
+
+<h3 class="fn">
+<a name="trimmed"></a>QString QString.trimmed (<i>self</i>)</h3>
+<p>返回已空白从开始和结束删除的字符串。</p>
+<p>空白是指任何字符的<a href="qchar.html#isSpace" tppabs="http://pyqt4doc.appspot.com/qchar.html#isSpace">QChar.isSpace</a>（ ）返回True 。这包括ASCII字符'\ T' ，为'\ n '，' \ V' ， '\ F' ， ' \ r '和' “ 。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"  lots\t of\nwhitespace\r\n "</span>;
+ str <span class="operator">=</span> str<span class="operator">.</span>trimmed();
+ <span class="comment">// str == "lots\t of\nwhitespace"</span>
+</pre>
+<p>不像<a href="qstring.html#simplified" tppabs="http://pyqt4doc.appspot.com/qstring.html#simplified">simplified</a>（ ） ，修剪（ ）独叶内部的空白。</p>
+<p><b>See also</b> <a href="qstring.html#simplified" tppabs="http://pyqt4doc.appspot.com/qstring.html#simplified">simplified</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="truncate"></a>QString.truncate (<i>self</i>, int <i>pos</i>)</h3>
+<p>截断字符串在给定的<i>position</i>索引。</p>
+<p>如果指定的<i>position</i>索引超出了字符串的结尾，没有任何反应。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str <span class="operator">=</span> <span class="string">"Vladivostok"</span>;
+ str<span class="operator">.</span>truncate(<span class="number">4</span>);
+ <span class="comment">// str == "Vlad"</span>
+</pre>
+<p>If <i>position</i>为负时，它相当于通过零。</p>
+<p><b>See also</b> <a href="qstring.html#chop" tppabs="http://pyqt4doc.appspot.com/qstring.html#chop">chop</a>（ ）<a href="qstring.html#resize" tppabs="http://pyqt4doc.appspot.com/qstring.html#resize">resize</a>（）和<a href="qstring.html#left" tppabs="http://pyqt4doc.appspot.com/qstring.html#left">left</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="__add__"></a>QString QString.__add__ (<i>self</i>, QString <i>s2</i>)</h3>
+<h3 class="fn">
+<a name="__add__-2"></a>QString QString.__add__ (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>ba</i>)</h3>
+<h3 class="fn">
+<a name="__contains__"></a>int QString.__contains__ (<i>self</i>, QString <i>s</i>)</h3>
+<h3 class="fn">
+<a name="__eq__"></a>bool QString.__eq__ (<i>self</i>, QString <i>s</i>)</h3>
+<h3 class="fn">
+<a name="__eq__-2"></a>bool QString.__eq__ (<i>self</i>, <a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a> <i>s</i>)</h3>
+<h3 class="fn">
+<a name="__eq__-3"></a>bool QString.__eq__ (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>s</i>)</h3>
+<h3 class="fn">
+<a name="__eq__-4"></a>bool QString.__eq__ (<i>self</i>, QStringRef <i>s2</i>)</h3>
+<h3 class="fn">
+<a name="__ge__"></a>bool QString.__ge__ (<i>self</i>, QString <i>s</i>)</h3>
+<h3 class="fn">
+<a name="__ge__-2"></a>bool QString.__ge__ (<i>self</i>, <a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a> <i>s</i>)</h3>
+<h3 class="fn">
+<a name="__ge__-3"></a>bool QString.__ge__ (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>s</i>)</h3>
+<h3 class="fn">
+<a name="__getitem__"></a>QString QString.__getitem__ (<i>self</i>, int <i>i</i>)</h3>
+<h3 class="fn">
+<a name="__getitem__-2"></a>QString QString.__getitem__ (<i>self</i>, slice <i>slice</i>)</h3>
+<h3 class="fn">
+<a name="__gt__"></a>bool QString.__gt__ (<i>self</i>, QString <i>s</i>)</h3>
+<h3 class="fn">
+<a name="__gt__-2"></a>bool QString.__gt__ (<i>self</i>, <a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a> <i>s</i>)</h3>
+<h3 class="fn">
+<a name="__gt__-3"></a>bool QString.__gt__ (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>s</i>)</h3>
+<h3 class="fn">
+<a name="__hash__"></a>int QString.__hash__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="__iadd__"></a>QString QString.__iadd__ (<i>self</i>, <a href="qchar.html#SpecialCharacter-enum" tppabs="http://pyqt4doc.appspot.com/qchar.html#SpecialCharacter-enum">QChar.SpecialCharacter</a> <i>c</i>)</h3>
+<h3 class="fn">
+<a name="__iadd__-2"></a>QString QString.__iadd__ (<i>self</i>, QString <i>s</i>)</h3>
+<h3 class="fn">
+<a name="__iadd__-3"></a>QString QString.__iadd__ (<i>self</i>, <a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a> <i>s</i>)</h3>
+<h3 class="fn">
+<a name="__iadd__-4"></a>QString QString.__iadd__ (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>s</i>)</h3>
+<h3 class="fn">
+<a name="__imul__"></a>QString QString.__imul__ (<i>self</i>, int <i>m</i>)</h3>
+<h3 class="fn">
+<a name="__le__"></a>bool QString.__le__ (<i>self</i>, QString <i>s</i>)</h3>
+<h3 class="fn">
+<a name="__le__-2"></a>bool QString.__le__ (<i>self</i>, <a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a> <i>s</i>)</h3>
+<h3 class="fn">
+<a name="__le__-3"></a>bool QString.__le__ (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>s</i>)</h3>
+<h3 class="fn">
+<a name="__len__"></a> QString.__len__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="__lt__"></a>bool QString.__lt__ (<i>self</i>, QString <i>s</i>)</h3>
+<h3 class="fn">
+<a name="__lt__-2"></a>bool QString.__lt__ (<i>self</i>, <a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a> <i>s</i>)</h3>
+<h3 class="fn">
+<a name="__lt__-3"></a>bool QString.__lt__ (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>s</i>)</h3>
+<h3 class="fn">
+<a name="__mul__"></a>QString QString.__mul__ (<i>self</i>, int <i>m</i>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QString.__ne__ (<i>self</i>, QString <i>s</i>)</h3>
+<h3 class="fn">
+<a name="__ne__-2"></a>bool QString.__ne__ (<i>self</i>, <a href="qlatin1string.html" tppabs="http://pyqt4doc.appspot.com/qlatin1string.html">QLatin1String</a> <i>s</i>)</h3>
+<h3 class="fn">
+<a name="__ne__-3"></a>bool QString.__ne__ (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>s</i>)</h3>
+<h3 class="fn">
+<a name="__ne__-4"></a>bool QString.__ne__ (<i>self</i>, QStringRef <i>s2</i>)</h3>
+<h3 class="fn">
+<a name="__repr__"></a>str QString.__repr__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="__str__"></a>str QString.__str__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="__unicode__"></a>unicode QString.__unicode__ (<i>self</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

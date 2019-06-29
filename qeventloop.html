@@ -1,0 +1,185 @@
+﻿<html>
+<head>
+<title>QEventLoop Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QEventLoop Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QEventLoop类提供进入和离开事件循环的方法。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qeventloop.html#ProcessEventsFlag-enum" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#ProcessEventsFlag-enum">ProcessEventsFlag</a></b> { AllEvents, ExcludeUserInputEvents, ExcludeSocketNotifiers, WaitForMoreEvents, X11ExcludeTimers, DeferredDeletion }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qeventloop-processeventsflags.html">ProcessEventsFlags</a></b>
+</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qeventloop.html#QEventLoop" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#QEventLoop">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>int <b><a href="qeventloop.html#exec" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#exec">exec_</a></b> (<i>self</i>, ProcessEventsFlags <i>flags</i> = QEventLoop.AllEvents)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qeventloop.html#exit" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#exit">exit</a></b> (<i>self</i>, int <i>returnCode</i> = 0)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qeventloop.html#isRunning" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#isRunning">isRunning</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qeventloop.html#processEvents" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#processEvents">processEvents</a></b> (<i>self</i>, ProcessEventsFlags <i>flags</i> = QEventLoop.AllEvents)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qeventloop.html#processEvents-2" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#processEvents-2">processEvents</a></b> (<i>self</i>, ProcessEventsFlags <i>flags</i>, int <i>maximumTime</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qeventloop.html#quit" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#quit">quit</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qeventloop.html#wakeUp" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#wakeUp">wakeUp</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QEventLoop类提供进入和离开事件循环的方法。</p>
+<p>在任何时候，你可以创建一个QEventLoop对象，并调用<a href="qeventloop.html#exec" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#exec">exec_</a>（ ）就可以启动一个本地事件循环。从事件循环中，调用<a href="qeventloop.html#exit" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#exit">exit</a>（ ）将强制<a href="qeventloop.html#exec" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#exec">exec_</a>（ ）返回。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="ProcessEventsFlag-enum"></a>QEventLoop.ProcessEventsFlag</h3>
+<p>该枚举控制由处理的事件类型<a href="qeventloop.html#processEvents" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#processEvents">processEvents</a>（）函数。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEventLoop.AllEvents</tt></td>
+<td class="topAlign"><tt>0x00</tt></td>
+<td class="topAlign">所有事件。需要注意的是<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">DeferredDelete</a>事件经过特殊加工。看<a href="qobject.html#deleteLater" tppabs="http://pyqt4doc.appspot.com/qobject.html#deleteLater">QObject.deleteLater</a>（ ）的更多细节。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QEventLoop.ExcludeUserInputEvents</tt>
+</td>
+<td class="topAlign"><tt>0x01</tt></td>
+<td class="topAlign">不处理用户输入事件，如ButtonPress和按键。请注意，该事件不会被丢弃，它们会在下一次交付<a href="qeventloop.html#processEvents" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#processEvents">processEvents</a>（）被调用，而不ExcludeUserInputEvents标志。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QEventLoop.ExcludeSocketNotifiers</tt>
+</td>
+<td class="topAlign"><tt>0x02</tt></td>
+<td class="topAlign">不处理套接字通知事件。请注意，该事件不会被丢弃，它们会在下一次交付<a href="qeventloop.html#processEvents" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#processEvents">processEvents</a>（）被调用，而不ExcludeSocketNotifiers标志。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEventLoop.WaitForMoreEvents</tt></td>
+<td class="topAlign"><tt>0x04</tt></td>
+<td class="topAlign">等待事件，如果没有未处理的事件都可用。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QEventLoop.DeferredDeletion</tt></td>
+<td class="topAlign"><tt>0x10</tt></td>
+<td class="topAlign">过时 - 不要使用。</td>
+</tr>
+</table>
+<p>该ProcessEventsFlags类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cProcessEventsFlag\u003e 。它存储ProcessEventsFlag值的或组合。</p>
+<p><b>See also</b> <a href="qeventloop.html#processEvents" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#processEvents">processEvents</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QEventLoop"></a>QEventLoop.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个事件循环对象与给定<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="exec"></a>int QEventLoop.exec_ (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qeventloop-processeventsflags.html">ProcessEventsFlags</a> <i>flags</i> = QEventLoop.AllEvents)</h3>
+<p>进入主事件循环并等待，直到<a href="qeventloop.html#exit" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#exit">exit</a>（）被调用。返回传递给该值<a href="qeventloop.html#exit" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#exit">exit</a>（ ） 。</p>
+<p>If <i>flags</i>被指定，由所允许的类型的唯一事件<i>flags</i>将被处理。</p>
+<p>有必要调用这个函数来启动事件处理。主事件循环接收事件从窗口系统并调度这些应用程序的部件。</p>
+<p>一般来说，没有用户交互可以调用exec （ ）之前发生。作为一种特殊的情况下，模式对话框喜欢<a href="qmessagebox.html" tppabs="http://pyqt4doc.appspot.com/qmessagebox.html">QMessageBox</a>调用exec （之前可以使用） ，因为模式对话框使用自己的本地事件循环。</p>
+<p>为了使您的应用程序执行閒置处理（即执行一个特殊的功能，每当有没有挂起的事件） ，请使用<a href="qtimer.html" tppabs="http://pyqt4doc.appspot.com/qtimer.html">QTimer</a>与0超时。更复杂的空閒处理方案可以用来实现<a href="qeventloop.html#processEvents" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#processEvents">processEvents</a>（ ） 。</p>
+<p><b>See also</b> <a href="qcoreapplication.html#quit" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#quit">QApplication.quit</a>（ ）<a href="qeventloop.html#exit" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#exit">exit</a>（）和<a href="qeventloop.html#processEvents" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#processEvents">processEvents</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="exit"></a>QEventLoop.exit (<i>self</i>, int <i>returnCode</i> = 0)</h3>
+<p>讲述了事件循环退出，并返回代码。</p>
+<p>在此之后函数被调用时，事件循环从调用返回<a href="qeventloop.html#exec" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#exec">exec_</a>（ ） 。该<a href="qeventloop.html#exec" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#exec">exec_</a>（ ）函数返回<i>returnCode</i>。</p>
+<p>按照惯例，<i>returnCode</i>0意味着成功，而任何非零值表示错误。</p>
+<p>请注意，与同名的C库函数，这个函数<i>does</i>返回给调用者 - 它是事件处理，停止。</p>
+<p><b>See also</b> <a href="qcoreapplication.html#quit" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#quit">QCoreApplication.quit</a>（ ）<a href="qeventloop.html#quit" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#quit">quit</a>（）和<a href="qeventloop.html#exec" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#exec">exec_</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isRunning"></a>bool QEventLoop.isRunning (<i>self</i>)</h3>
+<p>如果事件循环运行，则返回True ，否则返回False 。事件循环被认为是从时间上运行时<a href="qeventloop.html#exec" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#exec">exec_</a>（ ）被调用，直到<a href="qeventloop.html#exit" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#exit">exit</a>（）被调用。</p>
+<p><b>See also</b> <a href="qeventloop.html#exec" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#exec">exec_</a>（）和<a href="qeventloop.html#exit" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#exit">exit</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="processEvents"></a>bool QEventLoop.processEvents (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qeventloop-processeventsflags.html">ProcessEventsFlags</a> <i>flags</i> = QEventLoop.AllEvents)</h3>
+<p>进程挂起的匹配事件<i>flags</i>直到有没有更多的事件来处理。如果返回已处理挂起的事件则为True，否则返回False 。</p>
+<p>如果你有一个长期运行的操作，要显示其进展，而不允许用户输入，此功能特别有用，即通过使用<a href="qeventloop.html#ProcessEventsFlag-enum" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#ProcessEventsFlag-enum">ExcludeUserInputEvents</a>标志。</p>
+<p>这个函数是一个简单的包装器<a href="qabstracteventdispatcher.html#processEvents" tppabs="http://pyqt4doc.appspot.com/qabstracteventdispatcher.html#processEvents">QAbstractEventDispatcher.processEvents</a>（ ） 。查看该功能的详细信息的文档。</p>
+
+
+<h3 class="fn">
+<a name="processEvents-2"></a>QEventLoop.processEvents (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qeventloop-processeventsflags.html">ProcessEventsFlags</a> <i>flags</i>, int <i>maximumTime</i>)</h3>
+<p>匹配过程中挂起的事件<i>flags</i>最多<i>maxTime</i>毫秒，或直到没有更多的事件来处理，以较短者为准。如果你有一个长期运行的操作，要显示其进展，而不允许用户输入，此功能特别有用，即通过使用<a href="qeventloop.html#ProcessEventsFlag-enum" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#ProcessEventsFlag-enum">ExcludeUserInputEvents</a>标志。</p>
+<p><b>Notes:</b></p>
+<ul>
+<li>This function does not process events continuously; it returns
+after all available events are processed.</li>
+<li>Specifying the <a href="qeventloop.html#ProcessEventsFlag-enum" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#ProcessEventsFlag-enum">WaitForMoreEvents</a> flag
+makes no sense and will be ignored.</li>
+</ul>
+
+
+<h3 class="fn">
+<a name="quit"></a>QEventLoop.quit (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void quit()</tt>。</p>
+<p>讲述了事件循环正常退出。</p>
+<p>同出口（0）。</p>
+<p><b>See also</b> <a href="qcoreapplication.html#quit" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#quit">QCoreApplication.quit</a>（）和<a href="qeventloop.html#exit" tppabs="http://pyqt4doc.appspot.com/qeventloop.html#exit">exit</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="wakeUp"></a>QEventLoop.wakeUp (<i>self</i>)</h3>
+<p>唤醒事件循环。</p>
+<p><b>See also</b> <a href="qabstracteventdispatcher.html#wakeUp" tppabs="http://pyqt4doc.appspot.com/qabstracteventdispatcher.html#wakeUp">QAbstractEventDispatcher.wakeUp</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

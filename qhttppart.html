@@ -1,0 +1,140 @@
+﻿<html>
+<head>
+<title>QHttpPart Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QHttpPart Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtnetwork.html">QtNetwork</a> module]</sup></sup>
+</h1>
+<p>该QHttpPart类包含一个身体的一部分被里面一个HTTP多部分MIME消息中使用。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qhttppart.html#QHttpPart" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#QHttpPart">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhttppart.html#QHttpPart-2" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#QHttpPart-2">__init__</a></b> (<i>self</i>, QHttpPart <i>other</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhttppart.html#setBody" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#setBody">setBody</a></b> (<i>self</i>, QByteArray <i>body</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhttppart.html#setBodyDevice" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#setBodyDevice">setBodyDevice</a></b> (<i>self</i>, QIODevice <i>device</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhttppart.html#setHeader" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#setHeader">setHeader</a></b> (<i>self</i>, QNetworkRequest.KnownHeaders <i>header</i>, QVariant <i>value</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhttppart.html#setRawHeader" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#setRawHeader">setRawHeader</a></b> (<i>self</i>, QByteArray <i>headerName</i>, QByteArray <i>headerValue</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>bool <b><a href="qhttppart.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#__eq__">__eq__</a></b> (<i>self</i>, QHttpPart <i>other</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qhttppart.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#__ne__">__ne__</a></b> (<i>self</i>, QHttpPart <i>other</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QHttpPart类包含一个身体的一部分被里面一个HTTP多部分MIME消息中使用。</p>
+<p>该QHttpPart类持有被里面一个HTTP多部分MIME消息中使用身体的一部分（这是由代表<a href="qhttpmultipart.html" tppabs="http://pyqt4doc.appspot.com/qhttpmultipart.html">QHttpMultiPart</a>类）。一个QHttpPart由一个头块和数据块，这是由彼此分开由两个连续的新行。为一个部分的一个例子是：</p>
+<pre class="cpp">
+ Content<span class="operator">-</span>Type: text<span class="operator">/</span>plain
+ Content<span class="operator">-</span>Disposition: form<span class="operator">-</span>data; name<span class="operator">=</span><span class="string">"text"</span>
+
+ here goes the body
+</pre>
+<p>设置页眉，使用<a href="qhttppart.html#setHeader" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#setHeader">setHeader</a>（）和<a href="qhttppart.html#setRawHeader" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#setRawHeader">setRawHeader</a>（），它的行为完全一样<a href="qnetworkrequest.html#setHeader" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html#setHeader">QNetworkRequest.setHeader</a>（）和<a href="qnetworkrequest.html#setRawHeader" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html#setRawHeader">QNetworkRequest.setRawHeader</a>（ ） 。</p>
+<p>读取小块数据，使用<a href="qhttppart.html#setBody" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#setBody">setBody</a>（）;对于像例如更大的数据块图像，使用<a href="qhttppart.html#setBodyDevice" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#setBodyDevice">setBodyDevice</a>（ ） 。后一种方法通过不复制数据在内部，而是直接从设备读取节省内存。这意味着该设备必须打开，并在读取时，含有人体部分的多部分消息是通过发送网络上的那一刻<a href="qnetworkaccessmanager.html#post" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#post">QNetworkAccessManager.post</a>（ ） 。</p>
+<p>要构造一个小的身体QHttpPart ，考虑下面的代码片断（这将产生在上面的例子中显示的数据） ：</p>
+<pre class="cpp">
+ <span class="type">QHttpPart</span> textPart;
+ textPart<span class="operator">.</span><a href="qhttppart.html#setHeader" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#setHeader">setHeader</a>(<span class="type"><a href="qnetworkrequest.html" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html">QNetworkRequest</a></span><span class="operator">.</span>ContentTypeHeader<span class="operator">,</span> <span class="type"><a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a></span>(<span class="string">"text/plain"</span>));
+ textPart<span class="operator">.</span><a href="qhttppart.html#setHeader" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#setHeader">setHeader</a>(<span class="type"><a href="qnetworkrequest.html" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html">QNetworkRequest</a></span><span class="operator">.</span>ContentDispositionHeader<span class="operator">,</span> <span class="type"><a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a></span>(<span class="string">"form-data; name=\"text\""</span>));
+ textPart<span class="operator">.</span><a href="qhttppart.html#setBody" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#setBody">setBody</a>(<span class="string">"here goes the body"</span>);
+</pre>
+<p>构建一个QHttpPart从设备（例如文件）读取，下面可以应用：</p>
+<pre class="cpp">
+ <span class="type">QHttpPart</span> imagePart;
+ imagePart<span class="operator">.</span><a href="qhttppart.html#setHeader" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#setHeader">setHeader</a>(<span class="type"><a href="qnetworkrequest.html" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html">QNetworkRequest</a></span><span class="operator">.</span>ContentTypeHeader<span class="operator">,</span> <span class="type"><a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a></span>(<span class="string">"image/jpeg"</span>));
+ imagePart<span class="operator">.</span><a href="qhttppart.html#setHeader" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#setHeader">setHeader</a>(<span class="type"><a href="qnetworkrequest.html" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html">QNetworkRequest</a></span><span class="operator">.</span>ContentDispositionHeader<span class="operator">,</span> <span class="type"><a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a></span>(<span class="string">"form-data; name=\"image\""</span>));
+ imagePart<span class="operator">.</span><a href="qhttppart.html#setRawHeader" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#setRawHeader">setRawHeader</a>(<span class="string">"Content-ID"</span><span class="operator">,</span> <span class="string">"my@content.id"</span>); <span class="comment">// add any headers you like via setRawHeader()</span>
+ <span class="type"><a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a></span> <span class="operator">*</span>file <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a></span>(<span class="string">"image.jpg"</span>);
+ file<span class="operator">-</span><span class="operator">&gt;</span>open(<span class="type"><a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a></span><span class="operator">.</span>ReadOnly);
+ imagePart<span class="operator">.</span><a href="qhttppart.html#setBodyDevice" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#setBodyDevice">setBodyDevice</a>(file);
+</pre>
+<p>请注意， QHttpPart不走设备的所有权时设置，所以它是开发人员的责任消灭它时，它不再需要。一个好的想法可能是设置多部分消息，作为该设备的父对象，如记录在该文件<a href="qhttpmultipart.html" tppabs="http://pyqt4doc.appspot.com/qhttpmultipart.html">QHttpMultiPart</a>。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QHttpPart"></a>QHttpPart.__init__ (<i>self</i>)</h3>
+<p>构造一个空<a href="qhttppart.html" tppabs="http://pyqt4doc.appspot.com/qhttppart.html">QHttpPart</a>对象。</p>
+
+
+<h3 class="fn">
+<a name="QHttpPart-2"></a>QHttpPart.__init__ (<i>self</i>, <a href="qhttppart.html" tppabs="http://pyqt4doc.appspot.com/qhttppart.html">QHttpPart</a> <i>other</i>)</h3>
+<p>创建副本<i>other</i>。</p>
+
+
+<h3 class="fn">
+<a name="setBody"></a>QHttpPart.setBody (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>body</i>)</h3>
+<p>设置此MIME部分的正文<i>body</i>。该机构设置用这种方法将被使用，除非该设备是通过设置<a href="qhttppart.html#setBodyDevice" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#setBodyDevice">setBodyDevice</a>（ ） 。对于大量的数据（例如图像） ，利用<a href="qhttppart.html#setBodyDevice" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#setBodyDevice">setBodyDevice</a>（），它不会在内部复制数据。</p>
+<p><b>See also</b> <a href="qhttppart.html#setBodyDevice" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#setBodyDevice">setBodyDevice</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setBodyDevice"></a>QHttpPart.setBodyDevice (<i>self</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>device</i>)</h3>
+<p>设置设备从阅读的内容<i>device</i>。对于大量的数据，该方法应优先于<a href="qhttppart.html#setBody" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#setBody">setBody</a>（），因为使用这种方法，当内容不被复制，而是直接从设备读取。<i>device</i>必须是开放性和可读性。<a href="qhttppart.html" tppabs="http://pyqt4doc.appspot.com/qhttppart.html">QHttpPart</a>不采取所有权<i>device</i>，即该设备必须被关闭，并且，如果必要的破坏。如果<i>device</i>是连续的（如插座，但不是文件） ，<a href="qnetworkaccessmanager.html#post" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#post">QNetworkAccessManager.post</a>（ ）后，应该调用<i>device</i>已发出的成品（ ） 。为你重置设备，并通过使用数据集<a href="qhttppart.html#setBody" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#setBody">setBody</a>（ ）时，使用“ setBodyDevice （0）” 。</p>
+<p><b>See also</b> <a href="qhttppart.html#setBody" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#setBody">setBody</a>（）和<a href="qnetworkaccessmanager.html#post" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#post">QNetworkAccessManager.post</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setHeader"></a>QHttpPart.setHeader (<i>self</i>, <a href="qnetworkrequest.html#KnownHeaders-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html#KnownHeaders-enum">QNetworkRequest.KnownHeaders</a> <i>header</i>, QVariant <i>value</i>)</h3>
+<p>设置了已知头的值<i>header</i>要<i>value</i>，复盖任何先前设置的标头。</p>
+<p><b>See also</b> <a href="qnetworkrequest.html#KnownHeaders-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html#KnownHeaders-enum">QNetworkRequest.KnownHeaders</a>，<a href="qhttppart.html#setRawHeader" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#setRawHeader">setRawHeader</a>（）和<a href="qnetworkrequest.html#setHeader" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html#setHeader">QNetworkRequest.setHeader</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setRawHeader"></a>QHttpPart.setRawHeader (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>headerName</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>headerValue</i>)</h3>
+<p>设置页眉<i>headerName</i>有利用价值<i>headerValue</i>。如果<i>headerName</i>对应于一个已知的报头（参见<a href="qnetworkrequest.html#KnownHeaders-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html#KnownHeaders-enum">QNetworkRequest.KnownHeaders</a>） ， raw格式将被解析和相应的“熟”头将被设置为好。</p>
+<p>注意：在设置相同的头两次将复盖以前的设置。为了实现多个同名的HTTP头的行为，你应该将两者连接起来的值，用逗号将它们隔开（ “，” ），并设置一个单一的原始标题。</p>
+<p><b>See also</b> <a href="qnetworkrequest.html#KnownHeaders-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html#KnownHeaders-enum">QNetworkRequest.KnownHeaders</a>，<a href="qhttppart.html#setHeader" tppabs="http://pyqt4doc.appspot.com/qhttppart.html#setHeader">setHeader</a>（）和<a href="qnetworkrequest.html#setRawHeader" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html#setRawHeader">QNetworkRequest.setRawHeader</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="__eq__"></a>bool QHttpPart.__eq__ (<i>self</i>, <a href="qhttppart.html" tppabs="http://pyqt4doc.appspot.com/qhttppart.html">QHttpPart</a> <i>other</i>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QHttpPart.__ne__ (<i>self</i>, <a href="qhttppart.html" tppabs="http://pyqt4doc.appspot.com/qhttppart.html">QHttpPart</a> <i>other</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

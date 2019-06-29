@@ -1,0 +1,1088 @@
+﻿<html>
+<head>
+<title>QAbstractItemModel Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QAbstractItemModel Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该化QAbstractItemModel类提供抽象接口项目模型类。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<p>通过继承<a href="qabstractlistmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractlistmodel.html">QAbstractListModel</a>，<a href="qabstractproxymodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractproxymodel.html">QAbstractProxyModel</a>，<a href="qabstracttablemodel.html" tppabs="http://pyqt4doc.appspot.com/qabstracttablemodel.html">QAbstractTableModel</a>，<a href="qdirmodel.html" tppabs="http://pyqt4doc.appspot.com/qdirmodel.html">QDirModel</a>，<a href="qfilesystemmodel.html" tppabs="http://pyqt4doc.appspot.com/qfilesystemmodel.html">QFileSystemModel</a>，<a href="qhelpcontentmodel.html" tppabs="http://pyqt4doc.appspot.com/qhelpcontentmodel.html">QHelpContentModel</a>，<a href="qproxymodel.html" tppabs="http://pyqt4doc.appspot.com/qproxymodel.html">QProxyModel</a>和<a href="qstandarditemmodel.html" tppabs="http://pyqt4doc.appspot.com/qstandarditemmodel.html">QStandardItemModel</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemmodel.html#QAbstractItemModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#QAbstractItemModel">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemmodel.html#beginInsertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginInsertColumns">beginInsertColumns</a></b> (<i>self</i>, QModelIndex <i>parent</i>, int <i>first</i>, int <i>last</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemmodel.html#beginInsertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginInsertRows">beginInsertRows</a></b> (<i>self</i>, QModelIndex <i>parent</i>, int <i>first</i>, int <i>last</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemmodel.html#beginMoveColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginMoveColumns">beginMoveColumns</a></b> (<i>self</i>, QModelIndex <i>sourceParent</i>, int <i>sourceFirst</i>, int <i>sourceLast</i>, QModelIndex <i>destinationParent</i>, int <i>destinationColumn</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemmodel.html#beginMoveRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginMoveRows">beginMoveRows</a></b> (<i>self</i>, QModelIndex <i>sourceParent</i>, int <i>sourceFirst</i>, int <i>sourceLast</i>, QModelIndex <i>destinationParent</i>, int <i>destinationRow</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemmodel.html#beginRemoveColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginRemoveColumns">beginRemoveColumns</a></b> (<i>self</i>, QModelIndex <i>parent</i>, int <i>first</i>, int <i>last</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemmodel.html#beginRemoveRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginRemoveRows">beginRemoveRows</a></b> (<i>self</i>, QModelIndex <i>parent</i>, int <i>first</i>, int <i>last</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemmodel.html#beginResetModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginResetModel">beginResetModel</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QModelIndex <b><a href="qabstractitemmodel.html#buddy" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#buddy">buddy</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemmodel.html#canFetchMore" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#canFetchMore">canFetchMore</a></b> (<i>self</i>, QModelIndex <i>parent</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemmodel.html#changePersistentIndex" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#changePersistentIndex">changePersistentIndex</a></b> (<i>self</i>, QModelIndex <i>from</i>, QModelIndex <i>to</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemmodel.html#changePersistentIndexList" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#changePersistentIndexList">changePersistentIndexList</a></b> (<i>self</i>, list-of-QModelIndex <i>from</i>, list-of-QModelIndex <i>to</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractitemmodel.html#columnCount" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#columnCount">columnCount</a></b> (<i>self</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>QModelIndex <b><a href="qabstractitemmodel.html#createIndex" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#createIndex">createIndex</a></b> (<i>self</i>, int <i>row</i>, int <i>column</i>, object <i>object</i> = 0)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qabstractitemmodel.html#data" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#data">data</a></b> (<i>self</i>, QModelIndex <i>index</i>, int <i>role</i> = Qt.DisplayRole)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemmodel.html#decodeData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#decodeData">decodeData</a></b> (<i>self</i>, int <i>row</i>, int <i>column</i>, QModelIndex <i>parent</i>, QDataStream <i>stream</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemmodel.html#dropMimeData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#dropMimeData">dropMimeData</a></b> (<i>self</i>, QMimeData <i>data</i>, Qt.DropAction <i>action</i>, int <i>row</i>, int <i>column</i>, QModelIndex <i>parent</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemmodel.html#encodeData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#encodeData">encodeData</a></b> (<i>self</i>, list-of-QModelIndex <i>indexes</i>, QDataStream <i>stream</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemmodel.html#endInsertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endInsertColumns">endInsertColumns</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemmodel.html#endInsertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endInsertRows">endInsertRows</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemmodel.html#endMoveColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endMoveColumns">endMoveColumns</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemmodel.html#endMoveRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endMoveRows">endMoveRows</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemmodel.html#endRemoveColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endRemoveColumns">endRemoveColumns</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemmodel.html#endRemoveRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endRemoveRows">endRemoveRows</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemmodel.html#endResetModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endResetModel">endResetModel</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemmodel.html#fetchMore" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#fetchMore">fetchMore</a></b> (<i>self</i>, QModelIndex <i>parent</i>)</li>
+<li>
+<div class="fn"></div>Qt.ItemFlags <b><a href="qabstractitemmodel.html#flags" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#flags">flags</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemmodel.html#hasChildren" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#hasChildren">hasChildren</a></b> (<i>self</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemmodel.html#hasIndex" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#hasIndex">hasIndex</a></b> (<i>self</i>, int <i>row</i>, int <i>column</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qabstractitemmodel.html#headerData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#headerData">headerData</a></b> (<i>self</i>, int <i>section</i>, Qt.Orientation <i>orientation</i>, int <i>role</i> = Qt.DisplayRole)</li>
+<li>
+<div class="fn"></div>QModelIndex <b><a href="qabstractitemmodel.html#index" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#index">index</a></b> (<i>self</i>, int <i>row</i>, int <i>column</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemmodel.html#insertColumn" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertColumn">insertColumn</a></b> (<i>self</i>, int <i>column</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemmodel.html#insertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertColumns">insertColumns</a></b> (<i>self</i>, int <i>column</i>, int <i>count</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemmodel.html#insertRow" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertRow">insertRow</a></b> (<i>self</i>, int <i>row</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemmodel.html#insertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertRows">insertRows</a></b> (<i>self</i>, int <i>row</i>, int <i>count</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>dict-of-int-QVariant <b><a href="qabstractitemmodel.html#itemData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#itemData">itemData</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>list-of-QModelIndex <b><a href="qabstractitemmodel.html#match" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#match">match</a></b> (<i>self</i>, QModelIndex <i>start</i>, int <i>role</i>, QVariant <i>value</i>, int <i>hits</i> = 1, Qt.MatchFlags <i>flags</i> = Qt.MatchStartsWith|Qt.MatchWrap)</li>
+<li>
+<div class="fn"></div>QMimeData <b><a href="qabstractitemmodel.html#mimeData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#mimeData">mimeData</a></b> (<i>self</i>, list-of-QModelIndex <i>indexes</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qabstractitemmodel.html#mimeTypes" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#mimeTypes">mimeTypes</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QModelIndex <b><a href="qabstractitemmodel.html#parent" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#parent">parent</a></b> (<i>self</i>, QModelIndex <i>child</i>)</li>
+<li>
+<div class="fn"></div>QObject <b><a href="qabstractitemmodel.html#parent-2" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#parent-2">parent</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QModelIndex <b><a href="qabstractitemmodel.html#persistentIndexList" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#persistentIndexList">persistentIndexList</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemmodel.html#removeColumn" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeColumn">removeColumn</a></b> (<i>self</i>, int <i>column</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemmodel.html#removeColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeColumns">removeColumns</a></b> (<i>self</i>, int <i>column</i>, int <i>count</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemmodel.html#removeRow" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeRow">removeRow</a></b> (<i>self</i>, int <i>row</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemmodel.html#removeRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeRows">removeRows</a></b> (<i>self</i>, int <i>row</i>, int <i>count</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemmodel.html#reset" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#reset">reset</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemmodel.html#resetInternalData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#resetInternalData">resetInternalData</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemmodel.html#revert" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#revert">revert</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>dict-of-int-QByteArray <b><a href="qabstractitemmodel.html#roleNames" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#roleNames">roleNames</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractitemmodel.html#rowCount" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#rowCount">rowCount</a></b> (<i>self</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemmodel.html#setData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setData">setData</a></b> (<i>self</i>, QModelIndex <i>index</i>, QVariant <i>value</i>, int <i>role</i> = Qt.EditRole)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemmodel.html#setHeaderData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setHeaderData">setHeaderData</a></b> (<i>self</i>, int <i>section</i>, Qt.Orientation <i>orientation</i>, QVariant <i>value</i>, int <i>role</i> = Qt.EditRole)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemmodel.html#setItemData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setItemData">setItemData</a></b> (<i>self</i>, QModelIndex <i>index</i>, dict-of-int-QVariant <i>roles</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemmodel.html#setRoleNames" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setRoleNames">setRoleNames</a></b> (<i>self</i>, dict-of-int-QByteArray <i>roleNames</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemmodel.html#setSupportedDragActions" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setSupportedDragActions">setSupportedDragActions</a></b> (<i>self</i>, Qt.DropActions)</li>
+<li>
+<div class="fn"></div>QModelIndex <b><a href="qabstractitemmodel.html#sibling" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#sibling">sibling</a></b> (<i>self</i>, int <i>row</i>, int <i>column</i>, QModelIndex <i>idx</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemmodel.html#sort" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#sort">sort</a></b> (<i>self</i>, int <i>column</i>, Qt.SortOrder <i>order</i> = Qt.AscendingOrder)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qabstractitemmodel.html#span" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#span">span</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemmodel.html#submit" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#submit">submit</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Qt.DropActions <b><a href="qabstractitemmodel.html#supportedDragActions" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#supportedDragActions">supportedDragActions</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Qt.DropActions <b><a href="qabstractitemmodel.html#supportedDropActions" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#supportedDropActions">supportedDropActions</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemmodel.html#columnsAboutToBeInserted" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#columnsAboutToBeInserted">columnsAboutToBeInserted</a></b> (const QModelIndex&amp;,int,int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemmodel.html#columnsAboutToBeMoved" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#columnsAboutToBeMoved">columnsAboutToBeMoved</a></b> (const QModelIndex&amp;,int,int,const QModelIndex&amp;,int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemmodel.html#columnsAboutToBeRemoved" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#columnsAboutToBeRemoved">columnsAboutToBeRemoved</a></b> (const QModelIndex&amp;,int,int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemmodel.html#columnsInserted" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#columnsInserted">columnsInserted</a></b> (const QModelIndex&amp;,int,int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemmodel.html#columnsMoved" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#columnsMoved">columnsMoved</a></b> (const QModelIndex&amp;,int,int,const QModelIndex&amp;,int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemmodel.html#columnsRemoved" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#columnsRemoved">columnsRemoved</a></b> (const QModelIndex&amp;,int,int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemmodel.html#dataChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#dataChanged">dataChanged</a></b> (const QModelIndex&amp;,const QModelIndex&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemmodel.html#headerDataChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#headerDataChanged">headerDataChanged</a></b> (Qt::Orientation,int,int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemmodel.html#layoutAboutToBeChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#layoutAboutToBeChanged">layoutAboutToBeChanged</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemmodel.html#layoutChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#layoutChanged">layoutChanged</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemmodel.html#modelAboutToBeReset" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#modelAboutToBeReset">modelAboutToBeReset</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemmodel.html#modelReset" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#modelReset">modelReset</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemmodel.html#rowsAboutToBeInserted" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#rowsAboutToBeInserted">rowsAboutToBeInserted</a></b> (const QModelIndex&amp;,int,int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemmodel.html#rowsAboutToBeMoved" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#rowsAboutToBeMoved">rowsAboutToBeMoved</a></b> (const QModelIndex&amp;,int,int,const QModelIndex&amp;,int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemmodel.html#rowsAboutToBeRemoved" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#rowsAboutToBeRemoved">rowsAboutToBeRemoved</a></b> (const QModelIndex&amp;,int,int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemmodel.html#rowsInserted" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#rowsInserted">rowsInserted</a></b> (const QModelIndex&amp;,int,int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemmodel.html#rowsMoved" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#rowsMoved">rowsMoved</a></b> (const QModelIndex&amp;,int,int,const QModelIndex&amp;,int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemmodel.html#rowsRemoved" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#rowsRemoved">rowsRemoved</a></b> (const QModelIndex&amp;,int,int)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该化QAbstractItemModel类提供抽象接口项目模型类。</p>
+<p>在化QAbstractItemModel类定义了项目模型必须使用能够与互操作在模型/视图结构的其他组件的标准接口。它不应该被直接实例化。相反，你应该继承它来创建新的模型。</p>
+<p>该化QAbstractItemModel类是一个<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/model-view.html">Model/View Classes</a>并且是Qt的一部分<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/model-view-programming.html">model/view framework</a>。</p>
+<p>如果你需要一个模型与使用<a href="qlistview.html" tppabs="http://pyqt4doc.appspot.com/qlistview.html">QListView</a>或<a href="qtableview.html" tppabs="http://pyqt4doc.appspot.com/qtableview.html">QTableView</a>，你应该考虑创建子类<a href="qabstractlistmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractlistmodel.html">QAbstractListModel</a> or
+<a href="qabstracttablemodel.html" tppabs="http://pyqt4doc.appspot.com/qabstracttablemodel.html">QAbstractTableModel</a>而不是这个类。</p>
+<p>底层数据模型暴露的意见和代表作为表的层次结构。如果你不利用层次结构的，那么该模型是行和列的一个简单的表。每个项目都有一个指定的唯一索引<a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a>。</p>
+<p class="centerAlign"><img alt="" src="images/modelindex-no-parent.png"></p>
+<p>数据的每一个项目，可以通过一个模型来访问具有相关联的模型索引。您可以使用获得此模型的指数<a href="qabstractitemmodel.html#index" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#index">index</a>（）函数。每个索引可以具有<a href="qabstractitemmodel.html#sibling" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#sibling">sibling</a>（ ）指数;子项有<a href="qabstractitemmodel.html#parent" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#parent">parent</a>（ ）指数。</p>
+<p>每一个项目都有一个数字与它相关的数据元素，它们可以通过指定一个角色进行检索（见<a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">Qt.ItemDataRole</a>）到模型的<a href="qabstractitemmodel.html#data" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#data">data</a>（）函数。可用于所有角色数据可以在同一时间使用获得的<a href="qabstractitemmodel.html#itemData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#itemData">itemData</a>（）函数。</p>
+<p>每个角色数据是使用一个特定的设置<a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">Qt.ItemDataRole</a>。对于个人角色数据被单独设置<a href="qabstractitemmodel.html#setData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setData">setData</a>（ ） ，或者它们可以为所有角色设定<a href="qabstractitemmodel.html#setItemData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setItemData">setItemData</a>（ ） 。</p>
+<p>项目可以与查询<a href="qabstractitemmodel.html#flags" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#flags">flags</a>（ ） （见<a href="qt.html#ItemFlag-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemFlag-enum">Qt.ItemFlag</a>） ，看看他们是否可以选择，拖动，或者以其它方式处理。</p>
+<p>如果项目具有子对象，<a href="qabstractitemmodel.html#hasChildren" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#hasChildren">hasChildren</a>（ ）为相应的索引返回True 。</p>
+<p>该模型具有<a href="qabstractitemmodel.html#rowCount" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#rowCount">rowCount</a>（）和一个<a href="qabstractitemmodel.html#columnCount" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#columnCount">columnCount</a>（）的层次结构的各个层次。行和列可以被插入和移除<a href="qabstractitemmodel.html#insertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertRows">insertRows</a>（ ）<a href="qabstractitemmodel.html#insertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertColumns">insertColumns</a>（ ）<a href="qabstractitemmodel.html#removeRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeRows">removeRows</a>（）和<a href="qabstractitemmodel.html#removeColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeColumns">removeColumns</a>（ ） 。</p>
+<p>该模型发出的信号来表示变化。例如，<a href="qabstractitemmodel.html#dataChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#dataChanged">dataChanged</a>（ ）被发射时由模型提供的数据项被改变。改变由模型事业提供的头文件<a href="qabstractitemmodel.html#headerDataChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#headerDataChanged">headerDataChanged</a>（）被发射。如果基础数据的变化的结构中，该模型可发射<a href="qabstractitemmodel.html#layoutChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#layoutChanged">layoutChanged</a>（ ）来表示任何附加意见，他们应该重新显示出任何物品，采取新的结构考虑。</p>
+<p>可通过模型中的项目可以使用来搜索特定的数据<a href="qabstractitemmodel.html#match" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#match">match</a>（）函数。</p>
+<p>对模型进行排序，可以使用<a href="qabstractitemmodel.html#sort" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#sort">sort</a>（ ） 。</p>
+<a id="subclassing" name="subclassing"></a>
+<h3>Subclassing</h3>
+<p><b>Note:</b>可在子类化模型的一些通用准则<a href="index.htm#model-subclassing-reference" tppabs="http://pyqt4doc.appspot.com/model-view-programming.html#model-subclassing-reference">Model
+Subclassing Reference</a>。</p>
+<p>当子类化QAbstractItemModel ，最起码必须实现<a href="qabstractitemmodel.html#index" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#index">index</a>（ ）<a href="qabstractitemmodel.html#parent" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#parent">parent</a>（ ）<a href="qabstractitemmodel.html#rowCount" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#rowCount">rowCount</a>（ ）<a href="qabstractitemmodel.html#columnCount" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#columnCount">columnCount</a>（）和<a href="qabstractitemmodel.html#data" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#data">data</a>（ ） 。这些功能全部采用只读模式，并形成可编辑模型的基础。</p>
+<p>您也可以重新实现<a href="qabstractitemmodel.html#hasChildren" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#hasChildren">hasChildren</a>（ ）提供模型的特殊行为，其中实施<a href="qabstractitemmodel.html#rowCount" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#rowCount">rowCount</a>（）是昂贵的。这使得可以为模型，以限制由视图请求的数据量，并且可以作为一种方法来实现的模型数据的懒惰人口。</p>
+<p>为了使编辑在模型中，你还必须实现<a href="qabstractitemmodel.html#setData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setData">setData</a>（ ） ，并重新实现<a href="qabstractitemmodel.html#flags" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#flags">flags</a>（） ，以确保<tt>ItemIsEditable</tt>返回。您也可以重新实现<a href="qabstractitemmodel.html#headerData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#headerData">headerData</a>（）和<a href="qabstractitemmodel.html#setHeaderData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setHeaderData">setHeaderData</a>（ ）来控制标题为您的模型呈现的方式。</p>
+<p>该<a href="qabstractitemmodel.html#dataChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#dataChanged">dataChanged</a>（）和<a href="qabstractitemmodel.html#headerDataChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#headerDataChanged">headerDataChanged</a>（ ）信号必须明确地重新实现时所发出的<a href="qabstractitemmodel.html#setData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setData">setData</a>（）和<a href="qabstractitemmodel.html#setHeaderData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setHeaderData">setHeaderData</a>（ ）函数，分别为。</p>
+<p>定制机型需要建立索引模型为其他组件使用。要做到这一点，请致电<a href="qabstractitemmodel.html#createIndex" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#createIndex">createIndex</a>（ ）与合适的行号和列号的项目，和一个标识符它，无论是作为一个指针或作为一个整数值。这些值的组合必须是唯一的每个项目。定制机型通常使用于其他函数重新实现这些唯一标识符来检索项目数据和访问有关该项目的家长和孩子的信息。请参阅<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/itemviews-simpletreemodel.html">Simple Tree Model Example</a>关于唯一标识符的详细信息。</p>
+<p>这是没有必要的，以支持在每个定义的角色<a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">Qt.ItemDataRole</a>。根据包含在一个模型内的数据的类型，它可能只实施是有用的<a href="qabstractitemmodel.html#data" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#data">data</a>（）函数返回有效信息的一些更常见的角色。大多数模型提供数据项的用于所述至少一个文本表示<a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">Qt.DisplayRole</a>，乖巧的车型也应该提供有效的信息为<a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">Qt.ToolTipRole</a>和<a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">Qt.WhatsThisRole</a>。支持这些角色使模型能与Qt的标准视图中使用。然而，对于某些型号的处理高度专业化的数据，也可能是适当的，以提供数据仅用于用户定义的角色。</p>
+<p>模型，提供接口来调整大小的数据结构可以提供的实现<a href="qabstractitemmodel.html#insertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertRows">insertRows</a>（ ）<a href="qabstractitemmodel.html#removeRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeRows">removeRows</a>（ ）<a href="qabstractitemmodel.html#insertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertColumns">insertColumns</a>（）和<a href="qabstractitemmodel.html#removeColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeColumns">removeColumns</a>（ ） 。当实现这些功能，它通知有关更改模型的尺寸连接任何意见都是很重要<i>before</i>和<i>after</i>发生：</p>
+<ul>
+<li>An <a href="qabstractitemmodel.html#insertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertRows">insertRows</a>()
+implementation must call <a href="qabstractitemmodel.html#beginInsertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginInsertRows">beginInsertRows</a>()
+<i>before</i> inserting new rows into the data structure, and
+<a href="qabstractitemmodel.html#endInsertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endInsertRows">endInsertRows</a>()
+<i>immediately afterwards</i>.</li>
+<li>An <a href="qabstractitemmodel.html#insertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertColumns">insertColumns</a>()
+implementation must call <a href="qabstractitemmodel.html#beginInsertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginInsertColumns">beginInsertColumns</a>()
+<i>before</i> inserting new columns into the data structure, and
+<a href="qabstractitemmodel.html#endInsertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endInsertColumns">endInsertColumns</a>()
+<i>immediately afterwards</i>.</li>
+<li>A <a href="qabstractitemmodel.html#removeRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeRows">removeRows</a>()
+implementation must call <a href="qabstractitemmodel.html#beginRemoveRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginRemoveRows">beginRemoveRows</a>()
+<i>before</i> the rows are removed from the data structure, and
+<a href="qabstractitemmodel.html#endRemoveRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endRemoveRows">endRemoveRows</a>()
+<i>immediately afterwards</i>.</li>
+<li>A <a href="qabstractitemmodel.html#removeColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeColumns">removeColumns</a>()
+implementation must call <a href="qabstractitemmodel.html#beginRemoveColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginRemoveColumns">beginRemoveColumns</a>()
+<i>before</i> the columns are removed from the data structure, and
+<a href="qabstractitemmodel.html#endRemoveColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endRemoveColumns">endRemoveColumns</a>()
+<i>immediately afterwards</i>.</li>
+</ul>
+<p>该<i>private</i>这些函数发出给连接组件的机会之前，任何数据采取行动的信号变得不可用。所述插入件的封装和除去这些操作的开始和结束的功能还可以使模型的管理<a href="qpersistentmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qpersistentmodelindex.html">persistent
+model indexes</a>正确。<b>If you want selections to be
+handled properly, you must ensure that you call these
+functions.</b>如果你插入或删除一个项目有孩子，你不需要调用这些函数的子项。换句话说，父项将其子项的照顾。</p>
+<p>要创建填充增量模型，你可以重新实现<a href="qabstractitemmodel.html#fetchMore" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#fetchMore">fetchMore</a>（）和<a href="qabstractitemmodel.html#canFetchMore" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#canFetchMore">canFetchMore</a>（ ） 。如果重新实现<a href="qabstractitemmodel.html#fetchMore" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#fetchMore">fetchMore</a>（ ）添加行的模式，<a href="qabstractitemmodel.html#beginInsertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginInsertRows">beginInsertRows()</a>和<a href="qabstractitemmodel.html#endInsertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endInsertRows">endInsertRows()</a>必须被调用。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QAbstractItemModel"></a>QAbstractItemModel.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个抽象的概念模型与给定<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="beginInsertColumns"></a>QAbstractItemModel.beginInsertColumns (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i>, int <i>first</i>, int <i>last</i>)</h3>
+<p>开始一个列的插入操作。</p>
+<p>当重新实现<a href="qabstractitemmodel.html#insertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertColumns">insertColumns</a>（ ）的一个子类，则必须调用此函数<i>before</i>将数据插入到模型的底层数据存储。</p>
+<p>该<i>parent</i>索引对应于被插入的新列的父;<i>first</i>和<i>last</i>是新列的列号将有被插入后，他们。</p>
+<table class="generic" width="80%">
+<tr class="odd" valign="top">
+<td><img alt="Inserting columns" src="images/modelview-begin-insert-columns.png"></td>
+<td>Specify the first and last column numbers for the span of
+columns you want to insert into an item in a model.
+<p>例如，如该图所示，我们插入3列第4列之前，所以<i>first</i>是4和<i>last</i>是6 ：</p>
+<pre class="cpp">
+ beginInsertColumns(parent<span class="operator">,</span> <span class="number">4</span><span class="operator">,</span> <span class="number">6</span>);
+</pre>
+<p>这会插入三个新列的列4 ， 5 ，和6 。</p>
+</td>
+</tr>
+<tr class="even" valign="top">
+<td><img alt="Appending columns" src="images/modelview-begin-append-columns.png"></td>
+<td>To append columns, insert them after the last column.
+<p>例如，如图所示，我们追加三列六个现有列（第5列结束）的集合，所以<i>first</i>是6和<i>last</i>8 ：</p>
+<pre class="cpp">
+ beginInsertColumns(parent<span class="operator">,</span> <span class="number">6</span><span class="operator">,</span> <span class="number">8</span>);
+</pre>
+<p>这追加了两个新列作为列6 ， 7 ，和8。</p>
+</td>
+</tr>
+</table>
+<p><b>Note:</b>此功能会发出<a href="qabstractitemmodel.html#columnsAboutToBeInserted" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#columnsAboutToBeInserted">columnsAboutToBeInserted</a>（），它连接视图（或股东代理人）信号必须处理插入数据之前。否则，意见最终可能会处于无效状态。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#endInsertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endInsertColumns">endInsertColumns</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="beginInsertRows"></a>QAbstractItemModel.beginInsertRows (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i>, int <i>first</i>, int <i>last</i>)</h3>
+<p>开始的行插入操作。</p>
+<p>当重新实现<a href="qabstractitemmodel.html#insertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertRows">insertRows</a>（ ）的一个子类，则必须调用此函数<i>before</i>将数据插入到模型的底层数据存储。</p>
+<p>该<i>parent</i>索引对应于被插入新行的父;<i>first</i>和<i>last</i>是行号，新行将有被插入后，他们。</p>
+<table class="generic" width="80%">
+<tr class="odd" valign="top">
+<td><img alt="Inserting rows" src="images/modelview-begin-insert-rows.png"></td>
+<td>Specify the first and last row numbers for the span of rows you
+want to insert into an item in a model.
+<p>例如，如该图所示，我们插入3行第2列之前，所以<i>first</i>是2和<i>last</i>是4 ：</p>
+<pre class="cpp">
+ beginInsertRows(parent<span class="operator">,</span> <span class="number">2</span><span class="operator">,</span> <span class="number">4</span>);
+</pre>
+<p>这会插入三个新行作为行2 ， 3 ，和4 。</p>
+</td>
+</tr>
+<tr class="even" valign="top">
+<td><img alt="Appending rows" src="images/modelview-begin-append-rows.png"></td>
+<td>To append rows, insert them after the last row.
+<p>例如，如该图所示，我们追加两行的4现有的行（第3行结束）的集合，所以<i>first</i>是4和<i>last</i>是5 ：</p>
+<pre class="cpp">
+ beginInsertRows(parent<span class="operator">,</span> <span class="number">4</span><span class="operator">,</span> <span class="number">5</span>);
+</pre>
+<p>这追加两个新行的行4和5 。</p>
+</td>
+</tr>
+</table>
+<p><b>Note:</b>此功能会发出<a href="qabstractitemmodel.html#rowsAboutToBeInserted" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#rowsAboutToBeInserted">rowsAboutToBeInserted</a>（），它连接视图（或股东代理人）信号必须处理插入数据之前。否则，意见最终可能会处于无效状态。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#endInsertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endInsertRows">endInsertRows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="beginMoveColumns"></a>bool QAbstractItemModel.beginMoveColumns (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>sourceParent</i>, int <i>sourceFirst</i>, int <i>sourceLast</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>destinationParent</i>, int <i>destinationColumn</i>)</h3>
+<p>开始一列移动操作。</p>
+<p>当重新实现一个子类，这种方法在你的模型简化移动实体。这个方法是负责移动持久指标在模型中，它，否则你会被要求做自己。使用beginMoveRows和endMoveRows是替代发光layoutAboutToBeChanged和layoutChanged直接随着changePersistentIndexes 。 layoutAboutToBeChanged通过该方法出于兼容性原因射出。</p>
+<p>该<i>sourceParent</i>索引对应于从该列移动的母公司;<i>sourceFirst</i>和<i>sourceLast</i>是该列的第一列和最后一列数字移动。该<i>destinationParent</i>索引对应于所述父到其中的那些列被移动。该<i>destinationChild</i>是该组将被移到该列。即，在列中的索引<i>sourceFirst</i>在<i>sourceParent</i>将成为列<i>destinationChild</i>在<i>destinationParent</i>，然后是所有其他列达<i>sourceLast</i>。</p>
+<p>然而，在相同的父（移动列下来的时候<i>sourceParent</i>和<i>destinationParent</i>是相等的），则columnss将放置前的<i>destinationChild</i>索引。也就是说，如果你想移动列0和1，因此他们将成为列1和2 ，<i>destinationChild</i>应该是3 。在这种情况下，用于源列的新索引<tt>i</tt>（这是间<i>sourceFirst</i>和<i>sourceLast</i>）等于<tt>(destinationChild-sourceLast-1+i)</tt>。</p>
+<p>注意，如果<i>sourceParent</i>和<i>destinationParent</i>都是一样的，你必须确保<i>destinationChild</i>不是的范围内<i>sourceFirst</i>和<i>sourceLast</i>+1。您还必须确保您不要尝试将列移动到其自己的孩子或祖先之一。此方法返回False，如果任一条件为真，在这种情况下，你应该放弃你的移动操作。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#endMoveColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endMoveColumns">endMoveColumns</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="beginMoveRows"></a>bool QAbstractItemModel.beginMoveRows (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>sourceParent</i>, int <i>sourceFirst</i>, int <i>sourceLast</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>destinationParent</i>, int <i>destinationRow</i>)</h3>
+<p>开始连续移动操作。</p>
+<p>当重新实现一个子类，这种方法在你的模型简化移动实体。这个方法是负责移动持久指标在模型中，它，否则你会被要求做自己。使用beginMoveRows和endMoveRows是替代发光layoutAboutToBeChanged和layoutChanged直接随着changePersistentIndexes 。 layoutAboutToBeChanged通过该方法出于兼容性原因射出。</p>
+<p>该<i>sourceParent</i>索引对应于从该行的移动母公司;<i>sourceFirst</i>和<i>sourceLast</i>是行的第一行和最后一行的数字移动。该<i>destinationParent</i>索引对应于所述父到其中的那些行被移动。该<i>destinationChild</i>是行，这些行会被感动。即，该指数在排<i>sourceFirst</i>在<i>sourceParent</i>将成为排<i>destinationChild</i>在<i>destinationParent</i>，接着所有其他行到<i>sourceLast</i>。</p>
+<p>然而，在相同的父（移动排下来的时候<i>sourceParent</i>和<i>destinationParent</i>是相等的） ，这些行会被放置前的<i>destinationChild</i>索引。也就是说，如果你要移动的行0和1，因此他们将成为行1和2 ，<i>destinationChild</i>应该是3 。在这种情况下，用于源行新的索引<tt>i</tt>（这是间<i>sourceFirst</i>和<i>sourceLast</i>）等于<tt>(destinationChild-sourceLast-1+i)</tt>。</p>
+<p>注意，如果<i>sourceParent</i>和<i>destinationParent</i>都是一样的，你必须确保<i>destinationChild</i>不是的范围内<i>sourceFirst</i>和<i>sourceLast</i>+1。您还必须确保您不要尝试将行移动到其自己的孩子或祖先之一。此方法返回False，如果任一条件为真，在这种情况下，你应该放弃你的移动操作。</p>
+<table class="generic" width="80%">
+<tr class="odd" valign="top">
+<td><img alt="Moving rows to another parent" src="images/modelview-move-rows-1.png"></td>
+<td>Specify the first and last row numbers for the span of rows in
+the source parent you want to move in the model. Also specify the
+row in the destination parent to move the span to.
+<p>例如，如该图所示，我们将3行从行2至4中的源中，所以<i>sourceFirst</i>是2和<i>sourceLast</i>是4。我们将这些物品上面第2行的目的地，所以<i>destinationChild</i>是2。</p>
+<pre class="cpp">
+ beginMoveRows(sourceParent<span class="operator">,</span> <span class="number">2</span><span class="operator">,</span> <span class="number">4</span><span class="operator">,</span> destinationParent<span class="operator">,</span> <span class="number">2</span>);
+</pre>
+<p>这将移动源中的3行的行2 ，3和4 ，成为2 ，3和4中的目的地。其他受影响的兄弟姐妹都相应地偏移。</p>
+</td>
+</tr>
+<tr class="even" valign="top">
+<td><img alt="Moving rows to append to another parent" src="images/modelview-move-rows-2.png"></td>
+<td>To append rows to another parent, move them to after the last
+row.
+<p>例如，如图所示，我们把三排的6现有的行（在第5行结束）的集合，所以<i>destinationChild</i>是6 ：</p>
+<pre class="cpp">
+ beginMoveRows(sourceParent<span class="operator">,</span> <span class="number">2</span><span class="operator">,</span> <span class="number">4</span><span class="operator">,</span> destinationParent<span class="operator">,</span> <span class="number">6</span>);
+</pre>
+<p>这将移动目标的行到目标父的末端为6,7和8 。</p>
+</td>
+</tr>
+<tr class="odd" valign="top">
+<td><img alt="Moving rows in the same parent up" src="images/modelview-move-rows-3.png"></td>
+<td>To move rows within the same parent, specify the row to move
+them to.
+<p>例如，如该图所示，我们将一个项目从第2行到第0行，所以<i>sourceFirst</i>和<i>sourceLast</i>是2和<i>destinationChild</i>为0。</p>
+<pre class="cpp">
+ beginMoveRows(parent<span class="operator">,</span> <span class="number">2</span><span class="operator">,</span> <span class="number">2</span><span class="operator">,</span> parent<span class="operator">,</span> <span class="number">0</span>);
+</pre>
+<p>注意，其它行可以相应地移动。还要注意的是移动的同一个父内物品时，你不应该试图无效或无操作动作。在上面的例子中，第2项是在移动之前排2 ，所以它不能被移动到第2行（其中，这已经是）或行3 （无操作如第3行的手段上述第3行，其中它已经是）</p>
+</td>
+</tr>
+<tr class="even" valign="top">
+<td><img alt="Moving rows in the same parent down" src="images/modelview-move-rows-4.png"></td>
+<td>To move rows within the same parent, specify the row to move
+them to.
+<p>例如，如该图所示，我们将一个项目从第2行到第4行，所以<i>sourceFirst</i>和<i>sourceLast</i>是2和<i>destinationChild</i>是4。</p>
+<pre class="cpp">
+ beginMoveRows(parent<span class="operator">,</span> <span class="number">2</span><span class="operator">,</span> <span class="number">2</span><span class="operator">,</span> parent<span class="operator">,</span> <span class="number">4</span>);
+</pre>
+<p>注意，其它行可以相应地移动。</p>
+</td>
+</tr>
+</table>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#endMoveRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endMoveRows">endMoveRows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="beginRemoveColumns"></a>QAbstractItemModel.beginRemoveColumns (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i>, int <i>first</i>, int <i>last</i>)</h3>
+<p>开始的列删除操作。</p>
+<p>当重新实现<a href="qabstractitemmodel.html#removeColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeColumns">removeColumns</a>（ ）的一个子类，则必须调用此函数<i>before</i>去除模型的底层数据存储的数据。</p>
+<p>该<i>parent</i>索引对应于从该新的列被删除父;<i>first</i>和<i>last</i>是要移除的第一个和最后一列的列号。</p>
+<table class="generic" width="80%">
+<tr class="odd" valign="top">
+<td><img alt="Removing columns" src="images/modelview-begin-remove-columns.png"></td>
+<td>Specify the first and last column numbers for the span of
+columns you want to remove from an item in a model.
+<p>例如，如该图所示，我们从柱4取出3列至第6列，所以<i>first</i>是4和<i>last</i>是6 ：</p>
+<pre class="cpp">
+ beginRemoveColumns(parent<span class="operator">,</span> <span class="number">4</span><span class="operator">,</span> <span class="number">6</span>);
+</pre>
+</td>
+</tr>
+</table>
+<p><b>Note:</b>此功能会发出<a href="qabstractitemmodel.html#columnsAboutToBeRemoved" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#columnsAboutToBeRemoved">columnsAboutToBeRemoved</a>（），它连接视图（或股东代理人）信号必须处理的数据被删除之前。否则，意见最终可能会处于无效状态。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#endRemoveColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endRemoveColumns">endRemoveColumns</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="beginRemoveRows"></a>QAbstractItemModel.beginRemoveRows (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i>, int <i>first</i>, int <i>last</i>)</h3>
+<p>开始的行删除操作。</p>
+<p>当重新实现<a href="qabstractitemmodel.html#removeRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeRows">removeRows</a>（ ）的一个子类，则必须调用此函数<i>before</i>去除模型的底层数据存储的数据。</p>
+<p>该<i>parent</i>索引对应于从该新行被删除的父;<i>first</i>和<i>last</i>将被删除的行的行号。</p>
+<table class="generic" width="80%">
+<tr class="odd" valign="top">
+<td><img alt="Removing rows" src="images/modelview-begin-remove-rows.png"></td>
+<td>Specify the first and last row numbers for the span of rows you
+want to remove from an item in a model.
+<p>例如，如该图所示，我们从第2行取出两排至3行中，所以<i>first</i>是2和<i>last</i>是3：</p>
+<pre class="cpp">
+ beginRemoveRows(parent<span class="operator">,</span> <span class="number">2</span><span class="operator">,</span> <span class="number">3</span>);
+</pre>
+</td>
+</tr>
+</table>
+<p><b>Note:</b>此功能会发出<a href="qabstractitemmodel.html#rowsAboutToBeRemoved" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#rowsAboutToBeRemoved">rowsAboutToBeRemoved</a>（），它连接视图（或股东代理人）信号必须处理的数据被删除之前。否则，意见最终可能会处于无效状态。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#endRemoveRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endRemoveRows">endRemoveRows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="beginResetModel"></a>QAbstractItemModel.beginResetModel (<i>self</i>)</h3>
+<p>开始一个模型复位操作。</p>
+<p>复位操作模式重置为它的当前状态在任何附加的看法。</p>
+<p><b>Note:</b>连接到这个模型中的任何意见都会被重置为好。</p>
+<p>当一个模型被复位就意味着从模型报告的任何先前的数据现在是无效的，并且必须再次查询的。这也意味着，目前的项目和任何选定的项目将变得无效。</p>
+<p>当一个模型从根本上改变它的数据它有时是容易只是调用这个函数，而不是发出<a href="qabstractitemmodel.html#dataChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#dataChanged">dataChanged</a>（ ）当基础数据源，或者它的结构，改变通知其他组件。</p>
+<p>重置所有的内部数据结构中的模型或代理模型之前，必须调用此函数。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#modelAboutToBeReset" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#modelAboutToBeReset">modelAboutToBeReset</a>（ ）<a href="qabstractitemmodel.html#modelReset" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#modelReset">modelReset</a>（）和<a href="qabstractitemmodel.html#endResetModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endResetModel">endResetModel</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="buddy"></a><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> QAbstractItemModel.buddy (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>返回由代表该项目的哥们一个模型索引<i>index</i>。当用户希望编辑某个项目，视图将调用这个函数来检查模型中的另一个项目是否应该被编辑来代替。然后，视图将使用由哥们项目返回的模型索引构造一个委讬。</p>
+<p>此函数的默认实现每个项目作为自己的哥们。</p>
+
+
+<h3 class="fn">
+<a name="canFetchMore"></a>bool QAbstractItemModel.canFetchMore (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i>)</h3>
+<p>返回True如果没有可用于更多的数据<i>parent</i>否则返回False 。</p>
+<p>默认的实现始终返回False 。</p>
+<p>如果canFetchMore （ ）返回True ，<a href="qabstractitemview.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html">QAbstractItemView</a>将调用<a href="qabstractitemmodel.html#fetchMore" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#fetchMore">fetchMore</a>（ ） 。然而，本<a href="qabstractitemmodel.html#fetchMore" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#fetchMore">fetchMore</a>当模型被填充增量（ ）函数只被调用。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#fetchMore" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#fetchMore">fetchMore</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="changePersistentIndex"></a>QAbstractItemModel.changePersistentIndex (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>from</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>to</i>)</h3>
+<p>更改<a href="qpersistentmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qpersistentmodelindex.html">QPersistentModelIndex</a>也就是等于给定<i>from</i>模型索引为给定的<i>to</i>模型索引。</p>
+<p>如果没有持续性模型指数等于给定<i>from</i>模型索引被发现，没有什么改变。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#persistentIndexList" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#persistentIndexList">persistentIndexList</a>（）和<a href="qabstractitemmodel.html#changePersistentIndexList" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#changePersistentIndexList">changePersistentIndexList</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="changePersistentIndexList"></a>QAbstractItemModel.changePersistentIndexList (<i>self</i>, list-of-QModelIndex <i>from</i>, list-of-QModelIndex <i>to</i>)</h3>
+<p>变化，它等于该索引中给出的QPersistentModelIndexes<i>from</i>模型索引列表，以给定的<i>to</i>模型索引列表。</p>
+<p>如果没有持久化模型的索引等于该指标在给定的<i>from</i>模型索引列表被发现，没有什么改变。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#persistentIndexList" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#persistentIndexList">persistentIndexList</a>（）和<a href="qabstractitemmodel.html#changePersistentIndex" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#changePersistentIndex">changePersistentIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="columnCount"></a>int QAbstractItemModel.columnCount (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回列的数目为给定的子<i>parent</i>。</p>
+<p>在大多数的子类，列数是独立的<i>parent</i>。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type">int</span> DomModel<span class="operator">.</span>columnCount(<span class="keyword">const</span> <span class="type"><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a></span> <span class="operator">&amp;</span><span class="comment">/*parent*/</span>) <span class="keyword">const</span>
+ {
+     <span class="keyword">return</span> <span class="number">3</span>;
+ }
+</pre>
+<p><b>Note:</b>当实现一个基于表的模型，列数（）应该返回0当父是有效的。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#rowCount" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#rowCount">rowCount</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="createIndex"></a><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> QAbstractItemModel.createIndex (<i>self</i>, int <i>row</i>, int <i>column</i>, object <i>object</i> = 0)</h3>
+<p>创建用于给定一个模型索引<i>row</i>和<i>column</i>与内部指针<i>ptr</i>。</p>
+<p>当使用一个<a href="qsortfilterproxymodel.html" tppabs="http://pyqt4doc.appspot.com/qsortfilterproxymodel.html">QSortFilterProxyModel</a>，其指标有自己的内部指针。这是不可取的访问此内部指针模型的外侧。使用<a href="qabstractitemmodel.html#data" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#data">data</a>（ ）函数来代替。</p>
+<p>此功能提供了该模型的子类必须使用它来创建模型的索引一致的接口。</p>
+
+
+<h3 class="fn">
+<a name="data"></a>QVariant QAbstractItemModel.data (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>, int <i>role</i> = Qt.DisplayRole)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回下指定存储的数据<i>role</i>由所提及的项目<i>index</i>。</p>
+<p><b>Note:</b>如果你没有一个值返回，返回<b>invalid</b> <a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>而不是返回0 。</p>
+<p><b>See also</b> <a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">Qt.ItemDataRole</a>，<a href="qabstractitemmodel.html#setData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setData">setData</a>（）和<a href="qabstractitemmodel.html#headerData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#headerData">headerData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="decodeData"></a>bool QAbstractItemModel.decodeData (<i>self</i>, int <i>row</i>, int <i>column</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i>, <a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> <i>stream</i>)</h3>
+<h3 class="fn">
+<a name="dropMimeData"></a>bool QAbstractItemModel.dropMimeData (<i>self</i>, <a href="qmimedata.html" tppabs="http://pyqt4doc.appspot.com/qmimedata.html">QMimeData</a> <i>data</i>, <a href="qt.html#DropAction-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#DropAction-enum">Qt.DropAction</a> <i>action</i>, int <i>row</i>, int <i>column</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i>)</h3>
+<p>处理<i>data</i>通过拖放操作，与给定的供给结束<i>action</i>。</p>
+<p>返回True如果数据和动作可以通过模型来处理，否则返回False 。</p>
+<p>指定<i>row</i>，<i>column</i>和<i>parent</i>表明在该操作结束，其中模型项的位置。它是该模型的责任完成动作在正确的位置。</p>
+<p>例如，在一个上一个项目一个放置操作<a href="qtreeview.html" tppabs="http://pyqt4doc.appspot.com/qtreeview.html">QTreeView</a>可能导致要么被插入的项目由指定儿童的新项目<i>row</i>，<i>column</i>和<i>parent</i>，或作为该项目的兄弟姐妹。</p>
+<p>When <i>row</i>和<i>column</i>是-1则表示放置的数据应被视为直接丢弃在<i>parent</i>。通常，这将意味着追加数据的子项<i>parent</i>。如果<i>row</i>和列都大于或等于零，则意味着降刚刚指定之前发生<i>row</i>和<i>column</i>在指定的<i>parent</i>。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#supportedDropActions" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#supportedDropActions">supportedDropActions</a>（）和<a href="index.htm#using-drag-and-drop-with-item-views" tppabs="http://pyqt4doc.appspot.com/model-view-programming.html#using-drag-and-drop-with-item-views">Using
+drag and drop with item views</a>。</p>
+
+
+<h3 class="fn">
+<a name="encodeData"></a>QAbstractItemModel.encodeData (<i>self</i>, list-of-QModelIndex <i>indexes</i>, <a href="qdatastream.html" tppabs="http://pyqt4doc.appspot.com/qdatastream.html">QDataStream</a> <i>stream</i>)</h3>
+<h3 class="fn">
+<a name="endInsertColumns"></a>QAbstractItemModel.endInsertColumns (<i>self</i>)</h3>
+<p>完一列的插入操作。</p>
+<p>当重新实现<a href="qabstractitemmodel.html#insertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertColumns">insertColumns</a>（ ）的一个子类，则必须调用此函数<i>after</i>将数据插入到模型的底层数据存储。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#beginInsertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginInsertColumns">beginInsertColumns</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="endInsertRows"></a>QAbstractItemModel.endInsertRows (<i>self</i>)</h3>
+<p>结尾的行插入操作。</p>
+<p>当重新实现<a href="qabstractitemmodel.html#insertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertRows">insertRows</a>（ ）的一个子类，则必须调用此函数<i>after</i>将数据插入到模型的底层数据存储。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#beginInsertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginInsertRows">beginInsertRows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="endMoveColumns"></a>QAbstractItemModel.endMoveColumns (<i>self</i>)</h3>
+<p>完一列移动操作。</p>
+<p>当实现一个子类，则必须调用此函数<i>after</i>模型的底层数据存储中移动数据。</p>
+<p>layoutChanged通过该方法出于兼容性原因射出。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#beginMoveColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginMoveColumns">beginMoveColumns</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="endMoveRows"></a>QAbstractItemModel.endMoveRows (<i>self</i>)</h3>
+<p>完一排移动操作。</p>
+<p>当实现一个子类，则必须调用此函数<i>after</i>模型的底层数据存储中移动数据。</p>
+<p>layoutChanged通过该方法出于兼容性原因射出。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#beginMoveRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginMoveRows">beginMoveRows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="endRemoveColumns"></a>QAbstractItemModel.endRemoveColumns (<i>self</i>)</h3>
+<p>完一列删除操作。</p>
+<p>当重新实现<a href="qabstractitemmodel.html#removeColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeColumns">removeColumns</a>（ ）的一个子类，则必须调用此函数<i>after</i>去除模型的底层数据存储的数据。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#beginRemoveColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginRemoveColumns">beginRemoveColumns</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="endRemoveRows"></a>QAbstractItemModel.endRemoveRows (<i>self</i>)</h3>
+<p>结束连续切除手术。</p>
+<p>当重新实现<a href="qabstractitemmodel.html#removeRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeRows">removeRows</a>（ ）的一个子类，则必须调用此函数<i>after</i>去除模型的底层数据存储的数据。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#beginRemoveRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginRemoveRows">beginRemoveRows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="endResetModel"></a>QAbstractItemModel.endResetModel (<i>self</i>)</h3>
+<p>完成一个模型复位操作。</p>
+<p>你必须在你的模型或代理模型重置任何内部数据结构之后，调用此函数。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#beginResetModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginResetModel">beginResetModel</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fetchMore"></a>QAbstractItemModel.fetchMore (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i>)</h3>
+<p>获取由指定的项目与父任何可用的数据<i>parent</i>索引。</p>
+<p>重新实现这一点，如果你是填充模型增量。</p>
+<p>默认实现不执行任何操作。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#canFetchMore" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#canFetchMore">canFetchMore</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="flags"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-itemflags.html">Qt.ItemFlags</a> QAbstractItemModel.flags (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>返回项标志为给定的<i>index</i>。</p>
+<p>基类实现返回标志的组合，使该项目（<tt>ItemIsEnabled</tt>） ，并允许它被选中（<tt>ItemIsSelectable</tt>） 。</p>
+<p><b>See also</b> <a href="qt.html#ItemFlag-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemFlag-enum">Qt.ItemFlags</a>。</p>
+
+
+<h3 class="fn">
+<a name="hasChildren"></a>bool QAbstractItemModel.hasChildren (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>返回True如果<i>parent</i>有任何子女;否则返回False。</p>
+<p>使用<a href="qabstractitemmodel.html#rowCount" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#rowCount">rowCount</a>（ ）父，找出孩子的数量。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#parent" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#parent">parent</a>（）和<a href="qabstractitemmodel.html#index" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#index">index</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasIndex"></a>bool QAbstractItemModel.hasIndex (<i>self</i>, int <i>row</i>, int <i>column</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>返回True如果模型返回一个有效的<a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a>为<i>row</i>和<i>column</i>同<i>parent</i>，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="headerData"></a>QVariant QAbstractItemModel.headerData (<i>self</i>, int <i>section</i>, <a href="qt.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Orientation-enum">Qt.Orientation</a> <i>orientation</i>, int <i>role</i> = Qt.DisplayRole)</h3>
+<p>返回数据为给定的<i>role</i>和<i>section</i>在用指定的标头<i>orientation</i>。</p>
+<p>水平标头，把该分区编号相对应的列数。类似地，对于垂直标题，章节号对应的行号。</p>
+<p><b>See also</b> <a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">Qt.ItemDataRole</a>，<a href="qabstractitemmodel.html#setHeaderData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setHeaderData">setHeaderData</a>（）和<a href="qheaderview.html" tppabs="http://pyqt4doc.appspot.com/qheaderview.html">QHeaderView</a>。</p>
+
+
+<h3 class="fn">
+<a name="index"></a><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> QAbstractItemModel.index (<i>self</i>, int <i>row</i>, int <i>column</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回由给定指定的模型项的索引<i>row</i>，<i>column</i>和<i>parent</i>索引。</p>
+<p>当重新实现在子类中这个函数，调用<a href="qabstractitemmodel.html#createIndex" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#createIndex">createIndex</a>（）来生成其他组件可以用来参考的项目模型中的模型索引。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#createIndex" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#createIndex">createIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertColumn"></a>bool QAbstractItemModel.insertColumn (<i>self</i>, int <i>column</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>给定前插入一列<i>column</i>中的子项<i>parent</i>规定。</p>
+<p>返回True如果插入的列，否则返回False 。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#insertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertColumns">insertColumns</a>（ ）<a href="qabstractitemmodel.html#insertRow" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertRow">insertRow</a>（）和<a href="qabstractitemmodel.html#removeColumn" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeColumn">removeColumn</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertColumns"></a>bool QAbstractItemModel.insertColumns (<i>self</i>, int <i>column</i>, int <i>count</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>在支持此模式，插入<i>count</i>新列到模型中给定的前<i>column</i>。在每个新列中的项目将成为该项目由儿童代表<i>parent</i>模型索引。</p>
+<p>If <i>column</i>为0时，列追加到任何现有的列。</p>
+<p>If <i>column</i> is <a href="qabstractitemmodel.html#columnCount" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#columnCount">columnCount</a>（）中，列被附加到任何现有的列。</p>
+<p>If <i>parent</i>没有孩子，一个单列带<i>count</i>列被插入。</p>
+<p>返回True如果成功插入的列，否则返回False 。</p>
+<p>基类的实现不执行任何操作并返回False 。</p>
+<p>如果你实现了自己的模型，你可以，如果你想支持插入重新实现此功能。或者，您也可以提供自己的API，用于改变数据。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#insertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertRows">insertRows</a>（ ）<a href="qabstractitemmodel.html#removeColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeColumns">removeColumns</a>（ ）<a href="qabstractitemmodel.html#beginInsertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginInsertColumns">beginInsertColumns</a>（）和<a href="qabstractitemmodel.html#endInsertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endInsertColumns">endInsertColumns</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertRow"></a>bool QAbstractItemModel.insertRow (<i>self</i>, int <i>row</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p><b>Note:</b>基类实现这个功能不执行任何操作并返回False 。</p>
+<p>给定前插入一个单行<i>row</i>中的子项<i>parent</i>规定。</p>
+<p>返回True如果被插入的行，否则返回False 。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#insertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertRows">insertRows</a>（ ）<a href="qabstractitemmodel.html#insertColumn" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertColumn">insertColumn</a>（）和<a href="qabstractitemmodel.html#removeRow" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeRow">removeRow</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertRows"></a>bool QAbstractItemModel.insertRows (<i>self</i>, int <i>row</i>, int <i>count</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p><b>Note:</b>基类实现这个功能不执行任何操作并返回False 。</p>
+<p>在支持此模式，插入<i>count</i>行插入到模型中给定前<i>row</i>。在新行项目将成为该项目由儿童代表<i>parent</i>模型索引。</p>
+<p>If <i>row</i>为0时，行前加上父的任何现有行。</p>
+<p>If <i>row</i> is <a href="qabstractitemmodel.html#rowCount" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#rowCount">rowCount</a>（ ） ，该行被追加到父任何现有行。</p>
+<p>If <i>parent</i>没有孩子，与一列<i>count</i>行插入。</p>
+<p>返回True如果成功插入的行，否则返回False 。</p>
+<p>如果你实现了自己的模型，你可以，如果你想支持插入重新实现此功能。或者，您也可以提供自己的API，用于改变数据。在这两种情况下，你将需要调用<a href="qabstractitemmodel.html#beginInsertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginInsertRows">beginInsertRows</a>（）和<a href="qabstractitemmodel.html#endInsertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endInsertRows">endInsertRows</a>（） ，用于通知该模型已经改变其他组件。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#insertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertColumns">insertColumns</a>（ ）<a href="qabstractitemmodel.html#removeRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeRows">removeRows</a>（ ）<a href="qabstractitemmodel.html#beginInsertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginInsertRows">beginInsertRows</a>（）和<a href="qabstractitemmodel.html#endInsertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endInsertRows">endInsertRows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="itemData"></a>dict-of-int-QVariant QAbstractItemModel.itemData (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>返回一个值模型对项目的所有预定义角色一个地图上的指定<i>index</i>。</p>
+<p>如果你想扩展这个功能的默认行为，包括在地图上自定义角色重新实现这个函数。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#setItemData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setItemData">setItemData</a>（ ）<a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">Qt.ItemDataRole</a>和<a href="qabstractitemmodel.html#data" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#data">data</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="match"></a>list-of-QModelIndex QAbstractItemModel.match (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>start</i>, int <i>role</i>, QVariant <i>value</i>, int <i>hits</i> = 1, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-matchflags.html">Qt.MatchFlags</a> <i>flags</i> = Qt.MatchStartsWith|Qt.MatchWrap)</h3>
+<p>返回索引中的列中的项目清单<i>start</i>如根据给定的存储的数据索引<i>role</i>匹配指定<i>value</i>。搜索的执行方式是由定义<i>flags</i>给出。返回的列表可能是空的。</p>
+<p>搜索开始从<i>start</i>指数，并继续进行，直到匹配的数据项的数目等于<i>hits</i>，搜索到达最后一排，或者搜索到达<i>start</i>再次 - 这取决于是否<tt>MatchWrap</tt>在被指定<i>flags</i>。如果你想搜索所有匹配的项，请使用<i>hits</i>= -1 。</p>
+<p>默认情况下，该功能将执行对所有项目的包装，基于字符串的比较，寻找开头所指定的搜索条件的项目<i>value</i>。</p>
+<p><b>Note:</b>这个函数的默认实现只搜索列。重新实现此功能可包括不同的搜索行为。</p>
+
+
+<h3 class="fn">
+<a name="mimeData"></a><a href="qmimedata.html" tppabs="http://pyqt4doc.appspot.com/qmimedata.html">QMimeData</a> QAbstractItemModel.mimeData (<i>self</i>, list-of-QModelIndex <i>indexes</i>)</h3>
+<p>该<i>QMimeData</i>结果</p>
+<p>返回一个对象，它包含的数据序列化的项对应列表<i>indexes</i>规定。用于描述编码数据的格式是从所获得的<a href="qabstractitemmodel.html#mimeTypes" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#mimeTypes">mimeTypes</a>（）函数。</p>
+<p>如果索引列表是空的，或者没有支持的MIME类型，则返回0 ，而不是一个序列化的空单。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#mimeTypes" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#mimeTypes">mimeTypes</a>（）和<a href="qabstractitemmodel.html#dropMimeData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#dropMimeData">dropMimeData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mimeTypes"></a>QStringList QAbstractItemModel.mimeTypes (<i>self</i>)</h3>
+<p>返回可用于描述模型索引的列表的MIME类型的列表。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#mimeData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#mimeData">mimeData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="parent"></a><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> QAbstractItemModel.parent (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>child</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回模型项目的父与给定<i>index</i>。如果该项目没有父，无效<a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a>返回。</p>
+<p>，揭露树数据结构模型中使用一个共同的约定是，在第一列的项目只生孩子。对于这种情况，在子类中重新实现此功能，当返回的列<a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a>将是0 。</p>
+<p>当重新实现在子类中这个功能，要小心避免调用<a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a>构件的功能，如<a href="qmodelindex.html#parent" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html#parent">QModelIndex.parent</a>（ ） ，因为属于你的模型索引可以简单的叫你的实现，从而导致无限递归。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#createIndex" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#createIndex">createIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="parent-2"></a><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> QAbstractItemModel.parent (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="persistentIndexList"></a>list-of-QModelIndex QAbstractItemModel.persistentIndexList (<i>self</i>)</h3>
+<p>返回作为模型中的持久性索引的存储的索引列表。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="removeColumn"></a>bool QAbstractItemModel.removeColumn (<i>self</i>, int <i>column</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>删除给定的<i>column</i>从该子项<i>parent</i>规定。</p>
+<p>Returns true if the column is removed; otherwise returns
+false.</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#removeColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeColumns">removeColumns</a>（ ）<a href="qabstractitemmodel.html#removeRow" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeRow">removeRow</a>（）和<a href="qabstractitemmodel.html#insertColumn" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertColumn">insertColumn</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="removeColumns"></a>bool QAbstractItemModel.removeColumns (<i>self</i>, int <i>column</i>, int <i>count</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>在支持此模式，会删除<i>count</i>从给定的列<i>column</i>在父<i>parent</i>从模型。</p>
+<p>返回True如果列被成功删除，否则返回False 。</p>
+<p>基类的实现不执行任何操作并返回False 。</p>
+<p>如果你实现了自己的模型，你可以，如果你想支持删除重新实现此功能。或者，您也可以提供自己的API，用于改变数据。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#removeColumn" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeColumn">removeColumn</a>（ ）<a href="qabstractitemmodel.html#removeRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeRows">removeRows</a>（ ）<a href="qabstractitemmodel.html#insertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertColumns">insertColumns</a>（ ）<a href="qabstractitemmodel.html#beginRemoveColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginRemoveColumns">beginRemoveColumns</a>（）和<a href="qabstractitemmodel.html#endRemoveColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endRemoveColumns">endRemoveColumns</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="removeRow"></a>bool QAbstractItemModel.removeRow (<i>self</i>, int <i>row</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>删除给定的<i>row</i>从该子项<i>parent</i>规定。</p>
+<p>返回True如果该行被删除，否则返回False 。</p>
+<p>这是一个方便的功能调用<a href="qabstractitemmodel.html#removeRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeRows">removeRows</a>（ ） 。该<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a>实施<a href="qabstractitemmodel.html#removeRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeRows">removeRows</a>（ ）什么也不做。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#removeRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeRows">removeRows</a>（ ）<a href="qabstractitemmodel.html#removeColumn" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeColumn">removeColumn</a>（）和<a href="qabstractitemmodel.html#insertRow" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertRow">insertRow</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="removeRows"></a>bool QAbstractItemModel.removeRows (<i>self</i>, int <i>row</i>, int <i>count</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>在支持此模式，会删除<i>count</i>从给定的行<i>row</i>在父<i>parent</i>从模型。</p>
+<p>返回True如果行被成功取出，否则返回False 。</p>
+<p>基类的实现不执行任何操作并返回False 。</p>
+<p>如果你实现了自己的模型，你可以，如果你想支持删除重新实现此功能。或者，您也可以提供自己的API，用于改变数据。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#removeRow" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeRow">removeRow</a>（ ）<a href="qabstractitemmodel.html#removeColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeColumns">removeColumns</a>（ ）<a href="qabstractitemmodel.html#insertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertColumns">insertColumns</a>（ ）<a href="qabstractitemmodel.html#beginRemoveRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginRemoveRows">beginRemoveRows</a>（）和<a href="qabstractitemmodel.html#endRemoveRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endRemoveRows">endRemoveRows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="reset"></a>QAbstractItemModel.reset (<i>self</i>)</h3>
+<p>该模式重置为在任何连接的观点其原始状态。</p>
+<p><b>Note:</b>使用<a href="qabstractitemmodel.html#beginResetModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginResetModel">beginResetModel</a>（）和<a href="qabstractitemmodel.html#endResetModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endResetModel">endResetModel</a>（ ），而不是只要有可能。使用此方法只有在没有办法来调用<a href="qabstractitemmodel.html#beginResetModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginResetModel">beginResetModel</a>（ ）无效的模型前。否则，可能会导致意外的行为，与代理模式使用时尤其如此。</p>
+
+
+<h3 class="fn">
+<a name="resetInternalData"></a>QAbstractItemModel.resetInternalData (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void resetInternalData()</tt>。</p>
+<p>这个槽被调用后只是一个模型的内部数据，而它被复位清零。</p>
+<p>该槽设置的混凝土代理模型的子类的便利性，例如子类<a href="qsortfilterproxymodel.html" tppabs="http://pyqt4doc.appspot.com/qsortfilterproxymodel.html">QSortFilterProxyModel</a>它保持额外的数据。</p>
+<pre class="cpp">
+ <span class="keyword">class</span> CustomDataProxy : <span class="keyword">public</span> <span class="type"><a href="qsortfilterproxymodel.html" tppabs="http://pyqt4doc.appspot.com/qsortfilterproxymodel.html">QSortFilterProxyModel</a></span>
+ {
+     Q_OBJECT
+ <span class="keyword">public</span>:
+     CustomDataProxy(<span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span> <span class="operator">*</span>parent)
+       : <span class="type"><a href="qsortfilterproxymodel.html" tppabs="http://pyqt4doc.appspot.com/qsortfilterproxymodel.html">QSortFilterProxyModel</a></span>(parent)
+     {
+     }
+
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+
+     <span class="type"><a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a></span> data(<span class="keyword">const</span> <span class="type"><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a></span> <span class="operator">&amp;</span>index<span class="operator">,</span> <span class="type">int</span> role)
+     {
+         <span class="keyword">if</span> (role <span class="operator">!</span><span class="operator">=</span> <span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>BackgroundRole)
+             <span class="keyword">return</span> <span class="type"><a href="qsortfilterproxymodel.html" tppabs="http://pyqt4doc.appspot.com/qsortfilterproxymodel.html">QSortFilterProxyModel</a></span><span class="operator">.</span>data(index<span class="operator">,</span> role);
+
+         <span class="keyword">if</span> (m_customData<span class="operator">.</span>contains(index<span class="operator">.</span>row()))
+             <span class="keyword">return</span> m_customData<span class="operator">.</span>value(index<span class="operator">.</span>row());
+         <span class="keyword">return</span> <span class="type"><a href="qsortfilterproxymodel.html" tppabs="http://pyqt4doc.appspot.com/qsortfilterproxymodel.html">QSortFilterProxyModel</a></span><span class="operator">.</span>data(index<span class="operator">,</span> role);
+     }
+
+ <span class="keyword">private</span> <span class="keyword">slots</span>:
+     <span class="type">void</span> resetInternalData()
+     {
+         m_customData<span class="operator">.</span>clear();
+     }
+
+ <span class="keyword">private</span>:
+   <span class="type"><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qhash.html">QHash</a></span><span class="operator">&lt;</span><span class="type">int</span><span class="operator">,</span> <span class="type"><a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a></span><span class="operator">&gt;</span> m_customData;
+ };
+</pre>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#modelAboutToBeReset" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#modelAboutToBeReset">modelAboutToBeReset</a>（）和<a href="qabstractitemmodel.html#modelReset" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#modelReset">modelReset</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="revert"></a>QAbstractItemModel.revert (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void revert()</tt>。</p>
+<p>让模型知道它应该丢弃缓存信息。此功能通常用于行编辑。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#submit" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#submit">submit</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="roleNames"></a>dict-of-int-QByteArray QAbstractItemModel.roleNames (<i>self</i>)</h3>
+<p>返回模型的角色名称。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#setRoleNames" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setRoleNames">setRoleNames</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rowCount"></a>int QAbstractItemModel.rowCount (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回下给定的行数<i>parent</i>。当父是有效则表示rowCount等是返回父孩子的数量。</p>
+<p><b>Note:</b>当实现一个基于表的模型， rowCount等（）应该返回0当父是有效的。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#columnCount" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#columnCount">columnCount</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setData"></a>bool QAbstractItemModel.setData (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>, QVariant <i>value</i>, int <i>role</i> = Qt.EditRole)</h3>
+<p>设置<i>role</i>对于在项目数据<i>index</i>至<i>value</i>。</p>
+<p>成功返回True ，否则返回False 。</p>
+<p>该<a href="qabstractitemmodel.html#dataChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#dataChanged">dataChanged</a>（）信号应被发射，如果数据被成功设置。</p>
+<p>基类实现返回False 。此功能与<a href="qabstractitemmodel.html#data" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#data">data</a>（ ）必须被重新实现可编辑的模型。</p>
+<p><b>See also</b> <a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">Qt.ItemDataRole</a>，<a href="qabstractitemmodel.html#data" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#data">data</a>（）和<a href="qabstractitemmodel.html#itemData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#itemData">itemData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setHeaderData"></a>bool QAbstractItemModel.setHeaderData (<i>self</i>, int <i>section</i>, <a href="qt.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Orientation-enum">Qt.Orientation</a> <i>orientation</i>, QVariant <i>value</i>, int <i>role</i> = Qt.EditRole)</h3>
+<p>设置数据为给定的<i>role</i>和<i>section</i>在用指定的标头<i>orientation</i>到<i>value</i>提供。</p>
+<p>返回True如果标头的数据进行了更新，否则返回False 。</p>
+<p>当重新实现此功能，<a href="qabstractitemmodel.html#headerDataChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#headerDataChanged">headerDataChanged</a>（）信号必须被明确地射出。</p>
+<p><b>See also</b> <a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">Qt.ItemDataRole</a>和<a href="qabstractitemmodel.html#headerData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#headerData">headerData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setItemData"></a>bool QAbstractItemModel.setItemData (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>, dict-of-int-QVariant <i>roles</i>)</h3>
+<p>设置角色数据，该项目在<i>index</i>在相关联的值<i>roles</i>，对于每<a href="qt.html#ItemDataRole-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ItemDataRole-enum">Qt.ItemDataRole</a>。</p>
+<p>成功返回True ，否则返回False 。</p>
+<p>角色不在<i>roles</i>将不会被修改。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#setData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setData">setData</a>（ ）<a href="qabstractitemmodel.html#data" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#data">data</a>（）和<a href="qabstractitemmodel.html#itemData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#itemData">itemData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setRoleNames"></a>QAbstractItemModel.setRoleNames (<i>self</i>, dict-of-int-QByteArray <i>roleNames</i>)</h3>
+<p>设置模型的角色名<i>roleNames</i>。</p>
+<p>此功能允许在声明式UI角色，属性名角色标识符的映射。该模型使用之前这个函数必须被调用。该模型已被设置后，修改角色名，可能会导致未定义的行为。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#roleNames" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#roleNames">roleNames</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setSupportedDragActions"></a>QAbstractItemModel.setSupportedDragActions (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-dropactions.html">Qt.DropActions</a>)</h3>
+<p>设置支持拖放<i>actions</i>为模型中的项。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#supportedDragActions" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#supportedDragActions">supportedDragActions</a>（）和<a href="index.htm#using-drag-and-drop-with-item-views" tppabs="http://pyqt4doc.appspot.com/model-view-programming.html#using-drag-and-drop-with-item-views">Using
+drag and drop with item views</a>。</p>
+
+
+<h3 class="fn">
+<a name="sibling"></a><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> QAbstractItemModel.sibling (<i>self</i>, int <i>row</i>, int <i>column</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>idx</i>)</h3>
+<p>返回在同级<i>row</i>和<i>column</i>对于在项目<i>index</i>，或无效<a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a>如果没有兄弟在该位置。</p>
+<p>兄弟（ ）只是一个方便的功能，发现该项目的父，并使用它来检索指定的子项的索引<i>row</i>和<i>column</i>。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#index" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#index">index</a>（ ）<a href="qmodelindex.html#row" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html#row">QModelIndex.row</a>（）和<a href="qmodelindex.html#column" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html#column">QModelIndex.column</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sort"></a>QAbstractItemModel.sort (<i>self</i>, int <i>column</i>, <a href="qt.html#SortOrder-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#SortOrder-enum">Qt.SortOrder</a> <i>order</i> = Qt.AscendingOrder)</h3>
+<p>通过排序模型<i>column</i>在给定的<i>order</i>。</p>
+<p>基类的实现不执行任何操作。</p>
+
+
+<h3 class="fn">
+<a name="span"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QAbstractItemModel.span (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>返回由所代表的项目的行和列跨度<i>index</i>。</p>
+<p><b>Note:</b>目前，不使用跨度。</p>
+
+
+<h3 class="fn">
+<a name="submit"></a>bool QAbstractItemModel.submit (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>bool submit()</tt>。</p>
+<p>让模型知道它应该提交缓存信息到永久存储。此功能通常用于行编辑。</p>
+<p>返回True如果没有错误，否则返回False 。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#revert" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#revert">revert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="supportedDragActions"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-dropactions.html">Qt.DropActions</a> QAbstractItemModel.supportedDragActions (<i>self</i>)</h3>
+<p>返回通过此模型中的数据所支持的行动。</p>
+<p>默认实现返回<a href="qabstractitemmodel.html#supportedDropActions" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#supportedDropActions">supportedDropActions</a>（ ），除非特定的值被设置<a href="qabstractitemmodel.html#setSupportedDragActions" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setSupportedDragActions">setSupportedDragActions</a>（ ） 。</p>
+<p>supportedDragActions （ ）是用来通过<a href="qabstractitemview.html#startDrag" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html#startDrag">QAbstractItemView.startDrag</a>（）作为当发生拖拽时的默认值。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#setSupportedDragActions" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setSupportedDragActions">setSupportedDragActions</a>（ ）<a href="qt.html#DropAction-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#DropAction-enum">Qt.DropActions</a>和<a href="index.htm#using-drag-and-drop-with-item-views" tppabs="http://pyqt4doc.appspot.com/model-view-programming.html#using-drag-and-drop-with-item-views">Using
+drag and drop with item views</a>。</p>
+
+
+<h3 class="fn">
+<a name="supportedDropActions"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-dropactions.html">Qt.DropActions</a> QAbstractItemModel.supportedDropActions (<i>self</i>)</h3>
+<p>返回此模型所支持的放置动作。</p>
+<p>默认实现返回<a href="qt.html#DropAction-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#DropAction-enum">Qt.CopyAction</a>。如果你想支持额外的动作重新实现这个函数。您还必须重新实现<a href="qabstractitemmodel.html#dropMimeData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#dropMimeData">dropMimeData</a>（ ）函数来处理额外的操作。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#dropMimeData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#dropMimeData">dropMimeData</a>（ ）<a href="qt.html#DropAction-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#DropAction-enum">Qt.DropActions</a>和<a href="index.htm#using-drag-and-drop-with-item-views" tppabs="http://pyqt4doc.appspot.com/model-view-programming.html#using-drag-and-drop-with-item-views">Using
+drag and drop with item views</a>。</p>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="columnsAboutToBeInserted"></a>void columnsAboutToBeInserted (const QModelIndex&amp;,int,int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射列被插入到模型之前。新项目将被定位之间<i>start</i>和<i>end</i>包容性，在给定的<i>parent</i>项目。</p>
+<p><b>Note:</b>连接到该信号成分用它来适应变化的模型的尺寸。它只能由发射<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a>实现，并且不能明确地在子码发射。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#insertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertColumns">insertColumns</a>（）和<a href="qabstractitemmodel.html#beginInsertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginInsertColumns">beginInsertColumns</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="columnsAboutToBeMoved"></a>void columnsAboutToBeMoved (const QModelIndex&amp;,int,int,const QModelIndex&amp;,int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射之前列模型内移动。将要移动的项目是那些之间<i>sourceStart</i>和<i>sourceEnd</i>包容性，在给定的<i>sourceParent</i>项目。他们将被移动到<i>destinationParent</i>开始在列<i>destinationColumn</i>。</p>
+<p><b>Note:</b>连接到该信号成分用它来适应变化的模型的尺寸。它只能由发射<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a>实现，并且不能明确地在子码发射。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#beginMoveRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginMoveRows">beginMoveRows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="columnsAboutToBeRemoved"></a>void columnsAboutToBeRemoved (const QModelIndex&amp;,int,int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射列被从模型中移除之前。要删除的项目是指之间<i>start</i>和<i>end</i>包容性，在给定的<i>parent</i>项目。</p>
+<p><b>Note:</b>连接到该信号成分用它来适应变化的模型的尺寸。它只能由发射<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a>实现，并且不能明确地在子码发射。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#removeColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeColumns">removeColumns</a>（）和<a href="qabstractitemmodel.html#beginRemoveColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginRemoveColumns">beginRemoveColumns</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="columnsInserted"></a>void columnsInserted (const QModelIndex&amp;,int,int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>列被插入到模型中后，此信号被发射。新项目是指之间<i>start</i>和<i>end</i>包容性，在给定的<i>parent</i>项目。</p>
+<p><b>Note:</b>连接到该信号成分用它来适应变化的模型的尺寸。它只能由发射<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a>实现，并且不能明确地在子码发射。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#insertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertColumns">insertColumns</a>（）和<a href="qabstractitemmodel.html#beginInsertColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginInsertColumns">beginInsertColumns</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="columnsMoved"></a>void columnsMoved (const QModelIndex&amp;,int,int,const QModelIndex&amp;,int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射的模型内的列已被移动之后。之间的项目<i>sourceStart</i>和<i>sourceEnd</i>包容性，在给定的<i>sourceParent</i>项目已移至<i>destinationParent</i>开始在列<i>destinationColumn</i>。</p>
+<p><b>Note:</b>连接到该信号成分用它来适应变化的模型的尺寸。它只能由发射<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a>实现，并且不能明确地在子码发射。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#beginMoveRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginMoveRows">beginMoveRows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="columnsRemoved"></a>void columnsRemoved (const QModelIndex&amp;,int,int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>列已被从模型中移除之后，这个信号被发射。拆下的项目是那些之间<i>start</i>和<i>end</i>包容性，在给定的<i>parent</i>项目。</p>
+<p><b>Note:</b>连接到该信号成分用它来适应变化的模型的尺寸。它只能由发射<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a>实现，并且不能明确地在子码发射。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#removeColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeColumns">removeColumns</a>（）和<a href="qabstractitemmodel.html#beginRemoveColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginRemoveColumns">beginRemoveColumns</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="dataChanged"></a>void dataChanged (const QModelIndex&amp;,const QModelIndex&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时在现有项目中的数据更改。</p>
+<p>如果项目是相同的母公司，受影响的是那些之间<i>topLeft</i>和<i>bottomRight</i>包容性。如果该项目不具有相同的父，其行为是未定义的。</p>
+<p>当重新实现<a href="qabstractitemmodel.html#setData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setData">setData</a>（）函数，该信号必须被明确地射出。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#headerDataChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#headerDataChanged">headerDataChanged</a>（ ）<a href="qabstractitemmodel.html#setData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setData">setData</a>（）和<a href="qabstractitemmodel.html#layoutChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#layoutChanged">layoutChanged</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="headerDataChanged"></a>void headerDataChanged (Qt::Orientation,int,int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的报头被改变。该<i>orientation</i>表示水平或垂直头是否已改变。在从标题中的章节<i>first</i>到<i>last</i>需要被更新。</p>
+<p>当重新实现<a href="qabstractitemmodel.html#setHeaderData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setHeaderData">setHeaderData</a>（）函数，该信号必须被明确地射出。</p>
+<p>如果要更改的行或列数你不需要发出这个信号，但使用开始/结束功能（指在子类上一节<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a>类描述详情） 。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#headerData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#headerData">headerData</a>（ ）<a href="qabstractitemmodel.html#setHeaderData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setHeaderData">setHeaderData</a>（）和<a href="qabstractitemmodel.html#dataChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#dataChanged">dataChanged</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="layoutAboutToBeChanged"></a>void layoutAboutToBeChanged ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射一个模型的布局被改变之前。连接到该信号成分用它来适应变化的模型的布局。</p>
+<p>子类应发光layoutAboutToBeChanged （ ）后更新任何持久性模型索引。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#layoutChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#layoutChanged">layoutChanged</a>（）和<a href="qabstractitemmodel.html#changePersistentIndex" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#changePersistentIndex">changePersistentIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="layoutChanged"></a>void layoutChanged ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时通过模型暴露项的布局改变了，例如，当该模型已排序。当收到一个针对这一信号，它应更新项目的布局，以反映这一变化。</p>
+<p>当子类<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a> or <a href="qabstractproxymodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractproxymodel.html">QAbstractProxyModel</a>，请确保您发出<a href="qabstractitemmodel.html#layoutAboutToBeChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#layoutAboutToBeChanged">layoutAboutToBeChanged</a>（ ）改变项目的顺序或改变你面对的看法，改变布局后发出layoutChanged （ ）的数据结构之前。</p>
+<p>子类应发光layoutChanged （ ）之前更新任何持久性模型索引。换句话说，该结构变化时：</p>
+<ul>
+<li>emit layoutAboutToBeChanged</li>
+<li>Remember the <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> that
+will change</li>
+<li>Update your internal data</li>
+<li>Call <a href="qabstractitemmodel.html#changePersistentIndex" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#changePersistentIndex">changePersistentIndex</a>()</li>
+<li>emit layoutChanged</li>
+</ul>
+<p><b>See also</b> <a href="qabstractitemmodel.html#layoutAboutToBeChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#layoutAboutToBeChanged">layoutAboutToBeChanged</a>（ ）<a href="qabstractitemmodel.html#dataChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#dataChanged">dataChanged</a>（ ）<a href="qabstractitemmodel.html#headerDataChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#headerDataChanged">headerDataChanged</a>（ ）<a href="qabstractitemmodel.html#modelReset" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#modelReset">modelReset</a>（）和<a href="qabstractitemmodel.html#changePersistentIndex" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#changePersistentIndex">changePersistentIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="modelAboutToBeReset"></a>void modelAboutToBeReset ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时<a href="qabstractitemmodel.html#reset" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#reset">reset</a>（ ）被调用时，模型的内部状态（例如持久化模型指标）已经失效之前。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#beginResetModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginResetModel">beginResetModel</a>（）和<a href="qabstractitemmodel.html#modelReset" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#modelReset">modelReset</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="modelReset"></a>void modelReset ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时<a href="qabstractitemmodel.html#reset" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#reset">reset</a>（ ）被调用时，模型的内部状态（例如持久化模型指标）已经无效后。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#endResetModel" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#endResetModel">endResetModel</a>（）和<a href="qabstractitemmodel.html#modelAboutToBeReset" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#modelAboutToBeReset">modelAboutToBeReset</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rowsAboutToBeInserted"></a>void rowsAboutToBeInserted (const QModelIndex&amp;,int,int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射的行被插入到模型之前。新项目将被定位之间<i>start</i>和<i>end</i>包容性，在给定的<i>parent</i>项目。</p>
+<p><b>Note:</b>连接到该信号成分用它来适应变化的模型的尺寸。它只能由发射<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a>实现，并且不能明确地在子码发射。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#insertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertRows">insertRows</a>（）和<a href="qabstractitemmodel.html#beginInsertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginInsertRows">beginInsertRows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rowsAboutToBeMoved"></a>void rowsAboutToBeMoved (const QModelIndex&amp;,int,int,const QModelIndex&amp;,int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射之前的行的模型内移动。将要移动的项目是那些之间<i>sourceStart</i>和<i>sourceEnd</i>包容性，在给定的<i>sourceParent</i>项目。他们将被移动到<i>destinationParent</i>开始于行<i>destinationRow</i>。</p>
+<p><b>Note:</b>连接到该信号成分用它来适应变化的模型的尺寸。它只能由发射<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a>实现，并且不能明确地在子码发射。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#beginMoveRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginMoveRows">beginMoveRows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rowsAboutToBeRemoved"></a>void rowsAboutToBeRemoved (const QModelIndex&amp;,int,int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射行从模型中删除之前。将要删除的项目是那些之间<i>start</i>和<i>end</i>包容性，在给定的<i>parent</i>项目。</p>
+<p><b>Note:</b>连接到该信号成分用它来适应变化的模型的尺寸。它只能由发射<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a>实现，并且不能明确地在子码发射。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#removeRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeRows">removeRows</a>（）和<a href="qabstractitemmodel.html#beginRemoveRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginRemoveRows">beginRemoveRows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rowsInserted"></a>void rowsInserted (const QModelIndex&amp;,int,int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>行被插入该模型之后，这个信号被发射。新项目是指之间<i>start</i>和<i>end</i>包容性，在给定的<i>parent</i>项目。</p>
+<p><b>Note:</b>连接到该信号成分用它来适应变化的模型的尺寸。它只能由发射<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a>实现，并且不能明确地在子码发射。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#insertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertRows">insertRows</a>（）和<a href="qabstractitemmodel.html#beginInsertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginInsertRows">beginInsertRows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rowsMoved"></a>void rowsMoved (const QModelIndex&amp;,int,int,const QModelIndex&amp;,int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射的模型内的行已被移动之后。之间的项目<i>sourceStart</i>和<i>sourceEnd</i>包容性，在给定的<i>sourceParent</i>项目已移至<i>destinationParent</i>开始于行<i>destinationRow</i>。</p>
+<p><b>Note:</b>连接到该信号成分用它来适应变化的模型的尺寸。它只能由发射<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a>实现，并且不能明确地在子码发射。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#beginMoveRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginMoveRows">beginMoveRows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rowsRemoved"></a>void rowsRemoved (const QModelIndex&amp;,int,int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>行已被从模型中移除之后，这个信号被发射。拆下的项目是那些之间<i>start</i>和<i>end</i>包容性，在给定的<i>parent</i>项目。</p>
+<p><b>Note:</b>连接到该信号成分用它来适应变化的模型的尺寸。它只能由发射<a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a>实现，并且不能明确地在子码发射。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#removeRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeRows">removeRows</a>（）和<a href="qabstractitemmodel.html#beginRemoveRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#beginRemoveRows">beginRemoveRows</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

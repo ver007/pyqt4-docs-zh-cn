@@ -1,0 +1,83 @@
+﻿<html>
+<head>
+<title>QDBusPendingCall Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDBusPendingCall Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdbus.html">QtDBus</a> module]</sup></sup>
+</h1>
+<p>该QDBusPendingCall类是指一个挂起的异步调用<a href="#details">More...</a></p>
+
+<p>通过继承<a href="qdbuspendingcallwatcher.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingcallwatcher.html">QDBusPendingCallWatcher</a>和<a href="qdbuspendingreply.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html">QDBusPendingReply</a>。</p>
+<h3>Methods</h3>
+<ul><li>
+<div class="fn"></div>
+<b><a href="qdbuspendingcall.html#QDBusPendingCall" tppabs="http://pyqt4doc.appspot.com/qdbuspendingcall.html#QDBusPendingCall">__init__</a></b> (<i>self</i>, QDBusPendingCall <i>other</i>)</li></ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QDBusPendingCall <b><a href="qdbuspendingcall.html#fromCompletedCall" tppabs="http://pyqt4doc.appspot.com/qdbuspendingcall.html#fromCompletedCall">fromCompletedCall</a></b> (QDBusMessage <i>message</i>)</li>
+<li>
+<div class="fn"></div>QDBusPendingCall <b><a href="qdbuspendingcall.html#fromError" tppabs="http://pyqt4doc.appspot.com/qdbuspendingcall.html#fromError">fromError</a></b> (QDBusError <i>error</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDBusPendingCall类是指一个挂起的异步调用</p>
+<p>一个QDBusPendingCall对象是引用的方法调用所发送过的D-Bus无需等待答复。 QDBusPendingCall是不透明的类型，意味着被用作手柄，一个挂起的答复。</p>
+<p>在大多数程序中， QDBusPendingCall类不会被直接使用。它可以安全地替换为基于模板<a href="qdbuspendingreply.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html">QDBusPendingReply</a>为了访问该答复的内容，或者等待它完成。</p>
+<p>该<a href="qdbuspendingcallwatcher.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingcallwatcher.html">QDBusPendingCallWatcher</a>类允许一个连接到信号时会显示答复已经到达或如果呼叫已超时。它也提供了<a href="qdbuspendingcallwatcher.html#waitForFinished" tppabs="http://pyqt4doc.appspot.com/qdbuspendingcallwatcher.html#waitForFinished">QDBusPendingCallWatcher.waitForFinished</a>（ ）方法，将暂停该计划的执行，直到回复已经来临。</p>
+<p><b>Note:</b>如果您创建一个QDBusPendingCall对象的副本，所有的信息将在多个副本之间共享。因此， QDBusPendingCall是一个明确的共享对象，不提供拆卸副本的方法（因为它们指的是同一个悬而未决的调用）</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDBusPendingCall"></a>QDBusPendingCall.__init__ (<i>self</i>, <a href="qdbuspendingcall.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingcall.html">QDBusPendingCall</a> <i>other</i>)</h3>
+<p>创建的副本<i>other</i>挂起的异步调用。注意，这两个对象将引用同一个悬而未决的呼叫。</p>
+
+
+<h3 class="fn">
+<a name="fromCompletedCall"></a><a href="qdbuspendingcall.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingcall.html">QDBusPendingCall</a> QDBusPendingCall.fromCompletedCall (<a href="qdbusmessage.html" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html">QDBusMessage</a> <i>message</i>)</h3>
+<p>创建<a href="qdbuspendingcall.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingcall.html">QDBusPendingCall</a>基于消息对象<i>msg</i>。该消息的类型必须为<a href="qdbusmessage.html#MessageType-enum" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#MessageType-enum">QDBusMessage.ErrorMessage</a>
+or <a href="qdbusmessage.html#MessageType-enum" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#MessageType-enum">QDBusMessage.ReplyMessage</a>（即，一个消息，是一个典型的呼叫完成的） 。</p>
+<p>这个功能对于需要模拟一个悬而未决的呼叫代码很有用，但已经结束。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qdbuspendingcall.html#fromError" tppabs="http://pyqt4doc.appspot.com/qdbuspendingcall.html#fromError">fromError</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fromError"></a><a href="qdbuspendingcall.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingcall.html">QDBusPendingCall</a> QDBusPendingCall.fromError (<a href="qdbuserror.html" tppabs="http://pyqt4doc.appspot.com/qdbuserror.html">QDBusError</a> <i>error</i>)</h3>
+<p>创建<a href="qdbuspendingcall.html" tppabs="http://pyqt4doc.appspot.com/qdbuspendingcall.html">QDBusPendingCall</a>根据错误条件对象<i>error</i>。由此产生的未决调用对象将在“完成”状态，<a href="qdbuspendingreply.html#isError" tppabs="http://pyqt4doc.appspot.com/qdbuspendingreply.html#isError">QDBusPendingReply.isError</a>（ ）将返回True 。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qdbuspendingcall.html#fromCompletedCall" tppabs="http://pyqt4doc.appspot.com/qdbuspendingcall.html#fromCompletedCall">fromCompletedCall</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

@@ -1,0 +1,227 @@
+﻿<html>
+<head>
+<title>QDesktopServices Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDesktopServices Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QDesktopServices类提供了访问常用的桌面服务的方法。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qdesktopservices.html#StandardLocation-enum" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#StandardLocation-enum">StandardLocation</a></b> { DesktopLocation, DocumentsLocation, FontsLocation, ApplicationsLocation, ..., CacheLocation }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdesktopservices.html#QDesktopServices" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#QDesktopServices">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdesktopservices.html#QDesktopServices-2" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#QDesktopServices-2">__init__</a></b> (<i>self</i>, QDesktopServices)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QString <b><a href="qdesktopservices.html#displayName" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#displayName">displayName</a></b> (StandardLocation <i>type</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdesktopservices.html#openUrl" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#openUrl">openUrl</a></b> (QUrl <i>url</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdesktopservices.html#setUrlHandler" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#setUrlHandler">setUrlHandler</a></b> (QString <i>scheme</i>, QObject <i>receiver</i>, str <i>method</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdesktopservices.html#setUrlHandler-2" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#setUrlHandler-2">setUrlHandler</a></b> (QString <i>scheme</i>, callable <i>method</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdesktopservices.html#storageLocation" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#storageLocation">storageLocation</a></b> (StandardLocation <i>type</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdesktopservices.html#unsetUrlHandler" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#unsetUrlHandler">unsetUrlHandler</a></b> (QString <i>scheme</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDesktopServices类提供了访问常用的桌面服务的方法。</p>
+<p>许多桌面环境提供了可以被应用程序用于执行常见任务，如打开一个网页，在某种程度上，既一致，并考虑到了用户的应用程序首选项的服务。</p>
+<p>这个类包含的功能，提供简单的界面使用这些服务，表明他们是成功还是失败。</p>
+<p>该<a href="qdesktopservices.html#openUrl" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#openUrl">openUrl</a>（ ）函数用于打开位于在外部应用程序中的任意文件的URL 。对于对应的资源在本地的文件系统（其中的URL方案“文件” ）上的URL ，一个合适的应用程序将被用来打开文件，否则， Web浏览器将被用来获取和显示文件。</p>
+<p>用户的桌面设置控制某些类型的可执行文件是否被打开进行浏览，或者如果他们转而执行。一些桌面环境配置为防止执行来自非本地URL获得文件的用户，或者要求用户的权限才这样做。</p>
+<a id="url-handlers" name="url-handlers"></a>
+<h3>URL Handlers</h3>
+<p>的行为<a href="qdesktopservices.html#openUrl" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#openUrl">openUrl</a>（ ）函数可以定制个人的URL方案，允许应用程序复盖默认的处理行为对于某些类型的URL 。</p>
+<p>调度机制允许将用于每个URL方案只有一个自定义处理程序，这是使用设置<a href="qdesktopservices.html#setUrlHandler" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#setUrlHandler">setUrlHandler</a>（）函数。每个处理程序被实现为只接受一个单一的插槽<a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>的说法。</p>
+<p>每个计划的现有处理程序可以与被删除<a href="qdesktopservices.html#unsetUrlHandler" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#unsetUrlHandler">unsetUrlHandler</a>（）函数。这将返回给定的方案的默认行为的处理行为。</p>
+<p>这个系统可以很容易地实现一个帮助系统，例如。说明可以使用标籤和文本浏览器提供<b>help://myapplication/mytopic</b>网址，并通过注册一个处理程序就能够在应用程序中显示的说明文字：</p>
+<pre class="cpp">
+ <span class="keyword">class</span> MyHelpHandler : <span class="keyword">public</span> <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span>
+ {
+     Q_OBJECT
+ <span class="keyword">public</span>:
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ <span class="keyword">public</span> <span class="keyword">slots</span>:
+     <span class="type">void</span> showHelp(<span class="keyword">const</span> <span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span> <span class="operator">&amp;</span>url);
+ };
+
+ <span class="type">QDesktopServices</span><span class="operator">.</span><a href="qdesktopservices.html#setUrlHandler" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#setUrlHandler">setUrlHandler</a>(<span class="string">"help"</span><span class="operator">,</span> helpInstance<span class="operator">,</span> <span class="string">"showHelp"</span>);
+</pre>
+<p>如果处理程序中你决定，你无法打开请求的URL ，你可以直接调用<a href="qdesktopservices.html#openUrl" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#openUrl">QDesktopServices.openUrl</a>（ ）再次使用相同的参数，它会尝试使用适当的机制，使用户的桌面环境打开URL 。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="StandardLocation-enum"></a>QDesktopServices.StandardLocation</h3>
+<p>该枚举描述可由QDesktopServices.storageLocation和QDesktopServices.displayName要查询的不同的位置。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDesktopServices.DesktopLocation</tt>
+</td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">返回用户的桌面目录。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDesktopServices.DocumentsLocation</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">返回用户的文档。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDesktopServices.FontsLocation</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">返回用户的字体。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDesktopServices.ApplicationsLocation</tt>
+</td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">返回用户的应用程序。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDesktopServices.MusicLocation</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">返回用户的音乐。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDesktopServices.MoviesLocation</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">返回用户的电影。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDesktopServices.PicturesLocation</tt>
+</td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">返回用户的图片。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDesktopServices.TempLocation</tt></td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">返回系统的临时目录。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDesktopServices.HomeLocation</tt></td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">返回用户的主目录。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDesktopServices.DataLocation</tt></td>
+<td class="topAlign"><tt>9</tt></td>
+<td class="topAlign">返回在持久应用程序数据可以被存储的目录位置。<a href="qcoreapplication.html#applicationName-prop" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#applicationName-prop">QCoreApplication.applicationName</a>和<a href="qcoreapplication.html#organizationName-prop" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#organizationName-prop">QCoreApplication.organizationName</a>应该在所有平台上。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDesktopServices.CacheLocation</tt></td>
+<td class="topAlign"><tt>10</tt></td>
+<td class="topAlign">返回在用户特定的非必要（缓存）的数据应该写入的目录位置。</td>
+</tr>
+</table>
+<p>这个枚举被引入或修改的Qt 4.4 。</p>
+<p><b>See also</b> <a href="qdesktopservices.html#storageLocation" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#storageLocation">storageLocation</a>（）和<a href="qdesktopservices.html#displayName" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#displayName">displayName</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDesktopServices"></a>QDesktopServices.__init__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="QDesktopServices-2"></a>QDesktopServices.__init__ (<i>self</i>, <a href="qdesktopservices.html" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html">QDesktopServices</a>)</h3>
+<h3 class="fn">
+<a name="displayName"></a>QString QDesktopServices.displayName (<a href="qdesktopservices.html#StandardLocation-enum" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#StandardLocation-enum">StandardLocation</a> <i>type</i>)</h3>
+<p>返回给定位置的本地化显示名称<i>type</i>或空<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>如果没有相关的位置可以找到。</p>
+
+
+<h3 class="fn">
+<a name="openUrl"></a>bool QDesktopServices.openUrl (<a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>url</i>)</h3>
+<p>打开给定的<i>url</i>在真实的，如果成功了适当的Web浏览器为用户的桌面环境，并返回，否则返回False 。</p>
+<p>如果URL是参考到本地文件（例如， URL模式是“文件” ），然后将它开了一个合适的应用程序，而不是一个Web浏览器。</p>
+<p>下面的示例打开一个文件驻留在包含空格的路径上的Windows文件系统：</p>
+<pre class="cpp">
+ <span class="type"><a href="qdesktopservices.html" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html">QDesktopServices</a></span><span class="operator">.</span>openUrl(<span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span>(<span class="string">"file:///C:/Documents and Settings/All Users/Desktop"</span><span class="operator">,</span> <span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span><span class="operator">.</span>TolerantMode));
+</pre>
+<p>如果<tt>mailto</tt>被指定的URL ，用户的电子邮件客户端将用于打开包含在URL中，类似的方式指定的选项作曲家窗口<tt>mailto</tt>该书是由Web浏览器处理。</p>
+<p>例如，下面的URL包含收件人（<tt>user@foo.com</tt>） ，一个主体（<tt>Test</tt>）和消息体（<tt>Just a test</tt>） ：</p>
+<pre class="cpp">
+ mailto:user@foo<span class="operator">.</span>com<span class="operator">?</span>subject<span class="operator">=</span>Test<span class="operator">&amp;</span>body<span class="operator">=</span>Just a test
+</pre>
+<p><b>Warning:</b>虽然许多电子邮件客户端可以发送附件和识别Unicode ，用户可能没有这些功能配置他们的客户。此外，某些电子邮件客户端（如Lotus Notes）的有问题，长的URL。</p>
+<p><b>Note:</b>基于Symbian操作系统，<tt>SwEvent</tt>能力是必需的打开给定<i>url</i>如果Web浏览器已经在运行。</p>
+<p><b>See also</b> <a href="qdesktopservices.html#setUrlHandler" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#setUrlHandler">setUrlHandler</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setUrlHandler"></a>QDesktopServices.setUrlHandler (QString <i>scheme</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>receiver</i>, str <i>method</i>)</h3>
+<p>设置处理程序给定的<i>scheme</i>成为该处理程序<i>method</i>通过提供<i>receiver</i>对象。</p>
+<p>此功能提供了一种方法来定制行为<a href="qdesktopservices.html#openUrl" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#openUrl">openUrl</a>（ ） 。如果<a href="qdesktopservices.html#openUrl" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#openUrl">openUrl</a>（ ）被调用与指定的URL<i>scheme</i>那么给定的<i>method</i>在<i>receiver</i>对象被调用，而不是<a href="qdesktopservices.html" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html">QDesktopServices</a>启动外部应用程序。</p>
+<p>所提供的方法必须被实现为一个时隙只接受单一<a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>的说法。</p>
+<p>如果setUrlHandler （ ）用来设置上已经有一个处理一个方案一个新的处理程序，现有的处理程序简单地替换成新的。自<a href="qdesktopservices.html" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html">QDesktopServices</a>不采取处理程序的所有权，当一个处理器被替换任何对象都将被删除。</p>
+<p>请注意，处理程序将总是从调用同一个线程中调用<a href="qdesktopservices.html#openUrl" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#openUrl">QDesktopServices.openUrl</a>（ ） 。</p>
+<p><b>See also</b> <a href="qdesktopservices.html#openUrl" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#openUrl">openUrl</a>（）和<a href="qdesktopservices.html#unsetUrlHandler" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#unsetUrlHandler">unsetUrlHandler</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setUrlHandler-2"></a>QDesktopServices.setUrlHandler (QString <i>scheme</i>, callable <i>method</i>)</h3>
+<h3 class="fn">
+<a name="storageLocation"></a>QString QDesktopServices.storageLocation (<a href="qdesktopservices.html#StandardLocation-enum" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#StandardLocation-enum">StandardLocation</a> <i>type</i>)</h3>
+<p>返回默认的系统目录下的文件<i>type</i>属于，或空字符串，如果该位置不能确定。</p>
+<p><b>Note:</b>返回的存储位置可以是不存在的目录，也就是说，它可能需要由系统或用户创建的。</p>
+<p><b>Note:</b>基于Symbian操作系统，<a href="qdesktopservices.html#StandardLocation-enum" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#StandardLocation-enum">ApplicationsLocation</a>总是相同的驱动器上的可执行文件指向的/ sys / bin文件夹中。<a href="qdesktopservices.html#StandardLocation-enum" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#StandardLocation-enum">FontsLocation</a>总是指向ROM驱动器上的文件夹中。 Symbian操作系统没有桌面的概念，<a href="qdesktopservices.html#StandardLocation-enum" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#StandardLocation-enum">DesktopLocation</a>返回相同的路径<a href="qdesktopservices.html#StandardLocation-enum" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#StandardLocation-enum">DocumentsLocation</a>。的标准位置休息指向同一个驱动器上的文件夹具有可执行，但如果可执行文件是在ROM中从C盘的文件夹被返回。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="unsetUrlHandler"></a>QDesktopServices.unsetUrlHandler (QString <i>scheme</i>)</h3>
+<p>移除先前设置的URL处理程序规定<i>scheme</i>。</p>
+<p><b>See also</b> <a href="qdesktopservices.html#setUrlHandler" tppabs="http://pyqt4doc.appspot.com/qdesktopservices.html#setUrlHandler">setUrlHandler</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

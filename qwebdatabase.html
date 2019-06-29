@@ -1,0 +1,137 @@
+﻿<html>
+<head>
+<title>QWebDatabase Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QWebDatabase Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtwebkit.html">QtWebKit</a> module]</sup></sup>
+</h1>
+<p>该QWebDatabase类提供了访问的HTML与JavaScript的创建5个数据库。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qwebdatabase.html#QWebDatabase" tppabs="http://pyqt4doc.appspot.com/qwebdatabase.html#QWebDatabase">__init__</a></b> (<i>self</i>, QWebDatabase <i>other</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qwebdatabase.html#displayName" tppabs="http://pyqt4doc.appspot.com/qwebdatabase.html#displayName">displayName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qwebdatabase.html#expectedSize" tppabs="http://pyqt4doc.appspot.com/qwebdatabase.html#expectedSize">expectedSize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qwebdatabase.html#fileName" tppabs="http://pyqt4doc.appspot.com/qwebdatabase.html#fileName">fileName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qwebdatabase.html#name" tppabs="http://pyqt4doc.appspot.com/qwebdatabase.html#name">name</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QWebSecurityOrigin <b><a href="qwebdatabase.html#origin" tppabs="http://pyqt4doc.appspot.com/qwebdatabase.html#origin">origin</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qwebdatabase.html#size" tppabs="http://pyqt4doc.appspot.com/qwebdatabase.html#size">size</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qwebdatabase.html#removeAllDatabases" tppabs="http://pyqt4doc.appspot.com/qwebdatabase.html#removeAllDatabases">removeAllDatabases</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwebdatabase.html#removeDatabase" tppabs="http://pyqt4doc.appspot.com/qwebdatabase.html#removeDatabase">removeDatabase</a></b> (QWebDatabase <i>db</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QWebDatabase类提供了访问的HTML与JavaScript的创建5个数据库。</p>
+<p>即将到来的HTML 5标准包括SQL数据库的网站可以通过JavaScript创建并在本地计算机上访问的支持。 QWebDatabase是C + +的接口这些数据库。</p>
+<p>数据库都集中在安全性的起源。要访问一个安全原点定义的所有数据库，使用<a href="qwebsecurityorigin.html#databases" tppabs="http://pyqt4doc.appspot.com/qwebsecurityorigin.html#databases">QWebSecurityOrigin.databases</a>（ ） 。每个数据库都有一个内部<a href="qwebdatabase.html#name" tppabs="http://pyqt4doc.appspot.com/qwebdatabase.html#name">name</a>（ ） ，以及一个用户友好的名称，所提供<a href="qwebdatabase.html#displayName" tppabs="http://pyqt4doc.appspot.com/qwebdatabase.html#displayName">displayName</a>（ ） 。这些名称在创建JavaScript代码数据库时指定。</p>
+<p>WebKit中使用SQLite创建和访问本地SQL数据库。在本地文件系统中的数据库文件的位置由返回<a href="qwebdatabase.html#fileName" tppabs="http://pyqt4doc.appspot.com/qwebdatabase.html#fileName">fileName</a>（ ） 。您可以通过直接访问数据库<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtsql.html">QtSql</a>数据库模块。</p>
+<p>对于每一个数据库的网站可以定义<a href="qwebdatabase.html#expectedSize" tppabs="http://pyqt4doc.appspot.com/qwebdatabase.html#expectedSize">expectedSize</a>（ ） 。以字节为单位的数据库的当前大小由返回<a href="qwebdatabase.html#size" tppabs="http://pyqt4doc.appspot.com/qwebdatabase.html#size">size</a>（ ） 。</p>
+<p>欲了解更多信息，请参阅<a href="http://dev.w3.org/html5/webdatabase/">HTML5 Web SQL Database Draft
+Standard</a>。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QWebDatabase"></a>QWebDatabase.__init__ (<i>self</i>, <a href="qwebdatabase.html" tppabs="http://pyqt4doc.appspot.com/qwebdatabase.html">QWebDatabase</a> <i>other</i>)</h3>
+<p>从构造一个Web数据库<i>other</i>。</p>
+
+
+<h3 class="fn">
+<a name="displayName"></a>QString QWebDatabase.displayName (<i>self</i>)</h3>
+<p>返回的格式适合于向用户显示的数据库的名称。</p>
+
+
+<h3 class="fn">
+<a name="expectedSize"></a>int QWebDatabase.expectedSize (<i>self</i>)</h3>
+<p>返回数据库的预期大小（字节）由Web作者定义的那样。</p>
+
+
+<h3 class="fn">
+<a name="fileName"></a>QString QWebDatabase.fileName (<i>self</i>)</h3>
+<p>返回Web数据库的文件名。</p>
+<p>该名称可用于访问数据库通过<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtsql.html">QtSql</a>数据库模块，例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qwebdatabase.html" tppabs="http://pyqt4doc.appspot.com/qwebdatabase.html">QWebDatabase</a></span> webdb <span class="operator">=</span> <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ <span class="type"><a href="qsqldatabase.html" tppabs="http://pyqt4doc.appspot.com/qsqldatabase.html">QSqlDatabase</a></span> sqldb <span class="operator">=</span> <span class="type"><a href="qsqldatabase.html" tppabs="http://pyqt4doc.appspot.com/qsqldatabase.html">QSqlDatabase</a></span><span class="operator">.</span>addDatabase(<span class="string">"QSQLITE"</span><span class="operator">,</span> <span class="string">"myconnection"</span>);
+ sqldb<span class="operator">.</span>setDatabaseName(webdb<span class="operator">.</span>fileName());
+ <span class="keyword">if</span> (sqldb<span class="operator">.</span>open()) {
+     <span class="type"><a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a></span> tables <span class="operator">=</span> sqldb<span class="operator">.</span>tables();
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ }
+</pre>
+<p><b>Note:</b>从多个线程或进程同时访问一个数据库不是很有效，因为SQLite是作为WebKit的数据库后端。</p>
+
+
+<h3 class="fn">
+<a name="name"></a>QString QWebDatabase.name (<i>self</i>)</h3>
+<p>返回数据库的名称。</p>
+
+
+<h3 class="fn">
+<a name="origin"></a><a href="qwebsecurityorigin.html" tppabs="http://pyqt4doc.appspot.com/qwebsecurityorigin.html">QWebSecurityOrigin</a> QWebDatabase.origin (<i>self</i>)</h3>
+<p>返回数据库的安全性起源。</p>
+
+
+<h3 class="fn">
+<a name="removeAllDatabases"></a>QWebDatabase.removeAllDatabases ()</h3>
+<p>删除配置的离线存储路径中的所有网络数据库。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qwebsettings.html#setOfflineStoragePath" tppabs="http://pyqt4doc.appspot.com/qwebsettings.html#setOfflineStoragePath">QWebSettings.setOfflineStoragePath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="removeDatabase"></a>QWebDatabase.removeDatabase (<a href="qwebdatabase.html" tppabs="http://pyqt4doc.appspot.com/qwebdatabase.html">QWebDatabase</a> <i>db</i>)</h3>
+<p>删除数据库<i>db</i>从它的安全性的起源。存储在数据库中的所有数据<i>db</i>将被销毁。</p>
+
+
+<h3 class="fn">
+<a name="size"></a>int QWebDatabase.size (<i>self</i>)</h3>
+<p>返回以字节为单位的数据库的当前大小。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

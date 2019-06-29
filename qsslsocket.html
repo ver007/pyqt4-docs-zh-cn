@@ -1,0 +1,918 @@
+﻿<html>
+<head>
+<title>QSslSocket Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QSslSocket Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtnetwork.html">QtNetwork</a> module]</sup></sup>
+</h1>
+<p>该QSslSocket类提供的SSL加密套接字的客户端和服务器。<a href="#details">More...</a></p>
+
+<p>继承<a href="qtcpsocket.html" tppabs="http://pyqt4doc.appspot.com/qtcpsocket.html">QTcpSocket</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qsslsocket.html#PeerVerifyMode-enum" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#PeerVerifyMode-enum">PeerVerifyMode</a></b> { VerifyNone, QueryPeer, VerifyPeer, AutoVerifyPeer }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qsslsocket.html#SslMode-enum" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#SslMode-enum">SslMode</a></b> { UnencryptedMode, SslClientMode, SslServerMode }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#QSslSocket" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#QSslSocket">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#abort" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#abort">abort</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#addCaCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#addCaCertificate">addCaCertificate</a></b> (<i>self</i>, QSslCertificate <i>certificate</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsslsocket.html#addCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#addCaCertificates">addCaCertificates</a></b> (<i>self</i>, QString <i>path</i>, QSsl.EncodingFormat <i>format</i> = QSsl.Pem, QRegExp.PatternSyntax <i>syntax</i> = QRegExp.FixedString)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#addCaCertificates-2" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#addCaCertificates-2">addCaCertificates</a></b> (<i>self</i>, list-of-QSslCertificate <i>certificates</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsslsocket.html#atEnd" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#atEnd">atEnd</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qsslsocket.html#bytesAvailable" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#bytesAvailable">bytesAvailable</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qsslsocket.html#bytesToWrite" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#bytesToWrite">bytesToWrite</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QSslCertificate <b><a href="qsslsocket.html#caCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#caCertificates">caCertificates</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsslsocket.html#canReadLine" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#canReadLine">canReadLine</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QSslCipher <b><a href="qsslsocket.html#ciphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#ciphers">ciphers</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#close" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#close">close</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#connectToHostEncrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#connectToHostEncrypted">connectToHostEncrypted</a></b> (<i>self</i>, QString <i>hostName</i>, int <i>port</i>, QIODevice.OpenMode <i>mode</i> = QIODevice.ReadWrite)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#connectToHostEncrypted-2" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#connectToHostEncrypted-2">connectToHostEncrypted</a></b> (<i>self</i>, QString <i>hostName</i>, int <i>port</i>, QString <i>sslPeerName</i>, QIODevice.OpenMode <i>mode</i> = QIODevice.ReadWrite)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#connectToHostImplementation" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#connectToHostImplementation">connectToHostImplementation</a></b> (<i>self</i>, QString <i>hostName</i>, int <i>port</i>, QIODevice.OpenMode <i>openMode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#disconnectFromHostImplementation" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#disconnectFromHostImplementation">disconnectFromHostImplementation</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qsslsocket.html#encryptedBytesAvailable" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#encryptedBytesAvailable">encryptedBytesAvailable</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qsslsocket.html#encryptedBytesToWrite" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#encryptedBytesToWrite">encryptedBytesToWrite</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsslsocket.html#flush" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#flush">flush</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#ignoreSslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#ignoreSslErrors">ignoreSslErrors</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#ignoreSslErrors-2" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#ignoreSslErrors-2">ignoreSslErrors</a></b> (<i>self</i>, list-of-QSslError <i>errors</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsslsocket.html#isEncrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#isEncrypted">isEncrypted</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSslCertificate <b><a href="qsslsocket.html#localCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#localCertificate">localCertificate</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>SslMode <b><a href="qsslsocket.html#mode" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#mode">mode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSslCertificate <b><a href="qsslsocket.html#peerCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#peerCertificate">peerCertificate</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QSslCertificate <b><a href="qsslsocket.html#peerCertificateChain" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#peerCertificateChain">peerCertificateChain</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qsslsocket.html#peerVerifyDepth" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#peerVerifyDepth">peerVerifyDepth</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>PeerVerifyMode <b><a href="qsslsocket.html#peerVerifyMode" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#peerVerifyMode">peerVerifyMode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsslsocket.html#peerVerifyName" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#peerVerifyName">peerVerifyName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSslKey <b><a href="qsslsocket.html#privateKey" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#privateKey">privateKey</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSsl.SslProtocol <b><a href="qsslsocket.html#protocol" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#protocol">protocol</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qsslsocket.html#readData" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#readData">readData</a></b> (<i>self</i>, int <i>maxlen</i>)</li>
+<li>
+<div class="fn"></div>QSslCipher <b><a href="qsslsocket.html#sessionCipher" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#sessionCipher">sessionCipher</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#setCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setCaCertificates">setCaCertificates</a></b> (<i>self</i>, list-of-QSslCertificate <i>certificates</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#setCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setCiphers">setCiphers</a></b> (<i>self</i>, list-of-QSslCipher <i>ciphers</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#setCiphers-2" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setCiphers-2">setCiphers</a></b> (<i>self</i>, QString <i>ciphers</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#setLocalCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setLocalCertificate">setLocalCertificate</a></b> (<i>self</i>, QSslCertificate <i>certificate</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#setLocalCertificate-2" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setLocalCertificate-2">setLocalCertificate</a></b> (<i>self</i>, QString <i>path</i>, QSsl.EncodingFormat <i>format</i> = QSsl.Pem)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#setPeerVerifyDepth" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setPeerVerifyDepth">setPeerVerifyDepth</a></b> (<i>self</i>, int <i>depth</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#setPeerVerifyMode" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setPeerVerifyMode">setPeerVerifyMode</a></b> (<i>self</i>, PeerVerifyMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#setPeerVerifyName" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setPeerVerifyName">setPeerVerifyName</a></b> (<i>self</i>, QString <i>hostName</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#setPrivateKey" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setPrivateKey">setPrivateKey</a></b> (<i>self</i>, QSslKey <i>key</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#setPrivateKey-2" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setPrivateKey-2">setPrivateKey</a></b> (<i>self</i>, QString <i>fileName</i>, QSsl.KeyAlgorithm <i>algorithm</i> = QSsl.Rsa, QSsl.EncodingFormat <i>format</i> = QSsl.Pem, QByteArray <i>passPhrase</i> = QByteArray())</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#setProtocol" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setProtocol">setProtocol</a></b> (<i>self</i>, QSsl.SslProtocol <i>protocol</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#setReadBufferSize" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setReadBufferSize">setReadBufferSize</a></b> (<i>self</i>, int <i>size</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsslsocket.html#setSocketDescriptor" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setSocketDescriptor">setSocketDescriptor</a></b> (<i>self</i>, int <i>socketDescriptor</i>, QAbstractSocket.SocketState <i>state</i> = QAbstractSocket.ConnectedState, QIODevice.OpenMode <i>mode</i> = QIODevice.ReadWrite)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#setSocketOption" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setSocketOption">setSocketOption</a></b> (<i>self</i>, QAbstractSocket.SocketOption <i>option</i>, QVariant <i>value</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#setSslConfiguration" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setSslConfiguration">setSslConfiguration</a></b> (<i>self</i>, QSslConfiguration <i>config</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qsslsocket.html#socketOption" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#socketOption">socketOption</a></b> (<i>self</i>, QAbstractSocket.SocketOption <i>option</i>)</li>
+<li>
+<div class="fn"></div>QSslConfiguration <b><a href="qsslsocket.html#sslConfiguration" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#sslConfiguration">sslConfiguration</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QSslError <b><a href="qsslsocket.html#sslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#sslErrors">sslErrors</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#startClientEncryption" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#startClientEncryption">startClientEncryption</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#startServerEncryption" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#startServerEncryption">startServerEncryption</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsslsocket.html#waitForBytesWritten" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#waitForBytesWritten">waitForBytesWritten</a></b> (<i>self</i>, int <i>msecs</i> = 30000)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsslsocket.html#waitForConnected" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#waitForConnected">waitForConnected</a></b> (<i>self</i>, int <i>msecs</i> = 30000)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsslsocket.html#waitForDisconnected" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#waitForDisconnected">waitForDisconnected</a></b> (<i>self</i>, int <i>msecs</i> = 30000)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsslsocket.html#waitForEncrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#waitForEncrypted">waitForEncrypted</a></b> (<i>self</i>, int <i>msecs</i> = 30000)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsslsocket.html#waitForReadyRead" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#waitForReadyRead">waitForReadyRead</a></b> (<i>self</i>, int <i>msecs</i> = 30000)</li>
+<li>
+<div class="fn"></div>int <b><a href="qsslsocket.html#writeData" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#writeData">writeData</a></b> (<i>self</i>, str <i>data</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#addDefaultCaCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#addDefaultCaCertificate">addDefaultCaCertificate</a></b> (QSslCertificate <i>certificate</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsslsocket.html#addDefaultCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#addDefaultCaCertificates">addDefaultCaCertificates</a></b> (QString <i>path</i>, QSsl.EncodingFormat <i>format</i> = QSsl.Pem, QRegExp.PatternSyntax <i>syntax</i> = QRegExp.FixedString)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#addDefaultCaCertificates-2" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#addDefaultCaCertificates-2">addDefaultCaCertificates</a></b> (list-of-QSslCertificate <i>certificates</i>)</li>
+<li>
+<div class="fn"></div>list-of-QSslCertificate <b><a href="qsslsocket.html#defaultCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#defaultCaCertificates">defaultCaCertificates</a></b> ()</li>
+<li>
+<div class="fn"></div>list-of-QSslCipher <b><a href="qsslsocket.html#defaultCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#defaultCiphers">defaultCiphers</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#setDefaultCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setDefaultCaCertificates">setDefaultCaCertificates</a></b> (list-of-QSslCertificate <i>certificates</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsslsocket.html#setDefaultCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setDefaultCiphers">setDefaultCiphers</a></b> (list-of-QSslCipher <i>ciphers</i>)</li>
+<li>
+<div class="fn"></div>list-of-QSslCipher <b><a href="qsslsocket.html#supportedCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#supportedCiphers">supportedCiphers</a></b> ()</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsslsocket.html#supportsSsl" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#supportsSsl">supportsSsl</a></b> ()</li>
+<li>
+<div class="fn"></div>list-of-QSslCertificate <b><a href="qsslsocket.html#systemCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#systemCaCertificates">systemCaCertificates</a></b> ()</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qsslsocket.html#encrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#encrypted">encrypted</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qsslsocket.html#encryptedBytesWritten" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#encryptedBytesWritten">encryptedBytesWritten</a></b> (qint64)</li>
+<li>
+<div class="fn"></div>void <b><a href="qsslsocket.html#modeChanged" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#modeChanged">modeChanged</a></b> (QSslSocket::SslMode)</li>
+<li>
+<div class="fn"></div>void <b><a href="qsslsocket.html#peerVerifyError" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#peerVerifyError">peerVerifyError</a></b> (const QSslError&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qsslsocket.html#sslErrors-2" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#sslErrors-2">sslErrors</a></b> (const QList&lt;QSslError&gt;&amp;)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QSslSocket类提供的SSL加密套接字的客户端和服务器。</p>
+<p>QSslSocket建立可用于传输加密数据安全，加密的TCP连接。它可以同时在客户端和服务器模式下运行，并且它支持SSL的现代化协议，包括支持SSLv3和TLSv1 。默认情况下， QSslSocket使用的TLSv1 ，但是你可以通过调用改变SSL协议<a href="qsslsocket.html#setProtocol" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setProtocol">setProtocol</a>（）只要你握手之前做到这一点已经开始。</p>
+<p>SSL加密运行在现有TCP流顶部的插座进入后<a href="qabstractsocket.html#SocketState-enum" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#SocketState-enum">ConnectedState</a>。有两种简单的方法来建立使用QSslSocket安全连接：通过即时SSL握手，或连接已经建立了未加密模式之后延迟SSL握手发生。</p>
+<p>使用QSslSocket最常见的方式是通过调用构造对象，并启动安全连接<a href="qsslsocket.html#connectToHostEncrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#connectToHostEncrypted">connectToHostEncrypted</a>（ ） 。这个方法立刻执行SSL握手一旦连接已经建立。</p>
+<pre class="cpp">
+ <span class="type">QSslSocket</span> <span class="operator">*</span>socket <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QSslSocket</span>(<span class="keyword">this</span>);
+ <a href="qobject.html#connect" tppabs="http://pyqt4doc.appspot.com/qobject.html#connect">connect</a>(socket<span class="operator">,</span> SIGNAL(encrypted())<span class="operator">,</span> <span class="keyword">this</span><span class="operator">,</span> SLOT(ready()));
+
+ socket<span class="operator">-</span><span class="operator">&gt;</span><a href="qsslsocket.html#connectToHostEncrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#connectToHostEncrypted">connectToHostEncrypted</a>(<span class="string">"imap.example.com"</span><span class="operator">,</span> <span class="number">993</span>);
+</pre>
+<p>作为一个普通的<a href="qtcpsocket.html" tppabs="http://pyqt4doc.appspot.com/qtcpsocket.html">QTcpSocket</a>， QSslSocket进入<a href="qabstractsocket.html#SocketState-enum" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#SocketState-enum">HostLookupState</a>，<a href="qabstractsocket.html#SocketState-enum" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#SocketState-enum">ConnectingState</a>，最后是<a href="qabstractsocket.html#SocketState-enum" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#SocketState-enum">ConnectedState</a>如果连接成功。握手然后自动启动，如果成功，<a href="qsslsocket.html#encrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#encrypted">encrypted</a>（）信号被发射，以指示插座已经进入了加密的状态，并准备好使用。</p>
+<p>注意，数据可从返回后，立即被写入到插座<a href="qsslsocket.html#connectToHostEncrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#connectToHostEncrypted">connectToHostEncrypted</a>（ ）（即，前<a href="qsslsocket.html#encrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#encrypted">encrypted</a>（）信号被发射） 。该数据被排队在QSslSocket后才<a href="qsslsocket.html#encrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#encrypted">encrypted</a>（）信号被发射。</p>
+<p>使用延迟SSL握手，以确保现有连接的一个例子是SSL服务器固定一个传入的连接的情况下。假设你创建一个SSL服务器类作为子类<a href="qtcpserver.html" tppabs="http://pyqt4doc.appspot.com/qtcpserver.html">QTcpServer</a>。你会复盖<a href="qtcpserver.html#incomingConnection" tppabs="http://pyqt4doc.appspot.com/qtcpserver.html#incomingConnection">QTcpServer.incomingConnection</a>（ ）的东西，如下面的例子，它首先构造QSslSocket的一个实例，然后调用<a href="qsslsocket.html#setSocketDescriptor" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setSocketDescriptor">setSocketDescriptor</a>（ ）新的套接字的描述符设置为现有的传入然后，它开始通过调用SSL握手<a href="qsslsocket.html#startServerEncryption" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#startServerEncryption">startServerEncryption</a>（ ） 。</p>
+<pre class="cpp">
+ <span class="type">void</span> SslServer<span class="operator">.</span>incomingConnection(<span class="type">int</span> socketDescriptor)
+ {
+     <span class="type">QSslSocket</span> <span class="operator">*</span>serverSocket <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QSslSocket</span>;
+     <span class="keyword">if</span> (serverSocket<span class="operator">-</span><span class="operator">&gt;</span>setSocketDescriptor(socketDescriptor)) {
+         connect(serverSocket<span class="operator">,</span> SIGNAL(encrypted())<span class="operator">,</span> <span class="keyword">this</span><span class="operator">,</span> SLOT(ready()));
+         serverSocket<span class="operator">-</span><span class="operator">&gt;</span>startServerEncryption();
+     } <span class="keyword">else</span> {
+         <span class="keyword">delete</span> serverSocket;
+     }
+ }
+</pre>
+<p>如果发生错误， QSslSocket发射<a href="qsslsocket.html#sslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#sslErrors">sslErrors</a>（）信号。在这种情况下，如果不采取行动，以忽略错误（ s）时，连接将被丢弃。要继续，尽管错误的发生，你可以调用<a href="qsslsocket.html#ignoreSslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#ignoreSslErrors">ignoreSslErrors</a>（ ） ，无论是从该时隙内发生的错误后，或建设QSslSocket后，连接之前的任何时间尝试。这将允许QSslSocket忽略它遇到建立对等体的身份，当出现差错。在SSL握手过程忽略错误，应谨慎使用，因为安全连接的一个基本特征是，它们应与成功握手建立。</p>
+<p>一旦加密，您可以使用QSslSocket作为一个经常<a href="qtcpsocket.html" tppabs="http://pyqt4doc.appspot.com/qtcpsocket.html">QTcpSocket</a>。何时<a href="qiodevice.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#readyRead">readyRead</a>（ ）被发射，你可以调用<a href="qiodevice.html#read" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#read">read</a>（ ）<a href="qsslsocket.html#canReadLine" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#canReadLine">canReadLine</a>（）和<a href="qiodevice.html#readLine" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#readLine">readLine</a>（） ，或<a href="qiodevice.html#getChar" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#getChar">getChar</a>（ ）读取QSslSocket的内部缓冲区解密数据，并且可以调用<a href="qiodevice.html#write" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#write">write</a>（）或<a href="qiodevice.html#putChar" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#putChar">putChar</a>（ ）将数据写回给对端。 QSslSocket会自动加密写入的数据对你来说，并放出<a href="qsslsocket.html#encryptedBytesWritten" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#encryptedBytesWritten">encryptedBytesWritten</a>（）一旦数据已被写入到对等体。</p>
+<p>为方便起见， QSslSocket支持<a href="qtcpsocket.html" tppabs="http://pyqt4doc.appspot.com/qtcpsocket.html">QTcpSocket</a>的阻断功能<a href="qsslsocket.html#waitForConnected" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#waitForConnected">waitForConnected</a>（ ）<a href="qsslsocket.html#waitForReadyRead" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#waitForReadyRead">waitForReadyRead</a>（ ）<a href="qsslsocket.html#waitForBytesWritten" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#waitForBytesWritten">waitForBytesWritten</a>（）和<a href="qsslsocket.html#waitForDisconnected" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#waitForDisconnected">waitForDisconnected</a>（ ） 。它也提供<a href="qsslsocket.html#waitForEncrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#waitForEncrypted">waitForEncrypted</a>（），它会阻塞调用线程，直到一个加密的连接已经建立。</p>
+<pre class="cpp">
+ <span class="type">QSslSocket</span> socket;
+ socket<span class="operator">.</span><a href="qsslsocket.html#connectToHostEncrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#connectToHostEncrypted">connectToHostEncrypted</a>(<span class="string">"http.example.com"</span><span class="operator">,</span> <span class="number">443</span>);
+ <span class="keyword">if</span> (<span class="operator">!</span>socket<span class="operator">.</span>waitForEncrypted()) {
+     <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> socket<span class="operator">.</span>errorString();
+     <span class="keyword">return</span> <span class="keyword">false</span>;
+ }
+
+ socket<span class="operator">.</span><a href="qiodevice.html#write" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#write">write</a>(<span class="string">"GET / HTTP/1.0\r\n\r\n"</span>);
+ <span class="keyword">while</span> (socket<span class="operator">.</span>waitForReadyRead())
+     <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> socket<span class="operator">.</span><a href="qiodevice.html#readAll" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#readAll">readAll</a>()<span class="operator">.</span>data();
+</pre>
+<p>QSslSocket提供了用于处理加密密码，私钥和地方，同行，以及证书颁发机构（ CA）证书广泛的，易于使用的API 。它还提供了用于处理在握手阶段所发生的错误的API。</p>
+<p>以下功能也可以定制：</p>
+<ul>
+<li>The socket's cryptographic cipher suite can be customized
+before the handshake phase with <a href="qsslsocket.html#setCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setCiphers">setCiphers</a>() and <a href="qsslsocket.html#setDefaultCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setDefaultCiphers">setDefaultCiphers</a>().</li>
+<li>The socket's local certificate and private key can be
+customized before the handshake phase with <a href="qsslsocket.html#setLocalCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setLocalCertificate">setLocalCertificate</a>() and
+<a href="qsslsocket.html#setPrivateKey" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setPrivateKey">setPrivateKey</a>().</li>
+<li>The CA certificate database can be extended and customized with
+<a href="qsslsocket.html#addCaCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#addCaCertificate">addCaCertificate</a>(),
+<a href="qsslsocket.html#addCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#addCaCertificates">addCaCertificates</a>(),
+<a href="qsslsocket.html#setCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setCaCertificates">setCaCertificates</a>(),
+<a href="qsslsocket.html#addDefaultCaCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#addDefaultCaCertificate">addDefaultCaCertificate</a>(),
+<a href="qsslsocket.html#addDefaultCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#addDefaultCaCertificates">addDefaultCaCertificates</a>(),
+and <a href="qsslsocket.html#setDefaultCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setDefaultCaCertificates">setDefaultCaCertificates</a>().</li>
+</ul>
+<p><b>Note:</b>如果可以，在Unix （不包括Mac OS X的）根证书将来自标准证书目录按需加载。如果您不希望加载的根证书上的需求，你需要调用静态函数<a href="qsslsocket.html#setDefaultCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setDefaultCaCertificates">setDefaultCaCertificates</a>（ ）前的第一个SSL握手是在你的应用程序， （例如，通过“ QSslSocket.setDefaultCaCertificates （<a href="qsslsocket.html#systemCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#systemCaCertificates">QSslSocket.systemCaCertificates</a>（ ） ） ;“） ，或致电<a href="qsslsocket.html#setCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setCaCertificates">setCaCertificates</a>（ ）在之前的SSL握手你QSslSocket实例。</p>
+<p>有关密码和证书的详细信息，请参阅<a href="qsslcipher.html" tppabs="http://pyqt4doc.appspot.com/qsslcipher.html">QSslCipher</a>和<a href="qsslcertificate.html" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html">QSslCertificate</a>。</p>
+<p>本产品包括OpenSSL工具包的使用由OpenSSL项目开发的软件（<a href="http://www.openssl.org/">http://www.openssl.org/</a>） 。</p>
+<p><b>Note:</b>注意之间的差值的<a href="qiodevice.html#bytesWritten" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#bytesWritten">bytesWritten</a>（）信号和<a href="qsslsocket.html#encryptedBytesWritten" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#encryptedBytesWritten">encryptedBytesWritten</a>（）信号。对于<a href="qtcpsocket.html" tppabs="http://pyqt4doc.appspot.com/qtcpsocket.html">QTcpSocket</a>，<a href="qiodevice.html#bytesWritten" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#bytesWritten">bytesWritten</a>（）会得到尽快的数据已被写入到TCP套接字射出。对于QSslSocket ，<a href="qiodevice.html#bytesWritten" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#bytesWritten">bytesWritten</a>（）会得到发射时，数据被加密并<a href="qsslsocket.html#encryptedBytesWritten" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#encryptedBytesWritten">encryptedBytesWritten</a>（）会得到尽快的数据已被写入到TCP套接字射出。</p>
+<a id="symbian-platform-security-requirements" name="symbian-platform-security-requirements"></a>
+<h3>Symbian Platform Security Requirements</h3>
+<p>在Symbian ，它使用这个类的进程必须有<tt>NetworkServices</tt>平台的安全能力。如果客户端程序缺乏这种能力，操作将失败。</p>
+<p>平台的安全功能是通过添加<a href="index.htm#target-capability" tppabs="http://pyqt4doc.appspot.com/qmake-variable-reference.html#target-capability">TARGET.CAPABILITY</a>qmake的变量。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="PeerVerifyMode-enum"></a>QSslSocket.PeerVerifyMode</h3>
+<p>介绍了同行的验证模式<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>。默认模式是AutoVerifyPeer ，它选择一个合适的模式，这取决于插座的QSocket.SslMode 。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSslSocket.VerifyNone</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">
+<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>不会要求对端的证书。如果你没有兴趣在连接的另一端的身份，您可以设置该模式。该连接仍然会被加密，你的socket仍会发送其本地证书给对端，如果它的要求。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSslSocket.QueryPeer</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">
+<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>将要求对端的证书，但不要求该证书是有效的。当你想显示对等体证书的详细信息给用户，而不会影响实际的SSL握手，这是很有用的。这种模式是默认的服务器。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSslSocket.VerifyPeer</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">
+<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>会要求对方在SSL握手阶段证书，并要求该证书是有效的。如果失败，<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>将发射<a href="qsslsocket.html#sslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#sslErrors">QSslSocket.sslErrors</a>（）信号。这种模式是默认的客户端。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSslSocket.AutoVerifyPeer</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">
+<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>会自动使用QueryPeer的服务器套接字和VerifyPeer的客户端套接字。</td>
+</tr>
+</table>
+<p>这个枚举被引入或修改的Qt 4.4 。</p>
+<p><b>See also</b> <a href="qsslsocket.html#peerVerifyMode" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#peerVerifyMode">QSslSocket.peerVerifyMode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="SslMode-enum"></a>QSslSocket.SslMode</h3>
+<p>说明可用于连接模式<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSslSocket.UnencryptedMode</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">套接字是未加密的。其行为是相同的<a href="qtcpsocket.html" tppabs="http://pyqt4doc.appspot.com/qtcpsocket.html">QTcpSocket</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSslSocket.SslClientMode</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">套接字的客户端SSL套接字。它可以是alreayd加密的，或者它是在SSL握手阶段（参见<a href="qsslsocket.html#isEncrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#isEncrypted">QSslSocket.isEncrypted</a>（））。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSslSocket.SslServerMode</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">该插座是一个服务器端的SSL套接字。它要么已经加密的，或者它是在SSL握手阶段（参见<a href="qsslsocket.html#isEncrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#isEncrypted">QSslSocket.isEncrypted</a>（））。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QSslSocket"></a>QSslSocket.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>对象。<i>parent</i>被传递给<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>的构造。新的套接字的<a href="qsslcipher.html" tppabs="http://pyqt4doc.appspot.com/qsslcipher.html">cipher</a>套件被设置为静态方法返回一个<a href="qsslsocket.html#defaultCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#defaultCiphers">defaultCiphers</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="abort"></a>QSslSocket.abort (<i>self</i>)</h3>
+<p>中止当前连接并重置插口。不像<a href="qabstractsocket.html#disconnectFromHost" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#disconnectFromHost">disconnectFromHost</a>（ ） ，这个函数立即关闭套接字，写缓冲区清除任何挂起的数据。</p>
+<p><b>See also</b> <a href="qabstractsocket.html#disconnectFromHost" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#disconnectFromHost">disconnectFromHost</a>（）和<a href="qsslsocket.html#close" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#close">close</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addCaCertificate"></a>QSslSocket.addCaCertificate (<i>self</i>, <a href="qsslcertificate.html" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html">QSslCertificate</a> <i>certificate</i>)</h3>
+<p>添加<i>certificate</i>此套接字的CA证书数据库。握手阶段中的CA证书数据库所使用的插座，以验证对方的证书。</p>
+<p>要添加多个证书，使用<a href="qsslsocket.html#addCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#addCaCertificates">addCaCertificates</a>（ ） 。</p>
+<p><b>See also</b> <a href="qsslsocket.html#caCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#caCertificates">caCertificates</a>（）和<a href="qsslsocket.html#setCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setCaCertificates">setCaCertificates</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addCaCertificates"></a>bool QSslSocket.addCaCertificates (<i>self</i>, QString <i>path</i>, <a href="qssl.html#EncodingFormat-enum" tppabs="http://pyqt4doc.appspot.com/qssl.html#EncodingFormat-enum">QSsl.EncodingFormat</a> <i>format</i> = QSsl.Pem, <a href="qregexp.html#PatternSyntax-enum" tppabs="http://pyqt4doc.appspot.com/qregexp.html#PatternSyntax-enum">QRegExp.PatternSyntax</a> <i>syntax</i> = QRegExp.FixedString)</h3>
+<p>搜索中的所有文件<i>path</i>对于证书编码指定<i>format</i>并将它们添加到这个套接字的CA证书数据库。<i>path</i>可以是显式的，或者它可以包含通配符在由指定的格式<i>syntax</i>。返回True如果一个或多个证书添加到套接字的CA证书数据库，否则返回False 。</p>
+<p>握手阶段中的CA证书数据库所使用的插座，以验证对方的证书。</p>
+<p>为了更精确的控制，使用<a href="qsslsocket.html#addCaCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#addCaCertificate">addCaCertificate</a>（ ） 。</p>
+<p><b>See also</b> <a href="qsslsocket.html#addCaCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#addCaCertificate">addCaCertificate</a>（）和<a href="qsslcertificate.html#fromPath" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html#fromPath">QSslCertificate.fromPath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addCaCertificates-2"></a>QSslSocket.addCaCertificates (<i>self</i>, list-of-QSslCertificate <i>certificates</i>)</h3>
+<p>添加<i>certificates</i>此套接字的CA证书数据库。握手阶段中的CA证书数据库所使用的插座，以验证对方的证书。</p>
+<p>为了更精确的控制，使用<a href="qsslsocket.html#addCaCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#addCaCertificate">addCaCertificate</a>（ ） 。</p>
+<p><b>See also</b> <a href="qsslsocket.html#caCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#caCertificates">caCertificates</a>（）和<a href="qsslsocket.html#addDefaultCaCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#addDefaultCaCertificate">addDefaultCaCertificate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addDefaultCaCertificate"></a>QSslSocket.addDefaultCaCertificate (<a href="qsslcertificate.html" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html">QSslCertificate</a> <i>certificate</i>)</h3>
+<p>添加<i>certificate</i>到默认的CA证书数据库。每个SSL套接字的CA证书数据库被初始化为默认的CA证书数据库。</p>
+<p><b>See also</b> <a href="qsslsocket.html#defaultCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#defaultCaCertificates">defaultCaCertificates</a>（）和<a href="qsslsocket.html#addCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#addCaCertificates">addCaCertificates</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addDefaultCaCertificates"></a>bool QSslSocket.addDefaultCaCertificates (QString <i>path</i>, <a href="qssl.html#EncodingFormat-enum" tppabs="http://pyqt4doc.appspot.com/qssl.html#EncodingFormat-enum">QSsl.EncodingFormat</a> <i>format</i> = QSsl.Pem, <a href="qregexp.html#PatternSyntax-enum" tppabs="http://pyqt4doc.appspot.com/qregexp.html#PatternSyntax-enum">QRegExp.PatternSyntax</a> <i>syntax</i> = QRegExp.FixedString)</h3>
+<p>搜索中的所有文件<i>path</i>具有指定证书<i>encoding</i>并将它们添加到默认的CA证书数据库。<i>path</i>可以是显式的文件中，或者它可以包含通配符在由指定的格式<i>syntax</i>。如有CA证书被添加到默认数据库，则返回True 。</p>
+<p>每个SSL套接字的CA证书数据库被初始化为默认的CA证书数据库。</p>
+<p><b>See also</b> <a href="qsslsocket.html#defaultCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#defaultCaCertificates">defaultCaCertificates</a>（ ）<a href="qsslsocket.html#addCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#addCaCertificates">addCaCertificates</a>（）和<a href="qsslsocket.html#addDefaultCaCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#addDefaultCaCertificate">addDefaultCaCertificate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addDefaultCaCertificates-2"></a>QSslSocket.addDefaultCaCertificates (list-of-QSslCertificate <i>certificates</i>)</h3>
+<p>添加<i>certificates</i>到默认的CA证书数据库。每个SSL套接字的CA证书数据库被初始化为默认的CA证书数据库。</p>
+<p><b>See also</b> <a href="qsslsocket.html#defaultCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#defaultCaCertificates">defaultCaCertificates</a>（）和<a href="qsslsocket.html#addCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#addCaCertificates">addCaCertificates</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="atEnd"></a>bool QSslSocket.atEnd (<i>self</i>)</h3>
+<p>从重新实现<a href="qiodevice.html#atEnd" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#atEnd">QIODevice.atEnd</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="bytesAvailable"></a>int QSslSocket.bytesAvailable (<i>self</i>)</h3>
+<p>从重新实现<a href="qiodevice.html#bytesAvailable" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#bytesAvailable">QIODevice.bytesAvailable</a>（ ） 。</p>
+<p>返回解密后的字节是立即可用于阅读的数量。</p>
+
+
+<h3 class="fn">
+<a name="bytesToWrite"></a>int QSslSocket.bytesToWrite (<i>self</i>)</h3>
+<p>从重新实现<a href="qiodevice.html#bytesToWrite" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#bytesToWrite">QIODevice.bytesToWrite</a>（ ） 。</p>
+<p>返回正在等待被加密并写入网络未加密的字节数。</p>
+
+
+<h3 class="fn">
+<a name="caCertificates"></a>list-of-QSslCertificate QSslSocket.caCertificates (<i>self</i>)</h3>
+<p>返回此套接字的CA证书数据库。握手阶段中的CA证书数据库所使用的插座，以验证对方的证书。它可以与握手之前被moodified<a href="qsslsocket.html#addCaCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#addCaCertificate">addCaCertificate</a>（ ）<a href="qsslsocket.html#addCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#addCaCertificates">addCaCertificates</a>（）和<a href="qsslsocket.html#setCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setCaCertificates">setCaCertificates</a>（ ） 。</p>
+<p><b>Note:</b>在Unix中，这个方法可能会返回一个空列表，如果根证书按需加载。</p>
+<p><b>See also</b> <a href="qsslsocket.html#addCaCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#addCaCertificate">addCaCertificate</a>（ ）<a href="qsslsocket.html#addCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#addCaCertificates">addCaCertificates</a>（）和<a href="qsslsocket.html#setCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setCaCertificates">setCaCertificates</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="canReadLine"></a>bool QSslSocket.canReadLine (<i>self</i>)</h3>
+<p>从重新实现<a href="qiodevice.html#canReadLine" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#canReadLine">QIODevice.canReadLine</a>（ ） 。</p>
+<p>返回True如果你能读一而行（终止由一个单一的ASCII码为'\ n '字符）解密字符，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="ciphers"></a>list-of-QSslCipher QSslSocket.ciphers (<i>self</i>)</h3>
+<p>返回此套接字的当前密码的加密套件。在插座的握手阶段该列表用于选择一个会话密码。密码返回的列表是按递减优先级进行排序。 （例如，在列表中的第一密码是最优选的密码） 。会话密码将是第一个在也支持对等的列表。</p>
+<p>默认情况下，握手阶段可以选择任何由该系统的SSL库支持的加密算法，这可能会有所不同从系统到系统。通过此系统的SSL库支持的密码列表是由返回<a href="qsslsocket.html#supportedCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#supportedCiphers">supportedCiphers</a>（ ） 。你可以通过调用限制用于选择会话密码为这个套接字密码列表<a href="qsslsocket.html#setCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setCiphers">setCiphers</a>（ ）与所支持的加密算法的子集。你可以通过调用恢复使用整套<a href="qsslsocket.html#setCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setCiphers">setCiphers</a>（ ）与返回列表<a href="qsslsocket.html#supportedCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#supportedCiphers">supportedCiphers</a>（ ） 。</p>
+<p>您可以限制用于选择会话加密的密码清单<i>all</i>套接字通过调用<a href="qsslsocket.html#setDefaultCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setDefaultCiphers">setDefaultCiphers</a>（ ）与所支持的加密算法的子集。你可以通过调用恢复使用整套<a href="qsslsocket.html#setCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setCiphers">setCiphers</a>（ ）与返回列表<a href="qsslsocket.html#supportedCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#supportedCiphers">supportedCiphers</a>（ ） 。</p>
+<p><b>See also</b> <a href="qsslsocket.html#setCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setCiphers">setCiphers</a>（ ）<a href="qsslsocket.html#defaultCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#defaultCiphers">defaultCiphers</a>（ ）<a href="qsslsocket.html#setDefaultCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setDefaultCiphers">setDefaultCiphers</a>（）和<a href="qsslsocket.html#supportedCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#supportedCiphers">supportedCiphers</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="close"></a>QSslSocket.close (<i>self</i>)</h3>
+<p>从重新实现<a href="qiodevice.html#close" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#close">QIODevice.close</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="connectToHostEncrypted"></a>QSslSocket.connectToHostEncrypted (<i>self</i>, QString <i>hostName</i>, int <i>port</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qiodevice-openmode.html">QIODevice.OpenMode</a> <i>mode</i> = QIODevice.ReadWrite)</h3>
+<p>开始到设备的加密连接<i>hostName</i>上<i>port</i>，使用<i>mode</i>作为<a href="qiodevice.html#OpenModeFlag-enum" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#OpenModeFlag-enum">OpenMode</a>。这等同于调用<a href="qabstractsocket.html#connectToHost" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#connectToHost">connectToHost</a>（）来建立连接，然后通过调用<a href="qsslsocket.html#startClientEncryption" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#startClientEncryption">startClientEncryption</a>（ ） 。</p>
+<p><a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>首先进入<a href="qabstractsocket.html#SocketState-enum" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#SocketState-enum">HostLookupState</a>。然后，无论是进入事件循环或一个WAITFOR的... （ ）函数后，它进入<a href="qabstractsocket.html#SocketState-enum" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#SocketState-enum">ConnectingState</a>，发出<a href="qabstractsocket.html#connected" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#connected">connected</a>（ ） ，然后启动SSL客户端握手。在每个状态的变化，<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>发出信号<a href="qabstractsocket.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#stateChanged">stateChanged</a>（ ） 。</p>
+<p>启动SSL客户端握手，如果对等体的身份不能成立，信号经过<a href="qsslsocket.html#sslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#sslErrors">sslErrors</a>（）被发射。如果你想忽略错误并继续连接，则必须调用<a href="qsslsocket.html#ignoreSslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#ignoreSslErrors">ignoreSslErrors</a>（） ，无论是从一个槽函数内部连接到<a href="qsslsocket.html#sslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#sslErrors">sslErrors</a>（ ）信号，或在进入加密模式之前。如果<a href="qsslsocket.html#ignoreSslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#ignoreSslErrors">ignoreSslErrors</a>（ ）没有被调用，则连接断开，信号<a href="qabstractsocket.html#disconnected" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#disconnected">disconnected</a>（）被发射，并且<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>返回到<a href="qabstractsocket.html#SocketState-enum" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#SocketState-enum">UnconnectedState</a>。</p>
+<p>如果SSL握手成功，<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a> emits <a href="qsslsocket.html#encrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#encrypted">encrypted</a>（ ） 。</p>
+<pre class="cpp">
+ <span class="type"><a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a></span> socket;
+ <a href="qobject.html#connect" tppabs="http://pyqt4doc.appspot.com/qobject.html#connect">connect</a>(<span class="operator">&amp;</span>socket<span class="operator">,</span> SIGNAL(encrypted())<span class="operator">,</span> receiver<span class="operator">,</span> SLOT(socketEncrypted()));
+
+ socket<span class="operator">.</span>connectToHostEncrypted(<span class="string">"imap"</span><span class="operator">,</span> <span class="number">993</span>);
+ socket<span class="operator">-</span><span class="operator">&gt;</span><a href="qiodevice.html#write" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#write">write</a>(<span class="string">"1 CAPABILITY\r\n"</span>);
+</pre>
+<p><b>Note:</b>上面的例子表明，文本可以请求加密连接，以前后立即被写入套接字<a href="qsslsocket.html#encrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#encrypted">encrypted</a>（）信号已经发出。在这种情况下，文本被排队的对象，并写入到插座<i>after</i>连接建立和<a href="qsslsocket.html#encrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#encrypted">encrypted</a>（）信号已经发出。</p>
+<p>默认为<i>mode</i> is <a href="qiodevice.html#OpenModeFlag-enum" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#OpenModeFlag-enum">ReadWrite</a>。</p>
+<p>如果你想创建一个<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>在连接的服务器端，你应该改为调用<a href="qsslsocket.html#startServerEncryption" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#startServerEncryption">startServerEncryption</a>（ ）后，通过接收传入的连接<a href="qtcpserver.html" tppabs="http://pyqt4doc.appspot.com/qtcpserver.html">QTcpServer</a>。</p>
+<p><b>See also</b> <a href="qabstractsocket.html#connectToHost" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#connectToHost">connectToHost</a>（ ）<a href="qsslsocket.html#startClientEncryption" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#startClientEncryption">startClientEncryption</a>（ ）<a href="qsslsocket.html#waitForConnected" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#waitForConnected">waitForConnected</a>（）和<a href="qsslsocket.html#waitForEncrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#waitForEncrypted">waitForEncrypted</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="connectToHostEncrypted-2"></a>QSslSocket.connectToHostEncrypted (<i>self</i>, QString <i>hostName</i>, int <i>port</i>, QString <i>sslPeerName</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qiodevice-openmode.html">QIODevice.OpenMode</a> <i>mode</i> = QIODevice.ReadWrite)</h3>
+<p>这是一个重载函数。</p>
+<p>除了connectToHostEncrypted的原始行为，此重载方法使不同的主机名的用法（<i>sslPeerName</i>）的证书验证，而不是用于TCP连接的一（<i>hostName</i>） 。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qsslsocket.html#connectToHostEncrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#connectToHostEncrypted">connectToHostEncrypted</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="connectToHostImplementation"></a>QSslSocket.connectToHostImplementation (<i>self</i>, QString <i>hostName</i>, int <i>port</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qiodevice-openmode.html">QIODevice.OpenMode</a> <i>openMode</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void connectToHostImplementation(const QString&amp;,quint16,QIODevice::OpenMode)</tt>。</p>
+<h3 class="fn">
+<a name="defaultCaCertificates"></a>list-of-QSslCertificate QSslSocket.defaultCaCertificates ()</h3>
+<p>返回当前默认的CA证书数据库。这个数据库是最初设置为系统的默认CA证书数据库。如果没有找到系统默认的数据库，建立一个空数据库将被退回。你可以用你自己的CA证书数据库使用复盖默认的CA证书数据库<a href="qsslsocket.html#setDefaultCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setDefaultCaCertificates">setDefaultCaCertificates</a>（ ） 。</p>
+<p>每个SSL套接字的CA证书数据库被初始化为默认的CA证书数据库。</p>
+<p><b>Note:</b>在Unix中，这个方法可能会返回一个空列表，如果根证书按需加载。</p>
+<p><b>See also</b> <a href="qsslsocket.html#setDefaultCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setDefaultCaCertificates">setDefaultCaCertificates</a>（）和<a href="qsslsocket.html#caCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#caCertificates">caCertificates</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="defaultCiphers"></a>list-of-QSslCipher QSslSocket.defaultCiphers ()</h3>
+<p>返回默认的加密密码套件在这个应用程序的所有插座。此列表中的套接字的握手阶段时，与对等谈判，以选择一个会话密码使用。该列表是按优先次序排列（即，在列表中的第一个密码是最喜欢的密码） 。</p>
+<p>默认情况下，握手阶段可以选择任何由该系统的SSL库支持的加密算法，这可能会有所不同从系统到系统。通过此系统的SSL库支持的密码列表是由返回<a href="qsslsocket.html#supportedCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#supportedCiphers">supportedCiphers</a>（ ） 。</p>
+<p><b>See also</b> <a href="qsslsocket.html#setDefaultCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setDefaultCiphers">setDefaultCiphers</a>（）和<a href="qsslsocket.html#supportedCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#supportedCiphers">supportedCiphers</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="disconnectFromHostImplementation"></a>QSslSocket.disconnectFromHostImplementation (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void disconnectFromHostImplementation()</tt>。</p>
+<h3 class="fn">
+<a name="encryptedBytesAvailable"></a>int QSslSocket.encryptedBytesAvailable (<i>self</i>)</h3>
+<p>返回正在等待解密加密的字节数。通常情况下，这个函数将返回0 ，因为<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>只要它可以解密它的输入数据。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="encryptedBytesToWrite"></a>int QSslSocket.encryptedBytesToWrite (<i>self</i>)</h3>
+<p>返回的加密的字节正在等待被写入到网络的数目。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="flush"></a>bool QSslSocket.flush (<i>self</i>)</h3>
+<p>该函数将尽可能从内部写缓冲区的底层网络接口，而不会阻塞。如果任何数据被写入时，该函数将返回True，否则返回False。</p>
+<p>调用此函数，如果你需要<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>立即开始发送缓冲数据。成功写入的字节数依赖于操作系统。在大多数情况下，你不需要调用这个函数，因为<a href="qabstractsocket.html" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html">QAbstractSocket</a>将自动开始发送数据，一旦控制返回到事件循环。在不存在的事件循环，调用<a href="qsslsocket.html#waitForBytesWritten" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#waitForBytesWritten">waitForBytesWritten</a>（ ）来代替。</p>
+<p><b>See also</b> <a href="qiodevice.html#write" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#write">write</a>（）和<a href="qsslsocket.html#waitForBytesWritten" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#waitForBytesWritten">waitForBytesWritten</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="ignoreSslErrors"></a>QSslSocket.ignoreSslErrors (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void ignoreSslErrors()</tt>。</p>
+<p>这个插槽告诉<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>过程中忽略的错误<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>的握手阶段，并继续连接。如果你想继续使用，即使在握手阶段出现的错误连接，那么你必须调用这个槽，无论是从连接到一个槽<a href="qsslsocket.html#sslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#sslErrors">sslErrors</a>（ ） ，或之前握手阶段。如果你不调用这个插槽，无论是在响应错误或握手之前，连接将在之后被丢弃<a href="qsslsocket.html#sslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#sslErrors">sslErrors</a>（）信号已经发出。</p>
+<p>如果在SSL握手阶段没有错误（即对方的身份确立，没有任何问题） ，<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>也不会发射<a href="qsslsocket.html#sslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#sslErrors">sslErrors</a>（）的信号，并且它不需要调用此函数。</p>
+<p><b>Warning:</b>一定要始终让用户检查报告的错误<a href="qsslsocket.html#sslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#sslErrors">sslErrors</a>（ ）信号，并且只从用户的程序是确定经确认后，调用此方法。如果有意外的错误，连接应被中止。不检查实际的错误调用此方法将最有可能带来安全风险的应用程序。使用它以极大的关怀！</p>
+<p><b>See also</b> <a href="qsslsocket.html#sslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#sslErrors">sslErrors</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="ignoreSslErrors-2"></a>QSslSocket.ignoreSslErrors (<i>self</i>, list-of-QSslError <i>errors</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>这个方法告诉<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>忽略只在给定的误差<i>errors</i>。</p>
+<p>请注意，您可以在SSL错误设定预期的证书：如果，例如，要连接到使用自签名证书的服务器时，请考虑下面的代码片断：</p>
+<pre class="cpp">
+ <span class="type"><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qlist.html">QList</a></span><span class="operator">&lt;</span><span class="type"><a href="qsslcertificate.html" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html">QSslCertificate</a></span><span class="operator">&gt;</span> cert <span class="operator">=</span> <span class="type"><a href="qsslcertificate.html" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html">QSslCertificate</a></span><span class="operator">.</span>fromPath(QLatin1String(<span class="string">"server-certificate.pem"</span>));
+ <span class="type"><a href="qsslerror.html" tppabs="http://pyqt4doc.appspot.com/qsslerror.html">QSslError</a></span> <a href="qabstractsocket.html#error" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#error">error</a>(<span class="type"><a href="qsslerror.html" tppabs="http://pyqt4doc.appspot.com/qsslerror.html">QSslError</a></span><span class="operator">.</span>SelfSignedCertificate<span class="operator">,</span> cert<span class="operator">.</span>at(<span class="number">0</span>));
+ <span class="type"><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qlist.html">QList</a></span><span class="operator">&lt;</span><span class="type"><a href="qsslerror.html" tppabs="http://pyqt4doc.appspot.com/qsslerror.html">QSslError</a></span><span class="operator">&gt;</span> expectedSslErrors;
+ expectedSslErrors<span class="operator">.</span>append(error);
+
+ <span class="type"><a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a></span> socket;
+ socket<span class="operator">.</span><a href="qsslsocket.html#ignoreSslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#ignoreSslErrors">ignoreSslErrors</a>(expectedSslErrors);
+ socket<span class="operator">.</span><a href="qsslsocket.html#connectToHostEncrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#connectToHostEncrypted">connectToHostEncrypted</a>(<span class="string">"server.tld"</span><span class="operator">,</span> <span class="number">443</span>);
+</pre>
+<p>多次调用该函数会被替换传入以前调用的错误列表。您可以清除通过调用这个函数以一个空列表，你要忽略错误的列表。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qsslsocket.html#sslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#sslErrors">sslErrors</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isEncrypted"></a>bool QSslSocket.isEncrypted (<i>self</i>)</h3>
+<p>返回True如果套接字是加密的，否则，则返回False。</p>
+<p>加密套接字加密被写入调用的所有数据<a href="qiodevice.html#write" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#write">write</a>（）或<a href="qiodevice.html#putChar" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#putChar">putChar</a>（）之前的数据被写入到网络上，并解密所有传入的数据作为数据是从网络接收到的，在打电话之前<a href="qiodevice.html#read" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#read">read</a>（ ）<a href="qiodevice.html#readLine" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#readLine">readLine</a>（）或<a href="qiodevice.html#getChar" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#getChar">getChar</a>（ ） 。</p>
+<p><a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a> emits <a href="qsslsocket.html#encrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#encrypted">encrypted</a>（ ）当它进入加密模式。</p>
+<p>您可以致电<a href="qsslsocket.html#sessionCipher" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#sessionCipher">sessionCipher</a>（）找到它的加密密码是用来加密和解密数据。</p>
+<p><b>See also</b> <a href="qsslsocket.html#mode" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#mode">mode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="localCertificate"></a><a href="qsslcertificate.html" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html">QSslCertificate</a> QSslSocket.localCertificate (<i>self</i>)</h3>
+<p>返回套接字的本地<a href="qsslcertificate.html" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html">certificate</a>，或者一个空的证书，如果没有本地证书已分配。</p>
+<p><b>See also</b> <a href="qsslsocket.html#setLocalCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setLocalCertificate">setLocalCertificate</a>（）和<a href="qsslsocket.html#privateKey" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#privateKey">privateKey</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mode"></a><a href="qsslsocket.html#SslMode-enum" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#SslMode-enum">SslMode</a> QSslSocket.mode (<i>self</i>)</h3>
+<p>返回当前模式的插座;要么<a href="qsslsocket.html#SslMode-enum" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#SslMode-enum">UnencryptedMode</a>，其中<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>行为identially到<a href="qtcpsocket.html" tppabs="http://pyqt4doc.appspot.com/qtcpsocket.html">QTcpSocket</a>的，或者一个<a href="qsslsocket.html#SslMode-enum" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#SslMode-enum">SslClientMode</a> or <a href="qsslsocket.html#SslMode-enum" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#SslMode-enum">SslServerMode</a>，其中客户端可以是谈判或加密模式。</p>
+<p>当模式改变，<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>
+emits <a href="qsslsocket.html#modeChanged" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#modeChanged">modeChanged</a>（ ）</p>
+<p><b>See also</b> <a href="qsslsocket.html#SslMode-enum" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#SslMode-enum">SslMode</a>。</p>
+
+
+<h3 class="fn">
+<a name="peerCertificate"></a><a href="qsslcertificate.html" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html">QSslCertificate</a> QSslSocket.peerCertificate (<i>self</i>)</h3>
+<p>返回同行的数字证书（即您已连接到主机的直接证明） ，或空凭证，如果对等未分配证书。</p>
+<p>对等证书握手阶段中的自动检查，所以这个功能通常用来获取用于显示或连接诊断目的的证书。它包含有关对等的信息，包括它的主机名，证书颁发者，和同行的公钥。</p>
+<p>因为对等证书握手阶段中的设置，它是安全的，从连接到一个插槽存取等证书<a href="qsslsocket.html#sslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#sslErrors">sslErrors</a>（）信号或<a href="qsslsocket.html#encrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#encrypted">encrypted</a>（）信号。</p>
+<p>如果证书无效，则返回，它可能意味着SSL握手失败，或者它可能意味着您已连接到主机没有证书，或者它可能意味着没有连接。</p>
+<p>如果你想检查对端的完整的证书链，利用<a href="qsslsocket.html#peerCertificateChain" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#peerCertificateChain">peerCertificateChain</a>（）来得到一次全部。</p>
+<p><b>See also</b> <a href="qsslsocket.html#peerCertificateChain" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#peerCertificateChain">peerCertificateChain</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="peerCertificateChain"></a>list-of-QSslCertificate QSslSocket.peerCertificateChain (<i>self</i>)</h3>
+<p>返回数字证书的对等的链，或证书列表是空的。</p>
+<p>同行证书握手阶段中的自动检查。此功能通常用于获取证书显示，或用于执行连接诊断。证书包含有关对等和证书发行机构，包括主机名，发行人名称和发行者公开密钥的信息。</p>
+<p>对等证书的设置<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>握手阶段中，所以它是安全的，从连接到一个时隙调用此函数<a href="qsslsocket.html#sslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#sslErrors">sslErrors</a>（）信号或<a href="qsslsocket.html#encrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#encrypted">encrypted</a>（）信号。</p>
+<p>如果返回空列表，它可能意味着SSL握手失败，或者它可能意味着您已连接到主机没有证书，或者它可能意味着没有连接。</p>
+<p>如果你想只得到了同行的直接证明，使用<a href="qsslsocket.html#peerCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#peerCertificate">peerCertificate</a>（ ） 。</p>
+<p><b>See also</b> <a href="qsslsocket.html#peerCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#peerCertificate">peerCertificate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="peerVerifyDepth"></a>int QSslSocket.peerVerifyDepth (<i>self</i>)</h3>
+<p>返回的证书在同行中的证书链，如果没有最大深度已设置在SSL握手阶段，或0 （默认值）要检查的最大数目，这表明整个证书链应该进行检查。</p>
+<p>该证书在发出订单，开始与对端自己的证书，那么它的颁发者的证书，等检查。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qsslsocket.html#setPeerVerifyDepth" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setPeerVerifyDepth">setPeerVerifyDepth</a>（）和<a href="qsslsocket.html#peerVerifyMode" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#peerVerifyMode">peerVerifyMode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="peerVerifyMode"></a><a href="qsslsocket.html#PeerVerifyMode-enum" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#PeerVerifyMode-enum">PeerVerifyMode</a> QSslSocket.peerVerifyMode (<i>self</i>)</h3>
+<p>返回套接字的验证模式。此模式模式决定是否<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>应要求对等方的证书（即客户端从服务器请求一个证书，或请求从客户端证书的服务器） ，以及是否应当要求该证书是有效的。</p>
+<p>默认模式是<a href="qsslsocket.html#PeerVerifyMode-enum" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#PeerVerifyMode-enum">AutoVerifyPeer</a>，它告诉<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>使用<a href="qsslsocket.html#PeerVerifyMode-enum" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#PeerVerifyMode-enum">VerifyPeer</a>为客户和<a href="qsslsocket.html#PeerVerifyMode-enum" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#PeerVerifyMode-enum">QueryPeer</a>用于服务器。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qsslsocket.html#setPeerVerifyMode" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setPeerVerifyMode">setPeerVerifyMode</a>（ ）<a href="qsslsocket.html#peerVerifyDepth" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#peerVerifyDepth">peerVerifyDepth</a>（）和<a href="qsslsocket.html#mode" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#mode">mode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="peerVerifyName"></a>QString QSslSocket.peerVerifyName (<i>self</i>)</h3>
+<p>返回不同的主机名的证书验证，以setPeerVerifyName或connectToHostEncrypted载。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qsslsocket.html#setPeerVerifyName" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setPeerVerifyName">setPeerVerifyName</a>（）和<a href="qsslsocket.html#connectToHostEncrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#connectToHostEncrypted">connectToHostEncrypted</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="privateKey"></a><a href="qsslkey.html" tppabs="http://pyqt4doc.appspot.com/qsslkey.html">QSslKey</a> QSslSocket.privateKey (<i>self</i>)</h3>
+<p>返回此套接字的私钥。</p>
+<p><b>See also</b> <a href="qsslsocket.html#setPrivateKey" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setPrivateKey">setPrivateKey</a>（）和<a href="qsslsocket.html#localCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#localCertificate">localCertificate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="protocol"></a><a href="qssl.html#SslProtocol-enum" tppabs="http://pyqt4doc.appspot.com/qssl.html#SslProtocol-enum">QSsl.SslProtocol</a> QSslSocket.protocol (<i>self</i>)</h3>
+<p>返回套接字的SSL协议。默认情况下，<a href="qssl.html#SslProtocol-enum" tppabs="http://pyqt4doc.appspot.com/qssl.html#SslProtocol-enum">QSsl.SecureProtocols</a>被使用。</p>
+<p><b>See also</b> <a href="qsslsocket.html#setProtocol" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setProtocol">setProtocol</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="readData"></a>str QSslSocket.readData (<i>self</i>, int <i>maxlen</i>)</h3>
+<p>从重新实现<a href="qiodevice.html#readData" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#readData">QIODevice.readData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sessionCipher"></a><a href="qsslcipher.html" tppabs="http://pyqt4doc.appspot.com/qsslcipher.html">QSslCipher</a> QSslSocket.sessionCipher (<i>self</i>)</h3>
+<p>返回套接字的密码<a href="qsslcipher.html" tppabs="http://pyqt4doc.appspot.com/qsslcipher.html">cipher</a>或空密码，如果是不加密的连接。套接字的密码在会议期间握手阶段设置。密码是用于加密和解密通过套接字发送的数据。</p>
+<p><a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>还提供了一些函数来设置密码从中握手阶段将最终选择会话密码的有序列表。这种有序列表必须到位握手阶段开始之前。</p>
+<p><b>See also</b> <a href="qsslsocket.html#ciphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#ciphers">ciphers</a>（ ）<a href="qsslsocket.html#setCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setCiphers">setCiphers</a>（ ）<a href="qsslsocket.html#setDefaultCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setDefaultCiphers">setDefaultCiphers</a>（ ）<a href="qsslsocket.html#defaultCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#defaultCiphers">defaultCiphers</a>（）和<a href="qsslsocket.html#supportedCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#supportedCiphers">supportedCiphers</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCaCertificates"></a>QSslSocket.setCaCertificates (<i>self</i>, list-of-QSslCertificate <i>certificates</i>)</h3>
+<p>设置此套接字的CA证书数据库是<i>certificates</i>。证书数据库之前必须设置为SSL握手。握手阶段中的CA证书数据库所使用的插座，以验证对方的证书。</p>
+<p>CA证书数据库可以通过调用这个函数的返回通过CA证书列表被重置为当前默认的CA证书数据库<a href="qsslsocket.html#defaultCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#defaultCaCertificates">defaultCaCertificates</a>（ ） 。</p>
+<p><b>See also</b> <a href="qsslsocket.html#caCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#caCertificates">caCertificates</a>（）和<a href="qsslsocket.html#defaultCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#defaultCaCertificates">defaultCaCertificates</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCiphers"></a>QSslSocket.setCiphers (<i>self</i>, list-of-QSslCipher <i>ciphers</i>)</h3>
+<p>加密的加密套件为这个套接字设置为<i>ciphers</i>，其中必须包含在返回的列表中的密码子集<a href="qsslsocket.html#supportedCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#supportedCiphers">supportedCiphers</a>（ ） 。</p>
+<p>限制密码套件必须在握手阶段，那里的会话密码被选为前完成。</p>
+<p><b>See also</b> <a href="qsslsocket.html#ciphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#ciphers">ciphers</a>（ ）<a href="qsslsocket.html#setDefaultCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setDefaultCiphers">setDefaultCiphers</a>（）和<a href="qsslsocket.html#supportedCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#supportedCiphers">supportedCiphers</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCiphers-2"></a>QSslSocket.setCiphers (<i>self</i>, QString <i>ciphers</i>)</h3>
+<p>加密的加密套件为这个套接字设置为<i>ciphers</i>，这是密码套件名称的冒号分隔的列表。在密码中列出优先顺序，从最优先的密码。例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a></span> socket;
+ socket<span class="operator">.</span><a href="qsslsocket.html#setCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setCiphers">setCiphers</a>(<span class="string">"DHE-RSA-AES256-SHA:DHE-DSS-AES256-SHA:AES256-SHA"</span>);
+</pre>
+<p>在每个密码名称<i>ciphers</i>必须在返回的列表中选择一个加密的名称<a href="qsslsocket.html#supportedCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#supportedCiphers">supportedCiphers</a>（ ） 。限制密码套件必须在握手阶段，那里的会话密码被选为前完成。</p>
+<p><b>See also</b> <a href="qsslsocket.html#ciphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#ciphers">ciphers</a>（ ）<a href="qsslsocket.html#setDefaultCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setDefaultCiphers">setDefaultCiphers</a>（）和<a href="qsslsocket.html#supportedCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#supportedCiphers">supportedCiphers</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setDefaultCaCertificates"></a>QSslSocket.setDefaultCaCertificates (list-of-QSslCertificate <i>certificates</i>)</h3>
+<p>设置默认的CA证书数据库<i>certificates</i>。默认的CA证书数据库最初设置为系统的默认CA证书数据库。您可以使用这个功能你自己的CA证书数据库复盖默认的CA证书数据库。</p>
+<p>每个SSL套接字的CA证书数据库被初始化为默认的CA证书数据库。</p>
+<p><b>See also</b> <a href="qsslsocket.html#defaultCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#defaultCaCertificates">defaultCaCertificates</a>（）和<a href="qsslsocket.html#addDefaultCaCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#addDefaultCaCertificate">addDefaultCaCertificate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setDefaultCiphers"></a>QSslSocket.setDefaultCiphers (list-of-QSslCipher <i>ciphers</i>)</h3>
+<p>设置默认的加密密码套件在这个应用程序的所有套接字<i>ciphers</i>，其中必须包含在返回的列表中的密码子集<a href="qsslsocket.html#supportedCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#supportedCiphers">supportedCiphers</a>（ ） 。</p>
+<p>限制默认的密码套件仅影响履行握手阶段的默认密码套件已经被改变后， SSL套接字。</p>
+<p><b>See also</b> <a href="qsslsocket.html#setCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setCiphers">setCiphers</a>（ ）<a href="qsslsocket.html#defaultCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#defaultCiphers">defaultCiphers</a>（）和<a href="qsslsocket.html#supportedCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#supportedCiphers">supportedCiphers</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setLocalCertificate"></a>QSslSocket.setLocalCertificate (<i>self</i>, <a href="qsslcertificate.html" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html">QSslCertificate</a> <i>certificate</i>)</h3>
+<p>设置套接字的本地证书<i>certificate</i>。如果您需要确认您的身份到对端的本地证书是必要的。这是一起用私有密钥;如果设置了本地证书，还必须设置专用密钥。</p>
+<p>本地证书和私钥总是必要的服务器套接字，但也很少使用客户端套接字，如果服务器要求客户端进行身份验证。</p>
+<p><b>See also</b> <a href="qsslsocket.html#localCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#localCertificate">localCertificate</a>（）和<a href="qsslsocket.html#setPrivateKey" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setPrivateKey">setPrivateKey</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setLocalCertificate-2"></a>QSslSocket.setLocalCertificate (<i>self</i>, QString <i>path</i>, <a href="qssl.html#EncodingFormat-enum" tppabs="http://pyqt4doc.appspot.com/qssl.html#EncodingFormat-enum">QSsl.EncodingFormat</a> <i>format</i> = QSsl.Pem)</h3>
+<p>这是一个重载函数。</p>
+<p>设置套接字的本地<a href="qsslcertificate.html" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html">certificate</a>在文件中找到的第一个<i>path</i>，这是根据指定的解析<i>format</i>。</p>
+
+
+<h3 class="fn">
+<a name="setPeerVerifyDepth"></a>QSslSocket.setPeerVerifyDepth (<i>self</i>, int <i>depth</i>)</h3>
+<p>设置证书在同行中的证书链在SSL握手阶段进行检查的最大数量，以<i>depth</i>。设置为0的深度表示没有最大深度被设定，表明整个证书链应进行检查。</p>
+<p>该证书在发出订单，开始与对端自己的证书，那么它的颁发者的证书，等检查。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qsslsocket.html#peerVerifyDepth" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#peerVerifyDepth">peerVerifyDepth</a>（）和<a href="qsslsocket.html#setPeerVerifyMode" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setPeerVerifyMode">setPeerVerifyMode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPeerVerifyMode"></a>QSslSocket.setPeerVerifyMode (<i>self</i>, <a href="qsslsocket.html#PeerVerifyMode-enum" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#PeerVerifyMode-enum">PeerVerifyMode</a> <i>mode</i>)</h3>
+<p>设置套接字的验证模式<i>mode</i>。这种模式决定是否<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>应要求对等方的证书（即客户端从服务器请求一个证书，或请求从客户端证书的服务器） ，以及是否应当要求该证书是有效的。</p>
+<p>默认模式是<a href="qsslsocket.html#PeerVerifyMode-enum" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#PeerVerifyMode-enum">AutoVerifyPeer</a>，它告诉<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>使用<a href="qsslsocket.html#PeerVerifyMode-enum" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#PeerVerifyMode-enum">VerifyPeer</a>为客户和<a href="qsslsocket.html#PeerVerifyMode-enum" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#PeerVerifyMode-enum">QueryPeer</a>用于服务器。</p>
+<p>设置此模式下的加密开始后具有当前连接没有影响。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qsslsocket.html#peerVerifyMode" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#peerVerifyMode">peerVerifyMode</a>（ ）<a href="qsslsocket.html#setPeerVerifyDepth" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setPeerVerifyDepth">setPeerVerifyDepth</a>（）和<a href="qsslsocket.html#mode" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#mode">mode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPeerVerifyName"></a>QSslSocket.setPeerVerifyName (<i>self</i>, QString <i>hostName</i>)</h3>
+<p>设置一个不同的主机名，由下式给出<i>hostName</i>，证书验证，而不是用于该TCP连接的那个。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qsslsocket.html#peerVerifyName" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#peerVerifyName">peerVerifyName</a>（）和<a href="qsslsocket.html#connectToHostEncrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#connectToHostEncrypted">connectToHostEncrypted</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPrivateKey"></a>QSslSocket.setPrivateKey (<i>self</i>, <a href="qsslkey.html" tppabs="http://pyqt4doc.appspot.com/qsslkey.html">QSslKey</a> <i>key</i>)</h3>
+<p>设置套接字的私人<a href="qsslkey.html" tppabs="http://pyqt4doc.appspot.com/qsslkey.html">key</a>至<i>key</i>。私钥和当地<a href="qsslcertificate.html" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html">certificate</a>所使用的客户端和服务器必须证明自己身份的SSL同行。</p>
+<p>密钥和本地证书是必需的，如果你正在创建一个SSL服务器套接字。如果要创建一个SSL客户端套接字，密钥和本地证书是如果你的客户端必须确定自己的SSL服务器所需。</p>
+<p><b>See also</b> <a href="qsslsocket.html#privateKey" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#privateKey">privateKey</a>（）和<a href="qsslsocket.html#setLocalCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setLocalCertificate">setLocalCertificate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPrivateKey-2"></a>QSslSocket.setPrivateKey (<i>self</i>, QString <i>fileName</i>, <a href="qssl.html#KeyAlgorithm-enum" tppabs="http://pyqt4doc.appspot.com/qssl.html#KeyAlgorithm-enum">QSsl.KeyAlgorithm</a> <i>algorithm</i> = QSsl.Rsa, <a href="qssl.html#EncodingFormat-enum" tppabs="http://pyqt4doc.appspot.com/qssl.html#EncodingFormat-enum">QSsl.EncodingFormat</a> <i>format</i> = QSsl.Pem, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>passPhrase</i> = QByteArray())</h3>
+<p>这是一个重载函数。</p>
+<p>读取字符串的文件<i>fileName</i>并使用指定的解码它<i>algorithm</i>和编码<i>format</i>构造一个<a href="qsslkey.html" tppabs="http://pyqt4doc.appspot.com/qsslkey.html">SSL key</a>。如果编码的密钥进行加密，<i>passPhrase</i>用于解密。</p>
+<p>插座的私有密钥被设置为所构建的关键。私钥和当地<a href="qsslcertificate.html" tppabs="http://pyqt4doc.appspot.com/qsslcertificate.html">certificate</a>所使用的客户端和服务器必须证明自己身份的SSL同行。</p>
+<p>密钥和本地证书是必需的，如果你正在创建一个SSL服务器套接字。如果要创建一个SSL客户端套接字，密钥和本地证书是如果你的客户端必须确定自己的SSL服务器所需。</p>
+<p><b>See also</b> <a href="qsslsocket.html#privateKey" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#privateKey">privateKey</a>（）和<a href="qsslsocket.html#setLocalCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setLocalCertificate">setLocalCertificate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setProtocol"></a>QSslSocket.setProtocol (<i>self</i>, <a href="qssl.html#SslProtocol-enum" tppabs="http://pyqt4doc.appspot.com/qssl.html#SslProtocol-enum">QSsl.SslProtocol</a> <i>protocol</i>)</h3>
+<p>设置套接字的SSL协议<i>protocol</i>。这将影响到下一个启动的握手;对已经加密套接字调用这个函数不会影响套接字的协议。</p>
+<p><b>See also</b> <a href="qsslsocket.html#protocol" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#protocol">protocol</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setReadBufferSize"></a>QSslSocket.setReadBufferSize (<i>self</i>, int <i>size</i>)</h3>
+<p>载的大小<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>的内部读缓冲区是<i>size</i>字节。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="setSocketDescriptor"></a>bool QSslSocket.setSocketDescriptor (<i>self</i>, int <i>socketDescriptor</i>, <a href="qabstractsocket.html#SocketState-enum" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#SocketState-enum">QAbstractSocket.SocketState</a> <i>state</i> = QAbstractSocket.ConnectedState, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qiodevice-openmode.html">QIODevice.OpenMode</a> <i>mode</i> = QIODevice.ReadWrite)</h3>
+<p>初始化<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>与本地套接字描述符<i>socketDescriptor</i>。返回True如果<i>socketDescriptor</i>被接受为有效的套接字描述符，否则返回False 。该插座是由指定的模式打开<i>openMode</i>，并进入由指定的套接字状态<i>state</i>。</p>
+<p><b>Note:</b>这是不可能的初始化两个插座使用相同的本地套接字描述符。</p>
+<p><b>See also</b> <a href="qabstractsocket.html#socketDescriptor" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#socketDescriptor">socketDescriptor</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setSocketOption"></a>QSslSocket.setSocketOption (<i>self</i>, <a href="qabstractsocket.html#SocketOption-enum" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#SocketOption-enum">QAbstractSocket.SocketOption</a> <i>option</i>, QVariant <i>value</i>)</h3>
+<p>设置给定<i>option</i>由所描述的值<i>value</i>。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qsslsocket.html#socketOption" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#socketOption">socketOption</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setSslConfiguration"></a>QSslSocket.setSslConfiguration (<i>self</i>, <a href="qsslconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qsslconfiguration.html">QSslConfiguration</a> <i>config</i>)</h3>
+<p>设置套接字的SSL配置是内容<i>configuration</i>。该函数设置本地证书，加密，私钥和CA证书与储存在<i>configuration</i>。</p>
+<p>这是不可能的，设置SSL的状态相关的字段。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qsslsocket.html#sslConfiguration" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#sslConfiguration">sslConfiguration</a>（ ）<a href="qsslsocket.html#setLocalCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setLocalCertificate">setLocalCertificate</a>（ ）<a href="qsslsocket.html#setPrivateKey" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setPrivateKey">setPrivateKey</a>（ ）<a href="qsslsocket.html#setCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setCaCertificates">setCaCertificates</a>（）和<a href="qsslsocket.html#setCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setCiphers">setCiphers</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="socketOption"></a>QVariant QSslSocket.socketOption (<i>self</i>, <a href="qabstractsocket.html#SocketOption-enum" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#SocketOption-enum">QAbstractSocket.SocketOption</a> <i>option</i>)</h3>
+<p>返回的值<i>option</i>选项。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qsslsocket.html#setSocketOption" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setSocketOption">setSocketOption</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sslConfiguration"></a><a href="qsslconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qsslconfiguration.html">QSslConfiguration</a> QSslSocket.sslConfiguration (<i>self</i>)</h3>
+<p>返回套接字的SSL配置状态。套接字的缺省SSL配置是使用默认的密码，默认的CA证书，没有本地私有密钥或证书。</p>
+<p>SSL配置还包含可随时间而改变，恕不另行通知栏。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qsslsocket.html#setSslConfiguration" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setSslConfiguration">setSslConfiguration</a>（ ）<a href="qsslsocket.html#localCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#localCertificate">localCertificate</a>（ ）<a href="qsslsocket.html#peerCertificate" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#peerCertificate">peerCertificate</a>（ ）<a href="qsslsocket.html#peerCertificateChain" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#peerCertificateChain">peerCertificateChain</a>（ ）<a href="qsslsocket.html#sessionCipher" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#sessionCipher">sessionCipher</a>（ ）<a href="qsslsocket.html#privateKey" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#privateKey">privateKey</a>（ ）<a href="qsslsocket.html#ciphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#ciphers">ciphers</a>（）和<a href="qsslsocket.html#caCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#caCertificates">caCertificates</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sslErrors"></a>list-of-QSslError QSslSocket.sslErrors (<i>self</i>)</h3>
+<p>返回最近发生的SSL错误的列表。这是相同的列表作为<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>通过sslErrors （ ）信号通过。如果连接已加密，没有错误，此函数将返回一个空列表。</p>
+<p><b>See also</b> <a href="qsslsocket.html#connectToHostEncrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#connectToHostEncrypted">connectToHostEncrypted</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="startClientEncryption"></a>QSslSocket.startClientEncryption (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void startClientEncryption()</tt>。</p>
+<p>启动一个客户端连接的延迟SSL握手。这个函数可以在插座是在被称为<a href="qabstractsocket.html#SocketState-enum" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#SocketState-enum">ConnectedState</a>但仍处于<a href="qsslsocket.html#SslMode-enum" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#SslMode-enum">UnencryptedMode</a>。如果尚未连接，或者如果它已被加密，该功能没有任何影响。</p>
+<p>实现STARTTLS功能的客户经常使用延迟的SSL握手。大多数其他客户端可以使用避免直接调用此函数<a href="qsslsocket.html#connectToHostEncrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#connectToHostEncrypted">connectToHostEncrypted</a>（）代替，它会自动执行握手。</p>
+<p><b>See also</b> <a href="qsslsocket.html#connectToHostEncrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#connectToHostEncrypted">connectToHostEncrypted</a>（）和<a href="qsslsocket.html#startServerEncryption" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#startServerEncryption">startServerEncryption</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="startServerEncryption"></a>QSslSocket.startServerEncryption (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void startServerEncryption()</tt>。</p>
+<p>启动服务器连接延迟的SSL握手。这个函数可以在插座是在被称为<a href="qabstractsocket.html#SocketState-enum" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#SocketState-enum">ConnectedState</a>但仍处于<a href="qsslsocket.html#SslMode-enum" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#SslMode-enum">UnencryptedMode</a>。如果没有连接，或者已被加密，则该功能没有任何影响。</p>
+<p>对于服务器套接字，则调用这个函数来启动SSL握手的唯一途径。大多数服务器将在接收到连接立即调用该函数，或作为已接受一个协议特定的命令进入SSL模式（例如的结果，服务器可能收到的响应串“ STARTTLS \ r \ N”通过调用这个函数） 。</p>
+<p>实现SSL服务器最常用的方法是创建一个子类<a href="qtcpserver.html" tppabs="http://pyqt4doc.appspot.com/qtcpserver.html">QTcpServer</a>并重新实现<a href="qtcpserver.html#incomingConnection" tppabs="http://pyqt4doc.appspot.com/qtcpserver.html#incomingConnection">QTcpServer.incomingConnection</a>（ ） 。返回的套接字描述符，然后传递到<a href="qsslsocket.html#setSocketDescriptor" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setSocketDescriptor">QSslSocket.setSocketDescriptor</a>（ ） 。</p>
+<p><b>See also</b> <a href="qsslsocket.html#connectToHostEncrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#connectToHostEncrypted">connectToHostEncrypted</a>（）和<a href="qsslsocket.html#startClientEncryption" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#startClientEncryption">startClientEncryption</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="supportedCiphers"></a>list-of-QSslCipher QSslSocket.supportedCiphers ()</h3>
+<p>返回本系统支持的加密算法列表。此列表是由系统的SSL库和设置可能会有所不同从系统到系统中。</p>
+<p><b>See also</b> <a href="qsslsocket.html#defaultCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#defaultCiphers">defaultCiphers</a>（ ）<a href="qsslsocket.html#ciphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#ciphers">ciphers</a>（）和<a href="qsslsocket.html#setCiphers" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setCiphers">setCiphers</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="supportsSsl"></a>bool QSslSocket.supportsSsl ()</h3>
+<p>返回True如果该平台支持SSL ，否则返回False 。如果平台不支持SSL ，套接字将在连接阶段失败。</p>
+
+
+<h3 class="fn">
+<a name="systemCaCertificates"></a>list-of-QSslCertificate QSslSocket.systemCaCertificates ()</h3>
+<p>这个功能提供由操作系统提供的CA证书数据库。这个函数返回的CA证书数据库是用来初始化返回的数据库<a href="qsslsocket.html#defaultCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#defaultCaCertificates">defaultCaCertificates</a>（ ） 。你可以换成你自己的数据库<a href="qsslsocket.html#setDefaultCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setDefaultCaCertificates">setDefaultCaCertificates</a>（ ） 。</p>
+<p><b>See also</b> <a href="qsslsocket.html#caCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#caCertificates">caCertificates</a>（ ）<a href="qsslsocket.html#defaultCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#defaultCaCertificates">defaultCaCertificates</a>（）和<a href="qsslsocket.html#setDefaultCaCertificates" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#setDefaultCaCertificates">setDefaultCaCertificates</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="waitForBytesWritten"></a>bool QSslSocket.waitForBytesWritten (<i>self</i>, int <i>msecs</i> = 30000)</h3>
+<p>从重新实现<a href="qiodevice.html#waitForBytesWritten" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#waitForBytesWritten">QIODevice.waitForBytesWritten</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="waitForConnected"></a>bool QSslSocket.waitForConnected (<i>self</i>, int <i>msecs</i> = 30000)</h3>
+<p>等待，直到套接字连接，或<i>msecs</i>
+milliseconds, whichever happens first. If the connection has been
+established, this function returns true; otherwise it returns
+false.</p>
+<p><b>See also</b> <a href="qabstractsocket.html#waitForConnected" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#waitForConnected">QAbstractSocket.waitForConnected</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="waitForDisconnected"></a>bool QSslSocket.waitForDisconnected (<i>self</i>, int <i>msecs</i> = 30000)</h3>
+<p>等待，直到该套接字已断开或<i>msecs</i>毫秒，以先到者为准。如果连接已经断开，则该函数返回True，否则返回False 。</p>
+<p><b>See also</b> <a href="qabstractsocket.html#waitForDisconnected" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#waitForDisconnected">QAbstractSocket.waitForDisconnected</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="waitForEncrypted"></a>bool QSslSocket.waitForEncrypted (<i>self</i>, int <i>msecs</i> = 30000)</h3>
+<p>等待，直到插座已完成SSL握手，并已发出<a href="qsslsocket.html#encrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#encrypted">encrypted</a>（） ，或<i>msecs</i>毫秒，以先到者为准。如果<a href="qsslsocket.html#encrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#encrypted">encrypted</a>（ ）已发出，则该函数返回True，否则（例如，插座断开，或在SSL握手失败） ，则返回False 。</p>
+<p>下面的例子最多等待1秒到加密套接字：</p>
+<pre class="cpp">
+ socket<span class="operator">-</span><span class="operator">&gt;</span><a href="qsslsocket.html#connectToHostEncrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#connectToHostEncrypted">connectToHostEncrypted</a>(<span class="string">"imap"</span><span class="operator">,</span> <span class="number">993</span>);
+ <span class="keyword">if</span> (socket<span class="operator">-</span><span class="operator">&gt;</span>waitForEncrypted(<span class="number">1000</span>))
+     <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>(<span class="string">"Encrypted!"</span>);
+</pre>
+<p>如果毫秒为-1 ，此功能将不会超时。</p>
+<p><b>See also</b> <a href="qsslsocket.html#startClientEncryption" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#startClientEncryption">startClientEncryption</a>（ ）<a href="qsslsocket.html#startServerEncryption" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#startServerEncryption">startServerEncryption</a>（ ）<a href="qsslsocket.html#encrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#encrypted">encrypted</a>（）和<a href="qsslsocket.html#isEncrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#isEncrypted">isEncrypted</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="waitForReadyRead"></a>bool QSslSocket.waitForReadyRead (<i>self</i>, int <i>msecs</i> = 30000)</h3>
+<p>从重新实现<a href="qiodevice.html#waitForReadyRead" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#waitForReadyRead">QIODevice.waitForReadyRead</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="writeData"></a>int QSslSocket.writeData (<i>self</i>, str <i>data</i>)</h3>
+<p>从重新实现<a href="qiodevice.html#writeData" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#writeData">QIODevice.writeData</a>（ ） 。</p>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="encrypted"></a>void encrypted ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>进入加密模式。之后此信号被发射<a href="qsslsocket.html#isEncrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#isEncrypted">QSslSocket.isEncrypted</a>（ ）将返回True ，并在插座所有进一步的传输将被加密。</p>
+<p><b>See also</b> <a href="qsslsocket.html#connectToHostEncrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#connectToHostEncrypted">QSslSocket.connectToHostEncrypted</a>（）和<a href="qsslsocket.html#isEncrypted" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#isEncrypted">QSslSocket.isEncrypted</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="encryptedBytesWritten"></a>void encryptedBytesWritten (qint64)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>它的加密数据写入到网络。该<i>written</i>参数包含已成功写入的字节数。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qiodevice.html#bytesWritten" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#bytesWritten">QIODevice.bytesWritten</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="modeChanged"></a>void modeChanged (QSslSocket::SslMode)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>从变化<a href="qsslsocket.html#SslMode-enum" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#SslMode-enum">QSslSocket.UnencryptedMode</a>要么<a href="qsslsocket.html#SslMode-enum" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#SslMode-enum">QSslSocket.SslClientMode</a> or
+<a href="qsslsocket.html#SslMode-enum" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#SslMode-enum">QSslSocket.SslServerMode</a>。<i>mode</i>是新的模式。</p>
+<p><b>See also</b> <a href="qsslsocket.html#mode" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#mode">QSslSocket.mode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="peerVerifyError"></a>void peerVerifyError (const QSslError&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p><a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>可以在SSL握手期间发出此信号几次，加密已经建立之前，以表明在建立对等体的身份已经发生了错误。该<i>error</i>是通常表示<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>无法安全地识别对端。</p>
+<p>这个信号提供了一个早期迹象时，什么是错的。通过连接到这个信号时，您可以手动选择推倒从连接槽内的连接握手完成之前。如果不采取行动，<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>将继续发光<a href="qsslsocket.html#sslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#sslErrors">QSslSocket.sslErrors</a>（ ） 。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qsslsocket.html#sslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#sslErrors">sslErrors</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sslErrors-2"></a>void sslErrors (const QList&lt;QSslError&gt;&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p><a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>SSL握手之后发出这一信号，表明在建立对等体的身份的一个或多个错误时有发生。该错误通常是一个迹象表明，<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>无法安全地识别对端。除非采取任何行动，在此之后信号已经发出的连接将被丢弃。</p>
+<p>如果你想继续连接，尽管已发生的错误，你必须调用<a href="qsslsocket.html#ignoreSslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#ignoreSslErrors">QSslSocket.ignoreSslErrors</a>（）从连接到该信号的时隙内。如果你需要访问在以后的错误列表，你可以调用<a href="qsslsocket.html#sslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#sslErrors">sslErrors</a>（ ） （不带参数） 。</p>
+<p><i>errors</i>包含一个或多个错误，防止<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>从验证对等体的身份。</p>
+<p>注意：您不能使用<a href="qt.html#ConnectionType-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ConnectionType-enum">Qt.QueuedConnection</a>当连接到该信号，或呼叫<a href="qsslsocket.html#ignoreSslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#ignoreSslErrors">QSslSocket.ignoreSslErrors</a>（ ）不会有任何效果。</p>
+<p><b>See also</b> <a href="qsslsocket.html#peerVerifyError" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#peerVerifyError">peerVerifyError</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

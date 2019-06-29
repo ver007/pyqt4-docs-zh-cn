@@ -1,0 +1,526 @@
+﻿<html>
+<head>
+<title>QVideoFrame Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QVideoFrame Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtmultimedia.html">QtMultimedia</a> module]</sup></sup>
+</h1>
+<p>该QVideoFrame类提供​​的视频数据的帧的表示。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qvideoframe.html#FieldType-enum" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#FieldType-enum">FieldType</a></b> { ProgressiveFrame, TopField, BottomField, InterlacedFrame }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qvideoframe.html#PixelFormat-enum" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#PixelFormat-enum">PixelFormat</a></b> { Format_Invalid, Format_ARGB32, Format_ARGB32_Premultiplied, Format_RGB32, ..., Format_User }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qvideoframe.html#QVideoFrame" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#QVideoFrame">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qvideoframe.html#QVideoFrame-2" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#QVideoFrame-2">__init__</a></b> (<i>self</i>, QAbstractVideoBuffer <i>buffer</i>, QSize <i>size</i>, PixelFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qvideoframe.html#QVideoFrame-3" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#QVideoFrame-3">__init__</a></b> (<i>self</i>, int <i>bytes</i>, QSize <i>size</i>, int <i>bytesPerLine</i>, PixelFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qvideoframe.html#QVideoFrame-4" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#QVideoFrame-4">__init__</a></b> (<i>self</i>, QImage <i>image</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qvideoframe.html#QVideoFrame-5" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#QVideoFrame-5">__init__</a></b> (<i>self</i>, QVideoFrame <i>other</i>)</li>
+<li>
+<div class="fn"></div>sip.voidptr <b><a href="qvideoframe.html#bits" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#bits">bits</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qvideoframe.html#bytesPerLine" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#bytesPerLine">bytesPerLine</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qvideoframe.html#endTime" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#endTime">endTime</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>FieldType <b><a href="qvideoframe.html#fieldType" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#fieldType">fieldType</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qvideoframe.html#handle" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#handle">handle</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QAbstractVideoBuffer.HandleType <b><a href="qvideoframe.html#handleType" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#handleType">handleType</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qvideoframe.html#height" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#height">height</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qvideoframe.html#isMapped" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#isMapped">isMapped</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qvideoframe.html#isReadable" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#isReadable">isReadable</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qvideoframe.html#isValid" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#isValid">isValid</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qvideoframe.html#isWritable" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#isWritable">isWritable</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qvideoframe.html#map" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#map">map</a></b> (<i>self</i>, QAbstractVideoBuffer.MapMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>QAbstractVideoBuffer.MapMode <b><a href="qvideoframe.html#mapMode" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#mapMode">mapMode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qvideoframe.html#mappedBytes" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#mappedBytes">mappedBytes</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>PixelFormat <b><a href="qvideoframe.html#pixelFormat" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#pixelFormat">pixelFormat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qvideoframe.html#setEndTime" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#setEndTime">setEndTime</a></b> (<i>self</i>, int <i>time</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qvideoframe.html#setFieldType" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#setFieldType">setFieldType</a></b> (<i>self</i>, FieldType)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qvideoframe.html#setStartTime" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#setStartTime">setStartTime</a></b> (<i>self</i>, int <i>time</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qvideoframe.html#size" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#size">size</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qvideoframe.html#startTime" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#startTime">startTime</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qvideoframe.html#unmap" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#unmap">unmap</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qvideoframe.html#width" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#width">width</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QImage.Format <b><a href="qvideoframe.html#imageFormatFromPixelFormat" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#imageFormatFromPixelFormat">imageFormatFromPixelFormat</a></b> (PixelFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>PixelFormat <b><a href="qvideoframe.html#pixelFormatFromImageFormat" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#pixelFormatFromImageFormat">pixelFormatFromImageFormat</a></b> (QImage.Format <i>format</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QVideoFrame类提供​​的视频数据的帧的表示。</p>
+<p>一个QVideoFrame封装了一个视频帧，以及有关帧信息的数据。</p>
+<p>一视频帧的内容可以通过使用被映射到存储器中的<a href="qvideoframe.html#map" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#map">map</a>（）函数。而映射到的视频数据可以使用访问<a href="qvideoframe.html#bits" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#bits">bits</a>（）函数返回一个指向缓冲区的指针，它的总的大小是由给定的<a href="qvideoframe.html#mappedBytes" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#mappedBytes">mappedBytes</a>（）和每一行的大小由下式给出<a href="qvideoframe.html#bytesPerLine" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#bytesPerLine">bytesPerLine</a>（ ） 。的返回值<a href="qvideoframe.html#handle" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#handle">handle</a>（）函数可用于使用内部缓冲器的本机API来访问帧数据。</p>
+<p>在一个QVideoFrame视频数据被封装在一个<a href="qabstractvideobuffer.html" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html">QAbstractVideoBuffer</a>。一个QVideoFrame可以从任何缓冲类型的子类的构造<a href="qabstractvideobuffer.html" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html">QAbstractVideoBuffer</a>类。</p>
+<p><b>Note:</b>QVideoFrame是公开共享的，以视频帧所做的任何更改也将适用于任何副本。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="FieldType-enum"></a>QVideoFrame.FieldType</h3>
+<p>指定的隔行扫描视频帧所属的领域。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.ProgressiveFrame</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该框架是没有交错。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.TopField</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该帧包含一个顶场。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.BottomField</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">该帧包含一个底场。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.InterlacedFrame</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">该帧包含一个合并的顶和底场。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="PixelFormat-enum"></a>QVideoFrame.PixelFormat</h3>
+<p>列举的视频数据类型。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_Invalid</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该框架是无效的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_ARGB32</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该帧是使用32位ARGB格式（ 0xAARRGGBB ）存储。这等效于<a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">QImage.Format_ARGB32</a>。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QVideoFrame.Format_ARGB32_Premultiplied</tt>
+</td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">使用预乘32位ARGB格式（ 0xAARRGGBB ）存储帧。这等效于<a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">QImage.Format_ARGB32_Premultiplied</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_RGB32</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">使用32位RGB格式（ 0xffRRGGBB ）存储帧。这等效于<a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">QImage.Format_RGB32</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_RGB24</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">该框架是采用24位RGB格式（ 8-8-8 ）存储。这等效于<a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">QImage.Format_RGB888</a>
+</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_RGB565</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">该帧是使用一个16位的RGB格式（ 5-6-5 ）存储。这等效于<a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">QImage.Format_RGB16</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_RGB555</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">该帧是使用一个16位的RGB格式（ 5-5-5 ）存储。这等效于<a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">QImage.Format_RGB555</a>。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QVideoFrame.Format_ARGB8565_Premultiplied</tt>
+</td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">该框架是用一个24位预乘的ARGB格式（ 8-6-6-5 ）存储。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_BGRA32</tt></td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">该帧是使用32位ARGB格式（ 0xBBGGRRAA ）存储。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QVideoFrame.Format_BGRA32_Premultiplied</tt>
+</td>
+<td class="topAlign"><tt>9</tt></td>
+<td class="topAlign">该框架是使用预乘32位的BGRA格式存储。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_BGR32</tt></td>
+<td class="topAlign"><tt>10</tt></td>
+<td class="topAlign">该帧是使用一个32位的BGR格式（ 0xBBGGRRff ）存储。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_BGR24</tt></td>
+<td class="topAlign"><tt>11</tt></td>
+<td class="topAlign">该框架是使用24位BGR格式（ 0xBBGGRR ）存储。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_BGR565</tt></td>
+<td class="topAlign"><tt>12</tt></td>
+<td class="topAlign">该帧是使用一个16位的BGR格式（ 5-6-5 ）存储。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_BGR555</tt></td>
+<td class="topAlign"><tt>13</tt></td>
+<td class="topAlign">该帧是使用一个16位的BGR格式（ 5-5-5 ）存储。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QVideoFrame.Format_BGRA5658_Premultiplied</tt>
+</td>
+<td class="topAlign"><tt>14</tt></td>
+<td class="topAlign">该框架是用一个24位预乘的BGRA格式（ 5-6-5-8 ）存储。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_AYUV444</tt></td>
+<td class="topAlign"><tt>15</tt></td>
+<td class="topAlign">该框架是使用填充32位AYUV格式（ 0xAAYYUUVV ）存储。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QVideoFrame.Format_AYUV444_Premultiplied</tt>
+</td>
+<td class="topAlign"><tt>16</tt></td>
+<td class="topAlign">该框架是使用填充预乘32位AYUV格式（ 0xAAYYUUVV ）存储。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_YUV444</tt></td>
+<td class="topAlign"><tt>17</tt></td>
+<td class="topAlign">该框架是使用24 - bit包装YUV格式（ 8-8-8 ）存储。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_YUV420P</tt></td>
+<td class="topAlign"><tt>18</tt></td>
+<td class="topAlign">该帧是使用与U和V平面的8位每个组件的平面YUV格式的水平和垂直子采样，即， U和V平面的高度和宽度的一半， Y平面的存储。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_YV12</tt></td>
+<td class="topAlign"><tt>19</tt></td>
+<td class="topAlign">该帧被使用与所述V和U平面的8位每个组件的平面YVU格式水平和垂直子采样，即V和U平面的高度和宽度的一半， Y平面的存储。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_UYVY</tt></td>
+<td class="topAlign"><tt>20</tt></td>
+<td class="topAlign">该帧是使用与U和V平面的8位每个组件填充YUV格式的水平子采样（ UYVY ）存储的，也就是两个水平相邻的像素被作为一个32位的宏像素具有用于每个像素的Y值和存储普通U和V值。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_YUYV</tt></td>
+<td class="topAlign"><tt>21</tt></td>
+<td class="topAlign">该帧是使用与U和V平面的8位每个组件填充YUV格式的水平子采样（ YUYV ）存储的，也就是两个水平相邻的像素被作为一个32位的宏像素具有用于每个像素的Y值和存储普通U和V值。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_NV12</tt></td>
+<td class="topAlign"><tt>22</tt></td>
+<td class="topAlign">该帧被使用每组件半平面YUV格式的8位与后跟一个水平和垂直子采样，填充UV平面（UV）一个Y平面（Y）存储起来。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_NV21</tt></td>
+<td class="topAlign"><tt>23</tt></td>
+<td class="topAlign">该帧被使用每组件半平面YUV格式的8位与后跟一个水平和垂直子采样一Y平面（Y）存储，包装VU平面（ VU） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_IMC1</tt></td>
+<td class="topAlign"><tt>24</tt></td>
+<td class="topAlign">该帧是使用与U和V平面的8位每个组件的平面YUV格式的水平和垂直子采样存储。这是类似于Format_YUV420P类型，不同的是每U和V平面的线的字节被填充为同一跨距为Y平面。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_IMC2</tt></td>
+<td class="topAlign"><tt>25</tt></td>
+<td class="topAlign">该帧是使用与U和V平面的8位每个组件的平面YUV格式的水平和垂直子采样存储。这是类似于Format_YUV420P类型，不同的是U和V平面的线被交织，即U数据的每一行之后是一条线的V数据的创建相同的跨距为Y数据的一条线。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_IMC3</tt></td>
+<td class="topAlign"><tt>26</tt></td>
+<td class="topAlign">该帧被使用与所述V和U平面水平和垂直子采样的一个8位的每部分的平面YVU格式存储。这是类似于Format_YV12类型，不同之处在于每对V和U平面的线的字节被填充为相同的跨距为Y平面。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_IMC4</tt></td>
+<td class="topAlign"><tt>27</tt></td>
+<td class="topAlign">该帧被使用与所述V和U平面水平和垂直子采样的一个8位的每部分的平面YVU格式存储。这是类似于Format_YV12类型，除了V和U平面的线是交错的，即V数据的每一行之后是一条线的U数据创建相同的跨距为Y数据的一条线。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_Y8</tt></td>
+<td class="topAlign"><tt>28</tt></td>
+<td class="topAlign">该帧被使用8位灰度格式存储。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_Y16</tt></td>
+<td class="topAlign"><tt>29</tt></td>
+<td class="topAlign">该帧是使用一个16位线性灰度格式存储。小尾数。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QVideoFrame.Format_User</tt></td>
+<td class="topAlign"><tt>1000</tt></td>
+<td class="topAlign">用户定义的像素格式起始值。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QVideoFrame"></a>QVideoFrame.__init__ (<i>self</i>)</h3>
+<p>构造一个空的视频帧。</p>
+
+
+<h3 class="fn">
+<a name="QVideoFrame-2"></a>QVideoFrame.__init__ (<i>self</i>, <a href="qabstractvideobuffer.html" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html">QAbstractVideoBuffer</a> <i>buffer</i>, <a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> <i>size</i>, <a href="qvideoframe.html#PixelFormat-enum" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#PixelFormat-enum">PixelFormat</a> <i>format</i>)</h3>
+<p>构造一个视频帧从一个<i>buffer</i>给定像素的<i>format</i>和<i>size</i>以像素为单位。</p>
+<p><b>Note:</b>这不会增加视频缓冲区的引用计数。</p>
+
+
+<h3 class="fn">
+<a name="QVideoFrame-3"></a>QVideoFrame.__init__ (<i>self</i>, int <i>bytes</i>, <a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> <i>size</i>, int <i>bytesPerLine</i>, <a href="qvideoframe.html#PixelFormat-enum" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#PixelFormat-enum">PixelFormat</a> <i>format</i>)</h3>
+<p>构造的给定像素的视频帧<i>format</i>和<i>size</i>以像素为单位。</p>
+<p>该<i>bytesPerLine</i>（步幅），以字节为单位的每个扫描线的长度，并<i>bytes</i>是一个字节必须被分配给该帧的总数。</p>
+
+
+<h3 class="fn">
+<a name="QVideoFrame-4"></a>QVideoFrame.__init__ (<i>self</i>, <a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> <i>image</i>)</h3>
+<p>构造一个视频帧从<i>image</i>。</p>
+<p><b>Note:</b>这将构造一个无效的视频帧，如果没有帧类型等效于图像格式。</p>
+<p><b>See also</b> <a href="qvideoframe.html#pixelFormatFromImageFormat" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#pixelFormatFromImageFormat">pixelFormatFromImageFormat</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QVideoFrame-5"></a>QVideoFrame.__init__ (<i>self</i>, <a href="qvideoframe.html" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html">QVideoFrame</a> <i>other</i>)</h3>
+<p>构造的副本<i>other</i>。</p>
+
+
+<h3 class="fn">
+<a name="bits"></a>sip.voidptr QVideoFrame.bits (<i>self</i>)</h3>
+<p>返回一个指向帧数据缓冲区的开始。</p>
+<p>而帧数据是这个值才有效<a href="qvideoframe.html#map" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#map">mapped</a>。</p>
+<p><b>See also</b> <a href="qvideoframe.html#map" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#map">map</a>（ ）<a href="qvideoframe.html#mappedBytes" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#mappedBytes">mappedBytes</a>（）和<a href="qvideoframe.html#bytesPerLine" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#bytesPerLine">bytesPerLine</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="bytesPerLine"></a>int QVideoFrame.bytesPerLine (<i>self</i>)</h3>
+<p>返回的字节中的扫描线的数目。</p>
+<p><b>Note:</b>这是每个唯一的第一平面的线的字节数。随后飞机每行的字节数应计算为每帧类型。</p>
+<p>而帧数据是这个值才有效<a href="qvideoframe.html#map" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#map">mapped</a>。</p>
+<p><b>See also</b> <a href="qvideoframe.html#bits" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#bits">bits</a>（ ）<a href="qvideoframe.html#map" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#map">map</a>（）和<a href="qvideoframe.html#mappedBytes" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#mappedBytes">mappedBytes</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="endTime"></a>int QVideoFrame.endTime (<i>self</i>)</h3>
+<p>返回演示文稿时，当一帧应该停止显示。</p>
+<p><b>See also</b> <a href="qvideoframe.html#setEndTime" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#setEndTime">setEndTime</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fieldType"></a><a href="qvideoframe.html#FieldType-enum" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#FieldType-enum">FieldType</a> QVideoFrame.fieldType (<i>self</i>)</h3>
+<p>返回一个隔行视频帧所属的领域。</p>
+<p>如果视频不隔行扫描，这将返回WholeFrame 。</p>
+<p><b>See also</b> <a href="qvideoframe.html#setFieldType" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#setFieldType">setFieldType</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="handle"></a>QVariant QVideoFrame.handle (<i>self</i>)</h3>
+<p>返回一个特定类型的句柄，一个视频帧的缓冲区。</p>
+<p>对于OpenGL纹理，这将是质感的ID 。</p>
+<p><b>See also</b> <a href="qabstractvideobuffer.html#handle" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#handle">QAbstractVideoBuffer.handle</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="handleType"></a><a href="qabstractvideobuffer.html#HandleType-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#HandleType-enum">QAbstractVideoBuffer.HandleType</a> QVideoFrame.handleType (<i>self</i>)</h3>
+<p>返回一个视频帧的句柄类型。</p>
+
+
+<h3 class="fn">
+<a name="height"></a>int QVideoFrame.height (<i>self</i>)</h3>
+<p>返回一个视频帧的高度。</p>
+
+
+<h3 class="fn">
+<a name="imageFormatFromPixelFormat"></a><a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">QImage.Format</a> QVideoFrame.imageFormatFromPixelFormat (<a href="qvideoframe.html#PixelFormat-enum" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#PixelFormat-enum">PixelFormat</a> <i>format</i>)</h3>
+<p>返回一个图像格式等同于一个视频帧的像素<i>format</i>。如果没有相等的格式<a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">QImage.Format_Invalid</a>返回来代替。</p>
+
+
+<h3 class="fn">
+<a name="isMapped"></a>bool QVideoFrame.isMapped (<i>self</i>)</h3>
+<p>如果一个视频帧的内容被当前映射到系统存储器标识。</p>
+<p>这是一个方便的功能，它会检查<a href="qabstractvideobuffer.html#MapMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#MapMode-enum">MapMode</a>帧不等于<a href="qabstractvideobuffer.html#MapMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#MapMode-enum">QAbstractVideoBuffer.NotMapped</a>。</p>
+<p>返回True如果视频帧的内容映射到系统内存，否则返回False 。</p>
+<p><b>See also</b> <a href="qvideoframe.html#mapMode" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#mapMode">mapMode</a>（）和<a href="qabstractvideobuffer.html#MapMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#MapMode-enum">QAbstractVideoBuffer.MapMode</a>。</p>
+
+
+<h3 class="fn">
+<a name="isReadable"></a>bool QVideoFrame.isReadable (<i>self</i>)</h3>
+<p>如果确定一个视频帧的映射内容物从帧中读出时，它被映射。</p>
+<p>这是一个方便的功能，如果它检查<a href="qabstractvideobuffer.html#MapMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#MapMode-enum">MapMode</a>包含<a href="qabstractvideobuffer.html#MapMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#MapMode-enum">QAbstractVideoBuffer.WriteOnly</a>标志。</p>
+<p>返回True如果映射的内存中的内容是从视频帧读出，否则返回False 。</p>
+<p><b>See also</b> <a href="qvideoframe.html#mapMode" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#mapMode">mapMode</a>（）和<a href="qabstractvideobuffer.html#MapMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#MapMode-enum">QAbstractVideoBuffer.MapMode</a>。</p>
+
+
+<h3 class="fn">
+<a name="isValid"></a>bool QVideoFrame.isValid (<i>self</i>)</h3>
+<p>识别的视频帧是否是有效的。</p>
+<p>无效帧都有一个与之关联的视频缓冲器。</p>
+<p>返回True如果该帧是有效的，并且假，如果事实并非如此。</p>
+
+
+<h3 class="fn">
+<a name="isWritable"></a>bool QVideoFrame.isWritable (<i>self</i>)</h3>
+<p>如果识别视频帧的映射内容时，帧映射将被保存。</p>
+<p>这是一个方便的功能，如果它检查<a href="qabstractvideobuffer.html#MapMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#MapMode-enum">MapMode</a>包含<a href="qabstractvideobuffer.html#MapMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#MapMode-enum">QAbstractVideoBuffer.WriteOnly</a>标志。</p>
+<p>返回True ，如果视频帧将被更新，否则取消映射时，假。</p>
+<p><b>Note:</b>改变被映射在只读模式中的帧的数据的结果是不确定的。根据不同的缓冲区实现的变更可能会持续存在，或者更糟改变一个共享缓冲区。</p>
+<p><b>See also</b> <a href="qvideoframe.html#mapMode" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#mapMode">mapMode</a>（）和<a href="qabstractvideobuffer.html#MapMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#MapMode-enum">QAbstractVideoBuffer.MapMode</a>。</p>
+
+
+<h3 class="fn">
+<a name="map"></a>bool QVideoFrame.map (<i>self</i>, <a href="qabstractvideobuffer.html#MapMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#MapMode-enum">QAbstractVideoBuffer.MapMode</a> <i>mode</i>)</h3>
+<p>映射一个视频帧的内容到存储器中。</p>
+<p>地图<i>mode</i>指示是否映射存储器中的内容应被读出和/或写入帧。如果映射模式包括<a href="qabstractvideobuffer.html#MapMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#MapMode-enum">QAbstractVideoBuffer.ReadOnly</a>标志映射的内存将被填充的视频帧的内容映射时。如果地图模式inclues的<a href="qabstractvideobuffer.html#MapMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#MapMode-enum">QAbstractVideoBuffer.WriteOnly</a>映射的内存的标志内容将被保存在帧映射时。</p>
+<p>而映射的一个视频帧的内容可以直接通过由返回的指针来访问<a href="qvideoframe.html#bits" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#bits">bits</a>（）函数。</p>
+<p>当访问数据不再需要，一定要调用<a href="qvideoframe.html#unmap" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#unmap">unmap</a>（ ）函数释放映射内存。</p>
+<p>返回True如果缓冲区被映射到内存中给定的<i>mode</i>否则为False。</p>
+<p><b>See also</b> <a href="qvideoframe.html#unmap" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#unmap">unmap</a>（ ）<a href="qvideoframe.html#mapMode" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#mapMode">mapMode</a>（）和<a href="qvideoframe.html#bits" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#bits">bits</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mapMode"></a><a href="qabstractvideobuffer.html#MapMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#MapMode-enum">QAbstractVideoBuffer.MapMode</a> QVideoFrame.mapMode (<i>self</i>)</h3>
+<p>返回一个视频帧被映射到系统存储器英寸的模式</p>
+<p><b>See also</b> <a href="qvideoframe.html#map" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#map">map</a>（）和<a href="qabstractvideobuffer.html#MapMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#MapMode-enum">QAbstractVideoBuffer.MapMode</a>。</p>
+
+
+<h3 class="fn">
+<a name="mappedBytes"></a>int QVideoFrame.mappedBytes (<i>self</i>)</h3>
+<p>返回由对应的帧数据所佔用的字节数。</p>
+<p>而帧数据是这个值才有效<a href="qvideoframe.html#map" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#map">mapped</a>。</p>
+<p><b>See also</b> <a href="qvideoframe.html#map" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#map">map</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="pixelFormat"></a><a href="qvideoframe.html#PixelFormat-enum" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#PixelFormat-enum">PixelFormat</a> QVideoFrame.pixelFormat (<i>self</i>)</h3>
+<p>返回一个视频帧的颜色格式。</p>
+
+
+<h3 class="fn">
+<a name="pixelFormatFromImageFormat"></a><a href="qvideoframe.html#PixelFormat-enum" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#PixelFormat-enum">PixelFormat</a> QVideoFrame.pixelFormatFromImageFormat (<a href="qimage.html#Format-enum" tppabs="http://pyqt4doc.appspot.com/qimage.html#Format-enum">QImage.Format</a> <i>format</i>)</h3>
+<p>返回一个视频像素格式相当于一个图像<i>format</i>。如果没有相等的格式QVideoFrame.InvalidType返回来代替。</p>
+
+
+<h3 class="fn">
+<a name="setEndTime"></a>QVideoFrame.setEndTime (<i>self</i>, int <i>time</i>)</h3>
+<p>设置演示文稿<i>time</i>当一个帧应停止显示。</p>
+<p><b>See also</b> <a href="qvideoframe.html#endTime" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#endTime">endTime</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFieldType"></a>QVideoFrame.setFieldType (<i>self</i>, <a href="qvideoframe.html#FieldType-enum" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#FieldType-enum">FieldType</a>)</h3>
+<p>设置<i>field</i>隔行扫描视频帧属于。</p>
+<p><b>See also</b> <a href="qvideoframe.html#fieldType" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#fieldType">fieldType</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setStartTime"></a>QVideoFrame.setStartTime (<i>self</i>, int <i>time</i>)</h3>
+<p>设置演示文稿<i>time</i>当帧的显示方式。</p>
+<p><b>See also</b> <a href="qvideoframe.html#startTime" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#startTime">startTime</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="size"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QVideoFrame.size (<i>self</i>)</h3>
+<p>返回一个视频帧的大小。</p>
+
+
+<h3 class="fn">
+<a name="startTime"></a>int QVideoFrame.startTime (<i>self</i>)</h3>
+<p>返回时，应显示的帧的显示时间。</p>
+<p><b>See also</b> <a href="qvideoframe.html#setStartTime" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#setStartTime">setStartTime</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="unmap"></a>QVideoFrame.unmap (<i>self</i>)</h3>
+<p>发布映射的内存<a href="qvideoframe.html#map" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#map">map</a>（）函数。</p>
+<p>如果<a href="qabstractvideobuffer.html#MapMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#MapMode-enum">MapMode</a>包括<a href="qabstractvideobuffer.html#MapMode-enum" tppabs="http://pyqt4doc.appspot.com/qabstractvideobuffer.html#MapMode-enum">QAbstractVideoBuffer.WriteOnly</a>标志，这将持续映射内存的当前内容到视频帧。</p>
+<p><b>See also</b> <a href="qvideoframe.html#map" tppabs="http://pyqt4doc.appspot.com/qvideoframe.html#map">map</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="width"></a>int QVideoFrame.width (<i>self</i>)</h3>
+<p>返回一个视频帧的宽度。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

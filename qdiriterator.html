@@ -1,0 +1,194 @@
+﻿<html>
+<head>
+<title>QDirIterator Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDirIterator Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QDirIterator类提供了一个迭代器目录entrylists 。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qdiriterator.html#IteratorFlag-enum" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#IteratorFlag-enum">IteratorFlag</a></b> { NoIteratorFlags, FollowSymlinks, Subdirectories }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdiriterator-iteratorflags.html">IteratorFlags</a></b>
+</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdiriterator.html#QDirIterator" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#QDirIterator">__init__</a></b> (<i>self</i>, QDir <i>dir</i>, IteratorFlags <i>flags</i> = QDirIterator.NoIteratorFlags)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdiriterator.html#QDirIterator-2" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#QDirIterator-2">__init__</a></b> (<i>self</i>, QString <i>path</i>, IteratorFlags <i>flags</i> = QDirIterator.NoIteratorFlags)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdiriterator.html#QDirIterator-3" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#QDirIterator-3">__init__</a></b> (<i>self</i>, QString <i>path</i>, QDir.Filters <i>filters</i>, IteratorFlags <i>flags</i> = QDirIterator.NoIteratorFlags)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdiriterator.html#QDirIterator-4" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#QDirIterator-4">__init__</a></b> (<i>self</i>, QString <i>path</i>, QStringList <i>nameFilters</i>, QDir.Filters <i>filters</i> = QDir.NoFilter, IteratorFlags <i>flags</i> = QDirIterator.NoIteratorFlags)</li>
+<li>
+<div class="fn"></div>QFileInfo <b><a href="qdiriterator.html#fileInfo" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#fileInfo">fileInfo</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdiriterator.html#fileName" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#fileName">fileName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdiriterator.html#filePath" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#filePath">filePath</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdiriterator.html#hasNext" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#hasNext">hasNext</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdiriterator.html#next" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#next">next</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdiriterator.html#path" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#path">path</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDirIterator类提供了一个迭代器目录entrylists 。</p>
+<p>您可以使用QDirIterator来浏览一个目录的一个条目的时间。它类似于<a href="qdir.html#entryList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryList">QDir.entryList</a>（）和<a href="qdir.html#entryInfoList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryInfoList">QDir.entryInfoList</a>（ ） ，而是因为它会列出在一次项目，而不是所有的一次，它扩展更好，更适合大型目录。它还支持列表目录内容递归，和下面的符号链接。不像<a href="qdir.html#entryList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryList">QDir.entryList</a>（ ） ， QDirIterator不支持排序。</p>
+<p>该QDirIterator构造函数接受一个<a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a>或一个目录作为参数。施工完毕后，迭代器所在的第一个目录条目之前。以下是如何遍历所有的条目顺序：</p>
+<pre class="cpp">
+ <span class="type">QDirIterator</span> it(<span class="string">"/etc"</span><span class="operator">,</span> <span class="type">QDirIterator</span><span class="operator">.</span>Subdirectories);
+ <span class="keyword">while</span> (it<span class="operator">.</span>hasNext()) {
+     <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> it<span class="operator">.</span>next();
+
+     <span class="comment">// /etc/.</span>
+     <span class="comment">// /etc/..</span>
+     <span class="comment">// /etc/X11</span>
+     <span class="comment">// /etc/X11/fs</span>
+     <span class="comment">// ...</span>
+ }
+</pre>
+<p>该<a href="qdiriterator.html#next" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#next">next</a>（ ）函数返回路径的下一个目录项及垫款的迭代器。您也可以拨打<a href="qdiriterator.html#filePath" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#filePath">filePath</a>（ ）来得到当前文件的路径，而不推进迭代器。该<a href="qdiriterator.html#fileName" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#fileName">fileName</a>（ ）函数返回文件的唯一的名称，类似于如何<a href="qdir.html#entryList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryList">QDir.entryList</a>（ ）的作品。您也可以拨打<a href="qdiriterator.html#fileInfo" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#fileInfo">fileInfo</a>（ ）来获取<a href="qfileinfo.html" tppabs="http://pyqt4doc.appspot.com/qfileinfo.html">QFileInfo</a>当前条目。</p>
+<p>不同于Qt的容器迭代器， QDirIterator是单向的（也就是说，你不能遍历目录，以相反的顺序），并不允许随机访问。</p>
+<p>QDirIterator适用于所有支持的文件引擎，并使用实施<a href="qabstractfileengineiterator.html" tppabs="http://pyqt4doc.appspot.com/qabstractfileengineiterator.html">QAbstractFileEngineIterator</a>。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="IteratorFlag-enum"></a>QDirIterator.IteratorFlag</h3>
+<p>这个枚举变量描述的标志，你可以结合配置的行为<a href="qdiriterator.html" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html">QDirIterator</a>。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDirIterator.NoIteratorFlags</tt></td>
+<td class="topAlign"><tt>0x0</tt></td>
+<td class="topAlign">默认值，表示没有任何标志。迭代器将返回条目指定路径。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDirIterator.Subdirectories</tt></td>
+<td class="topAlign"><tt>0x2</tt></td>
+<td class="topAlign">所有子目录里面的列表条目。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDirIterator.FollowSymlinks</tt></td>
+<td class="topAlign"><tt>0x1</tt></td>
+<td class="topAlign">当与子目录结合，这个标志能够循环访问指定路径下的所有子目录，下面所有的符号链接。符号链接循环（例如， “链接” = \u003e “ 。 ”或“链接” = \u003e “..” ）会自动检测和忽略。</td>
+</tr>
+</table>
+<p>该IteratorFlags类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cIteratorFlag\u003e 。它存储IteratorFlag值的或组合。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDirIterator"></a>QDirIterator.__init__ (<i>self</i>, <a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a> <i>dir</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdiriterator-iteratorflags.html">IteratorFlags</a> <i>flags</i> = QDirIterator.NoIteratorFlags)</h3>
+<p>构造一个<a href="qdiriterator.html" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html">QDirIterator</a>可以遍历<i>dir</i>的entrylist ，使用<i>dir</i>的名字过滤器和常规过滤器。你可以通过传递选项<i>flags</i>决定如何在目录应该被重复。</p>
+<p>默认情况下，<i>flags</i> is <a href="qdiriterator.html#IteratorFlag-enum" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#IteratorFlag-enum">NoIteratorFlags</a>，它提供了相同的行为<a href="qdir.html#entryList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryList">QDir.entryList</a>（ ） 。</p>
+<p>在分选<i>dir</i>被忽略。</p>
+<p><b>Note:</b>要列出指向不存在的文件的符号链接，<a href="qdir.html#Filter-enum" tppabs="http://pyqt4doc.appspot.com/qdir.html#Filter-enum">QDir.System</a>必须被传递给标记。</p>
+<p><b>See also</b> <a href="qdiriterator.html#hasNext" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#hasNext">hasNext</a>（ ）<a href="qdiriterator.html#next" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#next">next</a>（）和<a href="qdiriterator.html#IteratorFlag-enum" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#IteratorFlag-enum">IteratorFlags</a>。</p>
+
+
+<h3 class="fn">
+<a name="QDirIterator-2"></a>QDirIterator.__init__ (<i>self</i>, QString <i>path</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdiriterator-iteratorflags.html">IteratorFlags</a> <i>flags</i> = QDirIterator.NoIteratorFlags)</h3>
+<p>构造一个<a href="qdiriterator.html" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html">QDirIterator</a>可以遍历<i>path</i>。你可以通过传递选项<i>flags</i>决定如何在目录应该被重复。</p>
+<p>默认情况下，<i>flags</i> is <a href="qdiriterator.html#IteratorFlag-enum" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#IteratorFlag-enum">NoIteratorFlags</a>，它提供了相同的行为<a href="qdir.html#entryList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryList">QDir.entryList</a>（ ） 。</p>
+<p><b>Note:</b>要列出指向不存在的文件的符号链接，<a href="qdir.html#Filter-enum" tppabs="http://pyqt4doc.appspot.com/qdir.html#Filter-enum">QDir.System</a>必须被传递给标记。</p>
+<p><b>See also</b> <a href="qdiriterator.html#hasNext" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#hasNext">hasNext</a>（ ）<a href="qdiriterator.html#next" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#next">next</a>（）和<a href="qdiriterator.html#IteratorFlag-enum" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#IteratorFlag-enum">IteratorFlags</a>。</p>
+
+
+<h3 class="fn">
+<a name="QDirIterator-3"></a>QDirIterator.__init__ (<i>self</i>, QString <i>path</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdir-filters.html">QDir.Filters</a> <i>filters</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdiriterator-iteratorflags.html">IteratorFlags</a> <i>flags</i> = QDirIterator.NoIteratorFlags)</h3>
+<p>构造一个<a href="qdiriterator.html" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html">QDirIterator</a>可以遍历<i>path</i>，没有名字过滤和<i>filters</i>入门过滤。你可以通过传递选项<i>flags</i>决定如何在目录应该被重复。</p>
+<p>默认情况下，<i>filters</i> is <a href="qdir.html#Filter-enum" tppabs="http://pyqt4doc.appspot.com/qdir.html#Filter-enum">QDir.NoFilter</a>和<i>flags</i> is
+<a href="qdiriterator.html#IteratorFlag-enum" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#IteratorFlag-enum">NoIteratorFlags</a>，它提供了相同的行为<a href="qdir.html#entryList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryList">QDir.entryList</a>（ ） 。</p>
+<p><b>Note:</b>要列出指向不存在的文件的符号链接，<a href="qdir.html#Filter-enum" tppabs="http://pyqt4doc.appspot.com/qdir.html#Filter-enum">QDir.System</a>必须被传递给标记。</p>
+<p><b>See also</b> <a href="qdiriterator.html#hasNext" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#hasNext">hasNext</a>（ ）<a href="qdiriterator.html#next" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#next">next</a>（）和<a href="qdiriterator.html#IteratorFlag-enum" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#IteratorFlag-enum">IteratorFlags</a>。</p>
+
+
+<h3 class="fn">
+<a name="QDirIterator-4"></a>QDirIterator.__init__ (<i>self</i>, QString <i>path</i>, QStringList <i>nameFilters</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdir-filters.html">QDir.Filters</a> <i>filters</i> = QDir.NoFilter, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdiriterator-iteratorflags.html">IteratorFlags</a> <i>flags</i> = QDirIterator.NoIteratorFlags)</h3>
+<p>构造一个<a href="qdiriterator.html" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html">QDirIterator</a>可以遍历<i>path</i>，使用<i>nameFilters</i>和<i>filters</i>。你可以通过传递选项<i>flags</i>决定如何在目录应该被重复。</p>
+<p>默认情况下，<i>flags</i> is <a href="qdiriterator.html#IteratorFlag-enum" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#IteratorFlag-enum">NoIteratorFlags</a>，它提供了相同的行为，<a href="qdir.html#entryList" tppabs="http://pyqt4doc.appspot.com/qdir.html#entryList">QDir.entryList</a>（ ） 。</p>
+<p><b>Note:</b>要列出指向不存在的文件的符号链接，<a href="qdir.html#Filter-enum" tppabs="http://pyqt4doc.appspot.com/qdir.html#Filter-enum">QDir.System</a>必须被传递给标记。</p>
+<p><b>See also</b> <a href="qdiriterator.html#hasNext" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#hasNext">hasNext</a>（ ）<a href="qdiriterator.html#next" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#next">next</a>（）和<a href="qdiriterator.html#IteratorFlag-enum" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#IteratorFlag-enum">IteratorFlags</a>。</p>
+
+
+<h3 class="fn">
+<a name="fileInfo"></a><a href="qfileinfo.html" tppabs="http://pyqt4doc.appspot.com/qfileinfo.html">QFileInfo</a> QDirIterator.fileInfo (<i>self</i>)</h3>
+<p>返回<a href="qfileinfo.html" tppabs="http://pyqt4doc.appspot.com/qfileinfo.html">QFileInfo</a>当前目录项。</p>
+<p><b>See also</b> <a href="qdiriterator.html#filePath" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#filePath">filePath</a>（）和<a href="qdiriterator.html#fileName" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#fileName">fileName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fileName"></a>QString QDirIterator.fileName (<i>self</i>)</h3>
+<p>返回当前目录项的文件名，不带前缀的路径。</p>
+<p>遍历一个目录时，此功能非常方便。当使用<a href="qdiriterator.html#IteratorFlag-enum" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#IteratorFlag-enum">QDirIterator.Subdirectories</a>标志，你可以使用<a href="qdiriterator.html#filePath" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#filePath">filePath</a>（ ）来得到完整的路径。</p>
+<p><b>See also</b> <a href="qdiriterator.html#filePath" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#filePath">filePath</a>（）和<a href="qdiriterator.html#fileInfo" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#fileInfo">fileInfo</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="filePath"></a>QString QDirIterator.filePath (<i>self</i>)</h3>
+<p>返回当前目录项的完整文件路径。</p>
+<p><b>See also</b> <a href="qdiriterator.html#fileInfo" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#fileInfo">fileInfo</a>（）和<a href="qdiriterator.html#fileName" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#fileName">fileName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasNext"></a>bool QDirIterator.hasNext (<i>self</i>)</h3>
+<p>返回True如果没有在目录中至少有一个以上的项目，否则，则返回False。</p>
+<p><b>See also</b> <a href="qdiriterator.html#next" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#next">next</a>（ ）<a href="qdiriterator.html#fileName" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#fileName">fileName</a>（ ）<a href="qdiriterator.html#filePath" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#filePath">filePath</a>（）和<a href="qdiriterator.html#fileInfo" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#fileInfo">fileInfo</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="next"></a>QString QDirIterator.next (<i>self</i>)</h3>
+<p>前进迭代到下一个条目，并返回该新条目的文件路径。如果<a href="qdiriterator.html#hasNext" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#hasNext">hasNext</a>（ ）返回False ，这个函数不执行任何操作，并返回一个空<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>。</p>
+<p>您可以致电<a href="qdiriterator.html#fileName" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#fileName">fileName</a>（）或<a href="qdiriterator.html#filePath" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#filePath">filePath</a>（ ）来获得当前的输入文件名或路径，或<a href="qdiriterator.html#fileInfo" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#fileInfo">fileInfo</a>（ ）来获取<a href="qfileinfo.html" tppabs="http://pyqt4doc.appspot.com/qfileinfo.html">QFileInfo</a>当前条目。</p>
+<p><b>See also</b> <a href="qdiriterator.html#hasNext" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#hasNext">hasNext</a>（ ）<a href="qdiriterator.html#fileName" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#fileName">fileName</a>（ ）<a href="qdiriterator.html#filePath" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#filePath">filePath</a>（）和<a href="qdiriterator.html#fileInfo" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html#fileInfo">fileInfo</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="path"></a>QString QDirIterator.path (<i>self</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

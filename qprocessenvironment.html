@@ -1,0 +1,176 @@
+﻿<html>
+<head>
+<title>QProcessEnvironment Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QProcessEnvironment Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QProcessEnvironment类认为可以传递给一个程序的环境变量。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qprocessenvironment.html#QProcessEnvironment" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#QProcessEnvironment">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprocessenvironment.html#QProcessEnvironment-2" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#QProcessEnvironment-2">__init__</a></b> (<i>self</i>, QProcessEnvironment <i>other</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprocessenvironment.html#clear" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#clear">clear</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qprocessenvironment.html#contains" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#contains">contains</a></b> (<i>self</i>, QString <i>name</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprocessenvironment.html#insert" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#insert">insert</a></b> (<i>self</i>, QString <i>name</i>, QString <i>value</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprocessenvironment.html#insert-2" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#insert-2">insert</a></b> (<i>self</i>, QProcessEnvironment <i>e</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qprocessenvironment.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#isEmpty">isEmpty</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qprocessenvironment.html#keys" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#keys">keys</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qprocessenvironment.html#remove" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#remove">remove</a></b> (<i>self</i>, QString <i>name</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qprocessenvironment.html#toStringList" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#toStringList">toStringList</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qprocessenvironment.html#value" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#value">value</a></b> (<i>self</i>, QString <i>name</i>, QString <i>defaultValue</i> = QString())</li>
+</ul>
+<h3>Static Methods</h3>
+<ul><li>
+<div class="fn"></div>QProcessEnvironment <b><a href="qprocessenvironment.html#systemEnvironment" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#systemEnvironment">systemEnvironment</a></b> ()</li></ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>bool <b><a href="qprocessenvironment.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#__eq__">__eq__</a></b> (<i>self</i>, QProcessEnvironment <i>other</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qprocessenvironment.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#__ne__">__ne__</a></b> (<i>self</i>, QProcessEnvironment <i>other</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QProcessEnvironment类认为可以传递给一个程序的环境变量。</p>
+<p>一个进程的环境是由一组被称为环境变量key = value对的。该QProcessEnvironment类包装的概念，并可以方便地操纵这些变量。它的意思也可以一起使用<a href="qprocess.html" tppabs="http://pyqt4doc.appspot.com/qprocess.html">QProcess</a>，设置为子进程的环境。它不能被用于改变当前进程的环境。</p>
+<p>可以用以下方式获得的调用进程的环境<a href="qprocessenvironment.html#systemEnvironment" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#systemEnvironment">QProcessEnvironment.systemEnvironment</a>（ ） 。</p>
+<p>在Unix系统中，变量名称是区分大小写的。出于这个原因，这个类不会接触到变量的名称。还要注意的Unix环境允许两个变量名和内容，包含任意的二进制数据（除NUL字符），但是这是不支持QProcessEnvironment 。这个类只支持名称和可编码是由当前区域设置（见QTextCodec.codecForLocale ）值。</p>
+<p>在Windows中，变量名是大小写不敏感的。因此， QProcessEnvironment总是大写的名字，做不区分大小写的比较。</p>
+<p>在Windows CE上，环境的概念并不存在。这个类将保持与其他平台之间的兼容性设置的值，但设置的值将不会对正在创建的过程没有影响。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QProcessEnvironment"></a>QProcessEnvironment.__init__ (<i>self</i>)</h3>
+<p>创建一个新的<a href="qprocessenvironment.html" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html">QProcessEnvironment</a>对象。此构造函数创建一个空的环境。如果在设置<a href="qprocess.html" tppabs="http://pyqt4doc.appspot.com/qprocess.html">QProcess</a>，这将导致当前的环境变量被删除。</p>
+
+
+<h3 class="fn">
+<a name="QProcessEnvironment-2"></a>QProcessEnvironment.__init__ (<i>self</i>, <a href="qprocessenvironment.html" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html">QProcessEnvironment</a> <i>other</i>)</h3>
+<p>创建<a href="qprocessenvironment.html" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html">QProcessEnvironment</a>对象，它是一个拷贝<i>other</i>。</p>
+
+
+<h3 class="fn">
+<a name="clear"></a>QProcessEnvironment.clear (<i>self</i>)</h3>
+<p>移除所有这一切key = value对<a href="qprocessenvironment.html" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html">QProcessEnvironment</a>对象，使之为空。</p>
+<p><b>See also</b> <a href="qprocessenvironment.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#isEmpty">isEmpty</a>（）和<a href="qprocessenvironment.html#systemEnvironment" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#systemEnvironment">systemEnvironment</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="contains"></a>bool QProcessEnvironment.contains (<i>self</i>, QString <i>name</i>)</h3>
+<p>返回True如果name环境变量<i>name</i>在这个被发现<a href="qprocessenvironment.html" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html">QProcessEnvironment</a>对象。</p>
+<p>在Windows中，变量名是大小写不敏感的，所以关键是转换为大写搜索之前。在其他系统上，名称是区分大小写的，因此没有改造中的应用。</p>
+<p><b>See also</b> <a href="qprocessenvironment.html#insert" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#insert">insert</a>（）和<a href="qprocessenvironment.html#value" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#value">value</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insert"></a>QProcessEnvironment.insert (<i>self</i>, QString <i>name</i>, QString <i>value</i>)</h3>
+<p>插入名称的环境变量<i>name</i>和内容<i>value</i>这个<a href="qprocessenvironment.html" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html">QProcessEnvironment</a>对象。如果该变量已经存在，它被替换为新值。</p>
+<p>在Windows中，变量名是大小写不敏感的，所以插入之前这个函数总是变大写变量名。在其他系统上，名称是区分大小写的，所以没有变换应用。</p>
+<p>在大多数系统中，没有内容插入一个变量将有应用，如果该变量没有被设置在所有相同的效果。然而，为了保证不存在任何不兼容，要删除一个变量，请使用<a href="qprocessenvironment.html#remove" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#remove">remove</a>（）函数。</p>
+<p><b>See also</b> <a href="qprocessenvironment.html#contains" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#contains">contains</a>（ ）<a href="qprocessenvironment.html#remove" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#remove">remove</a>（）和<a href="qprocessenvironment.html#value" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#value">value</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insert-2"></a>QProcessEnvironment.insert (<i>self</i>, <a href="qprocessenvironment.html" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html">QProcessEnvironment</a> <i>e</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>插入的内容<i>e</i>在这<a href="qprocessenvironment.html" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html">QProcessEnvironment</a>对象。在这个对象的变量，也存在于<i>e</i>将被复盖。</p>
+<p>此功能被引入Qt的4.8 。</p>
+
+
+<h3 class="fn">
+<a name="isEmpty"></a>bool QProcessEnvironment.isEmpty (<i>self</i>)</h3>
+<p>返回True如果<a href="qprocessenvironment.html" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html">QProcessEnvironment</a>对象是空的：那就是有没有设置key = value对。</p>
+<p><b>See also</b> <a href="qprocessenvironment.html#clear" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#clear">clear</a>（ ）<a href="qprocessenvironment.html#systemEnvironment" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#systemEnvironment">systemEnvironment</a>（）和<a href="qprocessenvironment.html#insert" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#insert">insert</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="keys"></a>QStringList QProcessEnvironment.keys (<i>self</i>)</h3>
+<p>返回包含在这一切的变数名称的列表<a href="qprocessenvironment.html" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html">QProcessEnvironment</a>对象。</p>
+<p>此功能被引入Qt的4.8 。</p>
+
+
+<h3 class="fn">
+<a name="remove"></a>QProcessEnvironment.remove (<i>self</i>, QString <i>name</i>)</h3>
+<p>删除所确定的环境变量<i>name</i>由此<a href="qprocessenvironment.html" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html">QProcessEnvironment</a>对象。如果该变量不存在之前，没有任何反应。</p>
+<p>在Windows中，变量名是大小写不敏感的，所以关键是转换为大写搜索之前。在其他系统上，名称是区分大小写的，因此没有改造中的应用。</p>
+<p><b>See also</b> <a href="qprocessenvironment.html#contains" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#contains">contains</a>（ ）<a href="qprocessenvironment.html#insert" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#insert">insert</a>（）和<a href="qprocessenvironment.html#value" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#value">value</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="systemEnvironment"></a><a href="qprocessenvironment.html" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html">QProcessEnvironment</a> QProcessEnvironment.systemEnvironment ()</h3>
+<p>该systemEnvironment函数返回调用进程的环境。</p>
+<p>它返回一个<a href="qprocessenvironment.html" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html">QProcessEnvironment</a>。这个函数不缓存系统环境。因此，有可能获得环境的更新版本，如果低级别的C库函数如<tt>setenv</tt>OT<tt>putenv</tt>已被调用。</p>
+<p>但是请注意，重复调用此函数将重新<a href="qprocessenvironment.html" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html">QProcessEnvironment</a>对象，这是一个非平凡的操作。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qprocess.html#systemEnvironment" tppabs="http://pyqt4doc.appspot.com/qprocess.html#systemEnvironment">QProcess.systemEnvironment</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toStringList"></a>QStringList QProcessEnvironment.toStringList (<i>self</i>)</h3>
+<p>这个转换<a href="qprocessenvironment.html" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html">QProcessEnvironment</a>对象转换成字符串，一个用于设置每个环境变量的列表。环境变量的名称和它的值是由一个平等的字符（' = '）隔开。</p>
+<p>该<a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a>此函数返回的内容是适合与QProcess.setEnvironment功能的使用。然而，它是推荐使用QProcess.setProcessEnvironment代替，因为这将避免不必要的数据的复制。</p>
+<p><b>See also</b> <a href="qprocessenvironment.html#systemEnvironment" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#systemEnvironment">systemEnvironment</a>（ ）<a href="qprocess.html#systemEnvironment" tppabs="http://pyqt4doc.appspot.com/qprocess.html#systemEnvironment">QProcess.systemEnvironment</a>（ ）<a href="qprocess.html#environment" tppabs="http://pyqt4doc.appspot.com/qprocess.html#environment">QProcess.environment</a>（）和<a href="qprocess.html#setEnvironment" tppabs="http://pyqt4doc.appspot.com/qprocess.html#setEnvironment">QProcess.setEnvironment</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="value"></a>QString QProcessEnvironment.value (<i>self</i>, QString <i>name</i>, QString <i>defaultValue</i> = QString())</h3>
+<p>这个搜索<a href="qprocessenvironment.html" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html">QProcessEnvironment</a>对象，用于确定一个变量<i>name</i>并返回它的值。如果在该对象中找到的变量，则<i>defaultValue</i>返回来代替。</p>
+<p>在Windows中，变量名是大小写不敏感的，所以关键是转换为大写搜索之前。在其他系统上，名称是区分大小写的，因此没有改造中的应用。</p>
+<p><b>See also</b> <a href="qprocessenvironment.html#contains" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#contains">contains</a>（ ）<a href="qprocessenvironment.html#insert" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#insert">insert</a>（）和<a href="qprocessenvironment.html#remove" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html#remove">remove</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="__eq__"></a>bool QProcessEnvironment.__eq__ (<i>self</i>, <a href="qprocessenvironment.html" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html">QProcessEnvironment</a> <i>other</i>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QProcessEnvironment.__ne__ (<i>self</i>, <a href="qprocessenvironment.html" tppabs="http://pyqt4doc.appspot.com/qprocessenvironment.html">QProcessEnvironment</a> <i>other</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

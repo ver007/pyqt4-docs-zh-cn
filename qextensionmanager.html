@@ -1,0 +1,106 @@
+﻿<html>
+<head>
+<title>QExtensionManager Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QExtensionManager Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdesigner.html">QtDesigner</a> module]</sup></sup>
+</h1>
+<p>该QExtensionManager类提供扩展的管理设施， Qt Designer中。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>和<a href="qabstractextensionmanager.html" tppabs="http://pyqt4doc.appspot.com/qabstractextensionmanager.html">QAbstractExtensionManager</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qextensionmanager.html#QExtensionManager" tppabs="http://pyqt4doc.appspot.com/qextensionmanager.html#QExtensionManager">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>QObject <b><a href="qextensionmanager.html#extension" tppabs="http://pyqt4doc.appspot.com/qextensionmanager.html#extension">extension</a></b> (<i>self</i>, QObject <i>object</i>, QString <i>iid</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qextensionmanager.html#registerExtensions" tppabs="http://pyqt4doc.appspot.com/qextensionmanager.html#registerExtensions">registerExtensions</a></b> (<i>self</i>, QAbstractExtensionFactory <i>factory</i>, QString <i>iid</i> = QString())</li>
+<li>
+<div class="fn"></div>
+<b><a href="qextensionmanager.html#unregisterExtensions" tppabs="http://pyqt4doc.appspot.com/qextensionmanager.html#unregisterExtensions">unregisterExtensions</a></b> (<i>self</i>, QAbstractExtensionFactory <i>factory</i>, QString <i>iid</i> = QString())</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QExtensionManager类提供扩展的管理设施， Qt Designer中。</p>
+<p>In <i>Qt Designer</i>未创建的扩展，直到你需要它们。出于这个原因，实施一个扩展时，您还必须创建一个<a href="qextensionfactory.html" tppabs="http://pyqt4doc.appspot.com/qextensionfactory.html">QExtensionFactory</a>，即一个类，它能够让你的扩展的一个实例，并使用它注册<i>Qt Designer</i>的扩展管理器。</p>
+<p>的延伸工厂登记通常在做<a href="qdesignercustomwidgetinterface.html#initialize" tppabs="http://pyqt4doc.appspot.com/qdesignercustomwidgetinterface.html#initialize">QDesignerCustomWidgetInterface.initialize</a>（ ）函数：</p>
+<pre class="cpp">
+         <span class="type">void</span> MyPlugin<span class="operator">.</span>initialize(<span class="type"><a href="qdesignerformeditorinterface.html" tppabs="http://pyqt4doc.appspot.com/qdesignerformeditorinterface.html">QDesignerFormEditorInterface</a></span> <span class="operator">*</span>formEditor)
+         {
+             <span class="keyword">if</span> (initialized)
+                 <span class="keyword">return</span>;
+
+             <span class="type">QExtensionManager</span> <span class="operator">*</span>manager <span class="operator">=</span> formEditor<span class="operator">-</span><span class="operator">&gt;</span>extensionManager();
+             Q_ASSERT(manager <span class="operator">!</span><span class="operator">=</span> <span class="number">0</span>);
+
+             manager<span class="operator">-</span><span class="operator">&gt;</span>registerExtensions(<span class="keyword">new</span> MyExtensionFactory(manager)<span class="operator">,</span>
+                                         Q_TYPEID(<span class="type"><a href="qdesignertaskmenuextension.html" tppabs="http://pyqt4doc.appspot.com/qdesignertaskmenuextension.html">QDesignerTaskMenuExtension</a></span>));
+
+             initialized <span class="operator">=</span> <span class="keyword">true</span>;
+         }
+</pre>
+<p>该QExtensionManager不打算直接实例化。你可以检索界面<i>Qt Designer</i>使用的扩展管理器<a href="qdesignerformeditorinterface.html#extensionManager" tppabs="http://pyqt4doc.appspot.com/qdesignerformeditorinterface.html#extensionManager">QDesignerFormEditorInterface.extensionManager</a>（）函数。一个指向<i>Qt Designer</i>目前的<a href="qdesignerformeditorinterface.html" tppabs="http://pyqt4doc.appspot.com/qdesignerformeditorinterface.html">QDesignerFormEditorInterface</a>对象（<tt>formEditor</tt>在上面的例子）是由提供<a href="qdesignercustomwidgetinterface.html#initialize" tppabs="http://pyqt4doc.appspot.com/qdesignercustomwidgetinterface.html#initialize">QDesignerCustomWidgetInterface.initialize</a>（ ）函数的参数。当实现一个自定义的widget插件，你必须在子类<a href="qdesignercustomwidgetinterface.html" tppabs="http://pyqt4doc.appspot.com/qdesignercustomwidgetinterface.html">QDesignerCustomWidgetInterface</a>暴露你的插件<i>Qt Designer</i>。</p>
+<p>然后，当一个扩展是必需的，<i>Qt Designer</i>的扩展管理器将通过其所有已注册的工厂运行要求<a href="qextensionfactory.html#createExtension" tppabs="http://pyqt4doc.appspot.com/qextensionfactory.html#createExtension">QExtensionFactory.createExtension</a>（ ）对每一直到第一个能够创建请求的扩展选定对象，被发现。这家工厂将使这个扩展的实例。</p>
+<p>有扩展的四个可用的类型<i>Qt
+Designer</i>：<a href="qdesignercontainerextension.html" tppabs="http://pyqt4doc.appspot.com/qdesignercontainerextension.html">QDesignerContainerExtension</a>，<a href="qdesignermembersheetextension.html" tppabs="http://pyqt4doc.appspot.com/qdesignermembersheetextension.html">QDesignerMemberSheetExtension</a>，<a href="qdesignerpropertysheetextension.html" tppabs="http://pyqt4doc.appspot.com/qdesignerpropertysheetextension.html">QDesignerPropertySheetExtension</a>和<a href="qdesignertaskmenuextension.html" tppabs="http://pyqt4doc.appspot.com/qdesignertaskmenuextension.html">QDesignerTaskMenuExtension</a>。<i>Qt Designer</i>的行为是相同的同一个容器中，构件表，属性表或任务菜单所需的分机是否相关联。</p>
+<p>对于使用QExtensionManager类的完整示例，请参见<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/designer-taskmenuextension.html">Task Menu Extension
+example</a>。该示例显示了如何创建一个自定义的widget插件Qt Designer中，以及如何使用<a href="qdesignertaskmenuextension.html" tppabs="http://pyqt4doc.appspot.com/qdesignertaskmenuextension.html">QDesignerTaskMenuExtension</a>类的自定义项添加到<i>Qt Designer</i>的任务菜单。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QExtensionManager"></a>QExtensionManager.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个扩展管理器给定的<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="extension"></a><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> QExtensionManager.extension (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>object</i>, QString <i>iid</i>)</h3>
+<p>从重新实现<a href="qabstractextensionmanager.html#extension" tppabs="http://pyqt4doc.appspot.com/qabstractextensionmanager.html#extension">QAbstractExtensionManager.extension</a>（ ） 。</p>
+<p>返回由指定的扩展名<i>iid</i>，对于给定的<i>object</i>。</p>
+
+
+<h3 class="fn">
+<a name="registerExtensions"></a>QExtensionManager.registerExtensions (<i>self</i>, <a href="qabstractextensionfactory.html" tppabs="http://pyqt4doc.appspot.com/qabstractextensionfactory.html">QAbstractExtensionFactory</a> <i>factory</i>, QString <i>iid</i> = QString())</h3>
+<p>从重新实现<a href="qabstractextensionmanager.html#registerExtensions" tppabs="http://pyqt4doc.appspot.com/qabstractextensionmanager.html#registerExtensions">QAbstractExtensionManager.registerExtensions</a>（ ） 。</p>
+<p>注册由给定指定的扩展名<i>factory</i>和扩展标识符<i>iid</i>。</p>
+
+
+<h3 class="fn">
+<a name="unregisterExtensions"></a>QExtensionManager.unregisterExtensions (<i>self</i>, <a href="qabstractextensionfactory.html" tppabs="http://pyqt4doc.appspot.com/qabstractextensionfactory.html">QAbstractExtensionFactory</a> <i>factory</i>, QString <i>iid</i> = QString())</h3>
+<p>从重新实现<a href="qabstractextensionmanager.html#unregisterExtensions" tppabs="http://pyqt4doc.appspot.com/qabstractextensionmanager.html#unregisterExtensions">QAbstractExtensionManager.unregisterExtensions</a>（ ） 。</p>
+<p>注销由给定指定的扩展名<i>factory</i>和扩展标识符<i>iid</i>。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

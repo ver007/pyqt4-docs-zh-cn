@@ -1,0 +1,1165 @@
+﻿<html>
+<head>
+<title>QWizard Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QWizard Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QWizard类提供了一个向导框架。<a href="#details">More...</a></p>
+
+<p>继承<a href="qdialog.html" tppabs="http://pyqt4doc.appspot.com/qdialog.html">QDialog</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qwizard.html#WizardButton-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardButton-enum">WizardButton</a></b> { BackButton, NextButton, CommitButton, FinishButton, ..., Stretch }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">WizardOption</a></b> { IndependentPages, IgnoreSubTitles, ExtendedWatermarkPixmap, NoDefaultButton, ..., HaveCustomButton3 }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qwizard-wizardoptions.html">WizardOptions</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qwizard.html#WizardPixmap-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardPixmap-enum">WizardPixmap</a></b> { WatermarkPixmap, LogoPixmap, BannerPixmap, BackgroundPixmap }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">WizardStyle</a></b> { ClassicStyle, ModernStyle, MacStyle, AeroStyle }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qwizard.html#QWizard" tppabs="http://pyqt4doc.appspot.com/qwizard.html#QWizard">__init__</a></b> (<i>self</i>, QWidget <i>parent</i> = None, Qt.WindowFlags <i>flags</i> = 0)</li>
+<li>
+<div class="fn"></div>int <b><a href="qwizard.html#addPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#addPage">addPage</a></b> (<i>self</i>, QWizardPage <i>page</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwizard.html#back" tppabs="http://pyqt4doc.appspot.com/qwizard.html#back">back</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QAbstractButton <b><a href="qwizard.html#button" tppabs="http://pyqt4doc.appspot.com/qwizard.html#button">button</a></b> (<i>self</i>, WizardButton <i>which</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qwizard.html#buttonText" tppabs="http://pyqt4doc.appspot.com/qwizard.html#buttonText">buttonText</a></b> (<i>self</i>, WizardButton <i>which</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwizard.html#cleanupPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#cleanupPage">cleanupPage</a></b> (<i>self</i>, int <i>id</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qwizard.html#currentId" tppabs="http://pyqt4doc.appspot.com/qwizard.html#currentId">currentId</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QWizardPage <b><a href="qwizard.html#currentPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#currentPage">currentPage</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwizard.html#done" tppabs="http://pyqt4doc.appspot.com/qwizard.html#done">done</a></b> (<i>self</i>, int <i>result</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qwizard.html#event" tppabs="http://pyqt4doc.appspot.com/qwizard.html#event">event</a></b> (<i>self</i>, QEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qwizard.html#field" tppabs="http://pyqt4doc.appspot.com/qwizard.html#field">field</a></b> (<i>self</i>, QString <i>name</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qwizard.html#hasVisitedPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#hasVisitedPage">hasVisitedPage</a></b> (<i>self</i>, int <i>id</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwizard.html#initializePage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#initializePage">initializePage</a></b> (<i>self</i>, int <i>id</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwizard.html#next" tppabs="http://pyqt4doc.appspot.com/qwizard.html#next">next</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qwizard.html#nextId" tppabs="http://pyqt4doc.appspot.com/qwizard.html#nextId">nextId</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>WizardOptions <b><a href="qwizard.html#options" tppabs="http://pyqt4doc.appspot.com/qwizard.html#options">options</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QWizardPage <b><a href="qwizard.html#page" tppabs="http://pyqt4doc.appspot.com/qwizard.html#page">page</a></b> (<i>self</i>, int <i>id</i>)</li>
+<li>
+<div class="fn"></div>list-of-int <b><a href="qwizard.html#pageIds" tppabs="http://pyqt4doc.appspot.com/qwizard.html#pageIds">pageIds</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwizard.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qwizard.html#paintEvent">paintEvent</a></b> (<i>self</i>, QPaintEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>QPixmap <b><a href="qwizard.html#pixmap" tppabs="http://pyqt4doc.appspot.com/qwizard.html#pixmap">pixmap</a></b> (<i>self</i>, WizardPixmap <i>which</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwizard.html#removePage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#removePage">removePage</a></b> (<i>self</i>, int <i>id</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwizard.html#resizeEvent" tppabs="http://pyqt4doc.appspot.com/qwizard.html#resizeEvent">resizeEvent</a></b> (<i>self</i>, QResizeEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwizard.html#restart" tppabs="http://pyqt4doc.appspot.com/qwizard.html#restart">restart</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwizard.html#setButton" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setButton">setButton</a></b> (<i>self</i>, WizardButton <i>which</i>, QAbstractButton <i>button</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwizard.html#setButtonLayout" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setButtonLayout">setButtonLayout</a></b> (<i>self</i>, list-of-QWizard.WizardButton <i>layout</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwizard.html#setButtonText" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setButtonText">setButtonText</a></b> (<i>self</i>, WizardButton <i>which</i>, QString <i>text</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwizard.html#setDefaultProperty" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setDefaultProperty">setDefaultProperty</a></b> (<i>self</i>, str <i>className</i>, str <i>property</i>, str <i>changedSignal</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwizard.html#setField" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setField">setField</a></b> (<i>self</i>, QString <i>name</i>, QVariant <i>value</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwizard.html#setOption" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setOption">setOption</a></b> (<i>self</i>, WizardOption <i>option</i>, bool <i>on</i> = True)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwizard.html#setOptions" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setOptions">setOptions</a></b> (<i>self</i>, WizardOptions <i>options</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwizard.html#setPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setPage">setPage</a></b> (<i>self</i>, int <i>id</i>, QWizardPage <i>page</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwizard.html#setPixmap" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setPixmap">setPixmap</a></b> (<i>self</i>, WizardPixmap <i>which</i>, QPixmap <i>pixmap</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwizard.html#setSideWidget" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setSideWidget">setSideWidget</a></b> (<i>self</i>, QWidget <i>widget</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwizard.html#setStartId" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setStartId">setStartId</a></b> (<i>self</i>, int <i>id</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwizard.html#setSubTitleFormat" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setSubTitleFormat">setSubTitleFormat</a></b> (<i>self</i>, Qt.TextFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwizard.html#setTitleFormat" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setTitleFormat">setTitleFormat</a></b> (<i>self</i>, Qt.TextFormat <i>format</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwizard.html#setVisible" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setVisible">setVisible</a></b> (<i>self</i>, bool <i>visible</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwizard.html#setWizardStyle" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setWizardStyle">setWizardStyle</a></b> (<i>self</i>, WizardStyle <i>style</i>)</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qwizard.html#sideWidget" tppabs="http://pyqt4doc.appspot.com/qwizard.html#sideWidget">sideWidget</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qwizard.html#sizeHint" tppabs="http://pyqt4doc.appspot.com/qwizard.html#sizeHint">sizeHint</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qwizard.html#startId" tppabs="http://pyqt4doc.appspot.com/qwizard.html#startId">startId</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Qt.TextFormat <b><a href="qwizard.html#subTitleFormat" tppabs="http://pyqt4doc.appspot.com/qwizard.html#subTitleFormat">subTitleFormat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qwizard.html#testOption" tppabs="http://pyqt4doc.appspot.com/qwizard.html#testOption">testOption</a></b> (<i>self</i>, WizardOption <i>option</i>)</li>
+<li>
+<div class="fn"></div>Qt.TextFormat <b><a href="qwizard.html#titleFormat" tppabs="http://pyqt4doc.appspot.com/qwizard.html#titleFormat">titleFormat</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qwizard.html#validateCurrentPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#validateCurrentPage">validateCurrentPage</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-int <b><a href="qwizard.html#visitedPages" tppabs="http://pyqt4doc.appspot.com/qwizard.html#visitedPages">visitedPages</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>WizardStyle <b><a href="qwizard.html#wizardStyle" tppabs="http://pyqt4doc.appspot.com/qwizard.html#wizardStyle">wizardStyle</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qwizard.html#currentIdChanged" tppabs="http://pyqt4doc.appspot.com/qwizard.html#currentIdChanged">currentIdChanged</a></b> (int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qwizard.html#customButtonClicked" tppabs="http://pyqt4doc.appspot.com/qwizard.html#customButtonClicked">customButtonClicked</a></b> (int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qwizard.html#helpRequested" tppabs="http://pyqt4doc.appspot.com/qwizard.html#helpRequested">helpRequested</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qwizard.html#pageAdded" tppabs="http://pyqt4doc.appspot.com/qwizard.html#pageAdded">pageAdded</a></b> (int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qwizard.html#pageRemoved" tppabs="http://pyqt4doc.appspot.com/qwizard.html#pageRemoved">pageRemoved</a></b> (int)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QWizard类提供了一个向导框架。</p>
+<p>一个向导（也称为Mac OS X上的助手）是一种特殊类型的输入对话框，它包含的页面顺序。一个向导的目的是通过一步一个工艺步骤引导用户。奇才是复杂或罕见的任务，用户可能会发现很难学到有用的。</p>
+<p>QWizard继承<a href="qdialog.html" tppabs="http://pyqt4doc.appspot.com/qdialog.html">QDialog</a>并表示一个向导。每个页面都是一个<a href="qwizardpage.html" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html">QWizardPage</a>（一<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>子类） 。要创建自己的向导，你可以直接使用这些类，或者你可以继承他们进行更多的控制。</p>
+<p>主题：</p>
+<a id="a-trivial-example" name="a-trivial-example"></a>
+<h3>A Trivial Example</h3>
+<p>下面的例子演示了如何创建向导页面，并将其添加到向导。对于更高级的示例，请参见<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/dialogs-classwizard.html">Class Wizard</a>和<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/dialogs-licensewizard.html">License Wizard</a>。</p>
+<pre class="cpp">
+ <span class="type"><a href="qwizardpage.html" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html">QWizardPage</a></span> <span class="operator">*</span>createIntroPage()
+ {
+     <span class="type"><a href="qwizardpage.html" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html">QWizardPage</a></span> <span class="operator">*</span>page <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qwizardpage.html" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html">QWizardPage</a></span>;
+     page<span class="operator">-</span><span class="operator">&gt;</span>setTitle(<span class="string">"Introduction"</span>);
+
+     <span class="type"><a href="qlabel.html" tppabs="http://pyqt4doc.appspot.com/qlabel.html">QLabel</a></span> <span class="operator">*</span>label <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qlabel.html" tppabs="http://pyqt4doc.appspot.com/qlabel.html">QLabel</a></span>(<span class="string">"This wizard will help you register your copy "</span>
+                                <span class="string">"of Super Product Two."</span>);
+     label<span class="operator">-</span><span class="operator">&gt;</span>setWordWrap(<span class="keyword">true</span>);
+
+     <span class="type"><a href="qvboxlayout.html" tppabs="http://pyqt4doc.appspot.com/qvboxlayout.html">QVBoxLayout</a></span> <span class="operator">*</span>layout <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qvboxlayout.html" tppabs="http://pyqt4doc.appspot.com/qvboxlayout.html">QVBoxLayout</a></span>;
+     layout<span class="operator">-</span><span class="operator">&gt;</span>addWidget(label);
+     page<span class="operator">-</span><span class="operator">&gt;</span>setLayout(layout);
+
+     <span class="keyword">return</span> page;
+ }
+
+ <span class="type"><a href="qwizardpage.html" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html">QWizardPage</a></span> <span class="operator">*</span>createRegistrationPage()
+ {
+     ...
+ }
+
+ <span class="type"><a href="qwizardpage.html" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html">QWizardPage</a></span> <span class="operator">*</span>createConclusionPage()
+ {
+     ...
+ }
+
+ <span class="type">int</span> main(<span class="type">int</span> argc<span class="operator">,</span> <span class="type">char</span> <span class="operator">*</span>argv<span class="operator">[</span><span class="operator">]</span>)
+ {
+     <span class="type"><a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a></span> app(argc<span class="operator">,</span> argv);
+
+     <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> translatorFileName <span class="operator">=</span> QLatin1String(<span class="string">"qt_"</span>);
+     translatorFileName <span class="operator">+</span><span class="operator">=</span> <span class="type"><a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a></span><span class="operator">.</span>system()<span class="operator">.</span>name();
+     <span class="type"><a href="qtranslator.html" tppabs="http://pyqt4doc.appspot.com/qtranslator.html">QTranslator</a></span> <span class="operator">*</span>translator <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qtranslator.html" tppabs="http://pyqt4doc.appspot.com/qtranslator.html">QTranslator</a></span>(<span class="operator">&amp;</span>app);
+     <span class="keyword">if</span> (translator<span class="operator">-</span><span class="operator">&gt;</span>load(translatorFileName<span class="operator">,</span> <span class="type"><a href="qlibraryinfo.html" tppabs="http://pyqt4doc.appspot.com/qlibraryinfo.html">QLibraryInfo</a></span><span class="operator">.</span>location(<span class="type"><a href="qlibraryinfo.html" tppabs="http://pyqt4doc.appspot.com/qlibraryinfo.html">QLibraryInfo</a></span><span class="operator">.</span>TranslationsPath)))
+         app<span class="operator">.</span>installTranslator(translator);
+
+     <span class="type">QWizard</span> wizard;
+     wizard<span class="operator">.</span>addPage(createIntroPage());
+     wizard<span class="operator">.</span>addPage(createRegistrationPage());
+     wizard<span class="operator">.</span>addPage(createConclusionPage());
+
+     wizard<span class="operator">.</span>setWindowTitle(<span class="string">"Trivial Wizard"</span>);
+ <span class="preprocessor">#ifdef Q_OS_SYMBIAN</span>
+     wizard<span class="operator">.</span>showMaximized();
+ <span class="preprocessor">#else</span>
+     wizard<span class="operator">.</span>show();
+ <span class="preprocessor">#endif</span>
+
+     <span class="keyword">return</span> app<span class="operator">.</span>exec();
+ }
+</pre>
+<a id="wizard-look-and-feel" name="wizard-look-and-feel"></a>
+<h3>Wizard Look and Feel</h3>
+<p>QWizard支持四个精灵的样子：</p>
+<ul>
+<li><a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">ClassicStyle</a></li>
+<li><a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">ModernStyle</a></li>
+<li><a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">MacStyle</a></li>
+<li><a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">AeroStyle</a></li>
+</ul>
+<p>你可以明确地设置一下使用使用<a href="qwizard.html#wizardStyle-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#wizardStyle-prop">setWizardStyle</a>（ ） （例如，如果你想同样的外观在所有平台） 。</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th><a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">ClassicStyle</a></th>
+<th><a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">ModernStyle</a></th>
+<th><a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">MacStyle</a></th>
+<th><a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">AeroStyle</a></th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td><img alt="" src="images/qtwizard-classic1.png"></td>
+<td><img alt="" src="images/qtwizard-modern1.png"></td>
+<td><img alt="" src="images/qtwizard-mac1.png"></td>
+<td><img alt="" src="images/qtwizard-aero1.png"></td>
+</tr>
+<tr class="even" valign="top">
+<td><img alt="" src="images/qtwizard-classic2.png"></td>
+<td><img alt="" src="images/qtwizard-modern2.png"></td>
+<td><img alt="" src="images/qtwizard-mac2.png"></td>
+<td><img alt="" src="images/qtwizard-aero2.png"></td>
+</tr>
+</table>
+<p>注意：<a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">AeroStyle</a>只有在Windows Vista系统上的alpha合成启用效果。<a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">ModernStyle</a>作为当不满足这个条件的后备。</p>
+<p>除了精灵的风格，也有控制精灵的外观和感觉的几个选项。这些可以使用设置<a href="qwizard.html#setOption" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setOption">setOption</a>（）或<a href="qwizard.html#options-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#options-prop">setOptions</a>（ ） 。例如，<a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">HaveHelpButton</a>让QWizard秀一<b>Help</b>连同其他向导按钮按钮。</p>
+<p>使用的向导按钮的顺序，你甚至可以更改为任意顺序<a href="qwizard.html#setButtonLayout" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setButtonLayout">setButtonLayout</a>（ ），您最多可以添加三个自定义按钮（例如，<b>Print</b>按钮）按钮行。这是通过调用实现<a href="qwizard.html#setButton" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setButton">setButton</a>（）或<a href="qwizard.html#setButtonText" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setButtonText">setButtonText</a>（ ）与<a href="qwizard.html#WizardButton-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardButton-enum">CustomButton1</a>，<a href="qwizard.html#WizardButton-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardButton-enum">CustomButton2</a>或<a href="qwizard.html#WizardButton-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardButton-enum">CustomButton3</a>设置按钮，并且通过使<a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">HaveCustomButton1</a>，<a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">HaveCustomButton2</a>或<a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">HaveCustomButton3</a>选项。每当用户点击自定义按钮，<a href="qwizard.html#customButtonClicked" tppabs="http://pyqt4doc.appspot.com/qwizard.html#customButtonClicked">customButtonClicked</a>（）被发射。例如：</p>
+<pre class="cpp">
+         wizard()<span class="operator">-</span><span class="operator">&gt;</span>setButtonText(<span class="type">QWizard</span><span class="operator">.</span>CustomButton1<span class="operator">,</span> tr(<span class="string">"&amp;Print"</span>));
+         wizard()<span class="operator">-</span><span class="operator">&gt;</span>setOption(<span class="type">QWizard</span><span class="operator">.</span>HaveCustomButton1<span class="operator">,</span> <span class="keyword">true</span>);
+         connect(wizard()<span class="operator">,</span> SIGNAL(customButtonClicked(<span class="type">int</span>))<span class="operator">,</span>
+                 <span class="keyword">this</span><span class="operator">,</span> SLOT(printButtonClicked()));
+</pre>
+<a id="elements-of-a-wizard-page" name="elements-of-a-wizard-page"></a>
+<h3>Elements of a Wizard Page</h3>
+<p>向导包括一个序列的<a href="qwizardpage.html" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html">QWizardPage</a>秒。在任何时间，仅示出一个页面。一个页面具有以下属性：</p>
+<ul>
+<li>A <a href="qwizardpage.html#title-prop" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#title-prop">title</a>.</li>
+<li>A <a href="qwizardpage.html#subTitle-prop" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#subTitle-prop">subTitle</a>.</li>
+<li>A set of pixmaps, which may or may not be honored, depending on
+the wizard's style:
+<ul>
+<li>
+<a href="qwizard.html#WizardPixmap-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardPixmap-enum">WatermarkPixmap</a>
+(used by <a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">ClassicStyle</a>
+and <a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">ModernStyle</a>)</li>
+<li>
+<a href="qwizard.html#WizardPixmap-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardPixmap-enum">BannerPixmap</a> (used
+by <a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">ModernStyle</a>)</li>
+<li>
+<a href="qwizard.html#WizardPixmap-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardPixmap-enum">LogoPixmap</a> (used
+by <a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">ClassicStyle</a> and
+<a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">ModernStyle</a>)</li>
+<li>
+<a href="qwizard.html#WizardPixmap-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardPixmap-enum">BackgroundPixmap</a>
+(used by <a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">MacStyle</a>)</li>
+</ul>
+</li>
+</ul>
+<p>图中初级讲座展示QWizard如何呈现这些属性，假设他们都是现在和<a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">ModernStyle</a>用于：</p>
+<p class="centerAlign"><img alt="" src="images/qtwizard-nonmacpage.png"></p>
+<p>当<a href="qwizardpage.html#subTitle-prop" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#subTitle-prop">subTitle</a>被设置， QWizard在报头中显示它，在这种情况下，它也使用了<a href="qwizard.html#WizardPixmap-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardPixmap-enum">BannerPixmap</a>和<a href="qwizard.html#WizardPixmap-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardPixmap-enum">LogoPixmap</a>装饰头。该<a href="qwizard.html#WizardPixmap-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardPixmap-enum">WatermarkPixmap</a>被显示在左侧，头下方。在底部，有一排按钮允许用户浏览页面。</p>
+<p>页面本身（的<a href="qwizardpage.html" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html">QWizardPage</a>插件）佔据的标题，水印，按钮行之间的区域。典型地，该网页是<a href="qwizardpage.html" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html">QWizardPage</a>在其上<a href="qgridlayout.html" tppabs="http://pyqt4doc.appspot.com/qgridlayout.html">QGridLayout</a>安装，使用标准子部件（<a href="qlabel.html" tppabs="http://pyqt4doc.appspot.com/qlabel.html">QLabel</a>秒，<a href="qlineedit.html" tppabs="http://pyqt4doc.appspot.com/qlineedit.html">QLineEdit</a>秒，等等）。</p>
+<p>如果精灵的风格<a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">MacStyle</a>，页面看起来完全不同：</p>
+<p class="centerAlign"><img alt="" src="images/qtwizard-macpage.png"></p>
+<p>水印，旗帜，徽像素图是由忽略<a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">MacStyle</a>。如果<a href="qwizard.html#WizardPixmap-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardPixmap-enum">BackgroundPixmap</a>被设置，它被用作背景为向导，否则，一个默认的“助手”的图像被使用。</p>
+<p>标题和副标题都是通过调用设置<a href="qwizardpage.html#title-prop" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#title-prop">QWizardPage.setTitle</a>（）和<a href="qwizardpage.html#subTitle-prop" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#subTitle-prop">QWizardPage.setSubTitle</a>（ ）上的个人网页。他们可能是纯文本或HTML （见<a href="qwizard.html#titleFormat-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#titleFormat-prop">titleFormat</a>和<a href="qwizard.html#subTitleFormat-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#subTitleFormat-prop">subTitleFormat</a>） 。该像素图就可以设置全局使用的整个向导<a href="qwizard.html#setPixmap" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setPixmap">setPixmap</a>（ ） ，或在每个页面的基础上使用<a href="qwizardpage.html#setPixmap" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#setPixmap">QWizardPage.setPixmap</a>（ ） 。</p>
+<a id="field-mechanism" name="field-mechanism"></a><a id="registering-and-using-fields" name="registering-and-using-fields"></a>
+<h3>Registering and Using Fields</h3>
+<p>在许多向导页面的内容可能会影响后面的页的字段的缺省值。为了便于页面之间进行通信， QWizard支持一个“场”的机制，允许您注册一个字段（例如，<a href="qlineedit.html" tppabs="http://pyqt4doc.appspot.com/qlineedit.html">QLineEdit</a>）上的一个页面，访问任何网页它的价值。它也可以指定必填字段（即，必须在用户之前被填充字段可以前进到下一个页面） 。</p>
+<p>要注册一个字段，调用<a href="qwizardpage.html#registerField" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#registerField">QWizardPage.registerField</a>（）字段。例如：</p>
+<pre class="cpp">
+ ClassInfoPage<span class="operator">.</span>ClassInfoPage(<span class="type"><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a></span> <span class="operator">*</span>parent)
+     : <span class="type"><a href="qwizardpage.html" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html">QWizardPage</a></span>(parent)
+ {
+     ...
+     classNameLabel <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qlabel.html" tppabs="http://pyqt4doc.appspot.com/qlabel.html">QLabel</a></span>(tr(<span class="string">"&amp;Class name:"</span>));
+     classNameLineEdit <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qlineedit.html" tppabs="http://pyqt4doc.appspot.com/qlineedit.html">QLineEdit</a></span>;
+     classNameLabel<span class="operator">-</span><span class="operator">&gt;</span>setBuddy(classNameLineEdit);
+
+     baseClassLabel <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qlabel.html" tppabs="http://pyqt4doc.appspot.com/qlabel.html">QLabel</a></span>(tr(<span class="string">"B&amp;ase class:"</span>));
+     baseClassLineEdit <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qlineedit.html" tppabs="http://pyqt4doc.appspot.com/qlineedit.html">QLineEdit</a></span>;
+     baseClassLabel<span class="operator">-</span><span class="operator">&gt;</span>setBuddy(baseClassLineEdit);
+
+     qobjectMacroCheckBox <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qcheckbox.html" tppabs="http://pyqt4doc.appspot.com/qcheckbox.html">QCheckBox</a></span>(tr(<span class="string">"Generate Q_OBJECT &amp;macro"</span>));
+
+     registerField(<span class="string">"className*"</span><span class="operator">,</span> classNameLineEdit);
+     registerField(<span class="string">"baseClass"</span><span class="operator">,</span> baseClassLineEdit);
+     registerField(<span class="string">"qobjectMacro"</span><span class="operator">,</span> qobjectMacroCheckBox);
+     ...
+ }
+</pre>
+<p>上面的代码注册三个字段，<tt>className</tt>，<tt>baseClass</tt>和<tt>qobjectMacro</tt>，这是三个子控件相关联。星号（<tt>*</tt>）旁<tt>className</tt>表示必填字段。</p>
+<a id="initialize-page" name="initialize-page"></a>
+<p>任何页面的字段是从什么页面访问。例如：</p>
+<pre class="cpp">
+ <span class="type">void</span> OutputFilesPage<span class="operator">.</span><a href="qwizard.html#initializePage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#initializePage">initializePage</a>()
+ {
+     <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> className <span class="operator">=</span> field(<span class="string">"className"</span>)<span class="operator">.</span>toString();
+     headerLineEdit<span class="operator">-</span><span class="operator">&gt;</span>setText(className<span class="operator">.</span>toLower() <span class="operator">+</span> <span class="string">".h"</span>);
+     implementationLineEdit<span class="operator">-</span><span class="operator">&gt;</span>setText(className<span class="operator">.</span>toLower() <span class="operator">+</span> <span class="string">".cpp"</span>);
+     outputDirLineEdit<span class="operator">-</span><span class="operator">&gt;</span>setText(<span class="type"><a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a></span><span class="operator">.</span>convertSeparators(<span class="type"><a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a></span><span class="operator">.</span>tempPath()));
+ }
+</pre>
+<p>在这里，我们称之为<a href="qwizardpage.html#field" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#field">QWizardPage.field</a>（ ）来访问的内容<tt>className</tt>字段（这是在所定义的<tt>ClassInfoPage</tt>） ，并用它来初始化<tt>OuputFilePage</tt>。该字段的内容返回为一个<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>。</p>
+<p>当我们使用创建一个字段<a href="qwizardpage.html#registerField" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#registerField">QWizardPage.registerField</a>（ ） ，我们通过一个唯一的字段名和窗口小部件。我们还可以提供一个Qt的属性名字和一个“改变”信号（即所发射的属性发生变化时的信号）作为第三和第四个参数，但是，这是没有必要的最常见的Qt部件，如<a href="qlineedit.html" tppabs="http://pyqt4doc.appspot.com/qlineedit.html">QLineEdit</a>，<a href="qcheckbox.html" tppabs="http://pyqt4doc.appspot.com/qcheckbox.html">QCheckBox</a>和<a href="qcombobox.html" tppabs="http://pyqt4doc.appspot.com/qcombobox.html">QComboBox</a>，因为QWizard知道查找哪些属性。</p>
+<a id="mandatory-fields" name="mandatory-fields"></a>
+<p>如果一个星号（<tt>*</tt>）追加到名字的时候该物业登记，该字段是<i>mandatory field</i>。当一个页面有必填字段中，<b>Next</b>和/或<b>Finish</b>按钮被激活，只有当所有必填字段被填充。</p>
+<p>考虑现场“装” ， QWizard简单地检查该字段的当前值不等于原来的值（它有值时，<a href="qwizard.html#initializePage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#initializePage">initializePage</a>（ ）被调用） 。为<a href="qlineedit.html" tppabs="http://pyqt4doc.appspot.com/qlineedit.html">QLineEdit</a>和<a href="qabstractspinbox.html" tppabs="http://pyqt4doc.appspot.com/qabstractspinbox.html">QAbstractSpinBox</a>子类， QWizard还检查<a href="qlineedit.html#acceptableInput-prop" tppabs="http://pyqt4doc.appspot.com/qlineedit.html#acceptableInput-prop">hasAcceptableInput()</a>返回True ，兑现任何验证或面具。</p>
+<p>是提供了方便QWizard的强制性场机制。一个更强大的（但也比较麻烦），另一种方法是重新实现<a href="qwizardpage.html#isComplete" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#isComplete">QWizardPage.isComplete</a>（）和以发射<a href="qwizardpage.html#completeChanged" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#completeChanged">QWizardPage.completeChanged</a>（ ）信号时的页面变得完整或不完整。</p>
+<p>的启用/禁用状态<b>Next</b>和/或<b>Finish</b>按钮是向所述用户输入执行验证的一种方法。另一种方式是重新实现<a href="qwizard.html#validateCurrentPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#validateCurrentPage">validateCurrentPage</a>（ ）（或<a href="qwizardpage.html#validatePage" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#validatePage">QWizardPage.validatePage</a>（））来执行一些最后一分钟的验证（并且显示一个错误信息，如果用户输入了不完整的或无效的信息）。如果函数返回True，则下一个页面显示（或向导完成），否则，在当前页面熬夜。</p>
+<a id="creating-linear-wizards" name="creating-linear-wizards"></a>
+<h3>Creating Linear Wizards</h3>
+<p>大多数向导具有线性结构，第1页其次是第2页，依此类推直到最后一页。该<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/dialogs-classwizard.html">Class Wizard</a>例子是这样的精灵。随着QWizard ，线性精灵是通过实例的创建<a href="qwizardpage.html" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html">QWizardPage</a>s和利用它们插入<a href="qwizard.html#addPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#addPage">addPage</a>（ ） 。默认情况下，页面都显示在它们被添加的顺序。例如：</p>
+<pre class="cpp">
+ ClassWizard<span class="operator">.</span>ClassWizard(<span class="type"><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a></span> <span class="operator">*</span>parent)
+     : <span class="type">QWizard</span>(parent)
+ {
+     addPage(<span class="keyword">new</span> IntroPage);
+     addPage(<span class="keyword">new</span> ClassInfoPage);
+     addPage(<span class="keyword">new</span> CodeStylePage);
+     addPage(<span class="keyword">new</span> OutputFilesPage);
+     addPage(<span class="keyword">new</span> ConclusionPage);
+     ...
+ }
+</pre>
+<p>当一个网页是关于要显示， QWizard电话<a href="qwizard.html#initializePage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#initializePage">initializePage</a>（ ） （这反过来又调用<a href="qwizardpage.html#initializePage" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#initializePage">QWizardPage.initializePage</a>（））来使用默认值填充页面。默认情况下，此功能不执行任何操作，但它可以被重新实现来初始化基于其它网页的田地页面的内容（见<a href="#initialize-page">example above</a>） 。</p>
+<p>如果用户按下<b>Back</b>，<a href="qwizard.html#cleanupPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#cleanupPage">cleanupPage</a>（）被调用（这反过来又调用<a href="qwizardpage.html#cleanupPage" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#cleanupPage">QWizardPage.cleanupPage</a>（））。默认实现重置页面的栏位为原始值（他们之前所拥有的价值观<a href="qwizard.html#initializePage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#initializePage">initializePage</a>（ ）被调用） 。如果你想要的<b>Back</b>按钮是无损，并保持用户输入的值，只需启用<a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">IndependentPages</a>选项。</p>
+<a id="creating-non-linear-wizards" name="creating-non-linear-wizards"></a>
+<h3>Creating Non-Linear Wizards</h3>
+<p>一些向导是更复杂的，因为它们允许基于由用户所提供的信息不同的遍历路径。该<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/dialogs-licensewizard.html">License Wizard</a>举例说明这一点。它提供了五个向导页，具体取决于哪个选项被选中，用户可以到达不同的页面。</p>
+<p class="centerAlign"><img alt="" src="images/licensewizard-flow.png"></p>
+<p>在复杂的向导，页面识别标识。这些ID通常定义使用一个枚举。例如：</p>
+<pre class="cpp">
+ <span class="keyword">class</span> LicenseWizard : <span class="keyword">public</span> <span class="type">QWizard</span>
+ {
+     ...
+     <span class="keyword">enum</span> { Page_Intro<span class="operator">,</span> Page_Evaluate<span class="operator">,</span> Page_Register<span class="operator">,</span> Page_Details<span class="operator">,</span>
+            Page_Conclusion };
+     ...
+ };
+</pre>
+<p>该页面使用插入<a href="qwizard.html#setPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setPage">setPage</a>（ ） ，它接受一个ID和一个实例<a href="qwizardpage.html" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html">QWizardPage</a>（子类或） ：</p>
+<pre class="cpp">
+ LicenseWizard<span class="operator">.</span>LicenseWizard(<span class="type"><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a></span> <span class="operator">*</span>parent)
+     : <span class="type">QWizard</span>(parent)
+ {
+     setPage(Page_Intro<span class="operator">,</span> <span class="keyword">new</span> IntroPage);
+     setPage(Page_Evaluate<span class="operator">,</span> <span class="keyword">new</span> EvaluatePage);
+     setPage(Page_Register<span class="operator">,</span> <span class="keyword">new</span> RegisterPage);
+     setPage(Page_Details<span class="operator">,</span> <span class="keyword">new</span> DetailsPage);
+     setPage(Page_Conclusion<span class="operator">,</span> <span class="keyword">new</span> ConclusionPage);
+     ...
+ }
+</pre>
+<p>默认情况下，页面中显示递增的ID顺序。提供一个动态的顺序取决于用户选择的选项，我们必须重新实现<a href="qwizardpage.html#nextId" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#nextId">QWizardPage.nextId</a>（ ） 。例如：</p>
+<pre class="cpp">
+ <span class="type">int</span> IntroPage<span class="operator">.</span><a href="qwizard.html#nextId" tppabs="http://pyqt4doc.appspot.com/qwizard.html#nextId">nextId</a>() <span class="keyword">const</span>
+ {
+     <span class="keyword">if</span> (evaluateRadioButton<span class="operator">-</span><span class="operator">&gt;</span>isChecked()) {
+         <span class="keyword">return</span> LicenseWizard<span class="operator">.</span>Page_Evaluate;
+     } <span class="keyword">else</span> {
+         <span class="keyword">return</span> LicenseWizard<span class="operator">.</span>Page_Register;
+     }
+ }
+
+ <span class="type">int</span> EvaluatePage<span class="operator">.</span><a href="qwizard.html#nextId" tppabs="http://pyqt4doc.appspot.com/qwizard.html#nextId">nextId</a>() <span class="keyword">const</span>
+ {
+     <span class="keyword">return</span> LicenseWizard<span class="operator">.</span>Page_Conclusion;
+ }
+
+ <span class="type">int</span> RegisterPage<span class="operator">.</span><a href="qwizard.html#nextId" tppabs="http://pyqt4doc.appspot.com/qwizard.html#nextId">nextId</a>() <span class="keyword">const</span>
+ {
+     <span class="keyword">if</span> (upgradeKeyLineEdit<span class="operator">-</span><span class="operator">&gt;</span>text()<span class="operator">.</span>isEmpty()) {
+         <span class="keyword">return</span> LicenseWizard<span class="operator">.</span>Page_Details;
+     } <span class="keyword">else</span> {
+         <span class="keyword">return</span> LicenseWizard<span class="operator">.</span>Page_Conclusion;
+     }
+ }
+
+ <span class="type">int</span> DetailsPage<span class="operator">.</span><a href="qwizard.html#nextId" tppabs="http://pyqt4doc.appspot.com/qwizard.html#nextId">nextId</a>() <span class="keyword">const</span>
+ {
+     <span class="keyword">return</span> LicenseWizard<span class="operator">.</span>Page_Conclusion;
+ }
+
+ <span class="type">int</span> ConclusionPage<span class="operator">.</span><a href="qwizard.html#nextId" tppabs="http://pyqt4doc.appspot.com/qwizard.html#nextId">nextId</a>() <span class="keyword">const</span>
+ {
+     <span class="keyword">return</span> <span class="operator">-</span><span class="number">1</span>;
+ }
+</pre>
+<p>这也将有可能把所有的逻辑在一个地方，在一个<a href="qwizard.html#nextId" tppabs="http://pyqt4doc.appspot.com/qwizard.html#nextId">QWizard.nextId</a>（ ）重新实现。例如：</p>
+<pre class="cpp">
+ <span class="type">int</span> LicenseWizard<span class="operator">.</span><a href="qwizard.html#nextId" tppabs="http://pyqt4doc.appspot.com/qwizard.html#nextId">nextId</a>() <span class="keyword">const</span>
+ {
+     <span class="keyword">switch</span> (currentId()) {
+     <span class="keyword">case</span> Page_Intro:
+         <span class="keyword">if</span> (field(<span class="string">"intro.evaluate"</span>)<span class="operator">.</span>toBool()) {
+             <span class="keyword">return</span> Page_Evaluate;
+         } <span class="keyword">else</span> {
+             <span class="keyword">return</span> Page_Register;
+         }
+     <span class="keyword">case</span> Page_Evaluate:
+         <span class="keyword">return</span> Page_Conclusion;
+     <span class="keyword">case</span> Page_Register:
+         <span class="keyword">if</span> (field(<span class="string">"register.upgradeKey"</span>)<span class="operator">.</span>toString()<span class="operator">.</span>isEmpty()) {
+             <span class="keyword">return</span> Page_Details;
+         } <span class="keyword">else</span> {
+             <span class="keyword">return</span> Page_Conclusion;
+         }
+     <span class="keyword">case</span> Page_Details:
+         <span class="keyword">return</span> Page_Conclusion;
+     <span class="keyword">case</span> Page_Conclusion:
+     <span class="keyword">default</span>:
+         <span class="keyword">return</span> <span class="operator">-</span><span class="number">1</span>;
+     }
+ }
+</pre>
+<p>开始在另一个页面比页面具有最低的ID ，调用<a href="qwizard.html#startId-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#startId-prop">setStartId</a>（ ） 。</p>
+<p>要测试一个网页是否已被访问，则调用<a href="qwizard.html#hasVisitedPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#hasVisitedPage">hasVisitedPage</a>（ ） 。例如：</p>
+<pre class="cpp">
+ <span class="type">void</span> ConclusionPage<span class="operator">.</span><a href="qwizard.html#initializePage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#initializePage">initializePage</a>()
+ {
+     <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> licenseText;
+
+     <span class="keyword">if</span> (wizard()<span class="operator">-</span><span class="operator">&gt;</span>hasVisitedPage(LicenseWizard<span class="operator">.</span>Page_Evaluate)) {
+         licenseText <span class="operator">=</span> tr(<span class="string">"&lt;u&gt;Evaluation License Agreement:&lt;/u&gt; "</span>
+                          <span class="string">"You can use this software for 30 days and make one "</span>
+                          <span class="string">"backup, but you are not allowed to distribute it."</span>);
+     } <span class="keyword">else</span> <span class="keyword">if</span> (wizard()<span class="operator">-</span><span class="operator">&gt;</span>hasVisitedPage(LicenseWizard<span class="operator">.</span>Page_Details)) {
+         licenseText <span class="operator">=</span> tr(<span class="string">"&lt;u&gt;First-Time License Agreement:&lt;/u&gt; "</span>
+                          <span class="string">"You can use this software subject to the license "</span>
+                          <span class="string">"you will receive by email."</span>);
+     } <span class="keyword">else</span> {
+         licenseText <span class="operator">=</span> tr(<span class="string">"&lt;u&gt;Upgrade License Agreement:&lt;/u&gt; "</span>
+                          <span class="string">"This software is licensed under the terms of your "</span>
+                          <span class="string">"current license."</span>);
+     }
+     bottomLabel<span class="operator">-</span><span class="operator">&gt;</span>setText(licenseText);
+ }
+</pre>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="WizardButton-enum"></a>QWizard.WizardButton</h3>
+<p>此枚举指定一个向导按钮。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.BackButton</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该<b>Back</b>按钮（<b>Go Back</b>在Mac OS X ）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.NextButton</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该<b>Next</b>按钮（<b>Continue</b>在Mac OS X ）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.CommitButton</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">该<b>Commit</b>钮</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.FinishButton</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">该<b>Finish</b>按钮（<b>Done</b>在Mac OS X ）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.CancelButton</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">该<b>Cancel</b>按钮（参见<a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">NoCancelButton</a>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.HelpButton</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">该<b>Help</b>按钮（参见<a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">HaveHelpButton</a>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.CustomButton1</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">第一个用户自定义按钮（参见<a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">HaveCustomButton1</a>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.CustomButton2</tt></td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">第二个用户自定义按钮（也见<a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">HaveCustomButton2</a>）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.CustomButton3</tt></td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">第三个用户自定义按钮（也见<a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">HaveCustomButton3</a>）</td>
+</tr>
+</table>
+<p>当调用下面的值才有用<a href="qwizard.html#setButtonLayout" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setButtonLayout">setButtonLayout</a>（）：</p>
+<table class="valuelist">
+<tr class="even" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.Stretch</tt></td>
+<td class="topAlign"><tt>9</tt></td>
+<td class="topAlign">的水平伸展的按钮布局</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qwizard.html#setButton" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setButton">setButton</a>（ ）<a href="qwizard.html#setButtonText" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setButtonText">setButtonText</a>（ ）<a href="qwizard.html#setButtonLayout" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setButtonLayout">setButtonLayout</a>（）和<a href="qwizard.html#customButtonClicked" tppabs="http://pyqt4doc.appspot.com/qwizard.html#customButtonClicked">customButtonClicked</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="WizardOption-enum"></a>QWizard.WizardOption</h3>
+<p>此枚举指定影响精灵的外观和感觉的各种选项。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.IndependentPages</tt></td>
+<td class="topAlign"><tt>0x00000001</tt></td>
+<td class="topAlign">页面是相互独立的（即，它们不会相互派生值）。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.IgnoreSubTitles</tt></td>
+<td class="topAlign"><tt>0x00000002</tt></td>
+<td class="topAlign">不显示任何字幕，即使它们被设置。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.ExtendedWatermarkPixmap</tt></td>
+<td class="topAlign"><tt>0x00000004</tt></td>
+<td class="topAlign">任何延长<a href="qwizard.html#WizardPixmap-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardPixmap-enum">WatermarkPixmap</a>一路下跌到窗口的边缘。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.NoDefaultButton</tt></td>
+<td class="topAlign"><tt>0x00000008</tt></td>
+<td class="topAlign">不要使<b>Next</b> or <b>Finish</b>按钮对话框的<a href="qpushbutton.html#default-prop" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html#default-prop">default
+button</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.NoBackButtonOnStartPage</tt></td>
+<td class="topAlign"><tt>0x00000010</tt></td>
+<td class="topAlign">不显示<b>Back</b>在开始页面上按钮。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.NoBackButtonOnLastPage</tt></td>
+<td class="topAlign"><tt>0x00000020</tt></td>
+<td class="topAlign">不显示<b>Back</b>在最后一页按钮。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWizard.DisabledBackButtonOnLastPage</tt>
+</td>
+<td class="topAlign"><tt>0x00000040</tt></td>
+<td class="topAlign">关闭<b>Back</b>在最后一页按钮。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWizard.HaveNextButtonOnLastPage</tt>
+</td>
+<td class="topAlign"><tt>0x00000080</tt></td>
+<td class="topAlign">显示（禁用）<b>Next</b>在最后一页按钮。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QWizard.HaveFinishButtonOnEarlyPages</tt>
+</td>
+<td class="topAlign"><tt>0x00000100</tt></td>
+<td class="topAlign">显示（禁用）<b>Finish</b>在非最后几页按钮。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.NoCancelButton</tt></td>
+<td class="topAlign"><tt>0x00000200</tt></td>
+<td class="topAlign">不显示<b>Cancel</b>按钮。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.CancelButtonOnLeft</tt></td>
+<td class="topAlign"><tt>0x00000400</tt></td>
+<td class="topAlign">把<b>Cancel</b>上的左按钮<b>Back</b>（而不是右侧<b>Finish</b> or
+<b>Next</b>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.HaveHelpButton</tt></td>
+<td class="topAlign"><tt>0x00000800</tt></td>
+<td class="topAlign">显示<b>Help</b>按钮。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.HelpButtonOnRight</tt></td>
+<td class="topAlign"><tt>0x00001000</tt></td>
+<td class="topAlign">把<b>Help</b>上的按键布局（而不是在最左侧）最右边的按钮。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.HaveCustomButton1</tt></td>
+<td class="topAlign"><tt>0x00002000</tt></td>
+<td class="topAlign">显示的第一个用户自定义按钮（<a href="qwizard.html#WizardButton-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardButton-enum">CustomButton1</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.HaveCustomButton2</tt></td>
+<td class="topAlign"><tt>0x00004000</tt></td>
+<td class="topAlign">显示第二个用户自定义按钮（<a href="qwizard.html#WizardButton-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardButton-enum">CustomButton2</a>） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.HaveCustomButton3</tt></td>
+<td class="topAlign"><tt>0x00008000</tt></td>
+<td class="topAlign">显示第三个用户自定义按钮（<a href="qwizard.html#WizardButton-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardButton-enum">CustomButton3</a>） 。</td>
+</tr>
+</table>
+<p>该WizardOptions类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cWizardOption\u003e 。它存储WizardOption值的或组合。</p>
+<p><b>See also</b> <a href="qwizard.html#options-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#options-prop">setOptions</a>（ ）<a href="qwizard.html#setOption" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setOption">setOption</a>（）和<a href="qwizard.html#testOption" tppabs="http://pyqt4doc.appspot.com/qwizard.html#testOption">testOption</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="WizardPixmap-enum"></a>QWizard.WizardPixmap</h3>
+<p>该枚举指定可以与一个页面相关联的像素图。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.WatermarkPixmap</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">上一个左侧的高像素图<a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">ClassicStyle</a> or <a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">ModernStyle</a>页面</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.LogoPixmap</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">右侧的小像素图<a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">ClassicStyle</a> or
+<a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">ModernStyle</a>页头</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.BannerPixmap</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">佔据的背景像素图<a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">ModernStyle</a>页头</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.BackgroundPixmap</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">佔据的背景像素图<a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">MacStyle</a>巫师</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qwizard.html#setPixmap" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setPixmap">setPixmap</a>（ ）<a href="qwizardpage.html#setPixmap" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#setPixmap">QWizardPage.setPixmap</a>（）和<a href="qwizard.html#elements-of-a-wizard-page" tppabs="http://pyqt4doc.appspot.com/qwizard.html#elements-of-a-wizard-page">Elements of a
+Wizard Page</a>。</p>
+
+
+<h3 class="fn">
+<a name="WizardStyle-enum"></a>QWizard.WizardStyle</h3>
+<p>此枚举指定所支持的不同的外观<a href="qwizard.html" tppabs="http://pyqt4doc.appspot.com/qwizard.html">QWizard</a>。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.ClassicStyle</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">经典的Windows外观</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.ModernStyle</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">现代的Windows外观</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.MacStyle</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">的Mac OS X的外观</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QWizard.AeroStyle</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">Windows Aero的外观</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qwizard.html#wizardStyle-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#wizardStyle-prop">setWizardStyle</a>（ ）<a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">WizardOption</a>和<a href="qwizard.html#wizard-look-and-feel" tppabs="http://pyqt4doc.appspot.com/qwizard.html#wizard-look-and-feel">Wizard Look and Feel</a>。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QWizard"></a>QWizard.__init__ (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-windowflags.html">Qt.WindowFlags</a> <i>flags</i> = 0)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个向导给定的<i>parent</i>和窗口<i>flags</i>。</p>
+<p><b>See also</b> <a href="qobject.html#parent" tppabs="http://pyqt4doc.appspot.com/qobject.html#parent">parent</a>（）和<a href="qwidget.html#windowFlags-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#windowFlags-prop">windowFlags</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addPage"></a>int QWizard.addPage (<i>self</i>, <a href="qwizardpage.html" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html">QWizardPage</a> <i>page</i>)</h3>
+<p>该<i>page</i>说法有它的所有权转移给Qt的。</p>
+<p>将给定<i>page</i>精灵，并返回该页面的ID 。</p>
+<p>该ID是保证比任何其他大的ID<a href="qwizard.html" tppabs="http://pyqt4doc.appspot.com/qwizard.html">QWizard</a>到目前为止。</p>
+<p><b>See also</b> <a href="qwizard.html#setPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setPage">setPage</a>（ ）<a href="qwizard.html#page" tppabs="http://pyqt4doc.appspot.com/qwizard.html#page">page</a>（）和<a href="qwizard.html#pageAdded" tppabs="http://pyqt4doc.appspot.com/qwizard.html#pageAdded">pageAdded</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="back"></a>QWizard.back (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void back()</tt>。</p>
+<p>返回到前一个页面。</p>
+<p>这相当于按下<b>Back</b>按钮。</p>
+<p><b>See also</b> <a href="qwizard.html#next" tppabs="http://pyqt4doc.appspot.com/qwizard.html#next">next</a>（ ）<a href="qdialog.html#accept" tppabs="http://pyqt4doc.appspot.com/qdialog.html#accept">accept</a>（ ）<a href="qdialog.html#reject" tppabs="http://pyqt4doc.appspot.com/qdialog.html#reject">reject</a>（）和<a href="qwizard.html#restart" tppabs="http://pyqt4doc.appspot.com/qwizard.html#restart">restart</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="button"></a><a href="qabstractbutton.html" tppabs="http://pyqt4doc.appspot.com/qabstractbutton.html">QAbstractButton</a> QWizard.button (<i>self</i>, <a href="qwizard.html#WizardButton-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardButton-enum">WizardButton</a> <i>which</i>)</h3>
+<p>返回对应于角色的按钮<i>which</i>。</p>
+<p><b>See also</b> <a href="qwizard.html#setButton" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setButton">setButton</a>（）和<a href="qwizard.html#setButtonText" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setButtonText">setButtonText</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="buttonText"></a>QString QWizard.buttonText (<i>self</i>, <a href="qwizard.html#WizardButton-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardButton-enum">WizardButton</a> <i>which</i>)</h3>
+<p>按钮返回文本<i>which</i>。</p>
+<p>如果使用的是文本有奔集<a href="qwizard.html#setButtonText" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setButtonText">setButtonText</a>（ ） ，则返回该文本。</p>
+<p>默认情况下，按钮上的文本取决于<a href="qwizard.html#wizardStyle-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#wizardStyle-prop">wizardStyle</a>。例如，在Mac OS X中，<b>Next</b>按钮被称为<b>Continue</b>。</p>
+<p><b>See also</b> <a href="qwizard.html#button" tppabs="http://pyqt4doc.appspot.com/qwizard.html#button">button</a>（ ）<a href="qwizard.html#setButton" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setButton">setButton</a>（ ）<a href="qwizard.html#setButtonText" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setButtonText">setButtonText</a>（ ）<a href="qwizardpage.html#buttonText" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#buttonText">QWizardPage.buttonText</a>（）和<a href="qwizardpage.html#setButtonText" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#setButtonText">QWizardPage.setButtonText</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="cleanupPage"></a>QWizard.cleanupPage (<i>self</i>, int <i>id</i>)</h3>
+<p>这个虚函数被调用<a href="qwizard.html" tppabs="http://pyqt4doc.appspot.com/qwizard.html">QWizard</a>清理页面<i>id</i>用户通过点击它离开之前<b>Back</b>（除非<a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">QWizard.IndependentPages</a>选项设置） 。</p>
+<p>默认实现调用<a href="qwizardpage.html#cleanupPage" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#cleanupPage">QWizardPage.cleanupPage</a>（ ）页（<i>id</i>） 。</p>
+<p><b>See also</b> <a href="qwizardpage.html#cleanupPage" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#cleanupPage">QWizardPage.cleanupPage</a>（）和<a href="qwizard.html#initializePage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#initializePage">initializePage</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentId"></a>int QWizard.currentId (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="currentPage"></a><a href="qwizardpage.html" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html">QWizardPage</a> QWizard.currentPage (<i>self</i>)</h3>
+<p>返回一个指针，指向当前页面，或者0，如果没有当前页面（例如，向导会显示之前） 。</p>
+<p>这等同于调用页面（<a href="qwizard.html#currentId-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#currentId-prop">currentId</a>（））。</p>
+<p><b>See also</b> <a href="qwizard.html#page" tppabs="http://pyqt4doc.appspot.com/qwizard.html#page">page</a>（ ）<a href="qwizard.html#currentId-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#currentId-prop">currentId</a>（）和<a href="qwizard.html#restart" tppabs="http://pyqt4doc.appspot.com/qwizard.html#restart">restart</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="done"></a>QWizard.done (<i>self</i>, int <i>result</i>)</h3>
+<p>从重新实现<a href="qdialog.html#done" tppabs="http://pyqt4doc.appspot.com/qdialog.html#done">QDialog.done</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="event"></a>bool QWizard.event (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">QObject.event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="field"></a>QVariant QWizard.field (<i>self</i>, QString <i>name</i>)</h3>
+<p>返回字段的所谓的值<i>name</i>。</p>
+<p>此功能可用于访问向导的任何页面上的字段。</p>
+<p><b>See also</b> <a href="qwizardpage.html#registerField" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#registerField">QWizardPage.registerField</a>（ ）<a href="qwizardpage.html#field" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#field">QWizardPage.field</a>（）和<a href="qwizard.html#setField" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setField">setField</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasVisitedPage"></a>bool QWizard.hasVisitedPage (<i>self</i>, int <i>id</i>)</h3>
+<p>如果页面历史记录中包含页面，则返回True<i>id</i>否则，返回False 。</p>
+<p>Pressing <b>Back</b>当前页面标记为“未访问”了。</p>
+<p><b>See also</b> <a href="qwizard.html#visitedPages" tppabs="http://pyqt4doc.appspot.com/qwizard.html#visitedPages">visitedPages</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="initializePage"></a>QWizard.initializePage (<i>self</i>, int <i>id</i>)</h3>
+<p>这个虚函数被调用<a href="qwizard.html" tppabs="http://pyqt4doc.appspot.com/qwizard.html">QWizard</a>准备一页<i>id</i>它表明无论是作为一个结果之前<a href="qwizard.html#restart" tppabs="http://pyqt4doc.appspot.com/qwizard.html#restart">QWizard.restart</a>（）被调用时，或者当用户点击的结果<b>Next</b>。 （然而，如果<a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">QWizard.IndependentPages</a>选项设置，此功能只在第一次调用的页面显示。 ）</p>
+<p>通过重新实现这个功能，可以确保基于前几页信息页面的栏已正确初始化。</p>
+<p>默认实现调用<a href="qwizardpage.html#initializePage" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#initializePage">QWizardPage.initializePage</a>（ ）页（<i>id</i>） 。</p>
+<p><b>See also</b> <a href="qwizardpage.html#initializePage" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#initializePage">QWizardPage.initializePage</a>（）和<a href="qwizard.html#cleanupPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#cleanupPage">cleanupPage</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="next"></a>QWizard.next (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void next()</tt>。</p>
+<p>前进到下一个页面。</p>
+<p>这相当于按下<b>Next</b> or <b>Commit</b>按钮。</p>
+<p><b>See also</b> <a href="qwizard.html#nextId" tppabs="http://pyqt4doc.appspot.com/qwizard.html#nextId">nextId</a>（ ）<a href="qwizard.html#back" tppabs="http://pyqt4doc.appspot.com/qwizard.html#back">back</a>（ ）<a href="qdialog.html#accept" tppabs="http://pyqt4doc.appspot.com/qdialog.html#accept">accept</a>（ ）<a href="qdialog.html#reject" tppabs="http://pyqt4doc.appspot.com/qdialog.html#reject">reject</a>（）和<a href="qwizard.html#restart" tppabs="http://pyqt4doc.appspot.com/qwizard.html#restart">restart</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="nextId"></a>int QWizard.nextId (<i>self</i>)</h3>
+<p>这个虚函数被调用<a href="qwizard.html" tppabs="http://pyqt4doc.appspot.com/qwizard.html">QWizard</a>找出当用户点击显示哪些页面<b>Next</b>按钮。</p>
+<p>返回值是下一个页面的ID ，或-1，如果没有页面如下。</p>
+<p>默认实现调用<a href="qwizardpage.html#nextId" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#nextId">QWizardPage.nextId</a>（）对<a href="qwizard.html#currentPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#currentPage">currentPage</a>（ ） 。</p>
+<p>通过重新实现此功能，您可以指定一个动态的页面顺序。</p>
+<p><b>See also</b> <a href="qwizardpage.html#nextId" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#nextId">QWizardPage.nextId</a>（）和<a href="qwizard.html#currentPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#currentPage">currentPage</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="options"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qwizard-wizardoptions.html">WizardOptions</a> QWizard.options (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="page"></a><a href="qwizardpage.html" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html">QWizardPage</a> QWizard.page (<i>self</i>, int <i>id</i>)</h3>
+<p>用给定的返回页面<i>id</i>或0，如果不存在这样的页面。</p>
+<p><b>See also</b> <a href="qwizard.html#addPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#addPage">addPage</a>（）和<a href="qwizard.html#setPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setPage">setPage</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="pageIds"></a>list-of-int QWizard.pageIds (<i>self</i>)</h3>
+<p>返回页ID的列表。</p>
+<p>此功能被引入Qt的4.5 。</p>
+
+
+<h3 class="fn">
+<a name="paintEvent"></a>QWizard.paintEvent (<i>self</i>, <a href="qpaintevent.html" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html">QPaintEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#paintEvent">QWidget.paintEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="pixmap"></a><a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a> QWizard.pixmap (<i>self</i>, <a href="qwizard.html#WizardPixmap-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardPixmap-enum">WizardPixmap</a> <i>which</i>)</h3>
+<p>返回角色像素图组<i>which</i>。</p>
+<p>默认情况下，设置唯一的像素图是<a href="qwizard.html#WizardPixmap-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardPixmap-enum">BackgroundPixmap</a>在Mac OS X。</p>
+<p><b>See also</b> <a href="qwizard.html#setPixmap" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setPixmap">setPixmap</a>（ ）<a href="qwizardpage.html#pixmap" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#pixmap">QWizardPage.pixmap</a>（）和<a href="qwizard.html#elements-of-a-wizard-page" tppabs="http://pyqt4doc.appspot.com/qwizard.html#elements-of-a-wizard-page">Elements of a Wizard
+Page</a>。</p>
+
+
+<h3 class="fn">
+<a name="removePage"></a>QWizard.removePage (<i>self</i>, int <i>id</i>)</h3>
+<p>删除的页面与给定<i>id</i>。<a href="qwizard.html#cleanupPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#cleanupPage">cleanupPage</a>（）将在必要时调用。</p>
+<p><b>Note:</b>删除页面可能影响的价值<a href="qwizard.html#startId-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#startId-prop">startId</a>属性。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qwizard.html#addPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#addPage">addPage</a>（ ）<a href="qwizard.html#setPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setPage">setPage</a>（ ）<a href="qwizard.html#pageRemoved" tppabs="http://pyqt4doc.appspot.com/qwizard.html#pageRemoved">pageRemoved</a>（）和<a href="qwizard.html#startId-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#startId-prop">startId</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="resizeEvent"></a>QWizard.resizeEvent (<i>self</i>, <a href="qresizeevent.html" tppabs="http://pyqt4doc.appspot.com/qresizeevent.html">QResizeEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#resizeEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#resizeEvent">QWidget.resizeEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="restart"></a>QWizard.restart (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void restart()</tt>。</p>
+<p>重新启动向导在开始页面。这个函数被自动调用该向导显示时。</p>
+<p><b>See also</b> <a href="qwizard.html#startId-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#startId-prop">startId</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setButton"></a>QWizard.setButton (<i>self</i>, <a href="qwizard.html#WizardButton-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardButton-enum">WizardButton</a> <i>which</i>, <a href="qabstractbutton.html" tppabs="http://pyqt4doc.appspot.com/qabstractbutton.html">QAbstractButton</a> <i>button</i>)</h3>
+<p>该<i>button</i>说法有它的所有权转移给Qt的。</p>
+<p>设置对应的角色按钮<i>which</i>至<i>button</i>。</p>
+<p>要添加额外的按钮向导（例如，一<b>Print</b>钮），一个方法是调用SET按钮（ ）与<a href="qwizard.html#WizardButton-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardButton-enum">CustomButton1</a>至<a href="qwizard.html#WizardButton-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardButton-enum">CustomButton3</a>，并使用make可见的按钮<a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">HaveCustomButton1</a>至<a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">HaveCustomButton3</a>选项。</p>
+<p><b>See also</b> <a href="qwizard.html#button" tppabs="http://pyqt4doc.appspot.com/qwizard.html#button">button</a>（ ）<a href="qwizard.html#setButtonText" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setButtonText">setButtonText</a>（ ）<a href="qwizard.html#setButtonLayout" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setButtonLayout">setButtonLayout</a>（）和<a href="qwizard.html#options-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#options-prop">options</a>。</p>
+
+
+<h3 class="fn">
+<a name="setButtonLayout"></a>QWizard.setButtonLayout (<i>self</i>, list-of-QWizard.WizardButton <i>layout</i>)</h3>
+<p>设置在该按钮所显示的顺序<i>layout</i>，其中<i>layout</i>是的列表<a href="qwizard.html#WizardButton-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardButton-enum">WizardButton</a>秒。</p>
+<p>默认的布局取决于选项（例如，是否<a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">HelpButtonOnRight</a>）被设置。如果你需要比更多的控制按钮的布局你可以调用这个函数是什么<a href="qwizard.html#options-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#options-prop">options</a>已经提供。</p>
+<p>您可以使用指定的布局横向延伸<a href="qwizard.html#WizardButton-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardButton-enum">Stretch</a>。</p>
+<p>例如：</p>
+<pre class="cpp">
+ MyWizard<span class="operator">.</span>MyWizard(<span class="type"><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a></span> <span class="operator">*</span>parent)
+     : <span class="type"><a href="qwizard.html" tppabs="http://pyqt4doc.appspot.com/qwizard.html">QWizard</a></span>(parent)
+ {
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+     <span class="type"><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qlist.html">QList</a></span><span class="operator">&lt;</span><span class="type"><a href="qwizard.html" tppabs="http://pyqt4doc.appspot.com/qwizard.html">QWizard</a></span><span class="operator">.</span>WizardButton<span class="operator">&gt;</span> layout;
+     layout <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="type"><a href="qwizard.html" tppabs="http://pyqt4doc.appspot.com/qwizard.html">QWizard</a></span><span class="operator">.</span>Stretch <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="type"><a href="qwizard.html" tppabs="http://pyqt4doc.appspot.com/qwizard.html">QWizard</a></span><span class="operator">.</span>BackButton <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="type"><a href="qwizard.html" tppabs="http://pyqt4doc.appspot.com/qwizard.html">QWizard</a></span><span class="operator">.</span>CancelButton
+            <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="type"><a href="qwizard.html" tppabs="http://pyqt4doc.appspot.com/qwizard.html">QWizard</a></span><span class="operator">.</span>NextButton <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="type"><a href="qwizard.html" tppabs="http://pyqt4doc.appspot.com/qwizard.html">QWizard</a></span><span class="operator">.</span>FinishButton;
+     setButtonLayout(layout);
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ }
+</pre>
+<p><b>See also</b> <a href="qwizard.html#setButton" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setButton">setButton</a>（ ）<a href="qwizard.html#setButtonText" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setButtonText">setButtonText</a>（）和<a href="qwizard.html#options-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#options-prop">setOptions</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setButtonText"></a>QWizard.setButtonText (<i>self</i>, <a href="qwizard.html#WizardButton-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardButton-enum">WizardButton</a> <i>which</i>, QString <i>text</i>)</h3>
+<p>按钮设置文本<i>which</i>要<i>text</i>。</p>
+<p>默认情况下，按钮上的文本取决于<a href="qwizard.html#wizardStyle-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#wizardStyle-prop">wizardStyle</a>。例如，在Mac OS X中，<b>Next</b>按钮被称为<b>Continue</b>。</p>
+<p>要添加额外的按钮向导（例如，一<b>Print</b>钮），一个方法是调用setButtonText （ ）与<a href="qwizard.html#WizardButton-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardButton-enum">CustomButton1</a>，<a href="qwizard.html#WizardButton-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardButton-enum">CustomButton2</a>或<a href="qwizard.html#WizardButton-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardButton-enum">CustomButton3</a>设定自己的文字，并使用make可见的按钮<a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">HaveCustomButton1</a>，<a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">HaveCustomButton2</a>和/或<a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">HaveCustomButton3</a>选项。</p>
+<p>在每个页面的基础上使用按钮的文本也可以设置<a href="qwizardpage.html#setButtonText" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#setButtonText">QWizardPage.setButtonText</a>（ ） 。</p>
+<p><b>See also</b> <a href="qwizard.html#buttonText" tppabs="http://pyqt4doc.appspot.com/qwizard.html#buttonText">buttonText</a>（ ）<a href="qwizard.html#setButton" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setButton">setButton</a>（ ）<a href="qwizard.html#button" tppabs="http://pyqt4doc.appspot.com/qwizard.html#button">button</a>（ ）<a href="qwizard.html#setButtonLayout" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setButtonLayout">setButtonLayout</a>（ ）<a href="qwizard.html#options-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#options-prop">setOptions</a>（）和<a href="qwizardpage.html#setButtonText" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#setButtonText">QWizardPage.setButtonText</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setDefaultProperty"></a>QWizard.setDefaultProperty (<i>self</i>, str <i>className</i>, str <i>property</i>, str <i>changedSignal</i>)</h3>
+<p>设置为默认属性<i>className</i>要<i>property</i>和相关联的变化信号是<i>changedSignal</i>。</p>
+<p>默认属性时使用的一个实例<i>className</i>（它的一个子类或）传递给<a href="qwizardpage.html#registerField" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#registerField">QWizardPage.registerField</a>（ ），并指定属性。</p>
+<p><a href="qwizard.html" tppabs="http://pyqt4doc.appspot.com/qwizard.html">QWizard</a>知道最常见的Qt部件。对于这些（或其子类） ，你不需要指定<i>property</i>或<i>changedSignal</i>。下表列出了这些小部件：</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Widget</th>
+<th>Property</th>
+<th>Change Notification Signal</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td><a href="qabstractbutton.html" tppabs="http://pyqt4doc.appspot.com/qabstractbutton.html">QAbstractButton</a></td>
+<td>bool <a href="qabstractbutton.html#checked-prop" tppabs="http://pyqt4doc.appspot.com/qabstractbutton.html#checked-prop">checked</a>
+</td>
+<td><a href="qabstractbutton.html#toggled" tppabs="http://pyqt4doc.appspot.com/qabstractbutton.html#toggled">toggled()</a></td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qabstractslider.html" tppabs="http://pyqt4doc.appspot.com/qabstractslider.html">QAbstractSlider</a></td>
+<td>int <a href="qabstractslider.html#value-prop" tppabs="http://pyqt4doc.appspot.com/qabstractslider.html#value-prop">value</a>
+</td>
+<td><a href="qabstractslider.html#valueChanged" tppabs="http://pyqt4doc.appspot.com/qabstractslider.html#valueChanged">valueChanged()</a></td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qcombobox.html" tppabs="http://pyqt4doc.appspot.com/qcombobox.html">QComboBox</a></td>
+<td>int <a href="qcombobox.html#currentIndex-prop" tppabs="http://pyqt4doc.appspot.com/qcombobox.html#currentIndex-prop">currentIndex</a>
+</td>
+<td><a href="qcombobox.html#currentIndexChanged" tppabs="http://pyqt4doc.appspot.com/qcombobox.html#currentIndexChanged">currentIndexChanged()</a></td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qdatetimeedit.html" tppabs="http://pyqt4doc.appspot.com/qdatetimeedit.html">QDateTimeEdit</a></td>
+<td>
+<a href="qdatetime.html" tppabs="http://pyqt4doc.appspot.com/qdatetime.html">QDateTime</a> <a href="qdatetimeedit.html#dateTime-prop" tppabs="http://pyqt4doc.appspot.com/qdatetimeedit.html#dateTime-prop">dateTime</a>
+</td>
+<td><a href="qdatetimeedit.html#dateTimeChanged" tppabs="http://pyqt4doc.appspot.com/qdatetimeedit.html#dateTimeChanged">dateTimeChanged()</a></td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qlineedit.html" tppabs="http://pyqt4doc.appspot.com/qlineedit.html">QLineEdit</a></td>
+<td>
+<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a> <a href="qlineedit.html#text-prop" tppabs="http://pyqt4doc.appspot.com/qlineedit.html#text-prop">text</a>
+</td>
+<td><a href="qlineedit.html#textChanged" tppabs="http://pyqt4doc.appspot.com/qlineedit.html#textChanged">textChanged()</a></td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qlistwidget.html" tppabs="http://pyqt4doc.appspot.com/qlistwidget.html">QListWidget</a></td>
+<td>int <a href="qlistwidget.html#currentRow-prop" tppabs="http://pyqt4doc.appspot.com/qlistwidget.html#currentRow-prop">currentRow</a>
+</td>
+<td><a href="qlistwidget.html#currentRowChanged" tppabs="http://pyqt4doc.appspot.com/qlistwidget.html#currentRowChanged">currentRowChanged()</a></td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qspinbox.html" tppabs="http://pyqt4doc.appspot.com/qspinbox.html">QSpinBox</a></td>
+<td>int <a href="qspinbox.html#value-prop" tppabs="http://pyqt4doc.appspot.com/qspinbox.html#value-prop">value</a>
+</td>
+<td><a href="qspinbox.html#valueChanged" tppabs="http://pyqt4doc.appspot.com/qspinbox.html#valueChanged">valueChanged()</a></td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qwizardpage.html#registerField" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#registerField">QWizardPage.registerField</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setField"></a>QWizard.setField (<i>self</i>, QString <i>name</i>, QVariant <i>value</i>)</h3>
+<p>设置字段中称为值<i>name</i>至<i>value</i>。</p>
+<p>此功能可用于在向导的任何页面上设置的字段。</p>
+<p><b>See also</b> <a href="qwizardpage.html#registerField" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#registerField">QWizardPage.registerField</a>（ ）<a href="qwizardpage.html#setField" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#setField">QWizardPage.setField</a>（）和<a href="qwizard.html#field" tppabs="http://pyqt4doc.appspot.com/qwizard.html#field">field</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setOption"></a>QWizard.setOption (<i>self</i>, <a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">WizardOption</a> <i>option</i>, bool <i>on</i> = True)</h3>
+<p>设置给定<i>option</i>被启用，如果<i>on</i>是真的，否则，清除给定的<i>option</i>。</p>
+<p><b>See also</b> <a href="qwizard.html#options-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#options-prop">options</a>，<a href="qwizard.html#testOption" tppabs="http://pyqt4doc.appspot.com/qwizard.html#testOption">testOption</a>（）和<a href="qwizard.html#wizardStyle-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#wizardStyle-prop">setWizardStyle</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setOptions"></a>QWizard.setOptions (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qwizard-wizardoptions.html">WizardOptions</a> <i>options</i>)</h3>
+<h3 class="fn">
+<a name="setPage"></a>QWizard.setPage (<i>self</i>, int <i>id</i>, <a href="qwizardpage.html" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html">QWizardPage</a> <i>page</i>)</h3>
+<p>该<i>page</i>说法有它的所有权转移给Qt的。</p>
+<p>将给定<i>page</i>与给定的精灵<i>id</i>。</p>
+<p><b>Note:</b>添加页面可能影响的价值<a href="qwizard.html#startId-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#startId-prop">startId</a>在财产的情况下它是没有显式设置。</p>
+<p><b>See also</b> <a href="qwizard.html#addPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#addPage">addPage</a>（ ）<a href="qwizard.html#page" tppabs="http://pyqt4doc.appspot.com/qwizard.html#page">page</a>（）和<a href="qwizard.html#pageAdded" tppabs="http://pyqt4doc.appspot.com/qwizard.html#pageAdded">pageAdded</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPixmap"></a>QWizard.setPixmap (<i>self</i>, <a href="qwizard.html#WizardPixmap-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardPixmap-enum">WizardPixmap</a> <i>which</i>, <a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a> <i>pixmap</i>)</h3>
+<p>设置像素图的作用<i>which</i>至<i>pixmap</i>。</p>
+<p>该像素图所使用的<a href="qwizard.html" tppabs="http://pyqt4doc.appspot.com/qwizard.html">QWizard</a>显示一个页面时。其中像素图实际使用依赖于<a href="qwizard.html#wizard-look-and-feel" tppabs="http://pyqt4doc.appspot.com/qwizard.html#wizard-look-and-feel">wizard style</a>。</p>
+<p>像素图，也可以使用一个特定的页面设置<a href="qwizardpage.html#setPixmap" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#setPixmap">QWizardPage.setPixmap</a>（ ） 。</p>
+<p><b>See also</b> <a href="qwizard.html#pixmap" tppabs="http://pyqt4doc.appspot.com/qwizard.html#pixmap">pixmap</a>（ ）<a href="qwizardpage.html#setPixmap" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#setPixmap">QWizardPage.setPixmap</a>（）和<a href="qwizard.html#elements-of-a-wizard-page" tppabs="http://pyqt4doc.appspot.com/qwizard.html#elements-of-a-wizard-page">Elements of a
+Wizard Page</a>。</p>
+
+
+<h3 class="fn">
+<a name="setSideWidget"></a>QWizard.setSideWidget (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>widget</i>)</h3>
+<p>该<i>widget</i>说法有它的所有权转移给Qt的。</p>
+<p>设置给定<i>widget</i>要显示在该向导的左侧。对于使用样式<a href="qwizard.html#WizardPixmap-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardPixmap-enum">WatermarkPixmap</a>（<a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">ClassicStyle</a>和<a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">ModernStyle</a>）侧部件上显示水印的顶部，对于其它样式或不设置水印当侧部件上显示该向导的左侧。</p>
+<p>传递0表示无副作用小部件。</p>
+<p>当<i>widget</i>是不是0精灵reparents它。</p>
+<p>任何以前的侧部件被隐藏。</p>
+<p>您可致电setSideWidget （ ）使用相同的部件在不同的时间。</p>
+<p>这里设置的所有部件将由向导时，它被摧毁，除非你单独reparent小部件设置一些对方部件（或0 ）后删除。</p>
+<p>默认情况下，无副作用小部件存在。</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qwizard.html#sideWidget" tppabs="http://pyqt4doc.appspot.com/qwizard.html#sideWidget">sideWidget</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setStartId"></a>QWizard.setStartId (<i>self</i>, int <i>id</i>)</h3>
+<h3 class="fn">
+<a name="setSubTitleFormat"></a>QWizard.setSubTitleFormat (<i>self</i>, <a href="qt.html#TextFormat-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#TextFormat-enum">Qt.TextFormat</a> <i>format</i>)</h3>
+<h3 class="fn">
+<a name="setTitleFormat"></a>QWizard.setTitleFormat (<i>self</i>, <a href="qt.html#TextFormat-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#TextFormat-enum">Qt.TextFormat</a> <i>format</i>)</h3>
+<h3 class="fn">
+<a name="setVisible"></a>QWizard.setVisible (<i>self</i>, bool <i>visible</i>)</h3>
+<p>从重新实现<a href="qwidget.html#visible-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#visible-prop">QWidget.setVisible</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setWizardStyle"></a>QWizard.setWizardStyle (<i>self</i>, <a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">WizardStyle</a> <i>style</i>)</h3>
+<h3 class="fn">
+<a name="sideWidget"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QWizard.sideWidget (<i>self</i>)</h3>
+<p>返回在向导或0的左侧的小部件。</p>
+<p>默认情况下，无副作用小部件存在。</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qwizard.html#setSideWidget" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setSideWidget">setSideWidget</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sizeHint"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QWizard.sizeHint (<i>self</i>)</h3>
+<p>从重新实现<a href="qwidget.html#sizeHint-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#sizeHint-prop">QWidget.sizeHint</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="startId"></a>int QWizard.startId (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="subTitleFormat"></a><a href="qt.html#TextFormat-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#TextFormat-enum">Qt.TextFormat</a> QWizard.subTitleFormat (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="testOption"></a>bool QWizard.testOption (<i>self</i>, <a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">WizardOption</a> <i>option</i>)</h3>
+<p>返回True如果给定的<i>option</i>被启用，否则返回False 。</p>
+<p><b>See also</b> <a href="qwizard.html#options-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#options-prop">options</a>，<a href="qwizard.html#setOption" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setOption">setOption</a>（）和<a href="qwizard.html#wizardStyle-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#wizardStyle-prop">setWizardStyle</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="titleFormat"></a><a href="qt.html#TextFormat-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#TextFormat-enum">Qt.TextFormat</a> QWizard.titleFormat (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="validateCurrentPage"></a>bool QWizard.validateCurrentPage (<i>self</i>)</h3>
+<p>这个虚函数被调用<a href="qwizard.html" tppabs="http://pyqt4doc.appspot.com/qwizard.html">QWizard</a>当用户点击<b>Next</b> or
+<b>Finish</b>执行一些最后一分钟的验证。如果返回True，则下一个页面显示（或向导完成），否则，在当前页面熬夜。</p>
+<p>默认实现调用<a href="qwizardpage.html#validatePage" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#validatePage">QWizardPage.validatePage</a>（）对<a href="qwizard.html#currentPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#currentPage">currentPage</a>（ ） 。</p>
+<p>如果可能的话，它通常是更好的风格禁用<b>Next</b> or <b>Finish</b>按钮（通过指定<a href="qwizard.html#mandatory-fields" tppabs="http://pyqt4doc.appspot.com/qwizard.html#mandatory-fields">mandatory fields</a>或通过重新实现<a href="qwizardpage.html#isComplete" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#isComplete">QWizardPage.isComplete</a>（ ） ），而不是重新实现validateCurrentPage （ ） 。</p>
+<p><b>See also</b> <a href="qwizardpage.html#validatePage" tppabs="http://pyqt4doc.appspot.com/qwizardpage.html#validatePage">QWizardPage.validatePage</a>（）和<a href="qwizard.html#currentPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#currentPage">currentPage</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="visitedPages"></a>list-of-int QWizard.visitedPages (<i>self</i>)</h3>
+<p>返回浏览过的网页的ID列表，在其中的网页被访问的顺序。</p>
+<p>Pressing <b>Back</b>当前页面标记为“未访问”了。</p>
+<p><b>See also</b> <a href="qwizard.html#hasVisitedPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#hasVisitedPage">hasVisitedPage</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="wizardStyle"></a><a href="qwizard.html#WizardStyle-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardStyle-enum">WizardStyle</a> QWizard.wizardStyle (<i>self</i>)</h3>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="currentIdChanged"></a>void currentIdChanged (int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时，当前页面的变化，与新的当前<i>id</i>。</p>
+<p><b>See also</b> <a href="qwizard.html#currentId-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#currentId-prop">currentId</a>（）和<a href="qwizard.html#currentPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#currentPage">currentPage</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="customButtonClicked"></a>void customButtonClicked (int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当用户点击自定义按钮这个信号被发射。<i>which</i>可以<a href="qwizard.html#WizardButton-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardButton-enum">CustomButton1</a>，<a href="qwizard.html#WizardButton-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardButton-enum">CustomButton2</a>或<a href="qwizard.html#WizardButton-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardButton-enum">CustomButton3</a>。</p>
+<p>默认情况下，显示没有自定义按钮。通话<a href="qwizard.html#setOption" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setOption">setOption</a>（ ）与<a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">HaveCustomButton1</a>，<a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">HaveCustomButton2</a>或<a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">HaveCustomButton3</a>有一个，并使用<a href="qwizard.html#setButtonText" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setButtonText">setButtonText</a>（）或<a href="qwizard.html#setButton" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setButton">setButton</a>（）来配置它。</p>
+<p><b>See also</b> <a href="qwizard.html#helpRequested" tppabs="http://pyqt4doc.appspot.com/qwizard.html#helpRequested">helpRequested</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="helpRequested"></a>void helpRequested ()</h3>
+<p>This is the default overload of this signal.</p>
+<p>当用户点击这个信号被发射的<b>Help</b>按钮。</p>
+<p>缺省情况下，<b>Help</b>显示按钮。调用的SetOption （<a href="qwizard.html#WizardOption-enum" tppabs="http://pyqt4doc.appspot.com/qwizard.html#WizardOption-enum">HaveHelpButton</a>，真）有一个。</p>
+<p>例如：</p>
+<pre class="cpp">
+ LicenseWizard<span class="operator">.</span>LicenseWizard(<span class="type"><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a></span> <span class="operator">*</span>parent)
+     : <span class="type"><a href="qwizard.html" tppabs="http://pyqt4doc.appspot.com/qwizard.html">QWizard</a></span>(parent)
+ {
+     ...
+     setOption(HaveHelpButton<span class="operator">,</span> <span class="keyword">true</span>);
+     connect(<span class="keyword">this</span><span class="operator">,</span> SIGNAL(helpRequested())<span class="operator">,</span> <span class="keyword">this</span><span class="operator">,</span> SLOT(showHelp()));
+     ...
+ }
+
+ <span class="type">void</span> LicenseWizard<span class="operator">.</span>showHelp()
+ {
+     <span class="keyword">static</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> lastHelpMessage;
+
+     <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> message;
+
+     <span class="keyword">switch</span> (currentId()) {
+     <span class="keyword">case</span> Page_Intro:
+         message <span class="operator">=</span> tr(<span class="string">"The decision you make here will affect which page you "</span>
+                      <span class="string">"get to see next."</span>);
+         <span class="keyword">break</span>;
+     ...
+     <span class="keyword">default</span>:
+         message <span class="operator">=</span> tr(<span class="string">"This help is likely not to be of any help."</span>);
+     }
+
+     <span class="type"><a href="qmessagebox.html" tppabs="http://pyqt4doc.appspot.com/qmessagebox.html">QMessageBox</a></span><span class="operator">.</span>information(<span class="keyword">this</span><span class="operator">,</span> tr(<span class="string">"License Wizard Help"</span>)<span class="operator">,</span> message);
+
+ }
+</pre>
+<p><b>See also</b> <a href="qwizard.html#customButtonClicked" tppabs="http://pyqt4doc.appspot.com/qwizard.html#customButtonClicked">customButtonClicked</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="pageAdded"></a>void pageAdded (int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>每当一个页面被添加到向导这个信号被发射。在页面的<i>id</i>作为参数传递。</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qwizard.html#addPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#addPage">addPage</a>（ ）<a href="qwizard.html#setPage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#setPage">setPage</a>（）和<a href="qwizard.html#startId-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#startId-prop">startId</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="pageRemoved"></a>void pageRemoved (int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>每当一个页面被从向导删除这个信号被发射。在页面的<i>id</i>作为参数传递。</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qwizard.html#removePage" tppabs="http://pyqt4doc.appspot.com/qwizard.html#removePage">removePage</a>（）和<a href="qwizard.html#startId-prop" tppabs="http://pyqt4doc.appspot.com/qwizard.html#startId-prop">startId</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

@@ -1,0 +1,658 @@
+﻿<html>
+<head>
+<title>QAbstractFileEngine Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QAbstractFileEngine Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QAbstractFileEngine类提供了访问文件系统的抽象。<a href="#details">More...</a></p>
+
+<p>通过继承<a href="qfsfileengine.html" tppabs="http://pyqt4doc.appspot.com/qfsfileengine.html">QFSFileEngine</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qabstractfileengine.html#FileFlag-enum" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#FileFlag-enum">FileFlag</a></b> { ReadOwnerPerm, WriteOwnerPerm, ExeOwnerPerm, ReadUserPerm, ..., Refresh }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine-fileflags.html">FileFlags</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qabstractfileengine.html#FileName-enum" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#FileName-enum">FileName</a></b> { DefaultName, BaseName, PathName, AbsoluteName, ..., BundleName }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qabstractfileengine.html#FileOwner-enum" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#FileOwner-enum">FileOwner</a></b> { OwnerUser, OwnerGroup }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qabstractfileengine.html#FileTime-enum" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#FileTime-enum">FileTime</a></b> { CreationTime, ModificationTime, AccessTime }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractfileengine.html#QAbstractFileEngine" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#QAbstractFileEngine">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractfileengine.html#atEnd" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#atEnd">atEnd</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QAbstractFileEngineIterator <b><a href="qabstractfileengine.html#beginEntryList" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#beginEntryList">beginEntryList</a></b> (<i>self</i>, QDir.Filters <i>filters</i>, QStringList <i>filterNames</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractfileengine.html#caseSensitive" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#caseSensitive">caseSensitive</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractfileengine.html#close" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#close">close</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractfileengine.html#copy" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#copy">copy</a></b> (<i>self</i>, QString <i>newName</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qabstractfileengine.html#entryList" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#entryList">entryList</a></b> (<i>self</i>, QDir.Filters <i>filters</i>, QStringList <i>filterNames</i>)</li>
+<li>
+<div class="fn"></div>QFile.FileError <b><a href="qabstractfileengine.html#error" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#error">error</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qabstractfileengine.html#errorString" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#errorString">errorString</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>FileFlags <b><a href="qabstractfileengine.html#fileFlags" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#fileFlags">fileFlags</a></b> (<i>self</i>, FileFlags <i>type</i> = QAbstractFileEngine.FileInfoAll)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qabstractfileengine.html#fileName" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#fileName">fileName</a></b> (<i>self</i>, FileName <i>file</i> = QAbstractFileEngine.DefaultName)</li>
+<li>
+<div class="fn"></div>QDateTime <b><a href="qabstractfileengine.html#fileTime" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#fileTime">fileTime</a></b> (<i>self</i>, FileTime <i>time</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractfileengine.html#flush" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#flush">flush</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractfileengine.html#handle" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#handle">handle</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractfileengine.html#isRelativePath" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#isRelativePath">isRelativePath</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractfileengine.html#isSequential" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#isSequential">isSequential</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractfileengine.html#link" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#link">link</a></b> (<i>self</i>, QString <i>newName</i>)</li>
+<li>
+<div class="fn"></div>sip.voidptr <b><a href="qabstractfileengine.html#map" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#map">map</a></b> (<i>self</i>, int <i>offset</i>, int <i>size</i>, QFile.MemoryMapFlags <i>flags</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractfileengine.html#mkdir" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#mkdir">mkdir</a></b> (<i>self</i>, QString <i>dirName</i>, bool <i>createParentDirectories</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractfileengine.html#open" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#open">open</a></b> (<i>self</i>, QIODevice.OpenMode <i>openMode</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qabstractfileengine.html#owner" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#owner">owner</a></b> (<i>self</i>, FileOwner)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractfileengine.html#ownerId" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#ownerId">ownerId</a></b> (<i>self</i>, FileOwner)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractfileengine.html#pos" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#pos">pos</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qabstractfileengine.html#read" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#read">read</a></b> (<i>self</i>, int <i>maxlen</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qabstractfileengine.html#readLine" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#readLine">readLine</a></b> (<i>self</i>, int <i>maxlen</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractfileengine.html#remove" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#remove">remove</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractfileengine.html#rename" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#rename">rename</a></b> (<i>self</i>, QString <i>newName</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractfileengine.html#rmdir" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#rmdir">rmdir</a></b> (<i>self</i>, QString <i>dirName</i>, bool <i>recurseParentDirectories</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractfileengine.html#seek" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#seek">seek</a></b> (<i>self</i>, int <i>pos</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractfileengine.html#setError" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#setError">setError</a></b> (<i>self</i>, QFile.FileError <i>error</i>, QString <i>str</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractfileengine.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#setFileName">setFileName</a></b> (<i>self</i>, QString <i>file</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractfileengine.html#setPermissions" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#setPermissions">setPermissions</a></b> (<i>self</i>, int <i>perms</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractfileengine.html#setSize" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#setSize">setSize</a></b> (<i>self</i>, int <i>size</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractfileengine.html#size" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#size">size</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractfileengine.html#unmap" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#unmap">unmap</a></b> (<i>self</i>, sip.voidptr <i>ptr</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qabstractfileengine.html#write" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#write">write</a></b> (<i>self</i>, str <i>data</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul><li>
+<div class="fn"></div>QAbstractFileEngine <b><a href="qabstractfileengine.html#create" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#create">create</a></b> (QString <i>fileName</i>)</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QAbstractFileEngine类提供了访问文件系统的抽象。</p>
+<p>该<a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a>，<a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a>和<a href="qfileinfo.html" tppabs="http://pyqt4doc.appspot.com/qfileinfo.html">QFileInfo</a>类中的所有使用内部一个QAbstractFileEngine的。如果您创建自己的QAbstractFileEngine子类（和使用Qt创建一个注册它<a href="qabstractfileenginehandler.html" tppabs="http://pyqt4doc.appspot.com/qabstractfileenginehandler.html">QAbstractFileEngineHandler</a>子类） ，当路径是指你的文件引擎处理您的文件引擎将被使用。</p>
+<p>一个QAbstractFileEngine是指一个文件或一个目录。如果所指的是一个文件时，<a href="qabstractfileengine.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#setFileName">setFileName</a>（ ）<a href="qabstractfileengine.html#rename" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#rename">rename</a>（）和<a href="qabstractfileengine.html#remove" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#remove">remove</a>（）函数是适用的。如果所指的是一个目录<a href="qabstractfileengine.html#mkdir" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#mkdir">mkdir</a>（ ）<a href="qabstractfileengine.html#rmdir" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#rmdir">rmdir</a>（）和<a href="qabstractfileengine.html#entryList" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#entryList">entryList</a>（）函数是适用的。在所有情况下<a href="qabstractfileengine.html#caseSensitive" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#caseSensitive">caseSensitive</a>（ ）<a href="qabstractfileengine.html#isRelativePath" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#isRelativePath">isRelativePath</a>（ ）<a href="qabstractfileengine.html#fileFlags" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#fileFlags">fileFlags</a>（ ）<a href="qabstractfileengine.html#ownerId" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#ownerId">ownerId</a>（ ）<a href="qabstractfileengine.html#owner" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#owner">owner</a>（）和<a href="qabstractfileengine.html#fileTime" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#fileTime">fileTime</a>（）函数是适用的。</p>
+<p>一个QAbstractFileEngine子类可以被创建来做到同步网络I / O的文件系统操作，本地文件系统操作，或作为一个系统资源的访问基于文件的资源。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="FileFlag-enum"></a>QAbstractFileEngine.FileFlag</h3>
+<p>的权限和类型的文件，适于中用OR在一起。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractFileEngine.ReadOwnerPerm</tt>
+</td>
+<td class="topAlign"><tt>0x4000</tt></td>
+<td class="topAlign">该文件的所有者有权读取它。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractFileEngine.WriteOwnerPerm</tt>
+</td>
+<td class="topAlign"><tt>0x2000</tt></td>
+<td class="topAlign">该文件的所有者具有写权限了。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractFileEngine.ExeOwnerPerm</tt>
+</td>
+<td class="topAlign"><tt>0x1000</tt></td>
+<td class="topAlign">该文件的所有者有权执行它的权限。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractFileEngine.ReadUserPerm</tt>
+</td>
+<td class="topAlign"><tt>0x0400</tt></td>
+<td class="topAlign">当前用户有权限读取该文件。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractFileEngine.WriteUserPerm</tt>
+</td>
+<td class="topAlign"><tt>0x0200</tt></td>
+<td class="topAlign">当前用户有权限写入到文件中。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractFileEngine.ExeUserPerm</tt></td>
+<td class="topAlign"><tt>0x0100</tt></td>
+<td class="topAlign">当前用户拥有执行该文件的权限。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractFileEngine.ReadGroupPerm</tt>
+</td>
+<td class="topAlign"><tt>0x0040</tt></td>
+<td class="topAlign">当前用户组的成员有权限读取的文件。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractFileEngine.WriteGroupPerm</tt>
+</td>
+<td class="topAlign"><tt>0x0020</tt></td>
+<td class="topAlign">当前用户组的成员具有写权限的文件。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractFileEngine.ExeGroupPerm</tt>
+</td>
+<td class="topAlign"><tt>0x0010</tt></td>
+<td class="topAlign">当前用户组的成员具有执行该文件的权限。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractFileEngine.ReadOtherPerm</tt>
+</td>
+<td class="topAlign"><tt>0x0004</tt></td>
+<td class="topAlign">所有用户有权限读取的文件。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractFileEngine.WriteOtherPerm</tt>
+</td>
+<td class="topAlign"><tt>0x0002</tt></td>
+<td class="topAlign">所有用户都具有写权限的文件。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractFileEngine.ExeOtherPerm</tt>
+</td>
+<td class="topAlign"><tt>0x0001</tt></td>
+<td class="topAlign">所有的用户都具有执行该文件的权限。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractFileEngine.LinkType</tt></td>
+<td class="topAlign"><tt>0x10000</tt></td>
+<td class="topAlign">该文件是在文件系统（即不是一个文件或目录）链接到另一个文件（或链接） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractFileEngine.FileType</tt></td>
+<td class="topAlign"><tt>0x20000</tt></td>
+<td class="topAlign">该文件是一个普通文件到文件系统（即不是链接或目录）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractFileEngine.BundleType</tt></td>
+<td class="topAlign"><tt>0x80000</tt></td>
+<td class="topAlign">该文件是一个Mac OS X的包意味着DirectoryType</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractFileEngine.DirectoryType</tt>
+</td>
+<td class="topAlign"><tt>0x40000</tt></td>
+<td class="topAlign">该文件是在文件系统（即不是链接或文件）的目录。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractFileEngine.HiddenFlag</tt></td>
+<td class="topAlign"><tt>0x0100000</tt></td>
+<td class="topAlign">该文件是隐藏的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractFileEngine.ExistsFlag</tt></td>
+<td class="topAlign"><tt>0x0400000</tt></td>
+<td class="topAlign">该文件实际上存在于文件系统中。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractFileEngine.RootFlag</tt></td>
+<td class="topAlign"><tt>0x0800000</tt></td>
+<td class="topAlign">该文件或文件指向的是文件系统的根。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractFileEngine.LocalDiskFlag</tt>
+</td>
+<td class="topAlign"><tt>0x0200000</tt></td>
+<td class="topAlign">该文件驻留在本地磁盘上，并且可以通过标准的文件的功能。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractFileEngine.Refresh</tt></td>
+<td class="topAlign"><tt>0x1000000</tt></td>
+<td class="topAlign">传递此标志将强制文件引擎刷新所有标志。</td>
+</tr>
+</table>
+<p>该FileFlags类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cFileFlag\u003e 。它存储FileFlag值的或组合。</p>
+<p><b>See also</b> <a href="qabstractfileengine.html#fileFlags" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#fileFlags">fileFlags</a>（）和<a href="qabstractfileengine.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#setFileName">setFileName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="FileName-enum"></a>QAbstractFileEngine.FileName</h3>
+<p>这些值被用来以特定的格式要求一个文件名。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractFileEngine.DefaultName</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">传递给了相同的文件名<a href="qabstractfileengine.html" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html">QAbstractFileEngine</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractFileEngine.BaseName</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">不包括路径中的文件的名称。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractFileEngine.PathName</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">的路径，不包括基本名称的文件。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractFileEngine.AbsoluteName</tt>
+</td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">绝对路径文件（包括基本名称） 。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractFileEngine.AbsolutePathName</tt>
+</td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">绝对路径文件（不包括基本名称） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractFileEngine.LinkName</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">该文件是一个链接到该文件的完整文件名。 （这将是空的，如果这个文件是不是链接。 ）</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractFileEngine.CanonicalName</tt>
+</td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">往往很相似，链接名称。将返回真正的文件路径。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractFileEngine.CanonicalPathName</tt>
+</td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">同CanonicalName ，不包括基本名称。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractFileEngine.BundleName</tt></td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">返回该包的名称所暗示<a href="qabstractfileengine.html#FileFlag-enum" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#FileFlag-enum">BundleType</a>被设置。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qabstractfileengine.html#fileName" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#fileName">fileName</a>（）和<a href="qabstractfileengine.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#setFileName">setFileName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="FileOwner-enum"></a>QAbstractFileEngine.FileOwner</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractFileEngine.OwnerUser</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">谁拥有该文件的用户。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractFileEngine.OwnerGroup</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">谁拥有该文件的组。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qabstractfileengine.html#owner" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#owner">owner</a>（ ）<a href="qabstractfileengine.html#ownerId" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#ownerId">ownerId</a>（）和<a href="qabstractfileengine.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#setFileName">setFileName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="FileTime-enum"></a>QAbstractFileEngine.FileTime</h3>
+<p>这些被使用的<a href="qabstractfileengine.html#fileTime" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#fileTime">fileTime</a>（）函数。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractFileEngine.CreationTime</tt>
+</td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">当创建该文件。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractFileEngine.ModificationTime</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">当文件最近被修改。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractFileEngine.AccessTime</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">当最近被访问的文件（例如，读取或写入） 。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qabstractfileengine.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#setFileName">setFileName</a>（ ） 。</p>
+
+
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QAbstractFileEngine"></a>QAbstractFileEngine.__init__ (<i>self</i>)</h3>
+<p>构造一个新的<a href="qabstractfileengine.html" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html">QAbstractFileEngine</a>这并不是指任何文件或目录。</p>
+<p><b>See also</b> <a href="qabstractfileengine.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#setFileName">setFileName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="atEnd"></a>bool QAbstractFileEngine.atEnd (<i>self</i>)</h3>
+<p>返回True如果当前位置是在文件的末尾，否则返回False 。</p>
+<p>该功能立足于调用它的行为<a href="qabstractfileengine.html#extension" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#extension">extension</a>（ ）与<a href="qabstractfileengine.html#Extension-enum" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#Extension-enum">AtEndExtension</a>。如果引擎不支持此扩展，则返回False。</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qabstractfileengine.html#extension" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#extension">extension</a>（ ）<a href="qabstractfileengine.html#supportsExtension" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#supportsExtension">supportsExtension</a>（）和<a href="qfile.html#atEnd" tppabs="http://pyqt4doc.appspot.com/qfile.html#atEnd">QFile.atEnd</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="beginEntryList"></a><a href="qabstractfileengineiterator.html" tppabs="http://pyqt4doc.appspot.com/qabstractfileengineiterator.html">QAbstractFileEngineIterator</a> QAbstractFileEngine.beginEntryList (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdir-filters.html">QDir.Filters</a> <i>filters</i>, QStringList <i>filterNames</i>)</h3>
+<p>返回一个实例<a href="qabstractfileengineiterator.html" tppabs="http://pyqt4doc.appspot.com/qabstractfileengineiterator.html">QAbstractFileEngineIterator</a>
+using <i>filters</i>入门过滤和<i>filterNames</i>对于名称的过滤。调用此函数由<a href="qdiriterator.html" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html">QDirIterator</a>启动目录迭代。</p>
+<p><a href="qdiriterator.html" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html">QDirIterator</a>需要返回的实例的所有权，并删除它时，它的完成。</p>
+<p><b>See also</b> <a href="qdiriterator.html" tppabs="http://pyqt4doc.appspot.com/qdiriterator.html">QDirIterator</a>。</p>
+
+
+<h3 class="fn">
+<a name="caseSensitive"></a>bool QAbstractFileEngine.caseSensitive (<i>self</i>)</h3>
+<p>应返回True如果底层文件系统是大小写敏感的，否则返回False 。</p>
+<p>这个虚函数必须在子类中重新实现。</p>
+
+
+<h3 class="fn">
+<a name="close"></a>bool QAbstractFileEngine.close (<i>self</i>)</h3>
+<p>关闭文件，返回True，如果成功，否则返回False 。</p>
+<p>默认的实现始终返回False 。</p>
+
+
+<h3 class="fn">
+<a name="copy"></a>bool QAbstractFileEngine.copy (<i>self</i>, QString <i>newName</i>)</h3>
+<p>复制这个文件的内容与名称的文件<i>newName</i>。成功时返回TRUE ，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="create"></a><a href="qabstractfileengine.html" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html">QAbstractFileEngine</a> QAbstractFileEngine.create (QString <i>fileName</i>)</h3>
+<p>创建并返回一个<a href="qabstractfileengine.html" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html">QAbstractFileEngine</a>适于处理<i>fileName</i>。</p>
+<p>你不应该需要调用这个函数;使用<a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a>，<a href="qfileinfo.html" tppabs="http://pyqt4doc.appspot.com/qfileinfo.html">QFileInfo</a> or
+<a href="qdir.html" tppabs="http://pyqt4doc.appspot.com/qdir.html">QDir</a>直接代替。</p>
+<p>如果您reimplemnt这个功能，它应该只返回一个知道如何处理文件引擎<i>fileName</i>否则，它应该返回0 。</p>
+<p><b>See also</b> <a href="qabstractfileenginehandler.html" tppabs="http://pyqt4doc.appspot.com/qabstractfileenginehandler.html">QAbstractFileEngineHandler</a>。</p>
+
+
+<h3 class="fn">
+<a name="entryList"></a>QStringList QAbstractFileEngine.entryList (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qdir-filters.html">QDir.Filters</a> <i>filters</i>, QStringList <i>filterNames</i>)</h3>
+<p>请所有文件的列表匹配<i>filters</i>基于所述列表<i>filterNames</i>在文件引擎的目录中返回。</p>
+<p>应该返回一个空列表，如果该文件引擎指的是文件，而不是一个目录，或者目录是不可读的或者不存在，或者如果没有相匹配的规格。</p>
+<p>这个虚函数必须在子类中重新实现。</p>
+<p><b>See also</b> <a href="qabstractfileengine.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#setFileName">setFileName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="error"></a><a href="qfile.html#FileError-enum" tppabs="http://pyqt4doc.appspot.com/qfile.html#FileError-enum">QFile.FileError</a> QAbstractFileEngine.error (<i>self</i>)</h3>
+<p>返回<a href="qfile.html#FileError-enum" tppabs="http://pyqt4doc.appspot.com/qfile.html#FileError-enum">QFile.FileError</a>这是由于过去失败的操作。如果<a href="qfile.html#FileError-enum" tppabs="http://pyqt4doc.appspot.com/qfile.html#FileError-enum">QFile.UnspecifiedError</a>返回，<a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a>将利用自身的错误状态的想法。</p>
+<p><b>See also</b> <a href="qabstractfileengine.html#setError" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#setError">setError</a>（ ）<a href="qfile.html#FileError-enum" tppabs="http://pyqt4doc.appspot.com/qfile.html#FileError-enum">QFile.FileError</a>和<a href="qabstractfileengine.html#errorString" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#errorString">errorString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="errorString"></a>QString QAbstractFileEngine.errorString (<i>self</i>)</h3>
+<p>返回人类可读的消息恰当报告的当前错误<a href="qabstractfileengine.html#error" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#error">error</a>（ ） 。如果没有合适的字符串是可用的，则返回一个空字符串。</p>
+<p><b>See also</b> <a href="qabstractfileengine.html#error" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#error">error</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fileFlags"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine-fileflags.html">FileFlags</a> QAbstractFileEngine.fileFlags (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine-fileflags.html">FileFlags</a> <i>type</i> = QAbstractFileEngine.FileInfoAll)</h3>
+<p>这个函数应该返回一组逻辑与的标志，是真实的文件引擎的文件，那是在<i>type</i>的逻辑与的成员。</p>
+<p>在你重新实现可以使用<i>type</i>参数作为优化提示，并只返回或运算组成员是真实的和那场比赛中的那些<i>type</i>换句话说，您可以忽略不提及任何成员<i>type</i>，从而避免一些潜在的昂贵的查找或系统调用。</p>
+<p>这个虚函数必须在子类中重新实现。</p>
+<p><b>See also</b> <a href="qabstractfileengine.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#setFileName">setFileName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fileName"></a>QString QAbstractFileEngine.fileName (<i>self</i>, <a href="qabstractfileengine.html#FileName-enum" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#FileName-enum">FileName</a> <i>file</i> = QAbstractFileEngine.DefaultName)</h3>
+<p>返回由指定格式的文件引擎的当前文件名<i>file</i>。</p>
+<p>如果不处理某些<tt>FileName</tt>可能性，返回文件名设置<a href="qabstractfileengine.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#setFileName">setFileName</a>（ ）当未处理的格式要求。</p>
+<p>这个虚函数必须在子类中重新实现。</p>
+<p><b>See also</b> <a href="qabstractfileengine.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#setFileName">setFileName</a>（）和<a href="qabstractfileengine.html#FileName-enum" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#FileName-enum">FileName</a>。</p>
+
+
+<h3 class="fn">
+<a name="fileTime"></a><a href="qdatetime.html" tppabs="http://pyqt4doc.appspot.com/qdatetime.html">QDateTime</a> QAbstractFileEngine.fileTime (<i>self</i>, <a href="qabstractfileengine.html#FileTime-enum" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#FileTime-enum">FileTime</a> <i>time</i>)</h3>
+<p>If <i>time</i> is <tt>CreationTime</tt>，创建文件时返回。如果<i>time</i> is <tt>ModificationTime</tt>，返回当文件最近被修改。如果<i>time</i> is
+<tt>AccessTime</tt>，返回时被最近访问的文件（如读或写） 。如果时间无法确定返回QDateTime （ ） （一个无效的日期时间） 。</p>
+<p>这个虚函数必须在子类中重新实现。</p>
+<p><b>See also</b> <a href="qabstractfileengine.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#setFileName">setFileName</a>（ ）<a href="qdatetime.html" tppabs="http://pyqt4doc.appspot.com/qdatetime.html">QDateTime</a>，<a href="qdatetime.html#isValid" tppabs="http://pyqt4doc.appspot.com/qdatetime.html#isValid">QDateTime.isValid</a>（）和<a href="qabstractfileengine.html#FileTime-enum" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#FileTime-enum">FileTime</a>。</p>
+
+
+<h3 class="fn">
+<a name="flush"></a>bool QAbstractFileEngine.flush (<i>self</i>)</h3>
+<p>刷新打开文件，返回True，如果成功，否则返回False 。</p>
+<p>默认的实现始终返回False 。</p>
+
+
+<h3 class="fn">
+<a name="handle"></a>int QAbstractFileEngine.handle (<i>self</i>)</h3>
+<p>返回本机文件句柄这个文件引擎。此句柄必须小心使用，它的价值和类型是特定的平台，并利用它很可能会导致不可移植的代码。</p>
+
+
+<h3 class="fn">
+<a name="isRelativePath"></a>bool QAbstractFileEngine.isRelativePath (<i>self</i>)</h3>
+<p>返回True，如果该文件引擎所指的文件有一个相对路径，否则返回False 。</p>
+<p>这个虚函数必须在子类中重新实现。</p>
+<p><b>See also</b> <a href="qabstractfileengine.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#setFileName">setFileName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isSequential"></a>bool QAbstractFileEngine.isSequential (<i>self</i>)</h3>
+<p>返回True如果该文件是一个顺序存取设备，如果该文件是一个直接存取设备返回False。</p>
+<p>涉及业务<a href="qabstractfileengine.html#size" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#size">size</a>（ ）和seek（ INT）是不是在连续的设备有效。</p>
+
+
+<h3 class="fn">
+<a name="link"></a>bool QAbstractFileEngine.link (<i>self</i>, QString <i>newName</i>)</h3>
+<p>从创建该文件目前由指定的链接<a href="qabstractfileengine.html#fileName" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#fileName">fileName</a>（）来<i>newName</i>。什么链接是依赖于底层的文件系统（无论是在Windows还是Unix上符号链接的快捷方式）上。成功返回True ，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="map"></a>sip.voidptr QAbstractFileEngine.map (<i>self</i>, int <i>offset</i>, int <i>size</i>, <a href="qfile.html#MemoryMapFlags-enum" tppabs="http://pyqt4doc.appspot.com/qfile.html#MemoryMapFlags-enum">QFile.MemoryMapFlags</a> <i>flags</i>)</h3>
+<p>地图<i>size</i>该文件的字节到存储器中，起始<i>offset</i>。返回一个指向内存的指针，如果成功，如果，例如，发生错误，否则返回False 。</p>
+<p>该功能立足于调用它的行为<a href="qabstractfileengine.html#extension" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#extension">extension</a>（ ）与<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine-mapextensionoption.html">MapExtensionOption</a>。如果引擎不支持此扩展，则返回0 。</p>
+<p><i>flags</i>目前没有使用，但可能在将来被使用。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qabstractfileengine.html#unmap" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#unmap">unmap</a>（）和<a href="qabstractfileengine.html#supportsExtension" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#supportsExtension">supportsExtension</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mkdir"></a>bool QAbstractFileEngine.mkdir (<i>self</i>, QString <i>dirName</i>, bool <i>createParentDirectories</i>)</h3>
+<p>请求的目录<i>dirName</i>被创建。如果<i>createParentDirectories</i>是真的，那么在任何子目录<i>dirName</i>不存在必须被创建。如果<i>createParentDirectories</i>为False，则在任何子目录<i>dirName</i>必须已经为函数成功存在。如果操作成功，返回True ，否则返回False 。</p>
+<p>这个虚函数必须在子类中重新实现。</p>
+<p><b>See also</b> <a href="qabstractfileengine.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#setFileName">setFileName</a>（ ）<a href="qabstractfileengine.html#rmdir" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#rmdir">rmdir</a>（）和<a href="qabstractfileengine.html#isRelativePath" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#isRelativePath">isRelativePath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="open"></a>bool QAbstractFileEngine.open (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qiodevice-openmode.html">QIODevice.OpenMode</a> <i>openMode</i>)</h3>
+<p>打开文件在指定的<i>mode</i>。返回True如果文件被成功打开，否则返回False 。</p>
+<p>该<i>mode</i>是一个OR组合<a href="qiodevice.html#OpenModeFlag-enum" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#OpenModeFlag-enum">QIODevice.OpenMode</a>和QIODevice.HandlingMode值。</p>
+
+
+<h3 class="fn">
+<a name="owner"></a>QString QAbstractFileEngine.owner (<i>self</i>, <a href="qabstractfileengine.html#FileOwner-enum" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#FileOwner-enum">FileOwner</a>)</h3>
+<p>If <i>owner</i> is <tt>OwnerUser</tt>返回谁拥有该文件的用户的名称。如果<i>owner</i> is <tt>OwnerGroup</tt>返回拥有该文件的组的名称。如果你不能确定业主回报的QString （ ） 。</p>
+<p>这个虚函数必须在子类中重新实现。</p>
+<p><b>See also</b> <a href="qabstractfileengine.html#ownerId" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#ownerId">ownerId</a>（ ）<a href="qabstractfileengine.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#setFileName">setFileName</a>（）和<a href="qabstractfileengine.html#FileOwner-enum" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#FileOwner-enum">FileOwner</a>。</p>
+
+
+<h3 class="fn">
+<a name="ownerId"></a>int QAbstractFileEngine.ownerId (<i>self</i>, <a href="qabstractfileengine.html#FileOwner-enum" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#FileOwner-enum">FileOwner</a>)</h3>
+<p>If <i>owner</i> is <tt>OwnerUser</tt>返回谁拥有该文件的用户的ID 。如果<i>owner</i> is <tt>OwnerGroup</tt>返回拥有该文件的组ID 。如果你不能确定业主返回-2 。</p>
+<p>这个虚函数必须在子类中重新实现。</p>
+<p><b>See also</b> <a href="qabstractfileengine.html#owner" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#owner">owner</a>（ ）<a href="qabstractfileengine.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#setFileName">setFileName</a>（）和<a href="qabstractfileengine.html#FileOwner-enum" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#FileOwner-enum">FileOwner</a>。</p>
+
+
+<h3 class="fn">
+<a name="pos"></a>int QAbstractFileEngine.pos (<i>self</i>)</h3>
+<p>返回当前文件位置。</p>
+<p>这是读出的文件/写头中的数据的位置。</p>
+
+
+<h3 class="fn">
+<a name="read"></a>str QAbstractFileEngine.read (<i>self</i>, int <i>maxlen</i>)</h3>
+<p>读取的字符数从文件导入<i>data</i>。最多<i>maxlen</i>字符将被读取。</p>
+<p>如果发生致命错误，或者0，如果没有要读取的字节，则返回-1 。</p>
+
+
+<h3 class="fn">
+<a name="readLine"></a>str QAbstractFileEngine.readLine (<i>self</i>, int <i>maxlen</i>)</h3>
+<p>该函数读取一行，由一个'\ n“字符终止，从文件信息<i>data</i>。最多<i>maxlen</i>字符将被读取。行尾的字符被包括在内。</p>
+
+
+<h3 class="fn">
+<a name="remove"></a>bool QAbstractFileEngine.remove (<i>self</i>)</h3>
+<p>该文件从文件系统中删除请求。如果操作成功，返回True ，否则返回False 。</p>
+<p>这个虚函数必须在子类中重新实现。</p>
+<p><b>See also</b> <a href="qabstractfileengine.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#setFileName">setFileName</a>（）和<a href="qabstractfileengine.html#rmdir" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#rmdir">rmdir</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rename"></a>bool QAbstractFileEngine.rename (<i>self</i>, QString <i>newName</i>)</h3>
+<p>请求该文件被重命名为<i>newName</i>在文件系统中。如果操作成功，返回True ，否则返回False 。</p>
+<p>这个虚函数必须在子类中重新实现。</p>
+<p><b>See also</b> <a href="qabstractfileengine.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#setFileName">setFileName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rmdir"></a>bool QAbstractFileEngine.rmdir (<i>self</i>, QString <i>dirName</i>, bool <i>recurseParentDirectories</i>)</h3>
+<p>请求的目录<i>dirName</i>从文件系统中删除。何时<i>recurseParentDirectories</i>是真的，那么任何空的父目录中<i>dirName</i>也必须删除。如果<i>recurseParentDirectories</i>是假的，只有<i>dirName</i>叶节点应予删除。在大多数文件系统的目录中不能使用该功能，如果它是一个非空被删除。如果操作成功，返回True ，否则返回False 。</p>
+<p>这个虚函数必须在子类中重新实现。</p>
+<p><b>See also</b> <a href="qabstractfileengine.html#setFileName" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#setFileName">setFileName</a>（ ）<a href="qabstractfileengine.html#remove" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#remove">remove</a>（ ）<a href="qabstractfileengine.html#mkdir" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#mkdir">mkdir</a>（）和<a href="qabstractfileengine.html#isRelativePath" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#isRelativePath">isRelativePath</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="seek"></a>bool QAbstractFileEngine.seek (<i>self</i>, int <i>pos</i>)</h3>
+<p>设置文件位置为给定的<i>offset</i>。返回True如果该位置被成功设置，否则返回False 。</p>
+<p>偏移量是从文件的开始处，除非该文件是连续的。</p>
+<p><b>See also</b> <a href="qabstractfileengine.html#isSequential" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#isSequential">isSequential</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setError"></a>QAbstractFileEngine.setError (<i>self</i>, <a href="qfile.html#FileError-enum" tppabs="http://pyqt4doc.appspot.com/qfile.html#FileError-enum">QFile.FileError</a> <i>error</i>, QString <i>str</i>)</h3>
+<p>设置错误类型<i>error</i>和错误字符串<i>errorString</i>。调用此函数来设置由更高级别的课程返回错误值。</p>
+<p><b>See also</b> <a href="qfile.html#error" tppabs="http://pyqt4doc.appspot.com/qfile.html#error">QFile.error</a>（ ）<a href="qiodevice.html#errorString" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#errorString">QIODevice.errorString</a>（）和<a href="qiodevice.html#setErrorString" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#setErrorString">QIODevice.setErrorString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFileName"></a>QAbstractFileEngine.setFileName (<i>self</i>, QString <i>file</i>)</h3>
+<p>设置文件引擎的文件名<i>file</i>。这个文件名是虚函数，其馀将要操作的文件。</p>
+<p>这个虚函数必须在子类中重新实现。</p>
+<p><b>See also</b> <a href="qabstractfileengine.html#fileName" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#fileName">fileName</a>（）和<a href="qabstractfileengine.html#rename" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#rename">rename</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPermissions"></a>bool QAbstractFileEngine.setPermissions (<i>self</i>, int <i>perms</i>)</h3>
+<p>该文件的权限设置为请求<i>perms</i>。该参数烫发将被设置为QAbstractFileEngine.FileInfo的或的结果结合在一起，只有<a href="qabstractfileengine.html#FileFlag-enum" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#FileFlag-enum">QAbstractFileEngine.PermsMask</a>的荣幸。如果操作succceeds返回True ，否则返回False ;</p>
+<p>这个虚函数必须在子类中重新实现。</p>
+<p><b>See also</b> <a href="qabstractfileengine.html#size" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#size">size</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setSize"></a>bool QAbstractFileEngine.setSize (<i>self</i>, int <i>size</i>)</h3>
+<p>该文件被设置为请求的大小<i>size</i>。如果<i>size</i>比当前文件则填0的，如果小它只是截断较大。如果操作succceeds返回True ，否则返回False ;</p>
+<p>这个虚函数必须在子类中重新实现。</p>
+<p><b>See also</b> <a href="qabstractfileengine.html#size" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#size">size</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="size"></a>int QAbstractFileEngine.size (<i>self</i>)</h3>
+<p>返回文件的大小。</p>
+<p><b>See also</b> <a href="qabstractfileengine.html#setSize" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#setSize">setSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="unmap"></a>bool QAbstractFileEngine.unmap (<i>self</i>, sip.voidptr <i>ptr</i>)</h3>
+<p>取消映射的内存<i>address</i>。返回True如果取消映射成功，否则返回False 。</p>
+<p>该功能立足于调用它的行为<a href="qabstractfileengine.html#extension" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#extension">extension</a>（ ）与<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine-unmapextensionoption.html">UnMapExtensionOption</a>。如果引擎不支持此扩展，则返回False。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qabstractfileengine.html#map" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#map">map</a>（）和<a href="qabstractfileengine.html#supportsExtension" tppabs="http://pyqt4doc.appspot.com/qabstractfileengine.html#supportsExtension">supportsExtension</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="write"></a>int QAbstractFileEngine.write (<i>self</i>, str <i>data</i>)</h3>
+<p>Writes <i>len</i>从字节<i>data</i>到文件中。返回写入成功的字符数，否则返回-1 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

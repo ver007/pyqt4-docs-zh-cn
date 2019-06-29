@@ -1,0 +1,899 @@
+﻿<html>
+<head>
+<title>QTextDocument Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QTextDocument Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该另外，QTextDocument类认为，可以查看和编辑使用格式化的文本<a href="qtextedit.html" tppabs="http://pyqt4doc.appspot.com/qtextedit.html">QTextEdit</a>。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qtextdocument.html#FindFlag-enum" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#FindFlag-enum">FindFlag</a></b> { FindBackward, FindCaseSensitively, FindWholeWords }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtextdocument-findflags.html">FindFlags</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qtextdocument.html#MetaInformation-enum" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#MetaInformation-enum">MetaInformation</a></b> { DocumentTitle, DocumentUrl }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qtextdocument.html#ResourceType-enum" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#ResourceType-enum">ResourceType</a></b> { HtmlResource, ImageResource, StyleSheetResource, UserResource }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qtextdocument.html#Stacks-enum" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#Stacks-enum">Stacks</a></b> { UndoStack, RedoStack, UndoAndRedoStacks }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#QTextDocument" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#QTextDocument">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#QTextDocument-2" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#QTextDocument-2">__init__</a></b> (<i>self</i>, QString <i>text</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#addResource" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#addResource">addResource</a></b> (<i>self</i>, int <i>type</i>, QUrl <i>name</i>, QVariant <i>resource</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#adjustSize" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#adjustSize">adjustSize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QTextFormat <b><a href="qtextdocument.html#allFormats" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#allFormats">allFormats</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextdocument.html#availableRedoSteps" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#availableRedoSteps">availableRedoSteps</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextdocument.html#availableUndoSteps" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#availableUndoSteps">availableUndoSteps</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextBlock <b><a href="qtextdocument.html#begin" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#begin">begin</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextdocument.html#blockCount" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#blockCount">blockCount</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QChar <b><a href="qtextdocument.html#characterAt" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#characterAt">characterAt</a></b> (<i>self</i>, int <i>pos</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextdocument.html#characterCount" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#characterCount">characterCount</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#clear" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#clear">clear</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#clearUndoRedoStacks" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#clearUndoRedoStacks">clearUndoRedoStacks</a></b> (<i>self</i>, Stacks <i>stacks</i> = QTextDocument.UndoAndRedoStacks)</li>
+<li>
+<div class="fn"></div>QTextDocument <b><a href="qtextdocument.html#clone" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#clone">clone</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>QTextObject <b><a href="qtextdocument.html#createObject" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#createObject">createObject</a></b> (<i>self</i>, QTextFormat <i>f</i>)</li>
+<li>
+<div class="fn"></div>Qt.CursorMoveStyle <b><a href="qtextdocument.html#defaultCursorMoveStyle" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#defaultCursorMoveStyle">defaultCursorMoveStyle</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QFont <b><a href="qtextdocument.html#defaultFont" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#defaultFont">defaultFont</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qtextdocument.html#defaultStyleSheet" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#defaultStyleSheet">defaultStyleSheet</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextOption <b><a href="qtextdocument.html#defaultTextOption" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#defaultTextOption">defaultTextOption</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QAbstractTextDocumentLayout <b><a href="qtextdocument.html#documentLayout" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#documentLayout">documentLayout</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtextdocument.html#documentMargin" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#documentMargin">documentMargin</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#drawContents" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#drawContents">drawContents</a></b> (<i>self</i>, QPainter <i>p</i>, QRectF <i>rect</i> = QRectF())</li>
+<li>
+<div class="fn"></div>QTextBlock <b><a href="qtextdocument.html#end" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#end">end</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextCursor <b><a href="qtextdocument.html#find" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#find">find</a></b> (<i>self</i>, QString <i>subString</i>, int <i>position</i> = 0, FindFlags <i>options</i> = 0)</li>
+<li>
+<div class="fn"></div>QTextCursor <b><a href="qtextdocument.html#find-2" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#find-2">find</a></b> (<i>self</i>, QRegExp <i>expr</i>, int <i>position</i> = 0, FindFlags <i>options</i> = 0)</li>
+<li>
+<div class="fn"></div>QTextCursor <b><a href="qtextdocument.html#find-3" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#find-3">find</a></b> (<i>self</i>, QString <i>subString</i>, QTextCursor <i>cursor</i>, FindFlags <i>options</i> = 0)</li>
+<li>
+<div class="fn"></div>QTextCursor <b><a href="qtextdocument.html#find-4" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#find-4">find</a></b> (<i>self</i>, QRegExp <i>expr</i>, QTextCursor <i>cursor</i>, FindFlags <i>options</i> = 0)</li>
+<li>
+<div class="fn"></div>QTextBlock <b><a href="qtextdocument.html#findBlock" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#findBlock">findBlock</a></b> (<i>self</i>, int <i>pos</i>)</li>
+<li>
+<div class="fn"></div>QTextBlock <b><a href="qtextdocument.html#findBlockByLineNumber" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#findBlockByLineNumber">findBlockByLineNumber</a></b> (<i>self</i>, int <i>blockNumber</i>)</li>
+<li>
+<div class="fn"></div>QTextBlock <b><a href="qtextdocument.html#findBlockByNumber" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#findBlockByNumber">findBlockByNumber</a></b> (<i>self</i>, int <i>blockNumber</i>)</li>
+<li>
+<div class="fn"></div>QTextBlock <b><a href="qtextdocument.html#firstBlock" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#firstBlock">firstBlock</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtextdocument.html#idealWidth" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#idealWidth">idealWidth</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtextdocument.html#indentWidth" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#indentWidth">indentWidth</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextdocument.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#isEmpty">isEmpty</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextdocument.html#isModified" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#isModified">isModified</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextdocument.html#isRedoAvailable" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#isRedoAvailable">isRedoAvailable</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextdocument.html#isUndoAvailable" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#isUndoAvailable">isUndoAvailable</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextdocument.html#isUndoRedoEnabled" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#isUndoRedoEnabled">isUndoRedoEnabled</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextBlock <b><a href="qtextdocument.html#lastBlock" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#lastBlock">lastBlock</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextdocument.html#lineCount" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#lineCount">lineCount</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qtextdocument.html#loadResource" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#loadResource">loadResource</a></b> (<i>self</i>, int <i>type</i>, QUrl <i>name</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#markContentsDirty" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#markContentsDirty">markContentsDirty</a></b> (<i>self</i>, int <i>from</i>, int <i>length</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextdocument.html#maximumBlockCount" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#maximumBlockCount">maximumBlockCount</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qtextdocument.html#metaInformation" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#metaInformation">metaInformation</a></b> (<i>self</i>, MetaInformation <i>info</i>)</li>
+<li>
+<div class="fn"></div>QTextObject <b><a href="qtextdocument.html#object" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#object">object</a></b> (<i>self</i>, int <i>objectIndex</i>)</li>
+<li>
+<div class="fn"></div>QTextObject <b><a href="qtextdocument.html#objectForFormat" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#objectForFormat">objectForFormat</a></b> (<i>self</i>, QTextFormat)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextdocument.html#pageCount" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#pageCount">pageCount</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSizeF <b><a href="qtextdocument.html#pageSize" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#pageSize">pageSize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#print" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#print">print</a></b> (<i>self</i>, QPrinter <i>printer</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#print" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#print">print_</a></b> (<i>self</i>, QPrinter <i>printer</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#redo" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#redo">redo</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#redo-2" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#redo-2">redo</a></b> (<i>self</i>, QTextCursor <i>cursor</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qtextdocument.html#resource" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#resource">resource</a></b> (<i>self</i>, int <i>type</i>, QUrl <i>name</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextdocument.html#revision" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#revision">revision</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextFrame <b><a href="qtextdocument.html#rootFrame" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#rootFrame">rootFrame</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#setDefaultCursorMoveStyle" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#setDefaultCursorMoveStyle">setDefaultCursorMoveStyle</a></b> (<i>self</i>, Qt.CursorMoveStyle <i>style</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#setDefaultFont" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#setDefaultFont">setDefaultFont</a></b> (<i>self</i>, QFont <i>font</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#setDefaultStyleSheet" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#setDefaultStyleSheet">setDefaultStyleSheet</a></b> (<i>self</i>, QString <i>sheet</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#setDefaultTextOption" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#setDefaultTextOption">setDefaultTextOption</a></b> (<i>self</i>, QTextOption <i>option</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#setDocumentLayout" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#setDocumentLayout">setDocumentLayout</a></b> (<i>self</i>, QAbstractTextDocumentLayout <i>layout</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#setDocumentMargin" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#setDocumentMargin">setDocumentMargin</a></b> (<i>self</i>, float <i>margin</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#setHtml" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#setHtml">setHtml</a></b> (<i>self</i>, QString <i>html</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#setIndentWidth" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#setIndentWidth">setIndentWidth</a></b> (<i>self</i>, float <i>width</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#setMaximumBlockCount" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#setMaximumBlockCount">setMaximumBlockCount</a></b> (<i>self</i>, int <i>maximum</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#setMetaInformation" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#setMetaInformation">setMetaInformation</a></b> (<i>self</i>, MetaInformation <i>info</i>, QString)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#setModified" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#setModified">setModified</a></b> (<i>self</i>, bool <i>on</i> = True)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#setPageSize" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#setPageSize">setPageSize</a></b> (<i>self</i>, QSizeF <i>size</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#setPlainText" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#setPlainText">setPlainText</a></b> (<i>self</i>, QString <i>text</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#setTextWidth" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#setTextWidth">setTextWidth</a></b> (<i>self</i>, float <i>width</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#setUndoRedoEnabled" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#setUndoRedoEnabled">setUndoRedoEnabled</a></b> (<i>self</i>, bool <i>enable</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#setUseDesignMetrics" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#setUseDesignMetrics">setUseDesignMetrics</a></b> (<i>self</i>, bool <i>b</i>)</li>
+<li>
+<div class="fn"></div>QSizeF <b><a href="qtextdocument.html#size" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#size">size</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>float <b><a href="qtextdocument.html#textWidth" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#textWidth">textWidth</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qtextdocument.html#toHtml" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#toHtml">toHtml</a></b> (<i>self</i>, QByteArray <i>encoding</i> = QByteArray())</li>
+<li>
+<div class="fn"></div>QString <b><a href="qtextdocument.html#toPlainText" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#toPlainText">toPlainText</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#undo" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#undo">undo</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextdocument.html#undo-2" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#undo-2">undo</a></b> (<i>self</i>, QTextCursor <i>cursor</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextdocument.html#useDesignMetrics" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#useDesignMetrics">useDesignMetrics</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qtextdocument.html#blockCountChanged" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#blockCountChanged">blockCountChanged</a></b> (int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qtextdocument.html#contentsChange" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#contentsChange">contentsChange</a></b> (int,int,int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qtextdocument.html#contentsChanged" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#contentsChanged">contentsChanged</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qtextdocument.html#cursorPositionChanged" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#cursorPositionChanged">cursorPositionChanged</a></b> (const QTextCursor&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qtextdocument.html#documentLayoutChanged" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#documentLayoutChanged">documentLayoutChanged</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qtextdocument.html#modificationChanged" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#modificationChanged">modificationChanged</a></b> (bool)</li>
+<li>
+<div class="fn"></div>void <b><a href="qtextdocument.html#redoAvailable" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#redoAvailable">redoAvailable</a></b> (bool)</li>
+<li>
+<div class="fn"></div>void <b><a href="qtextdocument.html#undoAvailable" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#undoAvailable">undoAvailable</a></b> (bool)</li>
+<li>
+<div class="fn"></div>void <b><a href="qtextdocument.html#undoCommandAdded" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#undoCommandAdded">undoCommandAdded</a></b> ()</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该另外，QTextDocument类认为，可以查看和编辑使用格式化的文本<a href="qtextedit.html" tppabs="http://pyqt4doc.appspot.com/qtextedit.html">QTextEdit</a>。</p>
+<p>另外，QTextDocument是一个容器的结构化富文本文档，提供了样式的文本和各类文档元素，例如列表，表格，框架和图像的支持。它们可以用在被创建<a href="qtextedit.html" tppabs="http://pyqt4doc.appspot.com/qtextedit.html">QTextEdit</a>或独立使用。</p>
+<p>每个文档元素是由一个相关的格式对象描述。每种格式的对象被视为由QTextDocuments一个唯一的对象，并且可以被传递到<a href="qtextdocument.html#objectForFormat" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#objectForFormat">objectForFormat</a>（）来获得，它被应用到文档元素。</p>
+<p>一个另外，QTextDocument可以通过编程使用进行编辑<a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a>的，其内容可以通过遍历文档结构进行检查。整个文档结构被存储为根框架之下文档元素的层次结构，发现了与<a href="qtextdocument.html#rootFrame" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#rootFrame">rootFrame</a>（）函数。另外，如果你只是想遍历文档的文本内容，您可以使用<a href="qtextdocument.html#begin" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#begin">begin</a>（ ）<a href="qtextdocument.html#end" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#end">end</a>（）和<a href="qtextdocument.html#findBlock" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#findBlock">findBlock</a>（ ）来检索文本块，你可以检查和遍历。</p>
+<p>一个文件的布局是由确定的<a href="qtextdocument.html#documentLayout" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#documentLayout">documentLayout</a>（ ） ，你可以创建自己的<a href="qabstracttextdocumentlayout.html" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html">QAbstractTextDocumentLayout</a>子类并使用它设置<a href="qtextdocument.html#setDocumentLayout" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#setDocumentLayout">setDocumentLayout</a>（ ）如果你想使用自己的布局逻辑。文档的标题和其他元信息可以通过调用来获得<a href="qtextdocument.html#metaInformation" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#metaInformation">metaInformation</a>（）函数。对于通过向用户公开文件<a href="qtextedit.html" tppabs="http://pyqt4doc.appspot.com/qtextedit.html">QTextEdit</a>类，文档标题也可通过<a href="qtextedit.html#documentTitle-prop" tppabs="http://pyqt4doc.appspot.com/qtextedit.html#documentTitle-prop">QTextEdit.documentTitle</a>（）函数。</p>
+<p>该<a href="qtextdocument.html#toPlainText" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#toPlainText">toPlainText</a>（）和<a href="qtextdocument.html#toHtml" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#toHtml">toHtml</a>（ ）的便利功能允许您检索文件的内容为纯文本和HTML 。该文件的文本，可使用搜索的<a href="qtextdocument.html#find" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#find">find</a>（）函数。</p>
+<p>对文档进行操作的撤消/重做可使用控制<a href="qtextdocument.html#undoRedoEnabled-prop" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#undoRedoEnabled-prop">setUndoRedoEnabled</a>（）函数。撤消/重做系统可以由一个编辑控件通过被控制的<a href="qtextdocument.html#undo" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#undo">undo</a>（）和<a href="qtextdocument.html#redo" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#redo">redo</a>（ ）插槽，该文件还提供了<a href="qtextdocument.html#contentsChanged" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#contentsChanged">contentsChanged</a>（ ）<a href="qtextdocument.html#undoAvailable" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#undoAvailable">undoAvailable</a>（）和<a href="qtextdocument.html#redoAvailable" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#redoAvailable">redoAvailable</a>（ ）是通知连接编辑器部件有关撤消/重做系统的状态信号。下面是一个另外，QTextDocument的撤消/重做操作：</p>
+<ul>
+<li>Insertion or removal of characters. A sequence of insertions or
+removals within the same text block are regarded as a single
+undo/redo operation.</li>
+<li>Insertion or removal of text blocks. Sequences of insertion or
+removals in a single operation (e.g., by selecting and then
+deleting text) are regarded as a single undo/redo operation.</li>
+<li>Text character format changes.</li>
+<li>Text block format changes.</li>
+<li>Text block group format changes.</li>
+</ul>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="FindFlag-enum"></a>QTextDocument.FindFlag</h3>
+<p>这个枚举说明可供选择<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>的发现功能。该选项可以是或的结果一起从下面的列表：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextDocument.FindBackward</tt></td>
+<td class="topAlign"><tt>0x00001</tt></td>
+<td class="topAlign">向后搜索，而不是向前。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTextDocument.FindCaseSensitively</tt>
+</td>
+<td class="topAlign"><tt>0x00002</tt></td>
+<td class="topAlign">默认情况下找到工作不区分大小写。指定此选项改变行为，以区分大小写的查找操作。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextDocument.FindWholeWords</tt></td>
+<td class="topAlign"><tt>0x00004</tt></td>
+<td class="topAlign">使得找到匹配的唯一完整的话。</td>
+</tr>
+</table>
+<p>该FindFlags类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cFindFlag\u003e 。它存储FindFlag值的或组合。</p>
+
+
+<h3 class="fn">
+<a name="MetaInformation-enum"></a>QTextDocument.MetaInformation</h3>
+<p>该枚举描述了不同类型的元数据信息可以被添加到文档中。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextDocument.DocumentTitle</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">文档的标题。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextDocument.DocumentUrl</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该文档的URL 。该<a href="qtextdocument.html#loadResource" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#loadResource">loadResource</a>相对于加载资源时（ ）函数使用这个URL为基础。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qtextdocument.html#metaInformation" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#metaInformation">metaInformation</a>（）和<a href="qtextdocument.html#setMetaInformation" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#setMetaInformation">setMetaInformation</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="ResourceType-enum"></a>QTextDocument.ResourceType</h3>
+<p>该枚举描述了可以通过以下方式加载的资源类型<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>的<a href="qtextdocument.html#loadResource" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#loadResource">loadResource</a>（）函数。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextDocument.HtmlResource</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">资源包含HTML 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextDocument.ImageResource</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">该资源包含图像数据。目前支持的数据类型<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">QVariant.Pixmap</a>和<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">QVariant.Image</a>。如果相应的变量的类型是<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">QVariant.ByteArray</a>然后Qt的尝试使用QImage.loadFromData加载图像。<a href="qvariant.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qvariant.html#Type-enum">QVariant.Icon</a>目前不支持。需要的图标转换为支持的类型之一第一，例如使用QIcon.pixmap 。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTextDocument.StyleSheetResource</tt>
+</td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">该资源包含CSS 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextDocument.UserResource</tt></td>
+<td class="topAlign"><tt>100</tt></td>
+<td class="topAlign">用户定义资源类型的第一个可用值。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qtextdocument.html#loadResource" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#loadResource">loadResource</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="Stacks-enum"></a>QTextDocument.Stacks</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextDocument.UndoStack</tt></td>
+<td class="topAlign"><tt>0x01</tt></td>
+<td class="topAlign">撤消堆栈。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextDocument.RedoStack</tt></td>
+<td class="topAlign"><tt>0x02</tt></td>
+<td class="topAlign">重做堆栈。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextDocument.UndoAndRedoStacks</tt></td>
+<td class="topAlign"><tt>UndoStack | RedoStack</tt></td>
+<td class="topAlign">无论是撤销和重做堆栈。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QTextDocument"></a>QTextDocument.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个空<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>用给定的<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="QTextDocument-2"></a>QTextDocument.__init__ (<i>self</i>, QString <i>text</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>含有纯（未格式化）<i>text</i>指定，并与给定的<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="addResource"></a>QTextDocument.addResource (<i>self</i>, int <i>type</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>name</i>, QVariant <i>resource</i>)</h3>
+<p>添加资源<i>resource</i>到资源高速缓存，用<i>type</i>和<i>name</i>作为标识符。<i>type</i>应该是从一个值<a href="qtextdocument.html#ResourceType-enum" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#ResourceType-enum">QTextDocument.ResourceType</a>。</p>
+<p>例如，您可以以从文档中引用它添加一个图像作为一个资源：</p>
+<pre class="cpp">
+     document<span class="operator">-</span><span class="operator">&gt;</span>addResource(<span class="type"><a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a></span><span class="operator">.</span>ImageResource<span class="operator">,</span>
+         <span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span>(<span class="string">"mydata://image.png"</span>)<span class="operator">,</span> <span class="type"><a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a></span>(image));
+</pre>
+<p>该图像可以通过被插入到文档中的<a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a>API ：</p>
+<pre class="cpp">
+     <span class="type"><a href="qtextimageformat.html" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html">QTextImageFormat</a></span> imageFormat;
+     imageFormat<span class="operator">.</span>setName(<span class="string">"mydata://image.png"</span>);
+     cursor<span class="operator">.</span>insertImage(imageFormat);
+</pre>
+<p>或者，您可以使用HTML中插入图像<tt>img</tt>标籤：</p>
+<pre class="cpp">
+     editor<span class="operator">-</span><span class="operator">&gt;</span>append(<span class="string">"&lt;img src=\"mydata://image.png\" /&gt;"</span>);
+</pre>
+
+
+<h3 class="fn">
+<a name="adjustSize"></a>QTextDocument.adjustSize (<i>self</i>)</h3>
+<p>调整文件到一个合理的规模。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qtextdocument.html#idealWidth" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#idealWidth">idealWidth</a>（ ）<a href="qtextdocument.html#textWidth-prop" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#textWidth-prop">textWidth</a>和<a href="qtextdocument.html#size-prop" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#size-prop">size</a>。</p>
+
+
+<h3 class="fn">
+<a name="allFormats"></a>list-of-QTextFormat QTextDocument.allFormats (<i>self</i>)</h3>
+<p>返回的文本格式的所有文档中使用的格式的向量。</p>
+
+
+<h3 class="fn">
+<a name="availableRedoSteps"></a>int QTextDocument.availableRedoSteps (<i>self</i>)</h3>
+<p>返回可用的重做步骤的数目。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qtextdocument.html#isRedoAvailable" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#isRedoAvailable">isRedoAvailable</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="availableUndoSteps"></a>int QTextDocument.availableUndoSteps (<i>self</i>)</h3>
+<p>返回可用撤消的步骤数。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qtextdocument.html#isUndoAvailable" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#isUndoAvailable">isUndoAvailable</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="begin"></a><a href="qtextblock.html" tppabs="http://pyqt4doc.appspot.com/qtextblock.html">QTextBlock</a> QTextDocument.begin (<i>self</i>)</h3>
+<p>返回文档的第一个文本块。</p>
+<p><b>See also</b> <a href="qtextdocument.html#firstBlock" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#firstBlock">firstBlock</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="blockCount"></a>int QTextDocument.blockCount (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="characterAt"></a>QChar QTextDocument.characterAt (<i>self</i>, int <i>pos</i>)</h3>
+<p>返回字符的位置<i>pos</i>，或者一个空字符，如果该位置超出了范围。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qtextdocument.html#characterCount" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#characterCount">characterCount</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="characterCount"></a>int QTextDocument.characterCount (<i>self</i>)</h3>
+<p>返回本文件中的字符数。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qtextdocument.html#blockCount-prop" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#blockCount-prop">blockCount</a>（）和<a href="qtextdocument.html#characterAt" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#characterAt">characterAt</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clear"></a>QTextDocument.clear (<i>self</i>)</h3>
+<p>清除文件。</p>
+
+
+<h3 class="fn">
+<a name="clearUndoRedoStacks"></a>QTextDocument.clearUndoRedoStacks (<i>self</i>, <a href="qtextdocument.html#Stacks-enum" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#Stacks-enum">Stacks</a> <i>stacks</i> = QTextDocument.UndoAndRedoStacks)</h3>
+<p>清除由指定的堆栈<i>stacksToClear</i>。</p>
+<p>此方法清除撤消堆栈，重做堆栈，或者两者都有（默认值）的任何命令。如果命令被清除时，适当的信号被发射，<a href="qtextdocument.html#undoAvailable" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#undoAvailable">QTextDocument.undoAvailable</a>（）或<a href="qtextdocument.html#redoAvailable" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#redoAvailable">QTextDocument.redoAvailable</a>（ ） 。</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qtextdocument.html#undoAvailable" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#undoAvailable">QTextDocument.undoAvailable</a>（）和<a href="qtextdocument.html#redoAvailable" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#redoAvailable">QTextDocument.redoAvailable</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clone"></a><a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a> QTextDocument.clone (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>创建一个新的<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>即这个文本文件的一个副本。<i>parent</i>是返回文本文档的父。</p>
+
+
+<h3 class="fn">
+<a name="createObject"></a><a href="qtextobject.html" tppabs="http://pyqt4doc.appspot.com/qtextobject.html">QTextObject</a> QTextDocument.createObject (<i>self</i>, <a href="qtextformat.html" tppabs="http://pyqt4doc.appspot.com/qtextformat.html">QTextFormat</a> <i>f</i>)</h3>
+<p>创建并返回一个新的文档对象（一<a href="qtextobject.html" tppabs="http://pyqt4doc.appspot.com/qtextobject.html">QTextObject</a>） ，根据给定的<i>format</i>。</p>
+<p>QTextObjects总是会得到通过这种方法创建的，所以如果你使用自定义的文本对象文档里面你必须重新实现它。</p>
+
+
+<h3 class="fn">
+<a name="defaultCursorMoveStyle"></a><a href="qt.html#CursorMoveStyle-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CursorMoveStyle-enum">Qt.CursorMoveStyle</a> QTextDocument.defaultCursorMoveStyle (<i>self</i>)</h3>
+<p>默认光标的运动风格被用于所有<a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a>从文档中创建的对象。默认值是<a href="qt.html#CursorMoveStyle-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CursorMoveStyle-enum">Qt.LogicalMoveStyle</a>。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qtextdocument.html#setDefaultCursorMoveStyle" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#setDefaultCursorMoveStyle">setDefaultCursorMoveStyle</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="defaultFont"></a><a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a> QTextDocument.defaultFont (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="defaultStyleSheet"></a>QString QTextDocument.defaultStyleSheet (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="defaultTextOption"></a><a href="qtextoption.html" tppabs="http://pyqt4doc.appspot.com/qtextoption.html">QTextOption</a> QTextDocument.defaultTextOption (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="documentLayout"></a><a href="qabstracttextdocumentlayout.html" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html">QAbstractTextDocumentLayout</a> QTextDocument.documentLayout (<i>self</i>)</h3>
+<p>返回此文档的文档布局。</p>
+<p><b>See also</b> <a href="qtextdocument.html#setDocumentLayout" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#setDocumentLayout">setDocumentLayout</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="documentMargin"></a>float QTextDocument.documentMargin (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="drawContents"></a>QTextDocument.drawContents (<i>self</i>, <a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a> <i>p</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>rect</i> = QRectF())</h3>
+<p>绘制与画家文档的内容<i>p</i>，夹在<i>rect</i>。如果<i>rect</i>是一个空矩形（默认），则该文件被涂别夹子。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="end"></a><a href="qtextblock.html" tppabs="http://pyqt4doc.appspot.com/qtextblock.html">QTextBlock</a> QTextDocument.end (<i>self</i>)</h3>
+<p>这个函数返回一个块来测试该文档的末尾，同时遍历它。</p>
+<pre class="cpp">
+     <span class="keyword">for</span> (<span class="type"><a href="qtextblock.html" tppabs="http://pyqt4doc.appspot.com/qtextblock.html">QTextBlock</a></span> it <span class="operator">=</span> doc<span class="operator">-</span><span class="operator">&gt;</span>begin(); it <span class="operator">!</span><span class="operator">=</span> doc<span class="operator">-</span><span class="operator">&gt;</span>end(); it <span class="operator">=</span> it<span class="operator">.</span>next())
+         cout <span class="operator">&lt;</span><span class="operator">&lt;</span> it<span class="operator">.</span>text()<span class="operator">.</span>toStdString() <span class="operator">&lt;</span><span class="operator">&lt;</span> endl;
+</pre>
+<p>返回的块是无效的，并表示文档中的最后一个块后，该块。您可以使用<a href="qtextdocument.html#lastBlock" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#lastBlock">lastBlock</a>（）来检索该文件的最后一个有效的块。</p>
+<p><b>See also</b> <a href="qtextdocument.html#lastBlock" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#lastBlock">lastBlock</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="find"></a><a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a> QTextDocument.find (<i>self</i>, QString <i>subString</i>, int <i>position</i> = 0, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtextdocument-findflags.html">FindFlags</a> <i>options</i> = 0)</h3>
+<p>查找字符串的下一个出现，<i>subString</i>，在文档中。搜索从给定的位置<i>cursor</i>，并进行转发通过文件，除非在搜索选项另有规定。该<i>options</i>控制执行的搜索类型。</p>
+<p>返回一个游标，如果选择的匹配<i>subString</i>被发现，否则返回空指针。</p>
+<p>如果给定的<i>cursor</i>有一个选择，开始搜索选择之后，否则它开始在光标所在的位置。</p>
+<p>默认情况下，搜索是区分大小写的，并且可以在文档中的任意位置匹配的文本。</p>
+
+
+<h3 class="fn">
+<a name="find-2"></a><a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a> QTextDocument.find (<i>self</i>, <a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a> <i>expr</i>, int <i>position</i> = 0, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtextdocument-findflags.html">FindFlags</a> <i>options</i> = 0)</h3>
+<p>查找下一个出现的匹配正则表达式，<i>expr</i>，在文档中。搜索从给定的位置<i>cursor</i>，并进行转发通过文件，除非在搜索选项另有规定。该<i>options</i>控制执行的搜索类型。该<a href="qtextdocument.html#FindFlag-enum" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#FindFlag-enum">FindCaseSensitively</a>选项被忽略这个过载，使用QRegExp.caseSensitivity代替。</p>
+<p>返回一个游标，如果找到匹配选择的匹配，否则返回空指针。</p>
+<p>如果给定的<i>cursor</i>有一个选择，开始搜索选择之后，否则它开始在光标所在的位置。</p>
+<p>默认情况下，搜索是区分大小写的，并且可以在文档中的任意位置匹配的文本。</p>
+
+
+<h3 class="fn">
+<a name="find-3"></a><a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a> QTextDocument.find (<i>self</i>, QString <i>subString</i>, <a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a> <i>cursor</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtextdocument-findflags.html">FindFlags</a> <i>options</i> = 0)</h3>
+<p>这是一个重载函数。</p>
+<p>查找字符串的下一个出现，<i>subString</i>，在文档中。搜索从给定的<i>position</i>，并进行转发通过文件，除非在搜索选项另有规定。该<i>options</i>控制执行的搜索类型。</p>
+<p>返回一个游标，如果选择的匹配<i>subString</i>被发现，否则返回空指针。</p>
+<p>如果<i>position</i>为0 （默认） ，搜索将从该文档的开头，否则它开始在指定的位置。</p>
+
+
+<h3 class="fn">
+<a name="find-4"></a><a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a> QTextDocument.find (<i>self</i>, <a href="qregexp.html" tppabs="http://pyqt4doc.appspot.com/qregexp.html">QRegExp</a> <i>expr</i>, <a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a> <i>cursor</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtextdocument-findflags.html">FindFlags</a> <i>options</i> = 0)</h3>
+<p>这是一个重载函数。</p>
+<p>查找下一个出现的匹配正则表达式，<i>expr</i>，在文档中。搜索从给定的<i>position</i>，并进行转发通过文件，除非在搜索选项另有规定。该<i>options</i>控制执行的搜索类型。该<a href="qtextdocument.html#FindFlag-enum" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#FindFlag-enum">FindCaseSensitively</a>选项被忽略这个过载，使用QRegExp.caseSensitivity代替。</p>
+<p>返回一个游标，如果找到匹配选择的匹配，否则返回空指针。</p>
+<p>如果<i>position</i>为0 （默认） ，搜索将从该文档的开头，否则它开始在指定的位置。</p>
+
+
+<h3 class="fn">
+<a name="findBlock"></a><a href="qtextblock.html" tppabs="http://pyqt4doc.appspot.com/qtextblock.html">QTextBlock</a> QTextDocument.findBlock (<i>self</i>, int <i>pos</i>)</h3>
+<p>返回包含文本块<i>pos</i>个字符。</p>
+
+
+<h3 class="fn">
+<a name="findBlockByLineNumber"></a><a href="qtextblock.html" tppabs="http://pyqt4doc.appspot.com/qtextblock.html">QTextBlock</a> QTextDocument.findBlockByLineNumber (<i>self</i>, int <i>blockNumber</i>)</h3>
+<p>返回包含指定的文本块<i>lineNumber</i>。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qtextblock.html#firstLineNumber" tppabs="http://pyqt4doc.appspot.com/qtextblock.html#firstLineNumber">QTextBlock.firstLineNumber</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="findBlockByNumber"></a><a href="qtextblock.html" tppabs="http://pyqt4doc.appspot.com/qtextblock.html">QTextBlock</a> QTextDocument.findBlockByNumber (<i>self</i>, int <i>blockNumber</i>)</h3>
+<p>具有指定返回文本块<i>blockNumber</i>。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qtextblock.html#blockNumber" tppabs="http://pyqt4doc.appspot.com/qtextblock.html#blockNumber">QTextBlock.blockNumber</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="firstBlock"></a><a href="qtextblock.html" tppabs="http://pyqt4doc.appspot.com/qtextblock.html">QTextBlock</a> QTextDocument.firstBlock (<i>self</i>)</h3>
+<p>返回文档的第一个文本块。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="idealWidth"></a>float QTextDocument.idealWidth (<i>self</i>)</h3>
+<p>返回文本文档的理想宽度。的理想宽度是该文件的实际使用宽度不考虑可选的路线。它始终是\u003c=<a href="qtextdocument.html#size-prop" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#size-prop">size</a>（ ） ，宽（ ） 。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qtextdocument.html#adjustSize" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#adjustSize">adjustSize</a>（）和<a href="qtextdocument.html#textWidth-prop" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#textWidth-prop">textWidth</a>。</p>
+
+
+<h3 class="fn">
+<a name="indentWidth"></a>float QTextDocument.indentWidth (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="isEmpty"></a>bool QTextDocument.isEmpty (<i>self</i>)</h3>
+<p>返回True如果该文件是空的，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isModified"></a>bool QTextDocument.isModified (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="isRedoAvailable"></a>bool QTextDocument.isRedoAvailable (<i>self</i>)</h3>
+<p>返回True如果重做可用;否则返回False。</p>
+<p><b>See also</b> <a href="qtextdocument.html#isUndoAvailable" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#isUndoAvailable">isUndoAvailable</a>（）和<a href="qtextdocument.html#availableRedoSteps" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#availableRedoSteps">availableRedoSteps</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isUndoAvailable"></a>bool QTextDocument.isUndoAvailable (<i>self</i>)</h3>
+<p>返回True如果撤消可用;否则返回False。</p>
+<p><b>See also</b> <a href="qtextdocument.html#isRedoAvailable" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#isRedoAvailable">isRedoAvailable</a>（）和<a href="qtextdocument.html#availableUndoSteps" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#availableUndoSteps">availableUndoSteps</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isUndoRedoEnabled"></a>bool QTextDocument.isUndoRedoEnabled (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="lastBlock"></a><a href="qtextblock.html" tppabs="http://pyqt4doc.appspot.com/qtextblock.html">QTextBlock</a> QTextDocument.lastBlock (<i>self</i>)</h3>
+<p>返回文档的最后一个（有效）的文本块。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="lineCount"></a>int QTextDocument.lineCount (<i>self</i>)</h3>
+<p>返回该文件的行数（如果布局支持）。否则，这是相同的块的数目。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qtextdocument.html#blockCount-prop" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#blockCount-prop">blockCount</a>（）和<a href="qtextdocument.html#characterCount" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#characterCount">characterCount</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="loadResource"></a>QVariant QTextDocument.loadResource (<i>self</i>, int <i>type</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>name</i>)</h3>
+<p>将指定的数据加载<i>type</i>从具有给定的资源<i>name</i>。</p>
+<p>这个功能是由所谓的富文本引擎不直接通过存储请求数据<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>的，但仍与它相关联。例如，图像是将一个名称属性间接引用<a href="qtextimageformat.html" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html">QTextImageFormat</a>对象。</p>
+<p>当被Qt调用，<i>type</i>是的值中的一个<a href="qtextdocument.html#ResourceType-enum" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#ResourceType-enum">QTextDocument.ResourceType</a>。</p>
+<p>如果<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>是的一个子对象<a href="qtextedit.html" tppabs="http://pyqt4doc.appspot.com/qtextedit.html">QTextEdit</a>，<a href="qtextbrowser.html" tppabs="http://pyqt4doc.appspot.com/qtextbrowser.html">QTextBrowser</a>或<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>本身则默认实现尝试检索从父数据。</p>
+
+
+<h3 class="fn">
+<a name="markContentsDirty"></a>QTextDocument.markContentsDirty (<i>self</i>, int <i>from</i>, int <i>length</i>)</h3>
+<p>标志着由给定的指定的内容<i>position</i>和<i>length</i>为“脏” ，通知它需要被重新布置的文档。</p>
+
+
+<h3 class="fn">
+<a name="maximumBlockCount"></a>int QTextDocument.maximumBlockCount (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="metaInformation"></a>QString QTextDocument.metaInformation (<i>self</i>, <a href="qtextdocument.html#MetaInformation-enum" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#MetaInformation-enum">MetaInformation</a> <i>info</i>)</h3>
+<p>返回有关指定类型的文件元信息<i>info</i>。</p>
+<p><b>See also</b> <a href="qtextdocument.html#setMetaInformation" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#setMetaInformation">setMetaInformation</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="object"></a><a href="qtextobject.html" tppabs="http://pyqt4doc.appspot.com/qtextobject.html">QTextObject</a> QTextDocument.object (<i>self</i>, int <i>objectIndex</i>)</h3>
+<p>返回与给定关联的文本对象<i>objectIndex</i>。</p>
+
+
+<h3 class="fn">
+<a name="objectForFormat"></a><a href="qtextobject.html" tppabs="http://pyqt4doc.appspot.com/qtextobject.html">QTextObject</a> QTextDocument.objectForFormat (<i>self</i>, <a href="qtextformat.html" tppabs="http://pyqt4doc.appspot.com/qtextformat.html">QTextFormat</a>)</h3>
+<p>返回与格式相关联的文本对象<i>f</i>。</p>
+
+
+<h3 class="fn">
+<a name="pageCount"></a>int QTextDocument.pageCount (<i>self</i>)</h3>
+<p>返回本文件中的页面的数量。</p>
+
+
+<h3 class="fn">
+<a name="pageSize"></a><a href="qsizef.html" tppabs="http://pyqt4doc.appspot.com/qsizef.html">QSizeF</a> QTextDocument.pageSize (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="print"></a>QTextDocument.print (<i>self</i>, <a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a> <i>printer</i>)</h3>
+<p>打印文档给定的<i>printer</i>。该<a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a>必须设置正与该函数使用之前。</p>
+<p>这仅仅是一个方便的方法来整份文件打印到打印机。</p>
+<p>如果该文件是通过在一个特定的高度已经分页<a href="qtextdocument.html#pageSize-prop" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#pageSize-prop">pageSize</a>（）属性在打印原样。</p>
+<p>如果该文件不分页，例如像在使用一个文件<a href="qtextedit.html" tppabs="http://pyqt4doc.appspot.com/qtextedit.html">QTextEdit</a>，那么该文件的临时副本被创建和复制是根据的大小分成多个页面<a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a>的paperRect （ ） 。默认情况下2厘米页边距设置在文档中的内容。此外，当前页码印在每一页的底部。</p>
+<p>需要注意的是<a href="qprinter.html#PrintRange-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PrintRange-enum">QPrinter.Selection</a>不支持的打印范围使用此功能，因为选择是一个属性<a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a>。如果你有一个<a href="qtextedit.html" tppabs="http://pyqt4doc.appspot.com/qtextedit.html">QTextEdit</a>与您相关<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>那么你可以使用<a href="qtextedit.html" tppabs="http://pyqt4doc.appspot.com/qtextedit.html">QTextEdit</a>的print （ ）函数，因为<a href="qtextedit.html" tppabs="http://pyqt4doc.appspot.com/qtextedit.html">QTextEdit</a>有权访问用户的选择。</p>
+<p><b>See also</b> <a href="qtextedit.html#print" tppabs="http://pyqt4doc.appspot.com/qtextedit.html#print">QTextEdit.print</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="print"></a>QTextDocument.print_ (<i>self</i>, <a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a> <i>printer</i>)</h3>
+<p>打印文档给定的<i>printer</i>。该<a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a>必须设置正与该函数使用之前。</p>
+<p>这仅仅是一个方便的方法来整份文件打印到打印机。</p>
+<p>如果该文件是通过在一个特定的高度已经分页<a href="qtextdocument.html#pageSize-prop" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#pageSize-prop">pageSize</a>（）属性在打印原样。</p>
+<p>如果该文件不分页，例如像在使用一个文件<a href="qtextedit.html" tppabs="http://pyqt4doc.appspot.com/qtextedit.html">QTextEdit</a>，那么该文件的临时副本被创建和复制是根据的大小分成多个页面<a href="qprinter.html" tppabs="http://pyqt4doc.appspot.com/qprinter.html">QPrinter</a>的paperRect （ ） 。默认情况下2厘米页边距设置在文档中的内容。此外，当前页码印在每一页的底部。</p>
+<p>需要注意的是<a href="qprinter.html#PrintRange-enum" tppabs="http://pyqt4doc.appspot.com/qprinter.html#PrintRange-enum">QPrinter.Selection</a>不支持的打印范围使用此功能，因为选择是一个属性<a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a>。如果你有一个<a href="qtextedit.html" tppabs="http://pyqt4doc.appspot.com/qtextedit.html">QTextEdit</a>与您相关<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>那么你可以使用<a href="qtextedit.html" tppabs="http://pyqt4doc.appspot.com/qtextedit.html">QTextEdit</a>的print （ ）函数，因为<a href="qtextedit.html" tppabs="http://pyqt4doc.appspot.com/qtextedit.html">QTextEdit</a>有权访问用户的选择。</p>
+<p><b>See also</b> <a href="qtextedit.html#print" tppabs="http://pyqt4doc.appspot.com/qtextedit.html#print">QTextEdit.print</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="redo"></a>QTextDocument.redo (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void redo()</tt>。</p>
+<p>重做上的文档上一次编辑操作，如果<a href="qtextdocument.html#isRedoAvailable" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#isRedoAvailable">redo is available</a>。</p>
+<p>提供<i>cursor</i>定位在其中的出版操作被重做的位置的末端。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="redo-2"></a>QTextDocument.redo (<i>self</i>, <a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a> <i>cursor</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>重做上的文档上一次编辑操作，如果<a href="qtextdocument.html#isRedoAvailable" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#isRedoAvailable">redo is available</a>。</p>
+
+
+<h3 class="fn">
+<a name="resource"></a>QVariant QTextDocument.resource (<i>self</i>, int <i>type</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>name</i>)</h3>
+<p>指定的返回数据<i>type</i>从具有给定的资源<i>name</i>。</p>
+<p>这个功能是由所谓的富文本引擎不直接通过存储请求数据<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>的，但仍与它相关联。例如，图像是将一个名称属性间接引用<a href="qtextimageformat.html" tppabs="http://pyqt4doc.appspot.com/qtextimageformat.html">QTextImageFormat</a>对象。</p>
+<p>资源文件中的内部缓存。如果资源不能在高速缓存中找到， loadResource叫尝试装载该资源。 loadResource应该那么请使用addResource将资源添加到缓存中。</p>
+<p><b>See also</b> <a href="qtextdocument.html#ResourceType-enum" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#ResourceType-enum">QTextDocument.ResourceType</a>。</p>
+
+
+<h3 class="fn">
+<a name="revision"></a>int QTextDocument.revision (<i>self</i>)</h3>
+<p>返回文档的版本（如果撤消已启用） 。</p>
+<p>修改是保证增加时不修改的文档进行编辑。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qtextblock.html#revision" tppabs="http://pyqt4doc.appspot.com/qtextblock.html#revision">QTextBlock.revision</a>（）和<a href="qtextdocument.html#modified-prop" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#modified-prop">isModified</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rootFrame"></a><a href="qtextframe.html" tppabs="http://pyqt4doc.appspot.com/qtextframe.html">QTextFrame</a> QTextDocument.rootFrame (<i>self</i>)</h3>
+<p>返回文档的根框架。</p>
+
+
+<h3 class="fn">
+<a name="setDefaultCursorMoveStyle"></a>QTextDocument.setDefaultCursorMoveStyle (<i>self</i>, <a href="qt.html#CursorMoveStyle-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CursorMoveStyle-enum">Qt.CursorMoveStyle</a> <i>style</i>)</h3>
+<p>设置默认光标的运动风格，以给定的<i>style</i>。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qtextdocument.html#defaultCursorMoveStyle" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#defaultCursorMoveStyle">defaultCursorMoveStyle</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setDefaultFont"></a>QTextDocument.setDefaultFont (<i>self</i>, <a href="qfont.html" tppabs="http://pyqt4doc.appspot.com/qfont.html">QFont</a> <i>font</i>)</h3>
+<h3 class="fn">
+<a name="setDefaultStyleSheet"></a>QTextDocument.setDefaultStyleSheet (<i>self</i>, QString <i>sheet</i>)</h3>
+<h3 class="fn">
+<a name="setDefaultTextOption"></a>QTextDocument.setDefaultTextOption (<i>self</i>, <a href="qtextoption.html" tppabs="http://pyqt4doc.appspot.com/qtextoption.html">QTextOption</a> <i>option</i>)</h3>
+<h3 class="fn">
+<a name="setDocumentLayout"></a>QTextDocument.setDocumentLayout (<i>self</i>, <a href="qabstracttextdocumentlayout.html" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html">QAbstractTextDocumentLayout</a> <i>layout</i>)</h3>
+<p>该<i>layout</i>说法有它的所有权转移给Qt的。</p>
+<p>设置要使用的特定文件<i>layout</i>。以前的布局将被删除。</p>
+<p><b>See also</b> <a href="qtextdocument.html#documentLayoutChanged" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#documentLayoutChanged">documentLayoutChanged</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setDocumentMargin"></a>QTextDocument.setDocumentMargin (<i>self</i>, float <i>margin</i>)</h3>
+<h3 class="fn">
+<a name="setHtml"></a>QTextDocument.setHtml (<i>self</i>, QString <i>html</i>)</h3>
+<p>替换该文件的全部内容以在给定的HTML格式的文本<i>html</i>字符串。</p>
+<p>在HTML格式的尊重，尽可能，例如， “ \u003cb\u003e粗体\u003c / B\u003e正文”将产生的文本，其中第一个字有一个字体的粗细，给它一个大胆的外观： “<b>bold</b>文本“ 。</p>
+<p><b>Note:</b>它是调用者的责任，以确保文本正确解码时，<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>包含HTML创建并传递给setHtml （ ） 。</p>
+<p><b>See also</b> <a href="qtextdocument.html#setPlainText" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#setPlainText">setPlainText</a>（）和<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/richtext-html-subset.html">Supported HTML Subset</a>。</p>
+
+
+<h3 class="fn">
+<a name="setIndentWidth"></a>QTextDocument.setIndentWidth (<i>self</i>, float <i>width</i>)</h3>
+<h3 class="fn">
+<a name="setMaximumBlockCount"></a>QTextDocument.setMaximumBlockCount (<i>self</i>, int <i>maximum</i>)</h3>
+<h3 class="fn">
+<a name="setMetaInformation"></a>QTextDocument.setMetaInformation (<i>self</i>, <a href="qtextdocument.html#MetaInformation-enum" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#MetaInformation-enum">MetaInformation</a> <i>info</i>, QString)</h3>
+<p>设置由指定类型的文件的元数据信息<i>info</i>为给定的<i>string</i>。</p>
+<p><b>See also</b> <a href="qtextdocument.html#metaInformation" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#metaInformation">metaInformation</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setModified"></a>QTextDocument.setModified (<i>self</i>, bool <i>on</i> = True)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setModified(bool = 1)</tt>。</p>
+<h3 class="fn">
+<a name="setPageSize"></a>QTextDocument.setPageSize (<i>self</i>, <a href="qsizef.html" tppabs="http://pyqt4doc.appspot.com/qsizef.html">QSizeF</a> <i>size</i>)</h3>
+<h3 class="fn">
+<a name="setPlainText"></a>QTextDocument.setPlainText (<i>self</i>, QString <i>text</i>)</h3>
+<p>替换该文件的整个内容与给定的纯<i>text</i>。</p>
+<p><b>See also</b> <a href="qtextdocument.html#setHtml" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#setHtml">setHtml</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setTextWidth"></a>QTextDocument.setTextWidth (<i>self</i>, float <i>width</i>)</h3>
+<h3 class="fn">
+<a name="setUndoRedoEnabled"></a>QTextDocument.setUndoRedoEnabled (<i>self</i>, bool <i>enable</i>)</h3>
+<h3 class="fn">
+<a name="setUseDesignMetrics"></a>QTextDocument.setUseDesignMetrics (<i>self</i>, bool <i>b</i>)</h3>
+<h3 class="fn">
+<a name="size"></a><a href="qsizef.html" tppabs="http://pyqt4doc.appspot.com/qsizef.html">QSizeF</a> QTextDocument.size (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="textWidth"></a>float QTextDocument.textWidth (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="toHtml"></a>QString QTextDocument.toHtml (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>encoding</i> = QByteArray())</h3>
+<p>返回一个包含文档的HTML表示形式的字符串。</p>
+<p>该<i>encoding</i>参数指定用于在HTML头中的charset属性的值。例如，如果指定'UTF - 8' ，然后将生成的HTML的开始看起来像这样：</p>
+<pre class="cpp">
+ <span class="operator">&lt;</span>html<span class="operator">&gt;</span><span class="operator">&lt;</span>head<span class="operator">&gt;</span><span class="operator">&lt;</span>meta http<span class="operator">-</span>equiv<span class="operator">=</span><span class="string">"Content-Type"</span> content<span class="operator">=</span><span class="string">"text/html; charset=utf-8"</span><span class="operator">&gt;</span><span class="operator">&lt;</span><span class="operator">/</span>head<span class="operator">&gt;</span><span class="operator">&lt;</span>body<span class="operator">&gt;</span><span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+</pre>
+<p>如果没有指定编码，然后不产生这样的元信息。</p>
+<p>如果您以后在返回的HTML字符串转换成字节数组传输通过网络或保存到磁盘时，你应该指定编码你要在这里为转换为字节数组使用。</p>
+<p><b>See also</b> <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/richtext-html-subset.html">Supported
+HTML Subset</a>。</p>
+
+
+<h3 class="fn">
+<a name="toPlainText"></a>QString QTextDocument.toPlainText (<i>self</i>)</h3>
+<p>返回包含在文档中的纯文本。如果你想格式化信息使用<a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a>代替。</p>
+<p><b>See also</b> <a href="qtextdocument.html#toHtml" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#toHtml">toHtml</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="undo"></a>QTextDocument.undo (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void undo()</tt>。</p>
+<p>撤消对文档的最后一个编辑操作，如果撤消可用。提供<i>cursor</i>定位在其中的出版操作已撤消的位置的末端。</p>
+<p>请参阅<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qundo.html">Qt Undo Framework</a>文档。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qtextdocument.html#undoAvailable" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#undoAvailable">undoAvailable</a>（）和<a href="qtextdocument.html#undoRedoEnabled-prop" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#undoRedoEnabled-prop">isUndoRedoEnabled</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="undo-2"></a>QTextDocument.undo (<i>self</i>, <a href="qtextcursor.html" tppabs="http://pyqt4doc.appspot.com/qtextcursor.html">QTextCursor</a> <i>cursor</i>)</h3>
+<p>这是一个重载函数。</p>
+
+
+<h3 class="fn">
+<a name="useDesignMetrics"></a>bool QTextDocument.useDesignMetrics (<i>self</i>)</h3>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="blockCountChanged"></a>void blockCountChanged (int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的文本块中的文件的修改的总数。在传递的值<i>newBlockCount</i>是新的总和。</p>
+<p>此功能被引入Qt的4.3 。</p>
+
+
+<h3 class="fn">
+<a name="contentsChange"></a>void contentsChange (int,int,int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时该文档的内容更改，例如，当文本被插入或删除，或格式化时被应用。</p>
+<p>信息提供有关<i>position</i>字符的变化发生的位置在文件中的，字符数去除（<i>charsRemoved</i>），以及字符数加（<i>charsAdded</i>） 。</p>
+<p>该信号发出之前，该文档的布局管理器会通知有关更改。这个钩子可以让你实现语法高亮显示的文档。</p>
+<p><b>See also</b> <a href="qabstracttextdocumentlayout.html#documentChanged" tppabs="http://pyqt4doc.appspot.com/qabstracttextdocumentlayout.html#documentChanged">QAbstractTextDocumentLayout.documentChanged</a>（）和<a href="qtextdocument.html#contentsChanged" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#contentsChanged">contentsChanged</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="contentsChanged"></a>void contentsChanged ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时该文档的内容更改，例如，当文本被插入或删除，或格式化时被应用。</p>
+<p><b>See also</b> <a href="qtextdocument.html#contentsChange" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#contentsChange">contentsChange</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="cursorPositionChanged"></a>void cursorPositionChanged (const QTextCursor&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的光标的位置改变了由于编辑操作。改变了光标在传递<i>cursor</i>。如果你需要一个信号，当光标移动的箭头键，您可以使用<a href="qtextedit.html#cursorPositionChanged" tppabs="http://pyqt4doc.appspot.com/qtextedit.html#cursorPositionChanged">cursorPositionChanged()</a>在信号<a href="qtextedit.html" tppabs="http://pyqt4doc.appspot.com/qtextedit.html">QTextEdit</a>。</p>
+
+
+<h3 class="fn">
+<a name="documentLayoutChanged"></a>void documentLayoutChanged ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>当一个新的文档布局设置这个信号被发射。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qtextdocument.html#setDocumentLayout" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#setDocumentLayout">setDocumentLayout</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="modificationChanged"></a>void modificationChanged (bool)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时在文档的内容改变了，影响到修改状态的方法。如果<i>changed</i>诚然，该文件已被修改，否则为假。</p>
+<p>例如，调用SetModified之（假）上的文档，然后插入文本引起来获得所发出的信号。如果撤消操作，使所述的文件返回到其原始未修饰的状态下，信号将得到再次发射。</p>
+
+
+<h3 class="fn">
+<a name="redoAvailable"></a>void redoAvailable (bool)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时重做操作变得可用（<i>available</i>为True）或不可用（<i>available</i>是假的） 。</p>
+
+
+<h3 class="fn">
+<a name="undoAvailable"></a>void undoAvailable (bool)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时撤销操作变得可用（<i>available</i>为True）或不可用（<i>available</i>是假的） 。</p>
+<p>请参阅<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qundo.html">Qt Undo Framework</a>文档。</p>
+<p><b>See also</b> <a href="qtextdocument.html#undo" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#undo">undo</a>（）和<a href="qtextdocument.html#undoRedoEnabled-prop" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html#undoRedoEnabled-prop">isUndoRedoEnabled</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="undoCommandAdded"></a>void undoCommandAdded ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>每撤消一个新的水平被添加到时间这个信号被发射<a href="qtextdocument.html" tppabs="http://pyqt4doc.appspot.com/qtextdocument.html">QTextDocument</a>。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

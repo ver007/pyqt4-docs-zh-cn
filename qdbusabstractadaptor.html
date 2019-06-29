@@ -1,0 +1,80 @@
+﻿<html>
+<head>
+<title>QDBusAbstractAdaptor Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDBusAbstractAdaptor Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdbus.html">QtDBus</a> module]</sup></sup>
+</h1>
+<p>该QDBusAbstractAdaptor类是D -总线适配器类的基类。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusabstractadaptor.html#QDBusAbstractAdaptor" tppabs="http://pyqt4doc.appspot.com/qdbusabstractadaptor.html#QDBusAbstractAdaptor">__init__</a></b> (<i>self</i>, QObject <i>parent</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdbusabstractadaptor.html#autoRelaySignals" tppabs="http://pyqt4doc.appspot.com/qdbusabstractadaptor.html#autoRelaySignals">autoRelaySignals</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusabstractadaptor.html#setAutoRelaySignals" tppabs="http://pyqt4doc.appspot.com/qdbusabstractadaptor.html#setAutoRelaySignals">setAutoRelaySignals</a></b> (<i>self</i>, bool <i>enable</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDBusAbstractAdaptor类是D -总线适配器类的基类。</p>
+<p>该QDBusAbstractAdaptor类是起点打算使用的D-Bus提供接口给外部世界的所有对象。这是通过将来自于QDBusAbstractAdaptor到正常的一个的一个或多个类来实现<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>然后注册了<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>与QDBusConnection.registerObject 。 QDBusAbstractAdaptor对象旨在是重量轻的包装，大多只是中继呼叫到真实对象（它的父） ，且信号从它。</p>
+<p>每个QDBusAbstractAdaptor派生类应该定义的D-Bus接口它使用的是Q_CLASSINFO宏在类定义实现。请注意，只有一个接口可以以这种方式被暴露。</p>
+<p>QDBusAbstractAdaptor使用标准<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>的信号，槽和属性的机制来确定什么信号，方法和属性导出到总线。通过QDBusAbstractAdaptor派生类发出的任何信号会自动通过任何物体上注册的D-Bus连接中继。</p>
+<p>从QDBusAbstractAdaptor派生类必须使用在堆上创建的<i>new</i>算子，并且不能被用户删除（它们将被自动删除，当它们连接到该对象也被删除） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDBusAbstractAdaptor"></a>QDBusAbstractAdaptor.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i>)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a href="qdbusabstractadaptor.html" tppabs="http://pyqt4doc.appspot.com/qdbusabstractadaptor.html">QDBusAbstractAdaptor</a>同<i>obj</i>作为父对象。</p>
+
+
+<h3 class="fn">
+<a name="autoRelaySignals"></a>bool QDBusAbstractAdaptor.autoRelaySignals (<i>self</i>)</h3>
+<p>返回True如果自动信号从实物中继（见对象（ ） ）被启用， otherwiser返回False 。</p>
+<p><b>See also</b> <a href="qdbusabstractadaptor.html#setAutoRelaySignals" tppabs="http://pyqt4doc.appspot.com/qdbusabstractadaptor.html#setAutoRelaySignals">setAutoRelaySignals</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setAutoRelaySignals"></a>QDBusAbstractAdaptor.setAutoRelaySignals (<i>self</i>, bool <i>enable</i>)</h3>
+<p>自动切换信号从实物中继（见对象（ ） ） 。</p>
+<p>自动信号中继由具有两个类完全相同的方法signatue父的信号的信号 - 信号连接。</p>
+<p>If <i>enable</i>设置为True ，连接信号，如果设置为False ，断开所有信号。</p>
+<p><b>See also</b> <a href="qdbusabstractadaptor.html#autoRelaySignals" tppabs="http://pyqt4doc.appspot.com/qdbusabstractadaptor.html#autoRelaySignals">autoRelaySignals</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

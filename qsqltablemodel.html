@@ -1,0 +1,500 @@
+﻿<html>
+<head>
+<title>QSqlTableModel Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QSqlTableModel Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtsql.html">QtSql</a> module]</sup></sup>
+</h1>
+<p>在与QSqlTableModel类提供了一个单一的数据库表中的可编辑的数据模型。<a href="#details">More...</a></p>
+
+<p>继承<a href="qsqlquerymodel.html" tppabs="http://pyqt4doc.appspot.com/qsqlquerymodel.html">QSqlQueryModel</a>。</p>
+<p>通过继承<a href="qsqlrelationaltablemodel.html" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html">QSqlRelationalTableModel</a>。</p>
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qsqltablemodel.html#EditStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#EditStrategy-enum">EditStrategy</a></b> { OnFieldChange, OnRowChange, OnManualSubmit }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qsqltablemodel.html#QSqlTableModel" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#QSqlTableModel">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None, QSqlDatabase <i>db</i> = QSqlDatabase())</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqltablemodel.html#clear" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#clear">clear</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qsqltablemodel.html#data" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#data">data</a></b> (<i>self</i>, QModelIndex <i>index</i>, int <i>role</i> = Qt.DisplayRole)</li>
+<li>
+<div class="fn"></div>QSqlDatabase <b><a href="qsqltablemodel.html#database" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#database">database</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqltablemodel.html#deleteRowFromTable" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#deleteRowFromTable">deleteRowFromTable</a></b> (<i>self</i>, int <i>row</i>)</li>
+<li>
+<div class="fn"></div>EditStrategy <b><a href="qsqltablemodel.html#editStrategy" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#editStrategy">editStrategy</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qsqltablemodel.html#fieldIndex" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#fieldIndex">fieldIndex</a></b> (<i>self</i>, QString <i>fieldName</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsqltablemodel.html#filter" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#filter">filter</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Qt.ItemFlags <b><a href="qsqltablemodel.html#flags" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#flags">flags</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qsqltablemodel.html#headerData" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#headerData">headerData</a></b> (<i>self</i>, int <i>section</i>, Qt.Orientation <i>orientation</i>, int <i>role</i> = Qt.DisplayRole)</li>
+<li>
+<div class="fn"></div>QModelIndex <b><a href="qsqltablemodel.html#indexInQuery" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#indexInQuery">indexInQuery</a></b> (<i>self</i>, QModelIndex <i>item</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqltablemodel.html#insertRecord" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#insertRecord">insertRecord</a></b> (<i>self</i>, int <i>row</i>, QSqlRecord <i>record</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqltablemodel.html#insertRowIntoTable" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#insertRowIntoTable">insertRowIntoTable</a></b> (<i>self</i>, QSqlRecord <i>values</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqltablemodel.html#insertRows" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#insertRows">insertRows</a></b> (<i>self</i>, int <i>row</i>, int <i>count</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqltablemodel.html#isDirty" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#isDirty">isDirty</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsqltablemodel.html#orderByClause" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#orderByClause">orderByClause</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSqlIndex <b><a href="qsqltablemodel.html#primaryKey" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#primaryKey">primaryKey</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqltablemodel.html#removeColumns" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#removeColumns">removeColumns</a></b> (<i>self</i>, int <i>column</i>, int <i>count</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqltablemodel.html#removeRows" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#removeRows">removeRows</a></b> (<i>self</i>, int <i>row</i>, int <i>count</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqltablemodel.html#revert" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#revert">revert</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqltablemodel.html#revertAll" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#revertAll">revertAll</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqltablemodel.html#revertRow" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#revertRow">revertRow</a></b> (<i>self</i>, int <i>row</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qsqltablemodel.html#rowCount" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#rowCount">rowCount</a></b> (<i>self</i>, QModelIndex <i>parent</i> = QModelIndex())</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqltablemodel.html#select" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#select">select</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsqltablemodel.html#selectStatement" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#selectStatement">selectStatement</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqltablemodel.html#setData" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setData">setData</a></b> (<i>self</i>, QModelIndex <i>index</i>, QVariant <i>value</i>, int <i>role</i> = Qt.EditRole)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqltablemodel.html#setEditStrategy" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setEditStrategy">setEditStrategy</a></b> (<i>self</i>, EditStrategy <i>strategy</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqltablemodel.html#setFilter" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setFilter">setFilter</a></b> (<i>self</i>, QString <i>filter</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqltablemodel.html#setPrimaryKey" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setPrimaryKey">setPrimaryKey</a></b> (<i>self</i>, QSqlIndex <i>key</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqltablemodel.html#setQuery" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setQuery">setQuery</a></b> (<i>self</i>, QSqlQuery <i>query</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqltablemodel.html#setRecord" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setRecord">setRecord</a></b> (<i>self</i>, int <i>row</i>, QSqlRecord <i>record</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqltablemodel.html#setSort" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setSort">setSort</a></b> (<i>self</i>, int <i>column</i>, Qt.SortOrder <i>order</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqltablemodel.html#setTable" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setTable">setTable</a></b> (<i>self</i>, QString <i>tableName</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqltablemodel.html#sort" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#sort">sort</a></b> (<i>self</i>, int <i>column</i>, Qt.SortOrder <i>order</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqltablemodel.html#submit" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#submit">submit</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqltablemodel.html#submitAll" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#submitAll">submitAll</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsqltablemodel.html#tableName" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#tableName">tableName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqltablemodel.html#updateRowInTable" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#updateRowInTable">updateRowInTable</a></b> (<i>self</i>, int <i>row</i>, QSqlRecord <i>values</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qsqltablemodel.html#beforeDelete" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#beforeDelete">beforeDelete</a></b> (int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qsqltablemodel.html#beforeInsert" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#beforeInsert">beforeInsert</a></b> (QSqlRecord&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qsqltablemodel.html#beforeUpdate" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#beforeUpdate">beforeUpdate</a></b> (int,QSqlRecord&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qsqltablemodel.html#primeInsert" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#primeInsert">primeInsert</a></b> (int,QSqlRecord&amp;)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>在与QSqlTableModel类提供了一个单一的数据库表中的可编辑的数据模型。</p>
+<p>QSqlTableModel的功能是从一个单一的表中读取和写入数据库记录的高层次的接口。它是建立在较低级别的顶<a href="qsqlquery.html" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html">QSqlQuery</a>并且可以用来提供数据可以看到类如<a href="qtableview.html" tppabs="http://pyqt4doc.appspot.com/qtableview.html">QTableView</a>。例如：</p>
+<pre class="cpp">
+     <span class="type">QSqlTableModel</span> <span class="operator">*</span>model <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QSqlTableModel</span>(parentObject<span class="operator">,</span> database);
+     model<span class="operator">-</span><span class="operator">&gt;</span>setTable(<span class="string">"employee"</span>);
+     model<span class="operator">-</span><span class="operator">&gt;</span>setEditStrategy(<span class="type">QSqlTableModel</span><span class="operator">.</span>OnManualSubmit);
+     model<span class="operator">-</span><span class="operator">&gt;</span>select();
+     model<span class="operator">-</span><span class="operator">&gt;</span>setHeaderData(<span class="number">0</span><span class="operator">,</span> <span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>Horizontal<span class="operator">,</span> tr(<span class="string">"Name"</span>));
+     model<span class="operator">-</span><span class="operator">&gt;</span>setHeaderData(<span class="number">1</span><span class="operator">,</span> <span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>Horizontal<span class="operator">,</span> tr(<span class="string">"Salary"</span>));
+
+     <span class="type"><a href="qtableview.html" tppabs="http://pyqt4doc.appspot.com/qtableview.html">QTableView</a></span> <span class="operator">*</span>view <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qtableview.html" tppabs="http://pyqt4doc.appspot.com/qtableview.html">QTableView</a></span>;
+     view<span class="operator">-</span><span class="operator">&gt;</span>setModel(model);
+     view<span class="operator">-</span><span class="operator">&gt;</span>hideColumn(<span class="number">0</span>); <span class="comment">// don't show the ID</span>
+     view<span class="operator">-</span><span class="operator">&gt;</span>show();
+</pre>
+<p>我们设置SQL表的名称和编辑策略，然后我们设置视图中的标题显示的标籤。编辑策略决定时由用户在视图中所做的更改实际应用到数据库。可能的值是<a href="qsqltablemodel.html#EditStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#EditStrategy-enum">OnFieldChange</a>，<a href="qsqltablemodel.html#EditStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#EditStrategy-enum">OnRowChange</a>和<a href="qsqltablemodel.html#EditStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#EditStrategy-enum">OnManualSubmit</a>。</p>
+<p>QSqlTableModel的功能也可以用来访问数据库编程，不绑定到一个视图：</p>
+<pre class="cpp">
+     <span class="type"><a href="qsqlquerymodel.html" tppabs="http://pyqt4doc.appspot.com/qsqlquerymodel.html">QSqlQueryModel</a></span> model;
+     model<span class="operator">.</span>setQuery(<span class="string">"SELECT * FROM employee"</span>);
+     <span class="type">int</span> salary <span class="operator">=</span> model<span class="operator">.</span>record(<span class="number">4</span>)<span class="operator">.</span>value(<span class="string">"salary"</span>)<span class="operator">.</span>toInt();
+</pre>
+<p>上面的代码片段中提取<tt>salary</tt>从查询的结果集记录4场<tt>SELECT * from
+employee</tt>。</p>
+<p>它可以用来设置过滤器<a href="qsqltablemodel.html#setFilter" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setFilter">setFilter</a>（ ），或使用修改排序顺序<a href="qsqltablemodel.html#setSort" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setSort">setSort</a>（ ） 。最后，你必须调用<a href="qsqltablemodel.html#select" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#select">select</a>（ ）来填充模型数据。</p>
+<p>该<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/sql-tablemodel.html">sql/tablemodel</a>示例说明了如何使用与QSqlTableModel作为数据源的<a href="qtableview.html" tppabs="http://pyqt4doc.appspot.com/qtableview.html">QTableView</a>。</p>
+<p>QSqlTableModel为外键没有直接的支持。使用<a href="qsqlrelationaltablemodel.html" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaltablemodel.html">QSqlRelationalTableModel</a>和<a href="qsqlrelationaldelegate.html" tppabs="http://pyqt4doc.appspot.com/qsqlrelationaldelegate.html">QSqlRelationalDelegate</a>如果你想解决的外键。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="EditStrategy-enum"></a>QSqlTableModel.EditStrategy</h3>
+<p>该枚举类型描述编辑数据库中的值时，选择哪个策略。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlTableModel.OnFieldChange</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">所有更改模型将被立即应用到数据库。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlTableModel.OnRowChange</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">当用户选择不同的行改变为一行将被应用。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlTableModel.OnManualSubmit</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">所有更改都将被缓存在模型中，直至<a href="qsqltablemodel.html#submitAll" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#submitAll">submitAll</a>（）或<a href="qsqltablemodel.html#revertAll" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#revertAll">revertAll</a>（）被调用。</td>
+</tr>
+</table>
+<p>注意：为了防止插入只有部分初始化行插入到数据库中，<tt>OnFieldChange</tt>会像<tt>OnRowChange</tt>对于新插入的行。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#setEditStrategy" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setEditStrategy">setEditStrategy</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QSqlTableModel"></a>QSqlTableModel.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None, <a href="qsqldatabase.html" tppabs="http://pyqt4doc.appspot.com/qsqldatabase.html">QSqlDatabase</a> <i>db</i> = QSqlDatabase())</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>创建一个空的<a href="qsqltablemodel.html" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html">QSqlTableModel</a>并设置父<i>parent</i>与数据库连接<i>db</i>。如果<i>db</i>是无效的，默认的数据库连接将被使用。</p>
+<p>默认的编辑策略<a href="qsqltablemodel.html#EditStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#EditStrategy-enum">OnRowChange</a>。</p>
+
+
+<h3 class="fn">
+<a name="clear"></a>QSqlTableModel.clear (<i>self</i>)</h3>
+<p>从重新实现<a href="qsqlquerymodel.html#clear" tppabs="http://pyqt4doc.appspot.com/qsqlquerymodel.html#clear">QSqlQueryModel.clear</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="data"></a>QVariant QSqlTableModel.data (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>, int <i>role</i> = Qt.DisplayRole)</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#data" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#data">QAbstractItemModel.data</a>（ ） 。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#setData" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setData">setData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="database"></a><a href="qsqldatabase.html" tppabs="http://pyqt4doc.appspot.com/qsqldatabase.html">QSqlDatabase</a> QSqlTableModel.database (<i>self</i>)</h3>
+<p>返回一个指向所使用的<a href="qsqldatabase.html" tppabs="http://pyqt4doc.appspot.com/qsqldatabase.html">QSqlDatabase</a>或者0，如果没有数据库设置。</p>
+
+
+<h3 class="fn">
+<a name="deleteRowFromTable"></a>bool QSqlTableModel.deleteRowFromTable (<i>self</i>, int <i>row</i>)</h3>
+<p>删除给定的<i>row</i>从当前活动的数据库表。</p>
+<p>这是一种直接操作的数据库上，不应该被直接调用低级别的方法。使用<a href="qabstractitemmodel.html#removeRow" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeRow">removeRow</a>（）或<a href="qsqltablemodel.html#removeRows" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#removeRows">removeRows</a>（）来删除值。该模型将取决于它的编辑策略，决定何时修改数据库。</p>
+<p>返回True如果该行被删除，否则返回False 。</p>
+<p><b>See also</b> <a href="qabstractitemmodel.html#removeRow" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeRow">removeRow</a>（）和<a href="qsqltablemodel.html#removeRows" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#removeRows">removeRows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="editStrategy"></a><a href="qsqltablemodel.html#EditStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#EditStrategy-enum">EditStrategy</a> QSqlTableModel.editStrategy (<i>self</i>)</h3>
+<p>返回当前的编辑策略。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#setEditStrategy" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setEditStrategy">setEditStrategy</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fieldIndex"></a>int QSqlTableModel.fieldIndex (<i>self</i>, QString <i>fieldName</i>)</h3>
+<p>返回字段的索引<i>fieldName</i>，或-1，如果没有相应的字段存在于模型中。</p>
+
+
+<h3 class="fn">
+<a name="filter"></a>QString QSqlTableModel.filter (<i>self</i>)</h3>
+<p>返回当前设置的过滤器。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#setFilter" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setFilter">setFilter</a>（）和<a href="qsqltablemodel.html#select" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#select">select</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="flags"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-itemflags.html">Qt.ItemFlags</a> QSqlTableModel.flags (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#flags" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#flags">QAbstractItemModel.flags</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="headerData"></a>QVariant QSqlTableModel.headerData (<i>self</i>, int <i>section</i>, <a href="qt.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Orientation-enum">Qt.Orientation</a> <i>orientation</i>, int <i>role</i> = Qt.DisplayRole)</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#headerData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#headerData">QAbstractItemModel.headerData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="indexInQuery"></a><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> QSqlTableModel.indexInQuery (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>item</i>)</h3>
+<p>返回在给定的数据库中的结果集的值的索引<i>item</i>在模型中。</p>
+<p>返回值是相同的<i>item</i>如果已经插入任何行或列，删除或移动了。</p>
+<p>返回一个无效的模型索引，如果<i>item</i>超出范围或<i>item</i>不指向结果集中的值。</p>
+<p><b>See also</b> <a href="qsqlquerymodel.html#indexInQuery" tppabs="http://pyqt4doc.appspot.com/qsqlquerymodel.html#indexInQuery">QSqlQueryModel.indexInQuery</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertRecord"></a>bool QSqlTableModel.insertRecord (<i>self</i>, int <i>row</i>, <a href="qsqlrecord.html" tppabs="http://pyqt4doc.appspot.com/qsqlrecord.html">QSqlRecord</a> <i>record</i>)</h3>
+<p>插入<i>record</i>后<i>row</i>。如果<i>row</i>为负，该记录将被追加到末尾。电话<a href="qsqltablemodel.html#insertRows" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#insertRows">insertRows</a>（）和<a href="qsqltablemodel.html#setRecord" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setRecord">setRecord</a>（内部） 。</p>
+<p>返回True如果可以插入该行，否则为False。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#insertRows" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#insertRows">insertRows</a>（）和<a href="qsqltablemodel.html#removeRows" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#removeRows">removeRows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertRowIntoTable"></a>bool QSqlTableModel.insertRowIntoTable (<i>self</i>, <a href="qsqlrecord.html" tppabs="http://pyqt4doc.appspot.com/qsqlrecord.html">QSqlRecord</a> <i>values</i>)</h3>
+<p>插入的值<i>values</i>到当前活动的数据库表。</p>
+<p>这是一种直接操作的数据库上，不应该被直接调用低级别的方法。使用<a href="qabstractitemmodel.html#insertRow" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertRow">insertRow</a>（）和<a href="qsqltablemodel.html#setData" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setData">setData</a>（）来插入值。该模型将取决于它的编辑策略，决定何时修改数据库。</p>
+<p>返回True如果该值可以被插入，否则为False。错误信息可以检索与<a href="qsqlquerymodel.html#lastError" tppabs="http://pyqt4doc.appspot.com/qsqlquerymodel.html#lastError">lastError</a>（ ） 。</p>
+<p><b>See also</b> <a href="qsqlquerymodel.html#lastError" tppabs="http://pyqt4doc.appspot.com/qsqlquerymodel.html#lastError">lastError</a>（ ）<a href="qabstractitemmodel.html#insertRow" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertRow">insertRow</a>（）和<a href="qsqltablemodel.html#insertRows" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#insertRows">insertRows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertRows"></a>bool QSqlTableModel.insertRows (<i>self</i>, int <i>row</i>, int <i>count</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#insertRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#insertRows">QAbstractItemModel.insertRows</a>（ ） 。</p>
+<p>Inserts <i>count</i>在位置空行<i>row</i>。需要注意的是<i>parent</i>必须是无效的，因为这种模式不支持父子关系。</p>
+<p>仅1行的时间可以在使用被插入的<a href="qsqltablemodel.html#EditStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#EditStrategy-enum">OnFieldChange</a> or
+<a href="qsqltablemodel.html#EditStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#EditStrategy-enum">OnRowChange</a>更新策略。</p>
+<p>该<a href="qsqltablemodel.html#primeInsert" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#primeInsert">primeInsert</a>（）信号将被发射的每一个新行。连接到它，如果你想用默认值初始化的新行。</p>
+<p>返回False如果参数超出范围，否则返回True 。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#primeInsert" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#primeInsert">primeInsert</a>（）和<a href="qsqltablemodel.html#insertRecord" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#insertRecord">insertRecord</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isDirty"></a>bool QSqlTableModel.isDirty (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>返回True如果该索引处的值<i>index</i>脏，否则为False 。脏值是进行了修改，在模型中，但尚未写入到数据库中的值。</p>
+<p>If <i>index</i>无效或指向一个不存在的列，则返回False。</p>
+
+
+<h3 class="fn">
+<a name="orderByClause"></a>QString QSqlTableModel.orderByClause (<i>self</i>)</h3>
+<p>返回一个SQL<tt>ORDER BY</tt>基于条当前设置的排序顺序。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#setSort" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setSort">setSort</a>（）和<a href="qsqltablemodel.html#selectStatement" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#selectStatement">selectStatement</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="primaryKey"></a><a href="qsqlindex.html" tppabs="http://pyqt4doc.appspot.com/qsqlindex.html">QSqlIndex</a> QSqlTableModel.primaryKey (<i>self</i>)</h3>
+<p>返回主键为当前表，或空<a href="qsqlindex.html" tppabs="http://pyqt4doc.appspot.com/qsqlindex.html">QSqlIndex</a>如果表没有设置或没有主键。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#setTable" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setTable">setTable</a>（ ）<a href="qsqltablemodel.html#setPrimaryKey" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setPrimaryKey">setPrimaryKey</a>（）和<a href="qsqldatabase.html#primaryIndex" tppabs="http://pyqt4doc.appspot.com/qsqldatabase.html#primaryIndex">QSqlDatabase.primaryIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="removeColumns"></a>bool QSqlTableModel.removeColumns (<i>self</i>, int <i>column</i>, int <i>count</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#removeColumns" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeColumns">QAbstractItemModel.removeColumns</a>（ ） 。</p>
+<p>移除<i>count</i>从列<i>parent</i>模型，从索引<i>column</i>。</p>
+<p>如果返回的列被成功删除，否则返回False 。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#removeRows" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#removeRows">removeRows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="removeRows"></a>bool QSqlTableModel.removeRows (<i>self</i>, int <i>row</i>, int <i>count</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#removeRows" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#removeRows">QAbstractItemModel.removeRows</a>（ ） 。</p>
+<p>移除<i>count</i>行开始<i>row</i>。由于此型号不支持的层次结构，<i>parent</i>必须是一个无效的模型索引。</p>
+<p>放出<a href="qsqltablemodel.html#beforeDelete" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#beforeDelete">beforeDelete</a>（一排之前）信号被删除。当编辑策略<a href="qsqltablemodel.html#EditStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#EditStrategy-enum">OnManualSubmit</a>信号发射被延迟，直到<a href="qsqltablemodel.html#submitAll" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#submitAll">submitAll</a>（）被调用。</p>
+<p>返回True如果所有行会被移除，否则返回False 。详细的错误信息可以使用检索<a href="qsqlquerymodel.html#lastError" tppabs="http://pyqt4doc.appspot.com/qsqlquerymodel.html#lastError">lastError</a>（ ） 。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#removeColumns" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#removeColumns">removeColumns</a>（）和<a href="qsqltablemodel.html#insertRows" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#insertRows">insertRows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="revert"></a>QSqlTableModel.revert (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void revert()</tt>。</p>
+<p>从重新实现<a href="qabstractitemmodel.html#revert" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#revert">QAbstractItemModel.revert</a>（ ） 。</p>
+<p>这个重新实现槽是由所谓的项目代表，当用户取消了编辑当前行。</p>
+<p>恢复的变化，如果模型的策略设置为<a href="qsqltablemodel.html#EditStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#EditStrategy-enum">OnRowChange</a>。什么都不做的其他的编辑策略。</p>
+<p>使用<a href="qsqltablemodel.html#revertAll" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#revertAll">revertAll</a>（）恢复为所有挂起的更改<a href="qsqltablemodel.html#EditStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#EditStrategy-enum">OnManualSubmit</a>策略或<a href="qsqltablemodel.html#revertRow" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#revertRow">revertRow</a>（）来恢复一个特定的行。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#submit" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#submit">submit</a>（ ）<a href="qsqltablemodel.html#submitAll" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#submitAll">submitAll</a>（ ）<a href="qsqltablemodel.html#revertRow" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#revertRow">revertRow</a>（）和<a href="qsqltablemodel.html#revertAll" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#revertAll">revertAll</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="revertAll"></a>QSqlTableModel.revertAll (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void revertAll()</tt>。</p>
+<p>恢复所有挂起的更改。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#revert" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#revert">revert</a>（ ）<a href="qsqltablemodel.html#revertRow" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#revertRow">revertRow</a>（）和<a href="qsqltablemodel.html#submitAll" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#submitAll">submitAll</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="revertRow"></a>QSqlTableModel.revertRow (<i>self</i>, int <i>row</i>)</h3>
+<p>恢复为指定的所有变化<i>row</i>。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#revert" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#revert">revert</a>（ ）<a href="qsqltablemodel.html#revertAll" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#revertAll">revertAll</a>（ ）<a href="qsqltablemodel.html#submit" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#submit">submit</a>（）和<a href="qsqltablemodel.html#submitAll" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#submitAll">submitAll</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rowCount"></a>int QSqlTableModel.rowCount (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>parent</i> = QModelIndex())</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#rowCount" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#rowCount">QAbstractItemModel.rowCount</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="select"></a>bool QSqlTableModel.select (<i>self</i>)</h3>
+<p>填充模型从表中的数据是通过设置<a href="qsqltablemodel.html#setTable" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setTable">setTable</a>（ ） ，使用指定的过滤和排序条件，如果成功返回True，否则返回False 。</p>
+<p><b>Note:</b>调用select （ ）将返回任何未提交的更改并删除任何插入的列。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#setTable" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setTable">setTable</a>（ ）<a href="qsqltablemodel.html#setFilter" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setFilter">setFilter</a>（）和<a href="qsqltablemodel.html#selectStatement" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#selectStatement">selectStatement</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="selectStatement"></a>QString QSqlTableModel.selectStatement (<i>self</i>)</h3>
+<p>返回SQL<tt>SELECT</tt>语句内部使用的填充模式。该表包括过滤器和<tt>ORDER BY</tt>子句。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#filter" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#filter">filter</a>（）和<a href="qsqltablemodel.html#orderByClause" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#orderByClause">orderByClause</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setData"></a>bool QSqlTableModel.setData (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>, QVariant <i>value</i>, int <i>role</i> = Qt.EditRole)</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#setData" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#setData">QAbstractItemModel.setData</a>（ ） 。</p>
+<p>设置数据的项<i>index</i>为角色<i>role</i>至<i>value</i>。取决于编辑策略，则该值可能被应用到数据库一次或缓存在模型中。</p>
+<p>返回True如果该值可以设置或虚假的错误，例如，如果<i>index</i>是出界。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#editStrategy" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#editStrategy">editStrategy</a>（ ）<a href="qsqltablemodel.html#data" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#data">data</a>（ ）<a href="qsqltablemodel.html#submit" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#submit">submit</a>（ ）<a href="qsqltablemodel.html#submitAll" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#submitAll">submitAll</a>（）和<a href="qsqltablemodel.html#revertRow" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#revertRow">revertRow</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setEditStrategy"></a>QSqlTableModel.setEditStrategy (<i>self</i>, <a href="qsqltablemodel.html#EditStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#EditStrategy-enum">EditStrategy</a> <i>strategy</i>)</h3>
+<p>设置的策略对数据库中的值编辑<i>strategy</i>。</p>
+<p>这将恢复所有挂起的更改。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#editStrategy" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#editStrategy">editStrategy</a>（）和<a href="qsqltablemodel.html#revertAll" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#revertAll">revertAll</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFilter"></a>QSqlTableModel.setFilter (<i>self</i>, QString <i>filter</i>)</h3>
+<p>设置当前过滤器<i>filter</i>。</p>
+<p>该滤波器是一个SQL<tt>WHERE</tt>没有关键字条款<tt>WHERE</tt>（例如，<tt>name='Josephine')</tt>。</p>
+<p>如果已填充模型与数据库中的数据，该机型配备了新的过滤器重新选择它。否则，过滤器会在下一次应用<a href="qsqltablemodel.html#select" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#select">select</a>（）被调用。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#filter" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#filter">filter</a>（ ）<a href="qsqltablemodel.html#select" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#select">select</a>（ ）<a href="qsqltablemodel.html#selectStatement" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#selectStatement">selectStatement</a>（）和<a href="qsqltablemodel.html#orderByClause" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#orderByClause">orderByClause</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPrimaryKey"></a>QSqlTableModel.setPrimaryKey (<i>self</i>, <a href="qsqlindex.html" tppabs="http://pyqt4doc.appspot.com/qsqlindex.html">QSqlIndex</a> <i>key</i>)</h3>
+<p>受保护的方法，让子类来设置主键<i>key</i>。</p>
+<p>通常情况下，只要您拨打的主索引会自动设置<a href="qsqltablemodel.html#setTable" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setTable">setTable</a>（ ） 。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#primaryKey" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#primaryKey">primaryKey</a>（）和<a href="qsqldatabase.html#primaryIndex" tppabs="http://pyqt4doc.appspot.com/qsqldatabase.html#primaryIndex">QSqlDatabase.primaryIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setQuery"></a>QSqlTableModel.setQuery (<i>self</i>, <a href="qsqlquery.html" tppabs="http://pyqt4doc.appspot.com/qsqlquery.html">QSqlQuery</a> <i>query</i>)</h3>
+<p>这个函数简单地调用QSqlQueryModel.setQuery （<i>query</i>） 。在你通常应该不叫<a href="qsqltablemodel.html" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html">QSqlTableModel</a>。相反，使用<a href="qsqltablemodel.html#setTable" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setTable">setTable</a>（ ）<a href="qsqltablemodel.html#setSort" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setSort">setSort</a>（ ）<a href="qsqltablemodel.html#setFilter" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setFilter">setFilter</a>（ ）等，来设置该查询。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#selectStatement" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#selectStatement">selectStatement</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setRecord"></a>bool QSqlTableModel.setRecord (<i>self</i>, int <i>row</i>, <a href="qsqlrecord.html" tppabs="http://pyqt4doc.appspot.com/qsqlrecord.html">QSqlRecord</a> <i>record</i>)</h3>
+<p>在指定的设定值<i>row</i>到的值<i>record</i>。返回True如果所有的值可以被置位，否则返回False 。</p>
+<p><b>See also</b> <a href="qsqlquerymodel.html#record" tppabs="http://pyqt4doc.appspot.com/qsqlquerymodel.html#record">record</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setSort"></a>QSqlTableModel.setSort (<i>self</i>, int <i>column</i>, <a href="qt.html#SortOrder-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#SortOrder-enum">Qt.SortOrder</a> <i>order</i>)</h3>
+<p>设置排序顺序<i>column</i>至<i>order</i>。这不影响当前数据，使用新的排序顺序，调用刷新数据<a href="qsqltablemodel.html#select" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#select">select</a>（ ） 。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#sort" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#sort">sort</a>（ ）<a href="qsqltablemodel.html#select" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#select">select</a>（）和<a href="qsqltablemodel.html#orderByClause" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#orderByClause">orderByClause</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setTable"></a>QSqlTableModel.setTable (<i>self</i>, QString <i>tableName</i>)</h3>
+<p>对这样的模式操作到数据库表<i>tableName</i>。不从表中选择数据，但其获取字段信息。</p>
+<p>要填充模型与表的数据，调用<a href="qsqltablemodel.html#select" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#select">select</a>（ ） 。</p>
+<p>错误信息可以检索与<a href="qsqlquerymodel.html#lastError" tppabs="http://pyqt4doc.appspot.com/qsqlquerymodel.html#lastError">lastError</a>（ ） 。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#select" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#select">select</a>（ ）<a href="qsqltablemodel.html#setFilter" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setFilter">setFilter</a>（）和<a href="qsqlquerymodel.html#lastError" tppabs="http://pyqt4doc.appspot.com/qsqlquerymodel.html#lastError">lastError</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sort"></a>QSqlTableModel.sort (<i>self</i>, int <i>column</i>, <a href="qt.html#SortOrder-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#SortOrder-enum">Qt.SortOrder</a> <i>order</i>)</h3>
+<p>从重新实现<a href="qabstractitemmodel.html#sort" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#sort">QAbstractItemModel.sort</a>（ ） 。</p>
+<p>通过对数据进行排序<i>column</i>与排序顺序<i>order</i>。这将立即选择数据，使用<a href="qsqltablemodel.html#setSort" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setSort">setSort</a>（ ）来设置排序顺序不填充模型数据。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#setSort" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setSort">setSort</a>（ ）<a href="qsqltablemodel.html#select" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#select">select</a>（）和<a href="qsqltablemodel.html#orderByClause" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#orderByClause">orderByClause</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="submit"></a>bool QSqlTableModel.submit (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>bool submit()</tt>。</p>
+<p>从重新实现<a href="qabstractitemmodel.html#submit" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#submit">QAbstractItemModel.submit</a>（ ） 。</p>
+<p>这个重新实现槽是由所谓的项目代表，当用户停止编辑当前行。</p>
+<p>提交当前编辑的行，如果该模型的策略设置为<a href="qsqltablemodel.html#EditStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#EditStrategy-enum">OnRowChange</a>
+or <a href="qsqltablemodel.html#EditStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#EditStrategy-enum">OnFieldChange</a>。什么都不做的<a href="qsqltablemodel.html#EditStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#EditStrategy-enum">OnManualSubmit</a>战略。</p>
+<p>使用<a href="qsqltablemodel.html#submitAll" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#submitAll">submitAll</a>（ ）提交的所有挂起的更改<a href="qsqltablemodel.html#EditStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#EditStrategy-enum">OnManualSubmit</a>战略。</p>
+<p>成功时返回TRUE ，否则返回False 。使用<a href="qsqlquerymodel.html#lastError" tppabs="http://pyqt4doc.appspot.com/qsqlquerymodel.html#lastError">lastError</a>（ ）来查询详细的错误信息。</p>
+<p>成功模型将被重新填充。任何提出它的意见将失去他们的选择。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#revert" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#revert">revert</a>（ ）<a href="qsqltablemodel.html#revertRow" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#revertRow">revertRow</a>（ ）<a href="qsqltablemodel.html#submitAll" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#submitAll">submitAll</a>（ ）<a href="qsqltablemodel.html#revertAll" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#revertAll">revertAll</a>（）和<a href="qsqlquerymodel.html#lastError" tppabs="http://pyqt4doc.appspot.com/qsqlquerymodel.html#lastError">lastError</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="submitAll"></a>bool QSqlTableModel.submitAll (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>bool submitAll()</tt>。</p>
+<p>提交所有挂起的更改，并成功返回True 。返回False的错误，详细的错误信息，可以得到<a href="qsqlquerymodel.html#lastError" tppabs="http://pyqt4doc.appspot.com/qsqlquerymodel.html#lastError">lastError</a>（ ） 。</p>
+<p>成功模型将被重新填充。任何提出它的意见将失去他们的选择。</p>
+<p>注意：在<a href="qsqltablemodel.html#EditStrategy-enum" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#EditStrategy-enum">OnManualSubmit</a>模式，已经提交的变更将不会从什么时候submitAll （）失败的缓存中清除。这允许事务被回滚，并再次重新提交，而不会丢失数据。</p>
+<p><b>See also</b> <a href="qsqltablemodel.html#revertAll" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#revertAll">revertAll</a>（）和<a href="qsqlquerymodel.html#lastError" tppabs="http://pyqt4doc.appspot.com/qsqlquerymodel.html#lastError">lastError</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="tableName"></a>QString QSqlTableModel.tableName (<i>self</i>)</h3>
+<p>返回当前选定的表的名称。</p>
+
+
+<h3 class="fn">
+<a name="updateRowInTable"></a>bool QSqlTableModel.updateRowInTable (<i>self</i>, int <i>row</i>, <a href="qsqlrecord.html" tppabs="http://pyqt4doc.appspot.com/qsqlrecord.html">QSqlRecord</a> <i>values</i>)</h3>
+<p>更新给定的<i>row</i>在与指定当前活动的数据库表<i>values</i>。成功返回True ，否则返回False 。</p>
+<p>这是一种直接操作的数据库上，不应该被直接调用低级别的方法。使用<a href="qsqltablemodel.html#setData" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setData">setData</a>（）来更新值。该模型将取决于它的编辑策略，决定何时修改数据库。</p>
+<p>请注意，只有具有所生成的标志设定值被更新。所生成的标志可与设置<a href="qsqlrecord.html#setGenerated" tppabs="http://pyqt4doc.appspot.com/qsqlrecord.html#setGenerated">QSqlRecord.setGenerated</a>（ ）中，用测试<a href="qsqlrecord.html#isGenerated" tppabs="http://pyqt4doc.appspot.com/qsqlrecord.html#isGenerated">QSqlRecord.isGenerated</a>（ ） 。</p>
+<p><b>See also</b> <a href="qsqlrecord.html#isGenerated" tppabs="http://pyqt4doc.appspot.com/qsqlrecord.html#isGenerated">QSqlRecord.isGenerated</a>（）和<a href="qsqltablemodel.html#setData" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#setData">setData</a>（ ） 。</p>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="beforeDelete"></a>void beforeDelete (int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号是由发射<a href="qsqltablemodel.html#deleteRowFromTable" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#deleteRowFromTable">deleteRowFromTable</a>（ ）之前，<i>row</i>从当前活动的数据库表中删除。</p>
+
+
+<h3 class="fn">
+<a name="beforeInsert"></a>void beforeInsert (QSqlRecord&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号是由发射<a href="qsqltablemodel.html#insertRowIntoTable" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#insertRowIntoTable">insertRowIntoTable</a>（ ）一个新行插入到当前活动的数据库表之前。这是将要被插入的值被存储在<i>record</i>并且可以进行修改将被插入之前，他们。</p>
+
+
+<h3 class="fn">
+<a name="beforeUpdate"></a>void beforeUpdate (int,QSqlRecord&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号是由发射<a href="qsqltablemodel.html#updateRowInTable" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#updateRowInTable">updateRowInTable</a>（ ）之前，<i>row</i>在当前活动的数据库表从值更新<i>record</i>。</p>
+<p>请注意，只有被标记为生成的值将被更新。所生成的标记可与设置<a href="qsqlrecord.html#setGenerated" tppabs="http://pyqt4doc.appspot.com/qsqlrecord.html#setGenerated">QSqlRecord.setGenerated</a>（） ，并检查与<a href="qsqlrecord.html#isGenerated" tppabs="http://pyqt4doc.appspot.com/qsqlrecord.html#isGenerated">QSqlRecord.isGenerated</a>（ ） 。</p>
+<p><b>See also</b> <a href="qsqlrecord.html#isGenerated" tppabs="http://pyqt4doc.appspot.com/qsqlrecord.html#isGenerated">QSqlRecord.isGenerated</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="primeInsert"></a>void primeInsert (int,QSqlRecord&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号是由发射<a href="qsqltablemodel.html#insertRows" tppabs="http://pyqt4doc.appspot.com/qsqltablemodel.html#insertRows">insertRows</a>（ ）中，当在给定的开始插入<i>row</i>当前活动的数据库表。该<i>record</i>参数可以被写入（因为它是一个参考），例如，以使用默认值的字段。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

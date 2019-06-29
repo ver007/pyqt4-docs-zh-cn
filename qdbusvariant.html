@@ -1,0 +1,113 @@
+﻿<html>
+<head>
+<title>QDBusVariant Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDBusVariant Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdbus.html">QtDBus</a> module]</sup></sup>
+</h1>
+<p>该QDBusVariant类使程序员可以识别由D-Bus的类型系统提供的变量类型。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusvariant.html#QDBusVariant" tppabs="http://pyqt4doc.appspot.com/qdbusvariant.html#QDBusVariant">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusvariant.html#QDBusVariant-2" tppabs="http://pyqt4doc.appspot.com/qdbusvariant.html#QDBusVariant-2">__init__</a></b> (<i>self</i>, QVariant <i>variant</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusvariant.html#QDBusVariant-3" tppabs="http://pyqt4doc.appspot.com/qdbusvariant.html#QDBusVariant-3">__init__</a></b> (<i>self</i>, QDBusVariant)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdbusvariant.html#setVariant" tppabs="http://pyqt4doc.appspot.com/qdbusvariant.html#setVariant">setVariant</a></b> (<i>self</i>, QVariant <i>variant</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qdbusvariant.html#variant" tppabs="http://pyqt4doc.appspot.com/qdbusvariant.html#variant">variant</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>bool <b><a href="qdbusvariant.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qdbusvariant.html#__eq__">__eq__</a></b> (<i>self</i>, QDBusVariant <i>v2</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdbusvariant.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qdbusvariant.html#__ne__">__ne__</a></b> (<i>self</i>, QDBusVariant <i>v2</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDBusVariant类使程序员可以识别由D-Bus的类型系统提供的变量类型。</p>
+<p>一个D-Bus的函数，它接受一个整数，一个D-Bus的变体和一个字符串作为参数，可以调用下面的参数列表（见<a href="qdbusmessage.html#setArguments" tppabs="http://pyqt4doc.appspot.com/qdbusmessage.html#setArguments">QDBusMessage.setArguments</a>（）） ：</p>
+<pre class="cpp">
+     <span class="type"><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qlist.html">QList</a></span><span class="operator">&lt;</span><span class="type"><a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a></span><span class="operator">&gt;</span> arguments;
+     arguments <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="type"><a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a></span>(<span class="number">42</span>) <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="type"><a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a></span><span class="operator">.</span>fromValue(<span class="type">QDBusVariant</span>(<span class="number">43</span>)) <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="type"><a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a></span>(<span class="string">"hello"</span>);
+     myDBusMessage<span class="operator">.</span>setArguments(arguments);
+</pre>
+<p>当一个D-Bus的函数返回一个D-Bus的变种，它可以检索如下：</p>
+<pre class="cpp">
+     <span class="comment">// call a D-Bus function that returns a D-Bus variant</span>
+     <span class="type"><a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a></span> v <span class="operator">=</span> callMyDBusFunction();
+     <span class="comment">// retrieve the D-Bus variant</span>
+     <span class="type">QDBusVariant</span> dbusVariant <span class="operator">=</span> qvariant_cast<span class="operator">&lt;</span><span class="type">QDBusVariant</span><span class="operator">&gt;</span>(v);
+     <span class="comment">// retrieve the actual value stored in the D-Bus variant</span>
+     <span class="type"><a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a></span> result <span class="operator">=</span> dbusVariant<span class="operator">.</span>variant();
+</pre>
+<p>该<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>内QDBusVariant需要在一个D-Bus的变种正常的D-Bus的值和值来区分。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDBusVariant"></a>QDBusVariant.__init__ (<i>self</i>)</h3>
+<p>构造一个新的D-Bus的变体。</p>
+
+
+<h3 class="fn">
+<a name="QDBusVariant-2"></a>QDBusVariant.__init__ (<i>self</i>, QVariant <i>variant</i>)</h3>
+<p>构造一个新的D-Bus的变种从给定的Qt<i>variant</i>。</p>
+<p><b>See also</b> <a href="qdbusvariant.html#setVariant" tppabs="http://pyqt4doc.appspot.com/qdbusvariant.html#setVariant">setVariant</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QDBusVariant-3"></a>QDBusVariant.__init__ (<i>self</i>, <a href="qdbusvariant.html" tppabs="http://pyqt4doc.appspot.com/qdbusvariant.html">QDBusVariant</a>)</h3>
+<h3 class="fn">
+<a name="setVariant"></a>QDBusVariant.setVariant (<i>self</i>, QVariant <i>variant</i>)</h3>
+<p>分配给Qt的价值<i>variant</i>这种D-Bus的变体。</p>
+<p><b>See also</b> <a href="qdbusvariant.html#variant" tppabs="http://pyqt4doc.appspot.com/qdbusvariant.html#variant">variant</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="variant"></a>QVariant QDBusVariant.variant (<i>self</i>)</h3>
+<p>返回此D-Bus的变体作为<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>对象。</p>
+<p><b>See also</b> <a href="qdbusvariant.html#setVariant" tppabs="http://pyqt4doc.appspot.com/qdbusvariant.html#setVariant">setVariant</a>（ ） 。</p>
+<h3 class="fn">
+<a name="__eq__"></a>bool QDBusVariant.__eq__ (<i>self</i>, <a href="qdbusvariant.html" tppabs="http://pyqt4doc.appspot.com/qdbusvariant.html">QDBusVariant</a> <i>v2</i>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QDBusVariant.__ne__ (<i>self</i>, <a href="qdbusvariant.html" tppabs="http://pyqt4doc.appspot.com/qdbusvariant.html">QDBusVariant</a> <i>v2</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

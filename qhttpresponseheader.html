@@ -1,0 +1,141 @@
+﻿<html>
+<head>
+<title>QHttpResponseHeader Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QHttpResponseHeader Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtnetwork.html">QtNetwork</a> module]</sup></sup>
+</h1>
+<p>该QHttpResponseHeader类包含HTTP响应头信息。<a href="#details">More...</a></p>
+
+<p>继承<a href="qhttpheader.html" tppabs="http://pyqt4doc.appspot.com/qhttpheader.html">QHttpHeader</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qhttpresponseheader.html#QHttpResponseHeader" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#QHttpResponseHeader">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhttpresponseheader.html#QHttpResponseHeader-2" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#QHttpResponseHeader-2">__init__</a></b> (<i>self</i>, QHttpResponseHeader <i>header</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhttpresponseheader.html#QHttpResponseHeader-3" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#QHttpResponseHeader-3">__init__</a></b> (<i>self</i>, QString <i>str</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhttpresponseheader.html#QHttpResponseHeader-4" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#QHttpResponseHeader-4">__init__</a></b> (<i>self</i>, int <i>code</i>, QString <i>text</i> = QString(), int <i>major</i> = 1, int <i>minor</i> = 1)</li>
+<li>
+<div class="fn"></div>int <b><a href="qhttpresponseheader.html#majorVersion" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#majorVersion">majorVersion</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qhttpresponseheader.html#minorVersion" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#minorVersion">minorVersion</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qhttpresponseheader.html#parseLine" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#parseLine">parseLine</a></b> (<i>self</i>, QString <i>line</i>, int <i>number</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qhttpresponseheader.html#reasonPhrase" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#reasonPhrase">reasonPhrase</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhttpresponseheader.html#setStatusLine" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#setStatusLine">setStatusLine</a></b> (<i>self</i>, int <i>code</i>, QString <i>text</i> = QString(), int <i>major</i> = 1, int <i>minor</i> = 1)</li>
+<li>
+<div class="fn"></div>int <b><a href="qhttpresponseheader.html#statusCode" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#statusCode">statusCode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qhttpresponseheader.html#toString" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#toString">toString</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QHttpResponseHeader类包含HTTP响应头信息。</p>
+<p>这个类是由<a href="qhttp.html" tppabs="http://pyqt4doc.appspot.com/qhttp.html">QHttp</a>类报告的报头信息，客户端从服务器接收。</p>
+<p>HTTP响应有一个状态代码，表明该响应的状态。此代码是一个3位数的整数结果代码（详见至RFC 1945） 。除了状态代码，您还可以指定描述的代码的原因（ “理词” ），一个人类可读的文本。这个类可以让你得到状态码和原因短语。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QHttpResponseHeader"></a>QHttpResponseHeader.__init__ (<i>self</i>)</h3>
+<p>构造一个空的HTTP响应头。</p>
+
+
+<h3 class="fn">
+<a name="QHttpResponseHeader-2"></a>QHttpResponseHeader.__init__ (<i>self</i>, <a href="qhttpresponseheader.html" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html">QHttpResponseHeader</a> <i>header</i>)</h3>
+<p>构造的副本<i>header</i>。</p>
+
+
+<h3 class="fn">
+<a name="QHttpResponseHeader-3"></a>QHttpResponseHeader.__init__ (<i>self</i>, QString <i>str</i>)</h3>
+<p>从字符串构造一个HTTP响应头<i>str</i>。该字符串被解析和信息设置。该<i>str</i>应该由一个或多个的“ \ r \ n ”分隔行，第一行应该是状态行（格式： HTTP版本，空间，状态代码，空间，原因短语） ;其馀各行应该有格式为key ，冒号，空格，值。</p>
+
+
+<h3 class="fn">
+<a name="QHttpResponseHeader-4"></a>QHttpResponseHeader.__init__ (<i>self</i>, int <i>code</i>, QString <i>text</i> = QString(), int <i>major</i> = 1, int <i>minor</i> = 1)</h3>
+<p>构造一个<a class="obsolete" href="qhttpresponseheader.html" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html">QHttpResponseHeader</a>，状态代码设置为<i>code</i>，原因短语<i>text</i>和协议版本<i>majorVer</i>和<i>minorVer</i>。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qhttpresponseheader.html#statusCode" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#statusCode">statusCode</a>（ ）<a href="qhttpresponseheader.html#reasonPhrase" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#reasonPhrase">reasonPhrase</a>（ ）<a href="qhttpresponseheader.html#majorVersion" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#majorVersion">majorVersion</a>（）和<a href="qhttpresponseheader.html#minorVersion" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#minorVersion">minorVersion</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="majorVersion"></a>int QHttpResponseHeader.majorVersion (<i>self</i>)</h3>
+<p>从重新实现<a href="qhttpheader.html#majorVersion" tppabs="http://pyqt4doc.appspot.com/qhttpheader.html#majorVersion">QHttpHeader.majorVersion</a>（ ） 。</p>
+<p>返回主协议版本的HTTP响应头。</p>
+<p><b>See also</b> <a href="qhttpresponseheader.html#minorVersion" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#minorVersion">minorVersion</a>（ ）<a href="qhttpresponseheader.html#statusCode" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#statusCode">statusCode</a>（）和<a href="qhttpresponseheader.html#reasonPhrase" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#reasonPhrase">reasonPhrase</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="minorVersion"></a>int QHttpResponseHeader.minorVersion (<i>self</i>)</h3>
+<p>从重新实现<a href="qhttpheader.html#minorVersion" tppabs="http://pyqt4doc.appspot.com/qhttpheader.html#minorVersion">QHttpHeader.minorVersion</a>（ ） 。</p>
+<p>返回未成年协议版本的HTTP响应头。</p>
+<p><b>See also</b> <a href="qhttpresponseheader.html#majorVersion" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#majorVersion">majorVersion</a>（ ）<a href="qhttpresponseheader.html#statusCode" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#statusCode">statusCode</a>（）和<a href="qhttpresponseheader.html#reasonPhrase" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#reasonPhrase">reasonPhrase</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="parseLine"></a>bool QHttpResponseHeader.parseLine (<i>self</i>, QString <i>line</i>, int <i>number</i>)</h3>
+<h3 class="fn">
+<a name="reasonPhrase"></a>QString QHttpResponseHeader.reasonPhrase (<i>self</i>)</h3>
+<p>返回原因短语HTTP响应头。</p>
+<p><b>See also</b> <a href="qhttpresponseheader.html#statusCode" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#statusCode">statusCode</a>（ ）<a href="qhttpresponseheader.html#majorVersion" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#majorVersion">majorVersion</a>（）和<a href="qhttpresponseheader.html#minorVersion" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#minorVersion">minorVersion</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setStatusLine"></a>QHttpResponseHeader.setStatusLine (<i>self</i>, int <i>code</i>, QString <i>text</i> = QString(), int <i>major</i> = 1, int <i>minor</i> = 1)</h3>
+<p>设置状态代码<i>code</i>，原因短语<i>text</i>和协议版本<i>majorVer</i>和<i>minorVer</i>。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qhttpresponseheader.html#statusCode" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#statusCode">statusCode</a>（ ）<a href="qhttpresponseheader.html#reasonPhrase" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#reasonPhrase">reasonPhrase</a>（ ）<a href="qhttpresponseheader.html#majorVersion" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#majorVersion">majorVersion</a>（）和<a href="qhttpresponseheader.html#minorVersion" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#minorVersion">minorVersion</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="statusCode"></a>int QHttpResponseHeader.statusCode (<i>self</i>)</h3>
+<p>返回的HTTP响应头的状态代码。</p>
+<p><b>See also</b> <a href="qhttpresponseheader.html#reasonPhrase" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#reasonPhrase">reasonPhrase</a>（ ）<a href="qhttpresponseheader.html#majorVersion" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#majorVersion">majorVersion</a>（）和<a href="qhttpresponseheader.html#minorVersion" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#minorVersion">minorVersion</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toString"></a>QString QHttpResponseHeader.toString (<i>self</i>)</h3>
+<p>从重新实现<a href="qhttpheader.html#toString" tppabs="http://pyqt4doc.appspot.com/qhttpheader.html#toString">QHttpHeader.toString</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

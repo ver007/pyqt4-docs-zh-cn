@@ -1,0 +1,69 @@
+﻿<html>
+<head>
+<title>QAbstractExtensionFactory Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QAbstractExtensionFactory Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdesigner.html">QtDesigner</a> module]</sup></sup>
+</h1>
+<p>该QAbstractExtensionFactory类提供了在Qt Designer中的扩展工厂的接口。<a href="#details">More...</a></p>
+
+<p>通过继承<a href="qextensionfactory.html" tppabs="http://pyqt4doc.appspot.com/qextensionfactory.html">QExtensionFactory</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractextensionfactory.html#QAbstractExtensionFactory" tppabs="http://pyqt4doc.appspot.com/qabstractextensionfactory.html#QAbstractExtensionFactory">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractextensionfactory.html#QAbstractExtensionFactory-2" tppabs="http://pyqt4doc.appspot.com/qabstractextensionfactory.html#QAbstractExtensionFactory-2">__init__</a></b> (<i>self</i>, QAbstractExtensionFactory)</li>
+<li>
+<div class="fn"></div>QObject <b><a href="qabstractextensionfactory.html#extension" tppabs="http://pyqt4doc.appspot.com/qabstractextensionfactory.html#extension">extension</a></b> (<i>self</i>, QObject <i>object</i>, QString <i>iid</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QAbstractExtensionFactory类提供了在Qt Designer中的扩展工厂的接口。</p>
+<p>QAbstractExtensionFactory不打算直接实例化;使用<a href="qextensionfactory.html" tppabs="http://pyqt4doc.appspot.com/qextensionfactory.html">QExtensionFactory</a>代替。</p>
+<p>In <i>Qt Designer</i>，扩展工厂用于查找并创建一个名为扩展，因为它们是必需的。出于这个原因，实现自定义扩展时，您还必须创建一个<a href="qextensionfactory.html" tppabs="http://pyqt4doc.appspot.com/qextensionfactory.html">QExtensionFactory</a>，即一个类，它能够让你的扩展的一个实例，并使用它注册<i>Qt Designer</i>的<a href="qextensionmanager.html" tppabs="http://pyqt4doc.appspot.com/qextensionmanager.html">extension manager</a>。</p>
+<p>当一个扩展是必需的，<i>Qt Designer</i>的<a href="qextensionmanager.html" tppabs="http://pyqt4doc.appspot.com/qextensionmanager.html">extension manager</a>将通过其所有已注册的工厂运行要求<a href="qextensionfactory.html#createExtension" tppabs="http://pyqt4doc.appspot.com/qextensionfactory.html#createExtension">QExtensionFactory.createExtension</a>（ ）对每一直到第一个能够创建请求的扩展选定对象，被发现。这家工厂将使这个扩展的实例。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QAbstractExtensionFactory"></a>QAbstractExtensionFactory.__init__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="QAbstractExtensionFactory-2"></a>QAbstractExtensionFactory.__init__ (<i>self</i>, <a href="qabstractextensionfactory.html" tppabs="http://pyqt4doc.appspot.com/qabstractextensionfactory.html">QAbstractExtensionFactory</a>)</h3>
+<h3 class="fn">
+<a name="extension"></a><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> QAbstractExtensionFactory.extension (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>object</i>, QString <i>iid</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>返回由指定的扩展名<i>iid</i>对于给定的<i>object</i>。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

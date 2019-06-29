@@ -1,0 +1,631 @@
+﻿<html>
+<head>
+<title>QPaintEngine Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QPaintEngine Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QPaintEngine类提供了如何的抽象定义<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>绘制到一个给定的设备在给定平台上。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qpaintengine.html#DirtyFlag-enum" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#DirtyFlag-enum">DirtyFlag</a></b> { DirtyPen, DirtyBrush, DirtyBrushOrigin, DirtyFont, ..., AllDirty }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qpaintengine-dirtyflags.html">DirtyFlags</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qpaintengine.html#PaintEngineFeature-enum" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#PaintEngineFeature-enum">PaintEngineFeature</a></b> { PrimitiveTransform, PatternTransform, PixmapTransform, PatternBrush, ..., AllFeatures }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qpaintengine-paintenginefeatures.html">PaintEngineFeatures</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qpaintengine.html#PolygonDrawMode-enum" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#PolygonDrawMode-enum">PolygonDrawMode</a></b> { OddEvenMode, WindingMode, ConvexMode, PolylineMode }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qpaintengine.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#Type-enum">Type</a></b> { X11, Windows, QuickDraw, CoreGraphics, ..., MaxUser }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qpaintengine.html#QPaintEngine" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#QPaintEngine">__init__</a></b> (<i>self</i>, PaintEngineFeatures <i>features</i> = 0)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qpaintengine.html#begin" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#begin">begin</a></b> (<i>self</i>, QPaintDevice <i>pdev</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpaintengine.html#drawEllipse" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#drawEllipse">drawEllipse</a></b> (<i>self</i>, QRectF <i>r</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpaintengine.html#drawEllipse-2" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#drawEllipse-2">drawEllipse</a></b> (<i>self</i>, QRect <i>r</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpaintengine.html#drawImage" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#drawImage">drawImage</a></b> (<i>self</i>, QRectF <i>r</i>, QImage <i>pm</i>, QRectF <i>sr</i>, Qt.ImageConversionFlags <i>flags</i> = Qt.AutoColor)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpaintengine.html#drawLines" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#drawLines">drawLines</a></b> (<i>self</i>, QLine <i>lines</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpaintengine.html#drawLines-2" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#drawLines-2">drawLines</a></b> (<i>self</i>, QLineF <i>lines</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpaintengine.html#drawPath" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#drawPath">drawPath</a></b> (<i>self</i>, QPainterPath <i>path</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpaintengine.html#drawPixmap" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#drawPixmap">drawPixmap</a></b> (<i>self</i>, QRectF <i>r</i>, QPixmap <i>pm</i>, QRectF <i>sr</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpaintengine.html#drawPoints" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#drawPoints">drawPoints</a></b> (<i>self</i>, QPointF <i>points</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpaintengine.html#drawPoints-2" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#drawPoints-2">drawPoints</a></b> (<i>self</i>, QPoint <i>points</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpaintengine.html#drawPolygon" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#drawPolygon">drawPolygon</a></b> (<i>self</i>, QPointF <i>points</i>, PolygonDrawMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpaintengine.html#drawPolygon-2" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#drawPolygon-2">drawPolygon</a></b> (<i>self</i>, QPoint <i>points</i>, PolygonDrawMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpaintengine.html#drawRects" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#drawRects">drawRects</a></b> (<i>self</i>, QRect <i>rects</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpaintengine.html#drawRects-2" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#drawRects-2">drawRects</a></b> (<i>self</i>, QRectF <i>rects</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpaintengine.html#drawTextItem" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#drawTextItem">drawTextItem</a></b> (<i>self</i>, QPointF <i>p</i>, QTextItem <i>textItem</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpaintengine.html#drawTiledPixmap" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#drawTiledPixmap">drawTiledPixmap</a></b> (<i>self</i>, QRectF <i>r</i>, QPixmap <i>pixmap</i>, QPointF <i>s</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qpaintengine.html#end" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#end">end</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qpaintengine.html#hasFeature" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#hasFeature">hasFeature</a></b> (<i>self</i>, PaintEngineFeatures <i>feature</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qpaintengine.html#isActive" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#isActive">isActive</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QPaintDevice <b><a href="qpaintengine.html#paintDevice" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#paintDevice">paintDevice</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QPainter <b><a href="qpaintengine.html#painter" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#painter">painter</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpaintengine.html#setActive" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#setActive">setActive</a></b> (<i>self</i>, bool <i>newState</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpaintengine.html#setPaintDevice" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#setPaintDevice">setPaintDevice</a></b> (<i>self</i>, QPaintDevice <i>device</i>)</li>
+<li>
+<div class="fn"></div>Type <b><a href="qpaintengine.html#type" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#type">type</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qpaintengine.html#updateState" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#updateState">updateState</a></b> (<i>self</i>, QPaintEngineState <i>state</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QPaintEngine类提供了如何的抽象定义<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>绘制到一个给定的设备在给定平台上。</p>
+<p>的Qt 4.0提供QPaintEngine的几个预制的实现，因为我们支持不同的画家后端。我们为每个窗口系统和绘画框架，我们支持提供一个绘制引擎。这包括X11在Unix / Linux和<a href="qpaintengine.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#Type-enum">CoreGraphics</a>在Mac OS X此外，我们提供QPaintEngine的实现<a href="qpaintengine.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#Type-enum">OpenGL</a>（可通过<a href="qglwidget.html" tppabs="http://pyqt4doc.appspot.com/qglwidget.html">QGLWidget</a>）和<a href="qpaintengine.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#Type-enum">PostScript</a>（通过QPSPrinter在X11访问） 。此外，还有一个基于光栅的涂料引擎，是一个后备，当引擎不支持某些功能。</p>
+<p>如果一个人想用<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>绘制到不同的后端，必须继承QPaintEngine并重新实现其所有的虚函数。该QPaintEngine执行，然后提供通过继承<a href="qpaintdevice.html" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html">QPaintDevice</a>并重新实现虚函数<a href="qpaintdevice.html#paintEngine" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html#paintEngine">QPaintDevice.paintEngine</a>（ ） 。</p>
+<p>QPaintEngine创建和拥有的<a href="qpaintdevice.html" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html">QPaintDevice</a>创建它。</p>
+<p>该QPaintEngine办法反对的Qt 3的的一大优点<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>/ QPaintDevice.cmd （ ）方法，它现在可以适应多种技术在每个平台上，充分利用每一个发挥到淋漓尽致。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="DirtyFlag-enum"></a>QPaintEngine.DirtyFlag</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.DirtyPen</tt></td>
+<td class="topAlign"><tt>0x0001</tt></td>
+<td class="topAlign">笔是脏，需要更新。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.DirtyBrush</tt></td>
+<td class="topAlign"><tt>0x0002</tt></td>
+<td class="topAlign">刷脏了，需要更新。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.DirtyBrushOrigin</tt></td>
+<td class="topAlign"><tt>0x0004</tt></td>
+<td class="topAlign">刷原点是脏的，需要更新的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.DirtyFont</tt></td>
+<td class="topAlign"><tt>0x0008</tt></td>
+<td class="topAlign">字体变脏，需要进行更新。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.DirtyBackground</tt></td>
+<td class="topAlign"><tt>0x0010</tt></td>
+<td class="topAlign">背景是脏的，需要被更新。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QPaintEngine.DirtyBackgroundMode</tt>
+</td>
+<td class="topAlign"><tt>0x0020</tt></td>
+<td class="topAlign">背景模式是脏的，需要被更新。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.DirtyTransform</tt></td>
+<td class="topAlign"><tt>0x0040</tt></td>
+<td class="topAlign">该变换是脏的，需要被更新。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.DirtyClipRegion</tt></td>
+<td class="topAlign"><tt>0x0080</tt></td>
+<td class="topAlign">裁剪区域变脏，需要进行更新。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.DirtyClipPath</tt></td>
+<td class="topAlign"><tt>0x0100</tt></td>
+<td class="topAlign">剪辑路径是脏的，需要被更新。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.DirtyHints</tt></td>
+<td class="topAlign"><tt>0x0200</tt></td>
+<td class="topAlign">渲染提示脏了，需要更新。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QPaintEngine.DirtyCompositionMode</tt>
+</td>
+<td class="topAlign"><tt>0x0400</tt></td>
+<td class="topAlign">该组合物模式是脏的，需要被更新。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.DirtyClipEnabled</tt></td>
+<td class="topAlign"><tt>0x0800</tt></td>
+<td class="topAlign">无论裁剪启用与否是脏，需要更新。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.DirtyOpacity</tt></td>
+<td class="topAlign"><tt>0x1000</tt></td>
+<td class="topAlign">不透明度的常已发生变化，需要进行更新的状态变化的一部分<a href="qpaintengine.html#updateState" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#updateState">QPaintEngine.updateState</a>（ ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.AllDirty</tt></td>
+<td class="topAlign"><tt>0xffff</tt></td>
+<td class="topAlign">内部使用的便利枚举。</td>
+</tr>
+</table>
+<p>这些类型用于通过<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>来触发各种状态的懒惰更新<a href="qpaintengine.html" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html">QPaintEngine</a> using <a href="qpaintengine.html#updateState" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#updateState">QPaintEngine.updateState</a>（ ） 。</p>
+<p>一种涂料引擎必须更新每个脏状态。</p>
+<p>该DirtyFlags类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cDirtyFlag\u003e 。它存储DirtyFlag值的或组合。</p>
+
+
+<h3 class="fn">
+<a name="PaintEngineFeature-enum"></a>QPaintEngine.PaintEngineFeature</h3>
+<p>此枚举是用来描述的特征或功能，油漆引擎。如果某个特性不支持的引擎，<a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a>会做通过其他方式来模拟该功能，并通过对混合阿尔法尽力<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>与模拟结果的引擎。有些功能不能被仿真： AlphaBlend的和PorterDuff 。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.AlphaBlend</tt></td>
+<td class="topAlign"><tt>0x00000080</tt></td>
+<td class="topAlign">该引擎可以alpha混合语。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.Antialiasing</tt></td>
+<td class="topAlign"><tt>0x00000400</tt></td>
+<td class="topAlign">发动机可以使用antialising提高渲染图元的外观。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.BlendModes</tt></td>
+<td class="topAlign"><tt>0x00008000</tt></td>
+<td class="topAlign">该引擎支持混合模式。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.BrushStroke</tt></td>
+<td class="topAlign"><tt>0x00000800</tt></td>
+<td class="topAlign">该引擎支持绘制包含画笔作为填充招，不只是纯色（如宽度2虚线渐变线） 。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QPaintEngine.ConicalGradientFill</tt>
+</td>
+<td class="topAlign"><tt>0x00000040</tt></td>
+<td class="topAlign">该引擎支持的锥形渐变填充。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.ConstantOpacity</tt></td>
+<td class="topAlign"><tt>0x00001000</tt></td>
+<td class="topAlign">该引擎支持所提供的功能<a href="qpainter.html#setOpacity" tppabs="http://pyqt4doc.appspot.com/qpainter.html#setOpacity">QPainter.setOpacity</a>（ ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.LinearGradientFill</tt></td>
+<td class="topAlign"><tt>0x00000010</tt></td>
+<td class="topAlign">该引擎支持线性渐变填充。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.MaskedBrush</tt></td>
+<td class="topAlign"><tt>0x00002000</tt></td>
+<td class="topAlign">该引擎能够呈现画笔，有带有alpha通道或遮罩的质感。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QPaintEngine.ObjectBoundingModeGradients</tt>
+</td>
+<td class="topAlign"><tt>0x00010000</tt></td>
+<td class="topAlign">该发动机具有梯度与原生支持坐标模式<a href="qgradient.html#CoordinateMode-enum" tppabs="http://pyqt4doc.appspot.com/qgradient.html#CoordinateMode-enum">QGradient.ObjectBoundingMode</a>。否则，如果支持QPaintEngine.PatternTransform ，对象边界模式渐变转换为梯度与协调模式<a href="qgradient.html#CoordinateMode-enum" tppabs="http://pyqt4doc.appspot.com/qgradient.html#CoordinateMode-enum">QGradient.LogicalMode</a>和一个刷子变换的坐标映射关系。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.PainterPaths</tt></td>
+<td class="topAlign"><tt>0x00000200</tt></td>
+<td class="topAlign">该发动机具有路径的支持。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QPaintEngine.PaintOutsidePaintEvent</tt>
+</td>
+<td class="topAlign"><tt>0x20000000</tt></td>
+<td class="topAlign">该引擎能够画的绘制事件之外。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.PatternBrush</tt></td>
+<td class="topAlign"><tt>0x00000008</tt></td>
+<td class="topAlign">该引擎能够呈现刷子在指定的笔刷模式<a href="qt.html#BrushStyle-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#BrushStyle-enum">Qt.BrushStyle</a>。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.PatternTransform</tt></td>
+<td class="topAlign"><tt>0x00000002</tt></td>
+<td class="topAlign">该发动机具有转化刷模式的支持。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QPaintEngine.PerspectiveTransform</tt>
+</td>
+<td class="topAlign"><tt>0x00004000</tt></td>
+<td class="topAlign">该发动机具有对原语进行视角转换的支持。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.PixmapTransform</tt></td>
+<td class="topAlign"><tt>0x00000004</tt></td>
+<td class="topAlign">该引擎可以将像素图，包括旋转和剪切。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.PorterDuff</tt></td>
+<td class="topAlign"><tt>0x00000100</tt></td>
+<td class="topAlign">该引擎支持波特 - 达夫操作</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.PrimitiveTransform</tt></td>
+<td class="topAlign"><tt>0x00000001</tt></td>
+<td class="topAlign">该发动机具有转化的绘图图元的支持。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.RadialGradientFill</tt></td>
+<td class="topAlign"><tt>0x00000020</tt></td>
+<td class="topAlign">该引擎支持的径向渐变填充。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.RasterOpModes</tt></td>
+<td class="topAlign"><tt>0x00020000</tt></td>
+<td class="topAlign">该引擎支持按位光栅操作。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.AllFeatures</tt></td>
+<td class="topAlign"><tt>0xffffffff</tt></td>
+<td class="topAlign">所有的上述功能。这个枚举值通常被用作一个位掩码。</td>
+</tr>
+</table>
+<p>该PaintEngineFeatures类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cPaintEngineFeature\u003e 。它存储PaintEngineFeature值的或组合。</p>
+
+
+<h3 class="fn">
+<a name="PolygonDrawMode-enum"></a>QPaintEngine.PolygonDrawMode</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.OddEvenMode</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">多边形应使用OddEven填充规则绘制。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.WindingMode</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">多边形应使用绕线填充规则绘制。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.ConvexMode</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">多边形是凸多边形，并可以使用提供的专门的算法，其中绘制。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.PolylineMode</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">多边形的唯一的轮廓应绘制。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="Type-enum"></a>QPaintEngine.Type</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.X11</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.Windows</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.MacPrinter</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.CoreGraphics</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">Mac OS X的Quartz2D （核芯显卡）</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.QuickDraw</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">Mac OS X的的QuickDraw</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.QWindowSystem</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">Qt嵌入式Linux的</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.PostScript</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.OpenGL</tt></td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.Picture</tt></td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">
+<a href="qpicture.html" tppabs="http://pyqt4doc.appspot.com/qpicture.html">QPicture</a>格式</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.SVG</tt></td>
+<td class="topAlign"><tt>9</tt></td>
+<td class="topAlign">可伸缩矢量图形的XML格式</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.Raster</tt></td>
+<td class="topAlign"><tt>10</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.Direct3D</tt></td>
+<td class="topAlign"><tt>11</tt></td>
+<td class="topAlign">仅适用于Windows ，基于Direct3D的发动机</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.Pdf</tt></td>
+<td class="topAlign"><tt>12</tt></td>
+<td class="topAlign">可移植文档格式</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.OpenVG</tt></td>
+<td class="topAlign"><tt>13</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.User</tt></td>
+<td class="topAlign"><tt>50</tt></td>
+<td class="topAlign">第一个用户类型ID</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.MaxUser</tt></td>
+<td class="topAlign"><tt>100</tt></td>
+<td class="topAlign">最后用户类型ID</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.OpenGL2</tt></td>
+<td class="topAlign"><tt>14</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.PaintBuffer</tt></td>
+<td class="topAlign"><tt>15</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QPaintEngine.Blitter</tt></td>
+<td class="topAlign"><tt>16</tt></td>
+<td class="topAlign"> </td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QPaintEngine"></a>QPaintEngine.__init__ (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qpaintengine-paintenginefeatures.html">PaintEngineFeatures</a> <i>features</i> = 0)</h3>
+<p>创建一个绘图引擎与指定的FEATURESET<i>caps</i>。</p>
+
+
+<h3 class="fn">
+<a name="begin"></a>bool QPaintEngine.begin (<i>self</i>, <a href="qpaintdevice.html" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html">QPaintDevice</a> <i>pdev</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>重新实现这个函数绘制时初始化你的绘图引擎是开始绘制设备上<i>pdev</i>。返回True，如果初始化成功，否则返回False 。</p>
+<p><b>See also</b> <a href="qpaintengine.html#end" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#end">end</a>（）和<a href="qpaintengine.html#isActive" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#isActive">isActive</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="drawEllipse"></a>QPaintEngine.drawEllipse (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>r</i>)</h3>
+<p>重新实现这个函数来绘制，可以包含在矩形上最大的椭圆<i>rect</i>。</p>
+<p>默认实现调用<a href="qpaintengine.html#drawPolygon" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#drawPolygon">drawPolygon</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="drawEllipse-2"></a>QPaintEngine.drawEllipse (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>r</i>)</h3>
+<p>此函数的默认实现调用这个函数的浮点版本</p>
+
+
+<h3 class="fn">
+<a name="drawImage"></a>QPaintEngine.drawImage (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>r</i>, <a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a> <i>pm</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>sr</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-imageconversionflags.html">Qt.ImageConversionFlags</a> <i>flags</i> = Qt.AutoColor)</h3>
+<p>重新实现这个函数来绘制的部分<i>image</i>由指定的<i>sr</i>矩形在给定的<i>rectangle</i>使用给定的转换标志<i>flags</i>，将其转换为像素图。</p>
+
+
+<h3 class="fn">
+<a name="drawLines"></a>QPaintEngine.drawLines (<i>self</i>, <a href="qline.html" tppabs="http://pyqt4doc.appspot.com/qline.html">QLine</a> <i>lines</i>)</h3>
+<p>默认实现拆分中的行列表<i>lines</i>成<i>lineCount</i>单独调用<a href="qpaintengine.html#drawPath" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#drawPath">drawPath</a>（）或<a href="qpaintengine.html#drawPolygon" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#drawPolygon">drawPolygon</a>（ ），这取决于绘图引擎的功能集。</p>
+
+
+<h3 class="fn">
+<a name="drawLines-2"></a>QPaintEngine.drawLines (<i>self</i>, <a href="qlinef.html" tppabs="http://pyqt4doc.appspot.com/qlinef.html">QLineF</a> <i>lines</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>默认实现将第一<i>lineCount</i>在线路<i>lines</i>到<a href="qlinef.html" tppabs="http://pyqt4doc.appspot.com/qlinef.html">QLineF</a>并调用这个函数的浮点版本。</p>
+
+
+<h3 class="fn">
+<a name="drawPath"></a>QPaintEngine.drawPath (<i>self</i>, <a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a> <i>path</i>)</h3>
+<p>默认实现忽略<i>path</i>而什么都不做。</p>
+
+
+<h3 class="fn">
+<a name="drawPixmap"></a>QPaintEngine.drawPixmap (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>r</i>, <a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a> <i>pm</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>sr</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>重新实现这个函数来绘制的部分<i>pm</i>由指定的<i>sr</i>矩形在给定的<i>r</i>。</p>
+
+
+<h3 class="fn">
+<a name="drawPoints"></a>QPaintEngine.drawPoints (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>points</i>)</h3>
+<p>绘制第一<i>pointCount</i>在缓冲点<i>points</i></p>
+
+
+<h3 class="fn">
+<a name="drawPoints-2"></a>QPaintEngine.drawPoints (<i>self</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>points</i>)</h3>
+<p>绘制第一<i>pointCount</i>在缓冲点<i>points</i></p>
+<p>默认实现将第一<i>pointCount</i>在QPoints<i>points</i>到QPointFs并调用drawPoints的浮点版本。</p>
+
+
+<h3 class="fn">
+<a name="drawPolygon"></a>QPaintEngine.drawPolygon (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>points</i>, <a href="qpaintengine.html#PolygonDrawMode-enum" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#PolygonDrawMode-enum">PolygonDrawMode</a> <i>mode</i>)</h3>
+<p>重新实现这个虚函数绘制由定义的多边形<i>pointCount</i>在第一分<i>points</i>，使用模式<i>mode</i>。</p>
+<p><b>Note:</b>至少有一个的drawPolygon （ ）函数必须被重新实现。</p>
+
+
+<h3 class="fn">
+<a name="drawPolygon-2"></a>QPaintEngine.drawPolygon (<i>self</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>points</i>, <a href="qpaintengine.html#PolygonDrawMode-enum" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#PolygonDrawMode-enum">PolygonDrawMode</a> <i>mode</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>重新实现这个虚函数绘制由定义的多边形<i>pointCount</i>在第一分<i>points</i>，使用模式<i>mode</i>。</p>
+<p><b>Note:</b>中的至少一个的<a href="qpaintengine.html#drawPolygon" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#drawPolygon">drawPolygon</a>（ ）函数必须被重新实现。</p>
+
+
+<h3 class="fn">
+<a name="drawRects"></a>QPaintEngine.drawRects (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> <i>rects</i>)</h3>
+<p>绘制第一<i>rectCount</i>在缓冲区中的矩形<i>rects</i>。此函数的默认实现调用<a href="qpaintengine.html#drawPath" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#drawPath">drawPath</a>（）或<a href="qpaintengine.html#drawPolygon" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#drawPolygon">drawPolygon</a>（ ），这取决于绘图引擎的功能集。</p>
+
+
+<h3 class="fn">
+<a name="drawRects-2"></a>QPaintEngine.drawRects (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>rects</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>默认实现将第一<i>rectCount</i>在缓冲区中的矩形<i>rects</i>到<a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a>并调用这个函数的浮点版本。</p>
+
+
+<h3 class="fn">
+<a name="drawTextItem"></a>QPaintEngine.drawTextItem (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>p</i>, <a href="qtextitem.html" tppabs="http://pyqt4doc.appspot.com/qtextitem.html">QTextItem</a> <i>textItem</i>)</h3>
+<p>这个函数绘制文本项<i>textItem</i>在位置<i>p</i>。这个函数的默认实现文本转换为<a href="qpainterpath.html" tppabs="http://pyqt4doc.appspot.com/qpainterpath.html">QPainterPath</a>和油漆产生的路径。</p>
+
+
+<h3 class="fn">
+<a name="drawTiledPixmap"></a>QPaintEngine.drawTiledPixmap (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>r</i>, <a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a> <i>pixmap</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>s</i>)</h3>
+<p>重新实现这个函数来绘制<i>pixmap</i>在给定的<i>rect</i>开始，在给定的<i>p</i>。像素图将被重复绘制，直到<i>rect</i>被充满。</p>
+
+
+<h3 class="fn">
+<a name="end"></a>bool QPaintEngine.end (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>重新实现此功能可将当前绘图设备上完成绘画。返回True，如果绘画是成功完成，否则返回False 。</p>
+<p><b>See also</b> <a href="qpaintengine.html#begin" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#begin">begin</a>（）和<a href="qpaintengine.html#isActive" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#isActive">isActive</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasFeature"></a>bool QPaintEngine.hasFeature (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qpaintengine-paintenginefeatures.html">PaintEngineFeatures</a> <i>feature</i>)</h3>
+<p>如果绘图引擎支持指定，则返回True<i>feature</i>否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isActive"></a>bool QPaintEngine.isActive (<i>self</i>)</h3>
+<p>返回True如果绘图引擎正在积极制订，否则返回False 。</p>
+<p><b>See also</b> <a href="qpaintengine.html#setActive" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#setActive">setActive</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="paintDevice"></a><a href="qpaintdevice.html" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html">QPaintDevice</a> QPaintEngine.paintDevice (<i>self</i>)</h3>
+<p>返回这款发动机是画上，如果画的是积极的装置，否则返回0 。</p>
+
+
+<h3 class="fn">
+<a name="painter"></a><a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a> QPaintEngine.painter (<i>self</i>)</h3>
+<p>返回绘图引擎的画家。</p>
+
+
+<h3 class="fn">
+<a name="setActive"></a>QPaintEngine.setActive (<i>self</i>, bool <i>newState</i>)</h3>
+<p>设置绘图引擎的工作状态，以<i>state</i>。</p>
+<p><b>See also</b> <a href="qpaintengine.html#isActive" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#isActive">isActive</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPaintDevice"></a>QPaintEngine.setPaintDevice (<i>self</i>, <a href="qpaintdevice.html" tppabs="http://pyqt4doc.appspot.com/qpaintdevice.html">QPaintDevice</a> <i>device</i>)</h3>
+<h3 class="fn">
+<a name="type"></a><a href="qpaintengine.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#Type-enum">Type</a> QPaintEngine.type (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>重新实现这个函数返回的绘图引擎<a href="qpaintengine.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qpaintengine.html#Type-enum">Type</a>。</p>
+
+
+<h3 class="fn">
+<a name="updateState"></a>QPaintEngine.updateState (<i>self</i>, <a href="qpaintenginestate.html" tppabs="http://pyqt4doc.appspot.com/qpaintenginestate.html">QPaintEngineState</a> <i>state</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>重新实现这个函数来更新绘图引擎的状态。</p>
+<p>完成后，该功能是负责检查油漆引擎的当前<i>state</i>并更新已更改的属性。使用<a href="qpaintenginestate.html#state" tppabs="http://pyqt4doc.appspot.com/qpaintenginestate.html#state">QPaintEngineState.state</a>（ ）函数来找出哪些属性，必须更新，​​然后使用相应的<a href="qpaintenginestate.html#getfunction" tppabs="http://pyqt4doc.appspot.com/qpaintenginestate.html#getfunction">get function</a>检索给定的属性的当前值。</p>
+<p><b>See also</b> <a href="qpaintenginestate.html" tppabs="http://pyqt4doc.appspot.com/qpaintenginestate.html">QPaintEngineState</a>。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

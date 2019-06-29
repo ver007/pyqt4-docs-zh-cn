@@ -1,0 +1,384 @@
+﻿<html>
+<head>
+<title>QDataWidgetMapper Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDataWidgetMapper Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QDataWidgetMapper类提供了一个数据模型，以小部件的部分之间的映射。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qdatawidgetmapper.html#SubmitPolicy-enum" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#SubmitPolicy-enum">SubmitPolicy</a></b> { AutoSubmit, ManualSubmit }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdatawidgetmapper.html#QDataWidgetMapper" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#QDataWidgetMapper">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatawidgetmapper.html#addMapping" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#addMapping">addMapping</a></b> (<i>self</i>, QWidget <i>widget</i>, int <i>section</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatawidgetmapper.html#addMapping-2" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#addMapping-2">addMapping</a></b> (<i>self</i>, QWidget <i>widget</i>, int <i>section</i>, QByteArray <i>propertyName</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatawidgetmapper.html#clearMapping" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#clearMapping">clearMapping</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qdatawidgetmapper.html#currentIndex" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#currentIndex">currentIndex</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QAbstractItemDelegate <b><a href="qdatawidgetmapper.html#itemDelegate" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#itemDelegate">itemDelegate</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qdatawidgetmapper.html#mappedPropertyName" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#mappedPropertyName">mappedPropertyName</a></b> (<i>self</i>, QWidget <i>widget</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qdatawidgetmapper.html#mappedSection" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#mappedSection">mappedSection</a></b> (<i>self</i>, QWidget <i>widget</i>)</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qdatawidgetmapper.html#mappedWidgetAt" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#mappedWidgetAt">mappedWidgetAt</a></b> (<i>self</i>, int <i>section</i>)</li>
+<li>
+<div class="fn"></div>QAbstractItemModel <b><a href="qdatawidgetmapper.html#model" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#model">model</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Qt.Orientation <b><a href="qdatawidgetmapper.html#orientation" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#orientation">orientation</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatawidgetmapper.html#removeMapping" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#removeMapping">removeMapping</a></b> (<i>self</i>, QWidget <i>widget</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatawidgetmapper.html#revert" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#revert">revert</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QModelIndex <b><a href="qdatawidgetmapper.html#rootIndex" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#rootIndex">rootIndex</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatawidgetmapper.html#setCurrentIndex" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#setCurrentIndex">setCurrentIndex</a></b> (<i>self</i>, int <i>index</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatawidgetmapper.html#setCurrentModelIndex" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#setCurrentModelIndex">setCurrentModelIndex</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatawidgetmapper.html#setItemDelegate" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#setItemDelegate">setItemDelegate</a></b> (<i>self</i>, QAbstractItemDelegate <i>delegate</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatawidgetmapper.html#setModel" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#setModel">setModel</a></b> (<i>self</i>, QAbstractItemModel <i>model</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatawidgetmapper.html#setOrientation" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#setOrientation">setOrientation</a></b> (<i>self</i>, Qt.Orientation <i>aOrientation</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatawidgetmapper.html#setRootIndex" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#setRootIndex">setRootIndex</a></b> (<i>self</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatawidgetmapper.html#setSubmitPolicy" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#setSubmitPolicy">setSubmitPolicy</a></b> (<i>self</i>, SubmitPolicy <i>policy</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdatawidgetmapper.html#submit" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#submit">submit</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>SubmitPolicy <b><a href="qdatawidgetmapper.html#submitPolicy" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#submitPolicy">submitPolicy</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatawidgetmapper.html#toFirst" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#toFirst">toFirst</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatawidgetmapper.html#toLast" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#toLast">toLast</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatawidgetmapper.html#toNext" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#toNext">toNext</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdatawidgetmapper.html#toPrevious" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#toPrevious">toPrevious</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul><li>
+<div class="fn"></div>void <b><a href="qdatawidgetmapper.html#currentIndexChanged" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#currentIndexChanged">currentIndexChanged</a></b> (int)</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDataWidgetMapper类提供了一个数据模型，以小部件的部分之间的映射。</p>
+<p>QDataWidgetMapper可以使用它们映射到的项目模型部分来创建数据感知部件。 A节是模型中的列，如果方向是水平的（默认值） ，否则一排。</p>
+<p>每当当前指数的变化，每个插件是通过在它的映射被做了指定的属性从模型数据更新。如果用户编辑窗口小部件的内容，使用相同的属性被读取和写回模型的变更。默认情况下，每个插件的<a href="qobject.html#Q_PROPERTY" tppabs="http://pyqt4doc.appspot.com/qobject.html#Q_PROPERTY">user property</a>用于传输的模型和部件之间的数据。由于Qt的4.3 ，额外的<a href="qdatawidgetmapper.html#addMapping" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#addMapping">addMapping</a>（ ）函数使一个名为属性，而不是默认的用户属性来使用。</p>
+<p>它可以设定的项目委讬，支持自定义窗口小部件。默认情况下，<a href="qitemdelegate.html" tppabs="http://pyqt4doc.appspot.com/qitemdelegate.html">QItemDelegate</a>用于同步模式与窗口小部件。</p>
+<p>让我们假设我们有一个名为项目模型<tt>model</tt>其内容如下：</p>
+<table class="generic">
+<tr class="odd" valign="top">
+<td>1</td>
+<td>Qt Norway</td>
+<td>Oslo</td>
+</tr>
+<tr class="even" valign="top">
+<td>2</td>
+<td>Qt Australia</td>
+<td>Brisbane</td>
+</tr>
+<tr class="odd" valign="top">
+<td>3</td>
+<td>Qt USA</td>
+<td>Palo Alto</td>
+</tr>
+<tr class="even" valign="top">
+<td>4</td>
+<td>Qt China</td>
+<td>Beijing</td>
+</tr>
+<tr class="odd" valign="top">
+<td>5</td>
+<td>Qt Germany</td>
+<td>Berlin</td>
+</tr>
+</table>
+<p>下面的代码将模型中的列映射到部件称为<tt>mySpinBox</tt>，<tt>myLineEdit</tt>和<tt>myCountryChooser</tt>：</p>
+<pre class="cpp">
+ <span class="type">QDataWidgetMapper</span> <span class="operator">*</span>mapper <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QDataWidgetMapper</span>;
+ mapper<span class="operator">-</span><span class="operator">&gt;</span><a href="qdatawidgetmapper.html#setModel" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#setModel">setModel</a>(model);
+ mapper<span class="operator">-</span><span class="operator">&gt;</span><a href="qdatawidgetmapper.html#addMapping" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#addMapping">addMapping</a>(mySpinBox<span class="operator">,</span> <span class="number">0</span>);
+ mapper<span class="operator">-</span><span class="operator">&gt;</span><a href="qdatawidgetmapper.html#addMapping" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#addMapping">addMapping</a>(myLineEdit<span class="operator">,</span> <span class="number">1</span>);
+ mapper<span class="operator">-</span><span class="operator">&gt;</span><a href="qdatawidgetmapper.html#addMapping" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#addMapping">addMapping</a>(myCountryChooser<span class="operator">,</span> <span class="number">2</span>);
+ mapper<span class="operator">-</span><span class="operator">&gt;</span><a href="qdatawidgetmapper.html#toFirst" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#toFirst">toFirst</a>();
+</pre>
+<p>在调用后，<a href="qdatawidgetmapper.html#toFirst" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#toFirst">toFirst</a>（ ）<tt>mySpinBox</tt>显示值<tt>1</tt>，<tt>myLineEdit</tt>显示器<tt>Qt
+Norway</tt>和<tt>myCountryChooser</tt>显示器<tt>Oslo</tt>。导航功能<a href="qdatawidgetmapper.html#toFirst" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#toFirst">toFirst</a>（ ）<a href="qdatawidgetmapper.html#toNext" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#toNext">toNext</a>（ ）<a href="qdatawidgetmapper.html#toPrevious" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#toPrevious">toPrevious</a>（ ）<a href="qdatawidgetmapper.html#toLast" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#toLast">toLast</a>（）和<a href="qdatawidgetmapper.html#currentIndex-prop" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#currentIndex-prop">setCurrentIndex</a>（）可以被用于导航模型中，并与从模型内容更新部件。</p>
+<p>该<a href="qdatawidgetmapper.html#setRootIndex" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#setRootIndex">setRootIndex</a>（ ）函数实现了特定的项目中被指定为根指数的模型 - 这资料的孩子会被映射到用户界面相关的部件。</p>
+<p>QDataWidgetMapper支持两种提交的政策，<tt>AutoSubmit</tt>和<tt>ManualSubmit</tt>。<tt>AutoSubmit</tt>将尽快更新模型作为当前控件失去焦点，<tt>ManualSubmit</tt>不会更新模型，除非<a href="qdatawidgetmapper.html#submit" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#submit">submit</a>（）被调用。<tt>ManualSubmit</tt>显示一个对话框，允许用户取消所有修改的时候非常有用。此外，该显示模型的其他视图将不会更新，直到用户完成所有的修改和提交。</p>
+<p>需要注意的是QDataWidgetMapper跟踪外部修改。如果模型的内容​​的应用程序的另一个模块被更新时，窗口小部件被更新。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="SubmitPolicy-enum"></a>QDataWidgetMapper.SubmitPolicy</h3>
+<p>这个枚举变量描述了可能的提交政策<a href="qdatawidgetmapper.html" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html">QDataWidgetMapper</a>支持。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDataWidgetMapper.AutoSubmit</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">每当一个widget失去焦点时，控件的当前值设置为项目的模型。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDataWidgetMapper.ManualSubmit</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该模型不更新，直到<a href="qdatawidgetmapper.html#submit" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#submit">submit</a>（）被调用。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDataWidgetMapper"></a>QDataWidgetMapper.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个新的<a href="qdatawidgetmapper.html" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html">QDataWidgetMapper</a>与父对象<i>parent</i>。默认情况下，方向是水平的，而提交政策<tt>AutoSubmit</tt>。</p>
+<p><b>See also</b> <a href="qdatawidgetmapper.html#orientation-prop" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#orientation-prop">setOrientation</a>（）和<a href="qdatawidgetmapper.html#submitPolicy-prop" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#submitPolicy-prop">setSubmitPolicy</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addMapping"></a>QDataWidgetMapper.addMapping (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>widget</i>, int <i>section</i>)</h3>
+<p>增加了之间的映射<i>widget</i>和<i>section</i>从模型。该<i>section</i>在模型中的列，如果方向是水平的（缺省设置） ，否则一排。</p>
+<p>在下面的例子中，我们假设一个模型<tt>myModel</tt>有两列：第一包含的人在一组的名称，第二列包含他们的年龄。第一列被映射到<a href="qlineedit.html" tppabs="http://pyqt4doc.appspot.com/qlineedit.html">QLineEdit</a>
+<tt>nameLineEdit</tt>以及第二映射到<a href="qspinbox.html" tppabs="http://pyqt4doc.appspot.com/qspinbox.html">QSpinBox</a> <tt>ageSpinBox</tt>：</p>
+<pre class="cpp">
+ <span class="type"><a href="qdatawidgetmapper.html" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html">QDataWidgetMapper</a></span> <span class="operator">*</span>mapper <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qdatawidgetmapper.html" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html">QDataWidgetMapper</a></span>();
+ mapper<span class="operator">-</span><span class="operator">&gt;</span><a href="qdatawidgetmapper.html#setModel" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#setModel">setModel</a>(myModel);
+ mapper<span class="operator">-</span><span class="operator">&gt;</span>addMapping(nameLineEdit<span class="operator">,</span> <span class="number">0</span>);
+ mapper<span class="operator">-</span><span class="operator">&gt;</span>addMapping(ageSpinBox<span class="operator">,</span> <span class="number">1</span>);
+</pre>
+<p><b>Notes:</b></p>
+<ul>
+<li>If the <i>widget</i> is already mapped to a section, the old
+mapping will be replaced by the new one.</li>
+<li>Only one-to-one mappings between sections and widgets are
+allowed. It is not possible to map a single section to multiple
+widgets, or to map a single widget to multiple sections.</li>
+</ul>
+<p><b>See also</b> <a href="qdatawidgetmapper.html#removeMapping" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#removeMapping">removeMapping</a>（ ）<a href="qdatawidgetmapper.html#mappedSection" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#mappedSection">mappedSection</a>（）和<a href="qdatawidgetmapper.html#clearMapping" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#clearMapping">clearMapping</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addMapping-2"></a>QDataWidgetMapper.addMapping (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>widget</i>, int <i>section</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>propertyName</i>)</h3>
+<p>本质上是相同<a href="qdatawidgetmapper.html#addMapping" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#addMapping">addMapping</a>（ ） ，但增加了指定的属性来指定使用的可能性<i>propertyName</i>。</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qdatawidgetmapper.html#addMapping" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#addMapping">addMapping</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clearMapping"></a>QDataWidgetMapper.clearMapping (<i>self</i>)</h3>
+<p>清除所有映射。</p>
+<p><b>See also</b> <a href="qdatawidgetmapper.html#addMapping" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#addMapping">addMapping</a>（）和<a href="qdatawidgetmapper.html#removeMapping" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#removeMapping">removeMapping</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentIndex"></a>int QDataWidgetMapper.currentIndex (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="itemDelegate"></a><a href="qabstractitemdelegate.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html">QAbstractItemDelegate</a> QDataWidgetMapper.itemDelegate (<i>self</i>)</h3>
+<p>返回当前项目委讬。</p>
+<p><b>See also</b> <a href="qdatawidgetmapper.html#setItemDelegate" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#setItemDelegate">setItemDelegate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mappedPropertyName"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QDataWidgetMapper.mappedPropertyName (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>widget</i>)</h3>
+<p>返回被映射的数据时使用的属性的名称，以给定的<i>widget</i>。</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qdatawidgetmapper.html#mappedSection" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#mappedSection">mappedSection</a>（ ）<a href="qdatawidgetmapper.html#addMapping" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#addMapping">addMapping</a>（）和<a href="qdatawidgetmapper.html#removeMapping" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#removeMapping">removeMapping</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mappedSection"></a>int QDataWidgetMapper.mappedSection (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>widget</i>)</h3>
+<p>返回节<i>widget</i>被映射到或-1，如果小部件不被映射。</p>
+<p><b>See also</b> <a href="qdatawidgetmapper.html#addMapping" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#addMapping">addMapping</a>（）和<a href="qdatawidgetmapper.html#removeMapping" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#removeMapping">removeMapping</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mappedWidgetAt"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QDataWidgetMapper.mappedWidgetAt (<i>self</i>, int <i>section</i>)</h3>
+<p>返回映射在小部件<i>section</i>，或者0 ，如果没有部件被映射在该节。</p>
+<p><b>See also</b> <a href="qdatawidgetmapper.html#addMapping" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#addMapping">addMapping</a>（）和<a href="qdatawidgetmapper.html#removeMapping" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#removeMapping">removeMapping</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="model"></a><a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a> QDataWidgetMapper.model (<i>self</i>)</h3>
+<p>返回当前的模式。</p>
+<p><b>See also</b> <a href="qdatawidgetmapper.html#setModel" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#setModel">setModel</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="orientation"></a><a href="qt.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Orientation-enum">Qt.Orientation</a> QDataWidgetMapper.orientation (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="removeMapping"></a>QDataWidgetMapper.removeMapping (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>widget</i>)</h3>
+<p>删除映射为给定的<i>widget</i>。</p>
+<p><b>See also</b> <a href="qdatawidgetmapper.html#addMapping" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#addMapping">addMapping</a>（）和<a href="qdatawidgetmapper.html#clearMapping" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#clearMapping">clearMapping</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="revert"></a>QDataWidgetMapper.revert (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void revert()</tt>。</p>
+<p>重新填充所有部件与模型的当前数据。所有未提交的更改将会丢失。</p>
+<p><b>See also</b> <a href="qdatawidgetmapper.html#submit" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#submit">submit</a>（）和<a href="qdatawidgetmapper.html#submitPolicy-prop" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#submitPolicy-prop">setSubmitPolicy</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rootIndex"></a><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> QDataWidgetMapper.rootIndex (<i>self</i>)</h3>
+<p>返回当前根索引。</p>
+<p><b>See also</b> <a href="qdatawidgetmapper.html#setRootIndex" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#setRootIndex">setRootIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCurrentIndex"></a>QDataWidgetMapper.setCurrentIndex (<i>self</i>, int <i>index</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setCurrentIndex(int)</tt>。</p>
+<h3 class="fn">
+<a name="setCurrentModelIndex"></a>QDataWidgetMapper.setCurrentModelIndex (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setCurrentModelIndex(const QModelIndex&amp;)</tt>。</p>
+<p>设置当前索引的行<i>index</i>如果方向是水平的（默认值） ，否则到的列<i>index</i>。</p>
+<p>电话<a href="qdatawidgetmapper.html#currentIndex-prop" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#currentIndex-prop">setCurrentIndex</a>（内部） 。这便利槽可连接到所述信号<a href="qitemselectionmodel.html#currentRowChanged" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#currentRowChanged">currentRowChanged()</a>
+or <a href="qitemselectionmodel.html#currentColumnChanged" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html#currentColumnChanged">currentColumnChanged()</a>另一种观点认为年代<a href="qitemselectionmodel.html" tppabs="http://pyqt4doc.appspot.com/qitemselectionmodel.html">selection
+model</a>。</p>
+<p>下面的例子演示了如何更新所有的widget与新数据时的选择<a href="qtableview.html" tppabs="http://pyqt4doc.appspot.com/qtableview.html">QTableView</a> named <tt>myTableView</tt>变化：</p>
+<pre class="cpp">
+ <span class="type"><a href="qdatawidgetmapper.html" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html">QDataWidgetMapper</a></span> <span class="operator">*</span>mapper <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qdatawidgetmapper.html" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html">QDataWidgetMapper</a></span>();
+ <a href="qobject.html#connect" tppabs="http://pyqt4doc.appspot.com/qobject.html#connect">connect</a>(myTableView<span class="operator">-</span><span class="operator">&gt;</span>selectionModel()<span class="operator">,</span> SIGNAL(currentRowChanged(<span class="type"><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a></span><span class="operator">,</span><span class="type"><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a></span>))<span class="operator">,</span>
+         mapper<span class="operator">,</span> SLOT(setCurrentModelIndex(<span class="type"><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a></span>)));
+</pre>
+<p><b>See also</b> <a href="qdatawidgetmapper.html#currentIndex-prop" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#currentIndex-prop">currentIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setItemDelegate"></a>QDataWidgetMapper.setItemDelegate (<i>self</i>, <a href="qabstractitemdelegate.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html">QAbstractItemDelegate</a> <i>delegate</i>)</h3>
+<p>设置项委讬<i>delegate</i>。该委讬将用于从模型数据写入到窗口小部件，并从部件的模型，用<a href="qabstractitemdelegate.html#setEditorData" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#setEditorData">QAbstractItemDelegate.setEditorData</a>（）和<a href="qabstractitemdelegate.html#setModelData" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#setModelData">QAbstractItemDelegate.setModelData</a>（ ） 。</p>
+<p>该代表还决定何时应用数据以及何时改变编辑器，使用<a href="qabstractitemdelegate.html#commitData" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#commitData">QAbstractItemDelegate.commitData</a>（）和<a href="qabstractitemdelegate.html#closeEditor" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#closeEditor">QAbstractItemDelegate.closeEditor</a>（ ） 。</p>
+<p><b>Warning:</b>你不应该共享控件映射程序或视图之间的委讬的同一实例。否则会导致不正确或不直观的编辑行为，因为在一个给定的委讬每个视图可能会收到<a href="qabstractitemdelegate.html#closeEditor" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#closeEditor">closeEditor()</a>信号，并试图访问，修改或关闭一个已经被关闭的编辑器。</p>
+<p><b>See also</b> <a href="qdatawidgetmapper.html#itemDelegate" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#itemDelegate">itemDelegate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setModel"></a>QDataWidgetMapper.setModel (<i>self</i>, <a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a> <i>model</i>)</h3>
+<p>目前的模式设置为<i>model</i>。如果设置了另一种模式，所有映射到旧的模式被清除。</p>
+<p><b>See also</b> <a href="qdatawidgetmapper.html#model" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#model">model</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setOrientation"></a>QDataWidgetMapper.setOrientation (<i>self</i>, <a href="qt.html#Orientation-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#Orientation-enum">Qt.Orientation</a> <i>aOrientation</i>)</h3>
+<h3 class="fn">
+<a name="setRootIndex"></a>QDataWidgetMapper.setRootIndex (<i>self</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>根项目设置为<i>index</i>。这可以被用来显示一个树的分支。传递一个无效的模型索引来显示最上面的分支。</p>
+<p><b>See also</b> <a href="qdatawidgetmapper.html#rootIndex" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#rootIndex">rootIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setSubmitPolicy"></a>QDataWidgetMapper.setSubmitPolicy (<i>self</i>, <a href="qdatawidgetmapper.html#SubmitPolicy-enum" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#SubmitPolicy-enum">SubmitPolicy</a> <i>policy</i>)</h3>
+<h3 class="fn">
+<a name="submit"></a>bool QDataWidgetMapper.submit (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>bool submit()</tt>。</p>
+<p>从提交的映射部件的所有更改到模型中。</p>
+<p>对于每一个映射部，该项目委讬从窗口小部件读取的当前值，并将其设置在模型中。最后，该模型是<a href="qabstractitemmodel.html#submit" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html#submit">submit()</a>方法被调用。</p>
+<p>如果所有的值被提交，否则为False ，则返回True 。</p>
+<p>注意：对于数据库模型，<a href="qsqlquerymodel.html#lastError" tppabs="http://pyqt4doc.appspot.com/qsqlquerymodel.html#lastError">QSqlQueryModel.lastError</a>（ ）可以用来获取最后一个错误。</p>
+<p><b>See also</b> <a href="qdatawidgetmapper.html#revert" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#revert">revert</a>（）和<a href="qdatawidgetmapper.html#submitPolicy-prop" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#submitPolicy-prop">setSubmitPolicy</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="submitPolicy"></a><a href="qdatawidgetmapper.html#SubmitPolicy-enum" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#SubmitPolicy-enum">SubmitPolicy</a> QDataWidgetMapper.submitPolicy (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="toFirst"></a>QDataWidgetMapper.toFirst (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void toFirst()</tt>。</p>
+<p>填充部件与从模型中的第一行的数据，如果方向是水平的（缺省设置） ，否则从第一列中的数据。</p>
+<p>这等同于调用<tt>setCurrentIndex(0)</tt>。</p>
+<p><b>See also</b> <a href="qdatawidgetmapper.html#toLast" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#toLast">toLast</a>（）和<a href="qdatawidgetmapper.html#currentIndex-prop" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#currentIndex-prop">setCurrentIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toLast"></a>QDataWidgetMapper.toLast (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void toLast()</tt>。</p>
+<p>填充部件与模型的最后一行数据，如果方向是水平的（默认值） ，否则从最后一列的数据。</p>
+<p>电话<a href="qdatawidgetmapper.html#currentIndex-prop" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#currentIndex-prop">setCurrentIndex</a>（内部） 。</p>
+<p><b>See also</b> <a href="qdatawidgetmapper.html#toFirst" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#toFirst">toFirst</a>（）和<a href="qdatawidgetmapper.html#currentIndex-prop" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#currentIndex-prop">setCurrentIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toNext"></a>QDataWidgetMapper.toNext (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void toNext()</tt>。</p>
+<p>填充部件与模型的下一行数据，如果方向是水平的（默认值） ，否则与下一列的数据。</p>
+<p>电话<a href="qdatawidgetmapper.html#currentIndex-prop" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#currentIndex-prop">setCurrentIndex</a>（内部） 。什么都不做，如果有在模型中没有下一行。</p>
+<p><b>See also</b> <a href="qdatawidgetmapper.html#toPrevious" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#toPrevious">toPrevious</a>（）和<a href="qdatawidgetmapper.html#currentIndex-prop" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#currentIndex-prop">setCurrentIndex</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toPrevious"></a>QDataWidgetMapper.toPrevious (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void toPrevious()</tt>。</p>
+<p>填充部件与模型的上一行数据，如果方向是水平的（默认值） ，否则由前一列的数据。</p>
+<p>电话<a href="qdatawidgetmapper.html#currentIndex-prop" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#currentIndex-prop">setCurrentIndex</a>（内部） 。什么都不做，如果有在模型中没有前一行。</p>
+<p><b>See also</b> <a href="qdatawidgetmapper.html#toNext" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#toNext">toNext</a>（）和<a href="qdatawidgetmapper.html#currentIndex-prop" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#currentIndex-prop">setCurrentIndex</a>（ ） 。</p>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="currentIndexChanged"></a>void currentIndexChanged (int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射后，目前指数已经改变，所有的部件都填充了新的数据。<i>index</i>为新的当前索引。</p>
+<p><b>See also</b> <a href="qdatawidgetmapper.html#currentIndex-prop" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#currentIndex-prop">currentIndex</a>（）和<a href="qdatawidgetmapper.html#currentIndex-prop" tppabs="http://pyqt4doc.appspot.com/qdatawidgetmapper.html#currentIndex-prop">setCurrentIndex</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

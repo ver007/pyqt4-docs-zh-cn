@@ -1,0 +1,157 @@
+﻿<html>
+<head>
+<title>QValidator Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QValidator Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QValidator类提供了输入文本的验证。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<p>通过继承<a href="qdoublevalidator.html" tppabs="http://pyqt4doc.appspot.com/qdoublevalidator.html">QDoubleValidator</a>，<a href="qintvalidator.html" tppabs="http://pyqt4doc.appspot.com/qintvalidator.html">QIntValidator</a>和<a href="qregexpvalidator.html" tppabs="http://pyqt4doc.appspot.com/qregexpvalidator.html">QRegExpValidator</a>。</p>
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">State</a></b> { Invalid, Intermediate, Acceptable }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qvalidator.html#QValidator" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#QValidator">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>QString <i>input</i> <b><a href="qvalidator.html#fixup" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#fixup">fixup</a></b> (<i>self</i>, QString <i>input</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qvalidator.html#fixup-2" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#fixup-2">fixup</a></b> (<i>self</i>, QString)</li>
+<li>
+<div class="fn"></div>QLocale <b><a href="qvalidator.html#locale" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#locale">locale</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qvalidator.html#setLocale" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#setLocale">setLocale</a></b> (<i>self</i>, QLocale <i>locale</i>)</li>
+<li>
+<div class="fn"></div>(State, QString, int) <b><a href="qvalidator.html#validate" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#validate">validate</a></b> (<i>self</i>, QString, int)</li>
+<li>
+<div class="fn"></div>(State, int) <b><a href="qvalidator.html#validate-2" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#validate-2">validate</a></b> (<i>self</i>, QString, int)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QValidator类提供了输入文本的验证。</p>
+<p>类本身是抽象的。两个子类，<a href="qintvalidator.html" tppabs="http://pyqt4doc.appspot.com/qintvalidator.html">QIntValidator</a>和<a href="qdoublevalidator.html" tppabs="http://pyqt4doc.appspot.com/qdoublevalidator.html">QDoubleValidator</a>，提供基本的数值范围检查，并<a href="qregexpvalidator.html" tppabs="http://pyqt4doc.appspot.com/qregexpvalidator.html">QRegExpValidator</a>使用自定义的正则表达式提供了一般的检查。</p>
+<p>如果内置的验证是不够的，你可以继承QValidator 。这个类有两个虚函数：<a href="qvalidator.html#validate" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#validate">validate</a>（）和<a href="qvalidator.html#fixup" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#fixup">fixup</a>（ ） 。</p>
+<p><a href="qvalidator.html#validate" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#validate">validate</a>（ ）必须由每个子类实现。它返回<a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">Invalid</a>，<a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">Intermediate</a> or <a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">Acceptable</a>根据其参数是否有效（有效的子类的定义） 。</p>
+<p>这三种状态需要一些解释。一个<a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">Invalid</a>字符串是<i>clearly</i>无效。<a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">Intermediate</a>是不太明显的：有效性的概念难以适用时该字符串是不完整的（仍在编辑） 。 QValidator定义<a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">Intermediate</a>作为一个字符串，既不是明显无效，也不接受作为最终结果的财产。<a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">Acceptable</a>表示该字符串是可接受作为最终结果。有人可能会说，任何字符串，它是一个项目在一个合理的中间状态<a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">Acceptable</a>字符串是<a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">Intermediate</a>。</p>
+<p>下面是一些例子：</p>
+<ul>
+<li>For a line edit that accepts integers from 10 to 1000
+inclusive, 42 and 123 are <a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">Acceptable</a>, the empty string and 5
+are <a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">Intermediate</a>, and
+"asdf" and 1114 is <a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">Invalid</a>.</li>
+<li>For an editable combobox that accepts URLs, any well-formed URL
+is <a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">Acceptable</a>,
+"http://example.com/," is <a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">Intermediate</a> (it might be a cut
+and paste action that accidentally took in a comma at the end), the
+empty string is <a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">Intermediate</a> (the user might
+select and delete all of the text in preparation for entering a new
+URL) and "http:///./" is <a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">Invalid</a>.</li>
+<li>For a spin box that accepts lengths, "11cm" and "1in" are
+<a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">Acceptable</a>, "11" and the
+empty string are <a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">Intermediate</a>, and
+"http://example.com" and "hour" are <a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">Invalid</a>.</li>
+</ul>
+<p><a href="qvalidator.html#fixup" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#fixup">fixup</a>（ ）用于验证，可以修复一些用户错误。默认实现不执行任何操作。<a href="qlineedit.html" tppabs="http://pyqt4doc.appspot.com/qlineedit.html">QLineEdit</a>例如，将调用<a href="qvalidator.html#fixup" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#fixup">fixup</a>（ ）如果用户按下Enter键（或Return ）和内容目前无效。这允许<a href="qvalidator.html#fixup" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#fixup">fixup</a>（ ）函数执行一些魔法使的一个机会<a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">Invalid</a>串<a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">Acceptable</a>。</p>
+<p>一个验证器有一个区域，设置<a href="qvalidator.html#setLocale" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#setLocale">setLocale</a>（ ） 。它通常被用来解析本地化数据。例如，<a href="qintvalidator.html" tppabs="http://pyqt4doc.appspot.com/qintvalidator.html">QIntValidator</a>和<a href="qdoublevalidator.html" tppabs="http://pyqt4doc.appspot.com/qdoublevalidator.html">QDoubleValidator</a>用它来解析整数和双精度的本地化表示。</p>
+<p>QValidator通常用于<a href="qlineedit.html" tppabs="http://pyqt4doc.appspot.com/qlineedit.html">QLineEdit</a>，<a href="qspinbox.html" tppabs="http://pyqt4doc.appspot.com/qspinbox.html">QSpinBox</a>和<a href="qcombobox.html" tppabs="http://pyqt4doc.appspot.com/qcombobox.html">QComboBox</a>。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="State-enum"></a>QValidator.State</h3>
+<p>这个枚举类型定义了一个验证字符串可以存在的状态。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QValidator.Invalid</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该字符串是<i>clearly</i>无效。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QValidator.Intermediate</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该字符串是一个合理的中间值。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QValidator.Acceptable</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">该字符串是可以接受的最终结果，即它是有效的。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QValidator"></a>QValidator.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>建立验证程序。该<i>parent</i>参数被传递到<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>构造函数。</p>
+
+
+<h3 class="fn">
+<a name="fixup"></a>QString <i>input</i> QValidator.fixup (<i>self</i>, QString <i>input</i>)</h3>
+<p>这个函数试图改变<i>input</i>根据该验证器的规则是有效的。它必须不会导致一个有效的字符串：这个函数的调用者必须重新测试后，默认不做任何事情。</p>
+<p>此函数的重新实现可以改变<i>input</i>即使他们不出示有效的字符串。例如， ISBN校验器可能需要删除每一个字符，除了数字和“ - ” ，即使结果仍然没有有效的ISBN ，一个姓验证器可能会想从字符串的开头和结尾删除空格，即使得到的字符串是不是在接受姓氏列表。</p>
+
+
+<h3 class="fn">
+<a name="fixup-2"></a>QValidator.fixup (<i>self</i>, QString)</h3>
+<h3 class="fn">
+<a name="locale"></a><a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a> QValidator.locale (<i>self</i>)</h3>
+<p>返回locale的验证。语言环境是默认初始化为相同的QLocale （ ） 。</p>
+<p><b>See also</b> <a href="qvalidator.html#setLocale" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#setLocale">setLocale</a>（）和<a href="qlocale.html#QLocale" tppabs="http://pyqt4doc.appspot.com/qlocale.html#QLocale">QLocale.QLocale</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setLocale"></a>QValidator.setLocale (<i>self</i>, <a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a> <i>locale</i>)</h3>
+<p>设置<i>locale</i>将要使用的验证器。除非setLocale的被调用，验证程序将使用默认的语言环境与集<a href="qlocale.html#setDefault" tppabs="http://pyqt4doc.appspot.com/qlocale.html#setDefault">QLocale.setDefault</a>（ ） 。如果默认语言环境尚未确定，它是操作系统的语言环境。</p>
+<p><b>See also</b> <a href="qvalidator.html#locale" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#locale">locale</a>（）和<a href="qlocale.html#setDefault" tppabs="http://pyqt4doc.appspot.com/qlocale.html#setDefault">QLocale.setDefault</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="validate"></a>(<a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">State</a>, QString, int) QValidator.validate (<i>self</i>, QString, int)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>这个虚函数返回<a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">Invalid</a>如果<i>input</i>是无效的，根据这个验证的规则，<a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">Intermediate</a>如果它很可能是多一点的编辑将使得输入可接受的（例如，在用户键入“4”到它接受10〜 99的整数窗口小部件） ，和<a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">Acceptable</a>如果输入是有效的。</p>
+<p>该功能可以同时改变<i>input</i>和<i>pos</i>（光标位置），如果需要的话。</p>
+<h3 class="fn">
+<a name="validate-2"></a>(<a href="qvalidator.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qvalidator.html#State-enum">State</a>, int) QValidator.validate (<i>self</i>, QString, int)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

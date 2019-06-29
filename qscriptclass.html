@@ -1,0 +1,232 @@
+﻿<html>
+<head>
+<title>QScriptClass Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QScriptClass Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscript.html">QtScript</a> module]</sup></sup>
+</h1>
+<p>该QScriptClass类提供用于定义（一类）的Qt Script对象的自定义行为的接口。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qscriptclass.html#Extension-enum" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#Extension-enum">Extension</a></b> { Callable, HasInstance }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qscriptclass.html#QueryFlag-enum" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#QueryFlag-enum">QueryFlag</a></b> { HandlesReadAccess, HandlesWriteAccess }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qscriptclass-queryflags.html">QueryFlags</a></b>
+</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptclass.html#QScriptClass" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#QScriptClass">__init__</a></b> (<i>self</i>, QScriptEngine <i>engine</i>)</li>
+<li>
+<div class="fn"></div>QScriptEngine <b><a href="qscriptclass.html#engine" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#engine">engine</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qscriptclass.html#extension" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#extension">extension</a></b> (<i>self</i>, Extension <i>extension</i>, QVariant <i>argument</i> = QVariant())</li>
+<li>
+<div class="fn"></div>QString <b><a href="qscriptclass.html#name" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#name">name</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QScriptClassPropertyIterator <b><a href="qscriptclass.html#newIterator" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#newIterator">newIterator</a></b> (<i>self</i>, QScriptValue <i>object</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptclass.html#property" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#property">property</a></b> (<i>self</i>, QScriptValue <i>object</i>, QScriptString <i>name</i>, int <i>id</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue.PropertyFlags <b><a href="qscriptclass.html#propertyFlags" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#propertyFlags">propertyFlags</a></b> (<i>self</i>, QScriptValue <i>object</i>, QScriptString <i>name</i>, int <i>id</i>)</li>
+<li>
+<div class="fn"></div>QScriptValue <b><a href="qscriptclass.html#prototype" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#prototype">prototype</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>(QueryFlags, int <i>id</i>) <b><a href="qscriptclass.html#queryProperty" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#queryProperty">queryProperty</a></b> (<i>self</i>, QScriptValue <i>object</i>, QScriptString <i>name</i>, QueryFlags <i>flags</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptclass.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#setProperty">setProperty</a></b> (<i>self</i>, QScriptValue <i>object</i>, QScriptString <i>name</i>, int <i>id</i>, QScriptValue <i>value</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qscriptclass.html#supportsExtension" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#supportsExtension">supportsExtension</a></b> (<i>self</i>, Extension <i>extension</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QScriptClass类提供用于定义（一类）的Qt Script对象的自定义行为的接口。</p>
+<p>该QScriptClass类定义用于处理交互的各个方面与类相关的Qt的脚本对象的接口。这些对象通过调用创建<a href="qscriptengine.html#newObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newObject">QScriptEngine.newObject</a>（ ） ，传递一个指针QScriptClass作为参数。</p>
+<p>通过子类QScriptClass ，您可以精确地定义了如何访问使用你的类的对象的属性进行处理。这使得属性的完全动态处理，例如：它比功能更强大<a href="qscriptengine.html#newQObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newQObject">QScriptEngine.newQObject</a>（ ） 。例如，您可以使用QScriptClass实现数组类型的对象（即处理的对象<tt>length</tt>属性和属性的名称是有效的数组索引，以特殊的方式） ，或者为了实现一个“活” （运行时定义的）的代理到底层对象。</p>
+<p>如果你只需要处理访问一组已知在创建一个对象的时间属性（即“半静态” ） ，你可能会考虑使用<a href="qscriptvalue.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html#setProperty">QScriptValue.setProperty</a>（ ）来定义的getter / setter函数的相关性，而不是继承QScriptClass 。</p>
+<p>重新实现<a href="qscriptclass.html#queryProperty" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#queryProperty">queryProperty</a>（）来指定哪些属性在自定义的方式通过你的脚本类处理（即应<b>delegated</b>到QScriptClass ） ，以及哪些属性应该就像正常的Qt Script对象的属性进行处理。</p>
+<p>重新实现<a href="qscriptclass.html#property" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#property">property</a>（）和<a href="qscriptclass.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#setProperty">setProperty</a>（ ）来执行实际的访问（读或写）到您的类处理性能。此外，您可以重新实现<a href="qscriptclass.html#propertyFlags" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#propertyFlags">propertyFlags</a>（）来指定自定义标记为您的物业。</p>
+<p>重新实现<a href="qscriptclass.html#newIterator" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#newIterator">newIterator</a>（ ）提供一个迭代器为自定义类的对象。这仅仅是必要的，如果你的类的对象可以有你想要当一个对象被一起用来报告自定义属性<a href="qscriptvalueiterator.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalueiterator.html">QScriptValueIterator</a>类，或者当一个对象被用在换在枚举声明中的脚本。</p>
+<p>当实现对象的自定义类，通常使用<a href="qscriptvalue.html#setData" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html#setData">QScriptValue.setData</a>（ ）来存储特定于实例的数据作为对象初始化的一部分，该数据将无法从脚本直接访问，但您可以访问它，例如在您的重新实现<a href="qscriptclass.html#property" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#property">property</a>（）和<a href="qscriptclass.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#setProperty">setProperty</a>（ ） （通过调用<a href="qscriptvalue.html#data" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html#data">QScriptValue.data</a>（））来执行自定义处理。</p>
+<p>重新实现<a href="qscriptclass.html#prototype" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#prototype">prototype</a>（）为您的脚本类提供自定义的原型对象。</p>
+<p>重新实现<a href="qscriptclass.html#supportsExtension" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#supportsExtension">supportsExtension</a>（）和<a href="qscriptclass.html#extension" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#extension">extension</a>（ ）如果你的自定义脚本类支持一个由扩展枚举指定的扩展名或更多。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="Extension-enum"></a>QScriptClass.Extension</h3>
+<p>这个枚举指定可能的扩展到<a href="qscriptclass.html" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html">QScriptClass</a>。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QScriptClass.Callable</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">这个类的实例可以被称为功能。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QScriptClass.HasInstance</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">此类的实例实现[ [ HasInstance ] 。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qscriptclass.html#extension" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#extension">extension</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QueryFlag-enum"></a>QScriptClass.QueryFlag</h3>
+<p>这个枚举变量描述了用于查询标志<a href="qscriptclass.html" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html">QScriptClass</a>关于如何获得一个属性的处理方式。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QScriptClass.HandlesReadAccess</tt></td>
+<td class="topAlign"><tt>0x01</tt></td>
+<td class="topAlign">该<a href="qscriptclass.html" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html">QScriptClass</a>手柄读取访问这个属性。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QScriptClass.HandlesWriteAccess</tt></td>
+<td class="topAlign"><tt>0x02</tt></td>
+<td class="topAlign">该<a href="qscriptclass.html" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html">QScriptClass</a>处理写访问这个属性。</td>
+</tr>
+</table>
+<p>该QueryFlags类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cQueryFlag\u003e 。它存储QueryFlag值的或组合。</p>
+<p><b>See also</b> <a href="qscriptclass.html#queryProperty" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#queryProperty">queryProperty</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QScriptClass"></a>QScriptClass.__init__ (<i>self</i>, <a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a> <i>engine</i>)</h3>
+<p>构造一个<a href="qscriptclass.html" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html">QScriptClass</a>对象在给定的被使用<i>engine</i>。</p>
+<p>发动机不走的所有权<a href="qscriptclass.html" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html">QScriptClass</a>对象。</p>
+
+
+<h3 class="fn">
+<a name="engine"></a><a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a> QScriptClass.engine (<i>self</i>)</h3>
+<p>返回发动机，这<a href="qscriptclass.html" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html">QScriptClass</a>相关联。</p>
+
+
+<h3 class="fn">
+<a name="extension"></a>QVariant QScriptClass.extension (<i>self</i>, <a href="qscriptclass.html#Extension-enum" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#Extension-enum">Extension</a> <i>extension</i>, QVariant <i>argument</i> = QVariant())</h3>
+<p>这个虚函数可以在重新实现<a href="qscriptclass.html" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html">QScriptClass</a>子类以提供扩展的支持。可选的<i>argument</i>可以作为输入提供给<i>extension</i>;结果必须在一个形式被返回<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>。您可以致电<a href="qscriptclass.html#supportsExtension" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#supportsExtension">supportsExtension</a>（ ）来检查一个扩展是支持的<a href="qscriptclass.html" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html">QScriptClass</a>。默认情况下，没有扩展名的支持，这个函数返回一个无效<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>。</p>
+<p>如果实现的可赎回扩展， Qt的脚本会调用这个函数时，你的类的一个实例作为函数调用（例如，从一个脚本或使用<a href="qscriptvalue.html#call" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html#call">QScriptValue.call</a>（））。该<i>argument</i>将包含一个指针，指向<a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a>表示函数调用，你应该返回一个<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>保存函数调用的结果。在下面的示例中的参数传递给脚本函数的总和相加并返回：</p>
+<pre class="cpp">
+ <span class="keyword">if</span> (extension <span class="operator">=</span><span class="operator">=</span> Callable) {
+     <span class="type"><a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a></span> <span class="operator">*</span>context <span class="operator">=</span> qvariant_cast<span class="operator">&lt;</span><span class="type"><a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a></span><span class="operator">*</span><span class="operator">&gt;</span>(argument);
+     <span class="type"><a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a></span> <span class="operator">*</span>engine <span class="operator">=</span> context<span class="operator">-</span><span class="operator">&gt;</span>engine();
+     <span class="type">double</span> sum <span class="operator">=</span> <span class="number">0</span>;
+     <span class="keyword">for</span> (<span class="type">int</span> i <span class="operator">=</span> <span class="number">0</span>; i <span class="operator">&lt;</span> context<span class="operator">-</span><span class="operator">&gt;</span>argumentCount(); <span class="operator">+</span><span class="operator">+</span>i)
+         sum <span class="operator">+</span><span class="operator">=</span> context<span class="operator">-</span><span class="operator">&gt;</span>argument(i)<span class="operator">.</span>toNumber();
+     <span class="keyword">return</span> sum;
+ }
+</pre>
+<p>如果实现<a href="qscriptclass.html#Extension-enum" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#Extension-enum">HasInstance</a>扩展， Qt的脚本会调用这个函数作为评估的一部分，<tt>instanceof</tt>操作者，如在ECMA-262第11.8.6说明。该<i>argument</i>是一个包含两个项目一个QScriptValueList ：第一项是对象<a href="qscriptclass.html#Extension-enum" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#Extension-enum">HasInstance</a>被应用到（你的类的一个实例） ，第二项可以是任何值。扩展（ ）应该返回True ，如果该值代表行为的对象，否则返回False。</p>
+<p><b>See also</b> <a href="qscriptclass.html#supportsExtension" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#supportsExtension">supportsExtension</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="name"></a>QString QScriptClass.name (<i>self</i>)</h3>
+<p>返回脚本类的名称。</p>
+<p>Qt的脚本使用此名称来生成对象的情况下，你不提供一个toString函数的默认字符串表示形式。</p>
+<p>默认实现返回一个空字符串。</p>
+
+
+<h3 class="fn">
+<a name="newIterator"></a><a href="qscriptclasspropertyiterator.html" tppabs="http://pyqt4doc.appspot.com/qscriptclasspropertyiterator.html">QScriptClassPropertyIterator</a> QScriptClass.newIterator (<i>self</i>, <a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> <i>object</i>)</h3>
+<p>返回一个迭代器遍历给定的自定义属性<i>object</i>。</p>
+<p>默认实现返回0 ，这意味着没有任何自定义属性来遍历。</p>
+<p>重新实现这个功能，如果你的脚本类的对象可以有一个或多个自定义属性（例如那些报导被处理<a href="qscriptclass.html#queryProperty" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#queryProperty">queryProperty</a>（ ） ），您要当一个对象的属性列举（例如，通过一个for in语句在脚本中）出现。</p>
+<p>Qt的脚本需要新的迭代器对象的所有权。</p>
+<p><b>See also</b> <a href="qscriptvalueiterator.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalueiterator.html">QScriptValueIterator</a>。</p>
+
+
+<h3 class="fn">
+<a name="property"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptClass.property (<i>self</i>, <a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> <i>object</i>, <a href="qscriptstring.html" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html">QScriptString</a> <i>name</i>, int <i>id</i>)</h3>
+<p>用给定的返回属性的值<i>name</i>的给定<i>object</i>。</p>
+<p>该<i>id</i>如果你分配一个值给它的参数是唯一有用的<a href="qscriptclass.html#queryProperty" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#queryProperty">queryProperty</a>（ ） 。</p>
+<p>默认实现不执行任何操作，并返回一个无效的<a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>。</p>
+<p><b>See also</b> <a href="qscriptclass.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#setProperty">setProperty</a>（）和<a href="qscriptclass.html#propertyFlags" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#propertyFlags">propertyFlags</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="propertyFlags"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qscriptvalue-propertyflags.html">QScriptValue.PropertyFlags</a> QScriptClass.propertyFlags (<i>self</i>, <a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> <i>object</i>, <a href="qscriptstring.html" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html">QScriptString</a> <i>name</i>, int <i>id</i>)</h3>
+<p>返回属性的标志与给定<i>name</i>的给定<i>object</i>。</p>
+<p>该<i>id</i>如果你分配一个值给它的参数是唯一有用的<a href="qscriptclass.html#queryProperty" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#queryProperty">queryProperty</a>（ ） 。</p>
+<p>默认实现返回0 。</p>
+<p><b>See also</b> <a href="qscriptclass.html#property" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#property">property</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="prototype"></a><a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> QScriptClass.prototype (<i>self</i>)</h3>
+<p>返回要使用的对象作为这个类的新实例的原型（与创建<a href="qscriptengine.html#newObject" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#newObject">QScriptEngine.newObject</a>（））。</p>
+<p>默认实现返回一个无效的<a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a>的，这意味着标准的对象的原型将被使用。重新实现此功能提供您自己的自定义原型。</p>
+<p>通常你初始化你的原型对象在类的构造函数，那么它在这个函数中返回。</p>
+<p>请参阅“利用基于原型的继承”一节<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscript.html">QtScript</a>文档以获取有关如何原型使用的详细信息。</p>
+
+
+<h3 class="fn">
+<a name="queryProperty"></a>(<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qscriptclass-queryflags.html">QueryFlags</a>, int <i>id</i>) QScriptClass.queryProperty (<i>self</i>, <a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> <i>object</i>, <a href="qscriptstring.html" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html">QScriptString</a> <i>name</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qscriptclass-queryflags.html">QueryFlags</a> <i>flags</i>)</h3>
+<p>查询如何用给定的访问属性这个脚本类<i>name</i>的给定<i>object</i>应该如何处理。给定<i>flags</i>指定感兴趣的方面。这个函数应该返回的一个子集<i>flags</i>来表示，其中属性访问方面应该由脚本类被进一步处理。</p>
+<p>例如，如果<i>flags</i>包含<a href="qscriptclass.html#QueryFlag-enum" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#QueryFlag-enum">HandlesReadAccess</a>，你想你的类来处理该物业的读数（通过<a href="qscriptclass.html#property" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#property">property</a>（ ）函数） ，返回的标志应包括：<a href="qscriptclass.html#QueryFlag-enum" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#QueryFlag-enum">HandlesReadAccess</a>。如果返回的标志不包含<a href="qscriptclass.html#QueryFlag-enum" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#QueryFlag-enum">HandlesReadAccess</a>，该物业将作为一个正常的脚本对象属性来处理。</p>
+<p>您可以选择使用<i>id</i>参数存储将随后被传递给函数，如值<a href="qscriptclass.html#property" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#property">property</a>（）和<a href="qscriptclass.html#setProperty" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#setProperty">setProperty</a>（ ） 。</p>
+<p>此函数的默认实现返回0 。</p>
+<p>注意：如果给定的属性是不是已经对对象的一个属性，此功能时，才调用。例如，假设你做广告，你要处理的读访问属性<tt>foo</tt>，但不能写入权限，如果<tt>foo</tt>然后被分配一个值，它会成为一个正常的脚本对象的属性，随后你将不再就到读访问查询<tt>foo</tt>。</p>
+<p><b>See also</b> <a href="qscriptclass.html#property" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#property">property</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setProperty"></a>QScriptClass.setProperty (<i>self</i>, <a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> <i>object</i>, <a href="qscriptstring.html" tppabs="http://pyqt4doc.appspot.com/qscriptstring.html">QScriptString</a> <i>name</i>, int <i>id</i>, <a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> <i>value</i>)</h3>
+<p>设置该属性与给定<i>name</i>的给定<i>object</i>为给定的<i>value</i>。</p>
+<p>该<i>id</i>如果你分配一个值给它的参数是唯一有用的<a href="qscriptclass.html#queryProperty" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#queryProperty">queryProperty</a>（ ） 。</p>
+<p>默认实现不执行任何操作。</p>
+<p>无效的<i>value</i>表示请求移除该属性。</p>
+<p><b>See also</b> <a href="qscriptclass.html#property" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#property">property</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="supportsExtension"></a>bool QScriptClass.supportsExtension (<i>self</i>, <a href="qscriptclass.html#Extension-enum" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#Extension-enum">Extension</a> <i>extension</i>)</h3>
+<p>返回True如果<a href="qscriptclass.html" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html">QScriptClass</a>支持给定<i>extension</i>否则，则返回False。默认情况下，没有扩展名的支持。</p>
+<p>重新实现这个功能，可显示哪些扩展您的自定义类的支持。</p>
+<p><b>See also</b> <a href="qscriptclass.html#extension" tppabs="http://pyqt4doc.appspot.com/qscriptclass.html#extension">extension</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

@@ -1,0 +1,271 @@
+﻿<html>
+<head>
+<title>QAbstractItemDelegate Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QAbstractItemDelegate Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QAbstractItemDelegate类用于从模型显示和编辑数据项。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<p>通过继承<a href="qitemdelegate.html" tppabs="http://pyqt4doc.appspot.com/qitemdelegate.html">QItemDelegate</a>和<a href="qstyleditemdelegate.html" tppabs="http://pyqt4doc.appspot.com/qstyleditemdelegate.html">QStyledItemDelegate</a>。</p>
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qabstractitemdelegate.html#EndEditHint-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#EndEditHint-enum">EndEditHint</a></b> { NoHint, EditNextItem, EditPreviousItem, SubmitModelCache, RevertModelCache }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemdelegate.html#QAbstractItemDelegate" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#QAbstractItemDelegate">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>QWidget <b><a href="qabstractitemdelegate.html#createEditor" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#createEditor">createEditor</a></b> (<i>self</i>, QWidget <i>parent</i>, QStyleOptionViewItem <i>option</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemdelegate.html#editorEvent" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#editorEvent">editorEvent</a></b> (<i>self</i>, QEvent <i>event</i>, QAbstractItemModel <i>model</i>, QStyleOptionViewItem <i>option</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qabstractitemdelegate.html#helpEvent" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#helpEvent">helpEvent</a></b> (<i>self</i>, QHelpEvent <i>event</i>, QAbstractItemView <i>view</i>, QStyleOptionViewItem <i>option</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemdelegate.html#paint" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#paint">paint</a></b> (<i>self</i>, QPainter <i>painter</i>, QStyleOptionViewItem <i>option</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemdelegate.html#setEditorData" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#setEditorData">setEditorData</a></b> (<i>self</i>, QWidget <i>editor</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemdelegate.html#setModelData" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#setModelData">setModelData</a></b> (<i>self</i>, QWidget <i>editor</i>, QAbstractItemModel <i>model</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qabstractitemdelegate.html#sizeHint" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#sizeHint">sizeHint</a></b> (<i>self</i>, QStyleOptionViewItem <i>option</i>, QModelIndex <i>index</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qabstractitemdelegate.html#updateEditorGeometry" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#updateEditorGeometry">updateEditorGeometry</a></b> (<i>self</i>, QWidget <i>editor</i>, QStyleOptionViewItem <i>option</i>, QModelIndex <i>index</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul><li>
+<div class="fn"></div>QString <b><a href="qabstractitemdelegate.html#elidedText" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#elidedText">elidedText</a></b> (QFontMetrics <i>fontMetrics</i>, int <i>width</i>, Qt.TextElideMode <i>mode</i>, QString <i>text</i>)</li></ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemdelegate.html#closeEditor" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#closeEditor">closeEditor</a></b> (QWidget *,QAbstractItemDelegate::EndEditHint = QAbstractItemDelegate.NoHint)</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemdelegate.html#commitData" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#commitData">commitData</a></b> (QWidget *)</li>
+<li>
+<div class="fn"></div>void <b><a href="qabstractitemdelegate.html#sizeHintChanged" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#sizeHintChanged">sizeHintChanged</a></b> (const QModelIndex&amp;)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QAbstractItemDelegate类用于从模型显示和编辑数据项。</p>
+<p>一个QAbstractItemDelegate提供了在模型/视图结构代表的接口和通用的功能。代表们显示在视图中的个别项目，并处理模型数据的编辑。</p>
+<p>该QAbstractItemDelegate类是一个<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/model-view.html">Model/View Classes</a>并且是Qt的一部分<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/model-view-programming.html">model/view framework</a>。</p>
+<p>呈现在一个自定义的方法的项目，则必须实现<a href="qabstractitemdelegate.html#paint" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#paint">paint</a>（）和<a href="qabstractitemdelegate.html#sizeHint" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#sizeHint">sizeHint</a>（ ） 。该<a href="qitemdelegate.html" tppabs="http://pyqt4doc.appspot.com/qitemdelegate.html">QItemDelegate</a>类提供默认实现这些功能，如果你不需要自定义的渲染，继承这个类来代替。</p>
+<p>我们给画中的项目一个进度条的例子，在我们的例子中的一个包管理程序。</p>
+<p class="centerAlign"><img alt="" src="images/widgetdelegate.png"></p>
+<p>我们创造的<tt>WidgetDelegate</tt>类，它继承自<a href="qstyleditemdelegate.html" tppabs="http://pyqt4doc.appspot.com/qstyleditemdelegate.html">QStyledItemDelegate</a>。我们在绘图<a href="qabstractitemdelegate.html#paint" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#paint">paint</a>（ ）函数：</p>
+<pre class="cpp">
+ <span class="type">void</span> WidgetDelegate<span class="operator">.</span><a href="qabstractitemdelegate.html#paint" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#paint">paint</a>(<span class="type"><a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a></span> <span class="operator">*</span>painter<span class="operator">,</span> <span class="keyword">const</span> <span class="type"><a href="qstyleoptionviewitem.html" tppabs="http://pyqt4doc.appspot.com/qstyleoptionviewitem.html">QStyleOptionViewItem</a></span> <span class="operator">&amp;</span>option<span class="operator">,</span>
+                            <span class="keyword">const</span> <span class="type"><a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a></span> <span class="operator">&amp;</span>index) <span class="keyword">const</span>
+ {
+     <span class="keyword">if</span> (index<span class="operator">.</span>column() <span class="operator">=</span><span class="operator">=</span> <span class="number">1</span>) {
+         <span class="type">int</span> progress <span class="operator">=</span> index<span class="operator">.</span>data()<span class="operator">.</span>toInt();
+
+         <span class="type"><a href="qstyleoptionprogressbar.html" tppabs="http://pyqt4doc.appspot.com/qstyleoptionprogressbar.html">QStyleOptionProgressBar</a></span> progressBarOption;
+         progressBarOption<span class="operator">.</span>rect <span class="operator">=</span> option<span class="operator">.</span>rect;
+         progressBarOption<span class="operator">.</span>minimum <span class="operator">=</span> <span class="number">0</span>;
+         progressBarOption<span class="operator">.</span>maximum <span class="operator">=</span> <span class="number">100</span>;
+         progressBarOption<span class="operator">.</span>progress <span class="operator">=</span> progress;
+         progressBarOption<span class="operator">.</span>text <span class="operator">=</span> <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span><span class="operator">.</span>number(progress) <span class="operator">+</span> <span class="string">"%"</span>;
+         progressBarOption<span class="operator">.</span>textVisible <span class="operator">=</span> <span class="keyword">true</span>;
+
+         <span class="type"><a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a></span><span class="operator">.</span>style()<span class="operator">-</span><span class="operator">&gt;</span>drawControl(<span class="type"><a href="qstyle.html" tppabs="http://pyqt4doc.appspot.com/qstyle.html">QStyle</a></span><span class="operator">.</span>CE_ProgressBar<span class="operator">,</span>
+                                            <span class="operator">&amp;</span>progressBarOption<span class="operator">,</span> painter);
+     } <span class="keyword">else</span>
+         <span class="type"><a href="qstyleditemdelegate.html" tppabs="http://pyqt4doc.appspot.com/qstyleditemdelegate.html">QStyledItemDelegate</a></span><span class="operator">.</span>paint(painter<span class="operator">,</span> option<span class="operator">,</span> index);
+</pre>
+<p>请注意，我们使用了<a href="qstyleoptionprogressbar.html" tppabs="http://pyqt4doc.appspot.com/qstyleoptionprogressbar.html">QStyleOptionProgressBar</a>并初始化它的成员。然后，我们可以使用当前<a href="qstyle.html" tppabs="http://pyqt4doc.appspot.com/qstyle.html">QStyle</a>绘制它。</p>
+<p>提供自定义编辑，有可以使用的两种方法。第一种方法是创建一个编辑器窗口小部件，并直接对项目的顶部显示。要做到这一点，你必须重新实现<a href="qabstractitemdelegate.html#createEditor" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#createEditor">createEditor</a>（ ）提供一个编辑器部件，<a href="qabstractitemdelegate.html#setEditorData" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#setEditorData">setEditorData</a>（）来填充从模型数据编辑器中，<a href="qabstractitemdelegate.html#setModelData" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#setModelData">setModelData</a>（ ），使得代理可以更新模型以从编辑数据。</p>
+<p>第二种方法是直接通过重新实现处理用户事件<a href="qabstractitemdelegate.html#editorEvent" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#editorEvent">editorEvent</a>（ ） 。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="EndEditHint-enum"></a>QAbstractItemDelegate.EndEditHint</h3>
+<p>这个枚举变量描述了不同的提示，该委讬可以给模型和视图组件使编辑数据的用户模型中的舒适体验。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QAbstractItemDelegate.NoHint</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">没有要执行建议的操作。</td>
+</tr>
+</table>
+<p>这些提示让代表影响视图的行为：</p>
+<table class="valuelist">
+<tr class="even" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractItemDelegate.EditNextItem</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">认为应使用委讬在视图中打开的下一个项目的编辑器。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractItemDelegate.EditPreviousItem</tt>
+</td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">认为应使用委讬在视图中打开的前一个条目的编辑器。</td>
+</tr>
+</table>
+<p>请注意，自定义视图可以解释的下一个和以前不同的概念。</p>
+<p>当模型被用于下面的提示是最有用的高速缓存数据，如那些在本地操作数据，以便提高性能或节约网络带宽。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractItemDelegate.SubmitModelCache</tt>
+</td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">如果模型缓存数据，它应该写出来缓存数据到底层数据存储。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QAbstractItemDelegate.RevertModelCache</tt>
+</td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">如果模型缓存数据，应该丢弃缓存数据，并将其与底层数据存储的数据替换。</td>
+</tr>
+</table>
+<p>虽然模型和视图应以适当方式对这些提示作出反应，自定义组件可能会忽略其中任何一个或全部，如果他们是不相关的。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QAbstractItemDelegate"></a>QAbstractItemDelegate.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>创建一个新的抽象项目委讬给定的<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="createEditor"></a><a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> QAbstractItemDelegate.createEditor (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i>, <a href="qstyleoptionviewitem.html" tppabs="http://pyqt4doc.appspot.com/qstyleoptionviewitem.html">QStyleOptionViewItem</a> <i>option</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>返回编辑器用于编辑的数据项与给定的<i>index</i>。请注意，该指数包含了所使用的模型信息。编辑器的父窗口部件被指定<i>parent</i>，且该项目由选项<i>option</i>。</p>
+<p>该基地实现返回0 。如果你想自定义编辑，你需要重写本函数。</p>
+<p>返回编辑器部件应该有<a href="qt.html#FocusPolicy-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#FocusPolicy-enum">Qt.StrongFocus</a>否则，<a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a>由小工具收到的S将传播到视图。除非编辑器绘制自己的背景视图的背景将彪炳（例如，用<a href="qwidget.html#autoFillBackground-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#autoFillBackground-prop">setAutoFillBackground()</a>） 。</p>
+<p><b>See also</b> <a href="qabstractitemdelegate.html#setModelData" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#setModelData">setModelData</a>（）和<a href="qabstractitemdelegate.html#setEditorData" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#setEditorData">setEditorData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="editorEvent"></a>bool QAbstractItemDelegate.editorEvent (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>, <a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a> <i>model</i>, <a href="qstyleoptionviewitem.html" tppabs="http://pyqt4doc.appspot.com/qstyleoptionviewitem.html">QStyleOptionViewItem</a> <i>option</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>的项目开始编辑时，这个函数被调用的<i>event</i>触发编辑的<i>model</i>时，<i>index</i>该项目，并在<i>option</i>用于呈现的资料。</p>
+<p>鼠标事件发送到editorEvent （ ），即使它们不启动项目进行编辑。如果你想打开上下文菜单时，鼠标右键是在项目上按下这可以，例如，是有用的。</p>
+<p>（表示它没有处理的事件）基本实现返回False 。</p>
+
+
+<h3 class="fn">
+<a name="elidedText"></a>QString QAbstractItemDelegate.elidedText (<a href="qfontmetrics.html" tppabs="http://pyqt4doc.appspot.com/qfontmetrics.html">QFontMetrics</a> <i>fontMetrics</i>, int <i>width</i>, <a href="qt.html#TextElideMode-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#TextElideMode-enum">Qt.TextElideMode</a> <i>mode</i>, QString <i>text</i>)</h3>
+<h3 class="fn">
+<a name="helpEvent"></a>bool QAbstractItemDelegate.helpEvent (<i>self</i>, <a href="qhelpevent.html" tppabs="http://pyqt4doc.appspot.com/qhelpevent.html">QHelpEvent</a> <i>event</i>, <a href="qabstractitemview.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemview.html">QAbstractItemView</a> <i>view</i>, <a href="qstyleoptionviewitem.html" tppabs="http://pyqt4doc.appspot.com/qstyleoptionviewitem.html">QStyleOptionViewItem</a> <i>option</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>bool helpEvent(QHelpEvent *,QAbstractItemView *,const QStyleOptionViewItem&amp;,const QModelIndex&amp;)</tt>。</p>
+<p>每当有帮助的事件发生时，这个函数被调用，<i>event</i> <i>view</i> <i>option</i>和<i>index</i>对应于其中发生该事件的资料。</p>
+<p>返回True如果委讬可以处理该事件，否则返回False 。的返回值为True表示使用索引获得的数据有必要的作用。</p>
+<p>为<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.ToolTip</a>和<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.WhatsThis</a>已成功处理的事件时，有关弹出窗口可能取决于用户的系统配置被显示。</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qhelpevent.html" tppabs="http://pyqt4doc.appspot.com/qhelpevent.html">QHelpEvent</a>。</p>
+
+
+<h3 class="fn">
+<a name="paint"></a>QAbstractItemDelegate.paint (<i>self</i>, <a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a> <i>painter</i>, <a href="qstyleoptionviewitem.html" tppabs="http://pyqt4doc.appspot.com/qstyleoptionviewitem.html">QStyleOptionViewItem</a> <i>option</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>如果您想提供定制渲染这种纯粹抽象函数必须被重新实现。使用<i>painter</i>和风格<i>option</i>呈现由该项目指定的项目<i>index</i>。</p>
+<p>如果你重新实现这一点，你也必须重新实现<a href="qabstractitemdelegate.html#sizeHint" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#sizeHint">sizeHint</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setEditorData"></a>QAbstractItemDelegate.setEditorData (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>editor</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>设定的给定的内容<i>editor</i>以在给定的数据项<i>index</i>。请注意，该指数包含了所使用的模型信息。</p>
+<p>基实现不执行任何操作。如果你想自定义编辑，你需要重写本函数。</p>
+<p><b>See also</b> <a href="qabstractitemdelegate.html#setModelData" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#setModelData">setModelData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setModelData"></a>QAbstractItemDelegate.setModelData (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>editor</i>, <a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a> <i>model</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>设置项目的数据在给定的<i>index</i>在<i>model</i>到给定的内容<i>editor</i>。</p>
+<p>基实现不执行任何操作。如果你想自定义编辑，你需要重写本函数。</p>
+<p><b>See also</b> <a href="qabstractitemdelegate.html#setEditorData" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#setEditorData">setEditorData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sizeHint"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QAbstractItemDelegate.sizeHint (<i>self</i>, <a href="qstyleoptionviewitem.html" tppabs="http://pyqt4doc.appspot.com/qstyleoptionviewitem.html">QStyleOptionViewItem</a> <i>option</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>如果您想提供定制渲染这种纯粹抽象函数必须被重新实现。该选项由指定<i>option</i>并通过模型项目<i>index</i>。</p>
+<p>如果你重新实现这一点，你也必须重新实现<a href="qabstractitemdelegate.html#paint" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#paint">paint</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="updateEditorGeometry"></a>QAbstractItemDelegate.updateEditorGeometry (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>editor</i>, <a href="qstyleoptionviewitem.html" tppabs="http://pyqt4doc.appspot.com/qstyleoptionviewitem.html">QStyleOptionViewItem</a> <i>option</i>, <a href="qmodelindex.html" tppabs="http://pyqt4doc.appspot.com/qmodelindex.html">QModelIndex</a> <i>index</i>)</h3>
+<p>更新的几何<i>editor</i>与给定的项目<i>index</i>，根据在指定的矩形<i>option</i>。如果该项目有一个内部的布局，编辑器会相应布局。请注意，该指数包含了所使用的模型信息。</p>
+<p>基实现不执行任何操作。如果你想自定义编辑你必须重新实现此功能。</p>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="closeEditor"></a>void closeEditor (QWidget *,QAbstractItemDelegate::EndEditHint = QAbstractItemDelegate.NoHint)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当用户完成使用指定的编辑项目，该信号被发射<i>editor</i>。</p>
+<p>该<i>hint</i>提供了一种方法的委讬来影响如何编辑后的模型和视图的行为已经完成。这表明这些组件执行的动作旁，为用户提供了舒适的编辑体验进行。例如，如果<tt>EditNextItem</tt>被指定，视图应该使用委讬来打开在模型中的下一个项目的编辑器。</p>
+<p><b>See also</b> <a href="qabstractitemdelegate.html#EndEditHint-enum" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#EndEditHint-enum">EndEditHint</a>。</p>
+
+
+<h3 class="fn">
+<a name="commitData"></a>void commitData (QWidget *)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号必须被发射时的<i>editor</i>小部件已经完成编辑数据，并希望将它写回模式。</p>
+
+
+<h3 class="fn">
+<a name="sizeHintChanged"></a>void sizeHintChanged (const QModelIndex&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号必须被发射时的<a href="qabstractitemdelegate.html#sizeHint" tppabs="http://pyqt4doc.appspot.com/qabstractitemdelegate.html#sizeHint">sizeHint</a>的（ ）<i>index</i>改变。</p>
+<p>视图会自动连接到这个信号，并重新布局的项目是必要的。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

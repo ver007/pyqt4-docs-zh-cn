@@ -1,0 +1,134 @@
+﻿<html>
+<head>
+<title>QXmlItem Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QXmlItem Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtxmlpatterns.html">QtXmlPatterns</a> module]</sup></sup>
+</h1>
+<p>该QXmlItem类包含一个XML节点或者原子值。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlitem.html#QXmlItem" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#QXmlItem">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlitem.html#QXmlItem-2" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#QXmlItem-2">__init__</a></b> (<i>self</i>, QXmlItem <i>other</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlitem.html#QXmlItem-3" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#QXmlItem-3">__init__</a></b> (<i>self</i>, QXmlNodeModelIndex <i>node</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlitem.html#QXmlItem-4" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#QXmlItem-4">__init__</a></b> (<i>self</i>, QVariant <i>atomicValue</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlitem.html#isAtomicValue" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#isAtomicValue">isAtomicValue</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlitem.html#isNode" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#isNode">isNode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlitem.html#isNull" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#isNull">isNull</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qxmlitem.html#toAtomicValue" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#toAtomicValue">toAtomicValue</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QXmlNodeModelIndex <b><a href="qxmlitem.html#toNodeModelIndex" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#toNodeModelIndex">toNodeModelIndex</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QXmlItem类包含一个XML节点或者原子值。</p>
+<p>In <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>，所有的表达式求项目，其中每个项目是一个XML节点或者原子值的序列。下面的代码片段的查询结果为五个项目序列。</p>
+<pre class="cpp">
+ &lt;aNode/&gt;,
+ xs:base64Binary("FFFF"),
+ current-date(),
+ 3e3, (: A floating point value :)
+ attribute {"name"} {()}
+</pre>
+<p>这五个项目是：元素，原子值（以base64编码的二进制数据） ，一个日期，一个float和一个属性。</p>
+<p>QXmlItem是代表这些阶级<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>中的项目<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtxmlpatterns.html">QtXmlPatterns</a>API。 QXmlItem的非空实例可以是一个节点或者原子值。调用<a href="qxmlitem.html#isNode" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#isNode">isNode</a>（）或<a href="qxmlitem.html#isAtomicValue" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#isAtomicValue">isAtomicValue</a>（）告诉你它是。原子值是Qt的API，在其他地方表示为实例<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>和QXmlItem的一个实例，它表示一个原子值可以被转换为一个<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>通过调用<a href="qxmlitem.html#toAtomicValue" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#toAtomicValue">toAtomicValue</a>（ ） 。一个封装了节点A QXmlItem在别处表示为实例<a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a>。一个节点QXmlItem可以转换为一<a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a>通过调用<a href="qxmlitem.html#toNodeModelIndex" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#toNodeModelIndex">toNodeModelIndex</a>（ ） 。</p>
+<p>一个默认的构造QXmlItem实例既不是一个节点，也不是一个原子值。它被认为是零，在这种情况<a href="qxmlitem.html#isNull" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#isNull">isNull</a>（ ）返回True 。</p>
+<p>QXmlItem的实例将留给晃来晃去，如果<a href="qabstractxmlnodemodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html">XML node model</a>它是指被删除时，如果它是一个<a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a>。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QXmlItem"></a>QXmlItem.__init__ (<i>self</i>)</h3>
+<p>构造一个空<a href="qxmlitem.html" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html">QXmlItem</a>既不是一个节点，也不是一个原子值。<a href="qxmlitem.html#isNull" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#isNull">isNull</a>（）为一个默认的构造实例返回True。</p>
+
+
+<h3 class="fn">
+<a name="QXmlItem-2"></a>QXmlItem.__init__ (<i>self</i>, <a href="qxmlitem.html" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html">QXmlItem</a> <i>other</i>)</h3>
+<p>拷贝构造函数构造的一个副本<i>other</i>。</p>
+
+
+<h3 class="fn">
+<a name="QXmlItem-3"></a>QXmlItem.__init__ (<i>self</i>, <a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a> <i>node</i>)</h3>
+<p>构造一个节点<a href="qxmlitem.html" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html">QXmlItem</a>即副本<i>node</i>。</p>
+<p><b>See also</b> <a href="qxmlitem.html#isNode" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#isNode">isNode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QXmlItem-4"></a>QXmlItem.__init__ (<i>self</i>, QVariant <i>atomicValue</i>)</h3>
+<p>构造一个原子值<a href="qxmlitem.html" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html">QXmlItem</a>同<i>atomicValue</i>。</p>
+<p><b>See also</b> <a href="qxmlitem.html#isAtomicValue" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#isAtomicValue">isAtomicValue</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isAtomicValue"></a>bool QXmlItem.isAtomicValue (<i>self</i>)</h3>
+<p>返回True如果这个项目是原子值。则返回False ，如果它是一个节点或空。</p>
+<p><b>See also</b> <a href="qxmlitem.html#isNull" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#isNull">isNull</a>（）和<a href="qxmlitem.html#isNode" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#isNode">isNode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isNode"></a>bool QXmlItem.isNode (<i>self</i>)</h3>
+<p>返回True如果这个项目是一个节点。则返回False ，如果它是一个原子值或空值。</p>
+<p><b>See also</b> <a href="qxmlitem.html#isNull" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#isNull">isNull</a>（）和<a href="qxmlitem.html#isAtomicValue" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#isAtomicValue">isAtomicValue</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isNull"></a>bool QXmlItem.isNull (<i>self</i>)</h3>
+<p>返回True如果<a href="qxmlitem.html" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html">QXmlItem</a>既不是一个节点，也不是一个原子值。建造默认实例<a href="qxmlitem.html" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html">QXmlItem</a>为空。</p>
+
+
+<h3 class="fn">
+<a name="toAtomicValue"></a>QVariant QXmlItem.toAtomicValue (<i>self</i>)</h3>
+<p>如果这<a href="qxmlitem.html" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html">QXmlItem</a>表示原子值时，它被转换为一个适当的<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>并返回。如果这<a href="qxmlitem.html" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html">QXmlItem</a>是不是一个原子值，返回值是构造一个默认的<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>。您可以致电<a href="qxmlitem.html#isAtomicValue" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#isAtomicValue">isAtomicValue</a>（ ）测试项目是否是一个原子值。</p>
+<p><b>See also</b> <a href="qxmlitem.html#isAtomicValue" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#isAtomicValue">isAtomicValue</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toNodeModelIndex"></a><a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a> QXmlItem.toNodeModelIndex (<i>self</i>)</h3>
+<p>如果这<a href="qxmlitem.html" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html">QXmlItem</a>代表一个节点，它返回的项目作为<a href="qxmlnodemodelindex.html" tppabs="http://pyqt4doc.appspot.com/qxmlnodemodelindex.html">QXmlNodeModelIndex</a>。如果这<a href="qxmlitem.html" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html">QXmlItem</a>是不是一个节点，返回值是不确定的。您可以致电<a href="qxmlitem.html#isNode" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#isNode">isNode</a>（ ）测试项目是否是一个节点。</p>
+<p><b>See also</b> <a href="qxmlitem.html#isNode" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#isNode">isNode</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

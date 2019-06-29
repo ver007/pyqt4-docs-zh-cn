@@ -1,0 +1,99 @@
+﻿<html>
+<head>
+<title>QXmlDeclHandler Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QXmlDeclHandler Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtxml.html">QtXml</a> module]</sup></sup>
+</h1>
+<p>该QXmlDeclHandler类提供了一个接口来报告XML数据的声明内容。<a href="#details">More...</a></p>
+
+<p>通过继承<a href="qxmldefaulthandler.html" tppabs="http://pyqt4doc.appspot.com/qxmldefaulthandler.html">QXmlDefaultHandler</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qxmldeclhandler.html#QXmlDeclHandler" tppabs="http://pyqt4doc.appspot.com/qxmldeclhandler.html#QXmlDeclHandler">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmldeclhandler.html#QXmlDeclHandler-2" tppabs="http://pyqt4doc.appspot.com/qxmldeclhandler.html#QXmlDeclHandler-2">__init__</a></b> (<i>self</i>, QXmlDeclHandler)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmldeclhandler.html#attributeDecl" tppabs="http://pyqt4doc.appspot.com/qxmldeclhandler.html#attributeDecl">attributeDecl</a></b> (<i>self</i>, QString <i>eName</i>, QString <i>aName</i>, QString <i>type</i>, QString <i>valueDefault</i>, QString <i>value</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qxmldeclhandler.html#errorString" tppabs="http://pyqt4doc.appspot.com/qxmldeclhandler.html#errorString">errorString</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmldeclhandler.html#externalEntityDecl" tppabs="http://pyqt4doc.appspot.com/qxmldeclhandler.html#externalEntityDecl">externalEntityDecl</a></b> (<i>self</i>, QString <i>name</i>, QString <i>publicId</i>, QString <i>systemId</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmldeclhandler.html#internalEntityDecl" tppabs="http://pyqt4doc.appspot.com/qxmldeclhandler.html#internalEntityDecl">internalEntityDecl</a></b> (<i>self</i>, QString <i>name</i>, QString <i>value</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QXmlDeclHandler类提供了一个接口来报告XML数据的声明内容。</p>
+<p>您可以设置申报处理程序<a href="qxmlreader.html#setDeclHandler" tppabs="http://pyqt4doc.appspot.com/qxmlreader.html#setDeclHandler">QXmlReader.setDeclHandler</a>（ ） 。</p>
+<p>该接口是基于SAX2扩展DeclHandler 。</p>
+<p>该接口提供<a href="qxmldeclhandler.html#attributeDecl" tppabs="http://pyqt4doc.appspot.com/qxmldeclhandler.html#attributeDecl">attributeDecl</a>（ ）<a href="qxmldeclhandler.html#internalEntityDecl" tppabs="http://pyqt4doc.appspot.com/qxmldeclhandler.html#internalEntityDecl">internalEntityDecl</a>（）和<a href="qxmldeclhandler.html#externalEntityDecl" tppabs="http://pyqt4doc.appspot.com/qxmldeclhandler.html#externalEntityDecl">externalEntityDecl</a>（）函数。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QXmlDeclHandler"></a>QXmlDeclHandler.__init__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="QXmlDeclHandler-2"></a>QXmlDeclHandler.__init__ (<i>self</i>, <a href="qxmldeclhandler.html" tppabs="http://pyqt4doc.appspot.com/qxmldeclhandler.html">QXmlDeclHandler</a>)</h3>
+<h3 class="fn">
+<a name="attributeDecl"></a>bool QXmlDeclHandler.attributeDecl (<i>self</i>, QString <i>eName</i>, QString <i>aName</i>, QString <i>type</i>, QString <i>valueDefault</i>, QString <i>value</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>读者调用这个函数来报告属性类型声明。只有有效的（第一个）声明一个属性的报导。</p>
+<p>读者通过在相关元素的名称<i>eName</i>并在该属性的名称<i>aName</i>。它通过它表示该属性类型的字符串<i>type</i>并表示在该属性的默认字符串<i>valueDefault</i>。这个字符串是“ ＃IMPLIED ”之一，“ ＃REQUIRED ” ， “ ＃ FIXED”或空字符串（如果没有其他的应用） 。读者通过在该属性的默认值<i>value</i>。如果XML文件中没有指定默认值，<i>value</i>是一个空字符串。</p>
+<p>如果这个函数返回False读者停止解析和报告错误。读者使用函数<a href="qxmldeclhandler.html#errorString" tppabs="http://pyqt4doc.appspot.com/qxmldeclhandler.html#errorString">errorString</a>（ ）来获得错误信息。</p>
+
+
+<h3 class="fn">
+<a name="errorString"></a>QString QXmlDeclHandler.errorString (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>读者调用这个函数来得到一个错误字符串，如果任何的处理函数返回False 。</p>
+
+
+<h3 class="fn">
+<a name="externalEntityDecl"></a>bool QXmlDeclHandler.externalEntityDecl (<i>self</i>, QString <i>name</i>, QString <i>publicId</i>, QString <i>systemId</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>读者调用这个函数来报告解析外部实体声明。只有有效的（第一个）声明为每个实体的报导。</p>
+<p>读者通过在实体的名称<i>name</i>在公共标识符<i>publicId</i>和在系统中的标识符<i>systemId</i>。如果没有指定公共标识符，它传递一个空字符串<i>publicId</i>。</p>
+<p>如果这个函数返回False读者停止解析和报告错误。读者使用函数<a href="qxmldeclhandler.html#errorString" tppabs="http://pyqt4doc.appspot.com/qxmldeclhandler.html#errorString">errorString</a>（ ）来获得错误信息。</p>
+
+
+<h3 class="fn">
+<a name="internalEntityDecl"></a>bool QXmlDeclHandler.internalEntityDecl (<i>self</i>, QString <i>name</i>, QString <i>value</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>读者调用这个函数来报告内部实体声明。只有有效的（第一个）的声明报导。</p>
+<p>读者通过在实体的名称<i>name</i>而在实体的值<i>value</i>。</p>
+<p>如果这个函数返回False读者停止解析和报告错误。读者使用函数<a href="qxmldeclhandler.html#errorString" tppabs="http://pyqt4doc.appspot.com/qxmldeclhandler.html#errorString">errorString</a>（ ）来获得错误信息。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

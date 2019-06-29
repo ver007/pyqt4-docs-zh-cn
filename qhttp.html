@@ -1,0 +1,700 @@
+﻿<html>
+<head>
+<title>QHttp Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QHttp Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtnetwork.html">QtNetwork</a> module]</sup></sup>
+</h1>
+<p>该QHttp类提供了HTTP协议的实现。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qhttp.html#ConnectionMode-enum" tppabs="http://pyqt4doc.appspot.com/qhttp.html#ConnectionMode-enum">ConnectionMode</a></b> { ConnectionModeHttp, ConnectionModeHttps }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qhttp.html#Error-enum" tppabs="http://pyqt4doc.appspot.com/qhttp.html#Error-enum">Error</a></b> { NoError, UnknownError, HostNotFound, ConnectionRefused, ..., ProxyAuthenticationRequiredError }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qhttp.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qhttp.html#State-enum">State</a></b> { Unconnected, HostLookup, Connecting, Sending, ..., Closing }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qhttp.html#QHttp" tppabs="http://pyqt4doc.appspot.com/qhttp.html#QHttp">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhttp.html#QHttp-2" tppabs="http://pyqt4doc.appspot.com/qhttp.html#QHttp-2">__init__</a></b> (<i>self</i>, QString <i>hostName</i>, int <i>port</i> = 80, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhttp.html#QHttp-3" tppabs="http://pyqt4doc.appspot.com/qhttp.html#QHttp-3">__init__</a></b> (<i>self</i>, QString <i>hostname</i>, ConnectionMode <i>mode</i>, int <i>port</i> = 0, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhttp.html#abort" tppabs="http://pyqt4doc.appspot.com/qhttp.html#abort">abort</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qhttp.html#bytesAvailable" tppabs="http://pyqt4doc.appspot.com/qhttp.html#bytesAvailable">bytesAvailable</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhttp.html#clearPendingRequests" tppabs="http://pyqt4doc.appspot.com/qhttp.html#clearPendingRequests">clearPendingRequests</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qhttp.html#close" tppabs="http://pyqt4doc.appspot.com/qhttp.html#close">close</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QIODevice <b><a href="qhttp.html#currentDestinationDevice" tppabs="http://pyqt4doc.appspot.com/qhttp.html#currentDestinationDevice">currentDestinationDevice</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qhttp.html#currentId" tppabs="http://pyqt4doc.appspot.com/qhttp.html#currentId">currentId</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QHttpRequestHeader <b><a href="qhttp.html#currentRequest" tppabs="http://pyqt4doc.appspot.com/qhttp.html#currentRequest">currentRequest</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QIODevice <b><a href="qhttp.html#currentSourceDevice" tppabs="http://pyqt4doc.appspot.com/qhttp.html#currentSourceDevice">currentSourceDevice</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Error <b><a href="qhttp.html#error" tppabs="http://pyqt4doc.appspot.com/qhttp.html#error">error</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qhttp.html#errorString" tppabs="http://pyqt4doc.appspot.com/qhttp.html#errorString">errorString</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qhttp.html#get" tppabs="http://pyqt4doc.appspot.com/qhttp.html#get">get</a></b> (<i>self</i>, QString <i>path</i>, QIODevice <i>to</i> = None)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qhttp.html#hasPendingRequests" tppabs="http://pyqt4doc.appspot.com/qhttp.html#hasPendingRequests">hasPendingRequests</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qhttp.html#head" tppabs="http://pyqt4doc.appspot.com/qhttp.html#head">head</a></b> (<i>self</i>, QString <i>path</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhttp.html#ignoreSslErrors" tppabs="http://pyqt4doc.appspot.com/qhttp.html#ignoreSslErrors">ignoreSslErrors</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QHttpResponseHeader <b><a href="qhttp.html#lastResponse" tppabs="http://pyqt4doc.appspot.com/qhttp.html#lastResponse">lastResponse</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qhttp.html#post" tppabs="http://pyqt4doc.appspot.com/qhttp.html#post">post</a></b> (<i>self</i>, QString <i>path</i>, QIODevice <i>data</i>, QIODevice <i>to</i> = None)</li>
+<li>
+<div class="fn"></div>int <b><a href="qhttp.html#post-2" tppabs="http://pyqt4doc.appspot.com/qhttp.html#post-2">post</a></b> (<i>self</i>, QString <i>path</i>, QByteArray <i>data</i>, QIODevice <i>to</i> = None)</li>
+<li>
+<div class="fn"></div>str <b><a href="qhttp.html#read" tppabs="http://pyqt4doc.appspot.com/qhttp.html#read">read</a></b> (<i>self</i>, int <i>maxlen</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qhttp.html#readAll" tppabs="http://pyqt4doc.appspot.com/qhttp.html#readAll">readAll</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qhttp.html#request" tppabs="http://pyqt4doc.appspot.com/qhttp.html#request">request</a></b> (<i>self</i>, QHttpRequestHeader <i>header</i>, QIODevice <i>data</i> = None, QIODevice <i>to</i> = None)</li>
+<li>
+<div class="fn"></div>int <b><a href="qhttp.html#request-2" tppabs="http://pyqt4doc.appspot.com/qhttp.html#request-2">request</a></b> (<i>self</i>, QHttpRequestHeader <i>header</i>, QByteArray <i>data</i>, QIODevice <i>to</i> = None)</li>
+<li>
+<div class="fn"></div>int <b><a href="qhttp.html#setHost" tppabs="http://pyqt4doc.appspot.com/qhttp.html#setHost">setHost</a></b> (<i>self</i>, QString <i>hostName</i>, int <i>port</i> = 80)</li>
+<li>
+<div class="fn"></div>int <b><a href="qhttp.html#setHost-2" tppabs="http://pyqt4doc.appspot.com/qhttp.html#setHost-2">setHost</a></b> (<i>self</i>, QString <i>hostname</i>, ConnectionMode <i>mode</i>, int <i>port</i> = 0)</li>
+<li>
+<div class="fn"></div>int <b><a href="qhttp.html#setProxy" tppabs="http://pyqt4doc.appspot.com/qhttp.html#setProxy">setProxy</a></b> (<i>self</i>, QString <i>host</i>, int <i>port</i>, QString <i>user</i> = QString(), QString <i>password</i> = QString())</li>
+<li>
+<div class="fn"></div>int <b><a href="qhttp.html#setProxy-2" tppabs="http://pyqt4doc.appspot.com/qhttp.html#setProxy-2">setProxy</a></b> (<i>self</i>, QNetworkProxy <i>proxy</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qhttp.html#setSocket" tppabs="http://pyqt4doc.appspot.com/qhttp.html#setSocket">setSocket</a></b> (<i>self</i>, QTcpSocket <i>socket</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qhttp.html#setUser" tppabs="http://pyqt4doc.appspot.com/qhttp.html#setUser">setUser</a></b> (<i>self</i>, QString <i>userName</i>, QString <i>password</i> = QString())</li>
+<li>
+<div class="fn"></div>State <b><a href="qhttp.html#state" tppabs="http://pyqt4doc.appspot.com/qhttp.html#state">state</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qhttp.html#authenticationRequired" tppabs="http://pyqt4doc.appspot.com/qhttp.html#authenticationRequired">authenticationRequired</a></b> (const QString&amp;,quint16,QAuthenticator *)</li>
+<li>
+<div class="fn"></div>void <b><a href="qhttp.html#dataReadProgress" tppabs="http://pyqt4doc.appspot.com/qhttp.html#dataReadProgress">dataReadProgress</a></b> (int,int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qhttp.html#dataSendProgress" tppabs="http://pyqt4doc.appspot.com/qhttp.html#dataSendProgress">dataSendProgress</a></b> (int,int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qhttp.html#done" tppabs="http://pyqt4doc.appspot.com/qhttp.html#done">done</a></b> (bool)</li>
+<li>
+<div class="fn"></div>void <b><a href="qhttp.html#proxyAuthenticationRequired" tppabs="http://pyqt4doc.appspot.com/qhttp.html#proxyAuthenticationRequired">proxyAuthenticationRequired</a></b> (const QNetworkProxy&amp;,QAuthenticator *)</li>
+<li>
+<div class="fn"></div>void <b><a href="qhttp.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qhttp.html#readyRead">readyRead</a></b> (const QHttpResponseHeader&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a></b> (int,bool)</li>
+<li>
+<div class="fn"></div>void <b><a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a></b> (int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qhttp.html#responseHeaderReceived" tppabs="http://pyqt4doc.appspot.com/qhttp.html#responseHeaderReceived">responseHeaderReceived</a></b> (const QHttpResponseHeader&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qhttp.html#sslErrors" tppabs="http://pyqt4doc.appspot.com/qhttp.html#sslErrors">sslErrors</a></b> (const QList&lt;QSslError&gt;&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qhttp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qhttp.html#stateChanged">stateChanged</a></b> (int)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QHttp类提供了HTTP协议的实现。</p>
+<p>这个类提供了一个直接接口的HTTP ，使您可以下载和上传数据的HTTP协议。然而，对于新的应用程序，它是推荐使用<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>和<a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a>作为这些类具有一个简单，但更强大的API和更现代的协议实现。</p>
+<p>类以异步方式工作，所以没有阻挡功能。如果操作不能被立即执行，该函数将仍然返回直线距离，操作将被安排在以后执行。调度操作的结果通过信号报告。这种方法依赖于事件循环运行之中。</p>
+<p>可以计划的操作（他们被称为在文档其馀部分“请求” ）如下：<a href="qhttp.html#setHost" tppabs="http://pyqt4doc.appspot.com/qhttp.html#setHost">setHost</a>（ ）<a href="qhttp.html#get" tppabs="http://pyqt4doc.appspot.com/qhttp.html#get">get</a>（ ）<a href="qhttp.html#post" tppabs="http://pyqt4doc.appspot.com/qhttp.html#post">post</a>（ ）<a href="qhttp.html#head" tppabs="http://pyqt4doc.appspot.com/qhttp.html#head">head</a>（）和<a href="qhttp.html#request" tppabs="http://pyqt4doc.appspot.com/qhttp.html#request">request</a>（ ） 。</p>
+<p>所有这些请求都返回一个唯一的标识符，可以让你保持当前执行的请求的轨道。当一个请求的执行开始时，<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（）信号与该标识符被发射并且当请求完成时，<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（ ）信号被发射的标识符和一个布尔值，表示如果有错误的要求完成。</p>
+<p>为了使一个HTTP请求必须设置合适的HTTP标头。下面的示例演示如何从Qt的网页（即网址中要求主HTML页面<tt>http://qt.nokia.com/index.html</tt>） ：</p>
+<pre class="cpp">
+ <span class="type"><a href="qhttprequestheader.html" tppabs="http://pyqt4doc.appspot.com/qhttprequestheader.html">QHttpRequestHeader</a></span> header(<span class="string">"GET"</span><span class="operator">,</span> <span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span><span class="operator">.</span>toPercentEncoding(<span class="string">"/index.html"</span>));
+ header<span class="operator">.</span>setValue(<span class="string">"Host"</span><span class="operator">,</span> <span class="string">"qt.nokia.com"</span>);
+ http<span class="operator">-</span><span class="operator">&gt;</span><a href="qhttp.html#setHost" tppabs="http://pyqt4doc.appspot.com/qhttp.html#setHost">setHost</a>(<span class="string">"qt.nokia.com"</span>);
+ http<span class="operator">-</span><span class="operator">&gt;</span><a href="qhttp.html#request" tppabs="http://pyqt4doc.appspot.com/qhttp.html#request">request</a>(header);
+</pre>
+<p>对于常见的HTTP请求<tt>GET</tt>，<tt>POST</tt>和<tt>HEAD</tt>， QHttp提供方便的功能<a href="qhttp.html#get" tppabs="http://pyqt4doc.appspot.com/qhttp.html#get">get</a>（ ）<a href="qhttp.html#post" tppabs="http://pyqt4doc.appspot.com/qhttp.html#post">post</a>（）和<a href="qhttp.html#head" tppabs="http://pyqt4doc.appspot.com/qhttp.html#head">head</a>（ ） 。他们已经在使用一个合理的标题，如果你没有设置特殊的头字段，它们更容易使用。上面的例子中，也可以写为：</p>
+<pre class="cpp">
+ http<span class="operator">-</span><span class="operator">&gt;</span><a href="qhttp.html#setHost" tppabs="http://pyqt4doc.appspot.com/qhttp.html#setHost">setHost</a>(<span class="string">"qt.nokia.com"</span>);                <span class="comment">// id == 1</span>
+ http<span class="operator">-</span><span class="operator">&gt;</span><a href="qhttp.html#get" tppabs="http://pyqt4doc.appspot.com/qhttp.html#get">get</a>(<span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span><span class="operator">.</span>toPercentEncoding(<span class="string">"/index.html"</span>)); <span class="comment">// id == 2</span>
+</pre>
+<p>在这个例子中的信号按以下顺序发出（以小的变化，这取决于网络的流量等） ：</p>
+<pre class="cpp">
+ <a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>(<span class="number">1</span>)
+ <a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>(<span class="number">1</span><span class="operator">,</span> <span class="keyword">false</span>)
+
+ <a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>(<span class="number">2</span>)
+ <a href="qhttp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qhttp.html#stateChanged">stateChanged</a>(Connecting)
+ <a href="qhttp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qhttp.html#stateChanged">stateChanged</a>(Sending)
+ <a href="qhttp.html#dataSendProgress" tppabs="http://pyqt4doc.appspot.com/qhttp.html#dataSendProgress">dataSendProgress</a>(<span class="number">77</span><span class="operator">,</span> <span class="number">77</span>)
+ <a href="qhttp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qhttp.html#stateChanged">stateChanged</a>(Reading)
+ <a href="qhttp.html#responseHeaderReceived" tppabs="http://pyqt4doc.appspot.com/qhttp.html#responseHeaderReceived">responseHeaderReceived</a>(responseheader)
+ <a href="qhttp.html#dataReadProgress" tppabs="http://pyqt4doc.appspot.com/qhttp.html#dataReadProgress">dataReadProgress</a>(<span class="number">5388</span><span class="operator">,</span> <span class="number">0</span>)
+ <a href="qhttp.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qhttp.html#readyRead">readyRead</a>(responseheader)
+ <a href="qhttp.html#dataReadProgress" tppabs="http://pyqt4doc.appspot.com/qhttp.html#dataReadProgress">dataReadProgress</a>(<span class="number">18300</span><span class="operator">,</span> <span class="number">0</span>)
+ <a href="qhttp.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qhttp.html#readyRead">readyRead</a>(responseheader)
+ <a href="qhttp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qhttp.html#stateChanged">stateChanged</a>(Connected)
+ <a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>(<span class="number">2</span><span class="operator">,</span> <span class="keyword">false</span>)
+
+ <a href="qhttp.html#done" tppabs="http://pyqt4doc.appspot.com/qhttp.html#done">done</a>(<span class="keyword">false</span>)
+
+ <a href="qhttp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qhttp.html#stateChanged">stateChanged</a>(Closing)
+ <a href="qhttp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qhttp.html#stateChanged">stateChanged</a>(Unconnected)
+</pre>
+<p>该<a href="qhttp.html#dataSendProgress" tppabs="http://pyqt4doc.appspot.com/qhttp.html#dataSendProgress">dataSendProgress</a>（）和<a href="qhttp.html#dataReadProgress" tppabs="http://pyqt4doc.appspot.com/qhttp.html#dataReadProgress">dataReadProgress</a>如果你想显示（ ）在上面的例子中信号是一个非常有用<a href="qprogressbar.html" tppabs="http://pyqt4doc.appspot.com/qprogressbar.html">progress bar</a>以通知用户有关下载的进度。第二个参数是数据的总大小。在某些情况下这是不可能知道的总量提前，在这种情况下，第二个参数是0。 （如果您连接到一个<a href="qprogressbar.html" tppabs="http://pyqt4doc.appspot.com/qprogressbar.html">QProgressBar</a>共0个结果在一个繁忙的指标。 ）</p>
+<p>当响应标头被读出，有报导用<a href="qhttp.html#responseHeaderReceived" tppabs="http://pyqt4doc.appspot.com/qhttp.html#responseHeaderReceived">responseHeaderReceived</a>（）信号。</p>
+<p>该<a href="qhttp.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qhttp.html#readyRead">readyRead</a>（ ）信号告诉你，有数据准备好读。的数据量然后可以查询与<a href="qhttp.html#bytesAvailable" tppabs="http://pyqt4doc.appspot.com/qhttp.html#bytesAvailable">bytesAvailable</a>（）函数，它可以读取与该<a href="qhttp.html#read" tppabs="http://pyqt4doc.appspot.com/qhttp.html#read">read</a>（）或<a href="qhttp.html#readAll" tppabs="http://pyqt4doc.appspot.com/qhttp.html#readAll">readAll</a>（）函数。</p>
+<p>如果其中一个命令在命令序列的执行过程中发生了错误，所有挂起的命令（即预定的，但尚未执行的命令）被清零，并且没有信号发射它们。</p>
+<p>例如，如果你有要求的顺序如下</p>
+<pre class="cpp">
+ http<span class="operator">-</span><span class="operator">&gt;</span><a href="qhttp.html#setHost" tppabs="http://pyqt4doc.appspot.com/qhttp.html#setHost">setHost</a>(<span class="string">"www.foo.bar"</span>);       <span class="comment">// id == 1</span>
+ http<span class="operator">-</span><span class="operator">&gt;</span><a href="qhttp.html#get" tppabs="http://pyqt4doc.appspot.com/qhttp.html#get">get</a>(<span class="string">"/index.html"</span>);           <span class="comment">// id == 2</span>
+ http<span class="operator">-</span><span class="operator">&gt;</span><a href="qhttp.html#post" tppabs="http://pyqt4doc.appspot.com/qhttp.html#post">post</a>(<span class="string">"register.html"</span><span class="operator">,</span> data);  <span class="comment">// id == 3</span>
+</pre>
+<p>和<a href="qhttp.html#get" tppabs="http://pyqt4doc.appspot.com/qhttp.html#get">get</a>（ ）请求失败，因为主机查找失败，则<a href="qhttp.html#post" tppabs="http://pyqt4doc.appspot.com/qhttp.html#post">post</a>（）请求永远不会执行，并且信号是这样的：</p>
+<pre class="cpp">
+ <a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>(<span class="number">1</span>)
+ <a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>(<span class="number">1</span><span class="operator">,</span> <span class="keyword">false</span>)
+
+ <a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>(<span class="number">2</span>)
+ <a href="qhttp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qhttp.html#stateChanged">stateChanged</a>(HostLookup)
+ <a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>(<span class="number">2</span><span class="operator">,</span> <span class="keyword">true</span>)
+
+ <a href="qhttp.html#done" tppabs="http://pyqt4doc.appspot.com/qhttp.html#done">done</a>(<span class="keyword">true</span>)
+
+ <a href="qhttp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qhttp.html#stateChanged">stateChanged</a>(Unconnected)
+</pre>
+<p>然后，您可以获取与错误的详细信息<a href="qhttp.html#error" tppabs="http://pyqt4doc.appspot.com/qhttp.html#error">error</a>（）和<a href="qhttp.html#errorString" tppabs="http://pyqt4doc.appspot.com/qhttp.html#errorString">errorString</a>（）函数。请注意，只有想不到的行为，如网络故障被认为是一个错误。如果服务器响应包含错误状态，就像一个404响应，该报告为正常的反应情况。所以，你应该经常检查<a href="qhttpresponseheader.html#statusCode" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html#statusCode">status code</a>响应头中。</p>
+<p>该功能<a href="qhttp.html#currentId" tppabs="http://pyqt4doc.appspot.com/qhttp.html#currentId">currentId</a>（）和<a href="qhttp.html#currentRequest" tppabs="http://pyqt4doc.appspot.com/qhttp.html#currentRequest">currentRequest</a>（ ）提供有关当前正在执行的请求的更多信息。</p>
+<p>该功能<a href="qhttp.html#hasPendingRequests" tppabs="http://pyqt4doc.appspot.com/qhttp.html#hasPendingRequests">hasPendingRequests</a>（）和<a href="qhttp.html#clearPendingRequests" tppabs="http://pyqt4doc.appspot.com/qhttp.html#clearPendingRequests">clearPendingRequests</a>（）允许您查询和清除挂起的请求列表。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="ConnectionMode-enum"></a>QHttp.ConnectionMode</h3>
+<p>此枚举用于指定连接使用的方式：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHttp.ConnectionModeHttp</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该连接是一个普通的HTTP连接到服务器</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHttp.ConnectionModeHttps</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">HTTPS协议的使用和连接使用SSL加密。</td>
+</tr>
+</table>
+<p>当使用HTTPS模式中，应注意连接到sslErrors信号，并处理可能出现的SSL错误。</p>
+<p>这个枚举被引入或修改的Qt 4.3 。</p>
+<p><b>See also</b> <a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>。</p>
+
+
+<h3 class="fn">
+<a name="Error-enum"></a>QHttp.Error</h3>
+<p>这个枚举标识所发生的错误。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHttp.NoError</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">未发生错误。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHttp.HostNotFound</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">该主机名查找失败。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHttp.ConnectionRefused</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">服务器拒绝连接。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHttp.UnexpectedClose</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">服务器关闭了连接意外。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHttp.InvalidResponseHeader</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">服务器发送一个无效的响应头。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHttp.WrongContentLength</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">客户端不能正确读出的内容，因为发生相对于所述内容的长度的错误。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHttp.Aborted</tt></td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">该请求被中止与<a href="qhttp.html#abort" tppabs="http://pyqt4doc.appspot.com/qhttp.html#abort">abort</a>（ ） 。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QHttp.ProxyAuthenticationRequiredError</tt>
+</td>
+<td class="topAlign"><tt>9</tt></td>
+<td class="topAlign">
+<a class="obsolete" href="qhttp.html" tppabs="http://pyqt4doc.appspot.com/qhttp.html">QHttp</a>是使用代理，而代理服务器需要身份验证来建立连接。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QHttp.AuthenticationRequiredError</tt>
+</td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">该网站的服务器要求身份验证来完成请求。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHttp.UnknownError</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">发生错误比上述指定的。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qhttp.html#error" tppabs="http://pyqt4doc.appspot.com/qhttp.html#error">error</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="State-enum"></a>QHttp.State</h3>
+<p>此枚举用于指定状态的客户端是：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHttp.Unconnected</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">还有就是主机的连接。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHttp.HostLookup</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">主机名查找正在进行中。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHttp.Connecting</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">连接到主机的尝试正在进行中。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHttp.Sending</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">客户端发送的请求发送到服务器。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHttp.Reading</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">客户端的请求已发送，并且客户端读取服务器的响应。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHttp.Connected</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">到主机的连接是打开的，但是客户端既不是发送请求，也没有等待响应。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHttp.Closing</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">连接被关闭了，但尚未关闭。 （该状态将是<tt>Unconnected</tt>当连接关闭。 ）</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qhttp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qhttp.html#stateChanged">stateChanged</a>（）和<a href="qhttp.html#state" tppabs="http://pyqt4doc.appspot.com/qhttp.html#state">state</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QHttp"></a>QHttp.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a class="obsolete" href="qhttp.html" tppabs="http://pyqt4doc.appspot.com/qhttp.html">QHttp</a>对象。该<i>parent</i>参数被传递到<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>构造函数。</p>
+
+
+<h3 class="fn">
+<a name="QHttp-2"></a>QHttp.__init__ (<i>self</i>, QString <i>hostName</i>, int <i>port</i> = 80, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a class="obsolete" href="qhttp.html" tppabs="http://pyqt4doc.appspot.com/qhttp.html">QHttp</a>对象。后续请求都通过连接到服务器完成<i>hostName</i>端口<i>port</i>。</p>
+<p>该<i>parent</i>参数被传递到<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>构造函数。</p>
+<p><b>See also</b> <a href="qhttp.html#setHost" tppabs="http://pyqt4doc.appspot.com/qhttp.html#setHost">setHost</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QHttp-3"></a>QHttp.__init__ (<i>self</i>, QString <i>hostname</i>, <a href="qhttp.html#ConnectionMode-enum" tppabs="http://pyqt4doc.appspot.com/qhttp.html#ConnectionMode-enum">ConnectionMode</a> <i>mode</i>, int <i>port</i> = 0, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a class="obsolete" href="qhttp.html" tppabs="http://pyqt4doc.appspot.com/qhttp.html">QHttp</a>对象。后续请求都通过连接到服务器完成<i>hostName</i>端口<i>port</i>使用连接模式<i>mode</i>。</p>
+<p>如果端口为0 ，它会使用默认端口<i>mode</i>使用（ 80用于HTTP和HTTPS使用443 ） 。</p>
+<p>该<i>parent</i>参数被传递到<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>构造函数。</p>
+<p><b>See also</b> <a href="qhttp.html#setHost" tppabs="http://pyqt4doc.appspot.com/qhttp.html#setHost">setHost</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="abort"></a>QHttp.abort (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void abort()</tt>。</p>
+<p>中止当前的请求，并删除所有已计划的请求。</p>
+<p>对当前的请求，则<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（）的信号与<tt>error</tt>争论<tt>true</tt>射出。对于那些受中止（ ）所有其他请求，没有信号发射。</p>
+<p>由于这个插槽也删除了预定的要求，没有离开请求和<a href="qhttp.html#done" tppabs="http://pyqt4doc.appspot.com/qhttp.html#done">done</a>（）信号被发射（与<tt>error</tt>争论<tt>true</tt>） 。</p>
+<p><b>See also</b> <a href="qhttp.html#clearPendingRequests" tppabs="http://pyqt4doc.appspot.com/qhttp.html#clearPendingRequests">clearPendingRequests</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="bytesAvailable"></a>int QHttp.bytesAvailable (<i>self</i>)</h3>
+<p>返回可以从响应内容被读取的时刻的字节数。</p>
+<p><b>See also</b> <a href="qhttp.html#get" tppabs="http://pyqt4doc.appspot.com/qhttp.html#get">get</a>（ ）<a href="qhttp.html#post" tppabs="http://pyqt4doc.appspot.com/qhttp.html#post">post</a>（ ）<a href="qhttp.html#request" tppabs="http://pyqt4doc.appspot.com/qhttp.html#request">request</a>（ ）<a href="qhttp.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qhttp.html#readyRead">readyRead</a>（ ）<a href="qhttp.html#read" tppabs="http://pyqt4doc.appspot.com/qhttp.html#read">read</a>（）和<a href="qhttp.html#readAll" tppabs="http://pyqt4doc.appspot.com/qhttp.html#readAll">readAll</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clearPendingRequests"></a>QHttp.clearPendingRequests (<i>self</i>)</h3>
+<p>删除从原定的请求列表中的所有挂起的请求。这并不会影响正在执行该请求。如果你想停止这一点，使用<a href="qhttp.html#abort" tppabs="http://pyqt4doc.appspot.com/qhttp.html#abort">abort</a>（ ） 。</p>
+<p><b>See also</b> <a href="qhttp.html#hasPendingRequests" tppabs="http://pyqt4doc.appspot.com/qhttp.html#hasPendingRequests">hasPendingRequests</a>（）和<a href="qhttp.html#abort" tppabs="http://pyqt4doc.appspot.com/qhttp.html#abort">abort</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="close"></a>int QHttp.close (<i>self</i>)</h3>
+<p>关闭连接，如果你有一个保持活动的连接，并希望将其关闭，这是很有用的。</p>
+<p>对于发出的请求<a href="qhttp.html#get" tppabs="http://pyqt4doc.appspot.com/qhttp.html#get">get</a>（ ）<a href="qhttp.html#post" tppabs="http://pyqt4doc.appspot.com/qhttp.html#post">post</a>（）和<a href="qhttp.html#head" tppabs="http://pyqt4doc.appspot.com/qhttp.html#head">head</a>（ ）<a class="obsolete" href="qhttp.html" tppabs="http://pyqt4doc.appspot.com/qhttp.html">QHttp</a>设置连接要保持活动。您也可以使用您传递给头做到这一点<a href="qhttp.html#request" tppabs="http://pyqt4doc.appspot.com/qhttp.html#request">request</a>（）函数。<a class="obsolete" href="qhttp.html" tppabs="http://pyqt4doc.appspot.com/qhttp.html">QHttp</a>只有关闭连接到HTTP服务器，如果响应头要求它这样做。</p>
+<p>该函数不会阻塞，而是立即返回。该请求被预定，并且是异步执行的执行。该函数返回一个唯一的标识符，它是由通过<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（）和<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（ ） 。</p>
+<p>当该请求被启动<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（）信号被发射。当它完成时的<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（）信号被发射。</p>
+<p>如果你想立即关闭连接，你必须使用<a href="qhttp.html#abort" tppabs="http://pyqt4doc.appspot.com/qhttp.html#abort">abort</a>（ ）来代替。</p>
+<p><b>See also</b> <a href="qhttp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qhttp.html#stateChanged">stateChanged</a>（ ）<a href="qhttp.html#abort" tppabs="http://pyqt4doc.appspot.com/qhttp.html#abort">abort</a>（ ）<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（ ）<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（）和<a href="qhttp.html#done" tppabs="http://pyqt4doc.appspot.com/qhttp.html#done">done</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentDestinationDevice"></a><a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> QHttp.currentDestinationDevice (<i>self</i>)</h3>
+<p>返回<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>指针，该指针被用作用于存储正在执行的HTTP请求的数据。如果没有当前请求或者请求不将数据存储到一个IO设备，该函数返回0 。</p>
+<p>此功能可用于删除的<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>在连接到插槽<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（）信号。</p>
+<p><b>See also</b> <a href="qhttp.html#currentSourceDevice" tppabs="http://pyqt4doc.appspot.com/qhttp.html#currentSourceDevice">currentSourceDevice</a>（ ）<a href="qhttp.html#get" tppabs="http://pyqt4doc.appspot.com/qhttp.html#get">get</a>（ ）<a href="qhttp.html#post" tppabs="http://pyqt4doc.appspot.com/qhttp.html#post">post</a>（）和<a href="qhttp.html#request" tppabs="http://pyqt4doc.appspot.com/qhttp.html#request">request</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentId"></a>int QHttp.currentId (<i>self</i>)</h3>
+<p>返回正在执行的HTTP请求或标识符0 ，如果没有请求被执行（即他们已经全部完成） 。</p>
+<p><b>See also</b> <a href="qhttp.html#currentRequest" tppabs="http://pyqt4doc.appspot.com/qhttp.html#currentRequest">currentRequest</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentRequest"></a><a href="qhttprequestheader.html" tppabs="http://pyqt4doc.appspot.com/qhttprequestheader.html">QHttpRequestHeader</a> QHttp.currentRequest (<i>self</i>)</h3>
+<p>返回正在执行的HTTP请求的请求头。如果请求的是一个接发<a href="qhttp.html#setHost" tppabs="http://pyqt4doc.appspot.com/qhttp.html#setHost">setHost</a>（）或<a href="qhttp.html#close" tppabs="http://pyqt4doc.appspot.com/qhttp.html#close">close</a>（ ） ，它返回一个无效的请求头，即<a href="qhttpheader.html#isValid" tppabs="http://pyqt4doc.appspot.com/qhttpheader.html#isValid">QHttpRequestHeader.isValid</a>（ ）返回False 。</p>
+<p><b>See also</b> <a href="qhttp.html#currentId" tppabs="http://pyqt4doc.appspot.com/qhttp.html#currentId">currentId</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentSourceDevice"></a><a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> QHttp.currentSourceDevice (<i>self</i>)</h3>
+<p>返回<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>指针，该指针被用作要执行的HTTP请求的数据源。如果没有当前请求或者请求不使用IO设备作为数据源，这个函数返回0 。</p>
+<p>此功能可用于删除的<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>在连接到插槽<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（）信号。</p>
+<p><b>See also</b> <a href="qhttp.html#currentDestinationDevice" tppabs="http://pyqt4doc.appspot.com/qhttp.html#currentDestinationDevice">currentDestinationDevice</a>（ ）<a href="qhttp.html#post" tppabs="http://pyqt4doc.appspot.com/qhttp.html#post">post</a>（）和<a href="qhttp.html#request" tppabs="http://pyqt4doc.appspot.com/qhttp.html#request">request</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="error"></a><a href="qhttp.html#Error-enum" tppabs="http://pyqt4doc.appspot.com/qhttp.html#Error-enum">Error</a> QHttp.error (<i>self</i>)</h3>
+<p>返回所发生的最后一个错误。接收时，此功能非常有用，找出发生了什么<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（）或一<a href="qhttp.html#done" tppabs="http://pyqt4doc.appspot.com/qhttp.html#done">done</a>（）的信号与<tt>error</tt>争论<tt>true</tt>。</p>
+<p>如果你开始一个新的请求，错误状态重置为<tt>NoError</tt>。</p>
+
+
+<h3 class="fn">
+<a name="errorString"></a>QString QHttp.errorString (<i>self</i>)</h3>
+<p>返回上次发生错误的人类可读的描述。接收时，这是有用的，以呈现一个错误信息给用户的<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（）或一<a href="qhttp.html#done" tppabs="http://pyqt4doc.appspot.com/qhttp.html#done">done</a>（）的信号与<tt>error</tt>争论<tt>true</tt>。</p>
+
+
+<h3 class="fn">
+<a name="get"></a>int QHttp.get (<i>self</i>, QString <i>path</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>to</i> = None)</h3>
+<p>发送一个GET请求<i>path</i>通过设置服务器<a href="qhttp.html#setHost" tppabs="http://pyqt4doc.appspot.com/qhttp.html#setHost">setHost</a>（）或在构造函数中指定。</p>
+<p><i>path</i>必须像一个绝对路径<tt>/index.html</tt>或者像一个绝对URI<tt>http://example.com/index.html</tt>并且必须与任一被编码<a href="qurl.html#toPercentEncoding" tppabs="http://pyqt4doc.appspot.com/qurl.html#toPercentEncoding">QUrl.toPercentEncoding</a>（）或<a href="qurl.html#encodedPath" tppabs="http://pyqt4doc.appspot.com/qurl.html#encodedPath">QUrl.encodedPath</a>（ ） 。</p>
+<p>如果IO设备<i>to</i>为0的<a href="qhttp.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qhttp.html#readyRead">readyRead</a>（ ）信号被每个新的内容数据是可读取的时间发射。</p>
+<p>如果IO设备<i>to</i>不为0时，响应的内容数据直接写入到设备。确保<i>to</i>指针是有效的操作的持续时间（它是安全的删除当<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（）信号被发射） 。</p>
+<a id="request-processing" name="request-processing"></a>
+<h4>Request Processing</h4>
+<p>该函数不会阻塞，而是立即返回。该请求被预定，并且是异步执行的执行。该函数返回一个唯一的标识符，它是由通过<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（）和<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（ ） 。</p>
+<p>当该请求被启动<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（）信号被发射。当它完成时的<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（）信号被发射。</p>
+<p><b>See also</b> <a href="qhttp.html#setHost" tppabs="http://pyqt4doc.appspot.com/qhttp.html#setHost">setHost</a>（ ）<a href="qhttp.html#post" tppabs="http://pyqt4doc.appspot.com/qhttp.html#post">post</a>（ ）<a href="qhttp.html#head" tppabs="http://pyqt4doc.appspot.com/qhttp.html#head">head</a>（ ）<a href="qhttp.html#request" tppabs="http://pyqt4doc.appspot.com/qhttp.html#request">request</a>（ ）<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（ ）<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（）和<a href="qhttp.html#done" tppabs="http://pyqt4doc.appspot.com/qhttp.html#done">done</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasPendingRequests"></a>bool QHttp.hasPendingRequests (<i>self</i>)</h3>
+<p>返回True如果有尚未被执行计划的任何请求，否则返回False 。</p>
+<p>正在执行的请求<i>not</i>认为作为计划的要求。</p>
+<p><b>See also</b> <a href="qhttp.html#clearPendingRequests" tppabs="http://pyqt4doc.appspot.com/qhttp.html#clearPendingRequests">clearPendingRequests</a>（ ）<a href="qhttp.html#currentId" tppabs="http://pyqt4doc.appspot.com/qhttp.html#currentId">currentId</a>（）和<a href="qhttp.html#currentRequest" tppabs="http://pyqt4doc.appspot.com/qhttp.html#currentRequest">currentRequest</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="head"></a>int QHttp.head (<i>self</i>, QString <i>path</i>)</h3>
+<p>发送一个请求头<i>path</i>通过设置服务器<a href="qhttp.html#setHost" tppabs="http://pyqt4doc.appspot.com/qhttp.html#setHost">setHost</a>（）或在构造函数中指定。</p>
+<p><i>path</i>必须像一个绝对路径<tt>/index.html</tt>或者像一个绝对URI<tt>http://example.com/index.html</tt>。</p>
+<p>该函数不会阻塞，而是立即返回。该请求被预定，并且是异步执行的执行。该函数返回一个唯一的标识符，它是由通过<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（）和<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（ ） 。</p>
+<p>当该请求被启动<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（）信号被发射。当它完成时的<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（）信号被发射。</p>
+<p><b>See also</b> <a href="qhttp.html#setHost" tppabs="http://pyqt4doc.appspot.com/qhttp.html#setHost">setHost</a>（ ）<a href="qhttp.html#get" tppabs="http://pyqt4doc.appspot.com/qhttp.html#get">get</a>（ ）<a href="qhttp.html#post" tppabs="http://pyqt4doc.appspot.com/qhttp.html#post">post</a>（ ）<a href="qhttp.html#request" tppabs="http://pyqt4doc.appspot.com/qhttp.html#request">request</a>（ ）<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（ ）<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（）和<a href="qhttp.html#done" tppabs="http://pyqt4doc.appspot.com/qhttp.html#done">done</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="ignoreSslErrors"></a>QHttp.ignoreSslErrors (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void ignoreSslErrors()</tt>。</p>
+<p>告诉<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>用于HTTP连接忽略报告的错误<a href="qhttp.html#sslErrors" tppabs="http://pyqt4doc.appspot.com/qhttp.html#sslErrors">sslErrors</a>（）信号。</p>
+<p>注意，该功能必须从连接到一个时隙内的称为<a href="qhttp.html#sslErrors" tppabs="http://pyqt4doc.appspot.com/qhttp.html#sslErrors">sslErrors</a>（）信号有任何影响。</p>
+<p><b>See also</b> <a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>和<a href="qsslsocket.html#sslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#sslErrors">QSslSocket.sslErrors</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="lastResponse"></a><a href="qhttpresponseheader.html" tppabs="http://pyqt4doc.appspot.com/qhttpresponseheader.html">QHttpResponseHeader</a> QHttp.lastResponse (<i>self</i>)</h3>
+<p>返回最近结束的HTTP请求接收到的响应报头。如果没有反应尚未收到<a href="qhttpheader.html#isValid" tppabs="http://pyqt4doc.appspot.com/qhttpheader.html#isValid">QHttpResponseHeader.isValid</a>（ ）将返回False 。</p>
+<p><b>See also</b> <a href="qhttp.html#currentRequest" tppabs="http://pyqt4doc.appspot.com/qhttp.html#currentRequest">currentRequest</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="post"></a>int QHttp.post (<i>self</i>, QString <i>path</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>data</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>to</i> = None)</h3>
+<p>对于发送POST请求<i>path</i>通过设置服务器<a href="qhttp.html#setHost" tppabs="http://pyqt4doc.appspot.com/qhttp.html#setHost">setHost</a>（）或在构造函数中指定。</p>
+<p><i>path</i>必须像一个绝对路径<tt>/index.html</tt>或者像一个绝对URI<tt>http://example.com/index.html</tt>并且必须与任一被编码<a href="qurl.html#toPercentEncoding" tppabs="http://pyqt4doc.appspot.com/qurl.html#toPercentEncoding">QUrl.toPercentEncoding</a>（）或<a href="qurl.html#encodedPath" tppabs="http://pyqt4doc.appspot.com/qurl.html#encodedPath">QUrl.encodedPath</a>（ ） 。</p>
+<p>传入的数据来自经<i>data</i>IO设备。</p>
+<p>如果IO设备<i>to</i>为0的<a href="qhttp.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qhttp.html#readyRead">readyRead</a>（ ）信号被每个新的内容数据是可读取的时间发射。</p>
+<p>如果IO设备<i>to</i>不为0时，响应的内容数据直接写入到设备。确保<i>to</i>指针是有效的操作的持续时间（它是安全的删除当<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（）信号被发射） 。</p>
+<p>该函数不会阻塞，而是立即返回。该请求被预定，并且是异步执行的执行。该函数返回一个唯一的标识符，它是由通过<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（）和<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（ ） 。</p>
+<p>当该请求被启动<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（）信号被发射。当它完成时的<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（）信号被发射。</p>
+<p><b>See also</b> <a href="qhttp.html#setHost" tppabs="http://pyqt4doc.appspot.com/qhttp.html#setHost">setHost</a>（ ）<a href="qhttp.html#get" tppabs="http://pyqt4doc.appspot.com/qhttp.html#get">get</a>（ ）<a href="qhttp.html#head" tppabs="http://pyqt4doc.appspot.com/qhttp.html#head">head</a>（ ）<a href="qhttp.html#request" tppabs="http://pyqt4doc.appspot.com/qhttp.html#request">request</a>（ ）<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（ ）<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（）和<a href="qhttp.html#done" tppabs="http://pyqt4doc.appspot.com/qhttp.html#done">done</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="post-2"></a>int QHttp.post (<i>self</i>, QString <i>path</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>data</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>to</i> = None)</h3>
+<p>这是一个重载函数。</p>
+<p><i>data</i>作为HTTP请求的内容数据。</p>
+
+
+<h3 class="fn">
+<a name="read"></a>str QHttp.read (<i>self</i>, int <i>maxlen</i>)</h3>
+<p>阅读<i>maxlen</i>从响应内容字节到<i>data</i>并返回读取的字节数。返回-1，如果发生了错误。</p>
+<p><b>See also</b> <a href="qhttp.html#get" tppabs="http://pyqt4doc.appspot.com/qhttp.html#get">get</a>（ ）<a href="qhttp.html#post" tppabs="http://pyqt4doc.appspot.com/qhttp.html#post">post</a>（ ）<a href="qhttp.html#request" tppabs="http://pyqt4doc.appspot.com/qhttp.html#request">request</a>（ ）<a href="qhttp.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qhttp.html#readyRead">readyRead</a>（ ）<a href="qhttp.html#bytesAvailable" tppabs="http://pyqt4doc.appspot.com/qhttp.html#bytesAvailable">bytesAvailable</a>（）和<a href="qhttp.html#readAll" tppabs="http://pyqt4doc.appspot.com/qhttp.html#readAll">readAll</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="readAll"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QHttp.readAll (<i>self</i>)</h3>
+<p>读取响应内容的所有字节，并返回它们。</p>
+<p><b>See also</b> <a href="qhttp.html#get" tppabs="http://pyqt4doc.appspot.com/qhttp.html#get">get</a>（ ）<a href="qhttp.html#post" tppabs="http://pyqt4doc.appspot.com/qhttp.html#post">post</a>（ ）<a href="qhttp.html#request" tppabs="http://pyqt4doc.appspot.com/qhttp.html#request">request</a>（ ）<a href="qhttp.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qhttp.html#readyRead">readyRead</a>（ ）<a href="qhttp.html#bytesAvailable" tppabs="http://pyqt4doc.appspot.com/qhttp.html#bytesAvailable">bytesAvailable</a>（）和<a href="qhttp.html#read" tppabs="http://pyqt4doc.appspot.com/qhttp.html#read">read</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="request"></a>int QHttp.request (<i>self</i>, <a href="qhttprequestheader.html" tppabs="http://pyqt4doc.appspot.com/qhttprequestheader.html">QHttpRequestHeader</a> <i>header</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>data</i> = None, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>to</i> = None)</h3>
+<p>发送一个请求到所设定的服务器<a href="qhttp.html#setHost" tppabs="http://pyqt4doc.appspot.com/qhttp.html#setHost">setHost</a>（）或在构造函数中指定。使用<i>header</i>作为HTTP请求头。你是负责建立一个头适合于您的要求。</p>
+<p>传入的数据来自经<i>data</i>IO设备。</p>
+<p>如果IO设备<i>to</i>为0的<a href="qhttp.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qhttp.html#readyRead">readyRead</a>（ ）信号被每个新的内容数据是可读取的时间发射。</p>
+<p>如果IO设备<i>to</i>不为0时，响应的内容数据直接写入到设备。确保<i>to</i>指针是有效的操作的持续时间（它是安全的删除当<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（）信号被发射） 。</p>
+<p>该函数不会阻塞，而是立即返回。该请求被预定，并且是异步执行的执行。该函数返回一个唯一的标识符，它是由通过<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（）和<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（ ） 。</p>
+<p>当该请求被启动<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（）信号被发射。当它完成时的<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（）信号被发射。</p>
+<p><b>See also</b> <a href="qhttp.html#setHost" tppabs="http://pyqt4doc.appspot.com/qhttp.html#setHost">setHost</a>（ ）<a href="qhttp.html#get" tppabs="http://pyqt4doc.appspot.com/qhttp.html#get">get</a>（ ）<a href="qhttp.html#post" tppabs="http://pyqt4doc.appspot.com/qhttp.html#post">post</a>（ ）<a href="qhttp.html#head" tppabs="http://pyqt4doc.appspot.com/qhttp.html#head">head</a>（ ）<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（ ）<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（）和<a href="qhttp.html#done" tppabs="http://pyqt4doc.appspot.com/qhttp.html#done">done</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="request-2"></a>int QHttp.request (<i>self</i>, <a href="qhttprequestheader.html" tppabs="http://pyqt4doc.appspot.com/qhttprequestheader.html">QHttpRequestHeader</a> <i>header</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>data</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>to</i> = None)</h3>
+<p>这是一个重载函数。</p>
+<p><i>data</i>作为HTTP请求的内容数据。</p>
+
+
+<h3 class="fn">
+<a name="setHost"></a>int QHttp.setHost (<i>self</i>, QString <i>hostName</i>, int <i>port</i> = 80)</h3>
+<p>设置用于为请求的HTTP服务器<i>hostName</i>端口<i>port</i>。</p>
+<p>该函数不会阻塞，而是立即返回。该请求被预定，并且是异步执行的执行。该函数返回一个唯一的标识符，它是由通过<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（）和<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（ ） 。</p>
+<p>当该请求被启动<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（）信号被发射。当它完成时的<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（）信号被发射。</p>
+<p><b>See also</b> <a href="qhttp.html#get" tppabs="http://pyqt4doc.appspot.com/qhttp.html#get">get</a>（ ）<a href="qhttp.html#post" tppabs="http://pyqt4doc.appspot.com/qhttp.html#post">post</a>（ ）<a href="qhttp.html#head" tppabs="http://pyqt4doc.appspot.com/qhttp.html#head">head</a>（ ）<a href="qhttp.html#request" tppabs="http://pyqt4doc.appspot.com/qhttp.html#request">request</a>（ ）<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（ ）<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（）和<a href="qhttp.html#done" tppabs="http://pyqt4doc.appspot.com/qhttp.html#done">done</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setHost-2"></a>int QHttp.setHost (<i>self</i>, QString <i>hostname</i>, <a href="qhttp.html#ConnectionMode-enum" tppabs="http://pyqt4doc.appspot.com/qhttp.html#ConnectionMode-enum">ConnectionMode</a> <i>mode</i>, int <i>port</i> = 0)</h3>
+<p>设置用于为请求的HTTP服务器<i>hostName</i>端口<i>port</i>使用连接模式<i>mode</i>。</p>
+<p>如果端口为0 ，它会使用默认端口<i>mode</i>使用（ 80用于HTTP和HTTPS使用443 ） 。</p>
+<p>该函数不会阻塞，而是立即返回。该请求被预定，并且是异步执行的执行。该函数返回一个唯一的标识符，它是由通过<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（）和<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（ ） 。</p>
+<p>当该请求被启动<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（）信号被发射。当它完成时的<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（）信号被发射。</p>
+<p><b>See also</b> <a href="qhttp.html#get" tppabs="http://pyqt4doc.appspot.com/qhttp.html#get">get</a>（ ）<a href="qhttp.html#post" tppabs="http://pyqt4doc.appspot.com/qhttp.html#post">post</a>（ ）<a href="qhttp.html#head" tppabs="http://pyqt4doc.appspot.com/qhttp.html#head">head</a>（ ）<a href="qhttp.html#request" tppabs="http://pyqt4doc.appspot.com/qhttp.html#request">request</a>（ ）<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（ ）<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（）和<a href="qhttp.html#done" tppabs="http://pyqt4doc.appspot.com/qhttp.html#done">done</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setProxy"></a>int QHttp.setProxy (<i>self</i>, QString <i>host</i>, int <i>port</i>, QString <i>user</i> = QString(), QString <i>password</i> = QString())</h3>
+<p>启用HTTP代理支持，则使用代理服务器<i>host</i>端口<i>port</i>。<i>username</i>和<i>password</i>如果代理服务器需要身份验证可以提供。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type">void</span> Ticker<span class="operator">.</span>getTicks()
+ {
+   http <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qhttp.html" tppabs="http://pyqt4doc.appspot.com/qhttp.html">QHttp</a></span>(<span class="keyword">this</span>);
+   connect(http<span class="operator">,</span> SIGNAL(done(<span class="type">bool</span>))<span class="operator">,</span> <span class="keyword">this</span><span class="operator">,</span> SLOT(showPage()));
+   http<span class="operator">-</span><span class="operator">&gt;</span>setProxy(<span class="string">"proxy.example.com"</span><span class="operator">,</span> <span class="number">3128</span>);
+   http<span class="operator">-</span><span class="operator">&gt;</span>setHost(<span class="string">"ticker.example.com"</span>);
+   http<span class="operator">-</span><span class="operator">&gt;</span>get(<span class="string">"/ticks.asp"</span>);
+ }
+
+ <span class="type">void</span> Ticker<span class="operator">.</span>showPage()
+ {
+   display(http<span class="operator">-</span><span class="operator">&gt;</span>readAll());
+ }
+</pre>
+<p><a class="obsolete" href="qhttp.html" tppabs="http://pyqt4doc.appspot.com/qhttp.html">QHttp</a>仅支持非透明web代理服务器，如鱿鱼Web代理缓存服务器（从<a href="http://www.squid.org/">http://www.squid.org/</a>） 。对于透明代理，比如SOCKS5 ，使用<a href="qnetworkproxy.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html">QNetworkProxy</a>代替。</p>
+<p><b>Note:</b>setProxy （ ）之前已被调用<a href="qhttp.html#setHost" tppabs="http://pyqt4doc.appspot.com/qhttp.html#setHost">setHost</a>（ ）才能生效。如果setProxy （ ）之后调用<a href="qhttp.html#setHost" tppabs="http://pyqt4doc.appspot.com/qhttp.html#setHost">setHost</a>（ ） ，那么就不会适用，直至后<a href="qhttp.html#setHost" tppabs="http://pyqt4doc.appspot.com/qhttp.html#setHost">setHost</a>（）被再次调用。</p>
+<p><b>See also</b> <a href="qftp.html#setProxy" tppabs="http://pyqt4doc.appspot.com/qftp.html#setProxy">QFtp.setProxy</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setProxy-2"></a>int QHttp.setProxy (<i>self</i>, <a href="qnetworkproxy.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html">QNetworkProxy</a> <i>proxy</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>从使用的代理服务器设置启用HTTP代理支持<i>proxy</i>。如果<i>proxy</i>是一个透明代理，<a class="obsolete" href="qhttp.html" tppabs="http://pyqt4doc.appspot.com/qhttp.html">QHttp</a>将调用<a href="qabstractsocket.html#setProxy" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#setProxy">QAbstractSocket.setProxy</a>（ ）底层套接字上。如果类型是<a href="qnetworkproxy.html#ProxyType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#ProxyType-enum">QNetworkProxy.HttpCachingProxy</a>，<a class="obsolete" href="qhttp.html" tppabs="http://pyqt4doc.appspot.com/qhttp.html">QHttp</a>会像以前的功能。</p>
+<p><b>Note:</b>对于使用Qt 4.3的兼容性，如果代理类型是<a href="qnetworkproxy.html#ProxyType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#ProxyType-enum">QNetworkProxy.HttpProxy</a>和请求类型是未加密的（也就是<a href="qhttp.html#ConnectionMode-enum" tppabs="http://pyqt4doc.appspot.com/qhttp.html#ConnectionMode-enum">ConnectionModeHttp</a>） ，<a class="obsolete" href="qhttp.html" tppabs="http://pyqt4doc.appspot.com/qhttp.html">QHttp</a>将把代理的缓存代理。</p>
+
+
+<h3 class="fn">
+<a name="setSocket"></a>int QHttp.setSocket (<i>self</i>, <a href="qtcpsocket.html" tppabs="http://pyqt4doc.appspot.com/qtcpsocket.html">QTcpSocket</a> <i>socket</i>)</h3>
+<p>取代了内部<a href="qtcpsocket.html" tppabs="http://pyqt4doc.appspot.com/qtcpsocket.html">QTcpSocket</a>那<a class="obsolete" href="qhttp.html" tppabs="http://pyqt4doc.appspot.com/qhttp.html">QHttp</a>与使用<i>socket</i>。如果你想使用自己定制的，这非常有用<a href="qtcpsocket.html" tppabs="http://pyqt4doc.appspot.com/qtcpsocket.html">QTcpSocket</a>子类，而不是纯<a href="qtcpsocket.html" tppabs="http://pyqt4doc.appspot.com/qtcpsocket.html">QTcpSocket</a>那<a class="obsolete" href="qhttp.html" tppabs="http://pyqt4doc.appspot.com/qhttp.html">QHttp</a>默认情况下使用。<a class="obsolete" href="qhttp.html" tppabs="http://pyqt4doc.appspot.com/qhttp.html">QHttp</a>不采取插座的所有权，并不会删除<i>socket</i>销毁时。</p>
+<p>该函数不会阻塞，而是立即返回。该请求被预定，并且是异步执行的执行。该函数返回一个唯一的标识符，它是由通过<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（）和<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（ ） 。</p>
+<p>当该请求被启动<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（）信号被发射。当它完成时的<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（）信号被发射。</p>
+<p>注意：如果<a class="obsolete" href="qhttp.html" tppabs="http://pyqt4doc.appspot.com/qhttp.html">QHttp</a>用于运行其自己的事件循环的非GUI线程，你必须移动<i>socket</i>该线程调用setSocket （）之前。</p>
+<p><b>See also</b> <a href="qobject.html#moveToThread" tppabs="http://pyqt4doc.appspot.com/qobject.html#moveToThread">QObject.moveToThread</a>（）和<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/threads.html">Thread Support in Qt</a>。</p>
+
+
+<h3 class="fn">
+<a name="setUser"></a>int QHttp.setUser (<i>self</i>, QString <i>userName</i>, QString <i>password</i> = QString())</h3>
+<p>这个函数设置的用户名<i>userName</i>和密码<i>password</i>对于需要身份验证的网页。</p>
+<p>该函数不会阻塞，而是立即返回。该请求被预定，并且是异步执行的执行。该函数返回一个唯一的标识符，它是由通过<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（）和<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（ ） 。</p>
+<p>当该请求被启动<a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（）信号被发射。当它完成时的<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（）信号被发射。</p>
+
+
+<h3 class="fn">
+<a name="state"></a><a href="qhttp.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qhttp.html#State-enum">State</a> QHttp.state (<i>self</i>)</h3>
+<p>返回该对象的当前状态。当状态改变时，<a href="qhttp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qhttp.html#stateChanged">stateChanged</a>（）信号被发射。</p>
+<p><b>See also</b> <a href="qhttp.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qhttp.html#State-enum">State</a>和<a href="qhttp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qhttp.html#stateChanged">stateChanged</a>（ ） 。</p>
+
+
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="authenticationRequired"></a>void authenticationRequired (const QString&amp;,quint16,QAuthenticator *)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号可以在一个Web服务器发送给发射<i>hostname</i>和<i>port</i>需要验证。该<i>authenticator</i>对象可以被填充在与必需的细节，以便验证和持续的连接。</p>
+<p><b>Note:</b>这是不可能使用QueuedConnection连接到该信号，就好像所述认证没有被填充了新的信息时，该信号返回的连接失败。</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qauthenticator.html" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html">QAuthenticator</a>和<a href="qnetworkproxy.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html">QNetworkProxy</a>。</p>
+
+
+<h3 class="fn">
+<a name="dataReadProgress"></a>void dataReadProgress (int,int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当这个对象读取HTTP服务器的数据来表示的下载目前的进展，这个信号被发射。</p>
+<p><i>done</i>是数据的已经到来，而且量<i>total</i>是数据的总量。这是可能的，应该传输的数据的总量不能确定的，在这种情况<i>total</i>为0 （如果您连接到一个<a href="qprogressbar.html" tppabs="http://pyqt4doc.appspot.com/qprogressbar.html">QProgressBar</a>，进度条显示一个繁忙的指标，如果总为0 ） 。</p>
+<p><b>Warning:</b> <i>done</i>和<i>total</i>不一定以字节为单位的大小，因为对于大文件的这些值可能需要被“缩放”，以避免溢出。</p>
+<p><b>See also</b> <a href="qhttp.html#dataSendProgress" tppabs="http://pyqt4doc.appspot.com/qhttp.html#dataSendProgress">dataSendProgress</a>（ ）<a href="qhttp.html#get" tppabs="http://pyqt4doc.appspot.com/qhttp.html#get">get</a>（ ）<a href="qhttp.html#post" tppabs="http://pyqt4doc.appspot.com/qhttp.html#post">post</a>（ ）<a href="qhttp.html#request" tppabs="http://pyqt4doc.appspot.com/qhttp.html#request">request</a>（）和<a href="qprogressbar.html" tppabs="http://pyqt4doc.appspot.com/qprogressbar.html">QProgressBar</a>。</p>
+
+
+<h3 class="fn">
+<a name="dataSendProgress"></a>void dataSendProgress (int,int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当这个对象将数据发送到一个HTTP服务器通知它的上传进度这个信号被发射。</p>
+<p><i>done</i>是数据的已经到来，而且量<i>total</i>是数据的总量。这是可能的，应该传输的数据的总量不能确定的，在这种情况<i>total</i>为0 （如果您连接到一个<a href="qprogressbar.html" tppabs="http://pyqt4doc.appspot.com/qprogressbar.html">QProgressBar</a>，进度条显示一个繁忙的指标，如果总为0 ） 。</p>
+<p><b>Warning:</b> <i>done</i>和<i>total</i>不一定以字节为单位的大小，因为对于大文件的这些值可能需要被“缩放”，以避免溢出。</p>
+<p><b>See also</b> <a href="qhttp.html#dataReadProgress" tppabs="http://pyqt4doc.appspot.com/qhttp.html#dataReadProgress">dataReadProgress</a>（ ）<a href="qhttp.html#post" tppabs="http://pyqt4doc.appspot.com/qhttp.html#post">post</a>（ ）<a href="qhttp.html#request" tppabs="http://pyqt4doc.appspot.com/qhttp.html#request">request</a>（）和<a href="qprogressbar.html" tppabs="http://pyqt4doc.appspot.com/qprogressbar.html">QProgressBar</a>。</p>
+
+
+<h3 class="fn">
+<a name="done"></a>void done (bool)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的最后一个未决请求已经完成（这是后发出的最后一个请求的<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（ ）信号） 。<i>error</i>是真的，如果在处理过程中发生错误，否则<i>error</i>是假的。</p>
+<p><b>See also</b> <a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（ ）<a href="qhttp.html#error" tppabs="http://pyqt4doc.appspot.com/qhttp.html#error">error</a>（）和<a href="qhttp.html#errorString" tppabs="http://pyqt4doc.appspot.com/qhttp.html#errorString">errorString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="proxyAuthenticationRequired"></a>void proxyAuthenticationRequired (const QNetworkProxy&amp;,QAuthenticator *)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号可以被发射时，一<i>proxy</i>需要进行身份验证时使用。该<i>authenticator</i>对象可以被填充在与必需的细节，以便验证和持续的连接。</p>
+<p><b>Note:</b>这是不可能使用QueuedConnection连接到该信号，就好像所述认证没有被填充了新的信息时，该信号返回的连接失败。</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qauthenticator.html" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html">QAuthenticator</a>和<a href="qnetworkproxy.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html">QNetworkProxy</a>。</p>
+
+
+<h3 class="fn">
+<a name="readyRead"></a>void readyRead (const QHttpResponseHeader&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当有新的响应数据来读取该信号被发射。</p>
+<p>如果在其中的数据应该被写入请求中指定的一个装置，然后该信号是<i>not</i>射出，而是将数据直接写入到设备。</p>
+<p>响应头中传递<i>resp</i>。</p>
+<p>您可以使用读取数据<a href="qhttp.html#readAll" tppabs="http://pyqt4doc.appspot.com/qhttp.html#readAll">readAll</a>（）或<a href="qhttp.html#read" tppabs="http://pyqt4doc.appspot.com/qhttp.html#read">read</a>（ ）函数</p>
+<p>如果你想，只要它成为可用在处理大块数据这个信号是非常有用的。如果你只关心在完整的数据，只需连接到<a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（ ）信号并读取数据，然后代替。</p>
+<p><b>See also</b> <a href="qhttp.html#get" tppabs="http://pyqt4doc.appspot.com/qhttp.html#get">get</a>（ ）<a href="qhttp.html#post" tppabs="http://pyqt4doc.appspot.com/qhttp.html#post">post</a>（ ）<a href="qhttp.html#request" tppabs="http://pyqt4doc.appspot.com/qhttp.html#request">request</a>（ ）<a href="qhttp.html#readAll" tppabs="http://pyqt4doc.appspot.com/qhttp.html#readAll">readAll</a>（ ）<a href="qhttp.html#read" tppabs="http://pyqt4doc.appspot.com/qhttp.html#read">read</a>（）和<a href="qhttp.html#bytesAvailable" tppabs="http://pyqt4doc.appspot.com/qhttp.html#bytesAvailable">bytesAvailable</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="requestFinished"></a>void requestFinished (int,bool)</h3>
+<p>这是该信号的默认超载。</p>
+<p>处理所确定的请求时，这个信号被发射<i>id</i>已完成。<i>error</i>是真的，如果在处理过程中发生错误，否则<i>error</i>是假的。</p>
+<p><b>See also</b> <a href="qhttp.html#requestStarted" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestStarted">requestStarted</a>（ ）<a href="qhttp.html#done" tppabs="http://pyqt4doc.appspot.com/qhttp.html#done">done</a>（ ）<a href="qhttp.html#error" tppabs="http://pyqt4doc.appspot.com/qhttp.html#error">error</a>（）和<a href="qhttp.html#errorString" tppabs="http://pyqt4doc.appspot.com/qhttp.html#errorString">errorString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="requestStarted"></a>void requestStarted (int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>处理所确定的请求时，这个信号被发射<i>id</i>开始。</p>
+<p><b>See also</b> <a href="qhttp.html#requestFinished" tppabs="http://pyqt4doc.appspot.com/qhttp.html#requestFinished">requestFinished</a>（）和<a href="qhttp.html#done" tppabs="http://pyqt4doc.appspot.com/qhttp.html#done">done</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="responseHeaderReceived"></a>void responseHeaderReceived (const QHttpResponseHeader&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>当服务器响应的HTTP标头可用这个信号被发射。报头中传递<i>resp</i>。</p>
+<p><b>See also</b> <a href="qhttp.html#get" tppabs="http://pyqt4doc.appspot.com/qhttp.html#get">get</a>（ ）<a href="qhttp.html#post" tppabs="http://pyqt4doc.appspot.com/qhttp.html#post">post</a>（ ）<a href="qhttp.html#head" tppabs="http://pyqt4doc.appspot.com/qhttp.html#head">head</a>（ ）<a href="qhttp.html#request" tppabs="http://pyqt4doc.appspot.com/qhttp.html#request">request</a>（）和<a href="qhttp.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qhttp.html#readyRead">readyRead</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sslErrors"></a>void sslErrors (const QList&lt;QSslError&gt;&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>转发sslErrors从信号<a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>在使用<a class="obsolete" href="qhttp.html" tppabs="http://pyqt4doc.appspot.com/qhttp.html">QHttp</a>。<i>errors</i>是在SSL握手期间发生的错误的列表。除非你打电话<a href="qhttp.html#ignoreSslErrors" tppabs="http://pyqt4doc.appspot.com/qhttp.html#ignoreSslErrors">ignoreSslErrors</a>从连接到在发生错误时该信号的时隙内的（） ，<a class="obsolete" href="qhttp.html" tppabs="http://pyqt4doc.appspot.com/qhttp.html">QHttp</a>发射的信号后，立即将断开连接。</p>
+<p>此功能被引入Qt的4.3 。</p>
+<p><b>See also</b> <a href="qsslsocket.html" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html">QSslSocket</a>和<a href="qsslsocket.html#ignoreSslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#ignoreSslErrors">QSslSocket.ignoreSslErrors</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="stateChanged"></a>void stateChanged (int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的状态<a class="obsolete" href="qhttp.html" tppabs="http://pyqt4doc.appspot.com/qhttp.html">QHttp</a>对象更改。这个论点<i>state</i>是该连接的新的状态，它是一个<a href="qhttp.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qhttp.html#State-enum">State</a>值。</p>
+<p>当一个请求开始这通常发生，但是当服务器关闭连接或当调用它也可以发生<a href="qhttp.html#close" tppabs="http://pyqt4doc.appspot.com/qhttp.html#close">close</a>（ ）成功了。</p>
+<p><b>See also</b> <a href="qhttp.html#get" tppabs="http://pyqt4doc.appspot.com/qhttp.html#get">get</a>（ ）<a href="qhttp.html#post" tppabs="http://pyqt4doc.appspot.com/qhttp.html#post">post</a>（ ）<a href="qhttp.html#head" tppabs="http://pyqt4doc.appspot.com/qhttp.html#head">head</a>（ ）<a href="qhttp.html#request" tppabs="http://pyqt4doc.appspot.com/qhttp.html#request">request</a>（ ）<a href="qhttp.html#close" tppabs="http://pyqt4doc.appspot.com/qhttp.html#close">close</a>（ ）<a href="qhttp.html#state" tppabs="http://pyqt4doc.appspot.com/qhttp.html#state">state</a>（）和<a href="qhttp.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qhttp.html#State-enum">State</a>。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

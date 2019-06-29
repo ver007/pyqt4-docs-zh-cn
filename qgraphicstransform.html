@@ -1,0 +1,86 @@
+﻿<html>
+<head>
+<title>QGraphicsTransform Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QGraphicsTransform Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QGraphicsTransform类是对QGraphicsItems建设先进变换的抽象基类。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<p>通过继承<a href="qgraphicsrotation.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsrotation.html">QGraphicsRotation</a>和<a href="qgraphicsscale.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsscale.html">QGraphicsScale</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicstransform.html#QGraphicsTransform" tppabs="http://pyqt4doc.appspot.com/qgraphicstransform.html#QGraphicsTransform">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicstransform.html#applyTo" tppabs="http://pyqt4doc.appspot.com/qgraphicstransform.html#applyTo">applyTo</a></b> (<i>self</i>, QMatrix4x4 <i>matrix</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicstransform.html#update" tppabs="http://pyqt4doc.appspot.com/qgraphicstransform.html#update">update</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QGraphicsTransform类是对QGraphicsItems建设先进变换的抽象基类。</p>
+<p>作为替代QGraphicsItem.transform ， QGraphicsTransform允许您创建和控制，可以独立使用专门的属性进行配置先进的转换。</p>
+<p><a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a>可以让你任意数量的QGraphicsTransform实例分配给一个<a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a>。每个QGraphicsTransform是为了，一次一个应用，该<a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a>它赋值。</p>
+<p>QGraphicsTransform是用于动画特别有用。而<a href="qgraphicsitem.html#setTransform" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#setTransform">QGraphicsItem.setTransform</a>（）让你指定的任何直接转化为一个项目，没有直接的方法（两种状态，分别用于该项目具有不同的任意变换分配之间转换时如）两种不同的转换之间进行插值。使用QGraphicsTransform可以插各独立转化​​的属性值。然后将得到的操作被组合成一个单一的变换被应用到<a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a>。</p>
+<p>转换使用的是计算在真实的三维空间<a href="qmatrix4x4.html" tppabs="http://pyqt4doc.appspot.com/qmatrix4x4.html">QMatrix4x4</a>。当该变换被应用到一个<a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a>时，将投射返回到2D<a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a>。当多个QGraphicsTransform对象被施加到一个<a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a>，所有的变革都计算在真正的3D空间中，与投影回2D只有最后QGraphicsTransform应用后发生。唯一的例外是<a href="qgraphicsrotation.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsrotation.html">QGraphicsRotation</a>，突出回2D之后每次旋转以保持围绕X的立体效果和Y轴。</p>
+<p>如果你想创建自己的配置的转变，您可以创建QGraphicsTransform的子类（或任何或现有的子类） ，并重新实现纯虚<a href="qgraphicstransform.html#applyTo" tppabs="http://pyqt4doc.appspot.com/qgraphicstransform.html#applyTo">applyTo</a>（ ）函数，它接受一个指向<a href="qmatrix4x4.html" tppabs="http://pyqt4doc.appspot.com/qmatrix4x4.html">QMatrix4x4</a>。每个操作你想申请应当公开为属性（例如， customTransform - \u003e setVerticalShear （ 2.5 ） ） 。里面你重新实现<a href="qgraphicstransform.html#applyTo" tppabs="http://pyqt4doc.appspot.com/qgraphicstransform.html#applyTo">applyTo</a>（ ） ，你可以修改所提供的变换分别。</p>
+<p>QGraphicsTransform可以一起使用<a href="qgraphicsitem.html#setTransform" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#setTransform">QGraphicsItem.setTransform</a>（ ）<a href="qgraphicsitem.html#setRotation" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#setRotation">QGraphicsItem.setRotation</a>（）和<a href="qgraphicsitem.html#setScale" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#setScale">QGraphicsItem.setScale</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QGraphicsTransform"></a>QGraphicsTransform.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个新的<a href="qgraphicstransform.html" tppabs="http://pyqt4doc.appspot.com/qgraphicstransform.html">QGraphicsTransform</a>用给定的<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="applyTo"></a>QGraphicsTransform.applyTo (<i>self</i>, <a href="qmatrix4x4.html" tppabs="http://pyqt4doc.appspot.com/qmatrix4x4.html">QMatrix4x4</a> <i>matrix</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>这个纯虚方法在派生类中被重新实现。</p>
+<p>它适用于这种转型<i>matrix</i>。</p>
+<p><b>See also</b> <a href="qgraphicsitem.html#transform" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#transform">QGraphicsItem.transform</a>（）和<a href="qmatrix4x4.html#toTransform" tppabs="http://pyqt4doc.appspot.com/qmatrix4x4.html#toTransform">QMatrix4x4.toTransform</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="update"></a>QGraphicsTransform.update (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void update()</tt>。</p>
+<p>通知此转换操作已改变其参数，这样的方式<a href="qgraphicstransform.html#applyTo" tppabs="http://pyqt4doc.appspot.com/qgraphicstransform.html#applyTo">applyTo</a>（ ）会返回不同的结果比以前。</p>
+<p>当实施你自己的自定义图形的变换，你必须在每次调用这个函数，你改变一个参数，让<a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a>知道它的变换需要被更新。</p>
+<p><b>See also</b> <a href="qgraphicstransform.html#applyTo" tppabs="http://pyqt4doc.appspot.com/qgraphicstransform.html#applyTo">applyTo</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

@@ -1,0 +1,229 @@
+﻿<html>
+<head>
+<title>QScriptEngineAgent Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QScriptEngineAgent Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscript.html">QtScript</a> module]</sup></sup>
+</h1>
+<p>该QScriptEngineAgent类提供了一个接口来报告有关事件<a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a>执行。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qscriptengineagent.html#Extension-enum" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#Extension-enum">Extension</a></b> { DebuggerInvocationRequest }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptengineagent.html#QScriptEngineAgent" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#QScriptEngineAgent">__init__</a></b> (<i>self</i>, QScriptEngine <i>engine</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptengineagent.html#contextPop" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#contextPop">contextPop</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptengineagent.html#contextPush" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#contextPush">contextPush</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QScriptEngine <b><a href="qscriptengineagent.html#engine" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#engine">engine</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptengineagent.html#exceptionCatch" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#exceptionCatch">exceptionCatch</a></b> (<i>self</i>, int <i>scriptId</i>, QScriptValue <i>exception</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptengineagent.html#exceptionThrow" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#exceptionThrow">exceptionThrow</a></b> (<i>self</i>, int <i>scriptId</i>, QScriptValue <i>exception</i>, bool <i>hasHandler</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qscriptengineagent.html#extension" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#extension">extension</a></b> (<i>self</i>, Extension <i>extension</i>, QVariant <i>argument</i> = QVariant())</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptengineagent.html#functionEntry" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#functionEntry">functionEntry</a></b> (<i>self</i>, int <i>scriptId</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptengineagent.html#functionExit" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#functionExit">functionExit</a></b> (<i>self</i>, int <i>scriptId</i>, QScriptValue <i>returnValue</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptengineagent.html#positionChange" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#positionChange">positionChange</a></b> (<i>self</i>, int <i>scriptId</i>, int <i>lineNumber</i>, int <i>columnNumber</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptengineagent.html#scriptLoad" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#scriptLoad">scriptLoad</a></b> (<i>self</i>, int <i>id</i>, QString <i>program</i>, QString <i>fileName</i>, int <i>baseLineNumber</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptengineagent.html#scriptUnload" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#scriptUnload">scriptUnload</a></b> (<i>self</i>, int <i>id</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qscriptengineagent.html#supportsExtension" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#supportsExtension">supportsExtension</a></b> (<i>self</i>, Extension <i>extension</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QScriptEngineAgent类提供了一个接口来报告有关事件<a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a>执行。</p>
+<p>该QScriptEngineAgent类是用来监视和/或控制的一个执行工具的基础<a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a>如调试器和分析器。</p>
+<p>为了处理脚本加载和卸载事件，重新实现<a href="qscriptengineagent.html#scriptLoad" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#scriptLoad">scriptLoad</a>（）和<a href="qscriptengineagent.html#scriptUnload" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#scriptUnload">scriptUnload</a>（）函数。<a href="qscriptengineagent.html#scriptLoad" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#scriptLoad">scriptLoad</a>（）被输入到后称为<a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">QScriptEngine.evaluate</a>（ ）已经被解析，执行给定的脚本权利之前。该引擎可为每个脚本一个ID ，它可作为一个参数来<a href="qscriptengineagent.html#scriptLoad" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#scriptLoad">scriptLoad</a>（）;随后，其它事件处理程序可以使用该ID来识别特定的脚本。一个常见的用法<a href="qscriptengineagent.html#scriptLoad" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#scriptLoad">scriptLoad</a>（ ）是保留的脚本文本，文件名和底线号（原输入<a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">QScriptEngine.evaluate</a>（）），以使其他的事件处理程序可以例如一个行号映射到文本的相应的行。</p>
+<p><a href="qscriptengineagent.html#scriptUnload" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#scriptUnload">scriptUnload</a>（ ）被调用时，<a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a>已经不再使用的脚本;的QScriptEngineAgent可能在这一点上安全地丢弃任何与脚本（如脚本文本）相关联的资源。注意，后<a href="qscriptengineagent.html#scriptUnload" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#scriptUnload">scriptUnload</a>（ ）被调用时，<a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a>可重复使用相关的脚本ID为新脚本（即作为参数传递给后续调用<a href="qscriptengineagent.html#scriptLoad" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#scriptLoad">scriptLoad</a>（））。</p>
+<p>评价下面的脚本将导致<a href="qscriptengineagent.html#scriptUnload" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#scriptUnload">scriptUnload</a>（ ）被调用的评估完成后立即：</p>
+<pre class="cpp">
+ var a <span class="operator">=</span> Math<span class="operator">.</span>random() <span class="operator">+</span> <span class="number">2</span>;
+</pre>
+<p>评价下面的脚本将\ B { }不导致调用<a href="qscriptengineagent.html#scriptUnload" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#scriptUnload">scriptUnload</a>（ ）当评估完成：</p>
+<pre class="cpp">
+ function cube(a) {
+     <span class="keyword">return</span> a <span class="operator">*</span> a <span class="operator">*</span> a;
+ }
+
+ var a <span class="operator">=</span> cube(<span class="number">3</span>);
+</pre>
+<p>该脚本不被卸载，因为它定义了一个函数（<tt>cube</tt>）保留在脚本环境评估已完成。如果后续的脚本中删除该<tt>cube</tt>功能（例如，通过将其设置为<tt>null</tt>） ，<a href="qscriptengineagent.html#scriptUnload" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#scriptUnload">scriptUnload</a>（ ）当函数被垃圾收集会被调用。一般而言，一个脚本不卸载，直到发动机已确定没有其内容被引用。</p>
+<p>处理脚本函数调用和返回，重新实现<a href="qscriptengineagent.html#functionEntry" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#functionEntry">functionEntry</a>（）和<a href="qscriptengineagent.html#functionExit" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#functionExit">functionExit</a>（）函数。<a href="qscriptengineagent.html#functionEntry" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#functionEntry">functionEntry</a>（ ）当一个脚本函数将要执行的调用;<a href="qscriptengineagent.html#functionExit" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#functionExit">functionExit</a>（）被调用时，一个脚本函数即将返回，无论是正常还是由于异常。</p>
+<p>为了处理单个脚本语句，重新实现<a href="qscriptengineagent.html#positionChange" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#positionChange">positionChange</a>（ ） 。<a href="qscriptengineagent.html#positionChange" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#positionChange">positionChange</a>（）被调用每次引擎将要执行的脚本的一个新的语句，因此提供的脚本监控的最好水平。</p>
+<p>为了处理异常，重新实现<a href="qscriptengineagent.html#exceptionThrow" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#exceptionThrow">exceptionThrow</a>（）和<a href="qscriptengineagent.html#exceptionCatch" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#exceptionCatch">exceptionCatch</a>（ ） 。<a href="qscriptengineagent.html#exceptionThrow" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#exceptionThrow">exceptionThrow</a>（）被调用时，一个脚本异常被抛出，它已被处理之前。<a href="qscriptengineagent.html#exceptionCatch" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#exceptionCatch">exceptionCatch</a>（ ）被调用时，一个异常处理程序存在，并执行将在处理程序代码将被收回。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="Extension-enum"></a>QScriptEngineAgent.Extension</h3>
+<p>这个枚举指定可能的扩展到<a href="qscriptengineagent.html" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html">QScriptEngineAgent</a>。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptEngineAgent.DebuggerInvocationRequest</tt>
+</td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">代理手柄<tt>debugger</tt>脚本语句。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qscriptengineagent.html#extension" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#extension">extension</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QScriptEngineAgent"></a>QScriptEngineAgent.__init__ (<i>self</i>, <a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a> <i>engine</i>)</h3>
+<p>该<i>engine</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a href="qscriptengineagent.html" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html">QScriptEngineAgent</a>对象为给定的<i>engine</i>。</p>
+<p>该发动机采用了代理的所有权。</p>
+<p>Call <a href="qscriptengine.html#setAgent" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#setAgent">QScriptEngine.setAgent</a>（ ）使本剂中的活性剂。</p>
+
+
+<h3 class="fn">
+<a name="contextPop"></a>QScriptEngineAgent.contextPop (<i>self</i>)</h3>
+<p>在当前脚本上下文将要弹出这个函数被调用。</p>
+<p>默认实现不执行任何操作。</p>
+<p><b>See also</b> <a href="qscriptengineagent.html#contextPush" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#contextPush">contextPush</a>（）和<a href="qscriptengineagent.html#functionExit" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#functionExit">functionExit</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="contextPush"></a>QScriptEngineAgent.contextPush (<i>self</i>)</h3>
+<p>这个函数被调用时，一个新的脚本上下文一直推。</p>
+<p>默认实现不执行任何操作。</p>
+<p><b>See also</b> <a href="qscriptengineagent.html#contextPop" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#contextPop">contextPop</a>（）和<a href="qscriptengineagent.html#functionEntry" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#functionEntry">functionEntry</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="engine"></a><a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a> QScriptEngineAgent.engine (<i>self</i>)</h3>
+<p>返回<a href="qscriptengine.html" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html">QScriptEngine</a>此代理相关联。</p>
+
+
+<h3 class="fn">
+<a name="exceptionCatch"></a>QScriptEngineAgent.exceptionCatch (<i>self</i>, int <i>scriptId</i>, <a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> <i>exception</i>)</h3>
+<p>这个函数被调用的时候给出<i>exception</i>即将被捕获，在所确定的脚本<i>scriptId</i>。</p>
+<p>如果你想处理此事件重新实现这个函数。</p>
+<p>默认实现不执行任何操作。</p>
+<p><b>See also</b> <a href="qscriptengineagent.html#exceptionThrow" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#exceptionThrow">exceptionThrow</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="exceptionThrow"></a>QScriptEngineAgent.exceptionThrow (<i>self</i>, int <i>scriptId</i>, <a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> <i>exception</i>, bool <i>hasHandler</i>)</h3>
+<p>这个函数被调用的时候给出<i>exception</i>发生在发动机，在所确定的脚本<i>scriptId</i>。如果异常是由本地的Qt脚本函数抛出，<i>scriptId</i>是-1。</p>
+<p>If <i>hasHandler</i>诚然，有一个<tt>catch</tt> or
+<tt>finally</tt>块将处理该异常。如果<i>hasHandler</i>是假的，没有异常处理程序。</p>
+<p>如果你想处理此事件重新实现这个函数。例如，一个调试器可以当一个未捕获的异常发生时通知用户（即<i>hasHandler</i>是假的） 。</p>
+<p>默认实现不执行任何操作。</p>
+<p><b>See also</b> <a href="qscriptengineagent.html#exceptionCatch" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#exceptionCatch">exceptionCatch</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="extension"></a>QVariant QScriptEngineAgent.extension (<i>self</i>, <a href="qscriptengineagent.html#Extension-enum" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#Extension-enum">Extension</a> <i>extension</i>, QVariant <i>argument</i> = QVariant())</h3>
+<p>这个虚函数可以在重新实现<a href="qscriptengineagent.html" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html">QScriptEngineAgent</a>子类以提供扩展的支持。可选的<i>argument</i>可以作为输入提供给<i>extension</i>;结果必须在一个形式被返回<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>。您可以致电<a href="qscriptengineagent.html#supportsExtension" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#supportsExtension">supportsExtension</a>（ ）来检查一个扩展是支持的<a href="qscriptengineagent.html" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html">QScriptEngineAgent</a>。默认情况下，没有扩展名的支持，这个函数返回一个无效<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>。</p>
+<p>如果实现<a href="qscriptengineagent.html#Extension-enum" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#Extension-enum">DebuggerInvocationRequest</a>扩展， Qt的脚本会调用这个函数时，<tt>debugger</tt>语句在脚本中遇到的问题。该<i>argument</i>是<a href="qvariant.html#QVariantList-typedef" tppabs="http://pyqt4doc.appspot.com/qvariant.html#QVariantList-typedef">QVariantList</a>包含三个项目：第一个项目是scriptId （长） ，第二项是行数（一个int ） ，第三项是列数（一个整数） 。</p>
+<p><b>See also</b> <a href="qscriptengineagent.html#supportsExtension" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#supportsExtension">supportsExtension</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="functionEntry"></a>QScriptEngineAgent.functionEntry (<i>self</i>, int <i>scriptId</i>)</h3>
+<p>这个函数被调用时，一个脚本函数被调用的引擎。如果脚本的功能是不是原生的Qt脚本功能，它驻留在确定脚本<i>scriptId</i>否则，<i>scriptId</i>是-1。</p>
+<p>这个函数被调用执行脚本函数的开始之前。你可以得到<a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a>与函数调用相关<a href="qscriptengine.html#currentContext" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#currentContext">QScriptEngine.currentContext</a>（ ） 。可传递给函数的参数。</p>
+<p>重新实现这个函数来处理此事件。例如，一个调试器的实现可以重新实现这个函数（和<a href="qscriptengineagent.html#functionExit" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#functionExit">functionExit</a>（））来跟踪调用堆栈和提供步骤，以上的功能。</p>
+<p>默认实现不执行任何操作。</p>
+<p><b>See also</b> <a href="qscriptengineagent.html#functionExit" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#functionExit">functionExit</a>（ ）<a href="qscriptengineagent.html#positionChange" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#positionChange">positionChange</a>（）和<a href="qscriptengine.html#currentContext" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#currentContext">QScriptEngine.currentContext</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="functionExit"></a>QScriptEngineAgent.functionExit (<i>self</i>, int <i>scriptId</i>, <a href="qscriptvalue.html" tppabs="http://pyqt4doc.appspot.com/qscriptvalue.html">QScriptValue</a> <i>returnValue</i>)</h3>
+<p>当目前执行的脚本函数即将返回该函数被调用。如果脚本的功能是不是原生的Qt脚本功能，它驻留在确定脚本<i>scriptId</i>否则，<i>scriptId</i>是-1。该<i>returnValue</i>是脚本函数将返回值。</p>
+<p>只是脚本函数返回之前调用此函数。您仍然可以访问<a href="qscriptcontext.html" tppabs="http://pyqt4doc.appspot.com/qscriptcontext.html">QScriptContext</a>与脚本函数调用相关联<a href="qscriptengine.html#currentContext" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#currentContext">QScriptEngine.currentContext</a>（ ） 。</p>
+<p>如果发动机的<a href="qscriptengine.html#hasUncaughtException" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#hasUncaughtException">hasUncaughtException</a>（ ）函数返回True ，脚本函数退出，由于异常，否则，脚本函数正常返回。</p>
+<p>重新实现这个函数来处理此事件，通常你会那么还需要重新实现<a href="qscriptengineagent.html#functionEntry" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#functionEntry">functionEntry</a>（ ） 。</p>
+<p>默认实现不执行任何操作。</p>
+<p><b>See also</b> <a href="qscriptengineagent.html#functionEntry" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#functionEntry">functionEntry</a>（）和<a href="qscriptengine.html#hasUncaughtException" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#hasUncaughtException">QScriptEngine.hasUncaughtException</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="positionChange"></a>QScriptEngineAgent.positionChange (<i>self</i>, int <i>scriptId</i>, int <i>lineNumber</i>, int <i>columnNumber</i>)</h3>
+<p>这个函数被调用当发动机即将在确定脚本执行一个新的语句<i>scriptId</i>。该语句开始由指定的行和列<i>lineNumber</i>是不是原生的Qt脚本函数生成此事件。</p>
+<p>重新实现这个函数来处理此事件。例如，一个调试器的实现可以重新实现这个功能，提供线，由线步进，和一个分析器实现可以用它来计算被执行每个语句的次数。</p>
+<p>默认实现不执行任何操作。</p>
+<p><b>Note:</b> <i>columnNumber</i>未定义</p>
+<p><b>See also</b> <a href="qscriptengineagent.html#scriptLoad" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#scriptLoad">scriptLoad</a>（）和<a href="qscriptengineagent.html#functionEntry" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#functionEntry">functionEntry</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="scriptLoad"></a>QScriptEngineAgent.scriptLoad (<i>self</i>, int <i>id</i>, QString <i>program</i>, QString <i>fileName</i>, int <i>baseLineNumber</i>)</h3>
+<p>这个函数被调用时，引擎解析的脚本，并与给定关联的它<i>id</i>。该ID可以用来识别在随后的事件通知这个特定的脚本。</p>
+<p><i>program</i>，<i>fileName</i>和<i>baseLineNumber</i>是原始参数的<a href="qscriptengine.html#evaluate" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#evaluate">QScriptEngine.evaluate</a>（ ）调用触发此事件。</p>
+<p>这个函数被调用之前的脚本即将进行评估。</p>
+<p>您可以重新实现此功能来记录关于脚本的信息，例如，通过保留脚本文本，你可以得到的文本行对应于一个后续调用一个行号<a href="qscriptengineagent.html#positionChange" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#positionChange">positionChange</a>（ ） 。</p>
+<p>默认实现不执行任何操作。</p>
+<p><b>See also</b> <a href="qscriptengineagent.html#scriptUnload" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#scriptUnload">scriptUnload</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="scriptUnload"></a>QScriptEngineAgent.scriptUnload (<i>self</i>, int <i>id</i>)</h3>
+<p>这个函数被调用时，引擎已经丢弃确定给定的脚本<i>id</i>。</p>
+<p>您可以重新实现这个函数来清除任何已与脚本相关的资源。</p>
+<p>默认实现不执行任何操作。</p>
+<p><b>See also</b> <a href="qscriptengineagent.html#scriptLoad" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#scriptLoad">scriptLoad</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="supportsExtension"></a>bool QScriptEngineAgent.supportsExtension (<i>self</i>, <a href="qscriptengineagent.html#Extension-enum" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#Extension-enum">Extension</a> <i>extension</i>)</h3>
+<p>返回True如果<a href="qscriptengineagent.html" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html">QScriptEngineAgent</a>支持给定<i>extension</i>否则，则返回False。默认情况下，没有扩展名的支持。</p>
+<p><b>See also</b> <a href="qscriptengineagent.html#extension" tppabs="http://pyqt4doc.appspot.com/qscriptengineagent.html#extension">extension</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

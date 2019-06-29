@@ -1,0 +1,157 @@
+﻿<html>
+<head>
+<title>QLinearGradient Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QLinearGradient Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QLinearGradient类是用来与组合<a href="qbrush.html" tppabs="http://pyqt4doc.appspot.com/qbrush.html">QBrush</a>指定一个线性渐变画笔。<a href="#details">More...</a></p>
+
+<p>继承<a href="qgradient.html" tppabs="http://pyqt4doc.appspot.com/qgradient.html">QGradient</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qlineargradient.html#QLinearGradient" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html#QLinearGradient">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlineargradient.html#QLinearGradient-2" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html#QLinearGradient-2">__init__</a></b> (<i>self</i>, QPointF <i>start</i>, QPointF <i>finalStop</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlineargradient.html#QLinearGradient-3" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html#QLinearGradient-3">__init__</a></b> (<i>self</i>, float <i>xStart</i>, float <i>yStart</i>, float <i>xFinalStop</i>, float <i>yFinalStop</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlineargradient.html#QLinearGradient-4" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html#QLinearGradient-4">__init__</a></b> (<i>self</i>, QLinearGradient)</li>
+<li>
+<div class="fn"></div>QPointF <b><a href="qlineargradient.html#finalStop" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html#finalStop">finalStop</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlineargradient.html#setFinalStop" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html#setFinalStop">setFinalStop</a></b> (<i>self</i>, QPointF <i>stop</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlineargradient.html#setFinalStop-2" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html#setFinalStop-2">setFinalStop</a></b> (<i>self</i>, float <i>x</i>, float <i>y</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlineargradient.html#setStart" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html#setStart">setStart</a></b> (<i>self</i>, QPointF <i>start</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlineargradient.html#setStart-2" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html#setStart-2">setStart</a></b> (<i>self</i>, float <i>x</i>, float <i>y</i>)</li>
+<li>
+<div class="fn"></div>QPointF <b><a href="qlineargradient.html#start" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html#start">start</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QLinearGradient类是用来与组合<a href="qbrush.html" tppabs="http://pyqt4doc.appspot.com/qbrush.html">QBrush</a>指定一个线性渐变画笔。</p>
+<p>线性渐变起始点和结束点之间进行插值的色彩。外面这些点的梯度可以是填充，反射或重复这取决于当前设置的<a href="qgradient.html#Spread-enum" tppabs="http://pyqt4doc.appspot.com/qgradient.html#Spread-enum">spread</a>方法：</p>
+<table class="generic">
+<tr class="odd" valign="top">
+<td><img alt="" src="images/qlineargradient-pad.png"></td>
+<td><img alt="" src="images/qlineargradient-reflect.png"></td>
+<td><img alt="" src="images/qlineargradient-repeat.png"></td>
+</tr>
+<tr class="even" valign="top">
+<td>
+<a href="qgradient.html#Spread-enum" tppabs="http://pyqt4doc.appspot.com/qgradient.html#Spread-enum">PadSpread</a>
+(default)</td>
+<td><a href="qgradient.html#Spread-enum" tppabs="http://pyqt4doc.appspot.com/qgradient.html#Spread-enum">ReflectSpread</a></td>
+<td><a href="qgradient.html#Spread-enum" tppabs="http://pyqt4doc.appspot.com/qgradient.html#Spread-enum">RepeatSpread</a></td>
+</tr>
+</table>
+<p>在渐变中的颜色使用的停止点定义<a href="qgradient.html#QGradientStop-typedef" tppabs="http://pyqt4doc.appspot.com/qgradient.html#QGradientStop-typedef">QGradientStop</a>输入时，即位置和颜色。使用<a href="qgradient.html#setColorAt" tppabs="http://pyqt4doc.appspot.com/qgradient.html#setColorAt">QGradient.setColorAt</a>（）或<a href="qgradient.html#setStops" tppabs="http://pyqt4doc.appspot.com/qgradient.html#setStops">QGradient.setStops</a>（）函数定义的停止点。它是渐变的一整套停止点，描述如何渐变区域应填补。如果已指定没有停止点，黑色在0到白在1梯度使用。</p>
+<p>除了从继承的功能<a href="qgradient.html" tppabs="http://pyqt4doc.appspot.com/qgradient.html">QGradient</a>，该QLinearGradient类提供了<a href="qlineargradient.html#finalStop" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html#finalStop">finalStop</a>（ ）函数返回渐变的最后一站一点，和<a href="qlineargradient.html#start" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html#start">start</a>（ ）函数返回渐变的起点。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QLinearGradient"></a>QLinearGradient.__init__ (<i>self</i>)</h3>
+<p>构造之间具有内插区域的默认线性梯度（0，0 ）和（1 ，1）。</p>
+<p><b>See also</b> <a href="qgradient.html#setColorAt" tppabs="http://pyqt4doc.appspot.com/qgradient.html#setColorAt">QGradient.setColorAt</a>（ ）<a href="qlineargradient.html#setStart" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html#setStart">setStart</a>（）和<a href="qlineargradient.html#setFinalStop" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html#setFinalStop">setFinalStop</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QLinearGradient-2"></a>QLinearGradient.__init__ (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>start</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>finalStop</i>)</h3>
+<p>构造给定之间的插值区域的线性渐变<i>start</i>点<i>finalStop</i>。</p>
+<p><b>Note:</b>预期的参数值以像素为单位。</p>
+<p><b>See also</b> <a href="qgradient.html#setColorAt" tppabs="http://pyqt4doc.appspot.com/qgradient.html#setColorAt">QGradient.setColorAt</a>（）和<a href="qgradient.html#setStops" tppabs="http://pyqt4doc.appspot.com/qgradient.html#setStops">QGradient.setStops</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QLinearGradient-3"></a>QLinearGradient.__init__ (<i>self</i>, float <i>xStart</i>, float <i>yStart</i>, float <i>xFinalStop</i>, float <i>yFinalStop</i>)</h3>
+<p>构造之间的插值区域的线性渐变（<i>x1</i>，<i>y1</i>）和（<i>x2</i>，<i>y2</i>） 。</p>
+<p><b>Note:</b>预期的参数值以像素为单位。</p>
+<p><b>See also</b> <a href="qgradient.html#setColorAt" tppabs="http://pyqt4doc.appspot.com/qgradient.html#setColorAt">QGradient.setColorAt</a>（）和<a href="qgradient.html#setStops" tppabs="http://pyqt4doc.appspot.com/qgradient.html#setStops">QGradient.setStops</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QLinearGradient-4"></a>QLinearGradient.__init__ (<i>self</i>, <a href="qlineargradient.html" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html">QLinearGradient</a>)</h3>
+<h3 class="fn">
+<a name="finalStop"></a><a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> QLinearGradient.finalStop (<i>self</i>)</h3>
+<p>返回此逻辑坐标线性渐变的最后一站一点。</p>
+<p><b>See also</b> <a href="qlineargradient.html#setFinalStop" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html#setFinalStop">setFinalStop</a>（）和<a href="qgradient.html#stops" tppabs="http://pyqt4doc.appspot.com/qgradient.html#stops">QGradient.stops</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFinalStop"></a>QLinearGradient.setFinalStop (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>stop</i>)</h3>
+<p>设置此逻辑坐标线性渐变的最后一站，以点<i>stop</i>。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qlineargradient.html#finalStop" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html#finalStop">finalStop</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFinalStop-2"></a>QLinearGradient.setFinalStop (<i>self</i>, float <i>x</i>, float <i>y</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>设置此逻辑坐标线性渐变的最后一站，以点<i>x</i>，<i>y</i>。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qlineargradient.html#start" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html#start">start</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setStart"></a>QLinearGradient.setStart (<i>self</i>, <a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> <i>start</i>)</h3>
+<p>设置此逻辑坐标线性渐变的起点<i>start</i>。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qlineargradient.html#start" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html#start">start</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setStart-2"></a>QLinearGradient.setStart (<i>self</i>, float <i>x</i>, float <i>y</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>设置此逻辑坐标线性渐变的起点<i>x</i>，<i>y</i>。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qlineargradient.html#start" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html#start">start</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="start"></a><a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> QLinearGradient.start (<i>self</i>)</h3>
+<p>返回此逻辑坐标的线性渐变的起点。</p>
+<p><b>See also</b> <a href="qlineargradient.html#setStart" tppabs="http://pyqt4doc.appspot.com/qlineargradient.html#setStart">setStart</a>（）和<a href="qgradient.html#stops" tppabs="http://pyqt4doc.appspot.com/qgradient.html#stops">QGradient.stops</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

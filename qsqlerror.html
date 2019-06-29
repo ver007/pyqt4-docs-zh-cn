@@ -1,0 +1,197 @@
+﻿<html>
+<head>
+<title>QSqlError Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QSqlError Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtsql.html">QtSql</a> module]</sup></sup>
+</h1>
+<p>该QSqlError类提供了SQL数据库的错误信息。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qsqlerror.html#ErrorType-enum" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#ErrorType-enum">ErrorType</a></b> { NoError, ConnectionError, StatementError, TransactionError, UnknownError }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlerror.html#QSqlError" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#QSqlError">__init__</a></b> (<i>self</i>, QString <i>driverText</i> = QString(), QString <i>databaseText</i> = QString(), ErrorType <i>type</i> = QSqlError.NoError, int <i>number</i> = -1)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlerror.html#QSqlError-2" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#QSqlError-2">__init__</a></b> (<i>self</i>, QSqlError <i>other</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsqlerror.html#databaseText" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#databaseText">databaseText</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsqlerror.html#driverText" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#driverText">driverText</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qsqlerror.html#isValid" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#isValid">isValid</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qsqlerror.html#number" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#number">number</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlerror.html#setDatabaseText" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#setDatabaseText">setDatabaseText</a></b> (<i>self</i>, QString <i>databaseText</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlerror.html#setDriverText" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#setDriverText">setDriverText</a></b> (<i>self</i>, QString <i>driverText</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlerror.html#setNumber" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#setNumber">setNumber</a></b> (<i>self</i>, int <i>number</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsqlerror.html#setType" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#setType">setType</a></b> (<i>self</i>, ErrorType <i>type</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qsqlerror.html#text" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#text">text</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>ErrorType <b><a href="qsqlerror.html#type" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#type">type</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QSqlError类提供了SQL数据库的错误信息。</p>
+<p>一个QSqlError对象可以提供数据库特定的错误数据，包括<a href="qsqlerror.html#driverText" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#driverText">driverText</a>（）和<a href="qsqlerror.html#databaseText" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#databaseText">databaseText</a>（）消息（或两者连接在一起为<a href="qsqlerror.html#text" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#text">text</a>（）），和错误<a href="qsqlerror.html#number" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#number">number</a>（）和<a href="qsqlerror.html#type" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#type">type</a>（ ） 。该功能都有setter方法​​，使您可以创建和从你自己的类返回QSqlError对象，例如，从您自己的SQL驱动程序。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="ErrorType-enum"></a>QSqlError.ErrorType</h3>
+<p>该枚举类型描述了发生错误的情况下，例如，一个连接错误，语句错误等。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlError.NoError</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">未发生错误。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlError.ConnectionError</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">连接错误。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlError.StatementError</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">SQL语句的语法错误。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlError.TransactionError</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">交易失败的错误。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QSqlError.UnknownError</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">未知错误。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QSqlError"></a>QSqlError.__init__ (<i>self</i>, QString <i>driverText</i> = QString(), QString <i>databaseText</i> = QString(), <a href="qsqlerror.html#ErrorType-enum" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#ErrorType-enum">ErrorType</a> <i>type</i> = QSqlError.NoError, int <i>number</i> = -1)</h3>
+<p>构造一个包含驱动程序错误文本错误<i>driverText</i>，数据库的特定错误文本<i>databaseText</i>，类型<i>type</i>和可选的错误号<i>number</i>。</p>
+
+
+<h3 class="fn">
+<a name="QSqlError-2"></a>QSqlError.__init__ (<i>self</i>, <a href="qsqlerror.html" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html">QSqlError</a> <i>other</i>)</h3>
+<p>创建副本<i>other</i>。</p>
+
+
+<h3 class="fn">
+<a name="databaseText"></a>QString QSqlError.databaseText (<i>self</i>)</h3>
+<p>所报告的数据库返回的错误的文本。这可能包含数据库的特定说明，它可能是空的。</p>
+<p><b>See also</b> <a href="qsqlerror.html#setDatabaseText" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#setDatabaseText">setDatabaseText</a>（ ）<a href="qsqlerror.html#driverText" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#driverText">driverText</a>（）和<a href="qsqlerror.html#text" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#text">text</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="driverText"></a>QString QSqlError.driverText (<i>self</i>)</h3>
+<p>所报告的驱动程序返回错误的文本。这可能包含数据库的特定说明。它也可能是空的。</p>
+<p><b>See also</b> <a href="qsqlerror.html#setDriverText" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#setDriverText">setDriverText</a>（ ）<a href="qsqlerror.html#databaseText" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#databaseText">databaseText</a>（）和<a href="qsqlerror.html#text" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#text">text</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isValid"></a>bool QSqlError.isValid (<i>self</i>)</h3>
+<p>返回True如果设置错误，否则为False 。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qsqlquerymodel.html" tppabs="http://pyqt4doc.appspot.com/qsqlquerymodel.html">QSqlQueryModel</a></span> model;
+ model<span class="operator">.</span>setQuery(<span class="string">"select * from myTable"</span>);
+ <span class="keyword">if</span> (model<span class="operator">.</span>lastError()<span class="operator">.</span>isValid())
+     <a href="index.htm#qDebug" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qDebug">qDebug</a>() <span class="operator">&lt;</span><span class="operator">&lt;</span> model<span class="operator">.</span>lastError();
+</pre>
+<p><b>See also</b> <a href="qsqlerror.html#type" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#type">type</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="number"></a>int QSqlError.number (<i>self</i>)</h3>
+<p>返回数据库特定的错误号或-1 ，如果它不能确定。</p>
+<p><b>See also</b> <a href="qsqlerror.html#setNumber" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#setNumber">setNumber</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setDatabaseText"></a>QSqlError.setDatabaseText (<i>self</i>, QString <i>databaseText</i>)</h3>
+<p>设置数据库错误文本的价值<i>databaseText</i>。</p>
+<p><b>See also</b> <a href="qsqlerror.html#databaseText" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#databaseText">databaseText</a>（ ）<a href="qsqlerror.html#setDriverText" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#setDriverText">setDriverText</a>（）和<a href="qsqlerror.html#text" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#text">text</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setDriverText"></a>QSqlError.setDriverText (<i>self</i>, QString <i>driverText</i>)</h3>
+<p>设置驱动器的错误文本的价值<i>driverText</i>。</p>
+<p><b>See also</b> <a href="qsqlerror.html#driverText" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#driverText">driverText</a>（ ）<a href="qsqlerror.html#setDatabaseText" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#setDatabaseText">setDatabaseText</a>（）和<a href="qsqlerror.html#text" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#text">text</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setNumber"></a>QSqlError.setNumber (<i>self</i>, int <i>number</i>)</h3>
+<p>设置数据库特定的错误号码<i>number</i>。</p>
+<p><b>See also</b> <a href="qsqlerror.html#number" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#number">number</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setType"></a>QSqlError.setType (<i>self</i>, <a href="qsqlerror.html#ErrorType-enum" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#ErrorType-enum">ErrorType</a> <i>type</i>)</h3>
+<p>设置错误类型的值<i>type</i>。</p>
+<p><b>See also</b> <a href="qsqlerror.html#type" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#type">type</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="text"></a>QString QSqlError.text (<i>self</i>)</h3>
+<p>这是一个方便的函数，返回<a href="qsqlerror.html#databaseText" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#databaseText">databaseText</a>（）和<a href="qsqlerror.html#driverText" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#driverText">driverText</a>（ ）连接成一个字符串。</p>
+<p><b>See also</b> <a href="qsqlerror.html#driverText" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#driverText">driverText</a>（）和<a href="qsqlerror.html#databaseText" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#databaseText">databaseText</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="type"></a><a href="qsqlerror.html#ErrorType-enum" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#ErrorType-enum">ErrorType</a> QSqlError.type (<i>self</i>)</h3>
+<p>如果返回的类型无法确定错误类型，或-1 。</p>
+<p><b>See also</b> <a href="qsqlerror.html#setType" tppabs="http://pyqt4doc.appspot.com/qsqlerror.html#setType">setType</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

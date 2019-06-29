@@ -1,0 +1,129 @@
+﻿<html>
+<head>
+<title>QXmlParseException Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QXmlParseException Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtxml.html">QtXml</a> module]</sup></sup>
+</h1>
+<p>该QXmlParseException类用于报告的错误<a href="qxmlerrorhandler.html" tppabs="http://pyqt4doc.appspot.com/qxmlerrorhandler.html">QXmlErrorHandler</a>接口。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlparseexception.html#QXmlParseException" tppabs="http://pyqt4doc.appspot.com/qxmlparseexception.html#QXmlParseException">__init__</a></b> (<i>self</i>, QString <i>name</i> = QString(), int <i>column</i> = -1, int <i>line</i> = -1, QString <i>publicId</i> = QString(), QString <i>systemId</i> = QString())</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlparseexception.html#QXmlParseException-2" tppabs="http://pyqt4doc.appspot.com/qxmlparseexception.html#QXmlParseException-2">__init__</a></b> (<i>self</i>, QXmlParseException <i>other</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qxmlparseexception.html#columnNumber" tppabs="http://pyqt4doc.appspot.com/qxmlparseexception.html#columnNumber">columnNumber</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qxmlparseexception.html#lineNumber" tppabs="http://pyqt4doc.appspot.com/qxmlparseexception.html#lineNumber">lineNumber</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qxmlparseexception.html#message" tppabs="http://pyqt4doc.appspot.com/qxmlparseexception.html#message">message</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qxmlparseexception.html#publicId" tppabs="http://pyqt4doc.appspot.com/qxmlparseexception.html#publicId">publicId</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qxmlparseexception.html#systemId" tppabs="http://pyqt4doc.appspot.com/qxmlparseexception.html#systemId">systemId</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QXmlParseException类用于报告的错误<a href="qxmlerrorhandler.html" tppabs="http://pyqt4doc.appspot.com/qxmlerrorhandler.html">QXmlErrorHandler</a>接口。</p>
+<p>在XML子系统构建在检测到错误时，这个类的一个实例。你可以检索到错误的使用发生的地方<a href="qxmlparseexception.html#systemId" tppabs="http://pyqt4doc.appspot.com/qxmlparseexception.html#systemId">systemId</a>（ ）<a href="qxmlparseexception.html#publicId" tppabs="http://pyqt4doc.appspot.com/qxmlparseexception.html#publicId">publicId</a>（ ）<a href="qxmlparseexception.html#lineNumber" tppabs="http://pyqt4doc.appspot.com/qxmlparseexception.html#lineNumber">lineNumber</a>（）和<a href="qxmlparseexception.html#columnNumber" tppabs="http://pyqt4doc.appspot.com/qxmlparseexception.html#columnNumber">columnNumber</a>（） ，以及错误<a href="qxmlparseexception.html#message" tppabs="http://pyqt4doc.appspot.com/qxmlparseexception.html#message">message</a>（ ） 。可能的错误消息：</p>
+<ul>
+<li>"no error occurred"</li>
+<li>"error triggered by consumer"</li>
+<li>"unexpected end of file"</li>
+<li>"more than one document type definition"</li>
+<li>"error occurred while parsing element"</li>
+<li>"tag mismatch"</li>
+<li>"error occurred while parsing content"</li>
+<li>"unexpected character"</li>
+<li>"invalid name for processing instruction"</li>
+<li>"version expected while reading the XML declaration"</li>
+<li>"wrong value for standalone declaration"</li>
+<li>"encoding declaration or standalone declaration expected while
+reading the XML declaration"</li>
+<li>"standalone declaration expected while reading the XML
+declaration"</li>
+<li>"error occurred while parsing document type definition"</li>
+<li>"letter is expected"</li>
+<li>"error occurred while parsing comment"</li>
+<li>"error occurred while parsing reference"</li>
+<li>"internal general entity reference not allowed in DTD"</li>
+<li>"external parsed general entity reference not allowed in
+attribute value"</li>
+<li>"external parsed general entity reference not allowed in
+DTD"</li>
+<li>"unparsed entity reference n wrong context"</li>
+<li>"recursive entities"</li>
+<li>"error in the text declaration of an external entity"</li>
+</ul>
+<p>需要注意的是，如果你想显示这些错误信息到您的应用程序的用户，他们将，除非他们明确地翻译英文显示。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QXmlParseException"></a>QXmlParseException.__init__ (<i>self</i>, QString <i>name</i> = QString(), int <i>column</i> = -1, int <i>line</i> = -1, QString <i>publicId</i> = QString(), QString <i>systemId</i> = QString())</h3>
+<p>与错误字符串构造一个解析异常<i>name</i>列<i>c</i>和行<i>l</i>对于公共标识符<i>p</i>和系统标识符<i>s</i>。</p>
+
+
+<h3 class="fn">
+<a name="QXmlParseException-2"></a>QXmlParseException.__init__ (<i>self</i>, <a href="qxmlparseexception.html" tppabs="http://pyqt4doc.appspot.com/qxmlparseexception.html">QXmlParseException</a> <i>other</i>)</h3>
+<p>创建副本<i>other</i>。</p>
+
+
+<h3 class="fn">
+<a name="columnNumber"></a>int QXmlParseException.columnNumber (<i>self</i>)</h3>
+<p>返回发生错误的位置的列号。</p>
+
+
+<h3 class="fn">
+<a name="lineNumber"></a>int QXmlParseException.lineNumber (<i>self</i>)</h3>
+<p>返回发生错误的行号。</p>
+
+
+<h3 class="fn">
+<a name="message"></a>QString QXmlParseException.message (<i>self</i>)</h3>
+<p>返回该错误消息。</p>
+
+
+<h3 class="fn">
+<a name="publicId"></a>QString QXmlParseException.publicId (<i>self</i>)</h3>
+<p>返回发生错误的公共标识。</p>
+
+
+<h3 class="fn">
+<a name="systemId"></a>QString QXmlParseException.systemId (<i>self</i>)</h3>
+<p>返回发生错误的位置的系统标识符。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

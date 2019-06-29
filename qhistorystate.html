@@ -1,0 +1,157 @@
+﻿<html>
+<head>
+<title>QHistoryState Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QHistoryState Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QHistoryState类提供​​返回到一个以前的活动子状态的手段。<a href="#details">More...</a></p>
+
+<p>继承<a href="qabstractstate.html" tppabs="http://pyqt4doc.appspot.com/qabstractstate.html">QAbstractState</a>。</p>
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qhistorystate.html#HistoryType-enum" tppabs="http://pyqt4doc.appspot.com/qhistorystate.html#HistoryType-enum">HistoryType</a></b> { ShallowHistory, DeepHistory }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qhistorystate.html#QHistoryState" tppabs="http://pyqt4doc.appspot.com/qhistorystate.html#QHistoryState">__init__</a></b> (<i>self</i>, QState <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhistorystate.html#QHistoryState-2" tppabs="http://pyqt4doc.appspot.com/qhistorystate.html#QHistoryState-2">__init__</a></b> (<i>self</i>, HistoryType <i>type</i>, QState <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>QAbstractState <b><a href="qhistorystate.html#defaultState" tppabs="http://pyqt4doc.appspot.com/qhistorystate.html#defaultState">defaultState</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qhistorystate.html#event" tppabs="http://pyqt4doc.appspot.com/qhistorystate.html#event">event</a></b> (<i>self</i>, QEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>HistoryType <b><a href="qhistorystate.html#historyType" tppabs="http://pyqt4doc.appspot.com/qhistorystate.html#historyType">historyType</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhistorystate.html#onEntry" tppabs="http://pyqt4doc.appspot.com/qhistorystate.html#onEntry">onEntry</a></b> (<i>self</i>, QEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhistorystate.html#onExit" tppabs="http://pyqt4doc.appspot.com/qhistorystate.html#onExit">onExit</a></b> (<i>self</i>, QEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhistorystate.html#setDefaultState" tppabs="http://pyqt4doc.appspot.com/qhistorystate.html#setDefaultState">setDefaultState</a></b> (<i>self</i>, QAbstractState <i>state</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qhistorystate.html#setHistoryType" tppabs="http://pyqt4doc.appspot.com/qhistorystate.html#setHistoryType">setHistoryType</a></b> (<i>self</i>, HistoryType <i>type</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QHistoryState类提供​​返回到一个以前的活动子状态的手段。</p>
+<p>史状态是一个伪状态，代表该子状态的父状态是在最后时刻父状态中退出。与历史状态为目标的过渡实际上是在父状态的其他子状态的一个过渡。 QHistoryState是一部分<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/statemachine-api.html">The
+State Machine Framework</a>。</p>
+<p>使用<a href="qhistorystate.html#defaultState-prop" tppabs="http://pyqt4doc.appspot.com/qhistorystate.html#defaultState-prop">setDefaultState</a>（ ）函数来设置，如果父状态从来没有进入应该进入状态。例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstatemachine.html" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html">QStateMachine</a></span> machine;
+
+ <span class="type"><a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a></span> <span class="operator">*</span>s1 <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a></span>();
+ <span class="type"><a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a></span> <span class="operator">*</span>s11 <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a></span>(s1);
+ <span class="type"><a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a></span> <span class="operator">*</span>s12 <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a></span>(s1);
+
+ <span class="type">QHistoryState</span> <span class="operator">*</span>s1h <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QHistoryState</span>(s1);
+ s1h<span class="operator">-</span><span class="operator">&gt;</span><a href="qhistorystate.html#defaultState-prop" tppabs="http://pyqt4doc.appspot.com/qhistorystate.html#defaultState-prop">setDefaultState</a>(s11);
+
+ machine<span class="operator">.</span>addState(s1);
+
+ <span class="type"><a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a></span> <span class="operator">*</span>s2 <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a></span>();
+ machine<span class="operator">.</span>addState(s2);
+
+ <span class="type"><a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a></span> <span class="operator">*</span>button <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a></span>();
+ <span class="comment">// Clicking the button will cause the state machine to enter the child state</span>
+ <span class="comment">// that s1 was in the last time s1 was exited, or the history state's default</span>
+ <span class="comment">// state if s1 has never been entered.</span>
+ s1<span class="operator">-</span><span class="operator">&gt;</span>addTransition(button<span class="operator">,</span> SIGNAL(clicked())<span class="operator">,</span> s1h);
+</pre>
+<p>默认情况下，历史状态很浅，这意味着它不会记得嵌套状态。这可以通过配置<a href="qhistorystate.html#historyType-prop" tppabs="http://pyqt4doc.appspot.com/qhistorystate.html#historyType-prop">historyType</a>属性。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="HistoryType-enum"></a>QHistoryState.HistoryType</h3>
+<p>此枚举指定的历史类型，一个<a href="qhistorystate.html" tppabs="http://pyqt4doc.appspot.com/qhistorystate.html">QHistoryState</a>记录。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHistoryState.ShallowHistory</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">只有父状态的直接子状态被记录下来。在这种情况下，与历史状态为目标的过渡最终会在父是在上一次被退出的直接子状态。这是默认的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QHistoryState.DeepHistory</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">嵌套状态被记录下来。在这种情况下，与历史状态为目标的过渡将结束在最深层的后代状态母公司是在上次被退出。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QHistoryState"></a>QHistoryState.__init__ (<i>self</i>, <a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个新的浅历史状态与给定<i>parent</i>状态。</p>
+
+
+<h3 class="fn">
+<a name="QHistoryState-2"></a>QHistoryState.__init__ (<i>self</i>, <a href="qhistorystate.html#HistoryType-enum" tppabs="http://pyqt4doc.appspot.com/qhistorystate.html#HistoryType-enum">HistoryType</a> <i>type</i>, <a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造的赋予了新的历史状态<i>type</i>用给定的<i>parent</i>状态。</p>
+
+
+<h3 class="fn">
+<a name="defaultState"></a><a href="qabstractstate.html" tppabs="http://pyqt4doc.appspot.com/qabstractstate.html">QAbstractState</a> QHistoryState.defaultState (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="event"></a>bool QHistoryState.event (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">QObject.event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="historyType"></a><a href="qhistorystate.html#HistoryType-enum" tppabs="http://pyqt4doc.appspot.com/qhistorystate.html#HistoryType-enum">HistoryType</a> QHistoryState.historyType (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="onEntry"></a>QHistoryState.onEntry (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qabstractstate.html#onEntry" tppabs="http://pyqt4doc.appspot.com/qabstractstate.html#onEntry">QAbstractState.onEntry</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="onExit"></a>QHistoryState.onExit (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qabstractstate.html#onExit" tppabs="http://pyqt4doc.appspot.com/qabstractstate.html#onExit">QAbstractState.onExit</a>（ ） 。</p>
+<h3 class="fn">
+<a name="setDefaultState"></a>QHistoryState.setDefaultState (<i>self</i>, <a href="qabstractstate.html" tppabs="http://pyqt4doc.appspot.com/qabstractstate.html">QAbstractState</a> <i>state</i>)</h3>
+<h3 class="fn">
+<a name="setHistoryType"></a>QHistoryState.setHistoryType (<i>self</i>, <a href="qhistorystate.html#HistoryType-enum" tppabs="http://pyqt4doc.appspot.com/qhistorystate.html#HistoryType-enum">HistoryType</a> <i>type</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

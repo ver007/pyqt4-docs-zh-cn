@@ -1,0 +1,207 @@
+﻿<html>
+<head>
+<title>QDeclarativeContext Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDeclarativeContext Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdeclarative.html">QtDeclarative</a> module]</sup></sup>
+</h1>
+<p>该QDeclarativeContext类定义中的QML引擎的内容。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdeclarativecontext.html#QDeclarativeContext" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#QDeclarativeContext">__init__</a></b> (<i>self</i>, QDeclarativeEngine <i>engine</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdeclarativecontext.html#QDeclarativeContext-2" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#QDeclarativeContext-2">__init__</a></b> (<i>self</i>, QDeclarativeContext <i>context</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>QUrl <b><a href="qdeclarativecontext.html#baseUrl" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#baseUrl">baseUrl</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QObject <b><a href="qdeclarativecontext.html#contextObject" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#contextObject">contextObject</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qdeclarativecontext.html#contextProperty" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#contextProperty">contextProperty</a></b> (<i>self</i>, QString)</li>
+<li>
+<div class="fn"></div>QDeclarativeEngine <b><a href="qdeclarativecontext.html#engine" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#engine">engine</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdeclarativecontext.html#isValid" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#isValid">isValid</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDeclarativeContext <b><a href="qdeclarativecontext.html#parentContext" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#parentContext">parentContext</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QUrl <b><a href="qdeclarativecontext.html#resolvedUrl" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#resolvedUrl">resolvedUrl</a></b> (<i>self</i>, QUrl)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdeclarativecontext.html#setBaseUrl" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#setBaseUrl">setBaseUrl</a></b> (<i>self</i>, QUrl)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdeclarativecontext.html#setContextObject" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#setContextObject">setContextObject</a></b> (<i>self</i>, QObject)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdeclarativecontext.html#setContextProperty" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#setContextProperty">setContextProperty</a></b> (<i>self</i>, QString, QObject)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdeclarativecontext.html#setContextProperty-2" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#setContextProperty-2">setContextProperty</a></b> (<i>self</i>, QString, QVariant)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDeclarativeContext类定义中的QML引擎的内容。</p>
+<p>上下文允许数据被暴露在由QML引擎实例化的QML组件。</p>
+<p>每个QDeclarativeContext包含的一组属性，其独特的<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>性质，即允许数据被明确地通过名称绑定到上下文。上下文属性都通过调用定义和更新<a href="qdeclarativecontext.html#setContextProperty" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#setContextProperty">QDeclarativeContext.setContextProperty</a>（ ） 。下面的例子显示了Qt的模型被绑定到一个上下文，然后从一个QML文件的访问。</p>
+<pre class="cpp">
+ <span class="type"><a href="qdeclarativeengine.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativeengine.html">QDeclarativeEngine</a></span> engine;
+ <span class="type"><a href="qstringlistmodel.html" tppabs="http://pyqt4doc.appspot.com/qstringlistmodel.html">QStringListModel</a></span> modelData;
+ <span class="type">QDeclarativeContext</span> <span class="operator">*</span>context <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QDeclarativeContext</span>(engine<span class="operator">.</span>rootContext());
+ context<span class="operator">-</span><span class="operator">&gt;</span><a href="qdeclarativecontext.html#setContextProperty" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#setContextProperty">setContextProperty</a>(<span class="string">"myModel"</span><span class="operator">,</span> <span class="operator">&amp;</span>modelData);
+
+ <span class="type"><a href="qdeclarativecomponent.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativecomponent.html">QDeclarativeComponent</a></span> component(<span class="operator">&amp;</span>engine);
+ component<span class="operator">.</span>setData(<span class="string">"import QtQuick 1.0\nListView { model: myModel }"</span><span class="operator">,</span> <span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span>());
+ <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span> <span class="operator">*</span>window <span class="operator">=</span> component<span class="operator">.</span>create(context);
+</pre>
+<p>注意它是创作者将其删除构建任何QDeclarativeContext责任。如果<tt>context</tt>在本例中的对象不再需要时<tt>window</tt>组件实例被破坏，<tt>context</tt>必须显式地销毁。确保这一点的最简单的方法是设置<tt>window</tt>作为父<tt>context</tt>。</p>
+<p>为了简化绑定和维护更大的数据集，一个上下文对象可以在QDeclarativeContext进行设置。是上下文对象的所有属性可通过名称的背景下，彷彿他们都分别通过调用添加<a href="qdeclarativecontext.html#setContextProperty" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#setContextProperty">QDeclarativeContext.setContextProperty</a>（ ） 。通过属性的通知信号被检测到更改属性的值。设置一个上下文对象是速度更快，比手动添加和维修器材上下文属性值更容易。</p>
+<p>下面的例子中有相同的效果与前面的一个，但是它使用了一个上下文对象。</p>
+<pre class="cpp">
+ <span class="keyword">class</span> MyDataSet : <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span> {
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+     Q_PROPERTY(<span class="type"><a href="qabstractitemmodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractitemmodel.html">QAbstractItemModel</a></span> <span class="operator">*</span>myModel READ model NOTIFY modelChanged)
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ };
+
+ MyDataSet myDataSet;
+ <span class="type"><a href="qdeclarativeengine.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativeengine.html">QDeclarativeEngine</a></span> engine;
+ <span class="type">QDeclarativeContext</span> <span class="operator">*</span>context <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QDeclarativeContext</span>(engine<span class="operator">.</span>rootContext());
+ context<span class="operator">-</span><span class="operator">&gt;</span><a href="qdeclarativecontext.html#setContextObject" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#setContextObject">setContextObject</a>(<span class="operator">&amp;</span>myDataSet);
+
+ <span class="type"><a href="qdeclarativecomponent.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativecomponent.html">QDeclarativeComponent</a></span> component(<span class="operator">&amp;</span>engine);
+ component<span class="operator">.</span>setData(<span class="string">"import QtQuick 1.0\nListView { model: myModel }"</span><span class="operator">,</span> <span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span>());
+ component<span class="operator">.</span>create(context);
+</pre>
+<p>通过明确添加的所有属性<a href="qdeclarativecontext.html#setContextProperty" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#setContextProperty">QDeclarativeContext.setContextProperty</a>（ ）优先于上下文对象的属性。</p>
+<a id="the-context-hierarchy" name="the-context-hierarchy"></a>
+<h4>The Context Hierarchy</h4>
+<p>上下文可以形成一个分层结构。这个层次结构的根是QML引擎的<a href="qdeclarativeengine.html#rootContext" tppabs="http://pyqt4doc.appspot.com/qdeclarativeengine.html#rootContext">root
+context</a>。儿童上下文继承父母的上下文属性，如果一个孩子的上下文设置已经存在于它的父上下文属性，新的上下文属性将复盖母公司。</p>
+<p>下面的示例定义两个上下文 - <tt>context1</tt>和<tt>context2</tt>。第二个方面复盖从先用一个新值继承了“b”的内容属性。</p>
+<pre class="cpp">
+ <span class="type"><a href="qdeclarativeengine.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativeengine.html">QDeclarativeEngine</a></span> engine;
+ <span class="type">QDeclarativeContext</span> <span class="operator">*</span>context1 <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QDeclarativeContext</span>(engine<span class="operator">.</span>rootContext());
+ <span class="type">QDeclarativeContext</span> <span class="operator">*</span>context2 <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QDeclarativeContext</span>(context1);
+
+ context1<span class="operator">-</span><span class="operator">&gt;</span><a href="qdeclarativecontext.html#setContextProperty" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#setContextProperty">setContextProperty</a>(<span class="string">"a"</span><span class="operator">,</span> <span class="number">12</span>);
+ context1<span class="operator">-</span><span class="operator">&gt;</span><a href="qdeclarativecontext.html#setContextProperty" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#setContextProperty">setContextProperty</a>(<span class="string">"b"</span><span class="operator">,</span> <span class="number">12</span>);
+
+ context2<span class="operator">-</span><span class="operator">&gt;</span><a href="qdeclarativecontext.html#setContextProperty" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#setContextProperty">setContextProperty</a>(<span class="string">"b"</span><span class="operator">,</span> <span class="number">15</span>);
+</pre>
+<p>而在实例化一个上下文QML对象不严格的情况下拥有的，绑定。如果上下文被销毁，优秀的QML对象的属性绑定将停止评估。</p>
+<p><b>Warning:</b>设置上下文对象或之后有物体在这种情况下被创建增加新的内容属性是一个昂贵的操作（实际上是强迫所有绑定重新评估） 。因此，只要有可能，你应该使用它来创建任何对象之前完成上下文的“设置” 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDeclarativeContext"></a>QDeclarativeContext.__init__ (<i>self</i>, <a href="qdeclarativeengine.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativeengine.html">QDeclarativeEngine</a> <i>engine</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>创建一个新的<a href="qdeclarativecontext.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html">QDeclarativeContext</a>作为一个子<i>engine</i>的根上下文，以及<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="QDeclarativeContext-2"></a>QDeclarativeContext.__init__ (<i>self</i>, <a href="qdeclarativecontext.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html">QDeclarativeContext</a> <i>context</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>创建一个新的<a href="qdeclarativecontext.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html">QDeclarativeContext</a>用给定的<i>parentContext</i>和<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>
+<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="baseUrl"></a><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> QDeclarativeContext.baseUrl (<i>self</i>)</h3>
+<p>返回组件的基本URL ，或含有成分，如果没有被设置。</p>
+<p><b>See also</b> <a href="qdeclarativecontext.html#setBaseUrl" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#setBaseUrl">setBaseUrl</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="contextObject"></a><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> QDeclarativeContext.contextObject (<i>self</i>)</h3>
+<p>返回上下文对象，或0 ，如果没有上下文对象。</p>
+<p><b>See also</b> <a href="qdeclarativecontext.html#setContextObject" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#setContextObject">setContextObject</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="contextProperty"></a>QVariant QDeclarativeContext.contextProperty (<i>self</i>, QString)</h3>
+<p>返回的值<i>name</i>属性这方面的<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>。</p>
+<p><b>See also</b> <a href="qdeclarativecontext.html#setContextProperty" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#setContextProperty">setContextProperty</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="engine"></a><a href="qdeclarativeengine.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativeengine.html">QDeclarativeEngine</a> QDeclarativeContext.engine (<i>self</i>)</h3>
+<p>返回上下文的<a href="qdeclarativeengine.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativeengine.html">QDeclarativeEngine</a>，或者0，如果上下文没有<a href="qdeclarativeengine.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativeengine.html">QDeclarativeEngine</a>或<a href="qdeclarativeengine.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativeengine.html">QDeclarativeEngine</a>被摧毁。</p>
+
+
+<h3 class="fn">
+<a name="isValid"></a>bool QDeclarativeContext.isValid (<i>self</i>)</h3>
+<p>返回上下文是否有效。</p>
+<p>是有效的，上下文必须有一个发动机，它的<a href="qdeclarativecontext.html#contextObject" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#contextObject">contextObject</a>（） ，如果有的话，必须没有被删除。</p>
+
+
+<h3 class="fn">
+<a name="parentContext"></a><a href="qdeclarativecontext.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html">QDeclarativeContext</a> QDeclarativeContext.parentContext (<i>self</i>)</h3>
+<p>返回上下文的父<a href="qdeclarativecontext.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html">QDeclarativeContext</a>，或者0，如果这方面没有父或父已被破坏。</p>
+
+
+<h3 class="fn">
+<a name="resolvedUrl"></a><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> QDeclarativeContext.resolvedUrl (<i>self</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>)</h3>
+<p>解析URL<i>src</i>相对于包含组件的URL 。</p>
+<p><b>See also</b> <a href="qdeclarativeengine.html#baseUrl" tppabs="http://pyqt4doc.appspot.com/qdeclarativeengine.html#baseUrl">QDeclarativeEngine.baseUrl</a>（）和<a href="qdeclarativecontext.html#setBaseUrl" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#setBaseUrl">setBaseUrl</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setBaseUrl"></a>QDeclarativeContext.setBaseUrl (<i>self</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>)</h3>
+<p>显式设置的URL<a href="qdeclarativecontext.html#resolvedUrl" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#resolvedUrl">resolvedUrl</a>（ ）将使用相对引用<i>baseUrl</i>。</p>
+<p>调用此函数将复盖默认使用的含有成分的url 。</p>
+<p><b>See also</b> <a href="qdeclarativecontext.html#baseUrl" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#baseUrl">baseUrl</a>（）和<a href="qdeclarativecontext.html#resolvedUrl" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#resolvedUrl">resolvedUrl</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setContextObject"></a>QDeclarativeContext.setContextObject (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>)</h3>
+<p>设置上下文<i>object</i>。</p>
+<p><b>See also</b> <a href="qdeclarativecontext.html#contextObject" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#contextObject">contextObject</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setContextProperty"></a>QDeclarativeContext.setContextProperty (<i>self</i>, QString, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>)</h3>
+<p>设置<i>value</i>的<i>name</i>财产这方面。</p>
+<p><a href="qdeclarativecontext.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html">QDeclarativeContext</a>不<b>not</b>取得其所有权<i>value</i>。</p>
+<p><b>See also</b> <a href="qdeclarativecontext.html#contextProperty" tppabs="http://pyqt4doc.appspot.com/qdeclarativecontext.html#contextProperty">contextProperty</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setContextProperty-2"></a>QDeclarativeContext.setContextProperty (<i>self</i>, QString, QVariant)</h3>
+<p>设置的<i>value</i>的<i>name</i>财产这方面。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

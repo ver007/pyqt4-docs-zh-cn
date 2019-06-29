@@ -1,0 +1,815 @@
+﻿<html>
+<head>
+<title>QTextStream Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QTextStream Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QTextStream进行类提供了一个方便的接口，用于读取和写入文字。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qtextstream.html#FieldAlignment-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#FieldAlignment-enum">FieldAlignment</a></b> { AlignLeft, AlignRight, AlignCenter, AlignAccountingStyle }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qtextstream.html#NumberFlag-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#NumberFlag-enum">NumberFlag</a></b> { ShowBase, ForcePoint, ForceSign, UppercaseBase, UppercaseDigits }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtextstream-numberflags.html">NumberFlags</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qtextstream.html#RealNumberNotation-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#RealNumberNotation-enum">RealNumberNotation</a></b> { SmartNotation, FixedNotation, ScientificNotation }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qtextstream.html#Status-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#Status-enum">Status</a></b> { Ok, ReadPastEnd, ReadCorruptData, WriteFailed }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qtextstream.html#QTextStream" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#QTextStream">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextstream.html#QTextStream-2" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#QTextStream-2">__init__</a></b> (<i>self</i>, QIODevice <i>device</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextstream.html#QTextStream-3" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#QTextStream-3">__init__</a></b> (<i>self</i>, QString <i>string</i>, QIODevice.OpenMode <i>mode</i> = QIODevice.ReadWrite)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextstream.html#QTextStream-4" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#QTextStream-4">__init__</a></b> (<i>self</i>, QByteArray <i>array</i>, QIODevice.OpenMode <i>mode</i> = QIODevice.ReadWrite)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextstream.html#atEnd" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#atEnd">atEnd</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextstream.html#autoDetectUnicode" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#autoDetectUnicode">autoDetectUnicode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextCodec <b><a href="qtextstream.html#codec" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#codec">codec</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QIODevice <b><a href="qtextstream.html#device" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#device">device</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>FieldAlignment <b><a href="qtextstream.html#fieldAlignment" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#fieldAlignment">fieldAlignment</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextstream.html#fieldWidth" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#fieldWidth">fieldWidth</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextstream.html#flush" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#flush">flush</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextstream.html#generateByteOrderMark" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#generateByteOrderMark">generateByteOrderMark</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextstream.html#integerBase" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#integerBase">integerBase</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QLocale <b><a href="qtextstream.html#locale" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#locale">locale</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>NumberFlags <b><a href="qtextstream.html#numberFlags" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#numberFlags">numberFlags</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QChar <b><a href="qtextstream.html#padChar" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#padChar">padChar</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextstream.html#pos" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#pos">pos</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qtextstream.html#read" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#read">read</a></b> (<i>self</i>, int <i>maxlen</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qtextstream.html#readAll" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#readAll">readAll</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qtextstream.html#readLine" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#readLine">readLine</a></b> (<i>self</i>, int <i>maxLength</i> = 0)</li>
+<li>
+<div class="fn"></div>RealNumberNotation <b><a href="qtextstream.html#realNumberNotation" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#realNumberNotation">realNumberNotation</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextstream.html#realNumberPrecision" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#realNumberPrecision">realNumberPrecision</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextstream.html#reset" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#reset">reset</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextstream.html#resetStatus" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#resetStatus">resetStatus</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextstream.html#seek" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#seek">seek</a></b> (<i>self</i>, int <i>pos</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextstream.html#setAutoDetectUnicode" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setAutoDetectUnicode">setAutoDetectUnicode</a></b> (<i>self</i>, bool <i>enabled</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextstream.html#setCodec" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setCodec">setCodec</a></b> (<i>self</i>, QTextCodec <i>codec</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextstream.html#setCodec-2" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setCodec-2">setCodec</a></b> (<i>self</i>, str <i>codecName</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextstream.html#setDevice" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setDevice">setDevice</a></b> (<i>self</i>, QIODevice <i>device</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextstream.html#setFieldAlignment" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setFieldAlignment">setFieldAlignment</a></b> (<i>self</i>, FieldAlignment <i>alignment</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextstream.html#setFieldWidth" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setFieldWidth">setFieldWidth</a></b> (<i>self</i>, int <i>width</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextstream.html#setGenerateByteOrderMark" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setGenerateByteOrderMark">setGenerateByteOrderMark</a></b> (<i>self</i>, bool <i>generate</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextstream.html#setIntegerBase" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setIntegerBase">setIntegerBase</a></b> (<i>self</i>, int <i>base</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextstream.html#setLocale" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setLocale">setLocale</a></b> (<i>self</i>, QLocale <i>locale</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextstream.html#setNumberFlags" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setNumberFlags">setNumberFlags</a></b> (<i>self</i>, NumberFlags <i>flags</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextstream.html#setPadChar" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setPadChar">setPadChar</a></b> (<i>self</i>, QChar <i>ch</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextstream.html#setRealNumberNotation" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setRealNumberNotation">setRealNumberNotation</a></b> (<i>self</i>, RealNumberNotation <i>notation</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextstream.html#setRealNumberPrecision" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setRealNumberPrecision">setRealNumberPrecision</a></b> (<i>self</i>, int <i>precision</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextstream.html#setStatus" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setStatus">setStatus</a></b> (<i>self</i>, Status <i>status</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextstream.html#setString" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setString">setString</a></b> (<i>self</i>, QString <i>string</i>, QIODevice.OpenMode <i>mode</i> = QIODevice.ReadWrite)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextstream.html#skipWhiteSpace" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#skipWhiteSpace">skipWhiteSpace</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Status <b><a href="qtextstream.html#status" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#status">status</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qtextstream.html#string" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#string">string</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QTextStream <b><a href="index.htm#__lshift__" tppabs="http://pyqt4doc.appspot.com/qtxml.html#__lshift__">__lshift__</a></b> (<i>self</i>, QDomNode)</li>
+<li>
+<div class="fn"></div>QTextStream <b><a href="index.htm#__lshift__-21" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__lshift__-21">__lshift__</a></b> (<i>self</i>, QSplitter)</li>
+<li>
+<div class="fn"></div>QTextStream <b><a href="index.htm#__rshift__-21" tppabs="http://pyqt4doc.appspot.com/qtgui.html#__rshift__-21">__rshift__</a></b> (<i>self</i>, QSplitter)</li>
+<li>
+<div class="fn"></div>QTextStream <b><a href="qtextstream.html#__lshift__" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#__lshift__">__lshift__</a></b> (<i>self</i>, float <i>f</i>)</li>
+<li>
+<div class="fn"></div>QTextStream <b><a href="qtextstream.html#__lshift__-2" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#__lshift__-2">__lshift__</a></b> (<i>self</i>, bool <i>b</i>)</li>
+<li>
+<div class="fn"></div>QTextStream <b><a href="qtextstream.html#__lshift__-3" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#__lshift__-3">__lshift__</a></b> (<i>self</i>, int <i>i</i>)</li>
+<li>
+<div class="fn"></div>QTextStream <b><a href="qtextstream.html#__lshift__-4" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#__lshift__-4">__lshift__</a></b> (<i>self</i>, int <i>i</i>)</li>
+<li>
+<div class="fn"></div>QTextStream <b><a href="qtextstream.html#__lshift__-5" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#__lshift__-5">__lshift__</a></b> (<i>self</i>, int <i>i</i>)</li>
+<li>
+<div class="fn"></div>QTextStream <b><a href="qtextstream.html#__lshift__-6" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#__lshift__-6">__lshift__</a></b> (<i>self</i>, QString <i>s</i>)</li>
+<li>
+<div class="fn"></div>QTextStream <b><a href="qtextstream.html#__lshift__-7" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#__lshift__-7">__lshift__</a></b> (<i>self</i>, QByteArray <i>array</i>)</li>
+<li>
+<div class="fn"></div>QTextStream <b><a href="qtextstream.html#__lshift__-8" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#__lshift__-8">__lshift__</a></b> (<i>self</i>, QTextStreamManipulator <i>m</i>)</li>
+<li>
+<div class="fn"></div>QTextStream <b><a href="qtextstream.html#__rshift__" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#__rshift__">__rshift__</a></b> (<i>self</i>, QChar <i>ch</i>)</li>
+<li>
+<div class="fn"></div>QTextStream <b><a href="qtextstream.html#__rshift__-2" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#__rshift__-2">__rshift__</a></b> (<i>self</i>, QString <i>s</i>)</li>
+<li>
+<div class="fn"></div>QTextStream <b><a href="qtextstream.html#__rshift__-3" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#__rshift__-3">__rshift__</a></b> (<i>self</i>, QByteArray <i>array</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QTextStream进行类提供了一个方便的接口，用于读取和写入文字。</p>
+<p>QTextStream进行可以在一个操作<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>，一<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>或<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>。使用QTextStream进行的流媒体运营商，你可以方便地读取和写入文字，线条和数字。对于生成文本， QTextStream进行支持领域填充和对齐和数字的格式格式化选项。例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a></span> data(<span class="string">"output.txt"</span>);
+ <span class="keyword">if</span> (data<span class="operator">.</span>open(<span class="type"><a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a></span><span class="operator">.</span>WriteOnly <span class="operator">|</span> <span class="type"><a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a></span><span class="operator">.</span>Truncate)) {
+     <span class="type">QTextStream</span> out(<span class="operator">&amp;</span>data);
+     out <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"Result: "</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> <a href="index.htm#qSetFieldWidth" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qSetFieldWidth">qSetFieldWidth</a>(<span class="number">10</span>) <span class="operator">&lt;</span><span class="operator">&lt;</span> left <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="number">3.14</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="number">2.7</span>;
+     <span class="comment">// writes "Result: 3.14      2.7       "</span>
+ }
+</pre>
+<p>这也是通常使用QTextStream来读取控制台输入，写控制台输出。 QTextStream进行的是语言环境感知，并使用正确的编解码器会自动解码标准输入。例如：</p>
+<pre class="cpp">
+ <span class="type">QTextStream</span> stream(stdin);
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> line;
+ <span class="keyword">do</span> {
+     line <span class="operator">=</span> stream<span class="operator">.</span>readLine();
+ } <span class="keyword">while</span> (<span class="operator">!</span>line<span class="operator">.</span>isNull());
+</pre>
+<p>除了使用QTextStream进行的构造函数，您还可以设置该设备或字符串QTextStream进行操作的调用<a href="qtextstream.html#setDevice" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setDevice">setDevice</a>（）或<a href="qtextstream.html#setString" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setString">setString</a>（ ） 。你可以通过调用争取到一个位置<a href="qtextstream.html#seek" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#seek">seek</a>（）和<a href="qtextstream.html#atEnd" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#atEnd">atEnd</a>（）返回真时，有没有的待读出的数据。如果你打电话<a href="index.htm#flush" tppabs="http://pyqt4doc.appspot.com/qtcore.html#flush">flush</a>（ ） ， QTextStream进行将清空其写入缓冲区中的所有数据到设备，并调用<a href="index.htm#flush" tppabs="http://pyqt4doc.appspot.com/qtcore.html#flush">flush</a>（）在设备上。</p>
+<p>在内部， QTextStream进行使用一个基于Unicode的缓冲区，<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>是使用QTextStream来自动支持不同的字符集。默认情况下，<a href="qtextcodec.html#codecForLocale" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForLocale">QTextCodec.codecForLocale</a>（ ）用于读取和写入，但你也可以通过调用设定的编解码器<a href="qtextstream.html#setCodec" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setCodec">setCodec</a>（ ） 。也支持自动检测Unicode的。当此功能被启用（默认行为） ， QTextStream进行将检测UTF- 16或UTF -32 BOM（字节顺序标记） ，在读取时切换到相应的UTF编码解码器。 QTextStream进行默认不写一个BOM ，但是你可以通过调用setGenerateByteOrderMark （真）启用此。当QTextStream进行运行在一个<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>直接，编解码器被禁用。</p>
+<p>有读取文本文件时使用QTextStream进行三种一般方法：</p>
+<ul>
+<li>Chunk by chunk, by calling <a href="qtextstream.html#readLine" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#readLine">readLine</a>() or <a href="qtextstream.html#readAll" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#readAll">readAll</a>().</li>
+<li>Word by word. QTextStream supports streaming into QStrings,
+QByteArrays and char* buffers. Words are delimited by space, and
+leading white space is automatically skipped.</li>
+<li>Character by character, by streaming into <a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a> or char types. This method is often used for
+convenient input handling when parsing files, independent of
+character encoding and end-of-line semantics. To skip white space,
+call <a href="qtextstream.html#skipWhiteSpace" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#skipWhiteSpace">skipWhiteSpace</a>().</li>
+</ul>
+<p>由于文本流使用的缓冲区，你不应该使用一个超类的实现流中读取。举例来说，如果你有一个<a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a>并从中直接读取使用<a href="qiodevice.html#readLine" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#readLine">QFile.readLine</a>代替）使用流（ ，文本流的内部位置会出与该文件的位置同步。</p>
+<p>默认情况下，从文本流中读取数字时， QTextStream进行会自动检测数字的基来表示。例如，如果该号码以“0x”启动时，它被假定为在十六进制形式。如果它与数字1-9启动时，它被假定为以十进制形式，等等。您可以设置整数基地，从而禁用自动检测，通过调用<a href="qtextstream.html#setIntegerBase" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setIntegerBase">setIntegerBase</a>（ ） 。例如：</p>
+<pre class="cpp">
+ <span class="type">QTextStream</span> in(<span class="string">"0x50 0x20"</span>);
+ <span class="type">int</span> firstNumber<span class="operator">,</span> secondNumber;
+
+ in <span class="operator">&gt;</span><span class="operator">&gt;</span> firstNumber;             <span class="comment">// firstNumber == 80</span>
+ in <span class="operator">&gt;</span><span class="operator">&gt;</span> dec <span class="operator">&gt;</span><span class="operator">&gt;</span> secondNumber;     <span class="comment">// secondNumber == 0</span>
+
+ <span class="type">char</span> ch;
+ in <span class="operator">&gt;</span><span class="operator">&gt;</span> ch;                      <span class="comment">// ch == 'x'</span>
+</pre>
+<p>QTextStream进行支持，用于生成文本的许多格式选项。你可以通过调用设置字段宽度和填充字符<a href="qtextstream.html#setFieldWidth" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setFieldWidth">setFieldWidth</a>（）和<a href="qtextstream.html#setPadChar" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setPadChar">setPadChar</a>（ ） 。使用<a href="qtextstream.html#setFieldAlignment" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setFieldAlignment">setFieldAlignment</a>（ ）在每个字段内设置的对齐方式。对于实数，请致电<a href="qtextstream.html#setRealNumberNotation" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setRealNumberNotation">setRealNumberNotation</a>（）和<a href="qtextstream.html#setRealNumberPrecision" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setRealNumberPrecision">setRealNumberPrecision</a>（ ）来设置符号（<a href="qtextstream.html#RealNumberNotation-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#RealNumberNotation-enum">SmartNotation</a>，<a href="qtextstream.html#RealNumberNotation-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#RealNumberNotation-enum">ScientificNotation</a>，<a href="qtextstream.html#RealNumberNotation-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#RealNumberNotation-enum">FixedNotation</a>）和精度在生成的数字的位数。一些额外的数字格式选项也可通过<a href="qtextstream.html#setNumberFlags" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setNumberFlags">setNumberFlags</a>（ ） 。</p>
+<a id="qtextstream-manipulators" name="qtextstream-manipulators"></a>
+<p>喜欢<tt>&lt;iostream&gt;</tt>在标准C + +库， QTextStream进行还定义了几个全球机械手功能：</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Manipulator</th>
+<th>Description</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td><tt>bin</tt></td>
+<td>Same as setIntegerBase(2).</td>
+</tr>
+<tr class="even" valign="top">
+<td><tt>oct</tt></td>
+<td>Same as setIntegerBase(8).</td>
+</tr>
+<tr class="odd" valign="top">
+<td><tt>dec</tt></td>
+<td>Same as setIntegerBase(10).</td>
+</tr>
+<tr class="even" valign="top">
+<td><tt>hex</tt></td>
+<td>Same as setIntegerBase(16).</td>
+</tr>
+<tr class="odd" valign="top">
+<td><tt>showbase</tt></td>
+<td>Same as setNumberFlags(<a href="qtextstream.html#numberFlags" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#numberFlags">numberFlags</a>() | <a href="qtextstream.html#NumberFlag-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#NumberFlag-enum">ShowBase</a>).</td>
+</tr>
+<tr class="even" valign="top">
+<td><tt>forcesign</tt></td>
+<td>Same as setNumberFlags(<a href="qtextstream.html#numberFlags" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#numberFlags">numberFlags</a>() | <a href="qtextstream.html#NumberFlag-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#NumberFlag-enum">ForceSign</a>).</td>
+</tr>
+<tr class="odd" valign="top">
+<td><tt>forcepoint</tt></td>
+<td>Same as setNumberFlags(<a href="qtextstream.html#numberFlags" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#numberFlags">numberFlags</a>() | <a href="qtextstream.html#NumberFlag-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#NumberFlag-enum">ForcePoint</a>).</td>
+</tr>
+<tr class="even" valign="top">
+<td><tt>noshowbase</tt></td>
+<td>Same as setNumberFlags(<a href="qtextstream.html#numberFlags" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#numberFlags">numberFlags</a>() &amp; ~<a href="qtextstream.html#NumberFlag-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#NumberFlag-enum">ShowBase</a>).</td>
+</tr>
+<tr class="odd" valign="top">
+<td><tt>noforcesign</tt></td>
+<td>Same as setNumberFlags(<a href="qtextstream.html#numberFlags" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#numberFlags">numberFlags</a>() &amp; ~<a href="qtextstream.html#NumberFlag-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#NumberFlag-enum">ForceSign</a>).</td>
+</tr>
+<tr class="even" valign="top">
+<td><tt>noforcepoint</tt></td>
+<td>Same as setNumberFlags(<a href="qtextstream.html#numberFlags" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#numberFlags">numberFlags</a>() &amp; ~<a href="qtextstream.html#NumberFlag-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#NumberFlag-enum">ForcePoint</a>).</td>
+</tr>
+<tr class="odd" valign="top">
+<td><tt>uppercasebase</tt></td>
+<td>Same as setNumberFlags(<a href="qtextstream.html#numberFlags" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#numberFlags">numberFlags</a>() | <a href="qtextstream.html#NumberFlag-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#NumberFlag-enum">UppercaseBase</a>).</td>
+</tr>
+<tr class="even" valign="top">
+<td><tt>uppercasedigits</tt></td>
+<td>Same as setNumberFlags(<a href="qtextstream.html#numberFlags" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#numberFlags">numberFlags</a>() | <a href="qtextstream.html#NumberFlag-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#NumberFlag-enum">UppercaseDigits</a>).</td>
+</tr>
+<tr class="odd" valign="top">
+<td><tt>lowercasebase</tt></td>
+<td>Same as setNumberFlags(<a href="qtextstream.html#numberFlags" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#numberFlags">numberFlags</a>() &amp; ~<a href="qtextstream.html#NumberFlag-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#NumberFlag-enum">UppercaseBase</a>).</td>
+</tr>
+<tr class="even" valign="top">
+<td><tt>lowercasedigits</tt></td>
+<td>Same as setNumberFlags(<a href="qtextstream.html#numberFlags" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#numberFlags">numberFlags</a>() &amp; ~<a href="qtextstream.html#NumberFlag-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#NumberFlag-enum">UppercaseDigits</a>).</td>
+</tr>
+<tr class="odd" valign="top">
+<td><tt>fixed</tt></td>
+<td>Same as setRealNumberNotation(<a href="qtextstream.html#RealNumberNotation-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#RealNumberNotation-enum">FixedNotation</a>).</td>
+</tr>
+<tr class="even" valign="top">
+<td><tt>scientific</tt></td>
+<td>Same as setRealNumberNotation(<a href="qtextstream.html#RealNumberNotation-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#RealNumberNotation-enum">ScientificNotation</a>).</td>
+</tr>
+<tr class="odd" valign="top">
+<td><tt>left</tt></td>
+<td>Same as setFieldAlignment(<a href="qtextstream.html#FieldAlignment-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#FieldAlignment-enum">AlignLeft</a>).</td>
+</tr>
+<tr class="even" valign="top">
+<td><tt>right</tt></td>
+<td>Same as setFieldAlignment(<a href="qtextstream.html#FieldAlignment-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#FieldAlignment-enum">AlignRight</a>).</td>
+</tr>
+<tr class="odd" valign="top">
+<td><tt>center</tt></td>
+<td>Same as setFieldAlignment(<a href="qtextstream.html#FieldAlignment-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#FieldAlignment-enum">AlignCenter</a>).</td>
+</tr>
+<tr class="even" valign="top">
+<td><tt>endl</tt></td>
+<td>Same as operator&lt;&lt;('\n') and <a href="index.htm#flush" tppabs="http://pyqt4doc.appspot.com/qtcore.html#flush">flush</a>().</td>
+</tr>
+<tr class="odd" valign="top">
+<td><tt>flush</tt></td>
+<td>Same as <a href="index.htm#flush" tppabs="http://pyqt4doc.appspot.com/qtcore.html#flush">flush</a>().</td>
+</tr>
+<tr class="even" valign="top">
+<td><tt>reset</tt></td>
+<td>Same as <a href="index.htm#reset" tppabs="http://pyqt4doc.appspot.com/qtcore.html#reset">reset</a>().</td>
+</tr>
+<tr class="odd" valign="top">
+<td><tt>ws</tt></td>
+<td>Same as <a href="qtextstream.html#skipWhiteSpace" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#skipWhiteSpace">skipWhiteSpace</a>().</td>
+</tr>
+<tr class="even" valign="top">
+<td><tt>bom</tt></td>
+<td>Same as setGenerateByteOrderMark(true).</td>
+</tr>
+</table>
+<p>此外， Qt提供了带一个参数三个全球机械手：<a href="index.htm#qSetFieldWidth" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qSetFieldWidth">qSetFieldWidth</a>（ ）<a href="index.htm#qSetPadChar" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qSetPadChar">qSetPadChar</a>（）和<a href="index.htm#qSetRealNumberPrecision" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qSetRealNumberPrecision">qSetRealNumberPrecision</a>（ ） 。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="FieldAlignment-enum"></a>QTextStream.FieldAlignment</h3>
+<p>此枚举指定如何对齐文本字段中时，现场比它佔用的文字更广泛。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextStream.AlignLeft</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">垫在右侧的字段。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextStream.AlignRight</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">垫场的左侧。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextStream.AlignCenter</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">焊盘上字段的两侧。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QTextStream.AlignAccountingStyle</tt>
+</td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">同AlignRight ，除了数字的标志是左对齐。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qtextstream.html#setFieldAlignment" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setFieldAlignment">setFieldAlignment</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="NumberFlag-enum"></a>QTextStream.NumberFlag</h3>
+<p>该枚举指定可以设置为影响整数的输出各种标志，<tt>float</tt>s和<tt>double</tt>秒。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextStream.ShowBase</tt></td>
+<td class="topAlign"><tt>0x1</tt></td>
+<td class="topAlign">示的基作为前缀，如果该碱是16 （的“0x ” ），8（ “0”） ，或2（“ 0b”时） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextStream.ForcePoint</tt></td>
+<td class="topAlign"><tt>0x2</tt></td>
+<td class="topAlign">始终把小数点分隔符的数字，即使没有小数。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextStream.ForceSign</tt></td>
+<td class="topAlign"><tt>0x4</tt></td>
+<td class="topAlign">始终把符号在数量上，即使是正数。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextStream.UppercaseBase</tt></td>
+<td class="topAlign"><tt>0x8</tt></td>
+<td class="topAlign">使用基地的前缀（ “0X” ， “ 0B ” ）的大写版本。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextStream.UppercaseDigits</tt></td>
+<td class="topAlign"><tt>0x10</tt></td>
+<td class="topAlign">使用大写字母表示数字10 ，而不是小写35 。</td>
+</tr>
+</table>
+<p>该NumberFlags类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cNumberFlag\u003e 。它存储NumberFlag值的或组合。</p>
+<p><b>See also</b> <a href="qtextstream.html#setNumberFlags" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setNumberFlags">setNumberFlags</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="RealNumberNotation-enum"></a>QTextStream.RealNumberNotation</h3>
+<p>这个枚举指定用于表达的符号<tt>float</tt>和<tt>double</tt>为字符串。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextStream.ScientificNotation</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">科学记数法（<tt>printf()</tt>的<tt>%e</tt>标志） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextStream.FixedNotation</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">定点表示法（<tt>printf()</tt>的<tt>%f</tt>标志） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextStream.SmartNotation</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">科学或定点表示法，这取决于哪个最有意义（<tt>printf()</tt>的<tt>%g</tt>标志） 。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qtextstream.html#setRealNumberNotation" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setRealNumberNotation">setRealNumberNotation</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="Status-enum"></a>QTextStream.Status</h3>
+<p>这个枚举变量描述了文本流的当前状态。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextStream.Ok</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">文本流运行正常。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextStream.ReadPastEnd</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">文本流已经读取过的底层设备中的数据的结尾。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextStream.ReadCorruptData</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">文本流已经阅读损坏的数据。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextStream.WriteFailed</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">文本流不能写入到基础设备。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qtextstream.html#status" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#status">status</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QTextStream"></a>QTextStream.__init__ (<i>self</i>)</h3>
+<p>构造一个<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>。之前，你可以用它来读取或写入时，必须指定一个设备或一个字符串。</p>
+<p><b>See also</b> <a href="qtextstream.html#setDevice" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setDevice">setDevice</a>（）和<a href="qtextstream.html#setString" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setString">setString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QTextStream-2"></a>QTextStream.__init__ (<i>self</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>device</i>)</h3>
+<p>构造一个<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>上操作<i>device</i>。</p>
+
+
+<h3 class="fn">
+<a name="QTextStream-3"></a>QTextStream.__init__ (<i>self</i>, QString <i>string</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qiodevice-openmode.html">QIODevice.OpenMode</a> <i>mode</i> = QIODevice.ReadWrite)</h3>
+<p>构造一个<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>上操作<i>fileHandle</i>，使用<i>openMode</i>以限定开放模式。在内部，<a href="qfile.html" tppabs="http://pyqt4doc.appspot.com/qfile.html">QFile</a>创建处理文件指针。</p>
+<p>这个构造函数是直接与普通基于文件的输入和输出流时非常有用：标准输入，标准输出和标准错误。例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> str;
+ <span class="type"><a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a></span> in(stdin);
+ in <span class="operator">&gt;</span><span class="operator">&gt;</span> str;
+</pre>
+
+
+<h3 class="fn">
+<a name="QTextStream-4"></a>QTextStream.__init__ (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>array</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qiodevice-openmode.html">QIODevice.OpenMode</a> <i>mode</i> = QIODevice.ReadWrite)</h3>
+<p>构造一个<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>上操作<i>string</i>，使用<i>openMode</i>以限定开放模式。</p>
+
+
+<h3 class="fn">
+<a name="atEnd"></a>bool QTextStream.atEnd (<i>self</i>)</h3>
+<p>返回True ，如果没有更多的数据被从读<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>否则返回False 。这是类似的，但不一样的呼叫<a href="qiodevice.html#atEnd" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#atEnd">QIODevice.atEnd</a>（ ） ，如<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>也考虑到其内部的Unicode缓冲区。</p>
+
+
+<h3 class="fn">
+<a name="autoDetectUnicode"></a>bool QTextStream.autoDetectUnicode (<i>self</i>)</h3>
+<p>返回True如果启用了自动统一检测，否则返回False 。 Unicode的自动检测是默认启用的。</p>
+<p><b>See also</b> <a href="qtextstream.html#setAutoDetectUnicode" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setAutoDetectUnicode">setAutoDetectUnicode</a>（）和<a href="qtextstream.html#setCodec" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setCodec">setCodec</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="codec"></a><a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a> QTextStream.codec (<i>self</i>)</h3>
+<p>返回是当前分配给该流的编解码器。</p>
+<p><b>See also</b> <a href="qtextstream.html#setCodec" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setCodec">setCodec</a>（ ）<a href="qtextstream.html#setAutoDetectUnicode" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setAutoDetectUnicode">setAutoDetectUnicode</a>（）和<a href="qtextstream.html#locale" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#locale">locale</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="device"></a><a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> QTextStream.device (<i>self</i>)</h3>
+<p>返回与关联的当前设备<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>，或者0，如果没有设备已经被分配。</p>
+<p><b>See also</b> <a href="qtextstream.html#setDevice" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setDevice">setDevice</a>（）和<a href="qtextstream.html#string" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#string">string</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fieldAlignment"></a><a href="qtextstream.html#FieldAlignment-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#FieldAlignment-enum">FieldAlignment</a> QTextStream.fieldAlignment (<i>self</i>)</h3>
+<p>返回当前字段对齐。</p>
+<p><b>See also</b> <a href="qtextstream.html#setFieldAlignment" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setFieldAlignment">setFieldAlignment</a>（）和<a href="qtextstream.html#fieldWidth" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#fieldWidth">fieldWidth</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fieldWidth"></a>int QTextStream.fieldWidth (<i>self</i>)</h3>
+<p>返回当前字段宽度。</p>
+<p><b>See also</b> <a href="qtextstream.html#setFieldWidth" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setFieldWidth">setFieldWidth</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="flush"></a>QTextStream.flush (<i>self</i>)</h3>
+<p>刷新所有缓冲的数据等待被写入设备。</p>
+<p>If <a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>运行在一个字符串，这个函数不执行任何操作。</p>
+
+
+<h3 class="fn">
+<a name="generateByteOrderMark"></a>bool QTextStream.generateByteOrderMark (<i>self</i>)</h3>
+<p>返回True如果<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>设置使用UTF编码解码器时产生的UTF BOM（字节顺序标记），否则返回False 。 UTF BOM生成的默认设置为False 。</p>
+<p><b>See also</b> <a href="qtextstream.html#setGenerateByteOrderMark" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setGenerateByteOrderMark">setGenerateByteOrderMark</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="integerBase"></a>int QTextStream.integerBase (<i>self</i>)</h3>
+<p>返回整数的电流基础。 0表示当读出，或10 （十进制）生成数字时检测到的基极。</p>
+<p><b>See also</b> <a href="qtextstream.html#setIntegerBase" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setIntegerBase">setIntegerBase</a>（ ）<a href="qstring.html#number" tppabs="http://pyqt4doc.appspot.com/qstring.html#number">QString.number</a>（）和<a href="qtextstream.html#numberFlags" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#numberFlags">numberFlags</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="locale"></a><a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a> QTextStream.locale (<i>self</i>)</h3>
+<p>返回locale为这个流。默认的语言环境是C。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qtextstream.html#setLocale" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setLocale">setLocale</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="numberFlags"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtextstream-numberflags.html">NumberFlags</a> QTextStream.numberFlags (<i>self</i>)</h3>
+<p>返回当前数字标志。</p>
+<p><b>See also</b> <a href="qtextstream.html#setNumberFlags" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setNumberFlags">setNumberFlags</a>（ ）<a href="qtextstream.html#integerBase" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#integerBase">integerBase</a>（）和<a href="qtextstream.html#realNumberNotation" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#realNumberNotation">realNumberNotation</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="padChar"></a>QChar QTextStream.padChar (<i>self</i>)</h3>
+<p>返回当前的填充字符。</p>
+<p><b>See also</b> <a href="qtextstream.html#setPadChar" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setPadChar">setPadChar</a>（）和<a href="qtextstream.html#setFieldWidth" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setFieldWidth">setFieldWidth</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="pos"></a>int QTextStream.pos (<i>self</i>)</h3>
+<p>返回对应于流的当前位置，设备位置，或-1，如果出现错误（例如，如果没有设备或字符串，或者如果有一个设备错误） 。</p>
+<p>因为<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>缓冲，该功能可能会寻求设备重建一个有效的设备位置。此操作可以是昂贵的，所以你可能要避免调用在紧密循环此功能。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+<p><b>See also</b> <a href="qtextstream.html#seek" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#seek">seek</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="read"></a>QString QTextStream.read (<i>self</i>, int <i>maxlen</i>)</h3>
+<p>阅读次数最多<i>maxlen</i>从流中的字符，并返回读取的数据<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qtextstream.html#readAll" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#readAll">readAll</a>（ ）<a href="qtextstream.html#readLine" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#readLine">readLine</a>（）和<a href="qiodevice.html#read" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#read">QIODevice.read</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="readAll"></a>QString QTextStream.readAll (<i>self</i>)</h3>
+<p>读取流的全部内容，并将其作为一个<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>。对大型文件时，为了避免这个功能，因为它会消耗显着的内存量。</p>
+<p>调用<a href="qtextstream.html#readLine" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#readLine">readLine</a>（ ）是更好，如果你不知道有多少数据是可用的。</p>
+<p><b>See also</b> <a href="qtextstream.html#readLine" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#readLine">readLine</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="readLine"></a>QString QTextStream.readLine (<i>self</i>, int <i>maxLength</i> = 0)</h3>
+<p>读取一行从流文本，并将其作为一个<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>。允许的最大行长度被设置为<i>maxlen</i>。如果流包含线比这更长的时间，那么行会被拆分后，<i>maxlen</i>字符和部件退回。</p>
+<p>If <i>maxlen</i>为0时，线可以是任意长度的。为了一个共同的价值<i>maxlen</i>为75。</p>
+<p>返回行有行尾没有尾随字符（“ \ n”或“ \ r \ N”的） ，因此调用<a href="qstring.html#trimmed" tppabs="http://pyqt4doc.appspot.com/qstring.html#trimmed">QString.trimmed</a>（）是不必要的。</p>
+<p>如果该流已读入到文件的末尾，的readLine （）将返回一个空<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>。对于字符串，或者为支持它的设备，你可以明确地使用了流的末尾测试<a href="qtextstream.html#atEnd" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#atEnd">atEnd</a>（ ） 。</p>
+<p><b>See also</b> <a href="qtextstream.html#readAll" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#readAll">readAll</a>（）和<a href="qiodevice.html#readLine" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#readLine">QIODevice.readLine</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="realNumberNotation"></a><a href="qtextstream.html#RealNumberNotation-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#RealNumberNotation-enum">RealNumberNotation</a> QTextStream.realNumberNotation (<i>self</i>)</h3>
+<p>返回当前的实数表示法。</p>
+<p><b>See also</b> <a href="qtextstream.html#setRealNumberNotation" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setRealNumberNotation">setRealNumberNotation</a>（ ）<a href="qtextstream.html#realNumberPrecision" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#realNumberPrecision">realNumberPrecision</a>（ ）<a href="qtextstream.html#numberFlags" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#numberFlags">numberFlags</a>（）和<a href="qtextstream.html#integerBase" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#integerBase">integerBase</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="realNumberPrecision"></a>int QTextStream.realNumberPrecision (<i>self</i>)</h3>
+<p>返回当前的实数精度或小数位数的数字<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>生成实数时会写。</p>
+<p><b>See also</b> <a href="qtextstream.html#setRealNumberPrecision" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setRealNumberPrecision">setRealNumberPrecision</a>（ ）<a href="qtextstream.html#setRealNumberNotation" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setRealNumberNotation">setRealNumberNotation</a>（ ）<a href="qtextstream.html#realNumberNotation" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#realNumberNotation">realNumberNotation</a>（ ）<a href="qtextstream.html#numberFlags" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#numberFlags">numberFlags</a>（）和<a href="qtextstream.html#integerBase" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#integerBase">integerBase</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="reset"></a>QTextStream.reset (<i>self</i>)</h3>
+<p>复位<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>的格式选项，把它恢复到原来的构造状态。该装置，字符串和任何缓冲的数据保持不变。</p>
+
+
+<h3 class="fn">
+<a name="resetStatus"></a>QTextStream.resetStatus (<i>self</i>)</h3>
+<p>重设文本流的状态。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qtextstream.html#Status-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#Status-enum">QTextStream.Status</a>，<a href="qtextstream.html#status" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#status">status</a>（）和<a href="qtextstream.html#setStatus" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setStatus">setStatus</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="seek"></a>bool QTextStream.seek (<i>self</i>, int <i>pos</i>)</h3>
+<p>搜索到的位置<i>pos</i>在设备中。成功时返回TRUE ，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="setAutoDetectUnicode"></a>QTextStream.setAutoDetectUnicode (<i>self</i>, bool <i>enabled</i>)</h3>
+<p>If <i>enabled</i>是真的，<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>将尝试检测Unicode编码通过窥视到的流数据，看看是否能找到的UTF -16或UTF- 32 BOM（字节顺序标记） 。如果发现该标志，<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>将与UTF编解码器替换当前的编解码器。</p>
+<p>这个功能可以一起使用<a href="qtextstream.html#setCodec" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setCodec">setCodec</a>（ ） 。这是常见的编解码器设置为UTF- 8 ，然后启用UTF-16的检测。</p>
+<p><b>See also</b> <a href="qtextstream.html#autoDetectUnicode" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#autoDetectUnicode">autoDetectUnicode</a>（）和<a href="qtextstream.html#setCodec" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setCodec">setCodec</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCodec"></a>QTextStream.setCodec (<i>self</i>, <a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a> <i>codec</i>)</h3>
+<p>设置编解码器，该流<i>codec</i>。编解码器，用于解码所读取的分配装置，和用于编码被写入任何数据的任何数据。默认情况下，<a href="qtextcodec.html#codecForLocale" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForLocale">QTextCodec.codecForLocale</a>（）被使用，并且被使能自动unicode的检测。</p>
+<p>If <a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>运行在一个字符串，这个函数不执行任何操作。</p>
+<p><b>Warning:</b>如果你调用这个函数而文本流从打开的顺序socket读取，内部缓冲区可能仍然包含使用旧文本的编解码器解码。</p>
+<p><b>See also</b> <a href="qtextstream.html#codec" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#codec">codec</a>（ ）<a href="qtextstream.html#setAutoDetectUnicode" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setAutoDetectUnicode">setAutoDetectUnicode</a>（）和<a href="qtextstream.html#setLocale" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setLocale">setLocale</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCodec-2"></a>QTextStream.setCodec (<i>self</i>, str <i>codecName</i>)</h3>
+<p>设置编解码器，该数据流的<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>对于由指定的编码<i>codecName</i>。为共同的价值观<tt>codecName</tt>包括“ ISO 8859 ”，“ UTF-8” ，和“UTF- 16” 。如果编码不被识别，没有任何反应。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a></span> out(<span class="operator">&amp;</span>file);
+ out<span class="operator">.</span><a href="qtextstream.html#setCodec" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setCodec">setCodec</a>(<span class="string">"UTF-8"</span>);
+</pre>
+<p><b>See also</b> <a href="qtextcodec.html#codecForName" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForName">QTextCodec.codecForName</a>（）和<a href="qtextstream.html#setLocale" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setLocale">setLocale</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setDevice"></a>QTextStream.setDevice (<i>self</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>device</i>)</h3>
+<p>设置当前设备<i>device</i>。如果设备已经被分配，<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>将调用<a href="index.htm#flush" tppabs="http://pyqt4doc.appspot.com/qtcore.html#flush">flush</a>（ ）旧设备被替换之前。</p>
+<p><b>Note:</b>此功能将区域设置为默认语言环境（' C'）和编解码器为默认的编解码器，<a href="qtextcodec.html#codecForLocale" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForLocale">QTextCodec.codecForLocale</a>（ ） 。</p>
+<p><b>See also</b> <a href="qtextstream.html#device" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#device">device</a>（）和<a href="qtextstream.html#setString" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setString">setString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFieldAlignment"></a>QTextStream.setFieldAlignment (<i>self</i>, <a href="qtextstream.html#FieldAlignment-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#FieldAlignment-enum">FieldAlignment</a> <i>alignment</i>)</h3>
+<p>设置字段对齐到<i>mode</i>。当一起使用<a href="qtextstream.html#setFieldWidth" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setFieldWidth">setFieldWidth</a>（ ） ，这个函数允许您生成格式化输出文本左对齐，对齐到右边或中间。</p>
+<p><b>See also</b> <a href="qtextstream.html#fieldAlignment" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#fieldAlignment">fieldAlignment</a>（）和<a href="qtextstream.html#setFieldWidth" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setFieldWidth">setFieldWidth</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setFieldWidth"></a>QTextStream.setFieldWidth (<i>self</i>, int <i>width</i>)</h3>
+<p>设置当前字段宽度为<i>width</i>。如果<i>width</i>为0 （默认值） ，字段宽度等于生成的文本的长度。</p>
+<p><b>Note:</b>字段宽度适用于这个函数被调用（例如，它也垫ENDL ）后追加到该流的每一个元素。此行为是由相似的类在STL ，那里的字段宽度仅适用于下一个元素不同。</p>
+<p><b>See also</b> <a href="qtextstream.html#fieldWidth" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#fieldWidth">fieldWidth</a>（）和<a href="qtextstream.html#setPadChar" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setPadChar">setPadChar</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setGenerateByteOrderMark"></a>QTextStream.setGenerateByteOrderMark (<i>self</i>, bool <i>generate</i>)</h3>
+<p>If <i>generate</i>是真实，一个UTF编码解码器时，<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>将插入BOM（字节顺序标记）之前的任何数据被写入到设备。如果<i>generate</i>是假的，没有BOM将被插入。任何数据写入之前，这个函数必须被调用。否则，它什么都不做。</p>
+<p><b>See also</b> <a href="qtextstream.html#generateByteOrderMark" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#generateByteOrderMark">generateByteOrderMark</a>（）和<a href="index.htm#bom" tppabs="http://pyqt4doc.appspot.com/qtcore.html#bom">bom</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setIntegerBase"></a>QTextStream.setIntegerBase (<i>self</i>, int <i>base</i>)</h3>
+<p>整数的基本设置为<i>base</i>，既用于读和用于产生数字。<i>base</i>可以是2 （二进制）， 8 （八进制） ， 10（十进制）或16（十六进制）。如果<i>base</i>为0时，<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>将试图通过检查流上的数据来检测的基础。当生成的数字，<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>假设基准是10 ，除非该基地已显式设置。</p>
+<p><b>See also</b> <a href="qtextstream.html#integerBase" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#integerBase">integerBase</a>（ ）<a href="qstring.html#number" tppabs="http://pyqt4doc.appspot.com/qstring.html#number">QString.number</a>（）和<a href="qtextstream.html#setNumberFlags" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setNumberFlags">setNumberFlags</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setLocale"></a>QTextStream.setLocale (<i>self</i>, <a href="qlocale.html" tppabs="http://pyqt4doc.appspot.com/qlocale.html">QLocale</a> <i>locale</i>)</h3>
+<p>设置语言环境为这个流<i>locale</i>。指定的语言环境是用于数字和它们的字符串表示形式之间的转换。</p>
+<p>默认区域设置为C ，它是一种特殊情况 - 在成千上万的组分隔符不能用于向后兼容的原因。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qtextstream.html#locale" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#locale">locale</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setNumberFlags"></a>QTextStream.setNumberFlags (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtextstream-numberflags.html">NumberFlags</a> <i>flags</i>)</h3>
+<p>设置当前数字标志<i>flags</i>。<i>flags</i>是从一组标志<a href="qtextstream.html#NumberFlag-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#NumberFlag-enum">NumberFlag</a>枚举，并介绍了用于格式化生成的代码（例如，是否总是写一些基地或符号）选项。</p>
+<p><b>See also</b> <a href="qtextstream.html#numberFlags" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#numberFlags">numberFlags</a>（ ）<a href="qtextstream.html#setIntegerBase" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setIntegerBase">setIntegerBase</a>（）和<a href="qtextstream.html#setRealNumberNotation" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setRealNumberNotation">setRealNumberNotation</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPadChar"></a>QTextStream.setPadChar (<i>self</i>, QChar <i>ch</i>)</h3>
+<p>设置填充字符以<i>ch</i>。默认值是ASCII空格字符（' '） ，或<a href="qchar.html" tppabs="http://pyqt4doc.appspot.com/qchar.html">QChar</a>（ 0X20 ） 。此符号用于生成文本时填写的空间领域。</p>
+<p>例如：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> s;
+ <span class="type"><a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a></span> out(<span class="operator">&amp;</span>s);
+ out<span class="operator">.</span><a href="qtextstream.html#setFieldWidth" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setFieldWidth">setFieldWidth</a>(<span class="number">10</span>);
+ out<span class="operator">.</span><a href="qtextstream.html#setFieldAlignment" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setFieldAlignment">setFieldAlignment</a>(<span class="type"><a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a></span><span class="operator">.</span>AlignCenter);
+ out<span class="operator">.</span>setPadChar(<span class="char">'-'</span>);
+ out <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"Qt"</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"rocks!"</span>;
+</pre>
+<p>字符串<tt>s</tt>包含：</p>
+<pre class="cpp">
+ <span class="operator">-</span><span class="operator">-</span><span class="operator">-</span><span class="operator">-</span><span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">-</span><span class="operator">-</span><span class="operator">-</span><span class="operator">-</span><span class="operator">-</span><span class="operator">-</span>rocks<span class="operator">!</span><span class="operator">-</span><span class="operator">-</span>
+</pre>
+<p><b>See also</b> <a href="qtextstream.html#padChar" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#padChar">padChar</a>（）和<a href="qtextstream.html#setFieldWidth" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setFieldWidth">setFieldWidth</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setRealNumberNotation"></a>QTextStream.setRealNumberNotation (<i>self</i>, <a href="qtextstream.html#RealNumberNotation-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#RealNumberNotation-enum">RealNumberNotation</a> <i>notation</i>)</h3>
+<p>设置实数表示法<i>notation</i>（<a href="qtextstream.html#RealNumberNotation-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#RealNumberNotation-enum">SmartNotation</a>，<a href="qtextstream.html#RealNumberNotation-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#RealNumberNotation-enum">FixedNotation</a>，<a href="qtextstream.html#RealNumberNotation-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#RealNumberNotation-enum">ScientificNotation</a>） 。当读取和生成数字，<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>使用这个值来检测实数的格式。</p>
+<p><b>See also</b> <a href="qtextstream.html#realNumberNotation" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#realNumberNotation">realNumberNotation</a>（ ）<a href="qtextstream.html#setRealNumberPrecision" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setRealNumberPrecision">setRealNumberPrecision</a>（ ）<a href="qtextstream.html#setNumberFlags" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setNumberFlags">setNumberFlags</a>（）和<a href="qtextstream.html#setIntegerBase" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setIntegerBase">setIntegerBase</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setRealNumberPrecision"></a>QTextStream.setRealNumberPrecision (<i>self</i>, int <i>precision</i>)</h3>
+<p>设置实数的精度来<i>precision</i>。这个值描述的部分位数<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>生成实数时，应该写。</p>
+<p>精度不能是负值。默认值是6 。</p>
+<p><b>See also</b> <a href="qtextstream.html#realNumberPrecision" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#realNumberPrecision">realNumberPrecision</a>（）和<a href="qtextstream.html#setRealNumberNotation" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setRealNumberNotation">setRealNumberNotation</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setStatus"></a>QTextStream.setStatus (<i>self</i>, <a href="qtextstream.html#Status-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#Status-enum">Status</a> <i>status</i>)</h3>
+<p>设置文本流的状态的<i>status</i>给出。</p>
+<p>后续调用setStatus （）被忽略，直到<a href="qtextstream.html#resetStatus" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#resetStatus">resetStatus</a>（）被调用。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qtextstream.html#Status-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#Status-enum">Status</a>，<a href="qtextstream.html#status" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#status">status</a>（）和<a href="qtextstream.html#resetStatus" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#resetStatus">resetStatus</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setString"></a>QTextStream.setString (<i>self</i>, QString <i>string</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qiodevice-openmode.html">QIODevice.OpenMode</a> <i>mode</i> = QIODevice.ReadWrite)</h3>
+<p>设置当前字符串<i>string</i>，使用给定的<i>openMode</i>。如果设备已经被分配，<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>将调用<a href="index.htm#flush" tppabs="http://pyqt4doc.appspot.com/qtcore.html#flush">flush</a>（ ）替换它。</p>
+<p><b>See also</b> <a href="qtextstream.html#string" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#string">string</a>（）和<a href="qtextstream.html#setDevice" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setDevice">setDevice</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="skipWhiteSpace"></a>QTextStream.skipWhiteSpace (<i>self</i>)</h3>
+<p>读取并丢弃空白从流，直到一个非空格字符被检测到，或直到<a href="qtextstream.html#atEnd" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#atEnd">atEnd</a>（ ）返回True 。按字符读取字符流时，此功能非常有用。</p>
+<p>空白字符都是字符的<a href="qchar.html#isSpace" tppabs="http://pyqt4doc.appspot.com/qchar.html#isSpace">QChar.isSpace</a>（ ）返回True 。</p>
+<p><b>See also</b> <a href="qtextstream.html#operator-gt-gt" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#operator-gt-gt">operator&gt;&gt;</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="status"></a><a href="qtextstream.html#Status-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#Status-enum">Status</a> QTextStream.status (<i>self</i>)</h3>
+<p>返回文本流的状态。</p>
+<p><b>See also</b> <a href="qtextstream.html#Status-enum" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#Status-enum">QTextStream.Status</a>，<a href="qtextstream.html#setStatus" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setStatus">setStatus</a>（）和<a href="qtextstream.html#resetStatus" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#resetStatus">resetStatus</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="string"></a>QString QTextStream.string (<i>self</i>)</h3>
+<p>返回分配给当前字符串<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>，或者0，如果没有字符串被分配。</p>
+<p><b>See also</b> <a href="qtextstream.html#setString" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setString">setString</a>（）和<a href="qtextstream.html#device" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#device">device</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="__lshift__"></a><a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a> __lshift__ (<i>self</i>, <a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a>)</h3>
+<p>如果QtXml模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__-21"></a><a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a> __lshift__ (<i>self</i>, <a href="qsplitter.html" tppabs="http://pyqt4doc.appspot.com/qsplitter.html">QSplitter</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__rshift__-21"></a><a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a> __rshift__ (<i>self</i>, <a href="qsplitter.html" tppabs="http://pyqt4doc.appspot.com/qsplitter.html">QSplitter</a>)</h3>
+<p>如果QtGui模块导入此方法仅适用。</p>
+<h3 class="fn">
+<a name="__lshift__"></a><a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a> QTextStream.__lshift__ (<i>self</i>, float <i>f</i>)</h3>
+<h3 class="fn">
+<a name="__lshift__-2"></a><a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a> QTextStream.__lshift__ (<i>self</i>, bool <i>b</i>)</h3>
+<h3 class="fn">
+<a name="__lshift__-3"></a><a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a> QTextStream.__lshift__ (<i>self</i>, int <i>i</i>)</h3>
+<h3 class="fn">
+<a name="__lshift__-4"></a><a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a> QTextStream.__lshift__ (<i>self</i>, int <i>i</i>)</h3>
+<h3 class="fn">
+<a name="__lshift__-5"></a><a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a> QTextStream.__lshift__ (<i>self</i>, int <i>i</i>)</h3>
+<h3 class="fn">
+<a name="__lshift__-6"></a><a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a> QTextStream.__lshift__ (<i>self</i>, QString <i>s</i>)</h3>
+<h3 class="fn">
+<a name="__lshift__-7"></a><a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a> QTextStream.__lshift__ (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>array</i>)</h3>
+<h3 class="fn">
+<a name="__lshift__-8"></a><a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a> QTextStream.__lshift__ (<i>self</i>, QTextStreamManipulator <i>m</i>)</h3>
+<h3 class="fn">
+<a name="__rshift__"></a><a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a> QTextStream.__rshift__ (<i>self</i>, QChar <i>ch</i>)</h3>
+<h3 class="fn">
+<a name="__rshift__-2"></a><a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a> QTextStream.__rshift__ (<i>self</i>, QString <i>s</i>)</h3>
+<h3 class="fn">
+<a name="__rshift__-3"></a><a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a> QTextStream.__rshift__ (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>array</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

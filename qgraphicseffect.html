@@ -1,0 +1,329 @@
+﻿<html>
+<head>
+<title>QGraphicsEffect Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QGraphicsEffect Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QGraphicsEffect类是所有图形效果的基类。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<p>通过继承<a href="qgraphicsblureffect.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsblureffect.html">QGraphicsBlurEffect</a>，<a href="qgraphicscolorizeeffect.html" tppabs="http://pyqt4doc.appspot.com/qgraphicscolorizeeffect.html">QGraphicsColorizeEffect</a>，<a href="qgraphicsdropshadoweffect.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsdropshadoweffect.html">QGraphicsDropShadowEffect</a>和<a href="qgraphicsopacityeffect.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsopacityeffect.html">QGraphicsOpacityEffect</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qgraphicseffect.html#ChangeFlag-enum" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#ChangeFlag-enum">ChangeFlag</a></b> { SourceAttached, SourceDetached, SourceBoundingRectChanged, SourceInvalidated }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect-changeflags.html">ChangeFlags</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qgraphicseffect.html#PixmapPadMode-enum" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#PixmapPadMode-enum">PixmapPadMode</a></b> { NoPad, PadToTransparentBorder, PadToEffectiveBoundingRect }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicseffect.html#QGraphicsEffect" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#QGraphicsEffect">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>QRectF <b><a href="qgraphicseffect.html#boundingRect" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#boundingRect">boundingRect</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QRectF <b><a href="qgraphicseffect.html#boundingRectFor" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#boundingRectFor">boundingRectFor</a></b> (<i>self</i>, QRectF <i>sourceRect</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicseffect.html#draw" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#draw">draw</a></b> (<i>self</i>, QPainter <i>painter</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicseffect.html#drawSource" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#drawSource">drawSource</a></b> (<i>self</i>, QPainter <i>painter</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qgraphicseffect.html#isEnabled" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#isEnabled">isEnabled</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicseffect.html#setEnabled" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#setEnabled">setEnabled</a></b> (<i>self</i>, bool <i>enable</i>)</li>
+<li>
+<div class="fn"></div>QRectF <b><a href="qgraphicseffect.html#sourceBoundingRect" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#sourceBoundingRect">sourceBoundingRect</a></b> (<i>self</i>, Qt.CoordinateSystem <i>system</i> = Qt.LogicalCoordinates)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicseffect.html#sourceChanged" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#sourceChanged">sourceChanged</a></b> (<i>self</i>, ChangeFlags <i>flags</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qgraphicseffect.html#sourceIsPixmap" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#sourceIsPixmap">sourceIsPixmap</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>(QPixmap, QPoint <i>offset</i>) <b><a href="qgraphicseffect.html#sourcePixmap" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#sourcePixmap">sourcePixmap</a></b> (<i>self</i>, Qt.CoordinateSystem <i>system</i> = Qt.LogicalCoordinates, PixmapPadMode <i>mode</i> = QGraphicsEffect.PadToEffectiveBoundingRect)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicseffect.html#update" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#update">update</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qgraphicseffect.html#updateBoundingRect" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#updateBoundingRect">updateBoundingRect</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul><li>
+<div class="fn"></div>void <b><a href="qgraphicseffect.html#enabledChanged" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#enabledChanged">enabledChanged</a></b> (bool)</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QGraphicsEffect类是所有图形效果的基类。</p>
+<p>效果改变元素挂接到渲染管线和源（例如，一个操作之间的外观<a href="qgraphicspixmapitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicspixmapitem.html">QGraphicsPixmapItem</a>）和目标设备（例如，<a href="qgraphicsview.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsview.html">QGraphicsView</a>的视口） 。效果可以通过调用setEnabled （​​假）被禁用。如果效果被禁用，源直接呈现。</p>
+<p>要添加一个视觉效果的<a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a>例如，您可以使用一个标准的影响，或交替，通过创建QGraphicsEffect的子类创建自己的效果。关于该项目的使用效果可以被安装<a href="qgraphicsitem.html#setGraphicsEffect" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#setGraphicsEffect">QGraphicsItem.setGraphicsEffect</a>（ ） 。</p>
+<p>Qt提供了以下标准的影响：</p>
+<ul>
+<li>
+<a href="qgraphicsblureffect.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsblureffect.html">QGraphicsBlurEffect</a> -
+blurs the item by a given radius</li>
+<li>
+<a href="qgraphicsdropshadoweffect.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsdropshadoweffect.html">QGraphicsDropShadowEffect</a> -
+renders a dropshadow behind the item</li>
+<li>
+<a href="qgraphicscolorizeeffect.html" tppabs="http://pyqt4doc.appspot.com/qgraphicscolorizeeffect.html">QGraphicsColorizeEffect</a> -
+renders the item in shades of any given color</li>
+<li>
+<a href="qgraphicsopacityeffect.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsopacityeffect.html">QGraphicsOpacityEffect</a> - renders
+the item with an opacity</li>
+</ul>
+<table class="generic">
+<tr class="odd" valign="top">
+<td colspan="2">
+<p class="centerAlign"><img alt="" src="images/graphicseffect-plain.png"></p>
+</td>
+</tr>
+<tr class="even" valign="top">
+<td>
+<p class="centerAlign"><img alt="" src="images/graphicseffect-blur.png"></p>
+</td>
+<td>
+<p class="centerAlign"><img alt="" src="images/graphicseffect-colorize.png"></p>
+</td>
+</tr>
+<tr class="odd" valign="top">
+<td>
+<p class="centerAlign"><img alt="" src="images/graphicseffect-opacity.png"></p>
+</td>
+<td>
+<p class="centerAlign"><img alt="" src="images/graphicseffect-drop-shadow.png"></p>
+</td>
+</tr>
+</table>
+<p class="centerAlign"><img alt="" src="images/graphicseffect-widget.png"></p>
+<p>有关如何使用每种效果的更多信息，请参见具体效果的文档。</p>
+<p>要创建自己的自定义效果，创造QGraphicsEffect （或任何其他现有效果）的一个子类，并重新实现虚函数<a href="qgraphicseffect.html#draw" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#draw">draw</a>（ ） 。这个函数被调用时的效果需要重绘。该<a href="qgraphicseffect.html#draw" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#draw">draw</a>（ ）函数将画家与画作为参数。欲了解更多信息，请参阅documenation的<a href="qgraphicseffect.html#draw" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#draw">draw</a>（ ） 。在<a href="qgraphicseffect.html#draw" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#draw">draw</a>（ ）函数可以调用<a href="qgraphicseffect.html#sourcePixmap" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#sourcePixmap">sourcePixmap</a>（ ）来获得图形效果的源，然后可以处理的像素图。</p>
+<p>如果你的效果变化，使用<a href="qgraphicseffect.html#update" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#update">update</a>（）来请求重绘。如果您的自定义效果改变源的边界矩形，例如，径向发光效果可能需要申请额外的保证金，您可以重新实现虚<a href="qgraphicseffect.html#boundingRectFor" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#boundingRectFor">boundingRectFor</a>（ ）函数，并调用<a href="qgraphicseffect.html#updateBoundingRect" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#updateBoundingRect">updateBoundingRect</a>（ ）通知框架每当这个矩形的变化。虚拟<a href="qgraphicseffect.html#sourceChanged" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#sourceChanged">sourceChanged</a>（ ）函数被调用以通知的影响，源已经以某种方式改变 - 例如，如果源是一个<a href="qgraphicsrectitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsrectitem.html">QGraphicsRectItem</a>其矩形的参数发生了变化。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="ChangeFlag-enum"></a>QGraphicsEffect.ChangeFlag</h3>
+<p>这个枚举变量描述了在QGraphicsEffectSource发生了变化。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGraphicsEffect.SourceAttached</tt></td>
+<td class="topAlign"><tt>0x1</tt></td>
+<td class="topAlign">效果是安装在一个源。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGraphicsEffect.SourceDetached</tt></td>
+<td class="topAlign"><tt>0x2</tt></td>
+<td class="topAlign">效果被卸载的来源。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QGraphicsEffect.SourceBoundingRectChanged</tt>
+</td>
+<td class="topAlign"><tt>0x4</tt></td>
+<td class="topAlign">源的边界矩形已经改变。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QGraphicsEffect.SourceInvalidated</tt>
+</td>
+<td class="topAlign"><tt>0x8</tt></td>
+<td class="topAlign">源的视觉外观已经改变。</td>
+</tr>
+</table>
+<p>该ChangeFlags类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cChangeFlag\u003e 。它存储ChangeFlag值的或组合。</p>
+
+
+<h3 class="fn">
+<a name="PixmapPadMode-enum"></a>QGraphicsEffect.PixmapPadMode</h3>
+<p>这个枚举变量描述了如何从sourcePixmap返回的像素图会被填充。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QGraphicsEffect.NoPad</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">像素图不应该接受任何额外的填充。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QGraphicsEffect.PadToTransparentBorder</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">像素图会被填充，以确保它有一个完全透明的边框。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QGraphicsEffect.PadToEffectiveBoundingRect</tt>
+</td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">像素图会被填充，以配合效果的有效边界矩形。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QGraphicsEffect"></a>QGraphicsEffect.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个新的<a href="qgraphicseffect.html" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html">QGraphicsEffect</a>经指定的实例<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="boundingRect"></a><a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> QGraphicsEffect.boundingRect (<i>self</i>)</h3>
+<p>返回的有效边界矩形这种效果，即在设备坐标源的边界矩形，由效果本身应用的任何利润调整。</p>
+<p><b>See also</b> <a href="qgraphicseffect.html#boundingRectFor" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#boundingRectFor">boundingRectFor</a>（）和<a href="qgraphicseffect.html#updateBoundingRect" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#updateBoundingRect">updateBoundingRect</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="boundingRectFor"></a><a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> QGraphicsEffect.boundingRectFor (<i>self</i>, <a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> <i>sourceRect</i>)</h3>
+<p>返回有效边界矩形这样的效果，给出了提供<i>rect</i>在设备的坐标。当你编写自己的自定义效果，你必须调用<a href="qgraphicseffect.html#updateBoundingRect" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#updateBoundingRect">updateBoundingRect</a>（ ）每当任何参数发生改变，可能会导致这个这个函数返回一个不同的值。</p>
+<p><b>See also</b> <a href="qgraphicseffect.html#sourceBoundingRect" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#sourceBoundingRect">sourceBoundingRect</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="draw"></a>QGraphicsEffect.draw (<i>self</i>, <a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a> <i>painter</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>这个纯虚函数绘制的效果，被称为每当源需要被绘制。</p>
+<p>在重新实现这个函数<a href="qgraphicseffect.html" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html">QGraphicsEffect</a>子类提供的效果的绘图实现，用<i>painter</i>。</p>
+<p>例如：</p>
+<pre class="cpp">
+ MyGraphicsEffect<span class="operator">.</span>draw(<span class="type"><a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a></span> <span class="operator">*</span>painter)
+ {
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+     <span class="type"><a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a></span> offset;
+     <span class="keyword">if</span> (sourceIsPixmap()) {
+         <span class="comment">// No point in drawing in device coordinates (pixmap will be scaled anyways).</span>
+         <span class="keyword">const</span> <span class="type"><a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a></span> pixmap <span class="operator">=</span> sourcePixmap(<span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>LogicalCoordinates<span class="operator">,</span> <span class="operator">&amp;</span>offset);
+         <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+         painter<span class="operator">-</span><span class="operator">&gt;</span>drawPixmap(offset<span class="operator">,</span> pixmap);
+     } <span class="keyword">else</span> {
+         <span class="comment">// Draw pixmap in device coordinates to avoid pixmap scaling;</span>
+         <span class="keyword">const</span> <span class="type"><a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a></span> pixmap <span class="operator">=</span> sourcePixmap(<span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>DeviceCoordinates<span class="operator">,</span> <span class="operator">&amp;</span>offset);
+         painter<span class="operator">-</span><span class="operator">&gt;</span>setWorldTransform(<span class="type"><a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a></span>());
+         <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+         painter<span class="operator">-</span><span class="operator">&gt;</span>drawPixmap(offset<span class="operator">,</span> pixmap);
+     }
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ }
+</pre>
+<p>这个函数不应该显式调用的用户，因为它的意思是只重新实现的目的。</p>
+
+
+<h3 class="fn">
+<a name="drawSource"></a>QGraphicsEffect.drawSource (<i>self</i>, <a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a> <i>painter</i>)</h3>
+<p>绘制源直接使用给定的<i>painter</i>。</p>
+<p>此功能只能由被称为<a href="qgraphicseffect.html#draw" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#draw">QGraphicsEffect.draw</a>（ ） 。</p>
+<p>例如：</p>
+<pre class="cpp">
+ MyGraphicsOpacityEffect<span class="operator">.</span><a href="qgraphicseffect.html#draw" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#draw">draw</a>(<span class="type"><a href="qpainter.html" tppabs="http://pyqt4doc.appspot.com/qpainter.html">QPainter</a></span> <span class="operator">*</span>painter)
+ {
+     <span class="comment">// Fully opaque; draw directly without going through a pixmap.</span>
+     <span class="keyword">if</span> (<a href="qvector2d.html#qFuzzyCompare" tppabs="http://pyqt4doc.appspot.com/qvector2d.html#qFuzzyCompare">qFuzzyCompare</a>(m_opacity<span class="operator">,</span> <span class="number">1</span>)) {
+         drawSource(painter);
+         <span class="keyword">return</span>;
+     }
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ }
+</pre>
+<p><b>See also</b> <a href="qgraphicseffect.html#draw" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#draw">QGraphicsEffect.draw</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isEnabled"></a>bool QGraphicsEffect.isEnabled (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="setEnabled"></a>QGraphicsEffect.setEnabled (<i>self</i>, bool <i>enable</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setEnabled(bool)</tt>。</p>
+<h3 class="fn">
+<a name="sourceBoundingRect"></a><a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> QGraphicsEffect.sourceBoundingRect (<i>self</i>, <a href="qt.html#CoordinateSystem-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CoordinateSystem-enum">Qt.CoordinateSystem</a> <i>system</i> = Qt.LogicalCoordinates)</h3>
+<p>返回源映射到给定的边界矩形<i>system</i>。</p>
+<p>调用此函数<a href="qt.html#CoordinateSystem-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CoordinateSystem-enum">Qt.DeviceCoordinates</a>外<a href="qgraphicseffect.html#draw" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#draw">QGraphicsEffect.draw</a>（ ）将给不确定的结果，因为没有可用的设备上下文。</p>
+<p><b>See also</b> <a href="qgraphicseffect.html#draw" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#draw">draw</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sourceChanged"></a>QGraphicsEffect.sourceChanged (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect-changeflags.html">ChangeFlags</a> <i>flags</i>)</h3>
+<p>这个虚函数被调用<a href="qgraphicseffect.html" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html">QGraphicsEffect</a>以通知源发生了变化的影响。如果效果适用于任何高速缓存，那么该缓存必须以反映源的全新亮相清除。</p>
+<p>该<i>flags</i>描述发生了什么变化。</p>
+
+
+<h3 class="fn">
+<a name="sourceIsPixmap"></a>bool QGraphicsEffect.sourceIsPixmap (<i>self</i>)</h3>
+<p>返回True如果源有效地为一个像素映射，例如，一个<a href="qgraphicspixmapitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicspixmapitem.html">QGraphicsPixmapItem</a>。</p>
+<p>此功能可用于优化目的。举例来说，有没有点绘制在设备中的源坐标，以避免像素图的缩放，如果这个函数返回True - 源像素图将反正缩放。</p>
+
+
+<h3 class="fn">
+<a name="sourcePixmap"></a>(<a href="qpixmap.html" tppabs="http://pyqt4doc.appspot.com/qpixmap.html">QPixmap</a>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>offset</i>) QGraphicsEffect.sourcePixmap (<i>self</i>, <a href="qt.html#CoordinateSystem-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CoordinateSystem-enum">Qt.CoordinateSystem</a> <i>system</i> = Qt.LogicalCoordinates, <a href="qgraphicseffect.html#PixmapPadMode-enum" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#PixmapPadMode-enum">PixmapPadMode</a> <i>mode</i> = QGraphicsEffect.PadToEffectiveBoundingRect)</h3>
+<p>返回一个像素图，画到它的来源。</p>
+<p>该<i>system</i>指定了坐标系也可以用于源。可选的<i>offset</i>返回参数的偏移，其中像素图应使用当前的画家来画。有关如何在像素图是填充用的控制<i>mode</i>参数。</p>
+<p>返回的像素图剪切到当前画家的设备时，矩形<i>system</i> is <a href="qt.html#CoordinateSystem-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CoordinateSystem-enum">Qt.DeviceCoordinates</a>。</p>
+<p>调用此函数<a href="qt.html#CoordinateSystem-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#CoordinateSystem-enum">Qt.DeviceCoordinates</a>外<a href="qgraphicseffect.html#draw" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#draw">QGraphicsEffect.draw</a>（ ）将给不确定的结果，因为没有可用的设备上下文。</p>
+<p><b>See also</b> <a href="qgraphicseffect.html#draw" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#draw">draw</a>（）和<a href="qgraphicseffect.html#boundingRect" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#boundingRect">boundingRect</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="update"></a>QGraphicsEffect.update (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void update()</tt>。</p>
+<p>附表的效果重绘。调用此函数时的效果需要重新绘制。该功能不会触发源的重绘。</p>
+<p><b>See also</b> <a href="qgraphicseffect.html#updateBoundingRect" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#updateBoundingRect">updateBoundingRect</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="updateBoundingRect"></a>QGraphicsEffect.updateBoundingRect (<i>self</i>)</h3>
+<p>该函数通知影响的框架时，效果的边界矩形已经改变。作为一个自定义效果的作者，你必须调用这个函数，每当您更改任何参数，将导致虚拟<a href="qgraphicseffect.html#boundingRectFor" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#boundingRectFor">boundingRectFor</a>（ ）函数返回一个不同的值。</p>
+<p>这个函数会调用<a href="qgraphicseffect.html#update" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#update">update</a>（ ）如果这是必要的。</p>
+<p><b>See also</b> <a href="qgraphicseffect.html#boundingRectFor" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#boundingRectFor">boundingRectFor</a>（ ）<a href="qgraphicseffect.html#boundingRect" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#boundingRect">boundingRect</a>（）和<a href="qgraphicseffect.html#sourceBoundingRect" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#sourceBoundingRect">sourceBoundingRect</a>（ ） 。</p>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="enabledChanged"></a>void enabledChanged (bool)</h3>
+<p>这是该信号的默认超载。</p>
+<p>每当效果是启用或禁用该信号被发射。该<i>enabled</i>参数保存效果的新启用的状态。</p>
+<p><b>See also</b> <a href="qgraphicseffect.html#enabled-prop" tppabs="http://pyqt4doc.appspot.com/qgraphicseffect.html#enabled-prop">isEnabled</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

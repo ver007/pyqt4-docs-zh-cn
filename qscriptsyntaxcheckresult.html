@@ -1,0 +1,121 @@
+﻿<html>
+<head>
+<title>QScriptSyntaxCheckResult Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QScriptSyntaxCheckResult Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtscript.html">QtScript</a> module]</sup></sup>
+</h1>
+<p>该QScriptSyntaxCheckResult类提供了一个脚本语法检查的结果。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qscriptsyntaxcheckresult.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qscriptsyntaxcheckresult.html#State-enum">State</a></b> { Error, Intermediate, Valid }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qscriptsyntaxcheckresult.html#QScriptSyntaxCheckResult" tppabs="http://pyqt4doc.appspot.com/qscriptsyntaxcheckresult.html#QScriptSyntaxCheckResult">__init__</a></b> (<i>self</i>, QScriptSyntaxCheckResult <i>other</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qscriptsyntaxcheckresult.html#errorColumnNumber" tppabs="http://pyqt4doc.appspot.com/qscriptsyntaxcheckresult.html#errorColumnNumber">errorColumnNumber</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qscriptsyntaxcheckresult.html#errorLineNumber" tppabs="http://pyqt4doc.appspot.com/qscriptsyntaxcheckresult.html#errorLineNumber">errorLineNumber</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qscriptsyntaxcheckresult.html#errorMessage" tppabs="http://pyqt4doc.appspot.com/qscriptsyntaxcheckresult.html#errorMessage">errorMessage</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>State <b><a href="qscriptsyntaxcheckresult.html#state" tppabs="http://pyqt4doc.appspot.com/qscriptsyntaxcheckresult.html#state">state</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QScriptSyntaxCheckResult类提供了一个脚本语法检查的结果。</p>
+<p>QScriptSyntaxCheckResult被退回<a href="qscriptengine.html#checkSyntax" tppabs="http://pyqt4doc.appspot.com/qscriptengine.html#checkSyntax">QScriptEngine.checkSyntax</a>（ ）提供有关语法信息（ ）脚本的正确性。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="State-enum"></a>QScriptSyntaxCheckResult.State</h3>
+<p>此枚举指定一个语法检查的状态。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QScriptSyntaxCheckResult.Error</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该程序包含一个语法错误。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QScriptSyntaxCheckResult.Intermediate</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该方案是不完整的。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QScriptSyntaxCheckResult.Valid</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">该程序是一个语法正确的Qt Script程序。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QScriptSyntaxCheckResult"></a>QScriptSyntaxCheckResult.__init__ (<i>self</i>, <a href="qscriptsyntaxcheckresult.html" tppabs="http://pyqt4doc.appspot.com/qscriptsyntaxcheckresult.html">QScriptSyntaxCheckResult</a> <i>other</i>)</h3>
+<p>构造一个新的<a href="qscriptsyntaxcheckresult.html" tppabs="http://pyqt4doc.appspot.com/qscriptsyntaxcheckresult.html">QScriptSyntaxCheckResult</a>从<i>other</i>结果。</p>
+
+
+<h3 class="fn">
+<a name="errorColumnNumber"></a>int QScriptSyntaxCheckResult.errorColumnNumber (<i>self</i>)</h3>
+<p>返回此错误的列号<a href="qscriptsyntaxcheckresult.html" tppabs="http://pyqt4doc.appspot.com/qscriptsyntaxcheckresult.html">QScriptSyntaxCheckResult</a>，或-1，如果没有任何错误。</p>
+<p><b>See also</b> <a href="qscriptsyntaxcheckresult.html#state" tppabs="http://pyqt4doc.appspot.com/qscriptsyntaxcheckresult.html#state">state</a>（）和<a href="qscriptsyntaxcheckresult.html#errorLineNumber" tppabs="http://pyqt4doc.appspot.com/qscriptsyntaxcheckresult.html#errorLineNumber">errorLineNumber</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="errorLineNumber"></a>int QScriptSyntaxCheckResult.errorLineNumber (<i>self</i>)</h3>
+<p>返回此错误的行号<a href="qscriptsyntaxcheckresult.html" tppabs="http://pyqt4doc.appspot.com/qscriptsyntaxcheckresult.html">QScriptSyntaxCheckResult</a>，或-1，如果没有任何错误。</p>
+<p><b>See also</b> <a href="qscriptsyntaxcheckresult.html#state" tppabs="http://pyqt4doc.appspot.com/qscriptsyntaxcheckresult.html#state">state</a>（）和<a href="qscriptsyntaxcheckresult.html#errorMessage" tppabs="http://pyqt4doc.appspot.com/qscriptsyntaxcheckresult.html#errorMessage">errorMessage</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="errorMessage"></a>QString QScriptSyntaxCheckResult.errorMessage (<i>self</i>)</h3>
+<p>返回此错误消息<a href="qscriptsyntaxcheckresult.html" tppabs="http://pyqt4doc.appspot.com/qscriptsyntaxcheckresult.html">QScriptSyntaxCheckResult</a>，或一个空字符串，如果没有错误。</p>
+<p><b>See also</b> <a href="qscriptsyntaxcheckresult.html#state" tppabs="http://pyqt4doc.appspot.com/qscriptsyntaxcheckresult.html#state">state</a>（）和<a href="qscriptsyntaxcheckresult.html#errorLineNumber" tppabs="http://pyqt4doc.appspot.com/qscriptsyntaxcheckresult.html#errorLineNumber">errorLineNumber</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="state"></a><a href="qscriptsyntaxcheckresult.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qscriptsyntaxcheckresult.html#State-enum">State</a> QScriptSyntaxCheckResult.state (<i>self</i>)</h3>
+<p>返回此状态<a href="qscriptsyntaxcheckresult.html" tppabs="http://pyqt4doc.appspot.com/qscriptsyntaxcheckresult.html">QScriptSyntaxCheckResult</a>。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

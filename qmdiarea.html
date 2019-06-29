@@ -1,0 +1,483 @@
+﻿<html>
+<head>
+<title>QMdiArea Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QMdiArea Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QMdiArea小部件提供在MDI窗口的显示区域。<a href="#details">More...</a></p>
+
+<p>继承<a href="qabstractscrollarea.html" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html">QAbstractScrollArea</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qmdiarea.html#AreaOption-enum" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#AreaOption-enum">AreaOption</a></b> { DontMaximizeSubWindowOnActivation }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qmdiarea-areaoptions.html">AreaOptions</a></b>
+</li>
+<li>
+<div class="fn"></div>enum <b><a href="qmdiarea.html#ViewMode-enum" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#ViewMode-enum">ViewMode</a></b> { SubWindowView, TabbedView }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qmdiarea.html#WindowOrder-enum" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#WindowOrder-enum">WindowOrder</a></b> { CreationOrder, StackingOrder, ActivationHistoryOrder }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qmdiarea.html#QMdiArea" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#QMdiArea">__init__</a></b> (<i>self</i>, QWidget <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmdiarea.html#activateNextSubWindow" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#activateNextSubWindow">activateNextSubWindow</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmdiarea.html#activatePreviousSubWindow" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#activatePreviousSubWindow">activatePreviousSubWindow</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>WindowOrder <b><a href="qmdiarea.html#activationOrder" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#activationOrder">activationOrder</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QMdiSubWindow <b><a href="qmdiarea.html#activeSubWindow" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#activeSubWindow">activeSubWindow</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QMdiSubWindow <b><a href="qmdiarea.html#addSubWindow" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#addSubWindow">addSubWindow</a></b> (<i>self</i>, QWidget <i>widget</i>, Qt.WindowFlags <i>flags</i> = 0)</li>
+<li>
+<div class="fn"></div>QBrush <b><a href="qmdiarea.html#background" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#background">background</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmdiarea.html#cascadeSubWindows" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#cascadeSubWindows">cascadeSubWindows</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmdiarea.html#childEvent" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#childEvent">childEvent</a></b> (<i>self</i>, QChildEvent <i>childEvent</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmdiarea.html#closeActiveSubWindow" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#closeActiveSubWindow">closeActiveSubWindow</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmdiarea.html#closeAllSubWindows" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#closeAllSubWindows">closeAllSubWindows</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QMdiSubWindow <b><a href="qmdiarea.html#currentSubWindow" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#currentSubWindow">currentSubWindow</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qmdiarea.html#documentMode" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#documentMode">documentMode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qmdiarea.html#event" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#event">event</a></b> (<i>self</i>, QEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qmdiarea.html#eventFilter" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#eventFilter">eventFilter</a></b> (<i>self</i>, QObject <i>object</i>, QEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qmdiarea.html#minimumSizeHint" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#minimumSizeHint">minimumSizeHint</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmdiarea.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#paintEvent">paintEvent</a></b> (<i>self</i>, QPaintEvent <i>paintEvent</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmdiarea.html#removeSubWindow" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#removeSubWindow">removeSubWindow</a></b> (<i>self</i>, QWidget <i>widget</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmdiarea.html#resizeEvent" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#resizeEvent">resizeEvent</a></b> (<i>self</i>, QResizeEvent <i>resizeEvent</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmdiarea.html#scrollContentsBy" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#scrollContentsBy">scrollContentsBy</a></b> (<i>self</i>, int <i>dx</i>, int <i>dy</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmdiarea.html#setActivationOrder" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#setActivationOrder">setActivationOrder</a></b> (<i>self</i>, WindowOrder <i>order</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmdiarea.html#setActiveSubWindow" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#setActiveSubWindow">setActiveSubWindow</a></b> (<i>self</i>, QMdiSubWindow <i>window</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmdiarea.html#setBackground" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#setBackground">setBackground</a></b> (<i>self</i>, QBrush <i>background</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmdiarea.html#setDocumentMode" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#setDocumentMode">setDocumentMode</a></b> (<i>self</i>, bool <i>enabled</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmdiarea.html#setOption" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#setOption">setOption</a></b> (<i>self</i>, AreaOption <i>option</i>, bool <i>on</i> = True)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmdiarea.html#setTabPosition" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#setTabPosition">setTabPosition</a></b> (<i>self</i>, QTabWidget.TabPosition <i>position</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmdiarea.html#setTabsClosable" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#setTabsClosable">setTabsClosable</a></b> (<i>self</i>, bool <i>closable</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmdiarea.html#setTabShape" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#setTabShape">setTabShape</a></b> (<i>self</i>, QTabWidget.TabShape <i>shape</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmdiarea.html#setTabsMovable" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#setTabsMovable">setTabsMovable</a></b> (<i>self</i>, bool <i>movable</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmdiarea.html#setupViewport" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#setupViewport">setupViewport</a></b> (<i>self</i>, QWidget <i>viewport</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmdiarea.html#setViewMode" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#setViewMode">setViewMode</a></b> (<i>self</i>, ViewMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmdiarea.html#showEvent" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#showEvent">showEvent</a></b> (<i>self</i>, QShowEvent <i>showEvent</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qmdiarea.html#sizeHint" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#sizeHint">sizeHint</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QMdiSubWindow <b><a href="qmdiarea.html#subWindowList" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#subWindowList">subWindowList</a></b> (<i>self</i>, WindowOrder <i>order</i> = QMdiArea.CreationOrder)</li>
+<li>
+<div class="fn"></div>QTabWidget.TabPosition <b><a href="qmdiarea.html#tabPosition" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#tabPosition">tabPosition</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qmdiarea.html#tabsClosable" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#tabsClosable">tabsClosable</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTabWidget.TabShape <b><a href="qmdiarea.html#tabShape" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#tabShape">tabShape</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qmdiarea.html#tabsMovable" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#tabsMovable">tabsMovable</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qmdiarea.html#testOption" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#testOption">testOption</a></b> (<i>self</i>, AreaOption <i>opton</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmdiarea.html#tileSubWindows" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#tileSubWindows">tileSubWindows</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmdiarea.html#timerEvent" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#timerEvent">timerEvent</a></b> (<i>self</i>, QTimerEvent <i>timerEvent</i>)</li>
+<li>
+<div class="fn"></div>ViewMode <b><a href="qmdiarea.html#viewMode" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#viewMode">viewMode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qmdiarea.html#viewportEvent" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#viewportEvent">viewportEvent</a></b> (<i>self</i>, QEvent <i>event</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul><li>
+<div class="fn"></div>void <b><a href="qmdiarea.html#subWindowActivated" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#subWindowActivated">subWindowActivated</a></b> (QMdiSubWindow *)</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QMdiArea小部件提供在MDI窗口的显示区域。</p>
+<p>QMdiArea功能，本质上，就像一个窗口管理器的MDI窗口。例如，它绘制它管理自身并安排他们在一个层叠或平铺图案的窗户。 QMdiArea是常用的在一个中心部件<a href="qmainwindow.html" tppabs="http://pyqt4doc.appspot.com/qmainwindow.html">QMainWindow</a>创建MDI应用程序，但也可以放置在任何布局。下面的代码将一个区域的主窗口：</p>
+<pre class="cpp">
+     <span class="type"><a href="qmainwindow.html" tppabs="http://pyqt4doc.appspot.com/qmainwindow.html">QMainWindow</a></span> <span class="operator">*</span>mainWindow <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qmainwindow.html" tppabs="http://pyqt4doc.appspot.com/qmainwindow.html">QMainWindow</a></span>;
+     mainWindow<span class="operator">-</span><span class="operator">&gt;</span>setCentralWidget(mdiArea);
+</pre>
+<p>不同的是窗口管理器的顶层窗口，所有窗口的标志（<a href="qt.html#WindowType-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#WindowType-enum">Qt.WindowFlags</a>）通过QMdiArea只要标志由当前插件式支承。如果一个特定的标记是不支持的样式（例如，<a href="qt.html#WindowType-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#WindowType-enum">WindowShadeButtonHint</a>） ，你仍然可以遮阳的窗口showShaded （ ） 。</p>
+<p>在QMdiArea子窗口的实例<a href="qmdisubwindow.html" tppabs="http://pyqt4doc.appspot.com/qmdisubwindow.html">QMdiSubWindow</a>。它们被添加到一个MDI面积<a href="qmdiarea.html#addSubWindow" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#addSubWindow">addSubWindow</a>（ ） 。这是常见的传递<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>，它被设置为内部部件，该函数，但也有可能通过一个<a href="qmdisubwindow.html" tppabs="http://pyqt4doc.appspot.com/qmdisubwindow.html">QMdiSubWindow</a>directly.The类继承<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>和编程时，你可以使用相同的API作为一个正常的顶层窗口。<a href="qmdisubwindow.html" tppabs="http://pyqt4doc.appspot.com/qmdisubwindow.html">QMdiSubWindow</a>也有行为特定于MDI窗口。请参阅<a href="qmdisubwindow.html" tppabs="http://pyqt4doc.appspot.com/qmdisubwindow.html">QMdiSubWindow</a>类的描述更多的细节。</p>
+<p>当它获取键盘焦点时，或者当子窗口被激活<a href="qwidget.html#setFocus" tppabs="http://pyqt4doc.appspot.com/qwidget.html#setFocus">setFocus</a>（）被调用。用户通过在通常的方式移动焦点激活一个窗口。在MDI领域放出<a href="qmdiarea.html#subWindowActivated" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#subWindowActivated">subWindowActivated</a>（ ）信号，当活动窗口的变化，以及<a href="qmdiarea.html#activeSubWindow" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#activeSubWindow">activeSubWindow</a>（ ）函数返回活动子窗口。</p>
+<p>便利的功能<a href="qmdiarea.html#subWindowList" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#subWindowList">subWindowList</a>（ ）返回所有子窗口的列表。此信息可以在含有窗口的列表的弹出式菜单中使用，例如。</p>
+<p>该子窗口是由当前分类<a href="qmdiarea.html#WindowOrder-enum" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#WindowOrder-enum">WindowOrder</a>。这是用于<a href="qmdiarea.html#subWindowList" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#subWindowList">subWindowList</a>（ ）和<a href="qmdiarea.html#activateNextSubWindow" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#activateNextSubWindow">activateNextSubWindow</a>（）和acivatePreviousSubWindow （） 。此外，它与层叠或平铺的窗口时使用<a href="qmdiarea.html#cascadeSubWindows" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#cascadeSubWindows">cascadeSubWindows</a>（）和<a href="qmdiarea.html#tileSubWindows" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#tileSubWindows">tileSubWindows</a>（ ） 。</p>
+<p>QMdiArea为子窗口有两个内置的布局策略：<a href="qmdiarea.html#cascadeSubWindows" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#cascadeSubWindows">cascadeSubWindows</a>（）和<a href="qmdiarea.html#tileSubWindows" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#tileSubWindows">tileSubWindows</a>（ ） 。两者都是插槽，很容易连接到菜单项。</p>
+<table class="generic">
+<tr class="odd" valign="top">
+<td><img alt="" src="images/mdi-cascade.png"></td>
+<td><img alt="" src="images/mdi-tile.png"></td>
+</tr>
+</table>
+<p><b>Note:</b>默认的滚动条属性QMdiArea是<a href="qt.html#ScrollBarPolicy-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#ScrollBarPolicy-enum">Qt.ScrollBarAlwaysOff</a>。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="AreaOption-enum"></a>QMdiArea.AreaOption</h3>
+<p>这个枚举变量描述了自定义的行为的选项<a href="qmdiarea.html" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html">QMdiArea</a>。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QMdiArea.DontMaximizeSubWindowOnActivation</tt>
+</td>
+<td class="topAlign"><tt>0x1</tt></td>
+<td class="topAlign">当活动的子窗口最大化时，默认的行为是最大限度的被激活的下一个子窗口。如果你不希望出现此行为，设置这个选项。</td>
+</tr>
+</table>
+<p>该AreaOptions类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cAreaOption\u003e 。它存储AreaOption值的或组合。</p>
+
+
+<h3 class="fn">
+<a name="ViewMode-enum"></a>QMdiArea.ViewMode</h3>
+<p>这个枚举变量描述了区域的视图模式，即如何子窗口将被显示。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMdiArea.SubWindowView</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">显示子窗口与窗框（默认） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMdiArea.TabbedView</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">显示子窗口与标籤在标籤栏。</td>
+</tr>
+</table>
+<p>这个枚举被引入或修改的Qt 4.4 。</p>
+<p><b>See also</b> <a href="qmdiarea.html#viewMode-prop" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#viewMode-prop">setViewMode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="WindowOrder-enum"></a>QMdiArea.WindowOrder</h3>
+<p>指定的标准来使用订购的通过返回的子窗口列表<a href="qmdiarea.html#subWindowList" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#subWindowList">subWindowList</a>（ ） 。该功能<a href="qmdiarea.html#cascadeSubWindows" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#cascadeSubWindows">cascadeSubWindows</a>（）和<a href="qmdiarea.html#tileSubWindows" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#tileSubWindows">tileSubWindows</a>（ ）布置窗口的时候按照这个顺序。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMdiArea.CreationOrder</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该窗口在其创建的顺序返回。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMdiArea.StackingOrder</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该窗口在它们被叠的顺序返回，与最顶层窗口是在列表的最后。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QMdiArea.ActivationHistoryOrder</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">该窗口在其被激活的顺序返回。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qmdiarea.html#subWindowList" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#subWindowList">subWindowList</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QMdiArea"></a>QMdiArea.__init__ (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个空MDI区域。<i>parent</i>被传递给<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>的构造。</p>
+
+
+<h3 class="fn">
+<a name="activateNextSubWindow"></a>QMdiArea.activateNextSubWindow (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void activateNextSubWindow()</tt>。</p>
+<p>使键盘焦点到另一个窗口的子窗口的列表中。激活该窗口将成为下一个由电流决定<a href="qmdiarea.html#WindowOrder-enum" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#WindowOrder-enum">activation
+order</a>。</p>
+<p><b>See also</b> <a href="qmdiarea.html#activatePreviousSubWindow" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#activatePreviousSubWindow">activatePreviousSubWindow</a>（）和<a href="qmdiarea.html#WindowOrder-enum" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#WindowOrder-enum">QMdiArea.WindowOrder</a>。</p>
+
+
+<h3 class="fn">
+<a name="activatePreviousSubWindow"></a>QMdiArea.activatePreviousSubWindow (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void activatePreviousSubWindow()</tt>。</p>
+<p>使键盘焦点到另一个窗口的子窗口的列表中。激活的窗口将是前一个的电流确定<a href="qmdiarea.html#WindowOrder-enum" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#WindowOrder-enum">activation
+order</a>。</p>
+<p><b>See also</b> <a href="qmdiarea.html#activateNextSubWindow" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#activateNextSubWindow">activateNextSubWindow</a>（）和<a href="qmdiarea.html#WindowOrder-enum" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#WindowOrder-enum">QMdiArea.WindowOrder</a>。</p>
+
+
+<h3 class="fn">
+<a name="activationOrder"></a><a href="qmdiarea.html#WindowOrder-enum" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#WindowOrder-enum">WindowOrder</a> QMdiArea.activationOrder (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="activeSubWindow"></a><a href="qmdisubwindow.html" tppabs="http://pyqt4doc.appspot.com/qmdisubwindow.html">QMdiSubWindow</a> QMdiArea.activeSubWindow (<i>self</i>)</h3>
+<p>返回一个指向当前活动的子窗口。如果没有窗口当前处于活动状态，则返回0 。</p>
+<p>子窗口被视为顶层窗口相对于窗口状态，即，如果在MDI禁区外一个小部件是活动窗口，没有子窗口将被激活。请注意，如果在窗口小部件中，在MDI领域的生活获得焦点时，该窗口将被激活。</p>
+<p><b>See also</b> <a href="qmdiarea.html#setActiveSubWindow" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#setActiveSubWindow">setActiveSubWindow</a>（）和<a href="qt.html#WindowState-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#WindowState-enum">Qt.WindowState</a>。</p>
+
+
+<h3 class="fn">
+<a name="addSubWindow"></a><a href="qmdisubwindow.html" tppabs="http://pyqt4doc.appspot.com/qmdisubwindow.html">QMdiSubWindow</a> QMdiArea.addSubWindow (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>widget</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-windowflags.html">Qt.WindowFlags</a> <i>flags</i> = 0)</h3>
+<p>该<i>widget</i>说法有它的所有权转移给Qt的。</p>
+<p>添加<i>widget</i>作为一个新的子窗口的MDI区域。如果<i>windowFlags</i>是非零的，它们将复盖在部件上设置的标志。</p>
+<p>该<i>widget</i>可以是一个<a href="qmdisubwindow.html" tppabs="http://pyqt4doc.appspot.com/qmdisubwindow.html">QMdiSubWindow</a>或其他<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>（在这种情况下， MDI的区域将创建一个子窗口，并设置<i>widget</i>作为内部部件） 。</p>
+<p><b>Note:</b>一旦子窗口已经被添加，其母公司将是<i>viewport widget</i>的<a href="qmdiarea.html" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html">QMdiArea</a>。</p>
+<pre class="cpp">
+     <span class="type"><a href="qmdiarea.html" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html">QMdiArea</a></span> mdiArea;
+     <span class="type"><a href="qmdisubwindow.html" tppabs="http://pyqt4doc.appspot.com/qmdisubwindow.html">QMdiSubWindow</a></span> <span class="operator">*</span>subWindow1 <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qmdisubwindow.html" tppabs="http://pyqt4doc.appspot.com/qmdisubwindow.html">QMdiSubWindow</a></span>;
+     subWindow1<span class="operator">-</span><span class="operator">&gt;</span>setWidget(internalWidget1);
+     subWindow1<span class="operator">-</span><span class="operator">&gt;</span>setAttribute(<span class="type"><a href="qt.html" tppabs="http://pyqt4doc.appspot.com/qt.html">Qt</a></span><span class="operator">.</span>WA_DeleteOnClose);
+     mdiArea<span class="operator">.</span>addSubWindow(subWindow1);
+
+     <span class="type"><a href="qmdisubwindow.html" tppabs="http://pyqt4doc.appspot.com/qmdisubwindow.html">QMdiSubWindow</a></span> <span class="operator">*</span>subWindow2 <span class="operator">=</span>
+         mdiArea<span class="operator">.</span>addSubWindow(internalWidget2);
+</pre>
+<p>当您创建自己的子窗口中，你必须设置<a href="qt.html#WidgetAttribute-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#WidgetAttribute-enum">Qt.WA_DeleteOnClose</a>如果您想要在在MDI领域关上窗户要删除小工具属性。如果不是，该窗口会被隐藏，并在MDI面积不会激活下一个子窗口。</p>
+<p>返回<a href="qmdisubwindow.html" tppabs="http://pyqt4doc.appspot.com/qmdisubwindow.html">QMdiSubWindow</a>被添加到MDI区域。</p>
+<p><b>See also</b> <a href="qmdiarea.html#removeSubWindow" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#removeSubWindow">removeSubWindow</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="background"></a><a href="qbrush.html" tppabs="http://pyqt4doc.appspot.com/qbrush.html">QBrush</a> QMdiArea.background (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="cascadeSubWindows"></a>QMdiArea.cascadeSubWindows (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void cascadeSubWindows()</tt>。</p>
+<p>安排所有子窗口在级联模式。</p>
+<p><b>See also</b> <a href="qmdiarea.html#tileSubWindows" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#tileSubWindows">tileSubWindows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="childEvent"></a>QMdiArea.childEvent (<i>self</i>, <a href="qchildevent.html" tppabs="http://pyqt4doc.appspot.com/qchildevent.html">QChildEvent</a> <i>childEvent</i>)</h3>
+<p>从重新实现<a href="qobject.html#childEvent" tppabs="http://pyqt4doc.appspot.com/qobject.html#childEvent">QObject.childEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="closeActiveSubWindow"></a>QMdiArea.closeActiveSubWindow (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void closeActiveSubWindow()</tt>。</p>
+<p>关闭激活的子窗口。</p>
+<p><b>See also</b> <a href="qmdiarea.html#closeAllSubWindows" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#closeAllSubWindows">closeAllSubWindows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="closeAllSubWindows"></a>QMdiArea.closeAllSubWindows (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void closeAllSubWindows()</tt>。</p>
+<p>通过发送关闭所有的子窗口<a href="qcloseevent.html" tppabs="http://pyqt4doc.appspot.com/qcloseevent.html">QCloseEvent</a>每个窗口。您可能会收到<a href="qmdiarea.html#subWindowActivated" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#subWindowActivated">subWindowActivated</a>（ ）从子窗口的信号，他们正在关闭之前（如果在MDI领域启动子窗口时，另一个被关闭） 。</p>
+<p>这种无视close事件子窗口将保持打开状态。</p>
+<p><b>See also</b> <a href="qmdiarea.html#closeActiveSubWindow" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#closeActiveSubWindow">closeActiveSubWindow</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentSubWindow"></a><a href="qmdisubwindow.html" tppabs="http://pyqt4doc.appspot.com/qmdisubwindow.html">QMdiSubWindow</a> QMdiArea.currentSubWindow (<i>self</i>)</h3>
+<p>返回一个指向当前子窗口，或者0，如果没有当前的子窗口。</p>
+<p>这个函数将返回相同的<a href="qmdiarea.html#activeSubWindow" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#activeSubWindow">activeSubWindow</a>（）如果<a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a> containing <a href="qmdiarea.html" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html">QMdiArea</a>是活动的。</p>
+<p><b>See also</b> <a href="qmdiarea.html#activeSubWindow" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#activeSubWindow">activeSubWindow</a>（）和<a href="qapplication.html#activeWindow" tppabs="http://pyqt4doc.appspot.com/qapplication.html#activeWindow">QApplication.activeWindow</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="documentMode"></a>bool QMdiArea.documentMode (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="event"></a>bool QMdiArea.event (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">QObject.event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="eventFilter"></a>bool QMdiArea.eventFilter (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>object</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qobject.html#eventFilter" tppabs="http://pyqt4doc.appspot.com/qobject.html#eventFilter">QObject.eventFilter</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="minimumSizeHint"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QMdiArea.minimumSizeHint (<i>self</i>)</h3>
+<p>从重新实现<a href="qwidget.html#minimumSizeHint-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#minimumSizeHint-prop">QWidget.minimumSizeHint</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="paintEvent"></a>QMdiArea.paintEvent (<i>self</i>, <a href="qpaintevent.html" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html">QPaintEvent</a> <i>paintEvent</i>)</h3>
+<p>从重新实现<a href="qwidget.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#paintEvent">QWidget.paintEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="removeSubWindow"></a>QMdiArea.removeSubWindow (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>widget</i>)</h3>
+<p>移除<i>widget</i>从MDI区域。该<i>widget</i>必须是<a href="qmdisubwindow.html" tppabs="http://pyqt4doc.appspot.com/qmdisubwindow.html">QMdiSubWindow</a>或一个小部件是一个子窗口的内部部件。注<i>widget</i>是从来没有真正被删除<a href="qmdiarea.html" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html">QMdiArea</a>。如果<a href="qmdisubwindow.html" tppabs="http://pyqt4doc.appspot.com/qmdisubwindow.html">QMdiSubWindow</a>传递在其父被设置为0 ，并将其除去，但是，如果内部部件被传递到子插件被设置为0 ，但<a href="qmdisubwindow.html" tppabs="http://pyqt4doc.appspot.com/qmdisubwindow.html">QMdiSubWindow</a>不会被删除。</p>
+<p><b>See also</b> <a href="qmdiarea.html#addSubWindow" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#addSubWindow">addSubWindow</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="resizeEvent"></a>QMdiArea.resizeEvent (<i>self</i>, <a href="qresizeevent.html" tppabs="http://pyqt4doc.appspot.com/qresizeevent.html">QResizeEvent</a> <i>resizeEvent</i>)</h3>
+<p>从重新实现<a href="qwidget.html#resizeEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#resizeEvent">QWidget.resizeEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="scrollContentsBy"></a>QMdiArea.scrollContentsBy (<i>self</i>, int <i>dx</i>, int <i>dy</i>)</h3>
+<p>从重新实现<a href="qabstractscrollarea.html#scrollContentsBy" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html#scrollContentsBy">QAbstractScrollArea.scrollContentsBy</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setActivationOrder"></a>QMdiArea.setActivationOrder (<i>self</i>, <a href="qmdiarea.html#WindowOrder-enum" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#WindowOrder-enum">WindowOrder</a> <i>order</i>)</h3>
+<h3 class="fn">
+<a name="setActiveSubWindow"></a>QMdiArea.setActiveSubWindow (<i>self</i>, <a href="qmdisubwindow.html" tppabs="http://pyqt4doc.appspot.com/qmdisubwindow.html">QMdiSubWindow</a> <i>window</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setActiveSubWindow(QMdiSubWindow *)</tt>。</p>
+<p>激活的子窗口<i>window</i>。如果<i>window</i>为0时，任何当前活动窗口被关闭。</p>
+<p><b>See also</b> <a href="qmdiarea.html#activeSubWindow" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#activeSubWindow">activeSubWindow</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setBackground"></a>QMdiArea.setBackground (<i>self</i>, <a href="qbrush.html" tppabs="http://pyqt4doc.appspot.com/qbrush.html">QBrush</a> <i>background</i>)</h3>
+<h3 class="fn">
+<a name="setDocumentMode"></a>QMdiArea.setDocumentMode (<i>self</i>, bool <i>enabled</i>)</h3>
+<h3 class="fn">
+<a name="setOption"></a>QMdiArea.setOption (<i>self</i>, <a href="qmdiarea.html#AreaOption-enum" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#AreaOption-enum">AreaOption</a> <i>option</i>, bool <i>on</i> = True)</h3>
+<p>If <i>on</i>是真的，<i>option</i>是对MDI的区域中启用，否则它被禁用。看<a href="qmdiarea.html#AreaOption-enum" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#AreaOption-enum">AreaOption</a>每个选项的效果。</p>
+<p><b>See also</b> <a href="qmdiarea.html#AreaOption-enum" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#AreaOption-enum">AreaOption</a>和<a href="qmdiarea.html#testOption" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#testOption">testOption</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setTabPosition"></a>QMdiArea.setTabPosition (<i>self</i>, <a href="qtabwidget.html#TabPosition-enum" tppabs="http://pyqt4doc.appspot.com/qtabwidget.html#TabPosition-enum">QTabWidget.TabPosition</a> <i>position</i>)</h3>
+<h3 class="fn">
+<a name="setTabsClosable"></a>QMdiArea.setTabsClosable (<i>self</i>, bool <i>closable</i>)</h3>
+<h3 class="fn">
+<a name="setTabShape"></a>QMdiArea.setTabShape (<i>self</i>, <a href="qtabwidget.html#TabShape-enum" tppabs="http://pyqt4doc.appspot.com/qtabwidget.html#TabShape-enum">QTabWidget.TabShape</a> <i>shape</i>)</h3>
+<h3 class="fn">
+<a name="setTabsMovable"></a>QMdiArea.setTabsMovable (<i>self</i>, bool <i>movable</i>)</h3>
+<h3 class="fn">
+<a name="setupViewport"></a>QMdiArea.setupViewport (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>viewport</i>)</h3>
+<p>这个槽被调用者<a href="qabstractscrollarea.html" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html">QAbstractScrollArea</a>后<a href="qabstractscrollarea.html#setViewport" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html#setViewport">setViewport</a>（ ）被调用。在子类重新实现此功能<a href="qmdiarea.html" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html">QMdiArea</a>初始化新<i>viewport</i>之前就被采用。</p>
+<p><b>See also</b> <a href="qabstractscrollarea.html#setViewport" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html#setViewport">setViewport</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setViewMode"></a>QMdiArea.setViewMode (<i>self</i>, <a href="qmdiarea.html#ViewMode-enum" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#ViewMode-enum">ViewMode</a> <i>mode</i>)</h3>
+<h3 class="fn">
+<a name="showEvent"></a>QMdiArea.showEvent (<i>self</i>, <a href="qshowevent.html" tppabs="http://pyqt4doc.appspot.com/qshowevent.html">QShowEvent</a> <i>showEvent</i>)</h3>
+<p>从重新实现<a href="qwidget.html#showEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#showEvent">QWidget.showEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sizeHint"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QMdiArea.sizeHint (<i>self</i>)</h3>
+<p>从重新实现<a href="qwidget.html#sizeHint-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#sizeHint-prop">QWidget.sizeHint</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="subWindowList"></a>list-of-QMdiSubWindow QMdiArea.subWindowList (<i>self</i>, <a href="qmdiarea.html#WindowOrder-enum" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#WindowOrder-enum">WindowOrder</a> <i>order</i> = QMdiArea.CreationOrder)</h3>
+<p>返回在MDI领域的所有子窗口的列表。如果<i>order</i> is <a href="qmdiarea.html#WindowOrder-enum" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#WindowOrder-enum">CreationOrder</a>（默认值） ，该窗口被排列在它们被插入到工作区中的顺序。如果<i>order</i> is <a href="qmdiarea.html#WindowOrder-enum" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#WindowOrder-enum">StackingOrder</a>，窗口中列出了它们的堆叠顺序，与最顶层窗口的最后一个项目在列表中。如果<i>order</i> is <a href="qmdiarea.html#WindowOrder-enum" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#WindowOrder-enum">ActivationHistoryOrder</a>，窗户是根据他们最近的激活历史记录中列出。</p>
+<p><b>See also</b> <a href="qmdiarea.html#WindowOrder-enum" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#WindowOrder-enum">WindowOrder</a>。</p>
+
+
+<h3 class="fn">
+<a name="tabPosition"></a><a href="qtabwidget.html#TabPosition-enum" tppabs="http://pyqt4doc.appspot.com/qtabwidget.html#TabPosition-enum">QTabWidget.TabPosition</a> QMdiArea.tabPosition (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="tabsClosable"></a>bool QMdiArea.tabsClosable (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="tabShape"></a><a href="qtabwidget.html#TabShape-enum" tppabs="http://pyqt4doc.appspot.com/qtabwidget.html#TabShape-enum">QTabWidget.TabShape</a> QMdiArea.tabShape (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="tabsMovable"></a>bool QMdiArea.tabsMovable (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="testOption"></a>bool QMdiArea.testOption (<i>self</i>, <a href="qmdiarea.html#AreaOption-enum" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#AreaOption-enum">AreaOption</a> <i>opton</i>)</h3>
+<p>返回True如果<i>option</i>被启用，否则返回False 。</p>
+<p><b>See also</b> <a href="qmdiarea.html#AreaOption-enum" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#AreaOption-enum">AreaOption</a>和<a href="qmdiarea.html#setOption" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#setOption">setOption</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="tileSubWindows"></a>QMdiArea.tileSubWindows (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void tileSubWindows()</tt>。</p>
+<p>安排所有子窗口的瓷砖图案。</p>
+<p><b>See also</b> <a href="qmdiarea.html#cascadeSubWindows" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#cascadeSubWindows">cascadeSubWindows</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="timerEvent"></a>QMdiArea.timerEvent (<i>self</i>, <a href="qtimerevent.html" tppabs="http://pyqt4doc.appspot.com/qtimerevent.html">QTimerEvent</a> <i>timerEvent</i>)</h3>
+<p>从重新实现<a href="qobject.html#timerEvent" tppabs="http://pyqt4doc.appspot.com/qobject.html#timerEvent">QObject.timerEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="viewMode"></a><a href="qmdiarea.html#ViewMode-enum" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#ViewMode-enum">ViewMode</a> QMdiArea.viewMode (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="viewportEvent"></a>bool QMdiArea.viewportEvent (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qabstractscrollarea.html#viewportEvent" tppabs="http://pyqt4doc.appspot.com/qabstractscrollarea.html#viewportEvent">QAbstractScrollArea.viewportEvent</a>（ ） 。</p>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="subWindowActivated"></a>void subWindowActivated (QMdiSubWindow *)</h3>
+<p>这是该信号的默认超载。</p>
+<p><a href="qmdiarea.html" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html">QMdiArea</a>之后发出这个信号<i>window</i>已被激活。何时<i>window</i>为0时，<a href="qmdiarea.html" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html">QMdiArea</a>刚刚解除其最后一个活动窗口，并有在工作区没有活动的窗口。</p>
+<p><b>See also</b> <a href="qmdiarea.html#activeSubWindow" tppabs="http://pyqt4doc.appspot.com/qmdiarea.html#activeSubWindow">QMdiArea.activeSubWindow</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

@@ -1,0 +1,137 @@
+﻿<html>
+<head>
+<title>QNetworkProxyFactory Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QNetworkProxyFactory Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtnetwork.html">QtNetwork</a> module]</sup></sup>
+</h1>
+<p>该QNetworkProxyFactory类提供细粒度的代理选择。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxyfactory.html#QNetworkProxyFactory" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyfactory.html#QNetworkProxyFactory">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxyfactory.html#QNetworkProxyFactory-2" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyfactory.html#QNetworkProxyFactory-2">__init__</a></b> (<i>self</i>, QNetworkProxyFactory)</li>
+<li>
+<div class="fn"></div>list-of-QNetworkProxy <b><a href="qnetworkproxyfactory.html#queryProxy" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyfactory.html#queryProxy">queryProxy</a></b> (<i>self</i>, QNetworkProxyQuery <i>query</i> = QNetworkProxyQuery())</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>list-of-QNetworkProxy <b><a href="qnetworkproxyfactory.html#proxyForQuery" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyfactory.html#proxyForQuery">proxyForQuery</a></b> (QNetworkProxyQuery <i>query</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxyfactory.html#setApplicationProxyFactory" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyfactory.html#setApplicationProxyFactory">setApplicationProxyFactory</a></b> (QNetworkProxyFactory <i>factory</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkproxyfactory.html#setUseSystemConfiguration" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyfactory.html#setUseSystemConfiguration">setUseSystemConfiguration</a></b> (bool <i>enable</i>)</li>
+<li>
+<div class="fn"></div>list-of-QNetworkProxy <b><a href="qnetworkproxyfactory.html#systemProxyForQuery" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyfactory.html#systemProxyForQuery">systemProxyForQuery</a></b> (QNetworkProxyQuery <i>query</i> = QNetworkProxyQuery())</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QNetworkProxyFactory类提供细粒度的代理选择。</p>
+<p>QNetworkProxyFactory是一个扩展<a href="qnetworkproxy.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html">QNetworkProxy</a>，允许应用程序有一个更细粒度控制哪些代理服务器使用，这取决于插座请求代理。这使得应用程序可以应用不同的设置，根据该协议或目的地的主机名，例如。</p>
+<p>QNetworkProxyFactory可以全局设置的应用程序，在这种情况下，它会复盖设置任何全局代理<a href="qnetworkproxy.html#setApplicationProxy" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setApplicationProxy">QNetworkProxy.setApplicationProxy</a>（ ） 。如果全局设置，使用Qt创建的套接字将查询的工厂，以确定要使用的代理服务器。</p>
+<p>一个工厂也可以支持多个连接特定的框架，比如设置<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>。当这样的对象设置，该工厂将被询问只有该框架创建的套接字。</p>
+<a id="system-proxies" name="system-proxies"></a>
+<h3>System Proxies</h3>
+<p>您可以配置一个工厂使用系统代理设置。调用<a href="qnetworkproxyfactory.html#setUseSystemConfiguration" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyfactory.html#setUseSystemConfiguration">setUseSystemConfiguration</a>（ ）函数真正要启用此行为，或虚假禁用它。</p>
+<p>同样，您可以使用一个工厂通过调用进行查询，直接到系统代理其<a href="qnetworkproxyfactory.html#systemProxyForQuery" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyfactory.html#systemProxyForQuery">systemProxyForQuery</a>（）函数。</p>
+<p><b>Warning:</b>根据用户的系统配置，使用在某些平台上系统代理的功能可能会受到限制。该<a href="qnetworkproxyfactory.html#systemProxyForQuery" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyfactory.html#systemProxyForQuery">systemProxyForQuery</a>（ ）文档中包含的这些限制对于那些受影响的平台列表。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QNetworkProxyFactory"></a>QNetworkProxyFactory.__init__ (<i>self</i>)</h3>
+<p>创建<a href="qnetworkproxyfactory.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyfactory.html">QNetworkProxyFactory</a>对象。</p>
+<p>自<a href="qnetworkproxyfactory.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyfactory.html">QNetworkProxyFactory</a>是一个抽象类，你不能创建类型的对象<a href="qnetworkproxyfactory.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyfactory.html">QNetworkProxyFactory</a>直接。</p>
+
+
+<h3 class="fn">
+<a name="QNetworkProxyFactory-2"></a>QNetworkProxyFactory.__init__ (<i>self</i>, <a href="qnetworkproxyfactory.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyfactory.html">QNetworkProxyFactory</a>)</h3>
+<h3 class="fn">
+<a name="proxyForQuery"></a>list-of-QNetworkProxy QNetworkProxyFactory.proxyForQuery (<a href="qnetworkproxyquery.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html">QNetworkProxyQuery</a> <i>query</i>)</h3>
+<p>这个函数接受查询请求，<i>query</i>，检查插座或请求的类型的详细信息，并返回一个列表<a href="qnetworkproxy.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html">QNetworkProxy</a>对象表示要使用的代理服务器，按优先顺序。</p>
+
+
+<h3 class="fn">
+<a name="queryProxy"></a>list-of-QNetworkProxy QNetworkProxyFactory.queryProxy (<i>self</i>, <a href="qnetworkproxyquery.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html">QNetworkProxyQuery</a> <i>query</i> = QNetworkProxyQuery())</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>这个函数接受查询请求，<i>query</i>，检查插座或请求的类型的详细信息，并返回一个列表<a href="qnetworkproxy.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html">QNetworkProxy</a>对象表示要使用的代理服务器，按优先顺序。</p>
+<p>当重新实现这个类，照顾到返回至少一个元素。</p>
+<p>如果你不能确定一个更好的指标替代，使用<a href="qnetworkproxy.html#ProxyType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#ProxyType-enum">QNetworkProxy.DefaultProxy</a>，它告诉在查询代理来使用更高的替代的代码。举例来说，如果这家工厂被设置为<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>对象， DefaultProxy会告诉它来查询应用程序级代理设置。</p>
+<p>如果这家工厂被设置为应用程序代理工厂， DefaultProxy和NoProxy将具有相同的含义。</p>
+
+
+<h3 class="fn">
+<a name="setApplicationProxyFactory"></a>QNetworkProxyFactory.setApplicationProxyFactory (<a href="qnetworkproxyfactory.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyfactory.html">QNetworkProxyFactory</a> <i>factory</i>)</h3>
+<p>该<i>factory</i>说法有它的所有权转移给Qt的。</p>
+<p>设置应用程序范围内的代理工厂是<i>factory</i>。此功能需要该对象的所有权，并在必要时将其删除。</p>
+<p>应用范围的代理作为最后手段时返回的所有其他选择代理请求<a href="qnetworkproxy.html#ProxyType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#ProxyType-enum">QNetworkProxy.DefaultProxy</a>。例如，<a href="qtcpsocket.html" tppabs="http://pyqt4doc.appspot.com/qtcpsocket.html">QTcpSocket</a>对象可以有一个代理设置QTcpSocket.setProxy ，但如果没有设置，代理工厂类在此项功能设置将会被查询。</p>
+<p>如果您设置了代理工厂使用此功能，设置QNetworkProxy.setApplicationProxy任何应用程序级代理将被改写。</p>
+<p><b>See also</b> <a href="qnetworkproxy.html#setApplicationProxy" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#setApplicationProxy">QNetworkProxy.setApplicationProxy</a>（ ）<a href="qabstractsocket.html#proxy" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#proxy">QAbstractSocket.proxy</a>（）和<a href="qabstractsocket.html#setProxy" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#setProxy">QAbstractSocket.setProxy</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setUseSystemConfiguration"></a>QNetworkProxyFactory.setUseSystemConfiguration (bool <i>enable</i>)</h3>
+<p>允许使用特定于平台的代理服务器设置，只有那些。看<a href="qnetworkproxyfactory.html#systemProxyForQuery" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyfactory.html#systemProxyForQuery">systemProxyForQuery</a>（ ）获取更多信息。</p>
+<p>在内部，与调用时这个方法（<i>enable</i>设置为True ）设置一个应用程序范围的代理工厂。由于这个原因，这种方法是相互排斥的<a href="qnetworkproxyfactory.html#setApplicationProxyFactory" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyfactory.html#setApplicationProxyFactory">setApplicationProxyFactory</a>（ ） ：调用<a href="qnetworkproxyfactory.html#setApplicationProxyFactory" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyfactory.html#setApplicationProxyFactory">setApplicationProxyFactory</a>（ ）会复盖系统的使用范围内的代理，并调用setUseSystemConfiguration （）将复盖先前设置的任何应用程序代理或代理工厂。</p>
+<p><b>Note:</b>请参阅<a href="qnetworkproxyfactory.html#systemProxyForQuery" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyfactory.html#systemProxyForQuery">systemProxyForQuery</a>（）文档中的限制与使用系统代理列表。</p>
+<p>此功能被引入Qt的4.6 。</p>
+
+
+<h3 class="fn">
+<a name="systemProxyForQuery"></a>list-of-QNetworkProxy QNetworkProxyFactory.systemProxyForQuery (<a href="qnetworkproxyquery.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html">QNetworkProxyQuery</a> <i>query</i> = QNetworkProxyQuery())</h3>
+<p>这个函数接受查询请求，<i>query</i>，检查插座或请求的类型的详细信息，并返回一个列表<a href="qnetworkproxy.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html">QNetworkProxy</a>对象表示要使用的代理服务器，按优先顺序。</p>
+<p>此功能可用于确定特定于平台的代理服务器设置。此函数将使用由操作系统提供的库来确定代理对于一个给定的连接，如果这样的库存。如果他们不这样做，这个函数将只返回一个<a href="qnetworkproxy.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html">QNetworkProxy</a>类型<a href="qnetworkproxy.html#ProxyType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#ProxyType-enum">QNetworkProxy.NoProxy</a>。</p>
+<p>在Windows上，这个功能将使用WinHTTP的DLL函数。尽管它的名字，微软建议使用它需要网络连接的所有应用程序，而不仅限于HTTP 。这将尊重注册表与Proxycfg.exe工具设定的代理服务器设置。如果找不到这些设置，此功能将尝试获取Internet Explorer的设置和使用它们。</p>
+<p>在MacOS X ，这个函数将使用来自苹果的SystemConfiguration中框架获得代理设置。它将应用FTP，HTTP和HTTPS代理配置包含协议标籤“ ftp”的疑问， “ http”和“ https”开头，分别为。如果SOCKS代理在该配置中启用，该功能将使用SOCKS服务器的所有查询。如果SOCKS没有启用，它会使用HTTPS代理所有的TCPSocket和的URLRequest查询。</p>
+<p>黑莓，这个函数获取代理服务器设置为使用系统配置的默认配置。类型将根据协议标籤“ http”的设定，以“https ”，“ ftp”的分别。默认情况下，它假定HTTP类型。代理服务器的用户名和密码，使用系统配置在查询过程中也设置。</p>
+<p>在其他系统上，此功能将拿起代理设置从“ HTTP_PROXY ”环境变量。此变量必须使用下列方案之一的URL ： “ HTTP ” ， “ SOCKS5 ”或“ socks5h ” 。</p>
+<a id="limitations" name="limitations"></a>
+<h4>Limitations</h4>
+<p>这些都为这功能的当前版本的限制。 Qt的未来版本可能会解除一些在这里列出的限制。</p>
+<ul>
+<li>On MacOS X, this function will ignore the Proxy Auto
+Configuration settings, since it cannot execute the associated
+ECMAScript code.</li>
+<li>On Windows platforms, this function may take several seconds to
+execute depending on the configuration of the user's system.
+<p><b class="redFont"><code>\li</code></b>黑莓，只有的URLRequest和的TCPSocket查询的支持。不支持SOCKS 。该代理凭据仅撷取的默认配置。</p>
+</li>
+</ul>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

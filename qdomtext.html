@@ -1,0 +1,87 @@
+﻿<html>
+<head>
+<title>QDomText Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDomText Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtxml.html">QtXml</a> module]</sup></sup>
+</h1>
+<p>该QDomText类表示解析的XML文档中的文本数据。<a href="#details">More...</a></p>
+
+<p>继承<a href="qdomcharacterdata.html" tppabs="http://pyqt4doc.appspot.com/qdomcharacterdata.html">QDomCharacterData</a>。</p>
+<p>通过继承<a href="qdomcdatasection.html" tppabs="http://pyqt4doc.appspot.com/qdomcdatasection.html">QDomCDATASection</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdomtext.html#QDomText" tppabs="http://pyqt4doc.appspot.com/qdomtext.html#QDomText">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdomtext.html#QDomText-2" tppabs="http://pyqt4doc.appspot.com/qdomtext.html#QDomText-2">__init__</a></b> (<i>self</i>, QDomText <i>x</i>)</li>
+<li>
+<div class="fn"></div>QDomNode.NodeType <b><a href="qdomtext.html#nodeType" tppabs="http://pyqt4doc.appspot.com/qdomtext.html#nodeType">nodeType</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomText <b><a href="qdomtext.html#splitText" tppabs="http://pyqt4doc.appspot.com/qdomtext.html#splitText">splitText</a></b> (<i>self</i>, int <i>offset</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDomText类表示解析的XML文档中的文本数据。</p>
+<p>您可以在两个QDomText objecs与分裂的QDomText对象中的文本<a href="qdomtext.html#splitText" tppabs="http://pyqt4doc.appspot.com/qdomtext.html#splitText">splitText</a>（ ） 。</p>
+<p>关于文档对象模型有进一步的信息<a href="http://www.w3.org/TR/REC-DOM-Level-1/">Level 1</a>和<a href="http://www.w3.org/TR/DOM-Level-2-Core/">Level 2 Core</a>。对于更一般介绍的DOM实现的见<a href="qdomdocument.html" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html">QDomDocument</a>文档。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDomText"></a>QDomText.__init__ (<i>self</i>)</h3>
+<p>构造一个空<a href="qdomtext.html" tppabs="http://pyqt4doc.appspot.com/qdomtext.html">QDomText</a>对象。</p>
+<p>为了构建一个<a href="qdomtext.html" tppabs="http://pyqt4doc.appspot.com/qdomtext.html">QDomText</a>有内容，使用<a href="qdomdocument.html#createTextNode" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html#createTextNode">QDomDocument.createTextNode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QDomText-2"></a>QDomText.__init__ (<i>self</i>, <a href="qdomtext.html" tppabs="http://pyqt4doc.appspot.com/qdomtext.html">QDomText</a> <i>x</i>)</h3>
+<p>构造的副本<i>x</i>。</p>
+<p>副本的数据是共享的（浅拷贝） ：修改一个节点也将改变其他。如果你想使一个深拷贝，使用<a href="qdomnode.html#cloneNode" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#cloneNode">cloneNode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="nodeType"></a><a href="qdomnode.html#NodeType-enum" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#NodeType-enum">QDomNode.NodeType</a> QDomText.nodeType (<i>self</i>)</h3>
+<p>Returns <tt>TextNode</tt>。</p>
+
+
+<h3 class="fn">
+<a name="splitText"></a><a href="qdomtext.html" tppabs="http://pyqt4doc.appspot.com/qdomtext.html">QDomText</a> QDomText.splitText (<i>self</i>, int <i>offset</i>)</h3>
+<p>这个分裂的DOM文本对象分为两<a href="qdomtext.html" tppabs="http://pyqt4doc.appspot.com/qdomtext.html">QDomText</a>对象。这个对象保持其第一<i>offset</i>字符和第二个（新建）对象被插入到文档树中剩馀的字符这个对象之后。</p>
+<p>该函数返回新创建的对象。</p>
+<p><b>See also</b> <a href="qdomnode.html#normalize" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#normalize">QDomNode.normalize</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

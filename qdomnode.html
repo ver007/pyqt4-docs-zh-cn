@@ -1,0 +1,879 @@
+﻿<html>
+<head>
+<title>QDomNode Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDomNode Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtxml.html">QtXml</a> module]</sup></sup>
+</h1>
+<p>该QDomNode类是在DOM树中所有节点的基类。<a href="#details">More...</a></p>
+
+<p>通过继承<a href="qdomattr.html" tppabs="http://pyqt4doc.appspot.com/qdomattr.html">QDomAttr</a>，<a href="qdomcharacterdata.html" tppabs="http://pyqt4doc.appspot.com/qdomcharacterdata.html">QDomCharacterData</a>，<a href="qdomdocument.html" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html">QDomDocument</a>，<a href="qdomdocumentfragment.html" tppabs="http://pyqt4doc.appspot.com/qdomdocumentfragment.html">QDomDocumentFragment</a>，<a href="qdomdocumenttype.html" tppabs="http://pyqt4doc.appspot.com/qdomdocumenttype.html">QDomDocumentType</a>，<a href="qdomelement.html" tppabs="http://pyqt4doc.appspot.com/qdomelement.html">QDomElement</a>，<a href="qdomentity.html" tppabs="http://pyqt4doc.appspot.com/qdomentity.html">QDomEntity</a>，<a href="qdomentityreference.html" tppabs="http://pyqt4doc.appspot.com/qdomentityreference.html">QDomEntityReference</a>，<a href="qdomnotation.html" tppabs="http://pyqt4doc.appspot.com/qdomnotation.html">QDomNotation</a>和<a href="qdomprocessinginstruction.html" tppabs="http://pyqt4doc.appspot.com/qdomprocessinginstruction.html">QDomProcessingInstruction</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qdomnode.html#EncodingPolicy-enum" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#EncodingPolicy-enum">EncodingPolicy</a></b> { EncodingFromDocument, EncodingFromTextStream }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qdomnode.html#NodeType-enum" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#NodeType-enum">NodeType</a></b> { ElementNode, AttributeNode, TextNode, CDATASectionNode, ..., CharacterDataNode }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdomnode.html#QDomNode" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#QDomNode">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdomnode.html#QDomNode-2" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#QDomNode-2">__init__</a></b> (<i>self</i>, QDomNode)</li>
+<li>
+<div class="fn"></div>QDomNode <b><a href="qdomnode.html#appendChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#appendChild">appendChild</a></b> (<i>self</i>, QDomNode <i>newChild</i>)</li>
+<li>
+<div class="fn"></div>QDomNamedNodeMap <b><a href="qdomnode.html#attributes" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#attributes">attributes</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomNodeList <b><a href="qdomnode.html#childNodes" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#childNodes">childNodes</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdomnode.html#clear" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#clear">clear</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomNode <b><a href="qdomnode.html#cloneNode" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#cloneNode">cloneNode</a></b> (<i>self</i>, bool <i>deep</i> = True)</li>
+<li>
+<div class="fn"></div>int <b><a href="qdomnode.html#columnNumber" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#columnNumber">columnNumber</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomNode <b><a href="qdomnode.html#firstChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#firstChild">firstChild</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomElement <b><a href="qdomnode.html#firstChildElement" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#firstChildElement">firstChildElement</a></b> (<i>self</i>, QString <i>tagName</i> = QString())</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdomnode.html#hasAttributes" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#hasAttributes">hasAttributes</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdomnode.html#hasChildNodes" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#hasChildNodes">hasChildNodes</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomNode <b><a href="qdomnode.html#insertAfter" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#insertAfter">insertAfter</a></b> (<i>self</i>, QDomNode <i>newChild</i>, QDomNode <i>refChild</i>)</li>
+<li>
+<div class="fn"></div>QDomNode <b><a href="qdomnode.html#insertBefore" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#insertBefore">insertBefore</a></b> (<i>self</i>, QDomNode <i>newChild</i>, QDomNode <i>refChild</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdomnode.html#isAttr" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isAttr">isAttr</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdomnode.html#isCDATASection" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isCDATASection">isCDATASection</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdomnode.html#isCharacterData" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isCharacterData">isCharacterData</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdomnode.html#isComment" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isComment">isComment</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdomnode.html#isDocument" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isDocument">isDocument</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdomnode.html#isDocumentFragment" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isDocumentFragment">isDocumentFragment</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdomnode.html#isDocumentType" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isDocumentType">isDocumentType</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdomnode.html#isElement" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isElement">isElement</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdomnode.html#isEntity" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isEntity">isEntity</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdomnode.html#isEntityReference" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isEntityReference">isEntityReference</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdomnode.html#isNotation" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNotation">isNotation</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">isNull</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdomnode.html#isProcessingInstruction" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isProcessingInstruction">isProcessingInstruction</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdomnode.html#isSupported" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isSupported">isSupported</a></b> (<i>self</i>, QString <i>feature</i>, QString <i>version</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdomnode.html#isText" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isText">isText</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomNode <b><a href="qdomnode.html#lastChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#lastChild">lastChild</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomElement <b><a href="qdomnode.html#lastChildElement" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#lastChildElement">lastChildElement</a></b> (<i>self</i>, QString <i>tagName</i> = QString())</li>
+<li>
+<div class="fn"></div>int <b><a href="qdomnode.html#lineNumber" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#lineNumber">lineNumber</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdomnode.html#localName" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#localName">localName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomNode <b><a href="qdomnode.html#namedItem" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#namedItem">namedItem</a></b> (<i>self</i>, QString <i>name</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdomnode.html#namespaceURI" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#namespaceURI">namespaceURI</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomNode <b><a href="qdomnode.html#nextSibling" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#nextSibling">nextSibling</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomElement <b><a href="qdomnode.html#nextSiblingElement" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#nextSiblingElement">nextSiblingElement</a></b> (<i>self</i>, QString <i>tagName</i> = QString())</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdomnode.html#nodeName" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#nodeName">nodeName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>NodeType <b><a href="qdomnode.html#nodeType" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#nodeType">nodeType</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdomnode.html#nodeValue" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#nodeValue">nodeValue</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdomnode.html#normalize" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#normalize">normalize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomDocument <b><a href="qdomnode.html#ownerDocument" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#ownerDocument">ownerDocument</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomNode <b><a href="qdomnode.html#parentNode" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#parentNode">parentNode</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qdomnode.html#prefix" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#prefix">prefix</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomNode <b><a href="qdomnode.html#previousSibling" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#previousSibling">previousSibling</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomElement <b><a href="qdomnode.html#previousSiblingElement" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#previousSiblingElement">previousSiblingElement</a></b> (<i>self</i>, QString <i>tagName</i> = QString())</li>
+<li>
+<div class="fn"></div>QDomNode <b><a href="qdomnode.html#removeChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#removeChild">removeChild</a></b> (<i>self</i>, QDomNode <i>oldChild</i>)</li>
+<li>
+<div class="fn"></div>QDomNode <b><a href="qdomnode.html#replaceChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#replaceChild">replaceChild</a></b> (<i>self</i>, QDomNode <i>newChild</i>, QDomNode <i>oldChild</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdomnode.html#save" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#save">save</a></b> (<i>self</i>, QTextStream, int)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdomnode.html#save-2" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#save-2">save</a></b> (<i>self</i>, QTextStream, int, EncodingPolicy)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdomnode.html#setNodeValue" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#setNodeValue">setNodeValue</a></b> (<i>self</i>, QString)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdomnode.html#setPrefix" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#setPrefix">setPrefix</a></b> (<i>self</i>, QString <i>pre</i>)</li>
+<li>
+<div class="fn"></div>QDomAttr <b><a href="qdomnode.html#toAttr" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toAttr">toAttr</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomCDATASection <b><a href="qdomnode.html#toCDATASection" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toCDATASection">toCDATASection</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomCharacterData <b><a href="qdomnode.html#toCharacterData" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toCharacterData">toCharacterData</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomComment <b><a href="qdomnode.html#toComment" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toComment">toComment</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomDocument <b><a href="qdomnode.html#toDocument" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toDocument">toDocument</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomDocumentFragment <b><a href="qdomnode.html#toDocumentFragment" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toDocumentFragment">toDocumentFragment</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomDocumentType <b><a href="qdomnode.html#toDocumentType" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toDocumentType">toDocumentType</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomElement <b><a href="qdomnode.html#toElement" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toElement">toElement</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomEntity <b><a href="qdomnode.html#toEntity" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toEntity">toEntity</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomEntityReference <b><a href="qdomnode.html#toEntityReference" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toEntityReference">toEntityReference</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomNotation <b><a href="qdomnode.html#toNotation" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toNotation">toNotation</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomProcessingInstruction <b><a href="qdomnode.html#toProcessingInstruction" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toProcessingInstruction">toProcessingInstruction</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QDomText <b><a href="qdomnode.html#toText" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toText">toText</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>bool <b><a href="qdomnode.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#__eq__">__eq__</a></b> (<i>self</i>, QDomNode)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qdomnode.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#__ne__">__ne__</a></b> (<i>self</i>, QDomNode)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDomNode类是在DOM树中所有节点的基类。</p>
+<p>DOM中的许多函数返回一个QDomNode 。</p>
+<p>你可以找出使用节点的类型<a href="qdomnode.html#isAttr" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isAttr">isAttr</a>（ ）<a href="qdomnode.html#isCDATASection" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isCDATASection">isCDATASection</a>（ ）<a href="qdomnode.html#isDocumentFragment" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isDocumentFragment">isDocumentFragment</a>（ ）<a href="qdomnode.html#isDocument" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isDocument">isDocument</a>（ ）<a href="qdomnode.html#isDocumentType" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isDocumentType">isDocumentType</a>（ ）<a href="qdomnode.html#isElement" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isElement">isElement</a>（ ）<a href="qdomnode.html#isEntityReference" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isEntityReference">isEntityReference</a>（ ）<a href="qdomnode.html#isText" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isText">isText</a>（ ）<a href="qdomnode.html#isEntity" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isEntity">isEntity</a>（ ）<a href="qdomnode.html#isNotation" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNotation">isNotation</a>（ ）<a href="qdomnode.html#isProcessingInstruction" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isProcessingInstruction">isProcessingInstruction</a>（ ）<a href="qdomnode.html#isCharacterData" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isCharacterData">isCharacterData</a>（）和<a href="qdomnode.html#isComment" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isComment">isComment</a>（ ） 。</p>
+<p>一个QDomNode可以使用转换成它的子类<a href="qdomnode.html#toAttr" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toAttr">toAttr</a>（ ）<a href="qdomnode.html#toCDATASection" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toCDATASection">toCDATASection</a>（ ）<a href="qdomnode.html#toDocumentFragment" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toDocumentFragment">toDocumentFragment</a>（ ）<a href="qdomnode.html#toDocument" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toDocument">toDocument</a>（ ）<a href="qdomnode.html#toDocumentType" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toDocumentType">toDocumentType</a>（ ）<a href="qdomnode.html#toElement" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toElement">toElement</a>（ ）<a href="qdomnode.html#toEntityReference" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toEntityReference">toEntityReference</a>（ ）<a href="qdomnode.html#toText" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toText">toText</a>（ ）<a href="qdomnode.html#toEntity" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toEntity">toEntity</a>（ ）<a href="qdomnode.html#toNotation" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toNotation">toNotation</a>（ ）<a href="qdomnode.html#toProcessingInstruction" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toProcessingInstruction">toProcessingInstruction</a>（ ）<a href="qdomnode.html#toCharacterData" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toCharacterData">toCharacterData</a>（）或<a href="qdomnode.html#toComment" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toComment">toComment</a>（ ） 。您可以将节点转换为一个空节点<a href="qdomnode.html#clear" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#clear">clear</a>（ ） 。</p>
+<p>使用显式共享QDomNode类的副本共享他们的数据。这意味着修改一个节点会改变所有副本。这是结合特别有用，其职能返回QDomNode ，如<a href="qdomnode.html#firstChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#firstChild">firstChild</a>（ ） 。你可以使节点的独立（深）副本<a href="qdomnode.html#cloneNode" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#cloneNode">cloneNode</a>（ ） 。</p>
+<p>一个QDomNode可以为null ，很像一个空指针。创建一个空节点结果的副本在另一个空节点。这是不可能修改一个空节点，但也可以指定其他的，可能是非空节点到它。在这种情况下，空节点的拷贝将保持为空。您可以检查是否有QDomNode为null调用<a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">isNull</a>（ ） 。一个QDomNode （或任何派生类）的空的构造函数创建一个空节点。</p>
+<p>节点插入<a href="qdomnode.html#insertBefore" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#insertBefore">insertBefore</a>（ ）<a href="qdomnode.html#insertAfter" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#insertAfter">insertAfter</a>（）或<a href="qdomnode.html#appendChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#appendChild">appendChild</a>（ ） 。你可以用另一个替换一个节点使用<a href="qdomnode.html#replaceChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#replaceChild">replaceChild</a>（ ）并删除与节点<a href="qdomnode.html#removeChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#removeChild">removeChild</a>（ ） 。</p>
+<p>遍历节点使用<a href="qdomnode.html#firstChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#firstChild">firstChild</a>（）来获取一个节点的第一个孩子（如果有的话） ，并<a href="qdomnode.html#nextSibling" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#nextSibling">nextSibling</a>（ ）遍历。 QDomNode还提供<a href="qdomnode.html#lastChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#lastChild">lastChild</a>（ ）<a href="qdomnode.html#previousSibling" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#previousSibling">previousSibling</a>（）和<a href="qdomnode.html#parentNode" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#parentNode">parentNode</a>（ ） 。为了找到与特定节点名称使用的第一个子节点<a href="qdomnode.html#namedItem" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#namedItem">namedItem</a>（ ） 。</p>
+<p>要找出如果一个节点有子使用<a href="qdomnode.html#hasChildNodes" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#hasChildNodes">hasChildNodes</a>（ ），并得到所有的节点的子节点列表使用<a href="qdomnode.html#childNodes" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#childNodes">childNodes</a>（ ） 。</p>
+<p>节点的名称和值（这取决于它的类型而变化的意思）被返回<a href="qdomnode.html#nodeName" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#nodeName">nodeName</a>（）和<a href="qdomnode.html#nodeValue" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#nodeValue">nodeValue</a>（ ）分别。节点的类型是由返回<a href="qdomnode.html#nodeType" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#nodeType">nodeType</a>（ ） 。该节点的值可以与设置<a href="qdomnode.html#setNodeValue" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#setNodeValue">setNodeValue</a>（ ） 。</p>
+<p>到节点所属的文档是由返回<a href="qdomnode.html#ownerDocument" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#ownerDocument">ownerDocument</a>（ ） 。</p>
+<p>邻<a href="qdomtext.html" tppabs="http://pyqt4doc.appspot.com/qdomtext.html">QDomText</a>节点可以被合并成一个单一的节点<a href="qdomnode.html#normalize" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#normalize">normalize</a>（ ） 。</p>
+<p><a href="qdomelement.html" tppabs="http://pyqt4doc.appspot.com/qdomelement.html">QDomElement</a>节点都可以被检索到的属性<a href="qdomnode.html#attributes" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#attributes">attributes</a>（ ） 。</p>
+<p><a href="qdomelement.html" tppabs="http://pyqt4doc.appspot.com/qdomelement.html">QDomElement</a>和<a href="qdomattr.html" tppabs="http://pyqt4doc.appspot.com/qdomattr.html">QDomAttr</a>节点可以有哪些可以检索与命名空间<a href="qdomnode.html#namespaceURIx" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#namespaceURIx">namespaceURI</a>（ ） 。他们的本地名称与检索<a href="qdomnode.html#localName" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#localName">localName</a>（） ，以及它们与前缀<a href="qdomnode.html#prefix" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#prefix">prefix</a>（ ） 。前缀可以被设置<a href="qdomnode.html#setPrefix" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#setPrefix">setPrefix</a>（ ） 。</p>
+<p>您可以写节点的XML表示文本流<a href="qdomnode.html#save" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#save">save</a>（ ） 。</p>
+<p>下面的例子查找XML文档中的第一个元素，并打印所有属于它的直接子元素的名称。</p>
+<pre class="cpp">
+ <span class="type"><a href="qdomdocument.html" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html">QDomDocument</a></span> d;
+ d<span class="operator">.</span>setContent(someXML);
+ <span class="type">QDomNode</span> n <span class="operator">=</span> d<span class="operator">.</span><a href="qdomnode.html#firstChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#firstChild">firstChild</a>();
+ <span class="keyword">while</span> (<span class="operator">!</span>n<span class="operator">.</span>isNull()) {
+     <span class="keyword">if</span> (n<span class="operator">.</span>isElement()) {
+         <span class="type"><a href="qdomelement.html" tppabs="http://pyqt4doc.appspot.com/qdomelement.html">QDomElement</a></span> e <span class="operator">=</span> n<span class="operator">.</span>toElement();
+         cout <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">"Element name: "</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> e<span class="operator">.</span>tagName() <span class="operator">&lt;</span><span class="operator">&lt;</span> endl;
+         <span class="keyword">break</span>;
+     }
+     n <span class="operator">=</span> n<span class="operator">.</span>nextSibling();
+ }
+</pre>
+<p>关于文档对象模型有进一步的信息<a href="http://www.w3.org/TR/REC-DOM-Level-1/">Level 1</a>和<a href="http://www.w3.org/TR/DOM-Level-2-Core/">Level 2 Core</a>。对于更一般介绍的DOM实现的见<a href="qdomdocument.html" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html">QDomDocument</a>文档。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="EncodingPolicy-enum"></a>QDomNode.EncodingPolicy</h3>
+<p>此枚举指定如何<a href="qdomnode.html#save" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#save">QDomNode.save</a>（）确定序列化时使用何种编码。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDomNode.EncodingFromDocument</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该编码是从文件中取出。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDomNode.EncodingFromTextStream</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">该编码是从取出<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>。</td>
+</tr>
+</table>
+<p>另见的过载<a href="qdomnode.html#save" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#save">save</a>（ ）函数，它接受一个EncodingPolicy 。</p>
+<p>这个枚举被引入或修改的Qt 4.3 。</p>
+
+
+<h3 class="fn">
+<a name="NodeType-enum"></a>QDomNode.NodeType</h3>
+<p>这个枚举变量定义了节点的类型：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDomNode.ElementNode</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDomNode.AttributeNode</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDomNode.TextNode</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDomNode.CDATASectionNode</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDomNode.EntityReferenceNode</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDomNode.EntityNode</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QDomNode.ProcessingInstructionNode</tt>
+</td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDomNode.CommentNode</tt></td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDomNode.DocumentNode</tt></td>
+<td class="topAlign"><tt>9</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDomNode.DocumentTypeNode</tt></td>
+<td class="topAlign"><tt>10</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDomNode.DocumentFragmentNode</tt></td>
+<td class="topAlign"><tt>11</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDomNode.NotationNode</tt></td>
+<td class="topAlign"><tt>12</tt></td>
+<td class="topAlign"> </td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDomNode.BaseNode</tt></td>
+<td class="topAlign"><tt>21</tt></td>
+<td class="topAlign">A <a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a>对象，即，不是一个<a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a>子类。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QDomNode.CharacterDataNode</tt></td>
+<td class="topAlign"><tt>22</tt></td>
+<td class="topAlign"> </td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDomNode"></a>QDomNode.__init__ (<i>self</i>)</h3>
+<p>构造一个<a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">null</a>节点。</p>
+
+
+<h3 class="fn">
+<a name="QDomNode-2"></a>QDomNode.__init__ (<i>self</i>, <a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a>)</h3>
+<p>构造的副本<i>n</i>。</p>
+<p>副本的数据是共享的（浅拷贝） ：修改一个节点也将改变其他。如果你想使一个深拷贝，使用<a href="qdomnode.html#cloneNode" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#cloneNode">cloneNode</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="appendChild"></a><a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a> QDomNode.appendChild (<i>self</i>, <a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a> <i>newChild</i>)</h3>
+<p>追加可<i>newChild</i>作为节点的最后一个子。</p>
+<p>If <i>newChild</i>是另一个节点的子节点，它被重设父到该节点。如果<i>newChild</i>是这个节点的子节点，然后其在儿童中的列表中的位置被改变。</p>
+<p>If <i>newChild</i>是<a href="qdomdocumentfragment.html" tppabs="http://pyqt4doc.appspot.com/qdomdocumentfragment.html">QDomDocumentFragment</a>，然后该片段的孩子从片段取出并追加。</p>
+<p>If <i>newChild</i>是<a href="qdomelement.html" tppabs="http://pyqt4doc.appspot.com/qdomelement.html">QDomElement</a>与该节点是<a href="qdomdocument.html" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html">QDomDocument</a>已经有一个元素节点作为一个孩子，<i>newChild</i>不添加作为一个孩子，一个空节点返回。</p>
+<p>返回一个新的参考<i>newChild</i>成功或<a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">null node</a>失败。</p>
+<p>一个空节点（创建，例如，使用默认构造函数）在调用该函数不执行任何操作，并返回一个<a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">null node</a>。</p>
+<p>DOM规范不允许插入属性节点，但由于历史的原因， QDom接受他们无论如何。</p>
+<p><b>See also</b> <a href="qdomnode.html#insertBefore" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#insertBefore">insertBefore</a>（ ）<a href="qdomnode.html#insertAfter" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#insertAfter">insertAfter</a>（ ）<a href="qdomnode.html#replaceChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#replaceChild">replaceChild</a>（）和<a href="qdomnode.html#removeChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#removeChild">removeChild</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="attributes"></a><a href="qdomnamednodemap.html" tppabs="http://pyqt4doc.appspot.com/qdomnamednodemap.html">QDomNamedNodeMap</a> QDomNode.attributes (<i>self</i>)</h3>
+<p>将返回所有属性的命名节点图。仅提供了属性<a href="qdomelement.html" tppabs="http://pyqt4doc.appspot.com/qdomelement.html">QDomElement</a>秒。</p>
+<p>变更的属性的映射也将改变这个属性<a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a>。</p>
+
+
+<h3 class="fn">
+<a name="childNodes"></a><a href="qdomnodelist.html" tppabs="http://pyqt4doc.appspot.com/qdomnodelist.html">QDomNodeList</a> QDomNode.childNodes (<i>self</i>)</h3>
+<p>将返回所有直接子节点的列表。</p>
+<p>大多数情况下你都会调用这个函数的<a href="qdomelement.html" tppabs="http://pyqt4doc.appspot.com/qdomelement.html">QDomElement</a>对象。</p>
+<p>例如，如果XML文件看起来像这样：</p>
+<pre class="cpp">
+ <span class="operator">&lt;</span>body<span class="operator">&gt;</span>
+ <span class="operator">&lt;</span>h1<span class="operator">&gt;</span>Heading<span class="operator">&lt;</span><span class="operator">/</span>h1<span class="operator">&gt;</span>
+ <span class="operator">&lt;</span>p<span class="operator">&gt;</span>Hello <span class="operator">&lt;</span>b<span class="operator">&gt;</span>you<span class="operator">&lt;</span><span class="operator">/</span>b<span class="operator">&gt;</span><span class="operator">&lt;</span><span class="operator">/</span>p<span class="operator">&gt;</span>
+ <span class="operator">&lt;</span><span class="operator">/</span>body<span class="operator">&gt;</span>
+</pre>
+<p>那么对于“身体”元素的子节点列表将包含由\u003ch1\u003e标记，并由\u003cp\u003e标籤创建的节点创建的节点。</p>
+<p>在列表中的节点不会被复制，所以改变列表中的节点也将改变这个节点的子节点。</p>
+<p><b>See also</b> <a href="qdomnode.html#firstChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#firstChild">firstChild</a>（）和<a href="qdomnode.html#lastChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#lastChild">lastChild</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clear"></a>QDomNode.clear (<i>self</i>)</h3>
+<p>转换节点，进入一个空节点，如果它不是一个空节点之前，它的类型和内容将被删除。</p>
+<p><b>See also</b> <a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">isNull</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="cloneNode"></a><a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a> QDomNode.cloneNode (<i>self</i>, bool <i>deep</i> = True)</h3>
+<p>创建的一个深（不浅）副本<a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a>。</p>
+<p>If <i>deep</i>是真的，那么克隆完成递归这意味着所有节点的子节点是深复制了。如果<i>deep</i>是假的只有节点本身被复制，并且复制将没有子节点。</p>
+
+
+<h3 class="fn">
+<a name="columnNumber"></a>int QDomNode.columnNumber (<i>self</i>)</h3>
+<p>对于由创建节点<a href="qdomdocument.html#setContent" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html#setContent">QDomDocument.setContent</a>（ ） ，这个函数返回的节点被解析的XML文档中的列数。否则，返回-1 。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qdomnode.html#lineNumber" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#lineNumber">lineNumber</a>（）和<a href="qdomdocument.html#setContent" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html#setContent">QDomDocument.setContent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="firstChild"></a><a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a> QDomNode.firstChild (<i>self</i>)</h3>
+<p>返回节点的第一个孩子。如果不存在子节点时，一<a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">null node</a>返回。更改返回的节点也将改变在文档树中的节点。</p>
+<p><b>See also</b> <a href="qdomnode.html#lastChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#lastChild">lastChild</a>（）和<a href="qdomnode.html#childNodes" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#childNodes">childNodes</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="firstChildElement"></a><a href="qdomelement.html" tppabs="http://pyqt4doc.appspot.com/qdomelement.html">QDomElement</a> QDomNode.firstChildElement (<i>self</i>, QString <i>tagName</i> = QString())</h3>
+<p>返回与标记名称的第一个子元素<i>tagName</i>如果标记名非空，否则返回第一个子元素。返回如果没有这样的孩子存在一个空元素。</p>
+<p><b>See also</b> <a href="qdomnode.html#lastChildElement" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#lastChildElement">lastChildElement</a>（ ）<a href="qdomnode.html#previousSiblingElement" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#previousSiblingElement">previousSiblingElement</a>（）和<a href="qdomnode.html#nextSiblingElement" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#nextSiblingElement">nextSiblingElement</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasAttributes"></a>bool QDomNode.hasAttributes (<i>self</i>)</h3>
+<p>返回True如果节点有属性，否则返回False 。</p>
+<p><b>See also</b> <a href="qdomnode.html#attributes" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#attributes">attributes</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasChildNodes"></a>bool QDomNode.hasChildNodes (<i>self</i>)</h3>
+<p>返回True如果节点有一个或更多的孩子，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="insertAfter"></a><a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a> QDomNode.insertAfter (<i>self</i>, <a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a> <i>newChild</i>, <a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a> <i>refChild</i>)</h3>
+<p>插入节点<i>newChild</i>子节点之后<i>refChild</i>。<i>refChild</i>必须是此节点的直接子。如果<i>refChild</i> is <a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">null</a>然后<i>newChild</i>被追加为这个节点的最后一个子节点。</p>
+<p>If <i>newChild</i>是另一个节点的子节点，它被重设父到该节点。如果<i>newChild</i>是这个节点的子节点，然后其在儿童中的列表中的位置被改变。</p>
+<p>If <i>newChild</i>是<a href="qdomdocumentfragment.html" tppabs="http://pyqt4doc.appspot.com/qdomdocumentfragment.html">QDomDocumentFragment</a>，然后该片段的孩子从片段除去后插入<i>refChild</i>。</p>
+<p>返回一个新的参考<i>newChild</i>成功或<a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">null node</a>失败。</p>
+<p>DOM规范不允许插入属性节点，但由于历史的原因QDom接受他们不过。</p>
+<p><b>See also</b> <a href="qdomnode.html#insertBefore" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#insertBefore">insertBefore</a>（ ）<a href="qdomnode.html#replaceChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#replaceChild">replaceChild</a>（ ）<a href="qdomnode.html#removeChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#removeChild">removeChild</a>（）和<a href="qdomnode.html#appendChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#appendChild">appendChild</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="insertBefore"></a><a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a> QDomNode.insertBefore (<i>self</i>, <a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a> <i>newChild</i>, <a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a> <i>refChild</i>)</h3>
+<p>插入节点<i>newChild</i>该子节点之前<i>refChild</i>。<i>refChild</i>必须是此节点的直接子。如果<i>refChild</i> is <a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">null</a>然后<i>newChild</i>插入为节点的第一个孩子。</p>
+<p>If <i>newChild</i>是另一个节点的子节点，它被重设父到该节点。如果<i>newChild</i>是这个节点的子节点，然后其在儿童中的列表中的位置被改变。</p>
+<p>If <i>newChild</i>是<a href="qdomdocumentfragment.html" tppabs="http://pyqt4doc.appspot.com/qdomdocumentfragment.html">QDomDocumentFragment</a>，然后该片段的孩子从片段取出并插入前<i>refChild</i>。</p>
+<p>返回一个新的参考<i>newChild</i>成功或<a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">null node</a>失败。</p>
+<p>DOM规范不允许插入属性节点，但由于历史的原因QDom接受他们不过。</p>
+<p><b>See also</b> <a href="qdomnode.html#insertAfter" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#insertAfter">insertAfter</a>（ ）<a href="qdomnode.html#replaceChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#replaceChild">replaceChild</a>（ ）<a href="qdomnode.html#removeChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#removeChild">removeChild</a>（）和<a href="qdomnode.html#appendChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#appendChild">appendChild</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isAttr"></a>bool QDomNode.isAttr (<i>self</i>)</h3>
+<p>返回True如果该节点是一个属性，否则返回False 。</p>
+<p>如果这个函数返回True ，这并不意味着该对象是一个QDomAttribute ，你可以得到QDomAttribute与toAttribute （ ） 。</p>
+<p><b>See also</b> <a href="qdomnode.html#toAttr" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toAttr">toAttr</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isCDATASection"></a>bool QDomNode.isCDATASection (<i>self</i>)</h3>
+<p>返回True如果该节点是一个CDATA部分，否则返回False 。</p>
+<p>如果这个函数返回True ，这并不意味着该对象是一个<a href="qdomcdatasection.html" tppabs="http://pyqt4doc.appspot.com/qdomcdatasection.html">QDomCDATASection</a>，你可以得到<a href="qdomcdatasection.html" tppabs="http://pyqt4doc.appspot.com/qdomcdatasection.html">QDomCDATASection</a>同<a href="qdomnode.html#toCDATASection" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toCDATASection">toCDATASection</a>（ ） 。</p>
+<p><b>See also</b> <a href="qdomnode.html#toCDATASection" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toCDATASection">toCDATASection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isCharacterData"></a>bool QDomNode.isCharacterData (<i>self</i>)</h3>
+<p>返回True如果该节点是一个字符数据节点，否则返回False 。</p>
+<p>如果这个函数返回True ，这并不意味着该对象是一个<a href="qdomcharacterdata.html" tppabs="http://pyqt4doc.appspot.com/qdomcharacterdata.html">QDomCharacterData</a>，你可以得到<a href="qdomcharacterdata.html" tppabs="http://pyqt4doc.appspot.com/qdomcharacterdata.html">QDomCharacterData</a>同<a href="qdomnode.html#toCharacterData" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toCharacterData">toCharacterData</a>（ ） 。</p>
+<p><b>See also</b> <a href="qdomnode.html#toCharacterData" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toCharacterData">toCharacterData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isComment"></a>bool QDomNode.isComment (<i>self</i>)</h3>
+<p>返回True如果该节点是注释，否则返回False 。</p>
+<p>如果这个函数返回True ，这并不意味着该对象是一个<a href="qdomcomment.html" tppabs="http://pyqt4doc.appspot.com/qdomcomment.html">QDomComment</a>，你可以得到<a href="qdomcomment.html" tppabs="http://pyqt4doc.appspot.com/qdomcomment.html">QDomComment</a>同<a href="qdomnode.html#toComment" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toComment">toComment</a>（ ） 。</p>
+<p><b>See also</b> <a href="qdomnode.html#toComment" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toComment">toComment</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isDocument"></a>bool QDomNode.isDocument (<i>self</i>)</h3>
+<p>返回True如果该节点是一个文件，否则返回False 。</p>
+<p>如果这个函数返回True ，这并不意味着该对象是一个<a href="qdomdocument.html" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html">QDomDocument</a>，你可以得到<a href="qdomdocument.html" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html">QDomDocument</a>同<a href="qdomnode.html#toDocument" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toDocument">toDocument</a>（ ） 。</p>
+<p><b>See also</b> <a href="qdomnode.html#toDocument" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toDocument">toDocument</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isDocumentFragment"></a>bool QDomNode.isDocumentFragment (<i>self</i>)</h3>
+<p>返回True如果该节点是文档片段，否则返回False 。</p>
+<p>如果这个函数返回True ，这并不意味着该对象是一个<a href="qdomdocumentfragment.html" tppabs="http://pyqt4doc.appspot.com/qdomdocumentfragment.html">QDomDocumentFragment</a>，你可以得到<a href="qdomdocumentfragment.html" tppabs="http://pyqt4doc.appspot.com/qdomdocumentfragment.html">QDomDocumentFragment</a>同<a href="qdomnode.html#toDocumentFragment" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toDocumentFragment">toDocumentFragment</a>（ ） 。</p>
+<p><b>See also</b> <a href="qdomnode.html#toDocumentFragment" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toDocumentFragment">toDocumentFragment</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isDocumentType"></a>bool QDomNode.isDocumentType (<i>self</i>)</h3>
+<p>返回True如果该节点是一个文档类型，否则返回False 。</p>
+<p>如果这个函数返回True ，这并不意味着该对象是一个<a href="qdomdocumenttype.html" tppabs="http://pyqt4doc.appspot.com/qdomdocumenttype.html">QDomDocumentType</a>，你可以得到<a href="qdomdocumenttype.html" tppabs="http://pyqt4doc.appspot.com/qdomdocumenttype.html">QDomDocumentType</a>同<a href="qdomnode.html#toDocumentType" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toDocumentType">toDocumentType</a>（ ） 。</p>
+<p><b>See also</b> <a href="qdomnode.html#toDocumentType" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toDocumentType">toDocumentType</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isElement"></a>bool QDomNode.isElement (<i>self</i>)</h3>
+<p>返回True如果该节点是一个元素，否则返回False 。</p>
+<p>如果这个函数返回True ，这并不意味着该对象是一个<a href="qdomelement.html" tppabs="http://pyqt4doc.appspot.com/qdomelement.html">QDomElement</a>，你可以得到<a href="qdomelement.html" tppabs="http://pyqt4doc.appspot.com/qdomelement.html">QDomElement</a>同<a href="qdomnode.html#toElement" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toElement">toElement</a>（ ） 。</p>
+<p><b>See also</b> <a href="qdomnode.html#toElement" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toElement">toElement</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isEntity"></a>bool QDomNode.isEntity (<i>self</i>)</h3>
+<p>返回True如果该节点是一个实体，否则返回False 。</p>
+<p>如果这个函数返回True ，这并不意味着该对象是一个<a href="qdomentity.html" tppabs="http://pyqt4doc.appspot.com/qdomentity.html">QDomEntity</a>，你可以得到<a href="qdomentity.html" tppabs="http://pyqt4doc.appspot.com/qdomentity.html">QDomEntity</a>同<a href="qdomnode.html#toEntity" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toEntity">toEntity</a>（ ） 。</p>
+<p><b>See also</b> <a href="qdomnode.html#toEntity" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toEntity">toEntity</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isEntityReference"></a>bool QDomNode.isEntityReference (<i>self</i>)</h3>
+<p>返回True如果该节点是一个实体引用，否则返回False 。</p>
+<p>如果这个函数返回True ，这并不意味着该对象是一个<a href="qdomentityreference.html" tppabs="http://pyqt4doc.appspot.com/qdomentityreference.html">QDomEntityReference</a>，你可以得到<a href="qdomentityreference.html" tppabs="http://pyqt4doc.appspot.com/qdomentityreference.html">QDomEntityReference</a>同<a href="qdomnode.html#toEntityReference" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toEntityReference">toEntityReference</a>（ ） 。</p>
+<p><b>See also</b> <a href="qdomnode.html#toEntityReference" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toEntityReference">toEntityReference</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isNotation"></a>bool QDomNode.isNotation (<i>self</i>)</h3>
+<p>返回True如果该节点是一个符号，否则返回False 。</p>
+<p>如果这个函数返回True ，这并不意味着该对象是一个<a href="qdomnotation.html" tppabs="http://pyqt4doc.appspot.com/qdomnotation.html">QDomNotation</a>，你可以得到<a href="qdomnotation.html" tppabs="http://pyqt4doc.appspot.com/qdomnotation.html">QDomNotation</a>同<a href="qdomnode.html#toNotation" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toNotation">toNotation</a>（ ） 。</p>
+<p><b>See also</b> <a href="qdomnode.html#toNotation" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toNotation">toNotation</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isNull"></a>bool QDomNode.isNull (<i>self</i>)</h3>
+<p>如果此节点为空，则返回True （即，如果它没有类型或内容），否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isProcessingInstruction"></a>bool QDomNode.isProcessingInstruction (<i>self</i>)</h3>
+<p>返回True如果该节点是一个处理指令，否则返回False 。</p>
+<p>如果这个函数返回True ，这并不意味着该对象是一个<a href="qdomprocessinginstruction.html" tppabs="http://pyqt4doc.appspot.com/qdomprocessinginstruction.html">QDomProcessingInstruction</a>，你可以得到QProcessingInstruction与<a href="qdomnode.html#toProcessingInstruction" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toProcessingInstruction">toProcessingInstruction</a>（ ） 。</p>
+<p><b>See also</b> <a href="qdomnode.html#toProcessingInstruction" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toProcessingInstruction">toProcessingInstruction</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isSupported"></a>bool QDomNode.isSupported (<i>self</i>, QString <i>feature</i>, QString <i>version</i>)</h3>
+<p>DOM实现是否实现该功能，则返回True<i>feature</i>而这个功能是支持在版本这个节点<i>version</i>否则返回False 。</p>
+<p><b>See also</b> <a href="qdomimplementation.html#hasFeature" tppabs="http://pyqt4doc.appspot.com/qdomimplementation.html#hasFeature">QDomImplementation.hasFeature</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isText"></a>bool QDomNode.isText (<i>self</i>)</h3>
+<p>返回True如果该节点是一个文本节点，否则返回False 。</p>
+<p>如果这个函数返回True ，这并不意味着该对象是一个<a href="qdomtext.html" tppabs="http://pyqt4doc.appspot.com/qdomtext.html">QDomText</a>，你可以得到<a href="qdomtext.html" tppabs="http://pyqt4doc.appspot.com/qdomtext.html">QDomText</a>同<a href="qdomnode.html#toText" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toText">toText</a>（ ） 。</p>
+<p><b>See also</b> <a href="qdomnode.html#toText" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toText">toText</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="lastChild"></a><a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a> QDomNode.lastChild (<i>self</i>)</h3>
+<p>返回节点的最后一个子。如果不存在子节点时，一<a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">null node</a>返回。更改返回的节点也将改变在文档树中的节点。</p>
+<p><b>See also</b> <a href="qdomnode.html#firstChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#firstChild">firstChild</a>（）和<a href="qdomnode.html#childNodes" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#childNodes">childNodes</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="lastChildElement"></a><a href="qdomelement.html" tppabs="http://pyqt4doc.appspot.com/qdomelement.html">QDomElement</a> QDomNode.lastChildElement (<i>self</i>, QString <i>tagName</i> = QString())</h3>
+<p>返回最后一个子元素与标籤名<i>tagName</i>如果标记名非空，否则返回最后一个子元素。返回如果没有这样的孩子存在一个空元素。</p>
+<p><b>See also</b> <a href="qdomnode.html#firstChildElement" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#firstChildElement">firstChildElement</a>（ ）<a href="qdomnode.html#previousSiblingElement" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#previousSiblingElement">previousSiblingElement</a>（）和<a href="qdomnode.html#nextSiblingElement" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#nextSiblingElement">nextSiblingElement</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="lineNumber"></a>int QDomNode.lineNumber (<i>self</i>)</h3>
+<p>对于由创建节点<a href="qdomdocument.html#setContent" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html#setContent">QDomDocument.setContent</a>（ ） ，这个函数返回的节点被解析的XML文档中的行号。否则，返回-1 。</p>
+<p>这个函数是Qt 4.1中引入。</p>
+<p><b>See also</b> <a href="qdomnode.html#columnNumber" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#columnNumber">columnNumber</a>（）和<a href="qdomdocument.html#setContent" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html#setContent">QDomDocument.setContent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="localName"></a>QString QDomNode.localName (<i>self</i>)</h3>
+<p>如果节点使用命名空间，这个函数返回节点的本地名称，否则返回一个空字符串。</p>
+<p>类型的唯一节点<a href="qdomnode.html#NodeType-enum" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#NodeType-enum">ElementNode</a> or <a href="qdomnode.html#NodeType-enum" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#NodeType-enum">AttributeNode</a>可以有命名空间。命名空间必须被指定在创建时，它是不可能事后添加的命名空间。</p>
+<p><a href="qdomdocument.html#createAttributeNS" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html#createAttributeNS">QDomDocument.createAttributeNS</a>（ ）</p>
+<p><b>See also</b> <a href="qdomnode.html#prefix" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#prefix">prefix</a>（ ）<a href="qdomnode.html#namespaceURIx" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#namespaceURIx">namespaceURI</a>（）和<a href="qdomdocument.html#createElementNS" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html#createElementNS">QDomDocument.createElementNS</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="namedItem"></a><a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a> QDomNode.namedItem (<i>self</i>, QString <i>name</i>)</h3>
+<p>返回的第一个直接子节点<a href="qdomnode.html#nodeName" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#nodeName">nodeName</a>（ ）等于<i>name</i>。</p>
+<p>如果没有这样的直接子存在，一<a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">null node</a>返回。</p>
+<p><b>See also</b> <a href="qdomnode.html#nodeName" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#nodeName">nodeName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="namespaceURI"></a>QString QDomNode.namespaceURI (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="nextSibling"></a><a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a> QDomNode.nextSibling (<i>self</i>)</h3>
+<p>返回在文档树中的下一个同级。更改返回的节点也将改变在文档树中的节点。</p>
+<p>如果你有这样的XML ：</p>
+<pre class="cpp">
+ <span class="operator">&lt;</span>h1<span class="operator">&gt;</span>Heading<span class="operator">&lt;</span><span class="operator">/</span>h1<span class="operator">&gt;</span>
+ <span class="operator">&lt;</span>p<span class="operator">&gt;</span>The text<span class="operator">.</span><span class="operator">.</span><span class="operator">.</span><span class="operator">&lt;</span><span class="operator">/</span>p<span class="operator">&gt;</span>
+ <span class="operator">&lt;</span>h2<span class="operator">&gt;</span>Next heading<span class="operator">&lt;</span><span class="operator">/</span>h2<span class="operator">&gt;</span>
+</pre>
+<p>这<a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a>代表\u003cp\u003e标籤， nextSibling （ ）将返回一个代表该\u003cH2\u003e标籤的节点。</p>
+<p><b>See also</b> <a href="qdomnode.html#previousSibling" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#previousSibling">previousSibling</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="nextSiblingElement"></a><a href="qdomelement.html" tppabs="http://pyqt4doc.appspot.com/qdomelement.html">QDomElement</a> QDomNode.nextSiblingElement (<i>self</i>, QString <i>tagName</i> = QString())</h3>
+<p>返回下一个同级元素与标籤名<i>tagName</i>如果<i>tagName</i>非空，否则返回任何一个同级元素。返回如果没有这样的兄弟姐妹存在一个空元素。</p>
+<p><b>See also</b> <a href="qdomnode.html#firstChildElement" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#firstChildElement">firstChildElement</a>（ ）<a href="qdomnode.html#previousSiblingElement" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#previousSiblingElement">previousSiblingElement</a>（）和<a href="qdomnode.html#lastChildElement" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#lastChildElement">lastChildElement</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="nodeName"></a>QString QDomNode.nodeName (<i>self</i>)</h3>
+<p>返回节点的名称。</p>
+<p>这个名字的含义依赖于子类：</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Name</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td><a href="qdomattr.html" tppabs="http://pyqt4doc.appspot.com/qdomattr.html">QDomAttr</a></td>
+<td>The name of the attribute</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qdomcdatasection.html" tppabs="http://pyqt4doc.appspot.com/qdomcdatasection.html">QDomCDATASection</a></td>
+<td>The string "#cdata-section"</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qdomcomment.html" tppabs="http://pyqt4doc.appspot.com/qdomcomment.html">QDomComment</a></td>
+<td>The string "#comment"</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qdomdocument.html" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html">QDomDocument</a></td>
+<td>The string "#document"</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qdomdocumentfragment.html" tppabs="http://pyqt4doc.appspot.com/qdomdocumentfragment.html">QDomDocumentFragment</a></td>
+<td>The string "#document-fragment"</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qdomdocumenttype.html" tppabs="http://pyqt4doc.appspot.com/qdomdocumenttype.html">QDomDocumentType</a></td>
+<td>The name of the document type</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qdomelement.html" tppabs="http://pyqt4doc.appspot.com/qdomelement.html">QDomElement</a></td>
+<td>The tag name</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qdomentity.html" tppabs="http://pyqt4doc.appspot.com/qdomentity.html">QDomEntity</a></td>
+<td>The name of the entity</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qdomentityreference.html" tppabs="http://pyqt4doc.appspot.com/qdomentityreference.html">QDomEntityReference</a></td>
+<td>The name of the referenced entity</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qdomnotation.html" tppabs="http://pyqt4doc.appspot.com/qdomnotation.html">QDomNotation</a></td>
+<td>The name of the notation</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qdomprocessinginstruction.html" tppabs="http://pyqt4doc.appspot.com/qdomprocessinginstruction.html">QDomProcessingInstruction</a></td>
+<td>The target of the processing instruction</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qdomtext.html" tppabs="http://pyqt4doc.appspot.com/qdomtext.html">QDomText</a></td>
+<td>The string "#text"</td>
+</tr>
+</table>
+<p><b>Note:</b>处理元素和属性节点的名称时，此功能不采取命名空间的存在考虑。因此，返回的名称可以包含任何命名空间前缀可能存在。为了获得一个元素或属性的节点名，使用<a href="qdomnode.html#localName" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#localName">localName</a>（）;获得命名空间前缀，使用<a href="qdomnode.html#namespaceURIx" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#namespaceURIx">namespaceURI</a>（ ） 。</p>
+<p><b>See also</b> <a href="qdomnode.html#nodeValue" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#nodeValue">nodeValue</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="nodeType"></a><a href="qdomnode.html#NodeType-enum" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#NodeType-enum">NodeType</a> QDomNode.nodeType (<i>self</i>)</h3>
+<p>返回节点的类型。</p>
+<p><b>See also</b> <a href="qdomnode.html#toAttr" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toAttr">toAttr</a>（ ）<a href="qdomnode.html#toCDATASection" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toCDATASection">toCDATASection</a>（ ）<a href="qdomnode.html#toDocumentFragment" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toDocumentFragment">toDocumentFragment</a>（ ）<a href="qdomnode.html#toDocument" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toDocument">toDocument</a>（ ）<a href="qdomnode.html#toDocumentType" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toDocumentType">toDocumentType</a>（ ）<a href="qdomnode.html#toElement" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toElement">toElement</a>（ ）<a href="qdomnode.html#toEntityReference" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toEntityReference">toEntityReference</a>（ ）<a href="qdomnode.html#toText" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toText">toText</a>（ ）<a href="qdomnode.html#toEntity" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toEntity">toEntity</a>（ ）<a href="qdomnode.html#toNotation" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toNotation">toNotation</a>（ ）<a href="qdomnode.html#toProcessingInstruction" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toProcessingInstruction">toProcessingInstruction</a>（ ）<a href="qdomnode.html#toCharacterData" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toCharacterData">toCharacterData</a>（）和<a href="qdomnode.html#toComment" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#toComment">toComment</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="nodeValue"></a>QString QDomNode.nodeValue (<i>self</i>)</h3>
+<p>返回节点的值。</p>
+<p>该值的含义依赖于子类：</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Name</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td><a href="qdomattr.html" tppabs="http://pyqt4doc.appspot.com/qdomattr.html">QDomAttr</a></td>
+<td>The attribute value</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qdomcdatasection.html" tppabs="http://pyqt4doc.appspot.com/qdomcdatasection.html">QDomCDATASection</a></td>
+<td>The content of the CDATA section</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qdomcomment.html" tppabs="http://pyqt4doc.appspot.com/qdomcomment.html">QDomComment</a></td>
+<td>The comment</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qdomprocessinginstruction.html" tppabs="http://pyqt4doc.appspot.com/qdomprocessinginstruction.html">QDomProcessingInstruction</a></td>
+<td>The data of the processing instruction</td>
+</tr>
+<tr class="odd" valign="top">
+<td><a href="qdomtext.html" tppabs="http://pyqt4doc.appspot.com/qdomtext.html">QDomText</a></td>
+<td>The text</td>
+</tr>
+</table>
+<p>所有其他子类没有一个节点值，将返回一个空字符串。</p>
+<p><b>See also</b> <a href="qdomnode.html#setNodeValue" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#setNodeValue">setNodeValue</a>（）和<a href="qdomnode.html#nodeName" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#nodeName">nodeName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="normalize"></a>QDomNode.normalize (<i>self</i>)</h3>
+<p>调用正常化（ ）的元素及其所有子转换成标准格式。这意味着相邻的<a href="qdomtext.html" tppabs="http://pyqt4doc.appspot.com/qdomtext.html">QDomText</a>对象将被合并成一个单一的文本对象（<a href="qdomcdatasection.html" tppabs="http://pyqt4doc.appspot.com/qdomcdatasection.html">QDomCDATASection</a>节点未合并） 。</p>
+
+
+<h3 class="fn">
+<a name="ownerDocument"></a><a href="qdomdocument.html" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html">QDomDocument</a> QDomNode.ownerDocument (<i>self</i>)</h3>
+<p>返回此节点所属的文档。</p>
+
+
+<h3 class="fn">
+<a name="parentNode"></a><a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a> QDomNode.parentNode (<i>self</i>)</h3>
+<p>返回父节点。如果该节点没有父级，则返回一个空节点（即该节点<a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">isNull</a>（ ）返回True ） 。</p>
+
+
+<h3 class="fn">
+<a name="prefix"></a>QString QDomNode.prefix (<i>self</i>)</h3>
+<p>返回节点或空字符串的命名空间前缀，如果该节点没有命名空间前缀。</p>
+<p>类型的唯一节点<a href="qdomnode.html#NodeType-enum" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#NodeType-enum">ElementNode</a> or <a href="qdomnode.html#NodeType-enum" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#NodeType-enum">AttributeNode</a>可以有命名空间。命名空间前缀必须在创建时指定。如果一个节点是用命名空间前缀创建的，则可以在以后改变它<a href="qdomnode.html#setPrefix" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#setPrefix">setPrefix</a>（ ） 。</p>
+<p>如果您创建一个元素或属性<a href="qdomdocument.html#createElement" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html#createElement">QDomDocument.createElement</a>（）或<a href="qdomdocument.html#createAttribute" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html#createAttribute">QDomDocument.createAttribute</a>（ ） ，前缀将是一个空字符串。如果你使用<a href="qdomdocument.html#createElementNS" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html#createElementNS">QDomDocument.createElementNS</a>（）或<a href="qdomdocument.html#createAttributeNS" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html#createAttributeNS">QDomDocument.createAttributeNS</a>（）代替，前缀不会是一个空字符串，但它可能是一个空字符串，如果该名称没有前缀。</p>
+<p><a href="qdomdocument.html#createElementNS" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html#createElementNS">QDomDocument.createElementNS</a>（ ）<a href="qdomdocument.html#createAttributeNS" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html#createAttributeNS">QDomDocument.createAttributeNS</a>（ ）</p>
+<p><b>See also</b> <a href="qdomnode.html#setPrefix" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#setPrefix">setPrefix</a>（ ）<a href="qdomnode.html#localName" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#localName">localName</a>（）和<a href="qdomnode.html#namespaceURIx" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#namespaceURIx">namespaceURI</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="previousSibling"></a><a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a> QDomNode.previousSibling (<i>self</i>)</h3>
+<p>返回在文档树中的前一个同级。更改返回的节点也将改变在文档树中的节点。</p>
+<p>例如，如果你有这样的XML ：</p>
+<pre class="cpp">
+ <span class="operator">&lt;</span>h1<span class="operator">&gt;</span>Heading<span class="operator">&lt;</span><span class="operator">/</span>h1<span class="operator">&gt;</span>
+ <span class="operator">&lt;</span>p<span class="operator">&gt;</span>The text<span class="operator">.</span><span class="operator">.</span><span class="operator">.</span><span class="operator">&lt;</span><span class="operator">/</span>p<span class="operator">&gt;</span>
+ <span class="operator">&lt;</span>h2<span class="operator">&gt;</span>Next heading<span class="operator">&lt;</span><span class="operator">/</span>h2<span class="operator">&gt;</span>
+</pre>
+<p>这<a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a>代表\u003cp\u003e标籤， previousSibling （ ）将返回一个代表该\u003ch1\u003e标记的节点。</p>
+<p><b>See also</b> <a href="qdomnode.html#nextSibling" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#nextSibling">nextSibling</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="previousSiblingElement"></a><a href="qdomelement.html" tppabs="http://pyqt4doc.appspot.com/qdomelement.html">QDomElement</a> QDomNode.previousSiblingElement (<i>self</i>, QString <i>tagName</i> = QString())</h3>
+<p>返回前sibilng元素与标籤名<i>tagName</i>如果<i>tagName</i>非空，否则返回任何一个同级元素。返回如果没有这样的兄弟姐妹存在一个空元素。</p>
+<p><b>See also</b> <a href="qdomnode.html#firstChildElement" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#firstChildElement">firstChildElement</a>（ ）<a href="qdomnode.html#nextSiblingElement" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#nextSiblingElement">nextSiblingElement</a>（）和<a href="qdomnode.html#lastChildElement" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#lastChildElement">lastChildElement</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="removeChild"></a><a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a> QDomNode.removeChild (<i>self</i>, <a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a> <i>oldChild</i>)</h3>
+<p>移除<i>oldChild</i>从孩子的列表。<i>oldChild</i>必须是此节点的直接子。</p>
+<p>返回一个新的参考<i>oldChild</i>成功或<a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">null node</a>失败。</p>
+<p><b>See also</b> <a href="qdomnode.html#insertBefore" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#insertBefore">insertBefore</a>（ ）<a href="qdomnode.html#insertAfter" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#insertAfter">insertAfter</a>（ ）<a href="qdomnode.html#replaceChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#replaceChild">replaceChild</a>（）和<a href="qdomnode.html#appendChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#appendChild">appendChild</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="replaceChild"></a><a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a> QDomNode.replaceChild (<i>self</i>, <a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a> <i>newChild</i>, <a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a> <i>oldChild</i>)</h3>
+<p>替换<i>oldChild</i>同<i>newChild</i>。<i>oldChild</i>必须是此节点的直接子。</p>
+<p>If <i>newChild</i>是另一个节点的子节点，它被重设父到该节点。如果<i>newChild</i>是这个节点的子节点，然后其在儿童中的列表中的位置被改变。</p>
+<p>If <i>newChild</i>是<a href="qdomdocumentfragment.html" tppabs="http://pyqt4doc.appspot.com/qdomdocumentfragment.html">QDomDocumentFragment</a>，然后<i>oldChild</i>被替换的所有片段的孩子。</p>
+<p>返回一个新的参考<i>oldChild</i>成功或<a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">null node</a>一个失败。</p>
+<p><b>See also</b> <a href="qdomnode.html#insertBefore" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#insertBefore">insertBefore</a>（ ）<a href="qdomnode.html#insertAfter" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#insertAfter">insertAfter</a>（ ）<a href="qdomnode.html#removeChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#removeChild">removeChild</a>（）和<a href="qdomnode.html#appendChild" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#appendChild">appendChild</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="save"></a>QDomNode.save (<i>self</i>, <a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>, int)</h3>
+<p>写入节点的XML表示形式及其所有子到流<i>str</i>。此函数使用<i>indent</i>作为空间缩进量的节点。</p>
+<p>如果这个节点是一个文档节点，文本流的编码<i>str</i>的编码是由名为“ xml”的治疗处理指令的XML声明，如果这样的人存在，否则默认为UTF - 8设置。 XML声明不是处理指令，但存在由于历史原因，这个行为。如果这个节点不是一个文档节点，文本流的编码。</p>
+<p>如果文档中包含无效的XML字符或不能在给定的编码进行编码的字符，结果和行为是不确定的。</p>
+
+
+<h3 class="fn">
+<a name="save-2"></a>QDomNode.save (<i>self</i>, <a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>, int, <a href="qdomnode.html#EncodingPolicy-enum" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#EncodingPolicy-enum">EncodingPolicy</a>)</h3>
+<p>If <i>encodingPolicy</i> is <a href="qdomnode.html#EncodingPolicy-enum" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#EncodingPolicy-enum">QDomNode.EncodingFromDocument</a>这个函数的作用是保存（<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>＆海峡，诠释缩进） 。</p>
+<p>If <i>encodingPolicy</i> is <a href="qdomnode.html#EncodingPolicy-enum" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#EncodingPolicy-enum">EncodingFromTextStream</a>而这个节点是一个文档节点，这个函数的行为就像保存（<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>＆海峡，诠释缩进）除了在文本流中指定的编码<i>str</i>被使用。</p>
+<p>如果文档中包含无效的XML字符或不能在给定的编码进行编码的字符，结果和行为是不确定的。</p>
+<p>这个函数中引入了Qt 4.2中。</p>
+
+
+<h3 class="fn">
+<a name="setNodeValue"></a>QDomNode.setNodeValue (<i>self</i>, QString)</h3>
+<p>设置节点的值<i>v</i>。</p>
+<p><b>See also</b> <a href="qdomnode.html#nodeValue" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#nodeValue">nodeValue</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setPrefix"></a>QDomNode.setPrefix (<i>self</i>, QString <i>pre</i>)</h3>
+<p>如果该节点有一个命名空间前缀，这个功能改变了节点的命名空间前缀<i>pre</i>。否则，这个函数不执行任何操作。</p>
+<p>类型的唯一节点<a href="qdomnode.html#NodeType-enum" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#NodeType-enum">ElementNode</a> or <a href="qdomnode.html#NodeType-enum" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#NodeType-enum">AttributeNode</a>可以有命名空间。命名空间前缀必须要在创建时指定的，它是不可能添加一个命名空间前缀之后。</p>
+<p><a href="qdomdocument.html#createElementNS" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html#createElementNS">QDomDocument.createElementNS</a>（ ）<a href="qdomdocument.html#createAttributeNS" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html#createAttributeNS">QDomDocument.createAttributeNS</a>（ ）</p>
+<p><b>See also</b> <a href="qdomnode.html#prefix" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#prefix">prefix</a>（ ）<a href="qdomnode.html#localName" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#localName">localName</a>（）和<a href="qdomnode.html#namespaceURIx" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#namespaceURIx">namespaceURI</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toAttr"></a><a href="qdomattr.html" tppabs="http://pyqt4doc.appspot.com/qdomattr.html">QDomAttr</a> QDomNode.toAttr (<i>self</i>)</h3>
+<p>将一个<a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a>成<a href="qdomattr.html" tppabs="http://pyqt4doc.appspot.com/qdomattr.html">QDomAttr</a>。如果节点不是一个属性，返回的对象将是<a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">null</a>。</p>
+<p><b>See also</b> <a href="qdomnode.html#isAttr" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isAttr">isAttr</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toCDATASection"></a><a href="qdomcdatasection.html" tppabs="http://pyqt4doc.appspot.com/qdomcdatasection.html">QDomCDATASection</a> QDomNode.toCDATASection (<i>self</i>)</h3>
+<p>将一个<a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a>成<a href="qdomcdatasection.html" tppabs="http://pyqt4doc.appspot.com/qdomcdatasection.html">QDomCDATASection</a>。如果该节点不是一个CDATA节，返回的对象将是<a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">null</a>。</p>
+<p><b>See also</b> <a href="qdomnode.html#isCDATASection" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isCDATASection">isCDATASection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toCharacterData"></a><a href="qdomcharacterdata.html" tppabs="http://pyqt4doc.appspot.com/qdomcharacterdata.html">QDomCharacterData</a> QDomNode.toCharacterData (<i>self</i>)</h3>
+<p>将一个<a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a>成<a href="qdomcharacterdata.html" tppabs="http://pyqt4doc.appspot.com/qdomcharacterdata.html">QDomCharacterData</a>。如果该节点不是一个字符数据节点返回的对象将是<a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">null</a>。</p>
+<p><b>See also</b> <a href="qdomnode.html#isCharacterData" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isCharacterData">isCharacterData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toComment"></a><a href="qdomcomment.html" tppabs="http://pyqt4doc.appspot.com/qdomcomment.html">QDomComment</a> QDomNode.toComment (<i>self</i>)</h3>
+<p>将一个<a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a>成<a href="qdomcomment.html" tppabs="http://pyqt4doc.appspot.com/qdomcomment.html">QDomComment</a>。如果该节点是不是注释返回的对象将是<a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">null</a>。</p>
+<p><b>See also</b> <a href="qdomnode.html#isComment" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isComment">isComment</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toDocument"></a><a href="qdomdocument.html" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html">QDomDocument</a> QDomNode.toDocument (<i>self</i>)</h3>
+<p>将一个<a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a>成<a href="qdomdocument.html" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html">QDomDocument</a>。如果该节点不是文档返回的对象将是<a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">null</a>。</p>
+<p><b>See also</b> <a href="qdomnode.html#isDocument" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isDocument">isDocument</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toDocumentFragment"></a><a href="qdomdocumentfragment.html" tppabs="http://pyqt4doc.appspot.com/qdomdocumentfragment.html">QDomDocumentFragment</a> QDomNode.toDocumentFragment (<i>self</i>)</h3>
+<p>将一个<a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a>成<a href="qdomdocumentfragment.html" tppabs="http://pyqt4doc.appspot.com/qdomdocumentfragment.html">QDomDocumentFragment</a>。如果该节点不是一个文档片段返回的对象将是<a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">null</a>。</p>
+<p><b>See also</b> <a href="qdomnode.html#isDocumentFragment" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isDocumentFragment">isDocumentFragment</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toDocumentType"></a><a href="qdomdocumenttype.html" tppabs="http://pyqt4doc.appspot.com/qdomdocumenttype.html">QDomDocumentType</a> QDomNode.toDocumentType (<i>self</i>)</h3>
+<p>将一个<a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a>成<a href="qdomdocumenttype.html" tppabs="http://pyqt4doc.appspot.com/qdomdocumenttype.html">QDomDocumentType</a>。如果该节点不是文档类型返回的对象将是<a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">null</a>。</p>
+<p><b>See also</b> <a href="qdomnode.html#isDocumentType" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isDocumentType">isDocumentType</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toElement"></a><a href="qdomelement.html" tppabs="http://pyqt4doc.appspot.com/qdomelement.html">QDomElement</a> QDomNode.toElement (<i>self</i>)</h3>
+<p>将一个<a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a>成<a href="qdomelement.html" tppabs="http://pyqt4doc.appspot.com/qdomelement.html">QDomElement</a>。如果节点不是元素返回的对象将是<a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">null</a>。</p>
+<p><b>See also</b> <a href="qdomnode.html#isElement" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isElement">isElement</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toEntity"></a><a href="qdomentity.html" tppabs="http://pyqt4doc.appspot.com/qdomentity.html">QDomEntity</a> QDomNode.toEntity (<i>self</i>)</h3>
+<p>将一个<a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a>成<a href="qdomentity.html" tppabs="http://pyqt4doc.appspot.com/qdomentity.html">QDomEntity</a>。如果节点不是一个实体返回的对象将是<a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">null</a>。</p>
+<p><b>See also</b> <a href="qdomnode.html#isEntity" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isEntity">isEntity</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toEntityReference"></a><a href="qdomentityreference.html" tppabs="http://pyqt4doc.appspot.com/qdomentityreference.html">QDomEntityReference</a> QDomNode.toEntityReference (<i>self</i>)</h3>
+<p>将一个<a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a>成<a href="qdomentityreference.html" tppabs="http://pyqt4doc.appspot.com/qdomentityreference.html">QDomEntityReference</a>。如果节点不是一个实体引用，返回的对象将是<a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">null</a>。</p>
+<p><b>See also</b> <a href="qdomnode.html#isEntityReference" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isEntityReference">isEntityReference</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toNotation"></a><a href="qdomnotation.html" tppabs="http://pyqt4doc.appspot.com/qdomnotation.html">QDomNotation</a> QDomNode.toNotation (<i>self</i>)</h3>
+<p>将一个<a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a>成<a href="qdomnotation.html" tppabs="http://pyqt4doc.appspot.com/qdomnotation.html">QDomNotation</a>。如果该节点不是一个符号返回的对象将是<a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">null</a>。</p>
+<p><b>See also</b> <a href="qdomnode.html#isNotation" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNotation">isNotation</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toProcessingInstruction"></a><a href="qdomprocessinginstruction.html" tppabs="http://pyqt4doc.appspot.com/qdomprocessinginstruction.html">QDomProcessingInstruction</a> QDomNode.toProcessingInstruction (<i>self</i>)</h3>
+<p>将一个<a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a>成<a href="qdomprocessinginstruction.html" tppabs="http://pyqt4doc.appspot.com/qdomprocessinginstruction.html">QDomProcessingInstruction</a>。如果节点不是处理指令返回的对象将是<a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">null</a>。</p>
+<p><b>See also</b> <a href="qdomnode.html#isProcessingInstruction" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isProcessingInstruction">isProcessingInstruction</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toText"></a><a href="qdomtext.html" tppabs="http://pyqt4doc.appspot.com/qdomtext.html">QDomText</a> QDomNode.toText (<i>self</i>)</h3>
+<p>将一个<a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a>成<a href="qdomtext.html" tppabs="http://pyqt4doc.appspot.com/qdomtext.html">QDomText</a>。如果该节点不是文本，返回的对象将是<a href="qdomnode.html#isNull" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isNull">null</a>。</p>
+<p><b>See also</b> <a href="qdomnode.html#isText" tppabs="http://pyqt4doc.appspot.com/qdomnode.html#isText">isText</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="__eq__"></a>bool QDomNode.__eq__ (<i>self</i>, <a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QDomNode.__ne__ (<i>self</i>, <a href="qdomnode.html" tppabs="http://pyqt4doc.appspot.com/qdomnode.html">QDomNode</a>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

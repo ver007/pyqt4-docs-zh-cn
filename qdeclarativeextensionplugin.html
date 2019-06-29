@@ -1,0 +1,146 @@
+﻿<html>
+<head>
+<title>QDeclarativeExtensionPlugin Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QDeclarativeExtensionPlugin Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtdeclarative.html">QtDeclarative</a> module]</sup></sup>
+</h1>
+<p>该QDeclarativeExtensionPlugin类提供了一个抽象基自定义QML扩展插件。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qdeclarativeextensionplugin.html#QDeclarativeExtensionPlugin" tppabs="http://pyqt4doc.appspot.com/qdeclarativeextensionplugin.html#QDeclarativeExtensionPlugin">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdeclarativeextensionplugin.html#initializeEngine" tppabs="http://pyqt4doc.appspot.com/qdeclarativeextensionplugin.html#initializeEngine">initializeEngine</a></b> (<i>self</i>, QDeclarativeEngine <i>engine</i>, str <i>uri</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qdeclarativeextensionplugin.html#registerTypes" tppabs="http://pyqt4doc.appspot.com/qdeclarativeextensionplugin.html#registerTypes">registerTypes</a></b> (<i>self</i>, str <i>uri</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QDeclarativeExtensionPlugin类提供了一个抽象基自定义QML扩展插件。</p>
+<p>QDeclarativeExtensionPlugin是一个插件接口，使得它可以创建能够动态地加载到QML应用QML扩展。这些扩展允许自定义的QML类型被提供给QML引擎。</p>
+<p>写一个QML扩展插件：</p>
+<ul>
+<li>Subclass QDeclarativeExtensionPlugin, implement <a href="qdeclarativeextensionplugin.html#registerTypes" tppabs="http://pyqt4doc.appspot.com/qdeclarativeextensionplugin.html#registerTypes">registerTypes</a>()
+method to register types using <a href="qdeclarativeengine.html#qmlRegisterType" tppabs="http://pyqt4doc.appspot.com/qdeclarativeengine.html#qmlRegisterType">qmlRegisterType</a>(),
+and export the class using the <a href="index.htm#Q_EXPORT_PLUGIN2" tppabs="http://pyqt4doc.appspot.com/qtplugin.html#Q_EXPORT_PLUGIN2">Q_EXPORT_PLUGIN2</a>() macro</li>
+<li>Write an appropriate project file for the plugin</li>
+<li>Create a <a href="index.htm#writing-a-qmldir-file" tppabs="http://pyqt4doc.appspot.com/qdeclarativemodules.html#writing-a-qmldir-file">qmldir file</a> to
+describe the plugin</li>
+</ul>
+<p>QML扩展插件可用于提供任何特定应用程序或库类插件。图书馆插件应该限制自己注册的类型，因为任何操作引擎的根上下文可能会导致在库用户的代码冲突或其他问题。</p>
+<a id="an-example" name="an-example"></a>
+<h3>An example</h3>
+<p>假设有一个新<tt>TimeModel</tt>C + +类应该提供一个新的QML元素。它提供了在当前时间通过<tt>hour</tt>和<tt>minute</tt>属性，像这样：</p>
+<pre class="cpp">
+ <span class="keyword">class</span> TimeModel : <span class="keyword">public</span> <span class="type"><a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a></span>
+ {
+     Q_OBJECT
+     Q_PROPERTY(<span class="type">int</span> hour READ hour NOTIFY timeChanged)
+     Q_PROPERTY(<span class="type">int</span> minute READ minute NOTIFY timeChanged)
+     ...
+</pre>
+<p>为了使这个类可以作为一个QML类型，创建一个插件，注册这个类型与特定的<a href="index.htm#qml-modules" tppabs="http://pyqt4doc.appspot.com/qdeclarativemodules.html#qml-modules">module</a> using <a href="qdeclarativeengine.html#qmlRegisterType" tppabs="http://pyqt4doc.appspot.com/qdeclarativeengine.html#qmlRegisterType">qmlRegisterType</a>（ ） 。在这个例子中的插件模块将被命名为<tt>com.nokia.TimeExample</tt>（如在下面进一步在项目文件中定义）。</p>
+<pre class="cpp">
+ <span class="keyword">class</span> <span class="type">QExampleQmlPlugin</span> : <span class="keyword">public</span> <span class="type">QDeclarativeExtensionPlugin</span>
+ {
+     Q_OBJECT
+ <span class="keyword">public</span>:
+     <span class="type">void</span> registerTypes(<span class="keyword">const</span> <span class="type">char</span> <span class="operator">*</span>uri)
+     {
+         Q_ASSERT(uri <span class="operator">=</span><span class="operator">=</span> QLatin1String(<span class="string">"com.nokia.TimeExample"</span>));
+         qmlRegisterType<span class="operator">&lt;</span>TimeModel<span class="operator">&gt;</span>(uri<span class="operator">,</span> <span class="number">1</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="string">"Time"</span>);
+     }
+ };
+
+ <a href="index.htm#Q_EXPORT_PLUGIN2" tppabs="http://pyqt4doc.appspot.com/qtplugin.html#Q_EXPORT_PLUGIN2">Q_EXPORT_PLUGIN2</a>(qmlqtimeexampleplugin<span class="operator">,</span> <span class="type">QExampleQmlPlugin</span>);
+</pre>
+<p>这将注册<tt>TimeModel</tt>级与1.0版本的插件库，作为所谓的QML类型<tt>Time</tt>。该Q_ASSERT语句确保该模块是通过使用这个插件的任何QML组件正确导入。</p>
+<p>项目文件中的项目定义为一个插件库，并指定它应该被内置到<tt>com/nokia/TimeExample</tt>目录：</p>
+<pre class="cpp">
+ TEMPLATE <span class="operator">=</span> lib
+ CONFIG <span class="operator">+</span><span class="operator">=</span> qt plugin
+ QT <span class="operator">+</span><span class="operator">=</span> declarative
+
+ DESTDIR <span class="operator">=</span> com<span class="operator">/</span>nokia<span class="operator">/</span>TimeExample
+ TARGET <span class="operator">=</span> qmlqtimeexampleplugin
+ <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+</pre>
+<p>最后，一个<a href="index.htm#writing-a-qmldir-file" tppabs="http://pyqt4doc.appspot.com/qdeclarativemodules.html#writing-a-qmldir-file">qmldir file</a>是需要在<tt>com/nokia/TimeExample</tt>目录描述插件。此目录包含一个<tt>Clock.qml</tt>应该与插件捆绑在一起，因此它需要在指定的文件<tt>qmldir</tt>文件：</p>
+<pre class="cpp">
+ Clock <span class="number">1.0</span> Clock<span class="operator">.</span>qml
+ plugin qmlqtimeexampleplugin
+</pre>
+<p>一旦项目建成并安装新的<tt>Time</tt>元素可以使用一个导入的任何QML组件<tt>com.nokia.TimeExample</tt>模块：</p>
+<pre class="qml">
+ import com.nokia.TimeExample 1.0 <span class="comment">// import types from the plugin</span>
+
+ <span class="type">Clock</span> { <span class="comment">// this class is defined in QML (com/nokia/TimeExample/Clock.qml)</span>
+
+     <span class="type">Time</span> { <span class="comment">// this class is defined in C++ (plugin.cpp)</span>
+         <span class="name">id</span>: <span class="name">time</span>
+     }
+
+     <span class="name">hours</span>: <span class="name">time</span>.<span class="name">hour</span>
+     <span class="name">minutes</span>: <span class="name">time</span>.<span class="name">minute</span>
+ }
+</pre>
+<p>完整的源代码是可用<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/declarative-cppextensions-plugins.html">plugins example</a>。</p>
+<p>该<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qml-extending-tutorial-index.html">Tutorial:
+Writing QML extensions with C++</a>还包含有关创建QML插件一章。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QDeclarativeExtensionPlugin"></a>QDeclarativeExtensionPlugin.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个QML扩展插件与给定<i>parent</i>。</p>
+<p>注意，此构造是由自动调用<a href="index.htm#Q_EXPORT_PLUGIN2" tppabs="http://pyqt4doc.appspot.com/qtplugin.html#Q_EXPORT_PLUGIN2">Q_EXPORT_PLUGIN2</a>（）宏，所以没有必要显式地调用它。</p>
+
+
+<h3 class="fn">
+<a name="initializeEngine"></a>QDeclarativeExtensionPlugin.initializeEngine (<i>self</i>, <a href="qdeclarativeengine.html" tppabs="http://pyqt4doc.appspot.com/qdeclarativeengine.html">QDeclarativeEngine</a> <i>engine</i>, str <i>uri</i>)</h3>
+<p>初始化扩展从<i>uri</i>使用<i>engine</i>。在这里，一个应用程序的插件可能，例如，暴露一些数据或对象，以QML ，作为发动机的根上下文上下文属性。</p>
+
+
+<h3 class="fn">
+<a name="registerTypes"></a>QDeclarativeExtensionPlugin.registerTypes (<i>self</i>, str <i>uri</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>寄存器的QML类型在给定的<i>uri</i>。子类应该实现这个调用<a href="qdeclarativeengine.html#qmlRegisterType" tppabs="http://pyqt4doc.appspot.com/qdeclarativeengine.html#qmlRegisterType">qmlRegisterType</a>（）为这是由扩展插件提供的所有类型。</p>
+<p>该<i>uri</i>是一个标识符的基础上扩展的插件库的名称和路径由QML引擎生成的插件。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

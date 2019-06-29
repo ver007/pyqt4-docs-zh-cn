@@ -1,0 +1,457 @@
+﻿<html>
+<head>
+<title>QTextCodec Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QTextCodec Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该持QTextCodec类提供文本编码之间的转换。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qtextcodec.html#ConversionFlag-enum" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#ConversionFlag-enum">ConversionFlag</a></b> { DefaultConversion, ConvertInvalidToNull, IgnoreHeader }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtextcodec-conversionflags.html">ConversionFlags</a></b>
+</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtextcodec-converterstate.html">ConverterState</a></b>
+</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcodec.html#QTextCodec" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#QTextCodec">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QByteArray <b><a href="qtextcodec.html#aliases" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#aliases">aliases</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qtextcodec.html#canEncode" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#canEncode">canEncode</a></b> (<i>self</i>, QString)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qtextcodec.html#convertToUnicode" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#convertToUnicode">convertToUnicode</a></b> (<i>self</i>, str <i>in</i>, ConverterState <i>state</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qtextcodec.html#fromUnicode" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#fromUnicode">fromUnicode</a></b> (<i>self</i>, QString <i>uc</i>)</li>
+<li>
+<div class="fn"></div>QTextDecoder <b><a href="qtextcodec.html#makeDecoder" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#makeDecoder">makeDecoder</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextDecoder <b><a href="qtextcodec.html#makeDecoder-2" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#makeDecoder-2">makeDecoder</a></b> (<i>self</i>, ConversionFlags <i>flags</i>)</li>
+<li>
+<div class="fn"></div>QTextEncoder <b><a href="qtextcodec.html#makeEncoder" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#makeEncoder">makeEncoder</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QTextEncoder <b><a href="qtextcodec.html#makeEncoder-2" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#makeEncoder-2">makeEncoder</a></b> (<i>self</i>, ConversionFlags <i>flags</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qtextcodec.html#mibEnum" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#mibEnum">mibEnum</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qtextcodec.html#name" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#name">name</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qtextcodec.html#toUnicode" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#toUnicode">toUnicode</a></b> (<i>self</i>, QByteArray)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qtextcodec.html#toUnicode-2" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#toUnicode-2">toUnicode</a></b> (<i>self</i>, str <i>chars</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qtextcodec.html#toUnicode-3" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#toUnicode-3">toUnicode</a></b> (<i>self</i>, str <i>in</i>, ConverterState <i>state</i> = None)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>list-of-QByteArray <b><a href="qtextcodec.html#availableCodecs" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#availableCodecs">availableCodecs</a></b> ()</li>
+<li>
+<div class="fn"></div>list-of-int <b><a href="qtextcodec.html#availableMibs" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#availableMibs">availableMibs</a></b> ()</li>
+<li>
+<div class="fn"></div>QTextCodec <b><a href="qtextcodec.html#codecForCStrings" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForCStrings">codecForCStrings</a></b> ()</li>
+<li>
+<div class="fn"></div>QTextCodec <b><a href="qtextcodec.html#codecForHtml" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForHtml">codecForHtml</a></b> (QByteArray <i>ba</i>)</li>
+<li>
+<div class="fn"></div>QTextCodec <b><a href="qtextcodec.html#codecForHtml-2" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForHtml-2">codecForHtml</a></b> (QByteArray <i>ba</i>, QTextCodec <i>defaultCodec</i>)</li>
+<li>
+<div class="fn"></div>QTextCodec <b><a href="qtextcodec.html#codecForLocale" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForLocale">codecForLocale</a></b> ()</li>
+<li>
+<div class="fn"></div>QTextCodec <b><a href="qtextcodec.html#codecForMib" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForMib">codecForMib</a></b> (int <i>mib</i>)</li>
+<li>
+<div class="fn"></div>QTextCodec <b><a href="qtextcodec.html#codecForName" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForName">codecForName</a></b> (QByteArray <i>name</i>)</li>
+<li>
+<div class="fn"></div>QTextCodec <b><a href="qtextcodec.html#codecForName-2" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForName-2">codecForName</a></b> (str <i>name</i>)</li>
+<li>
+<div class="fn"></div>QTextCodec <b><a href="qtextcodec.html#codecForTr" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForTr">codecForTr</a></b> ()</li>
+<li>
+<div class="fn"></div>QTextCodec <b><a href="qtextcodec.html#codecForUtfText" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForUtfText">codecForUtfText</a></b> (QByteArray <i>ba</i>)</li>
+<li>
+<div class="fn"></div>QTextCodec <b><a href="qtextcodec.html#codecForUtfText-2" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForUtfText-2">codecForUtfText</a></b> (QByteArray <i>ba</i>, QTextCodec <i>defaultCodec</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcodec.html#setCodecForCStrings" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#setCodecForCStrings">setCodecForCStrings</a></b> (QTextCodec <i>c</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcodec.html#setCodecForLocale" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#setCodecForLocale">setCodecForLocale</a></b> (QTextCodec <i>c</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qtextcodec.html#setCodecForTr" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#setCodecForTr">setCodecForTr</a></b> (QTextCodec <i>c</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该持QTextCodec类提供文本编码之间的转换。</p>
+<p>Qt使用Unicode来存储，绘制和操作字符串。在许多情况下，您可能希望处理使用不同的编码数据。例如，大多数日本人的文件仍然存储在按住Shift JIS或ISO 2022-JP ，而俄罗斯用户往往有他们的KOI8-R或Windows - 1251文档。</p>
+<p>Qt提供了一系列QTextCodec来控制班，以帮助将非Unicode格式与Unicode的。您也可以创建自己的编解码器类。</p>
+<p>支持的编码有：</p>
+<ul>
+<li>Apple Roman</li>
+<li><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/codec-big5.html">Big5</a></li>
+<li><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/codec-big5hkscs.html">Big5-HKSCS</a></li>
+<li>CP949</li>
+<li><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/codec-eucjp.html">EUC-JP</a></li>
+<li><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/codec-euckr.html">EUC-KR</a></li>
+<li><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/codec-gbk.html">GB18030-0</a></li>
+<li>IBM 850</li>
+<li>IBM 866</li>
+<li>IBM 874</li>
+<li><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/codecs-jis.html">ISO 2022-JP</a></li>
+<li>ISO 8859-1 to 10</li>
+<li>ISO 8859-13 to 16</li>
+<li>Iscii-Bng, Dev, Gjr, Knd, Mlm, Ori, Pnj, Tlg, and Tml</li>
+<li>JIS X 0201</li>
+<li>JIS X 0208</li>
+<li>KOI8-R</li>
+<li>KOI8-U</li>
+<li>MuleLao-1</li>
+<li>ROMAN8</li>
+<li><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/codec-sjis.html">Shift-JIS</a></li>
+<li>TIS-620</li>
+<li><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/codec-tscii.html">TSCII</a></li>
+<li>UTF-8</li>
+<li>UTF-16</li>
+<li>UTF-16BE</li>
+<li>UTF-16LE</li>
+<li>UTF-32</li>
+<li>UTF-32BE</li>
+<li>UTF-32LE</li>
+<li>Windows-1250 to 1258</li>
+<li>WINSAMI2</li>
+</ul>
+<p>QTextCodecs可以用如下的一些本地编码的字符串转换为Unicode 。假设你有一些字符串编码在俄罗斯KOI8-R编码，并希望将其转换为Unicode 。最简单的方法来做到这一点是这样的：</p>
+<pre class="cpp">
+ <span class="type"><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a></span> encodedString <span class="operator">=</span> <span class="string">"..."</span>;
+ <span class="type">QTextCodec</span> <span class="operator">*</span>codec <span class="operator">=</span> <span class="type">QTextCodec</span><span class="operator">.</span><a href="qtextcodec.html#codecForName" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForName">codecForName</a>(<span class="string">"KOI8-R"</span>);
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> string <span class="operator">=</span> codec<span class="operator">-</span><span class="operator">&gt;</span><a href="qtextcodec.html#toUnicode" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#toUnicode">toUnicode</a>(encodedString);
+</pre>
+<p>在此之后，<tt>string</tt>保存文本转换为Unicode 。从Unicode转换一个字符串到本地编码是一样简单：</p>
+<pre class="cpp">
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> string <span class="operator">=</span> <span class="string">"..."</span>;
+ <span class="type">QTextCodec</span> <span class="operator">*</span>codec <span class="operator">=</span> <span class="type">QTextCodec</span><span class="operator">.</span><a href="qtextcodec.html#codecForName" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForName">codecForName</a>(<span class="string">"KOI8-R"</span>);
+ <span class="type"><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a></span> encodedString <span class="operator">=</span> codec<span class="operator">-</span><span class="operator">&gt;</span><a href="qtextcodec.html#fromUnicode" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#fromUnicode">fromUnicode</a>(string);
+</pre>
+<p>要读取或写入的文件在各种编码，使用<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>其<a href="qtextstream.html#setCodec" tppabs="http://pyqt4doc.appspot.com/qtextstream.html#setCodec">setCodec()</a>功能。请参阅<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/tools-codecs.html">Codecs</a>例如对于QTextCodec来控制的应用程序文件I / O。</p>
+<p>尝试将数据通过网络接收它时，在转换块，例如，当一些必须小心。在这种情况下，它可能是一个多字节字符将被分割在两个块。在最好的，这可能导致一个字符的损失和在最坏的情况导致整个转换失败。</p>
+<p>在这些情况下使用的方法是创建一个<a href="qtextdecoder.html" tppabs="http://pyqt4doc.appspot.com/qtextdecoder.html">QTextDecoder</a>对象为编解码器和使用该<a href="qtextdecoder.html" tppabs="http://pyqt4doc.appspot.com/qtextdecoder.html">QTextDecoder</a>整个解码过程，如下所示：</p>
+<pre class="cpp">
+ <span class="type">QTextCodec</span> <span class="operator">*</span>codec <span class="operator">=</span> <span class="type">QTextCodec</span><span class="operator">.</span><a href="qtextcodec.html#codecForName" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForName">codecForName</a>(<span class="string">"Shift-JIS"</span>);
+ <span class="type"><a href="qtextdecoder.html" tppabs="http://pyqt4doc.appspot.com/qtextdecoder.html">QTextDecoder</a></span> <span class="operator">*</span>decoder <span class="operator">=</span> codec<span class="operator">-</span><span class="operator">&gt;</span><a href="qtextcodec.html#makeDecoder" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#makeDecoder">makeDecoder</a>();
+
+ <span class="type"><a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a></span> string;
+ <span class="keyword">while</span> (new_data_available()) {
+     <span class="type"><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a></span> chunk <span class="operator">=</span> get_new_data();
+     string <span class="operator">+</span><span class="operator">=</span> decoder<span class="operator">-</span><span class="operator">&gt;</span>toUnicode(chunk);
+ }
+ <span class="keyword">delete</span> decoder;
+</pre>
+<p>该<a href="qtextdecoder.html" tppabs="http://pyqt4doc.appspot.com/qtextdecoder.html">QTextDecoder</a>对象维护块之间的状态，因此可以正常工作，即使多字节字符分割块之间。</p>
+<a id="creating-your-own-codec-class" name="creating-your-own-codec-class"></a>
+<h3>Creating Your Own Codec Class</h3>
+<p>支持新的文本编码可以通过创建子类QTextCodec来控制被加入到Qt的。</p>
+<p>该纯虚函数描述编码器系统和编码器被用作需要在所支持的不同的文本文件格式<a href="qtextstream.html" tppabs="http://pyqt4doc.appspot.com/qtextstream.html">QTextStream</a>和X11下，为区域设置特定的字符输入和输出。</p>
+<p>要添加另一个编码支持Qt的，请QTextCodec来控制的一个子类，并实现下表中列出的功能。</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td>
+<a href="qtextcodec.html#name" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#name">name</a>()</td>
+<td>Returns the official name for the encoding. If the encoding is
+listed in the <a href="http://www.iana.org/assignments/character-sets">IANA
+character-sets encoding file</a>, the name should be the preferred
+MIME name for the encoding.</td>
+</tr>
+<tr class="even" valign="top">
+<td>
+<a href="qtextcodec.html#aliases" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#aliases">aliases</a>()</td>
+<td>Returns a list of alternative names for the encoding.
+QTextCodec provides a default implementation that returns an empty
+list. For example, "ISO-8859-1" has "latin1", "CP819", "IBM819",
+and "iso-ir-100" as aliases.</td>
+</tr>
+<tr class="odd" valign="top">
+<td>
+<a href="qtextcodec.html#mibEnum" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#mibEnum">mibEnum</a>()</td>
+<td>Return the MIB enum for the encoding if it is listed in the
+<a href="http://www.iana.org/assignments/character-sets">IANA
+character-sets encoding file</a>.</td>
+</tr>
+<tr class="even" valign="top">
+<td>
+<a href="qtextcodec.html#convertToUnicode" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#convertToUnicode">convertToUnicode</a>()</td>
+<td>Converts an 8-bit character string to Unicode.</td>
+</tr>
+<tr class="odd" valign="top">
+<td>
+<a href="qtextcodec.html#convertFromUnicode" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#convertFromUnicode">convertFromUnicode</a>()</td>
+<td>Converts a Unicode string to an 8-bit character string.</td>
+</tr>
+</table>
+<p>您可能会发现它更方便，让您的编解码器类可以作为一个插件，见<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/plugins-howto.html">How to
+Create Qt Plugins</a>了解详情。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="ConversionFlag-enum"></a>QTextCodec.ConversionFlag</h3>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCodec.DefaultConversion</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">无标志被设置。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCodec.ConvertInvalidToNull</tt></td>
+<td class="topAlign"><tt>0x80000000</tt></td>
+<td class="topAlign">如果设置了这个标志，每个无效输入字符输出为一个空字符。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QTextCodec.IgnoreHeader</tt></td>
+<td class="topAlign"><tt>0x1</tt></td>
+<td class="topAlign">忽略任何Unicode字节顺序标记，并且不产生任何。</td>
+</tr>
+</table>
+<p>该ConversionFlags类型是一个typedef为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qflags.html">QFlags</a>\u003cConversionFlag\u003e 。它存储ConversionFlag值的或组合。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QTextCodec"></a>QTextCodec.__init__ (<i>self</i>)</h3>
+<p>构造一个<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>，并给它最高的优先级。该<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>应始终在堆（即构造<tt>new</tt>） 。 Qt可以拥有和应用程序终止时将其删除。</p>
+
+
+<h3 class="fn">
+<a name="aliases"></a>list-of-QByteArray QTextCodec.aliases (<i>self</i>)</h3>
+<p>子类可以返回一个数字的别名有问题的编解码器。</p>
+<p>标准别名编解码器可以在被发现<a href="http://www.iana.org/assignments/character-sets">IANA
+character-sets encoding file</a>。</p>
+
+
+<h3 class="fn">
+<a name="availableCodecs"></a>list-of-QByteArray QTextCodec.availableCodecs ()</h3>
+<p>返回所有可用的编解码器的列表，按名称。通话<a href="qtextcodec.html#codecForName" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForName">QTextCodec.codecForName</a>（ ），得到<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>为名称。</p>
+<p>该列表可以包含相同的编解码器的许多提到，如果编解码器具有别名。</p>
+<p><b>See also</b> <a href="qtextcodec.html#availableMibs" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#availableMibs">availableMibs</a>（ ）<a href="qtextcodec.html#name" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#name">name</a>（）和<a href="qtextcodec.html#aliases" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#aliases">aliases</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="availableMibs"></a>list-of-int QTextCodec.availableMibs ()</h3>
+<p>返回的MIB可用于所有硬件编解码器的列表。通话<a href="qtextcodec.html#codecForMib" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForMib">QTextCodec.codecForMib</a>（ ），得到<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>对MIB 。</p>
+<p><b>See also</b> <a href="qtextcodec.html#availableCodecs" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#availableCodecs">availableCodecs</a>（）和<a href="qtextcodec.html#mibEnum" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#mibEnum">mibEnum</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="canEncode"></a>bool QTextCodec.canEncode (<i>self</i>, QString)</h3>
+<p>返回True如果Unicode字符<i>ch</i>可以使用此编解码器完全编码，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="codecForCStrings"></a><a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a> QTextCodec.codecForCStrings ()</h3>
+<p>返回所使用的编解码器<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>转换为和从<tt>const char *</tt>和QByteArrays 。如果这个函数返回0 （默认值） ，<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>假定的Latin-1 。</p>
+<p><b>See also</b> <a href="qtextcodec.html#setCodecForCStrings" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#setCodecForCStrings">setCodecForCStrings</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="codecForHtml"></a><a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a> QTextCodec.codecForHtml (<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>ba</i>)</h3>
+<p>尝试检测的HTML给定的字节数组中所提供的代码片段的编码，<i>ba</i>通过检查BOM（字节顺序标记）和内容类型的元头，并返回一个<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>例如，它能够将HTML转换为Unicode解码。如果该编解码器不能从所提供的内容检测<i>defaultCodec</i>返回。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qtextcodec.html#codecForUtfText" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForUtfText">codecForUtfText</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="codecForHtml-2"></a><a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a> QTextCodec.codecForHtml (<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>ba</i>, <a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a> <i>defaultCodec</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>尝试检测的HTML给定的字节数组中所提供的代码片段的编码，<i>ba</i>通过检查BOM（字节顺序标记）和内容类型的元头，并返回一个<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>例如，它能够将HTML转换为Unicode解码。如果编解码器不能被检测到，此重载返回的Latin-1<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>。</p>
+
+
+<h3 class="fn">
+<a name="codecForLocale"></a><a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a> QTextCodec.codecForLocale ()</h3>
+<p>返回一个指向该编解码器为这个区域设置最合适。</p>
+<p>在Windows上，编解码器将根据系统区域设置。在Unix系统中，开始用Qt 4.2 ，编解码器将使用<i>iconv</i>库。请注意，在两种情况下，编解码器的名称将是“系统” 。</p>
+<p><b>See also</b> <a href="qtextcodec.html#setCodecForLocale" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#setCodecForLocale">setCodecForLocale</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="codecForMib"></a><a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a> QTextCodec.codecForMib (int <i>mib</i>)</h3>
+<p>返回<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>相匹配的<a href="qtextcodec.html#mibEnum" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#mibEnum">MIBenum</a>
+<i>mib</i>。</p>
+
+
+<h3 class="fn">
+<a name="codecForName"></a><a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a> QTextCodec.codecForName (<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>name</i>)</h3>
+<p>搜索所有已安装<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>对象并返回一个最匹配<i>name</i>，与之匹配的是不区分大小写的。返回0 ，如果没有匹配的编解码器的名称<i>name</i>可以找到。</p>
+
+
+<h3 class="fn">
+<a name="codecForName-2"></a><a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a> QTextCodec.codecForName (str <i>name</i>)</h3>
+<p>搜索所有已安装<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>对象并返回一个最匹配<i>name</i>，与之匹配的是不区分大小写的。返回0 ，如果没有匹配的编解码器的名称<i>name</i>可以找到。</p>
+
+
+<h3 class="fn">
+<a name="codecForTr"></a><a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a> QTextCodec.codecForTr ()</h3>
+<p>返回所使用的编解码器<a href="qobject.html#tr" tppabs="http://pyqt4doc.appspot.com/qobject.html#tr">QObject.tr</a>（ ）在其参数。如果这个函数返回0 （默认值） ， TR （）假定的Latin-1 。</p>
+<p><b>See also</b> <a href="qtextcodec.html#setCodecForTr" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#setCodecForTr">setCodecForTr</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="codecForUtfText"></a><a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a> QTextCodec.codecForUtfText (<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>ba</i>)</h3>
+<p>尝试检测所提供的代码片段的编码<i>ba</i>通过使用BOM（字节顺序标记） ，并返回一个<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>例如，能够将文本转换为Unicode解码。如果该编解码器不能从所提供的内容检测<i>defaultCodec</i>返回。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qtextcodec.html#codecForHtml" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForHtml">codecForHtml</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="codecForUtfText-2"></a><a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a> QTextCodec.codecForUtfText (<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>ba</i>, <a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a> <i>defaultCodec</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>尝试检测所提供的代码片段的编码<i>ba</i>通过使用BOM（字节顺序标记） ，并返回一个<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>例如，能够将文本转换为Unicode解码。如果编解码器不能被检测到，此重载返回的Latin-1<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>。</p>
+<p><b>See also</b> <a href="qtextcodec.html#codecForHtml" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForHtml">codecForHtml</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="convertToUnicode"></a>QString QTextCodec.convertToUnicode (<i>self</i>, str <i>in</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtextcodec-converterstate.html">ConverterState</a> <i>state</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p><a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>子类必须重新实现此功能。</p>
+<p>将第一<i>len</i>字符<i>chars</i>从子类到Unicode的编码，并返回结果的<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>。</p>
+<p><i>state</i>可以是0，在这种情况下的转换是无状态的，因此应该使用默认的转换规则。如果状态不为0 ，编解码器应在转换后保存的状态<i>state</i>，并调整remainingChars和结构的invalidChars成员。</p>
+
+
+<h3 class="fn">
+<a name="fromUnicode"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QTextCodec.fromUnicode (<i>self</i>, QString <i>uc</i>)</h3>
+<p>皈依<i>str</i>从Unicode到该编解码器的编码，并返回结果的<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>。</p>
+
+
+<h3 class="fn">
+<a name="makeDecoder"></a><a href="qtextdecoder.html" tppabs="http://pyqt4doc.appspot.com/qtextdecoder.html">QTextDecoder</a> QTextCodec.makeDecoder (<i>self</i>)</h3>
+<p>创建<a href="qtextdecoder.html" tppabs="http://pyqt4doc.appspot.com/qtextdecoder.html">QTextDecoder</a>存储足够的状态来解码的块<tt>char *</tt>数据来创建Unicode数据块。</p>
+<p>来电者是负责删除返回的对象。</p>
+
+
+<h3 class="fn">
+<a name="makeDecoder-2"></a><a href="qtextdecoder.html" tppabs="http://pyqt4doc.appspot.com/qtextdecoder.html">QTextDecoder</a> QTextCodec.makeDecoder (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtextcodec-conversionflags.html">ConversionFlags</a> <i>flags</i>)</h3>
+<p>创建<a href="qtextdecoder.html" tppabs="http://pyqt4doc.appspot.com/qtextdecoder.html">QTextDecoder</a>用指定的<i>flags</i>要解码的块<tt>char *</tt>数据来创建Unicode数据块。</p>
+<p>来电者是负责删除返回的对象。</p>
+<p>此功能被引入Qt的4.7 。</p>
+
+
+<h3 class="fn">
+<a name="makeEncoder"></a><a href="qtextencoder.html" tppabs="http://pyqt4doc.appspot.com/qtextencoder.html">QTextEncoder</a> QTextCodec.makeEncoder (<i>self</i>)</h3>
+<p>创建<a href="qtextencoder.html" tppabs="http://pyqt4doc.appspot.com/qtextencoder.html">QTextEncoder</a>存储足够的状态以Unicode数据块编码为<tt>char
+*</tt>数据。</p>
+<p>来电者是负责删除返回的对象。</p>
+
+
+<h3 class="fn">
+<a name="makeEncoder-2"></a><a href="qtextencoder.html" tppabs="http://pyqt4doc.appspot.com/qtextencoder.html">QTextEncoder</a> QTextCodec.makeEncoder (<i>self</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtextcodec-conversionflags.html">ConversionFlags</a> <i>flags</i>)</h3>
+<p>创建<a href="qtextencoder.html" tppabs="http://pyqt4doc.appspot.com/qtextencoder.html">QTextEncoder</a>用指定的<i>flags</i>以Unicode数据块编码为<tt>char
+*</tt>数据。</p>
+<p>来电者是负责删除返回的对象。</p>
+<p>此功能被引入Qt的4.7 。</p>
+
+
+<h3 class="fn">
+<a name="mibEnum"></a>int QTextCodec.mibEnum (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>的子类<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>必须重新实现此功能。它返回MIBenum （见<a href="http://www.iana.org/assignments/character-sets">IANA
+character-sets encoding file</a>获取更多信息） 。重要的是，每<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>子类将返回此函数的正确独特的价值。</p>
+
+
+<h3 class="fn">
+<a name="name"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QTextCodec.name (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p><a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a>子类必须重新实现此功能。它返回由子类支持的编码的名称。</p>
+<p>如果该编解码器被注册为一个字在设置<a href="http://www.iana.org/assignments/character-sets">IANA
+character-sets encoding file</a>此方法应为如果定义编解码器返回的首选MIME名称，否则其名称。</p>
+
+
+<h3 class="fn">
+<a name="setCodecForCStrings"></a>QTextCodec.setCodecForCStrings (<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a> <i>c</i>)</h3>
+<p>设置使用的编解码器<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>转换为和从<tt>const char *</tt>和QByteArrays 。如果<i>codec</i>为0 （默认值） ，<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>假定的Latin-1 。</p>
+<p><b>Warning:</b>一些编解码器不保留在ASCII范围的字符（ 0x00到0x7F ） 。例如，日文Shift- JIS编码的反斜杠字符（为0x5A ）映射到日元的性格。为了避免不良的副作用，我们建议避免这种编解码器与setCodecsForCString （ ） 。</p>
+<p><b>Warning:</b>此功能不<a href="index.htm#reentrant" tppabs="http://pyqt4doc.appspot.com/threads-reentrancy.html#reentrant">reentrant</a>。</p>
+<p><b>See also</b> <a href="qtextcodec.html#codecForCStrings" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForCStrings">codecForCStrings</a>（）和<a href="qtextcodec.html#setCodecForTr" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#setCodecForTr">setCodecForTr</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCodecForLocale"></a>QTextCodec.setCodecForLocale (<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a> <i>c</i>)</h3>
+<p>编解码器设置为<i>c</i>;这将被返回<a href="qtextcodec.html#codecForLocale" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForLocale">codecForLocale</a>（ ） 。如果<i>c</i>是一个空指针，编解码器被重置为默认值。</p>
+<p>这可能需要为那些希望使用自己的机制设置的区域设置一些应用程序。</p>
+<p><b>See also</b> <a href="qtextcodec.html#codecForLocale" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForLocale">codecForLocale</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCodecForTr"></a>QTextCodec.setCodecForTr (<a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a> <i>c</i>)</h3>
+<p>设置使用的编解码器<a href="qobject.html#tr" tppabs="http://pyqt4doc.appspot.com/qobject.html#tr">QObject.tr</a>（ ）在它的参数<i>c</i>。如果<i>c</i>为0 （默认值） ， TR （）假定的Latin-1 。</p>
+<p>如果在程序中的文字引用的文字是不是在Latin-1编码，此功能可用于设置相应的编码。例如，韩国程序员开发的软件可以使用eucKR程序中的所有文本，在这种情况下， main（）函数可能看起来像这样：</p>
+<pre class="cpp">
+ <span class="type">int</span> main(<span class="type">int</span> argc<span class="operator">,</span> <span class="type">char</span> <span class="operator">*</span>argv<span class="operator">[</span><span class="operator">]</span>)
+ {
+     <span class="type"><a href="qapplication.html" tppabs="http://pyqt4doc.appspot.com/qapplication.html">QApplication</a></span> app(argc<span class="operator">,</span> argv);
+     <span class="type"><a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a></span><span class="operator">.</span>setCodecForTr(<span class="type"><a href="qtextcodec.html" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html">QTextCodec</a></span><span class="operator">.</span>codecForName(<span class="string">"eucKR"</span>));
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ }
+</pre>
+<p>请注意，这不是个好办法选择的编码，该<i>user</i>已选择。例如，要转换包含英语字符串韩国的应用程序，所有需要的是英文字符串，通过TR （ ）和要加载翻译文件传递。对于国际化的详细信息，请参阅<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/internationalization.html">Internationalization with Qt</a>。</p>
+<p><b>Warning:</b>此功能不<a href="index.htm#reentrant" tppabs="http://pyqt4doc.appspot.com/threads-reentrancy.html#reentrant">reentrant</a>。</p>
+<p><b>See also</b> <a href="qtextcodec.html#codecForTr" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#codecForTr">codecForTr</a>（）和<a href="qtextcodec.html#setCodecForCStrings" tppabs="http://pyqt4doc.appspot.com/qtextcodec.html#setCodecForCStrings">setCodecForCStrings</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="toUnicode"></a>QString QTextCodec.toUnicode (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>)</h3>
+<p>皈依<i>a</i>从这个编解码为Unicode的编码，并返回结果的<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>。</p>
+
+
+<h3 class="fn">
+<a name="toUnicode-2"></a>QString QTextCodec.toUnicode (<i>self</i>, str <i>chars</i>)</h3>
+<p>将第一<i>size</i>从人物<i>input</i>从这个编解码为Unicode的编码，并返回结果的<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>。</p>
+<p>该<i>state</i>所使用的转换器被更新。</p>
+
+
+<h3 class="fn">
+<a name="toUnicode-3"></a>QString QTextCodec.toUnicode (<i>self</i>, str <i>in</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtextcodec-converterstate.html">ConverterState</a> <i>state</i> = None)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

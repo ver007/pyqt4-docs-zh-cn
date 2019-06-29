@@ -1,0 +1,392 @@
+﻿<html>
+<head>
+<title>QStateMachine Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QStateMachine Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QStateMachine类提供了一个分层有限状态机。<a href="#details">More...</a></p>
+
+<p>继承<a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qstatemachine.html#Error-enum" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#Error-enum">Error</a></b> { NoError, NoInitialStateError, NoDefaultStateInHistoryStateError, NoCommonAncestorForTransitionError }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qstatemachine.html#EventPriority-enum" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#EventPriority-enum">EventPriority</a></b> { NormalPriority, HighPriority }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qstatemachine.html#RestorePolicy-enum" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#RestorePolicy-enum">RestorePolicy</a></b> { DontRestoreProperties, RestoreProperties }</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qstatemachine-signalevent.html">SignalEvent</a></b>
+</li>
+<li>
+<div class="fn"></div>class <b><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qstatemachine-wrappedevent.html">WrappedEvent</a></b>
+</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qstatemachine.html#QStateMachine" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#QStateMachine">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstatemachine.html#addDefaultAnimation" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#addDefaultAnimation">addDefaultAnimation</a></b> (<i>self</i>, QAbstractAnimation <i>animation</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstatemachine.html#addState" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#addState">addState</a></b> (<i>self</i>, QAbstractState <i>state</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstatemachine.html#cancelDelayedEvent" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#cancelDelayedEvent">cancelDelayedEvent</a></b> (<i>self</i>, int <i>id</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstatemachine.html#clearError" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#clearError">clearError</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QAbstractState <b><a href="qstatemachine.html#configuration" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#configuration">configuration</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QAbstractAnimation <b><a href="qstatemachine.html#defaultAnimations" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#defaultAnimations">defaultAnimations</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Error <b><a href="qstatemachine.html#error" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#error">error</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qstatemachine.html#errorString" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#errorString">errorString</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstatemachine.html#event" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#event">event</a></b> (<i>self</i>, QEvent <i>e</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstatemachine.html#eventFilter" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#eventFilter">eventFilter</a></b> (<i>self</i>, QObject <i>watched</i>, QEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>RestorePolicy <b><a href="qstatemachine.html#globalRestorePolicy" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#globalRestorePolicy">globalRestorePolicy</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstatemachine.html#isAnimated" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#isAnimated">isAnimated</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qstatemachine.html#isRunning" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#isRunning">isRunning</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstatemachine.html#onEntry" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#onEntry">onEntry</a></b> (<i>self</i>, QEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstatemachine.html#onExit" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#onExit">onExit</a></b> (<i>self</i>, QEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qstatemachine.html#postDelayedEvent" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#postDelayedEvent">postDelayedEvent</a></b> (<i>self</i>, QEvent <i>event</i>, int <i>delay</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstatemachine.html#postEvent" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#postEvent">postEvent</a></b> (<i>self</i>, QEvent <i>event</i>, EventPriority <i>priority</i> = QStateMachine.NormalPriority)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstatemachine.html#removeDefaultAnimation" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#removeDefaultAnimation">removeDefaultAnimation</a></b> (<i>self</i>, QAbstractAnimation <i>animation</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstatemachine.html#removeState" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#removeState">removeState</a></b> (<i>self</i>, QAbstractState <i>state</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstatemachine.html#setAnimated" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#setAnimated">setAnimated</a></b> (<i>self</i>, bool <i>enabled</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstatemachine.html#setGlobalRestorePolicy" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#setGlobalRestorePolicy">setGlobalRestorePolicy</a></b> (<i>self</i>, RestorePolicy <i>restorePolicy</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstatemachine.html#start" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#start">start</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstatemachine.html#stop" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#stop">stop</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qstatemachine.html#started" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#started">started</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qstatemachine.html#stopped" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#stopped">stopped</a></b> ()</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QStateMachine类提供了一个分层有限状态机。</p>
+<p>QStateMachine是基于概念和符号<a href="http://www.wisdom.weizmann.ac.il/~dharel/SCANNED.PAPERS/Statecharts.pdf">
+Statecharts</a>。 QStateMachine是一部分<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/statemachine-api.html">The State Machine Framework</a>。</p>
+<p>状态机管理一组状态（即从继承的类<a href="qabstractstate.html" tppabs="http://pyqt4doc.appspot.com/qabstractstate.html">QAbstractState</a>）和转换（后裔<a href="qabstracttransition.html" tppabs="http://pyqt4doc.appspot.com/qabstracttransition.html">QAbstractTransition</a>）之间的状态，这些状态和转换定义一个状态图。一旦一个状态图已经建成，状态机可以执行它。 QStateMachine的执行算法是基于<a href="http://www.w3.org/TR/scxml/">State Chart XML (SCXML)</a>算法。该框架的<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/statemachine-api.html">overview</a>给出了几种状态图，并建立它们的代码。</p>
+<p>使用<a href="qstatemachine.html#addState" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#addState">addState</a>（ ）函数的顶级状态添加到状态机。国与删除<a href="qstatemachine.html#removeState" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#removeState">removeState</a>（）函数。机器运行时拆卸状态是气馁。</p>
+<p>之前可以对机器进行启动，<a href="qstate.html#initialState-prop" tppabs="http://pyqt4doc.appspot.com/qstate.html#initialState-prop">initial state</a>必须设置。初始状态是状态启动时，机器进入。然后，您可以<a href="qstatemachine.html#start" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#start">start</a>（ ）状态机。该<a href="qstatemachine.html#started" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#started">started</a>当进入初始状态（ ）信号被发射。</p>
+<p>本机是事件驱动的，并保持自己的事件循环。活动通过张贴到机器<a href="qstatemachine.html#postEvent" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#postEvent">postEvent</a>（ ） 。请注意，这意味着它异步执行，并且它不会没有运行事件循环的进展。你通常不会有事件发布到本机直接作为Qt的转换，例如，<a href="qeventtransition.html" tppabs="http://pyqt4doc.appspot.com/qeventtransition.html">QEventTransition</a>和它的子类，处理这个问题。但对于由事件触发的自定义转换，<a href="qstatemachine.html#postEvent" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#postEvent">postEvent</a>（）是有用的。</p>
+<p>状态机处理事件，并采取转换，直至顶层的最终状态进入，状态机，然后放出<a href="qstate.html#finished" tppabs="http://pyqt4doc.appspot.com/qstate.html#finished">finished</a>（）信号。您也可以<a href="qstatemachine.html#stop" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#stop">stop</a>（ ）显式状态机。该<a href="qstatemachine.html#stopped" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#stopped">stopped</a>（）信号在这种情况下被发射。</p>
+<p>下面的代码片断显示了一个状态机单击按钮时，将完成：</p>
+<pre class="cpp">
+ <span class="type"><a href="qpushbutton.html" tppabs="http://pyqt4doc.appspot.com/qpushbutton.html">QPushButton</a></span> button;
+
+ <span class="type">QStateMachine</span> machine;
+ <span class="type"><a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a></span> <span class="operator">*</span>s1 <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a></span>();
+ s1<span class="operator">-</span><span class="operator">&gt;</span><a href="qstate.html#assignProperty" tppabs="http://pyqt4doc.appspot.com/qstate.html#assignProperty">assignProperty</a>(<span class="operator">&amp;</span>button<span class="operator">,</span> <span class="string">"text"</span><span class="operator">,</span> <span class="string">"Click me"</span>);
+
+ <span class="type"><a href="qfinalstate.html" tppabs="http://pyqt4doc.appspot.com/qfinalstate.html">QFinalState</a></span> <span class="operator">*</span>s2 <span class="operator">=</span> <span class="keyword">new</span> <span class="type"><a href="qfinalstate.html" tppabs="http://pyqt4doc.appspot.com/qfinalstate.html">QFinalState</a></span>();
+ s1<span class="operator">-</span><span class="operator">&gt;</span><a href="qstate.html#addTransition" tppabs="http://pyqt4doc.appspot.com/qstate.html#addTransition">addTransition</a>(<span class="operator">&amp;</span>button<span class="operator">,</span> SIGNAL(clicked())<span class="operator">,</span> s2);
+
+ machine<span class="operator">.</span><a href="qstatemachine.html#addState" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#addState">addState</a>(s1);
+ machine<span class="operator">.</span><a href="qstatemachine.html#addState" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#addState">addState</a>(s2);
+ machine<span class="operator">.</span><a href="qstate.html#initialState-prop" tppabs="http://pyqt4doc.appspot.com/qstate.html#initialState-prop">setInitialState</a>(s1);
+ machine<span class="operator">.</span><a href="qstatemachine.html#start" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#start">start</a>();
+</pre>
+<p>此代码示例使用<a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a>，它继承<a href="qabstractstate.html" tppabs="http://pyqt4doc.appspot.com/qabstractstate.html">QAbstractState</a>。该<a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a>类提供了可用于设置属性和调用方法上的状态<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>当国家进入或退出秒。它还包含用于添加转场，例如方便的功能，<a href="qsignaltransition.html" tppabs="http://pyqt4doc.appspot.com/qsignaltransition.html">QSignalTransition</a>S作为在这个例子。请参阅<a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a>类描述进一步的细节。</p>
+<p>如果遇到错误，机器会寻找一个<a href="qstate.html#errorState-prop" tppabs="http://pyqt4doc.appspot.com/qstate.html#errorState-prop">error state</a>，并且如果有，它会进入这种状态。可能发生的错误的类型由所述<a href="qstatemachine.html#Error-enum" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#Error-enum">Error</a>枚举。进入错误状态后，错误的类型，可以检索与<a href="qstatemachine.html#error" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#error">error</a>（ ） 。当进入错误状态的状态图的执行不会停止。如果没有错误状态适用于在错误状态时，机器将停止执行和错误信息会被打印到控制台。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="Error-enum"></a>QStateMachine.Error</h3>
+<p>该枚举类型定义了可以在运行时发生的状态机错误。当状态机在运行时遇到不可恢复的错误，它会设置返回的错误代码<a href="qstatemachine.html#error" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#error">error</a>（ ） ，返回的错误信息<a href="qstatemachine.html#errorString-prop" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#errorString-prop">errorString</a>（） ，并输入基于错误的情况下的错误状态。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QStateMachine.NoError</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">没有发生错误。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QStateMachine.NoInitialStateError</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">本机已进入<a href="qstate.html" tppabs="http://pyqt4doc.appspot.com/qstate.html">QState</a>儿童不具有初始状态集。这个错误的上下文是一个缺少初始状态的状态。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QStateMachine.NoDefaultStateInHistoryStateError</tt>
+</td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">本机已进入<a href="qhistorystate.html" tppabs="http://pyqt4doc.appspot.com/qhistorystate.html">QHistoryState</a>它不具有默认状态设置。这个错误的上下文是<a href="qhistorystate.html" tppabs="http://pyqt4doc.appspot.com/qhistorystate.html">QHistoryState</a>一个缺少默认状态。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QStateMachine.NoCommonAncestorForTransitionError</tt>
+</td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">机器已经选择了一个过渡，其源和目标是不一样的状态的树的一部分，并且因此是不一样的状态机的一部分。一般情况下，这可能意味着国家之一没有得到父母或添加到任何机器。这个错误的上下文是过渡的源状态。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qstate.html#errorState-prop" tppabs="http://pyqt4doc.appspot.com/qstate.html#errorState-prop">setErrorState</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="EventPriority-enum"></a>QStateMachine.EventPriority</h3>
+<p>该枚举类型指定使用发布到状态机的事件的优先级<a href="qstatemachine.html#postEvent" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#postEvent">postEvent</a>（ ） 。</p>
+<p>高优先级的活动正常优先级的事件之前处理。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QStateMachine.NormalPriority</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该事件具有正常的优先级。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QStateMachine.HighPriority</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该事件具有高优先级。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="RestorePolicy-enum"></a>QStateMachine.RestorePolicy</h3>
+<p>这个枚举变量指定的恢复策略类型。恢复策略生效时，机器进入其中设置一个或多个属性的状态。如果恢复策略设置为RestoreProperties ，状态机将保存属性的原始值新值被设置之前。</p>
+<p>后来，当机器或者进入不设置为给定的属性的值的状态下，该属性将被自动恢复到其初始值。</p>
+<p>只有一个初始值将被保存为任何给定的属性。如果某个属性的值已经储存的状态机，它不会被复盖，直到该物业已成功恢复。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QStateMachine.DontRestoreProperties</tt>
+</td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">状态机应该不保存属性的初始值，并在以后恢复它们。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QStateMachine.RestoreProperties</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">状态机应该保存属性的初始值，并在以后恢复它们。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qstatemachine.html#globalRestorePolicy-prop" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#globalRestorePolicy-prop">QStateMachine.globalRestorePolicy</a>和<a href="qstate.html#assignProperty" tppabs="http://pyqt4doc.appspot.com/qstate.html#assignProperty">QState.assignProperty</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QStateMachine"></a>QStateMachine.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个新的状态机具有给定<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="addDefaultAnimation"></a>QStateMachine.addDefaultAnimation (<i>self</i>, <a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a> <i>animation</i>)</h3>
+<p>添加一个默认<i>animation</i>应考虑的任何过渡。</p>
+
+
+<h3 class="fn">
+<a name="addState"></a>QStateMachine.addState (<i>self</i>, <a href="qabstractstate.html" tppabs="http://pyqt4doc.appspot.com/qabstractstate.html">QAbstractState</a> <i>state</i>)</h3>
+<p>该<i>state</i>说法有它的所有权转移给Qt的。</p>
+<p>将给定<i>state</i>这个状态机。国家变成了顶级的状态。</p>
+<p>如果国家已经在不同的机器上，它首先会从旧机器中取出，然后加入到本机。</p>
+<p><b>See also</b> <a href="qstatemachine.html#removeState" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#removeState">removeState</a>（）和<a href="qstate.html#initialState-prop" tppabs="http://pyqt4doc.appspot.com/qstate.html#initialState-prop">setInitialState</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="cancelDelayedEvent"></a>bool QStateMachine.cancelDelayedEvent (<i>self</i>, int <i>id</i>)</h3>
+<p>取消确定了在给定的延迟事件<i>id</i>。 ID应该是通过调用返回的值<a href="qstatemachine.html#postDelayedEvent" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#postDelayedEvent">postDelayedEvent</a>（ ） 。返回True如果该事件被成功取消，否则返回False 。</p>
+<p><b>Note:</b>这个功能是<a href="index.htm#thread-safe" tppabs="http://pyqt4doc.appspot.com/threads-reentrancy.html#thread-safe">thread-safe</a>。</p>
+<p><b>See also</b> <a href="qstatemachine.html#postDelayedEvent" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#postDelayedEvent">postDelayedEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clearError"></a>QStateMachine.clearError (<i>self</i>)</h3>
+<p>清除状态机的错误字符串和错误代码。</p>
+
+
+<h3 class="fn">
+<a name="configuration"></a>list-of-QAbstractState QStateMachine.configuration (<i>self</i>)</h3>
+<p>返回极大一致集的状态（包括并行和最终状态）的，这个状态机是目前。如果一个国家<tt>s</tt>在配置中，它总是的情况下的父<tt>s</tt>也是在C 。然而，请注意，机器本身不是配置的显式成员。</p>
+
+
+<h3 class="fn">
+<a name="defaultAnimations"></a>list-of-QAbstractAnimation QStateMachine.defaultAnimations (<i>self</i>)</h3>
+<p>返回默认的动画，将被视为对任何过渡的列表。</p>
+
+
+<h3 class="fn">
+<a name="error"></a><a href="qstatemachine.html#Error-enum" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#Error-enum">Error</a> QStateMachine.error (<i>self</i>)</h3>
+<p>返回发生在状态机的最后一个错误的错误代码。</p>
+
+
+<h3 class="fn">
+<a name="errorString"></a>QString QStateMachine.errorString (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="event"></a>bool QStateMachine.event (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>e</i>)</h3>
+<p>从重新实现<a href="qobject.html#event" tppabs="http://pyqt4doc.appspot.com/qobject.html#event">QObject.event</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="eventFilter"></a>bool QStateMachine.eventFilter (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>watched</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qobject.html#eventFilter" tppabs="http://pyqt4doc.appspot.com/qobject.html#eventFilter">QObject.eventFilter</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="globalRestorePolicy"></a><a href="qstatemachine.html#RestorePolicy-enum" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#RestorePolicy-enum">RestorePolicy</a> QStateMachine.globalRestorePolicy (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="isAnimated"></a>bool QStateMachine.isAnimated (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="isRunning"></a>bool QStateMachine.isRunning (<i>self</i>)</h3>
+<p>返回是否该状态机正在运行。</p>
+<p><a href="qstatemachine.html#start" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#start">start</a>（ ）<a href="qstatemachine.html#stop" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#stop">stop</a>（ ）</p>
+
+
+<h3 class="fn">
+<a name="onEntry"></a>QStateMachine.onEntry (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qabstractstate.html#onEntry" tppabs="http://pyqt4doc.appspot.com/qabstractstate.html#onEntry">QAbstractState.onEntry</a>（ ） 。</p>
+<p>这个函数会调用<a href="qstatemachine.html#start" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#start">start</a>（ ）来启动状态机。</p>
+
+
+<h3 class="fn">
+<a name="onExit"></a>QStateMachine.onExit (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qabstractstate.html#onExit" tppabs="http://pyqt4doc.appspot.com/qabstractstate.html#onExit">QAbstractState.onExit</a>（ ） 。</p>
+<p>这个函数会调用<a href="qstatemachine.html#stop" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#stop">stop</a>（）停止状态机，并随后放出<a href="qstatemachine.html#stopped" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#stopped">stopped</a>（）信号。</p>
+
+
+<h3 class="fn">
+<a name="postDelayedEvent"></a>int QStateMachine.postDelayedEvent (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>, int <i>delay</i>)</h3>
+<p>该<i>event</i>说法有它的所有权转移给Qt的。</p>
+<p>帖子给定的<i>event</i>用于处理由该状态机中，用给定的<i>delay</i>以毫秒为单位。返回与延迟事件相关联的标识符，或-1，如果事件无法公布。</p>
+<p>此函数立即返回。当延迟已过期，该事件将被添加到状态机的事件队列进行处理。状态机取事件的所有权，并删除它，一旦它已被处理。</p>
+<p>您只能在状态机运行时发布事件。</p>
+<p><b>Note:</b>这个功能是<a href="index.htm#thread-safe" tppabs="http://pyqt4doc.appspot.com/threads-reentrancy.html#thread-safe">thread-safe</a>。</p>
+<p><b>See also</b> <a href="qstatemachine.html#cancelDelayedEvent" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#cancelDelayedEvent">cancelDelayedEvent</a>（）和<a href="qstatemachine.html#postEvent" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#postEvent">postEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="postEvent"></a>QStateMachine.postEvent (<i>self</i>, <a href="qevent.html" tppabs="http://pyqt4doc.appspot.com/qevent.html">QEvent</a> <i>event</i>, <a href="qstatemachine.html#EventPriority-enum" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#EventPriority-enum">EventPriority</a> <i>priority</i> = QStateMachine.NormalPriority)</h3>
+<p>该<i>event</i>说法有它的所有权转移给Qt的。</p>
+<p>帖子给定的<i>event</i>的给定<i>priority</i>处理这个状态机。</p>
+<p>此函数立即返回。该事件被添加到状态机的事件队列中。事件在张贴的顺序处理。状态机取事件的所有权，并删除它，一旦它已被处理。</p>
+<p>您只能在状态机运行时发布事件。</p>
+<p><b>Note:</b>这个功能是<a href="index.htm#thread-safe" tppabs="http://pyqt4doc.appspot.com/threads-reentrancy.html#thread-safe">thread-safe</a>。</p>
+<p><b>See also</b> <a href="qstatemachine.html#postDelayedEvent" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#postDelayedEvent">postDelayedEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="removeDefaultAnimation"></a>QStateMachine.removeDefaultAnimation (<i>self</i>, <a href="qabstractanimation.html" tppabs="http://pyqt4doc.appspot.com/qabstractanimation.html">QAbstractAnimation</a> <i>animation</i>)</h3>
+<p>移除<i>animation</i>从预设的动画列表中。</p>
+
+
+<h3 class="fn">
+<a name="removeState"></a>QStateMachine.removeState (<i>self</i>, <a href="qabstractstate.html" tppabs="http://pyqt4doc.appspot.com/qabstractstate.html">QAbstractState</a> <i>state</i>)</h3>
+<p>该<i>state</i>争论</p>
+<p>删除给定的<i>state</i>从这个状态机。状态的状态机版本的所有权。</p>
+<p><b>See also</b> <a href="qstatemachine.html#addState" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#addState">addState</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setAnimated"></a>QStateMachine.setAnimated (<i>self</i>, bool <i>enabled</i>)</h3>
+<h3 class="fn">
+<a name="setGlobalRestorePolicy"></a>QStateMachine.setGlobalRestorePolicy (<i>self</i>, <a href="qstatemachine.html#RestorePolicy-enum" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#RestorePolicy-enum">RestorePolicy</a> <i>restorePolicy</i>)</h3>
+<h3 class="fn">
+<a name="start"></a>QStateMachine.start (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void start()</tt>。</p>
+<p>启动这个状态机。机器将重置它的配置和过渡到初始状态。当最后的顶级状态（<a href="qfinalstate.html" tppabs="http://pyqt4doc.appspot.com/qfinalstate.html">QFinalState</a>）输入时，机器会发出的<a href="qstate.html#finished" tppabs="http://pyqt4doc.appspot.com/qstate.html#finished">finished</a>（）信号。</p>
+<p><b>Note:</b>状态机将不无运行事件循环，如主应用程序事件循环运行开始<a href="qcoreapplication.html#exec" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#exec">QCoreApplication.exec</a>（）或<a href="qapplication.html#exec" tppabs="http://pyqt4doc.appspot.com/qapplication.html#exec">QApplication.exec</a>（ ） 。</p>
+<p><b>See also</b> <a href="qstatemachine.html#started" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#started">started</a>（ ）<a href="qstate.html#finished" tppabs="http://pyqt4doc.appspot.com/qstate.html#finished">finished</a>（ ）<a href="qstatemachine.html#stop" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#stop">stop</a>（）和<a href="qstate.html#initialState-prop" tppabs="http://pyqt4doc.appspot.com/qstate.html#initialState-prop">initialState</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="stop"></a>QStateMachine.stop (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void stop()</tt>。</p>
+<p>停止该状态机。状态机将停止处理事件，然后放出<a href="qstatemachine.html#stopped" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#stopped">stopped</a>（）信号。</p>
+<p><b>See also</b> <a href="qstatemachine.html#stopped" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#stopped">stopped</a>（）和<a href="qstatemachine.html#start" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#start">start</a>（ ） 。</p>
+
+
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="started"></a>void started ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>当状态机进入初始状态（这个信号被发射<a href="qstate.html#initialState-prop" tppabs="http://pyqt4doc.appspot.com/qstate.html#initialState-prop">QStateMachine.initialState</a>） 。</p>
+<p><b>See also</b> <a href="qstate.html#finished" tppabs="http://pyqt4doc.appspot.com/qstate.html#finished">QStateMachine.finished</a>（）和<a href="qstatemachine.html#start" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#start">QStateMachine.start</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="stopped"></a>void stopped ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时，状态机已经停止。</p>
+<p><b>See also</b> <a href="qstatemachine.html#stop" tppabs="http://pyqt4doc.appspot.com/qstatemachine.html#stop">QStateMachine.stop</a>（）和<a href="qstate.html#finished" tppabs="http://pyqt4doc.appspot.com/qstate.html#finished">QStateMachine.finished</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

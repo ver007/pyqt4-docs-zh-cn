@@ -1,0 +1,502 @@
+﻿<html>
+<head>
+<title>QNetworkAccessManager Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QNetworkAccessManager Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtnetwork.html">QtNetwork</a> module]</sup></sup>
+</h1>
+<p>该QNetworkAccessManager类允许应用程序发送网络请求和接收回复<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qnetworkaccessmanager.html#NetworkAccessibility-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#NetworkAccessibility-enum">NetworkAccessibility</a></b> { UnknownAccessibility, NotAccessible, Accessible }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qnetworkaccessmanager.html#Operation-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#Operation-enum">Operation</a></b> { HeadOperation, GetOperation, PutOperation, PostOperation, DeleteOperation, CustomOperation }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkaccessmanager.html#QNetworkAccessManager" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#QNetworkAccessManager">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>QNetworkConfiguration <b><a href="qnetworkaccessmanager.html#activeConfiguration" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#activeConfiguration">activeConfiguration</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QAbstractNetworkCache <b><a href="qnetworkaccessmanager.html#cache" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#cache">cache</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QNetworkConfiguration <b><a href="qnetworkaccessmanager.html#configuration" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#configuration">configuration</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QNetworkCookieJar <b><a href="qnetworkaccessmanager.html#cookieJar" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#cookieJar">cookieJar</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QNetworkReply <b><a href="qnetworkaccessmanager.html#createRequest" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#createRequest">createRequest</a></b> (<i>self</i>, Operation <i>op</i>, QNetworkRequest <i>request</i>, QIODevice <i>device</i> = None)</li>
+<li>
+<div class="fn"></div>QNetworkReply <b><a href="qnetworkaccessmanager.html#deleteResource" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#deleteResource">deleteResource</a></b> (<i>self</i>, QNetworkRequest <i>request</i>)</li>
+<li>
+<div class="fn"></div>QNetworkReply <b><a href="qnetworkaccessmanager.html#get" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#get">get</a></b> (<i>self</i>, QNetworkRequest <i>request</i>)</li>
+<li>
+<div class="fn"></div>QNetworkReply <b><a href="qnetworkaccessmanager.html#head" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#head">head</a></b> (<i>self</i>, QNetworkRequest <i>request</i>)</li>
+<li>
+<div class="fn"></div>NetworkAccessibility <b><a href="qnetworkaccessmanager.html#networkAccessible" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#networkAccessible">networkAccessible</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QNetworkReply <b><a href="qnetworkaccessmanager.html#post" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#post">post</a></b> (<i>self</i>, QNetworkRequest <i>request</i>, QIODevice <i>data</i>)</li>
+<li>
+<div class="fn"></div>QNetworkReply <b><a href="qnetworkaccessmanager.html#post-2" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#post-2">post</a></b> (<i>self</i>, QNetworkRequest <i>request</i>, QByteArray <i>data</i>)</li>
+<li>
+<div class="fn"></div>QNetworkReply <b><a href="qnetworkaccessmanager.html#post-3" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#post-3">post</a></b> (<i>self</i>, QNetworkRequest <i>request</i>, QHttpMultiPart <i>multiPart</i>)</li>
+<li>
+<div class="fn"></div>QNetworkProxy <b><a href="qnetworkaccessmanager.html#proxy" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#proxy">proxy</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QNetworkProxyFactory <b><a href="qnetworkaccessmanager.html#proxyFactory" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#proxyFactory">proxyFactory</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QNetworkReply <b><a href="qnetworkaccessmanager.html#put" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#put">put</a></b> (<i>self</i>, QNetworkRequest <i>request</i>, QIODevice <i>data</i>)</li>
+<li>
+<div class="fn"></div>QNetworkReply <b><a href="qnetworkaccessmanager.html#put-2" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#put-2">put</a></b> (<i>self</i>, QNetworkRequest <i>request</i>, QByteArray <i>data</i>)</li>
+<li>
+<div class="fn"></div>QNetworkReply <b><a href="qnetworkaccessmanager.html#put-3" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#put-3">put</a></b> (<i>self</i>, QNetworkRequest <i>request</i>, QHttpMultiPart <i>multiPart</i>)</li>
+<li>
+<div class="fn"></div>QNetworkReply <b><a href="qnetworkaccessmanager.html#sendCustomRequest" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#sendCustomRequest">sendCustomRequest</a></b> (<i>self</i>, QNetworkRequest <i>request</i>, QByteArray <i>verb</i>, QIODevice <i>data</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkaccessmanager.html#setCache" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#setCache">setCache</a></b> (<i>self</i>, QAbstractNetworkCache <i>cache</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkaccessmanager.html#setConfiguration" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#setConfiguration">setConfiguration</a></b> (<i>self</i>, QNetworkConfiguration <i>config</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkaccessmanager.html#setCookieJar" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#setCookieJar">setCookieJar</a></b> (<i>self</i>, QNetworkCookieJar <i>cookieJar</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkaccessmanager.html#setNetworkAccessible" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#setNetworkAccessible">setNetworkAccessible</a></b> (<i>self</i>, NetworkAccessibility <i>accessible</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkaccessmanager.html#setProxy" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#setProxy">setProxy</a></b> (<i>self</i>, QNetworkProxy <i>proxy</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qnetworkaccessmanager.html#setProxyFactory" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#setProxyFactory">setProxyFactory</a></b> (<i>self</i>, QNetworkProxyFactory <i>factory</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qnetworkaccessmanager.html#authenticationRequired" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#authenticationRequired">authenticationRequired</a></b> (QNetworkReply *,QAuthenticator *)</li>
+<li>
+<div class="fn"></div>void <b><a href="qnetworkaccessmanager.html#finished" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#finished">finished</a></b> (QNetworkReply *)</li>
+<li>
+<div class="fn"></div>void <b><a href="qnetworkaccessmanager.html#networkAccessibleChanged" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#networkAccessibleChanged">networkAccessibleChanged</a></b> (QNetworkAccessManager::NetworkAccessibility)</li>
+<li>
+<div class="fn"></div>void <b><a href="qnetworkaccessmanager.html#proxyAuthenticationRequired" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#proxyAuthenticationRequired">proxyAuthenticationRequired</a></b> (const QNetworkProxy&amp;,QAuthenticator *)</li>
+<li>
+<div class="fn"></div>void <b><a href="qnetworkaccessmanager.html#sslErrors" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#sslErrors">sslErrors</a></b> (QNetworkReply *,const QList&lt;QSslError&gt;&amp;)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QNetworkAccessManager类允许应用程序发送网络请求和接收回复</p>
+<p>网络访问API是​​围绕一个QNetworkAccessManager对象，它保存了常见的配置和设置它发出的请求构造。它包含的代理和高速缓存配置，以及有关这些问题的信号，并且可以被用于监控网络操作的进度的答复信号。一个QNetworkAccessManager应该够整个Qt应用程序。</p>
+<p>一旦QNetworkAccessManager对象已经创建，应用程序可以用它来通过网络发送请求。 A组的标准功能提供，它接受一个请求和可选的数据，并且每个回报<a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a>对象。返回的对象，用于获取响应于对应的请求返回的任何数据。</p>
+<p>一个简单的下载断网可以完成与：</p>
+<pre class="cpp">
+ <span class="type">QNetworkAccessManager</span> <span class="operator">*</span>manager <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QNetworkAccessManager</span>(<span class="keyword">this</span>);
+ <a href="qobject.html#connect" tppabs="http://pyqt4doc.appspot.com/qobject.html#connect">connect</a>(manager<span class="operator">,</span> SIGNAL(finished(<span class="type"><a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a></span><span class="operator">*</span>))<span class="operator">,</span>
+         <span class="keyword">this</span><span class="operator">,</span> SLOT(replyFinished(<span class="type"><a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a></span><span class="operator">*</span>)));
+
+ manager<span class="operator">-</span><span class="operator">&gt;</span><a href="qnetworkaccessmanager.html#get" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#get">get</a>(<span class="type"><a href="qnetworkrequest.html" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html">QNetworkRequest</a></span>(<span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span>(<span class="string">"http://qt.nokia.com"</span>)));
+</pre>
+<p>QNetworkAccessManager有一个异步的API。当<tt>replyFinished</tt>槽上面被调用时，它需要的参数是<a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a>包含下载数据以及元数据（标题等）的对象。</p>
+<p><b>Note:</b>后的请求已经完成，它是用户的责任，以删除该<a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a>对象在适当的时间。不直接连接到插槽内删除<a href="qnetworkaccessmanager.html#finished" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#finished">finished</a>（ ） 。您可以使用<a href="qobject.html#deleteLater" tppabs="http://pyqt4doc.appspot.com/qobject.html#deleteLater">deleteLater</a>（）函数。</p>
+<p><b>Note:</b>QNetworkAccessManager队列接收到的请求。并行执行的请求的数目是依赖于该协议。目前，在桌面平台上的HTTP协议， 6请求是并行的一个主机/端口组合执行。</p>
+<p>一个更复杂的例子，假设经理已经存在，可以是：</p>
+<pre class="cpp">
+ <span class="type"><a href="qnetworkrequest.html" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html">QNetworkRequest</a></span> request;
+ request<span class="operator">.</span>setUrl(<span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span>(<span class="string">"http://qt.nokia.com"</span>));
+ request<span class="operator">.</span>setRawHeader(<span class="string">"User-Agent"</span><span class="operator">,</span> <span class="string">"MyOwnBrowser 1.0"</span>);
+
+ <span class="type"><a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a></span> <span class="operator">*</span>reply <span class="operator">=</span> manager<span class="operator">-</span><span class="operator">&gt;</span><a href="qnetworkaccessmanager.html#get" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#get">get</a>(request);
+ <a href="qobject.html#connect" tppabs="http://pyqt4doc.appspot.com/qobject.html#connect">connect</a>(reply<span class="operator">,</span> SIGNAL(readyRead())<span class="operator">,</span> <span class="keyword">this</span><span class="operator">,</span> SLOT(slotReadyRead()));
+ <a href="qobject.html#connect" tppabs="http://pyqt4doc.appspot.com/qobject.html#connect">connect</a>(reply<span class="operator">,</span> SIGNAL(error(<span class="type"><a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a></span><span class="operator">.</span>NetworkError))<span class="operator">,</span>
+         <span class="keyword">this</span><span class="operator">,</span> SLOT(slotError(<span class="type"><a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a></span><span class="operator">.</span>NetworkError)));
+ <a href="qobject.html#connect" tppabs="http://pyqt4doc.appspot.com/qobject.html#connect">connect</a>(reply<span class="operator">,</span> SIGNAL(sslErrors(<span class="type"><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qlist.html">QList</a></span><span class="operator">&lt;</span><span class="type"><a href="qsslerror.html" tppabs="http://pyqt4doc.appspot.com/qsslerror.html">QSslError</a></span><span class="operator">&gt;</span>))<span class="operator">,</span>
+         <span class="keyword">this</span><span class="operator">,</span> SLOT(slotSslErrors(<span class="type"><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qlist.html">QList</a></span><span class="operator">&lt;</span><span class="type"><a href="qsslerror.html" tppabs="http://pyqt4doc.appspot.com/qsslerror.html">QSslError</a></span><span class="operator">&gt;</span>)));
+</pre>
+<a id="network-and-roaming-support" name="network-and-roaming-support"></a>
+<h3>Network and Roaming support</h3>
+<p>与另外的<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/bearer-management.html">Bearer
+Management</a>API来的Qt 4.7 QNetworkAccessManager获得了管理网络连接的能力。 QNetworkAccessManager可以从网络接口，如果该设备处于脱机状态，并终止该接口，如果当前过程是最后一个要使用的上行链路。请注意，某些平台利用从上次停止的应用程序使用一个上行，直到系统实际终止的连接链路的宽限期。漫游同样透明。任何排队/挂起的网络请求都自动转移到新的接入点。</p>
+<p>客户想利用此功能不应该进行任何更改。事实上，它很可能是现有的特定于平台的连接代码可以简单地从应用程序中删除。</p>
+<p><b>Note:</b>在QNetworkAccessManager网络和漫游支持须待该平台支持连接管理。该<a href="qnetworkconfigurationmanager.html#Capability-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfigurationmanager.html#Capability-enum">QNetworkConfigurationManager.NetworkSessionRequired</a>可用于检测QNetworkAccessManager是否利用该功能。目前仅的Meego /哈麦丹和Symbian平台提供了连接管理支持。</p>
+<p><b>Note:</b>这个功能可以不与承载管理API结合使用以将QtMobility提供。应用程序必须迁移到Qt的版本承载管理。</p>
+<a id="symbian-platform-security-requirements" name="symbian-platform-security-requirements"></a>
+<h3>Symbian Platform Security Requirements</h3>
+<p>在Symbian ，它使用这个类的进程必须有<tt>NetworkServices</tt>平台的安全能力。如果客户端程序缺乏这种能力，操作将导致恐慌。</p>
+<p>平台的安全功能是通过添加<a href="index.htm#target-capability" tppabs="http://pyqt4doc.appspot.com/qmake-variable-reference.html#target-capability">TARGET.CAPABILITY</a>qmake的变量。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="NetworkAccessibility-enum"></a>QNetworkAccessManager.NetworkAccessibility</h3>
+<p>指示网络是否是通过这个网络访问管理器访问。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkAccessManager.UnknownAccessibility</tt>
+</td>
+<td class="topAlign"><tt>-1</tt></td>
+<td class="topAlign">该网络可访问性不能确定。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkAccessManager.NotAccessible</tt>
+</td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该网络目前无法使用，要么是因为没有网络复盖或网络访问已通过调用明确禁用目前还<a href="qnetworkaccessmanager.html#networkAccessible-prop" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#networkAccessible-prop">setNetworkAccessible</a>（ ） 。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkAccessManager.Accessible</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">该网络可访问。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qnetworkaccessmanager.html#networkAccessible-prop" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#networkAccessible-prop">networkAccessible</a>。</p>
+
+
+<h3 class="fn">
+<a name="Operation-enum"></a>QNetworkAccessManager.Operation</h3>
+<p>指示操作此回复正在处理。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkAccessManager.HeadOperation</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">检索标题操作（创建<a href="qnetworkaccessmanager.html#head" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#head">head</a>（））</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkAccessManager.GetOperation</tt>
+</td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">检索标题和​​下载内容（与创建<a href="qnetworkaccessmanager.html#get" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#get">get</a>（））</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkAccessManager.PutOperation</tt>
+</td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">上传内容操作（创建<a href="qnetworkaccessmanager.html#put" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#put">put</a>（））</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkAccessManager.PostOperation</tt>
+</td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">通过HTTP POST发送处理HTML表单的内容（与创建<a href="qnetworkaccessmanager.html#post" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#post">post</a>（））</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkAccessManager.DeleteOperation</tt>
+</td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">删除的内容操作（创建<a href="qnetworkaccessmanager.html#deleteResource" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#deleteResource">deleteResource</a>（））</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QNetworkAccessManager.CustomOperation</tt>
+</td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">自定义操作（创建<a href="qnetworkaccessmanager.html#sendCustomRequest" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#sendCustomRequest">sendCustomRequest</a>（））</td>
+</tr>
+</table>
+<p>这个枚举被引入或修改的Qt 4.7 。</p>
+<p><b>See also</b> <a href="qnetworkreply.html#operation" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html#operation">QNetworkReply.operation</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QNetworkAccessManager"></a>QNetworkAccessManager.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>对象，它是网络访问的API ，并设置中心<i>parent</i>作为父对象。</p>
+
+
+<h3 class="fn">
+<a name="activeConfiguration"></a><a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a> QNetworkAccessManager.activeConfiguration (<i>self</i>)</h3>
+<p>返回当前活动的网络配置。</p>
+<p>如果网络配置通过返回<a href="qnetworkaccessmanager.html#configuration" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#configuration">configuration</a>（ ）的类型为<a href="qnetworkconfiguration.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html#Type-enum">QNetworkConfiguration.ServiceNetwork</a>这个函数将返回配置的当前活动的子网络配置。否则返回相同的网络配置，<a href="qnetworkaccessmanager.html#configuration" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#configuration">configuration</a>（ ） 。</p>
+<p>使用此功能可返回当前的实际网络配置中的网络会话使用。</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qnetworkaccessmanager.html#configuration" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#configuration">configuration</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="cache"></a><a href="qabstractnetworkcache.html" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html">QAbstractNetworkCache</a> QNetworkAccessManager.cache (<i>self</i>)</h3>
+<p>返回用于存储从网络获得的数据的高速缓存。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qnetworkaccessmanager.html#setCache" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#setCache">setCache</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="configuration"></a><a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a> QNetworkAccessManager.configuration (<i>self</i>)</h3>
+<p>返回将被用来创建网络配置中的<a href="qnetworksession.html" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html">network session</a>处理网络请求时，将被使用。</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qnetworkaccessmanager.html#setConfiguration" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#setConfiguration">setConfiguration</a>（）和<a href="qnetworkaccessmanager.html#activeConfiguration" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#activeConfiguration">activeConfiguration</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="cookieJar"></a><a href="qnetworkcookiejar.html" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html">QNetworkCookieJar</a> QNetworkAccessManager.cookieJar (<i>self</i>)</h3>
+<p>返回<a href="qnetworkcookiejar.html" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html">QNetworkCookieJar</a>用来存储从所述网络以及饼干是将要被发送得到的cookie。</p>
+<p><b>See also</b> <a href="qnetworkaccessmanager.html#setCookieJar" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#setCookieJar">setCookieJar</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="createRequest"></a><a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a> QNetworkAccessManager.createRequest (<i>self</i>, <a href="qnetworkaccessmanager.html#Operation-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#Operation-enum">Operation</a> <i>op</i>, <a href="qnetworkrequest.html" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html">QNetworkRequest</a> <i>request</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>device</i> = None)</h3>
+<p>返回一个新的<a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a>反对处理操作<i>op</i>并要求<i>req</i>。该装置<i>outgoingData</i>始终为0 GET和HEAD请求，但该值传递给<a href="qnetworkaccessmanager.html#post" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#post">post</a>（）和<a href="qnetworkaccessmanager.html#put" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#put">put</a>（ ）这些操作（<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>变种会通过一个<a href="qbuffer.html" tppabs="http://pyqt4doc.appspot.com/qbuffer.html">QBuffer</a>对象） 。</p>
+<p>默认实现调用<a href="qnetworkcookiejar.html#cookiesForUrl" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html#cookiesForUrl">QNetworkCookieJar.cookiesForUrl</a>（ ）上的饼干罐设置<a href="qnetworkaccessmanager.html#setCookieJar" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#setCookieJar">setCookieJar</a>（）来获得将要发送到远程服务器的饼干。</p>
+<p>返回的对象必须处于打开状态。</p>
+
+
+<h3 class="fn">
+<a name="deleteResource"></a><a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a> QNetworkAccessManager.deleteResource (<i>self</i>, <a href="qnetworkrequest.html" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html">QNetworkRequest</a> <i>request</i>)</h3>
+<p>发送删除确定的URL的资源的请求<i>request</i>。</p>
+<p><b>Note:</b>此功能目前仅适用于HTTP ，执行一个HTTP DELETE请求。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qnetworkaccessmanager.html#get" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#get">get</a>（ ）<a href="qnetworkaccessmanager.html#post" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#post">post</a>（ ）<a href="qnetworkaccessmanager.html#put" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#put">put</a>（）和<a href="qnetworkaccessmanager.html#sendCustomRequest" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#sendCustomRequest">sendCustomRequest</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="get"></a><a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a> QNetworkAccessManager.get (<i>self</i>, <a href="qnetworkrequest.html" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html">QNetworkRequest</a> <i>request</i>)</h3>
+<p>投递一个请求，以获得目标的内容<i>request</i>并返回一个新的<a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a>对象打开阅读，发射的<a href="qiodevice.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#readyRead">readyRead()</a>每当新的数据到达信号。</p>
+<p>的内容以及相关的头文件会被下载。</p>
+<p><b>See also</b> <a href="qnetworkaccessmanager.html#post" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#post">post</a>（ ）<a href="qnetworkaccessmanager.html#put" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#put">put</a>（ ）<a href="qnetworkaccessmanager.html#deleteResource" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#deleteResource">deleteResource</a>（）和<a href="qnetworkaccessmanager.html#sendCustomRequest" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#sendCustomRequest">sendCustomRequest</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="head"></a><a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a> QNetworkAccessManager.head (<i>self</i>, <a href="qnetworkrequest.html" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html">QNetworkRequest</a> <i>request</i>)</h3>
+<p>投递一个请求以获得对网络的标头<i>request</i>并返回一个新的<a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a>对象将包含这个头。</p>
+<p>相关（ HEAD ）的HTTP请求后，该函数命名。</p>
+
+
+<h3 class="fn">
+<a name="networkAccessible"></a><a href="qnetworkaccessmanager.html#NetworkAccessibility-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#NetworkAccessibility-enum">NetworkAccessibility</a> QNetworkAccessManager.networkAccessible (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="post"></a><a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a> QNetworkAccessManager.post (<i>self</i>, <a href="qnetworkrequest.html" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html">QNetworkRequest</a> <i>request</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>data</i>)</h3>
+<p>发送一个HTTP POST请求向指定的目的地<i>request</i>并返回一个新的<a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a>对象为读而打开将包含由服务器发送回复。的内容<i>data</i>设备将被上传到服务器。</p>
+<p><i>data</i>必须是开放的阅读和必须保持有效，直到<a href="qnetworkaccessmanager.html#finished" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#finished">finished</a>（ ）信号被发射这个答复。</p>
+<p><b>Note:</b>在协议比HTTP和HTTPS等发送POST请求是不确定的，可能会失败。</p>
+<p><b>See also</b> <a href="qnetworkaccessmanager.html#get" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#get">get</a>（ ）<a href="qnetworkaccessmanager.html#put" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#put">put</a>（ ）<a href="qnetworkaccessmanager.html#deleteResource" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#deleteResource">deleteResource</a>（）和<a href="qnetworkaccessmanager.html#sendCustomRequest" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#sendCustomRequest">sendCustomRequest</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="post-2"></a><a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a> QNetworkAccessManager.post (<i>self</i>, <a href="qnetworkrequest.html" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html">QNetworkRequest</a> <i>request</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>data</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>发送的内容<i>data</i>字节数组通过指定的目标<i>request</i>。</p>
+
+
+<h3 class="fn">
+<a name="post-3"></a><a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a> QNetworkAccessManager.post (<i>self</i>, <a href="qnetworkrequest.html" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html">QNetworkRequest</a> <i>request</i>, <a href="qhttpmultipart.html" tppabs="http://pyqt4doc.appspot.com/qhttpmultipart.html">QHttpMultiPart</a> <i>multiPart</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>发送的内容<i>multiPart</i>消息由指定的目标<i>request</i>。</p>
+<p>这可以用于通过HTTP发送的MIME多部分消息。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qhttpmultipart.html" tppabs="http://pyqt4doc.appspot.com/qhttpmultipart.html">QHttpMultiPart</a>，<a href="qhttppart.html" tppabs="http://pyqt4doc.appspot.com/qhttppart.html">QHttpPart</a>和<a href="qnetworkaccessmanager.html#put" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#put">put</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="proxy"></a><a href="qnetworkproxy.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html">QNetworkProxy</a> QNetworkAccessManager.proxy (<i>self</i>)</h3>
+<p>返回<a href="qnetworkproxy.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html">QNetworkProxy</a>使用这个发送的请求<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>对象将使用。对于代理的默认值是<a href="qnetworkproxy.html#ProxyType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#ProxyType-enum">QNetworkProxy.DefaultProxy</a>。</p>
+<p><b>See also</b> <a href="qnetworkaccessmanager.html#setProxy" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#setProxy">setProxy</a>（ ）<a href="qnetworkaccessmanager.html#setProxyFactory" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#setProxyFactory">setProxyFactory</a>（）和<a href="qnetworkaccessmanager.html#proxyAuthenticationRequired" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#proxyAuthenticationRequired">proxyAuthenticationRequired</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="proxyFactory"></a><a href="qnetworkproxyfactory.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyfactory.html">QNetworkProxyFactory</a> QNetworkAccessManager.proxyFactory (<i>self</i>)</h3>
+<p>返回的代理工厂，这<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>对象正在使用，以确定要用于请求的代理。</p>
+<p>请注意，这个函数返回的指针是由管理<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>并且可以在任何时候被删除。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qnetworkaccessmanager.html#setProxyFactory" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#setProxyFactory">setProxyFactory</a>（）和<a href="qnetworkaccessmanager.html#proxy" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#proxy">proxy</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="put"></a><a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a> QNetworkAccessManager.put (<i>self</i>, <a href="qnetworkrequest.html" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html">QNetworkRequest</a> <i>request</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>data</i>)</h3>
+<p>上传的内容<i>data</i>到目的地<i>request</i>和returnes新<a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a>对象将公开答复。</p>
+<p><i>data</i>必须打开进行读取时，这个函数被调用，并且必须保持有效，直到<a href="qnetworkaccessmanager.html#finished" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#finished">finished</a>（ ）信号被发射这个答复。</p>
+<p>无论是什么将可从返回的对象中读取取决于协议。对于HTTP ，服务器可能会发送一个小的HTML页面显示上传成功（或不）。其他协议可能会在他们的答复内容。</p>
+<p><b>Note:</b>对于HTTP ，申请将发送一个PUT请求，其中大部分服务器不允许。表单上传机制，包括通过HTML表单上传文件，使用POST机制。</p>
+<p><b>See also</b> <a href="qnetworkaccessmanager.html#get" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#get">get</a>（ ）<a href="qnetworkaccessmanager.html#post" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#post">post</a>（ ）<a href="qnetworkaccessmanager.html#deleteResource" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#deleteResource">deleteResource</a>（）和<a href="qnetworkaccessmanager.html#sendCustomRequest" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#sendCustomRequest">sendCustomRequest</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="put-2"></a><a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a> QNetworkAccessManager.put (<i>self</i>, <a href="qnetworkrequest.html" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html">QNetworkRequest</a> <i>request</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>data</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>发送的内容<i>multiPart</i>消息由指定的目标<i>request</i>。</p>
+<p>这可以用于通过HTTP发送的MIME多部分消息。</p>
+<p>此功能被引入Qt的4.8 。</p>
+<p><b>See also</b> <a href="qhttpmultipart.html" tppabs="http://pyqt4doc.appspot.com/qhttpmultipart.html">QHttpMultiPart</a>，<a href="qhttppart.html" tppabs="http://pyqt4doc.appspot.com/qhttppart.html">QHttpPart</a>和<a href="qnetworkaccessmanager.html#post" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#post">post</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="put-3"></a><a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a> QNetworkAccessManager.put (<i>self</i>, <a href="qnetworkrequest.html" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html">QNetworkRequest</a> <i>request</i>, <a href="qhttpmultipart.html" tppabs="http://pyqt4doc.appspot.com/qhttpmultipart.html">QHttpMultiPart</a> <i>multiPart</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>发送的内容<i>data</i>字节数组通过指定的目标<i>request</i>。</p>
+
+
+<h3 class="fn">
+<a name="sendCustomRequest"></a><a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a> QNetworkAccessManager.sendCustomRequest (<i>self</i>, <a href="qnetworkrequest.html" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html">QNetworkRequest</a> <i>request</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>verb</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>data</i> = None)</h3>
+<p>发送一个自定义的要求确定的URL的服务器<i>request</i>。</p>
+<p>它是用户的责任来发送<i>verb</i>到，根据HTTP规范是有效的服务器。</p>
+<p>这种方法提供了手段来发送动词比普通的人通过其他提供<a href="qnetworkaccessmanager.html#get" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#get">get</a>（）或<a href="qnetworkaccessmanager.html#post" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#post">post</a>（ ）等，例如发送一个HTTP OPTIONS命令。</p>
+<p>If <i>data</i>不为空，的内容<i>data</i>设备将被上传到服务器，在这种情况下，数据必须是开放的阅读和必须保持有效，直到<a href="qnetworkaccessmanager.html#finished" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#finished">finished</a>（ ）信号被发射这个答复。</p>
+<p><b>Note:</b>此功能目前仅适用于HTTP（S ）只。</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qnetworkaccessmanager.html#get" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#get">get</a>（ ）<a href="qnetworkaccessmanager.html#post" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#post">post</a>（ ）<a href="qnetworkaccessmanager.html#put" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#put">put</a>（）和<a href="qnetworkaccessmanager.html#deleteResource" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#deleteResource">deleteResource</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setCache"></a>QNetworkAccessManager.setCache (<i>self</i>, <a href="qabstractnetworkcache.html" tppabs="http://pyqt4doc.appspot.com/qabstractnetworkcache.html">QAbstractNetworkCache</a> <i>cache</i>)</h3>
+<p>该<i>cache</i>说法有它的所有权转移给Qt的。</p>
+<p>设置管理器的网络缓存是<i>cache</i>规定。缓存用于由经理分派的所有请求。</p>
+<p>使用此功能可在网络缓存对象设置为实现附加功能的类，比如保存cookie来永久存储。</p>
+<p><b>Note:</b> <a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>采取所有权<i>cache</i>对象。</p>
+<p><a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>默认情况下，没有一个集缓存。 Qt提供了一个简单的磁盘缓存，<a href="qnetworkdiskcache.html" tppabs="http://pyqt4doc.appspot.com/qnetworkdiskcache.html">QNetworkDiskCache</a>，它可以被使用。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qnetworkaccessmanager.html#cache" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#cache">cache</a>（）和<a href="qnetworkrequest.html#CacheLoadControl-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html#CacheLoadControl-enum">QNetworkRequest.CacheLoadControl</a>。</p>
+
+
+<h3 class="fn">
+<a name="setConfiguration"></a>QNetworkAccessManager.setConfiguration (<i>self</i>, <a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a> <i>config</i>)</h3>
+<p>设置创建时将要使用的网络配置中的<a href="qnetworksession.html" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html">network session</a>至<i>config</i>。</p>
+<p>网络配置使用了需要网络接入过程中的任何请求之前创建并打开一个网络会话。如果没有网络配置通过此功能的网络配置返回的明确设置<a href="qnetworkconfigurationmanager.html#defaultConfiguration" tppabs="http://pyqt4doc.appspot.com/qnetworkconfigurationmanager.html#defaultConfiguration">QNetworkConfigurationManager.defaultConfiguration</a>（）将被使用。</p>
+<p>要恢复设置网络配置值的默认网络配置从返回<a href="qnetworkconfigurationmanager.html#defaultConfiguration" tppabs="http://pyqt4doc.appspot.com/qnetworkconfigurationmanager.html#defaultConfiguration">QNetworkConfigurationManager.defaultConfiguration</a>（ ） 。</p>
+<pre class="cpp">
+ <span class="type"><a href="qnetworkconfigurationmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfigurationmanager.html">QNetworkConfigurationManager</a></span> manager;
+ networkAccessManager<span class="operator">-</span><span class="operator">&gt;</span>setConfiguration(manager<span class="operator">.</span>defaultConfiguration());
+</pre>
+<p>如果一个无效的网络配置设置，一个网络会话将无法建立。在这种情况下，网络请求将照常进行处理，但可能会失败。例如：</p>
+<pre class="cpp">
+ networkAccessManager<span class="operator">-</span><span class="operator">&gt;</span>setConfiguration(<span class="type"><a href="qnetworkconfiguration.html" tppabs="http://pyqt4doc.appspot.com/qnetworkconfiguration.html">QNetworkConfiguration</a></span>());
+</pre>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qnetworkaccessmanager.html#configuration" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#configuration">configuration</a>（）和<a href="qnetworksession.html" tppabs="http://pyqt4doc.appspot.com/qnetworksession.html">QNetworkSession</a>。</p>
+
+
+<h3 class="fn">
+<a name="setCookieJar"></a>QNetworkAccessManager.setCookieJar (<i>self</i>, <a href="qnetworkcookiejar.html" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html">QNetworkCookieJar</a> <i>cookieJar</i>)</h3>
+<p>该<i>cookieJar</i>说法有它的所有权转移给Qt的。</p>
+<p>设置管理员的饼干罐是<i>cookieJar</i>规定。饼干罐是用来由经理分派的所有请求。</p>
+<p>使用此功能可将饼干罐对象设置为实现附加功能的类，比如保存cookie来永久存储。</p>
+<p><b>Note:</b> <a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>采取所有权<i>cookieJar</i>对象。</p>
+<p>If <i>cookieJar</i>是在同一个线程，因为这<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>，它将设置的父<i>cookieJar</i>所以，当这个对象被删除，以及饼干罐被删除。如果你想与不同的共享饼干罐<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>对象，你可能要调用此函数后的饼干罐的父设置为0 。</p>
+<p><a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>默认情况下，不执行任何自己的cookie策略：它接受由服务器发送的所有cookie ，只要他们形成良好并符合最低安全要求（ cookie的域相匹配的要求及cookie路径相匹配的要求的） 。为了实现自己的安全策略，复盖<a href="qnetworkcookiejar.html#cookiesForUrl" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html#cookiesForUrl">QNetworkCookieJar.cookiesForUrl</a>（）和<a href="qnetworkcookiejar.html#setCookiesFromUrl" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html#setCookiesFromUrl">QNetworkCookieJar.setCookiesFromUrl</a>（ ）虚函数。这些功能是通过所谓的<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>它检测到一个新的cookie时。</p>
+<p><b>See also</b> <a href="qnetworkaccessmanager.html#cookieJar" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#cookieJar">cookieJar</a>（ ）<a href="qnetworkcookiejar.html#cookiesForUrl" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html#cookiesForUrl">QNetworkCookieJar.cookiesForUrl</a>（）和<a href="qnetworkcookiejar.html#setCookiesFromUrl" tppabs="http://pyqt4doc.appspot.com/qnetworkcookiejar.html#setCookiesFromUrl">QNetworkCookieJar.setCookiesFromUrl</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setNetworkAccessible"></a>QNetworkAccessManager.setNetworkAccessible (<i>self</i>, <a href="qnetworkaccessmanager.html#NetworkAccessibility-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#NetworkAccessibility-enum">NetworkAccessibility</a> <i>accessible</i>)</h3>
+<h3 class="fn">
+<a name="setProxy"></a>QNetworkAccessManager.setProxy (<i>self</i>, <a href="qnetworkproxy.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html">QNetworkProxy</a> <i>proxy</i>)</h3>
+<p>设置要用于以后的请求被代理<i>proxy</i>。这不会影响已发送的请求。该<a href="qnetworkaccessmanager.html#proxyAuthenticationRequired" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#proxyAuthenticationRequired">proxyAuthenticationRequired</a>（ ）信号，如果代理要求验证发射。</p>
+<p>代理设置此功能将被用于发出的所有请求<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>。在某些情况下，可能需要选择不同的代理取决于被发送的请求的类型或目的主机。如果是那样的话，你应该考虑使用<a href="qnetworkaccessmanager.html#setProxyFactory" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#setProxyFactory">setProxyFactory</a>（ ） 。</p>
+<p><b>See also</b> <a href="qnetworkaccessmanager.html#proxy" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#proxy">proxy</a>（）和<a href="qnetworkaccessmanager.html#proxyAuthenticationRequired" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#proxyAuthenticationRequired">proxyAuthenticationRequired</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setProxyFactory"></a>QNetworkAccessManager.setProxyFactory (<i>self</i>, <a href="qnetworkproxyfactory.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyfactory.html">QNetworkProxyFactory</a> <i>factory</i>)</h3>
+<p>该<i>factory</i>说法有它的所有权转移给Qt的。</p>
+<p>设置代理工厂这个类是<i>factory</i>。代理工厂被用来确定代理要用于给定要求的更具体的列表，而不是试图用所有请求相同的代理值。</p>
+<p>通过发送所有查询<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>将有型<a href="qnetworkproxyquery.html#QueryType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html#QueryType-enum">QNetworkProxyQuery.UrlRequest</a>。</p>
+<p>例如，一个代理工厂可以应用下面的规则：</p>
+<ul>
+<li>if the target address is in the local network (for example, if
+the hostname contains no dots or if it's an IP address in the
+organization's range), return <a href="qnetworkproxy.html#ProxyType-enum" tppabs="http://pyqt4doc.appspot.com/qnetworkproxy.html#ProxyType-enum">QNetworkProxy.NoProxy</a>
+</li>
+<li>if the request is FTP, return an FTP proxy</li>
+<li>if the request is HTTP or HTTPS, then return an HTTP proxy</li>
+<li>otherwise, return a SOCKSv5 proxy server</li>
+</ul>
+<p>的对象的生存期<i>factory</i>将由管理<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>。它会删除该对象时必要的。</p>
+<p><b>Note:</b>如果一个特定的代理设置与<a href="qnetworkaccessmanager.html#setProxy" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#setProxy">setProxy</a>（） ，工厂将不会被使用。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qnetworkaccessmanager.html#proxyFactory" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#proxyFactory">proxyFactory</a>（ ）<a href="qnetworkaccessmanager.html#setProxy" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#setProxy">setProxy</a>（）和<a href="qnetworkproxyquery.html" tppabs="http://pyqt4doc.appspot.com/qnetworkproxyquery.html">QNetworkProxyQuery</a>。</p>
+
+
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="authenticationRequired"></a>void authenticationRequired (QNetworkReply *,QAuthenticator *)</h3>
+<p>这是该信号的默认超载。</p>
+<p>每当最后服务器请求验证之前它提供所请求的内容这个信号被发射。连接到这个信号槽应填写凭证的内容（这可以通过检查来确定<i>reply</i>对象）的<i>authenticator</i>对象。</p>
+<p><a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>将在内部缓存的凭据，将发送相同的值，如果服务器再次需要认证，不发光的authenticationRequired （ ）信号。如果它拒绝的凭据，该信号将被再次发射。</p>
+<p><b>Note:</b>这是不可能使用QueuedConnection连接到该信号，就好像所述认证没有被填充了新的信息时，该信号返回的连接失败。</p>
+<p><b>See also</b> <a href="qnetworkaccessmanager.html#proxyAuthenticationRequired" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#proxyAuthenticationRequired">proxyAuthenticationRequired</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="finished"></a>void finished (QNetworkReply *)</h3>
+<p>这是该信号的默认超载。</p>
+<p>每当一个悬而未决的网络应答结束这个信号被发射。该<i>reply</i>参数将包含一个指针，它指向刚刚结束的答复。这个信号在串联与发射<a href="qnetworkreply.html#finished" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html#finished">QNetworkReply.finished</a>（）信号。</p>
+<p>See <a href="qnetworkreply.html#finished" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html#finished">QNetworkReply.finished</a>（）以了解关于状态的对象将是英寸信息</p>
+<p><b>Note:</b>不要删除<i>reply</i>对象在连接到该信号的时隙。使用<a href="qobject.html#deleteLater" tppabs="http://pyqt4doc.appspot.com/qobject.html#deleteLater">deleteLater</a>（ ） 。</p>
+<p><b>See also</b> <a href="qnetworkreply.html#finished" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html#finished">QNetworkReply.finished</a>（）和<a href="qnetworkreply.html#error" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html#error">QNetworkReply.error</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="networkAccessibleChanged"></a>void networkAccessibleChanged (QNetworkAccessManager::NetworkAccessibility)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的值<a href="qnetworkaccessmanager.html#networkAccessible-prop" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#networkAccessible-prop">networkAccessible</a>属性更改。<i>accessible</i>是新的网络接入。</p>
+
+
+<h3 class="fn">
+<a name="proxyAuthenticationRequired"></a>void proxyAuthenticationRequired (const QNetworkProxy&amp;,QAuthenticator *)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的代理请求验证和<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>无法找到一个有效的，缓存的凭据。连接到这个信号的时隙应填写为代理的凭据<i>proxy</i>在<i>authenticator</i>对象。</p>
+<p><a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>将在内部缓存的凭据。在下一次代理请求验证，<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>会自动发送相同的认证，而无需再次发射proxyAuthenticationRequired信号。</p>
+<p>如果代理服务器拒绝的凭据，<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>将再次发射该信号。</p>
+<p><b>See also</b> <a href="qnetworkaccessmanager.html#proxy" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#proxy">proxy</a>（ ）<a href="qnetworkaccessmanager.html#setProxy" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#setProxy">setProxy</a>（）和<a href="qnetworkaccessmanager.html#authenticationRequired" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#authenticationRequired">authenticationRequired</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sslErrors"></a>void sslErrors (QNetworkReply *,const QList&lt;QSslError&gt;&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射，如果SSL / TLS会话期间，成立了包括证书验证错误，遇到错误。该<i>errors</i>参数包含错误的列表，<i>reply</i>是<a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a>所遇到的这些错误。</p>
+<p>为了表明这些错误不是致命的，而连接应进行，<a href="qnetworkreply.html#ignoreSslErrors" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html#ignoreSslErrors">QNetworkReply.ignoreSslErrors</a>（）函数应该被称为从连接到该信号的时隙。如果它不叫， SSL会话将被推倒的任何数据交换（包括URL）之前。</p>
+<p>这个信号可以被用来显示一个错误消息，指示安全性可能会受到影响的用户，并显示在SSL设置（参见sslConfiguration （）来获得的话）。如果用户决定继续进行远程证明分析后，槽应调用ignoreSslErrors （） 。</p>
+<p><b>See also</b> <a href="qsslsocket.html#sslErrors" tppabs="http://pyqt4doc.appspot.com/qsslsocket.html#sslErrors">QSslSocket.sslErrors</a>（ ）<a href="qnetworkreply.html#sslErrors" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html#sslErrors">QNetworkReply.sslErrors</a>（ ）<a href="qnetworkreply.html#sslConfiguration" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html#sslConfiguration">QNetworkReply.sslConfiguration</a>（）和<a href="qnetworkreply.html#ignoreSslErrors" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html#ignoreSslErrors">QNetworkReply.ignoreSslErrors</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

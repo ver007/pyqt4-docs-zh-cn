@@ -1,0 +1,217 @@
+﻿<html>
+<head>
+<title>QXmlName Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QXmlName Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtxmlpatterns.html">QtXmlPatterns</a> module]</sup></sup>
+</h1>
+<p>该QXmlName类表示一个XML节点的名称，以高效，名称空间感知的方式。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlname.html#QXmlName" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#QXmlName">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlname.html#QXmlName-2" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#QXmlName-2">__init__</a></b> (<i>self</i>, QXmlNamePool <i>namePool</i>, QString <i>localName</i>, QString <i>namespaceUri</i> = QString(), QString <i>prefix</i> = QString())</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlname.html#QXmlName-3" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#QXmlName-3">__init__</a></b> (<i>self</i>, QXmlName)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlname.html#isNull" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#isNull">isNull</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qxmlname.html#localName" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#localName">localName</a></b> (<i>self</i>, QXmlNamePool <i>query</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qxmlname.html#namespaceUri" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#namespaceUri">namespaceUri</a></b> (<i>self</i>, QXmlNamePool <i>query</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qxmlname.html#prefix" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#prefix">prefix</a></b> (<i>self</i>, QXmlNamePool <i>query</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qxmlname.html#toClarkName" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#toClarkName">toClarkName</a></b> (<i>self</i>, QXmlNamePool <i>query</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QXmlName <b><a href="qxmlname.html#fromClarkName" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#fromClarkName">fromClarkName</a></b> (QString <i>clarkName</i>, QXmlNamePool <i>namePool</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlname.html#isNCName" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#isNCName">isNCName</a></b> (QString <i>candidate</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlname.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#__eq__">__eq__</a></b> (<i>self</i>, QXmlName <i>other</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qxmlname.html#__hash__" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#__hash__">__hash__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlname.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#__ne__">__ne__</a></b> (<i>self</i>, QXmlName <i>other</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QXmlName类表示一个XML节点的名称，以高效，名称空间感知的方式。</p>
+<p>QXmlName代表的方式，是既有效又安全的比较名称的XML节点的名称。通常情况下，一个XML节点表示一个XML元素或属性，但QXmlName还可以代表其它类型的节点，例如的名称，<a href="qabstractxmlreceiver.html#processingInstruction" tppabs="http://pyqt4doc.appspot.com/qabstractxmlreceiver.html#processingInstruction">QAbstractXmlReceiver.processingInstruction</a>（）和<a href="qabstractxmlreceiver.html#namespaceBinding" tppabs="http://pyqt4doc.appspot.com/qabstractxmlreceiver.html#namespaceBinding">QAbstractXmlReceiver.namespaceBinding</a>（ ） 。</p>
+<p>一个XML节点的名称有三个组件：<i>namespace
+URI</i>时，<i>local name</i>和<i>prefix</i>。要查看这些是指在XML中，考虑下面的代码片断。</p>
+<pre class="cpp">
+ &lt;book xmlns:dc='http://purl.org/dc/elements/1.1'
+       xmlns='http://example.com/MyDefault'&gt;
+     &lt;dc:title&gt;Mobey Dick&lt;/dc:title&gt; ...
+ &lt;/book&gt;
+</pre>
+<p>对于指定的元素<i>book</i>，<a href="qxmlname.html#localName" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#localName">localName</a>（）返回<i>book</i>，<a href="qxmlname.html#namespaceUri" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#namespaceUri">namespaceUri</a>（）返回<i>http://example.com/MyDefault</i>和<a href="qxmlname.html#prefix" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#prefix">prefix</a>（ ）返回一个空字符串。对于指定的元素<i>title</i>，<a href="qxmlname.html#localName" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#localName">localName</a>（）返回<i>title</i>，<a href="qxmlname.html#namespaceUri" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#namespaceUri">namespaceUri</a>（）返回<i>http://purl.org/dc/elements/1.1</i>和<a href="qxmlname.html#prefix" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#prefix">prefix</a>（）返回<i>dc</i>。</p>
+<p>以确保与QXmlName操作是有效的，例如，复印机的名称和比较它们， QXmlName的每个实例都与一个相关联的<a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">name pool</a>，必须在QXmlName施工时指定。该QXmlName的三个组成部分，即命名空间URI ，本地名称，前缀，存储在名称池映射到标识符，使他们能够共享。出于这个原因，创建QXmlName的有效实例的唯一方法是使用类的构造函数，其中<a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">name pool</a>，本地名称，命名空间URI和前缀必须全部指定。</p>
+<p>需要注意的是QXmlName的默认构造函数构造一个空实例。它通常用于在QXmlName集合分配未使用的条目。</p>
+<p>QXmlName的每个实例有一个相关联的副作用<a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">name pool</a>是QXmlName的每个实例是联系在一起的<a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">QXmlNamePool</a>与创建它。然而， QXmlName类不跟踪名称池的，所以所有的存取功能，例如，<a href="qxmlname.html#namespaceUri" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#namespaceUri">namespaceUri</a>（ ）<a href="qxmlname.html#prefix" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#prefix">prefix</a>（ ）<a href="qxmlname.html#localName" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#localName">localName</a>（）和<a href="qxmlname.html#toClarkName" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#toClarkName">toClarkName</a>（ ）要求的正确名称池被传递给他们。未能提供正确的名称池这些访问函数将导致不确定的行为。</p>
+<p>请注意，一个<a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">name pool</a> is
+<i>not</i>XML命名空间。一<a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">name
+pool</a>可以代表从不同的XML命名空间QXmlName的实例， QXmlName从一个XML命名空间的实例可以被分布在多个<a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">name
+pools</a>。</p>
+<a id="comparing-qxmlnames" name="comparing-qxmlnames"></a><a id="comparing-qxmlnames" name="comparing-qxmlnames"></a>
+<h3>Comparing QXmlNames</h3>
+<p>要确定什么是QXmlName指的是，在<i>namespace URI</i>和<i>local name</i>被使用。该<i>prefix</i>不使用，因为前缀只是一种替代通常更长的命名空间URI的使用简写名称。也不是名字比较中使用的前缀。例如，下面的两个元素节点代表相同的元件，并比较相等。</p>
+<pre class="cpp">
+ &lt;svg xmlns="http://www.w3.org/2000/svg"/&gt;
+</pre>
+<pre class="cpp">
+ &lt;x:svg xmlns:x="http://www.w3.org/2000/svg"/&gt;
+</pre>
+<p>虽然第二名称的前缀<i>x</i>，这两个名字比较相等的QXmlName的实例，因为该前缀未在比较中使用。</p>
+<p>本地名不能为空字符串，虽然前缀和命名空间URI即可。如果前缀不为空，命名空间URI不能为空。本地名称和前缀必须是有效的<a href="http://www.w3.org/TR/REC-xml-names/#NT-NCName">NCNames</a>例如<i>abc.def</i> or <i>abc123</i>。</p>
+<p>QXmlName表示有时被称为一个<i>expanded
+QName</i>，或者干脆一个QName 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QXmlName"></a>QXmlName.__init__ (<i>self</i>)</h3>
+<p>构造未初始化<a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a>。为了建立一个有效的<a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a>，您通常使用的其他构造函数，它接受一个<a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">name
+pool</a>，命名空间URI ，本地名称和前缀作为参数。但你也可以使用这个构造函数来建立一个空<a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a>然后指定一个现有<a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a>到它。</p>
+<p><b>See also</b> <a href="qxmlname.html#isNull" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#isNull">isNull</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QXmlName-2"></a>QXmlName.__init__ (<i>self</i>, <a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">QXmlNamePool</a> <i>namePool</i>, QString <i>localName</i>, QString <i>namespaceUri</i> = QString(), QString <i>prefix</i> = QString())</h3>
+<p>构造一个<a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a>实例插入<i>localName</i>，<i>namespaceURI</i>和<i>prefix</i>成<i>namePool</i>如果它们不存在。的访问函数<a href="qxmlname.html#namespaceUri" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#namespaceUri">namespaceUri</a>（ ）<a href="qxmlname.html#prefix" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#prefix">prefix</a>（ ）<a href="qxmlname.html#localName" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#localName">localName</a>（）和<a href="qxmlname.html#toClarkName" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#toClarkName">toClarkName</a>（ ）必须通过<i>namePool</i>这里所用的，所以<i>namePool</i>必须保持在范围内同时访问函数可以被使用。然而，两种情况可以与被比较<i>==</i> or <i>!=</i>和复制无<i>namePool</i>。</p>
+<p>用户保证该字符串组件的有效期为一个QName 。特别地，本地名称和前缀（如果有的话） ，必须有效<a href="http://www.w3.org/TR/REC-xml-names/#NT-NCName">NCNames</a>。该功能<a href="qxmlname.html#isNCName" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#isNCName">isNCName</a>（）可以被用来测试这些名称的有效性。命名空间URI应该是一个绝对URI 。<a href="qurl.html#isRelative" tppabs="http://pyqt4doc.appspot.com/qurl.html#isRelative">QUrl.isRelative</a>（ ）可以被用来测试的命名空间URI是否是相对或绝对。最后，提供了一个前缀无效没有命名空间URI提供时。</p>
+<p><i>namePool</i>不被复制。也不是参照它保留在该实例。这个构造函数插入三个字符串成<i>namePool</i>。</p>
+
+
+<h3 class="fn">
+<a name="QXmlName-3"></a>QXmlName.__init__ (<i>self</i>, <a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a>)</h3>
+<h3 class="fn">
+<a name="fromClarkName"></a><a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a> QXmlName.fromClarkName (QString <i>clarkName</i>, <a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">QXmlNamePool</a> <i>namePool</i>)</h3>
+<p>皈依<i>clarkName</i>成<a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a>，插入到<i>namePool</i>，并将其返回。</p>
+<p>克拉克的名字是一个方式来呈现一个完整的QName只有一个字符串，其中的命名空间不能包含括号。下面是几个例子：</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Clark Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td><tt>html</tt></td>
+<td>The local name <tt>html</tt>, in no namespace</td>
+</tr>
+<tr class="even" valign="top">
+<td>
+<tt>http://www.w3.org/1999/xhtml</tt>html</td>
+<td>The local name <tt>html</tt>, in the XHTML namespace</td>
+</tr>
+<tr class="odd" valign="top">
+<td>
+<tt>http://www.w3.org/1999/xhtml</tt>my:html</td>
+<td>The local name <tt>html</tt>, in the XHTML namespace, with the
+prefix <tt>my</tt>
+</td>
+</tr>
+</table>
+<p>如果命名空间包含括号，则返回值是无效或有不确定的内容。</p>
+<p>If <i>clarkName</i>是无效的名称，构造一个默认的<a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a>返回。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qxmlname.html#toClarkName" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#toClarkName">toClarkName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isNCName"></a>bool QXmlName.isNCName (QString <i>candidate</i>)</h3>
+<p>返回True如果<i>candidate</i>是<tt>NCName</tt>。一个<tt>NCName</tt>是，可以作为XML中的名称和一个串<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>，例如，在一个元素或属性，或一个变量的名称的前缀或本地名称。</p>
+<p><b>See also</b> <a href="http://www.w3.org/TR/REC-xml-names/#NT-NCName">Namespaces in XML
+1.0 (Second Edition), [4] NCName</a>。</p>
+
+
+<h3 class="fn">
+<a name="isNull"></a>bool QXmlName.isNull (<i>self</i>)</h3>
+<p>返回True如果<a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a>不具有有效的组合进行初始化<i>namespace URI</i>，<i>local name</i>和<i>prefix</i>。</p>
+<p>一个有效的本地名称始终是必需的。前缀和命名空间URI可以是空的，但如果前缀不为空，命名空间URI不能为空。本地名称和前缀必须是有效的<a href="http://www.w3.org/TR/REC-xml-names/#NT-NCName">NCNames</a>例如<i>abc.def</i> or <i>abc123</i>。</p>
+
+
+<h3 class="fn">
+<a name="localName"></a>QString QXmlName.localName (<i>self</i>, <a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">QXmlNamePool</a> <i>query</i>)</h3>
+<p>返回的本地名称。</p>
+<p>注意，为了提高效率，本地名称字符串没有存储在<a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a>但在<a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">QXmlNamePool</a>被传递给构造函数。因此，同样的<i>namePool</i>必须被传递给这个函数，因此它可以用于查找本地名称。</p>
+
+
+<h3 class="fn">
+<a name="namespaceUri"></a>QString QXmlName.namespaceUri (<i>self</i>, <a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">QXmlNamePool</a> <i>query</i>)</h3>
+<p>返回的命名空间URI 。</p>
+<p>注意，为了提高效率，命名空间URI字符串没有存储在<a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a>但在<a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">QXmlNamePool</a>被传递给构造函数。因此，同样的<i>namePool</i>必须被传递给这个函数，因此它可以用于查找命名空间URI 。</p>
+
+
+<h3 class="fn">
+<a name="prefix"></a>QString QXmlName.prefix (<i>self</i>, <a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">QXmlNamePool</a> <i>query</i>)</h3>
+<p>返回前缀。</p>
+<p>注意，为了提高效率，前缀字符串没有存储在<a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a>但在<a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">QXmlNamePool</a>被传递给构造函数。因此，同样的<i>namePool</i>必须被传递给该函数，因此它可用于查找的前缀。</p>
+
+
+<h3 class="fn">
+<a name="toClarkName"></a>QString QXmlName.toClarkName (<i>self</i>, <a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">QXmlNamePool</a> <i>query</i>)</h3>
+<p>返回此<a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a>格式化为一个克拉克名称。举例来说，如果本地名称是<tt>html</tt>，前缀是<tt>x</tt>和命名空间URI为<tt>http://www.w3.org/1999/xhtml/</tt>，那么返回的克拉克的名字是：</p>
+<pre class="cpp">
+ {http:<span class="comment">//www.w3.org/1999/xhtml/}x:html.</span>
+</pre>
+<p>如果本地名称是<i>MyWidget</i>和命名空间为空，则返回的克拉克的名字是：</p>
+<pre class="cpp">
+ MyWidget
+</pre>
+<p>需要注意的是为提高效率，命名空间URI ，本地名称和前缀字符串不存储在<a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a>但在<a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">QXmlNamePool</a>被传递给构造函数。因此，同样的<i>namePool</i>必须被传递给该函数，因此它可用于查找三个字符串组成。</p>
+<p>此功能可用于调试。</p>
+<p><b>See also</b> <a href="http://www.jclark.com/xml/xmlns.htm">XML Namespaces, James
+Clark</a>和<a href="qxmlname.html#fromClarkName" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#fromClarkName">fromClarkName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="__eq__"></a>bool QXmlName.__eq__ (<i>self</i>, <a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a> <i>other</i>)</h3>
+<h3 class="fn">
+<a name="__hash__"></a>int QXmlName.__hash__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QXmlName.__ne__ (<i>self</i>, <a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a> <i>other</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

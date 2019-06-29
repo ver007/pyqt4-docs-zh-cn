@@ -1,0 +1,723 @@
+﻿<html>
+<head>
+<title>QXmlStreamReader Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QXmlStreamReader Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QXmlStreamReader类提供了一种快速分析器通过一个简单的流API读取格式良好的XML 。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qxmlstreamreader.html#Error-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#Error-enum">Error</a></b> { NoError, UnexpectedElementError, CustomError, NotWellFormedError, PrematureEndOfDocumentError }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qxmlstreamreader.html#ReadElementTextBehaviour-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#ReadElementTextBehaviour-enum">ReadElementTextBehaviour</a></b> { ErrorOnUnexpectedElement, IncludeChildElements, SkipChildElements }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">TokenType</a></b> { NoToken, Invalid, StartDocument, EndDocument, ..., ProcessingInstruction }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlstreamreader.html#QXmlStreamReader" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#QXmlStreamReader">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlstreamreader.html#QXmlStreamReader-2" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#QXmlStreamReader-2">__init__</a></b> (<i>self</i>, QIODevice <i>device</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlstreamreader.html#QXmlStreamReader-3" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#QXmlStreamReader-3">__init__</a></b> (<i>self</i>, QByteArray <i>data</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlstreamreader.html#QXmlStreamReader-4" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#QXmlStreamReader-4">__init__</a></b> (<i>self</i>, QString <i>data</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlstreamreader.html#addData" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#addData">addData</a></b> (<i>self</i>, QByteArray <i>data</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlstreamreader.html#addData-2" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#addData-2">addData</a></b> (<i>self</i>, QString <i>data</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlstreamreader.html#addExtraNamespaceDeclaration" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#addExtraNamespaceDeclaration">addExtraNamespaceDeclaration</a></b> (<i>self</i>, QXmlStreamNamespaceDeclaration <i>extraNamespaceDeclaraction</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlstreamreader.html#addExtraNamespaceDeclarations" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#addExtraNamespaceDeclarations">addExtraNamespaceDeclarations</a></b> (<i>self</i>, list-of-QXmlStreamNamespaceDeclaration <i>extraNamespaceDeclaractions</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlstreamreader.html#atEnd" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#atEnd">atEnd</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QXmlStreamAttributes <b><a href="qxmlstreamreader.html#attributes" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#attributes">attributes</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qxmlstreamreader.html#characterOffset" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#characterOffset">characterOffset</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlstreamreader.html#clear" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#clear">clear</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qxmlstreamreader.html#columnNumber" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#columnNumber">columnNumber</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QIODevice <b><a href="qxmlstreamreader.html#device" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#device">device</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringRef <b><a href="qxmlstreamreader.html#documentEncoding" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#documentEncoding">documentEncoding</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringRef <b><a href="qxmlstreamreader.html#documentVersion" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#documentVersion">documentVersion</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringRef <b><a href="qxmlstreamreader.html#dtdName" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#dtdName">dtdName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringRef <b><a href="qxmlstreamreader.html#dtdPublicId" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#dtdPublicId">dtdPublicId</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringRef <b><a href="qxmlstreamreader.html#dtdSystemId" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#dtdSystemId">dtdSystemId</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QXmlStreamEntityDeclaration <b><a href="qxmlstreamreader.html#entityDeclarations" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#entityDeclarations">entityDeclarations</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QXmlStreamEntityResolver <b><a href="qxmlstreamreader.html#entityResolver" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#entityResolver">entityResolver</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Error <b><a href="qxmlstreamreader.html#error" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#error">error</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qxmlstreamreader.html#errorString" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#errorString">errorString</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlstreamreader.html#hasError" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#hasError">hasError</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlstreamreader.html#isCDATA" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isCDATA">isCDATA</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlstreamreader.html#isCharacters" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isCharacters">isCharacters</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlstreamreader.html#isComment" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isComment">isComment</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlstreamreader.html#isDTD" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isDTD">isDTD</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlstreamreader.html#isEndDocument" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isEndDocument">isEndDocument</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlstreamreader.html#isEndElement" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isEndElement">isEndElement</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlstreamreader.html#isEntityReference" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isEntityReference">isEntityReference</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlstreamreader.html#isProcessingInstruction" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isProcessingInstruction">isProcessingInstruction</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlstreamreader.html#isStandaloneDocument" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isStandaloneDocument">isStandaloneDocument</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlstreamreader.html#isStartDocument" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isStartDocument">isStartDocument</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlstreamreader.html#isStartElement" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isStartElement">isStartElement</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlstreamreader.html#isWhitespace" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isWhitespace">isWhitespace</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qxmlstreamreader.html#lineNumber" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#lineNumber">lineNumber</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringRef <b><a href="qxmlstreamreader.html#name" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#name">name</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QXmlStreamNamespaceDeclaration <b><a href="qxmlstreamreader.html#namespaceDeclarations" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#namespaceDeclarations">namespaceDeclarations</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlstreamreader.html#namespaceProcessing" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#namespaceProcessing">namespaceProcessing</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringRef <b><a href="qxmlstreamreader.html#namespaceUri" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#namespaceUri">namespaceUri</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>list-of-QXmlStreamNotationDeclaration <b><a href="qxmlstreamreader.html#notationDeclarations" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#notationDeclarations">notationDeclarations</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringRef <b><a href="qxmlstreamreader.html#prefix" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#prefix">prefix</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringRef <b><a href="qxmlstreamreader.html#processingInstructionData" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#processingInstructionData">processingInstructionData</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringRef <b><a href="qxmlstreamreader.html#processingInstructionTarget" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#processingInstructionTarget">processingInstructionTarget</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringRef <b><a href="qxmlstreamreader.html#qualifiedName" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#qualifiedName">qualifiedName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlstreamreader.html#raiseError" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#raiseError">raiseError</a></b> (<i>self</i>, QString <i>message</i> = QString())</li>
+<li>
+<div class="fn"></div>QString <b><a href="qxmlstreamreader.html#readElementText" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#readElementText">readElementText</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qxmlstreamreader.html#readElementText-2" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#readElementText-2">readElementText</a></b> (<i>self</i>, ReadElementTextBehaviour <i>behaviour</i>)</li>
+<li>
+<div class="fn"></div>TokenType <b><a href="qxmlstreamreader.html#readNext" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#readNext">readNext</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlstreamreader.html#readNextStartElement" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#readNextStartElement">readNextStartElement</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlstreamreader.html#setDevice" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#setDevice">setDevice</a></b> (<i>self</i>, QIODevice <i>device</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlstreamreader.html#setEntityResolver" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#setEntityResolver">setEntityResolver</a></b> (<i>self</i>, QXmlStreamEntityResolver <i>resolver</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlstreamreader.html#setNamespaceProcessing" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#setNamespaceProcessing">setNamespaceProcessing</a></b> (<i>self</i>, bool)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlstreamreader.html#skipCurrentElement" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#skipCurrentElement">skipCurrentElement</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringRef <b><a href="qxmlstreamreader.html#text" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#text">text</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qxmlstreamreader.html#tokenString" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#tokenString">tokenString</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>TokenType <b><a href="qxmlstreamreader.html#tokenType" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#tokenType">tokenType</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QXmlStreamReader类提供了一种快速分析器通过一个简单的流API读取格式良好的XML 。</p>
+<p>QXmlStreamReader是更快，更方便的替代Qt自己的SAX解析器（见<a href="qxmlsimplereader.html" tppabs="http://pyqt4doc.appspot.com/qxmlsimplereader.html">QXmlSimpleReader</a>） 。在某些情况下它也可能用于，否则将使用DOM树的应用程序更快，更方便的选择（见<a href="qdomdocument.html" tppabs="http://pyqt4doc.appspot.com/qdomdocument.html">QDomDocument</a>） 。 QXmlStreamReader读取无论是从数据<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>（见<a href="qxmlstreamreader.html#setDevice" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#setDevice">setDevice</a>（）），或者从一个原<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>（见<a href="qxmlstreamreader.html#addData" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#addData">addData</a>（））。</p>
+<p>Qt提供<a href="qxmlstreamwriter.html" tppabs="http://pyqt4doc.appspot.com/qxmlstreamwriter.html">QXmlStreamWriter</a>用于编写XML 。</p>
+<p>流读取器的基本概念是报告一个XML文档作为标记，类似于SAX流。 QXmlStreamReader和SAX之间的主要区别在于<i>how</i>这些XML标记的报告。使用SAX ，应用程序必须提供处理程序（回调函数）接受所谓的XML<i>events</i>从解析器在解析器的便利性。与QXmlStreamReader ，应用程序代码本身驱动环路和拉<i>tokens</i>从阅读器，一个接一个，因为它需要他们。这是通过调用完成<a href="qxmlstreamreader.html#readNext" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#readNext">readNext</a>（ ） ，那里的读者从输入流中读取，直到它完成下一个标记，此时它返回<a href="qxmlstreamreader.html#tokenType" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#tokenType">tokenType</a>（ ） 。一组方便的功能，包括<a href="qxmlstreamreader.html#isStartElement" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isStartElement">isStartElement</a>（）和<a href="qxmlstreamreader.html#text" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#text">text</a>（ ）然后可以用于检查令牌以获取有关什么已被读取的信息。这样做的好处大<i>pulling</i>方法是建立递归下降解析器与它，这意味着你可以很容易地分割你的XML解析代码分成不同的方法或类的可能性。这可以很容易地解析XML时，跟踪应用程序自身的状态。</p>
+<p>一个典型的循环与QXmlStreamReader看起来像这样：</p>
+<pre class="cpp">
+   <span class="type">QXmlStreamReader</span> xml;
+   <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+   <span class="keyword">while</span> (<span class="operator">!</span>xml<span class="operator">.</span>atEnd()) {
+         xml<span class="operator">.</span>readNext();
+         <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span> <span class="comment">// do processing</span>
+   }
+   <span class="keyword">if</span> (xml<span class="operator">.</span>hasError()) {
+         <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span> <span class="comment">// do error handling</span>
+   }
+</pre>
+<p>QXmlStreamReader是一个格式良好的XML解析器1.0 ，做<i>not</i>包括外部解析实体。只要不发生错误，应用程序代码可以因此放心，用流读取器提供的数据符合W3C的标准格式良好的XML 。例如，你可以肯定，所有的标籤确实嵌套和正确关闭，即引用内部实体已被替换为正确的替换文本，并根据DTD的内部子集的属性已归或添加。</p>
+<p>如果在解析出现错误，<a href="qxmlstreamreader.html#atEnd" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#atEnd">atEnd</a>（）和<a href="qxmlstreamreader.html#hasError" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#hasError">hasError</a>（ ）返回True ，并且<a href="qxmlstreamreader.html#error" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#error">error</a>（）返回所发生的错误。该功能<a href="qxmlstreamreader.html#errorString" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#errorString">errorString</a>（ ）<a href="qxmlstreamreader.html#lineNumber" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#lineNumber">lineNumber</a>（ ）<a href="qxmlstreamreader.html#columnNumber" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#columnNumber">columnNumber</a>（）和<a href="qxmlstreamreader.html#characterOffset" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#characterOffset">characterOffset</a>（ ）是构造一个适当的错误或警告消息。为了简化应用程序代码， QXmlStreamReader包含一个<a href="qxmlstreamreader.html#raiseError" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#raiseError">raiseError</a>（）机制，可以让你提高触发描述的相同的错误处理自定义错误。</p>
+<p>该<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xml-streambookmarks.html">QXmlStream Bookmarks
+Example</a>说明如何使用递归下降方法读取XML文件的书籤（ XBEL ）用流读取器。</p>
+<a id="namespaces" name="namespaces"></a>
+<h3>Namespaces</h3>
+<p>QXmlStream理解和解决XML命名空间。例如在壳体的<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">StartElement</a>，<a href="qxmlstreamreader.html#namespaceUri" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#namespaceUri">namespaceUri</a>（ ）返回的元素是在命名空间中，<a href="qxmlstreamreader.html#name" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#name">name</a>（ ）返回元素的<i>local</i>名称。则namespaceURI和名称的组合唯一地标识一个元素。如果一个命名空间前缀由读者解析的XML实体未声明，则namespaceURI是空的。</p>
+<p>如果您解析XML数据，不使用命名空间，根据XML规范或根本不使用命名空间，可以使用元素的<a href="qxmlstreamreader.html#qualifiedName" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#qualifiedName">qualifiedName</a>（ ）来代替。一个合格的名称是元素的<a href="qxmlstreamreader.html#prefix" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#prefix">prefix</a>（ ），其次是冒号后面元素的地方<a href="qxmlstreamreader.html#name" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#name">name</a>（ ） - 完全一样的元素出现在原始的XML数据。由于映射的namespaceURI前缀既不是唯一也不是万能，<a href="qxmlstreamreader.html#qualifiedName" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#qualifiedName">qualifiedName</a>（ ）应避免命名空间兼容的XML数据。</p>
+<p>为了解析独立文档确实使用未声明的命名空间前缀，你可以完全关闭名称空间处理与<a href="qxmlstreamreader.html#namespaceProcessing-prop" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#namespaceProcessing-prop">namespaceProcessing</a>属性。</p>
+<a id="incremental-parsing" name="incremental-parsing"></a>
+<h3>Incremental parsing</h3>
+<p>QXmlStreamReader是一个渐进的解析器。它可以处理其中的文件不能被解析一次全部，因为它在块到达（例如，从多个文件，或通过网络连接）的情况下。当读写器运行的数据完整的文档被解析之前，它会报告<a href="qxmlstreamreader.html#Error-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#Error-enum">PrematureEndOfDocumentError</a>。当更多的数据到达，或者是因为一个电话来<a href="qxmlstreamreader.html#addData" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#addData">addData</a>（ ）或者是因为更多的数据可通过网络<a href="qxmlstreamreader.html#device" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#device">device</a>（）时，阅读器从恢复<a href="qxmlstreamreader.html#Error-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#Error-enum">PrematureEndOfDocumentError</a>错误并继续与下一个调用解析新数据<a href="qxmlstreamreader.html#readNext" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#readNext">readNext</a>（ ） 。</p>
+<p>例如，如果你的应用程序从网络读取数据使用<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">network access
+manager</a>，你会发出<a href="qnetworkrequest.html" tppabs="http://pyqt4doc.appspot.com/qnetworkrequest.html">network request</a>给经理，并获得<a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">network reply</a>作为回报。由于<a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a>是<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>，您连接其<a href="qiodevice.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#readyRead">readyRead()</a>信号到一个自定义的插槽，如<tt>slotReadyRead()</tt>在为讨论的代码段<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>。在此插槽，可以读取所有可用的数据与<a href="qiodevice.html#readAll" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#readAll">readAll()</a>并利用它传递给XML流读取器<a href="qxmlstreamreader.html#addData" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#addData">addData</a>（ ） 。然后你打电话给你的自定义分析功能，读取从读者的XML事件。</p>
+<a id="performance-and-memory-consumption" name="performance-and-memory-consumption"></a>
+<h3>Performance and memory consumption</h3>
+<p>QXmlStreamReader是内存保守的设计，因为它并不存储整个XML文档树在内存中，但只有在当时的当前令牌有报导。此外， QXmlStreamReader避免了许多小的串分配，它通常需要将XML文档映射到一个方便和Qt十岁上下的API 。它通过报告所有的字符串数据作为执行此操作<a href="qstringref.html" tppabs="http://pyqt4doc.appspot.com/qstringref.html">QStringRef</a>而不是真正的<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>对象。<a href="qstringref.html" tppabs="http://pyqt4doc.appspot.com/qstringref.html">QStringRef</a>是一个简单包装的<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>子，它提供的一个子集<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>API，而内存分配和引用计数的开销。调用<a href="qstringref.html#toString" tppabs="http://pyqt4doc.appspot.com/qstringref.html#toString">toString()</a>在任何这些对象返回一个等价的真实<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>对象。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="Error-enum"></a>QXmlStreamReader.Error</h3>
+<p>此枚举指定不同的错误情况</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QXmlStreamReader.NoError</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">没有发生错误。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QXmlStreamReader.CustomError</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">一个自定义的错误已被提出与<a href="qxmlstreamreader.html#raiseError" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#raiseError">raiseError</a>（ ）</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QXmlStreamReader.NotWellFormedError</tt>
+</td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">解析器内部，由于读取XML并非良好的引发错误。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QXmlStreamReader.PrematureEndOfDocumentError</tt>
+</td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">输入流结束一个格式良好的XML文档被解析之前。恢复从这个错误是可能的，如果更多的XML到达流中，通过调用<a href="qxmlstreamreader.html#addData" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#addData">addData</a>（ ）或等待它的到来<a href="qxmlstreamreader.html#device" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#device">device</a>（ ） 。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QXmlStreamReader.UnexpectedElementError</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">解析器遇到了有别于其预期的元素。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="ReadElementTextBehaviour-enum"></a>QXmlStreamReader.ReadElementTextBehaviour</h3>
+<p>这个枚举指定的不同的行为<a href="qxmlstreamreader.html#readElementText" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#readElementText">readElementText</a>（ ） 。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QXmlStreamReader.ErrorOnUnexpectedElement</tt>
+</td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">引发<a href="qxmlstreamreader.html#Error-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#Error-enum">UnexpectedElementError</a>并返回什么，到目前为止的子元素时遇到被读取。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QXmlStreamReader.IncludeChildElements</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">递归包括子元素的文本。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QXmlStreamReader.SkipChildElements</tt>
+</td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">跳过子元素。</td>
+</tr>
+</table>
+<p>这个枚举被引入或修改的Qt 4.6 。</p>
+
+
+<h3 class="fn">
+<a name="TokenType-enum"></a>QXmlStreamReader.TokenType</h3>
+<p>此枚举指定刚读标记阅读器的类型。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QXmlStreamReader.NoToken</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">读者还没有读什么。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QXmlStreamReader.Invalid</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">发生错误，报告<a href="qxmlstreamreader.html#error" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#error">error</a>（）和<a href="qxmlstreamreader.html#errorString" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#errorString">errorString</a>（ ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QXmlStreamReader.StartDocument</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">读者报告中的XML版本号<a href="qxmlstreamreader.html#documentVersion" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#documentVersion">documentVersion</a>（） ，和在XML文档中指定的编码<a href="qxmlstreamreader.html#documentEncoding" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#documentEncoding">documentEncoding</a>（ ） 。如果文档被宣告独立，<a href="qxmlstreamreader.html#isStandaloneDocument" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isStandaloneDocument">isStandaloneDocument</a>（ ）返回True ，否则返回False 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QXmlStreamReader.EndDocument</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">读者报告文件的末尾。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QXmlStreamReader.StartElement</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">读者报告与元素的起始<a href="qxmlstreamreader.html#namespaceUri" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#namespaceUri">namespaceUri</a>（）和<a href="qxmlstreamreader.html#name" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#name">name</a>（ ） 。空的元素也报导的StartElement ，直接跟着的EndElement 。便利的功能<a href="qxmlstreamreader.html#readElementText" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#readElementText">readElementText</a>（ ）可以调用来连接所有的内容，直到相应的endElement 。属性报告<a href="qxmlstreamreader.html#attributes" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#attributes">attributes</a>（ ） ，命名空间声明<a href="qxmlstreamreader.html#namespaceDeclarations" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#namespaceDeclarations">namespaceDeclarations</a>（ ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QXmlStreamReader.EndElement</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">读者报告用元件的端部<a href="qxmlstreamreader.html#namespaceUri" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#namespaceUri">namespaceUri</a>（）和<a href="qxmlstreamreader.html#name" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#name">name</a>（ ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QXmlStreamReader.Characters</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">读者报告中的字符<a href="qxmlstreamreader.html#text" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#text">text</a>（ ） 。如果字符都是空白，<a href="qxmlstreamreader.html#isWhitespace" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isWhitespace">isWhitespace</a>（ ）返回True 。如果字符CDATA节茎，<a href="qxmlstreamreader.html#isCDATA" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isCDATA">isCDATA</a>（ ）返回True 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QXmlStreamReader.Comment</tt></td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">读者报告的意见<a href="qxmlstreamreader.html#text" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#text">text</a>（ ） 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QXmlStreamReader.DTD</tt></td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">读者报告在DTD<a href="qxmlstreamreader.html#text" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#text">text</a>（ ） ，表示法声明<a href="qxmlstreamreader.html#notationDeclarations" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#notationDeclarations">notationDeclarations</a>在（ ） ，和实体声明<a href="qxmlstreamreader.html#entityDeclarations" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#entityDeclarations">entityDeclarations</a>（ ） 。 DTD的声明的详细报告中<a href="qxmlstreamreader.html#dtdName" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#dtdName">dtdName</a>（ ）<a href="qxmlstreamreader.html#dtdPublicId" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#dtdPublicId">dtdPublicId</a>（）和<a href="qxmlstreamreader.html#dtdSystemId" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#dtdSystemId">dtdSystemId</a>（ ） 。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QXmlStreamReader.EntityReference</tt>
+</td>
+<td class="topAlign"><tt>9</tt></td>
+<td class="topAlign">读者报告一个实体引用不能被解决。引用的名称是报告<a href="qxmlstreamreader.html#name" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#name">name</a>（ ） ，在替换文本<a href="qxmlstreamreader.html#text" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#text">text</a>（ ） 。</td>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QXmlStreamReader.ProcessingInstruction</tt>
+</td>
+<td class="topAlign"><tt>10</tt></td>
+<td class="topAlign">读者报告在一个处理指令<a href="qxmlstreamreader.html#processingInstructionTarget" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#processingInstructionTarget">processingInstructionTarget</a>（）和<a href="qxmlstreamreader.html#processingInstructionData" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#processingInstructionData">processingInstructionData</a>（ ） 。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QXmlStreamReader"></a>QXmlStreamReader.__init__ (<i>self</i>)</h3>
+<p>构造一个流读取器。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#setDevice" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#setDevice">setDevice</a>（）和<a href="qxmlstreamreader.html#addData" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#addData">addData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QXmlStreamReader-2"></a>QXmlStreamReader.__init__ (<i>self</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>device</i>)</h3>
+<p>创建一个新的流读取器的读取<i>device</i>。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#setDevice" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#setDevice">setDevice</a>（）和<a href="qxmlstreamreader.html#clear" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#clear">clear</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QXmlStreamReader-3"></a>QXmlStreamReader.__init__ (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>data</i>)</h3>
+<p>创建一个新的流读取器的读取<i>data</i>。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#addData" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#addData">addData</a>（ ）<a href="qxmlstreamreader.html#clear" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#clear">clear</a>（）和<a href="qxmlstreamreader.html#setDevice" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#setDevice">setDevice</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="QXmlStreamReader-4"></a>QXmlStreamReader.__init__ (<i>self</i>, QString <i>data</i>)</h3>
+<p>创建一个新的流读取器的读取<i>data</i>。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#addData" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#addData">addData</a>（ ）<a href="qxmlstreamreader.html#clear" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#clear">clear</a>（）和<a href="qxmlstreamreader.html#setDevice" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#setDevice">setDevice</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addData"></a>QXmlStreamReader.addData (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>data</i>)</h3>
+<p>增加了更多的<i>data</i>为读者阅读。这个函数做什么，如果读者有一个<a href="qxmlstreamreader.html#device" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#device">device</a>（ ） 。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#readNext" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#readNext">readNext</a>（）和<a href="qxmlstreamreader.html#clear" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#clear">clear</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addData-2"></a>QXmlStreamReader.addData (<i>self</i>, QString <i>data</i>)</h3>
+<p>增加了更多的<i>data</i>为读者阅读。这个函数做什么，如果读者有一个<a href="qxmlstreamreader.html#device" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#device">device</a>（ ） 。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#readNext" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#readNext">readNext</a>（）和<a href="qxmlstreamreader.html#clear" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#clear">clear</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addExtraNamespaceDeclaration"></a>QXmlStreamReader.addExtraNamespaceDeclaration (<i>self</i>, <a href="qxmlstreamnamespacedeclaration.html" tppabs="http://pyqt4doc.appspot.com/qxmlstreamnamespacedeclaration.html">QXmlStreamNamespaceDeclaration</a> <i>extraNamespaceDeclaraction</i>)</h3>
+<p>增加了一个<i>extraNamespaceDeclaration</i>。该声明的有效期为当前元素的子元素，或者 - 应函数被调用读取任何元素之前 - 对整个XML文档。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#namespaceDeclarations" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#namespaceDeclarations">namespaceDeclarations</a>（ ）<a href="qxmlstreamreader.html#addExtraNamespaceDeclarations" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#addExtraNamespaceDeclarations">addExtraNamespaceDeclarations</a>（）和<a href="qxmlstreamreader.html#namespaceProcessing-prop" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#namespaceProcessing-prop">setNamespaceProcessing</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addExtraNamespaceDeclarations"></a>QXmlStreamReader.addExtraNamespaceDeclarations (<i>self</i>, list-of-QXmlStreamNamespaceDeclaration <i>extraNamespaceDeclaractions</i>)</h3>
+<p>添加的声明由指定的向量<i>extraNamespaceDeclarations</i>。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#namespaceDeclarations" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#namespaceDeclarations">namespaceDeclarations</a>（）和<a href="qxmlstreamreader.html#addExtraNamespaceDeclaration" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#addExtraNamespaceDeclaration">addExtraNamespaceDeclaration</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="atEnd"></a>bool QXmlStreamReader.atEnd (<i>self</i>)</h3>
+<p>返回True如果读者已阅读，直到XML文档的末尾，或者如果<a href="qxmlstreamreader.html#error" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#error">error</a>（ ）已经发生和阅读已经中止。否则，返回False 。</p>
+<p>当了atEnd （）和<a href="qxmlstreamreader.html#hasError" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#hasError">hasError</a>（ ）返回True和<a href="qxmlstreamreader.html#error" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#error">error</a>（）返回<a href="qxmlstreamreader.html#Error-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#Error-enum">PrematureEndOfDocumentError</a>，这意味着XML得到了很好的形成，到目前为止，而是一个完整的XML文档还没有被解析。 XML的下一组块可以被添加<a href="qxmlstreamreader.html#addData" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#addData">addData</a>（） ，如果XML正在从读<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>，或通过等待更多的数据到达如果XML正在从读<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>。无论哪种方式，了atEnd （）一次以上数据可将返回False 。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#hasError" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#hasError">hasError</a>（ ）<a href="qxmlstreamreader.html#error" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#error">error</a>（ ）<a href="qxmlstreamreader.html#device" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#device">device</a>（）和<a href="qiodevice.html#atEnd" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#atEnd">QIODevice.atEnd</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="attributes"></a><a href="qxmlstreamattributes.html" tppabs="http://pyqt4doc.appspot.com/qxmlstreamattributes.html">QXmlStreamAttributes</a> QXmlStreamReader.attributes (<i>self</i>)</h3>
+<p>返回一个属性<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">StartElement</a>。</p>
+
+
+<h3 class="fn">
+<a name="characterOffset"></a>int QXmlStreamReader.characterOffset (<i>self</i>)</h3>
+<p>返回当前字符的偏移，从0开始。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#lineNumber" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#lineNumber">lineNumber</a>（）和<a href="qxmlstreamreader.html#columnNumber" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#columnNumber">columnNumber</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clear"></a>QXmlStreamReader.clear (<i>self</i>)</h3>
+<p>删除任何<a href="qxmlstreamreader.html#device" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#device">device</a>（）或来自读出器的数据和复位它的内部状态为初始状态。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#addData" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#addData">addData</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="columnNumber"></a>int QXmlStreamReader.columnNumber (<i>self</i>)</h3>
+<p>返回当前列号，从0开始。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#lineNumber" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#lineNumber">lineNumber</a>（）和<a href="qxmlstreamreader.html#characterOffset" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#characterOffset">characterOffset</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="device"></a><a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> QXmlStreamReader.device (<i>self</i>)</h3>
+<p>返回与关联的当前设备<a href="qxmlstreamreader.html" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html">QXmlStreamReader</a>，或者0，如果没有设备已经被分配。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#setDevice" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#setDevice">setDevice</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="documentEncoding"></a>QStringRef QXmlStreamReader.documentEncoding (<i>self</i>)</h3>
+<p>如果状态（ ）是<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">StartDocument</a>，这个函数返回的XML声明中指定的编码字符串。否则返回空字符串。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="documentVersion"></a>QStringRef QXmlStreamReader.documentVersion (<i>self</i>)</h3>
+<p>如果状态（ ）是<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">StartDocument</a>，这个函数返回的XML声明中指定的版本字符串。否则返回空字符串。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="dtdName"></a>QStringRef QXmlStreamReader.dtdName (<i>self</i>)</h3>
+<p>如果状态（ ）是<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">DTD</a>，这个函数返回的DTD的名字。否则返回空字符串。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="dtdPublicId"></a>QStringRef QXmlStreamReader.dtdPublicId (<i>self</i>)</h3>
+<p>如果状态（ ）是<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">DTD</a>，这个函数返回的DTD的公共标识符。否则返回空字符串。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="dtdSystemId"></a>QStringRef QXmlStreamReader.dtdSystemId (<i>self</i>)</h3>
+<p>如果状态（ ）是<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">DTD</a>，这个函数返回的DTD的系统标识符。否则返回空字符串。</p>
+<p>此功能被引入Qt的4.4 。</p>
+
+
+<h3 class="fn">
+<a name="entityDeclarations"></a>list-of-QXmlStreamEntityDeclaration QXmlStreamReader.entityDeclarations (<i>self</i>)</h3>
+<p>如果状态（ ）是<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">DTD</a>，这个函数返回的DTD的非解析（外部）实体声明。否则，一个空向量被返回。</p>
+<p>该<a href="qxmlstreamentitydeclaration.html#QXmlStreamEntityDeclarations-typedef" tppabs="http://pyqt4doc.appspot.com/qxmlstreamentitydeclaration.html#QXmlStreamEntityDeclarations-typedef">
+QXmlStreamEntityDeclarations</a>类被定义为一个<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qvector.html">QVector</a>的<a href="qxmlstreamentitydeclaration.html" tppabs="http://pyqt4doc.appspot.com/qxmlstreamentitydeclaration.html">QXmlStreamEntityDeclaration</a>。</p>
+
+
+<h3 class="fn">
+<a name="entityResolver"></a><a href="qxmlstreamentityresolver.html" tppabs="http://pyqt4doc.appspot.com/qxmlstreamentityresolver.html">QXmlStreamEntityResolver</a> QXmlStreamReader.entityResolver (<i>self</i>)</h3>
+<p>返回的实体解析器，或者0 ，如果没有实体解析器。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#setEntityResolver" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#setEntityResolver">setEntityResolver</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="error"></a><a href="qxmlstreamreader.html#Error-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#Error-enum">Error</a> QXmlStreamReader.error (<i>self</i>)</h3>
+<p>返回当前错误的类型，或者<a href="qxmlstreamreader.html#Error-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#Error-enum">NoError</a>如果没有发生错误。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#errorString" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#errorString">errorString</a>（）和<a href="qxmlstreamreader.html#raiseError" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#raiseError">raiseError</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="errorString"></a>QString QXmlStreamReader.errorString (<i>self</i>)</h3>
+<p>返回设置并显示错误消息<a href="qxmlstreamreader.html#raiseError" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#raiseError">raiseError</a>（ ） 。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#error" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#error">error</a>（ ）<a href="qxmlstreamreader.html#lineNumber" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#lineNumber">lineNumber</a>（ ）<a href="qxmlstreamreader.html#columnNumber" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#columnNumber">columnNumber</a>（）和<a href="qxmlstreamreader.html#characterOffset" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#characterOffset">characterOffset</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasError"></a>bool QXmlStreamReader.hasError (<i>self</i>)</h3>
+<p>Returns <tt>true</tt>如果发生了错误，否则<tt>false</tt>。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#errorString" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#errorString">errorString</a>（）和<a href="qxmlstreamreader.html#error" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#error">error</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isCDATA"></a>bool QXmlStreamReader.isCDATA (<i>self</i>)</h3>
+<p>返回True如果读者报导说， CDATA节茎字符，否则返回False 。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#isCharacters" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isCharacters">isCharacters</a>（）和<a href="qxmlstreamreader.html#text" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#text">text</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isCharacters"></a>bool QXmlStreamReader.isCharacters (<i>self</i>)</h3>
+<p>返回True如果<a href="qxmlstreamreader.html#tokenType" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#tokenType">tokenType</a>（ ）等于<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">Characters</a>否则返回False 。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#isWhitespace" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isWhitespace">isWhitespace</a>（）和<a href="qxmlstreamreader.html#isCDATA" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isCDATA">isCDATA</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isComment"></a>bool QXmlStreamReader.isComment (<i>self</i>)</h3>
+<p>返回True如果<a href="qxmlstreamreader.html#tokenType" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#tokenType">tokenType</a>（ ）等于<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">Comment</a>否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isDTD"></a>bool QXmlStreamReader.isDTD (<i>self</i>)</h3>
+<p>返回True如果<a href="qxmlstreamreader.html#tokenType" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#tokenType">tokenType</a>（ ）等于<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">DTD</a>否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isEndDocument"></a>bool QXmlStreamReader.isEndDocument (<i>self</i>)</h3>
+<p>返回True如果<a href="qxmlstreamreader.html#tokenType" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#tokenType">tokenType</a>（ ）等于<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">EndDocument</a>否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isEndElement"></a>bool QXmlStreamReader.isEndElement (<i>self</i>)</h3>
+<p>返回True如果<a href="qxmlstreamreader.html#tokenType" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#tokenType">tokenType</a>（ ）等于<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">EndElement</a>否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isEntityReference"></a>bool QXmlStreamReader.isEntityReference (<i>self</i>)</h3>
+<p>返回True如果<a href="qxmlstreamreader.html#tokenType" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#tokenType">tokenType</a>（ ）等于<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">EntityReference</a>否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isProcessingInstruction"></a>bool QXmlStreamReader.isProcessingInstruction (<i>self</i>)</h3>
+<p>返回True如果<a href="qxmlstreamreader.html#tokenType" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#tokenType">tokenType</a>（ ）等于<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">ProcessingInstruction</a>否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isStandaloneDocument"></a>bool QXmlStreamReader.isStandaloneDocument (<i>self</i>)</h3>
+<p>返回True如果该文档已被宣布为独立的XML声明，否则返回False 。</p>
+<p>如果没有XML声明被解析，这个函数返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isStartDocument"></a>bool QXmlStreamReader.isStartDocument (<i>self</i>)</h3>
+<p>返回True如果<a href="qxmlstreamreader.html#tokenType" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#tokenType">tokenType</a>（ ）等于<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">StartDocument</a>否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isStartElement"></a>bool QXmlStreamReader.isStartElement (<i>self</i>)</h3>
+<p>返回True如果<a href="qxmlstreamreader.html#tokenType" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#tokenType">tokenType</a>（ ）等于<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">StartElement</a>否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="isWhitespace"></a>bool QXmlStreamReader.isWhitespace (<i>self</i>)</h3>
+<p>返回True如果读者报导的字符，只包含空格，否则返回False 。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#isCharacters" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isCharacters">isCharacters</a>（）和<a href="qxmlstreamreader.html#text" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#text">text</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="lineNumber"></a>int QXmlStreamReader.lineNumber (<i>self</i>)</h3>
+<p>返回当前行号，从1开始。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#columnNumber" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#columnNumber">columnNumber</a>（）和<a href="qxmlstreamreader.html#characterOffset" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#characterOffset">characterOffset</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="name"></a>QStringRef QXmlStreamReader.name (<i>self</i>)</h3>
+<p>返回的本地名称<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">StartElement</a>，<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">EndElement</a>，或<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">EntityReference</a>。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#namespaceUri" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#namespaceUri">namespaceUri</a>（）和<a href="qxmlstreamreader.html#qualifiedName" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#qualifiedName">qualifiedName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="namespaceDeclarations"></a>list-of-QXmlStreamNamespaceDeclaration QXmlStreamReader.namespaceDeclarations (<i>self</i>)</h3>
+<p>如果状态（ ）是<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">StartElement</a>，这个函数返回元素的命名空间声明。否则，一个空向量被返回。</p>
+<p>该<a href="qxmlstreamnamespacedeclaration.html" tppabs="http://pyqt4doc.appspot.com/qxmlstreamnamespacedeclaration.html">QXmlStreamNamespaceDeclaration</a>类被定义为一个<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qvector.html">QVector</a>的<a href="qxmlstreamnamespacedeclaration.html" tppabs="http://pyqt4doc.appspot.com/qxmlstreamnamespacedeclaration.html">QXmlStreamNamespaceDeclaration</a>。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#addExtraNamespaceDeclaration" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#addExtraNamespaceDeclaration">addExtraNamespaceDeclaration</a>（）和<a href="qxmlstreamreader.html#addExtraNamespaceDeclarations" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#addExtraNamespaceDeclarations">addExtraNamespaceDeclarations</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="namespaceProcessing"></a>bool QXmlStreamReader.namespaceProcessing (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="namespaceUri"></a>QStringRef QXmlStreamReader.namespaceUri (<i>self</i>)</h3>
+<p>返回的则namespaceURI<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">StartElement</a> or <a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">EndElement</a>。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#name" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#name">name</a>（）和<a href="qxmlstreamreader.html#qualifiedName" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#qualifiedName">qualifiedName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="notationDeclarations"></a>list-of-QXmlStreamNotationDeclaration QXmlStreamReader.notationDeclarations (<i>self</i>)</h3>
+<p>如果状态（ ）是<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">DTD</a>，这个函数返回的DTD的符号声明。否则，一个空向量被返回。</p>
+<p>该<a href="qxmlstreamnotationdeclaration.html#QXmlStreamNotationDeclarations-typedef" tppabs="http://pyqt4doc.appspot.com/qxmlstreamnotationdeclaration.html#QXmlStreamNotationDeclarations-typedef">
+QXmlStreamNotationDeclarations</a>类被定义为一个<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qvector.html">QVector</a>的<a href="qxmlstreamnotationdeclaration.html" tppabs="http://pyqt4doc.appspot.com/qxmlstreamnotationdeclaration.html">QXmlStreamNotationDeclaration</a>。</p>
+
+
+<h3 class="fn">
+<a name="prefix"></a>QStringRef QXmlStreamReader.prefix (<i>self</i>)</h3>
+<p>返回一个前缀<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">StartElement</a> or <a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">EndElement</a>。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#name" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#name">name</a>（）和<a href="qxmlstreamreader.html#qualifiedName" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#qualifiedName">qualifiedName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="processingInstructionData"></a>QStringRef QXmlStreamReader.processingInstructionData (<i>self</i>)</h3>
+<p>返回的数据<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">ProcessingInstruction</a>。</p>
+
+
+<h3 class="fn">
+<a name="processingInstructionTarget"></a>QStringRef QXmlStreamReader.processingInstructionTarget (<i>self</i>)</h3>
+<p>返回一个目标<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">ProcessingInstruction</a>。</p>
+
+
+<h3 class="fn">
+<a name="qualifiedName"></a>QStringRef QXmlStreamReader.qualifiedName (<i>self</i>)</h3>
+<p>返回一个合格的名称<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">StartElement</a> or <a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">EndElement</a>;</p>
+<p>一个合格的名称是XML数据元素的原始名称。它由一个命名空间前缀，后跟冒号，然后是元素的本地名称。由于命名空间前缀不是唯一的（相同的前缀可以指向不同的命名空间和不同的前缀可以指向同一个命名空间） ，你不应该使用qualifiedName中（ ） ，而解析<a href="qxmlstreamreader.html#namespaceUri" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#namespaceUri">namespaceUri</a>（ ）和属性的本地<a href="qxmlstreamreader.html#name" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#name">name</a>（ ） 。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#name" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#name">name</a>（ ）<a href="qxmlstreamreader.html#prefix" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#prefix">prefix</a>（）和<a href="qxmlstreamreader.html#namespaceUri" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#namespaceUri">namespaceUri</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="raiseError"></a>QXmlStreamReader.raiseError (<i>self</i>, QString <i>message</i> = QString())</h3>
+<p>引发自定义错误有一个可选的错误<i>message</i>。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#error" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#error">error</a>（）和<a href="qxmlstreamreader.html#errorString" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#errorString">errorString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="readElementText"></a>QString QXmlStreamReader.readElementText (<i>self</i>)</h3>
+<p>便利函数被调用的情况下，<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">StartElement</a>被读取。读取，直到相应的<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">EndElement</a>并返回两者之间的所有文本。在案件没有错误，则当前的标记（见<a href="qxmlstreamreader.html#tokenType" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#tokenType">tokenType</a>（ ） ）已调用该函数后<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">EndElement</a>。</p>
+<p>该函数将<a href="qxmlstreamreader.html#text" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#text">text</a>（ ）时，它读取要么<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">Characters</a> or
+<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">EntityReference</a>令牌，但跳过<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">ProcessingInstruction</a>和<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">Comment</a>。如果当前标记是不是<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">StartElement</a>，则返回一个空字符串。</p>
+<p>该<i>behaviour</i>定义的情况下会发生什么别的到达之前被读取<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">EndElement</a>。该函数可以从子元素（例如用于HTML有用）包括文本，忽略子元素，或引发<a href="qxmlstreamreader.html#Error-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#Error-enum">UnexpectedElementError</a>并返回什么，到目前为止被读取。</p>
+<p>此功能被引入Qt的4.6 。</p>
+
+
+<h3 class="fn">
+<a name="readElementText-2"></a>QString QXmlStreamReader.readElementText (<i>self</i>, <a href="qxmlstreamreader.html#ReadElementTextBehaviour-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#ReadElementTextBehaviour-enum">ReadElementTextBehaviour</a> <i>behaviour</i>)</h3>
+<p>这个函数的重载<a href="qxmlstreamreader.html#readElementText" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#readElementText">readElementText</a>（ ） 。</p>
+<p>调用此函数相当于调用readElementText （<a href="qxmlstreamreader.html#ReadElementTextBehaviour-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#ReadElementTextBehaviour-enum">ErrorOnUnexpectedElement</a>） 。</p>
+
+
+<h3 class="fn">
+<a name="readNext"></a><a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">TokenType</a> QXmlStreamReader.readNext (<i>self</i>)</h3>
+<p>读取下一个标记，并返回它的类型。</p>
+<p>但有一个例外，一旦<a href="qxmlstreamreader.html#error" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#error">error</a>（ ）据悉，由readNext （ ） ，进一步阅读的XML流是不可能的。然后<a href="qxmlstreamreader.html#atEnd" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#atEnd">atEnd</a>（ ）返回True ，<a href="qxmlstreamreader.html#hasError" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#hasError">hasError</a>（ ）返回True ，并且该函数返回<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">QXmlStreamReader.Invalid</a>。</p>
+<p>唯一的例外是当<a href="qxmlstreamreader.html#error" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#error">error</a>（）返回<a href="qxmlstreamreader.html#Error-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#Error-enum">PrematureEndOfDocumentError</a>。报告该错误，当达到的XML的其他良好的组块的结尾，但组块不表示一个完整的XML文档。在这种情况下，语法分析<i>can</i>通过调用恢复<a href="qxmlstreamreader.html#addData" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#addData">addData</a>（）添加XML中，为下一个块时，流被从读<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>或通过等待更多数据时，该数据流是从一个读到达<a href="qxmlstreamreader.html#device" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#device">device</a>（ ） 。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#tokenType" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#tokenType">tokenType</a>（）和<a href="qxmlstreamreader.html#tokenString" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#tokenString">tokenString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="readNextStartElement"></a>bool QXmlStreamReader.readNextStartElement (<i>self</i>)</h3>
+<p>直到读取当前元素内的下一个开始元素。当开始元素达成，则返回True 。当结束元素达到或发生错误时，则返回False。</p>
+<p>当前元素是匹配的，其中一个匹配端元件尚未达到最新分析的开始元素的元素。当解析器已经走到了尽头元素，当前元素变为父元素。</p>
+<p>你可以通过重复调用这个函数，同时确保数据流的读者是不是在文档的末尾遍历一个文件：</p>
+<pre class="cpp">
+ <span class="type"><a href="qxmlstreamreader.html" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html">QXmlStreamReader</a></span> xs(<span class="operator">&amp;</span>file);
+ <span class="keyword">while</span> (<span class="operator">!</span>xs<span class="operator">.</span>atEnd()) {
+     <span class="keyword">if</span> (xs<span class="operator">.</span>readNextStartElement())
+         std<span class="operator">.</span>cout <span class="operator">&lt;</span><span class="operator">&lt;</span> <a href="index.htm#qPrintable" tppabs="http://pyqt4doc.appspot.com/qtcore.html#qPrintable">qPrintable</a>(xs<span class="operator">.</span>name()<span class="operator">.</span>toString()) <span class="operator">&lt;</span><span class="operator">&lt;</span> std<span class="operator">.</span>endl;
+ }
+</pre>
+<p>这是一个方便的功能，当你只关注与解析XML元素。该<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xml-streambookmarks.html">QXmlStream Bookmarks Example</a>大量使用此功能。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#readNext" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#readNext">readNext</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setDevice"></a>QXmlStreamReader.setDevice (<i>self</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>device</i>)</h3>
+<p>设置当前设备<i>device</i>。设置设备重置流至其初始状态。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#device" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#device">device</a>（）和<a href="qxmlstreamreader.html#clear" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#clear">clear</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setEntityResolver"></a>QXmlStreamReader.setEntityResolver (<i>self</i>, <a href="qxmlstreamentityresolver.html" tppabs="http://pyqt4doc.appspot.com/qxmlstreamentityresolver.html">QXmlStreamEntityResolver</a> <i>resolver</i>)</h3>
+<p>品牌<i>resolver</i>新<a href="qxmlstreamreader.html#entityResolver" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#entityResolver">entityResolver</a>（ ） 。</p>
+<p>该流读取器呢<i>not</i>采取解析器的所有权。这是调用者的责任，以确保解析器是有效的在流读取器对象的整个生命时间，或直到另一个解析器或设定为0 。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#entityResolver" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#entityResolver">entityResolver</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setNamespaceProcessing"></a>QXmlStreamReader.setNamespaceProcessing (<i>self</i>, bool)</h3>
+<h3 class="fn">
+<a name="skipCurrentElement"></a>QXmlStreamReader.skipCurrentElement (<i>self</i>)</h3>
+<p>读取，直到当前元素的结尾，跳跃任何子节点。此功能可用于跳过未知的元素非常有用。</p>
+<p>当前元素是匹配的，其中一个匹配端元件尚未达到最新分析的开始元素的元素。当解析器已经走到了尽头元素，当前元素变为父元素。</p>
+<p>此功能被引入Qt的4.6 。</p>
+
+
+<h3 class="fn">
+<a name="text"></a>QStringRef QXmlStreamReader.text (<i>self</i>)</h3>
+<p>返回的文本<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">Characters</a>，<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">Comment</a>，<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">DTD</a>或<a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">EntityReference</a>。</p>
+
+
+<h3 class="fn">
+<a name="tokenString"></a>QString QXmlStreamReader.tokenString (<i>self</i>)</h3>
+<p>返回读写器的当前令牌为字符串。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#tokenType" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#tokenType">tokenType</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="tokenType"></a><a href="qxmlstreamreader.html#TokenType-enum" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#TokenType-enum">TokenType</a> QXmlStreamReader.tokenType (<i>self</i>)</h3>
+<p>返回当前标记的类型。</p>
+<p>当前令牌也可以查询的便利功能<a href="qxmlstreamreader.html#isStartDocument" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isStartDocument">isStartDocument</a>（ ）<a href="qxmlstreamreader.html#isEndDocument" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isEndDocument">isEndDocument</a>（ ）<a href="qxmlstreamreader.html#isStartElement" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isStartElement">isStartElement</a>（ ）<a href="qxmlstreamreader.html#isEndElement" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isEndElement">isEndElement</a>（ ）<a href="qxmlstreamreader.html#isCharacters" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isCharacters">isCharacters</a>（ ）<a href="qxmlstreamreader.html#isComment" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isComment">isComment</a>（ ）<a href="qxmlstreamreader.html#isDTD" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isDTD">isDTD</a>（ ）<a href="qxmlstreamreader.html#isEntityReference" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isEntityReference">isEntityReference</a>（）和<a href="qxmlstreamreader.html#isProcessingInstruction" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#isProcessingInstruction">isProcessingInstruction</a>（ ） 。</p>
+<p><b>See also</b> <a href="qxmlstreamreader.html#tokenString" tppabs="http://pyqt4doc.appspot.com/qxmlstreamreader.html#tokenString">tokenString</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

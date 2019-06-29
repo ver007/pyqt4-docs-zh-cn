@@ -1,0 +1,78 @@
+﻿<html>
+<head>
+<title>QXmlEntityResolver Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QXmlEntityResolver Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtxml.html">QtXml</a> module]</sup></sup>
+</h1>
+<p>该QXmlEntityResolver类提供解决包含在XML数据的外部实体的接口。<a href="#details">More...</a></p>
+
+<p>通过继承<a href="qxmldefaulthandler.html" tppabs="http://pyqt4doc.appspot.com/qxmldefaulthandler.html">QXmlDefaultHandler</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlentityresolver.html#QXmlEntityResolver" tppabs="http://pyqt4doc.appspot.com/qxmlentityresolver.html#QXmlEntityResolver">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlentityresolver.html#QXmlEntityResolver-2" tppabs="http://pyqt4doc.appspot.com/qxmlentityresolver.html#QXmlEntityResolver-2">__init__</a></b> (<i>self</i>, QXmlEntityResolver)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qxmlentityresolver.html#errorString" tppabs="http://pyqt4doc.appspot.com/qxmlentityresolver.html#errorString">errorString</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>(bool, QXmlInputSource <i>ret</i>) <b><a href="qxmlentityresolver.html#resolveEntity" tppabs="http://pyqt4doc.appspot.com/qxmlentityresolver.html#resolveEntity">resolveEntity</a></b> (<i>self</i>, QString <i>publicId</i>, QString <i>systemId</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QXmlEntityResolver类提供解决包含在XML数据的外部实体的接口。</p>
+<p>如果一个应用程序需要实现自定义处理外部实体，它必须实现这个接口，即<a href="qxmlentityresolver.html#resolveEntity" tppabs="http://pyqt4doc.appspot.com/qxmlentityresolver.html#resolveEntity">resolveEntity</a>（ ） ，并用它注册<a href="qxmlreader.html#setEntityResolver" tppabs="http://pyqt4doc.appspot.com/qxmlreader.html#setEntityResolver">QXmlReader.setEntityResolver</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QXmlEntityResolver"></a>QXmlEntityResolver.__init__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="QXmlEntityResolver-2"></a>QXmlEntityResolver.__init__ (<i>self</i>, <a href="qxmlentityresolver.html" tppabs="http://pyqt4doc.appspot.com/qxmlentityresolver.html">QXmlEntityResolver</a>)</h3>
+<h3 class="fn">
+<a name="errorString"></a>QString QXmlEntityResolver.errorString (<i>self</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>读者调用这个函数来得到一个错误字符串，如果任何的处理函数返回False 。</p>
+
+
+<h3 class="fn">
+<a name="resolveEntity"></a>(bool, <a href="qxmlinputsource.html" tppabs="http://pyqt4doc.appspot.com/qxmlinputsource.html">QXmlInputSource</a> <i>ret</i>) QXmlEntityResolver.resolveEntity (<i>self</i>, QString <i>publicId</i>, QString <i>systemId</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>读者调用这个函数之前，它打开任何外部实体，除了顶级文档实体。该应用程序可能会要求读者解决实体本身（<i>ret</i>是0） ，或使用完全不同的输入源（<i>ret</i>指向输入源） 。</p>
+<p>读者会删除输入源<i>ret</i>当它不再需要它，所以你应该为它分配在堆上用<tt>new</tt>。</p>
+<p>这个论点<i>publicId</i>是外部实体的公共标识符，<i>systemId</i>为外部实体的系统标识符和<i>ret</i>是这个函数的返回值。如果<i>ret</i>为0时，读者应该解决实体本身，如果是非零它必须指向该阅读器使用，而不是一个输入源。</p>
+<p>如果这个函数返回False读者停止解析和报告错误。读者使用函数<a href="qxmlentityresolver.html#errorString" tppabs="http://pyqt4doc.appspot.com/qxmlentityresolver.html#errorString">errorString</a>（ ）来获得错误信息。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

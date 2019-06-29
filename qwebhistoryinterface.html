@@ -1,0 +1,97 @@
+﻿<html>
+<head>
+<title>QWebHistoryInterface Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QWebHistoryInterface Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtwebkit.html">QtWebKit</a> module]</sup></sup>
+</h1>
+<p>该QWebHistoryInterface类提供了实现链路史上的一个接口。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qwebhistoryinterface.html#QWebHistoryInterface" tppabs="http://pyqt4doc.appspot.com/qwebhistoryinterface.html#QWebHistoryInterface">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwebhistoryinterface.html#addHistoryEntry" tppabs="http://pyqt4doc.appspot.com/qwebhistoryinterface.html#addHistoryEntry">addHistoryEntry</a></b> (<i>self</i>, QString <i>url</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qwebhistoryinterface.html#historyContains" tppabs="http://pyqt4doc.appspot.com/qwebhistoryinterface.html#historyContains">historyContains</a></b> (<i>self</i>, QString <i>url</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QWebHistoryInterface <b><a href="qwebhistoryinterface.html#defaultInterface" tppabs="http://pyqt4doc.appspot.com/qwebhistoryinterface.html#defaultInterface">defaultInterface</a></b> ()</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwebhistoryinterface.html#setDefaultInterface" tppabs="http://pyqt4doc.appspot.com/qwebhistoryinterface.html#setDefaultInterface">setDefaultInterface</a></b> (QWebHistoryInterface <i>defaultInterface</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QWebHistoryInterface类提供了实现链路史上的一个接口。</p>
+<p>该QWebHistoryInterface是可以用来跟踪访问链接的接口。它包含了由WebKit引擎叫了两个纯虚方法：<a href="qwebhistoryinterface.html#addHistoryEntry" tppabs="http://pyqt4doc.appspot.com/qwebhistoryinterface.html#addHistoryEntry">addHistoryEntry</a>（）是用来添加已访问过的URL的界面，而<a href="qwebhistoryinterface.html#historyContains" tppabs="http://pyqt4doc.appspot.com/qwebhistoryinterface.html#historyContains">historyContains</a>（）用于查询给定的URL是否已经访问过的用户。默认情况下， QWebHistoryInterface没有设置，所以WebKit的不跟踪访问过的链接的。</p>
+<p><b>Note:</b>通过QWebHistoryInterface跟踪历史是不特定的实例<a href="qwebpage.html" tppabs="http://pyqt4doc.appspot.com/qwebpage.html">QWebPage</a>而是适用于所有页面。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QWebHistoryInterface"></a>QWebHistoryInterface.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个新的<a href="qwebhistoryinterface.html" tppabs="http://pyqt4doc.appspot.com/qwebhistoryinterface.html">QWebHistoryInterface</a>与父<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="addHistoryEntry"></a>QWebHistoryInterface.addHistoryEntry (<i>self</i>, QString <i>url</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>通过所谓的WebKit增加另一个<i>url</i>要访问的页面的列表。</p>
+
+
+<h3 class="fn">
+<a name="defaultInterface"></a><a href="qwebhistoryinterface.html" tppabs="http://pyqt4doc.appspot.com/qwebhistoryinterface.html">QWebHistoryInterface</a> QWebHistoryInterface.defaultInterface ()</h3>
+<p>返回将使用的WebKit的默认界面。如果没有默认的界面已定， WebKit的不会让访问过的链接的跟踪和一个空指针将被返回。</p>
+<p><b>See also</b> <a href="qwebhistoryinterface.html#setDefaultInterface" tppabs="http://pyqt4doc.appspot.com/qwebhistoryinterface.html#setDefaultInterface">setDefaultInterface</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="historyContains"></a>bool QWebHistoryInterface.historyContains (<i>self</i>, QString <i>url</i>)</h3>
+<p>这种方法是抽象的，应在任何子类中重新实现。</p>
+<p>由WebKit引擎打电话来查询是否有一定<i>url</i>已访问的用户了。返回True如果<i>url</i>是访问过的链接的历史的一部分，否则返回False 。</p>
+
+
+<h3 class="fn">
+<a name="setDefaultInterface"></a>QWebHistoryInterface.setDefaultInterface (<a href="qwebhistoryinterface.html" tppabs="http://pyqt4doc.appspot.com/qwebhistoryinterface.html">QWebHistoryInterface</a> <i>defaultInterface</i>)</h3>
+<p>设置新的默认界面，<i>defaultInterface</i>，将被所有的WebKit来跟踪访问过的链接的。</p>
+<p>如果没有父的接口已经被设置，旧的接口将被删除。当存在该应用程序<a href="qwebhistoryinterface.html" tppabs="http://pyqt4doc.appspot.com/qwebhistoryinterface.html">QWebHistoryInterface</a>会自动删除<i>defaultInterface</i>如果它不具有父。</p>
+<p><b>See also</b> <a href="qwebhistoryinterface.html#defaultInterface" tppabs="http://pyqt4doc.appspot.com/qwebhistoryinterface.html#defaultInterface">defaultInterface</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

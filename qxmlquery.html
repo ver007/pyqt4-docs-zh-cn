@@ -1,0 +1,581 @@
+﻿<html>
+<head>
+<title>QXmlQuery Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QXmlQuery Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtxmlpatterns.html">QtXmlPatterns</a> module]</sup></sup>
+</h1>
+<p>该QXmlQuery类执行的XQuery查询XML数据，或仿照看起来像XML的非XML数据。<a href="#details">More...</a></p>
+
+<h3>Types</h3>
+<ul><li>
+<div class="fn"></div>enum <b><a href="qxmlquery.html#QueryLanguage-enum" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#QueryLanguage-enum">QueryLanguage</a></b> { XQuery10, XSLT20 }</li></ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlquery.html#QXmlQuery" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#QXmlQuery">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlquery.html#QXmlQuery-2" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#QXmlQuery-2">__init__</a></b> (<i>self</i>, QXmlQuery <i>other</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlquery.html#QXmlQuery-3" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#QXmlQuery-3">__init__</a></b> (<i>self</i>, QXmlNamePool <i>np</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlquery.html#QXmlQuery-4" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#QXmlQuery-4">__init__</a></b> (<i>self</i>, QueryLanguage <i>queryLanguage</i>, QXmlNamePool <i>pool</i> = QXmlNamePool())</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlquery.html#bindVariable" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#bindVariable">bindVariable</a></b> (<i>self</i>, QXmlName <i>name</i>, QXmlItem <i>value</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlquery.html#bindVariable-2" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#bindVariable-2">bindVariable</a></b> (<i>self</i>, QXmlName <i>name</i>, QIODevice)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlquery.html#bindVariable-3" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#bindVariable-3">bindVariable</a></b> (<i>self</i>, QXmlName <i>name</i>, QXmlQuery <i>query</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlquery.html#bindVariable-4" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#bindVariable-4">bindVariable</a></b> (<i>self</i>, QString <i>localName</i>, QXmlItem <i>value</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlquery.html#bindVariable-5" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#bindVariable-5">bindVariable</a></b> (<i>self</i>, QString <i>localName</i>, QIODevice)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlquery.html#bindVariable-6" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#bindVariable-6">bindVariable</a></b> (<i>self</i>, QString <i>localName</i>, QXmlQuery <i>query</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlquery.html#evaluateTo" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#evaluateTo">evaluateTo</a></b> (<i>self</i>, QXmlResultItems <i>result</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlquery.html#evaluateTo-2" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#evaluateTo-2">evaluateTo</a></b> (<i>self</i>, QAbstractXmlReceiver <i>callback</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlquery.html#evaluateTo-3" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#evaluateTo-3">evaluateTo</a></b> (<i>self</i>, QStringList <i>target</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlquery.html#evaluateTo-4" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#evaluateTo-4">evaluateTo</a></b> (<i>self</i>, QIODevice <i>target</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlquery.html#evaluateTo-5" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#evaluateTo-5">evaluateTo</a></b> (<i>self</i>, QString <i>output</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qxmlquery.html#evaluateToString" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#evaluateToString">evaluateToString</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qxmlquery.html#evaluateToStringList" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#evaluateToStringList">evaluateToStringList</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QXmlName <b><a href="qxmlquery.html#initialTemplateName" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#initialTemplateName">initialTemplateName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlquery.html#isValid" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#isValid">isValid</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QAbstractMessageHandler <b><a href="qxmlquery.html#messageHandler" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#messageHandler">messageHandler</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QXmlNamePool <b><a href="qxmlquery.html#namePool" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#namePool">namePool</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QNetworkAccessManager <b><a href="qxmlquery.html#networkAccessManager" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#networkAccessManager">networkAccessManager</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QueryLanguage <b><a href="qxmlquery.html#queryLanguage" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#queryLanguage">queryLanguage</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlquery.html#setFocus" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setFocus">setFocus</a></b> (<i>self</i>, QXmlItem <i>item</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlquery.html#setFocus-2" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setFocus-2">setFocus</a></b> (<i>self</i>, QUrl <i>documentURI</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlquery.html#setFocus-3" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setFocus-3">setFocus</a></b> (<i>self</i>, QIODevice <i>document</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qxmlquery.html#setFocus-4" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setFocus-4">setFocus</a></b> (<i>self</i>, QString <i>focus</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlquery.html#setInitialTemplateName" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setInitialTemplateName">setInitialTemplateName</a></b> (<i>self</i>, QXmlName <i>name</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlquery.html#setInitialTemplateName-2" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setInitialTemplateName-2">setInitialTemplateName</a></b> (<i>self</i>, QString <i>name</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlquery.html#setMessageHandler" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setMessageHandler">setMessageHandler</a></b> (<i>self</i>, QAbstractMessageHandler <i>messageHandler</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlquery.html#setNetworkAccessManager" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setNetworkAccessManager">setNetworkAccessManager</a></b> (<i>self</i>, QNetworkAccessManager <i>newManager</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlquery.html#setQuery" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setQuery">setQuery</a></b> (<i>self</i>, QString <i>sourceCode</i>, QUrl <i>documentUri</i> = QUrl())</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlquery.html#setQuery-2" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setQuery-2">setQuery</a></b> (<i>self</i>, QIODevice <i>sourceCode</i>, QUrl <i>documentUri</i> = QUrl())</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlquery.html#setQuery-3" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setQuery-3">setQuery</a></b> (<i>self</i>, QUrl <i>queryURI</i>, QUrl <i>baseUri</i> = QUrl())</li>
+<li>
+<div class="fn"></div>
+<b><a href="qxmlquery.html#setUriResolver" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setUriResolver">setUriResolver</a></b> (<i>self</i>, QAbstractUriResolver <i>resolver</i>)</li>
+<li>
+<div class="fn"></div>QAbstractUriResolver <b><a href="qxmlquery.html#uriResolver" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#uriResolver">uriResolver</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QXmlQuery类执行的XQuery查询XML数据，或仿照看起来像XML的非XML数据。</p>
+<p>该QXmlQuery类编译和执行写入查询<a href="http://www.w3.org/TR/xquery/">XQuery language</a>。 QXmlQuery通常是用来查询XML数据，但它也可以查询已仿照看起来像XML的非XML数据。</p>
+<p>使用QXmlQuery查询XML数据，如下面的代码片段，很简单，因为它可以使用内置的<a href="qabstractxmlnodemodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html">XML data model</a>作为其代表来遍历数据基础查询引擎。在指定了内置的数据模型<a href="http://www.w3.org/TR/xpath-datamodel/">XQuery 1.0 and XPath 2.0
+Data Model</a>。</p>
+<pre class="cpp">
+ <span class="type">QXmlQuery</span> query;
+ query<span class="operator">.</span><a href="qxmlquery.html#setQuery" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setQuery">setQuery</a>(<span class="string">"doc('index.html')/html/body/p[1]"</span>);
+
+ <span class="type"><a href="qxmlserializer.html" tppabs="http://pyqt4doc.appspot.com/qxmlserializer.html">QXmlSerializer</a></span> serializer(query<span class="operator">,</span> myOutputDevice);
+ query<span class="operator">.</span><a href="qxmlquery.html#evaluateTo" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#evaluateTo">evaluateTo</a>(<span class="operator">&amp;</span>serializer);
+</pre>
+<p>该示例使用QXmlQuery来匹配XML文档的第一个段落，然后<a href="qxmlserializer.html" tppabs="http://pyqt4doc.appspot.com/qxmlserializer.html">output the
+result</a>到设备为XML。</p>
+<p>使用QXmlQuery查询<i>non-XML</i>数据需要写入的子类<a href="qabstractxmlnodemodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html">QAbstractXmlNodeModel</a>作为替换为内置的XML数据模型的使用。自定义数据模型将能够遍历非XML数据所要求的<a href="qabstractxmlnodemodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html">QAbstractXmlNodeModel</a>接口。这个自定义数据模型的实例就变成使用的查询引擎遍历非XML数据的委讬。有关如何使用QXmlQuery查询非XML数据，请参阅文档的一个例子<a href="qabstractxmlnodemodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html">QAbstractXmlNodeModel</a>。</p>
+<a id="running-xqueries" name="running-xqueries"></a>
+<h3>Running XQueries</h3>
+<p>要运行设置与QXmlQuery查询，调用的评价功能之一。</p>
+<ul>
+<li>evaluateTo(<a href="qabstractxmlreceiver.html" tppabs="http://pyqt4doc.appspot.com/qabstractxmlreceiver.html">QAbstractXmlReceiver</a> *) is called
+with a pointer to an XML <a href="qabstractxmlreceiver.html" tppabs="http://pyqt4doc.appspot.com/qabstractxmlreceiver.html">receiver</a>, which receives the query
+results as a sequence of callbacks. The receiver callback class is
+like the callback class used for translating the output of a SAX
+parser. <a href="qxmlserializer.html" tppabs="http://pyqt4doc.appspot.com/qxmlserializer.html">QXmlSerializer</a>, for
+example, is a receiver callback class for translating the sequence
+of callbacks for output as unformatted XML text.</li>
+</ul>
+<ul>
+<li>evaluateTo(<a href="qxmlresultitems.html" tppabs="http://pyqt4doc.appspot.com/qxmlresultitems.html">QXmlResultItems</a>
+*) is called with a pointer to an iterator for an empty sequence of
+query <a href="qxmlresultitems.html" tppabs="http://pyqt4doc.appspot.com/qxmlresultitems.html">result items</a>. The
+Java-like iterator allows the query results to be accessed
+sequentially.</li>
+</ul>
+<ul>
+<li>evaluateTo(<a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">QStringList</a> *) is
+like evaluateTo(<a href="qxmlresultitems.html" tppabs="http://pyqt4doc.appspot.com/qxmlresultitems.html">QXmlResultItems</a>
+*), but the query must evaluate to a sequence of strings.</li>
+</ul>
+<a id="running-xpath-expressions" name="running-xpath-expressions"></a>
+<h3>Running XPath Expressions</h3>
+<p>XPath语言是的一个子集<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>语言，所以运行XPath表达式是一样的运行<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>查询。通过使用XPath表达式来QXmlQuery<a href="qxmlquery.html#setQuery" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setQuery">setQuery</a>（ ） 。</p>
+<a id="running-xslt-stylesheets" name="running-xslt-stylesheets"></a>
+<h3>Running XSLT stylesheets</h3>
+<p>运行一个XSLT样式表是喜欢跑步的<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>，不同之处在于，当你构建你的QXmlQuery ，你必须通过<a href="qxmlquery.html#QueryLanguage-enum" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#QueryLanguage-enum">QXmlQuery.XSLT20</a>告诉QXmlQuery解释不管它从得到<a href="qxmlquery.html#setQuery" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setQuery">setQuery</a>（ ）作为XSLT样式表，而不是一个<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>。您还必须通过调用设置输入文件<a href="qxmlquery.html#setFocus" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setFocus">setFocus</a>（ ） 。</p>
+<pre class="cpp">
+     <span class="type">QXmlQuery</span> query(<span class="type">QXmlQuery</span><span class="operator">.</span>XSLT20);
+     query<span class="operator">.</span>setFocus(<span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span>(<span class="string">"myInput.xml"</span>));
+     query<span class="operator">.</span>setQuery(<span class="type"><a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a></span>(<span class="string">"myStylesheet.xsl"</span>));
+     query<span class="operator">.</span>evaluateTo(out);
+</pre>
+<p><b>Note:</b>目前，<a href="qxmlquery.html#setFocus" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setFocus">setFocus</a>（ ）必须被调用<i>before</i> <a href="qxmlquery.html#setQuery" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setQuery">setQuery</a>（ ）使用XSLT时。</p>
+<p>另一种方式来运行一个XSLT样式表是使用<tt>xmlpatterns</tt>命令行实用程序。</p>
+<pre class="cpp">
+ xmlpatterns myStylesheet<span class="operator">.</span>xsl myInput<span class="operator">.</span>xml
+</pre>
+<p><b>Note:</b>对于目前的版本中， XSLT支持应考虑实验。见<a href="index.htm#xslt-2-0" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html#xslt-2-0">XSLT conformance</a>了解详情。</p>
+<p>样式表参数使用绑定<a href="qxmlquery.html#bindVariable" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#bindVariable">bindVariable</a>（ ） 。</p>
+<a id="binding-a-query-to-a-starting-node" name="binding-a-query-to-a-starting-node"></a>
+<h3>Binding A Query To A Starting Node</h3>
+<p>当一个查询被执行的XML数据，如代码段所述，<tt>doc()</tt>函数返回的内置数据模型，其中的查询评估将开始的节点。但是，当一个查询运行在包含非XML数据的一个自定义节点模型<a href="qxmlquery.html#bindVariable" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#bindVariable">bindVariable</a>（ ）函数必须调用一个变量名绑定到自定义模型的起始节点。澳元变量引用被用在<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>文字来访问自定义模型的起始节点。这是没有必要声明外部查询中的变量名。参见示例说明文档中的<a href="qabstractxmlnodemodel.html" tppabs="http://pyqt4doc.appspot.com/qabstractxmlnodemodel.html">QAbstractXmlNodeModel</a>。</p>
+<a id="reentrancy-and-thread-safety" name="reentrancy-and-thread-safety"></a>
+<h3>Reentrancy and Thread-Safety</h3>
+<p>QXmlQuery是可重入的，但不是线程安全的。它是安全使用QxmlQuery拷贝构造函数来创建查询的副本，并执行相同的查询多次。在幕后， QXmlQuery将重用，如打开的文件和编译的查询的资源尽可能。但它是不是安全使用QXmlQuery的同一实例中的多个线程。</p>
+<a id="error-handling" name="error-handling"></a>
+<h3>Error Handling</h3>
+<p>可发生在查询计算错误。例子包括错误类型和文件加载错误。当发生错误时：</p>
+<ul>
+<li>The error message is sent to the <a href="qxmlquery.html#messageHandler" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#messageHandler">messageHandler</a>().</li>
+<li>
+<a href="qxmlresultitems.html#hasError" tppabs="http://pyqt4doc.appspot.com/qxmlresultitems.html#hasError">QXmlResultItems.hasError</a>()
+will return <tt>true</tt>, or <a href="qxmlquery.html#evaluateTo" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#evaluateTo">evaluateTo</a>() will return
+<tt>false</tt>;</li>
+<li>The results of the evaluation are undefined.</li>
+</ul>
+<a id="resource-management" name="resource-management"></a>
+<h3>Resource Management</h3>
+<p>当查询运行时，它会解析文件，分配内部数据结构来保存它们，则可能在网络上加载其他资源。这时候可能会重复使用这些分配的资源，以避免重新加载并重新分析他们。</p>
+<p>When <a href="qxmlquery.html#setQuery" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setQuery">setQuery</a>（）被调用时，该查询的文本被编译成一个内部数据结构，并进行了优化。优化的形式随后可重复用于查询的多个评估。由于编译 - 优化的过程可以是昂贵的，它重复了同样的查询，应避免使用QXmlQuery的一个单独的实例为每个查询文本。</p>
+<p>一旦文件被解析，它的内部表示保持在QXmlQuery实例，并在多个QXmlQuery实例共享。</p>
+<p>实例<a href="qcoreapplication.html" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html">QCoreApplication</a>必须存在QXmlQuery才能使用。</p>
+<a id="event-handling" name="event-handling"></a>
+<h3>Event Handling</h3>
+<p>当QXmlQuery访问资源（例如，呼叫<tt>fn:doc()</tt>加载一个文件，或通过绑定变量访问设备） ，事件循环使用，这意味着事件将被处理。为了避免处理事件时， QXmlQuery访问的资源，在一个单独的线程中创建您的QXmlQuery实例。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="QueryLanguage-enum"></a>QXmlQuery.QueryLanguage</h3>
+<p>指定是否要<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>解释输入到<a href="qxmlquery.html#setQuery" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setQuery">setQuery</a>（）作为<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>或作为XSLT样式表。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QXmlQuery.XQuery10</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">
+<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>1.0 。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QXmlQuery.XSLT20</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">XSLT 2.0的选择，在W3C XML模式1.1的唯一性约束上找到了禁区XPath模式。除了限制的语法，表达式的类型检查阶段假定节点序列成为焦点。领域， W3C XML模式1.1的唯一性约束上找到了禁区XPath模式。除了限制的语法，表达式的类型检查阶段假定节点序列成为焦点。表示的XPath 2.0 。拥有公共API中没有作用，它的内部使用。由于有了XmlSchema11IdentityConstraintSelector和XmlSchema11IdentityConstraintField ，表达式的类型检查阶段假定节点序列成为焦点。</td>
+</tr>
+</table>
+<p>这个枚举被引入或修改的Qt 4.5 。</p>
+<p><b>See also</b> <a href="qxmlquery.html#setQuery" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setQuery">setQuery</a>（ ） 。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QXmlQuery"></a>QXmlQuery.__init__ (<i>self</i>)</h3>
+<p>构造不能使用，直到无效的，空的查询<a href="qxmlquery.html#setQuery" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setQuery">setQuery</a>（）被调用。</p>
+<p><b>Note:</b>如果您打算使用这个这个构造函数必须不能使用<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>处理XSL -T样式表。其他的构造，必须在这种情况下被使用。</p>
+
+
+<h3 class="fn">
+<a name="QXmlQuery-2"></a>QXmlQuery.__init__ (<i>self</i>, <a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a> <i>other</i>)</h3>
+<p>构造一个<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>即副本<i>other</i>。新的实例将与现有的查询尽可能共享资源。</p>
+
+
+<h3 class="fn">
+<a name="QXmlQuery-3"></a>QXmlQuery.__init__ (<i>self</i>, <a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">QXmlNamePool</a> <i>np</i>)</h3>
+<p>构建将使用一个查询<i>np</i>正如它的名字池。该查询不能被计算，直到<a href="qxmlquery.html#setQuery" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setQuery">setQuery</a>（ ）被调用。</p>
+
+
+<h3 class="fn">
+<a name="QXmlQuery-4"></a>QXmlQuery.__init__ (<i>self</i>, <a href="qxmlquery.html#QueryLanguage-enum" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#QueryLanguage-enum">QueryLanguage</a> <i>queryLanguage</i>, <a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">QXmlNamePool</a> <i>pool</i> = QXmlNamePool())</h3>
+<p>构建体将被用来执行XQuery查询或XSL -T样式表的查询，这取决于的值<i>queryLanguage</i>。它将使用<i>np</i>正如它的名字池。</p>
+<p><b>Note:</b>如果你的<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>将处理XSL -T样式表，这个构造函数必须被使用。默认的构造函数只能创建实例<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>运行的XQuery 。</p>
+<p><b>Note:</b>本新闻稿中的XSL -T的支持，被认为是实验性的。请参阅<a href="index.htm#xslt-2-0" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html#xslt-2-0">XSLT
+conformance</a>了解详情。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qxmlquery.html#queryLanguage" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#queryLanguage">queryLanguage</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="bindVariable"></a>QXmlQuery.bindVariable (<i>self</i>, <a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a> <i>name</i>, <a href="qxmlitem.html" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html">QXmlItem</a> <i>value</i>)</h3>
+<p>绑定变量<i>name</i>到<i>value</i>使$<i>name</i>可以从查询中用于指代的<i>value</i>。</p>
+<p><i>name</i>必须不<i>null</i>。<i>name</i>。 ISNULL（ ）必须返回False 。如果<i>name</i>已绑定由以前的bindVariable （ ）调用，它以前的绑定将被改写。</p>
+<p>If <i>value</i>为null ，这样<i>value</i>。 ISNULL（ ）返回True，<i>name</i>已经有约束力的，效果是消除了现有绑定<i>name</i>。</p>
+<p>要绑定类型的值<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a> or
+<a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>，包装在一个值<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>这样，<a href="qxmlitem.html" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html">QXmlItem</a>的<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>构造函数被调用。</p>
+<p>由查询处理的所有字符串必须是有效的<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>字符串，这意味着它们必须只包含XML 1.0字符。然而，这一要求没有被选中。如果查询处理一个无效的字符串，该行为是未定义的。</p>
+<p><b>See also</b> <a href="qvariant.html#isValid" tppabs="http://pyqt4doc.appspot.com/qvariant.html#isValid">QVariant.isValid</a>（ ）<a href="index.htm#qtxdm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html#qtxdm">How QVariant maps to XQuery's Data
+Model</a>和<a href="qxmlitem.html#isNull" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html#isNull">QXmlItem.isNull</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="bindVariable-2"></a>QXmlQuery.bindVariable (<i>self</i>, <a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a> <i>name</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>)</h3>
+<p>绑定变量<i>name</i>到<i>device</i>使$<i>name</i>可以从查询中用于指代的<i>device</i>。该<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>
+<i>device</i>暴露于查询作为类型的URI<tt>xs:anyURI</tt>，它可以被传递到<tt>fn:doc()</tt>函数来进行读取。例如，该功能可用于在存储器中通过XML文档来<tt>fn:doc</tt>。</p>
+<pre class="cpp">
+     <span class="type"><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a></span> myDocument;
+     <span class="type"><a href="qbuffer.html" tppabs="http://pyqt4doc.appspot.com/qbuffer.html">QBuffer</a></span> buffer(<span class="operator">&amp;</span>myDocument); <span class="comment">// This is a QIODevice.</span>
+     buffer<span class="operator">.</span>open(<span class="type"><a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a></span><span class="operator">.</span>ReadOnly);
+     <span class="type"><a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a></span> query;
+     query<span class="operator">.</span>bindVariable(<span class="string">"myDocument"</span><span class="operator">,</span> <span class="operator">&amp;</span>buffer);
+     query<span class="operator">.</span>setQuery(<span class="string">"doc($myDocument)"</span>);
+</pre>
+<p>调用者必须确保<i>device</i>已被打开，至少<a href="qiodevice.html#OpenModeFlag-enum" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#OpenModeFlag-enum">QIODevice.ReadOnly</a>在此之前绑定。否则，行为是未定义的。</p>
+<p>如果该查询将访问包含在一个XML文档<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>，使用<a href="qbuffer.html" tppabs="http://pyqt4doc.appspot.com/qbuffer.html">QBuffer</a>如下面的代码片段所示。假设<i>myQString</i>包含<tt>&lt;document&gt;content&lt;/document&gt;</tt></p>
+<pre class="cpp">
+     <span class="type"><a href="qbuffer.html" tppabs="http://pyqt4doc.appspot.com/qbuffer.html">QBuffer</a></span> device;
+     device<span class="operator">.</span>setData(myQString<span class="operator">.</span>toUtf8());
+     device<span class="operator">.</span>open(<span class="type"><a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a></span><span class="operator">.</span>ReadOnly);
+
+     <span class="type"><a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a></span> query;
+     query<span class="operator">.</span><a href="qxmlquery.html#bindVariable" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#bindVariable">bindVariable</a>(<span class="string">"inputDocument"</span><span class="operator">,</span> <span class="operator">&amp;</span>device);
+     query<span class="operator">.</span><a href="qxmlquery.html#setQuery" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setQuery">setQuery</a>(<span class="string">"doc($inputDocument)/query[theDocument]"</span>);
+</pre>
+<p><i>name</i>必须不<i>null</i>。<i>name</i>。 ISNULL（ ）必须返回False 。如果<i>name</i>已绑定，其以前的绑定将被改写。该URI，它<i>name</i>计算结果为是任意的，可能会改变。</p>
+<p>如果该变量绑定的变化（例如，飞行如果同名一个以前的绑定是一个<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>，或者，如果没有先前的绑定） ，<a href="qxmlquery.html#isValid" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#isValid">isValid</a>（ ）将返回<tt>false</tt>，并且需要查询文本的重新编译。重新编译查询，请致电<a href="qxmlquery.html#setQuery" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setQuery">setQuery</a>（ ） 。出于这个原因，<a href="qxmlquery.html#bindVariable" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#bindVariable">bindVariable</a>（ ）之前，应叫<a href="qxmlquery.html#setQuery" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setQuery">setQuery</a>（） ，如果可能的话。</p>
+<p><b>Note:</b> <i>device</i>不能被删除，而这<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>存在。</p>
+
+
+<h3 class="fn">
+<a name="bindVariable-3"></a>QXmlQuery.bindVariable (<i>self</i>, <a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a> <i>name</i>, <a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a> <i>query</i>)</h3>
+<p>结合查询的结果<i>query</i>，一个变量的名字<i>name</i>。</p>
+<p>评价<i>query</i>当这个函数被调用时会被展开。</p>
+<p>If <i>query</i>是无效的，行为是未定义的。<i>query</i>将被复制。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qxmlquery.html#isValid" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#isValid">isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="bindVariable-4"></a>QXmlQuery.bindVariable (<i>self</i>, QString <i>localName</i>, <a href="qxmlitem.html" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html">QXmlItem</a> <i>value</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>这个函数构造一个<a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a>从<i>localName</i>使用查询的<a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">namespace</a>。然后，该函数的行为与重载函数。它等价于下面的代码片段。</p>
+<pre class="cpp">
+     <span class="type"><a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">QXmlNamePool</a></span> <a href="qxmlquery.html#namePool" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#namePool">namePool</a>(query<span class="operator">.</span>namePool());
+     query<span class="operator">.</span><a href="qxmlquery.html#bindVariable" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#bindVariable">bindVariable</a>(<span class="type"><a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a></span>(namePool<span class="operator">,</span> localName)<span class="operator">,</span> value);
+</pre>
+
+
+<h3 class="fn">
+<a name="bindVariable-5"></a>QXmlQuery.bindVariable (<i>self</i>, QString <i>localName</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>)</h3>
+<p>这是一个重载函数。</p>
+<p>If <i>localName</i>是一个有效的<a href="qxmlname.html#isNCName" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#isNCName">NCName</a>，这个功能相当于下面的代码片段。</p>
+<pre class="cpp">
+     <span class="type"><a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">QXmlNamePool</a></span> namePool(query<span class="operator">.</span>namePool());
+     query<span class="operator">.</span>bindVariable(<span class="type"><a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a></span>(namePool<span class="operator">,</span> localName)<span class="operator">,</span> device);
+</pre>
+<p>A <a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a>从构造<i>localName</i>，并传递到带有相应的过载<i>device</i>。</p>
+<p><b>See also</b> <a href="qxmlname.html#isNCName" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#isNCName">QXmlName.isNCName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="bindVariable-6"></a>QXmlQuery.bindVariable (<i>self</i>, QString <i>localName</i>, <a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a> <i>query</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>具有相同的行为和效果被重载的函数，但需要在变量名<i>localName</i>作为<a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a>。<i>query</i>用作重载的函数。</p>
+<p>此功能被引入Qt的4.5 。</p>
+
+
+<h3 class="fn">
+<a name="evaluateTo"></a>QXmlQuery.evaluateTo (<i>self</i>, <a href="qxmlresultitems.html" tppabs="http://pyqt4doc.appspot.com/qxmlresultitems.html">QXmlResultItems</a> <i>result</i>)</h3>
+<p>起动评价，并使其在可<i>result</i>。如果<i>result</i>为null，则行为是未定义的。评估发生增量（懒惰的评价） ，作为主叫方使用<a href="qxmlresultitems.html#next" tppabs="http://pyqt4doc.appspot.com/qxmlresultitems.html#next">QXmlResultItems.next</a>（）来获取下一个结果。</p>
+<p><b>See also</b> <a href="qxmlresultitems.html#next" tppabs="http://pyqt4doc.appspot.com/qxmlresultitems.html#next">QXmlResultItems.next</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="evaluateTo-2"></a>bool QXmlQuery.evaluateTo (<i>self</i>, <a href="qabstractxmlreceiver.html" tppabs="http://pyqt4doc.appspot.com/qabstractxmlreceiver.html">QAbstractXmlReceiver</a> <i>callback</i>)</h3>
+<p>评估该查询，并将其结果作为对一个序列的回调<a href="qabstractxmlreceiver.html" tppabs="http://pyqt4doc.appspot.com/qabstractxmlreceiver.html">receiver</a>
+<i>callback</i>。<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>不采取所有权<i>callback</i>。</p>
+<p>如果评估过程中发生错误，错误信息被发送到<a href="qxmlquery.html#messageHandler" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#messageHandler">messageHandler</a>（）和<tt>false</tt>返回。</p>
+<p>如果此查询<a href="qxmlquery.html#isValid" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#isValid">is invalid</a>，<tt>false</tt>返回和行为是未定义的。如果<i>callback</i>为空，行为是未定义的。</p>
+<p><b>See also</b> <a href="qabstractxmlreceiver.html" tppabs="http://pyqt4doc.appspot.com/qabstractxmlreceiver.html">QAbstractXmlReceiver</a>和<a href="qxmlquery.html#isValid" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#isValid">isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="evaluateTo-3"></a>bool QXmlQuery.evaluateTo (<i>self</i>, QStringList <i>target</i>)</h3>
+<p>尝试评估该查询，并将结果返回在<i>target</i> <a href="qstringlist.html" tppabs="http://pyqt4doc.appspot.com/qstringlist.html">string list</a>。</p>
+<p>如果查询<a href="qxmlquery.html#isValid" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#isValid">is valid</a>和评估成功，则返回True 。否则，返回False，并且内容<i>target</i>是不确定的。</p>
+<p>查询必须评估为序列<tt>xs:string</tt>值。如果查询不计算为一个字符串序列，这些值通常可以通过增加一个调用转换<tt>string()</tt>在本月底<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>。</p>
+<p>If <i>target</i>为null，则行为是未定义的。</p>
+
+
+<h3 class="fn">
+<a name="evaluateTo-4"></a>bool QXmlQuery.evaluateTo (<i>self</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>target</i>)</h3>
+<p>评估查询，序列化输出为XML到<i>output</i>。</p>
+<p>如果评估过程中发生错误，错误信息被发送到<a href="qxmlquery.html#messageHandler" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#messageHandler">messageHandler</a>（ ）的内容<i>output</i>是不确定的，<tt>false</tt>返回，否则<tt>true</tt>返回。</p>
+<p>If <i>output</i> is <tt>null</tt>行为是不确定的。<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>不采取所有权<i>output</i>。</p>
+<p>在内部，类<a href="qxmlformatter.html" tppabs="http://pyqt4doc.appspot.com/qxmlformatter.html">QXmlFormatter</a>用于此。</p>
+<p>此功能被引入Qt的4.5 。</p>
+
+
+<h3 class="fn">
+<a name="evaluateTo-5"></a>bool QXmlQuery.evaluateTo (<i>self</i>, QString <i>output</i>)</h3>
+<p>评估查询或样式表，并将输出写入到<i>target</i>。</p>
+<p><a href="qxmlserializer.html" tppabs="http://pyqt4doc.appspot.com/qxmlserializer.html">QXmlSerializer</a>用于将输出写入到<i>target</i>。在将来的版本中，它预计这一功能将被更改为尊重在样式表中设置序列化选项。</p>
+<p>如果评估过程中发生错误，错误信息被发送到<a href="qxmlquery.html#messageHandler" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#messageHandler">messageHandler</a>（）和<tt>false</tt>返回。</p>
+<p>If <i>target</i> is <tt>null</tt>或者是不是至少在开<a href="qiodevice.html#OpenModeFlag-enum" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#OpenModeFlag-enum">QIODevice.WriteOnly</a>模式，其行为是未定义的。<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>不采取所有权<i>target</i>。</p>
+<p>这是一个重载函数。</p>
+<p>此功能被引入Qt的4.5 。</p>
+
+
+<h3 class="fn">
+<a name="evaluateToString"></a>QString QXmlQuery.evaluateToString (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="evaluateToStringList"></a>QStringList QXmlQuery.evaluateToStringList (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="initialTemplateName"></a><a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a> QXmlQuery.initialTemplateName (<i>self</i>)</h3>
+<p>返回XSL -T样式表的模板，运行一个XSL -T样式表时，处理器将调用的名头。此功能仅在使用适用<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>处理XSL -T样式表。缺省情况下，初始模板设置。在这种情况下，一个默认的构造<a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a>返回。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qxmlquery.html#setInitialTemplateName" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setInitialTemplateName">setInitialTemplateName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isValid"></a>bool QXmlQuery.isValid (<i>self</i>)</h3>
+<p>返回True如果这个查询是有效的。无效的查询的例子是那些包含语法错误或者还没有<a href="qxmlquery.html#setQuery" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setQuery">setQuery</a>（ ）召之即来呢。</p>
+
+
+<h3 class="fn">
+<a name="messageHandler"></a><a href="qabstractmessagehandler.html" tppabs="http://pyqt4doc.appspot.com/qabstractmessagehandler.html">QAbstractMessageHandler</a> QXmlQuery.messageHandler (<i>self</i>)</h3>
+<p>返回处理这个编译和运行时消息的消息处理程序<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>。</p>
+<p><b>See also</b> <a href="qxmlquery.html#setMessageHandler" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setMessageHandler">setMessageHandler</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="namePool"></a><a href="qxmlnamepool.html" tppabs="http://pyqt4doc.appspot.com/qxmlnamepool.html">QXmlNamePool</a> QXmlQuery.namePool (<i>self</i>)</h3>
+<p>返回此名称池<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>构建<a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">names</a>。有没有setter的名字池，因为混合池的名称会导致错误，由于名称的混乱。</p>
+
+
+<h3 class="fn">
+<a name="networkAccessManager"></a><a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a> QXmlQuery.networkAccessManager (<i>self</i>)</h3>
+<p>返回该网络管理器，或0 ，如果它没有被设置。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qxmlquery.html#setNetworkAccessManager" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setNetworkAccessManager">setNetworkAccessManager</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="queryLanguage"></a><a href="qxmlquery.html#QueryLanguage-enum" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#QueryLanguage-enum">QueryLanguage</a> QXmlQuery.queryLanguage (<i>self</i>)</h3>
+<p>返回一个值，指示这是什么<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>被用于。默认值是<a href="qxmlquery.html#QueryLanguage-enum" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#QueryLanguage-enum">QXmlQuery.XQuery10</a>，这意味着<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>被用于执行<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>和XPath查询。<a href="qxmlquery.html#QueryLanguage-enum" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#QueryLanguage-enum">QXmlQuery.XSLT20</a>也可以退回，这表明<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>是运行XSL -T电子表格。</p>
+<p>此功能被引入Qt的4.5 。</p>
+
+
+<h3 class="fn">
+<a name="setFocus"></a>QXmlQuery.setFocus (<i>self</i>, <a href="qxmlitem.html" tppabs="http://pyqt4doc.appspot.com/qxmlitem.html">QXmlItem</a> <i>item</i>)</h3>
+<p>将焦点设置<i>item</i>。重点是一组上下文项表达式和路径表达式从导航的项目。例如，在表达式<i>p/span</i>时，该元件<i>p</i>计算结果为是重点下面的表达式，<i>span</i>。</p>
+<p>焦点可以使用上下文项表达式来访问，即，点（ “。”） 。</p>
+<p>默认情况下，焦点未设置，是不确定的。因此，它会导致动态误差，<tt>XPDY0002</tt>如果聚焦是试图将被访问。之前的查询设置与重点必须设置<a href="qxmlquery.html#setQuery" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setQuery">setQuery</a>（ ） 。</p>
+<p>没有设置它为null的项定义的行为。</p>
+
+
+<h3 class="fn">
+<a name="setFocus-2"></a>bool QXmlQuery.setFocus (<i>self</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>documentURI</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>将焦点是位于文档<i>documentURI</i>并返回True 。如果<i>documentURI</i>无法加载，则返回False。它是不确定在什么时候该文件可能被加载。当加载文档，消息处理程序和URI解析器在此设置<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>被使用。</p>
+<p>If <i>documentURI</i>为空或不是一个有效的URI ，这个函数的行为是未定义的。</p>
+<p>此功能被引入Qt的4.5 。</p>
+
+
+<h3 class="fn">
+<a name="setFocus-3"></a>bool QXmlQuery.setFocus (<i>self</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>document</i>)</h3>
+<p>将焦点是<i>document</i>从读<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>并返回True 。如果<i>document</i>无法加载，则返回False。</p>
+<p><a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>不采取所有权<i>document</i>。用户可以保证一个文件是可从<i>document</i>设备与该文件是不是空的。该设备必须至少在只读模式打开。<i>document</i>必须保持在范围只要当前查询是活动的。</p>
+<p>这是一个重载函数。</p>
+<p>此功能被引入Qt的4.5 。</p>
+
+
+<h3 class="fn">
+<a name="setFocus-4"></a>bool QXmlQuery.setFocus (<i>self</i>, QString <i>focus</i>)</h3>
+<p>这个函数的作用相同，调用<a href="qxmlquery.html#setFocus" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setFocus">setFocus</a>（ ）过载与<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>其内容是<i>focus</i>编码为UTF- 8 。即，<i>focus</i>被视为它包含在XML文档。</p>
+<p>返回作为过载相同的结果。</p>
+<p>这是一个重载函数。</p>
+<p>此功能被引入Qt的4.6 。</p>
+
+
+<h3 class="fn">
+<a name="setInitialTemplateName"></a>QXmlQuery.setInitialTemplateName (<i>self</i>, <a href="qxmlname.html" tppabs="http://pyqt4doc.appspot.com/qxmlname.html">QXmlName</a> <i>name</i>)</h3>
+<p>设置<i>name</i>初始模板。初始模板，而不是试图匹配模板的上下文节点（如果有的话）一个处理器调用第一个。如果初始模板没有设置，模板调用的标准顺序将被使用。</p>
+<p>此功能仅在使用适用<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>处理XSL -T样式表。该名称将成为编译的样式表的一部分。因此，这个函数必须在调用之前调用<a href="qxmlquery.html#setQuery" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setQuery">setQuery</a>（ ） 。</p>
+<p>如果样式表没有命名模板<i>name</i>，该处理器将使用模板调用的标准顺序。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qxmlquery.html#initialTemplateName" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#initialTemplateName">initialTemplateName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setInitialTemplateName-2"></a>QXmlQuery.setInitialTemplateName (<i>self</i>, QString <i>name</i>)</h3>
+<p>这是一个重载函数。</p>
+<p>设置初始模板的名称，以<i>localName</i>，它必须是一个有效的<a href="qxmlname.html#localName" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#localName">local name</a>。初始模板，而不是试图匹配模板的上下文节点（如果有的话）一个处理器调用第一个。如果初始模板没有设置，模板调用的标准顺序将被使用。</p>
+<p>此功能仅在使用适用<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>处理XSL -T样式表。该名称将成为编译的样式表的一部分。因此，这个函数必须在调用之前调用<a href="qxmlquery.html#setQuery" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setQuery">setQuery</a>（ ） 。</p>
+<p>If <i>localName</i>不是一个有效的<a href="qxmlname.html#localName" tppabs="http://pyqt4doc.appspot.com/qxmlname.html#localName">local name</a>，效果是不确定的。如果样式表没有命名模板<i>localName</i>，该处理器将使用模板调用的标准顺序。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qxmlquery.html#initialTemplateName" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#initialTemplateName">initialTemplateName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setMessageHandler"></a>QXmlQuery.setMessageHandler (<i>self</i>, <a href="qabstractmessagehandler.html" tppabs="http://pyqt4doc.appspot.com/qabstractmessagehandler.html">QAbstractMessageHandler</a> <i>messageHandler</i>)</h3>
+<p>更改<a href="qabstractmessagehandler.html" tppabs="http://pyqt4doc.appspot.com/qabstractmessagehandler.html">message
+handler</a>这<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>至<i>aMessageHandler</i>。该查询将所有的编译和运行时消息，此消息处理程序。<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>不采取所有权<i>aMessageHandler</i>。</p>
+<p>通常情况下，默认的消息处理就足够了。它写的编译和运行时消息，<i>stderr</i>。默认的消息处理程序，包括颜色代码，如果<i>stderr</i>可以使色彩。</p>
+<p>请注意，更改消息处理程序查询已经编译后没有效果，即查询在运行时使用相同的消息处理程序，它使用在编译时。</p>
+<p>When <a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>电话<a href="qabstractmessagehandler.html#message" tppabs="http://pyqt4doc.appspot.com/qabstractmessagehandler.html#message">QAbstractMessageHandler.message</a>（ ） ，参数如下：</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>message() argument</th>
+<th>Semantics</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td>
+<a href="index.htm#QtMsgType-enum" tppabs="http://pyqt4doc.appspot.com/qtcore.html#QtMsgType-enum">QtMsgType</a> type</td>
+<td>Only <a href="index.htm#QtMsgType-enum" tppabs="http://pyqt4doc.appspot.com/qtcore.html#QtMsgType-enum">QtWarningMsg</a>
+and <a href="index.htm#QtMsgType-enum" tppabs="http://pyqt4doc.appspot.com/qtcore.html#QtMsgType-enum">QtFatalMsg</a> are used.
+The former identifies a compile or runtime warning, while the
+latter identifies a dynamic or static error.</td>
+</tr>
+<tr class="even" valign="top">
+<td>const <a href="qstring.html" tppabs="http://pyqt4doc.appspot.com/qstring.html">QString</a> &amp; description</td>
+<td>An XHTML document which is the actual message. It is translated
+into the current language.</td>
+</tr>
+<tr class="odd" valign="top">
+<td>const <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> &amp;identifier</td>
+<td>Identifies the error with a URI, where the fragment is the
+error code, and the rest of the URI is the error namespace.</td>
+</tr>
+<tr class="even" valign="top">
+<td>const <a href="qsourcelocation.html" tppabs="http://pyqt4doc.appspot.com/qsourcelocation.html">QSourceLocation</a> &amp;
+sourceLocation</td>
+<td>Identifies where the error occurred.</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qxmlquery.html#messageHandler" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#messageHandler">messageHandler</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setNetworkAccessManager"></a>QXmlQuery.setNetworkAccessManager (<i>self</i>, <a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a> <i>newManager</i>)</h3>
+<p>设置网络管理员<i>newManager</i>。<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>不采取所有权<i>newManager</i>。</p>
+<p>此功能被引入Qt的4.5 。</p>
+<p><b>See also</b> <a href="qxmlquery.html#networkAccessManager" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#networkAccessManager">networkAccessManager</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setQuery"></a>QXmlQuery.setQuery (<i>self</i>, QString <i>sourceCode</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>documentUri</i> = QUrl())</h3>
+<p>此套<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>到<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>从读<i>sourceCode</i>设备。该设备必须已经打开了至少<a href="qiodevice.html#OpenModeFlag-enum" tppabs="http://pyqt4doc.appspot.com/qiodevice.html#OpenModeFlag-enum">QIODevice.ReadOnly</a>。</p>
+<p><i>documentURI</i>表示从得到的查询<i>sourceCode</i>设备。它是静态上下文的基URI ，如在定义<a href="http://www.w3.org/TR/xquery/">XQuery
+language</a>。它在内部使用，以解决出现在查询中相对URI ，以及消息的报告。<i>documentURI</i>可以为空。如果为空，则<a href="qcoreapplication.html#applicationFilePath" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#applicationFilePath">application file
+path</a>被使用。如果不是空的，它可以是相对的或绝对的。如果是相对的，它解决了自身对<a href="qcoreapplication.html#applicationFilePath" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#applicationFilePath">application
+file path</a>之前就被采用。如果<i>documentURI</i>既不是一个有效的URI ，也没有空，其结果是不确定的。</p>
+<p>如果查询包含一个静态错误（如语法错误） ，则错误消息被发送到<a href="qxmlquery.html#messageHandler" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#messageHandler">messageHandler</a>（）和<a href="qxmlquery.html#isValid" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#isValid">isValid</a>（ ）将返回<i>false</i>。</p>
+<p>变量必须setQuery前绑定（ ）被调用。</p>
+<p>的编码<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>在<i>sourceCode</i>检测到内部使用的规则来设置和检测编码<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>文件，这些文件中的解释<a href="http://www.w3.org/TR/xquery/">XQuery language</a>。</p>
+<p>If <i>sourceCode</i> is <tt>null</tt>或无法读取，或者如果<i>documentURI</i>是不是一个有效的URI ，行为是未定义的。</p>
+<p><b>See also</b> <a href="qxmlquery.html#isValid" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#isValid">isValid</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setQuery-2"></a>QXmlQuery.setQuery (<i>self</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>sourceCode</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>documentUri</i> = QUrl())</h3>
+<p>此套<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>到<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>从读<i>queryURI</i>。使用<a href="qxmlquery.html#isValid" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#isValid">isValid</a>（ ）调用此函数后。如果发生读取错误<i>queryURI</i>比如，查询不存在，无法读取，或者是无效的，<a href="qxmlquery.html#isValid" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#isValid">isValid</a>（ ）将返回<i>false</i>。</p>
+<p>所支持的URI方案是相同的<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>功能<tt>fn:doc</tt>，除了queryURI可以是一个变量绑定的对象。</p>
+<p><i>baseURI</i>是静态上下文的基URI ，如定义<a href="http://www.w3.org/TR/xquery/">XQuery language</a>。它在内部使用，以解决出现在查询中相对URI ，以及消息的报告。如果<i>baseURI</i>是空的，<i>queryURI</i>被使用。否则，<i>baseURI</i>被使用，并且它解决了对<a href="qcoreapplication.html#applicationFilePath" tppabs="http://pyqt4doc.appspot.com/qcoreapplication.html#applicationFilePath">application file
+path</a>如果它是相对的。</p>
+<p>If <i>queryURI</i>为空或无效，或者如果<i>baseURI</i>是无效的，这个函数的行为是未定义的。</p>
+
+
+<h3 class="fn">
+<a name="setQuery-3"></a>QXmlQuery.setQuery (<i>self</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>queryURI</i>, <a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a> <i>baseUri</i> = QUrl())</h3>
+<p>这是一个重载函数。</p>
+<p>这个函数的行为和要求是一样的setQuery （<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>* ，常量<a href="qurl.html" tppabs="http://pyqt4doc.appspot.com/qurl.html">QUrl</a>＆），后<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>已经读取的IO设备插入一个字符串。因为<i>sourceCode</i>已经是一个Unicode字符串，检测它的编码是不必要的。</p>
+
+
+<h3 class="fn">
+<a name="setUriResolver"></a>QXmlQuery.setUriResolver (<i>self</i>, <a href="qabstracturiresolver.html" tppabs="http://pyqt4doc.appspot.com/qabstracturiresolver.html">QAbstractUriResolver</a> <i>resolver</i>)</h3>
+<p>设置的URI解析器<i>resolver</i>。<a href="qxmlquery.html" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html">QXmlQuery</a>不采取所有权<i>resolver</i>。</p>
+<p><b>See also</b> <a href="qxmlquery.html#uriResolver" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#uriResolver">uriResolver</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="uriResolver"></a><a href="qabstracturiresolver.html" tppabs="http://pyqt4doc.appspot.com/qabstracturiresolver.html">QAbstractUriResolver</a> QXmlQuery.uriResolver (<i>self</i>)</h3>
+<p>返回查询的URI解析器。如果没有的URI解析器已定，<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtxmlpatterns.html">QtXmlPatterns</a>将使用的URI的查询，因为它们。</p>
+<p>这个URI解析器提供了一个抽象层，或<i>polymorphic URIs</i>。解析器可以重写<i>logical</i>URI与物理的，或者它可以翻译过时的或无效的URI来有效的。</p>
+<p><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtxmlpatterns.html">QtXmlPatterns</a>调用的URI解析器遇到所有的URI ，除了命名空间。具体而言，所有内建的函数来处理的URI （<tt>fn:doc()</tt>和<tt>fn:doc-available()</tt>） 。</p>
+<p>在的情况下<tt>fn:doc()</tt>，绝对URI是基URI在静态情况下（这最有可能是查询的位置） 。而不是使用URI指定的用户的返回值<a href="qabstracturiresolver.html#resolve" tppabs="http://pyqt4doc.appspot.com/qabstracturiresolver.html#resolve">QAbstractUriResolver.resolve</a>（）将被使用。</p>
+<p>When <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtxmlpatterns.html">QtXmlPatterns</a>电话<a href="qabstracturiresolver.html#resolve" tppabs="http://pyqt4doc.appspot.com/qabstracturiresolver.html#resolve">QAbstractUriResolver.resolve</a>（ ）的绝对URI是由授权的URI<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/xmlprocessing.html">XQuery</a>语言，相对URI是由用户指定的URI。</p>
+<p><b>See also</b> <a href="qxmlquery.html#setUriResolver" tppabs="http://pyqt4doc.appspot.com/qxmlquery.html#setUriResolver">setUriResolver</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

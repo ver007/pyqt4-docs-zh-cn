@@ -1,0 +1,276 @@
+﻿<html>
+<head>
+<title>QUndoGroup Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QUndoGroup Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QUndoGroup类是一组<a href="qundostack.html" tppabs="http://pyqt4doc.appspot.com/qundostack.html">QUndoStack</a>对象。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qundogroup.html#QUndoGroup" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#QUndoGroup">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>QUndoStack <b><a href="qundogroup.html#activeStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#activeStack">activeStack</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qundogroup.html#addStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#addStack">addStack</a></b> (<i>self</i>, QUndoStack <i>stack</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qundogroup.html#canRedo" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#canRedo">canRedo</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qundogroup.html#canUndo" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#canUndo">canUndo</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QAction <b><a href="qundogroup.html#createRedoAction" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#createRedoAction">createRedoAction</a></b> (<i>self</i>, QObject <i>parent</i>, QString <i>prefix</i> = QString())</li>
+<li>
+<div class="fn"></div>QAction <b><a href="qundogroup.html#createUndoAction" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#createUndoAction">createUndoAction</a></b> (<i>self</i>, QObject <i>parent</i>, QString <i>prefix</i> = QString())</li>
+<li>
+<div class="fn"></div>bool <b><a href="qundogroup.html#isClean" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#isClean">isClean</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qundogroup.html#redo" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#redo">redo</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qundogroup.html#redoText" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#redoText">redoText</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qundogroup.html#removeStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#removeStack">removeStack</a></b> (<i>self</i>, QUndoStack <i>stack</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qundogroup.html#setActiveStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#setActiveStack">setActiveStack</a></b> (<i>self</i>, QUndoStack <i>stack</i>)</li>
+<li>
+<div class="fn"></div>list-of-QUndoStack <b><a href="qundogroup.html#stacks" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#stacks">stacks</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qundogroup.html#undo" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#undo">undo</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qundogroup.html#undoText" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#undoText">undoText</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qundogroup.html#activeStackChanged" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#activeStackChanged">activeStackChanged</a></b> (QUndoStack *)</li>
+<li>
+<div class="fn"></div>void <b><a href="qundogroup.html#canRedoChanged" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#canRedoChanged">canRedoChanged</a></b> (bool)</li>
+<li>
+<div class="fn"></div>void <b><a href="qundogroup.html#canUndoChanged" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#canUndoChanged">canUndoChanged</a></b> (bool)</li>
+<li>
+<div class="fn"></div>void <b><a href="qundogroup.html#cleanChanged" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#cleanChanged">cleanChanged</a></b> (bool)</li>
+<li>
+<div class="fn"></div>void <b><a href="qundogroup.html#indexChanged" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#indexChanged">indexChanged</a></b> (int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qundogroup.html#redoTextChanged" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#redoTextChanged">redoTextChanged</a></b> (const QString&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qundogroup.html#undoTextChanged" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#undoTextChanged">undoTextChanged</a></b> (const QString&amp;)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QUndoGroup类是一组<a href="qundostack.html" tppabs="http://pyqt4doc.appspot.com/qundostack.html">QUndoStack</a>对象。</p>
+<p>对于Qt的撤消框架的概述，请参阅<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qundo.html">overview</a>。</p>
+<p>一个应用程序通常有多个撤消堆栈，每一个打开的文档。与此同时，应用程序通常有一个撤消操作和一个重做动作，这会触发撤消或重做的活动文档。</p>
+<p>QUndoGroup是一组<a href="qundostack.html" tppabs="http://pyqt4doc.appspot.com/qundostack.html">QUndoStack</a>物，其中之一可以是活动的。它有一个<a href="qundogroup.html#undo" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#undo">undo</a>（）和<a href="qundogroup.html#redo" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#redo">redo</a>（）槽，它调用<a href="qundostack.html#undo" tppabs="http://pyqt4doc.appspot.com/qundostack.html#undo">QUndoStack.undo</a>（）和<a href="qundostack.html#redo" tppabs="http://pyqt4doc.appspot.com/qundostack.html#redo">QUndoStack.redo</a>（ ）为活动堆栈。它还具有功能<a href="qundogroup.html#createUndoAction" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#createUndoAction">createUndoAction</a>（）和<a href="qundogroup.html#createRedoAction" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#createRedoAction">createRedoAction</a>（ ） 。这些函数返回的动作相同的行为方式的那些返回<a href="qundostack.html#createUndoAction" tppabs="http://pyqt4doc.appspot.com/qundostack.html#createUndoAction">QUndoStack.createUndoAction</a>（）和<a href="qundostack.html#createRedoAction" tppabs="http://pyqt4doc.appspot.com/qundostack.html#createRedoAction">QUndoStack.createRedoAction</a>活动堆栈的（） 。</p>
+<p>堆栈被添加到一个组<a href="qundogroup.html#addStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#addStack">addStack</a>（ ）中，用去除<a href="qundogroup.html#removeStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#removeStack">removeStack</a>（ ） 。堆栈是隐式添加到组时，同组创建为其父<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<p>这是程序员的责任来指定堆栈积极通过调用<a href="qundostack.html#active-prop" tppabs="http://pyqt4doc.appspot.com/qundostack.html#active-prop">QUndoStack.setActive</a>（ ） ，通常当相关文档窗口接收焦点。活动堆栈也可与设置<a href="qundogroup.html#setActiveStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#setActiveStack">setActiveStack</a>（） ，并且通过返回<a href="qundogroup.html#activeStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#activeStack">activeStack</a>（ ） 。</p>
+<p>当一个堆栈使用添加到组<a href="qundogroup.html#addStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#addStack">addStack</a>（ ） ，该组不采取栈的所有权。这意味着在堆栈必须单独从组中删除。当一个堆栈被删除，它会自动从组中删除。堆栈只能属于一个组。将它添加到另一个组将导致它从以前的组中删除。</p>
+<p>一个QUndoGroup也是有用会同<a href="qundoview.html" tppabs="http://pyqt4doc.appspot.com/qundoview.html">QUndoView</a>。如果<a href="qundoview.html" tppabs="http://pyqt4doc.appspot.com/qundoview.html">QUndoView</a>设置为观看利用一组<a href="qundoview.html#setGroup" tppabs="http://pyqt4doc.appspot.com/qundoview.html#setGroup">QUndoView.setGroup</a>（ ） ，它会自动更新以显示当前堆栈。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QUndoGroup"></a>QUndoGroup.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>创建一个空的<a href="qundogroup.html" tppabs="http://pyqt4doc.appspot.com/qundogroup.html">QUndoGroup</a>与父对象<i>parent</i>。</p>
+<p><b>See also</b> <a href="qundogroup.html#addStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#addStack">addStack</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="activeStack"></a><a href="qundostack.html" tppabs="http://pyqt4doc.appspot.com/qundostack.html">QUndoStack</a> QUndoGroup.activeStack (<i>self</i>)</h3>
+<p>返回该组的活动堆栈。</p>
+<p>如果没有堆叠的活跃，或者如果组为空，则该函数返回0 。</p>
+<p><b>See also</b> <a href="qundogroup.html#setActiveStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#setActiveStack">setActiveStack</a>（）和<a href="qundostack.html#active-prop" tppabs="http://pyqt4doc.appspot.com/qundostack.html#active-prop">QUndoStack.setActive</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="addStack"></a>QUndoGroup.addStack (<i>self</i>, <a href="qundostack.html" tppabs="http://pyqt4doc.appspot.com/qundostack.html">QUndoStack</a> <i>stack</i>)</h3>
+<p>添加<i>stack</i>这一组。本集团不会采取栈的所有权。增加堆栈的一组的另一种方式是通过指定组为堆栈的父<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>在<a href="qundostack.html#QUndoStack" tppabs="http://pyqt4doc.appspot.com/qundostack.html#QUndoStack">QUndoStack.QUndoStack</a>（ ） 。在这种情况下，堆叠时的组被删除被删除，在以通常的方式<a href="index.htm#qobjects" tppabs="http://pyqt4doc.appspot.com/qtwebkit-bridge.html#qobjects">QObjects</a>。</p>
+<p><b>See also</b> <a href="qundogroup.html#removeStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#removeStack">removeStack</a>（ ）<a href="qundogroup.html#stacks" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#stacks">stacks</a>（）和<a href="qundostack.html#QUndoStack" tppabs="http://pyqt4doc.appspot.com/qundostack.html#QUndoStack">QUndoStack.QUndoStack</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="canRedo"></a>bool QUndoGroup.canRedo (<i>self</i>)</h3>
+<p>返回活动堆栈的值<a href="qundostack.html#canRedo" tppabs="http://pyqt4doc.appspot.com/qundostack.html#canRedo">QUndoStack.canRedo</a>（ ） 。</p>
+<p>如果没有堆叠的活跃，或者如果组是空的，这个函数返回False 。</p>
+<p><b>See also</b> <a href="qundogroup.html#canUndo" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#canUndo">canUndo</a>（）和<a href="qundogroup.html#setActiveStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#setActiveStack">setActiveStack</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="canUndo"></a>bool QUndoGroup.canUndo (<i>self</i>)</h3>
+<p>返回活动堆栈的值<a href="qundostack.html#canUndo" tppabs="http://pyqt4doc.appspot.com/qundostack.html#canUndo">QUndoStack.canUndo</a>（ ） 。</p>
+<p>如果没有堆叠的活跃，或者如果组是空的，这个函数返回False 。</p>
+<p><b>See also</b> <a href="qundogroup.html#canRedo" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#canRedo">canRedo</a>（）和<a href="qundogroup.html#setActiveStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#setActiveStack">setActiveStack</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="createRedoAction"></a><a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a> QUndoGroup.createRedoAction (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i>, QString <i>prefix</i> = QString())</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>创建一个重做<a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a>与父对象<i>parent</i>。</p>
+<p>触发此动作将导致调用<a href="qundostack.html#redo" tppabs="http://pyqt4doc.appspot.com/qundostack.html#redo">QUndoStack.redo</a>（）在有源堆栈。这一行动的文本将永远是命令，将在下一呼叫重做文本<a href="qundogroup.html#redo" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#redo">redo</a>（ ） ，由前缀<i>prefix</i>。如果没有可用的重做命令，如果组为空或者如果没有一个栈的活跃，这个动作将被禁用。</p>
+<p>If <i>prefix</i>为空，则默认模板“重做％ 1 ”是用来代替前缀。 Qt的4.8之前，前缀“重做”被默认使用。</p>
+<p><b>See also</b> <a href="qundogroup.html#createUndoAction" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#createUndoAction">createUndoAction</a>（ ）<a href="qundogroup.html#canRedo" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#canRedo">canRedo</a>（）和<a href="qundocommand.html#text" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#text">QUndoCommand.text</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="createUndoAction"></a><a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a> QUndoGroup.createUndoAction (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i>, QString <i>prefix</i> = QString())</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>创建一个撤消<a href="qaction.html" tppabs="http://pyqt4doc.appspot.com/qaction.html">QAction</a>与父对象<i>parent</i>。</p>
+<p>触发此动作将导致调用<a href="qundostack.html#undo" tppabs="http://pyqt4doc.appspot.com/qundostack.html#undo">QUndoStack.undo</a>（）在有源堆栈。这一行动的文本将永远是命令，将在下一呼叫撤消文本<a href="qundogroup.html#undo" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#undo">undo</a>（ ） ，由前缀<i>prefix</i>。如果没有可用的undo命令，如果组为空或者如果没有一个栈的活跃，这个动作将被禁用。</p>
+<p>If <i>prefix</i>为空，则使用默认模板，而不是前缀“还原％ 1 ” 。 Qt的4.8之前，前缀“撤消”被默认使用。</p>
+<p><b>See also</b> <a href="qundogroup.html#createRedoAction" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#createRedoAction">createRedoAction</a>（ ）<a href="qundogroup.html#canUndo" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#canUndo">canUndo</a>（）和<a href="qundocommand.html#text" tppabs="http://pyqt4doc.appspot.com/qundocommand.html#text">QUndoCommand.text</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isClean"></a>bool QUndoGroup.isClean (<i>self</i>)</h3>
+<p>返回活动堆栈的值<a href="qundostack.html#isClean" tppabs="http://pyqt4doc.appspot.com/qundostack.html#isClean">QUndoStack.isClean</a>（ ） 。</p>
+<p>如果没有堆叠的活跃，或者如果组是空的，这个函数返回True。</p>
+<p><b>See also</b> <a href="qundogroup.html#setActiveStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#setActiveStack">setActiveStack</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="redo"></a>QUndoGroup.redo (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void redo()</tt>。</p>
+<p>电话<a href="qundostack.html#redo" tppabs="http://pyqt4doc.appspot.com/qundostack.html#redo">QUndoStack.redo</a>（）在有源堆栈。</p>
+<p>如果没有堆叠的活跃，或者如果组是空的，这个函数不执行任何操作。</p>
+<p><b>See also</b> <a href="qundogroup.html#undo" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#undo">undo</a>（ ）<a href="qundogroup.html#canRedo" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#canRedo">canRedo</a>（）和<a href="qundogroup.html#setActiveStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#setActiveStack">setActiveStack</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="redoText"></a>QString QUndoGroup.redoText (<i>self</i>)</h3>
+<p>返回活动堆栈的值<a href="qundostack.html#redoText" tppabs="http://pyqt4doc.appspot.com/qundostack.html#redoText">QUndoStack.redoText</a>（ ） 。</p>
+<p>如果没有堆叠的活跃，或者如果组是空的，这个函数返回一个空字符串。</p>
+<p><b>See also</b> <a href="qundogroup.html#undoText" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#undoText">undoText</a>（）和<a href="qundogroup.html#setActiveStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#setActiveStack">setActiveStack</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="removeStack"></a>QUndoGroup.removeStack (<i>self</i>, <a href="qundostack.html" tppabs="http://pyqt4doc.appspot.com/qundostack.html">QUndoStack</a> <i>stack</i>)</h3>
+<p>移除<i>stack</i>从本组。如果堆栈是活动堆栈组中，活动堆栈变为0 。</p>
+<p><b>See also</b> <a href="qundogroup.html#addStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#addStack">addStack</a>（ ）<a href="qundogroup.html#stacks" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#stacks">stacks</a>（）和<a href="qundostack.html#dtor.QUndoStack" tppabs="http://pyqt4doc.appspot.com/qundostack.html#dtor.QUndoStack">QUndoStack.~QUndoStack</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setActiveStack"></a>QUndoGroup.setActiveStack (<i>self</i>, <a href="qundostack.html" tppabs="http://pyqt4doc.appspot.com/qundostack.html">QUndoStack</a> <i>stack</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void setActiveStack(QUndoStack *)</tt>。</p>
+<p>设置这个组的主栈<i>stack</i>。</p>
+<p>如果堆栈是不是该组的成员，这个函数不执行任何操作。</p>
+<p>代名词调用<a href="qundostack.html#active-prop" tppabs="http://pyqt4doc.appspot.com/qundostack.html#active-prop">QUndoStack.setActive</a>（ ）上<i>stack</i>。</p>
+<p>返回的行动<a href="qundogroup.html#createUndoAction" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#createUndoAction">createUndoAction</a>（）和<a href="qundogroup.html#createRedoAction" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#createRedoAction">createRedoAction</a>（）现在将表现在方法一样通过返回<i>stack</i>的<a href="qundostack.html#createUndoAction" tppabs="http://pyqt4doc.appspot.com/qundostack.html#createUndoAction">QUndoStack.createUndoAction</a>（）和<a href="qundostack.html#createRedoAction" tppabs="http://pyqt4doc.appspot.com/qundostack.html#createRedoAction">QUndoStack.createRedoAction</a>（ ） 。</p>
+<p><b>See also</b> <a href="qundostack.html#active-prop" tppabs="http://pyqt4doc.appspot.com/qundostack.html#active-prop">QUndoStack.setActive</a>（）和<a href="qundogroup.html#activeStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#activeStack">activeStack</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="stacks"></a>list-of-QUndoStack QUndoGroup.stacks (<i>self</i>)</h3>
+<p>返回该组堆叠的列表。</p>
+<p><b>See also</b> <a href="qundogroup.html#addStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#addStack">addStack</a>（）和<a href="qundogroup.html#removeStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#removeStack">removeStack</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="undo"></a>QUndoGroup.undo (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void undo()</tt>。</p>
+<p>电话<a href="qundostack.html#undo" tppabs="http://pyqt4doc.appspot.com/qundostack.html#undo">QUndoStack.undo</a>（）在有源堆栈。</p>
+<p>如果没有堆叠的活跃，或者如果组是空的，这个函数不执行任何操作。</p>
+<p><b>See also</b> <a href="qundogroup.html#redo" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#redo">redo</a>（ ）<a href="qundogroup.html#canUndo" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#canUndo">canUndo</a>（）和<a href="qundogroup.html#setActiveStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#setActiveStack">setActiveStack</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="undoText"></a>QString QUndoGroup.undoText (<i>self</i>)</h3>
+<p>返回活动堆栈的值<a href="qundostack.html#undoText" tppabs="http://pyqt4doc.appspot.com/qundostack.html#undoText">QUndoStack.undoText</a>（ ） 。</p>
+<p>如果没有堆叠的活跃，或者如果组是空的，这个函数返回一个空字符串。</p>
+<p><b>See also</b> <a href="qundogroup.html#redoText" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#redoText">redoText</a>（）和<a href="qundogroup.html#setActiveStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#setActiveStack">setActiveStack</a>（ ） 。</p>
+
+
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="activeStackChanged"></a>void activeStackChanged (QUndoStack *)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时该组的活动堆栈变化。这可能是因为<a href="qundogroup.html#setActiveStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#setActiveStack">setActiveStack</a>（）或<a href="qundostack.html#active-prop" tppabs="http://pyqt4doc.appspot.com/qundostack.html#active-prop">QUndoStack.setActive</a>（ ）被调用时，或者当活动堆栈的形式组中删除。<i>stack</i>是新的活动堆栈。如果没有堆栈处于活动状态，<i>stack</i>为0。</p>
+<p><b>See also</b> <a href="qundogroup.html#setActiveStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#setActiveStack">setActiveStack</a>（）和<a href="qundostack.html#active-prop" tppabs="http://pyqt4doc.appspot.com/qundostack.html#active-prop">QUndoStack.setActive</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="canRedoChanged"></a>void canRedoChanged (bool)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的有效堆发射<a href="qundostack.html#canRedoChanged" tppabs="http://pyqt4doc.appspot.com/qundostack.html#canRedoChanged">QUndoStack.canRedoChanged</a>（）或活动堆栈的变化。</p>
+<p><i>canRedo</i>是新的状态，则返回False活动堆栈为0 。</p>
+<p><b>See also</b> <a href="qundostack.html#canRedoChanged" tppabs="http://pyqt4doc.appspot.com/qundostack.html#canRedoChanged">QUndoStack.canRedoChanged</a>（）和<a href="qundogroup.html#setActiveStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#setActiveStack">setActiveStack</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="canUndoChanged"></a>void canUndoChanged (bool)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的有效堆发射<a href="qundostack.html#canUndoChanged" tppabs="http://pyqt4doc.appspot.com/qundostack.html#canUndoChanged">QUndoStack.canUndoChanged</a>（）或活动堆栈的变化。</p>
+<p><i>canUndo</i>是新的状态，则返回False活动堆栈为0 。</p>
+<p><b>See also</b> <a href="qundostack.html#canUndoChanged" tppabs="http://pyqt4doc.appspot.com/qundostack.html#canUndoChanged">QUndoStack.canUndoChanged</a>（）和<a href="qundogroup.html#setActiveStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#setActiveStack">setActiveStack</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="cleanChanged"></a>void cleanChanged (bool)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的有效堆发射<a href="qundostack.html#cleanChanged" tppabs="http://pyqt4doc.appspot.com/qundostack.html#cleanChanged">QUndoStack.cleanChanged</a>（）或活动堆栈的变化。</p>
+<p><i>clean</i>是新的状态，或者是当活动堆栈为0 。</p>
+<p><b>See also</b> <a href="qundostack.html#cleanChanged" tppabs="http://pyqt4doc.appspot.com/qundostack.html#cleanChanged">QUndoStack.cleanChanged</a>（）和<a href="qundogroup.html#setActiveStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#setActiveStack">setActiveStack</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="indexChanged"></a>void indexChanged (int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的有效堆发射<a href="qundostack.html#indexChanged" tppabs="http://pyqt4doc.appspot.com/qundostack.html#indexChanged">QUndoStack.indexChanged</a>（）或活动堆栈的变化。</p>
+<p><i>idx</i>为新的当前索引，或者0，如果活动堆栈为0 。</p>
+<p><b>See also</b> <a href="qundostack.html#indexChanged" tppabs="http://pyqt4doc.appspot.com/qundostack.html#indexChanged">QUndoStack.indexChanged</a>（）和<a href="qundogroup.html#setActiveStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#setActiveStack">setActiveStack</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="redoTextChanged"></a>void redoTextChanged (const QString&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的有效堆发射<a href="qundostack.html#redoTextChanged" tppabs="http://pyqt4doc.appspot.com/qundostack.html#redoTextChanged">QUndoStack.redoTextChanged</a>（）或活动堆栈的变化。</p>
+<p><i>redoText</i>是新的状态，或者一个空字符串，如果活动堆栈为0 。</p>
+<p><b>See also</b> <a href="qundostack.html#redoTextChanged" tppabs="http://pyqt4doc.appspot.com/qundostack.html#redoTextChanged">QUndoStack.redoTextChanged</a>（）和<a href="qundogroup.html#setActiveStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#setActiveStack">setActiveStack</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="undoTextChanged"></a>void undoTextChanged (const QString&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的有效堆发射<a href="qundostack.html#undoTextChanged" tppabs="http://pyqt4doc.appspot.com/qundostack.html#undoTextChanged">QUndoStack.undoTextChanged</a>（）或活动堆栈的变化。</p>
+<p><i>undoText</i>是新的状态，或者一个空字符串，如果活动堆栈为0 。</p>
+<p><b>See also</b> <a href="qundostack.html#undoTextChanged" tppabs="http://pyqt4doc.appspot.com/qundostack.html#undoTextChanged">QUndoStack.undoTextChanged</a>（）和<a href="qundogroup.html#setActiveStack" tppabs="http://pyqt4doc.appspot.com/qundogroup.html#setActiveStack">setActiveStack</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

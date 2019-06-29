@@ -1,0 +1,116 @@
+﻿<html>
+<head>
+<title>QWriteLocker Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QWriteLocker Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtcore.html">QtCore</a> module]</sup></sup>
+</h1>
+<p>该QWriteLocker类是简化了锁定和解锁读写锁进行写访问一个方便的类。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qwritelocker.html#QWriteLocker" tppabs="http://pyqt4doc.appspot.com/qwritelocker.html#QWriteLocker">__init__</a></b> (<i>self</i>, QReadWriteLock <i>areadWriteLock</i>)</li>
+<li>
+<div class="fn"></div>QReadWriteLock <b><a href="qwritelocker.html#readWriteLock" tppabs="http://pyqt4doc.appspot.com/qwritelocker.html#readWriteLock">readWriteLock</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwritelocker.html#relock" tppabs="http://pyqt4doc.appspot.com/qwritelocker.html#relock">relock</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwritelocker.html#unlock" tppabs="http://pyqt4doc.appspot.com/qwritelocker.html#unlock">unlock</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>object <b><a href="qwritelocker.html#__enter__" tppabs="http://pyqt4doc.appspot.com/qwritelocker.html#__enter__">__enter__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qwritelocker.html#__exit__" tppabs="http://pyqt4doc.appspot.com/qwritelocker.html#__exit__">__exit__</a></b> (<i>self</i>, object <i>type</i>, object <i>value</i>, object <i>traceback</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QWriteLocker类是简化了锁定和解锁读写锁进行写访问一个方便的类。</p>
+<p>QWriteLocker的目的（和<a href="qreadlocker.html" tppabs="http://pyqt4doc.appspot.com/qreadlocker.html">QReadLocker</a>是为了简化<a href="qreadwritelock.html" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html">QReadWriteLock</a>锁定和解锁。锁定和解锁语句或异常处理代码很容易出错，难以调试。 QWriteLocker可以在这样的情况下使用，以确保始终良好定义的锁的状态。</p>
+<p>下面是一个使用QWriteLocker锁定和解除锁定读写锁用于写一个例子：</p>
+<pre class="cpp">
+ <span class="type"><a href="qreadwritelock.html" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html">QReadWriteLock</a></span> lock;
+
+ <span class="type">void</span> writeData(<span class="keyword">const</span> <span class="type"><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a></span> <span class="operator">&amp;</span>data)
+ {
+     <span class="type">QWriteLocker</span> locker(<span class="operator">&amp;</span>lock);
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+ }
+</pre>
+<p>它等价于下面的代码：</p>
+<pre class="cpp">
+ <span class="type"><a href="qreadwritelock.html" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html">QReadWriteLock</a></span> lock;
+
+ <span class="type">void</span> writeData(<span class="keyword">const</span> <span class="type"><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a></span> <span class="operator">&amp;</span>data)
+ {
+     lock<span class="operator">.</span>lockForWrite();
+     <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+     lock<span class="operator">.</span>unlock();
+ }
+</pre>
+<p>该<a href="qmutexlocker.html" tppabs="http://pyqt4doc.appspot.com/qmutexlocker.html">QMutexLocker</a>文档显示的例子里使用的储物柜对象大大简化了编程。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QWriteLocker"></a>QWriteLocker.__init__ (<i>self</i>, <a href="qreadwritelock.html" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html">QReadWriteLock</a> <i>areadWriteLock</i>)</h3>
+<p>构造一个<a href="qwritelocker.html" tppabs="http://pyqt4doc.appspot.com/qwritelocker.html">QWriteLocker</a>和锁<i>lock</i>写作。锁定将被解除时，<a href="qwritelocker.html" tppabs="http://pyqt4doc.appspot.com/qwritelocker.html">QWriteLocker</a>被破坏。如果<tt>lock</tt>是零，<a href="qwritelocker.html" tppabs="http://pyqt4doc.appspot.com/qwritelocker.html">QWriteLocker</a>什么都不做。</p>
+<p><b>See also</b> <a href="qreadwritelock.html#lockForWrite" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#lockForWrite">QReadWriteLock.lockForWrite</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="readWriteLock"></a><a href="qreadwritelock.html" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html">QReadWriteLock</a> QWriteLocker.readWriteLock (<i>self</i>)</h3>
+<p>返回一个指针被传递给构造函数的读写锁。</p>
+
+
+<h3 class="fn">
+<a name="relock"></a>QWriteLocker.relock (<i>self</i>)</h3>
+<p>重新锁定未锁定的锁定。</p>
+<p><b>See also</b> <a href="qwritelocker.html#unlock" tppabs="http://pyqt4doc.appspot.com/qwritelocker.html#unlock">unlock</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="unlock"></a>QWriteLocker.unlock (<i>self</i>)</h3>
+<p>解锁与此相关的更衣柜锁。</p>
+<p><b>See also</b> <a href="qreadwritelock.html#unlock" tppabs="http://pyqt4doc.appspot.com/qreadwritelock.html#unlock">QReadWriteLock.unlock</a>（ ） 。</p>
+<h3 class="fn">
+<a name="__enter__"></a>object QWriteLocker.__enter__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="__exit__"></a>QWriteLocker.__exit__ (<i>self</i>, object <i>type</i>, object <i>value</i>, object <i>traceback</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

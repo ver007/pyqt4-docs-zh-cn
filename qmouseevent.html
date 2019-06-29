@@ -1,0 +1,164 @@
+﻿<html>
+<head>
+<title>QMouseEvent Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QMouseEvent Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QMouseEvent类包含描述一个鼠标事件参数。<a href="#details">More...</a></p>
+
+<p>继承<a href="qinputevent.html" tppabs="http://pyqt4doc.appspot.com/qinputevent.html">QInputEvent</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qmouseevent.html#QMouseEvent" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#QMouseEvent">__init__</a></b> (<i>self</i>, QEvent.Type <i>type</i>, QPoint <i>pos</i>, Qt.MouseButton <i>button</i>, Qt.MouseButtons <i>buttons</i>, Qt.KeyboardModifiers <i>modifiers</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmouseevent.html#QMouseEvent-2" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#QMouseEvent-2">__init__</a></b> (<i>self</i>, QEvent.Type <i>type</i>, QPoint <i>pos</i>, QPoint <i>globalPos</i>, Qt.MouseButton <i>button</i>, Qt.MouseButtons <i>buttons</i>, Qt.KeyboardModifiers <i>modifiers</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qmouseevent.html#QMouseEvent-3" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#QMouseEvent-3">__init__</a></b> (<i>self</i>, QMouseEvent)</li>
+<li>
+<div class="fn"></div>Qt.MouseButton <b><a href="qmouseevent.html#button" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#button">button</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Qt.MouseButtons <b><a href="qmouseevent.html#buttons" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#buttons">buttons</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QPoint <b><a href="qmouseevent.html#globalPos" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#globalPos">globalPos</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qmouseevent.html#globalX" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#globalX">globalX</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qmouseevent.html#globalY" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#globalY">globalY</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qmouseevent.html#hasExtendedInfo" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#hasExtendedInfo">hasExtendedInfo</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QPoint <b><a href="qmouseevent.html#pos" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#pos">pos</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QPointF <b><a href="qmouseevent.html#posF" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#posF">posF</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qmouseevent.html#x" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#x">x</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qmouseevent.html#y" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#y">y</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QMouseEvent类包含描述一个鼠标事件参数。</p>
+<p>被按下时，一个鼠标按钮或窗口小部件内释放，或当鼠标光标移动的鼠标事件发生。</p>
+<p>只有当鼠标按钮被按下时，除非鼠标跟踪已启用将发生的鼠标移动事件<a href="qwidget.html#mouseTracking-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#mouseTracking-prop">QWidget.setMouseTracking</a>（ ） 。</p>
+<p>Qt的自动获取当鼠标按钮被一个widget里面按下鼠标，小工具将继续接收鼠标事件，直到最后释放鼠标按钮。</p>
+<p>鼠标事件包含一个特殊的接受标志，指示接收者是否愿意事件。你应该调用<a href="qevent.html#ignore" tppabs="http://pyqt4doc.appspot.com/qevent.html#ignore">ignore</a>（ ）如果鼠标事件不是由您的Widget处理。鼠标事件被传播到父控件链，直到一个小部件接受它<a href="qevent.html#accept" tppabs="http://pyqt4doc.appspot.com/qevent.html#accept">accept</a>（ ） ，或者一个事件过滤器会消耗它。</p>
+<p><b>Note:</b>如果鼠标事件被传播到<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">widget</a>对于这<a href="qt.html#WidgetAttribute-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#WidgetAttribute-enum">Qt.WA_NoMousePropagation</a>已定，即鼠标事件将不会被进一步传播到父控件链。</p>
+<p>键盘修饰键的状态，可以通过调用被发现<a href="qinputevent.html#modifiers" tppabs="http://pyqt4doc.appspot.com/qinputevent.html#modifiers">modifiers()</a>功能，从继承<a href="qinputevent.html" tppabs="http://pyqt4doc.appspot.com/qinputevent.html">QInputEvent</a>。</p>
+<p>该功能<a href="qmouseevent.html#pos" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#pos">pos</a>（ ）<a href="qmouseevent.html#x" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#x">x</a>（）和<a href="qmouseevent.html#y" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#y">y</a>相对的（ ）给光标所在位置到该接收鼠标事件的小部件。如果移动部件作为鼠标事件的结果，请使用返回的全球地位<a href="qmouseevent.html#globalPos" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#globalPos">globalPos</a>（ ）避免震动运动。</p>
+<p>该<a href="qwidget.html#enabled-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#enabled-prop">QWidget.setEnabled</a>（）函数可以被用来使能或禁止鼠标和键盘事件为一个部件。</p>
+<p>重新实现<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>事件处理程序，<a href="qwidget.html#mousePressEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#mousePressEvent">QWidget.mousePressEvent</a>（ ）<a href="qwidget.html#mouseReleaseEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#mouseReleaseEvent">QWidget.mouseReleaseEvent</a>（ ）<a href="qwidget.html#mouseDoubleClickEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#mouseDoubleClickEvent">QWidget.mouseDoubleClickEvent</a>（）和<a href="qwidget.html#mouseMoveEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#mouseMoveEvent">QWidget.mouseMoveEvent</a>（）来接收自己的小部件的鼠标事件。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QMouseEvent"></a>QMouseEvent.__init__ (<i>self</i>, <a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.Type</a> <i>type</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>pos</i>, <a href="qt.html#MouseButton-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#MouseButton-enum">Qt.MouseButton</a> <i>button</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-mousebuttons.html">Qt.MouseButtons</a> <i>buttons</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-keyboardmodifiers.html">Qt.KeyboardModifiers</a> <i>modifiers</i>)</h3>
+<p>构造一个鼠标事件的对象。</p>
+<p>该<i>type</i>参数必须是一个<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.MouseButtonPress</a>，<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.MouseButtonRelease</a>，<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.MouseButtonDblClick</a>或<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.MouseMove</a>。</p>
+<p>该<i>position</i>是鼠标光标的位置相对于接收部件。该<i>button</i>导致事件被给定为从一个值<a href="qt.html#MouseButton-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#MouseButton-enum">Qt.MouseButton</a>枚举。如果该事件<i>type</i> is <a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">MouseMove</a>，对于此事件的相应按钮<a href="qt.html#MouseButton-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#MouseButton-enum">Qt.NoButton</a>。鼠标和键盘状态在事件发生时被指定<i>buttons</i>和<i>modifiers</i>。</p>
+<p>该<a href="qmouseevent.html#globalPos" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#globalPos">globalPos</a>（）被初始化为<a href="qcursor.html#pos" tppabs="http://pyqt4doc.appspot.com/qcursor.html#pos">QCursor.pos</a>（），这可能不适合。使用其他构造函数来显式地指定的国际地位。</p>
+
+
+<h3 class="fn">
+<a name="QMouseEvent-2"></a>QMouseEvent.__init__ (<i>self</i>, <a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.Type</a> <i>type</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>pos</i>, <a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> <i>globalPos</i>, <a href="qt.html#MouseButton-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#MouseButton-enum">Qt.MouseButton</a> <i>button</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-mousebuttons.html">Qt.MouseButtons</a> <i>buttons</i>, <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-keyboardmodifiers.html">Qt.KeyboardModifiers</a> <i>modifiers</i>)</h3>
+<p>构造一个鼠标事件的对象。</p>
+<p>该<i>type</i>参数必须是<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.MouseButtonPress</a>，<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.MouseButtonRelease</a>，<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.MouseButtonDblClick</a>或<a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">QEvent.MouseMove</a>。</p>
+<p>该<i>pos</i>是鼠标光标的位置相对于接收部件。在全局坐标光标的位置由指定的<i>globalPos</i>。该<i>button</i>导致事件被给定为从一个值<a href="qt.html#MouseButton-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#MouseButton-enum">Qt.MouseButton</a>枚举。如果该事件<i>type</i> is <a href="qevent.html#Type-enum" tppabs="http://pyqt4doc.appspot.com/qevent.html#Type-enum">MouseMove</a>，对于此事件的相应按钮<a href="qt.html#MouseButton-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#MouseButton-enum">Qt.NoButton</a>。<i>buttons</i>是在事件发生时所有按键的状态，<i>modifiers</i>所有键盘功能键的状态。</p>
+
+
+<h3 class="fn">
+<a name="QMouseEvent-3"></a>QMouseEvent.__init__ (<i>self</i>, <a href="qmouseevent.html" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html">QMouseEvent</a>)</h3>
+<h3 class="fn">
+<a name="button"></a><a href="qt.html#MouseButton-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#MouseButton-enum">Qt.MouseButton</a> QMouseEvent.button (<i>self</i>)</h3>
+<p>返回引发事件的按钮。</p>
+<p>注意，返回的值总是<a href="qt.html#MouseButton-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#MouseButton-enum">Qt.NoButton</a>对于鼠标移动事件。</p>
+<p><b>See also</b> <a href="qmouseevent.html#buttons" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#buttons">buttons</a>（）和<a href="qt.html#MouseButton-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#MouseButton-enum">Qt.MouseButton</a>。</p>
+
+
+<h3 class="fn">
+<a name="buttons"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-mousebuttons.html">Qt.MouseButtons</a> QMouseEvent.buttons (<i>self</i>)</h3>
+<p>返回生成事件时，该按钮的状态。按钮状态是组合<a href="qt.html#MouseButton-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#MouseButton-enum">Qt.LeftButton</a>，<a href="qt.html#MouseButton-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#MouseButton-enum">Qt.RightButton</a>，<a href="qt.html#MouseButton-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#MouseButton-enum">Qt.MidButton</a>使用OR运算符。对于鼠标移动事件，这是按下所有按钮。对于鼠标按下，然后双击事件，这包括引发事件的按钮。对于鼠标释放事件这不包括引发事件的按钮。</p>
+<p><b>See also</b> <a href="qmouseevent.html#button" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#button">button</a>（）和<a href="qt.html#MouseButton-enum" tppabs="http://pyqt4doc.appspot.com/qt.html#MouseButton-enum">Qt.MouseButton</a>。</p>
+
+
+<h3 class="fn">
+<a name="globalPos"></a><a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> QMouseEvent.globalPos (<i>self</i>)</h3>
+<p>返回鼠标光标的全球地位<i>at the time
+of the event</i>。这是很重要的异步窗口系统，例如X11 。每当你在响应鼠标事件四处移动你的部件， globalPos （ ）可以从当前指针位置不同，很多<a href="qcursor.html#pos" tppabs="http://pyqt4doc.appspot.com/qcursor.html#pos">QCursor.pos</a>（ ），并从QWidget.mapToGlobal （<a href="qmouseevent.html#pos" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#pos">pos</a>（））。</p>
+<p><b>See also</b> <a href="qmouseevent.html#globalX" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#globalX">globalX</a>（）和<a href="qmouseevent.html#globalY" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#globalY">globalY</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="globalX"></a>int QMouseEvent.globalX (<i>self</i>)</h3>
+<p>返回在事件发生时鼠标光标的全局x位置。</p>
+<p><b>See also</b> <a href="qmouseevent.html#globalY" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#globalY">globalY</a>（）和<a href="qmouseevent.html#globalPos" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#globalPos">globalPos</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="globalY"></a>int QMouseEvent.globalY (<i>self</i>)</h3>
+<p>返回在事件发生时鼠标光标的全球y位置。</p>
+<p><b>See also</b> <a href="qmouseevent.html#globalX" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#globalX">globalX</a>（）和<a href="qmouseevent.html#globalPos" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#globalPos">globalPos</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasExtendedInfo"></a>bool QMouseEvent.hasExtendedInfo (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="pos"></a><a href="qpoint.html" tppabs="http://pyqt4doc.appspot.com/qpoint.html">QPoint</a> QMouseEvent.pos (<i>self</i>)</h3>
+<p>返回鼠标光标的位置，相对于接收到的事件的插件。</p>
+<p>如果移动部件作为鼠标事件的结果，请使用返回的全球地位<a href="qmouseevent.html#globalPos" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#globalPos">globalPos</a>（ ）避免震动运动。</p>
+<p><b>See also</b> <a href="qmouseevent.html#x" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#x">x</a>（ ）<a href="qmouseevent.html#y" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#y">y</a>（）和<a href="qmouseevent.html#globalPos" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#globalPos">globalPos</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="posF"></a><a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a> QMouseEvent.posF (<i>self</i>)</h3>
+<p>返回的鼠标光标的位置<a href="qpointf.html" tppabs="http://pyqt4doc.appspot.com/qpointf.html">QPointF</a>，相对于接收到的事件的插件。</p>
+<p>如果移动部件作为鼠标事件的结果，请使用返回的全球地位<a href="qmouseevent.html#globalPos" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#globalPos">globalPos</a>（ ）避免震动运动。</p>
+<p>此功能被引入Qt的4.4 。</p>
+<p><b>See also</b> <a href="qmouseevent.html#x" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#x">x</a>（ ）<a href="qmouseevent.html#y" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#y">y</a>（ ）<a href="qmouseevent.html#pos" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#pos">pos</a>（）和<a href="qmouseevent.html#globalPos" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#globalPos">globalPos</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="x"></a>int QMouseEvent.x (<i>self</i>)</h3>
+<p>返回鼠标光标的x位置，相对于接收到的事件的插件。</p>
+<p><b>See also</b> <a href="qmouseevent.html#y" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#y">y</a>（）和<a href="qmouseevent.html#pos" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#pos">pos</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="y"></a>int QMouseEvent.y (<i>self</i>)</h3>
+<p>返回鼠标光标的y位置，相对于接收事件的窗口小部件。</p>
+<p><b>See also</b> <a href="qmouseevent.html#x" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#x">x</a>（）和<a href="qmouseevent.html#pos" tppabs="http://pyqt4doc.appspot.com/qmouseevent.html#pos">pos</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

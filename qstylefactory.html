@@ -1,0 +1,80 @@
+﻿<html>
+<head>
+<title>QStyleFactory Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QStyleFactory Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QStyleFactory类创建<a href="qstyle.html" tppabs="http://pyqt4doc.appspot.com/qstyle.html">QStyle</a>对象。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qstylefactory.html#QStyleFactory" tppabs="http://pyqt4doc.appspot.com/qstylefactory.html#QStyleFactory">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstylefactory.html#QStyleFactory-2" tppabs="http://pyqt4doc.appspot.com/qstylefactory.html#QStyleFactory-2">__init__</a></b> (<i>self</i>, QStyleFactory)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>QStyle <b><a href="qstylefactory.html#create" tppabs="http://pyqt4doc.appspot.com/qstylefactory.html#create">create</a></b> (QString)</li>
+<li>
+<div class="fn"></div>QStringList <b><a href="qstylefactory.html#keys" tppabs="http://pyqt4doc.appspot.com/qstylefactory.html#keys">keys</a></b> ()</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QStyleFactory类创建<a href="qstyle.html" tppabs="http://pyqt4doc.appspot.com/qstyle.html">QStyle</a>对象。</p>
+<p>该<a href="qstyle.html" tppabs="http://pyqt4doc.appspot.com/qstyle.html">QStyle</a>类是封装了图形用户界面的外观和感觉的抽象基类。 QStyleFactory创建一个<a href="qstyle.html" tppabs="http://pyqt4doc.appspot.com/qstyle.html">QStyle</a>使用对象<a href="qstylefactory.html#create" tppabs="http://pyqt4doc.appspot.com/qstylefactory.html#create">create</a>（）函数和密钥识别的样式。该样式是内置的或动态的样式插件加载（见<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qstyleplugin.html">QStylePlugin</a>） 。</p>
+<p>有效密钥可使用检索到的<a href="qstylefactory.html#keys" tppabs="http://pyqt4doc.appspot.com/qstylefactory.html#keys">keys</a>（）函数。通常情况下，他们包括“窗口” ， “主题” ， “ CDE ” ， “ PLASTIQUE ”和“ cleanlooks ” 。根据不同的平台上， “ windowsxp系统” ， “WindowsVista兼容”和“麦金塔”可能是可用的。请注意，键是区分大小写的。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QStyleFactory"></a>QStyleFactory.__init__ (<i>self</i>)</h3>
+<h3 class="fn">
+<a name="QStyleFactory-2"></a>QStyleFactory.__init__ (<i>self</i>, <a href="qstylefactory.html" tppabs="http://pyqt4doc.appspot.com/qstylefactory.html">QStyleFactory</a>)</h3>
+<h3 class="fn">
+<a name="create"></a><a href="qstyle.html" tppabs="http://pyqt4doc.appspot.com/qstyle.html">QStyle</a> QStyleFactory.create (QString)</h3>
+<p>创建并返回一个<a href="qstyle.html" tppabs="http://pyqt4doc.appspot.com/qstyle.html">QStyle</a>匹配给定对象<i>key</i>，或返回0 ，如果没有匹配的风格被发现。</p>
+<p>两个内置样式和款式风格的插件中查询匹配的风格。</p>
+<p><b>Note:</b>使用的密钥不区分大小写。</p>
+<p><b>See also</b> <a href="qstylefactory.html#keys" tppabs="http://pyqt4doc.appspot.com/qstylefactory.html#keys">keys</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="keys"></a>QStringList QStyleFactory.keys ()</h3>
+<p>返回有效的密钥列表，即键这个工厂可以创建样式。</p>
+<p><b>See also</b> <a href="qstylefactory.html#create" tppabs="http://pyqt4doc.appspot.com/qstylefactory.html#create">create</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

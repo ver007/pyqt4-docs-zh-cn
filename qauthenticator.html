@@ -1,0 +1,200 @@
+﻿<html>
+<head>
+<title>QAuthenticator Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QAuthenticator Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtnetwork.html">QtNetwork</a> module]</sup></sup>
+</h1>
+<p>该QAuthenticator类提供了一个验证对象。<a href="#details">More...</a></p>
+
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qauthenticator.html#QAuthenticator" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#QAuthenticator">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qauthenticator.html#QAuthenticator-2" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#QAuthenticator-2">__init__</a></b> (<i>self</i>, QAuthenticator <i>other</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qauthenticator.html#isNull" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#isNull">isNull</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QVariant <b><a href="qauthenticator.html#option" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#option">option</a></b> (<i>self</i>, QString <i>opt</i>)</li>
+<li>
+<div class="fn"></div>dict-of-QString-QVariant <b><a href="qauthenticator.html#options" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#options">options</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qauthenticator.html#password" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#password">password</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qauthenticator.html#realm" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#realm">realm</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qauthenticator.html#setOption" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#setOption">setOption</a></b> (<i>self</i>, QString <i>opt</i>, QVariant <i>value</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qauthenticator.html#setPassword" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#setPassword">setPassword</a></b> (<i>self</i>, QString <i>password</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qauthenticator.html#setUser" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#setUser">setUser</a></b> (<i>self</i>, QString <i>user</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qauthenticator.html#user" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#user">user</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Special Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>bool <b><a href="qauthenticator.html#__eq__" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#__eq__">__eq__</a></b> (<i>self</i>, QAuthenticator <i>other</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qauthenticator.html#__ne__" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#__ne__">__ne__</a></b> (<i>self</i>, QAuthenticator <i>other</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QAuthenticator类提供了一个验证对象。</p>
+<p>该QAuthenticator类通常是在使用<a href="qnetworkaccessmanager.html#authenticationRequired" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#authenticationRequired">authenticationRequired()</a>和<a href="qnetworkaccessmanager.html#proxyAuthenticationRequired" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html#proxyAuthenticationRequired">proxyAuthenticationRequired()</a>信号<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>和<a href="qabstractsocket.html" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html">QAbstractSocket</a>。这个类提供了一种访问需要身份验证的服务时所需的认证信息传递回插座。</p>
+<p>QAuthenticator支持以下身份验证方法：</p>
+<ul>
+<li>Basic</li>
+<li>NTLM version 2</li>
+<li>Digest-MD5</li>
+</ul>
+<a id="options" name="options"></a>
+<h3>Options</h3>
+<p>除了身份验证所需的用户名和密码，一个QAuthenticator对象也可以包含额外的选项。该<a href="qauthenticator.html#options" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#options">options</a>（ ）函数可用于查询服务器发送传入的选项，而<a href="qauthenticator.html#setOption" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#setOption">setOption</a>（）函数可以被用来指定设备发送的选择，要由验证器计算处理。接受和提供的选项取决于身份验证类型（见（）方法） 。</p>
+<p>下表列出了已知传入的选项，以及接受离任选项。进入选项列表并不详尽，因为服务器可以在任何时候有更多的信息。即将离任的选项列表是详尽的，但是，没有未知的选项将被视为或发送回服务器。</p>
+<a id="basic" name="basic"></a>
+<h4>Basic</h4>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Option</th>
+<th>Direction</th>
+<th>Description</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td><tt>realm</tt></td>
+<td>Incoming</td>
+<td>Contains the realm of the authentication, the same as <a href="qauthenticator.html#realm" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#realm">realm</a>()</td>
+</tr>
+</table>
+<p>基本验证机制支持没有传出选项。</p>
+<a id="ntlm-version-2" name="ntlm-version-2"></a>
+<h4>NTLM version 2</h4>
+<p>NTLM身份验证机制目前不支持传入或传出的选项。</p>
+<a id="digest-md5" name="digest-md5"></a>
+<h4>Digest-MD5</h4>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Option</th>
+<th>Direction</th>
+<th>Description</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td><tt>realm</tt></td>
+<td>Incoming</td>
+<td>Contains the realm of the authentication, the same as <a href="qauthenticator.html#realm" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#realm">realm</a>()</td>
+</tr>
+</table>
+<p>在DIGEST- MD5认证机制支持没有传出选项。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QAuthenticator"></a>QAuthenticator.__init__ (<i>self</i>)</h3>
+<p>构造一个空认证对象</p>
+
+
+<h3 class="fn">
+<a name="QAuthenticator-2"></a>QAuthenticator.__init__ (<i>self</i>, <a href="qauthenticator.html" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html">QAuthenticator</a> <i>other</i>)</h3>
+<p>构造的副本<i>other</i>。</p>
+
+
+<h3 class="fn">
+<a name="isNull"></a>bool QAuthenticator.isNull (<i>self</i>)</h3>
+<p>返回True如果认证为null 。</p>
+
+
+<h3 class="fn">
+<a name="option"></a>QVariant QAuthenticator.option (<i>self</i>, QString <i>opt</i>)</h3>
+<p>返回相关选项的值<i>opt</i>如果它是由服务器设置。看<a href="qauthenticator.html#options" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#options">QAuthenticator#Options</a>对于传入选项的更多信息。如果选项<i>opt</i>没有找到，无效<a href="qvariant.html" tppabs="http://pyqt4doc.appspot.com/qvariant.html">QVariant</a>将被退回。</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qauthenticator.html#setOption" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#setOption">setOption</a>（ ）<a href="qauthenticator.html#options" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#options">options</a>（）和<a href="qauthenticator.html#options" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#options">QAuthenticator#Options</a>。</p>
+
+
+<h3 class="fn">
+<a name="options"></a>dict-of-QString-QVariant QAuthenticator.options (<i>self</i>)</h3>
+<p>返回此设置所有传入的选项<a href="qauthenticator.html" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html">QAuthenticator</a>通过解析服务器应答对象。看<a href="qauthenticator.html#options" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#options">QAuthenticator#Options</a>对于传入选项的更多信息。</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qauthenticator.html#option" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#option">option</a>（）和<a href="qauthenticator.html#options" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#options">QAuthenticator#Options</a>。</p>
+
+
+<h3 class="fn">
+<a name="password"></a>QString QAuthenticator.password (<i>self</i>)</h3>
+<p>返回用于身份验证的密码。</p>
+<p><b>See also</b> <a href="qauthenticator.html#setPassword" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#setPassword">setPassword</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="realm"></a>QString QAuthenticator.realm (<i>self</i>)</h3>
+<p>返回需要验证的领域。</p>
+
+
+<h3 class="fn">
+<a name="setOption"></a>QAuthenticator.setOption (<i>self</i>, QString <i>opt</i>, QVariant <i>value</i>)</h3>
+<p>设置传出选项<i>opt</i>以价值<i>value</i>。看<a href="qauthenticator.html#options" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#options">QAuthenticator#Options</a>对于传出选项的更多信息。</p>
+<p>此功能被引入Qt的4.7 。</p>
+<p><b>See also</b> <a href="qauthenticator.html#options" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#options">options</a>（ ）<a href="qauthenticator.html#option" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#option">option</a>（）和<a href="qauthenticator.html#options" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#options">QAuthenticator#Options</a>。</p>
+
+
+<h3 class="fn">
+<a name="setPassword"></a>QAuthenticator.setPassword (<i>self</i>, QString <i>password</i>)</h3>
+<p>设置<i>password</i>用于身份验证。</p>
+<p><b>See also</b> <a href="qauthenticator.html#password" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#password">password</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setUser"></a>QAuthenticator.setUser (<i>self</i>, QString <i>user</i>)</h3>
+<p>设置<i>user</i>用于身份验证。</p>
+<p><b>See also</b> <a href="qauthenticator.html#user" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#user">user</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="user"></a>QString QAuthenticator.user (<i>self</i>)</h3>
+<p>返回用于身份验证的用户。</p>
+<p><b>See also</b> <a href="qauthenticator.html#setUser" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html#setUser">setUser</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="__eq__"></a>bool QAuthenticator.__eq__ (<i>self</i>, <a href="qauthenticator.html" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html">QAuthenticator</a> <i>other</i>)</h3>
+<h3 class="fn">
+<a name="__ne__"></a>bool QAuthenticator.__ne__ (<i>self</i>, <a href="qauthenticator.html" tppabs="http://pyqt4doc.appspot.com/qauthenticator.html">QAuthenticator</a> <i>other</i>)</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

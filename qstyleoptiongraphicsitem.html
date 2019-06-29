@@ -1,0 +1,146 @@
+﻿<html>
+<head>
+<title>QStyleOptionGraphicsItem Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QStyleOptionGraphicsItem Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QStyleOptionGraphicsItem类是用来描述绘制所需要的参数<a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a>。<a href="#details">More...</a></p>
+
+<p>继承<a href="qstyleoption.html" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html">QStyleOption</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qstyleoptiongraphicsitem.html#StyleOptionType-enum" tppabs="http://pyqt4doc.appspot.com/qstyleoptiongraphicsitem.html#StyleOptionType-enum">StyleOptionType</a></b> { Type }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qstyleoptiongraphicsitem.html#StyleOptionVersion-enum" tppabs="http://pyqt4doc.appspot.com/qstyleoptiongraphicsitem.html#StyleOptionVersion-enum">StyleOptionVersion</a></b> { Version }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qstyleoptiongraphicsitem.html#QStyleOptionGraphicsItem" tppabs="http://pyqt4doc.appspot.com/qstyleoptiongraphicsitem.html#QStyleOptionGraphicsItem">__init__</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qstyleoptiongraphicsitem.html#QStyleOptionGraphicsItem-2" tppabs="http://pyqt4doc.appspot.com/qstyleoptiongraphicsitem.html#QStyleOptionGraphicsItem-2">__init__</a></b> (<i>self</i>, QStyleOptionGraphicsItem <i>other</i>)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul><li>
+<div class="fn"></div>float <b><a href="qstyleoptiongraphicsitem.html#levelOfDetailFromTransform" tppabs="http://pyqt4doc.appspot.com/qstyleoptiongraphicsitem.html#levelOfDetailFromTransform">levelOfDetailFromTransform</a></b> (QTransform <i>worldTransform</i>)</li></ul>
+<h3>Members</h3>
+<ul>
+<li>
+<div class="fn"></div>QRectF <b><a href="qstyleoptiongraphicsitem.html#exposedRect-var" tppabs="http://pyqt4doc.appspot.com/qstyleoptiongraphicsitem.html#exposedRect-var">exposedRect</a></b>
+</li>
+<li>
+<div class="fn"></div>float <b><a href="qstyleoptiongraphicsitem.html#levelOfDetail-var" tppabs="http://pyqt4doc.appspot.com/qstyleoptiongraphicsitem.html#levelOfDetail-var">levelOfDetail</a></b>
+</li>
+<li>
+<div class="fn"></div>QMatrix <b><a href="qstyleoptiongraphicsitem.html#matrix-var" tppabs="http://pyqt4doc.appspot.com/qstyleoptiongraphicsitem.html#matrix-var">matrix</a></b>
+</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QStyleOptionGraphicsItem类是用来描述绘制所需要的参数<a href="qgraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html">QGraphicsItem</a>。</p>
+<p>出于性能方面的原因，访问成员变量是直接的（即使用<tt>.</tt> or <tt>-&gt;</tt>操作符）。这种低层次的感觉，使结构简单的使用，并强调这些都是简单的参数。</p>
+<p>举一个例子展示风格选择如何使用，请参阅<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/widgets-styles.html">Styles</a>例子。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="StyleOptionType-enum"></a>QStyleOptionGraphicsItem.StyleOptionType</h3>
+<p>此枚举是用来保存有关样式选项的类型信息，并定义每个<a href="qstyleoption.html" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html">QStyleOption</a>子类。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QStyleOptionGraphicsItem.Type</tt></td>
+<td class="topAlign"><tt>SO_GraphicsItem</tt></td>
+<td class="topAlign">风格选择该类型提供（<a href="qstyleoption.html#OptionType-enum" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html#OptionType-enum">SO_GraphicsItem</a>这个类） 。</td>
+</tr>
+</table>
+<p>该类型在内部使用<a href="qstyleoption.html" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html">QStyleOption</a>，它的子类，并<a href="qstyleoption.html#qstyleoption_cast" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html#qstyleoption_cast">qstyleoption_cast</a>（）来确定的样式选项的类型。一般来说，你不需要担心这个，除非你想创建自己的<a href="qstyleoption.html" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html">QStyleOption</a>子类和你自己的风格。</p>
+<p><b>See also</b> <a href="qstyleoptiongraphicsitem.html#StyleOptionVersion-enum" tppabs="http://pyqt4doc.appspot.com/qstyleoptiongraphicsitem.html#StyleOptionVersion-enum">StyleOptionVersion</a>。</p>
+
+
+<h3 class="fn">
+<a name="StyleOptionVersion-enum"></a>QStyleOptionGraphicsItem.StyleOptionVersion</h3>
+<p>此枚举是用来保存有关样式选项的版本信息，并定义每个<a href="qstyleoption.html" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html">QStyleOption</a>子类。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign">
+<tt>QStyleOptionGraphicsItem.Version</tt>
+</td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">1</td>
+</tr>
+</table>
+<p>的版本是由<a href="qstyleoption.html" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html">QStyleOption</a>子类实现不破坏兼容性扩展。如果你使用<a href="qstyleoption.html#qstyleoption_cast" tppabs="http://pyqt4doc.appspot.com/qstyleoption.html#qstyleoption_cast">qstyleoption_cast</a>（ ） ，你通常并不需要检查它。</p>
+<p><b>See also</b> <a href="qstyleoptiongraphicsitem.html#StyleOptionType-enum" tppabs="http://pyqt4doc.appspot.com/qstyleoptiongraphicsitem.html#StyleOptionType-enum">StyleOptionType</a>。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QStyleOptionGraphicsItem"></a>QStyleOptionGraphicsItem.__init__ (<i>self</i>)</h3>
+<p>构造一个<a href="qstyleoptiongraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qstyleoptiongraphicsitem.html">QStyleOptionGraphicsItem</a>。</p>
+
+
+<h3 class="fn">
+<a name="QStyleOptionGraphicsItem-2"></a>QStyleOptionGraphicsItem.__init__ (<i>self</i>, <a href="qstyleoptiongraphicsitem.html" tppabs="http://pyqt4doc.appspot.com/qstyleoptiongraphicsitem.html">QStyleOptionGraphicsItem</a> <i>other</i>)</h3>
+<p>构造的副本<i>other</i>。</p>
+
+
+<h3 class="fn">
+<a name="levelOfDetailFromTransform"></a>float QStyleOptionGraphicsItem.levelOfDetailFromTransform (<a href="qtransform.html" tppabs="http://pyqt4doc.appspot.com/qtransform.html">QTransform</a> <i>worldTransform</i>)</h3>
+<p>返回细节从水平<i>worldTransform</i>。</p>
+<p>它的值代表一个统一的矩形的高度和宽度的最大值，映射的使用<i>worldTransform</i>用于绘制该项目的画家。默认情况下，如果没有转换被应用，其值为1 。如果缩小1:2，详细程度将是0.5 ，而且如果放大​​2:1，它的值是2。</p>
+<p>此功能被引入Qt的4.6 。</p>
+<hr>
+<h2>Member Documentation</h2>
+<h3 class="fn">
+<a name="exposedRect-var"></a><a href="qrectf.html" tppabs="http://pyqt4doc.appspot.com/qrectf.html">QRectF</a> exposedRect</h3>
+<p>这个变量保存外露的矩形，在项目坐标。</p>
+<p>利用这个矩形，加快项目图纸时，该项目只有部分被暴露。如果整个产品被暴露，这个长方形将是一样<a href="qgraphicsitem.html#boundingRect" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#boundingRect">QGraphicsItem.boundingRect</a>（ ） 。</p>
+<p>该成员仅适用于具有项目初始化<a href="qgraphicsitem.html#GraphicsItemFlag-enum" tppabs="http://pyqt4doc.appspot.com/qgraphicsitem.html#GraphicsItemFlag-enum">QGraphicsItem.ItemUsesExtendedStyleOption</a>标志设置。</p>
+<h3 class="fn">
+<a name="levelOfDetail-var"></a>float levelOfDetail</h3>
+<h3 class="fn">
+<a name="matrix-var"></a><a href="qmatrix.html" tppabs="http://pyqt4doc.appspot.com/qmatrix.html">QMatrix</a> matrix</h3>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

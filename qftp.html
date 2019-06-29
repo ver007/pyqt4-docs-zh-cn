@@ -1,0 +1,714 @@
+﻿<html>
+<head>
+<title>QFtp Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QFtp Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtnetwork.html">QtNetwork</a> module]</sup></sup>
+</h1>
+<p>该QFtp类提供FTP协议的客户端的实现。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Types</h3>
+<ul>
+<li>
+<div class="fn"></div>enum <b><a href="qftp.html#Command-enum" tppabs="http://pyqt4doc.appspot.com/qftp.html#Command-enum">Command</a></b> { None_, SetTransferMode, SetProxy, ConnectToHost, ..., RawCommand }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qftp.html#Error-enum" tppabs="http://pyqt4doc.appspot.com/qftp.html#Error-enum">Error</a></b> { NoError, UnknownError, HostNotFound, ConnectionRefused, NotConnected }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qftp.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qftp.html#State-enum">State</a></b> { Unconnected, HostLookup, Connecting, Connected, LoggedIn, Closing }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qftp.html#TransferMode-enum" tppabs="http://pyqt4doc.appspot.com/qftp.html#TransferMode-enum">TransferMode</a></b> { Active, Passive }</li>
+<li>
+<div class="fn"></div>enum <b><a href="qftp.html#TransferType-enum" tppabs="http://pyqt4doc.appspot.com/qftp.html#TransferType-enum">TransferType</a></b> { Binary, Ascii }</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qftp.html#QFtp" tppabs="http://pyqt4doc.appspot.com/qftp.html#QFtp">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qftp.html#abort" tppabs="http://pyqt4doc.appspot.com/qftp.html#abort">abort</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qftp.html#bytesAvailable" tppabs="http://pyqt4doc.appspot.com/qftp.html#bytesAvailable">bytesAvailable</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qftp.html#cd" tppabs="http://pyqt4doc.appspot.com/qftp.html#cd">cd</a></b> (<i>self</i>, QString <i>directory</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qftp.html#clearPendingCommands" tppabs="http://pyqt4doc.appspot.com/qftp.html#clearPendingCommands">clearPendingCommands</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qftp.html#close" tppabs="http://pyqt4doc.appspot.com/qftp.html#close">close</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qftp.html#connectToHost" tppabs="http://pyqt4doc.appspot.com/qftp.html#connectToHost">connectToHost</a></b> (<i>self</i>, QString <i>host</i>, int <i>port</i> = 21)</li>
+<li>
+<div class="fn"></div>Command <b><a href="qftp.html#currentCommand" tppabs="http://pyqt4doc.appspot.com/qftp.html#currentCommand">currentCommand</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QIODevice <b><a href="qftp.html#currentDevice" tppabs="http://pyqt4doc.appspot.com/qftp.html#currentDevice">currentDevice</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qftp.html#currentId" tppabs="http://pyqt4doc.appspot.com/qftp.html#currentId">currentId</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>Error <b><a href="qftp.html#error" tppabs="http://pyqt4doc.appspot.com/qftp.html#error">error</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qftp.html#errorString" tppabs="http://pyqt4doc.appspot.com/qftp.html#errorString">errorString</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qftp.html#get" tppabs="http://pyqt4doc.appspot.com/qftp.html#get">get</a></b> (<i>self</i>, QString <i>file</i>, QIODevice <i>device</i> = None, TransferType <i>type</i> = QFtp.Binary)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qftp.html#hasPendingCommands" tppabs="http://pyqt4doc.appspot.com/qftp.html#hasPendingCommands">hasPendingCommands</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qftp.html#list" tppabs="http://pyqt4doc.appspot.com/qftp.html#list">list</a></b> (<i>self</i>, QString <i>directory</i> = QString())</li>
+<li>
+<div class="fn"></div>int <b><a href="qftp.html#login" tppabs="http://pyqt4doc.appspot.com/qftp.html#login">login</a></b> (<i>self</i>, QString <i>user</i> = QString(), QString <i>password</i> = QString())</li>
+<li>
+<div class="fn"></div>int <b><a href="qftp.html#mkdir" tppabs="http://pyqt4doc.appspot.com/qftp.html#mkdir">mkdir</a></b> (<i>self</i>, QString <i>dir</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qftp.html#put" tppabs="http://pyqt4doc.appspot.com/qftp.html#put">put</a></b> (<i>self</i>, QByteArray <i>data</i>, QString <i>file</i>, TransferType <i>type</i> = QFtp.Binary)</li>
+<li>
+<div class="fn"></div>int <b><a href="qftp.html#put-2" tppabs="http://pyqt4doc.appspot.com/qftp.html#put-2">put</a></b> (<i>self</i>, QIODevice <i>device</i>, QString <i>file</i>, TransferType <i>type</i> = QFtp.Binary)</li>
+<li>
+<div class="fn"></div>int <b><a href="qftp.html#rawCommand" tppabs="http://pyqt4doc.appspot.com/qftp.html#rawCommand">rawCommand</a></b> (<i>self</i>, QString <i>command</i>)</li>
+<li>
+<div class="fn"></div>str <b><a href="qftp.html#read" tppabs="http://pyqt4doc.appspot.com/qftp.html#read">read</a></b> (<i>self</i>, int <i>maxlen</i>)</li>
+<li>
+<div class="fn"></div>QByteArray <b><a href="qftp.html#readAll" tppabs="http://pyqt4doc.appspot.com/qftp.html#readAll">readAll</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qftp.html#remove" tppabs="http://pyqt4doc.appspot.com/qftp.html#remove">remove</a></b> (<i>self</i>, QString <i>file</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qftp.html#rename" tppabs="http://pyqt4doc.appspot.com/qftp.html#rename">rename</a></b> (<i>self</i>, QString <i>oldname</i>, QString <i>newname</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qftp.html#rmdir" tppabs="http://pyqt4doc.appspot.com/qftp.html#rmdir">rmdir</a></b> (<i>self</i>, QString <i>dir</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qftp.html#setProxy" tppabs="http://pyqt4doc.appspot.com/qftp.html#setProxy">setProxy</a></b> (<i>self</i>, QString <i>host</i>, int <i>port</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qftp.html#setTransferMode" tppabs="http://pyqt4doc.appspot.com/qftp.html#setTransferMode">setTransferMode</a></b> (<i>self</i>, TransferMode <i>mode</i>)</li>
+<li>
+<div class="fn"></div>State <b><a href="qftp.html#state" tppabs="http://pyqt4doc.appspot.com/qftp.html#state">state</a></b> (<i>self</i>)</li>
+</ul>
+<h3>Qt Signals</h3>
+<ul>
+<li>
+<div class="fn"></div>void <b><a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a></b> (int,bool)</li>
+<li>
+<div class="fn"></div>void <b><a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a></b> (int)</li>
+<li>
+<div class="fn"></div>void <b><a href="qftp.html#dataTransferProgress" tppabs="http://pyqt4doc.appspot.com/qftp.html#dataTransferProgress">dataTransferProgress</a></b> (qint64,qint64)</li>
+<li>
+<div class="fn"></div>void <b><a href="qftp.html#done" tppabs="http://pyqt4doc.appspot.com/qftp.html#done">done</a></b> (bool)</li>
+<li>
+<div class="fn"></div>void <b><a href="qftp.html#listInfo" tppabs="http://pyqt4doc.appspot.com/qftp.html#listInfo">listInfo</a></b> (const QUrlInfo&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qftp.html#rawCommandReply" tppabs="http://pyqt4doc.appspot.com/qftp.html#rawCommandReply">rawCommandReply</a></b> (int,const QString&amp;)</li>
+<li>
+<div class="fn"></div>void <b><a href="qftp.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qftp.html#readyRead">readyRead</a></b> ()</li>
+<li>
+<div class="fn"></div>void <b><a href="qftp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qftp.html#stateChanged">stateChanged</a></b> (int)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QFtp类提供FTP协议的客户端的实现。</p>
+<p>这个类提供了一个直接接口到FTP ，让您拥有更多的控制权的要求。然而，对于新的应用程序，它是推荐使用<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>和<a href="qnetworkreply.html" tppabs="http://pyqt4doc.appspot.com/qnetworkreply.html">QNetworkReply</a>作为这些类具有一个简单，但更强大的API 。</p>
+<p>类以异步方式工作，所以没有阻挡功能。如果操作不能被立即执行，该函数将仍然返回直线距离，操作将被安排在以后执行。调度操作的结果通过信号报告。这种方法依赖于事件循环运行之中。</p>
+<p>可以计划的操作（它们在文档其馀部分被称为“命令” ）有以下几种：<a href="qftp.html#connectToHost" tppabs="http://pyqt4doc.appspot.com/qftp.html#connectToHost">connectToHost</a>（ ）<a href="qftp.html#login" tppabs="http://pyqt4doc.appspot.com/qftp.html#login">login</a>（ ）<a href="qftp.html#close" tppabs="http://pyqt4doc.appspot.com/qftp.html#close">close</a>（ ）<a href="qftp.html#list" tppabs="http://pyqt4doc.appspot.com/qftp.html#list">list</a>（ ）<a href="qftp.html#cd" tppabs="http://pyqt4doc.appspot.com/qftp.html#cd">cd</a>（ ）<a href="qftp.html#get" tppabs="http://pyqt4doc.appspot.com/qftp.html#get">get</a>（ ）<a href="qftp.html#put" tppabs="http://pyqt4doc.appspot.com/qftp.html#put">put</a>（ ）<a href="qftp.html#remove" tppabs="http://pyqt4doc.appspot.com/qftp.html#remove">remove</a>（ ）<a href="qftp.html#mkdir" tppabs="http://pyqt4doc.appspot.com/qftp.html#mkdir">mkdir</a>（ ）<a href="qftp.html#rmdir" tppabs="http://pyqt4doc.appspot.com/qftp.html#rmdir">rmdir</a>（ ）<a href="qftp.html#rename" tppabs="http://pyqt4doc.appspot.com/qftp.html#rename">rename</a>（）和<a href="qftp.html#rawCommand" tppabs="http://pyqt4doc.appspot.com/qftp.html#rawCommand">rawCommand</a>（ ） 。</p>
+<p>所有这些命令都返回一个唯一的标识符，它允许你跟踪当前正在执行的命令。当一个指令的执行开始时，<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（ ）信号与命令的识别码被发射。当命令完成后，<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ）信号发出的命令的标识符和一个布尔值，表示该命令是否有错误完成。</p>
+<p>在某些情况下，您可能要执行的命令序列，例如：如果你想连接并登录到FTP服务器。这是简单的实现：</p>
+<pre class="cpp">
+ <span class="type">QFtp</span> <span class="operator">*</span>ftp <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QFtp</span>(parent);
+ ftp<span class="operator">-</span><span class="operator">&gt;</span><a href="qftp.html#connectToHost" tppabs="http://pyqt4doc.appspot.com/qftp.html#connectToHost">connectToHost</a>(<span class="string">"ftp.qt.nokia.com"</span>);
+ ftp<span class="operator">-</span><span class="operator">&gt;</span><a href="qftp.html#login" tppabs="http://pyqt4doc.appspot.com/qftp.html#login">login</a>();
+</pre>
+<p>在这种情况下，两个FTP命令已排定。当最后一个调度命令已完成，一<a href="qftp.html#done" tppabs="http://pyqt4doc.appspot.com/qftp.html#done">done</a>（ ）信号被发射一个布尔参数，它告诉你的序列是否有错误完成。</p>
+<p>如果其中一个命令在命令序列的执行过程中发生了错误，所有挂起的命令（即预定的，但尚未执行的命令）被清零，并且没有信号发射它们。</p>
+<p>一些命令，例如<a href="qftp.html#list" tppabs="http://pyqt4doc.appspot.com/qftp.html#list">list</a>（ ） ，发出额外的信号来报告他们的成果。</p>
+<p>例如：如果你想从Qt的FTP服务器上下载安装文件，你会这样写：</p>
+<pre class="cpp">
+ ftp<span class="operator">-</span><span class="operator">&gt;</span><a href="qftp.html#connectToHost" tppabs="http://pyqt4doc.appspot.com/qftp.html#connectToHost">connectToHost</a>(<span class="string">"ftp.qt.nokia.com"</span>);   <span class="comment">// id == 1</span>
+ ftp<span class="operator">-</span><span class="operator">&gt;</span><a href="qftp.html#login" tppabs="http://pyqt4doc.appspot.com/qftp.html#login">login</a>();                             <span class="comment">// id == 2</span>
+ ftp<span class="operator">-</span><span class="operator">&gt;</span><a href="qftp.html#cd" tppabs="http://pyqt4doc.appspot.com/qftp.html#cd">cd</a>(<span class="string">"qt"</span>);                            <span class="comment">// id == 3</span>
+ ftp<span class="operator">-</span><span class="operator">&gt;</span><a href="qftp.html#get" tppabs="http://pyqt4doc.appspot.com/qftp.html#get">get</a>(<span class="string">"INSTALL"</span>);                      <span class="comment">// id == 4</span>
+ ftp<span class="operator">-</span><span class="operator">&gt;</span><a href="qftp.html#close" tppabs="http://pyqt4doc.appspot.com/qftp.html#close">close</a>();                             <span class="comment">// id == 5</span>
+</pre>
+<p>在这个例子中的信号按以下顺序发出（以小的变化，这取决于网络的流量等） ：</p>
+<pre class="cpp">
+ start(<span class="number">1</span>)
+ <a href="qftp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qftp.html#stateChanged">stateChanged</a>(HostLookup)
+ <a href="qftp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qftp.html#stateChanged">stateChanged</a>(Connecting)
+ <a href="qftp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qftp.html#stateChanged">stateChanged</a>(Connected)
+ finished(<span class="number">1</span><span class="operator">,</span> <span class="keyword">false</span>)
+
+ start(<span class="number">2</span>)
+ <a href="qftp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qftp.html#stateChanged">stateChanged</a>(LoggedIn)
+ finished(<span class="number">2</span><span class="operator">,</span> <span class="keyword">false</span>)
+
+ start(<span class="number">3</span>)
+ finished(<span class="number">3</span><span class="operator">,</span> <span class="keyword">false</span>)
+
+ start(<span class="number">4</span>)
+ <a href="qftp.html#dataTransferProgress" tppabs="http://pyqt4doc.appspot.com/qftp.html#dataTransferProgress">dataTransferProgress</a>(<span class="number">0</span><span class="operator">,</span> <span class="number">3798</span>)
+ <a href="qftp.html#dataTransferProgress" tppabs="http://pyqt4doc.appspot.com/qftp.html#dataTransferProgress">dataTransferProgress</a>(<span class="number">2896</span><span class="operator">,</span> <span class="number">3798</span>)
+ <a href="qftp.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qftp.html#readyRead">readyRead</a>()
+ <a href="qftp.html#dataTransferProgress" tppabs="http://pyqt4doc.appspot.com/qftp.html#dataTransferProgress">dataTransferProgress</a>(<span class="number">3798</span><span class="operator">,</span> <span class="number">3798</span>)
+ <a href="qftp.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qftp.html#readyRead">readyRead</a>()
+ finished(<span class="number">4</span><span class="operator">,</span> <span class="keyword">false</span>)
+
+ start(<span class="number">5</span>)
+ <a href="qftp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qftp.html#stateChanged">stateChanged</a>(Closing)
+ <a href="qftp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qftp.html#stateChanged">stateChanged</a>(Unconnected)
+ finished(<span class="number">5</span><span class="operator">,</span> <span class="keyword">false</span>)
+
+ <a href="qftp.html#done" tppabs="http://pyqt4doc.appspot.com/qftp.html#done">done</a>(<span class="keyword">false</span>)
+</pre>
+<p>该<a href="qftp.html#dataTransferProgress" tppabs="http://pyqt4doc.appspot.com/qftp.html#dataTransferProgress">dataTransferProgress</a>如果要显示在上面的例子（）信号是有用的一<a href="qprogressbar.html" tppabs="http://pyqt4doc.appspot.com/qprogressbar.html">progress bar</a>以通知用户有关下载的进度。该<a href="qftp.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qftp.html#readyRead">readyRead</a>（ ）信号告诉你，有数据准备好读。可被查询的数据量，然后与<a href="qftp.html#bytesAvailable" tppabs="http://pyqt4doc.appspot.com/qftp.html#bytesAvailable">bytesAvailable</a>（）函数，它可以读取与该<a href="qftp.html#read" tppabs="http://pyqt4doc.appspot.com/qftp.html#read">read</a>（）或<a href="qftp.html#readAll" tppabs="http://pyqt4doc.appspot.com/qftp.html#readAll">readAll</a>（）函数。</p>
+<p>如果登录失败对于上面的例子中，信号是这样的：</p>
+<pre class="cpp">
+ start(<span class="number">1</span>)
+ <a href="qftp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qftp.html#stateChanged">stateChanged</a>(HostLookup)
+ <a href="qftp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qftp.html#stateChanged">stateChanged</a>(Connecting)
+ <a href="qftp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qftp.html#stateChanged">stateChanged</a>(Connected)
+ finished(<span class="number">1</span><span class="operator">,</span> <span class="keyword">false</span>)
+
+ start(<span class="number">2</span>)
+ finished(<span class="number">2</span><span class="operator">,</span> <span class="keyword">true</span>)
+
+ <a href="qftp.html#done" tppabs="http://pyqt4doc.appspot.com/qftp.html#done">done</a>(<span class="keyword">true</span>)
+</pre>
+<p>然后，您可以获取与错误的详细信息<a href="qftp.html#error" tppabs="http://pyqt4doc.appspot.com/qftp.html#error">error</a>（）和<a href="qftp.html#errorString" tppabs="http://pyqt4doc.appspot.com/qftp.html#errorString">errorString</a>（）函数。</p>
+<p>对于文件传输， QFtp可以同时使用主动或被动模式，并使用被动传输文件的默认模式，见文档<a href="qftp.html#setTransferMode" tppabs="http://pyqt4doc.appspot.com/qftp.html#setTransferMode">setTransferMode</a>（ ） ，以便了解更多的细节。</p>
+<p>Call <a href="qftp.html#setProxy" tppabs="http://pyqt4doc.appspot.com/qftp.html#setProxy">setProxy</a>（ ）使QFtp通过FTP代理服务器进行连接。</p>
+<p>该功能<a href="qftp.html#currentId" tppabs="http://pyqt4doc.appspot.com/qftp.html#currentId">currentId</a>（）和<a href="qftp.html#currentCommand" tppabs="http://pyqt4doc.appspot.com/qftp.html#currentCommand">currentCommand</a>（ ）提供有关当前正在执行的命令的详细信息。</p>
+<p>该功能<a href="qftp.html#hasPendingCommands" tppabs="http://pyqt4doc.appspot.com/qftp.html#hasPendingCommands">hasPendingCommands</a>（）和<a href="qftp.html#clearPendingCommands" tppabs="http://pyqt4doc.appspot.com/qftp.html#clearPendingCommands">clearPendingCommands</a>（）允许您查询和清除挂起的命令的列表。</p>
+<p>如果你是一个有经验的网络程序员，并希望有完全的控制，您可以使用<a href="qftp.html#rawCommand" tppabs="http://pyqt4doc.appspot.com/qftp.html#rawCommand">rawCommand</a>（）来执行任意FTP命令。</p>
+<p><b>Warning:</b>QFtp的当前版本不完全支持非Unix的FTP服务器。</p>
+<hr>
+<h2>Type Documentation</h2>
+<h3 class="fn">
+<a name="Command-enum"></a>QFtp.Command</h3>
+<p>该枚举被用作返回值<a href="qftp.html#currentCommand" tppabs="http://pyqt4doc.appspot.com/qftp.html#currentCommand">currentCommand</a>（）函数。这可以让你执行特定命令的具体行动，例如：在FTP客户端，你可能想清除的目录视图时，<a href="qftp.html#list" tppabs="http://pyqt4doc.appspot.com/qftp.html#list">list</a>如果在这种情况下，你可以简单地检查连接到启动的插槽（ ）信号， （ ）命令启动<a href="qftp.html#currentCommand" tppabs="http://pyqt4doc.appspot.com/qftp.html#currentCommand">currentCommand</a>（）是<tt>List</tt>。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.None</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">正在执行任何命令。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.SetTransferMode</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">设置<a href="qftp.html#TransferMode-enum" tppabs="http://pyqt4doc.appspot.com/qftp.html#TransferMode-enum">transfer</a>模式。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.SetProxy</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">打开或关闭代理。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.ConnectToHost</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">
+<a href="qftp.html#connectToHost" tppabs="http://pyqt4doc.appspot.com/qftp.html#connectToHost">connectToHost</a>（）被执行。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.Login</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">
+<a href="qftp.html#login" tppabs="http://pyqt4doc.appspot.com/qftp.html#login">login</a>（）被执行。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.Close</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">
+<a href="qftp.html#close" tppabs="http://pyqt4doc.appspot.com/qftp.html#close">close</a>（）被执行。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.List</tt></td>
+<td class="topAlign"><tt>6</tt></td>
+<td class="topAlign">
+<a href="qftp.html#list" tppabs="http://pyqt4doc.appspot.com/qftp.html#list">list</a>（）被执行。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.Cd</tt></td>
+<td class="topAlign"><tt>7</tt></td>
+<td class="topAlign">
+<a href="qftp.html#cd" tppabs="http://pyqt4doc.appspot.com/qftp.html#cd">cd</a>（）被执行。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.Get</tt></td>
+<td class="topAlign"><tt>8</tt></td>
+<td class="topAlign">
+<a href="qftp.html#get" tppabs="http://pyqt4doc.appspot.com/qftp.html#get">get</a>（）被执行。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.Put</tt></td>
+<td class="topAlign"><tt>9</tt></td>
+<td class="topAlign">
+<a href="qftp.html#put" tppabs="http://pyqt4doc.appspot.com/qftp.html#put">put</a>（）被执行。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.Remove</tt></td>
+<td class="topAlign"><tt>10</tt></td>
+<td class="topAlign">
+<a href="qftp.html#remove" tppabs="http://pyqt4doc.appspot.com/qftp.html#remove">remove</a>（）被执行。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.Mkdir</tt></td>
+<td class="topAlign"><tt>11</tt></td>
+<td class="topAlign">
+<a href="qftp.html#mkdir" tppabs="http://pyqt4doc.appspot.com/qftp.html#mkdir">mkdir</a>（）被执行。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.Rmdir</tt></td>
+<td class="topAlign"><tt>12</tt></td>
+<td class="topAlign">
+<a href="qftp.html#rmdir" tppabs="http://pyqt4doc.appspot.com/qftp.html#rmdir">rmdir</a>（）被执行。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.Rename</tt></td>
+<td class="topAlign"><tt>13</tt></td>
+<td class="topAlign">
+<a href="qftp.html#rename" tppabs="http://pyqt4doc.appspot.com/qftp.html#rename">rename</a>（）被执行。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.RawCommand</tt></td>
+<td class="topAlign"><tt>14</tt></td>
+<td class="topAlign">
+<a href="qftp.html#rawCommand" tppabs="http://pyqt4doc.appspot.com/qftp.html#rawCommand">rawCommand</a>（）被执行。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qftp.html#currentCommand" tppabs="http://pyqt4doc.appspot.com/qftp.html#currentCommand">currentCommand</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="Error-enum"></a>QFtp.Error</h3>
+<p>这个枚举标识所发生的错误。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.NoError</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">未发生错误。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.HostNotFound</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">该主机名查找失败。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.ConnectionRefused</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">服务器拒绝连接。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.NotConnected</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">试图发送一个命令，但有一个服务器的任何连接。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.UnknownError</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">发生错误比上述指定的。</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qftp.html#error" tppabs="http://pyqt4doc.appspot.com/qftp.html#error">error</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="State-enum"></a>QFtp.State</h3>
+<p>这个枚举变量定义的连接状态：</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.Unconnected</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">还有就是主机的连接。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.HostLookup</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">主机名查找正在进行中。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.Connecting</tt></td>
+<td class="topAlign"><tt>2</tt></td>
+<td class="topAlign">连接到主机的尝试正在进行中。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.Connected</tt></td>
+<td class="topAlign"><tt>3</tt></td>
+<td class="topAlign">到主机的连接已经完成。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.LoggedIn</tt></td>
+<td class="topAlign"><tt>4</tt></td>
+<td class="topAlign">连接和用户登录已经实现。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.Closing</tt></td>
+<td class="topAlign"><tt>5</tt></td>
+<td class="topAlign">连接被关闭了，但它尚未关闭。 （该状态将是<tt>Unconnected</tt>当连接关闭。 ）</td>
+</tr>
+</table>
+<p><b>See also</b> <a href="qftp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qftp.html#stateChanged">stateChanged</a>（）和<a href="qftp.html#state" tppabs="http://pyqt4doc.appspot.com/qftp.html#state">state</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="TransferMode-enum"></a>QFtp.TransferMode</h3>
+<p>FTP使用两种套接字连接，一个用于命令和另一个用于传输数据。而总是由客户端发起命令连接，第二连接可以通过在客户端或服务器来启动。</p>
+<p>这个枚举定义了客户端（被动模式）或服务器（主动模式）是否应该建立数据连接。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.Passive</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">客户端连接到服务器传送数据。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.Active</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">该服务器连接到客户端发送其数据。</td>
+</tr>
+</table>
+
+
+<h3 class="fn">
+<a name="TransferType-enum"></a>QFtp.TransferType</h3>
+<p>这个枚举标识与get和put命令中使用的数据传输类型。</p>
+<table class="valuelist">
+<tr class="odd" valign="top">
+<th class="tblConst">Constant</th>
+<th class="tblval">Value</th>
+<th class="tbldscr">Description</th>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.Binary</tt></td>
+<td class="topAlign"><tt>0</tt></td>
+<td class="topAlign">这些数据将被传输二进制模式。</td>
+</tr>
+<tr>
+<td class="topAlign"><tt>QFtp.Ascii</tt></td>
+<td class="topAlign"><tt>1</tt></td>
+<td class="topAlign">这些数据将被转移在ASCII模式和新行字符将被转换为本地格式。</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QFtp"></a>QFtp.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个<a href="qftp.html" tppabs="http://pyqt4doc.appspot.com/qftp.html">QFtp</a>与给定对象<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="abort"></a>QFtp.abort (<i>self</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void abort()</tt>。</p>
+<p>中止当前命令，并删除所有已计划的命令。</p>
+<p>如果有一个未完成的命令（即命令的量，<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）信号已被发射，但是该<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（）信号没有被发射的） ，该函数发送一个<tt>ABORT</tt>命令给服务器。当服务器回复该命令被中止，<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（）的信号与<tt>error</tt>参数设置为<tt>true</tt>发出该命令。由于定时问题，有可能在命令已经完成之前中止请求到达服务器，在这种情况下，该<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（）信号被发射的<tt>error</tt>参数设置为<tt>false</tt>。</p>
+<p>对于那些受中止（ ）其他所有的命令，没有信号发射。</p>
+<p>如果你不开始进一步直接中止后FTP命令（ ） ，将不会有任何计划的命令和<a href="qftp.html#done" tppabs="http://pyqt4doc.appspot.com/qftp.html#done">done</a>（）信号被发射。</p>
+<p><b>Warning:</b>有些FTP服务器，例如BSD的FTP守护程序（ 0.3版本） ，返回错误已经发生中止，即使一个肯定的答复。对于这些服务器的<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ）信号有错误标志设置为<tt>false</tt>，即使命令没有成功完成。</p>
+<p><b>See also</b> <a href="qftp.html#clearPendingCommands" tppabs="http://pyqt4doc.appspot.com/qftp.html#clearPendingCommands">clearPendingCommands</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="bytesAvailable"></a>int QFtp.bytesAvailable (<i>self</i>)</h3>
+<p>返回可从数据套接字中读取的时刻的字节数。</p>
+<p><b>See also</b> <a href="qftp.html#get" tppabs="http://pyqt4doc.appspot.com/qftp.html#get">get</a>（ ）<a href="qftp.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qftp.html#readyRead">readyRead</a>（ ）<a href="qftp.html#read" tppabs="http://pyqt4doc.appspot.com/qftp.html#read">read</a>（）和<a href="qftp.html#readAll" tppabs="http://pyqt4doc.appspot.com/qftp.html#readAll">readAll</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="cd"></a>int QFtp.cd (<i>self</i>, QString <i>directory</i>)</h3>
+<p>改变了服务器的工作目录<i>dir</i>。</p>
+<p>该功能不会阻止，并立即返回。该命令是预定的，并且是异步执行的执行。该函数返回一个唯一的标识符，它是由通过<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）和<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ） 。</p>
+<p>当命令开始<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）信号被发射。当它完成时的<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（）信号被发射。</p>
+<p><b>See also</b> <a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）和<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="clearPendingCommands"></a>QFtp.clearPendingCommands (<i>self</i>)</h3>
+<p>删除所有挂起的命令从预定的命令列表。这并不会影响正在执行的命令。如果你想停止这一点，使用<a href="qftp.html#abort" tppabs="http://pyqt4doc.appspot.com/qftp.html#abort">abort</a>（ ） 。</p>
+<p><b>See also</b> <a href="qftp.html#hasPendingCommands" tppabs="http://pyqt4doc.appspot.com/qftp.html#hasPendingCommands">hasPendingCommands</a>（）和<a href="qftp.html#abort" tppabs="http://pyqt4doc.appspot.com/qftp.html#abort">abort</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="close"></a>int QFtp.close (<i>self</i>)</h3>
+<p>关闭连接到FTP服务器。</p>
+<p>该<a href="qftp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qftp.html#stateChanged">stateChanged</a>（）信号被发射时，在连接过程的状态变化，例如至<tt>Closing</tt>，然后<tt>Unconnected</tt>。</p>
+<p>该功能不会阻止，并立即返回。该命令是预定的，并且是异步执行的执行。该函数返回一个唯一的标识符，它是由通过<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）和<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ） 。</p>
+<p>当命令开始<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）信号被发射。当它完成时的<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（）信号被发射。</p>
+<p><b>See also</b> <a href="qftp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qftp.html#stateChanged">stateChanged</a>（ ）<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）和<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="connectToHost"></a>int QFtp.connectToHost (<i>self</i>, QString <i>host</i>, int <i>port</i> = 21)</h3>
+<p>连接到FTP服务器<i>host</i>使用端口<i>port</i>。</p>
+<p>该<a href="qftp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qftp.html#stateChanged">stateChanged</a>（）信号被发射时，在连接过程的状态变化，例如至<tt>HostLookup</tt>，然后<tt>Connecting</tt>，然后<tt>Connected</tt>。</p>
+<p>该功能不会阻止，并立即返回。该命令是预定的，并且是异步执行的执行。该函数返回一个唯一的标识符，它是由通过<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）和<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ） 。</p>
+<p>当命令开始<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）信号被发射。当它完成时的<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（）信号被发射。</p>
+<p><b>See also</b> <a href="qftp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qftp.html#stateChanged">stateChanged</a>（ ）<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）和<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentCommand"></a><a href="qftp.html#Command-enum" tppabs="http://pyqt4doc.appspot.com/qftp.html#Command-enum">Command</a> QFtp.currentCommand (<i>self</i>)</h3>
+<p>返回FTP命令被执行的命令类型或<tt>None</tt>如果没有命令被执行。</p>
+<p><b>See also</b> <a href="qftp.html#currentId" tppabs="http://pyqt4doc.appspot.com/qftp.html#currentId">currentId</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentDevice"></a><a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> QFtp.currentDevice (<i>self</i>)</h3>
+<p>返回<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>指针所使用的FTP命令来读取数据或存储数据。如果有正在执行无电流的FTP命令，或者如果命令不使用的IO设备，该函数返回0 。</p>
+<p>此功能可用于删除的<a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a>在连接到插槽<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（）信号。</p>
+<p><b>See also</b> <a href="qftp.html#get" tppabs="http://pyqt4doc.appspot.com/qftp.html#get">get</a>（）和<a href="qftp.html#put" tppabs="http://pyqt4doc.appspot.com/qftp.html#put">put</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="currentId"></a>int QFtp.currentId (<i>self</i>)</h3>
+<p>返回正在执行FTP命令或标识符0 ，如果没有命令被执行。</p>
+<p><b>See also</b> <a href="qftp.html#currentCommand" tppabs="http://pyqt4doc.appspot.com/qftp.html#currentCommand">currentCommand</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="error"></a><a href="qftp.html#Error-enum" tppabs="http://pyqt4doc.appspot.com/qftp.html#Error-enum">Error</a> QFtp.error (<i>self</i>)</h3>
+<p>返回所发生的最后一个错误。接收时，此功能非常有用，找出什么地方出了错一<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（）或一<a href="qftp.html#done" tppabs="http://pyqt4doc.appspot.com/qftp.html#done">done</a>（）的信号与<tt>error</tt>参数设置为<tt>true</tt>。</p>
+<p>如果你开始一个新的命令，错误状态重置为<tt>NoError</tt>。</p>
+
+
+<h3 class="fn">
+<a name="errorString"></a>QString QFtp.errorString (<i>self</i>)</h3>
+<p>返回上次发生错误的人类可读的描述。接收时，这是用于呈现错误信息给用户有用的一<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（）或一<a href="qftp.html#done" tppabs="http://pyqt4doc.appspot.com/qftp.html#done">done</a>（）的信号与<tt>error</tt>参数设置为<tt>true</tt>。</p>
+<p>错误字符串通常是（但不总是）​​从服务器的应答，因此它并不总是可能的翻译的字符串。如果消息来自Qt中，字符串已通过<a href="qobject.html#tr" tppabs="http://pyqt4doc.appspot.com/qobject.html#tr">tr</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="get"></a>int QFtp.get (<i>self</i>, QString <i>file</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>device</i> = None, <a href="qftp.html#TransferType-enum" tppabs="http://pyqt4doc.appspot.com/qftp.html#TransferType-enum">TransferType</a> <i>type</i> = QFtp.Binary)</h3>
+<p>下载文件<i>file</i>从服务器。</p>
+<p>If <i>dev</i>是0，则<a href="qftp.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qftp.html#readyRead">readyRead</a>当有数据可供读取（ ）信号被发射。然后，您可以与读取数据<a href="qftp.html#read" tppabs="http://pyqt4doc.appspot.com/qftp.html#read">read</a>（）或<a href="qftp.html#readAll" tppabs="http://pyqt4doc.appspot.com/qftp.html#readAll">readAll</a>（）函数。</p>
+<p>If <i>dev</i>不为0时，数据被直接写入设备<i>dev</i>。确保<i>dev</i>指针是有效的操作的持续时间（它是安全的删除当<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（）信号被发射） 。在这种情况下<a href="qftp.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qftp.html#readyRead">readyRead</a>（）信号是<i>not</i>发出的，你不能与读取数据<a href="qftp.html#read" tppabs="http://pyqt4doc.appspot.com/qftp.html#read">read</a>（）或<a href="qftp.html#readAll" tppabs="http://pyqt4doc.appspot.com/qftp.html#readAll">readAll</a>（）函数。</p>
+<p>如果不立即读取数据变得可用，即当<a href="qftp.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qftp.html#readyRead">readyRead</a>（）信号被发射，它仍然是可用的，直到下一个指令开始。</p>
+<p>例如，如果你想尽快有一些可用的数据呈现给用户，连接到<a href="qftp.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qftp.html#readyRead">readyRead</a>（）信号，并立即读出的数据。在另一方面，如果只想用完整的数据来工作，你可以连接到<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ）信号和读取时的get （ ）命令完成的数据。</p>
+<p>这取决于价值的数据作为二进制或ASCII<i>type</i>。</p>
+<p>该功能不会阻止，并立即返回。该命令是预定的，并且是异步执行的执行。该函数返回一个唯一的标识符，它是由通过<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）和<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ） 。</p>
+<p>当命令开始<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）信号被发射。当它完成时的<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（）信号被发射。</p>
+<p><a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ）</p>
+<p><b>See also</b> <a href="qftp.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qftp.html#readyRead">readyRead</a>（ ）<a href="qftp.html#dataTransferProgress" tppabs="http://pyqt4doc.appspot.com/qftp.html#dataTransferProgress">dataTransferProgress</a>（）和<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasPendingCommands"></a>bool QFtp.hasPendingCommands (<i>self</i>)</h3>
+<p>返回True如果有尚未被执行计划的任何命令，否则返回False 。</p>
+<p>正在执行的命令是<i>not</i>视为一个调度命令。</p>
+<p><b>See also</b> <a href="qftp.html#clearPendingCommands" tppabs="http://pyqt4doc.appspot.com/qftp.html#clearPendingCommands">clearPendingCommands</a>（ ）<a href="qftp.html#currentId" tppabs="http://pyqt4doc.appspot.com/qftp.html#currentId">currentId</a>（）和<a href="qftp.html#currentCommand" tppabs="http://pyqt4doc.appspot.com/qftp.html#currentCommand">currentCommand</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="list"></a>int QFtp.list (<i>self</i>, QString <i>directory</i> = QString())</h3>
+<p>列出目录的内容<i>dir</i>在FTP服务器上。如果<i>dir</i>是空的，它会列出当前目录的内容。</p>
+<p>该<a href="qftp.html#listInfo" tppabs="http://pyqt4doc.appspot.com/qftp.html#listInfo">listInfo</a>（ ）信号被发射对找到的每个目录项。</p>
+<p>该功能不会阻止，并立即返回。该命令是预定的，并且是异步执行的执行。该函数返回一个唯一的标识符，它是由通过<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）和<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ） 。</p>
+<p>当命令开始<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）信号被发射。当它完成时的<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（）信号被发射。</p>
+<p><b>See also</b> <a href="qftp.html#listInfo" tppabs="http://pyqt4doc.appspot.com/qftp.html#listInfo">listInfo</a>（ ）<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）和<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="login"></a>int QFtp.login (<i>self</i>, QString <i>user</i> = QString(), QString <i>password</i> = QString())</h3>
+<p>登录到FTP服务器的用户名<i>user</i>和密码<i>password</i>。</p>
+<p>该<a href="qftp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qftp.html#stateChanged">stateChanged</a>（）信号被发射时，在连接过程的状态变化，例如至<tt>LoggedIn</tt>。</p>
+<p>该功能不会阻止，并立即返回。该命令是预定的，并且是异步执行的执行。该函数返回一个唯一的标识符，它是由通过<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）和<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ） 。</p>
+<p>当命令开始<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）信号被发射。当它完成时的<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（）信号被发射。</p>
+<p><b>See also</b> <a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）和<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="mkdir"></a>int QFtp.mkdir (<i>self</i>, QString <i>dir</i>)</h3>
+<p>创建一个名为目录<i>dir</i>在服务器上。</p>
+<p>该功能不会阻止，并立即返回。该命令是预定的，并且是异步执行的执行。该函数返回一个唯一的标识符，它是由通过<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）和<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ） 。</p>
+<p>当命令开始<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）信号被发射。当它完成时的<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（）信号被发射。</p>
+<p><b>See also</b> <a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）和<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="put"></a>int QFtp.put (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>data</i>, QString <i>file</i>, <a href="qftp.html#TransferType-enum" tppabs="http://pyqt4doc.appspot.com/qftp.html#TransferType-enum">TransferType</a> <i>type</i> = QFtp.Binary)</h3>
+<p>读取IO设备中的数据<i>dev</i>，并将其写入到被调用的文件<i>file</i>在服务器上。读取数据从IO设备的块，所以此重载允许您传输大量的数据，而不需要读取所有的数据到内存中一次。</p>
+<p>这取决于价值的数据作为二进制或ASCII<i>type</i>。</p>
+<p>确保<i>dev</i>指针是有效的操作的持续时间（它是安全的删除当<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（）被发射） 。</p>
+
+
+<h3 class="fn">
+<a name="put-2"></a>int QFtp.put (<i>self</i>, <a href="qiodevice.html" tppabs="http://pyqt4doc.appspot.com/qiodevice.html">QIODevice</a> <i>device</i>, QString <i>file</i>, <a href="qftp.html#TransferType-enum" tppabs="http://pyqt4doc.appspot.com/qftp.html#TransferType-enum">TransferType</a> <i>type</i> = QFtp.Binary)</h3>
+<p>这是一个重载函数。</p>
+<p>写入给定的一个副本<i>data</i>要调用的文件<i>file</i>在服务器上。上传的进度报告的<a href="qftp.html#dataTransferProgress" tppabs="http://pyqt4doc.appspot.com/qftp.html#dataTransferProgress">dataTransferProgress</a>（）信号。</p>
+<p>这取决于价值的数据作为二进制或ASCII<i>type</i>。</p>
+<p>该功能不会阻止，并立即返回。该命令是预定的，并且是异步执行的执行。该函数返回一个唯一的标识符，它是由通过<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）和<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ） 。</p>
+<p>当命令开始<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）信号被发射。当它完成时的<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（）信号被发射。</p>
+<p>由于该功能需要的副本<i>data</i>，你可以放弃自己的副本时，该函数返回。</p>
+<p><b>See also</b> <a href="qftp.html#dataTransferProgress" tppabs="http://pyqt4doc.appspot.com/qftp.html#dataTransferProgress">dataTransferProgress</a>（ ）<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）和<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rawCommand"></a>int QFtp.rawCommand (<i>self</i>, QString <i>command</i>)</h3>
+<p>将原始的FTP命令<i>command</i>到FTP服务器。这是低层次的FTP访问有用的。如果你想执行的操作具有等效<a href="qftp.html" tppabs="http://pyqt4doc.appspot.com/qftp.html">QFtp</a>的功能，我们建议使用该功能，而不是原始的FTP命令，因为功能更容易，更安全。</p>
+<p>该功能不会阻止，并立即返回。该命令是预定的，并且是异步执行的执行。该函数返回一个唯一的标识符，它是由通过<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）和<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ） 。</p>
+<p>当命令开始<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）信号被发射。当它完成时的<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（）信号被发射。</p>
+<p><b>See also</b> <a href="qftp.html#rawCommandReply" tppabs="http://pyqt4doc.appspot.com/qftp.html#rawCommandReply">rawCommandReply</a>（ ）<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）和<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="read"></a>str QFtp.read (<i>self</i>, int <i>maxlen</i>)</h3>
+<p>阅读<i>maxlen</i>从数据插座成字节<i>data</i>并返回读取的字节数。返回-1，如果发生了错误。</p>
+<p><b>See also</b> <a href="qftp.html#get" tppabs="http://pyqt4doc.appspot.com/qftp.html#get">get</a>（ ）<a href="qftp.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qftp.html#readyRead">readyRead</a>（ ）<a href="qftp.html#bytesAvailable" tppabs="http://pyqt4doc.appspot.com/qftp.html#bytesAvailable">bytesAvailable</a>（）和<a href="qftp.html#readAll" tppabs="http://pyqt4doc.appspot.com/qftp.html#readAll">readAll</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="readAll"></a><a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> QFtp.readAll (<i>self</i>)</h3>
+<p>读取所有可用的数据套接字的字节数，并返回它们。</p>
+<p><b>See also</b> <a href="qftp.html#get" tppabs="http://pyqt4doc.appspot.com/qftp.html#get">get</a>（ ）<a href="qftp.html#readyRead" tppabs="http://pyqt4doc.appspot.com/qftp.html#readyRead">readyRead</a>（ ）<a href="qftp.html#bytesAvailable" tppabs="http://pyqt4doc.appspot.com/qftp.html#bytesAvailable">bytesAvailable</a>（）和<a href="qftp.html#read" tppabs="http://pyqt4doc.appspot.com/qftp.html#read">read</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="remove"></a>int QFtp.remove (<i>self</i>, QString <i>file</i>)</h3>
+<p>删除的文件称为<i>file</i>从服务器。</p>
+<p>该功能不会阻止，并立即返回。该命令是预定的，并且是异步执行的执行。该函数返回一个唯一的标识符，它是由通过<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）和<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ） 。</p>
+<p>当命令开始<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）信号被发射。当它完成时的<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（）信号被发射。</p>
+<p><b>See also</b> <a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）和<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rename"></a>int QFtp.rename (<i>self</i>, QString <i>oldname</i>, QString <i>newname</i>)</h3>
+<p>所谓重命名文件<i>oldname</i>至<i>newname</i>在服务器上。</p>
+<p>该功能不会阻止，并立即返回。该命令是预定的，并且是异步执行的执行。该函数返回一个唯一的标识符，它是由通过<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）和<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ） 。</p>
+<p>当命令开始<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）信号被发射。当它完成时的<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（）信号被发射。</p>
+<p><b>See also</b> <a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）和<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rmdir"></a>int QFtp.rmdir (<i>self</i>, QString <i>dir</i>)</h3>
+<p>所谓删除的目录<i>dir</i>从服务器。</p>
+<p>该功能不会阻止，并立即返回。该命令是预定的，并且是异步执行的执行。该函数返回一个唯一的标识符，它是由通过<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）和<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ） 。</p>
+<p>当命令开始<a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）信号被发射。当它完成时的<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（）信号被发射。</p>
+<p><b>See also</b> <a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（）和<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setProxy"></a>int QFtp.setProxy (<i>self</i>, QString <i>host</i>, int <i>port</i>)</h3>
+<p>允许主机使用FTP代理的<i>host</i>和端口<i>port</i>。调用此函数<i>host</i>空禁用代理。</p>
+<p><a href="qftp.html" tppabs="http://pyqt4doc.appspot.com/qftp.html">QFtp</a>不支持FTP环比HTTP代理服务器。使用<a href="qnetworkaccessmanager.html" tppabs="http://pyqt4doc.appspot.com/qnetworkaccessmanager.html">QNetworkAccessManager</a>这一点。</p>
+
+
+<h3 class="fn">
+<a name="setTransferMode"></a>int QFtp.setTransferMode (<i>self</i>, <a href="qftp.html#TransferMode-enum" tppabs="http://pyqt4doc.appspot.com/qftp.html#TransferMode-enum">TransferMode</a> <i>mode</i>)</h3>
+<p>设置当前FTP传输模式<i>mode</i>。默认值是<a href="qftp.html#TransferMode-enum" tppabs="http://pyqt4doc.appspot.com/qftp.html#TransferMode-enum">QFtp.Passive</a>。</p>
+<p><b>See also</b> <a href="qftp.html#TransferMode-enum" tppabs="http://pyqt4doc.appspot.com/qftp.html#TransferMode-enum">QFtp.TransferMode</a>。</p>
+
+
+<h3 class="fn">
+<a name="state"></a><a href="qftp.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qftp.html#State-enum">State</a> QFtp.state (<i>self</i>)</h3>
+<p>返回该对象的当前状态。当状态改变时，<a href="qftp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qftp.html#stateChanged">stateChanged</a>（）信号被发射。</p>
+<p><b>See also</b> <a href="qftp.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qftp.html#State-enum">State</a>和<a href="qftp.html#stateChanged" tppabs="http://pyqt4doc.appspot.com/qftp.html#stateChanged">stateChanged</a>（ ） 。</p>
+
+
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="commandFinished"></a>void commandFinished (int,bool)</h3>
+<p>这是该信号的默认超载。</p>
+<p>处理确定的命令时，这个信号被发射<i>id</i>已完成。<i>error</i>是真的，如果在处理过程中发生错误，否则<i>error</i>是假的。</p>
+<p><b>See also</b> <a href="qftp.html#commandStarted" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandStarted">commandStarted</a>（ ）<a href="qftp.html#done" tppabs="http://pyqt4doc.appspot.com/qftp.html#done">done</a>（ ）<a href="qftp.html#error" tppabs="http://pyqt4doc.appspot.com/qftp.html#error">error</a>（）和<a href="qftp.html#errorString" tppabs="http://pyqt4doc.appspot.com/qftp.html#errorString">errorString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="commandStarted"></a>void commandStarted (int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>处理确定的命令时，这个信号被发射<i>id</i>开始。</p>
+<p><b>See also</b> <a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（）和<a href="qftp.html#done" tppabs="http://pyqt4doc.appspot.com/qftp.html#done">done</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="dataTransferProgress"></a>void dataTransferProgress (qint64,qint64)</h3>
+<p>这是该信号的默认超载。</p>
+<p>此信号响应于被发射<a href="qftp.html#get" tppabs="http://pyqt4doc.appspot.com/qftp.html#get">get</a>（）或<a href="qftp.html#put" tppabs="http://pyqt4doc.appspot.com/qftp.html#put">put</a>（）请求指示下载或上传的当前进度。</p>
+<p><i>done</i>是数据的一个已经被转移及金额<i>total</i>是数据要被读出或写入的总量。它是可能的<a href="qftp.html" tppabs="http://pyqt4doc.appspot.com/qftp.html">QFtp</a>类是不能够确定数据应该被转移的总量，在此情况<i>total</i>为0。 （如果这个信号连接到<a href="qprogressbar.html" tppabs="http://pyqt4doc.appspot.com/qprogressbar.html">QProgressBar</a>，进度条显示一个繁忙的指标，如果总为0 ） 。</p>
+<p><b>Warning:</b> <i>done</i>和<i>total</i>不一定以字节为单位的大小，因为对于大文件的这些值可能需要被“缩放”，以避免溢出。</p>
+<p><b>See also</b> <a href="qftp.html#get" tppabs="http://pyqt4doc.appspot.com/qftp.html#get">get</a>（ ）<a href="qftp.html#put" tppabs="http://pyqt4doc.appspot.com/qftp.html#put">put</a>（）和<a href="qprogressbar.html" tppabs="http://pyqt4doc.appspot.com/qprogressbar.html">QProgressBar</a>。</p>
+
+
+<h3 class="fn">
+<a name="done"></a>void done (bool)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的最后等候命令完成（这是后发出的最后一个命令的<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ）信号） 。<i>error</i>是真的，如果在处理过程中发生错误，否则<i>error</i>是假的。</p>
+<p><b>See also</b> <a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ）<a href="qftp.html#error" tppabs="http://pyqt4doc.appspot.com/qftp.html#error">error</a>（）和<a href="qftp.html#errorString" tppabs="http://pyqt4doc.appspot.com/qftp.html#errorString">errorString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="listInfo"></a>void listInfo (const QUrlInfo&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射的每个目录项的<a href="qftp.html#list" tppabs="http://pyqt4doc.appspot.com/qftp.html#list">list</a>（ ）命令的发现。条目的详细信息存储在<i>i</i>。</p>
+<p><b>See also</b> <a href="qftp.html#list" tppabs="http://pyqt4doc.appspot.com/qftp.html#list">list</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="rawCommandReply"></a>void rawCommandReply (int,const QString&amp;)</h3>
+<p>这是该信号的默认超载。</p>
+<p>此信号响应于所述发射<a href="qftp.html#rawCommand" tppabs="http://pyqt4doc.appspot.com/qftp.html#rawCommand">rawCommand</a>（）函数。<i>replyCode</i>是3位数字应答码和<i>detail</i>是遵循应答码的文本。</p>
+<p><b>See also</b> <a href="qftp.html#rawCommand" tppabs="http://pyqt4doc.appspot.com/qftp.html#rawCommand">rawCommand</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="readyRead"></a>void readyRead ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>此信号响应于被发射<a href="qftp.html#get" tppabs="http://pyqt4doc.appspot.com/qftp.html#get">get</a>（ ）命令时有新的数据读取。</p>
+<p>如果指定的设备如在第二个参数<a href="qftp.html#get" tppabs="http://pyqt4doc.appspot.com/qftp.html#get">get</a>（）命令，该信号是<i>not</i>射出，而是将数据直接写入到设备。</p>
+<p>您可以使用读取数据<a href="qftp.html#readAll" tppabs="http://pyqt4doc.appspot.com/qftp.html#readAll">readAll</a>（）或<a href="qftp.html#read" tppabs="http://pyqt4doc.appspot.com/qftp.html#read">read</a>（）函数。</p>
+<p>如果你想，只要它成为可用在处理大块数据这个信号是非常有用的。如果你只关心在完整的数据，只需连接到<a href="qftp.html#commandFinished" tppabs="http://pyqt4doc.appspot.com/qftp.html#commandFinished">commandFinished</a>（ ）信号并读取数据，然后代替。</p>
+<p><b>See also</b> <a href="qftp.html#get" tppabs="http://pyqt4doc.appspot.com/qftp.html#get">get</a>（ ）<a href="qftp.html#read" tppabs="http://pyqt4doc.appspot.com/qftp.html#read">read</a>（ ）<a href="qftp.html#readAll" tppabs="http://pyqt4doc.appspot.com/qftp.html#readAll">readAll</a>（）和<a href="qftp.html#bytesAvailable" tppabs="http://pyqt4doc.appspot.com/qftp.html#bytesAvailable">bytesAvailable</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="stateChanged"></a>void stateChanged (int)</h3>
+<p>这是该信号的默认超载。</p>
+<p>这个信号被发射时的连接状态发生改变。这个论点<i>state</i>是该连接的新的状态，它是一个<a href="qftp.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qftp.html#State-enum">State</a>值。</p>
+<p>它通常是在响应于发射<a href="qftp.html#connectToHost" tppabs="http://pyqt4doc.appspot.com/qftp.html#connectToHost">connectToHost</a>（）或<a href="qftp.html#close" tppabs="http://pyqt4doc.appspot.com/qftp.html#close">close</a>（）命令，但它也可以被发射的“自发地” ，例如当服务器意外关闭连接。</p>
+<p><b>See also</b> <a href="qftp.html#connectToHost" tppabs="http://pyqt4doc.appspot.com/qftp.html#connectToHost">connectToHost</a>（ ）<a href="qftp.html#close" tppabs="http://pyqt4doc.appspot.com/qftp.html#close">close</a>（ ）<a href="qftp.html#state" tppabs="http://pyqt4doc.appspot.com/qftp.html#state">state</a>（）和<a href="qftp.html#State-enum" tppabs="http://pyqt4doc.appspot.com/qftp.html#State-enum">State</a>。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

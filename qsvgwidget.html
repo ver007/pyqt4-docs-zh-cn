@@ -1,0 +1,110 @@
+﻿<html>
+<head>
+<title>QSvgWidget Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QSvgWidget Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtsvg.html">QtSvg</a> module]</sup></sup>
+</h1>
+<p>该QSvgWidget类提供了用于显示可缩放矢量图形（SVG ）文件的内容一个小部件。<a href="#details">More...</a></p>
+
+<p>继承<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qsvgwidget.html#QSvgWidget" tppabs="http://pyqt4doc.appspot.com/qsvgwidget.html#QSvgWidget">__init__</a></b> (<i>self</i>, QWidget <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsvgwidget.html#QSvgWidget-2" tppabs="http://pyqt4doc.appspot.com/qsvgwidget.html#QSvgWidget-2">__init__</a></b> (<i>self</i>, QString <i>file</i>, QWidget <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsvgwidget.html#load" tppabs="http://pyqt4doc.appspot.com/qsvgwidget.html#load">load</a></b> (<i>self</i>, QString <i>file</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsvgwidget.html#load-2" tppabs="http://pyqt4doc.appspot.com/qsvgwidget.html#load-2">load</a></b> (<i>self</i>, QByteArray <i>contents</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qsvgwidget.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qsvgwidget.html#paintEvent">paintEvent</a></b> (<i>self</i>, QPaintEvent <i>event</i>)</li>
+<li>
+<div class="fn"></div>QSvgRenderer <b><a href="qsvgwidget.html#renderer" tppabs="http://pyqt4doc.appspot.com/qsvgwidget.html#renderer">renderer</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qsvgwidget.html#sizeHint" tppabs="http://pyqt4doc.appspot.com/qsvgwidget.html#sizeHint">sizeHint</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QSvgWidget类提供了用于显示可缩放矢量图形（SVG ）文件的内容一个小部件。</p>
+<p>这个类使开发人员能够显示SVG图形旁边标准的部件，用于在大致相同的方式为<a href="qlabel.html" tppabs="http://pyqt4doc.appspot.com/qlabel.html">QLabel</a>用于显示文本和位图图像。</p>
+<p>因为QSvgWidget是的一个子类<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>，SVG图纸所使用的显示器的特性呈现。更多的控制可以在渲染过程中的行使<a href="qsvgrenderer.html" tppabs="http://pyqt4doc.appspot.com/qsvgrenderer.html">QSvgRenderer</a>类，因为这可以用来作画到其他绘图设备，如<a href="qimage.html" tppabs="http://pyqt4doc.appspot.com/qimage.html">QImage</a>和<a href="qglwidget.html" tppabs="http://pyqt4doc.appspot.com/qglwidget.html">QGLWidget</a>。可以用以下方式获得所使用的插件的渲染<a href="qsvgwidget.html#renderer" tppabs="http://pyqt4doc.appspot.com/qsvgwidget.html#renderer">renderer</a>（）函数。</p>
+<p>每个QSvgWidget可以用SVG文件的文件名构成，或者它们可以在没有一个特定的文件，以使被构造和一个可以在以后提供。该<a href="qsvgwidget.html#load" tppabs="http://pyqt4doc.appspot.com/qsvgwidget.html#load">load</a>（ ）函数提供了两种不同的方式来加载一个SVG文件：他们接受一个SVG文件或任一文件名<a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a>包含SVG文件的序列化的XML表示形式。</p>
+<p>默认情况下，窗口小部件提供了一个尺寸暗示以反映它显示图形的大小。如果没有数据被加载时，窗口小部件提供默认<a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a>尺寸暗示。继承这个类，并重新实现<a href="qsvgwidget.html#sizeHint" tppabs="http://pyqt4doc.appspot.com/qsvgwidget.html#sizeHint">sizeHint</a>（ ）如果你需要自定义此行为。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QSvgWidget"></a>QSvgWidget.__init__ (<i>self</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个新的SVG显示小部件与给定<i>parent</i>。</p>
+
+
+<h3 class="fn">
+<a name="QSvgWidget-2"></a>QSvgWidget.__init__ (<i>self</i>, QString <i>file</i>, <a href="qwidget.html" tppabs="http://pyqt4doc.appspot.com/qwidget.html">QWidget</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>构造一个新的SVG显示小部件与给定<i>parent</i>并加载指定的内容<i>file</i>。</p>
+
+
+<h3 class="fn">
+<a name="load"></a>QSvgWidget.load (<i>self</i>, QString <i>file</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void load(const QString&amp;)</tt>。</p>
+<p>加载指定的SVG内容<i>file</i>和更新部件。</p>
+
+
+<h3 class="fn">
+<a name="load-2"></a>QSvgWidget.load (<i>self</i>, <a href="qbytearray.html" tppabs="http://pyqt4doc.appspot.com/qbytearray.html">QByteArray</a> <i>contents</i>)</h3>
+<p>这种方法也是一个Qt槽与C + +的签名<tt>void load(const QByteArray&amp;)</tt>。</p>
+<p>加载指定的SVG格式<i>contents</i>和更新部件。</p>
+
+
+<h3 class="fn">
+<a name="paintEvent"></a>QSvgWidget.paintEvent (<i>self</i>, <a href="qpaintevent.html" tppabs="http://pyqt4doc.appspot.com/qpaintevent.html">QPaintEvent</a> <i>event</i>)</h3>
+<p>从重新实现<a href="qwidget.html#paintEvent" tppabs="http://pyqt4doc.appspot.com/qwidget.html#paintEvent">QWidget.paintEvent</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="renderer"></a><a href="qsvgrenderer.html" tppabs="http://pyqt4doc.appspot.com/qsvgrenderer.html">QSvgRenderer</a> QSvgWidget.renderer (<i>self</i>)</h3>
+<p>返回用于显示widget的内容的渲染。</p>
+
+
+<h3 class="fn">
+<a name="sizeHint"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QSvgWidget.sizeHint (<i>self</i>)</h3>
+<p>从重新实现<a href="qwidget.html#sizeHint-prop" tppabs="http://pyqt4doc.appspot.com/qwidget.html#sizeHint-prop">QWidget.sizeHint</a>（ ） 。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

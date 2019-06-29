@@ -1,0 +1,207 @@
+﻿<html>
+<head>
+<title>QLocalServer Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QLocalServer Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtnetwork.html">QtNetwork</a> module]</sup></sup>
+</h1>
+<p>该QLocalServer类提供了一个基于本地套接字服务器。<a href="#details">More...</a></p>
+
+<p>继承<a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qlocalserver.html#QLocalServer" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#QLocalServer">__init__</a></b> (<i>self</i>, QObject <i>parent</i> = None)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlocalserver.html#close" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#close">close</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qlocalserver.html#errorString" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#errorString">errorString</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qlocalserver.html#fullServerName" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#fullServerName">fullServerName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qlocalserver.html#hasPendingConnections" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#hasPendingConnections">hasPendingConnections</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlocalserver.html#incomingConnection" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#incomingConnection">incomingConnection</a></b> (<i>self</i>, sip.voidptr <i>socketDescriptor</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qlocalserver.html#isListening" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#isListening">isListening</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qlocalserver.html#listen" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#listen">listen</a></b> (<i>self</i>, QString <i>name</i>)</li>
+<li>
+<div class="fn"></div>int <b><a href="qlocalserver.html#maxPendingConnections" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#maxPendingConnections">maxPendingConnections</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QLocalSocket <b><a href="qlocalserver.html#nextPendingConnection" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#nextPendingConnection">nextPendingConnection</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QAbstractSocket.SocketError <b><a href="qlocalserver.html#serverError" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#serverError">serverError</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QString <b><a href="qlocalserver.html#serverName" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#serverName">serverName</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qlocalserver.html#setMaxPendingConnections" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#setMaxPendingConnections">setMaxPendingConnections</a></b> (<i>self</i>, int <i>numConnections</i>)</li>
+<li>
+<div class="fn"></div>(bool, bool <i>timedOut</i>) <b><a href="qlocalserver.html#waitForNewConnection" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#waitForNewConnection">waitForNewConnection</a></b> (<i>self</i>, int <i>msecs</i> = 0)</li>
+</ul>
+<h3>Static Methods</h3>
+<ul><li>
+<div class="fn"></div>bool <b><a href="qlocalserver.html#removeServer" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#removeServer">removeServer</a></b> (QString <i>name</i>)</li></ul>
+<h3>Qt Signals</h3>
+<ul><li>
+<div class="fn"></div>void <b><a href="qlocalserver.html#newConnection" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#newConnection">newConnection</a></b> ()</li></ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QLocalServer类提供了一个基于本地套接字服务器。</p>
+<p>这个类使得它可以接受传入本地套接字连接。</p>
+<p>Call <a href="qlocalserver.html#listen" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#listen">listen</a>（ ）让服务器开始侦听在指定的键进入的连接。该<a href="qlocalserver.html#newConnection" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#newConnection">newConnection</a>（ ）信号，然后每个客户端连接到服务器时发出的。</p>
+<p>Call <a href="qlocalserver.html#nextPendingConnection" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#nextPendingConnection">nextPendingConnection</a>（ ）接受挂起的连接作为一个连接<a href="qlocalsocket.html" tppabs="http://pyqt4doc.appspot.com/qlocalsocket.html">QLocalSocket</a>。该函数返回一个指针，指向一个<a href="qlocalsocket.html" tppabs="http://pyqt4doc.appspot.com/qlocalsocket.html">QLocalSocket</a>可以用于与客户机进行通信。</p>
+<p>如果发生错误，<a href="qlocalserver.html#serverError" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#serverError">serverError</a>（）返回的错误的类型，并且<a href="qlocalserver.html#errorString" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#errorString">errorString</a>（ ）可以被调用来获取发生了什么可读的描述。</p>
+<p>当侦听连接，服务器正在侦听的名称，可通过<a href="qlocalserver.html#serverName" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#serverName">serverName</a>（ ） 。</p>
+<p>调用<a href="qlocalserver.html#close" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#close">close</a>（ ）使得QLocalServer停止侦听传入的连接。</p>
+<p>虽然QLocalServer是专为一个事件循环使用，它可以使用它没有之一。在这种情况下，您必须使用<a href="qlocalserver.html#waitForNewConnection" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#waitForNewConnection">waitForNewConnection</a>（ ） ，这阻止，直到一个连接可用或者超时。</p>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QLocalServer"></a>QLocalServer.__init__ (<i>self</i>, <a href="qobject.html" tppabs="http://pyqt4doc.appspot.com/qobject.html">QObject</a> <i>parent</i> = None)</h3>
+<p>该<i>parent</i>的说法，如果不是没有，原因<i>self</i>通过Qt的，而不是PyQt的拥有。</p>
+<p>创建一个新的本地套接字服务器与给定<i>parent</i>。</p>
+<p><b>See also</b> <a href="qlocalserver.html#listen" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#listen">listen</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="close"></a>QLocalServer.close (<i>self</i>)</h3>
+<p>停止侦听传入的连接。现有的连接将不受影响，但任何新的连接将被拒绝。</p>
+<p><b>See also</b> <a href="qlocalserver.html#isListening" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#isListening">isListening</a>（）和<a href="qlocalserver.html#listen" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#listen">listen</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="errorString"></a>QString QLocalServer.errorString (<i>self</i>)</h3>
+<p>返回人类可读的消息恰当报告的当前错误<a href="qlocalserver.html#serverError" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#serverError">serverError</a>（ ） 。如果没有合适的字符串是可用的，则返回一个空字符串。</p>
+<p><b>See also</b> <a href="qlocalserver.html#serverError" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#serverError">serverError</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="fullServerName"></a>QString QLocalServer.fullServerName (<i>self</i>)</h3>
+<p>返回该服务器监听的完整路径。</p>
+<p>注：这是具体平台</p>
+<p><b>See also</b> <a href="qlocalserver.html#listen" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#listen">listen</a>（）和<a href="qlocalserver.html#serverName" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#serverName">serverName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="hasPendingConnections"></a>bool QLocalServer.hasPendingConnections (<i>self</i>)</h3>
+<p>返回True ，如果服务器有一个挂起的连接，否则返回False 。</p>
+<p><b>See also</b> <a href="qlocalserver.html#nextPendingConnection" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#nextPendingConnection">nextPendingConnection</a>（）和<a href="qlocalserver.html#setMaxPendingConnections" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#setMaxPendingConnections">setMaxPendingConnections</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="incomingConnection"></a>QLocalServer.incomingConnection (<i>self</i>, sip.voidptr <i>socketDescriptor</i>)</h3>
+<p>这个虚函数被调用<a href="qlocalserver.html" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html">QLocalServer</a>当一个新的连接可用。<i>socketDescriptor</i>对于接受连接的本地套接字描述符。</p>
+<p>该基地实现创建一个<a href="qlocalsocket.html" tppabs="http://pyqt4doc.appspot.com/qlocalsocket.html">QLocalSocket</a>，设置套接字描述符，然后存储<a href="qlocalsocket.html" tppabs="http://pyqt4doc.appspot.com/qlocalsocket.html">QLocalSocket</a>在挂起连接的内部清单。最后<a href="qlocalserver.html#newConnection" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#newConnection">newConnection</a>（）被发射。</p>
+<p>重新实现这个函数来改变服务器的行为，当一个连接可用。</p>
+<p><b>See also</b> <a href="qlocalserver.html#newConnection" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#newConnection">newConnection</a>（ ）<a href="qlocalserver.html#nextPendingConnection" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#nextPendingConnection">nextPendingConnection</a>（）和<a href="qlocalsocket.html#setSocketDescriptor" tppabs="http://pyqt4doc.appspot.com/qlocalsocket.html#setSocketDescriptor">QLocalSocket.setSocketDescriptor</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isListening"></a>bool QLocalServer.isListening (<i>self</i>)</h3>
+<p>如果服务器正在侦听传入连接，否则为False ，则返回True 。</p>
+<p><b>See also</b> <a href="qlocalserver.html#listen" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#listen">listen</a>（）和<a href="qlocalserver.html#close" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#close">close</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="listen"></a>bool QLocalServer.listen (<i>self</i>, QString <i>name</i>)</h3>
+<p>告诉服务器侦听传入的连接<i>name</i>。如果服务器当前正在侦听那么它将返回False 。返回True成功，否则为False 。</p>
+<p><i>name</i>可以是单一的名称和<a href="qlocalserver.html" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html">QLocalServer</a>将确定正确的特定于平台的路径。<a href="qlocalserver.html#serverName" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#serverName">serverName</a>（ ）将返回传递到听的名字。</p>
+<p>通常你会只是通过像“foo”的名称，但在Unix上，这也可能是诸如“ / tmp目录/富”的路径，在Windows上，这可能是一个管道的路径，例如“ \ \ \管道\富” 。对于以下路径的VxWorks必须始终使用“ / comp/socket/0xNumber ”，其中“ 0xNumber ”是十六进制格式的16位数字的字符串表示形式。例如“ / comp/socket/0x00AA ” 。</p>
+<p>注意：在Unix上，如果不关闭服务器崩溃听会失败， AddressInUseError 。创建该文件应该被删除新服务器。在Windows两个本地服务器可以听同一管道的同时，但任何连接将转到服务器之一。</p>
+<p><b>See also</b> <a href="qlocalserver.html#serverName" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#serverName">serverName</a>（ ）<a href="qlocalserver.html#isListening" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#isListening">isListening</a>（）和<a href="qlocalserver.html#close" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#close">close</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="maxPendingConnections"></a>int QLocalServer.maxPendingConnections (<i>self</i>)</h3>
+<p>返回未决接受的连接的最大数目。默认值是30 。</p>
+<p><b>See also</b> <a href="qlocalserver.html#setMaxPendingConnections" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#setMaxPendingConnections">setMaxPendingConnections</a>（）和<a href="qlocalserver.html#hasPendingConnections" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#hasPendingConnections">hasPendingConnections</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="nextPendingConnection"></a><a href="qlocalsocket.html" tppabs="http://pyqt4doc.appspot.com/qlocalsocket.html">QLocalSocket</a> QLocalServer.nextPendingConnection (<i>self</i>)</h3>
+<p>返回的连接下一个待连接<a href="qlocalsocket.html" tppabs="http://pyqt4doc.appspot.com/qlocalsocket.html">QLocalSocket</a>对象。</p>
+<p>套接字被作为服务器的一个子创建的，这意味着它被自动删除时<a href="qlocalserver.html" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html">QLocalServer</a>对象被销毁。它仍然是一个好主意，明确地删除的对象，当你用它做，以避免浪费内存。</p>
+<p>如果这个函数被调用时，有没有挂起的连接则返回0 。</p>
+<p><b>See also</b> <a href="qlocalserver.html#hasPendingConnections" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#hasPendingConnections">hasPendingConnections</a>（ ）<a href="qlocalserver.html#newConnection" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#newConnection">newConnection</a>（）和<a href="qlocalserver.html#incomingConnection" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#incomingConnection">incomingConnection</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="removeServer"></a>bool QLocalServer.removeServer (QString <i>name</i>)</h3>
+<p>删除可能导致调用任何服务器实例<a href="qlocalserver.html#listen" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#listen">listen</a>（）失败，如果成功返回True，否则返回False 。此功能是为了从崩溃中，当以前的服务器实例还没有被清理回收。</p>
+<p>在Windows中，这个函数不做任何事情;在Unix上，它消除由给定的套接字文件<i>name</i>。</p>
+<p><b>Warning:</b>要小心，以避免删除运行实例的插座。</p>
+<p>此功能被引入Qt的4.5 。</p>
+
+
+<h3 class="fn">
+<a name="serverError"></a><a href="qabstractsocket.html#SocketError-enum" tppabs="http://pyqt4doc.appspot.com/qabstractsocket.html#SocketError-enum">QAbstractSocket.SocketError</a> QLocalServer.serverError (<i>self</i>)</h3>
+<p>最后返回NOERROR或发生错误的类型。</p>
+<p><b>See also</b> <a href="qlocalserver.html#errorString" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#errorString">errorString</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="serverName"></a>QString QLocalServer.serverName (<i>self</i>)</h3>
+<p>返回如果服务器正在监听等待连接的服务器名，否则返回的QString （ ）</p>
+<p><b>See also</b> <a href="qlocalserver.html#listen" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#listen">listen</a>（）和<a href="qlocalserver.html#fullServerName" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#fullServerName">fullServerName</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setMaxPendingConnections"></a>QLocalServer.setMaxPendingConnections (<i>self</i>, int <i>numConnections</i>)</h3>
+<p>设置挂起接受的最大连接数<i>numConnections</i>。<a href="qlocalserver.html" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html">QLocalServer</a>将接受不超过<i>numConnections</i>前传入的连接<a href="qlocalserver.html#nextPendingConnection" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#nextPendingConnection">nextPendingConnection</a>（）被调用。</p>
+<p>注：即使<a href="qlocalserver.html" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html">QLocalServer</a>将停止接受新的连接后，它已经达到了挂起连接的最大数量，操作系统可能仍然让他们在队列中，这将导致客户端的信号，它是连通的。</p>
+<p><b>See also</b> <a href="qlocalserver.html#maxPendingConnections" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#maxPendingConnections">maxPendingConnections</a>（）和<a href="qlocalserver.html#hasPendingConnections" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#hasPendingConnections">hasPendingConnections</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="waitForNewConnection"></a>(bool, bool <i>timedOut</i>) QLocalServer.waitForNewConnection (<i>self</i>, int <i>msecs</i> = 0)</h3>
+<p>最多等待<i>msec</i>毫秒或直到传入的连接是可用的。返回True如果连接可用，否则返回False 。如果操作超时，<i>timedOut</i>不为0 ， * TIMEDOUT将被设置为True。</p>
+<p>这是一个阻塞函数调用。它的使用是不明智的单线程GUI应用程序，因为整个应用程序将停止响应，直到函数返回。当没有事件循环可用waitForNewConnection （ ）是最有用。</p>
+<p>非阻塞的替代方法是连接到<a href="qlocalserver.html#newConnection" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#newConnection">newConnection</a>（）信号。</p>
+<p>如果毫秒为-1 ，此功能将不会超时。</p>
+<p><b>See also</b> <a href="qlocalserver.html#hasPendingConnections" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#hasPendingConnections">hasPendingConnections</a>（）和<a href="qlocalserver.html#nextPendingConnection" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#nextPendingConnection">nextPendingConnection</a>（ ） 。</p>
+<hr>
+<h2>Qt Signal Documentation</h2>
+<h3 class="fn">
+<a name="newConnection"></a>void newConnection ()</h3>
+<p>这是该信号的默认超载。</p>
+<p>每当一个新的连接是可用的，这个信号被发射。</p>
+<p><b>See also</b> <a href="qlocalserver.html#hasPendingConnections" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#hasPendingConnections">hasPendingConnections</a>（）和<a href="qlocalserver.html#nextPendingConnection" tppabs="http://pyqt4doc.appspot.com/qlocalserver.html#nextPendingConnection">nextPendingConnection</a>（ ） 。</p>
+
+
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>

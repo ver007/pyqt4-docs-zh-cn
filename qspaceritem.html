@@ -1,0 +1,158 @@
+﻿<html>
+<head>
+<title>QSpacerItem Class Reference</title>
+<style>h3.fn,span.fn { margin-left: 1cm; text-indent: -1cm }
+a:link { color: #004faf; text-decoration: none }
+a:visited { color: #672967; text-decoration: none }
+td.postheader { font-family: sans-serif }
+tr.address { font-family: sans-serif }
+body { background: #ffffff; color: black; }
+</style>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr></tr>
+<td align="left" valign="top" width="32"><img align="left" border="0" height="32" src="images/rb-logo.png" tppabs="http://pyqt4doc.appspot.com/images/rb-logo.png" width="32"></td>
+<td width="1">  </td>
+<td class="postheader" valign="center">
+<a href="index.html" tppabs="http://pyqt4doc.appspot.com/index.html"><font color="#004faf">Home</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/classes.html"><font color="#004faf">All Classes</font></a> · <a href="index.htm" tppabs="http://pyqt4doc.appspot.com/modules.html"><font color="#004faf">Modules</font></a>  · <a href="qss.html"><font color="#004faf">QSS HELP</font></a>  · <a href="qtqss.html"><font color="#004faf">QSS 案例</font></a> · <a href="HTTP://VER007.COM"><font color="#004faf">VER007 HOME</font></a> 
+</td>
+</table>
+<h1 align="center">QSpacerItem Class Reference<br><sup><sup>[<a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qtgui.html">QtGui</a> module]</sup></sup>
+</h1>
+<p>该QSpacerItem类提供了一个布局空白。<a href="#details">More...</a></p>
+
+<p>继承<a href="qlayoutitem.html" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html">QLayoutItem</a>。</p>
+<h3>Methods</h3>
+<ul>
+<li>
+<div class="fn"></div>
+<b><a href="qspaceritem.html#QSpacerItem" tppabs="http://pyqt4doc.appspot.com/qspaceritem.html#QSpacerItem">__init__</a></b> (<i>self</i>, int <i>w</i>, int <i>h</i>, QSizePolicy.Policy <i>hPolicy</i> = QSizePolicy.Minimum, QSizePolicy.Policy <i>vPolicy</i> = QSizePolicy.Minimum)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qspaceritem.html#QSpacerItem-2" tppabs="http://pyqt4doc.appspot.com/qspaceritem.html#QSpacerItem-2">__init__</a></b> (<i>self</i>, QSpacerItem)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qspaceritem.html#changeSize" tppabs="http://pyqt4doc.appspot.com/qspaceritem.html#changeSize">changeSize</a></b> (<i>self</i>, int <i>w</i>, int <i>h</i>, QSizePolicy.Policy <i>hPolicy</i> = QSizePolicy.Minimum, QSizePolicy.Policy <i>vPolicy</i> = QSizePolicy.Minimum)</li>
+<li>
+<div class="fn"></div>Qt.Orientations <b><a href="qspaceritem.html#expandingDirections" tppabs="http://pyqt4doc.appspot.com/qspaceritem.html#expandingDirections">expandingDirections</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QRect <b><a href="qspaceritem.html#geometry" tppabs="http://pyqt4doc.appspot.com/qspaceritem.html#geometry">geometry</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>bool <b><a href="qspaceritem.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qspaceritem.html#isEmpty">isEmpty</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qspaceritem.html#maximumSize" tppabs="http://pyqt4doc.appspot.com/qspaceritem.html#maximumSize">maximumSize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qspaceritem.html#minimumSize" tppabs="http://pyqt4doc.appspot.com/qspaceritem.html#minimumSize">minimumSize</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>
+<b><a href="qspaceritem.html#setGeometry" tppabs="http://pyqt4doc.appspot.com/qspaceritem.html#setGeometry">setGeometry</a></b> (<i>self</i>, QRect)</li>
+<li>
+<div class="fn"></div>QSize <b><a href="qspaceritem.html#sizeHint" tppabs="http://pyqt4doc.appspot.com/qspaceritem.html#sizeHint">sizeHint</a></b> (<i>self</i>)</li>
+<li>
+<div class="fn"></div>QSpacerItem <b><a href="qspaceritem.html#spacerItem" tppabs="http://pyqt4doc.appspot.com/qspaceritem.html#spacerItem">spacerItem</a></b> (<i>self</i>)</li>
+</ul>
+<a name="details"></a><div class="ad">
+<hr>
+ 
+</div>
+<h2>Detailed Description</h2>
+<p>该QSpacerItem类提供了一个布局空白。</p>
+<p>通常情况下，你不需要直接使用这个类。 Qt的内建布局管理器提供了以下功能操作在布局空：</p>
+<table class="generic">
+<thead>
+<tr class="qt-style">
+<th>Class</th>
+<th>Functions</th>
+</tr>
+</thead>
+<tr class="odd" valign="top">
+<td><a href="qhboxlayout.html" tppabs="http://pyqt4doc.appspot.com/qhboxlayout.html">QHBoxLayout</a></td>
+<td>
+<a href="qboxlayout.html#addSpacing" tppabs="http://pyqt4doc.appspot.com/qboxlayout.html#addSpacing">addSpacing()</a>, <a href="qboxlayout.html#addStretch" tppabs="http://pyqt4doc.appspot.com/qboxlayout.html#addStretch">addStretch()</a>, <a href="qboxlayout.html#insertSpacing" tppabs="http://pyqt4doc.appspot.com/qboxlayout.html#insertSpacing">insertSpacing()</a>, <a href="qboxlayout.html#insertStretch" tppabs="http://pyqt4doc.appspot.com/qboxlayout.html#insertStretch">insertStretch()</a>
+</td>
+</tr>
+<tr class="even" valign="top">
+<td><a href="qgridlayout.html" tppabs="http://pyqt4doc.appspot.com/qgridlayout.html">QGridLayout</a></td>
+<td>
+<a href="qgridlayout.html#setRowMinimumHeight" tppabs="http://pyqt4doc.appspot.com/qgridlayout.html#setRowMinimumHeight">setRowMinimumHeight()</a>,
+<a href="qgridlayout.html#setRowStretch" tppabs="http://pyqt4doc.appspot.com/qgridlayout.html#setRowStretch">setRowStretch()</a>,
+<a href="qgridlayout.html#setColumnMinimumWidth" tppabs="http://pyqt4doc.appspot.com/qgridlayout.html#setColumnMinimumWidth">setColumnMinimumWidth()</a>,
+<a href="qgridlayout.html#setColumnStretch" tppabs="http://pyqt4doc.appspot.com/qgridlayout.html#setColumnStretch">setColumnStretch()</a>
+</td>
+</tr>
+</table>
+<hr>
+<h2>Method Documentation</h2>
+<h3 class="fn">
+<a name="QSpacerItem"></a>QSpacerItem.__init__ (<i>self</i>, int <i>w</i>, int <i>h</i>, <a href="qsizepolicy.html#Policy-enum" tppabs="http://pyqt4doc.appspot.com/qsizepolicy.html#Policy-enum">QSizePolicy.Policy</a> <i>hPolicy</i> = QSizePolicy.Minimum, <a href="qsizepolicy.html#Policy-enum" tppabs="http://pyqt4doc.appspot.com/qsizepolicy.html#Policy-enum">QSizePolicy.Policy</a> <i>vPolicy</i> = QSizePolicy.Minimum)</h3>
+<p>构造一个首选宽度间隔项目<i>w</i>，首选高度<i>h</i>，水平尺寸的政策<i>hPolicy</i>和垂直尺寸的政策<i>vPolicy</i>。</p>
+<p>的默认值提供一个间隙，能够舒展如果没有别的想要的空间。</p>
+
+
+<h3 class="fn">
+<a name="QSpacerItem-2"></a>QSpacerItem.__init__ (<i>self</i>, <a href="qspaceritem.html" tppabs="http://pyqt4doc.appspot.com/qspaceritem.html">QSpacerItem</a>)</h3>
+<h3 class="fn">
+<a name="changeSize"></a>QSpacerItem.changeSize (<i>self</i>, int <i>w</i>, int <i>h</i>, <a href="qsizepolicy.html#Policy-enum" tppabs="http://pyqt4doc.appspot.com/qsizepolicy.html#Policy-enum">QSizePolicy.Policy</a> <i>hPolicy</i> = QSizePolicy.Minimum, <a href="qsizepolicy.html#Policy-enum" tppabs="http://pyqt4doc.appspot.com/qsizepolicy.html#Policy-enum">QSizePolicy.Policy</a> <i>vPolicy</i> = QSizePolicy.Minimum)</h3>
+<p>更改此间隔的项目有首选宽度<i>w</i>，首选高度<i>h</i>，水平尺寸的政策<i>hPolicy</i>和垂直尺寸的政策<i>vPolicy</i>。</p>
+<p>的默认值提供一个间隙，能够舒展如果没有别的想要的空间。</p>
+<p>请注意，如果changeSize （）之后的间隔物项已被添加到一个布局被调用时，它是必要的布局无效，以使隔离物项的新大小生效。</p>
+<p><b>See also</b> <a href="qlayoutitem.html#invalidate" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#invalidate">QSpacerItem.invalidate</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="expandingDirections"></a><a href="index.htm" tppabs="http://pyqt4doc.appspot.com/qt-orientations.html">Qt.Orientations</a> QSpacerItem.expandingDirections (<i>self</i>)</h3>
+<p>从重新实现<a href="qlayoutitem.html#expandingDirections" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#expandingDirections">QLayoutItem.expandingDirections</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="geometry"></a><a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a> QSpacerItem.geometry (<i>self</i>)</h3>
+<p>从重新实现<a href="qlayoutitem.html#geometry" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#geometry">QLayoutItem.geometry</a>（ ） 。</p>
+<p><b>See also</b> <a href="qspaceritem.html#setGeometry" tppabs="http://pyqt4doc.appspot.com/qspaceritem.html#setGeometry">setGeometry</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="isEmpty"></a>bool QSpacerItem.isEmpty (<i>self</i>)</h3>
+<p>从重新实现<a href="qlayoutitem.html#isEmpty" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#isEmpty">QLayoutItem.isEmpty</a>（ ） 。</p>
+<p>返回True。</p>
+
+
+<h3 class="fn">
+<a name="maximumSize"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QSpacerItem.maximumSize (<i>self</i>)</h3>
+<p>从重新实现<a href="qlayoutitem.html#maximumSize" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#maximumSize">QLayoutItem.maximumSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="minimumSize"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QSpacerItem.minimumSize (<i>self</i>)</h3>
+<p>从重新实现<a href="qlayoutitem.html#minimumSize" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#minimumSize">QLayoutItem.minimumSize</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="setGeometry"></a>QSpacerItem.setGeometry (<i>self</i>, <a href="qrect.html" tppabs="http://pyqt4doc.appspot.com/qrect.html">QRect</a>)</h3>
+<p>从重新实现<a href="qlayoutitem.html#setGeometry" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#setGeometry">QLayoutItem.setGeometry</a>（ ） 。</p>
+<p><b>See also</b> <a href="qspaceritem.html#geometry" tppabs="http://pyqt4doc.appspot.com/qspaceritem.html#geometry">geometry</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="sizeHint"></a><a href="qsize.html" tppabs="http://pyqt4doc.appspot.com/qsize.html">QSize</a> QSpacerItem.sizeHint (<i>self</i>)</h3>
+<p>从重新实现<a href="qlayoutitem.html#sizeHint" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#sizeHint">QLayoutItem.sizeHint</a>（ ） 。</p>
+
+
+<h3 class="fn">
+<a name="spacerItem"></a><a href="qspaceritem.html" tppabs="http://pyqt4doc.appspot.com/qspaceritem.html">QSpacerItem</a> QSpacerItem.spacerItem (<i>self</i>)</h3>
+<p>从重新实现<a href="qlayoutitem.html#spacerItem" tppabs="http://pyqt4doc.appspot.com/qlayoutitem.html#spacerItem">QLayoutItem.spacerItem</a>（ ） 。</p>
+<p>返回一个指向该对象。</p>
+<address>
+<div class="ad">
+<br> 
+<br><hr>
+</div>
+<div align="center"><table border="0" cellspacing="0" width="100%"><tr class="address">
+<td align="left" width="25%">PyQt 4.10.3 for X11</td>
+<td align="center" width="50%">Copyright © <a href="http://www.riverbankcomputing.com/">Riverbank Computing Ltd</a> and <a href="http://www.qtsoftware.com/">Nokia</a> 2012</td>
+<td align="right" width="25%">Qt 4.8.5</td>
+</tr></table></div>
+</address>
+</body>
+</html>
